@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.database;
 
 import db.DBRecord;
 
-/**
+# /**
  * Needed by a {@link DBCachedObjectStore} to describe how to construct the objects it manages
  *
  * @param <T> the type of objects in the store

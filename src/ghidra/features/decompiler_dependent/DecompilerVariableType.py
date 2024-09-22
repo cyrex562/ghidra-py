@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 import ghidra.app.decompiler.ClangToken;
 import ghidra.app.decompiler.ClangVariableToken;
 
-/**
+# /**
  * A class to combine the various Decompiler tokens that are associated with data types.
  */
 public class DecompilerVariableType extends DecompilerVariable {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This class is used as a callback for parallelized ensemble evaluation.  Rather than
  * computing the precise probability the ensemble would assign to a given address and label,
  * it only computes whether the probability is >= .5.  The computation is short-circuited:

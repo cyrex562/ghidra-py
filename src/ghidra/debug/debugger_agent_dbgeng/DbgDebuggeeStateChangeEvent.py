@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.dbgeng.manager.evt;
 import agent.dbgeng.dbgeng.DebugClient.ChangeDebuggeeState;
 import ghidra.comm.util.BitmaskSet;
 
-/**
+# /**
  * The event corresponding with ChangedDebuggeeState
  */
 public class DbgDebuggeeStateChangeEvent extends AbstractDbgEvent<Integer> {

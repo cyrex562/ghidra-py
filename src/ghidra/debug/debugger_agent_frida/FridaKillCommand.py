@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import agent.frida.manager.FridaProcess;
 import agent.frida.manager.evt.FridaProcessExitedEvent;
 import agent.frida.manager.impl.FridaManagerImpl;
 
-/**
+# /**
  * Implementation of {@link FridaProcess#kill()}
  */
 public class FridaKillCommand extends AbstractFridaCommand<Void> {

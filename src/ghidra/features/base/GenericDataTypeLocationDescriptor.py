@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A LocationDescriptor that is used when the user wants to create a descriptor that describes at
  * data type, but not a real location that contains a data type.  Most LocationDescriptors 
  * describe an exact point in the listing display.  This descriptor is designed to describe a 

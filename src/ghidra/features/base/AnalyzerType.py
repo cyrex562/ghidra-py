@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.services;
 
-/**
+# /**
  * AnalyzerType defines various types of analyzers that Ghidra provides.
  *
  * Analyzers get kicked off based on certain events or conditions, such

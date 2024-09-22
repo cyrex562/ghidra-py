@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.trace.model.guest.TracePlatform;
 import ghidra.trace.model.thread.TraceThread;
 
-/**
+# /**
  * The default target-and-trace access shim for a session
  */
 public class DefaultPcodeDebuggerAccess extends

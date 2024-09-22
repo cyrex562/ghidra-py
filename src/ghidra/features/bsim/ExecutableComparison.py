@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.features.bsim.query.protocol.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Compare an entire set of executables to each other by combining
  * significance scores between functions.  If individual functions
  * demonstrate multiple similarities, its score contributions are not

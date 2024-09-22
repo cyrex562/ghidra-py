@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.util.task.TaskMonitor;
 	factory = CartFileSystemFactory.class
 )
 //@formatter:on
-/**
+# /**
  * File system for the CaRT format (Version 1). Includes creating objects for
  * relevant parsing and retrieving providers for access to decrypted and
  * decompressed data contents.

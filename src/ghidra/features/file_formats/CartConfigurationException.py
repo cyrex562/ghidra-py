@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-/**
+# /**
  * Exception subclass for apparent configuration errors; for instance, when an
  * ARC4 key in the configuration file is not valid base64-encoded data.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.program.model.symbol.Symbol;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Command to set the datatype on a stack variable.
  */
 public class SetVariableDataTypeCmd implements Command<Program> {

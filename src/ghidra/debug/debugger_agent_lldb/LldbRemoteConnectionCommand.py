@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import agent.lldb.manager.LldbEvent;
 import agent.lldb.manager.evt.*;
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * Implementation of {@link LldbProcess#connect()}
  */
 public class LldbRemoteConnectionCommand extends AbstractLldbCommand<Set<SBThread>> {

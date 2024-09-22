@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.dbgmodel.dbgmodel.UnknownEx;
 import agent.dbgmodel.dbgmodel.main.KeyStore;
 import agent.dbgmodel.dbgmodel.main.ModelObject;
 
-/**
+# /**
  * A wrapper for {@code IDynamicConceptProviderConcept} and its newer variants.
  */
 public interface DynamicConceptProviderConcept extends Concept {

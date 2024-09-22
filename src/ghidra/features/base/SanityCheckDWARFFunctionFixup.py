@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.util.bin.format.dwarf.DWARFException;
 import ghidra.app.util.bin.format.dwarf.DWARFFunction;
 import ghidra.util.classfinder.ExtensionPointProperties;
 
-/**
+# /**
  * Check for errors and prevent probable bad function info from being locked in
  */
 @ExtensionPointProperties(priority = DWARFFunctionFixup.PRIORITY_NORMAL_LATE)

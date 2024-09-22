@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * An OMF index that is either 1 or 2 bytes
  */
 public class OmfIndex implements StructConverter {

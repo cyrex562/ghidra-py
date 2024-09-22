@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.mem.MemoryBlock;
 import ghidra.trace.model.modules.TraceModule;
 import ghidra.trace.model.modules.TraceSection;
 
-/**
+# /**
  * A proposed map of sections to program memory blocks
  */
 public interface SectionMapProposal

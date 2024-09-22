@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.features.bsim.query.description.ExecutableRecord;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Response to a QueryNearestVector request. It provides basic stats on the number of matching vectors and functions.
  * Only a list of the matching vectors is returned, not the detailed FunctionDescription records of matches.
  * Results are returned as SimilarityVectorResult objects, which cross-reference the original function queried and

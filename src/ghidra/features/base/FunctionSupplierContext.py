@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Set;
 import docking.ActionContext;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * A "mix-in" interface that specific implementers of {@link ActionContext} may also implement if
  * they can supply functions in their action context. Actions that want to work on functions
  * can look for this interface, which can used in a variety of contexts.

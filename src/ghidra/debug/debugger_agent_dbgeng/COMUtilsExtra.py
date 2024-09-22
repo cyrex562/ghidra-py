@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import com.sun.jna.platform.win32.WinNT.HRESULT;
 import com.sun.jna.platform.win32.COM.COMException;
 import com.sun.jna.platform.win32.COM.COMUtils;
 
-/**
+# /**
  * Utilities for interacting with Microsoft COM objects beyond those provided by {@link COMUtils}.
  * 
  * See the MSDN for details on the meanings of the return codes for the function or method of

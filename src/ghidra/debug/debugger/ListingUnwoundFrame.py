@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.trace.util.TraceRegisterUtils;
 import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A frame restored from annotations applied to the trace listing
  * 
  * <p>

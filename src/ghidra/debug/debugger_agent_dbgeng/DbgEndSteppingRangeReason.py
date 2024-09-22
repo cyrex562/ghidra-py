@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Map;
 
 import agent.dbgeng.manager.DbgReason;
 
-/**
+# /**
  * The inferior stopped because it finished stepping
  */
 public class DbgEndSteppingRangeReason implements DbgReason {

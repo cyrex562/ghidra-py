@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.gdb.manager.breakpoint.GdbBreakpointInfo;
 import agent.gdb.manager.impl.GdbManagerImpl;
 import agent.gdb.manager.parsing.GdbParsingUtils.GdbParseError;
 
-/**
+# /**
  * The event corresponding with "{@code =breakpoint-created}"
  */
 public class GdbBreakpointCreatedEvent extends AbstractGdbEventWithFields {

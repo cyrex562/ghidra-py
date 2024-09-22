@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.lsh.vector.LSHVectorFactory;
 import ghidra.features.bsim.query.LSHException;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Query for counting the number of executable records in the database.
  * <p>
  * This contains all the information required to get a list of all executables in the

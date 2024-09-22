@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.importer.MessageLog;
 import ghidra.framework.model.Project;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Thrown when a {@link Loader#load(ByteProvider, String, Project, String, LoadSpec, List,MessageLog, Object, TaskMonitor) load}
  * fails in an expected way.  The supplied message should explain the reason. 
  */

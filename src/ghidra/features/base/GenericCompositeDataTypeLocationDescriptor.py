@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.datastruct.Accumulator;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A data type location descriptor that allows you to represent a location for a member field of a
  * data type, such as a composite or an enum
  */

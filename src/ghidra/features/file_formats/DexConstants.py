@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.file.formats.android.dex.format;
 
 import ghidra.app.util.bin.ByteProvider;
 
-/**
+# /**
  * https://android.googlesource.com/platform/art/+/master/libdexfile/dex/dex_file.h
  * https://android.googlesource.com/platform/art/+/master/libdexfile/dex/standard_dex_file.cc
  */

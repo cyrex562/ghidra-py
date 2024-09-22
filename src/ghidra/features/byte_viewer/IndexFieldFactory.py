@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.fieldpanel.support.FieldHighlightFactory;
 import docking.widgets.fieldpanel.support.Highlight;
 import ghidra.app.plugin.core.format.ByteBlockInfo;
 
-/**
+# /**
  * Implementation for the index/address field.
  */
 class IndexFieldFactory {

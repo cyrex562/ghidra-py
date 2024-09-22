@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 import docking.widgets.table.AbstractSortedTableModel;
 import ghidra.feature.fid.db.*;
 
-/**
+# /**
  *  The table model for the match results panel when searching for FID function records.
  */
 public class FidFunctionRecordTableModel extends AbstractSortedTableModel<FunctionRecord> {

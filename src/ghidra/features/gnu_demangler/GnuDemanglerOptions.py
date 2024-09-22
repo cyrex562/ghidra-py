@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.demangler.gnu;
 
 import ghidra.app.util.demangler.DemanglerOptions;
 
-/**
+# /**
  * GNU demangler options
  */
 public class GnuDemanglerOptions extends DemanglerOptions {

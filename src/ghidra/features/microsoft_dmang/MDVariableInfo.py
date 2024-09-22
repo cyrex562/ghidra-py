@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.MDMang;
 import mdemangler.datatype.MDDataTypeParser;
 import mdemangler.datatype.modifier.MDCVMod;
 
-/**
+# /**
  * This class represents a variable derivative of MDTypeInfo.
  */
 public class MDVariableInfo extends MDTypeInfo {
@@ -75,5 +75,5 @@ public class MDVariableInfo extends MDTypeInfo {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

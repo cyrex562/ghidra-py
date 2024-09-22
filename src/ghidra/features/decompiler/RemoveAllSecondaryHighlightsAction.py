@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.HelpTopics;
 import ghidra.program.model.listing.Function;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Removes all secondary highlights for the current function
  * 
  * @see ClangHighlightController

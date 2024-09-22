@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import agent.gdb.manager.reason.GdbReason;
 import generic.ULongSpan.ULongSpanSet;
 import ghidra.async.*;
 
-/**
+# /**
  * The implementation of {@link GdbThread}
  */
 public class GdbThreadImpl implements GdbThread {

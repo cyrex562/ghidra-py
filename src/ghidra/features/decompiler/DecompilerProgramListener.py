@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.database.SpecExtension;
 import ghidra.program.model.listing.Program;
 import ghidra.util.task.SwingUpdateManager;
 
-/**
+# /**
  * Listener of {@link Program} events for decompiler panels. Program events are buffered using 
  * a {@link SwingUpdateManager} before triggering a new decompile process.
  */

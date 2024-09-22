@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
 
-/**
+# /**
  * Important: This is not a real symbol.  This "Bad" symbol takes the place of a symbol that has
  *  encountered a parsing issue vis-a-vis a PdbException.
  */

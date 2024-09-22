@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.lang.*;
 import ghidra.program.util.DefaultLanguageService;
 import utility.function.Callback;
 
-/**
+# /**
  * A BsimFilterType for filtering functions based on not matching a Ghidra compiler specification.
  */
 public class NotCompilerBSimFilterType extends BSimFilterType {

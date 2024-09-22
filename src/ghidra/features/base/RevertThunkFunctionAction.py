@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.symbol.Symbol;
 import ghidra.program.model.symbol.SymbolType;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * <CODE>RevertThunkFunctionAction</CODE> allows the user to modify the function
  * referenced by this function
  */

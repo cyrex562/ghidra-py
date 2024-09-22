@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.lldb.manager.evt;
 import agent.lldb.lldb.DebugBreakpointInfo;
 import agent.lldb.lldb.DebugClient;
 
-/**
+# /**
  * The event corresponding with SBTarget.eBroadcastBitWatchpointChanged  & SBTarget.eBroadcastBitBreakpointChanged
  */
 public class LldbBreakpointModifiedEvent extends AbstractLldbEvent<DebugBreakpointInfo> {

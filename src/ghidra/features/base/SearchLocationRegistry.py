@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.function.Predicate;
 
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * List of {@link SearchLocation} types that can be saved / restored from a configuration string. 
  */
 public class SearchLocationRegistry {

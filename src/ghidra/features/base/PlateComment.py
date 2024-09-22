@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-/**
+# /**
  * Indicates that the tagged class or field should have an plate comment placed
  * before each instance of the object or field, using the return value of the field's
  * getter method, or if a class, the object's "toString()" method.

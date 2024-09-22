@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.framework.preferences.Preferences;
 import ghidra.util.*;
 import ghidra.util.filechooser.ExtensionFileFilter;
 
-/**
+# /**
  * Dialog to prompt the user for the archive file to restore
  * and where to restore it to.
  */

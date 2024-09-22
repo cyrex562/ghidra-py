@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.mem.Memory;
 import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * A structure that represents a golang slice instance (similar to a java ArrayList).  Not to be
  * confused with a {@link GoSliceType}, which is RTTI info about a slice type.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.formats.gfilesystem.FSRLRoot;
 import ghidra.formats.gfilesystem.FileSystemService;
 import ghidra.formats.gfilesystem.annotations.FileSystemInfo;
 
-/**
+# /**
  * Derivative of 7zip file system to provide "zip" flavored FSRLs.
  * <p>
  * 7Zip's features are superior to the native java zip handling (ie. passwords)

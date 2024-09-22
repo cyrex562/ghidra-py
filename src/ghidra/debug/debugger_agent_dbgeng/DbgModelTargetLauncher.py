@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.dbgeng.model.iface2.DbgModelTargetObject;
 import ghidra.dbg.error.DebuggerUserException;
 import ghidra.dbg.target.TargetCmdLineLauncherEx;
 
-/**
+# /**
  * An interface which indicates this object is capable of launching targets.
  * 
  * <p>

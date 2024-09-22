@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package mdemangler.datatype.modifier;
 
-/**
+# /**
  * This class represents a Const/Volatile modifier (and extra stuff) of a modifier
  * type within a Microsoft mangled symbol.
  */
@@ -1066,5 +1066,5 @@ public class MDCVModifier {
 
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

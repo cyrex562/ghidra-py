@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.dbg.target.schema.*;
 import ghidra.dbg.util.PathUtils;
 import ghidra.util.Msg;
 
-/**
+# /**
  * TODO: We should probably expose the raw CLI (if available) via TargetConsole, and perhaps re-work
  * the UI to use it when available. This could more generally solve the multi-line input thing, and
  * provide a distinction between API access (where {@link TargetInterpreter} makes more sense), and

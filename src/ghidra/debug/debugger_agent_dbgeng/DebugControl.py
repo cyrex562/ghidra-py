@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.comm.util.BitmaskSet;
 import ghidra.comm.util.BitmaskUniverse;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A wrapper for {@code IDebugControl} and its newer variants.
  */
 public interface DebugControl extends DebugControlReentrant {

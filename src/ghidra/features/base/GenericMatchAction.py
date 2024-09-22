@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.bytesearch;
 
-/**
+# /**
  * Template for generic match action attached to a match sequence.
  * Used to store an associated value to the matching sequence.
  * The associated value can be retrieved when the sequence is matched.

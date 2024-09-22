@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.macho.MachHeader;
 import ghidra.program.model.data.LEB128;
 
-/**
+# /**
  * A Mach-O rebase table
  */
 public class RebaseTable extends OpcodeTable {

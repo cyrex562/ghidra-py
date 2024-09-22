@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.data.CategoryPath;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/lollipop-mr1-release/runtime/oat.h#163">lollipop-mr1-release/runtime/oat.h</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/lollipop-wear-release/runtime/oat.h#165">ollipop-wear-release/runtime/oat.h</a>

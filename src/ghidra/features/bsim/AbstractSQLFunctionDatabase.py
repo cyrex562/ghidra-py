@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.features.bsim.query.description.*;
 import ghidra.features.bsim.query.protocol.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Defines the BSim {@link FunctionDatabase} backed by an SQL database.
  * 
  * Simple, one-column tables that only contain string data use the

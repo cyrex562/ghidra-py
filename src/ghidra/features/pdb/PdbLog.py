@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.type.AbstractMsType;
 import ghidra.framework.Application;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A utility class providing logging for: PDB parsing and PDB analysis.  It includes data and
  * metrics for the purposes of debugging and aiding in continued research and development of
  * this package.

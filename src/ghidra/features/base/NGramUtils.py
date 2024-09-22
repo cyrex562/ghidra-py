@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -532,7 +532,7 @@ public class NGramUtils {
 
 }
 
-/**
+# /**
  * Storage for log probabilities calculated for a model (after counts have been smoothed).
  */
 class ModelLogProbabilities {

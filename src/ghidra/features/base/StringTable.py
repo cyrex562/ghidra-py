@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.datastruct.WeakValueHashMap;
 
-/**
+# /**
  * Represents a DWARF string table, backed by a memory section like .debug_str.
  * <p>
  * Strings are read from the section the first time requested, and then cached in a weak lookup

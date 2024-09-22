@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.lldb.manager.cmd;
 
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * Implementation of {@link LldbProcess#evaluate(String)}
  */
 public class LldbEvaluateCommand extends AbstractLldbCommand<String> {

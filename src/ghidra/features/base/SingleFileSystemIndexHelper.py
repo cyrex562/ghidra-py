@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.formats.gfilesystem;
 import java.io.IOException;
 import java.util.*;
 
-/**
+# /**
  * A helper class used by GFilesystem implementors that have a single file to handle lookups
  * and requests for that file.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.elf.info.ElfNote;
 import ghidra.program.model.data.*;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * An ELF note that specifies the golang build-id.
  */
 public class NoteGoBuildId extends ElfNote {

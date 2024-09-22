@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.services;
 
-/**
+# /**
  * Result of a {@link StringValidatorService}'s judgment about a string.
  *
  * @param originalString string being scored

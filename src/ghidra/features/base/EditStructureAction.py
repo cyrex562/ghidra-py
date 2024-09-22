@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.util.*;
 import ghidra.util.HelpLocation;
 import docking.action.MenuData;
 
-/**
+# /**
  * <CODE>EditStructureAction</CODE> allows the user to edit a structure.
  */
 class EditStructureAction extends ListingContextAction {

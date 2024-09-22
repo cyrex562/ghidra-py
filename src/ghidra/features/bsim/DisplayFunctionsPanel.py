@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,7 +44,7 @@ import ghidra.util.table.AddressBasedTableModel;
 import ghidra.util.table.field.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Panel that displays the list of functions to be included in a BSim query.
  *
  */

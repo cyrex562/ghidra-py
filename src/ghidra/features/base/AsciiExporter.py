@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.HelpLocation;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An implementation of exporter that creates
  * an Ascii representation of the program.
  */

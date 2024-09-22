@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import agent.gdb.manager.evt.GdbCommandDoneEvent;
 import agent.gdb.manager.impl.GdbManagerImpl;
 import agent.gdb.manager.impl.GdbPendingCommand;
 
-/**
+# /**
  * Implementation of {@link GdbInferior#setVar(String, String)}
  */
 public class GdbSetVarCommand extends AbstractGdbCommandWithThreadId<Void> {

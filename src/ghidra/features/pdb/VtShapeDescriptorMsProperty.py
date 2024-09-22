@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.type;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * VTShape Descriptor Property used on VtShapeMsType PDB data type.
  */
 public enum VtShapeDescriptorMsProperty {

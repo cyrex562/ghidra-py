@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.Function;
 
 import ghidra.framework.options.Options;
 
-/**
+# /**
  * An object that allows analyzers to rename options.   This is required to move old options stored
  * in the program to the new equivalent option.   This class is not required for options that have
  * simply been removed.

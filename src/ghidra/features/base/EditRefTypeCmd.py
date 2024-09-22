@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.framework.cmd.Command;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.*;
 
-/**
+# /**
  * Command to change the reference type of a memory reference
  */
 public class EditRefTypeCmd implements Command<Program> {

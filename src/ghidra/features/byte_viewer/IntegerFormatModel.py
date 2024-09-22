@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.util.HelpLocation;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Converts byte values to Integer representation in decimal format.
  * This formatter does not allow editing.
  */

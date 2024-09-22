@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.symbol.Symbol;
 import ghidra.program.model.symbol.SymbolUtilities;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <code>PCodeTestGroup</code> identifies a test group function and its corresponding
  * PCodeTestGroupControlBlock.
  */

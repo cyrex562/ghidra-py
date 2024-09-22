@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.Arrays;
 import ghidra.app.util.datatype.microsoft.GUID;
 import ghidra.util.LittleEndianDataConverter;
 
-/**
+# /**
  * {@code PdbByteReader} is a utility class used for administering out portions of a byte array.
  * The requests are made with a {@code parse...} method, which interprets data, pointed to by a
  * current {@code index} into the byte array, into the type requested.

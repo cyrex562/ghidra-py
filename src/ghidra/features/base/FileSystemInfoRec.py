@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 import java.util.regex.Pattern;
 
-/**
+# /**
  * Holds information read from a {@link FileSystemInfo} annotation.
  * <p>
  */

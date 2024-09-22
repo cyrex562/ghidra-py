@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.LinkedHashMap;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 
-/**
+# /**
  * A means of dynamically binding method calls to one of many registered handlers by sub-type
  *
  * A handler is a method accepting a sub-type and a custom argument. The handler can be assigned to

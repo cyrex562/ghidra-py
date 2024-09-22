@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.DockingWindowManager;
 import ghidra.app.util.Option;
 import ghidra.app.util.opinion.LibraryPathsDialog;
 
-/**
+# /**
  * A dummy {@link Option} used to render a button that will allow the user to edit the global
  * list of library search paths
  */

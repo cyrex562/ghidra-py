@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -157,7 +157,7 @@ public class DexToSmaliFileSystem extends GFileSystemBase {
 	}
 }
 
-/*	DexHeader header = new DexHeader(provider);
+# /*	DexHeader header = new DexHeader(provider);
 if (!header.getMagic().equals(DexConstants.MAGIC)) {
 	throw new IOException("Unable to open file: invalid DEX file!");
 }
@@ -191,7 +191,7 @@ for(int i = 0; i < header.getClassTableSize(); i++){
 		storeFile(file, myClass);
 	}
 }
-/*
+# /*
 int typeTableOffset = header.getTypeTableOffset();
 int classTypeOffset = 0x2d * 4 + typeTableOffset;
 int classNameStringID = 0;

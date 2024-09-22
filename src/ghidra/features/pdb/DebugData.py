@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.*;
 import ghidra.app.util.bin.format.pdb2.pdbreader.msf.MsfStream;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Debug Data structures for PDB files.  There are a number of debug streams that can be processed.
  * <P>
  * NOTE: The processing that falls under DebugData is only partially done.  We have implemented

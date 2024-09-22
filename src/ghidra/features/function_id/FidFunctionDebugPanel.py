@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.feature.fid.db.*;
 import ghidra.feature.fid.service.FidService;
 import ghidra.program.model.lang.LanguageID;
 
-/**
+# /**
  * Class representing the debug display panel for a function record.
  */
 public class FidFunctionDebugPanel extends JPanel {

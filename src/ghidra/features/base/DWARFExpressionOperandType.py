@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.expression;
 
-/**
+# /**
  * Enumeration that represents the different type of operands that a 
  * {@link DWARFExpressionOpCodes opcode} can take.
  */

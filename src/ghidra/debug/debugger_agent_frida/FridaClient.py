@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.frida.manager.*;
 import ghidra.comm.util.BitmaskUniverse;
 import ghidra.dbg.target.TargetExecutionStateful.TargetExecutionState;
 
-/**
+# /**
  * A wrapper for FridaDebugger
  */
 public interface FridaClient extends FridaClientReentrant {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import mdemangler.datatype.MDDataType;
 
-/**
+# /**
  * This class holds a single context that is pushed or popped to/from a context stack in MDMang.
  * A context contains "backreferences" (as we currently understand backreferences and a context
  * of them--simplified from more complicated contexts, we are trying to whittle this away toward
@@ -113,5 +113,5 @@ public class MDContext {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

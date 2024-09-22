@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.type;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 
-/**
+# /**
  * This class represents the <B>MsType</B> flavor of Interface type.
  * <P>
  * Note that class, struct, and interface are very closed related and have many of the same

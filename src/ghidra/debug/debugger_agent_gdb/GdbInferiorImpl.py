@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.async.AsyncLazyValue;
 import ghidra.lifecycle.Internal;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The implementation of {@link GdbInferior}
  */
 public class GdbInferiorImpl implements GdbInferior {

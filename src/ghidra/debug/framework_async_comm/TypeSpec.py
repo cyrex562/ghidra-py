@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import ghidra.async.seq.AsyncSequenceWithoutTemp;
 
-/**
+# /**
  * An interface for type specification in sequences
  *
  * This is just fodder for Java's generic type system. Sometimes it is not intelligent enough to

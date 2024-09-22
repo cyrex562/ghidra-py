@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.viewer.field.AddressAnnotatedStringHandler;
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.PointerDataType;
 
-/**
+# /**
  * {@link GoType} structure that defines a pointer.
  */
 @StructureMapping(structureName = {"runtime.ptrtype", "internal/abi.PtrType"})

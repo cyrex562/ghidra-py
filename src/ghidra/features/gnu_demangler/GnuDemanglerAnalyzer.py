@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.HelpLocation;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * A version of the demangler analyzer to handle GNU GCC symbols
  */
 public class GnuDemanglerAnalyzer extends AbstractDemanglerAnalyzer {

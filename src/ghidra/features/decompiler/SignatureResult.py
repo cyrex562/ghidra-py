@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * An unordered list of features describing a single function.
  * Each feature represents partial information about the control-flow and/or data-flow
  * making up the function. Together the features form an (approximately) complete representation

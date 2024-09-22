@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.features.bsim.query.BSimServerInfo;
 import ghidra.util.HelpLocation;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Dialog for displaying the search criteria used to generate a BSim Similar Functions Search.
  */
 public class BSimSearchInfoDisplayDialog extends DialogComponentProvider {

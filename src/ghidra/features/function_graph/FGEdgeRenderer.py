@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.plugin.core.functiongraph.graph.vertex.FGVertex;
 import ghidra.app.plugin.core.functiongraph.mvc.FunctionGraphOptions;
 import ghidra.graph.viewer.renderer.ArticulatedEdgeRenderer;
 
-/**
+# /**
  * A renderer used by the Function Graph API to provide additional edge coloring, as
  * determined by the {@link FunctionGraphOptions}.
  */

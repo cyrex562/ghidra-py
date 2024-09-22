@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.framework.preferences.Preferences;
 import ghidra.util.Msg;
 import ghidra.util.filechooser.ExtensionFileFilter;
 
-/**
+# /**
  * This class is an {@link ActionListener} used to by {@link ClipboardPanel} to export patterns to XML files
  */
 public class ExportPatternFileActionListener implements ActionListener {

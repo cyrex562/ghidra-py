@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.trace.util.TraceAddressSpace;
 import ghidra.util.Saveable;
 import ghidra.util.map.TypeMismatchException;
 
-/**
+# /**
  * A code unit in a {@link Trace}
  */
 public interface TraceCodeUnit extends CodeUnit {

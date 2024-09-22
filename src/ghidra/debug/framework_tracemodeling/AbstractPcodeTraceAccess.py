@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.trace.model.TraceTimeViewport;
 import ghidra.trace.model.guest.TracePlatform;
 import ghidra.trace.model.thread.TraceThread;
 
-/**
+# /**
  * An abstract implementation of {@link PcodeTraceAccess}
  * 
  * @param <S> the type of shared data-access shims provided

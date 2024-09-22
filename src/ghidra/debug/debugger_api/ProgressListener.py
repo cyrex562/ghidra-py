@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.debug.api.progress;
 
-/**
+# /**
  * A listener for events on the progress service, including updates to task progress
  */
 public interface ProgressListener {

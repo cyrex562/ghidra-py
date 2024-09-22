@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.bitpatterns.info;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * This class is used to store a List of {@link PatternEvalRowObjects} and to accumulate
  * stats of whether or not addresses where patterns match truly are function starts.
  */

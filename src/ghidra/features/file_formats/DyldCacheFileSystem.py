@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.CryptoException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A {@link GFileSystem} implementation for the components of a DYLD Cache
  */
 @FileSystemInfo(type = DyldCacheFileSystem.DYLD_CACHE_FSTYPE, description = "iOS DYLD Cache Version 1", factory = GFileSystemBaseFactory.class)

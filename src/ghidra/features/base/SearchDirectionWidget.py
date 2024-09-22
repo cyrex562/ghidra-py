@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.*;
 
 import docking.widgets.button.GRadioButton;
 
-/**
+# /**
  * Allows the user to define a custom search range for the {@link InstructionSearchDialog}.
  *
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Abstract pop-up menu convert action for the decompiler. If triggered, it lays down
  * a new EquateReference that forces the selected constant to be displayed using
  * the desired integer format.

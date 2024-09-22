@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.trace.util.TraceChangeRecord;
 import ghidra.trace.util.TraceEvents;
 import ghidra.util.LockHold;
 
-/**
+# /**
  * The implementation of {@link TraceCodeSpace#definedData()}
  */
 public class DBTraceDefinedDataView extends AbstractBaseDBTraceDefinedUnitsView<DBTraceData>

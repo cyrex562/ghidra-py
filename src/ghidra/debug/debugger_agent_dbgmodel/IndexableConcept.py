@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import com.sun.jna.Pointer;
 
 import agent.dbgmodel.dbgmodel.main.ModelObject;
 
-/**
+# /**
  * A wrapper for {@code IIndexableConcept} and its newer variants.
  */
 public interface IndexableConcept extends Concept {

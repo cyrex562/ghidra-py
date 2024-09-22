@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.*;
 import ghidra.app.util.bin.LEB128Info;
 import ghidra.program.model.data.LEB128;
 
-/**
+# /**
  * DWARF attribute encodings.
  * <p>
  * Unknown encodings will prevent deserialization of DIE records.

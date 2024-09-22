@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.gdb.manager.evt;
 
 import agent.gdb.manager.parsing.GdbParsingUtils.GdbParseError;
 
-/**
+# /**
  * The event corresponding with "{@code =thread-created}"
  */
 public class GdbThreadCreatedEvent extends AbstractGdbThreadEvent {

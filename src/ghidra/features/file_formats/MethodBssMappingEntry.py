@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * See https://android.googlesource.com/platform/art/+/oreo-m2-release/runtime/method_bss_mapping.h
  * <br>
  * MethodBssMappingEntry describes a mapping of up to 17 method indexes to their offsets

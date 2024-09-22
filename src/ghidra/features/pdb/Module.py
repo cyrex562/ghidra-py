@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.msf.MsfStream;
 import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractMsSymbol;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * <B> Note that this class is new, in-progress creation, being designed as a better interface for
  * getting information for any particular module (stream) in a more random-access manner.</B>
  * <P>

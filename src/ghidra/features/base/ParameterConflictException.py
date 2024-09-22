@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.references;
 
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * <code>ParameterConflictException</code> indicates that the 
  * stack offset conflicts with an existing function parameter.
  */

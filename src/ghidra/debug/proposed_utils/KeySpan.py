@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.database;
 import generic.Span;
 import ghidra.util.database.DirectedIterator.Direction;
 
-/**
+# /**
  * An interval of database (primary) keys
  */
 public sealed interface KeySpan extends Span<Long, KeySpan> {

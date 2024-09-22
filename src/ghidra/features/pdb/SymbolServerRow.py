@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import pdb.symbolserver.DisabledSymbolServer;
 import pdb.symbolserver.SymbolServer;
 import pdb.symbolserver.SymbolServer.MutableTrust;
 
-/**
+# /**
  * Represents a row in the {@link SymbolServerTableModel}
  */
 class SymbolServerRow {

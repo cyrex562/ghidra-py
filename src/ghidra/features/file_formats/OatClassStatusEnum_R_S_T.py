@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android11-release/runtime/class_status.h#82">android11-release/runtime/class_status.h</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android12-release/runtime/class_status.h#82">android12-release/runtime/class_status.h</a>

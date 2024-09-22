@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.plugin.core.functiongraph.mvc.FGController;
 import ghidra.graph.job.GraphJob;
 import ghidra.graph.job.GraphJobListener;
 
-/**
+# /**
  * A dummy job that is designed to simply call the {@link FGController#ungroupAllVertices()}.  
  * We use this job to know when the previous job is finished.
  */

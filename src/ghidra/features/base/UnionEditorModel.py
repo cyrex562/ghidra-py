@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.help.UnsupportedOperationException;
 import docking.widgets.fieldpanel.support.FieldRange;
 import docking.widgets.fieldpanel.support.FieldSelection;
 
-/**
+# /**
  * Data union editor model for maintaining information about the edits being
  * performed. Updates the union to indicate component changes to
  * the data union. Maintains information about the editor fields (columns)

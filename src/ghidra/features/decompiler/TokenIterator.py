@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.decompiler;
 
 import java.util.*;
 
-/**
+# /**
  * An iterator over ClangToken objects.  The iterator walks a tree of ClangNode objects based on
  * the Parent() and Child() methods, returning successive ClangNode leaf objects that are also
  * ClangToken objects.  The iterator can run either forward or backward over the tokens.

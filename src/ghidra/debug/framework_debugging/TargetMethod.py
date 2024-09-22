@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.dbg.util.CollectionUtils.AbstractEmptyMap;
 import ghidra.dbg.util.CollectionUtils.AbstractNMap;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * An object which can be invoked as a method
  * 
  * <p>

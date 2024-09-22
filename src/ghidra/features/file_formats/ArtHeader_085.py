@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/android11-release/runtime/image.cc#31">android11-release/runtime/image.c</a>
  */
 public class ArtHeader_085 extends ArtHeader {

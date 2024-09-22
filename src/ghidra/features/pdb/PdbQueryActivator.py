@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ import org.osgi.framework.BundleContext;
 import ghidra.app.plugin.core.osgi.GhidraBundleActivator;
 import pdbquery.PdbFactory;
 
-/**
+# /**
  * Activator class for the PdbQuery bundle of scripts.  On "stop," calls method to close all PDBs.
  */
 public class PdbQueryActivator extends GhidraBundleActivator {

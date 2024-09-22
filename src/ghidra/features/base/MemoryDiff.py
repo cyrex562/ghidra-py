@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <CODE>MemoryDiff</CODE> determines where the memory differs between two programs as well as the
  * types of differences.
  */

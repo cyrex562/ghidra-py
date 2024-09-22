@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.ByteProvider;
 import net.sf.sevenzipjbinding.IInStream;
 import net.sf.sevenzipjbinding.SevenZipException;
 
-/**
+# /**
  * Adapter from Ghidra's {@link ByteProvider} to SZ's {@link IInStream}
  */
 class SZByteProviderStream implements IInStream {

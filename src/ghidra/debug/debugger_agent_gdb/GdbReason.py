@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.gdb.manager.GdbState;
 import agent.gdb.manager.parsing.GdbMiParser.GdbMiFieldList;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Indicates the reason for a thread's state to change, usually only when {@link GdbState#STOPPED}
  * 
  * This concept is native to GDB. When a thread stops, GDB may communicate the reason, e.g., a

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Manages changes and conflicts between the latest versioned Program and the
  * Program that is being checked into version control.
  */

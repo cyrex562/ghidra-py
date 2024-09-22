@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.Msg;
 import ghidra.util.NumericUtilities;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * <code>PdbMember</code> convey PDB member information used for datatype
  * reconstruction. The <i>memberDataTypeName</i> is expected to include
  * namespace prefixes when relevant.  When representing bitfields the

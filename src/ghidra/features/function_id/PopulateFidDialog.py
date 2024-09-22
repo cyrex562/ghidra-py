@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -48,7 +48,7 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.layout.PairLayout;
 import ghidra.util.task.Task;
 
-/**
+# /**
  * Dialog for gathering information to populate a fid database.
  */
 public class PopulateFidDialog extends DialogComponentProvider {

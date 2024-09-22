@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.dbgeng.jna.dbgeng.WinNTExtra.Machine;
 import ghidra.comm.util.BitmaskSet;
 import ghidra.comm.util.BitmaskUniverse;
 
-/**
+# /**
  * A wrapper for {@code IDebugBreakpoint} and its newer variants.
  */
 public interface DebugBreakpoint {

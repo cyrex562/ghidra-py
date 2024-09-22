@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import com.sun.jna.WString;
 import agent.dbgmodel.dbgmodel.UnknownEx;
 import agent.dbgmodel.dbgmodel.main.ModelObject;
 
-/**
+# /**
  * A wrapper for {@code IDebugHostEvaluator1} and its newer variants.
  */
 public interface DebugHostEvaluator1 extends UnknownEx {

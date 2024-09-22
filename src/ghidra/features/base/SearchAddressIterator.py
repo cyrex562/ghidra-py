@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.searchtext.iterators;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * A simple interface for searching that will allow for iteration over addresses.
  */
 public interface SearchAddressIterator {

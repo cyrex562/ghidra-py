@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.script.GhidraScript;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * This is a demonstration script to show how to query SLEIGH-based languages for various features.
  * It simply dumps a list of constructor line numbers and patterns for instructions that have a
  * RETURN PCode operation. If performed over every supported language and stored into a database,

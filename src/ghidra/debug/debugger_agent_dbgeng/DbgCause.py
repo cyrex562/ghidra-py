@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.dbgeng.manager;
 
 import agent.dbgeng.manager.cmd.DbgPendingCommand;
 
-/**
+# /**
  * Identifies the cause of an event emitted by dbgeng
  * 
  * This is not a concept native to dbgeng. Rather, it is a means to distinguish events that result

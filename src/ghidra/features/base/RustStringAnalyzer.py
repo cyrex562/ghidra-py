@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.util.DefinedDataIterator;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Splits non-terminated strings into separate strings
  */
 public class RustStringAnalyzer extends AbstractAnalyzer {

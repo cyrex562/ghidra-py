@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.listing.Function;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Represents a type declaration and variable pair.
  */
 public abstract class VariableDR extends DecompilerReference {

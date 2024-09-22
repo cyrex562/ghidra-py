@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A class that represents a COFF archive file (ie. MS .lib files, Unix .ar files)
  * <p>
  * COFF archives are very primitive compared to containers like ZIP or even TAR.

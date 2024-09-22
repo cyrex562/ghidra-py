@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.lldb.manager.LldbEvent;
 import agent.lldb.manager.evt.LldbCommandDoneEvent;
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * A base class for interacting with specific Lldb commands
  *
  * @param <T> the type of object "returned" by the command

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.features.bsim.query.client.CancelledSQLException;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Provides the ability to synchronize concurrent connection task
  * instances within the same thread.  This can occur within the swing thread due to the presence
  * of a modal task dialog event queue.  It also allows password cancelation to be propogated to the

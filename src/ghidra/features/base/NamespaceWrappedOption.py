@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.viewer.field;
 import ghidra.framework.options.CustomOption;
 import ghidra.framework.options.GProperties;
 
-/**
+# /**
  * An option class that allows the user to edit a related group of options pertaining to
  * namespace display.
  */

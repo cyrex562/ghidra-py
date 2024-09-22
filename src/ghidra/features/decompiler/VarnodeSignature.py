@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.lang.Language;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A feature representing a portion of the data-flow graph rooted at a particular Varnode.
  * The feature recursively incorporates details about the Varnode, the operation that defined it, and
  * the operation's input Varnodes, up to a specific depth.

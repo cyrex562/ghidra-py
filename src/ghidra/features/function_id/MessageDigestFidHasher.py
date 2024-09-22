@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.reloc.RelocationTable;
 import ghidra.program.model.scalar.Scalar;
 import ghidra.util.search.InstructionSkipper;
 
-/**
+# /**
  * Given a FunctionExtentGenerator and a MonitoredMessageDigest, will combine
  * both to become a FidHasher.
  *

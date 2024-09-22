@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.merge;
 
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Interface for resolving domain object merge conflicts.
  */
 public interface MergeResolver {

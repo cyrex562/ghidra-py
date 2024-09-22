@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.math.BigInteger;
 
-/**
+# /**
  * A debug header that is known (others may be known in the future) to be used for PData and XData
  * within the {@link DebugData} class.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.service.graph.*;
 import ghidra.util.HelpLocation;
 
-/** 
+# /** 
  * {@link GraphDisplayOptions} for {@link PCodeDfgGraphType}
  */
 public class PCodeDfgDisplayOptions extends GraphDisplayOptions {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.graph.graphs.FilteringVisualGraph;
 import ghidra.graph.viewer.layout.VisualGraphLayout;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * A graph for the {@link FunctionCallGraphPlugin}
  */
 public class FunctionCallGraph extends FilteringVisualGraph<FcgVertex, FcgEdge> {

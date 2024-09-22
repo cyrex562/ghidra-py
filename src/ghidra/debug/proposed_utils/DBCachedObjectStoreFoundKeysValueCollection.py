@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import db.Field;
 import db.util.ErrorHandler;
 import ghidra.util.LockHold;
 
-/**
+# /**
  * This provides the implementation of {@link DBCachedObjectIndex#get(Object)}
  *
  * @param <T> the type of objects in the store

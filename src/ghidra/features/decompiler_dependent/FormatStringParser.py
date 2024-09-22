@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.listing.Program;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Class for parsing a variadic function's format String to determine the proper
  * number of arguments and their DataTypes. It analyzes format strings from variadic functions. 
  * Parses format strings adhering to docs https://pubs.opengroup.org/onlinepubs/009695399/functions/fprintf.html

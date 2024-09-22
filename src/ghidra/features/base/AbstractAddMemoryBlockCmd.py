@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.mem.*;
 import ghidra.util.Msg;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * Base command class for adding memory blocks.
  */
 public abstract class AbstractAddMemoryBlockCmd implements Command<Program> {

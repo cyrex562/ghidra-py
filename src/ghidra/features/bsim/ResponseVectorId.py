@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.VectorResult;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Response to a QueryVectorId request to a BSim database.  For each id in the
  * request, return a VectorResult, which contains the corresponding full vector,
  * or return null 

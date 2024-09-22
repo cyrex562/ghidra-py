@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.service.graph.GraphDisplayProvider;
 import ghidra.util.HelpLocation;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * {@link GraphDisplayProvider} implementation for exporting graphs.  In this case, there is no
  * associated visual display, instead the graph output gets sent to a file.  The corresponding
  * {@link GraphDisplay} is mostly just a placeholder for executing the export function.  By

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.project.test.TestProjectManager;
 import ghidra.util.*;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * Ghidra framework and program test utilities
  */
 public class ProjectTestUtils {

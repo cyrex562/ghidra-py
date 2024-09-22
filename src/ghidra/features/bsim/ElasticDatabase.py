@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.features.bsim.query.protocol.*;
 import ghidra.framework.client.ClientUtil;
 import ghidra.util.xml.SpecXmlUtils;
 
-/**
+# /**
  * Implement the BSim database interface on top of an ElasticSearch back-end
  * ElasticSearch holds records as JSON documents.  Documents
  * are stored in a specific "index". The primary BSim document index/types are:

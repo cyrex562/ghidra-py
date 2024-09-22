@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.typeinfo;
 
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a Microsoft C++ RTTI4 object, and is, unlike the
  * other RTTI, derived from MDVxTable, which has a const/volatile modifier.
  * The others are derived from MDMetaClassVirtual Function Table.
@@ -29,5 +29,5 @@ public class MDRTTI4 extends MDVxTable {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

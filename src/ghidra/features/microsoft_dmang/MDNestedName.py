@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.naming;
 import mdemangler.*;
 import mdemangler.object.MDObjectCPP;
 
-/**
+# /**
  * This class represents a nested name (wiki page parlance) within a name of a
  *  Microsoft mangled symbol.
  */
@@ -67,5 +67,5 @@ public class MDNestedName extends MDParsableItem {
 
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

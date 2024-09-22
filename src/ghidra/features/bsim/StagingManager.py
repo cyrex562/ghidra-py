@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.bsim.query.protocol;
 
 import ghidra.features.bsim.query.LSHException;
 
-/**
+# /**
  * Abstract class for splitting up a (presumably large) query into smaller pieces
  * The object must be configured by a call to setQuery with details of the staged query
  * and then typically a call to setGlobalManager which specifies the data for the whole query

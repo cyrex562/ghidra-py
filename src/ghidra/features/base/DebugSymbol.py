@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.bin.format.pe.debug;
 
-/**
+# /**
  * A base class for Object Module Format (OMF) symbols.
  * 
  */

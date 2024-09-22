@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.filechooser.ExtensionFileFilter;
 import ghidra.util.filechooser.GhidraFileFilter;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * A plugin that adds actions to manage data resources in the listing
  */
 //@formatter:off

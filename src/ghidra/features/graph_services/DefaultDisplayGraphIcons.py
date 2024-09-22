@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import javax.swing.Icon;
 import generic.theme.GIcon;
 import resources.Icons;
 
-/**
+# /**
  * Holds the icons used by the DefaultProgramGraph toolbars and menus.
  */
 final class DefaultDisplayGraphIcons {

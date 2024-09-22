@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.pcode.*;
 import ghidra.service.graph.AttributedEdge;
 import ghidra.service.graph.AttributedVertex;
 
-/**
+# /**
  * Task to create a combined PCode control flow and data flow graph based on decompiler output
  */
 public class PCodeCombinedGraphTask extends PCodeDfgGraphTask {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.format.dwarf.attribs.DWARFAttribute.AttrDef;
 import ghidra.program.model.data.LEB128;
 import ghidra.util.datastruct.IntArrayList;
 
-/**
+# /**
  * A DWARF Debug Info Entry is a collection of {@link DWARFAttributeValue attributes}
  * in a hierarchical structure (see {@link #getParent()}, {@link #getChildren()}).
  * <p>

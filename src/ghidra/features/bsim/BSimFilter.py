@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Suitable for client side filtering by calling isFiltered with an ExecutableRecord
  * or evaluate with a FunctionDescription. Contains information for passing filter to 
  * server side. Each 'atom' of the filter (FilterAtom) is expressed as an operator and 

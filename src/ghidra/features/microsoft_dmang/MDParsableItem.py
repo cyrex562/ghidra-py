@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package mdemangler;
 
-/**
+# /**
  * This class is the base class of all parsable items of this demangler.
  */
 public abstract class MDParsableItem {

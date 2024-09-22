@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.PdbException;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Class representing a Stream within an {@link Msf}--see its write-up.
  * <P>
  * The stream can only be read, as it is part of a reader capability, not a read/write/modify

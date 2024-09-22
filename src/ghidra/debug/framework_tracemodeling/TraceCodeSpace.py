@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.trace.model.listing;
 import ghidra.program.database.code.CodeManager;
 import ghidra.program.model.address.AddressSpace;
 
-/**
+# /**
  * A space within a {@link CodeManager} bound to a specific address space or thread and frame
  * 
  * <p>

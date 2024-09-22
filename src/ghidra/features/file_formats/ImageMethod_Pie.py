@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.image_method;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/pie-release/runtime/image.h#194">pie-release/runtime/image.h</a>
  */
 public enum ImageMethod_Pie {

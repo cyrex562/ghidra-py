@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.gdb.manager.evt;
 import agent.gdb.manager.parsing.GdbMiParser;
 import agent.gdb.manager.parsing.GdbParsingUtils.GdbParseError;
 
-/**
+# /**
  * A base class for GDB events whose details are a string
  */
 public abstract class AbstractGdbEventWithString extends AbstractGdbEvent<String> {

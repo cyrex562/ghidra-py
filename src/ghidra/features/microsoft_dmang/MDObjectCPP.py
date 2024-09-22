@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import mdemangler.naming.*;
 import mdemangler.typeinfo.MDTypeInfo;
 import mdemangler.typeinfo.MDTypeInfoParser;
 
-/**
+# /**
  * This class represents a derivative of an <b><code>MDObject</code></b> which is a C++ object.
  */
 public class MDObjectCPP extends MDObject {
@@ -277,5 +277,5 @@ public class MDObjectCPP extends MDObject {
 
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

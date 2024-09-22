@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.HelpLocation;
 import ghidra.util.table.*;
 
-/**
+# /**
  * This class is a provider for the table to display pattern evaluation information
  */
 public class PatternEvalTableProvider extends ComponentProviderAdapter {

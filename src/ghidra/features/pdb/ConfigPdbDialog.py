@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,7 +47,7 @@ import pdb.symbolserver.*;
 import resources.Icons;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Dialog that allows the user to configure the Pdb search locations and symbol directory
  */
 public class ConfigPdbDialog extends DialogComponentProvider {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package functioncalls.graph;
 
-/**
+# /**
  * Represents whether a vertex is an incoming vertex (the start or from) on an edge, 
  * an outgoing vertex (the end or to) on an edge, or if it is both.
  */

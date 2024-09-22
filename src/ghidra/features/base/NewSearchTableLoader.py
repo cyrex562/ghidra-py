@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.features.base.memsearch.searcher.MemorySearcher;
 import ghidra.util.datastruct.Accumulator;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Table loader that performs a search and displays the results in the table.
  */
 public class NewSearchTableLoader implements MemoryMatchTableLoader {

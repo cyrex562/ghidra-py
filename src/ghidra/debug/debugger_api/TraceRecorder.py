@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,7 +44,7 @@ import ghidra.trace.model.time.TraceTimeManager;
 import ghidra.trace.util.TraceRegisterUtils;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A recorder from target object, usually a process, to a destination trace
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.dwarf.DWARFFunction;
 import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * Interface for add-in logic to fix/modify/tweak DWARF functions before they are written 
  * to the Ghidra program.
  * <p>

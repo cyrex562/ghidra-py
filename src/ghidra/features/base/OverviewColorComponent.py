@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.task.SwingUpdateManager;
 import help.Help;
 
-/**
+# /**
  * Overview bar component. Uses color to indicate various address based properties for a program.
  * Uses an {@link OverviewColorService} to get the appropriate color for an address.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package mdemangler;
 
-/**
+# /**
  * An MDMang extension that tailors output to Visual Studio 2013 (and earlier?) output results.
  */
 public class MDMangVS2013 extends MDMangVS2015 {
@@ -28,5 +28,5 @@ public class MDMangVS2013 extends MDMangVS2015 {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

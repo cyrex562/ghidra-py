@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This class is for mining patterns (i.e., closed sequences) in collections of sequences 
  * of bytes.
  * 

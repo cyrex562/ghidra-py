@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.program.model.symbol.ExternalLocation;
 import ghidra.program.model.symbol.Symbol;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * A utility class that creates tool tip text for given data types.
  * 
  * 

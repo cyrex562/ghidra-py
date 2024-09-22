@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.*;
 import ghidra.util.exception.AssertException;
 import ghidra.util.timer.GTimer;
 
-/**
+# /**
  * An action to delete data from a table.   If your model is a {@link ThreadedTableModel}, then
  * this class is self-contained.  If you have some other kind of model, then you must 
  * override {@link #removeSelectedItems()} in order to remove items from your model when the 

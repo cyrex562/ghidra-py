@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.List;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.LEB128;
 
-/**
+# /**
  * Evaluates a sequence of (value_delta,pc_delta) leb128 pairs to calculate a value for a certain 
  * PC location. 
  */

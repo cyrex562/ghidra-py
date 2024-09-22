@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.pcode.exec.PcodeExecutorState;
 import ghidra.program.model.listing.Program;
 import ghidra.taint.model.TaintVec;
 
-/**
+# /**
  * A library for performing Taint Analysis on a Linux-amd64 program that reads from tainted files
  * 
  * <p>

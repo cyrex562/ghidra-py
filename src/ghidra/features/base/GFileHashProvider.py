@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * GFileSystem add-on interface that provides MD5 hashing for file located within the filesystem 
  */
 public interface GFileHashProvider {

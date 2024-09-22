@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.app.plugin.core.datamgr.archive.Archive;
 
 import java.util.List;
 
-/**
+# /**
  * An interface to be implemented by any class that can return a list of Archives.
  * For example, the tool's data type manager can return a list of archives within the project.
  */

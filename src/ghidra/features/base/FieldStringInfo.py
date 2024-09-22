@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.viewer.field;
 
-/**
+# /**
  * A simple data container class that contains a part string that is part of a parent string with the 
  * index of the part string into the parent string.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.address.AddressSpace;
 import ghidra.taint.model.TaintVec;
 import ghidra.trace.model.property.TracePropertyMapSpace;
 
-/**
+# /**
  * The trace-integrated state piece for holding taint marks
  *
  * <p>

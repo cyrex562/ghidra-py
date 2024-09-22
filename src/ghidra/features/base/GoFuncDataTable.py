@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang.rtti;
 
-/**
+# /**
  * An index into a GoFuncData's variable-size funcdata array.  See GoFuncData's nfuncdata for
  * actual array size.
  */

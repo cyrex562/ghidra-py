@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.util.bin.format.dwarf.DWARFFunction;
 import ghidra.app.util.bin.format.dwarf.DWARFVariable;
 import ghidra.util.classfinder.ExtensionPointProperties;
 
-/**
+# /**
  * Steal storage location from parameters that are defined in a function's local variable
  * area, because the storage location isn't the parameter location during call, but its location
  * after being spilled.

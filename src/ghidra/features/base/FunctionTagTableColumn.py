@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Table column for displaying all function tags associated with a given function. Tags
  * will be displayed as a set of comma-delimited strings, in sorted order.
  */

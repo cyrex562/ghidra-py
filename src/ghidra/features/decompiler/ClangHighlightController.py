@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.model.pcode.PcodeOp;
 import ghidra.util.ColorUtils;
 import util.CollectionUtils;
 
-/**
+# /**
  * Class to handle highlights for a decompiled function.
  * 
  * <p>This class does not paint directly.  Rather, this class tracks the currently highlighted

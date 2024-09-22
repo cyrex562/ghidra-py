@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.file.formats.android.dex.format.DexHeader;
 import ghidra.file.formats.android.oat.OatHeader;
 import ghidra.file.formats.android.vdex.VdexHeader;
 
-/**
+# /**
  * A fictitious class to locate, open, and store all of the files
  * related to Android OAT/ART.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.bitpatterns.info.*;
 import ghidra.util.HelpLocation;
 import ghidra.util.bytesearch.DittedBitSequence;
 
-/**
+# /**
  * This is a base class for providers which allow the user to analyze sequences of bytes.
  */
 public abstract class ByteSequenceAnalyzerProvider extends DialogComponentProvider {

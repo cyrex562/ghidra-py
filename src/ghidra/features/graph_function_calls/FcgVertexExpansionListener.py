@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package functioncalls.graph;
 
-/**
+# /**
  * A listener to know when a vertex has been told to expand
  */
 public interface FcgVertexExpansionListener {

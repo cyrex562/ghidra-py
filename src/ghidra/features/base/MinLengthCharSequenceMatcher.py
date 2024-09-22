@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.ascii;
 
 import ghidra.program.model.data.StringDataType;
 
-/** 
+# /** 
  * Instances of this class will find sequences of characters that are in the given char set and
  * of a minimum length.  Characters a fed one at a time into this object. Adding a char may trigger
  * the discovery of a sequence if the char is a 0 or not in the char set and we already have seen

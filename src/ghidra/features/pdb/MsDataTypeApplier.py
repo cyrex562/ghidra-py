@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.PdbException;
 import ghidra.app.util.bin.format.pdb2.pdbreader.type.AbstractMsType;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Abstract class representing the applier for a specific PDB_ID type, distinguished as
  *  representing an actual data type... not a component of a data type for which there is
  *  no associated type.

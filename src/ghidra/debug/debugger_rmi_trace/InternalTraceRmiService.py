@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.plugin.core.debug.service.tracermi.DefaultTraceRmiAcceptor;
 import ghidra.app.plugin.core.debug.service.tracermi.TraceRmiHandler;
 import ghidra.debug.spi.tracermi.TraceRmiLaunchOpinion;
 
-/**
+# /**
  * The same as the {@link TraceRmiService}, but grants access to the internal types (without
  * casting) to implementors of {@link TraceRmiLaunchOpinion}.
  */

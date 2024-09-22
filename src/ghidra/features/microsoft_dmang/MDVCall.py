@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import mdemangler.*;
 import mdemangler.datatype.modifier.MDBasedAttribute;
 import mdemangler.functiontype.MDFunctionType;
 
-/**
+# /**
  * This class represents a virtual call (Microsoft C++ mangling parlance)
  *  derivative of MDTypeInfo.
  */
@@ -202,5 +202,5 @@ public class MDVCall extends MDMemberFunctionInfo {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

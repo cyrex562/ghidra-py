@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.listing.*;
 import ghidra.util.Msg;
 import ghidra.util.task.*;
 
-/**
+# /**
  * An object of this class stores information about function starts (and returns) to analyze.
  * 
  * <p> There are two possible sources for this information.  The first is a directory containing 

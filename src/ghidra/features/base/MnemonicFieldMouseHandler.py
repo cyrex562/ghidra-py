@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.util.*;
 import ghidra.util.table.IncomingReferencesTableModel;
 import ghidra.util.table.field.OutgoingReferenceEndpoint;
 
-/**
+# /**
  * A handler to process {@link MnemonicFieldLocation} clicks.
  */
 public class MnemonicFieldMouseHandler implements FieldMouseHandlerExtension {

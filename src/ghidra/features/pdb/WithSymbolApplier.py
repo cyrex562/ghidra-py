@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.Address;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Applier for {@link AbstractWithMsSymbol} symbols.  This is not fully implemented
  * because we do not know its usage or have examples, but we have implemented
  * the block management portion.

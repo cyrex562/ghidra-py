@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -53,7 +53,7 @@ import ghidra.util.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Plugin for BSim search features
  */
 //@formatter:off

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.bsim.gui.search.results;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * An exception that can be thrown if an error is encountered while trying to compare two functions
  * or apply information between them.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.demangler;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * An convenience {@link Demangled} object that holds a {@link List} of other 
  * {@link Demangled} objects
  */

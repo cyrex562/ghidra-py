@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.debug.api.target;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * A name for a commonly-recognized target action.
  * 
  * <p>

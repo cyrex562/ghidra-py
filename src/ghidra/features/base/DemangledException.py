@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.demangler;
 
-/**
+# /**
  * A class to handle exceptions that occur demangling.
  */
 public class DemangledException extends Exception {

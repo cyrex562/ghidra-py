@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import functioncalls.graph.*;
 import ghidra.graph.viewer.GraphViewer;
 import util.CollectionUtils;
 
-/**
+# /**
  * A container to house all newly added vertices (those being arranged) and the sources, or 
  * 'from' vertices, of the new vertices.
  *   

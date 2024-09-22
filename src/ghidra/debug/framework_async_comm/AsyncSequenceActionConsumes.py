@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.BiConsumer;
 import ghidra.async.AsyncUtils;
 import ghidra.async.TypeSpec;
 
-/**
+# /**
  * The interface for an action that consumes a temporary value but produces nothing
  *
  * @see AsyncSequenceWithTemp#then(AsyncSequenceActionConsumes)

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import docking.Tool;
 import ghidra.service.graph.*;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * This class is the {@link GraphDisplayOptions} for BSim Feature Graphs.
  */
 public class BSimFeatureGraphDisplayOptions extends GraphDisplayOptions {

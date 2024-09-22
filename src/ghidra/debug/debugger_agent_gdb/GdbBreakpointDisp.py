@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.gdb.manager.breakpoint;
 
-/**
+# /**
  * GDB breakpoint disposition
  * 
  * GDB allows the user to specify what happens to a breakpoint after it has been hit. Different

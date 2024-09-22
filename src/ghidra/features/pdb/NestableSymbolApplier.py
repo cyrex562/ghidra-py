@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.MsSymbolIterator;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbException;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Interface class for MsSymbolApplier that can have its processing nested under another symbol
  */
 interface NestableSymbolApplier {

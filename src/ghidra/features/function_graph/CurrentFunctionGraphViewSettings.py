@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.graph.viewer.GraphPerspectiveInfo;
 import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ProgramSelection;
 
-/**
+# /**
  * This settings object is created after a graph has been loaded.  Further, creating this object
  * will apply the perspective information, if any has been specified.
  * <p>

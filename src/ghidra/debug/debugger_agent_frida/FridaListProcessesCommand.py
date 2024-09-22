@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.frida.manager.*;
 import agent.frida.manager.FridaCause.Causes;
 import agent.frida.manager.impl.FridaManagerImpl;
 
-/**
+# /**
  * Implementation of {@link FridaManager#listProcesses(FridaSession session)}
  */
 public class FridaListProcessesCommand extends AbstractFridaCommand<Map<String, FridaProcess>> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.formats.gfilesystem.FSRL;
 import ghidra.util.Msg;
 import ghidra.util.datastruct.LRUMap;
 
-/**
+# /**
  * A {@link ByteProvider} that reads its bytes from a file.
  * 
  */

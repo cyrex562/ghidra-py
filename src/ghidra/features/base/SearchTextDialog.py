@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.layout.VerticalLayout;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitorComponent;
 
-/**
+# /**
  * Dialog for showing options to search text in a Program.
  */
 class SearchTextDialog extends ReusableDialogComponentProvider {

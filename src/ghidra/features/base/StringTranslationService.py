@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Interface for providing string translating services.
  * <p>
  * Implementations of this interface are usually done via a Plugin

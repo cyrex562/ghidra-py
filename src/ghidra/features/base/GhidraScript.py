@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -78,7 +78,7 @@ import ghidra.util.table.AddressArrayTableModel;
 import ghidra.util.table.AddressSetTableModel;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <h2>Ghidra Script Development.</h2>
  * In order to write a script:
  * <ol>

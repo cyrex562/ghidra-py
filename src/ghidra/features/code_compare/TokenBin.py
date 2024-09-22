@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.decompiler.ClangToken;
 import ghidra.program.model.pcode.HighFunction;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An iterable list of Decompiler tokens {@link ClangToken} in one window that is paired with a
  * list in another window. The matching TokenBin, if it exists, is obtained by calling
  * getMatch(). This container is constructed and populated only by {@link Pinning}.

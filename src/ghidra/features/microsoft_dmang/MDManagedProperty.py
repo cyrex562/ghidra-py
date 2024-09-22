@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.datatype.modifier;
 import mdemangler.MDMang;
 import mdemangler.MDParsableItem;
 
-/**
+# /**
  * This class represents a managed property of a modifier type within a Microsoft
  * mangled symbol.
  */
@@ -93,5 +93,5 @@ public class MDManagedProperty extends MDParsableItem {
 //	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

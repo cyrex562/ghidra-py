@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.DescriptionManager;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Response to a request for functions with specific vector ids
  * Full ExecutableRecords and FunctionDescriptions are instantiated in this object's DescriptionManager
  */

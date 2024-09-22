@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.util.*;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * Action triggered from a specific token in the decompiler window to change the return type of
  * the function. The user selected data-type is permanently set as the return type. As the
  * return type is part of the function prototype and is forcing on the decompiler,

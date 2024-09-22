@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package mdemangler;
 
-/**
+# /**
  * A class for bidirectional iteration over a string.
  * 
  * Iterators maintain a current character index, whose valid range is from

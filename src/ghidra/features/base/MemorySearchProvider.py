@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -58,7 +58,7 @@ import ghidra.util.table.actions.DeleteTableRowAction;
 import ghidra.util.table.actions.MakeProgramSelectionAction;
 import resources.Icons;
 
-/**
+# /**
  * ComponentProvider used to search memory and display search results.
  */
 public class MemorySearchProvider extends ComponentProviderAdapter

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.CodeUnit;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * <CODE>SelectByFlowAction</CODE> allows the user to Select Code By Flowing from
  * the current program selection or by location if there is no selection.<BR>
  * Base class for actions in SelectByFlowPlugin.

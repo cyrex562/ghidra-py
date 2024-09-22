@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.map.TypeMismatchException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * TODO: Document me
  * 
  * TODO: This is public for user properties, i.e., {@link ProgramUserData}, but encapsulated for

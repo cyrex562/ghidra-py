@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 package ghidra.util.bytesearch;
 
 
-/**
+# /**
  * Templated simple DittedBitSequence Pattern for a byte/mask pattern and associated action.
  * The DittedBitSequence is provided by value and mask in byte arrays.
  * 

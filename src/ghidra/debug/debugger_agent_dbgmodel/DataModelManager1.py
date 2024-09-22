@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import agent.dbgmodel.dbgmodel.main.ModelObject;
 import agent.dbgmodel.jna.dbgmodel.DbgModelNative.LOCATION;
 import agent.dbgmodel.jna.dbgmodel.DbgModelNative.ModelObjectKind;
 
-/**
+# /**
  * A wrapper for {@code IDataModelManager1} and its newer variants.
  */
 public interface DataModelManager1 extends UnknownEx {

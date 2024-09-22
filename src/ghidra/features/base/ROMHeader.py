@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.bin.format.pe;
 
-/**
+# /**
  * A class to represent the 
  * <code>IMAGE_ROM_HEADERS</code>
  * struct as defined in 

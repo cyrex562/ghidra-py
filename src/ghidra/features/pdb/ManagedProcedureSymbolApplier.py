@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.task.TaskMonitor;
 // need to determine if it can be a proper child of the class or if FunctionSymbolApplier
 // should be adapted to handle both.  Much of the code below, even if not yet used, can serve
 // as a foundation for determining how we should process "Managed" procedures.
-/**
+# /**
  * Applier for {@link AbstractManagedProcedureMsSymbol} symbols.
  */
 public class ManagedProcedureSymbolApplier extends AbstractBlockContextApplier

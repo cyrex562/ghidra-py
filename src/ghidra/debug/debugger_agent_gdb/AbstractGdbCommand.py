@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.gdb.manager.impl.GdbManagerImpl.Interpreter;
 import agent.gdb.manager.parsing.GdbParsingUtils.GdbParseError;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A base class for interacting with specific GDB commands
  *
  * @param <T> the type of object "returned" by the command

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressOverflowException;
 import ghidra.program.model.mem.*;
 
-/**
+# /**
  * Command for adding uninitialized memory blocks
  */
 public class AddUninitializedMemoryBlockCmd extends AbstractAddMemoryBlockCmd {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.client;
 
-/**
+# /**
  * The SQL clauses for all the filters that are to be used in a BSim query
  * @param tableClause the table SQL clause
  * @param whereClause the where SQL clause

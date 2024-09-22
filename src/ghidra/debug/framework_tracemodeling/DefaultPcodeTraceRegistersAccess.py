@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.trace.model.property.TracePropertyMapSpace;
 import ghidra.trace.model.thread.TraceThread;
 import ghidra.trace.util.TraceRegisterUtils;
 
-/**
+# /**
  * The default data-access shim for trace registers
  */
 public class DefaultPcodeTraceRegistersAccess extends AbstractPcodeTraceDataAccess

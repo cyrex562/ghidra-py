@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.symbol.Reference;
 import ghidra.program.model.symbol.Symbol;
 import ghidra.program.util.DiffUtility;
 
-/**
+# /**
  * This is a class with static methods for obtaining information about a code unit and its 
  * references. The information is provided as a String.
  */

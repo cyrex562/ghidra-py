@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbByteReader;
 
 //TODO: MSFT does not give API.  Need to see real data to fill in the details.
-/**
+# /**
  * This class represents the 2005 version of Defined Single Address Range symbol.
  * <P>
  * Note: we do not necessarily understand each of these symbol type classes.  Refer to the

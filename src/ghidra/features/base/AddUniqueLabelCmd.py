@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.*;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Command to add a label. If the label already
  * exists somewhere else, the address is appended to make
  * it unique.

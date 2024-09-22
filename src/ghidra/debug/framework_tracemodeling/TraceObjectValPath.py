@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 import ghidra.dbg.util.PathPredicates;
 import ghidra.trace.database.target.DBTraceObjectValPath;
 
-/**
+# /**
  * A path of values leading from one object to another
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.BigEndianDataConverter;
 import ghidra.util.LittleEndianDataConverter;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A low-level structure embedded in golang binaries that contains useful bootstrapping
  * information.
  * <p>
@@ -319,7 +319,7 @@ public class GoPcHeader {
 	}
 
 }
-/*
+# /*
 struct runtime.pcHeader  
 Length: 40  Alignment: 4
 { 

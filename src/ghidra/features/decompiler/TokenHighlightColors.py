@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 
 import generic.theme.Gui;
 
-/**
+# /**
  * A class to create and store colors related to token names
  */
 public class TokenHighlightColors {

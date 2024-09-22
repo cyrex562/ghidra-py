@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.framework.options.*;
 import ghidra.program.model.listing.Program;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * <code>StoredAnalyzerTimes</code> provides a custom option container for 
  * accumulated analysis times for named tasks.
  */

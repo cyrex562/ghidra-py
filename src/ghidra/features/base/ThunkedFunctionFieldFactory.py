@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.symbol.ExternalManager;
 import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ThunkedFunctionFieldLocation;
 
-/**
+# /**
   *  Generates Thunked Function Fields.
   */
 public class ThunkedFunctionFieldFactory extends FieldFactory {

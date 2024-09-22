@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Command that applies the "module" algorithm to a specified Module or
  * Fragment. 
  * Gets an iterator over the code blocks containing the selected folder or fragment.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.program.util.ProgramLocation;
 
 import java.awt.event.MouseEvent;
 
-/**
+# /**
  * An interface for handling mouse clicks on {@link ghidra.util.bean.field.AnnotatedTextFieldElement}s.
  */
 public interface AnnotatedMouseHandler {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.plugin.core.functiongraph.graph.layout.FGLayoutProvider;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A layout provider that allows us to specify a Jung layout by name.
  */
 public class JgtNamedLayoutProvider extends FGLayoutProvider {

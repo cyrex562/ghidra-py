@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.filechooser.ExtensionFileFilter;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Dialog that allows users to search for strings within a program.
  */
 public class SearchStringDialog extends DialogComponentProvider {

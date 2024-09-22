@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.*;
 
-/**
+# /**
  * The SelectByFlowPlugin adds selection of code based on program flow to a
  * tool. Selection is based on the initial selection or if there is no selection
  * then on where the cursor is located in the program.<BR>

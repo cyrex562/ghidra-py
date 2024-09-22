@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import mdemangler.naming.MDQualifiedName;
 // calls in other classes that peform the dmang.cleanOutput()
 // method.
 
-/**
+# /**
  * This class represents a based property of a modifier type within a Microsoft
  * mangled symbol.
  */

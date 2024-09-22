@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.gdb.manager;
 
-/**
+# /**
  * An opaque handle identifying a library
  * 
  * GDB leaves a lot of variability in how libraries are uniquely identified within an inferior. This

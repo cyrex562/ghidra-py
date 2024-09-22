@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.feature.fid.db;
 import generic.hash.FNV1a64MessageDigest;
 import ghidra.feature.fid.hash.FidHashQuad;
 
-/**
+# /**
  * Currently this class only contains the helper methods that calculate "hash smash"
  * values for parent/child call relationships.  See RelationsTable for more information.
  */

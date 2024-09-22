@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbByteReader;
 
-/**
+# /**
  * This is not a real MS Symbol.  We made this up to take the place of anticipated, unknown
  *  symbols.
  */

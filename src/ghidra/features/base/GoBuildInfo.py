@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.program.model.mem.MemoryBlock;
 import ghidra.program.model.util.CodeUnitInsertionException;
 import ghidra.util.*;
 
-/**
+# /**
  * A program section that contains Go build information strings, namely go module package names,
  * go module dependencies, and build/compiler flags, as well as the golang version itself.
  */

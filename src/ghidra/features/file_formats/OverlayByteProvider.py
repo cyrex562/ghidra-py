@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 
 import ghidra.app.util.bin.ByteProvider;
 
-/**
+# /**
  * This byte provider is used to store decompressed chunks at specific locations.
  */
 public class OverlayByteProvider implements ByteProvider {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Allows a class to create a structure
  * datatype equivalent to its class members.
  * 

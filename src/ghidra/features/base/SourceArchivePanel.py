@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.data.ArchiveType;
 import ghidra.program.model.data.SourceArchive;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Panel to show the contents of a Source Archive.
  */
 class SourceArchivePanel extends JPanel {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.mem.*;
 import ghidra.program.model.scalar.Scalar;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The RTTI3 data type represents a ClassHierarchyDescriptor structure.
  * <p>
  * Fields for this RunTimeTypeInformation structure can be found on http://www.openrce.org

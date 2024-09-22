@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.mem.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Iterator that searches for locations that could be strings and returns 
  * {@link StringDataInstance}s representing those locations.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.datastruct.Accumulator;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A class that 'describes' a {@link ProgramLocation}.  The descriptor is also based upon the
  * program to which the location belongs and requires the {@link PluginTool} to which the
  * program belongs.

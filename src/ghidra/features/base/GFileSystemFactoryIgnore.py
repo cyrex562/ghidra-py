@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.formats.gfilesystem.factory;
 
 import ghidra.formats.gfilesystem.GFileSystem;
 
-/**
+# /**
  * Marker class that tells the {@link FileSystemFactoryMgr} to not register this
  * filesystem instance.
  */

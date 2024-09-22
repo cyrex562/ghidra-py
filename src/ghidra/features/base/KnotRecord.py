@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.overview.entropy;
 
 import java.awt.Color;
 
-/**
+# /**
  * Entropy information for the Entropy color legend panel. A KnotRecord records a "known" entropy
  * range for a specific type of data in a program.  For example, if you compute the entropy for
  * a range of bytes containing ASCII characters, you will get an entropy score close to 4.7.

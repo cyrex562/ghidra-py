@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-/**
+# /**
  * Indicates that the objects in the return value of the tagged method should be recursively
  * marked up, or if a tagged field, the object in the field should be recursively marked up.
  * <p>

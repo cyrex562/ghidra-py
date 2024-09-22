@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.CodeUnit;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.ReferenceManager;
 
-/**
+# /**
  * This table field displays the number of references to the location that was found
  */
 public class OffcutReferenceCountToAddressTableColumn extends

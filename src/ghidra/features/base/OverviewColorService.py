@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.HelpLocation;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * Interface for services that know how to associate colors with any address in a program.
  * Instances of these services are discovered and presented as options on the Listing's right
  * margin area.

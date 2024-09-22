@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.framework.options.Options;
 import ghidra.program.model.data.*;
 import ghidra.util.Conv;
 
-/**
+# /**
  * Older style pdb information, using a simple 32bit hash to link the pdb to its binary.
  */
 public class PdbInfoCodeView implements StructConverter, PdbInfo {

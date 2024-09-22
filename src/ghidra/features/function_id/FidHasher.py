@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.feature.fid.hash;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * FidHasher is an interface with one method--hash.  It's used by the
  * FID system to hash a function for inclusion in a FID library, or for
  * searching the libraries for a match. 

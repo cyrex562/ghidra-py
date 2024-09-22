@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.script;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * An exception for when a script provider cannot create a script instance
  */
 public class GhidraScriptLoadException extends UsrException {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.util.classfinder.ExtensionPoint;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * NOTE:  ALL DataFormatModel CLASSES MUST END IN "FormatModel".  If not,
  * the ClassSearcher will not find them.
  * 

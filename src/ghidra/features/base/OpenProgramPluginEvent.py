@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.lang.ref.WeakReference;
 import ghidra.framework.plugintool.PluginEvent;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Event for telling a tool to open a program
  */
 public class OpenProgramPluginEvent extends PluginEvent {

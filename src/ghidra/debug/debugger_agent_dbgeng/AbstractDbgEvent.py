@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import agent.dbgeng.manager.*;
 import agent.dbgeng.manager.DbgCause.Causes;
 import agent.dbgeng.manager.cmd.DbgPendingCommand;
 
-/**
+# /**
  * A base class for Dbg events
  *
  * @param <T> the type of information detailing the event

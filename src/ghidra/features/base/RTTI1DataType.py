@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Listing;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.*;
 
-/**
+# /**
  * The RTTI1 data type represents a BaseClassDescriptor structure.
  * <p>
  * Fields for this RunTimeTypeInformation structure can be found on http://www.openrce.org

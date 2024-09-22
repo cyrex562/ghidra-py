@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.app.util.bin.BinaryReader;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/android12-release/runtime/image.cc#31">android12-release/runtime/image.c</a>
  */
 public class ArtHeader_099 extends ArtHeader_085 {

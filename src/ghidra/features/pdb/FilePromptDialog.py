@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import docking.widgets.label.GHtmlLabel;
 import ghidra.util.filechooser.GhidraFileFilter;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Non-public, package-only dialog that prompts the user to enter a path
  * in a text field (similar to an {@link OptionDialog}) and allows them to click
  * a "..." browse button to pick the file and/or directory via a

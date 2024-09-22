@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.LittleEndianDataConverter;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A {@link Loader} for Mach-O files.
  */
 public class MachoLoader extends AbstractLibrarySupportLoader {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import org.jdom.input.SAXBuilder;
 import ghidra.util.Msg;
 import ghidra.util.xml.XmlUtilities;
 
-/**
+# /**
  * An object of this class stores all the function bit pattern information for an executable.
  * It records the number of bytes and instructions for each category (first, pre, and return), as
  * well as the language ID and ghidraURL of the executable.  Using JAXB, objects of this class converted

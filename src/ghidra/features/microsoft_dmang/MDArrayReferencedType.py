@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import mdemangler.*;
 import mdemangler.datatype.MDDataType;
 import mdemangler.datatype.MDDataTypeParser;
 
-/**
+# /**
  * This class represents an "array referenced" data type within a Microsoft mangled symbol.
  */
 public class MDArrayReferencedType extends MDDataType {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.exception.GraphException;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-/*
+# /*
  * Task for creating and displaying a data reference graph
  */
 public class DataReferenceGraphTask extends Task {

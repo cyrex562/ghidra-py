@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import org.jungrapht.visualization.selection.ShapePickSupport;
 
 import static org.jungrapht.visualization.layout.util.PropertyLoader.PREFIX;
 
-/**
+# /**
  * Keeper of shared logic for jungrapht handling
  */
 public class JgtUtils {

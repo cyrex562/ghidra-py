@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.bitpatterns.gui;
 import ghidra.app.analyzers.FunctionStartAnalyzer;
 import ghidra.util.bytesearch.*;
 
-/**
+# /**
  * This class is an implementation of the PatternFactory interface for use by {@link ClipboardPanel}
  */
 public class ClipboardPatternFactory implements PatternFactory {

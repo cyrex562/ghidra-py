@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Collection;
 
 import ghidra.program.model.lang.CompilerSpec;
 
-/**
+# /**
  * Allows the addition of "guest platforms" for disassembling in multiple languages.
  * 
  * <p>

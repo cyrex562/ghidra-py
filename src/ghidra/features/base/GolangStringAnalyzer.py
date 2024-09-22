@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.UnknownProgressWrappingTaskMonitor;
 
-/**
+# /**
  * Analyzer that finds Golang strings (and optionally slices) and marks up the found instances.
  * <p>
  * The char[] data for Golang strings does not contain null terminators, so the normal logic already

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.util.FunctionLocation;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * <CODE>EditStackAction</CODE> allows the user to edit a function's stack frame.
  */
 public class EditStackAction extends ListingContextAction {

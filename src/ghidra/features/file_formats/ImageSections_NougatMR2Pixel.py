@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.art.ArtHeader;
 import ghidra.file.formats.android.art.ArtImageSections;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-mr2-pixel-release/runtime/image.h#193">nougat-mr2-pixel-release/runtime/image.h</a>
  */
 public class ImageSections_NougatMR2Pixel extends ArtImageSections {

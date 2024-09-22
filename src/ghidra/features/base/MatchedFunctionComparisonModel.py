@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
+# /**
  * 
  */
 package ghidra.features.base.codecompare.model;
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.datastruct.Duo;
 import ghidra.util.datastruct.Duo.Side;
 
-/**
+# /**
  * A FunctionComparisonModel comprised of matched pairs of source and target functions. Each
  * source function has its own set of target functions that it can be compared with.
  */

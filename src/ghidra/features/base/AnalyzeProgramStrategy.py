@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.app.plugin.core.analysis;
 import ghidra.program.model.listing.Program;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A simple interface for analyzing a program.
  */
 abstract class AnalyzeProgramStrategy {

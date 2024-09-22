@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 
-/**
+# /**
  * This is the v200 of {@link MsfDirectoryStream}.  It is essentially no different than
  *  an {@link MsfStream}.
  * @see MsfDirectoryStream

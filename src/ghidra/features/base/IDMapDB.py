@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Map;
 import db.*;
 import db.util.ErrorHandler;
 
-/**
+# /**
  * {@link IDMapDB} provides a bidirectional map for tracking view to/from original datatype ID
  * correspondence and faciliate recovery across undo/redo of the view's datatype manager.
  */

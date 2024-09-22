@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.LinkedHashMap;
 import ghidra.feature.fid.hash.FidHashQuad;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Container class for the neighborhood of hashes around a function.  Contains
  * the FidHashQuad for the function, for all its parents (callers), all its children (callees),
  * and all the names of the children whose hashes could not be resolved.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.mem.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A datatype for creating portable executable data structures.
  */
 public class PeDataType extends FactoryStructureDataType {

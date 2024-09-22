@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.program.model.pcode.Varnode;
 import ghidra.program.model.scalar.Scalar;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * A hover service to show tool tip text for hovering over a function name in the decompiler.
  * The tooltip shows the function signature per the listing.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.debug.api.model.DebuggerMappingOpinion;
 import ghidra.program.model.lang.CompilerSpecID;
 import ghidra.program.model.lang.LanguageID;
 
-/**
+# /**
  * TODO: Without architecture-specific extensions, this opinion is supplanted by the .ldefs-based
  * one. Remove me?
  */

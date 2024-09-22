@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.features.codecompare.plugin;
 
-/**
+# /**
  * Allows subscribers to register for function comparison provider changes 
  * (eg: when the provider is opened/closed)
  */

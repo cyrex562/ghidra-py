@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util;
 
-/**
+# /**
  * Exception thrown if there was a problem accessing an Option, or if
  * an informational message is to be conveyed.
  * 

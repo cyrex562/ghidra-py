@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import ghidra.util.Msg;
 import util.CollectionUtils;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Represents a Java source directory that is compiled on build to an OSGi bundle.
  * 
  * <p>A manifest and {@link BundleActivator} are generated if not already present.

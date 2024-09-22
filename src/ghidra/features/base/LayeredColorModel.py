@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.viewer.listingpanel.ListingBackgroundColorModel;
 import ghidra.app.util.viewer.listingpanel.ListingPanel;
 import ghidra.util.ColorUtils;
 
-/**
+# /**
  * Class for blending two {@link ListingBackgroundColorModel}s.  If neither model has a color
  * different from its default, then the primary's color is returned.  If only one model
  * has a color different from its default, that that color is returned.  If they both have

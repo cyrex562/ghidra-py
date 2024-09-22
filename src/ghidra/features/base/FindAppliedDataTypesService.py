@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.navigation;
 import ghidra.app.services.FieldMatcher;
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * A simple service to trigger a search for applied datatypes.
  */
 public interface FindAppliedDataTypesService {

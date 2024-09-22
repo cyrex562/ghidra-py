@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.plugin.core.progmgr;
 
-/**
+# /**
  * 
  * Listener notified when tabs are added, removed, or selected 
  * in the MultiTabPanel.  

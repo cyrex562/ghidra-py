@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.framework.plugintool.PluginTool;
 
-/**
+# /**
  * A service that judges the validity of a string
  */
 public interface StringValidatorService {

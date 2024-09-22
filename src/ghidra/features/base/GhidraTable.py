@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ProgramSelection;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Navigation is only supported if the underlying table model
  * implements <code>ProgramTableModel</code> and the <code>setGoToService()</code> method
  * has been called with a valid reference.  When both of these conditions are met, then the

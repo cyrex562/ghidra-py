@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Map.Entry;
 import agent.gdb.manager.parsing.GdbMiParser.GdbMiFieldList;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A parsed table output from a GDB/MI command
  * 
  * GDB provides many equivalent GDB/MI commands for CLI commands that output formatted tables of

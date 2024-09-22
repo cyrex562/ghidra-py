@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This class is used for the computation of the Adler-32 checksum algorithm.
  */
 public class Adler32ChecksumAlgorithm extends ChecksumAlgorithm {

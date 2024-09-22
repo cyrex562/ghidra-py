@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.app.util.datatype.microsoft;
 import ghidra.app.util.datatype.microsoft.GuidUtil.GuidType;
 import ghidra.util.*;
 
-/**
+# /**
  * 
  *
  */

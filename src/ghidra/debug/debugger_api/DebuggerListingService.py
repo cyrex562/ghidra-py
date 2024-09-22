@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.framework.plugintool.ServiceInfo;
 import ghidra.program.model.address.Address;
 import ghidra.program.util.ProgramSelection;
 
-/**
+# /**
  * A service providing access to the main listing panel
  */
 @ServiceInfo(

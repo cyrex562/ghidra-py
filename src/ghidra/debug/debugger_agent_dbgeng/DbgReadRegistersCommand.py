@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.dbgeng.dbgeng.*;
 import agent.dbgeng.manager.DbgStackFrameOperations;
 import agent.dbgeng.manager.impl.*;
 
-/**
+# /**
  * Implementation of {@link DbgStackFrameOperations#readRegisters(Set)}
  */
 public class DbgReadRegistersCommand extends AbstractDbgCommand<Map<DbgRegister, BigInteger>> {

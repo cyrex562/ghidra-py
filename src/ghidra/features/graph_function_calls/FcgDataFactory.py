@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import com.google.common.cache.*;
 import functioncalls.graph.FunctionCallGraph;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * A factory that will create {@link FunctionCallGraph} data objects for a given function.  
  * Internally, this factory uses an MRU cache.	
  */

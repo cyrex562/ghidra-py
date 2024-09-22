@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.util.DefaultLanguageService;
 import ghidra.util.Msg;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * This class manages a file that contains a Fid database.  We support two types of Fid
  * databases.  One type is a read-only raw buffer file, that is the type we distribute with
  * Ghidra.  The other is for user-added FidFiles. These are packed database files that can

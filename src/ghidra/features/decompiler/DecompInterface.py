@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.Msg;
 import ghidra.util.task.CancelledListener;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This is a self-contained interface to a single decompile
  * process, suitable for an open-ended number of function
  * decompilations for a single program. The interface is

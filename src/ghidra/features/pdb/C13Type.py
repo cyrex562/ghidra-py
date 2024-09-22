@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Map;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Enum storing the type value of C13 Section along with the class of the section implementation.
  * The value is what will be parsed prior to the rest of record that will be parsed according to
  * its type.  The class information is available to ensure proper casting to the type specified.

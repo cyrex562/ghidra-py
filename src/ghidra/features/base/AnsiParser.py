@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 
 import javax.swing.text.BadLocationException;
 
-/**
+# /**
  * A text stream processor that invokes callbacks for ANSI escape codes.
  *
  * <p>

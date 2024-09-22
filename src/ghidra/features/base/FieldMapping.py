@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import static java.lang.annotation.RetentionPolicy.*;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-/**
+# /**
  * Indicates that the tagged java field corresponds to a field in a Ghidra structure.
  * <p>
  * If the name of the java field does not match the Ghidra structure field name, the 

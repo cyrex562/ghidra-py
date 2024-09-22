@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.model.util.ObjectPropertyMap;
 import ghidra.program.model.util.PropertyMap;
 import ghidra.util.*;
 
-/**
+# /**
  * A class to store user graph setting information, such as layout positions, grouping information
  * and vertex color information.
  * 

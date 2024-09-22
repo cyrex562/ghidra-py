@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.dbgeng.dbgeng.*;
 import agent.dbgeng.dbgeng.DebugClient.*;
 import ghidra.comm.util.BitmaskSet;
 
-/**
+# /**
  * A convenient abstract implementation of {@link DebugEventCallbacks}
  * 
  * This implementation automatically computes the value for {@link #getInterestMask()} based on the

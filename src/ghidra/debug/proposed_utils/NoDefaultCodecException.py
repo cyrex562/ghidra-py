@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.database.err;
 
-/**
+# /**
  * Exception when a custom codec is required
  */
 @SuppressWarnings("serial")

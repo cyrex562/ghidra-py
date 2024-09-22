@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.program.model.mem.MemoryBlock;
 import ghidra.program.util.ProgramEvent;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * <CODE>MemoryMapPlugin</CODE> displays a memory map of all blocks in
  * the current program's memory.  Options for Adding, Editing, and Deleting
  * those memory blocks are available.

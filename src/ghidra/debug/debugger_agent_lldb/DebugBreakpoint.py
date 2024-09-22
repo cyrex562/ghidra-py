@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.lldb.lldb;
 import ghidra.comm.util.BitmaskSet;
 import ghidra.comm.util.BitmaskUniverse;
 
-/**
+# /**
  * A wrapper for breakpoint variations
  */
 public interface DebugBreakpoint {

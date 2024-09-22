@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.format;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Converts byte values to LongLong represented as an 16-byte/32-digit hex number.
  */
 public class HexLongLongFormatModel extends HexValueFormatModel {

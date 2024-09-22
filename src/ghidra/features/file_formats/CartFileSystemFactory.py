@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.formats.gfilesystem.factory.GFileSystemProbeByteProvider;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * File system factory for the CaRT format (Version 1). Probe to quickly
  * determine if proposed data appears to be CaRT format and provide the
  * appropriate file system object back.

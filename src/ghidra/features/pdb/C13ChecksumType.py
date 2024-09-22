@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Map;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * The PDB C13 Checksum Type
  */
 public enum C13ChecksumType {

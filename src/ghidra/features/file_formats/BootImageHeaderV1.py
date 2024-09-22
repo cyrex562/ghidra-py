@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: LICENSE
  */
 package ghidra.file.formats.android.bootimg;
@@ -11,7 +11,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.util.InvalidNameException;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * https://android.googlesource.com/platform/system/tools/mkbootimg/+/refs/heads/master/include/bootimg/bootimg.h#156
  */
 public class BootImageHeaderV1 extends BootImageHeaderV0 {

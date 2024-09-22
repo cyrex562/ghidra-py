@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.widgets.fieldpanel.support.FieldHighlightFactory;
 import docking.widgets.fieldpanel.support.RowColLocation;
 import ghidra.util.ColorUtils;
 
-/**
+# /**
  * Fields for the ByteViewer.  This class extends the SimpleTextField to include
  * a fieldOffset which corresponds to the column of the the fieldFactory that
  * generated it.

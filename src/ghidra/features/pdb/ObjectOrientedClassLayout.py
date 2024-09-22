@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pdb.pdbapplicator;
 
-/**
+# /**
  * PDB Analyzer user algorithmic choice for performing object oriented class layout.
  * <p>
  * Actual algorithms determination is as follows:

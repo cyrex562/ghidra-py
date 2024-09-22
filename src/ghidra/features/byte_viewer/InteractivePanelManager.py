@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.table.*;
 
-/**
+# /**
  * Creates a container for holding multiple horizontally aligned components and provides
  * a {@link JTableHeader} that can be used to interactively reorder and resize the 
  * components that are managed by this container.

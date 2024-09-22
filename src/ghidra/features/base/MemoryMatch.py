@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Objects;
 import ghidra.features.base.memsearch.matcher.ByteMatcher;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * A class that represents a memory search hit at an address. Matches can also be updated with
  * new byte values (from a scan or refresh action). The original bytes that matched the original
  * search are maintained in addition to the "refreshed" bytes.

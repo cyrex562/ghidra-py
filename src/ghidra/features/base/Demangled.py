@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler;
 
-/**
+# /**
  * A unifying top-level interface for all {@link DemangledObject}s and {@link DemangledType}s
  * 
  * <p>This class and its children have many overlapping concepts that we wish to refine at a 

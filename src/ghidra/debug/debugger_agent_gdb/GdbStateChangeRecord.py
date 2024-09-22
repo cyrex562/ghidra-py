@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Collection;
 import agent.gdb.manager.*;
 import agent.gdb.manager.reason.GdbReason;
 
-/**
+# /**
  * A record of a state change in GDB
  */
 public class GdbStateChangeRecord {

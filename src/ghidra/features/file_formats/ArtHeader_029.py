@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/nougat-release/runtime/image.cc#26">nougat-release/runtime/image.c</a>
  */
 public class ArtHeader_029 extends ArtHeader implements ArtCompression {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.util.HTMLUtilities;
 import ghidra.util.Msg;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * A row to be displayed in a variable value hover's table
  */
 public interface VariableValueRow {

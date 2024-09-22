@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.ProgramModule;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Represents a prebound_dylib_command structure 
  */
 public class PreboundDynamicLibraryCommand extends LoadCommand {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.frida.frida.FridaClient;
 import agent.frida.frida.FridaThreadInfo;
 import agent.frida.manager.*;
 
-/**
+# /**
  * The event corresponding with FridaThread.eBroadcastBitThreadSelected
  */
 public class FridaThreadSelectedEvent extends AbstractFridaEvent<String> {

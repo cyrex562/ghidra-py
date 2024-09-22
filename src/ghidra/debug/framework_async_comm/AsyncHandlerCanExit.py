@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.async;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiFunction;
 
-/**
+# /**
  * Methods for exiting a chain common to all handlers
  *
  * @param <R> the type of result for the whole construct

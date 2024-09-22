@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * An Address datatype whose value is computed in relation to its location in memory.
  */
 public class PcRelative31AddressDataType extends BuiltIn {

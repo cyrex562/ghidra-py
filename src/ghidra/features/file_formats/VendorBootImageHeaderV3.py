@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.data.StructureDataType;
 import ghidra.util.NumericUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * https://android.googlesource.com/platform/system/tools/mkbootimg/+/refs/heads/master/include/bootimg/bootimg.h#286
  * <pre>
  * The structure of the vendor boot image (introduced with version 3 and

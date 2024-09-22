@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import agent.lldb.manager.LldbEvent;
 import agent.lldb.manager.evt.AbstractLldbCompletedCommandEvent;
 import agent.lldb.manager.evt.LldbCommandErrorEvent;
 
-/**
+# /**
  * A command queued on the lldb manager
  *
  * A {@link LldbCommand} is queued by wrapping it in a {@link LldbPendingCommand} and submitting it

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Data container encapsulating all pertinent mask information about a single
  * instruction. In some cases, the user may have selected a set of instructions
  * that contains data elements that are technically NOT instructions, but are

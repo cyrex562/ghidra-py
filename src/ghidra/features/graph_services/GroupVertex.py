@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 import ghidra.service.graph.AttributedVertex;
 
-/**
+# /**
  * AttributedVertex class to represent a group of "collapsed nodes"
  */
 public class GroupVertex extends AttributedVertex {

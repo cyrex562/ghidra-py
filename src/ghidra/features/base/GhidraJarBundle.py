@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import aQute.bnd.osgi.Jar;
 import generic.jar.ResourceFile;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Proxy to an ordinary OSGi Jar bundle.  {@link GhidraJarBundle#build(PrintWriter)} does nothing.   
  */
 public class GhidraJarBundle extends GhidraBundle {

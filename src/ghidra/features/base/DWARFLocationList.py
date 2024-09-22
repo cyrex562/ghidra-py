@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.util.bin.format.dwarf.expression.DWARFExpression;
 import ghidra.program.model.data.LEB128;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * A collection of {@link DWARFLocation} elements, each which represents a location of an item 
  * that is only valid for a certain range of program-counter locations.
  */

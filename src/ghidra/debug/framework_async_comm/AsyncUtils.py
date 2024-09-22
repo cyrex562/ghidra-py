@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.async.loop.*;
 import ghidra.async.seq.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A wrapper for Java's {@link CompletableFuture} that provides additional fluency
  * 
  * <p>

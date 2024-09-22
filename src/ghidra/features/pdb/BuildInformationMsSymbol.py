@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 import ghidra.app.util.bin.format.pdb2.pdbreader.type.AbstractMsType;
 
-/**
+# /**
  * This class represents the <B>32MsSymbol</B> flavor of Build Information symbol.
  * <P>
  * Note: we do not necessarily understand each of these symbol type classes.  Refer to the

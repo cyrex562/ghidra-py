@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.mem.MemBuffer;
 import ghidra.program.model.mem.Memory;
 import ghidra.program.model.scalar.Scalar;
 
-/**
+# /**
  * <code>AndroidElfRelocationOffset</code> provides a dynamic LEB128 relocation 
  * offset adjustment component for packed Android ELF Relocation Table groups.
  * See {@link AndroidElfRelocationGroup}.  The offset adjustment provided

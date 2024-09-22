@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 import ghidra.program.util.MarkerLocation;
 
-/**
+# /**
  * The provider which renders the marker margin, usually placed to the left of listing
  * {@link FieldPanel}s.
  * 

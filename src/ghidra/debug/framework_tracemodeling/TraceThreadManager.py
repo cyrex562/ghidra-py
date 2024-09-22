@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Collection;
 import ghidra.trace.model.Lifespan;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A store for observed threads over time in a trace
  * 
  * <p>

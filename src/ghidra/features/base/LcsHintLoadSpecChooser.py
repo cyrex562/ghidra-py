@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.lang.*;
 import ghidra.util.Msg;
 import util.CollectionUtils;
 
-/**
+# /**
  * Chooses a {@link LoadSpec} for a {@link Loader} to use based on a provided {@link Language} and
  * {@link CompilerSpec}.
  */

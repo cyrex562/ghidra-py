@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.frida.manager.FridaReason;
 import agent.frida.manager.FridaState;
 import agent.frida.manager.cmd.FridaPendingCommand;
 
-/**
+# /**
  * A base class for frida events
  *
  * @param <T> the type of information detailing the event

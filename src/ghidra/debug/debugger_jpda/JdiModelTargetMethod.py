@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.dbg.jdi.model.iface1;
 import ghidra.dbg.jdi.model.iface2.JdiModelTargetObject;
 import ghidra.dbg.target.TargetMethod;
 
-/**
+# /**
  * An interface which indicates this object is a method in its parent.
  * 
  * @param <T> type for this

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import resources.Icons;
 
-/**
+# /**
  * Node to represent nodes that are not shown. After showing a handful of symbol nodes
  * with the same name, this node will be used in place of the rest of the nodes and
  * will display "xx more..." where xx is the number of nodes that are not being shown. 

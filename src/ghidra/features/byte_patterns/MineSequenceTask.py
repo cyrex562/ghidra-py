@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.closedpatternmining.FrequentSequence;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Task for mining closed sequences from byte sequences
  */
 public class MineSequenceTask extends Task {

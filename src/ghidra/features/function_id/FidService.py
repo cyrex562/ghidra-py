@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.search.InstructionSkipper;
 import ghidra.util.task.TaskMonitor;
 
-/** 
+# /** 
  * Implementation of the easy parts of the service; the complicated methods
  * all delegate to *LibraryCreation or *LibrarySearch utility classes
  */

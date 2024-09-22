@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.exec.PcodeExecutorState;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * A fake frame which can be used to evaluate variables for which an actual frame is not necessary
  * or not available.
  *

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.MDMang.ProcessingMode;
 import mdemangler.datatype.MDDataTypeParser;
 import mdemangler.template.MDTemplateNameAndArguments;
 
-/**
+# /**
  * This class parses the mangled string at the current offset to determine and
  *  create the appropriate type of <b><code>MDObject</code></b>.
  */
@@ -299,5 +299,5 @@ public class MDMangObjectParser {
 //	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

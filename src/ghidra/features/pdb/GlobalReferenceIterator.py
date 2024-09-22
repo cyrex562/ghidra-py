@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.msf.MsfStream;
 import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractMsSymbol;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Iterator for Global Reference Offsets section of module stream.  This iterator returns
  * an {@link AbstractMsSymbol} iterator from the global symbols section that has been initialized
  * with the offset specified in this modules global reference offset section.

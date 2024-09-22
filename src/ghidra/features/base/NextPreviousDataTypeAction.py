@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.HelpLocation;
 import resources.Icons;
 import util.HistoryList;
 
-/**
+# /**
  * An action to navigate backwards or forwards in the history of data types
  */
 class NextPreviousDataTypeAction extends MultiActionDockingAction {

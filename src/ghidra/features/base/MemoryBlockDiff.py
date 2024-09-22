@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.util;
 import ghidra.program.model.mem.MemoryBlock;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * <CODE>MemoryBlockDiff</CODE> determines the types of differences between two memory blocks.
  */
 public class MemoryBlockDiff {

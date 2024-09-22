@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.pcode.Varnode;
 import ghidra.program.model.symbol.SourceType;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * There was a major rearrangement of registers in the Dalvik.slaspec from 7.0 -> 7.1 which invalidates function prototypes
  * laid down by "Android DEX Header Format" analyzer.  This script repairs the prototypes to match the new register layout
  * If run with a Program already up, the script will make all the changes, letting the user decide if they want to

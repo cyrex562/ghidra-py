@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.dbgmodel.dbgmodel.debughost;
 
-/**
+# /**
  * A wrapper for {@code IDebugHostSymbol1} and its newer variants.
  */
 public interface DebugHostSymbol1 extends DebugHostBase {

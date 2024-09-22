@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import org.apache.commons.collections4.IteratorUtils;
 
-/**
+# /**
  * A set of enumeration constants encoded using bits
  * 
  * All constants in the set must belong to the same enumeration called the "universe." The

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.features.bsim.query.LSHException;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Query whether an optional table exists. If it doesn't exist it can be created.
  * If it exists, it can be cleared
  */

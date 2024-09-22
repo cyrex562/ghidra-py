@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.trace.model.*;
 import ghidra.trace.model.thread.TraceThread;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A breakpoint in a trace
  */
 public interface TraceBreakpoint extends TraceUniqueObject {

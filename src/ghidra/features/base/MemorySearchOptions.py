@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.options.ToolOptions;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.bean.opteditor.OptionsVetoException;
 
-/**
+# /**
  * Class for managing search tool options.
  */
 public class MemorySearchOptions {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.file.formats.android.dex.format.CodeItem;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * https://android.googlesource.com/platform/art/+/refs/heads/android10-release/libdexfile/dex/compact_dex_file.h
  * <br>
  * https://android.googlesource.com/platform/art/+/master/libdexfile/dex/compact_dex_file.h

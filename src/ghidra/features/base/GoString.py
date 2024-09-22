@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.format.golang.structmapping.*;
 import ghidra.program.model.address.*;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * A structure that represents a golang string instance.
  */
 @StructureMapping(structureName = "string")

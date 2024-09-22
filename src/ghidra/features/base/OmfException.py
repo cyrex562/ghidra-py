@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.omf;
 
-/**
+# /**
  * An {@link Exception} used to indicate there was a problem parsing an OMF record
  */
 public class OmfException extends Exception {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import agent.lldb.manager.impl.LldbManagerImpl;
 import ghidra.dbg.target.TargetSteppable.TargetStepKind;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Implementation of {@link LldbThread#stepInstruction()}
  */
 public class LldbStepCommand extends AbstractLldbCommand<Void> {

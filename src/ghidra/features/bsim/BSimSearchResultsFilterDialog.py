@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.features.bsim.gui.search.dialog.BSimFilterSet;
 import ghidra.util.HelpLocation;
 import ghidra.util.MessageType;
 
-/**
+# /**
  * Dialog for configuring post BSim search filters
  */
 public class BSimSearchResultsFilterDialog extends DialogComponentProvider {

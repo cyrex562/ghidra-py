@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.emu.sys.*;
 import ghidra.pcode.emu.unix.*;
 import ghidra.taint.model.TaintVec;
 
-/**
+# /**
  * A file system containing tainted files
  */
 public class TaintEmuUnixFileSystem extends AbstractEmuUnixFileSystem<Pair<byte[], TaintVec>> {

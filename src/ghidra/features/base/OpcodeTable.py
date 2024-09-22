@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.macho.commands.dyld;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * Abstract class used to represent the generic components of a Mach-O opcode table
  * 
  * @see <a href="https://github.com/apple-oss-distributions/dyld/blob/main/common/MachOLayout.cpp">common/MachOLayout.cpp</a> 

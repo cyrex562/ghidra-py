@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.program.model.address.*;
 import ghidra.util.exception.AssertException;
 import ghidra.util.layout.*;
 
-/**
+# /**
  * Editor Panel for displaying and editing options associated with importing or exporting. It takes
  * in a list of Options and generates editors for each of them on th fly.
  */

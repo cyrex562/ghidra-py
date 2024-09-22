@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.data.CategoryPath;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/pie-release/runtime/vdex_file.h#114">pie-release/runtime/vdex_file.h#114</a>
  */
 public class DexSectionHeader_002 implements StructConverter {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.program.util;
 import ghidra.program.model.address.AddressRange;
 import ghidra.program.model.mem.Memory;
 
-/**
+# /**
  * <CODE>MemoryBlockDiff</CODE> determines the types of differences between two memory blocks.
  */
 public class MemoryRangeDiff extends MemoryBlockDiff {

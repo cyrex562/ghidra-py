@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import agent.gdb.manager.impl.GdbPendingCommand;
 import agent.gdb.manager.parsing.GdbMiParser.GdbMiFieldList;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Implementation of {@link GdbInferior#listBreakpoints()}
  */
 public class GdbListBreakpointsCommand

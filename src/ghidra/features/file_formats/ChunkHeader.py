@@ -1,8 +1,8 @@
-/* ###
+# /* ###
  * IP: Apache License 2.0
  * NOTE: Based on the simg2img code from The Android Open Source Project
  */
-/*
+# /*
  * Copyright (C) 2012 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

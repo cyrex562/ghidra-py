@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.util.bytesearch.DittedBitSequence;
 
-/**
+# /**
  * Objects in this class represent rows in tables for analyzing sequences of bytes.
  * Each sequence of bytes is associated with a {@link String} containing the instructions 
  * disassembled from the bytes, the number of times this particular sequence occurs,

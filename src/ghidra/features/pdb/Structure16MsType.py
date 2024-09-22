@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.type;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 
-/**
+# /**
  * This class represents the <B>16MsType</B> flavor of C/C++ Struct type.
  * <P>
  * Note that class, struct, and interface are very closed related and have many of the same

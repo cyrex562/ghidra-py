@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +15,10 @@
  */
 package ghidra.file.formats.java;
 
-/**
+# /**
  * Copied from JavaClassContants in ghidra.javaclass.format due to module dependency issues.
  */
-/* package */ class JavaClassConstants {
+# /* package */ class JavaClassConstants {
 
 	public final static byte[] MAGIC_BYTES = { (byte) 0xca, (byte) 0xfe, (byte) 0xba, (byte) 0xbe };
 

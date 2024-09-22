@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.recognizer;
 
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * NOTE:  ALL Recognizer CLASSES MUST END IN "Recognizer".  If not,
  * the ClassSearcher will not find them.
  *

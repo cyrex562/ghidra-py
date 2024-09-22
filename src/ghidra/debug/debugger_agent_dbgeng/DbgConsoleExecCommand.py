@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.dbgeng.manager.DbgManager;
 import agent.dbgeng.manager.evt.*;
 import agent.dbgeng.manager.impl.DbgManagerImpl;
 
-/**
+# /**
  * Implementation of {@link DbgManager#console(String)} and similar
  */
 public class DbgConsoleExecCommand extends AbstractDbgCommand<String> {

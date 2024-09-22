@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Applier for {@link TrampolineMsSymbol} symbols.
  */
 public class TrampolineSymbolApplier extends MsSymbolApplier

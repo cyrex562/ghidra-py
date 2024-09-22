@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import org.jdom.Element;
 
 import ghidra.util.xml.XmlUtilities;
 
-/**
+# /**
  * An object in this class stores a sequence of instructions along with the sizes and operands of each. 
  * These sequences come from function starts, function returns, or immediately before function starts. 
  */

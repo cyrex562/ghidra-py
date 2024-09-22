@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -25,7 +25,7 @@ import java.util.*;
 
 import javax.swing.table.AbstractTableModel;
 
-/*
+# /*
  * PropertyManagerTableModel
  */
 class PropertyManagerTableModel extends AbstractTableModel {

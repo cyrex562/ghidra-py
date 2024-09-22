@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 import com.sun.jdi.*;
 import com.sun.jdi.request.*;
 
-/**
+# /**
  * Information about a JDI breakpoint
  * 
  * The contains the semantic processing for JDI breakpoint information. Mostly, it just stores the

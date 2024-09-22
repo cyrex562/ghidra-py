@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.Saveable;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.map.TypeMismatchException;
 
-/**
+# /**
  * The manager for user properties of a trace
  * 
  * <p>

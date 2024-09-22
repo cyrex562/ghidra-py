@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.decompiler.parallel;
 
 import ghidra.app.decompiler.DecompInterface;
 
-/**
+# /**
  * A callback interface that will be given a newly created {@link DecompInterface} to 
  * configure.
  */

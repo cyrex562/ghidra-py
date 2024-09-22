@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.tree.TreePath;
 import ghidra.app.context.ProgramActionContext;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * A context object for the {@link ProgramTreePlugin}.
  */
 public class ProgramTreeActionContext extends ProgramActionContext {

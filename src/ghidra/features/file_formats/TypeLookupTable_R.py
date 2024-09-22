@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android11-release/libdexfile/dex/type_lookup_table.h#35">android11-release/libdexfile/dex/type_lookup_table.h</a>
  */
 public class TypeLookupTable_R extends TypeLookupTable_Q {

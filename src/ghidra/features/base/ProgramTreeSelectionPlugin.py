@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.util.ProgramSelection;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * This plugin adds the 'Select Addresses' command to the ProgramTree pop-up
  */
 //@formatter:off

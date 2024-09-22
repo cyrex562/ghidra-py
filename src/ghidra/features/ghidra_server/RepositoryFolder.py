@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.exception.DuplicateFileException;
 import ghidra.util.exception.FileInUseException;
 
-/**
+# /**
  * <code>RepositoryFolder</code> provides a persistent wrapper for a folder path
  * which may contain other sub-folders or FolderItem's stored within a Repository.  
  * This folder is associated with a parent RepositoryFolder

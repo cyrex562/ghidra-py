@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.program.model.data.Structure;
 
-/**
+# /**
  * A function that adds a field to a Ghidra structure using annotated field information
  * found in a Java class.
  * 

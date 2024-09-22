@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 import java.io.IOException;
 import java.io.Writer;
 
-/**
+# /**
  * A PDB C13 Line Record that is part of a File Record
  */
 public class C13LineRecord {

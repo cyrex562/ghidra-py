@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.NoValueException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class for merging reference changes. This class can determine
  * where there are conflicts between the latest checked in version and my
  * checked out version. It can then automatically merge non-conflicting changes

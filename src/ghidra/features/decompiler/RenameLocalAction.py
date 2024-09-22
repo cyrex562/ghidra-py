@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.util.HelpLocation;
 import ghidra.util.UndefinedFunction;
 
-/**
+# /**
  * Action triggered from a specific token in the decompiler window to rename a local variable.
  * If a matching variable in the database already exists, it is simply renamed. Otherwise
  * a new variable is added to the database. In this case the new variable is assigned

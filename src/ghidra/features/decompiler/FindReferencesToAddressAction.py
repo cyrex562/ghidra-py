@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * An action to show all references to the given address
  */
 public class FindReferencesToAddressAction extends AbstractFindReferencesToAddressAction {

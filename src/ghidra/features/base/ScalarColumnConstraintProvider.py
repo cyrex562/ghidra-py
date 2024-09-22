@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.widgets.table.constraint.provider.LongEditorProvider;
 import docking.widgets.table.constraint.provider.LongRangeEditorProvider;
 import ghidra.program.model.scalar.Scalar;
 
-/**
+# /**
  * Provides Scalar-related column constraints.
  */
 public class ScalarColumnConstraintProvider implements ColumnConstraintProvider {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -48,7 +48,7 @@ import ghidra.util.task.TaskLauncher;
 import resources.Icons;
 import resources.MultiIcon;
 
-/**
+# /**
  * Panel that displays two decompilers for comparison
  */
 public class DecompilerCodeComparisonPanel

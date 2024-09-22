@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Builds up a DYLD Cache {@link Program} by parsing the DYLD Cache headers.
  */
 public class DyldCacheProgramBuilder extends MachoProgramBuilder {

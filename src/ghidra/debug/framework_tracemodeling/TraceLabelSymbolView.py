@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.trace.model.Lifespan;
 import ghidra.trace.model.thread.TraceThread;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * The label symbol view.
  */
 public interface TraceLabelSymbolView extends TraceSymbolWithLocationView<TraceLabelSymbol> {

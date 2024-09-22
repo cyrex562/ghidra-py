@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 import ghidra.framework.plugintool.ServiceInfo;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * The MemviewService provides a general service for displaying objects
  * on time vs. memory axes (a la Boxes)
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util;
 
 import java.nio.ByteBuffer;
 
-/**
+# /**
  * Some utilities for manipulating a {@link ByteBuffer}
  */
 public interface ByteBufferUtils {

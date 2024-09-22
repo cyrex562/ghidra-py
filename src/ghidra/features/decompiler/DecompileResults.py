@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.pcode.*;
 import ghidra.program.model.symbol.IllegalCharCppTransformer;
 
-/**
+# /**
  * Class for getting at the various structures returned
  * by the decompiler.  Depending on how the DecompInterface
  * was called, you can get C code (with markup), the

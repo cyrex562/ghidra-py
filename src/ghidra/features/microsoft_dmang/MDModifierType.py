@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.datatype.*;
 import mdemangler.datatype.extended.MDArrayReferencedType;
 import mdemangler.functiontype.MDFunctionType;
 
-/**
+# /**
  * This class represents a modifier type, whether a pointer, reference, or other
  *  special modifier type.  This class stands on its own or is extended for one
  *  of the other types.

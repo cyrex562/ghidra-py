@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * BreakPointServicePlugin.java
  *
  * Created on February 6, 2002, 11:13 AM
@@ -53,7 +53,7 @@ import ghidra.util.task.TaskMonitor;
 import ghidra.util.worker.Job;
 import ghidra.util.worker.Worker;
 
-/**
+# /**
  * Manages the markers to display areas where changes have occurred 
  */
 @PluginInfo( //@formatter:off

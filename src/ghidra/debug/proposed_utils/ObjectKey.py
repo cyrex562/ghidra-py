@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Objects;
 
 import db.Table;
 
-/**
+# /**
  * An opaque handle uniquely identifying a database-backed object
  */
 public class ObjectKey implements Comparable<ObjectKey> {

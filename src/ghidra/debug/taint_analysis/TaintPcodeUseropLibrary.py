@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.pcode.exec.AnnotatedPcodeUseropLibrary;
 import ghidra.taint.model.*;
 import ghidra.trace.model.time.schedule.TraceSchedule;
 
-/**
+# /**
  * A userop library for tainting machine state variables
  * 
  * <p>

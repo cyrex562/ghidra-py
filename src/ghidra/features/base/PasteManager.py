@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.*;
 import ghidra.util.Msg;
 import ghidra.util.exception.NotFoundException;
 
-/**
+# /**
  * Manage paste operations for the Program Tree.
  */
 class PasteManager {

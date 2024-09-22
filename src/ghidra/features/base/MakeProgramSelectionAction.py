@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.table.GhidraTable;
 import resources.Icons;
 
-/**
+# /**
  * An action to make a program selection based on the given table's selection.  For the context to
  * work, the provider using this action must create an {@link ActionContext} that returns a 
  * context object that is the table passed to this action's constructor; otherwise, this action 

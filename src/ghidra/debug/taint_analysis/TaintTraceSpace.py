@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.pcode.exec.trace.data.PcodeTracePropertyAccess;
 import ghidra.program.model.address.*;
 import ghidra.taint.model.TaintSet;
 
-/**
+# /**
  * The storage space for taint sets in a trace's address space
  * 
  * <p>

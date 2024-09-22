@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.pcode.exec.debug.auxiliary.AuxDebuggerEmulatorPartsFactory;
 import ghidra.pcode.exec.debug.auxiliary.AuxDebuggerPcodeEmulator;
 import ghidra.taint.model.TaintVec;
 
-/**
+# /**
  * A Debugger-integrated emulator with taint analysis
  */
 public class TaintDebuggerPcodeEmulator extends AuxDebuggerPcodeEmulator<TaintVec> {

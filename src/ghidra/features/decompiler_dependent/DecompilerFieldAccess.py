@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.decompiler.ClangVariableToken;
 import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class that represents access to a Decompiler {@link ClangFieldToken} object.  This is the field
  * of a variable, denoted by {@link ClangVariableToken}.
  */

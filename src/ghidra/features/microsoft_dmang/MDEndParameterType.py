@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import mdemangler.MDException;
 import mdemangler.MDMang;
 import mdemangler.datatype.extended.MDExtendedType;
 
-/**
+# /**
  * This class represents an end parameter (maybe signifying the last parameter is complete).
  * (The $$Z code.) It is one of a number of "extended" data types not originally planned by
  * Microsoft.

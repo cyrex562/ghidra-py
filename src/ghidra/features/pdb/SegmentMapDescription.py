@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 
 import java.io.*;
 
-/**
+# /**
  * This class represents Segment Map Description component of a PDB file.  This class is only
  *  suitable for reading; not for writing or modifying a PDB.
  *  <P>

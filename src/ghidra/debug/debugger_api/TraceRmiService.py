@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Collection;
 import ghidra.debug.api.tracermi.*;
 import ghidra.framework.plugintool.ServiceInfo;
 
-/**
+# /**
  * A service (both in the Ghidra framework sense, and in the network sense) for connecting Trace
  * RMI-based back-end debuggers.
  * 

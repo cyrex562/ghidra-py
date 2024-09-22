@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * PDB C13 Module File Checksum for one file.
  */
 public class C13FileChecksum {

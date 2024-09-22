@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * C13Lines information.  As best as we know, only one of C11Lines or C13Lines (We have actually
  * created a C13Section class at a higher level, and making C13Lines be the specific lines
  * information for "type" 0xf2 (and maybe 0xf4) can be found after the symbol information in

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 import ghidra.util.table.ProgramLocationTableRowMapper;
 
-/**
+# /**
  * Maps BSimMatchResult objects to Address to get addition table columns
  */
 public class BSimResultRowObjectToAddressTableRowMapper

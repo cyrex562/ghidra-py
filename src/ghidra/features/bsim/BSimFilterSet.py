@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import ghidra.features.bsim.gui.filters.BSimFilterType;
 import ghidra.features.bsim.query.protocol.BSimFilter;
 
-/**
+# /**
  * Maintains the set of current filters in a nicer way than BSimFiler which breaks them down into
  * filter pieces that doesn't maintain any order.
  */

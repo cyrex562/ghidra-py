@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.gui.search.dialog;
 
-/**
+# /**
  * Class to hold all the settings for a BSim similar functions search
  */
 public class BSimSearchSettings {

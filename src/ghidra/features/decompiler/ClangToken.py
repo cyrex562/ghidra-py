@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.pcode.*;
 import ghidra.program.model.scalar.Scalar;
 
-/**
+# /**
  * Class representing a source code language token.
  * A token has numerous display attributes and may link to the data-flow analysis
  */

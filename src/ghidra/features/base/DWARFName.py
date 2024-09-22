@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.Namespace;
 import ghidra.program.model.symbol.SymbolType;
 
-/**
+# /**
  * A immutable hierarchical path based name implementation that can be viewed as either
  * {@link Namespace namespaces} or {@link CategoryPath categorypaths}.
  * <p>

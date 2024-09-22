@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.task.TaskMonitor;
 import mdemangler.*;
 import mdemangler.object.MDObjectCPP;
 
-/**
+# /**
  * This class is for developer research into various areas.  Anything in this class that needs to
  * end up as part of any usable output should be moved into another class.  This class just
  * aggregates various items being investigated, and will eventually be eliminated from the code

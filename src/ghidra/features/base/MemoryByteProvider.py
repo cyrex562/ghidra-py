@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.Memory;
 import ghidra.program.model.mem.MemoryBlock;
 
-/**
+# /**
  * A {@link ByteProvider} implementation based on {@link Memory}.
  * <p>
  * The bytes returned by this provider are indexed relative to the {@code baseAddress}

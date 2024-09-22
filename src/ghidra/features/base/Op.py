@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.search.trie;
 
-/**
+# /**
  * Operation interface for clients to visit nodes in a ByteTrie.
  *
  * @param <T> the client item type

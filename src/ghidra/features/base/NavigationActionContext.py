@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.context;
 
-/**
+# /**
  * An interface that signals the client supports navigation. 
  * 
  * <P>Note: the {@link NavigatableActionContext} is tied to {@link ProgramLocationActionContext}

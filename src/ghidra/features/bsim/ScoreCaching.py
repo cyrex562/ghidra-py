@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Set;
 import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.ExecutableRecord;
 
-/**
+# /**
  * Store and retrieve self-significance scores for executables specified by md5.
  * These are generally too expensive to compute on the fly, so this class
  * provides a persistence model for obtaining them.  These scores also depend

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.pcode.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A grouping of source code tokens representing a variable declaration.
  * This can be for a one line declaration (as for local variables) or
  * as part of a function prototype declaring a parameter.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import com.sun.jna.WString;
 
 import agent.dbgmodel.dbgmodel.main.*;
 
-/**
+# /**
  * A wrapper for {@code IDynamicKeyProviderConcept} and its newer variants.
  */
 public interface DynamicKeyProviderConcept extends Concept {

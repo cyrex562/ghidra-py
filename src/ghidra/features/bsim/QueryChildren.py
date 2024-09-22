@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Query based on a single executable and a specific list of functions names within the executable
  * The response will be the corresponding FunctionDescription records and a record for each child
  * of the specified functions

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressFactory;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * A class to record vertex information that can be used to find vertex instances in memory.  This
  * facilitates serialization and persistence.
  */

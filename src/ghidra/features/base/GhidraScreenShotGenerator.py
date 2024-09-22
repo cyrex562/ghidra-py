@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.framework.main.FrontEndTool;
 import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Extend this class to create screen shot images for help. The name of the class determines the
  * topic directory where the captured image will be stored. So if the class name is
  * XyzShreenShots, the resulting captured image will appear in help topic directly "Xyz", regardless

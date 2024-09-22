@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.FunctionDefinition;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Represents a mapping between a golang interface and a type that implements the methods of
  * the interface.
  */
@@ -208,7 +208,7 @@ public class GoItab implements StructureMarkup<GoItab> {
 	}
 
 }
-/*
+# /*
 struct runtime.itab  
 Length: 20  Alignment: 4
 { 

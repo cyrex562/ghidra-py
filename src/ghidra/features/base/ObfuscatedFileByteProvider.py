@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.nio.file.AccessMode;
 
 import ghidra.formats.gfilesystem.FSRL;
 
-/**
+# /**
  * A {@link ByteProvider} that reads from an on-disk file, but obfuscates / de-obfuscates the
  * contents of the file when reading / writing.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import ghidra.service.graph.GraphType;
 
-/**
+# /**
  * This class is the {@link GraphType} for BSim Feature Graphs.
  */
 public class BSimFeatureGraphType extends GraphType {

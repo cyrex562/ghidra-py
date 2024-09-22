@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.UnknownProgressWrappingTaskMonitor;
 
-/**
+# /**
  * {@link GFileSystem} that converts a DEX file into a JAR file.
  */
 @FileSystemInfo(type = "dex2jar", description = "Android DEX to JAR", factory = GFileSystemBaseFactory.class)

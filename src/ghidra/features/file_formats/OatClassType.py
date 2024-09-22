@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.lang.reflect.Field;
 
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * OatMethodOffsets are currently 5x32-bits=160-bits long, so if we can
  * save even one OatMethodOffsets struct, the more complicated encoding
  * using a bitmap pays for itself since few classes will have 160

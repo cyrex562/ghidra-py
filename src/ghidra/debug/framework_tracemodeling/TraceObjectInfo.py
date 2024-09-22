@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.lang.annotation.*;
 import ghidra.dbg.target.TargetObject;
 import ghidra.trace.model.target.TraceObjectManager;
 
-/**
+# /**
  * Information about a trace target interface
  */
 @Target(ElementType.TYPE)

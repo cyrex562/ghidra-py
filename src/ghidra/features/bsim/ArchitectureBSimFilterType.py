@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.lang.LanguageService;
 import ghidra.program.util.DefaultLanguageService;
 import utility.function.Callback;
 
-/**
+# /**
  * A BsimFilterType for filtering functions based on a Ghidra computer architecture
  * specification.
  */

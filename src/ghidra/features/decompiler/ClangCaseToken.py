@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.pcode.*;
 import ghidra.program.model.scalar.Scalar;
 
-/**
+# /**
  * A token representing a switch "case" label, or other constant not directly linked to data-flow.
  * The token has an associated constant value and a data-type
  */

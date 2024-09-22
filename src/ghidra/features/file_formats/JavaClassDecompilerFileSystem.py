@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Filesystem that decompiles a java .class file (using external JAD decompiler) into
  * a java classname.java source text file and presents the source text file as its
  * only file in the filesystem.

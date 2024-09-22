@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.formats.gfilesystem;
 import java.io.File;
 import java.util.Objects;
 
-/**
+# /**
  * {@link GFile} implementation that refers to a real java.io.File on the local
  * file system.
  * <p>

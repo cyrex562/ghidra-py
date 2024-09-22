@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.lang.reflect.Method;
 
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * Immutable information needed to create fields in a Ghidra structure data type, using information
  * from a java field.
  * 

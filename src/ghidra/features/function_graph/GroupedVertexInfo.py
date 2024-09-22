@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.plugin.core.functiongraph.mvc.FGController;
 import ghidra.app.plugin.core.functiongraph.mvc.FunctionGraphOptions;
 import ghidra.util.xml.XmlUtilities;
 
-/**
+# /**
  * Note: this class should be created along with a GroupedFunctionGraphVertex, as the info
  * needed by this class is still available then.  To create this class later will result in
  * missing information (for example, edges get removed when vertices are grouped and this info

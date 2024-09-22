@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.object;
 import mdemangler.MDException;
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents MSFT Reserved Symbols as a base class for those that we are trying
  *  to parse.  If just this base class is assigned, then we plan to allow a fall-through for
  *  other processing outside of the demangler.
@@ -56,5 +56,5 @@ public class MDObjectReserved extends MDObject {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

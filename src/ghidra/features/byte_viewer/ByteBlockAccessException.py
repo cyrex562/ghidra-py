@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.format;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <p>An ByteBlockAccessException indicates that the attempted
  * access is not permitted.  (i.e. Readable/Writeable)</p>
  *

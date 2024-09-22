@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Comparator;
 import ghidra.service.graph.AttributedEdge;
 import ghidra.service.graph.GraphType;
 
-/**
+# /**
  * Edge comparator that compares edges based on their edge type. The default renderer will use
  * the order in which the edge types were defined in the {@link GraphType}.
  */

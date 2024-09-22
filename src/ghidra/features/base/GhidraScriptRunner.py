@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.task.TaskMonitor;
 import utility.application.ApplicationLayout;
 
-/**
+# /**
  * A simple class for running scripts outside of Ghidra.
  */
 public class GhidraScriptRunner implements GhidraLaunchable {

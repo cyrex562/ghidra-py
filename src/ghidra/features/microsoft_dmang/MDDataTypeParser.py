@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import mdemangler.datatype.extended.*;
 import mdemangler.datatype.modifier.*;
 import mdemangler.object.MDObjectCPP;
 
-/**
+# /**
  * The class parses data types.  There are different parsers that are at different levels
  *  of the type hierarchy of (Microsoft) data types.  There are parseDataType,
  *  parsePrimaryDataType, etc.  These exist because, in the typing system of C/C++,

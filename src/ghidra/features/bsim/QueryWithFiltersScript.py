@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.symbol.SourceType;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Script showing how to apply filters to a BSim query. Currently we support three types
  * of filters, described below:
  * 

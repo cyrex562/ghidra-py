@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.debug.api.model;
 import docking.DefaultActionContext;
 import ghidra.trace.model.target.TraceObjectKeyPath;
 
-/**
+# /**
  * Really just used by scripts to get a path into an action context
  */
 public class DebuggerSingleObjectPathActionContext extends DefaultActionContext {

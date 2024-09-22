@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.symbol.SymbolType;
 import ghidra.program.util.OperandFieldLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * <CODE>AddLabelAction</CODE> allows the user to add a label.
  */
 class EditLabelAction extends ListingContextAction {

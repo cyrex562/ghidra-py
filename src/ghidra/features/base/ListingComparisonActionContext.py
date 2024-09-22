@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.features.base.codecompare.listing;
 import docking.ComponentProvider;
 import ghidra.features.base.codecompare.panel.CodeComparisonActionContext;
 
-/**
+# /**
  * Action context for a ListingCodeComparisonPanel.
  */
 public class ListingComparisonActionContext extends CodeComparisonActionContext {

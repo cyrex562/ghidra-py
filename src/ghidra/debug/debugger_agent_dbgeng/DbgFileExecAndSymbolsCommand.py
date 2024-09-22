@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.dbgeng.manager.cmd;
 import agent.dbgeng.manager.DbgProcess;
 import agent.dbgeng.manager.impl.DbgManagerImpl;
 
-/**
+# /**
  * Implementation of {@link DbgProcess#fileExecAndSymbols(String)}
  */
 public class DbgFileExecAndSymbolsCommand extends AbstractDbgCommand<Void> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,7 +47,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.task.RunManager;
 import resources.Icons;
 
-/**
+# /**
  * Plugin that creates view provider services to show the trees in a program.
  * Notifies the view manager service when the view changes.
  */

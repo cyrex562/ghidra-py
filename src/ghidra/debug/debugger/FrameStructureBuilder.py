@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.pcode.Varnode;
 import ghidra.trace.model.data.TraceBasedDataTypeManager;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The implementation of {@link AnalysisUnwoundFrame#generateStructure(int)}
  */
 class FrameStructureBuilder {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Map;
 import SWIG.*;
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * Implementation of {@link LldbManager#deleteBreakpoints(long)}
  */
 public class LldbDisableBreakpointsCommand extends AbstractLldbCommand<Void> {

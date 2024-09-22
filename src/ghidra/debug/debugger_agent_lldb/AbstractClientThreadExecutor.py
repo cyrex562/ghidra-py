@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import agent.lldb.lldb.DebugClient.DebugStatus;
 import agent.lldb.manager.LldbManager;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A single-threaded executor which creates and exclusively accesses the {@code lldb} client.
  * 
  * <p>

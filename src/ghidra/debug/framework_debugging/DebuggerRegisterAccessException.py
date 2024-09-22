@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.dbg.error;
 
 import ghidra.dbg.target.TargetRegisterBank;
 
-/**
+# /**
  * An exception for when there is an unknown (possibly permanent) condition preventing register
  * access via {@link TargetRegisterBank#readRegisters(java.util.Collection)},
  * {@link TargetRegisterBank#writeRegisters(java.util.Map)}, and related methods.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.program.util.*;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Helper class to store the options of the
  * OperandFieldFactory and SubDataFieldFactory
  */

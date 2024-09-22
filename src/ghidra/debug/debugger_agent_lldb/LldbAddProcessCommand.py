@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.lldb.manager.cmd;
 import SWIG.SBProcess;
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * Implementation of {@link LldbManager#addProcess()}
  */
 public class LldbAddProcessCommand extends AbstractLldbCommand<SBProcess> {

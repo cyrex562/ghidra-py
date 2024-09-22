@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import agent.gdb.manager.impl.GdbManagerImpl;
 import ghidra.pty.PtyFactory;
 import ghidra.pty.unix.UnixPty;
 
-/**
+# /**
  * The controlling side of a GDB session, using GDB/MI, usually via a pseudo-terminal
  * 
  * This facilitates the implementation of GDB front ends. This piece communicates with the GDB back

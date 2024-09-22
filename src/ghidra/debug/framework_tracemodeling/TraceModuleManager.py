@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.AddressRange;
 import ghidra.trace.model.Lifespan;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A store for loaded modules over time
  * 
  * <p>

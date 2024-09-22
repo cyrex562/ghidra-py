@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.util.ProgramSelection;
 import ghidra.util.HelpLocation;
 import ghidra.util.task.TaskLauncher;
 
-/**
+# /**
  * Action for recursively collapsing an expandable data element in the listing.  This action
  * can be invoked on an expandable data element or any sub element and will close the
  * outer most data element and all child elements of that structure.

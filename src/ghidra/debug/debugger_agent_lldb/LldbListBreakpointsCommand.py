@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import SWIG.*;
 import agent.lldb.lldb.DebugClient;
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * Implementation of {@link LldbProcess#listBreakpoints()}
  */
 public class LldbListBreakpointsCommand extends AbstractLldbCommand<Map<String, Object>> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package pdb.symbolserver;
 
 import java.util.Objects;
 
-/**
+# /**
  * Represents a symbol file on a {@link SymbolServer} or an associated file.
  */
 public class SymbolFileLocation {

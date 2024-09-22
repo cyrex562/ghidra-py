@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -26,7 +26,7 @@ import ghidra.util.HelpLocation;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Converts byte values to Ascii representation.
  */
 public class AddressFormatModel implements ProgramDataFormatModel {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * Language name used by certain PDB symbols.
  * @see AbstractCompile2MsSymbol
  * @see Compile3MsSymbol

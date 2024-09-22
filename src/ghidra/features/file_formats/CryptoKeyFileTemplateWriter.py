@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import generic.jar.ResourceFile;
 
 import java.io.*;
 
-/**
+# /**
  * Reads a file and creates a template
  * XML file for storing the crypto keys and IVs.
  */

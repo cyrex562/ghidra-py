@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.NotEmptyException;
 
-/**
+# /**
  * Class to manage actions and popup menus for the program tree.
  */
 class ProgramTreeActionManager implements ClipboardOwner {

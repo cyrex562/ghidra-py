@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.task.TaskMonitor;
 import ghidra.util.xml.XmlUtilities;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Creates an Eclipse project folder and contents based on the contents of an Android
  * APK file.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import agent.lldb.manager.LldbManager;
 import ghidra.comm.util.BitmaskUniverse;
 import ghidra.dbg.target.TargetExecutionStateful.TargetExecutionState;
 
-/**
+# /**
  * A wrapper for SBDebugger
  */
 public interface DebugClient extends DebugClientReentrant {

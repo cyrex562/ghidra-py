@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.functiontype;
 
 import mdemangler.*;
 
-/**
+# /**
  * This class represents a calling convention of a function within a Microsoft mangled symbol.
  */
 public class MDCallingConvention extends MDParsableItem {
@@ -155,5 +155,5 @@ public class MDCallingConvention extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.app.util.datatype.microsoft.GuidDataType;
 import ghidra.framework.options.Options;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * Newer style pdb information, using a GUID to link the pdb to its binary.
  */
 public class PdbInfoDotNet implements StructConverter, PdbInfo {

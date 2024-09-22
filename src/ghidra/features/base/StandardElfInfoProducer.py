@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.classfinder.ExtensionPointProperties;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Handles marking up and program info for basic ELF note (and note-like) sections.
  * <ul>
  * 	<li>NoteAbiTag</li>

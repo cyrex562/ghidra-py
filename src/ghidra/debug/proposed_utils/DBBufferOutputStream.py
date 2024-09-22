@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.OutputStream;
 
 import db.DBBuffer;
 
-/**
+# /**
  * An output stream backed by a database chained buffer
  */
 public class DBBufferOutputStream extends OutputStream {

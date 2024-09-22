@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.stack;
 
-/**
+# /**
  * An exception to indicate failed or incomplete stack uwinding
  */
 public class UnwindException extends RuntimeException {

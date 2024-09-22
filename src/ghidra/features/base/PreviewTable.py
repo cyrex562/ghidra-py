@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.*;
 import resources.Icons;
 
-/**
+# /**
  * Displays the preview string for all instructions in the
  * {@link InstructionTable}. This table is updated whenever a change is made to
  * the mask settings in the instruction table.

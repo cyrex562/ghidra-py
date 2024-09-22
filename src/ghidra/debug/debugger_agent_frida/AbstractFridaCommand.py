@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import agent.frida.manager.evt.FridaCommandDoneEvent;
 import agent.frida.manager.impl.FridaManagerImpl;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A base class for interacting with specific Frida commands
  *
  * @param <T> the type of object "returned" by the command

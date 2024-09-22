@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Collection;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressRange;
 
-/**
+# /**
  * A symbol view for things with an address in stack or register space, but not associated with a
  * trace thread.
  *

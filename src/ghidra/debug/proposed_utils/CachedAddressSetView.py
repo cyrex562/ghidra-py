@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.Iterator;
 import ghidra.util.AbstractPeekableIterator;
 import ghidra.util.AddressIteratorAdapter;
 
-/**
+# /**
  * For cases where an address set cannot be accessed expediently, this class may wrap it to provide
  * cached read-only access.
  */

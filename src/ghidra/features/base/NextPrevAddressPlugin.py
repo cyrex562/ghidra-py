@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -50,7 +50,7 @@ import ghidra.program.model.symbol.SymbolTable;
 import ghidra.util.HelpLocation;
 import gui.event.MouseBinding;
 
-/**
+# /**
  * <CODE>NextPrevAddressPlugin</CODE> allows the user to go back and forth in
  * the history list and to clear it
  */

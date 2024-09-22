@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.nav.Navigatable;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * A service that provides a GUI listing of all <b><i>from</i></b> locations that refer 
  * to a given <b><i>to</i></b> location.
  */

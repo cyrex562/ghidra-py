@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.dbg.util.ConversionUtils;
 import ghidra.program.model.lang.Register;
 import ghidra.program.model.lang.RegisterValue;
 
-/**
+# /**
  * A mapper which can convert register names and values from trace to target and vice versa.
  * 
  * <P>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import mdemangler.MDException;
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a MSFT <b><code>CatchableType</code></b> symbol.  We have created this
  *  object and the <b><code>MDObjectReserved</code></b> type from which it is derived.
  *  <b><code>CatchableType</code></b> seemingly has a structure as seen in the class layout of
@@ -81,5 +81,5 @@ public class MDObjectCatchableType extends MDObjectReserved {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

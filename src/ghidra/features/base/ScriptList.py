@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import ghidra.util.task.SwingUpdateManager;
 
-/**
+# /**
  * Loads and manages updating of available script files.
  * <p>
  * Use the {@link #refresh()} method to reload the script files.

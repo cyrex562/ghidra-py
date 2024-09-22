@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.Conv;
 
-/**
+# /**
  * A class for storing new-executable resource string tables.
  * Strings are not stored as individual resources, rather
  * strings are grouped together into a string table. This

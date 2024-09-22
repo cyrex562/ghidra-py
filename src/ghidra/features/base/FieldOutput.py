@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.lang.annotation.Target;
 
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * Indicates that the tagged java field is to be included when constructing a variable length
  * Ghidra structure data type.
  * <p>

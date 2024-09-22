@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.decompiler;
 import ghidra.app.decompiler.component.DecompilerPanel;
 import ghidra.app.decompiler.component.margin.DecompilerMarginProvider;
 
-/**
+# /**
  * A service that allows clients to add custom margins in the Decompiler UI.
  */
 public interface DecompilerMarginService {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.dbgeng.manager.breakpoint;
 
-/**
+# /**
  * The type of Dbg breakpoint
  */
 public enum DbgBreakpointType {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.app.events;
 import ghidra.framework.plugintool.PluginEvent;
 import ghidra.program.util.GroupPath;
 
-/**
+# /**
  * 
  * Notification for a new Program Tree selection.
  * 

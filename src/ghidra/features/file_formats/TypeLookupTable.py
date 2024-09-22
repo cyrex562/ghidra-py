@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.file.formats.android.oat.tlt;
 
 import ghidra.app.util.bin.StructConverter;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/oreo-release/runtime/type_lookup_table.h#161">oreo-release/runtime/type_lookup_table.h</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/oreo-m2-release/runtime/type_lookup_table.h#161">oreo-m2-release/runtime/type_lookup_table.h</a>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.app.decompiler.component.DecompilerPanel;
 import ghidra.util.Msg;
 import ghidra.util.UserSearchUtils;
 
-/**
+# /**
  * A {@link FindDialogSearcher} for searching the text of the decompiler window.
  */
 public class DecompilerSearcher implements FindDialogSearcher {

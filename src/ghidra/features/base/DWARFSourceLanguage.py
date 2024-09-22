@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf;
 
-/**
+# /**
  * DWARF source lang consts from www.dwarfstd.org/doc/DWARF4.pdf.
  * <p>
  * TODO: The PDF also lists the default lower bound for array dw_tag_subrange_type

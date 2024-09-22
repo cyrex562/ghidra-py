@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Comparator;
 
 import generic.Span.Domain;
 
-/**
+# /**
  * An endpoint for spans for specifying open endpoints
  *
  * <p>

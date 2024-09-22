@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * A class to represent a demangled structure
  */
 public class DemangledStructure extends DemangledDataType {

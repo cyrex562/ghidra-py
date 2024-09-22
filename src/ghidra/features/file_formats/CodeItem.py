@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * code_item
  * <br>
  * referenced from encoded_method

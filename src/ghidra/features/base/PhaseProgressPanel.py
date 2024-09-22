@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.label.GDLabel;
 import docking.widgets.label.GIconLabel;
 import resources.Icons;
 
-/**
+# /**
  * The PhaseProgressPanel provides a title, progress bar and message for the current phase that is 
  * in progress
  */

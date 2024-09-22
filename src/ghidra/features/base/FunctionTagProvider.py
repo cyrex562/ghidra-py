@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +46,7 @@ import ghidra.util.*;
 import ghidra.util.task.SwingUpdateManager;
 import resources.ResourceManager;
 
-/**
+# /**
  * Displays all the function tags in the database and identifies which ones have
  * been assigned to the currently selected function. Through this display users can:
  * <P>

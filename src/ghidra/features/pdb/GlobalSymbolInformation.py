@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.Writer;
 import ghidra.app.util.bin.format.pdb2.pdbreader.msf.MsfStream;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * This class represents Global Symbol Information component of a PDB file.  This class is only
  *  suitable for reading; not for writing or modifying a PDB.
  *  <P>

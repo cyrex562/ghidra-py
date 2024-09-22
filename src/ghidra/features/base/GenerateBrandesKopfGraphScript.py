@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ import ghidra.app.services.GraphDisplayBroker;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.service.graph.*;
 
-/**
+# /**
  * Script to generate graph to test BrandesKopf algorithm
  */
 public class GenerateBrandesKopfGraphScript extends GhidraScript {

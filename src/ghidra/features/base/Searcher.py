@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.searchtext;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Search the program text
  */
 public interface Searcher {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.gdb.manager.impl.GdbThreadImpl;
 import agent.gdb.manager.parsing.GdbMiParser.GdbMiFieldList;
 import agent.gdb.manager.parsing.GdbParsingUtils.GdbParseError;
 
-/**
+# /**
  * The event corresponding with "{@code *stopped}"
  */
 public class GdbStoppedEvent extends AbstractGdbEventWithStateChange {

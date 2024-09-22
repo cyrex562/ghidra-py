@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.lldb.lldb.DebugClient.*;
 import ghidra.comm.util.BitmaskSet;
 import ghidra.comm.util.BitmaskUniverse;
 
-/**
+# /**
  * The interface for receiving event callbacks
  */
 public interface DebugEventCallbacks {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.model.mem.MemoryBlockType;
 import ghidra.program.util.MemoryBlockStartFieldLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
   *  Generates a text label on each {@link CodeUnit} that marks the start of a memory block. The
   *  label will will appear as part of the PLATE group in the field map.
   */

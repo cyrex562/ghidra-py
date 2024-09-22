@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import ghidra.util.classfinder.ClassSearcher;
 
-/**
+# /**
  * Plugin to manage {@link OverviewColorService}s.  It creates actions for each service and installs
  * and removes {@link OverviewColorComponent} as indicated by the action.
  */

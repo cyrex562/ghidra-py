@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.ComponentProvider;
 import docking.DialogComponentProvider;
 import docking.widgets.table.*;
 
-/**
+# /**
  * For Pdb symbolserver gui stuff only.
  * 
  * Add on interface for DynamicTableColumn classes that let them control aspects of the

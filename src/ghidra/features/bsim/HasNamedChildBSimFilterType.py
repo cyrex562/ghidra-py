@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.features.bsim.query.elastic.*;
 import ghidra.features.bsim.query.protocol.ChildAtom;
 import ghidra.features.bsim.query.protocol.FilterAtom;
 
-/**
+# /**
  * A BsimFilterType for filtering functions based on calls to specific external functions.
  * The called function must be external, i.e. in terms of the database, the function must be
  * associated with a library executable (having no code body)

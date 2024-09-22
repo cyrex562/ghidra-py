@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import resources.Icons;
 import util.CollectionUtils;
 import utility.function.Callback;
 
-/**
+# /**
  * Dockable provider that displays function comparisons  Clients create/modify
  * these comparisons using the {@link FunctionComparisonService}, which in turn 
  * creates instances of this provider as-needed. 

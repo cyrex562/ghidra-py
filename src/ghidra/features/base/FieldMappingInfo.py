@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.listing.CodeUnit;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Immutable information needed to deserialize a field in a structure mapped class.
  * 
  * @param <T> structure mapped class type

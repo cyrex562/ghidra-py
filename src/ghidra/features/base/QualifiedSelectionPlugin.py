@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Plugin to extend selection features to include select data,
  * select instructions and select undefined.  Selection will occur
  * in the background with a status bar dialog that allows the user

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.services.MarkerSet;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Marker location in the tool navigation bars
  */
 public class MarkerLocation implements Serializable {

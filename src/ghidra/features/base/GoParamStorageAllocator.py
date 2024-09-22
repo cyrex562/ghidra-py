@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.lang.Register;
 import ghidra.program.model.listing.Program;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * Logic and helper for allocating storage for a function's parameters and return value.
  * <p>
  * Not threadsafe.

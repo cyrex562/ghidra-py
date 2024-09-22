@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import agent.dbgeng.jna.dbgeng.DbgEngNative;
 import ghidra.comm.util.BitmaskSet;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A wrapper for Microsoft's {@code dbgeng.dll} that presents a Java-friendly interface.
  * 
  * This is the "root interface" from which all other interfaces to {@code dbgeng.dll} are generated.

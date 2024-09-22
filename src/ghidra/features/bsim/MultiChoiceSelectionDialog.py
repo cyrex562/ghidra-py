@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.framework.plugintool.ServiceProviderStub;
 
-/**
+# /**
  * Dialog for selection one or more choices from a list of possible values.
  *
  * @param <T> the type of choices

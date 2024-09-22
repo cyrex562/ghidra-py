@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.util.viewer.format;
 
 import ghidra.app.util.viewer.field.FieldFactory;
 
-/**
+# /**
  * Class used to represent a location within the field header component.
  */
 

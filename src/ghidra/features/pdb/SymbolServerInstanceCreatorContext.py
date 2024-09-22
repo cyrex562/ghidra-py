@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.apache.commons.io.FilenameUtils;
 import ghidra.formats.gfilesystem.FSRL;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Context for the {@link SymbolServerInstanceCreatorRegistry} when creating new
  * {@link SymbolServer} instances.
  * <p>

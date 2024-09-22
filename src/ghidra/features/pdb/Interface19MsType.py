@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.type;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 
-/*
+# /*
  * TODO this record type is a guess, using only data (no documentation) in its crafting.
  * Thus, it can be cleaned up using trusted, msft-originated documentation if it becomes
  * available and/or using more data analysis and/or non-trusted documentation.
@@ -28,7 +28,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  * abstract interface type (and also consider whether the emit should belong in the abstract
  * composite type).
  */
-/**
+# /**
  * This class represents the VS19 <B>MsType</B> flavor of Interface type. (At this time,
  * PDB_ID is guessed to be a class similar to {@link InterfaceMsType}, eliminating
  * the redundant count field, and adding other unknown field parsing.)

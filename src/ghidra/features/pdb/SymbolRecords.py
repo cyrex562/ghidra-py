@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractMsSymbol;
 import ghidra.util.datastruct.LRUMap;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * This class represents Symbol Records component of a PDB file.  This class is only
  *  suitable for reading; not for writing or modifying a PDB.
  *  <P>

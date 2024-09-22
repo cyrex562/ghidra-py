@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import agent.lldb.manager.impl.LldbManagerImpl;
 import ghidra.program.model.address.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Implementation of {@link LldbProcess#readMemory(long, ByteBuffer, int)}
  */
 public class LldbReadMemoryCommand extends AbstractLldbCommand<AddressSetView> {

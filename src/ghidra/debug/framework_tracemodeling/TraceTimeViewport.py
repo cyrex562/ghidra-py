@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.Function;
 
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * A convenience for tracking the time structure of a trace and querying the trace accordingly.
  */
 public interface TraceTimeViewport {

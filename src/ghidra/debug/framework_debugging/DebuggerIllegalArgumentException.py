@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.error;
 
-/**
+# /**
  * A model method was given an illegal argument.
  * 
  * If the argument is an object, but of the wrong type, please use

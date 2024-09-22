@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Helper class for the PdbQuery set of scripts that allows the PdbQuery scripts to manage the
  * opening, holding open (caching), and closing of PDB files so that multiple user queries can
  * be run against the PDBs.  Without this notion, if a user wanted to query a PDB with multiple

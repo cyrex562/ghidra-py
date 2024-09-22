@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.lsh.vector.*;
 import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.*;
 
-/**
+# /**
  * ExecutableComparison scorer to use when we are comparing exactly one executable
  * against a set of other executables (one to many).  We override the {@link ExecutableScorer}
  * (compare many to many) so that it effectively accesses only a single row

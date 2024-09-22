@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.net.SocketException;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * An acceptor to receive a single Trace RMI connection from a back-end
  */
 public interface TraceRmiAcceptor {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.features.bsim.query.description.ExecutableRecord;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Response to a QueryNearest request.  A full description in terms of ExecutableRecords and FunctionDescriptions
  * is returned.  The linked list of SimilarityResults explicitly describes the similarities between the functions
  * in the original request and the new functions being returned.  A SimilarityResult cross-references

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.dbg.target.schema.TargetObjectSchema.ResyncMode;
 import ghidra.dbg.util.CollectionUtils.Delta;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A default implementation of {@link TargetObject} suitable for cases where the implementation
  * defines the model structure.
  *

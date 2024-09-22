@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.table.field.AbstractProgramBasedDynamicTableColumn;
 import ghidra.util.table.field.FunctionSignatureTableColumn;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Dialog for display selected functions
  */
 public class SelectedFunctionsTableDialog extends DialogComponentProvider {

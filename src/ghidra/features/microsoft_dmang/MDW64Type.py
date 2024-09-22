@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.MDMang;
 import mdemangler.datatype.MDDataType;
 import mdemangler.datatype.MDDataTypeParser;
 
-/**
+# /**
  * This class represents an W64 data type within a Microsoft mangled symbol.
  */
 public class MDW64Type extends MDExtendedType { // TODO: Think this is correct... can recheck.

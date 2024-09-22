@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import docking.action.ToggleDockingAction;
 import docking.widgets.tree.GTreeNode;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Allows user to filter on only the data type name.   When off, all information returned by
  * {@link GTreeNode#getDisplayText()} is used for filtering.
  */

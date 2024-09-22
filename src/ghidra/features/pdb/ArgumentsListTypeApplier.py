@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.pdb.pdbapplicator;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.type.AbstractArgumentsListMsType;
 
-/**
+# /**
  * Applier for {@link AbstractArgumentsListMsType} types.
  */
 public class ArgumentsListTypeApplier extends MsDataTypeComponentApplier {

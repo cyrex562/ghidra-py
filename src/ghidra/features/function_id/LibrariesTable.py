@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.lang.LanguageID;
 import ghidra.util.UniversalIdGenerator;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * The libraries table for FID.  Note that all entries associated with a single library must have the same
  * LanguageID and CompilerSpecID.  If supporting multiple architectures, simply create multiple libraries
  * in the same database file.

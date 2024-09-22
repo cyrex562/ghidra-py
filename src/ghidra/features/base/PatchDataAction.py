@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.program.model.util.CodeUnitInsertionException;
 import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A context menu action to patch data at the current address
  */
 public class PatchDataAction extends AbstractPatchAction {

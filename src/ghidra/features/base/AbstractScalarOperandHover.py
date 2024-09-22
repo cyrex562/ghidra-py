@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.symbol.Symbol;
 import ghidra.util.HTMLUtilities;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * A hover service to show tool tip text for hovering over scalar values.
  * The tooltip shows the scalar in different bases.
  */

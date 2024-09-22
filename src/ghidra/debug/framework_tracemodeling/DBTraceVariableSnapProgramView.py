@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.listing.CodeUnit;
 import ghidra.trace.database.DBTrace;
 import ghidra.trace.model.program.TraceVariableSnapProgramView;
 
-/**
+# /**
  * TODO
  * 
  * NOTE: Calling {@link CodeUnit#getProgram()} from units contained in this view does not return

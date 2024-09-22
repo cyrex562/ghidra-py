@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * C13IlLines information.  This is C13 IL Lines, where "IL" meaning is uncertain... could mean
  * Incremental Link.  MSFT defers parsing to C13Lines, so it is the same format, which we have
  * given to a common parent, {@link AbstractLinesC13Section}.

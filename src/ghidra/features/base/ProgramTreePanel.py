@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.GroupPath;
 import ghidra.program.util.GroupView;
 
-/**
+# /**
  * Wrapper for a ProgramDnDTree that supports drag and drop and
  * option menus and actions for cut, paste, rename, delete, and
  * merge operations. This class generates ProgramTreeSelection events.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.dbg.target;
 
 import ghidra.dbg.DebuggerTargetObjectIface;
 
-/**
+# /**
  * An object, usually process, to which the debugger can attach
  * 
  * @deprecated Will be removed in 11.3. Portions may be refactored into trace object database.

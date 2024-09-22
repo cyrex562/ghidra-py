@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.CodeUnit;
 import ghidra.program.util.OffsetFieldType;
 
-/**
+# /**
  *  Generates Imagebase Offset fields
  */
 public class ImagebaseOffsetFieldFactory extends AbstractOffsetFieldFactory {

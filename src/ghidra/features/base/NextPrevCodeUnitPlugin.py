@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.framework.plugintool.util.PluginStatus;
 import ghidra.util.HelpLocation;
 import resources.Icons;
 
-/**
+# /**
  * The NextPrevCodeUnitPlugin generates a GoTo event based on where the cursor
  * is located in the program. The GoTo events provided by this plugin are:
  * <UL>

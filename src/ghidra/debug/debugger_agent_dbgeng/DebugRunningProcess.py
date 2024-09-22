@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.dbgeng.dbgeng;
 import agent.dbgeng.dbgeng.DebugRunningProcess.Description.ProcessDescriptionFlags;
 import ghidra.comm.util.BitmaskUniverse;
 
-/**
+# /**
  * Information about a running process, not necessarily a debugged process.
  */
 public interface DebugRunningProcess {

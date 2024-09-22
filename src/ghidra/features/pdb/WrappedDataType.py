@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb;
 
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * <code>WrappedDataType</code> provide the ability to wrap 
  * a {@link DataType} with additional information not conveyed
  * by the datatype on its own. 

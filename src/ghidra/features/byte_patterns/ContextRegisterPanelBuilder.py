@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.*;
 
-/**
+# /**
  * 
  * This class is used to construct the "Context Register Information" panel
  *

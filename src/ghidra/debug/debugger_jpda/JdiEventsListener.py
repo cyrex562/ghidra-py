@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import com.sun.jdi.event.*;
 import ghidra.dbg.jdi.manager.breakpoint.JdiBreakpointInfo;
 import ghidra.dbg.jdi.manager.impl.DebugStatus;
 
-/**
+# /**
  * A listener for events related to objects known to the manager
  */
 public interface JdiEventsListener {

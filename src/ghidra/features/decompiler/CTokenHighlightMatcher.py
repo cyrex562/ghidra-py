@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.decompiler;
 
 import java.awt.Color;
 
-/**
+# /**
  * The interface that clients must define to create a {@link DecompilerHighlighter}
  * 
  * <p>Every function decompiled will trigger this matcher to get called.  The order of method

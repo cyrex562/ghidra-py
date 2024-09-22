@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -51,7 +51,7 @@ import ghidra.util.database.annot.*;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/*
+# /*
  * TODO: A place to store and track dynamic symbols. It looks like dynamic symbols are always
  * labels, and they exist at addresses where there exist references to, but there is no
  * user-defined label or function.

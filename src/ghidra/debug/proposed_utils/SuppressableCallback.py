@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package utilities.util;
 import java.util.*;
 import java.util.function.*;
 
-/**
+# /**
  * A mechanism for preventing callback loops, stack overflows, event storms, etc.
  * 
  * <p>

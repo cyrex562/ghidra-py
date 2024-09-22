@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.app.merge.util;
 import ghidra.program.model.address.AddressSet;
 import ghidra.program.model.address.AddressSetView;
 
-/**
+# /**
  * <code>MergeUtilities</code> provides generic static methods for use by the 
  * multi-user program merge managers.
  */

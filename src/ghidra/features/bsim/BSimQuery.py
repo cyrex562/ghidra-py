@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.xml.XmlPullParser;
 
 // A database query that can be serialized
 
-/**
+# /**
  * {@link BSimQuery} facilitates all BSim {@link FunctionDatabase} queries
  * which when executed provide a specific {@link QueryResponseRecord}.
  *

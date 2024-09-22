@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.lldb.model.iface1;
 import agent.lldb.model.iface2.LldbModelTargetObject;
 import ghidra.dbg.target.TargetAttachable;
 
-/**
+# /**
  * An interface which indicates this object is capable of launching targets.
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import generic.theme.GThemeDefaults.Colors.Palette;
 import ghidra.util.Msg;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * The MergeProgressPanel displays the name of each merge phase along with an icon indicating
  * whether the phase is Pending, In Progress or Completed.
  */

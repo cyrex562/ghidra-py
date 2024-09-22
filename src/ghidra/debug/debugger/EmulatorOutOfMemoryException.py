@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.service.emulation;
 
-/**
+# /**
  * Some emulator-related operation was unable to locate a suitable address in the trace's memory map
  */
 public class EmulatorOutOfMemoryException extends RuntimeException {

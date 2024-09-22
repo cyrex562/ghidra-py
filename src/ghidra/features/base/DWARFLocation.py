@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 import ghidra.app.util.bin.format.dwarf.expression.*;
 
-/**
+# /**
  * Represents the location of an item that is only valid for a certain range of program-counter
  * locations.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package mdemangler.datatype.modifier;
 
-/**
+# /**
  * This class parses the mangled string at the current offset to determine and
  *  create the appropriate type of MDManagedProperty.
  */
@@ -89,5 +89,5 @@ public class MDManagedPropertyParser {
 //	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

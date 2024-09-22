@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.nio.CharBuffer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
+# /**
  * Some utility methods for working with GDB
  */
 public enum GdbParsingUtils {

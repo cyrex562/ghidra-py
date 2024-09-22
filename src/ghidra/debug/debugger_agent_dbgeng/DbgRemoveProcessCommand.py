@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.dbgeng.dbgeng.DebugProcessId;
 import agent.dbgeng.manager.DbgManager;
 import agent.dbgeng.manager.impl.DbgManagerImpl;
 
-/**
+# /**
  * Implementation of {@link DbgManager#addProcess()}
  */
 public class DbgRemoveProcessCommand extends AbstractDbgCommand<Void> {

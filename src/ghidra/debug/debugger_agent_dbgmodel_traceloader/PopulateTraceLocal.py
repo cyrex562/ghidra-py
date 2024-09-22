@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.trace.model.thread.TraceThreadManager;
 import ghidra.trace.model.time.TraceTimeManager;
 import ghidra.util.Msg;
 
-/**
+# /**
  * This script populates a trace database for demonstrations purposes and opens it in the current
  * tool.
  * 

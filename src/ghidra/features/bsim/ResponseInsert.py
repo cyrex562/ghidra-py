@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.features.bsim.query.LSHException;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * A simple response to an InsertRequest to a BSim database.
  * This object provides separate counts of executables successfully inserted and functions successfully inserted.
  *

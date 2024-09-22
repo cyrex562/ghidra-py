@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 import docking.widgets.table.constrainteditor.DoNothingColumnConstraintEditor;
 import ghidra.program.model.data.StringDataInstance;
 
-/**
+# /**
  * Tests if a string value contains only ASCII characters.
  */
 public class IsAsciiColumnConstraint extends StringDataInstanceColumnConstraint {

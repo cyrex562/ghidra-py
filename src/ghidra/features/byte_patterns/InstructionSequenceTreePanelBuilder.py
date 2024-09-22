@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import docking.widgets.tree.GTree;
 import ghidra.bitpatterns.info.*;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * 
  * This class describes a panel of instruction sequences (displayed as a tree).
  *

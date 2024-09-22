@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * NOTE: Generated FILE!
  *
@@ -23,7 +23,7 @@ import ghidra.program.model.data.AbstractIntegerDataType;
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.PointerDataType;
 
-/**
+# /**
  * Container for information about a Declaration that is accumulated during parsing.
  */
 public class Declaration {

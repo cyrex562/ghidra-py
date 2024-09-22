@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.Function;
 
 import ghidra.app.decompiler.ClangToken;
 
-/**
+# /**
  * Functional interface to allow us to map a token to a color.
  * 
  * <p>This class allows us to avoid the namespace conflicts of Java's Function and Ghidra's

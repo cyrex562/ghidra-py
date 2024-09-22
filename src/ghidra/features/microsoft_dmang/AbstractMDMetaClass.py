@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.typeinfo;
 
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a Microsoft C++ MetaClass, which is the basis
  * for some internal C++ structures.
  */
@@ -28,5 +28,5 @@ public abstract class AbstractMDMetaClass extends MDTypeInfo {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

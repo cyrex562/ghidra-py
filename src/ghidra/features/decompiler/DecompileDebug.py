@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.program.model.symbol.Namespace;
 import ghidra.util.Msg;
 import ghidra.util.xml.SpecXmlUtils;
 
-/**
+# /**
  * A container for collecting communication between the decompiler and the Ghidra database,
  * as serviced through DecompileCallback during decompilation of a function.
  * The query results can then be dumped as an XML document.

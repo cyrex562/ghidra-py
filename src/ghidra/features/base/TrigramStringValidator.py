@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.util.function.Function;
 import generic.jar.ResourceFile;
 import ghidra.app.services.*;
 
-/**
+# /**
  * A {@link StringValidatorService} that uses precomputed trigram frequencies from
  * a ".sng" model file to score strings.
  */

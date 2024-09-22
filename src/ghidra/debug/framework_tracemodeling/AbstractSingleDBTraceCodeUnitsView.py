@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.listing;
 
-/**
+# /**
  * An abstract implementation of a single-type view
  * 
  * @implNote This class cannot be removed. Despite it appearing not to do anything, this class

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import ghidra.program.model.address.AddressFormatException;
 import ghidra.test.ToyProgramBuilder;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Captures screenshots for the BSim help pages. Note that this class does not 
  * generate ALL images used in the BSim help. The following are generated
  * by hand, but should be addressed to be created here at some point:

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.trace.model;
 
 import java.util.Objects;
 
-/**
+# /**
  * NOTE: This is used to mark <trace,snap>; regardless of whether that snapshot is actually in the
  * database.... Cannot just use TraceSnapshot here.
  */

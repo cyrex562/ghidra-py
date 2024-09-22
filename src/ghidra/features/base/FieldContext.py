@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.data.DataTypeComponent;
 
-/**
+# /**
  * Context of an individual field that is being deserialized, or being markedup.
  * 
  * @param <T> the class that contains this field

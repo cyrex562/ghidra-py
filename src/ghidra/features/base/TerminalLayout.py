@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.widgets.fieldpanel.support.SingleRowLayout;
 import ghidra.app.plugin.core.terminal.vt.AnsiColorResolver;
 import ghidra.app.plugin.core.terminal.vt.VtLine;
 
-/**
+# /**
  * A layout for a line of text in the terminal.
  * 
  * <p>

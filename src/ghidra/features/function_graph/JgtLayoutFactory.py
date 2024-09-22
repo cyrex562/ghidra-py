@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.app.plugin.core.functiongraph.graph.vertex.FGVertex;
 import ghidra.graph.viewer.vertex.VisualGraphVertexShapeTransformer;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class that supplies Jung graph layouts to the Function Graph API.
  *
  * @param <V> the vertex type

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.formats.gfilesystem.FSRL;
 import ghidra.util.task.TaskMonitor;
 import pdb.symbolserver.SymbolServer.StatusRequiresContext;
 
-/**
+# /**
  * A Pdb symbol server / symbol store, similar to the {@link LocalSymbolStore}, 
  * but limited to searching just the single directory that the original executable is located in.
  * <p>

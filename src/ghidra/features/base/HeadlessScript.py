@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.script.*;
 import ghidra.framework.model.DomainFolder;
 import ghidra.util.InvalidNameException;
 
-/**
+# /**
  * This class is analogous to GhidraScript, except that is only meant to be used with
  * the HeadlessAnalyzer.  That is, if a user writes a script that extends HeadlessScript,
  * it should only be run in the Headless environment.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.dbg.target.schema.TargetAttributeType;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressRange;
 
-/**
+# /**
  * An allocated section of a binary module
  * 
  * <p>

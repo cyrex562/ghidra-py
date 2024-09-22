@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 import ghidra.app.util.bin.ByteProvider;
 
-/**
+# /**
  * Android Profiling (.PROF) files.
  * 
  * "current profiles are stored next to the dex files under the oat folder"

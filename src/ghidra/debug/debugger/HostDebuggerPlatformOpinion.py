@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.lang.CompilerSpec;
 import ghidra.trace.model.Trace;
 import ghidra.trace.model.target.TraceObject;
 
-/**
+# /**
  * An opinion which just uses the trace's "host" platform, i.e., because the target created the
  * trace with the correct host language. Other mappers assume the trace language is DATA, and that
  * the real language must be mapped as a guest platform.

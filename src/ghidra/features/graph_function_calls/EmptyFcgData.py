@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import functioncalls.graph.*;
 import ghidra.graph.viewer.GraphPerspectiveInfo;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * An empty data that is used to avoid null checks
  */
 public class EmptyFcgData implements FcgData {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.TaskLauncher;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This is the data model that {@link InstructionSearchDialog} instances use
  * when building their displays.
  */

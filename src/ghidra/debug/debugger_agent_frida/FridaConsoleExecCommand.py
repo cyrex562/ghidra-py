@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import agent.frida.manager.evt.AbstractFridaCompletedCommandEvent;
 import agent.frida.manager.evt.FridaConsoleOutputEvent;
 import agent.frida.manager.impl.FridaManagerImpl;
 
-/**
+# /**
  * Implementation of {@link FridaManager#console(String)} and similar
  */
 public class FridaConsoleExecCommand extends AbstractFridaCommand<String> {

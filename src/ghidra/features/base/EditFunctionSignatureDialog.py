@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * <code>EditFunctionSignatureDialog</code> provides the ability to edit the
  * function signature associated with a specific {@link Function}.  
  * Use of this editor requires the presence of the tool-based datatype manager service.

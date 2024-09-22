@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf;
 
 import ghidra.program.model.address.AddressRange;
 
-/**
+# /**
  * Holds the start (inclusive) and end (exclusive, 1 past the last included address) addresses 
  * of a range.
  * <p>

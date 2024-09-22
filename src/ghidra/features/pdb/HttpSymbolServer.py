@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.task.CancelledListener;
 import ghidra.util.task.TaskMonitor;
 import pdb.symbolserver.SymbolServer.MutableTrust;
 
-/**
+# /**
  * A {@link SymbolServer} that is accessed via HTTP.
  * <p>
  * 

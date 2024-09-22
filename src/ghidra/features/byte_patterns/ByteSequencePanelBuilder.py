@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.table.GFilterTable;
 import ghidra.bitpatterns.info.*;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * This class is used to create panels for displaying sequences of bytes
  */
 public class ByteSequencePanelBuilder extends ContextRegisterFilterablePanelBuilder {

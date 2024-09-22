@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ProgramSelection;
 import ghidra.util.task.SwingUpdateManager;
 
-/**
+# /**
  * Plugin for producing a high-level C interpretation of assembly functions.
  */
 //@formatter:off

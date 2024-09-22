@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.lang.CompilerSpec;
 import ghidra.program.model.listing.Function;
 import ghidra.util.classfinder.ExtensionPointProperties;
 
-/**
+# /**
  * Update the function's calling convention (if unset) if there is a "this" parameter.
  */
 @ExtensionPointProperties(priority = DWARFFunctionFixup.PRIORITY_NORMAL)

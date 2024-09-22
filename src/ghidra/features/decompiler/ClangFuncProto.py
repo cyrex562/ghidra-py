@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.decompiler;
 
-/**
+# /**
  * A grouping of source code tokens representing a function prototype
  */
 public class ClangFuncProto extends ClangTokenGroup {

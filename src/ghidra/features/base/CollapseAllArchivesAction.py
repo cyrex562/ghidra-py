@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.app.plugin.core.datamgr.tree.ArchiveRootNode;
 import ghidra.app.plugin.core.datamgr.tree.DataTypeArchiveGTree;
 import resources.Icons;
 
-/**
+# /**
  * This action handles recursively collapsing nodes in the dataTypes tree.  If invoked from the
  * local toolbar icon, it collapses all nodes in the tree.  If invoked from the popup, it only
  * collapses the selected nodes.

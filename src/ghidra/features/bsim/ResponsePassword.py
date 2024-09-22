@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  *  Response of server indicating whether a password change request ({@link PasswordChange}) succeeded
  */
 public class ResponsePassword extends QueryResponseRecord {

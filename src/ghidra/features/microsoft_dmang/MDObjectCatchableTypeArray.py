@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.MDMang;
 import mdemangler.datatype.MDDataType;
 import mdemangler.datatype.MDDataTypeParser;
 
-/**
+# /**
  * This class represents a MSFT <b><code>CatchableTypeArray</code></b> symbol.  We have created
  *  this object and the <b><code>MDObjectReserved</code></b> type from which it is derived.
  *  <b><code>CatchableTypeArray</code></b> seemingly has a structure as seen in the class layout
@@ -67,5 +67,5 @@ public class MDObjectCatchableTypeArray extends MDObjectReserved {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

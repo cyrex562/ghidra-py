@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.closedpatternmining;
 
 import java.util.List;
 
-/**
+# /**
  * 
  * A SequenceItem objects represents a item (character) in a sequence.
  * We include the index as part of the character - so an "A" in the

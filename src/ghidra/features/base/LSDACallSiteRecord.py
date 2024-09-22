@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.symbol.RefType;
 import ghidra.program.model.symbol.SourceType;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Defines the bounds of a try-catch region.
  */
 public class LSDACallSiteRecord extends GccAnalysisClass {

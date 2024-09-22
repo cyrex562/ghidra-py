@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.bitpatterns.info;
 import java.math.BigInteger;
 import java.util.*;
 
-/**
+# /**
  * Objects of this class are used to filter lists of {@link ContextRegisterInfo}s
  */
 public class ContextRegisterFilter {

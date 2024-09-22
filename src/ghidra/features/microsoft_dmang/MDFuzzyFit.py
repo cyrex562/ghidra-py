@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import mdemangler.functiontype.MDFunctionType;
 import mdemangler.typeinfo.MDTypeInfo;
 import mdemangler.typeinfo.MDTypeInfoParser;
 
-/**
+# /**
  * This class is still not used and might be turned into a derivative of the MDMang class.
  * The intention is to have a class that can be used to explore a symbol that cannot currently
  * be parsed into portions of already-recognizable components by trying to apply these
@@ -229,5 +229,5 @@ public class MDFuzzyFit {
 
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

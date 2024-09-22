@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.plugin.core.functiongraph.mvc.FGController;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.symbol.FlowType;
 
-/**
+# /**
  * A vertex that is used as a temporary placeholder for graph algorithms that require a 
  * particular structure, such as having a source or sink
  */

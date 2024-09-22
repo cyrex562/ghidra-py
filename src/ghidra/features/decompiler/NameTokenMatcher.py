@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.json.Json;
 import ghidra.app.decompiler.CTokenHighlightMatcher;
 import ghidra.app.decompiler.ClangToken;
 
-/**
+# /**
  * Matcher used for secondary highlights in the Decompiler.
  */
 class NameTokenMatcher implements CTokenHighlightMatcher {

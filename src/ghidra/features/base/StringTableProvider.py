@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -51,7 +51,7 @@ import ghidra.util.task.TaskLauncher;
 import resources.Icons;
 import resources.ResourceManager;
 
-/**
+# /**
  * Component provider for the Search -&gt; For Strings... result dialog.
  */
 public class StringTableProvider extends ComponentProviderAdapter implements DomainObjectListener {

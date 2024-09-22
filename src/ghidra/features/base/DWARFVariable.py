@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.symbol.SymbolType;
 import ghidra.util.Msg;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Represents a function's parameter or local variable; or a global variable. 
  */
 public class DWARFVariable {

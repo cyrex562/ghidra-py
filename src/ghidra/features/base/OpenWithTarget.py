@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.program.database.ProgramContentHandler;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Represents a way to open a {@link DomainFile} in a {@link ProgramManager}
  */
 public class OpenWithTarget {

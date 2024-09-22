@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.pcode.emu.*;
 import ghidra.pcode.exec.trace.data.*;
 import ghidra.trace.model.guest.TracePlatform;
 
-/**
+# /**
  * An emulator that can read initial state from a trace and record its state back into it
  */
 public class BytesTracePcodeEmulator extends PcodeEmulator implements TracePcodeMachine<byte[]> {

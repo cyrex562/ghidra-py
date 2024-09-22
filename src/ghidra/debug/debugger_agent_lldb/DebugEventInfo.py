@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.lldb.lldb;
 import SWIG.*;
 import ghidra.comm.util.BitmaskSet;
 
-/**
+# /**
  * Information about an event (target, process, or thread).
  */
 public class DebugEventInfo {

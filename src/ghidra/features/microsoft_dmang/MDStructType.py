@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.datatype.complex;
 
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a struct type of "complex" data type within a Microsoft mangled symbol.
  */
 public class MDStructType extends MDComplexType {

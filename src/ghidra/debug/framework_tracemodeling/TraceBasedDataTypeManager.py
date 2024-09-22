@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.data.*;
 import ghidra.trace.model.Trace;
 import ghidra.trace.model.program.TraceProgramView;
 
-/**
+# /**
  * A data type manager which is part of a {@link Trace}
  */
 public interface TraceBasedDataTypeManager extends ProgramBasedDataTypeManager {

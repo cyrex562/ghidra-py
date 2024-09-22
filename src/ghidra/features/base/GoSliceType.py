@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.golang.structmapping.*;
 import ghidra.app.util.viewer.field.AddressAnnotatedStringHandler;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * Golang type information about a specific slice type.
  * <p>
  * See {@link GoRttiMapper#getGenericSliceDT()} or the "runtime.slice" type for the definition of

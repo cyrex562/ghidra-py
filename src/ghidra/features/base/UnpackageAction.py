@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.exception.UsrException;
 import ghidra.util.task.TaskLauncher;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Action for use in the composite data type editor.
  * This action has help associated with it.
  */

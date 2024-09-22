@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.service.graph.GraphDisplay;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * provided a JComponent for the ProgramGraph visualization
  */
 public class DefaultGraphDisplayComponentProvider extends ComponentProviderAdapter {

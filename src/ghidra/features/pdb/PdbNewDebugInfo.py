@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.List;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * This class is the version of {@link PdbDebugInfo} for newer PDB files.
  * <P>
  * This class uses {@link ModuleInformation600}.

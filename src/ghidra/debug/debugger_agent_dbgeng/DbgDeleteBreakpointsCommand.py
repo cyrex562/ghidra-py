@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.dbgeng.dbgeng.DebugBreakpoint;
 import agent.dbgeng.dbgeng.DebugControl;
 import agent.dbgeng.manager.impl.DbgManagerImpl;
 
-/**
+# /**
  * Implementation of {@link DbgManagerImpl#deleteBreakpoints(long)}
  */
 public class DbgDeleteBreakpointsCommand extends AbstractDbgCommand<Void> {

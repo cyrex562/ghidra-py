@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.reloc.Relocation.Status;
 import ghidra.program.model.reloc.RelocationResult;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * An abstract class used to perform Mach-O relocations.  Classes should extend this class to
  * provide relocations in a machine/processor specific way.
  * 

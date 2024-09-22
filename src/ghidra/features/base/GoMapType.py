@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.viewer.field.AddressAnnotatedStringHandler;
 import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Golang type info about a specific map type.
  * <p>
  * See {@link GoRttiMapper#getMapGoType()} or the "runtime.hmap" type for the definition of

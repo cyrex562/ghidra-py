@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.formats.gfilesystem.fileinfo;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * A collection of {@link FileAttribute} values that describe a file. 
  */
 public class FileAttributes {

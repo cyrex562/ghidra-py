@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.trace.util.TraceAddressSpace;
 import ghidra.util.LockHold;
 import ghidra.util.database.DBCachedObjectStore;
 
-/**
+# /**
  * An abstract implementation of a table-backed code unit
  *
  * <p>

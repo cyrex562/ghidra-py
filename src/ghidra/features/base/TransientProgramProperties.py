@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.model.DomainObject;
 import ghidra.framework.model.DomainObjectClosedListener;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Mechanism to associate values with a currently open program.  Values will be released when
  * the program is closed, or when the current analysis session is finished.
  * <p>

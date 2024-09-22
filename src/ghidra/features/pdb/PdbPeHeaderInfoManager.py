@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.app.util.bin.format.pe.cli.tables.CliAbstractTableRow;
 import ghidra.program.database.mem.FileBytes;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Manages PE Header information that we need that is not retained in the Program.
  *  Current data includes CLI-Managed information and original image base.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.datastruct.Duo;
 import ghidra.util.datastruct.Duo.Side;
 
-/** 
+# /** 
  * Basic FunctionComparisonModel where a set of functions can be compared with each other
  */
 public class AnyToAnyFunctionComparisonModel extends AbstractFunctionComparisonModel {

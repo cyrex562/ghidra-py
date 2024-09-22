@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 
 import generic.util.PeekableIterator;
 
-/**
+# /**
  * A filtering iterator which removes repeated objects
  * 
  * <p>

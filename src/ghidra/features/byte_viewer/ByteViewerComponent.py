@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.Msg;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * FieldViewer to show data formatted according to the DataFormatModel that is passed in to the
  * constructor. The source of the data is an array of ByteBlocks that is managed by an IndexMap.
  */

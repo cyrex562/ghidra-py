@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.Msg;
 import help.HelpService;
 import resources.ResourceManager;
 
-/**
+# /**
  * Ghidra's help service.   This class knows how to find help for the various modules that 
  * make up Ghidra.
  */

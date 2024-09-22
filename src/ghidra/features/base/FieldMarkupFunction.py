@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * A function that decorates a field in a structure mapped class.
  * 
  * @param <T> structure mapped class type

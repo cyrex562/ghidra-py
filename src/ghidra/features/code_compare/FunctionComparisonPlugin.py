@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Swing;
 import utility.function.Callback;
 
-/**
+# /**
  * Allows users to create function comparisons that are displayed
  * side-by-side in a provider. Comparisons can be initiated via the listing 
  * or function table and are displayed in a {@link FunctionComparisonProvider}.

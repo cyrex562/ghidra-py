@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.address.AddressRange;
 import ghidra.program.model.listing.Program;
 import ghidra.trace.model.modules.TraceModule;
 
-/**
+# /**
  * A proposed mapping of module to program
  */
 public interface ModuleMapProposal extends MapProposal<TraceModule, Program, ModuleMapEntry> {

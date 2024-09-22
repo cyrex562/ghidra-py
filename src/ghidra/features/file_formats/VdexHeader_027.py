@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android-s-beta-5/runtime/vdex_file.h#129">android-s-beta-5/runtime/vdex_file.h#129</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android12-release/runtime/vdex_file.h#129">android12-release/runtime/vdex_file.h#129</a>

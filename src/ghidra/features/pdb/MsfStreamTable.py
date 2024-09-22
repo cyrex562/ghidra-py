@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.PdbByteReader;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbException;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * This class represents the the Stream Table used by the Multi-Stream Format File within
  *  Windows PDB files.
  *  We have intended to implement to the Microsoft PDB API (source); see the API for truth.

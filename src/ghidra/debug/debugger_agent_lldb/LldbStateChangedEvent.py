@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import SWIG.SBThread;
 import SWIG.StateType;
 import agent.lldb.lldb.DebugProcessInfo;
 
-/**
+# /**
  * The event corresponding with SBProcess.eBroadcastBitStateChanged
  */
 public class LldbStateChangedEvent extends AbstractLldbEvent<DebugProcessInfo> {

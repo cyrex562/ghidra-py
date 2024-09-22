@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import ghidra.program.model.symbol.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * Container object to keep a relative index, label, and comments. Used
  * in a list for copying/pasting labels and comments from one program to
  * another.

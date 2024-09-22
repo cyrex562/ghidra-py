@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.dbg.target;
 import ghidra.dbg.DebuggerTargetObjectIface;
 import ghidra.dbg.target.schema.TargetAttributeType;
 
-/**
+# /**
  * A target object which may not be accessible
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The RTTI0 data type represents a TypeDescriptor structure.
  * <p>
  * Fields for this RunTimeTypeInformation structure can be found on http://www.openrce.org

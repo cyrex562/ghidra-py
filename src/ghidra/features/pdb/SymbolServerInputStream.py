@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package pdb.symbolserver;
 
 import java.io.*;
 
-/**
+# /**
  * A {@link InputStream} wrapper returned from a {@link SymbolServer}
  * that also contains the expected length of the stream.
  */

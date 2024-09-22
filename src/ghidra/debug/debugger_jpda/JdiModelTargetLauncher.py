@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.dbg.target.TargetLauncher;
 import ghidra.dbg.target.TargetMethod;
 import ghidra.dbg.target.TargetMethod.ParameterDescription;
 
-/**
+# /**
  * An interface which indicates this object is capable of launching targets.
  * 
  * The targets this launcher creates ought to appear in its successors.

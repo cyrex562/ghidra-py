@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.util;
 
 
-/**
+# /**
  * <code>MultiComparableArrayIterator</code> takes multiple arrays of comparable
  * objects and iterates through them simultaneously. The arrays must contain objects
  * that are comparable within each array and between the multiple arrays.

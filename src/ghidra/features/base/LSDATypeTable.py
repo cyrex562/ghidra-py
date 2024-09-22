@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -30,7 +30,7 @@ import ghidra.program.model.symbol.RefType;
 import ghidra.program.model.symbol.SourceType;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Stores addresses of __type_info structures for thrown values. Used by the Unwind routines
  * to determine if a given catch block appropriately handles a given exception-of-type. 
  */

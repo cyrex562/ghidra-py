@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import ghidra.features.base.memsearch.format.SearchFormat;
 import ghidra.features.base.memsearch.matcher.ByteMatcher;
 
-/**
+# /**
  * Class for managing memory search history. It maintains a list of previously used ByteMatchers to
  * do memory searching. Each ByteMatcher records the input search text and the search settings used
  * to create it.

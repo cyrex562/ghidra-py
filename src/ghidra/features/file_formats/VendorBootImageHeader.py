@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.app.util.bin.StructConverter;
 
-/**
+# /**
  * Base class to represent a Vendor Boot Image header.
  */
 public abstract class VendorBootImageHeader implements StructConverter {

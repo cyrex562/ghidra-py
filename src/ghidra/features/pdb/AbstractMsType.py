@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Objects;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 
-/**
+# /**
  * This is the abstract class for PDB Data Type units.
  * <P>
  * The leaves in the {@link AbstractMsType} hierarchy generally end in one of the following,

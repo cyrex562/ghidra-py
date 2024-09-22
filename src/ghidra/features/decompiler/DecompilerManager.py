@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Manages the threading involved with dealing with the decompiler. It uses a simpler approach
  * than previous versions.  Currently, there is only one Runnable ever scheduled to the RunManager.
  * If a new Decompile request comes in while a decompile is in progress, the new request is

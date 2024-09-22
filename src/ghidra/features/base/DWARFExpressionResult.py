@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf.expression;
 
 import java.util.ArrayDeque;
 
-/**
+# /**
  * The result of executing a {@link DWARFExpression} with a {@link DWARFExpressionEvaluator}.
  * <p>
  * Currently only holds the stack results, but future improvements should

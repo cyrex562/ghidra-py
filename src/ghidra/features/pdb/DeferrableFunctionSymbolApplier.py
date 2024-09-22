@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.PdbException;
 import ghidra.program.model.address.Address;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Interface class for MsSymbolApplier that has deferrable function work.
  */
 interface DeferrableFunctionSymbolApplier extends DirectSymbolApplier {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 
 import java.io.*;
 
-/**
+# /**
  * Image Function Entry data seems to be the main data PData record of the {@link DebugData}.
  */
 public class ImageFunctionEntry {

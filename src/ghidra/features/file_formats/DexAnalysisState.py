@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.address.AddressSpace;
 import ghidra.program.model.listing.Program;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * This class is used to cache the {@link DexHeader} which holds constant pool and method information.
  * These do not change for a given .dex Program and can be shared between plug-ins that need to 
  * do analysis.

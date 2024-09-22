@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.theme.GIcon;
 import ghidra.app.util.datatype.EmptyCompositeException;
 import ghidra.program.model.data.InvalidDataTypeException;
 
-/**
+# /**
  * ApplyAction is an action for applying editor changes.
  */
 public class ApplyAction extends CompositeEditorTableAction {

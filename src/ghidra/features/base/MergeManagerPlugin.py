@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.plugintool.*;
 import ghidra.program.model.listing.Program;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Plugin that provides a merge component provider.
  */
 public abstract class MergeManagerPlugin extends Plugin

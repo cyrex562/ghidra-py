@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * {@link Task} that recursively extracts all files from a {@link GFileSystem} directory
  * and writes them to a local filesystem.
  */

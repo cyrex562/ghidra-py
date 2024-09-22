@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.util.bin.format.macho.MachException;
 import ghidra.app.util.bin.format.macho.MachHeader;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Represents a fat_header structure.
  * 
  * @see <a href="https://opensource.apple.com/source/xnu/xnu-4570.71.2/EXTERNAL_HEADERS/mach-o/fat.h.auto.html">mach-o/fat.h</a> 

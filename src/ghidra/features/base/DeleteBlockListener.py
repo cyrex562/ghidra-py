@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.cmd.memory;
 
-/**
+# /**
  * Listener that is notified when the DeleteBlockCmd completes.
  * 
  * 

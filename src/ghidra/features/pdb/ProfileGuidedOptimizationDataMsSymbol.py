@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 
-/**
+# /**
  * This class represents the Profile-Guided Optimization symbol.
  * <P>
  * Note: We are guessing this for PGO and POGO.

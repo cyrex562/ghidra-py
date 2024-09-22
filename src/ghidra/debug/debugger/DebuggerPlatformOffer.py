@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.lang.*;
 import ghidra.program.util.DefaultLanguageService;
 import ghidra.trace.model.Trace;
 
-/**
+# /**
  * An offer to map from a trace to a Ghidra langauge / compiler
  */
 public interface DebuggerPlatformOffer {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.lang.LanguageService;
 import ghidra.program.model.listing.Program;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * {@link GFileSystem} add-on interface that allows a filesystem publish the fact that
  * it supports an import feature allowing the caller to import binaries directly into
  * Ghidra without going through a {@link Loader}.

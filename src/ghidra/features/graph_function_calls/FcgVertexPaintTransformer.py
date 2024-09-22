@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import com.google.common.base.Function;
 import functioncalls.graph.FcgVertex;
 import functioncalls.graph.FunctionCallGraph;
 
-/**
+# /**
  * A class that takes a {@link FunctionCallGraph} vertex and determines which fill color 
  * should be used to paint
  */

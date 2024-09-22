@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import docking.widgets.fieldpanel.listener.LayoutModelListener;
 import docking.widgets.fieldpanel.support.SingleRowLayout;
 import ghidra.app.plugin.core.format.DataFormatModel;
 
-/**
+# /**
  * Implements the LayoutModel for ByteViewer Components.
  */
 public class ByteViewerLayoutModel implements LayoutModel {

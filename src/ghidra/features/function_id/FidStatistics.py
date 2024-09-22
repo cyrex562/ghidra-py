@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.symbol.SymbolIterator;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Runs through recursively through a set of folders provided by the user.
  * Programs are assumed to be "marked", meaning that functions all have their correct labels.
  * Each function in each program is searched within the active FID databases and various statistics

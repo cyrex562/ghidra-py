@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.features.base.memsearch.gui.SearchSettings;
 import ghidra.features.base.memsearch.matcher.*;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * {@link SearchFormat} for parsing and display bytes in a hex format. This format only 
  * accepts hex digits or wild card characters.
  */

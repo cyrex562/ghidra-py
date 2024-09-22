@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.ActionContext;
 import docking.action.KeyBindingData;
 import generic.theme.GIcon;
 
-/**
+# /**
  * {@link RedoChangeAction} facilitates an redo of recently undone/reverted composite editor changes.
  */
 public class RedoChangeAction extends CompositeEditorTableAction {

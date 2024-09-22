@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.trace.model.Trace;
 import ghidra.trace.model.symbol.TraceLabelSymbol;
 import ghidra.trace.model.target.TraceObject;
 
-/**
+# /**
  * A platform within a trace
  * 
  * <p>

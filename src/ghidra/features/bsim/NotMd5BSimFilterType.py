@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.features.bsim.query.description.ExecutableRecord;
 import ghidra.features.bsim.query.elastic.*;
 import ghidra.features.bsim.query.protocol.FilterAtom;
 
-/**
+# /**
  * A BsimFilterType for filtering on functions whose containing program don't match a specific md5.
  */
 public class NotMd5BSimFilterType extends BSimFilterType {

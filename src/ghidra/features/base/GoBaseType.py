@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.golang.rtti.GoName;
 import ghidra.app.util.bin.format.golang.rtti.GoRttiMapper;
 import ghidra.app.util.bin.format.golang.structmapping.*;
 
-/**
+# /**
  * Represents the fundamental golang rtti type information.
  * <p>
  * The in-memory instance will typically be part of a specialized type structure, depending

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.*;
 
 import java.util.*;
 
-/**
+# /**
  * Manages edit sessions of function stack frames for multiple open programs.
  */
 public class StackEditorManager implements EditorListener {

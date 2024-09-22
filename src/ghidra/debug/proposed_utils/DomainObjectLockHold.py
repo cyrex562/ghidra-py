@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.database;
 import ghidra.framework.model.DomainObject;
 import ghidra.framework.model.DomainObjectLockedException;
 
-/**
+# /**
  * A hold on the lock for a domain object, obtained via {@link #lock(DomainObject, String)} or
  * {@link #forceLock(DomainObject, boolean, String)}
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.checksums;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-/**
+# /**
  * This class is used for the computation of the SHA-512 checksum algorithm.
  */
 public class SHA512DigestChecksumAlgorithm extends DigestChecksumAlgorithm {

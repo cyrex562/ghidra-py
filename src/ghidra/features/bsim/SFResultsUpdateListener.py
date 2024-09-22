@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.bsim.query.facade;
 
 import ghidra.features.bsim.query.protocol.QueryResponseRecord;
 
-/**
+# /**
  * A listener that will be called as incremental results arrive from database queries.  
  * The results given to this listener are always a subset of the complete results.
  * @param <R> the final result implementation class.

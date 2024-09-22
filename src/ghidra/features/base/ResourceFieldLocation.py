@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.OperandFieldLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * A {@link ProgramLocation} of an item that is a Resource 
  * embedded in a binary (ie. a embedded graphic image)
  */

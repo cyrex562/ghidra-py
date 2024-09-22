@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.features.bsim.query.client.IDSQLResolution;
 import ghidra.features.bsim.query.description.ExecutableRecord;
 import ghidra.features.bsim.query.protocol.FilterAtom;
 
-/**
+# /**
  * An abstract BsimFilterType for filtering on dates.
  */
 public abstract class DateBSimFilterType extends BSimFilterType {

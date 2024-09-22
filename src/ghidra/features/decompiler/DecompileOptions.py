@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.program.model.symbol.IdentityNameTransformer;
 import ghidra.program.model.symbol.NameTransformer;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Configuration options for the decompiler
  * This stores the options and can create an XML
  * string to be sent to the decompiler process

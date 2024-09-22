@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.bitpatterns.info.DataGatheringParams;
 import ghidra.util.HelpLocation;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * This class creates a dialog for the user to input data gathering parameters 
  * when mining the current program (for instance, the number of bytes and instructions
  * to record at the beginning of each function).

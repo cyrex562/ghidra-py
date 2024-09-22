@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.gdb.manager;
 
 import agent.gdb.manager.impl.GdbPendingCommand;
 
-/**
+# /**
  * Identifies the cause of an event emitted by GDB
  * 
  * <p>

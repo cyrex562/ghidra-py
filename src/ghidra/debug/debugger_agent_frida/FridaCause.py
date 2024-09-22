@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.frida.manager;
 
 import agent.frida.manager.cmd.FridaPendingCommand;
 
-/**
+# /**
  * Identifies the cause of an event emitted by frida
  * 
  * This is not a concept native to frida. Rather, it is a means to distinguish events that result

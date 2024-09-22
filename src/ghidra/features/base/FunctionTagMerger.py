@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class for merging function tag changes. Most tag differences can be easily auto-merged, 
  * which is to say the result will be the set of all of tags from both program 1 and 
  * program 2. Conflicts arise when both parties have edited/deleted the same tag.

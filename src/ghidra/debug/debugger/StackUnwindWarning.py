@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.pcode.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A warning issued while unwinding a stack
  * 
  * <p>

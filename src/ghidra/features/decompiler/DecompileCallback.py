@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.exception.NotFoundException;
 import ghidra.util.exception.UsrException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * 
  *
  * Routines that the decompiler invokes to gather info during decompilation of a

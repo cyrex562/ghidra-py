@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.frida.manager.impl.FridaManagerImpl;
 import ghidra.dbg.target.TargetExecutionStateful.TargetExecutionState;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Implementation of {@link FridaManager#continue()}
  */
 public class FridaContinueCommand extends AbstractFridaCommand<Void> {

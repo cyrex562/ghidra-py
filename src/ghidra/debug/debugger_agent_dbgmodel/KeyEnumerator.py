@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.dbgmodel.dbgmodel.main;
 
 import agent.dbgmodel.dbgmodel.UnknownEx;
 
-/**
+# /**
  * A wrapper for {@code IKeyEnumerator} and its newer variants.
  */
 public interface KeyEnumerator extends UnknownEx {

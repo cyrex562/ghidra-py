@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.symbol.Reference;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * A simple container object to provide clients with a reference and an address when both are
  * available.  If no reference exists, then only the {@link #getLocationOfUse()} address is
  * available.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An extended version of the PDB C13 inlinee source line record that has extra file IDs
  */
 public class C13ExtendedInlineeSourceLine extends C13InlineeSourceLine {

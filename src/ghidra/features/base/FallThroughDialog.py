@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.model.address.Address;
 import ghidra.util.HelpLocation;
 import resources.Icons;
 
-/**
+# /**
  * Dialog to prompt for overriding a fallthrough address on an instruction.
  */
 class FallThroughDialog extends DialogComponentProvider implements ChangeListener {

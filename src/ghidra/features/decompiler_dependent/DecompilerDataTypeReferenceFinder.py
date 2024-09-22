@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import ghidra.util.datastruct.SetAccumulator;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Implementation of {@link DataTypeReferenceFinder} that uses the Decompiler's output
  * to find data type and composite field usage.
  */

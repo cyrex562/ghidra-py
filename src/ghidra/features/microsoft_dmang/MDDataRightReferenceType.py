@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.datatype.modifier;
 import mdemangler.MDException;
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a "data right reference" data type within a Microsoft mangled symbol.
  * It is one of a number of "extended" data types not originally planned by Microsoft.
  */

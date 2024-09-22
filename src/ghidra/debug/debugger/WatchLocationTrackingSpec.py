@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.trace.model.guest.TracePlatform;
 import ghidra.trace.model.stack.TraceStack;
 import ghidra.trace.util.TraceAddressSpace;
 
-/**
+# /**
  * A tracking specification for the address of a given Sleigh expression
  */
 public class WatchLocationTrackingSpec implements LocationTrackingSpec {

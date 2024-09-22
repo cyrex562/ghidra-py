@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.HelpLocation;
 import ghidra.util.table.GhidraTable;
 
-/**
+# /**
  * A {@link DockingAction} for creating functions from rows in a {@link FunctionStartTableModel}.
  * When performed on a selection, functions are created at all rows in the selection whose 
  * {@link Interpretation} is {@link Interpretation#BLOCK_START}.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.table.*;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Internal panel of the memory search window that manages the display of the search results
  * in a table. This panel also includes most of the search logic as it has direct access to the
  * table for showing the results.

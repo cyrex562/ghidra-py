@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util;
 
 import java.util.List;
 
-/**
+# /**
  * Callback interface for validating a list of options with values.
  */
 public interface OptionValidator {

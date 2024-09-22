@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.trace.model.Trace;
 import ghidra.trace.model.TraceTimeViewport;
 import ghidra.trace.model.thread.TraceThread;
 
-/**
+# /**
  * View of a trace at a particular time, as a program
  */
 public interface TraceProgramView extends Program {

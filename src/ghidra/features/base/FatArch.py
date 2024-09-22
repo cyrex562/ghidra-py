@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.macho.CpuSubTypes;
 import ghidra.app.util.bin.format.macho.CpuTypes;
 
-/**
+# /**
  * Represents a fat_arch structure.
  * 
  * @see <a href="https://opensource.apple.com/source/xnu/xnu-4570.71.2/EXTERNAL_HEADERS/mach-o/fat.h.auto.html">mach-o/fat.h</a> 

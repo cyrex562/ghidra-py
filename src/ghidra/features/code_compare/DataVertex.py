@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A node in the data-flow graph of a function as produced by the Decompiler, represented by EITHER
  * a Varnode or PcodeOp.  A node stores references to immediate incoming nodes (sources) and immediate
  * outgoing nodes (sinks).  The node also stores hashes of n-grams involving this node, where

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.ColorUtils;
 import ghidra.util.SystemUtilities;
 import util.CollectionUtils;
 
-/**
+# /**
  * Class to handle Function Difference highlights for a decompiled function.
  */
 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Note: actual data structure seen in firmware does not contain the "canonical_dex_file_location_" field.
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/lollipop-release/runtime/oat_file.h#261">lollipop-release/runtime/oat_file.h</a>

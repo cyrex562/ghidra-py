@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.LockHold;
 import ghidra.util.Saveable;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  * A base interface for implementations of {@link TraceCodeUnit}
  * 
  * <p>

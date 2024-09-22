@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.util.*;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * Action triggered from a specific token in the decompiler window to change the data-type
  * associated with a variable in the local scope of the function. This can be an input parameter,
  * a stack variable, a variable associated with a register, or a "dynamic" variable. If the

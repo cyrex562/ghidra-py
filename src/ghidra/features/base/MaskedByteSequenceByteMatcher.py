@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.features.base.memsearch.bytesequence.ByteSequence;
 import ghidra.features.base.memsearch.bytesequence.ExtendedByteSequence;
 import ghidra.features.base.memsearch.gui.SearchSettings;
 
-/**
+# /**
  * {@link ByteMatcher} where the user search input has been parsed into a sequence of bytes and
  * masks to be used for searching a byte sequence.
  */

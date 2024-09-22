@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.lang.LanguageDescription;
 import ghidra.program.model.lang.Processor;
 import ghidra.program.util.DefaultLanguageService;
 
-/**
+# /**
  * A dialog that shows the supported platforms (processors, loaders, file systems, etc)
  */
 class InstalledProcessorsProvider extends ReusableDialogComponentProvider {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Objects;
 
 import ghidra.app.util.datatype.microsoft.GUID;
 
-/**
+# /**
  * This class holds fields used to identify a PDB.
  * <P>
  * These are Version, Signature, Age, and GUID. Some identifiers can be null if not found in

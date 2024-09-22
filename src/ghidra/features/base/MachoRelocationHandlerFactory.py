@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.macho.relocation;
 import ghidra.app.util.bin.format.macho.MachHeader;
 import ghidra.util.classfinder.ClassSearcher;
 
-/**
+# /**
  * A class that gets the appropriate Mach-O relocation handler for a specific Mach-O file
  */
 public final class MachoRelocationHandlerFactory {

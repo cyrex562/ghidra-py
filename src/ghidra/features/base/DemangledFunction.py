@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A class to represent a demangled function.
  */
 public class DemangledFunction extends DemangledObject {

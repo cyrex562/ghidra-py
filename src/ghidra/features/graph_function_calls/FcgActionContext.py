@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import docking.DefaultActionContext;
 import functioncalls.graph.FunctionCallGraph;
 import functioncalls.plugin.FcgProvider;
 
-/**
+# /**
  * Context for the {@link FunctionCallGraph}
  */
 public class FcgActionContext extends DefaultActionContext {

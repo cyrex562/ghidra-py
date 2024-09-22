@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.*;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * An action to force the use of a particular field on the access of a union.
  * The user selects particular field name token in the decompiler window and is presented
  * with a list of other possible fields the access can be changed to.

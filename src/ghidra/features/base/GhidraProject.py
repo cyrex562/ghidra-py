@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.TaskMonitorAdapter;
 
-/**
+# /**
  * Helper class for using Ghidra in a "batch" mode. This class provides methods
  * for importing, opening, saving, and analyzing program.
  * <p>

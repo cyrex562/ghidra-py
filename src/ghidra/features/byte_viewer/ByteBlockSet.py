@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.events.ProgramLocationPluginEvent;
 import ghidra.app.events.ProgramSelectionPluginEvent;
 import ghidra.program.model.address.AddressSet;
 
-/**
+# /**
  * Interface to define methods for getting byte blocks and translating events.
  */
 public interface ByteBlockSet {

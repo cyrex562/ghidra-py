@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.Msg;
 import ghidra.util.bean.opteditor.OptionsVetoException;
 
-/**
+# /**
  * <CODE>NavigationHistoryPlugin</CODE> is used in conjunction with other plugins to cause program
  * viewer plugins to change their focus to a certain address. As viewer plugins are directed to one
  * or more addresses it maintains information about where the viewers have been to support ability

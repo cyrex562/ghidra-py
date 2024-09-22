@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.dbgeng.dbgeng;
 import java.util.Iterator;
 import java.util.List;
 
-/**
+# /**
  * A wrapper for {@code IDebugSymbols} and its newer variants.
  */
 public interface DebugSymbols {

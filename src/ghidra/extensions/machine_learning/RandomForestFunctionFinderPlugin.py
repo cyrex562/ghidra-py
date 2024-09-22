@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -55,7 +55,7 @@ import ghidra.util.bean.opteditor.OptionsVetoException;
 	)
 //@formatter:on
 
-/**
+# /**
  * A {@link ProgramPlugin} for training a model on the starts of known functions in a
  * program and then using that model to look for more functions (in the source program or
  * another program selected by the user).

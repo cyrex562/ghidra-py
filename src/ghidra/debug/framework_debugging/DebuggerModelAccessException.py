@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.dbg.error;
 import ghidra.dbg.target.TargetObject;
 import ghidra.dbg.util.PathUtils;
 
-/**
+# /**
  * An exception that may be thrown if an ancestor of an object is
  * {@link TargetAccessibility#INACCESSIBLE} at the time a method is invoked on that object.
  * 

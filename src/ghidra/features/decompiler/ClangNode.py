@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * A collection of source code text elements, with associated attributes, grouped in
  * a tree structure.
  */

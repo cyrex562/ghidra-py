@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.features.bsim.query.protocol.*;
 import ghidra.program.database.symbol.FunctionSymbol;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * A simple container object to hold information that is to be sent to a database server as
  * part of a query to find functions that are similar to those given in the constructor of this
  * class.  For a list of configurable parameters, see the setter methods of this class.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.ByteProvider;
 import ghidra.app.util.bin.format.pe.debug.DebugDirectoryParser;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <pre>
  * typedef struct _IMAGE_SEPARATE_DEBUG_HEADER {
  *     WORD        Signature;

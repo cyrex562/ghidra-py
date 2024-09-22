@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ import ghidra.app.script.GhidraScript;
 import ghidra.framework.options.Options;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * This script is used by the unit test BSimServerTest
  */
 public class InstallMetadataTest extends GhidraScript {

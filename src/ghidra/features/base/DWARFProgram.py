@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,7 +44,7 @@ import ghidra.util.datastruct.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * DWARFProgram encapsulates a {@link Program Ghidra program} with DWARF specific reference data
  * used by {@link DWARFDataTypeImporter} and {@link DWARFFunctionImporter}, along with some
  * helper functions.

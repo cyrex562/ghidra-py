@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.util.InvalidNameException;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * https://android.googlesource.com/platform/system/tools/mkbootimg/+/refs/heads/master/include/bootimg/bootimg.h#199
  */
 public class BootImageHeaderV2 extends BootImageHeaderV1 {

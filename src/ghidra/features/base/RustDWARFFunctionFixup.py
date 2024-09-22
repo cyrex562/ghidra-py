@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.classfinder.ExtensionPointProperties;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Adjust functions in a Rust compile unit to use Rust calling convention, ignore any information
  * about parameter storage locations.
  */

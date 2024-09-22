@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressRange;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A listener for events related to the debugger model, including its connection and objects
  * 
  * @deprecated Will be removed in 11.3. Portions may be refactored into trace object database.

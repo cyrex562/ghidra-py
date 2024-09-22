@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Defines the follow-on behavior of how to handle an exception in the context
  * of the exceptions' C++ type.
  */

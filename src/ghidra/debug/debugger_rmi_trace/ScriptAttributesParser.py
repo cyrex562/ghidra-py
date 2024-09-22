@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.framework.plugintool.AutoConfigState.PathIsDir;
 import ghidra.framework.plugintool.AutoConfigState.PathIsFile;
 import ghidra.util.*;
 
-/**
+# /**
  * A parser for reading attributes from a script header
  */
 public abstract class ScriptAttributesParser {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import com.sun.jna.platform.win32.WinDef.ULONGLONGByReference;
 import agent.dbgmodel.dbgmodel.UnknownEx;
 import agent.dbgmodel.jna.dbgmodel.DbgModelNative.LOCATION;
 
-/**
+# /**
  * A wrapper for {@code IDebugHostMemory1} and its newer variants.
  */
 public interface DebugHostMemory1 extends UnknownEx {

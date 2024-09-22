@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.dbg.memory;
 
 import java.util.concurrent.CompletableFuture;
 
-/**
+# /**
  * The functional interface for reads from a cached memory
  * 
  * @see CachedMemory

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import functioncalls.graph.FcgEdge;
 import functioncalls.graph.FcgVertex;
 import ghidra.graph.viewer.event.mouse.VertexTooltipProvider;
 
-/**
+# /**
  * A class that provides tooltips for a given vertex
  */
 public class FcgTooltipProvider implements VertexTooltipProvider<FcgVertex, FcgEdge> {

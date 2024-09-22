@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.theme.GIcon;
 import ghidra.framework.plugintool.Plugin;
 import ghidra.program.model.data.Union;
 
-/**
+# /**
  * Editor for a Union Data Type.
  */
 public class UnionEditorProvider extends CompositeEditorProvider {

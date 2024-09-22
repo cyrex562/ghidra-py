@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.plugin.core.navigation.NavigationHistoryPlugin;
 import ghidra.framework.plugintool.ServiceInfo;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * The NavigationHistoryService maintains a stack of locations that the user has visited via a
  * navigation plugin. It provides methods querying and manipulating this list.
  */

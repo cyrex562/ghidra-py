@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 
-/** 
+# /** 
  * This class represents various flavors of Managed Local- Or Parameter Stored in Many Register
  *  symbol.
  * <P>

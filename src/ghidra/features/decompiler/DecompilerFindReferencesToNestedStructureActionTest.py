@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.options.OptionsService;
 import ghidra.app.decompiler.DecompileOptions.NamespaceStrategy;
 import ghidra.framework.options.ToolOptions;
 
-/**
+# /**
  * This test is very similar in concept to {@link DecompilerFindReferencesToActionTest}, 
  * except that it uses input test data that has more than one level of dereferencing, such as:
  * <pre>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 import ghidra.util.ColorUtils;
 
-/**
+# /**
  * Default {@link BackgroundColorModel} for the ListingPanel where the color returned
  * for an index is based on that corresponding address having a color set in the
  * program's database. (You can "paint" colors over address ranges).

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.pcode.exec.PcodeExecutorStatePiece;
 import ghidra.pcode.exec.trace.data.PcodeTraceAccess;
 import ghidra.pcode.exec.trace.data.PcodeTraceDataAccess;
 
-/**
+# /**
  * A state piece which knows how to write its values back into a trace
  *
  * @param <A> the type of address offsets

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android12-release/runtime/oat_file.h#596">android12-release/runtime/oat_file.h</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android13-release/runtime/oat_file.h#610">android13-release/runtime/oat_file.h</a>

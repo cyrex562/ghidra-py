@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.jdi.manager;
 
-/**
+# /**
  * Identifies the cause of an event emitted by JDI
  * 
  * This is not a concept native to JDI. Rather, it is a means to distinguish events that result from

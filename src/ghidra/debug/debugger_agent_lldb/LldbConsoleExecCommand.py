@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import agent.lldb.manager.evt.AbstractLldbCompletedCommandEvent;
 import agent.lldb.manager.evt.LldbConsoleOutputEvent;
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * Implementation of {@link LldbManager#console(String)} and similar
  */
 public class LldbConsoleExecCommand extends AbstractLldbCommand<String> {

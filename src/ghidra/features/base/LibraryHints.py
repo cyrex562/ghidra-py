@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import generic.jar.ResourceFile;
 import ghidra.util.Msg;
 import ghidra.util.xml.XmlUtilities;
 
-/**
+# /**
  * <code>LibraryHints</code> provides a means of specifying certain LIBRARY
  * EXPORT attributes which should be included when the associated .exports file
  * is created.

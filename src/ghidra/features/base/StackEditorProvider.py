@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.util.ProgramEvent;
 import ghidra.util.InvalidNameException;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Editor for a Function Stack.
  */
 public class StackEditorProvider extends CompositeEditorProvider implements DomainObjectListener {

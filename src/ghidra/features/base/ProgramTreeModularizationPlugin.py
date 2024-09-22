@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.HelpLocation;
 	servicesRequired = { BlockModelService.class }
 )
 //@formatter:on
-/**
+# /**
  * Provides actions for organizing the program tree based on various algorithms.  Currently, there
  * are two algorithms:
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.*;
 import ghidra.framework.protocol.ghidra.GhidraURL;
 import ghidra.util.*;
 
-/**
+# /**
  * <h1>GhidraGo Client</h1>
  * <p>The first argument is expected to be non-null and a valid {@link GhidraURL}</p>
  * <p>If the {@link GhidraURL} is valid, the URL is processed in an existing Ghidra, or

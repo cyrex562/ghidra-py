@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.closedpatternmining;
 
 import java.util.List;
 
-/**
+# /**
  * Objects of this class represent frequent sequences and contain a sequence and it support.
  */
 public class FrequentSequence {

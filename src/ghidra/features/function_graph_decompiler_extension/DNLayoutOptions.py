@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.functiongraph.graph.layout;
 import ghidra.framework.options.Options;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Options for the {@link DecompilerNestedLayout}
  */
 public class DNLayoutOptions implements FGLayoutOptions {

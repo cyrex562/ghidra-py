@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.strings;
 import java.io.IOException;
 import java.util.*;
 
-/**
+# /**
  * Three (3) adjacent characters, with \0 being reserved for start and end of string magic values.
  * 
  * @param codePoints 3 characters (as int32 code points)

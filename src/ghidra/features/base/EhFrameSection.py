@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -28,7 +28,7 @@ import ghidra.program.model.mem.MemoryBlock;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Parses the call frame information exception handling structures within an '.eh_frame' 
  * memory section.
  */

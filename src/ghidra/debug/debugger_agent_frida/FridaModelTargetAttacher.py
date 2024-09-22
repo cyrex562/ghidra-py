@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.frida.model.iface2.FridaModelTargetObject;
 import ghidra.dbg.target.TargetAttachable;
 import ghidra.dbg.target.TargetAttacher;
 
-/**
+# /**
  * An interface which indicates this object is capable of launching targets.
  * 
  * <p>

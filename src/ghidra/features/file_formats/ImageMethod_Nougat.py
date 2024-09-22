@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.image_method;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/image.h#177">nougat-release/runtime/image.h</a>
  */
 public enum ImageMethod_Nougat {

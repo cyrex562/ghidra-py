@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.Swing;
 import resources.Icons;
 import utility.function.Callback;
 
-/**
+# /**
  * This class defines a widget for a single BSim filter. At a minimum
  * it will consist of a combobox containing the available filters. It may optionally
  * contain a secondary widget for specifying filter values. This secondary widget

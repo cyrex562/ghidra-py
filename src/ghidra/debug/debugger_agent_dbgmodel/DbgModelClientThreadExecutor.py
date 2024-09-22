@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.dbgeng.gadp.impl.AbstractClientThreadExecutor;
 import agent.dbgeng.manager.DbgManager;
 import agent.dbgmodel.dbgmodel.bridge.HostDataModelAccess;
 
-/**
+# /**
  * A single-threaded executor which creates and exclusively accesses the {@code dbgeng.dll} client.
  * 
  * The executor also has a priority mechanism, so that callbacks may register follow-on handlers

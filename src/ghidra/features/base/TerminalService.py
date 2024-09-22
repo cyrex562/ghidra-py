@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.plugin.core.terminal.vt.VtOutput;
 import ghidra.framework.plugintool.Plugin;
 import ghidra.framework.plugintool.ServiceInfo;
 
-/**
+# /**
  * A service that provides for the creation and management of DEC VT100 terminal emulators.
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.file.formats.cart;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
+# /**
  * Generic buffered InputStream processor base class. Subclasses should
  * implement per-chunk processing.
  */

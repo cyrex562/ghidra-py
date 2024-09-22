@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Date;
 
 import ghidra.formats.gfilesystem.FSRL;
 
-/**
+# /**
  * Well known types of file attributes.
  * <p>
  * Uncommon information about a file should be added to the {@link FileAttributes} collection

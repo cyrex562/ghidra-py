@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.features.base.memsearch.bytesource;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Interface to specify a named region within a byte source (Program) that users can select to
  * specify {@link AddressSetView}s that can be searched.
  */

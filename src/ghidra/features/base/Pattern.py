@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import generic.jar.ResourceFile;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
-/**
+# /**
  * Pattern is an association of a DittedBitSequence to match,
  * a set of post rules after a match is found that must be satisfied,
  * and a set of actions to be taken if the pattern matches.

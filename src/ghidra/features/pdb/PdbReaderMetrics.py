@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractMsSymbol;
 import ghidra.app.util.bin.format.pdb2.pdbreader.type.AbstractMsType;
 
-/**
+# /**
  * Metrics captured during the parsing and interpreting of a PDB.  This is a Ghidra class
  *  separate from the PDB API that we have crafted to help us quantify and qualify metatdata
  *  about the PDB.

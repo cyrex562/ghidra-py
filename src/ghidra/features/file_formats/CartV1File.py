@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Parse and manage object for the CaRT version 1 format, including managing the
  * header, footer, and decryptor objects as providing a combined view of the
  * optional header and footer metadata in a similar way to the original CaRT

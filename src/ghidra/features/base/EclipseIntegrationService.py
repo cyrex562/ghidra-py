@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.plugin.core.eclipse.EclipseConnection;
 import ghidra.framework.options.ToolOptions;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Service that provides Eclipse-related functionality.
  */
 public interface EclipseIntegrationService {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.symbol.RefType;
 import ghidra.util.Msg;
 import ghidra.util.xml.XmlUtilities;
 
-/**
+# /**
  * This class represents information about small neighborhoods around the start and returns of a
  * single function
  */

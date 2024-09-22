@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.dbgeng.dbgeng.DebugClient.*;
 import ghidra.comm.util.BitmaskSet;
 import ghidra.comm.util.BitmaskUniverse;
 
-/**
+# /**
  * The interface for receiving event callbacks via {@code IDebugEventCallbacks} or a newer variant.
  * 
  * Note: The wrapper implementation will select the appropriate native interface version.

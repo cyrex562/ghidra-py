@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.HelpLocation;
 import ghidra.util.Swing;
 
-/**
+# /**
  * A dialog that prompts the user to select a script.
  */
 public class ScriptSelectionDialog extends DialogComponentProvider {

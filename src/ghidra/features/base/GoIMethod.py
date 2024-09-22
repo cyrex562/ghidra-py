@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -95,7 +95,7 @@ public class GoIMethod implements StructureMarkup<GoIMethod> {
 		}
 	}
 }
-/*
+# /*
 struct runtime.imethod // Length: 8  Alignment: 4
 { 
   runtime.nameOff  name   

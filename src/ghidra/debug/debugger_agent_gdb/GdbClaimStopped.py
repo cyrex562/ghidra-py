@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import agent.gdb.manager.GdbState;
 import agent.gdb.manager.evt.GdbStoppedEvent;
 import agent.gdb.manager.impl.*;
 
-/**
+# /**
  * Implementation of {@link GdbManager#claimStopped()}
  * 
  * @deprecated I don't see this being used anywhere. Probably defunct.

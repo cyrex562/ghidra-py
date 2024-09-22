@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Extends GValuesMap to add Ghidra specific types such as Address and Program
  */
 public class GhidraValuesMap extends GValuesMap {

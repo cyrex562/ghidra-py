@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.trace.model.Lifespan;
 import ghidra.util.database.DBAnnotatedObject;
 import ghidra.util.database.DBCachedObjectStoreFactory.AbstractDBFieldCodec;
 
-/**
+# /**
  * Various utilities used for implementing the trace database
  *
  * <p>

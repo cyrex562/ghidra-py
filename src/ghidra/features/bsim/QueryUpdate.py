@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.DescriptionManager;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Request to update the metadata fields of various ExecutableRecords and FunctionDescriptions within a BSim database.
  * This allows quick updates of metadata fields like executable names, function names, and other descriptive metadata fields,
  * without affecting the main index. ExecutableRecord descriptions will be replaced based on the md5 of the executable,

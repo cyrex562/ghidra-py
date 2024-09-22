@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.trace.model.thread.TraceThread;
 import ghidra.util.Msg;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * A configuration inject for automatic disassembly at the program counter
  * 
  * <p>

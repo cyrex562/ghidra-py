@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.dbgmodel.dbgmodel.debughost;
 import com.sun.jna.Structure.ByReference;
 import com.sun.jna.WString;
 
-/**
+# /**
  * A wrapper for {@code IDebugHostSymbol2} and its newer variants.
  */
 public interface DebugHostSymbol2 extends DebugHostSymbol1 {

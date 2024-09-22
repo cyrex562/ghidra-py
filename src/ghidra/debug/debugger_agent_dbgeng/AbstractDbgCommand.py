@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import agent.dbgeng.manager.DbgThread;
 import agent.dbgeng.manager.evt.DbgCommandDoneEvent;
 import agent.dbgeng.manager.impl.DbgManagerImpl;
 
-/**
+# /**
  * A base class for interacting with specific Dbg commands
  *
  * @param <T> the type of object "returned" by the command

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import agent.lldb.manager.evt.AbstractLldbCompletedCommandEvent;
 import agent.lldb.manager.evt.LldbProcessCreatedEvent;
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * Implementation of {@link LldbProcess#attachKernel(String)}
  */
 public class LldbAttachKernelCommand extends AbstractLldbCommand<SBThread> {

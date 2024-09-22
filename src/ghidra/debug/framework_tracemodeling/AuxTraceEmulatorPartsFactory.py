@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.emu.PcodeThread;
 import ghidra.pcode.emu.auxiliary.AuxEmulatorPartsFactory;
 import ghidra.pcode.exec.trace.*;
 
-/**
+# /**
  * An auxiliary emulator parts factory capable of integrating with a trace
  *
  * <p>

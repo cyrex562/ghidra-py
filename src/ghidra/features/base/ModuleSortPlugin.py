@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * ModuleSortPlugin.java
  *
  * Created on April 11, 2002, 11:15 AM
@@ -43,7 +43,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Plugin to sort Modules and Fragments within a selected Module.
  * Child Module folders are always name-sorted and placed
  * above child Fragments.  When sorting on address, the minimum

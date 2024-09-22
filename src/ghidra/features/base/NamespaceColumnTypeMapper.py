@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.base.widgets.table.constraint.provider;
 import docking.widgets.table.constraint.ColumnTypeMapper;
 import ghidra.program.model.symbol.Namespace;
 
-/**
+# /**
  * Converts Namespace Column objects to Strings so that column gets String type column
  * filters
  */

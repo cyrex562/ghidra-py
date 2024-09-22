@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.Msg;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskLauncher;
 
-/**
+# /**
  * Class for action to open a recently opened data type archive.
  */
 public class RecentlyOpenedArchiveAction extends DockingAction {

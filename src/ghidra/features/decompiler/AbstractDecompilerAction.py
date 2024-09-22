@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.UndefinedFunction;
 import ghidra.util.data.DataTypeParser.AllowedDataTypes;
 
-/**
+# /**
  * A base class for {@link DecompilePlugin} actions that handles checking whether the
  * decompiler is busy.   Each action is responsible for deciding its enablement via
  * {@link #isEnabledForDecompilerContext(DecompilerActionContext)}.  Each action must implement

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.util.ProgramSelection;
 import ghidra.util.HelpLocation;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  *
  * Plugin to create offset tables based on a selection of data.  A dialog is
  * displayed so that the user can enter a base address and the 

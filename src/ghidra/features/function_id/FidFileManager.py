@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Manages the set of FidFiles for the application. This uses the singleton pattern and
  * all users of Fid databases must use this to get open Fid databases.  This ensures that
  * there is only one updateable Fid database open for any given FidFile.

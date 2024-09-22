@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Class for creating a Ghidra memory block representing the TEB: Thread Environment Block.
  * The class must be instantiated with the Program and the Windows OS version to control
  * details of the TEB layout.  The user must call setAddress to provide the starting address

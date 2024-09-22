@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.datatype.extended;
 import mdemangler.MDMang;
 import mdemangler.datatype.MDDataType;
 
-/**
+# /**
  * This class represents the base class of a number of "extended" data types
  * within a Microsoft mangled symbol.
  */

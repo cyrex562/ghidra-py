@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.bsim.query.elastic;
 
 import java.util.Arrays;
 
-/**
+# /**
  * Lightweight Base64 encoder for writing chars directly to StringBuilders and giving
  * direct access to the encode and decode arrays
  *

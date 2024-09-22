@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.*;
 import mdemangler.object.MDObjectCPP;
 import mdemangler.template.MDTemplateNameAndArguments;
 
-/**
+# /**
  * This class represents the "Basic" part of a qualified name (following wiki page
  *  naming convention for Microsoft Demangler).
  */
@@ -196,5 +196,5 @@ public class MDBasicName extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

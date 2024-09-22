@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -57,7 +57,7 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * The class used kick-off and interact with headless processing.  All headless options have been
  * broken out into their own class: {@link HeadlessOptions}.  This class is intended to be used
  * one of two ways:

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * This class is the version of {@link MsfFreePageMap} for Microsoft v2.00 Free Page Map.
  */
 class MsfFreePageMap200 extends MsfFreePageMap {

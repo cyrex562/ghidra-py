@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.app.util.viewer.util.FieldNavigator;
 import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * NOTE:  ALL FieldMouseHandlerExtension CLASSES MUST END IN "FieldMouseHandler".  If not,
  * the ClassSearcher will not find them.
  * 

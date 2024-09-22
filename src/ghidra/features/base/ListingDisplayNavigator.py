@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ProgramSelection;
 import ghidra.util.UniversalIdGenerator;
 
-/**
+# /**
  * Navigator for the listings contained in a ListingCodeComparisonPanel.
  */
 class ListingDisplayNavigator implements Navigatable {

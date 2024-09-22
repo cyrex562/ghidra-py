@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.lang.Register;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.taint.model.TaintVec;
 
-/**
+# /**
  * An abstract taint state piece
  *
  * <p>

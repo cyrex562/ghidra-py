@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.bean.field.AnnotatedTextFieldElement;
 
-/**
+# /**
  * A handler to process {@link ghidra.util.bean.field.AnnotatedTextFieldElement} clicks.
  */
 public class AnnotatedStringFieldMouseHandler implements FieldMouseHandlerExtension {

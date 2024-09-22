@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.debug.api.progress;
 import ghidra.debug.api.progress.ProgressListener.Disposal;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * The subscriber side of a published {@link TaskMonitor}
  * 
  * <p>

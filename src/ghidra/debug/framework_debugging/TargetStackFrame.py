@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.dbg.DebuggerTargetObjectIface;
 import ghidra.dbg.target.schema.TargetAttributeType;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * One frame (call record) of an execution stack
  * 
  * @deprecated Will be removed in 11.3. Portions may be refactored into trace object database.

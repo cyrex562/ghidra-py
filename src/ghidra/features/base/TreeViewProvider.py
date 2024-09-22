@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.util.*;
 import ghidra.util.Msg;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Provides a view of the program tree.
  */
 class TreeViewProvider implements ViewProviderService {

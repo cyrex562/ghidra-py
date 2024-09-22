@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.util.FunctionUtility;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Action for applying full function signatures and referenced data types from one function to
  * another in the dual decompiler or dual listing view. 
  */

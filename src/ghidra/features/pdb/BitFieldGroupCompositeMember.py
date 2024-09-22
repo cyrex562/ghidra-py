@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import ghidra.program.model.data.BitFieldDataType;
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * <code>BitFieldGroupCompositeMember</code> provides the ability to collect related 
  * {@link DefaultCompositeMember} members within a group during the composite reconstruction
  * process.  

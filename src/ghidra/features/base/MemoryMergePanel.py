@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.merge.MergeConstants;
 import ghidra.app.merge.ProgramMultiUserMergeManager;
 import ghidra.app.merge.util.ConflictCountPanel;
 
-/**
+# /**
  *
  * Panel to resolve conflicts on memory blocks.
  * 

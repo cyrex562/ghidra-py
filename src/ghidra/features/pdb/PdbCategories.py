@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.PdbDebugInfo;
 import ghidra.program.model.data.Category;
 import ghidra.program.model.data.CategoryPath;
 
-/**
+# /**
  * Sets up PDB base {@link CategoryPath} information for the PDB file and provides
  * {@link CategoryPath CategoryPaths} based on {@link SymbolPath SymbolPaths}, name lists, and
  * qualified namespace strings.  Also maintains the state of the active Module {@link CategoryPath}

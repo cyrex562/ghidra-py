@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.analysis.rust.demangler;
 import java.net.IDN;
 import java.util.*;
 
-/**
+# /**
  * A class that will demangle Rust symbols mangled according to the V0 format. This class
  * implements the grammar that will translate a mangled string into a demangled one.
  * 
@@ -52,7 +52,7 @@ public class RustDemanglerV0 {
 	}
 }
 
-/**
+# /**
  * A class that represents a symbol in the demangling process. It keeps track of
  * the current state of the symbol and implements various methods to assist with
  * demangling it.
@@ -229,14 +229,14 @@ class Symbol {
 	}
 }
 
-/**
+# /**
  * A node to be used in symbol parsing
  */
 interface SymbolNode {
 	// Parent class
 }
 
-/**
+# /**
  * A class to represent a nested path node
  */
 class RustPathNested implements SymbolNode {
@@ -254,7 +254,7 @@ class RustPathNested implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * A class to represent a string node
  */
 class RustString implements SymbolNode {
@@ -270,7 +270,7 @@ class RustString implements SymbolNode {
 	}
 }
 
-/** 
+# /** 
  * A class that will represent and parse a backref node
  */
 class RustBackref implements SymbolNode {
@@ -288,7 +288,7 @@ class RustBackref implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * A class to represent and parse a rust symbol path node
  */
 class RustPath implements SymbolNode {
@@ -396,7 +396,7 @@ class RustPath implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * Parses and represents a rust symbol namespace node
  */
 class RustNamespace {
@@ -440,7 +440,7 @@ class RustNamespace {
 	}
 }
 
-/**
+# /**
  * Parses and represents a rust symbol impl path node
  */
 class RustImplPath implements SymbolNode {
@@ -480,7 +480,7 @@ class RustImplPath implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * Parses and represents an rust symbol identifier
  */
 class RustIdentifier implements SymbolNode {
@@ -555,7 +555,7 @@ class RustIdentifier implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * Parses and represents rust generic arguments
  */
 class RustGenericArgs implements SymbolNode {
@@ -599,7 +599,7 @@ class RustGenericArgs implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * Parses and represents a generic argument node in a rust symbol
  */
 class RustGenericArg implements SymbolNode {
@@ -642,7 +642,7 @@ class RustGenericArg implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * Parses a rust lifetime from a mangled symbol
  */
 class RustLifetime implements SymbolNode {
@@ -678,7 +678,7 @@ class RustLifetime implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * Parses and represents a rust symbol type node
  */
 class RustType implements SymbolNode {
@@ -890,7 +890,7 @@ class RustType implements SymbolNode {
 	}
 }
 
-/**
+# /**
  * Parses and represents a a rust symbol const node
  */
 class RustConst implements SymbolNode {

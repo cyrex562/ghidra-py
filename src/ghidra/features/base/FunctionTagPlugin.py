@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.framework.plugintool.util.PluginStatus;
 import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * Plugin for managing function tags. This works with the associated
  * {@link FunctionTagProvider} to allow users to view and
  * edit function tags both globally and for individual functions.

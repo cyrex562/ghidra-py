@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.*;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
-/**
+# /**
  * Panel for display the Entropy color legend.
  */
 public class LegendPanel extends JPanel {

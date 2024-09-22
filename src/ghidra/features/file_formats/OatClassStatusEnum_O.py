@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/oreo-release/runtime/mirror/class.h#128">oreo-release/runtime/mirror/class.h</a>
  */
 public enum OatClassStatusEnum_O implements OatClassStatusEnum {

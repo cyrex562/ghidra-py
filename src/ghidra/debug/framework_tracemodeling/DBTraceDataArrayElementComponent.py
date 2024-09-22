@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.trace.model.ImmutableTraceAddressSnapRange;
 import ghidra.trace.model.TraceAddressSnapRange;
 import ghidra.trace.util.TraceAddressSpace;
 
-/**
+# /**
  * The implementation of an array-element data component in a {@link DBTrace}
  */
 public class DBTraceDataArrayElementComponent extends AbstractDBTraceDataComponent {

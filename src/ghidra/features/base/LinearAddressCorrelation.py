@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.util.ListingAddressCorrelation;
 import ghidra.util.datastruct.Duo;
 import ghidra.util.datastruct.Duo.Side;
 
-/**
+# /**
  * Creates an address correlation with a simplistic correlation where each address correlates based
  * on an offset from the address set's minimum address.
  */

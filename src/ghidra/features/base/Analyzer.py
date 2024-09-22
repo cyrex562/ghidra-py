@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.classfinder.ExtensionPoint;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Interface to perform automatic analysis.
  * 
  * NOTE:  ALL ANALYZER CLASSES MUST END IN "Analyzer".  If not, the ClassSearcher will not find 

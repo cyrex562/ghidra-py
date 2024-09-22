@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import agent.dbgeng.jna.dbgeng.event.IDebugEventCallbacks;
 import agent.dbgeng.jna.dbgeng.io.IDebugInputCallbacks;
 import agent.dbgeng.jna.dbgeng.io.IDebugOutputCallbacks;
 
-/**
+# /**
  * Wrapper class for the IDebugClient interface
  */
 public class WrapIDebugClient extends UnknownWithUtils implements IDebugClient {

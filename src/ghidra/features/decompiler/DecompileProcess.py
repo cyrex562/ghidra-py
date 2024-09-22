@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.exception.NotFoundException;
 import ghidra.util.timer.GTimer;
 import ghidra.util.timer.GTimerMonitor;
 
-/**
+# /**
  *
  *
  * Class for communicating with a single decompiler process.

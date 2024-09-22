@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.layout.VerticalLayout;
 import resources.ResourceManager;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Window to display version information about the current release of the application.
  */
 class InfoPanel extends JPanel {

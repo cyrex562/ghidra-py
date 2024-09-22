@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.*;
 import ghidra.util.filechooser.GhidraFileChooserModel;
 import ghidra.util.filechooser.GhidraFileFilter;
 
-/**
+# /**
  * Dialog to prompt the user for the project to archive and the file to archive it to.
  */
 public class ArchiveDialog extends ReusableDialogComponentProvider {

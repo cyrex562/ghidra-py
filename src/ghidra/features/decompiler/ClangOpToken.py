@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.decompiler;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A token representing a source code "operation". This could be a keyword like
  * "if" or "while" but could also be an operator like '+' or '*'.
  * The token may contain an id for the p-code object representing the operation.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.listing.CodeUnit;
 import ghidra.trace.model.TraceAddressSnapRange;
 import ghidra.util.AbstractPeekableIterator;
 
-/**
+# /**
  * An iterator of overlapping objects return from two given iterators.
  * 
  * <p>

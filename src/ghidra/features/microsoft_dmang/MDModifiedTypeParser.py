@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import mdemangler.*;
 import mdemangler.naming.MDQualification;
 
-/**
+# /**
  * This class represents a modified data type (referent of a modifier data type)
  * within a Microsoft mangled symbol.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.compositeeditor;
 
 import ghidra.program.model.data.CategoryPath;
 
-/**
+# /**
  * Original Composite change listener interface.
  * This has a notification method for notification that the composite data 
  * editor has closed.

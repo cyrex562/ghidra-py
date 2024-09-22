@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * A set of "pre" DittedBitSequences and a set of "post" Patterns are paired to form a larger pattern.
  * To match, a sequence from the "pre" sequence set must first match, then one of the "post" patterns
  * is matched relative to the matching "pre" pattern.  This class is really a storage object for the

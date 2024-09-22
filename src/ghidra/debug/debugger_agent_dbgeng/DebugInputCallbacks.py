@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.dbgeng.dbgeng;
 
-/**
+# /**
  * The interface for receiving input callbacks via {@code IDebugInputCallbacks} or a newer variant.
  * 
  * Note: The wrapper implementation will select the appropriate native interface version.

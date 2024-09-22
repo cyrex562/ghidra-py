@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.Application;
 import ghidra.util.Disposable;
 import ghidra.util.classfinder.*;
 
-/**
+# /**
  * A dialog that shows useful runtime information
  */
 class RuntimeInfoProvider extends ReusableDialogComponentProvider {

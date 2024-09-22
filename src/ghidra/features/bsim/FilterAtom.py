@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * A single element for filtering on specific properties of ExecutableRecords or FunctionDescriptions
  * Each FilterAtom consists of a FilterTemplate describing the property to filter on, and how the filter should apply,
  * and a String -value- that the property should match (or not)

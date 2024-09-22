@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.object;
 import mdemangler.MDException;
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a derivative of an <b><code>MDObject</code></b> which is a C++ object
  *  and an additional <b><code>"CV:"</code></b> prefix, which supposedly means that it came from
  *  a CodeView compiler (older version of compiler?).
@@ -57,5 +57,5 @@ public class MDObjectCodeView extends MDObjectCPP {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

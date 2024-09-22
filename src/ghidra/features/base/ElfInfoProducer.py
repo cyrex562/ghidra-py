@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.classfinder.ExtensionPoint;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Something that adds nice-to-have markup and program info to Elf binaries.
  * <p>
  * Classes that implement this ExtensionPoint must have names that end with "ElfInfoProducer" for

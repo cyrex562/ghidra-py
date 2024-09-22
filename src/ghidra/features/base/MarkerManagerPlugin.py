@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,7 +44,7 @@ import ghidra.util.HelpLocation;
 	eventsConsumed = {}
 )
 //@formatter:on
-/**
+# /**
  * Plugin to manage marker and navigation panels.
  */
 public class MarkerManagerPlugin extends Plugin {

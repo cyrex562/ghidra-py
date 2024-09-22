@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.features.bsim.gui.search.results;
 import ghidra.docking.settings.BooleanSettingsDefinition;
 import ghidra.docking.settings.Settings;
 
-/**
+# /**
  * Settings definition for showing function namespaces in the BSim Results table
  */
 public class ShowNamespaceSettingsDefinition implements BooleanSettingsDefinition {

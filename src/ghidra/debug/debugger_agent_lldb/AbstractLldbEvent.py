@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.lldb.manager.LldbEvent;
 import agent.lldb.manager.LldbReason;
 import agent.lldb.manager.cmd.LldbPendingCommand;
 
-/**
+# /**
  * A base class for lldb events
  *
  * @param <T> the type of information detailing the event

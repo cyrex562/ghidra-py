@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/oreo-release/runtime/type_lookup_table.h#161">oreo-release/runtime/type_lookup_table.h</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/oreo-m2-release/runtime/type_lookup_table.h#161">oreo-m2-release/runtime/type_lookup_table.h</a>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import generic.jar.ResourceFile;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A utility class for managing script directories and ScriptInfo objects.
  */
 public class GhidraScriptInfoManager {

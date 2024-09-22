@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.lldb.manager.breakpoint.*;
 import agent.lldb.manager.impl.LldbManagerImpl;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Implementation of {@link LldbBreakpointInsertions#insertBreakpoint(String)}
  */
 public class LldbInsertBreakpointCommand extends AbstractLldbCommand<LldbBreakpointInfo> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.features.codecompare.graphanalysis.Pinning.Side;
 import ghidra.program.model.pcode.HighFunction;
 import ghidra.program.model.pcode.PcodeBlockBasic;
 
-/**
+# /**
  * A control-flow graph of a function for computing n-grams (CtrlNGram) that can be matched
  * with another function.  It mirrors the control-flow graph in HighFunction, but vertices,
  * CtrlVertex, can have control-flow specific n-grams attached.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 
 import ghidra.util.HashUtilities;
 
-/**
+# /**
  * Helper class from providing all the constants required for parsing a CaRT
  * format (Version 1) file.
  * <p>

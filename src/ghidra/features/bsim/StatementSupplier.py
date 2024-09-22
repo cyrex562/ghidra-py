@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.features.bsim.query.client.tables;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
+# /**
  * {@link StatementSupplier} provides a callback function to generate a {@link Statement}.
  *
  * @param <S> {@link Statement} implementation class

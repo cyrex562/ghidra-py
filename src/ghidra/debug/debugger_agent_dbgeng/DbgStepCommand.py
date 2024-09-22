@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import agent.dbgeng.manager.impl.DbgManagerImpl;
 import agent.dbgeng.manager.impl.DbgThreadImpl;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Implementation of {@link DbgThread#stepInstruction()}
  */
 public class DbgStepCommand extends AbstractDbgCommand<Void> {

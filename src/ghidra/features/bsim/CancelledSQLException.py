@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.bsim.query.client;
 
 import java.sql.SQLException;
 
-/**
+# /**
  * {@link CancelledSQLException} indicates a SQL operation was intentionally cancelled.
  */
 public class CancelledSQLException extends SQLException {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Comparator;
 
 import ghidra.util.table.column.GColumnRenderer;
 
-/**
+# /**
  * An interface that allows users to add columns to the {@link TableChooserDialog}.
  *
  * @param <COLUMN_TYPE> column type

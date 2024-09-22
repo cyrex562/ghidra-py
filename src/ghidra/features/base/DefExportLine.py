@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.opinion;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
-/**
+# /**
  * An object to parse an EXPORTS line from a ".def" file.
  * 
  * @see <a href="https://learn.microsoft.com/en-us/cpp/build/reference/exports?view=msvc-170">EXPORTS</a> 

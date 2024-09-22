@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.formats.gfilesystem.fileinfo;
 
 import java.util.Objects;
 
-/**
+# /**
  * A (type, type_display_string, value) tuple.
  * 
  * @param <T> type of the value

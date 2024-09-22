@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ import pdb.PdbPlugin;
 import pdb.symbolserver.*;
 import resources.Icons;
 
-/**
+# /**
  * A dialog that allows the user to pick or search for a Pdb file for a program.
  */
 public class LoadPdbDialog extends DialogComponentProvider {

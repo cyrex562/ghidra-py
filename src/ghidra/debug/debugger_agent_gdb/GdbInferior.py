@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.concurrent.CompletableFuture;
 import agent.gdb.manager.GdbManager.StepCmd;
 import agent.gdb.manager.impl.GdbMemoryMapping;
 
-/**
+# /**
  * A handle to a GDB inferior
  * 
  * <p>

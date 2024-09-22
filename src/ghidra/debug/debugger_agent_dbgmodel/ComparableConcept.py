@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.dbgmodel.dbgmodel.concept;
 
 import agent.dbgmodel.dbgmodel.main.ModelObject;
 
-/**
+# /**
  * A wrapper for {@code IComparableConcept} and its newer variants.
  */
 public interface ComparableConcept extends Concept {

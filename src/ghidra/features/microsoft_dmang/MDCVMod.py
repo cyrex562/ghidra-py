@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import mdemangler.*;
 import mdemangler.naming.MDQualifiedName;
 
-/**
+# /**
  * This class represents a Const/Volatile modifier (and extra stuff) of a modifier
  * type within a Microsoft mangled symbol.
  */

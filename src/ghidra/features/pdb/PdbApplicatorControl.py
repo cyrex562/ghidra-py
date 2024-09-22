@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pdb.pdbapplicator;
 
-/**
+# /**
  * PDB Applicator control for actions performed.  Used by {@link PdbApplicatorOptions}
  */
 public enum PdbApplicatorControl {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.gdb.manager;
 
 import java.util.*;
 
-/**
+# /**
  * A collection of registers indexed by name and number
  * 
  * Iteration is in order of register number

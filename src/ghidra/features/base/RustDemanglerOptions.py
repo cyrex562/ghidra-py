@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.analysis.rust.demangler;
 
 import ghidra.app.util.demangler.DemanglerOptions;
 
-/**
+# /**
  * Rust demangler options
  */
 public class RustDemanglerOptions extends DemanglerOptions {

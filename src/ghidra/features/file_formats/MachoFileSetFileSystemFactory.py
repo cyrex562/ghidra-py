@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.formats.gfilesystem.factory.GFileSystemProbeByteProvider;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Factory to identify and create instances of a {@link MachoFileSetFileSystem}
  */
 public class MachoFileSetFileSystemFactory implements

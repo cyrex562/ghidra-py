@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.Msg;
 import ghidra.util.Swing;
 import ghidra.util.table.ProgramTableModel;
 
-/**
+# /**
  * Table Model for a Table where each entry represents a MemoryBlock from a Program's Memory.
  */
 class MemoryMapModel extends AbstractSortedTableModel<MemoryBlock> implements ProgramTableModel {

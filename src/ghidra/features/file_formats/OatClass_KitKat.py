@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.file.formats.android.dex.format.ClassDataItem;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/kitkat-release/runtime/oat_file.h#156">kitkat-release/runtime/oat_file.h</a>
  */
 public class OatClass_KitKat extends OatClass {

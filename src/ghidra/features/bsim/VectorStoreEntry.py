@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.bsim.query.file;
 
 import generic.lsh.vector.LSHVector;
 
-/**
+# /**
  * A record containing an {@link LSHVector} and a count of the number of functions in the 
  * database which share the vector
  * @param id vector ID

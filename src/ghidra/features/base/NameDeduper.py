@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf;
 
 import java.util.*;
 
-/**
+# /**
  * Helper for allocating unique string names.
  * <p>
  * "Reserved names" are names that will be used by later calls to the de-duper.

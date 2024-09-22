@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-/**
+# /**
  * This class is a container for the parameters used when collecting function start data to be mined.
  */
 

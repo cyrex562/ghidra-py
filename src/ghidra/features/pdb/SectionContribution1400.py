@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 import java.io.IOException;
 import java.io.Writer;
 
-/**
+# /**
  * This class is the version of {@link SectionContribution} for Microsoft v14.00 PDB.
  */
 public class SectionContribution1400 extends SectionContribution {

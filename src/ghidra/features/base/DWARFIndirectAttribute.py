@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.format.dwarf.DWARFCompilationUnit;
 import ghidra.app.util.bin.format.dwarf.DWARFProgram;
 import ghidra.app.util.bin.format.dwarf.sectionprovider.DWARFSectionNames;
 
-/**
+# /**
  *  DWARF numeric attribute value that is an index into a lookup table
  */
 public class DWARFIndirectAttribute extends DWARFNumericAttribute {

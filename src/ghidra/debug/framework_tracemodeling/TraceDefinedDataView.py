@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.util.CodeUnitInsertionException;
 import ghidra.trace.model.Lifespan;
 import ghidra.trace.model.guest.TracePlatform;
 
-/**
+# /**
  * A view of defined data units
  *
  * <p>

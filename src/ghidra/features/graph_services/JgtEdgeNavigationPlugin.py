@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import org.jungrapht.visualization.selection.MutableSelectedState;
 
 import ghidra.graph.visualization.CenterAnimationJob;
 
-/**
+# /**
  * Mouse plugin to allow for edge navigation
  *
  * @param <V> the vertex type

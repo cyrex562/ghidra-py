@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractParsableItem;
 import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
 
-/**
+# /**
  * An abstract class for a number of specific PDB symbol type internals that share certain
  * information.  Because java does not support multiple inheritance, we chose to implement a
  * design where classes that have the same internal architectures, but which are not of the

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
+# /**
  *
  */
 package ghidra.framework.main.datatree;
@@ -27,7 +27,7 @@ import docking.widgets.tree.GTreeNode;
 import ghidra.framework.plugintool.PluginTool;
 import util.CollectionUtils;
 
-/**
+# /**
  * A handler to facilitate drag-n-drop for a list of Java {@link File} objects which is dropped
  * onto the Project data tree or a running Ghidra Tool (see {@link DataFlavor#javaFileListFlavor}).
  */

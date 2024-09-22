@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.table.column.GColumnRenderer;
 import ghidra.util.table.field.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Table model for memory search results.
  */
 public class MemoryMatchTableModel extends AddressBasedTableModel<MemoryMatch> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.exception.NotFoundException;
 import ghidra.util.exception.RollbackException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Command that runs in the background to move a memory block, as the move may
  * be a time consuming operation.
  */

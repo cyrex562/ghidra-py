@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.pcode.PcodeOp;
 import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An action for bringing up a side-by-side function comparison of callees with matching 
  * tokens.
  */

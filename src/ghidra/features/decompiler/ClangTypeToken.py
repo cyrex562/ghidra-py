@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.decompiler;
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A source code token representing a data-type. This does not include qualifiers on the data-type
  * like '*' (pointer to) or '[]' (array of). There should be no whitespace in the name.
  */

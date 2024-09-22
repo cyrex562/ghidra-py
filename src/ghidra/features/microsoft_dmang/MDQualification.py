@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import mdemangler.*;
 
-/**
+# /**
  * This class represents a namespace qualification.  It is composed of individual namespace
  * components (MDQualifier).
  */
@@ -159,5 +159,5 @@ public class MDQualification extends MDParsableItem implements Iterable<MDQualif
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

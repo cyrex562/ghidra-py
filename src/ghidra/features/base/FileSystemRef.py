@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.util.Msg;
 
 import java.io.Closeable;
 
-/**
+# /**
  * A handle to a {@link GFileSystem} which allows tracking the current users of the filesystem.
  * <p>
  * Instances must be {@link #close() closed} when not needed anymore, and should not be

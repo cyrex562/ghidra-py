@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.AddressSetView;
 import java.awt.Color;
 import java.util.List;
 
-/**
+# /**
  * A service that allows the user to set the background color of the Listing at specific addresses.
  * <p>
  * The colors set here will appear in the listing and other plugins that use Listing components.

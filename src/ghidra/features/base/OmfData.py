@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.omf.*;
 
-/**
+# /**
  * Object representing data loaded directly into the final image.
  */
 public abstract class OmfData extends OmfRecord implements Comparable<OmfData> {

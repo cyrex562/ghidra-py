@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.datastruct.Duo;
 import ghidra.util.datastruct.Duo.Side;
 
-/**
+# /**
  * Keeps two listing panels synchronized, both the view and cursor location
  */
 public class ListingCoordinator {

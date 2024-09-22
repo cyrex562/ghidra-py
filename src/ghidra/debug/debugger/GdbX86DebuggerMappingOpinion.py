@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.debug.api.model.*;
 import ghidra.program.model.lang.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * TODO: Refactor this onto the .ldefs-based gdb opinion.
  */
 public class GdbX86DebuggerMappingOpinion implements DebuggerMappingOpinion {

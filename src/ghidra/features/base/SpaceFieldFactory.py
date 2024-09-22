@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.SpaceFieldLocation;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
   *  Generates empty line Fields.
   */
 public class SpaceFieldFactory extends FieldFactory {

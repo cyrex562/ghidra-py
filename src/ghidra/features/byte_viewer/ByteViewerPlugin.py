@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -50,7 +50,7 @@ import ghidra.util.SystemUtilities;
 	}
 )
 //@formatter:on
-/**
+# /**
  * Plugin to show ByteBlock data in various formats.
  */
 public class ByteViewerPlugin extends AbstractByteViewerPlugin<ProgramByteViewerComponentProvider> {

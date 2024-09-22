@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import ghidra.program.model.symbol.RefType;
 import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Houses view update methods specific to the {@link FunctionGraph} API.
  */
 public class FGViewUpdater extends VisualGraphViewUpdater<FGVertex, FGEdge> {

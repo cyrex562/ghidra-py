@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.app.script.ScriptInfo;
 import ghidra.util.HTMLUtilities;
 import ghidra.util.UserSearchUtils;
 
-/**
+# /**
  * A widget that allows the user to choose an existing script by typing its name or picking it
  * from a list.
  */

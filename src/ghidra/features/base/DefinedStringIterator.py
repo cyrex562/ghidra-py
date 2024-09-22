@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.util.DefinedDataIterator;
 import ghidra.program.util.string.FoundString;
 
-/**
+# /**
  * Class to find and iterate over existing defined strings even if they are
  * in arrays or structures.  It recursively descends into arrays and structures looking
  * for strings.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.mem.MemoryBlock;
 import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Command that runs in the background to delete a memory block, as 
  * the delete may be a time consuming operation.
  */

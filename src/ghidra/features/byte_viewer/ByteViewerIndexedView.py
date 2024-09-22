@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import generic.theme.GColor;
 import generic.theme.Gui;
 import ghidra.app.plugin.core.format.DataFormatModel;
 
-/**
+# /**
  * Main ByteViewer component that is scrolled in a {@link IndexedScrollPane}. Similar to the view
  * component in a {@link JScrollPane}. This component manages two or more {@link FieldPanel} 
  * components. It always contains the "index" field panel which displays the addresses of the

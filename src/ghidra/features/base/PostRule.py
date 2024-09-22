@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.bytesearch;
 
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Inteface for post match rules that are checked after a match is idenfied
  */
 public interface PostRule {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.omf.omf51;
 
 import ghidra.app.util.bin.format.omf.OmfUtils;
 
-/**
+# /**
  * OMF-51 record types
  * 
  * @see <a href="https://turbo51.com/documentation/omf-51-object-module-format">OMF-51 Object Module Format</a> 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.Msg;
 import ghidra.util.bytesearch.*;
 import ghidra.util.filechooser.ExtensionFileFilter;
 
-/**
+# /**
  * This class is an {@link ActionListener} for importing function start patterns from an XML file
  */
 public class ImportPatternFileActionListener implements ActionListener {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.util.HelpLocation;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * Convert a selected constant in the decompiler to a binary representation.
  */
 public class ConvertBinaryAction extends ConvertConstantAction {

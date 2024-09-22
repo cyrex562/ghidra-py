@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An interface to represent a demangled global variable.
  */
 public class DemangledVariable extends DemangledObject {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.program.model.symbol.FlowType;
 import ghidra.program.model.symbol.RefType;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * A layout that delegates work to the Jung layout specified in the constructor.
  */
 public class JgtNamedLayout extends AbstractFGLayout {

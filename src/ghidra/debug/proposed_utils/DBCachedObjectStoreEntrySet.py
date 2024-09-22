@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.apache.commons.collections4.ComparatorUtils;
 import db.util.ErrorHandler;
 import ghidra.util.database.DirectedIterator.Direction;
 
-/**
+# /**
  * This provides the implementation of {@link Map#entrySet()} for
  * {@link DBCachedObjectStore#asMap()}
  * 

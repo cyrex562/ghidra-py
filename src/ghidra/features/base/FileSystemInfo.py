@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.formats.gfilesystem.factory.GFileSystemFactory;
 
 import java.lang.annotation.*;
 
-/**
+# /**
  * Specifies the info needed of a {@link GFileSystem} implementation.
  * <p>
  * <ul>

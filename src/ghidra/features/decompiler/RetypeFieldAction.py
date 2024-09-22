@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.util.HelpLocation;
 import ghidra.util.UndefinedFunction;
 
-/**
+# /**
  * Action triggered from a specific token in the decompiler window to change the data-type of
  * a field within a structure data-type. The field must already exist, except in the case of a
  * completely undefined structure. The data-type of the field is changed according to the user

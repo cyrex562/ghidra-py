@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.util.InvalidNameException;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Base class for OatClass versions
  *
  */

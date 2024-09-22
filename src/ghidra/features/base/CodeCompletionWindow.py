@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import generic.theme.Gui;
 import generic.util.WindowUtilities;
 import ghidra.app.plugin.core.console.CodeCompletion;
 
-/**
+# /**
  * This class encapsulates a code completion popup Window for the ConsolePlugin.
  */
 public class CodeCompletionWindow extends JDialog {
@@ -303,7 +303,7 @@ public class CodeCompletionWindow extends JDialog {
 	}
 }
 
-/**
+# /**
  * Code completion ListModel.
  */
 class CodeCompletionListModel implements ListModel<CodeCompletion> {
@@ -343,7 +343,7 @@ class CodeCompletionListModel implements ListModel<CodeCompletion> {
 	}
 }
 
-/**
+# /**
  * This data type handles selection changes in the CodeCompletionWindow.
  *
  * This contains all the "smarts" to determine whether or not indices can be
@@ -389,7 +389,7 @@ class CodeCompletionListSelectionModel extends DefaultListSelectionModel {
 	}
 }
 
-/**
+# /**
  * Renders CodeCompletions for the CodeCompletionWindow.
  */
 class CodeCompletionListCellRenderer extends GListCellRenderer<CodeCompletion> {

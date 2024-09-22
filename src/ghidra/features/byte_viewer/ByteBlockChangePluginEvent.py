@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.framework.plugintool.PluginEvent;
 import ghidra.framework.plugintool.ToolEventName;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Plugin event for notification of byte block changes that the Byte Viewer
  * produces.
  */

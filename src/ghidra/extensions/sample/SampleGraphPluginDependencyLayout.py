@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.graph.viewer.layout.AbstractVisualGraphLayout;
 import ghidra.graph.viewer.layout.GridLocationMap;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * A custom layout to arrange the plugin vertices of the {@link SampleGraphPlugin}, using
  * the number of dependencies as a guide for arrangement.
  */

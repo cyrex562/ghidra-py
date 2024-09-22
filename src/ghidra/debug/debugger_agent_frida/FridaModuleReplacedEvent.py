@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.frida.manager.evt;
 
 import agent.frida.frida.FridaModuleInfo;
 
-/**
+# /**
  * The event corresponding with SBTarget.eBroadcastBitModulesLoaded
  */
 public class FridaModuleReplacedEvent extends AbstractFridaEvent<FridaModuleInfo> {

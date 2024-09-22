@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.debug.gui.register;
 import docking.widgets.table.DynamicTableColumn;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * A factory for adding a custom column to the Registers table
  * 
  * <p>

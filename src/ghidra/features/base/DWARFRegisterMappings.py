@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.lang.Register;
 import java.util.Collections;
 import java.util.Map;
 
-/**
+# /**
  * Immutable mapping information between DWARF and Ghidra.
  * <p>
  * Use {@link DWARFRegisterMappingsManager} to get an instance for a Program's specific

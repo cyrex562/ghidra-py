@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.decompiler;
 
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A source code token which is not an operation, variable, function name, or type. Like '(' or ','.
  * A SyntaxToken may be or may include spacing.  As a special case, the token can be part of
  * an enclosing pair of tokens, as with '(' and ')' or '{' and '}'. In this case, the token

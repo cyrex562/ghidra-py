@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.exec.trace.data;
 
-/**
+# /**
  * A data-access shim for a trace's memory
  */
 public interface PcodeTraceMemoryAccess extends PcodeTraceDataAccess {

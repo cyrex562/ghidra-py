@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.event.MouseEvent;
 import ghidra.graph.visualization.DefaultGraphDisplay;
 import ghidra.service.graph.AttributedVertex;
 
-/**
+# /**
  * A mouse plugin to focus a vertex when clicked
  *
  * @param <V> the vertex type

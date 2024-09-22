@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.tools.JavaFileObject;
 
 import generic.jar.ResourceFile;
 
-/**
+# /**
  * A {@link JavaFileObject} that works with Ghidra's {@link ResourceFileJavaFileManager}.
  * 
  * <p>This class is used to dynamically compile Ghidra scripts.

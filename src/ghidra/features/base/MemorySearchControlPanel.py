@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import ghidra.util.layout.VerticalLayout;
 import ghidra.util.timer.GTimer;
 import ghidra.util.timer.GTimerMonitor;
 
-/**
+# /**
  * Internal panel of the memory search window that manages the controls for the search feature. This
  * panel can be added or removed via a toolbar action. This panel is showing by default.
  */

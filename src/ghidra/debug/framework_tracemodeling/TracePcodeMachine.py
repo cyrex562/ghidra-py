@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.pcode.emu.PcodeThread;
 import ghidra.pcode.exec.trace.data.*;
 import ghidra.trace.model.guest.TracePlatform;
 
-/**
+# /**
  * A p-code machine which sources its state from a trace and can record back into it
  *
  * @param <T> the type of values manipulated by the machine

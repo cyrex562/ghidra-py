@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.dbg.target.schema.TargetObjectSchema;
 import ghidra.dbg.target.schema.TargetObjectSchema.AttributeSchema;
 import ghidra.trace.model.target.TraceObject;
 
-/**
+# /**
  * A column which displays the object's value for a given attribute
  *
  * @param <T> the type of the attribute

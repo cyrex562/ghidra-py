@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.classfinder.ExtensionPoint;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An interface for specifying how to automatically read target memory.
  */
 public interface AutoReadMemorySpec extends ExtensionPoint {

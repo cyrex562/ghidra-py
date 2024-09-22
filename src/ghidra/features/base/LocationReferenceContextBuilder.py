@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import generic.json.Json;
 import ghidra.app.plugin.core.navigation.locationreferences.LocationReferenceContext.*;
 
-/**
+# /**
  * A builder for {@link LocationReferenceContext} objects.  Use {@link #append(String)} for normal
  * text pieces.  Use {@link #appendMatch(String)} for text that is meant to be rendered specially
  * by the context class.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.bitpatterns.info;
 
-/**
+# /**
  * This is a container class used by {@link ByteSequenceRowObject}.  It stores a {@link String} of
  * bytes and a {@link String} representing their disassembly
  */

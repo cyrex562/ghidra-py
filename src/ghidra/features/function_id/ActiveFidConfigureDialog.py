@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.feature.fid.db.FidFile;
 import ghidra.util.HelpLocation;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * Dialog that allows user to choose which Fid databases are "Active".  A database must be
  * "Active" for it to be used for Fid analysis.
  */

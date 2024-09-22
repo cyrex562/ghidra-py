@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * <code>PdbBitField</code> provides ability to hang onto bitfield as a datatype.
  * This will be transformed to a normal BitFieldDataType when cloned.
  */

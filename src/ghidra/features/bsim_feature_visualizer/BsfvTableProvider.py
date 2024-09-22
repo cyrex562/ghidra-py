@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.HelpLocation;
 import ghidra.util.table.*;
 
-/**
+# /**
  * This class is the {@link ComponentProviderAdapter} for the BSim feature table.
  */
 public class BsfvTableProvider extends ComponentProviderAdapter {

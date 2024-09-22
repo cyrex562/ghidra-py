@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.*;
 
 import ghidra.program.database.mem.FileBytes;
 
-/**
+# /**
  * <code>FileBytesProvider</code> provides a {@link ByteProvider} implementation 
  * for {@link FileBytes} object.
  */

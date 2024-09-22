@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.Font;
 
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * A container class to hold a color and a style value.
  */
 public class ColorAndStyle {

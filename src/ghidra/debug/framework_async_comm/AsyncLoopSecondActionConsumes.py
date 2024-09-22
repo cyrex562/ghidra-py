@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.function.BiConsumer;
 
 import ghidra.async.AsyncUtils;
 
-/**
+# /**
  * The interface for the second or only action of certain loops
  * 
  * @see AsyncUtils#loop(ghidra.async.TypeSpec, AsyncLoopFirstActionProduces,

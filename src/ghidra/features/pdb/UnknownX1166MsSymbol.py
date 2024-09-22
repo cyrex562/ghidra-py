@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbByteReader;
 
-/**
+# /**
  * There is no documentation for this symbol in the current API.  This symbol was not seen,
  *  but 1167 and 1168 were seen with a VS2017 compile.  Guessing there is likely a 1166 symbol.
  */

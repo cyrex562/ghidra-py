@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.plugintool.ServiceInfo;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * <p>
  * Service to manage navigation markers displayed around a scrollable window like the Listing. The
  * navigation bar displays the general location of markers for the entire view. The marker bar

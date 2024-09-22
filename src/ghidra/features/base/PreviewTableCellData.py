@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.util.*;
 import ghidra.util.HTMLUtilities;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A generic data type used by table models in order to signal that the data should render
  * a preview for a given {@link ProgramLocation}, where the preview is what is displayed in 
  * the Listing.

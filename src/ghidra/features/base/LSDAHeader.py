@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.program.model.symbol.Symbol;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Defines the bounds of exception unwinding support, within a function, 
  * and unwind procedures.
  * * lpStartAddr is the program address where support begins. This value is 

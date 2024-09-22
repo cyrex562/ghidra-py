@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.MemoryBlock;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/master/runtime/image.cc">master/runtime/image.cc</a>
  */
 public final class ArtConstants {

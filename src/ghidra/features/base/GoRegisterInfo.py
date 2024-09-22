@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.pcode.Varnode;
 import ghidra.program.model.symbol.SourceType;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Immutable information about registers, alignment sizes, etc needed to allocate storage
  * for parameters during a function call.
  * <p>

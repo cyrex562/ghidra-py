@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import generic.util.image.ImageUtils;
 import ghidra.service.graph.*;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * Handles the rendering of graphs for the {@link DefaultGraphDisplay}
  */
 public class DefaultGraphRenderer implements GraphRenderer {

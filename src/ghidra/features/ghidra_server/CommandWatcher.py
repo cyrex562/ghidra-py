@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 
-/**
+# /**
  * <code>CommandWatcher</code> watches the command queue directory (~admin) for new
  * command files and initiates their processing in the order they were issued.
  * The use of the {@link WatchService} is limited to detection of command file creation

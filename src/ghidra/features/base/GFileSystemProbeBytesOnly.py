@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.formats.gfilesystem.factory;
 
 import ghidra.formats.gfilesystem.FSRL;
 
-/**
+# /**
  * A {@link GFileSystemProbe} interface for filesystems that can be detected using
  * just a few bytes from the beginning of the containing file.
  * <p>

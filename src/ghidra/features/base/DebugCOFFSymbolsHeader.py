@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.pe.NTHeader;
 import ghidra.app.util.bin.format.pe.OffsetValidator;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class to represent the COFF Symbols Header.
  * <br>
  * <pre>

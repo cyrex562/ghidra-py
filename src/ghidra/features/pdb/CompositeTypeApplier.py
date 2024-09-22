@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.CancelledException;
 
-/*
+# /*
  * Non java-doc:
  * Some truths:
  *   For AbstractMsCompositeType: do not count on "count" to be zero when MsProperty is forward
@@ -38,7 +38,7 @@ import ghidra.util.exception.CancelledException;
  *     there was no need for a forward reference and possibly only one definition--this would
  *     require a closer look).
  */
-/**
+# /**
  * Applier for {@link AbstractCompositeMsType} types.
  */
 public class CompositeTypeApplier extends AbstractComplexTypeApplier {

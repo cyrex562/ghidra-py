@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.dbgmodel.dbgmodel.debughost;
 
 import agent.dbgmodel.jna.dbgmodel.DbgModelNative.LOCATION;
 
-/**
+# /**
  * A wrapper for {@code IDebugHostMemory2} and its newer variants.
  */
 public interface DebugHostMemory2 extends DebugHostMemory1 {

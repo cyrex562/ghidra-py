@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.formats.gfilesystem.factory;
 
 import ghidra.formats.gfilesystem.GFileSystem;
 
-/**
+# /**
  * An empty interface that is a common type for the real factory interfaces to derive from.
  * <p> 
  * @param <FSTYPE> {@link GFileSystem} derived type

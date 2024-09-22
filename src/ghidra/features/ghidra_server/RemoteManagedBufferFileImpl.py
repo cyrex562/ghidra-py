@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.server.remote.RepositoryHandleImpl;
 import ghidra.server.stream.BlockStreamServer;
 import ghidra.server.stream.RemoteInputBlockStreamHandle;
 
-/**
+# /**
  * <code>RemoteManagedBufferFileImpl</code> provides a Remote wrapper for a managed 
  * (i.e., version controlled) buffer file enabling it to be passed or returned by 
  * other remote methods.  At the time of construction, the new instance is exported 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import ghidra.framework.model.DomainFolder;
 import ghidra.framework.plugintool.ServiceInfo;
 
-/**
+# /**
  * Service for importing files into Ghidra.
  *
  */

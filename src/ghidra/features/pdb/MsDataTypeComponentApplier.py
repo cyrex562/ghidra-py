@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pdb.pdbapplicator;
 
-/**
+# /**
  * Abstract class representing the applier for a specific PDB_ID type, distinguished as having
  *  components for an actual data type but not representing a data type in and of itself.
  */

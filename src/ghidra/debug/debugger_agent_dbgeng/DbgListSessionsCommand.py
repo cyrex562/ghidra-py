@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import agent.dbgeng.manager.DbgSession;
 import agent.dbgeng.manager.impl.DbgManagerImpl;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Implementation of {@link DbgManager#listSessions()}
  */
 public class DbgListSessionsCommand extends AbstractDbgCommand<Map<DebugSessionId, DbgSession>> {

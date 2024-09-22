@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.Icon;
 import ghidra.app.merge.DataTypeManagerOwner;
 import ghidra.util.exception.DuplicateFileException;
 
-/**
+# /**
  * This is an interface for data type archives.
  */
 public interface Archive extends DataTypeManagerOwner, Comparable<Archive> {

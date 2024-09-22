@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.dnd.DragSrcAdapter;
 import docking.dnd.Draggable;
 import generic.theme.GIcon;
 
-/**
+# /**
  * Drag source adapter on tree to set the custom cursors for the drag under feedback.
  */
 class TreeDragSrcAdapter extends DragSrcAdapter {

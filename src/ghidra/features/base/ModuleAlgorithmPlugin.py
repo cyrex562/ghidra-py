@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.HelpLocation;
 import docking.ActionContext;
 import docking.action.DockingAction;
 import docking.action.MenuData;
-/**
+# /**
  *
  * Applies the "module" algorithm to a Folder or Fragment. This algorithm first
  * applies the Multiple Entry Point Subroutine model, which generates fragments;

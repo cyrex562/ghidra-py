@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.*;
 
-/**
+# /**
  * This class represents Module Information component of a PDB file.  This class is only
  *  suitable for reading; not for writing or modifying a PDB.
  *  <P>

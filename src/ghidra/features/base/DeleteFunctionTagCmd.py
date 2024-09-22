@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.framework.cmd.BackgroundCommand;
 import ghidra.program.model.listing.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Command for deleting a tag from the system
  */
 public class DeleteFunctionTagCmd extends BackgroundCommand<Program> {

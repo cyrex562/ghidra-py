@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import javax.swing.JTable;
 import docking.widgets.table.GTableFilterPanel;
 import docking.widgets.table.RowObjectTableModel;
 
-/**
+# /**
  * This is a "program aware" version of GTableFilterPanel
  * @param <ROW_OBJECT> the row type
  */

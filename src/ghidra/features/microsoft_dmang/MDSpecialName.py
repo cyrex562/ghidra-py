@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import mdemangler.object.MDObjectCPP;
 // _P: `udt returning'
 // _Q: `EH'
 
-/**
+# /**
  * This class represents a special name (following wiki page naming convention for
  * Microsoft Demangler) type of MDBasicName.  Special names tend to be C++ operator
  * names.
@@ -714,5 +714,5 @@ public class MDSpecialName extends MDParsableItem {
 
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

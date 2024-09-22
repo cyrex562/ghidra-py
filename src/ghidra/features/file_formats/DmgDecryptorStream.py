@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.file.formats.ios.generic.iOS_AesCrypto;
 import ghidra.file.formats.ios.generic.iOS_Sha1Crypto;
 import ghidra.util.exception.CryptoException;
 
-/**
+# /**
  * An {@link InputStream} that decrypts a DMG file on the fly.
  * <p>
  * The crypto keys for the DMG file are found by using the name of the container file

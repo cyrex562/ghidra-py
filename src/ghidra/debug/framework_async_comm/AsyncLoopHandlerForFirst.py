@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.BiFunction;
 
 import ghidra.async.*;
 
-/**
+# /**
  * The handler given to the first action of a two-action loop
  *
  * @param <R> the type of result for the whole loop

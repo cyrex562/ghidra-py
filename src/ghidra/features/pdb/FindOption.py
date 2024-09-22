@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package pdb.symbolserver;
 
 import java.util.*;
 
-/**
+# /**
  * Options that control how Pdb files are searched for on a SymbolServer.
  */
 public enum FindOption {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 import ghidra.app.util.datatype.microsoft.GUID;
 
-/**
+# /**
  * This class represents the <B>MsType</B> flavor of EOM Definable String 2 type.
  * <P>
  * Note: we do not necessarily understand each of these data type classes.  Refer to the

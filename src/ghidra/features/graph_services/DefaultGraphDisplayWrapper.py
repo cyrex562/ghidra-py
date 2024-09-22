@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.service.graph.*;
 import ghidra.util.Swing;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A {@link DefaultGraphDisplay} wrapper created to ensure all accesses to the delegate are on the
  * Swing thread.  This API is meant to be used concurrently.  We do not want to force clients to
  * have to understand when to use the Swing thread.  Thus, this class handles that for the clients.

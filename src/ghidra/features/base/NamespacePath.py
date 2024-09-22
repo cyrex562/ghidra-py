@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Represents a hierarchical path of containers that hold names of objects.
  * <p>
  * Each container of names (lets call them a namespace for short) can have a type that

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.exception.AssertException;
 import resources.MultiIcon;
 import resources.icons.EmptyIcon;
 
-/**
+# /**
  *  Generates label Fields.
  */
 public class LabelFieldFactory extends FieldFactory {

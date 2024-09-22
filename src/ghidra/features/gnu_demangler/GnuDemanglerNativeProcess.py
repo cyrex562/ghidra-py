@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.framework.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class that allows for the reuse of native demangler executable processes.  This class will
  * cache the process by name and by any arguments passed to the process when started.  Once
  * successfully started, the process will persist

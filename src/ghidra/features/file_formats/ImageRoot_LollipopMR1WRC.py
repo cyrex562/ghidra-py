@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.image_root;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/lollipop-mr1-wfc-release/runtime/image.h#106">lollipop-mr1-wfc-release/runtime/image.h</a>
  */
 public enum ImageRoot_LollipopMR1WRC {

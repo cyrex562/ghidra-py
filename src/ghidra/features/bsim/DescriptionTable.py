@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.features.bsim.query.client.RowKeySQL;
 import ghidra.features.bsim.query.client.tables.ExeTable.ExecutableRow;
 import ghidra.features.bsim.query.description.*;
 
-/**
+# /**
  * This is the SQL table "desctable", which holds one row for each function ingested into the database.
  * A row (DescriptionRow) consists of basic meta-data about the function: name, address, executable
  */

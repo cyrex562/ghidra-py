@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.InvalidDataTypeException;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Applier for {@link AbstractBitfieldMsType} types.
  */
 public class BitfieldTypeApplier extends MsDataTypeApplier {

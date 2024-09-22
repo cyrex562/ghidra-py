@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import ghidra.util.layout.PairLayout;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Top level component that has a scrolled pane for the panel of components that show the
  * view for each format.
  */

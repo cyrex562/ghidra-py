@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.program.model.data.LEB128;
 
-/**
+# /**
  * Class to hold result of reading a {@link LEB128} value, along with size and position metadata.
  */
 public class LEB128Info {

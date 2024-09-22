@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import org.apache.commons.collections4.map.LazyMap;
 
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * A class to cache known function edges
  */
 public class FunctionEdgeCache {

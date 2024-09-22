@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.strings;
 import docking.widgets.table.constraint.TableFilterContext;
 import ghidra.program.model.data.StringDataInstance;
 
-/**
+# /**
  * Tests if a string value contains any non-ascii characters
  */
 public class IsNotAsciiColumnConstraint extends IsAsciiColumnConstraint {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Interface for a task that is initialized with a program, and a number of workers.
  * Then the task is replicated for that number of workers, and each replicated task
  * has its -decompile- method called some number of times with different functions

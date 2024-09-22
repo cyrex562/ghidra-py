@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.trace.model.time.schedule;
 
-/**
+# /**
  * The result of a rich comparison of two schedules (or parts thereof)
  */
 public enum CompareResult {

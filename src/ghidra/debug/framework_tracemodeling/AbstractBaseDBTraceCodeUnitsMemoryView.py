@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.trace.model.listing.TraceBaseCodeUnitsView;
 import ghidra.trace.model.thread.TraceThread;
 import ghidra.util.LockHold;
 
-/**
+# /**
  * An abstract implementation of {@link TraceBaseCodeUnitsView} for composing views of many address
  * spaces
  *

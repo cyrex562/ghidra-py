@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.context;
 
-/**
+# /**
  * Marker interface to signal a context specifically for actions that work on a range of 
  * program locations.
  */

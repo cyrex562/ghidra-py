@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Container for metadata about executables (ExecutableRecord),
  * functions (FunctionDescription) and their associated signatures (SignatureRecord)
  * Generally holds sets of functions that are either being inserted into

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.base.memsearch.mnemonic;
 
 import java.util.Arrays;
 
-/**
+# /**
  * Stores information about the instruction and mask.
  * 
  */

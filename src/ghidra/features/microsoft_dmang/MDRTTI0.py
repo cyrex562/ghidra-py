@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.typeinfo;
 
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a Microsoft C++ RTTI0 internal C++ structure.
  *  It is not doing any additional work at this time, but this separate
  *  object is being created for future extension.
@@ -29,5 +29,5 @@ public class MDRTTI0 extends AbstractMDMetaClass {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

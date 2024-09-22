@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.widgets.textfield.IntegerTextField;
 import ghidra.util.HelpLocation;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * A provider for the component used to enter the number of total fixed bits and post
  * fixed bits in a pattern file before a set of patterns is exported to XML.
  */

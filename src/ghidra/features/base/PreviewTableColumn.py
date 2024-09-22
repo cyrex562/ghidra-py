@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.table.PreviewDataTableCellRenderer;
 import ghidra.util.table.PreviewTableCellData;
 import ghidra.util.table.column.GColumnRenderer;
 
-/**
+# /**
  * This table column displays a preview of the {@link ProgramLocation} with a row in the table.
  * The actual content displayed will vary, depending upon the location.  Further, the preview is
  * meant to mimic what the user will see displayed in the Listing display window.

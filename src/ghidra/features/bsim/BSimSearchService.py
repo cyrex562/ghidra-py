@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Set;
 import ghidra.features.bsim.query.BSimServerInfo;
 import ghidra.program.database.symbol.FunctionSymbol;
 
-/**
+# /**
  * Interface used by the BSimSearchDialog to initiate BSim Queries
  */
 public interface BSimSearchService {

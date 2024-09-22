@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.DataConverter;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A class to represent the <code>IMAGE_IMPORT_BY_NAME</code>
  * data structure defined in <b><code>winnt.h</code></b>.
  *

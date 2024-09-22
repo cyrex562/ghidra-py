@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.plugin.core.functiongraph.graph.vertex.FGVertex;
 import ghidra.graph.viewer.VisualEdge;
 import ghidra.program.model.symbol.FlowType;
 
-/**
+# /**
  * This version of the {@link VisualEdge} adds a few methods.
  * 
  * <p>The {@link #setDefaultAlpha(double)} method was added here instead of the base interface, as it

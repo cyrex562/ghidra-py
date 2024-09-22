@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.exception.GraphException;
 import ghidra.util.table.GhidraTable;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This action is used to draw BSim feature graphs and to determine which tokens in the decompiler
  * should be highlighted for a given feature.
  */

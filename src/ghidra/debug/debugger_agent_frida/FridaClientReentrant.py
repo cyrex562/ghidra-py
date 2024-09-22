@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.frida.frida;
 
-/**
+# /**
  * An interface containing the subset of {@link FridaClient} methods which are reentrant.
  * 
  * All other methods should be called only by the thread which created the client.

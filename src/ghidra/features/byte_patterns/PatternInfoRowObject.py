@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.bitpatterns.info.ContextRegisterFilter;
 import ghidra.bitpatterns.info.PatternType;
 import ghidra.util.bytesearch.DittedBitSequence;
 
-/**
+# /**
  * Objects in this class are used to display a pattern (selected by the user)
  * in the pattern clipboard
  */

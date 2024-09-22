@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.trace.model.memory.*;
 import ghidra.trace.model.program.TraceProgramView;
 
-/**
+# /**
  * A byte source for searching the memory of a possibly-live target in the debugger.
  * 
  * <p>

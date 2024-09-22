@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.io.IOException;
 import ghidra.program.model.data.*;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * An ELF note that specifies the build-id (sha1/md5/etc hash or manually specified bytes that 
  * can be hex-ified) of the containing program.
  * <p>

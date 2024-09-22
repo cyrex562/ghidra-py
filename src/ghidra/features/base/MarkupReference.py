@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.lang.annotation.Target;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Indicates that the <b>target</b> of the tagged field should be decorated in Ghidra as
  * receiving a data reference from the location of the field.
  * <p>

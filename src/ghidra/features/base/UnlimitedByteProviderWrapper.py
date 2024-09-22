@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.formats.gfilesystem.FSRL;
 
-/**
+# /**
  * A {@link ByteProvider} constrained to a sub-section of an existing {@link ByteProvider}
  * although reads beyond the specified sub-section are permitted but will return zero byte
  * values.  The methods {@link #length()} and {@link #getInputStream(long)} remain

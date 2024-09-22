@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import org.apache.commons.collections4.map.ReferenceMap;
 
-/**
+# /**
  * A best-effort cache of MD5 values of files, where the file is identified by its parent's
  * MD5 combined with the file's path inside its parent's 'namespace'.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.NotEmptyException;
 import ghidra.util.exception.NotFoundException;
 
-/**
+# /**
  * Command to merge a Folder with its Parent folder. Immediate children of
  * the folder are moved to its parent.
  * 

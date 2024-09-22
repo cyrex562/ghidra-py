@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.viewer.proxy;
 import ghidra.app.util.viewer.listingpanel.ListingModel;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Implementing objects of this interface hold an object from a program (e.g.,  CodeUnit, Function,
  * etc.) in such a way as to be robust against changes to the program.   In other words, it protects 
  * against holding on to "stale" objects.  The getObject() method will return the represented object

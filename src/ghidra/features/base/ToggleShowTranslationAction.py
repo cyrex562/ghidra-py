@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.task.TaskLauncher;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Action for toggling whether or not to display translated strings or the original string.
  */
 public class ToggleShowTranslationAction extends AbstractTranslateAction {

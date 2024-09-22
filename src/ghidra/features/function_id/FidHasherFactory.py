@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.feature.fid.hash.FidHasher;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * A factory for caching FID function hashes.  Greatly speeds up processing by memoizing hash
  * values for functions which are used repeatedly in different contexts.
  */

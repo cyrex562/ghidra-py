@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.dwarf;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * DWARF identifier case consts from www.dwarfstd.org/doc/DWARF4.pdf
  */
 public enum DWARFIdentifierCase

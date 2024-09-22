@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Action class for the "redo" action
  */
 public class RedoAction extends AbstractUndoRedoAction {

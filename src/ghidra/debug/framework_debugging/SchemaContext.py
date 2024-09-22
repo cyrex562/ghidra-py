@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Set;
 
 import ghidra.dbg.target.schema.TargetObjectSchema.SchemaName;
 
-/**
+# /**
  * A collection of related schemas
  * 
  * @deprecated This will be moved/refactored into trace database. In general, it will still exist,

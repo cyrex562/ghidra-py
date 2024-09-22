@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.features.bsim.gui.search.results;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * Contains information regarding the result of a BSim 'apply function name' operation. It 
  * indicates the function name being changed, the new name to use, the address, and any 
  * pertinent error/informational text.

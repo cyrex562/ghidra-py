@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.io.InputStream;
 import ghidra.formats.gfilesystem.FSUtilities;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An InputStream wrapper that suppresses any {@link IOException}s thrown by the wrapped stream
  * and starts returning 0 value bytes for all subsequent reads.
  */

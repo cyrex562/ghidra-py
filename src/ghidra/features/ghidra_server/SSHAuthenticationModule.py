@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.framework.remote.security.SSHKeyManager;
 import ghidra.net.*;
 import ghidra.server.UserManager;
 
-/**
+# /**
  * <code>SSHAuthenticationModule</code> provides SHA1-RSA and SHA1-DSA signature-based authentication
  * support using SSH public/private keys where user public keys are made available to the server.
  * Module makes use of a {@link SSHSignatureCallback} object to convey the signature request to a

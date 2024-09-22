@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.address.*;
 import ghidra.program.model.lang.Language;
 import ghidra.util.MathUtilities;
 
-/**
+# /**
  * A state piece which reads bytes from a trace, but caches writes internally.
  * 
  * <p>

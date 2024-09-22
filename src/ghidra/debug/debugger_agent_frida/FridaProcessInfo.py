@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.frida.frida;
 import agent.frida.manager.FridaProcess;
 import agent.frida.manager.FridaState;
 
-/**
+# /**
  * Information about a module (program or library image).
  * 
  * The fields correspond to the parameters taken by {@code LoadModule} of

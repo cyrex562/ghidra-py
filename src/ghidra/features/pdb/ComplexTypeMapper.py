@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.type.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Maps forward references with corresponding definitions for composites and enums.  Map is of
  * RecordNumber to RecordNumber--always of TYPE RecordCategory, as we are not
  * expecting Complex type records numbers to be mapped from ITEM RecordCategory lists. We are

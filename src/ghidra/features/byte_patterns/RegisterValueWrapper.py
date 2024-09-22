@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.math.BigInteger;
 
 import docking.widgets.combobox.GhidraComboBox;
 
-/**
+# /**
  * This class simply wraps {@link BigInteger}.  It's used in the {@link GhidraComboBox} in the 
  * {@link ContextRegisterFilterInputDialog} so that null filters display something other
  * than the empty string

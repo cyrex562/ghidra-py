@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.app.util.bin.format.dwarf.DWARFFunction.CommitMode;
 import ghidra.app.util.bin.format.dwarf.DWARFVariable;
 import ghidra.util.classfinder.ExtensionPointProperties;
 
-/**
+# /**
  * Downgrades the function's signature commit mode to FORMAL-param-info-only if there are
  * problems with param storage info.
  * <p>

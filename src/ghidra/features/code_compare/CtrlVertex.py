@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 import ghidra.program.model.pcode.PcodeBlockBasic;
 
-/**
+# /**
  * A basic block in the control-flow graph of a function as produced by the Decompiler.
  * A node stores references to immediate incoming nodes (sources).  The node also stores hashes of n-grams
  * {@link CtrlNGram} involving this node, where an n-gram is a set of adjacent nodes out to a depth of n.

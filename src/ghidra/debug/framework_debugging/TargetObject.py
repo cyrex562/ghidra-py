@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.dbg.util.PathUtils.TargetObjectKeyComparator;
 import ghidra.dbg.util.ValueUtils;
 import ghidra.lifecycle.Internal;
 
-/**
+# /**
  * A handle to a target object in a debugger
  * 
  * <p>

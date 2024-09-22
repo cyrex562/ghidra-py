@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,7 +54,7 @@ import ghidra.util.Msg;
 import ghidra.util.filechooser.ExtensionFileFilter;
 import resources.Icons;
 
-/**
+# /**
  * Dialog that shows files used for parsing C header files. The profile has a list of source header
  * files to parse, followed by parse options (compiler directives). Ghidra supplies a Windows
  * profile by default in core/parserprofiles. The user can do "save as" on this default profile to

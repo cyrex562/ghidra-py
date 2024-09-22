@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.dbg.jdi.model.iface1;
 import ghidra.dbg.jdi.model.iface2.JdiModelTargetObject;
 import ghidra.dbg.target.TargetAccessConditioned;
 
-/**
+# /**
  * An interface which indicates this object is capable of launching targets.
  * 
  * The targets this launcher creates ought to appear in its successors.

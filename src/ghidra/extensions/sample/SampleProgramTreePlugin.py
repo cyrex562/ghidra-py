@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Sample plugin to show how to create a new program tree and organize it
  * into folders and fragments.
  *

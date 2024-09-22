@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.async.AsyncFence;
 import ghidra.debug.api.target.Target;
 import ghidra.trace.model.breakpoint.TraceBreakpoint;
 
-/**
+# /**
  * A de-duplicated collection of breakpoint action items necessary to implement a logical breakpoint
  * action.
  * 

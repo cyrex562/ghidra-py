@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.features.bsim.query.description.DescriptionManager;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Request that specific executables and functions (as described by ExecutableRecords and FunctionDescriptions)
  * by inserted into a BSim database.
  *

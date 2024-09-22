@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
-/**
+# /**
  * This class represents a higher level than the highest level object that maps to a Microsoft
  *  mangled symbol... this might be temporary until we can take time to study much of the facets
  *  of dotted names in much more detail.  For now, we will put each dot-separated component into
@@ -88,5 +88,5 @@ public class MDDotSeparatedItem extends MDParsableItem {
 
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

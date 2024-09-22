@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.features.bsim.query.description.ExecutableRecord;
 import ghidra.features.bsim.query.protocol.QueryExeInfo;
 import ghidra.features.bsim.query.protocol.ResponseExe;
 
-/**
+# /**
  * An example script using {@link ExecutableComparison} to compare executables within a BSim database.
  * The user provides the URL of the database and the name of an executable within the database that
  * will be compared against every other executable.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 
 import java.io.*;
 
-/**
+# /**
  * Debug header for various, yet-to-be-determined debug structures.  {@link RvaVaDebugHeader}, an
  * extension of this class, is used for PData and XData within {@link DebugData}.
  */

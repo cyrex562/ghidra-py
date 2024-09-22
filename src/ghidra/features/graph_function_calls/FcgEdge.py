@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package functioncalls.graph;
 
 import ghidra.graph.viewer.edge.AbstractVisualEdge;
 
-/**
+# /**
  * A {@link FunctionCallGraph} edge
  */
 public class FcgEdge extends AbstractVisualEdge<FcgVertex> {

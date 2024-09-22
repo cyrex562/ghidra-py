@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.pcode.exec.trace.data.PcodeTraceDataAccess;
 import ghidra.program.model.address.*;
 import ghidra.program.model.lang.Language;
 
-/**
+# /**
  * A state piece which can check for uninitialized reads
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.app.util.viewer.util.AddressIndexMap;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Panel to display markers. Normally placed to the left hand side of the scrolled
  * {@link FieldPanel}.
  */

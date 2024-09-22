@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.lang.annotation.*;
 
 import ghidra.dbg.target.TargetObject;
 
-/**
+# /**
  * Annotation to assign the name of a target object interface to its Java implementation, an
  * interface extending {@link TargetObject}.
  * 

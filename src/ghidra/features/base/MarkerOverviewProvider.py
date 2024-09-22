@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.HelpLocation;
 import ghidra.util.Swing;
 
-/**
+# /**
  * The provider which renders the overview margin, usually placed outside the scrollbar to the right
  * of lisitng {@link FieldPanel}s.
  * 

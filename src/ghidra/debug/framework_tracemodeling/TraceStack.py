@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.trace.model.TraceUniqueObject;
 import ghidra.trace.model.memory.TraceMemoryManager;
 import ghidra.trace.model.thread.TraceThread;
 
-/**
+# /**
  * A trace of the connected debugger's stack unwind
  * 
  * Most of the information stored here is ancillary, since with sufficient analysis of associated

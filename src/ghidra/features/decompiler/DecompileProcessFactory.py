@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.File;
 import ghidra.framework.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Factory that returns a DecompileProcess.
  */
 public class DecompileProcessFactory {

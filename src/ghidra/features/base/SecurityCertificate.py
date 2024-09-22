@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.NumericUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A class to represent the <code>WIN_CERTIFICATE</code>
  * struct as defined in <b><code>winbase.h</code></b>.
  * <p>

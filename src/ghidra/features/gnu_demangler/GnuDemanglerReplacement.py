@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Objects;
 
 import generic.jar.ResourceFile;
 
-/**
+# /**
  * A simple object that is used to find and replace content within Gnu demangled strings.
  * @param find the string to search for; cannot be null
  * @param replace the replacement string; cannot be null

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import ghidra.util.task.TaskLauncher;
 import ghidra.util.task.TaskMonitor;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * A {@link Plugin} that supplies a {@link GFileSystem filesystem} browser component
  * that allows the user to view the contents of filesystems and perform actions on the
  * files inside those filesystems.

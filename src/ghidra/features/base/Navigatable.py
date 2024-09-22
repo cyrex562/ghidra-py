@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ProgramSelection;
 
-/**
+# /**
  * Interface for ComponentProviders to implement if they support basic navigation and selection
  * capabilities. Implementing this interface will provide the provider with navigation history and
  * actions that require navigation or selection. (Search Text, Search Memory, Select bytes, Select

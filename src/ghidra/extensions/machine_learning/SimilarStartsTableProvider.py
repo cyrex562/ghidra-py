@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.table.GhidraTable;
 import ghidra.util.table.GhidraThreadedTablePanel;
 
-/**
+# /**
  * Table provider for a table to display the closest function starts in the training
  * set to a potential function start
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import org.jungrapht.visualization.util.LayoutPaintable;
 
 import ghidra.service.graph.*;
 
-/**
+# /**
  * Manages the selection and transition from one {@link LayoutAlgorithm} to another
  */
 class LayoutTransitionManager {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.examples.graph;
 
 import ghidra.graph.viewer.edge.AbstractVisualEdge;
 
-/**
+# /**
  * An edge for the {@link SampleGraph}
  */
 public class SampleEdge extends AbstractVisualEdge<SampleVertex> {

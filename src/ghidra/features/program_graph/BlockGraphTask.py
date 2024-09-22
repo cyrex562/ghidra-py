@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.exception.GraphException;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <CODE>GraphTask</CODE> is a threaded task creating either a block or call graph.
  */
 public class BlockGraphTask extends Task {

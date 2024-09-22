@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.table.DefaultEnumeratedColumnTableModel.EnumeratedTableCo
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A table model where the columns are enumerated, and the rows are wrappers on the objects being
  * displayed
  * 

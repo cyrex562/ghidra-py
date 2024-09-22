@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.textfield.HintTextField;
 import ghidra.util.Swing;
 import utility.function.Callback;
 
-/**
+# /**
  * A BSimValueEditor for filters with arbitrary string values. Supports comma separated values.
  */
 public class StringBSimValueEditor implements BSimValueEditor {

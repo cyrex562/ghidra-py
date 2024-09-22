@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.formats.gfilesystem.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A {@link GFileSystemFactory} implementation that probes and creates instances of
  * {@link GFileSystemBase} which use the legacy filesystem lifecycle pattern.
  * <p>

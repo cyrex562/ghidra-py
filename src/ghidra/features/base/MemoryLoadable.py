@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.format.elf.ElfLoadHelper;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.mem.MemoryBlock;
 
-/**
+# /**
  * <code>MemoryLoadable</code> serves as both a marker interface which identifies a memory 
  * loadable portion of a binary file (supports use as a {@link Hashtable} key).  In addition,
  * it serves to supply the neccessary input stream to create a {@link MemoryBlock}.

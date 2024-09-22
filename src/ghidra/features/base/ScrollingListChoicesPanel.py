@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import docking.widgets.table.GTable;
 import ghidra.app.merge.util.ConflictUtility;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * <code>ScrollingListChoicesPanel</code> provides a table type of format for resolving
  * Each row that has choices represents the choices for a single conflict. Each conflict
  * choice has a corresponding radio button and scrolling table/list of text.

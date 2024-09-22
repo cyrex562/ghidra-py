@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.model.listing.FunctionTag;
 import ghidra.program.util.FunctionTagFieldLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
   *  Generates a text label that lists the function tags for each {@link Function}. The
   *  label will will appear as part of the FUNCTION group in the field map.
   */

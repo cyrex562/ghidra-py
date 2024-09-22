@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import ghidra.util.database.annot.DBAnnotatedColumn;
 
-/**
+# /**
  * An opaque handle to the column backing an object field
  * 
  * <p>

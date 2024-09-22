@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 import ghidra.app.plugin.core.debug.gui.stack.vars.VariableValueRow.RowKey;
 
-/**
+# /**
  * A table for display in a variable value hover
  */
 public class VariableValueTable {

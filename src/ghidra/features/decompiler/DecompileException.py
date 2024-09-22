@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -14,13 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Jun 3, 2005
  *
  */
 package ghidra.app.decompiler;
 
-/**
+# /**
  * An exception from (or that has passed through) the decompiler process
  * 
  * 

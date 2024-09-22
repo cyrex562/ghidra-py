@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.label.GLabel;
 import ghidra.util.Disposable;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * A {@link JPanel} that displays live memory usage and provides a button to initiate garbage 
  * collection on-demand
  */

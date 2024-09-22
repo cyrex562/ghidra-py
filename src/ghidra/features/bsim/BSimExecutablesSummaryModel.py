@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.table.GhidraProgramTableModel;
 import ghidra.util.table.field.AbstractProgramBasedDynamicTableColumn;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Table model built by aggregating or "summing" the columns of rows from the QueryResultModel.
  * QueryResultModel rows represent functions contained in specific executables.
  * This model groups function rows from the same executable and produces a single

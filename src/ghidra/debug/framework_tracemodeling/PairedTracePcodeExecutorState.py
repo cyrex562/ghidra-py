@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import ghidra.pcode.exec.PairedPcodeExecutorState;
 import ghidra.pcode.exec.trace.data.PcodeTraceDataAccess;
 
-/**
+# /**
  * A trace-bound state composed of another trace-bound state and a piece
  *
  * @param <L> the type of values for the left state

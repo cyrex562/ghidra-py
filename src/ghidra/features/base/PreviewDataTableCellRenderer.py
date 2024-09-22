@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.Msg;
 import ghidra.util.table.column.AbstractGColumnRenderer;
 
-/**
+# /**
  * A custom renderer used to display what is at the {@link ProgramLocation} similarly to
  * how it is displayed in the Listing window..  This class is meant to be
  * used directly with {@link PreviewTableCellData} column data.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Performs a batch import using the data provided in the {@link BatchInfo} object which
  * specifies what files and the import language that should be used.
  * <p>

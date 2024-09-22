@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A base class that represents a variable from the decompiler.  This is either a variable
  * type or a variable with an optional field access.
  */

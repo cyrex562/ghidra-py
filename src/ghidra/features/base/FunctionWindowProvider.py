@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.table.*;
 import ghidra.util.table.actions.MakeProgramSelectionAction;
 
-/**
+# /**
  * Provider that displays all functions in the selected program
  */
 public class FunctionWindowProvider extends ComponentProviderAdapter {

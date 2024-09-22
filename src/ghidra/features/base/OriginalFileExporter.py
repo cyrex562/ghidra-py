@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.task.TaskMonitor;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * An {@link Exporter} that can export {@link FileBytes the originally imported file}.
  * <p>
  * WARNING: Programs written to disk with this exporter may be runnable on your native platform.

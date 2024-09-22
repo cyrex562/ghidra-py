@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import javax.security.auth.spi.LoginModule;
 import ghidra.framework.remote.GhidraPrincipal;
 import ghidra.server.UserManager;
 
-/**
+# /**
  * Adapter between Ghidra {@link AuthenticationModule}s and simple JAAS {@link LoginModule}s.
  * <p>
  * JAAS is typically configured via an external file that specifies the stack of LoginModules

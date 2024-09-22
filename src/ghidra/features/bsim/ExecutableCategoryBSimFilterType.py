@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.features.bsim.query.elastic.*;
 import ghidra.features.bsim.query.facade.SimilarFunctionQueryService;
 import ghidra.features.bsim.query.protocol.FilterAtom;
 
-/**
+# /**
  * A BsimFilterType for filtering functions based on specific category values.
  */
 public class ExecutableCategoryBSimFilterType extends BSimFilterType {

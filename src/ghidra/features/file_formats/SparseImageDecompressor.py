@@ -1,8 +1,8 @@
-/* ###
+# /* ###
  * IP: Apache License 2.0
  * NOTE: Based on the simg2img code from The Android Open Source Project
  */
-/*
+# /*
  * Copyright (C) 2012 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.app.util.bin.ByteProvider;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Decodes / decompresses a sparse image file into a supplied {@link OutputStream}.
  * <p>
  * Code extracted from SparseImageFileSystem, which mentioned the simg2img code

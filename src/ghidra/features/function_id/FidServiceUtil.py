@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import ghidra.program.model.symbol.*;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
+# /**
  * Utility functions for the FID service.
  */
 public class FidServiceUtil {

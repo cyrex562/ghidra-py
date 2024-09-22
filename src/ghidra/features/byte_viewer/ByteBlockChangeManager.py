@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.plugin.core.format.ByteEditInfo;
 import ghidra.framework.options.SaveState;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Helper class to manage changes within byte blocks; determines what offsets have changed so the
  * changes can be rendered properly in the Byte Viewer.
  */

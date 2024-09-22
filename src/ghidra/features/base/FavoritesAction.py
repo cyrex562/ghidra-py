@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import docking.action.MenuData;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Action to apply a favorite data type.
  * Used in a composite data type editor.
  * This action has help associated with it.

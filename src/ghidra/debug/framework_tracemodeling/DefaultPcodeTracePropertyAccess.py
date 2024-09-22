@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.*;
 import ghidra.trace.model.Lifespan;
 import ghidra.trace.model.property.*;
 
-/**
+# /**
  * The default trace-property access shim
  *
  * @param <T> the type of the property's values

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.Color;
 
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Defines methods for working with a set of addresses that correspond to markers.
  * @see MarkerService
  */

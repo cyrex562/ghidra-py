@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.features.codecompare.graphanalysis;
 
-/**
+# /**
  * Sortable n-gram hash on the data-flow graph rooted at specific node {@link DataVertex}.
  * The n-gram depth is the maximum number of (backward) edge traversals from the root
  * node to any other node involved in the hash.  The n-gram weight is the total number of

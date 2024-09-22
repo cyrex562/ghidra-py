@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import generic.jar.ResourceFile;
 import ghidra.util.Msg;
 import resources.ResourceManager;
 
-/**
+# /**
  * This class parses the meta-data about a script.
  */
 public class ScriptInfo {

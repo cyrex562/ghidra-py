@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.util.HelpLocation;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Converts byte values to hex representation.
  */
 public class HexFormatModel implements UniversalDataFormatModel {

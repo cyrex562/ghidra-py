@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.datatransfer.DataFlavor;
 
 import ghidra.framework.main.datatree.*;
 
-/**
+# /**
  * A class used to initialize the handling of files that are dropped onto the tool
  */
 public class GhidraFileOpenDataFlavorHandlerService {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Given certain Key windows API calls, tries to create references at the use of windows Resources.
  * This script uses the decompiler and the simplified Pcode AST to locate constant values passed to key
  * functions like LoadStringW, LoadIconW, etc...

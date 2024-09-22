@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Comparator;
 import ghidra.program.model.listing.Program;
 import ghidra.trace.model.Trace;
 
-/**
+# /**
  * The symbol table for traces.
  * 
  * <p>

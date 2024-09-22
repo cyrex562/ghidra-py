@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import agent.dbgmodel.dbgmodel.UnknownEx;
 import agent.dbgmodel.dbgmodel.datamodel.DataModelManager1;
 import agent.dbgmodel.dbgmodel.debughost.DebugHost;
 
-/**
+# /**
  * A wrapper for {@code IHostDataModelAccess} and its newer variants.
  */
 public interface HostDataModelAccess extends UnknownEx {

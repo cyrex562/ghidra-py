@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import agent.lldb.manager.LldbCause.Causes;
 import agent.lldb.manager.LldbManager;
 import agent.lldb.manager.impl.LldbManagerImpl;
 
-/**
+# /**
  * Implementation of {@link LldbManager#listSessions()}
  */
 public class LldbListSessionsCommand extends AbstractLldbCommand<Map<String, SBTarget>> {

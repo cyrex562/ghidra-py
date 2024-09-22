@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.app.plugin.core.functiongraph.graph.FunctionGraph;
 import ghidra.app.plugin.core.functiongraph.graph.vertex.FGVertex;
 import ghidra.graph.viewer.layout.LayoutProviderExtensionPoint;
 
-/**
+# /**
  * A version of {@link FGLayoutProvider} that is discoverable at runtime.   Layouts that do not wish 
  * to be discoverable should implement {@link FGLayoutProvider} directly, not this interface.
  */

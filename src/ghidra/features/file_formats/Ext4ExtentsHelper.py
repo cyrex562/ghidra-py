@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.app.util.bin.*;
 import ghidra.formats.gfilesystem.FSRL;
 
-/**
+# /**
  * Helper class that handles the extent data stored in an inode's i_block[] array
  */
 public class Ext4ExtentsHelper {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.event.ChangeListener;
 import docking.widgets.button.GRadioButton;
 import ghidra.app.merge.MergeConstants;
 
-/**
+# /**
  * Panel for resolving name conflicts among program trees when private
  * name of tree does not exist in destination program.
  * 

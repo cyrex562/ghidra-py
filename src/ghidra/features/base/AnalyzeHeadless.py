@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.Msg;
 import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Launcher entry point for running headless Ghidra.
  */
 public class AnalyzeHeadless implements GhidraLaunchable {

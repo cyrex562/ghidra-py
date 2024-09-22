@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.TaskLauncher;
 
-/**
+# /**
  * Plugin for generating program graphs. It uses the GraphServiceBroker to consume/display
  * the graphs that it generates. This plugin generates several different types of program graphs.
  * Both the "block flow" and "code flow" actions will generate a graph of basic block flows. The only

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.concurrent.CompletableFuture;
 import SWIG.StateType;
 import agent.lldb.manager.cmd.LldbPendingCommand;
 
-/**
+# /**
  * The interface for lldb command implementations
  *
  * Commands are executed by lldb in serial. In order to distinguish the likely cause of events, the

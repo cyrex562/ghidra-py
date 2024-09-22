@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.features.bsim.query.elastic;
 import java.io.IOException;
 import java.net.*;
 
-/**
+# /**
  * Dummy stream handler, so we can create URL objects with protocol "elastic"
  */
 public class Handler extends URLStreamHandler {

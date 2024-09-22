@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.format;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * This is a ByteBlockInfo that also includes line index information. With the extra line index 
  * information, this object can be ordered and therefore, can implement {@link Comparable} 
  */

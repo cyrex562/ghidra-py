@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.mem.MemoryBufferImpl;
 import ghidra.program.model.pcode.*;
 import ghidra.program.model.symbol.SourceType;
 
-/**
+# /**
  * Class for parsing functions' Pcode representations and finding variadic
  * functions being called
  *

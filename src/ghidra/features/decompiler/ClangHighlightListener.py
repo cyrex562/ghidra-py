@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.decompiler.component;
 
-/**
+# /**
  * Interface for a decompiler highlight change listener.
  */
 public interface ClangHighlightListener {

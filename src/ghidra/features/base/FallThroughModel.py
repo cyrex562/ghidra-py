@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-/**
+# /**
  * This class is really a model for the FallThroughDialog state.  However, it is used as a 
  * convenience for executing the auto-override and clear-fallthrough actions.
  */

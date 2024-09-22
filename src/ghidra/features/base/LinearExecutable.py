@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.app.util.bin.format.lx;
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.util.exception.NotYetImplementedException;
 
-/**
+# /**
  * A class to manage loading Linear Executables (LX).
  * 
  * NOTE: this is not implemented yet.

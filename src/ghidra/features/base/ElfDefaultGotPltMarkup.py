@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>ElfDefaultGotPltMarkup</code> provides the legacy/default implementation of ELF GOT/PLT processing 
  * which handles a limited set of cases.  It is intended that over time this default implementation be 
  * eliminated although it may form the basis of an abstract implementation for specific processor

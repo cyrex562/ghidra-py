@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Task for opening one or more programs.
  */
 public class OpenProgramTask extends Task {

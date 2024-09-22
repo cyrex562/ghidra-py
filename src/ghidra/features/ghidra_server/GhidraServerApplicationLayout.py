@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import utility.application.ApplicationLayout;
 import utility.application.ApplicationUtilities;
 import utility.module.ModuleUtilities;
 
-/**
+# /**
  * The Ghidra server application layout defines the customizable elements of the Ghidra
  * server application's directory structure.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import SWIG.SBEvent;
 import SWIG.SBTarget;
 import ghidra.comm.util.BitmaskSet;
 
-/**
+# /**
  * Information about a session.
  * 
  * The fields correspond to the parameters taken by {@code LoadModule} of

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.util.datastruct.Duo;
 import ghidra.util.datastruct.Duo.Side;
 
-/**
+# /**
  * Extends the basic {@link FunctionComparisonPanel one-to-one comparison panel}
  * to allow a many-to-many relationship. The panel provides a pair of combo
  * boxes above the function display area that allows users to select which 

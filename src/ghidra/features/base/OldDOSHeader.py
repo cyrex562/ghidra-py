@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.DataConverter;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * This class represents a DOS Header
  * <br>
  * <pre>

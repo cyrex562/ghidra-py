@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.gdb.manager.impl.GdbEvent;
 import agent.gdb.manager.impl.GdbPendingCommand;
 import agent.gdb.manager.parsing.GdbParsingUtils.GdbParseError;
 
-/**
+# /**
  * A base class for GDB events
  *
  * @param <T> the type of information detailing the event

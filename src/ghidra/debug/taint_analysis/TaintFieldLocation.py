@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.CodeUnitLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * This is a {@link ProgramLocation} for when the user's cursor is in our "Taint" field
  * 
  * <p>

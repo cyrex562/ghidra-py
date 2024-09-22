@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.machinelearning.functionfinding;
 
-/**
+# /**
  * A member of this class is a row in a {@link FunctionStartAlignmentTableModel}
  */
 public class FunctionStartAlignmentRowObject {

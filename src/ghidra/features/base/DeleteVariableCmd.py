@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.cmd.function;
 import ghidra.framework.cmd.Command;
 import ghidra.program.model.listing.*;
 
-/**
+# /**
  * Command for deleting a variable in a function.
  */
 public class DeleteVariableCmd implements Command<Program> {

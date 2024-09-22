@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.plugintool.Plugin;
 import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.util.Disposable;
 
-/**
+# /**
  * A {@link JPanel} that displays a 2-column table created from a {@link Map}
  *
  * @param <K> The {@link Map} key type

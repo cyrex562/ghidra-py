@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.symbol.Symbol;
 import ghidra.program.model.symbol.SymbolTable;
 import ghidra.util.*;
 
-/**
+# /**
  * Action triggered from a specific token in the decompiler window to rename a global variable.
  * The variable is associated with an address. There may already be a symbol in the database
  * there, in which case the symbol is simply renamed. Otherwise a new symbol is added.

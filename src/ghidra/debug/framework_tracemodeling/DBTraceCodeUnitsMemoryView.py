@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.trace.database.listing;
 import ghidra.program.model.address.*;
 import ghidra.trace.model.listing.*;
 
-/**
+# /**
  * The implementation of {@link TraceCodeManager#codeUnits()}
  */
 public class DBTraceCodeUnitsMemoryView extends

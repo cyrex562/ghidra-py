@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.decompiler;
 
-/**
+# /**
  * A class to hold pieces of a decompiled function.
  */
 public class DecompiledFunction {

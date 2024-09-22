@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.Color;
 import ghidra.app.plugin.core.terminal.vt.VtHandler.AnsiColor;
 import ghidra.app.plugin.core.terminal.vt.VtHandler.Intensity;
 
-/**
+# /**
  * A mechanism for converting an ANSI color specification to an AWT color.
  */
 public interface AnsiColorResolver {

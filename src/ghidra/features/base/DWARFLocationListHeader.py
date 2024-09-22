@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.dwarf.sectionprovider.DWARFSectionNames;
 
-/**
+# /**
  * Header found at the start of a set of DWARFLocationList entries, which are stored sequentially
  * in the {@link DWARFSectionNames#DEBUG_LOCLISTS .debug_loclists} section.
  */

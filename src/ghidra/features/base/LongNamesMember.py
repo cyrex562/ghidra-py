@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A string table that contains the full filenames of COFF archive members who's actual
  * filenames can not fit in the fixed-length name 
  * {@link CoffArchiveMemberHeader#getName() field}.

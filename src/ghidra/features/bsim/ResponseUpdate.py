@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Response to a QueryUpdate request to a BSim database.  Simple counts of successful updates are given.
  * References to any original ExecutableRecord or FunctionDescription objects that could not be updated
  * are also returned. 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +46,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This script will resolve system calls for x86 or x64 Linux binaries.
  * It assumes that in the x64 case, the syscall native instruction is used to make system calls,
  * and in the x86 case, system calls are made via an indirect call to GS:[0x10].

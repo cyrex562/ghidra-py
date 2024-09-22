@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.formats.gfilesystem;
 import java.io.IOException;
 import java.util.List;
 
-/**
+# /**
  * Represents a file in a {@link GFileSystem filesystem}.
  * <p>
  * Only valid while the {@link #getFilesystem() owning filesystem} object is still open and not

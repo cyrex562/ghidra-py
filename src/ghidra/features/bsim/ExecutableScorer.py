@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.lsh.vector.VectorCompare;
 import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.*;
 
-/**
+# /**
  * Class for accumulating a matrix of scores between pairs of executables
  * ExecutableRecords are registered with addExecutable. Scoring is accumulated
  * by repeatedly providing clusters of functions to scoreCluster.

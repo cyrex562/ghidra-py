@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.type;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 
-/*
+# /*
  * TODO this record type is a guess, using only data (no documentation) in its crafting.
  * Thus, it can be cleaned up using trusted, msft-originated documentation if it becomes
  * available and/or using more data analysis and/or non-trusted documentation.
@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  * be incorrectly assigned) that are similar to the 0x1608 and 0x1609 class and struct classes,
  * and yet similar to their older versions of union, enum, and interface as well.
  */
-/**
+# /**
  * This class represents the VS19 <B>MsType</B> flavor of C/C++ Union type. (At this time,
  * PDB_ID is guessed to be an enum similar to {@link EnumMsType}, eliminating
  * the redundant count field, and adding other unknown field parsing.)

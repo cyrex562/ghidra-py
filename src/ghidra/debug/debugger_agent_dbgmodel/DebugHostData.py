@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import com.sun.jna.platform.win32.Variant.VARIANT;
 
 import agent.dbgmodel.jna.dbgmodel.DbgModelNative.LOCATION;
 
-/**
+# /**
  * A wrapper for {@code IDebugHostData} and its newer variants.
  */
 public interface DebugHostData extends DebugHostBase {

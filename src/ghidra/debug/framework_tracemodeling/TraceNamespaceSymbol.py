@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Collection;
 import ghidra.program.model.symbol.Namespace;
 import ghidra.trace.model.Trace;
 
-/**
+# /**
  * A trace namespace symbol.
  */
 public interface TraceNamespaceSymbol extends TraceSymbol, Namespace {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.awt.event.MouseMotionListener;
 import org.jungrapht.visualization.VisualizationViewer;
 import org.jungrapht.visualization.control.AbstractGraphMousePlugin;
 
-/**
+# /**
  * Restores the cursor after other graph mouse operations.
  * 
  * Future: this is copied from the Visual Graph counterpart--consolidate these

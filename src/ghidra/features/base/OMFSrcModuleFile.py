@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.io.IOException;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.Conv;
 
-/**
+# /**
  * A class to represent the Object Module Format (OMF) Source Module File data structure. 
  * <br>
  * This class describes the code segments that receive code from a source file.

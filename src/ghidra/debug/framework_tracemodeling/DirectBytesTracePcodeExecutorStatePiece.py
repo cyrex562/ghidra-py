@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.lang.Register;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.trace.model.memory.TraceMemoryState;
 
-/**
+# /**
  * An executor state piece that operates directly on trace memory and registers
  * 
  * <p>

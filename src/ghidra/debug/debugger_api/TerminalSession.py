@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.app.services.Terminal;
 
-/**
+# /**
  * A terminal with some back-end element attached to it
  */
 public interface TerminalSession extends AutoCloseable {

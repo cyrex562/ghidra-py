@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.decompiler;
 
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A source code statement (as typically terminated by ';' in C)
  * A statement must have a p-code operation associated with it. In the case of conditional
  * flow control operations, there are usually two lines associated with the statement one

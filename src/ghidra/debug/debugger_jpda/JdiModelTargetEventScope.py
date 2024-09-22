@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.dbg.jdi.model.iface1;
 import ghidra.dbg.jdi.model.iface2.JdiModelTargetObject;
 import ghidra.dbg.target.TargetEventScope;
 
-/**
+# /**
  * The object can emit events affecting itself and its successors
  * 
  * @param <T> type for this

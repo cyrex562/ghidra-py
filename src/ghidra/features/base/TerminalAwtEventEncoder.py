@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.nio.charset.*;
 import ghidra.app.plugin.core.terminal.vt.VtHandler.KeyMode;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An encoder which can translate AWT/Swing events into ANSI input codes.
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Map;
 import mdemangler.naming.MDFragmentName;
 import mdemangler.object.MDMangObjectParser;
 
-/**
+# /**
  * A new built-from-scratch class for demangling debug symbols created using
  * Microsoft Visual Studio.
  */
@@ -222,5 +222,5 @@ public class MDMangGenericize extends MDMang {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

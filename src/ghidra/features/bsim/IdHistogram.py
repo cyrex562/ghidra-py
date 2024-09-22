@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import generic.lsh.vector.LSHVector;
 import ghidra.features.bsim.query.description.*;
 
-/**
+# /**
  * Lightweight object container of an LSHVector and its count within a collection of functions (database/executable)
  * TODO: This should likely be merged with SignatureRecord
  */

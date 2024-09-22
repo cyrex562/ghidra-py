@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.analysis;
 
 import ghidra.app.services.Analyzer;
 
-/**
+# /**
  * Row objects for the analyzer enablement table
  */
 public class AnalyzerEnablementState {

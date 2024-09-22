@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.emu.taint.TaintPartsFactory;
 import ghidra.program.model.lang.Language;
 import ghidra.taint.model.TaintVec;
 
-/**
+# /**
  * A stand-alone emulator with taint analysis
  */
 public class TaintPcodeEmulator extends AuxPcodeEmulator<TaintVec> {

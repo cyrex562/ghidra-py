@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.plugin.core.functiongraph.graph.vertex.FGVertex;
 import ghidra.app.plugin.core.functiongraph.mvc.FGController;
 import ghidra.graph.job.AbstractGraphTransitionJob;
 
-/**
+# /**
  * A class to handle mapping from Function Graph needs to the more generic Graph Job API.
  */
 public abstract class AbstractFunctionGraphTransitionJob

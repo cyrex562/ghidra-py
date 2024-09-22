@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.format;
 
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Interface that defines a method for setting a program.
  */
 public interface ProgramDataFormatModel extends DataFormatModel {

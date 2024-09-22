@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * NOTE: Dummy placeholder for lucene interface
  *

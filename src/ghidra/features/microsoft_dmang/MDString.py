@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler;
 
 import java.nio.charset.Charset;
 
-/**
+# /**
  * This class represents "string" within a Microsoft mangled symbol.
  */
 public class MDString extends MDParsableItem {
@@ -310,5 +310,5 @@ public class MDString extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.app.util.bin.format.golang.structmapping.*;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * A structure that golang generates that maps between a function's entry point and the
  * location of the function's GoFuncData structure.
  */

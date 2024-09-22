@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -55,7 +55,7 @@ import ghidra.util.Msg;
 )
 //@formatter:on
 
-/**
+# /**
  * A plugin for visualizing BSim features as graphs and highlights in the decompiler.
  */
 public class BSimFeatureVisualizerPlugin extends ProgramPlugin

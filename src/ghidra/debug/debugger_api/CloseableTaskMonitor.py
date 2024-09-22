@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.debug.api.progress;
 
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A task monitor that can be used in a try-with-resources block.
  */
 public interface CloseableTaskMonitor extends TaskMonitor, AutoCloseable {

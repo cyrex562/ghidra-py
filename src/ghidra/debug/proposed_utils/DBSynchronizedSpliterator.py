@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.function.Consumer;
 
 import ghidra.util.LockHold;
 
-/**
+# /**
  * Wraps an unsynchronized spliterator in one that synchronizes on a given {@link Lock}
  * 
  * @param <T> the type of elements

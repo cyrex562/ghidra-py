@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.program.model.symbol.Namespace;
 
-/**
+# /**
  * Represents a plain namespace node that is not a type or method
  */
 public class DemangledNamespaceNode implements Demangled {

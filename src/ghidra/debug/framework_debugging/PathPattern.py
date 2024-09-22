@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.dbg.util;
 
 import java.util.*;
 
-/**
+# /**
  * @deprecated This will be moved/refactored into trace database. In general, it will still exist,
  *             but things depending on it are now back on shifting sand.
  */

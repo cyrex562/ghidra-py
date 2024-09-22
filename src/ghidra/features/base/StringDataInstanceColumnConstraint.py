@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.strings;
 import docking.widgets.table.constraint.ColumnConstraint;
 import ghidra.program.model.data.StringDataInstance;
 
-/**
+# /**
  * Root class for {@link StringDataInstance} constraints
  */
 public abstract class StringDataInstanceColumnConstraint

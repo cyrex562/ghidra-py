@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.listing.*;
 
-/**
+# /**
  * Calculates the function extent by the function body; i.e. what's saved
  * in the database as the body, which could be totally wrong (but then
  * again, so could we, if we try to determine it ourselves).

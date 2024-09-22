@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.function.Predicate;
 
 import ghidra.program.model.listing.*;
 
-/**
+# /**
  * Search filter that can test a search result and determine if that result starts at or inside
  * a code unit that matches one of the selected types.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ProgramSelection;
 
-/**
+# /**
  * Service provided by a plugin that shows the listing from a Program, i.e., a
  * Code Viewer. The service allows other plugins to add components and 
  * actions local to the Code Viewer.

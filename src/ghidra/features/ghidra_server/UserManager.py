@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.framework.store.local.LocalFileSystem;
 import ghidra.util.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <code>UserManager</code> manages the set of users associated with a running GhidraServer.
  * Support is also provided for managing and authenticating local user passwords when 
  * needed.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -186,7 +186,7 @@ public final class ObjectiveC1_TypeEncodings {
 
 	public void processInstanceVariableSignature(Program program, Address instanceVariableAddress,
 			String mangledType, int instanceVariableSize) {
-/* TODO
+# /* TODO
  * check to make sure there is room... and does not bump into another item
  * check to see if consumes label
 

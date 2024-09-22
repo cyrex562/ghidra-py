@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Options used while using a {@link DefaultPdbApplicator} to apply a PDB ({@link AbstractPdb}) to a
  * Ghidra program.  These can be optional values used during our development of this PdbApplicator,
  * and thus might not be found in the finished product.

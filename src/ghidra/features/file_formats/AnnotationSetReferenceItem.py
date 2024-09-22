@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.exception.DuplicateNameException;
 
 import java.io.IOException;
 
-/**
+# /**
  * 
  * annotation_set_ref_item format
  * 

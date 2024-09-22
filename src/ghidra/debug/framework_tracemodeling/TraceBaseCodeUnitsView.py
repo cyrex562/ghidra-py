@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.trace.util.TraceRegisterUtils;
 import ghidra.util.IntersectionAddressSetView;
 import ghidra.util.UnionAddressSetView;
 
-/**
+# /**
  * A view of code units stored in a trace, possibly restricted to a particular subset by type,
  * address space, or thread and frame.
  * 

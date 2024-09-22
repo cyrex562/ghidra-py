@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,10 +33,10 @@ import ghidra.program.util.OperandFieldLocation;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * An action in the symbol tree for editing an external location or external function.
  */
-/**
+# /**
  * A global listing action which facilitates editing an external location associated
  * with an external reference on an operand field location.
  */

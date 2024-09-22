@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.plugin.core.codebrowser.CodeBrowserPlugin;
 import ghidra.app.util.viewer.format.FormatManager;
 import ghidra.framework.plugintool.ServiceInfo;
 
-/**
+# /**
  * Service provided by a plugin that gives access to a manager for the field formats used by a 
  * listing.
  */

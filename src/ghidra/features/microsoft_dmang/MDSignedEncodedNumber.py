@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * This class represents a signed encoded number (following wiki page naming convention for
  * Microsoft Demangler) within a Microsoft mangled symbol.
  */
@@ -74,5 +74,5 @@ public class MDSignedEncodedNumber extends MDEncodedNumber {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

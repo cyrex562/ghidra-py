@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.*;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Instances of this class support both reading and writing to a
  * random access file. A random access file behaves like a large
  * array of bytes stored in the file system. There is a kind of cursor,

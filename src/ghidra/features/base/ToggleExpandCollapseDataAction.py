@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.HelpLocation;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Action for toggling the expanded/collapsed state of an single expandable data element.  This
  * action works for both top level structures and structures inside other structures.  Also,
  * if invoked on any data element inside a structure, it will collapse the immediate parent

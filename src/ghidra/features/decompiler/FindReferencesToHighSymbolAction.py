@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.symbol.Symbol;
 import ghidra.program.util.LabelFieldLocation;
 import ghidra.util.*;
 
-/**
+# /**
  * An action to show all references to the {@link HighSymbol} under the cursor in the Decompiler.
  * A HighSymbol is a symbol recovered by the decompiler during decompilation and is generally 
  * distinct from a {@link Symbol} stored in the Ghidra database (for more details see the

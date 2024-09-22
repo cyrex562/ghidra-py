@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.model.util.CodeUnitInsertionException;
 import ghidra.util.Msg;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * An ELF note that contains a list of enumerated "properties".
  * <p>
  * Currently known property types are stack_size and no_copy_on_protected (flag).

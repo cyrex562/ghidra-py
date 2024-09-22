@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.app.util;
 import ghidra.program.model.address.AddressSet;
 import ghidra.program.model.address.AddressSetView;
 
-/**
+# /**
  * Data that is the transferable in SelectionTransferable; it contains an address set and the
  * path of the program.
  * 

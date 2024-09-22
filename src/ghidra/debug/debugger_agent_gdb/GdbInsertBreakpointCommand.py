@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import agent.gdb.manager.breakpoint.GdbBreakpointType;
 import agent.gdb.manager.evt.*;
 import agent.gdb.manager.impl.*;
 
-/**
+# /**
  * Implementation of {@link GdbInferior#insertBreakpoint(String)}
  */
 public class GdbInsertBreakpointCommand extends AbstractGdbCommandWithThreadId<GdbBreakpointInfo> {

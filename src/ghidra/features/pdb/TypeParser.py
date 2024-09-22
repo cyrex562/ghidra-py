@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 import ghidra.app.util.bin.format.pdb2.pdbreader.type.*;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Parser for detecting the parsing the appropriate Data\Item structures ({@link AbstractMsType})
  *  in the PDB.
  */

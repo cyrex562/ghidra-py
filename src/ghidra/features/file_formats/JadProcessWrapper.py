@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.List;
 import ghidra.framework.Application;
 import ghidra.framework.Platform;
 
-/**
+# /**
  * Wrapper class for JAD, a JAva Decompiler.
  */
 public class JadProcessWrapper {

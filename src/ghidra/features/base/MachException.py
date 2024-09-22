@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.bin.format.macho;
 
-/**
+# /**
  * An exception class to handle encountering
  * invalid Mach-O Headers.
  */

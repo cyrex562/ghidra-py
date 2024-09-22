@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.MDMang;
 import mdemangler.datatype.MDDataType;
 import mdemangler.naming.MDQualifiedName;
 
-/**
+# /**
  * This class represents the base class of a number of "complex" data types
  * within a Microsoft mangled symbol.  The term "complex" has nothing to do
  * with complex numbers.

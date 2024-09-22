@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import org.jungrapht.visualization.VisualizationViewer;
 
 import ghidra.service.graph.*;
 
-/**
+# /**
  * Interface for GraphRenderer used by the {@link DefaultGraphDisplay}. Developers can add new
  * implementations to change the graph rendering
  */

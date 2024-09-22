@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * A hover service to show tool tip text for hovering over a truncated field, containing a "...",
  * in the listing.
  * The tooltip shows the entire text for that field.

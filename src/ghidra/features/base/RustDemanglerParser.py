@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.SymbolPathParser;
 import ghidra.app.util.demangler.*;
 import ghidra.program.model.symbol.SourceType;
 
-/** Parses a demangled rust string */
+# /** Parses a demangled rust string */
 public class RustDemanglerParser {
 
 	private static final char NULL_CHAR = '\u0000';

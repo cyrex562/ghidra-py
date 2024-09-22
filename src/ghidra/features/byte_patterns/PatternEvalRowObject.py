@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.bitpatterns.info;
 
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Objects in this class represent one row in the Pattern Evaluation table.
  */
 public class PatternEvalRowObject {

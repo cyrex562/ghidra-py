@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import java.util.function.Predicate;
 import ghidra.util.Msg;
 import ghidra.util.TriConsumer;
 
-/**
+# /**
  * An observable reference useful for asynchronous computations
  * 
  * <p>

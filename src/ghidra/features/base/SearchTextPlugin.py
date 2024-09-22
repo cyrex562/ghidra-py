@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -65,7 +65,7 @@ import ghidra.util.bean.opteditor.OptionsVetoException;
 import ghidra.util.table.GhidraProgramTableModel;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Plugin to search text as it is displayed in the fields of the Code Browser.
  */
 //@formatter:off

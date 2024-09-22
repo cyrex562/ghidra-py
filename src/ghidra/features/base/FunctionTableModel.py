@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.table.AddressBasedTableModel;
 import ghidra.util.table.field.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * The data model that backs the {@link AllFunctionsPanel}. This displays a list
  * of functions that have function tags matching a provided set. Note that
  * a function will be displayed as long as it has AT LEAST ONE of the tags

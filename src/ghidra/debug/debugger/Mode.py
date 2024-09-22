@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.service.emulation;
 
-/**
+# /**
  * A write flag for target-associated emulator states
  */
 public enum Mode {

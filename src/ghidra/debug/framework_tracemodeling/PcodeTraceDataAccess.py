@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.*;
 import ghidra.program.model.lang.Language;
 import ghidra.trace.model.memory.TraceMemoryState;
 
-/**
+# /**
  * A data-access shim for a trace
  *
  * @see PcodeTraceAccess

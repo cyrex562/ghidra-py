@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.formats.gfilesystem.FSUtilities;
 import ghidra.util.Msg;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * A file-based lock used to protect modifications to OSGi shared resources from other
  * instances of Ghidra running in parallel 
  */

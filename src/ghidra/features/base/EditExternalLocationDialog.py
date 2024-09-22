@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.symbol.ExternalLocation;
 import ghidra.program.model.symbol.Symbol;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Dialog for creating or editing an external location or external function.
  */
 public class EditExternalLocationDialog extends DialogComponentProvider {

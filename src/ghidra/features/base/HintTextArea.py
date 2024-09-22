@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.JTextArea;
 import generic.theme.GThemeDefaults.Colors;
 import generic.theme.GThemeDefaults.Colors.Messages;
 
-/**
+# /**
  * Simple text area that shows a text hint when the field is empty.
  *
  * Hint text will be shown in light grey, italicized, and in angle brackets.  Normal text will

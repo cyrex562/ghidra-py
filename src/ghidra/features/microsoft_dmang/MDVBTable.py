@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.typeinfo;
 
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a C++ Virtual Base Table.
  * This class is not the only class to extend MDVxTable.  Neither class does
  * any additional work at this time, but the represent different constructs
@@ -31,5 +31,5 @@ public class MDVBTable extends MDVxTable {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

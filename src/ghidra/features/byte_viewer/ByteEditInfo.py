@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.program.model.address.Address;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Info about a byte block edit.
  * 
  * 

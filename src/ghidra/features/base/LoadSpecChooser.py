@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.importer;
 
 import ghidra.app.util.opinion.*;
 
-/**
+# /**
  * Chooses a {@link LoadSpec} for a {@link Loader} to use based on some criteria
  */
 @FunctionalInterface

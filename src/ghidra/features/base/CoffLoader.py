@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -232,7 +232,7 @@ public class CoffLoader extends AbstractLibrarySupportLoader {
 			if (symbol.isSection()) {
 				continue;
 			}
-/*
+# /*
 			if (symbol.getStorageClass() != CoffSymbolStorageClass.C_STAT &&
 				symbol.getStorageClass() != CoffSymbolStorageClass.C_EXT &&
 				symbol.getStorageClass() != CoffSymbolStorageClass.C_LABEL) {

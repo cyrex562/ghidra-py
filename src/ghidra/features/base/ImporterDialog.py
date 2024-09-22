@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ import ghidra.util.layout.PairLayout;
 import ghidra.util.layout.VerticalLayout;
 import ghidra.util.task.TaskBuilder;
 
-/**
+# /**
  * Dialog for importing a file into Ghidra as a program.
  */
 public class ImporterDialog extends DialogComponentProvider {

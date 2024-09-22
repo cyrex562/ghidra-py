@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf.expression;
 
 import java.util.Arrays;
 
-/**
+# /**
  * An immutable representation of a single {@link DWARFExpression} instruction and its operands.
  * <p>
  * A DWARF expression operation can take 0, 1, or 2 operands.

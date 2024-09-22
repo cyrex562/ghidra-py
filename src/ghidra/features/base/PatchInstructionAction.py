@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -48,7 +48,7 @@ import ghidra.util.Msg;
 import ghidra.util.task.CachingSwingWorker;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A context menu action to assemble an instruction at the current address
  */
 public class PatchInstructionAction extends AbstractPatchAction {

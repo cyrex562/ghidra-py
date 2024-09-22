@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import org.apache.commons.lang3.StringUtils;
 import docking.widgets.textfield.IntegerTextField;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Extends {@link IntegerTextField} to allow use as a range filter in the {@link ScalarSearchPlugin}. 
  * <p>
  * Specifically this provides the following:

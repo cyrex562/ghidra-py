@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.dbg.target.TargetBreakpointLocationContainer;
 import ghidra.dbg.target.schema.TargetAttributeType;
 import ghidra.dbg.target.schema.TargetObjectSchemaInfo;
 
-/**
+# /**
  * This is a container of links only, as a way to encode "affects" within the model
  */
 @TargetObjectSchemaInfo(

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import generic.theme.Gui;
 import ghidra.framework.options.CustomOptionsEditor;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * <code>StoredAnalyzerTimesPropertyEditor</code> implements a custom option
  * editor panel for {@link StoredAnalyzerTimes}.  Ability to edit values
  * is disabled with panel intended for display purpose only.

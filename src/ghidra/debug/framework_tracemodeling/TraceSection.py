@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.trace.model.Trace;
 import ghidra.trace.model.TraceUniqueObject;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A section of a module in a trace
  */
 public interface TraceSection extends TraceUniqueObject {

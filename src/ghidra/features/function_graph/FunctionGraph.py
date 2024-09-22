@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.symbol.RefType;
 import ghidra.program.util.ProgramSelection;
 
-/**
+# /**
  * The Function Graph is a composite object that contains a Graph (for holding vertices and
  * edges), a layout (for arranging the vertices and edges visually), settings (for things like
  * coloring and grouping of nodes), and edge information (for things like finding paths between

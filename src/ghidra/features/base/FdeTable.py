@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.symbol.RefType;
 import ghidra.program.model.symbol.SourceType;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class that builds the Frame Description Entry (FDE) Table for a Common Information Entry (CIE).
  * <p>
  * Call Frame Instructions (taken from gcc-3.2.3-20030829/gcc/dwarf2.h

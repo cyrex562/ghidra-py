@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.dbg.util.PathUtils;
 import ghidra.program.model.address.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A debugger model, often a connection to an external debugger
  * 
  * <p>

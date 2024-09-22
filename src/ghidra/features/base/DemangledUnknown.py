@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.demangler;
 
 import ghidra.program.model.symbol.SymbolUtilities;
 
-/**
+# /**
  * An interface to represent an unknown entity that we are demangling.  We want to
  *  represent it in some sort of demangled form in a plate comment, but we do not
  *  know what to lay down yet, or we haven't yet engineered the item that can be

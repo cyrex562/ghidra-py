@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.versions;
 
-/**
+# /**
  * https://developer.android.com/studio/releases/platforms
  * <br>
  * https://en.wikipedia.org/wiki/Android_version_history#Overview

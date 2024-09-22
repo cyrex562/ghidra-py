@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.features.bsim.query.description.ExecutableRecord;
 import ghidra.features.bsim.query.ingest.BulkSignatures;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Response to a request for executables from a {@link BulkSignatures} call.
  *
  */

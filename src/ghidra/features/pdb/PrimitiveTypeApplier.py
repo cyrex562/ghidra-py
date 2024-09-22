@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.type.PrimitiveMsType;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Applier for {@link PrimitiveMsType} types.
  */
 public class PrimitiveTypeApplier extends MsDataTypeApplier {

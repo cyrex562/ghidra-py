@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: Apache License 2.0
  * NOTE: Based on the simg2img code from The Android Open Source Project
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * StackFrameDataType provides an editable copy of a function stack frame.
  */
 public class StackFrameDataType extends BiDirectionDataType {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Response to a QueryDelete request containing a listing of the md5's of successfully deleted executables and
  * a count of their functions. If a requested executable could not be deleted for some reason it is listed in
  * a separate -missedlist-

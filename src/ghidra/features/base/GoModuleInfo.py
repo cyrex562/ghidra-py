@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.golang;
 import java.io.IOException;
 import java.util.*;
 
-/**
+# /**
  * Represents information about a single golang module dependency.
  * 
  * @param path module path 

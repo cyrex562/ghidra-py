@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import agent.gdb.manager.evt.*;
 import agent.gdb.manager.impl.*;
 import agent.gdb.manager.impl.GdbManagerImpl.Interpreter;
 
-/**
+# /**
  * Implementation of {@link GdbManager#console(String)} and similar
  */
 public class GdbConsoleExecCommand extends AbstractGdbCommandWithThreadAndFrameId<String> {

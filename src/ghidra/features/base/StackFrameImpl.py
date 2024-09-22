@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * StackFrameImpl.java
  *
  * Created on January 18, 2002, 2:35 PM
@@ -30,7 +30,7 @@ import java.util.*;
 
 import java.lang.UnsupportedOperationException;
 
-/**
+# /**
  * <p>Implements a simple stack frame for a function.  Each frame consists of a
  * local sections, parameter section, and save information (return address,
  * saved registers).

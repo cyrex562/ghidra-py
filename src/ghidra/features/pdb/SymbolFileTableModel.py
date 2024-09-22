@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.table.column.GColumnRenderer;
 import pdb.symbolserver.SymbolFileInfo;
 import pdb.symbolserver.SymbolFileLocation;
 
-/**
+# /**
  * Table model for the SymbolFilePanel table.
  */
 class SymbolFileTableModel

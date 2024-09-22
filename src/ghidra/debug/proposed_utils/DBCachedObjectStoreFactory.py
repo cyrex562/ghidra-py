@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.database.annot.DBAnnotatedField.DefaultCodec;
 import ghidra.util.database.err.NoDefaultCodecException;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * A factory for creating object stores for classes extending {@link DBAnnotatedObject}
  * 
  * <p>

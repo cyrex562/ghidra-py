@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.server.RepositoryManager;
 import ghidra.util.DateUtils;
 import ghidra.util.timer.Watchdog;
 
-/**
+# /**
  * A JAAS {@link LoginModule} that executes an external program that decides if the username
  * and password are authorized.
  * <p>

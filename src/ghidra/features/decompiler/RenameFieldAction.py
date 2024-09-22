@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.program.model.listing.Function;
 import ghidra.util.*;
 
-/**
+# /**
  * Action triggered from a specific token in the decompiler window to rename a field within
  * a structure data-type. If the field already exists within the specific structure, it is
  * simply renamed. Otherwise, if the decompiler has discovered an undefined structure offset, a new

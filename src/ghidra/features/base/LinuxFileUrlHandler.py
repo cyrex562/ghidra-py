@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.widgets.tree.GTreeNode;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A handler to facilitate drag-n-drop for a Linux URL-based file list which is dropped
  * onto the Project data tree or a running Ghidra Tool (see {@link #linuxFileUrlFlavor}).
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.dbg.util.PathPredicates;
 import ghidra.trace.model.*;
 import ghidra.trace.model.Lifespan.LifeSet;
 
-/**
+# /**
  * The trace record of an observed {@link TargetObject}
  * 
  * <p>

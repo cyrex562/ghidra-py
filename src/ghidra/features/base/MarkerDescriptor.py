@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import javax.swing.ImageIcon;
 import ghidra.program.util.MarkerLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * Allows clients to specify how {@link MarkerLocation}s are navigated, as well as how they 
  * should be painted
  */

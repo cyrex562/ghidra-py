@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.format;
 
 import java.util.*;
 
-/**
+# /**
  * Defines a selection for byte blocks.
  * 
  * The selection is a list of disjoint ranges.

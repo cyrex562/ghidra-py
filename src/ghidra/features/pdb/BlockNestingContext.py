@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.pdb.pdbapplicator;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Manages block nesting for function-related symbols
  */
 public class BlockNestingContext {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.disassemble;
 
-/**
+# /**
  * Holds the disassembled string of an instruction and the extra information
  * (type, number of bytes disassembled to produce instruction, etc.) of bytes
  * disassembled by the GNU disassembler.

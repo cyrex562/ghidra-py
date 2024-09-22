@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.program.model.listing.Program;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Dialog for initiating a BSim overview query.
  */
 public class BSimOverviewDialog extends AbstractBSimSearchDialog {

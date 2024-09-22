@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.format.golang.structmapping.*;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * A {@link GoType} structure that defines a function type.
  */
 @StructureMapping(structureName = {"runtime.functype", "internal/abi.FuncType"})

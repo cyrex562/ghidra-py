@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.*;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Response to a QueryChildren request to a BSim database.  A full FunctionDescription is returned for
  * every name in the original request and their children (1-level).  The FunctionDescriptions corresponding
  * to the original list of function names are also collected in the -correspond- array.

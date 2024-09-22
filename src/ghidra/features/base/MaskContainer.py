@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.instructionsearch.model;
 import ghidra.app.plugin.core.instructionsearch.util.InstructionSearchUtils;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Contains the mask/value information for a single mnemonic or operand.
  */
 public class MaskContainer {

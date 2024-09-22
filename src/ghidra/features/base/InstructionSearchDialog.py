@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import ghidra.util.table.AddressArrayTableModel;
 import ghidra.util.task.TaskLauncher;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * The GUI component for the {@link InstructionSearchPlugin}.  This consists of two main panels
  * for displaying instruction data, an area for control widgets, and a button panel:
  *

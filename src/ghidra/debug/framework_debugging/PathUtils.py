@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 
 import ghidra.dbg.target.TargetObject;
 
-/**
+# /**
  * A collection of utilities for examining and manipulating debug object paths
  * 
  * <p>

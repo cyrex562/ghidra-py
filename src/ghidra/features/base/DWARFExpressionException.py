@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.expression;
 
-/**
+# /**
  * A exception that is thrown when dealing with {@link DWARFExpression DWARF expressions}
  * or when they are {@link DWARFExpressionEvaluator evaluated.}
  * <p>

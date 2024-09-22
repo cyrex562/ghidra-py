@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.type;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
 
-/**
+# /**
  * Important: This is not a real type.  This "Bad" type takes the place of a type that has
  *  encountered a parsing issue vis-a-vis a PdbException.
  */

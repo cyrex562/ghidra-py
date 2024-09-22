@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.SystemUtilities;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A class to 1) hold related data for creating a new data type and 2) to validate the given 
  * data when the requested info is based upon the a disallowed condition (e.g., creating a data
  * type in the built-in archive).

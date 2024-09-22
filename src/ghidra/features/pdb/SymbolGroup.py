@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractMsSymbol;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * This class represents a particular group of Symbols that came from the same PDB stream.  This
  * wraps the internal structure and offers mechanisms for accessing records.  It does not map
  * directly to an MSFT structure.

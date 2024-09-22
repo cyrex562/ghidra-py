@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.trace.model.TraceAddressSnapRange;
 import ghidra.trace.model.memory.TraceMemorySpace;
 import ghidra.trace.util.TraceAddressSpace;
 
-/**
+# /**
  * A specification for automatic navigation of the dynamic listing
  * 
  * <p>

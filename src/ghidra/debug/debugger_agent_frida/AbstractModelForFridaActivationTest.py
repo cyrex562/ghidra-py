@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.dbg.target.*;
 import ghidra.dbg.test.AbstractDebuggerModelActivationTest;
 import ghidra.dbg.util.PathPattern;
 
-/**
+# /**
  * Test model object activation and focus
  * 
  * <p>

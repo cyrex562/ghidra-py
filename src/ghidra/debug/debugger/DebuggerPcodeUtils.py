@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,7 +54,7 @@ import ghidra.trace.model.symbol.TraceSymbol;
 import ghidra.trace.model.symbol.TraceSymbolWithLifespan;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * Utilities for evaluating or executing Sleigh/p-code in the Debugger
  */
 public enum DebuggerPcodeUtils {

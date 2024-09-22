@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.file.formats.android.dex.format;
 
 import java.io.*;
 
-/**
+# /**
  * https://source.android.com/devices/tech/dalvik/dex-format#mutf-8
  * <br>
  * Modified version of:

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.bean.opteditor.OptionsVetoException;
 import ghidra.util.task.SwingUpdateManager;
 
-/**
+# /**
  * Plugin to show a graph of function calls for a given function
  */
 //@formatter:off

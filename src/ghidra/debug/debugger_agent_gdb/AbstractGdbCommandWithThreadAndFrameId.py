@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.gdb.manager.impl.cmd;
 
 import agent.gdb.manager.impl.GdbManagerImpl;
 
-/**
+# /**
  * An extension to {@link AbstractGdbCommandWithThreadId} that also passes the "{@code --frame}"
  * argument
  * 

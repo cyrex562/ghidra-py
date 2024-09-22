@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.KeyStroke;
 import docking.ActionContext;
 import docking.action.KeyBindingData;
 
-/**
+# /**
  * Action for use in the composite data type editor.
  * This action has help associated with it.
  */

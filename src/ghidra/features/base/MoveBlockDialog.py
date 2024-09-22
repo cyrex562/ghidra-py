@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.Swing;
 import ghidra.util.layout.PairLayout;
 import ghidra.util.task.TaskBuilder;
 
-/**
+# /**
  * Dialog that uses a model to validate the fields for moving a block of memory.
  * 
  * 

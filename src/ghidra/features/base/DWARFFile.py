@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.dwarf.DWARFCompilationUnit;
 import ghidra.app.util.bin.format.dwarf.attribs.*;
 import ghidra.program.model.data.LEB128;
 
-/**
+# /**
  * DWARFFile is used to store file or directory entries in the DWARFLine.
  */
 public class DWARFFile {

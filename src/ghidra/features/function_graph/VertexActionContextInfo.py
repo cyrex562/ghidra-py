@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Set;
 import ghidra.app.plugin.core.functiongraph.graph.vertex.FGVertex;
 import ghidra.program.model.address.AddressSet;
 
-/**
+# /**
  * A container object use by the graph's context system to give actions the state of the graph.
  * 
  * <P>This class has a vertex which is considered the active vertex, which may be the vertex

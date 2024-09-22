@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import db.util.ErrorHandler;
 import ghidra.util.database.DirectedIterator.Direction;
 
-/**
+# /**
  * This provides the implementation of {@link Map#values()} for {@link DBCachedObjectStore#asMap()}
  *
  * @param <T> the type of objects in the store

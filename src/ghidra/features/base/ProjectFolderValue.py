@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.main.AppInfo;
 import ghidra.framework.main.DataTreeDialog;
 import ghidra.framework.model.*;
 
-/**
+# /**
  * Value class for project folders ({@link DomainFile}). The editor component consists of the
  * {@link JTextField} and a browse button for bringing up a {@link DataTreeDialog} for picking
  * project folders from the current project.

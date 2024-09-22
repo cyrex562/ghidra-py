@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Parser for detecting the appropriate {@link PdbDebugInfo} format for the filename
  *  given.  It then creates and returns the appropriate {@link PdbDebugInfo} object.
  */

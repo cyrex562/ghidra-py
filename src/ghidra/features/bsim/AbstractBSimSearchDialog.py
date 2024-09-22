@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import ghidra.util.layout.VerticalLayout;
 import ghidra.util.task.Task;
 import resources.Icons;
 
-/**
+# /**
  * Base class for BSim Search dialogs that all have a server comboBox, and entries for the
  * similarity and confidence values.
  */

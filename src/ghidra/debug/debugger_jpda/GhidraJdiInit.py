@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.GhidraApplicationLayout;
 import ghidra.framework.*;
 
-/**
+# /**
  * This is a convenience class for preparing the JDI Client in a stand-alone jshell.
  * 
  * <p>

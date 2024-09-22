@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbByteReader;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbException;
 
-/**
+# /**
  * This class is the version of {@link MsfStreamTable} for Microsoft v2.00 MSF.
  */
 class MsfStreamTable200 extends MsfStreamTable {

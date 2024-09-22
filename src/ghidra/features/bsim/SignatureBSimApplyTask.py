@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.symbol.SymbolUtilities;
 import ghidra.program.util.FunctionUtility;
 
-/**
+# /**
  * Task for applying names, namespaces, and signatures from a match function to the queried function
  */
 public class SignatureBSimApplyTask extends AbstractBSimApplyTask {

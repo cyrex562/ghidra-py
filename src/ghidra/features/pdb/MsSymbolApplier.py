@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.plugin.processors.sleigh.symbol.Symbol;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbLog;
 import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractMsSymbol;
 
-/**
+# /**
  * Abstract class representing the applier for a specific {@link AbstractMsSymbol}.  The
  * {@link #apply()} method creates an associated {@link Symbol}, if applicable, or might
  * apply information to other {@link MsSymbolApplier AbstractMsSymbolAppliers}.

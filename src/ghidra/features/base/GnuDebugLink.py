@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.util.CodeUnitInsertionException;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An ELF section (almost like a {@link ElfNote}) that contains information about an external
  * DWARF debug file.
  * <p>

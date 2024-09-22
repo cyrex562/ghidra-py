@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.symbol.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Builds up a {@link Program} of components extracted from a Mach-O container by parsing the Mach-O 
  * headers
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.trace.model.time.TraceSnapshot;
 import ghidra.trace.util.TypedEventDispatcher.FullEventRecordHandler;
 import ghidra.util.UniversalID;
 
-/**
+# /**
  * A sub-type for event specific to traces.
  * 
  * <p>

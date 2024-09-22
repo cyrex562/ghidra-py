@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler;
 
-/**
+# /**
  * A class to represent a demangled function indirect.  A function indirect is
  * similar to a function pointer or a function reference except that it does
  * not have the start (*) for a pointer or ampersand (&amp;) for a reference, but

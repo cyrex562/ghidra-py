@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.data.Enum;
 import ghidra.program.model.symbol.Namespace;
 
-/**
+# /**
  * A class to represent a demangled data type.
  */
 public class DemangledDataType extends DemangledType {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.object;
 import mdemangler.MDMang;
 import mdemangler.MDParsableItem;
 
-/**
+# /**
  * This class represents the highest level object that maps to a Microsoft mangled symbol.
  */
 public abstract class MDObject extends MDParsableItem {
@@ -27,5 +27,5 @@ public abstract class MDObject extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

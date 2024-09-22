@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.listing.Instruction;
 import ghidra.program.util.ParallelInstructionLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
   *  Generates Parallel execution marks '||' for those language which have a
   *  ParallelFieldLanguageHelper class and have specified the corresponding
   *  language property in the pspec.

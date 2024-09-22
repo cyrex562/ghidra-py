@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * A discoverable factory of tracking specifications
  */
 public interface LocationTrackingSpecFactory extends ExtensionPoint {

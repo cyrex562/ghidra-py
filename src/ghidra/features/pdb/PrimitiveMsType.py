@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.math.BigInteger;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
 
-/**
+# /**
  * A class for a specific PDB data type--In this case one of many possible primitive types,
  *  specified by the record number.
  * <P>

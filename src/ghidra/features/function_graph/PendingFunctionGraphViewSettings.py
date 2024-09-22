@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.plugin.core.functiongraph.graph.FGEdge;
 import ghidra.app.plugin.core.functiongraph.graph.vertex.FGVertex;
 import ghidra.graph.viewer.GraphPerspectiveInfo;
 
-/**
+# /**
  * A version of the view settings to hold information about the graph that is being built or is
  * awaiting to be built.  When the graph is finished loading, this settings object will be 
  * used to apply graph settings.

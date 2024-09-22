@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.trace.model.target;
 
 import ghidra.trace.model.target.TraceObject.ConflictResolution;
 
-/**
+# /**
  * Thrown when there are "duplicate keys" and the {@link ConflictResolution#DENY} strategy is passed
  * 
  * <p>

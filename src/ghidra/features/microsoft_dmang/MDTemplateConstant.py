@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.naming.MDFragmentName;
 import mdemangler.object.MDObject;
 import mdemangler.object.MDObjectCPP;
 
-/**
+# /**
  * This class represents a the template constant portion of a
  * Microsoft mangled symbol.  Usually found as an argument to a template.
  */
@@ -227,5 +227,5 @@ public class MDTemplateConstant extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

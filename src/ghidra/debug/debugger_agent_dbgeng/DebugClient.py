@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import agent.dbgeng.dbgeng.DebugRunningProcess.Description.ProcessDescriptionFla
 import ghidra.comm.util.BitmaskSet;
 import ghidra.comm.util.BitmaskUniverse;
 
-/**
+# /**
  * A wrapper for {@code IDebugClient} and its newer variants.
  */
 public interface DebugClient extends DebugClientReentrant {

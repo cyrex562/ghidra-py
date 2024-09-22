@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.decompiler.DecompileOptions;
 import ghidra.app.decompiler.DecompilerMarginService;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * A provider of a margin Swing component
  * 
  * <p>

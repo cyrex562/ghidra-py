@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.viewer.util.AddressIndexMap;
 import ghidra.program.model.listing.Program;
 import ghidra.program.util.MarkerLocation;
 
-/**
+# /**
  * Interface for objects that want to add a component to the listing's left margin.
  */
 public interface MarginProvider {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import mdemangler.MDException;
 import mdemangler.MDMang;
 import mdemangler.datatype.extended.MDExtendedType;
 
-/**
+# /**
  * This class represents an empty parameter.  (The $$V code.)  Not sure what/how it fits into
  * everything, but coding it up for now.
  * It is one of a number of "extended" data types not originally planned by Microsoft.

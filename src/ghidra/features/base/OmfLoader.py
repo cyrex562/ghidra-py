@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A {@link Loader} for Relocatable Object Module (OMF) files
  */
 public class OmfLoader extends AbstractProgramWrapperLoader {

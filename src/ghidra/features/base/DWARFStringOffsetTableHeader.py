@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.dwarf.attribs.DWARFAttribute;
 import ghidra.app.util.bin.format.dwarf.attribs.DWARFForm;
 import ghidra.app.util.bin.format.dwarf.sectionprovider.DWARFSectionNames;
 
-/**
+# /**
  * Table of offsets that point into the string table.  These tables are stored sequentially in the
  * {@link DWARFSectionNames#DEBUG_STROFFSETS .debug_str_offsets} section.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.exception.UsrException;
 import ghidra.util.extensions.ExtensionUtils;
 import ghidra.util.task.TaskLauncher;
 
-/**
+# /**
  * Main Ghidra application class. Creates
  * the .ghidra folder that contains the user preferences and tools if it does
  * not exist. Initializes JavaHelp and attempts to restore the last opened

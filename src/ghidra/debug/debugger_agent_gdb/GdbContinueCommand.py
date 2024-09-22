@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.gdb.manager.GdbInferior;
 import agent.gdb.manager.impl.*;
 import agent.gdb.manager.impl.GdbManagerImpl.Interpreter;
 
-/**
+# /**
  * Implementation of {@link GdbInferior#cont()}
  */
 public class GdbContinueCommand extends AbstractGdbCommandWithThreadId<Void>

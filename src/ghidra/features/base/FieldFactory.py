@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.HelpLocation;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * NOTE:  ALL FIELDFACTORY CLASSES MUST END IN "FieldFactory".  If not,
  * the ClassSearcher will not find them.
  *

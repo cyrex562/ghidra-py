@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.bean.opteditor.OptionsVetoException;
 import utility.function.Callback;
 import utility.function.Dummy;
 
-/**
+# /**
  * This class holds the options for the decompiler diff view.
  */
 public class DecompilerCodeComparisonOptions implements OptionsChangeListener {

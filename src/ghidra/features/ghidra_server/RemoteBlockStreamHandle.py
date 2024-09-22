@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import db.buffers.DataBuffer;
 import generic.random.SecureRandomFactory;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * <code>RemoteBlockStreamHandle</code> provides a serializable handle to a
  * remote block stream. The handle is always instantiated by the server side and
  * passed to the client via remote serialization.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import generic.theme.GColor;
 import ghidra.app.plugin.core.interpreter.AnsiParser.AnsiParserHandler;
 import ghidra.util.ColorUtils;
 
-/**
+# /**
  * An object for parsing and rendering ANSI-styled strings into a Swing {@link Document}.
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Map;
 
 import agent.frida.manager.*;
 
-/**
+# /**
  * 
  * The fields correspond to the parameters taken by {@code LoadModule} of
  * {@code IDebugEventCallbacks}. They also appear as a subset of parameters taken by

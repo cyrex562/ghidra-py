@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.Swing;
 import ghidra.util.layout.MiddleLayout;
 import utility.function.Callback;
 
-/**
+# /**
  * Base class for BSimValueEditors that work on a list of possible choices
  */
 public class MultiChoiceBSimValueEditor implements BSimValueEditor {

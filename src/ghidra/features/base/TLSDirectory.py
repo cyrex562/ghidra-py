@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A class to represent the IMAGE_TLS_DIRECTORY32 and
  * IMAGE_TLS_DIRECTORY64 data structures.
  * <br>

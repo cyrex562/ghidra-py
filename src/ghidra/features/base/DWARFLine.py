@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.dwarf.line.DWARFLineContentType.Def;
 import ghidra.formats.gfilesystem.FSUtilities;
 import ghidra.program.model.data.LEB128;
 
-/**
+# /**
  * A structure read from .debug_line, contains indexed source filenames as well as a mapping between
  * addresses and source filename and linenumbers.
  * <p>

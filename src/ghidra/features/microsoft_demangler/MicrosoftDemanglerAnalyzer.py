@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.importer.MessageLog;
 import ghidra.framework.options.Options;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * A version of the demangler analyzer to handle microsoft symbols
  */
 public class MicrosoftDemanglerAnalyzer extends AbstractDemanglerAnalyzer {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.type;
 import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
 import ghidra.app.util.bin.format.pdb2.pdbreader.PdbByteReader;
 
-/**
+# /**
  * This class represents the <B>MsType</B> flavor of Null type.
  * <P>
  * Note: we do not necessarily understand each of these data type classes.  Refer to the

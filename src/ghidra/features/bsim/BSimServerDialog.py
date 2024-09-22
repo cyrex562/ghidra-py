@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.*;
 import resources.Icons;
 
-/**
+# /**
  * Dialog for managing BSim database server definitions
  */
 public class BSimServerDialog extends DialogComponentProvider {

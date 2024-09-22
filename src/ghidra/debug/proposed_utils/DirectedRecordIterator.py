@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.*;
 import generic.End.Point;
 
-/**
+# /**
  * An iterator over records of a table
  */
 public interface DirectedRecordIterator extends DirectedIterator<DBRecord> {

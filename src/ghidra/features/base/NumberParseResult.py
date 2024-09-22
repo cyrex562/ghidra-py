@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.features.base.memsearch.format;
 
-/**
+# /**
  * Used by the NumberSearchFormat and the FloatSearchFormat for intermediate parsing results.
  * @param bytes The bytes that match the parsed number sequence
  * @param errorMessage an optional parsing error message

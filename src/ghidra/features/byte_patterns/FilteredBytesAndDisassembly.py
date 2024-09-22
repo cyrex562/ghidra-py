@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.bitpatterns.info;
 
 import java.util.List;
 
-/**
+# /**
  * This is a container class used by {@link ByteSequenceRowObject}
  */
 class FilteredBytesAndDisassembly {

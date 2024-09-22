@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.framework.plugintool.ToolEventName;
 import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramSelection;
 
-/**
+# /**
  * Plugin event generated when a tool receives an
  * ProgramSelectionToolEvent; the selection in the external tool has
  * changed.

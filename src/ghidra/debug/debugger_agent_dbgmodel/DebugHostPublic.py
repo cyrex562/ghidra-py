@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.dbgmodel.dbgmodel.UnknownEx;
 import agent.dbgmodel.jna.dbgmodel.DbgModelNative.LOCATION;
 import agent.dbgmodel.jna.dbgmodel.DbgModelNative.LocationKind;
 
-/**
+# /**
  * A wrapper for {@code IDebugHostPublic} and its newer variants.
  */
 public interface DebugHostPublic extends UnknownEx {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.app.util.bin.BinaryReader;
 
-/**
+# /**
  * Header at the beginning of an ELF compressed section.
  * <p>
  * See https://docs.oracle.com/cd/E53394_01/html/E54813/section_compression.html

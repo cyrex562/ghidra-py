@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.ByteProvider;
 import ghidra.program.model.listing.ProgramFragment;
 import ghidra.program.model.mem.*;
 
-/**
+# /**
  * <code>MemBufferByteProvider</code> provide a {@link ByteProvider} backed by a {@link MemBuffer}.
  */
 public class ProgramInsertByteProvider implements ByteProvider {

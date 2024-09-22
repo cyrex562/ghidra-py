@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.symbol.Symbol;
 import ghidra.program.model.symbol.SymbolIterator;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Manages Address/Section/Segment-related PDB items.
  * Has method for providing real addresses.
  */

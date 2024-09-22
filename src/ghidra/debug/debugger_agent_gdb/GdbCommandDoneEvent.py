@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import agent.gdb.manager.parsing.GdbParsingUtils;
 import agent.gdb.manager.parsing.GdbParsingUtils.GdbParseError;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The event corresponding with "{@code ^done}"
  */
 public class GdbCommandDoneEvent extends AbstractGdbCompletedCommandEvent {

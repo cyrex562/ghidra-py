@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import ghidra.util.classfinder.ExtensionPoint;
 import ghidra.util.datastruct.Duo;
 import ghidra.util.datastruct.Duo.Side;
 
-/**
+# /**
  * The CodeComparisonPanel class should be extended by any class that is to be 
  * discovered by the {@link FunctionComparisonPanel} class and included as a 
  * form of comparing two sections of code within the same or different programs

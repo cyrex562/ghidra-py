@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.gdb.manager.evt.GdbCommandDoneEvent;
 import agent.gdb.manager.impl.*;
 import agent.gdb.manager.parsing.GdbMiParser.GdbMiFieldList;
 
-/**
+# /**
  * Implementation of {@link GdbManagerImpl#getThreadInfo()}
  */
 public class GdbGetThreadInfoCommand extends AbstractGdbCommandWithThreadId<GdbThreadInfo> {

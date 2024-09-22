@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.table.column.GColumnRenderer;
 import ghidra.util.table.field.AbstractProgramBasedDynamicTableColumn;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A table model that shows the same contents as the {@link AddressPreviewTableModel}, but will
  * also add a references table column when the underlying data contains references.  This model
  * uses data provided by a {@link LocationDescriptor}, which is contained by the given

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import com.google.gson.*;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.ByteProvider;
 
-/**
+# /**
  * Class to manage reading and access to a CaRT version 1 file footer.
  */
 public class CartV1Footer {

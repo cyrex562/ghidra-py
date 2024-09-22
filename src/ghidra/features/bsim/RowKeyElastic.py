@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.features.bsim.query.elastic;
 import generic.hash.SimpleCRC32;
 import ghidra.features.bsim.query.description.*;
 
-/**
+# /**
  * A "document id" that uniquely indexes documents, within the ElasticSearch database,
  * that describe executables {@link ExecutableRecord} and functions {@link FunctionDescription}
  * This plays the same role as the row id for executable and function rows in an SQL

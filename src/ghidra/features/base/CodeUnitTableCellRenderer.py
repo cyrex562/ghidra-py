@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.Msg;
 import ghidra.util.table.column.AbstractGColumnRenderer;
 import ghidra.util.table.field.CodeUnitTableCellData;
 
-/**
+# /**
  * Renderer for {@link CodeUnitTableCellData}s
  */
 public class CodeUnitTableCellRenderer extends AbstractGColumnRenderer<CodeUnitTableCellData> {

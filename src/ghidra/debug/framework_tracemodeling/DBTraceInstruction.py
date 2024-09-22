@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import ghidra.util.database.DBCachedObjectStore;
 import ghidra.util.database.DBObjectColumn;
 import ghidra.util.database.annot.*;
 
-/**
+# /**
  * The implementation of {@link TraceInstruction} for {@link DBTrace}
  */
 @DBAnnotatedObjectInfo(version = 0)

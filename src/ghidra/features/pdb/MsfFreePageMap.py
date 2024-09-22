@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.*;
 import ghidra.util.LittleEndianDataConverter;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * This class is the Free Page Map for the Multi-Stream Format File (see Microsoft API).  The
  *  Free Page Map is a bit-encoding of whether a page within the {@link Msf} is
  *  currently used--for purposes of reusing available pages.

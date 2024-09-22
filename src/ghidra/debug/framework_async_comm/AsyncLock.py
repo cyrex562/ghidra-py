@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.async.seq.AsyncSequenceWithTemp;
 import ghidra.async.seq.AsyncSequenceWithoutTemp;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An optionally-reentrant lock for managing a contentious resource
  * 
  * <p>

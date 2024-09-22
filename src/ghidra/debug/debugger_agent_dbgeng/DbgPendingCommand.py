@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.dbgeng.manager.*;
 import agent.dbgeng.manager.evt.AbstractDbgCompletedCommandEvent;
 import agent.dbgeng.manager.evt.DbgCommandErrorEvent;
 
-/**
+# /**
  * A command queued on the dbgeng manager
  *
  * A {@link DbgCommand} is queued by wrapping it in a {@link DbgPendingCommand} and submitting it to

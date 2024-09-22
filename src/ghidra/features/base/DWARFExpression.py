@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.format.dwarf.DIEAggregate;
 import ghidra.program.model.data.LEB128;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * A {@link DWARFExpression} is an immutable list of {@link DWARFExpressionOperation operations} and some factory methods to read
  * an expression from its binary representation.
  * <p>

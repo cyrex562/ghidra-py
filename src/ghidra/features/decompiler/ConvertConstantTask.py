@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 import utility.function.Callback;
 
-/**
+# /**
  * Create an equate in the table for the specific Address and hash value.
  * The equate is not assumed to be attached to a particular instruction operand and
  * uses the dynamic hash value to identify the particular constant (within p-code) to label.

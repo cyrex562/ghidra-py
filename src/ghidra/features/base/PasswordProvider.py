@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Iterator;
 import ghidra.formats.gfilesystem.FSRL;
 import ghidra.framework.generic.auth.Password;
 
-/**
+# /**
  * Instances of this interface provide passwords to decrypt files.
  * <p>
  * Instances are typically not called directly, instead are used 

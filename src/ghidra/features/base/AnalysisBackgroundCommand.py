@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * AnalysisBackgroundCommand.java
  * 
  * Created on Aug 27, 2003
@@ -26,7 +26,7 @@ import ghidra.program.util.GhidraProgramUtilities;
 import ghidra.util.SystemUtilities;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Background task to artificially kick off Auto analysis by
  * calling anything that analyzes bytes.
  */

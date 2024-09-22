@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Dialog to prompt for base address and the size of the data type that
  * will be used in creating an offset table.
  * 

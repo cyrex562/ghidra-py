@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import docking.widgets.pathmanager.AbstractPathsDialog;
 import docking.widgets.pathmanager.PathnameTablePanel;
 import ghidra.app.util.importer.LibrarySearchPathManager;
 
-/**
+# /**
  * Dialog for editing Library Search Paths which are used by the importer to locate referenced
  * shared libraries.
  */

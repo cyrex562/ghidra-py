@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 
-/**
+# /**
  * This interface is for symbols that have a segment and offset of a real address.
  */
 public interface AddressMsSymbol {

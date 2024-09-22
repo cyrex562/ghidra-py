@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 import ghidra.util.datastruct.StringKeyIndexer;
 
-/**
+# /**
  * Class that is a listener on the TreeModel.
  */
 class ProgramTreeModelListener implements TreeModelListener {

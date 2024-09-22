@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.button.GButton;
 import generic.theme.GIcon;
 import resources.Icons;
 
-/**
+# /**
  * Provides buttons to be used with the {@link FunctionTagProvider}.
  * These buttons allow users to add or remove tags from functions, or delete
  * tags altogether. 

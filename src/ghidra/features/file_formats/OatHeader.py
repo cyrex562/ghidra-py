@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.file.formats.android.oat.oatdexfile.OatDexFileFactory;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Base OatHeader implementations
  * <br>
  * Each sub-class is based on that version of OAT, as released,

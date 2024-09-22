@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.service.graph.*;
 import ghidra.util.HelpLocation;
 import ghidra.util.task.TaskLauncher;
 
-/*
+# /*
  * Listener for a GraphDisplay holding a Reference graph. Allows for the extension of the
  * graph from a specified node
  */

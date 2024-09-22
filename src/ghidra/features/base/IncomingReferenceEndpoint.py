@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.table.field;
 
 import ghidra.program.model.symbol.Reference;
 
-/**
+# /**
  * Marker row object that signals to the table API that the references contained therein all
  * share the <code>to</code> address, with each row showing the <code>from</code> address.
  */

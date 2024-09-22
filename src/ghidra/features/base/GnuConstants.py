@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.bin.format.elf;
 
-/**
+# /**
  * GNU Constants.
  */
 public interface GnuConstants {

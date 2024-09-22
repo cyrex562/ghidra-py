@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import docking.ActionContext;
 import docking.action.DockingAction;
 import docking.action.MenuData;
 
-/**
+# /**
  * <CODE>DeleteFunctionAction</CODE> allows the user to delete a function at
  * the entry point of the function.
  */

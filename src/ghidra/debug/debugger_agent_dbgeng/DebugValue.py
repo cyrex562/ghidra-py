@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import agent.dbgeng.dbgeng.DebugValue.DebugValueType;
 import agent.dbgeng.dbgeng.DebugValue.ForDebugValueType;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * Data copied from a {@code DEBUG_VALUE} as defined in {dbgeng.h}.
  */
 @ForDebugValueType(DebugValueType.INVALID)

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Interface for a match action to be taken for the Program@Address for a ditted bit seqence pattern
  */
 public interface MatchAction {

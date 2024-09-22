@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.program.util.CommentFieldLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * Generates pre-comment fields.
  */
 public class PreCommentFieldFactory extends FieldFactory {

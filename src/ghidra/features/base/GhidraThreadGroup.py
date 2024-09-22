@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.framework.model.DomainObjectException;
 import ghidra.framework.model.DomainObjectLockedException;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <code>GhidraThreadGroup</code> provides a means of catching all uncaught
  * exceptions which occur in any Ghidra thread.
  */

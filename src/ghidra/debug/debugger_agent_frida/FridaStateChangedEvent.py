@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.frida.frida.FridaClient;
 import agent.frida.manager.*;
 import ghidra.dbg.target.TargetExecutionStateful.TargetExecutionState;
 
-/**
+# /**
  * The event corresponding with FridaProcess.eBroadcastBitStateChanged
  */
 public class FridaStateChangedEvent extends AbstractFridaEvent<TargetExecutionState> {

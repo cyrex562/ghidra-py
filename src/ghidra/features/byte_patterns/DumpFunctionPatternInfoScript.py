@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.FunctionIterator;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Example of command to run this script headlessly:
  * ./analyzeHeadless /local/ghidraProjects/nonShared/ arm -recursive -process -noanalysis -postScript DumpFunctionPatternInfo.java
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 
 // TODO: Do not know the actual implementation, so just extending from the one we know for now.
-/**
+# /**
  * This class represents the <B>Newer</B> flavor of Local Symbol in Optimized Code symbol.
  * <P>
  * Note: We do not know the actual implementation, so just extending from the one we know for now.

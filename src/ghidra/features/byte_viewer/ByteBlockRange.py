@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.format;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Class to define a range within a byte block.
  */
 public class ByteBlockRange {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.decompiler;
 
-/**
+# /**
  * The highlighter interface passed to clients of the {@link DecompilerHighlightService}.
  *
  * <p>The expected workflow for this class is:  create the highlighter, clients

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.eclipse;
 
 import java.net.Socket;
 
-/**
+# /**
  * A class that represents a connection to Eclipse.
  */
 public class EclipseConnection {

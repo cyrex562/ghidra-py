@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.nio.ByteBuffer;
 import ghidra.util.LittleEndianDataConverter;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * MSFT Numeric value.
  */
 public class Numeric {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.CodeUnit;
 import ghidra.program.model.mem.MemoryBlock;
 import ghidra.program.util.OffsetFieldType;
 
-/**
+# /**
  *  Generates {@link MemoryBlock} Offset fields
  */
 public class MemoryBlockOffsetFieldFactory extends AbstractOffsetFieldFactory {

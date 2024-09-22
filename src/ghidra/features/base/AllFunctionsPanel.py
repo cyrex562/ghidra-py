@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.plugintool.ComponentProviderAdapter;
 import ghidra.program.model.listing.*;
 import ghidra.util.table.*;
 
-/**
+# /**
  * Displays all functions that are associated with the selected tag in the
  * {@link SourceTagsPanel}
  */

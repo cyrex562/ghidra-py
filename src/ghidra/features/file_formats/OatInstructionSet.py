@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat;
 
-/**
+# /**
  * https://android.googlesource.com/platform/art/+/refs/heads/lollipop-release/runtime/instruction_set.h#29
  */
 public enum OatInstructionSet {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.file.formats.lzss;
 import java.io.*;
 import java.nio.ByteBuffer;
 
-/**
+# /**
  * Based on the lzss.c source in img4lib
  * 
  * **************************************************************

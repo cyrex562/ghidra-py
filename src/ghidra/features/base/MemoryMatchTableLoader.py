@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.features.base.memsearch.searcher.MemoryMatch;
 import ghidra.util.datastruct.Accumulator;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Interface for loading the memory search results table. Various implementations handle the
  * different cases such as a search all, or a search next, or combining results with a previous
  * search, etc.

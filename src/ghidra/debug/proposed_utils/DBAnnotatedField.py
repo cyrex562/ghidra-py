@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import db.Field;
 import ghidra.util.database.DBAnnotatedObject;
 import ghidra.util.database.DBCachedObjectStoreFactory.DBFieldCodec;
 
-/**
+# /**
  * Mark a field to be stored in a table column
  *
  * @see DBAnnotatedObject

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.golang.structmapping.*;
 import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A {@link GoType} structure that defines a go channel
  */
 @StructureMapping(structureName = {"runtime.chantype", "internal/abi.ChanType"})

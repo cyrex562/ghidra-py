@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.bean.field.AnnotatedTextFieldElement;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * NOTE:  ALL AnnotatedStringHandler CLASSES MUST END IN "StringHandler".  If not,
  * the ClassSearcher will not find them.
  * 

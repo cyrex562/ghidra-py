@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.bytesearch;
 
-/**
+# /**
  * Interface for factories that create Match Pattern classes
  */
 public interface PatternFactory {

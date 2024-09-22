@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.address.*;
 import ghidra.util.datastruct.Accumulator;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class for searching bytes from a byteSource (memory) using a {@link ByteMatcher}. It handles
  * breaking the search down into a series of searches, handling gaps in the address set and
  * breaking large address ranges down into manageable sizes.

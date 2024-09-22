@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.dbgeng.dbgeng.err;
 
-/**
+# /**
  * The base exception for checked {@code dbgeng.dll} wrapper-related errors.
  */
 public class DbgEngException extends Exception {

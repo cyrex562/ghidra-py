@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import docking.widgets.textfield.IntegerTextField;
 import ghidra.bitpatterns.info.FileBitPatternInfoReader;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * The class builds the "Function Start Alignment" panel, which allows the user 
  * to see whether function starts are more likely to occur at certain alignments.
  */

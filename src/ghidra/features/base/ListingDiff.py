@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.util.Msg;
 import ghidra.util.datastruct.Duo.Side;
 
-/**
+# /**
  * Determines where instructions couldn't be matched and where they differ between sets of 
  * addresses as provided by a ListingAddressCorrelation. Initially this will be byte 
  * differences and instruction operand differences for any instructions that were determined 

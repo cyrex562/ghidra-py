@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.*;
 import docking.DialogComponentProvider;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * Extends DialogComponentProvider to make a dialog with buttons to activate/deactivate
  * filters on graph vertices and edges
  */

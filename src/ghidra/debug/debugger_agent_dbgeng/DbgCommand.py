@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.concurrent.CompletableFuture;
 import agent.dbgeng.manager.cmd.AbstractDbgCommand;
 import agent.dbgeng.manager.cmd.DbgPendingCommand;
 
-/**
+# /**
  * The interface for Dbg command implementations
  *
  * Commands are executed by Dbg in serial. In order to distinguish the likely cause of events, the

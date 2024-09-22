@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 
 import org.apache.commons.lang3.StringUtils;
 
-/**
+# /**
  * Parser, extending {@link TypeProgramInterfaceParser}, for detecting and returning the
  *  appropriate {@link TypeProgramInterface} format to be used as the Item Program
  *  Interface for the filename given.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import ghidra.util.task.SwingUpdateManager;
 import ghidra.util.task.TaskMonitor;
 import resources.Icons;
 
-/**
+# /**
  * A {@link ComponentProvider} that is the UI component of the {@link SampleGraphPlugin}.  This
  * shows a graph of the plugins in the system.
  */

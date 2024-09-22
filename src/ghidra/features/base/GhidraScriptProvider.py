@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 import generic.jar.ResourceFile;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * A provider that can compile, interpret, load, etc., Ghidra Scripts from a given language.
  * 
  * <p>

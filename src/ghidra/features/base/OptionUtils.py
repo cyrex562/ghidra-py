@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util;
 
 import java.util.List;
 
-/**
+# /**
  * Utility class for providing convenience methods for working with {@link Option}'s.
  */
 public class OptionUtils {

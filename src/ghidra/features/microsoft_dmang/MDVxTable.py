@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import mdemangler.*;
 import mdemangler.datatype.modifier.MDCVMod;
 import mdemangler.naming.MDQualification;
 
-/**
+# /**
  * This is the base class for MDVfTable and MDVxTable.  Neither of these
  * derivatives actually do anything at this time, but they are two very
  * different types of tables in C++ and serve as place holders for future
@@ -125,5 +125,5 @@ public class MDVxTable extends MDTypeInfo {
 
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

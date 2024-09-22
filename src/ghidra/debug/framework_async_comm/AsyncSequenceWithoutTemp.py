@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.async.*;
 import ghidra.async.seq.AsyncSequenceWithTemp.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Part of the underlying implementation of {@link AsyncUtils#sequence(TypeSpec)}
  *
  * @param <R> the type of result for the whole sequence

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.fieldpanel.support.FieldLocation;
 import ghidra.app.util.viewer.proxy.EmptyProxy;
 import ghidra.app.util.viewer.proxy.ProxyObj;
 
-/**
+# /**
  * Class for displaying images in fields.
  */
 public class ImageFactoryField extends SimpleImageField implements ListingField {

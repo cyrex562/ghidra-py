@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.datatype.modifier;
 import mdemangler.MDException;
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a "pointer" data type within a Microsoft mangled symbol.
  */
 public class MDPointerType extends MDModifierType {

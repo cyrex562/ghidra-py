@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.HTMLUtilities;
 import ghidra.util.table.GhidraTable;
 import ghidra.util.table.GhidraTableCellRenderer;
 
-/**
+# /**
  * Table that displays function tags and a count of the number of times
  * each tag has been used
  */

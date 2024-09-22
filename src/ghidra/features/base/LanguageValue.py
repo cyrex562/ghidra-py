@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.script.SelectLanguageDialog;
 import ghidra.program.model.lang.*;
 import ghidra.program.util.DefaultLanguageService;
 
-/**
+# /**
  * Value class for LanguageCompilerSpecPair types. The component for this class is a 
  * TextField with a browse button for bringing up a language/compiler chooser. It supports
  * the concept of no value when the text field is empty. If it is not empty, the the contents

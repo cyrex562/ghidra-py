@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import resources.Icons;
 
-/**
+# /**
  * This action is used to remove any decompiler highlights added by the
  *  {@BSimFeatureVisualizerPlugin}.
  */

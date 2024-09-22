@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.sql.SQLException;
 import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.ExecutableRecord;
 
-/**
+# /**
  * Class for managing filter elements (FilterTemplate) that need to be resolved (typically to an id)
  * before they can be converted to an SQL clause.
  *

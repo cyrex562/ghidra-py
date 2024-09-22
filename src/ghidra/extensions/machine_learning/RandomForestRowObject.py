@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.tribuo.ensemble.EnsembleModel;
 
 import ghidra.program.model.address.AddressSet;
 
-/**
+# /**
  * A class for row objects in a table whose rows are associated with models trained to
  * find function starts.  Some of the fields of this class are used to populate these
  * rows with data about how accurate the model was on the test set.  Other fields 

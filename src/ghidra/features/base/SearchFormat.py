@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.features.base.memsearch.format;
 import ghidra.features.base.memsearch.gui.SearchSettings;
 import ghidra.features.base.memsearch.matcher.ByteMatcher;
 
-/**
+# /**
  * SearchFormats are responsible for parsing user input data into a {@link ByteMatcher} that
  * can be used for searching memory. It also can convert search matches back into string data and 
  * can convert string data from other formats into string data for this format.

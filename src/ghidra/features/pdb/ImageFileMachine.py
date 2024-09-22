@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Map;
 import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractCompile2MsSymbol;
 import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.Compile3MsSymbol;
 
-/**
+# /**
  * Machine Type seen in the {@link PdbNewDebugInfo} header.  We also map in the Processor.
  * We are not exactly sure about why there are different but similar items: Machine Type and
  * Processor.  The {@link Processor} is what is specified in {@link AbstractCompile2MsSymbol} and

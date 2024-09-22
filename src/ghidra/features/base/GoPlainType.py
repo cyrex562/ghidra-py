@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.util.bin.format.golang.structmapping.StructureReader;
 import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * WARNING: tricky code / class layout here!
  * <p>
  * To coerce java inheritance and structmapping features to match the layout of go rtti type structs,

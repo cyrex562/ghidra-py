@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.graph.viewer.layout.AbstractVisualGraphLayout;
 import ghidra.graph.viewer.layout.VisualGraphLayout;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * An abstract class that is the root for Function Graph layouts.  It changes the type of
  * the graph returned to {@link FunctionGraph} and defines a clone method that takes in a 
  * Function Graph.

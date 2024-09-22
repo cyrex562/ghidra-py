@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <pre>
  * typedef struct _IMAGE_RESOURCE_DIRECTORY_ENTRY {
  *     union {

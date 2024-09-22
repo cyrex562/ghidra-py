@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.LabelHistory;
 import ghidra.util.table.GhidraTable;
 
-/**
+# /**
  * Main panel that shows the history of labels at a specific address, or
  * shows all history for all addresses. When all addresses are displayed, 
  * the user can navigate by clicking on a row in the history table.

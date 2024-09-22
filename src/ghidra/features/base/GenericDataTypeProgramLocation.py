@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * A class to signal that the ProgramLocation is used for data types and is not really 
  * connected to the listing.
  * 

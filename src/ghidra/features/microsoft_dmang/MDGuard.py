@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.typeinfo;
 
 import mdemangler.*;
 
-/**
+# /**
  * This class represents a guard (Microsoft C++ mangling parlance)
  *  derivative of MDTypeInfo.
  */
@@ -42,5 +42,5 @@ public class MDGuard extends MDTypeInfo {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

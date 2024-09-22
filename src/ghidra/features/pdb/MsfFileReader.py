@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.RandomAccessFile;
 
 import ghidra.app.util.bin.ByteProvider;
 
-/**
+# /**
  * This class is responsible for reading pages from a {@link RandomAccessFile} for the
  *  {@link Msf} class and its underlying classes.
  */

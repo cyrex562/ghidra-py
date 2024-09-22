@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.lang.Language;
 import ghidra.program.model.pcode.Decoder;
 import ghidra.program.model.pcode.DecoderException;
 
-/**
+# /**
  * A feature representing 1 or more "stand-alone" copies in a basic block.
  * A COPY operation is considered stand-alone if either a constant or a function input
  * is copied into a location that is then not read directly by the function.

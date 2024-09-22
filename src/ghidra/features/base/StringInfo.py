@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * Information about a string.
  * 
  * @param stringValue string itself

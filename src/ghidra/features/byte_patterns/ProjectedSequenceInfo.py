@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.closedpatternmining;
 
-/**
+# /**
  * A ProjectedSequenceInfo object records two pieces of information: the index of a sequence in a database,
  * and the index in the sequence of the first character after the prefix sequence (see {@code ProjectedDatabase}
  */

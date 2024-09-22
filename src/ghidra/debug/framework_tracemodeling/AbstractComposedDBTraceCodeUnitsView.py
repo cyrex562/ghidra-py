@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.trace.model.TraceAddressSnapRange;
 import ghidra.trace.model.listing.TraceCodeUnit;
 import ghidra.util.*;
 
-/**
+# /**
  * An abstract implementation of a multi-type view, by composing other single-type views
  *
  * @param <T> the implementation type of units contained in the view

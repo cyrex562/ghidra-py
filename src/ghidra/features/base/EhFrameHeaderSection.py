@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Parses the exception handling structures within an '.eh_frame_hdr' memory section; contains 
  * the frame header record and the FDE table.
  */

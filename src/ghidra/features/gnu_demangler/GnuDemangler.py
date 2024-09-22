@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.Application;
 import ghidra.program.model.lang.CompilerSpec;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * A class for demangling debug symbols created using GNU GCC.
  */
 public class GnuDemangler implements Demangler {

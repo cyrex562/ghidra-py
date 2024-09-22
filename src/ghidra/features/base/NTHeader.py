@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.NotYetImplementedException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A class to represent the <b><code>IMAGE_NT_HEADERS32</code></b> and
  * IMAGE_NT_HEADERS64 structs as defined in
  * <code>winnt.h</code>.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.coff;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
-/**
+# /**
  * The Machine field has one of the following values that specifies its CPU type. 
  * An image file can be run only on the specified machine or on a system that emulates
  * the specified machine.

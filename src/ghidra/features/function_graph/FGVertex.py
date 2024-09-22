@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.symbol.FlowType;
 import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ProgramSelection;
 
-/**
+# /**
  * A visual vertex that represents a code block within a function.  This class understands
  * software modeling concepts and deals with things like program selections and locations.
  */

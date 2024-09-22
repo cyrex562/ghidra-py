@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.framework.main.DataTreeDialog;
 import ghidra.framework.model.DomainFile;
 import ghidra.framework.model.DomainFileFilter;
 
-/**
+# /**
  * Bean editor to show a text field and a browse button to bring
  * up a Domain File Chooser dialog.  The path of the chosen domain file is returned as
  * a String value.

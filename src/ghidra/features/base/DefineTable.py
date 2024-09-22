@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * NOTE: Generated File!
  *
@@ -23,7 +23,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.util.AddressEvaluator;
 import ghidra.util.Msg;
 
-/**
+# /**
  * 
  */
 public class DefineTable {

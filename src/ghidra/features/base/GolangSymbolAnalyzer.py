@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -59,7 +59,7 @@ import ghidra.util.task.UnknownProgressWrappingTaskMonitor;
 import ghidra.xml.XmlParseException;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Analyzes Golang binaries for RTTI and function symbol information by following references from
  * the root GoModuleData instance.
  */

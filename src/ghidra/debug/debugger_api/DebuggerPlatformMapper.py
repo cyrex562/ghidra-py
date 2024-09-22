@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.trace.model.target.TraceObject;
 import ghidra.trace.model.thread.TraceThread;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An object for interpreting a trace according to a chosen platform
  */
 public interface DebuggerPlatformMapper {

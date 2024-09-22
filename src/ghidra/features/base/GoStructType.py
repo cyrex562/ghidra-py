@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Golang type information about a specific structure type.
  */
 @StructureMapping(structureName = {"runtime.structtype", "internal/abi.StructType"})

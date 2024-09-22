@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.util.bin.format.dwarf.DWARFFunction;
 import ghidra.app.util.bin.format.dwarf.DWARFVariable;
 import ghidra.util.classfinder.ExtensionPointProperties;
 
-/**
+# /**
  * Complains about function parameters that are marked as 'output' and don't have storage
  * locations.
  */

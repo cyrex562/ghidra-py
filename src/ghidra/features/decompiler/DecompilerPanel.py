@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,7 +54,7 @@ import ghidra.util.*;
 import ghidra.util.bean.field.AnnotatedTextFieldElement;
 import ghidra.util.task.SwingUpdateManager;
 
-/**
+# /**
  * Class to handle the display of a decompiled function
  */
 public class DecompilerPanel extends JPanel implements FieldMouseListener, FieldLocationListener,

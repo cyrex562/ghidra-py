@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.gdb.manager;
 
 import ghidra.util.TriConsumer;
 
-/**
+# /**
  * A listener for changes in GDB's state
  */
 public interface GdbStateListener extends TriConsumer<GdbState, GdbState, GdbCause> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.feature.fid.hash.FidHashQuad;
 import ghidra.program.database.DBObjectCache;
 import ghidra.util.UniversalIdGenerator;
 
-/**
+# /**
  * Class to manage the FID functions table.
  */
 public class FunctionsTable {

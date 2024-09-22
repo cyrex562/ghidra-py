@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.Data;
 import ghidra.trace.model.Trace;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A row displayed in the registers table of the Debugger
  */
 public class RegisterRow {

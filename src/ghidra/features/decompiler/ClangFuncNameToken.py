@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.decompiler;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A source code token representing a function name.
  * It contains a link back to the p-code function object represented by the name
  */

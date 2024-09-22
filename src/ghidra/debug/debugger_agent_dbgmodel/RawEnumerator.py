@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.dbgmodel.dbgmodel.main;
 import agent.dbgmodel.dbgmodel.UnknownEx;
 import agent.dbgmodel.jna.dbgmodel.DbgModelNative.ModelObjectKind;
 
-/**
+# /**
  * A wrapper for {@code IRawEnumerator} and its newer variants.
  */
 public interface RawEnumerator extends UnknownEx {

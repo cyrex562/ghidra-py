@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.options.Options;
 import ghidra.program.model.address.AddressSet;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * This class is used to highlight tokens in the decompiler corresponding to BSim features
  */
 class BsfvTokenHighlightMatcher implements CTokenHighlightMatcher {

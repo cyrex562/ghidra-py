@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.LEB128;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * Represents a list of {@link DWARFRange}s.
  */
 public class DWARFRangeList {

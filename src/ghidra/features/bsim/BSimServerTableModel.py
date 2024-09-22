@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.framework.plugintool.ServiceProviderStub;
 import ghidra.util.table.column.AbstractGColumnRenderer;
 import ghidra.util.table.column.GColumnRenderer;
 
-/**
+# /**
  * Table model for BSim database server definitions.
  * 
  * NOTE: This implementation assumes modal dialog use and non-changing connection state

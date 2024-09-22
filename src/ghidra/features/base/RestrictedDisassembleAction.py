@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Feb 1, 2005
  *
  */
@@ -24,7 +24,7 @@ import ghidra.app.context.ListingActionContext;
 import ghidra.app.context.ListingContextAction;
 import docking.action.MenuData;
 
-/**
+# /**
  * 
  *
  * Action for restricted disassembly

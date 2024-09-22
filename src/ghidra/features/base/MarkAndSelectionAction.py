@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.program.util.ProgramSelection;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Actions for creating a selection using two distinct steps. The first time the action
  * is invoked, it records the current location as the start of a selection. The second time the
  * action is invoked it creates a selection from the recorded location to the current location. 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.net.*;
 import ghidra.server.RepositoryManager;
 import ghidra.server.UserManager;
 
-/**
+# /**
  * <code>PKIAuthenticationModule</code> performs client authentication through the 
  * use of a dual-signed token.  
  */

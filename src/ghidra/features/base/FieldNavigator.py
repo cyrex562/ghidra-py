@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.classfinder.ClassSearcher;
 
-/**
+# /**
  * Helper class to navigate to an address when user double clicks in a 
  * Field.  This class will find {@link FieldMouseHandlerExtension}s by using the {@link ClassSearcher}.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.bsfv;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * The class represents a row in the table of BSim features
  */
 public class BsfvRowObject {

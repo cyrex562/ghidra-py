@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.HTMLUtilities;
 import resources.Icons;
 
-/**
+# /**
  * Action class for the "Save Program" action
  */
 public class SaveProgramAction extends AbstractProgramNameSwitchingAction {

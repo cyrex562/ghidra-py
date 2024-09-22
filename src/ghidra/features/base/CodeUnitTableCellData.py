@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.HTMLUtilities;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A class that knows how to render {@link CodeUnit}s in 1 or more lines
  */
 public class CodeUnitTableCellData implements Comparable<CodeUnitTableCellData> {

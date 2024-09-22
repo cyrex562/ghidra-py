@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.pcode.Varnode;
 import ghidra.trace.database.DBTraceUtils.AddressRangeMapSetter;
 import ghidra.trace.util.TraceRegisterUtils;
 
-/**
+# /**
  * A map from registers to physical stack addresses
  *
  * <p>

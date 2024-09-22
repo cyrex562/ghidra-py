@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import com.google.common.base.Objects;
 import ghidra.service.graph.AttributedEdge;
 import ghidra.service.graph.AttributedVertex;
 
-/**
+# /**
  * A central location to list and provide all layout algorithms, their names, and their builders
  * Add or remove items here to change what layout algorithms are offered in the layout algorithm menu.
  * Change the String name to affect the menu's label for a specific layout algorithm.

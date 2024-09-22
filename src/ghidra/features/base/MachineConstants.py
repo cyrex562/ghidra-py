@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe;
 
-/**
+# /**
  * PE machine ID constants defined by standard header file 'ntimage.h'
  * 
  * @see <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/mt804345%28v=vs.85%29.aspx">Image File Machine Constants</a>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import functioncalls.graph.*;
 import ghidra.graph.viewer.GraphPerspectiveInfo;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * A simple class that is used to cache graph data for a given function
  */
 public class ValidFcgData implements FcgData {

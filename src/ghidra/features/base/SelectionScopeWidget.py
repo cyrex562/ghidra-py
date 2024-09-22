@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.app.plugin.core.instructionsearch.InstructionSearchPlugin;
 import ghidra.program.model.address.AddressRange;
 import ghidra.program.model.address.AddressRangeIterator;
 
-/**
+# /**
  * Allows the user to define a custom search range for the {@link InstructionSearchDialog}.
  *
  */

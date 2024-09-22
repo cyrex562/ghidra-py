@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.trace.model.listing.TraceData;
 import ghidra.trace.model.thread.TraceThread;
 import ghidra.trace.util.TraceAddressSpace;
 
-/**
+# /**
  * The implementation for an undefined {@link TraceData} for {@link DBTrace}
  * 
  * <p>

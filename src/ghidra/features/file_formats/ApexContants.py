@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.apex;
 
-/**
+# /**
  * Android Pony EXpress (ApexContants)
  * 
  * https://source.android.com/devices/tech/ota/apex

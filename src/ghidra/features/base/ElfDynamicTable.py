@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.NotFoundException;
 
-/**
+# /**
  * If an object file participates in dynamic linking, its program header table 
  * will have an element of type PT_DYNAMIC. This "segment" contains the ".dynamic" section. 
  * A special symbol, _DYNAMIC, labels the section, which contains an array of the 

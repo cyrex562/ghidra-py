@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.SwingUpdateManager;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A symbol table model meant to show a temporary table of symbols.  The symbols in the table can
  * be removed from the table by the user.
  */

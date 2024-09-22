@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.framework.data.DomainObjectMergeManager;
 import ghidra.program.model.data.SourceArchive;
 import resources.Icons;
 
-/**
+# /**
  * Panel to select a source archive in order to resolve a conflict.
  */
 class SourceArchiveMergePanel extends JPanel {

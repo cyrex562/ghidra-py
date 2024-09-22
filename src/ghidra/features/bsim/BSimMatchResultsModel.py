@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import ghidra.util.table.column.GColumnRenderer;
 import ghidra.util.table.field.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Table model for BSim Similar function search results
  */
 public class BSimMatchResultsModel extends AddressBasedTableModel<BSimMatchResult> {

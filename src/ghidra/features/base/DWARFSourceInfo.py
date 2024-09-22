@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import static ghidra.app.util.bin.format.dwarf.attribs.DWARFAttribute.*;
 
 import ghidra.app.util.bin.format.dwarf.attribs.DWARFNumericAttribute;
 
-/**
+# /**
  * Represents the filename and line number info values from DWARF {@link DebugInfoEntry DIEs}.
  * 
  * @param filename String filename 

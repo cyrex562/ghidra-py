@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.fieldpanel.support.RowColLocation;
 import ghidra.app.plugin.core.terminal.vt.*;
 import ghidra.app.plugin.core.terminal.vt.VtHandler.Intensity;
 
-/**
+# /**
  * A text field element for rendering a full line of terminal text
  * 
  * <p>

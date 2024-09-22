@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.trace.model.time.TraceSnapshot;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A sequence of emulator stepping commands, essentially comprising a "point in time."
  */
 public class TraceSchedule implements Comparable<TraceSchedule> {

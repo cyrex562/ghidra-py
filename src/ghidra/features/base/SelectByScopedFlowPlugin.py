@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,7 +47,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.TaskMonitorAdapter;
 
-/**
+# /**
  * This plugin class contains the structure needed for the user to select code
  * blocks that are only reachable by following the flow from the current program
  * location (they are unreachable from any other starting point).

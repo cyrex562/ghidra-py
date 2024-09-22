@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.lldb.manager.evt.*;
 import agent.lldb.manager.impl.LldbManagerImpl;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Implementation of {@link LldbManager#continue()}
  */
 public class LldbContinueCommand extends AbstractLldbCommand<Void> {

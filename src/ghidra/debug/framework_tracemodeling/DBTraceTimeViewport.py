@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.trace.model.time.schedule.TraceSchedule;
 import ghidra.util.*;
 import ghidra.util.datastruct.ListenerSet;
 
-/**
+# /**
  * Computes and tracks the "viewport" resulting from forking patterns encoded in snapshot schedules
  * 
  * <p>

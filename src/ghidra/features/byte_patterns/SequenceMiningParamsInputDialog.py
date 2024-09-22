@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.preferences.Preferences;
 import ghidra.util.HelpLocation;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * 
  * Objects of this class present the user with a pop-up window for setting parameters for the
  * closed sequence pattern mining algorithm.

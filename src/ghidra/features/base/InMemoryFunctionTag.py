@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Objects;
 
 import ghidra.program.model.listing.FunctionTag;
 
-/**
+# /**
  * This class provides an implementation of the {@link FunctionTag} interface for
  * tags that are not yet ready to be inserted into the database. This was created
  * to allow tags to be imported from an external file and made available to the user

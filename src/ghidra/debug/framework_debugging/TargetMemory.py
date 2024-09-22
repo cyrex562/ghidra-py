@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.concurrent.CompletableFuture;
 import ghidra.dbg.DebuggerTargetObjectIface;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * The memory model of a target object
  * 
  * <p>

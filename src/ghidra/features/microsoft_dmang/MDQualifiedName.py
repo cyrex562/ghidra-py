@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.naming;
 
 import mdemangler.*;
 
-/**
+# /**
  * This class represents a qualified name (wiki page parlance) within a name of a
  *  Microsoft mangled symbol. Note that it is slightly different from MDQualifiedBasicName
  *  in that it has an MDReusableName (MDFragmentName) as its first component instead of
@@ -57,5 +57,5 @@ public class MDQualifiedName extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

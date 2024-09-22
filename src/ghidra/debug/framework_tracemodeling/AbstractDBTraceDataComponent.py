@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.trace.model.listing.TraceData;
 import ghidra.trace.model.thread.TraceThread;
 import ghidra.util.LockHold;
 
-/**
+# /**
  * An abstract implementation of a {@link TraceData} for a data component, i.e., field of a struct
  * or element of an array
  *

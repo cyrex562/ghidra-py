@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverterUtil;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * A 0x2c byte COFF section header
  */
 class CoffSectionHeader3 extends CoffSectionHeader {

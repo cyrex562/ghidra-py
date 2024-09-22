@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.SystemUtilities;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A version of the demangler analyzer to handle Rust symbols
  */
 public class RustDemanglerAnalyzer extends AbstractDemanglerAnalyzer {

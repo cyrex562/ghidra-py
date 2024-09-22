@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.decompiler.ClangToken;
 import ghidra.app.decompiler.DecompilerHighlighter;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * A class to manage and track Decompiler highlights created by the user via the UI or from a 
  * script.  This class manages secondary and global highlights.  For a description of these terms, 
  * see {@link ClangHighlightController}.

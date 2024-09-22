@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.pcode.HighVariable;
 import ghidra.util.StringUtilities;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A class that describes Decompiler variables and the fields that they may access.
  */
 public class VariableAccessDR extends DecompilerReference {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.app.plugin.core.analysis.DWARFAnalyzer;
 import ghidra.app.services.Analyzer;
 import ghidra.framework.options.Options;
 
-/**
+# /**
  * Import options exposed by the {@link DWARFAnalyzer}
  */
 public class DWARFImportOptions {

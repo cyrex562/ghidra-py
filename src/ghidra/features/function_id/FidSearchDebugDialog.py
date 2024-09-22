@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.exception.VersionException;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Dialog for searching Fid Databases for debug purposes.  Entering data in any of the fields
  * in this dialog will search the database for all records that match any fields that
  * have data in them and then display the results in a table.

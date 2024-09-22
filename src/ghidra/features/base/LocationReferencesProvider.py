@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,7 +47,7 @@ import ghidra.util.task.SwingUpdateManager;
 import resources.Icons;
 import resources.ResourceManager;
 
-/**
+# /**
  * ComponentProvider for the {@link LocationReferencesPlugin}.
  */
 public class LocationReferencesProvider extends ComponentProviderAdapter

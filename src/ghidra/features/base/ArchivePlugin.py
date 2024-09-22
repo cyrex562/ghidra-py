@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import ghidra.util.task.*;
 
-/**
+# /**
  * The archive plugin provides menu action from the front end allowing the
  * user to archive a project or restore an archived project.
  */

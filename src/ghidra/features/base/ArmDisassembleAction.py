@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.lang.*;
 import ghidra.program.model.listing.Program;
 
 
-/**
+# /**
  * Action for Arm mode disassembly
  */
 

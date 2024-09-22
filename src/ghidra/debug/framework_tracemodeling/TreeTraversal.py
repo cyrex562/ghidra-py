@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.stream.Stream;
 import ghidra.trace.model.Lifespan;
 import ghidra.trace.model.target.*;
 
-/**
+# /**
  * Support for traversing a trace's object tree
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.datatype.modifier;
 
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a pin pointer managed property within a Microsoft mangled symbol.
  */
 public class MDPinPointerProperty extends MDManagedProperty {
@@ -64,5 +64,5 @@ public class MDPinPointerProperty extends MDManagedProperty {
 //	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

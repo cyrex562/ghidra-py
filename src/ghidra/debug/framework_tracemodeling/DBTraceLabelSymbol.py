@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.database.DBObjectColumn;
 import ghidra.util.database.annot.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * The implementation of a label symbol, directly via a database object
  * 
  * <p>

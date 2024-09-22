@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.GhidraOptions;
 import ghidra.app.util.viewer.field.ListingColors;
 import ghidra.app.util.viewer.field.ListingColors.*;
 
-/**
+# /**
  * Class for displaying and manipulating field colors and fonts.
  */
 public class OptionsGui extends JPanel {

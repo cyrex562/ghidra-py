@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.FunctionTag;
 import ghidra.util.Msg;
 import ghidra.xml.*;
 
-/**
+# /**
  * Reads function tags from  @see ghidra.framework.Application#getModuleDataFile(java.lang.String)
  * or a File on the filesystem.
  */

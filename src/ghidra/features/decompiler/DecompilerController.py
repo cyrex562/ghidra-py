@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.util.ProgramSelection;
 import ghidra.util.bean.field.AnnotatedTextFieldElement;
 import utility.function.Callback;
 
-/**
+# /**
  * Coordinates the interactions between the DecompilerProvider, DecompilerPanel, and the
  * DecompilerManager
  */

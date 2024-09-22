@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.gdb.manager.GdbState;
 import agent.gdb.manager.parsing.GdbParsingUtils.GdbParseError;
 import agent.gdb.manager.reason.GdbReason;
 
-/**
+# /**
  * A base class for GDB events notifying of state changes
  * 
  * Subclasses must specify the state implied by GDB issuing the event. This base class will parse

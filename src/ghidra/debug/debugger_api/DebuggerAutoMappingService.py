@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.debug.api.action.AutoMapSpec;
 import ghidra.framework.plugintool.ServiceInfo;
 import ghidra.trace.model.Trace;
 
-/**
+# /**
  * The service to query auto-map settings
  */
 @ServiceInfo(defaultProviderName = "ghidra.app.plugin.core.debug.gui.modules.DebuggerModulesPlugin")

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: Apache License 2.0
  */
 package ghidra.file.formats.android.xml;
@@ -15,7 +15,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import android.content.res.AXmlResourceParser;
 import android.util.TypedValue;
 
-/**
+# /**
  * NOTE: most of this logic was copied form AndroidXmlFileSystem, which had the following
  * note: "most of this code was hijacked from AXMLPrinter.java class!"
  *

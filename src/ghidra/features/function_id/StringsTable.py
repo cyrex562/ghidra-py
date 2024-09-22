@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import db.*;
 import ghidra.program.database.DBObjectCache;
 import ghidra.util.UniversalIdGenerator;
 
-/**
+# /**
  * The table of strings in the FID database.  Due to the high rate of repetition of string
  * values in function and relation records, all strings are "interned" as iconic values
  * in this table, and the primary key is used instead of the value.  Since most strings

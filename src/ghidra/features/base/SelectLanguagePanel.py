@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Aug 7, 2006
  */
 package ghidra.app.util.bean;
@@ -34,7 +34,7 @@ import docking.widgets.table.TableSortingContext;
 import ghidra.program.model.lang.*;
 import ghidra.util.table.GhidraTable;
 
-/**
+# /**
  * A generic reusable panel for selecting a language.
  * Also, supports a filter to limit languages that are displayed.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.symbol.Namespace;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * These nodes are used to organize large lists of nodes into a hierarchical structure based on 
  * the node names. See {@link #organize(List, int, TaskMonitor)} for details on 
  * how this class works.

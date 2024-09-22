@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,7 +47,7 @@ import ghidra.util.table.SelectionNavigationAction;
 import ghidra.util.table.actions.MakeProgramSelectionAction;
 import ghidra.util.task.*;
 
-/**
+# /**
  * This class creates a dialog window for the user to enter data mining parameters
  * for learning function starts, train models, see performance statistics, and
  * apply the models.

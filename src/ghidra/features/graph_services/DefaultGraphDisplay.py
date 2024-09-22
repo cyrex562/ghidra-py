@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,7 +66,7 @@ import ghidra.util.task.TaskLauncher;
 import ghidra.util.task.TaskMonitor;
 import resources.Icons;
 
-/**
+# /**
  * Delegates to a {@link VisualizationViewer} to draw a graph visualization
  */
 public class DefaultGraphDisplay implements GraphDisplay {

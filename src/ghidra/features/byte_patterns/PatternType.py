@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.bitpatterns.info;
 
-/**
+# /**
  * Elements of this enum represent the different types of sequences
  */
 public enum PatternType {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.app.plugin.core.datamgr.util.DataTypeUtils;
 import ghidra.app.services.DataTypeManagerService;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * Action for use in the composite data type editor.
  * This action has help associated with it.
  */

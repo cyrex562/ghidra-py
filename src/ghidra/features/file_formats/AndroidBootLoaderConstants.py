@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.file.formats.android.bootldr;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.Memory;
 
-/**
+# /**
  * Source: https://android.googlesource.com/device/lge/mako/+/android-4.2.2_r1/releasetools.py
  * #
  * # #define BOOTLDR_MAGIC "BOOTLDR!"

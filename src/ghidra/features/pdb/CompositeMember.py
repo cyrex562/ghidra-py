@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb;
 
 import ghidra.program.model.data.BitFieldDataType;
 
-/**
+# /**
  * <code>CompositeMember</code> provides a composite construction member interface for use
  * by the PDB parser.
  */

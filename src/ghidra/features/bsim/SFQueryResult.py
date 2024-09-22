@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.features.bsim.query.description.DatabaseInformation;
 import ghidra.features.bsim.query.protocol.ResponseNearest;
 import ghidra.features.bsim.query.protocol.SimilarityResult;
 
-/**
+# /**
  * The result of a call to {@link SimilarFunctionQueryService#querySimilarFunctions(SFQueryInfo, SFResultsUpdateListener, ghidra.util.task.TaskMonitor)}
  */
 public class SFQueryResult {

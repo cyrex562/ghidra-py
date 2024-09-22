@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.NumericUtilities;
 import ghidra.util.StringUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Class to represent a Flattened Device Tree (FDT) Property. 
  *
  * @see <a href="https://android.googlesource.com/platform/external/dtc/+/refs/heads/master/libfdt/fdt.h#41">include/fdt.h</a>

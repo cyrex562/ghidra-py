@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.Arrays;
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 
-/**
+# /**
  * StreamProcessor implementation to decrypt the data as it is being read.
  */
 public class CartV1StreamDecryptor extends CartV1StreamProcessor {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.dbg.util.ConfigurableFactory;
 import ghidra.program.model.listing.Program;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * A factory for a debugger model
  * 
  * <p>

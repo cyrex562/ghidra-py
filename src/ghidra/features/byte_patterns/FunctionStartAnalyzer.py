@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -955,7 +955,7 @@ public class FunctionStartAnalyzer extends AbstractAnalyzer implements PatternFa
 
 }
 
-/**
+# /**
  * 
  * One time analyzer used to delay function creation until disassembly has settled.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * The Language Specific Data Area (LSDA) serves as a reference to the runtime for how to 
  * respond to an exception. Each function that handles an exception (that is, has a 'catch' 
  * block) has an LSDA, and each exception-prone fragment has a record within the LSDA.

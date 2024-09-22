@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.closedpatternmining;
 
 import java.util.Collection;
 
-/**
+# /**
  * 
  * An object of this class represents a frequent item in a sequence:
  * it is an item along with the support (= number of sequences containing the item)

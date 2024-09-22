@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.jungrapht.visualization.sublayout.VisualGraphCollapser;
 import ghidra.service.graph.AttributedEdge;
 import ghidra.service.graph.AttributedVertex;
 
-/**
+# /**
  * Handles collapsing graph nodes. Had to subclass because the GroupVertex supplier needed
  * access to the items it contain at creation time.
  */

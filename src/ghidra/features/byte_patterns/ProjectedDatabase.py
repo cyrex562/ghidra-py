@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.closedpatternmining;
 import java.util.*;
 import java.util.Map.Entry;
 
-/**
+# /**
  * 
  * A ProjectedDatabase contains all the suffixes of strings in database
  * which have a prefix consistent with prefixSequence

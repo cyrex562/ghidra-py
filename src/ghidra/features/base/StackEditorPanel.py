@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.plugin.core.compositeeditor.CompositeEditorPanel;
 import ghidra.program.model.listing.Program;
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Panel for editing a function stack.
  */
 public class StackEditorPanel extends CompositeEditorPanel {

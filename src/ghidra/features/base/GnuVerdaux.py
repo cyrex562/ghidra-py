@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import ghidra.util.exception.DuplicateNameException;
 
 import java.io.IOException;
 
-/**
+# /**
  * Auxiliary version information.
  * <pre>
  * typedef struct {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import com.google.common.base.Function;
 import functioncalls.graph.FcgEdge;
 import ghidra.util.ColorUtils;
 
-/**
+# /**
  * Generates colors for a given {@link FcgEdge}
  */
 public class FcgEdgePaintTransformer implements Function<FcgEdge, Color> {

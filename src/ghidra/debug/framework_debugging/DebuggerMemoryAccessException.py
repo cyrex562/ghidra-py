@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.dbg.error;
 import ghidra.dbg.target.TargetMemory;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * An exception for when there is an unknown (possibly permanent) condition preventing memory access
  * via {@link TargetMemory#readMemory(Address, int)} and
  * {@link TargetMemory#writeMemory(Address, byte[])}

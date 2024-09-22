@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: LICENSE
  */
 package ghidra.machinelearning.functionfinding;

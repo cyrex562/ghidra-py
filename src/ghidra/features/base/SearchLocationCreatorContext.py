@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf.external;
 
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Information outside of a location string that might be needed to create a new {@link SearchLocation}
  * instance.
  */

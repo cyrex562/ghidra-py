@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.graph.viewer.GraphViewer;
 import ghidra.graph.viewer.GraphViewerUtils;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A graph job to layout a given set of graph vertices.  Most of the work for this class is
  * done in {@link #arrangeNewVertices()}.
  * 

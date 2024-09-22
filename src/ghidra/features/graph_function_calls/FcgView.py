@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import functioncalls.plugin.FunctionCallGraphPlugin;
 import ghidra.graph.viewer.VisualGraphView;
 import ghidra.graph.viewer.options.VisualGraphOptions;
 
-/**
+# /**
  * A graph view for the {@link FunctionCallGraphPlugin}
  */
 public class FcgView extends VisualGraphView<FcgVertex, FcgEdge, FunctionCallGraph> {

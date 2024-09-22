@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.task.*;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Generate a file of all components and actions in the 
  */
 //@formatter:off

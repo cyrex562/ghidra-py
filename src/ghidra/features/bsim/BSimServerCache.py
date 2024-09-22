@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.features.bsim.query.FunctionDatabase.ErrorCategory;
 import ghidra.features.bsim.query.description.DatabaseInformation;
 import ghidra.features.bsim.query.facade.QueryDatabaseException;
 
-/**
+# /**
  * Caches BSim database info for a Bsim database connection
  */
 public class BSimServerCache {

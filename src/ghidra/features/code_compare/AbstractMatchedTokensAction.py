@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.features.codecompare.graphanalysis.TokenBin;
 import ghidra.program.model.listing.Program;
 import ghidra.util.datastruct.Duo.Side;
 
-/**
+# /**
  * This is a base class for actions in a {@link DecompilerDiffCodeComparisonPanel}
  */
 public abstract class AbstractMatchedTokensAction extends DockingAction {

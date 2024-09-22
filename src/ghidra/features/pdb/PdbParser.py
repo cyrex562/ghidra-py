@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.formats.gfilesystem.FileSystemService;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Parser for detecting the appropriate {@link AbstractPdb} for the filename given.
  *  It then creates and returns the appropriate {@link AbstractPdb} object.
  */

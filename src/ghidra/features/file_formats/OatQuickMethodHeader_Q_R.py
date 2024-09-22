@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android10-release/runtime/oat_quick_method_header.h#158">android10-release/runtime/oat_quick_method_header.h</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android11-release/runtime/oat_quick_method_header.h#175">android11-release/runtime/oat_quick_method_header.h</a>

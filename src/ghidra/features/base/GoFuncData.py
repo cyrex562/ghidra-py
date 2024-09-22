@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.util.NumericUtilities;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * A structure that golang generates that contains metadata about a function.
  */
 @StructureMapping(structureName = "runtime._func")

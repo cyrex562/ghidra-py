@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pdb.pdbapplicator;
 
-/**
+# /**
  * Used for creating a wrapper for when there is not associated type to the PDB type (or if we
  * have not yet created the association).
  */

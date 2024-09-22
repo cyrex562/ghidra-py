@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.datatype.modifier;
 
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a CLI Array managed property of a modifier type within a Microsoft
  * mangled symbol.
  */
@@ -100,5 +100,5 @@ public class MDCLIArrayProperty extends MDManagedProperty {
 //	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

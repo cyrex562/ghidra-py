@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.pcode.exec.trace.TracePcodeExecutorState;
 import ghidra.program.model.address.AddressSpace;
 import ghidra.program.model.lang.Language;
 
-/**
+# /**
  * The state piece for holding taint marks in the emulator's machine state
  * 
  * <p>

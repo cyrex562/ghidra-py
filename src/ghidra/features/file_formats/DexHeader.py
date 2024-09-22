@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.NumericUtilities;
 import ghidra.util.datastruct.FixedSizeHashMap;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * https://android.googlesource.com/platform/art/+/master/libdexfile/dex/dex_file.h#91
  */
 public class DexHeader implements StructConverter {

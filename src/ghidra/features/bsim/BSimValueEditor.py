@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.JComponent;
 import generic.theme.GThemeDefaults.Colors;
 import generic.theme.GThemeDefaults.Colors.Palette;
 
-/**
+# /**
  * Interface for BSim filter value editors. Some BSim editors can support multiple values, so the 
  * getValues, setValues methods all work on lists of strings.
  */

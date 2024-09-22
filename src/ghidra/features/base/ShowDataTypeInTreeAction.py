@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import generic.theme.GIcon;
 import ghidra.app.services.DataTypeManagerService;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * Shows the editor's data type in the UI using the {@link DataTypeManagerService}.
  */
 public class ShowDataTypeInTreeAction extends CompositeEditorTableAction {

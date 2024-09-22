@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.viewer.field.Annotation;
 import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * A subclass of {@link FieldElement} that allows for mouse handling callbacks via the
  * {@link #handleMouseClicked(Navigatable, ServiceProvider)} method.  This class
  * is based upon {@link Annotation} objects, which are elements that perform actions when the

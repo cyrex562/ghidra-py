@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import SWIG.*;
 import agent.lldb.lldb.DebugClient;
 import agent.lldb.lldb.DebugThreadInfo;
 
-/**
+# /**
  * The event corresponding with SBThread.eBroadcastBitSelectedFrameChanged
  */
 public class LldbSelectedFrameChangedEvent extends AbstractLldbEvent<String> {

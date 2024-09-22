@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.database.DBCachedObjectStoreFactory.DBFieldCodec;
 import ghidra.util.database.DirectedIterator.Direction;
 import ghidra.util.database.annot.DBAnnotatedField;
 
-/**
+# /**
  * An object store backed by a {@link db.Table}
  *
  * <p>

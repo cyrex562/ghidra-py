@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.sql.Statement;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * {@link CachedStatement} provides a cached {@link Statement} container which is intended to
  * supply a reusable instance for use within a single thread.  Attempts to use the statement
  * in multiple threads is considered unsafe.

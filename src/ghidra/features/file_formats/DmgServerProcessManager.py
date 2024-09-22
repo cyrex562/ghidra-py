@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.timer.Watchdog;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Manages the DMG server process and communication with it.
  * <p>
  * All IO to the server process takes place in a single background worker thread

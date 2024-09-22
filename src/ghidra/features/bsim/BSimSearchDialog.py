@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.program.database.symbol.FunctionSymbol;
 import ghidra.util.HelpLocation;
 import ghidra.util.MessageType;
 
-/**
+# /**
  * Dialog for initiating a BSim similar function match search.
  */
 public class BSimSearchDialog extends AbstractBSimSearchDialog {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.machinelearning.functionfinding;
 import ghidra.framework.plugintool.ComponentProviderAdapter;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * This class is used by {@link RandomForestFunctionFinderPlugin}, which can create various
  * components for displaying potential function starts in a given program (and related info).
  * The purpose of this class is to facilitate closing all components associated with a program

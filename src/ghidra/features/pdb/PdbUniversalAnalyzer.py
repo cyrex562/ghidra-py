@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.task.TaskMonitor;
 //  classes and should be reorganized.  For example, why is PdbParserNEW in control of the logic
 //  of where a PDB file might be found?
 
-/**
+# /**
  * PDB Universal Reader/Analyzer.  Uses raw PDB files (not XML-converted PDBs). Attempts to
  * apply the information to a program.  It has Universal in the name to describe the fact that
  * it written in java, making it platform independent, unlike a previous PDB analyzer.

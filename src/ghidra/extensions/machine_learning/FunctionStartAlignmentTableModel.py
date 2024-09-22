@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.List;
 
 import docking.widgets.table.AbstractSortedTableModel;
 
-/**
+# /**
  * A table used to show how many functions have addresses aligned (or not aligned) relative to a 
  * given modulus.
  */

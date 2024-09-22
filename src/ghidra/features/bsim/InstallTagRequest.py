@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.CategoryRecord;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Request that a new function tag be installed for a specific BSim server
  *
  */

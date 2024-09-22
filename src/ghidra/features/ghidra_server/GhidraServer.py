@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -58,7 +58,7 @@ import ghidra.util.exception.DuplicateNameException;
 import utilities.util.FileUtilities;
 import utility.application.ApplicationLayout;
 
-/**
+# /**
  * <code>GhidraServer</code> provides the main Ghidra server application and
  * implements GhidraServerHandle which facilitates remote access to services
  * provided by a repository manager. The single instance of GhidraServer is set

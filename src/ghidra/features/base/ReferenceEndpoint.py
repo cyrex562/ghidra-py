@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.table.field;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.symbol.*;
 
-/**
+# /**
  * An object that is one end of a {@link Reference}.  This is used by table models that want to
  * show all references from one location to many other locations or models that wish to 
  * show all references to one location from many other locations.

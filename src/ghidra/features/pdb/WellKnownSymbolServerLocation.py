@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import pdb.symbolserver.SymbolServer;
 import pdb.symbolserver.ui.LoadPdbDialog.StatusText;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Represents a well-known symbol server location.
  * <p>
  * See the PDB_SYMBOL_SERVER_URLS.pdburl file.

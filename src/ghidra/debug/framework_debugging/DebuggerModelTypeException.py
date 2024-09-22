@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 import ghidra.dbg.target.TargetObject;
 import ghidra.dbg.util.PathUtils;
 
-/**
+# /**
  * 
  * @implNote I am not re-using {@link ClassCastException} here, as I don't want any of those thrown
  *           internally to be passed to the client.

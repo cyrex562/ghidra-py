@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.concurrent.CompletableFuture;
 
 import agent.frida.manager.cmd.FridaPendingCommand;
 
-/**
+# /**
  * The interface for frida command implementations
  *
  * Commands are executed by frida in serial. In order to distinguish the likely cause of events, the

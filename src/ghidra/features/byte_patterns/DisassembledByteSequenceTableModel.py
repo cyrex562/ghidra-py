@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.table.column.GColumnRenderer;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This class extends {@link ByteSequenceTableModel} to add a column displaying
  * the instructions disassembled from the bytes.
  *

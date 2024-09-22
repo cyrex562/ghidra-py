@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.*;
 
 import ghidra.app.util.bin.format.dwarf.DWARFUtil;
 
-/**
+# /**
  * DWARF expression opcode consts from www.dwarfstd.org/doc/DWARF4.pdf
  */
 public class DWARFExpressionOpCodes {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.NonThreadedXmlPullParserImpl;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Run patterns over all memory blocks, accumulate stats for
  *    1) hits for each pattern
  *    2) false positives for each pattern

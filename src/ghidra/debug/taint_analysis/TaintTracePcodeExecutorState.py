@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.pcode.emu.taint.plain.TaintPcodeExecutorState;
 import ghidra.pcode.exec.trace.*;
 import ghidra.taint.model.TaintVec;
 
-/**
+# /**
  * A paired concrete-plus-taint trace-integrated state
  *
  * <p>

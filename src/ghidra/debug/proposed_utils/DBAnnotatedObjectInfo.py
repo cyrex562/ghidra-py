@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.lang.annotation.*;
 
 import ghidra.util.database.DBAnnotatedObject;
 
-/**
+# /**
  * Required annotation for {@link DBAnnotatedObject}
  */
 @Target(ElementType.TYPE)

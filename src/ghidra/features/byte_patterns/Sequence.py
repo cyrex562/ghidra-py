@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.closedpatternmining;
 
 import java.util.List;
 
-/**
+# /**
  * 
  * An object in this class in represents a string of characters along
  * with a count.  The count represents the number of occurrences of the

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.script;
 
 import org.apache.logging.log4j.message.Message;
 
-/**
+# /**
  * A simple {@link Message} implementation that allows us to use the filtering capability
  * of log4j.  This class has a formatted and unformatted message.  log4j writes the the formatted
  * message out.  Our formatted message is the original message given to us.   We use the

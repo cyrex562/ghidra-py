@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.script;
 
-/**
+# /**
  * A simple listener to know when users have chosen a script in the {@link ScriptSelectionDialog}
  */
 public interface ScriptEditorListener {

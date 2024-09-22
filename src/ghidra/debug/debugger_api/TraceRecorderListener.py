@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.debug.api.model;
 
-/**
+# /**
  * A listener for state changes in a recorded target, or in the recorder itself
  * 
  * <P>

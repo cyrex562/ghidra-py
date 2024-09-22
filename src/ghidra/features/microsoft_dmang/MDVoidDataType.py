@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.datatype;
 
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a void data type within a Microsoft mangled symbol.
  */
 public class MDVoidDataType extends MDDataType {

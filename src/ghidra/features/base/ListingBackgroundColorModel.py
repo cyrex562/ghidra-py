@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import docking.widgets.fieldpanel.support.BackgroundColorModel;
 import ghidra.app.util.viewer.util.AddressIndexMap;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * This interface extends the  {@link BackgroundColorModel}  exclusively for BackgroundColorModels used by
  * the ListingPanel.  The {@link BackgroundColorModel} is a general contract for dealing with
  * background colors in a {@link FieldPanel}.  ListingBackgroundColorModels require additional

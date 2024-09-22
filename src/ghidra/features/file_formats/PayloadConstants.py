@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.ota_update;
 
-/**
+# /**
  * https://android.googlesource.com/platform/system/update_engine/+/refs/heads/android10-release/payload_consumer/payload_constants.cc
  * 
  * https://android.googlesource.com/platform/system/update_engine/+/refs/heads/android10-release/payload_generator/payload_file.h

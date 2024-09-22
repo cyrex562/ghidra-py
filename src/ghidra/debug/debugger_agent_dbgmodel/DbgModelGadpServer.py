@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.async.AsyncUtils;
 import ghidra.dbg.agent.AgentWindow;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The interface for the GADP-{@code dbgeng.dll} server
  * 
  * <p>

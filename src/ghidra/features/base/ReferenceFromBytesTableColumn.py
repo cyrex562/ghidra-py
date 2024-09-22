@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.util.table.field;
 import ghidra.app.plugin.core.analysis.ReferenceAddressPair;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * This table field displays the bytes of the code unit at the FromAddress 
  * for the reference or possible reference address pair
  * associated with a row in the table.

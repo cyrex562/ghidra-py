@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.Pointer;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Applier for {@link AbstractProcedureMsType} types.
  */
 public class ProcedureTypeApplier extends AbstractFunctionTypeApplier {

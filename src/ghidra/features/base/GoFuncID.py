@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang.rtti;
 
-/**
+# /**
  * List of function ids for runtime._func (GoFuncData) funcID field.
  */
 public enum GoFuncID {

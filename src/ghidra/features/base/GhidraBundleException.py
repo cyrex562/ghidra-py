@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleException;
 
-/**
+# /**
  * {@link GhidraBundleException}s store the context associated with exceptions thrown during bundle operations.
  */
 public class GhidraBundleException extends OSGiException {

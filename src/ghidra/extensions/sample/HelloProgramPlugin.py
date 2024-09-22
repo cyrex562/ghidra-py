@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import docking.action.DockingAction;
 import docking.action.MenuData;
 
 
-/**
+# /**
   * Plugin to demonstrate handling of Program within a plugin.  This introduces
   * Event handling, Services, and Dependencies on other plugins.
   */

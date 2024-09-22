@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import com.sun.security.auth.module.Krb5LoginModule;
 import ghidra.framework.remote.GhidraPrincipal;
 import ghidra.server.UserManager;
 
-/**
+# /**
  * A Ghidra {@link AuthenticationModule} that authenticates against an Active Directory Kerberos system
  * using JAAS's {@link Krb5LoginModule}.
  * <p>

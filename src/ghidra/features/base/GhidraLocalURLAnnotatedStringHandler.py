@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.viewer.field;
 
-/**
+# /**
  * This implementation expands {@link URLAnnotatedStringHandler} providing an example form
  * of a local project Ghidra URL.
  */

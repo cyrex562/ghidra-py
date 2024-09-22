@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.pcode.HighFunction;
 import ghidra.service.graph.*;
 
-/**
+# /**
  * GraphDisplayListener for a PCode data flow graph
  */
 class PCodeDfgDisplayListener extends AddressBasedGraphDisplayListener {

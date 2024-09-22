@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.event.MouseEvent;
 import generic.theme.GColor;
 import ghidra.framework.options.Options;
 
-/**
+# /**
  * Contains miscellaneous defines used for options.
  */
 public interface GhidraOptions {

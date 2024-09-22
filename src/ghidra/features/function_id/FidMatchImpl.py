@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.feature.fid.db.LibraryRecord;
 import ghidra.feature.fid.plugin.HashLookupListMode;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Implementation of the FidMatch interface.
  */
 class FidMatchImpl implements FidMatch {

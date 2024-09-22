@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.string.variadic;
 
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Class for encapsulating a variadic function call
  */
 public class FunctionCallData {

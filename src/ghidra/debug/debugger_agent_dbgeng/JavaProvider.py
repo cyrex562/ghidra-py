@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import agent.dbgeng.impl.dbgeng.client.DebugClientInternal;
 import agent.dbgeng.jna.dbgeng.client.WrapIDebugClient;
 import agent.dbgeng.jna.javaprovider.JavaProviderNative;
 
-/**
+# /**
  * Wrapper for "javaprovider" plugin library
  * 
  * @deprecated In one (abandoned) use case, the SCTL server can be loaded as a

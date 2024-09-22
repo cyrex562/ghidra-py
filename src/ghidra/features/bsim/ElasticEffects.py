@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Map.Entry;
 import ghidra.features.bsim.gui.filters.BSimFilterType;
 import ghidra.features.bsim.query.protocol.*;
 
-/**
+# /**
  * Container for collecting an elasticsearch query filter document from BSimFilter elements
  *
  */

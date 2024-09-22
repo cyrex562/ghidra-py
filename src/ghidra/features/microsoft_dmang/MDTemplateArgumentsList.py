@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import mdemangler.datatype.complex.MDComplexType;
 import mdemangler.datatype.extended.MDExtendedType;
 import mdemangler.datatype.modifier.*;
 
-/**
+# /**
  * This class represents the template arguments list portion of a
  * Microsoft mangled symbol.
  */
@@ -215,5 +215,5 @@ public class MDTemplateArgumentsList extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

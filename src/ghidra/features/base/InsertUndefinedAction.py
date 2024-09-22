@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import generic.theme.GIcon;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Action for use in the structure data type editor.
  * This action has help associated with it.
  */

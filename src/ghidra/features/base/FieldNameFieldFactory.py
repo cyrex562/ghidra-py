@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.listing.Data;
 import ghidra.program.util.FieldNameFieldLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
   *  Generates Data Field (structure field names and array indexes) name Fields.
   */
 public class FieldNameFieldFactory extends FieldFactory {

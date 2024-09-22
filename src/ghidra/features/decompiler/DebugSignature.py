@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.pcode.Decoder;
 import ghidra.program.model.pcode.DecoderException;
 
-/**
+# /**
  * A feature extracted from a function, with an additional description of what information is
  * incorporated into the feature.  The feature may incorporate data-flow and/or control-flow
  * information from the function. Internally, the feature is a 32-bit hash of this information, but

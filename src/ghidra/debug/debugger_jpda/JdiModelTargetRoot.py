@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.dbg.target.TargetMethod.TargetParameterMap;
 import ghidra.dbg.target.schema.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <p>
  * TODO: It would probably be better to implement {@link TargetLauncher} on each connector, rather
  * than using "focus" (a UI concept) to decide which to use. Additionally, for each connector, we

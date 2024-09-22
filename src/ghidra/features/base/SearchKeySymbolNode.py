@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.Symbol;
 
-/**
+# /**
  * A special version of {@link SymbolNode} that is used as a key when searching for other 
  * symbol nodes.  This class allows us to search for another symbol node using whatever 
  * name is desired.

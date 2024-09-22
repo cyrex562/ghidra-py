@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.program.model.symbol.Namespace;
 
-/**
+# /**
  * Represents a demangled string.  This class is really just a placeholder for demangled 
  * information.  See {@link DemangledObject} for a class that represents software concepts that
  * can be applied to a program.   The {@link DemangledObject} may use instances of this class

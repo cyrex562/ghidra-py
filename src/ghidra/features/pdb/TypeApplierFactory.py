@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Map;
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 import ghidra.app.util.bin.format.pdb2.pdbreader.type.*;
 
-/**
+# /**
  * Pseudo-factory for creating the {@link MsTypeApplier} for the {@link AbstractMsType}
  * indicated by the AbstractMsType and also its {@link RecordNumber}. This class also performs
  * caching of the applier by its RecordNumber.

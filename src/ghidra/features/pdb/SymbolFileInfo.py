@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.task.TaskMonitor;
 import pdb.PdbUtils;
 
-/**
+# /**
  * Information about a pdb symbol file: its filename and its 
  * {@link PdbIdentifiers pdb guid/id fingerprints}
  * 

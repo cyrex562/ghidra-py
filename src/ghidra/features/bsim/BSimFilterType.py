@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.features.bsim.query.protocol.FilterAtom;
 import ghidra.xml.XmlElement;
 import utility.function.Callback;
 
-/** 
+# /** 
  * The base class for BSim filter types. Each filter type represents a different filter criteria 
  * that can be applied to a BSim Search query. They have a human readable description and a way
  * to convert string values for the filter into SQL queries.

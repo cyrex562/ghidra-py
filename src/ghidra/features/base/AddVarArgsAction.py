@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.util.*;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Action that changes a Function so that it has VarArgs (a variable argument list).
  */
 public class AddVarArgsAction extends ListingContextAction {

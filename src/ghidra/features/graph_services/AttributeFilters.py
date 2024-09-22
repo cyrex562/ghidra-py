@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import com.google.common.collect.Multiset;
 import generic.theme.GThemeDefaults.Colors;
 import ghidra.service.graph.Attributed;
 
-/**
+# /**
  * A filtering mechanism where filters (and filter control buttons) are discovered and created
  * based on the contents of the Attribute map
  */

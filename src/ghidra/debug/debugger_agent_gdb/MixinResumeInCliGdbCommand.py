@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.gdb.manager.evt.*;
 import agent.gdb.manager.impl.*;
 import agent.gdb.manager.impl.GdbManagerImpl.Interpreter;
 
-/**
+# /**
  * A marker and mixin for dealing with commands where resuming in a secondary (mi2) ui seems
  * problematic.
  * 

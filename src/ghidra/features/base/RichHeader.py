@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pe.rich.RichHeaderRecord;
 import ghidra.program.model.data.DataType;
 import ghidra.util.DataConverter;
 
-/**
+# /**
  * The "Rich" header contains encoded metadata about the tool chain used to generate the binary.
  * This class decodes and writes the Rich header (if it exists).
  */

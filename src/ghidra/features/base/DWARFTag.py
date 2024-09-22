@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.program.model.symbol.SymbolType;
 
-/**
+# /**
  * Identifier/purpose of a DWARF DIE record.
  * <p>
  * Users of this enum should be tolerant of unknown tag id values.  See 

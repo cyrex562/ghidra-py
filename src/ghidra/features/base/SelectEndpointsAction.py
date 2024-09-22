@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import resources.*;
 
 
 
-/**
+# /**
  * An action for creating a {@link ProgramSelection} from rows of an {@link AddressRangeTableModel}
  * using either the min addresses or the max addresses
  */

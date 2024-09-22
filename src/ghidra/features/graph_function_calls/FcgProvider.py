@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -59,7 +59,7 @@ import ghidra.util.task.TaskMonitor;
 import resources.Icons;
 import util.CollectionUtils;
 
-/**
+# /**
  * The primary component provider for the {@link FunctionCallGraphPlugin}
  */
 public class FcgProvider

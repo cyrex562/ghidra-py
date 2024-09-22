@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.TreeMap;
 
 import ghidra.formats.gfilesystem.FSRL;
 
-/**
+# /**
  * A {@link ByteProvider} that is a concatenation of sub-ranges of another ByteProvider, also
  * allowing for non-initialized (sparse) regions.
  * <p> 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.features.base.memsearch.mnemonic;
 
-/**
+# /**
  * Represents a filter for a single instruction. This defines what portions of the instruction will
  * be masked.
  */

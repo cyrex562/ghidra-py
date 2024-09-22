@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Auto-detects which {@link DWARFSectionProvider} matches a Ghidra program.
  */
 public class DWARFSectionProviderFactory {

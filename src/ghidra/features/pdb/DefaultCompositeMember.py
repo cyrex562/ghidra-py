@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.datastruct.RangeMap;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>CompositeMember</code> provides the ability to process PDB data-type records and
  * incrementally build-up composite structure and union data-types from a flattened offset-based
  * list of members which may include embedded anonymous composite members.  Composite members

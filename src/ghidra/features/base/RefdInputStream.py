@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.formats.gfilesystem;
 
 import java.io.*;
 
-/**
+# /**
  * An {@link InputStream} wrapper that keeps a {@link FileSystemRef} pinned.
  */
 public class RefdInputStream extends InputStream {

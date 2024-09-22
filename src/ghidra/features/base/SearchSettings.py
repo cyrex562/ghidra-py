@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.features.base.memsearch.format.SearchFormat;
 import ghidra.program.model.address.AddressSet;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Immutable container for all the relevant search settings.
  */
 public class SearchSettings {

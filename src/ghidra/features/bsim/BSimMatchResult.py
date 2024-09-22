@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.features.bsim.query.protocol.*;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * A possible BSim function match.  The similarity 
  * of this function is scored and denoted by {@link #getSimilarity() similarity}.  The 
  * significance of the match is denoted by {@link #getSignificance()}.

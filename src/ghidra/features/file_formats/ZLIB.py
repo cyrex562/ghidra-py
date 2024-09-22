@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.zip.*;
 
-/**
+# /**
  * 
  * TODO make this more memory efficient!!
  *

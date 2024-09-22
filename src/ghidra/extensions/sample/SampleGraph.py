@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.examples.graph;
 import ghidra.graph.graphs.FilteringVisualGraph;
 import ghidra.graph.viewer.layout.VisualGraphLayout;
 
-/**
+# /**
  * A graph for the {@link SampleGraphPlugin} that allows for filtering
  */
 public class SampleGraph extends FilteringVisualGraph<SampleVertex, SampleEdge> {

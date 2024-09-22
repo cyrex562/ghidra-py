@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.file.formats.android.cdex;
 
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Android .CDEX files.
  * 
  * CompactDex is a currently ART internal dex file format that aims to reduce

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package generic;
 import java.util.Iterator;
 import java.util.function.Function;
 
-/**
+# /**
  * TODO Document me
  * 
  * Note the innerFactory may return null to skip an outer element.

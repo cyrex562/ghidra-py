@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.app.decompiler.ClangToken;
 import ghidra.app.decompiler.component.ClangHighlightController;
 import ghidra.app.plugin.core.decompile.DecompilerActionContext;
 
-/**
+# /**
  * Sets the secondary highlight on the selected token
  * 
  * @see ClangHighlightController

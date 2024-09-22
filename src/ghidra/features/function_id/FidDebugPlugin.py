@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -53,7 +53,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * The FID program plugin is actually ONLY needed for administrative actions in FID.
  * The FID function name search analyzer will occur in Ghidra with or without this
  * plugin enabled.  This plugin has many actions, such as creating, attaching, enabling,

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.pcode.exec.trace.data.*;
 import ghidra.taint.model.TaintVec;
 import ghidra.trace.model.guest.TracePlatform;
 
-/**
+# /**
  * A trace-integrated emulator with taint analysis
  */
 public class TaintTracePcodeEmulator extends AuxTracePcodeEmulator<TaintVec> {

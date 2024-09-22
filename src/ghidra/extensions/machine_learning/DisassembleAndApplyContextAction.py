@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.model.listing.ProgramContext;
 import ghidra.util.HelpLocation;
 import ghidra.util.table.GhidraTable;
 
-/**
+# /**
  * A {@link DockingAction} for disassembling at addresses corresponding to rows in a 
  * {@link FunctionStartTableModel}.  Context register values specified before training
  * will be applied before disassembly.

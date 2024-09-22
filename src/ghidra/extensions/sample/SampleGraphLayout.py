@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.examples.graph.*;
 import ghidra.graph.VisualGraph;
 import ghidra.graph.viewer.layout.JungWrappingVisualGraphLayoutAdapter;
 
-/**
+# /**
  * A {@link SampleGraphPlugin} layout that can be used to apply existing Jung layouts.
  */
 public class SampleGraphLayout

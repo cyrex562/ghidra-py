@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -23,7 +23,7 @@ import ghidra.program.util.AddressTranslator;
 
 import java.util.HashMap;
 
-/**
+# /**
  * ExternalsAddressTranslator is a translator that can be used for merging external functions and
  * labels. <br>
  * Important: Before using this with ProgramMerge you must add all the address pairs that

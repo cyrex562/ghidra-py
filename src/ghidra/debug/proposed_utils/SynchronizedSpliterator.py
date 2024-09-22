@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Spliterator;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
 
-/**
+# /**
  * Wraps an unsynchronized spliterator in one that synchronizes on a given object's intrinsic lock,
  * often the collection that provided the stream or spliterator.
  * 

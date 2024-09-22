@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.framework.plugintool.util.PluginStatus;
 import ghidra.util.Msg;
 import ghidra.util.Swing;
 
-/**
+# /**
  * The plugin that provides {@link TerminalService}
  */
 @PluginInfo(

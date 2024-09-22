@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.timer.GTimer;
 
-/**
+# /**
  * Provides methods for dealing with GFilesystem files and {@link GFileSystem filesystems}.
  * <p>
  * Most methods take {@link FSRL} references to files as a way to decouple dependencies and

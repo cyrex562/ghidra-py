@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.dbgeng.dbgeng;
 
-/**
+# /**
  * Data copied from a {@code DEBUG_SYMBOL_ENTRY} as defined in {@code dbgeng.h}.
  * 
  * TODO: Some enums, flags, etc., to help interpret some of the fields.

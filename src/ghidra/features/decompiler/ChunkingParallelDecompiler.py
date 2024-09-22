@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.task.TaskMonitor;
 
 import java.util.*;
 
-/**
+# /**
  * A class that simplifies some the concurrent datastructure setup required for decompiling 
  * functions.  This class is meant to be used when you wish to decompile functions in groups 
  * (or chunks) rather than decompiling all functions at once.

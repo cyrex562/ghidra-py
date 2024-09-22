@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import docking.widgets.table.AbstractSortedTableModel;
 import ghidra.program.model.symbol.LabelHistory;
 
-/**
+# /**
  * Table model for showing label history.
  */
 class LabelHistoryTableModel extends AbstractSortedTableModel<LabelHistory> {

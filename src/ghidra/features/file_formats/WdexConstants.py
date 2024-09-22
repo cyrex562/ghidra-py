@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.file.formats.android.wdex;
 
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Android .WDEX files.
  * 
  * https://android.googlesource.com/platform/art/+/master/runtime/vdex_file.h

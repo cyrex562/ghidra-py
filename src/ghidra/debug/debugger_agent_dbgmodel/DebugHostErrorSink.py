@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import com.sun.jna.platform.win32.WinNT.HRESULT;
 
 import agent.dbgmodel.dbgmodel.UnknownEx;
 
-/**
+# /**
  * A wrapper for {@code IDebugHostErrorSink} and its newer variants.
  */
 public interface DebugHostErrorSink extends UnknownEx {

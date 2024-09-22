@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.util.DefaultLanguageService;
 import ghidra.trace.model.Trace;
 import ghidra.trace.model.target.TraceObject;
 
-/**
+# /**
  * An "opinion" which offers every known compiler, but with only default mapping logic.
  */
 public class OverrideDebuggerPlatformOpinion extends AbstractDebuggerPlatformOpinion {

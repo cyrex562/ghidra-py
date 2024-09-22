@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 import ghidra.app.util.datatype.microsoft.GUID;
 
-/**
+# /**
  * This class represents the OEM-Defined symbol.
  * <P>
  * Note: we do not necessarily understand each of these symbol type classes.  Refer to the

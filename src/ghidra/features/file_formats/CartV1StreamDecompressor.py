@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
 
-/**
+# /**
  * StreamProcessor implementation to decompress the data as it is being read.
  *
  * CaRT zlib decompress. Reimplementation from Ghidra's default to not

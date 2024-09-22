@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.format;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Converts byte values to Integer represented as an 4-byte/8-digit hex number.
  */
 public class HexIntegerFormatModel extends HexValueFormatModel {

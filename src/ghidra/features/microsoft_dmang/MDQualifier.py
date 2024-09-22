@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.naming;
 
 import mdemangler.*;
 
-/**
+# /**
  * This class represents one component of a namespace qualification (see
  * MDQualification).
  */
@@ -238,5 +238,5 @@ public class MDQualifier extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

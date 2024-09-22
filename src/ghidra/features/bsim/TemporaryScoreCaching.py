@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.description.ExecutableRecord;
 
-/**
+# /**
  * An in-memory score cacher.  It supports commitSelfScore() and getSelfScore()
  * calls, but the commits have no backing storage and vanish with each new instantiation
  * of this object. 

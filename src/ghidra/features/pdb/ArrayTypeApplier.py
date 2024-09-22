@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Applier for {@link AbstractArrayMsType} types.
  */
 public class ArrayTypeApplier extends MsDataTypeApplier {

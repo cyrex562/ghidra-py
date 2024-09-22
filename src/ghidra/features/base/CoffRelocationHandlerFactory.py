@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.coff.relocation;
 import ghidra.app.util.bin.format.coff.CoffFileHeader;
 import ghidra.util.classfinder.ClassSearcher;
 
-/**
+# /**
  * A class that gets the appropriate COFF relocation handler for a specific COFF.
  */
 public final class CoffRelocationHandlerFactory {

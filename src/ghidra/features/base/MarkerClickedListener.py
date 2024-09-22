@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.viewer.listingpanel;
 
 import ghidra.program.util.MarkerLocation;
 
-/**
+# /**
  *  Interface for notifications when the user double-clicks in the marker margin
  */
 public interface MarkerClickedListener {

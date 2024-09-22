@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.lldb.manager;
 import SWIG.StateType;
 import ghidra.util.TriConsumer;
 
-/**
+# /**
  * A listener for changes in LLDB's state
  */
 public interface LldbStateListener extends TriConsumer<StateType, StateType, LldbCause> {

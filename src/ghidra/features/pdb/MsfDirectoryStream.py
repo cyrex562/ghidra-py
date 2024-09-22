@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 
-/**
+# /**
  * An MSF has a stream containing directory information.  It is called the Directory stream, and
  *  in the older style MSF format, it was the same as a user (@link MsfStream}.  Newer versions of
  *  MSF needed a higher capacity stream

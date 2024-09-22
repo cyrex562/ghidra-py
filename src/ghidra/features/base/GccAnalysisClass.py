@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.util.CodeUnitInsertionException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An abstract class that can be extended by other classes that perform part of the gcc analysis.
  * It provides some basic data types and methods for use by the extending class.
  */

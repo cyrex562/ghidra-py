@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.decompiler;
 
-/**
+# /**
  * A service that allows clients to create highlights in the form of background colors for
  * {@link ClangToken}s in the Decompiler UI.
  * 

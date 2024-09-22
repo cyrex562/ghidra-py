@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.dbg.attributes.TargetDataType;
 import ghidra.dbg.target.schema.TargetAttributeType;
 import ghidra.dbg.util.TargetDataTypeConverter;
 
-/**
+# /**
  * A data type that would have a name in Ghidra's data type manager
  * 
  * <ul>

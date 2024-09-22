@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.features.bsim.query.SQLFunctionDatabase;
 import ghidra.features.bsim.query.protocol.BSimFilter;
 import ghidra.features.bsim.query.protocol.FilterAtom;
 
-/**
+# /**
  * Container for collecting and sorting SQL string representations of FilterTemplates
  *
  */

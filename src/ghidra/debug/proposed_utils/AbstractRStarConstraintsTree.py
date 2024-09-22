@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.util.database.DBCachedObjectStoreFactory;
 import ghidra.util.database.spatial.DBTreeNodeRecord.NodeType;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * An R*-Tree implementation of {@link AbstractConstraintsTree}
  * 
  * <p>

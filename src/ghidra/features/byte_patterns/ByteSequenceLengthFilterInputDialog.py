@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.bitpatterns.info.ByteSequenceLengthFilter;
 import ghidra.util.HelpLocation;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Objects of this class are used to display a panel which allows the user to 
  * input the parameters for a {@link ByteSequenceLengthFilter}.
  */

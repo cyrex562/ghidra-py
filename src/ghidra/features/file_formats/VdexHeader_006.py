@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/oreo-release/runtime/vdex_file.h">oreo-release/runtime/vdex_file.h</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/oreo-m2-release/runtime/vdex_file.h">oreo-m2-release/runtime/vdex_file.h</a>

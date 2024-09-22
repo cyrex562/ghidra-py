@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import ghidra.util.task.TaskLauncher;
 
-/**
+# /**
  * Action to create a PCode control data graph based on decompiler output
  */
 public class PCodeDfgAction extends AbstractDecompilerAction {

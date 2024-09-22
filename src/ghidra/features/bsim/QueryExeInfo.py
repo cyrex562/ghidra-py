@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.features.bsim.query.LSHException;
 import ghidra.features.bsim.query.client.tables.ExeTable.ExeTableOrderColumn;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Query of executable records
  */
 public class QueryExeInfo extends BSimQuery<ResponseExe> {

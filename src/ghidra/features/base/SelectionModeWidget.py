@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.widgets.button.GRadioButton;
 import ghidra.app.plugin.core.instructionsearch.util.InstructionSearchUtils;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Allows the user to specify whether the input mode is BINARY or HEX for the {@link InsertBytesWidget}.
  */
 public class SelectionModeWidget extends ControlPanelWidget {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import com.sun.jna.Structure;
 import com.sun.jna.platform.win32.WinDef.ULONG;
 import com.sun.jna.platform.win32.WinNT.HRESULT;
 
-/**
+# /**
  * Wrapper class for the IDebugClient interface
  */
 public class WrapIDebugClient7 extends WrapIDebugClient6 implements IDebugClient7 {

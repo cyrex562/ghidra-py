@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.LockHold;
 import ghidra.util.Msg;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * This script populates a trace database with memory derived from "!address". This is particularly
  * useful for dump files and other cases where QueryVirtual fails.
  * 

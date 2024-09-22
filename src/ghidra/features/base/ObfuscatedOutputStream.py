@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/**
+# /**
  * An {@link OutputStream} wrapper that obfuscates the bytes being written to the underlying
  * stream.
  */

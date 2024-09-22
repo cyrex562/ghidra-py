@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.framework.Application;
 import net.sf.sevenzipjbinding.SevenZip;
 import net.sf.sevenzipjbinding.SevenZipNativeInitializationException;
 
-/**
+# /**
  *
  *  Custom logic to initialize Sevenzip's native libraries that have been placed into
  *  Ghidra's module data directory by a gradle build task (see extractSevenZipNativeLibs in build.gradle).

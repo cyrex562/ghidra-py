@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.app.util.bin.format.omf.*;
 import ghidra.app.util.bin.format.omf.omf166.Omf166RecordTypes;
 import ghidra.app.util.bin.format.omf.omf166.Omf166DepList;
 
-/**
+# /**
  * A class for reading/creating OMF-51 records
  */
 public class Omf51RecordFactory extends AbstractOmfRecordFactory {

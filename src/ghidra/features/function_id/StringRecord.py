@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.feature.fid.db;
 import ghidra.program.database.DBObjectCache;
 import ghidra.program.database.DatabaseObject;
 
-/**
+# /**
  * A string record in the FID database.
  */
 public class StringRecord extends DatabaseObject {

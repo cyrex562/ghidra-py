@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import generic.theme.GThemeDefaults.Colors.Palette;
 import ghidra.app.util.viewer.proxy.EmptyProxy;
 import ghidra.app.util.viewer.proxy.ProxyObj;
 
-/**
+# /**
  * Field responsible for drawing +/- symbols when over an aggregate datatype that
  * can be opened or closed.  Also adds extra spacing for each level of the sub-datatypes.
  */

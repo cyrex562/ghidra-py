@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.trace.model.Lifespan;
 import ghidra.trace.model.Lifespan.LifeSet;
 import ghidra.trace.model.thread.TraceObjectThread;
 
-/**
+# /**
  * A common interface for object-based implementations of other trace manager entries, e.g.,
  * {@link TraceObjectThread}.
  */

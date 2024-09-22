@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.console;
 
 import javax.swing.JComponent;
 
-/**
+# /**
  * This class encapsulates a code completion.
  * 
  * It is intended to be used by the code completion process, especially the

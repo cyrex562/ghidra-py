@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.lang.Language;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A feature rooted in a basic block.  There are two forms of a block feature.
  * Form 1 contains only local control-flow information about the basic block.
  * Form 2 is a feature that combines two operations that occur in sequence within the block.

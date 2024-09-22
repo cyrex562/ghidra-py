@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.widgets.fieldpanel.listener.LayoutModelListener;
 import ghidra.app.decompiler.DecompileOptions;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * The built-in provider for the Decompiler's line number margin
  */
 public class LineNumberDecompilerMarginProvider extends JPanel

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.fieldpanel.internal.PaintContext;
 import docking.widgets.fieldpanel.support.*;
 import ghidra.app.plugin.core.terminal.vt.*;
 
-/**
+# /**
  * A text field (renderer) for the terminal panel.
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.plugin.core.decompile.DecompilerActionContext;
 import ghidra.app.util.HelpTopics;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * An action to navigate to the next token highlighted by the user via the middle-mouse.
  */
 public class NextHighlightedTokenAction extends AbstractDecompilerAction {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.Msg;
 		"GhidraGoSender and processes them in Ghidra",
 	eventsConsumed = {ProjectPluginEvent.class})
 //@formatter:on
-/**
+# /**
  * Polls the ghidraGo directory located in the user's temporary directory for any url files written
  * by the {@link GhidraGoSender} and processes them in Ghidra.
  */

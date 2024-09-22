@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import mdemangler.MDException;
 import mdemangler.MDMang;
 import mdemangler.naming.MDFragmentName;
 
-/**
+# /**
  * This class represents a derivative of an <b><code>MDObject</code></b> which is a C++ object
  *  and an additional bracketed prefix.  These were seen in a dumpbin of a source program that
  *  I created, but undname does not support the symbol.  I do not know what to call this type
@@ -83,5 +83,5 @@ public class MDObjectBracket extends MDObjectReserved {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

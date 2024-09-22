@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.table.AddressBasedTableModel;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A {@link AddressBasedTableModel} used to display information about addresses which are
  * likely to be function starts.
  */

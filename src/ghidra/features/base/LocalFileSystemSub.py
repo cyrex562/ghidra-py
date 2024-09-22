@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.formats.gfilesystem.fileinfo.FileAttributes;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A {@link GFileSystem} interface to a part of the user's local / native file system.
  * <p>
  * This class is a sub-view of the {@link LocalFileSystem}, and returns hybrid GFile objects

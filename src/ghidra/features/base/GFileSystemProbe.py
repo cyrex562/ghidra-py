@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.formats.gfilesystem.factory;
 
-/**
+# /**
  * An empty interface that is a common type for the real probe interfaces to derive from.
  * <p>
  * See {@link GFileSystemProbeBytesOnly}, {@link GFileSystemProbeByteProvider}

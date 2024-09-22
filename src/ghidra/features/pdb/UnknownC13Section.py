@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A default/unknown C13Section class that we have created for completeness (default switch).
  */
 class UnknownC13Section extends AbstractUnimplementedC13Section {

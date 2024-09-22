@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.feature.fid.db.FunctionRecord;
 import ghidra.feature.fid.hash.FidHashQuad;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * Represents the result of a search operation on the FID libraries.
  */
 public class FidSearchResult {

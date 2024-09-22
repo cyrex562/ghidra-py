@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.pe.OffsetValidator;
 
-/**
+# /**
  * A helper class to parsing different types of 
  * debug information from a debug directory
  */

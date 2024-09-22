@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.vdex.sections;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android12-release/runtime/vdex_file.h#80">android12-release/runtime/vdex_file.h#80</a>
  * <br>
  * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android13-release/runtime/vdex_file.h#80">android13-release/runtime/vdex_file.h#80</a>

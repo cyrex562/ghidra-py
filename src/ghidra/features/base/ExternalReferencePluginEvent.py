@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.app.events;
 import ghidra.framework.plugintool.PluginEvent;
 import ghidra.program.model.symbol.ExternalLocation;
 
-/**
+# /**
  * Plugin event used to navigate to a location in another program when following
  * a external reference.
  *

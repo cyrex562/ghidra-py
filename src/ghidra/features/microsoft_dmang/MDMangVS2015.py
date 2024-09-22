@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import mdemangler.naming.MDQualification;
 import mdemangler.object.*;
 import mdemangler.template.MDTemplateArgumentsList;
 
-/**
+# /**
  * An <b><code>MDMang</code></b> extension that tailors output to Visual Studio 2015 output
  *  results.
  */

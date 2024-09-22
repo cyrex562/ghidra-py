@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.pcode.emu.PcodeThread;
 import ghidra.pcode.exec.trace.BytesTracePcodeEmulator;
 import ghidra.pcode.exec.trace.TracePcodeExecutorState;
 
-/**
+# /**
  * A trace emulator that knows how to read target memory when necessary
  * 
  * <p>

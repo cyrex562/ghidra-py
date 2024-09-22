@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +46,7 @@ import ghidra.trace.model.Trace;
 import ghidra.trace.model.TraceLocation;
 import ghidra.trace.model.guest.TracePlatform;
 
-/**
+# /**
  * An abstract implementation of {@link UnwoundFrame}
  *
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Set;
 import ghidra.app.util.bin.format.golang.structmapping.*;
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * Represents a golang "name" construct, which isn't represented in go as a normal structure
  * since it is full of variable length and optional fields.
  * <pre>

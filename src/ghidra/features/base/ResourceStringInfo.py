@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.bin.format.pe.resource;
 
-/**
+# /**
  * A class to hold the information extracted from a 
  * resource data directory.
  * 

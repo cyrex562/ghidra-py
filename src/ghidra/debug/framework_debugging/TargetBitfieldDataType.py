@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.dbg.attributes;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-/**
+# /**
  * A bitfield-modified data type
  * 
  * <p>

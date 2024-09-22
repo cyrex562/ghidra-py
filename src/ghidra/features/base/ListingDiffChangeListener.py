@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.features.base.codecompare.listing;
 
-/**
+# /**
  * Interface defining a listener that gets notified when the ListingDiff's set of differences 
  * and unmatched addresses has changed.
  */

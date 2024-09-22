@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.base.memsearch.searcher;
 
 import java.util.function.Predicate;
 
-/**
+# /**
  * Search filter that can test a search result and determine if that result is at an address
  * whose offset matches the given alignment (i.e. its offset is a multiple of the alignment value)
  */

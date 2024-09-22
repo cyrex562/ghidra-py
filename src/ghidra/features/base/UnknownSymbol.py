@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.Conv;
 import ghidra.util.Msg;
 
-/**
+# /**
  * 
 */
 class UnknownSymbol extends DebugSymbol{

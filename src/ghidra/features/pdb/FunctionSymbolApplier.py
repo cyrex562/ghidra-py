@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Applier for {@link AbstractProcedureStartMsSymbol} and  {@link AbstractThunkMsSymbol} symbols.
  */
 public class FunctionSymbolApplier extends AbstractBlockContextApplier

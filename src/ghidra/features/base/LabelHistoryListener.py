@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.app.plugin.core.label;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Interface to define a method that is called when an address in the 
  * Label History table is selected.
  */

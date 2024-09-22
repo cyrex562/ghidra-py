@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.util.*;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * Action triggered from a specific token in the decompiler window to change the data-type
  * associated with a global variable. If the variable does not already exist in the program database,
  * it will be created using storage address the decompiler has assigned to the variable within its model.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.debug.api.target;
 
-/**
+# /**
  * A listener for changes to the set of published targets
  */
 public interface TargetPublicationListener {

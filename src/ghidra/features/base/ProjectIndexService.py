@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.framework.model.*;
 import ghidra.util.Swing;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An in-memory index of FSRL-to-domainfile in the current project.
  */
 public class ProjectIndexService implements DomainFolderChangeListener {

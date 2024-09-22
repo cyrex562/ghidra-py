@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.file.formats.android.odex;
 
 import ghidra.app.util.bin.ByteProvider;
 
-/**
+# /**
  * 
  * https://android.googlesource.com/platform/dalvik/+/refs/heads/kitkat-release/libdex/DexFile.h
  * https://android.googlesource.com/platform/dalvik/+/refs/heads/lollipop-release/libdex/DexFile.h

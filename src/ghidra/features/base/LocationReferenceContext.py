@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import generic.json.Json;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * A class to hold context representation for {@link LocationReference}s.
  *
  * @see LocationReferenceContextBuilder

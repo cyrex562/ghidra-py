@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import org.tribuo.math.la.SparseVector;
 import ghidra.program.model.address.*;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Given a potential function start {@code S} and a random forest trained to recognize 
  * function starts, this class is used to find the function starts in the training set
  * most similar to {@code S}.  Here "similar" is defined in terms of proximity in a

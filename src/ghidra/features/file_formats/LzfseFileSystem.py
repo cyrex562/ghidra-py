@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.formats.gfilesystem.annotations.FileSystemInfo;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A {@link GFileSystem} implementation LZFSE compressed files
  * 
  * @see <a href="https://github.com/lzfse/lzfse">lzfse reference implementation</a> 

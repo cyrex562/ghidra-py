@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.db;
 
-/**
+# /**
  * A class to represent the types of relations stored in the FID database. 
  */
 public enum RelationType {

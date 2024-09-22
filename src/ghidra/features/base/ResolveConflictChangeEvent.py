@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.merge.listing;
 
 import javax.swing.event.ChangeEvent;
 
-/**
+# /**
  * Event that gets passed to a listener to indicate that a user changed 
  * one of the choices in the row of a table that is part of the 
  * VerticalChoicesPanel or VariousChoicesPanel.

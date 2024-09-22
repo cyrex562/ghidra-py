@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.framework.plugintool.PluginEvent;
 import ghidra.framework.plugintool.ToolEventName;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Event for telling a tool to open a program.
  */
 @ToolEventName(ProgramVisibilityChangePluginEvent.TOOL_EVENT_NAME) // this allows the event to be considered for tool connection

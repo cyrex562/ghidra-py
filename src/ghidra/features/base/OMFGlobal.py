@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.List;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.Conv;
 
-/**
+# /**
  * A class to represent the Object Module Format (OMF) Global data structure.
  * 
  */

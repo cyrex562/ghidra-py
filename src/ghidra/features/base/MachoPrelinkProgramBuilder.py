@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.listing.*;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Builds up a PRELINK Mach-O {@link Program} by parsing the Mach-O headers.
  */
 public class MachoPrelinkProgramBuilder extends MachoProgramBuilder {

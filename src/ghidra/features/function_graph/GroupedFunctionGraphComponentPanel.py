@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.layout.VerticalLayout;
 import util.CollectionUtils;
 
-/**
+# /**
  * This panel looks similar in appearance to the LisGraphComponentPanel, with a header, actions
  * and a body.
  */

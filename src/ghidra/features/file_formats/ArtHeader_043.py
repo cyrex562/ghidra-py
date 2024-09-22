@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.art.image_method.ImageMethod_Oreo;
 
-/**
+# /**
  * <a href="https://android.googlesource.com/platform/art/+/oreo-release/runtime/image.cc#28">oreo-release/runtime/image.c</a>
  */
 public class ArtHeader_043 extends ArtHeader_030 {

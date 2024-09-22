@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.format.golang.rtti.GoName;
 import ghidra.app.util.bin.format.golang.rtti.GoRttiMapper;
 import ghidra.app.util.bin.format.golang.structmapping.*;
 
-/**
+# /**
  * Structure used to define a field in a {@link GoStructType struct type}.
  */
 @StructureMapping(structureName = {"runtime.structfield", "internal/abi.StructField"})
@@ -103,7 +103,7 @@ public class GoStructField {
 		return programContext.getSafeName(this::getGoName, this, null).getName();
 	}
 }
-/*
+# /*
  
 struct runtime.structfield  
    Length: 24  Alignment: 8

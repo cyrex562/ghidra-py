@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.address.AddressSpace;
 import ghidra.program.model.lang.CompilerSpec;
 import ghidra.program.model.lang.Register;
 
-/**
+# /**
  * A symbolic value tailored for stack unwind analysis
  * 
  * <p>

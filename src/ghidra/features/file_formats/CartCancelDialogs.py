@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.file.formats.cart;
 import docking.widgets.OptionDialog;
 import ghidra.util.*;
 
-/**
+# /**
  * Helper class to show Continue or Cancel dialogs at various severity levels
  */
 public class CartCancelDialogs {

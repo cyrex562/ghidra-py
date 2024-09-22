@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * Widget that allows the user to input bytes in binary or hex format. The bytes
  * will then be disassembled and displayed in the {@link InstructionTable}.
  *

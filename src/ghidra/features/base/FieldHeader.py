@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.HelpLocation;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Class to manage the tabbed panel for field formats.
  */
 public class FieldHeader extends JTabbedPane implements ChangeListener {

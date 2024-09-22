@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -494,7 +494,7 @@ class ShowInfoAction extends ListingContextAction {
 	}
 }
 
-/**
+# /**
  * Action class for displaying the processor manual (PDF file)
  */
 class ShowProcessorManualAction extends ProgramContextAction {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 package ghidra.app.plugin.core.string.variadic;
-/**
+# /**
  * This class represents a single argument of a variadic function
  */
 public class FormatArgument {

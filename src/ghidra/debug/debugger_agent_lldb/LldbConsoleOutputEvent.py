@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import SWIG.SBStream;
 import agent.lldb.lldb.DebugProcessInfo;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The event corresponding with SBProcess.eBroadcastBitSTDERR & SBProcess.eBroadcastBitSTDOUT 
  */
 public class LldbConsoleOutputEvent extends AbstractLldbEvent<DebugProcessInfo> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.TreeSet;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Class for modifying the PostgreSQL configuration files describing
  *   the main server settings (postgresql.conf)
  *   the connection settings  (pg_hba.conf)

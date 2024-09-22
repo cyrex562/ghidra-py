@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Map;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.dwarf.attribs.*;
 
-/**
+# /**
  * Represents an identifier of a value in a DWARFLine/DWARFFile object.
  * <p>
  * Similar to the {@link DWARFAttribute} enum, both are identifiers of an attribute value 

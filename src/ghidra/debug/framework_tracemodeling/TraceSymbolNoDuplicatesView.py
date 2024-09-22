@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.trace.model.symbol;
 
 import ghidra.util.LockHold;
 
-/**
+# /**
  * A symbol view where names cannot be duplicated within the same parent namespace
  *
  * @param <T> the type of symbols in the view

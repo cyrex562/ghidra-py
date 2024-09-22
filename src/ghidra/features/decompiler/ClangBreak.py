@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.decompiler;
 
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A line break in source code plus the indenting for the following line.
  */
 public class ClangBreak extends ClangToken {

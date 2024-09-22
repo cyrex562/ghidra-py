@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.golang.structmapping;
 
 import java.io.IOException;
 
-/**
+# /**
  * Functional interface to read a structure field's value.
  * <p>
  * @see #get(FieldContext)

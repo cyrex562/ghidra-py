@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import agent.gdb.manager.evt.AbstractGdbCompletedCommandEvent;
 import agent.gdb.manager.evt.GdbCommandErrorEvent;
 import agent.gdb.manager.impl.cmd.GdbCommandError;
 
-/**
+# /**
  * A command queued on the GDB manager
  *
  * <p>

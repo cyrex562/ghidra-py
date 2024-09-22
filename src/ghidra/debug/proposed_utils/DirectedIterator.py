@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.Table;
 import generic.End.Point;
 
-/**
+# /**
  * An iterator over some component of a {@link Table}
  * 
  * @param <T> the type of the component, i.e., a key or record

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.AddressRange;
 import ghidra.program.model.listing.Program;
 import ghidra.trace.model.Lifespan;
 
-/**
+# /**
  * Manages mappings from this trace into static images (Ghida {@link Program}s)
  * 
  * <p>

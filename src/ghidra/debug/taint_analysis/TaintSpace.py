@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.lang.Register;
 import ghidra.taint.model.TaintSet;
 import ghidra.taint.model.TaintVec;
 
-/**
+# /**
  * The storage space for taint sets in a single address space (possibly the register space)
  * 
  * <p>

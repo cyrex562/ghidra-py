@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import agent.dbgeng.manager.evt.AbstractDbgCompletedCommandEvent;
 import agent.dbgeng.manager.evt.DbgProcessCreatedEvent;
 import agent.dbgeng.manager.impl.DbgManagerImpl;
 
-/**
+# /**
  * Implementation of {@link DbgProcess#fileExecAndSymbols(String)}
  */
 public class DbgOpenDumpCommand extends AbstractDbgCommand<DbgThread> {

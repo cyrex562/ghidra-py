@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.debug.api.model.DebuggerMappingOpinion;
 import ghidra.program.model.lang.*;
 import ghidra.program.util.DefaultLanguageService;
 
-/**
+# /**
  * An "opinion" which offers every known language, but with only default mapping logic.
  * 
  * <p>

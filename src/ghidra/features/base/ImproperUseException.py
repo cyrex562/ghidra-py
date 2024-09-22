@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.script;
 
-/**
+# /**
  * Exception class to be used when API calls are improperly used (i.e., GhidraScript.askProjectFolder() method is
  * being used in Headless mode).
  */

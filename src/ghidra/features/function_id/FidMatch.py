@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.feature.fid.service;
 import ghidra.feature.fid.db.LibraryRecord;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * FidMatch is a container that holds the results of a FidService search,
  * comprised of the full path within the storage API where it's located.
  *

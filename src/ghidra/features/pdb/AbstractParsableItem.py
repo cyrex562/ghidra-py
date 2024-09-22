@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-/**
+# /**
  * This is the base class for certain record items that get parsed from a PDB and which we would
  *  like to have toString() methods on.
  */

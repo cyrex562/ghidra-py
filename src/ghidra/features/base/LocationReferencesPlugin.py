@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import ghidra.util.table.actions.DeleteTableRowAction;
 
-/**
+# /**
  * Plugin to show a list of references to the item represented by the location of the cursor.
  */
 //@formatter:off

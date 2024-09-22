@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.concurrent.CompletableFuture;
 import ghidra.dbg.DebuggerTargetObjectIface;
 import ghidra.dbg.target.schema.TargetAttributeType;
 
-/**
+# /**
  * An object which can be toggled
  * 
  * @deprecated Will be removed in 11.3. Portions may be refactored into trace object database.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.features.bsim.query.GenSignatures;
 import ghidra.features.bsim.query.client.Configuration;
 import ghidra.features.bsim.query.description.DescriptionManager;
 
-/**
+# /**
  * This script is used by the unit test BSimServerTest
  */
 public class RegressionSignatures extends GhidraScript {

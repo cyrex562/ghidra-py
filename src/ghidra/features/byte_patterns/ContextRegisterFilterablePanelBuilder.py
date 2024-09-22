@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.JPanel;
 import ghidra.bitpatterns.info.ContextRegisterExtent;
 import ghidra.bitpatterns.info.ContextRegisterFilter;
 
-/**
+# /**
  * 
  * This is an abstract class for defining panels whose contents can be filtered
  * based on the values of context registers.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.MessageType;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Simple dialog with single input field to prompt user for password.
  * <p>
  * User can cancel, or cancel-all, which can be determined by inspecting

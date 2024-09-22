@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import agent.frida.manager.FridaEvent;
 import agent.frida.manager.evt.AbstractFridaCompletedCommandEvent;
 import agent.frida.manager.evt.FridaCommandErrorEvent;
 
-/**
+# /**
  * A command queued on the frida manager
  *
  * A {@link FridaCommand} is queued by wrapping it in a {@link FridaPendingCommand} and submitting it

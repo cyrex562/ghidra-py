@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.debug.api.tracermi.TraceRmiLaunchOffer;
 import ghidra.framework.plugintool.ServiceInfo;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * The service for launching Trace RMI targets in the GUI.
  */
 @ServiceInfo(

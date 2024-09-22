@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.*;
 import docking.widgets.fieldpanel.support.FieldLocation;
 import ghidra.app.plugin.core.format.*;
 
-/**
+# /**
  * Generates a map between bytes in memory and indexes.  Extra indexes are inserted to
  * make each block to take up an uniform number of indexes such that the number of indexes
  * in each block is a multiple of the number of bytes per line.
@@ -268,7 +268,7 @@ public class IndexMap {
 
 }
 
-/**
+# /**
  * Class to hold compute block index information.
  */
 class BlockInfo {

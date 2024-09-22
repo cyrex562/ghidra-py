@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.gdb.manager.GdbManager.StepCmd;
 import agent.gdb.manager.breakpoint.GdbBreakpointInsertions;
 import agent.gdb.manager.impl.GdbThreadInfo;
 
-/**
+# /**
  * A handle to a thread controlled by GDB
  * 
  * <p>

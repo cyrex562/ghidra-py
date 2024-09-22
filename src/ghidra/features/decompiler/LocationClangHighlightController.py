@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.widgets.fieldpanel.support.FieldLocation;
 import ghidra.app.decompiler.ClangSyntaxToken;
 import ghidra.app.decompiler.ClangToken;
 
-/**
+# /**
  * Class to handle location based highlights for a decompiled function.
  */
 public class LocationClangHighlightController extends ClangHighlightController {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf;
 
-/**
+# /**
  * A collection of constants used in the ELF header.
  */
 public interface ElfConstants {

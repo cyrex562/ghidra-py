@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.plugin.core.functiongraph.graph.FunctionGraph;
 import ghidra.app.plugin.core.marker.MarginProviderSupplier;
 import ghidra.framework.plugintool.ServiceInfo;
 
-/**
+# /**
  * A service that allows clients to add custom margins in the {@link FunctionGraph} UI.
  */
 @ServiceInfo(defaultProvider = FunctionGraphPlugin.class)

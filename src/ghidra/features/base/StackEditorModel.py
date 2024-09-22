@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.JOptionPane;
 import docking.widgets.OptionDialog;
 import docking.widgets.fieldpanel.support.FieldRange;
 import docking.widgets.fieldpanel.support.FieldSelection;
-/**
+# /**
  * Function stack editor model for maintaining information about the edits to
  * a function stack frame. Updates the stack frame with the edit changes.
  * It also notifies any registered EditorModelListener listeners when

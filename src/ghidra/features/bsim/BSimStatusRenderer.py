@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.util.table.column.AbstractGColumnRenderer;
 import resources.Icons;
 
-/**
+# /**
  * Renderer for display BSim apply results from attempting to apply function names and signatures
  * from BSim Search results.
  */

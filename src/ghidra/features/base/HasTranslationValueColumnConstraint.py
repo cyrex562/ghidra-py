@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 import docking.widgets.table.constrainteditor.DoNothingColumnConstraintEditor;
 import ghidra.program.model.data.StringDataInstance;
 
-/**
+# /**
  * Tests if a string data instance has a translated value available
  */
 public class HasTranslationValueColumnConstraint extends StringDataInstanceColumnConstraint {

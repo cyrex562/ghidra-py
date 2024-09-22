@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Objects;
 
-/**
+# /**
  * Image Section Header information, as part of {@link DebugData} structures within
  *  {@link PdbNewDebugInfo} of {@link AbstractPdb} types.  Contains section information;
  *  an older set of section information seems to be located in {@link SegmentMapDescription},

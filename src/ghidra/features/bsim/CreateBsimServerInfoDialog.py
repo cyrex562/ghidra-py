@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.filechooser.GhidraFileChooserModel;
 import ghidra.util.filechooser.GhidraFileFilter;
 import ghidra.util.layout.*;
 
-/**
+# /**
  * Dialog for entering new BSim database server definition
  */
 public class CreateBsimServerInfoDialog extends DialogComponentProvider {

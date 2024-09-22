@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.functiongraph.mvc;
 
-/**
+# /**
  * An enum to be used with Function Graph options
  */
 public enum NavigationHistoryChoices {

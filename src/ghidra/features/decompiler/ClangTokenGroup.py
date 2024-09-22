@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.util.stream.Stream;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A sequence of tokens that form a meaningful group in source code.  This group may
  * break up into subgroups and may be part of a larger group.
  */

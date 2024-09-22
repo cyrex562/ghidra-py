@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.dbgeng.model.iface1;
 import agent.dbgeng.model.iface2.DbgModelTargetObject;
 import ghidra.dbg.target.TargetMethod;
 
-/**
+# /**
  * An interface which indicates this object is a method in its parent.
  * 
  * @param <T> type for this

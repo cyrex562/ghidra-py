@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.bitpatterns.info;
 import docking.widgets.tree.GTreeNode;
 import docking.widgets.tree.support.GTreeFilter;
 
-/**
+# /**
  * 
  * Objects in this class are used to filter instruction tree nodes by percentage.
  *

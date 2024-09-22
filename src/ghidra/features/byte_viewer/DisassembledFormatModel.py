@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.Listing;
 import ghidra.program.model.listing.Program;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Shows what bytes have been disassembled.
  */
 public class DisassembledFormatModel implements ProgramDataFormatModel {

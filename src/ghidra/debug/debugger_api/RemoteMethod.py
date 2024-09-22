@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.debug.api.target.ActionName;
 import ghidra.trace.model.Trace;
 import ghidra.trace.model.target.TraceObject;
 
-/**
+# /**
  * A remote method registered by the back-end debugger.
  * 
  * <p>

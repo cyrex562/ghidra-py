@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.PdbException;
 import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractMsSymbol;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * A dummy {@link MsSymbolApplier}, which, at a minimum, reads the symbol from the
  * {@link SymbolGroup}, allowing proper sequencing of other symbols within the
  * {@link SymbolGroup}.

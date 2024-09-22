@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.framework.store.local.LocalFileSystem;
 import ghidra.util.exception.DuplicateNameException;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * <code>CommandProcessor</code> provides server processing of commands
  * queued by the {@link ServerAdmin} class which corresponds to the <code>svrAdmin</code>
  * shell command.

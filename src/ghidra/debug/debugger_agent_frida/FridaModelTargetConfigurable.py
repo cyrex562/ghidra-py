@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package agent.frida.model.iface1;
 import agent.frida.model.iface2.FridaModelTargetObject;
 import ghidra.dbg.target.TargetConfigurable;
 
-/**
+# /**
  * An interface which indicates this object is configurable.
  * 
  * @param <T> type for this

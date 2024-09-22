@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.util.CodeUnitInsertionException;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Represents a objc_opt_t structure, which resides in the libobjc DYLIB within a DYLD cache
  * 
  * @see <a href="https://github.com/apple-oss-distributions/dyld/blob/main/include/objc-shared-cache.h">dyld/include/objc-shared-cache.h</a> 

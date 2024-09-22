@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.bitpatterns.info.*;
 import ghidra.closedpatternmining.SequenceMiningParams;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * 
  * This class extends {@link ByteSequenceAnalyzerProvider} by adding actions
  * related to mining closed sequential patterns.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 
 import ghidra.app.decompiler.ClangToken;
 
-/**
+# /**
  * A simple class to manage {@link HighlightToken}s used to create highlights in the Decompiler.
  * This class allows clients to access highlights either by a {@link ClangToken} or a
  * {@link HighlightToken}.

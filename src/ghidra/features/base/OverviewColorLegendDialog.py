@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import javax.swing.JComponent;
 import docking.DialogComponentProvider;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Convenience dialog for showing a Legend for an {@link OverviewColorComponent}
  */
 public class OverviewColorLegendDialog extends DialogComponentProvider {

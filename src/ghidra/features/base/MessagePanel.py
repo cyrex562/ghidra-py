@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.JPanel;
 
 import docking.widgets.label.GDLabel;
 
-/**
+# /**
  * Simple panel containing a JLabel for displaying error messages.
  * 
  */

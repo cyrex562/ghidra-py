@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.features.bsim.query.description.SignatureRecord;
 import ghidra.features.bsim.query.protocol.SimilarityVectorResult;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Table row object for BSim Overview results table
  */
 public class BSimOverviewRowObject {

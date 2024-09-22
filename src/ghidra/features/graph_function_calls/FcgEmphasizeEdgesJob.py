@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import functioncalls.graph.FcgVertex;
 import ghidra.graph.job.AbstractGraphVisibilityTransitionJob;
 import ghidra.graph.viewer.GraphViewer;
 
-/**
+# /**
  * A job to emphasize a given set of edges.  This will make them bigger and then restore them 
  * to a non-emphasized state.
  */

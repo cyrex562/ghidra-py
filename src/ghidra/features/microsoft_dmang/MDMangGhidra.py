@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import mdemangler.object.*;
 import mdemangler.template.MDTemplateNameAndArguments;
 import mdemangler.typeinfo.*;
 
-/**
+# /**
  * A new built-from-scratch class for demangling debug symbols created using
  * Microsoft Visual Studio.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.features.base.memsearch.combiner.Combiner;
 import ghidra.features.base.memsearch.format.SearchFormat;
 import ghidra.features.base.memsearch.matcher.ByteMatcher;
 
-/**
+# /**
  * Maintains the state of all the settings and controls for the memory search window.
  */
 public class SearchGuiModel {

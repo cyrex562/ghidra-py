@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.StringUtilities;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Moves dangling external function symbols found in the {@link Library#UNKNOWN EXTERNAL/UNKNOWN}
  * namespace into the namespace of the external library that publishes a matching symbol.
  * <p>

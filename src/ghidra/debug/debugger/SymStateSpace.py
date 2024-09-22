@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.pcode.PcodeOp;
 import ghidra.trace.database.DBTraceUtils.AddressRangeMapSetter;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The portion of a {@link SymPcodeExecutorState} associated with a specific {@link AddressSpace}.
  */
 public class SymStateSpace {

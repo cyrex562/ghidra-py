@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.listing.Function;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * A reference to a place as told by the Decompiler.
  */
 public abstract class DecompilerReference {

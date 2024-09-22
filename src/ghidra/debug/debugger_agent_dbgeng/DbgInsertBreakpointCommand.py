@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import agent.dbgeng.manager.breakpoint.*;
 import agent.dbgeng.manager.impl.DbgManagerImpl;
 import ghidra.comm.util.BitmaskSet;
 
-/**
+# /**
  * Implementation of {@link DbgBreakpointInsertions#insertBreakpoint(String)}
  */
 public class DbgInsertBreakpointCommand extends AbstractDbgCommand<DbgBreakpointInfo> {

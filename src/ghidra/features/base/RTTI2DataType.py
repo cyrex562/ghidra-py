@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.Listing;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.*;
 
-/**
+# /**
  * The RTTI2 data type represents an array of either pointers or displacements to the 
  * BaseClassDescriptors (RTTI 1s) for a class.
  * <p>

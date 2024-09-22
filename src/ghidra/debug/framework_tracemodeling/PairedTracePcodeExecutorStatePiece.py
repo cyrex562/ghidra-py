@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.exec.PairedPcodeExecutorStatePiece;
 import ghidra.pcode.exec.PcodeArithmetic;
 import ghidra.pcode.exec.trace.data.PcodeTraceDataAccess;
 
-/**
+# /**
  * A trace-bound state piece composed of two other trace-bound pieces sharing the same address type
  *
  * @see PairedPcodeExecutorStatePiece

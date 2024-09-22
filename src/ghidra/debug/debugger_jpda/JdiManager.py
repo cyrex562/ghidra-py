@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import com.sun.jdi.connect.Connector.Argument;
 
 import ghidra.dbg.jdi.manager.impl.JdiManagerImpl;
 
-/**
+# /**
  * The controlling side of a JDI session
  */
 public interface JdiManager extends AutoCloseable {

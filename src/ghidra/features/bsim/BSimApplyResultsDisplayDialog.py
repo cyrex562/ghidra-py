@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.table.GhidraFilterTable;
 import ghidra.util.table.GhidraTable;
 
-/**
+# /**
  * Panel that displays the results of executing an "apply-rename" operation on a set of BSim 
  * query results. The results are presented in a {@link GhidraTable}; see the 
  * {@link BSimApplyResultsTableModel} for details on its structure.

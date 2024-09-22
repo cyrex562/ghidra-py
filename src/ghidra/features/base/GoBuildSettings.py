@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.golang;
 
 import java.io.IOException;
 
-/**
+# /**
  * Key=value element of Golang Build settings
  * 
  * @param key string name of property

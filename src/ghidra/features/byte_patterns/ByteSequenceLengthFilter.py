@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.bitpatterns.info;
 
-/**
+# /**
  * 
  * Objects of this class are used to access prefixes or suffixes of {@code String}s, as well as filter 
  * {@code String}s by length.

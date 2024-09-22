@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.macho.dyld;
 
 import ghidra.program.model.symbol.Symbol;
 
-/**
+# /**
  * Stores information needed to perform a dyld pointer fixup
  * 
  * @param offset The offset of where to perform the fixup (from some base address/index)

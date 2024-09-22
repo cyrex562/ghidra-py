@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.gdb.manager;
 
-/**
+# /**
  * A handle/descriptor to a GDB register
  * 
  * This contains a register's name and number

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.symtable;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.Symbol;
 
-/**
+# /**
  * <code>DeletedSymbolRowObject</code> provides a lightweight {@link Symbol}
  * table row object which may be used for a deleted symbol when attempting 
  * to update table model.

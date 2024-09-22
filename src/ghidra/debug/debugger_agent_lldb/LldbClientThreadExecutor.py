@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.Supplier;
 import agent.lldb.lldb.DebugClient;
 import agent.lldb.manager.LldbManager;
 
-/**
+# /**
  * A single-threaded executor which creates and exclusively accesses the {@code lldb} client.
  * 
  * The executor also has a priority mechanism, so that callbacks may register follow-on handlers

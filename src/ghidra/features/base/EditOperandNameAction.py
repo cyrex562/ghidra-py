@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.util.OperandFieldLocation;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <CODE>EditNameAction</CODE> allows the user to rename a function.
  * Action in FunctionPlugin.
  */

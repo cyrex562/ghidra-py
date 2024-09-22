@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.debug.service.emulation;
 import ghidra.debug.api.emulation.PcodeDebuggerRegistersAccess;
 import ghidra.pcode.exec.trace.*;
 
-/**
+# /**
  * A state composing a single {@link RWTargetRegistersPcodeExecutorStatePiece}
  */
 public class RWTargetRegistersPcodeExecutorState extends DefaultTracePcodeExecutorState<byte[]> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This is a GoToService for a listing code compare panel. It allows the goTo to occur relative to
  * the left or right listing panel of a dual listing panel, since the left and right sides can be
  * displaying totally different addresses.

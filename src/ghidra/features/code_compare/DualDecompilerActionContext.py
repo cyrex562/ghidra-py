@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.ComponentProvider;
 import ghidra.app.context.RestrictedAddressSetContext;
 import ghidra.features.base.codecompare.panel.CodeComparisonActionContext;
 
-/**
+# /**
  * Action context for a dual decompiler panel.
  */
 public class DualDecompilerActionContext extends CodeComparisonActionContext

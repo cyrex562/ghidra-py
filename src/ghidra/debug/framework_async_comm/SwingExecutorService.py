@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.async.seq.AsyncSequenceActionRuns;
 import ghidra.async.seq.AsyncSequenceWithoutTemp;
 import ghidra.util.Swing;
 
-/**
+# /**
  * A wrapper for {@link SwingUtilities#invokeLater(Runnable)} that implements
  * {@link ExecutorService}. This makes it a suitable first parameter to
  * {@link AsyncSequenceWithoutTemp#then(ExecutorService, AsyncSequenceActionRuns)} and similar.

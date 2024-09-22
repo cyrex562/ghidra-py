@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.dbg.DebuggerTargetObjectIface;
 import ghidra.dbg.target.TargetBreakpointSpecContainer.TargetBreakpointKindSet;
 import ghidra.dbg.target.schema.TargetAttributeType;
 
-/**
+# /**
  * The specification of a breakpoint applied to a target object
  * 
  * <p>

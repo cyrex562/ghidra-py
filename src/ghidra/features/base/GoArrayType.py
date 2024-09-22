@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.golang.structmapping.*;
 import ghidra.app.util.viewer.field.AddressAnnotatedStringHandler;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * {@link GoType} structure that defines an array.
  */
 @StructureMapping(structureName = {"runtime.arraytype", "internal/abi.ArrayType"})

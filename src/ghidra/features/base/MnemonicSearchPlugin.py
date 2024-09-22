@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.util.ProgramSelection;
 import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Defines a set of actions that can be performed on a selection to initiate a memory search.  All
  * actions will ultimately open the {@code MemSearchDialog} with the search string field 
  * pre-populated.

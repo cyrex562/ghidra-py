@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import org.osgi.framework.wiring.BundleRequirement;
 
 import generic.jar.ResourceFile;
 
-/**
+# /**
  * Proxy for an OSGi bundle that may require being built.
  */
 public abstract class GhidraBundle {

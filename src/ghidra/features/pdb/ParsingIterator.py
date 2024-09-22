@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.NoSuchElementException;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Parsing Iterator, which allows CancelledException.
  * <p>
  * Has {@link #hasNext()} and {@link #next()}.

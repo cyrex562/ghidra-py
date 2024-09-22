@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.app.merge.MergeConstants;
 import ghidra.program.model.listing.Program;
 import resources.Icons;
 
-/**
+# /**
  * Panel to get user input to resolve name conflicts when private name of tree
  * exists in destination program.
  * 

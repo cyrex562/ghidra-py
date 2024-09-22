@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.features.bsim.query.client.tables;
 
 import java.sql.*;
 
-/**
+# /**
  * Database table that has exactly two columns: key and value
  * The column types are variable and are determined upon initialization.
  * They are specified by giving an integer "type code" as listed in java.sql.Types

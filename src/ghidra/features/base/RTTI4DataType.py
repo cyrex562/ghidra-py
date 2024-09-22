@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.program.model.mem.Memory;
 
-/**
+# /**
  * The RTTI4 data type represents a CompleteObjectLocator structure.
  * <p>
  * Fields for this RunTimeTypeInformation structure can be found on http://www.openrce.org

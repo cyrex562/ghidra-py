@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.framework.options.ToolOptions;
 import ghidra.program.model.symbol.NameTransformer;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Class for simplify names with template data. This class can be used with tool options or
  * as a stand alone configurable simplifier.
  */

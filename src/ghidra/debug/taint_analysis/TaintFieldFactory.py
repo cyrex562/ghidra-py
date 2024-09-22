@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.util.ProgramLocation;
 import ghidra.taint.model.TaintSet;
 import ghidra.taint.model.TaintVec;
 
-/**
+# /**
  * A field factory for "Taint" in the Listing panels
  * 
  * <p>

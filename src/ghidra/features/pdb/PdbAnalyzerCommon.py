@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import pdb.PdbPlugin;
 import pdb.symbolserver.FindOption;
 import pdb.symbolserver.SymbolFileInfo;
 
-/**
+# /**
  * Shared configuration values and pdb searching logic
  */
 public class PdbAnalyzerCommon {

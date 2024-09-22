@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.msf.Msf;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This class is the version of {@link AbstractPdb} for Microsoft v2.00 PDB.
  */
 public class Pdb200 extends AbstractPdb {

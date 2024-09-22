@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.pcode.opbehavior.BinaryOpBehavior;
 import ghidra.program.model.lang.Endian;
 import ghidra.trace.model.memory.TraceMemoryState;
 
-/**
+# /**
  * The p-code arithmetic for {@link TraceMemoryState}
  * 
  * <p>

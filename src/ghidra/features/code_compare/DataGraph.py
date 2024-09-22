@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.*;
 import ghidra.features.codecompare.graphanalysis.Pinning.Side;
 import ghidra.program.model.pcode.*;
 
-/**
+# /**
  * A data-flow graph of a function for computing n-grams {@link DataNGram} that can be matched
  * with another function.  The graph mirrors the HighFunction data-flow graph but unifies
  * a Varnode and PcodeOp into a single node type (DataVertex) that can have n-grams attached.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.machinelearning.functionfinding;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Record for storing random forest proximity information for a potential
  * function start
  * @param funcStart address 

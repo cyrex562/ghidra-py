@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Common functionality of File and Http symbol servers.
  */
 public abstract class AbstractSymbolServer implements SymbolServer {

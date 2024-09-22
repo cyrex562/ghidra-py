@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.script;
 
-/**
+# /**
  * A class to hold constants to be shared for clients of this package.
  * 
  * <P>This class should not depend on any classes in this package in order to prevent static

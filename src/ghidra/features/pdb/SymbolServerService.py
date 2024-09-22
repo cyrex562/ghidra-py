@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import pdb.PdbUtils;
 
-/**
+# /**
  * A (lowercase-'S') service that searches for and fetches symbol files
  * from a set of {@link SymbolServer symbolservers}. (not to be confused with a Plugin service)
  * <p>

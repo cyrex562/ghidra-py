@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.listing.Function;
 
 import java.util.Iterator;
 
-/**
+# /**
  *  Convert an iterator over FunctionSymbols into an iterator over the Functions
  */
 public class FunctionSymbolIterator implements Iterator<Function> {

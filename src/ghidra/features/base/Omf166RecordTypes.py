@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.omf.omf166;
 
 import ghidra.app.util.bin.format.omf.OmfUtils;
 
-/**
+# /**
  * OMF-166 record types
  * 
  * @see <a href="https://www.keil.com/download/files/omf166.pdf">OMF-166 Description</a> 

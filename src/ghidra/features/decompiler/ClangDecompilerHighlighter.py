@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 import generic.json.Json;
 import ghidra.app.decompiler.*;
 
-/**
+# /**
  * The implementation of {@link DecompilerHighlighter}.  This will get created by the
  * Decompiler and then handed to clients that use the {@link DecompilerHighlightService}.  This
  * is also used internally for 'secondary highlights'.

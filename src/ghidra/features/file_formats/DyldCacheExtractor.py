@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A class for extracting components from a {@link DyldCacheFileSystem}
  */
 public class DyldCacheExtractor {

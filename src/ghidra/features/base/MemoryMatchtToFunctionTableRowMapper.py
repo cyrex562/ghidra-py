@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.program.model.listing.*;
 import ghidra.util.table.ProgramLocationTableRowMapper;
 
-/**
+# /**
  * Maps {@link MemoryMatch} objects (search result) to functions to pick up function based 
  * table columns.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.macho.prelink;
 
-/**
+# /**
  * Taken from:
  * http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/libkern/prelink.h
  * 

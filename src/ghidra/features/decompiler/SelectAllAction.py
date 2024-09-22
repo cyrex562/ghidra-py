@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.app.decompiler.component.DecompilerPanel;
 import ghidra.app.util.HelpTopics;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Action for adding all fields to the current format.
  */
 public class SelectAllAction extends DockingAction {

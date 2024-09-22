@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.trace.model.symbol;
 
-/**
+# /**
  * A symbol view where names cannot be duplicated and things have an address
  *
  * @param <T> the type of symbols in the view

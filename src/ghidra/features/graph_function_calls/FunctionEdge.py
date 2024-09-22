@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Objects;
 
 import ghidra.program.model.listing.Function;
 
-/** 
+# /** 
  * An edge between two functions.  This edge is never added to the graph, but exists for us
  * to maintain relationships between functions outside of the visual graph.
  */

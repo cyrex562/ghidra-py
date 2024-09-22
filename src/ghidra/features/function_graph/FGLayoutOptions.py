@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.functiongraph.graph.layout;
 import ghidra.app.plugin.core.functiongraph.FunctionGraphPlugin;
 import ghidra.framework.options.Options;
 
-/**
+# /**
  * An interface for {@link FGLayout} options
  */
 public interface FGLayoutOptions {

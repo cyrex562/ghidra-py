@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.layout.VerticalLayout;
 import resources.Icons;
 import utility.function.Callback;
 
-/**
+# /**
  * Panel for specifying and managing BSim filters.
  */
 public class BSimFilterPanel extends JPanel {

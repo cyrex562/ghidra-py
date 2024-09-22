@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.dbgmodel.dbgmodel.debughost.DebugHostSymbolEnumerator;
 import agent.dbgmodel.dbgmodel.debughost.DebugHostTypeSignature;
 import agent.dbgmodel.dbgmodel.main.ModelObject;
 
-/**
+# /**
  * A wrapper for {@code IDataModelConcept} and its newer variants.
  */
 public interface DataModelConcept extends Concept {

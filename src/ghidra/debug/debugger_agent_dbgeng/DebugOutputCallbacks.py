@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package agent.dbgeng.dbgeng;
 
 import agent.dbgeng.dbgeng.DebugControl.DebugOutputLevel;
 
-/**
+# /**
  * The interface for receiving output callbacks via {@code IDebugOutputCallbacks} or a newer
  * variant.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.dwarf.funcfixup;
 import ghidra.app.util.bin.format.dwarf.*;
 import ghidra.util.classfinder.ExtensionPointProperties;
 
-/**
+# /**
  * Ensures that function parameter names are unique and valid 
  */
 @ExtensionPointProperties(priority = DWARFFunctionFixup.PRIORITY_LAST)

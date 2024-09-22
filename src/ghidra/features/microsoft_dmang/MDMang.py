@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import mdemangler.object.MDMangObjectParser;
 import mdemangler.object.MDObjectCPP;
 import mdemangler.template.MDTemplateArgumentsList;
 
-/**
+# /**
  * A class for demangling symbols created by Microsoft Visual Studio. The
  * demangled symbols are output according to the MD interpretation. Other
  * derived classes can output according to some other interpretation, such as

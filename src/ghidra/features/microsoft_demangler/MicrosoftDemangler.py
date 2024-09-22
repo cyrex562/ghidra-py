@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.Program;
 import mdemangler.MDException;
 import mdemangler.MDMangGhidra;
 
-/**
+# /**
  * A class for demangling debug symbols created using Microsoft Visual Studio.
  */
 public class MicrosoftDemangler implements Demangler {

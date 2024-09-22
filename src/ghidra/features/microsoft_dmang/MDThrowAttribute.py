@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package mdemangler.functiontype;
 
 import mdemangler.*;
 
-/**
+# /**
  * This class represents a throw attribute (Microsoft C++ mangling parlance)
  *  of a function within a Microsoft mangled symbol.
  */
@@ -61,5 +61,5 @@ public class MDThrowAttribute extends MDParsableItem {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

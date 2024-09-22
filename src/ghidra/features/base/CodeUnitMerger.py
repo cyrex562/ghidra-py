@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.NotYetImplementedException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Manages byte and code unit changes and conflicts between the latest versioned
  * program and the modified program being checked into version control.
  * <br>Indirect conflicts include:

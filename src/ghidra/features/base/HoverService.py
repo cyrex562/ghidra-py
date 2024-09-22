@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.widgets.fieldpanel.support.FieldLocation;
 import ghidra.program.model.listing.Program;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * <code>HoverService</code> provides the ability to popup data Windows over a Field viewer
  * in response to the mouse hovering over a single Field.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.mem.*;
 import ghidra.util.Msg;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * Helper class to make changes to memory blocks.
  */
 class MemoryMapManager {

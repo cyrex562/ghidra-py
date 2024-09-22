@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.Supplier;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 
-/**
+# /**
  * A value to be completed once upon the first request, asynchronously
  *
  * This contains a single lazy value. It is computed only if requested. When requested, a future is

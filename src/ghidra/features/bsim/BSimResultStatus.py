@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.gui.search.results;
 
-/**
+# /**
  * Enum of BSim results apply statuses for when users attempt to apply function names or signatures
  */
 public enum BSimResultStatus {

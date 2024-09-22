@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.data.DataTypeManager;
 import ghidra.program.model.listing.Program;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Metrics captured during the application of a PDB.  This is a Ghidra class separate from the
  * PDB API that we have crafted to help us quantify and qualify the ability apply the PDB
  * to a {@link DataTypeManager} and/or {@link Program}.

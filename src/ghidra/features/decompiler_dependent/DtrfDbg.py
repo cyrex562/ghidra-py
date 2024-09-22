@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.apache.commons.lang3.StringUtils;
 import generic.io.NullPrintWriter;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A package utility class to allow for tests to selectively enable debug output.  This class is
  * used instead of generic logging with the intent that this class will be removed when the bug(s)
  * are fixed.

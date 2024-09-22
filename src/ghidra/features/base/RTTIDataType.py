@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.data.DataTypeManager;
 import ghidra.program.model.data.DynamicDataType;
 import ghidra.program.model.listing.*;
 
-/**
+# /**
  * An abstract class that each RTTI data type should extend to get common functionality.
  */
 public abstract class RTTIDataType extends DynamicDataType {

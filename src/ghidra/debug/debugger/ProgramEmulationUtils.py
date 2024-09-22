@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import ghidra.trace.model.time.TraceSnapshot;
 import ghidra.util.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * A set of utilities for emulating programs without necessarily having a debugger connection.
  * 
  * <p>

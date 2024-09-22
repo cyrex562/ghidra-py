@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.plugintool.Plugin;
 import ghidra.program.model.symbol.*;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * A local action intended for components which supply a {@link ProgramSymbolActionContext} which
  * facilitates editing an external location symbol.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.framework.preferences.Preferences;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Dialog to open a file that is versioned and allow a version to be
  * opened.
  * @param <T> domain object class

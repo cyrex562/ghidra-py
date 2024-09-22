@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.database.spatial.rect;
 
 import ghidra.util.database.spatial.AbstractConstraintsTreeSpatialMap;
 
-/**
+# /**
  * Specifies which element of a query is returned by
  * {@link AbstractConstraintsTreeSpatialMap#firstEntry()} and the like.
  */

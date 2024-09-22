@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.classfinder.ExtensionPoint;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Interface that represents a filesystem that contains files.
  * <p>
  * Operations take a {@link TaskMonitor} if they need to be cancel-able.

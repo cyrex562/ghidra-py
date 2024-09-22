@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.server.RepositoryManager;
 import ghidra.util.InvalidNameException;
 import ghidra.util.exception.UserAccessException;
 
-/**
+# /**
  * <code>RepositoryFile</code> provides a persistent wrapper for a FolderItem
  * stored within a Repository.  This file is associated with a parent RepositoryFolder
  * and facilitates caching of the underlying FolderItem.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import mdemangler.MDMang;
 import mdemangler.datatype.MDDataType;
 import mdemangler.datatype.MDDataTypeParser;
 
-/**
+# /**
  * This class represents a "pointer reference" data type within a Microsoft mangled symbol.
  * It is one of a number of "extended" data types not originally planned by Microsoft.
  */
@@ -51,5 +51,5 @@ public class MDPointerRefDataType extends MDModifierType {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
 import java.io.IOException;
 import java.io.Writer;
 
-/**
+# /**
  * This class is the version of {@link TypeProgramInterface} for Microsoft v8.00 PDB.
  */
 public class TypeProgramInterface800 extends TypeProgramInterface {

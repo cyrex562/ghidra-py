@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.functiongraph;
 
 import ghidra.graph.viewer.PathHighlightMode;
 
-/**
+# /**
  * An enum for mapping the {@link PathHighlightMode} to values for use in UI actions.
  */
 public enum EdgeDisplayType {

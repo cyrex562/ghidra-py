@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.BiFunction;
 
 import ghidra.async.AsyncHandlerCanExit;
 
-/**
+# /**
  * The handler given to sequence actions that produce a temporary value
  *
  * @param <R> the type of result of the whole sequence

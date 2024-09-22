@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Class to represent a Device Tree (DT) Table Entry. 
  * 
  * @see <a href="https://github.com/u-boot/u-boot/blob/master/include/dt_table.h#L40">master/include/dt_table.h</a>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler;
 
-/**
+# /**
  * A class to represent a demangled function parameter.
  * <p>
  * This extends {@link DemangledDataType} in order to associate an optional parameter label with

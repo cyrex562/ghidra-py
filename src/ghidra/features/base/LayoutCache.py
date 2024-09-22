@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.viewer.multilisting;
 import ghidra.program.model.address.Address;
 import ghidra.util.datastruct.FixedSizeHashMap;
 
-/**
+# /**
  * Cache for MultiLayout objects
  */
 public class LayoutCache extends FixedSizeHashMap<Address, MultiLayout> {

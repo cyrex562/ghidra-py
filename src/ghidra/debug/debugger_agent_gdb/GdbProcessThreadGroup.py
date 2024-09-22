@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package agent.gdb.manager;
 
-/**
+# /**
  * A description of an available process
  * 
  * NOTE: This list of available processes can change at any time. The pid may not be valid or

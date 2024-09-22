@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import java.util.*;
 import ghidra.dbg.target.TargetObject;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A model listener that permits {@link AttributeCallback} annotations for convenient callbacks when
  * the named attribute changes
  * 

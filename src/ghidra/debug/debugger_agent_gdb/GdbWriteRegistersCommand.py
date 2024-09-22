@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import agent.gdb.manager.evt.GdbCommandDoneEvent;
 import agent.gdb.manager.impl.*;
 import ghidra.dbg.util.ConversionUtils;
 
-/**
+# /**
  * Implementation of {@link GdbContextualOperations#writeRegisters(Map)}
  */
 public class GdbWriteRegistersCommand extends AbstractGdbCommandWithThreadAndFrameId<Void> {

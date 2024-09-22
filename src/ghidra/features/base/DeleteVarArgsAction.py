@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -27,7 +27,7 @@ import ghidra.program.util.*;
 import ghidra.util.HelpLocation;
 import docking.action.MenuData;
 
-/**
+# /**
  * Action that changes a Function so that it has VarArgs (a variable argument list).
  */
 public class DeleteVarArgsAction extends ListingContextAction {

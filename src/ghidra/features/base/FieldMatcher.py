@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 import ghidra.program.model.data.*;
 import ghidra.util.datastruct.SortedRangeList;
 
-/**
+# /**
  * This class allows clients to match on multiple field attributes, such as name and offset
  * within a parent data type.
  * <p>

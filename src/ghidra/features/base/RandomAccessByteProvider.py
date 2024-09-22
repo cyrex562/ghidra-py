@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.formats.gfilesystem.FSRL;
 import ghidra.formats.gfilesystem.FileSystemService;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An implementation of ByteProvider where the underlying
  * bytes are supplied by a random access file.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-/**
+# /**
  * An individual PDB C11 Line Start/End record (think these are offsets in a segment)
  */
 public class C11LinesStartEnd {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.bsfv;
 
-/**
+# /**
  * This class is used to display the actual BSim feature in the BSim feature table.  Formally, 
  * a BSim feature is a 32 bit hash.  We wrap such an integer with an instance of this class in 
  * order to force a particular unsigned comparison and hexadecimal display in the feature table.

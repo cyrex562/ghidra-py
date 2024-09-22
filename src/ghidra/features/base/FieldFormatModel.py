@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.options.Options;
 import ghidra.framework.options.ToolOptions;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Maintains the size and ordering for a layout of fields.
  */
 public class FieldFormatModel {

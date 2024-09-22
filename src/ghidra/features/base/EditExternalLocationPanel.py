@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -48,7 +48,7 @@ import ghidra.util.exception.*;
 import ghidra.util.layout.PairLayout;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * A panel for creating or editing an external location or external function.
  */
 class EditExternalLocationPanel extends JPanel {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.opinion;
 
-/**
+# /**
  * A class to represent an error when processing an opinion.
  */
 public class OpinionException extends Exception {

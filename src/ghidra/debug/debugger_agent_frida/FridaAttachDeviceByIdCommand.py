@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import agent.frida.frida.FridaClientImpl;
 import agent.frida.manager.*;
 import agent.frida.manager.impl.FridaManagerImpl;
 
-/**
+# /**
  * Implementation of {@link FridaTarget#attach(BigInteger processId, FridaError error)}
  */
 public class FridaAttachDeviceByIdCommand extends AbstractFridaCommand<Void> {

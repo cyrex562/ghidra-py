@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.app.util.viewer.proxy.EmptyProxy;
 import ghidra.app.util.viewer.proxy.ProxyObj;
 import ghidra.program.model.listing.Data;
 
-/**
+# /**
  * FactoryField class for displaying the open/close field.
  */
 public class OpenCloseField implements ListingField {

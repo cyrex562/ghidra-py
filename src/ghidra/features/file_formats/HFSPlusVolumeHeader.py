@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.ByteProvider;
 
-/**
+# /**
  * Apple HFS+ volume header.
  * <p>
  * See https://developer.apple.com/library/archive/technotes/tn/tn1150.html#VolumeHeader

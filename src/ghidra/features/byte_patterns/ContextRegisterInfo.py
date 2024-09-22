@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.math.BigInteger;
 
 import org.jdom.Element;
 
-/**
+# /**
  * class for representing the values a specific context register assumes within a function body. 
  */
 public class ContextRegisterInfo {

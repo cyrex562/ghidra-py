@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import agent.frida.manager.FridaManager;
 import agent.frida.manager.FridaSession;
 import agent.frida.manager.impl.FridaManagerImpl;
 
-/**
+# /**
  * Implementation of {@link FridaManager#addSession()}
  */
 public class FridaAddSessionCommand extends AbstractFridaCommand<FridaSession> {

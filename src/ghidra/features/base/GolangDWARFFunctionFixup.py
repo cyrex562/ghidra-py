@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.model.symbol.SymbolType;
 import ghidra.util.classfinder.ExtensionPointProperties;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Fixups for golang functions found during DWARF processing.
  * <p>
  * Fixes storage of parameters to match the go callspec and modifies parameter lists to match

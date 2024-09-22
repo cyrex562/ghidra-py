@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import mdemangler.datatype.MDDataTypeParser;
 import mdemangler.datatype.modifier.MDBasedAttribute;
 import mdemangler.datatype.modifier.MDCVMod;
 
-/**
+# /**
  * This class represents a function within a Microsoft mangled symbol.
  */
 public class MDFunctionType extends MDType {
@@ -181,5 +181,5 @@ public class MDFunctionType extends MDType {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

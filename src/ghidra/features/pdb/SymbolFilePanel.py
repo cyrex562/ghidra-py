@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.table.GhidraTable;
 import pdb.PdbPlugin;
 import pdb.symbolserver.FindOption;
 
-/**
+# /**
  * Displays the results of a 'find' operation in a table.
  * Also allows the user to tweak search options.
  */

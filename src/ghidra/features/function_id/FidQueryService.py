@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.feature.fid.hash.FidHashQuad;
 import ghidra.program.model.lang.Language;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * This object represents a set of open Fid databases appropriate for querying against a
  * particular language.  This object must be closed when it is no longer needed.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.framework.options.Options;
 import ghidra.program.model.data.CharsetInfo;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Options used while reading a PDB ({@link AbstractPdb}) that control various aspects.  These
  * can be optional values used during our development of this PdbReader.  Currently included are
  * a field to control debug logging and {@link Charset} values used for String interpretation.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package mdemangler.object;
 import mdemangler.MDException;
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents a MSFT <b><code>__catch$</code></b> (prefix) symbol.  We have created
  *  this object and the <b><code>MDObjectReserved</code></b> type from which it is derived.  We
  *  do not know much about this object yet.
@@ -53,5 +53,5 @@ public class MDObjectCatch extends MDObjectReserved {
 	}
 }
 
-/******************************************************************************/
-/******************************************************************************/
+# /******************************************************************************/
+# /******************************************************************************/

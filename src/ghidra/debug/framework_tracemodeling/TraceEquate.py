@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.symbol.Equate;
 import ghidra.trace.model.Lifespan;
 import ghidra.trace.model.thread.TraceThread;
 
-/**
+# /**
  * TODO: Document me
  * 
  * This is like {@link Equate}, except that extending it would prevent references with snaps. Thus,

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.debug.api.model.DebuggerMappingOpinion;
 import ghidra.program.model.lang.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * TODO: How does Frida name its target architectures? If same as GNU, use that. If not, maybe we
  * should add those external names to .ldefs? It'd be nice to have an .ldefs-based opinion that this
  * can be refactored onto.

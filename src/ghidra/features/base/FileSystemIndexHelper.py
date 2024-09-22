@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * A helper class used by GFilesystem implementors to track mappings between GFile
  * instances and the underlying container filesystem's native file objects.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.framework.plugintool.ServiceInfo;
 import ghidra.program.model.address.AddressSet;
 import ghidra.program.util.GroupPath;
 
-/**
+# /**
  * Service provided by the program tree plugin to get the current view 
  * (address set shown in the Code Browser), 
  * and the name of the tree currently being viewed.

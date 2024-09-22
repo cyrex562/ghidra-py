@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.app.util.bin.BinaryReader;
 
-/**
+# /**
  * A class to hold a length/string/ordinal set.
  */
 public class LengthStringOrdinalSet extends LengthStringSet {

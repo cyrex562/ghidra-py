@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 import utility.function.Dummy;
 
-/**
+# /**
  * A class to perform some of the boilerplate setup of the {@link ConcurrentQ} that is shared
  * amongst clients that perform decompilation in parallel.
  *

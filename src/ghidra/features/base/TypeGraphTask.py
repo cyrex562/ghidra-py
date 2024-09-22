@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.exception.GraphException;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-/*
+# /*
  * Task to recursively graph and display a data type
  *
  * Nodes are generated for pointers and embedded structures

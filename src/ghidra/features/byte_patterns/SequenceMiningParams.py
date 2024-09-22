@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.closedpatternmining;
 
-/**
+# /**
  * 
  * Objects of this class store information to control runs of the closed sequence pattern mining 
  * algorithm.

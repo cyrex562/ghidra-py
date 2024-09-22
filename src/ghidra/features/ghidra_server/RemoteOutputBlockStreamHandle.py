@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.zip.*;
 
 import db.buffers.*;
 
-/**
+# /**
  * <code>RemoteOutputBlockStreamHandle</code> provides a serializable handle to a
  * remote output block stream. The handle is always instantiated by the server side and
  * passed to the client via remote serialization.

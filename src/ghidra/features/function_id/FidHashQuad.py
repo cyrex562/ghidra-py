@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.hash;
 
-/**
+# /**
  * Container to hold all three hashes for a function (medium, full, and specific).
  */
 public interface FidHashQuad {

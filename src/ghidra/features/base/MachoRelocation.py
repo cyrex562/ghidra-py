@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.symbol.Symbol;
 import ghidra.program.model.symbol.SymbolUtilities;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * A representation of a single Mach-O relocation that the {@link MachoRelocationHandler} will use
  * to perform the relocation.  In Mach-O, some relocations may be "paired," so an instance of this
  * class may contain 2 {@link RelocationInfo}s. 

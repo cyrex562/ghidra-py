@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.table.*;
 import resources.Icons;
 
-/**
+# /**
  * ComponentProvider to display the results of a BSim Overview query
  */
 public class BSimOverviewProvider extends ComponentProviderAdapter {

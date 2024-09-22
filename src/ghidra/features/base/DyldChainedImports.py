@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.List;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.macho.commands.dyld.BindingTable.Binding;
 
-/**
+# /**
  * Represents a dyld_chained_import array.
  * 
  * @see <a href="https://github.com/apple-oss-distributions/dyld/blob/main/include/mach-o/fixup-chains.h">mach-o/fixup-chains.h</a> 

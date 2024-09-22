@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.action.DockingAction;
 import docking.action.MenuData;
 import docking.widgets.OptionDialog;
 
-/**
+# /**
  * Action for adding all fields to the current format.
  */
 public class ResetFormatAction extends DockingAction {

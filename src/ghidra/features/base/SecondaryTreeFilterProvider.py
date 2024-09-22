@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import docking.widgets.tree.*;
 import docking.widgets.tree.support.CombinedGTreeFilter;
 import docking.widgets.tree.support.GTreeFilter;
 
-/**
+# /**
  * A filter that allows for an additional second filter.
  */
 public class SecondaryTreeFilterProvider extends DefaultGTreeFilterProvider {

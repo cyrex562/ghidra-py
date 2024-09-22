@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.graph.viewer.popup.ToolTipInfo;
 import ghidra.service.graph.*;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * Generates tool tips for an {@link AttributedVertex} or {@link AttributedEdge} in
  * an {@link AttributedGraph}
  */

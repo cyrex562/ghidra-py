@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.dbg.util.*;
 import ghidra.dbg.util.CollectionUtils.Delta;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Type information for a particular value or {@link TargetObject}
  * 
  * <p>

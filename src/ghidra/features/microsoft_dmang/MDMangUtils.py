@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import mdemangler.datatype.modifier.MDModifierType;
 import mdemangler.naming.*;
 import mdemangler.object.MDObjectCPP;
 
-/**
+# /**
  * Utility class for MDMang users (and perhaps internal)
  */
 public class MDMangUtils {

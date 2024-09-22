@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import org.jgrapht.nio.*;
 
 import ghidra.service.graph.*;
 
-/**
+# /**
  * Abstract base class that graph exporters can extend to get some common functionality
  */
 public abstract class AbstractAttributedGraphExporter implements AttributedGraphExporter {

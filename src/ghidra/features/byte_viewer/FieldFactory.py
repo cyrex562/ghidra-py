@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.fieldpanel.support.FieldHighlightFactory;
 import ghidra.app.plugin.core.format.*;
 import ghidra.program.model.address.AddressOutOfBoundsException;
 
-/**
+# /**
  * Implementation of Field for showing dated formatted according to a
  * DataFormatModel.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 import utility.function.Dummy;
 
-/**
+# /**
  * Performs a DWARF datatype import and a DWARF function import, under the control of the
  * {@link DWARFImportOptions}.
  */
