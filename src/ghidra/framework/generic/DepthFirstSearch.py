@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.graph;
 
 import java.util.*;
 
-/** 
+# /** 
  * Provides a depth first search service to directed graphs. 
  * Once a search has finished information about the search 
  * can be obtained.

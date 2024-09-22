@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.Shape;
 import java.awt.geom.*;
 import java.util.*;
 
-/**
+# /**
  * Class for defining shapes to use for rendering vertices in a graph
  */
 public abstract class VertexShape {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.Swing;
 import ghidra.util.SystemUtilities;
 import ghidra.util.task.*;
 
-/** 
+# /** 
  * Manages the updating of ThreadTableModels.  As requests to load, sort, filter, add/remove item
  * in a ThreadedTableModel occur, this class schedules a TableUpdateJob to do the work.  It uses
  * a SwingUpdateManager to coalesce add/remove so that the table does not constantly update when

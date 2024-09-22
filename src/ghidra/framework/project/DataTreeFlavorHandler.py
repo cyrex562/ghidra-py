@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.main.datatree;
 import docking.widgets.tree.GTreeNode;
 import ghidra.framework.plugintool.PluginTool;
 
-/**
+# /**
  * Interface for classes that will handle drop actions for {@link DataTree}s.
  */
 public interface DataTreeFlavorHandler {

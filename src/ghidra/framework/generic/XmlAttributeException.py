@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.xml;
 
-/**
+# /**
  * A runtime exception that is throw when invalid
  * or missing attributes are encountered.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 
 import java.io.IOException;
 
-/**
+# /**
  * Exception class used when the named language cannot be found.
  */
 public class LanguageNotFoundException extends IOException {

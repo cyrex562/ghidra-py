@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import javax.swing.LookAndFeel;
 import generic.theme.DiscoverableGTheme;
 import generic.theme.LafType;
 
-/**
+# /**
  * Built-in GTheme that uses the Motif {@link LookAndFeel} and the standard (light)
  * application defaults.
  */

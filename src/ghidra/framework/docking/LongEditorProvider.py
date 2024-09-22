@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table.constraint.provider;
 
-/**
+# /**
  * Class for providing editor for long columns.
  */
 public class LongEditorProvider extends IntegerEditorProvider<Long> {

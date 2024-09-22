@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.awt.event.InputEvent;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * This class receives notification when the user initiates a drag and drop operation; it is 
  * responsible for getting the <code>Transferable</code> and telling the <code>DragSource</code> to 
  * start the drag.

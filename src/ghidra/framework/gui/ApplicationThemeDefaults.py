@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package generic.theme;
 
-/**
+# /**
  * Provides theme default values, such as those loaded from {@code *.theme.property} files.
  */
 public interface ApplicationThemeDefaults {

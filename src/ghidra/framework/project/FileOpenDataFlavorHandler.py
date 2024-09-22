@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.dnd.DropTargetDropEvent;
 
 import ghidra.framework.plugintool.PluginTool;
 
-/**
+# /**
  * Interface for classes that will handle drop actions for files dropped onto the tool
  */
 public interface FileOpenDataFlavorHandler {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.HTMLUtilities;
 import ghidra.util.exception.AssertException;
 import ghidra.util.table.column.AbstractGhidraColumnRenderer;
 
-/**
+# /**
  * This class provides a field renderer for version tracking tables. It is used for indicating 
  * if the source or destination address for a match has multiple labels. An icon gives a visual
  * clue that there is more than one label, since the source and destination label fields only 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.docking.settings;
 
-/**
+# /**
  *  The inteface for SettingsDefinitions that have boolean values.  SettingsDefinitions
  * objects are used as keys into Settings objects that contain the values using a name-value
  * type storage mechanism.

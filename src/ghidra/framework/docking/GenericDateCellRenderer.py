@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.table.GTableCellRenderer;
 import docking.widgets.table.GTableCellRenderingData;
 import ghidra.util.DateUtils;
 
-/**
+# /**
  * The JDK-provided DateRenderer does not inherit the backgrounds and such properly.
  * For LAFs having tables with alternating backgrounds, e.g., Aqua and Nimbus, the date
  * column does not have the correct background. This fixes that.

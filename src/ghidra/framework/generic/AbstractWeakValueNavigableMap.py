@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.datastruct;
 
 import java.util.*;
 
-/**
+# /**
  * Class to provide a navigable, e.g., tree-, map with weak values
  * 
  * @param <K> the type of keys

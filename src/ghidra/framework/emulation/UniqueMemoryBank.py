@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import generic.stl.MapSTL;
 import ghidra.pcode.error.LowlevelError;
 import ghidra.program.model.address.AddressSpace;
 
-/**
+# /**
  * An subclass of {@link MemoryBank} intended for modeling the "unique" memory
  * space.  The space is byte-addressable and paging is not supported.  
  */

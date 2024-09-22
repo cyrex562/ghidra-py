@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.emulator;
 
 import ghidra.program.model.address.AddressSpace;
 
-/**
+# /**
  * A means of intercepting and/or modifying the emulator's memory access.
  * 
  * <p>

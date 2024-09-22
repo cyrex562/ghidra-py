@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Iterator;
 import ghidra.program.model.address.*;
 import ghidra.program.model.listing.*;
 
-/**
+# /**
  * Combines an Instruction iterator and Data iterator into a code unit iterator
  */
 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import edu.uci.ics.jung.visualization.VisualizationViewer;
 import edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin;
 import ghidra.graph.viewer.*;
 
-/**
+# /**
  * A mouse handler to center a vertex when the header is double-clicked
  * 
  * @param <V> the vertex type

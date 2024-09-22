@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.symbol.FlowType;
 import ghidra.program.model.symbol.RefType;
 import ghidra.program.model.util.CodeUnitInsertionException;
 
-/**
+# /**
  * Interface to define an instruction for a processor.
  */
 public interface Instruction extends CodeUnit, ProcessorContext {

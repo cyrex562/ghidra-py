@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.exception.UnableToSwingException;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A utility class to handle running code on the AWT Event Dispatch Thread
  */
 public class Swing {

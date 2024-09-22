@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.database.util;
 
 import db.DBRecord;
 
-/**
+# /**
  * Combines two queries such that this query is the logical "AND" of the two queries.  If the
  * first query does not match, then the second query is not executed.
  */

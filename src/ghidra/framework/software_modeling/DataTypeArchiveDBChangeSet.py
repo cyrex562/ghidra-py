@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.framework.data.DomainObjectDBChangeSet;
 import ghidra.program.database.map.NormalizedAddressSet;
 import ghidra.program.model.listing.DataTypeArchiveChangeSet;
 
-/**
+# /**
  * Holds changes made to a data type archive.
  *
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.plugin.processors.sleigh.SleighLanguage;
 import ghidra.program.model.lang.*;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * 
  * This class handles dynamic pcode injection for modeling JVM bytecode.
  * 

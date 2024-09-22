@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking;
 
-/** A basic interface for holding onto drop handlers */
+# /** A basic interface for holding onto drop handlers */
 public interface DropTargetHandler {
 
     public void dispose();

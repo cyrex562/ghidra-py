@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.help.UnsupportedOperationException;
 import ghidra.docking.settings.Settings;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * <code>AlignedStructureInspector</code> provides a simple instance of a structure 
  * member container used to perform alignment operations without forcing modification
  * of the actual structure.

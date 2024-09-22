@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * Plugins are a basic building block in Ghidra, used to bundle features or capabilities
  * into a unit that can be enabled or disabled by the user in their Tool.
  * <p>

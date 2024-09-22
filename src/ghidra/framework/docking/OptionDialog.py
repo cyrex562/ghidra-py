@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import docking.widgets.label.GIconLabel;
 import ghidra.util.*;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A utility class to easily show dialogs that require input from the user.
  *
  *

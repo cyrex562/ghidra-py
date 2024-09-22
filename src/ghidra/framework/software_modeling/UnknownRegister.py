@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * <code>UnknownRegister</code> is used when a register is requested in the register space
  * for an undefined location.
  */

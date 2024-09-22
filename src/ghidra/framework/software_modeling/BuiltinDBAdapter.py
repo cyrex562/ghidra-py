@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import db.*;
 import ghidra.framework.data.OpenMode;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Database adapter for managing built-in data types.
  */
 public abstract class BuiltinDBAdapter {

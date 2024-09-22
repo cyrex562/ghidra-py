@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -399,7 +399,7 @@ public class ARM_ElfRelocationHandler
 
 				break;
 			}
-/*
+# /*
 			case R_ARM_MOVW_PREL_NC: {
 				break;
 			}
@@ -444,7 +444,7 @@ public class ARM_ElfRelocationHandler
 				memory.setShort(relocationAddress.add(2), (short) newValue, instructionBigEndian);
 				break;
 			}
-/*
+# /*
 			case R_ARM_THM_JUMP19: {
 				break;
 			}

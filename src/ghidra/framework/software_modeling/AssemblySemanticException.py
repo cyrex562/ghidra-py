@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.app.plugin.assembler.sleigh.sem.AssemblyResolvedError;
 
-/**
+# /**
  * Thrown when all resolutions of an assembly instruction result in semantic errors.
  * 
  * <p>

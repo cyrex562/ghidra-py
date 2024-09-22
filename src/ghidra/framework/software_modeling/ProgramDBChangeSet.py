@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.database.util.SynchronizedAddressSetCollection;
 import ghidra.program.model.address.*;
 import ghidra.program.model.listing.ProgramChangeSet;
 
-/**
+# /**
  * Holds changes made to a program.
  * Currently changes are summarized by an address set.
  *

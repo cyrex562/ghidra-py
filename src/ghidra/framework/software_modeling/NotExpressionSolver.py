@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.assembler.sleigh.expr;
 
 import ghidra.app.plugin.processors.sleigh.expression.NotExpression;
 
-/**
+# /**
  * Solves expressions of the form {@code ~A}
  */
 public class NotExpressionSolver extends AbstractUnaryExpressionSolver<NotExpression> {

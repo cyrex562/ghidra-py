@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.*;
 import docking.DialogComponentProvider;
 import docking.DockingUtils;
 
-/**
+# /**
  * General purpose modal dialog to display text in a text area.
  */
 public class ReadTextDialog extends DialogComponentProvider {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.exception.AssertException;
 import java.math.BigInteger;
 import java.util.Arrays;
 
-/**
+# /**
  * Class for representing register values that keep track of which bits are actually set.  
  * Values are stored as big-endian: MSB of mask is stored at bytes index 0,
  * MSB of value is stored at (bytes.length/2).

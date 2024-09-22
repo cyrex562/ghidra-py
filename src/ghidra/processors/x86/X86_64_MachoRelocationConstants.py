@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.macho.relocation;
 
-/** 
+# /** 
  * {@link X86_64_MachoRelocationHandler} constants
  * 
  * @see <a href="https://opensource.apple.com/source/xnu/xnu-7195.81.3/EXTERNAL_HEADERS/mach-o/x86_64/reloc.h.auto.html">mach-o/x86_64/reloc.h</a> 

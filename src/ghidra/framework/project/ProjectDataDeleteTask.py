@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.*;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * {@link Task} that handles deleting {@link DomainFile files} and {@link DomainFolder folders}
  * from the project.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking;
 
 import java.awt.Component;
 
-/**
+# /**
  * A listener interface to know when a component has been 
  * made {@link Component#isDisplayable() displayable}
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.graph.viewer.actions;
 import docking.ComponentProvider;
 import ghidra.graph.VisualGraph;
 
-/**
+# /**
  * Context for {@link VisualGraph}'s satellite viewer
  */
 public class VgSatelliteContext extends VgActionContext {

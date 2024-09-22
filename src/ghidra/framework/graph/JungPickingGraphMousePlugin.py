@@ -1,7 +1,7 @@
-/* ###
+# /* ###
  * IP: BSD-3-JUNG
  */
-/*
+# /*
  * Copyright (c) 2005, The JUNG Authors 
  *
  * All rights reserved.
@@ -31,7 +31,7 @@ import edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin;
 import edu.uci.ics.jung.visualization.picking.PickedState;
 import generic.theme.GThemeDefaults.Colors.Palette;
 
-/** 
+# /** 
  * PickingGraphMousePlugin supports the picking of graph elements
  * with the mouse. MouseButtonOne picks a single vertex
  * or edge, and MouseButtonTwo adds to the set of selected Vertices

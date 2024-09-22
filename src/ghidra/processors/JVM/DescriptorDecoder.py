@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.pcodeInject.*;
 import ghidra.javaclass.format.constantpool.*;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * 
  * This is a utility class containing methods to parse information of out of method 
  * and field descriptors.

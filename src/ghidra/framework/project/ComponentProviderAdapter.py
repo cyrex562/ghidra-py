@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.plugintool;
 import docking.ComponentProvider;
 import docking.Tool;
 
-/**
+# /**
  * Extends the {@link ComponentProvider} to fit into the Plugin architecture by taking in a 
  * {@link PluginTool} which extends {@link Tool}.  Most implementers will want to extend
  * this class instead of the ComponentProvider class because they will want to access the extra

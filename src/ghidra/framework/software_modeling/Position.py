@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.lang.ProcessorContext;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * 
  *
  * To change this generated comment edit the template variable "typecomment":

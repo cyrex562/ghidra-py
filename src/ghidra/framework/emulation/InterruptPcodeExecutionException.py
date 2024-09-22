@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.pcode.exec;
 
 import ghidra.pcode.emu.DefaultPcodeThread.PcodeEmulationLibrary;
 
-/**
+# /**
  * Exception thrown by {@link PcodeEmulationLibrary#emu_swi()}, a p-code userop exported by
  * emulators for implementing breakpoints.
  */

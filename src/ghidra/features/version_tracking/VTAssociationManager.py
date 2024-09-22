@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * The interface for the association manager which manages the associations which are shared
  * with similar matches within a session.
  *

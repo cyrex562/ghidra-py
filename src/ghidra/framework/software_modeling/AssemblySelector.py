@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.plugin.assembler.sleigh.parse.AssemblyParseResult;
 import ghidra.app.plugin.assembler.sleigh.sem.*;
 import ghidra.app.plugin.assembler.sleigh.util.AsmUtil;
 
-/**
+# /**
  * Provides a mechanism for pruning and selecting binary assembled instructions from the results of
  * parsing textual assembly instructions. There are two opportunities: After parsing, but before
  * prototype generation, and after machine code generation. In the first opportunity, filtering is

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.LookAndFeel;
 
 import resources.ResourceManager;
 
-/**
+# /**
  * A wrapper for an icon that suppresses errors. Some Icons that are mined from a 
  * {@link LookAndFeel} have specialized uses and will throw exceptions if used outside
  * their intended component. This class is used when trying to show them in the the theme

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.util.demangler.swift;
 
 import ghidra.app.util.demangler.swift.nodes.SwiftNode;
 
-/**
+# /**
  * Kinds of Swift demangling {@link SwiftNode}s
  * 
  * @see <a href="https://github.com/apple/swift/blob/main/include/swift/Demangling/DemangleNodes.def">DemangleNodes.def</a> 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.lang.CompilerSpecID;
 import ghidra.program.model.listing.*;
 import ghidra.program.model.mem.*;
 
-/**
+# /**
  * Abstract model for information about a windows data type and its associated structure, 
  * which can be used to create and validate it in a program.
  */

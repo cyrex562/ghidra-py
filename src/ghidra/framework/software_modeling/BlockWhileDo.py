@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.program.model.pcode;
 
 
-/**
+# /**
  * Block representing a while-do (exit from the top) loop construction
  * 
  * possible multiple incoming edges

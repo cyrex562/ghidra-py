@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * Identifies code units that are resources, such as Bitmap, jpeg, png, etc. 
  */
 public interface Resource {

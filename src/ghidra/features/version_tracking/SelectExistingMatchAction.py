@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.feature.vt.gui.plugin.VTPlugin;
 import ghidra.feature.vt.gui.provider.functionassociation.FunctionAssociationContext;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Action that selects the function match, if it exists, for the currently selected source and 
  * destination functions in the tables.
  */

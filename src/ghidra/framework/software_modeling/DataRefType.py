@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.program.model.symbol;
 
 
-/**
+# /**
  * Class to define reference types for data.
  */
 public final class DataRefType extends RefType {

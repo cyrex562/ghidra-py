@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.table.TableModel;
 import ghidra.docking.settings.Settings;
 import ghidra.docking.settings.SettingsDefinition;
 
-/**
+# /**
  * A model that provides access to table columns that are "configurable," whether by way of 
  * {@link Settings} object, or by the implementations and how they were written (like supplying 
  * custom renderers and such).

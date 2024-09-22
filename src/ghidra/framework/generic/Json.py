@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Arrays;
 
 import org.apache.commons.lang3.builder.*;
 
-/**
+# /**
  * A utility class to format strings in JSON format.   This is useful for easily generating
  * {@code toString()} representations of objects.
  */

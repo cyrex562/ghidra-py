@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.exception.DuplicateNameException;
 
 import java.io.IOException;
 
-/**
+# /**
  * NOTE: THE FOLLOWING TEXT EXTRACTED FROM JVMS7.PDF
  * <p>
  * The CONSTANT_Long_info represent 8-byte numeric (long) constants:

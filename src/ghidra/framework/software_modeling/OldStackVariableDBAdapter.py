@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import db.*;
 import ghidra.program.database.map.AddressMap;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Database adapter for stack variables.
  *
  * 

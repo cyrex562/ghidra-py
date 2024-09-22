@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.JComponent;
 
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  *
  * Interface to define methods for an editor that supplies its own
  * component to be displayed in the OptionsDialog.

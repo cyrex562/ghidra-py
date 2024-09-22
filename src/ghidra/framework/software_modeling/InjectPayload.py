@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.exception.NotFoundException;
 import ghidra.xml.XmlParseException;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * <code>InjectPayload</code> encapsulates a semantic (p-code) override which can be injected
  * into analyses that work with p-code (Decompiler, SymbolicPropagator)
  * The payload typically replaces either a subroutine call or a userop

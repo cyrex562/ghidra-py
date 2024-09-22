@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -22,7 +22,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.*;
 import javax.swing.border.Border;
 
-/**
+# /**
  * Class that is a JButton that has an empty border and adds a mouse listener
  * so that the button looks raised when the mouse pointer enters the button,
  * and looks lowered when the mouse pointer exits the button. 

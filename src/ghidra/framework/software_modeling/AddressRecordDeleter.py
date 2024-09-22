@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.database.util.RecordFilter;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.KeyRange;
 
-/**
+# /**
  * Static methods to delete records from a table. Handles subtle issues with image base causing
  * address to "wrap".
  */

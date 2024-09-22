@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.table.GTableCellRenderer;
 import docking.widgets.table.GTableCellRenderingData;
 import generic.theme.GColor;
 
-/**
+# /**
  * Renderer for the {@link FVTable} that will set the background color based on
  * the text contents. This is intended to be used only for the log level 
  * column.

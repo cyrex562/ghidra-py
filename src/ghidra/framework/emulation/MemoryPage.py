@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.pcode.memstate;
 
 import java.util.Arrays;
 
-/**
+# /**
  * <code>MemoryPage</code> is allows the contents/data of a memory page
  * to be maintained along with an initializedMask.  Each bit within the
  * initializedMask corresponds to a data byte within the page.  A null

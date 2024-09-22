@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.graph;
 
 import java.util.*;
 
-/**
+# /**
  * A directed graph that need not be constructed explicitly
  * 
  * <P>Instead, the graph is constructed (and usually cached) as it is explored. For instance, if

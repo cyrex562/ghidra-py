@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.symbol;
 
-/**
+# /**
  * Interface to transform (shorten, simplify) names of data-types, functions, and name spaces
  * for display.
  */

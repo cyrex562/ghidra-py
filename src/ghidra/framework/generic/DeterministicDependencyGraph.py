@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import org.apache.commons.collections4.set.ListOrderedSet;
 
-/**
+# /**
  * Dependency Graph that uses {@link TreeMap}s and {@link ListOrderedSet}s to provide
  * determinism in pulling ({@link #pop()}) from the graph.  This class seems to consume more
  * memory than {@link DependencyGraph}, and if memory is not an issue, it also seems to be

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.ActionContext;
 import docking.Tool;
 import docking.action.DockingActionIf;
 
-/**
+# /**
  * Provides notification when the popup action menu is displayed.   This interface allows 
  * temporary/transient actions (those not registered with the tool via 
  * {@link Tool#addAction(DockingActionIf)}) to be used in the popup context menu.   

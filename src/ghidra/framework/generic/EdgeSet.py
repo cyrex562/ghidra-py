@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.util.exception.NoValueException;
 
-/** Container class for a set of edges (ghidra.util.graph.Edge). 
+# /** Container class for a set of edges (ghidra.util.graph.Edge). 
  * 
  * 
  */

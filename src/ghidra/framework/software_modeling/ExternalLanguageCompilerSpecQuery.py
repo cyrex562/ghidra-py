@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.lang;
 
-/**
+# /**
  * Analog to LanguageCompilerSpecQuery, for use with querying External Languages.
  * That is, languages that exist in other products, like IDA-Pro's 'metapc.'
  */

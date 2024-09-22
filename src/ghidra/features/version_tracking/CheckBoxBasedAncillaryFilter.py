@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.options.SaveState;
 import ghidra.util.layout.ColumnLayout;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * A basic class to extract out code I was repeating over and over again.  This class creates
  * a component that contains series of check boxes and can answer questions about filtering.
  * 

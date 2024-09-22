@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.plugin.assembler.sleigh.sem.*;
 import ghidra.app.plugin.processors.sleigh.expression.MultExpression;
 import ghidra.app.plugin.processors.sleigh.expression.PatternExpression;
 
-/**
+# /**
  * Solves expressions of the form {@code A * B}
  */
 public class MultExpressionSolver extends AbstractBinaryExpressionSolver<MultExpression> {

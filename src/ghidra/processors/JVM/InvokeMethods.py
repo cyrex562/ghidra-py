@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 import ghidra.javaclass.format.DescriptorDecoder;
 import ghidra.javaclass.format.constantpool.AbstractConstantPoolInfoJava;
 
-/**
+# /**
  * 
  * asymmetry in java - methods passed on stack, read from local variable array
  *

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import sarif.export.SarifWriterTask;
 import sarif.export.extlib.SarifClassesNamespaceWriter;
 import sarif.export.extlib.SarifExternalLibraryWriter;
 
-/**
+# /**
  * SARIF for external library table for resolved external references.
  */
 public class ExternalLibSarifMgr extends SarifMgr {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.framework.plugintool;
 
-/**
+# /**
  * Utility class to provide access to non-public methods on PluginTool. There are a number of
  * methods that internal classes need access to but we don't want on the public interface of
  * PluginTool.This is a stopgap approach until we clean up the package structure for tool related

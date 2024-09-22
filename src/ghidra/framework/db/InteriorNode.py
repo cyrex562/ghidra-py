@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package db;
 
-/**
+# /**
  * Marker interface for {@link Table} interior nodes within the BTree structure.
  */
 public interface InteriorNode extends BTreeNode {

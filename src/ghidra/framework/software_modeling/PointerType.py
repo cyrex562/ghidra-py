@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.NoSuchElementException;
 
 import ghidra.program.database.data.PointerTypedefInspector;
 
-/**
+# /**
  * <code>PointerType</code> specified the pointer-type associated with a pointer-typedef.
  * @see PointerTypeSettingsDefinition
  * @see PointerTypedefBuilder

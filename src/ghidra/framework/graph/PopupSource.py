@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.Window;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
-/**
+# /**
  * An interface that provides graph and component information to the {@link PopupRegulator} 
  *
  * @param <V> the vertex type

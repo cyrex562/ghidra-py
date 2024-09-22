@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.TaskMonitorComponent;
 import resources.Icons;
 
-/**
+# /**
  * A convenience component designed specifically for rendering threaded table models.
  * This panel will automatically create a threaded table and a task monitor component.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Map.Entry;
 import org.apache.commons.collections4.Factory;
 import org.apache.commons.collections4.map.LazyMap;
 
-/**
+# /**
  * An object that maps vertices to rows and columns and edges to their articulation points.  
  * This class is essentially a container that allows layout algorithms to store results, which
  * can later be turned into layout positioning points.   The integer point values in this 

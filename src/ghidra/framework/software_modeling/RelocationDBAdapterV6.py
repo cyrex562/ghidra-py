@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.mem.Memory;
 import ghidra.program.model.reloc.Relocation.Status;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Relocation Adapter (v6) introduced a stored status and length value.  The byte-length value
  * is  only stored/used when stored bytes are not used and the original bytes are obtained from 
  * the underlying {@link FileBytes} via associated {@link Memory}.  Older program's may 

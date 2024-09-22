@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.assembler.sleigh.expr;
 import ghidra.app.plugin.processors.sleigh.expression.TokenField;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * A {@code 64}-bit value where each bit is {@code 0}, {@code 1}, or {@code x} (undefined)
  */
 public class MaskedLong implements Comparable<MaskedLong> {

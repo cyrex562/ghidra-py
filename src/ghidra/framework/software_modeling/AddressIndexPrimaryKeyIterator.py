@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.NoSuchElementException;
 import db.*;
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Long iterator over indexed addresses. The longs are primary keys returned ordered and restrained
  * by the address field they contain
  */

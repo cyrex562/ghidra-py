@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.util.task.TaskMonitor;
 
 import java.util.LinkedList;
 
-/**
+# /**
  * <CODE>PartitionCodeSubIterator</CODE> is an implementation of
  * <CODE>CodeBlockIterator</CODE> capable of iterating in
  * the forward direction over "PartitionCodeSubModel code blocks".

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.pcode;
 
 import java.io.IOException;
 
-/**
+# /**
  * This is an encoder that produces encodings that can be retroactively patched.
  * The contained encoding is expected to be byte based.  The user can record a position
  * in the encoding by calling the size() method in the middle of encoding, and then later

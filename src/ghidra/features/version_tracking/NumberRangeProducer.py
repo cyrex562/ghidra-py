@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.gui.provider.matchtable;
 
-/**
+# /**
  * This can produce two numbers to defined a range
  */
 public interface NumberRangeProducer {

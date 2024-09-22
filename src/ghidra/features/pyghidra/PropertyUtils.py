@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import java.util.stream.Stream;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Utility class for working with classes to obtain and create Python properties.
  * 
  * This class is for <b>internal use only</b> and is only public so it can be

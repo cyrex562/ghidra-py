@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.diff;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * 
  */
 public interface DiffControllerListener {

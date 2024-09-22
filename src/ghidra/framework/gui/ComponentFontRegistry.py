@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import generic.theme.Gui;
 import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 
-/**
+# /**
  * Maintains a weak set of components associated with a given font id. Whenever the font changes
  * for the font id, this class will update the component's font to the new value.
  */

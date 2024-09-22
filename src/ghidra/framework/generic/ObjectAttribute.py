@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Map;
 import ghidra.util.graph.KeyIndexableSet;
 import ghidra.util.graph.KeyedObject;
 
-/** This class provides a storage mechanism for Object-valued information about
+# /** This class provides a storage mechanism for Object-valued information about
  *  the elements of a KeyIndexableSet, e.g. the vertices of a DirectedGraph.
  */
 public class ObjectAttribute<T extends KeyedObject> extends Attribute<T> {

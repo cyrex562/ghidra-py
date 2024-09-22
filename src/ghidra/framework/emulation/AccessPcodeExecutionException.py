@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.exec;
 
-/**
+# /**
  * There was an issue accessing the executor's state, i.e., memory or register values
  */
 public class AccessPcodeExecutionException extends PcodeExecutionException {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.generic.auth;
 import java.io.Closeable;
 import java.util.Arrays;
 
-/**
+# /**
  * Wrapper for a password, held in a char[] array.
  * <p>
  * {@link #close() Closing} an instance will clear the characters of the char array.

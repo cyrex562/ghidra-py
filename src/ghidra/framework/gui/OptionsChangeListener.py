@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.options;
 
 import ghidra.util.bean.opteditor.OptionsVetoException;
 
-/**
+# /**
  * Interface for notifying listeners when options change.
  * <p>
  * Register with {@link ToolOptions#addOptionsChangeListener(OptionsChangeListener)}.

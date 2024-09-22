@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.data;
 import ghidra.framework.model.DomainFile;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * <code>DefaultCheckinHandler</code> provides a simple
  * check-in handler for use with 
  * {@link DomainFile#checkin(CheckinHandler, ghidra.util.task.TaskMonitor)}

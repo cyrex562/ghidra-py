@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.util.exception.NoValueException;
 import ghidra.util.graph.attributes.AttributeManager;
 import ghidra.util.graph.attributes.DoubleAttribute;
 
-/**
+# /**
  * DirectedGraph with edge weights. Weights are assumed to be 0.0 by default.
  * 
  *  

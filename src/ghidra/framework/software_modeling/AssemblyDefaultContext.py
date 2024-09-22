@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.lang.*;
 import ghidra.program.model.listing.ContextChangeException;
 import ghidra.program.model.listing.DefaultProgramContext;
 
-/**
+# /**
  * A class that computes the default context for a language, and acts as a pseudo context
  * 
  * <p>

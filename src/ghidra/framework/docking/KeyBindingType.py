@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.action;
 
-/**
+# /**
  * Allows clients to signal their support for the assigning of key binding shortcut keys.  Most
  * action clients need not be concerned with this class.   The default settings of 
  * {@link DockingAction} work correctly for almost all cases, which is to have the action 

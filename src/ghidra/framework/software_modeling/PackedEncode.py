@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.io.OutputStream;
 
 import ghidra.program.model.address.AddressSpace;
 
-/**
+# /**
  * A byte-based encoder designed to marshal to the decompiler efficiently
  * See {@code PackedDecode} for details of the encoding format
  */

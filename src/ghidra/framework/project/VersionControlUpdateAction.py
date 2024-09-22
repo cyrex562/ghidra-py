@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.framework.plugintool.Plugin;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskListener;
 
-/**
+# /**
  * Action to update the current checked out domain file to contain the changes 
  * which have been checked in to the repository since our file's version was checked out.
  * The update occurs by merging the changes from the repository's latest version into 

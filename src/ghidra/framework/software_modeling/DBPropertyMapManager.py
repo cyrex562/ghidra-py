@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on May 1, 2003
  */
 package ghidra.program.database.properties;
@@ -39,7 +39,7 @@ import ghidra.util.exception.*;
 import ghidra.util.map.TypeMismatchException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Manages generic address keyed properties.
  */
 public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {

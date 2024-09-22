@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.framework.plugintool.ServiceProviderStub;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A version of {@link ThreadedTableModel} for clients that do not need a DATA_SOURCE.  
  * <p>
  * <b>

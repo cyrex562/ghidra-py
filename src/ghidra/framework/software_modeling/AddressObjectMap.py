@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.map.ObjectValueMap;
 import java.io.Serializable;
 
 
-/**
+# /**
  * <CODE>AddressObjectMap</CODE> maintains a mapping between addresses in the program
  * and Objects that have been discovered.
  * <P>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.*;
 import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 
-/**
+# /**
  * A class to queue and send {@link DomainObjectChangeRecord} events.
  * <p>
  * For simplicity, this class requires all mutations to internal data structures to be locked using

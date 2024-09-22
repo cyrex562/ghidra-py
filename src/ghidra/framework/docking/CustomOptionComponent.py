@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.Dimension;
 import ghidra.framework.options.EditorState;
 import ghidra.util.layout.HorizontalLayout;
 
-/**
+# /**
  * A custom OptionComponent that controls it's own display using the editor component of the
  * given EditorState.
  */

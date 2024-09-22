@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.Msg;
 import ghidra.util.StringUtilities;
 import resources.ResourceManager;
 
-/**
+# /**
  * Class to manage a JMenuItem for an action.  Handles property changes in the action
  * and makes the corresponding change in the menuItem.
  */

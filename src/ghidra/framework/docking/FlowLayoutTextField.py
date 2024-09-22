@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import docking.widgets.fieldpanel.support.FieldHighlightFactory;
 
-/**
+# /**
  * This class provides a TextField implementation that takes multiple AttributedString field
  * elements and places as many that will fit on a line without clipping before continuing to the
  * next line.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import edu.uci.ics.jung.visualization.VisualizationServer;
 import edu.uci.ics.jung.visualization.control.ScalingControl;
 import edu.uci.ics.jung.visualization.transform.MutableTransformer;
 
-/**
+# /**
  * An implementation of {@link ScalingControl} that allows us to zoom in and out of the view.
  */
 public class VisualGraphScalingControl implements ScalingControl {

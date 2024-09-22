@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.project.tool;
 
 import java.io.Serializable;
 
-/**
+# /**
  * Class to describe the connection between two tools for a specific event.
  * This class is used by the ToolSetImpl when it serializes itself.
  */

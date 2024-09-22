@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class for storing {@link Font} values that have a String id (e.g. font.foo.bar) and either
  * a concrete font or a reference id which is the String id of another FontValue that it
  * will inherit its font from. So if this class's font value is non-null, the refId will be null

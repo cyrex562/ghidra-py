@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.program.model.block;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.symbol.FlowType;
 
-/**
+# /**
  * A CodeBlockReference represents the flow from one CodeBlock to another. Flow
  * consists of: 
  * <ul>

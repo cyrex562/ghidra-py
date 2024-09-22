@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.framework.plugintool.PluginsConfiguration;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Tool created by the workspace when the user chooses to create a new
  * tool. Its ToolConfigProvider shows all Plugins with the exception of
  * those plugins that can be added to the Front End tool only.

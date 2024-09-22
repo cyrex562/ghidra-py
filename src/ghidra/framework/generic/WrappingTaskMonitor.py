@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * An implementation of the {@link TaskMonitor} interface that simply wraps a delegate task
  * monitor.   This is useful for classes that wish to wrap a task monitor, changing behavior
  * as needed by overriding a subset of methods.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.feature.vt.gui.editors;
 
-/**
+# /**
  * The listener for an address editor panel. The listener gets notified of 
  * address edit changes when double click or <Enter> key actions occur.
  * The listener can then call the getAddress() on the editor panel for the current 

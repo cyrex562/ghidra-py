@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.util;
 import ghidra.program.model.address.Address;
 import ghidra.util.map.TypeMismatchException;
 
-/**
+# /**
  * Property manager that deals with properties that are of
  * String type.
  */

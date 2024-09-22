@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.util.Objects;
 import javax.swing.Icon;
 import javax.swing.LookAndFeel;
 
-/**
+# /**
  * Class to store all the configurable appearance properties (Colors, Fonts, Icons, Look and Feel)
  * in an application.
  */

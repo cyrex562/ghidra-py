@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import generic.theme.GIcon;
 import generic.util.image.ImageUtils;
 import resources.ResourceManager;
 
-/**
+# /**
  * {@link LazyImageIcon} that is created from an {@link Icon} or an {@link Image}
  */
 public class DerivedImageIcon extends LazyImageIcon {

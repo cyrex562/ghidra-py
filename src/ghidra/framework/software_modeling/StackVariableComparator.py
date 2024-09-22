@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import java.util.Comparator;
 
-/**
+# /**
  * Compares stack variable offsets; has a static factory method to get
  * a StackVariableComparator.
  * 

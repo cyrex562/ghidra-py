@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util;
 
 import java.util.ListIterator;
 
-/**
+# /**
  * Wraps a {@link ListIterator} so that the operations are reversed.
  * 
  * NOTE: you must obtain an iterator that is already at its end. E.g., if you wish to traverse a

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.framework.plugintool.util.*;
 import ghidra.util.Msg;
 import ghidra.util.classfinder.ClassSearcher;
 
-/**
+# /**
  * This class maintains a collection of all plugin classes that are acceptable for a given tool
  * type.  Simple applications with only one plugin type can use the
  * {@link DefaultPluginsConfiguration}.  More complex tools can support a subset of the available

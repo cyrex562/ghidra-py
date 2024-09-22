@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.framework.plugintool.util.PluginDescription;
 import ghidra.framework.plugintool.util.PluginStatus;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * Panel that contains a JTextPane to show plugin description information.
  */
 class PluginDetailsPanel extends AbstractDetailsPanel {

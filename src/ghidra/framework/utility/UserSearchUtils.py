@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
+# /**
  * This class converts user inputted strings and creates {@link Pattern}s from them
  * that can be used to create {@link Matcher} objects.  Some methods create patterns that
  * are meant to be used with {@link Matcher#matches()}, while others create patterns

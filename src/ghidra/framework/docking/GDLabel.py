@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.widgets.GComponent;
 import docking.widgets.checkbox.GCheckBox;
 import docking.widgets.checkbox.GHtmlCheckBox;
 
-/**
+# /**
  * A 'dynamic' label (the text can be changed), with HTML rendering disabled.
  * <p>
  * See also:

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.plugin.assembler.sleigh.sem.*;
 import ghidra.app.plugin.processors.sleigh.SleighLanguage;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * An {@link AssemblerBuilder} capable of supporting almost any {@link SleighLanguage}
  * 
  * <p>

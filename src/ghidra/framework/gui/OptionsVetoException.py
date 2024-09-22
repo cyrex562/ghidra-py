@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.util.bean.opteditor;
 import ghidra.framework.options.ToolOptions;
 import ghidra.framework.options.OptionsChangeListener;
 
-/**
+# /**
  * Intended to be thrown from 
  * {@link OptionsChangeListener#optionsChanged(ToolOptions, String, Object, Object)} to signal that 
  * the setting of an option property is invalid and should not happen.

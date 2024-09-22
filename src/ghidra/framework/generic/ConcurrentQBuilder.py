@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A helper class to build up the potentially complicated {@link ConcurrentQ}.
  * <P>
  * Note: you must supply either a {@link GThreadPool} instance or a thread pool name.  Further,

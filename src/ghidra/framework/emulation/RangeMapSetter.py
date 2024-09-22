@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package generic;
 import java.util.*;
 import java.util.Map.Entry;
 
-/**
+# /**
  * A method outline for setting an entry in a range map where coalescing is desired
  *
  * @param <E> the type of entries

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.feature.vt.api.main;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * A VTMatch is a scoring by some algorithm that indicates a possibility that one function or data
  * item on one program matches a function or data item in another program. It consists of an 
  * association (a pairing of functions or data from one program to another) and a scoring of how

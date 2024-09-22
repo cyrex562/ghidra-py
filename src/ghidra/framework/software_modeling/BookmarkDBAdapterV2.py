@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.program.database.map.AddressMap;
 import ghidra.util.exception.VersionException;
 import db.DBHandle;
 
-/**
+# /**
  * 
  */
 class BookmarkDBAdapterV2 extends BookmarkDBAdapterV1 {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.math.BigInteger;
 
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * Generic implementation of the Address interface.  Consists of an
  * Address Space, an offset, and a namespace id.
  */

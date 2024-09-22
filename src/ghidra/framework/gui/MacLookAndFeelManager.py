@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.border.EmptyBorder;
 
 import generic.theme.*;
 
-/**
+# /**
  * Manages installing and updating the Mac Aqua look and feel.  This is where we make look and
  * feel changes specific to the Mac Aqua look and feel, so that it works with the theming feature.
  */

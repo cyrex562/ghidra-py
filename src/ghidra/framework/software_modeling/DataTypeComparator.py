@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import java.util.Comparator;
 
-/**
+# /**
  * {@link DataTypeComparator} provides the preferred named-based comparison of {@link DataType}
  * which utilizes the {@link DataTypeNameComparator} for a primary {@link DataType#getName() name} 
  * comparison followed by sub-ordering on {@link DataTypeManager} name and {@link CategoryPath}.

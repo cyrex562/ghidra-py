@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Apr 2, 2003
  *
  * To change this generated comment go to 
@@ -29,7 +29,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * Definition of a Bitmap Resource Data Structure defined within the
  * resources section of a windows executable.
  * 

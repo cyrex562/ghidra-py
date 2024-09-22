@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.algorithms;
 
 import java.util.List;
 
-/**
+# /**
  * An implementation of the {@link ReducingLcs} that takes as its input a list of {@literal <T>}items, where
  * the list is the 'sequence' being checked for the Longest Common Subsequence.
  *

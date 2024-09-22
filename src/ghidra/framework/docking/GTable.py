@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import ghidra.util.*;
 import ghidra.util.exception.AssertException;
 import resources.Icons;
 
-/**
+# /**
  * A sub-class of <code>JTable</code> that provides navigation and auto-lookup.
  * By default, both of these features are disabled.
  * <p>

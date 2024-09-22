@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.graph.viewer.options.VisualGraphOptions;
 import ghidra.graph.viewer.renderer.VisualGraphRenderer;
 import ghidra.graph.viewer.renderer.VisualVertexSatelliteRenderer;
 
-/**
+# /**
  * A graph viewer that shows a scaled, complete rendering of the graph with which it is 
  * associated.
  *

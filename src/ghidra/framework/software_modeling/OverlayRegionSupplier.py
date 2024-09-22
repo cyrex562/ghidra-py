@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.database;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.address.OverlayAddressSpace;
 
-/**
+# /**
  * {@link OverlayRegionSupplier} provides a callback mechanism which allows a
  * {@link ProgramOverlayAddressSpace} to identify defined memory regions within its
  * space so that it may properly implement the {@link OverlayAddressSpace#contains(long)}

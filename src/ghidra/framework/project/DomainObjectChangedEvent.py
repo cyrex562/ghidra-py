@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.model;
 import java.util.*;
 import java.util.function.Consumer;
 
-/**
+# /**
  * An event indicating a DomainObject has changed.  This event is actually
  * a list of DomainObjectChangeRecords.
  *  

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.action.builder;
 import docking.ActionContext;
 import docking.action.DockingAction;
 
-/** 
+# /** 
  * Builder for {@link DockingAction}s
  */
 public class ActionBuilder

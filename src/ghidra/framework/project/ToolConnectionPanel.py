@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.framework.model.ToolManager;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Adds the listeners for the connection panel that shows 3 lists: one
  * for producers of event, one for consumers of events, and one
  * that shows events that are an intersection of the consumed and

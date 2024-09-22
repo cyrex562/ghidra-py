@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.listing.VariableOffset;
 
-/**
+# /**
  * The <CODE>OperandFieldLocation</CODE> class contains specific location information within the
  * OPERAND field of a CodeUnitLocation object.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.fieldpanel.internal.FieldBackgroundColorManager;
 import docking.widgets.fieldpanel.internal.PaintContext;
 import docking.widgets.fieldpanel.support.*;
 
-/**
+# /**
  * Field for showing multiple strings, each with its own attributes in a field,
  * on a single line, clipping as needed to fit within the field's width. Has the
  * extra methods for mapping column positions to strings and positions in those

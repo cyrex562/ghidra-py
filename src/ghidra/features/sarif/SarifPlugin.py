@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,7 +54,7 @@ import sarif.io.SarifIO;
 )
 //@formatter:on
 
-/**
+# /**
  * A {@link ProgramPlugin} for reading in sarif files 
  */
 public class SarifPlugin extends ProgramPlugin implements OptionsChangeListener {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -26,7 +26,7 @@ import ghidra.util.table.GhidraTable;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
-/**
+# /**
  * This is a docking window provider for the Destination (main) tool. 
  * It displays info for the function currently containing the cursor within the listing.
  * It also shows a table of the matches within the source program for the current function.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.model.symbol.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * PseudoDisassembler.java
  * 
  * Useful for disassembling and getting an Instruction or creating Data

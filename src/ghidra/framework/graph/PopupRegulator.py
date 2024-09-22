@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.*;
 
 import docking.widgets.PopupWindow;
 
-/**
+# /**
  * A class to control popups for graph clients, bypassing Java's default tool tip mechanism
  *
  * @param <V> the vertex type

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table.constrainteditor;
 
-/**
+# /**
  * Interface used by number constraints. This allows all the integer number constraints (byte,short
  * int, long) to share the same editor (which uses long values). This interface allows the editor
  * values to be converted back to T.

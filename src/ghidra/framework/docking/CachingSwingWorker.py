@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.DialogComponentProvider;
 import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Class for managing the creation of some slow loading object that may be used by multiple threads,
  * including the Swing thread.  Further, repeated calls to this object will used the
  * cached value.

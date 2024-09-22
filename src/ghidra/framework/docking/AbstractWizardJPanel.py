@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 import javax.swing.JPanel;
 
-/** 
+# /** 
  * Base class that implements some methods of the WizardPanel, but not
  * all. This class handles the notification of the listeners.
  * 

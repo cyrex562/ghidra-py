@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.plaf.LayerUI;
 
-/**
+# /**
  * A factory to create JLayer instances to provide the L&amp;F and functionality of a 
  * disabled panel -- the component assumes a disabled color, and selection via mouse and
  * keyboard is prevented. As this is simply a layer in the UI stack, previous states of 

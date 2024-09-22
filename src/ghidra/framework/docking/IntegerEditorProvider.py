@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import docking.widgets.table.constraint.ColumnConstraint;
 import docking.widgets.table.constraint.ColumnData;
 import docking.widgets.table.constrainteditor.*;
 
-/**
+# /**
  * Base class for providing single value numeric editors.
  *
  * @param <T> the number type of the column (Byte, Short, Integer, or Long)

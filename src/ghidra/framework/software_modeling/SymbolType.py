@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.address.GlobalNamespace;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Class to represent the various types of Symbols.
  */
 public abstract class SymbolType {

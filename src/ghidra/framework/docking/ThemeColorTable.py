@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import generic.theme.ColorValue;
 import generic.theme.ThemeManager;
 import ghidra.util.Swing;
 
-/**
+# /**
  * Color Table for Theme Dialog
  */
 public class ThemeColorTable extends JPanel implements ActionContextProvider, ThemeTable {

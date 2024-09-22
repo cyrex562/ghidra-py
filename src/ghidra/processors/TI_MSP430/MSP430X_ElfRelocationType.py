@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf.relocation;
 
-/**
+# /**
  * class for elf_msp430x_reloc_type (from binutils source)
  */
 public enum MSP430X_ElfRelocationType implements ElfRelocationType {

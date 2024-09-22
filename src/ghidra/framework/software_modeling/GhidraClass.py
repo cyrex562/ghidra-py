@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.program.model.listing;
 import ghidra.program.model.symbol.Namespace;
 
 
-/** 
+# /** 
  * Interface for representing class objects in the program.
  */
 public interface GhidraClass extends Namespace {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.graph.viewer.vertex;
 
-/**
+# /**
  * A listener called when a vertex is focused.  
  *
  * @param <V> the vertex type

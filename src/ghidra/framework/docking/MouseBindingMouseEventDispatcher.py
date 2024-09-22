@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import org.apache.logging.log4j.message.ParameterizedMessage;
 import ghidra.util.Msg;
 import gui.event.MouseBinding;
 
-/**
+# /**
  * Allows Ghidra to give preference to its mouse event processing over the default Java mouse event
  * processing.  This class allows us to assign mouse bindings to actions.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package resources;
 
-/**
+# /**
  * Enum specifying the quadrant of an overlay, either upper left, upper right, lower left, lower right.
  */
 public enum QUADRANT {

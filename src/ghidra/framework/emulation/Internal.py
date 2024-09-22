@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import static java.lang.annotation.ElementType.*;
 
 import java.lang.annotation.Target;
 
-/**
+# /**
  * An annotation for things internal to an implementation
  * 
  * For organization, some interfaces and classes exist in packages outside where they are used, and

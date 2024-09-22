@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
+# /**
  *
  */
 package docking.widgets.table.constraint.dialog;
@@ -34,7 +34,7 @@ import docking.widgets.table.columnfilter.ColumnFilterSaveManager;
 import ghidra.util.HTMLUtilities;
 import resources.Icons;
 
-/**
+# /**
  * Dialog for loading saved ColumnFilters.
  *
  * @param <R> the row type of the table being filtered.

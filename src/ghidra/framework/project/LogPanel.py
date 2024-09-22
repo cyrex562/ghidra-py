@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import help.HelpService;
 import log.LogListener;
 import log.LogPanelAppender;
 
-/**
+# /**
  * A JPanel that contains a label to show the last message displayed. It also has a button to
  * show the Console.
  */

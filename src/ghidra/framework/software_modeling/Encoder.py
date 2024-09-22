@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.program.model.address.AddressSpace;
 
-/**
+# /**
  * An interface for writing structured data to a stream
  *
  * The resulting encoded data is structured similarly to an XML document. The document contains a nested set

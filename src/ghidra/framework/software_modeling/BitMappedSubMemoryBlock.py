@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.*;
 import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.program.model.mem.MemoryBlockType;
 
-/**
+# /**
  * Class for handling bit mapped memory sub blocks
  */
 class BitMappedSubMemoryBlock extends SubMemoryBlock {

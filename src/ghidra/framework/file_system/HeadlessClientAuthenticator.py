@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.framework.remote.security.SSHKeyManager;
 import ghidra.net.ApplicationKeyManagerFactory;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <code>HeadlessClientAuthenticator</code> provides the ability to install a Ghidra Server 
  * authenticator needed when operating in a headless mode.
  */

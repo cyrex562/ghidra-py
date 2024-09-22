@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * A reusable watchdog that will execute a callback if the watchdog is not disarmed before
  * it expires.
  *

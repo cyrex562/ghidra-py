@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.util.exception.NotFoundException;
 
-/**
+# /**
  * A p-code program to be executed by a {@link PcodeExecutor}
  * 
  * <p>

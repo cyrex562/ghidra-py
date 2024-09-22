@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets;
 
-/**
+# /**
  * Instances of this type are used to add a checkBox to a Dialog so that the dialog results
  * can be saved and reused in future uses of that dialog (e.g., "Apply to all",
  * "Remember my decision"). If the checkBox is selected, the dialog results are saved and

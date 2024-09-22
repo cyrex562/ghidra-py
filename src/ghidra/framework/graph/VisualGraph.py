@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.graph.viewer.event.picking.GPickedState;
 import ghidra.graph.viewer.layout.LayoutListener.ChangeType;
 import ghidra.graph.viewer.layout.VisualGraphLayout;
 
-/**
+# /**
  * The primary interface for graphs that are to be rendered.  This class defines methods 
  * commonly used in the GUI while extending the primary non-visual graph interface.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package generic.stl;
 
-/** 
+# /** 
  * This wrapper class is used to detect cases where code is 
  * modifying iterators that shouldn't change.
  */

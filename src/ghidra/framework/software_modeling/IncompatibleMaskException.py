@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <p>An IncompatibleMaskException is thrown when operations
  * are attempting involving two masks of different lengths.</p>
  *

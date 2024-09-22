@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.store;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/**
+# /**
  * This class is essentially a global flag used to track the long running file system synchronizing
  * operation.   This class is a workaround to avoid rewriting the complicated file system locking.
  */

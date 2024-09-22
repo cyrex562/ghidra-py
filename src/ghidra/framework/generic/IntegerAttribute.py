@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -23,7 +23,7 @@ import ghidra.util.graph.KeyedObject;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/** This class provides a storage mechanism for integer-valued information about
+# /** This class provides a storage mechanism for integer-valued information about
  *  the elements of a KeyIndexableSet, e.g. the vertices of a DirectedGraph.
  */
 public class IntegerAttribute<T extends KeyedObject> extends Attribute<T> {

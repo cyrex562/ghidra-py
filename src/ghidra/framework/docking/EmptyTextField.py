@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.fieldpanel.support.DefaultRowColLocation;
 import docking.widgets.fieldpanel.support.RowColLocation;
 import generic.theme.GThemeDefaults.Colors.Palette;
 
-/**
+# /**
  * A Text field that is blank.
  */
 

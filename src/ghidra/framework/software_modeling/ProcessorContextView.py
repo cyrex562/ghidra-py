@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 import java.math.BigInteger;
 import java.util.List;
 
-/**
+# /**
  * Defines the interface for an object containing the state
  * of all processor registers relative to a specific address.
  */

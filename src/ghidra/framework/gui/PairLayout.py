@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.layout;
 
 import java.awt.*;
 
-/**
+# /**
  * LayoutManger for arranging components into exactly two columns.  The right column and the 
  * left column may have differing widths.  Also, each row is the same height, 
  * which is the largest of all rows.

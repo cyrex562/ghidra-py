@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.List;
 
 import generic.theme.GThemeDefaults.Colors.Palette;
 
-/**
+# /**
  * Paints a line showing the start and end points of a drag operation.
  */
 public class MouseDraggedLinePaintableShape extends PaintableShape {

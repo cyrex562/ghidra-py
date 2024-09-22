@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.datastruct;
 
-/**
+# /**
  * Class for holding a begin and end index.
  */
 public class IndexRange {

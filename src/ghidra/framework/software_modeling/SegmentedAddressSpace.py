@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.address;
 import ghidra.util.NumericUtilities;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * Address Space for dealing with (intel) segmented address spaces.
  * It understands the mapping between the segmented encoding (seg:offset) and
  * the flat address encoding necessary to produce an Address object that can be

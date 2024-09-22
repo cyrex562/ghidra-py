@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.pcode.error.LowlevelError;
 import ghidra.program.model.lang.Language;
 import ghidra.program.model.pcode.PcodeOp;
 
-/**
+# /**
  * The executor's internal counter
  * 
  * <p>

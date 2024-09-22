@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.*;
 import docking.DialogComponentProvider;
 import docking.widgets.table.*;
 
-/**
+# /**
  * Dialog for displaying table data in a dialog for the purpose of the user selecting one or
  * more items from the table.
  *

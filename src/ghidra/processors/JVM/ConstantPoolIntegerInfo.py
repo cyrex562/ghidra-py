@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * NOTE: THE FOLLOWING TEXT EXTRACTED FROM JVMS7.PDF
  * <p>
  * The CONSTANT_Integer_info structures represent 4-byte numeric (int) constants:

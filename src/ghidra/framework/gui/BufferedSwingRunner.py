@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.task;
 
 import utility.function.Dummy;
 
-/**
+# /**
  * A class that run the client's runnable on the Swing thread.  Repeated requests will get buffered
  * until the max delay is reached.   
  */

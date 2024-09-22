@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ import java.io.Serializable;
 
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  *     Class that implements a hashtable with Short keys and long values.
  *
  */

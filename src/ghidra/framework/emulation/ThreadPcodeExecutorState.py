@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.lang.Language;
 import ghidra.program.model.lang.Register;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * A p-code executor state that multiplexes shared and thread-local states for use in a machine that
  * models multi-threading
  * 

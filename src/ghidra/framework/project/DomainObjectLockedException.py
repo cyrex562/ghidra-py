@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.model;
 
-/**
+# /**
  * Thrown when a method fails due to a locked domain object.
  * 
  */

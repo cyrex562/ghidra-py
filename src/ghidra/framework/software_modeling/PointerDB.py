@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Database implementation for a Pointer data type.
  */
 class PointerDB extends DataTypeDB implements Pointer {

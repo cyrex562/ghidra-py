@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.logviewer.event;
 
-/**
+# /**
  * Custom events to be used in conjunction with the {@link FVEventListener} module. Users should
  * construct an event, then fire it using {@link FVEventListener#send(FVEvent)}.
  * 

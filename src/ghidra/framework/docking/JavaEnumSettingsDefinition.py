@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.docking.settings;
 
-/**
+# /**
  * A {@link SettingsDefinition} implementation that uses a real java {@link Enum}.
  *
  * @param <T> java Enum that defines the possible values to store.

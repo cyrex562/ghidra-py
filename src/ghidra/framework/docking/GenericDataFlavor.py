@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.dnd;
 
 import java.awt.datatransfer.DataFlavor;
 
-/**
+# /**
  * Generic data flavor class to override the equals(DataFlavor) method
  * in order to have data flavors support the same general class types
  * such as an ArrayList.

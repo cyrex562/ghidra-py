@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.model;
 import java.io.Serializable;
 import java.util.Objects;
 
-/**
+# /**
  * Information about a change that was made to a domain object. The record is delivered as part of
  * the change notification. The event types correspond to Enums defined in {@link DomainObjectEvent}
  * and other Enums or objects that implement the {@link EventType} interface.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +15,11 @@
  */
 package ghidra.async;
 
-import java.util.Timer;
-import java.util.concurrent.*;
-import java.util.function.Supplier;
+# import java.util.Timer;
+# import java.util.concurrent.*;
+# import java.util.function.Supplier;
 
-/**
+# /**
  * A timer for asynchronous scheduled tasks
  * 
  * <p>

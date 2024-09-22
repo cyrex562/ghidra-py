@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.pcode.emu.unix.*;
 import ghidra.pcode.emu.unix.EmuUnixFileSystem.OpenFlag;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * An abstract library of Linux system calls, suitable for use with any processor
  * 
  * @param <T> the type of values processed by the library

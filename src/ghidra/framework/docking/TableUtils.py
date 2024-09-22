@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.util.table.column.GColumnRenderer;
 import ghidra.util.table.column.GColumnRenderer.ColumnConstraintFilterMode;
 
-/**
+# /**
  * A utility class for JTables used in Ghidra.
  */
 public class TableUtils {

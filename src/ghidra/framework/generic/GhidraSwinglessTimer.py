@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.util.exception.AssertException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
+# /**
  * The GhidraSwinglessTimer is similar to the javax.swing.Timer class.  The big difference is
  * that it does NOT use the swing thread for its callbacks.  Similar to the swing timer, only 
  * one timer thread is ever used no matter how many GhidraSwinglessTimers are instantiated.

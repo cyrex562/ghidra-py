@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package db.buffers;
 
-/**
+# /**
  * <code>BufferNode</code> is a DataBuffer wrapper which facilitates
  * linking node into various lists and status tracking.  
  * Linked lists supported, include:

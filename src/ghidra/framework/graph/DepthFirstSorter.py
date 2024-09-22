@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.graph.*;
 
-/**
+# /**
  * Processes the given graph depth first and records that order of the vertices.
  *
  * @param <V> the vertex type

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlParseException;
 
-/**
+# /**
  * Utility class for the myriad ways of marshaling/unmarshaling an address and an optional size,
  * to/from XML for the various configuration files.
  * <p>

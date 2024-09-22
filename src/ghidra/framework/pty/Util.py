@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.pty.unix;
 import com.sun.jna.*;
 import com.sun.jna.ptr.IntByReference;
 
-/**
+# /**
  * The interface for linking to {@code openpty} via jna
  * 
  * <p>

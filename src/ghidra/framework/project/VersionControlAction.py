@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.framework.store.FileSystemSynchronizer;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * VersionControlAction is an abstract class that can be extended by each specific version
  * control action to be taken on a domain file.
  */

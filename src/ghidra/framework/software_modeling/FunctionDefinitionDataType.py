@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Definition of a function for things like function pointers.
  */
 public class FunctionDefinitionDataType extends GenericDataType implements FunctionDefinition {

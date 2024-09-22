@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Set;
 import java.util.function.*;
 import java.util.stream.Collector;
 
-/**
+# /**
  * Utilities for using addresses and ranges in streams
  */
 public class AddressCollectors {

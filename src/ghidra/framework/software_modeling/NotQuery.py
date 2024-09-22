@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.database.util;
 
 import db.DBRecord;
 
-/**
+# /**
  * Negates the given query such that this query is the logical "NOT" of the given query.
  */
 public class NotQuery implements Query {

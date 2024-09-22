@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table;
 
 import org.jdom.Element;
 
-/**
+# /**
  * Not meant to be created by users.  They should instead use the {@link TableSortStateEditor}.
  */
 public class ColumnSortState {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import docking.widgets.combobox.GhidraComboBox;
 import generic.theme.*;
 import ghidra.util.*;
 
-/**
+# /**
  * Primary dialog for editing Themes.
  */
 public class ThemeEditorDialog extends DialogComponentProvider {

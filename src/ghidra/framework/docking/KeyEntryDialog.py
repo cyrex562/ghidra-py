@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import generic.theme.Gui;
 import ghidra.util.HelpLocation;
 import resources.Icons;
 
-/**
+# /**
  * Dialog to set the key binding on an action. It is triggered by the F4 key.
  */
 public class KeyEntryDialog extends DialogComponentProvider {

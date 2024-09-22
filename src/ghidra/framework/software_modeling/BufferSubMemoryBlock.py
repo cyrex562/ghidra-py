@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import db.DBBuffer;
 import db.DBRecord;
 import ghidra.program.model.mem.Memory;
 
-/**
+# /**
  * Implementation of SubMemoryBlock for blocks that store bytes in their own private database
  * buffers
  */

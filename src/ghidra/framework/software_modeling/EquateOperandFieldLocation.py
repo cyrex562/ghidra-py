@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.VariableOffset;
 import ghidra.program.model.symbol.*;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * A simple version of {@link OperandFieldLocation} that allows us to store equate information.
  */
 public class EquateOperandFieldLocation extends OperandFieldLocation {

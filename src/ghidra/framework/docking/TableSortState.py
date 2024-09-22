@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import org.jdom.Element;
 
 import docking.widgets.table.ColumnSortState.SortDirection;
 
-/**
+# /**
  * Represents the concept of a table's sorted state, which is the number of sorted columns, their
  * sort order and their sort direction.
  * 

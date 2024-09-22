@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>DomainFolder</code> provides a storage interface for project folders.  A 
  * <code>DomainFolder</code> is an immutable reference to a folder contained within a project.  The 
  * state of a <code>DomainFolder</code> object does not track name/parent changes made to the 

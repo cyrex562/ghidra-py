@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package db;
 
-/**
+# /**
  * <code>TerminatedTransactionException</code> occurs when a database modification is
  * attempted following the forced/premature termination of an open transaction.
  */

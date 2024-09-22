@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
+# /**
  *
  */
 package docking.widgets.table.constrainteditor;
@@ -35,7 +35,7 @@ import ghidra.util.layout.ColumnLayout;
 import ghidra.util.task.*;
 import resources.Icons;
 
-/**
+# /**
  * Abstract base class for constraint editors that load all the data in a column in order to
  * initialize themselves.
  *

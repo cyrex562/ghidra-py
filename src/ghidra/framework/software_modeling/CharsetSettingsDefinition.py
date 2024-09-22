@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.docking.settings.*;
 
-/**
+# /**
  *  {@link SettingsDefinition} for setting the charset of a string instance.
  *  <p>
  *  Charsets control how raw bytes are converted to native java String instances.

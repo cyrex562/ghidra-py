@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Iterator;
 
 import util.CollectionUtils;
 
-/**
+# /**
  * <p>AddressIterator is used to iterate over some set of addresses.
  *
  * <p>Note: The next and previous methods return <i>Address</i>s.

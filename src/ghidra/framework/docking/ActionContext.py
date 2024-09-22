@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.event.*;
 
 import docking.action.DockingActionIf;
 
-/**
+# /**
  * ActionContext is an interface used by {@link DockingActionIf}s that contains tool and
  * plugin state information that allows an action to operate. Actions can use the context to get the
  * information it needs to perform its intended purpose. Context is also used to determine if

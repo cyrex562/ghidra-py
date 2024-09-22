@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Comparator;
 
 import docking.widgets.table.sort.RowBasedColumnComparator;
 
-/**
+# /**
  * A comparator for comparing table column values for threaded table models.  This comparator
  * uses the column cache of the {@link ThreadedTableModel}.
  *

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.datastruct.WeakStore;
 import resources.ResourceManager;
 import resources.icons.*;
 
-/**
+# /**
  * An {@link Icon} whose value is dynamically determined by looking up its id into a global
  * icon table that is determined by the active {@link GTheme}.
  * <P> The idea is for developers to

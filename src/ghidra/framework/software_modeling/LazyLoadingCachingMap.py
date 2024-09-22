@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 
 import ghidra.util.Lock;
 
-/**
+# /**
  * Instances of this class will provide a simple map interface to a cached set of key,value
  * pairs.  This class requires that the map can be generated from scratch at any time and
  * that adding/removing items from this map is just a mirroring of those changes elsewhere.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import generic.theme.ApplicationThemeManager;
 import generic.theme.GThemeValueMap;
 import generic.theme.laf.nimbus.SelectedTreePainter;
 
-/**
+# /**
  * Extends the {@link NimbusLookAndFeel} (Nimbus) to intercept {@link #getDefaults()}. Nimbus 
  * does not honor changes to the UIDefaults after it is installed as the active
  * {@link LookAndFeel}, so we have to make the changes at the time the UIDefaults are installed. 

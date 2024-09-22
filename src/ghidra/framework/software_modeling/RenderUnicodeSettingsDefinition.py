@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.docking.settings.JavaEnumSettingsDefinition;
 import ghidra.docking.settings.Settings;
 import ghidra.program.model.data.RenderUnicodeSettingsDefinition.RENDER_ENUM;
 
-/**
+# /**
  * Settings definition for controlling the display of UNICODE characters.
  */
 public class RenderUnicodeSettingsDefinition extends JavaEnumSettingsDefinition<RENDER_ENUM> {

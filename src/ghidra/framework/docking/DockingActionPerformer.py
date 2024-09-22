@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.action.ToggleDockingActionIf;
 import ghidra.util.Msg;
 import ghidra.util.Swing;
 
-/**
+# /**
  * A simple class to handle executing the given action.  This class will generate the action context
  * as needed and validate the context before executing the action.
  */

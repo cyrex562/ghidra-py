@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import ghidra.framework.model.ProjectManager;
 
-/**
+# /**
  * A test version of the {@link FrontEndTool} that disables some functionality
  */
 public class TestFrontEndTool extends FrontEndTool {

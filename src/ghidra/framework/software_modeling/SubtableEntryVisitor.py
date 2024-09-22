@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.languages.sleigh;
 import ghidra.app.plugin.processors.sleigh.Constructor;
 import ghidra.app.plugin.processors.sleigh.pattern.DisjointPattern;
 
-/**
+# /**
  * An interface for visiting constructors in a SLEIGH subtable
  * 
  * @see SleighLanguages#traverseConstructors(SubtableSymbol, SubtableEntryVisitor)}

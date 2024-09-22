@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.GModule;
 import utility.module.ClasspathFilter;
 import utility.module.ModuleUtilities;
 
-/**
+# /**
  * The Ghidra test application layout defines the customizable elements of the Ghidra
  * application's directory structure when running a test.
  * <p>

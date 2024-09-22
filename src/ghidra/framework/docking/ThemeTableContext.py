@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.theme.gui;
 import docking.DefaultActionContext;
 import generic.theme.ThemeValue;
 
-/**
+# /**
  * ActionContext for ThemeDialog tables
  *
  * @param <T> the resource type (Color, Font, or Icon)

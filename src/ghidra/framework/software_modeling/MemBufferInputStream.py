@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.mem;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
+# /**
  * Adapter between {@link MemBuffer membuffers} and {@link InputStream inputstreams}.
  */
 public class MemBufferInputStream extends InputStream {

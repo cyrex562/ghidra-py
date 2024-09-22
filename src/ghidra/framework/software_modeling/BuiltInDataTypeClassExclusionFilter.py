@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import ghidra.util.classfinder.ClassExclusionFilter;
 
-/**
+# /**
  * An exclusion filter to use when searching for classes that implement {@link BuiltInDataType}
  */
 public class BuiltInDataTypeClassExclusionFilter extends ClassExclusionFilter {

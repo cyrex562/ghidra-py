@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.*;
 import ghidra.util.datastruct.Range;
 import ghidra.util.datastruct.SortedRangeList;
 
-/**
+# /**
  * AddressSetView implementation that handles image base changes. NOTE: THIS IMPLEMENTATION
  * ASSUMES THAT ONLY ADDRESS RANGES THAT ARE PART OF THE MEMORY MAP WILL BE ADDED TO THIS
  * ADDRESS SET. IT IS INTENDED FOR USE BY THE CHANGE SET.

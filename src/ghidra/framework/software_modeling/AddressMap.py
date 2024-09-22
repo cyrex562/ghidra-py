@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.List;
 
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Address map interface add methods need by the program database implementation to manage its address map.
  * NOTE: Objects implementing this interface are not intended for use outside of the
  * <code>ghidra.program.database</code> packages.

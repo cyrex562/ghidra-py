@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -65,7 +65,7 @@ import sarif.io.SarifGsonIO;
 import sarif.io.SarifIO;
 import sarif.model.SarifDataFrame;
 
-/**
+# /**
  * The manager responsible for reading and writing a program in SARIF.
  */
 public class ProgramSarifMgr {

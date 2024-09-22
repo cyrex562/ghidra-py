@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table;
 
-/**
+# /**
  * An interface for clients to know when an object is selected and when the selection is cleared
  *
  * @param <T> the object type

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import java.math.BigInteger;
 
 import docking.widgets.fieldpanel.field.Field;
 
-/**
+# /**
  * Interface implemented by objects that want to be notified when key events occur
  * in the FieldPanel.
  */

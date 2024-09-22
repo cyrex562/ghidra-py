@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import com.google.common.collect.UnmodifiableIterator;
 import ghidra.graph.graphs.FilteringVisualGraph;
 import ghidra.graph.viewer.*;
 
-/**
+# /**
  * Uses the given filter to fade out vertices that do not pass.  Vertices that pass the filter
  * will be included in the graph.  Not only will passing vertices be included, but so too 
  * will any vertices reachable from those vertices.

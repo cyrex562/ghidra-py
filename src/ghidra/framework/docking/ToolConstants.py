@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.tool;
 import docking.action.KeyBindingType;
 import docking.tool.util.DockingToolConstants;
 
-/**
+# /**
  * Values used to define standard menu names and other miscellaneous constants
  */
 public interface ToolConstants extends DockingToolConstants {

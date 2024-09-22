@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 import java.util.LinkedList;
 import java.util.TreeMap;
 
-/**
+# /**
  * Maintains a list of objects in priority order where priority is just 
  * an integer value.  The object with the lowest
  * priority number can be retrieved using getFirst() and the object with the highest

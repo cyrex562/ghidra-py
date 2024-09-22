@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.util.FileLocker;
 import generic.util.LockFactory;
 import ghidra.framework.model.ProjectLocator;
 
-/**
+# /**
  * A simple delegate for creating and using locks in Ghidra.
  */
 class ProjectLock {

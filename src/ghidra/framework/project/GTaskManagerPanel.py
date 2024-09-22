@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -26,7 +26,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.border.Border;
 
-/**
+# /**
  * Main component for managing and viewing the state of a GTaskManager.
  * <P>
  * This component consists of three sub-components: the TaskViewer, The GTaskResultPanel, and a

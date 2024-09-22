@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.app.plugin.processors.sleigh.SleighLanguageProvider;
 import ghidra.program.model.lang.*;
 import ghidra.util.task.TaskBuilder;
 
-/**
+# /**
  * Default Language service used gather up all the languages that were found
  * during the class search (search was for language providers)
  */

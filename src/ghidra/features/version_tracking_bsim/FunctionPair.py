@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.feature.vt.api;
 
 import ghidra.feature.vt.api.main.*;
 
-/**
+# /**
  * A possible match between source and destination.
  */
 public class FunctionPair {

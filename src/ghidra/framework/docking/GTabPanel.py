@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import javax.swing.*;
 import ghidra.util.layout.HorizontalLayout;
 import utility.function.Dummy;
 
-/**
+# /**
  * Component for displaying a list of items as a series of horizontal tabs where exactly one tab
  * is selected. 
  * <P>

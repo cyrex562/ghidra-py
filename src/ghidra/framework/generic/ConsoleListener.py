@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.main;
 
-/**
+# /**
  * Listener that is called when a string should be written to the console.
  */
 public interface ConsoleListener {

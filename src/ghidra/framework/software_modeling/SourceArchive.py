@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.util.UniversalID;
 
 
-/**
+# /**
  * DataTypeSource holds information about a single data type archive which supplied a data type
  * to the program.
  */

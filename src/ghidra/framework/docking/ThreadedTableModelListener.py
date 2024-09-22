@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.widgets.table.threaded;
 
-/**
+# /**
  * A listener to be notified of {@link ThreadedTableModel} loading changes.
  */
 public interface ThreadedTableModelListener {

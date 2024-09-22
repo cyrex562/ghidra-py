@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.time.LocalDate;
 
 import docking.widgets.table.constraint.provider.EditorProvider;
 
-/**
+# /**
  * Column Constraint where acceptable column values are greater than or equal to some specified
  * value of the column type.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Set;
 import db.*;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Version 0 implementation for accessing the datatype parent/child database table. 
  * 
  * NOTE: Use of tablePrefix introduced with this adapter version.

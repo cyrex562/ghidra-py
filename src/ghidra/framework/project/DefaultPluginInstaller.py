@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.List;
 
 import ghidra.framework.plugintool.util.PluginException;
 
-/**
+# /**
  * The default plugin installer that uses a tool to install plugins
  */
 public class DefaultPluginInstaller implements PluginInstaller {

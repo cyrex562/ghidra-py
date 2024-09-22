@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import ghidra.util.exception.DuplicateNameException;
 
 import java.io.IOException;
 
-/**
+# /**
  * NOTE: THE FOLLOWING TEXT EXTRACTED FROM JVMS7.PDF
  * <p>
  * The StackMapTable attribute is a variable-length attribute in the attributes

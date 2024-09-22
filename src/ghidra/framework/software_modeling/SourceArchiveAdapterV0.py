@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.data.SourceArchive;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Version 0 implementation for accessing the Data Type Archive ID database table. 
  * 
  * NOTE: Use of tablePrefix introduced with this adapter version.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import docking.widgets.label.GDHtmlLabel;
 import generic.theme.GThemeDefaults.Colors;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * An action that can be added to a menu in order to separate menu items into groups
  */
 public class HorizontalRuleAction extends DockingAction {

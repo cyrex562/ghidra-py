@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework;
 
 import utility.application.ApplicationUtilities;
 
-/**
+# /**
  * Class to represent an application's unique identifier.  An application identifier is made up
  * of an application name, an application version, and an application release name.
  * <pre>

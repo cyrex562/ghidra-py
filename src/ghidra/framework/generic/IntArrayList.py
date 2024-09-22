@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.Serializable;
 import ghidra.util.ObjectStorage;
 import ghidra.util.Saveable;
 
-/**
+# /**
  *
  * An ArrayList type object for ints.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Feb 4, 2005
  *
  */
@@ -25,7 +25,7 @@ import ghidra.app.plugin.processors.sleigh.ParserWalker;
 import ghidra.program.model.pcode.Decoder;
 import ghidra.program.model.pcode.DecoderException;
 
-/**
+# /**
  *  Placeholder for what will resolve to a Varnode instance given
  *  a specific InstructionContext
  */

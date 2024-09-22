@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import resources.Icons;
 import resources.ResourceManager;
 import utility.function.Dummy;
 
-/**
+# /**
  * A button that has a drop-down list of choosable {@link ButtonState}s. When a state is selected,
  * it changes the behavior of the action associated with the button. This code is based on code 
  * for the {@link MultipleActionDockingToolbarButton}.

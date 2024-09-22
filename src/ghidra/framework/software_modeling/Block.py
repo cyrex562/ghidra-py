@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.correlate;
 import ghidra.program.model.block.CodeBlock;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * This class holds basic-block information for matching algorithms. It is used as a node to traverse the
  * control-flow graph. It serves as a container for hashing information associated with Instructions in the
  * block.  It holds disambiguating hashes (calculated primarily from basic-block parent/child relationships)

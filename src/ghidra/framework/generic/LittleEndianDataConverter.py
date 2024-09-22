@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util;
 import java.math.BigInteger;
 import java.util.Objects;
 
-/**
+# /**
  * 
  * Helper class to convert a byte array to a Java primitive in Little endian
  * order, and to convert a primitive to a byte array.

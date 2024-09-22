@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.jdom.Element;
 import docking.util.image.ToolIconURL;
 import ghidra.framework.plugintool.PluginTool;
 
-/**
+# /**
  * Configuration of a tool that knows how to create tools.
  */
 public interface ToolTemplate {

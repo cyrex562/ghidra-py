@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.layout;
 
 import java.awt.*;
 
-/**
+# /**
  * LayoutManger for arranging components into exactly two columns.  
  */
 public class VariableHeightPairLayout implements LayoutManager {

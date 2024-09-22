@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.framework.options.*;
 import ghidra.util.Msg;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A stub action that allows key bindings to be edited through the key bindings options.  This 
  * allows plugins to create actions that share keybindings without having to manage those 
  * keybindings themselves.

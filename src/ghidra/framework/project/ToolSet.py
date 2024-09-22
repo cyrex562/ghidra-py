@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.model;
 
-/**
+# /**
  * Interface to define a set of Tools. NOTE: ToolSets are currently not
  * implemented.
  */

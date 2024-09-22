@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.actions.PopupActionProvider;
 import ghidra.framework.options.ToolOptions;
 import ghidra.framework.plugintool.ServiceProvider;
 
-/**
+# /**
  * Generic tool interface for managing {@link ComponentProvider}s and {@link DockingActionIf
  * actions}
  */

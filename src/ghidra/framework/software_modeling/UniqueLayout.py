@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.processors.sleigh;
 
-/**
+# /**
  * Offsets for various ranges in the p-code unique space.  Offsets are either:
  *    1) Relative to the last temporary allocated statically by the SLEIGH compiler
  *        or a particular language (.sla), OR

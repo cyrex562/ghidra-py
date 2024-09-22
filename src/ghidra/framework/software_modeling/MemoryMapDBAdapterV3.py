@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.address.*;
 import ghidra.program.model.mem.MemoryBlockType;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * MemoryMap adapter for version 3.
  * This version introduces the concept of sub memory blocks and FileBytes
  */

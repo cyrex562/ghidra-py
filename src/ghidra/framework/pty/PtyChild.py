@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-/**
+# /**
  * The child (UNIX "slave") end of a pseudo-terminal
  */
 public interface PtyChild extends PtyEndpoint {

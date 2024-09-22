@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,7 +66,7 @@ import ghidra.util.task.*;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Plugin that shows the differences between two programs, and allows the user to apply differences
  * to the currently open program. This allows only one tabbed program to display a second program
  * (possibly with an active Diff). It allows the active program to change without losing the current

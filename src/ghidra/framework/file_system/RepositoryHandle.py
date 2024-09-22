@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.exception.DuplicateFileException;
 import ghidra.util.exception.UserAccessException;
 
-/**
+# /**
  * <code>RepositoryHandle</code> provides access to a repository.
  */
 public interface RepositoryHandle {

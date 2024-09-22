@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import ghidra.program.model.lang.CompilerSpec;
 
-/**
+# /**
  * <code>GenericCallingConvention</code> identifies the generic calling convention
  * associated with a specific function definition.  This can be used to help identify
  * the appropriate compiler-specific function prototype (i.e., calling convention).

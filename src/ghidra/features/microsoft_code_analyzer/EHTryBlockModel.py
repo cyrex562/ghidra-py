@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * Model for exception handling information about the TryBlockMapEntry data type and its 
  * associated exception handling data types.
  * <br>

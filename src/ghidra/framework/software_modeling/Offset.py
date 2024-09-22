@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.program.model.mem.MemBuffer;
 import java.io.Serializable;
 import java.util.Hashtable;
 
-/**
+# /**
  * 
  */
 public class Offset implements Serializable {

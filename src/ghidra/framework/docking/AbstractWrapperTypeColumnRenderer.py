@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Date;
 
 import ghidra.docking.settings.Settings;
 
-/**
+# /**
  * A convenience interface of {@link GColumnRenderer} for primitive-based/wrapper-based 
  * renderers.   This class implements {@link #getFilterString(Object, Settings)} to 
  * throw an exception, as it should not be called for primitive types.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.task;
 
 import java.awt.Component;
 
-/**
+# /**
  * Class to initiate a Task in a new Thread, and to show a progress dialog that indicates
  * activity <b>if the task takes too long</b>.  The progress dialog will show an 
  * animation in the event that the task of this class cannot show progress.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.table.column.AbstractGhidraColumnRenderer;
 import resources.ResourceManager;
 
-/**
+# /**
  * Renderer for the status of a {@link VTMarkupItem}
  */
 public class MarkupItemStatusRenderer extends AbstractGhidraColumnRenderer<VTMarkupItemStatus> {

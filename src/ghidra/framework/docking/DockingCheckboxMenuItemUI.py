@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import javax.swing.JComponent;
 import javax.swing.UIManager;
 import javax.swing.plaf.MenuItemUI;
 
-/**
+# /**
  * Overrides the painting behavior of the BasicCheckBoxMenuItemUI
  */
 public class DockingCheckboxMenuItemUI extends DockingMenuItemUI {

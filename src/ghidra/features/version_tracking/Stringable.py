@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.classfinder.ExtensionPoint;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Generically, this represents the concept that the implementation of this class is an item
  * that can be turned into a String and restored from String form.  This is similar to 
  * Java's Bean serialization mechanism, which allows you to turn object to Strings and then 

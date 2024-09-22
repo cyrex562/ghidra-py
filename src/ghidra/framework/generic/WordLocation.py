@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util;
 
 import org.apache.commons.lang3.StringUtils;
 
-/**
+# /**
  * A simple object that represents a word as defined by 
  * {@link StringUtilities#findWord(String, int)}.  This class contains the position of the word
  * within the original context from whence it came.

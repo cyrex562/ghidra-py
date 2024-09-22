@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import org.apache.commons.lang3.StringUtils;
 import gui.event.MouseBinding;
 import util.CollectionUtils;
 
-/**
+# /**
  * Represents a way to trigger an action in the system.  A trigger is based on a key stroke, a mouse 
  * binding or both.
  */

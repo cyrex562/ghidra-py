@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * NOTE: seriously?  how many different ways can YOU spell "mutable?"
  *
@@ -19,7 +19,7 @@ package ghidra.program.model.data;
 import ghidra.docking.settings.EnumSettingsDefinition;
 import ghidra.docking.settings.Settings;
 
-/**
+# /**
  * The settings definition for the numeric display format
  */
 public class MutabilitySettingsDefinition implements EnumSettingsDefinition {

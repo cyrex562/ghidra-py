@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.map;
 import ghidra.util.ObjectStorage;
 import ghidra.util.datastruct.DataTable;
 
-/**
+# /**
  * Convenience adapter implementation for saving and restoring Strings and 
  * Java primitives or arrays of Strings and primitives for a row of a data table.
  * The order in which the puts are done must the same order in which the gets are done.

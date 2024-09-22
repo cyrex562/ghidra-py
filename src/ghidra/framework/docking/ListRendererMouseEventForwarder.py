@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -22,7 +22,7 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.*;
 
-/**
+# /**
  * A listener designed to forward events from a JList to its renderer.  This listener allows
  * renderers to embed components in the renderer and gives them the mouse events they need to 
  * interact with the user.

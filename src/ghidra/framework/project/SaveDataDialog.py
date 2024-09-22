@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Modal dialog to display a list of domain objects that have changed.
  * The user can mark the ones to save, or pop up another dialog to save
  * the files to a different location and/or name.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.geom.Rectangle2D;
 
 import generic.theme.GColor;
 
-/**
+# /**
  * Paints a rectangle showing the start and end points of a drag.
  */
 public class MouseDraggedPaintableShape extends PaintableShape {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.*;
 import javax.swing.text.*;
 
-/**
+# /**
  * An action to delete from the cursor position to the beginning of the current word, backwards.
  */
 public class DeleteToStartOfWordAction extends TextAction {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.dialogs;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * <P>DialogComponentProvider that provides information to create a modal dialog
  * to prompt for a number larger than an {@code int} or {@code long} to be input by the user.</P>
  *

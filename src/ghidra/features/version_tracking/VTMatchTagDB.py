@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.feature.vt.api.main.VTMatchTag;
 import ghidra.program.database.DBObjectCache;
 import ghidra.program.database.DatabaseObject;
 
-/**
+# /**
  * The database object for a user defined tag on a version tracking match.
  */
 public class VTMatchTagDB extends DatabaseObject implements VTMatchTag {

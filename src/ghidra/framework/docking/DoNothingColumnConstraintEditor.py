@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 
 import docking.widgets.table.constraint.ColumnConstraint;
 
-/**
+# /**
  * Editor for constraints that don't have a value that needs editing.  The "IsEmpty" constraint
  * is an example of a constraint that doesn't need an editor.
  *

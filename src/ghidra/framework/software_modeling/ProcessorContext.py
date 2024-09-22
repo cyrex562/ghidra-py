@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.program.model.listing.ContextChangeException;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Defines the interface for an object containing the state
  * of all processor registers relative to a specific address.
  */

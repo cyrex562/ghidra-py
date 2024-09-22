@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.framework.store.DataFileHandle;
 
 import java.io.*;
 
-/**
+# /**
  * <code>LocalDataFileHandle</code> provides random access to 
  * a local File.
  */

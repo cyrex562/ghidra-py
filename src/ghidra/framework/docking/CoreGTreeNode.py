@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.tree.internal.InProgressGTreeNode;
 import ghidra.util.Swing;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * This class exists to help prevent threading errors in {@link GTreeNode} and subclasses,
  * by privately maintaining synchronous access to the parent and children of a node. 
  * <P>

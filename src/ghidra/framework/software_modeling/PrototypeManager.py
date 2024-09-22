@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.datastruct.ObjectIntHashtable;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class maintain a list of prototypes and corresponding IDs.
  * NOTE: The prototype ID will be negative if the prototype is in a
  * delay slot.

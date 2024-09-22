@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.database.data;
 
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * <code>DataTypeProxyComponentDB</code> facilitates a datatype/component substitution when a 
  * DataTypeManagerDB is constructed for read-only use and datatype migration is required.  
  * An example of this is the {@link StructureDB} migration of flex-arrays to a zero-element array.

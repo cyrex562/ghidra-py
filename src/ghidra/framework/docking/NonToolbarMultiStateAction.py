@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.action.DockingAction;
 import docking.widgets.EventTrigger;
 import ghidra.util.Swing;
 
-/**
+# /**
  * A class for clients that wish to create a button that has multiple states, controlled by a
  * drop-down menu.  Further, this action is not meant to be added to a toolbar.  If you wish 
  * for this action to appear in the toolbar, then extend {@link MultiStateDockingAction} 

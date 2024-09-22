@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.block.graph;
 
 import ghidra.graph.DefaultGEdge;
 
-/**
+# /**
  * A simple edge type for representing a link between two 
  * {@link CodeBlockVertex CodeBlock vertices}.
  */

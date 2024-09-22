@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.graph;
 
-/**
+# /**
  *
  * A simple graph is a graph with no parallel edges or loops. This class models
  * a simple digraph -- edges are directed and a single edge may go from any vertex

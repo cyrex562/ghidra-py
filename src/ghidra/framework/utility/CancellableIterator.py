@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.task;
 import java.util.Iterator;
 import java.util.Objects;
 
-/**
+# /**
  * An {@link Iterator} wrapper that allows clients to use a task monitor to cancel iteration
  *
  * @param <T> the type

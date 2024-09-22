@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.*;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Provides a static set of methods for globally managing application themes and their values.
  * <P>
  * The basic idea is that all the colors, fonts, and icons used in an application should be

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package generic.concurrent;
 
-/**
+# /**
  * Interface for listeners who want progress and transient message information from QWorkers while
  * processing items.
  */

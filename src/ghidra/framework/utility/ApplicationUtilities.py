@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Utility class for default application things.
  */
 public class ApplicationUtilities {

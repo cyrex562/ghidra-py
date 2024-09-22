@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.pcode.Varnode;
 
 public class m68kEmulateInstructionStateModifier extends EmulateInstructionStateModifier {
 
-/*
+# /*
 	private Register ismReg;
 	private Register isaModeReg;
 	private RegisterValue ISA_MODE0;
@@ -33,7 +33,7 @@ public class m68kEmulateInstructionStateModifier extends EmulateInstructionState
 
 	public m68kEmulateInstructionStateModifier(Emulate emu) {
 		super(emu);
-/*
+# /*
 		ismReg = language.getRegister("ISM");
 		isaModeReg = language.getRegister("ISA_MODE");
 		if (ismReg == null || isaModeReg == null) {
@@ -51,7 +51,7 @@ public class m68kEmulateInstructionStateModifier extends EmulateInstructionState
 	 * Initialize ISM register based upon context-register state before first
 	 * instruction is executed.
 	 */
-/*
+# /*
     @Override
     public void initialExecuteCallback(Emulate emulate, Address current_address, RegisterValue contextRegisterValue) throws LowlevelError {
             BigInteger isaModeValue = BigInteger.ZERO;
@@ -72,7 +72,7 @@ public class m68kEmulateInstructionStateModifier extends EmulateInstructionState
 	 * will properly handle context changes during the flow of execution, we
 	 * need only fix the current program counter.
 	 */
-/*
+# /*
     @Override
     public void postExecuteCallback(Emulate emulate, Address lastExecuteAddress,
                     PcodeOp[] lastExecutePcode, int lastPcodeIndex, Address currentAddress)

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.Msg;
 import ghidra.util.PropertyFile;
 import ghidra.util.exception.NotFoundException;
 
-/**
+# /**
  * <code>IndexedLocalFileSystem</code> implements a case-sensitive indexed filesystem
  * which uses a shallow storage hierarchy with no restriction on file name or path 
  * length.  This filesystem is identified by the existence of an index file (~index.dat) 

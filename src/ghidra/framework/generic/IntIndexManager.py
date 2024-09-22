@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-/**
+# /**
  * Class to generate int indexes to be used for arrays or tables.  If a location
  * or entry in a table becomes available, the index for that location is released.
  * This class manages the use and reuse of those indexes.

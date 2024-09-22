@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.pcode.exec;
 
 import ghidra.program.model.lang.Language;
 
-/**
+# /**
  * A state composing a single {@link BytesPcodeExecutorStatePiece}
  */
 public class BytesPcodeExecutorState extends DefaultPcodeExecutorState<byte[]> {

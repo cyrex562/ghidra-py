@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import javax.swing.JPanel;
 import docking.widgets.label.GDHtmlLabel;
 import docking.widgets.label.GDLabel;
 
-/**
+# /**
  * Adds a border to a component that displays a title and provides a area for adding
  * components (usually icon buttons)
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import com.google.common.base.Function;
 import ghidra.graph.VisualGraph;
 import ghidra.graph.viewer.VisualVertex;
 
-/**
+# /**
  * The default {@link VisualGraph} renderer.  By default, the shape returned by this class is
  * a {@link Rectangle} of the given vertex's {@link VisualVertex#getComponent() component}.
  * 

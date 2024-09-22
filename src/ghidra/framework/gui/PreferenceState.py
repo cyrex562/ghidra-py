@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.options;
 
 import org.jdom.Element;
 
-/**
+# /**
  * An implementation of SaveState that exists primarily to signal its intended usage.  The 
  * SaveState is a generic object for saving program state through plugins.  This state object
  * is meant to be used for preferences <b>that are not associated directly with a plugin</b>.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import javax.swing.ListSelectionModel;
 import docking.widgets.table.GTable;
 import docking.widgets.table.RowObjectTableModel;
 
-/**
+# /**
  * A class to allow GTables to support drag operations.
  *
  * @param <ROW_OBJECT> the row object type

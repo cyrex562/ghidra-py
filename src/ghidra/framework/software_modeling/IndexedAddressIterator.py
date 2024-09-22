@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -28,7 +28,7 @@ import db.DBFieldIterator;
 import db.Field;
 import db.util.ErrorHandler;
 
-/**
+# /**
  * Iterates over a FieldIterator; the field is the address but not
  * the key; the column for the field must be indexed.
  *

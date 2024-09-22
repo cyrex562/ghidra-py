@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package generic.constraint;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * Special root node for a decision tree.  Root nodes don't have a real constraint, so 
  * a dummy constraint that is always satisfied is used.
  *

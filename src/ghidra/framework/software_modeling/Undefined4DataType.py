@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.util.StringFormat;
 import ghidra.util.classfinder.*;
 
-/**
+# /**
  * Provides an implementation of a 4-byte dataType that has not been defined yet as a
  * particular type of data in the program.
  */

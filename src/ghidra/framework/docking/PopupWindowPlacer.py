@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * This class places a rectangle on the boundary of an inner bounds area, such that it is not
  * placed outside of an outer boundary.  It takes the concept of trying to make the placement at
  * the closest distance, but preferring certain sides or angles of approach in iterating a

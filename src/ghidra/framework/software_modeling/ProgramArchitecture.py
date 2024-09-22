@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.AddressFactory;
 import ghidra.program.model.address.OverlayAddressSpace;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * <code>ProgramArchitecture</code> which identifies program architecture details required to 
  * utilize language/compiler-specific memory and variable storage specifications.
  */

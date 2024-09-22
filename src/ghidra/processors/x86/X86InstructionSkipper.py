@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.feature.fid.hash;
 import ghidra.program.model.lang.Processor;
 import ghidra.util.search.InstructionSkipper;
 
-/**
+# /**
  * These are the NOP instructions laid down by Visual Studio (or potentially
  * other compilers, like gcc) as advised by Intel.  They represent "do nothing"
  * operations of various sizes which are used for dynamic code patching.

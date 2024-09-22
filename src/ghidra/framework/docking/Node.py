@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.JComponent;
 
 import org.jdom.Element;
 
-/**
+# /**
  * Base class for the various node objects used to build the component hierarchy.
  */
 abstract class Node {

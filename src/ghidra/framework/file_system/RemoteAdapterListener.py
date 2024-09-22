@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.client;
 
-/**
+# /**
  * <code>RemoteAdapterListener</code> provides a listener interface 
  * which facilitates notifcation when the connection
  * state of a remote server/repository adapter changes.

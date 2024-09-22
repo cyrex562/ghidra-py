@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import ghidra.framework.model.DomainObject;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Compound command to handle multiple background commands.
  * 
  * @param <T> {@link DomainObject} implementation interface

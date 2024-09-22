@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.Disposable;
 import ghidra.util.exception.AssertException;
 import resources.ResourceManager;
 
-/**
+# /**
  * The PyGhidra interpreter connection
  */
 public final class PyGhidraInterpreter implements Disposable, InterpreterConnection {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.service.graph;
 
 import java.util.Set;
 
-/**
+# /**
  * Interface for being notified when the user interacts with a visual graph display
  */
 public interface GraphDisplayListener {

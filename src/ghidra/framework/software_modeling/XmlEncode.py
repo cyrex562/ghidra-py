@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.io.OutputStream;
 import ghidra.program.model.address.AddressSpace;
 import ghidra.util.xml.SpecXmlUtils;
 
-/**
+# /**
  * An XML based encoder
  * The underlying transfer encoding is an XML document.
  * The encoder is initialized with a StringBuilder which will receive the XML document as calls

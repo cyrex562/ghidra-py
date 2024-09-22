@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.data.DataTypeDisplayOptions;
 import ghidra.program.model.symbol.RefType;
 import ghidra.program.model.symbol.Reference;
 
-/**
+# /**
  * Interface for interacting with data at an address in a program.
  */
 public interface Data extends CodeUnit, Settings {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.graph.viewer.layout.AbstractVisualGraphLayout;
 import ghidra.graph.viewer.vertex.VertexShapeProvider;
 import ghidra.graph.viewer.vertex.VisualGraphVertexShapeTransformer;
 
-/**
+# /**
  * Edge render for the {@link VisualGraph} system
  * 
  * <h2 style="text-align:center">Implementation Notes</h2>

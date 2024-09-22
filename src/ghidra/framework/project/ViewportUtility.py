@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.main.logviewer.event.FVEventListener;
 import ghidra.framework.main.logviewer.model.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Utility class for managing the viewport in the {@link FVTable}. This viewport must be 
  * adjusted manually whenever {@link Chunk} objects are added to or removed from to the view, 
  * or whenever the {@link FVSlider} is moved.

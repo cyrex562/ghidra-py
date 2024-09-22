@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.util.graph.attributes;
 import ghidra.util.graph.KeyIndexableSet;
 import ghidra.util.graph.KeyedObject;
 
-/** Base class for attributes -- int, double, or String values -- which can
+# /** Base class for attributes -- int, double, or String values -- which can
  *  be assigned to the members of a KeyIndexableSet, e.g. the vertices or
  *  edges of a DirectedGraph. The attributes do not track changes in the owning
  *  set, but you can check if the owning set has been modified since creation

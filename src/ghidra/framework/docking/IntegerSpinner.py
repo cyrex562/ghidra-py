@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import javax.swing.event.*;
 
 import docking.widgets.textfield.IntegerTextField;
 
-/**
+# /**
  * Creates a component for editing Integer values using an {@link IntegerTextField} and a {@link JSpinner}.
  */
 public class IntegerSpinner {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.Saveable;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>ProgramUserDataDB</code> stores user data associated with a specific program.
  * A ContentHandler should not be created for this class since it must never be stored
  * within a DomainFolder.

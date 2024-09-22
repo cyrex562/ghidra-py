@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.Msg;
 import ghidra.util.WebColors;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Base class for labels that render html using a custom rendering kit.
  * <p>
  * This implementation uses custom html rendering.  This custom rendering allows for basic

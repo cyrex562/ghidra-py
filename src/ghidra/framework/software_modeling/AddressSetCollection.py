@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.address;
 
-/**
+# /**
  *  This interface represents a collection of AddressSets (actually AddressSetViews). 
  *  It defines a set of methods that can efficiently be performed on a collection
  *  of one or more AddressSets.  

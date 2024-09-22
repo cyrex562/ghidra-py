@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -25,7 +25,7 @@ import ghidra.util.task.TaskMonitor;
 import java.util.Collection;
 import java.util.Collections;
 
-/**
+# /**
  * A class that exists to satisfy the interface of {@link VTAssociation} so that our package's 
  * mapper object can satisfy it's requirements of the {@link VTMatch} interface.
  */

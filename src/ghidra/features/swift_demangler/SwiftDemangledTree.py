@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.app.util.demangler.swift.nodes.SwiftNode;
 import ghidra.app.util.demangler.swift.nodes.SwiftNode.NodeProperties;
 import ghidra.app.util.demangler.swift.nodes.SwiftUnsupportedNode;
 
-/**
+# /**
  * A Swift demangled symbol, structured as a tree of {@link SwiftNode nodes}
  * <p>
  * For example, the <code>Swift.print</code> function's mangled form is 

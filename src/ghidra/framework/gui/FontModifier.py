@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.Font;
 import java.text.ParseException;
 import java.util.List;
 
-/**
+# /**
  * Class that can transform one font into another. For example if want a font that is the same
  * basic font as some other font, but is just a different size,style, or family, you use a
  * FontModifier

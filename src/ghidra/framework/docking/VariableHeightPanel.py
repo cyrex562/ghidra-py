@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.awt.event.ComponentEvent;
 import javax.swing.JPanel;
 import javax.swing.Scrollable;
 
-/**
+# /**
  * A panel that is scrollable and uses a VariableHeightLayoutManager that
  * deals with components of varying heights.
  *

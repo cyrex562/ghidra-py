@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.*;
 import docking.DialogComponentProvider;
 import docking.DockingWindowManager;
 
-/**
+# /**
  * Font property editor that is a bit unusual in that its custom component is a button that when 
  * pushed, pops up a dialog for editing the color. Use {@link FontPropertyEditor} for a more
  * traditional property editor that returns a direct color editing component.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table.constraint.provider;
 
 import docking.widgets.table.constraint.ColumnTypeMapper;
 
-/**
+# /**
  * Converts Float Column objects to Double objects so that column gets Double type column
  * filters
  */

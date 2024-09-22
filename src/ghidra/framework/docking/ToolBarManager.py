@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.action.DockingActionIf;
 import docking.action.ToolBarData;
 import docking.widgets.VariableHeightPanel;
 
-/**
+# /**
  * Manages the actions to be displayed in the toolbar.  Organizes them by group.
  */
 public class ToolBarManager {

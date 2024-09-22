@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.*;
 
 import javax.swing.SwingUtilities;
 
-/**
+# /**
  * An object that describes a component to be 'called-out'.  A callout is a way to 
  * emphasize a widget (usually this is only needed for small GUI elements, like an action or
  * icon).

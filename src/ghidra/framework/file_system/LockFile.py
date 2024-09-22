@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.io.*;
 import java.util.Date;
 import java.util.Random;
 
-/**
+# /**
  * Provides for the creation and management of a named lock file. Keep in mind
  * that if a lock expires it may be removed without notice.  Care should be
  * taken to renew a lock file in a timely manner.

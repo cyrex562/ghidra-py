@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.Swing;
 import ghidra.util.SystemUtilities;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Executes a single job at a time in FIFO order.
  * 
  * @see PriorityWorker

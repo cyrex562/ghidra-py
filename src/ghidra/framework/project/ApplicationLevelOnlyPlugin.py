@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main;
 
-/**
+# /**
  * Marker interface to indicate this plugin is application-level tools only (see
  * {@link ApplicationLevelPlugin}).
  */

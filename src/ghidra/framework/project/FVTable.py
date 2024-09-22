@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.framework.main.logviewer.event.FVEvent.EventType;
 import ghidra.framework.main.logviewer.model.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The table that backs the {@link FileViewer} window. It is responsible for displaying
  * {@link Chunk} instances.
  *

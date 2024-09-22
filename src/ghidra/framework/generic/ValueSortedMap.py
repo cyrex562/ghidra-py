@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.generic.util.datastruct;
 import java.util.*;
 import java.util.Map.Entry;
 
-/**
+# /**
  * A map that is sorted by value.
  * 
  * <p>

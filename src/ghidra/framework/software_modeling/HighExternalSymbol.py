@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.listing.VariableStorage;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * A symbol, within a decompiler model, for a function without a body in the current Program.
  * The Address of this symbol corresponds to the code location that CALL instructions refer to.
  * In anticipation of a (not fully resolved) thunking mechanism, this symbol also has a separate

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.graph.VisualGraph;
 import ghidra.graph.viewer.VisualEdge;
 import ghidra.graph.viewer.VisualVertex;
 
-/**
+# /**
  * A class that defines a simple Jung {@link Layout} interface for 
  * {@link VisualVertex Visual Vertices} and {@link VisualEdge}s 
  *

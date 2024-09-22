@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.feature.vt.api.main;
 
-/**
+# /**
  * Enum that represents an association type of either Function or Data
  *
  */

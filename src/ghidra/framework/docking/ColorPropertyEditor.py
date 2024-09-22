@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.event.ChangeListener;
 
 import ghidra.util.Swing;
 
-/**
+# /**
  * Property Editor for Colors. Uses a {@link GhidraColorChooser} as its custom component
  */
 public class ColorPropertyEditor extends PropertyEditorSupport {

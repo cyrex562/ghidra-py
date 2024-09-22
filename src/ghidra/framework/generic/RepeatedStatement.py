@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: Apache License 2.0
  */
 package generic.test.rule;
@@ -10,7 +10,7 @@ import org.junit.runners.model.Statement;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * A JUnit test statement that repeats its base statement 1 or more times
  * 
  * @see Repeated

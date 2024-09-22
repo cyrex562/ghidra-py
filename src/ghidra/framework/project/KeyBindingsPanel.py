@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +46,7 @@ import help.Help;
 import help.HelpService;
 import resources.Icons;
 
-/**
+# /**
  * Panel to show the key bindings for the plugin actions.
  */
 public class KeyBindingsPanel extends JPanel {

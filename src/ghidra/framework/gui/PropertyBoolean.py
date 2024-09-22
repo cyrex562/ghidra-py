@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.beans.PropertyEditor;
 
 import javax.swing.JCheckBox;
 
-/**
+# /**
  * A basic editor for booleans.
  */
 public class PropertyBoolean extends JCheckBox implements ItemListener {

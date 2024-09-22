@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.table;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.TableModelListener;
 
-/**
+# /**
  * A class to track and restore selections made in a table.  We use this in the docking 
  * environment primarily due to the heavy usage of filtering for most tables.  As tables are
  * filtered, the contents change (and then change back when the filter is removed).  It is nice

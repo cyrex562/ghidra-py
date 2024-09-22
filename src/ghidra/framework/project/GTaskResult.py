@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.framework.task;
 import ghidra.util.SystemUtilities;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Class to represent the result state of a GTask, such as whether it was cancelled or an exception
  * happened.
  */

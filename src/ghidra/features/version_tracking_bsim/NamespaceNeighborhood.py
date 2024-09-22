@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.lsh.vector.LSHVectorFactory;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.symbol.*;
 
-/**
+# /**
  * A neighborhood generator that, for a given function, generates all functions
  * in the same namespace.  For efficiency, it caches the namespace sets it generates.
  */

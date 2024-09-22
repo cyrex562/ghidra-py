@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.*;
 import docking.widgets.label.GDHtmlLabel;
 import generic.theme.*;
 
-/**
+# /**
  * Abstract class that defines a panel for displaying name/value pairs with html-formatting.
  */
 public abstract class AbstractDetailsPanel extends JPanel {

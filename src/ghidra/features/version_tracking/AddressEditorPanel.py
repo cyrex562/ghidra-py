@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -23,7 +23,7 @@ import java.awt.LayoutManager;
 
 import javax.swing.JPanel;
 
-/**
+# /**
  * AddressEditorPanel should be extended to create a new panel for editing a specific type of 
  * mark-up item destination address.
  */

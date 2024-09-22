@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package docking.widgets.table;
 
 import java.util.List;
 
-/**
+# /**
  * Instances of this class converts table rows into lists of strings.  These objects can be set
  * on GTableFilterPanel to customize how the user typed text filters are applied to a table row.
  * For example, a custom row transformer could be used to limit which columns of a table are 

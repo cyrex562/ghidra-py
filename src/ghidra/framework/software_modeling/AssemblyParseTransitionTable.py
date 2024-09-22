@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.app.plugin.assembler.sleigh.symbol.AssemblySymbol;
 import ghidra.app.plugin.assembler.sleigh.util.TableEntry;
 import ghidra.app.plugin.assembler.sleigh.util.TableEntryKey;
 
-/**
+# /**
  * The transition table defining an LR(0) parsing machine
  */
 public class AssemblyParseTransitionTable {

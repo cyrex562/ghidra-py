@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.plugintool.util;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  *Exception thrown if plugin was not found.
  */
 public class PluginException extends UsrException {

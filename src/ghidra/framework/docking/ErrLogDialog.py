@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.table.column.DefaultTimestampRenderer;
 import ghidra.util.table.column.GColumnRenderer;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A dialog that takes error text and displays it with an option details button.  If there is
  * an {@link ErrorReporter}, then a button is provided to report the error.
  */

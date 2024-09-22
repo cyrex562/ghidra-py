@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import javax.swing.JComponent;
 
 import docking.widgets.textfield.IntegerTextField;
 
-/**
+# /**
  * Value class for Long Values with an option for display the value as decimal or hex. The 
  * editor component uses an {@link IntegerTextField} for display and editing the value. This
  * value supports the concept of no value which is represented by the text field being empty. If

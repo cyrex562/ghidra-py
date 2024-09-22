@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table.threaded;
 
 import docking.widgets.table.TableFilter;
 
-/**
+# /**
  * A table filter that represents the state of having no filter.  This allows us to not have to
  * use <code>null</code> to have multiple meanings.
  *

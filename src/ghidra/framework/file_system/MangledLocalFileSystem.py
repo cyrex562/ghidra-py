@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.*;
 import ghidra.util.exception.DuplicateFileException;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * <code>MangledLocalFileSystem</code> implements the legacy project data storage 
  * scheme which utilizes a simplified name mangling which provides case-sensitive 
  * file-naming with support for spaces.  Project folder hierarchy maps directly to

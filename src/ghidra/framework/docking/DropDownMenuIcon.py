@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.geom.GeneralPath;
 
 import javax.swing.Icon;
 
-/**
+# /**
  * Icon for a drop down menu button  (triangle pointing down)
  */
 public class DropDownMenuIcon implements Icon {

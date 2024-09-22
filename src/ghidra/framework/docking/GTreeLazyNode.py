@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.tree;
 
 import java.util.List;
 
-/**
+# /**
  * Base class for GTreeNodes that populate their children on demand (typically when expanded). 
  * Also, children of this node can be unloaded by calling {@link #unloadChildren()}.  This
  * can be used by nodes in large trees to save memory by unloading children that are no longer

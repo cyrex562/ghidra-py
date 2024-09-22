@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.SwingConstants;
 import ghidra.util.SystemUtilities;
 import util.CollectionUtils;
 
-/**
+# /**
  * A builder object that allows clients to launch tasks in the background, with a progress
  * dialog representing the task.
  *

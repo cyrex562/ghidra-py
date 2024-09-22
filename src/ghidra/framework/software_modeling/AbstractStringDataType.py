@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.nio.charset.CoderResult;
 import ghidra.docking.settings.*;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * Common base class for all Ghidra string {@link DataType}s.
  * <p>
  * See {@link StringDataType} for information about string variations and configuration details.

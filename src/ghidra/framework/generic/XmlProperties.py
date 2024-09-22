@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import org.jdom.Element;
 import ghidra.util.xml.XmlUtilities;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * A convenience class for creating a GProperties object from a file containing XML data
  * generated from {@link GProperties#saveToXmlFile(File)}
  */

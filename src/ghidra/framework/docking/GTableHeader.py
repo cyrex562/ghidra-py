@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.HelpLocation;
 import help.HelpService;
 import resources.ResourceManager;
 
-/**
+# /**
  * A special header for GhidraTables to handle things like tooltips and hover information.
  */
 public class GTableHeader extends JTableHeader {

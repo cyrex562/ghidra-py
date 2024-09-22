@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.plugin.assembler.sleigh.util.AsmUtil;
 import ghidra.app.plugin.processors.sleigh.Constructor;
 import ghidra.app.plugin.processors.sleigh.symbol.OperandSymbol;
 
-/**
+# /**
  * The generator of {@link AssemblyConstructState} from {@link AssemblyParseBranch}
  * 
  * <p>

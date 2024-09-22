@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.feature.vt.gui.provider.impliedmatches;
 
 import ghidra.feature.vt.api.main.*;
 
-/**
+# /**
  * A row object for the {@link VTImpliedMatchesTableModel}.  This object will represent a 
  * {@link VTMatch}, either a possible one or an existing one. 
  */

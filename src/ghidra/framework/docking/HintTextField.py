@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.event.DocumentListener;
 import generic.theme.GColor;
 import generic.theme.GThemeDefaults.Colors.Messages;
 
-/**
+# /**
  * Simple text field that shows a text hint when the field is empty.
  *
  * <P> Hint text will be shown in light grey. Normal text will be plain black.

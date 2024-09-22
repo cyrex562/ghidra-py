@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * A <CODE>ProgramModule</CODE> is a group of <CODE>ProgramFragment</CODE>s 
  * and/or other <CODE>ProgramModule</CODE>s together with some related 
  * information such as a name, comment, and alias. Users create modules to 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class for running the BSim function matching algorithm, which happens in stages:
  *   1) Construct BSimProgramCorrelatorMatching with prepopulated FunctionNodeContainers, one for source and destination programs
  *   2) Call discoverPotentialMatches to do raw vector comparisons among source and destination

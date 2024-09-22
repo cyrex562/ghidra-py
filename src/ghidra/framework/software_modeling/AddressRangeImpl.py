@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Iterator;
 
-/**
+# /**
  * Implementation of an AddressRange.  An AddressRange is a contiguous
  * inclusive set of addresses from some minimum to a maximum address.  Once created
  * it is immutable.

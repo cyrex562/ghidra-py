@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.extensions.ExtensionUtils;
 import ghidra.util.xml.XmlUtilities;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * A class to manage saving and restoring of known extension used by this tool.
  */
 class ExtensionManager {

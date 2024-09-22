@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.fieldpanel.support;
 import java.io.Serializable;
 import java.math.BigInteger;
 
-/**
+# /**
  * Records the current top of screen position of the viewer.
  */
 

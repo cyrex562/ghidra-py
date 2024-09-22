@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.bean.GGlassPane;
 import ghidra.util.layout.PairLayout;
 import resources.Icons;
 
-/**
+# /**
  * Diagnostic dialog for display information about the components in a window and related focus
  * information.
  */

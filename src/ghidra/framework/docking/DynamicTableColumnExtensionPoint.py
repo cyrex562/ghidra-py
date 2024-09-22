@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package docking.widgets.table;
 
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * NOTE:  ALL DynamicTableColumnExtensionPoint CLASSES MUST END IN "TableColumn".  If not,
  * the ClassSearcher will not find them.
  */

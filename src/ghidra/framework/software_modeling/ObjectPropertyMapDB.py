@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.classfinder.ClassTranslator;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Property manager that deals with properties that are of
  * a {@link Saveable} Object type and store within a database table.
  * @param <T> {@link Saveable} property value type

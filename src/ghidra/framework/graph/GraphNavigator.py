@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.*;
 
 import ghidra.graph.*;
 
-/**
+# /**
  * The methods on this interface are meant to enable graph traversal in a way that allows 
  * the underlying graph to be walked from top-down or bottom-up.
  *

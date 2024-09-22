@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.program.model.pcode.Varnode;
 import java.io.Serializable;
 import java.util.HashMap;
 
-/**
+# /**
  * 
  */
 public class HandleTemplate implements Serializable {

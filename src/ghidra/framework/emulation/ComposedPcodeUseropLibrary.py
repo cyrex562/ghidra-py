@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.pcode.exec;
 
 import java.util.*;
 
-/**
+# /**
  * A p-code userop library composed of other libraries
  * 
  * @param <T> the type of values processed by the library

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package generic.theme;
 import javax.swing.UIDefaults;
 import javax.swing.plaf.UIResource;
 
-/**
+# /**
  * Version of GIcon that implements UIResource. It is important that when setting java defaults
  * in the {@link UIDefaults} that it implements UIResource. Otherwise, java will think the icon
  * was set explicitly by client code and therefore can't update it generically when it goes to 

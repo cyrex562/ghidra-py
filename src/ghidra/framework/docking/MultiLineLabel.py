@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.util.GraphicsUtils;
 import ghidra.util.Msg;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  *  
  * Class to render a String that has new line characters as a multiline
  * label. Calculates the resizing and centering characteristics.

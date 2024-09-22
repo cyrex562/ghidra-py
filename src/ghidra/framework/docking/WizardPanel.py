@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -22,7 +22,7 @@ import java.awt.Component;
 
 import javax.swing.JPanel;
 
-/**
+# /**
  * Interface to define methods for panels to be shown in the wizard dialog.
  */
 public interface WizardPanel {

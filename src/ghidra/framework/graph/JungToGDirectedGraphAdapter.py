@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.graph.GDirectedGraph;
 import ghidra.graph.GEdge;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class that turns a {@link Graph} into a {@link GDirectedGraph}.
  *
  * @param <V> the vertex type

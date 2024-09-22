@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * Splits into lines a given String that is meant to be rendered as HTML.
  * 
  * <P>Really, this class exists simply to remove hundreds of lines of code from 

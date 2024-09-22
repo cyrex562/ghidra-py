@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import docking.menu.keys.MenuKeyProcessor;
 import ghidra.util.bean.GGlassPane;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Allows Ghidra to give preference to its key event processing over the default Java key event
  * processing.  See {@link #dispatchKeyEvent(KeyEvent)} for a more detailed explanation of how
  * Ghidra processes key events.

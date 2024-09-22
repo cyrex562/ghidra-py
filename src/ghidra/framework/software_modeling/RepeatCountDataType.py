@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.AddressOverflowException;
 import ghidra.program.model.mem.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Base abstract data type for a Dynamic structure data type that contains
  * some number of repeated data types.  The first entry contains the number of
  * repeated data types to follow.  Immediately following the first element are

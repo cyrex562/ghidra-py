@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.database.map.AddressMap;
 import ghidra.program.model.address.*;
 import ghidra.util.Lock;
 
-/**
+# /**
  * An iterator over ranges that have a defined values in the AddressRangeMapDB
  * <P>
  * NOTE: this iterator is complicated by the fact that there can exist a record that represents

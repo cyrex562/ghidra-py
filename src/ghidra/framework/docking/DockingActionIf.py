@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.ActionContext;
 import docking.DockingWindowManager;
 import help.HelpDescriptor;
 
-/**
+# /**
  * The base interface for clients that wish to create commands to be registered with a tool.
  * <P>
  * An action may appear in a primary menu, a popup menu or a toolbar.   Further, an action 

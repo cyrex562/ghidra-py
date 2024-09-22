@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.model.*;
 import ghidra.util.*;
 import resources.ResourceManager;
 
-/**
+# /**
  * Class to represent a node in the Data tree.
  */
 public class DomainFolderNode extends GTreeLazyNode implements Cuttable {

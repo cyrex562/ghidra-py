@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import org.apache.commons.collections4.set.AbstractSetDecorator;
 
 import ghidra.app.plugin.assembler.sleigh.util.DbgTimer;
 
-/**
+# /**
  * A set of possible assembly resolutions for a single SLEIGH constructor
  * 
  * <p>

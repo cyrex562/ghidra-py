@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.UniversalID;
 import ghidra.util.UniversalIdGenerator;
 
-/**
+# /**
  * <code>PointerTypedef</code> provides a Pointer-Typedef template datatype
  * which may be used as an alternative to {@link PointerTypedefBuilder} for
  * select use cases.  Once resolved this datatype is transformed into a 

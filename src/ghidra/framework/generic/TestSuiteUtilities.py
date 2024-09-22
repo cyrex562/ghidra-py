@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.exception.AssertException;
 import junit.framework.TestSuite;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * A set of static utilities to facilitate JUnit testing.
  */
 public class TestSuiteUtilities {

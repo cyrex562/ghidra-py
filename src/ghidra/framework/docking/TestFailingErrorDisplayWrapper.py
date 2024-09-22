@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.test.ConcurrentTestExceptionHandler;
 import ghidra.util.ErrorDisplay;
 import ghidra.util.ErrorLogger;
 
-/**
+# /**
  * An error display wrapper that allows us to fail tests when errors are encountered.  This is 
  * a way for us to fail for exceptions that come from client code, but are handled by the 
  * error display service, while running tests.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.assembler.sleigh.expr;
 
 import java.util.*;
 
-/**
+# /**
  * A type for solver hints
  * 
  * <p>

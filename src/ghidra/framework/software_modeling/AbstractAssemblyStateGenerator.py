@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.stream.Stream;
 import ghidra.app.plugin.assembler.sleigh.tree.AssemblyParseTreeNode;
 import ghidra.app.plugin.assembler.sleigh.util.DbgTimer;
 
-/**
+# /**
  * Base class for generating prototype nodes ("states") from a parse tree node
  *
  * @param <N> the type of parse tree node to process

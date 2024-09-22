@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import org.apache.commons.collections4.comparators.ComparableComparator;
 
-/**
+# /**
  * A tree-based implementation of a value-sorted map
  *
  * The underlying implementation is currently an unbalanced binary tree whose nodes also comprise a

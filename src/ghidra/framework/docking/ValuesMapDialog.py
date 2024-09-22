@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.HTMLUtilities;
 import ghidra.util.MessageType;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Dialog for displaying and editing values defined in a {@link GValuesMap}. The dialog consists
  * of an option message, followed by a list of name / value pairs. The name / value pairs will
  * be display in the order they were defined in the ValuesMap.

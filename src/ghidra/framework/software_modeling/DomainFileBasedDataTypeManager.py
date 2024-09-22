@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 
 import ghidra.framework.model.DomainFile;
 
-/**
+# /**
  * Extends DataTypeManager to provide methods specific to a data type manager stored as a domain file.
  */
 public interface DomainFileBasedDataTypeManager extends FileBasedDataTypeManager {

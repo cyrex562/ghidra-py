@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.CascadedDropTarget;
 import ghidra.util.HelpLocation;
 import help.HelpService;
 
-/**
+# /**
  * Wrapper class for user components. Adds the title, local toolbar and provides the drag target
  * functionality.
  */

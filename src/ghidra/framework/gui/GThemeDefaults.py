@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.awt.Color;
 import javax.swing.JPanel;
 import javax.swing.JViewport;
 
-/**
+# /**
  * This class contains many suitable default values for commonly used concepts.  See each static
  * class below.
  * <P>

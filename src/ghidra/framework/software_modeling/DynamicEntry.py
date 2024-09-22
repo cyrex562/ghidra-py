@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.VariableStorage;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * A HighSymbol mapping based on local hashing of the symbol's Varnode within a
  * function's syntax tree.  The storage address of a temporary Varnode (a Varnode in
  * the "unique" address space) is too ephemeral to use as a permanent way to identify it.

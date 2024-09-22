@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.HTMLUtilities;
 import ghidra.util.Swing;
 import resources.ResourceManager;
 
-/**
+# /**
  * <h2>Notes about how to use HTML safely:</h2>
  * Java's built-in HTML rendering in UI components is very useful, but can also introduce security
  * issues when a hostile actor is providing the text strings that are being rendered.

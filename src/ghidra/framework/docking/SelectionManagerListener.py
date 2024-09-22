@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.widgets.table;
 
-/**
+# /**
  * A listener that will get notified of selections made by the {@link SelectionManager}.
  */
 public interface SelectionManagerListener {

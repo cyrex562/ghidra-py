@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import generic.test.AbstractGTest;
 import generic.test.AbstractGuiTest;
 
-/**
+# /**
  * This class mainly serves as a conduit through which testing code can access some of the 
  * non-public internals of {@link DockingWindowManager}, without opening up its interface to the
  * public <b>and</b> without using reflective magic.

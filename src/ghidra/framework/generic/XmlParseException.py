@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.xml;
 
-/**
+# /**
  * Exception that gets thrown if there is a problem parsing XML.
  * <p>
  * NOTE: We used to use {@link javax.management.modelmbean.XMLParseException}

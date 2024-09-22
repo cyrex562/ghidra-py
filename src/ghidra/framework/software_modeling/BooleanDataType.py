@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.lang.DecompilerLanguage;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * Provides a definition of an Ascii byte in a program.
  */
 public class BooleanDataType extends AbstractUnsignedIntegerDataType {

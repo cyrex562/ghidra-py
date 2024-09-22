@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.symbol;
 
-/**
+# /**
  * Interface for references to external locations.
  */
 public interface ExternalReference extends Reference {

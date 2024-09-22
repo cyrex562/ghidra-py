@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.mem.*;
 import ghidra.util.Conv;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A dynamic data type that changes the number of elements it contains based on a count found in
  * header data type.
  * The data type has a header data type which will contain the number of base data types following

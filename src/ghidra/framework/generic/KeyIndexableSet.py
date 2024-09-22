@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.graph;
 
-/** Interface for sets of graph objects which have keys such as vertices
+# /** Interface for sets of graph objects which have keys such as vertices
  * and edges.
  * 
  * 

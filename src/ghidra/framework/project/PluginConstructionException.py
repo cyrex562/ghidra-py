@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.framework.plugintool.util;
 import ghidra.util.exception.UsrException;
 
  
-/**
+# /**
  * Exception thrown when a an error occurs during the construction
  * of a plugin. 
  *

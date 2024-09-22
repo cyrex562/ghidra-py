@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.List;
 
 import docking.Tool;
 
-/**
+# /**
  * An interface for objects (really Components) to implement that signals they provide actions 
  * for the Docking environment.  This interface will be called when the implementor is the source
  * of a Java event, like a MouseEvent.

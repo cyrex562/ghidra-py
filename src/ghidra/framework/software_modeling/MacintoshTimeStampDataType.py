@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.Msg;
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * A datatype to interpret the Mac OS timestamp
  * convention, which is based on the number of 
  * seconds measured from January 1, 1904.

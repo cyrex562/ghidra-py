@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import docking.widgets.filechooser.GhidraFileChooser;
 import docking.widgets.filechooser.GhidraFileChooserMode;
 import ghidra.util.filechooser.GhidraFileFilter;
 
-/**
+# /**
  * Bean editor to show a text field and a browse button to bring
  * up a File Chooser dialog. This editor is created as a result of
  * get/setFilename() on Options.

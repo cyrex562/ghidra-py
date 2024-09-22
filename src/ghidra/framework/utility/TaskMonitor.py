@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.task;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * <CODE>TaskMonitor</CODE> provides an interface that allows potentially long running tasks to show
  * progress and check for user has cancellation.
  * <p>

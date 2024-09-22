@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.docking.settings.Settings;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * DataTypeComponents are holders for the dataTypes that make up composite (Structures
  * and Unions) dataTypes.
  */

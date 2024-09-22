@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.stream.Stream;
 
 import ghidra.app.plugin.assembler.sleigh.util.DbgTimer;
 
-/**
+# /**
  * Base for a node in an assembly prototype
  */
 public abstract class AbstractAssemblyState {

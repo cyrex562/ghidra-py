@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import javax.swing.text.Caret;
 
 import org.apache.commons.lang3.StringUtils;
 
-/**
+# /**
  * A class that links text fields into a "formatted text field", separated by expressions.
  * 
  * <p>

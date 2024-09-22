@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.dialogs;
 
-/**
+# /**
  * <P>DialogComponentProvider that provides information to create a modal dialog
  * to prompt for a number (int) to be input by the user.</P>
  *

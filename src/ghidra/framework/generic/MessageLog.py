@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.util.Msg;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A simple class to handle logging messages and exceptions.  A maximum message count size 
  * constraint can be set to clip messages after a certain number, but still keep incrementing
  * a running total.

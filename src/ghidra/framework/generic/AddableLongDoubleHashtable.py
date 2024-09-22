@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.graph;
 import ghidra.util.datastruct.LongDoubleHashtable;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
 *
 * This class modifies the behavior of LongDoubleHashtable. May add
 * to the value stored with the key rather than replacing the value.

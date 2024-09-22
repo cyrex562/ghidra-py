@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.pcode;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/**
+# /**
  * An Encoder that holds its bytes in memory (where they can possibly be edited) and
  * can then finally write them all to an OutputStream via a call to writeTo()
  */

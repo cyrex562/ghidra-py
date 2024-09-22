@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.table.GTableCellRenderingData;
 import ghidra.docking.settings.Settings;
 import ghidra.util.DateUtils;
 
-/**
+# /**
  * A renderer for clients that wish to display a {@link Date} as a timestamp with the
  * date and time.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.model;
 
 import ghidra.framework.data.DomainObjectAdapterDB;
 
-/**
+# /**
  * An interface for listening to transactions
  */
 public interface TransactionListener {

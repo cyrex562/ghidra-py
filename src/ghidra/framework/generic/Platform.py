@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * Identifies the current platform (operating system and architecture) and
  * identifies the appropriate module OS directory which contains native binaries
  */

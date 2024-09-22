@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -25,7 +25,7 @@ import java.util.List;
 
 import docking.dnd.GenericDataFlavor;
 
-/**
+# /**
  * Defines a transferable 
  */
 public class VersionInfoTransferable implements Transferable, ClipboardOwner {

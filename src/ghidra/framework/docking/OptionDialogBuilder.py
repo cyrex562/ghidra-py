@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.Icon;
 
 import ghidra.util.Swing;
 
-/**
+# /**
  * Class for creating OptionDialogs using the builder pattern.
  *
  * <P>At a minimum, an OptionDialog requires a title and a message.  They can be specified

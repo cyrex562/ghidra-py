@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.WebColors;
 import ghidra.util.table.column.AbstractGColumnRenderer;
 import ghidra.util.table.column.GColumnRenderer;
 
-/**
+# /**
  * Table model for theme colors
  */
 public class ThemeColorTableModel extends GDynamicColumnTableModel<ColorValue, Object> {

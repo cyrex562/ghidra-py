@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
-/**
+# /**
  * {@link LazyImageIcon} that creates a reflected version of an icon. This creates a version of the
  * icon which has had either its x values reflected (left to right) or its y values reflected
  * (upside down)

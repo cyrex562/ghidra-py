@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.theme;
 
 import generic.theme.laf.UiDefaultsMapper;
 
-/**
+# /**
  * This class provides a set of IDs that can be used in the application, regardless of which Look
  * and Feel (LaF) is being used.
  * <P>

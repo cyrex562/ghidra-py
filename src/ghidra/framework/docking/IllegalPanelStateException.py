@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.wizard;
 
-/**
+# /**
  * <code>IllegalPanelStateException</code> allows unexpected IOExceptions and other errors
  * to be thrown during Wizard panel transitions
  */

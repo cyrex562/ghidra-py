@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.app.plugin.assembler.sleigh.symbol.AssemblySymbol;
 import ghidra.app.plugin.assembler.sleigh.symbol.AssemblyTerminal;
 import ghidra.generic.util.datastruct.TreeSetValuedTreeMap;
 
-/**
+# /**
  * Defines a context-free grammar, usually for the purpose of parsing mnemonic assembly instructions
  * 
  * <p>

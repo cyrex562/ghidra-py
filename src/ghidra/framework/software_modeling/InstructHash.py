@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Hashtable;
 
 import ghidra.program.model.listing.Instruction;
 
-/**
+# /**
  * This class is the container for hashing information about a particular instruction, including all the
  * n-grams it is currently involved in within the HashStore.
  *

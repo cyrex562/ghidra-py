@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.InputStream;
 import com.sun.jna.LastErrorException;
 import com.sun.jna.Memory;
 
-/**
+# /**
  * An input stream that wraps a native POSIX file descriptor
  * 
  * <p>

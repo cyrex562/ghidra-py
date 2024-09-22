@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util;
 
-/**
+# /**
  * Iterator over a set of Java-type long values.
  * 
  */

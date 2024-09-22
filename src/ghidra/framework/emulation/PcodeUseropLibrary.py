@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.pcodeCPort.slghsymbol.UserOpSymbol;
 import ghidra.program.model.pcode.Varnode;
 import ghidra.sleigh.grammar.Location;
 
-/**
+# /**
  * A "library" of p-code userops available to a p-code executor
  *
  * <p>

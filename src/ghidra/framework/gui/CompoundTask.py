@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.task;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Combines multiple Tasks into a single task.  All tasks should have the same cancel, progress, and modality.
  */
 public class CompoundTask extends Task {

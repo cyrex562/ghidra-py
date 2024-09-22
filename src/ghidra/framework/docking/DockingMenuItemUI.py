@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import javax.swing.plaf.MenuItemUI;
 
 import docking.util.GraphicsUtils;
 
-/**
+# /**
  * This class exists to make menu items display content with proper alignment whether or not
  * they are displaying an icon.  That is, this class will introduce padding for absent icons
  * within menu items so that the item lines up with those items that do contain icons.

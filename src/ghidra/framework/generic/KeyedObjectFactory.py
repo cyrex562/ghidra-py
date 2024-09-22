@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.graph;
 
-/** The KeyedObjectFactory class is responsible for ensuring that no two
+# /** The KeyedObjectFactory class is responsible for ensuring that no two
     vertices or edges have the same keys. One and only one instance of the 
     KeyedObjectFactory may exist. In addition to ensuring that all vertices 
     and edges contained within any graph have distinct keys, KeyedObjectFactory

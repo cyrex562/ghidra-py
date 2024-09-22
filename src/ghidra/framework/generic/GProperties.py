@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.xml.XmlUtilities;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Class for saving name/value pairs as XML or Json.  Classes that want to be
  * able to save their state can do so using the GProperies object.
  * The idea is that each state variable in the class

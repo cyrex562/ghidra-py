@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.main.logviewer.event;
 import java.util.Observable;
 import java.util.Observer;
 
-/**
+# /**
  * Extension of the Java {@link Observer} class that allows clients to send {@link FVEvent}
  * messages to subscribers.
  *

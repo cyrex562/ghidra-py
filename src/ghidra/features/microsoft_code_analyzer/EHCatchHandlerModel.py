@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,18 +17,18 @@ package ghidra.app.cmd.data.exceptionhandling;
 
 import static ghidra.app.util.datatype.microsoft.MSDataTypeUtils.*;
 
-import ghidra.app.cmd.data.*;
-import ghidra.app.util.datatype.microsoft.DataValidationOptions;
-import ghidra.app.util.datatype.microsoft.MSDataTypeUtils;
-import ghidra.program.model.address.Address;
-import ghidra.program.model.data.*;
-import ghidra.program.model.listing.Program;
-import ghidra.program.model.mem.MemBuffer;
-import ghidra.program.model.mem.MemoryAccessException;
-import ghidra.program.model.scalar.Scalar;
-import ghidra.util.exception.AssertException;
+# import ghidra.app.cmd.data.*;
+# import ghidra.app.util.datatype.microsoft.DataValidationOptions;
+# import ghidra.app.util.datatype.microsoft.MSDataTypeUtils;
+# import ghidra.program.model.address.Address;
+# import ghidra.program.model.data.*;
+# import ghidra.program.model.listing.Program;
+# import ghidra.program.model.mem.MemBuffer;
+# import ghidra.program.model.mem.MemoryAccessException;
+# import ghidra.program.model.scalar.Scalar;
+# import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Model for exception handling information about the HandlerType data type and its 
  * associated exception handling data types.
  * <br>

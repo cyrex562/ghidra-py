@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.framework.main.datatree.*;
 import ghidra.framework.model.DomainFile;
 import ghidra.framework.model.DomainFolder;
 
-/**
+# /**
  * Common methods appropriate for both the {@link FrontEndProjectTreeContext} and the
  * {@link DialogProjectTreeContext}.  The project tree actions require that the contexts be
  * separate even though they need many of the same methods. By extracting the methods to this

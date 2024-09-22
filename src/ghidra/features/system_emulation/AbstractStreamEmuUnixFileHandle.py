@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.emu.sys.EmuIOException;
 import ghidra.pcode.exec.PcodeArithmetic;
 import ghidra.program.model.lang.CompilerSpec;
 
-/**
+# /**
  * An abstract file descriptor having no "offset," typically for stream-like files
  *
  * @param <T> the type of values in the file

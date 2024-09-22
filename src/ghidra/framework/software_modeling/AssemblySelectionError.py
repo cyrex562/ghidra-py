@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.assembler;
 
-/**
+# /**
  * Thrown when a programmer selects an improper instruction during assembly
  */
 public class AssemblySelectionError extends AssemblyError {

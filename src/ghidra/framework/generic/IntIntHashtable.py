@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 package ghidra.util.datastruct;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  *     Class that implements a hashtable with int keys and int values.
  *     Because this class uses array of primitives
  *     to store the information, it serializes very fast.  This implementation uses

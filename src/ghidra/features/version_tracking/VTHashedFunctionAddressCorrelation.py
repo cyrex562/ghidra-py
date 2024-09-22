@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Wraps the HashedFunctionAddressCorrelation so that it can be used with version tracking.
  * This correlation attempts to provide a 1-1 map between the instructions of two similar functions.
  * @see HashedFunctionAddressCorrelation

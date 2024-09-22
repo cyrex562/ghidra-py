@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.widgets.button.BrowseButton;
 import docking.widgets.filechooser.GhidraFileChooser;
 import docking.widgets.filechooser.GhidraFileChooserMode;
 
-/**
+# /**
  * Value class for {@link File} types. FileValues can be used for either file or directory values,
  * depending on the constructor options. The editor component uses a {@link JTextField} with
  * a browse button for bringing up a {@link GhidraFileChooser} for picking files or directories.

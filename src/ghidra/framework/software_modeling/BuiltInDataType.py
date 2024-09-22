@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.docking.settings.Settings;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * NOTE:  ALL DATATYPE CLASSES MUST END IN "DataType".  If not,
  * the ClassSearcher will not find them.
  * 

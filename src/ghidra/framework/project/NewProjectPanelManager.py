@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.UserAccessException;
 
-/**
+# /**
  * Manage the panels for the "New Project" wizard. The wizard handles 
  * creating a local project and a "shared" project.
  * If the project is shared, the panel order is 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import edu.uci.ics.jung.visualization.transform.MutableTransformer;
 import ghidra.graph.viewer.*;
 import ghidra.graph.viewer.event.picking.GPickedState;
 
-/**
+# /**
  * A class that knows how and where a given vertex was clicked.  Further, this class knows how 
  * to get clicked components within a given vertex.
  *

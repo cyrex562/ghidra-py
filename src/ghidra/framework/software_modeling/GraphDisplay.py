@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.widgets.EventTrigger;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Interface for objects that display (or consume) graphs.  Normally, a graph display represents
  * a visual component for displaying and interacting with a graph.  Some implementation may not
  * be a visual component, but instead consumes/processes the graph (i.e. graph exporter). In this

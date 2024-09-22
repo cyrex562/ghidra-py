@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.lang.RegisterValue;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This is a generalized class for storing register values over ranges.  The values include mask bits
  * to indicate which bits within the register are being set.  The mask is stored along with the
  * value so the getValue method can indicate back which bits in the value are valid.  If existing

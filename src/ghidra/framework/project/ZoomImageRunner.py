@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -25,7 +25,7 @@ import javax.swing.Icon;
 import org.jdesktop.animation.timing.*;
 import org.jdesktop.animation.timing.interpolation.PropertySetter;
 
-/**
+# /**
  * A class to change the bounds of a given {@link ZoomedImagePainter} to make the Icon appear to 
  * grow and fade away over time.  This class handles setup for the painter and then makes changes
  *  on the painter by using callbacks from the {@link Animator}.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.pcode.struct.StructuredSleigh.RVal;
 import ghidra.pcode.struct.StructuredSleigh.UseropDecl;
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * A p-code userop invocation expression
  * 
  * <p>

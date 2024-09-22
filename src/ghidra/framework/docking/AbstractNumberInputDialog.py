@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.widgets.label.GDLabel;
 import docking.widgets.textfield.IntegerTextField;
 import ghidra.util.Swing;
 
-/**
+# /**
  * A base class for prompting users to enter a number into this dialog
  */
 public abstract class AbstractNumberInputDialog extends DialogComponentProvider {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.program.model.block;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressObjectMap;
 
-/**
+# /**
  * Provides a subroutine cache implementation.
  *
  * 

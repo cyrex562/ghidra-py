@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 
 import java.io.Serializable;
 
-/**
+# /**
  * Implements the Mask interface as a byte array.
  */
 public class MaskImpl implements Mask, Serializable {

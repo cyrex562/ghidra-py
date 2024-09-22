@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.Saveable;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  * DataStub can be extended for use by tests. It throws an UnsupportedOperationException
  * for all methods in the Data interface. Any method that is needed for your test can then
  * be overridden so it can provide its own test implementation and return value.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.DuplicateFileException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>LocalFileSystem</code> provides access to FolderItem's which
  * exist within a File-based directory structure.  Although FolderItem
  * caching is highly recommended, it is not provided by this implementation

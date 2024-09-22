@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.program.model.pcode.PcodeDataTypeManager;
 import ghidra.xml.*;
 
-/**
+# /**
  * Filter on a single meta data-type. Filters on TYPE_STRUCT or TYPE_FLOAT etc.
  * Additional filtering on size of the data-type can be configured.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.program.model.symbol.*;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * <code>VariableOffset</code> can be used as an operand or sub-operand representation
  * object.  The toString() method should be used to obtain the displayable representation
  * string.  This object is intended to correspond to a explicit or implicit register/stack 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.data;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * <code>CheckinHandler</code> facilitates application callbacks during
  * the check-in of a DomainFile.
  */

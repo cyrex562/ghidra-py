@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.listing;
 
-/**
+# /**
  * Exception thrown when attempting to replace one language in a program with another that
  * is not "address space" compatable.
  */

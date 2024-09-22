@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.util.exception.AssertException;
 import java.io.Serializable;
 import java.util.Iterator;
 
-/**
+# /**
  * This class converts arbitrary Strings into compacted int indexes suitable
  * for use as indexes into an array or table.  Whenever a new key is added,
  * the smallest unused index is allocated and associated with that key.

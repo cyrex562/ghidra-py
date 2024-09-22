@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 import java.util.*;
 
-/**
+# /**
  * <code>ObjectClass</code> provides a fixed-size long-key-based object cache.
  * Both a hard and weak cache are maintained, where the weak cache is only
  * limited by available memory.  This cache mechanism is useful in ensuring that

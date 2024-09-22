@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.docking.settings;
 
-/**
+# /**
  * Settings objects store name-value pairs.  Each SettingsDefinition defines one
  * or more names to use to store values in settings objects.  Exactly what type
  * of value and how to interpret the value is done by the SettingsDefinition object.

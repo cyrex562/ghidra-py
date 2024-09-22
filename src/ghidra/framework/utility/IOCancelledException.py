@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.exception;
 
 import java.io.IOException;
 
-/**
+# /**
  * An IO operation was cancelled by the user.
  */
 public class IOCancelledException extends IOException {

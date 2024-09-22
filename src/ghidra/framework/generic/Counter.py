@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.datastruct;
 
 import org.apache.commons.lang3.mutable.MutableInt;
 
-/**
+# /**
  * Simple class used to avoid immutable objects and autoboxing when storing changing integer 
  * primitives in a collection.
  */

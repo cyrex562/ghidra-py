@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.block.CodeBlockReference;
 import ghidra.program.model.block.CodeBlockReferenceIterator;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Attempt to disambiguate similar n-grams by looking at the parents, AND siblings, of blocks containing the n-grams.
  * This addresses switch constructions in particular, where code for individual cases look very similar but can be
  * distinguished by the ordering of the cases.

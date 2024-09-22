@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.filechooser.ExtensionFileFilter;
 import ghidra.util.layout.PairLayout;
 import resources.ResourceManager;
 
-/**
+# /**
  * Shows the modal dialog to save tool configuration to the current
  * name or to a new name.
  */

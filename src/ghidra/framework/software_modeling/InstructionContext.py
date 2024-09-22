@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * <code>InstructionContext</code> is utilized by a shared instruction prototype to
  * access all relevant instruction data and context-register storage needed during 
  * instruction parse and semantic pcode generation. 

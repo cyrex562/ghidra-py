@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.main.logviewer.model;
 
 import java.util.*;
 
-/**
+# /**
  * Stores all chunks read-in by the {@link ChunkReader}. The model is responsible for handling all
  * interaction with the list of chunks.
  *

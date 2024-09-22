@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package db;
 
-/**
+# /**
  * <code>DBRollbackException</code> thrown when a database transaction rollback was performed
  * during transaction termination.
  */

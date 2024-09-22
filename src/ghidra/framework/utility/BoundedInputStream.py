@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
+# /**
  * {@link InputStream} wrapper that limits itself to a portion of the wrapped stream.
  */
 public class BoundedInputStream extends InputStream {

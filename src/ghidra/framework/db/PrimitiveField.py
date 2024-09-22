@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package db;
 
-/**
+# /**
  * <code>PrimitiveField</code> provides a base implementation for
  * all primitive value {@link Field}s.  
  * <br>

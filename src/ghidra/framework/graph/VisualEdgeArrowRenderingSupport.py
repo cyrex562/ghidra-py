@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import edu.uci.ics.jung.visualization.RenderContext;
 import ghidra.graph.viewer.VisualEdge;
 import ghidra.graph.viewer.VisualVertex;
 
-/**
+# /**
  * Basic class to calculate the position of an edge arrow
  *
  * @param <V> the vertex type

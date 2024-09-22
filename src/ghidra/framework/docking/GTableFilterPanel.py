@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import help.HelpService;
 import utilities.util.reflection.ReflectionUtilities;
 import utility.function.Callback;
 
-/**
+# /**
  * This class is a panel that provides a label and text field that allows users to input text that
  * filters the contents of the table.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.function.*;
 
 import utility.function.Dummy;
 
-/**
+# /**
  * This class allows clients to run swing action at some point in the future, when the given
  * condition is met, allowing for the task to timeout.  While this class implements the
  * {@link GhidraTimer} interface, it is really meant to be used to execute a code snippet one

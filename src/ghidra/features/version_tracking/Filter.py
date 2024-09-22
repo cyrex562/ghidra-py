@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import generic.theme.GIcon;
 import ghidra.framework.options.SaveState;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * An interface to allow clients to provide a mechanism for filtering objects and to notify 
  * listeners when the state of the filter changes
  * 

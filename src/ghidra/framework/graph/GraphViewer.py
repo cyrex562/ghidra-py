@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import ghidra.graph.viewer.popup.*;
 import ghidra.graph.viewer.renderer.VisualGraphRenderer;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * The base viewer for the Graph module.   This viewer provides methods for manipulating
  * the graph using the mouse.
  * 

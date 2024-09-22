@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import edu.uci.ics.jung.visualization.control.TranslatingGraphMousePlugin;
 import edu.uci.ics.jung.visualization.transform.MutableTransformer;
 import ghidra.graph.viewer.*;
 
-/**
+# /**
  * Note: this class is based on {@link TranslatingGraphMousePlugin}.
  * <p>
  * TranslatingGraphMousePlugin uses a MouseButtonOne press and drag gesture to translate 

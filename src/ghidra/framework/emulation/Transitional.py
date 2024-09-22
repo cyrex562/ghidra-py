@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 
 package ghidra.lifecycle;
 
-/**
+# /**
  * The item is present for transitional purposes only and will soon be removed
  */
 public @interface Transitional {

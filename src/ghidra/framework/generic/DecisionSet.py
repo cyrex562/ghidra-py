@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package generic.constraint;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * The result object returned from a scan of a decision tree looking for property values that
  * match the constrains for some test object.
  */

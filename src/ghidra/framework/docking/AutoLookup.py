@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.function.Predicate;
 
 import org.apache.commons.lang3.StringUtils;
 
-/**
+# /**
  * A class that holds the logic and state for finding matching rows in a widget when a user types
  * in the widget.   This class was designed for row-based widgets, such as tables and lists.
  */

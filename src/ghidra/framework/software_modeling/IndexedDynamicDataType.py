@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.mem.*;
 import ghidra.util.Conv;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Indexed Dynamic Data Type template.  Used to create instances of the data type at
  * a given location in memory based on the data found there.
  * 

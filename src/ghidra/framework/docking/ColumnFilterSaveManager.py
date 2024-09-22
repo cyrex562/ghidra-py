@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.options.PreferenceState;
 import ghidra.framework.options.SaveState;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Loads and Save a list of ColumnTableFilters for a specific table to the tool
  *
  * @param <R> the row type of the table.

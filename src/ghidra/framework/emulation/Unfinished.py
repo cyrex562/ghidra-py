@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.lifecycle;
 
-/**
+# /**
  * This serves both as a marker interface for classes missing important methods and as container for
  * the {@link #TODO(String, Object...)} method.
  * 

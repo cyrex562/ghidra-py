@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.util;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Change record generated when a property on a code unit changes.
  */
 public class CodeUnitPropertyChangeRecord extends ProgramChangeRecord {

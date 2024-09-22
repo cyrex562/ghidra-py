@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.Msg;
 import utilities.util.FileResolutionResult;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Validate SLEIGH related XML configuration files: .cspec .pspec and .ldefs
  * 
  * A ResourceFile containing an XML document can be verified with one of the

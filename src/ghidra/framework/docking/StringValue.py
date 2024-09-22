@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.values;
 import javax.swing.JComponent;
 import javax.swing.JTextField;
 
-/**
+# /**
  * Value class for {@link String} values. 
  * <P>
  * This class and other subclasses of {@link AbstractValue} are part of a subsystem for easily

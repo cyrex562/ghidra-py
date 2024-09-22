@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package db;
 
-/**
+# /**
  * Table statistics data
  */
 public class TableStatistics {

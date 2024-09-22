@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.table.column.AbstractGhidraColumnRenderer;
 import resources.MultiIcon;
 import resources.icons.*;
 
-/**
+# /**
  * A renderer for the {@link VTMatch} to show an icon for its applied status
  */
 public class MatchMarkupStatusRenderer extends AbstractGhidraColumnRenderer<VTMatch> {

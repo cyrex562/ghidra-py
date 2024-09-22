@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <CODE>MultEntSubModel</CODE> (M-model) defines subroutines which do not share code with
  * any other subroutine and may have one or more entry points. Each entry-
  * points represent either a source or called entry-point.

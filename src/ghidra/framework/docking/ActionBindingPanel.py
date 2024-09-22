@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.*;
 import docking.widgets.checkbox.GCheckBox;
 import gui.event.MouseBinding;
 
-/**
+# /**
  * A panel that displays inputs for key strokes and mouse bindings.
  */
 public class ActionBindingPanel extends JPanel {

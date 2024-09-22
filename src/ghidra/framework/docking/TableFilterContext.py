@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table.constraint;
 
 import docking.widgets.table.GDynamicColumnTableModel;
 
-/**T
+# /**T
  * Provides additional information (context) to column filter constraint objects.  This  allows
  * the possibility for {@link ColumnConstraint} objects to make filtering decisions based on
  * information other than just the column value.  For example, the column value might be a key

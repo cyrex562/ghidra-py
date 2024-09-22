@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.main.logviewer.event.FVEvent;
 import ghidra.framework.main.logviewer.event.FVEvent.EventType;
 import ghidra.framework.main.logviewer.event.FVEventListener;
 
-/**
+# /**
  * Simple warning dialog for letting the user know when the input file has been updated. This 
  * includes an option allowing the user to opt-out of seeing subsequent pop-ups.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import javax.swing.JMenuItem;
 
 import docking.action.DockingActionIf;
 
-/**
+# /**
  * Common interface for MenuItemManager and MenuMangers that are sub-menus.
  */
 interface ManagedMenuItem {

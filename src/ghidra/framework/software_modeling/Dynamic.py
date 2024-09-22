@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.program.model.listing.Data;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * A DataType class that must compute its length based upon actual data.
  * This type may be referred to directly within a listing (including pointers).
  * This type may only appear within a structure if canSpecifyLength() returns 

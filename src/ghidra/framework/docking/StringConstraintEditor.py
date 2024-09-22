@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.widgets.table.constraint.ColumnConstraint;
 import docking.widgets.table.constraint.StringColumnConstraint;
 import generic.theme.GThemeDefaults.Colors.Messages;
 
-/**
+# /**
  * A constraint editor for String-type values.
  */
 public class StringConstraintEditor extends AbstractColumnConstraintEditor<String> {

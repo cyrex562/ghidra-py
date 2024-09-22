@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import resources.ResourceManager;
 
-/**
+# /**
  * Base class for DockingAction builders.
  * 
  * <p>Building an action requires a few steps.  One of the few required calls when using a builder

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.program.model.symbol.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Database implementation for the Data interface.
  *
  * NOTE!! DataComponents only have a unique key within its parent Struct/Array.  This places a constraint on

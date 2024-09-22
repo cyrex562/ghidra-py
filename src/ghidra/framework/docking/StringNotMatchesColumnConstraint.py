@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table.constraint;
 
 import ghidra.util.UserSearchUtils;
 
-/**
+# /**
  * String column constraint for matching column values if they do not match a full regular
  * expression pattern.
  */

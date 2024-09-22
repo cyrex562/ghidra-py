@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import db.DBLongIterator;
 import db.Table;
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Iterator of primary keys that are addresses. The longs returned are the address longs.
  */
 

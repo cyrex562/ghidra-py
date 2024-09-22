@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.widgets.AbstractGCellRenderer;
 import generic.theme.GColor;
 import generic.theme.GThemeDefaults.Colors.Palette;
 
-/**
+# /**
  * Provides a common implementation of a list renderer, for use in both JList and JComboBox.
  * <p>
  * HTML rendering defaults to disabled.  See {@link #setHTMLRenderingEnabled(boolean)}.

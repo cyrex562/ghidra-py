@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import java.util.List;
 import db.DBHandle;
 import db.DBRecord;
 
-/**
+# /**
  * Adapter needed for a read-only version of data type manager that is not going
  * to be upgraded, and there is no Data Type Archive ID table in the data type manager.
  */

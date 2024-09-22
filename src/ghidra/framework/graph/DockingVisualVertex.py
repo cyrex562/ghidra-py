@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import generic.theme.GColor;
 import ghidra.graph.viewer.VisualVertex;
 import ghidra.util.MathUtilities;
 
-/**
+# /**
  * A {@link VisualVertex} implementation that provides a component with a docking header that 
  * is clickable.
  */

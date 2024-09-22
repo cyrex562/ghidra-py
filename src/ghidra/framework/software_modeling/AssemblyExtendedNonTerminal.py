@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.assembler.sleigh.symbol;
 
 import ghidra.app.plugin.assembler.sleigh.grammars.AssemblyExtendedGrammar;
 
-/**
+# /**
  * The type of non-terminal for an "extended grammar"
  * 
  * @see AssemblyExtendedGrammar

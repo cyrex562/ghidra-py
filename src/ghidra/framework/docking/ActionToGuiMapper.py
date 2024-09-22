@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.menu.MenuGroupMap;
 import docking.menu.MenuHandler;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Manages the global actions for the menu and toolbar.
  */
 public class ActionToGuiMapper {

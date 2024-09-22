@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking;
 
-/**
+# /**
  * Provides notification when a text edit is completed.
  */
 public interface EditListener {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.reloc;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * A class to store the information needed for a single
  * program relocation.
  */

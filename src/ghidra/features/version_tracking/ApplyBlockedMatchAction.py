@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.feature.vt.gui.task.ApplyBlockedMatchTask;
 import ghidra.util.HTMLUtilities;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * The ApplyBlockedMatchAction allows the user to apply a match that is currently blocked.
  * It clears any conflicting matches that are currently accepted in order to apply the desired match.
  * The user is prompted to verify the conflicting matches should be cleared before proceeding.

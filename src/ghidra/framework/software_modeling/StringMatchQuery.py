@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 import db.DBRecord;
 import ghidra.util.UserSearchUtils;
 
-/**
+# /**
  * Query for matching string fields with wildcard string.
  */
 public class StringMatchQuery implements Query {

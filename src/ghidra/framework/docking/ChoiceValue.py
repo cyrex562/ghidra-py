@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import javax.swing.JComponent;
 
 import docking.widgets.combobox.GComboBox;
 
-/**
+# /**
  * Value class for selecting from a restricted set of {@link String}s. ChoiceValues uses a 
  * {@link GComboBox} for the editor component.
  * <P>

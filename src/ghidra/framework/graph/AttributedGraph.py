@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 import org.jgrapht.graph.AbstractBaseGraph;
 import org.jgrapht.graph.DefaultGraphType;
 
-/**
+# /**
  * Basic graph implementation for a directed graph whose vertices and edges support attributes.
  * <P>
  * The graph can be configured as to how to handle multiple edges with the same source and destination

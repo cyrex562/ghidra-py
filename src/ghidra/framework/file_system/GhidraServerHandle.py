@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.security.auth.Subject;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.login.LoginException;
 
-/**
+# /**
  * <code>GhidraServerHandle</code> provides access to a remote server.
  * This remote interface facilitates user login/authentication, providing
  * a more useful handle to the associated repository server.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.Reference;
 
-/**
+# /**
  * Correlates functions if they share forward references to previously accepted function matches.
  */
 public class FunctionReferenceProgramCorrelator extends VTAbstractReferenceProgramCorrelator {

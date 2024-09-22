@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.util.exception;
 
 
-/**
+# /**
  * Exception thrown if there is no value at a
  * requested index.
  */

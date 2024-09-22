@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin;
 import edu.uci.ics.jung.visualization.picking.PickedState;
 import ghidra.graph.viewer.*;
 
-/**
+# /**
  * Usage Notes:
  * <ul>
  * 		<li>We clear state on mouseReleased() and mouseExited(), since we will get 

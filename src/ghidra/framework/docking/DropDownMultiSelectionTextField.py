@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 
-/**
+# /**
  * Extension of the {@link DropDownSelectionTextField} that allows multiple items to be selected.
  * <p>
  * Note that multiple selection introduces some display complications that are not an issue with

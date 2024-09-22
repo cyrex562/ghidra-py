@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.graph.AbstractDependencyGraph;
 import ghidra.util.graph.DependencyGraph;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class to build an DependencyGraph base on a acyclic function call graph.  This is useful when
  * you want to process functions "bottom up".
  */

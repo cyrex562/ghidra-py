@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.plaf.nimbus.AbstractRegionPainter;
 
 import generic.theme.GColor;
 
-/**
+# /**
  * Nimbus selected tree row painter
  */
 public class SelectedTreePainter extends AbstractRegionPainter {

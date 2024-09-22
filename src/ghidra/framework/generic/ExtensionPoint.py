@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.classfinder;
 
-/**
+# /**
  * NOTE: ExtensionPoint logistics have changed! It is no longer sufficient to
  * implement ExtensionPoint in order for the ClassSearcher to dynamically pick
  * up your class. Your class also needs to conform to a class name suffix rule.

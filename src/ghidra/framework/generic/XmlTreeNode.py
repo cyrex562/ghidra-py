@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import java.util.LinkedList;
 
 import org.xml.sax.SAXParseException;
 
-/**
+# /**
  * A class to represent a corresponding start and end tag. This value is one
  * node on the XML parse tree.
  * 

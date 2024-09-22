@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.widgets.EventTrigger;
 import docking.widgets.fieldpanel.field.Field;
 import docking.widgets.fieldpanel.support.*;
 
-/**
+# /**
  * Contains all the code for implementing the AccessibleFieldPanel which is an inner class in
  * the FieldPanel class. The AccessibleFieldPanel has to be declared as an inner class because
  * it needs to extends AccessibleJComponent which is a non-static inner class of JComponent. 

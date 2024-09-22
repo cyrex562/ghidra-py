@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.ProgramChangeSet;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * Implementation of AddressSetCollection used by {@link ProgramChangeSet}.  It contains the
  * actual instances of the addressSets used by the {@link ProgramChangeSet} and protects access
  * to them by synchronizing on the ProgramChangeSet.

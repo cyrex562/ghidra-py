@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.exception.NotFoundException;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
-/**
+# /**
  * <code>InjectPayloadSleigh</code> defines an InjectPayload of p-code which is defined via
  * a String passed to the sleigh compiler
  */

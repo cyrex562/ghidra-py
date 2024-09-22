@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package docking;
 
 import java.awt.Component;
 
-/** 
+# /** 
  * A factory for installing drop handlers onto components.
  */
 public interface DropTargetFactory {

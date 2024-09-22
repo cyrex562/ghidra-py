@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.*;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Custom Ghidra URL class loader which exposes the addURL method so we can add to the classpath
  * at runtime.  
  * <p>

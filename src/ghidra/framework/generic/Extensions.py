@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.apache.logging.log4j.Logger;
 
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * A collection of all extensions found.  This class provides methods processing duplicates and
  * managing extensions marked for removal.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <code>ContextChangeException</code> indicates that an illegal change to
  * program context has been attempted.
  */

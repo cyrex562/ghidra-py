@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Arrays;
 
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * <code>Record</code> provides a portable container for data
  * associated with a fixed schema.  
  * A record instance contains both a primary key and zero or more data fields.  

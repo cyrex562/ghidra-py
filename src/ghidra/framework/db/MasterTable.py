@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
+# /**
  * MasterTable manages data pertaining to all other tables within the database - 
  * this includes index tables.
  * The first buffer associated with this table is managed by the DBParms 

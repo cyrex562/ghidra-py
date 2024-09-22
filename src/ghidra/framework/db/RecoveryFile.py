@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.datastruct.IntIntHashtable;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  * <code>VersionFile</code> records buffer changes and parameters necessary to reconstruct an
  * older version of a LocalBufferFile.
  */

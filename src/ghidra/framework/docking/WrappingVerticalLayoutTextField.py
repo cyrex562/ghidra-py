@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.fieldpanel.field;
 
 import docking.widgets.fieldpanel.support.*;
 
-/**
+# /**
  * A text field meant to take a string of text and wrap as needed.
  */
 public class WrappingVerticalLayoutTextField extends VerticalLayoutTextField {

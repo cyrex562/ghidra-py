@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.*;
 import ghidra.util.task.TaskLauncher;
 
-/**
+# /**
  * Version tracking wizard panel to create a new session.
  */
 public class NewSessionPanel extends AbstractMageJPanel<VTWizardStateKey> {

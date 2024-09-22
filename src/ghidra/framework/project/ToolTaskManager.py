@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.datastruct.PriorityQueue;
 import ghidra.util.exception.RollbackException;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Manages a queue of background tasks that execute commands.
  */
 public class ToolTaskManager implements Runnable {

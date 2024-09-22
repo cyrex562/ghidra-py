@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import ghidra.util.task.TaskMonitor;
 import resources.MultiIcon;
 import resources.icons.TranslateIcon;
 
-/**
+# /**
  * {@link GhidraFileData} provides the managed object which represents a project file that 
  * corresponds to matched {@link FolderItem} pair across both a versioned and private 
  * filesystem and viewed as a single file at the project level.  This class closely mirrors the
@@ -2435,7 +2435,7 @@ public class GhidraFileData {
 
 }
 
-/**
+# /**
  * {@link VersionIcon} is the base icon for files which exist within the versioned filesystem.
  */
 class VersionIcon implements Icon {

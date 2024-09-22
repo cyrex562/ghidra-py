@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.JFormattedTextField;
 import javax.swing.JFormattedTextField.AbstractFormatter;
 import javax.swing.text.DefaultFormatterFactory;
 
-/**
+# /**
  * Bounded range factory for formatters with a min and max allowed value.
  */
 public class BoundedRangeDecimalFormatterFactory extends DefaultFormatterFactory {

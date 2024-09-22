@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import javax.swing.*;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
-/**
+# /**
  * A GUI that provides a filterable table.  You are required to provide the method names
  * of <code>T</code> that should be used to create columns in the table.
  *

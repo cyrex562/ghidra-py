@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.Msg;
 import utilities.util.reflection.ReflectionUtilities;
 import utility.function.Dummy;
 
-/**
+# /**
  * Class to pass to a thread pool that will consume all output from an external process.  This is
  * a {@link Runnable} that get submitted to a thread pool.  This class records the data it reads
  */

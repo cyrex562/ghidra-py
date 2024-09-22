@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.util.xml.XmlAttributeException;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * Convenience class that converts XML attributes into typed property values.
  */
 public class ConstraintData {

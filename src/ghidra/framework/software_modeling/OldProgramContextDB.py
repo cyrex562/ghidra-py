@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.Lock;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>ProgramContextDB</code> defines a processor context over an address 
  * space using database range maps for storage.
  */
@@ -490,7 +490,7 @@ class SimpleAddressRangeIterator implements AddressRangeIterator {
 
 }
 
-/**
+# /**
  * Represents a register value over a range of addresses.
  */
 class RegisterValueRange {

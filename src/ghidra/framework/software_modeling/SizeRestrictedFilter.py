@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
-/**
+# /**
  * A common base class for data-type filters that tests for a size range.
  * Any filter that inherits from this, can use ATTRIB_MINSIZE and ATTRIB_MAXSIZE
  * to place bounds on the possible sizes of data-types.  The bounds are enforced

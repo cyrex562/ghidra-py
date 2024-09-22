@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.Icon;
 
 import utility.function.Callback;
 
-/**
+# /**
  * Interface for the GhidraFileChooser data model.
  * This allows the GhidraFileChooser to operate
  * on files from different sources, other than

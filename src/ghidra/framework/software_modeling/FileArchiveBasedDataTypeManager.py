@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * Extends DataTypeManager to provide methods specific to file data type archives (.gdt).
  */
 public interface FileArchiveBasedDataTypeManager extends FileBasedDataTypeManager {

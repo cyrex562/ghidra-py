@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.util.layout.VerticalLayout;
 import resources.Icons;
 import utility.function.Callback;
 
-/**
+# /**
  * Dialog for creating and editing column table filters.
  *
  * @param <R> the row type of the table being filtered.

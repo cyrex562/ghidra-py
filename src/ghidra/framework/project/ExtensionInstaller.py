@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.extensions.*;
 import ghidra.util.task.TaskLauncher;
 import utility.application.ApplicationLayout;
 
-/**
+# /**
  * Utility class for managing Ghidra Extensions.
  * <p>
  * Extensions are defined as any archive or folder that contains an <code>extension.properties</code>

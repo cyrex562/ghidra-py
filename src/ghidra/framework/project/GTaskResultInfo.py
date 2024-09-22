@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.task.gui;
 
 import ghidra.framework.task.GTaskResult;
 
-/**
+# /**
  * An item that wraps {@link GTaskResult}s that are to be put into JLists in order to add more
  * information.
  */

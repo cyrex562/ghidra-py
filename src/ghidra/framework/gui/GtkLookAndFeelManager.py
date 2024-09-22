@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import javax.swing.UIDefaults;
 import generic.theme.ApplicationThemeManager;
 import generic.theme.LafType;
 
-/**
+# /**
  * {@link LookAndFeelManager} for GTK
  */
 public class GtkLookAndFeelManager extends LookAndFeelManager {

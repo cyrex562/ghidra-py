@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.JComponent;
 
 import docking.util.GraphicsUtils;
 
-/**
+# /**
  * An object that wraps a string and provides data that describes how to render
  * that string.
  * <p>

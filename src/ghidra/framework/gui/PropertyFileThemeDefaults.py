@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.jar.ResourceFile;
 import ghidra.framework.Application;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Loads all the system theme.property files that contain all the default color, font, and
  * icon values.
  */

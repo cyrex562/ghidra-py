@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.datastruct;
 
-/**
+# /**
  * Base interface for Defining methods for managing a "virtual" array of some data type.
  * Any access of an Array with an index that has never been set will return 0 
  * (or something like that depending on the data type)

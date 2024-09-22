@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -22,7 +22,7 @@ import java.io.IOException;
 
 import db.DBLongIterator;
 
-/**
+# /**
  * Adapter to get an iterator over keys in a table.
  * 
  * 

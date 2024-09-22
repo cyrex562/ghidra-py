@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 import docking.widgets.table.constraint.provider.EditorProvider;
 import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 
-/**
+# /**
  * Abstract base class for single value constraints such as "At Most" or "At Least"
  *
  * @param <T> the column type

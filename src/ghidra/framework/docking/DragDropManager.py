@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -22,7 +22,7 @@ import java.awt.datatransfer.Transferable;
 import java.awt.dnd.DropTargetDragEvent;
 
 
-/**
+# /**
  * Interface used by the DragDropTree to know how to handle the
  * drag and drop operations.
  */

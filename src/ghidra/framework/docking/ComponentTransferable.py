@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import org.apache.logging.log4j.Logger;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Defines data that is available for drag/drop and clipboard transfers.
  * The data is a CompProv object which is just a holder for a owner and name for a component.
  */

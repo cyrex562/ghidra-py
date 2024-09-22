@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.widgets.table.threaded;
 
-/**
+# /**
  * A package-level listener for the ThreadedTableModel to know when incremental load jobs are
  * finished.
  */

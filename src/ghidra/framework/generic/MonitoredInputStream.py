@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.InputStream;
 import ghidra.util.exception.IOCancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An InputStream which utilizes a TaskMonitor to indicate input progress and
  * allows the operation to be cancelled via the TaskMonitor.  If monitor is
  * cancelled any susequent read will generate a {@link IOCancelledException}.

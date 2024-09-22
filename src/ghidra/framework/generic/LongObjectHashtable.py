@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.util.datastruct;
 import java.io.Serializable;
 
-/**
+# /**
  *     Class that implements a hashtable with long keys and Object values.
  */
 

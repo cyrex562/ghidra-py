@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.block.graph;
 
 import ghidra.program.model.block.CodeBlock;
 
-/**
+# /**
  * A class for representing a code block within a graph.
  */
 public class CodeBlockVertex implements Comparable<CodeBlockVertex> {

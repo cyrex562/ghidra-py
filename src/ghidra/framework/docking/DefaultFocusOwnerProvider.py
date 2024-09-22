@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking;
 
 import java.awt.*;
 
-/**
+# /**
  * Uses Java's default focus manager to provide the focus owner.
  */
 public class DefaultFocusOwnerProvider implements FocusOwnerProvider {

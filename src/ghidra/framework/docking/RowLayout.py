@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.fieldpanel.internal.FieldBackgroundColorManager;
 import docking.widgets.fieldpanel.internal.LayoutBackgroundColorManager;
 import docking.widgets.fieldpanel.internal.PaintContext;
 
-/**
+# /**
  * RowLayout handles a single row layout that may be part of a multiple row layout that
  * is generic enough to be used by the SingleRowLayout or the MultiRowLayout.
  */

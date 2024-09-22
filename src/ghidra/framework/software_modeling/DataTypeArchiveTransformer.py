@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.exception.*;
 import ghidra.util.task.*;
 
-/**
+# /**
  * DataTypeArchiveTransformer changes (transforms) a new archive file so that it appears to be
  * an updated copy of a previously existing data type archive. This allows us to parse a new
  * version of each standard GDT file we supply. This class changes the IDs on the data types

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.util.exception.InvalidInputException;
 import ghidra.xml.*;
 
-/**
+# /**
  *  A rule controlling how parameters are assigned addresses
  *  
  *  Rules are applied to a parameter in the context of a full function prototype.

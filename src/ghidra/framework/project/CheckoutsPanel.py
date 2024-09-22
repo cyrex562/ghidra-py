@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.framework.remote.User;
 import ghidra.framework.store.ItemCheckoutStatus;
 
-/**
+# /**
  * Panel that shows check out information for a domain file.
  */
 public class CheckoutsPanel extends JPanel {

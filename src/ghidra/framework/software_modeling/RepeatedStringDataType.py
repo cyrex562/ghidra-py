@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * Some number of repeated strings.  Each string can be of variable length.
  * 
  * The data structure looks like this:

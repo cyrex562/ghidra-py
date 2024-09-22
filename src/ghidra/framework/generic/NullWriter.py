@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package generic.io;
 import java.io.IOException;
 import java.io.Writer;
 
-/**
+# /**
  * An implementation of {@link Writer} to use when you wish to not use any writing, but to also
  * avoid null checks.
  */

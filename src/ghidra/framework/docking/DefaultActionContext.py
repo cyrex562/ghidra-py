@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 
-/**
+# /**
  * The default implementation of ActionContext
  */
 public class DefaultActionContext implements ActionContext {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.actions.KeyBindingUtils;
 import ghidra.framework.options.ActionTrigger;
 import gui.event.MouseBinding;
 
-/**
+# /**
  * A class for storing an action's key stroke, mouse binding or both.
  * <p>
  * Note: this class creates key strokes that work on key {@code pressed}.  This effectively

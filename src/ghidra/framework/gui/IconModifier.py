@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import resources.MultiIcon;
 import resources.ResourceManager;
 import resources.icons.*;
 
-/**
+# /**
  * Class that can transform one icon into another. Useful for scaling, translating, disabling,
  * or overlaying an icon.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Exception thrown if a data type does not allow its name to be changed.
  */
 public class IllegalRenameException extends UsrException {

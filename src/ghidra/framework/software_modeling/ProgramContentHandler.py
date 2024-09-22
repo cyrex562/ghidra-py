@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>ProgramContentHandler</code> converts between Program instantiations
  * and FolderItem storage.  This class also produces the appropriate Icon for 
  * Program files.

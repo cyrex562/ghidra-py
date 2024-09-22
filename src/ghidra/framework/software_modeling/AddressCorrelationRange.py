@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressRange;
 
-/**
+# /**
  * A simple object that holds an {@link AddressCorrelation} address range and then name of the 
  * correlation.s
  */

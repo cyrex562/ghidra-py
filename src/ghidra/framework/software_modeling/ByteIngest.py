@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.pcode;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
+# /**
  * An object that can ingest bytes from a stream in preparation for decoding
  */
 public interface ByteIngest {

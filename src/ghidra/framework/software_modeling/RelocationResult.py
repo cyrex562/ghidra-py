@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.reloc;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.reloc.Relocation.Status;
 
-/**
+# /**
  * {@link RelocationResult} provides the status and byte-length of a processed relocation during
  * the {@link Program} load process.  Intended to be used internally by a relocation handler.  
  * A positive byte-length is only required for a status of {@link Status#APPLIED} or 

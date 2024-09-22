@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.framework.store.FileSystem;
 
 import java.io.IOException;
 
-/**
+# /**
  * <code>RepositoryItemStatus</code> provides status information for a 
  * repository folder item.
  */

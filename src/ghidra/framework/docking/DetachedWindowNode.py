@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.framework.OperatingSystem;
 import ghidra.framework.Platform;
 import ghidra.util.bean.GGlassPane;
 
-/**
+# /**
  * Node class for managing a component hierarchy in its own sub-window. (currently uses a JDialog)
  */
 class DetachedWindowNode extends WindowNode {

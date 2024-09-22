@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.HelpTopics;
 import ghidra.util.HelpLocation;
 import resources.Icons;
 
-/**
+# /**
  * Action to save the current Diff Apply Settings as the new defaults to be used when new Diffs are started.
  */
 class SaveApplySettingsAction extends DockingAction {

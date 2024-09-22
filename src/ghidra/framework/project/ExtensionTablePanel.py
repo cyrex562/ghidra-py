@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.extensions.ExtensionDetails;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Container for the {@link GTable} that displays ghidra extensions.
  */
 public class ExtensionTablePanel extends JPanel {

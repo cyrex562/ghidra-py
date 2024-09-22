@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.io.IOException;
 
 import db.*;
 
-/**
+# /**
  * Database adapter implementation for Functions.
  * Handles three tables: Functions, Stack Variables, and Register Variables.
  */

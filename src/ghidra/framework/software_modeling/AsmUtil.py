@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.assembler.sleigh.util;
 
 import java.util.*;
 
-/**
+# /**
  * Utilities for the Assembler
  */
 public class AsmUtil {

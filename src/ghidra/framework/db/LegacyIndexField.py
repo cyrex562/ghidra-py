@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package db;
 
-/**
+# /**
  * <code>LegacyIndexField</code> supports legacy index tables where the indexed
  * field was a {@link LongField} and improperly employed a variable-length
  * index storage scheme when the primary key was a LongField.

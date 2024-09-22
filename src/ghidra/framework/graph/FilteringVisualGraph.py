@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.graph.viewer.layout.VisualGraphLayout;
 import util.CollectionUtils;
 import utility.function.Callback;
 
-/**
+# /**
  * A graph implementation that allows clients to mark vertices and edges as filtered.  When
  * filtered, a vertex is removed from this graph, but kept around for later unfiltering. Things
  * of note:

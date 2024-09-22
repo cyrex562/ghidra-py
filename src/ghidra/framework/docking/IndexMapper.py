@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.math.BigInteger;
 
 import docking.widgets.fieldpanel.FieldPanel;
 
-/**
+# /**
  * Interface for mapping indexes when the LayoutModel changes. In other words, if the mapping
  * of layout indexes to some data model changes and you want the {@link FieldPanel} to continue
  * to display the same model data on the screen, the IndexMapper can be used to convert old

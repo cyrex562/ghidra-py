@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Map;
 
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Class for representing file object regardless of whether they are actual files in the file system or
  * or files stored inside of a jar file.  This class provides most all the same capabilities as the
  * File class.

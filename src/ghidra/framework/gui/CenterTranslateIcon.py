@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package resources.icons;
 
 import javax.swing.Icon;
 
-/**
+# /**
  * An icon that will update it's x,y offset to be centered over another, presumably larger
  * icon.
  */

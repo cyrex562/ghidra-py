@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * NOTE:  ALL DATATYPE CLASSES MUST END IN "DataType".  If not,
  * the ClassSearcher will not find them.
  * 

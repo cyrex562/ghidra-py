@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.graph.viewer.layout.VisualGraphLayout;
 import ghidra.graph.viewer.shape.GraphLoopShape;
 import ghidra.graph.viewer.vertex.VisualGraphVertexShapeTransformer;
 
-/**
+# /**
  * This class houses various methods for translating location and size data from the various
  * graph coordinate spaces.
  * 

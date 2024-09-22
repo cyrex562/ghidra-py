@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.graph.VisualGraphComponentProvider;
 import ghidra.graph.viewer.VisualEdge;
 import ghidra.graph.viewer.VisualVertex;
 
-/**
+# /**
  * An interface that represents a sub-feature of a {@link VisualGraphComponentProvider}.  This
  * allows the base provider to have a set of features ready to be installed by subclasses.
  */

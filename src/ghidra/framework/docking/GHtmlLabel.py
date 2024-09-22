@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.checkbox.GHtmlCheckBox;
 import ghidra.util.Msg;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * An immutable label (the text can NOT be changed), with HTML rendering allowed.
  * <p>
  * Clients do not need to prefix label text with "&lt;html&gt;", as is required for a standard

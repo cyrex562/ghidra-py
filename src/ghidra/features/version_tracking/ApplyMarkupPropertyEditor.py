@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -43,7 +43,7 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.util.layout.*;
 import help.HelpService;
 
-/**
+# /**
  * The ApplyMarkupPropertyEditor provides a custom GUI layout for the options that are used when
  * applying version tracking markup.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package utility.function;
 
 import java.util.function.*;
 
-/**
+# /**
  * A utility class to help create dummy stub functional interfaces
  */
 public class Dummy {

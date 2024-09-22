@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import docking.widgets.label.GDLabel;
 import generic.theme.Gui;
 import ghidra.util.Swing;
 
-/**
+# /**
  * Property Editor for editing {@link Font}s
  */
 public class FontPropertyEditor extends PropertyEditorSupport {

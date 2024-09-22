@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import org.bouncycastle.crypto.params.RSAKeyParameters;
 import org.bouncycastle.crypto.signers.*;
 import org.bouncycastle.util.Strings;
 
-/**
+# /**
  * <code>SSHSignatureCallback</code> provides a Callback implementation used
  * to perform SSH authentication.  This callback is instantiated
  * by the server with a random token which must be signed using the 

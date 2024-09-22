@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.*;
 import docking.util.AnimatedIcon;
 import generic.theme.GIcon;
 
-/**
+# /**
  * Panel that displays an animation of a spinning hourglass
  */
 public class HourglassAnimationPanel extends JPanel {

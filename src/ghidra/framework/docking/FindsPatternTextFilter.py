@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.filter;
 
 import java.util.regex.Pattern;
 
-/**
+# /**
  * A text filter that uses a pattern and performs a 'find' using that pattern.
  */
 public class FindsPatternTextFilter extends AbstractPatternTextFilter {

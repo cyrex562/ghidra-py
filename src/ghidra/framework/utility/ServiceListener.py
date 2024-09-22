@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.plugintool.util;
 
-/**
+# /**
  * Notifications for when services are added to or removed from a PluginTool. 
  */
 public interface ServiceListener {

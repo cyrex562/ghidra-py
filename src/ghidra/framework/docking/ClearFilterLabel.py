@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.SystemUtilities;
 import resources.Icons;
 import resources.ResourceManager;
 
-/**
+# /**
  * A label that displays an icon that, when clicked, will clear the contents of the 
  * associated filter.
  */

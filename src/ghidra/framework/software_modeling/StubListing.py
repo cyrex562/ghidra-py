@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.model.util.PropertyMap;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * ListingStub can be extended for use by tests. It throws an UnsupportedOperationException
  * for all methods in the Listing interface. Any method that is needed for your test can then
  * be overridden so it can provide its own test implementation and return value.

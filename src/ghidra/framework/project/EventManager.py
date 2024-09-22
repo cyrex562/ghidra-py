@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.framework.plugintool.util.PluginEventListener;
 import ghidra.util.Msg;
 import ghidra.util.Swing;
 
-/**
+# /**
  * Helper class to manage the events that plugins consume and produce. This class keeps track of the
  * last events that went out so that when a plugin is added, it receives those events.
  */

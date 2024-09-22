@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.filechooser;
 
-/**
+# /**
  * Marker file to signal that this object is a entry in the user's 'recently used' list
  */
 class RecentGhidraFile extends GhidraFile {

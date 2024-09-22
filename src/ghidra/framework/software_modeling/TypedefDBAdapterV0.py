@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.UniversalID;
 import ghidra.util.UniversalIdGenerator;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Version 0 implementation for accessing the Typedef database table. 
  */
 class TypedefDBAdapterV0 extends TypedefDBAdapter implements RecordTranslator {

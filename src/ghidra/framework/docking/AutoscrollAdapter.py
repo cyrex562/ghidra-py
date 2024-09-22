@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -25,7 +25,7 @@ import java.awt.dnd.Autoscroll;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 
-/**
+# /**
  * Helper class for autoscrolling on a component.
  * 
  */

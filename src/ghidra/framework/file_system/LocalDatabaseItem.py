@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>LocalDatabaseItem</code> provides a FolderItem implementation
  * for a local database.  This item wraps an underlying VersionedDatabase
  * if the file-system is versioned, otherwise a PrivateDatabase is wrapped.

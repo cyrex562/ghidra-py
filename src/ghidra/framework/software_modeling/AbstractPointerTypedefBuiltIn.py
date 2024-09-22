@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.UniversalID;
 import ghidra.util.UniversalIdGenerator;
 
-/**
+# /**
  * <code>AbstractPointerTypedefDataType</code> provides an abstract {@link BuiltIn} datatype 
  * implementation for a pointer-typedef datatype.
  */

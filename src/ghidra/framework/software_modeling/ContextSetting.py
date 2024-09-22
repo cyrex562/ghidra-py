@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.pcode.AddressXML;
 import ghidra.program.model.pcode.Encoder;
 import ghidra.xml.*;
 
-/**
+# /**
  * Class for context configuration information as
  * part of the compiler configuration (CompilerSpec)
  */

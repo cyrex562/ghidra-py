@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.ActionContext;
 import docking.DockingWindowManager;
 import ghidra.util.Swing;
 
-/**
+# /**
  * An action to trigger a context menu over the focus owner.  This allows context menus to be
  * triggered from the keyboard.
  */

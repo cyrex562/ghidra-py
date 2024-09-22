@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.app.plugin.assembler.sleigh.sem;
 
 import java.util.List;
 
-/**
+# /**
  * A {@link AssemblyResolution} indicating the occurrence of a (usually semantic) error
  * 
  * <p>

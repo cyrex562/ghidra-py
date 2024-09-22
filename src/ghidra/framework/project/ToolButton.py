@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,7 +44,7 @@ import help.HelpService;
 import util.CollectionUtils;
 import utility.function.Dummy;
 
-/**
+# /**
  * Component that is a drop target for a DataTreeTransferable object.
  * If the object contains a domain file that is supported by a tool of
  * this tool template, then a tool is launched with the data in it.

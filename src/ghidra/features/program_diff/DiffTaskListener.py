@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.diff;
 
-/** A simple listener to allow signalling when a diff tasks starts and ends */
+# /** A simple listener to allow signalling when a diff tasks starts and ends */
 public interface DiffTaskListener {
 
 	public static DiffTaskListener NULL_LISTENER = new DiffTaskListener() {

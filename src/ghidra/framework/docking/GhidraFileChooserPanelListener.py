@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package docking.widgets.filechooser;
 
 import java.io.File;
 
-/**
+# /**
  * A listener for notifying when the file in the file chooser panel have changed.
  * 
  */

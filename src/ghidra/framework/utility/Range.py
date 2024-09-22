@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 import java.util.Iterator;
 import java.util.stream.IntStream;
 
-/**
+# /**
  * A class for holding a minimum and maximum signed int values that define a range.
  */
 public class Range implements Comparable<Range>, Iterable<Integer> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.CodeUnit;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * The <CODE>EolCommentFieldLocation</CODE> class contains specific location information
  * within the EOL comment field of a CodeUnitLocation object.
  */

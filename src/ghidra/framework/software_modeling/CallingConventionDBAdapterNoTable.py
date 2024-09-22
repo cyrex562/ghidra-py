@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.function.Consumer;
 
 import javax.help.UnsupportedOperationException;
 
-/**
+# /**
  * Adapter when no Calling Convention table exists.
  */
 class CallingConventionDBAdapterNoTable extends CallingConventionDBAdapter {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking;
 import java.util.*;
 import java.util.Map.Entry;
 
-/**
+# /**
  * A class that tracks:
  * <ul>
  *  	<li>placeholders that are being used for a given provider</li>

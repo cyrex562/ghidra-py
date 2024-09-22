@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Interface for bookmarks.  Bookmarks are locations that are marked within the program so
  * that they can be easily found.
  */

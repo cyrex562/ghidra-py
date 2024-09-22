@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.feature.vt.api.main;
 
-/**
+# /**
  * VTMatchTag is the interface for the user defined tags that can be set on a version tracking match.
  */
 public interface VTMatchTag extends Comparable<VTMatchTag> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.graph.viewer;
 
 import ghidra.graph.viewer.edge.VisualGraphPathHighlighter;
 
-/**
+# /**
  * An enum that lists possible states for highlighting paths between vertices in a graph. 
  * 
  * @see VisualGraphPathHighlighter

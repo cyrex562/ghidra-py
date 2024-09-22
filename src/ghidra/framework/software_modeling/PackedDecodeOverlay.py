@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.pcode;
 
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Alter address space decoding for a specific overlay space.
  * Any decoded space that matches the overlayed space is replaced with the overlay itself.
  * This causes addresses in the overlayed space to be converted into overlay addresses.

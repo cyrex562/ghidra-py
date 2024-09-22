@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 import utilities.util.FileResolutionResult;
 
-/**
+# /**
  * Searches resources for spec files and provides LanguageDescriptions for these
  * specifications
  */

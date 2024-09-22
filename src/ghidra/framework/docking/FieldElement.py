@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.JComponent;
 
 import docking.widgets.fieldpanel.support.RowColLocation;
 
-/**
+# /**
  * Used by {@link Field}s to combine text, attributes and location information (for example to and
  * from screen and data locations).  FieldFactory classes can use the various implementations
  * of this interface, or create new ones, to include additional information specific to the fields

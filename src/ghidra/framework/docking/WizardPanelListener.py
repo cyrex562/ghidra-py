@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.wizard;
 
-/**
+# /**
  * Listener that is called when something on the WizardPanel has
  * changed.
  */

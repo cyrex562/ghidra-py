@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.address.*;
 import ghidra.program.model.symbol.OffsetReference;
 import ghidra.util.NamingUtilities;
 
-/**
+# /**
  * Interface that defines a block in memory.
  */
 public interface MemoryBlock extends Serializable, Comparable<MemoryBlock> {

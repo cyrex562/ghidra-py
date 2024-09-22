@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,20 +15,20 @@
  */
 package ghidra.app.plugin.core.debug.gui.console;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.List;
+# import java.awt.Color;
+# import java.awt.Component;
+# import java.awt.event.ActionEvent;
+# import java.awt.event.ActionListener;
+# import java.util.ArrayList;
+# import java.util.List;
 
-import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.table.TableCellEditor;
+# import javax.swing.*;
+# import javax.swing.border.Border;
+# import javax.swing.table.TableCellEditor;
 
-import generic.theme.GThemeDefaults.Colors.Palette;
-import ghidra.app.plugin.core.debug.gui.console.DebuggerConsoleProvider.ActionList;
-import ghidra.app.plugin.core.debug.gui.console.DebuggerConsoleProvider.BoundAction;
+# import generic.theme.GThemeDefaults.Colors.Palette;
+# import ghidra.app.plugin.core.debug.gui.console.DebuggerConsoleProvider.ActionList;
+# import ghidra.app.plugin.core.debug.gui.console.DebuggerConsoleProvider.BoundAction;
 
 public class ConsoleActionsCellEditor extends AbstractCellEditor
 		implements TableCellEditor, ActionListener {

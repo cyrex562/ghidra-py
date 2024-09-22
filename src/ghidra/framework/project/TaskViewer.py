@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.task.CancelledListener;
 import ghidra.util.task.SwingUpdateManager;
 
-/*
+# /*
  * The TaskViewer manages a component for showing the running and waiting tasks of a GTaskManager.
  */
 public class TaskViewer {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.model;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * 
  * Interface to define methods to manage running tools and tools in
  * the Tool Chest. The ToolManager also keeps track of the workspaces, and

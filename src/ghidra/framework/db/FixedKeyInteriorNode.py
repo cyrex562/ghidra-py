@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>FixedKeyInteriorNode</code> stores a BTree node for use as an interior
  * node when searching for Table records within the database.  This type of node
  * has the following layout within a single DataBuffer (field size in bytes,

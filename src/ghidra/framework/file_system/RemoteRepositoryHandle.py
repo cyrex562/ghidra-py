@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import db.buffers.ManagedBufferFileHandle;
 import ghidra.framework.store.*;
 import ghidra.util.InvalidNameException;
 
-/**
+# /**
  * <code>RepositoryHandle</code> provides access to a remote repository via RMI.
  * <p>
  * Methods from {@link RepositoryHandle} <b>must</b> be re-declared here

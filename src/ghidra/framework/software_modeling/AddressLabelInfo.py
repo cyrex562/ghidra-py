@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressOverflowException;
 import ghidra.program.model.util.ProcessorSymbolType;
 
-/**
+# /**
  * <CODE>AddressLabelInfo</CODE> is a utility class for storing
  * an <CODE>Address</CODE> together with a corresponding language-defined 
  * label or alias that is within the global namespace which is

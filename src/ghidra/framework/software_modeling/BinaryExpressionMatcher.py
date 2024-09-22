@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import ghidra.app.plugin.processors.sleigh.expression.BinaryExpression;
 import ghidra.app.plugin.processors.sleigh.expression.PatternExpression;
 
-/**
+# /**
  * A matcher for a binary expression
  * 
  * <p>

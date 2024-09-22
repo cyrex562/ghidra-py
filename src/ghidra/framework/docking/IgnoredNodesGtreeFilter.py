@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Set;
 
 import docking.widgets.tree.GTreeNode;
 
-/**
+# /**
  * GTreeFilter that allows for some nodes that are never filtered out.
  */
 public class IgnoredNodesGtreeFilter implements GTreeFilter {

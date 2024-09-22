@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import org.jdesktop.animation.timing.Animator;
 import org.jdesktop.animation.timing.TimingTargetAdapter;
 import org.jdesktop.animation.timing.interpolation.PropertySetter;
 
-/** 
+# /** 
  * Changes the 'containerBounds' field on the {@link ZoomedImagePainter} via the 
  * setters/getters in order to move where the painter paints.
  */

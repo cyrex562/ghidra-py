@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.service.graph;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * Builder class for building new {@link GraphType}s
  */
 public class GraphTypeBuilder {

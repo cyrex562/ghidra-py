@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.Msg;
 import ghidra.util.Swing;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * UI for viewing the contents of very large files efficiently. Pieces of a file are read in using
  * the {@link ChunkReader}, which are then displayed line-by-line in {@link FVTable}.  As users
  * scroll up/down, new sections of the file are swapped in as appropriate.

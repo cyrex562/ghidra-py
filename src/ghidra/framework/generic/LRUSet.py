@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.datastruct;
 
 import java.util.Iterator;
 
-/**
+# /**
  * An ordered set-like data structure.   
  * <P>
  * Use this when you need a collection of unique items (hence set) that are also ordered by 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.datastruct;
 import java.io.Serializable;
 import java.util.Arrays;
 
-/**
+# /**
  * Class to manage multiple linked lists of short indexes. Users can add indexes
  * to a list, remove indexes from a list, remove all indexes from a list, and
  * retrieve all indexes within a given list.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.HelpLocation;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Dialog that displays plugins in a tabular format, allowing users to install or uninstall them. The
  * plugins that are displayed are defined by the caller.
  *

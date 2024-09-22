@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.app.plugin.processors.sleigh.pattern.PatternBlock;
 import ghidra.program.model.lang.RegisterValue;
 import ghidra.util.NumericUtilities;
 
-/**
+# /**
  * The analog of {@link PatternBlock}, designed for use by the assembler
  * 
  * <p>

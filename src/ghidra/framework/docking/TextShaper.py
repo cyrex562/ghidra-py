@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.text.AttributedString;
 import java.util.*;
 import java.util.List;
 
-/**
+# /**
  * A class that will layout text into lines based on the given display size.   This class requires
  * the graphics context in order to correctly size the text.
  */

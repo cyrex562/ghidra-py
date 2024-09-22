@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.task.TaskMonitor;
 import java.io.IOException;
 import java.util.HashMap;
 
-/**
+# /**
  * Helper class to maintain mapping of fileID's to DomainFile's.
  */
 class DomainFileIndex implements DomainFolderChangeListener {

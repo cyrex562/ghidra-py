@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.NoSuchElementException;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * <code>BufferFileAdapter</code> provides a BufferFile implementation which
  * wraps a BufferFileHandle.
  */

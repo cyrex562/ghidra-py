@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Feb 4, 2005
  *
  */
@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import ghidra.program.model.pcode.Decoder;
 import ghidra.program.model.pcode.DecoderException;
 
-/**
+# /**
  * A constructor template, representing the semantic action of a SLEIGH constructor, without
  * its final context.  The constructor template is made up of a list of p-code op templates,
  * which are in turn made up of varnode templates.

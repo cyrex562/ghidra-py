@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.program.model.listing.Data;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * An instance of a DataType that is applicable for a given context.  Most
  * dataTypes are not context sensitive and are suitable for use anywhere.
  * Others like dynamic structures need to create an instance that wraps the

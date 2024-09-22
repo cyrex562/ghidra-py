@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.util.exception;
 
 
-/**
+# /**
  * <code>CancelledException</code> indicates that the user cancelled
  * the current operation.
  */

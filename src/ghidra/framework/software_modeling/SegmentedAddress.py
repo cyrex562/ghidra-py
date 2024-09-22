@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 package ghidra.program.model.address;
 
 
-/**
+# /**
  * Address class for dealing with (intel) segmented addresses.  The class itself is agnostic
  * about the mapping from segmented encoding to flat address offset, it uses the
  * SegmentedAddressSpace to perform this mapping. So the same class can be used to represent

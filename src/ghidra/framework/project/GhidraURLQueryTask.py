@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.*;
 
-/**
+# /**
  * {@link GhidraURLQueryTask} provides an abstract Task which performs remote Ghidra 
  * repository and read-only local project queries for processing either a {@link DomainFile} 
  * or {@link DomainFolder} that a Ghidra URL may reference.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.widgets.table.TableFilter;
 import docking.widgets.table.TableSortingContext;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * A concept that represents the data used by the {@link ThreadedTableModel}.  This class 
  * encapsulates the actual data, along with any filter applied, any sort applied, along with 
  * some convenience methods for performing operations on this group of data.

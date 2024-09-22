@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.lang.InjectPayload;
 import ghidra.program.model.lang.InjectPayloadCallother;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Subclasses of this class are used to generate p-code to inject for modeling
  * java bytecode in p-code. Each is attached to CALLOTHER p-code op.
  *

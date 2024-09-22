@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.datastruct.Counter;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Abstract parent class for Version Tracking Reference Program Correlators.
  */
 public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractProgramCorrelator {

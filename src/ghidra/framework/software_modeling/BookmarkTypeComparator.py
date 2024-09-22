@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import java.util.Comparator;
 
-/**
+# /**
  * Provides an ordering for bookmark types.
  */
 public class BookmarkTypeComparator implements Comparator<BookmarkType> {

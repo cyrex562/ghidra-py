@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.*;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Version 1 adapter for the Pointer table.
  */
 class PointerDBAdapterV1 extends PointerDBAdapter {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.model;
 
 import java.net.URL;
 
-/**
+# /**
  * {@code ProjectViewListener} provides a listener interface for tracking project views added
  * and removed from the associated project. 
  * <BR>

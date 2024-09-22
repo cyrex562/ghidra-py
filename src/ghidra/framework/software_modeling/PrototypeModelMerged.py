@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.VariableStorage;
 import ghidra.program.model.pcode.Encoder;
 import ghidra.xml.*;
 
-/**
+# /**
  * This model serves as a placeholder for multiple model
  * Currently all the models being selected between must share the same output model
  *

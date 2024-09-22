@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table.constraint;
 
-/**
+# /**
  * String column constraint for matching column values if they don't start with the constraint value pattern.
  */
 public class StringNotStartsWithColumnConstraint extends StringStartsWithColumnConstraint {

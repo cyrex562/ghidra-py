@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.graph.attributes.IntegerAttribute;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.TaskMonitorAdapter;
 
-/**
+# /**
  * <CODE>PartitionCodeSubModel</CODE> (Model-P) defines subroutines which do not share code with
  * other subroutines and may have one or more entry points.
  * Entry points represent anyone of a variety of flow entries, including a source, called, jump or

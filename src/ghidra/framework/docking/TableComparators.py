@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table;
 
 import java.util.Comparator;
 
-/**
+# /**
  * A utility class for tables to use when sorting
  */
 public class TableComparators {

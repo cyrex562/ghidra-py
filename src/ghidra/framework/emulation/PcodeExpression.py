@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.plugin.processors.sleigh.SleighLanguage;
 import ghidra.pcodeCPort.slghsymbol.UserOpSymbol;
 import ghidra.program.model.pcode.PcodeOp;
 
-/**
+# /**
  * A p-code program that evaluates a Sleigh expression
  */
 public class PcodeExpression extends PcodeProgram {

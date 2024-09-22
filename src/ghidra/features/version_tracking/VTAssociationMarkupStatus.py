@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api.main;
 
-/**
+# /**
  * Class the indicates an overview, or high-level status, for the markup items 
  * within an association.  This status can be used to query the state of the markup items.  For
  * example, {@link #hasUnexaminedMarkup()} will indicate of some markup items have not yet been

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.listing.Instruction;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.*;
 
-/**
+# /**
  * This BlockModel implements the Basic block model.
  *
  * Each Codeblock is made up of contiguous instructions in address order.

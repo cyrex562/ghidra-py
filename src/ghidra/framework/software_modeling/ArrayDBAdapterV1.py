@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.*;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  *
  * To change the template for this generated type comment go to
  * {@literal Window>Preferences>Java>Code Generation>Code and Comments}

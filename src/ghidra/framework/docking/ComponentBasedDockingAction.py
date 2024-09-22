@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.Component;
 import docking.ActionContext;
 import docking.ComponentProvider;
 
-/**
+# /**
  * An interface to signal that the implementing action works with an individual Java 
  * {@link Component}.   Standard Docking Actions are either global tool-based actions or local 
  * {@link ComponentProvider} actions.   This interface allows us to have the concept of an 

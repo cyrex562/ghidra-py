@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import org.jdesktop.animation.timing.interpolation.PropertySetter;
 import ghidra.graph.VisualGraph;
 import ghidra.graph.viewer.*;
 
-/**
+# /**
  * A job that provides an animator and callbacks for transitioning the visibility of 
  * graph vertices.  The opacity value will change from 0 to 1 over the course of the job. 
  * Subclasses can decide how to use the opacity value as it changes.   For example, a 

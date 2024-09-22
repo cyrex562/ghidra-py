@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.exception;
 
-/**
+# /**
  * <p>NotYetImplementedException is used during development of a class.
  * It is expected that this Exception should not exist in final
  * released classes.</p>

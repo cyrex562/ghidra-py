@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.math.BigInteger;
 
 import docking.widgets.fieldpanel.listener.LayoutModelListener;
 
-/**
+# /**
  * The Big Layout Model interface.  Objects that implement this interface can be dispayed
  * using a BigFieldPanel.
  */

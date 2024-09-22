@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -55,7 +55,7 @@ import ghidra.util.task.*;
 import ghidra.util.worker.PriorityWorker;
 import resources.Icons;
 
-/**
+# /**
  * Class for creating a JTree that supports filtering, threading, and a progress bar.
  */
 

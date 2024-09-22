@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import javax.net.ssl.*;
 import ghidra.framework.preferences.Preferences;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <code>ApplicationTrustManagerFactory</code> provides the ability to establish
  * acceptable certificate authorities to be used with SSL connections and PKI 
  * authentication.  

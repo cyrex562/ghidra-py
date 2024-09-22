@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import generic.util.image.ImageUtils;
 import ghidra.util.Msg;
 import resources.ResourceManager;
 
-/**
+# /**
  * <code>ImageIconWrapper</code> provides the ability to instantiate 
  * an ImageIcon with delayed loading.  In addition to delayed loading
  * it has the added benefit of allowing the use of static initialization

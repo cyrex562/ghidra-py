@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import utilities.util.FileUtilities;
 import utility.application.ApplicationLayout;
 import utility.module.ModuleUtilities;
 
-/**
+# /**
  * Representation of a Ghidra extension. This class encapsulates all information required to
  * uniquely identify an extension and where (or if) it has been installed.
  * <p>

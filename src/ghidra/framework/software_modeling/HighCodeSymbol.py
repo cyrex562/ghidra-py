@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.symbol.SymbolUtilities;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * A global symbol as part of the decompiler's model of a function. This symbol can
  * be backed by a formal CodeSymbol, obtained using getCodeSymbol(). This symbol can be backed
  * by a formal Data object, obtained using getData(). If there is a backing CodeSymbol, this takes its name,

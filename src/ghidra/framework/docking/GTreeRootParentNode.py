@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.tree;
 
 import javax.swing.Icon;
 
-/**
+# /**
  * Artificial node used by the GTree to set as a parent on the real root node of a GTree.  It allows
  * nodes to access the GTree because it overrides getTree to return the GTree. This eliminates the
  * need for clients to create special root nodes that have getTree/setTree

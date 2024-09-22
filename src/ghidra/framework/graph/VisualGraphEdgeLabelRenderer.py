@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.JComponent;
 
 import edu.uci.ics.jung.visualization.renderers.DefaultEdgeLabelRenderer;
 
-/**
+# /**
  * Overrides the {@link DefaultEdgeLabelRenderer} so that the client can set the non-picked
  * foreground color.  See {@link #setNonPickedForegroundColor(Color)}.
  */

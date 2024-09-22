@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import db.buffers.BufferMgr;
 import db.buffers.DataBuffer;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * <code>DBBuffer</code> provides storage for large data objects utilizing a common
  * buffer management system.  Smaller data buffers are allocated and chained as needed.
  * All instances of DBBuffer must be immediately discarded following an undo or redo on the 

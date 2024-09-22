@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.util.function.Predicate;
 import generic.jar.ResourceFile;
 import ghidra.framework.GModule;
 
-/**
+# /**
  * A predicate used to filter modules using the classpath.   Only modules included in the classpath
  * will pass this filter.  Any modules not on the classpath may be included by calling
  * {@link #ClasspathFilter(Predicate)} with a predicate that allows other module paths.

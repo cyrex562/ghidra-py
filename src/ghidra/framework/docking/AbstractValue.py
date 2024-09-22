@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Objects;
 
 import javax.swing.JComponent;
 
-/**
+# /**
  * Abstract base class for defined name/values in a {@link GValuesMap} and whose values can be
  * edited in the {@link ValuesMapDialog}. Its main purpose is to provide a JComponent for
  * editing the value. Generally, objects of this type can be in one of two states: having a value

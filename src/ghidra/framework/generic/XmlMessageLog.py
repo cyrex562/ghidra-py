@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.xml;
 
 import ghidra.app.util.importer.MessageLog;
 
-/**
+# /**
  * A sub-class of MessageLog to handle appending messages from the XML parser.
  * 
  */

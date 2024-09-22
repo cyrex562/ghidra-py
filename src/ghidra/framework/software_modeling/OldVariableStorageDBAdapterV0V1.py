@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import db.*;
 
-/**
+# /**
  * <code>OldVariableStorageDBAdapterV0V1</code> provide legacy variable storage 
  * table support where each variable storage record was namespace-specific and
  * provided storage address only.  In a later revision this was deemed inadequate 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.SystemUtilities;
 import ghidra.util.task.Task;
 
-/**
+# /**
  * Task to show a dialog to enter comments for checking in a file
  */
 public abstract class VersionControlTask extends Task {

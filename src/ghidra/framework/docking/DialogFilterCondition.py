@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 import docking.widgets.table.constrainteditor.DummyConstraintEditor;
 import ghidra.util.Msg;
 
-/**
+# /**
  * This class represents an "or'able" condition in the DialogFilterConditionSet
  *
  * @param <T> the column type.

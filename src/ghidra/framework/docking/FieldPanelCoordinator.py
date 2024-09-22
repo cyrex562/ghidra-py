@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.widgets.fieldpanel.listener.ViewListener;
 import docking.widgets.fieldpanel.support.ViewerPosition;
 
 
-/**
+# /**
  * Coordinates the scrolling of a set of field panels by sharing bound scroll models.
  */
 public class FieldPanelCoordinator implements ViewListener {

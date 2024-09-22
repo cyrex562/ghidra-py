@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.DockingWindowManager;
 import docking.ReusableDialogComponentProvider;
 import generic.theme.ThemeValue;
 
-/**
+# /**
  * Base class for Theme property Editors (Colors, Fonts, and Icons)
  *
  * @param <T> the base property (Color, Font, or Icon)

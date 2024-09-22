@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.program.model.pcode;
 
 
-/**
+# /**
  * Do-while block:
  *    possible multiple incoming edges
  *    1 (implied) edge outgoing back to itself

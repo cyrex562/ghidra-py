@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.*;
 import ghidra.util.exception.NoValueException;
 import ghidra.util.map.TypeMismatchException;
 
-/**
+# /**
  * 
  */
 abstract class PseudoCodeUnit implements CodeUnit {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.feature.vt.api.main.VTMarkupItem;
 import ghidra.features.base.codecompare.panel.CodeComparisonPanel;
 import ghidra.features.base.codecompare.panel.CodeComparisonPanelActionContext;
 
-/**
+# /**
  * Action context for the version tracking markup item provider.
  */
 public class VTMarkupItemContext extends DefaultActionContext

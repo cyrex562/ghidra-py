@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.JTable;
 import ghidra.docking.settings.Settings;
 import ghidra.docking.settings.SettingsImpl;
 
-/**
+# /**
  * A state object to provide a table cell renderer with data beyond the standard Java 
  * {@link javax.swing.table.TableCellRenderer} interface.
  * <p>

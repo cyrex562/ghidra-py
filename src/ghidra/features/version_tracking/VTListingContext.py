@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.nav.Navigatable;
 import ghidra.features.base.codecompare.panel.CodeComparisonPanel;
 import ghidra.features.base.codecompare.panel.CodeComparisonPanelActionContext;
 
-/**
+# /**
  * Action context for a version tracking listing.
  */
 public class VTListingContext extends ListingActionContext

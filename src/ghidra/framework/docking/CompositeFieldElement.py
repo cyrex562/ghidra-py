@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.JComponent;
 import docking.widgets.fieldpanel.support.RowColLocation;
 import generic.json.Json;
 
-/**
+# /**
  * A FieldElement that is composed of other FieldElements.  The elements are laid out horizontally.
  */
 public class CompositeFieldElement implements FieldElement {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.security.SecureRandom;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * <code>SecureRandomFactory</code> provides a static singleton instance of SecureRandom
  */
 public class SecureRandomFactory {

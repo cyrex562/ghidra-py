@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.bytesearch.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Finds Run-Time Type Information (RTTI) data structures within a Windows program. It creates data
  * where the RTTI structures are found and annotates them using symbols and comments.
  */

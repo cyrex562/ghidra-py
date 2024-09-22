@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.reloc.Relocation.Status;
 
-/**
+# /**
  * An interface for storing the relocations defined in a program.
  * Table must preserve the order in which relocations are added such that
  * the iterators return them in the same order.

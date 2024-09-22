@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import generic.theme.GColor;
 import generic.util.WindowUtilities;
 import ghidra.util.task.SwingUpdateManager;
 
-/**
+# /**
  * An autocompleter that may be attached to one or more {@link JTextField}.
  *
  * <p>

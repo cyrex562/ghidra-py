@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.net;
 
 import java.security.cert.X509Certificate;
 
-/**
+# /**
  * <code>SignedToken</code> provides the result of a signed token byte array.
  */
 public class SignedToken {

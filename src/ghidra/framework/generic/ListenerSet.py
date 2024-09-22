@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 import java.lang.reflect.*;
 import java.util.Objects;
 
-/**
+# /**
  * A data structure meant to be used to hold listeners.  This class has a few benefits:
  * <ul>
  *  <li>Clients supply the class of the listeners being stored.  Then, clients make use of a Java

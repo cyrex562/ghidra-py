@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.xml.XmlParseException;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Logically AND multiple QualifierFilters together into a single filter.
  * An instances contains some number of other arbitrary filters.  In order for this filter to
  * pass, all these contained filters must pass.

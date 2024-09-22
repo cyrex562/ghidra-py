@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.table.threaded;
 import docking.widgets.table.sort.ColumnRenderedValueBackupComparator;
 import docking.widgets.table.sort.RowBasedColumnComparator;
 
-/**
+# /**
  * A version of {@link ColumnRenderedValueBackupComparator} that uses the 
  * {@link ThreadedTableModel}'s cache for column lookups
  *

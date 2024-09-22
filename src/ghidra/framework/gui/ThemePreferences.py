@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.IOException;
 import ghidra.framework.preferences.Preferences;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Reads and writes current theme info to preferences
  */
 public class ThemePreferences {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.*;
 import db.DBRecord;
 import ghidra.program.model.address.KeyRange;
 
-/**
+# /**
  * Generic cache implementation for objects that extend DatabaseObject. This is a reference based
  * cache such that objects are only ever automatically removed from the cache when there are no
  * references to that object. It also maintains a small "hard" cache so that recently accessed objects

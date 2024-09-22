@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.SwingConstants;
 import ghidra.util.*;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Base class for Tasks to be run in separate threads
  */
 public abstract class Task implements MonitoredRunnable {

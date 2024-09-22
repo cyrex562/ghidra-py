@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.Msg;
 import ghidra.util.datastruct.LongIntHashtable;
 import ghidra.util.exception.NoValueException;
 
-/** 
+# /** 
  * VertexSet is a container class for objects of type Vertex. It is
  * designed to be used in conjunction with EdgeSet as part of DirectedGraph.
  * 

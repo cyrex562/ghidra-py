@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * LongArrayArray.java
  *
  * Created on February 14, 2002, 3:24 PM
@@ -24,7 +24,7 @@ package ghidra.util.datastruct;
 
 import java.io.Serializable;
 
-/**
+# /**
  *
  * Array of long[] that grows as needed.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package generic.constraint;
 
-/**
+# /**
  * Constraints are used to make decisions to traverse a decision tree where each node in the
  * tree has a constraint that is used to decide if that node is part of the successful decision path. 
  *

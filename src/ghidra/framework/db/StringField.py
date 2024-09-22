@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.UnsupportedEncodingException;
 import db.buffers.DataBuffer;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * <code>StringField</code> provides a wrapper for variable length String data which is read or
  * written to a Record. Strings are always encoded as UTF-8.
  */

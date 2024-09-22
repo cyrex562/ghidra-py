@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class used to map addresses to longs and longs to addresses. Several different encodings
  * are depending on the nature of the address to be converted.
  * The upper 4 bits in the long are used to specify the encoding used. Currently the encoding are:

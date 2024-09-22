@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table;
 
-/**
+# /**
  * An object that represents and add, remove or change operation for one row of a table
  *
  * @param <T> the row type

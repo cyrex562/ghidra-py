@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.store.LockException;
 import ghidra.util.NotOwnerException;
 import ghidra.util.ReadOnlyException;
 
-/**
+# /**
  * <code>DefaultLocalGhidraProtocolConnector</code> provides support for the
  * Ghidra URL protocol which specifies a local Ghidra project without extension.
  * This connector is responsible for producing a suitable {@link ProjectLocator}

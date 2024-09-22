@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.exception;
 
 import java.io.IOException;
 
-/**
+# /**
  * Exception thrown when a user requests some operation to be performed
  * but does not have sufficient privileges.
  * 

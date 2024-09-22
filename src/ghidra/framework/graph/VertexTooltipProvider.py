@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.JComponent;
 
-/**
+# /**
  * Creates tooltips for a given vertex.
  *
  * @param <V> the vertex type

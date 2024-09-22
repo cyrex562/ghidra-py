@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.plugin.assembler.sleigh.symbol.AssemblyTerminal;
 import ghidra.app.plugin.assembler.sleigh.util.TableEntryKey;
 import ghidra.generic.util.datastruct.TreeSetValuedTreeMap;
 
-/**
+# /**
  * The Action/Goto table for a LALR(1) parser
  * 
  * <p>

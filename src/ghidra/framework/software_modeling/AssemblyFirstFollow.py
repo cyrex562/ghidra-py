@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.plugin.assembler.sleigh.grammars.AbstractAssemblyProduction;
 import ghidra.app.plugin.assembler.sleigh.symbol.*;
 import ghidra.generic.util.datastruct.TreeSetValuedTreeMap;
 
-/**
+# /**
  * A class to compute the first and follow of every non-terminal in a grammar
  * 
  * <p>

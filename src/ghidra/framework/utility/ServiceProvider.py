@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.plugintool;
 
 import ghidra.framework.plugintool.util.ServiceListener;
 
-/**
+# /**
  * Interface for providing Services 
  */
 public interface ServiceProvider {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.symbol;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Base class to hold information about a referring address. Derived classes add
  * what the address is referring to. A basic reference consists of a "from"
  * address, the reference type, the operand index for where the reference is,

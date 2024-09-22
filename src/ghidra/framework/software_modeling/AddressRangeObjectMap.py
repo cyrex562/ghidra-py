@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Associates objects with address ranges.
  */
 public class AddressRangeObjectMap<T> {
@@ -476,7 +476,7 @@ public class AddressRangeObjectMap<T> {
 	}
 }
 
-/**
+# /**
  * Associates an integer value with a numeric range.
  */
 class AddressValueRange<T> implements Comparable<AddressValueRange<T>> {

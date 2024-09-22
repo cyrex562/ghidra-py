@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.graph;
 
 import java.util.*;
 
-/**
+# /**
  * Original Dependency Graph implementation that uses {@link HashMap}s and {@link HashSet}s.
  * Side affect of these is that data pulled from the graph ({@link #pop()}) is not performed
  * in a deterministic order.  However, load time for the graph is O(1).

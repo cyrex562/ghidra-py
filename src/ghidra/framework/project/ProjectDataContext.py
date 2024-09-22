@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.ComponentProvider;
 import docking.DefaultActionContext;
 import ghidra.framework.model.*;
 
-/**
+# /**
  * A context that understands files that live in a {@link Project}.  Most of the clients of
  * this context will use its notion of selected {@link DomainFile}s and folders.
  */

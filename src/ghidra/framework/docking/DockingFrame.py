@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import javax.swing.JFrame;
 
 import ghidra.util.bean.GGlassPane;
 
-/**
+# /**
  * Base frame used by the root window and detached windows
  */
 public class DockingFrame extends JFrame {

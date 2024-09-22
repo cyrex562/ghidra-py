@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.geom.Point2D;
 
 import ghidra.graph.viewer.VisualVertex;
 
-/**
+# /**
  * A {@link VisualVertex} implementation that implements most of the methods on the interface
  */
 public abstract class AbstractVisualVertex implements VisualVertex {

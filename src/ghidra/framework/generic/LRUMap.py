@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * A LRU (Least Recently Used) map that maintains <i>access-order</i> (newest to oldest)
  *  iteration over the elements.
  * This map is limited to the given size.

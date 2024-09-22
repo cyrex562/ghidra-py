@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * An iterator that is comprised of one or more {@link PeekableIterator}s.  The type <code>T</code> of the 
  * the iterators must either implement {@link Comparable} directly or you must provide a 
  * {@link Comparator} for comparing the types.  Further, it is assumed that the iterators return

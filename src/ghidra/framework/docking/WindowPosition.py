@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking;
 
-/**
+# /**
  * An enum used to signal where windows should be placed <b>when shown for the first time.</b>
  * After being shown, a window's location is remembered, so that values is no longer used.
  */

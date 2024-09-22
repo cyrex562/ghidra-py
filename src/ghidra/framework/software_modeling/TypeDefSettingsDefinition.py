@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.docking.settings.Settings;
 import ghidra.docking.settings.SettingsDefinition;
 
-/**
+# /**
  * <code>TypeDefSettingsDefinition</code> specifies a {@link SettingsDefinition} whose
  * use as a {@link TypeDef} setting will be available for use within a non-Program 
  * DataType archive.  Such settings will be considered for DataType equivalence checks and

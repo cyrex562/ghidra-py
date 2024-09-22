@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.program.model.listing.Data;
 import ghidra.program.model.mem.*;
 import ghidra.util.*;
 
-/**
+# /**
  * Represents an instance of a string in a {@link MemBuffer}.
  * <p>
  * This class handles all the details of detecting a terminated string's length, converting the

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import docking.widgets.tree.GTreeNode;
 
-/**
+# /**
  * Implements an iterator over all GTreeNodes in some gTree (or subtree).  The nodes are
  * return in breadth first order.
  */

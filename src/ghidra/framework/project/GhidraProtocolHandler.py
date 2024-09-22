@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.net.URL;
 
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * <code>GhidraProtocolHandler</code> provides the extension point for 
  * Ghidra protocol extensions.  A Ghidra protocol extension will be identified 
  * within by the optional <i>extProtocolName</i> appearing within a Ghidra URL:

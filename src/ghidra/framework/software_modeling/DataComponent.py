@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.CodeUnit;
 import ghidra.program.model.listing.Data;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * <code>DataComponent</code> provides Data and CodeUnit access to Struct and Array components.
  *
  * NOTE!! DataComponents only have a unique key within its parent Struct/Array.  This places a constraint on

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Set;
 import docking.ComponentProvider;
 import docking.DefaultActionContext;
 
-/**
+# /**
  * The base ActionContext for the GraphDisplay instances.
  */
 public class GraphActionContext extends DefaultActionContext {

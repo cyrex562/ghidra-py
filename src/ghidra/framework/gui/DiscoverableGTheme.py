@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.theme;
 
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * Abstract base class for built-in {@link GTheme}s.
  */
 public abstract class DiscoverableGTheme extends GTheme implements ExtensionPoint {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.Address;
 import ghidra.util.exception.NoValueException;
 import ghidra.util.map.IntValueMap;
 
-/**
+# /**
  * Property manager that deals with properties that are of
  * int type.
  */

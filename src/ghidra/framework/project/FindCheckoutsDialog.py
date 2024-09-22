@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.framework.model.DomainFolder;
 import ghidra.framework.plugintool.Plugin;
 import ghidra.util.*;
 
-/**
+# /**
  * Dialog that shows all checkouts in a specific folder and all of its subfolders.
  *
  */

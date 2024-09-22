@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.net.URL;
 import ghidra.framework.model.DomainFile;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A blocking/modal Ghidra URL content type discovery task
  */
 public class ContentTypeQueryTask extends GhidraURLQueryTask {

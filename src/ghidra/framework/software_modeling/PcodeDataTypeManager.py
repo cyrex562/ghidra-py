@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.program.model.symbol.NameTransformer;
 import ghidra.util.UniversalID;
 import ghidra.xml.XmlParseException;
 
-/**
+# /**
  *
  * Class for marshaling DataType objects to and from the Decompiler.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.options.*;
 import ghidra.util.exception.InvalidInputException;
 import ghidra.util.layout.MiddleLayout;
 
-/**
+# /**
  * Panel that shows each property in an Options category or a Group in an Options category
  */
 public class ScrollableOptionsEditor implements OptionsEditor {

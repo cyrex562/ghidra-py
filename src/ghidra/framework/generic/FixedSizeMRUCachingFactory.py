@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.cache;
 
 import ghidra.util.datastruct.LRUMap;
 
-/**
+# /**
  * An object that will cache values returned from the given factory.  This class lets you combine
  * the work of building items as needed with cache maintenance operations, such as get and put 
  * (and move, in the case of a sized cache).

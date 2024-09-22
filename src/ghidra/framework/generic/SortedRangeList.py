@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.datastruct;
 
 import java.util.*;
 
-/**
+# /**
  * Provides a list of integer ranges that are maintained in sorted order.  When a range is added
  * any ranges that overlap or are adjacent to one another will coalesce into a single range.
  */

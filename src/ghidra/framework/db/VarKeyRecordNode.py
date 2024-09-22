@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>VarKeyRecordNode</code> is an implementation of a BTree leaf node
  * which utilizes variable-length key values and stores variable-length records.
  * This type of node has the following layout within a single DataBuffer 

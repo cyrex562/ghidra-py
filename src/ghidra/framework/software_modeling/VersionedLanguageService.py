@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.lang;
 
-/**
+# /**
  * Service that provides a Language given a name, and 
  * information about the language. 
  */

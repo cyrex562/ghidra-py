@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.program.model.listing.Program;
 import ghidra.util.table.ProgramLocationTableRowMapper;
 
-/**
+# /**
  * A {@link ProgramLocationTableRowMapper} that allows us to map this package's table row objects to 
  * Match objects.   This allows us to reuse the columns from the match table.
  */

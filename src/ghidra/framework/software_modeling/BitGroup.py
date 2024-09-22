@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
+# /**
  * Class used to organize long values into sets of values with overlapping bits.
  * For example, if you had values 1,2,3, 8, 12, you could partition them into two bit groups.
  * The values 1,2,3, would be in one bit group because they all use the "1" or "2" bit.

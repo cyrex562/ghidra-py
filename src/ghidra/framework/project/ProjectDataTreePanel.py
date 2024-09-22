@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.HelpLocation;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Panel that contains a DataTree for showing project data.
  * Controls whether the data tree supports drag and drop operations.
  */

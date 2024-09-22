@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import edu.uci.ics.jung.visualization.RenderContext;
 import ghidra.graph.viewer.VisualEdge;
 import ghidra.graph.viewer.VisualVertex;
 
-/**
+# /**
  * A renderer designed to override default edge rendering to NOT paint emphasizing effects.  We
  * do this because space is limited in the satellite and because this rendering can take excess
  * processing time.

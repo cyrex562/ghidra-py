@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Set;
 
 import generic.lsh.vector.*;
 
-/**
+# /**
  * Class(es) for constructing a "neighborhood" of functions around a function
  * that we know has a match.  Comparing across neighborhoods provides a large
  * cut-down in both search time and uncertainty when trying to find additional matches.

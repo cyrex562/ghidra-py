@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.util.Msg;
 import ghidra.util.Swing;
 
-/**
+# /**
  * A class which handles exceptions that occur off of the main test thread.  Exceptions can be
  * reported to this class, which will later be checked by {@link AbstractGenericTest}.
  */

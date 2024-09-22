@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.layout;
 
 import java.awt.*;
 
-/**
+# /**
  * LayoutManager for arranging components in a single row.  All components
  * retain their preferred widths, but are sized to the same height.
  */

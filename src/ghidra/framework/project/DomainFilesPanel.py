@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.list.ListPanel;
 import generic.theme.GThemeDefaults.Colors;
 import ghidra.framework.model.DomainFile;
 
-/**
+# /**
  * Reusable Panel that shows a list of checkboxes for each domain 
  * file in a list.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.graph.viewer.*;
 import ghidra.graph.viewer.edge.BasicEdgeLabelRenderer;
 import ghidra.graph.viewer.layout.*;
 
-/**
+# /**
  * This was created to add the ability to paint selected vertices above other vertices.  We need
  * this since the Jung Graph has no notion of Z-order and thus does not let us specify that any
  * particular vertex should be above another one.

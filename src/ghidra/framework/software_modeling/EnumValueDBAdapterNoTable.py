@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.help.UnsupportedOperationException;
 import db.*;
 import ghidra.program.database.util.EmptyRecordIterator;
 
-/**
+# /**
  * Adapter needed for a read-only version of data type manager that is not going
  * to be upgraded, and there is no Enumeration Data Type Values table in the data type manager.
  */

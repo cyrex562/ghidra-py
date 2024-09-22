@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.theme;
 
 import javax.swing.LookAndFeel;
 
-/**
+# /**
  * Event for when a theme value changes;
  */
 public class ThemeEvent {

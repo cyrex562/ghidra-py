@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import generic.concurrent.GThreadPool;
 import utilities.util.reflection.ReflectionUtilities;
 import utility.function.Dummy;
 
-/**
+# /**
  * A class that allows clients to <b>asynchronously</b> consume the output of a {@link Process}s
  * input and error streams.  The task is asynchronous to avoid deadlocks when both streams need
  * to be read in order for the process to proceed.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import docking.widgets.table.constraint.*;
 import generic.theme.GThemeDefaults.Colors.Palette;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * An editor that provides suggestions of values that, according to
  * {@linkplain StringColumnConstraint}, match a user-supplied
  * pattern.

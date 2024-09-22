@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Objects;
 
 import generic.stl.Pair;
 
-/**
+# /**
  * DominantPair is a pair where the key is responsible for equality and hashCode (and the value of
  * the pair doesn't matter at all).  This is useful when you need the pair itself to function as a
  * key in a Map or value in a Set.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import javax.swing.JComponent;
 
 import docking.widgets.textfield.FloatingPointTextField;
 
-/**
+# /**
  * Value class for {@link Double} types. This value uses a {@link FloatingPointTextField} as it's
  * editor component. It supports the concept of no value, if the text field is empty.
  * <P>

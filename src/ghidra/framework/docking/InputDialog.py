@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.DialogComponentProvider;
 import docking.widgets.label.GLabel;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * A dialog that has text fields to get user input.
  *
  */

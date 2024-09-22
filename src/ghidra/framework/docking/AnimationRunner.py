@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.bean.GGlassPanePainter;
 import utility.function.Callback;
 import utility.function.Dummy;
 
-/**
+# /**
  * A class that does basic setup work for creating an {@link Animator}.  The animator will run a 
  * timer in a background thread, calling the client periodically until the animation progress is
  * finished.  The actual visual animation is handled by the client's {@link AnimationPainter}.

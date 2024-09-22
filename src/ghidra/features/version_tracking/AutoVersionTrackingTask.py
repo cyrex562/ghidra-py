@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.*;
 
-/**
+# /**
  *  If their options are set, this command runs all of the 
  *  <b>exact</b> {@link VTProgramCorrelator}s that return unique matches (i.e., only one of each 
  *  match is found in each program) for each correlator selected in the autoVT options to run:

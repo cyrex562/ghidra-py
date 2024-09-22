@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * 
  *
  * A High-level variable (as in a high-level language like C/C++)

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.event.mouse.GMouseListenerAdapter;
 import docking.widgets.list.GListCellRenderer;
 import utility.function.Dummy;
 
-/**
+# /**
  * Component for displaying and selecting from a filterable list of items that are grouped into
  * categories. Similar to a JList, but with filtering and grouping.
  *

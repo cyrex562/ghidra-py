@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.zip.*;
 
 import db.Buffer;
 
-/**
+# /**
  * <code>DataBuffer</code> provides an accessible binary buffer
  * for use with a BufferMgr and BufferFile.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.theme.laf;
 
 import java.awt.Font;
 
-/**
+# /**
  * Font subclass for creating an non UIResource Font from a FontUIResource. (The Font constructor
  * that takes a font was protected)
  */

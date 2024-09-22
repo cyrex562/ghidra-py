@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.ActionContext;
 import docking.action.*;
 import ghidra.util.Swing;
 
-/**
+# /**
  * A class that supports multiple sub-actions, as well as a primary action.  This is useful for
  * actions that perform navigation operations.
  * <p>

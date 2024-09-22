@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.framework.model.DomainObjectEventIdGenerator;
 import ghidra.framework.model.EventType;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Event types for {@link Program} changes.
  */
 public enum ProgramEvent implements EventType {

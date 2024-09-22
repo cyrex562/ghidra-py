@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.cmd;
 
 import ghidra.framework.model.DomainObject;
 
-/**
+# /**
  * Interface to define a change made to a domain object.
  *
  * @param <T> {@link DomainObject} implementation interface

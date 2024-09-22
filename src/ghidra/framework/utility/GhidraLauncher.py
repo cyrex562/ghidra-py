@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import utilities.util.FileUtilities;
 import utility.application.ApplicationLayout;
 import utility.module.ModuleUtilities;
 
-/**
+# /**
  * Class used to prepare Ghidra for launching
  * <p>
  * A {@link #main(String[])} method is provided which redirects execution to a 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.awt.event.AdjustmentListener;
 import javax.swing.*;
 import javax.swing.plaf.ScrollBarUI;
 
-/**
+# /**
  * A Vertical JScrollbar that displays an additional component to its right and sized such that
  * its top is just below the top button of the scrollbar and its bottom is just above the bottom
  * button of the scrollbar.  Useful for providing an "overview" panel.

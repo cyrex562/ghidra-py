@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 
 import java.io.Serializable;
 
-/**
+# /**
  * Array of String[] that grows as needed.
  */
 public class StringArrayArray implements Array, Serializable {

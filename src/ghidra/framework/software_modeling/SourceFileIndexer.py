@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import com.google.common.collect.HashBiMap;
 import ghidra.program.model.pcode.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * This class is used to index source files in a SLEIGH language module.
  * The SLEIGH compiler records the index of the source file for a constructor rather
  * than the file name.  This is an optimization to avoid repeating the file name in

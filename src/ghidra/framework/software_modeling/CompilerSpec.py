@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.DefaultProgramContext;
 import ghidra.program.model.listing.Parameter;
 import ghidra.program.model.pcode.Encoder;
 
-/**
+# /**
  * Interface for requesting specific information about the compiler used to
  * build a Program being analyzed.  Major elements that can be queried include:
  *   - AddressSpaces from the Language plus compiler specific ones like "stack"

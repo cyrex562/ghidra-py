@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.graph.viewer.VisualEdge;
 import ghidra.graph.viewer.VisualVertex;
 import ghidra.graph.viewer.vertex.AbstractVisualVertexRenderer;
 
-/**
+# /**
  * A renderer for vertices for the satellite view.  This is really just a basic renderer
  * that adds emphasis capability, as seen in the primary function graph renderer.
  * @param <V> the vertex type

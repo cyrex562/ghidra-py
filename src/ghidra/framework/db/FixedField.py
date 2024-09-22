@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package db;
 
-/**
+# /**
  * <code>FixedField</code> provides an abstract implementation of an unsigned fixed-length
  * field whose value is specified with a byte-array.  This field behaves similar to a 
  * {@link PrimitiveField} in that a null "state" (see {@link #isNull()}) is supported for 

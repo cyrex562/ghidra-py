@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.beans.PropertyChangeListener;
 
 import ghidra.framework.plugintool.PluginTool;
 
-/**
+# /**
  * Listener that is notified when a tool is added or removed from a 
  * workspace, or when workspace properties change.
  */

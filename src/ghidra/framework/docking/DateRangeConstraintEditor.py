@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import docking.widgets.textfield.LocalDateTextField;
 import generic.theme.GThemeDefaults.Colors.Messages;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * A constraint editor for specifying ranges of dates.
  */
 public class DateRangeConstraintEditor extends AbstractColumnConstraintEditor<LocalDate> {

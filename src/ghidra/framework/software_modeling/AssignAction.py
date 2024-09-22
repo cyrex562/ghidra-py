@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.util.exception.InvalidInputException;
 import ghidra.xml.*;
 
-/**
+# /**
  * An action that assigns an Address to a function prototype parameter
  * 
  * A request for the address of either return storage or an input parameter is made

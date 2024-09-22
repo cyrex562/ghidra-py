@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.pcode.emu.unix;
 import java.util.Collection;
 import java.util.Set;
 
-/**
+# /**
  * A simulated UNIX user
  */
 public class EmuUnixUser {

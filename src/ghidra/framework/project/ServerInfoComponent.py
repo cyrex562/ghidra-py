@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.MessageType;
 import ghidra.util.StatusListener;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * Component that allows the user to specify the host name and port
  * number for the remote repository server.
  */

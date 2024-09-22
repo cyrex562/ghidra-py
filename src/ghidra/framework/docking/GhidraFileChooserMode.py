@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.filechooser;
 
-/**
+# /**
  * Modes available for selecting files in the file chooser
  */
 public enum GhidraFileChooserMode {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.task;
 
-/**
+# /**
 *
 * Runnable that has a method that may need to be run in the Swing AWT thread. 
 * Pass a SwingRunnable to the RunManager if follow on work needs to be done

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.actions.dialog;
 
-/**
+# /**
  * An enum for specifying which actions should be displayed in the {@link ActionChooserDialog}. Each
  * successive level is less restrictive and includes more actions to display.
  */

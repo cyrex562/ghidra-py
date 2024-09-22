@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * Provides a definition of a {@code complex} built-in data type consisting of two 64-bit floating point
  * numbers in the IEEE 754 double precision format.
  */

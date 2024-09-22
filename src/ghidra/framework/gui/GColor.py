@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import java.util.Objects;
 import ghidra.util.WebColors;
 import ghidra.util.datastruct.WeakStore;
 
-/**
+# /**
  * A {@link Color} whose value is dynamically determined by looking up its id into a global
  * color table that is determined by the active {@link GTheme}. 
  * <P>The idea is for developers to

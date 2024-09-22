@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.docking.settings.Settings;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * <code>ArrayStringable</code> identifies those data types which when formed into
  * an array can be interpreted as a string (e.g., character array).  The {@link Array}
  * implementations will leverage this interface as both a marker and to generate appropriate

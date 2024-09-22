@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.Icon;
 import generic.theme.GIcon;
 import ghidra.util.ColorUtils;
 
-/**
+# /**
  * Icon class for for displaying overlapping icons.  Icons are drawn in the order they
  * are added.
  */

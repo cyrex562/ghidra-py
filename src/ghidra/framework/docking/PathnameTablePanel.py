@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.filechooser.GhidraFileFilter;
 import resources.Icons;
 import utility.function.Callback;
 
-/**
+# /**
  * Component that has a table to show pathnames; the panel includes buttons to control the order of
  * the paths, and to add and remove paths. The add button brings up a file chooser. Call the
  * setFileChooser() method to control how the file chooser should behave. If the table entries

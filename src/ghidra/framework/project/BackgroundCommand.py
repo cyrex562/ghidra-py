@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.framework.model.DomainObject;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Abstract command that will be run in a thread (in the background) other than the AWT(GUI)
  * thread.  Use this to apply a long running command that is cancellable.
  * 

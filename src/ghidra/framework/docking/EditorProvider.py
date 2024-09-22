@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import docking.widgets.table.constraint.ColumnConstraint;
 import docking.widgets.table.constraint.ColumnData;
 import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 
-/**
+# /**
  * Class used by some generic constraints to fulfill their requirement to provide and editor. These types
  * of constraints are passed in an EditorProvider in their constructor.  This allows these constraint
  * types to be created using generics without subclassing.

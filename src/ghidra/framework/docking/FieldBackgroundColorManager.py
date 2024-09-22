@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import java.util.List;
 
 import docking.widgets.fieldpanel.support.Highlight;
 
-/**
+# /**
  * Interface for classes that manage the background color of fields.  The background color is 
  * affected by the current selection and highlight.  Implementers of this class manage the 
  * interaction of the selection and highlight to provide a single object from which to get

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.docking.settings;
 
-/**
+# /**
  * SettingsDefinition to define the number of digits of precision to show. The value 
  * is rendered to thousandths, 3 digits of precision, by default.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.datastruct;
 
-/**
+# /**
  * Interface that defines a method for comparing two long values.
  */
 public interface LongComparator {

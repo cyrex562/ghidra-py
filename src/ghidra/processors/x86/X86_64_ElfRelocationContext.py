@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.mem.MemoryBlock;
 import ghidra.util.*;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * <code>X86_64_ElfRelocationContext</code> provides ability to generate a
  * Global Offset Table (GOT) to facilitate GOT related relocations encountered within 
  * object modules.

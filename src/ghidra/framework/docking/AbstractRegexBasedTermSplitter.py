@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * Allows the user to split a string using a regex as the delimiter.
  */
 public abstract class AbstractRegexBasedTermSplitter implements TermSplitter {

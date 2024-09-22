@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.pcodeInject;
 import ghidra.javaclass.format.constantpool.AbstractConstantPoolInfoJava;
 import ghidra.javaclass.format.constantpool.ConstantPoolTagsJava;
 
-/**
+# /**
  * 
  * This is a utility class containing a method to generate pcode of the ldc, ldc_w, and ldc2_w bytecode ops. 
  *

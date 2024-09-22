@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Map;
 
 import ghidra.framework.main.logviewer.ui.FVTable;
 
-/**
+# /**
  * A chunk represents the basic unit of text that is displayed in the {@link FVTable}. This does
  * NOT contain the actual text being displayed; rather it contains metadata describing the 
  * text (start/end byte positions, number of lines in the chunk, etc...).

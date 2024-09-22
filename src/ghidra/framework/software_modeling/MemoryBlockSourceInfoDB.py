@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.address.AddressRange;
 import ghidra.program.model.mem.MemoryBlock;
 import ghidra.program.model.mem.MemoryBlockSourceInfo;
 
-/** 
+# /** 
  * Class for describing the source of bytes for a memory block.
  */
 class MemoryBlockSourceInfoDB implements MemoryBlockSourceInfo {

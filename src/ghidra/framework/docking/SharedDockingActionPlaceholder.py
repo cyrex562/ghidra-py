@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import javax.swing.KeyStroke;
 
 import docking.tool.ToolConstants;
 
-/**
+# /**
  * A marker interface to signal that the implementing action serves as an action that should
  * not itself be used in the tool, but should only be used to register and manage keybindings.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.exception;
 
 import javax.swing.SwingUtilities;
 
-/**
+# /**
  * Signals that a background thread attempted to {@link SwingUtilities#invokeAndWait(Runnable)}
  * operation that timed-out because the Swing thread was busy.  This can be a sign of 
  * a deadlock.

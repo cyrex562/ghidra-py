@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.text.StyleConstants;
 
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * A drop-in replacement for clients using {@link SimpleAttributeSet}s.  This class will apply a
  * default set of font attributes based on the given font and optional color.
  */

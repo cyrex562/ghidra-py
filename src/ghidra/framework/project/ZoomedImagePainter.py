@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.Icon;
 
-/**
+# /**
  * A class that paints a given image with varying zoom levels.  The zoom is set by clients 
  * according to changes made by an {@link org.jdesktop.animation.timing.Animator}.  In essence, 
  * this class paints the given image centered over the given target bounds at some 

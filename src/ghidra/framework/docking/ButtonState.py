@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.menu;
 
-/**
+# /**
  * Defines one "state" for a {@link MultiStateButton}. Each button state represents one choice from
  * a drop-down list of choices on the button. Each state provides information on what the button
  * text should be when it is the active state, the text in the drop-down for picking the state, text

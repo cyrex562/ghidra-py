@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import java.awt.Component;
 import docking.DropTargetFactory;
 import docking.DropTargetHandler;
 
-/**
+# /**
  * A basic DropTargetFactory that provides functionality for dragging files onto Ghidra to be 
  * opened.
  */

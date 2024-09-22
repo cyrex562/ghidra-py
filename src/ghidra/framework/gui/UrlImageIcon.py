@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import javax.swing.ImageIcon;
 import generic.util.image.ImageUtils;
 import ghidra.util.Msg;
 
-/**
+# /**
  * {@link LazyImageIcon} that is created from a URL to an icon file.
  */
 public class UrlImageIcon extends LazyImageIcon {

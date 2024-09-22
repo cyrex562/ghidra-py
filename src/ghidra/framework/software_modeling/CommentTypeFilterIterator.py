@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.CodeUnitIterator;
 
 import java.util.Iterator;
 
-/**
+# /**
  * Filters the given codeUnit iterator to only return codeUnits that have a comment of the given type
  */
 public class CommentTypeFilterIterator implements CodeUnitIterator {

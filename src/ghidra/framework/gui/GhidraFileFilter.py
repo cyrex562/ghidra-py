@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.filechooser;
 
 import java.io.File;
 
-/**
+# /**
  * A interface that filters out all files 
  * except for those type extensions that it knows about.
  * Extensions are of the type ".foo", which is typically found on

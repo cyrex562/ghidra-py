@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import db.*;
 import ghidra.program.model.address.*;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Adapter version 0 (the first real adapter)
  */
 class AddressMapDBAdapterV1 extends AddressMapDBAdapter {

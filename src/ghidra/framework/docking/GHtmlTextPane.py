@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.text.*;
 import ghidra.util.HTMLUtilities;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A JTextPane for rendering HTML, as well as copying WYSIWYG text copying.
  */
 public class GHtmlTextPane extends JTextPane {

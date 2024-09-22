@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Exception thrown if a data type is not valid for the operation being performed.
  */
 public class InvalidDataTypeException extends UsrException {

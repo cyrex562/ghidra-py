@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.plugin.assembler.sleigh.sem.AssemblyConstructorSemantic;
 import ghidra.app.plugin.assembler.sleigh.sem.AssemblyPatternBlock;
 import ghidra.app.plugin.processors.sleigh.expression.PatternExpression;
 
-/**
+# /**
  * Information about an operand that was matched to a wildcard
  * 
  * @param wildcard the name of the wildcard that matched the operand

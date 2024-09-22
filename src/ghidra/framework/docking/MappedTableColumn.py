@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.docking.settings.SettingsDefinition;
 import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.util.table.column.GColumnRenderer;
 
-/**
+# /**
  * A class that is an Adapter in order to allow for the use of existing {@link DynamicTableColumn}s
  * when the actual row type of the table is not the same as the row type that the
  * {@link DynamicTableColumn} supports.

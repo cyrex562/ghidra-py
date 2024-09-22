@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.*;
 
 import javax.swing.border.EmptyBorder;
 
-/**
+# /**
  * Custom border for the {@link GTab}. For non selected tabs, it basically draws a variation of 
  * a bevel border that is offset from the top by 2 pixels from the selected tab. Selected tabs
  * are drawn at the very top of the component and doesn't draw the bottom border so that it appears

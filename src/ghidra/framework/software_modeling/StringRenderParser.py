@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.lang.Endian;
 import ghidra.util.StringUtilities;
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * A parser to invert {@link StringDataInstance#getStringRepresentation()},
  * {@link StringDataInstance#getCharRepresentation()}, and related.
  */

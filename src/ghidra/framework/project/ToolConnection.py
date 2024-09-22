@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.model;
 
 import ghidra.framework.plugintool.PluginTool;
 
-/**
+# /**
  * Represents a connection between a producer tool and a
  * consumer tool.
  */

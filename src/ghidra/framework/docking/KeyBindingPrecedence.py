@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking;
 
 import java.awt.event.KeyEvent;
 
-/**
+# /**
  * An enum that holds the values for order of keybinding precedence, in order from 
  * highest priority to lowest.  For a more detailed description of how Ghidra processes
  * key events see {@link KeyBindingOverrideKeyEventDispatcher#dispatchKeyEvent(KeyEvent)}.

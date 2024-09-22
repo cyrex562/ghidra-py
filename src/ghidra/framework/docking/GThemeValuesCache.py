@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.theme.gui;
 import generic.theme.GThemeValueMap;
 import generic.theme.ThemeManager;
 
-/**
+# /**
  * Shares values for the three theme value tables so they all don't have their own copies
  */
 public class GThemeValuesCache {

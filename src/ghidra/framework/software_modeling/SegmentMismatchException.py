@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.address;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <CODE>SegmentMismatchException</CODE> is thrown when two
  * addresses with different segments are used in an operation
  * that requires the same segment.

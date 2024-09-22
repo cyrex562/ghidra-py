@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A base class to allow clients to buffer events.  UI components may receive numbers events to make
  * changes to their underlying data model.  Further, for many of these clients, it is sufficient
  * to perform one update to capture all of the changes.  In this scenario, the client can use this

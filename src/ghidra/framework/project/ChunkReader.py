@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 
 import ghidra.framework.main.logviewer.ui.FVTable;
 
-/**
+# /**
  * This class handles reading data from the input file, in the form of {@link Chunk} objects.  Each
  * chunk is stored in the {@link ChunkModel} and represents a single block of text that is 
  * displayed in the {@link FVTable}.

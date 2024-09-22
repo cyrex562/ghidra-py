@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.address;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <p>An AddressOverflowException occurs when an attempt to
  * add or subtract a displacement would result in a value which
  * is outside the address space.

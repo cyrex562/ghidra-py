@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.feature.vt.gui.util;
 import ghidra.feature.vt.api.main.VTAssociationStatus;
 import ghidra.feature.vt.api.main.VTMarkupItemStatus;
 
-/**
+# /**
  * This status is a combination of the {@link VTAssociationStatus} and the 
  * {@link VTMarkupItemStatus}.  This class exists for UI purposes, such as rendering and sorting.
  */

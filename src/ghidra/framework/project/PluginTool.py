@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -62,7 +62,7 @@ import ghidra.util.task.*;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Base class that is a container to manage plugins and their actions, and to coordinate the
  * firing of plugin events and tool events. A PluginTool may have visible components supplied by
  * <pre>ComponentProviders </pre>. These components may be docked within the tool, or moved

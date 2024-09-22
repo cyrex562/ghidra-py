@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.docking.settings.Settings;
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * <code>IBO32DataType</code> provides a Pointer-Typedef BuiltIn for
  * a 32-bit Image Base Offset Relative Pointer.  This {@link TypeDef} implementation 
  * specifies the {@link PointerType#IMAGE_BASE_RELATIVE} attribute/setting

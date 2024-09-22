@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.SystemUtilities;
 import util.CollectionUtils;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * An abstract table model for showing DynamicTableColumns where each row is based on an object of
  * type ROW_TYPE. The client is responsible for implementing {@link #createTableColumnDescriptor()}.
  * This method specifies which default columns the table should have and whether they should be

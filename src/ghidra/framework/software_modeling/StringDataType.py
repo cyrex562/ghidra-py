@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * A fixed-length string {@link DataType} with a user setable
  * {@link CharsetSettingsDefinition charset} (default ASCII).
  * <p>

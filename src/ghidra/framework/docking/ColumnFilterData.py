@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.util.table.column.GColumnRenderer;
 import ghidra.util.table.column.GColumnRenderer.ColumnConstraintFilterMode;
 
-/**
+# /**
  * This class provides all known {@link ColumnConstraint}s for a given table column.
  * 
  * <P>Class for maintaining information about a particular table's column for the purpose of 

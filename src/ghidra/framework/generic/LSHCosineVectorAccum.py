@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.lsh.vector;
 
 import java.util.TreeSet;
 
-/**
+# /**
  *  A cosine vector where we can accumulate the (feature,weight) pairs over time
  *  using the addHash method.   Once either the getLength or compare methods is
  *  called the vector becomes "finalized" and acts as an ordinary LSHCosineVector

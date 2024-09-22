@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * Manages installing and updating a {@link LookAndFeel}
  */
 public abstract class LookAndFeelManager {

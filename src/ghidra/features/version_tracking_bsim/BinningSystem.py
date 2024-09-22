@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.lsh.vector.HashEntry;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Container for FunctionNodes so that nodes that are "near" each other
  * (meaning the nodes' feature vectors have high cosine-similarity)
  * can be discovered.  As nodes are added, they are distributed across

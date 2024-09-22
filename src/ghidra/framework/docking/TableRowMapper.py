@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.util.classfinder.ExtensionPoint;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * NOTE:  ALL TableRowMapper CLASSES MUST END IN "TableRowMapper".  If not,
  * the ClassSearcher will not find them.
  * 

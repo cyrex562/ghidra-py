@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import java.util.Iterator;
 import java.util.List;
 
-/**
+# /**
  * <code>AlignedStructurePacker</code> provides support for performing aligned packing
  * of Structure components.
  * <p>

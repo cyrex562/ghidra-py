@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api.main;
 
-/**
+# /**
  * Interface used for a callback when associations are accepted or cleared.
  */
 public interface AssociationHook {

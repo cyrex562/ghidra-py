@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.lang;
 
-/**
+# /**
  * Cspec prototype model input listtype
  */
 public enum InputListType {

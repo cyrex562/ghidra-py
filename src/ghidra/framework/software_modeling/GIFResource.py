@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.nio.ByteOrder;
 import java.util.Arrays;
 
-/**
+# /**
  * Class for determining the size of a GIF image. It loads just enough of the GIF information to 
  * follow the data block links and read the bytes until the terminator is hit.  The amount of
  * bytes read indicate the number of bytes the GIF data type is consume.

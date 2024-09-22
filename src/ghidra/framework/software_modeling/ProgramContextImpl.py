@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.database.register.InMemoryRangeMapAdapter;
 import ghidra.program.model.lang.Language;
 import ghidra.program.model.lang.Register;
 
-/**
+# /**
  * Implementation for a processor context over the address space
  */
 public class ProgramContextImpl extends AbstractStoredProgramContext {

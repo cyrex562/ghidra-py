@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.feature.vt.gui.provider.impliedmatches;
 import ghidra.feature.vt.api.main.*;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * A custom class that maps this package's table row object type to a match so that we may 
  * reuse existing match columns.
  */

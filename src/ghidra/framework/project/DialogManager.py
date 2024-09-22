@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.framework.plugintool.dialog.SaveToolConfigDialog;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Helper class to manage actions for saving and exporting the tool
  */
 public class DialogManager {

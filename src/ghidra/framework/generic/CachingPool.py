@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import ghidra.util.timer.GTimer;
 import ghidra.util.timer.GTimerMonitor;
 
-/**
+# /**
  * A thread-safe pool that knows how to create instances as needed.  When clients are done
  * with the pooled item they then call {@link  #release(Object)}, thus enabling them to be
  * re-used in the future.

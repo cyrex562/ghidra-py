@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * Class for web color support. This class defines many of the colors used by html. This class
  * includes methods for converting a color to a string (name or hex value) and for converting
  * those strings back to a color.

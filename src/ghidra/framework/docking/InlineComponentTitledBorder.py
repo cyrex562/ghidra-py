@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.JComponent;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 
-/**
+# /**
  * A helper class to the InlineComponentTitledPanel that implements the component-in-border effect.
  * <p>
  * <b>This class should not be used outside InlineComponentTitledPanel.</b>

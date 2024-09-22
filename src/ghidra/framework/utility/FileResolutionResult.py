@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package utilities.util;
 
 import generic.jar.ResourceFile;
 
-/**
+# /**
  * A simple class that holds info relating to the result of verifying a file's existence and
  * proper usage of case.
  */

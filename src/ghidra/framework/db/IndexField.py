@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.buffers.DataBuffer;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * <code>IndexField</code> provides a index table primary key {@link Field} 
  * implementation which wraps both the index field value (fixed or varaible length) 
  * and its' corresponding primary key (fixed or variable length). 

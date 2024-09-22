@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package docking.widgets.fieldpanel.listener;
 import javax.swing.JComponent;
 
-/**
+# /**
  * Interface implemented by objects that want to be notified when an overlay
  * is removed from the FieldPanel.
  */

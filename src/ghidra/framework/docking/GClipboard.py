@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.dnd;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 
-/**
+# /**
  * Provides a place for clients to retrieve the Clipboard they should be using.  This class
  * provides a level of indirection that allows us to inject clipboards as needed.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import javax.swing.table.TableModel;
 
-/**
+# /**
  * An interface to mark that the given model uses a single object to represent each row in the
  * table.
  *

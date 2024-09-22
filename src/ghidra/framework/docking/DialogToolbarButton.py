@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.EmptyBorderToggleButton;
 import docking.action.*;
 import ghidra.util.Swing;
 
-/**
+# /**
  * Toolbar buttons for Dialogs.
  * 
  * <p>This class exists because dialog actions are not added to the regular tool's toolbars.  This

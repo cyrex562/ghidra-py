@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.List;
 
 import docking.widgets.tree.GTreeNode;
 
-/**
+# /**
  * A generic transfer handler used by GTrees to handle transferring drag/drop data and clipboard
  * data.
  */

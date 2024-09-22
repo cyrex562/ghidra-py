@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <p>An UnknownDataException indicates that the bytes at the parse
  * address did not form a legal known data item.</p>
  *

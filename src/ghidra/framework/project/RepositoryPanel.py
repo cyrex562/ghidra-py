@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.NamingUtilities;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * Panel that shows a list of existing repositories, or allows the user
  * to enter the name of a new repository to be created.
  * 

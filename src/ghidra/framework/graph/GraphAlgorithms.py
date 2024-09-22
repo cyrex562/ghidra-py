@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.TimeoutTaskMonitor;
 import util.CollectionUtils;
 
-/**
+# /**
  * A set of convenience methods for performing graph algorithms on a graph.
  * 
  * <P>Some definitions:

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.widgets.table.constrainteditor.*;
 import ghidra.util.HTMLUtilities;
 import ghidra.util.UserSearchUtils;
 
-/**
+# /**
  * Base class for various String constraints.
  */
 public abstract class StringColumnConstraint implements ColumnConstraint<String> {

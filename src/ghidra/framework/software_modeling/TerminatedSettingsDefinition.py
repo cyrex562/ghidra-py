@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import ghidra.docking.settings.EnumSettingsDefinition;
 import ghidra.docking.settings.Settings;
 
-/**
+# /**
  * Settings definition for strings being terminated or unterminated
  */
 public class TerminatedSettingsDefinition implements EnumSettingsDefinition {

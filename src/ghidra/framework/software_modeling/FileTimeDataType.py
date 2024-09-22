@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.Msg;
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * A datatype to interpret the FILETIME timestamp
  * convention, which is based on the number of 100-nanosecond ticks
  * since January 1, 1601.

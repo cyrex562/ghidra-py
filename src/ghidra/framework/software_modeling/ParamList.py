@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.xml.XmlParseException;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * A group of ParamEntry that form a complete set for passing parameters (in one direction)
  *
  */

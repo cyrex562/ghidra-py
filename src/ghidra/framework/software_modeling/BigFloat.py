@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.math.*;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * An IEEE 754 floating point class.
  *
  * <p>Values represented:

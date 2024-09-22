@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.exception;
 
-/**
+# /**
  * Base Class for all ghidra non-runtime exceptions
  */
 public class UsrException extends Exception {

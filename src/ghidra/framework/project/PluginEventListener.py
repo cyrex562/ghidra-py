@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.framework.plugintool.util;
 import ghidra.framework.plugintool.PluginEvent;
 
 
-/**
+# /**
  *  Listener that is notified when an event is generated.
  *
  */

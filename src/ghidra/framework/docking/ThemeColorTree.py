@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import docking.widgets.tree.GTreeNode;
 import generic.theme.*;
 import ghidra.util.WebColors;
 
-/**
+# /**
  * Tree for showing colors organized by similar colors and reference relationships. This was
  * built as a developer aid to help consolidate similar colors in Ghidra. This may be removed
  * at any time.

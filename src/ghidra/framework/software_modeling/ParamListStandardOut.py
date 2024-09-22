@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import ghidra.program.model.data.*;
 import ghidra.program.model.lang.protorules.AssignAction;
 
-/**
+# /**
  * A list of resources describing possible storage locations for a function's return value,
  * and a strategy for selecting a storage location based on data-types in a function signature.
  * 

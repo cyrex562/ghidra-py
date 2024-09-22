@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -68,7 +68,7 @@ import sarif.SarifProgramOptions;
 import sarif.export.SarifWriterTask;
 import sarif.export.data.SarifDataTypeWriter;
 
-/**
+# /**
  * This manager is responsible for reading and writing datatypes in SARIF.
  */
 public class DataTypesSarifMgr extends SarifMgr {

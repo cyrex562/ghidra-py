@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.datastruct;
 
-/**
+# /**
  * Creates a fixed size stack.
  * The oldest (or deepest) item on the stack
  * will be removed when the max size is achieved.

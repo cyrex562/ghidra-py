@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.exception;
 import java.io.PrintStream;
 import java.util.*;
 
-/**
+# /**
  * Use an instance of this class as the cause when you need to record several causes of an
  * exception.
  * 

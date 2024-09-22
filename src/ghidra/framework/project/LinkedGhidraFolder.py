@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.model.*;
 import ghidra.framework.protocol.ghidra.GhidraURL;
 import ghidra.framework.store.FileSystem;
 
-/**
+# /**
  * {@code LinkedGhidraFolder} provides the base {@link LinkedDomainFolder} implementation which
  * corresponds to a project folder-link (see {@link FolderLinkContentHandler}).
  */

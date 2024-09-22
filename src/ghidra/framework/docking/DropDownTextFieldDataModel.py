@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.List;
 
 import javax.swing.ListCellRenderer;
 
-/**
+# /**
  * This interface represents all methods needed by the {@link DropDownSelectionTextField} in order
  * to search, show, manipulate and select objects.
  *

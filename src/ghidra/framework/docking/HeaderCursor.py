@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.awt.image.BufferedImage;
 
 import generic.theme.*;
 
-/**
+# /**
  * The cursor values used when drag-n-dropping dockable components
  */
 public class HeaderCursor {

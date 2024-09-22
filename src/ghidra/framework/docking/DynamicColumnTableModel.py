@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table;
 
-/**
+# /**
  * Marks this model as one that is column-based, using {@link DynamicTableColumn}s.
  *
  * @param <ROW_TYPE> the row type of the underlying table model

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import utility.application.ApplicationUtilities;
 import utility.module.ClasspathFilter;
 import utility.module.ModuleUtilities;
 
-/**
+# /**
  * A low-level implementation of {@link ApplicationLayout} that is suitable for basic applications.
  * This class makes use of the {@link GModule Module} system to find application components at
  * runtime.

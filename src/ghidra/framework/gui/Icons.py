@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.ImageIcon;
 import generic.theme.GIcon;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class to get generic icons for standard actions.  All methods in this class return an 
  * icon that is 16x16 unless the method name ends in another size.'
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.table.constraint.ColumnConstraint;
 import docking.widgets.table.constraint.EnumColumnConstraint;
 import generic.theme.GThemeDefaults.Colors.Messages;
 
-/**
+# /**
  * A constraint editor for enumerated-type values;
 */
 public class EnumConstraintEditor<T extends Enum<T>> extends AbstractColumnConstraintEditor<T> {

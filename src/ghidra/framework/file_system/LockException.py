@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.store;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Indicates a failure to obtain a required lock.
  */
 public class LockException extends UsrException {

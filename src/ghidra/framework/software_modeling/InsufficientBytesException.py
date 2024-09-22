@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <p>An InsufficientBytesException indicates that there were not enough
  * consecutive bytes available to fully parse an instruction.</p>
  *

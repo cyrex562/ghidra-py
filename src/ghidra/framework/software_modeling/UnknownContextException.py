@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <p>An UnknownContextException indicates a processor state context must be known
  * before the bytes at the parse address can form a legal known instruction.</p>
  *

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import generic.theme.GColor;
 import ghidra.util.html.HtmlLineSplitter;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A helper class providing static methods for formatting text with common HTML tags.
  *
  * <P>Many clients use this class to render content as HTML.  Below are a few use cases along

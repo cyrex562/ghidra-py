@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * A fixed size 16 byte signed integer (commonly referred to in C as int128_t)
  */
 public class Integer16DataType extends AbstractSignedIntegerDataType {

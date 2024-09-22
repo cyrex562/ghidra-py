@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,7 +44,7 @@ import junit.framework.AssertionFailedError;
 import sun.awt.AppContext;
 import utility.function.ExceptionalCallback;
 
-/**
+# /**
  * Base class for tests that need swing support methods. Tests that don't involve Swing/Gui elements
  * should use AbstractGenericTest instead
  */

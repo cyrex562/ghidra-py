@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.model;
 
 import java.io.IOException;
 
-/**
+# /**
  * {@link RuntimeIOException} provide a wrapped {@link IOException} wrapped
  * within a {@link RuntimeException}.
  */

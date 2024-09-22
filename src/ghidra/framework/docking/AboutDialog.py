@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import generic.theme.GThemeDefaults.Colors;
 import ghidra.framework.Application;
 import utility.application.ApplicationLayout;
 
-/**
+# /**
  * Splash screen window to display version information about the current release of
  * the Ghidra application. The window is displayed when Ghidra starts; when
  * initialization is complete, the splash screen is dismissed.

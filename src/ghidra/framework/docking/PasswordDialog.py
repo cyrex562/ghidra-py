@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.label.GLabel;
 import ghidra.util.MessageType;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * <code>PasswordDialog</code> is a modal dialog which 
  * prompts a user for a password. 
  */

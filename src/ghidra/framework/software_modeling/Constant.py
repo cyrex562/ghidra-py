@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.app.plugin.processors.generic;
 
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * 
  */
 public class Constant implements ExpressionValue {

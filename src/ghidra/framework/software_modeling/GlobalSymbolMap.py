@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.Symbol;
 import ghidra.program.model.symbol.SymbolTable;
 
-/**
+# /**
  * A container for global symbols in the decompiler's model of a function. It contains
  * HighSymbol objects for any symbol accessed by the particular function that is in either
  * the global scope or some other global namespace. Currently the container is populated

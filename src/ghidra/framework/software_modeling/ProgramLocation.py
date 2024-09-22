@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <CODE>ProgramLocation</CODE> provides information about a location in a program in the most
  * generic way.
  *

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import generic.theme.*;
 import ghidra.framework.plugintool.dialog.AbstractDetailsPanel;
 import ghidra.util.extensions.ExtensionDetails;
 
-/**
+# /**
  * Panel that shows information about the selected extension in the {@link ExtensionTablePanel}. This
  * is essentially a view into the {@link ExtensionDetails} for the extension.
  * <p>

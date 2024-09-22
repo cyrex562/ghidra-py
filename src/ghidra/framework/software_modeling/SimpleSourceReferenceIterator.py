@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.task.TaskMonitor;
 
 import java.util.LinkedList;
 
-/**
+# /**
  * SimpleSourceReferenceIterator is a unidirectional iterator over the <CODE>CodeBlockReference</CODE>s
  * for a CodeBlock.  It is <B>not</B> failfast, whenever <CODE>hasNext()</CODE>
  * are called it will find if there is a next <CODE>CodeBlockReference</CODE> and acquire

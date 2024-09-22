@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.app.plugin.assembler.sleigh.sem.AssemblyConstructorSemantic;
 import ghidra.app.plugin.assembler.sleigh.symbol.AssemblyNonTerminal;
 import ghidra.app.plugin.assembler.sleigh.symbol.AssemblySymbol;
 
-/**
+# /**
  * A branch in a parse tree, corresponding to the application of a production
  */
 public class AssemblyParseBranch extends AssemblyParseTreeNode

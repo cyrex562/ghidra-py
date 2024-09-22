@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.DockingWindowManager;
 import docking.widgets.tree.support.GTreeFilter;
 import ghidra.util.FilterTransformer;
 
-/**
+# /**
  * Interface for providing a filter for GTrees.
  */
 public interface GTreeFilterProvider {

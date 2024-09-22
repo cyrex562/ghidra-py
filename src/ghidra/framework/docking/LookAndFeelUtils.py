@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.framework.ApplicationInformationDisplayFactory;
 import generic.theme.LafType;
 import generic.theme.ThemeManager;
 
-/**
+# /**
  * A utility class to manage LookAndFeel (LaF) settings.
  */
 public class LookAndFeelUtils {

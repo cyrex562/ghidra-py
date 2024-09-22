@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.exception;
 
 import java.io.IOException;
 
-/**
+# /**
  * <code>BadLinkException</code> occurs when a link-file expected linked content type does not 
  * match the actual content type of the linked file.
  */

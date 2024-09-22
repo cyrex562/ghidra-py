@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.mem;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressOverflowException;
 
-/**
+# /**
  * The MutableMemBuffer interface facilitates repositioning of a MemBuffer object.
  */
 public interface MutableMemBuffer extends MemBuffer {

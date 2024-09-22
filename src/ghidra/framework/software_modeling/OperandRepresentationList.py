@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+# /**
  * <code>OperandRepresentation</code> provides a list for operand sub-elements.
  * The number of elements are expected to remain constant for a given code unit
  * operand regardless of its format.

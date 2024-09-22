@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.*;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * Implementation for Version 0 of the adapter that accesses the 
  * equate record that has the equate name and value.
  * 

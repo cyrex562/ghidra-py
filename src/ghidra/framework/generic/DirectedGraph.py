@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.NoValueException;
 import ghidra.util.graph.attributes.*;
 
-/** Base implementation of a directed graph. A directed graph consists
+# /** Base implementation of a directed graph. A directed graph consists
  * of a set of vertices (implemented as a VertexSet) and a set of edges
  * (implemented as an EdgeSet) joining ordered pairs of vertices in the
  * graph. Both vertices and edges can belong to more than one DirectedGraph.

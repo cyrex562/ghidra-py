@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.event.*;
 
 import docking.widgets.table.GTable;
 
-/**
+# /**
  * A listener for tables that support drag and drop operations.  This listener allows the user to
  * make a multi-selection in the table and drag that selection.
  */

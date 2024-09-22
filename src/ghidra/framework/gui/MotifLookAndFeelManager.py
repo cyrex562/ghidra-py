@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import javax.swing.UIDefaults;
 import generic.theme.ApplicationThemeManager;
 import generic.theme.LafType;
 
-/**
+# /**
  * Motif {@link LookAndFeelManager}. Specialized so that it can return the Motif installer
  */
 public class MotifLookAndFeelManager extends LookAndFeelManager {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -27,7 +27,7 @@ import java.io.IOException;
 
 import org.xml.sax.SAXException;
 
-/**
+# /**
  * Defines the method for creating an Object from an 
  * XML file in a JarInputStream.
  */

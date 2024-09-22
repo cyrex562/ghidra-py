@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.scalar;
  
-/**
+# /**
  * <p>A ScalarOverflowException indicates that some precision would
  * be lost.  If the operation was signed, unused bits did not match the
  * sign bit.  If the operation was unsigned, unsed bits were not all

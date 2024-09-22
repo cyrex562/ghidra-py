@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.KeyStroke;
 import docking.ActionContext;
 import docking.DockingWindowManager;
 
-/**
+# /**
  * Action for global focus traversal. 
  * <P>
  * The Java focus system suggests that both TAB and &LT;CTRL&GT; TAB move the focus to the next

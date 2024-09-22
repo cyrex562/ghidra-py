@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 import gui.event.MouseBinding;
 
-/**
+# /**
  * A class that organizes system key bindings by mapping them to assigned {@link DockingActionIf}s.
  *
  * <p>This class understands reserved system key bindings.  For non-reserved key bindings, this

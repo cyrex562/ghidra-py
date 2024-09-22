@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package utility.function;
 
-/**
+# /**
  * A generic functional interface that allows you to consume an item, return a result, 
  * and potentially throw an exception.  
  * 

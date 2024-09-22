@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.framework.options.ToolOptions;
 import ghidra.program.model.listing.Data;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * Interface for address correlation algorithms that can generate an address mapping from one
  * set of program addresses to another.
  * <p>

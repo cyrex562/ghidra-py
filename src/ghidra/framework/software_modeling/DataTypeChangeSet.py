@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import ghidra.framework.model.ChangeSet;
 
-/**
+# /**
  * Interface for a Data Type Change set.  Objects that implements this interface track
  * various change information on a data type manager.
  */

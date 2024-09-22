@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import ghidra.framework.model.AbortedTransactionListener;
 import ghidra.framework.model.TransactionInfo;
 
-/**
+# /**
  * <code>SynchronizedTransaction</code> represents an atomic undoable operation performed
  * on a synchronized set of domain objects.
  */

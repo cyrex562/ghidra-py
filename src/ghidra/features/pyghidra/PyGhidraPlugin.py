@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.pyghidra.interpreter.InterpreterGhidraScript;
 import ghidra.pyghidra.interpreter.PyGhidraInterpreter;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * This plugin provides the interactive Python interpreter.
  */
 //@formatter:off

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 
 import ghidra.program.model.listing.Instruction;
 
-/**
+# /**
  * <code>ParallelInstructionLanguageHelper</code> provides the ability via a language 
  * specified property to identify certain parallel instruction attributes. 
  * Implementations must define a public default constructor.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import java.util.*;
 
 import db.DBRecord;
 
-/**
+# /**
  * Interface to manage bookmarks on a program.
  */
 class OldBookmarkManager {

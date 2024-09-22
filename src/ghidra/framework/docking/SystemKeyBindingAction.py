@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import javax.swing.KeyStroke;
 
 import docking.*;
 
-/**
+# /**
  * An {@link DockingKeyBindingAction} to signal that the given {@link DockingAction} gets priority
  * over all other non-system actions in the system.
  */

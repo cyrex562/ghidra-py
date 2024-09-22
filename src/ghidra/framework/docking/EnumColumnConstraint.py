@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 import docking.widgets.table.constrainteditor.EnumConstraintEditor;
 
-/**
+# /**
  * Column Constraint where acceptable column values are Enum values that match one of a set of
  * selected values from the Enum.
  *

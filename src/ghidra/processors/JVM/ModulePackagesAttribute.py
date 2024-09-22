@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Note: text in this file based on/taken from jvms12.pdf
  * <p>
  * The {@code ModulePackages} attribute indicates all the packages of a module that are 

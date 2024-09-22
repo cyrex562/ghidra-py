@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  *     Class that implements a hashtable with Object keys and long values.
  */
 

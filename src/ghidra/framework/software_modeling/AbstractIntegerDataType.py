@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.util.DataConverter;
 import ghidra.util.StringFormat;
 
-/**
+# /**
  * Base type for integer data types such as {@link CharDataType chars}, {@link IntegerDataType
  * ints}, and {@link LongDataType longs}.
  * <p>

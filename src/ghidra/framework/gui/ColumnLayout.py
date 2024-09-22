@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.layout;
 
 import java.awt.*;
 
-/**
+# /**
  * This layout arranges components in columns, putting as many components as possible in a
  * column and using as many columns as necessary.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import generic.theme.GThemeDefaults.Colors.Palette;
 import ghidra.util.ColorUtils;
 import ghidra.util.WebColors;
 
-/**
+# /**
  * Color editor that is a bit unusual in that its custom component is a button that when pushed,
  * pops up a dialog for editing the color. Use {@link ColorPropertyEditor} for a more traditional
  * property editor that returns a direct color editing component.

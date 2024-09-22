@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import javax.swing.SwingUtilities;
 import ghidra.util.exception.AssertException;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * General purpose class to provide convenience methods for doing "System" type
  * stuff, e.g., find resources, date/time, etc. All methods in this class are
  * static.

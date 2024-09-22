@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Collection;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-/**
+# /**
  * The interface provides a mechanism for clients to pass around an object that is effectively
  * a 'results object', into which data can be placed as it is discovered. 
  * 

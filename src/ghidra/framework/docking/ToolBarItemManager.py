@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.DockingActionPerformer;
 import docking.DockingWindowManager;
 import docking.action.*;
 
-/**
+# /**
  * Class to manager toolbar buttons.
  */
 public class ToolBarItemManager implements PropertyChangeListener, ActionListener, MouseListener {

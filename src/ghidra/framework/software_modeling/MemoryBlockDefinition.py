@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.xml.XmlAttributeException;
 import ghidra.util.xml.XmlUtilities;
 import ghidra.xml.XmlElement;
 
-/**
+# /**
  * 
  *
  * TODO To change the template for this generated type comment go to

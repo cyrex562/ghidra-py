@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.JToolBar;
 
 import ghidra.framework.model.*;
 
-/**
+# /**
  * Toolbar that shows icons for the tools in the user's tool chest.
  */
 class ProjectToolBar extends JToolBar implements ToolChestChangeListener {

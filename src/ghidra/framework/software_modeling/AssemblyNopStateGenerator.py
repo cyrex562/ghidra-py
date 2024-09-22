@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 import ghidra.app.plugin.assembler.sleigh.tree.AssemblyParseNumericToken;
 import ghidra.app.plugin.processors.sleigh.symbol.OperandSymbol;
 
-/**
+# /**
  * The generator of {@link AssemblyOperandState} for a hidden value operand
  * 
  * <p>

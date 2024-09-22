@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.datastruct.RedBlackEntry;
 import ghidra.util.datastruct.RedBlackTree;
 
-/**
+# /**
  * Class for storing sets of addresses.  This implementation uses a red-black tree where each
  * entry node in the tree stores an address range.  The key for an entry node is the minimum address
  * of the range and the value is the maximum address of the range.

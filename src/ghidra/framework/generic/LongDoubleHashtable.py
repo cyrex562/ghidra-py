@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.util.exception.NoValueException;
 
 import java.io.Serializable;
 
-/**
+# /**
  *
  *     Class that implements a hashtable with long keys and double values.
  *     Because this class uses array of primitives

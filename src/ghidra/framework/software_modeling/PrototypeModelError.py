@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.lang;
 
-/**
+# /**
  * A PrototypeModel cloned from another, but marked as an error placeholder
  */
 public class PrototypeModelError extends PrototypeModel {

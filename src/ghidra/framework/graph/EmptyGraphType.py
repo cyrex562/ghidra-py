@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.service.graph;
 
 import java.util.Collections;
 
-/**
+# /**
  * Default GraphType implementation that has no vertex or edge types defined
  */
 public class EmptyGraphType extends GraphType {

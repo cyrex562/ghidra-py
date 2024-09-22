@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.actions.*;
 import ghidra.framework.options.ToolOptions;
 import ghidra.util.Swing;
 
-/**
+# /**
  * A partial implementation of {@link Tool} that serves as a place to share common functionality
  */
 public abstract class AbstractDockingTool implements Tool {

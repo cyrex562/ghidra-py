@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.pcode.Varnode;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * <code>EmulateInstructionStateModifier</code> defines a language specific 
  * handler to assist emulation with adjusting the current execution state,
  * providing support for custom pcodeop's (i.e., CALLOTHER).

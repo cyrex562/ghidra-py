@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util;
 import java.awt.Component;
 import java.awt.dnd.*;
 
-/**
+# /**
  * Combines two drop targets and sends events to them in priority order.  If the first drop target
  * accepts the event, then the second drop target is not accessed. 
  * <p>

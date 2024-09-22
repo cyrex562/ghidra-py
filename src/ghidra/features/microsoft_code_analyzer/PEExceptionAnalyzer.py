@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.util.datastruct.ListAccumulator;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Analyzer that finds Windows PE Visual Studio exception handling data structures and creates data using the 
  * exception handling data types. Data flows can be followed to find other data and functions. If
  * the data appears valid, labels, references, and functions can be created based on the data.

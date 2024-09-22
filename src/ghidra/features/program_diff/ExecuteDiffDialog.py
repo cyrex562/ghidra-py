@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.util.ProgramDiffFilter;
 import ghidra.program.util.ProgramMemoryComparator;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * The ExecuteDiffDialog is used whenever initiating a Program Diff. 
  * It allows the user to specify the types of differences to determine 
  * and the address set to diff.

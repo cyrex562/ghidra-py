@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import javax.swing.ImageIcon;
 
 import resources.icons.TranslateIcon;
 
-/**
+# /**
  * A builder to allow for easier creation of an icon that is composed of a base icon, with 
  * other icons overlaid.  The {@link #build()} method returns an {@link ImageIcon}, as this
  * allows Java's buttons to automatically create disabled icons correctly.

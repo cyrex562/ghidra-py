@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.DBRecord;
 import ghidra.program.model.mem.*;
 
-/**
+# /**
  * Interface for the various types of memory block sections.  They are used by a {@link MemoryBlockDB}
  * to do the actual storing and fetching of the bytes that make up a MemoryBlock
  */

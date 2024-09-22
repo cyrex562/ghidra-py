@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.task;
 
-/**
+# /**
  * A Dummy implementation to that listeners can subclass this and not have to fill in methods they
  * don't need.
  */

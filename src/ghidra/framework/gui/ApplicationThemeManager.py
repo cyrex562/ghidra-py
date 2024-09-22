@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.framework.Application;
 import ghidra.util.Msg;
 import ghidra.util.classfinder.ClassSearcher;
 
-/**
+# /**
  * This is the fully functional {@link ThemeManager} that manages themes in a application. To
  * activate the theme functionality, Applications (or tests) must call
  * {@link ApplicationThemeManager#initialize()}

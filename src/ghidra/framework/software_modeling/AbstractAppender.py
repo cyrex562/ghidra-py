@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.lang.Register;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A base implementation of {@link Appender} suitable for most cases.
  *
  * @param <T> the type of output of the formatter

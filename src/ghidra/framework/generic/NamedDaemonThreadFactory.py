@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package generic.util;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
-/**
+# /**
  * NamedDaemonThreadFactory is a thread factory which forms daemon threads
  * with a specified name prefix for the Java concurrent Executors pools.
  *

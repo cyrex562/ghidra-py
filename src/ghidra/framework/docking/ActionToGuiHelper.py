@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Set;
 import docking.action.DockingActionIf;
 import util.CollectionUtils;
 
-/**
+# /**
  * A class that exists primarily to provide access to action-related package-level methods of the
  * {@link DockingWindowManager}.  This allows the manager's interface to hide methods that 
  * don't make sense for public consumption.

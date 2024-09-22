@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -51,7 +51,7 @@ import sarif.model.SarifDataFrame;
 import sarif.view.ImageArtifactDisplay;
 import sarif.view.SarifResultsTableProvider;
 
-/**
+# /**
  * Controller for handling interactions between the SARIF log file and Ghidra
  */
 public class SarifController implements ObjectSelectedListener<Map<String, Object>> {

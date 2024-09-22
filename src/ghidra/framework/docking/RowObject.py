@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.table.TableModel;
 
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * An object that represents a row in a table.  Most tables used in the system create models that
  * use their own row objects (see {@link AbstractSortedTableModel}).  This class exists to 
  * compensate for those models that do not do this, but instead rely on the classic Java 

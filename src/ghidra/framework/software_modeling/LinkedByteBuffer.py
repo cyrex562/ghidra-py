@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.pcode;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
+# /**
  * A byte buffer that is stored as a linked list of pages.  Each page holds BUFFER_SIZE bytes.
  * A Position object acts as an iterator over the whole buffer.  The buffer can be populated
  * from a stream, either all at once or "as needed" when a Position object iterates past

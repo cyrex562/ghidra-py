@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.util.Iterator;
 import db.DBRecord;
 import db.RecordIterator;
 
-/**
+# /**
  * Converts a record iterator into an instruction iterator.
  */
 

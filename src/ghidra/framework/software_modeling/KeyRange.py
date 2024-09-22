@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.address;
 
-/**
+# /**
  * Class for holding a range of database keys (long values)
  */
 public class KeyRange {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import util.CollectionUtils;
 
-/**
+# /**
  * Base implementation for GTree nodes. Direct subclasses of this class are expected to have all
  * their children in hand when initially constructed (either in their constructor or externally
  * using {@link #addNode(GTreeNode)} or {@link #setChildren(List)}. For large trees, subclasses

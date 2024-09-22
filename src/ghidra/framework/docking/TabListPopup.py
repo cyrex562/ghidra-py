@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.list.GListCellRenderer;
 import docking.widgets.searchlist.*;
 import generic.util.WindowUtilities;
 
-/**
+# /**
  * Undecorated dialog for showing a popup window displaying a filterable, scrollable list of tabs
  * in a {@link GTabPanel}.
  *

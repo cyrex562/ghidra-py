@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.symbol;
 
-/**
+# /**
  * <code>ShiftedReference</code> is a memory reference whose "to" address is
  * computed from a base value left shifted by a shift amount.
  */

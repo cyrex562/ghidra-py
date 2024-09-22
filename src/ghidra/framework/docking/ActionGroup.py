@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.actions.dialog;
 
-/**
+# /**
  * This enum defines the actions category groups. Actions displayed in the {@link ActionChooserDialog}
  * will be organized into these groups.
  */

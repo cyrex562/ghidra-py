@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * {@link GhidraURLResultHandlerAdapter} provides a basic result handler for 
  * {@link GhidraURLQuery}.  All uses of this adapter should override one or
  * both of the processing methods {@link #processResult(DomainFile, URL, TaskMonitor)}

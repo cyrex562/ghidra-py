@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import help.Help;
 import help.HelpService;
 import resources.Icons;
 
-/**
+# /**
  * A dialog that controls the panels for going to "Next" and "Previous" in some
  * process that the user is being led through.
  */
@@ -404,7 +404,7 @@ public class WizardManager extends ReusableDialogComponentProvider implements Wi
 		currWizPanel = p;
 		currWizPanel.addWizardPanelListener(this);
 
-/* todo:
+# /* todo:
 // if this is the 1st time rendering this panel,
 // then initialize it
 //

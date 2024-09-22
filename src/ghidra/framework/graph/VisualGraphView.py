@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.graph.viewer.layout.LayoutProvider;
 import ghidra.graph.viewer.vertex.VertexClickListener;
 import ghidra.graph.viewer.vertex.VertexFocusListener;
 
-/**
+# /**
  * A view object, where 'view' is used in the sense of the Model-View-Controller (MVC) pattern.
  * This class will contain all UI widgets need to display and interact with a graph.
  *

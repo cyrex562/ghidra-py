@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin;
 import ghidra.graph.VisualGraph;
 import ghidra.graph.viewer.*;
 
-/**
+# /**
  * An interface to provide a common set of methods for classes that could not otherwise 
  * extend an abstract class.  This interface signals that the implementer is a {@link VisualGraph}
  * mouse plugin.

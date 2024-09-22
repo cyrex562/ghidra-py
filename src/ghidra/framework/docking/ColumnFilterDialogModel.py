@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 
-/**
+# /**
  * This class is for constructing and editing {@link ColumnBasedTableFilter}. It is used by the
  * {@link ColumnFilterDialog} and exists primarily to make testing easier.
  *

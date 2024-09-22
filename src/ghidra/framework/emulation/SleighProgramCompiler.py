@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.program.model.pcode.Varnode;
 import ghidra.sleigh.grammar.Location;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Methods for compiling p-code programs for various purposes
  * 
  * <p>

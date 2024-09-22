@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.generic.util.datastruct.TreeValueSortedMap;
 import ghidra.generic.util.datastruct.ValueSortedMap;
 import ghidra.graph.*;
 
-/**
+# /**
  * Dijkstra's shortest-path algorithm
  * 
  * <p>

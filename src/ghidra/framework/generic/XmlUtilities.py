@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.Msg;
 import ghidra.util.NumericUtilities;
 import util.CollectionUtils;
 
-/**
+# /**
  * A set of utility methods for working with XML.
  *
  */

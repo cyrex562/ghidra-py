@@ -15,11 +15,11 @@
  */
 package ghidra.app.cmd.memory;
 
-import ghidra.framework.store.LockException;
-import ghidra.program.model.address.Address;
-import ghidra.program.model.address.AddressOverflowException;
-import ghidra.program.model.mem.*;
-import ghidra.util.exception.CancelledException;
+# import ghidra.framework.store.LockException;
+# import ghidra.program.model.address.Address;
+# import ghidra.program.model.address.AddressOverflowException;
+# import ghidra.program.model.mem.*;
+# import ghidra.util.exception.CancelledException;
 
 /**
  * Command for adding a new memory block initialized with a specific byte.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import docking.widgets.label.GLabel;
 import ghidra.framework.preferences.Preferences;
 import ghidra.util.filechooser.GhidraFileFilter;
 
-/**
+# /**
  * Panel for entering a file name that includes a title border, a text field
  * for entering a filename, and a button for bringing up a file chooser dialog.
  */

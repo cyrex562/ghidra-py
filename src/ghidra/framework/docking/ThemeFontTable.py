@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import generic.theme.FontValue;
 import generic.theme.ThemeManager;
 import ghidra.util.Swing;
 
-/**
+# /**
  * Font Table for Theme Dialog
  */
 public class ThemeFontTable extends JPanel implements ActionContextProvider, ThemeTable {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util;
 
-/**
+# /**
  * 
  * Methods for saving and restoring Strings and Java primitives or arrays of
  * Strings and primitives. The order in which the puts are done must the

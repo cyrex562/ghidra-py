@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.pyghidra.property;
 
 import java.lang.invoke.MethodHandle;
 
-/**
+# /**
  * The {@link JavaProperty} for the primitive <b>long</b> type
  */
 public final class LongJavaProperty extends AbstractJavaProperty<Long> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.graph.viewer.actions;
 import ghidra.graph.VisualGraph;
 import ghidra.graph.viewer.VisualVertex;
 
-/**
+# /**
  * Context for a {@link VisualGraph} when a vertex is selected
  *
  * @param <V> the vertex type

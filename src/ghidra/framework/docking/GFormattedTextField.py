@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import generic.theme.GColor;
 import generic.theme.GThemeDefaults.Colors;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * {@link GFormattedTextField} provides an implementation of {@link JFormattedTextField} 
  * which facilitates entry validation with an indication of its current status.
  * <br>

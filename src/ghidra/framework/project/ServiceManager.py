@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Class for managing plugin services. A plugin may provide a service, or
  * it may depend on a service. The ServiceManager maintains a list of
  * service names and plugins that provide those services. A plugin may

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.widgets.table.constraint.ColumnConstraint;
 import generic.theme.GThemeDefaults.Colors.Messages;
 import ghidra.util.HTMLUtilities;
 
-/**
+# /**
  * An editor that is always invalid.
  * <p>
  * Used internally to indicate a constraint does not provide an editor of its own.

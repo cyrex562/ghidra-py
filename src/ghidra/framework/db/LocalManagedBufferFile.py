@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.TaskMonitorAdapter;
 
-/**
+# /**
  * <code>LocalManagedBufferFile</code> implements a BufferFile as block-oriented
  * random-access file which utilizes a <code>BufferFileManager</code> to 
  * identify and facilitate versioning of buffer files.  This type of

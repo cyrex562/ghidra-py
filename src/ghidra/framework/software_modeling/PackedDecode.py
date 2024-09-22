@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import ghidra.program.model.address.AddressFactory;
 import ghidra.program.model.address.AddressSpace;
 
-/*
+# /*
  * A byte-based decoder designed to marshal info to the decompiler efficiently
  * All bytes in the encoding are expected to be non-zero.  Element encoding looks like
  *    - 01xiiiii is an element start

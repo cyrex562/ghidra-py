@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package log;
 
-/**
+# /**
  * An interface that allows clients to receive log messages.
  */
 public interface LogListener {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.actions;
 
-/**
+# /**
  * A marker interface to signal that the implementing action is temporary and gets built 
  * automatically by the tool
  */

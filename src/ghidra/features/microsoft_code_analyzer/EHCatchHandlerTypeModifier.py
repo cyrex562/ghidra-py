@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.cmd.data.exceptionhandling;
 
-/**
+# /**
  * This is a class for dealing with the adjectives (modifier flags) from an exception handling
  * HandlerType data type.
  * <br>

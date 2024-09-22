@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.exception.AssertException;
 import help.HelpService;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * Node object for managing one or more components. If more that one managed component
  * is active, then this node will create a tabbedPane object to contain the active components.
  */

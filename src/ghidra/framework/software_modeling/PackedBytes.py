@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Arrays;
 
-/**
+# /**
  * A class for dynamically collecting a stream of bytes and then later dumping those bytes to a stream
  * It allows the bytes to be edited in the middle of collection
  *

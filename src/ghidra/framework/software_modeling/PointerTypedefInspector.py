@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.program.model.address.*;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * <code>PointerTypeDefInspector</code> provides utilities for inspecting {@link Pointer} - {@link TypeDef}s.  
  * These special typedefs allow a modified-pointer datatype to be used for special situations where
  * a simple pointer will not suffice and special stored pointer interpretation/handling is required.  

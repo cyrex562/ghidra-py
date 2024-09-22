@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.indexedscrollpane;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * Interface for scrolling a FieldPanel or container of a group of FieldPanels which displays
  * a list of displayable items (layouts)
  */

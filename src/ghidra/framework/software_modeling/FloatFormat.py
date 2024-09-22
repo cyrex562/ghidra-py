@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.help.UnsupportedOperationException;
 import ghidra.pcode.utils.Utils;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * {@link FloatFormat} provides IEEE 754 floating-point encoding formats in support of
  * floating-point data types and floating-point emulation.  A combination of Java 
  * float/double and {@link BigFloat} are used to facilitate floating-point operations. 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Objects;
 import docking.widgets.table.constrainteditor.BooleanConstraintEditor;
 import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 
-/**
+# /**
  * Column Constraint for boolean values where the column values must match the constraint value
  * of either true of false.
  */

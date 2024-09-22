@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.HTMLUtilities;
 import ghidra.util.Swing;
 import resources.Icons;
 
-/**
+# /**
  * Dialog for displaying and invoking docking actions. The dialog will display a mix of local
  * and global actions that varies depending on its current {@link ActionDisplayLevel}.
  */

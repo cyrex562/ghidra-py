@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.graph.viewer.VisualVertex;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A layout provider that works on {@link JungDirectedVisualGraph}s.  This class allows the 
  * Jung layouts to be used where {@link VisualGraph}s are used.
  *

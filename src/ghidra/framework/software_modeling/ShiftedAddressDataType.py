@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.DataConverter;
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * Provides a definition of a Double Word within a program.
  */
 public class ShiftedAddressDataType extends BuiltIn {

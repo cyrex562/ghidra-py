@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * A task monitor that tracks all monitor state, but is not attached to any UI component
  * 
  * <p><b>Synchronization Policy</b>:<br>

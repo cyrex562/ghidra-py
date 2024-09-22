@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.filechooser;
 import java.io.File;
 import java.io.IOException;
 
-/**
+# /**
  * An extension of File that does not translate to the
  * native operating system's file separator.
  * For example, on Windows:

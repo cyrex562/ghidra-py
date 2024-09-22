@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * An Unsigned Little Endian Base 128 integer data type.
  */
 public class UnsignedLeb128DataType extends AbstractLeb128DataType {

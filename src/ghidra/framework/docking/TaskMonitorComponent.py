@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.layout.VerticalLayout;
 import resources.Icons;
 
-/**
+# /**
  * Component that contains a progress bar, a progress icon, and a cancel
  * button to cancel the task that is associated with this task monitor.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.main.datatree;
 
 import java.io.Serializable;
 
-/**
+# /**
  * Version info that is inside of the VersionInfoTransferable;
  * must be serializable.
  */

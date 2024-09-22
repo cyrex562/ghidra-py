@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.AbstractAction;
 
 import ghidra.framework.main.logviewer.event.FVEvent.EventType;
 
-/**
+# /**
  * Handles the actions required when the user presses the page up key. 
  *
  */

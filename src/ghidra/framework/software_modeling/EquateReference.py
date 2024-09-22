@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.symbol;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Interface to define an equate reference. Equate references consist of an 
  * address and an operand index.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-/**
+# /**
  * An annotation for a specific collection of hierarchical data
  *
  * This record parallels the XML concept of an element.  An ElementId describes a collection of data, where each

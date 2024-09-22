@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import docking.widgets.table.constraint.ColumnConstraint;
 import docking.widgets.table.constraint.RangeColumnConstraint;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * A constraint editor for specifying ranges of floating-point numbers (Float and Double)
  */
 public class DoubleRangeConstraintEditor extends AbstractColumnConstraintEditor<Double> {

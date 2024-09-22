@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.data.CompositeInternal;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Version 5 and 6 implementation for accessing the Composite database table. 
  * Version 5 introduced the retained computed alignment to reduce the
  * need for recalculation and to allow for improved change detection.

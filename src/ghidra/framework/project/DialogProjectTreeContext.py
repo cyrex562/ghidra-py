@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.tree.GTreeNode;
 import ghidra.framework.main.datatable.ProjectTreeContext;
 import ghidra.framework.model.*;
 
-/**
+# /**
  * Context specific to the DataTreeDialog.
  */
 public class DialogProjectTreeContext extends DefaultActionContext implements ProjectTreeContext {

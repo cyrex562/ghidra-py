@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.address;
 
-/**
+# /**
  * Address Space for (intel) 16-bit protected mode programs. This space produces
  * SegmentedAddress objects whose underlying (flat) offset encodes both the
  * segment and the segment offset without losing information. There is no possibility

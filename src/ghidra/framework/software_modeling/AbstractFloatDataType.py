@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.pcode.floatformat.*;
 import ghidra.pcode.utils.Utils;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * Provides a definition of a Float within a program.
  */
 public abstract class AbstractFloatDataType extends BuiltIn {

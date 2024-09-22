@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import docking.widgets.list.GComboBoxCellRenderer;
 import ghidra.util.HelpLocation;
 import ghidra.util.layout.*;
 
-/**
+# /**
  * Dialog that allows the user to select options related to table filtering. It consists
  * of the following sections:
  * 

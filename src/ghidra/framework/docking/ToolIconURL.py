@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.ImageIcon;
 import resources.ResourceManager;
 import resources.icons.UnresolvedIcon;
 
-/**
+# /**
  * Container class for an icon and its location. If the location is
  * not valid, then a default "bomb" icon is used as the icon.
  */

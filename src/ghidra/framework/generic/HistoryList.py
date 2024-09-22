@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.util.SystemUtilities;
 import ghidra.util.datastruct.FixedSizeStack;
 
-/**
+# /**
  * An object meant to track items with the ability to go back and forth within the list of
  * items.
  * 

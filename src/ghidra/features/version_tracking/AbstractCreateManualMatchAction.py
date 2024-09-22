@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.feature.vt.gui.provider.functionassociation.FunctionAssociationCon
 import docking.ActionContext;
 import docking.action.DockingAction;
 
-/**
+# /**
  * An abstract action that can be extended for each of the actions that create a manual match
  * plus possibly making some follow on changes related to that match.
  * This class provides default action enablement based on context.

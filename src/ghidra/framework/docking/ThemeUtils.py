@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.framework.Application;
 import ghidra.util.Msg;
 import ghidra.util.filechooser.ExtensionFileFilter;
 
-/**
+# /**
  * Some common methods related to saving themes. These are invoked from various places to handle
  * what to do if a change is made that would result in loosing theme changes.
  */

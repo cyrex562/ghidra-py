@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.WebColors;
 import ghidra.util.bean.opteditor.OptionsVetoException;
 
-/**
+# /**
  * Class for managing graph display options. This includes color options for each vertex
  * and edge type and shapes for vertex types.
  */

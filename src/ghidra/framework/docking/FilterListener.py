@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.filter;
 
-/**
+# /**
  * An interface that will be called when the text filter changes.
  */
 public interface FilterListener {

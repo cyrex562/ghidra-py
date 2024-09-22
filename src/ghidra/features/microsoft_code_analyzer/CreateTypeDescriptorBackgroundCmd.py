@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * This command will create a TypeDescriptor data type. Since unsized arrays are not properly
  * handled due to the current data type API limitations, this creates a dynamic RTTI0DataType.
  */

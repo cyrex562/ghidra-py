@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.util.CodeUnitInsertionException;
 import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * This command will create a virtual function table using an array data type. 
  * If there are any existing instructions in the area to be made into data, the command will fail.
  * Any data in the area will be replaced with the new dataType.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.util.NoSuchElementException;
 
-/**
+# /**
  * <code>BufferFile</code> facilitates read/write access to buffer oriented file.
  * Access to related resources, such as parameters and change data, is also facilitated.
  */

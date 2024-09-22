@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import docking.widgets.table.constrainteditor.MappedColumnConstraintEditor;
 import generic.json.Json;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * Class that maps one type of column constraint into another.  Typically, these are created
  * automatically based on {@link ColumnTypeMapper} that are discovered by the system.  For example,
  * {@literal if you have a column type of "Foo", and you create a ColumnTypeMapper<Foo, String>,

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package db;
 
-/**
+# /**
  * <code>NoTransactionException</code> occurs when a database modification is
  * attempted when no transaction exists.
  */

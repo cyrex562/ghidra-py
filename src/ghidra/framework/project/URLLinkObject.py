@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.protocol.ghidra.GhidraURL;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * {@code DomainObjectAdapterLink} object provides a Ghidra URL (see {@link GhidraURL}) wrapper
  * where the URL is intended to refer to a {@link DomainFile} within another local or remote
  * project/repository.  Link files which correspond to this type of {@link DomainObject} are

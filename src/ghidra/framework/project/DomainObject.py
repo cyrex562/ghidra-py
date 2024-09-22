@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.task.TaskMonitor;
 import utility.function.ExceptionalCallback;
 import utility.function.ExceptionalSupplier;
 
-/**
+# /**
  * <CODE>DomainObject</CODE> is the interface that must be supported by
  * data objects that are persistent. <CODE>DomainObject</CODE>s maintain an
  * association with a <CODE>DomainFile</CODE>. A <CODE>DomainObject</CODE> that

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.util.HelpLocation;
 
 import javax.swing.JComponent;
 
-/**
+# /**
  * Register help for a specific component.
  */
 public interface HelpActionManager {

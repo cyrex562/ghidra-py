@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.framework.options.ToolOptions;
 import gui.event.MouseBinding;
 import util.CollectionUtils;
 
-/**
+# /**
  * An object that maps actions to key strokes and mouse bindings.
  * <p>
  * This class knows how to load all system actions and how to load any key and mouse bindings for

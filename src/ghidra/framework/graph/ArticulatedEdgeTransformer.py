@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.graph.viewer.*;
 import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * An edge shape that renders as a series of straight lines between articulation points.
  * @param <V> the vertex type
  * @param <E> the edge type

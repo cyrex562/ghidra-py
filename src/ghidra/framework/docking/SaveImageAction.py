@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import generic.util.image.ImageUtils;
 import ghidra.util.Msg;
 import resources.Icons;
 
-/**
+# /**
  * An action to save the image from a NavigableImagePanel to a file.
  * <p>
  * The user is asked to provide a file to save the image to.

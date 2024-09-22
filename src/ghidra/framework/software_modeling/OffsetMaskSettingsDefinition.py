@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.math.BigInteger;
 import ghidra.docking.settings.NumberSettingsDefinition;
 import ghidra.docking.settings.Settings;
 
-/**
+# /**
  * Setting definition for a pointer offset bit-mask to be applied prior to any 
  * bit-shift (if specified) during the computation of an actual address offset.  
  * Mask is defined as an unsigned long value where

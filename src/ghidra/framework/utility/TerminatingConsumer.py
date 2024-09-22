@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package utility.function;
 
 import java.util.function.Consumer;
 
-/**
+# /**
  * TerminatingConsumer is a Consumer {@link Consumer} that can request termination
  * of the supplier once some condition is reached, for example some number of consumed results
  * accepted.  If termination is required override the terminationRequested()

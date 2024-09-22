@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -23,7 +23,7 @@ import java.security.cert.X509Certificate;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.x500.X500Principal;
 
-/**
+# /**
  * <code>SignatureCallback</code> provides a Callback implementation used
  * to perform PKI authentication.  This callback is instantiated
  * by the server with a random token which must be signed using the 

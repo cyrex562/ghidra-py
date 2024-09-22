@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking;
 
 import java.awt.Cursor;
 
-/**
+# /**
  * An enum that represents available drag-n-drop options for a docking tool.  There are also
  * convenience methods for translating this drop code into a cursor and window position.
  */

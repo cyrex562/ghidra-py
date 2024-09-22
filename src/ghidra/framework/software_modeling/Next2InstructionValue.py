@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.program.model.pcode.Decoder;
 import ghidra.program.model.pcode.DecoderException;
 
-/**
+# /**
  * The integer offset of the address following the current instruction
  */
 public class Next2InstructionValue extends PatternValue {

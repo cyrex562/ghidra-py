@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.program.model.pcode.Varnode;
 import ghidra.util.exception.InvalidInputException;
 import ghidra.xml.*;
 
-/**
+# /**
  * Consume a register per primitive member of an aggregate data-type
  * 
  * The data-type is split up into its underlying primitive elements, and each one

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 
 import org.xml.sax.Attributes;
 
-/**
+# /**
  * A class to represent the start or end tag from an XML file.
  */
 public class XmlParserElement {

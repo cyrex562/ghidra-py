@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import ghidra.util.exception.UserAccessException;
 
-/**
+# /**
  * <code>RepositoryAdapter</code> provides a persistent wrapper for a remote RepositoryHandle 
  * which may become invalid if the remote connection were to fail.  Connection recovery is provided 
  * by any method call which must communicate with the server.

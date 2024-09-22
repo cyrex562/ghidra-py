@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Enables the Find Dialog for searching through the current page of a help document.
  */
 class HelpViewSearcher {

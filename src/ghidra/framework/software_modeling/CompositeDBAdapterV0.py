@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.UniversalID;
 import ghidra.util.UniversalIdGenerator;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Version 0 implementation for accessing the Composite database table. 
  */
 class CompositeDBAdapterV0 extends CompositeDBAdapter implements RecordTranslator {

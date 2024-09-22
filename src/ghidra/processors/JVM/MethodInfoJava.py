@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.javaclass.format.constantpool.*;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Each method, including each instance initialization method (2.9) and the class or
  * interface initialization method (2.9), is described by a method_info structure. No
  * two methods in one class file may have the same name and descriptor (4.3.3).

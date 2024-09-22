@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.worker.Job;
 import ghidra.util.worker.Worker;
 
-/**
+# /**
  * Helper class to execute a Runnable in a separate thread and provides a
  * progress monitor component that is shown as needed. This class can support several
  * different scheduling models described below.

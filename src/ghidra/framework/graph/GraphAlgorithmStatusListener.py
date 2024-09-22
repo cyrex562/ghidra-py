@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.graph.algo;
 
-/**
+# /**
  * An interface and state values used to follow the state of vertices as they are processed by 
  * algorithms
  *

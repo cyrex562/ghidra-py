@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import ghidra.util.task.TaskLauncher;
 import ghidra.util.xml.GenericXMLOutputter;
 import util.CollectionUtils;
 
-/**
+# /**
  * Implementation of service used to manipulate tools.
  */
 class ToolServicesImpl implements ToolServices {

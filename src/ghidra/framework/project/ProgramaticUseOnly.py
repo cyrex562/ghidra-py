@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main;
 
-/**
+# /**
  * Marker interface for plugins that only get constructed programmatically for specific purposes.
  * Plugins that implement this interface should never be added via the config GUIs.
  */

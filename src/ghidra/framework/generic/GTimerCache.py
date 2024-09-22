@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.time.Duration;
 import java.util.*;
 import java.util.Map.Entry;
 
-/**
+# /**
  * Class for caching key,value entries for a limited time and cache size. Entries in this cache
  * will be removed after the cache duration time has passed. If the cache ever exceeds its capacity,
  * the least recently used entry will be removed.

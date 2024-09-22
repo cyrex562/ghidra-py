@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.framework.store.local;
 import java.io.File;
 import java.io.IOException;
 
-/**
+# /**
  * <code>DataDirectoryException</code> is thrown when a folder item can not be 
  * created because its associated data directory already exists.
  */

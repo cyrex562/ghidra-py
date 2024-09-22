@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.mem;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * <code>DumbMemBufferImpl</code> extends <code>MemoryBufferImpl</code>
  * with an internal cache buffer size of 16-bytes but will use the underlying memory
  * if needed.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.JButton;
 
 import generic.theme.GThemeDefaults.Colors;
 
-/**
+# /**
  * A button meant to be used to show a chooser dialog.
  */
 public class BrowseButton extends JButton {

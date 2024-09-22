@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.model.util.*;
 import ghidra.util.*;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * Database implementation of CodeUnit.
  *
  * NOTE!! DataComponents only have a unique key within its parent Struct/Array.  This places a constraint on

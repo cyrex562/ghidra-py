@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package db;
 
 import db.buffers.DataBuffer;
 
-/**
+# /**
  * Provides data buffer for encoding use.
  */
 class BinaryDataBuffer extends DataBuffer {

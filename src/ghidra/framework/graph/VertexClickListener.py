@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.graph.viewer.VisualVertex;
 import ghidra.graph.viewer.event.mouse.VertexMouseInfo;
 import ghidra.graph.viewer.event.mouse.VisualGraphMousePlugin;
 
-/**
+# /**
  * A listener that allows clients to be notified of vertex clicks.  Normal 
  * mouse processing is handled by the {@link VisualGraphMousePlugin} class.  This is a
  * convenience method so that clients do not have to deal with the mouse plugin.

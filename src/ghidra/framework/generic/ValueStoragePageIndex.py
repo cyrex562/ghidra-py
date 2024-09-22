@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.util.datastruct.RedBlackLongKeySet;
 import java.io.Serializable;
 
 
-/**
+# /**
  * PropertyPageIndex is used to find the property pages before and
  *   after a given property page.
  */

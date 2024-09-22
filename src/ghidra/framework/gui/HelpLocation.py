@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.net.URL;
 
 import resources.ResourceManager;
 
-/**
+# /**
  * Class to identify where help can be located for some object. Help can be
  * set on actions or dialogs.
  */

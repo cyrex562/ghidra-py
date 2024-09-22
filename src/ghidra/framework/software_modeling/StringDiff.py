@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.database.code;
 
 import java.util.Objects;
 
-/**
+# /**
  * Container object that holds a start and end position within a string. A list of StringDiffs 
  * is used to keep track of changes made to a string.
  */

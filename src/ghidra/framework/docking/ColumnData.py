@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table.constraint;
 
-/**
+# /**
  * Interface for providing column data and a table's DataSource to a constraint editor.  Some editors
  * require access to the table column data.  One example is a String "Starts With" column might
  * pre-process the data to provide an autocompletion feature in the editor.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.IOException;
 import docking.dnd.GenericDataFlavor;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Defines data that is available for drag/drop and clipboard transfers.
  * The data is a ToolButton object.
  */

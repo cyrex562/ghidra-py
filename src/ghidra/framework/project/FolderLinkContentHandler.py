@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * {@code FolderLinkContentHandler} provide folder-link support.  
  * Implementation relies on {@link AppInfo#getActiveProject()} to provide life-cycle 
  * management for related transient-projects opened while following folder-links. 
@@ -102,7 +102,7 @@ public class FolderLinkContentHandler extends LinkHandler<NullFolderDomainObject
 
 }
 
-/**
+# /**
  * Dummy domain object to satisfy {@link FolderLinkContentHandler#getDomainObjectClass()}
  */
 final class NullFolderDomainObject extends DomainObjectAdapterDB {

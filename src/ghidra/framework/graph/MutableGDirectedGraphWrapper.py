@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.function.Function;
 import ghidra.graph.jung.JungDirectedGraph;
 import util.CollectionUtils;
 
-/**
+# /**
  * A class that can wrap a {@link GDirectedGraph} and allows for vertex and edge additions 
  * without changing the underlying graph.
  *

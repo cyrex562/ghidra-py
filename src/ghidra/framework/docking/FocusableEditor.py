@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table;
 
-/**
+# /**
  * Signals that the implementing cell editor desires to be notified when editing begins so that the
  * editor can request focus on the right widget.
  */

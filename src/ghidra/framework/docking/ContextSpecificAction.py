@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.action;
 
 import docking.ActionContext;
 
-/**
+# /**
  * This class is used simplify DockingAction logic for actions that work with
  * specific {@link ActionContext}.  It automatically checks the ActionContext
  * and disables/invalidates/prevent popup, if the context is not the expected

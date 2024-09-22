@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * StringArray.java
  *
  * Created on February 14, 2002, 10:29 AM
@@ -24,7 +24,7 @@ package ghidra.util.datastruct;
 
 import java.io.Serializable;
 
-/**
+# /**
  *
  * Array of Strings that grows as needed.
  */

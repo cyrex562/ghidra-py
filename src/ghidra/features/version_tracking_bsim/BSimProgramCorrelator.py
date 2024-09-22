@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.NonThreadedXmlPullParserImpl;
 import ghidra.xml.XmlPullParser;
 
-/**
+# /**
  * Correlator which discovers functional matches by comparing data-flow feature vectors.
  * An initial seed set of high confidence matches are chosen.  The match set is extended
  * from the seeds by using local neighborhoods around the accepted match to efficiently

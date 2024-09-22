@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.symbol;
 
-/**
+# /**
  * Reference object for entry points
  */
 public interface EntryPointReference extends Reference {

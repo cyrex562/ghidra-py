@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.plugin.assembler.sleigh.sem.*;
 import ghidra.app.plugin.processors.sleigh.expression.PatternExpression;
 import ghidra.asm.wild.WildOperandInfo;
 
-/**
+# /**
  * The result of assembling an instruction with the wildcard assembler
  */
 public interface WildAssemblyResolvedPatterns extends AssemblyResolvedPatterns {

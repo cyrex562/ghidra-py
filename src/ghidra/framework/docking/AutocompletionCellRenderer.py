@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 
-/**
+# /**
  * This is a default list cell renderer for the {@link TextFieldAutocompleter} suitable for
  * extension if a user wishes to customize it.
  * 

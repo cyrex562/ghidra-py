@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.plugin.core.console.CodeCompletion;
 import ghidra.app.plugin.core.interpreter.InterpreterConnection;
 import ghidra.util.Disposable;
 
-/**
+# /**
  * Console interface providing only the methods which need to be implemented in Python.
  * 
  * This interface is for <b>internal use only</b> and is only public so it can be

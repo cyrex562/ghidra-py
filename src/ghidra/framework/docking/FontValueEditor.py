@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.beans.PropertyChangeListener;
 import docking.options.editor.FontPropertyEditor;
 import generic.theme.*;
 
-/**
+# /**
  *  Editor for Theme fonts
  */
 public class FontValueEditor extends ThemeValueEditor<Font> {

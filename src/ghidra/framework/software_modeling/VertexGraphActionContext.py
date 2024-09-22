@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Set;
 
 import docking.ComponentProvider;
 
-/**
+# /**
  * GraphActionContext for when user invokes a popup action on a graph vertex.
  */
 public class VertexGraphActionContext extends GraphActionContext {

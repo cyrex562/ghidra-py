@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.widgets.textfield.IntegerTextField;
 import generic.theme.GThemeDefaults.Colors.Messages;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * A constraint editor for specifying ranges of unsigned long values.  There are no direct
  * constraints that use the editor since java doesn't have unsigned long types. This exists for
  * objects that represent an unsigned long value and are converted to BigInteger for editing.

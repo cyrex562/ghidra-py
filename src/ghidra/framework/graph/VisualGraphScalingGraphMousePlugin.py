@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import edu.uci.ics.jung.visualization.control.ScalingGraphMousePlugin;
 import ghidra.graph.viewer.*;
 import ghidra.graph.viewer.options.VisualGraphOptions;
 
-/**
+# /**
  * Overridden implementation that allows us to change scaling behavior through options.  This 
  * class works on the opposite modifier setup as FunctionGraphScrollWheelPanningPlugin.
  * 

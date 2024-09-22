@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.task.Task;
 import ghidra.util.task.TaskLauncher;
 import ghidra.util.task.TaskListener;
 
-/**
+# /**
  *  This action runs the {@link AutoVersionTrackingTask}
  */
 public class AutoVersionTrackingAction extends DockingAction {

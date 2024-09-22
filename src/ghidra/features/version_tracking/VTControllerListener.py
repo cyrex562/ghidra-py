@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -22,7 +22,7 @@ import ghidra.feature.vt.gui.util.MatchInfo;
 import ghidra.framework.model.DomainObjectChangedEvent;
 import ghidra.framework.options.Options;
 
-/**
+# /**
  * Version tracking providers should implement this interface if they are interested in
  * being notified about version tracking state changes by the VTController.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.math.BigInteger;
 import ghidra.program.model.lang.SpaceNames;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * The AddressSpace class is used to represent a unique context for addresses.  Programs can
  * have multiple address spaces and address 0 in one space is not the same as address 0 in
  * another space.

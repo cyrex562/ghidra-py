@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.JComponent;
 import docking.widgets.fieldpanel.support.RowColLocation;
 import generic.theme.GThemeDefaults.Colors;
 
-/**
+# /**
  * Used to force a clip to happen by using this field with space characters and size that far
  * exceeds the available painting width.
  */

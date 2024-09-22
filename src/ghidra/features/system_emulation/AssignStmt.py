@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.pcode.struct;
 import ghidra.pcode.struct.StructuredSleigh.*;
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * An assignment statement
  */
 class AssignStmt extends AbstractStmt implements RValInternal, StmtWithVal {

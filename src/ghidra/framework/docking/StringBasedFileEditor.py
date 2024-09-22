@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.options.editor;
 
 import java.beans.PropertyEditor;
 
-/**
+# /**
  * A {@link PropertyEditor} that allows the user to edit strings by way of a File editor, as is
  * done by {@link StringBasedFileEditor}.  In other words, the user can use the file chooser to
  * pick a file.  That file is then turned into a String. 

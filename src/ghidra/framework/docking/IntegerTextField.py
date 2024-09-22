@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import generic.theme.GThemeDefaults.Colors.Messages;
 import generic.theme.Gui;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * TextField for entering integer numbers, either in decimal or hex.
  *
  * <P>

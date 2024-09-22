@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * PropertySetPage.java
  *
  * Created on February 20, 2002, 9:30 AM
@@ -27,7 +27,7 @@ import ghidra.util.Saveable;
 import ghidra.util.datastruct.*;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  * Manages property values of type int, String, Object, and
  * "void"  for a page of possible addresses. Void serves as a marker 
  * for whether an address has a property. The derived class for each type holds

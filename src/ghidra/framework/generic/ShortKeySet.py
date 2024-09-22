@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.datastruct;
 
-/**
+# /**
  * The ShortKeySet provides an interface for managing a set of ordered short keys
  * between the values of 0 and N.  It can add keys, remove keys, find the next key
  * greater than some value , and find the previous key less than some value.

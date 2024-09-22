@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.lang.reflect.Method;
 
 import ghidra.framework.store.FileSystem;
 
-/**
+# /**
  * Adapter for the domain folder change listener.
  * @see DomainFolderChangeListener for details regarding listener use
  */

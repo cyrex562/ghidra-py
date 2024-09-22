@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.math.BigInteger;
 
 import docking.widgets.fieldpanel.FieldPanel;
 
-/**
+# /**
  * Listener interface for notification when the top of screen position changes.
  */
 public interface ViewListener {

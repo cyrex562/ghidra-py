@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.exception;
 
 
 
-/**
+# /**
  * exception thrown whenever some container is expected to be empty and it isn't.
  */
 public class NotEmptyException extends UsrException {

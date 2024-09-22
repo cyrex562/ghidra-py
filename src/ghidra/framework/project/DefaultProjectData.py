@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.exception.DuplicateFileException;
 import ghidra.util.task.*;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Helper class to manage files within a project.
  */
 public class DefaultProjectData implements ProjectData {

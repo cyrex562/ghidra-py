@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.net.ssl.SSLSocketFactory;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * <code>ApplicationSSLSocketFactory</code> provides a replacement for the default
  * <code>SSLSocketFactory</code> which utilizes the default SSLContext established
  * by {@link SSLContextInitializer}.

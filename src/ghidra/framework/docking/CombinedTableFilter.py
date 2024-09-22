@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table;
 
 import java.util.*;
 
-/**
+# /**
  * Combines multiple Table Filters into a single TableFilter that can be applied.  All contained
  * filters must pass for this combined filter to pass.
  *

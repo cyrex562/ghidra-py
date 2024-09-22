@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.framework.ApplicationConfiguration;
 import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * <code>SleighCompileLauncher</code> Sleigh compiler launch provider
  */
 public class SleighCompileLauncher implements GhidraLaunchable {

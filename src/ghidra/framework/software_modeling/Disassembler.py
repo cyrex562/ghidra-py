@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class to perform disassembly.  Contains the logic to follow instruction
  * flows to continue the disassembly.
  * 17-Nov-2008: moved to ghidra.program.disassemble package since this is now used during 

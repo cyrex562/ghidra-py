@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.*;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * {@link GhidraFolderData} provides the managed object which represents a project folder that 
  * corresponds to matched folder paths across both a versioned and private 
  * filesystem and viewed as a single folder at the project level.  This class closely mirrors the

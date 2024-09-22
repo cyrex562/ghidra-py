@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.jar.ResourceFile;
 import ghidra.framework.ApplicationProperties;
 import ghidra.framework.GModule;
 
-/**
+# /**
  * The Application Layout base class defines the customizable elements of the application's
  * directory structure.  Create a subclass to define a custom layout.
  * <p>

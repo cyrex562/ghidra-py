@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.concurrent;
 
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Interface that defines the Runnable to work on the items given to the 
  * {@link ConcurrentQ#add(Object) ConcurrentQ.add(I)} methods.  Each item that is processed will be handed to the
  * {@link #run(Object, TaskMonitor) run(I, TaskMonitor)} method of the implementing class.

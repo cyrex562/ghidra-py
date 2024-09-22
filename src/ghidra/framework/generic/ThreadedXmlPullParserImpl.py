@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import generic.jar.ResourceFile;
 import ghidra.util.Msg;
 import ghidra.util.xml.XmlUtilities;
 
-/**
+# /**
  * Constructs a new XML parser. This is class is designed for reading XML files.
  * It is built on top of a ContentHandler. However, instead of being a "push"
  * pattern, it has been translated into a "pull" pattern. That is, the user of

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.model;
 
 import ghidra.framework.plugintool.PluginEvent;
 
-/**
+# /**
  * Interface to be implemented by objects that want to receive PluginEvents.
  * Tools must be registered for a particular event to actually receive it.
  *

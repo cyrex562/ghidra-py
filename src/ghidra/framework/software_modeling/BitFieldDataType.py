@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.util.DataConverter;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * <code>BitFieldDataType</code> provides a means of defining a minimally sized bit-field
  * for use within data structures.  The length (i.e., storage size) of this bitfield datatype is
  * the minimum number of bytes required to contain the bitfield at its specified offset.

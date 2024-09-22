@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.model;
 
 import ghidra.framework.data.ContentHandler;
 
-/** 
+# /** 
  * A class that describes a content types and the tool used to open it. 
  */
 public class ToolAssociationInfo {

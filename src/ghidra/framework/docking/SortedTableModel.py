@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table;
 
 import javax.swing.table.TableModel;
 
-/**
+# /**
  * A table model that allows for setting the sorted column(s) and direction
  */
 public interface SortedTableModel extends TableModel {

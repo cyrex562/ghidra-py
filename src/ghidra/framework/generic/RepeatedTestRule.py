@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: Apache License 2.0
  */
 package generic.test.rule;
@@ -10,7 +10,7 @@ import org.junit.runners.model.Statement;
 
 import generic.test.AbstractGenericTest;
 
-/**
+# /**
  * A test rule which processes the {@link Repeated} annotation
  * 
  * <p>

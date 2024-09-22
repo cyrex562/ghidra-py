@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.theme.GIcon;
 import ghidra.framework.OperatingSystem;
 import ghidra.framework.Platform;
 
-/**
+# /**
  * A class to handle the space requirements on the status bar that vary for different OSes.  For 
  * example, the Mac requires extra space on the status bar, due to the drag icon the Mac uses.
  */

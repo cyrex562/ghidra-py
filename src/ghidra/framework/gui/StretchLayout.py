@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.layout;
 import java.awt.*;
 import java.io.Serializable;
 
-/**
+# /**
   * A layout manager that gives the affect of CENTER in BorderLayout.
   */
 public class StretchLayout implements LayoutManager, Serializable {

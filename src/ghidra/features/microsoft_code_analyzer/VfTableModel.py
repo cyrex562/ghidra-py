@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.address.AddressOutOfBoundsException;
 import ghidra.program.model.data.*;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Model for vf table information associated with a CompleteObjectLocator (RTTI 4) data type.
  * <p>
  * VF Table

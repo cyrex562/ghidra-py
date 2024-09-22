@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table.constraint;
 
 import java.util.regex.Pattern;
 
-/**
+# /**
  * String column constraint for matching column values if they don't contain the constraint value pattern.
  */
 public class StringNotContainsColumnConstraint extends StringContainsColumnConstraint {

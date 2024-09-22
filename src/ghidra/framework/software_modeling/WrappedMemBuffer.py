@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressOutOfBoundsException;
 import ghidra.util.GhidraDataConverter;
 
-/**
+# /**
  * WrappedMemBuffer implements a MemBuffer that provides a zero based index
  * on top of an underlying membuffer with at a given address.  It can buffer N bytes
  * at time using the constructor that takes a cache size.  However the default

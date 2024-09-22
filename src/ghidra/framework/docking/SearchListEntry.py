@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.searchlist;
 
-/**
+# /**
  * An record to hold the list item and additional information needed to properly render the item.
  * @param value the list item (T)
  * @param category the category for the item

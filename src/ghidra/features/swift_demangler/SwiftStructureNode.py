@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.app.util.demangler.swift.SwiftDemangledNodeKind;
 import ghidra.app.util.demangler.swift.SwiftDemangler;
 import ghidra.app.util.demangler.swift.datatypes.*;
 
-/**
+# /**
  * A {@link SwiftDemangledNodeKind#Structure} {@link SwiftNode}
  */
 public class SwiftStructureNode extends SwiftNode {

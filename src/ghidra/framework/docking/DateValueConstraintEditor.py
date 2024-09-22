@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.table.constraint.ColumnConstraint;
 import docking.widgets.table.constraint.SingleValueColumnConstraint;
 import docking.widgets.table.constraint.provider.DateColumnConstraintProvider;
 
-/**
+# /**
  * A constraint editor for specifying comparison with a single Date value.
  */
 public class DateValueConstraintEditor extends AbstractColumnConstraintEditor<LocalDate> {

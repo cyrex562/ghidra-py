@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import help.HelpDescriptor;
 import help.HelpService;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * Abstract base class for creating dockable GUI components within a tool.
  * <p>
  * The one method that must be implemented is {@link #getComponent()} which is where the top level

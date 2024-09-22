@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.pcode.exec;
 
 import ghidra.pcode.exec.PcodeArithmetic.Purpose;
 
-/**
+# /**
  * The emulator or a client attempted to concretize an abstract value
  */
 public class ConcretionError extends PcodeExecutionException {

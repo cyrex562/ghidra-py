@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Set;
 import docking.ComponentProvider;
 import docking.action.DockingActionIf;
 
-/**
+# /**
  * Represents the collection of actions registered with the tool, along with method for adding
  * and removing actions.
  */

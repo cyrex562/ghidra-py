@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * <code>ThunkFunction</code> corresponds to a fragment of code which simply passes control
  * to a destination function.  All Function behaviors are mapped through to the current
  * destination function.

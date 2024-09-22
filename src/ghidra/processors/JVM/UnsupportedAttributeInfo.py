@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * This class in an artificial attribute (i.e., not defined in the JVM specification)
  * whose purpose is to consume attributes that are not (yet) supported by Ghidra
  * so that class file parsing can proceed.

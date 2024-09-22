@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package generic.complex;
 
-/**
+# /**
  * A complex number a + bi
  *
  * This doesn't support any actual operations, nor does it implement {@link Comparable}. It's simply

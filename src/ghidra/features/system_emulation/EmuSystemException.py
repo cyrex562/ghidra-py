@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.pcode.emu.sys;
 import ghidra.pcode.exec.PcodeExecutionException;
 import ghidra.pcode.exec.PcodeFrame;
 
-/**
+# /**
  * A p-code execution exception related to system simulation
  */
 public class EmuSystemException extends PcodeExecutionException {

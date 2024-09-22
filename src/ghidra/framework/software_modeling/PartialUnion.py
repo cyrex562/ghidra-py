@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.docking.settings.SettingsDefinition;
 import ghidra.program.model.data.*;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * A data-type representing an unspecified piece of a parent Union data-type.  This is used
  * internally by the decompiler to label Varnodes representing partial symbols, where the
  * part is known to be contained in a Union data-type.  Within the isolated context of a Varnode,

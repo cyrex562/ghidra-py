@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * Pointer8 is really a factory for generating 1-byte pointers.
  */
 public class Pointer8DataType extends PointerDataType {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.DumbMemBufferImpl;
 import ghidra.program.model.mem.Memory;
 
-/**
+# /**
  * Model for run-time type information about the RTTI 2 data type, which represents an 
  * array of either pointers or displacements to the BaseClassDescriptors (RTTI 1s) for 
  * a class.

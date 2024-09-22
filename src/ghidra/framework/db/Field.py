@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import db.buffers.DataBuffer;
 
-/**
+# /**
  * <p><code>Field</code> is an abstract data wrapper for use with Records.
  * Note that when comparing two Field instances both must be of the same 
  * class.</p>

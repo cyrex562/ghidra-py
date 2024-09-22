@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import static ghidra.util.datastruct.Duo.Side.*;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-/**
+# /**
  * Class for holding two objects of the same type. We are using the idiom of LEFT and RIGHT to 
  * refer to each item in this pair of objects.
  * The enum "Side" is used to represent either the LEFT (or first) or RIGHT (or second) item.

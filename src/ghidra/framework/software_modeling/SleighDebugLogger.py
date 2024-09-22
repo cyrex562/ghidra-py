@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.model.mem.*;
 import ghidra.program.model.scalar.Scalar;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * <code>SleighDebugLogger</code> provides the ability to obtain detailed instruction
  * parse details.
  */

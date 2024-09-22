@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.Program;
 
 import java.util.Iterator;
 
-/**
+# /**
  * Filters the given address iterator to only return addresses that have a comment of the given type
  */
 public class CommentTypeFilterAddressIterator implements AddressIterator {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -621,7 +621,7 @@ public class Emulate {
 	}
 
 }
-/** \page sleighAPIemulate The SLEIGH Emulator
+# /** \page sleighAPIemulate The SLEIGH Emulator
     
   \section emu_overview Overview
   

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.model.lang.Register;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.pcode.PcodeOp;
 
-/**
+# /**
  * A system call library simulating Linux for x86 (32-bit)
  *
  * @param <T> the type of values processed by the library

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import sarif.handlers.SarifResultHandler;
 import sarif.handlers.SarifRunHandler;
 import sarif.managers.ProgramSarifMgr;
 
-/**
+# /**
  * Parse the SARIF log into easier to use root structures. And helper functions.
  * {@link SarifController} to do any additional gui interactions
  */

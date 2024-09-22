@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.util.AddressCorrelation;
 import ghidra.program.util.AddressCorrelator;
 
-/**
+# /**
  * An address correlator that may use the {@link VTHashedFunctionAddressCorrelation}.
  */
 public class VTHashedFunctionAddressCorrelator implements AddressCorrelator {

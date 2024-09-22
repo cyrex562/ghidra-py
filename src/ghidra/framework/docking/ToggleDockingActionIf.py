@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.action;
 
-/**
+# /**
  * Interface for actions that have a toggle state
  *
  */

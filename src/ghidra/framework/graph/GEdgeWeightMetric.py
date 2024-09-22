@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.graph;
 
 import java.util.Comparator;
 
-/**
+# /**
  * A callback to get the weight of an edge
  * 
  * Analogous to Java's {@link Comparator}, this provides a means to override the weight of an edge

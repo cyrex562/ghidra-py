@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.*;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.NotFoundException;
 
-/**
+# /**
  * {@link MIPS_ElfRelocationContext} provides extended relocation context with the ability
  * to retain deferred relocation lists.  In addition, the ability to generate a section GOT
  * table is provided to facilitate relocations encountered within object modules.

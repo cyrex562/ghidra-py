@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
-/**
+# /**
  * Check if the function signature has a specific data-type in a specific position.
  * This filter does not match against the data-type in the current position
  * being assigned, but against a parameter at a fixed position.

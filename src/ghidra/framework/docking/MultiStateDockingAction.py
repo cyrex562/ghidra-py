@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.exception.AssertException;
 import help.Help;
 import resources.icons.EmptyIcon;
 
-/**
+# /**
  * An action that can be in one of multiple states.
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.textfield;
 import javax.swing.JTextField;
 import javax.swing.text.*;
 
-/**
+# /**
  * A simple text field for inputing floating point numbers. The field is continuously validated so 
  * that only valid characters and values can be entered. If the text is blank or contains only "-",
  * ".", or "-.", the value is considered to be 0. You can optionally set a min and max value. In 

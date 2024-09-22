@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.undo.UndoableEdit;
 
 import ghidra.util.datastruct.FixedSizeStack;
 
-/**
+# /**
  * Handles tracking undo and redo events.   Clients may wish to hold on to this class in order
  * to clear the undo/redo queue.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.*;
 import ghidra.util.layout.HorizontalLayout;
 import ghidra.util.layout.MiddleLayout;
 
-/**
+# /**
  * Provides a status bar panel which has a text area to the left.  The status bar may
  * customized with additional status components added to the right of the status text.
  */

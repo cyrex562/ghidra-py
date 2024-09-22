@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.database.symbol;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * 
  */
 public class OverlappingNamespaceException extends Exception {

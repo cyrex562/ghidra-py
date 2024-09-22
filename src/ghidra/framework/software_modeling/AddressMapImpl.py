@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.address;
 
 import java.util.*;
 
-/**
+# /**
  * <code>AddressMapImpl</code> provides a stand-alone AddressMap.
  * An AddressMapImpl instance should only be used to decode keys which it has generated.
  * If this map is used for a specific program instance, the map should be discard if any changes 

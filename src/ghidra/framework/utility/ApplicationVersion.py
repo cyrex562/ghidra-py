@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.framework;
 
-/**
+# /**
  * Class to represent an application's version information.
  * <p>
  * The version format is {@code \d\.\d(\.\d)?(\-.+)?}

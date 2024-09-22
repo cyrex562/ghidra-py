@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.autocomplete;
 
 import javax.swing.JTextField;
 
-/**
+# /**
  * An event related to autocompletion, usually a completion being activated by the user.
  *
  * @param <T> the type of suggestions given by the autocompleter.

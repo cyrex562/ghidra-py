@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.feature.vt.gui.util.VTMatchApplyChoices.ReplaceDataChoices;
 import ghidra.framework.options.ToolOptions;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Action that replaces Data for a version tracking data match, but only if no defined data 
  * in the destination is replaced other than defined data at the match's destination address. 
  * If the source data type would overwrite other defined data whose address is beyond the 

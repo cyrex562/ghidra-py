@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.event.ChangeListener;
 
 import docking.widgets.table.constraint.ColumnConstraint;
 
-/**
+# /**
  * Defines the contract for building user-interface elements for manipulating
  * constraint configuration.
  *

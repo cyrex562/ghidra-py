@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Collection;
 
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * Extension point for introducing ColumnConstraints to the system.  File names must end 
  * with 'ColumnConstraintProvider' in order to be found.
  */

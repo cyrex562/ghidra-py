@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.framework.remote.User;
 
-/**
+# /**
  * Table model for managing a list of Ghidra users associated with a project, and
  * their access permissions. The permissions (read-only, read/write, admin) are rendered
  * as checkboxes that can be selected by users, provided they have admin access.

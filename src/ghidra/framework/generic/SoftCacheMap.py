@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.lang.ref.SoftReference;
 import java.util.*;
 import java.util.AbstractMap.SimpleImmutableEntry;
 
-/**
+# /**
  * Class to manage a "soft" HaspMap that keeps its keys as soft references so
  * they can be reclaimed if needed. Useful for caching.
  */

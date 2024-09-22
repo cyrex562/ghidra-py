@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <CODE>OverlapCodeSubModel</CODE> (O-model) defines subroutines with a
  * unique entry point, which may share code with other subroutines. Each entry-
  * point may either be a source or called entry-point and is identified using

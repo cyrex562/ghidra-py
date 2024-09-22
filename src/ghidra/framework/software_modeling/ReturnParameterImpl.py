@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.lang.Register;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * <code>ReturnParameterImpl</code> represent the function return value.
  * This is special type of parameter whose ordinal is -1 and allows for the use
  * of the 'void' datatype.

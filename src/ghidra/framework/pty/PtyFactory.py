@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.pty.linux.LinuxPtyFactory;
 import ghidra.pty.macos.MacosPtyFactory;
 import ghidra.pty.windows.ConPtyFactory;
 
-/**
+# /**
  * A mechanism for opening pseudo-terminals
  */
 public interface PtyFactory {

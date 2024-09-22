@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <p>An UndefinedValueException is thrown when a value
  * for a register is looked up that is undefined.</p>
  *

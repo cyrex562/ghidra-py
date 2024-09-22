@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Feb 8, 2005
  *
  */
@@ -30,7 +30,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.program.model.pcode.Decoder;
 import ghidra.program.model.pcode.DecoderException;
 
-/**
+# /**
  * Symbol with semantic value equal to offset of address immediately
  * after current instruction
  */

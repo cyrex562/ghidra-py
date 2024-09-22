@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.*;
 import docking.widgets.table.constraint.*;
 import docking.widgets.table.constrainteditor.*;
 
-/**
+# /**
  * Provides number related column constraints.
  */
 public class NumberColumnConstraintProvider implements ColumnConstraintProvider {

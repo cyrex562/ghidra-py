@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.address;
 
 import java.util.Iterator;
 
-/**
+# /**
  * This class wraps an address set and provides read-only access to that set.  This class
  * is used to ensure that users can not violate the read-only access by casting the object
  * to an address set.

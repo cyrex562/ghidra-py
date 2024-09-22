@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.List;
 
 import ghidra.graph.GEdge;
 
-/**
+# /**
  * An edge that contains properties and state related to a user interface.
  * 
  * <P>An edge can be selected, which means that it has been clicked by the user.  Also, an 

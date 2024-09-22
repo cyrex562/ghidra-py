@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.emu.sys;
 
-/**
+# /**
  * A concrete in-memory bytes store for simulated file contents
  * 
  * <p>

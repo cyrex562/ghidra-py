@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.nio.charset.*;
 import ghidra.program.model.data.RenderUnicodeSettingsDefinition.RENDER_ENUM;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * Helper class used to build up a formatted (for human consumption) string representation returned
  * by Unicode and String data types.
  * <p>

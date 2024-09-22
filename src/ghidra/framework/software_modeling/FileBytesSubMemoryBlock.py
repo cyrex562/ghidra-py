@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.DBRecord;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * Class for handling {@link FileBytes} memory sub blocks (blocks whose bytes are backed by a FileBytes object
  */
 class FileBytesSubMemoryBlock extends SubMemoryBlock {

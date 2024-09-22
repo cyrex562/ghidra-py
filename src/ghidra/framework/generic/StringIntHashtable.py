@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.util.exception.NoValueException;
 import java.io.Serializable;
 import java.util.Iterator;
 
-/**
+# /**
  *     Class that implements a hashtable with String keys and int values.
  */
 

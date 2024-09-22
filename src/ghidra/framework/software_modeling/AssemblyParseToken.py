@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.plugin.assembler.sleigh.grammars.AssemblyGrammar;
 import ghidra.app.plugin.assembler.sleigh.symbol.AssemblyStringTerminal;
 import ghidra.app.plugin.assembler.sleigh.symbol.AssemblyTerminal;
 
-/**
+# /**
  * A string token
  * 
  * @see AssemblyStringTerminal

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package db;
 
 import java.io.IOException;
 
-/**
+# /**
  * <code>DatabaseUtils</code> provides a collection of database related utilities.
  */
 public class DatabaseUtils {

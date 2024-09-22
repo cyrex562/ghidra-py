@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util;
 
 import java.awt.Component;
 
-/**
+# /**
  * Class with static methods to report errors as either a short message or a
  * more detailed message (e.g., stacktrace).
  * 

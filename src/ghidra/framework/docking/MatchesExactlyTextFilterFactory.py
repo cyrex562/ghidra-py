@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.filter;
 
-/**
+# /**
  * A filter factory that creates {@link TextFilter}s that will pass text when it matches
  * the filter exactly.
  */

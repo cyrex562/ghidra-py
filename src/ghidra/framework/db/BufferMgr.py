@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.datastruct.ObjectArray;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>BufferMgr</code> provides low-level buffer management and caching.
  * Checkpointing and buffer versioning is supported along with an undo/redo
  * capability.

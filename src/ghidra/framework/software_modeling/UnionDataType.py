@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.Msg;
 import ghidra.util.UniversalID;
 
-/**
+# /**
  * Basic implementation of the union data type.
  * NOTE: Implementation is not thread safe when being modified.
  */

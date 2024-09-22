@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.bytesearch.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This command will create multiple RTTI4 data types all at one time. 
  * If there are any existing instructions in the areas to be made into data, the command will fail only on that RTTI4 entry.
  * Any data in the area will be replaced with the new dataType.

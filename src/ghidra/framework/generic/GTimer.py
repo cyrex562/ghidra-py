@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.TimerTask;
 import generic.timer.GhidraTimerFactory;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class to schedule {@link Runnable}s to run after some delay, optionally repeating.  This class
  * uses a {@link Timer} internally to schedule work.   Clients of this class are given a monitor
  * that allows them to check on the state of the runnable, as well as to cancel the runnable.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * doubleArrayArray.java
  *
  * Created on February 14, 2002, 3:11 PM
@@ -23,7 +23,7 @@ package ghidra.util.datastruct;
 
 import java.io.Serializable;
 
-/**
+# /**
  *
  * Array of double[] that grows as needed.
  */

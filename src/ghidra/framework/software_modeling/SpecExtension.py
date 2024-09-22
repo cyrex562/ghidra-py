@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 import ghidra.xml.*;
 
-/**
+# /**
  * Utility class for installing/removing "specification extensions" to a Program.
  * A specification extension is a program specific version of either a:
  * <ul>

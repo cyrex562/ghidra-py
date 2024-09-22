@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.io.*;
 import java.util.jar.JarOutputStream;
 import java.util.zip.ZipEntry;
 
-/**
+# /**
  * JarWriter is a class for writing to a jar output stream.
  */
 public class JarWriter {

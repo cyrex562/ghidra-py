@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.task.TaskMonitor;
 import utilities.util.FileUtilities;
 import utility.application.ApplicationLayout;
 
-/**
+# /**
  * Utilities for finding extensions.
  * <p>
  * Extension searching is cached.  Use {@link #reload()} to update the cache.

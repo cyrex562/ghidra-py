@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Sep 24, 2003
  *
  * To change the template for this generated file go to
@@ -22,7 +22,7 @@
  */
 package ghidra.app.plugin.processors.generic;
 
-/**
+# /**
  * 
  *
  * Exceptions generated from parsing the SLED/SSL configuration files (load time)

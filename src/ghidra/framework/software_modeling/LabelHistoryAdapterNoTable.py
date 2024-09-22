@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -28,7 +28,7 @@ import java.util.Set;
 import db.DBHandle;
 import db.RecordIterator;
 
-/**
+# /**
  * Adapter needed when a Program is being opened read only and the label
  * history table does not exist in the Program.
  */

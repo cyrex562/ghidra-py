@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.pcode.exec.PcodeExecutorStatePiece.Reason;
 import ghidra.program.model.pcode.Varnode;
 import utilities.util.AnnotationUtilities;
 
-/**
+# /**
  * A userop library wherein Java methods are exported via a special annotation
  *
  * <p>

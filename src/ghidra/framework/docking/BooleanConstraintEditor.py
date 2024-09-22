@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.widgets.list.GComboBoxCellRenderer;
 import docking.widgets.table.constraint.BooleanMatchColumnConstraint;
 import docking.widgets.table.constraint.ColumnConstraint;
 
-/**
+# /**
  * A constraint editor for Boolean-type constraints, offering a choice of boolean values.
  */
 public class BooleanConstraintEditor extends AbstractColumnConstraintEditor<Boolean> {

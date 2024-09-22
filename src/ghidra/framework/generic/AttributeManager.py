@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -23,7 +23,7 @@ import ghidra.util.graph.KeyedObject;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-/** Class which creates and keeps track of attributes defined 
+# /** Class which creates and keeps track of attributes defined 
  * for a single KeyIndexableSet.
  */
 public class AttributeManager<T extends KeyedObject>

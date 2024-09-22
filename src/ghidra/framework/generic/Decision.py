@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package generic.constraint;
 
 import java.util.List;
 
-/**
+# /**
  * Result object from getting values that match the constraints for given test object.
  */
 public class Decision {

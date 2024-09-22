@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.*;
 import docking.widgets.label.GIconLabel;
 import resources.icons.EmptyIcon;
 
-/**
+# /**
  * Creates a panel that displays an {@link Image}. Users may pan the image as desired and zoom the
  * image according to specific zoom levels.
  */

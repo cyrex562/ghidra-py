@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * NOTE:  ALL AnnotationHandler CLASSES MUST END IN "AnnotationHandler".  If not,
  * the ClassSearcher will not find them.
  * 

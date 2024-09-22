@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import ghidra.sleigh.grammar.*;
 import ghidra.sleigh.grammar.SleighParser_SemanticParser.semantic_return;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * This class is intended to parse p-code snippets, typically from compiler specification files or
  * extensions. This is outside the normal SLEIGH compilation process, and the parser is built on top
  * of an existing SleighLanguage.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * <code>PackingType</code> specifies the pack setting which applies to a composite data type.
  * This can be DISABLED, DEFAULT, EXPLICIT.
  */

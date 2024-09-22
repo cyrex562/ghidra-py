@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 
 
 import ghidra.util.exception.UsrException;
-/**
+# /**
  * Exception thrown if a requested index does not exist.
  */
 public class NoSuchIndexException extends UsrException {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -23,7 +23,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import docking.widgets.conditiontestpanel.*;
 
-/**
+# /**
  * Validator objects looks for specific preconditions that should exist in order to get optimal
  * results when applying a program correlator.
  *

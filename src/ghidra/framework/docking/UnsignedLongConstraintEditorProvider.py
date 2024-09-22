@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.widgets.table.constraint.ColumnConstraint;
 import docking.widgets.table.constraint.ColumnData;
 import docking.widgets.table.constraint.provider.EditorProvider;
 
-/**
+# /**
  * Provides an editor for editing constraints for unsigned 64 bit values.
  */
 public class UnsignedLongConstraintEditorProvider implements EditorProvider<BigInteger> {

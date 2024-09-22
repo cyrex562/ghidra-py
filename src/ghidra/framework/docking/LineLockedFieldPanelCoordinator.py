@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.List;
 import docking.widgets.fieldpanel.FieldPanel;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A LineLockedFieldPanelCoordinator coordinates the scrolling of a set of field panels by sharing 
  * bound scroll models that are locked together by a set of line numbers.
  * All the field panels are locked together at the line numbers specified in the locked line array.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package docking.widgets.dialogs;
 
 import java.util.Arrays;
 
-/**
+# /**
  * StringEnum objects represent a choice from a limited set of options.
  */
 public class StringChoices {

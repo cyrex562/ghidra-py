@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Feb 3, 2005
  *
  * TODO To change the template for this generated file go to
@@ -21,7 +21,7 @@
  */
 package ghidra.app.plugin.processors.sleigh;
 
-/**
+# /**
  * 
  *
  * TODO To change the template for this generated type comment go to

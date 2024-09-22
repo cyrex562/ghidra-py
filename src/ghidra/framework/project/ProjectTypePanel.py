@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.app.util.GenericHelpTopics;
 import ghidra.util.HelpLocation;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * First panel shown in the New Project Wizard to get user input for what 
  * type of project to create: Shared, or not shared.
  * 

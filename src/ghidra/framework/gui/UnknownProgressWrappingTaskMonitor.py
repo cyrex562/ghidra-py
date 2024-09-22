@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.task;
 
-/**
+# /**
  * A class that is meant to wrap a {@link TaskMonitor} when you do not know the maximum value
  * of the progress.
  */

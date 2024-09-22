@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.util.ProgramSelection;
 import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 
-/**
+# /**
  * This is a navigatable for use by the right-hand listing of the Diff.
  * It should navigate within the Diff's listing, which would then reposition 
  * the CodeViewer's listing.

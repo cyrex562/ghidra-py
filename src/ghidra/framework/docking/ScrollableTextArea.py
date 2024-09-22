@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.dnd.GClipboard;
 import docking.dnd.StringTransferable;
 import generic.util.WindowUtilities;
 
-/**
+# /**
  * A JScrollPane wrapper for a text area that can be told to scroll to bottom
  */
 public class ScrollableTextArea extends JScrollPane {

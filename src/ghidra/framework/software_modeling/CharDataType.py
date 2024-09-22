@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.StringFormat;
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * Provides a definition of an primitive char in a program. The size and signed-ness of this type is
  * determined by the data organization of the associated data type manager.
  */

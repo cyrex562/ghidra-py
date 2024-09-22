@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.math.BigInteger;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * MemBuffer provides an array like interface into memory at a
  * specific address.  Bytes can be retrieved by using a positive
  * offset from the current position.  Depending on the implementation,

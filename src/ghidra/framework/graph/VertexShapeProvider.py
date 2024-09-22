@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.graph.viewer.vertex;
 
 import java.awt.Shape;
 
-/**
+# /**
  * An interface that can be implemented to provide vertex shapes to the UI.  These are used
  * for rendering and mouse interaction.  Typically, these shapes are the same.   Clients that
  * wish to allow for complicated shapes can use this interface to control mouse hit detection

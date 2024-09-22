@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.symbol.SymbolTable;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Database adapter that maps function tags to individual functions. This table 
  * consists of two columns, each of which is an index into the {@link FunctionTagAdapter}
  * and {@link SymbolTable} respectively.

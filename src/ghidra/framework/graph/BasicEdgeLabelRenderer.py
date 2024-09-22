@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.graph.viewer.VisualEdge;
 import ghidra.graph.viewer.VisualVertex;
 import ghidra.graph.viewer.layout.VisualGraphLayout;
 
-/**
+# /**
  * A class to override the default edge label placement.   This class is called a renderer because
  * the parent class is.  However, it is not a renderer in the sense that it's job is to paint
  * the contents, like in Java when you provide a cell rendering component, but rather, it uses

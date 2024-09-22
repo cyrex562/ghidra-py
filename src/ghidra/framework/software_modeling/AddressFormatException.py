@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.address;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <p>An AddressFormatException is thrown when a string that is
  * supposed to be an address representation cannot be parsed.</p>
  */

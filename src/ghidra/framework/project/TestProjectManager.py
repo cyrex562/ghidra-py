@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.project.test;
 import ghidra.framework.model.ProjectManager;
 import ghidra.framework.project.DefaultProjectManager;
 
-/** This class exists to open access to the {@link DefaultProjectManager} for tests */
+# /** This class exists to open access to the {@link DefaultProjectManager} for tests */
 public class TestProjectManager extends DefaultProjectManager {
 
 	private static ProjectManager projectManager;

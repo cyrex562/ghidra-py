@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.datastruct.IntIntHashtable;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  * <code>DBParms</code> manages 4-byte integer parameters associated with a database 
  * and stored as the first buffer (ID 0) in the buffer file.  The maximum number of 
  * parameters is determined by the .

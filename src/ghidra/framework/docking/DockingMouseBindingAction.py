@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.AbstractAction;
 import docking.action.DockingActionIf;
 import gui.event.MouseBinding;
 
-/**
+# /**
  * A class for using actions associated with mouse bindings. This class is meant to only by used by
  * internal Ghidra mouse event processing.
  */

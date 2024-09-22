@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework;
 
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * An {@link ExtensionPoint} that users can implement to perform work before the application
  * is loaded.
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.Desktop;
 import ghidra.framework.OperatingSystem;
 import ghidra.framework.Platform;
 
-/**
+# /**
  * A plugin-level quit handler that serves as the callback from the Dock's 'Quit' popup action.
  * <p>
  * This will also respond to the Command-Q callback.

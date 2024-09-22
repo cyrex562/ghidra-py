@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.hash.SimpleCRC32;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Instruction;
 
-/**
+# /**
  * A hash utility to uniquely identify a temporary Varnode in data-flow
  *
  * Most Varnodes can be identified within the data-flow graph by their storage address

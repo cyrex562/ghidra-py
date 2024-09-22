@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.ComponentProvider;
 import docking.widgets.imagepanel.ImagePanel;
 import ghidra.framework.plugintool.PluginTool;
 
-/**
+# /**
  * For displaying Image artifacts from a SARIF file
  *
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.client.*;
 import ghidra.framework.protocol.ghidra.GhidraURLConnection.StatusCode;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <code>DefaultGhidraProtocolConnector</code> provides support for the
  * Ghidra URL protocol without extension for accessing the legacy Ghidra Server 
  * over an RMI interface.

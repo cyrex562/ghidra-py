@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.program.model.symbol.*;
 
 import java.util.Iterator;
 
-/**
+# /**
  * Filters a symbol iterator to only return a specific symbol type
  */
 public class TypeFilteredSymbolIterator implements SymbolIterator {

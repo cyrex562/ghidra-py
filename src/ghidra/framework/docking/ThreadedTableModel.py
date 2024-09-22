@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.worker.Worker;
 
-/**
+# /**
  * The base implementation of the threaded table model.
  * <p>
  * You can optionally set this model to load data incrementally by passing the correct

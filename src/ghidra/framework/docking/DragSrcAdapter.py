@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.dnd;
 import java.awt.Cursor;
 import java.awt.dnd.*;
 
-/**
+# /**
  * Adapter class that receives notifications in order to provide drag over effects.
  * 
  * <p>When the operation ends, this class receives a <code>dragDropEnd</code> message, and is 

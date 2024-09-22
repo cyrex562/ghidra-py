@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.TreeMap;
 
 import ghidra.program.model.pcode.PartialUnion;
 
-/**
+# /**
  * Build a structure from a "noisy" source of field information.
  * Feed it field records, either via addDataType(), when we
  * have more definitive info about the size of the field, or via addReference()

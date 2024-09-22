@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.datastruct.SoftCacheMap;
 
-/**
+# /**
  * Interface for dataTypes that don't get applied, but instead generate dataTypes
  * on the fly based on the data.
  */

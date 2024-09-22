@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * Class to hold information about a dockable component with respect to its position within the
  * windowing system.  It also holds identification information about the provider so that its
  * location can be reused when the provider is re-opened.

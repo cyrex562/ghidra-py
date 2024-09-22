@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.pcode.emu.unix;
 
 import ghidra.pcode.emu.sys.EmuIOException;
 
-/**
+# /**
  * A process's handle to a file (or other resource)
  *
  * @param <T> the type of values stored in the file

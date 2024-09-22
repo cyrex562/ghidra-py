@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.util;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Class to hold information about an Equate; it is used
  * in a ProgramChangeRecord when an equate is created and
  * when references to the Equate are updated.

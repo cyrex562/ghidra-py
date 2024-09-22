@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.framework.store.*;
 import ghidra.util.PropertyFile;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>UnknownFolderItem</code> acts as a LocalFolderItem place-holder for 
  * items of an unknown type.
  */

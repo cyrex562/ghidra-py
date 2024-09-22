@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import org.jdom.Element;
 import docking.widgets.fieldpanel.Layout;
 import ghidra.framework.options.SaveState;
 
-/**
+# /**
  * This class represents a selection in a field viewer.
  * <p>
  * A {@link FieldSelection} may be within a single layout or may cross multiple layouts.  To

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.jdom.Element;
 import docking.widgets.fieldpanel.Layout;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  *  A range consists of a start position within a start row to an end position within an end row
  *  (exclusive).
  *  <p>

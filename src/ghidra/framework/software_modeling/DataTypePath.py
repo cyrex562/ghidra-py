@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import java.util.Objects;
 
-/**
+# /**
  * Object to hold a category path and a datatype name.  They are held separately so that
  * the datatype name can contain a categoryPath delimiter ("/") character.
  */

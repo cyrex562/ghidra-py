@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.lang;
 
-/**
+# /**
  * Reserved AddressSpace names across architectures and associated attributes
  */
 public class SpaceNames {

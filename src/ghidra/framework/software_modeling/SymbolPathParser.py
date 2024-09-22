@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.program.model.symbol.Namespace;
 
-/**
+# /**
  * A parser for breaking down namespaces in the presence of complicating factors such
  *  as templates.
  * <P>

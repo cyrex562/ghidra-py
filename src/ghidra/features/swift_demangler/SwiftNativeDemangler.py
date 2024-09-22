@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
+# /**
  * A class used to launch the Swift native demangler.
  * <p>
  * The Swift native demangler binary comes in 2 forms, and can thus be invoked in 2 ways:

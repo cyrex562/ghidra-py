@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.math.BigInteger;
 
 import org.xml.sax.*;
 
-/**
+# /**
  * Utilities for encoding and decoding XML datatypes for use in specification files that
  * are validated by RelaxNG.  This currently includes the SLEIGH/Decompiler configuration files.
  * I.e.

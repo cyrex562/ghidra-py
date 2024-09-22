@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.beans.PropertyChangeListener;
 import docking.options.editor.ColorPropertyEditor;
 import generic.theme.*;
 
-/**
+# /**
  *  Editor for Theme colors
  */
 public class ColorValueEditor extends ThemeValueEditor<Color> {

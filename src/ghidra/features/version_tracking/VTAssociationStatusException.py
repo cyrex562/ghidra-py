@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.feature.vt.api.util;
 
 import ghidra.feature.vt.api.main.VTMarkupItem;
 
-/**
+# /**
  * An exception that signals an attempt to add {@link VTMarkupItem}s to a 
  * {@link VTAssociationLockedStatus#UNAVAILABLE} association.
  */

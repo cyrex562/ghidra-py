@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.listing.*;
 
 import java.io.Serializable;
 
-/**
+# /**
  * The <CODE>GroupPath</CODE> is a class to represent a unique path in a tree for a Group.
  */
 public class GroupPath implements Serializable {

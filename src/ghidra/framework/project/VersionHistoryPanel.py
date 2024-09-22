@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +46,7 @@ import ghidra.framework.store.Version;
 import ghidra.util.*;
 import ghidra.util.task.*;
 
-/**
+# /**
  * Panel that shows version history in a JTable
  */
 public class VersionHistoryPanel extends JPanel implements Draggable {

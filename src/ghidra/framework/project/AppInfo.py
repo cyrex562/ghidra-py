@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.main;
 import ghidra.framework.model.Project;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Class with static methods to maintain application info, e.g., a handle to the
  * tool that is the Ghidra Project Window, the user's name, etc.
  */

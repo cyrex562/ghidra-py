@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-/**
+# /**
  * Methods for notifications when changes are made to a domain folder or
  * a domain file.
  */

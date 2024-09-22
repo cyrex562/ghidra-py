@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.framework.model.ProjectLocator;
 import ghidra.framework.remote.GhidraServerHandle;
 
-/**
+# /**
  * Supported URL forms include:
  * <ul>
  * <li>{@literal ghidra://<host>:<port>/<repository-name>[/<folder-path>]/[<folderItemName>[#ref]]}</li>

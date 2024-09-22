@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.Msg;
 import ghidra.util.WebColors;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A class for storing {@link Color} values that have a String id (e.g. color.bg.foo) and either
  * a concrete color or a reference id which is the String id of another ColorValue that it
  * will inherit its color from. So if this class's color value is non-null, the refId will be null

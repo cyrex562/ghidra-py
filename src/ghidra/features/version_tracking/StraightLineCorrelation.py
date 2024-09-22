@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.util.AddressCorrelationRange;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Generate address correlations by viewing each function as a list of instructions in address order
  * Instructions are paired one at a time, in order, if the mnemonics of the instructions match.
  * The correlation gives up at the first mismatch.

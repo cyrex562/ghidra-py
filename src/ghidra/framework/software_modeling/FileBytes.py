@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import db.*;
 
-/**
+# /**
  * FileBytes provides access to the all the byte values (both original and modified) from an
  * imported file. 
  */

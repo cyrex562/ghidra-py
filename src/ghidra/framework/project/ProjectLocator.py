@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.framework.Application;
 import ghidra.framework.protocol.ghidra.GhidraURL;
 
-/**
+# /**
  * Lightweight descriptor of a local Project storage location.
  */
 public class ProjectLocator {

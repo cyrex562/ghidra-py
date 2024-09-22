@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.*;
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  * Handles general storage and retrieval of int values indexed by long keys.
  */
 public class IntValueMap extends ValueMap<Integer> {

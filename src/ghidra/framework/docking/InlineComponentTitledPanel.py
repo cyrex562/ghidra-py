@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 
-/**
+# /**
  * A panel with a component-containing border. Use a checkbox as the component, for example, 
  * to control the enablement of child widgets.
  * <p> 

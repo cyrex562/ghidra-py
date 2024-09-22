@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.emu.PcodeMachine;
 import ghidra.pcode.emu.sys.EmuIOException;
 import ghidra.program.model.lang.CompilerSpec;
 
-/**
+# /**
  * A simulated file descriptor that proxies a host resource, typically a console/terminal
  */
 public class IOStreamEmuUnixFileHandle extends AbstractStreamEmuUnixFileHandle<byte[]> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * NOTE: lots of reference to the decompiler here (comments)
  *
@@ -42,7 +42,7 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
-/**
+# /**
  * BasicCompilerSpec implements the CompilerSpec interface based on static information
  * from a particular .cspec file.  Typically the .cspec file is read in once by a Language
  * object whenever a new or opened Program indicates a particular language and compiler.

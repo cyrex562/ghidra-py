@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -22,7 +22,7 @@ import java.io.IOException;
 
 import db.buffers.ManagedBufferFile;
 
-/**
+# /**
  * <code>DatabaseItem</code> corresponds to a private or versioned 
  * database within a FileSystem.  Methods are provided for opening
  * the underlying database as a BufferFile.

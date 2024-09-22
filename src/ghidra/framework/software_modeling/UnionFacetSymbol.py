@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.io.IOException;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.data.*;
 
-/**
+# /**
  * A specialized HighSymbol that directs the decompiler to use a specific field of a union,
  * when interpreting a particular PcodeOp that accesses a Varnode whose data-type involves the
  * union. The symbol is stored as a dynamic variable annotation.  The data-type must either be the

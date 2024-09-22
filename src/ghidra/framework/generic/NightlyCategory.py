@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package generic.test.category;
 
-/*
+# /*
  * Tests in this category should only be run nightly in any automated test build.
  */
 public interface NightlyCategory {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table.constrainteditor;
 
 import javax.swing.SpinnerNumberModel;
 
-/**
+# /**
  * {@link SpinnerNumberModel} that adds checking to make sure setValue is in the allowed range.  Strangely,
  * the default SpinnerNumberModel has min and max values, but does not check except during the
  * increment/decrement using the spinner widget.

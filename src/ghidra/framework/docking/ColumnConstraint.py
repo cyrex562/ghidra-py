@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table.constraint;
 
 import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 
-/**
+# /**
  * ColumnConstraints are objects used to filter table rows based on values from a particular column.
  *
  * @param <T> The column type

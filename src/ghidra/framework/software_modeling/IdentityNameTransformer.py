@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.symbol;
 
-/**
+# /**
  * A transformer that never alters its input
  */
 public class IdentityNameTransformer implements NameTransformer {

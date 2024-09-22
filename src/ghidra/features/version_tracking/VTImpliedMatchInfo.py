@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.symbol.Reference;
 import ghidra.program.util.OperandFieldLocation;
 import ghidra.program.util.ProgramLocation;
 
-/**
+# /**
  * A {@link VTMatchInfo} object that represents the concept of an implied match.  This type
  * of match exists because two functions share references to the same data or functions.
  */

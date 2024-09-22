@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.util.layout;
 import java.awt.*;
 import java.io.Serializable;
 
-/**
+# /**
   * Layout for two components laid out horizontally where the first component gets its preferred width
   * and the second component gets the remaining space up to its preferred width.
   */

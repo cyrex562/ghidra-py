@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.lang;
 
 import ghidra.program.model.address.AddressFactory;
 
-/**
+# /**
  * A substitute for a callother fixup that did not fully parse
  */
 public class InjectPayloadCallotherError extends InjectPayloadCallother {

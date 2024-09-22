@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.Symbol;
 import ghidra.util.exception.*;
 
-/**
+# /**
  * This command will create a UnwindMapEntry exception handler data type or an array of them. 
  * If there are any existing instructions in the area to be made into data, the command will fail.
  * Any data in the area will be replaced with the new dataType.

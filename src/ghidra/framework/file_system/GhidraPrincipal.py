@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import java.util.Set;
 
 import javax.security.auth.Subject;
 
-/**
+# /**
  * <code>GhidraPrincipal</code> specifies a Ghidra user as a Principal
  * for use with server login/authentication.
  */

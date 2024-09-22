@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.table.AbstractTableModel;
 
 import org.apache.logging.log4j.Level;
 
-/**
+# /**
  * The model that backs the {@link FVTable} table. This model defines 4 columns: date,
  * time, log level, and the message.
  *

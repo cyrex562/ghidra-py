@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.net.URL;
 
 import org.apache.commons.lang3.StringUtils;
 
-/**
+# /**
  * <code>DefaultGhidraProtocolHandler</code> provides the default protocol 
  * handler which corresponds to the original RMI-based Ghidra Server
  * and local file-based Ghidra projects.

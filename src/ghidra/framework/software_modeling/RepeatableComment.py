@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.listing;
 
-/**
+# /**
  * Interface to define a comment that can be shared by more 
  * than one code unit.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-/**
+# /**
  * <code>StatusListener</code> is a general purpose status listener
  * responsible for displaying and/or recording status messages
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import ghidra.util.task.CancelledListener;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A queue for easily scheduling tasks to be run in parallel (or sequentially)
  * via a thread pool.  This class provides a clean separation of items that need to
  * be processed from the algorithm that does the processing, making it easy to parallelize

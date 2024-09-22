@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.timer.GTimerMonitor;
 import utility.function.Callback;
 import utility.function.Dummy;
 
-/**
+# /**
  * A task monitor that allows clients the ability to specify a timeout after which this monitor
  * will be cancelled.
  * 

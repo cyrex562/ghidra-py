@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.plugin.assembler.sleigh.util;
 import java.io.*;
 import java.util.Stack;
 
-/**
+# /**
  * A debugging, timing, and diagnostic tool
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import docking.util.image.ToolIconURL;
 import resources.ResourceManager;
 
-/**
+# /**
  * Class with static methods to access a hash map of icons.
  * Loads the names in resources/images directory; the map is updated
  * as icons are needed.

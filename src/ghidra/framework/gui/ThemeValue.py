@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.*;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * A generic class for storing theme values that have a String id (e.g. color.bg.foo) and either
  * a concrete value of type T or a reference id which is the String id of another ThemeValue. So
  * if this class's value is non-null, the refId will be null and if the class's refId is non-null,

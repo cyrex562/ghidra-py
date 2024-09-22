@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.text.Position.Bias;
 import docking.widgets.AutoLookup;
 import docking.widgets.GComponent;
 
-/**
+# /**
  * A sub-class of JList that provides an auto-lookup feature.
  * <p>
  * The user can begin typing the first few letters of a desired

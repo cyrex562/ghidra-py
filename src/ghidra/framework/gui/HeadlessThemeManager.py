@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.Font;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * This is a strange implementation of {@link ThemeManager} that is meant to be used in a headless
  * environment, but also needs theme properties to have been loaded.  This is needed by any
  * application that needs to do theme property validation.

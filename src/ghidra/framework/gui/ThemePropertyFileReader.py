@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Map;
 
 import generic.jar.ResourceFile;
 
-/**
+# /**
  * Reads the values for a single theme.properities file
  */
 public class ThemePropertyFileReader extends AbstractThemeReader {

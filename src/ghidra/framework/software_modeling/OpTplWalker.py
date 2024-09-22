@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.plugin.processors.sleigh.template.ConstructTpl;
 import ghidra.app.plugin.processors.sleigh.template.OpTpl;
 import ghidra.program.model.pcode.PcodeOp;
 
-/**
+# /**
  * Class for walking pcode templates OpTpl in the correct order
  * Supports walking the tree of an entire SleighInstructionPrototype or just a single ConstructTpl
  *

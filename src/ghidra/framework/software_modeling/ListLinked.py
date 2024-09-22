@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.pcode;
 
 import java.util.Iterator;
 
-/**
+# /**
  * 
  *
  * A better linked list implementation than provided by java.util.

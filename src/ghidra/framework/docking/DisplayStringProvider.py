@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.table;
 
-/**
+# /**
  * An interface used by classes to indicate that they can produce a String representation that
  * is meant to be seen by the user in the UI.  One example use of this interface is the 
  * table filtering mechanism, which will look for this interface when attempting to transform

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -49,7 +49,7 @@ import ghidra.util.task.*;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Dialog to show project information. Allows the user to convert a local project to a shared project,
  * OR to specify a different server or port, or repository for a shared project.
  *

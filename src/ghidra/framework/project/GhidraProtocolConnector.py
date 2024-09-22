@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.client.*;
 import ghidra.framework.protocol.ghidra.GhidraURLConnection.StatusCode;
 import ghidra.framework.store.FileSystem;
 
-/**
+# /**
  * <code>GhidraProtocolConnector</code> provides an abtract implementation to access Ghidra 
  * repositories using various underlying communication protocols.  The common requirement 
  * for all implementations is the ability to derive a repository URL from any folder or file

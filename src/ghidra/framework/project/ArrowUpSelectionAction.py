@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.AbstractAction;
 
 import ghidra.framework.main.logviewer.event.FVEvent.EventType;
 
-/**
+# /**
  * The up arrow should move the selection up one row. Just fire off an event to tell the
  * viewer to decrement the selection, which may involve an adjustment to the viewport.
  */

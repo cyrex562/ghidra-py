@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.graph;
 
 import java.util.*;
 
-/**
+# /**
  * Class for managing the visiting (processing)  of a set of values where some values depend
  * on other values being process before them.  In other words, an acyclic directed graph will
  * be formed where the vertexes are the values and the edges represent dependencies.  Values can

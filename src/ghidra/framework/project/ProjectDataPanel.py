@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.Msg;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Manages the data tree for the active project, and the trees for the
  * project views.
  */

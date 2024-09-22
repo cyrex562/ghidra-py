@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.List;
 
 import javax.help.UnsupportedOperationException;
 
-/**
+# /**
  * A simple interface for the {@link FindDialog} so that it can work for different search clients.
  * <p>
  * The {@link CursorPosition} object used by this interface is one that implementations can extend 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.framework.plugintool.Plugin;
 import ghidra.program.util.ProgramMergeFilter;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * The DiffSettingsDialog is used to change the types of differences currently
  * highlighted. It also allows the user to change the types of differences being
  * applied and whether labels and/or comments are being merged or replaced.

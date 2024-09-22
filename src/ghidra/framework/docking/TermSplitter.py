@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.filter;
 
-/**
+# /**
  * Interface for classes that need to split strings into a series of individual terms.
  */
 public interface TermSplitter {

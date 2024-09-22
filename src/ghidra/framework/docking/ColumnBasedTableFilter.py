@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import generic.theme.GColor;
 import generic.theme.GThemeDefaults.Colors.Palette;
 import ghidra.framework.options.SaveState;
 
-/**
+# /**
  * A {@link TableFilter}  that filters based on column values
  *
  * <P>This class maintains a list of {@link ColumnConstraintSet} objects that are logically combined

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import generic.random.SecureRandomFactory;
 import ghidra.framework.ModuleInitializer;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Initialize the default SSLContext for use by all SSL connections (e.g., https).
  * It is the responsibility of the Application to properly invoke this initializer 
  * to ensure that the default SSLContext is properly established. While HTTPS URL connections

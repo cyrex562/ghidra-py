@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.framework.options;
 
-/**
+# /**
  * Marker interface to signal that the implementing PropertyEditor component desires to handle
  * display editing of an option or options.  This allows options to create custom property
  * editors that can paint and edit a group of interrelated options.

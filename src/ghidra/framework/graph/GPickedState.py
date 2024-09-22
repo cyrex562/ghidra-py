@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import edu.uci.ics.jung.visualization.picking.MultiPickedState;
 import edu.uci.ics.jung.visualization.picking.PickedState;
 import ghidra.graph.viewer.event.picking.PickListener.EventSource;
 
-/**
+# /**
  * This picked-state is a wrapper for {@link PickedState} that allows us to broadcast events
  * with the trigger of that event.
  *

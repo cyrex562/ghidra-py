@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.fieldpanel.support;
 
-/**
+# /**
  * A location used to represent a an edge case where not suitable location can be found and the
  * client does not wish to return null.
  */

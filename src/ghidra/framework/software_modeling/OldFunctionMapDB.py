@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.AddressSetView;
 import ghidra.util.datastruct.IndexRange;
 import ghidra.util.datastruct.IndexRangeIterator;
 
-/**
+# /**
  * 
  */
 @SuppressWarnings("deprecation")

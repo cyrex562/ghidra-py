@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Placeholder for a basic block (BlockBasic) within a structured
  * control-flow graph. It originally mirrors the in and out edges of
  * the basic block, but edges may be modified during the structuring process.

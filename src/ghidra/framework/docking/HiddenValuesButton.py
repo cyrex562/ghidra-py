@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import javax.swing.border.Border;
 import docking.widgets.label.GDLabel;
 import generic.theme.*;
 
-/**
+# /**
  * Component displayed when not all tabs fit on the tab panel and is used to display a popup
  * list of all tabs.
  */

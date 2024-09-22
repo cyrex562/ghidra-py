@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import generic.theme.GColor;
 import generic.theme.GThemeDefaults.Colors.Palette;
 import ghidra.framework.options.SaveState;
 
-/**
+# /**
  * This class maintains a collection of {@link ColumnConstraint} that are applied to a specific table column
  * for filtering purposes. In order for this ColumnConstraintSet to "pass", (i.e. accept the table
  * row) the column value for that row must pass at least one of the constraints in this set, thus

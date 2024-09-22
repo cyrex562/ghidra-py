@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.remote;
 
 import java.io.Serializable;
 
-/**
+# /**
  * Container class for the user name and the permission type: READ_ONLY,
  * WRITE, or ADMIN.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.pcode.emu.unix;
 import ghidra.pcode.emu.sys.BytesEmuFileContents;
 import ghidra.pcode.emu.sys.EmuFileContents;
 
-/**
+# /**
  * A concrete in-memory file system simulator suitable for UNIX programs
  */
 public class BytesEmuUnixFileSystem extends AbstractEmuUnixFileSystem<byte[]> {

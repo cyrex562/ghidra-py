@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.util.graph;
 import ghidra.util.datastruct.LongIntHashtable;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
 *
 * This class modifies the behavior of LongIntHashtable. May add
 * to the value stored with the key rather than replacing the value.

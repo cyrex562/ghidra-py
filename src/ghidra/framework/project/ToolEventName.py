@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.plugintool;
 
 import java.lang.annotation.*;
 
-/**
+# /**
  * Annotation for publishing the ToolEvent name so that is shows up in the tool connection
  * dialog.
  */

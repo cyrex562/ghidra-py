@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Feb 8, 2005
  *
  */
@@ -22,7 +22,7 @@ package ghidra.app.plugin.processors.sleigh.expression;
 import ghidra.app.plugin.processors.sleigh.ParserWalker;
 import ghidra.program.model.mem.MemoryAccessException;
 
-/**
+# /**
  * 
  *
  * Form new expression by multiplying two PatternExpressions

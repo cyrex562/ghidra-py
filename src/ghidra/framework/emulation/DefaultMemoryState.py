@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.utils.Utils;
 import ghidra.program.model.address.AddressSpace;
 import ghidra.program.model.lang.Language;
 
-/**
+# /**
  * All storage/state for a pcode emulator machine
  *
  * Every piece of information in a pcode emulator machine is representable as a triple

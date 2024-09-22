@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.classfinder.ExtensionPoint;
 import ghidra.util.exception.GraphException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Basic interface for objects that can display or otherwise consume a generic graph
  */
 public interface GraphDisplayProvider extends ExtensionPoint {

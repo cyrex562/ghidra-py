@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package db.buffers;
 
-/**
+# /**
  * <code>ChangeMap</code> facilitates the decoding of change-data 
  * to determine if a specific buffer was modified by the 
  * corresponding buffer file version.

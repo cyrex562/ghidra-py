@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Feb 8, 2005
  *
  */
@@ -26,7 +26,7 @@ import ghidra.app.plugin.processors.sleigh.expression.*;
 import ghidra.program.model.pcode.Decoder;
 import ghidra.program.model.pcode.DecoderException;
 
-/**
+# /**
  * A ValueSymbol that gets its semantic value from contiguous bits
  * in a VarnodeSymbol. This serves as an embedding of a ContextOp
  * into an actual Varnode and is probably only relevant at compile time

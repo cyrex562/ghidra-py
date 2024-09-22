@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.Graphics;
 
 import ghidra.util.bean.GGlassPane;
 
-/**
+# /**
  * An interface used with {@link AnimationUtils} to allow clients to use the timing 
  * framework while performing their own painting.
  */

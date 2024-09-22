@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.model.DomainObjectClosedListener;
 import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 
-/** 
+# /** 
  * Class for managing a queue of tasks to be executed, one at a time, in priority order.  All the
  * tasks pertain to an DomainObject and transactions are created on the DomainObject
  * so that tasks can operate on them.

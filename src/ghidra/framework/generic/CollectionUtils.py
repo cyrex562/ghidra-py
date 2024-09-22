@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.util.task.CancellableIterator;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A collection of utility methods that prevent you from having to do unsafe casts of
  * {@link Collection} classes due to runtime type erasure.
  *

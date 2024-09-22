@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import java.util.*;
 import ghidra.program.model.address.*;
 import ghidra.program.model.lang.UnknownInstructionException;
 
-/**
+# /**
  * 
  *
  * Pcode Op describes a generic machine operation.  You can think of

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.util.exception;
 
 
-/**
+# /**
  * Exception thrown when an object is not found.
  */
 public class NotFoundException extends UsrException {

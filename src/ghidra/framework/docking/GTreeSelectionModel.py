@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import docking.widgets.tree.support.GTreeSelectionEvent.EventOrigin;
 import docking.widgets.tree.support.GTreeSelectionListener;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * This class was created so that GTree users can know the origin of tree selections.  This is 
  * useful in determining if the tree selection event occurred because the user clicked in the
  * tree, or if an API method was called (or by an event internal to, or trigged by the GTree).

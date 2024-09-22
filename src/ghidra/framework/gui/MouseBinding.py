@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * A simple class that represents a mouse button and any modifiers needed to bind an action to a
  * mouse input event.
  * <P>

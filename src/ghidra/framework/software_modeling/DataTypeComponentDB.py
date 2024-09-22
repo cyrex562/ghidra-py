@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.SystemUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Database implementation for a DataTypeComponent. If this
  * component is for an undefined data type, then the record object is
  * null.

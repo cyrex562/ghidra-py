@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.service.graph;
 import java.util.Arrays;
 import java.util.List;
 
-/** 
+# /** 
  * Just a static list of graph layout algorithm names
  */
 public class LayoutAlgorithmNames {

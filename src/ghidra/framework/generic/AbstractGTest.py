@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.exception.AssertException;
 import junit.framework.AssertionFailedError;
 import utility.application.ApplicationUtilities;
 
-/**
+# /**
  * A root for system tests that provides known system information.
  *
  * <P>This class exists so that fast unit tests have a place to share data without having the

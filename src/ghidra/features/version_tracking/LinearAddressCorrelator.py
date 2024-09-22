@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.Data;
 import ghidra.program.model.listing.Function;
 import ghidra.program.util.*;
 
-/**
+# /**
  * This is the correlator of last resort. It is the last correlator to be checked when trying to 
  * acquire a correlation.
  */

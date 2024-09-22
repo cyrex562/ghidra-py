@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * This interface represents the main entry point into an object which
  * stores all information relating to a single program.  This program
  * model divides a program into four major parts: the memory, the symbol table,

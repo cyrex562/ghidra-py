@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.lsh.vector.LSHVector;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * Information about a single function the correlator is attempting to match
  */
 public class FunctionNode implements Comparable<FunctionNode> {

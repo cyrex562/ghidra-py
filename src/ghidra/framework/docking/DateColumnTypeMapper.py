@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Date;
 
 import docking.widgets.table.constraint.ColumnTypeMapper;
 
-/**
+# /**
  * Converts Date Column objects to LocalDate objects so that column gets LocalDate type column
  * filters
  */

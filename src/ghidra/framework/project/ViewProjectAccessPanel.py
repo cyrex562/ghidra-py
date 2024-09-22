@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.client.RepositoryAdapter;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.framework.remote.User;
 
-/**
+# /**
  * Extension of the {@link ProjectAccessPanel} that only shows the user access list.
  *
  */

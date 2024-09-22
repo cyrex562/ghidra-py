@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import javax.swing.Icon;
 import resources.ResourceManager;
 import resources.icons.UrlImageIcon;
 
-/**
+# /**
  * Class for storing colors, fonts, and icons by id
  */
 public class GThemeValueMap {

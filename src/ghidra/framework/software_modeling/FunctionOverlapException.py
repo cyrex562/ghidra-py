@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <CODE>FunctionOverlapException</CODE> is thrown in cases where
  * a function creation or change would result in overlapping functions.
  */

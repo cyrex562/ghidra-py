@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import sarif.SarifProgramOptions;
 import sarif.export.SarifWriterTask;
 import sarif.export.ep.SarifEntryPointWriter;
 
-/**
+# /**
  * SARIF manager for External Entry Points.
  */
 public class ExtEntryPointSarifMgr extends SarifMgr {

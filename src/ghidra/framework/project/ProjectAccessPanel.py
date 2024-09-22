@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.HelpLocation;
 import resources.ResourceManager;
 import util.CollectionUtils;
 
-/**
+# /**
  * Panel that shows the users for a given repository and the users associated with the current
  * shared project. There are 3 main sub-panels:
  * <p>

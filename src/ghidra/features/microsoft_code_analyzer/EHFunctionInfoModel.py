@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.mem.*;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Model for exception handling information about the Function Information data type and its 
  * associated exception handling data types.
  * <br>

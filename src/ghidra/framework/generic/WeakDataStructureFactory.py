@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.datastruct;
 
 import generic.concurrent.ConcurrentListenerSet;
 
-/**
+# /**
  * Factory for creating containers to use in various threading environments
  *
  * Other non-weak listeners:

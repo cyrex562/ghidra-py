@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.*;
 import ghidra.util.bean.opteditor.OptionsVetoException;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Class to manage a set of option name/value pairs for a category.
  *
  * <p>The values may be primitives or {@link WrappedOption}s that are containers for primitive

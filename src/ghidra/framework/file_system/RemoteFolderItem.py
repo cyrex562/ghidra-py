@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.framework.client.RepositoryAdapter;
 import ghidra.framework.remote.RepositoryItem;
 import ghidra.framework.store.*;
 
-/**
+# /**
  * <code>RemoteFolderItem</code> provides an abstract FolderItem implementation
  * for an item contained within a remote Repository.  
  */

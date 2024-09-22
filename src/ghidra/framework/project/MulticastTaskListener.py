@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.task;
 
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Used by the GTaskManager to efficiently manage multiple GTaskListeners.  
  * <P>
  * When an GTaskManager has multiple listeners, instead of having a list of listeners, listeners

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ class OverlaySpaceDBAdapterV0 extends OverlaySpaceDBAdapter {
 
 	private static final int VERSION = 0;
 
-/* Do not remove the following commented out schema! It shows the version 0 overlay table schema. */
+# /* Do not remove the following commented out schema! It shows the version 0 overlay table schema. */
 //	private static final Schema SCHEMA_V0 = new Schema(VERSION, "ID",
 //		new Field[] { StringField.INSTANCE, StringField.INSTANCE, LongField.INSTANCE, LongField.INSTANCE },
 //		new String[] { "Overlay Space Name", "Base Space Name", "Minimum Offset", "Maximum Offset" });

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.tree.GTree;
 import docking.widgets.tree.GTreeNode;
 import ghidra.framework.main.FrontEndTool;
 
-/**
+# /**
  * Tree that shows the folders and domain files in a Project
  */
 public class DataTree extends GTree {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.widgets.table.AbstractSortedTableModel;
 import docking.widgets.table.TableSortState;
 import ghidra.framework.store.Version;
 
-/**
+# /**
  * Table model for showing version history.
  */
 class VersionHistoryTableModel extends AbstractSortedTableModel<Version> {

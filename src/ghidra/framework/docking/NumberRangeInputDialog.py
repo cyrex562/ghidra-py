@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.NumericUtilities;
 import ghidra.util.datastruct.SortedRangeList;
 import ghidra.util.layout.PairLayout;
 
-/**
+# /**
  * An input dialog that accepts number input as discrete values or a range of values using 
  * ':' as the range separator.
  */

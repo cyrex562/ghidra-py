@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.feature.vt.gui.provider.functionassociation;
 import ghidra.feature.vt.api.main.VTMatch;
 import ghidra.program.model.listing.Function;
 
-/**
+# /**
  * Action context interface for the function associations provider.
  */
 public interface FunctionAssociationContext {

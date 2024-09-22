@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>DomainFile</code> provides a storage interface for project files.  A 
  * <code>DomainFile</code> is an immutable reference to file contained within a project.  The state 
  * of a <code>DomainFile</code> object does not track name/parent changes made to the referenced 

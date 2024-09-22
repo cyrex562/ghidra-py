@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.widgets.tree.GTreeNode;
 import docking.widgets.tree.support.GTreeNodeTransferable;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Manages Ghidra integration with the system clipboard when doing cut/copy/paste
  * operations on domainFiles and domainFolders in a data tree widget.
  * <p>

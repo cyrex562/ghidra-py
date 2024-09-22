@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Collection;
 import ghidra.feature.vt.api.impl.VTProgramCorrelatorInfo;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Interface for all the matches generated from a single program correlator run.
  *
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.model.pcode.Varnode;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An abstract p-code executor state piece for storing and retrieving bytes as arrays
  *
  * @param <S> the type of an executor state space, internally associated with an address space

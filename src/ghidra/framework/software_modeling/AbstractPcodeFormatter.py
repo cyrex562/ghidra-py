@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.lang.Register;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.util.Msg;
 
-/**
+# /**
  * An abstract p-code formatter which can take a list of p-code ops or op templates and consistently
  * format them. The general pattern is to extend this class and specify another class which extends
  * an {@link AbstractAppender}. In most cases, it is only necessary to override

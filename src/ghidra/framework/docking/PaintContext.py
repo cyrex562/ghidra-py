@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.theme.*;
 import generic.theme.GThemeDefaults.Colors.Palette;
 import ghidra.util.ColorUtils;
 
-/**
+# /**
  * Miscellaneous information needed by fields to paint.
  */
 public class PaintContext {

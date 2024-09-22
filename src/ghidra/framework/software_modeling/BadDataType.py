@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.classfinder.ClassSearcher;
 
-/**
+# /**
  * Provides an implementation of a data type that is not valid (bad) as it is used in
  * the program. For example, the class for the underlying data type may no longer be 
  * available or the data type may not fit where it has been placed in the program.

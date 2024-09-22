@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.ImageIcon;
 
 import generic.util.image.ImageUtils;
 
-/**
+# /**
  * Creates a disabled version of an icon
  * @deprecated This class has been replaced by {@link DisabledImageIcon} since it 
  * extends {@link ImageIconWrapper} which has also been deprecated. 

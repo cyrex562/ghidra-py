@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.layout.VerticalLayout;
 import resources.Icons;
 import resources.ResourceManager;
 
-/**
+# /**
  * Panel for displaying a single column filter entry.  This consists of multiple ConstraintFilterPanels
  * for each "OR" condition in this column filter entry.
  */

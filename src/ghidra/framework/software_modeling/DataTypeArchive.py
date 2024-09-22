@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Date;
 
 import ghidra.program.model.data.DataTypeManagerDomainObject;
 
-/**
+# /**
  * This interface represents the main entry point into an object which
  * stores all information relating to a single data type archive.
  */

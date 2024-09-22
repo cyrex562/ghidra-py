@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.graph;
 
 import java.util.*;
 
-/**
+# /**
  * Class for storing paths with fast "contains" method.
  *
  * <p>Note: a path can only contain a vertex once.

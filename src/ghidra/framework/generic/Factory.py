@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package generic.cache;
 
-/**
+# /**
  * A simple interface that can build, lookup or otherwise return a value <code>V</code> for a
  * key <code>K</code>.
  *

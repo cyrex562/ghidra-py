@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.ImageIcon;
 
 import generic.util.image.ImageUtils;
 
-/**
+# /**
  * {@link LazyImageIcon} that is created from a byte array
  */
 public class BytesImageIcon extends LazyImageIcon {

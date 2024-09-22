@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import org.apache.logging.log4j.core.config.Property;
 import org.apache.logging.log4j.core.config.plugins.*;
 import org.apache.logging.log4j.core.layout.PatternLayout;
 
-/**
+# /**
  * Log4j appender that writes messages to the log panel in the main Ghidra window. 
  * This is configured in the various log4j configuration files 
  * (generic.log4j.xml, generic.logjdev.xml, etc...).

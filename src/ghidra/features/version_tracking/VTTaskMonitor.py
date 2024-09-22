@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.feature.vt.gui.plugin;
 
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A class that allows the VT application to track the currently in-use task monitor.   The
  * {@link VTController} will set this value each time it runs a VT task via
  * {@link VTController#runVTTask(ghidra.feature.vt.gui.task.VtTask)}.

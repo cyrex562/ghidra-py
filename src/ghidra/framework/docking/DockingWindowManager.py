@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +46,7 @@ import help.Help;
 import help.HelpService;
 import util.CollectionUtils;
 
-/**
+# /**
  * Manages the "Docking" arrangement of a set of components and actions. The components can be
  * "docked" together or exist in their own window. Actions can be associated with components so they
  * "move" with the component as it moved from one location to another.

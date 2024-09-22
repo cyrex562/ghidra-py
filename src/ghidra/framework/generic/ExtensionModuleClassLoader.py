@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.Set;
 
-/**
+# /**
  * A class loader used with Ghidra extensions.
  */
 public class ExtensionModuleClassLoader extends URLClassLoader {

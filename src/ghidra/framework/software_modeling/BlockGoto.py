@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import static ghidra.program.model.pcode.ElementId.*;
 
 import java.io.IOException;
 
-/**
+# /**
  * A "plain" goto block
  *     possible multiple incoming edges
  *     no outgoing edges

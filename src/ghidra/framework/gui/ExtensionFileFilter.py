@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 import java.io.File;
 import java.io.FileFilter;
 
-/**
+# /**
  * A convenience implementation of FileFilter that filters out
  * all files except for those type extensions that it knows about.
  * <p>

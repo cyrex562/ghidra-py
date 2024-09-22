@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Database implementation for a structure or union.
  */
 abstract class CompositeDB extends DataTypeDB implements CompositeInternal {

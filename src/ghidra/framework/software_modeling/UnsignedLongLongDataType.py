@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * Basic implementation for an Signed LongLong Integer dataType 
  */
 public class UnsignedLongLongDataType extends AbstractUnsignedIntegerDataType {

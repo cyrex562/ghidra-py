@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.framework.model;
 
 
-/**
+# /**
  *
  * Listener that is notified when a project is opened, closed. 
  */

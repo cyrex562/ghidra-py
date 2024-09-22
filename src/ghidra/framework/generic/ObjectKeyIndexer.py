@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ import ghidra.util.exception.AssertException;
 
 import java.util.Arrays;
 
-/**
+# /**
  * This class converts arbitrary Objects into compacted int indexes suitable
  * for use as indexes into an array or table.  Whenever a new key is added,
  * the smallest unused index is allocated and associated with that key.

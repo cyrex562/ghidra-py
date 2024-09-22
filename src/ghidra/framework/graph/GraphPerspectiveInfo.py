@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.Point;
 import edu.uci.ics.jung.visualization.*;
 import ghidra.framework.options.SaveState;
 
-/**
+# /**
  * An object that allows for storing and restoring of graph perspective data, like the zoom 
  * level and the position of the graph.
  *

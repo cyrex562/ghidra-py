@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.*;
 import ghidra.util.UniversalID;
 
-/**
+# /**
  * Adapter needed for a read-only version of data type manager that is not going
  * to be upgraded, and there is no Enumeration table in the data type manager.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.database.DBObjectCache;
 import ghidra.program.database.DatabaseObject;
 import ghidra.program.model.listing.FunctionTag;
 
-/**
+# /**
  * Database object for {@link FunctionTagAdapter} objects. 
  */
 public class FunctionTagDB extends DatabaseObject implements FunctionTag {

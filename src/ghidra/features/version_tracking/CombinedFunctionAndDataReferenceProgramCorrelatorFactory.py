@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.feature.vt.api.util.VTOptions;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * Factory to call the correlator that correlates functions based on previously accepted data and function matches.
  */
 public class CombinedFunctionAndDataReferenceProgramCorrelatorFactory

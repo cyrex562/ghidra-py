@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package sarif.managers;
 import ghidra.program.model.lang.CompilerSpecID;
 import ghidra.program.model.lang.LanguageID;
 
-/**
+# /**
  * This class stores values pulled from the
  * PROGRAM, INFO_SOURCE, and LANGUAGE tag inside a ghidra program SARIF file.
  * 

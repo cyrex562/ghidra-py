@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.Swing;
 import ghidra.util.task.AbstractSwingUpdateManager;
 import ghidra.util.task.SwingUpdateManager;
 
-/**
+# /**
  * Class to manage all the global actions that show up on the main tool menubar or toolbar
  */
 public class GlobalMenuAndToolBarManager implements DockingWindowListener {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-/**
+# /**
  * An annotation for a data element being transferred to/from a stream
  *
  * This class parallels the XML concept of an attribute on an element. An AttributeId describes

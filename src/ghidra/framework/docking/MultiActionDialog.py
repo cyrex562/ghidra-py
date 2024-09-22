@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.event.mouse.GMouseListenerAdapter;
 import docking.widgets.label.GIconLabel;
 import docking.widgets.label.GLabel;
 
-/**
+# /**
  * Dialog to show multiple actions that are mapped to the same keystroke;
  * allows the user to select which action to do.
  */

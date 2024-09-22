@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.zip.ZipEntry;
 import generic.io.JarWriter;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Class to write files in a project to a jar output stream.
  */
 

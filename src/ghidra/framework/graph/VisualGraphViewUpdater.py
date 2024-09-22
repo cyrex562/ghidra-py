@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.task.BusyListener;
 import utility.function.Callback;
 
-/**
+# /**
  * This is the class through which operations travel that manipulate the view and graph <b>while
  * plugged-in to the UI</b>.   (Setup and tear down operations performed before the view 
  * or graph are visible need not pass through this class.)  This class is responsible for 

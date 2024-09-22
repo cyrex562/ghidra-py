@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.feature.vt.api.main.*;
 import ghidra.util.HTMLUtilities;
 import ghidra.util.table.column.AbstractGColumnRenderer;
 
-/**
+# /**
  * A renderer for {@link VTMatch} that shows an icon for the match's status
  */
 public class MatchMarkupStatusBatteryRenderer extends AbstractGColumnRenderer<VTMatch> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.symbol;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  *
  * Implementation for a Thunk Function reference.
  * These references are dynamic in nature and may not be explicitly added,

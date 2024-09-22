@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.UserAccessException;
 
-/**
+# /**
  * Manage the panels for the wizard that shows server info and repository panels.  
  * The panel order is 
  * (1) Server Info

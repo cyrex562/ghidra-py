@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.tool.ToolConstants;
 import generic.util.action.SystemKeyBindings;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Action for displaying the {@link ActionChooserDialog}. This action determines the focused 
  * {@link ComponentProvider} or {@link DialogComponentProvider} and displays the 
  * {@link ActionChooserDialog} with actions relevant to that focused component.

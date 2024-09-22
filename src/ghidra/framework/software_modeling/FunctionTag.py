@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.listing;
 
-/**
+# /**
  * Represents a function tag object that can be associated with 
  * functions. This maps to the  {@code FunctionTagAdapter} table.
  */

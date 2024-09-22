@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import ghidra.util.classfinder.ClassTranslator;
 
-/**
+# /**
  * Pointer56 is really a factory for generating 7-byte pointers.
  */
 public class Pointer56DataType extends PointerDataType {

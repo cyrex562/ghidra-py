@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package generic.util;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/**
+# /**
  * An implementation of {@link PeekableIterator} that can take a Java {@link Iterator} and 
  * wrap it to implement the {@link PeekableIterator} interface.
  *

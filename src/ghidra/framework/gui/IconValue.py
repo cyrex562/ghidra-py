@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import resources.ResourceManager;
 import resources.icons.EmptyIcon;
 import resources.icons.UrlImageIcon;
 
-/**
+# /**
  * A class for storing {@link Icon} values that have a String id (e.g. icon.bg.foo) and either
  * a concrete icon or a reference id which is the String id of another IconValue that it
  * will inherit its icon from. So if this class's icon value is non-null, the refId will be null

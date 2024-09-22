@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.lang.*;
 import ghidra.program.model.pcode.Encoder;
 import ghidra.xml.*;
 
-/**
+# /**
  * Consume a parameter from a specific resource list
  * 
  * Normally the resource list is determined by the parameter data-type, but this

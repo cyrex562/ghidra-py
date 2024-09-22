@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Base class for DataType classes. Many of the DataType methods are stubbed out so simple datatype
  * classes can be created without implementing too many methods.
  */

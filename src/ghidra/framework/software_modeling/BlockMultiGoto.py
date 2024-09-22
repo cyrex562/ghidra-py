@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import static ghidra.program.model.pcode.ElementId.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
+# /**
  * A block representing a 2-or-more control flow branchpoint
  * 
  * possible multiple incoming edges

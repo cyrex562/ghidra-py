@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import javax.swing.JButton;
 
 import resources.ResourceManager;
 
-/**
+# /**
  * A drop-in replacement for {@link JButton} that correctly installs a disabled icon.
  */
 public class GButton extends JButton {

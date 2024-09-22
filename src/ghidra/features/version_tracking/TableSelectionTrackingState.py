@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.feature.vt.gui.actions;
 
-/**
+# /**
  * An enum to describe the available selection tracking states.  By default Ghidra tables will try 
  * to track the selected element, even if its row changes.  Some applications do not want this 
  * behavior.  As an example, some applications would rather that the selected row index not 

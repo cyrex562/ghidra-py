@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.map.TypeMismatchException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  *
  * Interface for managing a set of PropertyManagers.
  * 

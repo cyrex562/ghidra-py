@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.graph.algo;
 
-/**
+# /**
  * Occurs when a graph cannot be sorted
  */
 public class SorterException extends Exception {

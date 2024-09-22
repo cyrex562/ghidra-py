@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.classfinder;
 
 import java.util.Hashtable;
 
-/**
+# /**
  * <code>ClassTranslator</code> provides a way to map an old Ghidra class to
  * a current Ghidra class. It can be used whenever a class is moved or renamed
  * and Ghidra needs to know.

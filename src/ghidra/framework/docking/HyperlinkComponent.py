@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import javax.swing.text.DefaultCaret;
 
 import docking.DockingUtils;
 
-/**
+# /**
  * A component that acts like a label, but adds the ability to render HTML anchors and the 
  * ability for clients to add anchor handlers.
  * <p>

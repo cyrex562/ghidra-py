@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.stream.Stream;
 
 import ghidra.app.plugin.processors.sleigh.ConstructState;
 
-/**
+# /**
  * The state corresponding to a sub-table operand
  * 
  * <p>

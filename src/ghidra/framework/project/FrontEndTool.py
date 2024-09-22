@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -79,7 +79,7 @@ import ghidra.util.xml.XmlUtilities;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  * Tool that serves as the the Ghidra Project Window. Only those plugins that
  * implement the FrontEndable interface may be <i>directly</i> added to this
  * tool by the user. Other plugins that are not marked as FrontEndable may get

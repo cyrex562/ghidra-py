@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.graph.viewer.edge;
 
-/**
+# /**
  * A simple boolean supplier that signals if path highlighting work should not take place
  */
 public interface PathHighlighterWorkPauser {

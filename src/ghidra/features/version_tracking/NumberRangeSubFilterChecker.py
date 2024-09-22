@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.feature.vt.gui.provider.matchtable;
 
 import java.util.Objects;
 
-/**
+# /**
  * Checks to see if one number range is a subset of the other
  */
 public interface NumberRangeSubFilterChecker {

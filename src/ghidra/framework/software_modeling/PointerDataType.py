@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.DataConverter;
 import ghidra.util.StringUtilities;
 
-/**
+# /**
  * Basic implementation for a pointer dataType
  */
 public class PointerDataType extends BuiltIn implements Pointer {

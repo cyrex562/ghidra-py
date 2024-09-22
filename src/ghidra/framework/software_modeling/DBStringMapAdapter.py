@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import db.*;
 
-/**
+# /**
  * <code>DBStringMapAdapter</code> provides a simple string-to-string map backed by a named database table.
  * This adapter's schema must never change.
  */

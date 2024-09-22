@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 import java.util.*;
 import java.util.function.Predicate;
 
-/**
+# /**
  * A class that allows clients to wrap a given accumulator, only adding elements that pass the
  * given filter.
  *

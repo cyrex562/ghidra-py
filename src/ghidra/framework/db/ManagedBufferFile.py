@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package db.buffers;
 
 import java.io.IOException;
 
-/**
+# /**
  * <code>BufferFile</code> facilitates read/write access to buffer oriented file.
  * Access to related resources, such as parameters and change data, is also facilitated.
  */

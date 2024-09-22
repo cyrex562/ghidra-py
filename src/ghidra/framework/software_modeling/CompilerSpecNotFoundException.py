@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.lang;
 
 import java.io.IOException;
 
-/**
+# /**
  * Exception class used when the named compiler spec cannot be found.
  */
 public class CompilerSpecNotFoundException extends IOException {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,14 +17,14 @@ package generic.theme;
 
 import static ghidra.util.WebColors.*;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.util.List;
-import java.util.Set;
+# import java.awt.Color;
+# import java.awt.Component;
+# import java.util.List;
+# import java.util.Set;
 
-import javax.swing.plaf.ComponentUI;
+# import javax.swing.plaf.ComponentUI;
 
-/**
+# /**
  * Version of ThemeManager that is used before an application or test installs a full
  * ApplicationThemeManager. Provides enough basic functionality used by the Gui class to
  * allow simple unit tests to run.

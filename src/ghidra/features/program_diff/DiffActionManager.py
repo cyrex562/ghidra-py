@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.HTMLUtilities;
 import ghidra.util.HelpLocation;
 import resources.Icons;
 
-/**
+# /**
  * Creates the actions for the program diff plugin.
  */
 class DiffActionManager {

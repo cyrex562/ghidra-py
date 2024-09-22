@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.widgets.table.constraint.dialog.ColumnFilterDialog;
 import ghidra.docking.settings.Settings;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * An interface for the {@link DynamicTableColumn}.  This allows the filtering system to stay
  * in sync with the rendering system by using the display text to filter.
  * 

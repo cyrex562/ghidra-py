@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.mem;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Live memory handler interface.
  */
 public interface LiveMemoryHandler {

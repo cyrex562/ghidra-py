@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * Extends DataTypeManager to provide methods specific to a data type manager that is file based.
  */
 public interface FileBasedDataTypeManager extends DataTypeManager {

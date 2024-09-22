@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.symbol;
 
-/**
+# /**
  * Class to define flow types for instruction (how it
  * flows from one instruction to the next)
  */

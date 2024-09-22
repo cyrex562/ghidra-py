@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.PrintStream;
 
 import ghidra.app.plugin.assembler.sleigh.tree.AssemblyParseBranch;
 
-/**
+# /**
  * A successful result from parsing
  */
 public class AssemblyParseAcceptResult extends AssemblyParseResult {

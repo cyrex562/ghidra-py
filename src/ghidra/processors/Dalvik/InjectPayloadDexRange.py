@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.model.pcode.Varnode;
 
-/**
+# /**
  * Implements the DEX userop 'moveRangeToIV'
  * The first input should be a constant indicating the number of registers to move
  * The second input is the offset (in register space) of the first register to move.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util.task;
 
-/**
+# /**
  * Listener that is notified when a thread completes its task.
  */
 public interface TaskListener {

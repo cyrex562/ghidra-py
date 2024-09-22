@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import ghidra.program.model.address.AddressSpace;
 
-/**
+# /**
  * An interface that provides storage for values of type {@code T}
  * 
  * <p>

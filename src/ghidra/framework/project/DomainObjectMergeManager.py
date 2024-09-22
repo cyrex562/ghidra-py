@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.util.task.TaskMonitor;
 
 import javax.swing.JComponent;
 
-/**
+# /**
  * An interface to allow merging of domain objects.
  */
 public interface DomainObjectMergeManager extends MergeProgressModifier {

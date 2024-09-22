@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,7 +42,7 @@ import sarif.SarifProgramOptions;
 import sarif.export.SarifWriterTask;
 import sarif.export.registers.SarifRegisterValueWriter;
 
-/**
+# /**
  * SARIF manager for register values.
  */
 public class RegisterValuesSarifMgr extends SarifMgr {

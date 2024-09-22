@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>DataTypeArchiveContentHandler</code> converts between DataTypeArchive instantiations
  * and FolderItem storage.  This class also produces the appropriate Icon for 
  * DataTypeArchive files.

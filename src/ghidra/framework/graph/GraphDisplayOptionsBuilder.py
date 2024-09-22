@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.service.graph;
 import java.awt.Color;
 import java.util.Objects;
 
-/**
+# /**
  * Builder for building {@link GraphDisplayOptions}
  */
 public class GraphDisplayOptionsBuilder {

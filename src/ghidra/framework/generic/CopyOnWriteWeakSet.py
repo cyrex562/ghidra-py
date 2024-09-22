@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 
 import org.apache.commons.collections4.IteratorUtils;
 
-/**
+# /**
  * A set that avoids {@link ConcurrentModificationException}s by copying the internal storage
  * <b>for every mutation operation</b>.  Thus, this data structure is only efficient when the
  * number of event notification operations significantly out numbers mutations to this structure

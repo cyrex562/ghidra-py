@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.datastruct.QueueStub;
 import ghidra.util.exception.AssertException;
 import utility.function.Callback;
 
-/**
+# /**
  * A class to run {@link GraphJob}s.  This class will queue jobs and will run them
  * in the Swing thread.  Job implementations may be multi-threaded, as they choose, by managing
  * threads themselves.    This is different than a typical job runner, which is usually

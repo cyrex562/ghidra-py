@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.util.exception.NoValueException;
 import java.io.IOException;
 import java.util.*;
 
-/**
+# /**
  * <code>VersionFileHandler</code> allows a set of VersionFile's to be used in
  * the dynamic reconstruction of an older BufferFile.  In an attempt to
  * conserve file handles, only one VersionFile is held open at any point

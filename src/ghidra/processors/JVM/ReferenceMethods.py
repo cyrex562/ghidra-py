@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.pcodeInject;
 import ghidra.javaclass.format.DescriptorDecoder;
 import ghidra.javaclass.format.constantpool.*;
 
-/**
+# /**
  * 
  * This class contains methods to produce pcode for the getstatic, putstatic 
  * getfield, and putfield instructions.

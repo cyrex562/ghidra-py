@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.store;
 
 import java.io.IOException;
 
-/**
+# /**
  * <code>DataFileHandle</code> provides a random-access handle to a file.
  */
 public interface DataFileHandle {

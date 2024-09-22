@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.datastruct;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class data structures can use to delegate error handling responsibilities to system-level
  * decision making.  This allows for specialized error handling in testing mode.
  */

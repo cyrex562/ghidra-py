@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-/**
+# /**
  * Writes a theme to a file either as a single theme file or as a zip file that contains the theme
  * file and any external (from the file system, not the classpath) icons used by the theme.
  */

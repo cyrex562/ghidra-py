@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.Icon;
 
 import ghidra.framework.data.FolderLinkContentHandler;
 
-/**
+# /**
  * {@code LinkedDomainFolder} extends {@link DomainFolder} for all folders which are 
  * accessable via a folder-link (see {@link FolderLinkContentHandler}).
  */

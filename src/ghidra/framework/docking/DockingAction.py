@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import gui.event.MouseBinding;
 import resources.ResourceManager;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * <code>DockingAction</code> defines a user action associated with a toolbar icon and/or
  * menu item.  All actions must specify an action name which will be used to associate key bindings
  * and will be used as the popup menu item when needed.  This name should be unique across

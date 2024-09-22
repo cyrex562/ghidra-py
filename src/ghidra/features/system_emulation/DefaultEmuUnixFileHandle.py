@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.pcode.exec.PcodeArithmetic;
 import ghidra.program.model.lang.CompilerSpec;
 import ghidra.program.model.pcode.PcodeOp;
 
-/**
+# /**
  * A file descriptor associated with a file on a simulated UNIX file system
  *
  * @param <T> the type of values stored by the file

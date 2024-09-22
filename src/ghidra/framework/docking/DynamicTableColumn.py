@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.docking.settings.SettingsDefinition;
 import ghidra.framework.plugintool.ServiceProvider;
 import ghidra.util.table.column.GColumnRenderer;
 
-/**
+# /**
  * The root interface for defining columns for {@link DynamicColumnTableModel}s. The class allows
  * you to create objects for tables that know how to give a column value for a given row.
  *

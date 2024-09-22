@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.framework.store.LockException;
 import ghidra.util.NotOwnerException;
 import ghidra.util.exception.NotFoundException;
 
-/**
+# /**
  * Interface for methods to create, open, and delete projects; maintains a
  * list of known project views that the user opened. 
  * It has a handle to the currently opened project. A project can be

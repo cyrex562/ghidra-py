@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 package ghidra.program.model.address;
 
 
-/**
+# /**
  * <code>OldGenericNamespaceAddress</code> provides a means of instantiating namespace 
  * oriented addresses which were previously used for External, Stack and Register addresses.
  * This class is needed to facilitate an upgrade since this concept is no longer supported by Address.

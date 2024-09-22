@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.options;
 
 import java.awt.Font;
 
-/**
+# /**
  * A wrapper object for registering fonts as options.
  */
 

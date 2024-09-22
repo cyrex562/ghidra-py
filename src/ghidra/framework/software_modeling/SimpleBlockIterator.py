@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <CODE>SimpleBlockIterator</CODE> is an implementation of
  * <CODE>CodeBlockIterator</CODE> capable of iterating in
  * the forward direction over "simple blocks".

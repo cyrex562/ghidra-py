@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.SwingUtilities;
 
 import docking.action.DockingActionIf;
 
-/**
+# /**
  * Managers {@link ComponentPlaceholder}s.  This includes creating them, saving placeholders
  * for later reuse and disposal.
  */

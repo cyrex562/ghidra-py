@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import java.text.AttributedCharacterIterator;
 import java.util.*;
 import java.util.List;
 
-/**
+# /**
  * Graphics used to render copied text data.  This class is not a true graphics object, but is
  * instead used to grab text being painted so that clients can later use that text.
  */

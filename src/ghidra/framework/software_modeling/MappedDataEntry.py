@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.program.model.data.MutabilitySettingsDefinition;
 import ghidra.program.model.listing.Data;
 import ghidra.program.model.listing.VariableStorage;
 
-/**
+# /**
  * A normal address based HighSymbol mapping with an associated Data object
  */
 public class MappedDataEntry extends MappedEntry {

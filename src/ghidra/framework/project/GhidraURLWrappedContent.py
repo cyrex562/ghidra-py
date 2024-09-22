@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.model.*;
 import ghidra.framework.store.FileSystem;
 import ghidra.util.InvalidNameException;
 
-/**
+# /**
  * <code>GhidraURLWrappedContent</code> provides controlled access to a Ghidra folder/file
  * associated with a Ghidra URL.  It is important to note the issuance of this object does
  * not guarantee existence of the requested resource.  Any object obtained via the getContent

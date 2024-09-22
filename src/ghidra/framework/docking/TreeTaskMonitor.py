@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.CancelledListener;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * TaskMonitor implementation that is useful for monitor work when traversing trees.  
  * 
  * It works by subdividing the distance of the top-most progress bar (represented by the top-most

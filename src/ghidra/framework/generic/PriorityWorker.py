@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.util.task.TaskMonitor;
 import java.util.Comparator;
 import java.util.concurrent.PriorityBlockingQueue;
 
-/**
+# /**
  * Executes a single job at a time in priority order.
  * 
  * @see Worker

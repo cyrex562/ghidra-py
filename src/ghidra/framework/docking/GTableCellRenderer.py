@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.docking.settings.*;
 import ghidra.util.*;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A default table cell renderer that relies on the <code>toString()</code> method when rendering
  * the cells of the table.
  */

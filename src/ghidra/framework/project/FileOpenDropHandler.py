@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import docking.dnd.Droppable;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.CascadedDropTarget;
 
-/**
+# /**
  *  Handles drag/drop events on a given component such that a file
  *  dropped on the component from the front end tool will cause
  *  that file to be opened.  Properly handles drop events with

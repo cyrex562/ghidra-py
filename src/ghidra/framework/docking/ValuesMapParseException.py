@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.values;
 
-/**
+# /**
  * Exception thrown when processing/parsing ValuesMap values. Mostly exists so that the exception
  * message is uniform throught the types.
  */

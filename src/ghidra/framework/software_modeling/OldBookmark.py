@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.ObjectStorage;
 import ghidra.util.Saveable;
 
-/**
+# /**
  * 
  */
 public class OldBookmark implements Saveable {

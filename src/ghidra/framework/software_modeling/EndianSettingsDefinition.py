@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.program.model.lang.Endian;
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  *  SettingsDefinition for endianness
  */
 public class EndianSettingsDefinition implements EnumSettingsDefinition {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import edu.uci.ics.jung.visualization.VisualizationServer;
 import ghidra.graph.viewer.VisualEdge;
 import ghidra.graph.viewer.VisualVertex;
 
-/**
+# /**
  * A class to animate a vertex in order to draw attention to it.
  * 
  * Note: this class is not a {@link AbstractAnimatorJob} so that it can run concurrently 

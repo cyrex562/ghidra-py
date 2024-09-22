@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -14,13 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Feb 8, 2005
  *
  */
 package ghidra.app.plugin.processors.sleigh.symbol;
 
-/**
+# /**
  * 
  *
  * This is a TripleSymbol whose semantic value can be determined

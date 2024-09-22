@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.awt.event.MouseEvent;
 
 import ghidra.graph.viewer.*;
 
-/**
+# /**
  * A handler to zoom nodes when double-clicked.  If the vertex is zoomed out, then we will zoom
  * in and center.  If the vertex is zoomed to full size, then we will zoom out and center.
  * 

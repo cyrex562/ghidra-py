@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressRange;
 import ghidra.program.model.mem.*;
 
-/**
+# /**
  * Provides information about the source of a byte value at an address including the file it 
  * came from, the offset into that file, and the original value of that byte.
  */

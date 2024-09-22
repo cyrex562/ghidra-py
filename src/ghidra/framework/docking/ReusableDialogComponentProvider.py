@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.SwingUtilities;
 import generic.theme.*;
 import ghidra.util.task.Task;
 
-/**
+# /**
  * A version of {@link DialogComponentProvider} for clients to extend when they intend for their
  * dialog to be reused.   Typically, dialogs are used once and then no longer referenced.
  * Alternatively, some clients create a dialog and use it for the lifetime of their code.  This

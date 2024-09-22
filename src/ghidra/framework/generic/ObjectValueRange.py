@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.datastruct;
 
-/**
+# /**
  * Associates an integer value with a numeric range.
  */
 public class ObjectValueRange<T> implements Comparable<ObjectValueRange<T>> {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.map;
 
 import java.io.*;
 
-/**
+# /**
  * Handles general storage and retrieval of object values indexed by long keys.
  * @param <T> object property value type
  */

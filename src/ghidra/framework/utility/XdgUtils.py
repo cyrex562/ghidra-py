@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package utility.application;
 
-/**
+# /**
  * Class to support the "XDG Base Directory Specification"
  * <p>
  * Based off version 0.8

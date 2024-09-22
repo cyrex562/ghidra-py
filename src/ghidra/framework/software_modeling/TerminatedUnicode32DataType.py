@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * A null-terminated UTF-32 string {@link DataType}.
  * <p>
  */

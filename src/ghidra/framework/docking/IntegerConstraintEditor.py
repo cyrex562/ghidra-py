@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import docking.widgets.table.constraint.SingleValueColumnConstraint;
 import docking.widgets.textfield.IntegerTextField;
 import generic.theme.GThemeDefaults.Colors.Messages;
 
-/**
+# /**
  * A constraint editor for specifying comparison with a single integer-type value (Byte, Short,
  * Integer, and Long).
  *

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import db.buffers.DataBuffer;
 
-/**
+# /**
  * <code>ShortField</code> provides a wrapper for 2-byte signed short data 
  * which is read or written to a Record. 
  */

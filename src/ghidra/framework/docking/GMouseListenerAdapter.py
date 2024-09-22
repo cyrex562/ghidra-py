@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.event.MouseEvent;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * A mouse listener implementation designed to provide consistent handling of triggers for
  * popups and double-clicking.
  * <P>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.pcode.emu;
 import ghidra.program.model.lang.Language;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * An extension for preparing execution state for sleigh emulation
  * 
  * <p>

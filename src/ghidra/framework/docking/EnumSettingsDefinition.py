@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.docking.settings;
 
-/**
+# /**
  * Interface for a SettingsDefinition with enumerated values.
  */
 public interface EnumSettingsDefinition extends SettingsDefinition {

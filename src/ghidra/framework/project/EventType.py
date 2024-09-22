@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-/**
+# /**
  * Interface for objects that represent event types. This interface has only one method and that
  * method exists to facilitate fast checking if an event type is present in a collection of events.
  * The value returned from getId() is arbitrary and can change from run to run. Its only purpose

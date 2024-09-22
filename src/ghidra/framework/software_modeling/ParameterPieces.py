@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.pcode.Varnode;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * Basic elements of a parameter: address, data-type, properties
  */
 public class ParameterPieces {

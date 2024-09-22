@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.util.layout.VerticalLayout;
 import help.Help;
 import help.HelpService;
 
-/**
+# /**
  *
  * Panel that shows each property in an Options category or a Group in an
  * Options category.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.timer.GTimer;
 import ghidra.util.timer.GTimerMonitor;
 
-/**
+# /**
  * Dialog that is displayed to show activity for a Task that is running outside of the
  * Swing Thread.   This dialog uses a delay before showing in order to give the background task
  * thread a chance to finish.  This prevents a flashing dialog for tasks that finish before the

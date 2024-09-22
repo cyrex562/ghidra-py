@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.widgets.dialogs;
 
-/**
+# /**
  * Listener that is notified when the OK button is hit on the input dialog.
  */
 public interface InputDialogListener {

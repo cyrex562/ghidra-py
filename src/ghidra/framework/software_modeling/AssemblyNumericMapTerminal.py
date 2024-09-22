@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.app.plugin.assembler.sleigh.grammars.AssemblyGrammar;
 import ghidra.app.plugin.assembler.sleigh.tree.AssemblyParseNumericToken;
 import ghidra.app.plugin.processors.sleigh.symbol.ValueMapSymbol;
 
-/**
+# /**
  * A terminal that accepts only a particular set of numeric values, mapping each to another value
  * 
  * <p>

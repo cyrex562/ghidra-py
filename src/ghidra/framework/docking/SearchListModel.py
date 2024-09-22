@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.function.BiPredicate;
 
 import javax.swing.ListModel;
 
-/**
+# /**
  * Interface for the model for {@link SearchList}. It is an extension of a JList's model to add
  * the ability to group items into categories.
  *

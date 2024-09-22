@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.SwingConstants;
 import docking.widgets.checkbox.GCheckBox;
 import docking.widgets.checkbox.GHtmlCheckBox;
 
-/**
+# /**
  * A 'dynamic' label (the text can be changed), with HTML rendering allowed.
  * <p>
  * Clients do not need to prefix label text with "&lt;html&gt;", as is required for a standard

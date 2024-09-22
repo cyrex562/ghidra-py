@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.model.symbol;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.mem.MemoryBlock;
 
-/**
+# /**
  * <code>OffsetReference</code> is a memory reference whose "to" address is
  * computed from a base address plus an offset.
  * <p>

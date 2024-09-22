@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.plugintool.ServiceProviderStub;
 import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * A table that allow users to provide a list of data objects whose method can be used
  * to create columns.
  *

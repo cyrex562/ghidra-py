@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.program.util.AddressCorrelationRange;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Utility class for finding version tracking implied matches given an accepted matched function.
  * Each referenced data and function that exist in equivalent sections of the matched source
  * and destination functions will added to the current version tracking session as an implied match.

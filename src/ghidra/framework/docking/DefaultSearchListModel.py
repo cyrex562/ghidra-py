@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.ListModel;
 
 import utility.function.Dummy;
 
-/**
+# /**
  * Default implementation of the {@link SearchListModel}. Since this model's primary purpose is 
  * to also implement the {@link ListModel}, this class extends the AbstractListModel.
  * This model's primary type is T, but it implements the list model on {@code SearchListEntry<T>}

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util;
 import java.io.Serializable;
 import java.math.BigInteger;
 
-/**
+# /**
  * Stateless helper classes with static singleton instances that contain methods to convert
  * Java numeric types to and from their raw form in a byte array.
  * <p>

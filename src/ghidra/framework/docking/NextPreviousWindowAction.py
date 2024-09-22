@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.KeyStroke;
 import docking.ActionContext;
 import docking.DockingWindowManager;
 
-/**
+# /**
  * Action for transferring focus to the next or previous visible window in the application.
  */
 public class NextPreviousWindowAction extends DockingAction {

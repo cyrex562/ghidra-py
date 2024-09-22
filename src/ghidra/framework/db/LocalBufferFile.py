@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.util.exception.*;
 import ghidra.util.task.CancelledListener;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>LocalBufferFile</code> implements a BufferFile as block-oriented
  * random-access file.  This type of buffer file supports save-as but does
  * not support the save operation.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.CodeUnitIterator;
 
 import java.util.Iterator;
 
-/**
+# /**
  * CodeUnitIterator that represents an empty set of codeunits.
  */
 public class EmptyCodeUnitIterator implements CodeUnitIterator {

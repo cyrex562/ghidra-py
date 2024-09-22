@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ import ghidra.util.Msg;
 import utilities.util.FileResolutionResult;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * <code>SleighCompile</code> provides the ability to compile Sleigh language module (e.g., *.slaspec)
  * files.
  */

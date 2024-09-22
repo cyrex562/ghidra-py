@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 
 import ghidra.util.UserSearchUtils;
 
-/**
+# /**
  * String column constraint for matching column values if they end with the constraint value pattern.
  */
 public class StringEndsWithColumnConstraint extends StringColumnConstraint {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.util;
 
-/**
+# /**
  * Exception thrown if the database does not match the expected version of the program classes.
  */
 public class DatabaseVersionException extends Exception {

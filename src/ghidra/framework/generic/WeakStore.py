@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 import java.util.*;
 
-/**
+# /**
  * Class for storing a weak reference to object instances. Objects of type T can be placed in this 
  * store and they will remain there until there are no references to that object. Note 
  * that this is not a Set and you can have multiple instances that are "equal" in this store.The 

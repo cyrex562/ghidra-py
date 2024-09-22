@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Map;
 
 import ghidra.app.plugin.processors.sleigh.expression.*;
 
-/**
+# /**
  * A matcher for a form of patten expression
  *
  * <p>

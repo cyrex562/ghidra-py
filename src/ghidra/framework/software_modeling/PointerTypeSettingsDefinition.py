@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.NoSuchElementException;
 import ghidra.docking.settings.EnumSettingsDefinition;
 import ghidra.docking.settings.Settings;
 
-/**
+# /**
  * The settings definition for the numeric display format
  */
 public class PointerTypeSettingsDefinition

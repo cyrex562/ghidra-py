@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.jdom.output.Format.TextMode;
 
-/**
+# /**
  * A simple extension of <code>XMLOutputter</code> that sets default settings to fix common bugs.
  */
 public class GenericXMLOutputter extends XMLOutputter {

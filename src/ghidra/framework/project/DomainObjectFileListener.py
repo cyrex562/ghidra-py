@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.data;
 import ghidra.framework.model.DomainFile;
 import ghidra.framework.model.DomainObject;
 
-/**
+# /**
  * Listener for when the {@link DomainFile} associated with a {@link DomainObject} changes, such
  * as when a 'Save As' action occurs. Unlike DomainObject events, these callbacks are not buffered
  * and happen immediately when the DomainFile is changed.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.filechooser.ExtensionFileFilter;
 import ghidra.util.xml.XmlUtilities;
 import resources.ResourceManager;
 
-/**
+# /**
  * Helper class to manage actions on the Tool menu.
  */
 class ToolActionManager implements ToolChestChangeListener {

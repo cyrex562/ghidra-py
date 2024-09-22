@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.asm.wild.sem.WildAssemblyResolvedPatterns;
 import ghidra.asm.wild.symbol.*;
 import ghidra.program.model.listing.Program;
 
-/**
+# /**
  * The builder for wildcard-enabled assemblers.
  * 
  * <p>

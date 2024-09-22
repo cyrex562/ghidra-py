@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import docking.widgets.EmptyBorderButton;
 import docking.widgets.label.GDLabel;
 import generic.theme.GColor;
 
-/**
+# /**
  * A widget that can be used to render an icon, title and close button for JTabbedPane.  You would 
  * use this class with the tabbed pane by calling {@link JTabbedPane#setTabComponentAt(int, Component)}
  */

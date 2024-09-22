@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.address.AddressOverflowException;
 import ghidra.program.model.mem.MemoryBlockType;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Adapter for version 2
  */
 class MemoryMapDBAdapterV2 extends MemoryMapDBAdapter {

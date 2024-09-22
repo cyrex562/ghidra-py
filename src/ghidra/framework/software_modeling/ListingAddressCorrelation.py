@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
 import ghidra.util.datastruct.Duo.Side;
 
-/**
+# /**
  * This is the interface for a correlator that associates addresses from one program with
  * addresses from another program or it can associate addresses from one part of a program 
  * with addresses from another part of the same program. Given an address from one program, it

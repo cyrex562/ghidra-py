@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package generic.util;
 
 import java.util.Deque;
 
-/**
+# /**
  * A context utility allowing stack management via a try-with-resources block
  * @param <E> the type of element pushed to the stack
  */

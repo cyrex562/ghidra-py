@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.*;
 import generic.theme.*;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Nimbus {@link LookAndFeelManager}. Specialized so that it can return the Nimbus installer and
  * perform specialized updating when icons or fonts change. Basically, this class needs to
  * re-install a new instance of the Nimbus LookAndFeel each time a font or icon changes.

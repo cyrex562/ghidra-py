@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.wizard;
 
 import java.awt.Dimension;
 
-/**
+# /**
  * Interface to define methods that control what panel is displayed in a
  * wizard.
  */

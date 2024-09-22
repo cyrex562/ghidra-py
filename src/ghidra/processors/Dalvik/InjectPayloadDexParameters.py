@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.util.Msg;
 import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
-/**
+# /**
  * The "uponentry" injection for a DEX method.  We simulate DEX's register stack by copying values from
  * specially designated "input" registers to the v# and vw# registers at the bottom of method's register frame.
  *

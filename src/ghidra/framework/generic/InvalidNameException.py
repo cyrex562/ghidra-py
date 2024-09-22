@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Exception thrown if a name has invalid characters.
  */
 public class InvalidNameException extends UsrException {

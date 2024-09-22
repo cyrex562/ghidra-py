@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import javax.swing.SwingUtilities;
 
 import ghidra.util.Swing;
 
-/**
+# /**
  * A collection of window related utility methods
  */
 public class WindowUtilities {

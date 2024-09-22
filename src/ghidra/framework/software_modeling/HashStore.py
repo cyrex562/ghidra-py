@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * HashStore is a sorted, basic-block aware, store for Instruction "n-grams" to help quickly match similar
  * sequences of Instructions between two functions.  The Instructions comprising a single n-gram are hashed
  * for quick lookup by the main matching algorithm (HashedFunctionAddressCorrelation).  Hash diversity is

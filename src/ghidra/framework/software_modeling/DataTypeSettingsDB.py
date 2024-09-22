@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.docking.settings.*;
 import ghidra.program.model.data.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Default {@link Settings} handler for those datatypes managed
  * by an associated {@link DataTypeManagerDB}.
  */

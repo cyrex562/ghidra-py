@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.exception;
 
-/**
+# /**
  * Exception thrown when an object's version does not match its expected version.
  */
 public class VersionException extends UsrException {

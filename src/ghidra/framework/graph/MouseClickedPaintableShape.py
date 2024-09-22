@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.awt.geom.Ellipse2D;
 
 import generic.theme.GThemeDefaults.Colors.Palette;
 
-/**
+# /**
  * A debugging shape painter that allows the user to see where a mouse clicked happened.
  */
 public class MouseClickedPaintableShape extends PaintableShape {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.math.BigInteger;
 import ghidra.program.model.address.*;
 import ghidra.util.GhidraDataConverter;
 
-/**
+# /**
  * MemBufferImpl implements the MemBuffer interface.  It buffers up N bytes
  * at time, reducing the overall number of calls to Memory, greatly reducing
  * the overhead of various error checks.  This implementation will not wrap

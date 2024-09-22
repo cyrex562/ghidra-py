@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.lang.Register;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.program.model.pcode.Varnode;
 
-/**
+# /**
  * An interface that provides storage for values of type {@code T}, addressed by offsets of type
  * {@code A}
  * 

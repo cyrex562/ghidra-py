@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 import util.CollectionUtils;
 
-/**
+# /**
  * Base class for nodes that generate their children on demand, but because generating their
  * children is slow, that operation is moved to a background thread. While the children are being
  * generated, an {@link InProgressGTreeNode} will appear in the tree until the

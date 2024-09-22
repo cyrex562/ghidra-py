@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import db.util.ErrorHandler;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressIterator;
 
-/**
+# /**
  * Converts an AddressKeyIterator or an addressKeyAddressIterator into an AddressIterator
  */
 public class AddressKeyAddressIterator implements AddressIterator {

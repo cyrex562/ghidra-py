@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Iterator;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * 
  *
  * Some extra things attached to PcodeOp for ease of walking the syntax tree

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.listing;
 
-/**
+# /**
  * <code>AutoParameterType</code> defines the various
  * types of auto-parameters.
  */

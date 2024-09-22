@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package db.buffers;
 import java.util.Stack;
 
 
-/**
+# /**
  * <code>IndexProvider</code> maintains the free index list associated
  * with a BufferFile.  This provider will exhaust the free index list
  * before allocating new indexes.  This provider relies on the BufferFile

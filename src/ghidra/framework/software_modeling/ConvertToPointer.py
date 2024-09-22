@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.util.exception.InvalidInputException;
 import ghidra.xml.*;
 
-/**
+# /**
  * Action converting the parameter's data-type to a pointer, and assigning storage for the pointer.
  * This assumes the data-type is stored elsewhere and only the pointer is passed as a parameter.
  */

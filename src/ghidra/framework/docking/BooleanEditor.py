@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package docking.options.editor;
 
 import java.beans.PropertyEditorSupport;
 
-/**
+# /**
  * An editor for Boolean properties.
  */
 public class BooleanEditor extends PropertyEditorSupport {

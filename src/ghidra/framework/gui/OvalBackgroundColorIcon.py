@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import java.awt.*;
 
 import javax.swing.Icon;
 
-/** 
+# /** 
  * Paints an oval of the given size, based upon the Component passed to 
  * {@link #paintIcon(Component, Graphics, int, int)}.  If the component is null, then no 
  * painting will take place.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.framework.main.ApplicationLevelPlugin;
 import ghidra.framework.plugintool.util.PluginDescription;
 import ghidra.framework.plugintool.util.PluginStatus;
 
-/**
+# /**
  * A listing of commonly used {@link PluginDescription} category names.
  * <p>
  * Note - the Front End tool automatically include plugins that: 1) implement 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.main;
 
 import ghidra.framework.model.ProjectListener;
 
-/**
+# /**
  * Interface for accessing front-end functionality.
  * 
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,7 +46,7 @@ import help.CustomTOCView;
 import help.GHelpBroker;
 import resources.Icons;
 
-/**
+# /**
  * An extension of the {@link GHelpBroker} that allows {@code Docking} classes to be installed.
  * <p>
  * Additions include a search feature a navigation aid.

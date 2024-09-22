@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.OutputStream;
 import ghidra.util.exception.IOCancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * An OutputStream which utilizes a TaskMonitor to indicate output progress and
  * allows the operation to be cancelled via the TaskMonitor.
  */

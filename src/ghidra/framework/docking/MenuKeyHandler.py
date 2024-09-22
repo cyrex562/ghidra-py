@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.Component;
 
 import javax.swing.*;
 
-/**
+# /**
  * The interface for work to be done on an open menu.
  */
 abstract class MenuKeyHandler {

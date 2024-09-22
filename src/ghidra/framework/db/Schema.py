@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.apache.commons.lang3.ArrayUtils;
 import db.Field.UnsupportedFieldException;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Class for definining the columns in a Ghidra Database table.
  */
 public class Schema {

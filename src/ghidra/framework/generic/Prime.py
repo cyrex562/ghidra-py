@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.util.datastruct;
 
 
-/**
+# /**
  * Class that provides a static nextPrime method that gives out prime numbers
  * that are useful in a buffer doubling strategy with all buffer sizes being prime.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.Timer;
 import ghidra.util.SystemUtilities;
 import ghidra.util.timer.GTimer;
 
-/**
+# /**
  * Creates a new {@link GhidraTimer} appropriate for a headed or headless environment.
  * <P>
  * If running a headed environment, the callback will happen on the Swing thread.  Otherwise, the

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import javax.swing.event.PopupMenuListener;
 import docking.action.DockingActionIf;
 import docking.action.MenuData;
 
-/**
+# /**
  * Class to manage a hierarchy of menus.
  */
 public class MenuManager implements ManagedMenuItem {

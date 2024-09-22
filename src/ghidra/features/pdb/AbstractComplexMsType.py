@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.type;
 import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 import mdemangler.MDMang;
 
-/**
+# /**
  * This class represents various flavors of Complex type.  Not Complex in terms of real and
  * imaginary components, but complex in terms of having {@link MsProperty} and other similar
  * aspects.  The term "Complex" was chosen to mimic what data types are called in the

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 import java.util.*;
 
-/**
+# /**
  * A hashtable-based <code>Map</code> implementation with <em>weak values</em>.
  * 
  * <P>This implementation uses two maps internally, which nearly doubles the memory requirements

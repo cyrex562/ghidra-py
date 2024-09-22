@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import ghidra.util.filechooser.GhidraFileChooserModel;
 import ghidra.util.filechooser.GhidraFileFilter;
 import ghidra.util.layout.VerticalLayout;
 
-/**
+# /**
  * Panel that allows the project directory and name to be specified for a
  * new project. A checkbox indicates whether the project should be created
  * as a shared project.

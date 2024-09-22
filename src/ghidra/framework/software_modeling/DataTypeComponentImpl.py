@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.database.data.DataTypeUtilities;
 import ghidra.util.SystemUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Basic implementation of a DataTypeComponent
  */
 public class DataTypeComponentImpl implements InternalDataTypeComponent, Serializable {

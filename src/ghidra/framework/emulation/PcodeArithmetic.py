@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.pcode.utils.Utils;
 import ghidra.program.model.lang.Endian;
 import ghidra.program.model.pcode.PcodeOp;
 
-/**
+# /**
  * An interface that defines arithmetic p-code operations on values of type {@code T}.
  *
  * <p>

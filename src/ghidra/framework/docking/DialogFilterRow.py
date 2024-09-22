@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.widgets.table.RowObjectFilterModel;
 import docking.widgets.table.columnfilter.*;
 import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 
-/**
+# /**
  * This class represents a major "and-able" row in the dialog's filter panel.  It is associated with
  * a single column at any given time.  It has a single {@link DialogFilterConditionSet}  which is
  * typed on the ColumnType. If the column changes, it will create a new condition set for the new

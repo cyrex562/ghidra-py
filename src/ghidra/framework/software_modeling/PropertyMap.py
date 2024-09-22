@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.util;
 
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Interface to define a map containing properties over a set of addresses.
  * @param <T> property value type
  */

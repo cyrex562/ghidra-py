@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.datatransfer.DataFlavor;
 import java.awt.dnd.DropTargetDragEvent;
 import java.awt.dnd.DropTargetDropEvent;
 
-/**
+# /**
  * Methods called by the DropTargetAdapter that implements the DropTargetListener interface
  */
 public interface Droppable {

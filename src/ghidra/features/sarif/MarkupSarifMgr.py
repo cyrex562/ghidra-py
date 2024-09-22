@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -57,7 +57,7 @@ import sarif.export.SarifWriterTask;
 import sarif.export.ref.SarifEquateRefWriter;
 import sarif.export.ref.SarifReferenceWriter;
 
-/**
+# /**
  * SARIF manager for all references ("markup" for operand substitution).
  */
 public class MarkupSarifMgr extends SarifMgr {

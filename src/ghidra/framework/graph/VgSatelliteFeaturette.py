@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.graph.viewer.*;
 import ghidra.graph.viewer.actions.*;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * A sub-feature that provides a satellite viewer to {@link VisualGraphComponentProvider}s
  * 
  * <p>Note: this class installs actions to manipulate the satellite view.  For these to be 

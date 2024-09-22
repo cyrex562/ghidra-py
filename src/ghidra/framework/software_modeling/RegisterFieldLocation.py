@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
+# /**
  * 
  */
 package ghidra.program.util;
@@ -25,7 +25,7 @@ import ghidra.program.model.listing.Program;
 
 import java.util.Arrays;
 
-/**
+# /**
  * ProgramLocation for the Register Field.
  * 
  * 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.javaclass.format.constantpool.AbstractConstantPoolInfoJava;
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.DataTypeManager;
 
-/**
+# /**
  * 
  * This is a utility class for generating pcode for the multianewarray operation.
  * Note that the newarray operation, which creates arrays of primitive types, does not

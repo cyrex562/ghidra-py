@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -25,7 +25,7 @@ import ghidra.util.task.TaskMonitor;
 
 import java.util.ArrayList;
 
-/**
+# /**
  * DiffController controls a program Diff. It maintains address sets indicating 
  * the differences between two programs. It can limit the determined differences
  * to an address set. It allows differences to be applied or ignored. It has a 

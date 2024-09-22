@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import java.io.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-/**
+# /**
  * <code>ItemSerializer</code> facilitates the compressing and writing of a data stream
  * to a "packed" file.  The resulting "packed" file will contain the following meta-data
  * which is available after construction:

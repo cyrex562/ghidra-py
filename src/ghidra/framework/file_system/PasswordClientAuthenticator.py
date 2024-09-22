@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.framework.remote.AnonymousCallback;
 import ghidra.framework.remote.SSHSignatureCallback;
 import ghidra.net.ApplicationKeyManagerFactory;
 
-/**
+# /**
  * <code>PasswordClientAuthenticator</code> provides a fixed username/password 
  * authentication response when connecting to any Ghidra Server or accessing
  * a protected PKI keystore.  The use of this authenticator is intended for

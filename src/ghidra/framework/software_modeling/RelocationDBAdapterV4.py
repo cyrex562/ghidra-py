@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ public class RelocationDBAdapterV4 extends RelocationDBAdapter {
 	private final static int V4_BYTES_COL = 2;
 	private final static int V4_SYMBOL_NAME_COL = 3;
 
-/* Do not remove the following commented out schema! It shows the version 4 relocation table schema. */
+# /* Do not remove the following commented out schema! It shows the version 4 relocation table schema. */
 //	final static Schema SCHEMA = new Schema(
 //		RelocationDBAdapterV4.VERSION, "Address", new Field[] { IntField.INSTANCE,
 //			BinaryField.INSTANCE, BinaryField.INSTANCE, StringField.INSTANCE },

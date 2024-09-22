@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.store.*;
 import ghidra.util.xml.GenericXMLOutputter;
 import ghidra.util.xml.XmlUtilities;
 
-/**
+# /**
  * <code>CheckoutManager</code> manages checkout data for a versioned
  * LocalFolderItem. Checkout data is maintained within the file 'checkout.dat'
  * located within the items data directory.

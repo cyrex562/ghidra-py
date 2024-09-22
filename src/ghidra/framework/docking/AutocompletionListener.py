@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.autocomplete;
 
-/**
+# /**
  * A listener for autocompletion events.
  * 
  * @param <T> the type of suggestions presented by the autocompleter.

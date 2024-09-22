@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.ConcurrentModificationException;
 import db.DBRecord;
 import ghidra.util.Lock;
 
-/**
+# /**
  * Base class for an cached object in the database. Database objects have keys. They are marked as
  * invalid when a database cache is cleared and can be revived on a refresh as long as they haven't
  * been deleted. Instantiating an object will cause it to be added immediately to the associated

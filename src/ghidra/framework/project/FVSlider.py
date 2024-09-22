@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.main.logviewer.event.FVEvent.EventType;
 import ghidra.framework.main.logviewer.model.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * <pre> Custom slider that acts as the scroll bar for the FVTable. This slider listens for
  * changes to the viewport and updates its position accordingly.
  * 

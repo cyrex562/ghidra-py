@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>LanguageTranslatorFactory</code> manages all language translators within Ghidra.  
  * Language translators support either a version translation for a single language, or a 
  * language transition from one language to another.  The following types of translators 

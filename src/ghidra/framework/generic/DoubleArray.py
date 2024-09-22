@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * IntArray.java
  *
  * Created on February 12, 2002, 3:41 PM
@@ -22,7 +22,7 @@
 
 package ghidra.util.datastruct;
 import java.io.Serializable;
-/**
+# /**
  *
  * Array of doubles that grows as needed.
  */

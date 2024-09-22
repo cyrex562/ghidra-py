@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.model;
 
-/**
+# /**
  * Generic marker to denote changes made to some object.
  */
 public interface ChangeSet {

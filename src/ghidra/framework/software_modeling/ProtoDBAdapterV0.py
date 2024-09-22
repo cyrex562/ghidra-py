@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.io.IOException;
 
 import db.*;
 
-/**
+# /**
  * Version 0 of the ProtoDBAdapter
  */
 

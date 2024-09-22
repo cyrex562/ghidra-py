@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets;
 
-/**
+# /**
  * This class is used to provide information regarding the source of an event.   It is often 
  * useful for event processing clients to know of the user generated an event through the UI 
  * or from an API call, or if the event came from an internal source, like a change to the 

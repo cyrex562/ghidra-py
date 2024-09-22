@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.Msg;
 import util.CollectionUtils;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A common base class for list and table renderer objects, unifying the Ghidra look and feel.
  * <p>
  * It allows (but default-disables) HTML content, automatically paints alternating row background

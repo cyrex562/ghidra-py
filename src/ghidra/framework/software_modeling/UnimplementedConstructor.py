@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+# /*
  * Created on Jul 28, 2003
  *
  * To change the template for this generated file go to
@@ -27,7 +27,7 @@ import ghidra.util.exception.NotYetImplementedException;
 
 import java.util.ArrayList;
 
-/**
+# /**
  * 
  *
  * Template for a constructor which is officially "unimplemented" as opposed to a

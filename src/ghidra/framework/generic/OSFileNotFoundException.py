@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework;
 
 import java.io.FileNotFoundException;
 
-/**
+# /**
  * Signals that an attempt to find a Ghidra "OS-file" (native binary) has failed.
  * <p>
  * This exception provides a consistent way to display information about the missing OS-file that 

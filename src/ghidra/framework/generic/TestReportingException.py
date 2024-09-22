@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.apache.commons.lang3.ArrayUtils;
 
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * A {@link RuntimeException} that will print a custom stack trace.  
  * 
  * <P>This class will print not only the trace info for the exception passed at construction 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.lang.PrototypePieces;
 import ghidra.program.model.pcode.Encoder;
 import ghidra.xml.*;
 
-/**
+# /**
  * A filter on some aspect of a specific function prototype.
  * An instance is configured via the restoreXml() method, then a test of whether
  * a function prototype meets its criteria can be performed by calling its filter() method.

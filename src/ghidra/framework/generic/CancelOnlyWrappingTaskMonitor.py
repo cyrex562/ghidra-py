@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.task;
 
-/**
+# /**
  * A monitor that is designed for sub-tasks, where the outer task handles reporting messages and
  * progress.  This class is really just for checking cancelled.
  * 

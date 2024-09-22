@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.symbol.Namespace;
 import ghidra.program.model.symbol.Symbol;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * A symbol within the decompiler's model of a particular function.  The symbol has a name and a data-type
  * along with other properties. The symbol is mapped to one or more storage locations by attaching a
  * SymbolEntry for each mapping.

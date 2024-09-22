@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import docking.ComponentProvider;
 import docking.DefaultActionContext;
 import ghidra.graph.VisualGraph;
 
-/**
+# /**
  * Context for {@link VisualGraph}s
  */
 public class VgActionContext extends DefaultActionContext implements VisualGraphActionContext {

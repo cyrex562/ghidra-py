@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.graph.viewer.layout.LayoutListener.ChangeType;
 import ghidra.util.SystemUtilities;
 import ghidra.util.task.TaskLauncher;
 
-/**
+# /**
  * A job to transition vertices in a graph for location and visibility.  The parent class 
  * handled the opacity callback.  The progress of the job is used by this class to move 
  * vertices from the the start location to the final destination, where the progress is the

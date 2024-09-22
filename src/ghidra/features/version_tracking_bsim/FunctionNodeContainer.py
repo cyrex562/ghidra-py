@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.*;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.*;
 
-/**
+# /**
  * Container of FunctionNodes corresponding to functions in a single Program
  */
 public class FunctionNodeContainer {

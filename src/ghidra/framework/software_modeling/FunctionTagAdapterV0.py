@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import db.*;
 import ghidra.program.database.util.EmptyRecordIterator;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  * Initial version of the {@link FunctionTagAdapter}.
  */
 class FunctionTagAdapterV0 extends FunctionTagAdapter implements DBListener {

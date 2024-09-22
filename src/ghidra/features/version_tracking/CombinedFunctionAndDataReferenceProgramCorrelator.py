@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.RefType;
 import ghidra.program.model.symbol.Reference;
 
-/**
+# /**
  * Correlates functions based on previously accepted data and function matches.
  */
 public class CombinedFunctionAndDataReferenceProgramCorrelator

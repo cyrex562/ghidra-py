@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Exception thrown if user is not the owner of a file or
  * data object being accessed.
  */

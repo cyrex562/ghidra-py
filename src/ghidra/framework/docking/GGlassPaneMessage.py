@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.bean.GGlassPane;
 import ghidra.util.timer.GTimer;
 import ghidra.util.timer.GTimerMonitor;
 
-/**
+# /**
  * A class that allows clients to paint a message over top of a given component.
  * <P>
  * This class will honor newline characters and will word wrap as needed.  If the message being 

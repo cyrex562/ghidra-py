@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.xml;
 
-/**
+# /**
  * An interface describing the API for the XML pull parsing system. This is
  * similar to XmlParser, except that it has slightly different methods and IS
  * case sensitive, conforming to the XML spec.

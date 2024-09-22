@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import docking.widgets.fieldpanel.internal.PaintContext;
 import docking.widgets.fieldpanel.support.*;
 import generic.json.Json;
 
-/**
+# /**
  * A {@link TextField} that takes in other TextFields.
  * 
  * <P>This class allows clients to create custom text layout behavior by combining individual

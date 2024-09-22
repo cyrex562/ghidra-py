@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import javax.swing.Icon;
 
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Note: this class overrides the <code>equals(Object)</code> and relies upon the
  * <code>equals</code> method of the <code>userData</code> object. Thus, if it is important that
  * equals work for you in the non-standard identity way, then you must override <code>equals</code>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.mem;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * Exception for overlapping memory blocks.
  */
 public class MemoryConflictException extends UsrException {

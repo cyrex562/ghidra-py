@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Implementation of {@link TaskMonitor} with most features stubbed out.
  * <p>
  * This class supports cancelling and cancel listener notification.  Cancelling must be enabled

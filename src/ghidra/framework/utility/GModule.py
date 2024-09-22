@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import generic.jar.ResourceFile;
 import ghidra.util.Msg;
 import utility.module.ModuleManifestFile;
 
-/**
+# /**
  * Represents a module in universe of repos.   This class has the notion of 'shadow' modules, which
  * are those modules that live under a repo other than the module root directory, but in the same
  * path structure.  This allows for optional repos to be used, adding content to the module when 

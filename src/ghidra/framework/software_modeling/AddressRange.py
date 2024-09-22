@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.address;
 
 import java.math.BigInteger;
 
-/**
+# /**
  * The AddressRange interface is used by any object
  * that represents a contiguous inclusive range of
  * addresses from a minimum address to a maximum

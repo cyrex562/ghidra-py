@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.*;
 import docking.widgets.filechooser.GhidraFileChooserMode;
 import ghidra.util.StatusListener;
 
-/**
+# /**
  * Class for defining, storing, and retrieving groups of values of various types. The intended use
  * is to create a ValuesMap, define some named values, and then invoke the ValuesMapDialog to allow
  * the user to fill in values for the defined values. It also has a rich set of convenience methods

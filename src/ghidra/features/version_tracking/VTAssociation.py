@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.address.Address;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A VTAssociation is a possible equivalence between a function or data in one program to
  * a function or data in another program.  VTAssociations can be "Accepted" indicating that
  * the user has agreed that the association is correct.

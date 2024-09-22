@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-/**
+# /**
  * Keeps track of the signed state of an enum datatype. Enum are fundamentally either signed or
  * unsigned, but sometimes you can't tell based on the values they contain. Once a negative value
  * is added, then the enum becomes locked as signed, preventing high unsigned values (those values

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -27,7 +27,7 @@ import javax.swing.event.ChangeListener;
 
 import docking.wizard.*;
 
-/**
+# /**
  * Wizard panel that allows the user to specify the host name and port
  * number for the remote repository server.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.graph.viewer.VisualVertex;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A layout provider creates {@link VisualGraphLayout} instances.  This class provides a name
  * and icon for use in a UI.  These features can be used to create a menu of layouts that may 
  * be applied. 

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.framework.OperatingSystem;
 import ghidra.util.SystemUtilities;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Interactive utility to discover and delete artifacts that Ghidra lays down on the filesystem
  */
 public class AppCleaner implements GhidraLaunchable {

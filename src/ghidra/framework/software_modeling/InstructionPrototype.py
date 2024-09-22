@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.program.model.symbol.FlowType;
 import ghidra.program.model.symbol.RefType;
 
-/**
+# /**
  * InstructionPrototype is designed to describe one machine level instruction.
  * A language parser can return the same InstructionProtoype object for the 
  * same type node. Prototypes for instructions will normally be fixed for a node.

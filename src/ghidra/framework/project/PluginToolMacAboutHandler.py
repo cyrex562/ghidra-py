@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.framework.AboutDialog;
 import ghidra.framework.OperatingSystem;
 import ghidra.framework.Platform;
 
-/**
+# /**
  * A plugin-level about handler that serves as the callback from the Dock's 'About' popup action.
  */
 public class PluginToolMacAboutHandler {

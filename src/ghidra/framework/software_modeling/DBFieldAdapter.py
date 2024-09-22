@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import java.io.IOException;
 
 import db.DBFieldIterator;
 
-/**
+# /**
  *
  * Interface to get a field adapter where the Field is the primary
  * key in the table.

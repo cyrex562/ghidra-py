@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.action.DockingActionIf;
 import docking.action.MenuData;
 import docking.widgets.searchlist.DefaultSearchListModel;
 
-/** 
+# /** 
  * Model for the SearchList used by the {@link ActionChooserDialog}.  This model is constructed
  * with two sets of actions; local and global. The local actions are actions that are specific to
  * the currently focused {@link ComponentProvider} or {@link DialogComponentProvider}. Global 

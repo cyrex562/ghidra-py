@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.block.CodeBlockReference;
 import ghidra.program.model.block.CodeBlockReferenceIterator;
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * Attempt to disambiguate similar n-grams by looking at the parents of blocks containing the n-grams
  *
  */

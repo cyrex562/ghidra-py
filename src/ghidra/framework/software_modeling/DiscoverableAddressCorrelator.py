@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.util;
 
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * AddressCorrelators that want to be discovered by version tracking should implement this interface.
  */
 public interface DiscoverableAddressCorrelator extends AddressCorrelator, ExtensionPoint {

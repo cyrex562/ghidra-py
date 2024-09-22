@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.feature.vt.gui.provider.functionassociation;
 
 import ghidra.feature.vt.api.main.VTAssociationStatus;
 
-/**
+# /**
  * Enum to describe the filter settings for the {@link VTFunctionAssociationProvider}.
  */
 public enum FilterSettings {

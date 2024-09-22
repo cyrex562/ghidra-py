@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.rmi.Remote;
 import java.rmi.server.RemoteObjectInvocationHandler;
 import java.util.NoSuchElementException;
 
-/**
+# /**
  * <code>RemoteManagedBufferFileHandle</code> facilitates access to a ManagedBufferFile
  * via RMI.
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import generic.theme.*;
 import ghidra.util.layout.HorizontalLayout;
 import resources.Icons;
 
-/**
+# /**
  * Component for representing individual tabs within a {@link GTabPanel}.
  *
  * @param <T> the type of the tab values

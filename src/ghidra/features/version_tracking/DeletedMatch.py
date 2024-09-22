@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.feature.vt.api.db;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * A simple object that holds information about a match that has been deleted from the database.
  */
 public class DeletedMatch {

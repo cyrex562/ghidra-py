@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import generic.ULongSpan;
 import generic.ULongSpan.*;
 import ghidra.util.MathUtilities;
 
-/**
+# /**
  * A sparse byte array characterized by contiguous dense regions
  * 
  * <p>

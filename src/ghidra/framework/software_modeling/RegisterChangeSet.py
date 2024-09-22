@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.framework.model.ChangeSet;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressSetView;
 
-/**
+# /**
  * Interface for a Register Change set.  Objects that implements this interface track
  * various change information on a set of addresses where the program register values have changed.
  */

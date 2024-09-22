@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * A length-prefixed string {@link DataType} (max 64k bytes) with char size of 1 byte,
  * user setable {@link CharsetSettingsDefinition charset} (default ASCII),
  * unbounded (ignores containing field size, relies on embedded length value).

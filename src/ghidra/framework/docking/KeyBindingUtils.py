@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,7 +47,7 @@ import ghidra.util.xml.GenericXMLOutputter;
 import ghidra.util.xml.XmlUtilities;
 import util.CollectionUtils;
 
-/**
+# /**
  * A class to provide utilities for system key bindings, such as importing and
  * exporting key binding configurations.
  *

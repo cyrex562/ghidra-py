@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.lang.PrototypePieces;
 import ghidra.program.model.pcode.Encoder;
 import ghidra.xml.*;
 
-/**
+# /**
  * A filter that selects function parameters that are considered optional.
  * If the underlying function prototype is considered to take variable arguments, the first
  * n parameters (as determined by PrototypePieces.firstVarArgSlot) are considered non-optional.

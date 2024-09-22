@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.KeyStroke;
 import docking.action.DockingActionIf;
 import docking.actions.KeyBindingUtils;
 
-/**
+# /**
  * A class that can be used as an interface for using actions associated with keybindings. This
  * class is meant to only by used by internal Ghidra key event processing.
  */

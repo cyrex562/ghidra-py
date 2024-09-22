@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.disassemble;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Interface for reporting disassembly messages
  */
 public interface DisassemblerMessageListener {

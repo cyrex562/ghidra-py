@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import org.apache.commons.collections4.IteratorUtils;
 import generic.theme.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The purpose of this class is to introduce multiple levels of indirection into the Java
  * {@code LookAndFeel} (LaF), which allows the user to change these values.  Further, when
  * introducing this indirection we combine the Java settings into user-friendly system ids to make

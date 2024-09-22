@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import db.*;
 import ghidra.util.ObjectStorage;
 import ghidra.util.Saveable;
 
-/**
+# /**
  * <code>GenericSaveable</code> is used by the <code>DBPropertyMapManager</code>
  * when the class can not be found and loaded for the class path name of a 
  * property in the database. This allows the properties for that class to be 

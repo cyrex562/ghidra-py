@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.util.ProgramContextImpl;
 import ghidra.util.Msg;
 
-/**
+# /**
  * The default implementation of {@link PcodeThread} suitable for most applications
  * 
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 
 import ghidra.framework.model.DomainFile;
 
-/**
+# /**
  * Simple static class to keep track of transient domain file/domain objects.
  * When new domain objects are created, they may not have an associated DomainFile.
  * In this case, a DomainFileProxy is created to contain it.  DomainFileProxy objects

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import java.nio.ByteOrder;
 
 import javax.imageio.stream.ImageInputStreamImpl;
 
-/**
+# /**
  * ImageInputStream for reading images that wraps a MemBuffer to get the bytes.  Adds a method
  * to find out how many bytes were read by the imageReader to read the image.
  *

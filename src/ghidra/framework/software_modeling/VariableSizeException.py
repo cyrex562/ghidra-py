@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * <code>VariableSizeException</code> is thrown when a variable
  * data-type exceeds storage constraints.
  */

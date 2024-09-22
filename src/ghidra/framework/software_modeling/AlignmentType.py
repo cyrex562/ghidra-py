@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * <code>AlignmentType</code> specifies the type of alignment which applies to a composite data type.
  * This can be DEFAULT, MACHINE, EXPLICIT.  For packed composites, the length of the composite
  * will be padded to force the length to a multiple of the computed alignment.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.feature.vt.gui.filters;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+# /**
  * A class that allows us to capture the current state of any {@link Filter}.  This state allows
  * us to tell if the filter has been modified.
  */

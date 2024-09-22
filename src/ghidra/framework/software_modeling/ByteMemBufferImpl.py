@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.math.BigInteger;
 import ghidra.program.model.address.Address;
 import ghidra.util.GhidraDataConverter;
 
-/**
+# /**
  * Simple byte buffer implementation of the memBuffer.  Even if a Memory is
  * provided, the available bytes will be limited to the bytes provided during
  * construction.

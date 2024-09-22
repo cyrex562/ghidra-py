@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.*;
 
-/**
+# /**
  * A context to hold various symbols offered to the assembler, usable where numbers are expected.
  */
 public final class AssemblyNumericSymbols {

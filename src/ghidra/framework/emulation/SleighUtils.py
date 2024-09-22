@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import org.antlr.runtime.tree.Tree;
 
 import ghidra.sleigh.grammar.*;
 
-/**
+# /**
  * A collection of utilities for parsing and manipulating Sleigh semantic source
  */
 public enum SleighUtils {

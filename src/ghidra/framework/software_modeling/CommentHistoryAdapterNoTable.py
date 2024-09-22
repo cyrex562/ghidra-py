@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import db.RecordIterator;
 import ghidra.program.database.util.EmptyRecordIterator;
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Adapter needed for a read-only version of Program that is not going
  * to be upgraded, and there is no comment history table in the Program.
  */

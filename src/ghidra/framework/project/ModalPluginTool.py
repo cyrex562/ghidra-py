@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.plugintool;
 import ghidra.framework.main.AppInfo;
 import ghidra.framework.model.Project;
 
-/**
+# /**
  * PluginTool that is used by the Merge process to resolve conflicts
  * when a file is being checked into a server repository. This tool
  * is modal while it is visible.

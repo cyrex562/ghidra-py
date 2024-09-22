@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * A fixed size 16 byte unsigned integer (commonly referred to in C as uint128_t)
  */
 public class UnsignedInteger16DataType extends AbstractUnsignedIntegerDataType {

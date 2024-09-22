@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.docking.settings.Settings;
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Abstract class used to create specialized data structures that act like
  * a Structure and create a new Dynamic structure each time they are used.
  */

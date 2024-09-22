@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  * NOTE: Locality Sensitive Hashing
@@ -25,7 +25,7 @@ import java.io.PrintStream;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-/**
+# /**
  * Translated from the C++ version.
  *
  */

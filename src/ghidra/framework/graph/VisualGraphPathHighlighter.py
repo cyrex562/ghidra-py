@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.*;
 import utility.function.Callback;
 
-/**
+# /**
  * A class that calculates flow between vertices and then triggers that flow to be painted
  * in the UI.
  * 

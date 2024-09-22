@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import generic.json.Json;
 
-/**
+# /**
  * Class with static methods that deal with string manipulation.
  */
 public class StringUtilities {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.pcode.memstate.MemoryState;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.mem.*;
 
-/**
+# /**
  * <code>MemoryStateBuffer</code> provides a MemBuffer for instruction parsing use
  * which wraps an emulator MemoryState.  This implementation wraps all specified 
  * memory offsets within the associated address space.

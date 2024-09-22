@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,7 +40,7 @@ import ghidra.util.task.*;
 import help.HelpService;
 import utility.function.Callback;
 
-/**
+# /**
  * Base class used for creating dialogs in Ghidra. Subclass this to create a dialog provider that has
  * all the gui elements to appear in the dialog, then use tool.showDialog() to display your dialog.
  */

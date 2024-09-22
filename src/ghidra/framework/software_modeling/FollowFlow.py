@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.mem.Memory;
 import ghidra.program.model.symbol.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * FollowFlow follows the program's code flow either forward or backward from an initial
  * address set. It adds the flow addresses to the initial address set by flowing "from" the 
  * initial addresses in the forward direction or by flowing "to" the initial addresses when

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.database.util;
 import db.DBRecord;
 import db.Field;
 
-/**
+# /**
  * Query implementation used to test a field in a record to fall within a range of values.
  */
 public class FieldRangeQuery implements Query {

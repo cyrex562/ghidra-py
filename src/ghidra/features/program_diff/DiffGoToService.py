@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import ghidra.program.model.symbol.ExternalLocation;
 import ghidra.program.util.ProgramLocation;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * A service that provides the ability to go to a particular address or location in the 
  * right-hand listing of the Diff.
  */

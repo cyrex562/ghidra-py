@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.theme.*;
 import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Options implementation for theme color options. A ThemeColorOption is an option that, when
  * changed, affects the current theme and is saved in the theme, instead of being saved with
  * normal non-theme related options.

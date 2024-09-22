@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>SymbolDatabaseAdapterV0</code> handles symbol tables which were created 
  * prior to the addition of Namespace support and Function symbols.  Function symbols 
  * are synthesized for those functions whose entry point currently has a 
@@ -37,7 +37,7 @@ import ghidra.util.task.TaskMonitor;
  */
 class SymbolDatabaseAdapterV0 extends SymbolDatabaseAdapter {
 
-/* Do not remove the following commented out schema! It shows the version 0 symbol table schema. */
+# /* Do not remove the following commented out schema! It shows the version 0 symbol table schema. */
 //	static final Schema SYMBOL_SCHEMA = new Schema(0, "Key", 
 //			new Class[] {StringField.class,
 //				BooleanField.class, BooleanField.class,

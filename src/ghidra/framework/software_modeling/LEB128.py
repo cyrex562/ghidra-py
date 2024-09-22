@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import java.io.*;
 
-/**
+# /**
  * Logic for reading LEB128 values.
  * <p>
  * LEB128 is a variable length integer encoding that uses 7 bits per byte, with the high bit

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import generic.util.NamedDaemonThreadFactory;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * Class for managing and sharing thread pools. The GThreadPool is simplified version of the
  * ThreadPoolExecutor, which can be confusing to use with its many configuration parameters.
  * The GThreadPool has a simple behavior that is controlled by only two configuration parameters -

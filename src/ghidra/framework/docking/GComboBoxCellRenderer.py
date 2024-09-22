@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.function.Function;
 
 import generic.theme.*;
 
-/**
+# /**
  * Provides a common implementation of a combo box drop-down list renderer, for use with 
  * JComboBoxes.
  * <p>

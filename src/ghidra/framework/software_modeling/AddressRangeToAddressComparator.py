@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.address;
 
 import java.util.Comparator;
 
-/**
+# /**
  * Compares an address against an AddressRange.
  * <P>
  */

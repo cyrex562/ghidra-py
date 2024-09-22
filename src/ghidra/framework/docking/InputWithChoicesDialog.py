@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.widgets.combobox.GhidraComboBox;
 import docking.widgets.label.GDLabel;
 import docking.widgets.label.GHtmlLabel;
 
-/**
+# /**
  * A dialog that has text fields to get user input.
  */
 public class InputWithChoicesDialog extends DialogComponentProvider {

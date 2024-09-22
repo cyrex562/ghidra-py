@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.widgets.list.GComboBoxCellRenderer;
 import docking.widgets.table.constraint.ColumnConstraint;
 import resources.Icons;
 
-/**
+# /**
  * Panel for display a single constraint entry within a column.
  */
 public class ConstraintFilterPanel extends JPanel {

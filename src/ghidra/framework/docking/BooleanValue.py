@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.values;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 
-/**
+# /**
  * Value class for {@link Boolean} types. Boolean types use a {@link JCheckBox} for displaying and
  * modifying values. Because the checkBox is always either checked or unchecked, 
  * BooleanValues don't support the concept of having no value.

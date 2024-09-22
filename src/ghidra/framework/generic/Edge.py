@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.graph;
 
 import ghidra.util.Msg;
 
-/** An Edge joins a pair of vertices. 
+# /** An Edge joins a pair of vertices. 
  * The from and to vertex of an edge can not be changed.
  */
 @Deprecated(since = "10.2")

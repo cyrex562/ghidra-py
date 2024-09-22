@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.concurrent.GThreadPool;
 import ghidra.util.Swing;
 import ghidra.util.TaskUtilities;
 
-/**
+# /**
  * Helper class to launch the given task in a background thread  This helper will not 
  * show a task dialog. 
  * 

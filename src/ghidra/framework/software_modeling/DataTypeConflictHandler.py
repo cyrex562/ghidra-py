@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * {@link DataTypeConflictHandler} provides the {@link DataTypeManager} with a handler that is 
  * used to provide a disposition when a datatype conflict is detected during 
  * {@link DataTypeManager#resolve(DataType, DataTypeConflictHandler)} processing.

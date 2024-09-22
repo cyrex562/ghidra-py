@@ -1,11 +1,11 @@
-/* ###
+# /* ###
  * IP: Apache License 2.0
  */
 package generic.test.rule;
 
 import java.lang.annotation.*;
 
-/**
+# /**
  * Repeat the annotated test method some number of times
  * 
  * <p>

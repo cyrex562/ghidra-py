@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.program.util.ProgramEvent;
 import ghidra.util.Msg;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  * Database implementation for an Instruction.
  */
 public class InstructionDB extends CodeUnitDB implements Instruction, InstructionContext {

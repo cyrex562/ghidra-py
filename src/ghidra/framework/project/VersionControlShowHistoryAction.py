@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.framework.main.datatree.VersionHistoryDialog;
 import ghidra.framework.model.DomainFile;
 import ghidra.framework.plugintool.Plugin;
 
-/**
+# /**
  * Action to show the version history for a single version controlled domain file in the repository.
  */
 public class VersionControlShowHistoryAction extends VersionControlAction {

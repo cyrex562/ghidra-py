@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.symbol;
 
-/**
+# /**
  * <code>DynamicReference</code> is a dynamically determined reference which 
  * may not be explicitly added, deleted or modified
  */

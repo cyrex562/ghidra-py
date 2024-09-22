@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.Msg;
 import ghidra.util.datastruct.StringIntHashtable;
 import ghidra.util.exception.NoValueException;
 
-/**
+# /**
  * Implementation for representing connections between two tools.
  * Acts as the middle man for the connection in order to filter the
  * events.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.listing;
 
 import java.util.List;
 
-/**
+# /**
  * Interface for managing function tags. Tags are simple objects consisting of a name and an 
  * optional comment, which can be applied to functions.
  * 

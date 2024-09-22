@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.exception;
 
-/**
+# /**
  * <code>AssertException</code> is used in situations that the programmer believes can't happen.
  * If it does, then there is a programming error of some kind.
  */

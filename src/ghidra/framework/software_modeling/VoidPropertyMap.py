@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.util;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Property manager that deals with properties that are of
  * "void" type, which is a marker for whether a property exists.
  * Object values returned are either {@link Boolean#TRUE} or null.

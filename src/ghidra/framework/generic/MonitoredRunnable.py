@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.task;
 
-/**
+# /**
  * Similar to a {@link Runnable} except the {@link #monitoredRun(TaskMonitor) run} method is given a
  * monitor to report progress and check for cancellation.
  */

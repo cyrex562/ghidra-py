@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.widgets;
 
-/**
+# /**
  * A simple tracker of position in an object for that allows more specialized users to extend and
  * add functionality.
  */

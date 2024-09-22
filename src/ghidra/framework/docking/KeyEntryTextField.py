@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.KeyStroke;
 import docking.actions.KeyBindingUtils;
 import docking.widgets.textfield.HintTextField;
 
-/**
+# /**
  * Text field captures key strokes and notifies a listener to process the key entry.
  */
 public class KeyEntryTextField extends HintTextField {

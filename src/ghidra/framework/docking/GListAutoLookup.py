@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.ListCellRenderer;
 
 import docking.widgets.AutoLookup;
 
-/**
+# /**
  * {@link AutoLookup} implementation for {@link GList}s
  *
  * @param <T> the row type

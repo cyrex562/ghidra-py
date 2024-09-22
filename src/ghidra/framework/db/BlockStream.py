@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package db.buffers;
 
 import java.io.Closeable;
 
-/**
+# /**
  * <code>BlockStream</code> provides a BufferFile block stream.
  */
 public interface BlockStream extends Closeable {

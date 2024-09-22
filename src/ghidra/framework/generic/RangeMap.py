@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.util.LongIterator;
 import ghidra.util.exception.NoValueException;
 import ghidra.util.map.IntValueMap;
 
-/**
+# /**
  * Stores ranges of int values throughout "long" space. Every "long" index has
  * an associated int value (initially 0). Users can paint (set) ranges of
  * indexes to a given integer value, overwriting any value that currently exists

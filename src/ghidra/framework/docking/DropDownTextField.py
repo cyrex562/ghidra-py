@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.datastruct.WeakSet;
 import ghidra.util.task.SwingUpdateManager;
 import util.CollectionUtils;
 
-/**
+# /**
  * A text field that handles comparing text typed by the user to the list of objects and then
  * presenting potential matches in a drop down window.  The items in this window cannot be selected.
  *

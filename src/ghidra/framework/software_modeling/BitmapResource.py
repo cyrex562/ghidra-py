@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -71,7 +71,7 @@ public class BitmapResource {
 //	private final static int BI_BITFIELDS = 3;
 //	private final static int BI_JPEG = 4;
 //	private final static int BI_PNG = 5;
-/*  from MSDN online:
+# /*  from MSDN online:
 	BI_RGB = 0x0000,
     BI_RLE8 = 0x0001,
     BI_RLE4 = 0x0002,

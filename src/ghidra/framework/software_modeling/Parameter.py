@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.listing;
 
 import ghidra.program.model.data.DataType;
 
-/**
+# /**
  * Interface for function parameters
  */
 public interface Parameter extends Variable {

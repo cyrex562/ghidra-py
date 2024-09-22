@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import docking.action.ToolBarData;
 import docking.widgets.imagepanel.ImagePanel;
 import generic.theme.GIcon;
 
-/**
+# /**
  * An action to reset the zoom of a NavigableImagePanel.
  */
 public class ZoomResetAction extends ImagePanelDockingAction {

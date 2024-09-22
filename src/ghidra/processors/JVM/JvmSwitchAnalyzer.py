@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  *  This analyzer reads through JVM .class files looking for lookupswitch and tableswitch instructions.
  *  For each such instruction, the analyzer determines all the possible jump targets, disassembles them,
  *  and then newly-disassembled code to the appropriate function body. 

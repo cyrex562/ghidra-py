@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.framework.OperatingSystem;
 import ghidra.framework.Platform;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * An enumeration that represents the set of supported {@link LookAndFeel}s
  */
 public enum LafType {

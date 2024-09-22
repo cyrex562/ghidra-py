@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.bean.GGlassPane;
 import ghidra.util.bean.GGlassPanePainter;
 import util.CollectionUtils;
 
-/**
+# /**
  * A generic window intended to be used as a temporary window to show information.  This window is
  * designed to stay open as long as the user mouses over the window.   Once the user mouses away,
  * the window will be closed. 

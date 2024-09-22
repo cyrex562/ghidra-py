@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.math.BigInteger;
 import docking.widgets.fieldpanel.*;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A LayoutLockedFieldPanelCoordinator is an extension of a LineLockedFieldPanelCoordinator that
  * handles the fact that field panel layouts vary in size. It coordinates the scrolling of a set 
  * of field panels by sharing bound scroll models that are locked together by a set of index 

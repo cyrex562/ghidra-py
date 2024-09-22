@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.store.local.ItemSerializer;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>RemoteDatabaseItem</code> provides a FolderItem implementation
  * for a remote database.  This item wraps an underlying versioned database
  * which corresponds to a repository item.

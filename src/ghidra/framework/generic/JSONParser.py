@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: MIT
  */
 package generic.json;
@@ -9,7 +9,7 @@ import ghidra.util.Msg;
 import ghidra.util.NumericUtilities;
 
 
-/*
+# /*
 this file is a modification of jsmn.
 its copyright and MIT license follow.
 

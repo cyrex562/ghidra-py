@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.listing.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>LanguagePostUpgradeInstructionHandler</code> provides an abstract implementation 
  * of a post language-upgrade instruction modification handler.  The Simple Language Translator
  * facilitates the specification of such a handler implementation within a language 

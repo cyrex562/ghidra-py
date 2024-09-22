@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.task.TaskMonitor;
 import sarif.SarifProgramOptions;
 import sarif.managers.ProgramSarifMgr;
 
-/**
+# /**
  * An implementation of exporter that creates
  * an SARIF representation of the program.
  */

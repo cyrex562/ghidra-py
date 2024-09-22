@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * {@link Memory} provides the ability to inspect and manage the memory model for a {@link Program}.
  * In addition to conventional {@link MemoryBlock}s defined within physical memory 
  * {@link AddressSpace}s other special purpose memory block types may be defined (e.g.,

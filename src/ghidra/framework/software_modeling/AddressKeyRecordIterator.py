@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.List;
 import db.*;
 import ghidra.program.model.address.*;
 
-/**
+# /**
  * Returns a RecordIterator over records that are address keyed.  Various constructors allow
  * the iterator to be restricted to an address range or address set and optionally to be
  * positioned at some starting address.

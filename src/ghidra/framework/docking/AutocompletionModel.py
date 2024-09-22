@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.autocomplete;
 
 import java.util.Collection;
 
-/**
+# /**
  * A model to generate the suggested completions, given a viable prefix.
  *
  * @param <T> the type of suggestions this model gives.

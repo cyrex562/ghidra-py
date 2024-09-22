@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.Icon;
 import ghidra.framework.plugintool.util.*;
 import resources.ResourceManager;
 
-/**
+# /**
  * Provides {@link PluginPackage}s and plugin descriptions and to clients
  */
 public interface PluginPackagingProvider {

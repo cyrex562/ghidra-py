@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.address;
 
-/**
+# /**
  * <p>An AddressOutOfBoundsException indicates that the Address is
  * being used to address Memory which does not exist.</p>
  *

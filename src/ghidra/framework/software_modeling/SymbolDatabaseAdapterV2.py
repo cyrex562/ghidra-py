@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,12 +29,12 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * SymbolDatabaseAdapter for version 2
  */
 class SymbolDatabaseAdapterV2 extends SymbolDatabaseAdapter {
 
-/* Do not remove the following commented out schema! It shows the version 2 symbol table schema. */
+# /* Do not remove the following commented out schema! It shows the version 2 symbol table schema. */
 //	static final Schema SYMBOL_SCHEMA = new Schema(2, "Key",
 //		new Field[] { StringField.INSTANCE, LongField.INSTANCE, LongField.INSTANCE,
 //			ByteField.INSTANCE, LongField.INSTANCE, IntField.INSTANCE, StringField.INSTANCE,

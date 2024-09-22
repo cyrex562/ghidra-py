@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +35,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * Created by PluginTool to manage the set of Options for each category.
  */
 public class OptionsManager implements OptionsService, OptionsChangeListener {

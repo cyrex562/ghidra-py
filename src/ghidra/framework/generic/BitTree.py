@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.util.datastruct;
 import java.io.Serializable;
 import java.util.Arrays;
 
-/**
+# /**
  * The BitTree class maintains a set of ordered keys between the values of
  * 0 and N.  It can quickly (O(log(n))) add keys, remove keys, find the next key
  * greater than some value , and find the prev key less than some value.  It can

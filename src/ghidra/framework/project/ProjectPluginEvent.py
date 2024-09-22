@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.plugintool;
 
 import ghidra.framework.model.Project;
 
-/**
+# /**
  * Plugin event for notifying when a project is opened or closed. Note this is only applicable for
  * FrontEndTool plugins.
  */

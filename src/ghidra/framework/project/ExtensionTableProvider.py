@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +38,7 @@ import ghidra.util.filechooser.GhidraFileChooserModel;
 import ghidra.util.filechooser.GhidraFileFilter;
 import resources.Icons;
 
-/**
+# /**
  * Component Provider that shows the known extensions in Ghidra in a {@link GTable}. Users may
  * install/uninstall extensions, or add new ones.
  */

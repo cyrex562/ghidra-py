@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import javax.swing.KeyStroke;
 
 import gui.event.MouseBinding;
 
-/**
+# /**
  * A simple listener interface to notify clients of changes to key strokes and mouse bindings.
  */
 public interface DockingActionInputBindingListener {

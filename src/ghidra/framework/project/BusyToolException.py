@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.plugintool;
 
-/**
+# /**
  * Exception thrown if an operation cannot be done because the tool has background tasks
  * running.
  * 

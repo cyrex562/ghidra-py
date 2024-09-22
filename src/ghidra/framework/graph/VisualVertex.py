@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.JComponent;
 
 import ghidra.graph.GVertex;
 
-/**
+# /**
  * A vertex that contains properties and state related to a user interface.
  * 
  * <P><U>equals() and hashCode()</U> - The graph API allows for cloning of layouts.  For this 

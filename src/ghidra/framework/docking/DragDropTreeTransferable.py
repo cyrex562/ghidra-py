@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -24,7 +24,7 @@ import java.util.*;
 
 
 
-/**
+# /**
  * Defines data that is available for drag/drop and clipboard transfers.
  * The data is an ArrayList of DragDropNode objects. 
  */

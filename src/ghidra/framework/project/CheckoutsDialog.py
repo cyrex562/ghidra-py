@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.framework.remote.User;
 import ghidra.framework.store.ItemCheckoutStatus;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Dialog for viewing all the current checkouts for a single domain file.
  */
 public class CheckoutsDialog extends DialogComponentProvider implements ProjectListener {

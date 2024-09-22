@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-/**
+# /**
  * Provides a definition of a primitive unsigned char data type.
  * While in most environment the size is one 8-bit byte, this
  * can vary based upon data organization imposed by the 

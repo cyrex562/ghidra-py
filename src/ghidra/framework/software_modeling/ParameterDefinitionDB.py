@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Parameter;
 import ghidra.program.model.listing.Variable;
 import ghidra.program.model.symbol.SymbolUtilities;
 
-/**
+# /**
  * Database implementation for a Parameter.
  */
 final class ParameterDefinitionDB implements ParameterDefinition {

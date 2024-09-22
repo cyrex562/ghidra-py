@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.awt.dnd.*;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Class to handle notifications of drag and drop operations that occur on the DropTarget 
  * object. The DropTarget is the component that accepts drops during a drag and drop operation. 
  * The <code>drop</code> method actually transfers the data.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -61,7 +61,7 @@ import ghidra.util.layout.HorizontalLayout;
 import ghidra.util.table.GhidraTable;
 import ghidra.util.table.GhidraThreadedTablePanel;
 
-/**
+# /**
  * The docking window that provides a table of the other tool's function matches
  * for the function containing the current cursor location in this tool's
  * listing.

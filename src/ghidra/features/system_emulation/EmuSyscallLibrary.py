@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.pcode.Varnode;
 import ghidra.program.model.symbol.*;
 
-/**
+# /**
  * A library of system calls
  *
  * <p>

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 import ghidra.util.ObjectStorage;
 
-/**
+# /**
  * <code>ObjectStorageAdapterDB</code> provides an ObjectStorage 
  * implementation for use by Saveable objects.  This allows Saveable objects 
  * to save or restore their state using a fixed set of primitives and primitive arrays. 

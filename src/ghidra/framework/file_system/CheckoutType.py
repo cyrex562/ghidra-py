@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.store;
 
 import ghidra.framework.remote.GhidraServerHandle;
 
-/**
+# /**
  * <code>ChecoutType</code> identifies the type of checkout
  */
 public enum CheckoutType {

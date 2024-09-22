@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * A container for local symbols within the decompiler's model of a function. It contains HighSymbol
  * objects for any symbol within the scope of the function, including parameters. The container is populated
  * either from the underlying Function object (when sending information to the decompiler) or read in from

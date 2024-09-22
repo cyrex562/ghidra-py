@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.classfinder;
 
-/**
+# /**
  * Information about a class file on disk
  * 
  * @param path The path to the class file (or jar containing the class)

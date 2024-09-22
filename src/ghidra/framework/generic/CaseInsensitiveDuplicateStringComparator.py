@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 
 import java.util.Comparator;
 
-/**
+# /**
  * Comparator for sorting Strings in a case insensitive way except that case insensitive duplicates
  * are then sub-sorted by reverse case so that lower case is before upper case.
  *

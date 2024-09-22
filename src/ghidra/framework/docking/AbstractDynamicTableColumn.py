@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.NumericUtilities;
 import ghidra.util.table.column.GColumnRenderer;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * An Table Column is an interface that should be implemented by each class that provides a field
  * (column) of an object based table (each row relates to a particular type of object). It
  * determines the appropriate cell object for use by the table column this field represents. It can

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -57,7 +57,7 @@ import ghidra.util.*;
 import ghidra.util.filechooser.GhidraFileChooserModel;
 import ghidra.util.filechooser.GhidraFileFilter;
 
-/**
+# /**
  * Main plugin component for the Ghidra Project Window, which is
  * a PluginTool. This plugin manages all of the GUI elements, e.g., the
  * Data tree panel, view panels for other projects, etc.

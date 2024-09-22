@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.data.*;
 import ghidra.program.model.listing.*;
 
-/**
+# /**
  * Iterator that visits each defined data instance in the initialized memory of a Program or in the footprint of
  * a specified data element.
  * <p>

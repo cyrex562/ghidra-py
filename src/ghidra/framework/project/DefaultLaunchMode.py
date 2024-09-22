@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.model;
 
 import ghidra.framework.options.Options;
 
-/**
+# /**
  * {@link DefaultLaunchMode} provides an {@link Options} value which indicates how a default tool
  * launch should be performed.
  */

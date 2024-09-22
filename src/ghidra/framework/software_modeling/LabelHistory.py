@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import java.util.Date;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * Container for history information about what happened to a label.
  */
 public class LabelHistory {

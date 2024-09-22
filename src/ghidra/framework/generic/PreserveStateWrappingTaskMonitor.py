@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.task;
 
 import java.io.Closeable;
 
-/**
+# /**
  * A {@link TaskMonitor} wrapper that restores all changed values of the wrapped TaskMonitor when
  * the wrapper is {@link #close() closed}.
  */

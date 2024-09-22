@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking;
 
 import java.io.Serializable;
 
-/**
+# /**
  * Simple holder object for an owner string and name string.
  */
 class ComponentTransferableData implements Serializable {

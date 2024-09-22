@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.util;
 
-/**
+# /**
  * Exception thrown when program object being accessed has been deleted.
  */
 public class DeletedException extends Exception {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.client;
 
 import java.io.IOException;
 
-/**
+# /**
  * {@code RepositoryNotFoundException} thrown when a failed connection occurs to a
  * non-existing repository.  A valid server connection is required to make this 
  * determination.

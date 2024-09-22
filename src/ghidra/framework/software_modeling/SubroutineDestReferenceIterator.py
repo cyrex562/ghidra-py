@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import ghidra.util.task.TaskMonitor;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
+# /**
  * SubroutineDestReferenceIterator is a unidirectional iterator over 
  * the destination <CODE>CodeBlockReference</CODE>s for a CodeBlock.
  */

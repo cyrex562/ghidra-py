@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.lang;
 
-/**
+# /**
  * Represents an opinion's processor language (x86:LE:32:default, 8051:BE:16:default, etc).
  */
 public class LanguageID implements Comparable<LanguageID> {

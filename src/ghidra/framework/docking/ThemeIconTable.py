@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import generic.theme.IconValue;
 import generic.theme.ThemeManager;
 import ghidra.util.Swing;
 
-/**
+# /**
  * Icon Table for Theme Dialog
  */
 public class ThemeIconTable extends JPanel implements ActionContextProvider, ThemeTable {

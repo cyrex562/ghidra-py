@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,7 +34,7 @@ import ghidra.util.ReadOnlyException;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Implements the DomainFile interface for DomainObjects that are not currently
  * associated with any real DomainFile. This class enforces the sharing of
  * objects between tools.  After the first tool gets the implementation, all

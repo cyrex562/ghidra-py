@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import generic.jar.ResourceFile;
 import ghidra.framework.Application;
 import ghidra.framework.OperatingSystem;
 
-/**
+# /**
  * A class to represent a PATH item.
  */
 public class Path implements Comparable<Path> {

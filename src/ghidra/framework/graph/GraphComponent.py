@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,7 +66,7 @@ import help.HelpService;
 import resources.Icons;
 import util.CollectionUtils;
 
-/**
+# /**
  * A component that contains primary and satellite graph views.  This viewer provides
  * methods for manipulating the graph using the mouse.
  *

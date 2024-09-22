@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.util.datastruct;
 
-/**
+# /**
  * A simple interface that allows listener structures to use different error handling
  */
 public interface ListenerErrorHandler {

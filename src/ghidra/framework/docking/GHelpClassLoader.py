@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import generic.jar.ResourceFile;
 import ghidra.util.Msg;
 import resources.ResourceManager;
 
-/**
+# /**
  * A {@link ClassLoader} for loading help data.  This is only need when running in Eclipse.  We
  * do not include help data in the source tree for any module, in order to save build time.  By
  * doing this, we need a way to allow the Java Help system to find this data.  We have

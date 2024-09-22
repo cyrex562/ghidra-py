@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import java.util.Map.Entry;
 
 import org.xml.sax.*;
 
-/**
+# /**
  * Class that represents a file of property names and values. The file
  * extension used is PROPERTY_EXT.
  *

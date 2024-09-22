@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import ghidra.pcode.exec.PairedPcodeExecutorStatePiece;
 
-/**
+# /**
  * The analog of {@link PairedPcodeExecutorStatePiece} for simulated file contents
  * 
  * @param <L> the type of values for the left

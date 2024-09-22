@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.feature.vt.api.main;
 
 import static ghidra.feature.vt.api.main.VTMarkupItemStatus.*;
 
-/**
+# /**
  * A status that the user can set on an item to signal that the item has been considered, but not
  * applied.  This is useful for markup items that the user knows are incorrect or doesn't care 
  * about.  By setting the considered status of a markup item to one of these values, then 

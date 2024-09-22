@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Objects;
 
 import docking.widgets.tree.GTreeNode;
 
-/**
+# /**
  * A transferable for sharing data via drag/drop and clipboard operations for GTrees
  */
 public class GTreeNodeTransferable implements Transferable {

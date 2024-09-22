@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import db.DBHandle;
 import ghidra.framework.data.OpenMode;
 import ghidra.util.exception.VersionException;
 
-/**
+# /**
  *
  * Adapter for the custom format table.
  *  

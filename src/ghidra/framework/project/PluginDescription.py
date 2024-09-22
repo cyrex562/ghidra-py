@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import ghidra.framework.Application;
 import ghidra.framework.plugintool.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Class to hold meta information about a plugin, derived from meta-data attached to
  * each {@link Plugin} using a {@link PluginInfo @PluginInfo} annotation.
  */

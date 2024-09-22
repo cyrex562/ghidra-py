@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import java.util.Map;
 import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * A marker interface to apply Jpype class customizations to a class.
  * 
  * The Jpype class customizations will create Python properties which can access protected fields.

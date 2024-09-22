@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.framework.plugintool.PluginTool;
 import ghidra.program.util.ProgramMergeFilter;
 import ghidra.util.HelpLocation;
 
-/**
+# /**
  * Manages the options for the Diff apply settings.
  */
 class DiffApplySettingsOptionManager {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import docking.widgets.table.threaded.*;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * The {@link ThreadedTableModel} does not correctly function with data that can change outside of 
  * the table.  For example, if a table uses db objects as row objects, these db objects can be 
  * changed by the user and by analysis while table has already been loaded.   The problem with this 

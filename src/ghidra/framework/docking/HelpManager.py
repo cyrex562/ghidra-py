@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import help.*;
 import resources.ResourceManager;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * Class that uses JavaHelp browser to show context sensitive help.
  *
  * <p>Note: this manager will validate all registered help when in development mode.  In order

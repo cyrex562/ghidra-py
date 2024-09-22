@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import javax.swing.plaf.basic.BasicSliderUI;
 import ghidra.framework.main.logviewer.model.*;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Custom UI for a slider that dynamically adjusts the thumb height based on the size of the
  * given {@link JScrollPane} and {JTable}.
  * 

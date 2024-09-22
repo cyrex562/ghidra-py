@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * <code>AddressRangeMapDB</code> provides a generic value range map backed by a database table.
  * Values can be stored for ranges of addresses. When a value is stored for a range, it replaces
  * any previous values for that range. It is kind of like painting. If you first paint a region

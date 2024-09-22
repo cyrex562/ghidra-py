@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.util.datastruct;
 import java.util.*;
 import java.util.stream.Stream;
 
-/**
+# /**
  * A copy on read set that will create a copy of its internal data for iteration operations.  This
  * allows clients to avoid concurrency issue by allowing mutates during reads.  All operations
  * of this class are synchronized to allow clients to use non-iterative methods without the need

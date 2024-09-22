@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 package ghidra.util.datastruct;
 import java.io.Serializable;
 
-/**
+# /**
  * Implementation of the ShortKeySet interface that always contains
  * all the possible keys.  Used to save storage when sets are full.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import ghidra.util.*;
 import ghidra.util.exception.DuplicateFileException;
 import resources.ResourceManager;
 
-/**
+# /**
  * Class to represent a node in the Data tree.
  */
 public class DomainFileNode extends GTreeNode implements Cuttable {

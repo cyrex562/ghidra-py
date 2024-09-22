@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.block;
 
-/**
+# /**
  * Subroutine block model.
  */
 public interface SubroutineBlockModel extends CodeBlockModel {

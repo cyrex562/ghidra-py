@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package db.buffers;
 
 import ghidra.util.BigEndianDataConverter;
 
-/**
+# /**
  * <code>BufferFileBlock</code> is used to hold BufferFile blocks 
  * for use during block streaming operations.
  * <p>  

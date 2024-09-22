@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.data;
 
 import ghidra.framework.model.DomainObject;
 
-/**
+# /**
  * {@link OpenMode} provides an instantiation mode for {@link DomainObject}
  * implementations and internal storage adapters.  Implementation code
  * may impose restrictions on which modes are supported.

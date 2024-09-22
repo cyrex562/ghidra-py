@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package docking.widgets.filter;
 
-/**
+# /**
  * Provides the ability to split a string using a single character as the 
  * delimiter, interpreted as a regex.
  */

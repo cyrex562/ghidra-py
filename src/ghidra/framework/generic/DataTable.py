@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.util.datastruct;
 import java.io.Serializable;
 
-/**
+# /**
  * Table for managing rows and columns of data.
  * 
  * 

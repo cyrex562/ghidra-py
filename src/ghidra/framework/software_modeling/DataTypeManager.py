@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.task.TaskMonitor;
 import utility.function.ExceptionalCallback;
 import utility.function.ExceptionalSupplier;
 
-/**
+# /**
  * Interface for Managing data types.
  */
 public interface DataTypeManager {

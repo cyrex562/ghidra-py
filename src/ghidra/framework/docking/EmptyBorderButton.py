@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import generic.theme.GColor;
 import ghidra.docking.util.LookAndFeelUtils;
 import resources.ResourceManager;
 
-/**
+# /**
  * Class that is a JButton that has an empty border and adds a mouse listener
  * so that the button looks raised when the mouse pointer enters the button,
  * and looks lowered when the mouse pointer exits the button.e

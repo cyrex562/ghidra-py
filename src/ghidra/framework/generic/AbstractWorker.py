@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.util.exception.ClosedException;
 import ghidra.util.task.BusyListener;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Class that uses a single thread to execute scheduled jobs.
  * <p>
  * Subclasses provide the {@link BlockingQueue} implementation, which allows for controlling how

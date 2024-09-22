@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.Msg;
 import resources.Icons;
 import utility.function.Callback;
 
-/**
+# /**
  * A class that manages column filters for a table.  This includes creating the UI elements that 
  * allow users to build filters, as well as a means to save and restore filters.
  *

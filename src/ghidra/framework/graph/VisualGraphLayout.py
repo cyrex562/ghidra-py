@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.graph.viewer.VisualVertex;
 import ghidra.graph.viewer.layout.LayoutListener.ChangeType;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * The interface for defining functions provided that are additional to that of {@link Layout}.
  *
  * @param <V> the vertex type

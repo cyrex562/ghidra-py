@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.listing;
 
 import ghidra.util.exception.UsrException;
 
-/**
+# /**
  * <CODE>DuplicateGroupException</CODE> is thrown when a fragment or child
  * is added to a module and that fragment or module is already a child.
  */

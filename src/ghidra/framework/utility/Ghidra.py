@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra;
 import java.awt.AWTError;
 import java.awt.Taskbar;
 
-/**
+# /**
  * Ghidra entry point that forwards the command line arguments to {@link GhidraLaunchable}.
  * <p>
  * This class was introduced so Ghidra's application name can be set to "ghidra-Ghidra" on Linux,

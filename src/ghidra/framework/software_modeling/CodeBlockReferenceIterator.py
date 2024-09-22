@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.model.block;
 
 import ghidra.util.exception.CancelledException;
 
-/**
+# /**
  * An iterator interface over CodeBlockReferences.
  * @see ghidra.program.model.block.CodeBlockReference
  */

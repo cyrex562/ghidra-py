@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.event.ChangeListener;
 import docking.widgets.table.constraint.ColumnConstraint;
 import docking.widgets.table.constraint.MappedColumnConstraint;
 
-/**
+# /**
  * A constraint editor that supports object type conversions, wrapping the editor for the
  * converted-to type. This is used to convert one column type to another that we already have
  * editors for. For example, suppose there is a Foo type where the column is returning Foo objects

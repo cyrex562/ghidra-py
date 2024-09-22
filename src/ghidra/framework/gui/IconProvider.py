@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import generic.util.image.ImageUtils;
 import ghidra.framework.Application;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class that knows how to provide an icon and the URL for that icon.  If {@link #getUrl()}
  * returns a non-null value, then that is the URL used to originally load the icon in this class.
  * 

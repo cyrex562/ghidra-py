@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.table.constraint.dialog;
 
 import java.awt.*;
 
-/**
+# /**
  * Specialized layout for the TableFilterDialog panels.  It is intended for a container with
  * exactly three components.  The first two components are sized to the width specified and the
  * last component gets its preferred width.  When laying out the components, the first two are

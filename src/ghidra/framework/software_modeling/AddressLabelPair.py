@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import ghidra.util.SystemUtilities;
 
 import java.io.Serializable;
 
-/**
+# /**
  * Container for holding an address and label.
  */
 public final class AddressLabelPair implements Serializable {

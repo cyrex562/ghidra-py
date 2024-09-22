@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * NOTE: This disables auto analysis while differences are applied and restores auto analysis enablement at end.
  *
@@ -32,7 +32,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Command to apply diffs to current program.
  * 
  */

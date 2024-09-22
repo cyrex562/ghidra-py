@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ import gui.event.MouseBinding;
 import util.CollectionUtils;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * An class to manage actions registered with the tool
  */
 public class ToolActions implements DockingToolActions, PropertyChangeListener {

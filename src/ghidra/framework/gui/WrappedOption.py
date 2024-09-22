@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.options;
 
-/**
+# /**
  * Wrapper class for an object that represents a property value and is
  * saved as a set of primitives.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.listing;
 
 import ghidra.program.model.address.Address;
 
-/**
+# /**
  * DataBuffer provides an array like interface into a set of Data
  * at a specific index.  Data can be retrieved by using a positive
  * offset from the current position.  The purpose of this class is to

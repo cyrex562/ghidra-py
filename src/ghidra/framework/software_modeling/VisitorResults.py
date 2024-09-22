@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.languages.sleigh;
 
-/**
+# /**
  * Some constants for controlling traversal
  * 
  * A callback ({@code visit()}) can return one of these constants to control whether or not

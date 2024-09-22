@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -23,7 +23,7 @@ import ghidra.program.model.mem.MemoryBlock;
 import ghidra.util.classfinder.ExtensionPoint;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * NOTE:  ALL RelocationHandler CLASSES MUST END IN "RelocationHandler".  If not,
  * the ClassSearcher will not find them.
  *

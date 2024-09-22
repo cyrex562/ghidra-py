@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.assembler.sleigh.expr;
 
-/**
+# /**
  * An exception that indicates no solution is possible
  */
 public class SolverException extends Exception {

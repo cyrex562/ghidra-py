@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import org.jdom.Element;
 
 import ghidra.util.Msg;
 
-/**
+# /**
  * Node for managing a JSplitPane view of two component trees.
  */
 class SplitNode extends Node {

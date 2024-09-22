@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package generic.concurrent;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
+# /**
  * A listener set that is weakly consistent.  This allows for iteration of the set while other
  * threads modify the set.
  * @param <T> the type

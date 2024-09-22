@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package resources.icons;
 
 import javax.swing.ImageIcon;
 
-/**
+# /**
  * Icon class for when we can't find an icon for a path
  */
 public class UnresolvedIcon extends DerivedImageIcon {

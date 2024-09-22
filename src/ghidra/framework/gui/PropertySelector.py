@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.beans.*;
 
 import javax.swing.JComboBox;
 
-/**
+# /**
  * An implementation of a PropertyComponent that is represented as a
  * combo box.
  */

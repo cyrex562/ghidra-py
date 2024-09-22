@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import ghidra.program.model.mem.MemBuffer;
 
-/**
+# /**
  * A DataType class that creates data types dynamically should implement this interface.
  * This prevents them being directly referred to by a data instance within the listing
  * or within a composite (e.g., added to a composite using the structure editor).

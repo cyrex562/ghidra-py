@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.GlobalNamespace;
 import ghidra.program.model.listing.Library;
 import ghidra.program.model.symbol.*;
 
-/**
+# /**
  * A convenience object for parsing a namespace path to a symbol.
  * <P>
  * For example, if a SymbolPath is constructed with "foo::bar::baz", then "baz" is the

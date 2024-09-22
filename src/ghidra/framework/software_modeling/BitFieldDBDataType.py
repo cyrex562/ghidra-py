@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.program.model.data.Enum;
 import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 
-/**
+# /**
  * <code>BitFieldDBDataType</code> extends BitFieldDataType for DataTypeManagerDB use.
  * This class provides the ability to generate a datatype ID and reconstruct a bit-field
  * datatype from an ID.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import org.apache.commons.lang3.StringUtils;
 import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 import docking.widgets.table.constrainteditor.DoNothingColumnConstraintEditor;
 
-/**
+# /**
  * String column constraint for matching when the value is not null and not the empty string.
  */
 public class StringIsNotEmptyColumnConstraint implements ColumnConstraint<String> {

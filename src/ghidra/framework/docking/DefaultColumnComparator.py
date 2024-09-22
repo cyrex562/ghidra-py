@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.Comparator;
 
 import docking.widgets.table.TableComparators;
 
-/**
+# /**
  * A column comparator that is used when columns do not supply their own comparator.   This
  * comparator will use the natural sorting (i.e., the value implements Comparable), 
  * defaulting to the String representation for the given value.

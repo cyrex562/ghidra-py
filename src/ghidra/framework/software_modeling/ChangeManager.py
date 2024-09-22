@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.lang.Register;
 import ghidra.program.util.FunctionChangeRecord.FunctionChangeType;
 
-/**
+# /**
  * ProgramEventerface to define event types and the method to generate an
  * event within Program.
  * <P>

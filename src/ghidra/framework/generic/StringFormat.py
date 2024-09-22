@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.util;
 
-/**
+# /**
  * Class with static methods formatting values in hex.  
  */
 public class StringFormat {

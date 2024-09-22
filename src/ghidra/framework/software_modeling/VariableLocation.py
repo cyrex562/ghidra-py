@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.program.model.address.AddressSpace;
 import ghidra.program.model.listing.*;
 import ghidra.program.model.symbol.Symbol;
 
-/**
+# /**
  * <CODE>VariableLocation</CODE> provides information about the location
  * on a variable within a <CODE>Function</CODE>.
  */

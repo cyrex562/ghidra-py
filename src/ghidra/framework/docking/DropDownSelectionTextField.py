@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets;
 import javax.swing.DefaultListSelectionModel;
 import javax.swing.ListSelectionModel;
 
-/**
+# /**
  * A text field that handles comparing text typed by the user to the list of objects
  * and then presenting potential matches in a drop down window.  This class differs from 
  * its parent in that it allows the user to select items from the popup list.

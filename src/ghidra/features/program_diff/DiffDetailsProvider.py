@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,7 +44,7 @@ import ghidra.util.Msg;
 import ghidra.util.task.SwingUpdateManager;
 import resources.Icons;
 
-/**
+# /**
  * The DiffDetailsProvider is used to view the differences for an address or
  * code unit address range.
  */

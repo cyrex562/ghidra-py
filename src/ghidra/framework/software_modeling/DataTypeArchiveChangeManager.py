@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.util;
 
 import static ghidra.program.util.ProgramEvent.*;
 
-/**
+# /**
  * Interface to define event types and the method to generate an
  * event within Program.
  */

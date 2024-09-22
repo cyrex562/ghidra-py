@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +36,7 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.program.model.scalar.Scalar;
 import ghidra.util.UniversalID;
 
-/**
+# /**
  * Database implementation for the enumerated data type.
  */
 class EnumDB extends DataTypeDB implements Enum {

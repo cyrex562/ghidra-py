@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.program.model.pcode;
 
 
-/**
+# /**
  * A block representing a switch construction
  * 
  *   possible multiple incoming edges

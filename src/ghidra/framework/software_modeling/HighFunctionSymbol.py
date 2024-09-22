@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.listing.VariableStorage;
 import ghidra.program.model.symbol.Namespace;
 import ghidra.util.exception.InvalidInputException;
 
-/**
+# /**
  * A function symbol that encapsulates detailed information about a particular function
  * for the purposes of decompilation. The detailed model is provided by a backing HighFunction object.
  */

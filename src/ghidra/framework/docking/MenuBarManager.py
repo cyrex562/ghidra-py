@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import javax.swing.JMenuBar;
 import docking.action.DockingActionIf;
 import docking.action.MenuData;
 
-/**
+# /**
  * Manages the main menu bar on the main frame
  */
 public class MenuBarManager implements MenuGroupListener {

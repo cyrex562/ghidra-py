@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.program.database.code;
 
 import ghidra.program.model.listing.*;
 
-/**
+# /**
  * Converts a code unit iterator into a data iterator.
  */
 public class DataFilteredCodeUnitIterator implements DataIterator {

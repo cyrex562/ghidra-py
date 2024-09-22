@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.util.table.column;
 
 import docking.widgets.table.GTableCellRenderer;
 
-/**
+# /**
  * A convenience base class that combines the {@link GTableCellRenderer} with the 
  * {@link GColumnRenderer} interface.
  * 

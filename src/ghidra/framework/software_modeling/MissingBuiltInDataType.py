@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Provides an implementation of a data type that stands-in for a missing Built-In data type.
  *  <P> 
  *  This field is not meant to be loaded by the {@link ClassSearcher}, hence the X in the name.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.exec;
 
-/**
+# /**
  * The base exception for all p-code execution errors
  * 
  * <p>

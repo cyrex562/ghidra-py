@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.tool.ToolConstants;
 import docking.widgets.table.GTable;
 import docking.widgets.tree.GTree;
 
-/**
+# /**
  * A place used to hold {@link DockingActionIf}s that are meant to be used by components.  Some
  * components do not have access to the tool that is required to register their actions.  This
  * class helps those components by enabling the installation of shared actions for those

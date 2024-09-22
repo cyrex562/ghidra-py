@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.framework.model;
 
-/**
+# /**
  * Listener that is notified when a ToolTemplate is added or removed from a
  * project
  */

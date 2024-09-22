@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.address;
 
-/**
+# /**
  * {@link AddressRangeIterator} that takes a single address range and breaks it down into smaller
  * address ranges of a specified maximum size. This is useful for clients that want to break
  * down the processing of large address ranges into manageable chunks. For example, searching the

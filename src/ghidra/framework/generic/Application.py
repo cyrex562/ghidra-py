@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import utility.application.ApplicationLayout;
 import utility.application.ApplicationUtilities;
 import utility.module.ModuleUtilities;
 
-/**
+# /**
  * The Application class provides a variety of static convenience methods for accessing Application
  * elements that can be used once the {@link #initializeApplication} call has been made.
  *

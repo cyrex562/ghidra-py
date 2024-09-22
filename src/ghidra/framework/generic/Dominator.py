@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.util.Msg;
 import ghidra.util.exception.NoValueException;
 import ghidra.util.graph.attributes.*;
 
-/**
+# /**
  * Title: Dominator
  * Description: This class contains the functions necessary to build the
  * dominance graph of a FlowGraph, ShrinkWrap or Modularized Graph.

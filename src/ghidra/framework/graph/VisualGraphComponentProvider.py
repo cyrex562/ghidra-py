@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ import ghidra.graph.viewer.*;
 import ghidra.graph.viewer.actions.*;
 import ghidra.graph.viewer.event.mouse.VertexMouseInfo;
 
-/**
+# /**
  * A base component provider for displaying {@link VisualGraph}s
  * 
  * <p>This class will provide many optional sub-features, enabled as desired by calling the

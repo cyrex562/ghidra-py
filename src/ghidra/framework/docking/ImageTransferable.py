@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.Image;
 import java.awt.datatransfer.*;
 import java.io.IOException;
 
-/**
+# /**
  * Provides drag-n-drop support for Images
  */
 public class ImageTransferable implements Transferable {

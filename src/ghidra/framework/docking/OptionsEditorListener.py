@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package docking.options.editor;
 
-/**
+# /**
  *
  * Listener that is notified when the "apply" button is hit. 
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.program.database.util;
 import db.Field;
 import db.DBRecord;
 
-/**
+# /**
  * Query implementation used to test a field in a record to match a given value.
  */
 public class FieldMatchQuery implements Query {

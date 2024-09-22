@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import docking.FocusOwnerProvider;
 import generic.test.TestUtils;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A class that helps to delegate key events to the system override key event dispatcher.  This
  * class exists to avoid package restrictions.
  */

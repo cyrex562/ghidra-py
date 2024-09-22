@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.options;
 
 import java.awt.Color;
 
-/**
+# /**
  * An wrapper object for registering Colors as options.
  */
 

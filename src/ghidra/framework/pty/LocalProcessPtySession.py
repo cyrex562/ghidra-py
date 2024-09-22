@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.concurrent.TimeoutException;
 import ghidra.pty.PtySession;
 import ghidra.util.Msg;
 
-/**
+# /**
  * A pty session consisting of a local process and its descendants
  */
 public class LocalProcessPtySession implements PtySession {

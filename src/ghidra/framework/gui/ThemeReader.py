@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import org.apache.commons.io.FileUtils;
 import ghidra.framework.Application;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Reads Themes from a file or {@link Reader}
  */
 class ThemeReader extends AbstractThemeReader {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +37,7 @@ import ghidra.util.*;
 import ghidra.util.exception.NotFoundException;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Implementation for a ProjectManager; creates, opens,
  * and deletes Projects. It also keeps track of recently opened projects.
  */

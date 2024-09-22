@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +31,7 @@ import ghidra.framework.model.DomainFile;
 import ghidra.framework.plugintool.Plugin;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Action to check-in domain files to the repository.
  */
 public class VersionControlCheckInAction extends VersionControlAction {

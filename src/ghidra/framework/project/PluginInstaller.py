@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.util.List;
 
 import ghidra.framework.plugintool.util.PluginException;
 
-/**
+# /**
  * An interface that facilitates the adding and removing of plugins
  */
 public interface PluginInstaller {

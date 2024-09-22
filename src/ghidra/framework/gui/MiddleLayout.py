@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package ghidra.util.layout;
 import java.awt.*;
 import java.io.Serializable;
 
-/**
+# /**
   * Puts the first child of the given component in the middle of the component, both vertically
   * and horizontally.
   */

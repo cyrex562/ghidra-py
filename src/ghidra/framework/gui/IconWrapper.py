@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -21,7 +21,7 @@ import java.awt.Graphics;
 
 import javax.swing.Icon;
 
-/**
+# /**
  * <code>IconWrapper</code> provides a simple icon wrapper which 
  * delays icon construction until its first use.
  */

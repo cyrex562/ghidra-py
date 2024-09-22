@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.graph.viewer.VisualEdge;
 import ghidra.graph.viewer.VisualVertex;
 import ghidra.util.classfinder.ExtensionPoint;
 
-/**
+# /**
  * A version of {@link LayoutProvider} that is discoverable at runtime.   Layouts that do not wish 
  * to be discoverable should implement {@link LayoutProvider} directly, not this interface.
  *

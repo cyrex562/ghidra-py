@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.pcode.Encoder;
 import ghidra.program.model.pcode.PcodeDataTypeManager;
 import ghidra.xml.*;
 
-/**
+# /**
  * A filter selecting a specific class of data-type.
  * A test of whether  data-type belongs to its class can be performed by calling
  * the filter() method.

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.io.File;
 
 import ghidra.app.util.demangler.DemanglerOptions;
 
-/**
+# /**
  * Swift demangler options
  */
 public class SwiftDemanglerOptions extends DemanglerOptions {

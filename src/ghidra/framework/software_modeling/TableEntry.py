@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.app.plugin.assembler.sleigh.parse.AssemblyParseActionGotoTable;
 import ghidra.app.plugin.assembler.sleigh.parse.AssemblyParseTransitionTable;
 import ghidra.app.plugin.assembler.sleigh.symbol.AssemblySymbol;
 
-/**
+# /**
  * An entry in a (sparse) LR(0) transition table or LALR(1) action/goto table
  *
  * @see AssemblyParseTransitionTable

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import org.apache.commons.collections4.map.HashedMap;
 import ghidra.xml.XmlParseException;
 
 
-/**
+# /**
  *  A node in a decision tree.  Each node contains exactly one constraint and a map of property
  *  values.
  *

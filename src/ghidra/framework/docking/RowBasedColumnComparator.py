@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import java.util.Objects;
 import docking.widgets.table.RowObjectTableModel;
 import docking.widgets.table.TableComparators;
 
-/**
+# /**
  * A comparator for a specific column that will take in a T row object, extract the value
  * for the given column and then call the give comparator
  * 

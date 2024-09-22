@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import docking.actions.KeyBindingUtils;
 import generic.util.WindowUtilities;
 import ghidra.util.Swing;
 
-/**
+# /**
  * Action that manages multiple {@link DockingAction}s mapped to a given key binding
  */
 public class MultipleKeyAction extends DockingKeyBindingAction {

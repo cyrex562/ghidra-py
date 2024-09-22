@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.program.model.util.PropertyMapManager;
 import ghidra.program.model.util.StringPropertyMap;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  *  SettingsDefinition for translation display, handles both the toggle of
  *  "show" vs "don't show", as well as accessing the translated value.
  */

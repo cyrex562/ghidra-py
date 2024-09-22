@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
 import ghidra.util.exception.UserAccessException;
 
-/**
+# /**
  * Dialog showing all users associated with a repository and those with 
  * access to the current shared project. Users with admin rights can use
  * this dialog to edit user permissions.

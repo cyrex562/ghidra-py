@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.main;
 import ghidra.framework.main.datatree.FrontEndProjectTreeContext;
 import ghidra.framework.main.projectdata.actions.ProjectDataCollapseAction;
 
-/**
+# /**
  * {@link ProjectDataCollapseAction} configured to work in the frontend.
  */
 public class FrontEndProjectDataCollapseAction

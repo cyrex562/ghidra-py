@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ import ghidra.program.model.mem.Memory;
 import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.Msg;
 
-/**
+# /**
  * Class for holding the {@link ClassFileJava} and {@link MethodInfoJava} in memory
  * for a particular .class file Program. These describe the objects in the constant pool and
  * signatures of individual methods.  They are parsed directly from the .class

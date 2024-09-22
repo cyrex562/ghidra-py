@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.*;
 
 import javax.swing.border.EmptyBorder;
 
-/**
+# /**
  * Custom border for the {@link GTab}.
  */
 public class GTabPanelBorder extends EmptyBorder {

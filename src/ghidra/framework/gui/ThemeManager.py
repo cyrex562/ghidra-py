@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import resources.ResourceManager;
 import utilities.util.reflection.ReflectionUtilities;
 import utility.function.Callback;
 
-/**
+# /**
  * This class manages application themes and their values. The ThemeManager is an abstract
  * base class that has two concrete subclasses (and others for testing purposes) -
  * StubThemeManager and ApplicationThememManager. The StubThemeManager exists as a placeholder

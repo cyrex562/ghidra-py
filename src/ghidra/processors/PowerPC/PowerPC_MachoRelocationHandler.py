@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.macho.*;
 import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.program.model.reloc.RelocationResult;
 
-/** 
+# /** 
  * A {@link MachoRelocationHandler} for PowerPC
  * 
  * @see <a href="https://opensource.apple.com/source/xnu/xnu-1504.9.37/EXTERNAL_HEADERS/mach-o/ppc/reloc.h.auto.html">mach-o/ppc/reloc.h</a> 

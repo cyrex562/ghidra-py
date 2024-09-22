@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 import docking.widgets.table.constraint.provider.EditorProvider;
 import docking.widgets.table.constrainteditor.ColumnConstraintEditor;
 
-/**
+# /**
  * Abstract base class for range constraints.
  *
  * @param <T> the column type

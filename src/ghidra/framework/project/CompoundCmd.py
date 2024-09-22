@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import ghidra.framework.model.DomainObject;
 
 import java.util.ArrayList;
 
-/**
+# /**
  * Implementation for multiple commands that are done as a unit.
  * 
  * Multiple commands may be added to this one so that multiple changes can be

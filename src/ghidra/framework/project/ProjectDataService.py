@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package ghidra.framework.project;
 import ghidra.framework.model.ProjectData;
 
 
-/**
+# /**
  * Interface for providing the ProjectData
  */
 public interface ProjectDataService {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.framework.ToolUtils;
 import ghidra.framework.model.*;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * Implementation for the Project ToolChest.
  */
 class ToolChestImpl implements ToolChest {

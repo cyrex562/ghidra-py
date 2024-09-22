@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 package ghidra.util.datastruct;
 import java.io.Serializable;
 
-/**
+# /**
  *     Class that implements a hashtable with short keys and String values.
  */
 

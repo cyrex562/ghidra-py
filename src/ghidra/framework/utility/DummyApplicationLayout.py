@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Collections;
 import generic.jar.ResourceFile;
 import ghidra.framework.ApplicationProperties;
 
-/**
+# /**
  * The dummy application layout defines the customizable elements of a dummy application's 
  * directory structure.  A dummy application only has a name, an installation/root dir, and
  * a user temp directory.

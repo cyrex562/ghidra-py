@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking.widgets.fieldpanel.support;
 
 import docking.widgets.fieldpanel.field.Field;
 
-/**
+# /**
  * A highlighter for for {@link Field}s.
  */
 public interface FieldHighlightFactory {

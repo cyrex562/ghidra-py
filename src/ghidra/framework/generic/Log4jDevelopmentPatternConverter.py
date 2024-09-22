@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import org.apache.logging.log4j.core.pattern.LogEventPatternConverter;
 import ghidra.util.Msg;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * Pattern converter for Log4j 2.x that adds a hyperlink for the calling class
  * of the current log message. This is to be used in log4j configurations as part
  * of a pattern layout. eg:

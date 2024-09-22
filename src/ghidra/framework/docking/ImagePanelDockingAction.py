@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import docking.ActionContext;
 import docking.action.DockingAction;
 import docking.widgets.imagepanel.ImagePanel;
 
-/**
+# /**
  * Base class of DockingActions that require a NavigableImagePanel
  */
 abstract class ImagePanelDockingAction extends DockingAction {

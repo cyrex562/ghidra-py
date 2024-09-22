@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package docking;
 
 import javax.swing.KeyStroke;
 
-/**
+# /**
  * Interface used to notify listener when a keystroke has changed.
  */
 public interface KeyEntryListener {

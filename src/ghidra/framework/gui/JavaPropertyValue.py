@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 package generic.theme;
 
-/**
+# /**
  * A base class that represents a Java UIManager property.  This value is used to allow for
  * overriding Java UI values using the theme properties files.
  */

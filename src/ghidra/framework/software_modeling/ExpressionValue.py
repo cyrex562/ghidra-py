@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import ghidra.program.model.mem.*;
 
 import java.io.Serializable;
 
-/**
+# /**
  * 
  */
 public interface ExpressionValue extends Serializable {

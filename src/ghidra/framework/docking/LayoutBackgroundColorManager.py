@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -20,7 +20,7 @@ import java.awt.Color;
 
 import docking.widgets.fieldpanel.support.FieldLocation;
 
-/**
+# /**
  * Interface for classes that manage the background color of a layout.  The background color is 
  * affected by the current selection and highlight.  Implementers of this class manage the 
  * interaction of the selection and highlight to provide a single object from which to get

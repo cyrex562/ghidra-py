@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-/**
+# /**
  * Tool manager that knows about all the running tools for each workspace
  * in the project; the tool manager is responsible for launching new tools,
  * and managing connections among tools.

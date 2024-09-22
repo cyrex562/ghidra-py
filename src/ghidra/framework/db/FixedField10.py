@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.io.IOException;
 import db.buffers.DataBuffer;
 import ghidra.util.BigEndianDataConverter;
 
-/**
+# /**
  * <code>FixedField10</code> provide an unsigned 10-byte fixed-length field value.
  * The most-significant byte corresponds to index-0 (i.e., data[0]).
  */

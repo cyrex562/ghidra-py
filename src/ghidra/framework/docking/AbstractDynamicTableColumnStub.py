@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.table;
 import ghidra.docking.settings.Settings;
 import ghidra.framework.plugintool.ServiceProvider;
 
-/**
+# /**
  * This class is meant to be used by DynamicTableColumn implementations that do not care about
  * the DATA_SOURCE parameter of DynamicTableColumn.  This class will stub the default
  * {@link #getValue(Object, Settings, Object, ServiceProvider)} method and

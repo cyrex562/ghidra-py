@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ import ghidra.framework.options.ToolOptions;
 
 import java.util.Collection;
 
-/**
+# /**
  * A task to apply markup items using the indicated options. If a markup item is set to 
  * "Do Not Apply" this will force the item to be applied by forcing a default option for 
  * that markup type.

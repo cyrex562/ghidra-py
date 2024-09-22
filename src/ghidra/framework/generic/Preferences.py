@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ import ghidra.util.Msg;
 import util.CollectionUtils;
 import utilities.util.FileUtilities;
 
-/**
+# /**
  * Uses Properties to manage user preferences as name/value pairs.  All methods
  * are static.
  */

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ import generic.json.Json;
 import ghidra.util.classfinder.ExtensionPoint;
 import utilities.util.reflection.ReflectionUtilities;
 
-/**
+# /**
  * ColumnConstraintTypeMappers allows columns of one type be filterable using an existing {@link ColumnConstraint}
  * for a different type by defining a  mapping from the column type to the desired
  * filter type. To get the benefit of one of these mappers, all that is required is to implement

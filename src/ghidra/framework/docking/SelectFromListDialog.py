@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ import docking.DockingWindowManager;
 import docking.widgets.list.ListPanel;
 import ghidra.util.SystemUtilities;
 
-/**
+# /**
  * Dialog that presents the user with a list of strings and returns the object
  * associated with the user-picked element.
  * <p>

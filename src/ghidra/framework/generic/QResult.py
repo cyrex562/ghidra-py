@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -19,7 +19,7 @@ package generic.concurrent;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.Future;
 
-/**
+# /**
  * Class for holding the result of processing an Item in a ConcurrentQ.
  * 
  * @param <I> the type of the items in the ConcurrentQ.

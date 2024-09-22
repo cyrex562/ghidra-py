@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,7 +54,7 @@ import resources.Icons;
 import util.CollectionUtils;
 import util.HistoryList;
 
-/**
+# /**
  * An implementation of a file chooser dialog.
  * This class is designed to emulate the JFileChooser,
  * but it removes the network locking issue.

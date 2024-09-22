@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -62,7 +62,7 @@ import ghidra.util.HelpLocation;
 import ghidra.util.SystemUtilities;
 import ghidra.util.table.*;
 
-/**
+# /**
  * Provider for the version tracking function association table. 
  */
 public class VTFunctionAssociationProvider extends ComponentProviderAdapter

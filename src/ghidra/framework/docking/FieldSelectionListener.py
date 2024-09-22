@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package docking.widgets.fieldpanel.listener;
 import docking.widgets.EventTrigger;
 import docking.widgets.fieldpanel.support.FieldSelection;
 
-/**
+# /**
  * Listener interface for when the selection changes.
  */
 public interface FieldSelectionListener {

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -17,7 +17,7 @@
 package ghidra.program.model.pcode;
 
 
-/**
+# /**
  * Block representing a sequence of other blocks
  * 
  * possible multiple incoming edges

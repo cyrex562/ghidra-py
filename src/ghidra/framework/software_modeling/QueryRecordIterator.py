@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import db.RecordIterator;
 import ghidra.util.Msg;
 import ghidra.util.exception.ClosedException;
 
-/**
+# /**
  * Iterator that only returns records from another iterator that match the given query.
  */
 public class QueryRecordIterator implements RecordIterator {

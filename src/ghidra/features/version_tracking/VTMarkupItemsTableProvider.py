@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,7 +66,7 @@ import ghidra.util.table.GhidraTable;
 import ghidra.util.table.GhidraThreadedTablePanel;
 import help.HelpService;
 
-/**
+# /**
  * This provides the GUI for displaying and working with version tracking markup items.
  */
 public class VTMarkupItemsTableProvider extends ComponentProviderAdapter

@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.awt.event.MouseWheelListener;
 
 import ghidra.framework.main.logviewer.event.FVEvent.EventType;
 
-/**
+# /**
  * Invoked when the user scrolls the mouse wheel either up or down. In this case we need to 
  * fire off an event telling the viewport (or any other subscribers) that a scroll needs to 
  * happen.

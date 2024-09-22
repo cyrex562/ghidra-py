@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import java.util.Date;
 
 import javax.swing.*;
 
-/**
+# /**
  * Non-editable Editor for date and time; creates a text field for the string version of the date.
  */
 public class DateEditor extends PropertyEditorSupport {

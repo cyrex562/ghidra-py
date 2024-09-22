@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import java.awt.Color;
 import java.util.Comparator;
 import java.util.function.Function;
 
-/**
+# /**
  * Class for sorting colors by rgb values.  Each enum values changes the order of comparison for the
  * red, green, and blue color values.
  */

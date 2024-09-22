@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,7 @@ import ghidra.graph.GEdge;
 import ghidra.graph.MutableGDirectedGraphWrapper;
 import util.CollectionUtils;
 
-/**
+# /**
  * A general base class for sharing code between graph algorithm implementations.
  *
  * @param <V> the vertex type

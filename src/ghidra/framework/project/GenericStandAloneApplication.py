@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.framework.plugintool;
 
 import ghidra.framework.model.ToolServices;
 
-/**
+# /**
  * A simplified interface for stand alone applications.
  */
 public interface GenericStandAloneApplication {

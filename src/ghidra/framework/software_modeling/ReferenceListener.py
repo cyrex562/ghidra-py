@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.symbol;
 
-/**
+# /**
  * Interface to define methods that are called when references are
  * added or removed.
  */

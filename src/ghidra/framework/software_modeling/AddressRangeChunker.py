@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package ghidra.program.model.address;
 
 import java.util.Iterator;
 
-/**
+# /**
  * A class to break a range of addresses into 'chunks' of a give size.   This is useful to
  * break-up processing of large swaths of addresses, such as when performing work in a
  * background thread.  Doing this allows the client to iterator over the range, pausing

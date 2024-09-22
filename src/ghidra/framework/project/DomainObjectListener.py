@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  * REVIEWED: YES
  *
@@ -18,7 +18,7 @@ package ghidra.framework.model;
 
 import java.util.EventListener;
 
-/**
+# /**
  * The interface an object must support to be registered with a Domain Object
  * and thus be informed of changes to the object.
  *   

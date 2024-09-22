@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.util.SystemUtilities;
 import ghidra.util.exception.AssertException;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * {@link GhidraScript} provider for native python3 scripts
  */
 public final class PyGhidraScriptProvider extends AbstractPythonScriptProvider {

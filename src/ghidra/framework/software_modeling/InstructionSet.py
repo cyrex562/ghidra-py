@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import ghidra.program.model.address.*;
 import ghidra.program.model.listing.Instruction;
 import ghidra.util.exception.AssertException;
 
-/** 
+# /** 
  * A set of instructions organized as a graph of basic blocks. 
  */
 public class InstructionSet implements Iterable<InstructionBlock> {

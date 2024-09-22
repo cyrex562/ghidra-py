@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +30,7 @@ import ghidra.util.datastruct.WeakDataStructureFactory;
 import ghidra.util.datastruct.WeakSet;
 import utility.function.Callback;
 
-/**
+# /**
  * A text field that is meant to be used in conjunction with tables that allow filter text.  This
  * text field will change its background color when it contains text.  Additionally, this text
  * field will flash its background color when the associated component gains focus.  This is done

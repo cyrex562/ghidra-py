@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ import ghidra.app.plugin.processors.sleigh.*;
 import ghidra.app.plugin.processors.sleigh.symbol.OperandSymbol;
 import ghidra.app.plugin.processors.sleigh.symbol.SubtableSymbol;
 
-/**
+# /**
  * A {@link AssemblyResolution} indicating successful application of a constructor
  * 
  * <p>

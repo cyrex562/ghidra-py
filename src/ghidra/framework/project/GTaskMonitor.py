@@ -1,4 +1,4 @@
-/* ###
+# /* ###
  * IP: GHIDRA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.CancelledListener;
 import ghidra.util.task.TaskMonitor;
 
-/**
+# /**
  * Implementation of a TaskMontor that can be "attached" to a GProgressBar.
  *
  * The GTaskMonitor is a non-gui object for tracking the progress of a GTaskGroup or GTask.  It
