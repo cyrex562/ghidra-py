@@ -26,7 +26,7 @@ import ghidra.program.model.reloc.RelocationResult;
 public class Loongarch_ElfRelocationHandler
 		extends AbstractElfRelocationHandler<Loongarch_ElfRelocationType, ElfRelocationContext<?>> {
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public Loongarch_ElfRelocationHandler() {

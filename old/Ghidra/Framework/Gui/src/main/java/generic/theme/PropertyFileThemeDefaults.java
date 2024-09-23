@@ -15,7 +15,7 @@
  */
 package generic.theme;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import generic.jar.ResourceFile;

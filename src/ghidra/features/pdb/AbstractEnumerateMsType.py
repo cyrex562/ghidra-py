@@ -29,7 +29,7 @@ public abstract class AbstractEnumerateMsType extends AbstractMsType implements 
 	protected Numeric numeric;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -48,7 +48,7 @@ public abstract class AbstractEnumerateMsType extends AbstractMsType implements 
 		reader.align4();
 	}
 
-//	/**
+//    # /**
 //	 * Constructor for this type.
 //	 * @param pdb {@link AbstractPdb} to which this type belongs.
 //	 * @param name the name.
@@ -60,7 +60,7 @@ public abstract class AbstractEnumerateMsType extends AbstractMsType implements 
 //		this.numericValue = BigInteger.valueOf(value);
 //	}
 //
-	/**
+    # /**
 	 * Returns the name of this enumerate type.
 	 * @return Name type of the enumerate type.
 	 */
@@ -69,7 +69,7 @@ public abstract class AbstractEnumerateMsType extends AbstractMsType implements 
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the Numeric of this Enumerate
 	 * @return The Numeric of this Enumerate.
 	 */

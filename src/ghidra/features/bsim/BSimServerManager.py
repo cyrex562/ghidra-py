@@ -16,7 +16,7 @@
 package ghidra.features.bsim.gui;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -39,7 +39,7 @@ public class BSimServerManager {
 
 	private static BSimServerManager instance;
 
-	/**
+    # /**
 	 * Get static singleton instance for BSimServerManager
 	 * @return BSimServerManager instance
 	 */
@@ -63,7 +63,7 @@ public class BSimServerManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get list of defined servers.  Method must be invoked from swing thread only.
 	 * @return list of defined servers
 	 */
@@ -124,7 +124,7 @@ public class BSimServerManager {
 		return serverFile.delete();
 	}
 
-	/**
+    # /**
 	 * Add server to list.  Method must be invoked from swing thread only.
 	 * @param newServerInfo new BSim DB server
 	 */
@@ -160,7 +160,7 @@ public class BSimServerManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Remove BSim DB server from list.  Method must be invoked from swing thread only.
 	 * Specified server datasource will be dispose unless it is active or force is true.
 	 * @param info BSim DB server to be removed
@@ -194,7 +194,7 @@ public class BSimServerManager {
 		});
 	}
 
-	/**
+    # /**
 	 * Convenience method to get existing BSim JDBC datasource
 	 * @param serverInfo BSim DB server info
 	 * @return BSim DB datasource or null if not instantiated or server does not support a
@@ -211,7 +211,7 @@ public class BSimServerManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Convenience method to get a new or existing BSim JDBC datasource
 	 * @param serverInfo BSim DB server info
 	 * @return BSim DB datasource or null if server does not support a

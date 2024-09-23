@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.function;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.collections4.map.LazyMap;
@@ -50,7 +50,7 @@ public class FunctionTagManagerDB implements FunctionTagManager, ErrorHandler {
 
 	protected final Lock lock;
 
-	/**
+    # /**
 	 * Constructor.
 	 *
 	 * @param handle handle to database
@@ -292,7 +292,7 @@ public class FunctionTagManagerDB implements FunctionTagManager, ErrorHandler {
 // Private Methods
 //==================================================================================================
 
-	/**
+    # /**
 	 * Sends a notification when a tag has been changed (edited or deleted).
 	 *
 	 * @param type {@link ChangeManager} change type
@@ -305,7 +305,7 @@ public class FunctionTagManagerDB implements FunctionTagManager, ErrorHandler {
 		program.tagChanged(tag, eventType, oldValue, newValue);
 	}
 
-	/**
+    # /**
 	 * Fires off a notification indicating that a new tag has been created.
 	 *
 	 * @param eventType {@link ChangeManager} change type
@@ -315,7 +315,7 @@ public class FunctionTagManagerDB implements FunctionTagManager, ErrorHandler {
 		program.tagCreated(tag, eventType);
 	}
 
-	/**
+    # /**
 	 * Fires off a notification indicating that the given tag has been deleted.
 	 *
 	 * @param eventType the type of change
@@ -325,7 +325,7 @@ public class FunctionTagManagerDB implements FunctionTagManager, ErrorHandler {
 		program.tagChanged(tag, eventType, tag, null);
 	}
 
-	/**
+    # /**
 	 * Returns the cache object for the given Record. If the object is not in
 	 * the cache, a new cache object is created.
 	 *
@@ -340,7 +340,7 @@ public class FunctionTagManagerDB implements FunctionTagManager, ErrorHandler {
 		return tag;
 	}
 
-	/**
+    # /**
 	 * Deletes the given function tag.
 	 *
 	 * @param tag the tag to delete
@@ -359,7 +359,7 @@ public class FunctionTagManagerDB implements FunctionTagManager, ErrorHandler {
 		invalidateFunctions();
 	}
 
-	/**
+    # /**
 	 * Tells the function manager that its tags are out of date. This
 	 * will cause functions to go to the database to retrieve tags next time they
 	 * are requested, rather than using their internal cache.
@@ -370,7 +370,7 @@ public class FunctionTagManagerDB implements FunctionTagManager, ErrorHandler {
 		functionManager.functionTagsChanged();
 	}
 
-	/**
+    # /**
 	 * Returns all function tags associated with the given function id.
 	 *
 	 * @param functionId the function id

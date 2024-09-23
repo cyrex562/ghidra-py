@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 
-import java.io.IOException;
+
 import java.io.RandomAccessFile;
 
 import ghidra.app.util.bin.ByteProvider;
@@ -35,7 +35,7 @@ class MsfFileReader implements AutoCloseable {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Closes this class, including its underlying file resources
 	 * @throws IOException under circumstances found when closing a {@link RandomAccessFile}
 	 */
@@ -49,7 +49,7 @@ class MsfFileReader implements AutoCloseable {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param msf the {@link Msf} for which this class is to be associated
 	 * @param byteProvider the ByteProvider providing bytes for the MSF
@@ -59,7 +59,7 @@ class MsfFileReader implements AutoCloseable {
 		this.byteProvider = byteProvider;
 	}
 
-	/**
+    # /**
 	 * Reads a single page of bytes from the {@link Msf} and writes it into the bytes array
 	 * @param page the page number to read from the file
 	 * @param bytes the byte[] into which the data is to be written
@@ -70,7 +70,7 @@ class MsfFileReader implements AutoCloseable {
 		read(page, 0, msf.getPageSize(), bytes, 0);
 	}
 
-	/**
+    # /**
 	 * Reads bytes from the {@link Msf} into a byte[]
 	 * @param page the page number within which to start the read
 	 * @param offset the byte offset within the page to start the read

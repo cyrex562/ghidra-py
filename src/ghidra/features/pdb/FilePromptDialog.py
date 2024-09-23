@@ -41,7 +41,7 @@ import ghidra.util.layout.PairLayout;
  */
 class FilePromptDialog extends DialogComponentProvider {
 
-	/**
+    # /**
 	 * Prompts the user to enter the path to a directory,
 	 * or to pick it using a browser dialog.
 	 *
@@ -55,7 +55,7 @@ class FilePromptDialog extends DialogComponentProvider {
 			GhidraFileChooserMode.DIRECTORIES_ONLY);
 	}
 
-	/**
+    # /**
 	 * Prompts the user to entry the path to a file and/or directory,
 	 * or to pick it using a browser dialog.
 	 * <p>

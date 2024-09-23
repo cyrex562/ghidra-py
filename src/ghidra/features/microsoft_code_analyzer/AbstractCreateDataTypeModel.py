@@ -56,7 +56,7 @@ public abstract class AbstractCreateDataTypeModel {
 	private String exceptionMessage;
 	protected DataValidationOptions validationOptions;
 
-	/**
+    # /**
 	 * Constructor for the abstract create data type model. This constructor assumes 
 	 * that only a single data type will be created at the indicated address in the program.
 	 * @param program the program where the data type would be created.
@@ -69,7 +69,7 @@ public abstract class AbstractCreateDataTypeModel {
 		this(program, 1, address, validationOptions);
 	}
 
-	/**
+    # /**
 	 * Constructor for the abstract create data type model. This constructor expects
 	 * to create <code>count</code> number of data types at the indicated address in the program.
 	 * If more than one data type is being created, they will be in an array data type.
@@ -113,7 +113,7 @@ public abstract class AbstractCreateDataTypeModel {
 		imageBaseAddress = getProgram().getImageBase();
 	}
 
-	/**
+    # /**
 	 * Determine if the program in this model is for windows.
 	 * @return true if the program is a windows program.
 	 */
@@ -127,7 +127,7 @@ public abstract class AbstractCreateDataTypeModel {
 				compilerString.equals(CompilerEnum.Clang.toString()));
 	}
 
-	/**
+    # /**
 	 * Determine if the address for this model is actually in the program.
 	 * @return true if the address for the data type is valid.
 	 */
@@ -135,7 +135,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return isValidAddress;
 	}
 
-	/**
+    # /**
 	 * Determine if the address for this model is within an initialized block in the program.
 	 * @return true if the address for the data type is initialized.
 	 */
@@ -143,7 +143,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return isInitializedAddress;
 	}
 
-	/**
+    # /**
 	 * Determine if the address for this model is within an executable block in the program.
 	 * @return true if the address for the data type is executable.
 	 */
@@ -151,7 +151,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return isExecutableAddress;
 	}
 
-	/**
+    # /**
 	 * Determine if the address for this model is within a loaded and initialized block in the program.
 	 * @return true if the address for the data type is loaded and initialized.
 	 */
@@ -159,7 +159,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return isLoadedAndInitialized;
 	}
 
-	/**
+    # /**
 	 * Determine if this model is for a 64 bit program.
 	 * @return true if the model's program is 64 bit.
 	 */
@@ -167,7 +167,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return is64Bit;
 	}
 
-	/**
+    # /**
 	 * Determine if the components in this model's data type use relative offsets or pointers.
 	 * @param program the program which will contain this model's data type. 
 	 * @return true if the data type uses relative offsets.
@@ -176,7 +176,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.is64Bit(program); // May need more here later.
 	}
 
-	/**
+    # /**
 	 * Determine if the components in the data type use relative offsets or pointers.
 	 * @return true if the data type uses relative offsets.
 	 */
@@ -184,7 +184,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return isRelative;
 	}
 
-	/**
+    # /**
 	 * Determine the program's default pointer size.
 	 * @return the default pointer size.
 	 */
@@ -192,7 +192,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return defaultPointerSize;
 	}
 
-	/**
+    # /**
 	 * Gets the program's data type manager.
 	 * @return the data type manager.
 	 */
@@ -200,7 +200,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return dataTypeManager;
 	}
 
-	/**
+    # /**
 	 * Gets the program's memory buffer for this model based on the model's address.
 	 * @return the MemBuffer.
 	 */
@@ -208,13 +208,13 @@ public abstract class AbstractCreateDataTypeModel {
 		return memBuffer;
 	}
 
-	/**
+    # /**
 	 * Gets the length of this model's data type.
 	 * @return the data type length or 0 if the length can't be determined.
 	 */
 	protected abstract int getDataTypeLength();
 
-	/**
+    # /**
 	 *  Determines if the data type will fit in a single memory block in the program.
 	 * @return true if the data type fits in a single block.
 	 */
@@ -236,7 +236,7 @@ public abstract class AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the alignment for this model's data type.
 	 * @return the data type's alignment
 	 */
@@ -248,7 +248,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return 4; // Default to 4 byte aligned.
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the indicated address appears to be a valid location for the
 	 * indicated number of the indicated data type.
 	 * @throws InvalidDataTypeException if this model's location doesn't appear to be valid for
@@ -276,7 +276,7 @@ public abstract class AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the indicated address appears to be a valid location for the
 	 * indicated number of the indicated data type. Models that extend AbstractCreateDataTypeModel 
 	 * should override this method in order to check model specific information to determine that 
@@ -290,7 +290,7 @@ public abstract class AbstractCreateDataTypeModel {
 	 */
 	protected abstract void validateModelSpecificInfo() throws InvalidDataTypeException;
 
-	/**
+    # /**
 	 * Performs validation of the parts that are common to all models that extend this class.
 	 * @throws InvalidDataTypeException if the model isn't valid for the associated program and 
 	 * address. The message in the exception indicates why the model isn't valid.
@@ -348,7 +348,7 @@ public abstract class AbstractCreateDataTypeModel {
 
 	}
 
-	/**
+    # /**
 	 * Your model must override this method if the model can't always determine the exact
 	 * composition of the exception handling data structure and its size.
 	 * @throws InvalidDataTypeException if the model can't determine the data type and its size
@@ -359,7 +359,7 @@ public abstract class AbstractCreateDataTypeModel {
 		// Override this method if the model can't create the data type or doesn't know its size.
 	}
 
-	/**
+    # /**
 	 * This method can be called by a model's get methods to validate the model before trying 
 	 * to retrieve a particular piece of information
 	 * <br>Important: This method must not be called by any methods that are called (possibly 
@@ -374,7 +374,7 @@ public abstract class AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This method can be called by a model's methods to validate the model before trying 
 	 * to retrieve a particular piece of information. It also validates that the ordinal value 
 	 * doesn't exceed the count for the model.
@@ -405,7 +405,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return isValid;
 	}
 
-	/**
+    # /**
 	 * Gets the program that is associated with this model. The program is where the data type
 	 * will be validated/created.
 	 * @return the program
@@ -414,7 +414,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return program;
 	}
 
-	/**
+    # /**
 	 * Gets a count indicating the number of this data type that should occur in the program at 
 	 * the specified address.
 	 * @return the count
@@ -423,7 +423,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return count;
 	}
 
-	/**
+    # /**
 	 * The address in the program where this model should begin validating or overlaying the 
 	 * data type for this model.
 	 * @return the address
@@ -432,7 +432,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Converts the indicated address to null whenever there are no entries as indicated
 	 * by numEntries and the filler address is as expected.
 	 * <br>
@@ -465,7 +465,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return mapAddress;
 	}
 
-	/**
+    # /**
 	 * Gets the last address within the data type for this model.
 	 * @return the end address or null.
 	 * @throws AddressOutOfBoundsException if data type wont fit in memory.
@@ -486,19 +486,19 @@ public abstract class AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the name of the data type validated and created by this model.
 	 * @return the data type's name.
 	 */
 	public abstract String getName();
 
-	/**
+    # /**
 	 * Gets the data type for this model.
 	 * @return the data type that is validated and created by this model.
 	 */
 	public abstract DataType getDataType();
 
-	/**
+    # /**
 	 * Determines if the map information appears valid based on the number of entries and the 
 	 * address of the map. zero can be a valid number of entries.
 	 * @param numEntries the number of entries in the map.
@@ -522,7 +522,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return memory.getLoadedAndInitializedAddressSet().contains(mapAddress);
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory has any instructions defined in the area from the indicated 
 	 * address up to the size of the data type for this model.
 	 * @return true if there are any instructions where the data type is being placed.
@@ -546,7 +546,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the MemBuffer for the indicated data type in the array when the model has a count
 	 * that is greater than 1.
 	 * @param ordinal 0-based ordinal indicating which data types memory is desired.
@@ -563,7 +563,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return specificMemBuffer;
 	}
 
-	/**
+    # /**
 	 * Determines if the indicated entryCount value appears valid for the indicated count type.
 	 * @param countType name indicating the type of count being checked.
 	 * @param actualCount the count of the actual number of entries for an exception handling map.
@@ -576,7 +576,7 @@ public abstract class AbstractCreateDataTypeModel {
 		checkAgainstMaxCount(countType, actualCount, maxValidCount);
 	}
 
-	/**
+    # /**
 	 * Determines if the indicated actual entry count value is a non-negative count
 	 * for the indicated count type.
 	 * @param countType name indicating the type of count being checked.
@@ -591,7 +591,7 @@ public abstract class AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Determines if the indicated count value for the number of entries is above the indicated 
 	 * maximum valid count value for the indicated count type.
 	 * @param countType name indicating the type of count being checked.
@@ -608,7 +608,7 @@ public abstract class AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Determines if data is already defined between the start and end address.
 	 * @param listing the program listing where the data type is to be placed.
 	 * @param startAddress the start address of the range to check.
@@ -627,7 +627,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Determines if an instruction is already defined between the start and end address.
 	 * @param listing the program listing where the data type is to be placed.
 	 * @param startAddress the start address of the range to check.
@@ -646,7 +646,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the current validation options that are set for this model.
 	 * @return the validation options
 	 */
@@ -654,14 +654,14 @@ public abstract class AbstractCreateDataTypeModel {
 		return validationOptions;
 	}
 
-	/**
+    # /**
 	 * Returns the DataOrganization associated with this model's DataTypeManager
 	 */
 	final protected DataOrganization getDataOrganization() {
 		return dataTypeManager.getDataOrganization();
 	}
 
-	/**
+    # /**
 	 * Determines if the data type, that is returned by any call to a getDataType() method,
 	 * is already based on the count as part of the data type (i.e. the data type returned
 	 * is an array with count number of elements of an underlying data type.)
@@ -672,7 +672,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return dataTypeAlreadyBasedOnCount;
 	}
 
-	/**
+    # /**
 	 * Sets whether or not the data type returned by this model already includes the model's 
 	 * count as part of the data type.
 	 * @param dataTypeAlreadyBasedOnCount true if the model's data type is already based on the count.
@@ -682,7 +682,7 @@ public abstract class AbstractCreateDataTypeModel {
 		this.dataTypeAlreadyBasedOnCount = dataTypeAlreadyBasedOnCount;
 	}
 
-	/**
+    # /**
 	 * Gets the default message indicating the data type for this model isn't valid at the 
 	 * indicated address.
 	 * @return the message
@@ -691,7 +691,7 @@ public abstract class AbstractCreateDataTypeModel {
 		return getName() + " data type at " + getAddress() + " isn't valid.";
 	}
 
-	/**
+    # /**
 	 * Throws an InvalidDataTypeException with a default message that indicates the data type 
 	 * and address where it is invalid.
 	 * 
@@ -701,7 +701,7 @@ public abstract class AbstractCreateDataTypeModel {
 		throw new InvalidDataTypeException(getDefaultInvalidMessage());
 	}
 
-	/**
+    # /**
 	 * Throws an InvalidDataTypeException with a default message indicating the data type 
 	 * and address where it is invalid that is followed by the message from the exception 
 	 * passed to this method.
@@ -718,7 +718,7 @@ public abstract class AbstractCreateDataTypeModel {
 		throw new InvalidDataTypeException(message);
 	}
 
-	/**
+    # /**
 	 * Throws an InvalidDataTypeException with a default message indicating the data type 
 	 * and address where it is invalid that is followed by the suffixMessage passed to this 
 	 * method.

@@ -48,14 +48,14 @@ public class AddressMapImpl {
 	private int lastBaseIndex;
 	private long mapIdBits;
 
-	/**
+    # /**
 	 * Creates a new AddressMapImpl with a mapID of 0.
 	 */
 	public AddressMapImpl() {
 		this((byte) 0, null);
 	}
 
-	/**
+    # /**
 	 * Creates a new AddressMapImpl with the specified mapID
 	 * @param mapID the 8-bit value is placed in the upper 8 bits of every address encoding.
 	 */
@@ -87,7 +87,7 @@ public class AddressMapImpl {
 		}
 	}
 
-	/**
+    # /**
 	 * Comparator used to identify if an addr occurs before or after the 
 	 * start of a key range.
 	 */
@@ -167,7 +167,7 @@ public class AddressMapImpl {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMap#decodeAddress(long)
 	 */
 	public synchronized Address decodeAddress(long value) {
@@ -186,7 +186,7 @@ public class AddressMapImpl {
 		return baseAddrs[baseIndex].addWrapSpace(offset);
 	}
 
-	/**
+    # /**
 	 * Generate a unique key for the specified addr.  Only addresses from a single address space or 
 	 * single program should be passed to this method. Only limited checking is not performed in order to 
 	 * improve performance.
@@ -198,7 +198,7 @@ public class AddressMapImpl {
 			(addr.getOffset() & ADDR_OFFSET_MASK);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMap#findKeyRange(List, Address)
 	 */
 	public int findKeyRange(List<KeyRange> keyRangeList, Address addr) {
@@ -208,7 +208,7 @@ public class AddressMapImpl {
 		return Collections.binarySearch(keyRangeList, addr, addressInsertionKeyRangeComparator);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMap#getKeyRanges(Address, Address, boolean)
 	 */
 	public List<KeyRange> getKeyRanges(Address start, Address end) {
@@ -221,7 +221,7 @@ public class AddressMapImpl {
 		return keyRangeList;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMap#getKeyRanges(AddressSetView, boolean)
 	 */
 	public synchronized List<KeyRange> getKeyRanges(AddressSetView set) {
@@ -270,7 +270,7 @@ public class AddressMapImpl {
 		return a1.compareTo(a2) < 0 ? a2 : a1;
 	}
 
-	/**
+    # /**
 	 * Reconcile address space changes using associated address factory.
 	 * This method should be invoked following an undo/redo (if the
 	 * associated address factory may have changed) or removal of an

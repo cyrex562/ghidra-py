@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.properties;
 
-import java.io.IOException;
+
 import java.util.NoSuchElementException;
 
 import db.*;

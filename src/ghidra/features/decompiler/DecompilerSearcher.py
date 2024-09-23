@@ -35,7 +35,7 @@ public class DecompilerSearcher implements FindDialogSearcher {
 
 	private DecompilerPanel decompilerPanel;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param decompilerPanel decompiler panel
 	 */

@@ -47,7 +47,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class FillOutStructureHelper {
 
-	/**
+    # /**
 	 * Varnode with data-flow traceable to original pointer
 	 */
 	private static class PointerRef {
@@ -74,7 +74,7 @@ public class FillOutStructureHelper {
 	private List<OffsetPcodeOpPair> storePcodeOps = new ArrayList<>();
 	private List<OffsetPcodeOpPair> loadPcodeOps = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor.
 	 * 
 	 * @param program the current program
@@ -85,7 +85,7 @@ public class FillOutStructureHelper {
 		this.monitor = monitor;
 	}
 
-	/**
+    # /**
 	 * Create or update a Structure data-type given a function and a root pointer variable.
 	 * The function must already be decompiled, but if a decompiler interface is provided, this
 	 * method will recursively follow variable references into CALLs, possibly triggering additional
@@ -169,7 +169,7 @@ public class FillOutStructureHelper {
 		loadPcodeOps = new ArrayList<>();
 	}
 
-	/**
+    # /**
 	 * Retrieve the component map that was generated when structure was created using decompiler 
 	 * info. Results are not valid until 
 	 * {@link #processStructure(HighVariable, Function, boolean, boolean, DecompInterface)} is invoked.
@@ -179,7 +179,7 @@ public class FillOutStructureHelper {
 		return componentMap;
 	}
 
-	/**
+    # /**
 	 * Retrieve the offset/pcodeOp pairs that are used to store data into the variable
 	 * used to fill-out structure.
 	 * Results are not valid until 
@@ -190,7 +190,7 @@ public class FillOutStructureHelper {
 		return storePcodeOps;
 	}
 
-	/**
+    # /**
 	 * Retrieve the offset/pcodeOp pairs that are used to load data from the variable
 	 * used to fill-out structure.
 	 * Results are not valid until 
@@ -201,7 +201,7 @@ public class FillOutStructureHelper {
 		return loadPcodeOps;
 	}
 
-	/**
+    # /**
 	 * Retrieve the (likely) storage address of a function parameter given
 	 * the inputs to a CALL p-code op and particular Varnode slot within the inputs.
 	 * We compute the address from the point of view of the called function (callee)
@@ -238,7 +238,7 @@ public class FillOutStructureHelper {
 		return storageLocations[slot].getMinAddress();
 	}
 
-	/**
+    # /**
 	 * Recursively visit calls that take the structure pointer as a parameter.
 	 * Add any new references to the offsetToDataTypeMap.
 	 * @param decomplib is the active interface for decompiling
@@ -269,7 +269,7 @@ public class FillOutStructureHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Decompile a function and return the resulting HighVariable associated with a storage address
 	 * @param storageAddress the storage address of the variable
 	 * @param function is the function
@@ -325,7 +325,7 @@ public class FillOutStructureHelper {
 		return highVar;
 	}
 
-	/**
+    # /**
 	 * Set up a decompiler interface and prepare for decompiling on the currentProgram. 
 	 * The interface can be used to pass to computeHighVariable or to processStructure.
 	 * @param options are the options to pass to the decompiler
@@ -343,7 +343,7 @@ public class FillOutStructureHelper {
 		return decomplib;
 	}
 
-	/**
+    # /**
 	 * Populate the given structure with any new discovered components in the
 	 * offsetToDataTypeMap.
 	 * @param structDT is the given structure
@@ -381,7 +381,7 @@ public class FillOutStructureHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new structure of a given size and unique generated name within the DEFAULT_CATEGORY. 
 	 * 
 	 * @param size is the desired structure size
@@ -395,7 +395,7 @@ public class FillOutStructureHelper {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * Create new unique Ghidra Class namespace and corresponding structure.
 	 * @param var {@code "this"} pointer variable
 	 * @param size structure size
@@ -439,7 +439,7 @@ public class FillOutStructureHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Generate a unique Ghidra Class which does not have an existing structure
 	 * @return new unique Ghidra Class namespace or null on error
 	 */
@@ -482,7 +482,7 @@ public class FillOutStructureHelper {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Look for Varnode references that are equal to the given variable plus a
 	 * constant offset and store them in the componentMap. The search is performed
 	 * by following data-flow paths starting at the given variable. If the variable flows
@@ -631,7 +631,7 @@ public class FillOutStructureHelper {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Add a Varnode reference to the current work list to facilitate flow tracing.
 	 * To prevent cycles, a separate of visited Varnodes is maintained
 	 * @param output is the Varnode at the current point of flow
@@ -648,7 +648,7 @@ public class FillOutStructureHelper {
 		doneList.add(output);
 	}
 
-	/**
+    # /**
 	 * Check if a variable has a data-type that is suitable for being extended.
 	 * If so return the structure data-type, otherwise return null.
 	 * Modulo typedefs, the data-type of the variable must be exactly a
@@ -676,7 +676,7 @@ public class FillOutStructureHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Class to create pair between an offset and its related PcodeOp
 	 */
 	static public class OffsetPcodeOpPair {

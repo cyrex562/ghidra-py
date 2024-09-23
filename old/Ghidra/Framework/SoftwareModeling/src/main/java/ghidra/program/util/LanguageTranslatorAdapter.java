@@ -15,7 +15,7 @@
  */
 package ghidra.program.util;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.program.model.address.*;

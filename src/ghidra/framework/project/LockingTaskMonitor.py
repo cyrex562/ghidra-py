@@ -33,7 +33,7 @@ class LockingTaskMonitor implements TaskMonitor {
 	private String msg;
 	private MyTaskDialog taskDialog;
 
-	/**
+    # /**
 	 * Constructs a locking task handler for a locked domain object.  The
 	 * {@link #releaseLock()} method must be invoked to dispose this object and release the
 	 * lock.  This should be done in a try/finally block to avoid accidentally locking the
@@ -53,7 +53,7 @@ class LockingTaskMonitor implements TaskMonitor {
 		return dobj;
 	}
 
-	/**
+    # /**
 	 * Display a modal task dialog associated with this locking task.
 	 * This method will not return until the task has completed and the
 	 * lock has been released.
@@ -90,7 +90,7 @@ class LockingTaskMonitor implements TaskMonitor {
 		return taskDialog != null ? taskDialog.isCancelled() : isCanceled;
 	}
 
-	/**
+    # /**
 	 * Release associated domain object lock and close dialog.
 	 * All blocked waits will be notified.
 	 */

@@ -18,7 +18,7 @@ package ghidra.program.model.pcode;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 # /**
@@ -36,7 +36,7 @@ public class BlockGraph extends PcodeBlock {
 		maxindex = -1;
 	}
 
-	/**
+    # /**
 	 * Add a block to this container. There are (initially) no edges between
 	 * it and any other block in the container.
 	 * @param bl is the new block to add
@@ -69,7 +69,7 @@ public class BlockGraph extends PcodeBlock {
 		list.add(bl);
 	}
 
-	/**
+    # /**
 	 * Assign a unique index to all blocks in this container. After this call,
 	 * getBlock(i) will return the block that satisfies block.getIndex() == i
 	 */
@@ -81,14 +81,14 @@ public class BlockGraph extends PcodeBlock {
 		maxindex = list.size() - 1;
 	}
 
-	/**
+    # /**
 	 * @return the number of blocks in this container
 	 */
 	public int getSize() {
 		return list.size();
 	}
 
-	/**
+    # /**
 	 * Retrieve the i-th block from this container
 	 * @param i is the index of the block to fetch
 	 * @return the block
@@ -97,7 +97,7 @@ public class BlockGraph extends PcodeBlock {
 		return list.get(i);
 	}
 
-	/**
+    # /**
 	 * Add a directed edge between two blocks in this container
 	 * @param begin is the "from" block of the edge
 	 * @param end is the "to" block of the edge
@@ -106,7 +106,7 @@ public class BlockGraph extends PcodeBlock {
 		end.addInEdge(begin, 0);
 	}
 
-	/**
+    # /**
 	 * Recursively run through this structured BlockGraph finding the BlockCopy leaves.
 	 * Using the BlockCopy altindex, lookup the original BlockCopy in -ingraph- and
 	 * transfer the Object ref and Address into the leaf 
@@ -179,7 +179,7 @@ public class BlockGraph extends PcodeBlock {
 		}
 	}
 
-	/**
+    # /**
 	 * Decode all blocks and edges in this container from a stream.
 	 * @param decoder is the stream decoder
 	 * @throws DecoderException if there are invalid encodings

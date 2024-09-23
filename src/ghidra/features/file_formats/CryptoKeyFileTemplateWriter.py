@@ -17,7 +17,7 @@ package ghidra.file.crypto;
 
 import generic.jar.ResourceFile;
 
-import java.io.*;
+
 
 # /**
  * Reads a file and creates a template
@@ -27,7 +27,7 @@ public final class CryptoKeyFileTemplateWriter {
 	private String fileName;
 	private PrintWriter writer;
 
-	/**
+    # /**
 	 * Constructs a new template using the given file name.
 	 * @param fileName the name of the firmware file
 	 */
@@ -35,7 +35,7 @@ public final class CryptoKeyFileTemplateWriter {
 		this.fileName = fileName;
 	}
 
-	/**
+    # /**
 	 * Returns TRUE if the XML file already exists.
 	 * @return TRUE if the XML file already exists
 	 */
@@ -45,7 +45,7 @@ public final class CryptoKeyFileTemplateWriter {
 		return xmlFile.exists();
 	}
 
-	/**
+    # /**
 	 * Opens the crypto key file.
 	 * WARNING: If a file already exists, it will be overwritten.
 	 * @throws IOException if an I/O error occurs
@@ -57,7 +57,7 @@ public final class CryptoKeyFileTemplateWriter {
 		writer.println("<FIRMWARE NAME=\"" + fileName + "\">");
 	}
 
-	/**
+    # /**
 	 * Closes the crypto key file.
 	 * @throws IOException if an I/O error occurs
 	 */
@@ -66,7 +66,7 @@ public final class CryptoKeyFileTemplateWriter {
 		writer.close();
 	}
 
-	/**
+    # /**
 	 * Write the entryName to the XML file.
 	 * @param entryName the name of the entry
 	 * @throws IOException if an I/O error occurs

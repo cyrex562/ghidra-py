@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import org.apache.commons.lang3.StringUtils;
@@ -32,7 +32,7 @@ public final class DataUtilities {
 		// utilities class
 	}
 
-	/**
+    # /**
 	 * Determine if the specified name is a valid data-type name
 	 * @param name candidate data-type name
 	 * @return true if name is valid, else false
@@ -55,30 +55,30 @@ public final class DataUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * <code>ClearDataMode</code> specifies how conflicting data should be cleared
 	 * when creating/re-creating data
 	 */
 	public static enum ClearDataMode {
-		/**
+	    # /**
 		 * Ensure that data will fit before clearing
 		 * a single code unit at the specified data address.
 		 */
 		CHECK_FOR_SPACE,
-		/**
+	    # /**
 		 * Always clear a single code unit at the data
 		 * address regardless of the ability for the
 		 * desired data-type to fit.
 		 */
 		CLEAR_SINGLE_DATA,
-		/**
+	    # /**
 		 * Clear all conflicting Undefined Data provided new data will
 		 * fit within memory and not conflict with an
 		 * instruction or other defined data.  Undefined refers to defined
 		 * data with the Undefined data-type (see {@link Undefined#isUndefined(DataType)}).
 		 */
 		CLEAR_ALL_UNDEFINED_CONFLICT_DATA,
-		/**
+	    # /**
 		 * Clear all Default Data provided new data will fit within memory and 
 		 * not conflict with an instruction or other defined data.  In this
 		 * context Default Data refers to all defined data with either an
@@ -91,7 +91,7 @@ public final class DataUtilities {
 		 * </ol>
 		 */
 		CLEAR_ALL_DEFAULT_CONFLICT_DATA,
-		/**
+	    # /**
 		 * Clear all conflicting data provided new data will fit within memory and 
 		 * not conflict with an instruction.
 		 */
@@ -129,7 +129,7 @@ public final class DataUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Create data where existing data may already exist.  Pointer datatype stacking will not
 	 * be performed.
 	 * @param program the program
@@ -145,7 +145,7 @@ public final class DataUtilities {
 		return createData(program, addr, newType, length, false, clearMode);
 	}
 
-	/**
+    # /**
 	 * Create data where existing data may already exist.
 	 * @param program the program
 	 * @param addr data address (offcut data address only allowed if clearMode == ClearDataMode.CLEAR_ALL_CONFLICT_DATA)
@@ -402,7 +402,7 @@ public final class DataUtilities {
 		return pointer.newPointer(dataType);
 	}
 
-	/**
+    # /**
 	 * Determine the final data-type which should be applied based upon a
 	 * user applied type of newDataType on an existing originalDataType.
 	 * Pointer conversion is performed when appropriate, otherwise the
@@ -466,7 +466,7 @@ public final class DataUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the data for the given address; if the code unit at the address is
 	 * an instruction, return null.
 	 * @param loc the location. This provides the address and subcomponent
@@ -489,7 +489,7 @@ public final class DataUtilities {
 		return dataAtAddr;
 	}
 
-	/**
+    # /**
 	 * Get the data for the given address.
 	 * <P>
 	 * This will return a Data if and only if there is data that starts at the given address.
@@ -510,7 +510,7 @@ public final class DataUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the maximum address of an undefined data range starting at addr.
 	 * Both undefined code units and defined data which have an Undefined
 	 * data type are included in the range.
@@ -554,7 +554,7 @@ public final class DataUtilities {
 		return endOfRangeAddress;
 	}
 
-	/**
+    # /**
 	 * Determine if the specified addr corresponds to an undefined data location
 	 * where both undefined code units and defined data which has an Undefined
 	 * data type is considered to be undefined.
@@ -567,7 +567,7 @@ public final class DataUtilities {
 		return Undefined.isUndefined(data.getDataType());
 	}
 
-	/**
+    # /**
 	 * Get the next defined data that comes after the address indicated by addr and that is
 	 * no more than the specified maxAddr and that is not a sized undefined data type.
 	 * @param program the program whose code units are to be checked to find the next
@@ -595,7 +595,7 @@ public final class DataUtilities {
 		return data;
 	}
 
-	/**
+    # /**
 	 * Finds the first conflicting address in the given address range.
 	 *
 	 * @param program The program.
@@ -636,7 +636,7 @@ public final class DataUtilities {
 		return instructionAddr;
 	}
 
-	/**
+    # /**
 	 * Determine if there is only undefined data from the specified startAddress to the specified
 	 * endAddress. The start and end addresses must both be in the same defined block of memory.
 	 * @param program the program whose code units are to be checked.

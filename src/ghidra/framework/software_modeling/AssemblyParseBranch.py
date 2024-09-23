@@ -35,7 +35,7 @@ public class AssemblyParseBranch extends AssemblyParseTreeNode
 	// The production applied to create this branch
 	private final AssemblyProduction prod;
 
-	/**
+    # /**
 	 * Construct a branch from the given grammar and production
 	 * 
 	 * @param grammar the grammar containing the production
@@ -68,7 +68,7 @@ public class AssemblyParseBranch extends AssemblyParseTreeNode
 		return true;
 	}
 
-	/**
+    # /**
 	 * Prepend a child to this branch
 	 * 
 	 * <p>
@@ -85,7 +85,7 @@ public class AssemblyParseBranch extends AssemblyParseTreeNode
 		child.setParent(this);
 	}
 
-	/**
+    # /**
 	 * See what symbol is expected next
 	 * 
 	 * <p>
@@ -101,7 +101,7 @@ public class AssemblyParseBranch extends AssemblyParseTreeNode
 		return null;
 	}
 
-	/**
+    # /**
 	 * Check if the branch is full
 	 * 
 	 * @return true if every symbol on the RHS has a corresponding child
@@ -133,7 +133,7 @@ public class AssemblyParseBranch extends AssemblyParseTreeNode
 		return this.prod.getLHS().toString();
 	}
 
-	/**
+    # /**
 	 * Get the production applied to create this branch
 	 * 
 	 * @return
@@ -142,7 +142,7 @@ public class AssemblyParseBranch extends AssemblyParseTreeNode
 		return prod;
 	}
 
-	/**
+    # /**
 	 * Get the list of children, indexed by corresponding symbol from the RHS
 	 * 
 	 * @return
@@ -156,7 +156,7 @@ public class AssemblyParseBranch extends AssemblyParseTreeNode
 		return getSubstitutions().iterator();
 	}
 
-	/**
+    # /**
 	 * Get the <em>i</em>th child, corresponding to the <em>i</em>th symbol from the RHS
 	 * 
 	 * @param i the position

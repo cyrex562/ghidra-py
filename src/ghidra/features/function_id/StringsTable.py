@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.db;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.DBObjectCache;
@@ -45,7 +45,7 @@ public class StringsTable {
 	Table table;
 	DBObjectCache<StringRecord> stringCache;
 
-	/**
+    # /**
 	 * Creates or attaches the string table.
 	 * @param handle the database handle
 	 * @param create whether to create or attach
@@ -60,7 +60,7 @@ public class StringsTable {
 		handle.createTable(STRINGS_TABLE, SCHEMA, INDEXED_COLUMNS);
 	}
 
-	/**
+    # /**
 	 * Lookup existing ID or create new ID (if not present) for String value.
 	 * @param value the string value
 	 * @return the interned string primary key
@@ -79,7 +79,7 @@ public class StringsTable {
 		return records[0].getLongValue();
 	}
 
-	/**
+    # /**
 	 * Lookup existing ID or return null for String value.
 	 * @param value the string value
 	 * @return the existing interned string primary key as LongField, or null if nonexistent
@@ -93,7 +93,7 @@ public class StringsTable {
 		return records[0].getLongValue();
 	}
 
-	/**
+    # /**
 	 * Return existing String or null for long key stringID.
 	 * @param stringID the interned string primary key
 	 * @return the string record, or null if no such key

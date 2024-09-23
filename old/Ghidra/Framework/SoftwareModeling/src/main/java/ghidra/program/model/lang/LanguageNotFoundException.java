@@ -16,7 +16,7 @@
  */
 package ghidra.program.model.lang;
 
-import java.io.IOException;
+
 
 /**
  * Exception class used when the named language cannot be found.

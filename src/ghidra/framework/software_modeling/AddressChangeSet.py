@@ -26,18 +26,18 @@ import ghidra.program.model.address.AddressSetView;
  */
 public interface AddressChangeSet extends ChangeSet {
 
-	/**
+    # /**
 	 * Returns the address set of all addresses where the listing has changed.
 	 */
 	AddressSetView getAddressSet();
 	
-	/**
+    # /**
 	 * Adds the address set to the set addresses where changes occurred.
 	 * @param addrSet the set of addresses to add as changes.
 	 */
 	void add(AddressSetView addrSet);
 
-	/**
+    # /**
 	 * Adds the range of addresses to the set addresses where changes occurred.
 	 * @param addr1 the first address in the range
 	 * @param addr2 the last address in the range. (inclusive)

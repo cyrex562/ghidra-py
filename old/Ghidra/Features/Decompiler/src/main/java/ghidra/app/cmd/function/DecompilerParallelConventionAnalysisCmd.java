@@ -15,7 +15,7 @@
  */
 package ghidra.app.cmd.function;
 
-import java.io.IOException;
+
 
 import ghidra.app.decompiler.*;
 import ghidra.app.util.NamespaceUtils;

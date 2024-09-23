@@ -34,7 +34,7 @@ public class AnnotationMsSymbol extends AbstractMsSymbol {
 	private int segment;
 	private List<String> annotationStringList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

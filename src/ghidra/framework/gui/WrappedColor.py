@@ -26,14 +26,14 @@ class WrappedColor implements WrappedOption {
 	private static final String COLOR = "color";
 	private Color color;
 
-	/**
+    # /**
 	 * Constructs a WrappedOption for a Color.
 	 */
 	WrappedColor(Color color) {
 		this.color = color;
 	}
 
-	/**
+    # /**
 	 * Default constructor.
 	 * @see java.lang.Object#Object()
 	 */
@@ -46,7 +46,7 @@ class WrappedColor implements WrappedOption {
 		return color;
 	}
 
-	/**
+    # /**
 	 * Reads the saved Color information and reconstructs the Color.
 	 */
 	@Override
@@ -55,7 +55,7 @@ class WrappedColor implements WrappedOption {
 		color = new Color(rgb);
 	}
 
-	/**
+    # /**
 	 * Saves the Color information so that it can be reconstructed.
 	 */
 	@Override

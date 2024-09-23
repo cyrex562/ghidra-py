@@ -31,7 +31,7 @@ public class VTFunctionAssociationCompareContext extends VTListingContext implem
 
 	private VTFunctionAssociationContext vtFunctionAssociationContext;
 
-	/**
+    # /**
 	 * Constructs a context for the function association provider's code comparison panel that
 	 * will also allow function association table actions.
 	 * @param provider the function association provider

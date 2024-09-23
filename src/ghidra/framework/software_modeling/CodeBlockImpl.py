@@ -39,7 +39,7 @@ public class CodeBlockImpl implements CodeBlock {
 	// in natural sorted order.
 	private AddressSetView set; // set of addresses that make up this block
 
-	/**
+    # /**
 	 * Construct a multi-entry CodeBlock associated with a CodeBlockModel. The
 	 * significance of the start Addresses is model dependent.
 	 * @param model the model instance which produced this block.
@@ -56,7 +56,7 @@ public class CodeBlockImpl implements CodeBlock {
 		this.set = body;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getFirstStartAddress()
 	 */
 	@Override
@@ -64,7 +64,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return starts[0];
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getStartAddresses()
 	 */
 	@Override
@@ -72,7 +72,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return starts;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getName()
 	 */
 	@Override
@@ -80,7 +80,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return model.getName(this);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getFlowType()
 	 */
 	@Override
@@ -88,7 +88,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return model.getFlowType(this);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getNumSources(ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -96,7 +96,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return model.getNumSources(this, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getSources(ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -104,7 +104,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return model.getSources(this, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getNumDestinations(ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -112,7 +112,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return model.getNumDestinations(this, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getDestinations(ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -121,7 +121,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return model.getDestinations(this, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlock#getModel()
 	 */
 	@Override
@@ -129,7 +129,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return model;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -161,7 +161,7 @@ public class CodeBlockImpl implements CodeBlock {
 	// implementation of AddressSetView
 	//
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#contains(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -169,7 +169,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.contains(a);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#contains(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -177,7 +177,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.contains(start, end);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#contains(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -185,7 +185,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.contains(rangeSet);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#intersects(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -193,7 +193,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.intersects(start, end);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#intersects(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -201,7 +201,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.intersects(addrSet);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#intersect(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -209,7 +209,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.intersect(view);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#intersectRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -217,7 +217,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.intersectRange(start, end);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#union(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -225,7 +225,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.union(addrSet);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#xor(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -233,7 +233,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.xor(addrSet);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#subtract(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -241,7 +241,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.subtract(addrSet);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#isEmpty()
 	 */
 	@Override
@@ -249,7 +249,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.isEmpty();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getMinAddress()
 	 */
 	@Override
@@ -257,7 +257,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.getMinAddress();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getMaxAddress()
 	 */
 	@Override
@@ -265,7 +265,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.getMaxAddress();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getNumAddressRanges()
 	 */
 	@Override
@@ -273,7 +273,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.getNumAddressRanges();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getAddressRanges()
 	 */
 	@Override
@@ -286,7 +286,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.getAddressRanges();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getNumAddresses()
 	 */
 	@Override
@@ -294,7 +294,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.getNumAddresses();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getAddresses(boolean)
 	 */
 	@Override
@@ -302,7 +302,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.getAddresses(forward);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getAddresses(ghidra.program.model.address.Address, boolean)
 	 */
 	@Override
@@ -310,7 +310,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.getAddresses(start, forward);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#hasSameAddresses(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -318,7 +318,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.hasSameAddresses(view);
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -351,7 +351,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getAddressRanges(boolean)
 	 */
 	@Override
@@ -359,7 +359,7 @@ public class CodeBlockImpl implements CodeBlock {
 		return set.getAddressRanges(startAtFront);
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.lang.reflect.InvocationTargetException;
@@ -24,20 +24,20 @@ import ghidra.program.model.listing.*;
 import ghidra.util.Msg;
 
 # /**
- * <CODE>ProgramLocation</CODE> provides information about a location in a program in the most
- * generic way.
- *
- * <p>
- * ProgramLocations refer to a specific location in a program and can be specified down to an
- * address, a field at that address, and within that field, a row, col, and character offset. The
- * field is not recorded directly, but by the subclass of the ProgramLocation. The "cursor position"
- * within a field is specified by three variables: row, col, and character offset. The row is
- * literally the row (line #) the cursor is on within the field, the column represents the display
- * item on that row (For example, in the bytes field the column will represent which "byte" the
- * cursor is on. Most fields only have one column item per row.) And finally, the character offset
- * is the character position within the display item specified by the row and column. Simple fields
- * like the address field and Mnemonic field will always have a row and column of 0.
- */
+# * <CODE>ProgramLocation</CODE> provides information about a location in a program in the most
+# * generic way.
+# *
+# * <p>
+# * ProgramLocations refer to a specific location in a program and can be specified down to an
+# * address, a field at that address, and within that field, a row, col, and character offset. The
+# * field is not recorded directly, but by the subclass of the ProgramLocation. The "cursor position"
+# * within a field is specified by three variables: row, col, and character offset. The row is
+# * literally the row (line #) the cursor is on within the field, the column represents the display
+# * item on that row (For example, in the bytes field the column will represent which "byte" the
+# * cursor is on. Most fields only have one column item per row.) And finally, the character offset
+# * is the character position within the display item specified by the row and column. Simple fields
+# * like the address field and Mnemonic field will always have a row and column of 0.
+# */
 public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 
 	protected Program program;
@@ -49,7 +49,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 	private int col;
 	private int charOffset;
 
-	/**
+    # /**
 	 * Construct a new ProgramLocation.
 	 *
 	 * @param program the program of the location
@@ -91,7 +91,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		this.componentPath = componentPath;
 	}
 
-	/**
+    # /**
 	 * Construct a new ProgramLocation for the given address. The address will be adjusted to the
 	 * beginning of the {@link CodeUnit code unit} containing that address (if it exists). The
 	 * original address can be retrieved using the {@link #getByteAddress()}" method.
@@ -114,7 +114,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 			charOffset);
 	}
 
-	/**
+    # /**
 	 * Construct a new ProgramLocation for the given address. The address will be adjusted to the
 	 * beginning of the {@link CodeUnit code unit} containing that address (if it exists). The
 	 * original address can be retrieved using the {@link #getByteAddress()} method.
@@ -128,7 +128,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		this(program, getCodeUnitAddress(program, addr), addr, null, null, 0, 0, 0);
 	}
 
-	/**
+    # /**
 	 * Construct a new ProgramLocation for the given address. The address will be adjusted to the
 	 * beginning of the {@link CodeUnit code unit} containing that address (if it exists). The
 	 * original address can be retrieved using the {@link #getByteAddress()} method.
@@ -146,7 +146,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		this(program, getCodeUnitAddress(program, addr), addr, null, null, row, col, charOffset);
 	}
 
-	/**
+    # /**
 	 * Construct a new ProgramLocation for the given address. The address will be adjusted to the
 	 * beginning of the {@link CodeUnit code unit} containing that address (if it exists). The
 	 * original address can be retrieved using the {@link #getByteAddress()} method.
@@ -161,13 +161,13 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		this(program, getCodeUnitAddress(program, addr), addr, null, refAddr, 0, 0, 0);
 	}
 
-	/**
+    # /**
 	 * Default constructor required for restoring a program location from XML.
 	 */
 	public ProgramLocation() {
 	}
 
-	/**
+    # /**
 	 * Returns the componentPath for the {@link CodeUnit code unit}. Null will be returned if the
 	 * object is an {@link Instruction} or a top-level {@link Data} object.
 	 * @return the path.
@@ -176,7 +176,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return componentPath;
 	}
 
-	/**
+    # /**
 	 * Returns the program associated with this location.
 	 * @return the program.
 	 */
@@ -184,7 +184,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return program;
 	}
 
-	/**
+    # /**
 	 * Returns the address associated with this location.
 	 *
 	 * <p>
@@ -197,7 +197,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * Returns the byte level address associated with this location.
 	 * @return the byte address.
 	 */
@@ -205,7 +205,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return byteAddr;
 	}
 
-	/**
+    # /**
 	 * Returns the "referred to" address if the location is over an address in some field.
 	 * @return the address.
 	 */
@@ -213,7 +213,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return refAddr;
 	}
 
-	/**
+    # /**
 	 * Save this program location to the given save state object.
 	 *
 	 * @param obj the save state object for saving the location
@@ -234,7 +234,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		obj.putInt("_CHAR_OFFSET", charOffset);
 	}
 
-	/**
+    # /**
 	 * Restore this program location using the given program and save state object.
 	 *
 	 * @param program1 program to restore from
@@ -257,7 +257,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 
 	}
 
-	/**
+    # /**
 	 * Get the program location for the given program and save state object.
 	 *
 	 * @param program the program for the location
@@ -441,7 +441,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 			exception.getMessage() + ".  Trace and remove this problem", exception);
 	}
 
-	/**
+    # /**
 	 * Returns true if this location represents a valid location in the given program.
 	 *
 	 * @param testProgram the program to test if this location is valid.
@@ -451,7 +451,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return addr == null || testProgram.getAddressFactory().isValidAddress(addr);
 	}
 
-	/**
+    # /**
 	 * Returns the row within the program location.
 	 *
 	 * @return the row within the program location.
@@ -460,7 +460,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return row;
 	}
 
-	/**
+    # /**
 	 * Returns the column index of the display piece represented by this location. For most
 	 * locations, there is only one display item per row, in which case this value will be 0.
 	 * @return the column.
@@ -469,7 +469,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return col;
 	}
 
-	/**
+    # /**
 	 * Returns the character offset in the display item at the (row,col).
 	 *
 	 * @return the character offset in the display item at the (row,col).
@@ -483,7 +483,7 @@ public class ProgramLocation implements Cloneable, Comparable<ProgramLocation> {
 		return super.clone();
 	}
 
-	/**
+    # /**
 	 * Create a new translated copy of the specified {@link ProgramLocation} using the specified
 	 * {@link Program program}
 	 * @param loc original program location

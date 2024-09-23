@@ -32,7 +32,7 @@ public class Path implements Comparable<Path> {
 	private boolean isEditable;
 	private boolean isReadOnly;
 
-	/**
+    # /**
 	 * Identifies an absolute directory path which has the following attributes:
 	 * <ul>
 	 * <li>isEnabled = true</li>
@@ -45,7 +45,7 @@ public class Path implements Comparable<Path> {
 		this(new ResourceFile(file), true, true, false);
 	}
 
-	/**
+    # /**
 	 * Identifies an absolute directory path which has the following attributes:
 	 * <ul>
 	 * <li>isEnabled = true</li>
@@ -58,7 +58,7 @@ public class Path implements Comparable<Path> {
 		this(file, true, true, false);
 	}
 
-	/**
+    # /**
 	 * Identifies an absolute directory path with the specified attributes.
 	 * @param file absolute directory path
 	 * @param isEnabled directory path will be searched if true
@@ -72,7 +72,7 @@ public class Path implements Comparable<Path> {
 		this.isReadOnly = isReadOnly;
 	}
 
-	/**
+    # /**
 	 * Identifies an absolute directory path which has the following attributes:
 	 * <ul>
 	 * <li>isEnabled = true</li>
@@ -85,7 +85,7 @@ public class Path implements Comparable<Path> {
 		this(path, true, true, false);
 	}
 
-	/**
+    # /**
 	 * Identifies an absolute directory path which has the following attributes:
 	 * <ul>
 	 * <li>isEditable = true</li>
@@ -98,7 +98,7 @@ public class Path implements Comparable<Path> {
 		this(path, enabled, true, false);
 	}
 
-	/**
+    # /**
 	 * Identifies an absolute directory path with the specified attributes.
 	 * @param path absolute directory path
 	 * @param isEnabled directory path will be searched if true
@@ -140,7 +140,7 @@ public class Path implements Comparable<Path> {
 		return file.hashCode();
 	}
 
-	/**
+    # /**
 	 * Returns true if this path is read-only, which
 	 * indicates the path cannot be written.
 	 * @return true if this path is read-only
@@ -149,7 +149,7 @@ public class Path implements Comparable<Path> {
 		return isReadOnly;
 	}
 
-	/**
+    # /**
 	 * Returns true if this path can be modified.
 	 * @return true if this path can be modified
 	 */
@@ -157,7 +157,7 @@ public class Path implements Comparable<Path> {
 		return isEditable;
 	}
 
-	/**
+    # /**
 	 * Returns true if this path is enabled.
 	 * Enablement indicates the path should be used.
 	 * @return true if this path is enabled
@@ -174,7 +174,7 @@ public class Path implements Comparable<Path> {
 		return file;
 	}
 
-	/**
+    # /**
 	 * Parse the path string <b>with path element placeholders</b>, such as 
 	 * {@link #GHIDRA_HOME}.
 	 * @param path the path
@@ -202,7 +202,7 @@ public class Path implements Comparable<Path> {
 		return resourceFile;
 	}
 
-	/**
+    # /**
 	 * Returns the path as a string <b>with path element placeholders</b>, such as 
 	 * {@link #GHIDRA_HOME}.
 	 * 
@@ -232,7 +232,7 @@ public class Path implements Comparable<Path> {
 		return absolutePath.replace('\\', '/');
 	}
 
-	/**
+    # /**
 	 * Returns the path as a string <b>with path element placeholders</b>, such as 
 	 * {@link #GHIDRA_HOME}.
 	 * 
@@ -242,7 +242,7 @@ public class Path implements Comparable<Path> {
 		return toPathString(file);
 	}
 
-	/** 
+    # /** 
 	 * Returns true if the given path is a file inside of the current Ghidra application.
 	 * @return true if the given path is a file inside of the current Ghidra application.
 	 */

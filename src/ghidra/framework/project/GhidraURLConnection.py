@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.*;
+
 import java.net.*;
 
 import ghidra.framework.client.*;
@@ -25,27 +25,27 @@ import ghidra.util.exception.AssertException;
 
 public class GhidraURLConnection extends URLConnection {
 
-	/**
+    # /**
 	 * Connection status codes
 	 */
 	public enum StatusCode {
 		OK(20, "OK"),
-		/**
+	    # /**
 		 * Ghidra Status-Code 401: Unauthorized.
 		 * This status code occurs when repository access is denied.
 		 */
 		UNAUTHORIZED(401, "Unauthorized"),
-		/**
+	    # /**
 		 * Ghidra Status-Code 404: Not Found.
 		 * This status code occurs when repository or project does not exist.
 		 */
 		NOT_FOUND(404, "Not Found"),
-		/**
+	    # /**
 		 * Ghidra Status-Code 423: Locked.
 		 * This status code occurs when project is locked (i.e., in use).
 		 */
 		LOCKED(423, "Locked Project"),
-		/**
+	    # /**
 		 * Ghidra Status-Code 503: Unavailable.
 		 * This status code includes a variety of connection errors
 		 * which are reported/logged by the Ghidra Server support code.
@@ -69,13 +69,13 @@ public class GhidraURLConnection extends URLConnection {
 		}
 	}
 
-	/**
+    # /**
 	 * Ghidra content type - domain folder/file wrapped within GhidraURLWrappedContent object.
 	 * @see GhidraURLWrappedContent
 	 */
 	public static final String GHIDRA_WRAPPED_CONTENT = "GhidraWrappedContent";
 
-	/**
+    # /**
 	 * Ghidra content type - repository server in the form of a RepositoryAdapter
 	 * @see RepositoryAdapter
 	 */
@@ -90,7 +90,7 @@ public class GhidraURLConnection extends URLConnection {
 
 	private boolean readOnly = true;
 
-	/**
+    # /**
 	 * Construct a Ghidra URL connection which uses the default handler without
 	 * any extension protocol.
 	 * @param ghidraUrl ghidra protocol URL (e.g., {@literal ghidra://server/repo})
@@ -100,7 +100,7 @@ public class GhidraURLConnection extends URLConnection {
 		this(ghidraUrl, new DefaultGhidraProtocolHandler());
 	}
 
-	/**
+    # /**
 	 * Construct a Ghidra URL connection which requires an Ghidra protocol extension
 	 * @param url extension URL without the ghidra protocol prefix (e.g., {@literal http://server/repo})
 	 * @param protocolHandler Ghidra protocol extension handler
@@ -116,7 +116,7 @@ public class GhidraURLConnection extends URLConnection {
 		protocolConnector = protocolHandler.getConnector(url);
 	}
 
-	/**
+    # /**
 	 * Connection was opened as read-only
 	 * @return true if read-only connection
 	 */
@@ -132,7 +132,7 @@ public class GhidraURLConnection extends URLConnection {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the read-only state for this connection prior to connecting or getting content.  
 	 * The default access is read-only.  Extreme care must be taken when setting the state to false 
 	 * for local projects without the use of a ProjectLock.
@@ -153,7 +153,7 @@ public class GhidraURLConnection extends URLConnection {
 		readOnly = state;
 	}
 
-	/**
+    # /**
 	 * Gets the repository name associated with this <code>GhidraURLConnection</code>.
 	 * 
 	 * @return the repository name or null if URL does not identify a specific repository
@@ -162,7 +162,7 @@ public class GhidraURLConnection extends URLConnection {
 		return protocolConnector.getRepositoryName();
 	}
 
-	/**
+    # /**
 	 * Gets the repository folder path associated with this connection.
 	 * If an ambiguous path has been specified, the folder path may change
 	 * after a connection is established (e.g., folder item name will be appended 
@@ -175,7 +175,7 @@ public class GhidraURLConnection extends URLConnection {
 		return protocolConnector.getFolderPath();
 	}
 
-	/**
+    # /**
 	 * Gets the repository folder item name associated with this connection.
 	 * If an ambiguous path has been specified, the folder item name may become null
 	 * after a connection is established (e.g., folder item name will be appended 
@@ -188,7 +188,7 @@ public class GhidraURLConnection extends URLConnection {
 		return protocolConnector.getFolderItemName();
 	}
 
-	/**
+    # /**
 	 * Gets the status code from a Ghidra URL connect attempt.
 	 * @throws IOException if an error occurred connecting to the server.
 	 * @return the Ghidra connection status code or null
@@ -220,7 +220,7 @@ public class GhidraURLConnection extends URLConnection {
 		return "Unknown";
 	}
 
-	/**
+    # /**
 	 * Get content associated with the URL
 	 * @return URL content generally in the form of GhidraURLWrappedContent, although other
 	 * special cases may result in different content (Example: a server-only URL could result in
@@ -237,7 +237,7 @@ public class GhidraURLConnection extends URLConnection {
 		return refObject;
 	}
 
-	/**
+    # /**
 	 * If URL connects and corresponds to a valid repository or local project, this method
 	 * may be used to obtain the associated ProjectData object.  The caller is
 	 * responsible for properly {@link ProjectData#close() closing} the returned project data 

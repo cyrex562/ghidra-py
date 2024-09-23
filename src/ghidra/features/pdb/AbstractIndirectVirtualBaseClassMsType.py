@@ -34,7 +34,7 @@ public abstract class AbstractIndirectVirtualBaseClassMsType extends AbstractMsT
 	protected BigInteger virtualBasePointerOffsetFromAddressPoint;
 	protected BigInteger virtualBaseOffsetFromVBTable;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -62,7 +62,7 @@ public abstract class AbstractIndirectVirtualBaseClassMsType extends AbstractMsT
 		builder.append("; >");
 	}
 
-	/**
+    # /**
 	 * Returns the offset of the base base pointer within the class.
 	 * @return the offset;
 	 */
@@ -70,7 +70,7 @@ public abstract class AbstractIndirectVirtualBaseClassMsType extends AbstractMsT
 		return virtualBasePointerOffsetFromAddressPoint;
 	}
 
-	/**
+    # /**
 	 * Returns the virtual base offset from VB table.
 	 * @return the offset;
 	 */
@@ -78,7 +78,7 @@ public abstract class AbstractIndirectVirtualBaseClassMsType extends AbstractMsT
 		return virtualBaseOffsetFromVBTable;
 	}
 
-	/**
+    # /**
 	 * Returns the attributes of the base class within the inheriting class.
 	 * @return the attributes;
 	 */
@@ -86,7 +86,7 @@ public abstract class AbstractIndirectVirtualBaseClassMsType extends AbstractMsT
 		return attribute;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the base class.
 	 * @return the record number of the base class.
 	 */
@@ -94,7 +94,7 @@ public abstract class AbstractIndirectVirtualBaseClassMsType extends AbstractMsT
 		return directVirtualBaseClassRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the virtual base pointer.
 	 * @return the record number of the virtual base pointer.
 	 */

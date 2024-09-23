@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.IOException;
+
 
 /**
  * An interface for a generic random-access byte provider, plus mutation methods.

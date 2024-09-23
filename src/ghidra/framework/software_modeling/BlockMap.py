@@ -104,7 +104,7 @@ public class BlockMap {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Assume blocks are in index order, find the block with index -ind-
 	 * @param ind is the block index to match
 	 * @return the matching PcodeBlock

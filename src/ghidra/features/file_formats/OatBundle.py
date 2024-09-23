@@ -42,36 +42,36 @@ public interface OatBundle {
 	public static final String ODEX = ".odex";
 	public static final String VDEX = ".vdex";
 
-	/**
+    # /**
 	 * Closes the bundle and release any resources.
 	 */
 	public void close();
 
-	/**
+    # /**
 	 * Returns the corresponding OAT header.
 	 * @return the corresponding OAT header.
 	 */
 	public OatHeader getOatHeader();
 
-	/**
+    # /**
 	 * Returns the corresponding ART header.
 	 * @return the corresponding ART header.
 	 */
 	public ArtHeader getArtHeader();
 
-	/**
+    # /**
 	 * Returns the corresponding OAT header.
 	 * @return the corresponding OAT header.
 	 */
 	public VdexHeader getVdexHeader();
 
-	/**
+    # /**
 	 * Returns the corresponding DEX headers.
 	 * @return the corresponding DEX headers.
 	 */
 	public List<DexHeader> getDexHeaders();
 
-	/**
+    # /**
 	 * Returns the DEX header with the specified checksum.
 	 * @return the DEX header with the specified checksum.
 	 */

@@ -24,7 +24,7 @@ import ghidra.util.exception.CancelledException;
  */
 interface NestableSymbolApplier {
 
-	/**
+    # /**
 	 * Applies logic of this class to a {@link DeferrableFunctionSymbolApplier} instead of to
 	 * the program.
 	 * @param applyToApplier the applier to which the logic of this class is applied.

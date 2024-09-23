@@ -21,7 +21,7 @@ package generic.concurrent;
  */
 public interface QProgressListener<I> {
 
-	/**
+    # /**
 	 * Notification that progress has changed during the processing of an item.
 	 * @param id the id of the item being processed.  Since multiple items can be processed concurrently,
 	 * the id can be used to "demultiplex" the progress and messages being generated.
@@ -30,14 +30,14 @@ public interface QProgressListener<I> {
 	 */
 	void progressChanged(long id, I item, long currentProgress);
 
-	/**
+    # /**
 	 * Notification that a new task has been generated to process an item.
 	 * @param id the id of the item being processed.
 	 * @param item the item that was being processed when the worker changed the max progress.
 	 */
 	void taskStarted(long id, I item);
 
-	/**
+    # /**
 	 * Notification that a new task has completed processing for an item.
 	 * @param id the id of the item that has completed processing.
 	 * @param item the item that was being processed when the worker changed the max progress.
@@ -46,7 +46,7 @@ public interface QProgressListener<I> {
 	 */
 	void taskEnded(long id, I item, long totalCount, long completedCount);
 
-	/**
+    # /**
 	 * Notification that the progress mode has changed from/to indeterminate mode
 	 * @param id the id of the item that has completed processing.
 	 * @param item the item that was being processed when the worker changed the max progress.
@@ -54,7 +54,7 @@ public interface QProgressListener<I> {
 	 */
 	void progressModeChanged(long id, I item, boolean indeterminate);
 
-	/**
+    # /**
 	 * 
 	 * @param id the id of the item that has completed processing.
 	 * @param item the item that was being processed when the worker changed the max progress.
@@ -62,7 +62,7 @@ public interface QProgressListener<I> {
 	 */
 	void progressMessageChanged(long id, I item, String message);
 
-	/**
+    # /**
 	 * Notification the the max progress value has changed.
 	 * @param id the id of the item that has completed processing.
 	 * @param item the item that was being processed when the worker changed the max progress.

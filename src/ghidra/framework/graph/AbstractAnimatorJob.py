@@ -25,7 +25,7 @@ import ghidra.util.task.BusyListener;
 
 public abstract class AbstractAnimatorJob implements GraphJob {
 
-	/**
+    # /**
 	 * A somewhat arbitrary vertex count past which not to animate actions that are intensive.
 	 */
 	public static final int TOO_BIG_TO_ANIMATE = 125;
@@ -41,7 +41,7 @@ public abstract class AbstractAnimatorJob implements GraphJob {
 
 	protected abstract Animator createAnimator();
 
-	/**
+    # /**
 	 * A callback given when this animator has run to completion.  This will be called whether
 	 * the animator is stopped prematurely or ends naturally.
 	 */

@@ -29,7 +29,7 @@ public class ReferenceSymbolApplier extends MsSymbolApplier {
 
 	private AbstractReferenceMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier
@@ -54,7 +54,7 @@ public class ReferenceSymbolApplier extends MsSymbolApplier {
 //		applicator.procSymNew(refIter);
 //	}
 
-	/**
+    # /**
 	 * Checks check symbol from primary iterator for correct type and then retrieves the
 	 * properly initialized reference iterator
 	 * @return the initialized reference iterator

@@ -51,7 +51,7 @@ public abstract class ReducingLcs<I, T> extends Lcs<T> {
 	private int startn; // number of beginning same entries 
 	private int endn;   // number of trailing same entries
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param ix the input sequence <code>x</code>
@@ -78,7 +78,7 @@ public abstract class ReducingLcs<I, T> extends Lcs<T> {
 		return end;
 	}
 
-	/**
+    # /**
 	 * Create a subsequence from the given input sequence.  
 	 *  
 	 * @param i the input sequence; 0-based (x or y)
@@ -88,7 +88,7 @@ public abstract class ReducingLcs<I, T> extends Lcs<T> {
 	 */
 	protected abstract I reduce(I i, int start, int end);
 
-	/**
+    # /**
 	 * Return the length of the given sequence
 	 * 
 	 * @param i the input sequence (x or y)
@@ -96,7 +96,7 @@ public abstract class ReducingLcs<I, T> extends Lcs<T> {
 	 */
 	protected abstract int lengthOf(I i);
 
-	/**
+    # /**
 	 * Return the value at the given 0-based offset
 	 *  
 	 * @param i the input sequence (x or y)

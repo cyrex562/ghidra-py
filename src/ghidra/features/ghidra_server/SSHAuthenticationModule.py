@@ -15,7 +15,7 @@
  */
 package ghidra.server.security;
 
-import java.io.*;
+
 import java.util.*;
 
 import javax.security.auth.Subject;
@@ -98,7 +98,7 @@ public class SSHAuthenticationModule {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Read UInt32 from SSH-encoded buffer.
 	 * (modeled after org.bouncycastle.crypto.util.SSHBuffer.readU32())
 	 * @param in data input stream
@@ -118,7 +118,7 @@ public class SSHAuthenticationModule {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Read block of data from SSH-encoded buffer.
 	 * (modeled after org.bouncycastle.crypto.util.SSHBuffer.readBlock())
 	 * @param in data input stream
@@ -134,7 +134,7 @@ public class SSHAuthenticationModule {
 		return in.readNBytes(len);
 	}
 
-	/**
+    # /**
 	 * Complete the authentication process
 	 * @param userMgr Ghidra server user manager
 	 * @param subject unauthenticated user ID (must be used if name callback not provided/allowed)

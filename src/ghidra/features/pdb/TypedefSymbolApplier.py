@@ -34,7 +34,7 @@ public class TypedefSymbolApplier extends MsSymbolApplier
 	private DataType resolvedDataType = null;
 	private AbstractUserDefinedTypeMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier
@@ -61,7 +61,7 @@ public class TypedefSymbolApplier extends MsSymbolApplier
 //		}
 //	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */
@@ -69,7 +69,7 @@ public class TypedefSymbolApplier extends MsSymbolApplier
 		return symbol.getName();
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */

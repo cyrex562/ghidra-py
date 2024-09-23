@@ -16,7 +16,7 @@
 package utilities.util;
 
 import java.awt.Desktop;
-import java.io.*;
+
 import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -47,7 +47,7 @@ public final class FileUtilities {
 		// utils class; can't create
 	}
 
-	/**
+    # /**
 	 * Returns true if the give file is not null, exists, is a directory and contains files.
 	 *
 	 * @param directory the directory to test
@@ -70,7 +70,7 @@ public final class FileUtilities {
 		return !directoryIsEmpty(directory);
 	}
 
-	/**
+    # /**
 	 * Returns true if the given file is not null, exits, is a directory and has no files.
 	 *
 	 * @param directory the directory to test for emptiness
@@ -94,7 +94,7 @@ public final class FileUtilities {
 		return !hasFiles;
 	}
 
-	/**
+    # /**
 	 * Return an array of bytes read from the given file.
 	 * @param sourceFile the source file
 	 * @return the bytes
@@ -104,7 +104,7 @@ public final class FileUtilities {
 		return getBytesFromFile(new ResourceFile(sourceFile));
 	}
 
-	/**
+    # /**
 	 * Return an array of bytes read from the sourceFile, starting at the
 	 * given offset
 	 * @param sourceFile file to read from
@@ -119,7 +119,7 @@ public final class FileUtilities {
 		return getBytesFromFile(new ResourceFile(sourceFile), offset, length);
 	}
 
-	/**
+    # /**
 	 * Return an array of bytes read from the given file.
 	 * @param sourceFile the source file
 	 * @return the bytes
@@ -130,7 +130,7 @@ public final class FileUtilities {
 		return getBytesFromFile(sourceFile, 0, fileLen);
 	}
 
-	/**
+    # /**
 	 * Writes an array of bytes to a file.
 	 * @param file the file to write to
 	 * @param bytes the array of bytes to write
@@ -144,7 +144,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Return an array of bytes read from the sourceFile, starting at the
 	 * given offset
 	 * @param sourceFile file to read from
@@ -179,7 +179,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Reads the bytes from the stream into a byte array
 	 * @param is the input stream to read
 	 * @return a byte[] containing the bytes from the stream.
@@ -195,7 +195,7 @@ public final class FileUtilities {
 		return baos.toByteArray();
 	}
 
-	/**
+    # /**
 	 * Reads the number of bytes indicated by the expectedLength from the input stream and returns
 	 * them in a byte array.
 	 * @param inputStream the input stream
@@ -224,7 +224,7 @@ public final class FileUtilities {
 		return buf;
 	}
 
-	/**
+    # /**
 	 * Copy the fromFile contents to the toFile.  The toFile will be overwritten or created.
 	 *
 	 * @param fromFile source file
@@ -247,7 +247,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy the fromFile contents to the toFile.
 	 *
 	 * @param fromFile source file
@@ -269,7 +269,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy the fromFile contents to the toFile.  The toFile will be overwritten or created.
 	 *
 	 * @param fromFile source file
@@ -291,7 +291,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Ensures the specified leaf directory exists.
 	 * <p>
 	 * Does not create any missing parent directories.  See {@link #mkdirs(File)} instead.
@@ -311,7 +311,7 @@ public final class FileUtilities {
 		return dir.isDirectory();
 	}
 
-	/**
+    # /**
 	 * Make all directories in the full directory path specified. This is a
 	 * replacement for the File.mkdirs() which fails due to a problem with the
 	 * File.exists() method with remote file systems on Windows. After renaming
@@ -338,7 +338,7 @@ public final class FileUtilities {
 		return (parent != null) && (mkdirs(parent) && createDir(canonFile));
 	}
 
-	/**
+    # /**
 	 * Ensures the specified leaf directory exists.
 	 * <p>
 	 * Throws an {@link IOException} if there is any problem while creating the directory.
@@ -360,7 +360,7 @@ public final class FileUtilities {
 		return dir;
 	}
 
-	/**
+    # /**
 	 * Ensures the specified full directory path exists, creating any missing
 	 * directories as needed.
 	 * <p>
@@ -386,7 +386,7 @@ public final class FileUtilities {
 		return dir;
 	}
 
-	/**
+    # /**
 	 * Delete a file or directory and all of its contents
 	 * 
 	 * @param dir the directory to delete
@@ -397,7 +397,7 @@ public final class FileUtilities {
 		return deleteDir(dir.toFile());
 	}
 
-	/**
+    # /**
 	 * Delete a file or directory and all of its contents
 	 *
 	 * @param dir the dir to delete
@@ -414,7 +414,7 @@ public final class FileUtilities {
 		return true;// can't get here
 	}
 
-	/**
+    # /**
 	 * Delete a directory and all of its contents
 	 *
 	 * @param dir the dir to delete
@@ -453,7 +453,7 @@ public final class FileUtilities {
 		return dir.delete();
 	}
 
-	/**
+    # /**
 	 * A version of {@link #deleteDir(File,TaskMonitor)} that does not alter
 	 * the progress value of the given monitor, only the status text.  This allows this recursive
 	 * method to send status updates while the caller of this method controls the progress.
@@ -486,7 +486,7 @@ public final class FileUtilities {
 		return dir.delete();
 	}
 
-	/**
+    # /**
 	 * This is the same as calling {@link #copyDir(File, File, FileFilter, TaskMonitor)} with
 	 * a {@link FileFilter} that accepts all files.
 	 * @param originalDir the source dir
@@ -501,7 +501,7 @@ public final class FileUtilities {
 		return copyDir(originalDir, copyDir, ACCEPT_ALL_FILE_FILTER, monitor);
 	}
 
-	/**
+    # /**
 	 * Copies the contents of <code>originalDir</code> to <code>copyDir</code>.  If the <code>originalDir</code>
 	 * does not exist, then this method will do nothing.  If <code>copyDir</code> does not exist, then
 	 * it will be created as necessary.
@@ -553,7 +553,7 @@ public final class FileUtilities {
 		return copiedFilesCount;
 	}
 
-	/**
+    # /**
 	 * A version of {@link #copyDir(File, File, FileFilter, TaskMonitor)} that does not alter
 	 * the progress value of the given monitor, only the status text.  This allows this recursive
 	 * method to send status updates while the caller of this method controls the progress.
@@ -599,7 +599,7 @@ public final class FileUtilities {
 		Msg.debug(FileUtilities.class, text);
 	}
 
-	/**
+    # /**
 	 * Copy the in stream to the toFile.  The toFile will be overwritten or created.
 	 * @param in source input stream
 	 * @param toFile destination file
@@ -618,7 +618,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy the contents of the specified fromFile to the out stream.
 	 * @param fromFile file data source
 	 * @param out destination stream
@@ -637,7 +637,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy the <code>in</code> stream to the <code>out</code> stream.  The output stream will
 	 * <b>not</b> be closed when the copy operation is finished.
 	 *
@@ -667,7 +667,7 @@ public final class FileUtilities {
 		return totalBytesCopied;
 	}
 
-	/**
+    # /**
 	 * Returns all of the lines in the file without any newline characters
 	 * @param file The file to read in
 	 * @return a list of file lines
@@ -677,7 +677,7 @@ public final class FileUtilities {
 		return getLines(new ResourceFile(file));
 	}
 
-	/**
+    # /**
 	 * Returns all of the lines in the file without any newline characters.
 	 * <p>
 	 * The file is treated as UTF-8 encoded.
@@ -695,7 +695,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns all of the lines in the file without any newline characters.  This method
 	 * is the same as {@link #getLines(ResourceFile)}, except that it handles the exception
 	 * that is thrown by that method.
@@ -713,7 +713,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns all of the lines in the BufferedReader without any newline characters.
 	 * <p>
 	 * The file is treated as UTF-8 encoded.
@@ -729,7 +729,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns all of the lines in the given {@link InputStream} without any newline characters.
 	 * <p>
 	 *
@@ -741,7 +741,7 @@ public final class FileUtilities {
 		return getLines(new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8)));
 	}
 
-	/**
+    # /**
 	 * Returns all of the text in the given {@link InputStream}.
 	 * <p>
 	 * EOL characters are normalized to simple '\n's.
@@ -760,7 +760,7 @@ public final class FileUtilities {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Returns all of the text in the given {@link File}.
 	 * <p>
 	 * See {@link #getText(InputStream)}
@@ -778,7 +778,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns all of the lines in the {@link BufferedReader} without any newline characters.
 	 *
 	 * @param in BufferedReader to read lines from. The caller is responsible for closing the reader
@@ -794,7 +794,7 @@ public final class FileUtilities {
 		return fileLines;
 	}
 
-	/**
+    # /**
 	 * Writes the given list of Strings to the file, separating each by a newline character.
 	 * <p>
 	 * <b>
@@ -813,7 +813,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes the given String to the specified {@link File}.
 	 *
 	 * @param file {@link File} to write to.
@@ -826,7 +826,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the given file:
 	 * <ol>
 	 *  <li> is <code>null</code>, or  </li>
@@ -844,7 +844,7 @@ public final class FileUtilities {
 		return f.isFile() && f.length() == 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given <code>potentialParentFile</code> is the parent path of
 	 * the given <code>otherFile</code>, or if the two file paths point to the same path.
 	 *
@@ -871,7 +871,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if any of the given <code>potentialParents</code> is the parent path of or has
 	 * the same path as the given <code>otherFile</code>.
 	 *
@@ -885,7 +885,7 @@ public final class FileUtilities {
 		return potentialParents.stream().anyMatch(parent -> parent.containsPath(otherFile));
 	}
 
-	/**
+    # /**
 	 * Returns the portion of the second file that trails the full path of the first file.  If
 	 * the paths are the same or unrelated, then null is returned.
 	 *
@@ -917,7 +917,7 @@ public final class FileUtilities {
 		return childPath;
 	}
 
-	/**
+    # /**
 	 * Return the relative path string of one resource file in another. If no path can be 
 	 * constructed or the files are the same, then null is returned.
 	 * 
@@ -981,7 +981,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if a file exists on disk and has a case that matches the filesystem.
 	 * This method is handy for
 	 * comparing file paths provided externally (like from a user or a config file) to
@@ -994,7 +994,7 @@ public final class FileUtilities {
 		return existsAndIsCaseDependent(new ResourceFile(file));
 	}
 
-	/**
+    # /**
 	 * Returns true if a file exists on disk and has a case that matches the filesystem.
 	 * This method is handy for
 	 * comparing file paths provided externally (like from a user or a config file) to
@@ -1053,7 +1053,7 @@ public final class FileUtilities {
 		return FileResolutionResult.ok();
 	}
 
-	/**
+    # /**
 	 * Ensures that the specified {@link File} param points to a file on the filesystem with a
 	 * filename that has the exact same character case as the filename portion of the
 	 * specified File.
@@ -1097,7 +1097,7 @@ public final class FileUtilities {
 			!canonicalName.equals(caseSensitiveName) ? null : caseSensitiveFile;
 	}
 
-	/**
+    # /**
 	 * Ensures the specified {@link File} points to a valid existing file,
 	 * regardless of case match of the file's name.
 	 * <p>
@@ -1154,7 +1154,7 @@ public final class FileUtilities {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the given file as a human readable String.
 	 * <p>
 	 * See {@link #formatLength(long)}
@@ -1167,7 +1167,7 @@ public final class FileUtilities {
 		return formatLength(file.length());
 	}
 
-	/**
+    # /**
 	 * Returns a human readable string representing the length of something in bytes.
 	 * <p>
 	 * Larger sizes are represented in rounded off kilo and mega bytes.
@@ -1189,7 +1189,7 @@ public final class FileUtilities {
 		return formatter.format((length / 1000000f)) + "MB";
 	}
 
-	/**
+    # /**
 	 * Sets the given file (or directory) to readable and writable by only the owner.
 	 *
 	 * @param f The file (or directory) to set the permissions of.
@@ -1205,7 +1205,7 @@ public final class FileUtilities {
 		f.setWritable(true, true);
 	}
 
-	/**
+    # /**
 	 * Uses the {@link Desktop} API to open the specified file using the user's operating
 	 * system's native widgets (ie. Windows File Explorer, Mac Finder, etc).
 	 * <p>
@@ -1230,7 +1230,7 @@ public final class FileUtilities {
 		Desktop.getDesktop().open(file);
 	}
 
-	/**
+    # /**
 	 * A convenience method to list the contents of the given directory path and pass each to the
 	 * given consumer.  If the given path does not represent a directory, nothing will happen.
 	 * 
@@ -1251,7 +1251,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * A convenience method to list the contents of the given directory path and pass each to the
 	 * given consumer.  If the given path does not represent a directory, nothing will happen.
 	 * 
@@ -1272,7 +1272,7 @@ public final class FileUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * A convenience method to list the contents of the given directory path and pass each to the
 	 * given consumer.  If the given path does not represent a directory, nothing will happen.
 	 * 

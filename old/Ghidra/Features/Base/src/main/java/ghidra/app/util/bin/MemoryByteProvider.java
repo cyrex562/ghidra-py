@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.*;
+
 
 import ghidra.program.model.address.*;
 import ghidra.program.model.listing.Program;

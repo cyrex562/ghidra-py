@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cpio;
 
-import java.io.IOException;
+
 
 import org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream;
 

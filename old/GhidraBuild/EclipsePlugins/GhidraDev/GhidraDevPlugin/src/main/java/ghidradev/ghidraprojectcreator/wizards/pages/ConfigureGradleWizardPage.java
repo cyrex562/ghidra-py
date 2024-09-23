@@ -16,7 +16,7 @@
 package ghidradev.ghidraprojectcreator.wizards.pages;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import org.eclipse.buildship.core.*;
 import org.eclipse.core.resources.IFolder;

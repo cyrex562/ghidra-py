@@ -19,18 +19,18 @@ package ghidra.feature.fid.db;
  * A class to represent the types of relations stored in the FID database. 
  */
 public enum RelationType {
-	/**
+    # /**
 	 * Direct call means that the inferior (callee) function exists in
 	 * the same program as the superior (caller).
 	 */
 	DIRECT_CALL,
-	/**
+    # /**
 	 * An intralibrary call is between two functions that are in different programs but in the same library.
 	 * The relation was discovered by linking on the name
 	 */
 	INTRA_LIBRARY_CALL,
 	
-	/**
+    # /**
 	 * An interlibrary call is between two functions in entirely different libraries.
 	 */
 	INTER_LIBRARY_CALL

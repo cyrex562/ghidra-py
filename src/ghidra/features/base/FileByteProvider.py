@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.*;
+
 import java.nio.file.AccessMode;
 
 import org.apache.commons.collections4.map.ReferenceMap;

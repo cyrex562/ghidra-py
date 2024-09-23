@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.userdump;
 
-import java.io.IOException;
+
 import java.util.Collection;
 import java.util.List;
 

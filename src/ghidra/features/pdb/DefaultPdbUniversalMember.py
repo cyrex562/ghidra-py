@@ -29,7 +29,7 @@ public class DefaultPdbUniversalMember extends PdbMember {
 	private ClassFieldAttributes attributes;
 	private boolean isZeroLengthArray;
 
-	/**
+    # /**
 	 * Default PDB member construction
 	 * @param name member field name.  For bitfields this also conveys the bit-size
 	 * and optionally the bit-offset.
@@ -43,7 +43,7 @@ public class DefaultPdbUniversalMember extends PdbMember {
 		this.isZeroLengthArray = false;
 	}
 
-	/**
+    # /**
 	 * Default PDB member construction
 	 * @param name member field name.  For bitfields this also conveys the bit-size
 	 * and optionally the bit-offset.

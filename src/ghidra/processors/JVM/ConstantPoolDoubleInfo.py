@@ -21,7 +21,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 # /**
  * NOTE: THE FOLLOWING TEXT EXTRACTED FROM JVMS7.PDF
@@ -53,7 +53,7 @@ public class ConstantPoolDoubleInfo extends AbstractConstantPoolInfoJava {
 		lowBytes = reader.readNextInt();
 	}
 
-	/**
+    # /**
 	 * The value represented by the CONSTANT_Double_info structure is determined
 	 * as follows. The high_bytes and low_bytes items are converted into the long
 	 * constant bits, which is equal to

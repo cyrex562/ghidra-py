@@ -20,7 +20,7 @@ package ghidra.program.model.data;
  */
 public abstract class AbstractUnsignedIntegerDataType extends AbstractIntegerDataType {
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param name a unsigned data-type name (also used as the mnemonic)

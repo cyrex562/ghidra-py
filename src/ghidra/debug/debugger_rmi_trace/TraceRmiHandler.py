@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.service.tracermi;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.net.Socket;
 import java.net.SocketAddress;

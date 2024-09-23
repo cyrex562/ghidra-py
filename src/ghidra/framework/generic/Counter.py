@@ -22,14 +22,14 @@ import org.apache.commons.lang3.mutable.MutableInt;
  * primitives in a collection.
  */
 public class Counter extends MutableInt {
-	/**
+    # /**
 	 * Construct a new counter with an initial value of 0.
 	 */
 	public Counter() {
 		super(0);
 	}
 
-	/**
+    # /**
 	 * Construct a new Counter with the given initial value.
 	 * @param value the initial value
 	 */
@@ -37,7 +37,7 @@ public class Counter extends MutableInt {
 		super(value);
 	}
 
-	/**
+    # /**
 	 * Returns the value of this counter.
 	 * @return the value of this counter
 	 */

@@ -22,7 +22,7 @@ import ghidra.feature.fid.plugin.TextAreaDialog;
 import ghidra.feature.fid.service.FidPopulateResult.Disposition;
 
 public class DefaultFidPopulateResultReporter implements FidPopulateResultReporter {
-	/**
+    # /**
 	 * Method to report the results of the ingest task.  Old and crufty, probably needs
 	 * to be corrected and updated.
 	 * @param result the FID population result

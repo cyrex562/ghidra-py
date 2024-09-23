@@ -22,31 +22,31 @@ import java.lang.reflect.Field;
 
 public final class MethodHandleBytecodeBehaviors {
 
-	/** getfield C.f:T */
+    # /** getfield C.f:T */
 	public final static int REF_getField = 1;
 
-	/** getstatic C.f:T */
+    # /** getstatic C.f:T */
 	public final static int REF_getStatic = 2;
 
-	/** putfield C.f:T */
+    # /** putfield C.f:T */
 	public final static int REF_putField = 3;
 
-	/** putstatic C.f:T */
+    # /** putstatic C.f:T */
 	public final static int REF_putStatic = 4;
 
-	/** invokevirtual C.m:(A*)T */
+    # /** invokevirtual C.m:(A*)T */
 	public final static int REF_invokeVirtual = 5;
 
-	/** invokestatic C.m:(A*)T */
+    # /** invokestatic C.m:(A*)T */
 	public final static int REF_invokeStatic = 6;
 
-	/** invokespecial C.m:(A*)T */
+    # /** invokespecial C.m:(A*)T */
 	public final static int REF_invokeSpecial = 7;
 
-	/** new C; dup; invokespecial C.<init>:(A*)void */
+    # /** new C; dup; invokespecial C.<init>:(A*)void */
 	public final static int REF_newInvokeSpecial = 8;
 
-	/** invokeinterface C.m:(A*)T */
+    # /** invokeinterface C.m:(A*)T */
 	public final static int REF_invokeInterface = 9;
 
 	public final static String getName( int kind ) {

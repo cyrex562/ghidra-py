@@ -22,7 +22,7 @@ import ghidra.util.xml.XmlUtilities;
 import ghidra.xml.NonThreadedXmlPullParserImpl;
 import ghidra.xml.XmlElement;
 
-import java.io.*;
+
 import java.util.HashMap;
 import java.util.Map.Entry;
 

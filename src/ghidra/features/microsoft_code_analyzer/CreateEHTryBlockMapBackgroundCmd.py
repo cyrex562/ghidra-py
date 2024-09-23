@@ -32,7 +32,7 @@ import ghidra.util.exception.CancelledException;
 public class CreateEHTryBlockMapBackgroundCmd
 		extends AbstractCreateDataBackgroundCmd<EHTryBlockModel> {
 
-	/**
+    # /**
 	 * Constructs a command for applying a TryBlockMapEntry exception handling data type at an 
 	 * address.
 	 * @param address the address where the data should be created using the data type.
@@ -42,7 +42,7 @@ public class CreateEHTryBlockMapBackgroundCmd
 		super(EHTryBlockModel.DATA_TYPE_NAME, address, count);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a TryBlockMapEntry exception handling data type at an 
 	 * address.
 	 * @param address the address where the data should be created using the data type.
@@ -58,7 +58,7 @@ public class CreateEHTryBlockMapBackgroundCmd
 		super(EHTryBlockModel.DATA_TYPE_NAME, address, count, validationOptions, applyOptions);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a TryBlockMapEntry exception handling data type at the 
 	 * address indicated by the model.
 	 * @param tryBlockModel the model for the data type

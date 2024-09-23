@@ -3,7 +3,7 @@
  */
 package mobiledevices.dmg.reader;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import org.catacombae.io.ReadableRandomAccessStream;

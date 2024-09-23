@@ -25,67 +25,67 @@ import java.util.List;
  */
 public enum Platform {
 
-	/**
+    # /**
 	 * Identifies a Windows x86 32-bit OS.
 	 */
 	WIN_X86_32(OperatingSystem.WINDOWS, Architecture.X86, "win_x86_32", ".dll", ".exe"),
 
-	/**
+    # /**
 	 * Identifies a Windows x86 64-bit OS.
 	 */
 	WIN_X86_64(OperatingSystem.WINDOWS, Architecture.X86_64, "win_x86_64", ".dll", ".exe"),
 	
-	/**
+    # /**
 	 * Identifies a Windows ARM 64-bit OS.
 	 */
 	WIN_ARM_64(OperatingSystem.WINDOWS, Architecture.ARM_64, "win_arm_64", ".dll", ".exe"),
 
-	/**
+    # /**
 	 * Identifies a Linux x86 32-bit OS.
 	 */
 	LINUX_X86_32(OperatingSystem.LINUX, Architecture.X86, "linux_x86_32", ".so", ""),
 
-	/**
+    # /**
 	 * Identifies a Linux x86 64-bit OS.
 	 */
 	LINUX_X86_64(OperatingSystem.LINUX, Architecture.X86_64, "linux_x86_64", ".so", ""),
 
-	/**
+    # /**
 	 * Identifies a Linux ARM 64-bit OS.
 	 */
 	LINUX_ARM_64(OperatingSystem.LINUX, Architecture.ARM_64, "linux_arm_64", ".so", ""),
 
-	/**
+    # /**
 	 * Identifies a macOS x86 32-bit OS.
 	 */
 	MAC_X86_32(OperatingSystem.MAC_OS_X, Architecture.X86, "mac_x86_32", ".dylib", ""),
 
-	/**
+    # /**
 	 * Identifies a macOS x86 64-bit OS.
 	 */
 	MAC_X86_64(OperatingSystem.MAC_OS_X, Architecture.X86_64, "mac_x86_64", ".dylib", ""),
 
-	/**
+    # /**
 	 * Identifies a macOS ARM 64-bit OS.
 	 */
 	MAC_ARM_64(OperatingSystem.MAC_OS_X, Architecture.ARM_64, "mac_arm_64", ".dylib", ""),
 
-	/**
+    # /**
 	 * Identifies a FreeBSD x86 64-bit OS.
 	 */
 	FREEBSD_X86_64(OperatingSystem.FREE_BSD, Architecture.X86_64, "freebsd_x86_64", ".so", ""),
 
-	/**
+    # /**
 	 * Identifies a FreeBSD ARM 64-bit OS.
 	 */
 	FREEBSD_ARM_64(OperatingSystem.FREE_BSD, Architecture.ARM_64, "freebsd_arm_64", ".so", ""),
 
-	/**
+    # /**
 	 * Identifies an unsupported OS.
 	 */
 	UNSUPPORTED(OperatingSystem.UNSUPPORTED, Architecture.UNKNOWN, null, null, ""),
 
-	/**
+    # /**
 	 * Identifies a Windows 64-bit OS.
 	 * 
 	 * @deprecated Use {@link #WIN_X86_64} instead.
@@ -93,7 +93,7 @@ public enum Platform {
 	@Deprecated(since = "10.1", forRemoval = true)
 	WIN_64(OperatingSystem.WINDOWS, Architecture.X86_64, "win_x86_64", ".dll", ".exe"),
 	
-	/**
+    # /**
 	 * Identifies a Windows OS, the architecture for which we do not know or have not encountered.
 	 * We'll treat it as {@link #WIN_X86_64} and hope for the best.
 	 * 
@@ -102,7 +102,7 @@ public enum Platform {
 	@Deprecated(since = "10.1", forRemoval = true)
 	WIN_UNKOWN(OperatingSystem.WINDOWS, Architecture.UNKNOWN, "win_x86_64", ".dll", ".exe"),
 
-	/**
+    # /**
 	 * Identifies a Linux X86 32-bit OS.
 	 * 
 	 * @deprecated Use {@link #LINUX_X86_32} instead.
@@ -110,7 +110,7 @@ public enum Platform {
 	@Deprecated(since = "10.1", forRemoval = true)
 	LINUX(OperatingSystem.LINUX, Architecture.X86, "linux_x86_32", ".so", ""),
 
-	/**
+    # /**
 	 * Identifies a Linux X86 64-bit OS.
 	 * 
 	 * @deprecated Use {@link #LINUX_X86_64} instead.
@@ -118,7 +118,7 @@ public enum Platform {
 	@Deprecated(since = "10.1", forRemoval = true)
 	LINUX_64(OperatingSystem.LINUX, Architecture.X86_64, "linux_x86_64", ".so", ""),
 	
-	/**
+    # /**
 	 * Identifies a Linux OS, the architecture for which we do not know or have not encountered.
 	 * We'll treat it as {@link #LINUX_X86_64} and hope for the best.
 	 * 
@@ -127,7 +127,7 @@ public enum Platform {
 	@Deprecated(since = "10.1", forRemoval = true)
 	LINUX_UKNOWN(OperatingSystem.LINUX, Architecture.UNKNOWN, "linux_x86_64", ".so", ""),
 
-	/**
+    # /**
 	 * Identifies a macOS X86 32-bit OS.
 	 * 
 	 * @deprecated Use {@link #MAC_OSX_32} instead.
@@ -135,7 +135,7 @@ public enum Platform {
 	@Deprecated(since = "10.1", forRemoval = true)
 	MAC_OSX_32(OperatingSystem.MAC_OS_X, Architecture.X86, "mac_x86_32", ".dylib", ""),
 
-	/**
+    # /**
 	 * Identifies a macOS X86 64-bit OS.
 	 * 
 	 * @deprecated Use {@link #MAC_X86_64} instead.
@@ -143,7 +143,7 @@ public enum Platform {
 	@Deprecated(since = "10.1", forRemoval = true)
 	MAC_OSX_64(OperatingSystem.MAC_OS_X, Architecture.X86_64, "mac_x86_64", ".dylib", ""),
 	
-	/**
+    # /**
 	 * Identifies a macOS OS, the architecture for which we do not know or have not encountered.
 	 * We'll treat it as {@link #MAC_X86_64} and hope for the best.
 	 * 
@@ -152,7 +152,7 @@ public enum Platform {
 	@Deprecated(since = "10.1", forRemoval = true)
 	MAC_UNKNOWN(OperatingSystem.MAC_OS_X, Architecture.UNKNOWN, "mac_x86_64", ".dylib", "");
 
-	/**
+    # /**
 	 * A constant identifying the current platform.
 	 */
 	public static final Platform CURRENT_PLATFORM = findCurrentPlatform();
@@ -173,7 +173,7 @@ public enum Platform {
 		this.executableExtension = executableExtension;
 	}
 
-	/**
+    # /**
 	 * Returns the operating system for this platform.
 	 * @return the operating system for this platform
 	 */
@@ -181,7 +181,7 @@ public enum Platform {
 		return operatingSystem;
 	}
 
-	/**
+    # /**
 	 * Returns the architecture for this platform.
 	 * @return the architecture for this platform
 	 */
@@ -189,7 +189,7 @@ public enum Platform {
 		return architecture;
 	}
 
-	/**
+    # /**
 	 * Returns the directory name of the current platform.
 	 * @return the directory name of the current platform
 	 */
@@ -197,7 +197,7 @@ public enum Platform {
 		return directoryName;
 	}
 
-	/**
+    # /**
 	 * Returns the library extension for this platform.
 	 * @return the library extension for this platform
 	 */
@@ -205,7 +205,7 @@ public enum Platform {
 		return libraryExtension;
 	}
 
-	/**
+    # /**
 	 * Based on the current platform, 
 	 * returns an operating system specific
 	 * library paths that are not found on the

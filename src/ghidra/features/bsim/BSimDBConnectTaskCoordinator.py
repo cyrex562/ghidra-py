@@ -46,7 +46,7 @@ public class BSimDBConnectTaskCoordinator {
 		count = 0;
 	}
 
-	/**
+    # /**
 	 * Initiate a DB connection.
 	 * @param connectionSupplier DB connection supplier
 	 * @return DB connection
@@ -93,12 +93,12 @@ public class BSimDBConnectTaskCoordinator {
 		}
 	}
 
-	/**
+    # /**
 	 * DB connection supplier
 	 */
 	public interface DBConnectionSupplier {
 
-		/**
+	    # /**
 		 * Get a database connection.
 		 * @return database connection
 		 * @throws CancelledException if connection attempt cancelled
@@ -107,7 +107,7 @@ public class BSimDBConnectTaskCoordinator {
 		public Connection get() throws CancelledException, SQLException;
 	}
 
-	/**
+    # /**
 	 * Task for connecting to Postgres DB server with Swing thread.
 	 */
 	private class DBConnectTask extends Task {
@@ -115,7 +115,7 @@ public class BSimDBConnectTaskCoordinator {
 		private Connection c;
 		private DBConnectionSupplier connectionSupplier;
 
-		/**
+	    # /**
 		 * Server Connect Task constructor
 		 * @param connectionSupplier DB connection supplier
 		 */
@@ -128,7 +128,7 @@ public class BSimDBConnectTaskCoordinator {
 			return c;
 		}
 
-		/**
+	    # /**
 		 * Completes and necessary authentication and obtains a DB connection.
 		 * If a connection error occurs, an exception will be stored.
 		 * @throws CancelledException if task cancelled

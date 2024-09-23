@@ -42,7 +42,7 @@ public class ReloadDialog extends JDialog {
 
 	private FVEventListener eventListener;
 
-	/**
+    # /**
 	 * Constructor.
 	 */
 	public ReloadDialog(FVEventListener eventListener) {
@@ -59,7 +59,7 @@ public class ReloadDialog extends JDialog {
 		setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
 	}
 
-	/**
+    # /**
 	 * Creates the visual component of the dialog.
 	 * 
 	 * @return
@@ -108,7 +108,7 @@ public class ReloadDialog extends JDialog {
 		return contentPane;
 	}
 
-	/**
+    # /**
 	 * Need to override the base implementation so we can short-circuit this and only show
 	 * the dialog if the user has not previously selected the opt-out checkbox.
 	 */

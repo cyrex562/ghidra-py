@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -65,7 +65,7 @@ public class MethodInfoJava implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the file offset where this method exists in the class file.
 	 * @return the file offset where this method exists in the class file
 	 */
@@ -73,7 +73,7 @@ public class MethodInfoJava implements StructConverter {
 		return _offset;
 	}
 
-	/**
+    # /**
 	 * The value of the access_flags item is a mask of flags used to denote access
 	 * permission to and properties of this method. The interpretation of each flag,
 	 * when set, is as shown in Table 4.20.
@@ -83,7 +83,7 @@ public class MethodInfoJava implements StructConverter {
 		return accessFlags;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @return boolean encoding whether the method is static
 	 */
@@ -92,7 +92,7 @@ public class MethodInfoJava implements StructConverter {
 			accessFlags) == MethodsInfoAccessFlags.ACC_STATIC.getValue();
 	}
 
-	/**
+    # /**
 	 * The value of the name_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Utf8_info structure representing either one of the special
@@ -104,7 +104,7 @@ public class MethodInfoJava implements StructConverter {
 		return nameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the descriptor_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Utf8_info structure representing a valid method descriptor.
@@ -114,7 +114,7 @@ public class MethodInfoJava implements StructConverter {
 		return descriptorIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the attributes_count item indicates the number of additional
 	 * attributes of this method.
 	 * @return the number of additional attributes of this method
@@ -123,7 +123,7 @@ public class MethodInfoJava implements StructConverter {
 		return attributesCount & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value of the attributes table must be an attribute structure. A
 	 * method can have any number of optional attributes associated with it.
 	 * <p>
@@ -163,7 +163,7 @@ public class MethodInfoJava implements StructConverter {
 		return attributes;
 	}
 
-	/**
+    # /**
 	 * Return a text representation of this methods signature.  
 	 * Here are some examples:
 	 * <DL>
@@ -271,7 +271,7 @@ public class MethodInfoJava implements StructConverter {
 		return stringBuffer.toString();
 	}
 
-	/**
+    # /**
 	 * If the method is static, then parameters start at index 0,
 	 * otherwise skip index 0 because it contains the 'this' parameter.
 	 */
@@ -279,7 +279,7 @@ public class MethodInfoJava implements StructConverter {
 		return isStatic() ? 0 : 1;
 	}
 
-	/**
+    # /**
 	 * Clips the encoded return type from the method descriptor then
 	 * decodes it into a readable data type.
 	 */

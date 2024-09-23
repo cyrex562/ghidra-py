@@ -86,7 +86,7 @@ public class MDSpecialName extends MDParsableItem {
 		return isQualified;
 	}
 
-	/**
+    # /**
 	 * Returns the RTTI number:{0-4, or -1 if not an RTTI}
 	 * @return int RTTI number:{0-4, or -1 if not an RTTI}
 	 */
@@ -689,7 +689,7 @@ public class MDSpecialName extends MDParsableItem {
 		}
 	}
 
-	/**
+    # /**
 	 * Get Number (it is output as Number << '@' where Number is an unsigned int, so we are
 	 *  capturing it as a string of digits, terminated with an '@' character.
 	 *  Built for what seems to be LLVM-specific mangling.  Does not follow MSFT model.

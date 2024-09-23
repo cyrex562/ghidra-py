@@ -28,7 +28,7 @@ public class RowLayout implements LayoutManager {
 	private int compHeight;
 	private int preferredNumRows;
 
-	/**
+    # /**
 	 * Constructs a new RowLayout
 	 * @param hgap the gap (in pixels) between columns
 	 * @param vgap the gap (in pixels) between rows
@@ -40,21 +40,21 @@ public class RowLayout implements LayoutManager {
 		this.preferredNumRows = preferredNumRows;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#addLayoutComponent(String, Component)
 	 */
 	@Override
 	public void addLayoutComponent(String name, Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#removeLayoutComponent(Component)
 	 */
 	@Override
 	public void removeLayoutComponent(Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#preferredLayoutSize(Container)
 	 */
 	@Override
@@ -74,7 +74,7 @@ public class RowLayout implements LayoutManager {
 		return d;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#minimumLayoutSize(Container)
 	 */
 	@Override
@@ -84,7 +84,7 @@ public class RowLayout implements LayoutManager {
 			compHeight + insets.top + insets.bottom);
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#layoutContainer(Container)
 	 */
 	@Override

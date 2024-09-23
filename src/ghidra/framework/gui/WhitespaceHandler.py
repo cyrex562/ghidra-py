@@ -20,7 +20,7 @@ package ghidra.util.html;
  */
 interface WhitespaceHandler {
 
-	/**
+    # /**
 	 * Counts the number of contiguous spaces in the given string starting from the 
 	 * given offset.
 	 * 
@@ -30,7 +30,7 @@ interface WhitespaceHandler {
 	 */
 	public int countSpaces(String s, int offset);
 
-	/**
+    # /**
 	 * Trim the given string (or don't, it's up to the implementation).
 	 * 
 	 * @param s the string

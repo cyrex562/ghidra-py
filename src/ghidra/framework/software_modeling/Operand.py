@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.generic;
 
 import ghidra.program.model.mem.MemBuffer;
@@ -23,8 +23,8 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 
 # /**
- * 
- */
+# * 
+# */
 public class Operand implements Serializable {
 	private boolean dynamic;
 	private String name;
@@ -66,7 +66,7 @@ public class Operand implements Serializable {
 			offset.setRelativeOffset(opHash);
 	}
 
-	/**
+    # /**
 	 * Method getHandle.
 	 * @param pcode
 	 * @param position
@@ -81,7 +81,7 @@ public class Operand implements Serializable {
 	}
 
 
-	/**
+    # /**
 	 * Returns previously computed handle for this operand.  Should not
 	 * be called before the full version of getHandle, where Position and and
 	 * offset are specified.
@@ -89,7 +89,7 @@ public class Operand implements Serializable {
 	 */
 	public Handle getHandle() { return handle; }
 	
-	/**
+    # /**
 	 * Returns a handle for this operand *without* generating any pcode
 	 * @param position
 	 * @param off
@@ -104,7 +104,7 @@ public class Operand implements Serializable {
 		op.getAllHandles(handles,position,offset.getOffset(position.buffer(),off));
 	}
 	
-	/**
+    # /**
 	 * Method getPcode
 	 * @param position
 	 * @return array of pcode ops for this operand
@@ -128,14 +128,14 @@ public class Operand implements Serializable {
 			dynamic = false;
 	}
 
-	/**
+    # /**
 	 * @see OperandValue#toList(ArrayList, Position, int)
 	 */
 	public void toList(ArrayList<Handle> list, Position position, int off) throws Exception {
 		op.toList(list, position, offset.getOffset(position.buffer(),off));
 	}
 
-	/**
+    # /**
 	 * @return
 	 */
 	public int getSize() {

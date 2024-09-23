@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.Set;
 
 import db.*;
@@ -27,14 +27,14 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <code>SymbolDatabaseAdapterV0</code> handles symbol tables which were created 
- * prior to the addition of Namespace support and Function symbols.  Function symbols 
- * are synthesized for those functions whose entry point currently has a 
- * label symbol.  The ID of these synthesized function symbols is the max ID plus 
- * the function ID.  The function Namespace ID is the same as the Function ID.
- * The upgrade of this version may also add additional Function symbols for which there
- * is no corresponding label symbol.
- */
+# * <code>SymbolDatabaseAdapterV0</code> handles symbol tables which were created 
+# * prior to the addition of Namespace support and Function symbols.  Function symbols 
+# * are synthesized for those functions whose entry point currently has a 
+# * label symbol.  The ID of these synthesized function symbols is the max ID plus 
+# * the function ID.  The function Namespace ID is the same as the Function ID.
+# * The upgrade of this version may also add additional Function symbols for which there
+# * is no corresponding label symbol.
+# */
 class SymbolDatabaseAdapterV0 extends SymbolDatabaseAdapter {
 
 # /* Do not remove the following commented out schema! It shows the version 0 symbol table schema. */
@@ -56,7 +56,7 @@ class SymbolDatabaseAdapterV0 extends SymbolDatabaseAdapter {
 	private Table symbolTable;
 	private AddressMap addrMap;
 
-	/**
+    # /**
 	 * Construct a Version-0 Symbol Table adapter.
 	 * @param handle the database handle.
 	 * @param addrMap the address map
@@ -73,7 +73,7 @@ class SymbolDatabaseAdapterV0 extends SymbolDatabaseAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Stores local symbols information in a temporary database table because this version
 	 * is so old, we don't have enough information in the record to upgrade during the normal
 	 * upgrade time. So we store off the information and will complete this upgrade when
@@ -267,7 +267,7 @@ class SymbolDatabaseAdapterV0 extends SymbolDatabaseAdapter {
 		private RecordIterator symIter;
 		private DBRecord rec;
 
-		/**
+	    # /**
 		 * Construct a symbol filtered record iterator
 		 * @param symIter the {@link RecordIterator} to wrap so that records are adapter to new schema
 		 */

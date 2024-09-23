@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.go.ipc;
 
 import java.io.FileOutputStream;
-import java.io.IOException;
+
 import java.nio.channels.*;
 import java.nio.file.Path;
 import java.util.function.Supplier;
@@ -54,7 +54,7 @@ public abstract class GhidraGoIPC {
 
 	public abstract void dispose();
 
-	/**
+    # /**
 	 * @return true if a Ghidra is listening and ready. false otherwise
 	 */
 	public boolean isGhidraListening() {
@@ -73,7 +73,7 @@ public abstract class GhidraGoIPC {
 		}
 	}
 
-	/**
+    # /**
 	 * perform the given action after acquiring the client lock successfully. This method is used
 	 * to ensure that only one actor for the given lock path is performing the action.
 	 * @param lockPath the path of the file to lock

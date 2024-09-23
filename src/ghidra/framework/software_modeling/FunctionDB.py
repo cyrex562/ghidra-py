@@ -1,23 +1,23 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.function;
 
 import static ghidra.program.util.FunctionChangeRecord.FunctionChangeType.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.DBRecord;
@@ -38,9 +38,9 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Database implementation of a Function.
- *
- */
+# * Database implementation of a Function.
+# *
+# */
 public class FunctionDB extends DatabaseObject implements Function {
 
 	final FunctionManagerDB manager;
@@ -69,14 +69,14 @@ public class FunctionDB extends DatabaseObject implements Function {
 	// only when tags have been edited or deleted from the system.
 	private Set<FunctionTag> tags;
 
-	/**
+    # /**
 	 * foundBadVariables is set true when one or more variable symbols are found
 	 * which no longer decode a valid storage address (indicated by Address.NO_ADDRESS).
 	 * Any time a variable is added while this flag is set, such bad variables should be purged.
 	 */
 	private boolean foundBadVariables = false;
 
-	/**
+    # /**
 	 * Use of stack frame to compute parameter ordinals and validate stack offsets
 	 * should not be done while <code>validateEnabled</code> is false.  This may be
 	 * necessary during a language upgrade in which case a dummy compiler-spec
@@ -602,7 +602,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the inferred signature source type for use during upgrade
 	 * @return inferred signature source
 	 */
@@ -629,7 +629,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return type;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getStackFrame()
 	 */
 	@Override
@@ -800,7 +800,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Update parameter ordinals and re-assign dynamic parameter storage
 	 * NOTE: loadVariables must have been called first
 	 */
@@ -886,7 +886,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		}
 	}
 
-	/**
+    # /**
 	 * Re-assign dynamic storage for return
 	 */
 //	void updateReturn() {
@@ -937,7 +937,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return manager;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#addLocalVariable(ghidra.program.model.listing.Variable, ghidra.program.model.symbol.SourceType)
 	 */
 	@Override
@@ -1035,7 +1035,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 
 	}
 
-	/**
+    # /**
 	 * Adjust thunk 'this' auto-param if function has non-default source and
 	 * does not reside within the global namespace.
 	 * @param variables array of thunk variables
@@ -1054,7 +1054,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return variables;
 	}
 
-	/**
+    # /**
 	 * Adjust thunk 'this' auto-param if function has non-default source and
 	 * does not reside within the global namespace.
 	 * @param parameters array of thunk parameters
@@ -1073,7 +1073,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return parameters;
 	}
 
-	/**
+    # /**
 	 * Adjust the specified parameter for a thunk function if required.
 	 * This method will return a newly minted this auto-param if required
 	 * to reflect the overriden name and class within which this thunk
@@ -1251,7 +1251,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		}
 	}
 
-	/**
+    # /**
 	 * Resolve a variable's type and storage.
 	 * @param var variable to be resolved
 	 * @param voidOK if true the use of a 0-length {@link VoidDataType} for the specified
@@ -1312,7 +1312,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 			source);
 	}
 
-	/**
+    # /**
 	 * Increment updateInProgressCount indicating that an update operation is in progress and 
 	 * that any attempted refresh should be deferred.  The updateRefreshReqd flag will be set
 	 * if a refresh was attempted while an update operation was in progress.
@@ -1321,7 +1321,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		++updateInProgressCount;
 	}
 
-	/**
+    # /**
 	 * Decrement updateInProgressCount indicating that an update operation has completed and 
 	 * check the updateRefreshReqd flag and perform refresh if needed.
 	 */
@@ -1567,7 +1567,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#insertParameter(int, ghidra.program.model.listing.Variable, ghidra.program.model.symbol.SourceType)
 	 */
 	@Override
@@ -1810,7 +1810,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Callback to remove variable just prior to removal
 	 * of the underlying symbol.
 	 * @param symbol variable symbol which is about to be deleted.
@@ -1851,7 +1851,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove variable instance from list.
 	 *
 	 * @param list
@@ -1871,7 +1871,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Return the Variable for the given symbol.
 	 *
 	 * @param symbol variable symbol
@@ -2099,7 +2099,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		functionSymbol.setNamespace(newParentScope);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getParentNamespace()
 	 */
 	@Override
@@ -2231,7 +2231,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Remove 'this' parameter if using __thiscall and first non-auto parameter is
 	 * a pointer and named 'this'.
 	 * @param params list of parameters to search and affect
@@ -2250,7 +2250,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Remove 'this' parameter if using __thiscall and first non-auto parameter is
 	 * a pointer and named 'this'.  Variables must be pre-loaded.
 	 * @return true if 'this' parameter removed
@@ -2302,7 +2302,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Strip indirect pointer data type from a parameter.
 	 * @param param parameter to be examined and optionally modified
 	 * @param dt return datatype to be applied
@@ -2406,7 +2406,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		}
 	}
 
-	/**
+    # /**
 	 * Determines whether the indicated function flag is set.
 	 *
 	 * @param functionFlagIndicator
@@ -2431,7 +2431,7 @@ public class FunctionDB extends DatabaseObject implements Function {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the indicated function flag to true or false.
 	 *
 	 * @param functionFlagIndicator

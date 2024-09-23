@@ -17,7 +17,7 @@ package ghidra.framework.project.tool;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 
 import org.junit.*;
 

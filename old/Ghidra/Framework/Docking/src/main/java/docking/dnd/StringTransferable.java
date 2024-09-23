@@ -16,7 +16,7 @@
 package docking.dnd;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.List;
 
 public class StringTransferable implements Transferable {

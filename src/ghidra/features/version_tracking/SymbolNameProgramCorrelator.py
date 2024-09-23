@@ -93,7 +93,7 @@ public class SymbolNameProgramCorrelator extends VTAbstractProgramCorrelator {
 		}
 	}
 
-	/**
+    # /**
 	 * This class contains the escense of a symbol match which does not preserve
 	 * the actual symbol but only its location and match-type (DATA or FUNCTION).
 	 * This class is used to aid the deduping of matches produced by a symbol

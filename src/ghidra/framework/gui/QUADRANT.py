@@ -28,7 +28,7 @@ public enum QUADRANT {
 
 	int x, y;
 
-	/**
+    # /**
 	 * String to enum.
 	 * 
 	 * @param s string of either "UL", "UR", "LL", "LR"

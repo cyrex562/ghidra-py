@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.cparser;
 import java.awt.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.io.*;
+
 import java.util.*;
 import java.util.List;
 

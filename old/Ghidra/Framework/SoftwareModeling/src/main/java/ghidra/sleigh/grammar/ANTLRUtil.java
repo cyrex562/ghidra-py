@@ -15,7 +15,7 @@
  */
 package ghidra.sleigh.grammar;
 
-import java.io.*;
+
 import java.util.Iterator;
 import java.util.List;
 

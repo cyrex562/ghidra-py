@@ -42,7 +42,7 @@ public abstract class NeighborGenerator {
 		this.impThreshold = impThreshold;
 	}
 
-	/**
+    # /**
 	 * Given roots from the source program and the destination program,
 	 * generate a neighborhood of functions related to each root.
 	 * @param srcRoot is the root from the source program
@@ -51,7 +51,7 @@ public abstract class NeighborGenerator {
 	 */
 	public abstract NeighborhoodPair generate(FunctionNode srcRoot, FunctionNode destRoot);
 
-	/**
+    # /**
 	 * Do the feature vector comparison of every source to every destination and create
 	 * new putative matches (associates) if the comparison score exceeds {@link #impThreshold}
 	 * @param unmatchedSource is the list of sources
@@ -79,7 +79,7 @@ public abstract class NeighborGenerator {
 		}
 	}
 
-	/**
+    # /**
 	 * If nodes haven't been compared before, compare them and add an associate if it passes threshold
 	 * @param pair is the two sets of nodes that we are comparing between
 	 * @param maxCompares is the maximum number of comparisons to perform
@@ -127,7 +127,7 @@ public abstract class NeighborGenerator {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Parents of -root-
 	 */
 	public static class Parents extends NeighborGenerator {
@@ -146,7 +146,7 @@ public abstract class NeighborGenerator {
 		}
 	}
 
-	/**
+    # /**
 	 * Children of -root-
 	 */
 	public static class Children extends NeighborGenerator {
@@ -165,7 +165,7 @@ public abstract class NeighborGenerator {
 		}
 	}
 
-	/**
+    # /**
 	 * Grand parents of -root-
 	 */
 	public static class GrandParents extends NeighborGenerator {
@@ -195,7 +195,7 @@ public abstract class NeighborGenerator {
 		}
 	}
 
-	/**
+    # /**
 	 *  Grandchildren of -root-
 	 */
 	public static class GrandChildren extends NeighborGenerator {
@@ -225,7 +225,7 @@ public abstract class NeighborGenerator {
 		}
 	}
 
-	/**
+    # /**
 	 * Functions that share a parent with -root-
 	 */
 	public static class Siblings extends NeighborGenerator {
@@ -255,7 +255,7 @@ public abstract class NeighborGenerator {
 		}
 	}
 
-	/**
+    # /**
 	 *  Functions that share a child with -root-
 	 */
 	public static class Spouses extends NeighborGenerator {

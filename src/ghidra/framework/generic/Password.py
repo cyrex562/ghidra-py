@@ -25,7 +25,7 @@ import java.util.Arrays;
  */
 public class Password implements Closeable {
 
-	/**
+    # /**
 	 * Creates a new {@code Password} using a copy the specified characters.
 	 * 
 	 * @param password password characters
@@ -38,7 +38,7 @@ public class Password implements Closeable {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Creates a new {@code Password} by wrapping the specified character array.
 	 * <p>
 	 * The new instance will take ownership of the char array, and
@@ -64,7 +64,7 @@ public class Password implements Closeable {
 		return copyOf(password);
 	}
 
-	/**
+    # /**
 	 * Clears the password characters by overwriting them with '\0's.
 	 */
 	@Override
@@ -73,7 +73,7 @@ public class Password implements Closeable {
 		password = null;
 	}
 
-	/**
+    # /**
 	 * Returns a reference to the current password characters.
 	 * 
 	 * @return reference to the current password characters

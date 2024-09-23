@@ -20,7 +20,7 @@ import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 import java.util.*;
 
 public class TypeList implements StructConverter {
@@ -35,14 +35,14 @@ public class TypeList implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * Size of the list, in entries
 	 */
 	public int getSize() {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Elements of the list
 	 */
 	public List<TypeItem> getItems() {

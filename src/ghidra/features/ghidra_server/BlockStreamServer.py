@@ -15,7 +15,7 @@
  */
 package ghidra.server.stream;
 
-import java.io.*;
+
 import java.net.*;
 import java.util.*;
 
@@ -51,7 +51,7 @@ public class BlockStreamServer extends Thread {
 	private static int MAX_AGE_MS = 30000;
 	private static int CLEANUP_PERIOD = 30000;
 
-	/**
+    # /**
 	 * Get the BlockStreamServer singleton instance.  This is intended for use on 
 	 * the server-side only.  The servers TCP port is determined by the {@link ServerPortFactory}
 	 * and default interface binding will be performed unless the optional IP interface 
@@ -76,14 +76,14 @@ public class BlockStreamServer extends Thread {
 
 	private GTimerMonitor cleanupTimerMonitor;
 
-	/**
+    # /**
 	 * Construct a block stream server instance.  
 	 */
 	private BlockStreamServer() {
 		super("BlockStreamServer");
 	}
 
-	/**
+    # /**
 	 * Determine if server is running
 	 * @return true if server is running
 	 */
@@ -91,7 +91,7 @@ public class BlockStreamServer extends Thread {
 		return running;
 	}
 
-	/**
+    # /**
 	 * Get the server port
 	 * @return server port, -1 if server not yet started
 	 */
@@ -99,7 +99,7 @@ public class BlockStreamServer extends Thread {
 		return serverSocket != null ? serverSocket.getLocalPort() : -1;
 	}
 
-	/**
+    # /**
 	 * Get the server remote access hostname
 	 * @return hostname or IP address to be used for remote access, null if server not yet started
 	 */
@@ -107,7 +107,7 @@ public class BlockStreamServer extends Thread {
 		return hostname;
 	}
 
-	/**
+    # /**
 	 * Get the next available stream ID and auto-increment
 	 * @return next stream ID
 	 */
@@ -133,7 +133,7 @@ public class BlockStreamServer extends Thread {
 		}
 	}
 
-	/**
+    # /**
 	 * Register a new block stream to be serviced.  A block stream registration 
 	 * will permit the server to associate an in-bound client connection with the 
 	 * appropriate block stream.
@@ -160,7 +160,7 @@ public class BlockStreamServer extends Thread {
 		}
 	}
 
-	/**
+    # /**
 	 * Cleanup unused block stream registrations which are too old
 	 * @param cleanupAll if true all requests will be cleaned-up due to server shutdown
 	 */
@@ -185,7 +185,7 @@ public class BlockStreamServer extends Thread {
 		}
 	}
 
-	/**
+    # /**
 	 * Start this server instance. If the server has already been started
 	 * this method will return immediately. 
 	 * @param s server socket to be used for accepting connections
@@ -213,7 +213,7 @@ public class BlockStreamServer extends Thread {
 		start();
 	}
 
-	/**
+    # /**
 	 * Stop this block stream server instance.
 	 */
 	public synchronized void stopServer() {
@@ -265,7 +265,7 @@ public class BlockStreamServer extends Thread {
 		}
 	}
 
-	/**
+    # /**
 	 * <code>BlockStreamHandler</code> services a block stream request in a dedicated 
 	 * thread.  When first started the stream request header will be read from the socket
 	 * and the associated registered block stream identified.
@@ -275,7 +275,7 @@ public class BlockStreamServer extends Thread {
 		private Socket socket;
 		private BlockStreamRegistration registration;
 
-		/**
+	    # /**
 		 * BlockStreamHandler constructor
 		 * @param socket accepted/connected socket
 		 */
@@ -347,7 +347,7 @@ public class BlockStreamServer extends Thread {
 			}
 		}
 
-		/**
+	    # /**
 		 * Read the stream request header which must be the first input 
 		 * received from the client.
 		 * @return StreamRequest data presented by client

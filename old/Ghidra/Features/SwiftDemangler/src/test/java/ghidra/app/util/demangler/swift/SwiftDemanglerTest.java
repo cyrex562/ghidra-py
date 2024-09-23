@@ -18,7 +18,7 @@ package ghidra.app.util.demangler.swift;
 import static org.junit.Assert.*;
 import static org.junit.Assume.*;
 
-import java.io.IOException;
+
 
 import org.junit.Before;
 import org.junit.Test;

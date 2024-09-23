@@ -3,7 +3,7 @@
  */
 package mobiledevices.dmg.decmpfs;
 
-import java.io.IOException;
+
 
 import mobiledevices.dmg.ghidra.GBinaryReader;
 import mobiledevices.dmg.ghidra.GStringUtilities;

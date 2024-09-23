@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import java.io.IOException;
+
 import java.util.*;
 
 import generic.stl.Pair;
@@ -39,7 +39,7 @@ public class RemoveFunctions extends GhidraScript {
 	private LinkedList<String> AUTO_FAIL_REGEX = new LinkedList<>();
 	private LinkedList<Pair<String, Pair<Long, Long>>> SPECIAL_PARENT = new LinkedList<>();
 
-	/**
+    # /**
 	 * FID hash adjustments built for 32-bit Visual Studio libraries
 	 */
 	private void buildKnownHashes32() {
@@ -229,7 +229,7 @@ public class RemoveFunctions extends GhidraScript {
 		AUTO_FAIL_REGEX.add("^\\$L.*");
 	}
 
-	/**
+    # /**
 	 * Hash adjustments for 64-bit Visual Studio libraries
 	 */
 	private void buildKnownHashes64() {

@@ -120,7 +120,7 @@ public class DiffDetailsProvider extends ComponentProviderAdapter {
 //		plugin.getTool().addLocalAction(this, new DiffIgnoreAllAction(this));
 	}
 
-	/**
+    # /**
 	 *  Create the automatically update checkbox for diff details.
 	 */
 	private void createAutoUpdateCheckBox() {
@@ -136,7 +136,7 @@ public class DiffDetailsProvider extends ComponentProviderAdapter {
 
 	}
 
-	/**
+    # /**
 	 *  Creates the only show the filtered differences checkbox for diff details
 	 */
 	private void createFilterDiffsCheckBox() {
@@ -158,7 +158,7 @@ public class DiffDetailsProvider extends ComponentProviderAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Refreshes the displayed Diff Details for the indicated program location address.
 	 * @param p1Location This should be a program1 location.
 	 */
@@ -170,14 +170,14 @@ public class DiffDetailsProvider extends ComponentProviderAdapter {
 		updateManager.update();
 	}
 
-	/**
+    # /**
 	 * Establishes a swing update manager that is used to refresh the DiffDetails.
 	 */
 	private void setUpRefreshDetailsUpdateManager() {
 		updateManager = new SwingUpdateManager(100, 4000, () -> doRefreshDetails(currentLocation));
 	}
 
-	/**
+    # /**
 	 * Refreshes the displayed Diff Details for the indicated program location address.
 	 * @param p1Location This should be a program1 location.
 	 */
@@ -239,7 +239,7 @@ public class DiffDetailsProvider extends ComponentProviderAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the Diff Details at the indicated address
 	 * @param p1Address the program1 address
 	 * @throws ConcurrentModificationException if analysis is modifying the program.
@@ -254,7 +254,7 @@ public class DiffDetailsProvider extends ComponentProviderAdapter {
 		textPane.setCaretPosition(0);
 	}
 
-	/**
+    # /**
 	 * Gets the address set where detailed differences will be determined for details at the
 	 * indicated address. An address set is returned since the indicated address may be in different
 	 * sized code units in each of the two programs.
@@ -268,7 +268,7 @@ public class DiffDetailsProvider extends ComponentProviderAdapter {
 		return plugin.getDetailsAddressSet(p1Address);
 	}
 
-	/**
+    # /**
 	 *  Create a panel for the Diff details and auto update checkbox.
 	 */
 	private JPanel createDiffDetailsPanel() {

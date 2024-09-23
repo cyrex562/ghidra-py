@@ -29,7 +29,7 @@ import ghidra.util.exception.AssertException;
  */
 public class PluginUtils {
 
-	/**
+    # /**
 	 * Returns a new instance of a {@link Plugin}.
 	 *
 	 * @param pluginClass Specific Plugin Class
@@ -68,7 +68,7 @@ public class PluginUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the Class for a Plugin, by class name.
 	 *
 	 * @param pluginClassName String class name
@@ -112,7 +112,7 @@ public class PluginUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the Plugin Class that is specified as being the defaultProvider for a
 	 * Service, or null if no default provider is specified.
 	 * <p>
@@ -151,7 +151,7 @@ public class PluginUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the name of a Plugin based on its class.
 	 *
 	 * @param pluginClass Class to get name from
@@ -161,7 +161,7 @@ public class PluginUtils {
 		return pluginClass.getSimpleName();
 	}
 
-	/**
+    # /**
 	 * Ensures the specified Plugin has a unique name among all Plugin classes
 	 * found in the current ClassSearcher's reach.
 	 *

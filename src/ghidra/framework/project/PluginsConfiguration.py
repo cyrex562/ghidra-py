@@ -161,7 +161,7 @@ public abstract class PluginsConfiguration {
 		return pluginPackageMap;
 	}
 
-	/**
+    # /**
 	 * Used to convert an old style tool XML file by mapping the given class names to plugin
 	 * packages and then adding <b>all</b> plugins in that package.  This has the effect of pulling
 	 * in more plugin classes than were originally specified in the tool xml.

@@ -25,22 +25,22 @@ public class User implements Comparable<User>, Serializable {
 
 	public final static long serialVersionUID = 2L;
 
-	/**
+    # /**
 	 * Name associated with anonymous user
 	 */
 	public static final String ANONYMOUS_USERNAME = "-anonymous-";
 
-	/**
+    # /**
 	 * Value corresponding to Read-only permission for a repository user.
 	 */
 	public final static int READ_ONLY = 0;
 
-	/**
+    # /**
 	 * Value corresponding to Write permission for a repository user.
 	 */
 	public final static int WRITE = 1;
 
-	/**
+    # /**
 	 * Value corresponding to Administrative permission for a repository user.
 	 */
 	public final static int ADMIN = 2;
@@ -50,7 +50,7 @@ public class User implements Comparable<User>, Serializable {
 	private int permission;
 	private String name;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param name user id/name
 	 * @param permission permission value (READ_ONLY, WRITE or ADMIN)
@@ -64,35 +64,35 @@ public class User implements Comparable<User>, Serializable {
 		this.permission = permission;
 	}
 
-	/**
+    # /**
 	 * Returns user id/name
 	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns true if permission is READ_ONLY.
 	 */
 	public boolean isReadOnly() {
 		return permission == READ_ONLY;
 	}
 
-	/**
+    # /**
 	 * Return true if this user has permission of WRITE or ADMIN.
 	 */
 	public boolean hasWritePermission() {
 		return permission == WRITE || permission == ADMIN;
 	}
 
-	/**
+    # /**
 	 * Returns true if permission is ADMIN.
 	 */
 	public boolean isAdmin() {
 		return permission == ADMIN;
 	}
 
-	/**
+    # /**
 	 * Returns the permission value assigned this user.
 	 */
 	public int getPermissionType() {

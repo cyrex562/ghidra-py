@@ -47,7 +47,7 @@ public class MDMangObjectParser {
 		return myItem;
 	}
 
-	/**
+    # /**
 	 * This method is only intended to be called with dmang at a fresh state (including index = 0)
 	 */
 	private static MDParsableItem parse(MDMang dmang) throws MDException {
@@ -167,7 +167,7 @@ public class MDMangObjectParser {
 	//  mdTruth = "[CT] AUX";
 	//  mangled = "__CT??_R0?AUX@@@81"; //We can get the next line if we ignore that last character '1'
 	//  mdTruth = "[CT] struct X `RTTI Type Descriptor'";
-	/**
+    # /**
 	 * Parses the input data for "Compiler-Reserved" symbols.  The C++/C-specification says that
 	 *  symbols that begin with two underscores or with a single underscore followed by a
 	 *  capital letter are reserved for compiler use.  These are generally symbols that the
@@ -272,15 +272,15 @@ public class MDMangObjectParser {
 		return item;
 	}
 
-	/******************************************************************************/
+    # /******************************************************************************/
 
-	/******************************************************************************/
+    # /******************************************************************************/
 	// DO NOT DELETE THE CODE BELOW!!!
 	//  It is work in progress, trying to find the right hierarchical structures
 	//  and output mechanisms that will make everything better.
 	//  ...especially for the '???' nesting.
-	/******************************************************************************/
-	/******************************************************************************/
+    # /******************************************************************************/
+    # /******************************************************************************/
 
 //	private void parseOptionalContexts(MDMang dmang) throws MDException {
 //		while (dmang.peek() == '?' && dmang.peek(1) == '?') {

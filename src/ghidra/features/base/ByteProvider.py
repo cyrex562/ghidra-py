@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.*;
+
 
 import ghidra.formats.gfilesystem.FSRL;
 import ghidra.formats.gfilesystem.FileSystemService;

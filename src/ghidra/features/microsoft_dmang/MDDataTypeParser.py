@@ -32,7 +32,7 @@ import mdemangler.object.MDObjectCPP;
  *  by calling the appropriate parser at the appropriate place in the code.
  */
 public class MDDataTypeParser {
-	/**
+    # /**
 	 * This method is only to be used by MDMang itself for the highest level type parsing where
 	 * there is not already a multi-retry. This method checks for the '.' starting character,
 	 * determines the type by calling the {@link #parseDataType(MDMang, boolean)}, parses the type,
@@ -78,7 +78,7 @@ public class MDDataTypeParser {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * This method parses all data types.  Specifically, it parses void, data indirect types,
 	 * function indirect types, and all types parsed by parsePrimaryDataType().
 	 * @param dmang - the MDMang driver
@@ -112,7 +112,7 @@ public class MDDataTypeParser {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * This method parses references and all types parsed by parseBasicDataType() and
 	 *  parseSpecialExtendedType().
 	 * @param dmang - the MDMang driver
@@ -143,7 +143,7 @@ public class MDDataTypeParser {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * This method parses special extended data types that Microsoft had not originally planned
 	 * for, which include function indirect, pointer reference data type, data reference type,
 	 * data reference reference type, std::nullptr_t, and (soon) other missing types
@@ -198,7 +198,7 @@ public class MDDataTypeParser {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * This method parses basic and extended data types.
 	 * @param dmang - the MDMang driver
 	 * @param isHighest - boolean indicating whether something else modifies or names the data

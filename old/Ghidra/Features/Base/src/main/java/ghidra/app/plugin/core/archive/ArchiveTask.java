@@ -22,7 +22,7 @@ import ghidra.util.Msg;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.*;
+
 import java.util.jar.JarOutputStream;
 import java.util.zip.ZipEntry;
 

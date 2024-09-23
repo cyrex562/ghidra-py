@@ -38,7 +38,7 @@ class DecompileRunnable implements SwingRunnable {
 
 	private final DecompilerManager decompilerManager;
 
-	/**
+    # /**
 	 * Constructor for a scheduled Decompile runnable
 	 * @param program the program containing the function to be decompiled
 	 * @param location the location for which to find its containing function.
@@ -70,7 +70,7 @@ class DecompileRunnable implements SwingRunnable {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Checks if the given program and location represent the same function as this
 	 * decompile's function
 	 */
@@ -87,7 +87,7 @@ class DecompileRunnable implements SwingRunnable {
 		return functionToDecompile.getBody().contains(otherLocation.getAddress());
 	}
 
-	/**
+    # /**
 	 * Performs the decompile.
 	 */
 	@Override
@@ -113,7 +113,7 @@ class DecompileRunnable implements SwingRunnable {
 
 	}
 
-	/**
+    # /**
 	 * Automatically called in the Swing thread by the RunManager after the run() method completes.
 	 * If the decompile wasn't cancelled, it reports the results back to the DecompilerController.
 	 */
@@ -130,7 +130,7 @@ class DecompileRunnable implements SwingRunnable {
 		}
 	}
 
-	/**
+    # /**
 	 * locates the function to be decompiled based on the location given at construction time.
 	 */
 	private Function findFunction(TaskMonitor monitor) {

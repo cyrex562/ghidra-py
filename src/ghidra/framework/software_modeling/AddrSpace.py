@@ -17,7 +17,7 @@ package ghidra.pcodeCPort.space;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 import java.io.PrintStream;
 
 import ghidra.pcodeCPort.translate.Translate;

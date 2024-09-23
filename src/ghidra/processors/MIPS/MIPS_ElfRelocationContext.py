@@ -186,7 +186,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		}
 	}
 
-	/**
+    # /**
 	 * Allocate the next section GOT entry location.
 	 * @return Address of GOT entry or null if unable to allocate.
 	 */
@@ -219,7 +219,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		return addr != Address.NO_ADDRESS ? addr : null;
 	}
 
-	/**
+    # /**
 	 * Get the preferred GP.
 	 * NOTE: This needs work to properly handle the use of multiple GP's
 	 * @return preferred GP value or -1 if unable to determine GP
@@ -251,7 +251,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		return !relocationTable.hasAddendRelocations() && !useSavedAddend;
 	}
 
-	/**
+    # /**
 	 * Determine if the next relocation has the same offset.
 	 * If true, the computed value should be stored to savedAddend and
 	 * useSaveAddend set true.
@@ -268,7 +268,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 			relocations[relocIndex + 1].getType() != MIPS_ElfRelocationType.R_MIPS_NONE.typeId;
 	}
 
-	/**
+    # /**
 	 * Get or allocate a GOT entry for the specified symbolValue
 	 * @param symbolValue symbol value to be added to GOT
 	 * @return GOT entry address or null if unable to allocate
@@ -296,7 +296,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		return ElfRelocationHandler.GOT_BLOCK_NAME + sectionName;
 	}
 
-	/**
+    # /**
 	 * Flush the section GOT table to a new %got memory block
 	 */
 	private void createGot() {
@@ -335,7 +335,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		}
 	}
 
-	/**
+    # /**
 	 * Get the GP value
 	 * @return adjusted GP value or -1 if _mips_gp_value symbol not defined.
 	 */
@@ -351,7 +351,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		return symbol.getAddress().getOffset();
 	}
 
-	/**
+    # /**
 	 * Get the GP0 value (from .reginfo and generated symbol)
 	 * @return adjusted GP0 value or -1 if _mips_gp0_value symbol not defined.
 	 */
@@ -372,7 +372,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		return super.getSymbolValue(symbol);
 	}
 
-	/**
+    # /**
 	 * Iterate over deferred HI16 relocations.  Iterator may be used to remove
 	 * entries as they are processed.
 	 * @return HI16 relocation iterator
@@ -381,7 +381,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		return hi16list.iterator();
 	}
 
-	/**
+    # /**
 	 * Add HI16 relocation for deferred processing
 	 * @param hi16reloc HI16 relocation
 	 */
@@ -389,7 +389,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		hi16list.add(hi16reloc);
 	}
 
-	/**
+    # /**
 	 * Iterate over deferred GOT16 relocations.  Iterator may be used to remove
 	 * entries as they are processed.
 	 * @return GOT16 relocation iterator
@@ -398,7 +398,7 @@ class MIPS_ElfRelocationContext extends ElfRelocationContext<MIPS_ElfRelocationH
 		return got16list.iterator();
 	}
 
-	/**
+    # /**
 	 * Add GOT16 relocation for deferred processing
 	 * @param got16reloc GOT16 relocation
 	 */

@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf.expression;
 
 import static ghidra.app.util.bin.format.dwarf.expression.DWARFExpressionOpCodes.*;
 
-import java.io.IOException;
+
 import java.util.ArrayDeque;
 import java.util.Objects;
 

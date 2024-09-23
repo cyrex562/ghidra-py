@@ -40,7 +40,7 @@ public class VTHashedFunctionAddressCorrelation implements AddressCorrelation {
 	private final Function destinationFunction;
 	private ListingAddressCorrelation addressCorrelation;
 
-	/**
+    # /**
 	 * Constructs an address correlation between two functions.
 	 * @param sourceFunction the source function
 	 * @param destinationFunction the destination function
@@ -75,7 +75,7 @@ public class VTHashedFunctionAddressCorrelation implements AddressCorrelation {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates the HashedFunctionAddressCorrelation that is used by this class if it doesn't 
 	 * yet exist.
 	 * @param monitor a status monitor for feedback and cancellation while the address correlation 

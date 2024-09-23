@@ -133,7 +133,7 @@ class WorkspaceImpl implements Workspace {
 		setVisible(true);
 	}
 
-	/**
+    # /**
 	 * Returns a string representation of the object. In general, the
 	 * <code>toString</code> method returns a string that
 	 * "textually represents" this object. The result should
@@ -147,7 +147,7 @@ class WorkspaceImpl implements Workspace {
 		return name;
 	}
 
-	/**
+    # /**
 	 * saves the object to an XML element
 	 * 
 	 * @return an XML element containing the saved state
@@ -169,7 +169,7 @@ class WorkspaceImpl implements Workspace {
 		return root;
 	}
 
-	/**
+    # /**
 	 * restores the object from an XML element
 	 * 
 	 * @param root an XML element to restore from
@@ -243,7 +243,7 @@ class WorkspaceImpl implements Workspace {
 		toolManager.toolRemoved(this, tool);
 	}
 
-	/**
+    # /**
 	 * Close all running tools; called from the close() method in
 	 * ToolManagerImpl which is called from the Project's close()
 	 */

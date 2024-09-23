@@ -47,7 +47,7 @@ class BitFieldDBDataType extends BitFieldDataType {
 
 	private static final long ID_TO_INDEX_MASK = ~-(1L << DataTypeManagerDB.DATA_TYPE_KIND_SHIFT);
 
-	/**
+    # /**
 	 * Construct DB resident bitfield.  Minimal storage size and effective bit size will 
 	 * be computed based upon specified parameters. 
 	 * @param baseDataType base data type (integer/enum type or typedef to same).  This
@@ -82,7 +82,7 @@ class BitFieldDBDataType extends BitFieldDataType {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a generated ID for this bit-field which is suitable for reconstruction
 	 * via the {@link #getBitFieldDataType(long)} method.  This ID encodes the base
 	 * datatype (including typedef/enum and packing data), 
@@ -142,7 +142,7 @@ class BitFieldDBDataType extends BitFieldDataType {
 		return (dataTypeKind.id << 5) | (extraStorageUsed ? 0x10L : 0L);
 	}
 
-	/**
+    # /**
 	 * Get a bit-field datatype instance for a given ID.  The upper byte of the ID will be ignored.
 	 * @param id bit-field datatype ID
 	 * @param dtm data type manager
@@ -196,7 +196,7 @@ class BitFieldDBDataType extends BitFieldDataType {
 		return dataTypeId & ID_TO_INDEX_MASK;
 	}
 
-	/**
+    # /**
 	 * Get the TypeDef which corresponds to the specified typeDefIndex and the 
 	 * specified data type manager.
 	 * @param typeDefIndex base data type index used by bit-field
@@ -224,7 +224,7 @@ class BitFieldDBDataType extends BitFieldDataType {
 		return null; // unsupported typedef
 	}
 
-	/**
+    # /**
 	 * Get the Enum which corresponds to the specified enumIndex and the 
 	 * specified data type manager.
 	 * @param enumIndex enum data type index used by bit-field
@@ -241,7 +241,7 @@ class BitFieldDBDataType extends BitFieldDataType {
 		return (Enum) dataType;
 	}
 
-	/**
+    # /**
 	 * Get the integer base type which corresponds to the specified intTypeIndex and the 
 	 * specified data type manager.
 	 * @param intTypeIndex base data type index used by bit-field

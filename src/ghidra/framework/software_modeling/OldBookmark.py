@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.bookmark;
 
 import ghidra.program.model.address.Address;
@@ -22,8 +22,8 @@ import ghidra.util.ObjectStorage;
 import ghidra.util.Saveable;
 
 # /**
- * 
- */
+# * 
+# */
 public class OldBookmark implements Saveable {
 
 //TODO: This class and its constructors should not be public
@@ -34,7 +34,7 @@ public class OldBookmark implements Saveable {
 	private Address addr;
 	private String addrString;
 
-	/**
+    # /**
 	 * Constructs a copy of a Bookmark at a new address.
 	 * @param info
 	 * @param addr
@@ -46,7 +46,7 @@ public class OldBookmark implements Saveable {
 		this.comment = info.getComment();
 	}
 
-	/**
+    # /**
 	 * Constructs a Bookmark.
 	 * @param type
 	 * @param category
@@ -63,7 +63,7 @@ public class OldBookmark implements Saveable {
 		this.addr = addr;
 	}
 
-	/**
+    # /**
 	 * Constructs a Note Bookmark (required for Saveable property objects).
 	 * Contains no address.
 	 */
@@ -101,7 +101,7 @@ public class OldBookmark implements Saveable {
 		this.comment = comment;
 	}
 
-	/**
+    # /**
 	 * Get the address of this bookmark info.
 	 * 
 	 * @return Address
@@ -110,7 +110,7 @@ public class OldBookmark implements Saveable {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * Return true if this object is the same as obj.
 	 */
 	@Override
@@ -143,7 +143,7 @@ public class OldBookmark implements Saveable {
 			type.equals(bookmark.type) && addrsEqual;
 	}
 
-	/**
+    # /**
 	 * @see Saveable#restore(ObjectStorage)
 	 */
 	@Override
@@ -153,7 +153,7 @@ public class OldBookmark implements Saveable {
 		addrString = objStorage.getString();
 	}
 
-	/**
+    # /**
 	 * @see Saveable#save(ObjectStorage)
 	 */
 	@Override

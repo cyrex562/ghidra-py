@@ -41,7 +41,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 	public static final AssemblyStringTerminal WHITE_SPACE = new WhiteSpace();
 	private static final Pattern PAT_COMMA_WS = Pattern.compile(",\\s+");
 
-	/**
+    # /**
 	 * Construct a string from the given list of symbols
 	 * 
 	 * @param symbols
@@ -51,7 +51,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		this.unmodifiableSymbols = Collections.unmodifiableList(symbols);
 	}
 
-	/**
+    # /**
 	 * Construct a blank string
 	 * 
 	 * This is suitable as a blank start, to add new symbols, or to use directly as the RHS,
@@ -62,7 +62,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		this.unmodifiableSymbols = Collections.unmodifiableList(symbols);
 	}
 
-	/**
+    # /**
 	 * Construct a string from any number of symbols
 	 * 
 	 * @param syms
@@ -118,7 +118,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		return result;
 	}
 
-	/**
+    # /**
 	 * A "whitespace" terminal
 	 * 
 	 * <p>
@@ -173,7 +173,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		}
 	}
 
-	/**
+    # /**
 	 * The token consumed by a whitespace terminal
 	 */
 	public static class WhiteSpaceParseToken extends AssemblyParseToken {
@@ -182,7 +182,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		}
 	}
 
-	/**
+    # /**
 	 * The token consumed by a whitespace terminal when it anticipates the end of input
 	 * 
 	 * <p>
@@ -195,7 +195,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		}
 	}
 
-	/**
+    # /**
 	 * Add a symbol to the right of this sentential
 	 * 
 	 * @param symbol the symbol to add
@@ -205,7 +205,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		return symbols.add(symbol);
 	}
 
-	/**
+    # /**
 	 * Add optional whitespace, if not already preceded by whitespace
 	 * 
 	 * @return true if whitespace was added
@@ -218,7 +218,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		return addSymbol(WHITE_SPACE);
 	}
 
-	/**
+    # /**
 	 * Add a comma followed by optional whitespace.
 	 */
 	public void addCommaWS() {
@@ -226,7 +226,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		addWS();
 	}
 
-	/**
+    # /**
 	 * Add a syntactic terminal element, but with consideration for optional whitespace surrounding
 	 * special characters
 	 * 
@@ -255,7 +255,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		}
 	}
 
-	/**
+    # /**
 	 * Get the symbols in this sentential
 	 * 
 	 * @return the symbols;
@@ -268,7 +268,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		return symbols.get(pos);
 	}
 
-	/**
+    # /**
 	 * Split the given string into pieces matched by the pattern, and the pieces between
 	 * 
 	 * <p>
@@ -295,7 +295,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		}
 	}
 
-	/**
+    # /**
 	 * Add a syntactic terminal element, but considering that commas contained within may be
 	 * followed by optional whitespace
 	 * 
@@ -318,7 +318,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		return null;
 	}
 
-	/**
+    # /**
 	 * Trim leading and trailing whitespace, and make the sentential immutable
 	 */
 	public void finish() {
@@ -338,7 +338,7 @@ public class AssemblySentential<NT extends AssemblyNonTerminal>
 		return new AssemblySentential<>(symbols.subList(fromIndex, toIndex));
 	}
 
-	/**
+    # /**
 	 * Get the number of symbols, including whitespace, in this sentential
 	 * 
 	 * @return the number of symbols

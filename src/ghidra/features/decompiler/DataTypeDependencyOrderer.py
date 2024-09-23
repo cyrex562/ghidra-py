@@ -57,7 +57,7 @@ public class DataTypeDependencyOrderer {
 	private HashMap<Entry, Set<Entry>> whoDependsOnMe = new HashMap<>();
 	private LinkedList<Entry> noDependentsQueue = new LinkedList<>();
 
-	/**
+    # /**
 	 * Associate a DataType with its ID (relative to the DataTypeManager) in an Entry
 	 * @param dt is the raw DataType
 	 * @return the Entry with both DataType and ID
@@ -72,7 +72,7 @@ public class DataTypeDependencyOrderer {
 		return result;
 	}
 
-	/**
+    # /**
 	 * This method adds a single DataTypes to the input DataType list and
 	 *  marks the data as dirty (all must need recalculated).
 	 * @param dataType  A single DataType to add to the input DataType list.
@@ -85,7 +85,7 @@ public class DataTypeDependencyOrderer {
 		processed = false;
 	}
 
-	/**
+    # /**
 	 * This method adds a list of DataTypes to the input DataType list and
 	 *  marks the data as dirty (all must need recalculated).
 	 * @param dtlist  List of DataTypes to add to the input DataType list.
@@ -100,7 +100,7 @@ public class DataTypeDependencyOrderer {
 		processed = false;
 	}
 
-	/**
+    # /**
 	 * This method removes a DataType from the list and
 	 *  marks the data as dirty (all must need recalculated).
 	 * @param dataType  The DataType to remove from the input list
@@ -113,7 +113,7 @@ public class DataTypeDependencyOrderer {
 		processed = false;
 	}
 
-	/**
+    # /**
 	 * This method clears the input DataType list and
 	 *  marks the data as dirty (all must need recalculated).
 	 */
@@ -122,7 +122,7 @@ public class DataTypeDependencyOrderer {
 		processed = false;
 	}
 
-	/**
+    # /**
 	 * This constructor starts with an empty DataType list, which can be added to.
 	 * @param dtManager the manager used to extract IDs
 	 */
@@ -130,7 +130,7 @@ public class DataTypeDependencyOrderer {
 		this.dtManager = dtManager;
 	}
 
-	/**
+    # /**
 	 * This constructor takes an initial DataType list.
 	 * @param dtManager the manager used to extract IDs
 	 * @param dtlist  Initial list of DataTypes to order
@@ -140,7 +140,7 @@ public class DataTypeDependencyOrderer {
 		addTypeList(dtlist);
 	}
 
-	/**
+    # /**
 	 * This method returns two lists:
 	 * 1) is the set of structs/unions. Intended for outputting zero-sized definitions.
 	 * 2) is the acyclic dependency list (broken at composites and pointers to composites)
@@ -155,7 +155,7 @@ public class DataTypeDependencyOrderer {
 		return new Pair<>(compositeList, orderedDependentsList);
 	}
 
-	/**
+    # /**
 	 * This method returns the ArrayList of structs/unions
 	 * @return  An arrayList of Composite
 	 */
@@ -166,7 +166,7 @@ public class DataTypeDependencyOrderer {
 		return compositeList;
 	}
 
-	/**
+    # /**
 	 * This returns the acyclic dependency list (broken at composites and pointers to composites)
 	 * @return  An ArrayList of dependents.
 	 */
@@ -177,7 +177,7 @@ public class DataTypeDependencyOrderer {
 		return orderedDependentsList;
 	}
 
-	/**
+    # /**
 	 * @return  String of debug data.
 	 */
 	private String dumpDebug() {

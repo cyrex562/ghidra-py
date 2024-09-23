@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -24,8 +24,8 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Adapter to access the Function Signature Definition Parameters database table.
- */
+# * Adapter to access the Function Signature Definition Parameters database table.
+# */
 abstract class FunctionParameterAdapter {
 
 	static final String PARAMETER_TABLE_NAME = "Function Parameters";
@@ -40,7 +40,7 @@ abstract class FunctionParameterAdapter {
 	static final int PARAMETER_DT_LENGTH_COL =
 		FunctionParameterAdapterV1.V1_PARAMETER_DT_LENGTH_COL;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the function definition parameters database table.
 	 * @param handle handle to the database to be accessed.
 	 * @param openMode the mode this adapter is to be opened for (CREATE, UPDATE, READ_ONLY, UPGRADE).
@@ -72,7 +72,7 @@ abstract class FunctionParameterAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Tries to get a read only adapter for the database whose handle is passed to this method.
 	 * @param handle handle to prior version of the database.
 	 * @return the read only Function Definition Parameters table adapter
@@ -91,7 +91,7 @@ abstract class FunctionParameterAdapter {
 		return new FunctionParameterAdapterNoTable(handle);
 	}
 
-	/**
+    # /**
 	 * Upgrades the Function Definition Parameters table from the oldAdapter's version to the 
 	 * current version.
 	 * @param handle handle to the database whose table is to be upgraded to a newer version.
@@ -136,21 +136,21 @@ abstract class FunctionParameterAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets an iterator over all function definition parameter data type records.
 	 * @return the parameter data type record iterator.
 	 * @throws IOException if the database can't be accessed.
 	 */
 	abstract protected RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Delete underlying database table
 	 * @param handle database handle
 	 * @throws IOException if IO error occurs
 	 */
 	abstract protected void deleteTable(DBHandle handle) throws IOException;
 
-	/**
+    # /**
 	 * Create new parameter definition record
 	 * @param dataTypeID parameter datatype ID
 	 * @param parentID parent function definition ID
@@ -164,7 +164,7 @@ abstract class FunctionParameterAdapter {
 	abstract DBRecord createRecord(long dataTypeID, long parentID, int ordinal, String name,
 			String comment, int dtLength) throws IOException;
 
-	/**
+    # /**
 	 * Get parameter definition record
 	 * @param parameterID parameter record ID
 	 * @return parameter definition record or null
@@ -172,14 +172,14 @@ abstract class FunctionParameterAdapter {
 	 */
 	abstract DBRecord getRecord(long parameterID) throws IOException;
 
-	/**
+    # /**
 	 * Updates the function definition parameter data type table with the provided record.
 	 * @param record the new record
 	 * @throws IOException if the database can't be accessed.
 	 */
 	abstract void updateRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Removes the function definition parameter data type record with the specified ID.
 	 * @param parameterID the ID of the data type.
 	 * @return true if the record is removed.
@@ -187,7 +187,7 @@ abstract class FunctionParameterAdapter {
 	 */
 	abstract boolean removeRecord(long parameterID) throws IOException;
 
-	/**
+    # /**
 	 * Get parameter definition IDs for specified function definition
 	 * @param functionDefID function definition ID
 	 * @return parameter definition IDs as LongField values within Field array

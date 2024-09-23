@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dtb;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -90,7 +90,7 @@ public class FdtHeader implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the MAGIC value of this FDT Header.
 	 * @see FdtConstants.MAGIC.
 	 * @return the MAGIC value of this FDT Header
@@ -99,7 +99,7 @@ public class FdtHeader implements StructConverter {
 		return magic;
 	}
 
-	/**
+    # /**
 	 * Returns the total size of this FDT, including all sub-structures.
 	 * @return the total size of this FDT, including all sub-structures
 	 */
@@ -107,7 +107,7 @@ public class FdtHeader implements StructConverter {
 		return totalsize;
 	}
 
-	/**
+    # /**
 	 * Returns the offset to the Device Tree (DT) structure.
 	 * @return the offset to the Device Tree (DT) structure
 	 */
@@ -115,7 +115,7 @@ public class FdtHeader implements StructConverter {
 		return off_dt_struct;
 	}
 
-	/**
+    # /**
 	 * Returns the offset to the Device Tree (DT) strings.
 	 * @return the offset to the Device Tree (DT) strings
 	 */
@@ -123,7 +123,7 @@ public class FdtHeader implements StructConverter {
 		return off_dt_strings;
 	}
 
-	/**
+    # /**
 	 * Returns the offset to the Device Tree (DT) memory reserve map.
 	 * @return the offset to the Device Tree (DT) memory reserve map
 	 */
@@ -131,7 +131,7 @@ public class FdtHeader implements StructConverter {
 		return off_mem_rsvmap;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) version.
 	 * @return the Device Tree (DT) version
 	 */
@@ -139,7 +139,7 @@ public class FdtHeader implements StructConverter {
 		return version;
 	}
 
-	/**
+    # /**
 	 * Returns the last compatible Device Tree (DT) version.
 	 * @return the last compatible Device Tree (DT) version
 	 */
@@ -147,7 +147,7 @@ public class FdtHeader implements StructConverter {
 		return last_comp_version;
 	}
 
-	/**
+    # /**
 	 * Returns the Boot CPU ID.
 	 * @return the Boot CPU ID
 	 */
@@ -155,7 +155,7 @@ public class FdtHeader implements StructConverter {
 		return boot_cpuid_phys;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) strings size.
 	 * @return the Device Tree (DT) strings size
 	 */
@@ -163,7 +163,7 @@ public class FdtHeader implements StructConverter {
 		return size_dt_strings;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) structure size.
 	 * @return the Device Tree (DT) structure size
 	 */
@@ -171,7 +171,7 @@ public class FdtHeader implements StructConverter {
 		return size_dt_struct;
 	}
 
-	/**
+    # /**
 	 * Marks up the program containing this FDT.
 	 * @param fdtHeaderAddress the address where the FDT starts
 	 * @param program the program to markup
@@ -317,7 +317,7 @@ public class FdtHeader implements StructConverter {
 		stringsMap.put((int) index, string);
 	}
 
-	/**
+    # /**
 	 * Look up the string for this property.
 	 */
 	private String getString(FdtProperty property) {

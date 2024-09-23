@@ -28,7 +28,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class Worker extends AbstractWorker<Job> {
 
-	/**
+    # /**
 	 * A convenience method to create a Worker that uses a shared thread pool for performing
 	 * operations for GUI clients in a background thread 
 	 * 
@@ -44,7 +44,7 @@ public class Worker extends AbstractWorker<Job> {
 		return new Worker(Swing.GSWING_THREAD_POOL_NAME);
 	}
 
-	/**
+    # /**
 	 * Creates a Worker that will use a <b>shared</b> thread pool to process jobs.  Also, threads
 	 * created using this constructor are not persistent.   Use this constructor when you do 
 	 * not have a {@link TaskMonitor} that wants updates from this worker.
@@ -56,7 +56,7 @@ public class Worker extends AbstractWorker<Job> {
 			TaskMonitor.DUMMY);
 	}
 
-	/**
+    # /**
 	 * Creates a Worker that will use a <b>shared</b> thread pool to process jobs.  Also, threads
 	 * created using this constructor are not persistent.
 	 * 
@@ -68,7 +68,7 @@ public class Worker extends AbstractWorker<Job> {
 			monitor);
 	}
 
-	/**
+    # /**
 	 * This constructor allows you to change persistence and shared thread pool usage.
 	 * 
 	 * @param name the name of the shared thread pool.

@@ -15,7 +15,7 @@
  */
 package ghidradev.ghidrasymbollookup;
 
-import java.io.IOException;
+
 import java.net.ServerSocket;
 
 import ghidradev.*;

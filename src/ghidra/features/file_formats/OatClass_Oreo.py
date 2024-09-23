@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.oatclass;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.dex.format.ClassDataItem;

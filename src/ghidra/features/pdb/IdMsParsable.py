@@ -16,7 +16,7 @@
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
 public interface IdMsParsable {
-	/**
+    # /**
 	 * Returns the unique ID (PdbId) for this item type.
 	 *
 	 * @return Identifier for this data type.

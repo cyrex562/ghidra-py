@@ -18,7 +18,7 @@ package ghidra.dalvik.dex.inject;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.app.plugin.processors.sleigh.PcodeEmit;
 import ghidra.app.plugin.processors.sleigh.SleighLanguage;

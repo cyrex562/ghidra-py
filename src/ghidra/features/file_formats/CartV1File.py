@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.regex.Matcher;
@@ -52,7 +52,7 @@ public class CartV1File {
 	private long readerLength = -1;
 	private BinaryReader internalReader;
 
-	/**
+    # /**
 	 * Constructs a new CartV1File read from the byte provider.
 	 *
 	 * @param byteProvider The byte provider from which to read
@@ -71,7 +71,7 @@ public class CartV1File {
 		this(new BinaryReader(byteProvider, true));
 	}
 
-	/**
+    # /**
 	 * Constructs a new CartV1File read from the byte provider and user provided
 	 * ARC4 key.
 	 *
@@ -93,7 +93,7 @@ public class CartV1File {
 		this(new BinaryReader(byteProvider, true), arc4Key);
 	}
 
-	/**
+    # /**
 	 * Constructs a new CartV1File read from the little-endian binary reader.
 	 *
 	 * @param reader The little-endian binary reader from with to read
@@ -112,7 +112,7 @@ public class CartV1File {
 		this(reader, null);
 	}
 
-	/**
+    # /**
 	 * Constructs a new CartV1File read from the little-endian binary reader and
 	 * provided key. If key is null, attempt to autodetect.
 	 *
@@ -261,7 +261,7 @@ public class CartV1File {
 		}
 	}
 
-	/**
+    # /**
 	 * Create the CartV1Decryptor object including determining the appropriate key.
 	 * First try the key in the header, if that fails check if a key is available in
 	 * the default CaRT configuration INI file. After that try the default key and
@@ -321,7 +321,7 @@ public class CartV1File {
 		throw new CartInvalidARC4KeyException("Private CaRT ARC4 key could not be determined.");
 	}
 
-	/**
+    # /**
 	 * Create the CartV1Decryptor object using the specified key. Tested as-is, and as
 	 * base64 decoded.
 	 *
@@ -373,7 +373,7 @@ public class CartV1File {
 		throw new CartInvalidARC4KeyException("Private CaRT ARC4 key could not be determined.");
 	}
 
-	/**
+    # /**
 	 * Create the CartV1Decryptor object using the specified key. Tested padded/truncated
 	 * to the correct length.
 	 *
@@ -405,7 +405,7 @@ public class CartV1File {
 		throw new CartInvalidARC4KeyException("Private CaRT ARC4 key could not be determined.");
 	}
 
-	/**
+    # /**
 	 * Helper function to test a given key on the current CaRT data. Currently, this
 	 * only uses the payload extractor test, but in the future should also test that
 	 * the optional header and optional footer decrypt properly, if available.
@@ -423,7 +423,7 @@ public class CartV1File {
 		return CartV1PayloadExtractor.testExtraction(this.internalReader, this, potentialARC4key);
 	}
 
-	/**
+    # /**
 	 * Attempt to get a decryption key from the standard CaRT configuration file
 	 * (~/.cart/cart.cfg).
 	 *
@@ -469,7 +469,7 @@ public class CartV1File {
 		return validKey;
 	}
 
-	/**
+    # /**
 	 * Get the name of the CaRT container file.
 	 *
 	 * @return The name of the CaRT container file.
@@ -478,7 +478,7 @@ public class CartV1File {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Get the name of the CaRT payload file.
 	 *
 	 * @return The name of the CaRT payload file.
@@ -487,7 +487,7 @@ public class CartV1File {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Get the offset to where the payload data in the CaRT file starts.
 	 *
 	 * @return The offset to the payload data.
@@ -496,7 +496,7 @@ public class CartV1File {
 		return dataOffset;
 	}
 
-	/**
+    # /**
 	 * Get the original size of the original payload (without compression and
 	 * encryption).
 	 *
@@ -506,7 +506,7 @@ public class CartV1File {
 		return payloadOriginalSize;
 	}
 
-	/**
+    # /**
 	 * Get the packed size of the payload (compressed and encrypted).
 	 *
 	 * @return The packed size of the payload
@@ -515,7 +515,7 @@ public class CartV1File {
 		return packedSize;
 	}
 
-	/**
+    # /**
 	 * Get the value for the specified hash as stored in the footer or null if not
 	 * available. This value will not be tested for validity until the payload is
 	 * extracted.
@@ -534,7 +534,7 @@ public class CartV1File {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the header object.
 	 *
 	 * @return The CartV1Header object.
@@ -543,7 +543,7 @@ public class CartV1File {
 		return header;
 	}
 
-	/**
+    # /**
 	 * Get the footer object.
 	 *
 	 * @return The CartV1Footer object.
@@ -552,7 +552,7 @@ public class CartV1File {
 		return footer;
 	}
 
-	/**
+    # /**
 	 * Get the decryptor for the CaRT payload.
 	 *
 	 * @return The CartV1Decrypter object
@@ -561,7 +561,7 @@ public class CartV1File {
 		return decryptor;
 	}
 
-	/**
+    # /**
 	 * Get the combined optional header and optional footer data as a single
 	 * combined JSON object. This is similar to how the original python CaRT library
 	 * works. Including, the fact that footer values will overwrite header values
@@ -601,7 +601,7 @@ public class CartV1File {
 		return metadata;
 	}
 
-	/**
+    # /**
 	 * Static function to quickly determine if the data in the byte provider appears
 	 * to be CaRT version 1 format.
 	 *
@@ -612,7 +612,7 @@ public class CartV1File {
 		return isCart(new BinaryReader(byteProvider, true));
 	}
 
-	/**
+    # /**
 	 * Static function to quickly determine if the data in the little-endian binary
 	 * reader appears to be CaRT version 1 format.
 	 *
@@ -623,7 +623,7 @@ public class CartV1File {
 		return hasCartHeader(reader) && hasCartFooter(reader);
 	}
 
-	/**
+    # /**
 	 * Static function to quickly determine if the data in the byte provider appears
 	 * to have a CaRT version 1 format header.
 	 *
@@ -634,7 +634,7 @@ public class CartV1File {
 		return hasCartHeader(new BinaryReader(byteProvider, true));
 	}
 
-	/**
+    # /**
 	 * Static function to quickly determine if the data in the little-endian binary
 	 * reader appears to have a CaRT version 1 format header.
 	 *
@@ -654,7 +654,7 @@ public class CartV1File {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Static function to quickly determine if the data in the byte provider appears
 	 * to have a CaRT version 1 format footer.
 	 *
@@ -665,7 +665,7 @@ public class CartV1File {
 		return hasCartFooter(new BinaryReader(byteProvider, true));
 	}
 
-	/**
+    # /**
 	 * Static function to quickly determine if the data in the little-endian binary
 	 * reader appears to have a CaRT version 1 format footer.
 	 *

@@ -38,7 +38,7 @@ public class ServiceManager {
 	private boolean notifyAdd = true;
 	private List<Object[]> notifications = new ArrayList<>();
 
-	/**
+    # /**
 	 * Construct a new Service Registry.
 	 */
 	public ServiceManager() {
@@ -46,7 +46,7 @@ public class ServiceManager {
 		serviceListeners = WeakDataStructureFactory.createSingleThreadAccessWeakSet();
 	}
 
-	/**
+    # /**
 	 * Add listener that is notified when services are added or removed.
 	 * @param listener listener to notify
 	 */
@@ -54,7 +54,7 @@ public class ServiceManager {
 		serviceListeners.add(listener);
 	}
 
-	/**
+    # /**
 	 * Remove the given listener from list of listeners notified when
 	 * services are added or removed.
 	 * @param listener listener to remove
@@ -63,7 +63,7 @@ public class ServiceManager {
 		serviceListeners.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Set the indicator for whether service listeners should be notified.
 	 * While plugins are being restored from a tool state, this indicator
 	 * is false, as a plugin may not be in the proper state to handle the
@@ -90,7 +90,7 @@ public class ServiceManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Add the service to the tool. Notify the service listeners if the
 	 * notification indicator is true; otherwise, add the service to a list
 	 * that will be used to notify listeners when notifications are
@@ -122,7 +122,7 @@ public class ServiceManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove the service from the tool.
 	 * @param interfaceClass the service interface
 	 * @param service the service implementation
@@ -140,7 +140,7 @@ public class ServiceManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Return the first implementation found for the given service class.
 	 * @param interfaceClass interface class for the service
 	 * @return null if the interfaceClass was not registered
@@ -154,7 +154,7 @@ public class ServiceManager {
 		return interfaceClass.cast(object);
 	}
 
-	/**
+    # /**
 	 * Get an array of objects that implement the given interfaceClass.
 	 * @param interfaceClass interface class for the service
 	 * @return zero length array if the interfaceClass was not registered
@@ -170,7 +170,7 @@ public class ServiceManager {
 		return list.toArray(objs);
 	}
 
-	/**
+    # /**
 	 * Returns true if the specified <code>serviceInterface</code>
 	 * is a valid service that exists in this service manager.
 	 * @param serviceInterface the service interface
@@ -185,7 +185,7 @@ public class ServiceManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns a array of all service implementors.
 	 * @return a array of all service implementors
 	 */

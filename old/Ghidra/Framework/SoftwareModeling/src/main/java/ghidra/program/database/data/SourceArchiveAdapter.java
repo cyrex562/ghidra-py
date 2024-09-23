@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 import java.util.List;
 

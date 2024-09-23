@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.oatclass;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -91,7 +91,7 @@ public abstract class OatClass implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * State of class during compilation
 	 * @return the class status
 	 */
@@ -108,7 +108,7 @@ public abstract class OatClass implements StructConverter {
 		return OatClassType.kOatClassMax;//invalid state
 	}
 
-	/**
+    # /**
 	 * methodOffsets is a list of offset that points to the generated
 	 * native code for each compiled method.    
 	 * @return list of method offsets
@@ -117,14 +117,14 @@ public abstract class OatClass implements StructConverter {
 		return methods_pointer_;
 	}
 
-	/**
+    # /**
 	 * Returns true if this method index is declared native in the bitmap
 	 * @param methodIndex the method index
 	 * @return true if this method index is declared native in the bitmap
 	 */
 	public abstract boolean isMethodNative(int methodIndex);
 
-	/**
+    # /**
 	 * Renames the data type with the specified prefix.
 	 * Prefix is delimited by the second underscore character.
 	 * If no underscore exist, then entire data type name is changed to the prefix.

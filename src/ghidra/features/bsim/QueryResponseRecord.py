@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import generic.lsh.vector.LSHVectorFactory;
@@ -41,12 +41,12 @@ public abstract class QueryResponseRecord {
 
 	public DescriptionManager getDescriptionManager() { return null; }
 
-	/**
+    # /**
 	 * @return a partial clone of this query suitable for holding local stages of the query via StagingManager
 	 */
 	public QueryResponseRecord getLocalStagingCopy() { return null; }
 	
-	/**
+    # /**
 	 * Combine partial results from subresponse into this global response
 	 * @param subresponse the partial response to merge into this
 	 * @throws LSHException for errors performing the merge
@@ -55,7 +55,7 @@ public abstract class QueryResponseRecord {
 		// Must subclasses don't need to do anything
 	}
 
-	/**
+    # /**
 	 * Perform any preferred sorting on the result of a query
 	 */
 	public void sort() {

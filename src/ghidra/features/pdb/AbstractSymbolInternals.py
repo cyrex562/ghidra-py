@@ -35,7 +35,7 @@ public abstract class AbstractSymbolInternals extends AbstractParsableItem {
 
 	protected AbstractPdb pdb;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this internals belongs.
 	 */

@@ -23,19 +23,19 @@ import ghidra.framework.plugintool.PluginTool;
  */
 public interface ToolConnection {
 
-	/**
+    # /**
 	 * Get the tool that produces an event
 	 * @return the tool
 	 */
 	public PluginTool getProducer();
 
-	/**
+    # /**
 	 * Get the tool that consumes an event
 	 * @return the tool
 	 */
 	public PluginTool getConsumer();
 
-	/**
+    # /**
 	 * Get the list of event names that is an intersection
 	 * between what the producer produces and what the
 	 * consumers consumes.
@@ -44,7 +44,7 @@ public interface ToolConnection {
 	 */
 	public String[] getEvents();
 
-	/**
+    # /**
 	 * Connect the tools for the given event name.
 	 * 
 	 * @param eventName name of event to connect
@@ -54,7 +54,7 @@ public interface ToolConnection {
 	 */
 	public void connect(String eventName);
 
-	/**
+    # /**
 	 * Break the connection between the tools for the
 	 * given event name.
 	 * 
@@ -65,7 +65,7 @@ public interface ToolConnection {
 	 */
 	public void disconnect(String eventName);
 
-	/**
+    # /**
 	 * Return whether the tools are connected for the
 	 * given event name.
 	 * 

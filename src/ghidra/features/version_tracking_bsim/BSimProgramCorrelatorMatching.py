@@ -56,7 +56,7 @@ public class BSimProgramCorrelatorMatching {
 	private LSHMemoryModel memoryModel;				// The memory model to use when binning vectors
 	private boolean useNamespaceNeighbors;			// True if namespace information is used in matching
 
-	/**
+    # /**
 	 * This class is used to lookup potential matches in the {@link BinningSystem} and do
 	 * secondary testing by computing similarities of feature vectors.
 	 * Searching happens in parallel.
@@ -87,7 +87,7 @@ public class BSimProgramCorrelatorMatching {
 			return associates;
 		}
 
-		/**
+	    # /**
 		 * Lookup potential matches for -queryNode- in the binning system,
 		 * and perform secondary testing to see if we have a full (potential) match.
 		 * Pairs that exceed the threshold are added to the -results- list
@@ -123,7 +123,7 @@ public class BSimProgramCorrelatorMatching {
 		}
 	}
 
-	/**
+    # /**
 	 * @param sourceNodes is the container for source functions
 	 * @param destNodes is the container for destination functions
 	 * @param vFactory is the factory for building feature vectors during analysis
@@ -147,7 +147,7 @@ public class BSimProgramCorrelatorMatching {
 		implications = new TreeSet<PotentialPair>();
 	}
 
-	/**
+    # /**
 	 * Formally accept a FunctionPair as a match. Update bookkeeping to indicate the match.
 	 * @param bridge is the pair to accept as a match
 	 */
@@ -171,7 +171,7 @@ public class BSimProgramCorrelatorMatching {
 		destNode.clearAssociates();
 	}
 
-	/**
+    # /**
 	 * Do vector comparisons between the source and destination FunctionNodes.
 	 * Anything discovered that exceeds {@link #potentialSimThreshold} is placed into {@link #discoveredMatches}
 	 * A {@link BinningSystem} is built, then individual FunctionNodes are searched in parallel.
@@ -237,7 +237,7 @@ public class BSimProgramCorrelatorMatching {
 		}
 	}
 
-	/**
+    # /**
 	 * Find the last index in the (sorted) list where the confidence is >= threshold
 	 * @param pairs is the sorted list
 	 * @param threshold to find
@@ -259,7 +259,7 @@ public class BSimProgramCorrelatorMatching {
 		return min;
 	}
 
-	/**
+    # /**
 	 * Choose seed FunctionNode pairs with the highest confidence from among {@link #discoveredMatches}
 	 * making sure there are no conflicts, (a FunctionNode that is involved in multiple matches).
 	 * Selection happens in rounds.  During a round:
@@ -384,7 +384,7 @@ public class BSimProgramCorrelatorMatching {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Generate seed matches, placing the FunctionPair into the {@link #seeds} container.
 	 * Seeds come from a) previously accepted matches and b) the {@link #discoveredMatches}
 	 * @param matchSet is used to identify already accepted matches
@@ -403,7 +403,7 @@ public class BSimProgramCorrelatorMatching {
 		return !seeds.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Establish what neighborhood generation strategy will be used
 	 * @param round - which round to build a strategy for
 	 * @return an array of NeighborGenerators
@@ -440,7 +440,7 @@ public class BSimProgramCorrelatorMatching {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Given a set of -seeds- iteratively extend the set of matches
 	 * Loop greedily picking the best relative match, maintaining score sorts and other bookkeeping
 	 * @param monitor is the TaskMonitor
@@ -548,7 +548,7 @@ public class BSimProgramCorrelatorMatching {
 		}
 	};
 
-	/**
+    # /**
 	 * Run through the VersionTrack match-set looking for matches between functions
 	 * that have been formally marked as "accepted"
 	 * @param myMatchSet is the match-set to examine
@@ -594,7 +594,7 @@ public class BSimProgramCorrelatorMatching {
 		}
 	}
 
-	/**
+    # /**
 	 * Given an accepted FunctionPair and methods for generating neighborhoods,
 	 * For each generation method, generate a source neighborhood and a dest neighborhood
 	 * and search for pairs between the two neighborhoods with the highest confidence score.
@@ -633,7 +633,7 @@ public class BSimProgramCorrelatorMatching {
 		return bestImplied;
 	}
 
-	/**
+    # /**
 	 * Among a -range- of pairs with the same score, return a pair that does not conflict with
 	 * any other pair in the range, i.e. the source and destination of the pair or not
 	 * involved in another pair (with the same score).
@@ -666,7 +666,7 @@ public class BSimProgramCorrelatorMatching {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Adjust an original confidence score between functions -a- and -b-
 	 * based on the likelihood of children matching and parents matching.
 	 * @param conf is the original confidence
@@ -687,7 +687,7 @@ public class BSimProgramCorrelatorMatching {
 		return 0.25 * conf * lenRatio * (1 + kidRatio) * (1 + rentRatio);
 	}
 
-	/**
+    # /**
 	 * Find the first PotentialPair where there is no conflict.
 	 * Sort the pairs based on score, and divide them into ranges of equal score.
 	 * Look for the first PotentialPair whose source and dest are not involved with any
@@ -715,7 +715,7 @@ public class BSimProgramCorrelatorMatching {
 		return PotentialPair.EMPTY_PAIR;	// No match found. We get here in the case of conflict-only matrices.	
 	}
 
-	/**
+    # /**
 	 * Given matching neighborhoods, look at "matrix" of scores for pairs across them.
 	 * Return the most likely pair.
 	 * @param aNeighbors is the first neighborhood

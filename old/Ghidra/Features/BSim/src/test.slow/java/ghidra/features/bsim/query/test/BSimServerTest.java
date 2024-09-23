@@ -17,7 +17,7 @@ package ghidra.features.bsim.query.test;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.net.URL;
 import java.sql.Date;
 import java.time.Instant;

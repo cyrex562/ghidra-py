@@ -40,7 +40,7 @@ public class ExtensionTablePanel extends JPanel {
 	private ExtensionTableModel tableModel;
 	private GTable table;
 
-	/**
+    # /**
 	 * Constructor; builds the panel and sets table attributes.
 	 *
 	 * @param tool the tool showing the extension dialog
@@ -89,14 +89,14 @@ public class ExtensionTablePanel extends JPanel {
 		return tableFilterPanel.getSelectedItem();
 	}
 
-	/**
+    # /**
 	 * Reloads the table with current extensions.
 	 */
 	public void refreshTable() {
 		tableModel.refreshTable();
 	}
 
-	/**
+    # /**
 	 * Returns the filter panel.
 	 *
 	 * @return the filter panel
@@ -105,7 +105,7 @@ public class ExtensionTablePanel extends JPanel {
 		return tableFilterPanel;
 	}
 
-	/**
+    # /**
 	 * Replaces the contents of the table with the given list of extensions.
 	 *
 	 * @param extensions the new model data

@@ -26,7 +26,7 @@ import java.io.FileNotFoundException;
 public class OSFileNotFoundException extends FileNotFoundException {
 
 	private Platform platform;
-	/**
+    # /**
 	 * Creates a new {@link OSFileNotFoundException}
 	 * 
 	 * @param platform The {@link Platform} associated with this exception
@@ -39,7 +39,7 @@ public class OSFileNotFoundException extends FileNotFoundException {
 		this.platform = platform;
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link OSFileNotFoundException} with an unknown module
 	 * 
 	 * @param platform The {@link Platform} associated with this exception
@@ -49,7 +49,7 @@ public class OSFileNotFoundException extends FileNotFoundException {
 		this(platform, null, fileName);
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link OSFileNotFoundException} for the current {@link Platform}
 	 * 
 	 * @param moduleName The module name associated with this exception
@@ -59,7 +59,7 @@ public class OSFileNotFoundException extends FileNotFoundException {
 		this(Platform.CURRENT_PLATFORM, moduleName, fileName);
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link OSFileNotFoundException} for the current {@link Platform} with an
 	 * unknown module
 	 * 
@@ -69,7 +69,7 @@ public class OSFileNotFoundException extends FileNotFoundException {
 		this(Platform.CURRENT_PLATFORM, null, fileName);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link Platform} associated with this exception
 	 * 
 	 * @return The {@link Platform} associated with this exception

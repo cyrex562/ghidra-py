@@ -17,7 +17,7 @@ package ghidra.framework.options;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.io.*;
+
 import java.lang.reflect.*;
 import java.nio.charset.StandardCharsets;
 import java.text.*;
@@ -84,7 +84,7 @@ public class GProperties {
 	protected TreeMap<String, Object> map; // use ordered map for deterministic serialization
 	private String propertiesName;
 
-	/**
+    # /**
 	 * Creates a new GProperties object with a non-default name.  The name serves no real purpose
 	 * other than as a hint as to what the GProperties represents
 	 * 
@@ -95,7 +95,7 @@ public class GProperties {
 		this.map = new TreeMap<>();
 	}
 
-	/**
+    # /**
 	 * Construct a new GProperties object using the given XML element.
 	 * @param root XML contents of GProperties
 	 */
@@ -108,7 +108,7 @@ public class GProperties {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct a new GProperties object using the given JSonObject.
 	 * @param root JSonObject representing a GProperties
 	 */
@@ -433,7 +433,7 @@ public class GProperties {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Outputs this GProperties to a file using Json
 	 * <P>
 	 * For example, a GProperties that is created with:
@@ -477,7 +477,7 @@ public class GProperties {
 		}
 	}
 
-	/**
+    # /**
 	 * Write the properties to a file as XML
 	 * @param file the file to write to.
 	 * @throws IOException if the file could not be written
@@ -488,7 +488,7 @@ public class GProperties {
 		FileUtilities.writeBytes(file, bytes);
 	}
 
-	/**
+    # /**
 	 * Save this object to an XML element.
 	 * @return Element XML element containing the properties
 	 */
@@ -629,7 +629,7 @@ public class GProperties {
 		return elem;
 	}
 
-	/**
+    # /**
 	 * Save this object to an JsonObject
 	 *
 	 * @return JsonObject containing the properties
@@ -802,7 +802,7 @@ public class GProperties {
 		return newElement;
 	}
 
-	/**
+    # /**
 	 * Returns true if this GProperties contains no elements
 	 * @return true if there are no properties in this GProperties
 	 */
@@ -810,7 +810,7 @@ public class GProperties {
 		return map.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Remove the object identified by the given name
 	 * 
 	 * @param name the name of the property to remove
@@ -819,14 +819,14 @@ public class GProperties {
 		map.remove(name);
 	}
 
-	/**
+    # /**
 	 * Clear all objects from this GProperties
 	 */
 	public void clear() {
 		map.clear();
 	}
 
-	/**
+    # /**
 	 * Return the number of properties in this GProperties
 	 * @return The number of properties in this GProperties
 	 */
@@ -834,7 +834,7 @@ public class GProperties {
 		return map.size();
 	}
 
-	/**
+    # /**
 	 * Return the names of the properties in this GProperties.
 	 * @return the names of the properties in this GProperties.
 	 */
@@ -861,7 +861,7 @@ public class GProperties {
 
 	//////////////////////////////////////////////////////////////
 
-	/**
+    # /**
 	 * Associates an integer value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -870,7 +870,7 @@ public class GProperties {
 		map.put(name, Integer.valueOf(value));
 	}
 
-	/**
+    # /**
 	 * Associates a byte value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -879,7 +879,7 @@ public class GProperties {
 		map.put(name, Byte.valueOf(value));
 	}
 
-	/**
+    # /**
 	 * Associates a short value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -888,7 +888,7 @@ public class GProperties {
 		map.put(name, Short.valueOf(value));
 	}
 
-	/**
+    # /**
 	 * Associates a long value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -897,7 +897,7 @@ public class GProperties {
 		map.put(name, Long.valueOf(value));
 	}
 
-	/**
+    # /**
 	 * Associates a String value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -906,7 +906,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a Color value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -915,7 +915,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a Date value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -924,7 +924,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a File value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -933,7 +933,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a KeyStroke value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -942,7 +942,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a Font value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -951,7 +951,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a boolean value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -960,7 +960,7 @@ public class GProperties {
 		map.put(name, Boolean.valueOf(value));
 	}
 
-	/**
+    # /**
 	 * Associates a float value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -969,7 +969,7 @@ public class GProperties {
 		map.put(name, Float.valueOf(value));
 	}
 
-	/**
+    # /**
 	 * Associates a double value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -978,7 +978,7 @@ public class GProperties {
 		map.put(name, Double.valueOf(value));
 	}
 
-	/**
+    # /**
 	 * Associates a sub SaveState value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -987,7 +987,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Gets the int value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -999,7 +999,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Integer.class);
 	}
 
-	/**
+    # /**
 	 * Gets the byte value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1011,7 +1011,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Byte.class);
 	}
 
-	/**
+    # /**
 	 * Gets the short value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1023,7 +1023,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Short.class);
 	}
 
-	/**
+    # /**
 	 * Gets the long value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1035,7 +1035,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Long.class);
 	}
 
-	/**
+    # /**
 	 * Gets the boolean value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1047,7 +1047,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Boolean.class);
 	}
 
-	/**
+    # /**
 	 * Gets the String value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1059,7 +1059,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, String.class);
 	}
 
-	/**
+    # /**
 	 * Gets the Color value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1071,7 +1071,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Color.class);
 	}
 
-	/**
+    # /**
 	 * Gets the Date value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1083,7 +1083,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Date.class);
 	}
 
-	/**
+    # /**
 	 * Gets the File value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1095,7 +1095,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, File.class);
 	}
 
-	/**
+    # /**
 	 * Gets the KeyStroke value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1107,7 +1107,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, KeyStroke.class);
 	}
 
-	/**
+    # /**
 	 * Gets the Font value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1119,7 +1119,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Font.class);
 	}
 
-	/**
+    # /**
 	 * Gets the float value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1131,7 +1131,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Float.class);
 	}
 
-	/**
+    # /**
 	 * Gets the double value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1143,7 +1143,7 @@ public class GProperties {
 		return getAsType(name, defaultValue, Double.class);
 	}
 
-	/**
+    # /**
 	 * Associates an integer array with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -1152,7 +1152,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a byte array with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -1161,7 +1161,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a short array with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -1170,7 +1170,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a long array with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -1179,7 +1179,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a String array with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -1188,7 +1188,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates an Enum with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The Enum value in the name,value pair.
@@ -1200,7 +1200,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a boolean array with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -1209,7 +1209,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a float array with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -1218,7 +1218,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Associates a double value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -1227,7 +1227,7 @@ public class GProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Gets the int array for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1239,7 +1239,7 @@ public class GProperties {
 		return map.containsKey(name) ? (int[]) map.get(name) : defaultValue;
 	}
 
-	/**
+    # /**
 	 * Gets the byte array for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1251,7 +1251,7 @@ public class GProperties {
 		return map.containsKey(name) ? (byte[]) map.get(name) : defaultValue;
 	}
 
-	/**
+    # /**
 	 * Gets the short array for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1263,7 +1263,7 @@ public class GProperties {
 		return map.containsKey(name) ? (short[]) map.get(name) : defaultValue;
 	}
 
-	/**
+    # /**
 	 * Gets the long array for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1275,7 +1275,7 @@ public class GProperties {
 		return map.containsKey(name) ? (long[]) map.get(name) : defaultValue;
 	}
 
-	/**
+    # /**
 	 * Gets the boolean array for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1287,7 +1287,7 @@ public class GProperties {
 		return map.containsKey(name) ? (boolean[]) map.get(name) : defaultValue;
 	}
 
-	/**
+    # /**
 	 * Gets the String array for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1299,7 +1299,7 @@ public class GProperties {
 		return map.containsKey(name) ? (String[]) map.get(name) : defaultValue;
 	}
 
-	/**
+    # /**
 	 * Gets the Enum value for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default Enum value to be returned if the name does
@@ -1325,7 +1325,7 @@ public class GProperties {
 		return defaultValue;
 	}
 
-	/**
+    # /**
 	 * Gets the float array for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1337,7 +1337,7 @@ public class GProperties {
 		return map.containsKey(name) ? (float[]) map.get(name) : defaultValue;
 	}
 
-	/**
+    # /**
 	 * Gets the double array for the given name.
 	 * @param name the name of the pair.
 	 * @param defaultValue the default value to be returned if the name does
@@ -1349,7 +1349,7 @@ public class GProperties {
 		return map.containsKey(name) ? (double[]) map.get(name) : defaultValue;
 	}
 
-	/**
+    # /**
 	 * Returns true if there is a value for the given name
 	 * 
 	 * @param name true the name of the property to check for a value
@@ -1359,7 +1359,7 @@ public class GProperties {
 		return map.containsKey(name);
 	}
 
-	/**
+    # /**
 	 * Adds an XML element to the
 	 * this GProperties. Used by plugins that have more
 	 * complicated state information that needs to be saved.
@@ -1371,7 +1371,7 @@ public class GProperties {
 		map.put(name, element);
 	}
 
-	/**
+    # /**
 	 * Returns the root of an XML sub-tree associated with the
 	 * given name.
 	 * @param name The name associated with the desired Element.

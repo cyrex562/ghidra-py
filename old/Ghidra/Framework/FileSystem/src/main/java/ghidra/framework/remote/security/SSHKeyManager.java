@@ -15,7 +15,7 @@
  */
 package ghidra.framework.remote.security;
 
-import java.io.*;
+
 import java.security.InvalidKeyException;
 import java.security.Security;
 import java.util.Arrays;

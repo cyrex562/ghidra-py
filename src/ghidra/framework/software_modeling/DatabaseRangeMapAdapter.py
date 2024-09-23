@@ -50,7 +50,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		addressMap = addrMap;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#getAddressRangeIterator(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -58,7 +58,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		return rangeMap.getAddressRanges(startAddr, endAddr);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#getAddressRangeIterator()
 	 */
 	@Override
@@ -66,7 +66,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		return rangeMap.getAddressRanges();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#getValueRangeContaining(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -74,7 +74,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		return rangeMap.getAddressRangeContaining(addr);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#getValue(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -86,7 +86,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#moveAddressRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address, long, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -95,7 +95,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		rangeMap.moveAddressRange(fromAddr, toAddr, length, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#set(ghidra.program.model.address.Address, ghidra.program.model.address.Address, byte[])
 	 */
 	@Override
@@ -104,7 +104,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		rangeMap.paintRange(start, end, field);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#clearRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -112,7 +112,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		rangeMap.clearRange(start, end);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#clearAll()
 	 */
 	@Override
@@ -125,7 +125,7 @@ public class DatabaseRangeMapAdapter implements RangeMapAdapter {
 		return rangeMap.isEmpty();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.util.RangeMapAdapter#setLanguage(ghidra.program.util.LanguageTranslator, ghidra.program.model.lang.Register, ghidra.util.task.TaskMonitor)
 	 */
 	@Override

@@ -32,7 +32,7 @@ public class AlignedStructurePacker {
 
 	private final DataOrganization dataOrganization;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param structure structure whose components need to be packed and updated
 	 * during packing (ordinal, offset, length and bit-field datatypes may be modified)
@@ -45,7 +45,7 @@ public class AlignedStructurePacker {
 		dataOrganization = structure.getDataOrganization();
 	}
 
-	/**
+    # /**
 	 * <code>StructurePackResult</code> provides access to aligned
 	 * packing results
 	 */
@@ -64,7 +64,7 @@ public class AlignedStructurePacker {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform packing on the structure components.
 	 * @return pack result data
 	 */
@@ -119,7 +119,7 @@ public class AlignedStructurePacker {
 		return new StructurePackResult(componentCount, length, alignment, componentsChanged);
 	}
 
-	/**
+    # /**
 	 * Perform structure component packing.  Specified components may be updated to reflect 
 	 * packing (ordinal, offset, length and bit-field datatypes may be modified).  The caller 
 	 * is responsible for updating structure length and component count based upon

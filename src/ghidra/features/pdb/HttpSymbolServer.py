@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URI;
@@ -45,12 +45,12 @@ public class HttpSymbolServer extends AbstractSymbolServer implements MutableTru
 	private static final int HTTP_STATUS_OK = HttpURLConnection.HTTP_OK;
 	private static final int HTTP_REQUEST_TIMEOUT_MS = 10 * 1000; // 10 seconds
 
-	/**
+    # /**
 	 * pattern to match an optional "!" in front of a typical url string
 	 */
 	private static final Pattern NAMEPAT = Pattern.compile("(\\!?)(http(s?)://.*)");
 
-	/**
+    # /**
 	 * Predicate that tests if the location string is an instance of a HttpSymbolServer location.
 	 * 
 	 * @param locationString symbol server location string
@@ -60,7 +60,7 @@ public class HttpSymbolServer extends AbstractSymbolServer implements MutableTru
 		return NAMEPAT.matcher(locationString).matches();
 	}
 
-	/**
+    # /**
 	 * Creates a new HttpSymbolServer instance from a locationString.
 	 * 
 	 * @param locationString string previously returned by {@link #getName()}
@@ -78,7 +78,7 @@ public class HttpSymbolServer extends AbstractSymbolServer implements MutableTru
 		return new HttpSymbolServer(URI.create(url), isTrusted);
 	}
 
-	/**
+    # /**
 	 * Create a trusted http symbol server
 	 * 
 	 * @param url string url
@@ -88,7 +88,7 @@ public class HttpSymbolServer extends AbstractSymbolServer implements MutableTru
 		return new HttpSymbolServer(URI.create(url), true);
 	}
 
-	/**
+    # /**
 	 * Create an untrusted http symbol server
 	 * @param url string url
 	 * @return new {@link HttpSymbolServer} instance
@@ -100,7 +100,7 @@ public class HttpSymbolServer extends AbstractSymbolServer implements MutableTru
 	private final URI serverURI;
 	private boolean trusted;
 
-	/**
+    # /**
 	 * Creates a new instance of a HttpSymbolServer.
 	 * 
 	 * @param serverURI URI / URL of the symbol server 
@@ -109,7 +109,7 @@ public class HttpSymbolServer extends AbstractSymbolServer implements MutableTru
 		this(serverURI, false);
 	}
 
-	/**
+    # /**
 	 * Creates a new instance of a HttpSymbolServer.
 	 * 
 	 * @param serverURI URI / URL of the symbol server 

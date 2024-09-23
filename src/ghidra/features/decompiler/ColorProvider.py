@@ -29,7 +29,7 @@ import ghidra.app.decompiler.ClangToken;
  */
 public interface ColorProvider {
 
-	/**
+    # /**
 	 * Returns a color for the given token
 	 * 
 	 * @param token the token

@@ -19,7 +19,7 @@ package ghidra.app.util.bin.format.xcoff;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.ByteProvider;
 
-import java.io.IOException;
+
 
 public class XCoffArchiveHeader {
 	private static final int _20 = 20;

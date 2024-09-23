@@ -15,7 +15,7 @@
  */
 package db.buffers;
 
-import java.io.IOException;
+
 import java.rmi.RemoteException;
 
 import ghidra.server.remote.RepositoryHandleImpl;
@@ -33,7 +33,7 @@ public class RemoteManagedBufferFileImpl extends RemoteBufferFileImpl
 
 	private LocalManagedBufferFile managedBufferFile;
 
-	/**
+    # /**
 	 * Construct (on the server) a remote buffer file which wraps a local buffer file on the server
 	 * @param managedBufferFile underlying managed buffer file
 	 * @param owner associated repository handle instance

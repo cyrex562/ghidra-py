@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +60,7 @@ public class C11Lines {
 	// The below access methods might be temporary until it is decided if some work should
 	//  be done within the class with methods to access the work.
 
-	/**
+    # /**
 	 * Returns the number of source files
 	 * @return the number of source files
 	 */
@@ -68,7 +68,7 @@ public class C11Lines {
 		return cFile;
 	}
 
-	/**
+    # /**
 	 * Returns the number of segments.  This also is the number of start/end records.  This is
 	 * a high-level list whereas there is a per-file list later.  Not sure if this current list
 	 * is an encompassing list or something else
@@ -78,7 +78,7 @@ public class C11Lines {
 		return cSeg;
 	}
 
-	/**
+    # /**
 	 * Returns the list of segment numbers.  This is a high-level list whereas there is a
 	 * per-file list later.  Not sure if this current list is an encompassing list or something
 	 * else
@@ -88,7 +88,7 @@ public class C11Lines {
 		return seg;
 	}
 
-	/**
+    # /**
 	 * Returns the list of line start/end records.  This is a high-level list whereas there is
 	 * a per-file list of start-end records at a lower level.  Not sure if this current list is
 	 * an encompassing list or a list of something else
@@ -98,7 +98,7 @@ public class C11Lines {
 		return startEnd;
 	}
 
-	/**
+    # /**
 	 * Returns the list of base source file indices?  This is our best guess at this time
 	 * @return the indices of the source files
 	 */
@@ -106,7 +106,7 @@ public class C11Lines {
 		return baseSrcFile;
 	}
 
-	/**
+    # /**
 	 * Returns the list of the number of segments for each source file
 	 * @return the list of the number of segments
 	 */
@@ -114,7 +114,7 @@ public class C11Lines {
 		return ccSegs;
 	}
 
-	/**
+    # /**
 	 * Returns the per-file list of base source lines, where the base is for the particular
 	 * segment
 	 * @return the per-file list of base source lines
@@ -123,7 +123,7 @@ public class C11Lines {
 		return baseSrcLines;
 	}
 
-	/**
+    # /**
 	 * Returns the per-file list of line start/end records, where the start/ends are for the
 	 * particular segment
 	 * @return the per-file list of segment start/ends
@@ -132,7 +132,7 @@ public class C11Lines {
 		return startEnds;
 	}
 
-	/**
+    # /**
 	 * The list of file names
 	 * @return the list of file names
 	 */
@@ -140,7 +140,7 @@ public class C11Lines {
 		return names;
 	}
 
-	/**
+    # /**
 	 * Returns the per-file list of segment numbers
 	 * @return the per-file list of segment numbers
 	 */
@@ -148,7 +148,7 @@ public class C11Lines {
 		return segmentNumbers;
 	}
 
-	/**
+    # /**
 	 * Returns the per-file list of per-segment list of offsets
 	 * @return the offsets
 	 */
@@ -156,7 +156,7 @@ public class C11Lines {
 		return offsets;
 	}
 
-	/**
+    # /**
 	 * Returns the per-file list of per-segment list of line numbers pertaining to the offsets
 	 * @return the line numbers
 	 */
@@ -257,7 +257,7 @@ public class C11Lines {
 			cSeg);
 	}
 
-	/**
+    # /**
 	 * Dumps this class to Writer.  This package-protected method is for debugging only
 	 * @param writer the writer
 	 * @param monitor the task monitor

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.ArrayList;
@@ -27,8 +27,8 @@ import ghidra.util.UniversalID;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * Definition of a function for things like function pointers.
- */
+# * Definition of a function for things like function pointers.
+# */
 public class FunctionDefinitionDataType extends GenericDataType implements FunctionDefinition {
 
 	private DataType returnType = DataType.DEFAULT;
@@ -80,7 +80,7 @@ public class FunctionDefinitionDataType extends GenericDataType implements Funct
 		init(sig);
 	}
 
-	/**
+    # /**
 	 * Create a Function Definition based on a Function
 	 * @param function the function to use to create a Function Signature.
 	 * @param formalSignature if true only original formal types will be retained and 
@@ -328,7 +328,7 @@ public class FunctionDefinitionDataType extends GenericDataType implements Funct
 		return hasNoReturn;
 	}
 
-	/**
+    # /**
 	 * Compare the comment of the given function signature to my comment.
 	 * 
 	 * @param sig signature to compare the comment

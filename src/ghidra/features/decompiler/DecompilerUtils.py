@@ -33,7 +33,7 @@ import ghidra.program.model.pcode.*;
 
 public class DecompilerUtils {
 
-	/**
+    # /**
 	 * Gather decompiler options from tool and program.  If tool is null or does not provide
 	 * a {@link OptionsService} provider only options stored within the program will be consumed.
 	 * @param serviceProvider plugin tool or service provider providing access to 
@@ -60,7 +60,7 @@ public class DecompilerUtils {
 		return options;
 	}
 
-	/**
+    # /**
 	 * Get the data-type associated with a Varnode.  If the Varnode is input to a CAST p-code
 	 * op, take the most specific data-type between what it was cast from and cast to.
 	 * @param vn is the Varnode to get the data-type for
@@ -76,7 +76,7 @@ public class DecompilerUtils {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Get the data-type associated with a Varnode.  If the Varnode is produce by a CAST p-code
 	 * op, take the most specific data-type between what it was cast from and cast to.
 	 * @param vn is the Varnode to get the data-type for
@@ -92,7 +92,7 @@ public class DecompilerUtils {
 		return res;
 	}
 
-	/**
+    # /**
 	 * If the token refers to an individual Varnode, return it. Otherwise return null
 	 *
 	 * @param token the token to check
@@ -126,7 +126,7 @@ public class DecompilerUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Construct the set of varnodes making up a simple forward slice of seed
 	 * @param seed Varnode where the slice starts
 	 * @return set of Varnodes in the slice
@@ -277,7 +277,7 @@ public class DecompilerUtils {
 		return pcodeops;
 	}
 
-	/**
+    # /**
 	 * Test specified variable to see if it corresponds to the auto {@code this} parameter
 	 * of the specified {@link Function}
 	 * @param var decompiler {@link HighVariable variable}
@@ -296,7 +296,7 @@ public class DecompilerUtils {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the function represented by the given token.  This will be either the
 	 * decompiled function or a function referenced within the decompiled function.
 	 *
@@ -326,7 +326,7 @@ public class DecompilerUtils {
 		return null; // unhandled case
 	}
 
-	/**
+    # /**
 	 * Find index of first field containing a ClangNode in tokenList
 	 * @param queryTokens the list of tokens of interest
 	 * @param fields the universe of fields to check
@@ -350,7 +350,7 @@ public class DecompilerUtils {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Similar to {@link #getTokens(ClangNode, AddressSetView)}, but uses the tokens from
 	 * the given view fields.  Sometimes the tokens in the model (represented by the
 	 * {@link ClangNode}) are different than the fields in the view (such as when a list of
@@ -376,7 +376,7 @@ public class DecompilerUtils {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Find all ClangNodes that have a minimum address in the AddressSetView
 	 * @param root the root of the token tree
 	 * @param addressSet the addresses to restrict
@@ -467,7 +467,7 @@ public class DecompilerUtils {
 		addrs.addRange(minAddress, maxAddress);
 	}
 
-	/**
+    # /**
 	 * Find closest addressed token to a specified token or null if one is not found.
 	 * Only adjacent tokens on the same line are examined.
 	 * @param token the query token
@@ -649,7 +649,7 @@ public class DecompilerUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Starts at the given token and finds the next enclosing brace, depending on the given 
 	 * direction.  If going forward, the next unpaired closing brace will be returned; if going
 	 * backward, the next enclosing open brace will be found.   If no enclosing braces exist, 
@@ -686,7 +686,7 @@ public class DecompilerUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Find the matching brace, '{' or '}', for the given brace token, taking into account brace nesting.
 	 * For an open brace, search forward to find the corresponding close brace.
 	 * For a close brace, search backward to find the corresponding open brace.
@@ -738,7 +738,7 @@ public class DecompilerUtils {
 		return text.startsWith("goto");
 	}
 
-	/**
+    # /**
 	 * Within a token stream, after seeing an initial comment token, collect the contiguous
 	 * sequence of tokens that are part of the comment and group them into a single
 	 * ClangCommentToken.  This makes post processing on the full comment string easier.
@@ -786,7 +786,7 @@ public class DecompilerUtils {
 		return i;
 	}
 
-	/**
+    # /**
 	 * A token hierarchy is flattened and then split into individual lines at the
 	 * ClangBreak tokens.  An array of the lines, each as a ClangLine object that owns
 	 * its respective tokens, is returned.  Sequences of comment tokens are collapsed into
@@ -840,7 +840,7 @@ public class DecompilerUtils {
 		return lines;
 	}
 
-	/**
+    # /**
 	 * Returns the data type for the given context if the context pertains to a data type
 	 *
 	 * @param context the context
@@ -859,7 +859,7 @@ public class DecompilerUtils {
 		return getDataType(token);
 	}
 
-	/**
+    # /**
 	 * Returns the data type for the given  token
 	 * 
 	 * @param token the token

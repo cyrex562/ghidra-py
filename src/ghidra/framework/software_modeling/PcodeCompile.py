@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.pcodeCPort.slgh_compile;
 
 import java.util.*;
@@ -77,7 +77,7 @@ public abstract class PcodeCompile {
 
 	public abstract SectionVector finalNamedSection(SectionVector vec, ConstructTpl section);
 
-	/**
+    # /**
 	 * Handle a sleigh 'macro' invocation, returning the resulting p-code op templates (OpTpl)
 	 * 
 	 * @param location is the file/line where the macro is invoked
@@ -915,7 +915,7 @@ public abstract class PcodeCompile {
 		return false;
 	}
 
-	/**
+    # /**
 	 * EXTREMELY IMPORTANT: keep this up to date with isInternalFunction below!!! Lookup the given
 	 * identifier as part of parsing p-code with functional syntax. Build the resulting p-code
 	 * expression object from the parsed operand expressions.
@@ -1013,7 +1013,7 @@ public abstract class PcodeCompile {
 		return false;
 	}
 
-	/**
+    # /**
 	 * EXTREMELY IMPORTANT: keep this up to date with findInternalFunction above!!! Determine if the
 	 * given identifier is a sleigh internal function. Used to prevent user-defined p-code names
 	 * from colliding with internal names

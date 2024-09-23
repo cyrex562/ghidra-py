@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.coff.archive;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

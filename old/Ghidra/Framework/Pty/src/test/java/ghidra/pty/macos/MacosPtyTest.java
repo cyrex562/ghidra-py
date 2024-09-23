@@ -17,7 +17,7 @@ package ghidra.pty.macos;
 
 import static org.junit.Assume.assumeTrue;
 
-import java.io.IOException;
+
 
 import org.junit.Before;
 

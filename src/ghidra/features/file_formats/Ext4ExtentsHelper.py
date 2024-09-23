@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.formats.gfilesystem.FSRL;
@@ -25,7 +25,7 @@ import ghidra.formats.gfilesystem.FSRL;
  */
 public class Ext4ExtentsHelper {
 
-	/**
+    # /**
 	 * Creates a {@link RangeMappedByteProvider} from the extents data found in the
 	 * inode's i_block field.
 	 *   

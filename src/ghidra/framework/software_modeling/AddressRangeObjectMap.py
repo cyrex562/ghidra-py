@@ -28,14 +28,14 @@ public class AddressRangeObjectMap<T> {
 	private List<AddressValueRange<T>> ranges;
 	AddressValueRange<T> lastRange;
 
-	/**
+    # /**
 	 * Constructs a new ObjectRangeMap
 	 */
 	public AddressRangeObjectMap() {
 		ranges = new ArrayList<AddressValueRange<T>>();
 	}
 
-	/**
+    # /**
 	 * Returns an {@link AddressRangeIterator} over all ranges that have associated objects.
 	 * @return an {@link AddressRangeIterator} over all ranges that have associated objects.
 	 */
@@ -43,7 +43,7 @@ public class AddressRangeObjectMap<T> {
 		return new SimpleAddressRangeIterator();
 	}
 
-	/**
+    # /**
 	 * Returns an {@link AddressRangeIterator} over all ranges that have associated objects within
 	 * the given range.  Object Ranges that overlap the beginning or end of the given range are
 	 * included, but have thier start or end index adjusted to be in the given range.
@@ -57,7 +57,7 @@ public class AddressRangeObjectMap<T> {
 		return new RestrictedIndexRangeIterator(start, end);
 	}
 
-	/**
+    # /**
 	 * Move all values within an address range to a new range.
 	 * @param fromAddr the first address of the range to be moved.
 	 * @param toAddr the address where to the range is to be moved.
@@ -95,7 +95,7 @@ public class AddressRangeObjectMap<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Associates the given object with all indices in the given range. The object may be null,
 	 * but an association is still established.  Use the clearRange() method to remove associations.
 	 * @param start the start of the range.
@@ -196,7 +196,7 @@ public class AddressRangeObjectMap<T> {
 		return newRange;
 	}
 
-	/**
+    # /**
 	 * Clears all objects from map
 	 */
 	public synchronized void clearAll() {
@@ -204,7 +204,7 @@ public class AddressRangeObjectMap<T> {
 		lastRange = null;
 	}
 
-	/**
+    # /**
 	 * Clears any object associations within the given range.
 	 * @param start the first index in the range to be cleared.
 	 * @param end the last index in the range to be cleared.
@@ -244,7 +244,7 @@ public class AddressRangeObjectMap<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the associated address has an associated object even if the assocated object
 	 * is null. 
 	 * @param address the index to check for an association.
@@ -265,7 +265,7 @@ public class AddressRangeObjectMap<T> {
 		return lastRange.contains(address);
 	}
 
-	/**
+    # /**
 	 * Returns the object associated with the given index or null if no object is associated with
 	 * the given index.  Note that null is a valid association so a null result could be either
 	 * no association or an actual association of the index to null.  Use the contains() method
@@ -436,7 +436,7 @@ public class AddressRangeObjectMap<T> {
 
 	}
 
-	/**
+    # /**
 	 * Get the value or hole range containing the specified address
 	 * @param addr
 	 */
@@ -484,7 +484,7 @@ class AddressValueRange<T> implements Comparable<AddressValueRange<T>> {
 	private Address end;
 	private T value;
 
-	/**
+    # /**
 	 * Constructor for numeric range with an associated value.
 	 * @param start beginning of the range
 	 * @param end end of the range
@@ -496,28 +496,28 @@ class AddressValueRange<T> implements Comparable<AddressValueRange<T>> {
 		this.value = value;
 	}
 
-	/**
+    # /**
 	 * Returns the beginning of the range.
 	 */
 	public Address getStart() {
 		return start;
 	}
 
-	/**
+    # /**
 	 * Returns the end of the range.
 	 */
 	public Address getEnd() {
 		return end;
 	}
 
-	/**
+    # /**
 	 * Returns the value associated with the range.
 	 */
 	public T getValue() {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Determines whether or not the indicated index is in the range.
 	 * @param address the index to check
 	 * @return true if the index is in this range.
@@ -526,7 +526,7 @@ class AddressValueRange<T> implements Comparable<AddressValueRange<T>> {
 		return address.compareTo(start) >= 0 && address.compareTo(end) <= 0;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
 	@Override

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -50,7 +50,7 @@ class LinkedGhidraSubFolder implements LinkedDomainFolder {
 		this.folderName = folderName;
 	}
 
-	/**
+    # /**
 	 * Get the linked root folder which corresponds to a folder-link 
 	 * (see {@link FolderLinkContentHandler}).
 	 * @return linked root folder
@@ -142,7 +142,7 @@ class LinkedGhidraSubFolder implements LinkedDomainFolder {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Get the pathname of this folder within the linked-project/repository
 	 * @return absolute linked folder path within the linked-project/repository
 	 */
@@ -204,7 +204,7 @@ class LinkedGhidraSubFolder implements LinkedDomainFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the true file within this linked folder.
 	 * @param name file name
 	 * @return file or null if not found or error occurs

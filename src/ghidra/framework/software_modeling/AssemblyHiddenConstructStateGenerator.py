@@ -34,7 +34,7 @@ import ghidra.app.plugin.processors.sleigh.symbol.SubtableSymbol;
 public class AssemblyHiddenConstructStateGenerator extends AssemblyConstructStateGenerator {
 	protected final SubtableSymbol subtableSym;
 
-	/**
+    # /**
 	 * Construct the hidden sub-table operand state generator
 	 * 
 	 * @param resolver the resolver

@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.oldfunction;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.Field;
@@ -28,8 +28,8 @@ import ghidra.util.Msg;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * 
- */
+# * 
+# */
 class OldStackFrameDB implements StackFrame {
 
 	private int localSize;      // if local size == 0, size is longest defined local
@@ -43,7 +43,7 @@ class OldStackFrameDB implements StackFrame {
 
 	private final static Variable[] emptyArray = new Variable[0];
 
-	/**
+    # /**
 	 * Construct a function stack frame.
 	 * @param function
 	 * @param variables
@@ -71,7 +71,7 @@ class OldStackFrameDB implements StackFrame {
 		return function;
 	}
 
-	/**
+    # /**
 	 * Get the function that this stack belongs to.
 	 * @return the function
 	 */
@@ -80,7 +80,7 @@ class OldStackFrameDB implements StackFrame {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Load the stack variables for this frame.
 	 */
 	private void loadStackVariables() {
@@ -139,7 +139,7 @@ class OldStackFrameDB implements StackFrame {
 		return var;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.StackFrame#createVariable(java.lang.String, int, ghidra.program.model.data.DataType, ghidra.program.model.symbol.SourceType)
 	 */
 	@Override
@@ -147,7 +147,7 @@ class OldStackFrameDB implements StackFrame {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.StackFrame#getStackVariables()
 	 */
 	@Override
@@ -161,7 +161,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Get all defined local variables.
 	 *
 	 * @return an array of all local variables
@@ -177,7 +177,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Get all defined parameters.
 	 *
 	 * @return an array of parameters.
@@ -190,7 +190,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the size of this stack frame in bytes.
 	 *
 	 * @return stack frame size
@@ -205,7 +205,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the local portion of the stack frame in bytes.
 	 *
 	 * @return local frame size
@@ -224,7 +224,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * A stack that grows negative has local references negative and
 	 * parameter references positive.  A positive growing stack has
 	 * positive locals and negative parameters.
@@ -238,7 +238,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the size of the local stack in bytes.
 	 *
 	 * @param size size of local stack
@@ -248,7 +248,7 @@ class OldStackFrameDB implements StackFrame {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Get the parameter portion of the stack frame in bytes.
 	 *
 	 * @return parameter frame size
@@ -263,7 +263,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * @return the number of parameters on the stack
 	 */
 	int getParameterCount() {
@@ -276,7 +276,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear the stack variable defined at offset
 	 *
 	 * @param offset Offset onto the stack to be cleared.
@@ -286,7 +286,7 @@ class OldStackFrameDB implements StackFrame {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Get the offset to the start of the parameters.
 	 *
 	 * @return offset
@@ -313,7 +313,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the stack variable containing offset.  This may fall in
 	 * the middle of a defined variable.
 	 *
@@ -326,7 +326,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the return address stack size.
 	 * @param offset offset of return address.
 	 */
@@ -335,7 +335,7 @@ class OldStackFrameDB implements StackFrame {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Get the stack variable containing offset.  This may fall in
 	 * the middle of a defined variable.
 	 *
@@ -364,7 +364,7 @@ class OldStackFrameDB implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the size of the negative portion of the stack
 	 *
 	 * @return the negative portion size
@@ -382,7 +382,7 @@ class OldStackFrameDB implements StackFrame {
 		return 0 - stackOffset;
 	}
 
-	/**
+    # /**
 	 * Get the size of the positive portion of the stack (including 0)
 	 *
 	 * @return the positive portion size
@@ -399,7 +399,7 @@ class OldStackFrameDB implements StackFrame {
 		return stackOffset + var.getLength();
 	}
 
-	/**
+    # /**
 	 * Get all the stack variables in the negative portion of the stack.
 	 * This EXCLUDES any variables defined before the parameter offset if the
 	 * parameter offset is negative.
@@ -436,7 +436,7 @@ class OldStackFrameDB implements StackFrame {
 		return retvars;
 	}
 
-	/**
+    # /**
 	 * Get all the stack variables in the postive portion of the stack.
 	 * This EXCLUDES any variables defined before the parameter offset if the
 	 * parameter offset is positive.
@@ -464,7 +464,7 @@ class OldStackFrameDB implements StackFrame {
 		return vars.toArray(emptyArray);
 	}
 
-	/**
+    # /**
 	 * Get a count of all the stack variables in the negative portion of the frame.
 	 * This EXCLUDES any variables defined before the parameter offset if the
 	 * parameter offset is negative.
@@ -489,7 +489,7 @@ class OldStackFrameDB implements StackFrame {
 		return index;
 	}
 
-	/**
+    # /**
 	 * Get all the stack variables in the postive portion of the stack.
 	 * This EXCLUDES any variables defined before the parameter offset if the
 	 * parameter offset is positive.
@@ -516,7 +516,7 @@ class OldStackFrameDB implements StackFrame {
 		return length - index;
 	}
 
-	/**
+    # /**
 	 * @param offset
 	 * @return boolean
 	 */
@@ -525,7 +525,7 @@ class OldStackFrameDB implements StackFrame {
 		return offset >= 0 ? growsNegative() : !growsNegative();
 	}
 
-	/**
+    # /**
 	 * Returns whether some other stack frame is "equivalent to" this one.
 	 * The stack frame is considered equal to another even if they are each
 	 * part of a different function.

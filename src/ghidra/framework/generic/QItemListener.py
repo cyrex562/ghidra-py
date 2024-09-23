@@ -25,7 +25,7 @@ package generic.concurrent;
  */
 public interface QItemListener<I, R> {
 
-	/**
+    # /**
 	 * Callback for when a item has completed processing, regardless of whether or not the item
 	 * process normally, was cancelled, or encountered an error during processing.
 	 * @param result the QResult object.

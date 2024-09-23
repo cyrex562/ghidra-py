@@ -102,7 +102,7 @@ public class CompareFunctionSizesScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Table stuff
 	 */
 

@@ -58,7 +58,7 @@ public class WildSleighAssemblerInfo extends GhidraScript {
 		printAssemblyParseResults(assemblyResolutions);
 	}
 
-	/**
+    # /**
 	 * Use a {@link WildSleighAssembler} to assemble the given {@code wildcardedInstruction}
 	 * 
 	 * @param wildcardedInstruction String of the instruction to assemble, possibly including a
@@ -102,7 +102,7 @@ public class WildSleighAssemblerInfo extends GhidraScript {
 				.collect(Collectors.toList());
 	}
 
-	/**
+    # /**
 	 * Print information about the {@link WildAssemblyResolvedPatterns} in the given list.
 	 * 
 	 * @param resolutionResults
@@ -129,7 +129,7 @@ public class WildSleighAssemblerInfo extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Print information about a single {@link WildAssemblyResolvedPatterns}, including information
 	 * about each of its wildcards.
 	 * 

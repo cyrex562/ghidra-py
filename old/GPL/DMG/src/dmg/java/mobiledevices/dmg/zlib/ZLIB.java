@@ -3,7 +3,7 @@
  */
 package mobiledevices.dmg.zlib;
 
-import java.io.*;
+
 import java.util.zip.*;
 
 /**

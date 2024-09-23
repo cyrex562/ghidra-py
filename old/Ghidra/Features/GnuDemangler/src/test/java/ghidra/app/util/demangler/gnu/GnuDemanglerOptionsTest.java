@@ -21,7 +21,7 @@ import org.junit.Test;
 
 import static ghidra.app.util.demangler.gnu.GnuDemanglerFormat.*;
 
-import java.io.IOException;
+
 
 public class GnuDemanglerOptionsTest extends AbstractGhidraHeadlessIntegrationTest {
 

@@ -34,7 +34,7 @@ public class MultipleCauses extends Throwable {
 	// The collection of causes
 	private Collection<Throwable> causes = new ArrayList<Throwable>();
 
-	/**
+    # /**
 	 * Constructs a new MultipleCauses wrapper with no causes
 	 * NOTE: it is rude to leave this empty
 	 */
@@ -42,7 +42,7 @@ public class MultipleCauses extends Throwable {
 		super("Multiple Causes");
 	}
 
-	/**
+    # /**
 	 * Constructs a new MultipleCauses wrapper with the given causes
 	 * @param causes
 	 */
@@ -51,7 +51,7 @@ public class MultipleCauses extends Throwable {
 		this.causes = causes;
 	}
 
-	/**
+    # /**
 	 * Use getCauses instead
 	 * @return null
 	 */
@@ -61,7 +61,7 @@ public class MultipleCauses extends Throwable {
 		return null; // Throwing exception causes "printStackTrace" to fail :(
 	}
 
-	/**
+    # /**
 	 * Returns the causes of the parent throwable (possibly an empty collection)
 	 * @return the collection of causes of the parent throwable
 	 * NOTE: it is rude to leave this empty. If the parent throwable has no cause, or the cause is
@@ -71,7 +71,7 @@ public class MultipleCauses extends Throwable {
 		return causes;
 	}
 
-	/**
+    # /**
 	 * Add the cause to the collection of causes (for the "parent" throwable)
 	 * @param cause the throwable to add as a cause
 	 */
@@ -79,7 +79,7 @@ public class MultipleCauses extends Throwable {
 		causes.add(cause);
 	}
 
-	/**
+    # /**
 	 * If the throwable has multiple causes, collect its causes into this MultipleCauses.
 	 * Otherwise, just add it as a cause.
 	 * @param e
@@ -93,7 +93,7 @@ public class MultipleCauses extends Throwable {
 		}
 	}
 
-	/**
+    # /**
 	 * Assuming a throwable has multiple causes, add them all to this MultipleCauses
 	 * @param e the throwable having multiple causes
 	 * 
@@ -108,7 +108,7 @@ public class MultipleCauses extends Throwable {
 		}
 	}
 
-	/**
+    # /**
 	 * Add the causes from another MultipleCauses into this one
 	 * @param that the source to copy from
 	 */
@@ -116,7 +116,7 @@ public class MultipleCauses extends Throwable {
 		this.causes.addAll(that.causes);
 	}
 
-	/**
+    # /**
 	 * Use addCause instead
 	 */
 	public synchronized Throwable initCause(Throwable cause) {

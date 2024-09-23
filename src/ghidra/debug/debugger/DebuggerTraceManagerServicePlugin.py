@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.debug.service.tracemgr;
 
 import static ghidra.framework.main.DataTreeDialogType.OPEN;
 
-import java.io.IOException;
+
 import java.lang.invoke.MethodHandles;
 import java.net.ConnectException;
 import java.util.*;

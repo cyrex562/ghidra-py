@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.bin.format.coff;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverterUtil;

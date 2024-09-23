@@ -39,7 +39,7 @@ public class BadDataType extends BuiltIn implements Dynamic {
 		super(null, "-BAD-", dtm);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getMnemonic(Settings)
 	 */
@@ -48,7 +48,7 @@ public class BadDataType extends BuiltIn implements Dynamic {
 		return getName();
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getLength()
 	 */
@@ -57,7 +57,7 @@ public class BadDataType extends BuiltIn implements Dynamic {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getDescription()
 	 */
@@ -66,7 +66,7 @@ public class BadDataType extends BuiltIn implements Dynamic {
 		return "** Bad Data Type **";
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getValue(ghidra.program.model.mem.MemBuffer, ghidra.docking.settings.Settings, int)
 	 */
@@ -80,7 +80,7 @@ public class BadDataType extends BuiltIn implements Dynamic {
 		return dt instanceof BadDataType;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getRepresentation(MemBuffer, Settings, int)
 	 */

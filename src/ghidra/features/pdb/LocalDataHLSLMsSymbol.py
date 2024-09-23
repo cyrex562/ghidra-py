@@ -30,7 +30,7 @@ public class LocalDataHLSLMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 
 	public static final int PDB_ID = 0x1152;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -40,7 +40,7 @@ public class LocalDataHLSLMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 		super(pdb, reader, DataHighLevelShaderLanguageSymbolInternals.parse(pdb, reader));
 	}
 
-	/**
+    # /**
 	 * Return the data slot.
 	 * @return the data slot.
 	 */
@@ -48,7 +48,7 @@ public class LocalDataHLSLMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 		return ((DataHighLevelShaderLanguageSymbolInternals32) internals).getDataSlot();
 	}
 
-	/**
+    # /**
 	 * Return the texture slot start.
 	 * @return the texture slot start.
 	 */
@@ -56,7 +56,7 @@ public class LocalDataHLSLMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 		return ((DataHighLevelShaderLanguageSymbolInternals32) internals).getTextureSlotStart();
 	}
 
-	/**
+    # /**
 	 * Return the sampler slot start.
 	 * @return the sampler slot start.
 	 */
@@ -64,7 +64,7 @@ public class LocalDataHLSLMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 		return ((DataHighLevelShaderLanguageSymbolInternals32) internals).getSamplerSlotStart();
 	}
 
-	/**
+    # /**
 	 * Return the UAV slot start.
 	 * @return the UAV slot start.
 	 */

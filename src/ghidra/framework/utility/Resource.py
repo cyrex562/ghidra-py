@@ -15,7 +15,7 @@
  */
 package generic.jar;
 
-import java.io.*;
+
 //
 import java.net.*;
 

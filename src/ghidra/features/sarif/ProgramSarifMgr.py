@@ -17,7 +17,7 @@ package sarif.managers;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
+
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Date;
@@ -88,7 +88,7 @@ public class ProgramSarifMgr {
 	private Map<String, Boolean> keys = new HashMap<>();
 	private Writer baseWriter;
 
-	/**
+    # /**
 	 * Constructs a new program SARIF manager for applying results to an existing
 	 * program - used by the SarifPlugin
 	 */
@@ -98,7 +98,7 @@ public class ProgramSarifMgr {
 		addManagers();
 	}
 
-	/**
+    # /**
 	 * Constructs a new program SARIF manager using the specified file for export.
 	 * The file should be an SARIF file.
 	 * 
@@ -109,7 +109,7 @@ public class ProgramSarifMgr {
 		this.file = file;
 	}
 
-	/**
+    # /**
 	 * Constructs a new program SARIF manager using the specified file as import for
 	 * creating a new program object
 	 *
@@ -121,7 +121,7 @@ public class ProgramSarifMgr {
 				: bp.getFile();
 	}
 
-	/**
+    # /**
 	 * Returns the program info from the underlying file. T``his method does not
 	 * make sense to invoke if a write is being performed to a new file.
 	 * 
@@ -225,7 +225,7 @@ public class ProgramSarifMgr {
 		return keys;
 	}
 
-	/**
+    # /**
 	 * Reads from the underlying SARIF file and populates the specified program.
 	 * 
 	 * @param program the program to load the SARIF into
@@ -281,7 +281,7 @@ public class ProgramSarifMgr {
 
 	}
 
-	/**
+    # /**
 	 * Converts from a generic format name to standard Ghidra names;
 	 *
 	 * @param name the generic format name
@@ -320,7 +320,7 @@ public class ProgramSarifMgr {
 
 	}
 
-	/**
+    # /**
 	 * Writes the specified program in SARIF into the underlying file.
 	 * 
 	 * @param program the program to write into SARIF

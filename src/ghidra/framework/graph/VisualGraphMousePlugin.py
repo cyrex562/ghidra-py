@@ -43,7 +43,7 @@ public interface VisualGraphMousePlugin<V extends VisualVertex, E extends Visual
 		return viewer;
 	}
 
-	/**
+    # /**
 	 * Returns the <b>primary/master</b> graph viewer.
 	 * 
 	 * @param e the mouse event from which to get the viewer
@@ -66,7 +66,7 @@ public interface VisualGraphMousePlugin<V extends VisualVertex, E extends Visual
 		throw new IllegalStateException("Do not have a master or satellite GraphViewer");
 	}
 
-	/**
+    # /**
 	 * Returns the satellite graph viewer.  This assumes that the mouse event originated from 
 	 * the satellite viewer.
 	 * 
@@ -86,7 +86,7 @@ public interface VisualGraphMousePlugin<V extends VisualVertex, E extends Visual
 		throw new IllegalStateException("Do not have a satellite GraphViewer");
 	}
 
-	/**
+    # /**
 	 * Returns the updater that is used to modify the primary graph viewer.
 	 * 
 	 * @param e the mouse event from which to get the viewer
@@ -98,7 +98,7 @@ public interface VisualGraphMousePlugin<V extends VisualVertex, E extends Visual
 		return updater;
 	}
 
-	/**
+    # /**
 	 * Returns the updater that is used to modify the primary graph viewer.
 	 * 
 	 * @param viewer the viewer
@@ -109,7 +109,7 @@ public interface VisualGraphMousePlugin<V extends VisualVertex, E extends Visual
 		return updater;
 	}
 
-	/**
+    # /**
 	 * Signals to perform any cleanup when this plugin is going away
 	 */
 	public default void dispose() {

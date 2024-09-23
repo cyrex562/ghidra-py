@@ -15,7 +15,7 @@
  */
 // Reloads the language specification associated with a program at runtime.
 // @category sleigh
-import java.io.IOException;
+
 
 import ghidra.app.script.GhidraScript;
 import ghidra.program.model.lang.Language;

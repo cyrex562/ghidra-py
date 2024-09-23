@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query;
 
-import java.io.*;
+
 import java.util.Map.Entry;
 import java.util.TreeMap;
 import java.util.TreeSet;

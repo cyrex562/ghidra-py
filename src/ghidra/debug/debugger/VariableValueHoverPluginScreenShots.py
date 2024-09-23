@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.debug.gui.stack.vars;
 import java.awt.Rectangle;
 import java.awt.Window;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.nio.ByteBuffer;
 import java.util.*;

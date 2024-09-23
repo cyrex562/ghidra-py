@@ -32,26 +32,26 @@ public interface BSimValueEditor {
 	public static final Color VALID_COLOR = Colors.BACKGROUND;
 	public static final Color INVALID_COLOR = Palette.getColor("mistyrose");
 
-	/**
+    # /**
 	 * Sets the editor to the given string values. They are displayed in the GUI as comma separated
 	 * values.
 	 * @param values the values to be used as the current editor values
 	 */
 	public void setValues(List<String> values);
 
-	/**
+    # /**
 	 * Returns the current set of editor values.
 	 * @return the current set of editor values
 	 */
 	public List<String> getValues();
 
-	/**
+    # /**
 	 * returns the GUI component used to allow the user to see and change editor values.
 	 * @return the GUI component used to allow the user to see and change editor values
 	 */
 	public JComponent getComponent();
 
-	/**
+    # /**
 	 * Returns true if the editor has valid values as determined by the editor's corresponding 
 	 * {@link BSimFilterType#isValidValue}.
 	 * @return true if the editor has valid values as determined by the editor's corresponding 

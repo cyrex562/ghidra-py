@@ -39,7 +39,7 @@ public class VisualVertexSatelliteRenderer<V extends VisualVertex, E extends Vis
 
 	private Color highlightColor = new GColor("color.bg.highlight.visualgraph");
 
-	/**
+    # /**
 	 * Overridden to handle painting emphasis.
 	 */
 	@Override

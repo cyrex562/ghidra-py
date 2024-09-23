@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.macho.dyld;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import ghidra.app.util.bin.BinaryReader;

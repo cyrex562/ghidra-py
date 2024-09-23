@@ -15,7 +15,7 @@
  */
 package ghidra.server.remote;
 
-import java.io.IOException;
+
 import java.util.Collections;
 
 import ghidra.framework.ApplicationProperties;
@@ -30,7 +30,7 @@ import utility.module.ModuleUtilities;
  */
 public class GhidraServerApplicationLayout extends ApplicationLayout {
 
-	/**
+    # /**
 	 * Constructs a new Ghidra server application layout object.
 	 *
 	 * @throws IOException if there was a problem getting a user directory or the application 

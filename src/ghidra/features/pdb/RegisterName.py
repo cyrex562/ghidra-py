@@ -850,7 +850,7 @@ public class RegisterName extends AbstractParsableItem {
 	private int register;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for this symbol component.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param register Register ID.
@@ -861,7 +861,7 @@ public class RegisterName extends AbstractParsableItem {
 		this.register = register;
 	}
 
-	/**
+    # /**
 	 * Tells if there is no register.
 	 * @return True if there is no register.
 	 */

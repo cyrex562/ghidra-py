@@ -23,13 +23,13 @@ package ghidra.framework.model;
  */
 public interface ProjectListener {
 	
-	/**
+    # /**
 	 * Notification that the given project is open.
 	 * @param project project that is opened
 	 */
 	public void projectOpened(Project project);
 	
-	/**
+    # /**
 	 * Notification that the given project is closed.
 	 * @param project project that is closed
 	 */

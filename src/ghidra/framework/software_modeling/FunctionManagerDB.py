@@ -1,23 +1,23 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.function;
 
 import static ghidra.program.util.FunctionChangeRecord.FunctionChangeType.*;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Predicate;
 
@@ -49,11 +49,11 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Class that manages all functions within the program; there are some
- * convenience methods on Listing to create and access functions, but
- * all function related calls are routed to this class.
- *
- */
+# * Class that manages all functions within the program; there are some
+# * convenience methods on Listing to create and access functions, but
+# * all function related calls are routed to this class.
+# *
+# */
 public class FunctionManagerDB implements FunctionManager {
 
 	private final String CALLFIXUP_MAP = "CallFixup"; // string map used to store call-fixup name
@@ -81,7 +81,7 @@ public class FunctionManagerDB implements FunctionManager {
 		return false;
 	};
 
-	/**
+    # /**
 	 * TODO: use of StringPropertyMap for callFixupMap lacks the ability to listen for changes
 	 * which may be made to the map directly (e.g., diff/merge)
 	 */
@@ -92,7 +92,7 @@ public class FunctionManagerDB implements FunctionManager {
 	Lock lock;
 	int oldAdapterVersion;
 
-	/**
+    # /**
 	 * Construct a new FunctionManager
 	 * @param dbHandle data base handle
 	 * @param addrMap address map for the program
@@ -154,7 +154,7 @@ public class FunctionManagerDB implements FunctionManager {
 		return compilerSpec.getCallingConvention(name);
 	}
 
-	/**
+    # /**
 	 * Transform an existing external symbol into an external function.
 	 * This method should only be invoked by an ExternalSymbol
 	 * @param extSpaceAddr the external space address to use when creating this external.  Any 
@@ -465,7 +465,7 @@ public class FunctionManagerDB implements FunctionManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the function with the given key.
 	 * @param key ID of the function; ID is obtained by calling
 	 * Function.getID()
@@ -658,7 +658,7 @@ public class FunctionManagerDB implements FunctionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Determine if dynamic storage will work during the upgrade of a pre-dynamic storage
 	 * function.
 	 * @param returnDataType
@@ -692,7 +692,7 @@ public class FunctionManagerDB implements FunctionManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Initialize function signature source when it was first introduced and attempt to
 	 * disable custom storage if possible.
 	 * NOTE: This method intended to be called by ProgramDB only during appropriate upgrade.
@@ -774,7 +774,7 @@ public class FunctionManagerDB implements FunctionManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Remove parameter symbols which correspond to the 'this' parameter for all
 	 * __thiscall functions using dynamic storage.
 	 * NOTE: This method intended to be called by ProgramDB only during appropriate upgrade.
@@ -873,14 +873,14 @@ public class FunctionManagerDB implements FunctionManager {
 		program.dbError(e);
 	}
 
-	/**
+    # /**
 	 * Function iterator class.
 	 */
 	private class FunctionIteratorDB implements FunctionIterator {
 
 		private SymbolIterator it;
 
-		/**
+	    # /**
 		 * Construct a function iterator over all functions.
 		 * @param external if true only external functions, else
 		 * functions within program memory regions
@@ -899,7 +899,7 @@ public class FunctionManagerDB implements FunctionManager {
 			}
 		}
 
-		/**
+	    # /**
 		 * Construct a function iterator over all functions residing in memory starting from the
 		 * specified entry point address.
 		 * @param start starting address for iteration
@@ -925,7 +925,7 @@ public class FunctionManagerDB implements FunctionManager {
 			it = program.getSymbolTable().getSymbols(set, SymbolType.FUNCTION, forward);
 		}
 
-		/**
+	    # /**
 		 * Construct a function iterator over all functions residing in specified address set.
 		 * @param addrSet address set over which to iterate
 		 * @param forward if true iterate forward from start, otherwise iterate in reverse
@@ -934,7 +934,7 @@ public class FunctionManagerDB implements FunctionManager {
 			it = program.getSymbolTable().getSymbols(addrSet, SymbolType.FUNCTION, forward);
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#hasNext()
 		 */
 		@Override
@@ -942,7 +942,7 @@ public class FunctionManagerDB implements FunctionManager {
 			return it.hasNext();
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#next()
 		 */
 		@Override
@@ -951,7 +951,7 @@ public class FunctionManagerDB implements FunctionManager {
 			return getFunction(s.getID());
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#remove()
 		 */
 		@Override
@@ -1018,7 +1018,7 @@ public class FunctionManagerDB implements FunctionManager {
 			function, null, null);
 	}
 
-	/**
+    # /**
 	 * Remove symbols in the given address set and whose parent symbol is the
 	 * symbol for the given function.
 	 */
@@ -1038,7 +1038,7 @@ public class FunctionManagerDB implements FunctionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove variable references in the given address set.
 	 */
 	private void removeVariableRefs(Function function, AddressSetView view) {
@@ -1281,7 +1281,7 @@ public class FunctionManagerDB implements FunctionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns list of thunk function keys which reference the specified referencedFunctionKey
 	 * @param referencedFunctionId
 	 * @return list of thunk function IDs or null
@@ -1323,7 +1323,7 @@ public class FunctionManagerDB implements FunctionManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Perform language translation.
 	 * Update function return storage specifications to reflect address space and register mappings
 	 * @param translator

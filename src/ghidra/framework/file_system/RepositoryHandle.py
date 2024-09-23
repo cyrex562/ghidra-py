@@ -16,7 +16,7 @@
 package ghidra.framework.remote;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 
 import db.buffers.ManagedBufferFileHandle;
 import ghidra.framework.store.*;
@@ -34,32 +34,32 @@ public interface RepositoryHandle {
 	// cause handle to be disposed prematurely.
 	public final static int CLIENT_CHECK_PERIOD = SystemUtilities.isInTestingMode() ? 2000 : 30000;
 
-	/**
+    # /**
 	 * Returns the name of this repository.
 	 * @throws IOException if an IO error occurs
 	 */
 	String getName() throws IOException;
 
-	/**
+    # /**
 	 * Returns user object associated with this handle.
 	 * @throws IOException if an IO error occurs
 	 */
 	User getUser() throws IOException;
 
-	/**
+    # /**
 	 * Returns a list of users authorized for this repository.
 	 * @throws UserAccessException
 	 * @throws IOException if an IO error occurs
 	 */
 	User[] getUserList() throws IOException;
 
-	/**
+    # /**
 	 * @return true if anonymous access allowed by this repository
 	 * @throws IOException if an IO error occurs
 	 */
 	boolean anonymousAccessAllowed() throws IOException;
 
-	/**
+    # /**
 	 * Convenience method for obtaining a list of all users
 	 * known to the server.
 	 * @return list of user names.
@@ -68,7 +68,7 @@ public interface RepositoryHandle {
 	 */
 	String[] getServerUserList() throws IOException;
 
-	/**
+    # /**
 	 * Set the list of authorized users for this repository.
 	 * @param users list of user and access permissions.
 	 * @param anonymousAccessAllowed true if anonymous access should be permitted to
@@ -78,7 +78,7 @@ public interface RepositoryHandle {
 	 */
 	void setUserList(User[] users, boolean anonymousAccessAllowed) throws IOException;
 
-	/**
+    # /**
 	 * Get list of subfolders contained within the specified parent folder.
 	 * @param folderPath parent folder path
 	 * @return list of subfolder names
@@ -88,14 +88,14 @@ public interface RepositoryHandle {
 	 */
 	String[] getSubfolderList(String folderPath) throws IOException;
 
-	/**
+    # /**
 	 * Returns the number of folder items contained within this file-system.
 	 * @throws IOException if an IO error occurs
 	 * @throws UnsupportedOperationException if file-system does not support this operation
 	 */
 	int getItemCount() throws IOException;
 
-	/**
+    # /**
 	 * Get of all items found within the specified parent folder path.
 	 * @param folderPath parent folder path
 	 * @return list of items contained within specified parent folder
@@ -105,7 +105,7 @@ public interface RepositoryHandle {
 	 */
 	RepositoryItem[] getItemList(String folderPath) throws IOException;
 
-	/**
+    # /**
 	 * Returns the RepositoryItem in the given folder with the given name
 	 * @param parentPath folder path
 	 * @param name item name
@@ -114,7 +114,7 @@ public interface RepositoryHandle {
 	 */
 	RepositoryItem getItem(String parentPath, String name) throws IOException;
 
-	/**
+    # /**
 	 * Returns the RepositoryItem with the given unique file ID
 	 * @param fileID unique file ID
 	 * @return item or null if not found
@@ -123,7 +123,7 @@ public interface RepositoryHandle {
 	 */
 	RepositoryItem getItem(String fileID) throws IOException;
 
-	/**
+    # /**
 	 * Create a new empty database item within the repository.
 	 * @param parentPath parent folder path
 	 * @param itemName new item name
@@ -141,7 +141,7 @@ public interface RepositoryHandle {
 			int bufferSize, String contentType, String projectPath) throws IOException,
 			InvalidNameException;
 
-	/**
+    # /**
 	 * Open an existing version of a database buffer file for non-update read-only use.
 	 * @param parentPath parent folder path
 	 * @param itemName name of existing data file
@@ -156,7 +156,7 @@ public interface RepositoryHandle {
 	ManagedBufferFileHandle openDatabase(String parentPath, String itemName, int version,
 			int minChangeDataVer) throws IOException;
 
-	/**
+    # /**
 	 * Open the current version for checkin of new version.
 	 * @param parentPath parent folder path
 	 * @param itemName name of existing data file
@@ -169,7 +169,7 @@ public interface RepositoryHandle {
 	ManagedBufferFileHandle openDatabase(String parentPath, String itemName, long checkoutId)
 			throws IOException;
 
-	/**
+    # /**
 	 * Returns a list of all versions for the specified item.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
@@ -178,7 +178,7 @@ public interface RepositoryHandle {
 	 */
 	Version[] getVersions(String parentPath, String itemName) throws IOException;
 
-	/**
+    # /**
 	 * Delete the specified version of an item.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
@@ -189,7 +189,7 @@ public interface RepositoryHandle {
 	 */
 	void deleteItem(String parentPath, String itemName, int version) throws IOException;
 
-	/**
+    # /**
 	 * Move an entire folder
 	 * @param oldParentPath current parent folder path
 	 * @param newParentPath new parent folder path
@@ -202,7 +202,7 @@ public interface RepositoryHandle {
 	void moveFolder(String oldParentPath, String newParentPath, String oldFolderName,
 			String newFolderName) throws InvalidNameException, IOException;
 
-	/**
+    # /**
 	 * Move an item to another folder
 	 * @param oldParentPath current parent folder path
 	 * @param newParentPath new parent folder path
@@ -215,7 +215,7 @@ public interface RepositoryHandle {
 	void moveItem(String oldParentPath, String newParentPath, String oldItemName, String newItemName)
 			throws InvalidNameException, IOException;
 
-	/**
+    # /**
 	 * Perform a checkout on the specified item.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
@@ -229,7 +229,7 @@ public interface RepositoryHandle {
 	ItemCheckoutStatus checkout(String parentPath, String itemName, CheckoutType checkoutType,
 			String projectPath) throws IOException;
 
-	/**
+    # /**
 	 * Terminate an existing item checkout.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
@@ -240,7 +240,7 @@ public interface RepositoryHandle {
 	void terminateCheckout(String parentPath, String itemName, long checkoutId, boolean notify)
 			throws IOException;
 
-	/**
+    # /**
 	 * Returns specific checkout data for an item.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
@@ -251,7 +251,7 @@ public interface RepositoryHandle {
 	ItemCheckoutStatus getCheckout(String parentPath, String itemName, long checkoutId)
 			throws IOException;
 
-	/**
+    # /**
 	 * Get a list of all checkouts for an item.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
@@ -261,14 +261,14 @@ public interface RepositoryHandle {
 	 */
 	ItemCheckoutStatus[] getCheckouts(String parentPath, String itemName) throws IOException;
 
-	/**
+    # /**
 	 * Returns true if the specified folder path exists.
 	 * @param folderPath folder path
 	 * @throws IOException if an IO error occurs
 	 */
 	boolean folderExists(String folderPath) throws IOException;
 
-	/**
+    # /**
 	 * Returns true if the specified item exists.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
@@ -276,7 +276,7 @@ public interface RepositoryHandle {
 	 */
 	boolean fileExists(String parentPath, String itemName) throws IOException;
 
-	/**
+    # /**
 	 * Returns the length of this domain file.  This size is the minimum disk space
 	 * used for storing this file, but does not account for additional storage space
 	 * used to tracks changes, etc. 
@@ -287,21 +287,21 @@ public interface RepositoryHandle {
 	 */
 	long getLength(String parentPath, String itemName) throws IOException;
 
-	/**
+    # /**
 	 * Returns true if the specified item has one or more checkouts.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
 	 */
 	boolean hasCheckouts(String parentPath, String itemName) throws IOException;
 
-	/**
+    # /**
 	 * Returns true if the specified item has an active checkin.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
 	 */
 	boolean isCheckinActive(String parentPath, String itemName) throws IOException;
 
-	/**
+    # /**
 	 * Update checkout data for an item following an update of a local checkout file.
 	 * @param parentPath parent folder path
 	 * @param itemName name of item
@@ -312,14 +312,14 @@ public interface RepositoryHandle {
 	void updateCheckoutVersion(String parentPath, String itemName, long checkoutId,
 			int checkoutVersion) throws IOException;
 
-	/**
+    # /**
 	 * Get pending change events.  Call will block until an event is available.
 	 * @return array of events
 	 * @throws IOException if error occurs.
 	 */
 	RepositoryChangeEvent[] getEvents() throws IOException;
 
-	/**
+    # /**
 	 * Notification to server that client is dropping handle.
 	 * @throws IOException if error occurs
 	 */

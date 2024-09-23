@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database;
 
 import java.lang.ref.ReferenceQueue;
@@ -23,13 +23,13 @@ import db.DBRecord;
 import ghidra.program.model.address.KeyRange;
 
 # /**
- * Generic cache implementation for objects that extend DatabaseObject. This is a reference based
- * cache such that objects are only ever automatically removed from the cache when there are no
- * references to that object. It also maintains a small "hard" cache so that recently accessed objects
- * are not prematurely removed from the cache if there are no references to them.
- * 
- * @param <T> The type of the object stored in this cache
- */
+# * Generic cache implementation for objects that extend DatabaseObject. This is a reference based
+# * cache such that objects are only ever automatically removed from the cache when there are no
+# * references to that object. It also maintains a small "hard" cache so that recently accessed objects
+# * are not prematurely removed from the cache if there are no references to them.
+# * 
+# * @param <T> The type of the object stored in this cache
+# */
 public class DBObjectCache<T extends DatabaseObject> {
 
 	private Map<Long, KeyedSoftReference<T>> map;
@@ -38,7 +38,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 	private int hardCacheSize;
 	private volatile int invalidateCount;
 
-	/**
+    # /**
 	 * Constructs a new DBObjectCache with a given hard cache size.  The hard cache size is
 	 * the minimum number of objects to keep in the cache. Typically, the cache will contain
 	 * more than this number, but the excess objects are subject to garbage collections
@@ -51,7 +51,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		hardCache = new LinkedList<>();
 	}
 
-	/**
+    # /**
 	 * Retrieves the database object with the given key from the cache.
 	 * @param key the key of the object to retrieve.
 	 * @return the cached object or null if the object with that key is not currently cached.
@@ -74,7 +74,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Retrieves the database object with the given record and associated key from the cache.
 	 * This form should be used in conjunction with record iterators to avoid unnecessary
 	 * record query during a possible object refresh.  To benefit from the record the cached
@@ -103,7 +103,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the number of objects currently in the cache.
 	 * @return the number of objects currently in the cache.
 	 */
@@ -111,7 +111,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		return map.size();
 	}
 
-	/**
+    # /**
 	 * Sets the number of objects to protect against garbage collection.
 	 * @param size the minimum number of objects to keep in the cache.
 	 */
@@ -122,7 +122,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		this.hardCacheSize = size;
 	}
 
-	/**
+    # /**
 	 * Adds the given database object to the cache.
 	 * @param data the object to add to the cache.
 	 */
@@ -134,7 +134,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		map.put(key, ref);
 	}
 
-	/**
+    # /**
 	 * Returns an List of all the cached objects.
 	 * @return an List of all the cached objects.
 	 */
@@ -150,7 +150,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Delete all objects from HashMap whose key is contained
 	 * within the specified keyRanges.
 	 * @param keyRanges key ranges to delete
@@ -168,7 +168,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete all objects from cache whose key is contained
 	 * within the specified keyRanges.  Iteration over all
 	 * keys contained within keyRanges will be performed.
@@ -189,7 +189,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete all objects from cache whose key is contained
 	 * within the specified keyRanges.  Iteration over all
 	 * keys contained within map will be performed.
@@ -213,7 +213,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 
 	}
 
-	/**
+    # /**
 	 * Return total number of keys covered by list of keyRanges.
 	 * @param keyRanges key ranges to get the number of keys
 	 * @return number of keys, or -1 if more than Long.MAX_VALUE keys
@@ -238,7 +238,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Marks all the cached objects as invalid.  Invalid objects will have to refresh themselves
 	 * before they are allowed to be used. If an invalidated object cannot refresh itself, then
 	 * the object is removed from the cache and discarded and the application can no longer use
@@ -258,7 +258,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the current invalidate counter value which corresponds to the number of time
 	 * the entire cache has been invalidated.
 	 * @return current invalidate counter value.
@@ -267,7 +267,7 @@ public class DBObjectCache<T extends DatabaseObject> {
 		return invalidateCount;
 	}
 
-	/**
+    # /**
 	 * Removes the object with the given key from the cache.
 	 * @param key the key of the object to remove.
 	 */

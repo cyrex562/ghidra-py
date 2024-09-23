@@ -30,7 +30,7 @@ public class VectorCompare {
 	public int numflip;			// Number of hashes flipped
 	public int diff;			// Difference in number of hashes
 
-	/**
+    # /**
 	 * Assume the dotproduct, acount, bcount, and intersectcount are filled in
 	 * Calculate the remaining values: min, max, numflip, and diff
 	 * Assume small vector is produced by flipping and removing hashes from big vector

@@ -30,7 +30,7 @@ public abstract class AbstractVirtualFunctionTablePathMsType extends AbstractMsT
 
 	protected List<RecordNumber> bases;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

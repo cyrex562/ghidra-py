@@ -19,7 +19,7 @@ import java.awt.Window;
 import java.awt.datatransfer.*;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 

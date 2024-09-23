@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.gui.register;
 
-import java.io.IOException;
+
 import java.util.Set;
 
 import org.junit.Before;

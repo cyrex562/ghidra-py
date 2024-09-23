@@ -16,7 +16,7 @@
 package ghidra.file.formats.ext4;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.app.util.bin.ByteProvider;
@@ -63,7 +63,7 @@ class MultiProgramMemoryByteProvider implements ByteProvider {
 		};
 	}
 
-	/**
+    # /**
 	 * TODO
 	 * Check to make sure programs are disjoint and contiguous memory spaces.
 	 */

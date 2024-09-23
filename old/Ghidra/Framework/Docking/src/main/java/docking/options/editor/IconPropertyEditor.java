@@ -18,7 +18,7 @@ package docking.options.editor;
 import java.awt.*;
 import java.beans.PropertyEditorSupport;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 

@@ -70,7 +70,7 @@ public class MDBasicName extends MDParsableItem {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the RTTI number:{0-4, or -1 if not an RTTI}
 	 * @return int RTTI number:{0-4, or -1 if not an RTTI}
 	 */
@@ -108,7 +108,7 @@ public class MDBasicName extends MDParsableItem {
 		return "";
 	}
 
-	/**
+    # /**
 	 * Return the embedded object (essentially what could stand on its own as a mangled
 	 *  symbol) that is used as part of the name of mangled object
 	 * @return The embedded object that essentially represents this MDBasicName.

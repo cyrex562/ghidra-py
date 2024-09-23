@@ -85,7 +85,7 @@ public class AssemblyResolutionResults extends AbstractSetDecorator<AssemblyReso
 
 	protected final Set<AssemblyResolution> resolutions;
 
-	/**
+    # /**
 	 * Construct a new (mutable) empty set of resolutions
 	 */
 	public AssemblyResolutionResults() {
@@ -101,7 +101,7 @@ public class AssemblyResolutionResults extends AbstractSetDecorator<AssemblyReso
 		return resolutions.add(ar);
 	}
 
-	/**
+    # /**
 	 * A synonym for {@link #addAll(Collection)} that accepts only another resolution set
 	 * 
 	 * @param that the other set
@@ -115,7 +115,7 @@ public class AssemblyResolutionResults extends AbstractSetDecorator<AssemblyReso
 		return this.resolutions.addAll(c);
 	}
 
-	/**
+    # /**
 	 * Get an unmodifiable reference to this set
 	 * 
 	 * @return the set

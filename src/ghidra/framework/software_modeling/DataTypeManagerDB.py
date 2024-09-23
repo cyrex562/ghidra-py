@@ -16,7 +16,7 @@
 package ghidra.program.database.data;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Predicate;
@@ -66,7 +66,7 @@ import ghidra.util.task.TaskMonitor;
  */
 abstract public class DataTypeManagerDB implements DataTypeManager {
 
-	/**
+    # /**
 	 * DB_VERSION should be incremented any time a change is made to the overall
 	 * database schema associated with any of the managers or the nature of the 
 	 * stored data has changed preventing compatibility with older GHIDRA versions.  
@@ -214,7 +214,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct a new temporary data-type manager. Note that this manager does not
 	 * support the save or saveAs operation.  No Language is associated with instance.
 	 * 
@@ -246,7 +246,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor for a data-type manager backed by a packed database file. When
 	 * opening for UPDATE an automatic upgrade will be performed if required.
 	 * NOTE: Default DataOrganization will be used for new archive.
@@ -354,7 +354,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor for a database-backed <code>DataTypeManagerDB</code> extension.
 	 * NOTE: This does not check for and handle data organization changes which must be
 	 * handled later (use {@link #hasDataOrganizationChange(boolean)} and 
@@ -528,7 +528,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		updateManagerAndAppVersion(openMode);
 	}
 
-	/**
+    # /**
 	 * Initialize other DB adapters after base implementation adapters has been
 	 * initialized.
 	 * @param openMode the DB open mode
@@ -553,7 +553,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		// NOTE: No change for READ_ONLY mode
 	}
 
-	/**
+    # /**
 	 * Build Parent/Child table for tracking dataType usage by other dataTypes
 	 * (e.g., arrays, pointers, etc.). Only used to populate the ParentChildAdapter
 	 * table following an upgrade because it did not previously exist. This could
@@ -595,7 +595,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Check data map for overall manager version for compatibility.
 	 * @throws VersionException if database is a newer unsupported version
 	 * @throws IOException if an IO error occurs
@@ -633,7 +633,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the manager string data map.
 	 * @param createIfNeeded if true map will be created if it does not exist
 	 * @return manager string data map or null
@@ -766,7 +766,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return set;
 	}
 
-	/**
+    # /**
 	 * Get suggested setting values for a specified settingsDefinition
 	 * @param settingsDefinition string settings definition
 	 * @return suggested values or empty array if none
@@ -792,7 +792,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the architecture-specific details associated with this datatype manager.
 	 * The data organization will be obtained from the compiler spec specified by
 	 * the program architecture.  Fixup of all composites will be performed, if store is
@@ -840,7 +840,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform updates related to a compiler spec change, including:
 	 * <ul>
 	 * <li>data organization changes which may impact datatype components and packing</li>
@@ -870,7 +870,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		// on function definitions
 	}
 
-	/**
+    # /**
 	 * Check if the active {@link #getDataOrganization()} differs from the stored data organization.
 	 * False will be returned when {@code ifPreviouslyStored} is true and data organization has never 
 	 * beeen saved.
@@ -888,7 +888,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return !Objects.equals(readDataOrganization(), getDataOrganization());
 	}
 
-	/**
+    # /**
 	 * Save the current data organization to facilitate future change detection and 
 	 * upgrades.
 	 * @throws IOException if failure occured while saving data organization.
@@ -897,7 +897,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		DataOrganizationImpl.save(getDataOrganization(), getDataMap(true), "dataOrg.");
 	}
 
-	/**
+    # /**
 	 * Read the DB-serialized data organization.  If one has not been stored a suitable
 	 * default will be returned.
 	 * @return stored data organization or suitable default.
@@ -942,7 +942,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the variable storage manager if it has been established.
 	 * @return variable storage manager or null if no associated architecture.
 	 */
@@ -950,7 +950,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return variableStorageMgr;
 	}
 
-	/**
+    # /**
 	 * Determine if transaction is active.  With proper lock established
 	 * this method may be useful for determining if a lazy record update
 	 * may be performed.
@@ -960,7 +960,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return dbHandle.isTransactionActive();
 	}
 
-	/**
+    # /**
 	 * This method should be invoked following an undo/redo or a transaction rollback situation.
 	 * This will notify {@link DataTypeManagerChangeListenerHandler} and its listeners that this 
 	 * manager has just been restored (e.g., undo/redo/rollback).
@@ -1201,7 +1201,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return cat;
 	}
 
-	/**
+    # /**
 	 * Get the category for the given ID.
 	 * 
 	 * @return null if no category exists with the given ID.
@@ -1375,7 +1375,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * When performing a replacement during conflict resolution, this method handles
 	 * an update approach for structure and union replacement.
 	 * 
@@ -1442,7 +1442,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * This method gets a ".conflict" name that is not currently used by any data
 	 * types in the datatype's category within this data type manager.  If the baseName without
 	 * conflict suffix is not used that name will be returned.
@@ -1457,7 +1457,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return getUnusedConflictName(dt.getCategoryPath(), dt);
 	}
 
-	/**
+    # /**
 	 * This method gets a ".conflict" name that is not currently used by any data
 	 * types in the indicated category within this data type manager.  If the baseName without
 	 * conflict suffix is not used that name will be returned.
@@ -1480,7 +1480,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return getUnusedConflictName(getCategory(path), dt);
 	}
 
-	/**
+    # /**
 	 * This method gets a ".conflict" name that is not currently used by any data
 	 * types in the indicated category within this data type manager.  If the baseName without
 	 * conflict suffix is not used that name will be returned.
@@ -1552,7 +1552,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Finds an datatype in this manager that is equivalent and has the same
 	 * categoryPath and has either the same name or a conflict variation of that
 	 * name.
@@ -1605,7 +1605,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return existingDataType;
 	}
 
-	/**
+    # /**
 	 * Either finds an equivalent dataType with the same categoryPath and name (or
 	 * conflict name) to the given dataType. Otherwise, it creates a new dataType in
 	 * this archive equivalent to the given dataType. If a dataType exists with same
@@ -1629,7 +1629,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return resolveNoEquivalentFound(dataType, null);
 	}
 
-	/**
+    # /**
 	 * Perform datatype resolution for types originating from a source archive (excludes
 	 * programs and built-in datatypes).
 	 * 
@@ -1675,7 +1675,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return resolveNoEquivalentFound(dataType, sourceArchive);
 	}
 
-	/**
+    # /**
 	 * Complete datatype resolution after having attempted to find an existing equivalent type. 
 	 * An attempt is made to identify a conflicting datatype and determine a conflict resolution
 	 * using the specified conflict handler.
@@ -1992,7 +1992,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Allow extensions to perform any neccessary fixups to address all datatype replacements.
 	 * @param dataTypeReplacementMap map of datatype replacements (oldID maps to replacementID).
 	 */
@@ -2039,7 +2039,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Replace one source archive (oldDTM) with another (newDTM). Any data types
 	 * whose source was the oldDTM will be changed to have a source that is the
 	 * newDTM. The oldDTM will no longer be referenced as a source by this data type
@@ -2224,7 +2224,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return getID(dt);
 	}
 
-	/**
+    # /**
 	 * Get the datatype conflict handler to be used when resolving
 	 * datatype dependencies
 	 * 
@@ -2299,7 +2299,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove the given datatype from this manager (assumes the lock has already been acquired).
 	 * 
 	 * @param dataType the dataType to be removed
@@ -2339,7 +2339,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Allow extensions to perform any neccessary fixups for all datatype removals listed.
 	 * @param deletedIds list of IDs for all datatypes which are getting removed.
 	 */
@@ -2461,7 +2461,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return (sourceArchive.equals(dtm.getLocalSourceArchive()));
 	}
 
-	/**
+    # /**
 	 * Queue a datatype to deleted in response to another datatype being deleted.
 	 * @param id datatype ID to be removed
 	 */
@@ -2469,7 +2469,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		idsToDelete.add(Long.valueOf(id));
 	}
 
-	/**
+    # /**
 	 * Queue a datatype to be replaced by another datatype in response to its referenced 
 	 * datatype being replaced.
 	 * @param oldDataType datatype to be replaced
@@ -2582,7 +2582,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove all function signature parameters from the data base that have the
 	 * indicated parent.
 	 * 
@@ -2595,7 +2595,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove all components from the data base that have the indicated parent.
 	 * 
 	 * @param parentID the parentData type's ID
@@ -2659,7 +2659,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return root;
 	}
 
-	/**
+    # /**
 	 * Gets the datatypes in the given category path
 	 * 
 	 * @param path the category path in which to look for datatypes
@@ -3513,7 +3513,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Handles IOExceptions
 	 * 
 	 * @param e the exception to handle
@@ -3526,7 +3526,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return settingsAdapter;
 	}
 
-	/**
+    # /**
 	 * Notifies the category path changed
 	 * 
 	 * @param dt       the datatype whose path changed
@@ -3635,7 +3635,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		dispose();
 	}
 
-	/**
+    # /**
 	 * Invalidates the cache.
 	 */
 	public void invalidateCache() {
@@ -3691,7 +3691,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return allowsDefaultBuiltInSettings();
 	}
 
-	/**
+    # /**
 	 * Create a key from the table ID and the key obtained from the database table;
 	 * the upper 8 bits indicates which data type table should be accessed.
 	 * 
@@ -3787,7 +3787,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * NOTE: method use should be avoided since use of a Set for containing
 	 * datatypes can cause use of DataType.equals method which should
 	 * be avoided for performance reasons.
@@ -3864,14 +3864,14 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		defaultListener.removeDataTypeManagerListener(l);
 	}
 
-	/**
+    # /**
 	 * @return true if manager is in the process of adding/creating a new type
 	 */
 	protected boolean isCreatingDataType() {
 		return creatingDataType != 0;
 	}
 
-	/**
+    # /**
 	 * Notification when data type is changed.
 	 * @param dt data type that is changed
 	 * @param isAutoChange true if change was an automatic change in response to
@@ -3889,7 +3889,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		defaultListener.dataTypeChanged(this, dt.getDataTypePath());
 	}
 
-	/**
+    # /**
 	 * Notification when data type settings have changed.
 	 * @param dt data type that is changed
 	 */
@@ -4092,7 +4092,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return dataOrganization;
 	}
 
-	/**
+    # /**
 	 * Get calling convention name corresponding to existing specified id.
 	 * @param id calling convention ID
 	 * @return calling convention name if found else unknown
@@ -4113,7 +4113,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get (and assign if needed thus requiring open transaction) the ID associated with the 
 	 * specified calling convention name.  If name is a new convention and the number of stored
 	 * convention names exceeds 127 the returned ID will correspond to the unknown calling 
@@ -4281,7 +4281,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * During any UPGRADE instantiation this method should be invoked with an open transaction 
 	 * once the associated DomainObject is ready.  This late stage upgrade is required since
 	 * it may entail resolving new array datatypes which requires this manager to be in a
@@ -4310,7 +4310,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 
 	}
 
-	/**
+    # /**
 	 * This method is only invoked during an upgrade.
 	 * 
 	 * @param monitor      task monitor
@@ -4342,7 +4342,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Fixup all composites and thier components which may be affected by a data organization
 	 * change include primitive type size changes and alignment changes.  It is highly recommended
 	 * that this program be open with exclusive access before invoking this method to avoid 
@@ -4397,7 +4397,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get composite base type which corresponds to a specified datatype.
 	 * Pointers to composites are ignored.  This method is intended to be
 	 * used by the {@link #getAllCompositesInPostDependencyOrder} method only.
@@ -4448,7 +4448,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return GraphAlgorithms.getVerticesInPostOrder(graph, GraphNavigator.topDownNavigator());
 	}
 
-	/**
+    # /**
 	 * De-duplicate equivalent conflict datatypes which share a common base data type name and
 	 * are found to be equivalent.
 	 * 
@@ -4532,7 +4532,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 
 	}
 
-	/**
+    # /**
 	 * De-duplicate equivalent conflict datatypes which share a common base data type name and
 	 * are found to be equivalent.
 	 * 
@@ -4605,7 +4605,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Process the conflict queue of newly created conflict datatypes.  Processing performs one
 	 * last attempt at locating an equivalent datatype 
 	 * 
@@ -4646,7 +4646,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * Activate resolveCache and associated resolveQueue if not already active. If
 	 * this method returns true caller is responsible for flushing resolveQueue and
 	 * invoking {@link #processResolveQueue(boolean)} when resolve complete. 
@@ -4663,7 +4663,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Queue partially resolved datatype for delayed pointer resolution
 	 * 
 	 * @param resolvedDt   partially resolved datatype
@@ -4677,7 +4677,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		resolveQueue.add(new ResolvePair(resolvedDt, definitionDt));
 	}
 
-	/**
+    # /**
 	 * Process resolve queue, which  includes:
 	 * <ul>
 	 * <li>Process any deferred pointer resolves in {@code resolveQueue}</li>
@@ -4693,7 +4693,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		processResolveQueue(deactivateCache, null);
 	}
 
-	/**
+    # /**
 	 * Process resolve queue, which  includes:
 	 * <ul>
 	 * <li>Process any deferred pointer resolves in {@code resolveQueue}</li>
@@ -4758,7 +4758,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		resolveCache.put(dt, resolvedDt);
 	}
 
-	/**
+    # /**
 	 * Check for cached equivalence of a type contained within this datatype manager
 	 * against another datatype. Every call to this method when {@code null} is
 	 * returned must be following by an invocation of
@@ -4800,7 +4800,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Set two datatypes as equivalent within the EquivalenceCache following a
 	 * datatype resolution.
 	 * 
@@ -4816,7 +4816,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		cache.setValue(key);
 	}
 
-	/**
+    # /**
 	 * Cache the result of {@link DataTypeDB#isEquivalent(DataType)} for select
 	 * implementations (e.g., {@link StructureDB}, {@link UnionDB}, and
 	 * {@link FunctionDefinitionDB}). The call to this method must be properly
@@ -4841,7 +4841,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform forced activation of equivalence cache if not already active. If true
 	 * is returned, cache will remain active until {@link #clearEquivalenceCache()}
 	 * is invoked.
@@ -4868,7 +4868,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 			(System.identityHashCode(dataType) & 0x0ffffffffL);
 	}
 
-	/**
+    # /**
 	 * {@code EquivalenceCache} - DataTypeDB equivalence cache
 	 */
 	private static class EquivalenceCache {
@@ -4876,7 +4876,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		private Map<Long, Boolean> cacheMap = new HashMap<>();
 		int outstandingRequestCount;
 
-		/**
+	    # /**
 		 * Get the cached datatype pair equivalence
 		 * 
 		 * @param key datatype identity pair (see
@@ -4888,7 +4888,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 			return cacheMap.get(key);
 		}
 
-		/**
+	    # /**
 		 * Determine if cache contains datatype pair equivalence entry
 		 * 
 		 * @param key datatype identity pair (see
@@ -4899,7 +4899,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 			return cacheMap.containsKey(key);
 		}
 
-		/**
+	    # /**
 		 * Replace or put datatype pair equivalence state into cache without impacting
 		 * its internal activity counter.
 		 * 
@@ -4910,7 +4910,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 			cacheMap.put(key, true);
 		}
 
-		/**
+	    # /**
 		 * Put datatype pair equivalence state into cache. A null value is used to
 		 * indicate an equivalence check will be determined and another call made to
 		 * this method to update the cache with the equivalence state.
@@ -4930,7 +4930,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 			}
 		}
 
-		/**
+	    # /**
 		 * Determine if one or more equivalence determinations are in-progress
 		 * 
 		 * @return true if one or more equivalence determinations are in-progress
@@ -4941,7 +4941,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 
 	}
 
-	/**
+    # /**
 	 * {@code IdsToDataTypeMap} - DataType resolve cache map
 	 */
 	private class IdsToDataTypeMap {
@@ -5001,7 +5001,7 @@ abstract public class DataTypeManagerDB implements DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Diagnostic method to determine actual number of datatype records which exist.  This
 	 * may differ from the total number of datatypes reported via {@link DataTypeManager#getAllDataTypes()}
 	 * due to the manner in which datatypes are held in-memory (i.e., name-based indexed) if

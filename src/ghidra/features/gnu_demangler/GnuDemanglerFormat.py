@@ -21,30 +21,30 @@ package ghidra.app.util.demangler.gnu;
 public enum GnuDemanglerFormat {
 	// OLD: none,auto,gnu,lucid,arm,hp,edg,gnu-v3,java,gnat
 	// NEW: none,auto,gnu-v3,java,gnat,dlang,rust
-	/** Automatic mangling format detection */
+    # /** Automatic mangling format detection */
 	AUTO("", Version.ALL),
-	/** GNUv2 mangling format */
+    # /** GNUv2 mangling format */
 	GNU("gnu", Version.DEPRECATED),
-	/** lucid mangling format */
+    # /** lucid mangling format */
 	LUCID("lucid", Version.DEPRECATED),
-	/** arm mangling format */
+    # /** arm mangling format */
 	ARM("arm", Version.DEPRECATED),
-	/** hp mangling format */
+    # /** hp mangling format */
 	HP("hp", Version.DEPRECATED),
-	/** mangling format used by the Edison Design Group (EDG) compiler */
+    # /** mangling format used by the Edison Design Group (EDG) compiler */
 	EDG("edg", Version.DEPRECATED),
-	/** GNUv3 mangling format */
+    # /** GNUv3 mangling format */
 	GNUV3("gnu-v3", Version.ALL),
-	/** Java mangling format */
+    # /** Java mangling format */
 	JAVA("java", Version.ALL),
-	/** GNAT Ada compiler mangling format */
+    # /** GNAT Ada compiler mangling format */
 	GNAT("gnat", Version.ALL),
-	/** D mangling format */
+    # /** D mangling format */
 	DLANG("dlang", Version.MODERN),
-	/** Rust mangling format */
+    # /** Rust mangling format */
 	RUST("rust", Version.MODERN);
 
-	/** the format option string used by the native demangler */
+    # /** the format option string used by the native demangler */
 	private final String format;
 	private final Version version;
 
@@ -53,7 +53,7 @@ public enum GnuDemanglerFormat {
 		this.version = version;
 	}
 
-	/**
+    # /**
 	 * Checks if this format is available in the deprecated gnu demangler
 	 * @return true if this format is available in the deprecated gnu demangler
 	 */
@@ -61,7 +61,7 @@ public enum GnuDemanglerFormat {
 		return version == Version.DEPRECATED || version == Version.ALL;
 	}
 
-	/**
+    # /**
 	 * Checks if this format is available in a modern version of the gnu demangler
 	 * @return true if this format is available in a modern version of the gnu demangler
 	 */
@@ -69,7 +69,7 @@ public enum GnuDemanglerFormat {
 		return version == Version.MODERN || version == Version.ALL;
 	}
 
-	/**
+    # /**
 	 * Checks if this format is available for the specified demangler
 	 * @param isDeprecated true for the deprecated demangler, false for the modern demangler
 	 * @return true if the format is available
@@ -78,7 +78,7 @@ public enum GnuDemanglerFormat {
 		return isDeprecated ? isDeprecatedFormat() : isModernFormat();
 	}
 
-	/**
+    # /**
 	 * Gets the format option to be passed to the demangler via the <code>-s</code> option
 	 * @return the format option to be passed to the demangler
 	 */

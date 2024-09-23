@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.mem;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.program.database.map.AddressMapDB;

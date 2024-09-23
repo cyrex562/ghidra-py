@@ -29,7 +29,7 @@ public class DeferredProcedureCallPointerTagToSymbolRecordMapEntry extends Abstr
 	private long tagValue; //MSFT API says "unsigned int"
 	private long symbolRecordOffset;
 
-	/**
+    # /**
 	 * Constructor for this symbol component.
 	 * @param reader {@link PdbByteReader} from which this data is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.

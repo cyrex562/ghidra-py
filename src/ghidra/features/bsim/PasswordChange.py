@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import generic.lsh.vector.LSHVectorFactory;
@@ -42,7 +42,7 @@ public class PasswordChange extends BSimQuery<ResponsePassword> {
 		newPassword = null;
 	}
 
-	/**
+    # /**
 	 * Clear the password data.  (Should be) used by database client immediately upon sending request to server
 	 */
 	public void clearPassword() {

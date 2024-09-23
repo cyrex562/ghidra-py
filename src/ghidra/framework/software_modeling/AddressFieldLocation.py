@@ -28,7 +28,7 @@ public class AddressFieldLocation extends CodeUnitLocation {
 
 	private String addrRepresentation;
 
-	/**
+    # /**
 	 * Construct a new AddressFieldLocation object with the 
 	 * standard string representation
 	 * and a position within that string.
@@ -49,7 +49,7 @@ public class AddressFieldLocation extends CodeUnitLocation {
 		this.addrRepresentation = addrRepresentation;
 	}
 
-	/**
+    # /**
 	 * Construct a new default AddressFieldLocation for a given program address.
 	 * 
 	 * @param program the program of the location
@@ -60,14 +60,14 @@ public class AddressFieldLocation extends CodeUnitLocation {
 		this.addrRepresentation = addr.toString();
 	}
 
-	/**
+    # /**
 	 * Default constructor needed for restoring
 	 * an address field location from XML.
 	 */
 	public AddressFieldLocation() {
 	}
 
-	/**
+    # /**
 	 * Returns the standard string representation of the address in the
 	 * address field.  If there is no address, then null should be returned.
 	 */
@@ -75,7 +75,7 @@ public class AddressFieldLocation extends CodeUnitLocation {
 		return addrRepresentation;
 	}
 
-	/**
+    # /**
 	 * Returns a String representation of this location.
 	 */
 	@Override

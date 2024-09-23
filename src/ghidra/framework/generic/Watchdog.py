@@ -31,7 +31,7 @@ public class Watchdog implements Closeable {
 	private Runnable timeoutMethod;
 	private GTimerMonitor watchdogTimer;
 
-	/**
+    # /**
 	 * Creates a watchdog (initially disarmed) that will poll for expiration every
 	 * defaultTimeoutMS milliseconds, calling {@code timeoutMethod} when triggered.
 	 * <p>
@@ -54,7 +54,7 @@ public class Watchdog implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Releases the background timer that this watchdog uses.
 	 */
 	@Override
@@ -66,7 +66,7 @@ public class Watchdog implements Closeable {
 		timeoutMethod = null;
 	}
 
-	/**
+    # /**
 	 * Called from a timer, checks to see if the watchdog is armed, and if it has expired.
 	 * <p>
 	 * Disarms itself before calling the timeoutMethod if the timeout period expired.
@@ -87,7 +87,7 @@ public class Watchdog implements Closeable {
 		watchdogExpiresAt.set(b ? System.currentTimeMillis() + defaultWatchdogTimeoutMS : -1);
 	}
 
-	/**
+    # /**
 	 * Returns the status of the watchdog.
 	 *
 	 * @return true if the watchdog is armed, false if the watchdog is disarmed
@@ -96,7 +96,7 @@ public class Watchdog implements Closeable {
 		return watchdogExpiresAt.get() > 0;
 	}
 
-	/**
+    # /**
 	 * Enables this watchdog so that at {@link #defaultWatchdogTimeoutMS} milliseconds in the
 	 * future the {@link #timeoutMethod} will be called.
 	 */
@@ -104,7 +104,7 @@ public class Watchdog implements Closeable {
 		setEnabled(true);
 	}
 
-	/**
+    # /**
 	 * Disables this watchdog.
 	 */
 	public void disarm() {

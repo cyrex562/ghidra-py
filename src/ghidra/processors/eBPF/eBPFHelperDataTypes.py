@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.analysis;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 
 import ghidra.app.plugin.core.analysis.TransientProgramProperties.SCOPE;
 import ghidra.app.util.cparser.C.CParser;
@@ -31,7 +31,7 @@ public class eBPFHelperDataTypes implements Closeable {
 
 	private static final String EBPF_DATATYPE_MGR_PROPERTY_KEY = "eBPFDataTypes";
 
-	/**
+    # /**
 	 * Ordered list of BPF helper functions.  Array index corresponds to helper ID.
 	 * A null may be substituted for a missing/unknown function definition. 
 	 * 
@@ -318,7 +318,7 @@ public class eBPFHelperDataTypes implements Closeable {
 		dtm.close();
 	}
 
-	/**
+    # /**
 	 * Get eBPF helper function definition for the specified ID.
 	 * 
 	 * @param id helper function ID
@@ -331,11 +331,11 @@ public class eBPFHelperDataTypes implements Closeable {
 		return null;
 	}
 
-	/*******************
+    # /*******************
 	 * Static Methods
 	 *******************/
 
-	/**
+    # /**
 	 * Get the BPF helper datatypes which has been populated with helper function 
 	 * definitions and related dependency datatypes.  All structure dependencies are defined
 	 * as empty structures.  In addition, the big-endian typedefs {@code __be16} and 

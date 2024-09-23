@@ -44,7 +44,7 @@ public class MacLookAndFeelManager extends LookAndFeelManager {
 			super(defaults);
 		}
 
-		/**
+	    # /**
 		 * Fix incorrectly defined default color values. These colors were not used before, but 
 		 * they are now that we override the Mac Aqua Look and Feel painters.
 		 * @return the extracted resource properties from the Mac Aqua Look and Feel with overridden
@@ -73,7 +73,7 @@ public class MacLookAndFeelManager extends LookAndFeelManager {
 			return map;
 		}
 
-		/**
+	    # /**
 		 * Overridden to change the Mac menu painters.  The default painters do not honor 
 		 * the color values set by the Look and Feel. We override the painters by using
 		 * either a Java border or our own painters that will use the theme colors.
@@ -92,7 +92,7 @@ public class MacLookAndFeelManager extends LookAndFeelManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Background painter for selected menu items. 
 	 */
 	private static class BackgroundBorder extends EmptyBorder {

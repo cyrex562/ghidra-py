@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -98,7 +98,7 @@ public class LocalVariableJava implements StructConverter {
 		index = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The given local variable must have a value at indices into the code array in
 	 * the interval [start_pc, start_pc + length), that is, between start_pc
 	 * inclusive and start_pc + length exclusive.
@@ -115,7 +115,7 @@ public class LocalVariableJava implements StructConverter {
 		return startPC & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Returns the length of this local variable in bytes.
 	 * @return the length of this local variable in bytes
 	 */
@@ -123,7 +123,7 @@ public class LocalVariableJava implements StructConverter {
 		return length & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the name_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must contain
 	 * a CONSTANT_Utf8_info structure representing a valid unqualified
@@ -134,7 +134,7 @@ public class LocalVariableJava implements StructConverter {
 		return nameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the descriptor_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must contain
 	 * a CONSTANT_Utf8_info structure representing a field descriptor
@@ -145,7 +145,7 @@ public class LocalVariableJava implements StructConverter {
 		return descriptorIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The given local variable must be at index in the local variable array of the
 	 * current frame.
 	 * <p>

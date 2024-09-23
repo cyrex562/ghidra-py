@@ -30,7 +30,7 @@ import generic.json.Json;
  */
 public class StringUtilities {
 
-	/**
+    # /**
 	 * Create the bi-directional mapping between control characters and escape sequences.
 	 */
 	private static Map<Character, String> controlToEscapeStringMap = new HashMap<>();
@@ -64,14 +64,14 @@ public class StringUtilities {
 	public static final Pattern DOUBLE_QUOTED_STRING_PATTERN =
 		Pattern.compile("^\"((?:[^\\\\\"]|\\\\.)*)\"$");
 
-	/**
+    # /**
 	 * The platform specific string that is the line separator.
 	 */
 	public final static String LINE_SEPARATOR = System.getProperty("line.separator");
 
 	public static final int UNICODE_REPLACEMENT = 0xFFFD;
 
-	/**
+    # /**
 	 * Unicode Byte Order Marks (BOM) characters are special characters in the Unicode character
 	 * space that signal endian-ness of the text.
 	 * <p>
@@ -91,7 +91,7 @@ public class StringUtilities {
 		// utility class; can't create
 	}
 
-	/**
+    # /**
 	 * Returns true if the given character is a special character. For example a '\n' or '\\'. A
 	 * value of 0 is not considered special for this purpose as it is handled separately because it
 	 * has more varied use cases.
@@ -103,7 +103,7 @@ public class StringUtilities {
 		return controlToEscapeStringMap.containsKey(c);
 	}
 
-	/**
+    # /**
 	 * Returns true if the given codePoint (ie. full unicode 32bit character) is a special
 	 * character. For example a '\n' or '\\'. A value of 0 is not considered special for this
 	 * purpose as it is handled separately because it has more varied use cases.
@@ -116,7 +116,7 @@ public class StringUtilities {
 			isControlCharacterOrBackslash((char) codePoint);
 	}
 
-	/**
+    # /**
 	 * Determines if a string is enclosed in double quotes (ASCII 34 (0x22))
 	 * 
 	 * @param str String to test for double-quote enclosure
@@ -127,7 +127,7 @@ public class StringUtilities {
 		return m.matches();
 	}
 
-	/**
+    # /**
 	 * If the given string is enclosed in double quotes, extract the inner text. Otherwise, return
 	 * the given string unmodified.
 	 * 
@@ -143,7 +143,7 @@ public class StringUtilities {
 		return str;
 	}
 
-	/**
+    # /**
 	 * Returns true if the character is in displayable character range
 	 * 
 	 * @param c the character
@@ -153,7 +153,7 @@ public class StringUtilities {
 		return c >= 0x20 && c < 0x7F;
 	}
 
-	/**
+    # /**
 	 * Returns true if all the given sequences are either null or only whitespace
 	 *
 	 * @param sequences the sequences to check
@@ -176,7 +176,7 @@ public class StringUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Converts the character into a string. If the character is special, it will actually render
 	 * the character. For example, given '\n' the output would be "\\n".
 	 * 
@@ -191,7 +191,7 @@ public class StringUtilities {
 		return escaped;
 	}
 
-	/**
+    # /**
 	 * Returns a count of how many times the 'occur' char appears in the strings.
 	 * 
 	 * @param string the string to look inside
@@ -223,7 +223,7 @@ public class StringUtilities {
 		return Character.isWhitespace(string.charAt(string.length() - 1));
 	}
 
-	/**
+    # /**
 	 * Generate a quoted string from US-ASCII character bytes assuming 1-byte chars.
 	 * <p>
 	 * Special characters and non-printable characters will be escaped using C character escape
@@ -250,7 +250,7 @@ public class StringUtilities {
 		return "\"" + str + "\"";
 	}
 
-	/**
+    # /**
 	 * Generate a quoted string from US-ASCII characters, where each character is charSize bytes.
 	 * <p>
 	 * Special characters and non-printable characters will be escaped using C character escape
@@ -315,7 +315,7 @@ public class StringUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the given string starts with <code>prefix</code> ignoring case.
 	 * <p>
 	 * Note: This method is equivalent to calling:
@@ -335,7 +335,7 @@ public class StringUtilities {
 		return string.regionMatches(true, 0, prefix, 0, prefix.length());
 	}
 
-	/**
+    # /**
 	 * Returns true if the given string ends with <code>postfix</code>, ignoring case.
 	 * <p>
 	 * Note: This method is equivalent to calling:
@@ -357,7 +357,7 @@ public class StringUtilities {
 		return string.regionMatches(true, startIndex, postfix, 0, postfix.length());
 	}
 
-	/**
+    # /**
 	 * Returns true if all the given <code>searches</code> are contained in the given string.
 	 *
 	 * @param toSearch the string to search
@@ -377,7 +377,7 @@ public class StringUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns true if all the given <code>searches</code> are contained in the given string,
 	 * ignoring case.
 	 *
@@ -398,7 +398,7 @@ public class StringUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns true if any of the given <code>searches</code> are contained in the given string,
 	 * ignoring case.
 	 *
@@ -419,7 +419,7 @@ public class StringUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the index of the first whole word occurrence of the search word within the given
 	 * text. A whole word is defined as the character before and after the occurrence must not be a
 	 * JavaIdentifierPart.
@@ -444,7 +444,7 @@ public class StringUtilities {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Returns true if the substring within the text string starting at startIndex and having the
 	 * given length is a whole word. A whole word is defined as the character before and after the
 	 * occurrence must not be a JavaIdentifierPart.
@@ -471,7 +471,7 @@ public class StringUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Convert tabs in the given string to spaces using a default tab width of 8 spaces.
 	 *
 	 * @param str string containing tabs
@@ -481,7 +481,7 @@ public class StringUtilities {
 		return convertTabsToSpaces(str, DEFAULT_TAB_SIZE);
 	}
 
-	/**
+    # /**
 	 * Convert tabs in the given string to spaces.
 	 *
 	 * @param str string containing tabs
@@ -517,7 +517,7 @@ public class StringUtilities {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Parses a string containing multiple lines into an array where each element in the array
 	 * contains only a single line. The "\n" character is used as the delimiter for lines.
 	 * <p>
@@ -532,7 +532,7 @@ public class StringUtilities {
 		return toLines(str, true);
 	}
 
-	/**
+    # /**
 	 * Parses a string containing multiple lines into an array where each element in the array
 	 * contains only a single line. The "\n" character is used as the delimiter for lines.
 	 *
@@ -556,7 +556,7 @@ public class StringUtilities {
 		return lines;
 	}
 
-	/**
+    # /**
 	 * Enforces the given length upon the given string by trimming and then padding as necessary.
 	 *
 	 * @param s the String to fix
@@ -570,7 +570,7 @@ public class StringUtilities {
 		return padded;
 	}
 
-	/**
+    # /**
 	 * Pads the source string to the specified length, using the filler string as the pad. If length
 	 * is negative, left justifies the string, appending the filler; if length is positive, right
 	 * justifies the source string.
@@ -608,7 +608,7 @@ public class StringUtilities {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Splits the given string into lines using <code>\n</code> and then pads each string with the
 	 * given pad string. Finally, the updated lines are formed into a single string.
 	 * <p>
@@ -634,7 +634,7 @@ public class StringUtilities {
 		return buffy.toString();
 	}
 
-	/**
+    # /**
 	 * Finds the word at the given index in the given string. For example, the string "The tree is
 	 * green" and the index of 5, the result would be "tree".
 	 *
@@ -646,7 +646,7 @@ public class StringUtilities {
 		return findWord(s, index, null);
 	}
 
-	/**
+    # /**
 	 * Finds the word at the given index in the given string; if the word contains the given
 	 * charToAllow, then allow it in the string. For example, the string "The tree* is green" and
 	 * the index of 5, charToAllow is '*', then the result would be "tree*".
@@ -701,7 +701,7 @@ public class StringUtilities {
 		return wordLocation;
 	}
 
-	/**
+    # /**
 	 * Loosely defined as a character that we would expected to be an normal ascii content meant for
 	 * consumption by a human. Also, provided allows chars will pass the test.
 	 *
@@ -723,7 +723,7 @@ public class StringUtilities {
 		return isValidCLanguageChar(c);
 	}
 
-	/**
+    # /**
 	 * Finds the starting position of the last word in the given string.
 	 *
 	 * @param s the string to search
@@ -746,7 +746,7 @@ public class StringUtilities {
 		return pos;
 	}
 
-	/**
+    # /**
 	 * Takes a path-like string and retrieves the last non-empty item. Examples:
 	 * <ul>
 	 * <li>StringUtilities.getLastWord("/This/is/my/last/word/", "/") returns word</li>
@@ -773,7 +773,7 @@ public class StringUtilities {
 		return last;
 	}
 
-	/**
+    # /**
 	 * Converts an integer into a string. For example, given an integer 0x41424344, the returned
 	 * string would be "ABCD".
 	 * 
@@ -791,7 +791,7 @@ public class StringUtilities {
 		return new String(bytes);
 	}
 
-	/**
+    # /**
 	 * Creates a JSON string for the given object using all of its fields. To control the fields
 	 * that are in the result string, see {@link Json}.
 	 * 
@@ -815,7 +815,7 @@ public class StringUtilities {
 		return indented;
 	}
 
-	/**
+    # /**
 	 * Merge two strings into one. If one string contains the other, then the largest is returned.
 	 * If both strings are null then null is returned. If both strings are empty, the empty string
 	 * is returned. If the original two strings differ, this adds the second string to the first
@@ -855,7 +855,7 @@ public class StringUtilities {
 		return ""; // No strings but at least one empty string, so return empty string.
 	}
 
-	/**
+    # /**
 	 * Limits the given string to the given <code>max</code> number of characters. If the string is
 	 * larger than the given length, then it will be trimmed to fit that length <b>after adding
 	 * ellipses</b>
@@ -889,7 +889,7 @@ public class StringUtilities {
 		return s.substring(0, i + 1);
 	}
 
-	/**
+    # /**
 	 * Trims the given string the <code>max</code> number of characters. Ellipses will be added to
 	 * signal that content was removed. Thus, the actual number of removed characters will be
 	 * <code>(s.length() - max) + {@value StringUtilities#ELLIPSES}</code> length.
@@ -934,7 +934,7 @@ public class StringUtilities {
 		return buffy.toString();
 	}
 
-	/**
+    # /**
 	 * This method looks for all occurrences of successive asterisks (i.e., "**") and replace with a
 	 * single asterisk, which is an equivalent usage in Ghidra. This is necessary due to some symbol
 	 * names which cause the pattern matching process to become unusable. An example string that
@@ -955,7 +955,7 @@ public class StringUtilities {
 		return value.replaceAll("\\*{2,}", "*");
 	}
 
-	/**
+    # /**
 	 * Returns true if the character is OK to be contained inside C language string. That is, the
 	 * string should not be tokenized on this char.
 	 *
@@ -966,7 +966,7 @@ public class StringUtilities {
 		return Character.isLetterOrDigit(c) || c == '_'; // underscore
 	}
 
-	/**
+    # /**
 	 * Returns true if the given character is within the ascii range.
 	 *
 	 * @param c the char to check
@@ -976,7 +976,7 @@ public class StringUtilities {
 		return (0x20 <= c) && (c <= 0x7f);
 	}
 
-	/**
+    # /**
 	 * Returns true if the given code point is within the ascii range.
 	 *
 	 * @param codePoint the codePoint to check
@@ -986,7 +986,7 @@ public class StringUtilities {
 		return (0x20 <= codePoint) && (codePoint <= 0x7f);
 	}
 
-	/**
+    # /**
 	 * Replaces escaped characters in a string to corresponding control characters. For example a
 	 * string containing a backslash character followed by a 'n' character would be replaced with a
 	 * single line feed (0x0a) character. One use for this is to to allow users to type strings in a
@@ -1029,7 +1029,7 @@ public class StringUtilities {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Attempt to handle character escape sequence. Note that only a single Java character will be
 	 * produced which limits the range of valid character value.
 	 *
@@ -1063,7 +1063,7 @@ public class StringUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Replaces known control characters in a string to corresponding escape sequences. For example
 	 * a string containing a line feed character would be converted to backslash character followed
 	 * by an 'n' character. One use for this is to display strings in a manner to easily see the
@@ -1092,7 +1092,7 @@ public class StringUtilities {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Maps known control characters to corresponding escape sequences. For example a line feed
 	 * character would be converted to backslash '\\' character followed by an 'n' character. One
 	 * use for this is to display strings in a manner to easily see the embedded control characters.
@@ -1110,7 +1110,7 @@ public class StringUtilities {
 		return new String(new int[] { codePoint }, 0, 1);
 	}
 
-	/**
+    # /**
 	 * About the worst way to wrap lines ever
 	 */
 	public static class LineWrapper {
@@ -1193,7 +1193,7 @@ public class StringUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Wrap the given string at whitespace to best fit within the given line width
 	 * 
 	 * <p>

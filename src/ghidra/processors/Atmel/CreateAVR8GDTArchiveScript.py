@@ -22,7 +22,7 @@
 //@category Data Types
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import org.bouncycastle.util.Arrays;
@@ -141,7 +141,7 @@ public class CreateAVR8GDTArchiveScript extends GhidraScript {
 		dtMgr.close();
 	}
 
-	/**
+    # /**
 	 * Turn string into a file, delete old archive if it exists
 	 * 
 	 * @param dataTypeFile
@@ -161,7 +161,7 @@ public class CreateAVR8GDTArchiveScript extends GhidraScript {
 		return f;
 	}
 
-	/**
+    # /**
 	 * parse a single AVR8 variant
 	 * 
 	 * @param procName name of processor
@@ -185,7 +185,7 @@ public class CreateAVR8GDTArchiveScript extends GhidraScript {
 		storeExtraDefinitions(procName, dtMgr, openTypes, results.preProcessor());
 	}
 
-	/**
+    # /**
 	 * get extra defines special for the AVR8 that describe memory locations per variant
 	 * 
 	 * @param procName processor variant

@@ -18,7 +18,7 @@ package ghidra.framework.main.datatree;
 import static org.junit.Assert.*;
 
 import java.awt.Window;
-import java.io.IOException;
+
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
 

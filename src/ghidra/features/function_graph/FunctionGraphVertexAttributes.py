@@ -172,7 +172,7 @@ public class FunctionGraphVertexAttributes {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Clears all vertex locations (including group vertex locations).
 	 * @param functionGraph function graph
 	 */
@@ -212,7 +212,7 @@ public class FunctionGraphVertexAttributes {
 		}
 	}
 
-	/**
+    # /**
 	 * Note: this method does not clear group vertex locations.
 	 * @param functionGraph function graph
 	 */

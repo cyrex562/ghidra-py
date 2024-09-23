@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.progmgr;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.framework.plugintool.PluginTool;

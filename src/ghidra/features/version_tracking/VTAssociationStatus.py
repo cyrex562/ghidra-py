@@ -18,13 +18,13 @@ package ghidra.feature.vt.api.main;
 
 public enum VTAssociationStatus {
 
-	/** 
+    # /** 
 	 * An association with this status is available for accepting (applying).  Also,
 	 * no competing associations are currently {@link #ACCEPTED}.
 	 */
 	AVAILABLE("Available"),
 
-	/** 
+    # /** 
 	 * An association with this status means no other competing associations can add markup
 	 * items.  Any competing associations cannot have markup items applied while 
 	 * one of them has this status. In this status, not all markup items have been applied, as 
@@ -32,13 +32,13 @@ public enum VTAssociationStatus {
 	 */
 	ACCEPTED("Accepted"),
 
-	/**
+    # /**
 	 * A competing association has been accepted and an association with this status cannot be
 	 * accepted.
 	 */
 	BLOCKED("Blocked"),
 
-	/**
+    # /**
 	 * The user has explicitly rejected this association.
 	 */
 	REJECTED("Rejected");
@@ -53,7 +53,7 @@ public enum VTAssociationStatus {
 		return displayName;
 	}
 
-	/**
+    # /**
 	 * Convenience method that returns true if match with this status can transition to the
 	 * accepted status.
 	 * @return true if match with this status can transition to the
@@ -63,7 +63,7 @@ public enum VTAssociationStatus {
 		return this == ACCEPTED || this == AVAILABLE;
 	}
 
-	/**
+    # /**
 	 * Convenience method that returns true if match with this status cannot be transitioned to
 	 * an accepted status.
 	 * @return true if match with this status cannot be transitioned to

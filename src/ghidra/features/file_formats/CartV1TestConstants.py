@@ -21,7 +21,7 @@ import com.google.gson.JsonObject;
 import generic.test.AbstractGTest;
 
 public class CartV1TestConstants {
-	/**
+    # /**
 	 * Original content that was CaRT-ed for these tests
 	 */
 	public static final byte[] TEST_ORIGINAL_DATA = AbstractGTest.bytes(0x00, 0x01, 0x02, 0x03,
@@ -43,14 +43,14 @@ public class CartV1TestConstants {
 		0xe5, 0xe6, 0xe7, 0xe8, 0xe9, 0xea, 0xeb, 0xec, 0xed, 0xee, 0xef, 0xf0, 0xf1, 0xf2, 0xf3,
 		0xf4, 0xf5, 0xf6, 0xf7, 0xf8, 0xf9, 0xfa, 0xfb, 0xfc, 0xfd, 0xfe, 0xff);
 
-	/**
+    # /**
 	 * Standard key that will be used for testing.
 	 * 
 	 * Usually matches the default ARC4 key, but may be easily changed here if a new value is used
 	 */
 	public static final byte[] TEST_STD_KEY = CartV1Constants.DEFAULT_ARC4_KEY;
 
-	/**
+    # /**
 	 * Test CaRT of a 256 byte walk using the standard default key
 	 */
 	public static final byte[] TEST_CART_GOOD_STD_KEY = AbstractGTest.bytes(0x43, 0x41, 0x52, 0x54,
@@ -91,12 +91,12 @@ public class CartV1TestConstants {
 		0x43, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x01, 0x00, 0x00, 0x00, 0x00,
 		0x00, 0x00, 0xb7, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);
 
-	/**
+    # /**
 	 * Private key used to create TEST_CART_GOOD_PRIVATE_KEY_ABC
 	 */
 	public static final String PRIVATE_KEY = "abc";
 
-	/**
+    # /**
 	 * Standard key that will be used for testing.
 	 * 
 	 * Usually matches the default ARC4 key, but may be easily changed here if a new value is used
@@ -104,7 +104,7 @@ public class CartV1TestConstants {
 	public static final byte[] TEST_PRIVATE_KEY = AbstractGTest.bytes(0x61, 0x62, 0x63, 0x00, 0x00,
 		0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);
 
-	/**
+    # /**
 	 * Test CaRT of a 256 byte walk using a private key of "abc"
 	 */
 	public static final byte[] TEST_CART_GOOD_PRIVATE_KEY_ABC = AbstractGTest.bytes(0x43, 0x41,
@@ -145,69 +145,69 @@ public class CartV1TestConstants {
 		0x52, 0x41, 0x43, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x01, 0x00, 0x00,
 		0x00, 0x00, 0x00, 0x00, 0xb7, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);
 
-	/**
+    # /**
 	 * Original file name of file CaRTed as TEST_CART_GOOD_STD_KEY and
 	 * TEST_CART_GOOD_PRIVATE_KEY_ABC
 	 */
 	public static final String CARTED_FILE_NAME = "CaRT_TestBin";
 
-	/**
+    # /**
 	 * Original file size of CaRT-ed test data
 	 */
 	public static final int CARTED_FILE_SIZE = 256;
 
-	/**
+    # /**
 	 * Compressed size of CaRT-ed test data.
 	 * Note: This is bigger than the original size because there are no repeated bytes and it
 	 * doesn't compress well.
 	 */
 	public static final int CARTED_COMPRESSED_FILE_SIZE = 267;
 
-	/**
+    # /**
 	 * MD5 of the original data
 	 */
 	public static final String TEST_MD5 = "e2c865db4162bed963bfaa9ef6ac18f0";
 
-	/**
+    # /**
 	 * SHA1 of the original data
 	 */
 	public static final String TEST_SHA1 = "4916d6bdb7f78e6803698cab32d1586ea457dfc8";
 
-	/**
+    # /**
 	 * SHA256 of the original data
 	 */
 	public static final String TEST_SHA256 =
 		"40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880";
 
-	/**
+    # /**
 	 * The raw data (JSON string) of the optional header data in the test
 	 */
 	public static final String OPTIONAL_HEADER_DATA_RAW = "{\"name\":\"" + CARTED_FILE_NAME + "\"}";
 
-	/**
+    # /**
 	 * Length of the raw optional header data
 	 */
 	public static final long OPTIONAL_HEADER_LENGTH = OPTIONAL_HEADER_DATA_RAW.length();
 
-	/**
+    # /**
 	 * Raw optional header data as a parsed JSON object
 	 */
 	public static final JsonObject OPTIONAL_HEADER_DATA =
 		new Gson().fromJson(OPTIONAL_HEADER_DATA_RAW, JsonObject.class);
 
-	/**
+    # /**
 	 * The raw data (JSON string) of the optional footer data in the test
 	 */
 	public static final String OPTIONAL_FOOTER_DATA_RAW =
 		"{" + "\"length\":\"" + CARTED_FILE_SIZE + "\"," + "\"md5\":\"" + TEST_MD5 + "\"," +
 			"\"sha1\":\"" + TEST_SHA1 + "\"," + "\"sha256\":\"" + TEST_SHA256 + "\"" + "}";
 
-	/**
+    # /**
 	 * Length of the raw optional footer data
 	 */
 	public static final long OPTIONAL_FOOTER_LENGTH = OPTIONAL_FOOTER_DATA_RAW.length();
 
-	/**
+    # /**
 	 * Raw optional footer data as a parsed JSON object
 	 */
 	public static final JsonObject OPTIONAL_FOOTER_DATA =

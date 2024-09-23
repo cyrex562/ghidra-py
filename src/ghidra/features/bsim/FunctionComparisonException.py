@@ -23,7 +23,7 @@ import ghidra.util.exception.UsrException;
  */
 public class FunctionComparisonException extends UsrException {
 
-	/**
+    # /**
 	 * Constructor
 	 * @param msg a message indicating details of the error.
 	 */
@@ -31,7 +31,7 @@ public class FunctionComparisonException extends UsrException {
 		super(msg);
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * @param msg a message indicating details of the error.
 	 * @param cause another exception indicating the cause that led to this error exception.

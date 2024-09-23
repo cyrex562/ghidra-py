@@ -41,7 +41,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 
 	private int flagByte;
 
-	/**
+    # /**
 	 * Constructor for this symbol component.
 	 * @param reader {@link PdbByteReader} from which this data is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -64,7 +64,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		builder.append(ds.out(hasDebugInformationForOptimizedCode(), "Optimized Debug Info"));
 	}
 
-	/**
+    # /**
 	 * Indicates if has frame pointer present
 	 * @return true if frame pointer is present
 	 */
@@ -72,7 +72,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		return (flagByte & HAS_FRAME_POINTER_PRESENT) != 0;
 	}
 
-	/**
+    # /**
 	 * Indicates if has a an interrupt return
 	 * @return true if has an interrupt return
 	 */
@@ -80,7 +80,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		return (flagByte & HAS_INTERRUPT_RETURN) != 0;
 	}
 
-	/**
+    # /**
 	 * Indicates if has a far return
 	 * @return true if has a far return
 	 */
@@ -88,7 +88,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		return (flagByte & HAS_FAR_RETURN) != 0;
 	}
 
-	/**
+    # /**
 	 * Indicates if does not return
 	 * @return true if does not return
 	 */
@@ -96,7 +96,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		return (flagByte & DOES_NOT_RETURN) != 0;
 	}
 
-	/**
+    # /**
 	 * Indicates if label is not reached
 	 * @return true if label is not reached
 	 */
@@ -104,7 +104,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		return (flagByte & LABEL_NOT_REACHED) != 0;
 	}
 
-	/**
+    # /**
 	 * Indicates if has custom calling convention.
 	 * <p>
 	 * Not sure how this is weighed against a function spec that has a valid calling convention,
@@ -116,7 +116,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		return (flagByte & HAS_CUSTOM_CALLING_CONVENTION) != 0;
 	}
 
-	/**
+    # /**
 	 * Indicates if marked as {@code noinline}
 	 * @return true if marked as {@code noinline}
 	 */
@@ -124,7 +124,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		return (flagByte & MARKED_AS_NO_INLINE) != 0;
 	}
 
-	/**
+    # /**
 	 * Indicates if has debug information for optimized code
 	 * @return true if has debug information for optimized code
 	 */
@@ -132,7 +132,7 @@ public class ProcedureFlags extends AbstractParsableItem {
 		return (flagByte & HAS_DEBUG_INFORMATION_FOR_OPTIMIZED_CODE) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if seems like a function.  Not necessary, but (seems) sufficient, to indicate a
 	 *  function (this is Ghidra functionality not specified in PDB API)
 	 * @return true if function indicated

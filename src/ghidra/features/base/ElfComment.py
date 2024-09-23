@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.elf.info;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.framework.options.Options;

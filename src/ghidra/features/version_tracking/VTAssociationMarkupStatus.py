@@ -51,7 +51,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		status |= hasErrors ? HAS_ERRORS : 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if the status has been initialized.  It is initialized when an association is
 	 * accepted.
 	 * @return  true if the status has been initialized.
@@ -60,7 +60,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return (status & INITIALIZED) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if there is one or markup items that have not had a decision made on them.
 	 * @return true if there is one or markup items that have not had a decision made on them.
 	 */
@@ -68,7 +68,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return (status & HAS_UNEXAMINED) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if there is one or markup items that have been applied.
 	 * @return true if there is one or markup items that have been applied.
 	 */
@@ -76,7 +76,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return (status & HAS_APPLIED) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if there is one or markup items that have been rejected.
 	 * @return true if there is one or markup items that have been rejected.
 	 */
@@ -84,7 +84,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return (status & HAS_REJECTED) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if there is one or markup items that have been marked as "Don't Care".
 	 * @return true if there is one or markup items that have been marked as "Don't Care".
 	 */
@@ -92,7 +92,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return (status & HAS_DONT_CARE) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if there is one or markup items that have been marked as "Don't Know".
 	 * @return true if there is one or markup items that have been marked as "Don't Know".
 	 */
@@ -100,7 +100,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return (status & HAS_DONT_KNOW) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if there is one or markup items that encountered an error when attempting to apply.
 	 * @return true if there is one or markup items that encountered an error when attempting to apply.
 	 */
@@ -108,7 +108,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return (status & HAS_ERRORS) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns the combined bit fields for the various status bits.
 	 * @return the combine bit fields value for the status.
 	 */
@@ -129,7 +129,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return status;
 	}
 
-	/**
+    # /**
 	 * Returns true if all the markup items have been applied
 	 * @return true if all the markup items have been applied
 	 */
@@ -142,7 +142,7 @@ public class VTAssociationMarkupStatus implements Comparable<VTAssociationMarkup
 		return status - o.status;
 	}
 
-	/**
+    # /**
 	 * Returns a description of this status, detailing the various status values.
 	 * @return  a description of this status, detailing the various status values.
 	 */

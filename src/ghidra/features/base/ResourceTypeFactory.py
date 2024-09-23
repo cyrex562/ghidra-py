@@ -19,7 +19,7 @@ package ghidra.app.util.bin.format.macos.rm;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.macos.cfm.CFragResource;
 
-import java.io.IOException;
+
 
 public final class ResourceTypeFactory {
 

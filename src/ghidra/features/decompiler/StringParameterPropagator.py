@@ -518,7 +518,7 @@ public class StringParameterPropagator extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Analyze a functions references
 	 * @param constUse 
 	 */

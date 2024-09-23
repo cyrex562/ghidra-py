@@ -32,43 +32,43 @@ import ghidra.framework.model.DomainFolder;
  */
 public interface ProjectTreeContext {
 
-	/**
+    # /**
 	 * Returns the number of folders selected in the tree.
 	 * @return the number of folders selected in the tree.
 	 */
 	public int getFolderCount();
 
-	/**
+    # /**
 	 * Returns the number of files selected in the tree.
 	 * @return the number of files selected in the tree.
 	 */
 	public int getFileCount();
 
-	/**
+    # /**
 	 * Returns a list of {@link DomainFolder}s selected in the tree.
 	 * @return  a list of {@link DomainFolder}s selected in the tree.
 	 */
 	public List<DomainFolder> getSelectedFolders();
 
-	/**
+    # /**
 	 * Returns a list of {@link DomainFile}s selected in the tree.
 	 * @return  a list of {@link DomainFile}s selected in the tree.
 	 */
 	public List<DomainFile> getSelectedFiles();
 
-	/**
+    # /**
 	 * Returns the project data tree component.
 	 * @return  the project data tree component.
 	 */
 	public DataTree getTree();
 
-	/**
+    # /**
 	 * Returns the list of selected {@link TreePath}s selected.
 	 * @return  the list of selected {@link TreePath}s selected.
 	 */
 	public TreePath[] getSelectionPaths();
 
-	/**
+    # /**
 	 * Returns the node that represents the context object for this context
 	 * @return the node
 	 */

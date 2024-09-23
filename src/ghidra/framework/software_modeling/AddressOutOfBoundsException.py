@@ -23,14 +23,14 @@ package ghidra.program.model.address;
  * @version 1999-03-31
  */
 public class AddressOutOfBoundsException extends RuntimeException {
-	/**
+    # /**
 	 * <p>Constructs an AddressOutOfBoundsException with no detail message.<p>
 	 */
 	public AddressOutOfBoundsException() {
 		super("Address not contained in memory.");
 	}
 
-	/**
+    # /**
 	 * <p>Constructs an AddressOutOfBoundsException with the specified
 	 * detail message.<p>
 	 *

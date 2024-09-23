@@ -50,7 +50,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 	protected String compilerVersionString;
 	protected List<String> stringList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -86,7 +86,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		pdb.setTargetProcessor(processor);
 	}
 
-	/**
+    # /**
 	 * Returns the packed flags.
 	 * @return the packed flags.
 	 */
@@ -94,7 +94,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Returns the language used.
 	 * @return Language.
 	 */
@@ -102,7 +102,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return language.toString();
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled for "Edit and Continue."
 	 * @return True if it was compiled for "Edit and Continue."
 	 */
@@ -110,7 +110,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return compiledForEditAndContinue;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was not compiled with debug information.
 	 * @return True if it was not compiled with debug information.
 	 */
@@ -118,7 +118,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return notCompiledWithDebugInfo;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled with link-time code generation.
 	 * @return True if it was compiled with link-time code generation.
 	 */
@@ -126,7 +126,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return compiledWithLinkTimeCodeGeneration;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled with Bzalign.
 	 * @return True if compiled with Bzalign.
 	 */
@@ -134,7 +134,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return compiledWithBzalignNoDataAlign;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target has managed code and/or data present.
 	 * @return True if has managed code/data present.
 	 */
@@ -142,7 +142,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return managedCodeDataPresent;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled with /GS buffer security checks.
 	 * @return True if it was compiled with /GS buffer security checks.
 	 */
@@ -150,7 +150,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return compiledWithGsBufferSecurityChecks;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled with /hotpatch.
 	 * @return True if it was compiled with /hotpatch.
 	 */
@@ -158,7 +158,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return compiledWithHotPatch;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was converted with CVTCIL.
 	 * @return True if was converted with CVTCIL.
 	 */
@@ -166,7 +166,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return convertedWithCvtcil;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target is a Microsoft Intermediate Language netmodule.
 	 * @return True if it is a Microsoft Intermediate Language netmodule.
 	 */
@@ -174,7 +174,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return microsoftIntermediateLanguageNetModule;
 	}
 
-	/**
+    # /**
 	 * Returns the processor.
 	 * @return the processor.
 	 */
@@ -182,7 +182,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return processor;
 	}
 
-	/**
+    # /**
 	 * Returns the front end major version number.
 	 * @return Front end major version number.
 	 */
@@ -190,7 +190,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return frontEndMajorVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the front end minor version number.
 	 * @return Front end minor version number.
 	 */
@@ -198,7 +198,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return frontEndMinorVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the front end build version number.
 	 * @return Front end build version number.
 	 */
@@ -206,7 +206,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return frontEndBuildVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the back end major version number.
 	 * @return Back end major version number.
 	 */
@@ -214,7 +214,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return backEndMajorVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the back end minor version number.
 	 * @return Back end minor version number.
 	 */
@@ -222,7 +222,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return backEndMinorVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the back end build version number.
 	 * @return Back end build version number.
 	 */
@@ -230,7 +230,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return backEndBuildVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the compiler version string.
 	 * @return Compiler version string.
 	 */
@@ -238,7 +238,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		return compilerVersionString;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link List}&lt;{@link String}&gt; of additional strings.
 	 * @return List of additional strings.
 	 */
@@ -285,7 +285,7 @@ public abstract class AbstractCompile2MsSymbol extends AbstractMsSymbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Internal method that breaks out the flag values from the aggregate integral type.
 	 * @param flagsIn {@code long} containing unsigned int value.
 	 */

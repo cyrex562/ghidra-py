@@ -38,7 +38,7 @@ public class MIPS_ElfRelocationHandler
 	private static final int MIPS_LOW26 = 0x03FFFFFF;
 	private static final int MIPS_LOW21 = 0x001FFFFF;
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public MIPS_ElfRelocationHandler() {
@@ -813,7 +813,7 @@ public class MIPS_ElfRelocationHandler
 		return (val << shift) >> shift;
 	}
 
-	/**
+    # /**
 	 * Processes all pending HI16 relocations which match with the specified LO16 relocation
 	 * @param elfRelocationContext
 	 * @param lo16RelocType
@@ -834,7 +834,7 @@ public class MIPS_ElfRelocationHandler
 		}
 	}
 
-	/**
+    # /**
 	 * Complete HI16 relocation (R_MIPS_HI16, R_MIPS16_HI16, R_MICROMIPS_HI16) using
 	 * specified LO16 relocation data
 	 * @param elfRelocationContext
@@ -888,7 +888,7 @@ public class MIPS_ElfRelocationHandler
 		}
 	}
 
-	/**
+    # /**
 	 * Processes all pending GOT16 relocations which match with the specified LO16 relocation
 	 * @param elfRelocationContext
 	 * @param lo16RelocType
@@ -909,7 +909,7 @@ public class MIPS_ElfRelocationHandler
 		}
 	}
 
-	/**
+    # /**
 	 * Complete Local GOT16 relocation (R_MIPS_GOT16, R_MIPS16_GOT16, R_MICROMIPS_GOT16) using
 	 * specified LO16 relocation data.  Section GOT entry will be utilized.
 	 * @param elfRelocationContext
@@ -976,7 +976,7 @@ public class MIPS_ElfRelocationHandler
 		return value - gp;
 	}
 
-	/**
+    # /**
 	 * <code>MIPS_DeferredRelocation</code> is used to capture a relocation whose processing
 	 * must be deferred.
 	 */

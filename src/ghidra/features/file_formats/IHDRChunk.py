@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.png;
 
-import java.io.IOException;
+
 import java.nio.ByteBuffer;
 
 public class IHDRChunk {
@@ -33,7 +33,7 @@ public class IHDRChunk {
 	private int bitsPerPalette;
 	private int rowFilterBytes;
 
-	/**
+    # /**
 	 * Represents the IHDR chunk to process and return the important
 	 * metadata within this chunk.
 	 * @param chunk the chunk to process as an IHDR chunk
@@ -73,7 +73,7 @@ public class IHDRChunk {
 
 	}
 
-	/**
+    # /**
 	 * <pre>
 	   From PNG Specs, http://www.w3.org/TR/PNG-Chunks.html
 	   Color    Allowed    Interpretation

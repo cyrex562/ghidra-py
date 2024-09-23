@@ -177,7 +177,7 @@ public class RecoveredClassHelper {
 		return vftableToClassMap.get(vftableAddress);
 	}
 
-	/**
+    # /**
 	 * Method to create a mappings between the list of vftable references to the vftables they reference
 	 * @param referencesToVftable addresses that reference the given vftable address
 	 * @param vftableAddress the given vftable address
@@ -196,7 +196,7 @@ public class RecoveredClassHelper {
 		return vftableRefToVftableMap.get(vftableReference);
 	}
 
-	/**
+    # /**
 	 * Method to update the functionToVftableListMap with the given input
 	 * @param vftableRefToFunctionMapping a mapping of a vftable reference to the function it is in
 	 * @throws CancelledException if cancelled
@@ -228,7 +228,7 @@ public class RecoveredClassHelper {
 		return functionToVftableRefsMap.get(function);
 	}
 
-	/**
+    # /**
 	 * Method to add function to map of class it is contained in some functions are in
 	 * multiple classes becuase they have references to multiple class vtables either
 	 * because they have an inlined parent
@@ -266,7 +266,7 @@ public class RecoveredClassHelper {
 		return functionToClassesMap.get(function);
 	}
 
-	/**
+    # /**
 	 * Method to find all the vftables in the program
 	 * @return list of all vftable symbols
 	 * @throws CancelledException when cancelled
@@ -297,7 +297,7 @@ public class RecoveredClassHelper {
 		return vftableSymbolList;
 	}
 
-	/**
+    # /**
 	 * Method to return a symbol with the given name in the given namespace which is in the given
 	 * parent namespace or null if one is not found
 	 * @param parentNamespaceName name of parent namespace
@@ -327,7 +327,7 @@ public class RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to return a list symbol in the given namespace which is in the given
 	 * parent namespace or null if one is not found
 	 * @param parentNamespaceName name of parent namespace
@@ -399,7 +399,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to create a map of calling address to called function for the given function.
 	 * @param function the given function
 	 * @param getThunkedFunction if true, use the thunked function in the map, if false use the 
@@ -623,7 +623,7 @@ public class RecoveredClassHelper {
 		return allInlinedDestructors;
 	}
 
-	/**
+    # /**
 	 * Method to determine if referenced vftables are from the same class
 	 * @param vftableReferences list of vftable references
 	 * @return true if all listed vftable references refer to vftables from the same class, false otherwise
@@ -648,7 +648,7 @@ public class RecoveredClassHelper {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to return the first reference to the class vftable in the given function
 	 * @param recoveredClass the given class
 	 * @param function the given function
@@ -686,7 +686,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to get a sorted list of both vftable and call refs to ancestor classes of the given
 	 * class in the given function
 	 * @param function the given function
@@ -720,7 +720,7 @@ public class RecoveredClassHelper {
 		return listOfAncestorRefs;
 	}
 
-	/**
+    # /**
 	 * Method to create a map of all references to classes in the given function. Classes are, for 
 	 * this purpose, referenced if they a vftable belonging to a class is referenced or if a 
 	 * constructor/destructor function from a class is called
@@ -798,7 +798,7 @@ public class RecoveredClassHelper {
 		return referenceToParentMap;
 	}
 
-	/**
+    # /**
 	 * Get the list of incorrect FID functions
 	 * @return the list of incorrect FID functions
 	 */
@@ -806,7 +806,7 @@ public class RecoveredClassHelper {
 		return badFIDFunctions;
 	}
 
-	/**
+    # /**
 	 * Get the list of resolved functions that had multiple FID possibilities before but could
 	 * be resolved to the correct name.
 	 * @return the list of resolved FID functions
@@ -815,7 +815,7 @@ public class RecoveredClassHelper {
 		return badFIDFunctions;
 	}
 
-	/**
+    # /**
 	 * Get the fixed functions that had incorrect data types due to incorrect FID (includes those
 	 * incorrect due to decompiler propagation of bad types from bad FID)
 	 * @return the fixed functions that had incorrect data types due to incorrect FID
@@ -864,7 +864,7 @@ public class RecoveredClassHelper {
 		return numApart;
 	}
 
-	/**
+    # /**
 	 * Method to figure out which of the multiple parents of a class contain the given function in their class
 	 * @param recoveredClass the given class with multiple parents
 	 * @param function the given function that is in one of the parent classes
@@ -934,7 +934,7 @@ public class RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to get a list of addresses that are references from the given address
 	 * @param address the given address
 	 * @return a list of addresses that are references from the given address
@@ -954,7 +954,7 @@ public class RecoveredClassHelper {
 		return refFromAddresses;
 	}
 
-	/**
+    # /**
 	 * Retrieve the first stored vftable from the pcodeOps in the list
 	 * @param storedPcodeOps list of offset/PcodeOp pairs
 	 * @return first referenced vftable address
@@ -979,7 +979,7 @@ public class RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to get a list of addresses that reference the given vftable address (only non-offcut ones)
 	 * @param vftableAddress the given vftable address
 	 * @return list of non-offcut addresses that reference the given vftable address
@@ -1003,7 +1003,7 @@ public class RecoveredClassHelper {
 		return referencesToVftable;
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given function is an inlined destructor or indeterminate in any class
 	 * @param function the given function
 	 * @return true if the given function is an inlined function in any class, false if it is not an
@@ -1032,7 +1032,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to create mappings for the current class and use the decompiler
 	 * to figure out class member data information
 	 * @param recoveredClass class that function belongs to
@@ -1089,7 +1089,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to update the given class's maps and class member data using the given function info
 	 * @param function the given function
 	 * @param recoveredClass the given class
@@ -1131,7 +1131,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to retrieve a filled-in structure associated with the given function's high variable
 	 * that stores the given first vftable reference address in the given function.
 	 * @param recoveredClass the given class
@@ -1211,7 +1211,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine which variable in the decompiler stores the vftable address
 	 * @param highFunction the decompiler high function
 	 * @param vftableReference the address that points to a vftable
@@ -1246,7 +1246,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * temporarily change the function signature of the given constructor or destructor to replace
 	 * any empty structure with same size undefined datatype and to also remove the functin from
 	 * its namespace to remove the empty structure from the this param. This is so that the
@@ -1299,7 +1299,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given possible ancestor is an ancestor of any of the listed classes
 	 * @param recoveredClasses List of classes
 	 * @param possibleAncestor possible ancestor of one of the listed classes
@@ -1318,7 +1318,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to determine if a class is an ancestor of another class
 	 * @param recoveredClass the class with possible ancestor
 	 * @param possibleAncestorClass the class that might be ancestor of recoveredClass
@@ -1345,7 +1345,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to return subList of offset/pcodeOp pairs from the given list that are contained in the current function
 	 * @param function The given function
 	 * @param pcodeOps The list of pcodeOps to filter
@@ -1368,7 +1368,7 @@ public class RecoveredClassHelper {
 		return pcodeOps;
 	}
 
-	/**
+    # /**
 	 * Method to get the listing address that the given PcodeOp is associated with
 	 * @param pcodeOp the given PcodeOp
 	 * @return the address the given PcodeOp is associated with
@@ -1388,7 +1388,7 @@ public class RecoveredClassHelper {
 		return calledFunction;
 	}
 
-	/**
+    # /**
 	 * method to update the two given classes with their related class hierarchy
 	 * @param parentClass parent of childClass
 	 * @param childClass child of parentClass
@@ -1410,7 +1410,7 @@ public class RecoveredClassHelper {
 		return;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve only the classes that have vfunctions from the given list of classes
 	 * @param recoveredClasses the given list of classes
 	 * @return a list of classes that have vfunctions
@@ -1431,7 +1431,7 @@ public class RecoveredClassHelper {
 		return classesWithVFunctions;
 	}
 
-	/**
+    # /**
 	 * Method that returns a list of all parents with virtual functions for the given class
 	 * @param recoveredClass given class
 	 * @return list of all parents with virtual functions for given class or empty list if none
@@ -1465,7 +1465,7 @@ public class RecoveredClassHelper {
 		return parentsWithVFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to get list of the given class's ancestors that have virtual functions or functions inherited virtual functions(ie a vftable)
 	 * @param recoveredClass the given class
 	 * @return list of the given class's ancestors that have virtual functions or functions inherited virtual functions(ie a vftable)
@@ -1495,7 +1495,7 @@ public class RecoveredClassHelper {
 		return ancestorsWithVFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to get ancestors that do not have vfunctions
 	 * @param recoveredClass the given class
 	 * @return List of ancestors without vfunctions
@@ -1522,7 +1522,7 @@ public class RecoveredClassHelper {
 		return ancestorsWithoutVfunctions;
 	}
 
-	/**
+    # /**
 	 * Method to test whether class has ancestor without virtual functions or not
 	 * @param recoveredClass given class object
 	 * @return true if class has an ancestor class without virtual functions
@@ -1540,7 +1540,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to get all ancestor class constructors for the given class
 	 * @param recoveredClass given class
 	 * @return List of all functions that are constructors of an ancestor class of given class
@@ -1580,7 +1580,7 @@ public class RecoveredClassHelper {
 		return allAncestorConstructors;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve a list of destructors for the ancestors of the given class
 	 * @param recoveredClass the given class
 	 * @return a list of destructors for the ancestors of the given class
@@ -1622,7 +1622,7 @@ public class RecoveredClassHelper {
 		return allAncestorDestructors;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve all constructors of descendants of the given class
 	 * @param recoveredClass the given class
 	 * @return a list of all constructors of descendants of the given class
@@ -1651,7 +1651,7 @@ public class RecoveredClassHelper {
 		return allDescendantConstructors;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve all destructors of descendants of the given class
 	 * @param recoveredClass the given class
 	 * @return a list of all destructors of descendants of the given class
@@ -1679,7 +1679,7 @@ public class RecoveredClassHelper {
 		return allDescendantDestructors;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve a list of possible parent class constructors to the given function
 	 * @param function the given function
 	 * @return a list of possible parent class constructors to the given function
@@ -1728,7 +1728,7 @@ public class RecoveredClassHelper {
 		return possibleParentConstructors;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve a list of possible parent class destructors to the given function
 	 * @param function the given function
 	 * @return a list of possible parent class destructors to the given function
@@ -1776,7 +1776,7 @@ public class RecoveredClassHelper {
 		return possibleParentDestructors;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve a single common function on both lists
 	 * @param list1 first list of functions
 	 * @param list2 second list of functions
@@ -1801,7 +1801,7 @@ public class RecoveredClassHelper {
 		return commonFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve a set of functions contained in both of the given sets of functions
 	 * @param set1 the first set of functions
 	 * @param set2 the second set of functions
@@ -1815,7 +1815,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine the constructors/destructors using known parent
 	 * @param recoveredClass RecoveredClass object
 	 * @param parentClass possible parent class of the given RecoveredClass
@@ -1924,7 +1924,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to retrieve all types of class destructors including normal destructors, non-this
 	 * destructors and inline destructors(does not include deleting destructors since they are
 	 * really a vfunction)
@@ -1941,7 +1941,7 @@ public class RecoveredClassHelper {
 		return allClassDestructors;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve all types of class constructors including normal constructors and inline
 	 * constructors
 	 * @param recoveredClass the given class
@@ -1958,7 +1958,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to add constructor function to the given class and collect member data information
 	 * @param recoveredClass given class
 	 * @param constructorFunction given function
@@ -1986,7 +1986,7 @@ public class RecoveredClassHelper {
 		addToAllConstructors(constructorFunction);
 	}
 
-	/**
+    # /**
 	 * Method to add inlined constructor function to the given class
 	 * @param recoveredClass given class
 	 * @param inlinedConstructorFunction given function
@@ -2001,7 +2001,7 @@ public class RecoveredClassHelper {
 		addToAllInlinedConstructors(inlinedConstructorFunction);
 	}
 
-	/**
+    # /**
 	 * Method to add destructor to the given class
 	 * @param recoveredClass given class
 	 * @param destructorFunction given destructor function
@@ -2015,7 +2015,7 @@ public class RecoveredClassHelper {
 		addToAllDestructors(destructorFunction);
 	}
 
-	/**
+    # /**
 	 * Method to add inlined destructor to the given class
 	 * @param recoveredClass given class
 	 * @param inlinedDestructorFunction given function
@@ -2030,7 +2030,7 @@ public class RecoveredClassHelper {
 		addToAllInlinedDestructors(inlinedDestructorFunction);
 	}
 
-	/**
+    # /**
 	 * Method to create a mapping between the order it appears and the vftable for the given class
 	 * @param recoveredClass the given class
 	 * @throws CancelledException if cancelled
@@ -2069,7 +2069,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create a map for each class between the order a vftable is seen in a class and the vftable itself
 	 * @param recoveredClasses list of classes to processes
 	 * @throws CancelledException if cancelled
@@ -2083,7 +2083,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 *
 	 * @param referenceToClassMap map of references to the class that contains the referenced function
 	 * @param referencesToConstructors list of addresses referring to constructors
@@ -2116,7 +2116,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to process a found inlined constructor
 	 * @param recoveredClass the class being processed
 	 * @param inlinedConstructorFunction the function containing an inlined ancestor constructor
@@ -2176,7 +2176,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to process an inlinedDestructor function
 	 * @param recoveredClass the class the inlinedDestructor is in
 	 * @param inlinedDestructorFunction the inlined function
@@ -2234,7 +2234,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to get the address that references the first vftable in the given function
 	 * @param function the given function
 	 * @return the address in the given function that references the first referenced vftable or
@@ -2250,7 +2250,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to make the given function a thiscall
 	 * @param function the given function
 	 * @throws InvalidInputException if issues setting return type
@@ -2271,7 +2271,7 @@ public class RecoveredClassHelper {
 			function.getParameters());
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given function calls a known constructor or inlined constructor
 	 * @param Set of called functions
 	 * @return true if calling function calls a known constructor or inlined constructor, false otherwise
@@ -2291,7 +2291,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given function calls a known denstructor or inlined destructor 
 	 * @param Set of called functions
 	 * @return true if function calls a known constructor or inlined constructor, false otherwise
@@ -2350,7 +2350,7 @@ public class RecoveredClassHelper {
 		return calledFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to get the total number of constructors in the given list of classes
 	 * @param recoveredClasses list of classes to process
 	 * @return number of constructor functions in all classes
@@ -2368,7 +2368,7 @@ public class RecoveredClassHelper {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to return the total number of destructors in the given list of classes
 	 * @param recoveredClasses the list of classes
 	 * @return the total number of destructors in the given list of classes
@@ -2386,7 +2386,7 @@ public class RecoveredClassHelper {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to return the total number of inlined destructors in the given list of classes
 	 * @param recoveredClasses the list of classes
 	 * @return the total number of inlined destructors in the given list of classes
@@ -2404,7 +2404,7 @@ public class RecoveredClassHelper {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to get the total number of deleting destructors in the given list of classes
 	 * @param recoveredClasses the list of classes
 	 * @return the total number of deleting destructors in the given list of classes
@@ -2422,7 +2422,7 @@ public class RecoveredClassHelper {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the total number of clone functions assigned to all the classes
 	 * @param recoveredClasses List of classes
 	 * @return total number of clone functions assigned to classes
@@ -2440,7 +2440,7 @@ public class RecoveredClassHelper {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to return the total number of vbase destructors in the given list of classes
 	 * @param recoveredClasses the list of classes
 	 * @return the the total number of vbase destructors in the given list of classes
@@ -2460,7 +2460,7 @@ public class RecoveredClassHelper {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to get the total number of virtual functions (or functions that inherit from virtual functions) in the given list of classes
 	 * @param recoveredClasses the list of classes
 	 * @return the total number of virtual functions (or functions that inherit from virtual functions) in the given list of classes
@@ -2483,7 +2483,7 @@ public class RecoveredClassHelper {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to get a list of functions from the list of classes that could not be determined whether they
 	 * were constructors or destructors
 	 * @param recoveredClasses the list of classes
@@ -2508,7 +2508,7 @@ public class RecoveredClassHelper {
 		return remainingIndeterminates;
 	}
 
-	/**
+    # /**
 	 *
 	 * @param referenceToClassMap map from reference to class the referenced function is in
 	 * @param referencesToDestructors list of addresses referring to destructors
@@ -2539,7 +2539,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to use existing pdb names to assign class constructors and destructors
 	 * @param recoveredClasses List of classes
 	 * @throws CircularDependencyException if parent namespace is descendent of given namespace
@@ -2580,7 +2580,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to determine if a class's identified vbase_destructor is valid or not
 	 * If the class has both a vbase destructor and a regular destructor and the class has
 	 * a non-virtual ancestor, and either the class is the lowest child or has a child with a
@@ -2612,7 +2612,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given class has a child class with both a vbase destructor and a
 	 * regular destructor
 	 * @param recoveredClass the given class
@@ -2635,7 +2635,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to create a new recovered class object and add it to the namespaceToClassMap
 	 * @param namespace the namespace to put the new class in
 	 * @param hasVftable true if class has at least one vftable, false otherwise
@@ -2659,7 +2659,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to recover the class information for each vftable symbol on the list
 	 * * For each virtual function table:
 	 * 1. get vftable's existing class
@@ -2861,7 +2861,7 @@ public class RecoveredClassHelper {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to promote the namespace is a class namespace.
 	 * @return true if namespace is (now) a class namespace or false if it could not be promoted.
 	 */
@@ -2897,7 +2897,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create mapping to possible constructor/destructor functions
 	 * @param referencesToVftable list of references to a particular vftable
 	 * @return Map of reference to vftable to the function it is in
@@ -2917,7 +2917,7 @@ public class RecoveredClassHelper {
 		return vftableRefToFunctionMapping;
 	}
 
-	/**
+    # /**
 	 * Method to generate a list of constructors and destructors given the mapping of the
 	 * vftable to the functions that reference it
 	 * @param vftableReferenceToFunctionMapping the mapping of vftable to the functions that reference the vftable
@@ -2939,7 +2939,7 @@ public class RecoveredClassHelper {
 		return cdFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to get functions from vftable
 	 * @param vftableAddress the address of the vftable
 	 * @param vftableSymbol the name of the vftable
@@ -3026,7 +3026,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to create an array of pointers at the given vftable address
 	 * @param vftableAddress the vftable address
 	 * @param allowNullFunctionPtrs if true allow vftables to have null pointers
@@ -3065,7 +3065,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find references to vftables that are not in functions, either in undefined areas or
 	 * instructions that are not in functions.
 	 * @param vftableSymbols List of vftable symbols
@@ -3142,7 +3142,7 @@ public class RecoveredClassHelper {
 		return notInFunctionVftableRefs;
 	}
 
-	/**
+    # /**
 	 * Method to add a search pattern, to the searcher, for the set of bytes representing a vftable
 	 * address
 	 * @param searcher the MemoryBytePatternSearcher
@@ -3201,7 +3201,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to create a string buffer containing class parents in the correct order. The format
 	 * of the parent string is of the format "class <class_name> : <parent1_spec> : <parent2_spec> ...
 	 * where parentN_spec = "virtual (only if inherited virtually) <parentN_name>"
@@ -3240,7 +3240,7 @@ public class RecoveredClassHelper {
 		return parentStringBuffer;
 	}
 
-	/**
+    # /**
 	 * Method to determine if all data for the ancestors of the given class have been created
 	 * @param recoveredClass the given class
 	 * @return true if all data for the ancestors of the given class have been created, false otherwise
@@ -3276,7 +3276,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the given class's class structure from the data type manager
 	 * @param recoveredClass the given class
 	 * @return the given class's class structure from the data type manager
@@ -3295,7 +3295,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to name class constructors and add them to class namespace
 	 * @param recoveredClass current class
 	 * @param classStruct the given class structure
@@ -3375,7 +3375,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to name class destructors and add them to class namespace
 	 * @param recoveredClass current class
 	 * @param classStruct the class structure for the given class
@@ -3404,7 +3404,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to name non-this destructors and add them to class namespace
 	 * @param recoveredClass current class
 	 * @throws Exception when cancelled
@@ -3430,7 +3430,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to name class vbase destructors and add them to class namespace
 	 * @param recoveredClass current class
 	 * @param classStruct the class structure for the given class
@@ -3456,7 +3456,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to name the class vbtable, if one exists, and add it to the class namespace
 	 * @param recoveredClass the given class
 	 * @throws Exception if exception thrown
@@ -3475,7 +3475,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to create a new symbol at an address
 	 * @param address the given address
 	 * @param name the name to give the new symbol
@@ -3520,7 +3520,7 @@ public class RecoveredClassHelper {
 		return;
 	}
 
-	/**
+    # /**
 	 * Method to replace the program's current class structure, only if an empty placeholder structure,
 	 * with the one generated by this script
 	 * @param function a class method with current class structure applied
@@ -3556,7 +3556,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create a new symbol at the given function
 	 * @param function the given function
 	 * @param name the name for the new symbol
@@ -3632,7 +3632,7 @@ public class RecoveredClassHelper {
 		return;
 	}
 
-	/**
+    # /**
 	 * Method to remove the primary label, applied by FID analyzer,  at the given address if it does not match the given name
 	 * leave the secondary labels alone, ie the mangled name, so people can regenerate the old symbol
 	 * if they want to
@@ -3718,7 +3718,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	* Method to find empty structures that were created when incorrect FID function
 	* signatures were applied and remove them from the given function. Incorrect structure
 	* data types are added to a global list so that if nothing remains that references the data
@@ -3758,7 +3758,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to remove incorrect data types from the given function's signature and from
 	 * all calling functions
 	 * @param function function with bad signature
@@ -3806,7 +3806,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find and add to permanent removal list any incorrect empty structure params
 	 * @param function the function to check for bad params
 	 * @param namespace the correct parent namespace of function
@@ -3834,7 +3834,7 @@ public class RecoveredClassHelper {
 		return badStructureDataTypes;
 	}
 
-	/**
+    # /**
 	 * Method to replace the given bad structure data types with undefined data types of same size
 	 * for the given functions parameters
 	 * @param function the function to fix
@@ -3878,7 +3878,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to find incorrect empty structure return type
 	 * @param function the function to check
 	 * @param namespace the parent namespace of the function
@@ -3897,7 +3897,7 @@ public class RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to fix a bad return type if it is one of the bad structure data types on the given
 	 * list. The list was previously generated from functions that had incorrect FID signatures
 	 * placed on them that this script recognized and corrected.
@@ -3919,7 +3919,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to determine if any symbols at the given address have matching names
 	 * as the given name after removing template, pdb quotes, or FID_conflict characters
 	 * added by other analyzers.
@@ -3949,7 +3949,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to remove single quotes from beginning and end of given string
 	 * @param string string to process
 	 * @return string without leading or trailing single quotes
@@ -3965,7 +3965,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to remove "FID_conflict:" prefix from the given string
 	 * @param string string to process
 	 * @return string without "FID_conflict:" prefix
@@ -3978,7 +3978,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to get symbols with the given name at the given address
 	 * @param address the given address
 	 * @param name the given name to match
@@ -4005,7 +4005,7 @@ public class RecoveredClassHelper {
 		return sameNameSymbols;
 	}
 
-	/**
+    # /**
 	 * Returns a new address with the specified offset in the default address space.
 	 * @param offset the offset for the new address
 	 * @return a new address with the specified offset in the default address space
@@ -4014,7 +4014,7 @@ public class RecoveredClassHelper {
 		return program.getAddressFactory().getDefaultAddressSpace().getAddress(offset);
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given constructor function calls any non-constructors 
 	 * before the vftable refererence
 	 * @param recoveredClass the given class
@@ -4062,7 +4062,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find basic clone functions from given classes virtual functions
 	 * @param recoveredClasses list of classes to process
 	 * @throws CancelledException if cancelled
@@ -4140,7 +4140,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to remove the empty namespaces and unreferenced empty class structures that
 	 *  that were incorrectly applied by FID
 	 * @throws CancelledException when script is cancelled
@@ -4165,7 +4165,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to remove the given namespace if it is empty and its parent namepaces if they are empty
 	 * @param namespace the given namespace
 	 * @throws CancelledException if cancelled
@@ -4185,7 +4185,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to remove the incorrectly applied and unreferenced empty structures that are not used
 	 * @throws CancelledException when script is cancelled
 	 */
@@ -4210,7 +4210,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to remove the structure with the given folder path and name if it is empty
 	 * @param folderPath the given folder path in the data type manager
 	 * @param structureName the given structure name
@@ -4238,7 +4238,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to create empty vftable structures before class struct is created so that
 	 * they can be added to the class structure. Afterwords, they are filled in with pointers
 	 * to vftable functions
@@ -4299,7 +4299,7 @@ public class RecoveredClassHelper {
 		return vftableToStructureMap;
 	}
 
-	/**
+    # /**
 	 * Method to create class structure for single inheritance, no parent, non-vftable classes
 	 * @param recoveredClass the given class
 	 * @throws CancelledException when cancelled
@@ -4353,7 +4353,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to fill in the vftable structure with pointers to virtual function signature data types
 	 * @param recoveredClass the current class to be processed
 	 * @param vftableToStructureMap the map from the class's vftables to the correct vftable structure data type
@@ -4533,7 +4533,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to fixup the function definitions corresponding to purecalls from vftables after
 	 * all the child classes have been updated. This is because the function defintions for these
 	 * abstract function definitions are generated based on the child function signatures which
@@ -4629,7 +4629,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to get a child class virtual function at the given offset into the correct virtual function table
 	 * @param recoveredClass the given class
 	 * @param virtualFunctionNumber the virtual function offset into the table
@@ -4686,7 +4686,7 @@ public class RecoveredClassHelper {
 		return nonThisFunction; //or null if no vfunctions at all which should never happen 
 	}
 
-	/**
+    # /**
 	 * Method to give default names to the vfunctions in the given vftable if they don't have a name already. If they are a clone or deleting destructor name them accordingly.
 	 * @param recoveredClass the given class
 	 * @param vftableAddress the address of the vftable
@@ -4788,7 +4788,7 @@ public class RecoveredClassHelper {
 		return vfunctionSuffix;
 	}
 
-	/**
+    # /**
 	 * Method to update any class functions that are not already using it to use the given 
 	 * class structure
 	 * @param recoveredClass the given class
@@ -4912,7 +4912,7 @@ public class RecoveredClassHelper {
 
 	// may skip a parent so continue through all parents
 	// for multi-inheritance, get the correct parent class for the given vftable
-	/**
+    # /**
 	 * Method to retrieve the class path of the highest ancestor with matching vfunction in its vftable
 	 * @param vfunction the given virtual function
 	 * @param functionDefName the given function definition name
@@ -4994,7 +4994,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 *
 	 * @param functionDefDataType the function definition
 	 * @param classPath the given data type manager classPath
@@ -5024,7 +5024,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to add precomment inside functions containing inlined constructors at approximate
 	 * address of start of inlined function
 	 * @param recoveredClass current class
@@ -5060,7 +5060,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to add precomment inside functions containing inlined destructors at approximate
 	 * address of start of inlined function
 	 * @param recoveredClass current class
@@ -5088,7 +5088,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to add label on functions with inlined constructor or destructors but couldn't tell which
 	 * @param recoveredClass current class
 	 * @throws Exception when cancelled
@@ -5115,7 +5115,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to add label on constructor or destructors but couldn't tell which
 	 * @param recoveredClass current class
 	 * @param classStruct the class structure for the given class
@@ -5147,7 +5147,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create an ANALYSIS bookmark at the given address with the given comment
 	 * @param address the given address
 	 * @param comment the given comment
@@ -5185,7 +5185,7 @@ public class RecoveredClassHelper {
 		bookmarkMgr.setBookmark(address, BookmarkType.ANALYSIS, category, bookmarkComment);
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given comment string that has pieces separated by +'s has any
 	 * piece exactly equal to the given string.
 	 * @param bookmarkComment the bookmark comment string
@@ -5219,7 +5219,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find all class functions that are on both the vfunction list and the possible 
 	 * constructor/destructor list for the same class 
 	 * @param recoveredClasses the list of all known classes
@@ -5291,7 +5291,7 @@ public class RecoveredClassHelper {
 		return twoCallCommonFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to generate a list of functions that reference the given address
 	 * @param address the given address
 	 * @return a list of functions that reference the given address
@@ -5326,7 +5326,7 @@ public class RecoveredClassHelper {
 		return functionList;
 	}
 
-	/**
+    # /**
 	 * Get the virtual functions from the vftable at the given address
 	 * @param vftableAddress the given vftable address
 	 * @return list of functions pointed to from the given vftable
@@ -5366,7 +5366,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find operator delete function(s) using common called functions from class virtual
 	 * functions
 	 * @param vftables the list of virtual function tables to use to id the operator delete functions
@@ -5533,7 +5533,7 @@ public class RecoveredClassHelper {
 		return thunkFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to remove functions from the class constructor/destructor lists (and the overall list)
 	 * that are not self-contained constructor/destructor functions. Add them to the list of
 	 * functions that contain inlined constructors or destructors.
@@ -5593,7 +5593,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to add the structure components from the given structureToAdd from the given starting
 	 * offset to the given ending offset of the  to the given structure at the given offset
 	 * @param structure the structure to add to
@@ -5628,7 +5628,7 @@ public class RecoveredClassHelper {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to add alignment to the given length based on the default program address size
 	 * @param len the given length
 	 * @return len updated with alignment size
@@ -5644,7 +5644,7 @@ public class RecoveredClassHelper {
 		return len;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the offset of the virtual parent of the given class in the given structure
 	 * @param recoveredClass the given class
 	 * @param structure the given structure
@@ -5667,7 +5667,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the offset of the virtual parent of the given class in the given structure
 	 * @param recoveredClass the given class
 	 * @param structure the given structure
@@ -5735,7 +5735,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given data type is the virtual parent class structure for the given class
 	 * @param recoveredClass the given class
 	 * @param dataType the given data type
@@ -5770,7 +5770,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given data type is the virtual parent class structure for the given class
 	 * @param recoveredClass the given class
 	 * @return true if the given data type is the virtual parent class structure for the given class
@@ -5806,7 +5806,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given data type is the virtual parent class structure for the given class
 	 * @param recoveredClass the given class
 	 * @return true if the given data type is the virtual parent class structure for the given class
@@ -5832,7 +5832,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if all of a class's vftables are accounted for in its classOffsetToVftableMap
 	 * @param recoveredClass the given class
 	 * @return true if all vftables have a mapping, false otherwise
@@ -5847,7 +5847,7 @@ public class RecoveredClassHelper {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to find destructors that have no parameters or return type
 	 * @param recoveredClasses list of classes to process
 	 * @throws CancelledException if cancelled
@@ -5917,7 +5917,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to determine if the vftable reference(s) in a constructor are not in the first code
 	 * block for constructors that have more than one block
 	 * @param recoveredClasses List of RecoveredClass objects
@@ -5977,7 +5977,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the address of the end of the first code block in the given function
 	 * @param function the given function
 	 * @return the address of the end of the first code block in the given function
@@ -6004,7 +6004,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to run the FillOutStructureHelper and return it after processing 
 	 * a high variable that stores the given firstVftableReference address.  If not found
 	 * a null is returned.
@@ -6071,7 +6071,7 @@ public class RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to figure out the indetermined inlined functions from each class as either combination
 	 * constructor/inlined constructor or destrucor/inlined destructor. The method first uses any
 	 * known called constructors or destructors to help determine which type then calls a method to
@@ -6221,7 +6221,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the offset of the class data in the given structure
 	 * @param recoveredClass the given class
 	 * @param structure the given structure
@@ -6252,7 +6252,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to process remaining indeterminate functions to determine if they are constructors or destructors
 	 * @param recoveredClasses list of classes
 	 * @throws CancelledException if cancelled
@@ -6364,7 +6364,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given function is a "FID" function or one that has had function
 	 * signature assigned by the FID (Function ID) Analyzer
 	 * @param function the given function
@@ -6384,7 +6384,7 @@ public class RecoveredClassHelper {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to identify missing functions using param to _atexit function
 	 * because it always is passed a pointer to a function.
 	 * @throws CancelledException if cancelled
@@ -6475,7 +6475,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find deleting destructors that do one of the following:
 	 * 	1. reference their own vftable (ie on own c/d list) which means function
 	 *       is both a deleting destructor and has inlined the class destructor
@@ -6554,7 +6554,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Use the known parent class(es)to determine which possible constructor destructor
 	 * functions are constructors and which are destructors
 	 * @param recoveredClasses List of RecoveredClass objects
@@ -6585,7 +6585,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Use known ancestor class constructors and destructors to help classify indeterminate ones
 	 * by who they call, ie constructors call parent (or grandparent) constructors and destructors
 	 * call parent (or grandparent) destructors so use this to help figure out if the given class's
@@ -6653,7 +6653,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to classify indeterminate inline functions as either constructors or destructors
 	 * using called ancestor information (may call parent or higher ancestor) or might be the same
 	 * as a descendant constructor/destructor (ie a parent or ancestor is inlined into an
@@ -6743,7 +6743,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find destructors using functions called by atexit. If they are on the list of
 	 * indeterminate constructors or destructors and are called by atexit, then they are a
 	 * destructor.
@@ -6783,7 +6783,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to find deleting destructors in the virtual functions of the given list of classes. 
 	 * Method finds the following use cases (Note that in all cases operator_delete is called after
 	 *  the called destructor or inlined destructor):
@@ -6899,7 +6899,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find the operator delete and operator new functions in the current program 
 	 * either by name or by common virtual function calls
 	 * @param vftables a list of vftables
@@ -7029,7 +7029,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to return list of reference addresses for any of the given functions that are 
 	 * contained in the given map
 	 * @param functions the given functions
@@ -7059,7 +7059,7 @@ public class RecoveredClassHelper {
 		return calledFunctionsOnList;
 	}
 
-	/**
+    # /**
 	 * Find operator_delete functions (including thunks) by name or by using calls to various 
 	 * named "free" functions
 	 * @return a Set of operator_delete functions
@@ -7130,7 +7130,7 @@ public class RecoveredClassHelper {
 		return operatorDeletesByThunkToExternalFree;
 	}
 
-	/**
+    # /**
 	 * Find operator_new functions (including thunks) by name or by using calls to various 
 	 * named "new" or "malloc" functions
 	 * @return a Set of operator_new functions
@@ -7281,7 +7281,7 @@ public class RecoveredClassHelper {
 		return thunksToFunction;
 	}
 
-	/**
+    # /**
 	 * Figure out which of the destructors that do not reference vftable are vbase destructors and
 	 * which are destructors.
 	 * @param recoveredClasses List of RecoveredClass objects
@@ -7342,7 +7342,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to create <class_name>_data structure for given class
 	 * @param recoveredClass the class
 	 * @param classStructure the given class structure
@@ -7422,7 +7422,7 @@ public class RecoveredClassHelper {
 		return classDataStructure;
 	}
 
-	/**
+    # /**
 	 * Method to find the purecall function.
 	 * @param recoveredClasses List of RecoveredClass objects
 	 * @throws CancelledException when cancelled
@@ -7489,7 +7489,7 @@ public class RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to remove duplicate functions from the given list
 	 * @param list the given list of functions
 	 * @return the deduped list of functions
@@ -7508,7 +7508,7 @@ public class RecoveredClassHelper {
 		return listOfUniqueFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to remove duplicate addresses from the given list
 	 * @param list the given list of functions
 	 * @return the deduped list of functions
@@ -7527,7 +7527,7 @@ public class RecoveredClassHelper {
 		return listOfUniqueAddresses;
 	}
 
-	/**
+    # /**
 	 * Remove functions that are on both vfunction and cd list from the cd lists and add the rest to
 	 * a more restrictive list
 	 * @param recoveredClasses List of RecoveredClass objects
@@ -7572,7 +7572,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to apply the function signature of the given function, if different, to the corresponding
 	 * function definition and call the method to update related structure fields and functions
 	 * @param vfunction the given function
@@ -7639,7 +7639,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to get the corresponding structure component given a function in the vftable
 	 * @param vftableData the vftable data containing the vfunction
 	 * @param vfunction the given vfunction
@@ -7676,7 +7676,7 @@ public class RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Return a list of data items that have labels containing "vftable" and refer to the given
 	 * function
 	 * @param function the given function
@@ -7742,7 +7742,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to find any function signatures in the given vfunction structure that have changed
 	 * and update the corresponding function definition data types
 	 * @param vfunction the given virtual function
@@ -7813,7 +7813,7 @@ public class RecoveredClassHelper {
 		return componentFunctionDefinition;
 	}
 
-	/**
+    # /**
 	 * Method to edit the function definition pointed to by the given structure component with any
 	 * differences in the given function definition
 	 * @param structureComponent the given structure component
@@ -7856,7 +7856,7 @@ public class RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to update the given function definition with the new function definition
 	 * @param functionDefinition the given function definition
 	 * @param newFunctionDefinition the new function definition
@@ -8043,7 +8043,7 @@ public class RecoveredClassHelper {
 		return functions;
 	}
 
-	/**
+    # /**
 	 * Method to apply the given function definition to the corresponding function signatures that
 	 * do not match and also update the vftable structure fields to have the correct name if
 	 * different from the changed one.
@@ -8135,7 +8135,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to get the index of the vfunction pointer in the given vftable structure
 	 * @param vftableStructure the given vftable structure
 	 * @param pointerToVfunction the given vfunction pointer
@@ -8159,7 +8159,7 @@ public class RecoveredClassHelper {
 		return vfunctionIndex;
 	}
 
-	/**
+    # /**
 	 * Method to get the data type in the same folder as the given data type that is the pointer to
 	 * the given data type. This is getting an existing pointer not trying to create a new one.
 	 * @param dataType the given data type
@@ -8176,7 +8176,7 @@ public class RecoveredClassHelper {
 		return (dt instanceof Pointer) ? (Pointer) dt : null;
 	}
 
-	/**
+    # /**
 	 * Method to get the vftable data applied to the listing for the associated vftable structure
 	 * @param classNamespace the given class Namespace
 	 * @param vftableStructure the given class vftableStructure
@@ -8242,7 +8242,7 @@ public class RecoveredClassHelper {
 		return functionDefs;
 	}
 
-	/**
+    # /**
 	 * Get the associated data type category for the given class namespace
 	 * @param classNamespace the given class namespace
 	 * @return the associated data type category or null if it doesn't exist
@@ -8260,7 +8260,7 @@ public class RecoveredClassHelper {
 		return category;
 	}
 
-	/**
+    # /**
 	 * Method to get the class Namespace corresponding to the given data type. NOTE: The data type
 	 * must be in the DTM_CLASS_DATA_FOLDER_NAME folder in the data type manager.
 	 * @param dataType the given data type
@@ -8301,7 +8301,7 @@ public class RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to find any function definitions in the given vfunction structure that have changed
 	 * and update the function signature data types
 	 * @throws DuplicateNameException if try to rename with a duplicate name
@@ -8370,7 +8370,7 @@ public class RecoveredClassHelper {
 
 	}
 
-	/**
+    # /**
 	 * Method to update the given function's signature with the given function definition
 	 * @param function the given function
 	 * @param newFunctionDefinition the new function definition
@@ -8402,7 +8402,7 @@ public class RecoveredClassHelper {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to compare the given FunctionDefinition data type with the given FunctionSignature to
 	 * see if they are equivalent (ie same name, same return type, same param types, same param names,
 	 * same calling convention, same hasVarArgs flag ...
@@ -8448,7 +8448,7 @@ public class RecoveredClassHelper {
 		return changedItems;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the vftable symbols in the given namespace
 	 * @param classNamespace the given namespace
 	 * @return a list of vftable symbols in the given namespace
@@ -8510,7 +8510,7 @@ public class RecoveredClassHelper {
 		return category;
 	}
 
-	/**
+    # /**
 	 * Method to add/overwrite class vftable pointers to the given class structure
 	 * @param classStructureDataType the class structure data type
 	 * @param recoveredClass the given recovered class
@@ -8620,7 +8620,7 @@ public class RecoveredClassHelper {
 		return classStructureDataType;
 	}
 
-	/**
+    # /**
 	 * Method to replace an internal structure into individual parts within the containing structure
 	 * @param structure the containing structure
 	 * @param internalStruct the internal structure
@@ -8649,7 +8649,7 @@ public class RecoveredClassHelper {
 		return;
 	}
 
-	/**
+    # /**
 	 * Method to add a pointer to the class vbtable to the given class's class structure
 	 * @param recoveredClass the given class
 	 * @param classStructureDataType the given class's class structure data type

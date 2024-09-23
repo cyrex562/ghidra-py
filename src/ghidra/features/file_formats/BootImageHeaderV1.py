@@ -3,7 +3,7 @@
  */
 package ghidra.file.formats.android.bootimg;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -27,7 +27,7 @@ public class BootImageHeaderV1 extends BootImageHeaderV0 {
 		header_size = reader.readNextInt();
 	}
 
-	/**
+    # /**
 	 * Size in bytes for recovery DTBO/ACPIO image
 	 * @return recovery DTBO/ACPIO image byte size
 	 */
@@ -35,7 +35,7 @@ public class BootImageHeaderV1 extends BootImageHeaderV0 {
 		return recovery_dtbo_size;
 	}
 
-	/**
+    # /**
 	 * p = (recovery_dtbo_size + page_size - 1) / page_size
 	 * @return the recovery DTBO adjusted size, as page counts
 	 */
@@ -43,7 +43,7 @@ public class BootImageHeaderV1 extends BootImageHeaderV0 {
 		return (int) (pageAlign(Integer.toUnsignedLong(recovery_dtbo_size)) / getPageSize());
 	}
 
-	/**
+    # /**
 	 * Offset to recovery dtbo/acpio in boot image
 	 * @return the recover DTBO offset
 	 */

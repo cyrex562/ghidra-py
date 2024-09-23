@@ -22,7 +22,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 import db.*;
 

@@ -24,7 +24,7 @@ public class BsfvFeatureColumnObject implements Comparable<BsfvFeatureColumnObje
 
 	private int bsimFeature;
 
-	/**
+    # /**
 	 * Creates a BSimFeatureColumnType corresponding to the BSim feature with the given hash
 	 * @param hash feature value
 	 */

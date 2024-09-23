@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -115,7 +115,7 @@ public class ParamEntry {
 		return spaceid;
 	}
 
-	/**
+    # /**
 	 * Collect pieces from the join list, in endian order, until the given size is covered.
 	 * The last piece is trimmed to match the size exactly.  If the size is too big to be
 	 * covered by this ParamEntry, null is returned.
@@ -173,7 +173,7 @@ public class ParamEntry {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Is this ParamEntry, as a memory range, contained by the given memory range.
 	 * @param addr is the starting address of the given memory range
 	 * @param sz is the number of bytes in the given memory range
@@ -191,7 +191,7 @@ public class ParamEntry {
 		return (Long.compareUnsigned(thisEnd, rangeEnd) <= 0);
 	}
 
-	/**
+    # /**
 	 * Does this ParamEntry intersect the given range in some way
 	 * @param addr is the starting address of the given range
 	 * @param sz is the number of bytes in the given range
@@ -281,7 +281,7 @@ public class ParamEntry {
 		return (int) (startaddr % alignment);
 	}
 
-	/**
+    # /**
 	 * Does this ParamEntry contain another entry (as a subpiece)
 	 * @param otherEntry is the other entry
 	 * @return true if this contains the other entry
@@ -302,7 +302,7 @@ public class ParamEntry {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Assuming the address is contained in this entry and we -skip- to a certain byte
 	 * return the slot associated with that byte
 	 * @param addr  is the address to check (which MUST be contained)
@@ -327,7 +327,7 @@ public class ParamEntry {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Assign the storage address when allocating something of size -sz- assuming -slotnum- slots
 	 * have already been assigned.  Set the address to null if the -sz- is too small or if
 	 * there are not enough slots left
@@ -398,7 +398,7 @@ public class ParamEntry {
 		return slotnum;
 	}
 
-	/**
+    # /**
 	 * Find the ParamEntry in the list whose storage matches the given Varnode
 	 * @param curList is the list of ParamEntry
 	 * @param varnode is the given Varnode
@@ -416,7 +416,7 @@ public class ParamEntry {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Adjust the group and groupsize based on the ParamEntrys being overlapped
 	 * @param curList is the current list of ParamEntry
 	 * @throws XmlParseException if no overlap is found
@@ -445,7 +445,7 @@ public class ParamEntry {
 		flags |= OVERLAPPING;
 	}
 
-	/**
+    # /**
 	 * Search for overlap with any previous ParamEntry.  Reassign group and groupsize to
 	 * reflect this overlap.
 	 * @param curList is the list of previous ParamEntry
@@ -624,7 +624,7 @@ public class ParamEntry {
 		parser.end(el);
 	}
 
-	/**
+    # /**
 	 * Determine if this ParamEntry is equivalent to another instance
 	 * @param obj is the other instance
 	 * @return true if they are equivalent
@@ -656,7 +656,7 @@ public class ParamEntry {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Return -1 if (op2,sz2) is not properly contained in (op1,sz1)
 	 * If it is contained, return the endian aware offset of (op2,sz2)
 	 * I.e. if the least significant byte of the op2 range falls on the least significant
@@ -703,7 +703,7 @@ public class ParamEntry {
 		return StorageClass.GENERAL;
 	}
 
-	/**
+    # /**
 	 * ParamEntry within a group must be distinguishable by size or by type
 	 * @param entry1 is the first being compared
 	 * @param entry2 is the second being compared

@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver.ui;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

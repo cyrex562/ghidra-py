@@ -30,7 +30,7 @@ import ghidra.util.StringUtilities;
  */
 public class PrettyPrinter {
 
-	/**
+    # /**
 	 * The indent string to use when printing.
 	 */
 	public final static String INDENT_STRING = " ";
@@ -40,7 +40,7 @@ public class PrettyPrinter {
 	private List<ClangLine> lines = new ArrayList<>();
 	private NameTransformer transformer;
 
-	/**
+    # /**
 	 * Constructs a new pretty printer using the specified C language token group.
 	 * The printer takes a NameTransformer that will be applied to symbols, which can replace
 	 * illegal characters in the symbol name for instance. A null indicates no transform is applied.
@@ -71,7 +71,7 @@ public class PrettyPrinter {
 		return function;
 	}
 
-	/**
+    # /**
 	 * Returns a list of the C language lines contained in the
 	 * C language token group.
 	 * @return a list of the C language lines
@@ -80,7 +80,7 @@ public class PrettyPrinter {
 		return lines;
 	}
 
-	/**
+    # /**
 	 * Prints the C language token group
 	 * into a string of C code.
 	 * @return a string of readable C code

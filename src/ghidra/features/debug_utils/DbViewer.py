@@ -17,7 +17,7 @@ package db;
 
 import java.awt.*;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.*;
@@ -212,7 +212,7 @@ public class DbViewer extends JFrame {
 		return panel;
 	}
 
-	/**
+    # /**
 	 * Get the statistics for the specified table.
 	 * @param table the table
 	 * @return arrays containing statistics. Element 0 provides statistics for primary table, 

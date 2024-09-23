@@ -31,7 +31,7 @@ public class FunctionMsAttributes extends AbstractParsableItem {
 	private boolean isInstanceConstructor;
 	private boolean isInstanceConstructorOfClassWithVirtualBases;
 
-	/**
+    # /**
 	 * Constructor for FunctionMsAttributes.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.

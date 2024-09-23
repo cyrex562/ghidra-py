@@ -51,7 +51,7 @@ public class FilterWidget extends JPanel {
 	private ItemListener comboChangeListener = this::comboChanged;
 	private Callback changeListener;
 
-	/**
+    # /**
 	 * Constructs a new filter widget.
 	 * @param filterTypes The list of filter types that can be chosen
 	 * @param removeConsumer the container to be notified that it should delete this object
@@ -102,7 +102,7 @@ public class FilterWidget extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the selected filter.
 	 * @return the filter
 	 */
@@ -110,7 +110,7 @@ public class FilterWidget extends JPanel {
 		return filterType;
 	}
 
-	/**
+    # /**
 	 * Returns all values in the filter as a list. For filters that do not allow
 	 * multiple entries, this will always return a list of only one item.
 	 * 

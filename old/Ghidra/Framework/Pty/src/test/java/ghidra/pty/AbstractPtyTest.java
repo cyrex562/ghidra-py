@@ -17,7 +17,7 @@ package ghidra.pty;
 
 import static org.junit.Assert.assertEquals;
 
-import java.io.*;
+
 
 public class AbstractPtyTest {
 	public Thread pump(InputStream is, OutputStream os) {

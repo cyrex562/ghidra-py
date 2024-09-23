@@ -17,7 +17,7 @@
 //
 //@category PDB
 
-import java.io.*;
+
 
 import docking.widgets.values.GValuesMap;
 import ghidra.app.script.GhidraScript;

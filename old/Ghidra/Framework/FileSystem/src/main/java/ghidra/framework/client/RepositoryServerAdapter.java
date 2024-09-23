@@ -16,7 +16,7 @@
 package ghidra.framework.client;
 
 import java.io.EOFException;
-import java.io.IOException;
+
 import java.net.SocketTimeoutException;
 import java.rmi.RemoteException;
 import java.security.GeneralSecurityException;

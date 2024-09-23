@@ -192,7 +192,7 @@ public class VectorSTL<T> implements Iterable<T> {
 		subList.clear();
 	}
 
-	/**
+    # /**
 	 * Sorts the vector. To use this method T must be comparable.
 	 * @throws UnsupportedOperationException if T is not comparable;
 	 */
@@ -220,7 +220,7 @@ public class VectorSTL<T> implements Iterable<T> {
 		return data.iterator();
 	}
 
-	/**
+    # /**
 	 * Returns an iterator postioned at the item in the vector that is the smallest key less or equal than
 	 * the given key.  This method assumes the vector is sorted in ascending order.
 	 * @param key the key for which to find the lower bound
@@ -247,7 +247,7 @@ public class VectorSTL<T> implements Iterable<T> {
 
 	}
 
-	/**
+    # /**
 	 * Returns an iterator postioned at the item in the vector that is the smallest key less or equal than
 	 * the given key.  This method assumes the vector is sorted in ascending order.
 	 * @param key the key for which to find the lower bound
@@ -261,7 +261,7 @@ public class VectorSTL<T> implements Iterable<T> {
 		return lower_bound(key, comparableComparator);
 	}
 
-	/**
+    # /**
 	 * Returns an iterator postioned at the item in the vector that is the smallest key less than
 	 * the given key.  This method assumes the vector is sorted in ascending order.
 	 * @param key the key for which to find the upper bound
@@ -276,7 +276,7 @@ public class VectorSTL<T> implements Iterable<T> {
 		return upper_bound(key, comparableComparator);
 	}
 
-	/**
+    # /**
 	 * Returns an iterator postioned at the item in the vector that is the smallest key less than
 	 * the given key.  This method assumes the vector is sorted in ascending order.
 	 * @param key the key for which to find the upper bound

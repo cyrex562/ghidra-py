@@ -28,7 +28,7 @@ import ghidra.features.bsim.query.description.*;
  * by repeatedly providing clusters of functions to scoreCluster.
  */
 public class ExecutableScorer {
-	/**
+    # /**
 	 * Container for a pair of FunctionDescriptions, possibly from different DescriptionManagers
 	 * along with similarity/significance information
 	 */
@@ -96,7 +96,7 @@ public class ExecutableScorer {
 		sigThreshold = -1.0;
 	}
 
-	/**
+    # /**
 	 * @return the similarity threshold associated with these scores
 	 *    OR -1.0 if no threshold has been set
 	 */
@@ -104,14 +104,14 @@ public class ExecutableScorer {
 		return simThreshold;
 	}
 
-	/**
+    # /**
 	 * @return the significance threshold associated with these scores
 	 */
 	public double getSigThreshold() {
 		return sigThreshold;
 	}
 
-	/**
+    # /**
 	 * Set a single executable as focus to enable the single parameter getScore(int)
 	 * @param md5 is the 32-character md5 hash of the executable single out
 	 * @throws LSHException if we can't find the executable
@@ -121,14 +121,14 @@ public class ExecutableScorer {
 		singleExeXref = singleExe.getXrefIndex();		// Save the xref of the single
 	}
 
-	/**
+    # /**
 	 * @return number of executable self-significance scores are (will be) available
 	 */
 	public int countSelfScores() {
 		return executableSet.numExecutables();
 	}
 
-	/**
+    # /**
 	 * Clear any persistent storage for self-significance scores, and establish new thresholds
 	 * @param simThresh is the new similarity threshold
 	 * @param sigThresh is the new significance threshold
@@ -140,14 +140,14 @@ public class ExecutableScorer {
 		score = null;				// Throw out any old scores
 	}
 
-	/**
+    # /**
 	 * @return the number of executables being compared
 	 */
 	public int numExecutables() {
 		return executableSet.numExecutables();
 	}
 
-	/**
+    # /**
 	 * @return ExecutableRecord being singled out for comparison
 	 */
 	public ExecutableRecord getSingularExecutable() {
@@ -158,7 +158,7 @@ public class ExecutableScorer {
 		return score[singleExeXref - 1][singleExeXref - 1];
 	}
 
-	/**
+    # /**
 	 * Retrieve a specific ExecutableRecord by md5
 	 * @param md5 is the MD5 string
 	 * @return the matching ExecutableRecord
@@ -168,7 +168,7 @@ public class ExecutableScorer {
 		return executableSet.findExecutable(md5);
 	}
 
-	/**
+    # /**
 	 * Get the index-th executable. NOTE: The first index is 1
 	 * @param index of the executable to retrieve
 	 * @return the ExecutableRecord describing the executable
@@ -180,7 +180,7 @@ public class ExecutableScorer {
 		return index2ExeMap.get(index);
 	}
 
-	/**
+    # /**
 	 * Save off information about database settings to inform later queries
 	 * @param info is the information object returned by the database
 	 */
@@ -189,7 +189,7 @@ public class ExecutableScorer {
 		executableSet.setSettings(info.settings);
 	}
 
-	/**
+    # /**
 	 * Register an executable for the scoring matrix
 	 * @param exeRecord is the ExecutableRecord to register
 	 * @throws LSHException if the executable was already registered
@@ -199,7 +199,7 @@ public class ExecutableScorer {
 		executableSet.transferExecutable(exeRecord);	// Transfer (re)sets xrefIndex to 0
 	}
 
-	/**
+    # /**
 	 * Assuming all executables have been registered, establish index values
 	 * for all executables to facilitate accessing the scoring matrix
 	 */
@@ -207,7 +207,7 @@ public class ExecutableScorer {
 		executableSet.populateExecutableXref();
 	}
 
-	/**
+    # /**
 	 * For every executable in the container -manage-, if the executable
 	 * matches up with a registered executable, set its xref index to match
 	 * the registered executables xref index, otherwise set it to zero
@@ -218,7 +218,7 @@ public class ExecutableScorer {
 		manage.matchAndSetXrefs(executableSet);
 	}
 
-	/**
+    # /**
 	 * Initialize the scoring matrix with zero. The matrix size
 	 * is the number of executables registered with addExecutable()
 	 */
@@ -234,7 +234,7 @@ public class ExecutableScorer {
 		}
 	}
 
-	/**
+    # /**
 	 * Given a pair of score contributing functions that have been
 	 * fully filtered, add the score into the matrix
 	 * @param pair is the pair of functions
@@ -251,7 +251,7 @@ public class ExecutableScorer {
 		score[indexA - 1][indexB - 1] += pair.significance;
 	}
 
-	/**
+    # /**
 	 * Return the similarity score between two executables
 	 * @param a is the index matching getXrefIndex() of the first executable
 	 * @param b is the index matching getXrefIndex() of the second executable
@@ -266,7 +266,7 @@ public class ExecutableScorer {
 		return score[a - 1][b - 1];
 	}
 
-	/**
+    # /**
 	 * Retrieve the similarity score of an executable with itself
 	 * @param a is the index of the executable
 	 * @return its self-similarity score
@@ -276,7 +276,7 @@ public class ExecutableScorer {
 		return score[a - 1][a - 1];
 	}
 
-	/**
+    # /**
 	 * Commit the singled out executables self-significance score to permanent storage
 	 * @throws LSHException if there's a problem writing, or the operation isn't supported
 	 */
@@ -284,7 +284,7 @@ public class ExecutableScorer {
 		throw new LSHException("Cannot commit self-score with the matrix scorer");
 	}
 
-	/**
+    # /**
 	 * Commit a self-significance score for a specific executable to permanent storage
 	 * @param md5 is the 32-character md5 hash of the executable
 	 * @param selfScore is the self-significance score
@@ -294,7 +294,7 @@ public class ExecutableScorer {
 		throw new LSHException("Cannot commit self-score with the matrix scorer");
 	}
 
-	/**
+    # /**
 	 * Get score of executable (as compared to our singled out executable)
 	 * @param a is the index of the executable
 	 * @return the score
@@ -303,7 +303,7 @@ public class ExecutableScorer {
 		return getScore(singleExeXref, a);
 	}
 
-	/**
+    # /**
 	 * Computes a score comparing two executables, normalized between 0.0 and 1.0,
 	 * indicating the percentage of functional similarity between the two.
 	 * 1.0 means "identical" 0.0 means completely "dissimilar"
@@ -338,7 +338,7 @@ public class ExecutableScorer {
 		return getNormalizedScore(a, singleExeXref, useLibrary);
 	}
 
-	/**
+    # /**
 	 * Generate all pairs of functions for any function associated with a list of vectors
 	 * For each pair of functions generate the FunctionPair object with corresponding
 	 * similarity and significance.  This is inherently quadratic, but we try to be efficient.
@@ -415,7 +415,7 @@ public class ExecutableScorer {
 		return result;
 	}
 
-	/**
+    # /**
 	 * For function pairs between the same two executables, do the final filtering
 	 * to create symmetric score contributions and accumulate the contributions in the matrix
 	 * @param pairs is the full list of pairs in the cluster
@@ -468,7 +468,7 @@ public class ExecutableScorer {
 		}
 	}
 
-	/**
+    # /**
 	 * Make check if we are going to have too many pairs.
 	 * This is preliminary because we haven't yet fetched the functions
 	 * @param hitcount is the total number of pairs to fetch
@@ -480,7 +480,7 @@ public class ExecutableScorer {
 		return (totalSize <= pairThreshold);
 	}
 
-	/**
+    # /**
 	 * Given a cluster of vectors, the set of functions associated with each vector,
 	 * a similarity threshold, and total number of functions in the cluster,
 	 * let each pair of function contribute to the score matrix

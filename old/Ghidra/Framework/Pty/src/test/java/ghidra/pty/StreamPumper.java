@@ -15,7 +15,7 @@
  */
 package ghidra.pty;
 
-import java.io.*;
+
 
 public class StreamPumper extends Thread {
 	private final InputStream in;

@@ -17,13 +17,13 @@ package ghidra.file.formats.ios.img2;
 
 public final class Img2Constants {
 
-	/** IMG2 magic value */
+    # /** IMG2 magic value */
 	public final static String IMG2_SIGNATURE  = "Img2";
 
-	/** IMG2 magic value as bytes */
+    # /** IMG2 magic value as bytes */
 	public final static byte [] IMG2_SIGNATURE_BYTES  =  { '2', 'g', 'm', 'I' };
 
-	/** Overall size of IMG2 header */
+    # /** Overall size of IMG2 header */
 	public final static int IMG2_LENGTH = 0x400;
 
 	public final static String IMAGE_TYPE_logo = "logo";//applelogo.img2

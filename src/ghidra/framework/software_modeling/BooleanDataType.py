@@ -32,7 +32,7 @@ public class BooleanDataType extends AbstractUnsignedIntegerDataType {
 
 	public static final BooleanDataType dataType = new BooleanDataType();
 
-	/**
+    # /**
 	 * Constructs a new Boolean datatype.
 	 */
 	public BooleanDataType() {

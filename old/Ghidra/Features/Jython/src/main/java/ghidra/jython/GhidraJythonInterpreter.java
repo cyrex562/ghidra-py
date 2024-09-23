@@ -16,7 +16,7 @@
 package ghidra.jython;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.lang.reflect.*;
 import java.net.InetAddress;
 import java.net.Socket;

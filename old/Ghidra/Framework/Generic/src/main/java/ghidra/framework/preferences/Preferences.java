@@ -15,7 +15,7 @@
  */
 package ghidra.framework.preferences;
 
-import java.io.*;
+
 import java.util.*;
 
 import ghidra.framework.Application;

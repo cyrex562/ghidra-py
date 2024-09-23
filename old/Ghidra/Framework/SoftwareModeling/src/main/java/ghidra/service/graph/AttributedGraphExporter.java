@@ -16,7 +16,7 @@
 package ghidra.service.graph;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.util.classfinder.ExtensionPoint;
 

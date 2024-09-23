@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 import ghidra.program.model.data.AbstractFloatDataType;

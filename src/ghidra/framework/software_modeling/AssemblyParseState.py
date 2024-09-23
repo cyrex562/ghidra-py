@@ -34,7 +34,7 @@ public class AssemblyParseState implements Comparable<AssemblyParseState> {
 	private final Set<AssemblyParseStateItem> kernel = new LinkedHashSet<>();
 	private Set<AssemblyParseStateItem> closure;
 
-	/**
+    # /**
 	 * Construct a new state associated with the given grammar
 	 * 
 	 * @param grammar the grammar
@@ -43,7 +43,7 @@ public class AssemblyParseState implements Comparable<AssemblyParseState> {
 		this.grammar = grammar;
 	}
 
-	/**
+    # /**
 	 * Construct a new state associated with the given grammar, seeded with the given item
 	 * 
 	 * @param grammar the grammar
@@ -54,7 +54,7 @@ public class AssemblyParseState implements Comparable<AssemblyParseState> {
 		kernel.add(item);
 	}
 
-	/**
+    # /**
 	 * Get the (mutable) kernel for this state
 	 * 
 	 * @return the kernel
@@ -63,7 +63,7 @@ public class AssemblyParseState implements Comparable<AssemblyParseState> {
 		return kernel;
 	}
 
-	/**
+    # /**
 	 * Get the closure of this item, caching the result
 	 * 
 	 * @return the closure

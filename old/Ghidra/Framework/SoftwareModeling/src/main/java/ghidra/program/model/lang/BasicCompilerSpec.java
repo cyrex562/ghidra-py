@@ -19,7 +19,7 @@ package ghidra.program.model.lang;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.lang.reflect.Constructor;
 import java.math.BigInteger;

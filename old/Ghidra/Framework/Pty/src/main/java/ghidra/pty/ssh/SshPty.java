@@ -15,7 +15,7 @@
  */
 package ghidra.pty.ssh;
 
-import java.io.*;
+
 
 import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSchException;

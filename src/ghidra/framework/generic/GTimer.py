@@ -34,7 +34,7 @@ public class GTimer {
 	private static Timer timer;
 	private static GTimerMonitor DO_NOTHING_MONITOR = GTimerMonitor.DUMMY;
 
-	/**
+    # /**
 	 * Schedules a runnable for execution after the specified delay.   A delay value less than 0
 	 * will cause this timer to schedule nothing.  This allows clients to use this timer class
 	 * with no added logic for managing timer enablement.
@@ -53,7 +53,7 @@ public class GTimer {
 		return gTimerTask;
 	}
 
-	/**
+    # /**
 	 * Schedules a runnable for <b>repeated</b> execution after the specified delay. A delay value
 	 * less than 0 will cause this timer to schedule nothing.  This allows clients to use this
 	 * timer class with no added logic for managing timer enablement.

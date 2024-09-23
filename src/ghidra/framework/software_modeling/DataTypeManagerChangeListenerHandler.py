@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-import java.io.IOException;
+
 import java.io.ObjectInputStream;
 
 import javax.swing.SwingUtilities;
@@ -36,7 +36,7 @@ public class DataTypeManagerChangeListenerHandler implements DataTypeManagerChan
 	private transient WeakSet<DataTypeManagerChangeListener> listenerList =
 		WeakDataStructureFactory.createCopyOnReadWeakSet();
 
-	/**
+    # /**
 	 * Add the given category change listener.
 	 * @param l the listener to be added.
 	 */
@@ -44,7 +44,7 @@ public class DataTypeManagerChangeListenerHandler implements DataTypeManagerChan
 		listenerList.add(l);
 	}
 
-	/**
+    # /**
 	 * Remove the category change listener.
 	 * @param l the listener to be removed.
 	 */

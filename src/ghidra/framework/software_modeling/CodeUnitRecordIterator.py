@@ -36,7 +36,7 @@ class CodeUnitRecordIterator implements CodeUnitIterator {
 	private Data nextData;
 	private CodeUnit nextCu;
 
-	/**
+    # /**
 	 * Constructs a new CodeUnitRecordIterator
 	 * @param codeMgr the code manager
 	 * @param instIt the instruction iterator

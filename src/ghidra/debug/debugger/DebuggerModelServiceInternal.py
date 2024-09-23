@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.service.model;
 
-import java.io.IOException;
+
 import java.util.Collection;
 
 import ghidra.app.plugin.core.debug.event.ModelActivatedPluginEvent;

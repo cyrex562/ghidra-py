@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.net.URL;
 
 import generic.timer.GhidraSwinglessTimer;
@@ -104,7 +104,7 @@ public class TransientProjectData extends DefaultProjectData {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if timer was running and has been stopped
 	 */
 	boolean stopCleanupTimer() {

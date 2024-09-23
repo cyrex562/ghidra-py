@@ -15,7 +15,7 @@
  */
 package ghidra.jython;
 
-import java.io.*;
+
 
 import ghidra.framework.Application;
 import ghidra.util.exception.CancelledException;

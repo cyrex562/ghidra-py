@@ -48,7 +48,7 @@ public class Gui {
 		// static utils class, can't construct
 	}
 
-	/**
+    # /**
 	 * Returns the current {@link Font} associated with the given id. A default font will be
 	 * returned if the font can't be resolved and an error message will be printed to the console.
 	 * @param id the id for the desired font
@@ -58,7 +58,7 @@ public class Gui {
 		return themeManager.getFont(id);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Color} registered for the given id. Will output an error message if
 	 * the id can't be resolved.
 	 * @param id the id to get the direct color for
@@ -68,7 +68,7 @@ public class Gui {
 		return themeManager.getColor(id);
 	}
 
-	/**
+    # /**
 	 * Adds a {@link ThemeListener} to be notified of theme changes.
 	 * @param listener the listener to be notified
 	 */
@@ -76,7 +76,7 @@ public class Gui {
 		themeManager.addThemeListener(listener);
 	}
 
-	/**
+    # /**
 	 * Removes the given {@link ThemeListener} from the list of listeners to be notified of
 	 * theme changes.
 	 * @param listener the listener to be removed
@@ -85,7 +85,7 @@ public class Gui {
 		themeManager.removeThemeListener(listener);
 	}
 
-	/**
+    # /**
 	 * Returns the Icon registered for the given id. If no icon is registered for the id,
 	 * the default icon will be returned and an error message will be dumped to the console
 	 * @param id the id to get the registered icon for
@@ -95,7 +95,7 @@ public class Gui {
 		return themeManager.getIcon(id);
 	}
 
-	/**
+    # /**
 	 * Returns true if an color for the given Id has been defined
 	 * @param id the id to check for an existing color.
 	 * @return true if an color for the given Id has been defined
@@ -104,7 +104,7 @@ public class Gui {
 		return themeManager.hasColor(id);
 	}
 
-	/**
+    # /**
 	 * Returns true if an font for the given Id has been defined
 	 * @param id the id to check for an existing font.
 	 * @return true if an font for the given Id has been defined
@@ -113,7 +113,7 @@ public class Gui {
 		return themeManager.hasFont(id);
 	}
 
-	/**
+    # /**
 	 * Returns true if an icon for the given Id has been defined
 	 * @param id the id to check for an existing icon.
 	 * @return true if an icon for the given Id has been defined
@@ -122,7 +122,7 @@ public class Gui {
 		return themeManager.hasIcon(id);
 	}
 
-	/**
+    # /**
 	 * Returns a darker version of the given color or brighter if the current theme is dark.
 	 * @param color the color to get a darker version of
 	 * @return a darker version of the given color or brighter if the current theme is dark
@@ -134,7 +134,7 @@ public class Gui {
 		return color.darker();
 	}
 
-	/**
+    # /**
 	 * Returns a brighter version of the given color or darker if the current theme is dark.
 	 * @param color the color to get a brighter version of
 	 * @return a brighter version of the given color or darker if the current theme is dark
@@ -146,7 +146,7 @@ public class Gui {
 		return color.brighter();
 	}
 
-	/**
+    # /**
 	 * Binds the component to the font identified by the given font id. Whenever the font for
 	 * the font id changes, the component will updated with the new font.
 	 * <p>
@@ -159,7 +159,7 @@ public class Gui {
 		themeManager.registerFont(component, fontId);
 	}
 
-	/**
+    # /**
 	 * Registers the given component with the given font style.  This method allows clients to not
 	 * define a font id in the theme system, but instead to signal that they want the default font
 	 * for the given component, modified with the given style.  As the underlying font is changed,
@@ -190,7 +190,7 @@ public class Gui {
 		themeManager.registerFont(component, fontId, fontStyle);
 	}
 
-	/**
+    # /**
 	 * Removes the component and font id binding made in a previous call to 
 	 * {@link #registerFont(Component, String)}.
 	 * <p>
@@ -204,7 +204,7 @@ public class Gui {
 		themeManager.unRegisterFont(component, fontId);
 	}
 
-	/**
+    # /**
 	 * Returns true if the active theme is using dark defaults
 	 * @return true if the active theme is using dark defaults
 	 */
@@ -212,7 +212,7 @@ public class Gui {
 		return themeManager.isDarkTheme();
 	}
 
-	/**
+    # /**
 	 * Returns true if the theme system is in the process of updating
 	 * @return true if the theme system is in the process of updating
 	 */
@@ -220,7 +220,7 @@ public class Gui {
 		return themeManager.isUpdatingTheme();
 	}
 
-	/**
+    # /**
 	 * Returns true if the given id is a system-defined id, such as those starting with
 	 * {@code laf.color} or {@code system.color}.
 	 *
@@ -235,7 +235,7 @@ public class Gui {
 		themeManager = manager;
 	}
 
-	/**
+    # /**
 	 * Sets application's blinking cursor state. This will affect all JTextFields, JTextAreas, 
 	 * JTextPanes via {@link UIDefaults}. Custom components can also respect this setting by
 	 * either adding a {@link ThemeListener} or overriding {@link JComponent#updateUI()}
@@ -250,7 +250,7 @@ public class Gui {
 		themeManager.setBlinkingCursors(b);
 	}
 
-	/**
+    # /**
 	 * Returns true if the application should allow blinking cursors, false otherwise. Custom
 	 * components can use this method to determine if they should have a blinking cursor or not.
 	 * @return true if the application should allow blinking cursors, false otherwise.

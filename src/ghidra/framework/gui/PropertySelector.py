@@ -31,7 +31,7 @@ public class PropertySelector extends JComboBox<String> implements ItemListener 
 	private PropertyEditor propertyEditor;
 	private boolean notifyEditorOfChanges = true;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param pe bean property editor that is updated when the state
 	 * changes in the combo box

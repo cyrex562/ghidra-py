@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.constantpool;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -44,7 +44,7 @@ public class ConstantPoolMethodHandleInfo extends AbstractConstantPoolInfoJava {
 		referenceIndex = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the reference_kind item must be in the range 1 to 9. The
 	 * value denotes the kind of this method handle, which characterizes its bytecode
 	 * behavior.
@@ -54,7 +54,7 @@ public class ConstantPoolMethodHandleInfo extends AbstractConstantPoolInfoJava {
 		return referenceKind;
 	}
 
-	/** 
+    # /** 
 	 * The value of the reference_index item must be a valid index into the
 	 * constant_pool table.
 	 * <p>

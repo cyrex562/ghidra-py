@@ -16,14 +16,14 @@
 
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.Msg;
 
 public class SquashSuperBlock {
 
-	/**
+    # /**
 	 * ===== 32 BIT INTEGER VALUES =====
 	 */
 
@@ -42,7 +42,7 @@ public class SquashSuperBlock {
 	// The number of entries in the fragment table
 	private final long totalFragments;
 
-	/**
+    # /**
 	 * ===== 16 BIT SHORT VALUES =====
 	 */
 
@@ -64,7 +64,7 @@ public class SquashSuperBlock {
 	// The minor SquashFS version (should always be 0)
 	private final int minorVersion;
 
-	/**
+    # /**
 	 * ===== 64 BIT LONG VALUES =====
 	 */
 
@@ -95,7 +95,7 @@ public class SquashSuperBlock {
 	// The byte offset to the start of the export table
 	private final long exportTableStart;
 
-	/**
+    # /**
 	 * ===== FLAGS BREAKDOWN =====
 	 * NOTE: Descriptions are for if the flag is set
 	 * 0x0001 - inodes are not compressed (NOTE: UID/GIDs also share this setting)
@@ -112,7 +112,7 @@ public class SquashSuperBlock {
 	 * 0x0800 - The ID table is uncompressed
 	 */
 
-	/**
+    # /**
 	 * Represents the SuperBlock (archive processing information) within the SquashFS archive
 	 * @param reader A binary reader for the entire SquashFS archive
 	 * @throws IOException Any read operation failure
@@ -284,7 +284,7 @@ public class SquashSuperBlock {
 		return majorVersion + "." + minorVersion;
 	}
 
-	/**
+    # /**
 	 * Validate the SuperBlock against expected values and warn the user of any possible issues
 	 */
 	public void checkCompatibility() {

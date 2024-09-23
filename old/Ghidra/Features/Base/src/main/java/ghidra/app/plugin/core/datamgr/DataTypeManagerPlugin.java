@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.datamgr;
 import java.awt.Component;
 import java.awt.datatransfer.Clipboard;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 

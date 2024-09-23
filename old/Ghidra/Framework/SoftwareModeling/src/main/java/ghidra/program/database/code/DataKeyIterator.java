@@ -20,7 +20,7 @@ import ghidra.program.database.map.AddressMap;
 import ghidra.program.model.listing.Data;
 import ghidra.program.model.listing.DataIterator;
 
-import java.io.IOException;
+
 
 import db.DBLongIterator;
 

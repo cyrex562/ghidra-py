@@ -16,7 +16,7 @@
 package generic.theme;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.framework.preferences.Preferences;
 import ghidra.util.Msg;

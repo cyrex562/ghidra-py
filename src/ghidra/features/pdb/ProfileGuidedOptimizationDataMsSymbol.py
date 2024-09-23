@@ -34,7 +34,7 @@ public class ProfileGuidedOptimizationDataMsSymbol extends AbstractMsSymbol {
 	private long staticInstructionCount;
 	private long postInliningStaticInstructionCount;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

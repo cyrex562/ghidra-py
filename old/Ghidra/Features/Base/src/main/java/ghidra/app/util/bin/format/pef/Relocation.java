@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Program;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 /**
  * The high-order 7 bits for the currently defined relocation opcode values.

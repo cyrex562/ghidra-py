@@ -24,7 +24,7 @@ import ghidra.program.model.mem.MemoryAccessException;
  * searching the libraries for a match. 
  */
 public interface FidHasher {
-	/**
+    # /**
 	 * Computes the hash for a given function.
 	 * @param func the function to hash
 	 * @return the FID hash quad (all 4 hashes at once) or null if there aren't enough code units

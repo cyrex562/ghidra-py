@@ -27,7 +27,7 @@ public class DefaultColorProvider implements ColorProvider {
 	private Color color;
 	private String prefix;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param prefix a descriptive prefix used in the {@link #toString()} method
 	 * @param color the color

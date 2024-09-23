@@ -40,7 +40,7 @@ public class Block {		// Basic block within the function
 		instList = null;
 	}
 
-	/**
+    # /**
 	 * Clear out structures associated with main sort
 	 */
 	protected void clearSort() {
@@ -48,7 +48,7 @@ public class Block {		// Basic block within the function
 			element.clearSort();
 	}
 
-	/**
+    # /**
 	 * Set up block match deconfliction value matchHash. This is fed into the n-gram hashes for Instructions
 	 * contained by this block to uniquely associate the n-grams with this block (and the matching block on
 	 * the other side)
@@ -65,14 +65,14 @@ public class Block {		// Basic block within the function
 		matchHash *= 4691;
 	}
 
-	/**
+    # /**
 	 * @return the main deconfliction hash feed
 	 */
 	public int getMatchHash() {
 		return matchHash;
 	}
 
-	/**
+    # /**
 	 * If the indicated n-gram, within this block, consists of unmatched instructions
 	 * @param startindex is the index of the first Instruction in the n-gram
 	 * @param length is the number of instructions in the n-gram
@@ -85,7 +85,7 @@ public class Block {		// Basic block within the function
 		return true;
 	}
 
-	/**
+    # /**
 	 * Calculate an n-gram hash, given a particular hash function
 	 * @param gramSize is the size of the n-gram
 	 * @param instHash is the first Instruction in the n-gram
@@ -102,7 +102,7 @@ public class Block {		// Basic block within the function
 		return hashVal;
 	}
 
-	/**
+    # /**
 	 * Calculate n-gram hashes used for matching (for Instructions in this basic-block).  The exact hashes generated
 	 * can be changed to get different looks at the data over multiple matching passes.
 	 * @param minLength is the minimum length of an n-gram to calculate

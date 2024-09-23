@@ -19,7 +19,7 @@ import static ghidra.pcode.utils.SlaFormat.*;
 import static org.junit.Assert.*;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 import java.util.Collections;
 import java.util.concurrent.atomic.AtomicReference;
 

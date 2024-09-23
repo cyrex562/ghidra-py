@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.sem;
 
 import java.util.*;
@@ -33,22 +33,22 @@ import ghidra.app.plugin.processors.sleigh.symbol.OperandSymbol;
 import ghidra.app.plugin.processors.sleigh.symbol.SubtableSymbol;
 
 # /**
- * A {@link AssemblyResolution} indicating successful application of a constructor
- * 
- * <p>
- * This is almost analogous to {@link ghidra.app.plugin.processors.sleigh.pattern.DisjointPattern
- * DisjointPattern}, in that is joins an instruction {@link AssemblyPatternBlock} with a
- * corresponding context {@link AssemblyPatternBlock}. However, this object is mutable, and it
- * collects backfill records, as well as forbidden patterns.
- * 
- * <p>
- * When the applied constructor is from the "instruction" subtable, this represents a fully-
- * constructed instruction with required context. All backfill records ought to be resolved and
- * applied before the final result is given to the user, i.e., passed into the
- * {@link AssemblySelector}. If at any time during the resolution or backfill process, the result
- * becomes confined to one of the forbidden patterns, it must be dropped, since the encoding will
- * actually invoke a more specific SLEIGH constructor.
- */
+# * A {@link AssemblyResolution} indicating successful application of a constructor
+# * 
+# * <p>
+# * This is almost analogous to {@link ghidra.app.plugin.processors.sleigh.pattern.DisjointPattern
+# * DisjointPattern}, in that is joins an instruction {@link AssemblyPatternBlock} with a
+# * corresponding context {@link AssemblyPatternBlock}. However, this object is mutable, and it
+# * collects backfill records, as well as forbidden patterns.
+# * 
+# * <p>
+# * When the applied constructor is from the "instruction" subtable, this represents a fully-
+# * constructed instruction with required context. All backfill records ought to be resolved and
+# * applied before the final result is given to the user, i.e., passed into the
+# * {@link AssemblySelector}. If at any time during the resolution or backfill process, the result
+# * becomes confined to one of the forbidden patterns, it must be dropped, since the encoding will
+# * actually invoke a more specific SLEIGH constructor.
+# */
 public class DefaultAssemblyResolvedPatterns extends AbstractAssemblyResolution
 		implements AssemblyResolvedPatterns {
 	protected static final String INS = AbstractAssemblyResolutionFactory.INS;
@@ -237,7 +237,7 @@ public class DefaultAssemblyResolvedPatterns extends AbstractAssemblyResolution
 		return builder == null ? null : builder.build();
 	}
 
-	/**
+    # /**
 	 * Combine a backfill result
 	 * 
 	 * <p>
@@ -371,7 +371,7 @@ public class DefaultAssemblyResolvedPatterns extends AbstractAssemblyResolution
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Duplicate this resolution, with additional description text appended
 	 * 
 	 * @param append the text to append
@@ -489,7 +489,7 @@ public class DefaultAssemblyResolvedPatterns extends AbstractAssemblyResolution
 		return !backfills.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Check if this resolution includes forbidden patterns
 	 * 
 	 * @return true if there are forbidden patterns
@@ -636,7 +636,7 @@ public class DefaultAssemblyResolvedPatterns extends AbstractAssemblyResolution
 		return sb.toString();
 	}
 
-	/**
+    # /**
 	 * Count the number of bits specified in the resolution patterns
 	 * 
 	 * <p>
@@ -692,7 +692,7 @@ public class DefaultAssemblyResolvedPatterns extends AbstractAssemblyResolution
 		return piece.charAt(1) - 'A';
 	}
 
-	/**
+    # /**
 	 * If the construct state is a {@code ^instruction} or other purely-recursive constructor, get
 	 * its single child.
 	 * 

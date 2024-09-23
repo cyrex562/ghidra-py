@@ -22,7 +22,7 @@ public class SizeLimitedAccumulatorWrapper<T> implements Accumulator<T> {
 	private Accumulator<T> accumulator;
 	private int maxSize;
 
-	/**
+    # /**
 	 * Constructor.
 	 *  
 	 * @param accumulator the accumulator to pass items to
@@ -63,7 +63,7 @@ public class SizeLimitedAccumulatorWrapper<T> implements Accumulator<T> {
 		return accumulator.size();
 	}
 
-	/**
+    # /**
 	 * Returns true if this size of this accumulator is greater than or equal to the given 
 	 * maximum size
 	 * 

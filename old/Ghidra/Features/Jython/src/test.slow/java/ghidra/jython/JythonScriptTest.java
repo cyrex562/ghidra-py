@@ -17,7 +17,7 @@ package ghidra.jython;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.util.concurrent.atomic.AtomicReference;
 
 import org.junit.*;

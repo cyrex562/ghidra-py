@@ -16,7 +16,7 @@
 package ghidra.framework.data;
 
 import java.awt.*;
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;

@@ -15,7 +15,7 @@
  */
 package ghidra.net;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.security.*;
 import java.security.KeyStore.*;

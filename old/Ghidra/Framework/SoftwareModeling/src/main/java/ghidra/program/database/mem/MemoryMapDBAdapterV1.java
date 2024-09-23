@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.mem;
 
-import java.io.IOException;
+
 
 import db.DBHandle;
 import ghidra.util.exception.VersionException;

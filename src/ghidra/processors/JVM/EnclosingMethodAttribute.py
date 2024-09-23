@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -52,7 +52,7 @@ public class EnclosingMethodAttribute extends AbstractAttributeInfo {
 		methodIndex = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the class_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Class_info structure representing the innermost class that
@@ -63,7 +63,7 @@ public class EnclosingMethodAttribute extends AbstractAttributeInfo {
 		return classIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * If the current class is not immediately enclosed by a method or constructor,
 	 * then the value of the method_index item must be zero.
 	 * <p>

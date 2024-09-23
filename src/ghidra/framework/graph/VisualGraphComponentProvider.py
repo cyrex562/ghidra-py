@@ -68,7 +68,7 @@ public abstract class VisualGraphComponentProvider<V extends VisualVertex,
 		super(tool, name, owner, contextType);
 	}
 
-	/**
+    # /**
 	 * You must return your graph view from this method
 	 * @return your graph view
 	 */
@@ -84,7 +84,7 @@ public abstract class VisualGraphComponentProvider<V extends VisualVertex,
 		subFeatures.forEach(f -> f.providerOpened(this));
 	}
 
-	/**
+    # /**
 	 * Returns true if the satellite is showing, whether in the graph or undocked
 	 * @return true if the satellite is showing, whether in the graph or undocked
 	 */
@@ -93,7 +93,7 @@ public abstract class VisualGraphComponentProvider<V extends VisualVertex,
 		return graphComponent.isSatelliteShowing();
 	}
 
-	/**
+    # /**
 	 * Returns true if the satellite is embedded in the graph view, whether it is showing or not
 	 * @return true if the satellite is embedded in the graph view, whether it is showing or not
 	 */
@@ -133,7 +133,7 @@ public abstract class VisualGraphComponentProvider<V extends VisualVertex,
 // Featurette Methods
 //==================================================================================================
 
-	/**
+    # /**
 	 * Adds the satellite viewer functionality to this provider
 	 */
 	protected void addSatelliteFeature() {
@@ -177,7 +177,7 @@ public abstract class VisualGraphComponentProvider<V extends VisualVertex,
 // Provider Methods
 //==================================================================================================
 
-	/**
+    # /**
 	 * To be called at the end of this provider's lifecycle
 	 */
 	public void dispose() {
@@ -185,7 +185,7 @@ public abstract class VisualGraphComponentProvider<V extends VisualVertex,
 		subFeatures.clear();
 	}
 
-	/**
+    # /**
 	 * Writes this providers saveable state to the given state object
 	 * 
 	 * @param saveState the state object into which state is to be written
@@ -194,7 +194,7 @@ public abstract class VisualGraphComponentProvider<V extends VisualVertex,
 		subFeatures.forEach(f -> f.writeConfigState(saveState));
 	}
 
-	/**
+    # /**
 	 * Reads previously saved state from the given state object
 	 * 
 	 * @param saveState the state object that may contain state information for this provider

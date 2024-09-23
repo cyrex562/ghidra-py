@@ -27,40 +27,40 @@ public interface DataTypeComponent {
 	// TODO: known issue accessing big-endian data when component-length differs from 
 	// datatype length.
 
-	/** The default prefix for the name of a component. */
+    # /** The default prefix for the name of a component. */
 	public final static String DEFAULT_FIELD_NAME_PREFIX = "field";
 
-	/**
+    # /**
 	 * Returns the dataType in this component.
 	 * @return the dataType in this component
 	 */
 	public DataType getDataType();
 
-	/**
+    # /**
 	 * returns the dataType that contains this component.
 	 * @return the dataType that contains this component.
 	 */
 	public DataType getParent();
 
-	/**
+    # /**
 	 * Determine if the specified component corresponds to a bit-field.
 	 * @return true if bit-field else false
 	 */
 	public boolean isBitFieldComponent();
 
-	/**
+    # /**
 	 * Determine if the specified component corresponds to a zero-length bit-field.
 	 * @return true if zero-length bit-field else false
 	 */
 	public boolean isZeroBitFieldComponent();
 
-	/**
+    # /**
 	 * Get the ordinal position within the parent dataType.
 	 * @return ordinal of this component within the parent data type.
 	 */
 	public int getOrdinal();
 
-	/**
+    # /**
 	 * Get the byte offset of where this component begins relative to the start of the parent
 	 * data type.
 	 * @return offset of start of component relative to the start of the parent
@@ -68,7 +68,7 @@ public interface DataTypeComponent {
 	 */
 	public int getOffset();
 
-	/**
+    # /**
 	 * Get the byte offset of where this component ends relative to the start of the parent
 	 * data type.
 	 * @return offset of end of component relative to the start of the parent
@@ -76,7 +76,7 @@ public interface DataTypeComponent {
 	 */
 	public int getEndOffset();
 
-	/**
+    # /**
 	 * Get the length of this component in 8-bit bytes.  Zero-length components will report a length
 	 * of 0 and may overlap other components at the same offset.  Similarly, multiple adjacent
 	 * bit-field components may appear to overlap at the byte-level.
@@ -84,25 +84,25 @@ public interface DataTypeComponent {
 	 */
 	public int getLength();
 
-	/**
+    # /**
 	 * Get the comment for this dataTypeComponent.
 	 * @return component comment string or null if one has not been set
 	 */
 	public String getComment();
 
-	/**
+    # /**
 	 * Gets the default settings for this data type component.
 	 * @return a Settings object that is the set of default values for this dataType component
 	 */
 	public Settings getDefaultSettings();
 
-	/**
+    # /**
 	 * Sets the comment for the component.
 	 * @param comment this components comment or null to clear comment.
 	 */
 	public void setComment(String comment);
 
-	/**
+    # /**
 	 * Get this component's field name within its parent.
 	 * If this method returns null {@link #getDefaultFieldName()} can be used to obtain a default
 	 * generated field name.
@@ -110,7 +110,7 @@ public interface DataTypeComponent {
 	 */
 	public String getFieldName();
 
-	/**
+    # /**
 	 * Sets the field name. If the field name is empty it will be set to null,
 	 * which is the default field name. An exception is thrown if one of the
 	 * parent's other components already has the specified field name.
@@ -122,7 +122,7 @@ public interface DataTypeComponent {
 	 */
 	public void setFieldName(String fieldName) throws DuplicateNameException;
 
-	/**
+    # /**
 	 * Returns a default field name for this component.  Used only if a field name is not set.
 	 * @return default field name (may be null for nameless fields such as a zero-length bitfield).
 	 */
@@ -137,7 +137,7 @@ public interface DataTypeComponent {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given dataTypeComponent is equivalent to this dataTypeComponent.
 	 * A dataTypeComponent is "equivalent" if the other component has a data type
 	 * that is equivalent to this component's data type. The dataTypeComponents must
@@ -149,7 +149,7 @@ public interface DataTypeComponent {
 	 */
 	public boolean isEquivalent(DataTypeComponent dtc);
 
-	/**
+    # /**
 	 * Determine if the specified dataType will be treated as a zero-length component
 	 * allowing it to possibly overlap the next component.  If the specified dataType
 	 * returns true for {@link DataType#isZeroLength()} and true for {@link DataType#isNotYetDefined()}

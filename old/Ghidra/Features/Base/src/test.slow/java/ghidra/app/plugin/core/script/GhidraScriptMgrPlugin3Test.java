@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
+
 
 import javax.swing.*;
 

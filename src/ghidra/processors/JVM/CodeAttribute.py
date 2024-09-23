@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.javaclass.format.constantpool.AbstractConstantPoolInfoJava;
@@ -91,7 +91,7 @@ public class CodeAttribute extends AbstractAttributeInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * The value of the max_stack item gives the maximum depth of the
 	 * operand stack of this method at any point during execution of the method.
 	 * @return the maximum depth of the operand stack
@@ -100,7 +100,7 @@ public class CodeAttribute extends AbstractAttributeInfo {
 		return maxStack & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the max_locals item gives the number of local variables in the
 	 * local variable array allocated upon invocation of this method, including the
 	 * local variables used to pass parameters to the method on its invocation.
@@ -115,7 +115,7 @@ public class CodeAttribute extends AbstractAttributeInfo {
 		return maxLocals & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the code_length item gives the number of bytes in the code array
 	 * for this method. The value of code_length must be greater than zero; the code
 	 * array must not be empty.
@@ -125,7 +125,7 @@ public class CodeAttribute extends AbstractAttributeInfo {
 		return codeLength;
 	}
 
-	/**
+    # /**
 	 * The code array gives the actual bytes of Java virtual machine code that
 	 * implement the method.
 	 * <p>
@@ -143,7 +143,7 @@ public class CodeAttribute extends AbstractAttributeInfo {
 		return code;
 	}
 
-	/**
+    # /**
 	 * The value of the exception_table_length item gives the number of entries
 	 * in the exception_table table.
 	 * @return the number of entries in the exception_table table
@@ -152,7 +152,7 @@ public class CodeAttribute extends AbstractAttributeInfo {
 		return exceptionTableLength & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each entry in the exception_table array describes one exception handler in
 	 * the code array. 
 	 * <p>
@@ -163,7 +163,7 @@ public class CodeAttribute extends AbstractAttributeInfo {
 		return exceptionTable;
 	}
 
-	/**
+    # /**
 	 * The value of the attributes_count item indicates the number of attributes of
 	 * the Code attribute.
 	 * @return the number of attributes of the Code attribute
@@ -172,7 +172,7 @@ public class CodeAttribute extends AbstractAttributeInfo {
 		return attributesCount & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value of the attributes table must be an attribute structure. A
 	 * Code attribute can have any number of optional attributes associated with it.
 	 * <p>

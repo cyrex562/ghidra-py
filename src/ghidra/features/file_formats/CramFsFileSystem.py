@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -93,7 +93,7 @@ public class CramFsFileSystem extends GFileSystemBase {
 		}
 	}
 
-	/**
+    # /**
 	 * Small utility to search childList for specific cramFsInode by name.
 	 * @param targetName the name of the cramFsInode we are searching for.
 	 * @return the target cramFs Inode.
@@ -159,7 +159,7 @@ public class CramFsFileSystem extends GFileSystemBase {
 		return directoryListing;
 	}
 
-	/**
+    # /**
 	 * Used to find the first entry in a directory from the list of child inodes.
 	 * @param childList the list of child inodes.
 	 * @param parentInode the parent cramFsInode.

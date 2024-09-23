@@ -21,7 +21,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 # /**
  * NOTE: THE FOLLOWING TEXT EXTRACTED FROM JVMS7.PDF

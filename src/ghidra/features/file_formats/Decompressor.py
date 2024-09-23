@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.util;
 
-import java.io.*;
+
 
 import org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream;
 
@@ -25,7 +25,7 @@ import utilities.util.FileUtilities;
 
 public class Decompressor {
 
-	/**
+    # /**
 	 * Decompresses the source bytes using the specified "mode".
 	 * @param mode storage mode (aka compression type)
 	 * @param source compressed bytes, if compressed
@@ -48,7 +48,7 @@ public class Decompressor {
 		throw new IOException("invalid storage mode");
 	}
 
-	/**
+    # /**
 	 *  Call the LZ4 decompression library 
 	 */
 	private static byte[] decompressLZ4(byte[] source, int maxDecompressedSize, TaskMonitor monitor)
@@ -65,7 +65,7 @@ public class Decompressor {
 		}
 	}
 
-	/**
+    # /**
 	 *  Call the LZ4-HC decompression library 
 	 */
 	private static byte[] decompressLZ4HC(byte[] source, int maxDecompressedSize,

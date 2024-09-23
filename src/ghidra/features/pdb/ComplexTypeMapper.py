@@ -48,7 +48,7 @@ public class ComplexTypeMapper {
 		map = new HashMap<>();
 	}
 
-	/**
+    # /**
 	 * Returns map to alternate record number or argument record number if no map.  Result is
 	 *  RecordNumber of alternative record for the complex type.  Map is of fwdref to definition
 	 *  RecordNumbers.  The fwdref number is generally, but not always, the lower number

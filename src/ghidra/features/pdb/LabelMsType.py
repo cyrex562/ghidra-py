@@ -32,7 +32,7 @@ public class LabelMsType extends AbstractMsType {
 
 	private int mode;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -48,7 +48,7 @@ public class LabelMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Tells whether if is a near address.
 	 * @return True if it is a near address.
 	 */
@@ -56,7 +56,7 @@ public class LabelMsType extends AbstractMsType {
 		return (mode == ADDRESS_MODE_NEAR);
 	}
 
-	/**
+    # /**
 	 * Tells whether it is a far address.
 	 * @return True if it is a far address.
 	 */

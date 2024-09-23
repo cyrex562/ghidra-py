@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 # /**
@@ -23,12 +23,12 @@ import java.io.InputStream;
  */
 public interface ByteIngest {
 
-	/**
+    # /**
 	 * Clear any previous cached bytes.
 	 */
 	public void clear();
 
-	/**
+    # /**
 	 * Open the ingester for receiving bytes.  This establishes the description of the source of
 	 * the bytes and maximum number of bytes that can be read
 	 * @param max is the maximum number of bytes that can be read
@@ -36,7 +36,7 @@ public interface ByteIngest {
 	 */
 	public void open(int max, String desc);
 
-	/**
+    # /**
 	 * Ingest bytes from the stream up to (and including) the first 0 byte.  This can be called
 	 * multiple times to read in bytes in different chunks.
 	 * An absolute limit is set on the number of bytes that can be ingested via the max parameter
@@ -46,7 +46,7 @@ public interface ByteIngest {
 	 */
 	public void ingestStreamToNextTerminator(InputStream inStream) throws IOException;
 
-	/**
+    # /**
 	 * Ingest bytes from the stream until the end of stream is encountered.
 	 * An absolute limit is set on the number of bytes that can be ingested via the max parameter
 	 * to a previous call to open(). If this limit is exceeded, an exception is thrown.
@@ -55,7 +55,7 @@ public interface ByteIngest {
 	 */
 	public void ingestStream(InputStream inStream) throws IOException;
 
-	/**
+    # /**
 	 * Ingest bytes directly from a byte array.
 	 * If these bytes would cause the total number of bytes ingested to exceed
 	 * the maximum (as set by the call to open()), an exception is thrown.
@@ -67,13 +67,13 @@ public interface ByteIngest {
 	 */
 	public void ingestBytes(byte[] byteArray, int off, int sz) throws IOException;
 
-	/**
+    # /**
 	 * Formal indicator that ingesting of bytes is complete and processing can begin
 	 * @throws IOException for errors processing the underlying stream
 	 */
 	public void endIngest() throws IOException;
 
-	/**
+    # /**
 	 * @return true if no bytes have yet been ingested via ingestStream()
 	 */
 	public boolean isEmpty();

@@ -26,7 +26,7 @@ public class TwoColumnPairLayout implements LayoutManager {
 	private int pairGap;
 	private int preferredColumnWidth;
 
-	/**
+    # /**
 	 * Constructor for PairLayout.
 	 */
 	public TwoColumnPairLayout() {
@@ -42,21 +42,21 @@ public class TwoColumnPairLayout implements LayoutManager {
 		this.preferredColumnWidth = preferredValueColumnWidth;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#addLayoutComponent(String, Component)
 	 */
 	@Override
 	public void addLayoutComponent(String name, Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#removeLayoutComponent(Component)
 	 */
 	@Override
 	public void removeLayoutComponent(Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#preferredLayoutSize(Container)
 	 */
 	@Override
@@ -78,7 +78,7 @@ public class TwoColumnPairLayout implements LayoutManager {
 		return d;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#minimumLayoutSize(Container)
 	 */
 	@Override
@@ -86,7 +86,7 @@ public class TwoColumnPairLayout implements LayoutManager {
 		return preferredLayoutSize(parent);
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#layoutContainer(Container)
 	 */
 	@Override

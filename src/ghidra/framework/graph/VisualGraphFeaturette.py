@@ -31,14 +31,14 @@ public interface VisualGraphFeaturette<V extends VisualVertex,
 									   G extends VisualGraph<V, E>> {
 //@formatter:on
 
-	/**
+    # /**
 	 * Called to initialize this feature when the provider and view are ready
 	 * 
 	 * @param provider the provider associated with this feature
 	 */
 	public void init(VisualGraphComponentProvider<V, E, G> provider);
 
-	/**
+    # /**
 	 * Called when the client wishes to save configuration state.  Features can add any state
 	 * they wish to be persisted over tool launches.
 	 * 
@@ -46,7 +46,7 @@ public interface VisualGraphFeaturette<V extends VisualVertex,
 	 */
 	public void writeConfigState(SaveState state);
 
-	/**
+    # /**
 	 * Called when the client wishes to restore configuration state.  Features can read state
 	 * previously saved from a call to {@link #writeConfigState(SaveState)}.
 	 * 
@@ -54,21 +54,21 @@ public interface VisualGraphFeaturette<V extends VisualVertex,
 	 */
 	public void readConfigState(SaveState saveState);
 
-	/**
+    # /**
 	 * Called when the client provider is opened
 	 * 
 	 * @param provider the provider
 	 */
 	public void providerOpened(VisualGraphComponentProvider<V, E, G> provider);
 
-	/**
+    # /**
 	 * Called when the client provider is closed
 	 * 
 	 * @param provider the provider
 	 */
 	public void providerClosed(VisualGraphComponentProvider<V, E, G> provider);
 
-	/**
+    # /**
 	 * Called when the provider is being disposed
 	 */
 	public void remove();

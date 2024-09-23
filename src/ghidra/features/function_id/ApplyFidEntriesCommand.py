@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.cmd;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.cmd.label.SetLabelPrimaryCmd;
@@ -148,7 +148,7 @@ public class ApplyFidEntriesCommand extends BackgroundCommand<Program> {
 			monitor);
 	}
 
-	/**
+    # /**
 	 * Construct list of names as they should appear in the comment for the function.
 	 * @param monitor is the task monitor
 	 * @return the list of names as a formatted String
@@ -262,7 +262,7 @@ public class ApplyFidEntriesCommand extends BackgroundCommand<Program> {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if there are symbol names at the function entry point that were either
 	 * created by a user or an importer. (i.e trusted)
 	 * @param function the function to test for trusted symbols
@@ -289,7 +289,7 @@ public class ApplyFidEntriesCommand extends BackgroundCommand<Program> {
 		addSymbolToFunction(function, newFunctionName);
 	}
 
-	/**
+    # /**
 	 * Delete a symbol of the given name at the given address.
 	 * 
 	 * @param matchName is the given Symbol name
@@ -374,7 +374,7 @@ public class ApplyFidEntriesCommand extends BackgroundCommand<Program> {
 		}
 	}
 
-	/**
+    # /**
 	 * Apply special FID_CONFLICT to the primary symbol on functions where we had multiple matches
 	 * @param program is the Program
 	 */
@@ -417,7 +417,7 @@ public class ApplyFidEntriesCommand extends BackgroundCommand<Program> {
 		}
 	}
 
-	/**
+    # /**
 	 * Takes a set of FID matching names and returns a subset that includes only names that don't exist
 	 * somewhere else in the program.
 	 */

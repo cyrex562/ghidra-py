@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.projectdata.actions;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -124,7 +124,7 @@ public class VersionControlAddAction extends VersionControlAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Task for adding files to version control. This task displays a dialog for each file 
 	 * which allows a comment to be entered for each check-in.
 	 */

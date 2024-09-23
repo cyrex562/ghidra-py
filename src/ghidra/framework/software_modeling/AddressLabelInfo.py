@@ -36,7 +36,7 @@ public class AddressLabelInfo implements Comparable<AddressLabelInfo> {
 	private int sizeInBytes;
 	private Boolean isVolatile;
 	
-	/**
+    # /**
 	 * Constructor for class AddressLabelInfo
 	 * 
 	 * @param	addr			Address object that describes the memory address
@@ -66,35 +66,35 @@ public class AddressLabelInfo implements Comparable<AddressLabelInfo> {
 		this.isVolatile = isVolatile;
 	}
 
-	/**
+    # /**
 	 * @return object's address.
 	 */
 	public final Address getAddress() {
 		return addr;
 	}
 	
-	/**
+    # /**
 	 * @return the object's end address.
 	 */
 	public final Address getEndAddress() {
 		return endAddr;
 	}
 	
-	/**
+    # /**
 	 * @return the object's label or alias.
 	 */
 	public final String getLabel() {
 		return label;
 	}
 	
-	/**
+    # /**
 	 * @return the object's description if it has one, null otherwise
 	 */
 	public final String getDescription() {
 		return description;
 	}
 
-	/**
+    # /**
 	 * @return the object's size in bytes. Always non-zero positive value and defaults to 
 	 * addressable unit size of associated address space.
 	 */
@@ -102,14 +102,14 @@ public class AddressLabelInfo implements Comparable<AddressLabelInfo> {
 		return sizeInBytes;
 	}
 	
-	/**
+    # /**
 	 * @return whether the object is the primary label at the address.
 	 */
 	public final boolean isPrimary() {
 		return isPrimary;
 	}
 	
-	/**
+    # /**
 	 * @return whether the object is volatile.
 	 * Boolean.False when the address is explicitly not volatile.
 	 * Boolean.True when the address is volatile.
@@ -119,7 +119,7 @@ public class AddressLabelInfo implements Comparable<AddressLabelInfo> {
 		return isVolatile;
 	}
 
-	/**
+    # /**
 	 * Returns the type of processor symbol (if this was defined by a pspec) or null if this
 	 * is not a processor symbol or it was not specified in the pspec file.  It basically allows
 	 * a pspec file to give more information about a symbol such as if code or a code pointer is

@@ -30,7 +30,7 @@ import ghidra.util.exception.CancelledException;
 public class CreateEHIPToStateMapBackgroundCmd
 		extends AbstractCreateDataBackgroundCmd<EHIPToStateModel> {
 
-	/**
+    # /**
 	 * Constructs a command for applying an IPToStateMapEntry exception handling data type at an 
 	 * address.
 	 * @param address the address where the data should be created using the data type.
@@ -40,7 +40,7 @@ public class CreateEHIPToStateMapBackgroundCmd
 		super(EHIPToStateModel.DATA_TYPE_NAME, address, count);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying an IPToStateMapEntry exception handling data type at an 
 	 * address.
 	 * @param address the address where the data should be created using the data type.
@@ -56,7 +56,7 @@ public class CreateEHIPToStateMapBackgroundCmd
 		super(EHIPToStateModel.DATA_TYPE_NAME, address, count, validationOptions, applyOptions);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a IPToStateMapEntry exception handling data type at the 
 	 * address indicated by the model.
 	 * @param ipToStateModel the model for the data type

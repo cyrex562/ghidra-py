@@ -32,14 +32,14 @@ public abstract class VTAbstractProgramCorrelatorFactory implements VTProgramCor
 		this(VTProgramCorrelatorAddressRestrictionPreference.PREFER_RESTRICTING_ACCEPTED_MATCHES);
 	}
 
-	/**
+    # /**
 	 * Returns the name of the correlator for display to the user in the GUI.
 	 * @return the name of the correlator
 	 */
 	@Override
 	public abstract String getName();
 
-	/**
+    # /**
 	 * Returns the description of the correlator for display to the user in the GUI.
 	 * @return the description of the correlator
 	 */
@@ -56,7 +56,7 @@ public abstract class VTAbstractProgramCorrelatorFactory implements VTProgramCor
 		return addressRestrictionPreference;
 	}
 
-	/**
+    # /**
 	 * Returns an options action that contains a list of all supported options for the algorithm and
 	 * their default values.  Override if you need to provide other than the
 	 * @return an options action that contains a list of all supported options for the algorithm and
@@ -77,7 +77,7 @@ public abstract class VTAbstractProgramCorrelatorFactory implements VTProgramCor
 			options == null ? createDefaultOptions() : (VTOptions) options.copy());
 	}
 
-	/**
+    # /**
 	 * This method is added to the interface to enforce the fact that we want options passed into
 	 * this method to be copies so that changes during correlation do not spoil the options
 	 * of others.
@@ -95,7 +95,7 @@ public abstract class VTAbstractProgramCorrelatorFactory implements VTProgramCor
 			AddressSetView sourceAddressSet, Program destinationProgram,
 			AddressSetView destinationAddressSet, VTOptions options);
 
-	/**
+    # /**
 	 * Deprecated.  Use {@link #createCorrelator(Program, AddressSetView, Program, AddressSetView, VTOptions)}
 	 * instead.
 	 *

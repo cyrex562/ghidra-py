@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 
@@ -30,7 +30,7 @@ public class SquashExtendedFileInode extends SquashBasicFileInode {
 	// An index into the Xattr table or 0xFFFFFFFF if no this inode has no xattrs
 	private long xattrIndex;
 
-	/**
+    # /**
 	 * Represents a SquashFS extended file inode
 	 * @param reader A binary reader with pointer index at the start of the inode data
 	 * @param superBlock The SuperBlock for the current archive

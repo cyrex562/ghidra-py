@@ -16,7 +16,7 @@
 package ghidra.framework.data;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Function;
 
@@ -71,7 +71,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		return true;
 	};
 
-	/**
+    # /**
 	 * Construct a new DomainObjectAdapterDB object.
 	 * @param dbh database handle
 	 * @param name name of the domain object
@@ -94,7 +94,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		return transactionMgr;
 	}
 
-	/**
+    # /**
 	 * Flush any pending database changes.
 	 * This method will be invoked by the transaction manager
 	 * prior to closing a transaction.
@@ -103,7 +103,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Invalidate (i.e., clear) any pending database changes not yet written.
 	 * This method will be invoked by the transaction manager
 	 * prior to aborting a transaction.
@@ -112,7 +112,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Return array of all domain objects synchronized with a
 	 * shared transaction manager.
 	 * @return returns array of synchronized domain objects or
@@ -126,7 +126,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		return null;
 	}
 
-	/**
+    # /**
 	 * Synchronize the specified domain object with this domain object
 	 * using a shared transaction manager.  If either or both is already shared,
 	 * a transition to a single shared transaction manager will be
@@ -167,7 +167,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		}
 	}
 
-	/**
+    # /**
 	 * Release this domain object from a shared transaction manager.  If
 	 * this object has not been synchronized with others via a shared
 	 * transaction manager, this method will have no affect.
@@ -181,21 +181,21 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		((SynchronizedTransactionManager) transactionMgr).removeDomainObject(this);
 	}
 
-	/**
+    # /**
 	 * Returns the open handle to the underlying database.
 	 */
 	public DBHandle getDBHandle() {
 		return dbh;
 	}
 
-	/**
+    # /**
 	 * Returns the user data object or null if not supported by this domain object.
 	 */
 	protected DomainObjectAdapterDB getUserData() {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the change set corresponding to all unsaved changes in this domain object.
 	 * @return the change set corresponding to all unsaved changes in this domain object
 	 */
@@ -209,7 +209,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		fatalErrorOccurred(e);
 	}
 
-	/**
+    # /**
 	 * Returns all properties lists contained by this domain object.
 	 *
 	 * @return all property lists contained by this domain object.
@@ -229,7 +229,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		return new SubOptions(options, propertyListName, propertyListName + Options.DELIMITER);
 	}
 
-	/**
+    # /**
 	 * This method can be used to perform property list alterations resulting from renamed or obsolete
 	 * property paths.  This should only be invoked during an upgrade.
 	 * WARNING! Should only be called during construction of domain object
@@ -270,7 +270,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		}
 	}
 
-	/**
+    # /**
 	 * Set instance as immutable by disabling use of transactions.  Attempts to start a transaction
 	 * will result in a {@link TerminatedTransactionException}.  This method should invoked at the end of 
 	 * instance instatiation {@link OpenMode#IMMUTABLE} was used.
@@ -279,7 +279,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		transactionMgr.setImmutable();
 	}
 
-	/**
+    # /**
 	 * Attempt to obtain a modification lock on the domain object when generating a
 	 * background snapshot.
 	 * @param hasProgress true if monitor has progress indicator
@@ -301,7 +301,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		transactionMgr.unlock();
 	}
 
-	/**
+    # /**
 	 * Release the modification lock which is associated with the specified LockingTaskHandler.
 	 */
 	void unlock(LockingTaskMonitor handler) {
@@ -361,7 +361,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		transactionMgr.endTransaction(this, transactionID, commit, true);
 	}
 
-	/**
+    # /**
 	 * Adds the given transaction listener to this domain object
 	 * @param listener the new transaction listener to add
 	 */
@@ -370,7 +370,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		transactionMgr.addTransactionListener(this, listener);
 	}
 
-	/**
+    # /**
 	 * Removes the given transaction listener from this domain object.
 	 * @param listener the transaction listener to remove
 	 */
@@ -379,7 +379,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		transactionMgr.removeTransactionListener(this, listener);
 	}
 
-	/**
+    # /**
 	 * Returns the undo stack depth.
 	 * (The number of items on the undo stack)
 	 * This method is for JUnits.
@@ -450,7 +450,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		}
 	}
 
-	/**
+    # /**
 	 * Notification of property change
 	 * @param propertyName
 	 * @param oldValue
@@ -483,7 +483,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		options.clearCache();
 	}
 
-	/**
+    # /**
 	 * Indicates that this domain object has been restored to a completely different state due
 	 * to a transaction undo/redo/rollback or a database merge operation.
 	 */
@@ -564,7 +564,7 @@ public abstract class DomainObjectAdapterDB extends DomainObjectAdapter implemen
 		}
 	}
 
-	/**
+    # /**
 	 * This method is called before a save, saveAs, or saveToPackedFile
 	 * to update common meta data
 	 * @throws IOException

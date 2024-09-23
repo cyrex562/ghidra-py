@@ -22,7 +22,7 @@ import ghidra.program.model.lang.DecompilerLanguage;
  */
 public class ByteDataType extends AbstractUnsignedIntegerDataType {
 
-	/** A statically defined ByteDataType instance.*/
+    # /** A statically defined ByteDataType instance.*/
 	public final static ByteDataType dataType = new ByteDataType();
 
 	public ByteDataType() {

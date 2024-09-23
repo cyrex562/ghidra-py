@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query;
 
-import java.io.*;
+
 import java.net.Authenticator;
 import java.net.InetAddress;
 import java.nio.file.Files;
@@ -154,7 +154,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 	// for every call.
 	private Connection localConnection;
 
-	/**
+    # /**
 	 * Constructor for launching from the console
 	 */
 	public BSimControlLaunchable() {
@@ -182,7 +182,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		adminPasswordData = null;
 	}
 
-	/**
+    # /**
 	 * Read required parameters followed by optional parameters
 	 * @param params is the original array of command line parameters
 	 */
@@ -227,7 +227,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		return command;
 	}
 
-	/**
+    # /**
 	 * Read in any optional parameters, strip them from the parameter stream
 	 * @param command command name
 	 * @param params is the original array of command line parameters
@@ -368,7 +368,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Verify that the given file is a PEM certificate
 	 * @param testFile the file to test
 	 * @return true if testFile looks like a PEM certificate
@@ -394,7 +394,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Parse the -distinguishedName- String, verifying it is has the correct format for a
 	 * X509 certificate distinguished name. Try to extract the common name portion of the
 	 * distinguished name and assign it to -commonName- 
@@ -422,7 +422,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if the server (referred to by -postgresRoot-) is running
 	 * @throws IOException if there is a problem running the command
 	 * @throws InterruptedException if there is a problem running the command
@@ -449,7 +449,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 				.getPassword();
 	}
 
-	/**
+    # /**
 	 * (For a new postgres server) Establish an administrative password, by requesting the password
 	 * from the user, and then having the user re-enter the password. The password is stored in
 	 * the character array -adminPasswordData- and written to the file -passwordFile-
@@ -481,7 +481,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		writer.close();
 	}
 
-	/**
+    # /**
 	 * Clear (sensitive) data for a particular character array so it is no longer accessible from the heap
 	 * @param password is the array of sensitive characters
 	 */
@@ -493,7 +493,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Compare that two character arrays contain exactly the same data
 	 * @param password password to compare
 	 * @param repeatPass password to compare
@@ -514,7 +514,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Make sure password data, stored either in the heap or in a temporary file, is scrubbed
 	 * @throws IOException if the password file cannot be deleted
 	 */
@@ -532,7 +532,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Servers that allow SSL connections are required to have a certificate that allows it to
 	 * authenticate itself to users.  The BSim server does not authenticate itself to clients, but
 	 * a certificate must still be present.  We generate a self-signed certificate.
@@ -591,7 +591,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a local connection to a postgres server. A full SSL connection is created using
 	 * Ghidra's infrastructure.  If the initial connection fails because password authentication
 	 * was requested, collect the administrative password from the user, and try the connection again
@@ -633,7 +633,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		return DriverManager.getConnection(connstring, properties);			// Try again providing driver a password		
 	}
 
-	/**
+    # /**
 	 * Execute SQL statement on a connection that returns nothing.
 	 * If execution fails, the connection is closed before throwing exception
 	 * @param pdb is the connection
@@ -651,7 +651,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * On a running server, establish a local connection and enable the BSim specific extension for that server
 	 * @throws SQLException if the sql statement cannot be executed
 	 * @throws IOException if the db connection cannot be established
@@ -668,7 +668,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 
 	}
 
-	/**
+    # /**
 	 * Invoke an external executable/command, display the output and error streams on the console,
 	 * the exit condition of the command is returned.  If the exit condition indicates and error,
 	 * but a line of the error stream matches a provided String, the error is suppressed 
@@ -698,7 +698,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		return retval;
 	}
 
-	/**
+    # /**
 	 * Tune the postgres configuration and authentication files (postgresql.conf and pg_hba.conf)
 	 * based on the command-line options passed in by the user and the ghidra specific configuration options
 	 * @param inputFile is the unmodified postgresql.conf file
@@ -749,7 +749,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		serverConfig.patchConnect(inHbaFile, outHbaFile);
 	}
 
-	/**
+    # /**
 	 * Set-up the PostgreSQL shared library environment variable for this Ghidra installation
 	 */
 	private void setupPostgresSharedLibrary() {
@@ -763,7 +763,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		loadLibraryValue = postgresLibrary.getAbsolutePath();
 	}
 
-	/**
+    # /**
 	 * Locate the "pg_ctl" executable within the PostgreSQL installation. Unpack the installation
 	 * if it is not already.
 	 * @throws IOException if postgres folder cannot be determined
@@ -783,7 +783,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Recover the parameter settings from a previously initialized server
 	 * @param configFile is main configuration file: port, adminPassword, hostAuthentication
 	 * @param hbaFile is the connection file
@@ -827,7 +827,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Make sure certificate authority needed for pki was provided by user, otherwise throw exception
 	 * @throws IOException if the cert file is invalid
 	 * @throws GeneralSecurityException if the cert file is not a valid certificate
@@ -847,7 +847,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Locate the PostgreSQL configuration and authentication files (postgresql.conf and pg_hba.conf)
 	 * and recover the settings pertinent to BSimControl.  If the data directory has not been initialized yet,
 	 * run PostgreSQL's init command to perform the initialization and then tailor the configuration
@@ -926,7 +926,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 			new File(dataDirectory, "server.key"));
 	}
 
-	/**
+    # /**
 	 * Scan the PostgreSQL data directory from the command-line
 	 * Make sure the directory exists and establish the File object -dataDirectory-
 	 * @param params are the command-line arguments
@@ -947,7 +947,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		dataDirectory = dataDirectory.getCanonicalFile();
 	}
 
-	/**
+    # /**
 	 * Scan the username from the command-line
 	 * @param params are the command-line arguments
 	 * @param slot is the position to retrieve the username argument
@@ -960,7 +960,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		specifiedUserName = params[slot];
 	}
 
-	/**
+    # /**
 	 * Scan command-line for a particular privilege level. Administrator privileges are
 	 * requested with the exact String "admin", anything is a request for a read-only user 
 	 * @param params are the command-line arguments
@@ -982,7 +982,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Start a PostgreSQL server, configured for BSim, on the local host.
 	 * If the data directory is already populated, the server process is simply restarted.
 	 * If the data directory is empty, a new server configuration is established, and the server is started.
@@ -1035,7 +1035,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Stop the running PostgreSQL processes on the local host. No authentication is required to shutdown
 	 * the server.  User must be the process owner.
 	 * @throws IOException if postgres cannot be discovered or stopped
@@ -1059,7 +1059,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		System.out.println("Server shutdown complete");
 	}
 
-	/**
+    # /**
 	 * Trigger a server running on the local host to rescan its identity file to pickup
 	 * any changes to the user mapping
 	 * @throws IOException if creating a new user fails
@@ -1078,7 +1078,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Update the PostgreSQL identity map (pg_ident.conf) adding a map from
 	 * the currently active -commonName- to -username-
 	 * @param username the user name to add
@@ -1095,7 +1095,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		FileUtilities.copyFile(copyFile, identFile, false, null);
 	}
 
-	/**
+    # /**
 	 * Add a new user to the currently running server on the local host.
 	 * A connection is established, using the local interface, and the "CREATE ROLE" command
 	 * is executed. If the server is configured to require certificate authentication on
@@ -1152,7 +1152,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		System.out.println(resultMessage.toString());
 	}
 
-	/**
+    # /**
 	 * Returns a connection to a local Postgres database. If a connection has not yet
 	 * been established, it creates one.
 	 * 
@@ -1173,7 +1173,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		return localConnection;
 	}
 
-	/**
+    # /**
 	 * On a server running on the local host, remove the specified username.
 	 * A local connection is created and the "DROP ROLE" command is run. If
 	 * the server uses PKI authentication, the PostgreSQL identity file is
@@ -1222,7 +1222,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * The data directory for a server (which must not be running) is reconfigured
 	 * with new local and remote authentication options, and the port may be reconfigured as well.
 	 * Database records are unaltered.
@@ -1320,7 +1320,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		tuneConfig(configCopy, configFile, hbaCopy, hbaFile, serverConfigFile);
 	}
 
-	/**
+    # /**
 	 * Reset the password for -username- to DEFAULT_PASSWORD
 	 * @param pdb is the connection over which to issue the command
 	 * @param username is the user name to reset
@@ -1336,7 +1336,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		executeSQLStatement(pdb, buffer.toString());
 	}
 
-	/**
+    # /**
 	 * Reset the PostgreSQL password associated with the specified user name on the local server.
 	 * The user submitting this request on behalf of the specified user may need to
 	 * enter their own password or passphrase to authenticate with the server.
@@ -1374,7 +1374,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Runs the command specified by the given set of params.
 	 * 
 	 * @param params the parameters specifying the command
@@ -1489,7 +1489,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Initialize enough of Ghidra to allow navigation of configuration files and to allow SSL connections
 	 * @throws IOException if the headless authenticator cannot be initialized
 	 * @throws ClassNotFoundException if the postgres driver class cannot be found
@@ -1501,7 +1501,7 @@ public class BSimControlLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Class for processing standard output or standard error for processes invoked by BSimControl
 	 * The streams can be optionally suppressed or dumped to System.out
 	 */

@@ -117,7 +117,7 @@ public class DoubleArray implements Array, Serializable {
         doubles = newdoubles;
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.Array#getLastNonEmptyIndex()
 	 */
@@ -125,7 +125,7 @@ public class DoubleArray implements Array, Serializable {
         return lastNonZeroIndex;
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.Array#copyDataTo(int, DataTable, int, int)
 	 */

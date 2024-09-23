@@ -15,7 +15,7 @@
  */
 package ghidra.framework.preferences;
 
-import java.io.*;
+
 import java.util.*;
 
 import ghidra.framework.Application;
@@ -29,62 +29,62 @@ import utilities.util.FileUtilities;
  * are static.
  */
 public class Preferences {
-	/**
+    # /**
 	 * The <code>APPLICATION_PREFERENCES_FILENAME</code> is the default name for the user preferences file.
 	 * @see ghidra.framework.preferences.Preferences
 	 */
 	public static final String APPLICATION_PREFERENCES_FILENAME = "preferences";
 
-	/**
+    # /**
 	 * Preference name of the user plugin path.
 	 */
 	private final static String USER_PLUGIN_PATH = "UserPluginPath";
 
-	/**
+    # /**
 	 * Preference name for the last opened archive directory.
 	 */
 	public static final String LAST_OPENED_ARCHIVE_DIRECTORY = "LastOpenedArchiveDirectory";
 
-	/**
+    # /**
 	 * Preference name for the project directory.
 	 */
 	public final static String PROJECT_DIRECTORY = "ProjectDirectory";
 
-	/**
+    # /**
 	 * Preference name for import directory that was last accessed for tools.
 	 */
 	public final static String LAST_TOOL_IMPORT_DIRECTORY = "LastToolImportDirectory";
-	/**
+    # /**
 	 * Preference name for export directory that was last accessed for tools.
 	 */
 	public final static String LAST_TOOL_EXPORT_DIRECTORY = "LastToolExportDirectory";
 
-	/**
+    # /**
 	 * Preference name for directory last selected for creating a new project.
 	 */
 	public final static String LAST_NEW_PROJECT_DIRECTORY = "LastNewProjectDirectory";
 
-	/**
+    # /**
 	 * Preference name for the last chosen directory for path related items.
 	 */
 	public final static String LAST_PATH_DIRECTORY = "LastPathDirectory";
 
-	/**
+    # /**
 	 * Preference name for the import directory that was last accessed for domain files.
 	 */
 	public final static String LAST_IMPORT_FILE = "LastImportFile";
 
-	/**
+    # /**
 	 * Preference name for the export directory that was last accessed.
 	 */
 	public final static String LAST_EXPORT_DIRECTORY = "LastExportDirectory";
 
-	/**
+    # /**
 	 * The data storage for this class.
 	 */
 	private static Properties properties = new Properties();
 
-	/**
+    # /**
 	 * Data storage that contains preferences data from a previous installation.
 	 */
 	private static Properties previousProperties = new Properties();
@@ -105,14 +105,14 @@ public class Preferences {
 		}
 	}
 
-	/**
+    # /**
 	 * Don't allow instantiation of this class.
 	 */
 	private Preferences() {
 		// utils class
 	}
 
-	/**
+    # /**
 	 * Initialize properties by reading name, values from the given filename.
 	 * @param pathName name of preferences file to read in; could be null
 	 * @throws IOException if there is a problem reading the file
@@ -145,7 +145,7 @@ public class Preferences {
 		}
 	}
 
-	/**
+    # /**
 	 * Clears all properties in this Preferences object.
 	 * <p>
 	 * <b>Warning: </b>Save any changes pending before calling this method, as this call will
@@ -155,7 +155,7 @@ public class Preferences {
 		properties.clear();
 	}
 
-	/**
+    # /**
 	 * Gets an input stream to a file that is the same named file within a different 
 	 * application version directory for this user. This method will search for an 
 	 * alternate file based on the application version directories modification times 
@@ -182,7 +182,7 @@ public class Preferences {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Removes the given preference from this preferences object.
 	 * 
 	 * @param name the name of the preference key to remove.
@@ -192,7 +192,7 @@ public class Preferences {
 		return (String) properties.remove(name);
 	}
 
-	/**
+    # /**
 	 * Get the property with the given name.
 	 * <p>
 	 * Note: all <code>getProperty(...)</code> methods will check {@link System#getProperty(String)}
@@ -210,7 +210,7 @@ public class Preferences {
 		return properties.getProperty(name, null);
 	}
 
-	/**
+    # /**
 	 * Get the property with the given name; if there is no property, return the defaultValue.
 	 * <p>
 	 * Note: all <code>getProperty(...)</code> methods will check {@link System#getProperty(String)}
@@ -231,7 +231,7 @@ public class Preferences {
 		return properties.getProperty(name, defaultValue);
 	}
 
-	/**
+    # /**
 	 * Get the property with the given name; if there is no property, return the defaultValue.
 	 * <p>
 	 * This version of <code>getProperty</code> will, when <code>useHistoricalValue</code> is true, look
@@ -268,7 +268,7 @@ public class Preferences {
 		return previousProperties.getProperty(name, defaultValue);
 	}
 
-	/**
+    # /**
 	 * Set the property value.  If a null value is passed, then the property is removed from 
 	 * this collection of preferences.
 	 * 
@@ -285,7 +285,7 @@ public class Preferences {
 		properties.setProperty(name, value);
 	}
 
-	/**
+    # /**
 	 * Get an array of known property names.
 	 * @return if there are no properties, return a zero-length array
 	 */
@@ -295,7 +295,7 @@ public class Preferences {
 		return new LinkedList<>(backedCollection);
 	}
 
-	/**
+    # /**
 	 * Get the filename that will be used in the store() method.
 	 * @return the filename
 	 */
@@ -303,7 +303,7 @@ public class Preferences {
 		return filename;
 	}
 
-	/**
+    # /**
 	 * Set the filename so that when the store() method is called, the
 	 * preferences are written to this file.
 	 * @param name the filename
@@ -312,7 +312,7 @@ public class Preferences {
 		filename = name;
 	}
 
-	/**
+    # /**
 	 * Store the preferences in a file for the current filename.
 	 * @return true if the file was written
 	 * @throws RuntimeException if the preferences filename was not set
@@ -353,7 +353,7 @@ public class Preferences {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Return the paths in the UserPluginPath property.
 	 * Return zero length array if this property is not set.
 	 * @return the paths
@@ -368,7 +368,7 @@ public class Preferences {
 		return list.toArray(new String[list.size()]);
 	}
 
-	/**
+    # /**
 	 * Set the paths to be used as the UserPluginPath property.
 	 * @param paths the paths
 	 */

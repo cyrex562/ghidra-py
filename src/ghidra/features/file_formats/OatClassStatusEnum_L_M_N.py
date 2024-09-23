@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.oatclass;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;

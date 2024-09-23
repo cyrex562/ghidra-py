@@ -17,7 +17,7 @@ package ghidra.program.util;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 
 import org.junit.*;

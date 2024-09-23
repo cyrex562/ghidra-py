@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.disassemble;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.commons.lang3.StringUtils;

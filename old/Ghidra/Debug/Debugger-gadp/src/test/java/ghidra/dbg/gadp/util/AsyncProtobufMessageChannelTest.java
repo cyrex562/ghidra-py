@@ -17,7 +17,7 @@ package ghidra.dbg.gadp.util;
 
 import static org.junit.Assert.assertEquals;
 
-import java.io.IOException;
+
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousByteChannel;
 import java.nio.channels.CompletionHandler;

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pdb.pdbapplicator;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -39,7 +39,7 @@ public class SymbolGroup {
 	private List<Long> offsets;
 	private Map<Long, Integer> indexByOffset;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb the containing the symbols
 	 * @param moduleNumber The Module number (0 (PUBLIC_GLOBAL_MODULE_NUMBER) for public/global)
@@ -49,7 +49,7 @@ public class SymbolGroup {
 		this.moduleNumber = moduleNumber;
 	}
 
-	/**
+    # /**
 	 * Constructor. The starting offset is set to zero.
 	 * @param symbolsByOffset the Map used to initialize the constructor.
 	 * @param moduleNumber The Module number corresponding to the initializing Map
@@ -59,7 +59,7 @@ public class SymbolGroup {
 		this(symbolsByOffset, moduleNumber, 0);
 	}
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param symbolsByOffset the Map used to initialize the constructor.
 	 * @param moduleNumber The Module number corresponding to the initializing Map
@@ -72,7 +72,7 @@ public class SymbolGroup {
 		initOffsets();
 	}
 
-	/**
+    # /**
 	 * Returns the list of symbols.  These may not be in the order that they were seen.
 	 * @return the list of symbols.
 	 */
@@ -80,7 +80,7 @@ public class SymbolGroup {
 		return new ArrayList<>(symbolsByOffset.values());
 	}
 
-	/**
+    # /**
 	 * Returns the module number.
 	 * @return the module number.
 	 */
@@ -89,7 +89,7 @@ public class SymbolGroup {
 
 	}
 
-	/**
+    # /**
 	 * Returns the number of symbols.
 	 * @return the number of symbols.
 	 */
@@ -97,7 +97,7 @@ public class SymbolGroup {
 		return symbolsByOffset.size();
 	}
 
-	/**
+    # /**
 	 * Returns the list of symbol offsets in the order they were seen.
 	 * @return the list of symbol offsets.
 	 */
@@ -105,7 +105,7 @@ public class SymbolGroup {
 		return new ArrayList<>(symbolsByOffset.keySet());
 	}
 
-	/**
+    # /**
 	 * Returns the set of symbol offsets.
 	 * @return the set of symbol offsets.
 	 */
@@ -113,7 +113,7 @@ public class SymbolGroup {
 		return symbolsByOffset.keySet();
 	}
 
-	/**
+    # /**
 	 * Returns the list of symbols in the order they were seen.
 	 * @return the list of symbols.
 	 */
@@ -125,7 +125,7 @@ public class SymbolGroup {
 		return symbols;
 	}
 
-	/**
+    # /**
 	 * Initialized the offsets list used for requesting the symbols in sequence.
 	 */
 	private void initOffsets() {
@@ -138,7 +138,7 @@ public class SymbolGroup {
 		}
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping the symbol group
 	 * @param writer {@link Writer} to which to dump the information.
 	 * @throws IOException Upon IOException writing to the {@link Writer}.

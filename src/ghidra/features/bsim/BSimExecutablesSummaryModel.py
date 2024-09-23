@@ -126,7 +126,7 @@ public class BSimExecutablesSummaryModel extends GhidraProgramTableModel<Executa
 // Inner Classes
 //==================================================================================================
 
-	/**
+    # /**
 	 * Column holding the name of an executable containing 1 or more functions in the result set
 	 *
 	 */
@@ -145,7 +145,7 @@ public class BSimExecutablesSummaryModel extends GhidraProgramTableModel<Executa
 		}
 	}
 
-	/**
+    # /**
 	 * Column holding the value of an executable category for an
 	 * executable containing 1 or more functions in the result set
 	 *
@@ -172,7 +172,7 @@ public class BSimExecutablesSummaryModel extends GhidraProgramTableModel<Executa
 
 	}
 
-	/**
+    # /**
 	 * Column holding the date for an executable containing 1 or more functions in the result set
 	 *
 	 */
@@ -197,7 +197,7 @@ public class BSimExecutablesSummaryModel extends GhidraProgramTableModel<Executa
 		}
 	}
 
-	/**
+    # /**
 	 * Column holding the architecture for an executable containing 1 or more functions in the result set
 	 *
 	 */
@@ -216,7 +216,7 @@ public class BSimExecutablesSummaryModel extends GhidraProgramTableModel<Executa
 		}
 	}
 
-	/**
+    # /**
 	 * Column holding the compiler for an executable containing 1 or more functions in the result set
 	 *
 	 */
@@ -235,7 +235,7 @@ public class BSimExecutablesSummaryModel extends GhidraProgramTableModel<Executa
 		}
 	}
 
-	/**
+    # /**
 	 * Column holding the number of functions in the result set from a single executable
 	 *
 	 */
@@ -254,7 +254,7 @@ public class BSimExecutablesSummaryModel extends GhidraProgramTableModel<Executa
 		}
 	}
 
-	/**
+    # /**
 	 * Column holding the sum of significance scores for functions in the result set from a single executable
 	 *
 	 */
@@ -273,7 +273,7 @@ public class BSimExecutablesSummaryModel extends GhidraProgramTableModel<Executa
 		}
 	}
 
-	/**
+    # /**
 	 * Column holding the repository URL for an executable containing 1 or more functions in the result set
 	 *
 	 */

@@ -36,7 +36,7 @@ public class CreateTypeDescriptorBackgroundCmd
 
 	private static final String RTTI_0_NAME = "RTTI Type Descriptor";
 
-	/**
+    # /**
 	 * Constructs a command for applying a TypeDescriptor data type at an address using the
 	 * default validation and apply options.
 	 * @param address the address where the data should be created using the data type.
@@ -45,7 +45,7 @@ public class CreateTypeDescriptorBackgroundCmd
 		super(TypeDescriptorModel.DATA_TYPE_NAME, address, 1);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a TypeDescriptor data type at an address using the
 	 * indicated options.
 	 * @param address the address where the data should be created using the data type.
@@ -60,7 +60,7 @@ public class CreateTypeDescriptorBackgroundCmd
 		super(TypeDescriptorModel.DATA_TYPE_NAME, address, 1, validationOptions, applyOptions);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a TypeDescriptor data type at the address indicated
 	 * by the model and using the indicated options.
 	 * @param model the model indicating the TypeDescriptor data to be created by this command.
@@ -87,7 +87,7 @@ public class CreateTypeDescriptorBackgroundCmd
 		return model;
 	}
 
-	/**
+    # /**
 	 * Create the data corresponding to a RTTI0 TypeDescriptor structure which contains a flexible-array
 	 * as its last component ( char[0]  name ).  The string data associated with this flexible char array will
 	 * be applied as a sized character array immediately following the structure whose size does not include

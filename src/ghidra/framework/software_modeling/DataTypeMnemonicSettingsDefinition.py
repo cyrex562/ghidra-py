@@ -38,7 +38,7 @@ public class DataTypeMnemonicSettingsDefinition implements EnumSettingsDefinitio
 	private DataTypeMnemonicSettingsDefinition() {
 	}
 
-	/**
+    # /**
 	 * Returns the format based on the specified settings
 	 * @param settings the instance settings.
 	 * @return the mnemonic style (DEFAULT, ASSEMBLY, CSPEC).  

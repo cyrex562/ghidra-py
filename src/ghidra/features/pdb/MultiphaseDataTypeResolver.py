@@ -44,7 +44,7 @@ public class MultiphaseDataTypeResolver {
 		resolveStack = new RecordStack();
 	}
 
-	/**
+    # /**
 	 * Processes the data type associated with the record number and all dependencies of that
 	 *  type.  Deals with cyclic dependencies and ultimately stores resolved (in most cases)
 	 *  types in the DefaultPdbApplicator types map
@@ -107,7 +107,7 @@ public class MultiphaseDataTypeResolver {
 		}
 	}
 
-	/**
+    # /**
 	 * Method used to schedule another type (indicated by the record number).  This scheduled
 	 *  type is put on top of a stack of types to process, pushing what was the current type
 	 *  being processed down.  If the type indicated by the record number is already on the stack,
@@ -127,7 +127,7 @@ public class MultiphaseDataTypeResolver {
 		todoStack.push(recordNumber);
 	}
 
-	/**
+    # /**
 	 * Stack of record numbers with O(1) push/pop, O(1) contains, O(1) removal from
 	 *  anywhere, and thus O(1) move from anywhere to top.  These nodes hold the RecordNumbers
 	 *  that are being scheduled
@@ -139,7 +139,7 @@ public class MultiphaseDataTypeResolver {
 			RecordNode prev;
 			RecordNumber recordNumber;
 
-			/**
+		    # /**
 			 * Create new node for the record number.  Note that the {@code next} and {@code prev}
 			 *  values are not set.  They must be set by the RecordStack.
 			 * @param recordNumber the record number
@@ -164,7 +164,7 @@ public class MultiphaseDataTypeResolver {
 		StringBuilder debugBuilder;
 		long numNodes;
 
-		/**
+	    # /**
 		 * Constructor for new record stack
 		 */
 		RecordStack() {
@@ -179,7 +179,7 @@ public class MultiphaseDataTypeResolver {
 			numNodes = 0L; // does not count HEAD/TAIL special nodes
 		}
 
-		/**
+	    # /**
 		 * Set or clear developer debug
 		 * @param debug {@code true} to turn on; {@code false} to turn off
 		 */
@@ -187,7 +187,7 @@ public class MultiphaseDataTypeResolver {
 			this.debug = debug;
 		}
 
-		/**
+	    # /**
 		 * Indicates if number number exists on stack
 		 * @param recordNumber the record number to check
 		 * @return {@code true} if exists
@@ -196,7 +196,7 @@ public class MultiphaseDataTypeResolver {
 			return map.containsKey(recordNumber);
 		}
 
-		/**
+	    # /**
 		 * Pushes the record number onto the top of the stack.  If the record number was already
 		 *  on the stack, it is moved to the top
 		 * @param recordNumber the record number to push
@@ -225,7 +225,7 @@ public class MultiphaseDataTypeResolver {
 			insertNodeLinkage(head, node);
 		}
 
-		/**
+	    # /**
 		 * Peek at top node
 		 * @return the node's record number or {@code null} if if no nodes left
 		 */
@@ -237,7 +237,7 @@ public class MultiphaseDataTypeResolver {
 			return node.recordNumber;
 		}
 
-		/**
+	    # /**
 		 * Pop top node
 		 * @return the popped node's record number or {@code null} if if no nodes left
 		 */
@@ -260,7 +260,7 @@ public class MultiphaseDataTypeResolver {
 			return node.recordNumber;
 		}
 
-		/**
+	    # /**
 		 * Get node for the record number
 		 * @return the node
 		 */
@@ -268,7 +268,7 @@ public class MultiphaseDataTypeResolver {
 			return map.get(recordNumber);
 		}
 
-		/**
+	    # /**
 		 * Get top node
 		 * @return the node
 		 */
@@ -276,7 +276,7 @@ public class MultiphaseDataTypeResolver {
 			return head.prev;
 		}
 
-		/**
+	    # /**
 		 * Add node to the stack.  Gets placed below locationNode, which can be head for pushing
 		 * onto the stack
 		 */
@@ -287,7 +287,7 @@ public class MultiphaseDataTypeResolver {
 			locationNode.prev = newNode;
 		}
 
-		/**
+	    # /**
 		 * Remove node from bidirectional linkage
 		 * @param node the node to remove; must not be {@code head}, {@code tail}, or {@code null}
 		 */

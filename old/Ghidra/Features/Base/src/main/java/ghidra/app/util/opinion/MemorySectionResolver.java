@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.opinion;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.format.MemoryLoadable;

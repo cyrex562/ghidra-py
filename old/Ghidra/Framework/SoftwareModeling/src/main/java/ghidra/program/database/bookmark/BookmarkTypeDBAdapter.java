@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.bookmark;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;

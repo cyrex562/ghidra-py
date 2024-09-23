@@ -17,7 +17,7 @@ package ghidra.features.bsim.query;
 
 public interface SQLFunctionDatabase extends FunctionDatabase {
 
-	/**
+    # /**
 	 * Generate SQL bitwise-and syntax for use in database query WHERE clause
 	 * @param v1 first value
 	 * @param v2 second value

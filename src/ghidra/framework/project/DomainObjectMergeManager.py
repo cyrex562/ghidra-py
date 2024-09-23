@@ -26,14 +26,14 @@ import javax.swing.JComponent;
  * An interface to allow merging of domain objects.
  */
 public interface DomainObjectMergeManager extends MergeProgressModifier {
-	/**
+    # /**
 	 * Merge domain objects and resolve any conflicts.
 	 * @return true if the merge process completed successfully
 	 * @throws CancelledException if the user canceled the merge process
 	 */
 	boolean merge(TaskMonitor monitor) throws CancelledException;
 	
-	/**
+    # /**
 	 * Sets the resolve information object for the indicated standardized name.
 	 * This is how information is passed between merge managers.
 	 * @param infoType the string indicating the type of resolve information
@@ -44,7 +44,7 @@ public interface DomainObjectMergeManager extends MergeProgressModifier {
 	 */
 	public void setResolveInformation(String infoType, Object infoObject);
 	
-	/**
+    # /**
 	 * Show the component that is used to resolve conflicts. This method
 	 * is called by the MergeResolvers when user input is required. If the
 	 * component is not null, this method blocks until the user either 
@@ -58,18 +58,18 @@ public interface DomainObjectMergeManager extends MergeProgressModifier {
 	public void showComponent(final JComponent comp, final String componentID,
 	        HelpLocation helpLoc);
 	
-	/**
+    # /**
 	 * Enable the apply button according to the "enabled" parameter.
 	 */
 	public void setApplyEnabled(final boolean enabled);
 	
-	/**
+    # /**
 	 * Clear the status text on the merge dialog.
 	 *
 	 */
 	public void clearStatusText();
 	
-	/**
+    # /**
 	 * Set the status text on the merge dialog.
 	 */
 	public void setStatusText(String msg);

@@ -118,7 +118,7 @@ class ToolConnectionDialog extends ReusableDialogComponentProvider
 		panel.setToolManager(toolManager);
 	}
 
-	/**
+    # /**
 	 * Update the display because tools have been added or removed;
 	 * restore selection if possible.
 	 */
@@ -134,7 +134,7 @@ class ToolConnectionDialog extends ReusableDialogComponentProvider
 		disconnectAllButton.setEnabled(enabled);
 	}
 
-	/**
+    # /**
 	 * Return the main panel for this dialog.
 	 * The contents of this panel will be created in the constructor.
 	 *
@@ -145,14 +145,14 @@ class ToolConnectionDialog extends ReusableDialogComponentProvider
 		return panel;
 	}
 
-	/**
+    # /**
 	 * "Connect All" button
 	 */
 	protected void connectCallback() {
 		panel.connectAll(true);
 	}
 
-	/**
+    # /**
 	 * "Disconnect All" button
 	 */
 	protected void disconnectCallback() {

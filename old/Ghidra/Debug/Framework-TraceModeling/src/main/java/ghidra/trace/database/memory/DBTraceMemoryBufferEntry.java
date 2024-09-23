@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.memory;
 
-import java.io.*;
+
 import java.nio.ByteBuffer;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;

@@ -15,7 +15,7 @@
  */
 package ghidra;
 
-import java.io.*;
+
 import java.nio.file.Path;
 import java.util.*;
 import java.util.function.Predicate;

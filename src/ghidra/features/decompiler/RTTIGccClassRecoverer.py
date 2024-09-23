@@ -231,7 +231,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 	}
 
 	//TODO: test with Windows and move to class helper
-	/**
+    # /**
 	 * Method to update the labels of vftables that belong to classes with multiple vftables in 
 	 * order to distinguish which base class the vftable is for.
 	 * @throws CancelledException if cancelled
@@ -508,7 +508,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to set the global variable isGcc
 	 */
 	private boolean isGcc() {
@@ -552,7 +552,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return isGcc;
 	}
 
-	/**
+    # /**
 	 * Method to check for at least one special RTTI vtable
 	 * 
 	 * @return true if the program has at least one special vtable, false if none
@@ -687,7 +687,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to process the primary vtable for each "vtable" label
 	 * 
 	 * @throws CancelledException    if cancelled
@@ -1091,7 +1091,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * method to find the main vtable for the given typeinfo and if any, add the
 	 * construction ones to the passed in list
 	 * 
@@ -1881,7 +1881,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return refMap;
 	}
 
-	/**
+    # /**
 	 * Method to add a search pattern, to the searcher, for the set of bytes
 	 * representing a typeinfo address
 	 * 
@@ -1954,7 +1954,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return validTypeinfoRefMap;
 	}
 
-	/**
+    # /**
 	 * Method to find references to the given typeinfos that are possibly ref'd by
 	 * vtables (ie not in functions, other data, etc... and create a map
 	 * typeinfoAddress to Set<Address> refs possibly in vtable
@@ -2020,7 +2020,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return typeinfoRefsPossiblyInVtables;
 	}
 
-	/**
+    # /**
 	 * Method to add a search pattern, to the searcher, for the set of bytes
 	 * representing a typeinfo address
 	 * 
@@ -2087,7 +2087,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given data is a typeinfo structure
 	 * 
 	 * @param data the given data
@@ -2116,7 +2116,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to create an appropriate type of vtable (primary, internal, or
 	 * construction) and an associated VTT, if applicable
 	 * 
@@ -2261,7 +2261,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to create and apply typeinfo structs of one of the three types used by
 	 * rtti classes
 	 * 
@@ -2637,7 +2637,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return numBaseClasses;
 	}
 
-	/**
+    # /**
 	 * Method to determine whether a pointer can validly exist at this location
 	 * 
 	 * @param pointer
@@ -2690,7 +2690,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given address has one of the ClassTypeinfoDataType
 	 * types applied
 	 * 
@@ -3119,7 +3119,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to check to see if there are any EXTERNAL block relocations
 	 * 
 	 * @return true if there are any EXTERNAL block relocations in the program,
@@ -3197,7 +3197,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to call the various methods to determine whether the functions that
 	 * make references to the vftables are constructors, destructors, deleting
 	 * destructors, clones, or vbase functions
@@ -3586,7 +3586,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to add parents to the given class
 	 * 
 	 * @param recoveredClass  the given class
@@ -3987,7 +3987,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return foundRefs;
 	}
 
-	/**
+    # /**
 	 * Create a map of addresses to a set of addresses that reference each address
 	 * 
 	 * @param refPairs list of reference address pairs
@@ -4167,7 +4167,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Use information from RTTI Base class Arrays to create class hierarchy lists
 	 * and maps
 	 * 
@@ -4264,7 +4264,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Create the class hierarchy list for a class with no inheritance
 	 * 
 	 * @param recoveredClass the given class
@@ -4276,7 +4276,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return classHierarchyList;
 	}
 
-	/**
+    # /**
 	 * Create the class hierarchy for a class with only single inheritance parents
 	 * 
 	 * @param recoveredClass the given class
@@ -4300,7 +4300,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return classHierarchyList;
 	}
 
-	/**
+    # /**
 	 * Create the class hierarchy list for a class with multiple inheritance
 	 * 
 	 * @param recoveredClass the given class
@@ -4335,7 +4335,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to get address at address + offset
 	 * 
 	 * @param address the given address
@@ -4352,7 +4352,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to determine if there are enough zeros to make a null poihnter and no
 	 * references into or out of the middle
 	 * 
@@ -4366,7 +4366,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given address contains a possible function pointer
 	 * 
 	 * @param address the given address
@@ -4460,7 +4460,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to call create and apply class structures method starting with top
 	 * parent classes and non-virtual classes then the children and their children
 	 * until all classes are processed.
@@ -4534,7 +4534,7 @@ public class RTTIGccClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create all the class data types for the current class, name all the
 	 * class functions, and put them all into the class namespace
 	 * 

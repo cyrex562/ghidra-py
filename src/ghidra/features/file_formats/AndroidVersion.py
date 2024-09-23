@@ -106,7 +106,7 @@ public enum AndroidVersion {
 		this.versionName = versionName;
 	}
 
-	/**
+    # /**
 	 * Returns the API version.
 	 * For example, 24, 25, 26, etc.
 	 * @return the API version
@@ -115,7 +115,7 @@ public enum AndroidVersion {
 		return apiVersion;
 	}
 
-	/**
+    # /**
 	 * Returns the OS version.
 	 * For example, "4.0", "5.0.1", etc.
 	 * @return the OS version
@@ -124,7 +124,7 @@ public enum AndroidVersion {
 		return versionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the version letter.
 	 * For example, "S", "T", etc.
 	 * @return the version letter
@@ -133,7 +133,7 @@ public enum AndroidVersion {
 		return versionLetter;
 	}
 
-	/**
+    # /**
 	 * Returns the version name.
 	 * For example, "KitKat", "Oreo", etc.
 	 * @return the version name

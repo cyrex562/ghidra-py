@@ -112,7 +112,7 @@ public class BinaryExpression implements OperandValue, ExpressionValue {
         return "-0x" + Long.toString(-val,16);
 	}
 
-	/**
+    # /**
 	 * Method linkRelativeOffsets.
 	 * @param opHash
 	 */

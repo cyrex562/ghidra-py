@@ -15,7 +15,7 @@
  */
 package utility.application;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -29,7 +29,7 @@ import ghidra.framework.ApplicationProperties;
  */
 public class DummyApplicationLayout extends ApplicationLayout {
 
-	/**
+    # /**
 	 * Constructs a new dummy application layout object.
 	 * @param name the application name
 	 * @throws IOException if there was a problem getting a user directory.

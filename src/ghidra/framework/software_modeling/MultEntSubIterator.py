@@ -1,19 +1,19 @@
 # /* ###
- * IP: GHIDRA
- * REVIEWED: YES
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# * REVIEWED: YES
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import ghidra.program.model.address.*;
@@ -23,13 +23,13 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <CODE>MultEntSubIterator</CODE> is an implementation of
- * <CODE>CodeBlockIterator</CODE> capable of iterating in
- * the forward direction over subroutine code blocks.
- * The iterator supports subroutine models which allow one or
- * more called/source entry points within a subroutine and do not
- * share code with other subroutines produced by the same model.
- */
+# * <CODE>MultEntSubIterator</CODE> is an implementation of
+# * <CODE>CodeBlockIterator</CODE> capable of iterating in
+# * the forward direction over subroutine code blocks.
+# * The iterator supports subroutine models which allow one or
+# * more called/source entry points within a subroutine and do not
+# * share code with other subroutines produced by the same model.
+# */
 class MultEntSubIterator implements CodeBlockIterator {
 
 	private Listing listing = null;
@@ -43,7 +43,7 @@ class MultEntSubIterator implements CodeBlockIterator {
 	private MultEntSubModel model = null;
 	private TaskMonitor monitor;
 
-	/**
+    # /**
 	 * Creates a new iterator that will iterate over the entire
 	 * program starting from its current minimum address.
 	 *
@@ -58,7 +58,7 @@ class MultEntSubIterator implements CodeBlockIterator {
 		nextSub = null;
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that will iterate over the
 	 * program within a given address range set. All blocks which 
 	 * overlap the address set will be returned.
@@ -78,7 +78,7 @@ class MultEntSubIterator implements CodeBlockIterator {
 		nextSub = null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockIterator#hasNext()
 	 */
 	@Override
@@ -142,7 +142,7 @@ class MultEntSubIterator implements CodeBlockIterator {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockIterator#next()
 	 */
 	@Override

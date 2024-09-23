@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.constantpool;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -43,7 +43,7 @@ public class ConstantPoolIntegerInfo extends AbstractConstantPoolInfoJava {
 		bytes = reader.readNextInt();
 	}
 
-	/**
+    # /**
 	 * The bytes item of the CONSTANT_Integer_info structure represents the value
 	 * of the int constant. The bytes of the value are stored in big-endian (high byte
 	 * first) order.

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.util;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,7 +95,7 @@ public class AddressRangeMapDB implements DBListener {
 	// we only need to check for wrapping record first time we paint or if the image base changes
 	private boolean alreadyCheckedForWrappingRecord = false;
 
-	/**
+    # /**
 	 * Construct a generic range map
 	 * @param dbHandle database handle
 	 * @param addressMap the address map 
@@ -120,7 +120,7 @@ public class AddressRangeMapDB implements DBListener {
 		dbHandle.addListener(this);
 	}
 
-	/**
+    # /**
 	 * Tests if an AddressRangeMap table exists with the given name
 	 * @param dbHandle the database handle
 	 * @param name the name to test for
@@ -130,7 +130,7 @@ public class AddressRangeMapDB implements DBListener {
 		return dbHandle.getTable(RANGE_MAP_TABLE_PREFIX + name) != null;
 	}
 
-	/**
+    # /**
 	 * Set the name associated with this range map
 	 * @param newName the new name for this range map
 	 * @return true if successful, else false
@@ -151,7 +151,7 @@ public class AddressRangeMapDB implements DBListener {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if this map is empty
 	 * @return true if this map is empty
 	 */
@@ -160,7 +160,7 @@ public class AddressRangeMapDB implements DBListener {
 		return localTable == null || localTable.getRecordCount() == 0;
 	}
 
-	/**
+    # /**
 	 * Returns the number of records contained within this map.
 	 * NOTE: This number will be greater or equal to the number of
 	 * address ranges contained within the map.
@@ -171,7 +171,7 @@ public class AddressRangeMapDB implements DBListener {
 		return localTable == null ? 0 : localTable.getRecordCount();
 	}
 
-	/**
+    # /**
 	 * Returns the value associated with the given address
 	 * @param address the address of the value
 	 * @return value or null no value exists
@@ -209,7 +209,7 @@ public class AddressRangeMapDB implements DBListener {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Associates the given value with every address from start to end (inclusive)
 	 * Any previous associates are overwritten. 
 	 * @param startAddress the start address.
@@ -245,7 +245,7 @@ public class AddressRangeMapDB implements DBListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Move all values within an address range to a new range.
 	 * @param fromAddr the first address of the range to be moved.
 	 * @param toAddr the address where to the range is to be moved.
@@ -308,7 +308,7 @@ public class AddressRangeMapDB implements DBListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove values from the given range.
 	 * @param startAddr the start address.
 	 * @param endAddr the end address.
@@ -317,7 +317,7 @@ public class AddressRangeMapDB implements DBListener {
 		paintRange(startAddr, endAddr, null);
 	}
 
-	/**
+    # /**
 	 * Returns set of addresses where a values has been set 
 	 * @return set of addresses where a values has been set
 	 */
@@ -342,7 +342,7 @@ public class AddressRangeMapDB implements DBListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns set of addresses where the given value has been set
 	 * @param value the value to search for
 	 * @return set of addresses where the given value has been set
@@ -374,7 +374,7 @@ public class AddressRangeMapDB implements DBListener {
 		return set;
 	}
 
-	/**
+    # /**
 	 * Returns an address range iterator over all ranges in the map where a value has been set
 	 * @return AddressRangeIterator that iterates over all occupied ranges in the map
 	 */
@@ -391,7 +391,7 @@ public class AddressRangeMapDB implements DBListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns an address range iterator over all ranges in the map where a value has been set
 	 * starting with the given address
 	 * @param startAddress The address at which to start iterating ranges
@@ -411,7 +411,7 @@ public class AddressRangeMapDB implements DBListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns an address range iterator over all ranges in the map where a value has been set
 	 * starting with the given address and ending with the given end address
 	 * @param startAddress the address at which to start iterating ranges
@@ -470,7 +470,7 @@ public class AddressRangeMapDB implements DBListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Deletes the database table used to store this range map.
 	 */
 	public void dispose() {
@@ -492,7 +492,7 @@ public class AddressRangeMapDB implements DBListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Notification that that something may have changed (undo/redo/image base change) and we need
 	 * to invalidate our cache and possibly have a wrapping record again.
 	 */
@@ -507,7 +507,7 @@ public class AddressRangeMapDB implements DBListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the bounding address range for the given address where all addresses in that
 	 * range have the same value (this also works for now value. i.e finding a gap)
 	 * @param address the address to find a range for
@@ -589,7 +589,7 @@ public class AddressRangeMapDB implements DBListener {
 		return new AddressRangeImpl(gapStart, gapEnd);
 	}
 
-	/**
+    # /**
 	 * Returns a list of AddressRanges that this record represents. This record's key is the 
 	 * encoded start key and it "TO_COL" has the end address key. But since a non-zero image base
 	 * can cause that key range to be backwards in address space which means it represents a range
@@ -676,7 +676,7 @@ public class AddressRangeMapDB implements DBListener {
 
 	}
 
-	/**
+    # /**
 	 * Checks the record before our paint to see how it is affected. Returns a possible new start
 	 * address for our paint if it gets merged. Returns null if it turns out we don't need to
 	 * paint at all.
@@ -748,7 +748,7 @@ public class AddressRangeMapDB implements DBListener {
 		return paintStart;
 	}
 
-	/**
+    # /**
 	 * Removes any records that are being painted over and maybe merges with or truncates the
 	 * last record that starts in our paint range
 	 * @param startAddr the start of the paint range
@@ -782,7 +782,7 @@ public class AddressRangeMapDB implements DBListener {
 
 	}
 
-	/**
+    # /**
 	 * checks if there is a record just past our paint region that we can merge with. If we find
 	 * one, delete it and adjust our end address to its end address
 	 * @param endAddr the end of our paint region
@@ -803,7 +803,7 @@ public class AddressRangeMapDB implements DBListener {
 		return endAddr;
 	}
 
-	/** 
+    # /** 
 	 * Clears the "last range" cache
 	 */
 	private void clearCache() {

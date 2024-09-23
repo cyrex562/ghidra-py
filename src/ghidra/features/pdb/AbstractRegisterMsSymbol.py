@@ -29,7 +29,7 @@ public abstract class AbstractRegisterMsSymbol extends AbstractMsSymbol {
 	protected RegisterName register;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -57,7 +57,7 @@ public abstract class AbstractRegisterMsSymbol extends AbstractMsSymbol {
 		builder.append(name);
 	}
 
-	/**
+    # /**
 	 * Parses the register field for this symbol.
 	 * @param reader {@link PdbByteReader} from which the data is parsed.
 	 * @return The register field.
@@ -65,7 +65,7 @@ public abstract class AbstractRegisterMsSymbol extends AbstractMsSymbol {
 	 */
 	protected abstract RegisterName parseRegister(PdbByteReader reader) throws PdbException;
 
-	/**
+    # /**
 	 * Emits the register information to the {@link StringBuilder}
 	 * @param builder {@link StringBuilder} to which the data is emitted.
 	 */

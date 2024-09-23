@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;

@@ -15,7 +15,7 @@
  */
 package ghidra.debug.api.tracermi;
 
-import java.io.IOException;
+
 import java.net.SocketAddress;
 import java.util.Collection;
 import java.util.NoSuchElementException;

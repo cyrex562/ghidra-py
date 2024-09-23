@@ -17,7 +17,7 @@ package ghidra.file.crypto;
 
 public final class CryptoUtil {
 
-	/**
+    # /**
 	 * Translates an integer from host byte order to network byte order.
 	 * @param value the integer value to translate
 	 * @return the network byte order value

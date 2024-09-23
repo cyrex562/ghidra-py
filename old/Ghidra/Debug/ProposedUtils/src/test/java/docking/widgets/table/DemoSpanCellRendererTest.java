@@ -19,7 +19,7 @@ import static org.junit.Assume.assumeFalse;
 
 import java.awt.BorderLayout;
 import java.awt.event.*;
-import java.io.IOException;
+
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 

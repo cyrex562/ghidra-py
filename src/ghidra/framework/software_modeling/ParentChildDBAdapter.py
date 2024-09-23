@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.module;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -29,7 +29,7 @@ abstract class ParentChildDBAdapter {
 	static final int CHILD_ID_COL = ParentChildDBAdapterV0.V0_CHILD_ID_COL;
 	static final int ORDER_COL = ParentChildDBAdapterV0.V0_ORDER_COL;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the  program tree parent/child database table.
 	 * @param handle handle to the database to be accessed.
 	 * @param openMode the mode this adapter is to be opened for (CREATE, UPDATE, READ_ONLY, UPGRADE).
@@ -47,7 +47,7 @@ abstract class ParentChildDBAdapter {
 		return PARENT_CHILD_TABLE_NAME + treeID;
 	}
 
-	/**
+    # /**
 	 * Add parent/child record
 	 * @param parentModuleID parent module ID
 	 * @param childId child ID.  Module ID are positive, fragment IDs must be negative.
@@ -56,7 +56,7 @@ abstract class ParentChildDBAdapter {
 	 */
 	abstract DBRecord addParentChildRecord(long parentModuleID, long childId) throws IOException;
 
-	/**
+    # /**
 	 * Get parent/child record
 	 * @param parentID parent module ID
 	 * @param childID childId child ID.  Module ID are positive, fragment IDs must be negative.
@@ -65,7 +65,7 @@ abstract class ParentChildDBAdapter {
 	 */
 	abstract DBRecord getParentChildRecord(long parentID, long childID) throws IOException;
 
-	/**
+    # /**
 	 * Get parent/child record for specified record key
 	 * @param key parent/child record key
 	 * @return parent/child record or null if not found
@@ -73,14 +73,14 @@ abstract class ParentChildDBAdapter {
 	 */
 	abstract DBRecord getParentChildRecord(long key) throws IOException;
 
-	/**
+    # /**
 	 * Update parent/child record
 	 * @param record parent/child record
 	 * @throws IOException if database IO error occurs
 	 */
 	abstract void updateParentChildRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Remove parent/child record
 	 * @param key record key
 	 * @return true if deleted else false if not found
@@ -88,7 +88,7 @@ abstract class ParentChildDBAdapter {
 	 */
 	abstract boolean removeParentChildRecord(long key) throws IOException;
 
-	/**
+    # /**
 	 * Get the parent/child record keys which correspond to those records
 	 * containing the specified parent or child id as determined by the 
 	 * specified index column

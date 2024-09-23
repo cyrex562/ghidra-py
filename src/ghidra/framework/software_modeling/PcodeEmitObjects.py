@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.sleigh;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public class PcodeEmitObjects extends PcodeEmit {
 	private ArrayList<PcodeOp> oplist;
 	private ArrayList<Integer> labelref = null;
 
-	/**
+    # /**
 	 * Pcode emitter constructor for producing PcodeOp objects for unimplemented, snippets or empty responses
 	 * when {@link #getFallOffset()} will not be used.
 	 * @param walk state of the ParserContext from which to generate p-code
@@ -36,7 +36,7 @@ public class PcodeEmitObjects extends PcodeEmit {
 		this(walk, null, 0, null);
 	}
 
-	/**
+    # /**
 	 * Pcode emitter constructor for producing PcodeOp objects for unimplemented, snippets or empty responses.
 	 * @param walk state of the ParserContext from which to generate p-code
 	 * @param fallOffset default fall-through offset (i.e., the full length 
@@ -46,7 +46,7 @@ public class PcodeEmitObjects extends PcodeEmit {
 		this(walk, null, fallOffset, null);
 	}
 
-	/**
+    # /**
 	 * @param walk state of the ParserContext from which to generate p-code
 	 * @param ictx is the InstructionContext used to resolve delayslot and crossbuild directives
 	 * @param fallOffset default instruction fall offset (i.e., instruction length including delay slotted instructions)

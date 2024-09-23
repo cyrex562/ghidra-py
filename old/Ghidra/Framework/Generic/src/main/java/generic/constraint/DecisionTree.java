@@ -15,7 +15,7 @@
  */
 package generic.constraint;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.xml.sax.*;

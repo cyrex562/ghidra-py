@@ -67,7 +67,7 @@ public class MDMang {
 		return processingMode == ProcessingMode.LLVM;
 	}
 
-	/**
+    # /**
 	 * Demangles the string passed in and returns a parsed item.
 	 *
 	 * @param mangledIn
@@ -87,7 +87,7 @@ public class MDMang {
 		return demangle(errorOnRemainingChars);
 	}
 
-	/**
+    # /**
 	 * Variables that get set at the very beginning.
 	 * @throws MDException if mangled name is not set
 	 */
@@ -101,7 +101,7 @@ public class MDMang {
 		resetState();
 	}
 
-	/**
+    # /**
 	 * Variables that can get reset for a second (or more?) passes with different modes.
 	 */
 	public void resetState() {
@@ -109,7 +109,7 @@ public class MDMang {
 		setIndex(0);
 	}
 
-	/**
+    # /**
 	 * Demangles the string already stored and returns a parsed item.
 	 *
 	 * @param errorOnRemainingChars
@@ -133,7 +133,7 @@ public class MDMang {
 		return item;
 	}
 
-	/**
+    # /**
 	 * Demangles the mangled "type" name and returns a parsed MDDataType
 	 *
 	 * @param mangledIn the mangled "type" string to be demangled
@@ -152,7 +152,7 @@ public class MDMang {
 		return demangleType(errorOnRemainingChars);
 	}
 
-	/**
+    # /**
 	 * Demangles the mangled "type" name already stored and returns a parsed MDDataType
 	 *
 	 * @param errorOnRemainingChars
@@ -173,7 +173,7 @@ public class MDMang {
 		return mdDataType;
 	}
 
-	/**
+    # /**
 	 * Sets the mangled string to be demangled.
 	 *
 	 * @param mangledIn
@@ -183,7 +183,7 @@ public class MDMang {
 		this.mangled = mangledIn;
 	}
 
-	/**
+    # /**
 	 * Gets the mangled string being demangled.
 	 *
 	 * @return the string being demangled.
@@ -192,7 +192,7 @@ public class MDMang {
 		return mangled;
 	}
 
-	/**
+    # /**
 	 * Returns the error message when demangle() returns null.
 	 *
 	 * @return the error message for the demangle() call.
@@ -201,7 +201,7 @@ public class MDMang {
 		return errorMessage;
 	}
 
-	/**
+    # /**
 	 * Returns the number of unprocessed mangled characters. Note that
 	 * demangle() has a flag controlling whether remaining characters causes an
 	 * error.
@@ -212,8 +212,8 @@ public class MDMang {
 		return iter.getLength() - iter.getIndex();
 	}
 
-	/******************************************************************************/
-	/******************************************************************************/
+    # /******************************************************************************/
+    # /******************************************************************************/
 
 	// /**
 	// * Routine used while debugging a symbol. Create a new 'if'
@@ -243,7 +243,7 @@ public class MDMang {
 		return b;
 	}
 
-	/**
+    # /**
 	 * Returns the current index.
 	 * @return the current index.
 	 */
@@ -251,7 +251,7 @@ public class MDMang {
 		return iter.getIndex();
 	}
 
-	/**
+    # /**
 	 * Sets the current index.
 	 * @param index the position to set.
 	 * @throws IllegalArgumentException if index is not in range from 0 to string.length()-1
@@ -260,7 +260,7 @@ public class MDMang {
 		iter.setIndex(index);
 	}
 
-	/**
+    # /**
 	 * Returns true if there are no more characters to iterate
 	 * @return {@code true} if done
 	 */
@@ -268,7 +268,7 @@ public class MDMang {
 		return peek() == DONE;
 	}
 
-	/**
+    # /**
 	 * Returns the next character without incrementing the current index.
 	 *
 	 * @return the next character without incrementing the current index
@@ -278,7 +278,7 @@ public class MDMang {
 		return iter.peek();
 	}
 
-	/**
+    # /**
 	 * Peeks at the character current index + lookAhead. Returns DONE if the
 	 * computed position is out of range.
 	 *
@@ -291,7 +291,7 @@ public class MDMang {
 		return iter.peek(lookAhead);
 	}
 
-	/**
+    # /**
 	 * Increments the current index by one and returns the character at the new
 	 * index. If the resulting index is greater or equal to the end index, the
 	 * current index is reset to the end index and a value of DONE is returned.
@@ -305,7 +305,7 @@ public class MDMang {
 		return iter.next();
 	}
 
-	/**
+    # /**
 	 * Returns the character at the current index and then increments the index
 	 * by one. If the resulting index is greater or equal to the end index, the
 	 * current index is reset to the end index and a value of DONE is returned.
@@ -317,7 +317,7 @@ public class MDMang {
 		return iter.getAndIncrement();
 	}
 
-	/**
+    # /**
 	 * Increments the index by one. Does no testing for whether the index
 	 * surpasses the length of the string.
 	 */
@@ -326,7 +326,7 @@ public class MDMang {
 		iter.increment();
 	}
 
-	/**
+    # /**
 	 * Moves to the next character in the iterator.
 	 * Does no testing for whether it surpasses the length of the string.
 	 *
@@ -337,7 +337,7 @@ public class MDMang {
 		iter.increment(count);
 	}
 
-	/**
+    # /**
 	 * Returns true if substring is found at the current index.
 	 *
 	 * @return true if substring is found at the current index
@@ -352,8 +352,8 @@ public class MDMang {
 	// used to
 	// be exposed, but we were able to eliminate all uses.
 
-	/******************************************************************************/
-	/******************************************************************************/
+    # /******************************************************************************/
+    # /******************************************************************************/
 	public MDContext getContext() {
 		return contextStack.get(contextStack.size() - 1);
 	}
@@ -410,8 +410,8 @@ public class MDMang {
 		return context.getBackrefTemplateParameterMDDataType(index);
 	}
 
-	/******************************************************************************/
-	/******************************************************************************/
+    # /******************************************************************************/
+    # /******************************************************************************/
 	// Might be temporary until we find out what to call within the MDParsableItem
 	// classes.  We want it in MDMangParseInfo extension to MDMang.
 	public void parseInfoPushPop(int startIndexOffset, String objectName) {
@@ -430,8 +430,8 @@ public class MDMang {
 		// Purposefully empty for base class.  Conents exist for a derived class.
 	}
 
-	/******************************************************************************/
-	/******************************************************************************/
+    # /******************************************************************************/
+    # /******************************************************************************/
 	private static final char SPACE = ' ';
 
 	public void insertSpacedString(StringBuilder builder, String string) {
@@ -500,8 +500,8 @@ public class MDMang {
 		}
 	}
 
-	/******************************************************************************/
-	/******************************************************************************/
+    # /******************************************************************************/
+    # /******************************************************************************/
 	// SPECIALIZATION METHODS
 	private static final Charset UTF8 = Charset.forName("UTF-8");
 	private static final Charset UTF16 = Charset.forName("UTF-16");
@@ -563,7 +563,7 @@ public class MDMang {
 		return false;
 	}
 
-	/**
+    # /**
 	 * This method is meant to be overridden as needed to return (or not) the
 	 *  embedded object (see MDBasicName).  In this default case, we do not
 	 *  return the embedded object, but just return the object itself.  A
@@ -575,7 +575,7 @@ public class MDMang {
 		return obj;
 	}
 
-	/**
+    # /**
 	 * This method is meant to be overridden as needed to process a hashed
 	 *  object.  In this default case (MDMang), we properly process the
 	 *  hashed object.  Overridden methods might just throw an exception,

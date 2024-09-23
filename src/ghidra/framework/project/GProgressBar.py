@@ -136,7 +136,7 @@ public class GProgressBar extends JPanel {
 		return message;
 	}
 
-	/**
+    # /**
 	 * Sets the <code>indeterminate</code> property of the progress bar,
 	 * which determines whether the progress bar is in determinate
 	 * or indeterminate mode.
@@ -156,7 +156,7 @@ public class GProgressBar extends JPanel {
 		});
 	}
 
-	/**
+    # /**
 	 * Show or not show the progress icon (spinning globe) according to
 	 * the showIcon param.
 	 * @param showIcon true to show the icon
@@ -190,7 +190,7 @@ public class GProgressBar extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * True (the default) signals to paint the progress information inside of the progress bar.
 	 *
 	 * @param showProgressValue true to paint the progress value; false to not

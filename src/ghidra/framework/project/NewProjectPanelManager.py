@@ -16,7 +16,7 @@
 package ghidra.framework.main;
 
 import java.awt.Dimension;
-import java.io.IOException;
+
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
@@ -193,7 +193,7 @@ class NewProjectPanelManager implements PanelManager {
 		return currentWizardPanel;
 	}
 
-	/**
+    # /**
 	 * Build repository access panel for new repository only.
 	 * @throws IOException
 	 */
@@ -345,7 +345,7 @@ class NewProjectPanelManager implements PanelManager {
 		return wizardMgr;
 	}
 
-	/**
+    # /**
 	 * Get the project that was created.
 	 * @return null if no project was created
 	 */
@@ -353,7 +353,7 @@ class NewProjectPanelManager implements PanelManager {
 		return newProjectLocator;
 	}
 
-	/**
+    # /**
 	 * Get the repository adapter associated with the new project.
 	 * After displaying this panel, this method should be invoked to obtain the 
 	 * repository which will be opended for shared projects.  If the repository is
@@ -372,7 +372,7 @@ class NewProjectPanelManager implements PanelManager {
 		return projectTypePanel.isSharedProject();
 	}
 
-	/**
+    # /**
 	 * Return true if a connection could be established using the given
 	 * server name and port number.
 	 */

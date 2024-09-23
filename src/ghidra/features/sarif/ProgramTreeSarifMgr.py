@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -57,7 +57,7 @@ public class ProgramTreeSarifMgr extends SarifMgr {
 	private String treeName;
 	private TaskMonitor monitor;
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param program program
@@ -223,7 +223,7 @@ public class ProgramTreeSarifMgr extends SarifMgr {
 		}
 	}
 
-	/**
+    # /**
 	 * Method removeEmptyFragments.
 	 */
 	private void removeEmptyFragments(ProgramModule module) {
@@ -249,7 +249,7 @@ public class ProgramTreeSarifMgr extends SarifMgr {
 	// SARIF WRITE CURRENT DTD //
 	/////////////////////////////
 
-	/**
+    # /**
 	 * Write out the SARIF for the program trees.
 	 * 
 	 * @param results writer for SARIF

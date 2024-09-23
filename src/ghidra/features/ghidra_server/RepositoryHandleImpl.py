@@ -16,7 +16,7 @@
 package ghidra.server.remote;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.rmi.NoSuchObjectException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -54,7 +54,7 @@ public class RepositoryHandleImpl extends UnicastRemoteObject
 
 	private LinkedList<RepositoryChangeEvent> eventQueue = new LinkedList<RepositoryChangeEvent>();
 
-	/**
+    # /**
 	 * Construct a repository handle for a specific user.
 	 * @param user
 	 * @param repository
@@ -74,7 +74,7 @@ public class RepositoryHandleImpl extends UnicastRemoteObject
 		return repository;
 	}
 
-	/**
+    # /**
 	 * RMI callback when instance becomes unreferenced by any remote client
 	 */
 	@Override
@@ -82,7 +82,7 @@ public class RepositoryHandleImpl extends UnicastRemoteObject
 		dispose();
 	}
 
-	/**
+    # /**
 	 * Dispose handle
 	 */
 	public void dispose() {
@@ -166,7 +166,7 @@ public class RepositoryHandleImpl extends UnicastRemoteObject
 		}
 	}
 
-	/**
+    # /**
 	 * Post repository change events to the client.
 	 * @param event change event
 	 */
@@ -182,7 +182,7 @@ public class RepositoryHandleImpl extends UnicastRemoteObject
 		}
 	}
 
-	/**
+    # /**
 	 * Verify that the client is active and continuing to read events
 	 */
 	public void checkHandle() {

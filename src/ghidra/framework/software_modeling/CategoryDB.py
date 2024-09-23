@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -32,8 +32,8 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Database implementation for Category.
- */
+# * Database implementation for Category.
+# */
 class CategoryDB extends DatabaseObject implements Category {
 
 	private DataTypeManagerDB mgr;
@@ -45,7 +45,7 @@ class CategoryDB extends DatabaseObject implements Category {
 	private ConflictMap conflictMap;
 	private CategoryPath categoryPath;
 
-	/**
+    # /**
 	 * Category Constructor
 	 * @param dtMgr the data type manager
 	 * @param cache CategoryDB object cache
@@ -75,7 +75,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		conflictMap = new ConflictMap(mgr.lock);
 	}
 
-	/**
+    # /**
 	 * Root Category Constructor
 	 * @param dtMgr the data type manager
 	 * @param cache CategoryDB object cache
@@ -137,7 +137,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#getName()
 	 */
 	@Override
@@ -149,7 +149,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return name;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#setName(java.lang.String)
 	 */
 	@Override
@@ -218,7 +218,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return map;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#getCategories()
 	 */
 	@Override
@@ -228,7 +228,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return categories.toArray(new Category[categories.size()]);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#getDataTypes()
 	 */
 	@Override
@@ -238,7 +238,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return dataTypes.toArray(new DataType[dataTypes.size()]);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#addDataType(ghidra.program.model.data.DataType, ghidra.program.model.data.DataTypeConflictHandler)
 	 */
 	@Override
@@ -263,7 +263,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#getCategory(java.lang.String)
 	 */
 	@Override
@@ -272,7 +272,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return subcategoryMap.get(subcategoryName);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#getDataType(java.lang.String)
 	 */
 	@Override
@@ -287,7 +287,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#createCategory(java.lang.String)
 	 */
 	@Override
@@ -308,7 +308,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#removeCategory(java.lang.String, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -380,7 +380,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#moveCategory(ghidra.program.model.data.Category, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -419,7 +419,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#copyCategory(ghidra.program.model.data.Category, ghidra.program.model.data.DataTypeConflictHandler, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -457,7 +457,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#getParent()
 	 */
 	@Override
@@ -466,7 +466,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#isRoot()
 	 */
 	@Override
@@ -474,7 +474,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return parent == null;
 	}
 
-	/**
+    # /**
 	 * Get the fully qualified name for this category.
 	 */
 	@Override
@@ -483,7 +483,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return path.getPath();
 	}
 
-	/**
+    # /**
 	 * Get the root category.
 	 */
 	@Override
@@ -491,7 +491,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return mgr.getCategory(DataTypeManagerDB.ROOT_CATEGORY_ID);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#getID()
 	 */
 	@Override
@@ -499,7 +499,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return getKey();
 	}
 
-	/**
+    # /**
 	 * Get the data type manager associated with this category.
 	 */
 	@Override
@@ -507,7 +507,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return mgr;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#moveDataType(ghidra.program.model.data.DataType, ghidra.program.model.data.DataTypeConflictHandler)
 	 */
 	@Override
@@ -555,7 +555,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Category#remove(ghidra.program.model.data.DataType, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -568,7 +568,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return mgr.remove(type, monitor);
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
 	@Override
@@ -577,7 +577,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return path.compareTo(otherCategory.getCategoryPath());
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -641,7 +641,7 @@ class CategoryDB extends DatabaseObject implements Category {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Class to handle the complexities of having a map as the value in a LazyLoadingCachingMap
 	 * This map uses the data type's base name as the key (i.e. all .conflict suffixes stripped off.)
 	 * The value is another map that maps the actual data type's name to the data type. This map
@@ -655,7 +655,7 @@ class CategoryDB extends DatabaseObject implements Category {
 			super(lock);
 		}
 
-		/**
+	    # /**
 		 * Creates a map of all data types whose name has a .conflict suffix where the key
 		 * is the base name and {@link LazyLoadingCachingMap} the value is a map of actual name 
 		 * to data type. This mapping is
@@ -680,7 +680,7 @@ class CategoryDB extends DatabaseObject implements Category {
 			return map;
 		}
 
-		/**
+	    # /**
 		 * Adds the data type to the conflict mapping structure. If the mapping is currently not
 		 * loaded then this method can safely do nothing. This method is synchronized to provide
 		 * thread safe access/manipulation of the map.
@@ -699,7 +699,7 @@ class CategoryDB extends DatabaseObject implements Category {
 			innerMap.put(dataTypeName, dataType);
 		}
 
-		/**
+	    # /**
 		 * Removes the data type with the given name from the conflict mapping structure. If the 
 		 * mapping is currently not loaded then this method can safely do nothing. This method is
 		 * synchronized to provide thread safe access/manipulate of the map.
@@ -718,7 +718,7 @@ class CategoryDB extends DatabaseObject implements Category {
 			innerMap.remove(dataTypeName);
 		}
 
-		/**
+	    # /**
 		 * Returns a list of all data types that have conflict names for the given base name
 		 * @param baseName the data type base name to search for (i.e. the .conflict suffix removed)
 		 * @return a list of all conflict named data types that would have the given base name if

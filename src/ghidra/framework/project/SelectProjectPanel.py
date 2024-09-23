@@ -57,7 +57,7 @@ class SelectProjectPanel extends AbstractWizardJPanel {
 	private NewProjectPanelManager panelManager;
 	private DocumentListener docListener;
 
-	/**
+    # /**
 	 * Construct a new panel.
 	 * @param panelManager manager for the "new project" set of panels
 	 */
@@ -93,7 +93,7 @@ class SelectProjectPanel extends AbstractWizardJPanel {
 
 	}
 
-	/**
+    # /**
 	 * Return true if the user has entered a valid project file
 	 */
 	@Override
@@ -242,7 +242,7 @@ class SelectProjectPanel extends AbstractWizardJPanel {
 		checkProjectFile(true);
 	}
 
-	/**
+    # /**
 	 * Check the validity of the project file name.
 	 */
 	private String checkProjectFile(boolean showMessage) {

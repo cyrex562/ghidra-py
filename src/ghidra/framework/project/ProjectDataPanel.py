@@ -113,7 +113,7 @@ class ProjectDataPanel extends JSplitPane implements ProjectViewListener {
 			new HelpLocation(frontEndPlugin.getName(), "ReadOnlyProjectDataPanel"));
 	}
 
-	/**
+    # /**
 	 * Populates the project views data tree panel(s) whenever a project is
 	 * made active.
 	 * If no project views are open, the tabbed pane is not visible.
@@ -182,7 +182,7 @@ class ProjectDataPanel extends JSplitPane implements ProjectViewListener {
 		this.setDividerLocation(visible ? DIVIDER_LOCATION : 1.0);
 	}
 
-	/**
+    # /**
 	 * Open specified project URL in tabbed READ-Only project views
 	 * @param projectView project URL to be opened/added to view
 	 * @return corresponding tree panel or null on failure
@@ -253,7 +253,7 @@ class ProjectDataPanel extends JSplitPane implements ProjectViewListener {
 		return projViews;
 	}
 
-	/**
+    # /**
 	 * Get the project data for the given project view
 	 * 
 	 * @param projectView the locator for the project to retrieve
@@ -267,7 +267,7 @@ class ProjectDataPanel extends JSplitPane implements ProjectViewListener {
 		return null;
 	}
 
-	/**
+    # /**
 	 * remove (close) the specified project view
 	 * @param projectView the url for the view to close
 	 */
@@ -307,7 +307,7 @@ class ProjectDataPanel extends JSplitPane implements ProjectViewListener {
 		}
 	}
 
-	/**
+    # /**
 	 * returns the ProjectURL for the current active view; null if no views open
 	 * @return the ProjectURL for the current active view; null if no views open
 	 */

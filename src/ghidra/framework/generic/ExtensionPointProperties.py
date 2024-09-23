@@ -24,36 +24,36 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 public @interface ExtensionPointProperties {
 
-	/**
+    # /**
 	 * Default {@link ExtensionPoint} priority.  Higher values represent higher priorities.
 	 */
 	final static int DEFAULT_PRIORITY = 1;
 
-	/**
+    # /**
 	 * Default behavior for an {@link ExtensionPoint} being discoverable
 	 */
 	final static boolean DEFAULT_EXCLUDE = false;
 
-	/**
+    # /**
 	 * {@link ExtensionPoint} priority.  Higher values represent higher priorities.
 	 * 
 	 * @return the {@link ExtensionPoint} priority.  
 	 */
 	int priority() default DEFAULT_PRIORITY;
 
-	/**
+    # /**
 	 * Enable to exclude an {@link ExtensionPoint} from being discovered
 	 * 
 	 * @return true to exclude an {@link ExtensionPoint} from being discovered
 	 */
 	boolean exclude() default DEFAULT_EXCLUDE;
 
-	/**
+    # /**
 	 * Utility methods for working with {@link ExtensionPointProperties}
 	 */
 	public static class Util {
 
-		/**
+	    # /**
 		 * Gets whether or not the {@link ExtensionPoint} will be excluded from being discovered
 		 * 
 		 * @param c the class check
@@ -66,7 +66,7 @@ public @interface ExtensionPointProperties {
 					: ExtensionPointProperties.DEFAULT_EXCLUDE;
 		}
 
-		/**
+	    # /**
 		 * Gets the {@link ExtensionPoint} priority.
 		 * 
 		 * @param c the class to get {@link ExtensionPoint} priority of.

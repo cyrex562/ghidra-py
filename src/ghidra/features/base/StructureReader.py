@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang.structmapping;
 
-import java.io.IOException;
+
 
 /**
  * Interface used by structure mapped classes that need to manually deserialize themselves from

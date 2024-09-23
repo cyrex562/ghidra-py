@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -55,7 +55,7 @@ public class EquatesSarifMgr extends SarifMgr {
 	// SARIF READ CURRENT DTD //
 	////////////////////////////
 
-	/**
+    # /**
 	 * Process the entry point section of the SARIF file.
 	 * 
 	 * @param result  sarif reader
@@ -90,7 +90,7 @@ public class EquatesSarifMgr extends SarifMgr {
 	// SARIF WRITE CURRENT DTD //
 	/////////////////////////////
 
-	/**
+    # /**
 	 * Write out the SARIF for the Equates.
 	 * 
 	 * @param results writer for SARIF

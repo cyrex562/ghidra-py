@@ -32,7 +32,7 @@ import ghidra.util.Msg;
  */
 public class PdbApplicatorMetrics {
 
-	/**
+    # /**
 	 * List of symbols seen (by their ID) as Global symbols.
 	 */
 	//@formatter:off
@@ -85,7 +85,7 @@ public class PdbApplicatorMetrics {
 	);
 	//@formatter:on
 
-	/**
+    # /**
 	 * List of symbols seen (by their ID) as Public symbols.
 	 */
 	//@formatter:off
@@ -113,7 +113,7 @@ public class PdbApplicatorMetrics {
 	private Set<Class<? extends AbstractMsSymbol>> unexpectedPublicSymbols = new HashSet<>();
 	private boolean witnessEnumerateNarrowing = false;
 
-	/**
+    # /**
 	 * Method to capture data/item type that cannot be applied.
 	 * @param type The data/item type witnessed.
 	 */
@@ -121,7 +121,7 @@ public class PdbApplicatorMetrics {
 		cannotApplyTypes.add(type.getClass());
 	}
 
-	/**
+    # /**
 	 * Method to capture symbol type that cannot be applied.
 	 * @param symbol The symbol type witnessed.
 	 */
@@ -129,7 +129,7 @@ public class PdbApplicatorMetrics {
 		cannotApplySymbols.add(symbol.getClass());
 	}
 
-	/**
+    # /**
 	 * Method to capture symbol type that we cannot currently process as a nested symbol
 	 * @param symbol The symbol type witnessed
 	 */
@@ -137,7 +137,7 @@ public class PdbApplicatorMetrics {
 		nonNestableSymbols.add(symbol.getClass());
 	}
 
-	/**
+    # /**
 	 * Method to capture symbol type that was unexpected as a Global symbol.
 	 * @param symbol The symbol type witnessed.
 	 */
@@ -147,7 +147,7 @@ public class PdbApplicatorMetrics {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to capture symbol type that was unexpected as a Public symbol.
 	 * @param symbol The symbol type witnessed.
 	 */
@@ -157,7 +157,7 @@ public class PdbApplicatorMetrics {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to capture symbol type that was unexpected as a Linker symbol.
 	 * @param symbol The symbol type witnessed.
 	 */
@@ -167,14 +167,14 @@ public class PdbApplicatorMetrics {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to capture witnessing of Enumerate narrowing.
 	 */
 	void witnessEnumerateNarrowing() {
 		witnessEnumerateNarrowing = true;
 	}
 
-	/**
+    # /**
 	 * Method to capture unusual this pointer types.
 	 * @param type the {@AbstractMsType} for the supposed this pointer
 	 */
@@ -190,7 +190,7 @@ public class PdbApplicatorMetrics {
 		unexpectedMemberFunctionThisPointerTypes.add(type.getClass());
 	}
 
-	/**
+    # /**
 	 * Method to capture unusual underlying types for a normal pointer for this pointer.
 	 * @param type the {@AbstractMsType} for the supposed this pointer
 	 */
@@ -204,7 +204,7 @@ public class PdbApplicatorMetrics {
 		unexpectedMemberFunctionThisPointerUnderlyingTypes.add(type.getClass());
 	}
 
-	/**
+    # /**
 	 * Method to capture unusual containing types for a member function
 	 * @param type the {@AbstractMsType} for the supposed this container
 	 */
@@ -217,7 +217,7 @@ public class PdbApplicatorMetrics {
 
 	//==============================================================================================
 
-	/**
+    # /**
 	 * Generate some post-processing metrics and write to log
 	 */
 	void logReport() {

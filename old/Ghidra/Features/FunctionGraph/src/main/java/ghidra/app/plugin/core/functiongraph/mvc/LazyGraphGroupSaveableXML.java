@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.functiongraph.mvc;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 import java.util.Collection;
 
 import org.jdom.Document;

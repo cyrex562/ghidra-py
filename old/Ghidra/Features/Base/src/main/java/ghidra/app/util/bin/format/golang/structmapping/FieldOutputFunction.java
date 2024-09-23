@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang.structmapping;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.Structure;
 

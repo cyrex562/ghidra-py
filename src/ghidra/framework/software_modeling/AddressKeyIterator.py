@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.map;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -37,13 +37,13 @@ public class AddressKeyIterator implements DBLongIterator {
 	private DBLongIterator it;
 	private int keyRangeIndex = -1;
 
-	/**
+    # /**
 	 * Constructs an empty iterator.
 	 */
 	private AddressKeyIterator() {
 	}
 
-	/**
+    # /**
 	 * Constructs  new AddressKeyIterator that iterates over all addresses.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table key by addresses
@@ -55,7 +55,7 @@ public class AddressKeyIterator implements DBLongIterator {
 		this(table, addrMap, false, null, null, before);
 	}
 
-	/**
+    # /**
 	 * Constructs  new AddressKeyIterator that iterates overal all addresses and is initially
 	 * positioned at startAddr.  Memory addresses encoded as Absolute are not included.
 	 * @param table the database table key by addresses
@@ -71,7 +71,7 @@ public class AddressKeyIterator implements DBLongIterator {
 		this(table, addrMap, false, null, startAddr, before);
 	}
 
-	/**
+    # /**
 	 * Constructs  new AddressKeyIterator that iterates over an address range.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table key by addresses
@@ -91,7 +91,7 @@ public class AddressKeyIterator implements DBLongIterator {
 			startAddr, before);
 	}
 
-	/**
+    # /**
 	 * Constructs  new AddressKeyIterator to iterate over an address set.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table key by addresses
@@ -109,7 +109,7 @@ public class AddressKeyIterator implements DBLongIterator {
 		this(table, addrMap, false, set, startAddr, before);
 	}
 
-	/**
+    # /**
 	 * Constructs  new AddressKeyIterator to iterate over an address set.
 	 * @param table the database table key by addresses
 	 * @param addrMap the address map
@@ -177,7 +177,7 @@ public class AddressKeyIterator implements DBLongIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#hasNext()
 	 */
 	@Override
@@ -201,7 +201,7 @@ public class AddressKeyIterator implements DBLongIterator {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#hasPrevious()
 	 */
 	@Override
@@ -225,7 +225,7 @@ public class AddressKeyIterator implements DBLongIterator {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#next()
 	 */
 	@Override
@@ -236,7 +236,7 @@ public class AddressKeyIterator implements DBLongIterator {
 		throw new NoSuchElementException();
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#previous()
 	 */
 	@Override
@@ -247,7 +247,7 @@ public class AddressKeyIterator implements DBLongIterator {
 		throw new NoSuchElementException();
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#delete()
 	 */
 	@Override

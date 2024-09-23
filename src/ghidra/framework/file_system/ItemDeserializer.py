@@ -20,7 +20,7 @@ import ghidra.util.MonitoredInputStream;
 import ghidra.util.exception.IOCancelledException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.*;
+
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 

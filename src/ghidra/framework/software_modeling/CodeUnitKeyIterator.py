@@ -20,7 +20,7 @@ import ghidra.program.database.map.AddressKeyIterator;
 import ghidra.program.model.listing.CodeUnit;
 import ghidra.program.model.listing.CodeUnitIterator;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 # /**
@@ -33,7 +33,7 @@ public class CodeUnitKeyIterator implements CodeUnitIterator {
 	private boolean forward;
 	private CodeUnit nextCu;
 
-	/**
+    # /**
 	 * Construct a new CodeUnitKeyIterator
 	 * @param codeMgr the code manager
 	 * @param it the addressKeyIterator
@@ -45,7 +45,7 @@ public class CodeUnitKeyIterator implements CodeUnitIterator {
 		this.forward = forward;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Iterator#remove()
 	 */
 	@Override
@@ -53,7 +53,7 @@ public class CodeUnitKeyIterator implements CodeUnitIterator {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#hasNext()
 	 */
 	@Override
@@ -64,7 +64,7 @@ public class CodeUnitKeyIterator implements CodeUnitIterator {
 		return nextCu != null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#next()
 	 */
 	@Override

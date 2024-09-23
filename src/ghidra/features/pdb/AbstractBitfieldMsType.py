@@ -29,7 +29,7 @@ public abstract class AbstractBitfieldMsType extends AbstractMsType {
 	protected int length;
 	protected int position;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -38,7 +38,7 @@ public abstract class AbstractBitfieldMsType extends AbstractMsType {
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the element type.
 	 * @return The element record number.
 	 */
@@ -46,7 +46,7 @@ public abstract class AbstractBitfieldMsType extends AbstractMsType {
 		return elementRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the bit length of the bit-field.
 	 * @return The bit length.
 	 */
@@ -54,7 +54,7 @@ public abstract class AbstractBitfieldMsType extends AbstractMsType {
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the bit position of the bit-field.
 	 * @return The bit position.
 	 */

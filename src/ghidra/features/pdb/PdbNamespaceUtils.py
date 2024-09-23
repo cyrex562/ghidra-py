@@ -23,7 +23,7 @@ import ghidra.program.model.symbol.SymbolUtilities;
 
 public class PdbNamespaceUtils {
 
-	/**
+    # /**
 	 * Fixes {@link SymbolPath} name, eliminating invalid characters and making the terminal
 	 *  name of the namespace unique by the index number when necessary.  For example,
 	 *  anonymous and unnamed components such as {@code <unnamed-tag>} and {@code <unnamed-type>}
@@ -40,7 +40,7 @@ public class PdbNamespaceUtils {
 		return new SymbolPath(symbolPath.getParent(), fixUnnamed(symbolPath.getName(), index));
 	}
 
-	/**
+    # /**
 	 * Fixes {@link SymbolPath} name, eliminating invalid characters
 	 * @param symbolPath the source {@link SymbolPath}
 	 * @return the resulting {@link SymbolPath}
@@ -50,7 +50,7 @@ public class PdbNamespaceUtils {
 		return symbolPath;
 	}
 
-	/**
+    # /**
 	 * Fixes {@code <unnamed-tag>} and {@code <unnamed-type>} components of a namespace.
 	 * <P>
 	 * NOTE: This could be an issue when there are multiple unnamed items, such as in, for example:
@@ -79,7 +79,7 @@ public class PdbNamespaceUtils {
 //		return new SymbolPath(parent, fixName(symbolPath.getName(), index));
 //	}
 //
-	/**
+    # /**
 	 * Fixes-up {@code <unnamed-tag>} or {@code <unnamed-type>} component of a name.
 	 * @param name original name.
 	 * @param index the index number used be used as part of a unique tag name.

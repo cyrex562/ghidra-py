@@ -19,7 +19,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 import static org.junit.Assume.assumeTrue;
 
-import java.io.*;
+
 import java.lang.ProcessBuilder.Redirect;
 
 import org.junit.Before;

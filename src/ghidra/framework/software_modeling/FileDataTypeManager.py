@@ -1,22 +1,22 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.framework.data.OpenMode;
@@ -32,9 +32,9 @@ import ghidra.util.filechooser.GhidraFileFilter;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * DataTypeManager for a file. Can import categories from a file, or export
- * categories to a packed database.
- */
+# * DataTypeManager for a file. Can import categories from a file, or export
+# * categories to a packed database.
+# */
 public class FileDataTypeManager extends StandAloneDataTypeManager
 		implements FileArchiveBasedDataTypeManager {
 
@@ -42,7 +42,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 	public static final GhidraFileFilter GDT_FILEFILTER =
 		ExtensionFileFilter.forExtensions("Ghidra Data Type Files", EXTENSION);
 
-	/**
+    # /**
 	 * Suffix for an archive file.
 	 */
 	public final static String SUFFIX = "." + EXTENSION;
@@ -53,7 +53,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 	private ResourceFile file;
 	private PackedDatabase packedDB;
 
-	/**
+    # /**
 	 * Construct a new DataTypeFileManager using the default data organization.
 	 * <p>
 	 * <B>NOTE:</B> it may be appropriate to {@link #getWarning() check for warnings} after
@@ -85,7 +85,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 		return packedDbfile;
 	}
 
-	/**
+    # /**
 	 * Create a new data-type file archive using the default data organization
 	 * @param packedDbfile archive file (filename must end with DataTypeFileManager.SUFFIX)
 	 * @return data-type manager backed by specified packedDbFile
@@ -101,7 +101,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 		}
 	}
 
-	/**
+    # /**
 	 * Open an existing data-type file archive using the default data organization.
 	 * <p>
 	 * <B>NOTE:</B> If archive has an assigned architecture, issues may arise due to a revised or
@@ -122,7 +122,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 		return openFileArchive(new ResourceFile(packedDbfile), openForUpdate);
 	}
 
-	/**
+    # /**
 	 * Open an existing data-type file archive using the default data organization.
 	 * <p>
 	 * <B>NOTE:</B> If archive has an assigned architecture, issues may arise due to a revised or
@@ -149,7 +149,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 		}
 	}
 
-	/**
+    # /**
 	 * Saves the data type manager to the given file with a specific databaseId.
 	 * NOTE: This method is intended for use in transforming one archive database to
 	 * match another existing archive database.
@@ -178,7 +178,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 		}
 	}
 
-	/**
+    # /**
 	 * Saves the data type manager to the given file
 	 * @param saveFile the file to save
 	 * @throws DuplicateFileException if save file already exists
@@ -201,7 +201,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 		}
 	}
 
-	/**
+    # /**
 	 * Save the category to source file.
 	 * @throws IOException if IO error occurs
 	 */
@@ -222,7 +222,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 		}
 	}
 
-	/**
+    # /**
 	 * Get the filename for the current file.
 	 * 
 	 * @return String filename, or null if there is no current file.
@@ -234,7 +234,7 @@ public class FileDataTypeManager extends StandAloneDataTypeManager
 		return null;
 	}
 
-	/**
+    # /**
 	 * Convert the filename for the given file to have the packed database
 	 * file extension.
 	 * @param file file whose name is to be converted

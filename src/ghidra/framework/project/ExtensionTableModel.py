@@ -51,16 +51,16 @@ import ghidra.util.task.TaskMonitor;
  */
 class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 
-	/** We don't care about the ordering of other columns, but the install/uninstall checkbox should be
+    # /** We don't care about the ordering of other columns, but the install/uninstall checkbox should be
 	 the first one and the name col is our initial sort column. */
 	final static int INSTALLED_COL = 0;
 	final static int NAME_COL = 1;
 
-	/** This is the data source for the model. Whatever is here will be displayed in the table. */
+    # /** This is the data source for the model. Whatever is here will be displayed in the table. */
 	private Set<ExtensionDetails> extensions;
 	private Map<String, Boolean> originalInstallStates = new HashMap<>();
 
-	/**
+    # /**
 	 * Constructor.
 	 *
 	 * @param serviceProvider the tool providing the extensions table
@@ -104,7 +104,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		return columnIndex == INSTALLED_COL;
 	}
 
-	/**
+    # /**
 	 * Overridden to handle the case where a user has toggled the installation column
 	 * checkbox.
 	 */
@@ -169,7 +169,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 				"try manually installing the extension: '" + extension.getName() + "'");
 	}
 
-	/**
+    # /**
 	 * Returns true if the extension version is valid for this version of Ghidra.
 	 *
 	 * @param details the extension to check
@@ -222,7 +222,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		accumulator.addAll(extensions);
 	}
 
-	/**
+    # /**
 	 * Returns true if the model has changed as a result of installing or uninstalling an extension
 	 *
 	 * @return true if the model has changed as a result of installing or uninstalling an extension
@@ -239,7 +239,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Replaces the table model data with the given list.
 	 *
 	 * @param model the list to use as the model
@@ -249,7 +249,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		reload();
 	}
 
-	/**
+    # /**
 	 * Gets a new set of extensions and reloads the table.
 	 */
 	public void refreshTable() {
@@ -257,7 +257,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		reload();
 	}
 
-	/**
+    # /**
 	 * Returns the selected extension.
 	 * <p>
 	 * Note that this table is single-selection only, so this will only
@@ -270,7 +270,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		return getRowObject(row);
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the extension name.
 	 */
 	private class ExtensionNameColumn
@@ -300,7 +300,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		}
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the extension description.
 	 */
 	private class ExtensionDescriptionColumn
@@ -330,7 +330,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		}
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the extension description.
 	 */
 	private class ExtensionVersionColumn
@@ -369,7 +369,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		}
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the extension installation status.
 	 */
 	private class ExtensionInstalledColumn
@@ -392,7 +392,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		}
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the extension installation directory.
 	 */
 	private class ExtensionInstallationDirColumn
@@ -415,7 +415,7 @@ class ExtensionTableModel extends ThreadedTableModel<ExtensionDetails, Object> {
 		}
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the extension archive file.
 	 */
 	private class ExtensionArchiveFileColumn

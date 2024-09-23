@@ -24,7 +24,7 @@ public abstract class MsTypeApplier {
 
 	protected DefaultPdbApplicator applicator;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working.
 	 */
@@ -32,7 +32,7 @@ public abstract class MsTypeApplier {
 		this.applicator = applicator;
 	}
 
-	/**
+    # /**
 	 * Puts message to {@link PdbLog} and to Msg.info()
 	 * @param originator a Logger instance, "this", or YourClass.class
 	 * @param message the message to display

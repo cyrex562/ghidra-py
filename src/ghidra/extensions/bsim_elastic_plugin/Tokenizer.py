@@ -16,7 +16,7 @@
  */
 package org.apache.lucene.analysis;
 
-import java.io.IOException;
+
 import java.io.Reader;
 
 import org.apache.lucene.util.AttributeFactory;

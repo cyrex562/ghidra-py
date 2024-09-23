@@ -1,35 +1,35 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressSpace;
 
 # /**
- * 
- *
- * Basically a unique address for a PcodeOp
- * It is unique, maintains original assembly instruction address, and is comparable
- * within a basic block
- */
+# * 
+# *
+# * Basically a unique address for a PcodeOp
+# * It is unique, maintains original assembly instruction address, and is comparable
+# * within a basic block
+# */
 public class SequenceNumber implements Comparable<SequenceNumber> {
 	private Address pc;					// Address of assembly language instruction
 	private int uniq;					// Sub-address for distinguishing multiple PcodeOps at one
@@ -37,7 +37,7 @@ public class SequenceNumber implements Comparable<SequenceNumber> {
 	private int order;					// Contains relative position information of PcodeOps within
 	// a basic block, may change as basic block is edited.
 
-	/**
+    # /**
 	 * Construct a sequence number for an instruction at an address and sequence of pcode op within
 	 * that instructions set of pcode.
 	 * 
@@ -49,14 +49,14 @@ public class SequenceNumber implements Comparable<SequenceNumber> {
 		uniq = sequenceNum;
 	}
 
-	/**
+    # /**
 	 * @return get address of instruction this sequence belongs to
 	 */
 	public Address getTarget() {
 		return pc;
 	}
 
-	/**
+    # /**
 	 * Get unique Sub-address for distinguishing multiple PcodeOps at one
 	 * instruction address.
 	 * Does not change over lifetime of PcodeOp
@@ -67,7 +67,7 @@ public class SequenceNumber implements Comparable<SequenceNumber> {
 		return uniq;
 	}
 
-	/**
+    # /**
 	 * Set unique Sub-address for distinguishing multiple PcodeOps at one
 	 * instruction address.
 	 * Does not change over lifetime of PcodeOp
@@ -78,7 +78,7 @@ public class SequenceNumber implements Comparable<SequenceNumber> {
 		uniq = t;
 	}
 
-	/**
+    # /**
 	 * Get relative position information of PcodeOps within
 	 * a basic block, may change as basic block is edited.
 	 * 
@@ -88,7 +88,7 @@ public class SequenceNumber implements Comparable<SequenceNumber> {
 		return order;
 	}
 
-	/**
+    # /**
 	 * Set relative position information of PcodeOps within
 	 * a basic block, may change as basic block is edited.
 	 * 
@@ -128,7 +128,7 @@ public class SequenceNumber implements Comparable<SequenceNumber> {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Encode this sequence number to the stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors in the underlying stream
@@ -144,7 +144,7 @@ public class SequenceNumber implements Comparable<SequenceNumber> {
 		encoder.closeElement(ELEM_SEQNUM);
 	}
 
-	/**
+    # /**
 	 * Decode a new Sequence number from the stream
 	 * 
 	 * @param decoder is the stream decoder

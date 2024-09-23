@@ -40,7 +40,7 @@ public class WeakStore<T> {
 		refQueue = new ReferenceQueue<>();
 	}
 
-	/**
+    # /**
 	 * Returns the number of objects of type T remaining in the store. Those that are remaining
 	 * are either still referenced
 	 * @return the number of objects still in the store that haven't yet been garbage collected
@@ -50,7 +50,7 @@ public class WeakStore<T> {
 		return size;
 	}
 
-	/** 
+    # /** 
 	 * returns a list of all the objects in this store
 	 * @return a list of all the objects in this store
 	 */
@@ -66,7 +66,7 @@ public class WeakStore<T> {
 		return values;
 	}
 
-	/**
+    # /**
 	 * Adds the given value to the store
 	 * @param value the instance being added to the store
 	 */

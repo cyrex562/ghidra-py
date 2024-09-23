@@ -51,35 +51,35 @@ public class BSimApplyResult {
 		this.message = message;
 	}
 
-	/**
+    # /**
 	 * @return the target function name
 	 */
 	public String getTargetFunctionName() {
 		return target;
 	}
 
-	/**
+    # /**
 	 * @return the similar function name
 	 */
 	public String getSourceFunctionName() {
 		return source;
 	}
 
-	/**
+    # /**
 	 * @return the status
 	 */
 	public BSimResultStatus getStatus() {
 		return status;
 	}
 
-	/**
+    # /**
 	 * @return the address
 	 */
 	public Address getAddress() {
 		return address;
 	}
 
-	/**
+    # /**
 	 * @return the message
 	 */
 	public String getMessage() {

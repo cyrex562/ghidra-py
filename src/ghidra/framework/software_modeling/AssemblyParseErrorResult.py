@@ -23,7 +23,7 @@ import org.apache.commons.collections4.IterableUtils;
  * An unsuccessful result from parsing
  */
 public class AssemblyParseErrorResult extends AssemblyParseResult {
-	/**
+    # /**
 	 * The maximum number of suggestions to print when describing this error, e.g., when reported in
 	 * exception messages.
 	 */
@@ -32,7 +32,7 @@ public class AssemblyParseErrorResult extends AssemblyParseResult {
 	private final String buffer;
 	private final Set<String> suggestions;
 
-	/**
+    # /**
 	 * @see AssemblyParseResult#error(String, Set)
 	 */
 	protected AssemblyParseErrorResult(String got, Set<String> suggestions) {
@@ -45,7 +45,7 @@ public class AssemblyParseErrorResult extends AssemblyParseResult {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Get a description of the error
 	 * 
 	 * @return a description
@@ -65,7 +65,7 @@ public class AssemblyParseErrorResult extends AssemblyParseResult {
 		return "Syntax Error: Expected " + truncSuggestions + ". Got " + buffer;
 	}
 
-	/**
+    # /**
 	 * Get a set of suggested tokens that would have allowed parsing to continue
 	 * 
 	 * @return the token set
@@ -74,7 +74,7 @@ public class AssemblyParseErrorResult extends AssemblyParseResult {
 		return Collections.unmodifiableSet(suggestions);
 	}
 
-	/**
+    # /**
 	 * Get the leftover contents of the input buffer when the error occurred
 	 * 
 	 * @return the remaining buffer contents

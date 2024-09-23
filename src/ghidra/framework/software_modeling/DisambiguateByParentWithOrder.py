@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.correlate;
 
 import java.util.ArrayList;
@@ -24,11 +24,11 @@ import ghidra.program.model.block.CodeBlockReferenceIterator;
 import ghidra.util.exception.CancelledException;
 
 # /**
- * Attempt to disambiguate similar n-grams by looking at the parents, AND siblings, of blocks containing the n-grams.
- * This addresses switch constructions in particular, where code for individual cases look very similar but can be
- * distinguished by the ordering of the cases.
- *
- */
+# * Attempt to disambiguate similar n-grams by looking at the parents, AND siblings, of blocks containing the n-grams.
+# * This addresses switch constructions in particular, where code for individual cases look very similar but can be
+# * distinguished by the ordering of the cases.
+# *
+# */
 public class DisambiguateByParentWithOrder implements DisambiguateStrategy {
 
 	@Override

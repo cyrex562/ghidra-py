@@ -1,31 +1,31 @@
 # /* ###
- * IP: GHIDRA
- * REVIEWED: YES
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# * REVIEWED: YES
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.symbol;
 
 import ghidra.program.model.address.Address;
 
 # /**
- *
- * Implementation for a Thunk Function reference.
- * These references are dynamic in nature and may not be explicitly added,
- * removed or altered.  There presence is inferred by the existence
- * of a thunk function.
- * 
- */
+# *
+# * Implementation for a Thunk Function reference.
+# * These references are dynamic in nature and may not be explicitly added,
+# * removed or altered.  There presence is inferred by the existence
+# * of a thunk function.
+# * 
+# */
 public class ThunkReference implements DynamicReference {
 
 	private static final int OPINDEX = OTHER;
@@ -33,7 +33,7 @@ public class ThunkReference implements DynamicReference {
 	private Address fromAddr;
 	private Address toAddr;
 
-	/**
+    # /**
 	 * Thunk reference constructor
 	 * @param thunkAddr thunk function address
 	 * @param thunkedAddr "thunked" function address
@@ -43,7 +43,7 @@ public class ThunkReference implements DynamicReference {
 		this.toAddr = thunkedAddr;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#getFromAddress()
 	 */
 	@Override
@@ -51,7 +51,7 @@ public class ThunkReference implements DynamicReference {
 		return fromAddr;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#getToAddress()
 	 */
 	@Override
@@ -59,7 +59,7 @@ public class ThunkReference implements DynamicReference {
 		return toAddr;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isPrimary()
 	 */
 	@Override
@@ -67,7 +67,7 @@ public class ThunkReference implements DynamicReference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#getSymbolID()
 	 */
 	@Override
@@ -75,7 +75,7 @@ public class ThunkReference implements DynamicReference {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#getReferenceType()
 	 */
 	@Override
@@ -83,7 +83,7 @@ public class ThunkReference implements DynamicReference {
 		return RefType.THUNK;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#getOperandIndex()
 	 */
 	@Override
@@ -91,7 +91,7 @@ public class ThunkReference implements DynamicReference {
 		return OPINDEX;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isMnemonicReference()
 	 */
 	@Override
@@ -99,7 +99,7 @@ public class ThunkReference implements DynamicReference {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isOperandReference()
 	 */
 	@Override
@@ -107,7 +107,7 @@ public class ThunkReference implements DynamicReference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Comparable#compareTo(Object)
 	 */
 	@Override
@@ -122,7 +122,7 @@ public class ThunkReference implements DynamicReference {
 		return result;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#equals(Object)
 	 */
 	@Override
@@ -141,7 +141,7 @@ public class ThunkReference implements DynamicReference {
 			toAddr.equals(ref.getToAddress());
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isExternalReference()
 	 */
 	@Override
@@ -149,7 +149,7 @@ public class ThunkReference implements DynamicReference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isOffsetReference()
 	 */
 	@Override
@@ -157,7 +157,7 @@ public class ThunkReference implements DynamicReference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isShiftedReference()
 	 */
 	@Override
@@ -165,7 +165,7 @@ public class ThunkReference implements DynamicReference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isEntryPointReference()
 	 */
 	@Override
@@ -173,7 +173,7 @@ public class ThunkReference implements DynamicReference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isMemoryReference()
 	 */
 	@Override
@@ -181,7 +181,7 @@ public class ThunkReference implements DynamicReference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isRegisterReference()
 	 */
 	@Override
@@ -189,7 +189,7 @@ public class ThunkReference implements DynamicReference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isStackReference()
 	 */
 	@Override

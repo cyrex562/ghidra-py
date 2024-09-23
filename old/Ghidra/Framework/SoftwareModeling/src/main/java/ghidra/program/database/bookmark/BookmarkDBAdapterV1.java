@@ -19,7 +19,7 @@ import ghidra.program.database.map.AddressMap;
 import ghidra.program.model.address.*;
 import ghidra.util.exception.VersionException;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;

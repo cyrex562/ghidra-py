@@ -16,7 +16,7 @@
  */
 package ghidra.program.database.util;
 
-import java.io.IOException;
+
 
 import db.DBFieldIterator;
 

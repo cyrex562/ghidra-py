@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Function;
  */
 public class FunctionEdgeCache {
 
-	/** Contains all known edges, even those not showing in the graph */
+    # /** Contains all known edges, even those not showing in the graph */
 	private Map<Function, Set<FunctionEdge>> allEdgesByFunction =
 		LazyMap.lazyMap(new HashMap<>(), () -> new HashSet<>());
 

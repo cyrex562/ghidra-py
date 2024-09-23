@@ -54,7 +54,7 @@ public class TableScoreCaching implements ScoreCaching {
 		insertValue.values = new Object[1];
 	}
 
-	/**
+    # /**
 	 * Do minimal work to set up query template for a given number of values
 	 * @param size is the number of values to be queried
 	 */
@@ -65,7 +65,7 @@ public class TableScoreCaching implements ScoreCaching {
 		queryValue.keys = new Object[size];
 	}
 
-	/**
+    # /**
 	 * Do minimal work to set up insert template for a given number of values
 	 * @param size is the number of values to be inserted
 	 */
@@ -77,7 +77,7 @@ public class TableScoreCaching implements ScoreCaching {
 		insertValue.values = new Object[size];
 	}
 
-	/**
+    # /**
 	 * Make sure the backing database table exists, and if it doesn't, create it.
 	 * If the table existed previously, try to read thresholds from it
 	 * @throws LSHException for problems with the connection

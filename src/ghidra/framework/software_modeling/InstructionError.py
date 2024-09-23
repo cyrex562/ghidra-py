@@ -1,19 +1,19 @@
 # /* ###
- * IP: GHIDRA
- * REVIEWED: YES
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# * REVIEWED: YES
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.program.model.address.Address;
@@ -33,7 +33,7 @@ public class InstructionError {
 
 	public enum InstructionErrorType {
 
-		/**
+	    # /**
 		 * Duplicate instruction detected 
 		 * while instructions were being added to program.
 		 * This should not be marked but should prevent additional
@@ -41,7 +41,7 @@ public class InstructionError {
 		 */
 		DUPLICATE(true),
 
-		/**
+	    # /**
 		 * Conflict with existing instruction detected 
 		 * while instructions were being added to program.
 		 * Conflict address corresponds to existing code unit.
@@ -51,7 +51,7 @@ public class InstructionError {
 		 */
 		INSTRUCTION_CONFLICT(true),
 
-		/**
+	    # /**
 		 * Conflict with existing data detected 
 		 * while instructions were being added to program.
 		 * Conflict address corresponds to existing code unit.
@@ -61,7 +61,7 @@ public class InstructionError {
 		 */
 		DATA_CONFLICT(true),
 
-		/**
+	    # /**
 		 * Offcut conflict with existing instruction detected 
 		 * while instructions were being added to program.
 		 * Conflict address corresponds to existing code unit.
@@ -71,7 +71,7 @@ public class InstructionError {
 		 */
 		OFFCUT_INSTRUCTION(true),
 
-		/**
+	    # /**
 		 * Instruction parsing failed at the conflict address.
 		 * This conflict should only have a conflict address which 
 		 * immediately follows the last instruction within the 
@@ -79,7 +79,7 @@ public class InstructionError {
 		 */
 		PARSE(false),
 
-		/**
+	    # /**
 		 * Instruction parsing failed at the conflict address due
 		 * to a memory error.
 		 * This conflict should only have a conflict address which 
@@ -88,7 +88,7 @@ public class InstructionError {
 		 */
 		MEMORY(false),
 
-		/**
+	    # /**
 		 * Instruction contains an unaligned flow which is indicative
 		 * of a language problem.  The conflict address corresponds to the 
 		 * instruction containing the flow.  While the instruction at the 
@@ -96,7 +96,7 @@ public class InstructionError {
 		 */
 		FLOW_ALIGNMENT(false);
 
-		/**
+	    # /**
 		 * Instruction error associated with a conflict with an existing
 		 * code unit (instruction or data).
 		 */
@@ -108,7 +108,7 @@ public class InstructionError {
 
 	}
 
-	/**
+    # /**
 	 * Construct an instruction error/conflict
 	 * @param block instruction block which corresponds to this error
 	 * @param type type of instruction error/conflict
@@ -127,7 +127,7 @@ public class InstructionError {
 		this.message = message;
 	}
 
-	/**
+    # /**
 	 * Construct PARSE error
 	 * @param block instruction block which corresponds to this error
 	 * @param contextValue disassembler context used during instruction parse
@@ -145,14 +145,14 @@ public class InstructionError {
 		this.message = message;
 	}
 
-	/**
+    # /**
 	 * @return instruction block which corresponds to this error
 	 */
 	public InstructionBlock getInstructionBlock() {
 		return block;
 	}
 
-	/**
+    # /**
 	 * @return type of instruction error
 	 */
 	public InstructionErrorType getInstructionErrorType() {
@@ -168,14 +168,14 @@ public class InstructionError {
 		return type == InstructionErrorType.OFFCUT_INSTRUCTION;
 	}
 
-	/**
+    # /**
 	 * @return address of new intended instruction which failed to be created (never null)
 	 */
 	public Address getInstructionAddress() {
 		return instructionAddress;
 	}
 
-	/**
+    # /**
 	 * @return address of another code unit which conflicts
 	 * with intended instruction (required for CODE_UNIT 
 	 * and DUPLCIATE errors, null for others)
@@ -184,7 +184,7 @@ public class InstructionError {
 		return conflictAddress;
 	}
 
-	/**
+    # /**
 	 * @return disassembler context at intended instruction
 	 * address (required for PARSE error, null for others)
 	 */
@@ -192,14 +192,14 @@ public class InstructionError {
 		return parseContext;
 	}
 
-	/**
+    # /**
 	 * @return flow-from address if know else null
 	 */
 	public Address getFlowFromAddress() {
 		return flowFromAddress;
 	}
 
-	/**
+    # /**
 	 * @return instruction error message
 	 */
 	public String getConflictMessage() {

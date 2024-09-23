@@ -16,7 +16,7 @@
 package ghidra.app.services;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.app.plugin.core.datamgr.DataTypeManagerPlugin;

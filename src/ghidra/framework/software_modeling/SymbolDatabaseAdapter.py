@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.Objects;
 import java.util.Set;
 
@@ -32,8 +32,8 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Adapter to access records in the symbol table.
- */
+# * Adapter to access records in the symbol table.
+# */
 abstract class SymbolDatabaseAdapter {
 	static final String SYMBOL_TABLE_NAME = "Symbols";
 
@@ -59,7 +59,7 @@ abstract class SymbolDatabaseAdapter {
 
 	// TODO: NEXT UPGRADE: remove all variable/parameter symbols with NO_ADDRESS
 
-	/**
+    # /**
 	 * Gets a new SymbolDatabaseAdapter
 	 * @param dbHandle the database handle
 	 * @param openMode the open mode
@@ -199,7 +199,7 @@ abstract class SymbolDatabaseAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new symbol
 	 * @param name name of the symbol
 	 * @param address the address for the symbol
@@ -221,7 +221,7 @@ abstract class SymbolDatabaseAdapter {
 			SymbolType symbolType, String stringData, Long dataTypeId, Integer varOffset,
 			SourceType source, boolean isPrimary) throws IOException;
 
-	/**
+    # /**
 	 * Get the record with the given symbol ID
 	 * @param symbolID key for the database record
 	 * @return record with the given symbolID
@@ -229,14 +229,14 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract DBRecord getSymbolRecord(long symbolID) throws IOException;
 
-	/**
+    # /**
 	 * Remove the record for the given symbol ID
 	 * @param symbolID key for the database record
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void removeSymbol(long symbolID) throws IOException;
 
-	/**
+    # /**
 	 * Check if the address has a symbol defined at it
 	 *
 	 * @param addr address to filter on
@@ -245,7 +245,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract boolean hasSymbol(Address addr) throws IOException;
 
-	/**
+    # /**
 	 * Get the symbolIDs at the given address
 	 * @param addr address to filter on
 	 * @return array of database LongField keys contained within a Field array
@@ -253,13 +253,13 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract Field[] getSymbolIDs(Address addr) throws IOException;
 
-	/**
+    # /**
 	 * Get the number of symbols
 	 * @return the number of symbols
 	 */
 	abstract int getSymbolCount();
 
-	/**
+    # /**
 	 * Get an iterator over all the symbols in ascending address order
 	 * @param forward the direction to iterator
 	 * @return a record iterator over all symbols
@@ -267,7 +267,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract RecordIterator getSymbolsByAddress(boolean forward) throws IOException;
 
-	/**
+    # /**
 	 * Get an iterator over all the symbols starting at startAddr
 	 * @param startAddr start address of where to get symbols
 	 * @param forward true to iterate from low to high addresses
@@ -277,21 +277,21 @@ abstract class SymbolDatabaseAdapter {
 	abstract RecordIterator getSymbolsByAddress(Address startAddr, boolean forward)
 			throws IOException;
 
-	/**
+    # /**
 	 * Update the table with the given record
 	 * @param record the record to update in the database
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void updateSymbolRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Get all of the symbols.
 	 * @return a record iterator over all symbols
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract RecordIterator getSymbols() throws IOException;
 
-	/**
+    # /**
 	 * Get symbols in the given range
 	 * @param start the start address of the range
 	 * @param end the last address of the range
@@ -302,7 +302,7 @@ abstract class SymbolDatabaseAdapter {
 	abstract RecordIterator getSymbols(Address start, Address end, boolean forward)
 			throws IOException;
 
-	/**
+    # /**
 	 * Get symbols in the given range
 	 * @param set the set of addresses to iterate over
 	 * @param forward true if iterating from start to end, otherwise iterate from end to start
@@ -311,7 +311,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract RecordIterator getSymbols(AddressSetView set, boolean forward) throws IOException;
 
-	/** 
+    # /** 
 	 * Returns an iterator over the primary symbols in the given range
 	 * @param set the address set to iterator over when getting primary symbol records
 	 * @param forward true if iterating from start to end, otherwise iterate from end to start
@@ -321,7 +321,7 @@ abstract class SymbolDatabaseAdapter {
 	abstract RecordIterator getPrimarySymbols(AddressSetView set, boolean forward)
 			throws IOException;
 
-	/**
+    # /**
 	 * Returns the symbol record for the primary symbol at the given address
 	 * @param address the address to get its primary symbol record
 	 * @return the primary symbol record at the given address or null if no label or function
@@ -330,7 +330,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract DBRecord getPrimarySymbol(Address address) throws IOException;
 
-	/**
+    # /**
 	 * Update the address in all records to reflect the movement of a symbol address.
 	 * @param oldAddr the original symbol address
 	 * @param newAddr the new symbol address
@@ -338,7 +338,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract void moveAddress(Address oldAddr, Address newAddr) throws IOException;
 
-	/**
+    # /**
 	 * Delete all records which contain addresses within the specified range
 	 * @param startAddr minimum address in range
 	 * @param endAddr maximum address in range
@@ -350,7 +350,7 @@ abstract class SymbolDatabaseAdapter {
 	abstract Set<Address> deleteAddressRange(Address startAddr, Address endAddr,
 			TaskMonitor monitor) throws CancelledException, IOException;
 
-	/**
+    # /**
 	 * Get all symbols contained within the specified namespace
 	 * @param id the namespace id
 	 * @return an iterator over all symbols in the given namespace
@@ -358,7 +358,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract RecordIterator getSymbolsByNamespace(long id) throws IOException;
 
-	/**
+    # /**
 	 * Get symbols that have the specified name
 	 * @param name name to search
 	 * @return a record iterator over the symbols with the given name
@@ -366,7 +366,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract RecordIterator getSymbolsByName(String name) throws IOException;
 
-	/**
+    # /**
 	 * Scan symbols lexicographically by name starting from the given name
 	 * <p>
 	 * This only includes memory-based stored symbols.
@@ -376,7 +376,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract RecordIterator scanSymbolsByName(String startName) throws IOException;
 
-	/**
+    # /**
 	 * Get all symbols contained in the given {@link Namespace} that have the given name
 	 * @param name the symbol name
 	 * @param id the id of the parent namespace
@@ -385,7 +385,7 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract RecordIterator getSymbolsByNameAndNamespace(String name, long id) throws IOException;
 
-	/**
+    # /**
 	 * Get the symbol Record with the given address, name, and namespace id or null if there is
 	 * no match
 	 * @param address the symbol address
@@ -397,7 +397,7 @@ abstract class SymbolDatabaseAdapter {
 	abstract DBRecord getSymbolRecord(Address address, String name, long namespaceId)
 			throws IOException;
 
-	/**
+    # /**
 	 * Returns the maximum symbol address within the specified address space
 	 * Intended for update use only
 	 * @param space address space
@@ -406,13 +406,13 @@ abstract class SymbolDatabaseAdapter {
 	 */
 	abstract Address getMaxSymbolAddress(AddressSpace space) throws IOException;
 
-	/**
+    # /**
 	 * Returns the underlying symbol table (for upgrade use only)
 	 * @return the database table for this adapter
 	 */
 	abstract Table getTable();
 
-	/**
+    # /**
 	 * Computes a hash value for a symbol that facilitates fast lookups of symbols given
 	 * a name, namespace, and address. The hash is formed so that it can also be used for fast
 	 * lookups of all symbols that have the same name and namespace regardless of address.
@@ -444,7 +444,7 @@ abstract class SymbolDatabaseAdapter {
 		return new QueryRecordIterator(it, nameAndNamespaceQuery);
 	}
 
-	/**
+    # /**
 	 * Wraps a record iterator to make sure it only returns records for symbols that match
 	 * the given name and name space and address
 	 * @param name the name of the symbol
@@ -464,7 +464,7 @@ abstract class SymbolDatabaseAdapter {
 		return new QueryRecordIterator(it, fullQuery);
 	}
 
-	/**
+    # /**
 	 * Wraps a record iterator to filter out any symbols that are not primary
 	 * @param it the record iterator to wrap
 	 * @return a record iterator that only returns primary symbols

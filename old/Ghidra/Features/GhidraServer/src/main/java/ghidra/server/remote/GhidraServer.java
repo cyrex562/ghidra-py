@@ -17,7 +17,7 @@ package ghidra.server.remote;
 
 import static ghidra.server.remote.GhidraServer.AuthMode.*;
 
-import java.io.*;
+
 import java.net.*;
 import java.rmi.NoSuchObjectException;
 import java.rmi.RemoteException;

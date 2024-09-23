@@ -15,7 +15,7 @@
  */
 package ghidra;
 
-import java.io.*;
+
 import java.lang.reflect.Constructor;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

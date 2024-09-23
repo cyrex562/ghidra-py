@@ -17,7 +17,7 @@ package help.screenshot;
 
 import static ghidra.util.datastruct.Duo.Side.*;
 
-import java.io.IOException;
+
 
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;

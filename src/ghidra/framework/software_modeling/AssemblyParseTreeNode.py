@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.tree;
 
 import java.io.PrintStream;
@@ -21,13 +21,13 @@ import ghidra.app.plugin.assembler.sleigh.grammars.AssemblyGrammar;
 import ghidra.app.plugin.assembler.sleigh.symbol.AssemblySymbol;
 
 # /**
- * A node in a parse tree
- */
+# * A node in a parse tree
+# */
 public abstract class AssemblyParseTreeNode {
 	protected AssemblyParseBranch parent = null;
 	protected final AssemblyGrammar grammar;
 
-	/**
+    # /**
 	 * Construct a node for a tree parsed by the given grammar
 	 * 
 	 * @param grammar the grammar
@@ -36,7 +36,7 @@ public abstract class AssemblyParseTreeNode {
 		this.grammar = grammar;
 	}
 
-	/**
+    # /**
 	 * Get the symbol for which this node is substituted
 	 * 
 	 * <p>
@@ -47,7 +47,7 @@ public abstract class AssemblyParseTreeNode {
 	 */
 	public abstract AssemblySymbol getSym();
 
-	/**
+    # /**
 	 * Get the branch which contains this node
 	 * 
 	 * @return
@@ -56,7 +56,7 @@ public abstract class AssemblyParseTreeNode {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Set the branch which contains this node
 	 * 
 	 * @param parent
@@ -66,7 +66,7 @@ public abstract class AssemblyParseTreeNode {
 		this.parent = parent;
 	}
 
-	/**
+    # /**
 	 * For debugging: Display this parse tree via the given stream
 	 * 
 	 * @param out the stream
@@ -75,7 +75,7 @@ public abstract class AssemblyParseTreeNode {
 		print(out, "");
 	}
 
-	/**
+    # /**
 	 * For debugging: Display the tree with the given indent
 	 * 
 	 * @param out the stream
@@ -83,7 +83,7 @@ public abstract class AssemblyParseTreeNode {
 	 */
 	protected abstract void print(PrintStream out, String indent);
 
-	/**
+    # /**
 	 * Get the grammar used to parse the tree
 	 * 
 	 * @return the grammar
@@ -92,7 +92,7 @@ public abstract class AssemblyParseTreeNode {
 		return grammar;
 	}
 
-	/**
+    # /**
 	 * Generate the string that this node parsed
 	 * 
 	 * @return the string

@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.DBRecord;
@@ -31,8 +31,8 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Structure database implementation.
- */
+# * Structure database implementation.
+# */
 class StructureDB extends CompositeDB implements StructureInternal {
 
 	private int structLength;
@@ -85,7 +85,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Eliminate use of old trailing flex-array specification which is now specified using a
 	 * zero-element array.  Due to the specification of a new array datatype this must handle two
 	 * cases when an old flex-array component is exists:
@@ -543,7 +543,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Removes a defined component at the specified index from the components list without any 
 	 * alteration to other components and removes parent association for component datatype.
 	 * @param index defined component index
@@ -556,7 +556,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		return dtc;
 	}
 
-	/**
+    # /**
 	 * Removes a defined component without any alteration to other components or the components 
 	 * list and removes parent association for component datatype.
 	 * @param dtc datatype component
@@ -567,7 +567,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		removeComponentRecord(dtc.getKey());
 	}
 
-	/**
+    # /**
 	 * Removes a defined component at the specified index.
 	 * <p>
 	 * If this corresponds to a zero-length or bit-field component it will be cleared without an
@@ -802,7 +802,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Create copy of structure for target data type manager (source archive information is
 	 * discarded).
 	 * <p>
@@ -821,7 +821,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		return struct;
 	}
 
-	/**
+    # /**
 	 * Create cloned structure for target data type manager preserving source archive information.
 	 * <p>
 	 * WARNING! cloning non-packed structures which contain bitfields can produce invalid results
@@ -933,7 +933,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Backup from specified defined-component index to the first component which contains the
 	 * specified offset.
 	 *
@@ -955,7 +955,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		return index;
 	}
 
-	/**
+    # /**
 	 * Identify defined-component index of the first non-zero-length component which contains the
 	 * specified offset. If only zero-length components exist, the last zero-length component which
 	 * contains the offset will be returned.
@@ -977,7 +977,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		return index;
 	}
 
-	/**
+    # /**
 	 * Advance from specified defined-component index to the last component which contains the
 	 * specified offset.
 	 *
@@ -1175,7 +1175,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate an undefined component following a binary search across the defined components.
 	 * @param offset the offset within this structure which was searched for
 	 * @param missingComponentIndex the defined component binary search index result (must be
@@ -1321,7 +1321,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Perform component replacement(s)
 	 * @param replacedComponents ordered list of components to be replaced
 	 * @param offset offset of component replacement
@@ -1585,7 +1585,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Replaces the internal components of this structure with components of the given structure.
 	 *
 	 * @param dataType the structure to get the component information from.
@@ -1620,7 +1620,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Replaces the internal components of this structure with components of the given structure
 	 * including packing and alignment settings.
 	 *
@@ -1813,7 +1813,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the available space for an existing defined component in relation to the next defined
 	 * component or the end of the structure.  Method should be used in conjunction with
 	 * {@link #consumeBytesAfter(int, int)} and/or {@link #shiftOffsets(int, int, int)} for
@@ -2046,7 +2046,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		return isEquivalent(dt, null);
 	}
 
-	/**
+    # /**
 	 * Adjust length of specified component (by index) by consuming available undefined
 	 * bytes upto the specified number of bytes (numBytes).  The associated component record will
 	 * be updated without adjusting structure last modified or providing notification.
@@ -2116,7 +2116,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		dtc.updateRecord(false);
 	}
 
-	/**
+    # /**
 	 * Check for available undefined bytes within a non-packed structure for a component update
 	 * with the specified ordinal.
 	 * @param lastOrdinalReplacedOrUpdated the ordinal of a component to be updated or the last
@@ -2143,7 +2143,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Replace the specified components with a new component containing the specified data type.
 	 * If {@link DataType#DEFAULT} is specified as the resolvedDataType only a clear operation
 	 * is performed.
@@ -2253,7 +2253,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		return newDtc;
 	}
 
-	/**
+    # /**
 	 * Gets the number of Undefined bytes beginning at the indicated component ordinal. Undefined
 	 * bytes that have a field name or comment specified are also included.
 	 *
@@ -2422,7 +2422,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform structure member repack. Perform lazy update of stored alignment introduced with v5
 	 * adapter.
 	 */
@@ -2466,7 +2466,7 @@ class StructureDB extends CompositeDB implements StructureInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Updates non-packed component ordinals and numComponents.
 	 * If numComponents changes record update will be performed
 	 * with new timestamp.

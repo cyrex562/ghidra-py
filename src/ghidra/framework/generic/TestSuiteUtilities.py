@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-import java.io.*;
+
 import java.lang.reflect.Modifier;
 import java.util.*;
 import java.util.jar.JarEntry;
@@ -41,7 +41,7 @@ public class TestSuiteUtilities {
 		}
 	}
 	
-	/**
+    # /**
 	 * Build JUnit test suite for the specified package.
 	 * TestSuite includes sub-TestSuites for each sub-package.
 	 * @param pkgName the java package name
@@ -51,7 +51,7 @@ public class TestSuiteUtilities {
 		return getTestSuite(pkgName, true);
 	}
 	
-	/**
+    # /**
 	 * Build JUnit test suite for the specified package only.
 	 * @param pkgName the java package name
 	 * @return test suite
@@ -507,7 +507,7 @@ public class TestSuiteUtilities {
     	return dir;
     }
 
-	/**
+    # /**
 	 * Command-line utilities.
 	 * <p>
 	 * Parameter usage:

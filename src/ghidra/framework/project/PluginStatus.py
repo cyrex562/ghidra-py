@@ -20,7 +20,7 @@ public enum PluginStatus {
 	STABLE("Useable, but not fully tested or documented"),
 	UNSTABLE("This plugin is under Development. Use of this plugin is not recommended."),
 	HIDDEN("This plugin is not available via the plugin configuration GUI"),
-	/**
+    # /**
 	 * Developers should include in the plugin description the version when the plugin became
 	 * deprecated and, if subject to removal, the version that removal is expected.
 	 */

@@ -79,7 +79,7 @@ public class PdbAddressManager {
 		isInitialized = false;
 	}
 
-	/**
+    # /**
 	 * Manager
 	 * @param applicatorArg {@link DefaultPdbApplicator} for which this class is working.
 	 * @param imageBaseArg Address from which all other addresses are based.
@@ -109,7 +109,7 @@ public class PdbAddressManager {
 		isInitialized = true;
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if already initialized
 	 * @return {@code true}" if initialized
 	 */
@@ -117,7 +117,7 @@ public class PdbAddressManager {
 		return isInitialized;
 	}
 
-	/**
+    # /**
 	 * Returns the Address for the given symbol.  If the {@link PdbApplicatorOptions}
 	 * Address Remap option is turned on is turned on, it will attempt to map the address to a
 	 * new address in the current program.
@@ -129,7 +129,7 @@ public class PdbAddressManager {
 		return getAddress(symbol.getSegment(), symbol.getOffset());
 	}
 
-	/**
+    # /**
 	 * Returns the Address for the given section and offset.  If the {@link PdbApplicatorOptions}
 	 * Address Remap option is turned on is turned on, it will attempt to map the address to a
 	 * new address in the current program.
@@ -146,7 +146,7 @@ public class PdbAddressManager {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Returns the Address for the given section and offset.  If the {@link PdbApplicatorOptions}
 	 * Address Remap option is turned on is turned on, it will attempt to map the address to a
 	 * new address in the current program.
@@ -158,7 +158,7 @@ public class PdbAddressManager {
 		return getRawAddress(symbol.getSegment(), symbol.getOffset());
 	}
 
-	/**
+    # /**
 	 * Returns the Address for the given section and offset.  Will attempt to map the address
 	 * to a new address if the {@link PdbApplicatorOptions}
 	 * @param segment The segment
@@ -171,7 +171,7 @@ public class PdbAddressManager {
 		return addressCalculator.getAddress(segment, offset);
 	}
 
-	/**
+    # /**
 	 * Returns the Address for the given section and offset.  Will attempt to map the address
 	 * to a new address if the {@link PdbApplicatorOptions}
 	 * @param segment The segment
@@ -235,7 +235,7 @@ public class PdbAddressManager {
 		return to + (relativeVirtualAddress - from);
 	}
 
-	/**
+    # /**
 	 * Returns the Address of an existing symbol for the query address, where the mapping is
 	 * derived by using a the address of a PDB symbol as the key and finding the address of
 	 * a symbol in the program of the same "unique" name. This is accomplished using public
@@ -247,7 +247,7 @@ public class PdbAddressManager {
 		return remapAddressByAddress.getOrDefault(address, address);
 	}
 
-	/**
+    # /**
 	 * Returns the primary symbol for the address, as determined at the start of PDB processing
 	 * before apply any PDB symbols.
 	 * @param address the {@link Address}
@@ -257,7 +257,7 @@ public class PdbAddressManager {
 		return primarySymbolByAddress.get(address);
 	}
 
-	/**
+    # /**
 	 * Indicate to the {@link PdbAddressManager} that a new symbol with the given name has the
 	 * associated address.  This allows the PdbAddressManager to create and organize the
 	 * re-mapped address and supply them.  Also returns the address of the pre-existing symbol
@@ -273,7 +273,7 @@ public class PdbAddressManager {
 		return existingAddress;
 	}
 
-	/**
+    # /**
 	 * Method for callee to add a Memory Group symbol to the Memory Group list.
 	 * @param symbol the symbol.
 	 */
@@ -281,7 +281,7 @@ public class PdbAddressManager {
 		memoryGroupRefinement.add(symbol);
 	}
 
-	/**
+    # /**
 	 * Method for callee to add a Memory Section symbol to the Memory Section list.
 	 * @param symbol the symbol.
 	 */
@@ -289,7 +289,7 @@ public class PdbAddressManager {
 		memorySectionRefinement.add(symbol);
 	}
 
-	/**
+    # /**
 	 * Dumps memory section refinement to log.
 	 * @throws CancelledException Upon user cancellation
 	 */
@@ -351,7 +351,7 @@ public class PdbAddressManager {
 //		}
 //	}
 
-	/**
+    # /**
 	 * Determines memory blocks
 	 * @throws CancelledException upon user cancellation
 	 */
@@ -376,7 +376,7 @@ public class PdbAddressManager {
 
 	//==============================================================================================
 	//==============================================================================================
-	/**
+    # /**
 	 * Filling in the maps as indicated by their descriptions.
 	 * @throws PdbException If Program is null;
 	 */
@@ -408,7 +408,7 @@ public class PdbAddressManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the address for the symbol name.  If the symbol name did not exist within the
 	 * program when the list was being populated or if the name was seen at more than one address,
 	 * then null is returned
@@ -438,7 +438,7 @@ public class PdbAddressManager {
 		remapAddressByAddress.put(EXTERNAL_ADDRESS, EXTERNAL_ADDRESS);
 	}
 
-	/**
+    # /**
 	 * Write the mapped address for a query address, where where the mapping is
 	 *  derived by using a the address of a PDB symbol as the key and finding the address of
 	 *  a symbol in the program of the same "unique" name. This is accomplished using public
@@ -460,7 +460,7 @@ public class PdbAddressManager {
 
 	//==============================================================================================
 	//==============================================================================================
-	/**
+    # /**
 	 * Dumps memory section refinement to log.
 	 * @throws CancelledException Upon user cancellation
 	 */
@@ -486,7 +486,7 @@ public class PdbAddressManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Dumps group section refinement to log.
 	 * @throws CancelledException Upon user cancellation
 	 */
@@ -519,7 +519,7 @@ public class PdbAddressManager {
 	//==============================================================================================
 	// TODO: This is not complete... It was a research thought, which might get looked at in the
 	// future.
-	/**
+    # /**
 	 * Tries to align section/segment information of the PDB in {@link SegmentMapDescription} from
 	 * the {@link PdbDebugInfo} header substream with the memory blocks of the
 	 * {@link Program}.  Initializes the lookup table to be used for processing the PDB.
@@ -549,7 +549,7 @@ public class PdbAddressManager {
 		Memory mem = program.getMemory();
 		MemoryBlock[] blocks = mem.getBlocks();
 		List<SegmentMapDescription> segmentMapList = debugInfo.getSegmentMapList();
-		/**
+	    # /**
 		 * Program has additional "Headers" block set up by the {@link PeLoader}.
 		 */
 		int progIndexLimit = blocks.length;

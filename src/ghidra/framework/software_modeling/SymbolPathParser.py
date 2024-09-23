@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.util;
 
 import java.util.ArrayList;
@@ -23,16 +23,16 @@ import org.apache.commons.lang3.StringUtils;
 import ghidra.program.model.symbol.Namespace;
 
 # /**
- * A parser for breaking down namespaces in the presence of complicating factors such
- *  as templates.
- * <P>
- * For example, if a SymbolPath is constructed with "foo&lt;int, blah::hah&gt;::bar::baz",
- * then "baz" is the name of a symbol in the "bar" namespace, which is in the
- * "foo&lt;int, blah::hah&gt;" namespace.
- */
+# * A parser for breaking down namespaces in the presence of complicating factors such
+# *  as templates.
+# * <P>
+# * For example, if a SymbolPath is constructed with "foo&lt;int, blah::hah&gt;::bar::baz",
+# * then "baz" is the name of a symbol in the "bar" namespace, which is in the
+# * "foo&lt;int, blah::hah&gt;" namespace.
+# */
 public class SymbolPathParser {
 
-	/**
+    # /**
 	 * Parses a String pathname into its constituent namespace and name components.
 	 * The list does not contain the global namespace, which is implied, but then
 	 * has each more deeply nested namespace contained in order in the list, followed
@@ -44,7 +44,7 @@ public class SymbolPathParser {
 		return parse(name, true);
 	}
 
-	/**
+    # /**
 	 * Parses a String pathname into its constituent namespace and name components.
 	 * The list does not contain the global namespace, which is implied, but then
 	 * has each more deeply nested namespace contained in order in the list, followed
@@ -81,7 +81,7 @@ public class SymbolPathParser {
 		return !name.contains(Namespace.DELIMITER);
 	}
 
-	/**
+    # /**
 	 * Naive parsing that assumes evenly matched angle brackets (templates) with no operator
 	 * overloading that contains these and no other rule breakers.
 	 * @param name The input String to be parsed.
@@ -140,7 +140,7 @@ public class SymbolPathParser {
 	}
 
 	// TODO: in progress.
-//	/**
+//    # /**
 //	 * More complicated parsing that takes into account:
 //	 * <LI> overloaded operators that use angle brackets
 //	 * <LI> templated overloaded operators that use angle brackets

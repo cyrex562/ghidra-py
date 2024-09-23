@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.ibootim;
 
-import java.io.*;
+
 import java.util.*;
 
 import javax.swing.Icon;

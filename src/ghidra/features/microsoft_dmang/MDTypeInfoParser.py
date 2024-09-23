@@ -33,7 +33,7 @@ public class MDTypeInfoParser {
 	//
 	// }
 
-	/**
+    # /**
 	 * This method parses the data sequence to determine the appropriate MDTypeInfo
 	 *  to continue parsing.  The method can be recursive, so rttiNum is passed into
 	 *  the recursion.
@@ -265,7 +265,7 @@ public class MDTypeInfoParser {
 		return typeInfo;
 	}
 
-	/**
+    # /**
 	 * This method handles MDTypeInfo that begin with the '$' character.  The method is
 	 *  a natural place to break the processing to reduce the complexity of the calling
 	 *  method's switch statement.

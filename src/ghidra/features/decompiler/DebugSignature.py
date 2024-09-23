@@ -33,21 +33,21 @@ import ghidra.program.model.pcode.DecoderException;
 public abstract class DebugSignature {
 	public int hash;		// The underlying 32-bit hash of the feature
 
-	/**
+    # /**
 	 * Decode the feature from a stream.
 	 * @param decoder is the stream decoder
 	 * @throws DecoderException for problems reading the stream
 	 */
 	public abstract void decode(Decoder decoder) throws DecoderException;
 
-	/**
+    # /**
 	 * Write a brief description of this feature to the given StringBuffer.
 	 * @param language is the underlying language of the function
 	 * @param buf is the given StringBuffer
 	 */
 	public abstract void printRaw(Language language, StringBuffer buf);
 
-	/**
+    # /**
 	 * Decode an array of features from the stream. Collectively, the features make up
 	 * a "feature vector" for a specific function.  Each feature is returned as a separate descriptive object.
 	 * @param decoder is the stream decoder

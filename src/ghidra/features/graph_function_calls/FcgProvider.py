@@ -65,7 +65,7 @@ import util.CollectionUtils;
 public class FcgProvider
 		extends VisualGraphComponentProvider<FcgVertex, FcgEdge, FunctionCallGraph> {
 
-	/** A limit past which we will not attempt to display references for a given node */
+    # /** A limit past which we will not attempt to display references for a given node */
 	public static final int MAX_REFERENCES = 100;
 
 	private static final String TOOLBAR_GROUP_A = "A";
@@ -990,7 +990,7 @@ public class FcgProvider
 		updater.scheduleViewChangeJob(job);
 	}
 
-	/**
+    # /**
 	 * Called when new vertices are added to the graph to ensure that known edges between any
 	 * level of the graph get added as the associated vertices are added to the graph.  This
 	 * is needed because we don't add all known edges for a single vertex when it is added, as

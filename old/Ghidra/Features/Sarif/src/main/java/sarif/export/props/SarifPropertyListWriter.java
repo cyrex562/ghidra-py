@@ -15,7 +15,7 @@
  */
 package sarif.export.props;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.Collections;
 import java.util.List;

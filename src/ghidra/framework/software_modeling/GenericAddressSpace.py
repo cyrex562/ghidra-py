@@ -1,28 +1,28 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.address;
 
 # /**
- * Generic implementation of the AddressSpace interface.
- */
+# * Generic implementation of the AddressSpace interface.
+# */
 public class GenericAddressSpace extends AbstractAddressSpace {
 
 	private final String name;
 
-	/**
+    # /**
 	 * Constructs a new GenericAddress space with the given name, bit size, type
 	 * and unique value.
 	 * 
@@ -40,7 +40,7 @@ public class GenericAddressSpace extends AbstractAddressSpace {
 		this(name, size, 1, type, unique);
 	}
 
-	/**
+    # /**
 	 * Constructs a new GenericAddress space with the given name, bit size, type
 	 * and unique value.
 	 * 
@@ -61,7 +61,7 @@ public class GenericAddressSpace extends AbstractAddressSpace {
 		setShowSpaceName(showSpaceName);
 	}
 
-	/**
+    # /**
 	 * Constructs a new GenericAddress space with the given name, bit size, type
 	 * and unique value.
 	 * 
@@ -93,7 +93,7 @@ public class GenericAddressSpace extends AbstractAddressSpace {
 		return name;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSpace#getAddress(long)
 	 */
 	@Override
@@ -101,7 +101,7 @@ public class GenericAddressSpace extends AbstractAddressSpace {
 		return new GenericAddress(this, offset);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSpace#getAddressInThisSpaceOnly(long)
 	 */
 	@Override
@@ -109,7 +109,7 @@ public class GenericAddressSpace extends AbstractAddressSpace {
 		return new GenericAddress(this, offset);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AbstractAddressSpace#getUncheckedAddress(long)
 	 */
 	@Override

@@ -30,7 +30,7 @@ public class SymbolServerInstanceCreatorRegistry {
 	private static final SymbolServerInstanceCreatorRegistry instance =
 		new SymbolServerInstanceCreatorRegistry();
 
-	/**
+    # /**
 	 * A static singleton pre-configured with the default symbol server implementations.
 	 * 
 	 * @return static singleton {@link SymbolServerInstanceCreatorRegistry} instance.
@@ -46,7 +46,7 @@ public class SymbolServerInstanceCreatorRegistry {
 		registerDefaultSymbolServerInstanceCreators();
 	}
 
-	/**
+    # /**
 	 * Registers a new SymbolServer implementation so that instances of 
 	 * it can be created by the user and saved / restored from preferences.
 	 *  
@@ -67,7 +67,7 @@ public class SymbolServerInstanceCreatorRegistry {
 		symbolServerInstanceCreatorsByPriority.put(priority, symbolServerInstanceCreatorInfo);
 	}
 
-	/**
+    # /**
 	 * Converts a list of symbol server location strings to a list of SymbolServer instances.
 	 * 
 	 * @param locationStrings list of symbol server location strings
@@ -88,7 +88,7 @@ public class SymbolServerInstanceCreatorRegistry {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Creates a new SymbolServer instance, using the registered SymbolServer types.
 	 * 
 	 * @param symbolServerLocationString SymbolServer location - see {@link SymbolServer#getName()}
@@ -103,7 +103,7 @@ public class SymbolServerInstanceCreatorRegistry {
 			SymbolServer.class);
 	}
 
-	/**
+    # /**
 	 * Creates a new SymbolServer instance, using the registered SymbolServer types.
 	 * 
 	 * @param symbolServerLocationString SymbolServer location - see {@link SymbolServer#getName()}
@@ -143,7 +143,7 @@ public class SymbolServerInstanceCreatorRegistry {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Creates a {@link SymbolServerInstanceCreatorContext} that is not bound to a Program.
 	 * 
 	 * @return new {@link SymbolServerInstanceCreatorContext}
@@ -152,7 +152,7 @@ public class SymbolServerInstanceCreatorRegistry {
 		return new SymbolServerInstanceCreatorContext(this);
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link SymbolServerInstanceCreatorContext} that is bound to a Program.
 	 * 
 	 * @param program Ghidra program
@@ -173,14 +173,14 @@ public class SymbolServerInstanceCreatorRegistry {
 			(loc, context) -> new LocalSymbolStore(new File(loc)));
 	}
 
-	/**
+    # /**
 	 * Functional interface that creates a new {@link SymbolServer} instance using a 
 	 * location string and a context instance.
 	 * <p>
 	 * See {@link #createSymbolServerFromLocationString(String, SymbolServerInstanceCreatorContext)}
 	 */
 	public interface SymbolServerInstanceCreator {
-		/**
+	    # /**
 		 * Creates a new {@link SymbolServer} instance using the specified location string
 		 * and the context available in the symbolServerInstanceCreatorContext.
 		 * 

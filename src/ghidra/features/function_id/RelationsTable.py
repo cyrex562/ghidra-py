@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.db;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.feature.fid.hash.FidHashQuad;
@@ -35,7 +35,7 @@ public class RelationsTable {
 	Table inferiorTable;
 	Table superiorTable;
 
-	/**
+    # /**
 	 * Creates or attaches a relations table.
 	 * @param handle the database handle
 	 * @param create whether to create or attach
@@ -51,7 +51,7 @@ public class RelationsTable {
 		handle.createTable(SUPERIOR_RELATIONS_TABLE, SCHEMA);
 	}
 
-	/**
+    # /**
 	 * Creates a relation in the database from caller (superior) to callee (inferior) with
 	 * the designated relation type.
 	 * @param superiorFunction the caller function
@@ -73,7 +73,7 @@ public class RelationsTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates only an inferior relation, used for special distinguishing parent relationships with
 	 * common functions
 	 * @param superiorFunction is the special parent
@@ -88,7 +88,7 @@ public class RelationsTable {
 		inferiorTable.putRecord(inferiorRecord);
 	}
 
-	/**
+    # /**
 	 * Return true if a relation exists, between a superior (caller) function and a
 	 * full hash representing the inferior (callee) function.
 	 * @param superiorFunction the caller function
@@ -104,7 +104,7 @@ public class RelationsTable {
 		return (record != null);
 	}
 
-	/**
+    # /**
 	 * Returns true if a relation exists, between an inferior (callee) function and a
 	 * full hash representing the superior (caller) function.
 	 * @param superiorFunction a hash representing the caller function

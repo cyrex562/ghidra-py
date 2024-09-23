@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.lzss;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
@@ -25,7 +25,7 @@ public class LzssCompressionHeader implements StructConverter {
 
 	public static final int PROBE_BYTES_NEEDED = 8; // sizeof(signature) + sizeof(compressionType)
 
-	/**
+    # /**
 	 * Returns true if the bytes have the magic signature of a LzssCompressionHeader.
 	 * 
 	 * @param startBytes byte array

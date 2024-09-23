@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.strings;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
-import java.io.IOException;
+
 import java.lang.Character.UnicodeScript;
 import java.nio.charset.Charset;
 import java.util.*;

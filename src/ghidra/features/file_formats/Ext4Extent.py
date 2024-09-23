@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
@@ -55,7 +55,7 @@ public class Ext4Extent implements StructConverter {
 		return ee_start_lo;
 	}
 
-	/**
+    # /**
 	 * Returns the number of blocks this extent contains.
 	 * 
 	 * @return number of blocks in this extent
@@ -64,7 +64,7 @@ public class Ext4Extent implements StructConverter {
 		return Short.toUnsignedInt(ee_len);
 	}
 
-	/**
+    # /**
 	 * Returns the stream block number of where this extent starts.
 	 *  
 	 * @return block number (in the constructed stream) of this extent
@@ -73,7 +73,7 @@ public class Ext4Extent implements StructConverter {
 		return Integer.toUnsignedLong(ee_block);
 	}
 
-	/**
+    # /**
 	 * Returns the block number of where the data for this extent is stored.
 	 * 
 	 * @return starting block number of where data for this extent is stored

@@ -32,7 +32,7 @@ public abstract class AbstractModifierMsType extends AbstractMsType {
 	protected boolean isVolatile;
 	protected boolean isUnaligned;
 
-	/**
+    # /**
 	 * Constructor from PdbByteReader for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -41,7 +41,7 @@ public abstract class AbstractModifierMsType extends AbstractMsType {
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Constructor from values for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param modifiedRecordNumber RecordNumber of modified type.
@@ -58,7 +58,7 @@ public abstract class AbstractModifierMsType extends AbstractMsType {
 		this.isUnaligned = isUnaligned;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the type that this modifier type modifies.
 	 * @return The record number of the type that is this modifier type modifies.
 	 */
@@ -66,7 +66,7 @@ public abstract class AbstractModifierMsType extends AbstractMsType {
 		return modifiedRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link AbstractMsType} that this modifier type modifies.
 	 * @return The type that is modified.
 	 */
@@ -85,7 +85,7 @@ public abstract class AbstractModifierMsType extends AbstractMsType {
 		builder.insert(0, modBuilder);
 	}
 
-	/**
+    # /**
 	 * Internal method to process the integer attributes value into individual components.
 	 * @param atts Attributes field to be parsed/processed.
 	 */

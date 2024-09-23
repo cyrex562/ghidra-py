@@ -16,7 +16,7 @@
 package ghidra.feature.vt.gui.actions;
 
 import java.awt.event.InputEvent;
-import java.io.IOException;
+
 
 import javax.swing.Icon;
 

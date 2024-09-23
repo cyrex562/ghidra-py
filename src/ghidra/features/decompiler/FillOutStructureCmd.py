@@ -44,7 +44,7 @@ public class FillOutStructureCmd extends BackgroundCommand<Program> {
 	private DecompileOptions decompileOptions;
 	private ProgramLocation location;
 
-	/**
+    # /**
 	 * Constructor.
 	 * 
 	 * @param location the current program location.  Supported location types include:
@@ -139,7 +139,7 @@ public class FillOutStructureCmd extends BackgroundCommand<Program> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Retype the HighVariable to a given data-type to the database
 	 * @param var is the decompiler variable to retype
 	 * @param newDt is the data-type
@@ -161,7 +161,7 @@ public class FillOutStructureCmd extends BackgroundCommand<Program> {
 		}
 	}
 
-	/**
+    # /**
 	 * Compute the storage address associated with a particular Location
 	 * @param function is the function owning the location
 	 * @return the corresponding storage address or null

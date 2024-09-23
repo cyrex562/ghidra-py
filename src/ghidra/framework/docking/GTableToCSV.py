@@ -17,7 +17,7 @@ package docking.widgets.table;
 
 import java.awt.Component;
 import java.awt.Container;
-import java.io.*;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;

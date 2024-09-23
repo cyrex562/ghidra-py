@@ -28,7 +28,7 @@ import ghidra.util.exception.AssertException;
 
 public class DateUtils {
 
-	/** Example: Oct 31, 2019 03:24 PM */
+    # /** Example: Oct 31, 2019 03:24 PM */
 	private static final String DATE_TIME_FORMAT_STRING = "MMM dd, yyyy hh:mm a";
 	private static final String DATE_FORMAT_STRING = "MM/dd/yyyy";
 	private static final String TIME_FORMAT_STRING = "h:mm";
@@ -216,7 +216,7 @@ public class DateUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Formats the given date into a string.   This is in contrast to
 	 * {@link #formatDateTimestamp(Date)}, which will also return the time portion of the date.
 	 *
@@ -227,7 +227,7 @@ public class DateUtils {
 		return DATE_FORMATTER.format(toLocalDate(date));
 	}
 
-	/**
+    # /**
 	 * Formats the given date into a string that contains the date and time.  This is in
 	 * contrast to {@link #formatDate(Date)}, which only returns a date string.
 	 *
@@ -238,7 +238,7 @@ public class DateUtils {
 		return DATE_TIME_FORMATTER.format(toLocalDate(date));
 	}
 
-	/**
+    # /**
 	 * Returns the current local time zone time-of-day as simple time string.
 	 * See {@value #TIME_FORMAT_STRING}.
 	 *
@@ -248,7 +248,7 @@ public class DateUtils {
 		return TIME_FORMATTER.format(toLocalDate(new Date()));
 	}
 
-	/**
+    # /**
 	 * Converts the given Data to a LocalDate
 	 * @param d the date
 	 * @return the local date
@@ -262,7 +262,7 @@ public class DateUtils {
 		//@formatter:on
 	}
 
-	/**
+    # /**
 	 * Converts the given LocalDate to a date
 	 * @param ld the local date
 	 * @return the date
@@ -276,7 +276,7 @@ public class DateUtils {
 		//@formatter:on
 	}
 
-	/**
+    # /**
 	 * Returns a date for the given numeric values
 	 *
 	 * @param year the year
@@ -289,7 +289,7 @@ public class DateUtils {
 		return cal.getTime();
 	}
 
-	/**
+    # /**
 	 * Returns all days between the two dates.  Returns 0 if the same date is passed for both
 	 * parameters.  The order of the dates does not matter.
 	 *
@@ -301,7 +301,7 @@ public class DateUtils {
 		return doGetDaysBetween(date1, date2, DateUtils::anyDay);
 	}
 
-	/**
+    # /**
 	 * Returns the <b>business days</b> between the two dates.  Returns 0 if the same date is
 	 * passed for both parameters.  The order of the dates does not matter.
 	 *
@@ -345,7 +345,7 @@ public class DateUtils {
 		return days;
 	}
 
-	/**
+    # /**
 	 * Formats a millisecond duration as a English string expressing the number of
 	 * hours, minutes and seconds in the duration
 	 *

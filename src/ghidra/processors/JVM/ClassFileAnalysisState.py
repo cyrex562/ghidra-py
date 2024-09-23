@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 
 import ghidra.app.plugin.core.analysis.TransientProgramProperties;
@@ -54,14 +54,14 @@ public class ClassFileAnalysisState {
 		classFile = new ClassFileJava(reader);
 	}
 
-	/**
+    # /**
 	 * @return the class file information {@link ClassFileJava}
 	 */
 	public ClassFileJava getClassFile() {
 		return classFile;
 	}
 
-	/**
+    # /**
 	 * Recover the description of the method at a specific address.
 	 * @param addr is the given Address
 	 * @return the MethodInfoJava describing the method, or null if no method is found at the address
@@ -81,7 +81,7 @@ public class ClassFileAnalysisState {
 		return methodMap.get(addr);
 	}
 
-	/**
+    # /**
 	 * Walk through the {@link MethodInfoJava} objects in {@link ClassFileJava} and
 	 * create a map from Address to the corresponding object
 	 * @throws MemoryAccessException
@@ -99,7 +99,7 @@ public class ClassFileAnalysisState {
 		}
 	}
 
-	/**
+    # /**
 	 * Return persistent <code>ClassFileAnalysisState</code> which corresponds to the specified
 	 * program instance.
 	 * 

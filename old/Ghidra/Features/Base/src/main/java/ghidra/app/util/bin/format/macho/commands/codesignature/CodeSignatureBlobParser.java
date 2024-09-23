@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.macho.commands.codesignature;
 
 import static ghidra.app.util.bin.format.macho.commands.codesignature.CodeSignatureConstants.*;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 

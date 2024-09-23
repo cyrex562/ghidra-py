@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.projectdata.actions;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

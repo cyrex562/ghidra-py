@@ -35,7 +35,7 @@ public class PatternEvaluationStats {
 
 	private List<PatternEvalRowObject> rowObjects;
 
-	/**
+    # /**
 	 * Create a new {@link PatternEvaluationStats} object with all counters initialized to 0.
 	 */
 	public PatternEvaluationStats() {
@@ -50,7 +50,7 @@ public class PatternEvaluationStats {
 		rowObjects = new ArrayList<>();
 	}
 
-	/**
+    # /**
 	 * Get the number of matches which are true positives
 	 * @return number of true positives
 	 */
@@ -62,7 +62,7 @@ public class PatternEvaluationStats {
 		truePositives++;
 	}
 
-	/**
+    # /**
 	 * Get the number of matches which are possible functions starts in defined code
 	 * @return number of possible starts in code
 	 */
@@ -74,7 +74,7 @@ public class PatternEvaluationStats {
 		possible_start_code++;
 	}
 
-	/**
+    # /**
 	 * Get the number of matches which are false positives since they have the wrong incoming flow to
 	 * be a function start
 	 * @return number of false positives due to incorrect flow
@@ -87,7 +87,7 @@ public class PatternEvaluationStats {
 		fp_wrong_flow++;
 	}
 
-	/**
+    # /**
 	 * Get the number of matches which are false positives since they occur within a defined instruction
 	 * @return number of matches within instructions
 	 */
@@ -99,7 +99,7 @@ public class PatternEvaluationStats {
 		fp_misaligned++;
 	}
 
-	/**
+    # /**
 	 * Get the number of matches which are false positives since they occur in defined data
 	 * @return number of matches within data
 	 */
@@ -111,7 +111,7 @@ public class PatternEvaluationStats {
 		fp_data++;
 	}
 
-	/**
+    # /**
 	 * Get the number of matches which occur within undefined bytes
 	 * @return number of matches within undefined bytes
 	 */
@@ -127,7 +127,7 @@ public class PatternEvaluationStats {
 		contextConflicts++;
 	}
 
-	/**
+    # /**
 	 * Get the number of matches which are false positives due to context register conflicts
 	 * @return number of matches which are context register conflicts
 	 */
@@ -135,7 +135,7 @@ public class PatternEvaluationStats {
 		return contextConflicts++;
 	}
 
-	/**
+    # /**
 	 * Returns the {@code PatternEvalRowObject}s
 	 * @return the {@code PatternEvalRowObject}s
 	 */
@@ -143,7 +143,7 @@ public class PatternEvaluationStats {
 		return rowObjects;
 	}
 
-	/**
+    # /**
 	 * Add a {@code PatternEvalRowObject} and update the stats appropriately
 	 * @param rowObject the {@link PatternEvalRowObject} to add
 	 */
@@ -183,7 +183,7 @@ public class PatternEvaluationStats {
 
 	}
 
-	/**
+    # /**
 	 * Returns the number of pre-pattern hits when only pre-patterns are being evaluated
 	 * @return number of pre-pattern hits
 	 */

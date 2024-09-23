@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.byteviewer;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.io.*;
+
 import java.math.BigInteger;
 
 import org.junit.*;

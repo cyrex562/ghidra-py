@@ -103,7 +103,7 @@ public class HighLevelShaderLanguageMsType extends AbstractMsType {
 	private byte[] data;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -123,7 +123,7 @@ public class HighLevelShaderLanguageMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the subtype for this class.
 	 * @return Record number of the subtype for this class.
 	 */
@@ -131,7 +131,7 @@ public class HighLevelShaderLanguageMsType extends AbstractMsType {
 		return subtypeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Kind} attribute.
 	 * @return The {@link Kind} attribute.
 	 */
@@ -139,7 +139,7 @@ public class HighLevelShaderLanguageMsType extends AbstractMsType {
 		return kind;
 	}
 
-	/**
+    # /**
 	 * Returns {@code byte[]} of the additional Data for this class.
 	 * @return Additional data for this class.
 	 */

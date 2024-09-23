@@ -116,14 +116,14 @@ public class FloatArray implements Array, Serializable {
         System.arraycopy(floats,0,newfloats,0,len);
         floats = newfloats;
     }
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.Array#getLastNonEmptyIndex()
 	 */
     public int getLastNonEmptyIndex() {
         return lastNonZeroIndex;
     }
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.Array#copyDataTo(int, DataTable, int, int)
 	 */

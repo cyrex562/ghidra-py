@@ -37,7 +37,7 @@ public class FidFunctionRecordTableModel extends AbstractSortedTableModel<Functi
 	private final FidQueryService service;
 	private List<FunctionRecord> functionRecords;
 
-	/**
+    # /**
 	 * Create the table model.
 	 * @param service the FID database service
 	 * @param functionRecords the function records to display
@@ -53,7 +53,7 @@ public class FidFunctionRecordTableModel extends AbstractSortedTableModel<Functi
 		return "Fid Functions";
 	}
 
-	/**
+    # /**
 	 * Returns if this model is sortable (true).
 	 */
 	@Override
@@ -61,7 +61,7 @@ public class FidFunctionRecordTableModel extends AbstractSortedTableModel<Functi
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the number of columns (WARN_COL + 1).
 	 */
 	@Override
@@ -69,7 +69,7 @@ public class FidFunctionRecordTableModel extends AbstractSortedTableModel<Functi
 		return WARN_COL + 1;
 	}
 
-	/**
+    # /**
 	 * Returns the model data.
 	 */
 	@Override
@@ -82,7 +82,7 @@ public class FidFunctionRecordTableModel extends AbstractSortedTableModel<Functi
 		fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Returns the column class, which is a string (unless we're on the hash sizes which is integer).
 	 */
 	@Override
@@ -93,7 +93,7 @@ public class FidFunctionRecordTableModel extends AbstractSortedTableModel<Functi
 		return String.class;
 	}
 
-	/**
+    # /**
 	 * Returns the column name.
 	 */
 	@Override
@@ -121,7 +121,7 @@ public class FidFunctionRecordTableModel extends AbstractSortedTableModel<Functi
 		return "<<UNKNOWN>>";
 	}
 
-	/**
+    # /**
 	 * Returns the column value.
 	 */
 	@Override

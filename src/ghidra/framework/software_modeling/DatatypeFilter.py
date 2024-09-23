@@ -17,7 +17,7 @@ package ghidra.program.model.lang.protorules;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.pcode.Encoder;
@@ -31,41 +31,41 @@ import ghidra.xml.*;
  */
 public interface DatatypeFilter {
 
-	/**
+    # /**
 	 * Make a copy of this filter
 	 * @return the new copy
 	 */
 	public DatatypeFilter clone();
 
-	/**
+    # /**
 	 * Test if the given filter is configured and performs identically to this
 	 * @param op is the given filter
 	 * @return true if the two filters are equivalent
 	 */
 	public boolean isEquivalent(DatatypeFilter op);
 
-	/**
+    # /**
 	 * Test whether the given data-type belongs to this filter's data-type class
 	 * @param dt is the given data-type to test
 	 * @return true if the data-type is in the class, false otherwise
 	 */
 	public boolean filter(DataType dt);
 
-	/**
+    # /**
 	 * Encode this filter and its configuration to a stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for problems writing to the stream
 	 */
 	public void encode(Encoder encoder) throws IOException;
 
-	/**
+    # /**
 	 * Configure details of the data-type class being filtered from the given stream
 	 * @param parser is the given stream decoder
 	 * @throws XmlParseException if there are problems with the stream
 	 */
 	public void restoreXml(XmlPullParser parser) throws XmlParseException;
 
-	/**
+    # /**
 	 * Instantiate a filter from the given stream.
 	 * @param parser is the given stream decoder
 	 * @return the new data-type filter instance

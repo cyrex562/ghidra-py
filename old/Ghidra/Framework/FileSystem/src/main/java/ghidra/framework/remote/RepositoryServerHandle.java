@@ -15,7 +15,7 @@
  */
 package ghidra.framework.remote;
 
-import java.io.IOException;
+
 
 import ghidra.util.exception.DuplicateFileException;
 import ghidra.util.exception.UserAccessException;

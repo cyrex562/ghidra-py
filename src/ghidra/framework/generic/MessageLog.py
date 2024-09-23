@@ -32,7 +32,7 @@ import utilities.util.reflection.ReflectionUtilities;
  * later used as the primary error message when reporting to the user.
  */
 public class MessageLog {
-	/**
+    # /**
 	 * The default number of messages to store before clipping
 	 */
 	private final static int MAX_COUNT = 500;
@@ -42,7 +42,7 @@ public class MessageLog {
 	private int count;
 	private String statusMsg = StringUtils.EMPTY;
 
-	/**
+    # /**
 	 * Copies the contents of one message log into this one
 	 * @param log the log to copy from
 	 */
@@ -52,7 +52,7 @@ public class MessageLog {
 		}
 	}
 
-	/**
+    # /**
 	 * Appends the message to the log
 	 * @param message the message
 	 */
@@ -60,7 +60,7 @@ public class MessageLog {
 		add(message);
 	}
 
-	/**
+    # /**
 	 * Appends the message to the log
 	 *
 	 * @param originator the originator of the message 
@@ -75,7 +75,7 @@ public class MessageLog {
 		}
 	}
 
-	/**
+    # /**
 	 * Appends the message and line number to the log
 	 * @param lineNum the line number that generated the message
 	 * @param message the message
@@ -84,7 +84,7 @@ public class MessageLog {
 		add("Line #" + lineNum + " - " + message);
 	}
 
-	/**
+    # /**
 	 * Appends the exception to the log
 	 * @param t the exception to append to the log
 	 */
@@ -93,7 +93,7 @@ public class MessageLog {
 		add(asString);
 	}
 
-	/**
+    # /**
 	 * Readable method for appending error messages to the log.
 	 *
 	 * <p>Currently does nothing different than {@link #appendMsg(String, String)}.
@@ -108,7 +108,7 @@ public class MessageLog {
 		appendMsg(originator, message);
 	}
 
-	/**
+    # /**
 	 * Returns true if this log has messages
 	 * @return true if this log has messages
 	 */
@@ -116,7 +116,7 @@ public class MessageLog {
 		return count > 0;
 	}
 
-	/**
+    # /**
 	 * Clears all messages from this log and resets the count
 	 */
 	public void clear() {
@@ -124,7 +124,7 @@ public class MessageLog {
 		count = 0;
 	}
 
-	/**
+    # /**
 	 * Stores a status message that can be used elsewhere (i.e., populate warning dialogs)
 	 * @param status the status message
 	 */
@@ -132,14 +132,14 @@ public class MessageLog {
 		statusMsg = status;
 	}
 
-	/**
+    # /**
 	 * Clear status message
 	 */
 	public void clearStatus() {
 		statusMsg = StringUtils.EMPTY;
 	}
 
-	/**
+    # /**
 	 * Returns a stored status message
 	 * @return stored status message
 	 */
@@ -152,7 +152,7 @@ public class MessageLog {
 		return toStringWithWarning();
 	}
 
-	/**
+    # /**
 	 * Writes this log's contents to the application log
 	 * @param owner the owning class whose name will appear in the log message
 	 * @param messageHeader the message header that will appear before the log messages

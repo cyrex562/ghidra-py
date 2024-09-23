@@ -19,7 +19,7 @@ import java.awt.Component;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.beans.PropertyEditorSupport;
-import java.io.*;
+
 import java.util.*;
 
 import javax.swing.*;

@@ -39,7 +39,7 @@ public class CreateManualMatchAndAcceptAction extends AbstractCreateManualMatchA
 	public static final Icon ICON =
 		new GIcon("icon.version.tracking.action.create.and.accept.manual.match");
 
-	/**
+    # /**
 	 * Creates a manual match action that also does an accept of that match.
 	 * @param controller the controller for the version tracking session.
 	 */

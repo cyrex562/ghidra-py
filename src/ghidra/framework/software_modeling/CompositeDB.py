@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.Objects;
 
 import db.DBRecord;
@@ -35,7 +35,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 	protected CompositeDBAdapter compositeAdapter;
 	protected ComponentDBAdapter componentAdapter;
 
-	/**
+    # /**
 	 * Constructor for a composite data type (structure or union).
 	 * 
 	 * @param dataMgr          the data type manager containing this data type.
@@ -54,7 +54,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		initialize();
 	}
 
-	/**
+    # /**
 	 * Perform initialization of instance fields during instantiation or instance
 	 * refresh
 	 */
@@ -65,7 +65,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		return getLength();
 	}
 
-	/**
+    # /**
 	 * Get the preferred length for a new component. If type is dynamic length must be specified
 	 * (assuming {@link Dynamic#canSpecifyLength()} is true).  Otherwise, when packing is enabled
 	 * the {@link DataType#getAlignedLength()} is returned; when packing disabled for Union
@@ -116,7 +116,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		return DataTypeComponentImpl.getPreferredComponentLength(dataType, length);
 	}
 
-	/**
+    # /**
 	 * Get the preferred length for a new component. If type is dynamic length must be specified
 	 * (assuming {@link Dynamic#canSpecifyLength()} is true).  Otherwise, when packing is enabled
 	 * the {@link DataType#getAlignedLength()} is returned; when packing disabled for Union
@@ -149,7 +149,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		return SettingsImpl.NO_SETTINGS;
 	}
 
-	/**
+    # /**
 	 * Handle replacement of datatype which may impact bitfield datatype.
 	 * 
 	 * @param bitfieldComponent bitfield component
@@ -244,7 +244,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 	@Override
 	public abstract boolean hasLanguageDependantLength();
 
-	/**
+    # /**
 	 * Determine if this composite should be treated as undefined.
 	 * <p>
 	 * A composite is considered undefined with a zero-length when it has 
@@ -313,7 +313,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * This method throws an exception if the indicated data type is an ancestor of
 	 * this data type. In other words, the specified data type has a component or
 	 * sub-component containing this data type.
@@ -354,7 +354,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		dataMgr.getSettingsAdapter().removeAllSettingsRecords(compKey);
 	}
 
-	/**
+    # /**
 	 * This method throws an exception if the indicated data type is not a valid
 	 * data type for a component of this composite data type.  If the DEFAULT 
 	 * datatype is specified when unsupported an Undefined1 will be returned 
@@ -495,7 +495,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		return alignment;
 	}
 
-	/**
+    # /**
 	 * Get computed alignment and optionally update record.  May only be invoked with
 	 * lock acquired.
 	 * @param updateRecord if true record should be updated without timestamp change
@@ -526,7 +526,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		}
 	}
 
-	/**
+    # /**
 	 * Repack components within this composite based on the current packing, alignment 
 	 * and {@link DataOrganization} settings.  Non-packed Structures: change detection
 	 * is limited to component count and length is assumed to already be correct.
@@ -722,7 +722,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		setStoredPackingValue(enabled ? DEFAULT_PACKING : NO_PACKING);
 	}
 
-	/**
+    # /**
 	 * Set packing and alignment settings.  Record is modified but it is not written to the
 	 * database and no repacking or notification is performed.
 	 * @param composite instance whose packing and alignment are to be copied
@@ -740,7 +740,7 @@ abstract class CompositeDB extends DataTypeDB implements CompositeInternal {
 		return CompositeInternal.toString(this);
 	}
 
-	/**
+    # /**
 	 * Perform any neccessary component adjustments based on sizes of components differing from 
 	 * their specification which may be influenced by the data organization.  This method
 	 * does not consider alignment changes and should be used on non-packed structures only.

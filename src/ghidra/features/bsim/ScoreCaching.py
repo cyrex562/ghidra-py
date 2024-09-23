@@ -29,7 +29,7 @@ import ghidra.features.bsim.query.description.ExecutableRecord;
  */
 public interface ScoreCaching {
 
-	/**
+    # /**
 	 * Pre-load self-scores for a set of executables.
 	 * @param exeSet is the set of executables to check
 	 * @param missing (optional - may be null) will contain the list of exes missing a score
@@ -38,7 +38,7 @@ public interface ScoreCaching {
 	public void prefetchScores(Set<ExecutableRecord> exeSet, List<ExecutableRecord> missing)
 			throws LSHException;
 
-	/**
+    # /**
 	 * Retrieve the self-significance score for a given executable
 	 * @param md5 is the 32-character md5 string specifying the executable
 	 * @return the corresponding score
@@ -46,7 +46,7 @@ public interface ScoreCaching {
 	 */
 	public float getSelfScore(String md5) throws LSHException;
 
-	/**
+    # /**
 	 * Commit a new self-significance score for an executable
 	 * @param md5 is the 32-character md5 string specifying the executable
 	 * @param score is the score to commit
@@ -54,21 +54,21 @@ public interface ScoreCaching {
 	 */
 	public void commitSelfScore(String md5, float score) throws LSHException;
 
-	/**
+    # /**
 	 * @return similarity threshold configured with this cache
 	 *          OR return -1 if the score is unconfigured
 	 * @throws LSHException for problems retrieving configuration
 	 */
 	public double getSimThreshold() throws LSHException;
 
-	/**
+    # /**
 	 * @return significance threshold configured with this cache
 	 *          OR return -1 if the score is unconfigured
 	 * @throws LSHException for problems retrieving configuration
 	 */
 	public double getSigThreshold() throws LSHException;
 
-	/**
+    # /**
 	 * Clear out any existing scores, and reset to an empty database
 	 * @param simThresh is new similarity threshold to associate with scores
 	 * @param sigThresh is new significance threshold to associate with scores

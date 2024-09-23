@@ -21,7 +21,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 # /**
  * NOTE: THE FOLLOWING TEXT EXTRACTED FROM JVMS7.PDF
@@ -43,7 +43,7 @@ public class ConstantPoolFloatInfo extends AbstractConstantPoolInfoJava {
 		bytes = reader.readNextInt();
 	}
 
-	/**
+    # /**
 	 * The bytes item of the CONSTANT_Float_info structure represents the value
 	 * of the float constant in IEEE 754 floating-point single format (?2.3.2). The
 	 * bytes of the single format representation are stored in big-endian (high byte

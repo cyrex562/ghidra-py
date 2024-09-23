@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.omf;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.app.util.bin.format.omf.AbstractOmfRecordFactory;

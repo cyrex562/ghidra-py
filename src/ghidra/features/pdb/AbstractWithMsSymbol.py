@@ -32,7 +32,7 @@ public abstract class AbstractWithMsSymbol extends AbstractMsSymbol implements A
 	protected int segment;
 	protected String expression;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -52,7 +52,7 @@ public abstract class AbstractWithMsSymbol extends AbstractMsSymbol implements A
 		reader.align4();
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -60,7 +60,7 @@ public abstract class AbstractWithMsSymbol extends AbstractMsSymbol implements A
 		return parentPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -68,7 +68,7 @@ public abstract class AbstractWithMsSymbol extends AbstractMsSymbol implements A
 		return endPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the length.
 	 * @return Length.
 	 */
@@ -76,7 +76,7 @@ public abstract class AbstractWithMsSymbol extends AbstractMsSymbol implements A
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -85,7 +85,7 @@ public abstract class AbstractWithMsSymbol extends AbstractMsSymbol implements A
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -94,7 +94,7 @@ public abstract class AbstractWithMsSymbol extends AbstractMsSymbol implements A
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the expression.
 	 * @return Expression.
 	 */

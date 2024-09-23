@@ -21,7 +21,7 @@ import ghidra.app.script.GhidraScript;
 import ghidra.program.model.listing.*;
 import ghidra.program.util.ProgramSelection;
 
-import java.io.*;
+
 
 public class CountAndSaveStrings extends GhidraScript {
 	private Listing listing;

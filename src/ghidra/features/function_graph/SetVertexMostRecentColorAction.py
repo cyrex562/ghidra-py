@@ -173,7 +173,7 @@ public class SetVertexMostRecentColorAction extends MultiActionDockingAction {
 			}
 
 			@Override
-			/**
+		    # /**
 			 * This is used by our button above to show a popup.  We need to override the
 			 * value here, since
 			 */

@@ -26,7 +26,7 @@ import ghidra.util.classfinder.ExtensionPoint;
  */
 public interface BuiltInDataType extends DataType, ExtensionPoint {
 
-	/**
+    # /**
 	 * Generate a suitable C-type declaration for this data-type as a #define or typedef.
 	 * Since the length of a Dynamic datatype is unknown, such datatypes
 	 * should only be referenced in C via a pointer.  FactoryDataTypes
@@ -38,7 +38,7 @@ public interface BuiltInDataType extends DataType, ExtensionPoint {
 	 */
 	public String getCTypeDeclaration(DataOrganization dataOrganization);
 
-	/**
+    # /**
 	 * Set the default settings for this data type.
 	 * <br>
 	 * NOTE: This method is reserved for internal DB use.

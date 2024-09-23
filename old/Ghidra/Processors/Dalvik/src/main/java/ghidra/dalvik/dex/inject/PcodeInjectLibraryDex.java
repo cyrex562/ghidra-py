@@ -15,7 +15,7 @@
  */
 package ghidra.dalvik.dex.inject;
 
-import java.io.IOException;
+
 
 import ghidra.app.plugin.processors.sleigh.SleighLanguage;
 import ghidra.program.model.lang.*;

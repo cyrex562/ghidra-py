@@ -16,7 +16,7 @@
 package ghidra.framework.store.local;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.framework.store.*;
 import ghidra.util.PropertyFile;

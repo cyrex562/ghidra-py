@@ -17,7 +17,7 @@ package ghidra.app.util.exporter;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-import java.io.IOException;
+
 
 /**
  * {@code LinkedDomainFile} corresponds to a {@link DomainFile} contained within a

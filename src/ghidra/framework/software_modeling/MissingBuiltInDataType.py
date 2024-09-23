@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.app.plugin.core.datamgr.archive.BuiltInSourceArchive;
@@ -23,16 +23,16 @@ import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.exception.DuplicateNameException;
 
 # /**
- * Provides an implementation of a data type that stands-in for a missing Built-In data type.
- *  <P> 
- *  This field is not meant to be loaded by the {@link ClassSearcher}, hence the X in the name.
- */
+# * Provides an implementation of a data type that stands-in for a missing Built-In data type.
+# *  <P> 
+# *  This field is not meant to be loaded by the {@link ClassSearcher}, hence the X in the name.
+# */
 public class MissingBuiltInDataType extends DataTypeImpl implements Dynamic {
 
 	private String missingBuiltInClassPath;
 	private String missingBuiltInName;
 
-	/**
+    # /**
 	 * Construct a Missing Data Type
 	 * @param path category path
 	 * @param missingBuiltInName name of missing built-in datatype for which this will standin for.
@@ -46,21 +46,21 @@ public class MissingBuiltInDataType extends DataTypeImpl implements Dynamic {
 		this.missingBuiltInClassPath = missingBuiltInClassPath;
 	}
 
-	/**
+    # /**
 	 * set the category for this data type
 	 */
 	protected void setCategory() {
 		return;
 	}
 
-	/**
+    # /**
 	 * Returns name of missing built-in datatype for which this type is standing-in for
 	 */
 	public String getMissingBuiltInName() {
 		return missingBuiltInName;
 	}
 
-	/**
+    # /**
 	 * Returns classpath of missing built-in datatype for which this type is standing-in for
 	 */
 	public String getMissingBuiltInClassPath() {
@@ -88,7 +88,7 @@ public class MissingBuiltInDataType extends DataTypeImpl implements Dynamic {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.Dynamic#getLength(ghidra.program.model.mem.MemBuffer, int)
 	 */
 	@Override
@@ -129,7 +129,7 @@ public class MissingBuiltInDataType extends DataTypeImpl implements Dynamic {
 			dtm);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#copy(ghidra.program.model.data.DataTypeManager)
 	 */
 	@Override
@@ -191,7 +191,7 @@ public class MissingBuiltInDataType extends DataTypeImpl implements Dynamic {
 		return NO_SOURCE_SYNC_TIME;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.BuiltInDataType#getCTypeDeclaration(ghidra.program.model.data.DataOrganization)
 	 */
 	@Override

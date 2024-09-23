@@ -48,7 +48,7 @@ public class JohnsonCircuitsAlgorithm<V, E extends GEdge<V>> {
 		this.accumulator = accumulator;
 	}
 
-	/**
+    # /**
 	 * Finds the circuits in the graph passed at construction time.
 	 * 
 	 * @param uniqueCircuits true signals to return only unique circuits, where no two 

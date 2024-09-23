@@ -33,7 +33,7 @@ public abstract class AbstractExpressionSolver<T extends PatternExpression> {
 
 	protected final DbgTimer dbg = DbgTimer.INACTIVE;
 
-	/**
+    # /**
 	 * Construct a solver that can solve expression of the given type
 	 * 
 	 * @param tcls the type of expressions it can solve
@@ -42,7 +42,7 @@ public abstract class AbstractExpressionSolver<T extends PatternExpression> {
 		this.tcls = tcls;
 	}
 
-	/**
+    # /**
 	 * Attempt to solve an expression for a given value
 	 * 
 	 * @param exp the expression to solve
@@ -57,7 +57,7 @@ public abstract class AbstractExpressionSolver<T extends PatternExpression> {
 			T exp, MaskedLong goal, Map<String, Long> vals, AssemblyResolvedPatterns cur,
 			Set<SolverHint> hints, String description) throws NeedsBackfillException;
 
-	/**
+    # /**
 	 * Attempt to get a constant value for the expression
 	 * 
 	 * @param exp the expression
@@ -68,7 +68,7 @@ public abstract class AbstractExpressionSolver<T extends PatternExpression> {
 	public abstract MaskedLong getValue(T exp, Map<String, Long> vals,
 			AssemblyResolvedPatterns cur) throws NeedsBackfillException;
 
-	/**
+    # /**
 	 * Determines the length of the subconstructor that would be returned had the expression not
 	 * depended on an undefined symbol.
 	 * 
@@ -80,7 +80,7 @@ public abstract class AbstractExpressionSolver<T extends PatternExpression> {
 	 */
 	public abstract int getInstructionLength(T exp);
 
-	/**
+    # /**
 	 * Compute the value of the expression given the (possibly-intermediate) resolution
 	 * 
 	 * @param exp the expression to evaluate
@@ -91,7 +91,7 @@ public abstract class AbstractExpressionSolver<T extends PatternExpression> {
 	public abstract MaskedLong valueForResolution(T exp, Map<String, Long> vals,
 			AssemblyResolvedPatterns rc);
 
-	/**
+    # /**
 	 * Register this particular solver with the general expression solver
 	 * 
 	 * @param general the general solver

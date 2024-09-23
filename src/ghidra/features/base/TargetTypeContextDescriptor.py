@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.swift.types;
 
-import java.io.IOException;
+
 import java.util.Map;
 
 import ghidra.app.util.bin.BinaryReader;

@@ -31,7 +31,7 @@ public interface CodeBlockModel {
 
 	public static final CodeBlock[] emptyBlockArray = new CodeBlock[0];
 	
-	/**
+    # /**
 	 * Returns the model name.
 	 * @return the model name
 	 */
@@ -111,7 +111,7 @@ public interface CodeBlockModel {
      */
     public int getNumDestinations(CodeBlock block, TaskMonitor monitor) throws CancelledException;
 
-	/**
+    # /**
      * Get the basic block model used by this model.
      */
     public CodeBlockModel getBasicBlockModel();
@@ -148,7 +148,7 @@ public interface CodeBlockModel {
      */
     public Program getProgram();
 
-	/**
+    # /**
 	 * Return true if this model allows overlapping of address sets for
 	 * the blocks it returns.
 	 * @return true if this model allows overlapping of address sets for

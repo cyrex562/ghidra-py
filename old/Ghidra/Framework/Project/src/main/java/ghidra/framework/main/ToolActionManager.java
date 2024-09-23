@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.Element;

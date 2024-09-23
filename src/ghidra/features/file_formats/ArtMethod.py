@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -148,7 +148,7 @@ public class ArtMethod implements StructConverter {
 				entry_point_from_quick_compiled_code_ = reader.readNextLong();
 			}
 		}
-		/** https://android.googlesource.com/platform/art/+/refs/heads/android10-release/runtime/art_method.h#741 */
+	    # /** https://android.googlesource.com/platform/art/+/refs/heads/android10-release/runtime/art_method.h#741 */
 		else if (ArtConstants.ART_VERSION_074.equals(artVersion)) {
 			declaring_class_ = reader.readNextInt();
 			access_flags_ = reader.readNextInt();
@@ -167,7 +167,7 @@ public class ArtMethod implements StructConverter {
 				entry_point_from_quick_compiled_code_ = reader.readNextLong();
 			}
 		}
-		/** https://android.googlesource.com/platform/art/+/refs/heads/android11-release/runtime/art_method.h#798 */
+	    # /** https://android.googlesource.com/platform/art/+/refs/heads/android11-release/runtime/art_method.h#798 */
 		else if (ArtConstants.ART_VERSION_085.equals(artVersion)) {
 			declaring_class_ = reader.readNextInt();
 			access_flags_ = reader.readNextInt();
@@ -186,7 +186,7 @@ public class ArtMethod implements StructConverter {
 				entry_point_from_quick_compiled_code_ = reader.readNextLong();
 			}
 		}
-		/** https://android.googlesource.com/platform/art/+/refs/heads/android12-release/runtime/art_method.h#787 */
+	    # /** https://android.googlesource.com/platform/art/+/refs/heads/android12-release/runtime/art_method.h#787 */
 		else if (ArtConstants.ART_VERSION_099.equals(artVersion)) {
 			declaring_class_ = reader.readNextInt();
 			access_flags_ = reader.readNextInt();
@@ -205,7 +205,7 @@ public class ArtMethod implements StructConverter {
 				entry_point_from_quick_compiled_code_ = reader.readNextLong();
 			}
 		}
-		/** https://android.googlesource.com/platform/art/+/refs/heads/android13-release/runtime/art_method.h#787 */
+	    # /** https://android.googlesource.com/platform/art/+/refs/heads/android13-release/runtime/art_method.h#787 */
 		else if (ArtConstants.ART_VERSION_106.equals(artVersion)) {
 			declaring_class_ = reader.readNextInt();
 			access_flags_ = reader.readNextInt();

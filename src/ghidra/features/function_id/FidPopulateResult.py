@@ -26,7 +26,7 @@ import ghidra.program.model.address.Address;
  * Implementation class for FidPopulateResult.
  */
 public class FidPopulateResult {
-	/**
+    # /**
 	 * The actual state representing what happened to the function.
 	 */
 	public static enum Disposition {
@@ -101,7 +101,7 @@ public class FidPopulateResult {
 		return libraryRecord;
 	}
 
-	/**
+    # /**
 	 * Returns a complete map of locations to dispositions.
 	 * @return a complete map of locations to dispositions
 	 */
@@ -109,7 +109,7 @@ public class FidPopulateResult {
 		return Collections.unmodifiableMap(extremeFailureMap);
 	}
 
-	/**
+    # /**
 	 * Returns how many functions in total were added to the library.
 	 * @return how many functions in total were added to the library
 	 */
@@ -117,7 +117,7 @@ public class FidPopulateResult {
 		return numIncluded;
 	}
 
-	/**
+    # /**
 	 * Returns how many functions in total were excluded from the library.
 	 * @return how many functions in total were excluded from the library
 	 */
@@ -125,7 +125,7 @@ public class FidPopulateResult {
 		return totalDisposition - numIncluded;
 	}
 
-	/**
+    # /**
 	 * Returns how many functions in total were considered for inclusion.
 	 * @return how many functions in total were considered for inclusion
 	 */
@@ -133,7 +133,7 @@ public class FidPopulateResult {
 		return totalDisposition;
 	}
 
-	/**
+    # /**
 	 * Returns a map of failed dispositions to their occurrence counts.
 	 * @return a map of failed dispositions to their occurrence counts
 	 */
@@ -150,7 +150,7 @@ public class FidPopulateResult {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Returns a list of symbols that could not be resolved in the end.
 	 * Note that the domain file and function entry point will be null for all these.
 	 * @return a list of symbols that could not be resolved in the end

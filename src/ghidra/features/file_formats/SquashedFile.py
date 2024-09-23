@@ -32,7 +32,7 @@ public class SquashedFile {
 	// The total uncompressed size of the file (-1 for directories)
 	private final long size;
 
-	/**
+    # /**
 	 * Represents a file or directory within a SquashFS archive
 	 * @param fileInode The inode representing this file/directory
 	 * @param tailEndFragment Fragment holding the tail end of the file

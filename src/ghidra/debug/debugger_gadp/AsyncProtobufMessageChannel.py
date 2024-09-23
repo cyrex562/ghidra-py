@@ -16,7 +16,7 @@
 package ghidra.dbg.gadp.util;
 
 import java.io.EOFException;
-import java.io.IOException;
+
 import java.nio.*;
 import java.nio.channels.AsynchronousByteChannel;
 import java.util.concurrent.CompletableFuture;

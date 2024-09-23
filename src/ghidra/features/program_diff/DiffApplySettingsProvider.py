@@ -114,7 +114,7 @@ public class DiffApplySettingsProvider extends ComponentProviderAdapter {
 		plugin.getTool().addLocalAction(this, new DiffMergeAllAction(this));
 	}
 
-	/**
+    # /**
 	 *  Create a panel for the user choices to indicate the filter settings.
 	 */
 	private void createChoices() {
@@ -255,7 +255,7 @@ public class DiffApplySettingsProvider extends ComponentProviderAdapter {
 		Collections.sort(choices);
 	}
 
-	/**
+    # /**
 	 *  Create a panel for the checkboxes to indicate the filter settings.
 	 */
 	private JComponent createApplyFilterPanel() {
@@ -309,7 +309,7 @@ public class DiffApplySettingsProvider extends ComponentProviderAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a copy of the merge filter for applying differences.
 	 * @return the current merge Filter settings.
 	 */
@@ -317,7 +317,7 @@ public class DiffApplySettingsProvider extends ComponentProviderAdapter {
 		return new ProgramMergeFilter(applyFilter);
 	}
 
-	/**
+    # /**
 	 * Sets the diff tool merge filter settings for applying differences.
 	 * @param filter the new apply Filter settings.
 	 */

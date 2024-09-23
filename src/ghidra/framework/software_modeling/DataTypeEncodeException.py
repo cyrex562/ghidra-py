@@ -47,7 +47,7 @@ public class DataTypeEncodeException extends UsrException {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param message the exception message
@@ -58,7 +58,7 @@ public class DataTypeEncodeException extends UsrException {
 		this(message, value, dt, null);
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param message the exception message
@@ -72,7 +72,7 @@ public class DataTypeEncodeException extends UsrException {
 		this.dt = dt;
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param value the requested value or representation
@@ -83,7 +83,7 @@ public class DataTypeEncodeException extends UsrException {
 		this(null, value, dt, cause);
 	}
 
-	/**
+    # /**
 	 * Get the requested value or representation
 	 * 
 	 * @return the requested value representation
@@ -92,7 +92,7 @@ public class DataTypeEncodeException extends UsrException {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Get the data type
 	 * 
 	 * @return the data type

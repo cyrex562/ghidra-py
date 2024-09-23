@@ -74,7 +74,7 @@ public class BSimServerTableModel extends GDynamicColumnTableModel<BSimServerInf
 		super.fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Get DB connection pool status for a specified server
 	 * @param serverInfo server info
 	 * @return connection pool status

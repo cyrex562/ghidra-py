@@ -23,13 +23,13 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.AbstractPdb;
  */
 public class BadMsType extends AbstractMsType implements MsTypeField {
 
-	/** This should not be a the PDB_ID value of a real AbstractMsType. */
+    # /** This should not be a the PDB_ID value of a real AbstractMsType. */
 	public static final int PDB_ID = 0xff01;
 
 	// Pdb ID  that had an issue;
 	int badPdbId;
 
-	/**
+    # /**
 	 * Constructor for this "Bad" type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param badPdbId The type ID for which an error occurred.

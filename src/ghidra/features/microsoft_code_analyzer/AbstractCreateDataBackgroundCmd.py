@@ -45,7 +45,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 	protected T model;
 	protected TaskMonitor monitor;
 
-	/**
+    # /**
 	 * Constructs an abstract command for applying a dataType, that extends this class,
 	 * at the address indicated by the model.
 	 * @param model the model for the data type
@@ -63,7 +63,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		this.applyOptions = applyOptions;
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a specific dataType at an address using the default 
 	 * data validation options and default data apply options.
 	 * @param name the name indicating the data type being created.
@@ -76,7 +76,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		this(name, address, count, new DataValidationOptions(), new DataApplyOptions());
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a specific dataType at an address.
 	 * @param name the name indicating the data type being created.
 	 * @param address the address where the data should be created using the data type.
@@ -110,14 +110,14 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the model that is used to validate and create the data type for this command.
 	 * @param program the program where this command is applying the data type.
 	 * @return the data type's model.
 	 */
 	protected abstract T createModel(Program program);
 
-	/**
+    # /**
 	 * Gets the data type that needs to be validated and created by this command.
 	 * @return the data type or null.
 	 */
@@ -127,7 +127,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		return model.getDataType();
 	}
 
-	/**
+    # /**
 	 * Creates the data type for this command and may also create referred to data types. 
 	 * Also creates references, symbols, and functions as indicated by the options.
 	 * @param program the program where this command will create the data type.
@@ -192,7 +192,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		}
 	}
 
-	/**
+    # /**
 	 * Creates data at this command's address using the data type obtained from the model.
 	 * <br>If you need to create data other than by using the data type returned from getDataType(),
 	 * you should override this method.
@@ -238,7 +238,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		return true;
 	}
 
-	/**
+    # /**
 	 * Check for data at the indicated address in the specified program and determine if it has
 	 * the desired data type.
 	 * @param dt the desired data type for the data
@@ -258,7 +258,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		return false;
 	}
 
-	/**
+    # /**
 	 * Creates references, symbols, and functions for this data type as indicated by the options.
 	 * @return true if all desired types of associated annotations were created.
 	 * @throws CancelledException is thrown if the user cancels this command.
@@ -270,7 +270,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 	protected abstract boolean createMarkup()
 			throws CancelledException, InvalidInputException, InvalidDataTypeException;
 
-	/**
+    # /**
 	 * Creates the associated data that is indicated by the model's data type components. 
 	 * Also creates references, symbols, and functions as indicated by the options.
 	 * @return true if all associated data was created that was desired.
@@ -279,7 +279,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 	 */
 	protected abstract boolean createAssociatedData() throws CancelledException;
 
-	/**
+    # /**
 	 * Creates an error message that the named type of data structure couldn't be created at the 
 	 * indicated address and outputs the error message to the log and also as a status message for 
 	 * this command. This also creates a bookmark with the error message at the indicated address.
@@ -293,7 +293,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		handleErrorMessage(program, dataName, dataAddress, bookmarkAddress, null);
 	}
 
-	/**
+    # /**
 	 * Creates an error message that the named type of data structure couldn't be created at the 
 	 * indicated address and outputs the error message to the log and also as a status message for 
 	 * this command. This also creates a bookmark with the error message at the indicated address.
@@ -312,7 +312,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		handleErrorMessage(program, bookmarkAddress, detailedMessage, message);
 	}
 
-	/**
+    # /**
 	 * Output the error message to the log and as a status message for this command. This also
 	 * creates a bookmark with the error message at the indicated address.
 	 * @param program the program where the error bookmark should be created.
@@ -323,7 +323,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		handleErrorMessage(program, bookmarkAddress, message, message);
 	}
 
-	/**
+    # /**
 	 * Output the error message to the log and output a possibly shorter status message for this 
 	 * command. This also creates a bookmark with the error message at the indicated address.
 	 * @param program the program where the error bookmark should be created.
@@ -341,7 +341,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		}
 	}
 
-	/**
+    # /**
 	 * Output the error message to the log and as a status message for this command.
 	 * @param message the error message.
 	 */
@@ -355,7 +355,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 				: ClearDataMode.CLEAR_ALL_UNDEFINED_CONFLICT_DATA;
 	}
 
-	/**
+    # /**
 	 * Get the address for the data item to be processed by the base implementation.
 	 * In general this is the initial model address set when the command was created.
 	 * 
@@ -365,7 +365,7 @@ public abstract class AbstractCreateDataBackgroundCmd<T extends AbstractCreateDa
 		return address;
 	}
 
-	/**
+    # /**
 	 * Set the address of the data item to be applied.
 	 * Can be used for sub classes that need to apply multiple data items.
 	 * 

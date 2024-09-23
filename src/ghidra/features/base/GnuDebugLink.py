@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.elf.info;
 
 import static ghidra.app.util.bin.StructConverter.DWORD;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.address.Address;

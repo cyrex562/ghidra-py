@@ -1,9 +1,9 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.reader;
 
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -282,7 +282,7 @@ public class DmgFileReader implements Closeable {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns the length of the given file system entry.
 	 * If the entry is actually a directory, then -1 is returned.
 	 */
@@ -307,7 +307,7 @@ public class DmgFileReader implements Closeable {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Convert path to string array.
 	 * 
 	 * For example, "/a/b/c.txt" will be converted to [ "a", "b", "c.txt" ].
@@ -324,7 +324,7 @@ public class DmgFileReader implements Closeable {
 		return temp;
 	}
 
-	/**
+    # /**
 	 * Returns the DMG file object for the corresponding path.
 	 * Path should contain the file system handler name.
 	 */

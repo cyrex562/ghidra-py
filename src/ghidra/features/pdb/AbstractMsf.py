@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 
-import java.io.IOException;
+
 import java.io.RandomAccessFile;
 import java.util.Objects;
 
@@ -133,7 +133,7 @@ public abstract class AbstractMsf implements Msf {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param byteProvider the ByteProvider providing bytes for the MSF
 	 * @param monitor the TaskMonitor
@@ -162,7 +162,7 @@ public abstract class AbstractMsf implements Msf {
 		create();
 	}
 
-	/**
+    # /**
 	 * Returns the filename
 	 * @return the filename
 	 */
@@ -171,7 +171,7 @@ public abstract class AbstractMsf implements Msf {
 		return filename;
 	}
 
-	/**
+    # /**
 	 * Returns the TaskMonitor
 	 * @return the monitor
 	 */
@@ -180,7 +180,7 @@ public abstract class AbstractMsf implements Msf {
 		return monitor;
 	}
 
-	/**
+    # /**
 	 * Check to see if this monitor has been canceled
 	 * @throws CancelledException if monitor has been cancelled
 	 */
@@ -189,7 +189,7 @@ public abstract class AbstractMsf implements Msf {
 		monitor.checkCancelled();
 	}
 
-	/**
+    # /**
 	 * Returns the page size employed by this {@link Msf}
 	 * @return page size
 	 */
@@ -198,7 +198,7 @@ public abstract class AbstractMsf implements Msf {
 		return pageSize;
 	}
 
-	/**
+    # /**
 	 * Returns the number of streams found in this {@link Msf}
 	 * @return number of streams
 	 */
@@ -207,7 +207,7 @@ public abstract class AbstractMsf implements Msf {
 		return streamTable.getNumStreams();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link MsfStream} specified by {@link Msf}
 	 * @param streamNumber the number of the Stream to return.  Must be less than the number
 	 *  of streams returned by {@link #getNumStreams()}
@@ -218,7 +218,7 @@ public abstract class AbstractMsf implements Msf {
 		return streamTable.getStream(streamNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the file reader
 	 * @return the file reader
 	 */
@@ -227,7 +227,7 @@ public abstract class AbstractMsf implements Msf {
 		return fileReader;
 	}
 
-	/**
+    # /**
 	 * Closes resources used by this {@link Msf}
 	 * @throws IOException under circumstances found when closing a {@link RandomAccessFile}
 	 */
@@ -238,7 +238,7 @@ public abstract class AbstractMsf implements Msf {
 		}
 	}
 
-	/**
+    # /**
 	 * Developer mechanism to locate stream and offset within the stream that contains the
 	 * absolute file offset
 	 * @param fileOffset the absolute file offset that we are trying to locate
@@ -261,7 +261,7 @@ public abstract class AbstractMsf implements Msf {
 	//==============================================================================================
 	// Class Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns Log2 value of the page size employed by this MSF
 	 * @return the Log2 value of the page size employed by this MSF
 	 */
@@ -270,7 +270,7 @@ public abstract class AbstractMsf implements Msf {
 		return log2PageSize;
 	}
 
-	/**
+    # /**
 	 * Returns the the mask used for masking off the upper bits of a value use to get the
 	 *  mod-page-size of the value (pageSizes must be power of two for this to work)
 	 * @return the mask
@@ -280,7 +280,7 @@ public abstract class AbstractMsf implements Msf {
 		return pageSizeModMask;
 	}
 
-	/**
+    # /**
 	 * Returns the number of pages found in sequence that compose the {@link MsfFreePageMap}
 	 * (for this {@link Msf}) when on disk
 	 * @return the number of sequential pages in the {@link MsfFreePageMap}
@@ -290,7 +290,7 @@ public abstract class AbstractMsf implements Msf {
 		return freePageMapNumSequentialPage;
 	}
 
-	/**
+    # /**
 	 * Returns the page number containing the header of this MSF file
 	 * @return the header page number
 	 */
@@ -299,7 +299,7 @@ public abstract class AbstractMsf implements Msf {
 		return HEADER_PAGE_NUMBER;
 	}
 
-	/**
+    # /**
 	 * Returns the stream number containing the directory of this MSF file
 	 * @return the directory stream number
 	 */
@@ -311,7 +311,7 @@ public abstract class AbstractMsf implements Msf {
 	//==============================================================================================
 	// Internal Data Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns the number of pages contained in this MSF file
 	 * @return the number of pages in this MSF
 	 */
@@ -320,7 +320,7 @@ public abstract class AbstractMsf implements Msf {
 		return numPages;
 	}
 
-	/**
+    # /**
 	 * Returns the first page number of the current Free Page Map
 	 * @return the first page number of the current Free Page Map
 	 */
@@ -329,7 +329,7 @@ public abstract class AbstractMsf implements Msf {
 		return currentFreePageMapFirstPageNumber;
 	}
 
-	/**
+    # /**
 	 * Performs required initialization of this class, needed before trying to read any
 	 *  Streams.  Initialization includes deserializing the remainder of the header as well
 	 *  as stream directory information

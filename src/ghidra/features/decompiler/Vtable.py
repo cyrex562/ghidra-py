@@ -368,7 +368,7 @@ public class Vtable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to determine if there are enough zeros to make a null poihnter and no
 	 * references into or out of the middle
 	 * 
@@ -382,7 +382,7 @@ public class Vtable {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given address contains a possible function pointer
 	 * 
 	 * @param address the given address
@@ -713,7 +713,7 @@ public class Vtable {
 
 	}
 
-	/**
+    # /**
 	 * Method to create a series of long data types from the given start address to
 	 * the given end address
 	 * 
@@ -740,7 +740,7 @@ public class Vtable {
 
 	}
 	
-	/**
+    # /**
 	 * Method to get address at address + offset
 	 * 
 	 * @param address the given address

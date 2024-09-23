@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.Element;
@@ -198,7 +198,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		dialog.showDialog();
 	}
 
-	/**
+    # /**
 	 * Get the default tools from the defaultTools location.
 	 */
 	private void addDefaultTools() {
@@ -265,7 +265,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		map.clear();
 	}
 
-	/**
+    # /**
 	 * Remove the action named toolName.
 	 * 
 	 * @param map map to search for the action
@@ -279,7 +279,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Pop up the connect tools dialog.
 	 */
 	private void connectTools() {
@@ -293,7 +293,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		toolConnectionDialog.setVisible(true); // dialog handles the connections
 	}
 
-	/**
+    # /**
 	 * Disable the connect tools if 1 or less than 1 tool is running.
 	 */
 	void enableConnectTools() {
@@ -308,7 +308,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		connectToolsAction.setEnabled(runningTools.length > 1);
 	}
 
-	/**
+    # /**
 	 * Create a new tool; pop up the manage plugins dialog.
 	 */
 	private void createNewTool() {
@@ -327,7 +327,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		runningTool.showConfig(true, true);
 	}
 
-	/**
+    # /**
 	 * ToolConfig was added to the project toolchest
 	 */
 	@Override
@@ -335,7 +335,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		populateToolMenus(plugin.getActiveProject());
 	}
 
-	/**
+    # /**
 	 * ToolSet was added to the project toolchest
 	 */
 	@Override
@@ -344,7 +344,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		toolTemplateAdded(toolChest.getToolTemplate(toolset.getName()));
 	}
 
-	/**
+    # /**
 	 * ToolConfig was removed from the project toolchest
 	 */
 	@Override
@@ -360,7 +360,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Create default actions as Place holders in the menu.
 	 */
 	private void createPlaceHolderActions() {
@@ -409,7 +409,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		tool.addAction(action);
 	}
 
-	/**
+    # /**
 	 * Pop up a file chooser dialog for the user to find the file to import as a
 	 * tool.
 	 */
@@ -452,7 +452,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Create the Template object and add it to the tool chest.
 	 */
 	private void addToolTemplate(InputStream instream, String path) {
@@ -475,7 +475,7 @@ class ToolActionManager implements ToolChestChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Add a menu for the given tool template.
 	 */
 	private void addConfig(ToolTemplate template) {
@@ -540,7 +540,7 @@ class ToolActionManager implements ToolChestChangeListener {
 	}
 
 	/////////////////////////////////////////////////////////////////////
-	/**
+    # /**
 	 * Subclass to set the help ID for the tool actions whose names are the same
 	 * as the tool name for run, delete, and export.
 	 *

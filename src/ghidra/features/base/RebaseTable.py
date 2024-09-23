@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.macho.commands.dyld;
 
 import static ghidra.app.util.bin.format.macho.commands.DyldInfoCommandConstants.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

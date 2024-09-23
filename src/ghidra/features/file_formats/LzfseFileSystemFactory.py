@@ -16,7 +16,7 @@
 package ghidra.file.formats.lzfse;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
@@ -95,7 +95,7 @@ public class LzfseFileSystemFactory
 		}
 	}
 
-	/**
+    # /**
 	 * Uses the native lzfse decompressor to decompress the given compressed file
 	 * 
 	 * @param compressedFile The lzfse-compressed {@link File file} to decompress

@@ -31,7 +31,7 @@ import ghidra.graph.GVertex;
  */
 public interface VisualVertex extends GVertex {
 
-	/**
+    # /**
 	 * Returns the component of this vertex.  This is used for rendering and interaction 
 	 * with the user.
 	 * 
@@ -39,7 +39,7 @@ public interface VisualVertex extends GVertex {
 	 */
 	public JComponent getComponent();
 
-	/**
+    # /**
 	 * Sets this vertex to be focused.   This differs from being selected in that multiple
 	 * vertices in a graph can be selected, but only one can be the focused vertex.
 	 * 
@@ -47,55 +47,55 @@ public interface VisualVertex extends GVertex {
 	 */
 	public void setFocused(boolean focused);
 
-	/**
+    # /**
 	 * Returns true if this vertex is focused (see {@link #setFocused(boolean)}
 	 * @return true if focused
 	 */
 	public boolean isFocused();
 
-	/**
+    # /**
 	 * Sets this vertex selected
 	 * 
 	 * @param selected true to select this vertex; false to de-select this vertex
 	 */
 	public void setSelected(boolean selected);
 
-	/**
+    # /**
 	 * Returns true if this vertex is selected
 	 * 
 	 * @return true if this vertex is selected 
 	 */
 	public boolean isSelected();
 
-	/**
+    # /**
 	 * Sets this vertex to be hovered
 	 * 
 	 * @param hovered true to be marked as hovered; false to be marked as not hovered
 	 */
 	public void setHovered(boolean hovered);
 
-	/**
+    # /**
 	 * Returns true if this vertex is being hovered by the mouse
 	 * 
 	 * @return true if this vertex is being hovered by the mouse
 	 */
 	public boolean isHovered();
 
-	/**
+    # /**
 	 * Sets the location of this vertex in the view
 	 * 
 	 * @param p the location of this vertex in the view
 	 */
 	public void setLocation(Point2D p);
 
-	/**
+    # /**
 	 * Returns the location of this vertex in the view
 	 * 
 	 * @return the location of this vertex in the view
 	 */
 	public Point2D getLocation();
 
-	/**
+    # /**
 	 * Returns true if the given component of this vertex is grabbable, which means that 
 	 * mouse drags on that component will move the vertex.   
 	 * 
@@ -107,7 +107,7 @@ public interface VisualVertex extends GVertex {
 	 */
 	public boolean isGrabbable(Component c);
 
-	/**
+    # /**
 	 * A dispose method that should be called when a vertex is reclaimed, never again to be 
 	 * used in a graph or display
 	 */
@@ -117,21 +117,21 @@ public interface VisualVertex extends GVertex {
 // Rendering Methods (these could be refactored into another object in the future)
 //==================================================================================================
 
-	/**
+    # /**
 	 * Sets the emphasis value for this vertex.  A value of 0 indicates no emphasis.
 	 * 
 	 * @param emphasisLevel the emphasis
 	 */
 	public void setEmphasis(double emphasisLevel);
 
-	/**
+    # /**
 	 * Returns the emphasis value of this vertex.  0 if not emphasized.
 	 * 
 	 * @return the emphasis value of this vertex.
 	 */
 	public double getEmphasis();
 
-	/**
+    # /**
 	 * Set the alpha, which determines how much of the vertex is visible/see through.  0 is 
 	 * completely transparent.  This attribute allows transitional for animations.
 	 * 
@@ -139,7 +139,7 @@ public interface VisualVertex extends GVertex {
 	 */
 	public void setAlpha(double alpha);
 
-	/**
+    # /**
 	* Get the alpha, which determines how much of the vertex is visible/see through.  0 is 
 	* completely transparent.  This attribute allows transitional for animations.
 	* 

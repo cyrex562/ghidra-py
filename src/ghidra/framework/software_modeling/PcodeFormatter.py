@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.util.pcode;
 
 import java.util.*;
@@ -25,7 +25,7 @@ import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.model.pcode.Varnode;
 
 public interface PcodeFormatter<T> {
-	/**
+    # /**
 	 * Format the p-code ops
 	 * 
 	 * @param language the language generating the p-code
@@ -36,7 +36,7 @@ public interface PcodeFormatter<T> {
 		return formatOps(language, language.getAddressFactory(), pcodeOps);
 	}
 
-	/**
+    # /**
 	 * Format the pcode ops with a specified {@link AddressFactory}.  For use when the 
 	 * pcode ops can reference program-specific address spaces.
 	 * 
@@ -50,7 +50,7 @@ public interface PcodeFormatter<T> {
 		return formatTemplates(language, getPcodeOpTemplates(addrFactory, pcodeOps));
 	}
 
-	/**
+    # /**
 	 * Format the p-code op templates
 	 * 
 	 * @param language the language generating the p-code
@@ -59,7 +59,7 @@ public interface PcodeFormatter<T> {
 	 */
 	T formatTemplates(Language language, List<OpTpl> pcodeOpTemplates);
 
-	/**
+    # /**
 	 * Convert flattened p-code ops into templates.
 	 * 
 	 * @param addrFactory the language's address factory
@@ -125,7 +125,7 @@ public interface PcodeFormatter<T> {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Create label OpTpl. Uses overloaded PcodeOp.PTRADD with input[0] = labelIndex
 	 * 
 	 * @param addrFactory

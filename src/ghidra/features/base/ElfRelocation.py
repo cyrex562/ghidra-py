@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf;
 
-import java.io.IOException;
+
 import java.lang.reflect.Constructor;
 
 import ghidra.app.util.bin.BinaryReader;

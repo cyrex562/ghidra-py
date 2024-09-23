@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.description;
 
-import java.io.*;
+
 import java.util.*;
 
 import generic.lsh.vector.LSHVectorFactory;
@@ -209,7 +209,7 @@ public class FunctionDescription implements Comparable<FunctionDescription> {
 		fwrite.append("</fdesc>\n");
 	}
 
-	/**
+    # /**
 	 * Update the boolean fields in -res- to true, for every field in -this- that needs to be updated from -fromDB-
 	 * @param res stores the boolean results for which fields to update
 	 * @param fromDB is the metadata to compare with -this- to decided if updates are necessary
@@ -260,7 +260,7 @@ public class FunctionDescription implements Comparable<FunctionDescription> {
 		return fdesc;
 	}
 
-	/**
+    # /**
 	 * Create a map from addresses to functions
 	 * @param iter is the list of functions to map
 	 * @return the Map
@@ -279,7 +279,7 @@ public class FunctionDescription implements Comparable<FunctionDescription> {
 		return addrmap;
 	}
 
-	/**
+    # /**
 	 * Match new functions to old functions via the address, test if there is an update between the two functions,
 	 * generate an update record if there is, return the list of updates
 	 * @param iter is the list of NEW functions

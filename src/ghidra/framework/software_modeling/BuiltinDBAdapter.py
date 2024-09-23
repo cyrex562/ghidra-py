@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -30,7 +30,7 @@ public abstract class BuiltinDBAdapter {
 	static final int BUILT_IN_CLASSNAME_COL = BuiltinDBAdapterV0.V0_BUILT_IN_CLASSNAME_COL;
 	static final int BUILT_IN_CAT_COL = BuiltinDBAdapterV0.V0_BUILT_IN_CAT_COL;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the built-in data type database table. The adapter is based 
 	 * on the version of the database associated with the specified database handle and the openMode.
 	 * @param handle handle to the database to be accessed.
@@ -45,7 +45,7 @@ public abstract class BuiltinDBAdapter {
 		return new BuiltinDBAdapterV0(handle, tablePrefix, openMode == OpenMode.CREATE);
 	}
 
-	/**
+    # /**
 	 * Create a new built in types record.
 	 * @param name data type name
 	 * @param className class name for data type
@@ -56,7 +56,7 @@ public abstract class BuiltinDBAdapter {
 	abstract DBRecord createRecord(String name, String className, long categoryID)
 			throws IOException;
 
-	/**
+    # /**
 	 * Gets the Built-in data type record with the indicated ID.
 	 * @param dataTypeID the data type's ID.
 	 * @return the record for the Built-in data type.
@@ -64,7 +64,7 @@ public abstract class BuiltinDBAdapter {
 	 */
 	abstract DBRecord getRecord(long dataTypeID) throws IOException;
 
-	/** 
+    # /** 
 	 * Returns an array containing the data type IDs for the given category ID
 	 * @param categoryID category ID
 	 * @return an array of the data type IDs as LongFields within Field array; 
@@ -73,14 +73,14 @@ public abstract class BuiltinDBAdapter {
 	 */
 	abstract Field[] getRecordIdsInCategory(long categoryID) throws IOException;
 
-	/**
+    # /**
 	 * Update the built-ins table with the given record.
 	 * @param record the new record
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void updateRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Remove the record with the given dataID.
 	 * @param dataID key
 	 *  @return true if record was deleted successfully.
@@ -88,14 +88,14 @@ public abstract class BuiltinDBAdapter {
 	 */
 	abstract boolean removeRecord(long dataID) throws IOException;
 
-	/**
+    # /**
 	 * Returns an iterator over all records for built-in data types.
 	 * @return record iterator
 	 * @throws IOException if IO error occurs
 	 */
 	abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Get the number of built-in datatype records
 	 * @return total number of composite records
 	 */

@@ -58,7 +58,7 @@ public class X86_32_ElfExtension extends ElfExtension {
 		processX86PltSections(elfLoadHelper, monitor);
 	}
 
-	/**
+    # /**
 	 * Handle the case where GOT entry offset are computed based upon EBX.  
 	 * This implementation replaces the old "magic map" which had previously been used.
 	 * @param elfLoadHelper ELF load helper

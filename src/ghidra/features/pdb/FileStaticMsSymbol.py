@@ -32,7 +32,7 @@ public class FileStaticMsSymbol extends AbstractMsSymbol implements NameMsSymbol
 	private LocalVariableFlags localVariableFlags;
 	private String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -51,7 +51,7 @@ public class FileStaticMsSymbol extends AbstractMsSymbol implements NameMsSymbol
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -59,7 +59,7 @@ public class FileStaticMsSymbol extends AbstractMsSymbol implements NameMsSymbol
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the module filename string table index.
 	 * @return Module filename string table index.
 	 */
@@ -67,7 +67,7 @@ public class FileStaticMsSymbol extends AbstractMsSymbol implements NameMsSymbol
 		return moduleFilenameStringTableIndex;
 	}
 
-	/**
+    # /**
 	 * Returns the module filename.
 	 * @return Module filename.
 	 */
@@ -75,7 +75,7 @@ public class FileStaticMsSymbol extends AbstractMsSymbol implements NameMsSymbol
 		return pdb.getNameStringFromOffset(moduleFilenameStringTableIndex);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link LocalVariableFlags}.
 	 * @return Local variable flags.
 	 */
@@ -83,7 +83,7 @@ public class FileStaticMsSymbol extends AbstractMsSymbol implements NameMsSymbol
 		return localVariableFlags;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

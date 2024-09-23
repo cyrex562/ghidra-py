@@ -15,7 +15,7 @@
  */
 package ghidra.app.script;
 
-import java.io.*;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collections;
 import java.util.regex.Pattern;

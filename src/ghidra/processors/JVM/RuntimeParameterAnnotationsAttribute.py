@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -86,7 +86,7 @@ public class RuntimeParameterAnnotationsAttribute extends AbstractAttributeInfo 
 		}
 	}
 
-	/**
+    # /**
 	 * If true, these parameters are "RuntimeVisibleParameterAnnotations".
 	 * Otherwise, these parameters are "RuntimeInvisibleParameterAnnotations".
 	 * @return true if visible parameters
@@ -95,7 +95,7 @@ public class RuntimeParameterAnnotationsAttribute extends AbstractAttributeInfo 
 		return _isVisible;
 	}
 
-	/**
+    # /**
 	 * The value of the num_parameters item gives the number of parameters of
 	 * the method represented by the method_info structure on which the annotation
 	 * occurs.
@@ -106,7 +106,7 @@ public class RuntimeParameterAnnotationsAttribute extends AbstractAttributeInfo 
 		return numberOfParameters & 0xff;
 	}
 
-	/**
+    # /**
 	 * Each value of the parameter_annotations table represents all of the runtimevisible
 	 * annotations on a single parameter. The sequence of values in the table
 	 * corresponds to the sequence of parameters in the method descriptor. Each

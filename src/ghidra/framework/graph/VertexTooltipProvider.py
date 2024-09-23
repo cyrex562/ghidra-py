@@ -27,7 +27,7 @@ import javax.swing.JComponent;
  */
 public interface VertexTooltipProvider<V, E> {
 
-	/**
+    # /**
 	 * Returns a tooltip component for the given vertex
 	 * 
 	 * <p>This is used when the vertex is scaled too far for the user to see individual 
@@ -38,7 +38,7 @@ public interface VertexTooltipProvider<V, E> {
 	 */
 	public JComponent getTooltip(V v);
 
-	/**
+    # /**
 	 * Returns a tooltip component for the given vertex and edge.  This is used to create
 	 * an edge tooltip, allowing for vertex data to appear in the tip.
 	 * 
@@ -48,7 +48,7 @@ public interface VertexTooltipProvider<V, E> {
 	 */
 	public JComponent getTooltip(V v, E e);
 
-	/**
+    # /**
 	 * Returns a tooltip string for the given vertex and mouse event
 	 * 
 	 * @param v the vertex

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.map;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 import java.util.List;
 
@@ -35,7 +35,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 	private RecordIterator it;
 	private int keyRangeIndex = -1;
 
-	/**
+    # /**
 	 * Construcs a new AddressKeyRecordIterator that iterates over all records in ascending order.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the table to iterate.
@@ -46,7 +46,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 		this(table, addrMap, false, null, null, true);
 	}
 
-	/**
+    # /**
 	 * Construcs a new AddressKeyRecordIterator that iterates over records starting at given 
 	 * start address.  Memory addresses encoded as Absolute are not included.
 	 * @param table the table to iterate.
@@ -62,7 +62,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 		this(table, addrMap, false, null, startAddr, before);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressKeyRecordIterator that iterates over records that are within an
 	 * address range with an optional start address within that range.  
 	 * Memory addresses encoded as Absolute are not included.
@@ -86,7 +86,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 			startAddr, before);
 	}
 
-	/**
+    # /**
 	 * Construcs a new AddressKeyRecordIterator that iterates over records that are contained in
 	 * an address set with an optional start address within that set.  
 	 * Memory addresses encoded as Absolute are not included.
@@ -108,7 +108,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 		this(table, addrMap, false, set, startAddr, before);
 	}
 
-	/**
+    # /**
 	 * Construcs a new AddressKeyRecordIterator that iterates over records that are contained in
 	 * an address set with an optional start address within that set.  
 	 * @param table the table to iterate.
@@ -170,7 +170,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * @see db.RecordIterator#hasNext()
 	 */
 	@Override
@@ -194,7 +194,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see db.RecordIterator#hasPrevious()
 	 */
 	@Override
@@ -218,7 +218,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see db.RecordIterator#next()
 	 */
 	@Override
@@ -229,7 +229,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see db.RecordIterator#previous()
 	 */
 	@Override
@@ -240,7 +240,7 @@ public class AddressKeyRecordIterator implements RecordIterator {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see db.RecordIterator#delete()
 	 */
 	@Override

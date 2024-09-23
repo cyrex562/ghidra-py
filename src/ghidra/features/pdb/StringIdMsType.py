@@ -31,7 +31,7 @@ public class StringIdMsType extends AbstractMsType {
 	private RecordNumber substringIdListRecordNumber;
 	private String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -49,7 +49,7 @@ public class StringIdMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the complete string, which would include portions concatenated from underlying
 	 *  substrings.
 	 * @return the complete string.
@@ -61,7 +61,7 @@ public class StringIdMsType extends AbstractMsType {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Returns the string portion contained in this record.
 	 * @return the string portion.
 	 * @see #getString()

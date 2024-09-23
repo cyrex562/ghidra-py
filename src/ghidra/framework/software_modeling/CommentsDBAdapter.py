@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -62,15 +62,15 @@ abstract class CommentsDBAdapter {
 				StringField.INSTANCE, StringField.INSTANCE, StringField.INSTANCE }, NAMES);
 	}
 
-//	/** comment type for end of line */
+//    # /** comment type for end of line */
 //	static final int EOL_COMMENT = 0;
-//	/** comment type that goes before a code unit */
+//    # /** comment type that goes before a code unit */
 //	static final int PRE_COMMENT = 1;
-//	/** comment type that follows after a code unit */
+//    # /** comment type that follows after a code unit */
 //	static final int POST_COMMENT = 2; 
-//	/** plate comment type */
+//    # /** plate comment type */
 //	static final int PLATE_COMMENT = 3;
-//	/** repeatable comment type */
+//    # /** repeatable comment type */
 //	static final int REPEATABLE_COMMENT = 4;
 
 	static CommentsDBAdapter getAdapter(DBHandle dbHandle, OpenMode openMode, AddressMap addrMap,
@@ -152,19 +152,19 @@ abstract class CommentsDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @return
 	 */
 	abstract int getRecordCount() throws IOException;
 
-	/**
+    # /**
 	 * Get the record at the given address.
 	 * @param addr key for the record
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract DBRecord getRecord(long addr) throws IOException;
 
-	/**
+    # /**
 	 * Create a comment record for the given comment type/
 	 * @param addr key for the record.
 	 * @param commentCol comment column (type)
@@ -174,7 +174,7 @@ abstract class CommentsDBAdapter {
 	 */
 	abstract DBRecord createRecord(long addr, int commentCol, String comment) throws IOException;
 
-	/**
+    # /**
 	 * Delete the record at the given address
 	 * @param addr key for the record
 	 * @return true if the record was deleted
@@ -182,7 +182,7 @@ abstract class CommentsDBAdapter {
 	 */
 	abstract boolean deleteRecord(long addr) throws IOException;
 
-	/**
+    # /**
 	 * Delete the records in the given range.
 	 * @param start start address (key)
 	 * @param end address (key)
@@ -191,26 +191,26 @@ abstract class CommentsDBAdapter {
 	 */
 	abstract boolean deleteRecords(Address start, Address end) throws IOException;
 
-	/**
+    # /**
 	 * Update the record with the comments from the given record.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void updateRecord(DBRecord commentRec) throws IOException;
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.MoveRangeAdapter#getRecords(long, long, boolean)
 	 */
 	abstract RecordIterator getRecords(Address start, Address end, boolean atStart)
 			throws IOException;
 
-	/**
+    # /**
 	 * Gets an iterator of all comment records in the program.
 	 * @return iterator of all comment records
 	 * @throws IOException 
 	 */
 	abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Get the keys in the given range.
 	 * @param start start of the range
 	 * @param end end of the range
@@ -220,28 +220,28 @@ abstract class CommentsDBAdapter {
 	abstract AddressKeyIterator getKeys(Address start, Address end, boolean atStart)
 			throws IOException;
 
-	/**
+    # /**
 	 * Puts the given record into the table
 	 * @param record the record to put.
 	 * @throws IOException if a database io error occurs
 	 */
 	abstract void putRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Returns a record iterator starting with the record at addr
 	 * @param addr the address to start the iteration.
 	 * @throws IOException if a database io error occurs
 	 */
 	abstract RecordIterator getRecords(Address addr) throws IOException;
 
-	/**
+    # /**
 	 * Returns an address key iterator over the given address set in the given direction.
 	 * @param addrSetView the set to iterator over (null for all defined memory).
 	 * @param forward the direction to iterate.
 	 */
 	abstract AddressKeyIterator getKeys(AddressSetView set, boolean forward) throws IOException;
 
-	/**
+    # /**
 	 * Update the addresses in all records to reflect the movement of a memory block.
 	 * @param fromAddr minimum address of the original block to be moved
 	 * @param toAddr the new minimum address after the block move

@@ -18,7 +18,7 @@ package ghidra.file.formats.android.dex.format;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
@@ -48,7 +48,7 @@ public class EncodedCatchHandler implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * <pre>
 	 * Number of catch types in this list. If non-positive, then this is the 
 	 * negative of the number of catch types, and the catches are followed by a catch-all handler. 
@@ -61,14 +61,14 @@ public class EncodedCatchHandler implements StructConverter {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Stream of abs(size) encoded items, one for each caught type, in the order that the types should be tested.
 	 */
 	public List<EncodedTypeAddressPair> getPairs() {
 		return handlers;
 	}
 
-	/**
+    # /**
 	 * Bytecode address of the catch-all handler. This element is only present if size is non-positive.
 	 */
 	public int getCatchAllAddress() {

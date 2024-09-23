@@ -22,7 +22,7 @@ import ghidra.program.model.address.AddressSet;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.util.Msg;
 
-import java.io.IOException;
+
 
 public class ProgramCorrelatorInfoImpl implements VTProgramCorrelatorInfo {
 

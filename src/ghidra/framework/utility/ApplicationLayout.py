@@ -43,7 +43,7 @@ public abstract class ApplicationLayout {
 	protected ResourceFile extensionArchiveDir;
 	protected List<ResourceFile> extensionInstallationDirs;
 
-	/**
+    # /**
 	 * Gets the application properties from the application layout
 	 *
 	 * @return The application properties.  Should never be null.
@@ -52,7 +52,7 @@ public abstract class ApplicationLayout {
 		return applicationProperties;
 	}
 
-	/**
+    # /**
 	 * Gets the application root directories from the application layout.
 	 *
 	 * @return A collection of application root directories (or null if not set).
@@ -61,7 +61,7 @@ public abstract class ApplicationLayout {
 		return applicationRootDirs;
 	}
 
-	/**
+    # /**
 	 * Gets the application installation directory from the application layout.
 	 *
 	 * @return The application installation directory (or null if not set).
@@ -70,7 +70,7 @@ public abstract class ApplicationLayout {
 		return applicationInstallationDir;
 	}
 
-	/**
+    # /**
 	 * Gets the application's modules from the application layout.
 	 *
 	 * @return The application's modules as a map (mapping module name to module for convenience).
@@ -79,7 +79,7 @@ public abstract class ApplicationLayout {
 		return modules;
 	}
 
-	/**
+    # /**
 	 * Gets the user temp directory from the application layout.
 	 *
 	 * @return The user temp directory (or null if not set).
@@ -88,7 +88,7 @@ public abstract class ApplicationLayout {
 		return userTempDir;
 	}
 
-	/**
+    # /**
 	 * Gets the user cache directory from the application layout.
 	 *
 	 * @return The user cache directory (or null if not set).
@@ -97,7 +97,7 @@ public abstract class ApplicationLayout {
 		return userCacheDir;
 	}
 
-	/**
+    # /**
 	 * Gets the user settings directory from the application layout.
 	 *
 	 * @return The user settings directory (or null if not set).
@@ -106,7 +106,7 @@ public abstract class ApplicationLayout {
 		return userSettingsDir;
 	}
 
-	/**
+    # /**
 	 * Returns the directory where archived application Extensions are stored.  This directory may
 	 * contain both zip files and subdirectories.   This directory is only used inside of an
 	 * installation; development mode does not use this directory.   This directory is used to ship 
@@ -125,7 +125,7 @@ public abstract class ApplicationLayout {
 		return extensionArchiveDir;
 	}
 
-	/**
+    # /**
 	 * Returns a prioritized {@link List ordered list} of the application Extensions installation 
 	 * directories.   Typically, the values may be any of the following locations:<br>
 	 * <ul>
@@ -141,7 +141,7 @@ public abstract class ApplicationLayout {
 		return extensionInstallationDirs;
 	}
 
-	/**
+    # /**
 	 * Returns the location of the application patch directory.  The patch directory can be
 	 * used to modify existing code within a distribution.
 	 * @return the patch directory; may be null
@@ -150,7 +150,7 @@ public abstract class ApplicationLayout {
 		return patchDir;
 	}
 
-	/**
+    # /**
 	 * Checks whether or not the application is using a "single jar" layout.  Custom application
 	 * layouts that extend this class can override this method once they determine they are in
 	 * single jar mode.

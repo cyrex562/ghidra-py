@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.pcodeCPort.utils;
 
 import java.lang.ref.ReferenceQueue;
@@ -20,11 +20,11 @@ import java.lang.ref.WeakReference;
 import java.util.*;
 
 # /**
- * A hashtable-based <code>Map</code> implementation with <em>weak values</em>.
- * 
- * <P>This implementation uses two maps internally, which nearly doubles the memory requirements
- * over a traditional map.
- */
+# * A hashtable-based <code>Map</code> implementation with <em>weak values</em>.
+# * 
+# * <P>This implementation uses two maps internally, which nearly doubles the memory requirements
+# * over a traditional map.
+# */
 public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 
 	static private class WeakValue<Z> extends WeakReference<Z> {
@@ -95,7 +95,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 
 	/* -- Constructors -- */
 
-	/**
+    # /**
 	 * Constructs a new, empty <code>WeakHashMap2</code> with the given
 	 * initial capacity and the given load factor.
 	 *
@@ -113,7 +113,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 		reverseHash = new HashMap<>(initialCapacity, loadFactor);
 	}
 
-	/**
+    # /**
 	 * Constructs a new, empty <code>WeakHashMap2</code> with the given
 	 * initial capacity and the default load factor, which is
 	 * <code>0.75</code>.
@@ -129,7 +129,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 		reverseHash = new HashMap<>(initialCapacity);
 	}
 
-	/**
+    # /**
 	 * Constructs a new, empty <code>WeakHashMap2</code> with the default
 	 * initial capacity and the default load factor, which is
 	 * <code>0.75</code>.
@@ -139,7 +139,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 		reverseHash = new HashMap<>();
 	}
 
-	/**
+    # /**
 	 * Constructs a new <code>WeakHashMap2</code> with the same mappings as the
 	 * specified <tt>Map</tt>.  The <code>WeakHashMap2</code> is created with an
 	 * initial capacity of twice the number of mappings in the specified map
@@ -156,7 +156,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 
 	/* -- Simple queries -- */
 
-	/**
+    # /**
 	 * Returns the number of key-value mappings in this map.
 	 * <strong>Note:</strong> <em>In contrast with most implementations of the
 	 * <code>Map</code> interface, the time required by this operation is
@@ -167,7 +167,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 		return entrySet().size();
 	}
 
-	/**
+    # /**
 	 * Returns <code>true</code> if this map contains no key-value mappings.
 	 */
 	@Override
@@ -175,7 +175,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 		return entrySet().isEmpty();
 	}
 
-	/**
+    # /**
 	 * Returns <code>true</code> if this map contains a mapping for the
 	 * specified key.
 	 *
@@ -188,7 +188,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 
 	/* -- Lookup and modification operations -- */
 
-	/**
+    # /**
 	 * Returns the value to which this map maps the specified <code>key</code>.
 	 * If this map does not contain a value for this key, then return
 	 * <code>null</code>.
@@ -201,7 +201,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 		return v != null ? v.get() : null;
 	}
 
-	/**
+    # /**
 	 * Updates this map so that the given <code>key</code> maps to the given
 	 * <code>value</code>.  If the map previously contained a mapping for
 	 * <code>key</code> then that mapping is replaced and the previous value is
@@ -235,7 +235,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 		return reverseHash.get(v);
 	}
 
-	/**
+    # /**
 	 * Removes the mapping for the given <code>key</code> from this map, if
 	 * present.
 	 *
@@ -257,7 +257,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 		return oldValue;
 	}
 
-	/**
+    # /**
 	 * Removes all mappings from this map.
 	 */
 	@Override
@@ -416,7 +416,7 @@ public class WeakHashMap2<K, V> extends AbstractMap<K, V> {
 
 	private Set<Map.Entry<K, V>> entrySet = null;
 
-	/**
+    # /**
 	 * Returns a <code>Set</code> view of the mappings in this map.
 	 */
 	@Override

@@ -44,7 +44,7 @@ public class MDObjectCPP extends MDObject {
 		return typeInfo;
 	}
 
-	/**
+    # /**
 	 * Returns the embedded object if there is one.  Else returns itself.
 	 *  @see MDBasicName#getEmbeddedObject()
 	 * @return An MDObjectCPP representing the original or the embedded object.
@@ -56,7 +56,7 @@ public class MDObjectCPP extends MDObject {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the symbol, minus any namespace component.
 	 * @return the name.
 	 */
@@ -67,7 +67,7 @@ public class MDObjectCPP extends MDObject {
 		return getQualifiedName().getBasicName().toString();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link MDQualification} component that represents the namespace.
 	 * @return the namespace information.
 	 */
@@ -78,7 +78,7 @@ public class MDObjectCPP extends MDObject {
 		return getQualifiedName().getQualification();
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if the symbol's Basic Name is of a {@link MDString} type.
 	 *  @return {@code true} if Basic Name is of {@link MDString} type.
 	 */
@@ -89,7 +89,7 @@ public class MDObjectCPP extends MDObject {
 		return qualifiedName.isString();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link MDString} from the Basic Name if it is a symbol of that type; else
 	 *  returns null.
 	 *  @return the {@link MDString} or null if does not exist.
@@ -164,7 +164,7 @@ public class MDObjectCPP extends MDObject {
 		qualifiedName.setCastTypeString(functionType.getReturnType().toString());
 	}
 
-	/**
+    # /**
 	 * Processes the hashed object in the normal fashion.
 	 * @throws MDException On parsing error.
 	 */
@@ -174,7 +174,7 @@ public class MDObjectCPP extends MDObject {
 		hashedObjectFlag = true;
 	}
 
-	/**
+    # /**
 	 * Always throws an exception, mimicking the MSFT "failure" behavior, which cuts the parsing
 	 *  process short...  This is one of two choice methods than can be used.
 	 * @throws MDException always.
@@ -184,7 +184,7 @@ public class MDObjectCPP extends MDObject {
 		throw new MDException("cannot parse hashed symbol");
 	}
 
-	/**
+    # /**
 	 * Represents the MD5 hashed representation of the internals of the {@link MDObjectCPP}.
 	 *  It takes the place of the {@link MDQualifiedBasicName}.  We have included an unused
 	 *  (except to be able to return one that is empty) {@link MDQualification} so that the
@@ -203,7 +203,7 @@ public class MDObjectCPP extends MDObject {
 		private String hashString = "";
 		private MDQualification qualification; // We are making this dummy object
 
-		/**
+	    # /**
 		 * Constructor for {@link MDHashedObject}
 		 * @param dmang The {@link MDMang} for which the work is performed and from from which
 		 *  the information is parsed.
@@ -213,7 +213,7 @@ public class MDObjectCPP extends MDObject {
 			qualification = new MDQualification(dmang);
 		}
 
-		/**
+	    # /**
 		 * Returns the hashed string.
 		 * @return the hashed string.
 		 */
@@ -221,7 +221,7 @@ public class MDObjectCPP extends MDObject {
 			return hashString;
 		}
 
-		/**
+	    # /**
 		 * Returns an empty {@link MDQualification} that represents the namespace of the symbol.
 		 *  Note: we have yet to decide whether we should do anything but this.
 		 * @return the namespace information (empty for now).
@@ -259,7 +259,7 @@ public class MDObjectCPP extends MDObject {
 			hashString = builder.toString();
 		}
 
-		/**
+	    # /**
 		 * Returns the name representation
 		 * @return the name
 		 */

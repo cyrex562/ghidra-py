@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.bootldr;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;

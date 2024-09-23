@@ -80,7 +80,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		applyMissingRTTIStructures();
 	}
 
-	/**
+    # /**
 	 * Method to find and apply missing RTTI structures
 	 * @throws CancelledException if cancelled
 	 * @throws Exception if error applying label or data
@@ -101,7 +101,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to set the global variable isWindows
 	 */
 	private void setIsWindows() {
@@ -111,7 +111,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		isWindows = compilerID.contains("windows");
 	}
 
-	/**
+    # /**
 	 * Method to iterate over all symbols with Base Class Descriptor symbol and if
 	 * the correct data type has not already been created, do so. 
 	 * @return List of all symbols with valid (even previously) BaseClassDescriptor structure applied
@@ -154,7 +154,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return completeObjectLocatorSymbols;
 	}
 
-	/**
+    # /**
 	 * Method to create a CompleteObjectLocator structure at the given address
 	 * @param address the address where the structure will be created
 	 * @return the created CompleteObjectLocator data or null if it couldn't be created
@@ -179,7 +179,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return completeObjectLocator;
 	}
 
-	/**
+    # /**
 	 * Method to iterate over all symbols with Base Class Descriptor symbol and if
 	 * the correct data type has not already been created, do so. 
 	 * @return List of all symbols with valid (even previously) BaseClassDescriptor structure applied
@@ -220,7 +220,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return baseClassDescriptorSymbols;
 	}
 
-	/**
+    # /**
 	 * Method to create a BaseClassDescriptor structure at the given address
 	 * @param baseClassDescriptorAddress the address where the structure will be created
 	 * @return the created BaseClassDescriptor data or null if it couldn't be created
@@ -243,7 +243,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return baseClassDescArray;
 	}
 
-	/**
+    # /**
 	 * Method to apply missing RTTI Base Class Descriptor structures and symbols  
 	 * @param address address to apply the missing structure and symbol
 	 * @param numBaseClasses number of base classes in the array pointing to BaseClassDescriptors
@@ -289,7 +289,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param baseClassDescriptors the given list of BaseClassDescriptor symbols
 	 * @param completeObjectLocators the given list of CompleteObjectLocator symbols
@@ -336,7 +336,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param address the address where the ClassHierarchyDescriptor is to be created
 	 * @param classNamespace the namespace of the class
@@ -378,7 +378,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return classHierarchyDescriptorAddress;
 	}
 
-	/**
+    # /**
 	 * Method to create a ClassHierarchyDescriptor structure at the given address 
 	 * @param classHierarchyDescriptorAddress the address where the structure will be created
 	 * @return the created ClassHierarchyDescriptor data or null if it couldn't be created
@@ -402,7 +402,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return classHierarchyStructure;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param classHierarchyDescriptors the given list of applied ClassHierarchyDescriptor structures
 	 * @return a list of base class array addresses
@@ -460,7 +460,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return baseClassArrayAddresses;
 	}
 
-	/**
+    # /**
 	 * Method to create a base class array at the given address with the given number of base class's in the array
 	 * @param baseClassArrayAddress the address where the array will be created
 	 * @param numBaseClasses the number of BaseClass's in the array 
@@ -503,7 +503,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return baseClassDescArray;
 	}
 
-	/**
+    # /**
 	 * Method to create missing vftables and return a list of them
 	 * @param completeObjectLocatorSymbols the list of completeObjectLocatorSymbols
 	 * @return list of vftable symbols
@@ -580,7 +580,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return vftables;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the symbol with the given address, containing name (containing to account
 	 * for pdb case where sometimes has extra chars) and namespace
 	 * @param address the given address
@@ -602,7 +602,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to return referenced address at the given address
 	 * @param address the address to look for a referenced address at
 	 * @return the first referenced address from the given address
@@ -632,7 +632,7 @@ public class FixUpRttiAnalysisScript extends GhidraScript {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the AddressSet of the current program's initialized memory
 	 * @return the AddressSet of the current program's initialized memory
 	 * @throws CancelledException if cancelled

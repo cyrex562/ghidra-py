@@ -1,19 +1,19 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.btree;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import mobiledevices.dmg.ghidra.GBinaryReader;
 
 /**
- * Represents a BTNodeDescriptor structure.
- * 
- * @see <a href="https://opensource.apple.com/source/xnu/xnu-792/bsd/hfs/hfs_format.h.auto.html">hfs/hfs_format.h</a> 
- */
+# * Represents a BTNodeDescriptor structure.
+# * 
+# * @see <a href="https://opensource.apple.com/source/xnu/xnu-792/bsd/hfs/hfs_format.h.auto.html">hfs/hfs_format.h</a> 
+# */
 public class BTreeNodeDescriptor /*implements StructConverter*/ {
 
 	private int fLink;
@@ -69,7 +69,7 @@ public class BTreeNodeDescriptor /*implements StructConverter*/ {
 		return _records;
 	}
 
-	/**
+    # /**
 	 * The node number of the next node of this type.
 	 * Or, zero ( 0 ) if this is the last node.
 	 * @return node number of the next node of this type
@@ -78,7 +78,7 @@ public class BTreeNodeDescriptor /*implements StructConverter*/ {
 		return fLink;
 	}
 
-	/**
+    # /**
 	 * The node number of the previous node of this type.
 	 * Or, zero ( 0 ) if this is the first node.
 	 * @return node number of the previous node of this type
@@ -87,7 +87,7 @@ public class BTreeNodeDescriptor /*implements StructConverter*/ {
 		return bLink;
 	}
 
-	/**
+    # /**
 	 * Returns the key of this node.
 	 * @return the key of this node
 	 * @see BTreeNodeKinds
@@ -96,7 +96,7 @@ public class BTreeNodeDescriptor /*implements StructConverter*/ {
 		return kind;
 	}
 
-	/**
+    # /**
 	 * Returns the level, or depth, of this node in the B-tree hierarchy.
 	 * @return the level, or depth, of this node in the B-tree hierarchy
 	 */
@@ -104,7 +104,7 @@ public class BTreeNodeDescriptor /*implements StructConverter*/ {
 		return height;
 	}
 
-	/**
+    # /**
 	 * Returns the number of records in this node.
 	 * @return the number of records in this node
 	 */
@@ -112,7 +112,7 @@ public class BTreeNodeDescriptor /*implements StructConverter*/ {
 		return numRecords;
 	}
 
-	/**
+    # /**
 	 * This field is reserved.
 	 * @return this field is reserved
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.analysis;
 
-import java.io.IOException;
+
 import java.util.function.Predicate;
 
 import ghidra.app.services.*;

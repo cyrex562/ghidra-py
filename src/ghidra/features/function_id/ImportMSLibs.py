@@ -16,7 +16,7 @@
 //Massive recursive import for a MS Visual Studio installation directory
 //@category FunctionID
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.function.Predicate;

@@ -15,7 +15,7 @@
  */
 package ghidra.xml;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -56,7 +56,7 @@ class ThreadedXmlPullParserImpl extends AbstractXmlPullParser {
 
 	private GThreadPool threadPool;
 
-	/**
+    # /**
 	 * Constructs a new parser using the specified XML file.
 	 * 
 	 * @param file the input XML file
@@ -70,7 +70,7 @@ class ThreadedXmlPullParserImpl extends AbstractXmlPullParser {
 		this(new ResourceFile(file), errHandler, validate, capacity);
 	}
 
-	/**
+    # /**
 	 * Constructs a new parser using the specified XML file.
 	 * 
 	 * @param file the input XML file
@@ -90,7 +90,7 @@ class ThreadedXmlPullParserImpl extends AbstractXmlPullParser {
 		parsingTask = threadPool.submit(runnable);
 	}
 
-	/**
+    # /**
 	 * Constructs a new parser using the specified input stream.
 	 * <p>
 	 * Note: Only use this method if you know that the XML in the given stream
@@ -126,7 +126,7 @@ class ThreadedXmlPullParserImpl extends AbstractXmlPullParser {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the value of the attribute of the processing instruction. For
 	 * example, <code>&lt;?program_dtd version="1"?&gt;</code>
 	 * 
@@ -144,7 +144,7 @@ class ThreadedXmlPullParserImpl extends AbstractXmlPullParser {
 		return map.get(attribute.toUpperCase());
 	}
 
-	/**
+    # /**
 	 * Returns true if the parser has more elements to read.
 	 * 
 	 * @return true if the parser has more elements to read
@@ -171,7 +171,7 @@ class ThreadedXmlPullParserImpl extends AbstractXmlPullParser {
 		return element;
 	}
 
-	/**
+    # /**
 	 * Returns the next element to be read, but does not increment the iterator.
 	 * 
 	 * @return the next element to be read, but does not increment the iterator
@@ -184,7 +184,7 @@ class ThreadedXmlPullParserImpl extends AbstractXmlPullParser {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next element to be read and increments the iterator.
 	 * 
 	 * @return the next element to be read and increments the iterator
@@ -199,7 +199,7 @@ class ThreadedXmlPullParserImpl extends AbstractXmlPullParser {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Disposes this XML parser. No more elements may be read after dispose is
 	 * called.
 	 */

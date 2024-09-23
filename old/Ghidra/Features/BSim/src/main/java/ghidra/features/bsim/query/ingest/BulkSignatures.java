@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.ingest;
 
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;

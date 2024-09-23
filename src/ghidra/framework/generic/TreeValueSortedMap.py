@@ -33,7 +33,7 @@ import org.apache.commons.collections4.comparators.ComparableComparator;
  */
 public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements ValueSortedMap<K, V> {
 
-	/**
+    # /**
 	 * Create a tree using the values' natural ordering
 	 */
 	public static <K, V extends Comparable<V>> TreeValueSortedMap<K, V> createWithNaturalOrder() {
@@ -41,7 +41,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		return new TreeValueSortedMap<>(natural);
 	}
 
-	/**
+    # /**
 	 * Create a tree using a custom comparator to order the values
 	 * 
 	 * @param comparator the comparator, providing a total ordering of the values
@@ -50,7 +50,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		return new TreeValueSortedMap<>(comparator);
 	}
 
-	/**
+    # /**
 	 * An iterator of the entries
 	 */
 	protected class EntryListIterator implements ListIterator<Entry<K, V>> {
@@ -58,7 +58,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		private Node next;
 		private Node cur;
 
-		/**
+	    # /**
 		 * Construct a list iterator over the entries
 		 * 
 		 * A start of null implies one past the end of the list, i.e., {@code tail.next}
@@ -143,13 +143,13 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		}
 	}
 
-	/**
+    # /**
 	 * An iterator of the keys
 	 */
 	protected class KeyListIterator implements ListIterator<K> {
 		private EntryListIterator it;
 
-		/**
+	    # /**
 		 * Construct a list iterator over the keys
 		 * 
 		 * A start of null implies one past the end of the list, i.e., {@code tail.next}
@@ -206,7 +206,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		}
 	}
 
-	/**
+    # /**
 	 * An entry in the map.
 	 * 
 	 * Nodes are elements of a binary tree and a doubly-linked list.
@@ -231,7 +231,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			return key + "=" + val;
 		}
 
-		/**
+	    # /**
 		 * Construct a new node
 		 * 
 		 * @param key the key
@@ -260,7 +260,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			return Objects.hash(this.key, this.val);
 		}
 
-		/**
+	    # /**
 		 * Compute this node's index.
 		 * 
 		 * This uses the {@link #sizeLeft} field to compute the index in O(log n) on average.
@@ -280,7 +280,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			return index;
 		}
 
-		/**
+	    # /**
 		 * Retrieve the node at a given index in this subtree
 		 * 
 		 * This really only makes sense at the root
@@ -325,7 +325,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			return val;
 		}
 
-		/**
+	    # /**
 		 * Insert a node into this subtree and the linked list
 		 * 
 		 * @param item the node to insert
@@ -356,7 +356,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			}
 		}
 
-		/**
+	    # /**
 		 * Insert a node as a successor to this node in the linked list
 		 * 
 		 * NOTE: Called only after the node is inserted into the tree
@@ -374,7 +374,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			this.next = item;
 		}
 
-		/**
+	    # /**
 		 * Insert a node as a predecessor to this node in the linked list
 		 * 
 		 * NOTE: Called only after the node is inserted into the tree
@@ -392,7 +392,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			this.prev = item;
 		}
 
-		/**
+	    # /**
 		 * Remove this node from the tree and linked list
 		 */
 		private void remove() {
@@ -473,7 +473,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			}
 		}
 
-		/**
+	    # /**
 		 * Find the given value in this subtree
 		 * 
 		 * @param value the value to find
@@ -546,23 +546,23 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		NONE, LT, GT
 	}
 
-	/**
+    # /**
 	 * When searching for values, identifies which instance to find
 	 */
 	private enum SearchMode {
-		/** Find any occurrence */
+	    # /** Find any occurrence */
 		ANY(BoundType.CLOSED, Comp.NONE, Comp.NONE),
-		/** Find the first occurrence */
+	    # /** Find the first occurrence */
 		FIRST(BoundType.CLOSED, Comp.LT, Comp.NONE),
-		/** Find the last occurrence */
+	    # /** Find the last occurrence */
 		LAST(BoundType.CLOSED, Comp.GT, Comp.NONE),
-		/** Find the nearest match less than */
+	    # /** Find the nearest match less than */
 		LOWER(BoundType.OPEN, Comp.NONE, Comp.LT),
-		/** Find the nearest match less than or equal */
+	    # /** Find the nearest match less than or equal */
 		FLOOR(BoundType.CLOSED, Comp.LT, Comp.LT),
-		/** Find the nearest match greater than or equal */
+	    # /** Find the nearest match greater than or equal */
 		CEILING(BoundType.CLOSED, Comp.GT, Comp.GT),
-		/** Find the nearest match greater than */
+	    # /** Find the nearest match greater than */
 		HIGHER(BoundType.OPEN, Comp.NONE, Comp.GT);
 
 		final BoundType allowEq;
@@ -576,13 +576,13 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		}
 	}
 
-	/**
+    # /**
 	 * An iterator of the values
 	 */
 	protected class ValueListIterator implements ListIterator<V> {
 		private EntryListIterator it;
 
-		/**
+	    # /**
 		 * Construct a list iterator over the values
 		 * 
 		 * A start of null implies one past the end of the list, i.e., {@code tail.next}
@@ -639,7 +639,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		}
 	}
 
-	/**
+    # /**
 	 * A public view of the map as a set of entries
 	 * 
 	 * In addition to {@link Set}, this view implements {@link List} and {@link Deque}, since an
@@ -658,7 +658,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 			return new ArrayList<>(this);
 		}
 
-		/**
+	    # /**
 		 * Inserts (by copy) the entry into the owning map
 		 */
 		@Override
@@ -765,7 +765,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		}
 	}
 
-	/**
+    # /**
 	 * A public view of the map as a set of keys
 	 * 
 	 * In addition to {@link Set}, this view implements {@link List} and {@link Deque}, since an
@@ -846,7 +846,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		}
 	}
 
-	/**
+    # /**
 	 * A public view of the map as a list of values
 	 * 
 	 * This view implements {@link SortedList} and {@link Deque}, since an ordered collection ought
@@ -1070,7 +1070,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		}
 	}
 
-	/**
+    # /**
 	 * {@inheritDoc}
 	 * 
 	 * @see ValueSortedTreeMapEntrySet
@@ -1114,7 +1114,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		return root == null;
 	}
 
-	/**
+    # /**
 	 * Check if a node is correctly positioned relative to its immediate neighbors
 	 * 
 	 * @param n the node
@@ -1134,7 +1134,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		return true;
 	}
 
-	/**
+    # /**
 	 * {@inheritDoc}
 	 * 
 	 * @see ValueSortedTreeMapKeySet
@@ -1194,7 +1194,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		return updateNode(n);
 	}
 
-	/**
+    # /**
 	 * Update a node's position
 	 * 
 	 * This ought to be called any time the value of a node is modified, whether internall or
@@ -1213,7 +1213,7 @@ public class TreeValueSortedMap<K, V> extends AbstractMap<K, V> implements Value
 		return true;
 	}
 
-	/**
+    # /**
 	 * {@inheritDoc}
 	 * 
 	 * @see ValueSortedTreeMapValues

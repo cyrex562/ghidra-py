@@ -15,7 +15,7 @@
  */
 package generic.lsh.vector;
 
-import java.io.IOException;
+
 import java.io.Reader;
 import java.io.Writer;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class LSHCosineVector implements LSHVector {
 		hashcount = 0;
 	}
 
-	/**
+    # /**
 	 * Install a set of features as an int[].   Each integer is a hash.  The integers MUST already be sorted.
 	 * The same integer can occur more than once in the array (term frequency (TF) &gt; 1).
 	 * Weights are determined by TF and Inverse Document Frequency (IDF) of individual features
@@ -49,7 +49,7 @@ public class LSHCosineVector implements LSHVector {
 		calcLength();
 	}
 
-	/**
+    # /**
 	 * Uses the existing {@link #calcUniqueHash()} method to determine hash value.
 	 * 
 	 * @return
@@ -59,7 +59,7 @@ public class LSHCosineVector implements LSHVector {
 		return (int) calcUniqueHash();
 	}
 
-	/**
+    # /**
 	 * Eclipse-generated equals method.  Only the hash attribute is necessary.
 	 * 
 	 * @param obj
@@ -83,7 +83,7 @@ public class LSHCosineVector implements LSHVector {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Install hashes and weights directly.  Length is automatically calculated.
 	 * The entries must already be sorted on the hash
 	 * @param entries
@@ -107,7 +107,7 @@ public class LSHCosineVector implements LSHVector {
 		length = Math.sqrt(length);
 	}
 
-	/**
+    # /**
 	 * Assuming -feature- is sorted and -hash- is empty, count the features and populate -hash- and -tf-
 	 * For every unique feature, look up its idf via -idflookup-
 	 * @param feature is the list of sorted hash features

@@ -19,7 +19,7 @@ import ghidra.app.util.bin.ByteProvider;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.mem.Memory;
 
-import java.io.IOException;
+
 
 public final class BinaryPropertyListUtil {
 

@@ -15,7 +15,7 @@
  */
 package generic.theme;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import generic.jar.ResourceFile;
@@ -36,7 +36,7 @@ public class PropertyFileThemeDefaults implements ApplicationThemeDefaults {
 		loadThemeDefaultFiles();
 	}
 
-	/**
+    # /**
 	 * Searches for all the theme.property files and loads them into either the standard
 	 * defaults (light) map or the dark defaults map.
 	 */

@@ -27,7 +27,7 @@ public class ToolState {
 	private UndoRedoToolState beforeState;
 	private UndoRedoToolState afterState;
 
-	/**
+    # /**
 	 * Construct a new tool state.
 	 * @param tool tool's state to save
 	 * @param domainObject the object containing the tool state

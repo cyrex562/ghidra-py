@@ -41,26 +41,26 @@ public abstract class RetypeFieldTask {
 		this.composite = composite;
 	}
 
-	/**
+    # /**
 	 * @return the name to associate with the data-base transaction that actually changes the data-type
 	 */
 	public abstract String getTransactionName();
 
-	/**
+    # /**
 	 * Check if the selected field is valid for retyping.
 	 * If there is a problem, the errorMsg is populated and false is returned.
 	 * @return true if the field is valid
 	 */
 	public abstract boolean isValidBefore();
 
-	/**
+    # /**
 	 * Given a new data-type chosen by the user, check if the retype can proceed.
 	 * If there is a problem, the errorMsg is populated and false is returned.
 	 * @return true if the retype can proceed
 	 */
 	public abstract boolean isValidAfter();
 
-	/**
+    # /**
 	 * Assuming the transaction is started, do the work of changing the data-type.
 	 * @throws IllegalArgumentException if there is a final error committing the data-type
 	 */

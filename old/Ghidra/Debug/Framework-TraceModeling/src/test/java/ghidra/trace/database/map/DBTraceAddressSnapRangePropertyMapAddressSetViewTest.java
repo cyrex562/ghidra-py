@@ -17,7 +17,7 @@ package ghidra.trace.database.map;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Predicate;
 

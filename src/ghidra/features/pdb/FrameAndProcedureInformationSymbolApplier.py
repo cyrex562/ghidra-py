@@ -30,7 +30,7 @@ public class FrameAndProcedureInformationSymbolApplier extends MsSymbolApplier
 
 	private ExtraFrameAndProcedureInformationMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier

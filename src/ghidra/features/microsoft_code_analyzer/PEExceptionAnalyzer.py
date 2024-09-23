@@ -56,7 +56,7 @@ public class PEExceptionAnalyzer extends AbstractAnalyzer {
 	// MAX_MAP_ENTRY_COUNT is the maximum expected value for a count of map entries.
 	private static final int MAX_MAP_ENTRY_COUNT = 16000;
 
-	/**
+    # /**
 	 * Creates an analyzer for determining PE exception handling data.
 	 */
 	public PEExceptionAnalyzer() {

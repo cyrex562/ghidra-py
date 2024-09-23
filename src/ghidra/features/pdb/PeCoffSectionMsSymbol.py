@@ -35,7 +35,7 @@ public class PeCoffSectionMsSymbol extends AbstractMsSymbol implements NameMsSym
 	private int characteristics;
 	private String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -59,7 +59,7 @@ public class PeCoffSectionMsSymbol extends AbstractMsSymbol implements NameMsSym
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the section number.
 	 * @return Section number.
 	 */
@@ -67,7 +67,7 @@ public class PeCoffSectionMsSymbol extends AbstractMsSymbol implements NameMsSym
 		return sectionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the alignment.
 	 * @return Alignment.
 	 */
@@ -75,7 +75,7 @@ public class PeCoffSectionMsSymbol extends AbstractMsSymbol implements NameMsSym
 		return align;
 	}
 
-	/**
+    # /**
 	 * Returns the reserved value.
 	 * @return Reserved value.
 	 */
@@ -83,7 +83,7 @@ public class PeCoffSectionMsSymbol extends AbstractMsSymbol implements NameMsSym
 		return reserved;
 	}
 
-	/**
+    # /**
 	 * Returns the RVA (real valued address?).
 	 * @return Real-Valued Address (?).
 	 */
@@ -91,7 +91,7 @@ public class PeCoffSectionMsSymbol extends AbstractMsSymbol implements NameMsSym
 		return rva;
 	}
 
-	/**
+    # /**
 	 * Returns the length.
 	 * @return Length.
 	 */
@@ -99,7 +99,7 @@ public class PeCoffSectionMsSymbol extends AbstractMsSymbol implements NameMsSym
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the characteristics.
 	 * @return Characteristics.
 	 */
@@ -107,7 +107,7 @@ public class PeCoffSectionMsSymbol extends AbstractMsSymbol implements NameMsSym
 		return characteristics;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

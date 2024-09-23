@@ -15,7 +15,7 @@
  */
 package ghidra.file.crypto;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.Document;

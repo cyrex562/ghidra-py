@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.assembler.sleigh.util;
 
-import java.io.*;
+
 import java.util.Stack;
 
 /**

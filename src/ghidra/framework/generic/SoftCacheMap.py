@@ -30,7 +30,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 	private LinkedHashMap<K, MySoftReference> map;
 	private ReferenceQueue<? super V> refQueue;
 
-	/**
+    # /**
 	 * Constructs a new SoftCacheMap that has at most cacheSize entries.
 	 * @param cacheSize the max number of entries to cache.
 	 */
@@ -40,7 +40,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		refQueue = new ReferenceQueue<>();
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#put(java.lang.Object, java.lang.Object)
 	 */
 	@Override
@@ -54,7 +54,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#get(java.lang.Object)
 	 */
 	@Override
@@ -67,7 +67,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#size()
 	 */
 	@Override
@@ -76,7 +76,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return map.size();
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#clear()
 	 */
 	@Override
@@ -85,7 +85,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		refQueue = new ReferenceQueue<>();
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#isEmpty()
 	 */
 	@Override
@@ -94,7 +94,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return map.isEmpty();
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#containsKey(java.lang.Object)
 	 */
 	@Override
@@ -103,7 +103,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return map.containsKey(key);
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#containsValue(java.lang.Object)
 	 */
 	@Override
@@ -119,7 +119,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#values()
 	 */
 	@Override
@@ -136,7 +136,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return list;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#putAll(java.util.Map)
 	 */
 	@Override
@@ -151,7 +151,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		}
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#entrySet()
 	 */
 	@Override
@@ -173,7 +173,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return result;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#keySet()
 	 */
 	@Override
@@ -182,7 +182,7 @@ public class SoftCacheMap<K, V> implements Map<K, V> {
 		return map.keySet();
 	}
 
-	/**
+    # /**
 	 * @see java.util.Map#remove(java.lang.Object)
 	 */
 	@Override

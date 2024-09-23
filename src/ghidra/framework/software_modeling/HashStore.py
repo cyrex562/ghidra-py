@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.correlate;
 
 import java.util.ArrayList;
@@ -37,33 +37,33 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * HashStore is a sorted, basic-block aware, store for Instruction "n-grams" to help quickly match similar
- * sequences of Instructions between two functions.  The Instructions comprising a single n-gram are hashed
- * for quick lookup by the main matching algorithm (HashedFunctionAddressCorrelation).  Hash diversity is
- * important to minimize collisions, even though the number of hashes calculated for a single function pair
- * match is small.
- * 
- * Hashes are built and sorted respectively using the calcHashes() and insertHashes() methods. The main sort
- * is on the number of collisions for a hash (indicating that there are duplicate or near duplicate instruction
- * sequences), the hashes with fewer (or no) duplicates come first. The secondary sort is on
- * "n", the number of Instructions in the n-gram, which effectively describes the significance of the match, or how
- * unlikely the match is to occur at random.  The main matching algorithm effectively creates a HashSort for both
- * functions, and then in a loop calls
- *    hash = getFirstEntry()    on one side to get the most significant possible match
- *    getEntry(has)             to see if there is a matching n-gram on the other side
- *    
- * If there is a match it is declared to the sort with the matchHash() call, allowing overlapping n-grams to be
- * removed and deconflicting information to be updated.  If there is no match, hashes can be removed with the
- * removeHash() method to allow new hashes to move to the top of the sort.
- * 
- * The store uses a couple of methods to help deconflict very similar sequences of instructions within the same function.
- * Primarily, the sort is basic-block aware.  All n-grams are contained within a single basic block, and when an initial
- * match is found, hashes for other n-grams within that block (and its matching block on the other side) are modified
- * so that n-grams within that block pair can only match each other. 
- *
- */
+# * HashStore is a sorted, basic-block aware, store for Instruction "n-grams" to help quickly match similar
+# * sequences of Instructions between two functions.  The Instructions comprising a single n-gram are hashed
+# * for quick lookup by the main matching algorithm (HashedFunctionAddressCorrelation).  Hash diversity is
+# * important to minimize collisions, even though the number of hashes calculated for a single function pair
+# * match is small.
+# * 
+# * Hashes are built and sorted respectively using the calcHashes() and insertHashes() methods. The main sort
+# * is on the number of collisions for a hash (indicating that there are duplicate or near duplicate instruction
+# * sequences), the hashes with fewer (or no) duplicates come first. The secondary sort is on
+# * "n", the number of Instructions in the n-gram, which effectively describes the significance of the match, or how
+# * unlikely the match is to occur at random.  The main matching algorithm effectively creates a HashSort for both
+# * functions, and then in a loop calls
+# *    hash = getFirstEntry()    on one side to get the most significant possible match
+# *    getEntry(has)             to see if there is a matching n-gram on the other side
+# *    
+# * If there is a match it is declared to the sort with the matchHash() call, allowing overlapping n-grams to be
+# * removed and deconflicting information to be updated.  If there is no match, hashes can be removed with the
+# * removeHash() method to allow new hashes to move to the top of the sort.
+# * 
+# * The store uses a couple of methods to help deconflict very similar sequences of instructions within the same function.
+# * Primarily, the sort is basic-block aware.  All n-grams are contained within a single basic block, and when an initial
+# * match is found, hashes for other n-grams within that block (and its matching block on the other side) are modified
+# * so that n-grams within that block pair can only match each other. 
+# *
+# */
 public class HashStore {
-	/**
+    # /**
 	 * Comparator for the main HashStore sort.  Sort first preferring smallest number of duplicate n-grams,
 	 * then subsort on the size (significance) of the n-gram.
 	 *
@@ -81,7 +81,7 @@ public class HashStore {
 		}		
 	}
 
-	/**
+    # /**
 	 * Class explicitly labeling (one-side of) a matching n-gram pair.
 	 *
 	 */
@@ -114,17 +114,17 @@ public class HashStore {
 		initializeStructures();			// Model basic-blocks and instructions
 	}
 
-	/**
+    # /**
 	 * @return total number of Instructions in the whole function
 	 */
 	public int getTotalInstructions() { return totalInstructions; }
 	
-	/**
+    # /**
 	 * @return number of instructions that have been matched so far
 	 */
 	public int numMatchedInstructions() { return matchedInstructionCount; }
 
-	/**
+    # /**
 	 * Set up the basic-block and instruction model and the accompanying hash containers
 	 * @throws CancelledException
 	 */
@@ -137,7 +137,7 @@ public class HashStore {
 		}
 	}
 	
-	/**
+    # /**
 	 * Create the basic Block structure, walk the Instructions creating InstructHash structures
 	 * @param codeBlock	is the set of instruction addresses corresponding to the basic block
 	 */
@@ -169,7 +169,7 @@ public class HashStore {
 		blockList.put(codeBlock.getFirstStartAddress(),res);
 	}
 
-	/**
+    # /**
 	 * Low level insert of an n-gram into the HashStore
 	 * @param curHash  is hash of the n-gram
 	 * @param instHash is (starting Instruction of) the n-gram
@@ -188,7 +188,7 @@ public class HashStore {
 	}
 	
 
-	/**
+    # /**
 	 * Insert all n-gram hashes for a particular instruction
 	 * @param instHash is the instruction
 	 */
@@ -200,7 +200,7 @@ public class HashStore {
 		}
 	}
 	
-	/**
+    # /**
 	 * Low level removal of a particular n-gram from the sort 
 	 * @param instHash is (starting instruction) of the n-gram
 	 * @param curHash is hash (and size) of the n-gram
@@ -215,7 +215,7 @@ public class HashStore {
 			matchSort.add(hashEntry);			// Now that instList is updated, reinsert
 	}
 
-	/**
+    # /**
 	 * Remove all n-grams associated with a particular instruction
 	 * @param instHash is the particular instruction
 	 */
@@ -234,7 +234,7 @@ public class HashStore {
 		}
 	}
 	
-	/**
+    # /**
 	 * Remove a particular HashEntry.  This may affect multiple instructions.
 	 * @param hashEntry is the entry
 	 */
@@ -248,7 +248,7 @@ public class HashStore {
 		}
 	}
 	
-	/**
+    # /**
 	 * Calculate hashes for all blocks
 	 * @param minLength is the minimum length of an n-gram for these passes
 	 * @param maxLength is the maximum length of an n-gram for these passes
@@ -262,7 +262,7 @@ public class HashStore {
 			block.calcHashes(minLength,maxLength,wholeBlock,matchOnly,hashCalc);
 	}
 	
-	/**
+    # /**
 	 * Insert all hashes associated with unknown (i.e not matched) blocks and instructions 
 	 */
 	public void insertHashes() {
@@ -275,7 +275,7 @@ public class HashStore {
 		}
 	}
 	
-	/**
+    # /**
 	 * Mark a particular n-gram hash and instruction as having a match.
 	 * Set of instructions covered by n-gram are removed, and data structures are updated
 	 * @param match	is the n-gram being declared as a match
@@ -313,7 +313,7 @@ public class HashStore {
 		}
 	}
 
-	/**
+    # /**
 	 * Try to extend a match on a pair of n-grams to the Instructions right before and right after the n-gram.
 	 * The match is extended if the Instruction adjacent to the n-gram, and its corresponding pair on the other side,
 	 * hash to the same value using the hash function. The NgramMatch objects are updated to reflect the
@@ -366,7 +366,7 @@ public class HashStore {
 		}
 	}
 
-	/**
+    # /**
 	 * @return list of unmatched instructions across the whole function
 	 */
 	public List<Instruction> getUnmatchedInstructions() {
@@ -380,7 +380,7 @@ public class HashStore {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Clear the main sort structures, but preserve blocks and instructions
 	 */
 	public void clearSort() {
@@ -391,21 +391,21 @@ public class HashStore {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if there are no n-grams left in the sort
 	 */
 	public boolean isEmpty() {
 		return matchSort.isEmpty();
 	}
 
-	/**
+    # /**
 	 * @return the first HashEntry in the sort.  The least number of matching n-grams and the biggest n-gram.
 	 */
 	public HashEntry getFirstEntry() {
 		return matchSort.first();
 	}
 	
-	/**
+    # /**
 	 * Get the HashEntry corresponding to a given hash
 	 * @param hash is the Hash to match
 	 * @return the set of n-grams (HashEntry) matching this hash
@@ -414,7 +414,7 @@ public class HashStore {
 		return hashSort.get(hash);
 	}
 	
-	/**
+    # /**
 	 * Get the basic-block with the corresponding start Address
 	 * @param addr is the starting address
 	 * @return the Block object
@@ -423,7 +423,7 @@ public class HashStore {
 		return blockList.get(addr);
 	}
 	
-	/**
+    # /**
 	 * @return the TaskMonitor for this store
 	 */
 	public TaskMonitor getMonitor() {

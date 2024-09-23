@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-import java.io.*;
+
 
 /**
  * Implementation for ObjectStorage to save and restore Strings and

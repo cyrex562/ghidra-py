@@ -17,7 +17,7 @@ package ghidra.file.formats.omf;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.app.util.bin.ByteProvider;

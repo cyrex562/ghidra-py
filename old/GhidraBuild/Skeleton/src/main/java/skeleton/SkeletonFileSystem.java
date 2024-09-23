@@ -15,7 +15,7 @@
  */
 package skeleton;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.util.bin.ByteProvider;

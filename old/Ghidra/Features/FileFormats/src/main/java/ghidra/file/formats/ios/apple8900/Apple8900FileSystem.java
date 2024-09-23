@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.apple8900;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.ByteProvider;

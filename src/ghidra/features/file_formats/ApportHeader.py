@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.apport;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.ByteProvider;
@@ -124,7 +124,7 @@ public class ApportHeader implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.app.util.bin.StructConverter#toDataType()
 	 */
 	public DataType toDataType() {

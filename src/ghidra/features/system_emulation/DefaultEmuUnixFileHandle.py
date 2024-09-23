@@ -40,7 +40,7 @@ public class DefaultEmuUnixFileHandle<T> implements EmuUnixFileDescriptor<T> {
 
 	private T offset;
 
-	/**
+    # /**
 	 * Construct a new handle on the given file
 	 * 
 	 * @see AbstractEmuUnixSyscallUseropLibrary#createHandle(EmuUnixFile, int)
@@ -61,7 +61,7 @@ public class DefaultEmuUnixFileHandle<T> implements EmuUnixFileDescriptor<T> {
 		this.offset = arithmetic.fromConst(0, offsetBytes);
 	}
 
-	/**
+    # /**
 	 * Get the file opened to this handle
 	 * 
 	 * @return the file
@@ -70,7 +70,7 @@ public class DefaultEmuUnixFileHandle<T> implements EmuUnixFileDescriptor<T> {
 		return file;
 	}
 
-	/**
+    # /**
 	 * Check if the file is readable, throwing {@link EmuIOException} if not
 	 */
 	public void checkReadable() {
@@ -79,7 +79,7 @@ public class DefaultEmuUnixFileHandle<T> implements EmuUnixFileDescriptor<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Check if the file is writable, throwing {@link EmuIOException} if not
 	 */
 	public void checkWritable() {
@@ -88,7 +88,7 @@ public class DefaultEmuUnixFileHandle<T> implements EmuUnixFileDescriptor<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Advance the handle's offset (negative to rewind)
 	 * 
 	 * @param len the number of bytes to advance

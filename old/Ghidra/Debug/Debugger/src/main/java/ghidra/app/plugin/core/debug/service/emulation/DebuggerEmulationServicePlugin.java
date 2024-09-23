@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.service.emulation;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.CompletableFuture;

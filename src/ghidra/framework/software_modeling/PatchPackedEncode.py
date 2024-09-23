@@ -1,23 +1,23 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.PackedDecode.*;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 
 import ghidra.program.model.address.AddressSpace;
@@ -42,7 +42,7 @@ public class PatchPackedEncode extends PackedEncode implements PatchEncoder {
 		writeInteger((TYPECODE_ADDRESSSPACE << TYPECODE_SHIFT), uniqueId);
 	}
 
-	/**
+    # /**
 	 * Return the position after the open element directive at the given position.
 	 * @param pos is the given position
 	 * @return the next position or -1 if the current byte is not an open directive
@@ -58,7 +58,7 @@ public class PatchPackedEncode extends PackedEncode implements PatchEncoder {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Read the integer at the given position.
 	 * @param pos is the given position
 	 * @param len is the length of the integer in 7-bit bytes

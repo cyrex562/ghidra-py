@@ -16,7 +16,7 @@
 package ghidra.framework.store;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.map;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -34,7 +34,7 @@ public class AddressKeyAddressIterator implements AddressIterator {
 	private ErrorHandler errHandler;
 	private boolean forward;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param keyIter address key iterator, may be null.  All long values must decode properly with the specified addrMap.
 	 * @param forward true to iterate in the direction of increasing addresses.
@@ -49,7 +49,7 @@ public class AddressKeyAddressIterator implements AddressIterator {
 		this.errHandler = errHandler;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressIterator#hasNext()
 	 */
 	@Override
@@ -65,7 +65,7 @@ public class AddressKeyAddressIterator implements AddressIterator {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressIterator#next()
 	 */
 	@Override
@@ -88,7 +88,7 @@ public class AddressKeyAddressIterator implements AddressIterator {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Iterator#remove()
 	 */
 	@Override

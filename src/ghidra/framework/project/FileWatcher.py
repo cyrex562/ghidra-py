@@ -48,7 +48,7 @@ public class FileWatcher {
 
 	private FVEventListener eventListener;
 
-	/**
+    # /**
 	 * Constructor. Creates a new {@link Executor} that will inspect the file at regular 
 	 * intervals.  Users must call {@link #start()} to begin polling.
 	 * 
@@ -60,7 +60,7 @@ public class FileWatcher {
 		executor = Executors.newSingleThreadScheduledExecutor();
 	}
 
-	/**
+    # /**
 	 * Suspends the timer so it will no longer poll. This does not perform a shutdown, so the
 	 * future may be scheduled again.
 	 */
@@ -68,7 +68,7 @@ public class FileWatcher {
 		future.cancel(false);
 	}
 
-	/**
+    # /**
 	 * Starts polling, or resumes polling if previously stopped.
 	 */
 	public void start() {
@@ -97,7 +97,7 @@ public class FileWatcher {
 		}, POLLING_DELAY_SEC, POLLING_INTERVAL_SEC, TimeUnit.SECONDS);
 	}
 
-	/**
+    # /**
 	 * Checks the timestamp of the given file to see if it has changed.  If so, returns true.
 	 * 
 	 * @param file

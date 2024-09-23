@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.Msg;
@@ -27,7 +27,7 @@ public class SquashMetablock {
 	// fragmentSize   - The size of the metablock in bytes (lower 15 bits)
 	private final short header;
 
-	/**
+    # /**
 	 * Represents the metadata proceeding a data block within the SquashFS archive
 	 * @param reader A binary reader with pointer index at the start of the metadata
 	 * @throws IOException Any read operation failure

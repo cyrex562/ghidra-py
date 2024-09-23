@@ -18,7 +18,7 @@ package ghidra.app.plugin.core;
 import static org.junit.Assert.*;
 
 import java.awt.Window;
-import java.io.IOException;
+
 
 import org.junit.*;
 

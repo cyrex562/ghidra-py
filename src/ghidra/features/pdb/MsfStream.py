@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +37,7 @@ import ghidra.util.exception.CancelledException;
  */
 public class MsfStream {
 
-	/**
+    # /**
 	 * The maximum length of a stream that we currently allow under this design.
 	 */
 	public static final int MAX_STREAM_LENGTH = Integer.MAX_VALUE;
@@ -53,7 +53,7 @@ public class MsfStream {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns the length of the Stream
 	 * @return byte-length of Stream
 	 */
@@ -61,7 +61,7 @@ public class MsfStream {
 		return streamLength;
 	}
 
-	/**
+    # /**
 	 * Reads numToRead bytes from the stream starting at streamOffset within the stream.
 	 *  Returns the byte array containing the read information. If not all bytes are available
 	 *  to be read, an IOException will be thrown
@@ -81,7 +81,7 @@ public class MsfStream {
 		return bytes;
 	}
 
-	/**
+    # /**
 	 * Reads numToRead bytes from the stream starting at streamOffset within the stream.
 	 *  The bytes are written into the bytes array starting at the bytesOffset location.
 	 *  If not all bytes are available to be read, an IOException will be thrown
@@ -146,7 +146,7 @@ public class MsfStream {
 		}
 	}
 
-	/**
+    # /**
 	 * Debug method to dump the PDB Directory in a pretty format to String
 	 * @param maxOut maximum number of bytes to output
 	 * @return {@link String} containing the pretty output
@@ -185,7 +185,7 @@ public class MsfStream {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Package-protected constructor of a PDB Stream.  Sets the byte length of the
 	 * Stream to -1.  This method is used when the Stream knows/reads its length
 	 * @param msf the {@link Msf} to which the Stream belongs
@@ -195,7 +195,7 @@ public class MsfStream {
 		this.msf = msf;
 	}
 
-	/**
+    # /**
 	 * Package-protected constructor of a PDB Stream.  This method is used when the
 	 *  stream length comes from an external table
 	 * @param msf the {@link Msf} to which the Stream belongs
@@ -206,7 +206,7 @@ public class MsfStream {
 		this.streamLength = streamLength;
 	}
 
-	/**
+    # /**
 	 * Deserializes Stream Length and an extra 4-byte field (which might be the address of the
 	 *  map when it was previously stored in memory) from the bytes parameter starting at the
 	 *  index offset and uses it to provide necessary information for the Stream to be usable.
@@ -221,7 +221,7 @@ public class MsfStream {
 		reader.parseInt();
 	}
 
-	/**
+    # /**
 	 * Deserializes Stream page number information from the bytes parameter starting at the
 	 *  index offset and uses it to provide necessary information for the Stream to be usable.
 	 *  Generally, deserialization is part of the step of loading the Stream information from
@@ -256,7 +256,7 @@ public class MsfStream {
 		}
 	}
 
-	/**
+    # /**
 	 * Deserializes Stream information from the bytes parameter starting at the index offset
 	 *  and uses it to provide necessary information for the Stream to be usable.
 	 *  Generally, deserialization is part of the step of loading the Stream information from
@@ -273,7 +273,7 @@ public class MsfStream {
 		deserializePageNumbers(reader);
 	}
 
-	/**
+    # /**
 	 * Developer mechanism to see if the stream hold the absolute file offset and what the
 	 *  corresponding stream offset is
 	 * @param fileOffset the absolute file offset that we are trying to locate

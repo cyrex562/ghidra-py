@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -36,7 +36,7 @@ public class CramFsInputStream extends InputStream {
 	private int currentByte = 0;
 	private boolean blockExtensionEnabled;
 
-	/**
+    # /**
 	 * Constructor for cramfs input stream.
 	 * @param byteProvider the underlined byte provider for the input stream.
 	 * @param iNode the parent node for the input stream.
@@ -54,7 +54,7 @@ public class CramFsInputStream extends InputStream {
 		combineDecompressedBlockStreams();
 	}
 
-	/**
+    # /**
 	 * Sends the inode to the CramFs block factory and gets back a list of 
 	 * CramFs blocks for the data associated with the inode.
 	 * @return a list of cramFs blocks to be used for decompression.
@@ -65,7 +65,7 @@ public class CramFsInputStream extends InputStream {
 		return blockFactory.produceBlocks();
 	}
 
-	/**
+    # /**
 	 * Gets the Cram file system block list.
 	 * @return the block list
 	 */
@@ -73,7 +73,7 @@ public class CramFsInputStream extends InputStream {
 		return blockList;
 	}
 
-	/**
+    # /**
 	 * Decompress all the data blocks that an inode points to. 
 	 * Adds the uncompressed blocks to an internal list for later processing.
 	 * @throws IOException if there is an error when decompressing the data blocks.
@@ -86,7 +86,7 @@ public class CramFsInputStream extends InputStream {
 		}
 	}
 
-	/**
+    # /**
 	 * Combines all the ZLIB decompressed block stream bytes into one list.
 	 */
 	private void combineDecompressedBlockStreams() {
@@ -97,7 +97,7 @@ public class CramFsInputStream extends InputStream {
 		}
 	}
 
-	/**
+    # /**
 	 * Decompress the specified block.
 	 * @param blockIndex the block to decompress.
 	 * @return decompressed output stream.
@@ -109,7 +109,7 @@ public class CramFsInputStream extends InputStream {
 
 	}
 
-	/**
+    # /**
 	 * Reads one byte from the internal uncompressed output list of Bytes.
 	 * @return The byte value from the internal list at the current read position.
 	 * @throws IOException if there is an error while reading. 

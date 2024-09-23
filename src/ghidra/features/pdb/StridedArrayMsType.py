@@ -33,7 +33,7 @@ public class StridedArrayMsType extends AbstractArrayMsType {
 
 	public static final int PDB_ID = 0x1516;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -48,7 +48,7 @@ public class StridedArrayMsType extends AbstractArrayMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the stride for this Strided Array.
 	 * @return Size of the stride.
 	 */

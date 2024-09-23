@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.*;
@@ -28,8 +28,8 @@ import ghidra.util.DataConverter;
 import ghidra.util.StringUtilities;
 
 # /**
- * Basic implementation for a pointer dataType
- */
+# * Basic implementation for a pointer dataType
+# */
 public class PointerDataType extends BuiltIn implements Pointer {
 
 	public final static PointerDataType dataType = new PointerDataType();
@@ -53,14 +53,14 @@ public class PointerDataType extends BuiltIn implements Pointer {
 	private boolean deleted = false;
 	private String displayName;
 
-	/**
+    # /**
 	 * <code>isEquivalentActive</code> is used to break cyclical recursion when
 	 * performing an {@link #isEquivalent(DataType)} checks on pointers which must
 	 * also check the base datatype equivelency.
 	 */
 	private ThreadLocal<Boolean> isEquivalentActive = ThreadLocal.withInitial(() -> Boolean.FALSE);
 
-	/**
+    # /**
 	 * Creates a dynamically-sized default pointer data type. A dynamic pointer size
 	 * of 4-bytes will be in used, but will adapt to a data type manager's data
 	 * organization when resolved.
@@ -69,7 +69,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		this(null, -1, null);
 	}
 
-	/**
+    # /**
 	 * Creates a dynamically-sized default pointer data type. The pointer size is
 	 * established dynamically based upon the data organization associated with the
 	 * specified dtm but can adapt to another data type manager's data organization
@@ -81,7 +81,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		this(null, -1, dtm);
 	}
 
-	/**
+    # /**
 	 * Construct a dynamically-sized pointer to a referencedDataType A dynamic
 	 * pointer size of 4-bytes will be in used, but will adapt to a data type
 	 * manager's data organization when resolved.
@@ -92,7 +92,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		this(referencedDataType, -1, null);
 	}
 
-	/**
+    # /**
 	 * Construct a pointer of a specified length to a referencedDataType. Note: It
 	 * is preferred to use default sized pointers when possible (i.e., length=-1,
 	 * see {@link #PointerDataType(DataType)}) instead of explicitly specifying the
@@ -106,7 +106,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		this(referencedDataType, length, null);
 	}
 
-	/**
+    # /**
 	 * Construct a dynamically-sized pointer to the given data type. The pointer
 	 * size is established dynamically based upon the data organization associated
 	 * with the specified dtm but can adapt to another data type manager's data
@@ -120,7 +120,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		this(referencedDataType, -1, dtm);
 	}
 
-	/**
+    # /**
 	 * Construct a pointer of a specified length to a referencedDataType. Note: It
 	 * is preferred to use default sized pointers when possible (i.e., length=-1,
 	 * see {@link #PointerDataType(DataType, DataTypeManager)}) instead of
@@ -289,7 +289,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		return displayName;
 	}
 
-	/**
+    # /**
 	 * Return a unique name for this pointer
 	 */
 	private static String constructUniqueName(DataType referencedDataType, int ptrLength) {
@@ -351,7 +351,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		return POINTER_TYPEDEF_SETTINGS_DEFS;
 	}
 
-	/**
+    # /**
 	 * Generate an address value based upon bytes stored at the specified buf
 	 * location.  Interpretation of settings may depend on access to a {@link Memory} 
 	 * object associated with the specified {@link MemBuffer} buf.
@@ -374,7 +374,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 			/* ignore */});
 	}
 
-	/**
+    # /**
 	 * Generate an address value based upon bytes stored at the specified buf
 	 * location.  Interpretation of settings may depend on access to a {@link Memory} 
 	 * object associated with the specified {@link MemBuffer} buf.
@@ -540,7 +540,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		return StringUtilities.pad(offsetStr, '0', len);
 	}
 
-	/**
+    # /**
 	 * Get an offset value based upon bytes stored at the specified buf
 	 * location.
 	 * 
@@ -566,7 +566,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		return converter.getValue(bytes, size);
 	}
 
-	/**
+    # /**
 	 * Generate an address value based upon bytes stored at the specified buf
 	 * location.  The stored bytes will be interpreted as an unsigned byte 
 	 * offset into the specified targetSpace.
@@ -614,7 +614,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Read segmented address from memory. NOTE: little-endian memory assumed.
 	 * 
 	 * @param buf     memory buffer associated with a segmented-address space
@@ -778,7 +778,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		return (referencedDataType == dt || referencedDataType.dependsOn(dt));
 	}
 
-	/**
+    # /**
 	 * Get a pointer data-type instance with a default size
 	 * 
 	 * @param dt  data-type referenced by pointer
@@ -790,7 +790,7 @@ public class PointerDataType extends BuiltIn implements Pointer {
 		return new PointerDataType(dt, dtm);
 	}
 
-	/**
+    # /**
 	 * Get a pointer data-type instance of the requested size. NOTE: The returned
 	 * data-type will not be associated with any particular data-type-manager and
 	 * may therefore not utilize dynamically-sized-pointers when a valid pointerSize

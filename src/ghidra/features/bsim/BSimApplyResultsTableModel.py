@@ -92,7 +92,7 @@ public class BSimApplyResultsTableModel extends AddressBasedTableModel<BSimApply
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the address for the given row.
 	 */
 	@Override
@@ -157,7 +157,7 @@ public class BSimApplyResultsTableModel extends AddressBasedTableModel<BSimApply
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the column in the table for displaying the original function name (the name
 	 * to be changed).
 	 */
@@ -181,7 +181,7 @@ public class BSimApplyResultsTableModel extends AddressBasedTableModel<BSimApply
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the column in the table for displaying the destination function name (the
 	 * name to use as the replacement).
 	 *
@@ -206,7 +206,7 @@ public class BSimApplyResultsTableModel extends AddressBasedTableModel<BSimApply
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the column for displaying any status information related to the rename. This
 	 * is where error information will be displayed for rename operations that fail.
 	 *

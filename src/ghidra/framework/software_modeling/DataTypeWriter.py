@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -26,10 +26,10 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * A class used to convert data types into ANSI-C.
- *
- * The ANSI-C code should compile on most platforms.
- */
+# * A class used to convert data types into ANSI-C.
+# *
+# * The ANSI-C code should compile on most platforms.
+# */
 public class DataTypeWriter {
 
 	// list of Ghidra built-in type names which correspond to C primitive types
@@ -53,7 +53,7 @@ public class DataTypeWriter {
 	private AnnotationHandler annotator;
 	private boolean cppStyleComments = false;
 
-	/**
+    # /**
 	 * Constructs a new instance of this class using the given writer. The default annotation
 	 * handler is used.
 	 * @param dtm data-type manager corresponding to target program or null for default
@@ -64,7 +64,7 @@ public class DataTypeWriter {
 		this(dtm, writer, new DefaultAnnotationHandler());
 	}
 
-	/**
+    # /**
 	 * Constructs a new instance of this class using the given writer. The default annotation
 	 * handler is used.
 	 * @param dtm data-type manager corresponding to target program or null for default
@@ -77,7 +77,7 @@ public class DataTypeWriter {
 		this(dtm, writer, new DefaultAnnotationHandler(), cppStyleComments);
 	}
 
-	/**
+    # /**
 	 * Constructs a new instance of this class using the given writer and annotation handler
 	 * @param dtm data-type manager corresponding to target program or null for default
 	 * @param writer the writer to use when writing data types
@@ -89,7 +89,7 @@ public class DataTypeWriter {
 		this(dtm, writer, annotator, false);
 	}
 
-	/**
+    # /**
 	 * Constructs a new instance of this class using the given writer and annotation handler
 	 * @param dtm data-type manager corresponding to target program or null for default
 	 * @param writer the writer to use when writing data types
@@ -124,7 +124,7 @@ public class DataTypeWriter {
 		return "/* " + text + " */";
 	}
 
-	/**
+    # /**
 	 * Converts all data types in the data type manager into ANSI-C code.
 	 * @param dataTypeManager the manager containing the data types to write
 	 * @param monitor the task monitor
@@ -136,7 +136,7 @@ public class DataTypeWriter {
 		write(dataTypeManager.getRootCategory(), monitor);
 	}
 
-	/**
+    # /**
 	 * Converts all data types in the category into ANSI-C code.
 	 * @param category the category containing the datatypes to write
 	 * @param monitor the task monitor
@@ -157,7 +157,7 @@ public class DataTypeWriter {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts all data types in the array into ANSI-C code.
 	 * @param dataTypes the data types to write
 	 * @param monitor the task monitor
@@ -175,7 +175,7 @@ public class DataTypeWriter {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts all data types in the list into ANSI-C code.
 	 * @param dataTypes the data types to write
 	 * @param monitor the task monitor
@@ -214,7 +214,7 @@ public class DataTypeWriter {
 		doWrite(dt, monitor, throwExceptionOnInvalidType);
 	}
 
-	/**
+    # /**
 	 * Writes the data type as ANSI-C using the underlying writer.
 	 * @param dt the data type to write as ANSI-C
 	 * @param monitor the task monitor
@@ -620,7 +620,7 @@ public class DataTypeWriter {
 		writer.write(EOL);
 	}
 
-	/**
+    # /**
 	 * Typedef Format: typedef <TYPE_DEF_NAME> <BASE_TYPE_NAME>
 	 * @throws CancelledException if the action is cancelled by the user
 	 */
@@ -719,7 +719,7 @@ public class DataTypeWriter {
 		}
 	}
 
-	/**
+    # /**
 	 * Write all built-in data types declarations into ANSI-C code. Those types whose name matches
 	 * the corresponding primitive C-type. are not included.
 	 * @throws IOException if there is an exception writing the output

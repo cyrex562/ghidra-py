@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import java.util.*;
@@ -22,20 +22,20 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Instruction;
 
 # /**
- * A hash utility to uniquely identify a temporary Varnode in data-flow
- *
- * Most Varnodes can be identified within the data-flow graph by their storage address
- * and the address of the PcodeOp that defines them.  For temporary registers,
- * this does not work because the storage address is ephemeral. This class allows
- * Varnodes like temporary registers (and constants) to be robustly identified
- * by hashing details of the local data-flow.
- *
- * This class, when presented with a Varnode (via constructor), calculates a hash (getHash())
- * and an address (getAddress()) of the PcodeOp most closely associated with the Varnode,
- * either the defining op or the op directly reading the Varnode.
- * There are actually four hash variants that can be calculated, labeled 0, 1, 2, or 3,
- * which incrementally hash in a larger portion of data-flow.
- */
+# * A hash utility to uniquely identify a temporary Varnode in data-flow
+# *
+# * Most Varnodes can be identified within the data-flow graph by their storage address
+# * and the address of the PcodeOp that defines them.  For temporary registers,
+# * this does not work because the storage address is ephemeral. This class allows
+# * Varnodes like temporary registers (and constants) to be robustly identified
+# * by hashing details of the local data-flow.
+# *
+# * This class, when presented with a Varnode (via constructor), calculates a hash (getHash())
+# * and an address (getAddress()) of the PcodeOp most closely associated with the Varnode,
+# * either the defining op or the op directly reading the Varnode.
+# * There are actually four hash variants that can be calculated, labeled 0, 1, 2, or 3,
+# * which incrementally hash in a larger portion of data-flow.
+# */
 public class DynamicHash {
 
 	// Table for how to hash opcodes, lumps certain operators (i.e. AND SUB PTRADD PTRSUB) into one hash
@@ -77,7 +77,7 @@ public class DynamicHash {
 		PcodeOp.SEGMENTOP, PcodeOp.CPOOLREF, PcodeOp.NEW, PcodeOp.INSERT, PcodeOp.EXTRACT,
 		PcodeOp.POPCOUNT, PcodeOp.LZCOUNT };
 
-	/**
+    # /**
 	 * An edge between a Varnode and a PcodeOp
 	 * 
 	 * A DynamicHash is defined on a sub-graph of the data-flow, and this defines an edge
@@ -154,7 +154,7 @@ public class DynamicHash {
 		opedge = new ArrayList<>();
 	}
 
-	/**
+    # /**
 	 * Construct a hash of the given Varnode with a specific hash method.
 	 * 
 	 * @param root is the given Varnode
@@ -165,7 +165,7 @@ public class DynamicHash {
 		calcHash(root, method);
 	}
 
-	/**
+    # /**
 	 * Construct a unique hash for the given Varnode, which must be in
 	 * a syntax tree.  The hash method is cycled until a uniquely identifying one is found.
 	 * @param root is the given Varnode
@@ -176,7 +176,7 @@ public class DynamicHash {
 		uniqueHash(root, fd);
 	}
 
-	/**
+    # /**
 	 * Construct a unique hash that allows recovery of a specific PcodeOp and slot from the
 	 * syntax tree.  The hash method is cycled until a uniquely identifying one is found.
 	 * @param op is the specific PcodeOp to hash
@@ -188,7 +188,7 @@ public class DynamicHash {
 		uniqueHash(op, slot, fd);
 	}
 
-	/**
+    # /**
 	 * Construct a level 0 hash on the input Varnode to the given PcodeOp
 	 * 
 	 * The PcodeOp can be raw, no linked into a PcodeSyntaxTree
@@ -221,7 +221,7 @@ public class DynamicHash {
 		opedge.clear();
 	}
 
-	/**
+    # /**
 	 * For a DynamicHash on a PcodeOp, the op must not be a CAST or other skipped opcode.
 	 * Test if the given op is a skip op, and if so follow data-flow indicated by the
 	 * slot to another PcodeOp until we find one that isn't a skip op. Return null, if
@@ -256,7 +256,7 @@ public class DynamicHash {
 		return new ToOpEdge(op, slot);
 	}
 
-	/**
+    # /**
 	 * Encode a particular PcodeOp and slot
 	 * @param op is the PcodeOp to preserve
 	 * @param slot is the slot to preserve (-1 for output, >=0 for input)
@@ -809,7 +809,7 @@ public class DynamicHash {
 		return (int) h;
 	}
 
-	/**
+    # /**
 	 * Test that extendval is equal to val1, where extendval may be an extension
 	 * @param val1  is the value that needs to be matched
 	 * @param size  is the number of bytes in the value to be matched
@@ -831,7 +831,7 @@ public class DynamicHash {
 		return (val1 == (mask & extendval));
 	}
 
-	/**
+    # /**
 	 * Given a constant value accessed as an operand by a particular instruction,
 	 * calculate a (level 0) hash for (any) corresponding constant varnode
 	 * @param instr is the instruction referencing the constant

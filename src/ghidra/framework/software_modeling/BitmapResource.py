@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import java.awt.Transparency;
 import java.awt.color.ColorSpace;
 import java.awt.image.*;
-import java.io.IOException;
+
 
 import javax.swing.ImageIcon;
 
@@ -83,7 +83,7 @@ public class BitmapResource {
 	BI_CMYKRLE4 = 0x000D	   
 */
 
-	/**
+    # /**
 	 * @throws IOException 
 	 * 
 	 */
@@ -139,7 +139,7 @@ public class BitmapResource {
 		}
 	}
 
-	/**
+    # /**
 	 * @return int size of mask section in bytes
 	 */
 	public int getMaskLength() {
@@ -170,7 +170,7 @@ public class BitmapResource {
 		return compression;
 	}
 
-	/**
+    # /**
 	 * Get the raw image data size as contained within this resource.  If compressed, 
 	 * this will be smaller than the value returned by {@link #getImageDataSize() } which reflects
 	 * the uncompressed size.
@@ -180,7 +180,7 @@ public class BitmapResource {
 		return rawSizeImage;
 	}
 
-	/**
+    # /**
 	 * Returns the uncompressed image data size.  The default implementation will
 	 * return the image data size specified by the header if non-zero, otherwize
 	 * a computed data length will be returned based upon getHeight(), getWidth() and
@@ -194,7 +194,7 @@ public class BitmapResource {
 		return sizeImage;
 	}
 
-	/**
+    # /**
 	 * Compute the uncompressed image data size based upon getHeight(), getWidth() and
 	 * getBitCount().
 	 * @return computed image data size
@@ -203,7 +203,7 @@ public class BitmapResource {
 		return getBytesPerLine() * getHeight();
 	}
 
-	/**
+    # /**
 	 * Compute the uncompressed image data size for a single line based upon getWidth() and
 	 * getBitCount().
 	 * @return computed image data size for single line
@@ -275,7 +275,7 @@ public class BitmapResource {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return int
 	 */
 	public int getColorMapLength() {
@@ -285,7 +285,7 @@ public class BitmapResource {
 		return getClrUsed() * 4;
 	}
 
-	/**
+    # /**
 	 * @return DataImage
 	 */
 	public DataImage getDataImage(MemBuffer buf) {
@@ -326,7 +326,7 @@ public class BitmapResource {
 		}
 	}
 
-	/**
+    # /**
 	 * @param buf
 	 * @return DataImage
 	 */
@@ -353,7 +353,7 @@ public class BitmapResource {
 		return new BitmapDataImage(image);
 	}
 
-	/**
+    # /**
 	 * @param buf
 	 * @return DataImage
 	 */
@@ -380,7 +380,7 @@ public class BitmapResource {
 		return new BitmapDataImage(image);
 	}
 
-	/**
+    # /**
 	 * @param buf
 	 * @return DataImage
 	 */
@@ -398,7 +398,7 @@ public class BitmapResource {
 		return new BitmapDataImage(image);
 	}
 
-	/**
+    # /**
 	 * @param buf
 	 * @return DataImage
 	 */
@@ -416,7 +416,7 @@ public class BitmapResource {
 		return new BitmapDataImage(image);
 	}
 
-	/**
+    # /**
 	 * @param buf
 	 * @return DataImage
 	 */
@@ -432,7 +432,7 @@ public class BitmapResource {
 		return new BitmapDataImage(image);
 	}
 
-	/**
+    # /**
 	 * @param buf
 	 * @param dbuf
 	 */
@@ -501,7 +501,7 @@ public class BitmapResource {
 		}
 	}
 
-	/**
+    # /**
 	 * Process compressed image data contained within the specified memory buffer.
 	 * @param mem memory buffer positioned to start of compressed image data
 	 * @param out optional decompressed image data output stream

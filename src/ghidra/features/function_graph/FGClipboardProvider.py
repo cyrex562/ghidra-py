@@ -54,7 +54,7 @@ public class FGClipboardProvider extends CodeBrowserClipboardProvider {
 		return context.getComponentProvider() == componentProvider;
 	}
 
-	/**
+    # /**
 	 * Overridden because we don't have a single listing model from which to copy, but rather 
 	 * many different ones, depending upon the which vertex contains the selection.
 	 */

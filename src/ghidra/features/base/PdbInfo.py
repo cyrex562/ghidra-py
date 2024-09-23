@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.framework.options.Options;

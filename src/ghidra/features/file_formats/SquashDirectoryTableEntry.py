@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 
@@ -39,7 +39,7 @@ public class SquashDirectoryTableEntry {
 	// Upon creation, this is just the name of this sub-entry, but will be expanded to the full path
 	private String path;
 
-	/**
+    # /**
 	 * Represents an entry in the directory table
 	 * @param reader A binary reader with pointer index at the start of the entry data
 	 * @param superBlock The SuperBlock for the current archive

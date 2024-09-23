@@ -18,7 +18,7 @@ package ghidra.program.database.code;
 import ghidra.program.model.listing.Instruction;
 import ghidra.program.model.listing.InstructionIterator;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import db.DBRecord;

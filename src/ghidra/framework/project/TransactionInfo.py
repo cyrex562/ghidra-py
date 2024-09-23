@@ -25,26 +25,26 @@ public interface TransactionInfo {
 
 	public long getID();
 
-	/**
+    # /**
 	 * Returns the description of this transaction.
 	 * @return the description of this transaction
 	 */
 	public String getDescription();
 
-	/**
+    # /**
 	 * Returns the list of open sub-transactions that are contained
 	 * inside this transaction.
 	 * @return the list of open sub-transactions
 	 */
 	public ArrayList<String> getOpenSubTransactions();
 
-	/**
+    # /**
 	 * Get the status of the corresponding transaction.
 	 * @return status
 	 */
 	public Status getStatus();
 
-	/**
+    # /**
 	 * Determine if the corresponding transaction, and all of its sub-transactions, has been 
 	 * comitted to the underlying database.
 	 * @return true if the corresponding transaction has been comitted, else false.

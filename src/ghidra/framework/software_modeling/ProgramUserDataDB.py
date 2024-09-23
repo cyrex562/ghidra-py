@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -35,17 +35,17 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <code>ProgramUserDataDB</code> stores user data associated with a specific program.
- * A ContentHandler should not be created for this class since it must never be stored
- * within a DomainFolder.
- */
+# * <code>ProgramUserDataDB</code> stores user data associated with a specific program.
+# * A ContentHandler should not be created for this class since it must never be stored
+# * within a DomainFolder.
+# */
 class ProgramUserDataDB extends DomainObjectAdapterDB implements ProgramUserData {
 
 // TODO: WARNING! This implementation does not properly handle undo/redo in terms of cache invalidation
 
 	private static ProgramContentHandler programContentHandler = new ProgramContentHandler();
 
-	/**
+    # /**
 	 * DB_VERSION should be incremented any time a change is made to the overall
 	 * database schema associated with any of the managers.
 	 * 
@@ -54,7 +54,7 @@ class ProgramUserDataDB extends DomainObjectAdapterDB implements ProgramUserData
 	 */
 	static final int DB_VERSION = 1;
 
-	/**
+    # /**
 	 * UPGRADE_REQUIRED_BFORE_VERSION should be changed to DB_VERSION any time the
 	 * latest version requires a forced upgrade (i.e., Read-only mode not supported
 	 * until upgrade is performed).  It is assumed that read-only mode is supported
@@ -225,7 +225,7 @@ class ProgramUserDataDB extends DomainObjectAdapterDB implements ProgramUserData
 		}
 	}
 
-	/**
+    # /**
 	 * Language corresponding to languageId was found.  Check language version
 	 * for language upgrade situation.
 	 * @throws LanguageNotFoundException if language version has changed
@@ -264,7 +264,7 @@ class ProgramUserDataDB extends DomainObjectAdapterDB implements ProgramUserData
 		return null;
 	}
 
-	/**
+    # /**
 	 * Language specified by languageName was not found.  Check for
 	 * valid language translation/migration.  Old language version specified by
 	 * languageVersion.
@@ -408,7 +408,7 @@ class ProgramUserDataDB extends DomainObjectAdapterDB implements ProgramUserData
 		return versionExc;
 	}
 
-	/**
+    # /**
 	 * Translate language
 	 * @param translator language translator, if null only re-disassembly will occur.
 	 * @param monitor task monitor

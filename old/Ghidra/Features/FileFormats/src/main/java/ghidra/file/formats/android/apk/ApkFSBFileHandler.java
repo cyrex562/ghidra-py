@@ -16,7 +16,7 @@
 package ghidra.file.formats.android.apk;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;

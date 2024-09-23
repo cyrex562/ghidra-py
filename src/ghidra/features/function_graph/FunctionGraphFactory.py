@@ -40,7 +40,7 @@ import ghidra.util.task.TaskMonitor;
 
 public class FunctionGraphFactory {
 
-	/**
+    # /**
 	 * Clones the given function graph, creating a new graph with cloned versions of each
 	 * vertex and edge. 
 	 * 
@@ -127,7 +127,7 @@ public class FunctionGraphFactory {
 		return new FunctionGraphVertexAttributes(program);
 	}
 
-	/**
+    # /**
 	 * Creates a new function graph for the given function
 	 * 
 	 * @param function the function to graph

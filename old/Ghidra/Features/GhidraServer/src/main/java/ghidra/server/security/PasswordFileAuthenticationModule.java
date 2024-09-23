@@ -15,7 +15,7 @@
  */
 package ghidra.server.security;
 
-import java.io.IOException;
+
 import java.util.Arrays;
 
 import javax.security.auth.Subject;

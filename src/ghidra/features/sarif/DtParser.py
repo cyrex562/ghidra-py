@@ -34,7 +34,7 @@ class DtParser {
 		this.parser = new DataTypeParser(dtManager, dtManager, null, AllowedDataTypes.DYNAMIC);
 	}
 
-	/**
+    # /**
 	 * Parse the specified dtName within the specified category.
 	 * @param dtName
 	 * @param category

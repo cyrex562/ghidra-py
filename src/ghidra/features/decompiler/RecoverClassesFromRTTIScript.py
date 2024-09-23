@@ -359,7 +359,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to determine if pdb info has been applied to the program
 	 * @return true if pdb info has been applied to program
 	 */
@@ -441,7 +441,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the gcc relocations needed to find the special typeinfos/vtables 
 	 * have any issues that would keep script from running correctly.
 	 * @return true if there are any issues with the relocations, false otherwise
@@ -517,7 +517,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		mgr.startAnalysis(monitor, false);
 	}
 
-	/**
+    # /**
 	 * Method to create a class hierarchy graph where the parents are at the top of the graph and 
 	 * the children at the bottom. Classes with no parents have blue nodes. Classes with a single 
 	 * parent have green nodes. Classes with multiple parents have red nodes. Classes with virtual 
@@ -600,7 +600,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return g;
 	}
 
-	/**
+    # /**
 	 * Method to display the given graph
 	 * @param graph the given graph
 	 * @throws GraphException if the graph service cannot get the graph display
@@ -628,7 +628,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		display.setGraph(graph, graphOptions, "Recovered Classes Graph", false, TaskMonitor.DUMMY);
 	}
 
-	/**
+    # /**
 	 * Method to determine, based on the script's output settings, if the script will do any output
 	 * @return true if the script will do output, false otherwise
 	 */
@@ -656,7 +656,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Script works on versions of ghidra including and after 9.2 except for 9.2.1 because a method 
 	 * was accidentally removed from FillOutStructureCmd that is needed
 	 * @return true if script will work and false otherwise
@@ -671,7 +671,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to check if executable format is PE
 	 */
 	private boolean isPE() {
@@ -683,7 +683,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to set the global variable isGcc
 	 */
 	private boolean isGcc() {
@@ -729,7 +729,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return isGcc;
 	}
 
-	/**
+    # /**
 	 * Method to set the global variable isWindows
 	 */
 	private boolean isWindows() {
@@ -740,7 +740,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return isWindows;
 	}
 
-	/**
+    # /**
 	 * Method to determine if somehow the constructor list and destructor list for a class contain 
 	 * overlapping functions
 	 * @param recoveredClass the given class
@@ -769,7 +769,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to analyze the program changes with the decompiler parameter ID analyzer
 	 * @param set the set of addresses to analyze
 	 * @throws Exception if the analyzer throws an exception
@@ -780,7 +780,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		analyzer.added(currentProgram, set, monitor, new MessageLog());
 	}
 
-	/**
+    # /**
 	 * If program has the "RTTI Found" option at all it means RTTI analyzer has been run and 
 	 * does not need to be run again. If program does not have the option it means either analyzer 
 	 * has not been run or it has been run by an older version (<10.3) so we don't know and should
@@ -796,7 +796,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to check to see if current program has RTTI based on option setting
 	 * @return true if program contains RTTI and false if not
 	 */
@@ -805,7 +805,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return programOptions.getBoolean(RTTI_FOUND_OPTION, false);
 	}
 
-	/**
+    # /**
 	 * Get the version of Ghidra that was used to analyze this program
 	 * @return a string containing the version number of Ghidra used to analyze the current program
 	 */
@@ -815,7 +815,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return options.getString("Created With Ghidra Version", null);
 	}
 
-	/**
+    # /**
 	 * Method to bookmark all of the constructor/destructor/indeterminate functions
 	 * @param recoveredClasses List of classes
 	 * @throws CancelledException if cancelled
@@ -827,7 +827,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		bookmarkRemainingIndeterminateConstructorsAndDestructors(recoveredClasses);
 	}
 
-	/**
+    # /**
 	 * Method to print class hierarchy of the form child : parent: grandparent : etc...
 	 * @param stringBuffer the buffer to add the newly created string to
 	 * @param recoveredClass the current class to process
@@ -882,7 +882,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the AddressSet of the current program's initialized memory
 	 * @return the AddressSet of the current program's initialized memory
 	 * @throws CancelledException if cancelled
@@ -902,7 +902,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return dataAddresses;
 	}
 
-	/**
+    # /**
 	 * Method to bookmark found constructor functions
 	 * @param recoveredClasses List of classes
 	 * @throws CancelledException if cancelled
@@ -916,7 +916,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to bookmark found constructor functions
 	 * @param recoveredClasses List of classes
 	 * @throws CancelledException if cancelled
@@ -931,7 +931,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to bookmark indeterminate constructor/destructor functions
 	 * @param recoveredClasses List of classes
 	 * @throws CancelledException if cancelled
@@ -945,7 +945,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to add/append analysis bookmarks with the given comment to the given list of functions
 	 * @param functions List of functions
 	 * @param comment the bookmark comment to add
@@ -965,7 +965,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to optionally print to console or output to file various types of class information
 	 * depending on the options set at top of script
 	 * @param recoveredClasses List of classes
@@ -1011,7 +1011,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to print class definitions given information discovered about each class.
 	 * Start with top parents and recurse over their children
 	 * @param recoveredClasses List of classes
@@ -1038,7 +1038,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to print class info for each of the classes on the given list, starting with classes with no parents then 
 	 * recursively printing infor for their child classes
 	 * @param recoveredClasses the list of classes
@@ -1069,7 +1069,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to print class hierarchies for the given list of classes starting with the lowest 
 	 * child classes in each family of classes
 	 * @param recoveredClasses the list of classes
@@ -1095,7 +1095,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to output simple class hierarchies for the given classes to the given output writer
 	 * @param recoveredClasses the list of classes
 	 * @param out the output writer
@@ -1119,7 +1119,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		out.append(wholeBuffer);
 	}
 
-	/**
+    # /**
 	 * Method to output class info for the given list of classes
 	 * @param recoveredClasses the list of classes
 	 * @param out the output writer
@@ -1136,7 +1136,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to print counts of various class items for the given classes, such as number of 
 	 * constructors, destructors, etc...
 	 * @param recoveredClasses list of classes
@@ -1177,7 +1177,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to get the total number of 
 	 * @param recoveredClasses list of classes
 	 * @return the total number of constructors and destructors in the given list of classes
@@ -1195,7 +1195,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to get the total number of inlined constructors in the given list of classes
 	 * @param recoveredClasses list of classes
 	 * @return total number of inlined constructors in the given list of classes
@@ -1213,7 +1213,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return total;
 	}
 
-	/**
+    # /**
 	 * Method to print the given list of addresses 
 	 * @param addresses the list of addresses to print
 	 * @throws CancelledException if cancelled
@@ -1225,7 +1225,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to output the class, it's parents and it's children for each of the listed classes
 	 * @param recoveredClasses the given classes
 	 * @param out the output writer
@@ -1240,7 +1240,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to print the class, it's parents and it's children for each of the listed classes
 	 * @param recoveredClasses the given classes
 	 * @throws CancelledException if cancelled
@@ -1254,7 +1254,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to get formatted string containing the given class, it's parents and it's children 
 	 * @param recoveredClass the given classes
 	 * @return StringBuffer containing the formatted string containing the given class, it's parents 
@@ -1295,7 +1295,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to create a string containing class info for the given class including parents, 
 	 * children, constructors, destructors inlined constructors, inlined destructors, member 
 	 * functions, member data and the same info for each child class
@@ -1456,7 +1456,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return stringBuffer;
 	}
 
-	/**
+    # /**
 	 * Method to get the function signature string, from the decompiler if possible, otherwise from 
 	 * the listing
 	 * @param function the given function
@@ -1510,7 +1510,7 @@ public class RecoverClassesFromRTTIScript extends GhidraScript {
 		return stringBuffer.toString();
 	}
 
-	/**
+    # /**
 	 * Method to create a string containing a C++-like representation of the given class
 	 * @param recoveredClass the given class
 	 * @return string containing a C++-like representation of the given class

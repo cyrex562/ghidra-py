@@ -22,7 +22,7 @@ import ghidra.program.model.address.Address;
  */
 interface DisassembleableAddressSymbolApplier {
 
-	/**
+    # /**
 	 * Returns the address for disassembly.  Does not increment the iterator
 	 * @return the address
 	 */

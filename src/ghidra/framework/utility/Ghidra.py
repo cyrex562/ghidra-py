@@ -27,7 +27,7 @@ import java.awt.Taskbar;
  */
 public class Ghidra {
 
-	/**
+    # /**
 	 * Launches the given {@link GhidraLaunchable} specified in the first command line argument
 	 * 
 	 * @param args The first argument is the name of the {@link GhidraLaunchable} to launch.

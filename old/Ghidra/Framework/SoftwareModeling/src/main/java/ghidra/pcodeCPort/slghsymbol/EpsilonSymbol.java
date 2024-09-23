@@ -17,7 +17,7 @@ package ghidra.pcodeCPort.slghsymbol;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 
 import ghidra.pcodeCPort.semantics.ConstTpl;
 import ghidra.pcodeCPort.semantics.VarnodeTpl;

@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.gui.filters;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.sql.SQLException;
 import java.util.List;
@@ -69,7 +69,7 @@ public class NotExecutableCategoryBSimFilterType extends BSimFilterType {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Custom category filters are processed after results are received, as a necessary consequence
 	 * of the database structure.  So we allow the query to return all possible results, and cull
 	 * them after the fact.

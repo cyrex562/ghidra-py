@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.util.Arrays;
@@ -22,14 +22,14 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 
 # /**
- * The <CODE>FunctionRepeatableCommentFieldLocation</CODE> class provides specific information
- * about the Function Repeatable Comment field within a program location.
- */
+# * The <CODE>FunctionRepeatableCommentFieldLocation</CODE> class provides specific information
+# * about the Function Repeatable Comment field within a program location.
+# */
 public class FunctionRepeatableCommentFieldLocation extends FunctionLocation {
 
 	private String[] commentArray;
 
-	/**
+    # /**
 	 * Construct a new FunctionRepeatableCommentFieldLocation object.
 	 * 
 	 * @param program the program of the location
@@ -45,7 +45,7 @@ public class FunctionRepeatableCommentFieldLocation extends FunctionLocation {
 		this.commentArray = comment;
 	}
 
-	/**
+    # /**
 	 * Construct a new FunctionRepeatableCommentFieldLocation object.
 	 * 
 	 * @param program the program of the location
@@ -59,14 +59,14 @@ public class FunctionRepeatableCommentFieldLocation extends FunctionLocation {
 		this(program, functionAddr, functionAddr, comment, row, col);
 	}
 
-	/**
+    # /**
 	 * Default constructor needed for restoring
 	 * a program location from XML
 	 */
 	public FunctionRepeatableCommentFieldLocation() {
 	}
 
-	/**
+    # /**
 	 * Return the function comment string at this location.
 	 */
 	public String[] getComment() {

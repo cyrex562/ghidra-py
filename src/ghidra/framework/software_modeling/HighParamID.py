@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
@@ -34,11 +34,11 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * 
- *
- * High-level abstraction associated with a low level function made up of assembly instructions.
- * Based on information the decompiler has produced after working on a function.
- */
+# * 
+# *
+# * High-level abstraction associated with a low level function made up of assembly instructions.
+# * Based on information the decompiler has produced after working on a function.
+# */
 public class HighParamID extends PcodeSyntaxTree {
 	public final static String DECOMPILER_TAG_MAP = "decompiler_tags";
 	private Function func; // The traditional function object
@@ -49,7 +49,7 @@ public class HighParamID extends PcodeSyntaxTree {
 	private List<ParamMeasure> inputlist = new ArrayList<>();
 	private List<ParamMeasure> outputlist = new ArrayList<>();
 
-	/**
+    # /**
 	 * @param function  function associated with the higher level function abstraction.
 	 * @param language language parser used to disassemble/get info on the language.
 	 * @param compilerSpec the compiler spec.
@@ -64,49 +64,49 @@ public class HighParamID extends PcodeSyntaxTree {
 		protoextrapop = PrototypeModel.UNKNOWN_EXTRAPOP;
 	}
 
-	/**
+    # /**
 	 * @return get the name of the function
 	 */
 	public String getFunctionName() {
 		return functionname;
 	}
 
-	/**
+    # /**
 	 * @return get the Address of the function
 	 */
 	public Address getFunctionAddress() {
 		return functionaddress;
 	}
 
-	/**
+    # /**
 	 * @return get the name of the model
 	 */
 	public String getModelName() {
 		return modelname;
 	}
 
-	/**
+    # /**
 	 * @return get the prototype extrapop information
 	 */
 	public Integer getProtoExtraPop() {
 		return protoextrapop;
 	}
 
-	/**
+    # /**
 	 * @return get the associated low level function
 	 */
 	public Function getFunction() {
 		return func;
 	}
 
-	/**
+    # /**
 	 * @return the number of inputs for functionparams
 	 */
 	public int getNumInputs() {
 		return inputlist.size();
 	}
 
-	/**
+    # /**
 	 * @param i is the specific index to return
 	 * @return the specific input for functionparams
 	 */
@@ -114,14 +114,14 @@ public class HighParamID extends PcodeSyntaxTree {
 		return inputlist.get(i);
 	}
 
-	/**
+    # /**
 	 * @return the number of outputs for functionparams
 	 */
 	public int getNumOutputs() {
 		return outputlist.size();
 	}
 
-	/**
+    # /**
 	 * @param i is the index of the specific output
 	 * @return the specific of output for functionparams
 	 */
@@ -171,7 +171,7 @@ public class HighParamID extends PcodeSyntaxTree {
 		decoder.closeElement(start);
 	}
 
-	/**
+    # /**
 	 * Decode the inputs or outputs list for this function from a stream.
 	 * @param decoder is the stream decoder
 	 * @param pmlist is populated with the resulting list
@@ -208,7 +208,7 @@ public class HighParamID extends PcodeSyntaxTree {
 		};
 	}
 
-	/**
+    # /**
 	 * Update any parameters for this Function from parameters defined in this map.
 	 * 
 	 * @param storeDataTypes is true if data-types are getting stored
@@ -247,7 +247,7 @@ public class HighParamID extends PcodeSyntaxTree {
 		}
 	}
 
-	/**
+    # /**
 	 * Update any parameters for this Function from parameters defined in this map.
 	 *   Originally from LocalSymbolMap, but being modified.
 	 * 

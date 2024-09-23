@@ -27,7 +27,7 @@ public class AssemblyExtendedNonTerminal extends AssemblyNonTerminal {
 	private final AssemblyNonTerminal nt;
 	private final int end;
 
-	/**
+    # /**
 	 * Construct a new extended non terminal, derived from the given non-terminal
 	 * 
 	 * @param start the start state for the extended non-terminal

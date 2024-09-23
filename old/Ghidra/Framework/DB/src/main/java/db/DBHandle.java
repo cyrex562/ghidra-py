@@ -16,7 +16,7 @@
 package db;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.Hashtable;
 
 import db.buffers.*;

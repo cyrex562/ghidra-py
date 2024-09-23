@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.constantpool;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -42,7 +42,7 @@ public class ConstantPoolStringInfo extends AbstractConstantPoolInfoJava {
 		stringIndex = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the string_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Utf8_info structure representing the sequence of Unicode

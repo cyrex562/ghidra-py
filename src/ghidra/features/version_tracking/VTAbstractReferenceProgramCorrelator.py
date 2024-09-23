@@ -59,7 +59,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 	private Listing sourceListing;
 	private Listing destinationListing;
 
-	/**
+    # /**
 	 * Correlator class constructor.
 	 * @param sourceProgram the source program
 	 * @param sourceAddressSet the source addresses to correlate
@@ -87,7 +87,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 		return correlatorName;
 	}
 
-	/**
+    # /**
 	 * First generates the sourceDictionary from the source program and matchSet,
 	 * then finds the destinations corresponding to the matchSet and the
 	 * sourceDictionary using the preset similarity and confidence thresholds.
@@ -106,7 +106,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 		findDestinations(matchSet, monitor);
 	}
 
-	/**
+    # /**
 	 * findDestinations updates matchSet with non-null VTMatchInfo members returned from transform.
 	 * For each of the entries in the destinationMap = {destMatchAddr:[list of source references]},
 	 * we test all pairs [list of source references] x [list of destination references]
@@ -162,7 +162,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 
 	}
 
-	/**
+    # /**
 	 * Scoring Mechanism: determines destination similarity and confidence for each of the
 	 * sourceNeighbors and if similarity and confidence pass the threshold, then VTMatchInfo will
 	 * be created and added to the result.
@@ -279,7 +279,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 		return list;
 	}
 
-	/**
+    # /**
 	 * Recursively traces the reference chains from a given address and returns by reference a
 	 * list of functions found along the reference chain.
 	 *
@@ -353,7 +353,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 		}
 	}
 
-	/**
+    # /**
 	 * Used to check that a match association is of the correct type (e.g. DATA or FUNCTION) for
 	 * the given correlator.
 	 *
@@ -362,7 +362,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 	 */
 	protected abstract boolean isExpectedRefType(VTAssociationType associationType);
 
-	/**
+    # /**
 	 * Used to check that a match association is of the correct type (e.g. DATA or FUNCTION) for
 	 * the given correlator.
 	 *
@@ -371,7 +371,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 	 */
 	protected abstract boolean isExpectedRefType(Reference ref);
 
-	/**
+    # /**
 	 * extractReferenceFeatures is the core of the reference algorithm.  Each accepted match
 	 * becomes a unique feature. At the end, all the source and destination functions will have
 	 * "vectors" of these features, which are unique match ids.  Then the LSH dictionary can be
@@ -424,7 +424,7 @@ public abstract class VTAbstractReferenceProgramCorrelator extends VTAbstractPro
 				continue;
 			}
 
-			/**
+		    # /**
 			 * Compute raw percentages for the sources and destination counts as ratios
 			 * (total references to the match):(total number of references of the correct type)
 			 */

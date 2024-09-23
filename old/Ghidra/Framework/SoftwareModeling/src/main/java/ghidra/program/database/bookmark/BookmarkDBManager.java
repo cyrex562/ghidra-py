@@ -16,7 +16,7 @@
 package ghidra.program.database.bookmark;
 
 import java.awt.Color;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.Icon;

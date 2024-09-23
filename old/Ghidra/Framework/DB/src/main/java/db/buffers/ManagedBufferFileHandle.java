@@ -15,7 +15,7 @@
  */
 package db.buffers;
 
-import java.io.IOException;
+
 
 /**
  * <code>ManagedBufferFileHandle</code> facilitates access to a ManagedBufferFile

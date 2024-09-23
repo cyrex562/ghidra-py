@@ -28,7 +28,7 @@ package mdemangler;
  * they would move outside the range from 0 to string.length()-1.
  */
 public class MDCharacterIterator {
-	/**
+    # /**
 	 * Constant that is returned when the iterator has reached either the end
 	 * or the beginning of the text. The value is '\\uFFFF', the "not a
 	 * character" value which should not occur in any valid Unicode string.
@@ -38,7 +38,7 @@ public class MDCharacterIterator {
 	private String string;
 	private int index;
 
-	/**
+    # /**
 	 * Constructs a new character iterator using str.
 	 * @param str the string to iterate
 	 */
@@ -46,7 +46,7 @@ public class MDCharacterIterator {
 		this.string = str;
 	}
 
-	/**
+    # /**
 	 * Returns the underlying string.
 	 * @return the underlying string
 	 */
@@ -54,7 +54,7 @@ public class MDCharacterIterator {
 		return string;
 	}
 
-	/**
+    # /**
 	 * Returns the current index.
 	 * @return the current index.
 	 */
@@ -62,7 +62,7 @@ public class MDCharacterIterator {
 		return index;
 	}
 
-	/**
+    # /**
 	 * Returns the length of the iterator.
 	 * @return the length of the iterator
 	 */
@@ -70,7 +70,7 @@ public class MDCharacterIterator {
 		return string.length();
 	}
 
-	/**
+    # /**
 	 * Sets the position to the specified position in the text.
 	 * @param index the position within the text.  
 	 * @return the character at the specified position
@@ -83,7 +83,7 @@ public class MDCharacterIterator {
 		this.index = index;
 	}
 
-	/**
+    # /**
 	 * Returns true if there are more characters to read
 	 * @return true if there are more characters to read
 	 */
@@ -91,7 +91,7 @@ public class MDCharacterIterator {
 		return index < string.length() - 1;
 	}
 
-	/**
+    # /**
 	 * Returns the next character without incrementing the current index. 
 	 * @return the next character without incrementing the current index
 	 */
@@ -104,7 +104,7 @@ public class MDCharacterIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Peeks at the character current index + lookAhead.
 	 * Returns DONE if the computed position is out of range.
 	 * @param lookAhead number of characters to look ahead
@@ -119,7 +119,7 @@ public class MDCharacterIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Increments the current index by one and returns the character
 	 * at the new index.  If the resulting index is greater or equal
 	 * to the end index, the current index is reset to the end index and
@@ -136,7 +136,7 @@ public class MDCharacterIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the character at the current index and then increments the index by one.  
 	 * If the resulting index is greater or equal
 	 * to the end index, the current index is reset to the end index and
@@ -153,7 +153,7 @@ public class MDCharacterIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Increments the index by one.  
 	 * Does no testing for whether the index surpasses the length of the string.
 	 */
@@ -161,7 +161,7 @@ public class MDCharacterIterator {
 		index++;
 	}
 
-	/**
+    # /**
 	 * Increments the index by the amount of count.  
 	 * Does no testing for whether the index surpasses the length of the string.
 	 */
@@ -169,7 +169,7 @@ public class MDCharacterIterator {
 		index += count;
 	}
 
-	/**
+    # /**
 	 * Decrements the current index by one and returns the character
 	 * at the new index. If the current index is 0, the index
 	 * remains at 0 and a value of DONE is returned.
@@ -185,7 +185,7 @@ public class MDCharacterIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if substring is found at the current index.
 	 * @return true if substring is found at the current index
 	 */

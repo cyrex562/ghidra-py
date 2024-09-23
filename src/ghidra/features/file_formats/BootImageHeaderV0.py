@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.bootimg;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -79,7 +79,7 @@ public class BootImageHeaderV0 extends BootImageHeader {
 		return kernel_addr;
 	}
 
-	/**
+    # /**
 	 * n = (kernel_size + page_size - 1) / page_size
 	 */
 	@Override
@@ -101,7 +101,7 @@ public class BootImageHeaderV0 extends BootImageHeader {
 		return ramdisk_addr;
 	}
 
-	/**
+    # /**
 	 * m = (ramdisk_size + page_size - 1) / page_size
 	 */
 	@Override
@@ -123,7 +123,7 @@ public class BootImageHeaderV0 extends BootImageHeader {
 		return second_addr;
 	}
 
-	/**
+    # /**
 	 * o = (second_size + page_size - 1) / page_size
 	 */
 	@Override
@@ -131,7 +131,7 @@ public class BootImageHeaderV0 extends BootImageHeader {
 		return (int) (pageAlign(second_size) / page_size);
 	}
 
-	/**
+    # /**
 	 * Physical address for kernel tags (if required)
 	 * @return physical address for kernel tags
 	 */
@@ -144,7 +144,7 @@ public class BootImageHeaderV0 extends BootImageHeader {
 		return page_size;
 	}
 
-	/**
+    # /**
 	 * Version of the boot image header.
 	 * @return version of the boot image header
 	 */
@@ -152,7 +152,7 @@ public class BootImageHeaderV0 extends BootImageHeader {
 		return header_version;
 	}
 
-	/**
+    # /**
 	 * Operating system version and security patch level.
 	 * For version "A.B.C" and patch level "Y-M-D":
 	 * (7 bits for each of A, B, C; 7 bits for (Y-2000), 4 bits for M)

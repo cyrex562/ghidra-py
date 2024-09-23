@@ -35,7 +35,7 @@ class ARM_ElfRelocationContext extends ElfRelocationContext<ARM_ElfRelocationHan
 				ARM_ElfExtension.APPLY_PC_BIAS_TO_RELATIVE_RELOCATIONS_DEFAULT);
 	}
 
-	/**
+    # /**
 	 * Get the appropriate PC Bias value which should be applied to the computed relocation value.
 	 * This method and related option is intended as a work around for differences in how tool-chain
 	 * and associated loaders handle the PC Bias and if they factor it into the addend or not.

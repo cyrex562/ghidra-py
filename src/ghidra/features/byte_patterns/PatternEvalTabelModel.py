@@ -38,7 +38,7 @@ public class PatternEvalTabelModel extends AddressBasedTableModel<PatternEvalRow
 	protected static final String FONT_ID = "font.bytepatterns.table";
 	private List<PatternEvalRowObject> rowObjects;
 
-	/**
+    # /**
 	 * Defines the table format for the Pattern Evaluation table
 	 * @param plugin plugin
 	 * @param program data source

@@ -15,7 +15,7 @@
  */
 package generic.util;
 
-import java.io.*;
+
 import java.nio.channels.*;
 
 public class FileChannelLock {

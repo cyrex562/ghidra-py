@@ -37,7 +37,7 @@ class ApplyTypeDefs {
 	// NOTE: PDB does not appear to contain typedefs of typedefs.  Such definitions do not convey
 	// so we are saved from having dependency ordering issues for typedef elements.
 
-	/**
+    # /**
 	 * Construct a PDB XML typedef parser.  This will retain all typedef elements for subsequent
 	 * parsing.  The full parse will not be completed until the {@link #buildTypeDefs(TaskMonitor)} 
 	 * method is invoked after all types and classes have been cached.
@@ -73,7 +73,7 @@ class ApplyTypeDefs {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform parsing and caching of typedefs 
 	 * @param monitor task monitor
 	 * @throws CancelledException if task cancelled

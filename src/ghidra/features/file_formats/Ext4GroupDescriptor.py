@@ -23,7 +23,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class Ext4GroupDescriptor implements StructConverter {
 	
@@ -149,7 +149,7 @@ public class Ext4GroupDescriptor implements StructConverter {
 		return bg_inode_table_hi;
 	}
 
-	/**
+    # /**
 	 * Return the calculated inode table value by combining bg_inode_table_lo and bg_inode_table_hi
 	 * @return the calculated inode table value by combining bg_inode_table_lo and bg_inode_table_hi
 	 */

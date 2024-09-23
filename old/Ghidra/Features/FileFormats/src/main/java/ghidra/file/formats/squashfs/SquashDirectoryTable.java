@@ -16,7 +16,7 @@
 package ghidra.file.formats.squashfs;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;

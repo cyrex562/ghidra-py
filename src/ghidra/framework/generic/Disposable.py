@@ -17,7 +17,7 @@
 package ghidra.util;
 
 public interface Disposable {
-	/**
+    # /**
 	 * Dispose this object
 	 */
 	public void dispose();

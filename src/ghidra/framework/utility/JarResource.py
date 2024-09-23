@@ -18,7 +18,7 @@ package generic.jar;
 import ghidra.util.Msg;
 import ghidra.util.exception.AssertException;
 
-import java.io.*;
+
 import java.net.*;
 import java.util.ArrayList;
 import java.util.List;

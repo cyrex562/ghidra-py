@@ -26,7 +26,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public interface QRunnable<I> {
 
-	/**
+    # /**
 	 * Processes the given item in background thread provided by a GThreadPool.
 	 * @param item the item to process.
 	 * @param monitor a monitor that can be used to check for cancellation and to report progress and

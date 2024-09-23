@@ -46,7 +46,7 @@ public abstract class DomainFolderListenerAdapter implements DomainFolderChangeL
 		enableStateChangeCallback = foundStateChangedMethod;
 	}
 
-	/**
+    # /**
 	 * Provides a consolidated callback for those listener methods which have not been
 	 * overridden.  This callback is NOT invoked for the following callbacks:
 	 * <ul>

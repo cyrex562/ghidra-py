@@ -30,7 +30,7 @@ import utility.function.Dummy;
  */
 public class ProcessConsumer {
 
-	/**
+    # /**
 	 * Read the given input stream line-by-line. 
 	 * 
 	 * <p>To get all output after all reading is done you can call the blocking operation 
@@ -43,7 +43,7 @@ public class ProcessConsumer {
 		return consume(is, Dummy.consumer());
 	}
 
-	/**
+    # /**
 	 * Read the given input stream line-by-line.
 	 * 
 	 * <p>If you wish to get all output after all reading is done you can call the blocking 

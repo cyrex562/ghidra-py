@@ -62,7 +62,7 @@ public class BigFloat implements Comparable<BigFloat> {
 
 	private static Map<Integer, MathContext> defaultDisplayContextMap = new HashMap<>();
 
-	/**
+    # /**
 	 * Construct a BigFloat.  If kind is FINITE, the value is <code>sign*unscaled*2^(scale-fracbits)</code>.
 	 * <p>
 	 * NOTE: Requires that normal values are constructed in a normal form as with denormal values.
@@ -166,7 +166,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Return the BigFloat with the given number of bits representing zero.
 	 * 
 	 * @param fracbits number of fractional bits
@@ -179,7 +179,7 @@ public class BigFloat implements Comparable<BigFloat> {
 			2 - (1 << (expbits - 1)));
 	}
 
-	/**
+    # /**
 	 * Return the BigFloat with the given number of bits representing (positive) zero.
 	 * 
 	 * @param fracbits number of fractional bits
@@ -190,7 +190,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return zero(fracbits, expbits, +1);
 	}
 
-	/**
+    # /**
 	 * @param fracbits number of fractional bits
 	 * @param expbits number of bits in the exponent
 	 * @param sign +1 or -1
@@ -201,7 +201,7 @@ public class BigFloat implements Comparable<BigFloat> {
 			BigInteger.ONE.shiftLeft(fracbits - 1), (1 << (expbits - 1)) - 1);
 	}
 
-	/**
+    # /**
 	 * Return the BigFloat with the given number of bits representing (quiet) NaN.
 	 * 
 	 * @param fracbits number of fractional bits
@@ -230,7 +230,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		}
 	}
 
-	/**
+    # /**
 	 * Determine if the state of this BigFloat reflects a normalized value.
 	 * <p>NOTE: This method relies on the manner of construction and
 	 * only checks for {@link FloatKind#FINITE} and that full size of the
@@ -242,7 +242,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return kind == FloatKind.FINITE && unscaled.bitLength() == fracbits;
 	}
 
-	/**
+    # /**
 	 * Determine if the state of this BigFloat reflects a subnormal/denormal value.
 	 * <p>NOTE: This method relies on the manner of construction and
 	 * only checks for {@link FloatKind#FINITE} and that the non-zero
@@ -255,7 +255,7 @@ public class BigFloat implements Comparable<BigFloat> {
 			unscaled.bitLength() < fracbits;
 	}
 
-	/**
+    # /**
 	 * This function is used internally to round after a computation.
 	 * 
 	 * <p>Assume that the true value is
@@ -314,7 +314,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return unscaled.bitLength() - fracbits + scale + 1;
 	}
 
-	/**
+    # /**
 	 * If finite, the returned BigDecimal is exactly equal to this.  If not finite, one of the
 	 * FloatFormat.BIG_* constants is returned.
 	 * 
@@ -404,7 +404,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		this.kind = FloatKind.QUIET_NAN;
 	}
 
-	/**
+    # /**
 	 * @return {@code true} if this BigFloat is NaN
 	 */
 	public boolean isNaN() {
@@ -417,21 +417,21 @@ public class BigFloat implements Comparable<BigFloat> {
 		this.scale = minScale;
 	}
 
-	/**
+    # /**
 	 * @return {@code true} if this BigFloat is infinite
 	 */
 	public boolean isInfinite() {
 		return kind == FloatKind.INFINITE;
 	}
 
-	/**
+    # /**
 	 * @return {@code true} if this BigFloat is zero
 	 */
 	public boolean isZero() {
 		return this.kind == FloatKind.FINITE && unscaled.equals(BigInteger.ZERO);
 	}
 
-	/**
+    # /**
 	 * @return a copy of this BigFloat
 	 */
 	public BigFloat copy() {
@@ -446,7 +446,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		this.scale = other.scale;
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @param b a BigFloat
 	 * @return {@code a/b}
@@ -457,7 +457,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return c;
 	}
 
-	/**
+    # /**
 	 * {@code this/=other}
 	 * 
 	 * @param other a BigFloat
@@ -527,7 +527,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		this.internalRound(r.signum() != 0);
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @param b a BigFloat
 	 * @return {@code a*b}
@@ -538,7 +538,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return c;
 	}
 
-	/**
+    # /**
 	 * {@code this*=other}
 	 * 
 	 * @param other a BigFloat
@@ -568,7 +568,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		this.internalRound(false);
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @param b a BigFloat
 	 * @return {@code a+b}
@@ -579,7 +579,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return c;
 	}
 
-	/**
+    # /**
 	 * {@code this+=other}
 	 * 
 	 * @param other a BigFloat
@@ -622,7 +622,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		}
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @param b a BigFloat
 	 * @return {@code a-b}
@@ -637,7 +637,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return c;
 	}
 
-	/**
+    # /**
 	 * {@code this-=other}
 	 * 
 	 * @param other a BigFloat
@@ -731,7 +731,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		internalRound(residue);
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @return the square root of {@code a}
 	 */
@@ -741,7 +741,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return c;
 	}
 
-	/**
+    # /**
 	 * {@code this=sqrt(this)}
 	 * 
 	 *	<p>Square root by abacus algorithm, Martin Guy @ UKC, June 1985.
@@ -841,7 +841,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		}
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @return {@code floor(a)}
 	 */
@@ -851,7 +851,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return b;
 	}
 
-	/**
+    # /**
 	 * {@code this=floor(this)}
 	 */
 	public void floor() {
@@ -874,7 +874,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		}
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @return {@code ceil(a)}
 	 */
@@ -884,7 +884,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return b;
 	}
 
-	/**
+    # /**
 	 * {@code this=ceil(this)}
 	 */
 	public void ceil() {
@@ -907,7 +907,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		}
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @return {@code trunc(a)} (round toward zero)
 	 */
@@ -917,21 +917,21 @@ public class BigFloat implements Comparable<BigFloat> {
 		return b;
 	}
 
-	/**
+    # /**
 	 * {@code this=trunc(this)} (round toward zero)
 	 */
 	public void trunc() {
 		floor0();
 	}
 
-	/**
+    # /**
 	 * {@code this*=-1}
 	 */
 	public void negate() {
 		this.sign *= -1;
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @return {@code -a}
 	 */
@@ -941,7 +941,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return b;
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @return {@code abs(a)}
 	 */
@@ -951,14 +951,14 @@ public class BigFloat implements Comparable<BigFloat> {
 		return b;
 	}
 
-	/**
+    # /**
 	 * {@code this=abs(this)}
 	 */
 	public void abs() {
 		this.sign = 1;
 	}
 
-	/**
+    # /**
 	 * @return the truncated integer form of this BigFloat
 	 */
 	public BigInteger toBigInteger() {
@@ -969,7 +969,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * @param a a BigFloat
 	 * @return {@code round(a)}
 	 */
@@ -979,7 +979,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return b;
 	}
 
-	/**
+    # /**
 	 * Round this value to the nearest whole number
 	 */
 	public void round() {
@@ -1048,7 +1048,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Perform rounding and conversion to BigDecimal prior to generating
 	 * a formatted decimal string of the specified BigFloat value.
 	 * A default generated {@link MathContext} is used.
@@ -1065,7 +1065,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return bd.toString();
 	}
 
-	/**
+    # /**
 	 * Perform rounding and conversion to BigDecimal prior to generating
 	 * a formatted decimal string of the specified BigFloat value.
 	 * @param displayContext display context used for rounding and precision.
@@ -1081,7 +1081,7 @@ public class BigFloat implements Comparable<BigFloat> {
 		return bd.toString();
 	}
 
-	/**
+    # /**
 	 * Perform appropriate rounding and conversion to BigDecimal prior to generating
 	 * a formatted decimal string of the specified BigFloat value.  
 	 * See {@link #toString(FloatFormat, boolean)},

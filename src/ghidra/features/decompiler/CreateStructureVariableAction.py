@@ -52,7 +52,7 @@ public abstract class CreateStructureVariableAction extends DockingAction {
 	@Override
 	public abstract boolean isEnabledForContext(ActionContext context);
 
-	/**
+    # /**
 	 * Change the menu text for the create/fill structure action based on the current
 	 * data type at the location and whether the location is for a "this" parameter.
 	 * @param dt the current data type.

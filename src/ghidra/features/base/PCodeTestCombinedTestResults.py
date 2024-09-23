@@ -16,7 +16,7 @@
 package ghidra.test.processors.support;
 
 import java.awt.Color;
-import java.io.*;
+
 import java.util.*;
 import java.util.function.Predicate;
 

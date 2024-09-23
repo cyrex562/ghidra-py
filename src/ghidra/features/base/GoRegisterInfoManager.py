@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 

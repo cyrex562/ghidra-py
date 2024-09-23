@@ -1,15 +1,15 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.ghidra;
 
 /**
- * Helper methods for converting between
- * number data types without negative
- * promotion.
- * 
- * 
- */ 
+# * Helper methods for converting between
+# * number data types without negative
+# * promotion.
+# * 
+# * 
+# */ 
 public class GConv {
 	
 	private GConv() {

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-import java.io.IOException;
+
 
 /**
  * {@link RuntimeIOException} provide a wrapped {@link IOException} wrapped

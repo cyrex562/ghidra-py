@@ -17,7 +17,7 @@ package ghidra.app.cmd.formats;
 
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.cmd.data.CreateStringCmd;
 import ghidra.app.plugin.core.analysis.AnalysisWorker;

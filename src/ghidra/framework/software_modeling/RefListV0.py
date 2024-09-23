@@ -1,27 +1,27 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 # /*
- * Created on Sep 16, 2003
- *
- * To change the template for this generated file go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+# * Created on Sep 16, 2003
+# *
+# * To change the template for this generated file go to
+# * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+# */
 package ghidra.program.database.references;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import db.DBRecord;
@@ -32,11 +32,11 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.symbol.*;
 
 # /**
- * 
- *
- * To change the template for this generated type comment go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+# * 
+# *
+# * To change the template for this generated type comment go to
+# * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+# */
 class RefListV0 extends RefList {
 
 	private static final byte[] EMPTY_DATA = new byte[0];
@@ -49,7 +49,7 @@ class RefListV0 extends RefList {
 	private byte[] refData;
 	private DBRecord record;
 
-	/**
+    # /**
 	 * Construct new temporary empty reference list
 	 * @param key address key corresponding to the address parameter
 	 * @param adapter entry record storage adapter (may be null to prevent database update)
@@ -70,7 +70,7 @@ class RefListV0 extends RefList {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct new empty reference list
 	 * @param address address associated with this list (a new key will be generated if required)
 	 * @param adapter entry record storage adapter (may be null to prevent database update)
@@ -91,7 +91,7 @@ class RefListV0 extends RefList {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct reference list for existing record
 	 * @param rec existing refList record
 	 * @param adapter entry record storage adapter
@@ -673,7 +673,7 @@ class RefListV0 extends RefList {
 			return null;
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#remove()
 		 */
 		@Override

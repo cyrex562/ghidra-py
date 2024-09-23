@@ -1,33 +1,33 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.program.model.address.Address;
 
 # /**
- * 
- *
- * Blocks of PcodeOps
- */
+# * 
+# *
+# * Blocks of PcodeOps
+# */
 public class PcodeBlock {
 	int index;
 	int blocktype;
@@ -140,13 +140,13 @@ public class PcodeBlock {
 			reverse_index = rev;
 		}
 
-		/**
+	    # /**
 		 * For use with restoreXml
 		 */
 		public BlockEdge() {
 		}
 
-		/**
+	    # /**
 		 * Encode edge to stream assuming we already know what block we are in
 		 * @param encoder is the stream encoder
 		 * @throws IOException for errors writing to underlying stream
@@ -162,7 +162,7 @@ public class PcodeBlock {
 			encoder.closeElement(ELEM_EDGE);
 		}
 
-		/**
+	    # /**
 		 * Decode a single edge
 		 * @param decoder is the stream decoder
 		 * @param resolver used to recover PcodeBlock reference
@@ -211,14 +211,14 @@ public class PcodeBlock {
 		return blocktype;
 	}
 
-	/**
+    # /**
 	 * @return the first Address covered by this block
 	 */
 	public Address getStart() {
 		return Address.NO_ADDRESS;
 	}
 
-	/**
+    # /**
 	 * @return the last Address covered by this block
 	 */
 	public Address getStop() {
@@ -244,7 +244,7 @@ public class PcodeBlock {
 		b.outofthis.add(new BlockEdge(this, lab, brev));
 	}
 
-	/**
+    # /**
 	 * Decode the next input edge from the stream
 	 * @param decoder is the stream decoder
 	 * @param resolver is used to find PcodeBlocks
@@ -261,7 +261,7 @@ public class PcodeBlock {
 		inEdge.point.outofthis.set(inEdge.reverse_index, outEdge);
 	}
 
-	/**
+    # /**
 	 * Decode the next input edge from the stream. Resolve block indices via a blockList
 	 * @param decoder is the stream decoder
 	 * @param blockList allows lookup of PcodeBlock via index
@@ -287,7 +287,7 @@ public class PcodeBlock {
 		return outofthis.get(i).point;
 	}
 
-	/**
+    # /**
 	 * Get reverse index of the i-th outgoing block. I.e this.getOut(i).getIn(reverse_index) == this
 	 * @param i is the outgoing block to request reverse index from
 	 * @return the reverse index
@@ -296,7 +296,7 @@ public class PcodeBlock {
 		return outofthis.get(i).reverse_index;
 	}
 
-	/**
+    # /**
 	 * Get reverse index of the i-th incoming block. I.e. this.getIn(i).getOut(reverse_index) == this
 	 * @param i is the incoming block to request reverse index from
 	 * @return the reverse index
@@ -305,7 +305,7 @@ public class PcodeBlock {
 		return intothis.get(i).reverse_index;
 	}
 
-	/**
+    # /**
 	 * Assuming paths out of this block depend on a boolean condition
 	 * @return the PcodeBlock coming out of this if the condition is false
 	 */
@@ -313,7 +313,7 @@ public class PcodeBlock {
 		return outofthis.get(0).point;
 	}
 
-	/**
+    # /**
 	 * Assuming paths out of this block depend on a boolean condition
 	 * @return the PcodeBlock coming out of this if the condition is true
 	 */
@@ -349,7 +349,7 @@ public class PcodeBlock {
 		return bl;
 	}
 
-	/**
+    # /**
 	 * Encode basic attributes to stream. Assume this block's element is already started.
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors writing to the underlying stream
@@ -362,7 +362,7 @@ public class PcodeBlock {
 		index = (int) decoder.readSignedInteger(ATTRIB_INDEX);
 	}
 
-	/**
+    # /**
 	 * Encode information about the block to stream,
 	 * other than header and edge info
 	 * @param encoder is the stream encoder
@@ -372,7 +372,7 @@ public class PcodeBlock {
 		// No body by default
 	}
 
-	/**
+    # /**
 	 * Encode information about this blocks edges to stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors writing to the underlying stream
@@ -383,7 +383,7 @@ public class PcodeBlock {
 		}
 	}
 
-	/**
+    # /**
 	 * Restore the any additional information beyond header and edges from stream
 	 * @param decoder is the stream decoder
 	 * @param resolver is for looking up edge references
@@ -403,7 +403,7 @@ public class PcodeBlock {
 		}
 	}
 
-	/**
+    # /**
 	 * Encode this block to a stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors writing to the underlying stream
@@ -416,7 +416,7 @@ public class PcodeBlock {
 		encoder.closeElement(ELEM_BLOCK);
 	}
 
-	/**
+    # /**
 	 * Decode this block from a stream
 	 * @param decoder is the stream decoder
 	 * @param resolver is the map from reference to block object

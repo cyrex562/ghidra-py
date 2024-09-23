@@ -17,7 +17,7 @@ package ghidra.trace.database.memory;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;

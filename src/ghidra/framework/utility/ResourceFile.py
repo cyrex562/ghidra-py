@@ -15,7 +15,7 @@
  */
 package generic.jar;
 
-import java.io.*;
+
 import java.net.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -34,7 +34,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 	private Resource resource;
 	private static Map<String, JarResource> jarRootsMap = new HashMap<>();
 
-	/**
+    # /**
 	 * Construct a ResourceFile that represents a normal file in the file system.
 	 * @param file the file in the file system.
 	 */
@@ -42,7 +42,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		resource = new FileResource(file);
 	}
 
-	/**
+    # /**
 	 * Construct a new ResourceFile from a parent file and a relative child path.
 	 * @param resourceFile the parent file
 	 * @param path the child path.
@@ -59,7 +59,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		this.resource = resource;
 	}
 
-	/**
+    # /**
 	 * Constructs a Resource file from string path that can be either a file path or a jar url.
 	 * @param absolutePath the path to the file.
 	 */
@@ -67,7 +67,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		this(absolutePath, null);
 	}
 
-	/**
+    # /**
 	 * Constructs a Resource file from string path that can be either a file path or a jar url.
 	 * 
 	 * @param absolutePath the path to the file.
@@ -96,7 +96,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		resource = new FileResource(new File(absolutePath));
 	}
 
-	/**
+    # /**
 	 * Creates a new Root ResourceFile for a given jar file.
 	 * @param jarFile the jar file to open.
 	 * @param filter JarEntryFilter that will filter out unwanted jar entries.
@@ -112,7 +112,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return rootResourceFile;
 	}
 
-	/**
+    # /**
 	 * Returns the absolute file path for this file. 
 	 * @return the absolute file path for this file.
 	 */
@@ -120,7 +120,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.getAbsolutePath();
 	}
 
-	/**
+    # /**
 	 * Returns the canonical file path for this file.
 	 * @return the absolute file path for this file.
 	 * @throws IOException if an exception is thrown getting the canonical path
@@ -129,7 +129,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.getCanonicalPath();
 	}
 
-	/**
+    # /**
 	 * Returns a array of ResourceFiles if this ResourceFile is a directory. Otherwise return null.
 	 * @return the child ResourceFiles if this is a directory, null otherwise.
 	 */
@@ -137,7 +137,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.listFiles();
 	}
 
-	/**
+    # /**
 	 * Returns a array of ResourceFiles if this ResourceFile is a directory. Otherwise return null.
 	 * @param filter a filter to restrict the array of files returned.
 	 * @return  the child ResourceFiles if this is a directory, null otherwise.
@@ -146,7 +146,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.listFiles(filter);
 	}
 
-	/**
+    # /**
 	 * Returns the simple name of the file.
 	 * @return the simple name of the file.
 	 */
@@ -154,7 +154,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.getName();
 	}
 
-	/**
+    # /**
 	 * Returns true if this Resource file exists and is a directory.
 	 * @return true if this Resource file exists and is a directory.
 	 */
@@ -162,7 +162,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.isDirectory();
 	}
 
-	/**
+    # /**
 	 * Returns the parent of this ResourceFile or null if it is a root.
 	 * @return the parent of this ResourceFile or null if it is a root.
 	 */
@@ -171,7 +171,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return parent == null ? null : new ResourceFile(parent);
 	}
 
-	/**
+    # /**
 	 * Returns a URL that represents this file object.
 	 * @return a URL that represents this file object.
 	 * @throws MalformedURLException if a URL can't be formed for this file.
@@ -180,7 +180,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.toURL();
 	}
 
-	/**
+    # /**
 	 * Returns the time that this file was last modified.
 	 * @return the time that this file was last modified.
 	 */
@@ -188,7 +188,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.lastModified();
 	}
 
-	/**
+    # /**
 	 * If this file exists and is not a directory, it will return an InputStream for the file's 
 	 * contents. 
 	 * @return an InputStream for the file's contents.
@@ -199,7 +199,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.getInputStream();
 	}
 
-	/**
+    # /**
 	 * Attempts to delete the file.  Not supported (returns false) for files within a jar file.
 	 * @return true if the file was deleted, false otherwise.
 	 */
@@ -207,7 +207,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.delete();
 	}
 
-	/**
+    # /**
 	 * Returns true if the file exists.
 	 * @return true if the file exists.
 	 */
@@ -215,7 +215,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.exists();
 	}
 
-	/**
+    # /**
 	 * Returns an OutputStream if the file can be opened for writing.
 	 * @return an OutputStream if the file can be opened for writing.
 	 * @throws FileNotFoundException if the file can't be created or opened for writing.
@@ -224,7 +224,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.getOutputStream();
 	}
 
-	/**
+    # /**
 	 * Returns a File object.  If this ResourceFile represents a standard filesystem, then no
 	 * copy is necessary to return a file.  If this ResourceFile represents a compressed 
 	 * filesystem, then a copy from that filesystem to the real filesystem is needed to create
@@ -244,7 +244,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.getFile(); // will be null if the resource is a compressed filesystem
 	}
 
-	/**
+    # /**
 	 * Returns the size of this file.
 	 * @return the size of the file.
 	 */
@@ -252,7 +252,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.length();
 	}
 
-	/**
+    # /**
 	 * Returns true if this file exists and is not a directory.
 	 * @return  true if this file exists and is not a directory.
 	 */
@@ -260,7 +260,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.isFile();
 	}
 
-	/**
+    # /**
 	 * Returns the canonicalFile for this file.
 	 * @return the canonicalFile for this file.
 	 */
@@ -272,7 +272,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return new ResourceFile(newResource);
 	}
 
-	/**
+    # /**
 	 * Returns true if this file can be written to.
 	 * @return  true if this file can be written to.
 	 */
@@ -280,7 +280,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.canWrite();
 	}
 
-	/**
+    # /**
 	 * Creates a directory for the path represented by this file.
 	 * @return true if a new directory was created.
 	 */
@@ -317,7 +317,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return getAbsolutePath();
 	}
 
-	/**
+    # /**
 	 * Returns the root file for this file.
 	 * @return the root file for this file.
 	 */
@@ -325,7 +325,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.getFileSystemRoot();
 	}
 
-	/**
+    # /**
 	 * Returns a URI for this file object.
 	 * @return a URI for this file object.
 	 */
@@ -333,7 +333,7 @@ public class ResourceFile implements Comparable<ResourceFile> {
 		return resource.toURI();
 	}
 
-	/**
+    # /**
 	 * Returns true if this file's path contains the entire path of the given file.
 	 * @param otherFile the other file to check
 	 * @return true if this file's path contains the entire path of the given file.

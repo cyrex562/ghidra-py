@@ -16,7 +16,7 @@
  */
 package ghidra.framework.store; 
 
-import java.io.IOException;
+
 
 public class ExclusiveCheckoutException extends IOException {
 	public ExclusiveCheckoutException(String msg) {

@@ -17,7 +17,7 @@ package ghidra.file.formats.cpio;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.*;
+
 
 import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;
 import org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream;

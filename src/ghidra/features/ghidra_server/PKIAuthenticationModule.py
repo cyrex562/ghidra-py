@@ -15,7 +15,7 @@
  */
 package ghidra.server.security;
 
-import java.io.IOException;
+
 import java.security.Signature;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;

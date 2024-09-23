@@ -19,7 +19,7 @@ import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 /**
  */

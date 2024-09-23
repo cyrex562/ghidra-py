@@ -76,7 +76,7 @@ public class PdbProgramAttributes {
 		executablePath = execPath;
 	}
 
-	/**
+    # /**
 	 * PDB Age as a hex value
 	 * @return PDB Age as a hex value
 	 */
@@ -84,7 +84,7 @@ public class PdbProgramAttributes {
 		return pdbAge;
 	}
 
-	/**
+    # /**
 	 * Returns the decoded integer value of the age string.
 	 * 
 	 * @return int value of age string, or 0 if invalid or undefined
@@ -106,7 +106,7 @@ public class PdbProgramAttributes {
 		return pdbSignature;
 	}
 
-	/**
+    # /**
 	 * Returns the decoded integer value of the signature string.
 	 * 
 	 * @return int value of signature string, or 0 if invalid or undefined

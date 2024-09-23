@@ -61,7 +61,7 @@ public abstract class RenameTask {
 		return newName;
 	}
 
-	/**
+    # /**
 	 * Bring up a dialog that is initialized with the old name, and allows the user to select a new name
 	 * @param oldNameIsCancel is true if the user keeping/entering the old name is considered a cancel
 	 * @return true unless the user canceled
@@ -105,7 +105,7 @@ public abstract class RenameTask {
 
 	}
 
-	/**
+    # /**
 	 * Perform the task of selecting a new name and committing it to the database
 	 * @param oldNameIsCancel is true if the user entering/keeping the old name is considered a cancel
 	 */

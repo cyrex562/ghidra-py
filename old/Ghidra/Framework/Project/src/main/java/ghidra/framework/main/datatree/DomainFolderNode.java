@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.datatree;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.Icon;

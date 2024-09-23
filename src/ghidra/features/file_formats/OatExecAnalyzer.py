@@ -123,7 +123,7 @@ public class OatExecAnalyzer extends FileFormatAnalyzer {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the address aligned to 0x10 bytes.
 	 * 
 	 * TODO how is alignment determined??? it seems to vary across files.

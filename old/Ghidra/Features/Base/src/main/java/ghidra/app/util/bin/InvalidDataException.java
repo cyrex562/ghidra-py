@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.IOException;
+
 
 /**
  * An {@link IOException} that indicates that the data being transmitted was invalid or bad format.

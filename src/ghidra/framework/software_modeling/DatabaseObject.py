@@ -34,7 +34,7 @@ public abstract class DatabaseObject {
 	private final DBObjectCache cache;
 	private volatile int invalidateCount;
 
-	/**
+    # /**
 	 * Constructs a new DatabaseObject and adds it to the specified cache.
 	 * 
 	 * @param cache to be used for this object or null if object will not be cached
@@ -50,21 +50,21 @@ public abstract class DatabaseObject {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the database key for this object.
 	 */
 	public long getKey() {
 		return key;
 	}
 
-	/**
+    # /**
 	 * Marks the object as deleted.
 	 */
 	protected void setDeleted() {
 		deleted = true;
 	}
 
-	/**
+    # /**
 	 *
 	 * Invalidate this object. This does not necessarily mean that this object can never be used
 	 * again. If the object can refresh itself, it may still be useable.
@@ -89,7 +89,7 @@ public abstract class DatabaseObject {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if object is currently invalid and must be validated prior to further use. 
 	 * An invalid object may result from a cache invalidation which corresponds to wide-spread 
 	 * record changes.  A common situation where this can occur is an undo/redo operation
@@ -104,7 +104,7 @@ public abstract class DatabaseObject {
 		return !deleted && invalidateCount != getCurrentValidationCount();
 	}
 
-	/**
+    # /**
 	 * Checks if this object has been deleted, in which case any use of the object is not allowed.
 	 * This method should be invoked before any modifications to the object are performed to 
 	 * ensure it still exists and is in a valid state.
@@ -117,7 +117,7 @@ public abstract class DatabaseObject {
 		}
 	}
 
-	/**
+    # /**
 	 * Check whether this object is still valid. If the object is invalid, the object will attempt
 	 * to refresh itself. If the refresh fails, the object will be marked as deleted.
 	 * 
@@ -127,7 +127,7 @@ public abstract class DatabaseObject {
 		return checkIsValid(null);
 	}
 
-	/**
+    # /**
 	 * Check whether this object is still valid. If the object is invalid, the object will attempt
 	 * to refresh itself using the specified record. If the refresh fails, the object will be marked
 	 * as deleted and removed from cache. If this object is already marked as deleted, the record
@@ -150,7 +150,7 @@ public abstract class DatabaseObject {
 		return !deleted;
 	}
 
-	/**
+    # /**
 	 * This method provides a cheap (lock free) way to test if an object is valid. If this object is
 	 * invalid, then the lock will be used to refresh as needed.
 	 * 
@@ -170,7 +170,7 @@ public abstract class DatabaseObject {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this object has been deleted. Note: once an object has been deleted, it will
 	 * never be "refreshed". For example, if an object is ever deleted and is resurrected via an
 	 * "undo", you will have get a fresh instance of the object.
@@ -182,7 +182,7 @@ public abstract class DatabaseObject {
 		return deleted || !validate(lock);
 	}
 
-	/**
+    # /**
 	 * Tells the object to refresh its state from the database.
 	 * 
 	 * @return true if the object was able to refresh itself. Return false if the object was
@@ -191,7 +191,7 @@ public abstract class DatabaseObject {
 	 */
 	protected abstract boolean refresh();
 
-	/**
+    # /**
 	 * Tells the object to refresh its state from the database using the specified record if not
 	 * null. NOTE: The default implementation ignores the record and invokes refresh().
 	 * Implementations of this method must take care if multiple database tables are used since the

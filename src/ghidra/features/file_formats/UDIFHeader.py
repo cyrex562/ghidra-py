@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.dmg;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.ByteProvider;
@@ -57,7 +57,7 @@ public class UDIFHeader {
 	private static final int SIGNATURE_MAGIC_KOLY = 0x6b6f6c79;
 	private static final int SIZEOF_UDIF_HEADER = 512;
 
-	/**
+    # /**
 	 * Reads a UDIFHeader from the end of the specified ByteProvider
 	 * 
 	 * @param bp {@link ByteProvider}
@@ -68,7 +68,7 @@ public class UDIFHeader {
 		return read(bp, bp.length() - SIZEOF_UDIF_HEADER);
 	}
 
-	/**
+    # /**
 	 * Reads a UDIFHeader from the specified offset of the ByteProvider.
 	 * 
 	 * @param bp {@link ByteProvider}
@@ -111,7 +111,7 @@ public class UDIFHeader {
 		return udif;
 	}
 
-	/**
+    # /**
 	 * Returns true if the fixed fields have valid values
 	 * 
 	 * @return boolean true if fixed magic / size fields are correct
@@ -120,7 +120,7 @@ public class UDIFHeader {
 		return signature == SIGNATURE_MAGIC_KOLY && headerSize == SIZEOF_UDIF_HEADER;
 	}
 
-	/**
+    # /**
 	 * Returns true if the file offset values in the header are within bounds of the
 	 * specified ByteProvider.
 	 * 

@@ -23,7 +23,7 @@ import ghidra.app.util.demangler.DemangledStructure;
  */
 public class SwiftCharacter extends DemangledStructure {
 
-	/**
+    # /**
 	 * Creates a new Swift character
 	 * 
 	 * @param mangled The mangled string

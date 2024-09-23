@@ -37,7 +37,7 @@ public abstract class AbstractFloatDataType extends BuiltIn {
 
 	private String description;
 
-	/**
+    # /**
 	 * Abstract float datatype constructor
 	 * @param name name of the float datatype.
 	 * @param encodedLength the floating encoding length as number of 8-bit bytes.
@@ -95,7 +95,7 @@ public abstract class AbstractFloatDataType extends BuiltIn {
 		return BigFloat.class;
 	}
 
-	/**
+    # /**
 	 * Get the encoded length (number of 8-bit bytes) of this float datatype.
 	 * 
 	 * @return encoded length of this float datatype.
@@ -216,7 +216,7 @@ public abstract class AbstractFloatDataType extends BuiltIn {
 
 	private static TreeMap<Integer, AbstractFloatDataType> floatTypes; // fixed-size float types
 
-	/**
+    # /**
 	 * Returns all built-in fixed-sized float data-types
 	 */
 	private synchronized static TreeMap<Integer, AbstractFloatDataType> getFloatTypes() {
@@ -232,7 +232,7 @@ public abstract class AbstractFloatDataType extends BuiltIn {
 		return floatTypes;
 	}
 
-	/**
+    # /**
 	 * Get a Float data-type instance with the requested raw format size in bytes. It is important that the
 	 * "raw" format size is specified since the {@link DataType#getAlignedLength() aligned-length}
 	 * used by compilers (e.g., {@code sizeof()}) may be larger and duplicated across different 
@@ -271,7 +271,7 @@ public abstract class AbstractFloatDataType extends BuiltIn {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * Returns all built-in floating-point data types
 	 * 
 	 * @param dtm optional program data-type manager, if specified generic data-types will be

@@ -25,7 +25,7 @@ public class AndQuery implements Query {
 	private Query q1;
 	private Query q2;
 
-	/**
+    # /**
 	 * Construct a new AndQuery from two other queries.
 	 * @param q1 the first query
 	 * @param q2 the second query
@@ -35,7 +35,7 @@ public class AndQuery implements Query {
 		this.q2 = q2;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.util.Query#matches(db.DBRecord)
 	 */
 	public boolean matches(DBRecord record) {

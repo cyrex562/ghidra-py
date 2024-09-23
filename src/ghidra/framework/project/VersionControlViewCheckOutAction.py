@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.projectdata.actions;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.action.MenuData;
@@ -32,7 +32,7 @@ import ghidra.util.Msg;
  */
 public class VersionControlViewCheckOutAction extends VersionControlAction {
 
-	/**
+    # /**
 	 * Creates an action to view the current checkouts for a single domain file in the repository.
 	 * @param plugin the plug-in that owns this action.
 	 */
@@ -64,7 +64,7 @@ public class VersionControlViewCheckOutAction extends VersionControlAction {
 		return domainFile.isVersioned();
 	}
 
-	/**
+    # /**
 	 * Displays a dialog containing the checkout information for a version controlled domain file.
 	 * The dialog is only displayed if the repository is connected and a single version controlled 
 	 * domain file is in the list from the DomainFileProvider.

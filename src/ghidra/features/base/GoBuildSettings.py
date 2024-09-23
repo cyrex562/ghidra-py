@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang;
 
-import java.io.IOException;
+
 
 # /**
  * Key=value element of Golang Build settings

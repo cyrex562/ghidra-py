@@ -17,7 +17,7 @@ package ghidra.graph.viewer.edge;
 
 public interface PathHighlightListener {
 
-	/**
+    # /**
 	 * Called when the a path is highlighted. 
 	 * 
 	 * @param hoverChange true if the change path is hover change; false if the changed path 

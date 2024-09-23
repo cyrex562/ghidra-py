@@ -27,7 +27,7 @@ import ghidra.program.model.address.Address;
  */
 public interface VTAssociationManager {
 
-	/**
+    # /**
 	 * Returns the total number of associations that have been defined regardless of whether or
 	 * not they have been accepted.
 	 * @return Returns the total number of associations that have been defined regardless of whether or
@@ -35,13 +35,13 @@ public interface VTAssociationManager {
 	 */
 	public int getAssociationCount();
 
-	/**
+    # /**
 	 * Returns a list of all defined associations regardless of whether or not they have been accepted.
 	 * @return  a list of all defined associations regardless of whether or not they have been accepted.
 	 */
 	public List<VTAssociation> getAssociations();
 
-	/**
+    # /**
 	 * Returns an association for the given source and destination addresses if one has been defined or
 	 * null if no such association has been defined.
 	 * @param sourceAddress the source address for the association.
@@ -50,14 +50,14 @@ public interface VTAssociationManager {
 	 */
 	public VTAssociation getAssociation(Address sourceAddress, Address destinationAddress);
 
-	/**
+    # /**
 	 * Returns a collection of all defined associations that have the given source address.
 	 * @param sourceAddress the source address to use to search for associations.
 	 * @return a collection of all defined associations that have the given source address.
 	 */
 	public Collection<VTAssociation> getRelatedAssociationsBySourceAddress(Address sourceAddress);
 
-	/**
+    # /**
 	 * Returns a collection of all defined associations that have the given destination address.
 	 * @param destinationAddress the source address to use to search for associations.
 	 * @return a collection of all defined associations that have the given destination address.
@@ -65,7 +65,7 @@ public interface VTAssociationManager {
 	public Collection<VTAssociation> getRelatedAssociationsByDestinationAddress(
 			Address destinationAddress);
 
-	/**
+    # /**
 	 * Returns a collection of all defined associations that have the either the given source
 	 * address or the given destination address
 	 * @param sourceAddress the source address to use to search for associations.

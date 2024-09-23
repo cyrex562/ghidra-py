@@ -51,7 +51,7 @@ public class PdbResearch {
 		// Do nothing.
 	}
 
-	/**
+    # /**
 	 * This method is used to populate debugIndexNumbers set that gets used by
 	 * {@link #checkBreak(int recordNumber)} in which we set a breakpoint on
 	 * {@code #doNothingSetBreakPointHere();} to then allow us to debug into other code.
@@ -309,7 +309,7 @@ public class PdbResearch {
 //		debugIndexNumbers.add(6341); // fwdref is 6329
 	}
 
-	/**
+    # /**
 	 * Developmental method for breakpoints.  TODO: will delete this from production.
 	 * Set breakpoint on {@code #doNothingSetBreakPointHere();}
 	 * @param recordNumber the record number that is being processed (set negative to ignore)
@@ -559,7 +559,7 @@ public class PdbResearch {
 
 		private DataType dataType;
 
-		/**
+	    # /**
 		 * Default PDB member construction
 		 * @param name member field name.
 		 * @param dataType for the field.
@@ -787,7 +787,7 @@ public class PdbResearch {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets a demangles the name and returns the qualified name. Returns null if not mangled
 	 * or if error in demangling.
 	 * @param mangledString the mangled string to be decoded

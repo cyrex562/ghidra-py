@@ -33,7 +33,7 @@ public class DomainObjectChangeRecord implements Serializable {
 	private Object oldValue;
 	private Object newValue;
 
-	/**
+    # /**
 	 * Construct a new DomainObjectChangeRecord.
 	 * 
 	 * @param eventType the type of event
@@ -42,7 +42,7 @@ public class DomainObjectChangeRecord implements Serializable {
 		this(eventType, null, null);
 	}
 
-	/**
+    # /**
 	 * Construct a new DomainObjectChangeRecord.
 	 * 
 	 * @param eventType the type of
@@ -55,7 +55,7 @@ public class DomainObjectChangeRecord implements Serializable {
 		this.newValue = newValue;
 	}
 
-	/**
+    # /**
 	 * Returns the event type for this change.
 	 * 
 	 * @return the event type for this change
@@ -64,7 +64,7 @@ public class DomainObjectChangeRecord implements Serializable {
 		return eventType;
 	}
 
-	/**
+    # /**
 	 * Return the old value for this event or null if not applicable.
 	 * 
 	 * @return the old value or null if not applicable
@@ -73,7 +73,7 @@ public class DomainObjectChangeRecord implements Serializable {
 		return oldValue;
 	}
 
-	/**
+    # /**
 	 * Return the new value for this event or null if not applicable.
 	 * 
 	 * @return the old value or null if not applicable for this event.

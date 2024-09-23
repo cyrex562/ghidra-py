@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.breakpoint;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.DBRecord;

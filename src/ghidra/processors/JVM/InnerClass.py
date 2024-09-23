@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -50,7 +50,7 @@ public class InnerClass implements StructConverter {
 		innerClassAccessFlags = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the inner_class_info_index item must be a valid index into
 	 * the constant_pool table. The constant_pool entry at that index must be
 	 * a CONSTANT_Class_info structure representing C. The remaining
@@ -61,7 +61,7 @@ public class InnerClass implements StructConverter {
 		return innerClassInfoIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * If C is not a member of a class or an interface (that is, if C is a top-level
 	 * class or interface (JLS ?7.6) or a local class or an anonymous
 	 * class, the value of the outer_class_info_index item must
@@ -77,7 +77,7 @@ public class InnerClass implements StructConverter {
 		return outerClassInfoIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * If C is anonymous (JLS ?15.9.5), the value of the inner_name_index item must be zero.
 	 * <p>
 	 * Otherwise, the value of the inner_name_index item must be a valid index
@@ -91,7 +91,7 @@ public class InnerClass implements StructConverter {
 		return innerNameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the inner_class_access_flags item is a mask of flags used
 	 * to denote access permissions to and properties of class or interface C as
 	 * declared in the source code from which this class file was compiled. It is

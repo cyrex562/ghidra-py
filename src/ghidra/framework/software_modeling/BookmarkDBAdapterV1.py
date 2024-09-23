@@ -19,7 +19,7 @@ import ghidra.program.database.map.AddressMap;
 import ghidra.program.model.address.*;
 import ghidra.util.exception.VersionException;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -46,13 +46,13 @@ class BookmarkDBAdapterV1 extends BookmarkDBAdapter {
 	protected Table table;
 	protected AddressMap addrMap;
 
-	/**
+    # /**
 	 * Constructor (used by BookmarkDBAdapterV2)
 	 */
 	BookmarkDBAdapterV1() {
 	}
 
-	/**
+    # /**
 	 * Constructor (Read-Only access)
 	 * @param dbHandle
 	 * @throws VersionException

@@ -27,7 +27,7 @@ public class VirtualFunctionTablePath16MsType extends AbstractVirtualFunctionTab
 
 	public static final int PDB_ID = 0x0012;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

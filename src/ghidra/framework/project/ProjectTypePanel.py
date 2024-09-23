@@ -98,7 +98,7 @@ class ProjectTypePanel extends AbstractWizardJPanel {
 		buttonGroup.add(sharedRB);
 	}
 
-	/**
+    # /**
 	 * Return true if the user has entered a valid project file
 	 */
 	@Override

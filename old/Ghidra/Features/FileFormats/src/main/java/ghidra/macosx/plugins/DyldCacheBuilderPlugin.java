@@ -15,7 +15,7 @@
  */
 package ghidra.macosx.plugins;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.action.builder.ActionBuilder;

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.img3;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import javax.swing.Icon;

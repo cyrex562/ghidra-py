@@ -38,7 +38,7 @@ public class MaximizeSpecificColumnGridLayout implements LayoutManager {
 	private final int columnCount;
 	private boolean[] maximizedColumns;
 
-	/**
+    # /**
 	 * Constructor with no gap between rows or columns.
 	 * @param columnCount the number of columns in this grid
 	 */
@@ -46,7 +46,7 @@ public class MaximizeSpecificColumnGridLayout implements LayoutManager {
 		this(0, 0, columnCount);
 	}
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param vgap the gap (in pixels) between rows.
 	 * @param hgap the gap (in pixels) between the two columns.
@@ -64,7 +64,7 @@ public class MaximizeSpecificColumnGridLayout implements LayoutManager {
 		maximizedColumns = new boolean[columnCount];
 	}
 
-	/**
+    # /**
 	 * Allows you to indicate that you want to try to keep the size of a column at the preferred 
 	 * size of the widest component in that column as the parent container component is resized. 
 	 * Any column that has been maximized won't shrink until the non-maximized windows are reduced 

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.Collection;
 import java.util.Set;
@@ -28,17 +28,17 @@ import ghidra.framework.protocol.ghidra.GhidraURL;
  */
 public interface ToolServices {
 
-	/** The default tool name for Ghidra  */
+    # /** The default tool name for Ghidra  */
 	public static final String DEFAULT_TOOLNAME = "DefaultTool";
 
-	/**
+    # /**
 	 * Notify the framework that the tool is closing.
 	 *
 	 * @param tool tool that is closing
 	 */
 	public void closeTool(PluginTool tool);
 
-	/**
+    # /**
 	 * Saves the tool's configuration in the standard
 	 * tool location.
 	 *
@@ -46,7 +46,7 @@ public interface ToolServices {
 	 */
 	public void saveTool(PluginTool tool);
 
-	/**
+    # /**
 	 * Save the tool to the given location on the local file system.
 	 *
 	 * @param tool the tool template to write
@@ -56,13 +56,13 @@ public interface ToolServices {
 	 */
 	public File exportTool(ToolTemplate tool) throws FileNotFoundException, IOException;
 
-	/**
+    # /**
 	 * Get the tool chest for the project
 	 * @return the tool chest
 	 */
 	public ToolChest getToolChest();
 
-	/**
+    # /**
 	 * Returns the default/preferred tool template which should be used to open the specified
 	 * domain file, whether defined by the user or the system default.
 	 *
@@ -71,7 +71,7 @@ public interface ToolServices {
 	 */
 	public ToolTemplate getDefaultToolTemplate(DomainFile domainFile);
 
-	/**
+    # /**
 	 * Returns the default/preferred tool template which should be used to open the specified
 	 * domain file content type, whether defined by the user or the system default.
 	 *
@@ -80,14 +80,14 @@ public interface ToolServices {
 	 */
 	public ToolTemplate getDefaultToolTemplate(String contentType);
 
-	/**
+    # /**
 	 * Returns a set of tools that can open the given domain file class.
 	 * @param domainClass The domain file class type for which to get tools
 	 * @return the tools
 	 */
 	public Set<ToolTemplate> getCompatibleTools(Class<? extends DomainObject> domainClass);
 
-	/**
+    # /**
 	 * Returns the {@link ToolAssociationInfo associations}, which describe content
 	 * types and the tools used to open them, for all content types known to the system.
 	 *
@@ -96,7 +96,7 @@ public interface ToolServices {
 	 */
 	public Set<ToolAssociationInfo> getContentTypeToolAssociations();
 
-	/**
+    # /**
 	 * Sets the  {@link ToolAssociationInfo associations}, which describe content
 	 * types and the tools used to open them, for the system.
 	 *
@@ -105,7 +105,7 @@ public interface ToolServices {
 	 */
 	public void setContentTypeToolAssociations(Set<ToolAssociationInfo> infos);
 
-	/**
+    # /**
 	 * Launch the default {@link PluginTool tool} and open the specified domainFiles.
 	 * NOTE: running tool reuse is implementation dependent
 	 * @param domainFiles the files to open.  A null or empty list will results in an immediate 
@@ -115,7 +115,7 @@ public interface ToolServices {
 	 */
 	public PluginTool launchDefaultTool(Collection<DomainFile> domainFiles);
 
-	/**
+    # /**
 	 * Launch the {@link PluginTool tool} with the given name and open the specified domainFiles.
 	 * Only those domainFiles with a content type supported by the specified tool will be opened.
 	 * NOTE: running tool reuse is implementation dependent.  
@@ -126,7 +126,7 @@ public interface ToolServices {
 	 */
 	public PluginTool launchTool(String toolName, Collection<DomainFile> domainFiles);
 
-	/**
+    # /**
 	 * Launch the default tool and open the specified Ghidra URL resource.
 	 * The tool chosen will be based upon the content type of the specified resource.
 	 * NOTE: running tool re-use is implementation dependent
@@ -138,7 +138,7 @@ public interface ToolServices {
 	 */
 	public PluginTool launchDefaultToolWithURL(URL ghidraUrl);
 
-	/**
+    # /**
 	 * Launch the tool with the given name and attempt to open the specified Ghidra URL resource.
 	 * @param toolName name of the tool to launch
 	 * @param ghidraUrl resource to be opened (see {@link GhidraURL})
@@ -148,13 +148,13 @@ public interface ToolServices {
 	 */
 	public PluginTool launchToolWithURL(String toolName, URL ghidraUrl);
 
-	/**
+    # /**
 	 * Return array of running tools
 	 * @return array of Tools
 	 */
 	public PluginTool[] getRunningTools();
 
-	/**
+    # /**
 	 * Returns true if this tool should be saved base on the state of other running instances of
 	 * the same tool
 	 * @param tool the tool to check for saving

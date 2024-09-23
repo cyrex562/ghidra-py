@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Program;
  */
 public class SFQueryInfo {
 
-	/**
+    # /**
 	 * The number of queries to make for the given set of functions.  For example, if 100 functions
 	 * are submitted and the number of stages is 10, then 10 queries will be made to the server, 
 	 * with 10 functions per request.
@@ -44,7 +44,7 @@ public class SFQueryInfo {
 	private BSimFilter bsimFilter;
 	private PreFilter preFilter;
 
-	/**
+    # /**
 	 * Constructs a query request with default parameters.
 	 * @param functions required--a set of functions (at least one) for which similar functions
 	 *                  will searched.  All functions must be from the same program.
@@ -75,14 +75,14 @@ public class SFQueryInfo {
 		preFilter = new PreFilter();
 	}
 
-	/**
+    # /**
 	 * @return the program from which all queried functions are from
 	 */
 	public Program getProgram() {
 		return program;
 	}
 
-	/**
+    # /**
 	 * Gets the threshold under which a potential similar function will not be matched.  This
 	 * threshold is for how similar the potential function is. This is a value from 0.0 to 1.0. The 
 	 * default value is {@value QueryNearest#DEFAULT_SIMILARITY_THRESHOLD}.
@@ -93,7 +93,7 @@ public class SFQueryInfo {
 		return queryNearest.thresh;
 	}
 
-	/**
+    # /**
 	 * @see #getSimilarityThreshold()
 	 * @param similarityThreshold the new threshold
 	 */
@@ -101,7 +101,7 @@ public class SFQueryInfo {
 		queryNearest.thresh = similarityThreshold;
 	}
 
-	/**
+    # /**
 	 * Gets the threshold under which a potential similar function will not be matched.  This
 	 * threshold is for how significant the match is (for example, smaller function matches
 	 * are less significant).  Higher is more significant.  There is no upper bound. The 
@@ -113,7 +113,7 @@ public class SFQueryInfo {
 		return queryNearest.signifthresh;
 	}
 
-	/**
+    # /**
 	 * @see #getSignificanceThreshold()
 	 * @param significanceThreshold the new threshold
 	 */
@@ -121,7 +121,7 @@ public class SFQueryInfo {
 		queryNearest.signifthresh = significanceThreshold;
 	}
 
-	/**
+    # /**
 	 * The maximum number of similar functions to return <b>for a given input function</b>
 	 * The default value is {@value QueryNearest#DEFAULT_MAX_MATCHES}.
 	 *  
@@ -131,7 +131,7 @@ public class SFQueryInfo {
 		return queryNearest.max;
 	}
 
-	/**
+    # /**
 	 * @see #getMaximumResults()
 	 * @param maximumResults the new maximum
 	 */
@@ -149,7 +149,7 @@ public class SFQueryInfo {
 		return queryNearest;
 	}
 
-	/**
+    # /**
 	 * Returns the input functions for which matches will be searched.
 	 * @return the input functions for which matches will be searched.
 	 */
@@ -157,7 +157,7 @@ public class SFQueryInfo {
 		return functions;
 	}
 
-	/**
+    # /**
 	 * Sets the input functions for which matches will be searched.
 	 * @param functions the input functions for which matches will be searched.
 	 */
@@ -185,7 +185,7 @@ public class SFQueryInfo {
 		return arrlist;
 	}
 
-	/**
+    # /**
 	 * The number of queries to make for the given set of functions.  For example, if 100 functions
 	 * are submitted and the number of stages is 10, then 10 queries will be made to the server, 
 	 * with 10 functions per request.

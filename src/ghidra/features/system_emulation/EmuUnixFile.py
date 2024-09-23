@@ -29,7 +29,7 @@ import ghidra.pcode.exec.PcodeArithmetic;
  */
 public interface EmuUnixFile<T> {
 
-	/**
+    # /**
 	 * Get the original pathname of this file
 	 * 
 	 * <p>
@@ -41,7 +41,7 @@ public interface EmuUnixFile<T> {
 	 */
 	String getPathname();
 
-	/**
+    # /**
 	 * Read contents from the file starting at the given offset into the given buffer
 	 * 
 	 * <p>
@@ -55,7 +55,7 @@ public interface EmuUnixFile<T> {
 	 */
 	T read(PcodeArithmetic<T> arithmetic, T offset, T buf);
 
-	/**
+    # /**
 	 * Write contents into the file starting at the given offset from the given buffer
 	 * 
 	 * <p>
@@ -69,19 +69,19 @@ public interface EmuUnixFile<T> {
 	 */
 	T write(PcodeArithmetic<T> arithmetic, T offset, T buf);
 
-	/**
+    # /**
 	 * Erase the contents of the file
 	 */
 	void truncate();
 
-	/**
+    # /**
 	 * Get the file's {@code stat} structure, as defined by the simulator.
 	 * 
 	 * @return the stat
 	 */
 	EmuUnixFileStat getStat();
 
-	/**
+    # /**
 	 * Check if the given user can read this file
 	 * 
 	 * @param user the user
@@ -91,7 +91,7 @@ public interface EmuUnixFile<T> {
 		return getStat().hasPermissions(EmuUnixFileStat.MODE_R, user);
 	}
 
-	/**
+    # /**
 	 * Check if the given user can write this file
 	 * 
 	 * @param user the user
@@ -101,7 +101,7 @@ public interface EmuUnixFile<T> {
 		return getStat().hasPermissions(EmuUnixFileStat.MODE_W, user);
 	}
 
-	/**
+    # /**
 	 * Require the user to have read permission on this file, throwing {@link EmuIOException} if not
 	 * 
 	 * @param user the user
@@ -112,7 +112,7 @@ public interface EmuUnixFile<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Require the user to have write permission on this file, throwing {@link EmuIOException} if
 	 * not
 	 * 

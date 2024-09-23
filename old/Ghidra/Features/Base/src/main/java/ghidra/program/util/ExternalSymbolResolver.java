@@ -16,7 +16,7 @@
 package ghidra.program.util;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Consumer;
 

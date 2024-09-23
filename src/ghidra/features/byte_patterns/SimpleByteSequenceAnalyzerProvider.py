@@ -29,7 +29,7 @@ import ghidra.bitpatterns.info.*;
 public class SimpleByteSequenceAnalyzerProvider extends ByteSequenceAnalyzerProvider {
 	public static final String TITLE_INITIAL = "Byte Sequences for ";
 
-	/**
+    # /**
 	 * 
 	 * @param plugin plugin
 	 * @param pathFilterString description of path constraining these sequences

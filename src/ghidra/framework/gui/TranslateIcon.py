@@ -27,7 +27,7 @@ public class TranslateIcon implements Icon {
 	int translateX;
 	int translateY;
 
-	/** 
+    # /** 
 	 * Where the translate values are offset from the icon's upper corner
 	 * @param icon the icon 
 	 * @param translateX the x translation
@@ -60,7 +60,7 @@ public class TranslateIcon implements Icon {
 	}
 
 	// for testing
-	/**
+    # /**
 	 * Returns the icon that is being translated
 	 * @return the icon that is being translated
 	 */
@@ -68,7 +68,7 @@ public class TranslateIcon implements Icon {
 		return icon;
 	}
 
-	/**
+    # /**
 	 * Returns the amount the icon is being translated on the x axis;
 	 * @return the amount the icon is being translated on the x axis;
 	 */
@@ -76,7 +76,7 @@ public class TranslateIcon implements Icon {
 		return translateX;
 	}
 
-	/**
+    # /**
 	 * Returns the amount the icon is being translated on the y axis;
 	 * @return the amount the icon is being translated on the y axis;
 	 */

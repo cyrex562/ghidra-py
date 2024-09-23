@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.cparser;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 

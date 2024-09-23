@@ -38,7 +38,7 @@ import ghidra.util.task.TaskListener;
  */
 public class VersionControlUpdateAction extends VersionControlAction {
 
-	/**
+    # /**
 	 * Creates an action for updating domain files that are checked out.
 	 * @param plugin the plug-in that owns this action.
 	 */
@@ -73,7 +73,7 @@ public class VersionControlUpdateAction extends VersionControlAction {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the list of domain files from the provider and updates each file 
 	 * by merging the changes from the repository into the current copy.
 	 */

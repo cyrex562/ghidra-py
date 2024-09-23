@@ -86,7 +86,7 @@ public class DeveloperDumpAllTypesScript extends GhidraScript {
 
 	// Method below copied from HTMLUtilities and modified to set a fixed size so that it
 	// is consistent between runs between tools over the course of time.
-	/**
+    # /**
 	 * Checks the given string to see it is HTML, according to {@link BasicHTML} and then
 	 * will return the text without any markup tags if it is.
 	 *
@@ -155,7 +155,7 @@ public class DeveloperDumpAllTypesScript extends GhidraScript {
 	}
 
 	// Copied from HTMLUtilities
-	/**
+    # /**
 	 * A method to remove characters from the given string that are output by the HTML
 	 * conversion process when going from HTML to plain text.
 	 *

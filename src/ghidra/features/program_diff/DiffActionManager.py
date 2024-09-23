@@ -72,7 +72,7 @@ class DiffActionManager {
 	private OpenCloseDiffViewAction openCloseDiffViewAction;
 	private DockingAction viewProgramDiffAction;
 
-	/**
+    # /**
 	 * Creates an action manager for the Program Diff plugin.
 	 * @param plugin Diff plugin
 	 */
@@ -81,7 +81,7 @@ class DiffActionManager {
 		createActions();
 	}
 
-	/**
+    # /**
 	 * Sets the code viewer service that the Program Diff will use for setting local actions.
 	 * @param codeViewerService the code viewer service
 	 */
@@ -90,7 +90,7 @@ class DiffActionManager {
 		codeViewerService.addLocalAction(openCloseDiffViewAction);
 	}
 
-	/**
+    # /**
 	 * Adds the Program Diff's local actions to the code viewer.
 	 */
 	void addActions() {
@@ -106,7 +106,7 @@ class DiffActionManager {
 		codeViewerService.addLocalAction(p1SelectToP2Action);
 	}
 
-	/**
+    # /**
 	 * Removes the Program Diff's local actions from the code viewer.
 	 */
 	void removeActions() {
@@ -122,7 +122,7 @@ class DiffActionManager {
 		codeViewerService.removeLocalAction(p1SelectToP2Action);
 	}
 
-	/**
+    # /**
 	 * Called to adjust the Program Diff's actions when a program is closed.
 	 * @param program the closed program
 	 */
@@ -131,7 +131,7 @@ class DiffActionManager {
 		openCloseDiffViewAction.setEnabled(hasProgram && !plugin.isTaskInProgress());
 	}
 
-	/**
+    # /**
 	 * Called to adjust or add/remove the Program Diff's actions when a program
 	 * becomes the active program.
 	 * @param program the newly active program
@@ -161,7 +161,7 @@ class DiffActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Notification to the action manager that a program was opened as the
 	 * second program to the program Diff. Actions are adjusted accordingly.
 	 */
@@ -182,7 +182,7 @@ class DiffActionManager {
 		//@formatter:on
 	}
 
-	/**
+    # /**
 	 * Notification to the action manager that the second program to the
 	 * program Diff was closed. Actions are adjusted accordingly.
 	 */
@@ -222,7 +222,7 @@ class DiffActionManager {
 		openCloseDiffViewAction.setEnabled(hasProgram && !taskInProgress);
 	}
 
-	/**
+    # /**
 	 * Removes all the actions.
 	 */
 	void dispose() {

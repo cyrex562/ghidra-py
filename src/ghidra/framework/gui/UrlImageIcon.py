@@ -17,7 +17,7 @@ package resources.icons;
 
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.io.*;
+
 import java.net.URL;
 import java.util.Objects;
 
@@ -33,7 +33,7 @@ public class UrlImageIcon extends LazyImageIcon {
 	private String originalPath;
 	private URL imageUrl;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param path the path String used to create the URL
 	 * @param url the {@link URL} to an icon resource file
@@ -44,7 +44,7 @@ public class UrlImageIcon extends LazyImageIcon {
 		this.imageUrl = Objects.requireNonNull(url);
 	}
 
-	/**
+    # /**
 	 * Returns the URL that was used to create this icon
 	 * @return  the URL that was used to create this icon
 	 */
@@ -52,7 +52,7 @@ public class UrlImageIcon extends LazyImageIcon {
 		return imageUrl;
 	}
 
-	/**
+    # /**
 	 * Returns the original path that was used to generate the URL (e.g. images/foo.png)
 	 * @return  the original path that was used to generate the URL (e.g. images/foo.png)
 	 */

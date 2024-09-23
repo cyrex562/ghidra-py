@@ -15,14 +15,14 @@
  */
 package ghidra.file.formats.android.art;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.art.image_sections.*;
 
 public final class ArtImageSectionsFactory {
 
-	/**
+    # /**
 	 * Every major version of Android has a different ImageSections enum, 
 	 * this method will return the appropriate section one.
 	 * @param reader the binary reader for the ART file

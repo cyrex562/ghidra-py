@@ -31,7 +31,7 @@ public class ReflectedIcon extends DerivedImageIcon {
 
 	private boolean leftToRight;
 
-	/**
+    # /**
 	 * Construct a icon that is reflected either left to right or upside down.
 	 * @param baseIcon base icon
 	 * @param leftToRight true flips x values, false flips y values

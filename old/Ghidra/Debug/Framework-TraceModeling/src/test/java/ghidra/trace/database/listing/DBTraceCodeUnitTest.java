@@ -17,7 +17,7 @@ package ghidra.trace.database.listing;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.lang.reflect.Field;
 import java.math.BigInteger;
 import java.nio.ByteBuffer;

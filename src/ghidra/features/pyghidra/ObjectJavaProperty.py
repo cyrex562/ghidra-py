@@ -26,7 +26,7 @@ public final class ObjectJavaProperty extends AbstractJavaProperty<Object> {
 		super(field, getter, setter);
 	}
 
-	/**
+    # /**
 	 * The method to be used as the fget value for a Python property.
 	 *
 	 * This method will be called by the Python property __get__ function.

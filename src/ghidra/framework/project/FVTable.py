@@ -18,7 +18,7 @@ package ghidra.framework.main.logviewer.ui;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.*;
-import java.io.IOException;
+
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -59,7 +59,7 @@ public class FVTable extends GTable
 	private TableColumn levelCol;
 	private TableColumn messageCol;
 
-	/**
+    # /**
 	 * Ctor.
 	 * 
 	 * @param reader
@@ -115,7 +115,7 @@ public class FVTable extends GTable
 		setAutoscrolls(false);
 	}
 
-	/**
+    # /**
 	 * Adjusts the column widths to be at least as wide as the widest cell.  This is required
 	 * for horizontal scrolling to work properly.
 	 */
@@ -132,7 +132,7 @@ public class FVTable extends GTable
 		return prepareRenderer;
 	}
 
-	/**
+    # /**
 	 * Sets the status of the shift key.
 	 * 
 	 * @param isDown
@@ -145,7 +145,7 @@ public class FVTable extends GTable
 		mouseDragging = isMouseDragging;
 	}
 
-	/**
+    # /**
 	 * Adds the given row to the table.
 	 * 
 	 * @param row
@@ -154,7 +154,7 @@ public class FVTable extends GTable
 		((FVTableModel) getModel()).addRow(row, true);
 	}
 
-	/**
+    # /**
 	 * Adds the list of rows to the table.
 	 * 
 	 * @param rows
@@ -163,7 +163,7 @@ public class FVTable extends GTable
 		((FVTableModel) getModel()).addRowsToBottom(rows);
 	}
 
-	/**
+    # /**
 	 * Set any previously selected table rows to a selected state. This should be called any 
 	 * time a chunk is read into the table. 
 	 * 
@@ -224,14 +224,14 @@ public class FVTable extends GTable
 		}
 	}
 
-	/**
+    # /**
 	 * Removes all rows from the table model.
 	 */
 	public void clear() {
 		((FVTableModel) getModel()).clear();
 	}
 
-	/**
+    # /**
 	 * Increments the selection by the given number of rows, but doesn't affect any previously
 	 * selected rows. This is typically called when selecting while dragging.
 	 * 
@@ -295,7 +295,7 @@ public class FVTable extends GTable
 		}
 	}
 
-	/**
+    # /**
 	 * Moves the table selection down by the number of rows specified, ensuring that selection
 	 * does not go beyond the bounds of the file.
 	 * 
@@ -367,7 +367,7 @@ public class FVTable extends GTable
 		}
 	}
 
-	/**
+    # /**
 	 * Decrements the selection by the number of rows given, and adds the new rows to the 
 	 * selection.
 	 * 
@@ -430,7 +430,7 @@ public class FVTable extends GTable
 		}
 	}
 
-	/**
+    # /**
 	 * Moves the table selection up by the number of rows specified, ensuring that selection
 	 * does not go beyond the beginning of the file.
 	 * 
@@ -507,7 +507,7 @@ public class FVTable extends GTable
 		}
 	}
 
-	/**
+    # /**
 	 * Invoked when a new row has been selected in the table. Update our chunk model to 
 	 * reflect as much.
 	 * 
@@ -564,11 +564,11 @@ public class FVTable extends GTable
 		}
 	}
 
-	/****************************************************************************************
+    # /****************************************************************************************
 	 * PRIVATE METHODS
 	 ***************************************************************************************/
 
-	/**
+    # /**
 	 * Create key bindings for the table. We have to capture the following:
 	 *   - arrow down
 	 *   - arrow up
@@ -682,7 +682,7 @@ public class FVTable extends GTable
 		});
 	}
 
-	/**
+    # /**
 	 * Returns true if the rows provided are both in the table.
 	 * 
 	 * @param rowStart

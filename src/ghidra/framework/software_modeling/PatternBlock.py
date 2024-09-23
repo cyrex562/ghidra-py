@@ -1,22 +1,22 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 # /*
- * Created on Feb 7, 2005
- *
- */
+# * Created on Feb 7, 2005
+# *
+# */
 package ghidra.app.plugin.processors.sleigh.pattern;
 
 import static ghidra.pcode.utils.SlaFormat.*;
@@ -30,8 +30,8 @@ import ghidra.program.model.pcode.DecoderException;
 import ghidra.util.NumericUtilities;
 
 # /**
- * A mask/value pair viewed as two bitstreams
- */
+# * A mask/value pair viewed as two bitstreams
+# */
 public class PatternBlock {
 	int offset;					// Offset first to non-zero byte of mask
 	int nonzerosize;			// Last byte(+1) containing nonzero mask
@@ -438,7 +438,7 @@ public class PatternBlock {
 	protected static final int SHAMT = 24;
 	protected static final int LEFT_BYTE = 0xff << SHAMT;
 
-	/**
+    # /**
 	 * Extract those portions of the pattern which constitute fully-specified bytes
 	 * @return an array of bytes
 	 */

@@ -16,7 +16,7 @@
 package ghidra.framework.client;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.net.Authenticator;
 import java.rmi.*;
 import java.security.GeneralSecurityException;

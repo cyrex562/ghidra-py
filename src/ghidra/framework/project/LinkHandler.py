@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
@@ -49,7 +49,7 @@ public abstract class LinkHandler<T extends DomainObjectAdapterDB> extends DBCon
 	// 16x16 link icon where link is placed in lower-left corner
 	public static final Icon LINK_ICON = new GIcon("icon.content.handler.link.overlay");
 
-	/**
+    # /**
 	 * Create a link file using the specified URL
 	 * @param ghidraUrl link URL (must be a Ghidra URL - see {@link GhidraURL}).
 	 * @param fs filesystem where link file should be created 
@@ -168,7 +168,7 @@ public abstract class LinkHandler<T extends DomainObjectAdapterDB> extends DBCon
 		throw new UnsupportedOperationException("Link file requires checking server vs local URL");
 	}
 
-	/**
+    # /**
 	 * Get the link URL which corresponds to the specified link file.
 	 * See {@link DomainFile#isLinkFile()}.
 	 * @param linkFile link-file domain file
@@ -189,7 +189,7 @@ public abstract class LinkHandler<T extends DomainObjectAdapterDB> extends DBCon
 		throw new IOException("Invalid link file: " + contentType);
 	}
 
-	/**
+    # /**
 	 * Get the link URL which corresponds to the specified link file.
 	 * See {@link DomainFile#isLinkFile()}.
 	 * @param linkFile link-file folder item
@@ -211,7 +211,7 @@ public abstract class LinkHandler<T extends DomainObjectAdapterDB> extends DBCon
 		throw new IOException("Invalid link file: " + contentType);
 	}
 
-	/**
+    # /**
 	 * Get the base icon for this link-file which does not include the 
 	 * link overlay icon.
 	 */

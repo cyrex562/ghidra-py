@@ -15,7 +15,7 @@
  */
 package ghidra.util.map;
 
-import java.io.*;
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 
 # /**
  * Debug header for various, yet-to-be-determined debug structures.  {@link RvaVaDebugHeader}, an
@@ -27,7 +27,7 @@ public class DebugHeader {
 	private long headerLength;
 	private long dataLength;
 
-	/**
+    # /**
 	 * Returns the version of the header.
 	 * @return the header version.
 	 */
@@ -35,7 +35,7 @@ public class DebugHeader {
 		return headerVersion;
 	}
 
-	/**
+    # /**
 	 * Returns the header length.
 	 * @return the header length.
 	 */
@@ -43,7 +43,7 @@ public class DebugHeader {
 		return headerLength;
 	}
 
-	/**
+    # /**
 	 * Returns the data length.
 	 * @return the data length.
 	 */
@@ -51,7 +51,7 @@ public class DebugHeader {
 		return dataLength;
 	}
 
-	/**
+    # /**
 	 * Deserializes the {@link DebugHeader} information from a {@link PdbByteReader}
 	 * @param reader the {@link PdbByteReader} from which to parse the data.
 	 * @throws PdbException upon problem parsing the data.
@@ -74,7 +74,7 @@ public class DebugHeader {
 		}
 	}
 
-	/**
+    # /**
 	 * Dumps this class to Writer.  This package-protected method is for debugging only
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer

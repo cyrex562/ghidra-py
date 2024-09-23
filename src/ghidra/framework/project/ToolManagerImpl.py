@@ -50,7 +50,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 
 	private Map<Workspace, Workspace> changedWorkspaces;
 
-	/** keep track of the workspaces in the project */
+    # /** keep track of the workspaces in the project */
 	private List<Workspace> workspaces;
 	private Map<String, Workspace> wsMap; // map workspace name to workspace
 
@@ -60,7 +60,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 	// map generic tool names to list of tools
 	private Map<String, List<PluginTool>> namesMap;
 
-	/**
+    # /**
 	 * keep a handle to the active workspace to make inactive when another
 	 * workspace is made active
 	 */
@@ -86,7 +86,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 
 	}
 
-	/**
+    # /**
 	 * Registers the new instance of the tool in the namesMap and returns the total number of
 	 * running instances of that tool
 	 * @param toolName the name of the tool being registers
@@ -278,7 +278,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		return workspaces.toArray(wsList);
 	}
 
-	/**
+    # /**
 	 * Saves this object to an XML element
 	 * @return the element containing the tool XML
 	 */
@@ -302,7 +302,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		return root;
 	}
 
-	/**
+    # /**
 	 * restores the object from an XML element
 	 *
 	 * @param root root element of saved XML state
@@ -354,7 +354,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Return whether any tools have changed, or if any tools were
 	 * added or removed from any of the workspaces.
 	 * @return true if any tools in this workspace have changed
@@ -375,7 +375,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		return ((changedWorkspaces.size() > 0) || activeWorkspaceChanged);
 	}
 
-	/**
+    # /**
 	 * Save the tools that are opened and changed, that will be brought back up when the project
 	 * is reopened
 	 * @return true if the session was saved
@@ -442,7 +442,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		toolServices.dispose();
 	}
 
-	/**
+    # /**
 	 * Debug method for printing out the list of connections.
 	 */
 	public void dumpConnectionList() {
@@ -499,7 +499,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 	////////////////////////////////////////////////////////////////////
 	// not in the interface
 	////////////////////////////////////////////////////////////////////
-	/**
+    # /**
 	 * Clear the flag so the user does not get prompted to save the
 	 * project; flag gets set to true when a workspace is created, and
 	 * a workspace is created when a new project is created.
@@ -508,7 +508,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		activeWorkspaceChanged = false;
 	}
 
-	/**
+    # /**
 	 * Get any tool services available from this tool
 	 *
 	 * @return ToolServices list of tool services this tool can provide.
@@ -525,7 +525,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 	/////////////////////////////////////////////////////////////
 	// not in the interface -- needed by ProjectImpl when
 	// restoring the front end tool.
-	/**
+    # /**
 	 * Called by WorkspaceImpl when it is restoring its state.
 	 * @param toolName the name of the tool
 	 * @return the tool
@@ -547,7 +547,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 	// ** package-level methods
 	///////////////////////////////////////////////////////
 
-	/**
+    # /**
 	 *  Close a tool.
 	 *
 	 * @param tool tool to be closed.
@@ -567,7 +567,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the active workspace.
 	 *
 	 * @param workspace workspace to set active
@@ -597,7 +597,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a handle to the workspace with the given name.
 	 *
 	 * @param name name of the workspace.
@@ -608,7 +608,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		return wsMap.get(name);
 	}
 
-	/**
+    # /**
 	 * Mark workspace as changed.
 	 *
 	 * @param ws workspace to tag
@@ -619,7 +619,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Called by the workspace when it is updating its name;
 	 * causes a property change event to be fired.
 	 *
@@ -667,7 +667,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate an instance name in the form
 	 * of a one-up number.
 	 */
@@ -693,7 +693,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		return tool;
 	}
 
-	/**
+    # /**
 	 * Add the tool to the table, add us as a listener for property
 	 * changes on the tool.
 	 */
@@ -744,7 +744,7 @@ public class ToolManagerImpl implements ToolManager, PropertyChangeListener {
 		connectMap = map;
 	}
 
-	/**
+    # /**
 	 * Get the key for the connection map.
 	 *
 	 * @param producer tool producing an event

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.bookmark;
 
-import java.io.IOException;
+
 import java.util.HashSet;
 
 import db.*;

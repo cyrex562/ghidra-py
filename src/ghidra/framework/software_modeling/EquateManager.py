@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -34,8 +34,8 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Implementation of the Equate Table
- */
+# * Implementation of the Equate Table
+# */
 public class EquateManager implements EquateTable, ErrorHandler, ManagerDB {
 
 	private AddressMap addrMap;
@@ -49,7 +49,7 @@ public class EquateManager implements EquateTable, ErrorHandler, ManagerDB {
 	public static final String ERROR_TAG = "<BAD EQUATE>";
 	public static final String FORMAT_DELIMITER = ":";
 
-	/**
+    # /**
 	 * Constructor
 	 * @param handle database handle
 	 * @param addrMap map that converts addresses to longs and longs to addresses
@@ -504,7 +504,7 @@ public class EquateManager implements EquateTable, ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Send notification that the equate name changed
 	 * @param oldName old name
 	 * @param newName new name
@@ -628,7 +628,7 @@ public class EquateManager implements EquateTable, ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Formats a string to the equate format given the enum UUID and the value for the equate. The
 	 * formatted strings are used when setting equates from datatypes so that information can be
 	 * stored with an equate to point back to that datatype.
@@ -640,7 +640,7 @@ public class EquateManager implements EquateTable, ErrorHandler, ManagerDB {
 		return DATATYPE_TAG + FORMAT_DELIMITER + dtID.getValue() + FORMAT_DELIMITER + equateValue;
 	}
 
-	/**
+    # /**
 	 *  Formats a string to the equate error format given the value. Used for rendering formatted
 	 *  equates that do not point back to a datatype. 
 	 * @param equateValue The value of the equate
@@ -650,7 +650,7 @@ public class EquateManager implements EquateTable, ErrorHandler, ManagerDB {
 		return "0x" + Long.toString(equateValue, 16) + " " + EquateManager.ERROR_TAG;
 	}
 
-	/**
+    # /**
 	 * Pulls out the enum data type UUID given a formatted equate name. This UUID should point back
 	 * to a datatype.
 	 * @param formattedEquateName The formatted equate name to pull the UUID from
@@ -663,7 +663,7 @@ public class EquateManager implements EquateTable, ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Pulls out the value of the equate given the formatted equate name. The value stored in the
 	 * equate info is a decimal.
 	 * @param formattedEquateName The formatted equate name to pull the value from

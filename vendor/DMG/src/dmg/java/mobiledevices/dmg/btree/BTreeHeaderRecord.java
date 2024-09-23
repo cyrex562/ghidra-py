@@ -1,17 +1,17 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.btree;
 
-import java.io.IOException;
+
 
 import mobiledevices.dmg.ghidra.GBinaryReader;
 
 /**
- * Represents a BTHeaderRec structure.
- * 
- * @see <a href="https://opensource.apple.com/source/xnu/xnu-792/bsd/hfs/hfs_format.h.auto.html">hfs/hfs_format.h</a> 
- */
+# * Represents a BTHeaderRec structure.
+# * 
+# * @see <a href="https://opensource.apple.com/source/xnu/xnu-792/bsd/hfs/hfs_format.h.auto.html">hfs/hfs_format.h</a> 
+# */
 public class BTreeHeaderRecord /*implements StructConverter*/ {
 
 	private short treeDepth;

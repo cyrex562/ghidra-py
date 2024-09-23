@@ -41,7 +41,7 @@ public class DecompilerLocation extends ProgramLocation {
 		this.charPos = charPos;
 	}
 
-	/**
+    # /**
 	 * Default constructor required for restoring a program location from XML.
 	 */
 	public DecompilerLocation() {
@@ -51,7 +51,7 @@ public class DecompilerLocation extends ProgramLocation {
 		return functionEntryPoint;
 	}
 
-	/**
+    # /**
 	 * Results from the decompilation
 	 * 
 	 * @return C-AST, DFG, and CFG object. null if there are no results attached to this location
@@ -60,7 +60,7 @@ public class DecompilerLocation extends ProgramLocation {
 		return results;
 	}
 
-	/**
+    # /**
 	 * C text token at the current cursor location
 	 * 
 	 * @return token at this location, could be null if there are no decompiler results

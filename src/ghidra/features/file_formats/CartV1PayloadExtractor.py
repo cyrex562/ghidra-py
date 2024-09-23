@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.*;
+
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
@@ -29,22 +29,22 @@ import ghidra.util.task.TaskMonitor;
  * payload contents. Provides output stream content of decrypted and decompressed file data.
  */
 public class CartV1PayloadExtractor {
-	/**
+    # /**
 	 * Internal little-endian {@link BinaryReader} object for access to original file bytes.
 	 */
 	private BinaryReader reader;
 
-	/**
+    # /**
 	 * Internal {@link OutputStream} that will received the payload bytes.
 	 */
 	private OutputStream tempFos;
 
-	/**
+    # /**
 	 * {@link CartV1File} object from which to pull all relevant metadata for payload extraction.
 	 */
 	private CartV1File cartFile;
 
-	/**
+    # /**
 	 * Create the payload extractor for the specified byte provider that will output
 	 * to the specified output stream.
 	 *
@@ -58,7 +58,7 @@ public class CartV1PayloadExtractor {
 		this(new BinaryReader(byteProvider, true), os, cartFile);
 	}
 
-	/**
+    # /**
 	 * Create the payload extractor for the specified little-endian binary reader
 	 * that will output to the specified output stream.
 	 *
@@ -78,7 +78,7 @@ public class CartV1PayloadExtractor {
 		this.cartFile = cartFile;
 	}
 
-	/**
+    # /**
 	 * Callback to perform actual extraction of CaRT payload data to the output
 	 * stream.
 	 *
@@ -116,7 +116,7 @@ public class CartV1PayloadExtractor {
 		}
 	}
 
-	/**
+    # /**
 	 * Test that the first two bytes of the CaRT payload data decrypts to a valid
 	 * ZLIB prefix.
 	 *

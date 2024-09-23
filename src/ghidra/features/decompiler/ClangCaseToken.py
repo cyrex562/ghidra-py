@@ -111,7 +111,7 @@ public class ClangCaseToken extends ClangToken {
 		return new Scalar(sz * 8, value, isSigned);
 	}
 
-	/**
+    # /**
 	 * @return the BRANCHIND PcodeOp that jumps to this label
 	 */
 	public PcodeOp getSwitchOp() {

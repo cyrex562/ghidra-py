@@ -149,7 +149,7 @@ public class ChooseMatchTagAction extends DockingAction {
 			return selectedTag;
 		}
 
-		/**
+	    # /**
 		 * An address edit action occurred in the panel so handle it as if ok button were pressed.
 		 */
 		public void fieldEdited() {

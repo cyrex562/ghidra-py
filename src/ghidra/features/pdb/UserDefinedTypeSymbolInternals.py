@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  */
 public class UserDefinedTypeSymbolInternals extends AbstractSymbolInternals {
 
-	/**
+    # /**
 	 * Factory for user defined symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -46,7 +46,7 @@ public class UserDefinedTypeSymbolInternals extends AbstractSymbolInternals {
 	protected RecordNumber typeRecordNumber;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 */
@@ -54,7 +54,7 @@ public class UserDefinedTypeSymbolInternals extends AbstractSymbolInternals {
 		super(pdb);
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */
@@ -62,7 +62,7 @@ public class UserDefinedTypeSymbolInternals extends AbstractSymbolInternals {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */

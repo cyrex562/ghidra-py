@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.Collection;
 import java.util.Set;

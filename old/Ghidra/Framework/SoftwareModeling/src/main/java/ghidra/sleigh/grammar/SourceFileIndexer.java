@@ -17,7 +17,7 @@ package ghidra.sleigh.grammar;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;

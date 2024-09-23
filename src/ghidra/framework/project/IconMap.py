@@ -35,7 +35,7 @@ class IconMap {
 		return iconMap;
 	}
 
-	/**
+    # /**
 	 * Add the icon to the map; if name already exists, icon will
 	 * replace the existing value.
 	 */
@@ -43,7 +43,7 @@ class IconMap {
 		map.put(name, icon);
 	}
 
-	/**
+    # /**
 	 * Remove the icon from the map; has no effect on the resources/images
 	 * directory.
 	 */
@@ -51,7 +51,7 @@ class IconMap {
 		return map.remove(name);
 	}
 
-	/**
+    # /**
 	 * Get the icon for the given name.
 	 * @return the icon; return null if there is no icon by that name.
 	 */
@@ -59,7 +59,7 @@ class IconMap {
 		return map.get(name);
 	}
 
-	/**
+    # /**
 	 * Get the sorted list of icon names the icon map.
 	 */
 	static List<String> getIconNames() {
@@ -74,7 +74,7 @@ class IconMap {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Load the map of icon.
 	 */
 	private static void load(Map<String, ToolIconURL> iconMap) {

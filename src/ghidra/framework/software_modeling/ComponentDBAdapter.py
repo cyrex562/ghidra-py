@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -37,7 +37,7 @@ abstract class ComponentDBAdapter {
 	static final int COMPONENT_SIZE_COL = ComponentDBAdapterV0.V0_COMPONENT_SIZE_COL;
 	static final int COMPONENT_ORDINAL_COL = ComponentDBAdapterV0.V0_COMPONENT_ORDINAL_COL;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the component data type database table. Components are 
 	 * used to specify the individual elements of a composite data type. The adapter is based 
 	 * on the version of the database associated with the specified database handle and the openMode.
@@ -53,7 +53,7 @@ abstract class ComponentDBAdapter {
 		return new ComponentDBAdapterV0(handle, tablePrefix, openMode == OpenMode.CREATE);
 	}
 
-	/**
+    # /**
 	 * Creates a database record for a component data type (an individual member of a composite data type).
 	 * @param dataTypeID the ID of the data type for this component.
 	 * @param parentID the ID of the data type that this component is a part of.
@@ -68,7 +68,7 @@ abstract class ComponentDBAdapter {
 	abstract DBRecord createRecord(long dataTypeID, long parentID, int length, int ordinal,
 			int offset, String name, String comment) throws IOException;
 
-	/**
+    # /**
 	 * Gets the record for the indicated component data type.
 	 * @param componentID the ID of the component data type to retrieve.
 	 * @return the component record
@@ -76,7 +76,7 @@ abstract class ComponentDBAdapter {
 	 */
 	abstract DBRecord getRecord(long componentID) throws IOException;
 
-	/**
+    # /**
 	 * Removes the component data type record with the specified ID.
 	 * @param componentID the ID of the component data type.
 	 * @return true if the record is removed.
@@ -84,14 +84,14 @@ abstract class ComponentDBAdapter {
 	 */
 	abstract boolean removeRecord(long componentID) throws IOException;
 
-	/**
+    # /**
 	 * Updates the component data type table with the provided record.
 	 * @param record the new record
 	 * @throws IOException if there is a problem accessing the database.
 	 */
 	abstract void updateRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Gets an array with all of the IDs of the defined components within the composite data type indicated.
 	 * @param compositeID the ID of the composite data type whose components are desired.
 	 * @return an array of the defined component IDs as LongField values within Field array.

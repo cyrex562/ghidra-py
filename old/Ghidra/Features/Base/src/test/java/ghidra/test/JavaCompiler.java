@@ -15,7 +15,7 @@
  */
 package ghidra.test;
 
-import java.io.*;
+
 
 /**
  * Compile a java file; deletes the java file and the class file when the

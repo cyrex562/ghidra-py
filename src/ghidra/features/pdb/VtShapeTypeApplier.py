@@ -31,7 +31,7 @@ import ghidra.util.exception.CancelledException;
 public class VtShapeTypeApplier extends MsDataTypeApplier {
 
 	// Intended for: VtShapeMsType
-	/**
+    # /**
 	 * Constructor for vtshape type applier
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */
@@ -39,7 +39,7 @@ public class VtShapeTypeApplier extends MsDataTypeApplier {
 		super(applicator);
 	}
 
-	/**
+    # /**
 	 * Returns the name
 	 * @param type the MS VtShape
 	 * @return the name

@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.checksums;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.List;
 

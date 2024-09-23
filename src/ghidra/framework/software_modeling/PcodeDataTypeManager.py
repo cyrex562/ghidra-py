@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,10 +36,10 @@ import ghidra.util.UniversalID;
 import ghidra.xml.XmlParseException;
 
 # /**
- *
- * Class for marshaling DataType objects to and from the Decompiler.
- * 
- */
+# *
+# * Class for marshaling DataType objects to and from the Decompiler.
+# * 
+# */
 public class PcodeDataTypeManager {
 
 	// Mask for routing bits at head of a data-type's temporary id
@@ -66,7 +66,7 @@ public class PcodeDataTypeManager {
 	public static final int TYPE_STRUCT = 3;	// Structure data-type, made up of component datatypes
 	public static final int TYPE_UNION = 2;		// An overlapping union of multiple datatypes
 
-	/**
+    # /**
 	 * A mapping between a DataType and its (name,id) on the decompiler side
 	 */
 	private static class TypeMap {
@@ -146,7 +146,7 @@ public class PcodeDataTypeManager {
 		nameTransformer = newTransformer;
 	}
 
-	/**
+    # /**
 	 * Find a base/built-in data-type with the given name and/or id.  If an id is provided and
 	 * a corresponding data-type exists, this data-type is returned. Otherwise the first
 	 * built-in data-type with a matching name is returned
@@ -180,7 +180,7 @@ public class PcodeDataTypeManager {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * Decode a data-type from the stream
 	 * @param decoder is the stream decoder
 	 * @return the decoded data-type object
@@ -291,7 +291,7 @@ public class PcodeDataTypeManager {
 		return restype;
 	}
 
-	/**
+    # /**
 	 * Get the inner data-type being referred to by an offset from a relative/shifted pointer.
 	 * Generally we expect the base of the relative pointer to be a structure and the offset
 	 * refers to a (possibly nested) field. In this case, we return the data-type of the field.
@@ -318,7 +318,7 @@ public class PcodeDataTypeManager {
 		return Undefined1DataType.dataType;
 	}
 
-	/**
+    # /**
 	 * Encode the void data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors in the underlying stream
@@ -328,7 +328,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_VOID);
 	}
 
-	/**
+    # /**
 	 * Encode a Pointer data-type to the stream.
 	 * @param encoder is the stream encoder
 	 * @param type is the Pointer data-type
@@ -400,7 +400,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a pointer with an associated offset relative to a base data-type to stream.
 	 * The pointer is encoded as a TypeDef (of a Pointer). The "pointed to" object is the base data-type,
 	 * the relative offset is passed in, and other properties come from the TypeDef.
@@ -433,7 +433,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode an Array data-type to stream.
 	 * @param encoder is the stream encoder
 	 * @param type is the Array data-type
@@ -459,7 +459,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a Structure data-type to stream
 	 * @param encoder is the stream encoder
 	 * @param type is the Structure data-type
@@ -499,7 +499,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a Union data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param unionType is the Union data-type
@@ -531,7 +531,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode an Enum data-type to the stream.
 	 * @param encoder is the stream encoder
 	 * @param type is the Enum data-type
@@ -555,7 +555,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a character data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param type is the character data-type
@@ -582,7 +582,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a wide character data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param type is the Pointer data-type
@@ -597,7 +597,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a string of char data-type to the stream.
 	 * @param encoder is the stream encoder
 	 * @param size is the length of the string
@@ -613,7 +613,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a UTF8 encoded string data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param size is the length of the string (in bytes)
@@ -629,7 +629,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a UTF16 encoded string data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param size is the length of the string (in bytes)
@@ -645,7 +645,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a UTF32 encoded string data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param size is the length of the string (in bytes)
@@ -661,7 +661,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a FunctionDefinition data-type to the stream.
 	 * @param encoder is the stream encoder
 	 * @param type is the FunctionDefinition data-type
@@ -679,7 +679,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a boolean data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param type is the boolean data-type
@@ -693,7 +693,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode an integer data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param type is the integer data-type
@@ -714,7 +714,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a floating-point data-type to the stream
 	 * @param encoder is the stream encoder
 	 * @param type is the floating-point data-type
@@ -728,7 +728,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a data-type whose internals are opaque (to the Decompiler) to stream.
 	 * @param encoder is the stream encoder
 	 * @param type is the opaque data-type
@@ -758,7 +758,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a string data-type whose internals are opaque (to the Decompiler) to stream.
 	 * @param encoder is the stream encoder
 	 * @param type is the opaque string
@@ -798,7 +798,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a Structure to the stream that has its size reported as zero.
 	 * @param encoder is the stream encoder
 	 * @param type data type to encode
@@ -824,7 +824,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPE);
 	}
 
-	/**
+    # /**
 	 * Encode a TypeDef data-type to the stream.  Generally this sends
 	 * a {@code <def>} element with a {@code <typeref>} reference to the underlying data-type being
 	 * typedefed, but we check for Settings on the TypeDef object that can indicate
@@ -882,7 +882,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_DEF);
 	}
 
-	/**
+    # /**
 	 * Encode a reference to the given data-type to stream. Most data-types produce a
 	 * {@code <type>} element, fully describing the data-type. Where possible a {@code <typeref>}
 	 * element is produced, which just encodes the name of the data-type, deferring a full
@@ -936,7 +936,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_TYPEREF);
 	}
 
-	/**
+    # /**
 	 * Check for data-type settings that the Decompiler does not support
 	 * @param type is the data-type whose settings are checked
 	 * @return true if the data-type does have unsupported settings
@@ -947,7 +947,7 @@ public class PcodeDataTypeManager {
 			PointerTypedefInspector.hasPointerBitMask(type));
 	}
 
-	/**
+    # /**
 	 * Assign a temporary id to a data-type.  The data-type is assumed to not be BuiltIn
 	 * or a DataTypeDB.  The id allows DataType objects to be associated data-types returned by the
 	 * decompiler process and is only valid until the start of the next function decompilation.
@@ -973,7 +973,7 @@ public class PcodeDataTypeManager {
 		return tempId.longValue();
 	}
 
-	/**
+    # /**
 	 * Throw out any temporary ids (from previous function decompilation) and
 	 * reset the counter.
 	 */
@@ -983,7 +983,7 @@ public class PcodeDataTypeManager {
 		tempIDCounter = 0;
 	}
 
-	/**
+    # /**
 	 * Encode the name and id associated with a given data-type to a stream as attributes
 	 * of the current element.
 	 * @param encoder is the stream encoder
@@ -1016,7 +1016,7 @@ public class PcodeDataTypeManager {
 		encoder.writeUnsignedInteger(ATTRIB_ID, id);
 	}
 
-	/**
+    # /**
 	 * Encode a reference element for a character data-type, based on the size in bytes to a stream.
 	 * @param encoder is the stream encoder
 	 * @param size is the requested size of the character data-type
@@ -1061,7 +1061,7 @@ public class PcodeDataTypeManager {
 		throw new IllegalArgumentException("Unsupported character size");
 	}
 
-	/**
+    # /**
 	 * Encode information for a data-type to the stream
 	 * 
 	 * @param encoder is the stream encoder
@@ -1137,7 +1137,7 @@ public class PcodeDataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Build the list of core data-types. Data-types that are always available to the Decompiler
 	 * and are associated with a (metatype,size) pair.
 	 * 
@@ -1225,7 +1225,7 @@ public class PcodeDataTypeManager {
 		byteMap = coreBuiltin.get(byteId | BUILTIN_ID_HEADER);
 	}
 
-	/**
+    # /**
 	 * Encode the core data-types to the stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors in the underlying stream
@@ -1250,7 +1250,7 @@ public class PcodeDataTypeManager {
 		encoder.closeElement(ELEM_CORETYPES);
 	}
 
-	/**
+    # /**
 	 * Get the decompiler meta-type associated with a data-type.
 	 * @param tp is the data-type
 	 * @return the meta-type
@@ -1302,7 +1302,7 @@ public class PcodeDataTypeManager {
 		return TYPE_UNKNOWN;
 	}
 
-	/**
+    # /**
 	 * Convert an XML marshaling string to a metatype code
 	 * @param metaString is the string
 	 * @return the metatype code
@@ -1370,7 +1370,7 @@ public class PcodeDataTypeManager {
 		throw new XmlParseException("Unknown metatype: " + metaString);
 	}
 
-	/**
+    # /**
 	 * Convert a decompiler metatype code to a string for XML marshaling
 	 * @param meta is the metatype
 	 * @return the marshaling string

@@ -57,7 +57,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 	private boolean containsCfwChecksAndOrInstrumentation;
 	private int padding;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -82,7 +82,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the procedure frame total length.
 	 * @return Procedure frame total length.
 	 */
@@ -90,7 +90,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return procedureFrameTotalLength;
 	}
 
-	/**
+    # /**
 	 * Returns the procedure frame padding length.
 	 * @return Procedure frame padding length.
 	 */
@@ -98,7 +98,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return procedureFramePaddingLength;
 	}
 
-	/**
+    # /**
 	 * Returns the padding offset.
 	 * @return Padding offset.
 	 */
@@ -106,7 +106,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return paddingOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the callee save registers byte count.
 	 * @return Callee save registers byte count.
 	 */
@@ -114,7 +114,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return calleeSaveRegistersByteCount;
 	}
 
-	/**
+    # /**
 	 * Returns the exception handler offset.
 	 * @return Exception handler offset.
 	 */
@@ -122,7 +122,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return exceptionHandlerOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the exception handler section ID.
 	 * @return Exception handler section ID.
 	 */
@@ -130,7 +130,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return exceptionHandlerSectionID;
 	}
 
-	/**
+    # /**
 	 * Returns the flags.
 	 * @return Flags.
 	 */
@@ -138,7 +138,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function uses alloca().
 	 * @return True if it uses alloca().
 	 */
@@ -146,7 +146,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return usesAlloca;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function uses setjmp().
 	 * @return True if it uses setjmp().
 	 */
@@ -154,7 +154,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return usesSetJmp;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function uses longjmp().
 	 * @return True if it uses longjmp().
 	 */
@@ -162,7 +162,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return usesLongJmp;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function uses inline asm.
 	 * @return True if it uses inline asm.
 	 */
@@ -170,7 +170,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return usesInlineAsm;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function has exception handling states.
 	 * @return True if it has exception handling states.
 	 */
@@ -178,7 +178,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return hasExceptionHandlingStates;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function "was specified" as inline.
 	 * @return True if the function was specified" as inline.
 	 */
@@ -186,7 +186,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return wasInlineSpec;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function has structured exception handling.
 	 * @return True if it has structured exception handling.
 	 */
@@ -194,7 +194,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return wasStructuredExceptionHandling;
 	}
 
-	/**
+    # /**
 	 * Tells if the function is __declspec(naked).
 	 * @return True if it is __declspec(naked).
 	 */
@@ -202,7 +202,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return isDeclspecNaked;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function has buffer security check due to /GS.
 	 * @return True if it has buffer security due to /GS.
 	 */
@@ -210,7 +210,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return hasGsBufferSecurityCheck;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function was compiled with /EHa.
 	 * @return True if it was compiled with /EHa.
 	 */
@@ -218,7 +218,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return compiledWithAsyncExceptionHandling;
 	}
 
-	/**
+    # /**
 	 * Tells if stack ordering couldn't be done on the function even though it has /GS buffer
 	 * checks.
 	 * @return True if stack ordering couldn't be done even with /GS buffer checks.
@@ -227,7 +227,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return couldNotDoStackOrderingWithGsBufferSecurityChecks;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function was inlined within another.
 	 * @return True if the function was inlined within another.
 	 */
@@ -235,7 +235,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return wasInlinedWithinAnotherFunction;
 	}
 
-	/**
+    # /**
 	 * Tells if the function is __declspec(strict_gs_check).
 	 * @return True if it is __declspec(strict_gs_check).
 	 */
@@ -243,7 +243,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return isDeclspecStrictGsCheck;
 	}
 
-	/**
+    # /**
 	 * Tells if the function is __declspec(safebuffers).
 	 * @return True if it is __declspec(safebuffers).
 	 */
@@ -251,7 +251,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return isDeclspecSafeBuffers;
 	}
 
-	/**
+    # /**
 	 * Returns the explicitly encoded local base pointer.
 	 * @return Explicitly encoded local base pointer.
 	 */
@@ -259,7 +259,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return explicitlyEncodedLocalBasePointer;
 	}
 
-	/**
+    # /**
 	 * Returns the explicitly encoded parameter pointer.
 	 * @return Excplicitly encoded parameter pointer.
 	 */
@@ -267,7 +267,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return explicitlyEncodedParameterPointer;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function was compiled with Procedure Guided Optimization.
 	 * <P>
 	 * Note: Believe this relates to Procedure Guided Optimization 
@@ -277,7 +277,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return wasCompiledWithPgoPgu;
 	}
 
-	/**
+    # /**
 	 * Tells whether there are valid Procedure Guided Optimization counts.
 	 * <P>
 	 * Note: Believe this relates to Procedure Guided Optimization 
@@ -287,7 +287,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return hasvalidPogoCounts;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function was optimized for speed.
 	 * @return True if it was optimized for speed.
 	 */
@@ -295,7 +295,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return optimizedForSpeed;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function contains Guard CF checks but no write checks.
 	 * @return True if it has Guard CF checks and not write checks.
 	 */
@@ -303,7 +303,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return containsCfgChecksButNoWriteChecks;
 	}
 
-	/**
+    # /**
 	 * Tells whether the function has Guard CFW checks and/or instrumentation.
 	 * @return True if has Guard CFW checks and/or instrumentation.
 	 */
@@ -311,7 +311,7 @@ public class ExtraFrameAndProcedureInformationMsSymbol extends AbstractMsSymbol 
 		return containsCfwChecksAndOrInstrumentation;
 	}
 
-	/**
+    # /**
 	 * Returns the padding.
 	 * @return Padding.
 	 */

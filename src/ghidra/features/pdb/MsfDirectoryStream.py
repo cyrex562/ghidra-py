@@ -34,7 +34,7 @@ abstract class MsfDirectoryStream extends MsfStream {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor.  Sets the byte length of the Stream to -1.  This method is used when the
 	 *  Stream knows/reads its length
 	 * @param msf the {@link Msf} to which the Stream belongs

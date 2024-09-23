@@ -19,7 +19,7 @@ import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 
 import org.junit.Before;
 import org.junit.Test;

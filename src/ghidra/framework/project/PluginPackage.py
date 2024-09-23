@@ -35,7 +35,7 @@ public abstract class PluginPackage implements ExtensionPoint, Comparable<Plugin
 
 	private static Map<String, PluginPackage> packageMap;
 
-	/**
+    # /**
 	 * Returns true if the system has found a plugin package for the given name
 	 * @param packageName the package name
 	 * @return true if the system has found a plugin package for the given name
@@ -48,7 +48,7 @@ public abstract class PluginPackage implements ExtensionPoint, Comparable<Plugin
 		return pluginPackage != null;
 	}
 
-	/**
+    # /**
 	 * Returns the existing plugin package with the given name.  If no package exists, then the
 	 * {@link MiscellaneousPluginPackage} will be returned.
 	 * @param packageName the package name
@@ -123,7 +123,7 @@ public abstract class PluginPackage implements ExtensionPoint, Comparable<Plugin
 		return description;
 	}
 
-	/**
+    # /**
 	 * The minimum level required to activate plugins when the entire package is activated by the
 	 * user.
 	 * @return the minimum level

@@ -41,7 +41,7 @@ public class MultipleLabelsRenderer extends AbstractGhidraColumnRenderer<Symbol[
 
 		public final String displayString;
 
-		/**
+	    # /**
 		 * Constructor for an enumerated type of a Multiple Labels Indicator renderer.
 		 * @param displayString a displayable string that identifies which type of 
 		 * MultipleLabelsRenderer.
@@ -50,7 +50,7 @@ public class MultipleLabelsRenderer extends AbstractGhidraColumnRenderer<Symbol[
 			this.displayString = displayString;
 		}
 
-		/**
+	    # /**
 		 * Gets the display string for this type.
 		 * @return the type as a displayable string.
 		 */
@@ -69,7 +69,7 @@ public class MultipleLabelsRenderer extends AbstractGhidraColumnRenderer<Symbol[
 
 	private MultipleLabelsRendererType type;
 
-	/**
+    # /**
 	 * Constructs the field renderer for indicating when there are multiple labels.
 	 * @param type indicates whether this is a source or destination renderer
 	 */

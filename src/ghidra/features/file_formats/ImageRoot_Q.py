@@ -21,23 +21,23 @@ package ghidra.file.formats.android.art.image_root;
 public enum ImageRoot_Q {
 	kDexCaches,
 	kClassRoots,
-	/** Pre-allocated OOME when throwing exception.*/
+    # /** Pre-allocated OOME when throwing exception.*/
 	kOomeWhenThrowingException,
-	/** Pre-allocated OOME when throwing OOME. */
+    # /** Pre-allocated OOME when throwing OOME. */
 	kOomeWhenThrowingOome,
-	/** Pre-allocated OOME when handling StackOverflowError. */
+    # /** Pre-allocated OOME when handling StackOverflowError. */
 	kOomeWhenHandlingStackOverflow,
-	/** Pre-allocated NoClassDefFoundError. */
+    # /** Pre-allocated NoClassDefFoundError. */
 	kNoClassDefFoundError,
-	/** Different for boot image and app image, see aliases below. */
+    # /** Different for boot image and app image, see aliases below. */
 	kSpecialRoots,
 	kImageRootsMax;
 
 	//Aliases
 
-	/** The class loader used to build the app image.*/
+    # /** The class loader used to build the app image.*/
 	public final static ImageRoot_Q kAppImageClassLoader = kSpecialRoots;
 
-	/** Array of boot image objects that must be kept live. */
+    # /** Array of boot image objects that must be kept live. */
 	public final static ImageRoot_Q kBootImageLiveObjects = kSpecialRoots;
 }

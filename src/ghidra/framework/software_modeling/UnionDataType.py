@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.*;
@@ -23,9 +23,9 @@ import ghidra.util.Msg;
 import ghidra.util.UniversalID;
 
 # /**
- * Basic implementation of the union data type.
- * NOTE: Implementation is not thread safe when being modified.
- */
+# * Basic implementation of the union data type.
+# * NOTE: Implementation is not thread safe when being modified.
+# */
 public class UnionDataType extends CompositeDataTypeImpl implements UnionInternal {
 
 	private int unionLength;
@@ -33,7 +33,7 @@ public class UnionDataType extends CompositeDataTypeImpl implements UnionInterna
 
 	private List<DataTypeComponentImpl> components;
 
-	/**
+    # /**
 	 * Construct a new empty union with the given name within the
 	 * specified categry path.  An empty union will report its length as 1 and 
 	 * {@link #isNotYetDefined()} will return true.
@@ -46,7 +46,7 @@ public class UnionDataType extends CompositeDataTypeImpl implements UnionInterna
 		this(path, name, null);
 	}
 
-	/**
+    # /**
 	 * Construct a new empty union with the given name and datatype manager
 	 * within the specified categry path.  An empty union will report its 
 	 * length as 1 and {@link #isNotYetDefined()} will return true.
@@ -60,7 +60,7 @@ public class UnionDataType extends CompositeDataTypeImpl implements UnionInterna
 		components = new ArrayList<>();
 	}
 
-	/**
+    # /**
 	 * Construct a new empty union with the given name within the specified categry path.
 	 * An empty union will report its length as 1 and {@link #isNotYetDefined()} 
 	 * will return true.
@@ -83,7 +83,7 @@ public class UnionDataType extends CompositeDataTypeImpl implements UnionInterna
 		components = new ArrayList<>();
 	}
 
-	/**
+    # /**
 	 * Construct a new UnionDataType.
 	 * NOTE: A constructor form which accepts a {@link DataTypeManager} should be used when possible
 	 * since there may be performance benefits during datatype resolution.

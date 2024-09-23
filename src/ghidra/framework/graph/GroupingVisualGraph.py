@@ -29,7 +29,7 @@ import ghidra.graph.viewer.VisualVertex;
 public abstract class GroupingVisualGraph<V extends VisualVertex, E extends VisualEdge<V>>
 		extends DefaultVisualGraph<V, E> {
 
-	/**
+    # /**
 	 * Finds a vertex that matches the given vertex.  
 	 * 
 	 * <P>Grouping can trigger vertex adds and removals.  This method is a way for subclasses
@@ -41,7 +41,7 @@ public abstract class GroupingVisualGraph<V extends VisualVertex, E extends Visu
 	 */
 	public abstract V findMatchingVertex(V v);
 
-	/**
+    # /**
 	 * The same as {@link #findMatchingVertex(VisualVertex)}, except that you can provide a
 	 * collection of vertices to be ignored.
 	 * 

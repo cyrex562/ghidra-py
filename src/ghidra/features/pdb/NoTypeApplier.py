@@ -22,7 +22,7 @@ package ghidra.app.util.pdb.pdbapplicator;
 public class NoTypeApplier extends MsTypeApplier {
 
 	// Intended for: AbstractMsType
-	/**
+    # /**
 	 * Constructor for nested type applier.
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working.
 	 * @throws IllegalArgumentException Upon invalid arguments.

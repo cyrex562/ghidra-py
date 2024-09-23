@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.datamgr.archive;
 
 import java.awt.Component;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;

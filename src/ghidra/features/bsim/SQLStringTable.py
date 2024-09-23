@@ -79,7 +79,7 @@ public class SQLStringTable {
 		loadedTail = null;
 	}
 
-	/**
+    # /**
 	 * Create this specific table in the database
 	 * @throws SQLException if the create statement fails
 	 */
@@ -91,7 +91,7 @@ public class SQLStringTable {
 		st.close();
 	}
 
-	/**
+    # /**
 	 * Try to fetch string from our memory cache, or load it from database, or return empty string
 	 * 
 	 * @param id the row ID
@@ -171,7 +171,7 @@ public class SQLStringTable {
 		insertAtEnd(rec);
 	}
 
-	/**
+    # /**
 	 * Purge the top element of the -loaded- list
 	 */
 	private void purgeString() {
@@ -180,7 +180,7 @@ public class SQLStringTable {
 		idMap.remove((int) rec.id);
 	}
 
-	/**
+    # /**
 	 * Replace '#' character in the -ptr- command with our -name- and return the string
 	 * @param ptr is the string to be modified
 	 * @return the modified string
@@ -230,7 +230,7 @@ public class SQLStringTable {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Try to read the id of a specific string in the table
 	 * @param value is the string to try to find
 	 * @return the id of the string or 0 if the string is not in the table

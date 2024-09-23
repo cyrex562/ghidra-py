@@ -31,7 +31,7 @@ public class AssemblyOperandStateGenerator
 		extends AbstractAssemblyStateGenerator<AssemblyParseNumericToken> {
 	protected final OperandSymbol opSym;
 
-	/**
+    # /**
 	 * Construct the operand state generator
 	 * 
 	 * @param resolver the resolver

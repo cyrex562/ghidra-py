@@ -29,7 +29,7 @@ public abstract class AbstractNestedTypeExtMsType extends AbstractMsType {
 	protected RecordNumber nestedTypeDefinitionRecordNumber;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -46,7 +46,7 @@ public abstract class AbstractNestedTypeExtMsType extends AbstractMsType {
 		reader.align4();
 	}
 
-	/**
+    # /**
 	 * Returns the name of this nested type.
 	 * @return Name of the nested type.
 	 */
@@ -55,7 +55,7 @@ public abstract class AbstractNestedTypeExtMsType extends AbstractMsType {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the Nested Type Definition.
 	 * @return Record number of the Nested Type Definition.
 	 */
@@ -63,7 +63,7 @@ public abstract class AbstractNestedTypeExtMsType extends AbstractMsType {
 		return nestedTypeDefinitionRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the type index of the {@link ClassFieldMsAttributes} for the Nested Type.
 	 * @return attributes for the Nested Type.
 	 */

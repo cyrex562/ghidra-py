@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -67,7 +67,7 @@ public class FieldInfoJava implements StructConverter {
 		return _offset;
 	}
 
-	/**
+    # /**
 	 * The value of the access_flags item is a mask of flags used to denote access
 	 * permission to and properties of this field. The interpretation of each flag, when
 	 * set, is as shown in Table 4.19.
@@ -77,7 +77,7 @@ public class FieldInfoJava implements StructConverter {
 		return accessFlags;
 	}
 
-	/**
+    # /**
 	 * The value of the name_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be
 	 * a CONSTANT_Utf8_info structure which must represent a valid
@@ -88,7 +88,7 @@ public class FieldInfoJava implements StructConverter {
 		return nameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the descriptor_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Utf8_info structure that must represent a valid field
@@ -99,7 +99,7 @@ public class FieldInfoJava implements StructConverter {
 		return descriptorIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the attributes_count item indicates the number of additional
 	 * attributes of this field.
 	 * @return the number of additional attributes
@@ -108,7 +108,7 @@ public class FieldInfoJava implements StructConverter {
 		return attributesCount & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value of the attributes table must be an attribute structure. A
 	 * field can have any number of attributes associated with it.
 	 * <p>

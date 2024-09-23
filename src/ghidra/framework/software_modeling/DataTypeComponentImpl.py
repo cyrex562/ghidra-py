@@ -41,7 +41,7 @@ public class DataTypeComponentImpl implements InternalDataTypeComponent, Seriali
 	private String comment; // comment about this component.
 	private int length; // my length
 
-	/**
+    # /**
 	 * Create a new DataTypeComponent
 	 * @param dataType the dataType for this component
 	 * @param parent the dataType that this component belongs to
@@ -63,7 +63,7 @@ public class DataTypeComponentImpl implements InternalDataTypeComponent, Seriali
 		setComment(comment);
 	}
 
-	/**
+    # /**
 	 * Create a new DataTypeComponent
 	 * @param dataType the dataType for this component
 	 * @param parent the dataType that this component belongs to
@@ -189,7 +189,7 @@ public class DataTypeComponentImpl implements InternalDataTypeComponent, Seriali
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Perform special-case component update that does not result in size or alignment changes. 
 	 * @param name new component name
 	 * @param dt new resolved datatype
@@ -210,7 +210,7 @@ public class DataTypeComponentImpl implements InternalDataTypeComponent, Seriali
 		this.length = length;
 	}
 
-	/**
+    # /**
 	 * Set the byte offset of where this component begins in its immediate parent
 	 * data type.
 	 * @param offset the offset
@@ -233,7 +233,7 @@ public class DataTypeComponentImpl implements InternalDataTypeComponent, Seriali
 		return ordinal;
 	}
 
-	/**
+    # /**
 	 * Set the component ordinal of this component within its parent
 	 * data type.
 	 * @param ordinal component ordinal
@@ -334,7 +334,7 @@ public class DataTypeComponentImpl implements InternalDataTypeComponent, Seriali
 		dataType = dt;
 	}
 
-	/**
+    # /**
 	 * Determine if component is an undefined filler component
 	 * @return true if undefined filler component, else false
 	 */
@@ -347,7 +347,7 @@ public class DataTypeComponentImpl implements InternalDataTypeComponent, Seriali
 		return InternalDataTypeComponent.toString(this);
 	}
 
-	/**
+    # /**
 	 * Get the preferred length for a new component. The length returned will be no
 	 * larger than the specified length.
 	 * 

@@ -15,7 +15,7 @@
  */
 package sarif.export.ref;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.Iterator;
 

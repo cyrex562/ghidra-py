@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.IOException;
+
 
 import ghidra.formats.gfilesystem.FSRL;
 

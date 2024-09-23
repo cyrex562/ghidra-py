@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.client;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.sql.*;
 import java.util.*;
@@ -89,7 +89,7 @@ public final class PostgresFunctionDatabase
 		return reusableStatement.prepareIfNeeded(() -> initConnection().createStatement());
 	}
 
-	/**
+    # /**
 	 * Obtain an exclusive lock on the main tables. To be used when INSERTING, DELETING, or UPDATING
 	 * to prevent concurrent changes to the tables.
 	 * @throws SQLException if the server reports an error
@@ -124,7 +124,7 @@ public final class PostgresFunctionDatabase
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param st the database query statement
 	 * @throws SQLException if there is a problem creating the query statement
@@ -152,7 +152,7 @@ public final class PostgresFunctionDatabase
 				"$$ LANGUAGE plpgsql;");
 	}
 
-	/**
+    # /**
 	 * 
 	 * @throws SQLException if there is an error creating/executing the query
 	 */
@@ -237,7 +237,7 @@ public final class PostgresFunctionDatabase
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @throws SQLException if there is a problem creating or executing the query
 	 */
@@ -247,7 +247,7 @@ public final class PostgresFunctionDatabase
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @throws SQLException if there is a problem creating or executing the query
 	 */
@@ -260,7 +260,7 @@ public final class PostgresFunctionDatabase
 		}
 	}
 
-	/**
+    # /**
 	 * Attempt to preload some of the main tables and indices into cache or RAM
 	 * 
 	 * @param mainIndex
@@ -334,7 +334,7 @@ public final class PostgresFunctionDatabase
 		}
 	}
 
-	/**
+    # /**
 	 * Make sure the vector corresponding to the SignatureRecord is inserted into the vectable
 	 * @param sigrec is the SignatureRecord
 	 * @return the computed id of the vector
@@ -351,7 +351,7 @@ public final class PostgresFunctionDatabase
 		}
 	}
 
-	/**
+    # /**
 	 * Low level count decrement of a vector record from vectable, if count
 	 * reaches zero, the record is deleted
 	 * @param c database connection
@@ -375,7 +375,7 @@ public final class PostgresFunctionDatabase
 		return res;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param resultset the list of result set objects to populate
 	 * @param vec the vector containing the saveSQL query statement
@@ -523,7 +523,7 @@ public final class PostgresFunctionDatabase
 		return query.getResponse();
 	}
 
-	/**
+    # /**
 	 * Entry point for the AdjustVectorIndex command
 	 * @param query the query to execute
 	 * @throws SQLException if there is a problem rebuilding or dropping the index
@@ -540,7 +540,7 @@ public final class PostgresFunctionDatabase
 		response.success = true;
 	}
 
-	/**
+    # /**
 	 * Entry point for the PrewarmRequest command
 	 * @param request the prewarm request
 	 * @param c Postgres DB connection

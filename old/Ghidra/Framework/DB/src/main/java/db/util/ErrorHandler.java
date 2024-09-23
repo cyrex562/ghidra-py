@@ -15,7 +15,7 @@
  */
 package db.util;
 
-import java.io.IOException;
+
 
 /**
  * Report database errors.

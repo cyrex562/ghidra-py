@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe;
 
-import java.io.IOException;
+
 import java.io.RandomAccessFile;
 
 import ghidra.app.util.bin.StructConverter;

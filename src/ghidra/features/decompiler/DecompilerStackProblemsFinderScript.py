@@ -145,7 +145,7 @@ public class DecompilerStackProblemsFinderScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Table stuff
 	 */
 

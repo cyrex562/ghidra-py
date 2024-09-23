@@ -22,7 +22,7 @@ import static ghidra.program.model.pcode.ElementId.*;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+
 
 import generic.theme.GColor;
 import generic.theme.Gui;

@@ -18,7 +18,7 @@ package ghidra.app.util.bin;
 import java.util.Arrays;
 import java.util.function.BiConsumer;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.formats.gfilesystem.FSUtilities;

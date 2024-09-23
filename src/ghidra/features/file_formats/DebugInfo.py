@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.userdump;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.StructConverter;
 import ghidra.file.formats.dump.DumpFileReader;
@@ -63,7 +63,7 @@ public class DebugInfo implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.app.util.bin.StructConverter#toDataType()
 	 */
 	public DataType toDataType() throws DuplicateNameException {
@@ -87,70 +87,70 @@ public class DebugInfo implements StructConverter {
 		return struct;
 	}
 
-	/**
+    # /**
 	 * @return the processId
 	 */
 	public int getProcessId() {
 		return processId;
 	}
 
-	/**
+    # /**
 	 * @param processId the processId to set
 	 */
 	public void setProcessId(int processId) {
 		this.processId = processId;
 	}
 
-	/**
+    # /**
 	 * @return the threadId
 	 */
 	public int getThreadId() {
 		return threadId;
 	}
 
-	/**
+    # /**
 	 * @param threadId the threadId to set
 	 */
 	public void setThreadId(int threadId) {
 		this.threadId = threadId;
 	}
 
-	/**
+    # /**
 	 * @return the exceptionCode
 	 */
 	public int getExceptionCode() {
 		return exceptionCode;
 	}
 
-	/**
+    # /**
 	 * @param exceptionCode the exceptionCode to set
 	 */
 	public void setExceptionCode(int exceptionCode) {
 		this.exceptionCode = exceptionCode;
 	}
 
-	/**
+    # /**
 	 * @return the exceptionAddress
 	 */
 	public long getExceptionAddress() {
 		return exceptionAddress;
 	}
 
-	/**
+    # /**
 	 * @param exceptionAddress the exceptionAddress to set
 	 */
 	public void setExceptionAddress(long exceptionAddress) {
 		this.exceptionAddress = exceptionAddress;
 	}
 
-	/**
+    # /**
 	 * @return the eventCode
 	 */
 	public int getEventCode() {
 		return eventCode;
 	}
 
-	/**
+    # /**
 	 * @param eventCode the eventCode to set
 	 */
 	public void setEventCode(int eventCode) {

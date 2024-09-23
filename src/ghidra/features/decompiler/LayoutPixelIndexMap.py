@@ -28,7 +28,7 @@ import ghidra.program.model.listing.Program;
  * this does not have to be the case, the documentation will presume the y coordinate.
  */
 public interface LayoutPixelIndexMap {
-	/**
+    # /**
 	 * Get the top of the layout with the given index
 	 * 
 	 * <p>
@@ -41,7 +41,7 @@ public interface LayoutPixelIndexMap {
 	 */
 	int getPixel(BigInteger index);
 
-	/**
+    # /**
 	 * Get the index of the layout at the given position
 	 * 
 	 * <p>

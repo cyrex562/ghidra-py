@@ -15,7 +15,7 @@
  */
 package ghidra.formats.gfilesystem;
 
-import java.io.IOException;
+
 
 import org.apache.commons.collections4.map.ReferenceMap;
 

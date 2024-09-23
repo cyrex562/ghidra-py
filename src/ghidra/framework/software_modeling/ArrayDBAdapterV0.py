@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.util.exception.VersionException;
@@ -41,7 +41,7 @@ class ArrayDBAdapterV0 extends ArrayDBAdapter {
 
 	private Table table;
 
-	/**
+    # /**
 	 * Gets a version 0 read-only adapter for the {@link ArrayDB} database table.
 	 * @param handle handle to the database containing the table.
 	 * @throws VersionException if the the table's version does not match the expected version

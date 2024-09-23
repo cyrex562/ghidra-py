@@ -49,7 +49,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 	private int entrySize;
 	private List<Rtti1Model> rtti1Models;
 
-	/**
+    # /**
 	 * Creates the model for the RTTI2 data type.
 	 * @param program the program
 	 * @param rtti1Count the number of RTTI1 data type references expected at the RTTI2 address.
@@ -134,7 +134,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the data type for an individual entry in the array of RTTI 1 references
 	 * produced by this model.
 	 * @param program the program which will contain this data type. 
@@ -149,7 +149,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 				: new PointerDataType(rtti1Dt, dataTypeManager);
 	}
 
-	/**
+    # /**
 	 * This gets the data type for an individual entry in the array of RTTI 1 references
 	 * produced by this model.
 	 * @param program the program which will contain this data type. 
@@ -163,7 +163,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 				: new PointerDataType(dataTypeManager);
 	}
 
-	/**
+    # /**
 	 * This gets the BaseClassArray (RTTI 2) structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the BaseClassArray (RTTI 2) structure or null.
@@ -192,7 +192,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 		return MSDataTypeUtils.getMatchingDataType(program, array);
 	}
 
-	/**
+    # /**
 	 * This gets the BaseClassArray (RTTI 2) structure for this model.
 	 * @return the BaseClassArray (RTTI 2) structure.
 	 */
@@ -313,7 +313,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the Base Class Types (type descriptor names) for the RTTI for this model.
 	 * @return the class names or an empty list if the name(s) can't be determined.
 	 * @throws InvalidDataTypeException if an invalid model is encountered when trying to get
@@ -347,7 +347,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 		return names;
 	}
 
-	/**
+    # /**
 	 * Gets address referred to by the RTTI 1 pointer at the specified index in the RTTI2's array
 	 * @param rtti1Index index of the RTTI 1 pointer in the array
 	 * @return the address of the RTTI 1.
@@ -359,7 +359,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 		return getReferencedAddress(getProgram(), rtti1Address);
 	}
 
-	/**
+    # /**
 	 * Gets the type descriptor (RTTI 0) model associated with this RTTI 2.
 	 * @return the type descriptor (RTTI 0) model or null.
 	 * @throws InvalidDataTypeException if this model's validation fails.
@@ -376,7 +376,7 @@ public class Rtti2Model extends AbstractCreateRttiDataModel {
 			getDefaultInvalidMessage() + " The array needs at least one entry.");
 	}
 
-	/**
+    # /**
 	 * Gets the BaseClassDescriptor (RTTI 1) model associated with this RTTI 2.
 	 * @param rtti1Index index of the RTTI 1 pointer in the array
 	 * @return the BaseClassDescriptor (RTTI 1) model or null.

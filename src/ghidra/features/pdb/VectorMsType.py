@@ -35,7 +35,7 @@ public class VectorMsType extends AbstractMsType {
 	private BigInteger size;
 	private String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -59,7 +59,7 @@ public class VectorMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the size of this vector type
 	 * @return Size of the vector.
 	 */

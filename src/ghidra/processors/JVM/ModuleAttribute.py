@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -82,7 +82,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 
 	}
 
-	/**
+    # /**
 	 * Returns {@code module_name_index}, which must be a valid index into the constant pool.
 	 * The constant_pool entry at that index must be a {@link ConstantPoolModuleInfo} structure
 	 * denoting the current module.
@@ -92,7 +92,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return module_name_index & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the {@code module_flags} item is as follows:
 	 * <ul>
 	 * <li> 0x0020 (ACC_OPEN): indicates that this module is open </li>
@@ -106,7 +106,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return module_flags & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the {@code module_version_index} item must be either zero or a valid index
 	 * into the constant pool table.  If the value is zero, no version information about the
 	 * current module is present. If the value is nonzero, the constant pool entry at that index
@@ -117,7 +117,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return module_version_index & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the {@code requires_count} item indicates the number of entries in the 
 	 * {@code requires} table.
 	 * @return the requires count
@@ -126,7 +126,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return requires_count & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Indicates the number of entries in the exports table
 	 * @return the exports count
 	 */
@@ -134,7 +134,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return exports_count & 0xffff;
 	}
 
-	/**
+    # /**
 	 * {@code opens_count} indicates the number of entries in the {@code opens} table.
 	 * @return the opens count
 	 */
@@ -142,7 +142,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return opens_count & 0xffff;
 	}
 
-	/**
+    # /**
 	 * {@code uses_count} indicates the number of entries in the {@code uses_index} table.
 	 * @return {@code uses_count}
 	 */
@@ -150,7 +150,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return uses_count & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of each entry in the uses_index table must be a valid index into the constant
 	 * pool. The entry at that index must be a {@link ConstantPoolClassInfo} structure representing
 	 * a service interface which the current module may discover via {@link java.util.ServiceLoader}.
@@ -161,7 +161,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return uses_index[i] & 0xffff;
 	}
 
-	/**
+    # /**
 	 * {@code provides_count} indicates the number of entries in the {@code provides} table.
 	 * @return {@code provides_count}
 	 */
@@ -199,7 +199,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 		return structure;
 	}
 
-	/**
+    # /**
 	 * Objects of this class specify a dependence of the current module.
 	 */
 	static class ModuleAttributeRequires implements StructConverter {
@@ -214,7 +214,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			requires_version_index = reader.readNextShort();
 		}
 
-		/**
+	    # /**
 		 * The value of the {@code requires_index} item must be a valid index into
 		 * the constant pool.  The entry at that index must be a {@link ConstantPoolModuleInfo} structure
 		 * denoting a module that the current module depends on.
@@ -224,7 +224,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return requires_index & 0xffff;
 		}
 
-		/**
+	    # /**
 		 * The value of the {@code requires_flags} item is as follows:
 		 * <ul>
 		 * <li> 0x0020 ACC_TRANSITIVE </li>
@@ -238,7 +238,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return requires_flags;
 		}
 
-		/**
+	    # /**
 		 * Must be either 0 or a valid index into the constant pool.  If the value of the
 		 * item is nonzero, the constant pool entry at that index must be a {@link ConstantPoolUtf8Info}
 		 * structure representing the version of the module specified by {@code requires_index}.
@@ -259,7 +259,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 
 	}
 
-	/**
+    # /**
 	 * Each entry in the {@code exports} table specifies a package exported by the current module.
 	 */
 	static class ModuleAttributeExports implements StructConverter {
@@ -279,7 +279,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			}
 		}
 
-		/**
+	    # /**
 		 * {@code exports_index} must be a valid index into the constant pool.  The
 		 * entry at that index must be a {@link ConstantPoolPackageInfo} structure
 		 * representing a package exported by the current module.
@@ -289,7 +289,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return exports_index & 0xffff;
 		}
 
-		/**
+	    # /**
 		 * The value of {@code exports_flags} is as follows:
 		 * <ul>
 		 * <li> 0x1000 (ACC_SYNTHETIC) </li>
@@ -301,7 +301,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return exports_flags;
 		}
 
-		/**
+	    # /**
 		 * {@code exports_to_count} indicates the number of entries in the
 		 * {@code exports_to_index} table
 		 * @return {@code exports_to_count}
@@ -310,7 +310,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return exports_to_count & 0xffff;
 		}
 
-		/**
+	    # /**
 		 * The value of each entry in the {@cod exports_to_index} must be a valid index
 		 * into the constant pool.  The entry at that index must be a {@link ConstantPoolModuleInfo}
 		 * structure denoting a module whose code can access the types and members in this exported
@@ -336,7 +336,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 
 	}
 
-	/**
+    # /**
 	 * An object of this class specifies a package opened by the current module.
 	 */
 	static class ModuleAttributeOpens implements StructConverter {
@@ -357,7 +357,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 
 		}
 
-		/**
+	    # /**
 		 * {@code opens_index} must be a valid index into the constant pool. The entry at this
 		 * index must be a {@link ConstantPoolPackageInfo} structure representing a package
 		 * opened by the current module.
@@ -367,7 +367,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return opens_index & 0xffff;
 		}
 
-		/**
+	    # /**
 		 * The value of {@code opens_flags} is as follows:
 		 * <ul>
 		 * <li> 0x1000 (ACC_SYNTHETIC) </li>
@@ -379,7 +379,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return opens_flags;
 		}
 
-		/**
+	    # /**
 		 * {@code opens_to_count} indicates the number of entries in the {@code opens_to_index}
 		 * table.
 		 * @return {@code opens_to_count}
@@ -388,7 +388,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return opens_to_count & 0xffff;
 		}
 
-		/**
+	    # /**
 		 * Each entry in the {@code opens_to_index} table must be a valid index into
 		 * the constant pool. The entry at that index must be a {@link ConstantPoolModuleInfo} structure
 		 * denoting a module whose code can access the types and members in this opened package.
@@ -413,7 +413,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 
 	}
 
-	/**
+    # /**
 	 * Each entry in the {@code provides} table represents a service implementation for a
 	 * given service interface.
 	 */
@@ -432,7 +432,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			}
 		}
 
-		/**
+	    # /**
 		 * {@code provides_index} must be a valid index into the constant pool. The entry
 		 * at that index must be a {@link ConstantPoolClassInfo} structure representing a
 		 * service interface for which the current module provides a service implementation.
@@ -442,7 +442,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return provides_index & 0xffff;
 		}
 
-		/**
+	    # /**
 		 * {@code provides_with_count} indicates the number of entries in the {@code provides_with_index} table
 		 * @return {@code provides_with_count}
 		 */
@@ -450,7 +450,7 @@ public class ModuleAttribute extends AbstractAttributeInfo {
 			return provides_with_count & 0xffff;
 		}
 
-		/**
+	    # /**
 		 * The value of each entry in the {@code provides_with_index} table must be a valid
 		 * index into the constant pool. The entry at that index must be a {@link ConstantPoolClassInfo}
 		 * structure representing a service implementation for the service interface specified by

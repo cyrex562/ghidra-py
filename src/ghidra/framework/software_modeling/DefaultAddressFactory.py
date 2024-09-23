@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.address;
 
 import java.util.ArrayList;
@@ -23,9 +23,9 @@ import ghidra.util.datastruct.IntObjectHashtable;
 import ghidra.util.exception.DuplicateNameException;
 
 # /**
- * Keeps track of all the Address spaces in the program and provides
- * methods for parsing address strings.
- */
+# * Keeps track of all the Address spaces in the program and provides
+# * methods for parsing address strings.
+# */
 public class DefaultAddressFactory implements AddressFactory {
 	private AddressSpace defaultSpace;
 	private AddressSpace constantSpace;
@@ -42,7 +42,7 @@ public class DefaultAddressFactory implements AddressFactory {
 		this(new AddressSpace[0], null);
 	}
 
-	/**
+    # /**
 	 * Constructs a new DefaultAddressFactory.  The default space is assumed to be the first space
 	 * in the array.
 	 * @param addrSpaces array of address spaces for the Program
@@ -52,7 +52,7 @@ public class DefaultAddressFactory implements AddressFactory {
 		this(addrSpaces, null);
 	}
 
-	/**
+    # /**
 	 * Constructs a new DefaultAddressFactory with the given spaces and default space.
 	 * @param addrSpaces the set of addressSpaces to manage
 	 * @param defaultSpace the space to use as the default space. The default space should
@@ -147,7 +147,7 @@ public class DefaultAddressFactory implements AddressFactory {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressFactory#getAddress(java.lang.String)
 	 */
 	@Override
@@ -385,7 +385,7 @@ public class DefaultAddressFactory implements AddressFactory {
 		return space.getAddress(offset);
 	}
 
-	/**
+    # /**
 	 * Adds an AddressSpace to this factory
 	 * 
 	 * @param space the address space being added.
@@ -408,7 +408,7 @@ public class DefaultAddressFactory implements AddressFactory {
 		}
 	}
 
-	/**
+    # /**
 	 * Update address factory map <b>following</b> the rename of an overlay address space instance.  
 	 * The caller is reponsible for the actual renaming of the existing overlay space instance and 
 	 * must ensure the newName is not already assigned to another space.
@@ -433,7 +433,7 @@ public class DefaultAddressFactory implements AddressFactory {
 		throw new AssertionError("Overlay space not found: " + oldOverlaySpaceName);
 	}
 
-	/**
+    # /**
 	 * Removes the AddressSpace from this factory
 	 * 
 	 * @param spaceName the name of the space to remove.

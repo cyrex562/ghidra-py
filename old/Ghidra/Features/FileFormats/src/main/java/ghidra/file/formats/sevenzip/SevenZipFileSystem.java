@@ -19,7 +19,7 @@ package ghidra.file.formats.sevenzip;
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.io.FilenameUtils;

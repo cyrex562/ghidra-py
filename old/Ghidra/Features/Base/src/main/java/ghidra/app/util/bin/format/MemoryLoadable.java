@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.Hashtable;
 import java.util.function.BiConsumer;

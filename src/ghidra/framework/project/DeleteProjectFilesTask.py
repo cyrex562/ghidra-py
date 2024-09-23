@@ -16,7 +16,7 @@
 package ghidra.framework.main.projectdata.actions;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.util.Objects;
 import java.util.Set;
 
@@ -43,7 +43,7 @@ public class DeleteProjectFilesTask extends Task {
 	private OptionDialogBuilder fileInUseDialogBuilder;
 	private FileCountStatistics statistics;
 
-	/**
+    # /**
 	 * Construct a new DeleteProjectFilesTask with the list of folders and files to delete.
 	 *
 	 * @param folders the fist of DomainFolders (and all files contained recursively 

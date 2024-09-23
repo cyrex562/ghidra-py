@@ -18,7 +18,7 @@ package ghidra.program.database.code;
 import ghidra.program.model.listing.Data;
 import ghidra.program.model.listing.DataIterator;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import db.RecordIterator;
@@ -32,7 +32,7 @@ public class DataRecordIterator implements DataIterator {
 	private Data nextData;
 	private boolean forward;
 
-	/**
+    # /**
 	 * Constructs a new DataRecordIterator
 	 * @param codeMgr the code manager
 	 * @param it the record iterator
@@ -45,14 +45,14 @@ public class DataRecordIterator implements DataIterator {
 
 	}
 
-	/**
+    # /**
 	 * @see java.util.Iterator#remove()
 	 */
 	public void remove() {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#hasNext()
 	 */
 	public boolean hasNext() {
@@ -62,7 +62,7 @@ public class DataRecordIterator implements DataIterator {
 		return nextData != null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#next()
 	 */
 	public Data next() {

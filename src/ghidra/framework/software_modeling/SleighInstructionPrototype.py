@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.sleigh;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.plugin.assembler.sleigh.sem.AssemblyResolvedPatterns;
@@ -35,12 +35,12 @@ import ghidra.util.Msg;
 import ghidra.util.exception.NotYetImplementedException;
 
 # /**
- * 
- *
- * The InstructionPrototype for sleigh languages. The prototype is unique up to the tree of
- * Constructors. Variations in the bit pattern that none of the Constructor mask/values care about
- * get lumped under the same prototype
- */
+# * 
+# *
+# * The InstructionPrototype for sleigh languages. The prototype is unique up to the tree of
+# * Constructors. Variations in the bit pattern that none of the Constructor mask/values care about
+# * get lumped under the same prototype
+# */
 public class SleighInstructionPrototype implements InstructionPrototype {
 	// Flowflags for resolving flowType
 	public final static int RETURN = 0x01;
@@ -120,7 +120,7 @@ public class SleighInstructionPrototype implements InstructionPrototype {
 		return mnemonicState;
 	}
 
-	/**
+    # /**
 	 * Cache the Constructor state which represents the base mnemonic, and the operands to that
 	 * mnemonic Cache the operand states for each operand in printing order
 	 */
@@ -184,7 +184,7 @@ public class SleighInstructionPrototype implements InstructionPrototype {
 		}
 	}
 
-	/**
+    # /**
 	 * Walk the pcode templates in the order they would be emitted. Collect flowFlags FlowRecords
 	 * 
 	 * @param walker the pcode template walker
@@ -283,7 +283,7 @@ public class SleighInstructionPrototype implements InstructionPrototype {
 		return convertFlowFlags(flags);
 	}
 
-	/**
+    # /**
 	 * Walk the Constructor tree gathering ConstructStates which are flow destinations
 	 * (flowStateList) flowFlags and delayslot directives
 	 */
@@ -630,7 +630,7 @@ public class SleighInstructionPrototype implements InstructionPrototype {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * Gather all the flow records (perhaps across multiple InstructionPrototypes via crossbuilds)
 	 * and convert to Addresses
 	 * 
@@ -1460,7 +1460,7 @@ public class SleighInstructionPrototype implements InstructionPrototype {
 		}
 	}
 
-	/**
+    # /**
 	 * Reconstruct the ParserContext's internal packed context array and its list of global 
 	 * ContextSet directives by walking a previously resolved ConstructState tree
 	 * 
@@ -1605,7 +1605,7 @@ public class SleighInstructionPrototype implements InstructionPrototype {
 		return language;
 	}
 
-	/**
+    # /**
 	 * Used for testing and diagnostics: list the constructor line numbers used to resolve this
 	 * encoding
 	 * 

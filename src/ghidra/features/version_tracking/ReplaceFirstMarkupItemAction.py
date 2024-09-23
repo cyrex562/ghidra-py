@@ -38,7 +38,7 @@ public class ReplaceFirstMarkupItemAction extends AbstractMarkupItemAction {
 
 	private static final String MENU_GROUP = VTPlugin.APPLY_EDIT_MENU_GROUP;
 
-	/**
+    # /**
 	 * Constructor for action to only replace the first item (i.e. defined data at the 
 	 * destination address, but don't replace if other defined data beyond the destination 
 	 * address would be overwritten.)

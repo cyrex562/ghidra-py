@@ -430,7 +430,7 @@ public class PowerPC64_ElfExtension extends ElfExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Adjust any program context needed on symbols
 	 * @param elfLoadHelper
 	 * @param monitor
@@ -528,7 +528,7 @@ public class PowerPC64_ElfExtension extends ElfExtension {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Get the PPC64 ABI version specified within the ELF header.
 	 * Expected values include:
 	 * <ul>

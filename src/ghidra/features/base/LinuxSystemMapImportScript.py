@@ -29,7 +29,7 @@
 
 //@category CustomerSubmission.Linux
 
-import java.io.*;
+
 
 import ghidra.app.script.GhidraScript;
 import ghidra.program.model.address.*;

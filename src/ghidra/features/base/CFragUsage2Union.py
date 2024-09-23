@@ -19,7 +19,7 @@ import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class CFragUsage2Union implements StructConverter {
 	public final static short kNoAppSubFolder = 0;

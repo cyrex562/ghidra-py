@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 

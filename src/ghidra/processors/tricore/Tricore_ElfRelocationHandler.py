@@ -27,7 +27,7 @@ import ghidra.util.exception.NotFoundException;
 public class Tricore_ElfRelocationHandler
 		extends AbstractElfRelocationHandler<Tricore_ElfRelocationType, ElfRelocationContext<?>> {
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public Tricore_ElfRelocationHandler() {
@@ -88,7 +88,7 @@ public class Tricore_ElfRelocationHandler
 			return RelocationResult.FAILURE;
 		}
 
-		/**
+	    # /**
 		 * Key S indicates the final value assigned to the symbol referenced in the
 		 * relocation record. Key A is the addend value specified in the relocation
 		 * record. Key P indicates the address of the relocation (for example, the
@@ -113,7 +113,7 @@ public class Tricore_ElfRelocationHandler
 				byteLength = relocate_absB(memory, relocationAddress, rv);
 				break;
 
-			/**
+		    # /**
 			case R_TRICORE_16SM: // BOL S + A - A[0]
 				break;
 			**/
@@ -135,7 +135,7 @@ public class Tricore_ElfRelocationHandler
 				byteLength = relocate_ABS(memory, relocationAddress, rv);
 				break;
 
-			/**
+		    # /**
 			case R_TRICORE_10SM: // BO S + A - A[0]
 				break;
 			**/
@@ -145,7 +145,7 @@ public class Tricore_ElfRelocationHandler
 				byteLength = relocate_BR(memory, relocationAddress, rv);
 				break;
 
-			/**
+		    # /**
 			case R_TRICORE_10LI: // BO S + A - A[1]
 				break;
 			case R_TRICORE_16LI: // BOL S + A - A[1]
@@ -167,7 +167,7 @@ public class Tricore_ElfRelocationHandler
 				byteLength = relocate_BOL(memory, relocationAddress, rv);
 				break;
 
-			/**
+		    # /**
 			case R_TRICORE_8ABS:
 				break;
 			case R_TRICORE_16ABS:
@@ -209,7 +209,7 @@ public class Tricore_ElfRelocationHandler
 				byteLength = relocate_5POS2(memory, relocationAddress, rv);
 				break;
 
-			/**
+		    # /**
 			case R_TRICORE_BRCC:
 				break;
 			case R_TRICORE_BRCZ:
@@ -301,7 +301,7 @@ public class Tricore_ElfRelocationHandler
 				memory.setInt(relocationAddress, (int) symbolValue);
 				break;
 
-			/**
+		    # /**
 			case R_TRICORE_SBREG_S2:
 				break;
 			case R_TRICORE_SBREG_S1:
@@ -329,7 +329,7 @@ public class Tricore_ElfRelocationHandler
 
 	// RV = Relocation Value. IW = Instruction Word.
 
-	/**
+    # /**
 	 * A 32-bit field occupying four bytes. This address is NOT required to be
 	 * 4-byte aligned.
 	 */
@@ -339,7 +339,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * A 16-bit field occupying two bytes.
 	 */
 	private int relocate_word16(Memory memory, Address relocationAddress, long rv)
@@ -348,7 +348,7 @@ public class Tricore_ElfRelocationHandler
 		return 2;
 	}
 
-	/**
+    # /**
 	 * A 32-bit instruction word, where: - bits 1-16 of the RV go into bits 16-31 of
 	 * the IW. - bits 17-24 of the RV go into bits 8-15 of the IW. - the RV must be
 	 * in the range [-16777216,16777214]. bit 0 of the RV must be zero.
@@ -365,7 +365,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * A 32-bit instruction word, where: - bits 1-16 of the RV go into bits 16-31 of
 	 * the IW. - bits 17-20 of the RV go into bits 8-11 of the IW. - bits 0 and 21
 	 * to 27 of the RV must be zero. - bits 28-31 of the RV go into bits 12-15 of
@@ -383,7 +383,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * A 32-bit instruction word where: - bits 0-5 of the RV go into bits 16-21 of
 	 * the IW. - bits 6-9 of the RV go into bits 28-31 of the IW. - bits 10-31 of
 	 * the RV must be zero.
@@ -400,7 +400,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * A 32-bit instruction word, where: - bits 0-5 of the RV go into bits 16-21 of
 	 * the IW. - bits 6-9 of the RV go into bits 28-31 of the IW. - bits 10-15 of
 	 * the RV go into bits 22-27 of the IW. - bits 16-31 of the RV must be zero.
@@ -417,7 +417,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * A 32-bit instruction word, where: - bits 1-15 of the RV go into bits 16-30 of
 	 * the IW. - bits 16-31 of the RV must be zero.
 	 */
@@ -431,7 +431,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * A 32-bit instruction word, where: - bits 0-15 of the RV go into bits 12-27 of
 	 * the IW. - bits 16-31 of the RV must be zero.
 	 */
@@ -445,7 +445,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * A 32-bit instruction word, where: - bits 0-5 of the RV go into bits 16-21 of
 	 * the IW. - bits 6-9 of the RV go into bits 28-31 of the IW. - bits 10-13 of
 	 * the RV go into bits 22-25 of the IW. - bits 14-27 of the RV must be zero. -
@@ -464,7 +464,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * A 32-bit instruction word, where: - bits 0-3 of the RV go into bits 8-11 of
 	 * the IW. - bits 4-32 of the RV must be zero.
 	 */
@@ -478,7 +478,7 @@ public class Tricore_ElfRelocationHandler
 		throw new NotFoundException();
 	}
 
-	/**
+    # /**
 	 * A 16-bit instruction word, where: - bits 8-15 of the RV go into bits 8-15 of
 	 * the IW. - bits 0-7 and 16-31 of the RV must be zero.
 	 */
@@ -492,7 +492,7 @@ public class Tricore_ElfRelocationHandler
 		return 2;
 	}
 
-	/**
+    # /**
 	 * A 16-bit instruction word, where: - bits 0-5 of the RV go into bits 0-5 of
 	 * the IW. - bits 6-15 of the RV must be zero.
 	 */
@@ -506,7 +506,7 @@ public class Tricore_ElfRelocationHandler
 		return 2;
 	}
 
-	/**
+    # /**
 	 * 
 	 */
 	private int relocate_3POS(Memory memory, Address relocationAddress, long rv)
@@ -519,7 +519,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * 
 	 */
 	private int relocate_5POS(Memory memory, Address relocationAddress, long rv)
@@ -532,7 +532,7 @@ public class Tricore_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * 
 	 */
 	private int relocate_5POS2(Memory memory, Address relocationAddress, long rv)

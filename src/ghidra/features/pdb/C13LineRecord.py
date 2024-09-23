@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 # /**
@@ -26,7 +26,7 @@ public class C13LineRecord {
 	private long bitVals; // uint32
 	private C13ColumnRecord columnRecord = null;
 
-	/**
+    # /**
 	 * Returns the offset within the segment for this line record
 	 * @return the offset
 	 */
@@ -34,7 +34,7 @@ public class C13LineRecord {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the line number start for this record
 	 * @return the line number start
 	 */
@@ -42,7 +42,7 @@ public class C13LineRecord {
 		return bitVals & 0xffffffL;
 	}
 
-	/**
+    # /**
 	 * Returns the delta between the line number start and the line number end (used to calculate
 	 * the line number end)
 	 * @return the delta between the line number start and the line number end
@@ -51,7 +51,7 @@ public class C13LineRecord {
 		return (bitVals >> 24) & 0x7fL;
 	}
 
-	/**
+    # /**
 	 * Returns the column record
 	 * @return the column record or {@code null} if one does not exist
 	 */
@@ -59,7 +59,7 @@ public class C13LineRecord {
 		return columnRecord;
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if the line number is that of an statement; else is expression
 	 * @return {@code true} if for an statement
 	 */
@@ -67,7 +67,7 @@ public class C13LineRecord {
 		return (bitVals & 0x80000000L) != 0L;
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if the line number is that of an expression; else is statement
 	 * @return {@code true} if for an expression
 	 */
@@ -75,7 +75,7 @@ public class C13LineRecord {
 		return !isStatement();
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if is a special line (start is {@code 0xfeefee} or {@code 0xf00f00}).
 	 * We do not know how to interpret either of these special line values at this time
 	 * @return {@code true} if is a special line

@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.dwarf;
 import static ghidra.app.util.bin.format.dwarf.DWARFTag.*;
 import static ghidra.app.util.bin.format.dwarf.attribs.DWARFAttribute.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.format.dwarf.attribs.DWARFAttribute;

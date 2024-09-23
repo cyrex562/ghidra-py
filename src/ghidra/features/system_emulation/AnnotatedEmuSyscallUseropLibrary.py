@@ -55,7 +55,7 @@ public abstract class AnnotatedEmuSyscallUseropLibrary<T> extends AnnotatedPcode
 		return AnnotationUtilities.collectAnnotatedMethods(EmuSyscall.class, cls);
 	}
 
-	/**
+    # /**
 	 * An annotation to export a method as a system call in the library.
 	 * 
 	 * <p>
@@ -79,7 +79,7 @@ public abstract class AnnotatedEmuSyscallUseropLibrary<T> extends AnnotatedPcode
 
 	protected final Collection<DataTypeManager> additionalArchives;
 
-	/**
+    # /**
 	 * Construct a new library including the "syscall" userop
 	 * 
 	 * @param machine the machine using this library
@@ -108,7 +108,7 @@ public abstract class AnnotatedEmuSyscallUseropLibrary<T> extends AnnotatedPcode
 	protected void disposeAdditionalArchives() {
 	}
 
-	/**
+    # /**
 	 * Create the structured-sleigh part of this library
 	 * 
 	 * @return the structured part
@@ -117,7 +117,7 @@ public abstract class AnnotatedEmuSyscallUseropLibrary<T> extends AnnotatedPcode
 		return new StructuredPart();
 	}
 
-	/**
+    # /**
 	 * Export a userop as a system call
 	 * 
 	 * @param opdef the userop

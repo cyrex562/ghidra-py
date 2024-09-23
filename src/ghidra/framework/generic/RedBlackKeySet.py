@@ -22,7 +22,7 @@ import java.io.Serializable;
  */
 
 public class RedBlackKeySet implements ShortKeySet, Serializable {
-	/** the number of bytes in a RedBlackKeySet node */
+    # /** the number of bytes in a RedBlackKeySet node */
 	public static final int NODESIZE = 15;
 
 	private transient RBNode root;
@@ -48,7 +48,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 
 	// this is a test comment
 
-	/**
+    # /**
 	 * Creates a new RedBlackKeySet that can store keys between 0 and n.
 	 * @param n the maximum key for this set.
 	 */
@@ -56,14 +56,14 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		maxKey = n;
 	}
 
-	/**
+    # /**
 	 * Returns the number keys in this set.
 	 */
 	public int size() {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Returns true if the key is in the set.
 	 * @param key the key whose presence is to be tested.
 	 * @exception IndexOutOfBoundsException thrown if the given key is not
@@ -89,7 +89,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the first key in this set.
 	 */
 	public short getFirst() {
@@ -104,7 +104,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		return node.key;
 	}
 
-	/**
+    # /**
 	 * Returns the last key in this set.
 	 */
 	public short getLast() {
@@ -120,7 +120,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 
 	}
 
-	/**
+    # /**
 	 * Returns the smallest key in the set that is greater than the given key.  Returns
 	 * -1 if there are no keys greater than the given key.
 	 * @param key the key for which to find the next key after.
@@ -154,7 +154,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 
 	}
 
-	/**
+    # /**
 	 * Returns the largest key in the set that is less than the given key. Returns -1 if
 	 * there are not keys less than the given key.
 	 * @param key the key for which to find the previous key.
@@ -187,7 +187,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 
 	}
 
-	/**
+    # /**
 	 * Adds the given key to the set.
 	 * @param key the key to add to the set.
 	 * @exception IndexOutOfBoundsException thrown if the given key is not
@@ -233,7 +233,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		}
 	}
 
-	/**
+    # /**
 	 * Removes the given key from the set.
 	 * @param key the key to remove from the set.
 	 * @exception IndexOutOfBoundsException thrown if the given key is not
@@ -265,7 +265,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Removes all keys from the set.
 	 */
 	public void removeAll() {
@@ -273,7 +273,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		root = null;
 	}
 
-	/**
+    # /**
 	 *  Test if the set is empty.
 	 *@return true if the set is empty.
 	 */
@@ -281,7 +281,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		return size == 0;
 	}
 
-	/**
+    # /**
 	 * Balancing operations.
 	 *
 	 * Implementations of rebalancings during insertion and deletion are
@@ -291,21 +291,21 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 	 * algorithms.
 	 */
 
-	/**
+    # /**
 	 * Returns the color of the given node.
 	 */
 	private static byte colorOf(RBNode p) {
 		return (p == null ? BLACK : p.color);
 	}
 
-	/**
+    # /**
 	 * Returns the parent of the given node.
 	 */
 	private static RBNode parentOf(RBNode p) {
 		return (p == null ? null : p.parent);
 	}
 
-	/**
+    # /**
 	 *  Sets the color of the given node to the given color.
 	 */
 	private static void setColor(RBNode p, byte c) {
@@ -313,21 +313,21 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 			p.color = c;
 	}
 
-	/**
+    # /**
 	 * Returns the left child of the given node.
 	 */
 	private static RBNode leftOf(RBNode p) {
 		return (p == null) ? null : p.left;
 	}
 
-	/**
+    # /**
 	 *  Returns the right child of the given node.
 	 */
 	private static RBNode rightOf(RBNode p) {
 		return (p == null) ? null : p.right;
 	}
 
-	/** From CLR **/
+    # /** From CLR **/
 	private void rotateLeft(RBNode p) {
 		RBNode r = p.right;
 		p.right = r.left;
@@ -348,7 +348,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		p.parent = r;
 	}
 
-	/** From CLR **/
+    # /** From CLR **/
 	private void rotateRight(RBNode p) {
 		RBNode l = p.left;
 		p.left = l.right;
@@ -369,7 +369,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		p.parent = l;
 	}
 
-	/** From CLR **/
+    # /** From CLR **/
 	private void fixAfterInsertion(RBNode x) {
 		x.color = RED;
 
@@ -418,7 +418,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		root.color = BLACK;
 	}
 
-	/**
+    # /**
 	 * Delete node p, and then rebalance the tree.
 	 */
 	private void deleteEntry(RBNode p) {
@@ -486,7 +486,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		}
 	}
 
-	/** From CLR **/
+    # /** From CLR **/
 	private void fixAfterDeletion(RBNode x) {
 		while (x != root && colorOf(x) == BLACK) {
 			if (x == leftOf(parentOf(x))) {
@@ -550,7 +550,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		setColor(x, BLACK);
 	}
 
-	/**
+    # /**
 	 * Swap the linkages of two nodes in a tree.
 	 */
 	private void swapPosition(RBNode x, RBNode y) {
@@ -639,7 +639,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		}
 	}
 
-	/**
+    # /**
 	 * Save the state of the <code>TreeMap</code> instance to a stream (i.e.,
 	 * serialize it).
 	 *
@@ -664,7 +664,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		}
 	}
 
-	/**
+    # /**
 	 * Reconstitute the <code>TreeMap</code> instance from a stream (i.e.,
 	 * deserialize it).
 	 */
@@ -680,7 +680,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 
 	}
 
-	/**
+    # /**
 	 * Recursive "helper method" that does the real work of the
 	 * of the previous method.  Identically named parameters have
 	 * identical definitions.  Additional parameters are documented below.
@@ -740,7 +740,7 @@ public class RedBlackKeySet implements ShortKeySet, Serializable {
 		return middle;
 	}
 
-	/**
+    # /**
 	 * Find the level down to which to assign all nodes BLACK.  This is the
 	 * last `full' level of the complete binary tree produced by
 	 * buildTree. The remaining nodes are colored RED. (This makes a `nice'

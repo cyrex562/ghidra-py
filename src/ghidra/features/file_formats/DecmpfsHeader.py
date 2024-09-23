@@ -20,7 +20,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.StringUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class DecmpfsHeader implements StructConverter {
 	private int     compression_magic;

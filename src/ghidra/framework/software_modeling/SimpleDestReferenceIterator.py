@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import ghidra.program.model.address.Address;
@@ -25,11 +25,11 @@ import ghidra.util.task.TaskMonitor;
 import java.util.LinkedList;
 
 # /**
- *  This iterator is implemented by getting the flows from the instruction
- *  and iterating over those flows (plus the fallthrough).  This is probably
- *  not the most efficient method.  An linked-list of references has to be created each
- *  time we want to get the destinations from a block.
- */
+# *  This iterator is implemented by getting the flows from the instruction
+# *  and iterating over those flows (plus the fallthrough).  This is probably
+# *  not the most efficient method.  An linked-list of references has to be created each
+# *  time we want to get the destinations from a block.
+# */
 public class SimpleDestReferenceIterator implements CodeBlockReferenceIterator {	
 	
     // queue of discovered destination block references

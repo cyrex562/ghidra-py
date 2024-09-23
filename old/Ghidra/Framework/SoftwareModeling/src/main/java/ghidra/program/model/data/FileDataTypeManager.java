@@ -16,7 +16,7 @@
 package ghidra.program.model.data;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.framework.data.OpenMode;

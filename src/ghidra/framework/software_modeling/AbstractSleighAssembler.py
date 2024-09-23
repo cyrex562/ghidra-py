@@ -18,7 +18,7 @@ package ghidra.app.plugin.assembler.sleigh;
 import static ghidra.program.util.ProgramEvent.*;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 import java.util.Collection;
 
 import ghidra.app.plugin.assembler.*;
@@ -257,7 +257,7 @@ public abstract class AbstractSleighAssembler<RP extends AssemblyResolvedPattern
 		return sel.ins().getVals();
 	}
 
-	/**
+    # /**
 	 * A convenience to obtain assembly symbols
 	 * 
 	 * @return the map

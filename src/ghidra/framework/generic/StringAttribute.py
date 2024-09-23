@@ -28,7 +28,7 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 	private Map<Long, String> values;
 	private static String attributeType = AttributeManager.STRING_TYPE;
 
-	/** Constructor.
+    # /** Constructor.
 	 * @param name The name used to identify this attribute.
 	 * @param set The KeyIndexableSet whose elements can be assigned
 	 * a value within this attribute.
@@ -38,7 +38,7 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 		this.values = new HashMap<>();
 	}
 
-	/** Set the value of this attribute for the specified KeyedObject.
+    # /** Set the value of this attribute for the specified KeyedObject.
 	 * @param o The KeyedObject that is assigned the value. Should
 	 * be a member of the owningSet.
 	 * @param value The value to associate with the specified KeyedObject.
@@ -58,7 +58,7 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Return the value associated to the specied KeyedObject.
 	 */
 	public String getValue(KeyedObject o) //throws NoValueException
@@ -67,7 +67,7 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 		return values.get(o.key());
 	}
 
-//	/** Debug printing. */
+//    # /** Debug printing. */
 //  private void reportValues()
 //  {
 //       Err.debug(this,  "Attribute: " + name() + "\n" );
@@ -81,7 +81,7 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 //       Err.debug(this, "\n");
 //  }
 
-	/** Returns the elements of the owningSet sorted by their
+    # /** Returns the elements of the owningSet sorted by their
 	 * values of this Attribute. 
 	 */
 	public KeyedObject[] toSortedArray() {
@@ -90,7 +90,7 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 		return keyedObjects;
 	}
 
-	/** Sorts the array of keyedObjects by their values of this 
+    # /** Sorts the array of keyedObjects by their values of this 
 	 * Attribute.
 	 */
 	public KeyedObject[] toSortedArray(KeyedObject[] keyedObjects) {
@@ -99,7 +99,7 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 		return clone;
 	}
 
-	/** This class is a comparator (see java.util.Comparator) for
+    # /** This class is a comparator (see java.util.Comparator) for
 	 * KeyedObjects having a StringAttribute. Keyed Objects are first
 	 * compared by the value of the attribute. Ties are broken by
 	 * considering the keys of the KeyedObjects.
@@ -149,7 +149,7 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 		}
 	}
 
-	/** Return the type of Attribute, i.e. what kind of values does
+    # /** Return the type of Attribute, i.e. what kind of values does
 	 * this attribute hold. "Long", "Object", "Double" are examples.
 	 */
 	@Override
@@ -157,13 +157,13 @@ public class StringAttribute<T extends KeyedObject> extends Attribute<T> {
 		return attributeType;
 	}
 
-	/** Removes all assigned values of this attribute. */
+    # /** Removes all assigned values of this attribute. */
 	@Override
 	public void clear() {
 		values.clear();
 	}
 
-	/** Return the attribute of the specified KeyedObject as a String.
+    # /** Return the attribute of the specified KeyedObject as a String.
 	 */
 	@Override
 	public String getValueAsString(KeyedObject o) {

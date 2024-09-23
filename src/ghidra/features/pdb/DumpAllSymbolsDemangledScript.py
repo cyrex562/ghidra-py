@@ -16,7 +16,7 @@
 // Script for ghizard developer investigating template and ICF squashing.
 //
 //@category PDB
-import java.io.*;
+
 
 import ghidra.app.script.GhidraScript;
 import ghidra.program.model.address.Address;
@@ -68,7 +68,7 @@ public class DumpAllSymbolsDemangledScript extends GhidraScript {
 		bufferedWriter.close();
 	}
 
-	/**
+    # /**
 	 * Gets a demangled string for the indicated mangled string.
 	 * @param mangledString the mangled string to be decoded
 	 * @return the associated demangled string

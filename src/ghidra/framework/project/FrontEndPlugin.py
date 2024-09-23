@@ -19,7 +19,7 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.*;
 
@@ -89,14 +89,14 @@ public class FrontEndPlugin extends Plugin
 	private Project activeProject;
 	private ProjectManager projectManager;
 
-	/**
+    # /**
 	 * the sash panel that contains the active project data and
 	 * optionally any opened project data views that are displayed
 	 * when the user requests to view other project(s)
 	 */
 	private ProjectDataPanel projectDataPanel;
 
-	/**
+    # /**
 	 * the main scrollable status area used by the DataManager
 	 * and ToolManager to provide feedback to the user
 	 */
@@ -154,7 +154,7 @@ public class FrontEndPlugin extends Plugin
 	private FindCheckoutsAction findCheckoutsAction;
 	private ToolChestChangeListener toolChestChangeListener;
 
-	/**
+    # /**
 	 * Construct a new FrontEndPlugin. This plugin is constructed once when
 	 * the Front end tool (Ghidra Project Window) is created. When a
 	 * previously opened project is created, the Ghidra Project Window is
@@ -339,7 +339,7 @@ public class FrontEndPlugin extends Plugin
 		info.show(tool.getToolFrame());
 	}
 
-	/**
+    # /**
 	 * Set the project manager; try to reopen the last project that was
 	 * opened.
 	 * @param pm the project manager
@@ -348,7 +348,7 @@ public class FrontEndPlugin extends Plugin
 		this.projectManager = pm;
 	}
 
-	/**
+    # /**
 	 * Sets the handle to the activeProject, as well as updating the
 	 * active data tree to show the new active project's data
 	 * @param project the active project
@@ -423,7 +423,7 @@ public class FrontEndPlugin extends Plugin
 		SwingUtilities.invokeLater(() -> rebuildRecentMenus());
 	}
 
-	/**
+    # /**
 	 * sets the name of the project, using the default name if no project is active
 	 */
 	void setProjectName() {
@@ -465,7 +465,7 @@ public class FrontEndPlugin extends Plugin
 		return true;
 	}
 
-	/**
+    # /**
 	 * general project utility that brings up a file chooser for
 	 * the user to specify a directory and filename that are used
 	 * for the Project location and name
@@ -633,7 +633,7 @@ public class FrontEndPlugin extends Plugin
 		return projectManager.getRecentProjects();
 	}
 
-	/**
+    # /**
 	 * Popup up file chooser dialog so the user can select the
 	 * location for the exported tool file.
 	 * @param template template to export
@@ -788,7 +788,7 @@ public class FrontEndPlugin extends Plugin
 
 	}
 
-	/**
+    # /**
 	 * builds the gui for the new front end
 	 */
 	private void buildGui() {

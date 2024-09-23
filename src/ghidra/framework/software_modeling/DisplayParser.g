@@ -5,10 +5,10 @@ options {
 }
 
 /**
- * This is the parser used in the display portion. It's root rule is display, which will swap in
- * the corresponding DisplayLexer. Instead of overriding the lexer rules for operators and other
- * special symbols, the parser simply recognizes them and just uses them for their characters.
- */
+# * This is the parser used in the display portion. It's root rule is display, which will swap in
+# * the corresponding DisplayLexer. Instead of overriding the lexer rules for operators and other
+# * special symbols, the parser simply recognizes them and just uses them for their characters.
+# */
 
 // See the README.txt regarding some restrictions on this rule.
 display

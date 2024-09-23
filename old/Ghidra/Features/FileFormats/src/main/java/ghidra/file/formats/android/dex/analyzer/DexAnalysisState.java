@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex.analyzer;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.TreeMap;
 

@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.programtree;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.*;
 
 import docking.dnd.GenericDataFlavor;

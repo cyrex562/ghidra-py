@@ -50,7 +50,7 @@ public enum LafType {
 		this.usesDarkDefaults = usesDarkDefaults;
 	}
 
-	/**
+    # /**
 	 * Gets the preferred display string for this type.
 	 * @return the preferred display string.
 	 */
@@ -63,7 +63,7 @@ public enum LafType {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the name of this LafType.
 	 * @return the name of this LafType.
 	 */
@@ -71,7 +71,7 @@ public enum LafType {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns true if the LookAndFeel represented by this LafType uses application dark 
 	 * default values.
 	 * @return  true if the LookAndFeel represented by this LafType uses application dark 
@@ -81,7 +81,7 @@ public enum LafType {
 		return usesDarkDefaults;
 	}
 
-	/**
+    # /**
 	 * Returns the LafType for the given name or null if the given name does not match any types
 	 * @param name the name to search a LafType for.
 	 * @return the LafType for the given name or null if the given name does not match any types
@@ -95,7 +95,7 @@ public enum LafType {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns true if the {@link LookAndFeel} represented by this LafType is supported on the
 	 * current platform.
 	 * @return true if the {@link LookAndFeel} represented by this LafType is supported on the
@@ -111,7 +111,7 @@ public enum LafType {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns a LookAndFeelManager that can install and update the {@link LookAndFeel} associated
 	 * with this LafType.
 	 * @param themeManager The application ThemeManager
@@ -147,7 +147,7 @@ public enum LafType {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the default LafType for the current platform.
 	 * @return the default LafType for the current platform.
 	 */

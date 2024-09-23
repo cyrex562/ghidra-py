@@ -95,7 +95,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 
 	private FcgLevel level;
 
-	/**
+    # /**
 	 * Constructor
 	 *
 	 * @param function the function represented by this vertex
@@ -374,7 +374,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		return toggleOutsButton;
 	}
 
-	/**
+    # /**
 	 * Sets to true if this vertex is showing all edges in the incoming direction
 	 *
 	 * @param setExpanded true if this vertex is showing all edges in the incoming direction
@@ -418,7 +418,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this vertex is showing all edges in the incoming direction
 	 *
 	 * @return true if this vertex is showing all edges in the incoming direction
@@ -427,7 +427,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		return incomingExpanded;
 	}
 
-	/**
+    # /**
 	 * Sets to true if this vertex is showing all edges in the outgoing direction
 	 *
 	 * @param setExpanded true if this vertex is showing all edges in the outgoing direction
@@ -442,7 +442,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		toggleInsButton.setToolTipText("Click to " + hideShow + " outgoing edges");
 	}
 
-	/**
+    # /**
 	 * Returns true if this vertex is showing all edges in the outgoing direction
 	 *
 	 * @return true if this vertex is showing all edges in the outgoing direction
@@ -451,7 +451,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		return outgoingExpanded;
 	}
 
-	/**
+    # /**
 	 * Returns whether this vertex is fully expanded in its current direction
 	 *
 	 * @return whether this vertex is fully expanded in its current direction
@@ -467,7 +467,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		return isOutgoingExpanded();
 	}
 
-	/**
+    # /**
 	 * Sets whether this vertex has too many incoming references, where too many is subjectively
 	 * defined by this class.  Too many nodes in the display would ruin rendering and general
 	 * usability.
@@ -481,7 +481,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		buildUi();
 	}
 
-	/**
+    # /**
 	 * Sets whether this vertex has too many outgoing references, where too many is subjectively
 	 * defined by this class.  Too many nodes in the display would ruin rendering and general
 	 * usability.
@@ -495,7 +495,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		buildUi();
 	}
 
-	/**
+    # /**
 	 * Returns whether this vertex has too many incoming references, where too many is subjectively
 	 * defined by this class.  Too many nodes in the display would ruin rendering and general
 	 * usability.
@@ -506,7 +506,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		return tooManyIncomingReferences;
 	}
 
-	/**
+    # /**
 	 * Returns whether this vertex has too many outgoing references, where too many is subjectively
 	 * defined by this class.  Too many nodes in the display would ruin rendering and general
 	 * usability.
@@ -517,7 +517,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		return tooManyOutgoingReferences;
 	}
 
-	/**
+    # /**
 	 * Returns true if this vertex can expand itself in its current direction, or in either
 	 * direction if this is a source vertex
 	 *
@@ -544,7 +544,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		return hasOutgoingReferences && !tooManyOutgoingReferences && !outgoingExpanded;
 	}
 
-	/**
+    # /**
 	 * Sets whether this vertex has any incoming references
 	 *
 	 * @param hasIncoming true if this vertex has any incoming references
@@ -553,7 +553,7 @@ public class FcgVertex extends AbstractVisualVertex implements VertexShapeProvid
 		this.hasIncomingReferences = hasIncoming;
 	}
 
-	/**
+    # /**
 	 * Sets whether this vertex has any outgoing references
 	 *
 	 * @param hasOutgoing true if this vertex has any outgoing references

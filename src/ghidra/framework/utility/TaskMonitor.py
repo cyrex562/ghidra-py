@@ -28,13 +28,13 @@ import ghidra.util.exception.CancelledException;
  */
 public interface TaskMonitor {
 
-	/**
+    # /**
 	 * A 'do nothing' task monitor that can be passed to APIs when the client has not progress to
 	 * report.
 	 */
 	public static final TaskMonitor DUMMY = new StubTaskMonitor();
 
-	/**
+    # /**
 	 * Returns the given task monitor if it is not {@code null}.  Otherwise, a {@link #DUMMY}
 	 * monitor is returned.
 	 * @param tm the monitor to check for {@code null}
@@ -44,43 +44,43 @@ public interface TaskMonitor {
 		return tm == null ? DUMMY : tm;
 	}
 
-	/** A value to indicate that this monitor has no progress value set */
+    # /** A value to indicate that this monitor has no progress value set */
 	public static final int NO_PROGRESS_VALUE = -1;
 
-	/**
+    # /**
 	 * Returns true if the user has cancelled the operation
 	 *
 	 * @return true if the user has cancelled the operation
 	 */
 	public boolean isCancelled();
 
-	/**
+    # /**
 	 * True (the default) signals to paint the progress information inside of the progress bar
 	 *
 	 * @param showProgressValue true to paint the progress value; false to not
 	 */
 	public void setShowProgressValue(boolean showProgressValue);
 
-	/**
+    # /**
 	 * Sets the message displayed on the task monitor
 	 *
 	 * @param message the message to display
 	 */
 	public void setMessage(String message);
 
-	/**
+    # /**
 	 * Gets the last set message of this monitor
 	 * @return the message
 	 */
 	public String getMessage();
 
-	/**
+    # /**
 	 * Sets the current progress value
 	 * @param value progress value
 	 */
 	public void setProgress(long value);
 
-	/**
+    # /**
 	 * Initialized this TaskMonitor to the given max values.  The current value of this monitor
 	 * will be set to zero.
 	 *
@@ -88,7 +88,7 @@ public interface TaskMonitor {
 	 */
 	public void initialize(long max);
 
-	/**
+    # /**
 	 * Initializes the progress value to 0, sets the max value and message of this monitor.
 	 * 
 	 * @param max maximum value for progress
@@ -99,7 +99,7 @@ public interface TaskMonitor {
 		setMessage(message);
 	}
 
-	/**
+    # /**
 	 * Set the progress maximum value
 	 * <p><b>
 	 * Note: setting this value will reset the progress to be the max if the progress is currently
@@ -108,25 +108,25 @@ public interface TaskMonitor {
 	 */
 	public void setMaximum(long max);
 
-	/**
+    # /**
 	 * Returns the current maximum value for progress
 	 * @return the maximum progress value
 	 */
 	public long getMaximum();
 
-	/**
+    # /**
 	 * An indeterminate task monitor may choose to show an animation instead of updating progress
 	 * @param indeterminate true if indeterminate
 	 */
 	public void setIndeterminate(boolean indeterminate);
 
-	/**
+    # /**
 	 * Returns true if this monitor shows no progress
 	 * @return true if this monitor shows no progress
 	 */
 	public boolean isIndeterminate();
 
-	/**
+    # /**
 	 * Check to see if this monitor has been cancelled
 	 * @throws CancelledException if monitor has been cancelled
 	 * @deprecated Use {@link #checkCancelled()} instead
@@ -134,7 +134,7 @@ public interface TaskMonitor {
 	@Deprecated(since = "10.3")
 	public void checkCanceled() throws CancelledException;
 
-	/**
+    # /**
 	 * Check to see if this monitor has been cancelled
 	 * @throws CancelledException if monitor has been cancelled
 	 */
@@ -143,21 +143,21 @@ public interface TaskMonitor {
 		checkCanceled();
 	}
 
-	/**
+    # /**
 	 * Increases the progress value by 1.
 	 */
 	default public void incrementProgress() {
 		incrementProgress(1);
 	}
 
-	/**
+    # /**
 	 * Changes the progress value by the specified amount.
 	 * 
 	 * @param incrementAmount The amount by which to increment the progress
 	 */
 	public void incrementProgress(long incrementAmount);
 
-	/**
+    # /**
 	 * Increases the progress value by 1, and checks if this monitor has been cancelled.
 	 * 
 	 * @throws CancelledException if monitor has been cancelled
@@ -167,7 +167,7 @@ public interface TaskMonitor {
 		incrementProgress(1);
 	}
 
-	/**
+    # /**
 	 * Changes the progress value by the specified amount, and checks if this monitor has 
 	 * been cancelled.
 	 * 
@@ -179,49 +179,49 @@ public interface TaskMonitor {
 		incrementProgress(incrementAmount);
 	}
 
-	/**
+    # /**
 	 * Returns the current progress value or {@link #NO_PROGRESS_VALUE} if there is no value set
 	 * @return the current progress value or {@link #NO_PROGRESS_VALUE} if there is no value set
 	 */
 	public long getProgress();
 
-	/**
+    # /**
 	 * Cancel the task
 	 */
 	public void cancel();
 
-	/**
+    # /**
 	 * Add cancelled listener
 	 * @param listener the cancel listener
 	 */
 	public void addCancelledListener(CancelledListener listener);
 
-	/**
+    # /**
 	 * Remove cancelled listener
 	 * @param listener the cancel listener
 	 */
 	public void removeCancelledListener(CancelledListener listener);
 
-	/**
+    # /**
 	 * Set the enablement of the Cancel button
 	 * @param enable true means to enable the cancel button
 	 */
 	public void setCancelEnabled(boolean enable);
 
-	/**
+    # /**
 	 * Returns true if cancel ability is enabled
 	 * @return true if cancel ability is enabled
 	 */
 	public boolean isCancelEnabled();
 
-	/**
+    # /**
 	 * Clear the cancellation so that this TaskMonitor may be reused
 	 * @deprecated Use {@link #clearCancelled()} instead
 	 */
 	@Deprecated(since = "10.3")
 	public void clearCanceled();
 
-	/**
+    # /**
 	 * Clear the cancellation so that this TaskMonitor may be reused
 	 */
 	public default void clearCancelled() {

@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.mem;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.List;
 
@@ -46,7 +46,7 @@ abstract class MemoryMapDBAdapter {
 	static final int SUB_LENGTH_COL = MemoryMapDBAdapterV3.V3_SUB_LENGTH_COL;
 	static final int SUB_START_OFFSET_COL = MemoryMapDBAdapterV3.V3_SUB_START_OFFSET_COL;
 
-	/**
+    # /**
 	 * Subblock record int data1 usage:
 	 * <ul>
 	 * <li>{@link BufferSubMemoryBlock} - data buffer ID</li>
@@ -58,7 +58,7 @@ abstract class MemoryMapDBAdapter {
 	 */
 	static final int SUB_INT_DATA1_COL = MemoryMapDBAdapterV3.V3_SUB_INT_DATA1_COL;
 
-	/**
+    # /**
 	 * Subblock record long data2 usage:
 	 * <ul>
 	 * <li>{@link BufferSubMemoryBlock} - (not used) 0</li>
@@ -156,7 +156,7 @@ abstract class MemoryMapDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a DBBuffer object for the given database buffer id
 	 * @param bufferID the id of the first buffer in the DBBuffer.
 	 * @return the DBBuffer for the given id.
@@ -166,19 +166,19 @@ abstract class MemoryMapDBAdapter {
 
 	abstract void deleteTable(DBHandle handle) throws IOException;
 
-	/**
+    # /**
 	 * 
 	 * @throws IOException if a database IO error occurs.
 	 */
 	abstract void refreshMemory() throws IOException;
 
-	/**
+    # /**
 	 * Returns an array of memory blocks sorted on start Address
 	 * @return  all the memory blocks
 	 */
 	abstract List<MemoryBlockDB> getMemoryBlocks();
 
-	/**
+    # /**
 	 * Creates a new initialized block object using data provided from an 
 	 * input stream.  Once the input stream has been exhausted, the remaining 
 	 * block data will be initialized to zero (0x00).
@@ -194,7 +194,7 @@ abstract class MemoryMapDBAdapter {
 	abstract MemoryBlockDB createInitializedBlock(String name, Address startAddr, InputStream is,
 			long length, int flags) throws AddressOverflowException, IOException;
 
-	/**
+    # /**
 	 * Creates a new initialized block object
 	 * @param name the name of the block
 	 * @param startAddr the start address of the block.
@@ -207,7 +207,7 @@ abstract class MemoryMapDBAdapter {
 	abstract MemoryBlockDB createInitializedBlock(String name, Address startAddr, DBBuffer buf,
 			int flags) throws AddressOverflowException, IOException;
 
-	/**
+    # /**
 	 * Creates a new memory block that doesn't have associated bytes.
 	 * @param blockType the type of block to create.
 	 * @param name the name of the block.
@@ -227,21 +227,21 @@ abstract class MemoryMapDBAdapter {
 			long length, Address mappedAddress, boolean initializeBytes, int flags,
 			int encodedMappingScheme) throws AddressOverflowException, IOException;
 
-	/**
+    # /**
 	 * Deletes the given memory block.
 	 * @param block the memory block to be deleted
 	 * @throws IOException if a database IO error occurs.
 	 */
 	abstract void deleteMemoryBlock(MemoryBlockDB block) throws IOException;
 
-	/**
+    # /**
 	 * Updates the memory block record.
 	 * @param record the record to update.
 	 * @throws IOException if a database IO error occurs.
 	 */
 	abstract void updateBlockRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Creates a new DBuffer object with the given length and initial value.
 	 * @param length block/chunk buffer length (length limited by ChainedBuffer implementation)
 	 * @param initialValue fill value
@@ -250,27 +250,27 @@ abstract class MemoryMapDBAdapter {
 	 */
 	abstract DBBuffer createBuffer(int length, byte initialValue) throws IOException;
 
-	/**
+    # /**
 	 * Returns the MemoryMap that owns this adapter.
 	 * @return  the MemoryMap that owns this adapter.
 	 */
 	abstract MemoryMapDB getMemoryMap();
 
-	/**
+    # /**
 	 * Deletes the sub block record for the given key.
 	 * @param key the record id of the sub block record to delete.
 	 * @throws IOException if a database error occurs.
 	 */
 	abstract void deleteSubBlock(long key) throws IOException;
 
-	/**
+    # /**
 	 * Updates the sub memory block record.
 	 * @param record the record to update.
 	 * @throws IOException if a database IO error occurs.
 	 */
 	protected abstract void updateSubBlockRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Creates a record for a new created sub block
 	 * @param memBlockId the id of the memory block that contains this sub block
 	 * @param startingOffset the starting offset relative to the containing memory block where this
@@ -285,7 +285,7 @@ abstract class MemoryMapDBAdapter {
 	abstract DBRecord createSubBlockRecord(long memBlockId, long startingOffset, long length,
 			byte subType, int data1, long data2) throws IOException;
 
-	/**
+    # /**
 	 * Creates a new memory block.
 	 * @param name the name of the block
 	 * @param startAddress the start address of the block
@@ -298,7 +298,7 @@ abstract class MemoryMapDBAdapter {
 	protected abstract MemoryBlockDB createBlock(String name, Address startAddress, long length,
 			int flags, List<SubMemoryBlock> splitBlocks) throws IOException;
 
-	/**
+    # /**
 	 * Creates a new memory block using a FileBytes
 	 * @param name the name of the block
 	 * @param startAddress the start address of the block

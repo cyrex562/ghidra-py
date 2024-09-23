@@ -99,7 +99,7 @@ public class MDMangGenericize extends MDMang {
 	// Use getAndIncrement(), with or without the prior use of peek() to add a
 	// character to
 	// genericizeString.
-	/**
+    # /**
 	 * Increments the current index by one and returns the character at the new
 	 * index. If the resulting index is greater or equal to the end index, the
 	 * current index is reset to the end index and a value of DONE is returned.
@@ -117,7 +117,7 @@ public class MDMangGenericize extends MDMang {
 		return super.next();
 	}
 
-	/**
+    # /**
 	 * Returns the character at the current index and then increments the index
 	 * by one. If the resulting index is greater or equal to the end index, the
 	 * current index is reset to the end index and a value of DONE is returned.
@@ -132,7 +132,7 @@ public class MDMangGenericize extends MDMang {
 		return c;
 	}
 
-	/**
+    # /**
 	 * Increments the index by one.  Does no testing for whether the index
 	 * surpasses the length of the string.
 	 */
@@ -142,7 +142,7 @@ public class MDMangGenericize extends MDMang {
 		genericizedString.append(c);
 	}
 
-	/**
+    # /**
 	 * Increments the index by count.  Does no testing for whether the index
 	 * surpasses the length of the string.  Also does internal processing
 	 * for creating a genericized String.
@@ -158,7 +158,7 @@ public class MDMangGenericize extends MDMang {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates next unique fragment string for potential use.
 	 */
 	private String nextUnique() {
@@ -166,7 +166,7 @@ public class MDMangGenericize extends MDMang {
 		return "name" + uniqueCount;
 	}
 
-	/**
+    # /**
 	 * Converts Fragment to generic name fragment and appends it to the generic
 	 * string. If the fragment has been seen before, uses previously devised
 	 * generic name for that fragment.
@@ -195,7 +195,7 @@ public class MDMangGenericize extends MDMang {
 		genericizedString.append(uniqueFragment);
 	}
 
-	/**
+    # /**
 	 * Appends string to generic string.
 	 */
 	private void appendRemainder() {
@@ -204,14 +204,14 @@ public class MDMangGenericize extends MDMang {
 		}
 	}
 
-	/******************************************************************************/
-	/******************************************************************************/
+    # /******************************************************************************/
+    # /******************************************************************************/
 	public String getGenericSymbol() {
 		return genericizedString.toString();
 	}
 
-	/******************************************************************************/
-	/******************************************************************************/
+    # /******************************************************************************/
+    # /******************************************************************************/
 	// SPECIALIZATION METHODS
 
 	@Override

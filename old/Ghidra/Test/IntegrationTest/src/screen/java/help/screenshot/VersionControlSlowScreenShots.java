@@ -17,7 +17,7 @@ package help.screenshot;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 
 import javax.swing.JFrame;
 

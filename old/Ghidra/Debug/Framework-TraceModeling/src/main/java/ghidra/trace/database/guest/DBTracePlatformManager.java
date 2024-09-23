@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.guest;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.locks.ReadWriteLock;
 

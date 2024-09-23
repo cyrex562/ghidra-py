@@ -29,7 +29,7 @@ public class VTListingContext extends ListingActionContext
 
 	private CodeComparisonPanel codeComparisonPanel = null;
 
-	/**
+    # /**
 	 * Creates an action context for a VT listing.
 	 * @param provider the provider for this context.
 	 * @param navigatable the associated navigatable for navigation and selection.
@@ -38,7 +38,7 @@ public class VTListingContext extends ListingActionContext
 		super(provider, navigatable);
 	}
 
-	/**
+    # /**
 	 * Sets the CodeComparisonPanel associated with this context.
 	 * @param codeComparisonPanel the code comparison panel.
 	 */

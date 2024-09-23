@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.map;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -35,13 +35,13 @@ public class AddressIndexPrimaryKeyIterator implements DBFieldIterator {
 	private int keyRangeIndex = -1;
 	private int indexCol;
 
-	/**
+    # /**
 	 * Empty iterator constructor
 	 */
 	public AddressIndexPrimaryKeyIterator() {
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexPrimaryKeyIterator.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table containing indexed addresses.
@@ -55,7 +55,7 @@ public class AddressIndexPrimaryKeyIterator implements DBFieldIterator {
 		this(table, indexCol, addrMap, false, (AddressSetView) null, atStart);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexPrimaryKeyIterator for a range of addresses.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table containing indexed addresses.
@@ -71,7 +71,7 @@ public class AddressIndexPrimaryKeyIterator implements DBFieldIterator {
 		this(table, indexCol, addrMap, false, new AddressSet(minAddr, maxAddr), atStart);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexPrimaryKeyIterator for a set of addresses.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table containing indexed addresses.
@@ -86,7 +86,7 @@ public class AddressIndexPrimaryKeyIterator implements DBFieldIterator {
 		this(table, indexCol, addrMap, false, set, atStart);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexPrimaryKeyIterator for a set of addresses.
 	 * @param table the database table containing indexed addresses.
 	 * @param indexCol the column that contains indexed addresses.
@@ -122,7 +122,7 @@ public class AddressIndexPrimaryKeyIterator implements DBFieldIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexPrimaryKeyIterator starting at a given address.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table containing indexed addresses.
@@ -137,7 +137,7 @@ public class AddressIndexPrimaryKeyIterator implements DBFieldIterator {
 		this(table, indexCol, addrMap, false, start, before);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexPrimaryKeyIterator starting at a given address
 	 * @param table the database table containing indexed addresses.
 	 * @param indexCol the column that contains indexed addresses.

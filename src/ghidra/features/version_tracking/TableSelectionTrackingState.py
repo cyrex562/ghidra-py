@@ -24,19 +24,19 @@ package ghidra.feature.vt.gui.actions;
  */
 public enum TableSelectionTrackingState {
 
-	/**
+    # /**
 	 * Tracks selection for the user's selected row value (instead of the selected index).  This
 	 * is useful when the row value changes position in the table due to sorting changes.
 	 */
 	MAINTAIN_SELECTED_ROW_VALUE,
 
-	/**
+    # /**
 	 * Tracks selection for the selected row (instead of the selected value).  This has the effect
 	 * of always keeping the same row selected, even when the row value changes.
 	 */
 	MAINTAIN_SELECTED_ROW_INDEX,
 
-	/**
+    # /**
 	 * No selection tracking takes place.  When a selection is lost, the table will not try to
 	 * restore it.
 	 */

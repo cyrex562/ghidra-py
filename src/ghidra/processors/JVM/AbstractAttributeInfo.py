@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -104,7 +104,7 @@ public abstract class AbstractAttributeInfo implements StructConverter {
 		return _offset;
 	}
 
-	/**
+    # /**
 	 * The value of the attribute_name_index item must be a valid index
 	 * into the constant_pool table. The constant_pool entry at that index
 	 * must be a CONSTANT_Utf8_info structure representing the name of this attribute.
@@ -115,7 +115,7 @@ public abstract class AbstractAttributeInfo implements StructConverter {
 		return attributeNameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the attribute_length item indicates the length of the attribute,
 	 * excluding the initial six bytes. 
 	 * The value of the attribute_length item is thus dependent on the specific

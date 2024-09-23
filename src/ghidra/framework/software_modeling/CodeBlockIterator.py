@@ -36,14 +36,14 @@ import util.CollectionUtils;
  */
 public interface CodeBlockIterator extends Iterable<CodeBlock> {
 
-	/**
+    # /**
 	 * Return true if next() will return a CodeBlock.
 	 * @return true if next() will return a CodeBlock.
 	 * @throws CancelledException thrown if the operation is cancelled.
 	 */
 	public boolean hasNext() throws CancelledException;
 
-	/**
+    # /**
 	 * Return the next CodeBlock.
 	 * @return the next CodeBlock.
 	 * @throws CancelledException thrown if the operation is cancelled.

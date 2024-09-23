@@ -16,7 +16,7 @@
 package ghidra.server.store;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.logging.log4j.LogManager;
@@ -49,19 +49,19 @@ public class RepositoryFolder {
 	private Map<String, RepositoryFolder> folderMap = new HashMap<>();
 	private Map<String, RepositoryFile> fileMap = new HashMap<>();
 
-	/**
+    # /**
 	 * RepositoryFile name comparator
 	 */
 	private static Comparator<RepositoryFile> FILE_NAME_COMPARATOR =
 		(f1, f2) -> f1.getName().compareTo(f2.getName());
 
-	/**
+    # /**
 	 * RepositoryFolder name comparator
 	 */
 	private static Comparator<RepositoryFolder> FOLDER_NAME_COMPARATOR =
 		(f1, f2) -> f1.getName().compareTo(f2.getName());
 
-	/**
+    # /**
 	 * Constructor for non-root folders
 	 * @param repository shared repository
 	 * @param fileSystem local file system for storing version controlled items
@@ -78,7 +78,7 @@ public class RepositoryFolder {
 		init();
 	}
 
-	/**
+    # /**
 	 * Constructor for the root folder
 	 * @param repository shared repository
 	 * @param fileSystem local file system for storing version controlled items
@@ -115,7 +115,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns folder name
 	 * @return folder name
 	 */
@@ -123,7 +123,7 @@ public class RepositoryFolder {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns parent folder or null if this is the root folder.
 	 * @return parent folder or null
 	 */
@@ -131,7 +131,7 @@ public class RepositoryFolder {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Returns folder path within repository
 	 * @return folder path
 	 */
@@ -146,7 +146,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns all sub-folders contained within this folder
 	 * @return all sub-folders
 	 */
@@ -159,7 +159,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns sub-folders with the specified name or null 
 	 * if sub-folder not found within this folder.
 	 * @param folderName sub-folder name
@@ -187,7 +187,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns all files/items contained within this folder
 	 * @return all files/items contained within this folder
 	 */
@@ -200,7 +200,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns files/items with the specified name or null 
 	 * if file/item not found within this folder.
 	 * @param fileName sub-folder name
@@ -235,7 +235,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new sub-folder within this folder and the associated directory on the local file-system.
 	 * @param folderName new sub-folder name
 	 * @param user user who is initiating request
@@ -262,7 +262,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new database file/item within this folder.
 	 * @param itemName name of new database
 	 * @param fileID file ID
@@ -294,7 +294,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete this empty folder.
 	 * @throws FolderNotEmptyException Thrown if the folder is not empty.
 	 * @throws FileNotFoundException if there is no folder with the given path name.
@@ -311,7 +311,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if any file/item contained within this folder
 	 * or its descendents is checked-out.
 	 */
@@ -334,7 +334,7 @@ public class RepositoryFolder {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Remove child RepositoryFile which has already been deleted.
 	 * @param rf child RepositoryFile
 	 */
@@ -344,7 +344,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Move child RepositoryItem into its new parent folder
 	 * after the underlying item has already been moved.
 	 * @param rf child RepositoryItem
@@ -358,7 +358,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Move this folder to a new parent folder and optionally change its name.
 	 * @param newParent new parent folder
 	 * @param newFolderName new name for this folder
@@ -411,7 +411,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear cached data.  Delayed refresh will occur when needed.
 	 */
 	public void pathChanged() {
@@ -425,7 +425,7 @@ public class RepositoryFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this folder is a descendent of the specified folder
 	 */
 	private boolean isDescendentOf(RepositoryFolder folder) {

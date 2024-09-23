@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.omf.omf;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 

@@ -33,7 +33,7 @@ import ghidra.program.model.address.Address;
 
 public interface DataBuffer {
 
-	/**
+    # /**
      * Get one Data item from the buffer at the current position plus offset.
      *
      * @param offset the displacement from the current position.

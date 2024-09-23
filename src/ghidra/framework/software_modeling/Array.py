@@ -29,13 +29,13 @@ public interface Array extends DataType {
 
 	public static final String ARRAY_LABEL_PREFIX = "ARRAY";
 
-	/**
+    # /**
 	 * Returns the number of elements in the array
 	 * @return the number of elements in the array
 	 */
 	int getNumElements();
 
-	/**
+    # /**
 	 * Returns the length of an element in the array.  In the case
 	 * of a Dynamic base datatype, this element length will have been explicitly specified
 	 * at the time of construction.  For a zero-length base type an element length of 1 
@@ -44,13 +44,13 @@ public interface Array extends DataType {
 	 */
 	int getElementLength();
 
-	/**
+    # /**
 	 * Returns the dataType of the elements in the array.
 	 * @return the dataType of the elements in the array
 	 */
 	DataType getDataType();
 
-	/**
+    # /**
 	 * Get the appropriate string to use as the label prefix
 	 * for an array, taking into account the actual data at the memory location.
 	 * <p>
@@ -71,7 +71,7 @@ public interface Array extends DataType {
 		return (prefix != null) ? prefix : getDefaultLabelPrefix();
 	}
 
-	/**
+    # /**
 	 * Get the appropriate string to use as the offcut label prefix for an array, taking into
 	 * account the actual data at the memory location.
 	 * <p>
@@ -95,7 +95,7 @@ public interface Array extends DataType {
 		return (prefix != null) ? prefix : getDefaultLabelPrefix(buf, settings, len, options);
 	}
 
-	/**
+    # /**
 	 * Get the representation which corresponds to an array in memory.  This will either be a
 	 * String for the ArrayStringable case, "??" for uninitialized data,
 	 * or the empty string if it is not.
@@ -121,7 +121,7 @@ public interface Array extends DataType {
 		return (value != null) ? value : "";
 	}
 
-	/**
+    # /**
 	 * Get the value object which corresponds to an array in memory.  This will either be a
 	 * String for the ArrayStringable case or null.
 	 * 
@@ -156,7 +156,7 @@ public interface Array extends DataType {
 //			}
 	}
 
-	/**
+    # /**
 	 * Get the value Class of a specific arrayDt with settings
 	 * ( see {@link #getArrayValueClass(Settings)} ).
 	 * 

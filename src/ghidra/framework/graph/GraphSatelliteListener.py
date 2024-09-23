@@ -20,7 +20,7 @@ package ghidra.graph.viewer;
  */
 public interface GraphSatelliteListener {
 
-	/**
+    # /**
 	 * Called when the visibility and/or docked state of the watched satellite changes
 	 * 
 	 * @param docked true if the satellite is now docked

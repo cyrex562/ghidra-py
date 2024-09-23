@@ -1,39 +1,39 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.Comparator;
 import java.util.List;
 
 # /**
- * The structure interface.
- * <p>
- * NOTE: A zero-length Structure will report a length of 1 which will result in
- * improper code unit sizing since we are unable to support a defined data of length 0.
- * <p>
- * NOTE: The use of zero-length bitfields within non-packed structures is discouraged since they have
- * no real affect and are easily misplaced. Their use should be reserved for packed
- * structures.
- */
+# * The structure interface.
+# * <p>
+# * NOTE: A zero-length Structure will report a length of 1 which will result in
+# * improper code unit sizing since we are unable to support a defined data of length 0.
+# * <p>
+# * NOTE: The use of zero-length bitfields within non-packed structures is discouraged since they have
+# * no real affect and are easily misplaced. Their use should be reserved for packed
+# * structures.
+# */
 public interface Structure extends Composite {
 
 	@Override
 	public Structure clone(DataTypeManager dtm);
 
-	/**
+    # /**
 	 * Returns the component of this structure with the indicated ordinal.
 	 * 
 	 * @param ordinal the ordinal of the component requested (numbering starts at 0).
@@ -43,7 +43,7 @@ public interface Structure extends Composite {
 	@Override
 	public DataTypeComponent getComponent(int ordinal) throws IndexOutOfBoundsException;
 
-	/**
+    # /**
 	 * Gets the first defined component located at or after the specified offset. 
 	 * Note: The returned component may be a zero-length component.
 	 * 
@@ -52,7 +52,7 @@ public interface Structure extends Composite {
 	 */
 	public DataTypeComponent getDefinedComponentAtOrAfterOffset(int offset);
 
-	/**
+    # /**
 	 * Gets the first non-zero-length component that contains the byte at the specified offset. 
 	 * Note that one or more components may share the same offset when a bit-field or zero-length
 	 * component is present since these may share an offset.  A null may be returned under one of
@@ -72,7 +72,7 @@ public interface Structure extends Composite {
 	 */
 	public DataTypeComponent getComponentContaining(int offset);
 
-	/**
+    # /**
 	 * Gets the first non-zero-length component that starts at the specified offset. 
 	 * Note that one or more components may share the same offset when a bit-field or zero-length
 	 * component is present since these may share an offset.  A null may be returned under one of
@@ -103,7 +103,7 @@ public interface Structure extends Composite {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get an ordered list of components that contain the byte at the specified offset.
 	 * Unlike {@link #getComponentAt(int)} and {@link #getComponentContaining(int)} this method will
 	 * include zero-length components if they exist at the specified offset.  For this reason the
@@ -122,7 +122,7 @@ public interface Structure extends Composite {
 	 */
 	public List<DataTypeComponent> getComponentsContaining(int offset);
 
-	/**
+    # /**
 	 * Returns the lowest-level component that contains the specified offset. This is useful 
 	 * for structures that have sub-structures. This method is best used when working with 
 	 * known structures which do not contain bitfields or zero-length components since in 
@@ -134,7 +134,7 @@ public interface Structure extends Composite {
 	 */
 	public DataTypeComponent getDataTypeAt(int offset);
 
-	/**
+    # /**
 	 * Inserts a new bitfield at the specified ordinal position in this structure. Within packed
 	 * structures the specified byteWidth and bitOffset will be ignored since packing will occur at
 	 * the specified ordinal position. The resulting component length and bitfield details will
@@ -173,7 +173,7 @@ public interface Structure extends Composite {
 			DataType baseDataType, int bitSize, String componentName, String comment)
 			throws InvalidDataTypeException, IndexOutOfBoundsException;
 
-	/**
+    # /**
 	 * Inserts a new bitfield at the specified location in this composite. This method is intended
 	 * to be used with structures with packing disabled where the bitfield will be precisely placed. Within an
 	 * packed structure the specified byteOffset, byteWidth and bitOffset will be used to identify
@@ -218,7 +218,7 @@ public interface Structure extends Composite {
 			DataType baseDataType, int bitSize, String componentName, String comment)
 			throws InvalidDataTypeException;
 
-	/**
+    # /**
 	 * Inserts a new datatype at the specified offset into this structure. Inserting a component
 	 * will cause any conflicting components to shift down to the extent necessary to avoid a
 	 * conflict.
@@ -237,7 +237,7 @@ public interface Structure extends Composite {
 	public DataTypeComponent insertAtOffset(int offset, DataType dataType, int length)
 			throws IllegalArgumentException;
 
-	/**
+    # /**
 	 * Inserts a new datatype at the specified offset into this structure. Inserting a component
 	 * will cause any conflicting components to shift down to the extent necessary to avoid a
 	 * conflict.
@@ -261,7 +261,7 @@ public interface Structure extends Composite {
 	public DataTypeComponent insertAtOffset(int offset, DataType dataType, int length, String name,
 			String comment) throws IllegalArgumentException;
 
-	/**
+    # /**
 	 * Deletes all defined components containing the specified offset in this structure. If the offset
 	 * corresponds to a bit-field or zero-length component (e.g., 0-element array) multiple 
 	 * components may be deleted.  Bit-fields are only cleared and may leave residual undefined 
@@ -277,13 +277,13 @@ public interface Structure extends Composite {
 	 */
 	public void deleteAtOffset(int offset) throws IllegalArgumentException;
 
-	/**
+    # /**
 	 * Remove all components from this structure, effectively setting the
 	 * length to zero.  Packing and minimum alignment settings are unaffected.
 	 */
 	public void deleteAll();
 
-	/**
+    # /**
 	 * Clears all defined components containing the specified offset in this structure. If the offset
 	 * corresponds to a bit-field or zero-length component (e.g., 0-element array) multiple 
 	 * components may be cleared.  This method will preserve the structure length and placement 
@@ -298,7 +298,7 @@ public interface Structure extends Composite {
 	 */
 	public void clearAtOffset(int offset);
 
-	/**
+    # /**
 	 * Clears the defined component at the specified component ordinal. Clearing a component within
 	 * a non-packed structure causes a defined component to be replaced with a number of undefined 
 	 * components.  This may not the case when clearing a zero-length component or bit-field 
@@ -310,7 +310,7 @@ public interface Structure extends Composite {
 	 */
 	public void clearComponent(int ordinal) throws IndexOutOfBoundsException;
 
-	/**
+    # /**
 	 * Replaces the component at the specified ordinal with a new component using the 
 	 * specified datatype, length, name and comment.  In the case of a packed structure 
 	 * a 1-for-1 replacement will occur.  In the case of a non-packed structure certain
@@ -347,7 +347,7 @@ public interface Structure extends Composite {
 	public DataTypeComponent replace(int ordinal, DataType dataType, int length)
 			throws IndexOutOfBoundsException, IllegalArgumentException;
 
-	/**
+    # /**
 	 * Replaces the component at the specified ordinal with a new component using the 
 	 * specified datatype, length, name and comment.  In the case of a packed structure 
 	 * a 1-for-1 replacement will occur.  In the case of a non-packed structure certain
@@ -386,7 +386,7 @@ public interface Structure extends Composite {
 	public DataTypeComponent replace(int ordinal, DataType dataType, int length, String name,
 			String comment) throws IndexOutOfBoundsException, IllegalArgumentException;
 
-	/**
+    # /**
 	 * Replaces all components containing the specified byte offset with a new component using the 
 	 * specified datatype, length, name and comment. If the offset corresponds to a bit-field 
 	 * more than one component may be consumed by this replacement.  
@@ -429,7 +429,7 @@ public interface Structure extends Composite {
 	public DataTypeComponent replaceAtOffset(int offset, DataType dataType, int length, String name,
 			String comment) throws IllegalArgumentException;
 
-	/**
+    # /**
 	 * Increases the size of the structure by the specified amount by adding undefined filler at the
 	 * end of the structure.  NOTE: This method only has an affect on non-packed structures.
 	 * 
@@ -438,7 +438,7 @@ public interface Structure extends Composite {
 	 */
 	public void growStructure(int amount);
 
-	/**
+    # /**
 	 * <code>BitOffsetComparator</code> provides ability to compare an normalized bit offset (see
 	 * {@link #getNormalizedBitfieldOffset(int, int, int, int, boolean)}) with a
 	 * {@link DataTypeComponent} object. The offset will be considered equal (0) if the component
@@ -508,7 +508,7 @@ public interface Structure extends Composite {
 			return 0;
 		}
 
-		/**
+	    # /**
 		 * Compute the normalized bit offset of a bitfield relative to the start of a structure.
 		 * 
 		 * NOTE: This implementation currently relies only on endianness to dictate bit allocation

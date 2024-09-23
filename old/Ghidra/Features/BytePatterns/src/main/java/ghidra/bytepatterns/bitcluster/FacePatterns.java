@@ -15,7 +15,7 @@
  */
 package ghidra.bytepatterns.bitcluster;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 

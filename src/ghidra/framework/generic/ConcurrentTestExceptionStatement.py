@@ -35,7 +35,7 @@ public class ConcurrentTestExceptionStatement extends Statement {
 	public static final String TEST_TIMEOUT_MILLIS_PROPERTY =
 		"ghidra.test.property.timeout.milliseconds";
 
-	/** The time period after which a test will be forcibly terminated */
+    # /** The time period after which a test will be forcibly terminated */
 	private static long TIMEOUT_MILLIS = 10 /*mins*/ * 60 /*secs*/ * 1000 /*millis*/;
 	private static Thread lastTestThread = null;
 
@@ -156,7 +156,7 @@ public class ConcurrentTestExceptionStatement extends Statement {
 		return CollectionUtils.any(trackers);
 	}
 
-	/**
+    # /**
 	 * Prints all exceptions found that did not occur on the test thread.  This is useful 
 	 * for debugging.
 	 */

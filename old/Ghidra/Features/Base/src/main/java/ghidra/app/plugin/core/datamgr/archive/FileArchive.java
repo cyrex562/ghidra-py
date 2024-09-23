@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.datamgr.archive;
 
 import java.awt.Component;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.Objects;
 
 import javax.swing.Icon;

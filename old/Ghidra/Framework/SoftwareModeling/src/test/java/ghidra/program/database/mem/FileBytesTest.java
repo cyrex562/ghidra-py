@@ -17,7 +17,7 @@ package ghidra.program.database.mem;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.util.List;
 
 import org.junit.*;

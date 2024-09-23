@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.datamgr.editor;
 import static org.junit.Assert.*;
 
 import java.awt.*;
-import java.io.IOException;
+
 import java.util.concurrent.atomic.AtomicReference;
 
 import javax.swing.*;

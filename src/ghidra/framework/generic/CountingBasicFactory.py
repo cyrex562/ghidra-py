@@ -19,7 +19,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public abstract class CountingBasicFactory<T> implements BasicFactory<T> {
 
-	/**
+    # /**
 	 * A counter for tracking the number of items that have been created.
 	 */
 	protected AtomicInteger counter = new AtomicInteger();
@@ -36,7 +36,7 @@ public abstract class CountingBasicFactory<T> implements BasicFactory<T> {
 		doDispose(t);
 	}
 
-	/**
+    # /**
 	 * The method subclass use to create {@link T}s. 
 	 * 
 	 * @param itemNumber the number of the item being created--

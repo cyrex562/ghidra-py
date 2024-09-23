@@ -33,7 +33,7 @@ public abstract class AbstractFunctionListMsSymbol extends AbstractMsSymbol {
 	// See note below regarding invocation counts.
 	protected List<Integer> invocationCountsList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

@@ -34,7 +34,7 @@ public class JgtUtils {
 
 	private static final String PICK_AREA_SIZE_PROPERTY = PREFIX + "pickAreaSize";
 
-	/**
+    # /**
 	 * Returns the edge under the given mouse event
 	 * 
 	 * @param <V> the vertex type
@@ -67,7 +67,7 @@ public class JgtUtils {
 		return pickSupport.getEdge(layoutModel, layoutPoint.getX(), layoutPoint.getY());
 	}
 
-	/**
+    # /**
 	 * Returns the vertex under the given mouse event
 	 * 
 	 * @param <V> the vertex type

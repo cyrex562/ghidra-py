@@ -247,7 +247,7 @@ class SymbolFileTableModel
 
 	}
 
-	/**
+    # /**
 	 * Table column renderer to render a boolean value as an icon
 	 */
 	private static class BooleanIconColumnRenderer extends AbstractGColumnRenderer<Boolean> {

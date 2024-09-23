@@ -1,33 +1,33 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.address;
 
 
 # /**
- * Address class for dealing with (intel) segmented addresses.  The class itself is agnostic
- * about the mapping from segmented encoding to flat address offset, it uses the
- * SegmentedAddressSpace to perform this mapping. So the same class can be used to represent
- * either a real-mode address or a protected-mode address.  The class uses the underlying
- * offset field to hold the flat encoding.
- */
+# * Address class for dealing with (intel) segmented addresses.  The class itself is agnostic
+# * about the mapping from segmented encoding to flat address offset, it uses the
+# * SegmentedAddressSpace to perform this mapping. So the same class can be used to represent
+# * either a real-mode address or a protected-mode address.  The class uses the underlying
+# * offset field to hold the flat encoding.
+# */
 public class SegmentedAddress extends GenericAddress {
 
 	private final int segment;		// The specific segment value associated with this address
 
-	/**
+    # /**
 	 * Constructor for SegmentedAddress.
 	 * Offset is not validated against address space.
 	 * @param addrSpace is the address space for this address
@@ -38,7 +38,7 @@ public class SegmentedAddress extends GenericAddress {
 		segment = addrSpace.getDefaultSegmentFromFlat(flat);
 	}
 
-	/**
+    # /**
 	 * Constructor for SegmentedAddress.
 	 * @param addrSpace is the address space for this address
 	 * @param segment is the segment number
@@ -51,7 +51,7 @@ public class SegmentedAddress extends GenericAddress {
 		this.segment = segment;
 	}
 
-	/**
+    # /**
 	 * Constructor for SegmentedAddress.
 	 * @param addrSpace address space for this address
 	 * @param flat is the flat offset into the space
@@ -69,7 +69,7 @@ public class SegmentedAddress extends GenericAddress {
 		return addrSpace.getFlatOffset(seg, offset);
 	}
 
-	/**
+    # /**
 	 * Returns the segment value
 	 * @return int the segment value
 	 */
@@ -77,7 +77,7 @@ public class SegmentedAddress extends GenericAddress {
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the offset within the segment.
 	 * @return the offset value
 	 */
@@ -85,7 +85,7 @@ public class SegmentedAddress extends GenericAddress {
 		return (int) ((SegmentedAddressSpace) addrSpace).getOffsetFromFlat(offset, segment);
 	}
 
-	/**
+    # /**
 	 * Returns a new address that is equivalent to this address using
 	 * the given segment number.
 	 * @param seg the seqment value to normalize to.
@@ -99,7 +99,7 @@ public class SegmentedAddress extends GenericAddress {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Return a new segmented address. An attempt is made to normalize to this addresses segment.
 	 * @see ghidra.program.model.address.Address#getNewAddress(long)
 	 */
@@ -125,7 +125,7 @@ public class SegmentedAddress extends GenericAddress {
 		return getNewAddress(addrSpace.truncateOffset(addrOffset));
 	}
 
-	/**
+    # /**
 	 * Returns the String for the given value
 	 * @param value the value to convert to a string.
 	 * @return String the converted value string.
@@ -135,7 +135,7 @@ public class SegmentedAddress extends GenericAddress {
 		return zeros.substring(0, 4 - str.length()) + str;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.Address#toString(String)
 	 */
 	@Override
@@ -143,7 +143,7 @@ public class SegmentedAddress extends GenericAddress {
 		return prefix + getString(segment) + SEPARATOR_CHAR + getString(getSegmentOffset());
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.Address#getPhysicalAddress()
 	 */
 	@Override

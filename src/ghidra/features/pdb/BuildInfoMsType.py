@@ -48,7 +48,7 @@ public class BuildInfoMsType extends AbstractMsType {
 	private int count;
 	private List<RecordNumber> argsCodeItemRecordNumbers = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

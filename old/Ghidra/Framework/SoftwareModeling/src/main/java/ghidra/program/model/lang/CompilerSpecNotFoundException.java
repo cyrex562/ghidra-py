@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.lang;
 
-import java.io.IOException;
+
 
 /**
  * Exception class used when the named compiler spec cannot be found.

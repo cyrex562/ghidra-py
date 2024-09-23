@@ -293,7 +293,7 @@ class SymbolServerTableModel
 
 	}
 
-	/**
+    # /**
 	 * Table column renderer to render an enum value as a icon
 	 * 
 	 * @param <E> enum type

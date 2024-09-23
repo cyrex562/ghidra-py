@@ -32,7 +32,7 @@ public abstract class AbstractStreamEmuUnixFileHandle<T> implements EmuUnixFileD
 
 	private final T offset;
 
-	/**
+    # /**
 	 * Construct a new handle
 	 * 
 	 * @see AbstractEmuUnixSyscallUseropLibrary#createHandle(EmuUnixFile, int)

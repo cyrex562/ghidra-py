@@ -15,7 +15,7 @@
  */
 package sarif.export.data;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.List;
 
@@ -63,7 +63,7 @@ public class ExtIsfDataTypeWriter extends IsfDataTypeWriter {
 		data.add("functions", functions);
 	}
 	
-	/**
+    # /**
 	 * Writes the root type as ISF JSON using the underlying writer. For now, ignoring top-level
 	 * bit-fields and function defs as unsupported by ISF. Typedefs really deserve their own
 	 * category, but again unsupported.

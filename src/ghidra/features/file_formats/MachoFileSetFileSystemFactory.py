@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.fileset;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.app.util.opinion.MachoPrelinkUtils;

@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  */
 public class ThreadStorageSymbolInternals extends AbstractSymbolInternals {
 
-	/**
+    # /**
 	 * Factory for "32" version of ThreadStorageSymbolInternals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -43,7 +43,7 @@ public class ThreadStorageSymbolInternals extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "3216" version of ThreadStorageSymbolInternals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -61,7 +61,7 @@ public class ThreadStorageSymbolInternals extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "32St" version of ThreadStorageSymbolInternals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -84,7 +84,7 @@ public class ThreadStorageSymbolInternals extends AbstractSymbolInternals {
 	protected int segment;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 */
@@ -92,7 +92,7 @@ public class ThreadStorageSymbolInternals extends AbstractSymbolInternals {
 		super(pdb);
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -100,7 +100,7 @@ public class ThreadStorageSymbolInternals extends AbstractSymbolInternals {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -108,7 +108,7 @@ public class ThreadStorageSymbolInternals extends AbstractSymbolInternals {
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -116,7 +116,7 @@ public class ThreadStorageSymbolInternals extends AbstractSymbolInternals {
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

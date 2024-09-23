@@ -54,7 +54,7 @@ public class ExtensionInstaller {
 
 	private static final Logger log = LogManager.getLogger(ExtensionInstaller.class);
 
-	/**
+    # /**
 	 * Installs the given extension file. This can be either an archive (zip) or a directory that
 	 * contains an extension.properties file.
 	 *
@@ -108,7 +108,7 @@ public class ExtensionInstaller {
 		return success;
 	}
 
-	/**
+    # /**
 	 * Installs the given extension from its declared archive path
 	 * @param extension the extension
 	 * @return true if successful
@@ -138,7 +138,7 @@ public class ExtensionInstaller {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Compares the given extension version to the current Ghidra version.  If they are different,
 	 * then the user will be prompted to confirm the installation.   This method will return true
 	 * if the versions match or the user has chosen to install anyway.

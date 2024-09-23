@@ -27,14 +27,14 @@ import ghidra.asm.wild.WildOperandInfo;
  */
 public interface WildAssemblyResolvedPatterns extends AssemblyResolvedPatterns {
 
-	/**
+    # /**
 	 * The information for wildcarded operands in this instruction
 	 * 
 	 * @return the set of information
 	 */
 	Set<WildOperandInfo> getOperandInfo();
 
-	/**
+    # /**
 	 * Create a copy of this result with added wilcard information
 	 * 
 	 * @param wildcard see {@link WildOperandInfo}

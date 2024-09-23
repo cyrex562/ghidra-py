@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.constantpool;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -49,7 +49,7 @@ public class ConstantPoolUtf8Info extends AbstractConstantPoolInfoJava {
 		bytes = reader.readNextByteArray(getLength());
 	}
 
-	/**
+    # /**
 	 * The value of the length item gives the number of bytes in the bytes array
 	 * (not the length of the resulting string). The strings in the CONSTANT_Utf8_info
 	 * structure are not null-terminated.
@@ -59,7 +59,7 @@ public class ConstantPoolUtf8Info extends AbstractConstantPoolInfoJava {
 		return length & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The bytes array contains the bytes of the string. 
 	 * No byte may have the value (byte)0 or lie in the 
 	 * range (byte)0xf0 - (byte)0xff.
@@ -69,7 +69,7 @@ public class ConstantPoolUtf8Info extends AbstractConstantPoolInfoJava {
 		return bytes;
 	}
 
-	/**
+    # /**
 	 * TODO
 	 * Returns the byte array translated into a string.
 	 * @return the byte array translated into a string

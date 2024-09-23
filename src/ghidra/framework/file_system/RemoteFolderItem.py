@@ -15,7 +15,7 @@
  */
 package ghidra.framework.store.remote;
 
-import java.io.IOException;
+
 
 import ghidra.framework.client.RepositoryAdapter;
 import ghidra.framework.remote.RepositoryItem;

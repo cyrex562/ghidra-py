@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.dwarf.expression;
 import static ghidra.app.util.bin.format.dwarf.expression.DWARFExpressionOpCodes.*;
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 
 import org.junit.*;
 

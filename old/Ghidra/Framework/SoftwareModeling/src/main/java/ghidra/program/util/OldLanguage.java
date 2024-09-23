@@ -15,7 +15,7 @@
  */
 package ghidra.program.util;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.*;

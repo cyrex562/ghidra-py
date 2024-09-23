@@ -75,7 +75,7 @@ public class PluginConfigurationModel {
 		return pluginPackagingProvider.getPluginDescriptions(pluginPackage);
 	}
 
-	/**
+    # /**
 	 * Gets the loaded plugins from the tool and populates the loadedPluginMap and the
 	 * pluginsWithDependenciesSet.
 	 */
@@ -89,7 +89,7 @@ public class PluginConfigurationModel {
 		}
 	}
 
-	/**
+    # /**
 	 *  Find out all plugins that depend on a plugin and add them to the dependency set
 	 * @param plugin the plugin to check if other plugins depend on it.
 	 * @param plugins the list of all loaded plugins.
@@ -204,7 +204,7 @@ public class PluginConfigurationModel {
 		listener.call();
 	}
 
-	/**
+    # /**
 	 * Return whether the plugin corresponding to the given PluginDescription
 	 * has other plugins depending on a service it provides.
 	 * @param pluginDependency PluginDescription of the plugin
@@ -215,7 +215,7 @@ public class PluginConfigurationModel {
 		return pluginsWithDependenciesSet.contains(pluginDependency);
 	}
 
-	/**
+    # /**
 	 * Return the descriptions of the plugins that are dependent on some service that the plugin
 	 * corresponding to the given PluginDescription provides.
 	 *

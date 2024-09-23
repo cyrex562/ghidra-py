@@ -26,7 +26,7 @@ public final class FloatJavaProperty extends AbstractJavaProperty<Float> {
 		super(field, getter, setter);
 	}
 
-	/**
+    # /**
 	 * The method to be used as the fget value for a Python property.
 	 *
 	 * This method will be called by the Python property __get__ function.

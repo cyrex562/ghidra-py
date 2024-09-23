@@ -17,7 +17,7 @@ package ghidra.util.prop;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 
 import org.junit.Before;
 import org.junit.Test;

@@ -49,7 +49,7 @@ public class OptionalTable {
 	private int keyType = -1;		// Type of the key column
 	private int valueType = -1;		// Type of the value column
 
-	/**
+    # /**
 	 * Construct this table for a specific connection
 	 * @param nm is the formal SQL name of the table
 	 * @param kType is the type-code of the key (as specified in java.sql.Types)
@@ -75,7 +75,7 @@ public class OptionalTable {
 		return reusableStatement.prepareIfNeeded(() -> db.createStatement());
 	}
 
-	/**
+    # /**
 	 * Lock the table for writing
 	 * @throws SQLException if the server reports an error
 	 */
@@ -83,7 +83,7 @@ public class OptionalTable {
 		getReusableStatement().execute(LOCK_STMT);
 	}
 
-	/**
+    # /**
 	 * Given an sql type-code, return the sql type as a string (suitable for the CREATE TABLE command)
 	 * @param type is the type-code
 	 * @return the name of the type corresponding to the type-code
@@ -100,7 +100,7 @@ public class OptionalTable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Replace '#' character in the -ptr- command with our -name- and return the string
 	 * @param ptr is the string to be modified
 	 * @return the modified string
@@ -122,28 +122,28 @@ public class OptionalTable {
 		return res;
 	}
 
-	/**
+    # /**
 	 * @return the formal sql name of the table
 	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * @return type-code of key column
 	 */
 	public int getKeyType() {
 		return keyType;
 	}
 
-	/**
+    # /**
 	 * @return type-code of value column
 	 */
 	public int getValueType() {
 		return valueType;
 	}
 
-	/**
+    # /**
 	 * Free any resources and relinquish references to the connection
 	 */
 	public void close() {
@@ -155,7 +155,7 @@ public class OptionalTable {
 		db = null;				// We do not own the db
 	}
 
-	/**
+    # /**
 	 * Create this specific table in the database
 	 * @throws SQLException for problems with the connection
 	 */
@@ -170,7 +170,7 @@ public class OptionalTable {
 		st.executeUpdate(GRANT_STMT);
 	}
 
-	/**
+    # /**
 	 * Clear all rows from the table
 	 * @throws SQLException for problems with the connection
 	 */
@@ -178,7 +178,7 @@ public class OptionalTable {
 		getReusableStatement().executeUpdate(DELETE_ALL_STMT);
 	}
 
-	/**
+    # /**
 	 * Determine whether a given table exists in the database
 	 * @return true is the table exists
 	 * @throws SQLException for problems with the connection
@@ -193,7 +193,7 @@ public class OptionalTable {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Given a key, retrieve the corresponding value
 	 * @param key identifies the table row
 	 * @return the value corresponding to the key
@@ -212,7 +212,7 @@ public class OptionalTable {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Associate a new value with a given key
 	 * @param key identifies the table row
 	 * @param value is stored at that row
@@ -234,7 +234,7 @@ public class OptionalTable {
 		s.executeUpdate();
 	}
 
-	/**
+    # /**
 	 * Deletes the row corresponding to a given key
 	 * @param key identifies the table row
 	 * @throws SQLException for problems with the connection

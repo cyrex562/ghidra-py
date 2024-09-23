@@ -73,7 +73,7 @@ public class ConcurrentQBuilder<I, R> {
 	private TaskMonitor monitor = TaskMonitor.DUMMY;
 	private boolean cancelClearsAllJobs = true;
 
-	/**
+    # /**
 	 * Sets the queue to be used by the {@link ConcurrentQ}.  If you would like advanced features,
 	 * like a queue that blocks when too many items have been placed in it, then use an
 	 * advanced queue here, such as a {@link LinkedBlockingQueue}.
@@ -90,7 +90,7 @@ public class ConcurrentQBuilder<I, R> {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Specifies the maximum number of items that can be process at a time.
 	 * If this is set to 0, then the concurrent queue will attempt to execute as many
 	 * items at a time as there are threads in the given threadPool.  Setting
@@ -107,7 +107,7 @@ public class ConcurrentQBuilder<I, R> {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Sets the name to be used when creating a <b>private thread pool</b>.  If you wish to use
 	 * a <i>shared thread pool</i>, then you need to create that thread pool yourself and call
 	 * {@link #setThreadPool(GThreadPool)}.
@@ -121,7 +121,7 @@ public class ConcurrentQBuilder<I, R> {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Use the given thread pool for processing the work items.  If you do not care to configure
 	 * the thread pool used and you do not wish to make use of shared thread pools, then you
 	 * can call {@link #setThreadPoolName(String)} instead of this method.
@@ -135,7 +135,7 @@ public class ConcurrentQBuilder<I, R> {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Specifies if the concurrent queue should collect the results as items are processed
 	 * so they can be returned in a {@link ConcurrentQ#waitForResults()} or
 	 * {@link ConcurrentQ#waitForNextResult()} call.
@@ -147,7 +147,7 @@ public class ConcurrentQBuilder<I, R> {
 		return this;
 	}
 
-	/**
+    # /**
 	 * True signals that the jobs run by the client wish to report progress.  The default value
 	 * is false.
 	 * <p>
@@ -178,7 +178,7 @@ public class ConcurrentQBuilder<I, R> {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Sets whether a cancel will clear all jobs (current and pending) or just the
 	 * current jobs being processed.  The default value is {@code true}.
 	 *
@@ -193,7 +193,7 @@ public class ConcurrentQBuilder<I, R> {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Builds the final {@link ConcurrentQ}.
 	 * 
 	 * @param callback the callback for processing each job

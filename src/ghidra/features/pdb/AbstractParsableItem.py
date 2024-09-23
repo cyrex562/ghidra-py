@@ -21,7 +21,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
  */
 public abstract class AbstractParsableItem {
 
-	/**
+    # /**
 	 * Emits {@link String} output of this class into the provided {@link StringBuilder}.
 	 * @param builder The {@link StringBuilder} into which the output is created.
 	 */

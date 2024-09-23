@@ -39,7 +39,7 @@ public class CreateManualMatchAction extends AbstractCreateManualMatchAction {
 
 	public static final Icon ICON = new GIcon("icon.version.tracking.action.create.manual.match");
 
-	/**
+    # /**
 	 * Creates a manual match action.
 	 * @param controller the controller for the version tracking session.
 	 */

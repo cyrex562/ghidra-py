@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.NoSuchElementException;
@@ -21,8 +21,8 @@ import ghidra.docking.settings.EnumSettingsDefinition;
 import ghidra.docking.settings.Settings;
 
 # /**
- * The settings definition for the numeric display format
- */
+# * The settings definition for the numeric display format
+# */
 public class PointerTypeSettingsDefinition
 		implements EnumSettingsDefinition, TypeDefSettingsDefinition {
 
@@ -40,7 +40,7 @@ public class PointerTypeSettingsDefinition
 	private PointerTypeSettingsDefinition() {
 	}
 
-	/**
+    # /**
 	 * Returns the format based on the specified settings
 	 * @param settings the instance settings or null for default value.
 	 * @return the {@link PointerType}.  {@link PointerType#DEFAULT} will be returned
@@ -142,7 +142,7 @@ public class PointerTypeSettingsDefinition
 		return choices[getChoice(settings)];
 	}
 
-	/**
+    # /**
 	 * Sets the settings object to the enum value indicating the specified choice as a string.
 	 * @param settings the settings to store the value.
 	 * @param choice enum string representing a choice in the enum.

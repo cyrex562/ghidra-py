@@ -27,7 +27,7 @@ import ghidra.program.model.reloc.RelocationResult;
 public class MSP430_ElfRelocationHandler
 		extends AbstractElfRelocationHandler<MSP430_ElfRelocationType, ElfRelocationContext<?>> {
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public MSP430_ElfRelocationHandler() {

@@ -31,7 +31,7 @@ public interface DomainFileFilter {
      */
     public boolean accept(DomainFile df);
 
-	/**
+    # /**
 	 * Determine if linked folders represented by a link-file should be followed.
 	 * If this method is not implemented the default will return {@code true}.
 	 * @return true if linked-folders should be followed or false to ignore.

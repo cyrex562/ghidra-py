@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.swift;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.format.swift.SwiftTypeMetadata;
@@ -37,7 +37,7 @@ public class SwiftDemangler implements Demangler {
 	private SwiftTypeMetadata typeMetadata;
 	private SwiftNativeDemangler nativeDemangler;
 
-	/**
+    # /**
 	 * Creates a new {@link SwiftDemangler} that is not associated with any {@link Program}.
 	 * Call {@link #initialize(Program)} to associate it with a program, which will enable access
 	 * to the Swift type metadata.
@@ -52,7 +52,7 @@ public class SwiftDemangler implements Demangler {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link SwiftDemangler} that is associated with the given {@link Program}
 	 * 
 	 * @param program The {@link Program} to demangle
@@ -111,7 +111,7 @@ public class SwiftDemangler implements Demangler {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get a new {@link Demangled} by demangling the given mangled string
 	 * 
 	 * @param mangled The mangled string
@@ -143,7 +143,7 @@ public class SwiftDemangler implements Demangler {
 		return demangled;
 	}
 
-	/**
+    # /**
 	 * Gets the {@link SwiftTypeMetadata}
 	 * 
 	 * @return The {@link SwiftTypeMetadata}, or null if it is not available
@@ -152,7 +152,7 @@ public class SwiftDemangler implements Demangler {
 		return typeMetadata;
 	}
 
-	/**
+    # /**
 	 * Checks to see whether the given symbol name is a mangled Swift symbol
 	 * 
 	 * @param symbolName The symbol name to check
@@ -163,7 +163,7 @@ public class SwiftDemangler implements Demangler {
 		return prefixes.stream().anyMatch(prefix -> symbolName.startsWith(prefix));
 	}
 
-	/**
+    # /**
 	 * Gets the {@link SwiftDemanglerOptions} from the given {@link DemanglerOptions}
 	 * 
 	 * @param opt The options
@@ -178,7 +178,7 @@ public class SwiftDemangler implements Demangler {
 		return (SwiftDemanglerOptions) opt;
 	}
 
-	/**
+    # /**
 	 * Ensures that this demangler has access to a {@link SwiftNativeDemangler}
 	 * 
 	 * @param options The options

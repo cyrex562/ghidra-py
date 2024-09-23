@@ -16,7 +16,7 @@
 package utility.module;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.nio.file.*;
 import java.util.*;
 import java.util.function.Predicate;
@@ -39,13 +39,13 @@ public class ModuleUtilities {
 	public static final String MANIFEST_FILE_NAME_UNINSTALLED = "Module.manifest.uninstalled";
 	public static final String MODULE_LIST = "MODULE_LIST";
 
-	/**
+    # /**
 	 * How many directories deep to look for module directories, starting from an application root
 	 * directory. For example, 3 would pick up modules as deep as: root/category/category/module
 	 */
 	private static final int MAX_MODULE_DEPTH = 3;
 
-	/**
+    # /**
 	 * Checks if the given directory is a module.
 	 *
 	 * @param dir the directory to check.
@@ -55,7 +55,7 @@ public class ModuleUtilities {
 		return new ResourceFile(dir, MANIFEST_FILE_NAME).exists();
 	}
 
-	/**
+    # /**
 	 * Returns true if the given path is a module root directory.
 	 *
 	 * @param path the path to check
@@ -71,7 +71,7 @@ public class ModuleUtilities {
 		return new File(file, MANIFEST_FILE_NAME).exists();
 	}
 
-	/**
+    # /**
 	 * Searches the given root directory for module root directories.  Adds any discovered module
 	 * root directories to the given collection.
 	 *
@@ -112,7 +112,7 @@ public class ModuleUtilities {
 		return moduleRootDirs;
 	}
 
-	/**
+    # /**
 	 * Searches the given root directories for module root directories.  Adds any discovered module
 	 * root directories to the returned collection.
 	 *
@@ -127,7 +127,7 @@ public class ModuleUtilities {
 		return findModuleRootDirectories(rootDirs, new ArrayList<>());
 	}
 
-	/**
+    # /**
 	 * Searches the given root directories for module root directories.  Adds any discovered module
 	 * root directories to the given collection.
 	 *
@@ -143,7 +143,7 @@ public class ModuleUtilities {
 		return moduleRootDirs;
 	}
 
-	/**
+    # /**
 	 * Searches the given jar root directory for module root directories.  Uses a "module list"
 	 * file to locate the module root directories. Adds any discovered module root directories
 	 * to the given collection.
@@ -162,7 +162,7 @@ public class ModuleUtilities {
 		return moduleRootDirs;
 	}
 
-	/**
+    # /**
 	 * Searches for modules in a given collection of module root directories.
 	 *
 	 * @param appRootDirs The collection of application root directories associated with the the given
@@ -177,7 +177,7 @@ public class ModuleUtilities {
 		return findModules(appRootDirs, moduleRootDirs, allModules);
 	}
 
-	/**
+    # /**
 	 * Searches for modules in a given collection of module root directories.
 	 *
 	 * @param appRootDirs The collection of application root directories associated with the the given
@@ -213,7 +213,7 @@ public class ModuleUtilities {
 		return Collections.unmodifiableMap(map);
 	}
 
-	/**
+    # /**
 	 * Gets the library directories from the given modules.
 	 * <p>
 	 * In {@link SystemUtilities#isInReleaseMode() release mode}, we expect these directories to
@@ -239,7 +239,7 @@ public class ModuleUtilities {
 		return libraryDirectories;
 	}
 
-	/**
+    # /**
 	 * Gets the directory locations of the .class files and resources from the given modules.
 	 *
 	 * @param modules The modules to get the compiled .class and resources directories of.
@@ -255,7 +255,7 @@ public class ModuleUtilities {
 		return binDirectories;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given path is parented by a module root directory.
 	 * <p>
 	 * For example, given a module path of <code>/some/dir/features/cool_module/</code>, then this
@@ -279,7 +279,7 @@ public class ModuleUtilities {
 		return getModule(pathName) != null;
 	}
 
-	/**
+    # /**
 	 * Returns the path of the module containing the given path string, if it is parented by a
 	 * module root directory.
 	 * <p>
@@ -321,7 +321,7 @@ public class ModuleUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a file that is the root folder of the repository containing the given file.  'Root'
 	 * here means a folder that contains a repository folder.  As an example, given a repo
 	 * structure of:
@@ -362,7 +362,7 @@ public class ModuleUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns a file that is the repository folder containing the given file.  As an example,
 	 * given a repo structure of:
 	 *
@@ -388,7 +388,7 @@ public class ModuleUtilities {
 		return findRepo(f.getParentFile());
 	}
 
-	/**
+    # /**
 	 * Checks to see if the given {@link GModule module} is external to the Ghidra installation
 	 * directory
 	 *
@@ -405,7 +405,7 @@ public class ModuleUtilities {
 				.anyMatch(dir -> FileUtilities.isPathContainedWithin(dir, moduleRootDir));
 	}
 
-	/**
+    # /**
 	 * Returns true if the given module has been uninstalled.  
 	 * @param path the module path to check
 	 * @return true if uninstalled
@@ -414,7 +414,7 @@ public class ModuleUtilities {
 		return isUninstalled(new File(path));
 	}
 
-	/**
+    # /**
 	 * Returns true if the given module has been uninstalled.  
 	 * @param dir the module dir to check
 	 * @return true if uninstalled
@@ -423,7 +423,7 @@ public class ModuleUtilities {
 		return new File(dir, MANIFEST_FILE_NAME_UNINSTALLED).exists();
 	}
 
-	/**
+    # /**
 	 * Returns true if the given module has been uninstalled.  
 	 * @param dir the module dir to check
 	 * @return true if uninstalled

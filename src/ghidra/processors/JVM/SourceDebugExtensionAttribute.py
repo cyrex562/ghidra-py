@@ -20,7 +20,7 @@ import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 # /**
  * NOTE: THE FOLLOWING TEXT EXTRACTED FROM JVMS7.PDF
@@ -49,7 +49,7 @@ public class SourceDebugExtensionAttribute extends AbstractAttributeInfo {
 		debugExtension = reader.readNextByteArray( getAttributeLength() );
 	}
 
-	/**
+    # /**
 	 * The debug_extension array holds extended debugging information which has
 	 * no semantic effect on the Java virtual machine. The information is represented
 	 * using a modified UTF-8 string with no terminating zero byte.

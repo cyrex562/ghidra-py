@@ -19,7 +19,7 @@ import ghidra.graph.*;
 import ghidra.graph.jung.JungDirectedGraph;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import utilities.util.FileUtilities;

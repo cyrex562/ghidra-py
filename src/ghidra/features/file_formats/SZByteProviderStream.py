@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.sevenzip;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import net.sf.sevenzipjbinding.IInStream;

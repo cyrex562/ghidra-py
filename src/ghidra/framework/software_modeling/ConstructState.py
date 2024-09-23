@@ -99,7 +99,7 @@ public class ConstructState {
 		this.offset = off;
 	}
 
-	/**
+    # /**
 	 * Used for testing and diagnostics: list the constructor line numbers used to resolve this
 	 * encoding
 	 * 

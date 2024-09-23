@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 
@@ -58,7 +58,7 @@ abstract class CodeUnitDB extends DatabaseObject implements CodeUnit, ProcessorC
 	private ProgramContext programContext;
 	protected Lock lock;
 
-	/**
+    # /**
 	 * Construct a new CodeUnitDB
 	 * @param codeMgr code manager that created this codeUnit.
 	 * @param cache CodeUnitDB cache
@@ -95,7 +95,7 @@ abstract class CodeUnitDB extends DatabaseObject implements CodeUnit, ProcessorC
 		return !hasBeenDeleted(record);
 	}
 
-	/**
+    # /**
 	 * Check this code units validity when the lock/checkIsValid is not used and refresh if necessary.
 	 */
 	protected void refreshIfNeeded() {
@@ -110,7 +110,7 @@ abstract class CodeUnitDB extends DatabaseObject implements CodeUnit, ProcessorC
 		}
 	}
 
-	/**
+    # /**
 	 * Perform any refresh necessary and determine if this code unit has been deleted.
 	 * If a record has been provided, it may be used to facilitate a refresh without
 	 * performing a record query from the database
@@ -126,7 +126,7 @@ abstract class CodeUnitDB extends DatabaseObject implements CodeUnit, ProcessorC
 		refMgr.addMemoryReference(address, refAddr, refType, sourceType, MNEMONIC);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnit#addOperandReference(int,
 	 *      ghidra.program.model.address.Address,
 	 *      ghidra.program.model.symbol.RefType, SourceType)
@@ -753,7 +753,7 @@ abstract class CodeUnitDB extends DatabaseObject implements CodeUnit, ProcessorC
 		return (addr == cu.addr) && codeMgr == cu.codeMgr;
 	}
 
-	/**
+    # /**
 	 * Returns a string that represents this code unit with default markup.
 	 * Only the mnemonic and operands are included.
 	 */

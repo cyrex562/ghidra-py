@@ -20,7 +20,7 @@ import ghidra.program.database.map.AddressMap;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressIterator;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

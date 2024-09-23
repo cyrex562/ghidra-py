@@ -18,7 +18,7 @@ package ghidra.pty.ssh;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assume.assumeFalse;
 
-import java.io.*;
+
 
 import org.junit.Before;
 import org.junit.Test;

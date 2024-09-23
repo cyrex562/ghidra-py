@@ -267,7 +267,7 @@ public class LRUMap<K, V> implements Map<K, V> {
 		return map.size() > cacheSize;
 	}
 
-	/**
+    # /**
 	 * This is called after an item has been removed from the cache.
 	 * @param eldest the item being removed
 	 */

@@ -68,7 +68,7 @@ public class AttributedToolTipInfo extends ToolTipInfo<Attributed> {
 		// this graph display does not have a notion of emphasizing
 	}
 
-	/**
+    # /**
 	 * Returns the tool tip for the graphObject this object manages
 	 * @return  the tool tip for the graphObject this object manages
 	 */

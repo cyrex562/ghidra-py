@@ -19,7 +19,7 @@ import static ghidra.app.util.bin.format.dwarf.line.DWARFLineNumberExtendedOpcod
 import static ghidra.app.util.bin.format.dwarf.line.DWARFLineNumberStandardOpcodes.*;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

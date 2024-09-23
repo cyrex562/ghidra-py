@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-import java.io.*;
+
 
 public class StringIngest implements ByteIngest {
 

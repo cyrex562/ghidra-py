@@ -28,7 +28,7 @@ public class UnknownX1166MsSymbol extends AbstractUnknownMsSymbol {
 
 	private byte[] data;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -43,7 +43,7 @@ public class UnknownX1166MsSymbol extends AbstractUnknownMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the data of this symbol (we do not know how to interpret it yet).
 	 * @return {@code byte[]} data.
 	 */

@@ -33,13 +33,13 @@ public class AddressSet implements AddressSetView {
 	private RedBlackEntry<Address, Address> lastNode;
 	private long addressCount = 0;
 
-	/**
+    # /**
 	 * Create a new empty Address Set.
 	 */
 	public AddressSet() {
 	}
 
-	/**
+    # /**
 	 * Create a new Address Set from an address range.
 	 * @param range the range of addresses to include in this set.
 	 */
@@ -47,7 +47,7 @@ public class AddressSet implements AddressSetView {
 		add(range);
 	}
 
-	/**
+    # /**
 	 * Creates a new Address set containing a single range
 	 * The specified start and end addresses must form a valid range within
 	 * a single {@link AddressSpace}.
@@ -61,7 +61,7 @@ public class AddressSet implements AddressSetView {
 		addRange(start, end);
 	}
 
-	/**
+    # /**
 	 * Creates a new Address set containing a single range.
 	 * Use of this method is generally discouraged since the set of addresses between a start and
 	 * end address not contained within the same {@link AddressSpace} may be contain unexpected 
@@ -78,7 +78,7 @@ public class AddressSet implements AddressSetView {
 		addRange(program, start, end);
 	}
 
-	/**
+    # /**
 	 * Create a new Address Set from an existing Address Set.
 	 * @param set Existing Address Set to clone.
 	 */
@@ -86,7 +86,7 @@ public class AddressSet implements AddressSetView {
 		add(set);
 	}
 
-	/**
+    # /**
 	 * Create a new Address containing a single address.
 	 * @param addr the address to be included in this address set.
 	 */
@@ -94,7 +94,7 @@ public class AddressSet implements AddressSetView {
 		this(addr, addr);
 	}
 
-	/**
+    # /**
 	 * Adds the given address to this set.
 	 * @param address the address to add
 	 */
@@ -102,7 +102,7 @@ public class AddressSet implements AddressSetView {
 		this.addRange(address, address);
 	}
 
-	/**
+    # /**
 	 * Add an address range to this set.
 	 * @param range the range to add.
 	 */
@@ -113,7 +113,7 @@ public class AddressSet implements AddressSetView {
 		add(range.getMinAddress(), range.getMaxAddress());
 	}
 
-	/**
+    # /**
 	 * Adds the range to this set
 	 * @param start the start address of the range to add
 	 * @param end the end address of the range to add
@@ -172,7 +172,7 @@ public class AddressSet implements AddressSetView {
 
 	}
 
-	/**
+    # /**
 	 * Adds the range to this set
 	 * @param start the start address of the range to add
 	 * @param end the end address of the range to add
@@ -183,7 +183,7 @@ public class AddressSet implements AddressSetView {
 		add(start, end);
 	}
 
-	/**
+    # /**
 	 * Adds a range of addresses to this set.
 	 * @param program program whose AddressFactory is used to resolve address ranges that span
 	 * multiple address spaces.
@@ -199,7 +199,7 @@ public class AddressSet implements AddressSetView {
 		add(addressFactory.getAddressSet(start, end));
 	}
 
-	/**
+    # /**
 	 * Add all addresses of the given AddressSet to this set.
 	 * @param addressSet set of addresses to add.
 	 */
@@ -223,7 +223,7 @@ public class AddressSet implements AddressSetView {
 		}
 	}
 
-	/**
+    # /**
 	 * Deletes an address range from this set.
 	 * @param range AddressRange to remove from this set
 	 */
@@ -231,7 +231,7 @@ public class AddressSet implements AddressSetView {
 		deleteRange(range.getMinAddress(), range.getMaxAddress());
 	}
 
-	/**
+    # /**
 	 * Deletes a range of addresses from this set
 	 * @param start the starting address of the range to be removed
 	 * @param end the ending address of the range to be removed (inclusive)
@@ -293,7 +293,7 @@ public class AddressSet implements AddressSetView {
 
 	}
 
-	/**
+    # /**
 	 * Deletes a range of addresses from this set
 	 * @param start the starting address of the range to be removed
 	 * @param end the ending address of the range to be removed
@@ -302,7 +302,7 @@ public class AddressSet implements AddressSetView {
 		delete(start, end);
 	}
 
-	/**
+    # /**
 	 * Delete all addresses in the given AddressSet from this set.
 	 * @param addressSet set of addresses to remove from this set.
 	 */
@@ -327,7 +327,7 @@ public class AddressSet implements AddressSetView {
 		}
 	}
 
-	/**
+    # /**
 	 * Removes all addresses from the set.
 	 */
 	public void clear() {
@@ -336,7 +336,7 @@ public class AddressSet implements AddressSetView {
 		addressCount = 0;
 	}
 
-	/**
+    # /**
 	 * Returns a string displaying the ranges in this set.
 	 * @return a string displaying the ranges in this set.
 	 */
@@ -357,7 +357,7 @@ public class AddressSet implements AddressSetView {
 		return buffy.toString();
 	}
 
-	/**
+    # /**
 	 * Returns a list of the AddressRanges in this set.
 	 * @return  a list of the AddressRanges in this set.
 	 */
@@ -725,7 +725,7 @@ public class AddressSet implements AddressSetView {
 	//			M -> this
 	//			N -> that
 
-	/**
+    # /**
 	 * Determines if the optimal algorithm for an operation.  Generally set operations can be done
 	 * either by applying each range of the given address set to this set OR by linearly visiting
 	 * each range in both this set and the other set.  The first approach involves doing a
@@ -1318,7 +1318,7 @@ public class AddressSet implements AddressSetView {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Delete all addresses from the minimum address in the set up to and including toAddr.
 	 * Addresses less-than-or-equal to specified 
 	 * address based upon {@link Address} comparison.
@@ -1336,7 +1336,7 @@ public class AddressSet implements AddressSetView {
 		delete(getMinAddress(), toAddr);
 	}
 
-	/**
+    # /**
 	 * Delete all addresses starting at the fromAddr to the maximum address in the set.
 	 * Addresses greater-than-or-equal to specified 
 	 * address based upon {@link Address} comparison.

@@ -16,7 +16,7 @@
 //Script to allow repository admins the ability to terminate multiple file checkouts belonging to a single user.
 //@category MultiUser
 
-import java.io.IOException;
+
 
 import docking.widgets.OptionDialog;
 import ghidra.app.script.GhidraScript;

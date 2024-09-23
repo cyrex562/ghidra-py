@@ -36,14 +36,14 @@ public class RangeMap {
 	IntValueMap map;
 	int defaultValue;
 	
-	/**
+    # /**
 	 * Constructor for RangeMap with a default value of 0.
 	 */
 	public RangeMap() {
 		this(0);
 	}
 	
-	/**
+    # /**
 	 * Creates a new range map with spcified default value.
 	 * @param defaultValue the default value
 	 */
@@ -53,7 +53,7 @@ public class RangeMap {
 		map.putInt(0, defaultValue);		
 	}
 	
-	/**
+    # /**
 	 * Get the total number of ranges in map.
 	 * @return number of ranges
 	 */
@@ -61,7 +61,7 @@ public class RangeMap {
 		return map.getSize();
 	}
 
-	/**
+    # /**
 	 * Clears all current values from the range map and resets the default value.
 	 */
 	public void clear() {
@@ -69,7 +69,7 @@ public class RangeMap {
 		map.putInt(0,defaultValue);
 	}
 	
-	/**
+    # /**
 	 * Associates the given value with every index from start to end (inclusive)
 	 * Any previous associates are overwritten.
 	 * @param start the start index of the range to fill.
@@ -110,7 +110,7 @@ public class RangeMap {
 		}			
 	}
 
-	/**
+    # /**
 	 * Returns the int value associated with the given index.
 	 * @param index the index at which to get the value.
 	 */
@@ -131,7 +131,7 @@ public class RangeMap {
 		return 0;
 	}
 	
-	/**
+    # /**
 	 * Returns the value range containing the given index. The value range indicates
 	 * the int value and the start and end index for the range.
 	 * @param index the index at which to get the associated value range
@@ -161,7 +161,7 @@ public class RangeMap {
 		return new ValueRange(start, end, value);
 	}
 	
-	/**
+    # /**
 	 * Returns an iterator over all occupied ranges in the map.
 	 * @param index the index to start the iterator
 	 * @return an iterator over all occupied ranges in the map.
@@ -170,7 +170,7 @@ public class RangeMap {
 		return new PropertySetIndexRangeIterator(map, index);
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all indexes where the value changes.
 	 * @param start the starting index to search.
 	 * @param end the ending index to search.

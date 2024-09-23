@@ -75,7 +75,7 @@ public abstract class AbstractSwingUpdateManager {
 	// Swing thread, but is read by other threads.
 	protected boolean isWorking;
 
-	/**
+    # /**
 	 * Constructs a new SwingUpdateManager with default values for min and max delay.  See
 	 * {@link #DEFAULT_MIN_DELAY} and {@value #DEFAULT_MAX_DELAY}.
 	 */
@@ -83,7 +83,7 @@ public abstract class AbstractSwingUpdateManager {
 		this(DEFAULT_MIN_DELAY, DEFAULT_MAX_DELAY);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AbstractSwingUpdateManager
 	 * <p>
 	 * <b>Note: </b>The <code>minDelay</code> will always be at least {@link #MIN_DELAY_FLOOR}, 
@@ -96,7 +96,7 @@ public abstract class AbstractSwingUpdateManager {
 		this(minDelay, DEFAULT_MAX_DELAY);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AbstractSwingUpdateManager
 	 * <p>
 	 * <b>Note: </b>The <code>minDelay</code> will always be at least {@link #MIN_DELAY_FLOOR}, 
@@ -110,7 +110,7 @@ public abstract class AbstractSwingUpdateManager {
 		this(minDelay, maxDelay, DEFAULT_NAME);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AbstractSwingUpdateManager
 	 * <p>
 	 * <b>Note: </b>The <code>minDelay</code> will always be at least {@link #MIN_DELAY_FLOOR}, 
@@ -133,12 +133,12 @@ public abstract class AbstractSwingUpdateManager {
 		instances.add(this);
 	}
 
-	/**
+    # /**
 	 * The subclass callback to perform work.
 	 */
 	protected abstract void swingDoWork();
 
-	/**
+    # /**
 	 * Signals to perform an update.  See the class header for the usage of the various
 	 * update methods.
 	 */
@@ -151,7 +151,7 @@ public abstract class AbstractSwingUpdateManager {
 		Swing.runLater(this::checkForWork);
 	}
 
-	/**
+    # /**
 	 * Signals to perform an update.  See the class header for the usage of the various
 	 * update methods.
 	 */
@@ -165,7 +165,7 @@ public abstract class AbstractSwingUpdateManager {
 		scheduleCheckForWork();
 	}
 
-	/**
+    # /**
 	 * Signals to perform an update.  See the class header for the usage of the various
 	 * update methods.
 	 */
@@ -183,7 +183,7 @@ public abstract class AbstractSwingUpdateManager {
 		Swing.runNow(this::checkForWork);
 	}
 
-	/**
+    # /**
 	 * Causes this run manager to run if it has a pending update
 	 */
 	public void flush() {
@@ -204,7 +204,7 @@ public abstract class AbstractSwingUpdateManager {
 		Swing.runNow(this::checkForWork);
 	}
 
-	/**
+    # /**
 	 * Signals to stop any buffered work.   This will not stop any in-progress work.
 	 */
 	public synchronized void stop() {
@@ -217,7 +217,7 @@ public abstract class AbstractSwingUpdateManager {
 		bufferingStartTime = NONE;
 	}
 
-	/**
+    # /**
 	 * Returns true if there is a pending request that hasn't started yet.  Any currently
 	 * executing requests will not affect this call.
 	 *
@@ -231,7 +231,7 @@ public abstract class AbstractSwingUpdateManager {
 		return requestTime != NONE;
 	}
 
-	/**
+    # /**
 	 * Returns true if any work is being performed or if there is buffered work
 	 * @return true if any work is being performed or if there is buffered work
 	 */

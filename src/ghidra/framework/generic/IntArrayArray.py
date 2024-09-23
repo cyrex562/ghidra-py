@@ -208,7 +208,7 @@ public class IntArrayArray implements Array, Serializable {
         ints = newInts;
     }
 
-	/**
+    # /**
 	 * @see ghidra.util.datastruct.Array#getLastNonEmptyIndex()
 	 */
     public int getLastNonEmptyIndex() {

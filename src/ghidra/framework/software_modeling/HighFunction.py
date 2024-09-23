@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,11 +33,11 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- *
- *
- * High-level abstraction associated with a low level function made up of assembly instructions.
- * Based on information the decompiler has produced after working on a function.
- */
+# *
+# *
+# * High-level abstraction associated with a low level function made up of assembly instructions.
+# * Based on information the decompiler has produced after working on a function.
+# */
 public class HighFunction extends PcodeSyntaxTree {
 	public final static String DECOMPILER_TAG_MAP = "decompiler_tags";
 	public final static String OVERRIDE_NAMESPACE_NAME = "override";
@@ -52,7 +52,7 @@ public class HighFunction extends PcodeSyntaxTree {
 	private List<DataTypeSymbol> protoOverrides;
 	private Address entryPoint;
 
-	/**
+    # /**
 	 * @param function  function associated with the higher level function abstraction.
 	 * @param language  description of the processor language of the function
 	 * @param compilerSpec description of the compiler that produced the function
@@ -73,14 +73,14 @@ public class HighFunction extends PcodeSyntaxTree {
 		protoOverrides = null;
 	}
 
-	/**
+    # /**
 	 * @return get the associated low level function
 	 */
 	public Function getFunction() {
 		return func;
 	}
 
-	/**
+    # /**
 	 * Get the id with the associated function symbol, if it exists.
 	 * Otherwise return a dynamic id based on the entry point.
 	 * @return the symbol id, or possibly a dynamic id
@@ -92,7 +92,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		return func.getProgram().getSymbolTable().getDynamicSymbolID(entryPoint);
 	}
 
-	/**
+    # /**
 	 * @return get the language parser used to disassemble
 	 */
 	public Language getLanguage() {
@@ -103,14 +103,14 @@ public class HighFunction extends PcodeSyntaxTree {
 		return compilerSpec;
 	}
 
-	/**
+    # /**
 	 * @return the function prototype for the function (how things are passed/returned)
 	 */
 	public FunctionPrototype getFunctionPrototype() {
 		return proto;
 	}
 
-	/**
+    # /**
 	 * @return an array of jump table definitions found for this function decompilation
 	 */
 	public JumpTable[] getJumpTables() {
@@ -121,14 +121,14 @@ public class HighFunction extends PcodeSyntaxTree {
 		return jumpTables.toArray(res);
 	}
 
-	/**
+    # /**
 	 * @return the local variable map describing the defined local variables
 	 */
 	public LocalSymbolMap getLocalSymbolMap() {
 		return localSymbols;
 	}
 
-	/**
+    # /**
 	 * @return a map describing global variables accessed by this function
 	 */
 	public GlobalSymbolMap getGlobalSymbolMap() {
@@ -144,7 +144,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		return localSymbols.getSymbol(symbolId);
 	}
 
-	/**
+    # /**
 	 * Populate the information for the HighFunction from the information in the
 	 * Function object.
 	 *
@@ -161,7 +161,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		grabOverrides();
 	}
 
-	/**
+    # /**
 	 * Check the symbol space for objects that indicate specific overrides to decompiler analysis:
 	 *      a) switch flow
 	 */
@@ -293,7 +293,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		decoder.closeElement(start);
 	}
 
-	/**
+    # /**
 	 * Decode the Jump Table list for this function from the stream
 	 *
 	 * @param decoder is the stream decoder
@@ -330,7 +330,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		return pcaddr;
 	}
 
-	/**
+    # /**
 	 * If a HighVariable consists of more than one (forced) merge group, split out the group
 	 * that contains vn as a separate HighVariable. Otherwise just return the original high.
 	 * @param high is the HighVariable to split
@@ -415,7 +415,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		}
 	}
 
-	/**
+    # /**
 	 * Encode this HighFunction to a stream. The size describes how many bytes starting from the
 	 * entry point are used by the function, but this doesn't need to be strictly accurate as it
 	 * is only used to associate the function with addresses near its entry point.
@@ -574,7 +574,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		return res;
 	}
 
-	/**
+    # /**
 	 * The decompiler treats some namespaces as equivalent to the "global" namespace.
 	 * Return true if the given namespace is treated as equivalent.
 	 * @param namespace is the namespace
@@ -587,7 +587,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Encode &lt;parent&gt; element to the stream describing the formal path elements
 	 * from the root (global) namespace up to the given namespace
 	 * @param encoder is the stream encoder
@@ -626,7 +626,7 @@ public class HighFunction extends PcodeSyntaxTree {
 		encoder.closeElement(ELEM_PARENT);
 	}
 
-	/**
+    # /**
 	 * @param tagname -- Name of tag to search for
 	 * @param doc -- String through which to search for tags
 	 * @return all characters between beginning and ending XML tags, excluding tags themselves

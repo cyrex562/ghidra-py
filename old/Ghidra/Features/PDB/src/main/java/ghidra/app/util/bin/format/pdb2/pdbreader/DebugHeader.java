@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 
 /**
  * Debug header for various, yet-to-be-determined debug structures.  {@link RvaVaDebugHeader}, an

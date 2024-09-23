@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -33,8 +33,8 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Class to manage namespaces.
- */
+# * Class to manage namespaces.
+# */
 
 public class NamespaceManager implements ManagerDB {
 	private static final String NAMESPACE_MAP_NAME = "SCOPE ADDRESSES";
@@ -47,7 +47,7 @@ public class NamespaceManager implements ManagerDB {
 	private Namespace lastBodyNamespace;
 	private AddressSet lastBody;
 
-	/**
+    # /**
 	 * Construct a new namespace manager.
 	 * @param handle the database handle.
 	 * @param errHandler the error handler.
@@ -113,7 +113,7 @@ public class NamespaceManager implements ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Get the global namespace.
 	 * @return global namespace
 	 */
@@ -121,7 +121,7 @@ public class NamespaceManager implements ManagerDB {
 		return globalNamespace;
 	}
 
-	/**
+    # /**
 	 * Sets the body of a namespace.
 	 * @param namespace the namespace whose body is to be modified.
 	 * @param set the address set for the new body.
@@ -159,7 +159,7 @@ public class NamespaceManager implements ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Removes any associated body with the given namespace.
 	 * @param namespace the namespace whose body is to be cleared.
 	 * @return old body
@@ -181,7 +181,7 @@ public class NamespaceManager implements ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the Namespace containing the given address. If the address is not
 	 * in a defined namespace (e.g., Function), the global namespace is
 	 * returned.
@@ -203,7 +203,7 @@ public class NamespaceManager implements ManagerDB {
 		return globalNamespace;
 	}
 
-	/**
+    # /**
 	 * Checks if an existing namespace's address set intersects with
 	 * the given set. If so, return the first overlapping range.
 	 * @param set address set to check for intersection
@@ -222,7 +222,7 @@ public class NamespaceManager implements ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get all Namespaces whose body overlaps the specified address set.
 	 * @param set the address for which to find namespace's that intersect it.
 	 * @return a LongField function key iterator.
@@ -266,7 +266,7 @@ public class NamespaceManager implements ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the body for the given namespace.
 	 * @param namespace the namespace for which to get its body.
 	 * @return body for the given namespace

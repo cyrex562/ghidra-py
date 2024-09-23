@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query;
 
-import java.io.*;
+
 import java.util.*;
 
 import javax.xml.parsers.*;

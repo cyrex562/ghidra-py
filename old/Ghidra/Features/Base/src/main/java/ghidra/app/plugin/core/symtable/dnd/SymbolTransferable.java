@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.symtable.dnd;
 
 import java.awt.Component;
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Objects;
 

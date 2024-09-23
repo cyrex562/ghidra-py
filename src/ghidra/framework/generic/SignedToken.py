@@ -23,27 +23,27 @@ import java.security.cert.X509Certificate;
  */
 public class SignedToken {
 	
-	/**
+    # /**
 	 * Original token byte array
 	 */
 	public final byte[] token;
 	
-	/**
+    # /**
 	 * Token byte array signature
 	 */
 	public final byte[] signature;
 	
-	/**
+    # /**
 	 * Algorithm used for signing
 	 */
 	public final String algorithm;
 	
-	/**
+    # /**
 	 * Identity which corresponds to signature
 	 */
 	public final X509Certificate[] certChain;
 
-	/**
+    # /**
 	 * SignedToken constructor
 	 * @param token token byte array
 	 * @param signature token byte array signature

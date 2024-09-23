@@ -34,22 +34,22 @@ import ghidra.service.graph.*;
 class LayoutTransitionManager {
 
 	LayoutFunction layoutFunction;
-	/**
+    # /**
 	 * the {@link VisualizationServer} used to display graphs using the requested {@link LayoutAlgorithm}
 	 */
 	VisualizationServer<AttributedVertex, AttributedEdge> visualizationServer;
 
-	/**
+    # /**
 	 * a {@link Predicate} to assist in determining which vertices are root vertices (for Tree layouts)
 	 */
 	Predicate<AttributedVertex> rootPredicate;
 
-	/**
+    # /**
 	 * a {@link Function} to provide {@link Rectangle} (and thus bounds} for vertices
 	 */
 	Function<AttributedVertex, Rectangle> vertexBoundsFunction;
 
-	/**
+    # /**
 	 * the {@link RenderContext} used to draw the graph
 	 */
 	RenderContext<AttributedVertex, AttributedEdge> renderContext;
@@ -58,7 +58,7 @@ class LayoutTransitionManager {
 
 	LayoutPaintable.RadialRings<AttributedVertex> radialLayoutRings;
 
-	/**
+    # /**
 	 * Create an instance with passed parameters
 	 * @param visualizationServer displays the graph
 	 * @param rootPredicate selects root vertices
@@ -76,7 +76,7 @@ class LayoutTransitionManager {
 		this.layoutFunction = new LayoutFunction(renderer);
 	}
 
-	/**
+    # /**
 	 * set the layout in order to configure the requested {@link LayoutAlgorithm}
 	 * @param layoutName the name of the layout algorithm to use
 	 */
@@ -127,7 +127,7 @@ class LayoutTransitionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Supplies the {@code LayoutAlgorithm} to be used for the initial @{code Graph} visualization
 	 * @return the algorithm
 	 */

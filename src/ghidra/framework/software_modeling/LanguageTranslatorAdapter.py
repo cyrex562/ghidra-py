@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.program.model.address.*;
@@ -29,9 +29,9 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <code>LanguageTranslatorAdapter</code> provides a default language translator 
- * behavior which may be extended to provide customized language translations.
- */
+# * <code>LanguageTranslatorAdapter</code> provides a default language translator 
+# * behavior which may be extended to provide customized language translations.
+# */
 public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 
 	protected static final String DEFAULT_COMPILER_SPEC_ID = "default";
@@ -49,7 +49,7 @@ public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 
 	private RangeMap oldRegisterRangeMap;
 
-	/**
+    # /**
 	 * Constructor for default translator.
 	 * @param oldLanguage
 	 * @param newLanguage
@@ -65,7 +65,7 @@ public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 		buildRegisterRangeMap();
 	}
 
-	/**
+    # /**
 	 * Constructor for customized language translators which want to leverage 
 	 * some of the default language mappings.  Successful construction does not
 	 * guarantee the two languages can utilize the default address space mapping.
@@ -84,7 +84,7 @@ public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 		this.newLanguageVersion = newLanguageVersion;
 	}
 
-	/**
+    # /**
 	 * Build register name map - assumes register names have not changed
 	 * and that newLanguage has been established
 	 */
@@ -98,7 +98,7 @@ public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 		}
 	}
 
-	/**
+    # /**
 	 * Build old register range map - assumes oldLanguage has been established
 	 * NOTE: use of RangeMap assumes max register space size of 32-bits
 	 */
@@ -151,7 +151,7 @@ public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 		return language;
 	}
 
-	/**
+    # /**
 	 * Build and validate the default address space map.  This method must be invoked following instantiation
 	 * if the default address space mapping will be used.
 	 * @throws IncompatibleLanguageException if a default mapping of the address spaces could not be identified.
@@ -406,7 +406,7 @@ public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 			"}";
 	}
 
-	/**
+    # /**
 	 * Default language translator.
 	 */
 	private static class DefaultLanguageTranslator extends LanguageTranslatorAdapter {
@@ -476,7 +476,7 @@ public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Return a validated default translator if one can be determined.
 	 * @param oldLanguage
 	 * @param newLanguage
@@ -493,7 +493,7 @@ public abstract class LanguageTranslatorAdapter implements LanguageTranslator {
 		return translator;
 	}
 
-	/**
+    # /**
 	 * Return a validated default translator between two versions of the same language or null
 	 * if one can not be determined.
 	 * @param languageID

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.security.*;
 import java.util.Arrays;
@@ -29,7 +29,7 @@ import javax.crypto.spec.SecretKeySpec;
 public class CartV1StreamDecryptor extends CartV1StreamProcessor {
 	private Cipher cipher;
 
-	/**
+    # /**
 	 * Construct a stream decryptor with the specified key.
 	 *
 	 * @param delegate InputStream to read and apply decryption
@@ -58,7 +58,7 @@ public class CartV1StreamDecryptor extends CartV1StreamProcessor {
 		}
 	}
 
-	/**
+    # /**
 	 * Read the next chunk in the stream and decrypt
 	 *
 	 * @return True if more data is now available, False otherwise.

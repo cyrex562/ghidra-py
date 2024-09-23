@@ -45,7 +45,7 @@ public class SignatureCallback implements Callback, Serializable {
 	private byte[] signature;
 	private X509Certificate[] certChain;
 
-	/**
+    # /**
 	 * Construct callback with a random token to be signed by the client. 
 	 * @param recognizedAuthorities list of CA's from which one must occur
 	 * within the certificate chain of the signing certificate.
@@ -58,42 +58,42 @@ public class SignatureCallback implements Callback, Serializable {
 		this.recognizedAuthorities = recognizedAuthorities;
 	}
 
-	/**
+    # /**
 	 * Returns list of approved certificate authorities.
 	 */
 	public Principal[] getRecognizedAuthorities() {
 		return (recognizedAuthorities == null ? null : (Principal[]) recognizedAuthorities.clone());
 	}
 
-	/**
+    # /**
 	 * Returns token to be signed using user certificate.
 	 */
 	public byte[] getToken() {
 		return (token == null ? null : (byte[]) token.clone());
 	}
 
-	/**
+    # /**
 	 * Returns signed token bytes set by callback handler.
 	 */
 	public byte[] getSignature() {
 		return (signature == null ? null : (byte[]) signature.clone());
 	}
 
-	/**
+    # /**
 	 * Returns the server's signature of the token bytes.
 	 */
 	public byte[] getServerSignature() {
 		return serverSignature;
 	}
 
-	/**
+    # /**
 	 * Returns certificate chain used to sign token.
 	 */
 	public X509Certificate[] getCertificateChain() {
 		return certChain;
 	}
 
-	/**
+    # /**
 	 * Set token signature data.  Method must be invoked by 
 	 * callback handler.
 	 * @param sigCertChain certificate chain used to sign token.

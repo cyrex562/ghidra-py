@@ -16,7 +16,7 @@
 package ghidra.app.util.opinion;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 
 import ghidra.app.util.importer.MessageLog;
 import ghidra.framework.model.*;

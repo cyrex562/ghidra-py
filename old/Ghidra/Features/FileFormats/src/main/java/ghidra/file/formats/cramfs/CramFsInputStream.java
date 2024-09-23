@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.commons.lang3.ArrayUtils;

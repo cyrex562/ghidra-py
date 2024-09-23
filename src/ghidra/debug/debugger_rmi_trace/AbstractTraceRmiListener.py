@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.service.tracermi;
 
-import java.io.IOException;
+
 import java.net.*;
 
 import ghidra.debug.api.tracermi.TraceRmiAcceptor;

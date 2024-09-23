@@ -50,7 +50,7 @@ public class ExtensionTableProvider extends DialogComponentProvider {
 
 	private boolean requireRestart = false;
 
-	/**
+    # /**
 	 * Constructor.
 	 * 
 	 * @param tool the plugin tool
@@ -61,7 +61,7 @@ public class ExtensionTableProvider extends DialogComponentProvider {
 		setHelpLocation(new HelpLocation(GenericHelpTopics.FRONT_END, "Extensions"));
 	}
 
-	/**
+    # /**
 	 * Creates the main panel for the extension dialog.
 	 * 
 	 * @param tool the current tool
@@ -111,7 +111,7 @@ public class ExtensionTableProvider extends DialogComponentProvider {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates an action to allow users to manually add new extensions.
 	 * 
 	 * @param panel The extensions table panel.
@@ -183,7 +183,7 @@ public class ExtensionTableProvider extends DialogComponentProvider {
 		return didInstall;
 	}
 
-	/**
+    # /**
 	 * Creates an action to refresh the extensions list.
 	 * 
 	 * @param tablePanel the table to be refreshed
@@ -210,7 +210,7 @@ public class ExtensionTableProvider extends DialogComponentProvider {
 		addAction(refreshAction);
 	}
 
-	/**
+    # /**
 	 * Filter for a {@link GhidraFileChooser} that restricts selection to those files that are
 	 * Ghidra Extensions (zip files with an extension.properties file) or folders.
 	 */

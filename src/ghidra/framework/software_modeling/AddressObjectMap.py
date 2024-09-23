@@ -71,7 +71,7 @@ public class AddressObjectMap {
         return objarray;
     }
 
-	/**
+    # /**
 	 * Associates the given object with the given set of addresses
 	 * @param obj the object to associate
 	 * @param set the set of address to be associated with the object.
@@ -88,7 +88,7 @@ public class AddressObjectMap {
     }
 
     
-	/**
+    # /**
 	 * Associates the given object with the given range of addresses
 	 * @param obj the object to associate
 	 * @param startAddr the first address in the range
@@ -101,7 +101,7 @@ public class AddressObjectMap {
         coalesceRange(start,end);
     }
     
-	/**
+    # /**
 	 * Removes any association with the object and the addresses in the given address set.
 	 * @param obj the object to remove
 	 * @param set the set of address from which to remove the object.

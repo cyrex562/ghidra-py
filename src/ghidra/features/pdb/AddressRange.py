@@ -26,7 +26,7 @@ public class AddressRange extends AbstractParsableItem {
 	private int sectionStart;
 	private int lengthRange;
 
-	/**
+    # /**
 	 * Constructor for this symbol component.
 	 * @param reader {@link PdbByteReader} from which this data is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -37,7 +37,7 @@ public class AddressRange extends AbstractParsableItem {
 		lengthRange = reader.parseUnsignedShortVal();
 	}
 
-	/**
+    # /**
 	 * Returns the start offset.
 	 * @return Start offset.
 	 */
@@ -45,7 +45,7 @@ public class AddressRange extends AbstractParsableItem {
 		return startOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the start section
 	 * @return Start section.
 	 */
@@ -53,7 +53,7 @@ public class AddressRange extends AbstractParsableItem {
 		return sectionStart;
 	}
 
-	/**
+    # /**
 	 * Returns the length range.
 	 * @return Length range.
 	 */

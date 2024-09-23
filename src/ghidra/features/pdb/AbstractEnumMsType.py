@@ -29,7 +29,7 @@ public abstract class AbstractEnumMsType extends AbstractComplexMsType {
 
 	protected RecordNumber underlyingRecordNumber;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -38,7 +38,7 @@ public abstract class AbstractEnumMsType extends AbstractComplexMsType {
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Constructor for this type (for testing).
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param name name for the type.
@@ -57,7 +57,7 @@ public abstract class AbstractEnumMsType extends AbstractComplexMsType {
 		this.count = numElements;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the underlying type of this Enum.
 	 * @return Record number of the underlying type.
 	 */

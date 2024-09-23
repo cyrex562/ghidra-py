@@ -153,7 +153,7 @@ public class GroupedFunctionGraphComponentPanel extends AbstractGraphComponentPa
 		}
 	}
 
-	/**
+    # /**
 	 * A bit of a hack that triggers the text area to update its preferred height now before we
 	 * render so that it doesn't change later.
 	 */

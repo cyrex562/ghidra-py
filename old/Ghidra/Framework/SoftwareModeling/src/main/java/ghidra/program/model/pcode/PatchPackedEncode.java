@@ -17,7 +17,7 @@ package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.PackedDecode.*;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 
 import ghidra.program.model.address.AddressSpace;

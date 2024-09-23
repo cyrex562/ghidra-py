@@ -15,7 +15,7 @@
  */
 package ghidra.server.security;
 
-import java.io.IOException;
+
 import java.net.InetSocketAddress;
 import java.util.HashMap;
 import java.util.Map;
@@ -50,7 +50,7 @@ public class Krb5ActiveDirectoryAuthenticationModule implements AuthenticationMo
 	private String domainName;
 	private boolean stripDomainFromUsername = true;
 
-	/**
+    # /**
 	 * Creates a new {@link Krb5ActiveDirectoryAuthenticationModule} instance.
 	 * <p>
 	 *
@@ -169,7 +169,7 @@ public class Krb5ActiveDirectoryAuthenticationModule implements AuthenticationMo
 
 	//--------------------------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * A JAAS {@link Configuration} helper that forces a simple JAAS setup of a single
 	 * 'required' {@link LoginModule}.  (instead of an external JAAS config file)
 	 *
@@ -190,7 +190,7 @@ public class Krb5ActiveDirectoryAuthenticationModule implements AuthenticationMo
 			return new AppConfigurationEntry[] { staticConfigEntry };
 		}
 
-		/**
+	    # /**
 		 * Allows adding options to the {@link LoginModule}
 		 *
 		 * @param name string name of the option
@@ -203,7 +203,7 @@ public class Krb5ActiveDirectoryAuthenticationModule implements AuthenticationMo
 
 	private static final String SRV_RECORD_TYPE = "SRV";
 
-	/**
+    # /**
 	 * Returns the first Microsoft Active Directory domain controller for the specified domainName.
 	 *
 	 * @param domainName the local domain name of the MS Active Directory system

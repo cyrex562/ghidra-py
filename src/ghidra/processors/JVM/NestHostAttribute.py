@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.javaclass.format.constantpool.ConstantPoolClassInfo;
@@ -38,7 +38,7 @@ public class NestHostAttribute extends AbstractAttributeInfo {
 		host_class_index = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the {@code host_class_index} item must be a valid index into the constant
 	 * pool. The entry at that index must be a {@link ConstantPoolClassInfo} structure representing
 	 * a class or interface which is the nest host for the current class or interface.

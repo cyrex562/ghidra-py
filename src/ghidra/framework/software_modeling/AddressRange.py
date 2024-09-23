@@ -30,23 +30,23 @@ import java.math.BigInteger;
 
 public interface AddressRange extends Comparable<AddressRange>, Iterable<Address> {
 
-	/**
+    # /**
 	 * Returns the number of addresses in the range.
 	 */
 	public long getLength();
 
-	/**
+    # /**
 	 * Returns the number of addresses as a BigInteger.
 	 * @return the number of addresses as a BigInteger.
 	 */
 	public BigInteger getBigLength();
 
-	/**
+    # /**
 	 * Returns true if the given address is contained in the range.
 	 */
 	public boolean contains(Address addr);
 
-	/**
+    # /**
 	 * Computes the intersection of this range with another.
 	 * @param range the range to intersect this range with
 	 * @return AddressRange the intersection or null if the ranges
@@ -54,7 +54,7 @@ public interface AddressRange extends Comparable<AddressRange>, Iterable<Address
 	 */
 	public AddressRange intersect(AddressRange range);
 
-	/**
+    # /**
 	 * Computes the intersection of this range with another.
 	 * @param start of range
 	 * @param end end of range
@@ -63,20 +63,20 @@ public interface AddressRange extends Comparable<AddressRange>, Iterable<Address
 	 */
 	public AddressRange intersectRange(Address start, Address end);
 
-	/**
+    # /**
 	 * Returns true if the given range intersects this range.
 	 * @param range the range to test for intersection with.
 	 */
 	public boolean intersects(AddressRange range);
 
-	/**
+    # /**
 	 * Returns true if the given range intersects this range.
 	 * @param start the first address in the range to test for intersection.
 	 * @param end the last address in the range to test for intersection.
 	 */
 	public boolean intersects(Address start, Address end);
 
-	/**
+    # /**
 	 * Compares the given address to this address range.
 	 * 
 	 * @param addr the address to compare.
@@ -86,22 +86,22 @@ public interface AddressRange extends Comparable<AddressRange>, Iterable<Address
 	 */
 	public int compareTo(Address addr);
 
-	/**
+    # /**
 	 * @return the maximum address in the range.
 	 */
 	public Address getMaxAddress();
 
-	/**
+    # /**
 	 * @return the minimum address in the range.
 	 */
 	public Address getMinAddress();
 
-	/**
+    # /**
 	 * @return address space this range resides within
 	 */
 	public AddressSpace getAddressSpace();
 
-	/**
+    # /**
 	 * Change the specified start and end addresses to see if they form a valid
 	 * range within the same {@link AddressSpace}.
 	 * @param start range start address

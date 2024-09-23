@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.util.*;
@@ -27,7 +27,7 @@ import ghidra.util.exception.InvalidInputException;
 
 public class SimpleDiffUtility {
 
-	/**
+    # /**
 	 * Convert a variable storage object from the specified program to a comparable variable storage
 	 * object in the specified otherProgram.  Certain variable storage (UNIQUE/HASH-based) will
 	 * always produce a null return object.
@@ -56,7 +56,7 @@ public class SimpleDiffUtility {
 		}
 	}
 
-	/**
+    # /**
 	 * Convert a varnode from the specified program to a comparable varnode in the
 	 * specified otherProgram.  Certain varnode addresses spaces (UNIQUE, HASH) will
 	 * always produce a null return varnode.
@@ -124,7 +124,7 @@ public class SimpleDiffUtility {
 		return minAddr;
 	}
 
-	/**
+    # /**
 	 * If the specified instruction is contained within a delay slot, or has delay slots,
 	 * the maximum address of the last delay slot instruction will be returned.
 	 * If a normal instruction is specified the instructions maximum address is returned.
@@ -147,7 +147,7 @@ public class SimpleDiffUtility {
 		return maxAddr;
 	}
 
-	/**
+    # /**
 	 * Expand a specified address set to include complete delay slotted instructions
 	 * which may be included at the start or end of each range within the specified
 	 * address set.
@@ -188,7 +188,7 @@ public class SimpleDiffUtility {
 		return expandedSet != null ? expandedSet : originalSet;
 	}
 
-	/**
+    # /**
 	 * Convert an address from the specified program to a comparable address in the
 	 * specified otherProgram.
 	 * @param program program which contains the specified address instance
@@ -265,7 +265,7 @@ public class SimpleDiffUtility {
 		throw new IllegalArgumentException("Unsupported address type");
 	}
 
-	/**
+    # /**
 	 * Convert an address from the specified program to a comparable address in the
 	 * specified otherProgram.
 	 * @param addr address in program
@@ -311,7 +311,7 @@ public class SimpleDiffUtility {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Given a symbol for a specified program, get the corresponding symbol from the
 	 * specified otherProgram.
 	 * @param symbol symbol to look for
@@ -500,7 +500,7 @@ public class SimpleDiffUtility {
 
 	}
 
-	/**
+    # /**
 	 * Given an external symbol for a specified program, get the corresponding symbol,
 	 * which has the same name and path,  from the specified otherProgram.<br>
 	 * Note: The type of the returned symbol may be different than the type of the symbol
@@ -659,7 +659,7 @@ public class SimpleDiffUtility {
 		return extLoc.getOriginalImportedName().equals(otherExtLoc.getOriginalImportedName());
 	}
 
-	/**
+    # /**
 	 * Given an external location for a specified program, get the corresponding external location,
 	 * which has the same name and path,  from the specified otherProgram.<br>
 	 * Note: The type of the returned external location may be different than the type of the
@@ -687,7 +687,7 @@ public class SimpleDiffUtility {
 		return otherExternalManager.getExternalLocation(matchingExternalSymbol);
 	}
 
-	/**
+    # /**
 	 * Find the variable symbol in otherProgram which corresponds to the specified varSym.
 	 * @param symbol variable symbol
 	 * @param otherProgram other program
@@ -722,7 +722,7 @@ public class SimpleDiffUtility {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Find the variable symbol in otherFunction which corresponds to the specified varSym.
 	 * @param varSym variable symbol
 	 * @param otherFunction other function
@@ -749,7 +749,7 @@ public class SimpleDiffUtility {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Find overlapping variable which meets the following conditions
 	 * 1. First use offset matches
 	 * 2. Ordinal matches (for parameters only)

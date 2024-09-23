@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.odex;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -52,49 +52,49 @@ public class OdexHeader implements StructConverter {
 		return new String(magic);
 	}
 
-	/**
+    # /**
 	 * Returns byte offset to the optimized DEX file.
 	 */
 	public int getDexOffset() {
 		return dexOffset;
 	}
 
-	/**
+    # /**
 	 * Returns byte length of the optimized DEX file.
 	 */
 	public int getDexLength() {
 		return dexLength;
 	}
 
-	/**
+    # /**
 	 * Return byte offset to the framework dependencies.
 	 */
 	public int getDepsOffset() {
 		return depsOffset;
 	}
 
-	/**
+    # /**
 	 * Return byte length of the framework dependencies.
 	 */
 	public int getDepsLength() {
 		return depsLength;
 	}
 
-	/**
+    # /**
 	 * Return byte offset to the auxiliary data.
 	 */
 	public int getAuxOffset() {
 		return auxOffset;
 	}
 
-	/**
+    # /**
 	 * Return byte length to the auxiliary data.
 	 */
 	public int getAuxLength() {
 		return auxLength;
 	}
 
-	/**
+    # /**
 	 * Return the ODEX flags.
 	 */
 	public int getFlags() {

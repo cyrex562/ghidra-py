@@ -27,7 +27,7 @@ import ghidra.program.model.listing.Program;
  */
 public class BlockStartLocation extends CommentFieldLocation {
 
-	/**
+    # /**
 	  * Create a new BlockStartLocation.
 	  * 
 	  * @param program the program of the location
@@ -45,7 +45,7 @@ public class BlockStartLocation extends CommentFieldLocation {
 		super(program, addr, componentPath, comment, CodeUnit.NO_COMMENT, row, charOffset);
 	}
 
-	/**
+    # /**
 	 * Default constructor needed for restoring
 	 * a program location from XML
 	 */

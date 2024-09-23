@@ -27,7 +27,7 @@ public abstract class AbstractIndexMsType extends AbstractMsType implements MsTy
 
 	protected RecordNumber referencedRecordNumber;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -36,7 +36,7 @@ public abstract class AbstractIndexMsType extends AbstractMsType implements MsTy
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the referenced type.
 	 * @return Record number of the referenced type.
 	 */

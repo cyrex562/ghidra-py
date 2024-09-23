@@ -17,7 +17,7 @@ package ghidra.dbg.gadp;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.lang.invoke.MethodHandles;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;

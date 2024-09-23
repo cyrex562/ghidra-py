@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 
@@ -41,7 +41,7 @@ import utilities.util.FileUtilities;
  */
 public class DefaultProjectData implements ProjectData {
 
-	/**
+    # /**
 	 * {@code fileTrackingMap} is used to identify DefaultProjectData instances which are
 	 * tracking specific DomainObjectAdapter instances which are open.
 	 */
@@ -97,7 +97,7 @@ public class DefaultProjectData implements ProjectData {
 	private boolean closed = false;
 	private boolean disposed = false;
 
-	/**
+    # /**
 	 * Constructor for existing projects.
 	 * @param localStorageLocator the location of the project
 	 * @param isInWritableProject true if project content is writable, false if project is read-only
@@ -145,7 +145,7 @@ public class DefaultProjectData implements ProjectData {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor for a new project.
 	 * @param localStorageLocator the location of the project
 	 * @param repository a repository if this is a shared project or null if it is a private project
@@ -175,7 +175,7 @@ public class DefaultProjectData implements ProjectData {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor for test use only.  A non-existing {@link ProjectLocator} is used without
 	 * project locking.
 	 * @param fileSystem an existing non-versioned local file-system
@@ -222,7 +222,7 @@ public class DefaultProjectData implements ProjectData {
 		return SystemUtilities.getUserName().equals(name) || getUserName().equals(name);
 	}
 
-	/**
+    # /**
 	 * Get user name in a format consistent with the older {@link SystemUtilities#getUserName()} 
 	 * implementation.  This is done to ensure we can still recognize the OWNER of older
 	 * projects.
@@ -245,7 +245,7 @@ public class DefaultProjectData implements ProjectData {
 		return userName;
 	}
 
-	/**
+    # /**
 	 * Read the contents of the project properties file to include the following values if relavent:
 	 * {@value #OWNER}, {@value #SERVER_NAME}, {@value #REPOSITORY_NAME}, {@value #PORT_NUMBER}
 	 * @param projectDir project directory (*.rep)
@@ -332,7 +332,7 @@ public class DefaultProjectData implements ProjectData {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a ProjectLock and attempts to lock it. This handles the case
 	 * where the project was previously locked.
 	 * 
@@ -380,7 +380,7 @@ public class DefaultProjectData implements ProjectData {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Determine if the specified project location currently has a write lock.
 	 * @param locator project storage locator
 	 * @return true if project data current has write-lock else false
@@ -508,7 +508,7 @@ public class DefaultProjectData implements ProjectData {
 		return fileSystem.getClass();
 	}
 
-	/**
+    # /**
 	 * Change the versioned filesystem associated with this project file manager.
 	 * This method is provided for testing (see {@code FakeSharedProject}).  
 	 * Care should be taken when using a LocalFileSystem in a shared capacity since 
@@ -568,7 +568,7 @@ public class DefaultProjectData implements ProjectData {
 			false, !isInWritableProject, true);
 	}
 
-	/**
+    # /**
 	 * Returns the owner of the project that is associated with this 
 	 * DefaultProjectData.  A value of null indicates an old multiuser
 	 * project.
@@ -706,7 +706,7 @@ public class DefaultProjectData implements ProjectData {
 		}
 	}
 
-	/**
+    # /**
 	 * Finds all changed domain files and appends them to the specified list.
 	 * @param list the list to receive the changed domain files
 	 */
@@ -830,7 +830,7 @@ public class DefaultProjectData implements ProjectData {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Determine if any domain files listed does not correspond to a checkout in the specified 
 	 * newRespository.
 	 * @param checkoutList project domain files to check
@@ -853,7 +853,7 @@ public class DefaultProjectData implements ProjectData {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Find those domain files listed which do not correspond to checkouts in the specified 
 	 * newRespository.
 	 * @param checkoutList project domain files to check
@@ -876,7 +876,7 @@ public class DefaultProjectData implements ProjectData {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Undo checkouts for all domain files listed.
 	 * @param files list of files to undo checkout
 	 * @param keep if a .keep copy of any checked-out file should be retained in the local file.
@@ -897,7 +897,7 @@ public class DefaultProjectData implements ProjectData {
 		}
 	}
 
-	/**
+    # /**
 	 * Find all project files which are currently checked-out
 	 * @param monitor task monitor (no progress updates)
 	 * @return list of current checkout files
@@ -976,7 +976,7 @@ public class DefaultProjectData implements ProjectData {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the standard user data filename associated with the specified file ID.
 	 * @param associatedFileID the file id
 	 * @return user data filename
@@ -1022,7 +1022,7 @@ public class DefaultProjectData implements ProjectData {
 		userDataReconcileThread.start();
 	}
 
-	/**
+    # /**
 	 * Reconcile user data files against all content files within the project.
 	 * This must only be done while connected to the repository
 	 */
@@ -1295,7 +1295,7 @@ public class DefaultProjectData implements ProjectData {
 		dispose();
 	}
 
-	/**
+    # /**
 	 * Immediately dispose this project data store instance.  If this project has an associated
 	 * {@link RepositoryAdapter} it will be disconnected as well.  This method should generally not
 	 * be used directly when there may be open {@link DomainObject} instances which may rely
@@ -1354,7 +1354,7 @@ public class DefaultProjectData implements ProjectData {
 		return rootFolderData;
 	}
 
-	/**
+    # /**
 	 * Set the open domain object (opened for update) associated with a file. 
 	 * NOTE: Caller is responsible for setting domain file on domain object after invoking this 
 	 * method. If a domain object saveAs was done, the previous file association 
@@ -1373,7 +1373,7 @@ public class DefaultProjectData implements ProjectData {
 		openDomainObjects.put(pathname, doa);
 	}
 
-	/**
+    # /**
 	 * Returns the open domain object (opened for update) for the specified path.
 	 * @param pathname the path name
 	 * @return the domain object or null if not open
@@ -1382,7 +1382,7 @@ public class DefaultProjectData implements ProjectData {
 		return openDomainObjects.get(pathname);
 	}
 
-	/**
+    # /**
 	 * Clears the previously open domain object which has been closed.
 	 * @param pathname the path name
 	 * @return true if previously open domain file was cleared, else false
@@ -1396,7 +1396,7 @@ public class DefaultProjectData implements ProjectData {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Update the file index for the specified file data
 	 * @param fileData file data
 	 */
@@ -1404,7 +1404,7 @@ public class DefaultProjectData implements ProjectData {
 		fileIndex.updateFileEntry(fileData);
 	}
 
-	/**
+    # /**
 	 * Remove specified fileID from index.
 	 * @param fileID the file ID
 	 */
@@ -1412,7 +1412,7 @@ public class DefaultProjectData implements ProjectData {
 		fileIndex.removeFileEntry(fileID);
 	}
 
-	/**
+    # /**
 	 * Get monitor which will be cancelled if project is closed
 	 * @return cancel monitor
 	 */
@@ -1420,7 +1420,7 @@ public class DefaultProjectData implements ProjectData {
 		return projectDisposalMonitor;
 	}
 
-	/**
+    # /**
 	 * Signals the start of a complex merge operation.
 	 * The {@link #mergeEnded()} must be invoked after this method invocation when the
 	 * merge operation has completed.
@@ -1429,14 +1429,14 @@ public class DefaultProjectData implements ProjectData {
 		incrementInUseCount();
 	}
 
-	/**
+    # /**
 	 * Signals the completion of a complex merge operation (see {@link #mergeStarted()}).
 	 */
 	void mergeEnded() {
 		decrementInUseCount();
 	}
 
-	/**
+    # /**
 	 * Signals that a <b>non-link</b> file has been opened as the specified 
 	 * {@link DomainObjectAdapter doa} from this project data store and should be
 	 * tracked.  This will delay disposal of this object until the specified domain object is

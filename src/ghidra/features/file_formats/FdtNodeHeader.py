@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dtb;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -45,7 +45,7 @@ public class FdtNodeHeader implements StructConverter {
 		name = reader.readNextAsciiString(nameLength);
 	}
 
-	/**
+    # /**
 	 * Returns the FDT Node Tag.
 	 * @see FdtConstants
 	 * @return the FDT Node Tag
@@ -54,7 +54,7 @@ public class FdtNodeHeader implements StructConverter {
 		return tag;
 	}
 
-	/**
+    # /**
 	 * Returns the FDT Node Name.
 	 * @return the FDT Node name
 	 */

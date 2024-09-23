@@ -25,7 +25,7 @@ public class StringArrayArray implements Array, Serializable {
 	private final static long serialVersionUID = 1;
 
 	private ByteArrayArray byteStore;
-	/**
+    # /**
 	 * Constructor for StringArrayArray.
 	 */
 	public StringArrayArray() {
@@ -33,7 +33,7 @@ public class StringArrayArray implements Array, Serializable {
 		byteStore = new ByteArrayArray();
 	}
 
-	/**
+    # /**
 	 * Stores the string array at the given index.
 	 * @param index the index to store the array
 	 * @param value the array to store
@@ -46,7 +46,7 @@ public class StringArrayArray implements Array, Serializable {
 		byteStore.put(index, bytes);	
 	}
 
-	/**
+    # /**
 	 * Retrieves the String array stored at the given index.
 	 * @param index the index at which to retrieve the array.
 	 * @return String[] the String array at the index.
@@ -59,7 +59,7 @@ public class StringArrayArray implements Array, Serializable {
 		return bytesToStringArray(bytes);
 	}
 
-	/**
+    # /**
 	 * @see Array#copyDataTo(int, DataTable, int, int)
 	 */
 	public void copyDataTo(int index,
@@ -70,14 +70,14 @@ public class StringArrayArray implements Array, Serializable {
  
 	}
 
-	/**
+    # /**
 	 * @see Array#getLastNonEmptyIndex()
 	 */
 	public int getLastNonEmptyIndex() {
 		return byteStore.getLastNonEmptyIndex();
 	}
 
-	/**
+    # /**
 	 * @see Array#remove(int)
 	 */
 	public void remove(int index) {

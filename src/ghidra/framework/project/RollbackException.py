@@ -23,7 +23,7 @@ package ghidra.util.exception;
  */
 public class RollbackException extends RuntimeException {
 
-	/**
+    # /**
 	 * Constructor 
 	 * 
 	 * @param cause cause of exception
@@ -32,7 +32,7 @@ public class RollbackException extends RuntimeException {
 		super(cause);
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param message the message explaining what caused the exception.
@@ -41,7 +41,7 @@ public class RollbackException extends RuntimeException {
 		super(message);
 	}
 
-	/**
+    # /**
 	 * Constructor 
 	 * 
 	 * @param message the message explaining what caused the exception.

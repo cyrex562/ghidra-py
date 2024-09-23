@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Function;
  *
  */
 public interface FunctionExtentGenerator {
-	/**
+    # /**
 	 * Calculates the extent of a function, and returns a deterministic, 
 	 * flow-ordered list of code units comprising the function.
 	 * @param func the function on which to calculate the extent

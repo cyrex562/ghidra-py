@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.datatree;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.Icon;
@@ -65,7 +65,7 @@ public class DomainFolderNode extends GTreeLazyNode implements Cuttable {
 		return !domainFolder.isLinked();
 	}
 
-	/**
+    # /**
 	 * Get the domain folder; returns null if this node represents a domain file.
 	 *
 	 * @return DomainFolder
@@ -74,7 +74,7 @@ public class DomainFolderNode extends GTreeLazyNode implements Cuttable {
 		return domainFolder;
 	}
 
-	/**
+    # /**
 	 * Returns true if this node has no children.
 	 */
 	@Override
@@ -82,7 +82,7 @@ public class DomainFolderNode extends GTreeLazyNode implements Cuttable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Set this node to be deleted so that it can be rendered as such.
 	 */
 	@Override
@@ -91,7 +91,7 @@ public class DomainFolderNode extends GTreeLazyNode implements Cuttable {
 		fireNodeChanged();
 	}
 
-	/**
+    # /**
 	 * Returns whether this node is marked as deleted.
 	 */
 	@Override

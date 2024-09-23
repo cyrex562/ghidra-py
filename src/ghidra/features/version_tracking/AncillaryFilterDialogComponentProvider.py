@@ -57,7 +57,7 @@ public abstract class AncillaryFilterDialogComponentProvider<T>
 		updateButtons(false);
 	}
 
-	/**
+    # /**
 	 * Returns true if any of the filters managed by this dialog are not in their default state.
 	 */
 	public boolean isFiltered() {

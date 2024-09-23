@@ -17,7 +17,7 @@ package ghidra.app.plugin.debug;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.*;

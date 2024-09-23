@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.script;
 import static org.junit.Assert.*;
 
 import java.awt.Window;
-import java.io.*;
+
 import java.lang.reflect.InvocationTargetException;
 import java.nio.file.*;
 import java.util.*;

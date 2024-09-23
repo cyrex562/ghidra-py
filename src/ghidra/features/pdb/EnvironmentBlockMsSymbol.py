@@ -33,7 +33,7 @@ public class EnvironmentBlockMsSymbol extends AbstractMsSymbol {
 	private int flags;
 	// TODO: MSFT API struct shows rev; usage shows fEC somewhere (not in struct)
 	private boolean rev;
-	/**
+    # /**
 	 * These appear to be pairs of strings that we then output as
 	 * <P>
 	 * string1 = string2
@@ -42,7 +42,7 @@ public class EnvironmentBlockMsSymbol extends AbstractMsSymbol {
 	 */
 	private List<String> stringList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -74,7 +74,7 @@ public class EnvironmentBlockMsSymbol extends AbstractMsSymbol {
 		return rev;
 	}
 
-	/**
+    # /**
 	 * Returns {@link List}&lt;{@link String}&gt
 	 * @return {@String} list.
 	 */

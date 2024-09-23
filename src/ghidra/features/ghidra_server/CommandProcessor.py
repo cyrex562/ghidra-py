@@ -15,7 +15,7 @@
  */
 package ghidra.server;
 
-import java.io.*;
+
 import java.util.*;
 
 import javax.security.auth.x500.X500Principal;
@@ -52,13 +52,13 @@ public class CommandProcessor {
 
 //	private static final int LOCK_TIMEOUT = 30000;
 
-	/**
+    # /**
 	 * Command file filter
 	 */
 	static final FileFilter CMD_FILE_FILTER =
 		f -> f.isFile() && f.getName().endsWith(COMMAND_FILE_EXT);
 
-	/**
+    # /**
 	 * File date comparator
 	 */
 	static final Comparator<File> FILE_DATE_COMPARATOR = (f1, f2) -> {
@@ -74,7 +74,7 @@ public class CommandProcessor {
 	private CommandProcessor() {
 	}
 
-	/**
+    # /**
 	 * Split a command string into individual arguments.
 	 * @param cmd command string
 	 * @return array of command arguments
@@ -111,7 +111,7 @@ public class CommandProcessor {
 		return args;
 	}
 
-	/**
+    # /**
 	 * Process the specified command.
 	 * @param repositoryMgr server's repository manager
 	 * @param cmd command string
@@ -238,7 +238,7 @@ public class CommandProcessor {
 		return cmdDir;
 	}
 
-	/**
+    # /**
 	 * Process all queued commands for the specified server.
 	 * @param repositoryMgr server's repository manager
 	 * @throws IOException
@@ -274,7 +274,7 @@ public class CommandProcessor {
 		}
 	}
 
-	/**
+    # /**
 	 * Store a list of command strings to a new command file.
 	 * @param cmdList list of command strings
 	 * @param cmdDir command file directory (must exist)

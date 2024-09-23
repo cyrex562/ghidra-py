@@ -23,7 +23,7 @@ package ghidra.util.exception;
  */
 public class CancelledException extends UsrException {
 
-	/**
+    # /**
 	 * Default constructor.  Message indicates 'Operation cancelled'.
 	 */
 	public CancelledException() {

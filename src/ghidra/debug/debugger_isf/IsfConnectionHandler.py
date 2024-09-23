@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.isf;
 
-import java.io.*;
+
 import java.net.Socket;
 
 import com.google.protobuf.AbstractMessage;

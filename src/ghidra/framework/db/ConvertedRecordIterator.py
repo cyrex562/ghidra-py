@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 # /**
  * <code>ConvertedRecordIterator</code> provides a RecordIterator wrapper

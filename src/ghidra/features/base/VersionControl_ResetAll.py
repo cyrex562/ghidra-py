@@ -16,7 +16,7 @@
 //Resets all files under a folder to their first revision.
 //@category    Version Control
 //@menupath    Tools.Version Control.Reset All
-import java.io.IOException;
+
 
 import ghidra.app.script.GhidraScript;
 import ghidra.framework.model.*;

@@ -34,7 +34,7 @@ public class ClasspathFilter implements Predicate<GModule> {
 	private Predicate<Path> additionalPaths = p -> false;
 	private Set<Path> cpModulePaths = new HashSet<>();
 
-	/**
+    # /**
 	 * Default constructor to allow only modules on the classpath.
 	 */
 	public ClasspathFilter() {
@@ -49,7 +49,7 @@ public class ClasspathFilter implements Predicate<GModule> {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor that allows any module to be included whose path passed the given predicate.  If
 	 * the predicate returns false, then a given module will only be included if it is in the
 	 * classpath.

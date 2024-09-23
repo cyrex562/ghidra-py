@@ -126,7 +126,7 @@ public class StructuredSleigh {
 		return AnnotationUtilities.collectAnnotatedMethods(StructuredUserop.class, cls);
 	}
 
-	/**
+    # /**
 	 * "Export" a method as a p-code userop implemented using p-code compiled from structured Sleigh
 	 *
 	 * <p>
@@ -158,14 +158,14 @@ public class StructuredSleigh {
 	@Retention(RetentionPolicy.RUNTIME)
 	@Target(ElementType.METHOD)
 	protected @interface StructuredUserop {
-		/**
+	    # /**
 		 * The data type path for the "return type" of the userop. See
 		 * {@link StructuredSleigh#type(String)}.
 		 */
 		String type() default "void";
 	}
 
-	/**
+    # /**
 	 * Declare a parameter of the p-code userop
 	 * 
 	 * <p>
@@ -183,13 +183,13 @@ public class StructuredSleigh {
 	@Retention(RetentionPolicy.RUNTIME)
 	@Target(ElementType.PARAMETER)
 	protected @interface Param {
-		/**
+	    # /**
 		 * The data type path for the type of the parameter. See
 		 * {@link StructuredSleigh#type(String)}.
 		 */
 		String type();
 
-		/**
+	    # /**
 		 * The name of the parameter in the output Sleigh code
 		 * 
 		 * <p>
@@ -204,7 +204,7 @@ public class StructuredSleigh {
 		String name() default "";
 	}
 
-	/**
+    # /**
 	 * The declaration of an "imported" userop
 	 * 
 	 * <p>
@@ -215,28 +215,28 @@ public class StructuredSleigh {
 	 * time.
 	 */
 	protected interface UseropDecl {
-		/**
+	    # /**
 		 * Get the userop's return type
 		 * 
 		 * @return the return type
 		 */
 		DataType getReturnType();
 
-		/**
+	    # /**
 		 * Get the name of the userop
 		 * 
 		 * @return the name
 		 */
 		String getName();
 
-		/**
+	    # /**
 		 * Get the parameter types of the userop
 		 * 
 		 * @return the types, in order of parameters
 		 */
 		List<DataType> getParameterTypes();
 
-		/**
+	    # /**
 		 * Generate an invocation of the userop
 		 * 
 		 * <p>
@@ -250,18 +250,18 @@ public class StructuredSleigh {
 		StmtWithVal call(RVal... args);
 	}
 
-	/**
+    # /**
 	 * A value which can only be used on the right-hand side of an assignment
 	 */
 	protected interface RVal {
-		/**
+	    # /**
 		 * Get the type of the value
 		 * 
 		 * @return the type
 		 */
 		DataType getType();
 
-		/**
+	    # /**
 		 * Cast the value to the given type
 		 * 
 		 * <p>
@@ -274,7 +274,7 @@ public class StructuredSleigh {
 		 */
 		RVal cast(DataType type);
 
-		/**
+	    # /**
 		 * Generate a dereference (in the C sense)
 		 * 
 		 * <p>
@@ -286,28 +286,28 @@ public class StructuredSleigh {
 		 */
 		LVal deref(AddressSpace space);
 
-		/**
+	    # /**
 		 * Generate a dereference (in the C sense) in the default address space
 		 * 
 		 * @return a handle to the resulting value
 		 */
 		LVal deref();
 
-		/**
+	    # /**
 		 * Generate boolean inversion
 		 * 
 		 * @return a handle to the resulting value
 		 */
 		RVal notb();
 
-		/**
+	    # /**
 		 * Generate integer (bitwise) inversion
 		 * 
 		 * @return a handle to the resulting value
 		 */
 		RVal noti();
 
-		/**
+	    # /**
 		 * Generate integer comparison: equal to
 		 * 
 		 * @param rhs the second operand
@@ -315,7 +315,7 @@ public class StructuredSleigh {
 		 */
 		RVal eq(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate integer comparison: equal to
 		 * 
 		 * @param rhs the immediate operand
@@ -323,7 +323,7 @@ public class StructuredSleigh {
 		 */
 		RVal eq(long rhs);
 
-		/**
+	    # /**
 		 * Generate float comparison: equal to
 		 * 
 		 * @param rhs the second operand
@@ -331,7 +331,7 @@ public class StructuredSleigh {
 		 */
 		RVal eqf(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate integer comparison: not equal to
 		 * 
 		 * @param rhs the second operand
@@ -339,7 +339,7 @@ public class StructuredSleigh {
 		 */
 		RVal neq(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate integer comparison: not equal to
 		 * 
 		 * @param rhs the immediate operand
@@ -347,7 +347,7 @@ public class StructuredSleigh {
 		 */
 		RVal neq(long rhs);
 
-		/**
+	    # /**
 		 * Generate float comparison: not equal to
 		 * 
 		 * @param rhs the second operand
@@ -355,7 +355,7 @@ public class StructuredSleigh {
 		 */
 		RVal neqf(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: less than
 		 * 
 		 * @param rhs the second operand
@@ -363,7 +363,7 @@ public class StructuredSleigh {
 		 */
 		RVal ltiu(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: less than
 		 * 
 		 * @param rhs the immediate operand
@@ -371,7 +371,7 @@ public class StructuredSleigh {
 		 */
 		RVal ltiu(long rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer comparison: less than
 		 * 
 		 * @param rhs the second operand
@@ -379,7 +379,7 @@ public class StructuredSleigh {
 		 */
 		RVal ltis(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer comparison: less than
 		 * 
 		 * @param rhs the immediate operand
@@ -387,7 +387,7 @@ public class StructuredSleigh {
 		 */
 		RVal ltis(long rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: less than
 		 * 
 		 * @param rhs the second operand
@@ -395,7 +395,7 @@ public class StructuredSleigh {
 		 */
 		RVal ltf(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: greater than
 		 * 
 		 * @param rhs the second operand
@@ -403,7 +403,7 @@ public class StructuredSleigh {
 		 */
 		RVal gtiu(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: greater than
 		 * 
 		 * @param rhs the immediate operand
@@ -411,7 +411,7 @@ public class StructuredSleigh {
 		 */
 		RVal gtiu(long rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer comparison: greater than
 		 * 
 		 * @param rhs the second operand
@@ -419,7 +419,7 @@ public class StructuredSleigh {
 		 */
 		RVal gtis(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer comparison: greater than
 		 * 
 		 * @param rhs the immediate operand
@@ -427,7 +427,7 @@ public class StructuredSleigh {
 		 */
 		RVal gtis(long rhs);
 
-		/**
+	    # /**
 		 * Generate float comparison: greater than
 		 * 
 		 * @param rhs the second operand
@@ -435,7 +435,7 @@ public class StructuredSleigh {
 		 */
 		RVal gtf(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: less than or equal to
 		 * 
 		 * @param rhs the second operand
@@ -443,7 +443,7 @@ public class StructuredSleigh {
 		 */
 		RVal lteiu(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: less than or equal to
 		 * 
 		 * @param rhs the immediate operand
@@ -451,7 +451,7 @@ public class StructuredSleigh {
 		 */
 		RVal lteiu(long rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer comparison: less than or equal to
 		 * 
 		 * @param rhs the second operand
@@ -459,7 +459,7 @@ public class StructuredSleigh {
 		 */
 		RVal lteis(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer comparison: less than or equal to
 		 * 
 		 * @param rhs the immediate operand
@@ -467,7 +467,7 @@ public class StructuredSleigh {
 		 */
 		RVal lteis(long rhs);
 
-		/**
+	    # /**
 		 * Generate float comparison: less than or equal to
 		 * 
 		 * @param rhs the second operand
@@ -475,7 +475,7 @@ public class StructuredSleigh {
 		 */
 		RVal ltef(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: greater than or equal to
 		 * 
 		 * @param rhs the second operand
@@ -483,7 +483,7 @@ public class StructuredSleigh {
 		 */
 		RVal gteiu(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer comparison: greater than or equal to
 		 * 
 		 * @param rhs the immediate operand
@@ -491,7 +491,7 @@ public class StructuredSleigh {
 		 */
 		RVal gteiu(long rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer comparison: greater than or equal to
 		 * 
 		 * @param rhs the second operand
@@ -499,7 +499,7 @@ public class StructuredSleigh {
 		 */
 		RVal gteis(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer comparison: greater than or equal to
 		 * 
 		 * @param rhs the immediate operand
@@ -507,7 +507,7 @@ public class StructuredSleigh {
 		 */
 		RVal gteis(long rhs);
 
-		/**
+	    # /**
 		 * Generate float comparison: greater than or equal to
 		 * 
 		 * @param rhs the second operand
@@ -515,7 +515,7 @@ public class StructuredSleigh {
 		 */
 		RVal gtef(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate boolean or
 		 * 
 		 * @param rhs the second operand
@@ -523,7 +523,7 @@ public class StructuredSleigh {
 		 */
 		RVal orb(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate boolean or
 		 * 
 		 * @param rhs the immediate operand
@@ -531,7 +531,7 @@ public class StructuredSleigh {
 		 */
 		RVal orb(long rhs);
 
-		/**
+	    # /**
 		 * Generate an integer (bitwise) or
 		 * 
 		 * @param rhs the second operand
@@ -539,7 +539,7 @@ public class StructuredSleigh {
 		 */
 		RVal ori(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate an integer (bitwise) or
 		 * 
 		 * @param rhs the immediate operand
@@ -547,7 +547,7 @@ public class StructuredSleigh {
 		 */
 		RVal ori(long rhs);
 
-		/**
+	    # /**
 		 * Generate boolean exclusive or
 		 * 
 		 * @param rhs the second operand
@@ -555,7 +555,7 @@ public class StructuredSleigh {
 		 */
 		RVal xorb(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate boolean exclusive or
 		 * 
 		 * @param rhs the immediate operand
@@ -563,7 +563,7 @@ public class StructuredSleigh {
 		 */
 		RVal xorb(long rhs);
 
-		/**
+	    # /**
 		 * Generate an integer (bitwise) exclusive or
 		 * 
 		 * @param rhs the second operand
@@ -571,7 +571,7 @@ public class StructuredSleigh {
 		 */
 		RVal xori(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate an integer (bitwise) exclusive or
 		 * 
 		 * @param rhs the immediate operand
@@ -579,7 +579,7 @@ public class StructuredSleigh {
 		 */
 		RVal xori(long rhs);
 
-		/**
+	    # /**
 		 * Generate boolean and
 		 * 
 		 * @param rhs the second operand
@@ -587,7 +587,7 @@ public class StructuredSleigh {
 		 */
 		RVal andb(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate boolean and
 		 * 
 		 * @param rhs the immediate operand
@@ -595,7 +595,7 @@ public class StructuredSleigh {
 		 */
 		RVal andb(long rhs);
 
-		/**
+	    # /**
 		 * Generate an integer (bitwise) and
 		 * 
 		 * @param rhs the second operand
@@ -603,7 +603,7 @@ public class StructuredSleigh {
 		 */
 		RVal andi(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate an integer (bitwise) and
 		 * 
 		 * @param rhs the immediate operand (mask)
@@ -611,7 +611,7 @@ public class StructuredSleigh {
 		 */
 		RVal andi(long rhs);
 
-		/**
+	    # /**
 		 * Generate bit shift to the left
 		 * 
 		 * @param rhs the second operand (shift amount)
@@ -619,7 +619,7 @@ public class StructuredSleigh {
 		 */
 		RVal shli(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate bit shift to the left
 		 * 
 		 * @param rhs the immediate operand (shift amount)
@@ -627,7 +627,7 @@ public class StructuredSleigh {
 		 */
 		RVal shli(long rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned bit shift to the right
 		 * 
 		 * @param rhs the second operand (shift amount)
@@ -635,7 +635,7 @@ public class StructuredSleigh {
 		 */
 		RVal shriu(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned bit shift to the right
 		 * 
 		 * @param rhs the immediate operand (shift amount)
@@ -643,7 +643,7 @@ public class StructuredSleigh {
 		 */
 		RVal shriu(long rhs);
 
-		/**
+	    # /**
 		 * Generate signed bit shift to the right
 		 * 
 		 * @param rhs the second operand (shift amount)
@@ -651,7 +651,7 @@ public class StructuredSleigh {
 		 */
 		RVal shris(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate signed bit shift to the right
 		 * 
 		 * @param rhs the immediate operand (shift amount)
@@ -659,7 +659,7 @@ public class StructuredSleigh {
 		 */
 		RVal shris(long rhs);
 
-		/**
+	    # /**
 		 * Generate integer addition
 		 * 
 		 * @param rhs the second operand
@@ -667,7 +667,7 @@ public class StructuredSleigh {
 		 */
 		RVal addi(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate integer addition
 		 * 
 		 * @param rhs the immediate operand
@@ -675,7 +675,7 @@ public class StructuredSleigh {
 		 */
 		RVal addi(long rhs);
 
-		/**
+	    # /**
 		 * Generate float addition
 		 * 
 		 * @param rhs the second operand
@@ -683,7 +683,7 @@ public class StructuredSleigh {
 		 */
 		RVal addf(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate integer subtraction
 		 * 
 		 * @param rhs the second operand
@@ -691,7 +691,7 @@ public class StructuredSleigh {
 		 */
 		RVal subi(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate integer subtraction of an immediate
 		 * 
 		 * @param rhs the immediate operand
@@ -699,7 +699,7 @@ public class StructuredSleigh {
 		 */
 		RVal subi(long rhs);
 
-		/**
+	    # /**
 		 * Generate float subtraction
 		 * 
 		 * @param rhs the second operand
@@ -707,7 +707,7 @@ public class StructuredSleigh {
 		 */
 		RVal subf(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate integer multiplication
 		 * 
 		 * @param rhs the second operand
@@ -715,7 +715,7 @@ public class StructuredSleigh {
 		 */
 		RVal muli(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate integer multiplication
 		 * 
 		 * @param rhs the immediate operand
@@ -723,7 +723,7 @@ public class StructuredSleigh {
 		 */
 		RVal muli(long rhs);
 
-		/**
+	    # /**
 		 * Generate float multiplication
 		 * 
 		 * @param rhs the second operand
@@ -731,7 +731,7 @@ public class StructuredSleigh {
 		 */
 		RVal mulf(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer division
 		 * 
 		 * @param rhs the divisor
@@ -739,7 +739,7 @@ public class StructuredSleigh {
 		 */
 		RVal diviu(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer division
 		 * 
 		 * @param rhs the immediate divisor
@@ -747,7 +747,7 @@ public class StructuredSleigh {
 		 */
 		RVal diviu(long rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer division
 		 * 
 		 * @param rhs the divisor
@@ -755,7 +755,7 @@ public class StructuredSleigh {
 		 */
 		RVal divis(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer division
 		 * 
 		 * @param rhs the immediate divisor
@@ -763,7 +763,7 @@ public class StructuredSleigh {
 		 */
 		RVal divis(long rhs);
 
-		/**
+	    # /**
 		 * Generate float division
 		 * 
 		 * @param rhs the divisor
@@ -771,7 +771,7 @@ public class StructuredSleigh {
 		 */
 		RVal divf(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer division remainder
 		 * 
 		 * @param rhs the divisor
@@ -779,7 +779,7 @@ public class StructuredSleigh {
 		 */
 		RVal remiu(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate unsigned integer division remainder
 		 * 
 		 * @param rhs the immediate divisor
@@ -787,7 +787,7 @@ public class StructuredSleigh {
 		 */
 		RVal remiu(long rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer division remainder
 		 * 
 		 * @param rhs the divisor
@@ -795,7 +795,7 @@ public class StructuredSleigh {
 		 */
 		RVal remis(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate signed integer division remainder
 		 * 
 		 * @param rhs the immediate divisor
@@ -804,14 +804,14 @@ public class StructuredSleigh {
 		RVal remis(long rhs);
 	}
 
-	/**
+    # /**
 	 * A value which can be used on either side of an assignment
 	 */
 	protected interface LVal extends RVal {
 		@Override
 		LVal cast(DataType type);
 
-		/**
+	    # /**
 		 * Generate a field offset
 		 * 
 		 * <p>
@@ -836,7 +836,7 @@ public class StructuredSleigh {
 		 */
 		LVal field(String name);
 
-		/**
+	    # /**
 		 * Generate an array index
 		 * 
 		 * <p>
@@ -859,7 +859,7 @@ public class StructuredSleigh {
 		 */
 		LVal index(RVal index);
 
-		/**
+	    # /**
 		 * Generate an array index
 		 * 
 		 * @see #index(RVal)
@@ -868,7 +868,7 @@ public class StructuredSleigh {
 		 */
 		LVal index(long index);
 
-		/**
+	    # /**
 		 * Assign this value
 		 * 
 		 * @param rhs the value to assign
@@ -876,7 +876,7 @@ public class StructuredSleigh {
 		 */
 		StmtWithVal set(RVal rhs);
 
-		/**
+	    # /**
 		 * Assign this value
 		 * 
 		 * @param rhs the immediate value to assign
@@ -884,7 +884,7 @@ public class StructuredSleigh {
 		 */
 		StmtWithVal set(long rhs);
 
-		/**
+	    # /**
 		 * Generate in-place integer addition
 		 * 
 		 * @param rhs the second operand
@@ -892,7 +892,7 @@ public class StructuredSleigh {
 		 */
 		StmtWithVal addiTo(RVal rhs);
 
-		/**
+	    # /**
 		 * Generate in-place integer addition
 		 * 
 		 * @param rhs the second operand
@@ -900,7 +900,7 @@ public class StructuredSleigh {
 		 */
 		StmtWithVal addiTo(long rhs);
 
-		/**
+	    # /**
 		 * Generate an in-place increment (by 1)
 		 * 
 		 * @return a handle to the resulting value
@@ -908,14 +908,14 @@ public class StructuredSleigh {
 		StmtWithVal inc();
 	}
 
-	/**
+    # /**
 	 * A Sleigh variable
 	 */
 	protected interface Var extends LVal {
 		@Override
 		Var cast(DataType type);
 
-		/**
+	    # /**
 		 * Get the name of the variable as it appears in generated Sleigh code
 		 * 
 		 * @return the name
@@ -923,20 +923,20 @@ public class StructuredSleigh {
 		String getName();
 	}
 
-	/**
+    # /**
 	 * A Structured Sleigh statement
 	 */
 	protected interface Stmt {
 		// Nothing added
 	}
 
-	/**
+    # /**
 	 * A Structured Sleigh statement that also has a value
 	 */
 	protected interface StmtWithVal extends Stmt, RVal {
 	}
 
-	/**
+    # /**
 	 * Utility: Get the named component (field) from the given composite data type
 	 * 
 	 * @param composite the type
@@ -952,7 +952,7 @@ public class StructuredSleigh {
 		return null;
 	}
 
-	/**
+    # /**
 	 * An exception for unrecoverable Structured Sleigh compilation errors
 	 */
 	public static class StructuredSleighError extends RuntimeException {
@@ -965,12 +965,12 @@ public class StructuredSleigh {
 		}
 	}
 
-	/**
+    # /**
 	 * A generated Sleigh label
 	 */
 	@Internal
 	protected interface Label {
-		/**
+	    # /**
 		 * Borrow this label
 		 * 
 		 * <p>
@@ -984,7 +984,7 @@ public class StructuredSleigh {
 		 */
 		abstract Label freshOrBorrow();
 
-		/**
+	    # /**
 		 * Generate code for this label
 		 * 
 		 * <p>
@@ -996,7 +996,7 @@ public class StructuredSleigh {
 		 */
 		abstract StringTree genAnchor();
 
-		/**
+	    # /**
 		 * Generate a reference to this label as it should appear in a Sleigh "{@code goto}"
 		 * statement
 		 * 
@@ -1004,7 +1004,7 @@ public class StructuredSleigh {
 		 */
 		abstract StringTree ref();
 
-		/**
+	    # /**
 		 * Generate a goto statement that targets this label
 		 * 
 		 * @param fall the label following the goto
@@ -1012,7 +1012,7 @@ public class StructuredSleigh {
 		 */
 		abstract StringTree genGoto(Label fall);
 
-		/**
+	    # /**
 		 * Generate a conditional goto statement that targets this label
 		 * 
 		 * @param cond the condition value
@@ -1022,7 +1022,7 @@ public class StructuredSleigh {
 		abstract StringTree genGoto(RVal cond, Label fall);
 	}
 
-	/**
+    # /**
 	 * A fresh Sleigh label
 	 */
 	protected class FreshLabel implements Label {
@@ -1088,13 +1088,13 @@ public class StructuredSleigh {
 		}
 	}
 
-	/**
+    # /**
 	 * A label whose anchor placement is already claimed
 	 */
 	private class BorrowedLabel implements Label {
 		protected final FreshLabel borrowed;
 
-		/**
+	    # /**
 		 * Replicate the given label, but without an anchor
 		 * 
 		 * @param borrowed the already-fresh label
@@ -1135,7 +1135,7 @@ public class StructuredSleigh {
 		}
 	}
 
-	/**
+    # /**
 	 * The virtual fall-through label
 	 * 
 	 * <p>
@@ -1170,7 +1170,7 @@ public class StructuredSleigh {
 		}
 	}
 
-	/**
+    # /**
 	 * The singleton instance of the fall-through "label."
 	 */
 	protected final Label FALL = new FallLabel();
@@ -1192,10 +1192,10 @@ public class StructuredSleigh {
 	// The next "free" temp variable
 	private int nextTemp = 1;
 
-	/** A variable to use for unwanted results */
+    # /** A variable to use for unwanted results */
 	DefaultVar nil;
 
-	/**
+    # /**
 	 * Bind this Structured Sleigh context to the given program's language, compiler spec, and data
 	 * type manager.
 	 * 
@@ -1206,7 +1206,7 @@ public class StructuredSleigh {
 		addDataTypeSource(program.getDataTypeManager());
 	}
 
-	/**
+    # /**
 	 * Bind this Structured Sleigh context to the given compiler spec using only built-in types
 	 * 
 	 * @param cs the compiler spec
@@ -1224,7 +1224,7 @@ public class StructuredSleigh {
 			DefaultDataType.dataType);
 	}
 
-	/**
+    # /**
 	 * Add another data type manager as a possible source of data types
 	 * 
 	 * @see #type(String)
@@ -1234,7 +1234,7 @@ public class StructuredSleigh {
 		dtSources.add(new DataTypeParser(source, dtm, null, AllowedDataTypes.ALL));
 	}
 
-	/**
+    # /**
 	 * Add several data type managers as source of data types
 	 * 
 	 * @see #type(String)
@@ -1246,7 +1246,7 @@ public class StructuredSleigh {
 		}
 	}
 
-	/**
+    # /**
 	 * Import a variable defined by the processor language
 	 * 
 	 * @param name the name of the variable. The name must already be defined by the processor
@@ -1258,7 +1258,7 @@ public class StructuredSleigh {
 		return lang;
 	}
 
-	/**
+    # /**
 	 * Import a register variable
 	 * 
 	 * @param register the register
@@ -1269,7 +1269,7 @@ public class StructuredSleigh {
 		return lang(register.getName(), type);
 	}
 
-	/**
+    # /**
 	 * Internal use only: Create a handle to a parameter
 	 * 
 	 * @param name the name of the parameter
@@ -1280,7 +1280,7 @@ public class StructuredSleigh {
 		return new LocalVar(this, name, type);
 	}
 
-	/**
+    # /**
 	 * Declare a local variable with the given name and type
 	 * 
 	 * <p>
@@ -1299,7 +1299,7 @@ public class StructuredSleigh {
 		return local;
 	}
 
-	/**
+    # /**
 	 * Declare a local variable with the given name and initial value
 	 * 
 	 * <p>
@@ -1315,7 +1315,7 @@ public class StructuredSleigh {
 		return temp;
 	}
 
-	/**
+    # /**
 	 * Allocate a temporary local variable of the given type
 	 * 
 	 * @param type the type
@@ -1325,7 +1325,7 @@ public class StructuredSleigh {
 		return local("__temp" + (nextTemp++), type);
 	}
 
-	/**
+    # /**
 	 * Get a type from a bound data type manager by path
 	 * 
 	 * @param path the full path to the data type, including leading "/"
@@ -1351,7 +1351,7 @@ public class StructuredSleigh {
 		throw new StructuredSleighError("No such type: " + path);
 	}
 
-	/**
+    # /**
 	 * Get several types
 	 * 
 	 * @see #type(String)
@@ -1363,7 +1363,7 @@ public class StructuredSleigh {
 		return Stream.of(paths).map(this::type).collect(Collectors.toList());
 	}
 
-	/**
+    # /**
 	 * Declare an external userop
 	 * 
 	 * @param returnType the userop's "return type"
@@ -1375,7 +1375,7 @@ public class StructuredSleigh {
 		return new DefaultUseropDecl(this, returnType, name, parameterTypes);
 	}
 
-	/**
+    # /**
 	 * Generate a literal (or immediate or constant) value
 	 * 
 	 * <p>
@@ -1392,7 +1392,7 @@ public class StructuredSleigh {
 		return new LiteralLongExpr(this, val, size);
 	}
 
-	/**
+    # /**
 	 * Generate a literal (or immediate or constant) single-precision floating-point value
 	 * 
 	 * @param val the value
@@ -1402,7 +1402,7 @@ public class StructuredSleigh {
 		return litf(val, FloatDataType.dataType);
 	}
 
-	/**
+    # /**
 	 * Generate a literal (or immediate or constant) double-precision floating-point value
 	 * 
 	 * @param val
@@ -1412,7 +1412,7 @@ public class StructuredSleigh {
 		return litf(val, DoubleDataType.dataType);
 	}
 
-	/**
+    # /**
 	 * Generate a literal (or immediate or constant) floating-point value
 	 * 
 	 * @param val
@@ -1423,7 +1423,7 @@ public class StructuredSleigh {
 		return new LiteralFloatExpr(this, val, type);
 	}
 
-	/**
+    # /**
 	 * Generate Sleigh code
 	 * 
 	 * <p>
@@ -1438,7 +1438,7 @@ public class StructuredSleigh {
 		return new RawStmt(this, rawStmt);
 	}
 
-	/**
+    # /**
 	 * Generate a Sleigh expression
 	 * 
 	 * <p>
@@ -1454,7 +1454,7 @@ public class StructuredSleigh {
 		return new RawExpr(this, rawExpr);
 	}
 
-	/**
+    # /**
 	 * The wrapper around an {@link StructuredSleigh#_if(RVal, Runnable)} statement providing
 	 * additional DSL syntax
 	 */
@@ -1465,7 +1465,7 @@ public class StructuredSleigh {
 			this._if = _if;
 		}
 
-		/**
+	    # /**
 		 * Generate an "else" clause for the wrapped "if" statement
 		 * 
 		 * @param body the body of the clause
@@ -1474,7 +1474,7 @@ public class StructuredSleigh {
 			_if.addElse(new BlockStmt(StructuredSleigh.this, body));
 		}
 
-		/**
+	    # /**
 		 * Generate an "else if" clause for the wrapped "if" statement
 		 * 
 		 * <p>
@@ -1496,7 +1496,7 @@ public class StructuredSleigh {
 		return new IfStmt(this, cond, new BlockStmt(this, body));
 	}
 
-	/**
+    # /**
 	 * Generate an "if" statement
 	 * 
 	 * <p>
@@ -1530,7 +1530,7 @@ public class StructuredSleigh {
 		return new WrapIf(doIf(cond, body));
 	}
 
-	/**
+    # /**
 	 * Generate a "while" statement
 	 * 
 	 * <p>
@@ -1551,7 +1551,7 @@ public class StructuredSleigh {
 		new WhileStmt(this, cond, new BlockStmt(this, body));
 	}
 
-	/**
+    # /**
 	 * Generate a "for" statement
 	 * 
 	 * <p>
@@ -1591,7 +1591,7 @@ public class StructuredSleigh {
 		new ForStmt(this, init, cond, step, new BlockStmt(this, body));
 	}
 
-	/**
+    # /**
 	 * Generate a "break" statement
 	 * 
 	 * <p>
@@ -1602,7 +1602,7 @@ public class StructuredSleigh {
 		new BreakStmt(this);
 	}
 
-	/**
+    # /**
 	 * Generate a "continue" statement
 	 * 
 	 * <p>
@@ -1614,7 +1614,7 @@ public class StructuredSleigh {
 		new ContinueStmt(this);
 	}
 
-	/**
+    # /**
 	 * Generate a "result" statement
 	 * 
 	 * <p>
@@ -1632,7 +1632,7 @@ public class StructuredSleigh {
 		new ResultStmt(this, result);
 	}
 
-	/**
+    # /**
 	 * Generate a "return" statement
 	 * 
 	 * <p>
@@ -1649,7 +1649,7 @@ public class StructuredSleigh {
 		new ReturnStmt(this, target);
 	}
 
-	/**
+    # /**
 	 * Generate a "goto" statement to another address in the processor's code space
 	 * 
 	 * @param target the offset of the target address
@@ -1658,7 +1658,7 @@ public class StructuredSleigh {
 		new GotoStmt(this, target);
 	}
 
-	/**
+    # /**
 	 * Get the method lookup for this context
 	 * 
 	 * <p>
@@ -1737,7 +1737,7 @@ public class StructuredSleigh {
 		return builder.build();
 	}
 
-	/**
+    # /**
 	 * Generate all the exported userops and place them into the given map
 	 * 
 	 * @param <T> the type of values used by the userops. For sleigh, this can be anything.
@@ -1753,7 +1753,7 @@ public class StructuredSleigh {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate the userop for a given Java method
 	 * 
 	 * @param <T> the type of values used by the userop. For sleigh, this can be anything.
@@ -1768,7 +1768,7 @@ public class StructuredSleigh {
 		return compile(m.getAnnotation(StructuredUserop.class), lookup, m);
 	}
 
-	/**
+    # /**
 	 * Generate all the exported userops and return them in a map
 	 * 
 	 * <p>
@@ -1784,7 +1784,7 @@ public class StructuredSleigh {
 		return ops;
 	}
 
-	/**
+    # /**
 	 * Validate and compute the size (in bytes) of a floating-point data type
 	 * 
 	 * @param type the type
@@ -1797,7 +1797,7 @@ public class StructuredSleigh {
 		return type.getLength();
 	}
 
-	/**
+    # /**
 	 * Encode a floating-point value
 	 * 
 	 * @param val the value
@@ -1808,7 +1808,7 @@ public class StructuredSleigh {
 		return FloatFormatFactory.getFloatFormat(size).getEncoding(val);
 	}
 
-	/**
+    # /**
 	 * Extension point: Specify whether values of a given type can be assigned to variables of
 	 * another type
 	 * 
@@ -1824,7 +1824,7 @@ public class StructuredSleigh {
 		return varType.isEquivalent(valType);
 	}
 
-	/**
+    # /**
 	 * Extension point: Specify how to handle a type mismatch in an assignment
 	 * 
 	 * <p>
@@ -1837,7 +1837,7 @@ public class StructuredSleigh {
 		Msg.warn(this, "Type mismatch in assignment: " + lhs + " = " + rhs);
 	}
 
-	/**
+    # /**
 	 * Extension point: Specify how to handle a parameter to argument count mismatch
 	 * 
 	 * <p>
@@ -1854,7 +1854,7 @@ public class StructuredSleigh {
 				userop.getParameterTypes().size() + " but got " + arguments.size());
 	}
 
-	/**
+    # /**
 	 * Extension point: Specify how to handle a parameter type mismatch
 	 * 
 	 * <p>
@@ -1869,7 +1869,7 @@ public class StructuredSleigh {
 			": " + value + " is not a " + userop.getParameterTypes().get(position));
 	}
 
-	/**
+    # /**
 	 * Extension point: Specify how to handle a result type mismatch
 	 * 
 	 * <p>
@@ -1883,7 +1883,7 @@ public class StructuredSleigh {
 			routine.retType);
 	}
 
-	/**
+    # /**
 	 * Compute the type of a dereferenced address
 	 * 
 	 * @param addr the value of the pointer
@@ -1899,7 +1899,7 @@ public class StructuredSleigh {
 		return VoidDataType.dataType;
 	}
 
-	/**
+    # /**
 	 * Extension point: Specify how to handle dereference of a non-pointer value
 	 * 
 	 * <p>
@@ -1912,7 +1912,7 @@ public class StructuredSleigh {
 		Msg.warn(this, "Dereference requires pointer type. Got " + addr);
 	}
 
-	/**
+    # /**
 	 * Compute the length (in bytes) of an element of a pointer to an array
 	 * 
 	 * @param addr the value of the pointer
@@ -1927,7 +1927,7 @@ public class StructuredSleigh {
 		return eType.getLength();
 	}
 
-	/**
+    # /**
 	 * Find the type component (field) of a pointer to a composite type
 	 * 
 	 * <p>

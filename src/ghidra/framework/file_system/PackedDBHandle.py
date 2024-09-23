@@ -16,7 +16,7 @@
 package ghidra.framework.store.db;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import db.DBChangeSet;
 import db.DBHandle;

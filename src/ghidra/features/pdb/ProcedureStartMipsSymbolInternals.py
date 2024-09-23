@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  */
 public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 
-	/**
+    # /**
 	 * Factory for "16" version of {@link ProcedureStartMipsSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -45,7 +45,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "32" version of {@link ProcedureStartMipsSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -65,7 +65,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "3216" version of {@link ProcedureStartMipsSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -134,7 +134,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 */
@@ -142,7 +142,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		super(pdb);
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -150,7 +150,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return parentPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -158,7 +158,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return endPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the next pointer.
 	 * @return next pointer.
 	 */
@@ -166,7 +166,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return nextPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the procedure length.
 	 * @return Length.
 	 */
@@ -174,7 +174,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return procedureLength;
 	}
 
-	/**
+    # /**
 	 * Returns the debug start offset.
 	 * @return Debug start offset.
 	 */
@@ -182,7 +182,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return debugStartOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the debug end offset.
 	 * @return Debug end offset.
 	 */
@@ -190,7 +190,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return debugEndOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -198,7 +198,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -206,7 +206,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return symbolOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -214,7 +214,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return symbolSegment;
 	}
 
-	/**
+    # /**
 	 * Returns the register containing the return value
 	 * @return the register.
 	 */
@@ -222,7 +222,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return registerContainingReturnValue;
 	}
 
-	/**
+    # /**
 	 * Returns the register containing the frame pointer
 	 * @return the register.
 	 */
@@ -230,7 +230,7 @@ public class ProcedureStartMipsSymbolInternals extends AbstractSymbolInternals {
 		return registerContainingFramePointer;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

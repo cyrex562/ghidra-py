@@ -46,7 +46,7 @@ import ghidra.program.model.mem.MemBuffer;
 public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		extends AnnotatedEmuSyscallUseropLibrary<T> {
 
-	/**
+    # /**
 	 * The errno values as defined by the OS simulator
 	 */
 	public enum Errno {
@@ -60,7 +60,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 	protected final NavigableSet<Integer> closedFds = new TreeSet<>();
 	protected final Map<Integer, EmuUnixFileDescriptor<T>> descriptors = new HashMap<>();
 
-	/**
+    # /**
 	 * Construct a new library
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -73,7 +73,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		this(machine, fs, program, EmuUnixUser.DEFAULT_USER);
 	}
 
-	/**
+    # /**
 	 * Construct a new library
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -90,7 +90,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		this.intSize = program.getCompilerSpec().getDataOrganization().getIntegerSize();
 	}
 
-	/**
+    # /**
 	 * Get the first available file descriptor
 	 * 
 	 * @return the lowest available descriptor
@@ -103,7 +103,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		return descriptors.size();
 	}
 
-	/**
+    # /**
 	 * Claim the lowest available file descriptor number for the given descriptor object
 	 * 
 	 * <p>
@@ -120,7 +120,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		}
 	}
 
-	/**
+    # /**
 	 * Get the file descriptor object for the given file descriptor number
 	 * 
 	 * @param fd the descriptor number
@@ -137,7 +137,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		}
 	}
 
-	/**
+    # /**
 	 * Release/invalidate the given file descriptor number
 	 * 
 	 * @param fd the file descriptor number
@@ -158,7 +158,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		}
 	}
 
-	/**
+    # /**
 	 * Plug our Sleigh-defined syscalls in
 	 */
 	@Override
@@ -166,7 +166,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		return new UnixStructuredPart();
 	}
 
-	/**
+    # /**
 	 * Convert the flags as defined for this platform to flags understood by the simulator
 	 * 
 	 * @param flags the platform-defined flags
@@ -174,7 +174,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 	 */
 	protected abstract Set<OpenFlag> convertFlags(int flags);
 
-	/**
+    # /**
 	 * A factory method for creating an open file handle
 	 * 
 	 * @param file the file opened by the handle
@@ -185,7 +185,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		return new DefaultEmuUnixFileHandle<>(machine, cSpec, file, convertFlags(flags), user);
 	}
 
-	/**
+    # /**
 	 * Get the platform-specific errno value for the given simulator-defined errno
 	 * 
 	 * @param err the simulator-defined errno
@@ -193,7 +193,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 	 */
 	protected abstract int getErrno(Errno err);
 
-	/**
+    # /**
 	 * Put a descriptor into the process' open file handles
 	 * 
 	 * @param fd the file descriptor value
@@ -206,7 +206,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		}
 	}
 
-	/**
+    # /**
 	 * Place the errno into the machine as expected by the simulated platform's ABI
 	 * 
 	 * @param executor the executor for the thread running this system call
@@ -227,7 +227,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		return false;
 	}
 
-	/**
+    # /**
 	 * The UNIX {@code exit} system call
 	 * 
 	 * <p>
@@ -243,7 +243,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		throw new EmuProcessExitedException(machine.getArithmetic(), status);
 	}
 
-	/**
+    # /**
 	 * The UNIX {@code read} system call
 	 * 
 	 * @param state to receive the thread's state
@@ -268,7 +268,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		return result;
 	}
 
-	/**
+    # /**
 	 * The UNIX {@code write} system call
 	 * 
 	 * @param state to receive the thread's state
@@ -292,7 +292,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		return desc.write(buf);
 	}
 
-	/**
+    # /**
 	 * The UNIX {@code open} system call
 	 * 
 	 * @param state to receive the thread's state
@@ -323,7 +323,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		return arithmetic.fromConst(ifd, intSize);
 	}
 
-	/**
+    # /**
 	 * The UNIX {@code close} system call
 	 * 
 	 * @param fd the file descriptor
@@ -340,7 +340,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		return arithmetic.fromConst(0, intSize);
 	}
 
-	/**
+    # /**
 	 * The UNIX {@code group_exit} system call
 	 * 
 	 * <p>
@@ -355,18 +355,18 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 		throw new EmuProcessExitedException(machine.getArithmetic(), status);
 	}
 
-	/**
+    # /**
 	 * System calls defined using Structured Sleigh
 	 */
 	protected class UnixStructuredPart extends StructuredPart {
-		/** "Extern" declaration of {@code unix_read} */
+	    # /** "Extern" declaration of {@code unix_read} */
 		final UseropDecl unix_read = userop(type("size_t"), "unix_read",
 			types("int", "void *", "size_t"));
-		/** "Extern" declaration of {@code unix_write} */
+	    # /** "Extern" declaration of {@code unix_write} */
 		final UseropDecl unix_write = userop(type("size_t"), "unix_write",
 			types("int", "void *", "size_t"));;
 
-		/**
+	    # /**
 		 * Inline the gather or scatter pattern for an iovec syscall
 		 * 
 		 * <p>
@@ -391,7 +391,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 			_result(tmp_total);
 		}
 
-		/**
+	    # /**
 		 * The UNIX {@code readv} system call
 		 * 
 		 * @param in_fd the file descriptor
@@ -406,7 +406,7 @@ public abstract class AbstractEmuUnixSyscallUseropLibrary<T>
 			gatherScatterIovec(in_fd, in_iovec, in_iovcnt, unix_read);
 		}
 
-		/**
+	    # /**
 		 * The UNIX {@code writev} system call
 		 * 
 		 * @param in_fd the file descriptor

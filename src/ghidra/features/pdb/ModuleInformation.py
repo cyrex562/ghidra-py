@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -68,7 +68,7 @@ public abstract class ModuleInformation {
 		this.pdb = pdb;
 	}
 
-	/**
+    # /**
 	 * Returns the number of files contributing to the module
 	 * @return number of files
 	 */
@@ -76,7 +76,7 @@ public abstract class ModuleInformation {
 		return numFilesContributing;
 	}
 
-	/**
+    # /**
 	 * Returns list of offsets for the module
 	 * @return offsets
 	 */
@@ -84,7 +84,7 @@ public abstract class ModuleInformation {
 		return offsetsArray;
 	}
 
-	/**
+    # /**
 	 * Returns list of file names for the module
 	 * @return file names
 	 */
@@ -92,7 +92,7 @@ public abstract class ModuleInformation {
 		return filenamesArray;
 	}
 
-	/**
+    # /**
 	 * Returns the stream number containing debug information
 	 * @return stream number
 	 */
@@ -100,7 +100,7 @@ public abstract class ModuleInformation {
 		return streamNumberDebugInformation;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the local symbols debug information
 	 * @return size of the local symbols debug information
 	 */
@@ -108,7 +108,7 @@ public abstract class ModuleInformation {
 		return sizeLocalSymbolsDebugInformation;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the older-style line number information
 	 * @return size of the older-style line number information
 	 */
@@ -116,7 +116,7 @@ public abstract class ModuleInformation {
 		return sizeLineNumberDebugInformation;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the C13-style line number information
 	 * @return size of the C13-style line number information
 	 */
@@ -124,7 +124,7 @@ public abstract class ModuleInformation {
 		return sizeC13StyleLineNumberInformation;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the module
 	 * @return name of the module
 	 */
@@ -132,7 +132,7 @@ public abstract class ModuleInformation {
 		return moduleName;
 	}
 
-	/**
+    # /**
 	 * Returns {@link SectionContribution} of the module
 	 * @return {@link SectionContribution} of the module
 	 */
@@ -140,7 +140,7 @@ public abstract class ModuleInformation {
 		return sectionContribution;
 	}
 
-	/**
+    # /**
 	 * Returns the filename for the offset
 	 * @param offset the offset for which the filename was stored
 	 * @return the filename
@@ -152,7 +152,7 @@ public abstract class ModuleInformation {
 	//==============================================================================================
 	// Internal Data Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes the module
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @throws PdbException upon error parsing a string name
@@ -186,7 +186,7 @@ public abstract class ModuleInformation {
 	//==============================================================================================
 	// Abstract Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes the Additionals.  Abstract method filled in by instances to parse additional
 	 *  data pertinent to themselves
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
@@ -194,7 +194,7 @@ public abstract class ModuleInformation {
 	 */
 	protected abstract void parseAdditionals(PdbByteReader reader) throws PdbException;
 
-	/**
+    # /**
 	 * Dumps the Additionals to Writer.  This method is for debugging only
 	 * @param writer the writer
 	 * @throws IOException upon issues writing to the writer
@@ -204,7 +204,7 @@ public abstract class ModuleInformation {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Stores the filename for the offset given
 	 * @param offset the offset for which to store the filename
 	 * @param filename the filename to store
@@ -213,7 +213,7 @@ public abstract class ModuleInformation {
 		filenameByOffset.put(offset, filename);
 	}
 
-	/**
+    # /**
 	 * Dumps this module to the Writer.  This method is for debugging only
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer

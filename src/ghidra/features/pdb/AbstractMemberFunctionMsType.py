@@ -34,7 +34,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 	protected RecordNumber argListRecordNumber;
 	protected int thisAdjuster;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -58,7 +58,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		thisAdjuster = reader.parseInt();
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the return type.
 	 * @return Record number of the return type.
 	 */
@@ -66,7 +66,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return returnValueRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the type for the return value type.
 	 * @return The {@link AbstractMsType} return value type.
 	 */
@@ -74,7 +74,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return pdb.getTypeRecord(returnValueRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CallingConvention}.
 	 * @return the {@link CallingConvention}.
 	 */
@@ -82,7 +82,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return callingConvention;
 	}
 
-	/**
+    # /**
 	 * Returns the function attributes.
 	 * @return The function attributes.
 	 */
@@ -90,7 +90,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return functionAttributes;
 	}
 
-	/**
+    # /**
 	 * Returns if known to be a constructor.
 	 * @return true if constructor.
 	 */
@@ -98,7 +98,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return functionAttributes.isConstructor();
 	}
 
-	/**
+    # /**
 	 * Returns the number of parameters to the function.
 	 * @return The number of parameters.
 	 */
@@ -106,7 +106,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return numParameters;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the arguments list.
 	 * @return The record number of the arguments list.
 	 */
@@ -114,7 +114,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return argListRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the type index for the arguments list.
 	 * @return The {@link AbstractMsType} arguments list.
 	 */
@@ -122,7 +122,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return pdb.getTypeRecord(argListRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the record number for the class containing this method.
 	 * @return The record number of the {@link AbstractMsType} class containing this method.
 	 */
@@ -130,7 +130,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return containingClassRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the type for the class containing this method.
 	 * @return The {@link AbstractMsType} class containing this method.
 	 */
@@ -138,7 +138,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return pdb.getTypeRecord(containingClassRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the record number for the "this" pointer type.
 	 * @return The record number of the {@link AbstractMsType} "this" pointer type.
 	 */
@@ -146,7 +146,7 @@ public abstract class AbstractMemberFunctionMsType extends AbstractMsType {
 		return thisPointerRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the type for the "this" pointer.
 	 * @return The {@link AbstractMsType} "this" pointer.
 	 */

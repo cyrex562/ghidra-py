@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.util.NumericUtilities;
@@ -22,16 +22,16 @@ import java.math.BigInteger;
 import java.util.Arrays;
 
 # /**
- * Class for representing register values that keep track of which bits are actually set.  
- * Values are stored as big-endian: MSB of mask is stored at bytes index 0,
- * MSB of value is stored at (bytes.length/2).
- * 
- * Bytes storage example for 4-byte register:
- *    Index:  0   1   2   3   4   5   6   7
- *          |MSB|   |   |LSB|MSB|   |   |LSB|
- *          | ----MASK----- | ----VALUE---- |
- * 
- */
+# * Class for representing register values that keep track of which bits are actually set.  
+# * Values are stored as big-endian: MSB of mask is stored at bytes index 0,
+# * MSB of value is stored at (bytes.length/2).
+# * 
+# * Bytes storage example for 4-byte register:
+# *    Index:  0   1   2   3   4   5   6   7
+# *          |MSB|   |   |LSB|MSB|   |   |LSB|
+# *          | ----MASK----- | ----VALUE---- |
+# * 
+# */
 public class RegisterValue {
 	private static final int[] START_BYTE_MASK = new int[] { 0xFF, 0x7F, 0x3F, 0x1F, 0xF, 0x7, 0x3,
 		0x1, 0 };
@@ -43,7 +43,7 @@ public class RegisterValue {
 	private int endBit;
 	private Register register;
 
-	/**
+    # /**
 	 * Creates a new RegisterValue for a register that has no value (all mask bits are 0);
 	 * @param register the register associated with this value.
 	 */
@@ -55,7 +55,7 @@ public class RegisterValue {
 		bytes = new byte[mask.length * 2];
 	}
 
-	/**
+    # /**
 	 * Constructs a new RegisterValue object for the given register and value.
 	 * @param value the value to set. All mask bits for the given register are set to "valid" (on).
 	 */
@@ -80,7 +80,7 @@ public class RegisterValue {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructs a new RegisterValue using a specified value and mask
 	 * @param register
 	 * @param value value corresponding to specified register
@@ -105,7 +105,7 @@ public class RegisterValue {
 
 	}
 
-	/**
+    # /**
 	 * Constructs a new RegisterValue object for the given register and the mask/value byte array
 	 * @param register the register associated with this value.  The register specifies which bits
 	 * int the total mask/value arrays are used for this register which may be a sub-register of
@@ -188,7 +188,7 @@ public class RegisterValue {
 		return newBytes;
 	}
 
-	/**
+    # /**
 	 * Returns the register used in this register value object.
 	 * @return the register used in this register value object
 	 */
@@ -196,7 +196,7 @@ public class RegisterValue {
 		return register;
 	}
 
-	/**
+    # /**
 	 * Creates a new RegisterValue. 
 	 * The resulting value is a combination of this RegisterValue and the given RegisterValue,
 	 * where the given RegisterValue's value bits take precedence over this RegisterValue's value. 
@@ -244,14 +244,14 @@ public class RegisterValue {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns this register value in terms of the base register
 	 */
 	public RegisterValue getBaseRegisterValue() {
 		return new RegisterValue(register.getBaseRegister(), bytes);
 	}
 
-	/**
+    # /**
 	 * Returns the value mask that indicates which bits relative to the base register have a
 	 * valid value.
 	 */
@@ -264,7 +264,7 @@ public class RegisterValue {
 		return valueMask;
 	}
 
-	/**
+    # /**
 	 * Returns a value mask which is sized based upon the register
 	 */
 	public BigInteger getValueMask() {
@@ -272,7 +272,7 @@ public class RegisterValue {
 		return valueMask.shiftRight(startBit);
 	}
 
-	/**
+    # /**
 	 * Assign the value to a portion of this register value
 	 * @param subRegister identifies a piece of this register value to be assigned
 	 * @param value new value
@@ -285,7 +285,7 @@ public class RegisterValue {
 		return combineValues(otherValue);
 	}
 
-	/**
+    # /**
 	 * Assign the value to a portion of this register value
 	 * @param subRegister identifies a piece of this register value to be assigned
 	 * @param value new value
@@ -297,7 +297,7 @@ public class RegisterValue {
 		return combineValues(otherValue);
 	}
 
-	/**
+    # /**
 	 * Clears the value bits corresponding to the "ON" bits in the given mask.
 	 * @param mask the byte array containing the mask bits to clear.
 	 * @return a new MaskedBytes object containg the original value bits and mask bits cleared 
@@ -318,7 +318,7 @@ public class RegisterValue {
 		return new RegisterValue(register, resultBytes);
 	}
 
-	/**
+    # /**
 	 * Returns the mask/value bytes for this register value.
 	 * @return the mask/value bytes for this register value.
 	 */
@@ -338,7 +338,7 @@ public class RegisterValue {
 		return result;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -356,7 +356,7 @@ public class RegisterValue {
 		return register == other.register && Arrays.equals(bytes, other.bytes);
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -368,7 +368,7 @@ public class RegisterValue {
 			valStr;
 	}
 
-	/**
+    # /**
 	 * Tests if this RegisterValue contains valid value bits for the entire register.  In otherwords
 	 * getSignedValue() or getUnsignedValue will not return null.
 	 * @return true if all mask bits for the associated register are "ON".
@@ -407,7 +407,7 @@ public class RegisterValue {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the unsigned value for this register if all the appropriate mask bits are "ON". Otherwise,
 	 * null is return.
 	 * @return the value for this register if all the appropriate mask bits are "ON". Otherwise,
@@ -420,7 +420,7 @@ public class RegisterValue {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the unsigned value for this register regardless of the mask bits.  Bits that have "OFF" mask
 	 * bits will have the value of 0.
 	 * @return the unsigned value for this register regardless of the mask bits.  Bits that have "OFF" mask
@@ -464,7 +464,7 @@ public class RegisterValue {
 		return new BigInteger(result);
 	}
 
-	/**
+    # /**
 	 * Returns the signed value for this register if all the appropriate mask bits are "ON". Otherwise,
 	 * null is return.
 	 * @return the signed value for this register if all the appropriate mask bits are "ON". Otherwise,
@@ -477,7 +477,7 @@ public class RegisterValue {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the signed value for this register regardless of the mask bits.  Bits that have "OFF" mask
 	 * bits will have the value of 0.
 	 * @return the signed value for this register regardless of the mask bits.  Bits that have "OFF" mask
@@ -528,7 +528,7 @@ public class RegisterValue {
 		return 1;
 	}
 
-	/**
+    # /**
 	 * Tests if the all the mask bits from startBit (least significant bit) to endBit (most significant bit)
 	 * are on.
 	 * @param startBit the least significant bit position 

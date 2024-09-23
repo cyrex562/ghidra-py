@@ -38,7 +38,7 @@ public class MDMangUtils {
 		// purposefully empty
 	}
 
-	/**
+    # /**
 	 * Returns SymbolPath for the demangled item
 	 * @param parsableItem the demangled item
 	 * @return the symbol path
@@ -47,7 +47,7 @@ public class MDMangUtils {
 		return getSymbolPath(parsableItem, false);
 	}
 
-	/**
+    # /**
 	 * Returns a more simple SymbolPath for the demangled item.  Any embedded object found at
 	 * the main namespace level will have its namespace components retrieved and inserted
 	 * appropriately in the main SymbolPath namespace.  However, embedded objects that are more
@@ -127,7 +127,7 @@ public class MDMangUtils {
 		return item;
 	}
 
-	/**
+    # /**
 	 * Checks that the given String begins with standard "A0x" (under-the-hood MDMang name)
 	 *  pattern or with the "`" pattern that is found with MDQuestionModifier type
 	 * @param anon the input string or the original string if is not standard
@@ -172,7 +172,7 @@ public class MDMangUtils {
 		return String.format("_anon_%08X", num);
 	}
 
-	/**
+    # /**
 	 * Given a number in string format as input, creates the standardized local namespace
 	 *  node string of the format {@code __l2} where {@code 2} is an an example number.
 	 * @param localNumber the input string
@@ -252,7 +252,7 @@ public class MDMangUtils {
 	private static final Pattern DEMANGLED_EMBEDDED_LOCAL_NS_PATTERN =
 		Pattern.compile("::`([0-9]+)'::");
 
-	/**
+    # /**
 	 * Standardize a SymbolPath.  For now replacing local namespace {@code __l#} pattern with
 	 * {@code `#'} pattern.
 	 * <p> Ultimately, this method should be moved to a different utility class, but putting it
@@ -285,7 +285,7 @@ public class MDMangUtils {
 		return new SymbolPath(parts);
 	}
 
-	/**
+    # /**
 	 * Standardize a SymbolPath.  Alternative: replacing local namespace {@code `#'} pattern with
 	 * {@code __l#} pattern.
 	 * <p> Ultimately, this method should be moved to a different utility class, but putting it

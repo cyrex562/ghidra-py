@@ -35,7 +35,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Repeated {
-	/**
+    # /**
 	 * The number of times to repeat the test, must be positive
 	 * 
 	 * @return the count

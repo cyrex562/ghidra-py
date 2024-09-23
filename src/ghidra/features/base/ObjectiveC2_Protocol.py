@@ -24,7 +24,7 @@ import ghidra.program.model.symbol.Namespace;
 import ghidra.util.Conv;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC2_Protocol implements StructConverter {
 	public final static String NAME = "protocol_t";

@@ -15,7 +15,7 @@
  */
 package ghidra;
 
-import java.io.*;
+
 import java.net.URL;
 import java.net.URLDecoder;
 import java.util.*;
@@ -32,7 +32,7 @@ import utility.module.ModuleUtilities;
  */
 public class GhidraJarApplicationLayout extends GhidraApplicationLayout {
 
-	/**
+    # /**
 	 * Constructs a new Ghidra jar application layout object.
 	 * 
 	 * @throws FileNotFoundException if there was a problem getting a user directory.
@@ -93,7 +93,7 @@ public class GhidraJarApplicationLayout extends GhidraApplicationLayout {
 		return Collections.singletonList(extensionInstallDir);
 	}
 
-	/**
+    # /**
 	 * Gets a {@link ResourceFile} from a {@link URL}
 	 * 
 	 * @param url The {@link URL}

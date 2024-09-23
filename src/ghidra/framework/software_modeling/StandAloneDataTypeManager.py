@@ -1,22 +1,22 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.help.UnsupportedOperationException;
@@ -45,8 +45,8 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Basic implementation of the DataTypeManger interface
- */
+# * Basic implementation of the DataTypeManger interface
+# */
 public class StandAloneDataTypeManager extends DataTypeManagerDB implements Closeable {
 
 	private static final String LANGUAGE_VERSION = "Language Version"; // major version only
@@ -76,12 +76,12 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 
 	public static enum ArchiveWarning {
 
-		/**
+	    # /**
 		 * {@link #NONE} indicates a normal archive condition
 		 */
 		NONE(ArchiveWarningLevel.INFO),
 
-		/**
+	    # /**
 		 * {@link #UPGRADED_LANGUAGE_VERSION} indicates an archive which has been open for update
 		 * was upgraded to a newer language version.  This is expected when the {@link Language}
 		 * required by the associated {@link ProgramArchitecture} has a major version change 
@@ -92,7 +92,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 
 		// programArchitectureSummary must be set for the warnings below
 
-		/**
+	    # /**
 		 * {@link #LANGUAGE_NOT_FOUND} indicates the {@link Language} or its appropriate version, 
 		 * required by the associated {@link ProgramArchitecture}, was not found or encountered
 		 * a problem being loaded.  The {@link FileDataTypeManager#getWarningDetail()} may provide
@@ -100,7 +100,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		 */
 		LANGUAGE_NOT_FOUND(ArchiveWarningLevel.ERROR),
 
-		/**
+	    # /**
 		 * {@link #COMPILER_SPEC_NOT_FOUND} indicates the {@link CompilerSpec}, 
 		 * required by the associated {@link ProgramArchitecture}, was not found or encountered
 		 * a problem being loaded.  The {@link FileDataTypeManager#getWarningDetail()} may provide
@@ -109,7 +109,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		 */
 		COMPILER_SPEC_NOT_FOUND(ArchiveWarningLevel.ERROR),
 
-		/**
+	    # /**
 		 * {@link #LANGUAGE_UPGRADE_REQURED} indicates an archive which has been open read-only
 		 * requires an upgraded to a newer language version.  This is expected when the 
 		 * {@link Language} required by the associated {@link ProgramArchitecture} has a major 
@@ -121,7 +121,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		 */
 		LANGUAGE_UPGRADE_REQURED(ArchiveWarningLevel.WARN),
 
-		/**
+	    # /**
 		 * {@link #DATA_ORG_CHANGED} indicates an archive which has been open read-only
 		 * requires an upgraded to adjust for changes in the associated data organization.
 		 */
@@ -133,7 +133,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 			this.level = level;
 		}
 
-		/**
+	    # /**
 		 * Get the warning level
 		 * @return warning level
 		 */
@@ -145,7 +145,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 	private ArchiveWarning warning;
 	private Exception warningDetail;
 
-	/**
+    # /**
 	 * Constructor for new temporary data-type manager using the default DataOrganization.
 	 * Note that this manager does not support the save or saveAs operation.
 	 * @param rootName Name of the root category.
@@ -157,7 +157,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		initTransactionState();
 	}
 
-	/**
+    # /**
 	 * Constructor for new temporary data-type manager using a specified DataOrganization.
 	 * Note that this manager does not support the save or saveAs operation.
 	 * @param rootName Name of the root category.
@@ -171,7 +171,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		initTransactionState();
 	}
 
-	/**
+    # /**
 	 * Constructor for a data-type manager backed by a packed database file.
 	 * When opening for UPDATE an automatic upgrade will be performed if required.
 	 * <p>
@@ -193,7 +193,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		initTransactionState();
 	}
 
-	/**
+    # /**
 	 * Constructor for a data-type manager using a specified DBHandle.
 	 * <br>
 	 * <B>NOTE:</B> {@link #logWarning()} should be invoked immediately after 
@@ -220,7 +220,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		initTransactionState();
 	}
 
-	/**
+    # /**
 	 * Set instance as immutable by disabling use of transactions.  Attempts to start a transaction
 	 * will result in a {@link TerminatedTransactionException}.
 	 */
@@ -228,7 +228,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		isImmutable = true;
 	}
 
-	/**
+    # /**
 	 * Get the {@link ArchiveWarning} which may have occured immediately following 
 	 * instatiation of this {@link StandAloneDataTypeManager}.  {@link ArchiveWarning#NONE}
 	 * will be returned if not warning condition.
@@ -238,7 +238,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return warning;
 	}
 
-	/**
+    # /**
 	 * Get the detail exception associated with {@link ArchiveWarning#LANGUAGE_NOT_FOUND} or
 	 * {@link ArchiveWarning#COMPILER_SPEC_NOT_FOUND} warning (see {@link #getWarning()})
 	 * immediately following instatiation of this {@link StandAloneDataTypeManager}.
@@ -248,7 +248,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return warningDetail;
 	}
 
-	/**
+    # /**
 	 * Get a suitable warning message.  See {@link #getWarning()} for type and its severity level
 	 * {@link ArchiveWarning#level()}.
 	 * @param includeDetails if false simple message returned, otherwise more details are included.
@@ -299,7 +299,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return msg;
 	}
 
-	/**
+    # /**
 	 * Due to the supression of error and warning conditions during instantiation this method should
 	 * be invoked at the end of instatiation when {@link #getName()} and {@link #getPath()} are
 	 * ready to be invoked safely.  Logging will be performed via {@link Msg}.
@@ -471,7 +471,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		super.handleDataOrganizationChange(openMode, monitor);
 	}
 
-	/**
+    # /**
 	 * Get the program architecture information which has been associated with this 
 	 * datatype manager.  If {@link #getProgramArchitecture()} returns null this method
 	 * may still return information if the program architecture was set on an archive 
@@ -487,7 +487,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return super.getProgramArchitectureSummary();
 	}
 
-	/**
+    # /**
 	 * Delete all program architecture related data in response to an
 	 * architecture change when all related data should be removed.
 	 * @throws IOException if IO error occurs
@@ -543,7 +543,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return variableStorageMgr;
 	}
 
-	/**
+    # /**
 	 * Indicates that an program architecture upgrade is required in order
 	 * to constitute associated data.  If true, the associated archive
 	 * must be open for update to allow the upgrade to complete, or a new
@@ -554,7 +554,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return warning == ArchiveWarning.LANGUAGE_UPGRADE_REQURED;
 	}
 
-	/**
+    # /**
 	 * Indicates that a failure occured establishing the program architecture 
 	 * for the associated archive.
 	 * @return true if a failure occured establishing the program architecture 
@@ -564,7 +564,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 			warning == ArchiveWarning.COMPILER_SPEC_NOT_FOUND;
 	}
 
-	/**
+    # /**
 	 * Clear the program architecture setting and all architecture-specific data from this archive.
 	 * Archive will revert to using the default {@link DataOrganization}.
 	 * Archive must be open for update for this method to be used.
@@ -620,24 +620,24 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 	}
 
 	public static enum LanguageUpdateOption {
-		/**
+	    # /**
 		 * All existing storage data should be cleared
 		 */
 		CLEAR,
-		/**
+	    # /**
 		 * An attempt should be made to translate from old-to-new language.
 		 * This has limitations (i.e., similar architecture) and may result in 
 		 * poor register mappings.
 		 */
 		TRANSLATE,
-		/**
+	    # /**
 		 * Variable storage data will be retained as-is but may not de-serialize 
 		 * properly when used.
 		 */
 		UNCHANGED // TODO: Need to test to see if this option is safe and useable
 	}
 
-	/**
+    # /**
 	 * Establish the program architecture for this datatype manager.  The current setting can be 
 	 * determined from {@link #getProgramArchitecture()}.  Archive must be open for update for 
 	 * this method to be used.
@@ -770,7 +770,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		}
 	}
 
-	/**
+    # /**
 	 * Set the architecture-specific details associated with a new datatype manager.
 	 * This method is intended to be used during instantiation of derived implementations.
 	 * @param programArchitecture program architecture details (required)
@@ -812,7 +812,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		super.setProgramArchitecture(programArchitecture, variableStorageMgr, store, monitor);
 	}
 
-	/**
+    # /**
 	 * Determine if a program architecture change is permitted
 	 * @return true if change allowed else false if disallowed
 	 */
@@ -872,7 +872,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return transaction.intValue();
 	}
 
-	/**
+    # /**
 	 * Get the number of active transactions
 	 * @return number of active transactions
 	 */
@@ -952,7 +952,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		notifyRestored();
 	}
 
-	/**
+    # /**
 	 * Clear undo/redo stack.
 	 * <br>
 	 * NOTE: It is important that this always be invoked following any save operation that 
@@ -967,7 +967,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		dbHandle.setMaxUndos(NUM_UNDOS);
 	}
 
-	/**
+    # /**
 	 * Determine if there is a transaction previously undone (see {@link #undo()}) that can be 
 	 * redone (see {@link #redo()}).
 	 * 
@@ -977,7 +977,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return transaction == null && !redoList.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Determine if there is a previous transaction that can be reverted/undone (see {@link #undo()}).
 	 * 
 	 * @return true if there is a previous transaction that can be reverted/undone, else false.
@@ -986,7 +986,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return transaction == null && !undoList.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Get the transaction name that is available for {@link #redo()} (see {@link #canRedo()}).
 	 * @return transaction name that is available for {@link #redo()} or empty String.
 	 */
@@ -997,7 +997,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return "";
 	}
 
-	/**
+    # /**
 	 * Get the transaction name that is available for {@link #undo()} (see {@link #canUndo()}).
 	 * @return transaction name that is available for {@link #undo()} or empty String.
 	 */
@@ -1008,7 +1008,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return "";
 	}
 
-	/**
+    # /**
 	 * Get all transaction names that are available within the {@link #undo()} stack.
 	 * 
 	 * @return all transaction names that are available within the {@link #undo()} stack.
@@ -1020,7 +1020,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return List.of();
 	}
 
-	/**
+    # /**
 	 * Get all transaction names that are available within the {@link #redo()} stack.
 	 * 
 	 * @return all transaction names that are available within the {@link #redo()} stack.
@@ -1071,7 +1071,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the path name associated with the storage of this stand alone
 	 * datatype manager. 
 	 * @return path name or null if not applicable
@@ -1086,7 +1086,7 @@ public class StandAloneDataTypeManager extends DataTypeManagerDB implements Clos
 		return ArchiveType.TEMPORARY;
 	}
 
-	/**
+    # /**
 	 * Update custom storage for function definitions to be unassigned.
 	 * @param monitor task monitor
 	 * @throws CancelledException if task cancelled

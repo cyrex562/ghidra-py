@@ -16,7 +16,7 @@
 package ghidra.feature.fid.db;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.io.FilenameUtils;
@@ -76,7 +76,7 @@ public class FidFile implements Comparable<FidFile> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Sets the active state of the FidFile. FidFiles that are not active will not be used
 	 * when Function ID analysis is performed.
 	 * @param b the active state to set it to.
@@ -86,7 +86,7 @@ public class FidFile implements Comparable<FidFile> {
 		fidFileManager.activeStateChanged(this);
 	}
 
-	/**
+    # /**
 	 * Opens the FidDB for this FidFile.
 	 * @param openForUpdate if true, the database will be opened for update, otherwise it
 	 * will be read-only.
@@ -118,7 +118,7 @@ public class FidFile implements Comparable<FidFile> {
 		return getName();
 	}
 
-	/**
+    # /**
 	 * Returns true if this is a read-only raw database file.
 	 * @return true if this is a read-only raw database file.
 	 */
@@ -126,7 +126,7 @@ public class FidFile implements Comparable<FidFile> {
 		return isInstalled;
 	}
 
-	/**
+    # /**
 	 * Returns true if this FidFile will be included when anayslis runs.
 	 * @return true if this FidFile will be included when anayslis runs.
 	 */
@@ -163,7 +163,7 @@ public class FidFile implements Comparable<FidFile> {
 		return file.compareTo(o.file);
 	}
 
-	/**
+    # /**
 	 * Returns the name of this FidFile (included extension)
 	 * @return  the name of this FidFile (included extension)
 	 */
@@ -171,7 +171,7 @@ public class FidFile implements Comparable<FidFile> {
 		return file.getName();
 	}
 
-	/**
+    # /**
 	 * Returns the name of this FidFile (without extension)
 	 * @return the name of this FidFile (without extension)
 	 */
@@ -179,7 +179,7 @@ public class FidFile implements Comparable<FidFile> {
 		return FilenameUtils.removeExtension(file.getName());
 	}
 
-	/**
+    # /**
 	 * Tests if the Fid database for this FidFile supports the given language.
 	 * @param language the language to test.
 	 * @return true if this Fid Database supports the given language.
@@ -228,7 +228,7 @@ public class FidFile implements Comparable<FidFile> {
 		}
 	}
 
-	/**
+    # /**
 	 *  Comparator for deciding if a target language "matches" an architecture for a library
 	 *  We want processor family, endianness and "size" to match, but variant can be different
 	 */

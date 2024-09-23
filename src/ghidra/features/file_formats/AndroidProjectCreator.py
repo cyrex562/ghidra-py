@@ -15,7 +15,7 @@
  */
 package ghidra.file.eclipse;
 
-import java.io.*;
+
 import java.util.List;
 
 import org.jdom.*;

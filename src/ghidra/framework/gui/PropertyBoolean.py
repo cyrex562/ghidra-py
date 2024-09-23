@@ -29,7 +29,7 @@ public class PropertyBoolean extends JCheckBox implements ItemListener {
 	private PropertyEditor editor;
 	private boolean notifyEditorOfChanges = true;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param pe bean property editor that is used to get the value to show in the text field
 	 */

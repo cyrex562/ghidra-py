@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.*;
 import ghidra.program.model.lang.*;
@@ -27,11 +27,11 @@ import ghidra.program.model.symbol.SourceType;
 import ghidra.util.Msg;
 
 # /**
- * 
- *
- * High-level prototype of a function based on Varnodes, describing the inputs and outputs
- * of this function.
- */
+# * 
+# *
+# * High-level prototype of a function based on Varnodes, describing the inputs and outputs
+# * of this function.
+# */
 public class FunctionPrototype {
 
 	private LocalSymbolMap localsyms; // Prototype backed by symbol map
@@ -52,7 +52,7 @@ public class FunctionPrototype {
 	private boolean isConstruct;	// Function is an object contructor
 	private boolean isDestruct;		// Function is an object destructor
 
-	/**
+    # /**
 	 * Construct a FunctionPrototype backed by a local symbolmap.
 	 * This is only a partial initialization.  It is intended to be followed either by
 	 * grabFromFunction() or readPrototypeXML()
@@ -80,7 +80,7 @@ public class FunctionPrototype {
 		extrapop = PrototypeModel.UNKNOWN_EXTRAPOP;
 	}
 
-	/**
+    # /**
 	 * Construct an internally backed prototype based on a FunctionSignature prototype
 	 * @param proto  is the FunctionSignature used to internally back input parameters
 	 * @param cspec  is the compiler spec used to pick prototype model
@@ -118,7 +118,7 @@ public class FunctionPrototype {
 		}
 	}
 
-	/**
+    # /**
 	 * Populate Function Prototype from information attached to a function in the Program DB.
 	 * 
 	 * @param f is the function to grab prototype from
@@ -180,7 +180,7 @@ public class FunctionPrototype {
 		}
 	}
 
-	/**
+    # /**
 	 * check if the code injection does not return
 	 */
 	private boolean isNoReturnInjection(Function f, String fixupname) {
@@ -198,7 +198,7 @@ public class FunctionPrototype {
 		return !callFixup.isFallThru();
 	}
 
-	/**
+    # /**
 	 * @return the number of defined parameters for this function prototype
 	 */
 	public int getNumParams() {
@@ -208,7 +208,7 @@ public class FunctionPrototype {
 		return params.length;
 	}
 
-	/**
+    # /**
 	 * @param i i'th parameter index
 	 * @return the i'th HighParam to this function prototype or null
 	 * if this prototype is not backed by a LocalSymbolMap
@@ -220,7 +220,7 @@ public class FunctionPrototype {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return parameter definitions if prototype was produced
 	 * from a FunctionSignature or null if backed by a 
 	 * LocalSymbolMap
@@ -229,7 +229,7 @@ public class FunctionPrototype {
 		return params != null ? params.clone() : null;
 	}
 
-	/**
+    # /**
 	 * @return true if this prototype is backed by a LocalSymbolMap, or 
 	 * false if generated from a FunctionSignature.
 	 */
@@ -237,77 +237,77 @@ public class FunctionPrototype {
 		return localsyms != null;
 	}
 
-	/**
+    # /**
 	 * @return the return type for the function
 	 */
 	public DataType getReturnType() {
 		return returntype;
 	}
 
-	/**
+    # /**
 	 * @return the return storage for the function
 	 */
 	public VariableStorage getReturnStorage() {
 		return returnstorage;
 	}
 
-	/**
+    # /**
 	 * @return the number of extra bytes popped off by this functions return
 	 */
 	public int getExtraPop() {
 		return extrapop;
 	}
 
-	/**
+    # /**
 	 * @return true if this function has variable arguments
 	 */
 	public boolean isVarArg() {
 		return dotdotdot;
 	}
 
-	/**
+    # /**
 	 * @return true if this function should be inlined by the decompile
 	 */
 	public boolean isInline() {
 		return isinline;
 	}
 
-	/**
+    # /**
 	 * @return true if calls to this function do not return
 	 */
 	public boolean hasNoReturn() {
 		return noreturn;
 	}
 
-	/**
+    # /**
 	 * @return true if this function is a method taking a 'this' pointer as a parameter
 	 */
 	public boolean hasThisPointer() {
 		return hasThis;
 	}
 
-	/**
+    # /**
 	 * @return true if this function is an (object-oriented) constructor
 	 */
 	public boolean isConstructor() {
 		return isConstruct;
 	}
 
-	/**
+    # /**
 	 * @return true if this function is an (object-oriented) destructor
 	 */
 	public boolean isDestructor() {
 		return isDestruct;
 	}
 
-	/**
+    # /**
 	 * @return calling convention model name specific to the associated compiler spec
 	 */
 	public String getModelName() {
 		return modelname;
 	}
 
-	/**
+    # /**
 	 * Encode this function prototype to a stream.
 	 * @param encoder is the stream encoder
 	 * @param dtmanage is the DataTypeManager for building type reference tags
@@ -403,7 +403,7 @@ public class FunctionPrototype {
 		encoder.closeElement(ELEM_PROTOTYPE);
 	}
 
-	/**
+    # /**
 	 * Decode the function prototype from a {@code <prototype>} element in the stream.
 	 * @param decoder is the stream decoder
 	 * @param pcodeFactory is used to resolve data-type and address space references

@@ -18,7 +18,7 @@ package ghidra.framework.main;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -85,7 +85,7 @@ public class ProjectInfoDialog extends DialogComponentProvider {
 		setRememberSize(false);
 	}
 
-	/**
+    # /**
 	 * Called from the project action manager when the connection state changes on the
 	 * repository.
 	 */

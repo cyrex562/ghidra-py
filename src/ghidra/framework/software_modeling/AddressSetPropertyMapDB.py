@@ -268,7 +268,7 @@ public class AddressSetPropertyMapDB implements AddressSetPropertyMap {
 		invalid = true;
 	}
 
-	/**
+    # /**
 	 * Move the address range to a new starting address.
 	 * @param fromAddr move from address
 	 * @param toAddr move to address

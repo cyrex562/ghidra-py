@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.service.control;
 
-import java.io.IOException;
+
 import java.util.Set;
 
 import db.Transaction;

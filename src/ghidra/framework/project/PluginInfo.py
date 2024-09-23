@@ -41,7 +41,7 @@ import ghidra.framework.plugintool.util.PluginStatus;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface PluginInfo {
-	/**
+    # /**
 	 * The {@link PluginStatus} of this plugin:
 	 * {@link PluginStatus#STABLE STABLE} , {@link PluginStatus#RELEASED RELEASED},
 	 * {@link PluginStatus#HIDDEN HIDDEN}, {@link PluginStatus#UNSTABLE UNSTABLE}
@@ -51,7 +51,7 @@ public @interface PluginInfo {
 	 */
 	PluginStatus status();
 
-	/**
+    # /**
 	 * The package name this plugin belongs in.
 	 * <p>
 	 * Use XYZPluginPackage.NAME
@@ -60,7 +60,7 @@ public @interface PluginInfo {
 	 */
 	String packageName();
 
-	/**
+    # /**
 	 * See PluginCategoryNames
 	 * <p>
 	 * <ul>
@@ -72,7 +72,7 @@ public @interface PluginInfo {
 	 */
 	String category();
 
-	/**
+    # /**
 	 * A brief description of what the plugin does.
 	 * <p>
 	 * This string probably should not end with a "." character.
@@ -81,7 +81,7 @@ public @interface PluginInfo {
 	 */
 	String shortDescription();
 
-	/**
+    # /**
 	 * The long description of what the plugin does.
 	 * <p>
 	 * This string probably should end with a "." character.
@@ -90,35 +90,35 @@ public @interface PluginInfo {
 	 */
 	String description();
 
-	/**
+    # /**
 	 * Signals that this plugin loads slowly.
 	 *
 	 * @return boolean
 	 */
 	boolean isSlowInstallation() default false;
 
-	/**
+    # /**
 	 * List of PluginEvents (classes) that this Plugin consumes.
 	 *
 	 * @return PluginEvent class list, defaults to empty.
 	 */
 	Class<? extends PluginEvent>[] eventsConsumed() default {};
 
-	/**
+    # /**
 	 * List of PluginEvent (classes) that this Plugin produces.
 	 *
 	 * @return PluginEvent class list, defaults to empty.
 	 */
 	Class<? extends PluginEvent>[] eventsProduced() default {};
 
-	/**
+    # /**
 	 * List of service interface Classes that this Plugin requires (depends on).
 	 *
 	 * @return List of Classes, defaults to empty.
 	 */
 	Class<?>[] servicesRequired() default {};
 
-	/**
+    # /**
 	 * List of service interface Classes that this Plugin provides.
 	 *
 	 * @return List of Classes, defaults to empty.

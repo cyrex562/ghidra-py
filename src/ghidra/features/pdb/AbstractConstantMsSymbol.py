@@ -29,7 +29,7 @@ public abstract class AbstractConstantMsSymbol extends AbstractMsSymbol implemen
 	protected Numeric value;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -45,7 +45,7 @@ public abstract class AbstractConstantMsSymbol extends AbstractMsSymbol implemen
 		name = reader.parseString(pdb, strType);
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -53,7 +53,7 @@ public abstract class AbstractConstantMsSymbol extends AbstractMsSymbol implemen
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the Numeric value.
 	 * @return Numeric value.
 	 */
@@ -61,7 +61,7 @@ public abstract class AbstractConstantMsSymbol extends AbstractMsSymbol implemen
 		return value;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

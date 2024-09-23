@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 import ghidra.program.model.data.DataType;
@@ -25,12 +25,12 @@ import ghidra.program.model.symbol.Namespace;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * A function symbol that encapsulates detailed information about a particular function
- * for the purposes of decompilation. The detailed model is provided by a backing HighFunction object.
- */
+# * A function symbol that encapsulates detailed information about a particular function
+# * for the purposes of decompilation. The detailed model is provided by a backing HighFunction object.
+# */
 public class HighFunctionSymbol extends HighSymbol {
 
-	/**
+    # /**
 	 * Construct given an Address, size, and decompiler function model for the symbol.
 	 * The Address is typically the entry point of the function but may be different
 	 * if the function is getting mapped from elsewhere (i.e. the EXTERNAL space). The size

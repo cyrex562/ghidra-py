@@ -1,22 +1,22 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,9 +24,9 @@ import docking.dnd.GenericDataFlavor;
 import ghidra.util.Msg;
 
 # /**
- * Defines data that is available for drag/drop and clipboard transfers.
- * The data is a DataType object.
- */
+# * Defines data that is available for drag/drop and clipboard transfers.
+# * The data is a DataType object.
+# */
 public class DataTypeTransferable implements Transferable, ClipboardOwner {
 
 	// Flavor for this Transferable
@@ -61,7 +61,7 @@ public class DataTypeTransferable implements Transferable, ClipboardOwner {
 	private static List<DataFlavor> flavorList = Arrays.asList(flavors);
 	private DataType dataType;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param dt the dataType being transfered
 	 */
@@ -69,7 +69,7 @@ public class DataTypeTransferable implements Transferable, ClipboardOwner {
 		dataType = dt;
 	}
 
-	/**
+    # /**
 	 * Return all data flavors that this class supports.
 	 */
 	@Override
@@ -77,7 +77,7 @@ public class DataTypeTransferable implements Transferable, ClipboardOwner {
 		return flavors;
 	}
 
-	/**
+    # /**
 	 * Return whether the specifed data flavor is supported.
 	 */
 	@Override
@@ -85,7 +85,7 @@ public class DataTypeTransferable implements Transferable, ClipboardOwner {
 		return flavorList.contains(f);
 	}
 
-	/**
+    # /**
 	 * Return the transfer data with the given data flavor.
 	 */
 	@Override
@@ -99,7 +99,7 @@ public class DataTypeTransferable implements Transferable, ClipboardOwner {
 
 	}
 
-	/**
+    # /**
 	 * Get the string representation for this transferable.
 	 */
 	@Override
@@ -107,7 +107,7 @@ public class DataTypeTransferable implements Transferable, ClipboardOwner {
 		return "DataTypeTransferable";
 	}
 
-	/**
+    # /**
 	 * ClipboardOwner interface method.
 	 */
 	@Override

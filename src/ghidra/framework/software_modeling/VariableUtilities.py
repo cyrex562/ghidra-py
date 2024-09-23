@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.listing;
 
 import java.util.*;
@@ -40,7 +40,7 @@ public class VariableUtilities {
 	private VariableUtilities() {
 	}
 
-	/**
+    # /**
 	 * Get a precedence value for the specified variable.
 	 * This value can be used to assist with LocalVariable.compareTo(Variable var)
 	 * @param var function variable
@@ -72,7 +72,7 @@ public class VariableUtilities {
 		return precedence;
 	}
 
-	/**
+    # /**
 	 * Compare storage varnodes for two lists of variables.  No check is done to ensure that
 	 * storage is considered good/valid (i.e., BAD_STORAGE, UNASSIGNED_STORAGE and VOID_STORAGE
 	 * all have an empty varnode list and would be considered a match)
@@ -92,7 +92,7 @@ public class VariableUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Compare storage varnodes for two lists of variables.  No check is done to ensure that
 	 * storage is considered good/valid (i.e., BAD_STORAGE, UNASSIGNED_STORAGE and VOID_STORAGE
 	 * all have an empty varnode list and would be considered a match)
@@ -114,7 +114,7 @@ public class VariableUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Compare two variables without using the instance specific compareTo method.
 	 * @param v1 a function variable
 	 * @param v2 another function variable
@@ -160,7 +160,7 @@ public class VariableUtilities {
 		return variableStorage.compareTo(otherStorage);
 	}
 
-	/**
+    # /**
 	 * Determine the appropriate data type for an automatic parameter
 	 * @param function function whose auto param datatype is to be determined
 	 * @param returnDataType function's formal return datatype
@@ -192,7 +192,7 @@ public class VariableUtilities {
 		return dtMgr.getPointer(baseType, ptrSize);
 	}
 
-	/**
+    # /**
 	 * Perform variable storage checks using the specified datatype.
 	 * @param storage variable storage whose size must match the specified data type size
 	 * @param dataType a datatype checked using {@link #checkDataType(DataType, boolean, int, Program)}
@@ -204,7 +204,7 @@ public class VariableUtilities {
 		checkStorage(null, storage, dataType, allowSizeMismatch);
 	}
 
-	/**
+    # /**
 	 * Perform variable storage checks using the specified datatype.
 	 * @param function if specified and variable storage size does not match the data-type size
 	 * an attempt will be made to resize the specified storage.
@@ -252,7 +252,7 @@ public class VariableUtilities {
 		return storage;
 	}
 
-	/**
+    # /**
 	 * Check the specified datatype for use as a return, parameter or variable type.  It may
 	 * not be suitable for other uses.  The following datatypes will be mutated into a default pointer datatype:
 	 * <ul>
@@ -320,7 +320,7 @@ public class VariableUtilities {
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * Check the specified datatype for use as a return, parameter or variable type.  It may
 	 * not be suitable for other uses.  The following datatypes will be mutated into a default pointer datatype:
 	 * <ul>
@@ -340,7 +340,7 @@ public class VariableUtilities {
 		return checkDataType(dataType, voidOK, defaultSize, program.getDataTypeManager());
 	}
 
-	/**
+    # /**
 	 * Check the specified datatype for use as a return, parameter or variable type.  It may
 	 * not be suitable for other uses.  The following datatypes will be mutated into a default pointer datatype:
 	 * <ul>
@@ -359,7 +359,7 @@ public class VariableUtilities {
 		return checkDataType(dataType, voidOK, -1, dtMgr);
 	}
 
-	/**
+    # /**
 	 * Perform resize variable storage to desired newSize.  This method has limited ability to grow
 	 * storage if current storage does not have a stack component or if other space constraints
 	 * are exceeded.
@@ -575,7 +575,7 @@ public class VariableUtilities {
 		return new StackAttributes(stackAlign, bias, rightJustify);
 	}
 
-	/**
+    # /**
 	 * Check for variable storage conflict and optionally remove conflicting variables.
 	 * @param function function which corresponds to specified variable
 	 * @param var existing function variable or null for new variable
@@ -618,7 +618,7 @@ public class VariableUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Check for variable storage conflict and optionally remove conflicting variables.
 	 * @param existingVariables variables to check (may contain null entries)
 	 * @param var function variable
@@ -659,7 +659,7 @@ public class VariableUtilities {
 	}
 
 	public interface VariableConflictHandler {
-		/**
+	    # /**
 		 * Provides means of resolving variable conflicts (e.g., removing of conflicts)
 		 * @param conflicts variable conflicts
 		 * @return true if conflicts resolved else false
@@ -703,7 +703,7 @@ public class VariableUtilities {
 		throw new VariableSizeException(msg.toString(), true);
 	}
 
-	/**
+    # /**
 	 * Determine the minimum stack offset for parameters
 	 * @param function function whose stack use is to be examined
 	 * @return stack parameter offset or null if it could not be determined
@@ -730,7 +730,7 @@ public class VariableUtilities {
 		return baseOffset;
 	}
 
-	/**
+    # /**
 	 * Generate a suitable 'this' parameter for the specified function
 	 * @param function function for which a <code>this</code> parameter is to be generated
 	 * @param convention function calling convention
@@ -766,7 +766,7 @@ public class VariableUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Create an empty placeholder class structure whose category is derived from
 	 * the function's class namespace.  NOTE: The structure will not be added to the data
 	 * type manager.
@@ -807,7 +807,7 @@ public class VariableUtilities {
 		return structDT;
 	}
 
-	/**
+    # /**
 	 * Find the structure data type which corresponds to the specified class namespace
 	 * within the specified data type manager.
 	 * 
@@ -839,7 +839,7 @@ public class VariableUtilities {
 		return struct;
 	}
 
-	/**
+    # /**
 	 * Find the structure data type which corresponds to the specified function's class namespace
 	 * within the function's program.
 	 * 
@@ -870,7 +870,7 @@ public class VariableUtilities {
 			function.getProgram().getDataTypeManager());
 	}
 
-	/**
+    # /**
 	 * Find the structure data type which corresponds to the specified class namespace
 	 * within the specified data type manager.
 	 * 
@@ -890,7 +890,7 @@ public class VariableUtilities {
 		return DataTypeUtilities.findExistingClassStruct(dataTypeManager, classNamespace);
 	}
 
-	/**
+    # /**
 	 * Find the structure data type which corresponds to the specified function's class namespace
 	 * within the function's program.
 	 * 

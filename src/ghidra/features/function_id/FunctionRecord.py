@@ -33,17 +33,17 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 	public final static int FORCE_SPECIFIC_FLAG = 8;
 	public final static int FORCE_RELATION_FLAG = 16;
 
-	/**
+    # /**
 	 * All values are stored in the record instead of memoized.
 	 */
 	final DBRecord record;
-	/**
+    # /**
 	 * Need a reference to the FidDb because all strings are stored
 	 * via foreign key (considerable duplication of string values).
 	 */
 	final FidDB fidDb;
 
-	/**
+    # /**
 	 * Package private constructor, to be called from FunctionsTable exclusively.
 	 * @param fid database (for string references)
 	 * @param cache FunctionRecord object cache
@@ -55,14 +55,14 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		this.fidDb = fid;
 	}
 
-	/**
+    # /**
 	 * @return database that owns this record
 	 */
 	public FidDB getFidDb() {
 		return fidDb;
 	}
 
-	/**
+    # /**
 	 * Returns the full hash size.
 	 */
 	@Override
@@ -70,7 +70,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return record.getShortValue(CODE_UNIT_SIZE_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the full hash.
 	 */
 	@Override
@@ -78,7 +78,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return record.getLongValue(FULL_HASH_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the specific hash additional size.
 	 */
 	@Override
@@ -86,7 +86,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return record.getByteValue(SPECIFIC_HASH_ADDITIONAL_SIZE_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the specific hash.
 	 */
 	@Override
@@ -94,7 +94,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return record.getLongValue(SPECIFIC_HASH_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return the name
 	 */
@@ -107,7 +107,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the entry point (memory address).
 	 * @return the entry point
 	 */
@@ -115,7 +115,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return record.getLongValue(ENTRY_POINT_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the domain path in the project upon library creation.
 	 * @return the domain path
 	 */
@@ -128,7 +128,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns whether auto-analysis found a terminator within the flow of the function body.
 	 * @return whether it has a terminator
 	 */
@@ -137,7 +137,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return ((val & HAS_TERMINATOR_FLAG) != 0);
 	}
 
-	/**
+    # /**
 	 * @return true if this function should automatically pass the code unit threshold
 	 */
 	public boolean autoPass() {
@@ -145,7 +145,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return ((val & AUTO_PASS_FLAG) != 0);
 	}
 
-	/**
+    # /**
 	 * @return true if this function should automatically fail the code unit threshold
 	 */
 	public boolean autoFail() {
@@ -153,7 +153,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return ((val & AUTO_FAIL_FLAG) != 0);
 	}
 
-	/**
+    # /**
 	 * @return true if this record can only be matched if the specific hash matches
 	 */
 	public boolean isForceSpecific() {
@@ -161,7 +161,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return ((val & FORCE_SPECIFIC_FLAG) != 0);
 	}
 
-	/**
+    # /**
 	 * @return true if this record can only be matched if one of the functions parent/child
 	 *         relations also matches
 	 */
@@ -169,7 +169,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		byte val = record.getByteValue(FLAGS_COL);
 		return ((val & FORCE_RELATION_FLAG) != 0);
 	}
-	/**
+    # /**
 	 * Returns the record id (primary key).
 	 * @return the record id
 	 */
@@ -177,7 +177,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return record.getKey();
 	}
 
-	/**
+    # /**
 	 * Overridden toString to help debugging.
 	 */
 	@Override
@@ -192,7 +192,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return sb.toString();
 	}
 
-	/**
+    # /**
 	 * Overridden hashCode to support collections.
 	 */
 	@Override
@@ -203,7 +203,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Overridden equals to support collections.
 	 */
 	@Override
@@ -224,7 +224,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the library id for this function.
 	 * @return the library id
 	 */
@@ -232,7 +232,7 @@ public class FunctionRecord extends DatabaseObject implements FidHashQuad {
 		return record.getLongValue(LIBRARY_ID_COL);
 	}
 
-	/**
+    # /**
 	 * Never need to refresh...this database object is immutable.
 	 */
 	@Override

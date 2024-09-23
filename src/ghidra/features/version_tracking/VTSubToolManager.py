@@ -16,7 +16,7 @@
 package ghidra.feature.vt.gui.plugin;
 
 import java.awt.Component;
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.Document;
@@ -654,7 +654,7 @@ public class VTSubToolManager implements VTControllerListener, OptionsChangeList
 		// doesn't use options currently
 	}
 
-	/**
+    # /**
 	 * Get's the source tool from the VT session.
 	 * 
 	 * @return The source tool from the VT session.
@@ -663,7 +663,7 @@ public class VTSubToolManager implements VTControllerListener, OptionsChangeList
 		return sourceTool;
 	}
 
-	/**
+    # /**
 	 * Get's the destination tool from the VT session.
 	 * 
 	 * @return The destination tool from the VT session.
@@ -672,7 +672,7 @@ public class VTSubToolManager implements VTControllerListener, OptionsChangeList
 		return destinationTool;
 	}
 
-	/**
+    # /**
 	 * Checks whether or not the given tool is currently executing a background
 	 * task.
 	 * 
@@ -767,7 +767,7 @@ public class VTSubToolManager implements VTControllerListener, OptionsChangeList
 		return cursorOffset >= 0; // negative offset means offscreen
 	}
 
-	/**
+    # /**
 	 * Gets the address set for the current selection in the tool.
 	 * 
 	 * @param tool
@@ -785,7 +785,7 @@ public class VTSubToolManager implements VTControllerListener, OptionsChangeList
 		return addressSet;
 	}
 
-	/**
+    # /**
 	 * Sets the address set to be the selection in the tool.
 	 * 
 	 * @param tool
@@ -802,7 +802,7 @@ public class VTSubToolManager implements VTControllerListener, OptionsChangeList
 		service.getNavigatable().setSelection(programSelection);
 	}
 
-	/**
+    # /**
 	 * Gets the address set for the current selection in the Source Tool.
 	 * 
 	 * @return the current selection or null.
@@ -811,7 +811,7 @@ public class VTSubToolManager implements VTControllerListener, OptionsChangeList
 		return getSelectionInTool(sourceTool);
 	}
 
-	/**
+    # /**
 	 * Gets the address set for the current selection in the Destination Tool.
 	 * 
 	 * @return the current selection or null.

@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.constantpool;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -51,7 +51,7 @@ public class ConstantPoolClassInfo extends AbstractConstantPoolInfoJava {
 		nameIndex = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the name_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Utf8_info (?4.4.7) structure representing a valid binary class or

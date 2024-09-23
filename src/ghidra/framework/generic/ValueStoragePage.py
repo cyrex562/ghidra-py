@@ -48,7 +48,7 @@ class ValueStoragePage<T> implements Serializable {
 								 // the data structure for key set switches from
 								 // RedBlackKeySet to a BitTree
 	
-	/**
+    # /**
 	 * Constructor
 	 * @param pageSize max number of properties on this page
 	 * @param pageID page identifier
@@ -80,7 +80,7 @@ class ValueStoragePage<T> implements Serializable {
         
         noValueException = new NoValueException();
     }
-	/**
+    # /**
 	 * Returns the next offset after the given offset that has a property
 	 *   value.
 	 * @param offset offset into the page
@@ -89,7 +89,7 @@ class ValueStoragePage<T> implements Serializable {
 		return keySet.getNext(offset);
 	}
 
-	/**
+    # /**
 	 * Adds the key to the keySet. If all values are set,
 	 * use FullBitSet.
 	 * @param key The key to be added to the set.
@@ -142,7 +142,7 @@ class ValueStoragePage<T> implements Serializable {
         }
     }
 
-	/**
+    # /**
 	 * Return the previous offset (before offset) that has a
 	 * property.
 	 * @param offset offset into the page
@@ -151,26 +151,26 @@ class ValueStoragePage<T> implements Serializable {
 		return keySet.getPrevious(offset);
 	}
 
-	/**
+    # /**
 	 * Return the first offset that has a property.
 	 */
 	short getFirst() {
 		return keySet.getFirst();
 	}
-	/**
+    # /**
 	 * Return the last offset that has a property.
 	 */
 	short getLast() {
 		return keySet.getLast();
 	}
-	/**
+    # /**
 	 * Return whether this page has any offset with
 	 * a property.
 	 */
 	boolean isEmpty() {
 		return keySet.isEmpty();
 	}
-	/**
+    # /**
 	 * Return whether the given offset has a property.
 	 * @param offset offset into the page
 	 */
@@ -188,7 +188,7 @@ class ValueStoragePage<T> implements Serializable {
         return offset;
     }
 
-	/**
+    # /**
 	 * Get the object property at the given offset.
 	 * @param offset offset into the page
 	 * @return saveable object value or null if no value or not a {@link Saveable} property type
@@ -215,7 +215,7 @@ class ValueStoragePage<T> implements Serializable {
         return null;
     }
 	
-	/**
+    # /**
 	 * Add the object property at the given offset.
 	 * @param offset offset into the page
 	 * @param value object value to be stored
@@ -228,7 +228,7 @@ class ValueStoragePage<T> implements Serializable {
 		value.save(new ObjectStorageAdapter(table, row));
 	}
 
-	/**
+    # /**
 	 * Get the object property at the given offset.
 	 * @param offset offset into the page
 	 * @return object value
@@ -244,7 +244,7 @@ class ValueStoragePage<T> implements Serializable {
         return null;
     }
 	
-	/**
+    # /**
 	 * Add the object property at the given offset.
 	 * @param offset offset into the page
 	 * @param value object value to be stored
@@ -257,7 +257,7 @@ class ValueStoragePage<T> implements Serializable {
 		table.putObject(row, 0, value);
 	}
 
-	/**
+    # /**
 	 * Get the String property at the given offset.
 	 * @param offset offset into the page
 	 * @return string value for specified offset or null
@@ -272,7 +272,7 @@ class ValueStoragePage<T> implements Serializable {
 		return null;
     }
 
-	/**
+    # /**
 	 * Add the String property at the given offset.
 	 * @param offset offset into the page
 	 * @param value string value to be stored
@@ -285,7 +285,7 @@ class ValueStoragePage<T> implements Serializable {
         table.putString(row,0,value);
     }
 
-	/**
+    # /**
 	 * Get the int property at the given offset.
 	 * @param offset offset into the page
 	 * @return integer value for specified offset
@@ -301,7 +301,7 @@ class ValueStoragePage<T> implements Serializable {
 		throw noValueException;
     }
 	
-	/**
+    # /**
 	 * Add the int property at the given offset.
 	 * @param offset offset into the page
 	 * @param value integer value to be stored
@@ -315,7 +315,7 @@ class ValueStoragePage<T> implements Serializable {
         
     }
 
-	/**
+    # /**
 	 * Get the long property at the given offset.
 	 * @param offset offset into the page
 	 * @return long value for specified offset
@@ -331,7 +331,7 @@ class ValueStoragePage<T> implements Serializable {
 		throw noValueException;
     }
 	
-	/**
+    # /**
 	 * Add the long property at the given offset.
 	 * @param offset offset into the page
 	 * @param value long value to be stored
@@ -345,7 +345,7 @@ class ValueStoragePage<T> implements Serializable {
         
     }
 
-	/**
+    # /**
 	 * Get the short property at the given offset.
 	 * @param offset offset into the page
 	 * @return short value for specified offset
@@ -361,7 +361,7 @@ class ValueStoragePage<T> implements Serializable {
 		throw noValueException;
     }
 	
-	/**
+    # /**
 	 * Add the short property at the given offset.
 	 * @param offset offset into the page
 	 * @param value short value to be stored
@@ -375,7 +375,7 @@ class ValueStoragePage<T> implements Serializable {
         
     }
 
-	/**
+    # /**
 	 * Get the long property at the given offset.
 	 * @param offset offset into the page
 	 * @return byte value for specified offset
@@ -391,7 +391,7 @@ class ValueStoragePage<T> implements Serializable {
 		throw noValueException;
     }
 	
-	/**
+    # /**
 	 * Add the byte property at the given offset.
 	 * @param offset offset into the page
 	 * @param value byte value to be stored
@@ -405,7 +405,7 @@ class ValueStoragePage<T> implements Serializable {
         
     }
     
-	/**
+    # /**
 	 * Mark the given offset as having a property.
 	 * @param offset offset into the page
 	 * @exception ClassCastException thrown if the page
@@ -415,7 +415,7 @@ class ValueStoragePage<T> implements Serializable {
         addKey(offset);
     }
 
-	/**
+    # /**
 	 * Mark the given offset ranges as having a property.
 	 * @param startOffset first offset.
      * @param endOffset last offset.
@@ -424,13 +424,13 @@ class ValueStoragePage<T> implements Serializable {
         addKeys(startOffset, endOffset);
 	}
 
-	/**
+    # /**
 	 * Get the number of properties on this page.
 	 */
     int getSize() {
         return keySet.size();
     }
-	/**
+    # /**
 	 * Remove the property at the given offset.
 	 * @param offset offset into the page
 	 * @return true if the property was removed; return false

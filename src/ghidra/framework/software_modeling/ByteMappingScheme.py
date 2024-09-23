@@ -33,7 +33,7 @@ public class ByteMappingScheme {
 	private final int nonMappedByteCount;
 	private final int mappedSourceByteCount;
 
-	/**
+    # /**
 	 * Construct byte mapping scheme from an encoded mappingScheme value.
 	 * @param encodedMappingScheme encoded mapping scheme value or 0 for a 1:1 default mapping.
 	 * A zero value is accepted to ensure backward compatibility with pre-existing byte-mapped blocks
@@ -55,7 +55,7 @@ public class ByteMappingScheme {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct byte mapping scheme specified as a ratio of mapped bytes to source bytes.
 	 * @param mappedByteCount number of mapped bytes per mappedSourcebyteCount (1..127).  This 
 	 * value must be less-than or equal to schemeSrcByteCount.
@@ -69,7 +69,7 @@ public class ByteMappingScheme {
 		this.nonMappedByteCount = mappedSourceByteCount - mappedByteCount;
 	}
 
-	/**
+    # /**
 	 * Construct byte mapping scheme specified as a ratio of mapped bytes to source bytes.
 	 * The two integer values in the range 1..127 are seperated by a ':' character.  The number of
 	 * mapped bytes must be less-than or equal to the number of source bytes.
@@ -106,7 +106,7 @@ public class ByteMappingScheme {
 		return ratioStr + " mapping";
 	}
 
-	/**
+    # /**
 	 * Get byte mapping scheme as single 14-bit packed value for storage and reconstruction use.
 	 * @return mapping scheme as single 14-bit integer value
 	 */
@@ -118,7 +118,7 @@ public class ByteMappingScheme {
 		return getEncodedMappingScheme(mappedByteCount, mappedSourceByteCount);
 	}
 
-	/**
+    # /**
 	 * Determine this scheme corresponds to a 1:1 byte mapping 
 	 * @return true if 1:1 mapping else false
 	 */
@@ -126,7 +126,7 @@ public class ByteMappingScheme {
 		return mappedSourceByteCount <= 1;
 	}
 
-	/**
+    # /**
 	 * Get the mapped-byte-count (left-hand value in mapping ratio)
 	 * @return mapped-byte-count
 	 */
@@ -137,7 +137,7 @@ public class ByteMappingScheme {
 		return mappedByteCount;
 	}
 
-	/**
+    # /**
 	 * Get the mapped-source-byte-count (right-hand value in mapping ratio)
 	 * @return mapped-source-byte-count
 	 */
@@ -148,7 +148,7 @@ public class ByteMappingScheme {
 		return mappedSourceByteCount;
 	}
 
-	/**
+    # /**
 	 * Calculate the mapped source address for a specified offset with the mapped sub-block.
 	 * @param mappedSourceBaseAddress mapped source base address for sub-block
 	 * @param offsetInSubBlock byte offset within sub-block to be mapped into source
@@ -170,7 +170,7 @@ public class ByteMappingScheme {
 		return mappedSourceBaseAddress.addNoWrap(sourceOffset);
 	}
 
-	/**
+    # /**
 	 * Calculate the address within a mapped block for a specified mapped source offset.
 	 * If the specified mappedSourceOffset corresponds to a non-mapped (i.e., skipped) byte
 	 * the address returned will correspond to the last mapped byte.  Care must be used
@@ -206,7 +206,7 @@ public class ByteMappingScheme {
 		return mappedBlock.getStart().addNoWrap(mappedOffset);
 	}
 
-	/**
+    # /**
 	 * Read bytes into an array from memory utilizing this mapping scheme.
 	 * @param memory program memory
 	 * @param mappedSourceBaseAddress base source memory address for byte-mapped subblock
@@ -259,7 +259,7 @@ public class ByteMappingScheme {
 		return cnt;
 	}
 
-	/**
+    # /**
 	 * Write an array of bytes to memory utilizing this mapping scheme.  
 	 * @param memory program memory
 	 * @param mappedSourceBaseAddress base source memory address for byte-mapped subblock
@@ -297,7 +297,7 @@ public class ByteMappingScheme {
 		}
 	}
 
-	/**
+    # /**
 	 * Validate mapping scheme.  This scheme is specified as a ratio of mapped bytes to source bytes.
 	 * @param schemeDestByteCount number of mapped bytes per mappedSourcebyteCount (1..127).  This 
 	 * value must be less-than or equal to schemeSrcByteCount.
@@ -313,7 +313,7 @@ public class ByteMappingScheme {
 		}
 	}
 
-	/**
+    # /**
 	 * Get encoded mapping scheme as a single value for storage purposes.  This scheme value 
 	 * identifies the ratio of mapped bytes to source bytes.  Value is encoded as two 7-bit 
 	 * values corresponding to the destination and source byte counts.
@@ -328,7 +328,7 @@ public class ByteMappingScheme {
 		return (schemeDestByteCount << 7) | (schemeSrcByteCount & 0x7F);
 	}
 
-	/**
+    # /**
 	 * Extract the mapping scheme mapped-byte-count from a mappingScheme value.
 	 * @param mappingScheme mapping scheme
 	 * @return mapped-byte-count (aka schemeDestByteCount)
@@ -341,7 +341,7 @@ public class ByteMappingScheme {
 		return mappedByteCount;
 	}
 
-	/**
+    # /**
 	 * Extract the mapping ratio mapped-source-byte-count from a mappingScheme value.
 	 * @param mappingScheme mapping scheme
 	 * @return mapped-source-byte-count (aka schemeSrcByteCount)

@@ -36,23 +36,23 @@ public abstract class ToolTipInfo<T> {
 		tooltipComponent = createToolTipComponent();
 	}
 
-	/**
+    # /**
 	 * Creates a tool tip component 
 	 * @return the tool tip component
 	 */
 	protected abstract JComponent createToolTipComponent();
 
-	/**
+    # /**
 	 * Signals for the implementation to emphasis the original graph object passed to this info
 	 */
 	protected abstract void emphasize();
 
-	/**
+    # /**
 	 * Signals for the implementation to turn off emphasis
 	 */
 	protected abstract void deEmphasize();
 
-	/**
+    # /**
 	 * Returns the mouse event from this tool tip info
 	 * @return the mouse event from this tool tip info
 	 */
@@ -60,7 +60,7 @@ public abstract class ToolTipInfo<T> {
 		return event;
 	}
 
-	/**
+    # /**
 	 * Returns the tool tip component created by this info
 	 * @return the tool tip component created by this info
 	 */

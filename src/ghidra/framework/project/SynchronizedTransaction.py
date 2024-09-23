@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.framework.model.AbortedTransactionListener;
@@ -142,7 +142,7 @@ class SynchronizedTransaction implements TransactionInfo {
 		throw new IllegalStateException("unknown domain object");
 	}
 
-	/**
+    # /**
 	 * End all domain object transactions and keep track as to which ones 
 	 * resulted in a low-level transaction.
 	 * @param commit indicates if all domain object hold transactions

@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.analysis.rust;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import org.xml.sax.SAXException;

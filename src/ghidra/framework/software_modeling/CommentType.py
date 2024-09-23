@@ -20,7 +20,7 @@ import ghidra.program.model.listing.CodeUnit;
 
 public class CommentType {
 
-	/**
+    # /**
 	 * Get the comment type from the current location. If the cursor
 	 * is not over a comment, then just return EOL as the default.
 	 * @param cu

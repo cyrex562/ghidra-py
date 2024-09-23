@@ -1,19 +1,19 @@
 # /* ###
- * IP: GHIDRA
- * REVIEWED: YES
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# * REVIEWED: YES
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.program.model.address.Address;
@@ -22,20 +22,20 @@ import ghidra.util.SystemUtilities;
 public class InstructionBlockFlow implements Comparable<InstructionBlockFlow> {
 
 	public enum Type { // ordered by disassembly priority
-		/**
+	    # /**
 		 * <code>PRIORITY</code> is the highest priority flow start
 		 */
 		PRIORITY,
-		/**
+	    # /**
 		 * <code>BRANCH</code> is a normal block branch flow within an InstructionSet 
 		 */
 		BRANCH,
-		/**
+	    # /**
 		 * <code>CALL_FALLTHROUGH</code> is fall-through flow from a CALL instruction
 		 * which must be deferred until all branch flows are processed.
 		 */
 		CALL_FALLTHROUGH,
-		/**
+	    # /**
 		 * <code>CALL</code> is a call flow which always starts a new InstructionSet.
 		 */
 		CALL
@@ -51,7 +51,7 @@ public class InstructionBlockFlow implements Comparable<InstructionBlockFlow> {
 		this.type = type;
 	}
 
-	/**
+    # /**
 	 * Get the flow destination address
 	 * @return flow destination address
 	 */
@@ -59,7 +59,7 @@ public class InstructionBlockFlow implements Comparable<InstructionBlockFlow> {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Get the flow from address
 	 * @return flow from address (may be null)
 	 */
@@ -67,7 +67,7 @@ public class InstructionBlockFlow implements Comparable<InstructionBlockFlow> {
 		return flowFrom;
 	}
 
-	/**
+    # /**
 	 * @return flow type
 	 */
 	public Type getType() {

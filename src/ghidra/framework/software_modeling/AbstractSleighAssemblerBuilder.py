@@ -80,7 +80,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return lang;
 	}
 
-	/**
+    # /**
 	 * Do the actual work to construct an assembler from a SLEIGH language
 	 * 
 	 * @throws SleighException if there's an issue accessing the language
@@ -118,7 +118,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return newAssembler(selector, program);
 	}
 
-	/**
+    # /**
 	 * Invert a varnode list to a map suitable for use with {@link AssemblyStringMapTerminal}
 	 * 
 	 * @param vnlist the varnode list symbol
@@ -137,7 +137,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return MultiMapUtils.unmodifiableMultiValuedMap(result);
 	}
 
-	/**
+    # /**
 	 * Invert a value map to a map suitable for use with {@link AssemblyNumericMapTerminal}
 	 * 
 	 * @param vm the value map symbol
@@ -153,7 +153,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return Collections.unmodifiableMap(result);
 	}
 
-	/**
+    # /**
 	 * Invert a name table to a map suitable for use with {@link AssemblyStringMapTerminal}
 	 * 
 	 * @param ns the name symbol
@@ -171,7 +171,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return MultiMapUtils.unmodifiableMultiValuedMap(result);
 	}
 
-	/**
+    # /**
 	 * Convert the given operand symbol to an {@link AssemblySymbol}
 	 * 
 	 * <p>
@@ -224,7 +224,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return built;
 	}
 
-	/**
+    # /**
 	 * Obtain the p-code result handle for the given operand
 	 * 
 	 * <p>
@@ -261,7 +261,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return htpl;
 	}
 
-	/**
+    # /**
 	 * Build a portion of the grammar representing a table of constructors
 	 * 
 	 * @param subtable the table
@@ -298,7 +298,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return subgrammar;
 	}
 
-	/**
+    # /**
 	 * Extension point: Allows a chance to modify or derive a new production from a given one.
 	 * 
 	 * @param subgrammar the sub-grammar for the sub-table symbol being processed
@@ -311,7 +311,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		subgrammar.addProduction(lhs, rhs, pattern, cons, indices);
 	}
 
-	/**
+    # /**
 	 * Build the full grammar for the language
 	 */
 	protected void buildGrammar() {
@@ -352,14 +352,14 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		}
 	}
 
-	/**
+    # /**
 	 * Build the default context for the language
 	 */
 	protected void buildContext() {
 		defaultContext = new AssemblyDefaultContext(lang);
 	}
 
-	/**
+    # /**
 	 * Build the context transition graph for the language
 	 */
 	protected void buildContextGraph() {
@@ -368,7 +368,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		}
 	}
 
-	/**
+    # /**
 	 * Build the parser for the language
 	 */
 	protected void buildParser() {
@@ -377,7 +377,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		}
 	}
 
-	/**
+    # /**
 	 * Get the built grammar for the language
 	 * 
 	 * @return the grammar
@@ -386,7 +386,7 @@ public abstract class AbstractSleighAssemblerBuilder< //
 		return grammar;
 	}
 
-	/**
+    # /**
 	 * Get the built parser for the language
 	 * 
 	 * @return the parser

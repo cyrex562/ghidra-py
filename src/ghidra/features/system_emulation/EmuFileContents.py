@@ -33,7 +33,7 @@ package ghidra.pcode.emu.sys;
  * @param <T> the type of values in the file
  */
 public interface EmuFileContents<T> {
-	/**
+    # /**
 	 * Copy values from the file into the given buffer
 	 * 
 	 * @param offset the offset in the file to read
@@ -43,7 +43,7 @@ public interface EmuFileContents<T> {
 	 */
 	long read(long offset, T buf, long fileSize);
 
-	/**
+    # /**
 	 * Write values from the given buffer into the file
 	 * 
 	 * @param offset the offset in the file to write
@@ -53,7 +53,7 @@ public interface EmuFileContents<T> {
 	 */
 	long write(long offset, T buf, long curSize);
 
-	/**
+    # /**
 	 * Erase the contents
 	 * 
 	 * <p>

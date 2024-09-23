@@ -38,32 +38,32 @@ import utility.module.ModuleUtilities;
  */
 public class ExtensionDetails implements Comparable<ExtensionDetails> {
 
-	/** Absolute path to where this extension is installed. If not installed, this will be null. */
+    # /** Absolute path to where this extension is installed. If not installed, this will be null. */
 	private File installDir;
 
-	/**
+    # /**
 	 * Absolute path to where the original source archive (zip) for this extension can be found. If
 	 * there is no archive (likely because this is an extension that comes pre-installed with
 	 * Ghidra, or Ghidra is being run in development mode), this will be null.
 	 */
 	private String archivePath;
 
-	/** Name of the extension. This must be unique.*/
+    # /** Name of the extension. This must be unique.*/
 	private String name;
 
-	/** Brief description, for display purposes only.*/
+    # /** Brief description, for display purposes only.*/
 	private String description;
 
-	/** Date when the extension was created, for display purposes only.*/
+    # /** Date when the extension was created, for display purposes only.*/
 	private String createdOn;
 
-	/** Author of the extension, for display purposes only.*/
+    # /** Author of the extension, for display purposes only.*/
 	private String author;
 
-	/** The extension version */
+    # /** The extension version */
 	private String version;
 
-	/**
+    # /**
 	 * Constructor.
 	 * 
 	 * @param name unique name of the extension; cannot be null
@@ -112,7 +112,7 @@ public class ExtensionDetails implements Comparable<ExtensionDetails> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the location where this extension is installed. If the extension is not installed 
 	 * this will be null.
 	 * 
@@ -133,7 +133,7 @@ public class ExtensionDetails implements Comparable<ExtensionDetails> {
 		this.installDir = installDir;
 	}
 
-	/**
+    # /**
 	 * Returns the location where the extension archive is located.  The extension archive concept
 	 * is not used for all extensions, but is used for delivering extensions as part of a 
 	 * distribution.
@@ -193,7 +193,7 @@ public class ExtensionDetails implements Comparable<ExtensionDetails> {
 		this.version = version;
 	}
 
-	/**
+    # /**
 	 * Returns URLs for all jar files living in the {extension dir}/lib directory for an installed
 	 * extension.
 	 * 
@@ -219,7 +219,7 @@ public class ExtensionDetails implements Comparable<ExtensionDetails> {
 		return paths;
 	}
 
-	/**
+    # /**
 	 * An extension is known to be installed if it has a valid installation path AND that path
 	 * contains a Module.manifest file.   Extensions that are {@link #isPendingUninstall()} are 
 	 * still on the filesystem, may be in use by the tool, but will be removed upon restart.
@@ -247,7 +247,7 @@ public class ExtensionDetails implements Comparable<ExtensionDetails> {
 		return f.exists();
 	}
 
-	/**
+    # /**
 	 * Returns true if this extension is marked to be uninstalled.  The contents of the extension
 	 * still exist and the tool may still be using the extension, but on restart, the extension will
 	 * be removed.
@@ -267,7 +267,7 @@ public class ExtensionDetails implements Comparable<ExtensionDetails> {
 		return f.exists();
 	}
 
-	/**
+    # /**
 	 * Returns true if this extension is installed under an installation folder or inside of a 
 	 * source control repository folder.
 	 * @return true if this extension is installed under an installation folder or inside of a 
@@ -294,7 +294,7 @@ public class ExtensionDetails implements Comparable<ExtensionDetails> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Converts the module manifest and extension properties file that are in an installed state to 
 	 * an uninstalled state.
 	 * 
@@ -342,7 +342,7 @@ public class ExtensionDetails implements Comparable<ExtensionDetails> {
 		return success;
 	}
 
-	/**
+    # /**
 	 * A companion method for {@link #markForUninstall()} that allows extensions marked for cleanup 
 	 * to be restored to the installed state.
 	 * <p>

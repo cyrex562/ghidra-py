@@ -30,7 +30,7 @@ package ghidra.framework.model;
  */
 public interface EventType {
 
-	/**
+    # /**
 	 * Returns the unique id assigned to this event type. The value is guaranteed to be constant
 	 * for any given run of the application, but can vary from run to run.
 	 * @return the unique event id assigned to this EventType.

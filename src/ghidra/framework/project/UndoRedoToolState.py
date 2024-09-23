@@ -23,7 +23,7 @@ import java.util.*;
 
 public class UndoRedoToolState {
 	private List<PluginState> states;
-	/**
+    # /**
 	 * Construct a TransientPluginState
 	 * @param plugins array of plugins to get transient state for
 	 */

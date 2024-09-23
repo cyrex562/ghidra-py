@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
 import java.util.ArrayList;
@@ -34,17 +34,17 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Symbol class for functions.
- * 
- * Symbol Data Usage:
- *   EXTERNAL:
- *   	String stringData - external memory address/label
- */
+# * Symbol class for functions.
+# * 
+# * Symbol Data Usage:
+# *   EXTERNAL:
+# *   	String stringData - external memory address/label
+# */
 public class FunctionSymbol extends SymbolDB {
 
 	private FunctionManagerDB functionMgr;
 
-	/**
+    # /**
 	 * Construct a new FunctionSymbol
 	 * @param symbolMgr the symbol manager.
 	 * @param cache symbol object cache
@@ -57,7 +57,7 @@ public class FunctionSymbol extends SymbolDB {
 		this.functionMgr = symbolMgr.getFunctionManager();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#getSymbolType()
 	 */
 	@Override
@@ -129,7 +129,7 @@ public class FunctionSymbol extends SymbolDB {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Recreate a symbol with the function symbol's name because deleting the function 
 	 * does not mean that we want to lose the function name (that is our policy).
 	 */

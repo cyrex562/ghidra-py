@@ -17,7 +17,7 @@
 
 package ghidra.program.model.util;
 
-import java.io.*;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

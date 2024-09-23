@@ -30,7 +30,7 @@ public class AssemblyParseTransitionTable {
 	// a map for the (sparse) table
 	private final Map<TableEntryKey, Integer> map = new TreeMap<>();
 
-	/**
+    # /**
 	 * Put an entry into the state machine
 	 * 
 	 * <p>
@@ -46,7 +46,7 @@ public class AssemblyParseTransitionTable {
 		return map.put(new TableEntryKey(fromState, next), newState);
 	}
 
-	/**
+    # /**
 	 * Get an entry from the state machine
 	 * 
 	 * @param fromState the source state
@@ -57,7 +57,7 @@ public class AssemblyParseTransitionTable {
 		return map.get(new TableEntryKey(fromState, next));
 	}
 
-	/**
+    # /**
 	 * Traverse every entry in the table, invoking {@link Consumer#accept(Object)} on each
 	 * 
 	 * @param consumer the callback

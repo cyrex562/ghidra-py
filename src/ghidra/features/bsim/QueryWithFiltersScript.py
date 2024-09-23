@@ -165,11 +165,11 @@ public class QueryWithFiltersScript extends GhidraScript {
 		}
 	}
 
-	/***********************************************************************
+    # /***********************************************************************
 	 * PRIVATE METHODS
 	 ***********************************************************************/
 
-	/**
+    # /**
 	 * Adds a filter to the given filter container.
 	 * 
 	 * @param filterTemplate the filter type to add
@@ -184,7 +184,7 @@ public class QueryWithFiltersScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Queries the database and returns the results. 
 	 * 
 	 * @param qInfo contains all information required for the query
@@ -202,7 +202,7 @@ public class QueryWithFiltersScript extends GhidraScript {
 		return resultRows;
 	}
 
-	/**
+    # /**
 	 * Creates predicates that will be used to filter out functions. This example provides three
 	 * different methods of doing this:
 	 * 
@@ -249,7 +249,7 @@ public class QueryWithFiltersScript extends GhidraScript {
 		preFilter.addPredicate(QueryWithFiltersScript::isNotAnalysisSourceType);
 	}
 
-	/**
+    # /**
 	 * Returns a set of ALL functions (no stubs) in the given program.
 	 * 
 	 * @param program the program to get the functions from
@@ -264,7 +264,7 @@ public class QueryWithFiltersScript extends GhidraScript {
 		return functions;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given function is NOT an analysis type.
 	 * 
 	 * @param program the current program
@@ -282,7 +282,7 @@ public class QueryWithFiltersScript extends GhidraScript {
 		return function.getSymbol().getSource() != SourceType.ANALYSIS;
 	}
 
-	/**
+    # /**
 	 * Prints a sorted list of executables represented in the function matches.
 	 * 
 	 * @param filteredRows list of function results
@@ -309,7 +309,7 @@ public class QueryWithFiltersScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Prints information about each function in the result set.
 	 * 
 	 * @param resultRows the list of rows containing the info to print

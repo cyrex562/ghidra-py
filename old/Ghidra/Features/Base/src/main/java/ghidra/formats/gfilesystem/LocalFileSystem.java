@@ -17,7 +17,7 @@ package ghidra.formats.gfilesystem;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.*;
+
 import java.nio.file.AccessMode;
 import java.util.*;
 

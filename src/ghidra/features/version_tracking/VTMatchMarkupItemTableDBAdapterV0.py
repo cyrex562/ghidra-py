@@ -17,7 +17,7 @@ package ghidra.feature.vt.api.db;
 
 import static ghidra.feature.vt.api.db.VTMatchMarkupItemTableDBAdapter.MarkupTableDescriptor.*;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.feature.vt.api.impl.MarkupItemStorage;

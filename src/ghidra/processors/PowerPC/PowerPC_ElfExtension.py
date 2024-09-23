@@ -130,7 +130,7 @@ public class PowerPC_ElfExtension extends ElfExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Determine if program's cspec has defined the get_pc_thunk_lr call-fixup
 	 * @param program
 	 * @return true if get_pc_thunk_lr call-fixup is defined
@@ -144,7 +144,7 @@ public class PowerPC_ElfExtension extends ElfExtension {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Identify presence of blrl instruction within .got section with execute permission.
 	 * The instruction will be disassembled and transformed into a get_pc_thunk_lr function
 	 * with an applied call-fixup.
@@ -211,7 +211,7 @@ public class PowerPC_ElfExtension extends ElfExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Check for trailing BLRL instruction at end of GOT block.
 	 * Searching from the end of the .got any non-zero entry will
 	 * cause the search to end within that .got
@@ -249,7 +249,7 @@ public class PowerPC_ElfExtension extends ElfExtension {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Identify PowerPC VLE sections and set the 'vle' context bit to enable
 	 * proper code disassembly.
 	 * @param elfLoadHelper Elf load helper object

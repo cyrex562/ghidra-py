@@ -16,12 +16,12 @@ import BaseLexer;
 }
 
 /**
- * This is the lexer used for the display portion of the sleigh grammar. It reserves the word 'is'
- * so that it can clearly tell where the display portion ends. It also adds three special symbols
- * that would not otherwise be recognized by the core lexer, so that language modelers can use them
- * in assembly print pieces. Furthermore, it moves whitespace into the default channel so that
- * language modelers can control whether or not whitespace is printed.
- */
+# * This is the lexer used for the display portion of the sleigh grammar. It reserves the word 'is'
+# * so that it can clearly tell where the display portion ends. It also adds three special symbols
+# * that would not otherwise be recognized by the core lexer, so that language modelers can use them
+# * in assembly print pieces. Furthermore, it moves whitespace into the default channel so that
+# * language modelers can control whether or not whitespace is printed.
+# */
 
 // Characters without meaning except for the display portion
 DISPCHAR

@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.program.model.address.Address;
@@ -35,9 +35,9 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
 # /**
- * Standard analysis for parameter lists
- *
- */
+# * Standard analysis for parameter lists
+# *
+# */
 public class ParamListStandard implements ParamList {
 
 	protected int numgroup;			// Number of "groups" in this parameter convention
@@ -49,7 +49,7 @@ public class ParamListStandard implements ParamList {
 	protected ModelRule[] modelRules;	// Rules to apply when assigning addresses
 	protected AddressSpace spacebase;	// Space containing relative offset parameters
 
-	/**
+    # /**
 	 * Find the (first) entry containing range
 	 * @param loc  is base address of the range
 	 * @param size is the size of the range in bytes
@@ -67,7 +67,7 @@ public class ParamListStandard implements ParamList {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Assign storage for given parameter class, using the fallback assignment algorithm
 	 * 
 	 * Given a resource list, a data-type, and the status of previously allocated slots,
@@ -114,7 +114,7 @@ public class ParamListStandard implements ParamList {
 		return AssignAction.FAIL;
 	}
 
-	/**
+    # /**
 	 * Fill in the Address and other details for the given parameter
 	 * 
 	 * Attempt to apply a ModelRule first. If these do not succeed, use the fallback assignment algorithm.
@@ -143,14 +143,14 @@ public class ParamListStandard implements ParamList {
 		return assignAddressFallback(store, dt, false, status, res);
 	}
 
-	/**
+    # /**
 	 * @return the number of ParamEntry objets in this list
 	 */
 	public int getNumParamEntry() {
 		return entry.length;
 	}
 
-	/**
+    # /**
 	 * Within this list, get the ParamEntry at the given index
 	 * @param index is the given index
 	 * @return the selected ParamEntry

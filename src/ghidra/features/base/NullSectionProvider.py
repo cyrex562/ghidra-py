@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.sectionprovider;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.util.task.TaskMonitor;

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.external;
 
 import ghidra.app.util.NamespaceUtils;
@@ -32,7 +32,7 @@ public class ExternalLocationDB implements ExternalLocation {
 	private ExternalManagerDB extMgr;
 	private SymbolDB symbol;
 
-	/**
+    # /**
 	 * Creates an externalLocationDB using a symbol
 	 * at the same external space address.
 	 * @param extMgr the ExternalManager.
@@ -50,7 +50,7 @@ public class ExternalLocationDB implements ExternalLocation {
 		return symbol;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.ExternalLocation#getLibraryName()
 	 */
 	@Override
@@ -68,7 +68,7 @@ public class ExternalLocationDB implements ExternalLocation {
 
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.ExternalLocation#getParentNameSpace()
 	 */
 	@Override
@@ -76,7 +76,7 @@ public class ExternalLocationDB implements ExternalLocation {
 		return symbol.getParentNamespace();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.ExternalLocation#getParentName()
 	 */
 	@Override
@@ -88,7 +88,7 @@ public class ExternalLocationDB implements ExternalLocation {
 		return symbol.getParentNamespace().getID();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.ExternalLocation#getLabel()
 	 */
 	@Override
@@ -106,7 +106,7 @@ public class ExternalLocationDB implements ExternalLocation {
 		return symbol.getSource();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.ExternalLocation#getAddress()
 	 */
 	@Override
@@ -114,7 +114,7 @@ public class ExternalLocationDB implements ExternalLocation {
 		return getExternalData(symbol).getAddress(extMgr.getAddressMap().getAddressFactory());
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.ExternalLocation#getExternalSpaceAddress()
 	 */
 	@Override
@@ -136,7 +136,7 @@ public class ExternalLocationDB implements ExternalLocation {
 		return symbol.getSymbolType() == SymbolType.FUNCTION;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.ExternalLocation#getDataType()
 	 */
 	@Override
@@ -148,7 +148,7 @@ public class ExternalLocationDB implements ExternalLocation {
 		return extMgr.getProgram().getDataTypeManager().getDataType(dataTypeID);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.ExternalLocation#setDataType(ghidra.program.model.data.DataType)
 	 */
 	@Override
@@ -177,7 +177,7 @@ public class ExternalLocationDB implements ExternalLocation {
 		return function;
 	}
 
-	/**
+    # /**
 	 * Set the label and optional namespace associated with an external location.
 	 * Any non-existing namespace will be created as a simple namespace within the associated
 	 * library.

@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.gui.wizard;
 
-import java.io.IOException;
+
 
 import docking.wizard.WizardState;
 import ghidra.feature.vt.api.db.VTSessionDB;

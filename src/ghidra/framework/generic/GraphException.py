@@ -20,14 +20,14 @@ package ghidra.util.exception;
  */
 public class GraphException extends UsrException {
 
-	/**
+    # /**
 	 * Default constructor
 	 */
 	public GraphException() {
 		super("Graph Error.");
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * @param message detailed message
 	 */

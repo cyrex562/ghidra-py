@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.exporter;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.commons.lang3.StringUtils;
@@ -392,7 +392,7 @@ public class CppExporter extends Exporter {
 			dataOrganization.getIntegerCTypeApproximation(typeLen, signed));
 	}
 
-	/**
+    # /**
 	 * Generate suitable C-style definition statements (#define) for any fake data-type names
 	 * which may be produced by the decompiler (e.g., unkint, unkuint, etc.).
 	 * @param dataOrganization is the data organization to result the size of core types.
@@ -557,7 +557,7 @@ public class CppExporter extends Exporter {
 		}
 	}
 
-	/**
+    # /**
 	 * A class that exists because we are doing something that the ConcurrentQ was not
 	 * designed for--chunking.  We do not want out monitor being reset every time we start a new
 	 * chunk. So, we wrap a real monitor, overriding the behavior such that initialize() has

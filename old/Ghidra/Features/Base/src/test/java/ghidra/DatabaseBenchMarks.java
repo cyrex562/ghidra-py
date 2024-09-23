@@ -15,7 +15,7 @@
  */
 package ghidra;
 
-import java.io.IOException;
+
 import java.util.Random;
 
 import db.*;

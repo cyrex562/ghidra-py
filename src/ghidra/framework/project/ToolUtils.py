@@ -15,7 +15,7 @@
  */
 package ghidra.framework;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.commons.lang3.StringUtils;
@@ -55,7 +55,7 @@ public class ToolUtils {
 		return USER_TOOLS_DIR;
 	}
 
-	/**
+    # /**
 	 * Returns all tools found in the classpath that live under a root
 	 * 'defaultTools' directory
 	 * 
@@ -85,7 +85,7 @@ public class ToolUtils {
 		return defaultTools;
 	}
 
-	/**
+    # /**
 	 * Returns all tools found in the classpath that live under a root
 	 * 'extraTools' directory
 	 * 
@@ -111,7 +111,7 @@ public class ToolUtils {
 		return extraTools;
 	}
 
-	/**
+    # /**
 	 * Returns all tools found in the classpath that live under a root
 	 * 'defaultTools' directory or a root 'extraTools' directory
 	 * 
@@ -346,7 +346,7 @@ public class ToolUtils {
 		return getToolFile(USER_TOOLS_DIR, name);
 	}
 
-	/**
+    # /**
 	 * Returns the user's personal tool chest directory path
 	 * @return the path
 	 */

@@ -57,7 +57,7 @@ public class ToolTaskManager implements Runnable {
 	private BackgroundCommandTask<?> currentTask;
 	private TaskDialog modalTaskDialog;
 
-	/**
+    # /**
 	 * Construct a new ToolTaskManager.
 	 *
 	 * @param tool tool associated with this ToolTaskManager
@@ -70,7 +70,7 @@ public class ToolTaskManager implements Runnable {
 			"Background-Task-Group-" + tool.getName());
 	}
 
-	/**
+    # /**
 	 * Returns the thread group associated with all background tasks run by this
 	 * manager and their instantiated threads.
 	 *
@@ -80,7 +80,7 @@ public class ToolTaskManager implements Runnable {
 		return taskThreadGroup;
 	}
 
-	/**
+    # /**
 	 * Get the monitor component that shows progress and has a cancel button.
 	 *
 	 * @return the monitor component
@@ -89,7 +89,7 @@ public class ToolTaskManager implements Runnable {
 		return toolTaskMonitor;
 	}
 
-	/**
+    # /**
 	 * Return true if a task is executing
 	 *
 	 * @return true if a task is executing
@@ -98,7 +98,7 @@ public class ToolTaskManager implements Runnable {
 		return isExecuting || (taskThread != null && taskThread.isAlive());
 	}
 
-	/**
+    # /**
 	 * Execute the given command in the foreground.  Required domain object transaction will be
 	 * started with delayed end to ensure that any follow-on analysis starts prior to transaction 
 	 * end.
@@ -114,7 +114,7 @@ public class ToolTaskManager implements Runnable {
 		return execute(new SimpleCommand<T>(commandName, f), domainObject);
 	}
 
-	/**
+    # /**
 	 * Execute the given command in the foreground.  Required domain object transaction will be
 	 * started with delayed end to ensure that any follow-on analysis starts prior to transaction 
 	 * end.
@@ -193,7 +193,7 @@ public class ToolTaskManager implements Runnable {
 		return success;
 	}
 
-	/**
+    # /**
 	 * Execute the given command in the background
 	 *
 	 * @param cmd background command
@@ -227,7 +227,7 @@ public class ToolTaskManager implements Runnable {
 		}
 	}
 
-	/**
+    # /**
 	 * Schedule the given background command when the current command completes.
 	 *
 	 * @param cmd background command to be scheduled
@@ -286,7 +286,7 @@ public class ToolTaskManager implements Runnable {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Cancel the currently running task and clear all commands that are scheduled to run. Block
 	 * until the currently running task ends.
 	 *
@@ -383,7 +383,7 @@ public class ToolTaskManager implements Runnable {
 		return cmd;
 	}
 
-	/**
+    # /**
 	 * Notification from the BackgroundCommandTask that it has completed; queued
 	 * or scheduled commands are executed.
 	 *
@@ -443,7 +443,7 @@ public class ToolTaskManager implements Runnable {
 			time() + "Task Completed: " + task.getTaskTitle() + " (" + totalTime + " secs)");
 	}
 
-	/**
+    # /**
 	 * Clear the queue of scheduled commands.
 	 * @param obj domain object
 	 */
@@ -459,7 +459,7 @@ public class ToolTaskManager implements Runnable {
 		queuedCommandsMap.remove(obj);
 	}
 
-	/**
+    # /**
 	 * Clear all tasks associated with specified domain object.
 	 *
 	 * @param obj domain object
@@ -474,7 +474,7 @@ public class ToolTaskManager implements Runnable {
 		}
 	}
 
-	/**
+    # /**
 	 * Notification from the BackgroundCommandTask that the given command
 	 * failed. Any scheduled commands are cleared from the queue.
 	 *
@@ -512,7 +512,7 @@ public class ToolTaskManager implements Runnable {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear list of tasks and queue of scheduled commands.
 	 */
 	public synchronized void dispose() {
@@ -532,14 +532,14 @@ public class ToolTaskManager implements Runnable {
 		tool = null;
 	}
 
-	/**
+    # /**
 	 * Clear the list of tasks.
 	 */
 	public synchronized void clearTasks() {
 		tasks.clear();
 	}
 
-	/**
+    # /**
 	 * Cancel the current task.
 	 */
 	public void cancelCurrentTask() {
@@ -580,7 +580,7 @@ public class ToolTaskManager implements Runnable {
 		}
 	}
 
-	/**
+    # /**
 	 * {@link SimpleCommand} provides a convenience command for wrapping a lambda function
 	 * into a foreground {@link Command} for execution by the task manager.
 	 *

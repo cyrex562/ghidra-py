@@ -16,7 +16,7 @@
 package ghidra.features.bsim.query.ingest;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.*;
 import java.util.*;
 
@@ -56,7 +56,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		return command;
 	}
 
-	/**
+    # /**
 	 * bsim commands
 	 */
 	private static final String COMMAND_CREATE_DATABASE = defineCommand("createdatabase");
@@ -191,13 +191,13 @@ public class BSimLaunchable implements GhidraLaunchable {
 
 	private GhidraApplicationLayout layout;
 
-	/**
+    # /**
 	 * Constructor for launching from the console
 	 */
 	public BSimLaunchable() {
 	}
 
-	/**
+    # /**
 	 * Clears the parameters that can be used for issuing commands. This is useful
 	 * if you want to keep your established database connection and URL settings but
 	 * wish to issue a new command.
@@ -235,7 +235,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Establish the URL for the ghidra server and/or the bsim server. At least one string must be non-null
 	 * @param ghidraURLString is the URL string for the ghidra server
 	 * @param bsimURLString is the URL string for the bsim server
@@ -265,7 +265,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Read in any optional parameters, strip them from the parameter stream
 	 * @param command command name
 	 * @param params is the original array of command line parameters
@@ -370,7 +370,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Runs the command specified by the given set of params.
 	 * 
 	 * @param params the parameters specifying the command
@@ -493,7 +493,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Runs the command specified by the given set of params.
 	 * 
 	 * @param params the parameters specifying the command
@@ -503,7 +503,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		run(params, TaskMonitor.DUMMY);
 	}
 
-	/**
+    # /**
 	 * Creates a new BSim database with a given set of properties.
 	 * 
 	 * @param params the command-line parameters
@@ -710,7 +710,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Deletes a specified executable from the database.
 	 * 
 	 * @param params the command-line parameters
@@ -727,7 +727,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Drops the current BSim database index.
 	 * 
 	 * This variant of the drop index method should be called by
@@ -743,7 +743,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Rebuilds the current BSim database index.
 	 * 
 	 * This variant of the rebuild index method should be called by
@@ -759,7 +759,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Performs a prewarm command on the BSim database.
 	 * <p>
 	 * This is intended for use by command-line clients.
@@ -774,7 +774,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Display list of all executable records meeting a set of search criteria.
 	 * Results are written to the output stream
 	 * 
@@ -810,7 +810,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Print the number of records in the database that match the filter criteria.
 	 * 
 	 * @param params the command-line params
@@ -831,7 +831,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Updates the BSim database metadata with the given values.
 	 * 
 	 * This variant of the update metadata method is intended for command-line
@@ -857,7 +857,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Inserts a new category name into the BSim database. 
 	 * 
 	 * This variant of the install category method is intended for command-line
@@ -884,7 +884,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Inserts a new function tag into the BSim database.
 	 * 
 	 * This variant of the tag install method is intended for command-line
@@ -909,7 +909,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Exports exe signature to local folder in XML format.
 	 * 
 	 * @param params the command-line params
@@ -1035,7 +1035,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * From a cold start, initialize the Ghidra application to different stages, based on future requirements
 	 * @param layout application layout
 	 * @param type is an integer indicating how much to initialize
@@ -1052,7 +1052,7 @@ public class BSimLaunchable implements GhidraLaunchable {
 			return;
 		}
 
-		/**
+	    # /**
 		 * Ensure that we are running in "headless mode"
 		 */
 		System.setProperty(SystemUtilities.HEADLESS_PROPERTY, Boolean.TRUE.toString());

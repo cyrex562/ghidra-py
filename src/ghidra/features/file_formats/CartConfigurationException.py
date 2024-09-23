@@ -21,7 +21,7 @@ package ghidra.file.formats.cart;
  */
 public class CartConfigurationException extends Exception {
 
-	/**
+    # /**
 	 * Construct CartConfigurationException with specified message
 	 * @param message The reason for the exception
 	 */

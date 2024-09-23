@@ -16,7 +16,7 @@
 package ghidra.app.util.bin.format.dwarf.external;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.formats.gfilesystem.FSRL;
 import ghidra.formats.gfilesystem.FileSystemService;

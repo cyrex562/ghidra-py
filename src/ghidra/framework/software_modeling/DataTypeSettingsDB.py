@@ -36,7 +36,7 @@ class DataTypeSettingsDB implements Settings {
 
 	private Settings defaultSettings;
 
-	/**
+    # /**
 	 * Constructor for settings storage manager.
 	 * Initial state is locked for non-ProgramBasedDataTypeManager.
 	 * @param dataMgr  data type manager
@@ -50,7 +50,7 @@ class DataTypeSettingsDB implements Settings {
 		this.locked = !(dataMgr instanceof ProgramBasedDataTypeManager);
 	}
 
-	/**
+    # /**
 	 * Constructor for settings storage manager.
 	 * Initial state is locked for non-ProgramBasedDataTypeManager.
 	 * @param dataMgr  data type manager
@@ -64,7 +64,7 @@ class DataTypeSettingsDB implements Settings {
 		this.locked = !(dataMgr instanceof ProgramBasedDataTypeManager);
 	}
 
-	/**
+    # /**
 	 * Change the current settings lock.  Attempts to modify locked
 	 * settings will be ignored with a logged error.  This is done
 	 * to write-protect settings at the public API level.
@@ -94,7 +94,7 @@ class DataTypeSettingsDB implements Settings {
 		return dataMgr.getSuggestedValues(settingsDefinition);
 	}
 
-	/**
+    # /**
 	 * Set predicate for settings modification
 	 * @param allowedSettingPredicate callback for checking an allowed setting modification
 	 */
@@ -102,7 +102,7 @@ class DataTypeSettingsDB implements Settings {
 		this.allowedSettingPredicate = allowedSettingPredicate;
 	}
 
-	/**
+    # /**
 	 * Check for immutable settings and log error of modification not permitted
 	 * @param type setting type or null
 	 * @param name setting name or null
@@ -120,7 +120,7 @@ class DataTypeSettingsDB implements Settings {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Check for immutable settings and log error of modification not permitted.
 	 * Does not check for other setting restrictions.
 	 * @param type setting type or null

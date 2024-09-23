@@ -29,27 +29,27 @@ import java.util.regex.Pattern;
  */
 public class UserSearchUtils {
 
-	/**
+    # /**
 	 * Wildcard string for matching 0 or more characters.
 	 */
 	public final static String STAR = "*";
 
-	/**
+    # /**
 	 * Characters that we handle similarly to command-line globbing expansion characters.
 	 */
 	private final static char[] GLOB_CHARACTERS = { '*', '?' };
 
-	/**
+    # /**
 	 * A pattern that will find all '\' chars that are not followed by '*', '?' or another '\'
 	 */
 	public final static Pattern NON_GLOB_BACKSLASH_PATTERN = Pattern.compile("\\\\(?![\\*\\?])");
 
-	/**
+    # /**
 	 * A pattern that will find all '*' chars that are not preceded by a '\'
 	 */
 	private final static Pattern STAR_PATTERN = Pattern.compile("(?<!\\\\)\\*");
 
-	/**
+    # /**
 	 * A pattern that will find all '?' chars that are not preceded by a '\'
 	 */
 	private final static Pattern QUESTION_PATTERN = Pattern.compile("(?<!\\\\)\\?");
@@ -60,7 +60,7 @@ public class UserSearchUtils {
 // Matcher.matches() Methods
 //==================================================================================================
 
-	/**
+    # /**
 	 * <b>
 	 * Note: this is the default model of how to let users search for things in Ghidra.  This
 	 * is NOT a tool to allow regex searching, but instead allows users to perform searches while
@@ -109,7 +109,7 @@ public class UserSearchUtils {
 		return p;
 	}
 
-	/**
+    # /**
 	 * Generate a compiled representation of a regular expression, ignoring regex special
 	 * characters  . The resulting pattern will match the literal text string.
 	 * <p>
@@ -129,7 +129,7 @@ public class UserSearchUtils {
 		return p;
 	}
 
-	/**
+    # /**
 	 * Creates a regular expression Pattern that will <b>match</b>
 	 * all strings that <b>start with</b> the given input string.
 	 * <p>
@@ -163,7 +163,7 @@ public class UserSearchUtils {
 		return p;
 	}
 
-	/**
+    # /**
 	 * Creates a regular expression Pattern that will <b>match</b>
 	 * all strings that <b>end with</b> the given input string.
 	 * <p>
@@ -196,7 +196,7 @@ public class UserSearchUtils {
 		return p;
 	}
 
-	/**
+    # /**
 	 * Creates a regular expression Pattern that will <b>match</b>
 	 * all strings that <b>contain</b> the given input string.
 	 * <p>
@@ -225,7 +225,7 @@ public class UserSearchUtils {
 		return p;
 	}
 
-	/**
+    # /**
 	 * Creates a regular expression Pattern that will match all strings that
 	 * <b>match exactly</b> the given input string.
 	 * <p>
@@ -256,7 +256,7 @@ public class UserSearchUtils {
 		return p;
 	}
 
-	/**
+    # /**
 	 * Creates a regular expression that can be used to create a Pattern that will <b>match</b>
 	 * all strings that match the given input string.
 	 * <p>
@@ -300,7 +300,7 @@ public class UserSearchUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Escapes regex characters, optionally turning globbing characters into valid regex syntax.
 	 */
 	private static String convertUserInputToRegex(String input, boolean allowGlobbing) {
@@ -323,7 +323,7 @@ public class UserSearchUtils {
 // Escaping/Converting Methods
 //==================================================================================================
 
-	/**
+    # /**
 	 * Will change globbing characters to work as expected in Ghidra, unless the
 	 * special characters are escaped with a backslash.
 	 *
@@ -347,7 +347,7 @@ public class UserSearchUtils {
 		return starReplaced;
 	}
 
-	/**
+    # /**
 	 * Replaces all escape characters ('\') by escaping that character ('\\').
 	 * <p>
 	 * Note: this method will not escape characters that are escaping a globbing character
@@ -363,7 +363,7 @@ public class UserSearchUtils {
 		return backslashMatcher.replaceAll("\\\\\\\\");
 	}
 
-	/**
+    # /**
 	 * Escapes all special regex characters so that they are treated as literal characters
 	 * by the regex engine.
 	 *
@@ -376,7 +376,7 @@ public class UserSearchUtils {
 		return Pattern.quote(input);
 	}
 
-	/**
+    # /**
 	 * Escapes all regex characters with the '\' character, except for those in the given exclusion 
 	 * array.
 	 *

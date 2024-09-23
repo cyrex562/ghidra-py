@@ -16,7 +16,7 @@
  */
 package generic.util;
 
-import java.io.*;
+
 import java.util.jar.JarOutputStream;
 
 public class JarArchiveBuilder extends ArchiveBuilder {

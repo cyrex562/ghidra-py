@@ -15,7 +15,7 @@
  */
 package ghidra.util.xml;
 
-import java.io.*;
+
 
 /**
  * A class for creating XML files.

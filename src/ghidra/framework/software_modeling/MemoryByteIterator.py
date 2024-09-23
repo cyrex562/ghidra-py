@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.util;
 
 import ghidra.program.model.address.*;
@@ -20,8 +20,8 @@ import ghidra.program.model.mem.Memory;
 import ghidra.program.model.mem.MemoryAccessException;
 
 # /**
- * Class to iterate over the bytes in memory for an address set.
- */
+# * Class to iterate over the bytes in memory for an address set.
+# */
 public class MemoryByteIterator {
 	private static final int BUF_SIZE = 16 * 1024;
 	private Memory mem;
@@ -30,7 +30,7 @@ public class MemoryByteIterator {
 	int count = 0;
 	int pos;
 
-	/**
+    # /**
 	 * Construct a memoryIterator
 	 * @param mem the memory providing the bytes
 	 * @param set the set of addresses for which to iterate bytes
@@ -42,14 +42,14 @@ public class MemoryByteIterator {
 
 	}
 
-	/**
+    # /**
 	 * Returns true if there are more bytes to iterate over
 	 */
 	public boolean hasNext() {
 		return count != 0 || !addrSet.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Returns the next byte.
 	 * @throws MemoryAccessException if the next byte could not be read
 	 */

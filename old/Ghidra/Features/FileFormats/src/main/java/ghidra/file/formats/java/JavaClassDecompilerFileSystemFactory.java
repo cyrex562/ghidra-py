@@ -17,7 +17,7 @@ package ghidra.file.formats.java;
 
 import java.util.Arrays;
 
-import java.io.IOException;
+
 
 import org.apache.commons.io.FilenameUtils;
 

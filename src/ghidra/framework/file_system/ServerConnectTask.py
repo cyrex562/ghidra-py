@@ -16,7 +16,7 @@
 package ghidra.framework.client;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.net.Socket;
 import java.net.SocketAddress;
 import java.net.UnknownHostException;
@@ -56,7 +56,7 @@ class ServerConnectTask extends Task {
 	private RemoteRepositoryServerHandle hdl;
 	private Exception exc;
 
-	/**
+    # /**
 	 * Server Connect Task constructor
 	 * @param server server information
 	 * @param allowLoginRetry true if login retry allowed during authentication
@@ -67,7 +67,7 @@ class ServerConnectTask extends Task {
 		this.allowLoginRetry = allowLoginRetry;
 	}
 
-	/**
+    # /**
 	 * Completes and necessary authentication and obtains a repository handle.
 	 * If a connection error occurs, an exception will be stored ({@link #getException()}.
 	 * @throws CancelledException if task cancelled
@@ -97,7 +97,7 @@ class ServerConnectTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns an IOException, LoginException or RuntimeException
 	 * if handle is null after running task.  If both the exception
 	 * and handle are null, it implies the connection attempt was cancelled
@@ -108,7 +108,7 @@ class ServerConnectTask extends Task {
 		return exc;
 	}
 
-	/**
+    # /**
 	 * After running the task, this method will return the server handle
 	 * if the connection was successful.  If null, a connection error
 	 * may have occurred ({@link #getException()}, or the task was cancelled
@@ -144,7 +144,7 @@ class ServerConnectTask extends Task {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Obtain a remote instance of the Ghidra Server Handle object
 	 * @param server server information
 	 * @param monitor cancellable monitor
@@ -228,7 +228,7 @@ class ServerConnectTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Attempts server connection and completes any necessary authentication.
 	 * @param defaultUserID default user ID (actual ID used established during authentication)
 	 * @param monitor task monitor for connection cancellation
@@ -360,7 +360,7 @@ class ServerConnectTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Socket implementation with very short connect timeout
 	 */
 	private static class FastConnectionFailSocket extends Socket {
@@ -373,7 +373,7 @@ class ServerConnectTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Initiate an SSLSocket connection in order to ensure that any neccesary client/server
 	 * certificate validation is performed.
 	 * @param server server to which connection should be verified.  For the Ghidra Server 

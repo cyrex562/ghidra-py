@@ -16,7 +16,7 @@
 package ghidra.framework.main;
 
 import java.awt.Dimension;
-import java.io.IOException;
+
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
@@ -284,7 +284,7 @@ class SetupProjectPanelManager implements PanelManager {
 		return wizardMgr;
 	}
 
-	/**
+    # /**
 	 * Get the repository adapter associated with the new project.
 	 * After displaying this panel, this method should be invoked to obtain the 
 	 * repository which will be opened for shared projects.  If the repository is
@@ -317,7 +317,7 @@ class SetupProjectPanelManager implements PanelManager {
 			new HelpLocation(GenericHelpTopics.FRONT_END, "SetupUsers"));
 	}
 
-	/**
+    # /**
 	 * Return true if a connection could be established using the given
 	 * server name and port number.
 	 */

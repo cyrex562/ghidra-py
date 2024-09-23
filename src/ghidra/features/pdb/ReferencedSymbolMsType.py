@@ -33,7 +33,7 @@ public class ReferencedSymbolMsType extends AbstractMsType {
 	//  if we should search all symbol records to find this "copy," if that is what it really is.
 	private AbstractMsSymbol symbolRecord;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

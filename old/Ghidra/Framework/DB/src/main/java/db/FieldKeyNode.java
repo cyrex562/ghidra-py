@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 /**
  * <code>FieldKeyNode</code> defines a common interface for {@link BTreeNode} 

@@ -39,13 +39,13 @@ public class GraphPerspectiveInfo<V extends VisualVertex, E extends VisualEdge<V
 	private static final Point INVALID_POINT = null;
 	private static final double INVALID_ZOOM = -1D;
 
-	/**
+    # /**
 	 * The offset of the transform from the world origin (which at the time of writing is
 	 * the (0,0) at the upper left-hand corner of the GUI.  This is for the layout transformer.
 	 */
 	private final Point layoutTranslateCoordinates;
 
-	/**
+    # /**
 	 * The offset of the transform from the world origin (which at the time of writing is
 	 * the (0,0) at the upper left-hand corner of the GUI.  This is for the view transformer, 
 	 * which also potentially has a scale applied to the transform.
@@ -123,7 +123,7 @@ public class GraphPerspectiveInfo<V extends VisualVertex, E extends VisualEdge<V
 			viewTranslateCoordinates == INVALID_POINT;
 	}
 
-	/**
+    # /**
 	 * The offset of the transform from the world origin (which at the time of writing is
 	 * the (0,0) at the upper left-hand corner of the GUI.  This is for the layout transformer.
 	 */
@@ -131,7 +131,7 @@ public class GraphPerspectiveInfo<V extends VisualVertex, E extends VisualEdge<V
 		return layoutTranslateCoordinates;
 	}
 
-	/**
+    # /**
 	 * The offset of the transform from the world origin (which at the time of writing is
 	 * the (0,0) at the upper left-hand corner of the GUI.  This is for the view transformer, 
 	 * which also potentially has a scale applied to the transform.

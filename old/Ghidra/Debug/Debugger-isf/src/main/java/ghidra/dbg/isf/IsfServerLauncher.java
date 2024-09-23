@@ -16,7 +16,7 @@
 package ghidra.dbg.isf;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.GhidraApplicationLayout;
 import ghidra.GhidraLaunchable;

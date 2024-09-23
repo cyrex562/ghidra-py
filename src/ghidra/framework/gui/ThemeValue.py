@@ -48,14 +48,14 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		this.value = value;
 	}
 
-	/**
+    # /**
 	 * True if this value is one that is one that is defined outside of the application, such as a
 	 * Java Look and Feel key.
 	 * @return true if external
 	 */
 	public abstract boolean isExternal();
 
-	/**
+    # /**
 	 * Returns the identifier for this ThemeValue.
 	 * @return the identifier for this ThemeValue.
 	 */
@@ -63,7 +63,7 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		return id;
 	}
 
-	/**
+    # /**
 	 * Returns the referencId of another ThemeValue that we inherit its value pr null if we have
 	 * a value
 	 * 
@@ -74,7 +74,7 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		return referenceId;
 	}
 
-	/**
+    # /**
 	 * Returns the stored value. Does not follow referenceIds. Will be null if this instance
 	 * has a referenceId.
 	 * 
@@ -85,7 +85,7 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Returns the T value for this instance, following references as needed. Uses the given
 	 * preferredValues map to resolve references. If the value can't be resolved by following
 	 * reference chains, an error stack trace will be generated and the default T value will
@@ -119,7 +119,7 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		return getUnresolvedReferenceValue(id, referenceId);
 	}
 
-	/**
+    # /**
 	 * Returns true if the ThemeValue can resolve to the concrete T value (color, font, or icon)
 	 * from the given set of theme values.
 	 * @param values the set of values to use to try and follow reference chains to ultimately
@@ -151,7 +151,7 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if this ThemeValue derives its value from the given ancestorId.
 	 * @param ancestorId the id to test if this Theme value inherits from
 	 * @param values the set of values used to resolve indirect references to attempt to trace
@@ -187,7 +187,7 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if this ColorValue gets its value from some other ColorValue
 	 * @return  true if this ColorValue gets its value from some other ColorValue
 	 */
@@ -195,13 +195,13 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		return referenceId != null;
 	}
 
-	/**
+    # /**
 	 * Returns the "key = value" String for writing this ThemeValue to a file
 	 * @return the "key = value" String for writing this ThemeValue to a file
 	 */
 	public abstract String getSerializationString();
 
-	/**
+    # /**
 	 * Returns the T to be used if the indirect reference couldn't be resolved.
 	 * @param primaryId the id we are trying to get a value for
 	 * @param unresolvedId the reference id that couldn't be resolved
@@ -209,7 +209,7 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 	 */
 	protected abstract T getUnresolvedReferenceValue(String primaryId, String unresolvedId);
 
-	/**
+    # /**
 	 * Returns the ThemeValue referred to by this ThemeValue. Needs to be overridden by
 	 * concrete classes as they know the correct method to call on the preferredValues map.
 	 * @param preferredValues the {@link GThemeValueMap} to be used to resolve the reference id
@@ -255,7 +255,7 @@ public abstract class ThemeValue<T> implements Comparable<ThemeValue<T>> {
 		return name + " (" + id + ", " + referenceId + ")";
 	}
 
-	/**
+    # /**
 	 * Install this value as the current value for the application
 	 * @param themeManager the application ThemeManager
 	 */

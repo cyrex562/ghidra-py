@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.gnu;
 
-import java.io.*;
+
 import java.nio.charset.Charset;
 import java.util.*;
 

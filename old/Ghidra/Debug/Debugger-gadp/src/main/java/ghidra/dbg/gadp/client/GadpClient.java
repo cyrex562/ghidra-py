@@ -16,7 +16,7 @@
 package ghidra.dbg.gadp.client;
 
 import java.io.EOFException;
-import java.io.IOException;
+
 import java.nio.channels.*;
 import java.util.*;
 import java.util.concurrent.*;

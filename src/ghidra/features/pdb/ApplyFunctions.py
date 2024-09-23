@@ -37,7 +37,7 @@ class ApplyFunctions {
 		// static use only
 	}
 
-	/**
+    # /**
 	 * Perform parsing and applying of functions 
 	 * @param pdbParser PDB parser object
 	 * @param xmlParser XML parser position immediately after the functions start element

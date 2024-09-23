@@ -26,7 +26,7 @@ public class VersionTrackingChangeRecord extends DomainObjectChangeRecord {
 
 	private Object affected; // may be null
 
-	/**
+    # /**
 	 * Construct a new VersionTrackingChangeRecord.
 	 * @param eventType event type
 	 * @param affected the object that is the subject of this change record; may be null.
@@ -39,7 +39,7 @@ public class VersionTrackingChangeRecord extends DomainObjectChangeRecord {
 		this.affected = affected;
 	}
 
-	/**
+    # /**
 	 * Return the object that is the subject of this change record.
 	 *
 	 * @return Object null if this change record does not have the

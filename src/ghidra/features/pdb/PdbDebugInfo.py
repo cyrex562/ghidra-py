@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -37,7 +37,7 @@ public abstract class PdbDebugInfo {
 	public static final int STREAM_NUMBER_SIZE = 2;
 	public static final int LENGTH_SIZE = 4;
 
-	/**
+    # /**
 	 * These are Section Contribution Versions (SCV) 6.00 and 14.00.  We are building to the MSFT
 	 *  API.  They have chosen to mix in some magic along the way for these--perhaps to ensure that
 	 *  the the value will be a large unsigned 32-bit or a negative 32-bit.  We store the value
@@ -78,7 +78,7 @@ public abstract class PdbDebugInfo {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb {@link AbstractPdb} that owns this debug info
 	 * @param streamNumber the stream number of the stream containing the debug info
@@ -89,7 +89,7 @@ public abstract class PdbDebugInfo {
 		this.streamNumber = streamNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes needed to store the version number
 	 * @return the number of bytes needed to store the version number
 	 */
@@ -97,7 +97,7 @@ public abstract class PdbDebugInfo {
 		return VERSION_NUMBER_SIZE;
 	}
 
-	/**
+    # /**
 	 * Deserializes and initializes some basic {@link PdbDebugInfo}-based information
 	 * The PDB is updated with dbiAge and targetProcessor during deserialization
 	 * of new DBI header.
@@ -130,7 +130,7 @@ public abstract class PdbDebugInfo {
 		return versionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the number of modules
 	 * @return the number of modules
 	 */
@@ -138,7 +138,7 @@ public abstract class PdbDebugInfo {
 		return moduleInformationList.size();
 	}
 
-	/**
+    # /**
 	 * Returns the list of {@link ModuleInformation}, indexed by the module number
 	 * @return list of {@link ModuleInformation}
 	 */
@@ -146,7 +146,7 @@ public abstract class PdbDebugInfo {
 		return moduleInformationList;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ModuleInformation}, based on the moduleNumber
 	 * @param moduleNumber the module number being requested (1 to {@link #getNumModules()})
 	 * @return {@link ModuleInformation} for the moduleNumber provided
@@ -163,7 +163,7 @@ public abstract class PdbDebugInfo {
 		return moduleInfo;
 	}
 
-	/**
+    # /**
 	 * Returns list of {@link SectionContribution} for this debug info
 	 * @return list of {@link SectionContribution}
 	 */
@@ -171,7 +171,7 @@ public abstract class PdbDebugInfo {
 		return sectionContributionList;
 	}
 
-	/**
+    # /**
 	 * Returns list of {@link SegmentMapDescription} for this debug info
 	 * @return list of {@link SegmentMapDescription}
 	 */
@@ -179,7 +179,7 @@ public abstract class PdbDebugInfo {
 		return segmentMapList;
 	}
 
-	/**
+    # /**
 	 * Returns {@link SymbolRecords} component for this debug info
 	 * @return {@link SymbolRecords} component
 	 */
@@ -187,7 +187,7 @@ public abstract class PdbDebugInfo {
 		return symbolRecords;
 	}
 
-	/**
+    # /**
 	 * Returns {@link GlobalSymbolInformation} component for this debug info
 	 * @return {@link GlobalSymbolInformation} component
 	 */
@@ -195,7 +195,7 @@ public abstract class PdbDebugInfo {
 		return globalSymbolInformation;
 	}
 
-	/**
+    # /**
 	 * Returns Public Symbol Information component for this debug info
 	 * @return Public Symbol Information component
 	 */
@@ -203,7 +203,7 @@ public abstract class PdbDebugInfo {
 		return publicSymbolInformation;
 	}
 
-	/**
+    # /**
 	 * Returns the stream number for {@link SymbolRecords} component
 	 * @return stream number
 	 */
@@ -220,7 +220,7 @@ public abstract class PdbDebugInfo {
 		deserializeHeader(reader);
 	}
 
-	/**
+    # /**
 	 * Returns the stream number for the GlobalSymbols component
 	 * @return stream number
 	 */
@@ -228,7 +228,7 @@ public abstract class PdbDebugInfo {
 		return streamNumberGlobalStaticSymbolsHashMaybe;
 	}
 
-	/**
+    # /**
 	 * Returns the stream number for the PublicStaticSymbols component
 	 * @return stream number
 	 */
@@ -239,20 +239,20 @@ public abstract class PdbDebugInfo {
 	//==============================================================================================
 	// Abstract Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes the Header
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @throws PdbException upon not enough data left to parse
 	 */
 	protected abstract void deserializeHeader(PdbByteReader reader) throws PdbException;
 
-	/**
+    # /**
 	 * Get the header length in bytes as it appears at offset 0 within the DBI stream
 	 * @return DBI header length
 	 */
 	protected abstract int getHeaderLength();
 
-	/**
+    # /**
 	 * Deserializes the SubStreams internal to the debug info stream
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @throws PdbException upon error parsing a field
@@ -261,7 +261,7 @@ public abstract class PdbDebugInfo {
 	protected abstract void deserializeInternalSubstreams(PdbByteReader reader)
 			throws PdbException, CancelledException;
 
-	/**
+    # /**
 	 * Deserializes the AdditionalSubstreams components
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
 	 *  inability to read required bytes
@@ -271,7 +271,7 @@ public abstract class PdbDebugInfo {
 	protected abstract void initializeAdditionalComponentsForSubstreams()
 			throws IOException, PdbException, CancelledException;
 
-	/**
+    # /**
 	 * Deserializes/processes the appropriate {@link ModuleInformation} flavor
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @param skip skip over the data in the {@link PdbByteReader}
@@ -281,14 +281,14 @@ public abstract class PdbDebugInfo {
 	protected abstract void processModuleInformation(PdbByteReader reader, boolean skip)
 			throws PdbException, CancelledException;
 
-	/**
+    # /**
 	 * Dumps the Header.  This method is for debugging only
 	 * @param writer {@link Writer} to which to write the debug dump
 	 * @throws IOException on issue writing to the {@link Writer}
 	 */
 	protected abstract void dumpHeader(Writer writer) throws IOException;
 
-	/**
+    # /**
 	 * Dumps the Internal Substreams.  This method is for debugging only
 	 * @param writer {@link Writer} to which to write the debug dump
 	 * @throws IOException on issue writing to the {@link Writer}
@@ -301,7 +301,7 @@ public abstract class PdbDebugInfo {
 	//==============================================================================================
 	// Internal Data Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes/processes the SectionContributions component
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @param skip skip over the data in the {@link PdbByteReader}
@@ -353,7 +353,7 @@ public abstract class PdbDebugInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Deserializes/processes the {@link SegmentMapDescription}
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @param skip skip over the data in the {@link PdbByteReader}
@@ -390,7 +390,7 @@ public abstract class PdbDebugInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Deserializes/processes the FileInformation
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @param skip skip over the data in the {@link PdbByteReader}
@@ -456,7 +456,7 @@ public abstract class PdbDebugInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to parse the filename for the "File Information" section from the
 	 * {@link PdbByteReader}
 	 * @param reader the {@link PdbByteReader} from which to parse the data
@@ -465,7 +465,7 @@ public abstract class PdbDebugInfo {
 	 */
 	protected abstract String parseFileInfoName(PdbByteReader reader) throws PdbException;
 
-	/**
+    # /**
 	 * Debug method for dumping information from this {@link PdbDebugInfo}-based
 	 *  instance
 	 * @param writer {@link Writer} to which to dump the information
@@ -485,7 +485,7 @@ public abstract class PdbDebugInfo {
 		writer.write("\nEnd DebugInfoAdditionalSubstreams---------------------------\n");
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping additional substreams from this {@link PdbDebugInfo}-based instance
 	 * @param writer {@link Writer} to which to dump the information
 	 * @throws IOException upon IOException writing to the {@link Writer}
@@ -506,7 +506,7 @@ public abstract class PdbDebugInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping module information for all of the {@link ModuleInformation}
 	 *  modules from this {@link PdbDebugInfo}-based instance
 	 * @param writer {@link Writer} to which to dump the information
@@ -521,7 +521,7 @@ public abstract class PdbDebugInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping section contribution for all of the
 	 * {@link SectionContribution} components from this {@link PdbDebugInfo}-based instance
 	 * @param writer {@link Writer} to which to dump the information
@@ -536,7 +536,7 @@ public abstract class PdbDebugInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping segment map information for all of the
 	 *  {@link SegmentMapDescription} components from this {@link PdbDebugInfo}-based instance
 	 * @param writer {@link Writer} to which to dump the information
@@ -552,7 +552,7 @@ public abstract class PdbDebugInfo {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Initializes modules with some basic information, enabling later queries of the modules
 	 * @throws CancelledException upon user cancellation
 	 */
@@ -569,7 +569,7 @@ public abstract class PdbDebugInfo {
 		return modules.size();
 	}
 
-	/**
+    # /**
 	 * Return the Module based upon the module number
 	 * @param moduleNum the module number
 	 * @return the module
@@ -579,7 +579,7 @@ public abstract class PdbDebugInfo {
 		return modules.get(moduleNum - 1);
 	}
 
-	/**
+    # /**
 	 * Returns the symbol iterator for main symbols
 	 * @return an iterator over all symbols of the module
 	 * @throws CancelledException upon user cancellation
@@ -589,7 +589,7 @@ public abstract class PdbDebugInfo {
 		return new MsSymbolIterator(pdb, streamNumberSymbolRecords, 0, MsfStream.MAX_STREAM_LENGTH);
 	}
 
-	/**
+    # /**
 	 * Returns the symbol iterator symbols of the specified module
 	 * @param moduleNum the module number
 	 * @return an iterator over all symbols of the module

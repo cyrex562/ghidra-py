@@ -15,7 +15,7 @@
  */
 package ghidra.file.jad;
 
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 

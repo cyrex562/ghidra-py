@@ -16,7 +16,7 @@
 package ghidra.framework.options;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import org.jdom.Element;
 
@@ -53,7 +53,7 @@ import org.jdom.Element;
 public class SaveState extends XmlProperties {
 	private static final String SAVE_STATE = "SAVE_STATE";
 
-	/**
+    # /**
 	 * Creates a new SaveState object with a non-default name.  The name serves no real purpose
 	 * other than as a hint as to what the SaveState represents
 	 * 
@@ -63,7 +63,7 @@ public class SaveState extends XmlProperties {
 		super(name);
 	}
 
-	/**
+    # /**
 	 * Default Constructor for SaveState; uses "SAVE_STATE" as the
 	 * name of the state.
 	 * @see java.lang.Object#Object()
@@ -72,7 +72,7 @@ public class SaveState extends XmlProperties {
 		this(SAVE_STATE);
 	}
 
-	/**
+    # /**
 	 * Construct a SaveState from a file containing XML from a previously saved SaveState.
 	 * @param file the file containing the XML to read.
 	 * @throws IOException if the file can't be read or is not formatted properly for a SaveState
@@ -85,7 +85,7 @@ public class SaveState extends XmlProperties {
 		super(element);
 	}
 
-	/**
+    # /**
 	 * Write the saveState to a file as XML
 	 * @param file the file to write to.
 	 * @throws IOException if the file could not be written
@@ -94,7 +94,7 @@ public class SaveState extends XmlProperties {
 		saveToXmlFile(file);
 	}
 
-	/**
+    # /**
 	 * Associates a sub SaveState value with the given name.
 	 * @param name The name in the name,value pair.
 	 * @param value The value in the name,value pair.
@@ -103,7 +103,7 @@ public class SaveState extends XmlProperties {
 		map.put(name, value);
 	}
 
-	/**
+    # /**
 	 * Returns the sub SaveState associated with the
 	 * given name.
 	 * @param name The name associated with the desired Element.

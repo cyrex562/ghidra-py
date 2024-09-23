@@ -19,7 +19,7 @@ package docking.dnd;
 import ghidra.util.Msg;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.*;
 
 

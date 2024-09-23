@@ -21,7 +21,7 @@ import ghidra.program.model.data.DataTypeTransferable;
 import ghidra.util.Msg;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.Arrays;
 import java.util.List;
 

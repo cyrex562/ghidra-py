@@ -131,7 +131,7 @@ public abstract class VTMarkupType {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns true if both the source and destination have the same value such that there is
 	 * nothing to apply.
 	 * @param markupItem the markup item to check for having the save source and desination values.
@@ -180,7 +180,7 @@ public abstract class VTMarkupType {
 		return functionManager.getFunctionAt(destinationAddress);
 	}
 
-	/**
+    # /**
 	 * Get the address for the specified program location that is appropriate for this markup
 	 * type to use as a source or destination address.
 	 * @param loc the program location.
@@ -193,7 +193,7 @@ public abstract class VTMarkupType {
 		return loc.getAddress();
 	}
 
-	/**
+    # /**
 	 * Determines whether applying a markup item of this type conflicts with any other markup
 	 * items that are already applied.
 	 * @param markupItem the markup item for this markup type.
@@ -205,7 +205,7 @@ public abstract class VTMarkupType {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Creates a new options object from the options that are passed to this method. The options 
 	 * will be modified so that the specified apply action will occur for this markup type if
 	 * it is a valid action for this markup.

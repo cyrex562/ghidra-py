@@ -18,7 +18,7 @@ package ghidra.file.formats.sevenzip;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import java.io.*;
+
 
 import ghidra.framework.Application;
 import net.sf.sevenzipjbinding.SevenZip;

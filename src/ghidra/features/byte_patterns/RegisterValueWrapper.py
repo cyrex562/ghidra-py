@@ -29,7 +29,7 @@ public class RegisterValueWrapper {
 
 	private BigInteger value;
 
-	/**
+    # /**
 	 * Create a wrapper for the given value
 	 * @param value value to wrap
 	 */
@@ -37,7 +37,7 @@ public class RegisterValueWrapper {
 		this.value = value;
 	}
 
-	/**
+    # /**
 	 * Get the wrapped value
 	 * @return value
 	 */

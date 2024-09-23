@@ -27,7 +27,7 @@ public class SwiftUnsupportedNode extends SwiftNode {
 
 	private String originalKind;
 
-	/**
+    # /**
 	 * Create a new {@link SwiftUnsupportedNode} {@link SwiftNode}
 	 * 
 	 * @param originalKind The original {@link SwiftDemangledNodeKind kind} of {@link SwiftNode} that is

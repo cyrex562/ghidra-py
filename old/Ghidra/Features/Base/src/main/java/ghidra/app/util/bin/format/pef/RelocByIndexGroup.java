@@ -22,7 +22,7 @@ import ghidra.program.model.mem.MemoryBlock;
 import ghidra.program.model.symbol.*;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 import java.util.List;
 
 /**

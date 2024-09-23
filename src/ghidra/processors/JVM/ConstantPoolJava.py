@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pcodeInject;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.javaclass.format.*;

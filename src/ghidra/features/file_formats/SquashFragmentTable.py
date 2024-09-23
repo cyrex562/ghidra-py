@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class SquashFragmentTable {
 	// The lowest fragment pointer in the archive. Used for locating the end of the directory table
 	private long minFragPointer = Long.MAX_VALUE;
 
-	/**
+    # /**
 	 * Represents the fragment table within the SquashFS archive
 	 * @param reader A binary reader for the entire SquashFS archive
 	 * @param superBlock The SuperBlock for the current archive

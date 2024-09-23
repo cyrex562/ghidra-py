@@ -79,7 +79,7 @@ public class ClangToken implements ClangNode {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Get the element representing an entire line of text that contains this element
 	 * @return the containing ClangLine
 	 */
@@ -87,7 +87,7 @@ public class ClangToken implements ClangNode {
 		return lineparent;
 	}
 
-	/**
+    # /**
 	 * Set (change) the line which this text element part of.  
 	 * @param line is the new ClangLine
 	 */
@@ -128,7 +128,7 @@ public class ClangToken implements ClangNode {
 		highlight = val;
 	}
 
-	/**
+    # /**
 	 * Get the background highlight color used to render this token, or null if not highlighted
 	 * @return the Color or null
 	 */
@@ -136,7 +136,7 @@ public class ClangToken implements ClangNode {
 		return highlight;
 	}
 
-	/**
+    # /**
 	 * Set whether or not additional "matching" highlighting is applied to this token.
 	 * Currently this means a bounding box is drawn around the token.
 	 * @param matchingToken is true to enable highlighting, false to disable
@@ -145,21 +145,21 @@ public class ClangToken implements ClangNode {
 		this.matchingToken = matchingToken;
 	}
 
-	/**
+    # /**
 	 * @return true if this token should be displayed with "matching" highlighting
 	 */
 	public boolean isMatchingToken() {
 		return matchingToken;
 	}
 
-	/**
+    # /**
 	 * @return true if this token represents a variable (in source code)
 	 */
 	public boolean isVariableRef() {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the "syntax" type (color) associated with this token (keyword, type, etc)
 	 * @return the color code
 	 */
@@ -167,7 +167,7 @@ public class ClangToken implements ClangNode {
 		return syntax_type;
 	}
 
-	/**
+    # /**
 	 * Set the "syntax" type (color) associated with this token
 	 * @param syntax_type is the color code to set
 	 */
@@ -175,14 +175,14 @@ public class ClangToken implements ClangNode {
 		this.syntax_type = syntax_type;
 	}
 
-	/**
+    # /**
 	 * @return this token's display text as a string
 	 */
 	public String getText() {
 		return text;
 	}
 
-	/**
+    # /**
 	 * Set this token's display text.
 	 * @param text is the string to set
 	 */
@@ -190,7 +190,7 @@ public class ClangToken implements ClangNode {
 		this.text = text;
 	}
 
-	/**
+    # /**
 	 * Decode this token from the current position in an encoded stream
 	 * @param decoder is the decoder for the stream
 	 * @param pfactory is used to look up p-code objects associated with the token
@@ -219,7 +219,7 @@ public class ClangToken implements ClangNode {
 		list.add(this);
 	}
 
-	/**
+    # /**
 	 * Decode one specialized token from the current position in an encoded stream.  This
 	 * serves as a factory for allocating the various objects derived from ClangToken
 	 * @param node is the particular token type (already) decoded from the stream
@@ -269,7 +269,7 @@ public class ClangToken implements ClangNode {
 		return token;
 	}
 
-	/**
+    # /**
 	 * Add a spacer token to the given text grouping
 	 * @param par is the text grouping
 	 * @param indent is the number of levels to indent
@@ -289,7 +289,7 @@ public class ClangToken implements ClangNode {
 		return text;
 	}
 
-	/**
+    # /**
 	 * Get the high-level variable associate with this
 	 * token or null otherwise
 	 * @return HighVariable
@@ -298,7 +298,7 @@ public class ClangToken implements ClangNode {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the symbol associated with this token or null otherwise.
 	 * This token may be directly associated with the symbol or a reference, in which
 	 * case the symbol is looked up in the containing HighFunction
@@ -309,7 +309,7 @@ public class ClangToken implements ClangNode {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Many tokens directly represent a variable in the data-flow
 	 * @return the variable (Varnode) associated with this token or null
 	 */
@@ -317,7 +317,7 @@ public class ClangToken implements ClangNode {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Many tokens directly represent a pcode operator in the data-flow
 	 * @return the operation (PcodeOp) associated with this token or null
 	 */
@@ -325,7 +325,7 @@ public class ClangToken implements ClangNode {
 		return null;
 	}
 
-	/**
+    # /**
 	 * If the token represents an underlying integer constant, return the constant as a Scalar.
 	 * Otherwise return null.
 	 * @return the Scalar that the token represents or null
@@ -334,7 +334,7 @@ public class ClangToken implements ClangNode {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get an iterator over tokens starting with this ClangToken.  Tokens are returned in normal
 	 * display order (forward=true) or in the reverse of normal display order (forward=false)
 	 * @param forward is true for forward iterator, false for a backward iterator

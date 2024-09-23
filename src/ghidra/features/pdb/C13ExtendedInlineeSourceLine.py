@@ -42,7 +42,7 @@ public class C13ExtendedInlineeSourceLine extends C13InlineeSourceLine {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the number of extra file IDs
 	 * @return the number
 	 */
@@ -50,7 +50,7 @@ public class C13ExtendedInlineeSourceLine extends C13InlineeSourceLine {
 		return extraFileIds.size();
 	}
 
-	/**
+    # /**
 	 * Returns the list of extra file IDs
 	 * @return the extra file IDs
 	 */

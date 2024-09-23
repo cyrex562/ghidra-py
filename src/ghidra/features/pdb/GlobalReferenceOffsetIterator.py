@@ -29,7 +29,7 @@ class GlobalReferenceOffsetIterator implements ParsingIterator<Long> {
 
 	private Long currentGlobalReferenceOffset = null;
 
-	/**
+    # /**
 	 * An Iterator of Global Reference Offsets
 	 * @param reader PdbByteReader containing only Global Reference Offsets information and in
 	 * newly constructed state
@@ -78,7 +78,7 @@ class GlobalReferenceOffsetIterator implements ParsingIterator<Long> {
 		}
 	}
 
-	/**
+    # /**
 	 * Reads and validates size field; leaves reader pointing at first record.
 	 * @throws PdbException upon not enough data left to parse
 	 */

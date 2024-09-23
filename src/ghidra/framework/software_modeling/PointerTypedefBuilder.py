@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.Objects;
@@ -23,22 +23,22 @@ import ghidra.program.model.symbol.OffsetReference;
 import ghidra.util.InvalidNameException;
 
 # /**
- * <code>PointerTypedefBuilder</code> provides a builder for creating {@link Pointer} - {@link TypeDef}s.  
- * These special typedefs allow a modified-pointer datatype to be used for special situations where
- * a simple pointer will not suffice and special stored pointer interpretation/handling is required.  
- * <br>
- * This builder simplifies the specification of various {@link Pointer} modifiers during the 
- * construction of an associated {@link TypeDef}.
- * <br>
- * A convenience method {@link Pointer#typedefBuilder()} also exists for creating a builder
- * from a pointer instance.  In addition the utility class {@link PointerTypedefInspector}
- * can be used to easily determine pointer-typedef settings.
- */
+# * <code>PointerTypedefBuilder</code> provides a builder for creating {@link Pointer} - {@link TypeDef}s.  
+# * These special typedefs allow a modified-pointer datatype to be used for special situations where
+# * a simple pointer will not suffice and special stored pointer interpretation/handling is required.  
+# * <br>
+# * This builder simplifies the specification of various {@link Pointer} modifiers during the 
+# * construction of an associated {@link TypeDef}.
+# * <br>
+# * A convenience method {@link Pointer#typedefBuilder()} also exists for creating a builder
+# * from a pointer instance.  In addition the utility class {@link PointerTypedefInspector}
+# * can be used to easily determine pointer-typedef settings.
+# */
 public class PointerTypedefBuilder {
 
 	private PointerTypedef typedef;
 
-	/**
+    # /**
 	 * Construct a {@link Pointer} - {@link TypeDef} builder.
 	 * @param baseDataType baseDataType or null to use a default pointer
 	 * @param pointerSize pointer size or -1 to use default pointer size for specified datatype manager.
@@ -48,7 +48,7 @@ public class PointerTypedefBuilder {
 		typedef = new PointerTypedef(null, baseDataType, pointerSize, dtm);
 	}
 
-	/**
+    # /**
 	 * Construct a {@link Pointer} - {@link TypeDef} builder.
 	 * @param pointerDataType base pointer datatype (required)
 	 * @param dtm datatype manager (highly recommended although may be null)
@@ -58,7 +58,7 @@ public class PointerTypedefBuilder {
 		typedef = new PointerTypedef(null, pointerDataType, dtm);
 	}
 
-	/**
+    # /**
 	 * Set pointer-typedef name.  If not specified a default name will be generated based 
 	 * upon the associated pointer type and the specified settings.
 	 * @param name typedef name
@@ -70,7 +70,7 @@ public class PointerTypedefBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Update pointer type.
 	 * @param type pointer type
 	 * @return this builder
@@ -80,7 +80,7 @@ public class PointerTypedefBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Update pointer offset bit-shift when translating to an absolute memory offset.
 	 * If specified, bit-shift will be applied after applying any specified bit-mask.
 	 * @param shift bit-shift (right: positive, left: negative)
@@ -91,7 +91,7 @@ public class PointerTypedefBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Update pointer offset bit-mask when translating to an absolute memory offset.
 	 * If specified, bit-mask will be AND-ed with stored offset prior to any 
 	 * specified bit-shift.
@@ -103,7 +103,7 @@ public class PointerTypedefBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Update pointer relative component-offset.  This setting is interpretted in two
 	 * ways: 
 	 * <ul>
@@ -123,7 +123,7 @@ public class PointerTypedefBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Update pointer referenced address space when translating to an absolute memory offset.
 	 * @param space pointer referenced address space or null for default space
 	 * @return this builder
@@ -134,7 +134,7 @@ public class PointerTypedefBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Update pointer referenced address space when translating to an absolute memory offset.
 	 * @param spaceName pointer referenced address space or null for default space
 	 * @return this builder
@@ -144,7 +144,7 @@ public class PointerTypedefBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Build pointer-typedef with specified settings.
 	 * @return unresolved pointer typedef
 	 */

@@ -19,15 +19,15 @@ package ghidra.bitpatterns.info;
  * Elements of this enum represent the different types of sequences
  */
 public enum PatternType {
-	/**	
+    # /**	
 	 *  First instructions/bytes in a function
 	 */
 	FIRST,
-	/**
+    # /**
 	 * Instructions/bytes immediately before a function
 	 */
 	PRE,
-	/**
+    # /**
 	 * Instructions/bytes before a function return
 	 */
 	RETURN

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 
@@ -45,7 +45,7 @@ public class SquashInode {
 	// The directory table entry that refers to this inode
 	private SquashDirectoryTableEntry directoryTableEntry;
 
-	/**
+    # /**
 	 * Represents a generic SquashFS inode
 	 * @param reader A binary reader with pointer index at the start of the inode data
 	 * @param superBlock The SuperBlock for the current archive

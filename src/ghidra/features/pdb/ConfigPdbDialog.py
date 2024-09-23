@@ -20,7 +20,7 @@ import static pdb.symbolserver.ui.SymbolServerRow.LocationStatus.*;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.*;
@@ -136,14 +136,14 @@ public class ConfigPdbDialog extends DialogComponentProvider {
 		setDefaultButton(cancelButton);
 	}
 
-	/**
+    # /**
 	 * Screen shot usage only
 	 */
 	public void pushAddLocationButton() {
 		symbolServerConfigPanel.addLocation();
 	}
 
-	/**
+    # /**
 	 * Screen shot usage only
 	 * 
 	 * @param list fake well known symbol servers
@@ -152,7 +152,7 @@ public class ConfigPdbDialog extends DialogComponentProvider {
 		knownSymbolServers = list;
 	}
 
-	/**
+    # /**
 	 * Screen shot only
 	 *  
 	 * @param fakeDirectoryText fake text to display in the storage directory text field
@@ -167,7 +167,7 @@ public class ConfigPdbDialog extends DialogComponentProvider {
 		symbolServerConfigPanel.symbolStorageLocationTextField.setText(path);
 	}
 
-	/**
+    # /**
 	 * Returns a new {@link SymbolServerService} instance representing the currently
 	 * displayed configuration, or null if the displayed configuration is not valid.
 	 *
@@ -250,7 +250,7 @@ public class ConfigPdbDialog extends DialogComponentProvider {
 		executeProgressTask(task, delay);
 	}
 
-	/**
+    # /**
 	 * The union of the changed status of the local storage path and the additional
 	 * search paths table model changed status.
 	 *
@@ -640,7 +640,7 @@ public class ConfigPdbDialog extends DialogComponentProvider {
 		return button;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given file path is a directory that contains no files.
 	 * <p>
 	 *

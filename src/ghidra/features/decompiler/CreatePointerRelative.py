@@ -395,7 +395,7 @@ public class CreatePointerRelative extends RetypeLocalAction {
 		retypeSymbol(program, highSymbol, userVarnode, relativePointer, tool);
 	}
 
-	/**
+    # /**
 	 * Make sure the given String works as a data-type name
 	 * @param name is the given String
 	 * @return an error message or null if the name is valid
@@ -407,7 +407,7 @@ public class CreatePointerRelative extends RetypeLocalAction {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Assuming the dialog has filled in the desired name and category of the relative pointer, as 
 	 * well as the baseType, search for a preexisting TypeDef data-type that matches the name. 
 	 * If no TypeDef is found return null.  If a TypeDef is found but it is not a pointer to
@@ -439,7 +439,7 @@ public class CreatePointerRelative extends RetypeLocalAction {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Assuming the parameters have been filled in by the dialog, create the matching TypeDef.
 	 * If a new TypeDef is created, or if a pointer to the base DataType already exists as a TypeDef,
 	 * set the ComponentOffsetSetting to the value selected by the dialog (userOffset).
@@ -504,7 +504,7 @@ public class CreatePointerRelative extends RetypeLocalAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Build a default name for a relative pointer, given the base data-type and offset
 	 * @param dt is the given base data-type
 	 * @param off is the given offset

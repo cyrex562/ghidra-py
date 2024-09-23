@@ -27,7 +27,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  */
 public abstract class DataHighLevelShaderLanguageSymbolInternals extends AbstractSymbolInternals {
 
-	/**
+    # /**
 	 * Factory for "regular" version of {@link DataHighLevelShaderLanguageSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -49,7 +49,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "32" version of {@link DataHighLevelShaderLanguageSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -71,7 +71,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "32Ext" version of {@link DataHighLevelShaderLanguageSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -97,7 +97,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 	protected HLSLRegisterType registerType;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 */
@@ -113,7 +113,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 		return registerType;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -127,7 +127,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 
 //--------------------------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * This class represents Internals  and Internal 32 of the High Level Shader Language symbol.
 	 * <P>
 	 * Note: we have guessed that HLSL means High Level Shader Language.
@@ -140,7 +140,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 		protected long samplerSlotStart;
 		protected long uavSlotStart;
 
-		/**
+	    # /**
 		 * Constructor for this symbol internals.
 		 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 		 */
@@ -148,7 +148,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 			super(pdb);
 		}
 
-		/**
+	    # /**
 		 * Return the data slot.
 		 * @return the data slot.
 		 */
@@ -156,7 +156,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 			return dataSlot;
 		}
 
-		/**
+	    # /**
 		 * Return the texture slot start.
 		 * @return the texture slot start.
 		 */
@@ -164,7 +164,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 			return textureSlotStart;
 		}
 
-		/**
+	    # /**
 		 * Return the sampler slot start.
 		 * @return the sampler slot start.
 		 */
@@ -172,7 +172,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 			return samplerSlotStart;
 		}
 
-		/**
+	    # /**
 		 * Return the UAV slot start.
 		 * @return the UAV slot start.
 		 */
@@ -191,7 +191,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 
 	}
 
-	/**
+    # /**
 	 * This class represents Extended Internals 32 of the High Level Shader Language symbol.
 	 * <P>
 	 * Note: we have guessed that HLSL means High Level Shader Language.
@@ -206,7 +206,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 		protected long bindSpace;
 		protected long bindSlot;
 
-		/**
+	    # /**
 		 * Constructor for this symbol internals.
 		 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 		 */
@@ -214,7 +214,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 			super(pdb);
 		}
 
-		/**
+	    # /**
 		 * Return the register index.
 		 * @return the register index.
 		 */
@@ -222,7 +222,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 			return registerIndex;
 		}
 
-		/**
+	    # /**
 		 * Return the bind space.
 		 * @return the bind space.
 		 */
@@ -230,7 +230,7 @@ public abstract class DataHighLevelShaderLanguageSymbolInternals extends Abstrac
 			return bindSpace;
 		}
 
-		/**
+	    # /**
 		 * Return the bind slot.
 		 * @return the bind slot.
 		 */

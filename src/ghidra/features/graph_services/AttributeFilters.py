@@ -40,30 +40,30 @@ import ghidra.service.graph.Attributed;
 public class AttributeFilters implements ItemSelectable {
 
 	public static class Builder {
-		/**
+	    # /**
 		 * key names that are precluded from being considered for filter creation
 		 */
 		private Collection<String> excludedAttributes = Collections.emptyList();
-		/**
+	    # /**
 		 * all of the Attributed elements that will be considered for the creation of filters
 		 */
 		private Set<? extends Attributed> elements;
-		/**
+	    # /**
 		 * a factor used to control whether a filter is created or not.
 		 *     {@code double threshold = Math.max(2, elements.size() * maxFactor);}
 		 *     determines the threshold for the creation of a filter on an attribute value
 		 */
 		private double maxFactor;
-		/**
+	    # /**
 		 * provides a toolkit button control for the filters ({@link JRadioButton} by default)
 		 */
 		private Supplier<AbstractButton> buttonSupplier = JRadioButton::new;
-		/**
+	    # /**
 		 * a {@link Function} to allow custom coloring of the individual toolkit button foreground
 		 */
 		private Function<String, Paint> paintFunction = v -> Colors.FOREGROUND;
 
-		/**
+	    # /**
 		 * @param excluded ignored keys
 		 * @return the Builder
 		 */
@@ -72,7 +72,7 @@ public class AttributeFilters implements ItemSelectable {
 			return this;
 		}
 
-		/**
+	    # /**
 		 * @param newElements the elements to consider
 		 * @return this Builder
 		 */
@@ -81,7 +81,7 @@ public class AttributeFilters implements ItemSelectable {
 			return this;
 		}
 
-		/**
+	    # /**
 		 * @param newMaxFactor the factor to use in creating a threshold for filter creation
 		 * @return this Builder
 		 */
@@ -90,7 +90,7 @@ public class AttributeFilters implements ItemSelectable {
 			return this;
 		}
 
-		/**
+	    # /**
 		 * @param newButtonSupplier the toolkit button to provide
 		 * @return this Builder
 		 */
@@ -99,7 +99,7 @@ public class AttributeFilters implements ItemSelectable {
 			return this;
 		}
 
-		/**
+	    # /**
 		 * @param newPaintFunction the {@code Function} to color the toolkit buttons
 		 * @return this Builder
 		 */
@@ -108,7 +108,7 @@ public class AttributeFilters implements ItemSelectable {
 			return this;
 		}
 
-		/**
+	    # /**
 		 * create the configured instance
 		 * @return the configured instance
 		 */
@@ -117,7 +117,7 @@ public class AttributeFilters implements ItemSelectable {
 		}
 	}
 
-	/**
+    # /**
 	 *
 	 * @return a builder to configure an instance of AttributeFilters
 	 */
@@ -125,7 +125,7 @@ public class AttributeFilters implements ItemSelectable {
 		return new Builder();
 	}
 
-	/**
+    # /**
 	 *
 	 * @param builder configurations for the instance
 	 */
@@ -141,7 +141,7 @@ public class AttributeFilters implements ItemSelectable {
 
 	protected EventListenerList listenerList = new EventListenerList();
 
-	/**
+    # /**
 	 *
 	 * @param precludedNames keys that will not be considered for filters
 	 * @param elements elements that will be considered for filters
@@ -192,7 +192,7 @@ public class AttributeFilters implements ItemSelectable {
 		}
 	}
 
-	/**
+    # /**
 	 *
 	 * @return the filter control toolkit buttons
 	 */
@@ -206,7 +206,7 @@ public class AttributeFilters implements ItemSelectable {
 		return selectedTexts.toArray();
 	}
 
-	/**
+    # /**
 	 * add a listener to react to changes in the filter selection
 	 * @param l the listener
 	 */
@@ -215,7 +215,7 @@ public class AttributeFilters implements ItemSelectable {
 		listenerList.add(ItemListener.class, l);
 	}
 
-	/**
+    # /**
 	 * remove a listener for filter changes
 	 * @param l the listener
 	 */
@@ -224,7 +224,7 @@ public class AttributeFilters implements ItemSelectable {
 		listenerList.remove(ItemListener.class, l);
 	}
 
-	/**
+    # /**
 	 * alert listeners that there is a change in the selected filters
 	 * @param e the event
 	 */

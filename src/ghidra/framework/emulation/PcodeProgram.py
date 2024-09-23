@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.exec;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.plugin.processors.sleigh.SleighLanguage;

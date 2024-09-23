@@ -31,7 +31,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 	protected final Language language;
 	protected final boolean indent;
 
-	/**
+    # /**
 	 * Create a new appender.
 	 * 
 	 * @param language the language of the p-code ops to format
@@ -105,7 +105,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		appendString(stringifySpace(space));
 	}
 
-	/**
+    # /**
 	 * Append a plain string.
 	 * 
 	 * <p>
@@ -130,7 +130,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		appendString(stringifyUserop(language, id));
 	}
 
-	/**
+    # /**
 	 * Covert the given line label to a string as it should be conventionally displayed.
 	 * 
 	 * @param label the label number
@@ -140,7 +140,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		return "<" + label + ">";
 	}
 
-	/**
+    # /**
 	 * Convert the given opcode to a string as it should be conventionally displayed.
 	 * 
 	 * @param opcode the opcode
@@ -150,7 +150,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		return PcodeOp.getMnemonic(opcode);
 	}
 
-	/**
+    # /**
 	 * Convert the given varnode to its raw conventional form.
 	 * 
 	 * @param space the address space
@@ -162,7 +162,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		return "(" + space.getName() + ", 0x" + Long.toHexString(offset) + ", " + size + ")";
 	}
 
-	/**
+    # /**
 	 * Convert the given register to a string as it should be conventionally displayed.
 	 * 
 	 * @param register the register
@@ -172,7 +172,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		return register.getName();
 	}
 
-	/**
+    # /**
 	 * Convert the given scalar to a string as it should be conventionally displayed.
 	 * 
 	 * @param value the value
@@ -187,7 +187,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Convert the given address space to a string as it should be conventionally displayed.
 	 * 
 	 * @param space the address space
@@ -200,7 +200,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		return space.getName();
 	}
 
-	/**
+    # /**
 	 * Convert a given unique variable to a string as it should be conventionally displayed.
 	 * 
 	 * @param offset the variable's offset
@@ -210,7 +210,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		return "$U" + Long.toHexString(offset);
 	}
 
-	/**
+    # /**
 	 * Lookup a given userop name
 	 * 
 	 * @param language the language containing the userop
@@ -224,7 +224,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		return ((SleighLanguage) language).getUserDefinedOpName(id);
 	}
 
-	/**
+    # /**
 	 * Convert a given userop to a string as it should be conventionally displayed.
 	 * 
 	 * @param language the langauge containing the userop
@@ -240,7 +240,7 @@ public abstract class AbstractAppender<T> implements Appender<T> {
 		return pseudoOp;
 	}
 
-	/**
+    # /**
 	 * Convert a given word-offcut style address to a string as it should be conventionally
 	 * displayed.
 	 * 

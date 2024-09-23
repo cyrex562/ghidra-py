@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.*;
+
 import java.nio.ByteBuffer;
 import java.util.*;
 
@@ -30,7 +30,7 @@ public class CramFsBlockReader {
 	private List<Integer> compressedBlockSizes = new ArrayList<>();
 	private boolean isLittleEndian;
 
-	/**
+    # /**
 	 * This constructor reads the CramFS Block.
 	 * @param provider the byteProvider for the block header.
 	 * @param cramfsInode the parent node for this block.
@@ -72,7 +72,7 @@ public class CramFsBlockReader {
 		}
 	}
 
-	/**
+    # /**
 	 * Calculates the start address of the data block using the 
 	 * block pointer table that precedes compressed data.
 	 * @return the number of block pointers associated with this data section.
@@ -99,7 +99,7 @@ public class CramFsBlockReader {
 		return numBlockPointers;
 	}
 
-	/**
+    # /**
 	 * Uses the block pointer table which contains addresses
 	 * to calculate the size of the compressed blocks of data
 	 * for use in uncompressing each block. Adds the size of each block
@@ -113,7 +113,7 @@ public class CramFsBlockReader {
 
 	}
 
-	/**
+    # /**
 	 * Reads one block from the data pointed to by the CramfsInode.
 	 * @param dataBlockIndex the index of the block to read.
 	 * @return a byte array representing the compressed data for a compressed block.
@@ -124,7 +124,7 @@ public class CramFsBlockReader {
 			compressedBlockSizes.get(dataBlockIndex));
 	}
 
-	/**
+    # /**
 	 * Sends compressed data block to be uncompressed.
 	 * @param dataBlockIndex the index of the block to read.
 	 * @return Uncompressed data as a ByteArrayInputStream.
@@ -142,7 +142,7 @@ public class CramFsBlockReader {
 		return new ByteArrayInputStream(decompressedOutputStream.toByteArray());
 	}
 
-	/**
+    # /**
 	 * Gets the provider.
 	 * @return provider.
 	 */
@@ -150,7 +150,7 @@ public class CramFsBlockReader {
 		return provider;
 	}
 
-	/**
+    # /**
 	 * Gets the CramfsInode.
 	 * @return cramfsInode.
 	 */
@@ -158,7 +158,7 @@ public class CramFsBlockReader {
 		return cramfsInode;
 	}
 
-	/**
+    # /**
 	 * Gets the block pointer table.
 	 * @return the block pointer table.
 	 */
@@ -166,7 +166,7 @@ public class CramFsBlockReader {
 		return blockPointerTable;
 	}
 
-	/**
+    # /**
 	 * Gets the number of block pointers.
 	 * @return the number of block pointers.
 	 */

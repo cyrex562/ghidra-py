@@ -31,7 +31,7 @@ import mdemangler.datatype.MDDataType;
 public abstract class AbstractComplexTypeApplier extends MsDataTypeApplier {
 
 	// Intended for: AbstractComplexMsType
-	/**
+    # /**
 	 * Constructor for complex type applier
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */
@@ -39,7 +39,7 @@ public abstract class AbstractComplexTypeApplier extends MsDataTypeApplier {
 		super(applicator);
 	}
 
-	/**
+    # /**
 	 * Returns the SymbolPath for the complex type parameter without using the record number
 	 * @param type the MS complex PDB type
 	 * @return the path
@@ -49,7 +49,7 @@ public abstract class AbstractComplexTypeApplier extends MsDataTypeApplier {
 		return getSymbolPath(type.getName(), type.getMangledName());
 	}
 
-	/**
+    # /**
 	 * Returns the definition record for the specified complex type in case the record passed
 	 *  in is only its forward reference
 	 * @param mType the MS complex PDB type
@@ -63,7 +63,7 @@ public abstract class AbstractComplexTypeApplier extends MsDataTypeApplier {
 		return type.cast(mType);
 	}
 
-	/**
+    # /**
 	 * Returns the SymbolPath for the complex type.  This ensures that the SymbolPath pertains
 	 *  to the definition type in situations where the record number of the definition (vs. that
 	 *  of the forward reference) is needed for creation of the path
@@ -78,7 +78,7 @@ public abstract class AbstractComplexTypeApplier extends MsDataTypeApplier {
 		return PdbNamespaceUtils.convertToGhidraPathName(path, num);
 	}
 
-	/**
+    # /**
 	 * Returns the symbol path for the data type referenced by the type record number provided
 	 * @param applicator the applicator
 	 * @param recordNumber the record number

@@ -37,7 +37,7 @@ public class ManagedDataTable extends DataTable {
         return occupied.get(row);
     }
 
-	/**
+    # /**
 	 * Returns the max row that contains data.
 	 */
 	public int getMaxRow() {

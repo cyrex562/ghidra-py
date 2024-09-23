@@ -1,45 +1,45 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.code;
 
 import java.util.Objects;
 
 # /**
- * Container object that holds a start and end position within a string. A list of StringDiffs 
- * is used to keep track of changes made to a string.
- */
+# * Container object that holds a start and end position within a string. A list of StringDiffs 
+# * is used to keep track of changes made to a string.
+# */
 public class StringDiff {
 
-	/**
+    # /**
 	 * Start position of the string used when text is inserted or replaced
 	 */
 	int start;
 
-	/**
+    # /**
 	 * End position of the string used when part of the string is replaced
 	 */
 	int end;
 
-	/**
+    # /**
 	 * String being inserted.  This can be an insert or a complete replace (the positions will both
 	 * be -1 in a replace; pos1 will be non-negative during an insert).
 	 */
 	public String text;
 
-	/**
+    # /**
 	 * Construct a new StringDiff with pos1 and pos2 are initialized to -1
 	 * 
 	 * @param newText string 
@@ -49,7 +49,7 @@ public class StringDiff {
 		return new StringDiff(-1, -1, newText);
 	}
 
-	/**
+    # /**
 	 * Construct a new StringDiff that indicates text was deleted from pos1 to pos2
 	 * 
 	 * @param start position 1 for the diff
@@ -60,7 +60,7 @@ public class StringDiff {
 		return new StringDiff(start, end, null);
 	}
 
-	/**
+    # /**
 	 * Construct a new StringDiff that indicates that insertData was inserted at the given position
 	 * 
 	 * @param newText inserted string

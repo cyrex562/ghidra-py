@@ -33,14 +33,14 @@ public class ClangFieldToken extends ClangToken {
 		datatype = null;
 	}
 
-	/**
+    # /**
 	 * @return the structure datatype associated with this field token
 	 */
 	public DataType getDataType() {
 		return datatype;
 	}
 
-	/**
+    # /**
 	 * @return the byte offset of this field with its structure
 	 */
 	public int getOffset() {

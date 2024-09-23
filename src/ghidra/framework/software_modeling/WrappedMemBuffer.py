@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.mem;
 
 import java.math.BigInteger;
@@ -22,22 +22,22 @@ import ghidra.program.model.address.AddressOutOfBoundsException;
 import ghidra.util.GhidraDataConverter;
 
 # /**
- * WrappedMemBuffer implements a MemBuffer that provides a zero based index
- * on top of an underlying membuffer with at a given address.  It can buffer N bytes
- * at time using the constructor that takes a cache size.  However the default
- * is to provide no buffering.  Use of the buffer can
- * reduce the overall number of calls to Memory, greatly reducing
- * the overhead of various error checks.  This implementation will not wrap
- * if the end of the memory space is encountered.
- * 
- * The {@link #getByte(int)}, {@link #getBytes(byte[], int)} methods can cause the bytes in the
- * buffer cache if the request is outside of the current cached bytes.
- * 
- * WARNING: The underlying MemBuffer should not change its base address. Using a
- * mutable MemBuffer can cause problematic behavior if not controlled carefully.
- * 
- * WARNING: Not thread-safe.
- */
+# * WrappedMemBuffer implements a MemBuffer that provides a zero based index
+# * on top of an underlying membuffer with at a given address.  It can buffer N bytes
+# * at time using the constructor that takes a cache size.  However the default
+# * is to provide no buffering.  Use of the buffer can
+# * reduce the overall number of calls to Memory, greatly reducing
+# * the overhead of various error checks.  This implementation will not wrap
+# * if the end of the memory space is encountered.
+# * 
+# * The {@link #getByte(int)}, {@link #getBytes(byte[], int)} methods can cause the bytes in the
+# * buffer cache if the request is outside of the current cached bytes.
+# * 
+# * WARNING: The underlying MemBuffer should not change its base address. Using a
+# * mutable MemBuffer can cause problematic behavior if not controlled carefully.
+# * 
+# * WARNING: Not thread-safe.
+# */
 
 public class WrappedMemBuffer implements MemBuffer {
 
@@ -53,7 +53,7 @@ public class WrappedMemBuffer implements MemBuffer {
 	private int minOffset = 0;
 	private int maxOffset = -1;
 
-	/**
+    # /**
 	 * Construct a wrapped MemBuffer with an adjustable base offset
 	 * @param buf memory buffer
 	 * @param baseOffset offset relative to the underlying buffer's start address
@@ -64,7 +64,7 @@ public class WrappedMemBuffer implements MemBuffer {
 		this(buf, DEFAULT_BUFSIZE, baseOffset);
 	}
 
-	/**
+    # /**
 	 * Construct a wrapped MemBuffer with an adjustable base offset
 	 * @param buf memory buffer
 	 * @param bufferSize size of cache buffer - specify 0 for no buffering
@@ -87,7 +87,7 @@ public class WrappedMemBuffer implements MemBuffer {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Set new base offset relative to the associated MemBuffer's address
 	 * @param offset new base offset of this buffer
 	 * @throws AddressOutOfBoundsException
@@ -105,7 +105,7 @@ public class WrappedMemBuffer implements MemBuffer {
 		}
 	}
 
-	/**
+    # /**
 	 * Compute offset into original memBuffer, making sure the offset doesn't wrap 
 	 * @param offset the offset relative to the baseOffset.
 	 * @return the offset relative to the original memBuffer.

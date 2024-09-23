@@ -10,7 +10,7 @@ public class JSONToken {
 	public int end;
 	public int size;
 
-	/**
+    # /**
 	 * JSON token description.
 	 * @param type	the token type (object, array, string etc.)
 	 * @param start	the start position in JSON data string

@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.gui.filters;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.sql.SQLException;
 import java.util.List;
@@ -44,7 +44,7 @@ public class FunctionTagBSimFilterType extends BSimFilterType {
 	private String tagName; // Particular tag being tested
 	private int flag; // bit position of the boolean value
 
-	/**
+    # /**
 	 * Creates a new function tag filter.
 	 * 
 	 * @param tagName the tag name
@@ -56,7 +56,7 @@ public class FunctionTagBSimFilterType extends BSimFilterType {
 		this.flag = flag;
 	}
 
-	/**
+    # /**
 	 * Constructor for clients who do not know what the bit flag position of this
 	 * function tag is. If that's the case, this will figure it out from the
 	 * given queryService object. 
@@ -131,7 +131,7 @@ public class FunctionTagBSimFilterType extends BSimFilterType {
 		return true; // Not a test on executable
 	}
 
-	/**
+    # /**
 	 * @return false, only one boolean value is allowed
 	 */
 	@Override

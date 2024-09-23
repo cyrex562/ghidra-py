@@ -19,7 +19,7 @@ import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class YAFFS2Data implements StructConverter {
 

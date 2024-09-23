@@ -17,7 +17,7 @@ package resources;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.*;
+
 import java.net.*;
 import java.nio.file.Path;
 import java.util.*;

@@ -96,7 +96,7 @@ public class SetLayoutTask extends Task {
 
 	}
 
-	/**
+    # /**
 	 * Notification when the layout algorithm starts and stops
 	 * @param e the event. If the event.active is true, then the algorithm is starting, if false,
 	 *        the algorithm is done.
@@ -108,7 +108,7 @@ public class SetLayoutTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Callback if the user cancels the layout
 	 */
 	private void taskCancelled() {

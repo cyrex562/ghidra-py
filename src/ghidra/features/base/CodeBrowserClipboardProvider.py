@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.clipboard;
 
 import java.awt.Rectangle;
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArraySet;

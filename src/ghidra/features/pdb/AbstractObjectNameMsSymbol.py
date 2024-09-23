@@ -28,7 +28,7 @@ public abstract class AbstractObjectNameMsSymbol extends AbstractMsSymbol implem
 	protected long signature;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -42,7 +42,7 @@ public abstract class AbstractObjectNameMsSymbol extends AbstractMsSymbol implem
 		name = reader.parseString(pdb, strType);
 	}
 
-	/**
+    # /**
 	 * Returns the signature.
 	 * @return Signature.
 	 */
@@ -50,7 +50,7 @@ public abstract class AbstractObjectNameMsSymbol extends AbstractMsSymbol implem
 		return signature;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

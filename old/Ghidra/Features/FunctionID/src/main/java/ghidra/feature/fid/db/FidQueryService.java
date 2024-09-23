@@ -16,7 +16,7 @@
 package ghidra.feature.fid.db;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.feature.fid.hash.FidHashQuad;

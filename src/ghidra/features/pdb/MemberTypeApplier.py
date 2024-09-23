@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.type.AbstractMemberMsType;
 public class MemberTypeApplier extends MsDataTypeComponentApplier {
 
 	// Intended for: AbstractMemberMsType
-	/**
+    # /**
 	 * Constructor for member type applier
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */

@@ -19,7 +19,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
-import java.io.*;
+
 
 import javax.swing.*;
 import javax.swing.text.Document;

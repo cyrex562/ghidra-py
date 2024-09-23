@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.client;
 
-import java.io.*;
+
 
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;

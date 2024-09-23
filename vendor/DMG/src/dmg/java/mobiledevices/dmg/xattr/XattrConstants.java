@@ -1,6 +1,6 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.xattr;
 
 public final class XattrConstants {

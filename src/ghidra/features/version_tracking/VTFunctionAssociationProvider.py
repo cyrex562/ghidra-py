@@ -395,7 +395,7 @@ public class VTFunctionAssociationProvider extends ComponentProviderAdapter
 		addLocalAction(toggleListingVisibility);
 	}
 
-	/**
+    # /**
 	 * Displays or hides the function comparison panel within the function association provider.
 	 * @param show true indicates to show the function comparison within the provider. 
 	 * Otherwise, hide it.
@@ -609,7 +609,7 @@ public class VTFunctionAssociationProvider extends ComponentProviderAdapter
 		updateMatchStatusToolTip();
 	}
 
-	/**
+    # /**
 	 * If the status text doesn't fit in the dialog, set a tool tip
 	 * for the status label so the user can see what it says.
 	 * If the status message fits then there is no tool tip.

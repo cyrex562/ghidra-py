@@ -18,9 +18,9 @@ package ghidra.pcode.struct;
 import ghidra.pcode.struct.StructuredSleigh.*;
 
 abstract class LoopStmt extends ConditionalStmt {
-	/** To be set during generation */
+    # /** To be set during generation */
 	protected Label lBreak;
-	/** To be set during generation */
+    # /** To be set during generation */
 	protected Label lContinue;
 
 	public LoopStmt(StructuredSleigh ctx, RVal cond, Stmt stmt) {

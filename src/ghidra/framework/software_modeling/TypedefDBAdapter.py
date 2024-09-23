@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -25,8 +25,8 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Adapter to access the database table for typedef data types.
- */
+# * Adapter to access the database table for typedef data types.
+# */
 abstract class TypedefDBAdapter {
 
 	static final String TYPEDEF_TABLE_NAME = "Typedefs";
@@ -48,7 +48,7 @@ abstract class TypedefDBAdapter {
 	// Typedef flags bits
 	static final int TYPEDEF_FLAG_AUTONAME = 0x1;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the Typedef data type database table. The adapter is based
 	 * on the version of the database associated with the specified database handle and the openMode.
 	 * @param handle handle to the database to be accessed.
@@ -77,7 +77,7 @@ abstract class TypedefDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Tries to get a read only adapter for the database whose handle is passed to this method.
 	 * @param handle handle to prior version of the database.
 	 * @return the read only Typedef table adapter
@@ -93,7 +93,7 @@ abstract class TypedefDBAdapter {
 		return new TypedefDBAdapterV0(handle);
 	}
 
-	/**
+    # /**
 	 * Upgrades the Typedef data type table from the oldAdapter's version to the current version.
 	 * @param handle handle to the database whose table is to be upgraded to a newer version.
 	 * @param oldAdapter the adapter for the existing table to be upgraded.
@@ -136,7 +136,7 @@ abstract class TypedefDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a database record for a type definition data type.
 	 * @param dataTypeID the ID of the data type that is referred to by this type definition.
 	 * @param name the unique name for this data type
@@ -151,7 +151,7 @@ abstract class TypedefDBAdapter {
 	abstract DBRecord createRecord(long dataTypeID, String name, short flags, long categoryID,
 			long sourceArchiveID, long sourceDataTypeID, long lastChangeTime) throws IOException;
 
-	/**
+    # /**
 	 * Gets a type definition data type record from the database based on its ID.
 	 * @param typedefID the data type's ID.
 	 * @return the record for the type definition data type.
@@ -159,14 +159,14 @@ abstract class TypedefDBAdapter {
 	 */
 	abstract DBRecord getRecord(long typedefID) throws IOException;
 
-	/**
+    # /**
 	 * Gets an iterator over all type definition data type records.
 	 * @return the type definition data type record iterator.
 	 * @throws IOException if the database can't be accessed.
 	 */
 	abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Removes the type definition data type record with the specified ID.
 	 * @param dataID the ID of the data type.
 	 * @return true if the record is removed.
@@ -174,7 +174,7 @@ abstract class TypedefDBAdapter {
 	 */
 	abstract boolean removeRecord(long dataID) throws IOException;
 
-	/**
+    # /**
 	 * Updates the type definition data type table with the provided record.
 	 * @param record the new record
 	 * @param setLastChangeTime true means change the last change time in the record to the
@@ -183,14 +183,14 @@ abstract class TypedefDBAdapter {
 	 */
 	abstract void updateRecord(DBRecord record, boolean setLastChangeTime) throws IOException;
 
-	/**
+    # /**
 	 * Deletes the type definition data type table from the database with the specified database handle.
 	 * @param handle handle to the database where the table should get deleted.
 	 * @throws IOException if the database can't be accessed.
 	 */
 	abstract void deleteTable(DBHandle handle) throws IOException;
 
-	/**
+    # /**
 	 * Gets all the type definition data types that are contained in the category that has the indicated ID.
 	 * @param categoryID the category whose type definition data types are wanted.
 	 * @return an array of IDs for the type definition data types in the category.
@@ -198,7 +198,7 @@ abstract class TypedefDBAdapter {
 	 */
 	abstract Field[] getRecordIdsInCategory(long categoryID) throws IOException;
 
-	/**
+    # /**
 	 * Gets an array with the IDs of all data types in the type definition table that were derived
 	 * from the source data type archive indicated by the source archive ID.
 	 * @param archiveID the ID of the source archive whose data types we want.
@@ -207,7 +207,7 @@ abstract class TypedefDBAdapter {
 	 */
 	abstract Field[] getRecordIdsForSourceArchive(long archiveID) throws IOException;
 
-	/**
+    # /**
 	 * Get typedef record whose sourceID and datatypeID match the specified Universal IDs.
 	 * @param sourceID universal source archive ID
 	 * @param datatypeID universal datatype ID
@@ -217,7 +217,7 @@ abstract class TypedefDBAdapter {
 	abstract DBRecord getRecordWithIDs(UniversalID sourceID, UniversalID datatypeID)
 			throws IOException;
 
-	/**
+    # /**
 	 * Get the number of typedef datatype records
 	 * @return total number of composite records
 	 */

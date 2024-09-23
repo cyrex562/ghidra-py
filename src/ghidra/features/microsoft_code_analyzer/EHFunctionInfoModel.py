@@ -65,7 +65,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 	private EHIPToStateModel ipToStateModel;
 	private EHESTypeListModel esTypeListModel;
 
-	/**
+    # /**
 	 * Creates the model for the exception handling FuncInfo data type.
 	 * @param program the program
 	 * @param address the address in the program for the FuncInfo.
@@ -113,7 +113,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return DATA_TYPE_NAME;
 	}
 
-	/**
+    # /**
 	 * Gets the version number of the data type.
 	 * @return the version number or -1 if data type doesn't have valid magic number.
 	 */
@@ -139,7 +139,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return dataTypeLength;
 	}
 
-	/**
+    # /**
 	 * Determines the data type's length without actually creating the data type.
 	 * @return the data type length or 0 if it can't be determined.
 	 */
@@ -175,7 +175,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the address for this model appears to be a valid location for a 
 	 * function information data type.
 	 * @throws InvalidDataTypeException if this models location does not appear to be a FuncInfo 
@@ -221,7 +221,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Validate all the components that indicate count values for map entries.
 	 * This method can be called to perform additional validation that count components appear to 
 	 * have reasonable values that aren't more than the indicated maximum value.
@@ -236,7 +236,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		checkEntryCount("IP to state", getIPToStateCount(), maxCount);
 	}
 
-	/**
+    # /**
 	 * Validate all the locations (a relative or absolute address) indicated by components of 
 	 * this FuncInfo data. All locations indicated by components are expected to be within
 	 * the same block as the data for this model.
@@ -271,7 +271,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * If this is a valid FuncInfo location, the correct FuncInfo structure is returned.
 	 * Otherwise this returns a null.
 	 * @return the FuncInfo structure or null.
@@ -284,7 +284,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * If this is a valid FuncInfo location, the correct FuncInfo structure is returned.
 	 * Otherwise this returns a null.
 	 * @return the FuncInfo structure or null.
@@ -383,7 +383,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.getMatchingDataType(program, dataType);
 	}
 
-	/**
+    # /**
 	 * Gets the value of the magic number.
 	 * @return the magic number or 0.
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -393,7 +393,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return magicNum;
 	}
 
-	/**
+    # /**
 	 * Gets the value of the bbt flags.
 	 * @return the bbt flags.
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -403,7 +403,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return bbtFlags;
 	}
 
-	/**
+    # /**
 	 * Gets the unwind model for the function info.
 	 * @return the unwind model, which may be invalid.
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -417,7 +417,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return unwindModel;
 	}
 
-	/**
+    # /**
 	 * Gets the number of unwind map entries for this function information data.
 	 * @return number of unwind map entries
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -428,7 +428,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getCount(getDataType(), MAX_STATE_ORDINAL, getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the unwind map, if there is one. Otherwise, this returns null.
 	 * @return the address of the unwind map or null.
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -441,7 +441,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return getAdjustedAddress(mapAddress, getUnwindCount());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component containing the address of the unwind map, if there is one. 
 	 * Otherwise, this returns null.
 	 * @return the address of the component with the address of the unwind map or null.
@@ -454,7 +454,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the try block model for the function info.
 	 * @return the try block model, which may be invalid.
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -468,7 +468,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return tryBlockModel;
 	}
 
-	/**
+    # /**
 	 * Gets the number of try block map entries for this function information data.
 	 * @return number of try block map entries
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -479,7 +479,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getCount(getDataType(), TRY_BLOCK_COUNT_ORDINAL, getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the try block map, if there is one. Otherwise, this returns null.
 	 * @return the address of the try block map or null.
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -492,7 +492,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return getAdjustedAddress(mapAddress, getTryBlockCount());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component containing the try block map address, if there is one. 
 	 * Otherwise, this returns null.
 	 * @return the address of the component with the try block map address or null.
@@ -505,7 +505,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the IP to state model for the function info.
 	 * @return the IP to state model, which may be invalid.
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -519,7 +519,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return ipToStateModel;
 	}
 
-	/**
+    # /**
 	 * Gets the number of IP to state map entries for this function information data.
 	 * @return number of IP to state map entries
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -531,7 +531,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the IP to state map, if there is one. Otherwise, this returns null.
 	 * @return the address of the IP to state map or null.
 	 * @throws InvalidDataTypeException if valid FuncInfo data can't be created at the model's address.
@@ -544,7 +544,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return getAdjustedAddress(mapAddress, getIPToStateCount());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component containing the IP to state map address, if there is one. 
 	 * Otherwise, this returns null.
 	 * @return the address of the component with the IP to state map address or null.
@@ -557,7 +557,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the unwind help, if it exists. Otherwise, this returns null.
 	 * @return the address of the unwind help or null.
 	 * @throws UndefinedValueException if this FuncInfo doesn't specify the UnwindHelp displacement.
@@ -574,7 +574,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 			"No UnwindHelp displacement, since it isn't defined for this program.");
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component containing the unwind help address, if there is one. 
 	 * Otherwise, this returns null.
 	 * @return the address of the component with the unwind help address or null.
@@ -592,7 +592,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 			"No UnwindHelp address, since it isn't defined for this program.");
 	}
 
-	/**
+    # /**
 	 * Gets the ESTypeList model for the function info.
 	 * @return the ESTypeList model, which may be invalid.
 	 * @throws UndefinedValueException if this FuncInfo doesn't specify the ESTypeList address.
@@ -613,7 +613,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return esTypeListModel;
 	}
 
-	/**
+    # /**
 	 * Gets the address of the ES type list, if there is one. Otherwise, this returns null.
 	 * @return the address of the ES type list or null.
 	 * @throws UndefinedValueException if this FuncInfo doesn't specify the ESTypeList address.
@@ -631,7 +631,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 			"No ESTypeList address, since not a version 2 or 3 FuncInfo structure.");
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component containing the ES type list address, if there is one. 
 	 * Otherwise, this returns null.
 	 * @return the address of the component with the ES type list address or null.
@@ -650,7 +650,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 			"No ESTypeList address, since not a version 2 or 3 FuncInfo structure.");
 	}
 
-	/**
+    # /**
 	 * Gets the value of the EH flags.
 	 * @return the EH flags.
 	 * @throws UndefinedValueException if this FuncInfo doesn't specify the EH Flags.
@@ -666,7 +666,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		throw new UndefinedValueException("No EH Flags, since not a version 3 FuncInfo structure.");
 	}
 
-	/**
+    # /**
 	 * Gets the TryBlockMapEntry model associated with this FuncInfo.
 	 * @return the TryBlockMapEntry model or null.
 	 */
@@ -680,7 +680,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return tryBlockModel;
 	}
 
-	/**
+    # /**
 	 * Gets the UnwindMapEntry model associated with this FuncInfo.
 	 * @return the UnwindMapEntry model or null.
 	 */
@@ -694,7 +694,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return unwindModel;
 	}
 
-	/**
+    # /**
 	 * Gets the IpToStateMapEntry model associated with this FuncInfo.
 	 * @return the IpToStateMapEntry model or null.
 	 */
@@ -708,7 +708,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return ipToStateModel;
 	}
 
-	/**
+    # /**
 	 * Gets the ESTypeList model associated with this FuncInfo.
 	 * @return the ESTypeList model or null.
 	 */
@@ -722,7 +722,7 @@ public class EHFunctionInfoModel extends AbstractCreateDataTypeModel {
 		return esTypeListModel;
 	}
 
-	/**
+    # /**
 	 * Gets a string that provides information about the function information for this object's
 	 * program and address.
 	 * @return the function information

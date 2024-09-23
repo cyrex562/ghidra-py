@@ -22,13 +22,13 @@ import ghidra.framework.plugintool.util.ServiceListener;
  * Interface for providing Services 
  */
 public interface ServiceProvider {
-	/**
+    # /**
 	 * Returns the Service object that implements the given service interface.
 	 * @param serviceClass the interface class.
 	 */
 	public <T> T getService(Class<T> serviceClass);
 	
-	/**
+    # /**
 	 * Adds a listener that will be called as services are added and removed from this 
 	 * ServiceProvider.
 	 * 
@@ -36,7 +36,7 @@ public interface ServiceProvider {
 	 */
 	public void addServiceListener( ServiceListener listener );
 	
-	/**
+    # /**
 	 * Removes the given listener from this ServiceProvider.  This method does nothing if the
 	 * given listener is not contained by this ServiceProvider.
 	 * @param listener

@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.functiongraph.mvc;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 import java.util.Collection;
 
 import org.jdom.Document;
@@ -45,7 +45,7 @@ public class LazyGraphRegroupSaveableXML extends LazySaveableXML {
 	}
 
 	@Override
-	/**
+    # /**
 	 * Overridden to create the {@link Element} to save at the time saving is taking place, 
 	 * instead of construction time.
 	 * 

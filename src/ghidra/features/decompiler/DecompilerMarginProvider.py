@@ -35,7 +35,7 @@ import ghidra.program.model.listing.Program;
  */
 public interface DecompilerMarginProvider {
 
-	/**
+    # /**
 	 * Called whenever the program, function, or layout changes
 	 * 
 	 * <p>
@@ -67,14 +67,14 @@ public interface DecompilerMarginProvider {
 	 */
 	void setProgram(Program program, LayoutModel model, LayoutPixelIndexMap pixmap);
 
-	/**
+    # /**
 	 * Get the Swing component implementing the actual margin, often {@code this}
 	 * 
 	 * @return the component
 	 */
 	Component getComponent();
 
-	/**
+    # /**
 	 * Set the options for the margin
 	 * 
 	 * <p>

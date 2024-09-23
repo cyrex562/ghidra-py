@@ -26,7 +26,7 @@ public class BaseClassTypeApplier extends MsDataTypeComponentApplier {
 
 	// Intended for: AbstractBaseClassMsType, AbstractVirtualBaseClassMsType, or
 	//  AbstractIndirectVirtualBaseClassMsType
-	/**
+    # /**
 	 * Constructor for base class applier
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 * @throws IllegalArgumentException Upon invalid arguments
@@ -36,7 +36,7 @@ public class BaseClassTypeApplier extends MsDataTypeComponentApplier {
 		super(applicator);
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the base class
 	 * @param type the PDB type being inspected
 	 * @return the record number

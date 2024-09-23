@@ -22,13 +22,13 @@ package ghidra.program.model.listing;
  */
 public enum AutoParameterType {
 
-	/**
+    # /**
 	 * <code>THIS</code> corresponds to the object pointer parameter associated
 	 * with a __thiscall calling convention and passed as a hidden parameter
 	 */
 	THIS("this"),
 
-	/**
+    # /**
 	 * <code>RETURN_STORAGE_PTR</code> corresponds to a caller allocated return
 	 * storage pointer passed as a hidden parameter
 	 */

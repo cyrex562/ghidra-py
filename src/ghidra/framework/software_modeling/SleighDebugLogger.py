@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.sleigh;
 
 import java.math.BigInteger;
@@ -32,9 +32,9 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.util.StringUtilities;
 
 # /**
- * <code>SleighDebugLogger</code> provides the ability to obtain detailed instruction
- * parse details.
- */
+# * <code>SleighDebugLogger</code> provides the ability to obtain detailed instruction
+# * parse details.
+# */
 public class SleighDebugLogger {
 
 	public enum SleighDebugMode {
@@ -65,7 +65,7 @@ public class SleighDebugLogger {
 	private InstructionContext instrContext;
 	private byte[] bytes;
 
-	/**
+    # /**
 	 * Performs a parse debug at the specified memory location within program.
 	 * @param buf the memory buffer
 	 * @param context the processor context
@@ -139,7 +139,7 @@ public class SleighDebugLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Performs a parse debug at the specified memory location within program.
 	 * @param program the program the memory location is found in
 	 * @param start the start address of the memory location
@@ -191,14 +191,14 @@ public class SleighDebugLogger {
 
 	}
 
-	/**
+    # /**
 	 * @return true if constructed for verbose logging
 	 */
 	public boolean isVerboseEnabled() {
 		return mode == SleighDebugMode.VERBOSE;
 	}
 
-	/**
+    # /**
 	 * @return true if a parse error was detected, otherwise false is returned.
 	 * The methods getMaskedBytes() and getInstructionMask() should
 	 * only be invoked if this method returns false.
@@ -207,7 +207,7 @@ public class SleighDebugLogger {
 		return prototype == null;
 	}
 
-	/**
+    # /**
 	 * Get list of constructor names with line numbers.
 	 * Any debug mode may be used.
 	 * @return list
@@ -270,7 +270,7 @@ public class SleighDebugLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Append a binary formatted integer value with the specified range of bits
 	 * bracketed to the log.  A -1 value for both startbit and bitcount disable the
 	 * bit range bracketing. 
@@ -292,7 +292,7 @@ public class SleighDebugLogger {
 		append(bytes, startbit, bitcount);
 	}
 
-	/**
+    # /**
 	 * Append a binary formatted integer array with the specified range of bits
 	 * bracketed to the log.  A -1 value for both startbit and bitcount disable the
 	 * bit range bracketing.
@@ -318,7 +318,7 @@ public class SleighDebugLogger {
 		append(bytes, startbit, bitcount);
 	}
 
-	/**
+    # /**
 	 * Append a binary formatted byte array with the specified range of bits
 	 * bracketed to the log.  A -1 value for both startbit and bitcount disable the
 	 * bit range bracketing.
@@ -356,7 +356,7 @@ public class SleighDebugLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Append message string to log buffer.
 	 * NOTE: Method has no affect unless constructed with VERBOSE logging mode.
 	 * @param str message string
@@ -386,7 +386,7 @@ public class SleighDebugLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Shift log indent right
 	 */
 	public void indent() {
@@ -399,7 +399,7 @@ public class SleighDebugLogger {
 		indent = getIndent();
 	}
 
-	/**
+    # /**
 	 * Shift log indent left
 	 */
 	public void dropIndent() {
@@ -427,7 +427,7 @@ public class SleighDebugLogger {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Return log text
 	 */
 	@Override
@@ -435,7 +435,7 @@ public class SleighDebugLogger {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Dump constructor details to the log
 	 * NOTE: Method has no affect unless constructed with VERBOSE logging mode.
 	 * @param subtableName constructor name
@@ -490,7 +490,7 @@ public class SleighDebugLogger {
 		append("\n");
 	}
 
-	/**
+    # /**
 	 * Dump fixed handle associated with a constructor symbol to the log.
 	 * NOTE: Method has no affect unless constructed with VERBOSE logging mode.
 	 * @param name
@@ -540,7 +540,7 @@ public class SleighDebugLogger {
 		append(")\n");
 	}
 
-	/**
+    # /**
 	 * Dump pattern details to the log.
 	 * NOTE: Method has no affect unless constructed with VERBOSE logging mode.
 	 * @param sym
@@ -588,7 +588,7 @@ public class SleighDebugLogger {
 		append("\n");
 	}
 
-	/**
+    # /**
 	 * Dump context pattern details.
 	 * NOTE: Method has no affect unless constructed with VERBOSE logging mode.
 	 * @param maskvec
@@ -652,7 +652,7 @@ public class SleighDebugLogger {
 		dropIndent(4);
 	}
 
-	/**
+    # /**
 	 * Dump transient context setting details.
 	 * NOTE: Method has no affect unless constructed with VERBOSE logging mode.
 	 * @param pos instruction context
@@ -694,7 +694,7 @@ public class SleighDebugLogger {
 		dropIndent(2);
 	}
 
-	/**
+    # /**
 	 * Dump globalset details.  The target address is currently not included in the log.
 	 * NOTE: Method has no affect unless constructed with VERBOSE logging mode.
 	 * @param pos
@@ -804,7 +804,7 @@ public class SleighDebugLogger {
 	// which uniquely matches the target instruction
 	//
 
-	/**
+    # /**
 	 * Start new pattern group for a specific sub-table.  
 	 * A null can correspond to a top-level constructor or 
 	 * low level complex pattern (AND, OR).  All committed unnamed groups 
@@ -821,7 +821,7 @@ public class SleighDebugLogger {
 		++currentDepth;
 	}
 
-	/**
+    # /**
 	 * Terminate the current pattern group
 	 * @param commit if false group will be discarded, if true group will be retained
 	 */
@@ -835,7 +835,7 @@ public class SleighDebugLogger {
 		--currentDepth;
 	}
 
-	/**
+    # /**
 	 * Add instruction bit pattern to the current pattern group.
 	 * @param offset base offset at which the specified maskvalue
 	 * can be applied.
@@ -845,7 +845,7 @@ public class SleighDebugLogger {
 		currentGroup.add(new InstructionBitPattern(offset, maskvalue));
 	}
 
-	/**
+    # /**
 	 * Add instruction context pattern to the current pattern group.
 	 * @param maskvalue pattern mask/value
 	 */
@@ -910,7 +910,7 @@ public class SleighDebugLogger {
 		return mask;
 	}
 
-	/**
+    # /**
 	 * Returns the instruction bit mask which identifies those bits used to uniquely identify
 	 * the instruction (includes addressing modes, generally excludes register selector bits
 	 * associated with attaches or immediate values used in for semantic values only).
@@ -922,7 +922,7 @@ public class SleighDebugLogger {
 		return instructionMask;
 	}
 
-	/**
+    # /**
 	 * Return general/operand bit mask formatted as a String
 	 * @param opIndex operand index or -1 for mnemonic mask
 	 * @return bit mask string
@@ -932,7 +932,7 @@ public class SleighDebugLogger {
 		return getFormattedBytes(mask);
 	}
 
-	/**
+    # /**
 	 * Return general/operand bit values formatted as a String
 	 * @param opIndex operand index or -1 for mnemonic bit values
 	 * @return bit value string
@@ -943,7 +943,7 @@ public class SleighDebugLogger {
 		return getFormattedBytes(value);
 	}
 
-	/**
+    # /**
 	 * Convenience method for formatting bytes as a bit sequence
 	 * @param value byte array
 	 * @return binary formatted bytes
@@ -960,7 +960,7 @@ public class SleighDebugLogger {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Get the number of operands for the resulting prototype
 	 * @return operand count
 	 * @throws IllegalStateException if prototype parse failed
@@ -972,7 +972,7 @@ public class SleighDebugLogger {
 		return prototype.getNumOperands();
 	}
 
-	/**
+    # /**
 	 * Apply an appropriate mask for the resulting instruction bytes
 	 * to obtain the corresponding masked bytes.
 	 * @param mask instruction, operand or similarly sized mask
@@ -992,7 +992,7 @@ public class SleighDebugLogger {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Get the byte value mask corresponding to the specified operand.
 	 * @param opIndex operand index within the instruction representation
 	 * @return byte mask or null if operand does not have a corresponding sub-constructor or attach

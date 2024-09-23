@@ -16,7 +16,7 @@
 package ghidra.app.script;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.*;
 
 import generic.jar.ResourceFile;

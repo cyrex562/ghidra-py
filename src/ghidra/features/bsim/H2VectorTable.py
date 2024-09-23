@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.file;
 
-import java.io.*;
+
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -112,7 +112,7 @@ public class H2VectorTable extends SQLComplexTable {
 		return id;
 	}
 
-	/**
+    # /**
 	 * Read all vectors from table and generate an ID-based vector map
 	 * @return vector map (ID->VectorStoreEntry)
 	 * @throws SQLException if error occurs
@@ -138,7 +138,7 @@ public class H2VectorTable extends SQLComplexTable {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Get vector details which correspond to specified vector ID
 	 * @param id vector ID
 	 * @return vector details
@@ -174,7 +174,7 @@ public class H2VectorTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Get vector count which correspond to specified vector ID
 	 * @param id vector ID
 	 * @return vector count
@@ -192,7 +192,7 @@ public class H2VectorTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Update or insert vector table entry with the specified positive countDiff. 
 	 * @param vec vector
 	 * @param countDiff positive vector count change
@@ -238,7 +238,7 @@ public class H2VectorTable extends SQLComplexTable {
 		return id;
 	}
 
-	/**
+    # /**
 	 * Update vector table entry with the specified countDiff.  Record will be removed
 	 * if reduced vector count less-than-or-equal zero. 
 	 * @param id vector ID

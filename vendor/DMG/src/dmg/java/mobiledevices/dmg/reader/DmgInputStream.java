@@ -1,18 +1,18 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.reader;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import org.catacombae.io.ReadableRandomAccessStream;
 
 /**
- * A class to wrap a ReadableRandomAccessStream
- * so it may be used as a conventional
- * input stream.
- */
+# * A class to wrap a ReadableRandomAccessStream
+# * so it may be used as a conventional
+# * input stream.
+# */
 public class DmgInputStream extends InputStream {
 	private ReadableRandomAccessStream stream;
 

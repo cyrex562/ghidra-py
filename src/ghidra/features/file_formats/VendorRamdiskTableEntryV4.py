@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.bootimg;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -41,7 +41,7 @@ public class VendorRamdiskTableEntryV4 implements StructConverter {
 			BootImageConstants.VENDOR_RAMDISK_TABLE_ENTRY_BOARD_ID_SIZE);
 	}
 
-	/**
+    # /**
 	 * Size in bytes for the ramdisk image 
 	 * @return ramdisk size
 	 */
@@ -49,7 +49,7 @@ public class VendorRamdiskTableEntryV4 implements StructConverter {
 		return ramdisk_size;
 	}
 
-	/**
+    # /**
 	 * Offset to the ramdisk image in vendor ramdisk section
 	 * @return ramdisk offset
 	 */
@@ -57,7 +57,7 @@ public class VendorRamdiskTableEntryV4 implements StructConverter {
 		return ramdisk_offset;
 	}
 
-	/**
+    # /**
 	 * Type of the ramdisk 
 	 * @return ramdisk type
 	 */
@@ -65,7 +65,7 @@ public class VendorRamdiskTableEntryV4 implements StructConverter {
 		return ramdisk_type;
 	}
 
-	/**
+    # /**
 	 * Ascii ramdisk name 
 	 * @return the ascii ramdisk name
 	 */
@@ -73,7 +73,7 @@ public class VendorRamdiskTableEntryV4 implements StructConverter {
 		return ramdisk_name;
 	}
 
-	/**
+    # /**
 	 * Hardware identifiers describing the board, soc or platform which this ramdisk
 	 * is intended to be loaded on. 
 	 * @return the board ID

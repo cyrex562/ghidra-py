@@ -108,7 +108,7 @@ public class IntIntHashtable {
         indexer.clear();
     }
 
-	/**
+    # /**
 	 * Return true if the given key is in the hashtable.
 	 * @param key the key to be tested for existence in the hashtable.
 	 */

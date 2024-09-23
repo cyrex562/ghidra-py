@@ -16,7 +16,7 @@
 // Opens all programs under a chosen domain folder, scans them for functions
 // that match a user supplied FID hash and prints info about the matching function
 //@category FunctionID
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.script.GhidraScript;

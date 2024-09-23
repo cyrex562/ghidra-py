@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.app.util.bin.format.macho.*;

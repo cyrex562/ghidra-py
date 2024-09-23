@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.List;
 
@@ -34,7 +34,7 @@ import ghidra.util.task.TaskMonitor;
 
 public class SquashUtils {
 
-	/**
+    # /**
 	 * Match the first four of the given bytes against the SquashFS magic bytes
 	 * @param bytes The first bytes of a file (must have >= 4 bytes)
 	 * @return Whether or not the bytes match the SquashFS magic
@@ -45,7 +45,7 @@ public class SquashUtils {
 			bytes[2] == SquashConstants.MAGIC[2] && bytes[3] == SquashConstants.MAGIC[3];
 	}
 
-	/**
+    # /**
 	 * Decompress a metablock into a byte array
 	 * @param reader The BinaryReader pointed to the start of the section
 	 * @param compressionType The compression type if the archive
@@ -67,7 +67,7 @@ public class SquashUtils {
 		return reader.readNextByteArray(header.getBlockSize());
 	}
 
-	/**
+    # /**
 	 * Create a BinaryReader from the given byte array
 	 * @param bytes The source bytes
 	 * @return A BinaryReader for the source byte array
@@ -77,7 +77,7 @@ public class SquashUtils {
 		return new BinaryReader(newProvider, true /* LE */);
 	}
 
-	/**
+    # /**
 	 * Decompress the given bytes
 	 * @param reader A BinaryReader pointed at the start of the bytes to be decompressed
 	 * @param length The amount of bytes to decompress
@@ -107,7 +107,7 @@ public class SquashUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Create an InputStream containing only the next n bytes from the given reader
 	 * @param reader A BinaryReader pointed at the start of the bytes to be read
 	 * @param length The amount of bytes to be read
@@ -125,7 +125,7 @@ public class SquashUtils {
 		return new ByteProviderInputStream.ClosingInputStream(subBP);
 	}
 
-	/**
+    # /**
 	 * Convert the given InputStream into the appropriate decompression InputStream for the data
 	 * @param is InputStream containing the compressed source bytes
 	 * @param compressionType The type of compression the archive uses
@@ -157,7 +157,7 @@ public class SquashUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Assemble the directory structure of the archive
 	 * @param fragTable The processed fragment table of the archive
 	 * @param dirTable The processed directory table of the archive
@@ -207,7 +207,7 @@ public class SquashUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Recursively assign paths to each of the inodes
 	 * @param dirTable The processed directory table of the archive
 	 * @param entry The directory table entry currently being processed

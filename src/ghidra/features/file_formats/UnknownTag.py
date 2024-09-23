@@ -20,7 +20,7 @@ import ghidra.file.formats.ios.img3.AbstractImg3Tag;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 final class UnknownTag extends AbstractImg3Tag {
 

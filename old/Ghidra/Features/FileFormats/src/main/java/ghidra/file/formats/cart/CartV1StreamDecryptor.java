@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.security.*;
 import java.util.Arrays;

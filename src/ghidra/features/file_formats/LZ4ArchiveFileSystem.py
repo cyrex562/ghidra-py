@@ -17,7 +17,7 @@ package ghidra.file.formats.android.lz4;
 
 import java.util.*;
 
-import java.io.*;
+
 
 import org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream;
 
@@ -38,13 +38,13 @@ import ghidra.util.task.UnknownProgressWrappingTaskMonitor;
 @FileSystemInfo(type = "lz4", description = "LZ4 Archive Format", factory = GFileSystemBaseFactory.class)
 public class LZ4ArchiveFileSystem extends GFileSystemBase {
 
-	/**
+    # /**
 	 * LZ4 Magic Number
 	 */
 	public final static int ARCHIVE_MAGIC = 0x184C2102;
 	public final static byte[] ARCHIVE_MAGIC_BYTES = { 0x02, 0x21, 0x4c, 0x18 };
 
-	/**
+    # /**
 	 * Note: Uncompressed chunk size is used in the compressor side
 	 * (userspace side for compression).
 	 * It is hardcoded because there is not proper way to extract it

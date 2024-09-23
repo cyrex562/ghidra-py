@@ -45,14 +45,14 @@ public abstract class AddressEditorPanel extends JPanel {
 		super(layout);
 	}
 
-	/**
+    # /**
 	 * Gets the address the user entered into the address editor panel.
 	 * @return the address
 	 * @throws InvalidInputException if the panel doesn't currently have a valid address specified.
 	 */
 	public abstract Address getAddress() throws InvalidInputException;
 
-	/**
+    # /**
 	 * Specifies the listener for this address editor panel. The listener gets notified of 
 	 * address edit changes when double click or <Enter> key actions occur.
 	 * The listener can then call the getAddress() on the editor panel for the current 

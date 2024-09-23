@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.go;
 
-import java.io.IOException;
+
 import java.net.URL;
 
 import ghidra.app.CorePluginPackage;

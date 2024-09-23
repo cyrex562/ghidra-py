@@ -70,7 +70,7 @@ public class ForceUnionAction extends AbstractDecompilerAction {
 		return (composite instanceof Union);
 	}
 
-	/**
+    # /**
 	 * Determine if the data-type of the given Varnode is related to the union -unionDt-
 	 * The Varnode's data-type may be a typedef of, a pointer to, or a truncated form of
 	 * the union.  If so the Varnode's data-type is returned, otherwise null is returned.
@@ -114,7 +114,7 @@ public class ForceUnionAction extends AbstractDecompilerAction {
 		return (dt == unionDt) ? dt : null;
 	}
 
-	/**
+    # /**
 	 * Determine the particular Varnode whose union facet will be modified by this action.
 	 * The field -accessVn- will be filled in with the particular Varnode. -accessOp- is set to
 	 * the operation at the cursor, and -accessOp- is either an input or the output, with
@@ -175,7 +175,7 @@ public class ForceUnionAction extends AbstractDecompilerAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Build a list of all the union field names for the user to select from, when determining
 	 * which data-type to force.  Two lists are produced.  The first contains every possible
 	 * field name. The second list is filtered by the size and offset of the Varnode being forced.
@@ -219,7 +219,7 @@ public class ForceUnionAction extends AbstractDecompilerAction {
 		return resArray;
 	}
 
-	/**
+    # /**
 	 * Let the user choose the particular field to force on the selected Varnode. The names
 	 * of the fields in the associated union are presented, possibly along with the special
 	 * string "no field". The choices are filtered so that they match the size of the Varnode

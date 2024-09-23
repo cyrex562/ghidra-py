@@ -18,7 +18,7 @@ package generic.util.image;
 import java.awt.*;
 import java.awt.image.*;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.Objects;
 
 import javax.imageio.ImageIO;
@@ -32,7 +32,7 @@ public class ImageUtils {
 
 	private static final float DEFAULT_TRANSPARENCY_ALPHA = 0.4f;
 
-	/**
+    # /**
 	 * A component to pass into the media tracker, as required by the constructor of the 
 	 * MediaTracker.
 	 */
@@ -42,7 +42,7 @@ public class ImageUtils {
 		// no
 	}
 
-	/**
+    # /**
 	 * Creates an image of the given component
 	 * 
 	 * @param c the component
@@ -62,7 +62,7 @@ public class ImageUtils {
 		return bufferedImage;
 	}
 
-	/**
+    # /**
 	 * Pads the given image with space in the amount given.
 	 * 
 	 * @param i the image to pad
@@ -87,7 +87,7 @@ public class ImageUtils {
 		return newImage;
 	}
 
-	/**
+    # /**
 	 * Crops the given image, keeping the given bounds
 	 * 
 	 * @param i the image to crop
@@ -103,7 +103,7 @@ public class ImageUtils {
 		return newImage;
 	}
 
-	/**
+    # /**
 	 * Creates a new image of the given size.  This image is suitable for drawing operations.
 	 * 
 	 * @param width the width of the new image
@@ -118,7 +118,7 @@ public class ImageUtils {
 		return newImage;
 	}
 
-	/**
+    # /**
 	 * Places the two given images side-by-side into a new image.
 	 * 
 	 * @param left the left image
@@ -154,7 +154,7 @@ public class ImageUtils {
 		return newImage;
 	}
 
-	/**
+    # /**
 	 * Turns the given image into a {@link RenderedImage}
 	 * 
 	 * @param image the image
@@ -168,7 +168,7 @@ public class ImageUtils {
 		return getBufferedImage(image);
 	}
 
-	/**
+    # /**
 	 * Copies this image into a buffered image.  If this image is already a buffered image, then
 	 * it will be returned.
 	 * 
@@ -195,7 +195,7 @@ public class ImageUtils {
 		return bufferedImage;
 	}
 
-	/**
+    # /**
 	 * Waits a reasonable amount of time for the given image to load
 	 *  
 	 * @param imageName the name of the image
@@ -239,7 +239,7 @@ public class ImageUtils {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Write the specified image to file in PNG format
 	 * @param i the image to save
 	 * @param imageFile the file to save the image to
@@ -249,7 +249,7 @@ public class ImageUtils {
 		ImageIO.write(toRenderedImage(i), "png", imageFile);
 	}
 
-	/**
+    # /**
 	 * Write the specified image to file in PNG format
 	 * @param i the image to save
 	 * @param imageFile the file to save the image to
@@ -259,7 +259,7 @@ public class ImageUtils {
 		ImageIO.write(i, "png", imageFile);
 	}
 
-	/**
+    # /**
 	 * Load an image from a file
 	 * @param imageFile image source-data file
 	 * @return the image, decoded from bytes in specified file
@@ -269,7 +269,7 @@ public class ImageUtils {
 		return ImageIO.read(imageFile);
 	}
 
-	/**
+    # /**
 	 * Writes the given icon out to the file denoted by <code>filename</code> <b> in the PNG format</b>.
 	 * 
 	 * @param icon the icon to write
@@ -285,7 +285,7 @@ public class ImageUtils {
 		graphics.dispose();
 	}
 
-	/**
+    # /**
 	 * Make the specified icon semi-transparent using the default transparency alpha
 	 * @param icon The icon to make semi-transparent
 	 * @return a new icon, based on the original, made semi-transparent
@@ -295,7 +295,7 @@ public class ImageUtils {
 		return makeTransparent(icon, DEFAULT_TRANSPARENCY_ALPHA);
 	}
 
-	/**
+    # /**
 	 * Make the specified icon semi-transparent using the specified transparency alpha
 	 * 
 	 * @param icon the icon to make semi-transparent
@@ -313,7 +313,7 @@ public class ImageUtils {
 		return new ImageIcon(newImage);
 	}
 
-	/**
+    # /**
 	 * Creates a scaled image based upon the given image.
 	 * NOTE: Avoid invocation by a static initializer.
 	 * @param image the image to scale
@@ -333,7 +333,7 @@ public class ImageUtils {
 		return scaledImage;
 	}
 
-	/**
+    # /**
 	 * Creates a disabled version of the given image.  The disabled version will be grayed
 	 * and have the varying gray levels blended together.
 	 * 
@@ -366,7 +366,7 @@ public class ImageUtils {
 		return destImage;
 	}
 
-	/**
+    # /**
 	 * Creates a new image that is the same as the given image but has the given colored 
 	 * pixels replaced with the given new color
 	 * 
@@ -411,7 +411,7 @@ public class ImageUtils {
 		return mediaTrackerComponent;
 	}
 
-	/**
+    # /**
 	 * Takes in RGB pixel data and then converts the pixel into a gray color with a brightness
 	 * based upon <code>brightnessPercent</code>.
 	 *  

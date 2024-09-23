@@ -27,7 +27,7 @@ public class VariableRowHeightGridLayout implements LayoutManager {
 		this(0, 0, columnCount);
 	}
 
-	/**
+    # /**
 	 * Constructs a new PairLayout.
 	 * @param vgap the gap (in pixels) between rows.
 	 * @param hgap the gap (in pixels) between the two columns.

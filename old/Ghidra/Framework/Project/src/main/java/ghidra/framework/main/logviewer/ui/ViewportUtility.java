@@ -16,7 +16,7 @@
 package ghidra.framework.main.logviewer.ui;
 
 import java.awt.Point;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.JViewport;

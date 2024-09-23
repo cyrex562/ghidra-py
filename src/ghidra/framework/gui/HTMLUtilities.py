@@ -133,7 +133,7 @@ public class HTMLUtilities {
 	public static final String PRE = "<pre>";
 	public static final String PRE_CLOSE = "</pre>";
 
-	/**
+    # /**
 	 * A tag to mark code that could be made into a hyperlink.   This allows you to mark
 	 * text for future linking, without rendering it as a hyperlink.
 	 */
@@ -145,7 +145,7 @@ public class HTMLUtilities {
 	public static final String HTML_SPACE = "&nbsp;";
 	public static final String HTML_NEW_LINE = BR;
 
-	/**
+    # /**
 	 * Marks the given text as HTML in order to be rendered thusly by Java widgets.
 	 *
 	 * @param text the original text
@@ -164,7 +164,7 @@ public class HTMLUtilities {
 		return text;
 	}
 
-	/**
+    # /**
 	 * Surrounds the indicated text with HTML font coloring tags so that the
 	 * text will display in color within HTML.  The given color will be converted to its
 	 * hex value.
@@ -178,7 +178,7 @@ public class HTMLUtilities {
 		return "<font color=\"" + rgb + "\">" + text + "</font>";
 	}
 
-	/**
+    # /**
 	 * Surrounds the indicated text with HTML font coloring tags so that the
 	 * text will display in color within HTML.
 	 * @param rgbColor (e.g., "#8c0000") a string indicating the RGB hexadecimal color
@@ -189,7 +189,7 @@ public class HTMLUtilities {
 		return "<font color=\"" + rgbColor + "\">" + text + "</font>";
 	}
 
-	/**
+    # /**
 	 * Surrounds the indicated numeric value with HTML font coloring tags so that the
 	 * numeric value will display in color within HTML.
 	 * @param rgbColor (e.g., "#8c0000") a string indicating the RGB hexadecimal color
@@ -200,7 +200,7 @@ public class HTMLUtilities {
 		return "<font color=\"" + rgbColor + "\">" + value + "</font>";
 	}
 
-	/**
+    # /**
 	 * Creates a string with the indicated number of HTML space characters (<code>&#x26;nbsp;</code>).
 	 * @param num the number of HTML spaces
 	 * @return the string of HTML spaces
@@ -213,7 +213,7 @@ public class HTMLUtilities {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Surrounds the specified text with the HTML begin and end tags for bold.
 	 * @param text the original text
 	 * @return the text with the bold HTML tags
@@ -222,7 +222,7 @@ public class HTMLUtilities {
 		return "<b>" + text + "</b>";
 	}
 
-	/**
+    # /**
 	 * Surrounds the specified text with the HTML begin and end tags for underlined text.
 	 * @param text the original text
 	 * @return the text with the underline HTML tags
@@ -231,7 +231,7 @@ public class HTMLUtilities {
 		return "<u>" + text + "</u>";
 	}
 
-	/**
+    # /**
 	 * Surrounds the specified text with the HTML begin and end tags for italic.
 	 * @param text the original text
 	 * @return the text with the italic HTML tags
@@ -240,7 +240,7 @@ public class HTMLUtilities {
 		return "<i>" + text + "</i>";
 	}
 
-	/**
+    # /**
 	 * Returns true if the given text is HTML.  For this to be true, the text must begin with
 	 * the &lt;HTML&gt; tag.
 	 *
@@ -256,7 +256,7 @@ public class HTMLUtilities {
 		return BasicHTML.isHTMLString(testText);
 	}
 
-	/**
+    # /**
 	 * Returns true if the text cannot be broken into lines due to
 	 * the usage of particular HTML constructs.
 	 *
@@ -292,7 +292,7 @@ public class HTMLUtilities {
 			"Cannot reliably wrap HTML; not changing text.  Update the call to this method", t);
 	}
 
-	/**
+    # /**
 	 * Sets the font size of the given text by wrapping it in &lt;span&gt; tags.
 	 *
 	 * @param text the text to size
@@ -318,7 +318,7 @@ public class HTMLUtilities {
 		return buffy.toString();
 	}
 
-	/**
+    # /**
 	 * Sets the font size and color of the given text by wrapping it in &lt;span&gt; tags.
 	 *
 	 * @param text the text to size
@@ -345,7 +345,7 @@ public class HTMLUtilities {
 		return buffy.toString();
 	}
 
-	/**
+    # /**
 	 * Escapes and wraps the given text in {@code SPAN} tag with font attributes specified in the
 	 * given attributes.  Specifically, these attributes are used:
 	 *
@@ -406,7 +406,7 @@ public class HTMLUtilities {
 		//@formatter:on
 	}
 
-	/**
+    # /**
 	 * Returns the given text wrapped in {@link #LINK_PLACEHOLDER_OPEN} and close tags.
 	 * If <code>foo</code> is passed for the HTML text, with a content value of <code>123456</code>, then
 	 * the output will look like:
@@ -426,7 +426,7 @@ public class HTMLUtilities {
 		return openTag + htmlText + LINK_PLACEHOLDER_CLOSE;
 	}
 
-	/**
+    # /**
 	 * Takes HTML text wrapped by {@link #wrapWithLinkPlaceholder(String, String)} and replaces
 	 * the custom link comment tags with HTML anchor (<code>A</code>) tags, where the
 	 * <code>HREF</code> value is the value that was in the <code>CONTENT</code> attribute.
@@ -454,7 +454,7 @@ public class HTMLUtilities {
 		return pass2;
 	}
 
-	/**
+    # /**
 	 * Convert the given string to HTML by adding the HTML tag and
 	 * replacing new line chars with HTML &lt;BR&gt; tags.
 	 *
@@ -466,7 +466,7 @@ public class HTMLUtilities {
 		return toWrappedHTML(text, noMax);
 	}
 
-	/**
+    # /**
 	 * This is just a convenience method to call {@link #toWrappedHTML(String, int)} with a
 	 * max line length of {@value #DEFAULT_MAX_LINE_LENGTH}.
 	 *
@@ -477,7 +477,7 @@ public class HTMLUtilities {
 		return toWrappedHTML(text, DEFAULT_MAX_LINE_LENGTH);
 	}
 
-	/**
+    # /**
 	 * Similar to {@link #toHTML(String)} in that it will wrap the given text in
 	 * HTML tags and split the content into multiple lines.  The difference is that this method
 	 * will split lines that pass the given maximum length <b>and</b> on <code>'\n'</code>
@@ -504,7 +504,7 @@ public class HTMLUtilities {
 
 	}
 
-	/**
+    # /**
 	 * A very specific method that will:
 	 * <ol>
 	 * 	<li>
@@ -532,7 +532,7 @@ public class HTMLUtilities {
 		return html;
 	}
 
-	/**
+    # /**
 	 * Converts any special or reserved characters in the specified string into HTML-escaped
 	 * entities.  Use this method when you have content containing HTML that you do not want
 	 * interpreted as HTML, such as when displaying text that uses angle brackets around words.
@@ -571,7 +571,7 @@ public class HTMLUtilities {
 		return friendlyEncodeHTML(text, true);
 	}
 
-	/**
+    # /**
 	 * See {@link #friendlyEncodeHTML(String)}
 	 *
 	 * @param text string to be encoded
@@ -648,7 +648,7 @@ public class HTMLUtilities {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Escapes any HTML special characters in the specified text.
 	 * <p>
 	 * Does not otherwise modify the input text or wrap lines.
@@ -694,7 +694,7 @@ public class HTMLUtilities {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Escapes any HTML special characters in the specified text.
 	 *
 	 * @param text plain-text that might have some characters that should NOT be interpreted as HTML
@@ -705,7 +705,7 @@ public class HTMLUtilities {
 		return escapeHTML(text, false);
 	}
 
-	/**
+    # /**
 	 * Tests a unicode code point (i.e., 32 bit character) to see if it needs to be escaped before
 	 * being added to a HTML document because it is non-printable or a non-standard control
 	 * character
@@ -720,7 +720,7 @@ public class HTMLUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * A convenience method to split the given HTML into lines, based on the given length, and
 	 * then to {@link #friendlyEncodeHTML(String)} the text.
 	 *
@@ -757,7 +757,7 @@ public class HTMLUtilities {
 		return html;
 	}
 
-	/**
+    # /**
 	 * This is just a convenience call to {@link #lineWrapWithHTMLLineBreaks(String, int)} with
 	 * a max line length of 0, which signals to not to wrap on line length, but only on
 	 * newline characters.
@@ -770,7 +770,7 @@ public class HTMLUtilities {
 		return lineWrapWithHTMLLineBreaks(text, 0);
 	}
 
-	/**
+    # /**
 	 * Replaces all newline characters with HTML &lt;BR&gt; tags.
 	 *
 	 * <P>Unlike {@link #toWrappedHTML(String)}, this method does <B>not</B> add the
@@ -805,7 +805,7 @@ public class HTMLUtilities {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Checks the given string to see it is HTML, according to {@link BasicHTML} and then
 	 * will return the text without any markup tags if it is.
 	 *
@@ -872,7 +872,7 @@ public class HTMLUtilities {
 		return updated;
 	}
 
-	/**
+    # /**
 	 * A method to remove characters from the given string that are output by the HTML
 	 * conversion process when going from HTML to plain text.
 	 *
@@ -895,7 +895,7 @@ public class HTMLUtilities {
 		return buffy.toString();
 	}
 
-	/**
+    # /**
 	 * Returns a color string of the format rrrgggbbb.  As an example, {@link Color#RED} would be
 	 * returned as 255000000 (the values are padded with 0s to make to fill up 3 digits per
 	 * component).
@@ -911,7 +911,7 @@ public class HTMLUtilities {
 		return buffy.toString();
 	}
 
-	/**
+    # /**
 	 * Returns a color string of the format #RRGGBB.  As an example, {@link Color#RED} would be
 	 * returned as #FF0000 (the values are padded with 0s to make to fill up 2 digits per
 	 * component).

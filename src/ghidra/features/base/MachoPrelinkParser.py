@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.macho.prelink;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.*;

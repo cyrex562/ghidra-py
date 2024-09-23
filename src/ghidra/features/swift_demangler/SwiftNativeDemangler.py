@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.swift;
 
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -37,7 +37,7 @@ public class SwiftNativeDemangler {
 	private String nativeDemanglerPath;
 	private boolean standaloneDemanglerBinary;
 	
-	/**
+    # /**
 	 * The output of the native Swift demangler
 	 * 
 	 * @param demangled The demangled string
@@ -51,7 +51,7 @@ public class SwiftNativeDemangler {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link SwiftNativeDemangler}
 	 * 
 	 * @param swiftDir The Swift directory
@@ -89,7 +89,7 @@ public class SwiftNativeDemangler {
 		}
 	}
 
-	/**
+    # /**
 	 * Uses the Swift executable to demangle the given mangled string
 	 * 
 	 * @param mangled The mangled string to demangle
@@ -133,7 +133,7 @@ public class SwiftNativeDemangler {
 		}
 	}
 
-	/**
+    # /**
 	 * Runs the Swift demangler to demangled the given mangled string with the given demangle 
 	 * options
 	 * 

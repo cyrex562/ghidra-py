@@ -25,7 +25,7 @@ public class ProjectPluginEvent extends PluginEvent {
 	private static final String NAME = "Program Opened";
 	private Project project;
 
-	/**
+    # /**
 	 * Constructor 
 	 * @param sourceName the name of source of the event
 	 * @param project if non-null, the project that was opened; otherwise the current was closed.
@@ -35,7 +35,7 @@ public class ProjectPluginEvent extends PluginEvent {
 		this.project = project;
 	}
 
-	/**
+    # /**
 	 * Returns the project that was opened or null if the project was closed.
 	 * @return the project that was opened or null if the project was closed.
 	 */

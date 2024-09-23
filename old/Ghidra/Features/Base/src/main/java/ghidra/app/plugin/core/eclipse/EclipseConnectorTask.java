@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.eclipse;
 
-import java.io.*;
+
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;

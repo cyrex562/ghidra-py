@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.map;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.DBHandle;
@@ -109,7 +109,7 @@ public class AddressMapDB implements AddressMap {
 
 	private static final long EXT_FROM_ADDRESS_LONG = -2;
 
-	/**
+    # /**
 	 * Index Operation: get index match or create if needed
 	 * @see #getBaseAddressIndex(Address, boolean, int)
 	 */
@@ -118,7 +118,7 @@ public class AddressMapDB implements AddressMap {
 	private static final int INDEX_MATCH_OR_NEXT = 2; // get index match if found, else next or Integer.MIN_VALUE if next not found
 	private static final int INDEX_MATCH_OR_PREVIOUS = 3; // get index match if found, else previous or Integer.MIN_VALUE if previous not found
 
-	/**
+    # /**
 	 * Comparator used to search the sorted normalized base address list with a de-normalized address.
 	 */
 	private Comparator<Address> normalizingAddressComparator = new Comparator<Address>() {
@@ -137,7 +137,7 @@ public class AddressMapDB implements AddressMap {
 		}
 	};
 
-	/**
+    # /**
 	 * Comparator used to identify if an addr occurs before or after the 
 	 * start of a key range.
 	 */
@@ -171,7 +171,7 @@ public class AddressMapDB implements AddressMap {
 		}
 	};
 
-	/**
+    # /**
 	 * Constructs a new AddressMapDB object
 	 * @param handle the handle to the database
 	 * @param openMode the mode that program was opened.
@@ -194,7 +194,7 @@ public class AddressMapDB implements AddressMap {
 		init(true);
 	}
 
-	/**
+    # /**
 	 * Notification when the memory map changes.  If we are segemented, we need to update our
 	 * list of address ranges used for address normalization.
 	 * @param mem the changed memory map.
@@ -232,7 +232,7 @@ public class AddressMapDB implements AddressMap {
 		}
 	}
 
-	/**
+    # /**
 	 * Clears any cached values.
 	 * @throws IOException if an IO error occurs
 	 */
@@ -244,7 +244,7 @@ public class AddressMapDB implements AddressMap {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns an address map which may be used during the upgrade of old address
 	 * encodings.  If the address map is up-to-date, then this method will return
 	 * this instance of AddressMapDB.
@@ -295,7 +295,7 @@ public class AddressMapDB implements AddressMap {
 		return encodeAbsolute(addr, create ? INDEX_CREATE : INDEX_MATCH);
 	}
 
-	/**
+    # /**
 	 * Get absolute key encoding for the specified address
 	 * @param addr address
 	 * @param indexOperation see INDEX_CREATE, INDEX_MATCH, INDEX_MATCH_OR_NEXT or INDEX_MATCH_OR_PREVIOUS
@@ -361,7 +361,7 @@ public class AddressMapDB implements AddressMap {
 		throw new IllegalArgumentException("Address type can not be encoded");
 	}
 
-	/**
+    # /**
 	 * Get base address index
 	 * @param addr address
 	 * @param normalize if true image base offset will be applied to addr
@@ -465,7 +465,7 @@ public class AddressMapDB implements AddressMap {
 		return decodeAddress(value, true);
 	}
 
-	/**
+    # /**
 	 * Returns the address that was used to generate the given long key. (If the image base was
 	 * moved, then a different address is returned unless the value was encoded using the
 	 * "absoluteEncoding" method
@@ -594,7 +594,7 @@ public class AddressMapDB implements AddressMap {
 		throw new RuntimeException("Unsupported address type: " + type);
 	}
 
-	/**
+    # /**
 	 * Stack space changed from a common 32-bit space to a compiler-specific
 	 * stack space.  This makes bad stack addresses which previously existed
 	 * impossible to decode.  Instead of return NO_ADDRESS, we will simply truncate such 
@@ -652,7 +652,7 @@ public class AddressMapDB implements AddressMap {
 		}
 	}
 
-	/**
+    # /**
 	 * Provide absolute encoding of an old namespace address for upgrade use.
 	 * @param addr old namespace address for stack, register or external
 	 * @return encoded address key
@@ -677,7 +677,7 @@ public class AddressMapDB implements AddressMap {
 		return addrFactory;
 	}
 
-	/**
+    # /**
 	 * Sets the image base, effectively changing the mapping between addresses and longs.
 	 * @param base the new base address.
 	 */
@@ -774,7 +774,7 @@ public class AddressMapDB implements AddressMap {
 		}
 	}
 
-	/**
+    # /**
 	 * Create all memory base segments within the specified range.
 	 * NOTE: minAddress and maxAddress must have the same address space!
 	 * @param minAddress start address of the range
@@ -816,7 +816,7 @@ public class AddressMapDB implements AddressMap {
 		}
 	}
 
-	/**
+    # /**
 	 * Add simple key ranges where the address range lies within a single base segment for a single space.
 	 * NOTE: start and end addresses must have the same address space!
 	 * @param keyRangeList the list to store key ranges into
@@ -918,7 +918,7 @@ public class AddressMapDB implements AddressMap {
 		return defaultAddrSpace.getAddress(baseImageOffset);
 	}
 
-	/**
+    # /**
 	 * Converts the current base addresses to addresses compatible with the new language.
 	 * @param newLanguage the new language to use.
 	 * @param addrFactory the new AddressFactory.
@@ -965,7 +965,7 @@ public class AddressMapDB implements AddressMap {
 		init(true);
 	}
 
-	/**
+    # /**
 	 * Rename an existing overlay space.
 	 * @param oldName old overlay name
 	 * @param newName new overlay name (must be unique among all space names within this map)
@@ -976,7 +976,7 @@ public class AddressMapDB implements AddressMap {
 		invalidateCache();
 	}
 
-	/**
+    # /**
 	 * Delete the specified overlay space from this address map.
 	 * @param name overlay space name (must be unique among all space names within this map)
 	 * @throws IOException if IO error occurs

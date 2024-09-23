@@ -55,7 +55,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 
 	private AbstractProcedureMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier
@@ -171,7 +171,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 		return new SymbolPath(parts);
 	}
 
-	/**
+    # /**
 	 * returns true only if we set a function signature
 	 * @return true if function signature was set
 	 * @throws PdbException upon processing error
@@ -260,7 +260,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 		deferredProcessing(iter, name, address, blockAddress, length);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Function} for this applier.
 	 * @return the Function
 	 */
@@ -268,7 +268,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 		return function;
 	}
 
-	/**
+    # /**
 	 * Returns the current frame size.
 	 * @return the current frame size.
 	 */
@@ -276,7 +276,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 		return currentFrameSize_x;
 	}
 
-	/**
+    # /**
 	 * Returns the frame size as specified by the PDB
 	 * @return the frame size.
 	 */
@@ -284,7 +284,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 		return specifiedFrameSize_x;
 	}
 
-	/**
+    # /**
 	 * Set the specified frame size.
 	 * @param specifiedFrameSize the frame size.
 	 */
@@ -294,7 +294,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 		currentFrameSize_x = specifiedFrameSize;
 	}
 
-	/**
+    # /**
 	 * Get the function name
 	 * @return the function name
 	 */
@@ -312,7 +312,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 		return baseParamOffset;
 	}
 
-	/**
+    # /**
 	 * Sets a local variable (address, name, type)
 	 * @param varAddress Address of the variable.
 	 * @param varName varName of the variable.
@@ -334,7 +334,7 @@ public class FunctionSymbolApplier extends AbstractBlockContextApplier
 
 	// Method copied from ApplyStackVariables (ghidra.app.util.bin.format.pdb package)
 	//  on 20191119. TODO: Do we need something like this?
-	/**
+    # /**
 	 * Get the stack offset after it settles down.
 	 * @param monitor TaskMonitor
 	 * @return stack offset that stack variables will be relative to.

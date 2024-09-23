@@ -16,7 +16,7 @@
  */
 package ghidra;
 
-import java.io.*;
+
 
 /**
  * JunitTestScan scans for 0-length JUnit xsl data files and fills in the file 

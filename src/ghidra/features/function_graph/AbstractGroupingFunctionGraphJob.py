@@ -41,7 +41,7 @@ public abstract class AbstractGroupingFunctionGraphJob extends AbstractFunctionG
 	protected Set<FGVertex> verticesToBeRemoved;
 	protected Set<FGVertex> newVertices;
 
-	/**
+    # /**
 	 * Whether to relayout, based upon user tool options.
 	 */
 	protected final boolean relayout;
@@ -52,7 +52,7 @@ public abstract class AbstractGroupingFunctionGraphJob extends AbstractFunctionG
 		return set;
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param controller the controller of the graph to be ungrouped

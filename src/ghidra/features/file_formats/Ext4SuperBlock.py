@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
@@ -226,7 +226,7 @@ public class Ext4SuperBlock implements StructConverter {
 		return s_blocks_count_lo;
 	}
 
-	/**
+    # /**
 	 * Return the calculated block count by combining the s_blocks_count_lo and s_blocks_count_hi
 	 * @return the calculated block count by combining the s_blocks_count_lo and s_blocks_count_hi
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.store.db;
 
-import java.io.*;
+
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -37,12 +37,12 @@ public class VersionedDatabase extends Database {
 	public final int LATEST_VERSION = -1;
 	public static final long DEFAULT_CHECKOUT_ID = -1;
 
-	/**
+    # /**
 	 * Change listener
 	 */
 	protected VersionedDBListener verDBListener;
 
-	/**
+    # /**
 	 * General "Versioned" Database Constructor.
 	 * @param dbDir
 	 * @param verDBListener
@@ -63,7 +63,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor for an existing "Versioned" Database.
 	 * @param dbDir database directory
 	 * @param verDBListener
@@ -73,7 +73,7 @@ public class VersionedDatabase extends Database {
 		this(dbDir, verDBListener, false);
 	}
 
-	/**
+    # /**
 	 * Construct a new "Versioned" Database from an existing srcFile.
 	 * @param dbDir
 	 * @param srcFile
@@ -109,7 +109,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct a new "Versioned" Database from a packed database file
 	 * @param dbDir
 	 * @param packedFile
@@ -141,7 +141,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new database and provide the initial buffer file for writing.
 	 * @param dbDir
 	 * @param bufferSize
@@ -165,7 +165,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the version number associated with the oldest buffer file version.
 	 */
 	public int getMinimumVersion() {
@@ -174,7 +174,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the version number associated with the latest buffer file version.
 	 */
 	@Override
@@ -184,7 +184,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete oldest version.
 	 * @throws IOException if an error occurs or this is the only version.
 	 */
@@ -220,7 +220,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete latest version.
 	 * @throws IOException if an error occurs or this is the only version.
 	 */
@@ -285,7 +285,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Open a specific version of this database for non-update use.
 	 * @param version database version or LATEST_VERSION for current version
 	 * @param minChangeDataVer the minimum database version whose change data
@@ -309,7 +309,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Open a specific version of the stored database for non-update use.
 	 * The returned handle does not support the Save operation.
 	 * @param version database version
@@ -333,7 +333,7 @@ public class VersionedDatabase extends Database {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Open the current version of this database for update use.
 	 * @param checkoutId checkout ID
 	 * @return updateable buffer file
@@ -352,7 +352,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Following a move of the database directory,
 	 * this method should be invoked if this instance will
 	 * continue to be used.
@@ -365,7 +365,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Scan files and update state.
 	 * @param repair if true files are repaired if needed.
 	 */
@@ -379,7 +379,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * Output the current version of this database to a packed storage file.
 	 * @param outputFile packed storage file to be written
 	 * @param name database name
@@ -448,7 +448,7 @@ public class VersionedDatabase extends Database {
 		}
 	}
 
-	/**
+    # /**
 	 * <code>VerDBBufferFileManager</code> provides buffer file management
 	 * for this versioned database instead of the DBBufferFileManager.
 	 */

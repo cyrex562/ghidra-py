@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.map.*;
@@ -31,16 +31,16 @@ import ghidra.util.task.TaskMonitor;
  */
 class CommentsDBAdapterV0 extends CommentsDBAdapter {
 
-	/** column for end of line comment */
+    # /** column for end of line comment */
 	private static final int EOL_COMMENT_COLUMN = 0;
-	/** comment type that goes before a code unit */
+    # /** comment type that goes before a code unit */
 	private static final int PRE_COMMENT_COLUMN = 1;
-	/** comment type that follows after a code unit */
+    # /** comment type that follows after a code unit */
 	private static final int POST_COMMENT_COLUMN = 2;
-	/** Property name for plate comment type */
+    # /** Property name for plate comment type */
 	private static final int PLATE_COMMENT_COLUMN = 3;
-	/** The number of comment fields in this version. */
-	/** Version 0 comment column names. */
+    # /** The number of comment fields in this version. */
+    # /** Version 0 comment column names. */
 	private static final String[] V0_NAMES = new String[4];
 	static {
 		V0_NAMES[EOL_COMMENT_COLUMN] = "EOL";
@@ -48,16 +48,16 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		V0_NAMES[POST_COMMENT_COLUMN] = "Post";
 		V0_NAMES[PLATE_COMMENT_COLUMN] = "Plate";
 	}
-	/** Version 0 comment table schema. */
+    # /** Version 0 comment table schema. */
 //	private static final Schema V0_SCHEMA = new Schema(0, "Address",
 //							new Class[] {StringField.class, StringField.class,
 //										StringField.class, StringField.class},
 //							V0_NAMES);
-	/** the comment table. */
+    # /** the comment table. */
 	private Table commentTable;
 	private AddressMap addrMap;
 
-	/**
+    # /**
 	 * Constructor 
 	 * 
 	 */
@@ -75,7 +75,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#getRecord(long)
 	 */
 	@Override
@@ -83,7 +83,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return adaptRecord(commentTable.getRecord(addr));
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#createRecord(long, int, java.lang.String)
 	 */
 	@Override
@@ -91,7 +91,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#deleteRecord(long)
 	 */
 	@Override
@@ -99,7 +99,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#deleteRecords(long, long)
 	 */
 	@Override
@@ -107,14 +107,14 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#updateRecord(ghidra.framework.store.db.DBRecord)
 	 */
 	@Override
 	public void updateRecord(DBRecord commentRec) throws IOException {
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.database.code.CommentsDBAdapter#getKeys(long, long, boolean)
 	 */
@@ -127,7 +127,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return new AddressKeyIterator(commentTable, addrMap, start, end, end, false);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#getKeys(ghidra.program.model.address.AddressSetView, boolean)
 	 */
 	@Override
@@ -138,7 +138,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return new AddressKeyIterator(commentTable, addrMap, set, set.getMaxAddress(), false);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#getRecords(Address, Address, boolean)
 	 */
 	@Override
@@ -154,7 +154,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return new RecordIteratorAdapter(it);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#getRecords(Address)
 	 */
 	@Override
@@ -163,7 +163,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 			true));
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#getRecords()
 	 */
 	@Override
@@ -171,14 +171,14 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return new RecordIteratorAdapter(new AddressKeyRecordIterator(commentTable, addrMap));
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#putRecord(db.DBRecord)
 	 */
 	@Override
 	public void putRecord(DBRecord record) throws IOException {
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#getRecordCount()
 	 */
 	@Override
@@ -186,7 +186,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		return commentTable.getRecordCount();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.CommentsDBAdapter#moveAddressRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address, long, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -195,7 +195,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns a record matching the current data base schema from the version 0 record.
 	 * @param recV0 the record matching the version 0 schema.
 	 * @return a current comment record.
@@ -235,28 +235,28 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 			this.it = it;
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.framework.store.db.RecordIterator#delete()
 		 */
 		public boolean delete() throws IOException {
 			return false;
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.framework.store.db.RecordIterator#hasNext()
 		 */
 		public boolean hasNext() throws IOException {
 			return it.hasNext();
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.framework.store.db.RecordIterator#hasPrevious()
 		 */
 		public boolean hasPrevious() throws IOException {
 			return it.hasPrevious();
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.framework.store.db.RecordIterator#next()
 		 */
 		public DBRecord next() throws IOException {
@@ -264,7 +264,7 @@ class CommentsDBAdapterV0 extends CommentsDBAdapter {
 			return adaptRecord(rec);
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.framework.store.db.RecordIterator#previous()
 		 */
 		public DBRecord previous() throws IOException {

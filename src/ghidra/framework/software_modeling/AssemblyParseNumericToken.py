@@ -29,7 +29,7 @@ import ghidra.app.plugin.assembler.sleigh.symbol.*;
 public class AssemblyParseNumericToken extends AssemblyParseToken {
 	protected final long val;
 
-	/**
+    # /**
 	 * Construct a numeric terminal having the given string and numeric values
 	 * 
 	 * @param grammar the grammar containing the terminal
@@ -76,7 +76,7 @@ public class AssemblyParseNumericToken extends AssemblyParseToken {
 		return "'" + str + "'=>" + val;
 	}
 
-	/**
+    # /**
 	 * Get the numeric value of the token
 	 * 
 	 * @return the value

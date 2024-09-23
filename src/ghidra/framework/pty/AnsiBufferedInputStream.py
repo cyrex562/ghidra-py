@@ -15,7 +15,7 @@
  */
 package ghidra.pty.windows;
 
-import java.io.*;
+
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.util.Arrays;

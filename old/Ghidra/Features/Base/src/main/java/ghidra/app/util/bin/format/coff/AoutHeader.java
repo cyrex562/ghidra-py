@@ -20,7 +20,7 @@ import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class AoutHeader implements StructConverter {
 	public final static int SIZEOF = 28;

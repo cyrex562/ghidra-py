@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.emu.unix;
 
-import java.io.*;
+
 
 import ghidra.pcode.emu.PcodeMachine;
 import ghidra.pcode.emu.sys.EmuIOException;

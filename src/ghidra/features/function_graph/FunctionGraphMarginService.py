@@ -25,7 +25,7 @@ import ghidra.framework.plugintool.ServiceInfo;
 @ServiceInfo(defaultProvider = FunctionGraphPlugin.class)
 public interface FunctionGraphMarginService {
 
-	/**
+    # /**
 	 * Add a marker margin supplier to Function Graph's primary window.  The supplier will be called
 	 * for each node in the graph.
 	 *
@@ -33,7 +33,7 @@ public interface FunctionGraphMarginService {
 	 */
 	public void addMarkerProviderSupplier(MarginProviderSupplier supplier);
 
-	/**
+    # /**
 	 * Removes the given margin supplier from the Function Graph's UI.
 	 *
 	 * @param supplier the supplier.

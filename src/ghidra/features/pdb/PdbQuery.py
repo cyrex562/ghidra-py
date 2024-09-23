@@ -31,7 +31,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class PdbQuery {
 
-	/**
+    # /**
 	 * Returns the specified PDB data type record.
 	 * @param script the script for which we are working
 	 * @param pdb the PDB containing the record
@@ -65,7 +65,7 @@ public class PdbQuery {
 		return typeRecord;
 	}
 
-	/**
+    # /**
 	 * Returns the specified PDB item record.
 	 * @param script the script for which we are working
 	 * @param pdb the PDB containing the record
@@ -99,7 +99,7 @@ public class PdbQuery {
 		return typeRecord;
 	}
 
-	/**
+    # /**
 	 * Searches PDB data type records that contain the search string.  Outputs results to the
 	 * console
 	 * @param script the script for which we are working
@@ -137,7 +137,7 @@ public class PdbQuery {
 		println(script, results.toString());
 	}
 
-	/**
+    # /**
 	 * Searches PDB item records that contain the search string.  Outputs results to the
 	 * console
 	 * @param script the script for which we are working
@@ -176,7 +176,7 @@ public class PdbQuery {
 		println(script, results.toString());
 	}
 
-	/**
+    # /**
 	 * Searches PDB symbol records that contain the search string.  Outputs results to the
 	 * console
 	 * @param script the script for which we are working
@@ -221,7 +221,7 @@ public class PdbQuery {
 		println(script, results.toString());
 	}
 
-	/**
+    # /**
 	 * Method for outputting a message to the console (if script is not null); otherwise outputs
 	 * the message to Msg.info()
 	 * @param script the script

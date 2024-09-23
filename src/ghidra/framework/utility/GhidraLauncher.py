@@ -15,7 +15,7 @@
  */
 package ghidra;
 
-import java.io.*;
+
 import java.lang.reflect.Constructor;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -39,7 +39,7 @@ public class GhidraLauncher {
 
 	private static Instant START_INSTANT = Instant.now();
 
-	/**
+    # /**
 	 * Launches the given {@link GhidraLaunchable} specified in the first command line argument
 	 * 
 	 * @param args The first argument is the name of the {@link GhidraLaunchable} to launch.
@@ -81,7 +81,7 @@ public class GhidraLauncher {
 		launchable.launch(layout, Arrays.copyOfRange(args, 1, args.length));
 	}
 
-	/**
+    # /**
 	 * Launches the given {@link GhidraLaunchable} specified in the first command line argument
 	 * 
 	 * @param args The first argument is the name of the {@link GhidraLaunchable} to launch.
@@ -96,14 +96,14 @@ public class GhidraLauncher {
 		launch(args);
 	}
 
-	/**
+    # /**
 	 * {@return the current number of milliseconds that have elapsed since execution began}
 	 */
 	public static long getMillisecondsFromLaunch() {
 		return ChronoUnit.MILLIS.between(START_INSTANT, Instant.now());
 	}
 
-	/**
+    # /**
 	 * Initializes the Ghidra environment by discovering its {@link GhidraApplicationLayout layout}
 	 * and adding all relevant modules and libraries to the classpath
 	 * <p>
@@ -136,7 +136,7 @@ public class GhidraLauncher {
 		return layout;
 	}
 
-	/**
+    # /**
 	 * Builds and returns a classpath from the given {@link GhidraApplicationLayout layout}
 	 * <p>
 	 * NOTE: This method does NOT add the built classpath to a classloader...it just returns it
@@ -204,7 +204,7 @@ public class GhidraLauncher {
 		return orderClasspath(classpathList, modules);
 	}
 
-	/**
+    # /**
 	 * Add patch jars to the given path list.  This should be done first so they take precedence in 
 	 * the classpath.
 	 * 
@@ -224,7 +224,7 @@ public class GhidraLauncher {
 		pathList.addAll(jars);
 	}
 
-	/**
+    # /**
 	 * Add module bin directories to the given path list.
 	 * 
 	 * @param pathList The list of paths to add to.
@@ -235,7 +235,7 @@ public class GhidraLauncher {
 		dirs.forEach(d -> pathList.add(d.getAbsolutePath()));
 	}
 
-	/**
+    # /**
 	 * Add module lib jars to the given path list.
 	 * 
 	 * @param pathList The list of paths to add to.
@@ -246,7 +246,7 @@ public class GhidraLauncher {
 		dirs.forEach(d -> pathList.addAll(findJarsInDir(d)));
 	}
 
-	/**
+    # /**
 	 * Initializes the Extension classpath system property, unless disabled.
 	 * @param modules the known modules
 	 * @param layout the application layout
@@ -270,7 +270,7 @@ public class GhidraLauncher {
 		System.setProperty(GhidraClassLoader.CP_EXT, extCp);
 	}
 
-	/**
+    # /**
 	 * Add extension module lib jars to the given path list.  (This is only needed in dev mode to 
 	 * find any pre-built extensions that have been installed, since  we already find extension 
 	 * module jars in production mode.)
@@ -305,7 +305,7 @@ public class GhidraLauncher {
 		}
 	}
 
-	/**
+    # /**
 	 * Add external runtime lib jars to the given path list.  The external jars are discovered by
 	 * parsing the build/libraryDependencies.txt file that results from a prepDev.
 	 * 
@@ -364,7 +364,7 @@ public class GhidraLauncher {
 		pathList.addAll(pathSet);
 	}
 
-	/**
+    # /**
 	 * Searches the given directory (non-recursively) for jars and returns their paths in a list.
 	 * The paths will be sorted by jar file name.
 	 * 
@@ -384,7 +384,7 @@ public class GhidraLauncher {
 		return set.stream().map(f -> f.getAbsolutePath()).collect(Collectors.toList());
 	}
 
-	/**
+    # /**
 	 * Gets the modules ordered by "class-loader priority".  This ensures that core modules (things 
 	 * in Framework/Features/Processors, etc) come before user modules (Extensions).  It also
 	 * guarantees a consistent module order from run to run.
@@ -442,7 +442,7 @@ public class GhidraLauncher {
 		return moduleMap;
 	}
 
-	/**
+    # /**
 	 * Updates the list of paths to make sure the order is correct for any class-loading dependencies.
 	 *  
 	 * @param pathList The list of paths to order.

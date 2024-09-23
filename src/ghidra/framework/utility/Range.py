@@ -22,12 +22,12 @@ import java.util.stream.IntStream;
  * A class for holding a minimum and maximum signed int values that define a range.
  */
 public class Range implements Comparable<Range>, Iterable<Integer> {
-	/** The range's minimum extent. */
+    # /** The range's minimum extent. */
 	public int min;
-	/** The range's maximum extent (inclusive). */
+    # /** The range's maximum extent (inclusive). */
 	public int max;
 
-	/**
+    # /**
 	 * Creates a range whose extent is from min to max.
 	 * @param min the minimum extent.
 	 * @param max the maximum extent (inclusive).
@@ -72,7 +72,7 @@ public class Range implements Comparable<Range>, Iterable<Integer> {
 		return "(" + min + "," + max + ")";
 	}
 
-	/**
+    # /**
 	 * Returns true if the value is within the ranges extent.
 	 * @param value the value to check.
 	 * @return true if the value is within the ranges extent.
@@ -81,7 +81,7 @@ public class Range implements Comparable<Range>, Iterable<Integer> {
 		return value >= min && value <= max;
 	}
 
-	/**
+    # /**
 	 * Returns the range's size.
 	 * @return the size
 	 */

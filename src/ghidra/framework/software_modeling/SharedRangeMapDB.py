@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.util;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -25,10 +25,10 @@ import ghidra.util.datastruct.IndexRangeIterator;
 import ghidra.util.exception.NotYetImplementedException;
 
 # /**
- * <code>SharedRangeMapDB</code> provides a long value range map backed by a database table.
- * This map allows values to share a given range with other values.
- * @deprecated This map class should not be used except by the OldFunctionMapDB class
- */
+# * <code>SharedRangeMapDB</code> provides a long value range map backed by a database table.
+# * This map allows values to share a given range with other values.
+# * @deprecated This map class should not be used except by the OldFunctionMapDB class
+# */
 @Deprecated
 public class SharedRangeMapDB {
 
@@ -63,7 +63,7 @@ public class SharedRangeMapDB {
 			new String[] { "Value", "Range Key" });
 	}
 
-	/**
+    # /**
 	 * Construct a shared range map.
 	 * @param dbHandle database handle.
 	 * @param name map name used in naming the underlying database table.  
@@ -98,7 +98,7 @@ public class SharedRangeMapDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Frees resources used by this map.
 	 */
 	public void dispose() {
@@ -117,7 +117,7 @@ public class SharedRangeMapDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Add a value to this map over the specified range.
 	 * @param start the start of the range.
 	 * @param end the end of the range.
@@ -215,7 +215,7 @@ public class SharedRangeMapDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Insert a new Map entry.
 	 * @param rangeKey
 	 * @param value
@@ -227,7 +227,7 @@ public class SharedRangeMapDB {
 		mapTable.putRecord(rec);
 	}
 
-	/**
+    # /**
 	 * Insert a new Range entry.
 	 * @param start
 	 * @param end
@@ -238,7 +238,7 @@ public class SharedRangeMapDB {
 		rangeTable.putRecord(rec);
 	}
 
-	/**
+    # /**
 	 * Split a Range record and all related Map entries at a newEnd index.
 	 * A new Range record is created at newEnd+1 to the end of the original 
 	 * range.  New Map entries are created for this new range.
@@ -268,7 +268,7 @@ public class SharedRangeMapDB {
 		return newRange;
 	}
 
-	/**
+    # /**
 	 * Get a sorted array of map values for a given set of map keys.
 	 * @param mapKeys
 	 * @return long[]
@@ -285,7 +285,7 @@ public class SharedRangeMapDB {
 		return values;
 	}
 
-	/**
+    # /**
 	 * If other values are mapped to a specified range, perform a consolidation
 	 * on that range if possible.  If no reference exists, delete the range.
 	 * @param rangeKey
@@ -345,7 +345,7 @@ public class SharedRangeMapDB {
 
 	}
 
-	/**
+    # /**
 	 * Remove a value from this map.
 	 * @param value the value to remove.
 	 */
@@ -373,7 +373,7 @@ public class SharedRangeMapDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a LongField value iterator over the specified range.
 	 * List is pre-calculated such that any changes made to the map
 	 * after invoking this method will not be reflected by the iterator
@@ -391,7 +391,7 @@ public class SharedRangeMapDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get an index range iterator for a specified value.
 	 * @param value the value for which to iterator indexes over.
 	 * @return IndexRangeIterator
@@ -408,7 +408,7 @@ public class SharedRangeMapDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Iterates over all values which occur within the given range.
 	 */
 	private class ValueIterator implements Iterator<Field> {
@@ -435,7 +435,7 @@ public class SharedRangeMapDB {
 			}
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#remove()
 		 */
 		@Override
@@ -443,7 +443,7 @@ public class SharedRangeMapDB {
 			throw new NotYetImplementedException();
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#hasNext()
 		 */
 		@Override
@@ -467,7 +467,7 @@ public class SharedRangeMapDB {
 			}
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#next()
 		 */
 		@Override
@@ -483,14 +483,14 @@ public class SharedRangeMapDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Iterates over all ranges occupied by a given value.
 	 */
 	private class RangeIterator implements IndexRangeIterator {
 
 		private RecordIterator recordIter;
 
-		/**
+	    # /**
 		 * Construct an iterator which returns all ranges occupied
 		 * by the specified value.
 		 * @param value
@@ -501,7 +501,7 @@ public class SharedRangeMapDB {
 			recordIter = mapTable.indexIterator(MAP_VALUE_COL, val, val, true);
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.util.datastruct.IndexRangeIterator#hasNext()
 		 */
 		@Override
@@ -517,7 +517,7 @@ public class SharedRangeMapDB {
 			}
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.util.datastruct.IndexRangeIterator#next()
 		 */
 		@Override

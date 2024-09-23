@@ -23,7 +23,7 @@ import java.util.Comparator;
  * <P>
  */
 public class AddressRangeToAddressComparator implements Comparator<Object> {
-	/**
+    # /**
 	 * Compares an address against an AddressRange.
 	 * @param obj1 the first object to compare. Must be an address or an address range.
 	 * @param obj2 the second object to compare. Must be an address or an address range.

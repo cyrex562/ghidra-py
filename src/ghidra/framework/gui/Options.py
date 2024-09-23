@@ -33,14 +33,14 @@ public interface Options {
 	public final static String DELIMITER_STRING = new String(new char[] { DELIMITER });
 	public final static String ILLEGAL_DELIMITER = DELIMITER_STRING + DELIMITER_STRING;
 
-	/**
+    # /**
 	 * Get the name of this options object.
 	 *
 	 * @return String
 	 */
 	public String getName();
 
-	/**
+    # /**
 	 * Returns a unique id for option in this options with the given name.  This will be the full
 	 * path name to the root options object.
 	 * @param optionName the name of the option for which to get an ID;
@@ -48,14 +48,14 @@ public interface Options {
 	 */
 	public String getID(String optionName);
 
-	/**
+    # /**
 	 * Returns the OptionType of the given option.
 	 * @param optionName the name of the option for which to get the type.
 	 * @return the OptionType of option with the given name.
 	 */
 	public OptionType getType(String optionName);
 
-	/**
+    # /**
 	 * Get the property editor for the option with the given name. Note: This method must be called
 	 * from the swing thread.
 	 * @param optionName the option name
@@ -65,7 +65,7 @@ public interface Options {
 	 */
 	public PropertyEditor getPropertyEditor(String optionName);
 
-	/**
+    # /**
 	 * Get the property editor that was registered for the specific option with the given name.  Unlike
 	 * the getPropertyEditor() method, this method does not have to be called from the swing thread
 	 * @param optionName the option name
@@ -74,13 +74,13 @@ public interface Options {
 
 	public PropertyEditor getRegisteredPropertyEditor(String optionName);
 
-	/**
+    # /**
 	 * Returns a list of Options objects that are nested one level down from this Options object.
 	 * @return  a list of Options objects that are nested one level down from this Options object.
 	 */
 	public List<Options> getChildOptions();
 
-	/**
+    # /**
 	 * Returns a list of option names that immediately fall under this options.  For example, if this options
 	 * object had the following options named ("a", "b", "c.d"), only "a" and "b" would be returned.  The
 	 * "c.d" leaf option name could be returned by getOptions("c").getLeafOptionNames()
@@ -88,19 +88,19 @@ public interface Options {
 	 */
 	public List<String> getLeafOptionNames();
 
-	/**
+    # /**
 	 * Set the location for where help can be found for this entire options object.
 	 * @param helpLocation location for help on the option
 	 */
 	public void setOptionsHelpLocation(HelpLocation helpLocation);
 
-	/**
+    # /**
 	 * Returns the HelpLocation for this entire Options object.
 	 * @return  the HelpLocation for this entire Options object.
 	 */
 	public HelpLocation getOptionsHelpLocation();
 
-	/**
+    # /**
 	 * Get the location for where help can be found for the option with
 	 * the given name.
 	 * @param optionName name of the option
@@ -108,7 +108,7 @@ public interface Options {
 	 */
 	public HelpLocation getHelpLocation(String optionName);
 
-	/**
+    # /**
 	 * Registers an option with a description, help location, and a default value without specifying
 	 * the option type.  This form requires that the default value not be null so that the option
 	 * type can be inferred from the default value.
@@ -130,7 +130,7 @@ public interface Options {
 	public void registerOption(String optionName, Object defaultValue, HelpLocation help,
 			String description);
 
-	/**
+    # /**
 	 * Registers an option with a description, help location, and a optional default value.  With an optional
 	 * default value, an OptionType must be passed as it is otherwise derived from the default value.
 	 * <P>
@@ -150,7 +150,7 @@ public interface Options {
 	public void registerOption(String optionName, OptionType type, Object defaultValue,
 			HelpLocation help, String description);
 
-	/**
+    # /**
 	 * Registers an option with a description, help location, and a optional default value.  With an optional
 	 * default value, an OptionType must be passed as it is otherwise derived from the default value.
 	 * <P>
@@ -180,7 +180,7 @@ public interface Options {
 	public void registerOption(String optionName, OptionType type, Object defaultValue,
 			HelpLocation help, String description, Supplier<PropertyEditor> editor);
 
-	/**
+    # /**
 	 * Use instead
 	 * {@link #registerOption(String, OptionType, Object, HelpLocation, String, Supplier)}
 	 * @param optionName the name of the option being registered.
@@ -205,7 +205,7 @@ public interface Options {
 		registerOption(optionName, type, defaultValue, help, description, () -> editor);
 	}
 
-	/**
+    # /**
 	 * Register/binds the option to a theme color id. Changing the option's color via the options
 	 * Gui will result in directly changing the theme color of the given color id.
 	 * @param optionName the name of the color option
@@ -216,7 +216,7 @@ public interface Options {
 	public void registerThemeColorBinding(String optionName, String colorId, HelpLocation help,
 			String description);
 
-	/**
+    # /**
 	 * Register/binds the option to a theme font id. Changing the option's font via the options
 	 * Gui will result in directly changing the theme color of the given font id.
 	 * @param optionName the name of the font option
@@ -228,7 +228,7 @@ public interface Options {
 	public void registerThemeFontBinding(String optionName, String fontId, HelpLocation help,
 			String description);
 
-	/**
+    # /**
 	 * Register the options editor that will handle the editing for all the options or a sub-group
 	 * of options.
 	 * <P>
@@ -243,7 +243,7 @@ public interface Options {
 	 */
 	public void registerOptionsEditor(Supplier<OptionsEditor> editor);
 
-	/**
+    # /**
 	 * Use instead {@link #registerOptionsEditor(Supplier)}
 	 * @param editor the editor
 	 * @deprecated Use instead {@link #registerOptionsEditor(Supplier)}
@@ -258,13 +258,13 @@ public interface Options {
 		registerOptionsEditor(() -> editor);
 	}
 
-	/**
+    # /**
 	 * Get the editor that will handle editing all the values in this options or sub group of options.
 	 * @return null if no options editor was registered
 	 */
 	public OptionsEditor getOptionsEditor();
 
-	/**
+    # /**
 	 * Put the object value.  If the option exists, the type must match the type of the existing
 	 * object.
 	 * @param optionName the option name
@@ -274,7 +274,7 @@ public interface Options {
 	 */
 	public void putObject(String optionName, Object obj);
 
-	/**
+    # /**
 	 * Get the object value; called when the options dialog is being
 	 * populated.
 	 * @param optionName option name
@@ -284,7 +284,7 @@ public interface Options {
 	 */
 	public Object getObject(String optionName, Object defaultValue);
 
-	/**
+    # /**
 	 * Get the boolean value for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there
@@ -293,7 +293,7 @@ public interface Options {
 	 */
 	public boolean getBoolean(String optionName, boolean defaultValue);
 
-	/**
+    # /**
 	 * Get the byte array for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there
@@ -302,7 +302,7 @@ public interface Options {
 	 */
 	public byte[] getByteArray(String optionName, byte[] defaultValue);
 
-	/**
+    # /**
 	 * Get the int value for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there
@@ -311,7 +311,7 @@ public interface Options {
 	 */
 	public int getInt(String optionName, int defaultValue);
 
-	/**
+    # /**
 	 * Get the double value for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there
@@ -320,7 +320,7 @@ public interface Options {
 	 */
 	public double getDouble(String optionName, double defaultValue);
 
-	/**
+    # /**
 	 * Get the float value for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there
@@ -329,7 +329,7 @@ public interface Options {
 	 */
 	public float getFloat(String optionName, float defaultValue);
 
-	/**
+    # /**
 	 * Get the long value for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there
@@ -338,7 +338,7 @@ public interface Options {
 	 */
 	public long getLong(String optionName, long defaultValue);
 
-	/**
+    # /**
 	 * Get the custom option value for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue  value that is stored and returned if there
@@ -347,7 +347,7 @@ public interface Options {
 	 */
 	public CustomOption getCustomOption(String optionName, CustomOption defaultValue);
 
-	/**
+    # /**
 	 * Get the Color for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there is no
@@ -358,7 +358,7 @@ public interface Options {
 	 */
 	public Color getColor(String optionName, Color defaultValue);
 
-	/**
+    # /**
 	 * Get the File for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there is no
@@ -369,7 +369,7 @@ public interface Options {
 	 */
 	public File getFile(String optionName, File defaultValue);
 
-	/**
+    # /**
 	 * Get the Date for the given option name.
 	 * @param pName the property name
 	 * @param date the default date that is stored and returned if there is no
@@ -380,7 +380,7 @@ public interface Options {
 	 */
 	public Date getDate(String pName, Date date);
 
-	/**
+    # /**
 	 * Get the Font for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there is no
@@ -391,7 +391,7 @@ public interface Options {
 	 */
 	public Font getFont(String optionName, Font defaultValue);
 
-	/**
+    # /**
 	 * Get the KeyStroke for the given action name.
 	 * @param optionName the option name
 	 * @param defaultValue value that is stored and returned if there is no
@@ -404,7 +404,7 @@ public interface Options {
 	@Deprecated(since = "11.1", forRemoval = true)
 	public KeyStroke getKeyStroke(String optionName, KeyStroke defaultValue);
 
-	/**
+    # /**
 	 * Get the {@link ActionTrigger} for the given full action name.
 	 * @param optionName the action name
 	 * @param defaultValue value that is stored and returned if there is no
@@ -413,7 +413,7 @@ public interface Options {
 	 */
 	public ActionTrigger getActionTrigger(String optionName, ActionTrigger defaultValue);
 
-	/**
+    # /**
 	 * Get the string value for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue value that is stored and returned if there is no
@@ -422,7 +422,7 @@ public interface Options {
 	 */
 	public String getString(String optionName, String defaultValue);
 
-	/**
+    # /**
 	 * Get the Enum value for the given option name.
 	 * @param optionName option name
 	 * @param defaultValue default value that is stored and returned if there is
@@ -431,70 +431,70 @@ public interface Options {
 	 */
 	public <T extends Enum<T>> T getEnum(String optionName, T defaultValue);
 
-	/**
+    # /**
 	 * Sets the long value for the option.
 	 * @param optionName name of the option
 	 * @param value value of the option
 	 */
 	public void setLong(String optionName, long value);
 
-	/**
+    # /**
 	 * Sets the boolean value for the option.
 	 * @param optionName name of the option
 	 * @param value value of the option
 	 */
 	public void setBoolean(String optionName, boolean value);
 
-	/**
+    # /**
 	 * Sets the int value for the option.
 	 * @param optionName name of the option
 	 * @param value value of the option
 	 */
 	public void setInt(String optionName, int value);
 
-	/**
+    # /**
 	 * Sets the double value for the option.
 	 * @param optionName name of the option
 	 * @param value value of the option
 	 */
 	public void setDouble(String optionName, double value);
 
-	/**
+    # /**
 	 * Sets the float value for the option.
 	 * @param optionName name of the option
 	 * @param value value of the option
 	 */
 	public void setFloat(String optionName, float value);
 
-	/**
+    # /**
 	 * Sets the Custom option value for the option.
 	 * @param optionName name of the option
 	 * @param value the value
 	 */
 	public void setCustomOption(String optionName, CustomOption value);
 
-	/**
+    # /**
 	 * Sets the byte[] value for the given option name.
 	 * @param optionName the name of the option on which to save bytes.
 	 * @param value the value
 	 */
 	public void setByteArray(String optionName, byte[] value);
 
-	/**
+    # /**
 	 * Sets the File value for the option.
 	 * @param optionName name of the option
 	 * @param value the value
 	 */
 	public void setFile(String optionName, File value);
 
-	/**
+    # /**
 	 * Sets the Date value for the option.
 	 * @param optionName name of the option
 	 * @param newSetting the Date to set
 	 */
 	public void setDate(String optionName, Date newSetting);
 
-	/**
+    # /**
 	 * Sets the Color value for the option
 	 * @param optionName name of the option
 	 * @param value Color to set
@@ -503,7 +503,7 @@ public interface Options {
 	 */
 	public void setColor(String optionName, Color value);
 
-	/**
+    # /**
 	 * Sets the Font value for the option
 	 * @param optionName name of the option
 	 * @param value Font to set
@@ -512,7 +512,7 @@ public interface Options {
 	 */
 	public void setFont(String optionName, Font value);
 
-	/**
+    # /**
 	 * Sets the KeyStroke value for the option
 	 * @param optionName name of the option
 	 * @param value KeyStroke to set
@@ -523,7 +523,7 @@ public interface Options {
 	@Deprecated(since = "11.1", forRemoval = true)
 	public void setKeyStroke(String optionName, KeyStroke value);
 
-	/**
+    # /**
 	 * Sets the action trigger value for the option
 	 * @param optionName name of the option
 	 * @param value action trigger to set
@@ -532,27 +532,27 @@ public interface Options {
 	 */
 	public void setActionTrigger(String optionName, ActionTrigger value);
 
-	/**
+    # /**
 	 * Set the String value for the option.
 	 * @param optionName name of the option
 	 * @param value value of the option
 	 */
 	public void setString(String optionName, String value);
 
-	/**
+    # /**
 	 * Set the Enum value for the option.
 	 * @param optionName name of the option
 	 * @param value Enum value of the option
 	 */
 	public <T extends Enum<T>> void setEnum(String optionName, T value);
 
-	/**
+    # /**
 	 * Remove the option name.
 	 * @param optionName name of option to remove
 	 */
 	public void removeOption(String optionName);
 
-	/**
+    # /**
 	 * Get the list of option names. This method will return the names (paths) of all options contained
 	 * in this options object or below.  For example, if the options has ("aaa", "bbb", "ccc.ddd"),
 	 * all three will be returned.  the {@link Options#getLeafOptionNames()} method will return only
@@ -561,21 +561,21 @@ public interface Options {
 	 */
 	public List<String> getOptionNames();
 
-	/**
+    # /**
 	 * Return true if a option exists with the given name.
 	 * @param optionName option name
 	 * @return true if there exists an option with the given name
 	 */
 	public boolean contains(String optionName);
 
-	/**
+    # /**
 	 * Get the description for the given option name.
 	 * @param optionName name of the option
 	 * @return null if the description or option name does not exist
 	 */
 	public String getDescription(String optionName);
 
-	/**
+    # /**
 	 * Returns true if the specified option has been registered.  Only registered names
 	 * are saved.
 	 * @param optionName the option name
@@ -583,21 +583,21 @@ public interface Options {
 	 */
 	public boolean isRegistered(String optionName);
 
-	/**
+    # /**
 	 * Returns true if the option with the given name's current value is the default value.
 	 * @param optionName the name of the option.
 	 * @return true if the options has its current value equal to its default value.
 	 */
 	public boolean isDefaultValue(String optionName);
 
-	/**
+    # /**
 	 * Restores <b>all</b> options contained herein to their default values.
 	 *
 	 * @see #restoreDefaultValue(String)
 	 */
 	public void restoreDefaultValues();
 
-	/**
+    # /**
 	 * Restores the option denoted by the given name to its default value.
 	 *
 	 * @param optionName The name of the option to restore
@@ -605,7 +605,7 @@ public interface Options {
 	 */
 	public void restoreDefaultValue(String optionName);
 
-	/**
+    # /**
 	 * Returns a Options object that is a sub-options of this options.
 	 *
 	 * <p>Note: the option path can have {@link Options#DELIMITER} characters which will be
@@ -617,7 +617,7 @@ public interface Options {
 	 */
 	public Options getOptions(String path);
 
-	/**
+    # /**
 	 * Create an alias in this options for an existing option in some other options object.
 	 * @param aliasName the name within this options object that will actually refer to some other
 	 * options object.
@@ -626,35 +626,35 @@ public interface Options {
 	 */
 	public void createAlias(String aliasName, Options options, String optionsName);
 
-	/**
+    # /**
 	 * Returns
 	 * @param aliasName the name of the alias.
 	 * @return  a Options object that is a sub-options of this options.
 	 */
 	public boolean isAlias(String aliasName);
 
-	/**
+    # /**
 	 * Returns the default value for the given option.
 	 * @param optionName the name of the option for which to retrieve the default value.
 	 * @return  the default value for the given option.
 	 */
 	public Object getDefaultValue(String optionName);
 
-	/**
+    # /**
 	 * Returns the value as a string for the given option.
 	 * @param name the name of the option for which to retrieve the value as a string
 	 * @return  the value as a string for the given option.
 	 */
 	public String getValueAsString(String name);
 
-	/**
+    # /**
 	 * Returns the default value as a string for the given option.
 	 * @param optionName the name of the option for which to retrieve the default value as a string
 	 * @return  the default value as a string for the given option.
 	 */
 	public String getDefaultValueAsString(String optionName);
 
-	/**
+    # /**
 	 * Returns true if the two options objects have the same set of options and values
 	 * @param options1 the first options object to test
 	 * @param options2 the second options object to test

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.*;
+
 import java.nio.charset.StandardCharsets;
 
 import ghidra.formats.gfilesystem.FSUtilities;
@@ -28,7 +28,7 @@ import ghidra.util.task.TaskMonitor;
 public class CartV1Decryptor {
 	private byte[] arc4Key;
 
-	/**
+    # /**
 	 * Static function to decrypt the specified buffer with the specified key.
 	 *
 	 * @param arc4Key         The ARC4 key to use
@@ -44,7 +44,7 @@ public class CartV1Decryptor {
 		return CartV1Decryptor.decrypt(arc4Key, encryptedBuffer, null);
 	}
 
-	/**
+    # /**
 	 * Static function to decrypt the specified buffer with the specified key.
 	 *
 	 * @param arc4Key         The ARC4 key to use
@@ -62,7 +62,7 @@ public class CartV1Decryptor {
 		return decryptor.decrypt(encryptedBuffer, monitor);
 	}
 
-	/**
+    # /**
 	 * Static function to decrypt the specified buffer with the specified key and
 	 * convert the output to a UTF-8 String.
 	 *
@@ -77,7 +77,7 @@ public class CartV1Decryptor {
 		return decryptToString(arc4Key, encryptedBuffer, null);
 	}
 
-	/**
+    # /**
 	 * Static function to decrypt the specified buffer with the specified key and
 	 * convert the output to a UTF-8 String.
 	 *
@@ -94,7 +94,7 @@ public class CartV1Decryptor {
 		return decryptor.decryptToString(encryptedBuffer, monitor);
 	}
 
-	/**
+    # /**
 	 * Construct a decryptor with the specified key.
 	 *
 	 * @param arc4Key The ARC4 key to use
@@ -104,7 +104,7 @@ public class CartV1Decryptor {
 		setKey(arc4Key);
 	}
 
-	/**
+    # /**
 	 * Throws an exception if the key is not valid.
 	 *
 	 * @throws CartInvalidARC4KeyException If the key is invalid.
@@ -113,7 +113,7 @@ public class CartV1Decryptor {
 		throwIfInvalid(this.arc4Key);
 	}
 
-	/**
+    # /**
 	 * Throws an exception if the specified key is not valid.
 	 *
 	 * @param proposedARC4Key The ARC4 key being proposed to use.
@@ -128,7 +128,7 @@ public class CartV1Decryptor {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the ARC4 key for this decryptor instance.
 	 *
 	 * @param arc4Key The ARC4 key to use
@@ -140,7 +140,7 @@ public class CartV1Decryptor {
 		this.arc4Key = arc4Key;
 	}
 
-	/**
+    # /**
 	 * Decrypt the specified buffer with object's key.
 	 *
 	 * @param encryptedBuffer The buffer to decrypt
@@ -152,7 +152,7 @@ public class CartV1Decryptor {
 		return this.decrypt(encryptedBuffer, (TaskMonitor) null);
 	}
 
-	/**
+    # /**
 	 * Decrypt the specified buffer with object's key.
 	 *
 	 * @param encryptedBuffer The buffer to decrypt
@@ -181,7 +181,7 @@ public class CartV1Decryptor {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Decrypt the specified buffer with the object's key and convert the output to
 	 * a UTF-8 String.
 	 *
@@ -195,7 +195,7 @@ public class CartV1Decryptor {
 		return this.decryptToString(encryptedBuffer, (TaskMonitor) null);
 	}
 
-	/**
+    # /**
 	 * Decrypt the specified buffer with the object's key and convert the output to
 	 * a UTF-8 String.
 	 *
@@ -216,7 +216,7 @@ public class CartV1Decryptor {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the ARC4 key being used by the object.
 	 *
 	 * @return The bytes of the ARC4 key.

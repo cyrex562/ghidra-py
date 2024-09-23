@@ -17,7 +17,7 @@ package ghidra.framework.main.datatree;
 
 import java.awt.datatransfer.DataFlavor;
 import java.awt.dnd.DropTargetDropEvent;
-import java.io.IOException;
+
 
 import docking.widgets.tree.GTreeNode;
 import ghidra.app.util.FileOpenDataFlavorHandler;

@@ -17,7 +17,7 @@ package ghidra.framework.plugintool;
 
 import java.awt.Image;
 import java.awt.Taskbar;
-import java.io.*;
+
 import java.util.List;
 
 import javax.swing.ImageIcon;

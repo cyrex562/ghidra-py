@@ -61,7 +61,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		};
 	}
 
-	/**
+    # /**
 	 * Gets all windows in the system (including Frames).
 	 *
 	 * @return all windows
@@ -95,7 +95,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Waits for all system tasks to complete. These tasks are tracked by the
 	 * SystemUtilities during testing only.
 	 *
@@ -122,7 +122,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		waitForSwing();
 	}
 
-	/**
+    # /**
 	 * @deprecated Use {@link #waitForSwing()} instead
 	 */
 	@Deprecated(forRemoval = true, since = "10.3")
@@ -206,7 +206,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		}
 	}
 
-	/**
+    # /**
 	 * Finds the button with the indicated TEXT that is a sub-component of the
 	 * indicated container, and then programmatically presses the button. <BR>
 	 * The following is a sample JUnit test use:
@@ -227,7 +227,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		pressButtonByText(container, buttonText, true);
 	}
 
-	/**
+    # /**
 	 * Finds the button with the indicated TEXT that is a sub-component of the
 	 * indicated container, and then programmatically presses the button.
 	 *
@@ -255,7 +255,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		pressButton(button, waitForCompletion);
 	}
 
-	/**
+    # /**
 	 * Finds the button with the indicated NAME that is a subcomponent of the
 	 * indicated container, and then programmatically presses the button.
 	 *
@@ -267,7 +267,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		pressButtonByName(container, buttonName, true);
 	}
 
-	/**
+    # /**
 	 * Finds the button with the indicated NAME that is a subcomponent of the
 	 * indicated container, and then programmatically presses the button.
 	 *
@@ -294,7 +294,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		pressButton(button, waitForCompletion);
 	}
 
-	/**
+    # /**
 	 * Programmatically presses the indicated button.
 	 *
 	 * @param button the button
@@ -306,7 +306,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		pressButton(button, true);
 	}
 
-	/**
+    # /**
 	 * Programmatically presses the indicated button.
 	 *
 	 * @param button the button
@@ -319,7 +319,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		runSwing(r, waitForCompletion);
 	}
 
-	/**
+    # /**
 	 * Searches the subcomponents of the indicated container and returns the
 	 * component with the specified name.
 	 *
@@ -391,7 +391,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 
 	}
 
-	/**
+    # /**
 	 * Searches the subcomponents of the the given container and returns the
 	 * JButton that has the specified text.
 	 *
@@ -418,7 +418,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Searches the sub-components of the given container and returns the AbstractButton that has 
 	 * the specified name.
 	 *
@@ -430,7 +430,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return findAbstractButtonByName(container, name);
 	}
 
-	/**
+    # /**
 	 * Searches the sub-components of the given container and returns the
 	 * AbstractButton that has the specified text.
 	 * <p>
@@ -462,7 +462,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Searches the sub-components of the given container and returns the
 	 * AbstractButton that has the specified name.
 	 *
@@ -503,7 +503,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		clickMouse(comp, MouseEvent.BUTTON1, x, y, 2, 0);
 	}
 
-	/**
+    # /**
 	 * Simulates click the mouse button.
 	 *
 	 * @param comp the component to click on.
@@ -530,7 +530,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		}
 	}
 
-	/**
+    # /**
 	 * Simulates click the mouse button.
 	 *
 	 * @param comp the component to click on.
@@ -546,7 +546,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		clickMouse(comp, button, x, y, clickCount, modifiers, false);
 	}
 
-	/**
+    # /**
 	 * Simulates a mouse drag action
 	 *
 	 * @param comp the component to drag on.
@@ -571,7 +571,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 
 	}
 
-	/**
+    # /**
 	 * Fire a mouse moved event for the given component.
 	 *
 	 * @param comp source of the event.
@@ -652,7 +652,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		waitForSwing();
 	}
 
-	/**
+    # /**
 	 * Returns the value from the given {@link Supplier}, invoking the call in
 	 * the Swing thread. This is useful when you may have values that are being
 	 * changed on the Swing thread and you need the test thread to see the
@@ -667,7 +667,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return ref.get();
 	}
 
-	/**
+    # /**
 	 * Returns the value from the given {@link Supplier}, invoking the call in
 	 * the Swing thread. This is useful when you may have values that are being
 	 * changed on the Swing thread and you need the test thread to see the
@@ -681,7 +681,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return getSwing(s);
 	}
 
-	/**
+    # /**
 	 * Run the given code snippet on the Swing thread and wait for it to finish
 	 * @param r the runnable code snippet
 	 */
@@ -689,7 +689,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		runSwing(r, true);
 	}
 
-	/**
+    # /**
 	 * Run the given code snippet on the Swing thread later, not blocking the current thread.  Use
 	 * this if the code snippet causes a blocking operation.
 	 *
@@ -701,7 +701,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		runSwing(r, false);
 	}
 
-	/**
+    # /**
 	 * Call this version of {@link #runSwing(Runnable)} when you expect your runnable <b>may</b>
 	 * throw exceptions
 	 *
@@ -889,7 +889,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		Assert.fail(message + "\n" + string + "\nTest Thread stack at that time:");
 	}
 
-	/**
+    # /**
 	 * Launches the runnable on a new thread so as to not block the calling
 	 * thread. This is very useful for performing actions on the Swing thread
 	 * that show modal dialogs, which would otherwise block the calling thread,
@@ -932,7 +932,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		waitForSwing();
 	}
 
-	/**
+    # /**
 	 * Clicks a range of items in a list (simulates holding SHIFT and selecting
 	 * each item in the range in-turn)
 	 *
@@ -950,7 +950,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		waitForSwing();
 	}
 
-	/**
+    # /**
 	 * Clicks a range of items in a table (simulates holding SHIFT and selecting
 	 * each item in the range)
 	 *
@@ -983,7 +983,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return editor;
 	}
 
-	/**
+    # /**
 	 * Gets the rendered value for the specified table cell.  The actual value at the cell may
 	 * not be a String.  This method will get the String display value, as created by the table.
 	 *
@@ -1027,7 +1027,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return runSwing(() -> field.getText());
 	}
 
-	/**
+    # /**
 	 * Finds the path of a tree node in the indicated tree with the specified
 	 * text. The matching tree node is determined by comparing the specified
 	 * text with the string returned by the tree node's toString() method. <br>
@@ -1046,7 +1046,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return findPathToText(tree, rootPath, text);
 	}
 
-	/**
+    # /**
 	 * Performs a depth first search for the named tree node.
 	 *
 	 * @param tree the tree to search
@@ -1077,7 +1077,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Invoke <code>fixupGUI</code> at the beginning of your JUnit test or in
 	 * its setup() method to make your GUI for the JUnit test appear using the
 	 * system Look and Feel. The system look and feel is the default that Ghidra
@@ -1115,7 +1115,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		UIManager.put("TextArea.font", f);
 	}
 
-	/**
+    # /**
 	 * Asserts that the two colors have the same rgb values (handles GColor)
 	 * @param expected the expected color
 	 * @param actual the actual color
@@ -1149,7 +1149,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 // Swing Methods
 //==================================================================================================
 
-	/**
+    # /**
 	 * Waits for the Swing thread to process any pending events. This method
 	 * also waits for any {@link SwingUpdateManager}s that have pending events
 	 * to be flushed.
@@ -1275,7 +1275,7 @@ public class AbstractGuiTest extends AbstractGenericTest {
 		yieldToSwing();
 	}
 
-	/**
+    # /**
 	 * This is only for internal use. If you need to wait for the Swing thread
 	 * from your test, then use {@link #waitForSwing()}.
 	 *

@@ -80,7 +80,7 @@ public abstract class AbstractMessageDigest implements MessageDigest {
 		update((byte) (input & 0xff));
 	}
 
-	/**
+    # /**
 	 * You REALLY want to override this method.
 	 */
 	@Override
@@ -90,7 +90,7 @@ public abstract class AbstractMessageDigest implements MessageDigest {
 		}
 	}
 
-	/**
+    # /**
 	 * You REALLY want to override this method too.
 	 * @throws CancelledException 
 	 */

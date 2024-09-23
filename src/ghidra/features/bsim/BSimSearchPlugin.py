@@ -344,7 +344,7 @@ public class BSimSearchPlugin extends ProgramPlugin {
 		}
 	}
 
-	/**
+    # /**
 	 * Get all non-stub functions for computing signature overview
 	 * @return set of all non-stub function symbols
 	 */
@@ -384,7 +384,7 @@ public class BSimSearchPlugin extends ProgramPlugin {
 			vectorFactory, queryInfo, settings));
 	}
 
-	/**
+    # /**
 	 * Get an {@link AutoCloseable} {@link SimilarFunctionQueryService} instance which will
 	 * be connected to current BSim Server.  Caller is responsible for closing instance.
 	 * @param program program containing functions to be searched

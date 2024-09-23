@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.service.graph;
 
 import java.util.Set;
@@ -21,8 +21,8 @@ import docking.ComponentProvider;
 import docking.DefaultActionContext;
 
 # /**
- * The base ActionContext for the GraphDisplay instances.
- */
+# * The base ActionContext for the GraphDisplay instances.
+# */
 public class GraphActionContext extends DefaultActionContext {
 	private final AttributedGraph graph;
 	private final Set<AttributedVertex> selectedVertices;
@@ -38,7 +38,7 @@ public class GraphActionContext extends DefaultActionContext {
 		this.focusedVertex = locatedVertex;
 	}
 
-	/**
+    # /**
 	 * Returns the graph
 	 * @return the graph
 	 */
@@ -46,7 +46,7 @@ public class GraphActionContext extends DefaultActionContext {
 		return graph;
 	}
 
-	/**
+    # /**
 	 * Returns the set of selectedVertices in the graph
 	 * @return the set of selectedVertices in the graph
 	 */
@@ -54,7 +54,7 @@ public class GraphActionContext extends DefaultActionContext {
 		return selectedVertices;
 	}
 
-	/**
+    # /**
 	 * Returns the focused vertex (similar concept to the cursor in a text document)
 	 * @return the focused vertex
 	 */

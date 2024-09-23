@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.model.data.*;
@@ -44,7 +44,7 @@ class CompositeDBAdapterV0 extends CompositeDBAdapter implements RecordTranslato
 
 	private Table compositeTable;
 
-	/**
+    # /**
 	 * Gets a version 0 adapter for the Composite database table.
 	 * @param handle handle to the database containing the table.
 	 * @throws VersionException if the the table's version does not match the expected version

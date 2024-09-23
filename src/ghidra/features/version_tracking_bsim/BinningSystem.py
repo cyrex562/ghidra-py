@@ -34,7 +34,7 @@ class BinningSystem {
 	private int[][] partitionIdentities;
 	private TreeMap<Integer, TreeSet<FunctionNode>>[] binSys;
 
-	/**
+    # /**
 	 * Construct a container that holds the FunctionNodes.  If model is not null, then the FunctionNodes will be indexed
 	 * @param model is the particular configuration model to use for this
 	 */
@@ -54,7 +54,7 @@ class BinningSystem {
 		}
 	}
 
-	/**
+    # /**
 	 * Add a list of {@link FunctionNode} objects into the bins
 	 * @param iter is an iterator over the raw FunctionNodes to add
 	 * @param monitor is the TaskMonitor
@@ -81,7 +81,7 @@ class BinningSystem {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the union of all the bins containing the exemplar FunctionNode.
 	 * These nodes are likely to similar to the exemplar, but need secondary testing.
 	 * @param node is the exemplar
@@ -99,7 +99,7 @@ class BinningSystem {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Given a node, calculate the binId for each binning in this system
 	 * @param node is the FunctionNode to label
 	 * @return an array of ids

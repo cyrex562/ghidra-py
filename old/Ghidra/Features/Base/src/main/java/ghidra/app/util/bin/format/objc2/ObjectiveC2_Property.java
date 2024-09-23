@@ -23,7 +23,7 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.symbol.Namespace;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC2_Property implements StructConverter {
 	private ObjectiveC2_State _state;

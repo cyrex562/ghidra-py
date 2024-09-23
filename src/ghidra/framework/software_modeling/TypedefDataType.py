@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.docking.settings.*;
@@ -22,11 +22,11 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.UniversalID;
 
 # /**
- * 
- * Basic implementation for the typedef dataType.
- * 
- * NOTE: Settings are immutable when a DataTypeManager has not been specified (i.e., null).
- */
+# * 
+# * Basic implementation for the typedef dataType.
+# * 
+# * NOTE: Settings are immutable when a DataTypeManager has not been specified (i.e., null).
+# */
 public class TypedefDataType extends GenericDataType implements TypeDef {
 
 	private DataType dataType;
@@ -34,7 +34,7 @@ public class TypedefDataType extends GenericDataType implements TypeDef {
 	private boolean isAutoNamed = false;
 	private boolean deleted = false;
 
-	/**
+    # /**
 	 * Construct a new typedef within the root category
 	 * @param name name of this typedef
 	 * @param dt data type that is being typedef'ed (may not be null)
@@ -43,7 +43,7 @@ public class TypedefDataType extends GenericDataType implements TypeDef {
 		this(CategoryPath.ROOT, name, dt, dt.getDataTypeManager());
 	}
 
-	/**
+    # /**
 	 * Construct a new typedef.
 	 * @param path category path for this datatype
 	 * @param name name of this typedef
@@ -53,7 +53,7 @@ public class TypedefDataType extends GenericDataType implements TypeDef {
 		this(path, name, dt, dt.getDataTypeManager());
 	}
 
-	/**
+    # /**
 	 * Construct a new typedef.
 	 * @param path category path for this datatype
 	 * @param name name of this typedef
@@ -68,7 +68,7 @@ public class TypedefDataType extends GenericDataType implements TypeDef {
 		defaultSettings = null; // use lazy initialization
 	}
 
-	/**
+    # /**
 	 * Construct a new typedef.
 	 * @param path category path for this datatype
 	 * @param name name of this typedef
@@ -426,7 +426,7 @@ public class TypedefDataType extends GenericDataType implements TypeDef {
 		return "typedef " + getName() + " " + dataType.getName();
 	}
 
-	/**
+    # /**
 	 * Copy all default settings , which correspond to a TypeDefSettingsDefinition,
 	 * from the specified src TypeDef to the specified dest TypeDef.
 	 * @param src settings source TypeDef
@@ -450,7 +450,7 @@ public class TypedefDataType extends GenericDataType implements TypeDef {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate a name for the typedef based upon its current {@link TypeDefSettingsDefinition} settings.
 	 * @param modelType model typedef from which name should be derived
 	 * @return generated typedef auto-name with attribute specification

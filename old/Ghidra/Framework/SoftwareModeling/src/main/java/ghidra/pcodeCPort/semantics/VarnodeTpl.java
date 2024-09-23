@@ -17,7 +17,7 @@ package ghidra.pcodeCPort.semantics;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 
 import generic.stl.VectorSTL;
 import ghidra.pcodeCPort.semantics.ConstTpl.const_type;

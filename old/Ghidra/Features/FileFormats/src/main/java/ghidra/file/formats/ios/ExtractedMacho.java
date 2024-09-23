@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 

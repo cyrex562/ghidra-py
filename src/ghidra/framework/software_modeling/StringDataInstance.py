@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import static ghidra.program.model.data.EndianSettingsDefinition.*;
@@ -36,17 +36,17 @@ import ghidra.program.model.mem.*;
 import ghidra.util.*;
 
 # /**
- * Represents an instance of a string in a {@link MemBuffer}.
- * <p>
- * This class handles all the details of detecting a terminated string's length, converting the
- * bytes in the membuffer into a java native String, and converting the raw String into a formatted
- * human-readable version, according to the various {@link SettingsDefinition}s attached to the
- * string data location.
- * <p>
- */
+# * Represents an instance of a string in a {@link MemBuffer}.
+# * <p>
+# * This class handles all the details of detecting a terminated string's length, converting the
+# * bytes in the membuffer into a java native String, and converting the raw String into a formatted
+# * human-readable version, according to the various {@link SettingsDefinition}s attached to the
+# * string data location.
+# * <p>
+# */
 public class StringDataInstance {
 
-	/**
+    # /**
 	 * Returns true if the {@link Data} instance is a 'string'.
 	 *
 	 * @param data {@link Data} instance to test, null ok.
@@ -67,7 +67,7 @@ public class StringDataInstance {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the specified {@link DataType} is (or could be) a string.
 	 * <p>
 	 * Arrays of char-like elements (see {@link ArrayStringable}) are treated as string data types.
@@ -85,7 +85,7 @@ public class StringDataInstance {
 			ArrayStringable.getArrayStringable(arrayDt.getDataType()) != null);
 	}
 
-	/**
+    # /**
 	 * Returns true if the {@link Data} instance is one of the many 'char' data types.
 	 * 
 	 * @param data {@link Data} instance to test, null ok
@@ -100,7 +100,7 @@ public class StringDataInstance {
 			(dt instanceof WideChar16DataType) || (dt instanceof WideChar32DataType);
 	}
 
-	/**
+    # /**
 	 * Returns a string representation of the character(s) contained in the byte array, suitable for
 	 * display as a single character, or as a sequence of characters.
 	 * <p>
@@ -127,7 +127,7 @@ public class StringDataInstance {
 		return sdi.getCharRepresentation();
 	}
 
-	/**
+    # /**
 	 * Determine if bytes contain only a single ASCII value within least-significant-byte of
 	 * big-endian byte array
 	 * 
@@ -148,7 +148,7 @@ public class StringDataInstance {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns a new {@link StringDataInstance} using the bytes in the data codeunit.
 	 * <p>
 	 * 
@@ -174,7 +174,7 @@ public class StringDataInstance {
 
 	}
 
-	/**
+    # /**
 	 * Returns a new {@link StringDataInstance} using the bytes in the MemBuffer.
 	 * <p>
 	 * 
@@ -202,7 +202,7 @@ public class StringDataInstance {
 		return NULL_INSTANCE;
 	}
 
-	/**
+    # /**
 	 * Formats a string value so that it is in the form of a symbol label.
 	 * 
 	 * @param prefixStr data type prefix, see {@link AbstractStringDataType#getDefaultLabelPrefix()}
@@ -247,7 +247,7 @@ public class StringDataInstance {
 	}
 
 	//-----------------------------------------------------------------------------
-	/**
+    # /**
 	 * A {@link StringDataInstance} that represents a non-existent string.
 	 * <p>
 	 * Methods on this instance generally return null.
@@ -291,7 +291,7 @@ public class StringDataInstance {
 		showTranslation = false;
 	}
 
-	/**
+    # /**
 	 * Creates a string instance using the data in the {@link MemBuffer} and the settings pulled
 	 * from the {@link AbstractStringDataType string data type}.
 	 * 
@@ -307,7 +307,7 @@ public class StringDataInstance {
 		this(dataType, settings, buf, length, false);
 	}
 
-	/**
+    # /**
 	 * Creates a string instance using the data in the {@link MemBuffer} and the settings pulled
 	 * from the {@link AbstractStringDataType string data type}.
 	 * 
@@ -397,7 +397,7 @@ public class StringDataInstance {
 				: DEFAULT_CHARSET_NAME;
 	}
 
-	/**
+    # /**
 	 * Returns the string name of the charset.
 	 *
 	 * @return string charset name
@@ -406,7 +406,7 @@ public class StringDataInstance {
 		return charsetName;
 	}
 
-	/**
+    # /**
 	 * Returns the address of the {@link MemBuffer}.
 	 *
 	 * @return {@link Address} of the MemBuffer.
@@ -441,7 +441,7 @@ public class StringDataInstance {
 		return length >= 0 && stringLayout.isFixedLen();
 	}
 
-	/**
+    # /**
 	 * Returns the length of this string's data, in bytes.
 	 *
 	 * @return number of bytes in this string.
@@ -450,7 +450,7 @@ public class StringDataInstance {
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the length, in bytes, of the string data object contained in the {@link MemBuffer},
 	 * or -1 if the length could not be determined.
 	 * <p>
@@ -516,7 +516,7 @@ public class StringDataInstance {
 		return (stringLayout == StringLayoutEnum.NULL_TERMINATED_UNBOUNDED) ? -1 : length;
 	}
 
-	/**
+    # /**
 	 * Returns true if the string should have a trailing NULL character and doesn't.
 	 *
 	 * @return boolean true if the trailing NULL character is missing, false if string type doesn't
@@ -563,7 +563,7 @@ public class StringDataInstance {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the string contained in the specified {@link MemBuffer}, or null if all the bytes of
 	 * the string could not be read.
 	 * <p>
@@ -810,7 +810,7 @@ public class StringDataInstance {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Returns a formatted version of the string returned by {@link #getStringValue()}.
 	 * <p>
 	 * The resulting string will be formatted with quotes around the parts that contain plain ASCII
@@ -828,7 +828,7 @@ public class StringDataInstance {
 				: getStringRep(StringRenderBuilder.DOUBLE_QUOTE);
 	}
 
-	/**
+    # /**
 	 * Returns a formatted version of the string returned by {@link #getStringValue()}.
 	 * <p>
 	 * The resulting string will be formatted with quotes around the parts that contain plain ASCII
@@ -878,7 +878,7 @@ public class StringDataInstance {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Trims trailing nulls off the end of the string.
 	 *
 	 * @param s String to trim
@@ -892,7 +892,7 @@ public class StringDataInstance {
 		return s.substring(0, lastGoodChar + 1);
 	}
 
-	/**
+    # /**
 	 * Returns true if this string has a translated value that could
 	 * be displayed.
 	 * 
@@ -903,7 +903,7 @@ public class StringDataInstance {
 		return translatedValue != null;
 	}
 
-	/**
+    # /**
 	 * Returns the value of the stored
 	 * {@link TranslationSettingsDefinition#getTranslatedValue(Data) translated settings}
 	 * string.
@@ -915,7 +915,7 @@ public class StringDataInstance {
 		return translatedValue;
 	}
 
-	/**
+    # /**
 	 * Returns true if the user should be shown the translated value of the string instead of the
 	 * real value.
 	 *
@@ -925,7 +925,7 @@ public class StringDataInstance {
 		return showTranslation;
 	}
 
-	/**
+    # /**
 	 * Convert a char value (or sequence of char values) in memory into its canonical unicode
 	 * representation, using attached charset and encoding information.
 	 * <p>
@@ -983,7 +983,7 @@ public class StringDataInstance {
 		return sub.getLabel(prefixStr, abbrevPrefixStr, defaultStr, options);
 	}
 
-	/**
+    # /**
 	 * Returns a new {@link StringDataInstance} that points to the string characters that start at
 	 * {@code byteOffset} from the start of this instance.
 	 * <p>
@@ -1008,7 +1008,7 @@ public class StringDataInstance {
 		return sub;
 	}
 
-	/**
+    # /**
 	 * Create a new {@link StringDataInstance} that points to a portion of this instance, starting
 	 * at a character offset (whereever that may be) into the data.
 	 * <p>
@@ -1022,7 +1022,7 @@ public class StringDataInstance {
 		return getByteOffcut(getCharOffset(offsetChars));
 	}
 
-	/**
+    # /**
 	 * Maps a {@link StringDataInstance}'s layout and charset info into the best String DataType
 	 * that can handle this type of data instance.
 	 * <p>
@@ -1051,7 +1051,7 @@ public class StringDataInstance {
 			TerminatedUnicode32DataType.dataType);
 	}
 
-	/**
+    # /**
 	 * Maps a {@link StringDataInstance} (this type) to the String DataType that best can handle
 	 * this type of data.
 	 * <p>
@@ -1085,7 +1085,7 @@ public class StringDataInstance {
 		return buf.limit() < (1 << (8 * lenLen));
 	}
 
-	/**
+    # /**
 	 * Encode a string to replace the current value
 	 * 
 	 * @param value the value to encode
@@ -1099,7 +1099,7 @@ public class StringDataInstance {
 		return convertUnpaddedToPadded(checkAndEncodeLayout(bb));
 	}
 
-	/**
+    # /**
 	 * Parse and encode a string from its representation to replace the current value
 	 * 
 	 * @param repr the representation of the string
@@ -1117,7 +1117,7 @@ public class StringDataInstance {
 		return convertUnpaddedToPadded(checkAndEncodeLayout(bb));
 	}
 
-	/**
+    # /**
 	 * Encode a single character to replace the current value
 	 * 
 	 * @param value a single code point to encode
@@ -1130,7 +1130,7 @@ public class StringDataInstance {
 		return Arrays.copyOf(bb.array(), bb.limit());
 	}
 
-	/**
+    # /**
 	 * Parse and encode a single character from its representation to replace the current value
 	 * 
 	 * @param repr the representation of a single character
@@ -1242,7 +1242,7 @@ public class StringDataInstance {
 
 	//--------------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * Simple class to hold tuple of (detected_charset_name,bom_bytes_to_skip,detected_endianness).
 	 */
 	private static class AdjustedCharsetInfo {

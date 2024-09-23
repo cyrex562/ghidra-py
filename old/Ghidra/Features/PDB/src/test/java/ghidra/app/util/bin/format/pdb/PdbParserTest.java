@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.pdb;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import java.io.*;
+
 
 import org.junit.Before;
 import org.junit.Test;

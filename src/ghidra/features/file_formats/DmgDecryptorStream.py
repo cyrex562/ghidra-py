@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.dmg;
 
-import java.io.*;
+
 import java.util.Arrays;
 
 import ghidra.app.util.bin.*;
@@ -47,7 +47,7 @@ public class DmgDecryptorStream extends InputStream {
 	private byte[] buffer;
 	private int bufferposition;
 
-	/**
+    # /**
 	 * See {@link #DmgDecryptorStream(String, String, ByteProvider)}
 	 *
 	 * @param containerName the name of the ipsw file the DMG is inside
@@ -60,7 +60,7 @@ public class DmgDecryptorStream extends InputStream {
 		this(containerName, dmgName, new RandomAccessByteProvider(srcFile));
 	}
 
-	/**
+    # /**
 	 * Creates a DMG decrypting {@link InputStream}, reading from the provided
 	 * {@link ByteProvider}.
 	 * <p>

@@ -227,7 +227,7 @@ public class FGView extends VisualGraphView<FGVertex, FGEdge, FunctionGraph> {
 		return fgComponent.isGraphViewStale();
 	}
 
-	/**
+    # /**
 	 * Sets the given layout provider, <b>but does not actually perform a layout</b>.
 	 */
 	@Override
@@ -248,7 +248,7 @@ public class FGView extends VisualGraphView<FGVertex, FGEdge, FunctionGraph> {
 	}
 
 	// TODO this should move up; remove controller usage
-	/**
+    # /**
 	 * Performs a relayout of the graph.
 	 */
 	void relayout() {
@@ -265,7 +265,7 @@ public class FGView extends VisualGraphView<FGVertex, FGEdge, FunctionGraph> {
 		return (FGViewUpdater) super.getViewUpdater();
 	}
 
-	/**
+    # /**
 	 * Clears user settings, such as vertex locations and group information.
 	 */
 	void clearUserLayoutSettings() {

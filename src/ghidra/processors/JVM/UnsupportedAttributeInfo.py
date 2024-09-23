@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -28,7 +28,7 @@ import ghidra.util.exception.DuplicateNameException;
  */
 public class UnsupportedAttributeInfo extends AbstractAttributeInfo {
 
-	/**
+    # /**
 	 * Creates a {@code UnsupportedAttributeInfo} object from the current index of
 	 * {@code reader} and advances the index.
 	 * @param reader source of bytes

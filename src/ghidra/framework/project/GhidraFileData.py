@@ -16,7 +16,7 @@
 package ghidra.framework.data;
 
 import java.awt.*;
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
@@ -94,7 +94,7 @@ public class GhidraFileData {
 // refreshing ... we are relying on non-refreshed data to be dropped from cache map and no
 // longer used.
 
-	/**
+    # /**
 	 * Construct a file instance with a specified name and a correpsonding parent folder
 	 * @param parent parent folder
 	 * @param name file name
@@ -113,7 +113,7 @@ public class GhidraFileData {
 		refresh();
 	}
 
-	/**
+    # /**
 	 * Construct a new file instance with a specified name and a corresponding parent folder using
 	 * up-to-date folder items.
 	 * @param parent parent folder
@@ -187,7 +187,7 @@ public class GhidraFileData {
 		return fileIdWasNull && fileID != null;
 	}
 
-	/**
+    # /**
 	 * Notification callback that this file's status may have changed
 	 * @throws IOException if IO error occurs
 	 */
@@ -229,7 +229,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform file in-use / busy check
 	 * @throws FileInUseException if file is in-use or busy
 	 */
@@ -241,7 +241,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the domain object in this domain file exists and has an open transaction.
 	 * @return true if busy
 	 */
@@ -253,7 +253,7 @@ public class GhidraFileData {
 		return dobj != null && !dobj.canLock();
 	}
 
-	/**
+    # /**
 	 * Removes this file from file-index maintained by {@link ProjectData} instance
 	 * following its removal from the project.
 	 */
@@ -266,7 +266,7 @@ public class GhidraFileData {
 //		listener = null;
 	}
 
-	/**
+    # /**
 	 * Returns a unique file-ID if one has been established or null
 	 * @return the file-ID or null if failed to obtain ID
 	 */
@@ -274,7 +274,7 @@ public class GhidraFileData {
 		return fileID;
 	}
 
-	/**
+    # /**
 	 * Returns the path name to the domain object.
 	 * @return the path name
 	 */
@@ -287,7 +287,7 @@ public class GhidraFileData {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Get the name of this project file
 	 * @return the name
 	 */
@@ -295,7 +295,7 @@ public class GhidraFileData {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Get the parent folder for this file.
 	 * @return the parent
 	 */
@@ -303,14 +303,14 @@ public class GhidraFileData {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * @return {@link DomainFile} instance which corresponds to this file.
 	 */
 	GhidraFile getDomainFile() {
 		return new GhidraFile(parent.getDomainFolder(), name);
 	}
 
-	/**
+    # /**
 	 * Get a remote Ghidra URL for this domain file if available within a remote repository.
 	 * @param ref reference within a file, may be null.  NOTE: such reference interpretation
 	 * is specific to a domain object and tooling with limited support.
@@ -336,7 +336,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a local Ghidra URL for this domain file if available within a non-transient local 
 	 * project.  A null value is returned for a transient project.
 	 * @param ref reference within a file, may be null.  NOTE: such reference interpretation
@@ -353,7 +353,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Reassign a new file-ID to resolve file-ID conflict.
 	 * Conflicts can occur as a result of a cancelled check-out.
 	 * @throws IOException if an IO error occurs
@@ -369,7 +369,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the name on this file.
 	 * @param newName domain file name
 	 * @return renamed domain file (older DomainFile instances becomes invalid since they are immutable) 
@@ -421,7 +421,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns content-type string for this file
 	 * @return the file content type or a reserved content type {@link ContentHandler#MISSING_CONTENT}
 	 * or {@link ContentHandler#UNKNOWN_CONTENT}.
@@ -439,7 +439,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Get content handler for this file
 	 * @return content handler
 	 * @throws IOException if an IO error occurs, file not found, or unsupported content
@@ -456,7 +456,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the underlying Class for the domain object in this domain file.
 	 * @return the class or null if does not correspond to a domain object.
 	 */
@@ -472,7 +472,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns changes made to versioned file by others since checkout was performed.
 	 * NOTE: This method is unable to cope with version issues which may require an
 	 * upgrade.
@@ -492,7 +492,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the domainObject for this DomainFile only if it is already open.
 	 * @return the already opened domainObject or null if it is not currently open.
 	 */
@@ -500,7 +500,7 @@ public class GhidraFileData {
 		return projectData.getOpenedDomainObject(getPathname());
 	}
 
-	/**
+    # /**
 	 * Opens and returns the current domain object.  If the domain object is already opened,
 	 * then the existing open domain object is returned.
 	 * @param consumer consumer of the domain object which is responsible for
@@ -597,7 +597,7 @@ public class GhidraFileData {
 		return domainObj;
 	}
 
-	/**
+    # /**
 	 * Returns a "read-only" version of the domain object.  "Read-only" means that the domain
 	 * object cannot be saved back into its original domain object. It can still be modified
 	 * and saved to a new domain file.  The domain object will be assigned a temporary domain
@@ -638,7 +638,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a new DomainObject that cannot be changed or saved to its original file.
 	 * NOTE: The use of this method should generally be avoided since it can't
 	 * handle version changes that may have occured and require a data upgrade
@@ -683,7 +683,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Prior to invoking getDomainObject, this method can be used to determine if
 	 * unsaved changes can be recovered on the next open.
 	 * @return true if recovery data exists.
@@ -698,7 +698,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * If the file has an updatable domain object with unsaved changes, generate a recovery 
 	 * snapshot.
 	 * @return true if snapshot successful or not needed, false if file is busy which prevents 
@@ -737,7 +737,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a long value representing the time when the data was last modified.
 	 * @return the time
 	 */
@@ -753,7 +753,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the state based Icon image for the domain file based upon its content class.
 	 * @param disabled true if the icon return should be rendered as 
 	 * not enabled
@@ -841,7 +841,7 @@ public class GhidraFileData {
 		return DomainFile.UNSUPPORTED_FILE_ICON;
 	}
 
-	/**
+    # /**
 	 * Return whether the domain object in this domain file has changed.
 	 * @return true if changed
 	 */
@@ -850,7 +850,7 @@ public class GhidraFileData {
 		return dobj != null && dobj.isChanged();
 	}
 
-	/**
+    # /**
 	 * Returns true if this is a checked-out file.
 	 * @return true if checked-out
 	 */
@@ -860,7 +860,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this a checked-out file with exclusive access.
 	 * @return true if checked-out exclusively
 	 */
@@ -877,7 +877,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this is a checked-out file which has been modified since it was checked-out.
 	 * @return true if modified since check-out
 	 */
@@ -888,7 +888,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns whether this file is explicitly marked as read-only.  This method is only supported
 	 * by the local file system and does not apply to a versioned file that is not checked-out.
 	 * A versioned file that is not checked-out will always return false, while a 
@@ -902,7 +902,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Return true if this is a versioned database, else false
 	 * @return true if versioned
 	 */
@@ -915,7 +915,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the file is versioned but a private copy also exists.
 	 * @return true if hijacked
 	 */
@@ -925,7 +925,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this file may be checked-out from the associated repository.
 	 * User's with read-only repository access will not have checkout ability.
 	 * @return true if can checkout
@@ -945,7 +945,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this file may be checked-in to the associated repository.
 	 * @return true if can check-in
 	 */
@@ -961,7 +961,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Return either the latest version if the file is not checked-out or the version that
 	 * was checked-out or a specific version that was requested.
 	 * @return the version
@@ -984,7 +984,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this file represents the latest version of the associated domain object.
 	 * @return true if the latest version
 	 */
@@ -997,7 +997,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this file can be merged with the current versioned file.
 	 * @return true if can merge
 	 */
@@ -1015,7 +1015,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the object to read-only.  This method may only be invoked
 	 * for private files (i.e., not versioned).
 	 * @param state if true file will be read-only and may not be updated, if false the 
@@ -1035,7 +1035,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns list of all available versions.
 	 * @return the versions
 	 * @throws IOException if there is an exception getting the history
@@ -1049,7 +1049,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform neccessary check to ensure this file may be added to version control.
 	 * @throws IOException if any checks fail or other IO error occurs
 	 */
@@ -1079,7 +1079,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/** 
+    # /** 
 	 * Adds this private file to version control.
 	 * @param comment new version comment
 	 * @param keepCheckedOut if true, the file will be initially checked-out
@@ -1201,7 +1201,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Checkout this file for update.  If this file is already 
 	 * private, this method does nothing.
 	 * @param exclusive if true an exclusive checkout will be requested 
@@ -1362,7 +1362,7 @@ public class GhidraFileData {
 		return success;
 	}
 
-	/**
+    # /**
 	 * Verify checkout status and that current user is the checkout user for this file
 	 * @param operationName name of user case (e.g., checkin)
 	 * @throws IOException if server/repository will not permit current user to checkin,
@@ -1388,7 +1388,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Performs check in to associated repository.  File must be checked-out 
 	 * and modified since checkout.
 	 * @param checkinHandler provides user input data to complete checkin process.
@@ -1607,7 +1607,7 @@ public class GhidraFileData {
 		return inUseDomainObj;
 	}
 
-	/**
+    # /**
 	 * Get checkout status associated with a versioned file.
 	 * @return checkout status or null if not checked-out to current associated project.
 	 * @throws IOException if an IO or access error occurs
@@ -1631,7 +1631,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a list of checkouts by all users for the associated versioned file.
 	 * @return list of checkouts
 	 * @throws IOException if an IO or access error occurs
@@ -1648,7 +1648,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Forcefully terminate a checkout for the associated versioned file.
 	 * The user must be the owner of the checkout or have administrator privilege
 	 * on the versioned filesystem (i.e., repository).
@@ -1667,7 +1667,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Undo "checked-out" file.  The original repository file is restored.
 	 * @param keep if true, the private database will be renamed with a .keep
 	 * extension.
@@ -1680,7 +1680,7 @@ public class GhidraFileData {
 		undoCheckout(keep, false, inUseOK);
 	}
 
-	/**
+    # /**
 	 * Undo "checked-out" file.  The original repository file is restored.
 	 * @param keep if true, the private database will be renamed with a .keep
 	 * extension.
@@ -1788,7 +1788,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete the entire database for this file, including any version files.
 	 * @throws FileInUseException if this file is in-use / checked-out.
 	 * @throws UserAccessException if the user does not have permission to delete the file.
@@ -1827,7 +1827,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Deletes a specific version of a file from the versioned filesystem.  
 	 * @param version specific version to be deleted.  The version must either
 	 * be the oldest or latest, or -1 which will attempt to remove all versions.
@@ -1869,7 +1869,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Performs merge from current version of versioned file into local checked-out file. 
 	 * @param okToUpgrade if true an upgrade will be performed if needed
 	 * @param monitor task monitor
@@ -2032,7 +2032,7 @@ public class GhidraFileData {
 
 	}
 
-	/**
+    # /**
 	 * Move this file into the newParent folder.
 	 * @param newParent new parent folder within the same project
 	 * @return the newly relocated domain file (the original DomainFile object becomes invalid since it is immutable)
@@ -2095,7 +2095,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Determine if this file is a link file which corresponds to either a file or folder link.  
 	 * The {@link DomainObject} referenced by a link-file may be opened using 
 	 * {@link #getReadOnlyDomainObject(Object, int, TaskMonitor)}.  The 
@@ -2118,7 +2118,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Get URL associated with a link-file.  The URL returned may reference either a folder
 	 * or a file within another project/repository.
 	 * @return link-file URL or null if not a link-file
@@ -2132,7 +2132,7 @@ public class GhidraFileData {
 		return LinkHandler.getURL(item);
 	}
 
-	/**
+    # /**
 	 * Determine if this file's content type supports linking.
 	 * @return true if linking is supported allowing a link-file to be created which 
 	 * references this file, else false.
@@ -2148,7 +2148,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy this file into the newParent folder as a link file.  Restrictions:
 	 * <ul>
 	 * <li>Specified newParent must reside within a different project since internal linking is
@@ -2172,7 +2172,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy this file into the newParent folder as a private file.
 	 * @param newParent new parent folder
 	 * @param monitor task monitor
@@ -2227,7 +2227,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy a specific version of this file to the specified destFolder.
 	 * @param version version to copy
 	 * @param destFolder destination parent folder
@@ -2274,7 +2274,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy this file to make a private file if it is versioned. This method should be called
 	 * only when a non shared project is being converted to a shared project.
 	 * @param monitor task monitor
@@ -2310,7 +2310,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Pack domain file into specified file.
 	 * Specified file will be overwritten if it already exists.
 	 * @param file destination file
@@ -2325,7 +2325,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the length of this domain file.  This size is the minimum disk space
 	 * used for storing this file, but does not account for additional storage space
 	 * used to track changes, etc. 
@@ -2344,7 +2344,7 @@ public class GhidraFileData {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns an ordered map containing the metadata that has been associated with the 
 	 * corresponding domain object. The map contains key,value pairs and are ordered by their 
 	 * insertion order. 
@@ -2356,7 +2356,7 @@ public class GhidraFileData {
 		return getMetadata(item);
 	}
 
-	/**
+    # /**
 	 * Returns an ordered map containing the metadata stored within a specific {@link FolderItem}
 	 * database. The map contains key,value pairs and are ordered by their insertion order. 
 	 * @param item folder item whose metadata should be read

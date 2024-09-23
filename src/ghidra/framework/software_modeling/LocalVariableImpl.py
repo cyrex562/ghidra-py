@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.listing;
 
 import ghidra.program.model.address.Address;
@@ -26,7 +26,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 
 	private int firstUseOffset;
 
-	/**
+    # /**
 	 * Construct a stack variable at the specified stack offset with a first-use offset of 0.
 	 * @param name variable name or null for default naming
 	 * @param dataType a fixed-length datatype.  (NOTE: Should be cloned to program datatype manager
@@ -42,7 +42,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 		this(name, 0, dataType, null, null, stackOffset, null, false, program, null);
 	}
 
-	/**
+    # /**
 	 * Construct a stack variable at the specified stack offset with a first-use offset of 0.
 	 * @param name variable name
 	 * @param dataType a fixed-length datatype.  (NOTE: Should be cloned to program datatype manager
@@ -59,7 +59,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 		this(name, 0, dataType, null, null, stackOffset, null, false, program, sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a register variable with the specified register storage.
 	 * @param name variable name or null for default naming
 	 * @param firstUseOffset first use function-relative offset (i.e., start of scope).
@@ -75,7 +75,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 		this(name, firstUseOffset, dataType, null, null, null, register, false, program, null);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with one or more associated storage elements.  Storage elements
 	 * may get slightly modified to adjust for the resolved datatype size.
 	 * @param name variable name
@@ -94,7 +94,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 			sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with a single storage element at the specified address.  If address 
 	 * is contained within a register it may get realigned to the register based upon the resolved 
 	 * datatype length.  Variable storage will be aligned to the least-significant portion of the 
@@ -113,7 +113,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 		this(name, firstUseOffset, dataType, null, storageAddr, null, null, false, program, null);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with a single storage element at the specified address.  If address 
 	 * is contained within a register it may get realigned to the register based upon the resolved 
 	 * datatype length.  Variable storage will be aligned to the least-significant portion of the 
@@ -135,7 +135,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 			sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with one or more associated storage elements.  Storage elements
 	 * may get slightly modified to adjust for the resolved datatype size.
 	 * @param name variable name or null for default naming
@@ -152,7 +152,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 		this(name, firstUseOffset, dataType, storage, null, null, null, false, program, null);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with one or more associated storage elements.  Storage elements
 	 * may get slightly modified to adjust for the resolved datatype size.
 	 * @param name variable name or null for default naming
@@ -170,7 +170,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 		this(name, firstUseOffset, dataType, storage, null, null, null, force, program, null);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with one or more associated storage elements.  Storage elements
 	 * may get slightly modified to adjust for the resolved datatype size.
 	 * @param name variable name
@@ -190,7 +190,7 @@ public class LocalVariableImpl extends VariableImpl implements LocalVariable {
 		this(name, firstUseOffset, dataType, storage, null, null, null, force, program, sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a local variable.  Only one storage/location may be specified (storage, storageAddr,
 	 * stackOffset, register) - all others should be null.  If no storage/location is specified
 	 * or is UNASSIGNED, a Void data type may be specified and will be assumed if this type returns

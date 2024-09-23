@@ -38,7 +38,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class ImpliedMatchUtils {
 
-	/**
+    # /**
 	 * Called when a {@link VTAssociation} is accepted.  This method will create implied matches in
 	 * the current session based on the association.
 	 * @param sourceFunction The matched function from the source program
@@ -75,7 +75,7 @@ public class ImpliedMatchUtils {
 
 	}
 
-	/**
+    # /**
 	 * Called when a {@link VTAssociation} is cleared.  This method will create implied matches in
 	 * the current session based on the association.
 	 * @param sourceFunction The matched function from the source program
@@ -121,7 +121,7 @@ public class ImpliedMatchUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Method for finding version tracking implied matches given an accepted matched
 	 * function. Each referenced data and function that exist in equivalent sections
 	 * of the matched source and destination functions will be returned in the given set.
@@ -263,7 +263,7 @@ public class ImpliedMatchUtils {
 		return matchInfo;
 	}
 
-	/**
+    # /**
 	 * This method checks to see if the given reference is a thunk function and if so returns
 	 * the address of the thunked function instead of thunk function
 	 * @param program the program
@@ -286,7 +286,7 @@ public class ImpliedMatchUtils {
 		return refToAddress;
 	}
 
-	/**
+    # /**
 	 * Updates the length values for the source and destination functions or data in the
 	 * VTMatchInfo object
 	 */
@@ -334,7 +334,7 @@ public class ImpliedMatchUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns an existing match that best correlates to the implied match; returns null if no
 	 * existing match can be found.
 	 *
@@ -358,7 +358,7 @@ public class ImpliedMatchUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Given matches in an association, return the pair with the best similarity score
 	 */
 	private static VTMatch getBestMatch(VTAssociation association, VTSession session) {
@@ -381,7 +381,7 @@ public class ImpliedMatchUtils {
 		return bestMatch;
 	}
 
-	/**
+    # /**
 	 * Returns the source function given a version tracking session and association pair
 	 *
 	 * @param session The Version Tracking session
@@ -395,7 +395,7 @@ public class ImpliedMatchUtils {
 		return functionManager.getFunctionAt(sourceAddress);
 	}
 
-	/**
+    # /**
 	 * Returns the destination function given a version tracking session and association pair
 	 *
 	 * @param session The Version Tracking session

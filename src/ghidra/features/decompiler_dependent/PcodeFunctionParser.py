@@ -43,7 +43,7 @@ public class PcodeFunctionParser {
 		this.program = program;
 	}
 
-	/**
+    # /**
 	 * Takes pcode ops of a function and parses them to determine whether there are
 	 * any calls to variadic functions that use format Strings.
 	 * 
@@ -158,7 +158,7 @@ public class PcodeFunctionParser {
 		return this.program.getAddressFactory().getAddress(addressString);
 	}
 
-	/**
+    # /**
 	 * Looks at bytes at given address and converts to format String
 	 * 
 	 * @param address Address of format String

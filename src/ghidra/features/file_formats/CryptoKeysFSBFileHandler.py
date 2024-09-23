@@ -15,7 +15,7 @@
  */
 package ghidra.file.crypto;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.action.DockingAction;
@@ -54,7 +54,7 @@ public class CryptoKeysFSBFileHandler implements FSBFileHandler {
 						.build());
 	}
 
-	/**
+    # /**
 	 * Creates a crypto key file template based on the specified files under the GTree node.
 	 *
 	 * @param fsrl FSRL of a child file of the container that the crypto will be associated with

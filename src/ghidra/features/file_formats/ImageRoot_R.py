@@ -23,9 +23,9 @@ public enum ImageRoot_R {
 
 	//Aliases
 
-	/** The class loader used to build the app image.*/
+    # /** The class loader used to build the app image.*/
 	public final static ImageRoot_R kAppImageClassLoader = kSpecialRoots;
 
-	/** Array of boot image objects that must be kept live. */
+    # /** Array of boot image objects that must be kept live. */
 	public final static ImageRoot_R kBootImageLiveObjects = kSpecialRoots;
 }

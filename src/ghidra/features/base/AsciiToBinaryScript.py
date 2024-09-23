@@ -18,7 +18,7 @@
 
 import ghidra.app.script.GhidraScript;
 
-import java.io.*;
+
 
 public class AsciiToBinaryScript extends GhidraScript {
 

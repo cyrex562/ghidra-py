@@ -26,31 +26,31 @@ public abstract class OatDexFile implements StructConverter {
 
 	public static final String PREFIX = OatDexFile.class.getSimpleName();
 
-	/**
+    # /**
 	 * Returns the path string (not null terminated).
 	 * @return the path string (not null terminated)
 	 */
 	abstract public String getDexFileLocation();
 
-	/**
+    # /**
 	 * Returns the checksum of the embedded dex files.
 	 * @return the checksum of the embedded dex files
 	 */
 	abstract public int getDexFileChecksum();
 
-	/**
+    # /**
 	 * Returns the offset to the dex files, relative to the OATDATA symbol.
 	 * @return the offset to the dex files
 	 */
 	abstract public int getDexFileOffset();
 
-	/**
+    # /**
 	 * Returns the embedded DEX header.
 	 * @return the embedded DEX header
 	 */
 	abstract public DexHeader getDexHeader();
 
-	/**
+    # /**
 	 * Annotates the listing with data structures related to this object.
 	 * @param oatHeader the OAT header to markup
 	 * @param program the program to create markup
@@ -61,7 +61,7 @@ public abstract class OatDexFile implements StructConverter {
 	abstract public void markup(OatHeader oatHeader, Program program, TaskMonitor monitor,
 			MessageLog log) throws Exception;
 
-	/**
+    # /**
 	 * Is the DEX header stored in an external file (e.g. VDEX files).
 	 * @return true if the DEX header is stored externally
 	 */

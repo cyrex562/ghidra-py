@@ -27,7 +27,7 @@ public class FunctionPair {
 	private double simResult;			// Similarity of the pair (0.0 to 1.0)
 	private double confResult;			// Confidence score of the pair
 
-	/**
+    # /**
 	 * Constructor
 	 * @param source the source function
 	 * @param dest the destination function
@@ -81,7 +81,7 @@ public class FunctionPair {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Compute the formal Version Tracking match record corresponding to this pair
 	 * @param matchSet is the match set the record should be added to
 	 * @return the match record
@@ -103,28 +103,28 @@ public class FunctionPair {
 		return sourceNode.toString() + "," + destNode.toString();
 	}
 
-	/**
+    # /**
 	 * @return info about the source function
 	 */
 	public FunctionNode getSourceNode() {
 		return sourceNode;
 	}
 
-	/**
+    # /**
 	 * @return info about the destination function
 	 */
 	public FunctionNode getDestNode() {
 		return destNode;
 	}
 
-	/**
+    # /**
 	 * @return the similarity score of the pair
 	 */
 	public double getSimResult() {
 		return simResult;
 	}
 
-	/**
+    # /**
 	 * @return the confidence score of the pair
 	 */
 	public double getConfResult() {

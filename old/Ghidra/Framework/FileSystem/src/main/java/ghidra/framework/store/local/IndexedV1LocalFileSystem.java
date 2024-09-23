@@ -15,7 +15,7 @@
  */
 package ghidra.framework.store.local;
 
-import java.io.*;
+
 import java.util.HashMap;
 
 import ghidra.framework.store.FolderItem;

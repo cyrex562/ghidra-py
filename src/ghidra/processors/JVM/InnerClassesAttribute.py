@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -61,7 +61,7 @@ public class InnerClassesAttribute extends AbstractAttributeInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * The value of the number_of_classes item indicates the number of entries in
 	 * the classes array.
 	 * @return the number of entries in the classes array
@@ -70,7 +70,7 @@ public class InnerClassesAttribute extends AbstractAttributeInfo {
 		return numberOfInnerClasses & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Returns array of inner classes.
 	 * @return array of inner classes.
 	 */

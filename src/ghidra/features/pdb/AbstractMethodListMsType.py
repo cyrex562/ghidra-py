@@ -30,7 +30,7 @@ public abstract class AbstractMethodListMsType extends AbstractMsType {
 
 	protected List<AbstractMethodRecordMs> methodRecords = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -44,7 +44,7 @@ public abstract class AbstractMethodListMsType extends AbstractMsType {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the size of the list of methods.
 	 * @return Size of the methods.
 	 */
@@ -52,7 +52,7 @@ public abstract class AbstractMethodListMsType extends AbstractMsType {
 		return methodRecords.size();
 	}
 
-	/**
+    # /**
 	 * Return list of {@link AbstractMethodRecordMs}
 	 * @return list of method records.
 	 */
@@ -71,7 +71,7 @@ public abstract class AbstractMethodListMsType extends AbstractMsType {
 		builder.append("}");
 	}
 
-	/**
+    # /**
 	 * Method to parse one record.
 	 * @param pdbIn {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

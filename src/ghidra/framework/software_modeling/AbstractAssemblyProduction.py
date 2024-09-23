@@ -30,7 +30,7 @@ public abstract class AbstractAssemblyProduction<NT extends AssemblyNonTerminal>
 
 	int idx = -1;
 
-	/**
+    # /**
 	 * Construct a production with the given LHS and RHS
 	 * 
 	 * @param lhs the left-hand side
@@ -42,7 +42,7 @@ public abstract class AbstractAssemblyProduction<NT extends AssemblyNonTerminal>
 		this.rhs = rhs;
 	}
 
-	/**
+    # /**
 	 * Get the index of the production
 	 * 
 	 * <p>
@@ -55,7 +55,7 @@ public abstract class AbstractAssemblyProduction<NT extends AssemblyNonTerminal>
 		return idx;
 	}
 
-	/**
+    # /**
 	 * Get the left-hand side
 	 * 
 	 * @return the LHS
@@ -64,7 +64,7 @@ public abstract class AbstractAssemblyProduction<NT extends AssemblyNonTerminal>
 		return lhs;
 	}
 
-	/**
+    # /**
 	 * Get the right-hand side
 	 * 
 	 * @return the RHS
@@ -117,7 +117,7 @@ public abstract class AbstractAssemblyProduction<NT extends AssemblyNonTerminal>
 		return result;
 	}
 
-	/**
+    # /**
 	 * Get the "name" of this production
 	 * 
 	 * <p>

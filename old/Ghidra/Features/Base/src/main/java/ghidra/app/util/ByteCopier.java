@@ -16,7 +16,7 @@
 package ghidra.app.util;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

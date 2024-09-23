@@ -35,7 +35,7 @@ public enum PdbKind {
 		camelName = toCamel(name());
 	}
 
-	/**
+    # /**
 	 * Get the name in camel form
 	 * @return name in camel form
 	 */
@@ -43,7 +43,7 @@ public enum PdbKind {
 		return camelName;
 	}
 
-	/**
+    # /**
 	 * Converts a string to (upper) camel case by converting all letters to lower case except the
 	 * first letter of the string and any letter following an underscore; these are converted to
 	 * upper case.  All underscores are removed from the final string.
@@ -70,7 +70,7 @@ public enum PdbKind {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Parse case-insensitive kind string and return corresponding PdbKind.
 	 * It is expected that kind strings will be camel notation (e.g., OBJECT_POINTER
 	 * kind string would be ObjectPointer).

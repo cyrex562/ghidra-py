@@ -63,7 +63,7 @@ public class DemoSyscallLibrary extends AnnotatedEmuSyscallUseropLibrary<byte[]>
 
 	// Implement all the required plumbing first:
 
-	/**
+    # /**
 	 * An exception type for "user errors." These errors should be communicated back to the target
 	 * program rather than causing the emulator to interrupt. This is a bare minimum implementation.
 	 * In practice more information should be communicated internally, in case things go further
@@ -81,7 +81,7 @@ public class DemoSyscallLibrary extends AnnotatedEmuSyscallUseropLibrary<byte[]>
 	private final Register regRAX;
 	private final GhidraScript script;
 
-	/**
+    # /**
 	 * Because the system call numbering is derived from the "syscall" overlay on OTHER space, a
 	 * program is required. Use the system call analyzer on your program to populate this space. The
 	 * program and its compiler spec are also used to derive (what it can of) the system call ABI.
@@ -102,7 +102,7 @@ public class DemoSyscallLibrary extends AnnotatedEmuSyscallUseropLibrary<byte[]>
 		}
 	}
 
-	/**
+    # /**
 	 * {@inheritDoc}
 	 * 
 	 * The dispatcher doesn't know where the system call number is stored. It relies on this method
@@ -115,7 +115,7 @@ public class DemoSyscallLibrary extends AnnotatedEmuSyscallUseropLibrary<byte[]>
 			machine.getLanguage().isBigEndian());
 	}
 
-	/**
+    # /**
 	 * If the error is a user error, put the errno into the machine as expected by the target
 	 * program. Here we negate the errno and put it into RAX. If it's not a user error, we return
 	 * false letting the dispatcher know it should interrupt the emulator.
@@ -131,7 +131,7 @@ public class DemoSyscallLibrary extends AnnotatedEmuSyscallUseropLibrary<byte[]>
 		return false;
 	}
 
-	/**
+    # /**
 	 * Support for Structured Sleigh is built-in. To enable it, override this method and instantiate
 	 * the appropriate (usually nested) class.
 	 */
@@ -150,7 +150,7 @@ public class DemoSyscallLibrary extends AnnotatedEmuSyscallUseropLibrary<byte[]>
 
 	// First, a Java callback example
 
-	/**
+    # /**
 	 * Write a buffer of utf-8 characters to the console
 	 * 
 	 * <p>
@@ -170,7 +170,7 @@ public class DemoSyscallLibrary extends AnnotatedEmuSyscallUseropLibrary<byte[]>
 	@EmuSyscall("write")
 	public void demo_write(@OpExecutor PcodeExecutor<byte[]> executor, byte[] str, byte[] end) {
 		AddressSpace space = machine.getLanguage().getDefaultSpace();
-		/**
+	    # /**
 		 * Because we have concrete {@code byte[]}, we could use Utils.bytesToLong, but for
 		 * demonstration, here's how it can be done if we extended
 		 * {@link AnnotatedEmuSyscallUseropLibrary}{@code <T>} instead. If the value cannot be made
@@ -189,21 +189,21 @@ public class DemoSyscallLibrary extends AnnotatedEmuSyscallUseropLibrary<byte[]>
 
 	// Second, a Structured Sleigh example
 
-	/**
+    # /**
 	 * The nested class for syscalls implemented using Structured Sleigh. Note that no matter the
 	 * implementation type, the Java method is annotated with {@link EmuSyscall}. We declare the
 	 * class public so that the annotation processor can access the methods. Alternatively, we could
 	 * override {@link #getMethodLookup()} to provide the processor private access.
 	 */
 	public class DemoStructuredPart extends StructuredPart {
-		/**
+	    # /**
 		 * This creates a handle to the "demo_write" p-code userop for use in Structured Sleigh.
 		 * Otherwise, there's no way to refer to the userop. Think of it like a "forward" or
 		 * "external" declaration.
 		 */
 		UseropDecl write = userop(type("void"), "demo_write", types("char *", "char *"));
 
-		/**
+	    # /**
 		 * Write a C-style string to the console
 		 * 
 		 * @param str the null-terminated utf-8 string

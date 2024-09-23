@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.gui.interpreters;
 
-import java.io.*;
+
 import java.lang.invoke.MethodHandles;
 import java.util.Collections;
 import java.util.List;

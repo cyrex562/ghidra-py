@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.string;
 
-import java.io.*;
+
 import java.util.*;
 
 public class StringModel {

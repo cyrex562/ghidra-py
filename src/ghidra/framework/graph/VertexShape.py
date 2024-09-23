@@ -47,7 +47,7 @@ public abstract class VertexShape {
 		registeredShapes.put(name, this);
 	}
 
-	/**
+    # /**
 	 * Returns the name of the shape
 	 * @return the name of the shape
 	 */
@@ -55,7 +55,7 @@ public abstract class VertexShape {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Shape} for this {@link VertexShape} instance
 	 * @return the {@link Shape} for this {@link VertexShape} instance
 	 */
@@ -74,7 +74,7 @@ public abstract class VertexShape {
 		return transform.createTransformedShape(shape);
 	}
 
-	/**
+    # /**
 	 * Gets the relative amount of margin space to allocate above the label. The default is
 	 * 0.5 which will center the label in the associated shape. A value closer to 0 will move
 	 * the label closer to the top and a value closer to 1 will move the label closer to the 
@@ -85,7 +85,7 @@ public abstract class VertexShape {
 		return .5;
 	}
 
-	/**
+    # /**
 	 * Returns the size factor for a shape relative to its label. Shapes are sized based on the
 	 * label of a vertex so that the label can fit inside the shape (mostly). Some subclasses
 	 * will need to override this value to some value &gt; 1 to fit the label in the shape. For 
@@ -98,7 +98,7 @@ public abstract class VertexShape {
 		return 1.0;
 	}
 
-	/**
+    # /**
 	 * This is a factor to keep some shapes from being so distorted by very long labels that they
 	 * effectively lose their shape when seen by the user
 	 * @return the max width to height ratio
@@ -109,7 +109,7 @@ public abstract class VertexShape {
 
 	protected abstract Shape createShape();
 
-	/**
+    # /**
 	 * Returns the {@link VertexShape} for the given shape name
 	 * @param shapeName the name of the shape for which to get the {@link VertexShape}
 	 * @return the {@link VertexShape} for the given shape name
@@ -118,7 +118,7 @@ public abstract class VertexShape {
 		return registeredShapes.get(shapeName);
 	}
 
-	/**
+    # /**
 	 * Returns a list of names for all the supported {@link VertexShape}s
 	 * @return a list of names for all the supported {@link VertexShape}s
 	 */

@@ -15,7 +15,7 @@
  */
 package utility.application;
 
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -30,22 +30,22 @@ import utilities.util.FileUtilities;
  */
 public class ApplicationUtilities {
 
-	/**
+    # /**
 	 * Name of system property used to override the location of the user temporary directory
 	 */
 	public static final String PROPERTY_TEMP_DIR = "application.tempdir";
 
-	/**
+    # /**
 	 * Name of system property used to override the location of the user cache directory
 	 */
 	public static final String PROPERTY_CACHE_DIR = "application.cachedir";
 
-	/**
+    # /**
 	 * Name of system property used to override the location of the user settings directory
 	 */
 	public static final String PROPERTY_SETTINGS_DIR = "application.settingsdir";
 
-	/**
+    # /**
 	 * Searches for default application root directories.
 	 * 
 	 * @return A collection of discovered application root directories (could be empty).
@@ -63,7 +63,7 @@ public class ApplicationUtilities {
 		return applicationRootDirs;
 	}
 
-	/**
+    # /**
 	 * Finds the primary application root directory from the classpath.  The primary application
 	 * root directory must contain an application.properties file.  No other application root
 	 * directories may contain an application.properties file.
@@ -91,7 +91,7 @@ public class ApplicationUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Checks to make sure the given application properties file exists and is a valid format
 	 * 
 	 * @param applicationPropertiesFile The application properties file to validate
@@ -116,7 +116,7 @@ public class ApplicationUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Finds all application root directories defined in the repository config file.
 	 * 
 	 * @param primaryApplicationRootDir The primary application root directory that may contain the
@@ -152,7 +152,7 @@ public class ApplicationUtilities {
 		return repoApplicationRootDirs;
 	}
 
-	/**
+    # /**
 	 * Gets the application's default user temp directory.
 	 * <p>
 	 * NOTE: This method creates the directory if it does not exist.
@@ -180,7 +180,7 @@ public class ApplicationUtilities {
 		return createDir(new File(getJavaTmpDir(), getUserSpecificDirName(javaTmpDir, appName)));
 	}
 
-	/**
+    # /**
 	 * Gets the application's default user cache directory.
 	 * <p>
 	 * NOTE: This method creates the directory if it does not exist.
@@ -230,7 +230,7 @@ public class ApplicationUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the application's default user settings directory.
 	 * <p>
 	 * NOTE: This method creates the directory if it does not exist.
@@ -282,7 +282,7 @@ public class ApplicationUtilities {
 		});
 	}
 
-	/**
+    # /**
 	 * Gets the application's legacy (pre-Ghida 11.1) user settings directory.
 	 * <p>
 	 * NOTE: This method does not create the directory.
@@ -314,7 +314,7 @@ public class ApplicationUtilities {
 		return new File(userSettingsParentDir, userSettingsDirName);
 	}
 
-	/**
+    # /**
 	 * Normalizes the application name by removing spaces and converting to lower case
 	 * 
 	 * @param applicationName The application name
@@ -324,7 +324,7 @@ public class ApplicationUtilities {
 		return applicationName.replaceAll("\\s", "").toLowerCase();
 	}
 
-	/**
+    # /**
 	 * Gets Java's temporary directory in absolute form
 	 * 
 	 * @return Java's temporary directory in absolute form
@@ -335,7 +335,7 @@ public class ApplicationUtilities {
 		return getSystemPropertyFile("java.io.tmpdir", true);
 	}
 
-	/**
+    # /**
 	 * Gets Java's user home directory in absolute form
 	 * 
 	 * @return Java's user home directory in absolute form
@@ -346,7 +346,7 @@ public class ApplicationUtilities {
 		return getSystemPropertyFile("user.home", true);
 	}
 
-	/**
+    # /**
 	 * Gets the absolute form {@link File} value of the system property by the given name
 	 * 
 	 * @param name The system property name
@@ -375,7 +375,7 @@ public class ApplicationUtilities {
 		return file;
 	}
 
-	/**
+    # /**
 	 * Gets the absolute form {@link File} value of the environment variable by the given name
 	 * 
 	 * @param name The environment variable name
@@ -405,7 +405,7 @@ public class ApplicationUtilities {
 		return file;
 	}
 
-	/**
+    # /**
 	 * Gets a directory name that can be used to create a user-specific sub-directory in 
 	 * {@code parentDir}. If the {@code parentDir} is contained within the user's home directory, 
 	 * the given {@code appName} can simply be used since it will live in a user-specific location. 
@@ -428,7 +428,7 @@ public class ApplicationUtilities {
 		return userSpecificDirName;
 	}
 
-	/**
+    # /**
 	 * Creates the given {@link File directory} if it does not exist, and sets its permissions to
 	 * owner-only
 	 * 

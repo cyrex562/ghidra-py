@@ -1,40 +1,40 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.AddressSpace;
 
 # /**
- * An interface for writing structured data to a stream
- *
- * The resulting encoded data is structured similarly to an XML document. The document contains a nested set
- * of \elements, with labels corresponding to the ElementId class. A single element can hold
- * zero or more attributes and zero or more child elements.  An attribute holds a primitive
- * data element (boolean, long, String) and is labeled by an AttributeId. The document is written
- * using a sequence of openElement() and closeElement() calls, intermixed with write*() calls to encode
- * the data primitives.  All primitives written using a write*() call are associated with current open element,
- * and all write*() calls for one element must come before opening any child element.
- * The traditional XML element text content can be written using the special ATTRIB_CONTENT AttributeId, which
- * must be the last write*() call associated with the specific element.
- */
+# * An interface for writing structured data to a stream
+# *
+# * The resulting encoded data is structured similarly to an XML document. The document contains a nested set
+# * of \elements, with labels corresponding to the ElementId class. A single element can hold
+# * zero or more attributes and zero or more child elements.  An attribute holds a primitive
+# * data element (boolean, long, String) and is labeled by an AttributeId. The document is written
+# * using a sequence of openElement() and closeElement() calls, intermixed with write*() calls to encode
+# * the data primitives.  All primitives written using a write*() call are associated with current open element,
+# * and all write*() calls for one element must come before opening any child element.
+# * The traditional XML element text content can be written using the special ATTRIB_CONTENT AttributeId, which
+# * must be the last write*() call associated with the specific element.
+# */
 public interface Encoder {
 
-	/**
+    # /**
 	 * Begin a new element in the encoding
 	 * The element will have the given ElementId annotation and becomes the \e current element.
 	 * @param elemId is the given ElementId annotation
@@ -42,7 +42,7 @@ public interface Encoder {
 	 */
 	void openElement(ElementId elemId) throws IOException;
 
-	/**
+    # /**
 	 * End the current element in the encoding
 	 * The current element must match the given annotation or an exception is thrown.
 	 * @param elemId is the given (expected) annotation for the current element
@@ -50,7 +50,7 @@ public interface Encoder {
 	 */
 	void closeElement(ElementId elemId) throws IOException;
 
-	/**
+    # /**
 	 * Write an annotated boolean value into the encoding
 	 * The boolean data is associated with the given AttributeId annotation and the current open element.
 	 * @param attribId is the given AttributeId annotation
@@ -59,7 +59,7 @@ public interface Encoder {
 	 */
 	void writeBool(AttributeId attribId, boolean val) throws IOException;
 
-	/**
+    # /**
 	 * Write an annotated signed integer value into the encoding
 	 * The integer is associated with the given AttributeId annotation and the current open element.
 	 * @param attribId is the given AttributeId annotation
@@ -68,7 +68,7 @@ public interface Encoder {
 	 */
 	void writeSignedInteger(AttributeId attribId, long val) throws IOException;
 
-	/**
+    # /**
 	 * Write an annotated unsigned integer value into the encoding
 	 * The integer is associated with the given AttributeId annotation and the current open element.
 	 * @param attribId is the given AttributeId annotation
@@ -77,7 +77,7 @@ public interface Encoder {
 	 */
 	void writeUnsignedInteger(AttributeId attribId, long val) throws IOException;
 
-	/**
+    # /**
 	 * Write an annotated string into the encoding
 	 * The string is associated with the given AttributeId annotation and the current open element.
 	 * @param attribId is the given AttributeId annotation
@@ -86,7 +86,7 @@ public interface Encoder {
 	 */
 	void writeString(AttributeId attribId, String val) throws IOException;
 
-	/**
+    # /**
 	 * Write an annotated string, using an indexed attribute, into the encoding.
 	 * Multiple attributes with a shared name can be written to the same element by calling this
 	 * method multiple times with a different index value. The encoding will use attribute ids up
@@ -99,7 +99,7 @@ public interface Encoder {
 	 */
 	void writeStringIndexed(AttributeId attribId, int index, String val) throws IOException;
 
-	/**
+    # /**
 	 * Write an address space reference into the encoding
 	 * The address space is associated with the given AttributeId annotation and the current open element.
 	 * @param attribId is the given AttributeId annotation
@@ -108,7 +108,7 @@ public interface Encoder {
 	 */
 	void writeSpace(AttributeId attribId, AddressSpace spc) throws IOException;
 
-	/**
+    # /**
 	 * Write an address space reference into the encoding.
 	 * An address space identified by its name and unique index is associated with the given
 	 * annotation and the current open element.
@@ -119,7 +119,7 @@ public interface Encoder {
 	 */
 	void writeSpace(AttributeId attribId, int index, String name) throws IOException;
 
-	/**
+    # /**
 	 * Write a p-code operation opcode into the encoding, associating it with the given
 	 * annotation. The opcode is specified based on the constants defined in {@link PcodeOp}.
 	 * @param attribId is the given annotation

@@ -17,7 +17,7 @@ package ghidra.file.formats.tar;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
@@ -42,7 +42,7 @@ public class TarFileSystem extends AbstractFileSystem<TarMetadata> {
 	private ByteProvider provider;
 	private int fileCount;
 
-	/**
+    # /**
 	 * Creates a new TarFileSystem instance.
 	 *
 	 * @param fsrl {@link FSRLRoot} of the new filesystem.

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb;
 
-import java.io.*;
+
 
 import ghidra.util.Msg;
 

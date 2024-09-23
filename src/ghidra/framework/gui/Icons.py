@@ -69,10 +69,10 @@ public class Icons {
 	public static final Icon UP_ICON = new GIcon("icon.up");
 	public static final Icon DOWN_ICON = new GIcon("icon.down");
 
-	/** An version of the LEFT_ICON with a different color */
+    # /** An version of the LEFT_ICON with a different color */
 	public static final Icon LEFT_ALTERNATE_ICON = new GIcon("icon.left.alt");
 
-	/** An version of the RIGHT_ICON with a different color */
+    # /** An version of the RIGHT_ICON with a different color */
 	public static final Icon RIGHT_ALTERNATE_ICON = new GIcon("icon.right.alt");
 
 	public static final Icon SAVE_ICON = new GIcon("icon.save");
@@ -83,7 +83,7 @@ public class Icons {
 	public static final Icon ARROW_DOWN_RIGHT_ICON = new GIcon("icon.arrow.down.right");
 	public static final Icon ARROW_UP_LEFT_ICON = new GIcon("icon.arrow.up.left");
 
-	/**
+    # /**
 	 * Returns true if the given string is a Java code snippet that references this class
 	 * 
 	 * @param snippet the string to check
@@ -93,7 +93,7 @@ public class Icons {
 		return snippet.startsWith(Icons.class.getSimpleName());
 	}
 
-	/**
+    # /**
 	 * Returns an {@link IconProvider} for the given string value, which is usually the 'src' 
 	 * attribute of an IMG tag 
 	 * 
@@ -116,7 +116,7 @@ public class Icons {
 		return new IconProvider(icon, url);
 	}
 
-	/**
+    # /**
 	 * Gets the icon for the given icon path. The given path should be relative to the classpath.
 	 * If an icon by that name can't be found, the default "bomb" icon is returned instead.
 	 * <P>
@@ -131,7 +131,7 @@ public class Icons {
 		return ResourceManager.loadImage(iconPath);
 	}
 
-	/**
+    # /**
 	 * Gets the icon for the given icon path and scale it to the specified width and height.
 	 * The given path should be relative to the classpath.
 	 * If an icon by that name can't be found, the default "bomb" icon is returned instead.

@@ -124,7 +124,7 @@ public class RISCVAddressAnalyzer extends ConstantPropagationAnalyzer {
 		return resultSet;
 	}
 
-	/**
+    # /**
 	 * Check for a global GP register symbol or discovered symbol
 	 * @param program
 	 * @param set

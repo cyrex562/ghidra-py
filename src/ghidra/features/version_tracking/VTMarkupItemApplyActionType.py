@@ -24,19 +24,19 @@ public enum VTMarkupItemApplyActionType {
 
 	ADD_AS_PRIMARY(ADDED),
 
-	/** Only replace the destination value when it is a default value */
+    # /** Only replace the destination value when it is a default value */
 	REPLACE_DEFAULT_ONLY(REPLACED),
 
-	/** Always replaces the destination value */
+    # /** Always replaces the destination value */
 	REPLACE(REPLACED),
 
-	/** Replaces the destination value only if it won't overwrite other defined data beyond the first */
+    # /** Replaces the destination value only if it won't overwrite other defined data beyond the first */
 	REPLACE_FIRST_ONLY(REPLACED);
 
-//	/** Only replace the destination value when the number of parameters is the same as in the source */
+//    # /** Only replace the destination value when the number of parameters is the same as in the source */
 //	WHEN_SAME_PARAMETER_COUNT(REPLACED),
 //
-//	/** Replace the destination value whenever the function signature is replaced */
+//    # /** Replace the destination value whenever the function signature is replaced */
 //	WHEN_TAKING_SIGNATURE(REPLACED);
 
 	private final VTMarkupItemStatus status;

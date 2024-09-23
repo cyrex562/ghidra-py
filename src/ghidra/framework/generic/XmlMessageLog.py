@@ -25,14 +25,14 @@ import ghidra.app.util.importer.MessageLog;
 public class XmlMessageLog extends MessageLog {
 	private XmlPullParser parser;
 
-	/**
+    # /**
 	 * Constructs a new XML message log.
 	 */
 	public XmlMessageLog() {
 		super();
 	}
 
-	/**
+    # /**
 	 * Sets the XML parser.
 	 * 
 	 * @param parser
@@ -42,7 +42,7 @@ public class XmlMessageLog extends MessageLog {
 		this.parser = parser;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.app.util.importer.MessageLog#appendMsg(java.lang.String)
 	 */
 	@Override

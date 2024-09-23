@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.viewer.field;
 
-import java.io.*;
+
 import java.util.*;
 
 import docking.widgets.fieldpanel.field.AttributedString;

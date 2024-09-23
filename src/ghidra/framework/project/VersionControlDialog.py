@@ -50,7 +50,7 @@ public class VersionControlDialog extends DialogComponentProvider {
 	private int actionID;
 	private boolean addToVersionControl; // true if the dialog is for adding
 
-	/**
+    # /**
 	 * Constructor
 	 * @param addToVersionControl true for adding; false for check-in
 	 */
@@ -87,7 +87,7 @@ public class VersionControlDialog extends DialogComponentProvider {
 		close();
 	}
 
-	/**
+    # /**
 	 * Show the dialog; return an ID for the action that the user chose.
 	 * @param tool the tool
 	 * @param parent parent to this dialog
@@ -117,7 +117,7 @@ public class VersionControlDialog extends DialogComponentProvider {
 		return keepFileCB.isSelected();
 	}
 
-	/**
+    # /**
 	 * Return the comments for the add to version control.
 	 * @return may be the empty string
 	 */
@@ -181,7 +181,7 @@ public class VersionControlDialog extends DialogComponentProvider {
 		return mainPanel;
 	}
 
-	/**
+    # /**
 	 * Set the name of the current file being added to version control or being updated.
 	 * @param filename the name of the file currently to be added, whose comment we need.
 	 */

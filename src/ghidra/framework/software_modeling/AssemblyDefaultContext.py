@@ -40,7 +40,7 @@ public class AssemblyDefaultContext implements DisassemblerContext, DefaultProgr
 
 	protected final static DbgTimer dbg = DbgTimer.INACTIVE;
 
-	/**
+    # /**
 	 * Compute the default context at most addresses for the given language
 	 * 
 	 * @param lang the language
@@ -49,7 +49,7 @@ public class AssemblyDefaultContext implements DisassemblerContext, DefaultProgr
 		this(lang, null);
 	}
 
-	/**
+    # /**
 	 * Compute the default context at the given address for the given language
 	 * 
 	 * @param lang the language
@@ -72,7 +72,7 @@ public class AssemblyDefaultContext implements DisassemblerContext, DefaultProgr
 		lang.applyContextSettings(this);
 	}
 
-	/**
+    # /**
 	 * Set the value of the pseudo context register
 	 * 
 	 * <p>
@@ -89,7 +89,7 @@ public class AssemblyDefaultContext implements DisassemblerContext, DefaultProgr
 		curctx = curctx.combine(ctx);
 	}
 
-	/**
+    # /**
 	 * Get the default value of the context register
 	 * 
 	 * @return the value as a pattern block for assembly
@@ -98,7 +98,7 @@ public class AssemblyDefaultContext implements DisassemblerContext, DefaultProgr
 		return defctx;
 	}
 
-	/**
+    # /**
 	 * Compute the default value of the context register at the given address
 	 * 
 	 * @param addr the addres

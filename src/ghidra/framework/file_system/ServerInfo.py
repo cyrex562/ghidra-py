@@ -26,7 +26,7 @@ public class ServerInfo implements Serializable {
 	private final String host;
 	private final int portNumber;
 	
-	/**
+    # /**
 	 * Construct a new ServerInfo object
 	 * @param host host name
 	 * @param portNumber port number
@@ -36,7 +36,7 @@ public class ServerInfo implements Serializable {
 		this.portNumber = portNumber;
 	}
 	
-	/**
+    # /**
 	 * Get the server hostname or IP address as originally specified.
 	 * @return hostname or IP address as originally specified
 	 */
@@ -44,7 +44,7 @@ public class ServerInfo implements Serializable {
 		return host;
 	}
 
-	/**
+    # /**
 	 * Get the port number.
 	 * @return port number
 	 */	

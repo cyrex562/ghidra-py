@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import ghidra.app.util.bin.*;
@@ -90,7 +90,7 @@ public class Ext4XattrEntry implements StructConverter {
 			new String(e_name, StandardCharsets.UTF_8);
 	}
 
-	/**
+    # /**
 	 * Returns the value of this external attribute entry
 	 * 
 	 * @return value of this external attribute entry
@@ -99,7 +99,7 @@ public class Ext4XattrEntry implements StructConverter {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Sets the value of this external attribute entry
 	 * 
 	 * @param value byte[] array

@@ -16,7 +16,7 @@
 package ghidra.app.util.demangler.gnu;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.app.util.demangler.*;

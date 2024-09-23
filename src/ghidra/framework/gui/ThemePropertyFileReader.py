@@ -15,7 +15,7 @@
  */
 package generic.theme;
 
-import java.io.*;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,7 +31,7 @@ public class ThemePropertyFileReader extends AbstractThemeReader {
 	private Map<LafType, GThemeValueMap> customSectionsMap = new HashMap<>();
 	private boolean defaultSectionProcessed;
 
-	/**
+    # /**
 	 * Constructor for when the the theme.properties file is a {@link ResourceFile}
 	 * @param file the {@link ResourceFile} esourceFileto read
 	 * @throws IOException if an I/O error occurs reading the file
@@ -44,7 +44,7 @@ public class ThemePropertyFileReader extends AbstractThemeReader {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor using a Reader (needed for reading from zip files).
 	 * @param source the name or description of the Reader source
 	 * @param reader the {@link Reader} to parse as theme data
@@ -55,7 +55,7 @@ public class ThemePropertyFileReader extends AbstractThemeReader {
 		read(reader);
 	}
 
-	/**
+    # /**
 	 * Returns the map of standard defaults values. 
 	 * @return the map of standard defaults values.
 	 */
@@ -63,7 +63,7 @@ public class ThemePropertyFileReader extends AbstractThemeReader {
 		return defaults;
 	}
 
-	/**
+    # /**
 	 * Returns the map of dark defaults values. 
 	 * @return the map of dark defaults values.
 	 */
@@ -71,7 +71,7 @@ public class ThemePropertyFileReader extends AbstractThemeReader {
 		return darkDefaults;
 	}
 
-	/**
+    # /**
 	 * Returns a map of all the custom (look and feel specific) value maps
 	 * @return a map of all the custom (look and feel specific) value maps
 	 */

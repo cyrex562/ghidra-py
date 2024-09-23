@@ -41,7 +41,7 @@ public class ApplyDataTypes {
 	private MessageLog log;
 	private HashMap<String, CompositeDefinition> compositeQueue = new HashMap<>();
 
-	/**
+    # /**
 	 * Construct a PDB XML datatype or class parser.  The {@link #preProcessDataTypeList(XmlPullParser, boolean, TaskMonitor)}
 	 * method must be used to injest member elements from the pull parser to populate the set of type to be parsed. 
 	 * The full parse will not be completed until the {@link #applyTo(TaskMonitor)} method is invoked after all types 
@@ -91,7 +91,7 @@ public class ApplyDataTypes {
 		return verticesInPostOrder;
 	}
 
-	/**
+    # /**
 	 * Perform parsing and caching of composite types 
 	 * @param monitor task monitor
 	 * @throws CancelledException if task cancelled
@@ -173,7 +173,7 @@ public class ApplyDataTypes {
 					continue;
 				}
 
-//				/** Can this be avoided if using dependency ordering ??
+//			    # /** Can this be avoided if using dependency ordering ??
 				// NOTE: currently composite may grow if zero-length array used
 				// since we must currently allocate one element since 0-length array 
 				// not yet supported.

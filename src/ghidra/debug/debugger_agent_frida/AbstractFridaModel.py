@@ -15,7 +15,7 @@
  */
 package agent.frida.model;
 
-import java.io.IOException;
+
 import java.util.concurrent.CompletableFuture;
 
 import agent.frida.manager.FridaManager;

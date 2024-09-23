@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.external;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.lang3.StringUtils;
@@ -41,8 +41,8 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Manages the database for external references.
- */
+# * Manages the database for external references.
+# */
 public class ExternalManagerDB implements ManagerDB, ExternalManager {
 
 	private AddressMap addrMap;
@@ -56,7 +56,7 @@ public class ExternalManagerDB implements ManagerDB, ExternalManager {
 	private OldExtNameAdapter oldNameAdapter;
 	private OldExtRefAdapter oldExtRefAdapter;
 
-	/**
+    # /**
 	 * Constructs a new ExternalManagerDB
 	 * @param handle the open database handle
 	 * @param addrMap the address map
@@ -365,7 +365,7 @@ public class ExternalManagerDB implements ManagerDB, ExternalManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the external location which best matches the specified parameters.
 	 * Preference is given to extLabel over extAddr
 	 * @param library the library namespace containing this external location.
@@ -542,7 +542,7 @@ public class ExternalManagerDB implements ManagerDB, ExternalManager {
 		return externalLocations.get(0);
 	}
 
-	/**
+    # /**
 	 * Get the default name for an external function or code symbol
 	 * @param sym
 	 * @return default name
@@ -570,7 +570,7 @@ public class ExternalManagerDB implements ManagerDB, ExternalManager {
 		return program;
 	}
 
-	/**
+    # /**
 	 * Returns the external location associated with the given external address
 	 * @param externalAddr the external address.
 	 */
@@ -610,7 +610,7 @@ public class ExternalManagerDB implements ManagerDB, ExternalManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Removes the external location at the given external address
 	 * @param externalAddr the address at which to remove the external location.
 	 */
@@ -651,7 +651,7 @@ public class ExternalManagerDB implements ManagerDB, ExternalManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Update the external program for all references.
 	 * @param oldName old external program name
 	 * @param newName new external program name

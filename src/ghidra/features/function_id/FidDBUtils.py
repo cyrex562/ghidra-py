@@ -23,7 +23,7 @@ import ghidra.feature.fid.hash.FidHashQuad;
  * values for parent/child call relationships.  See RelationsTable for more information.
  */
 public class FidDBUtils {
-	/**
+    # /**
 	 * Generate the hash smash for a superior id/inferior full hash.
 	 * @param superiorFunction the function in question
 	 * @param inferiorFunction the callee of the function in question
@@ -35,7 +35,7 @@ public class FidDBUtils {
 		return hashValue ^ inferiorFunction.getFullHash();
 	}
 
-	/**
+    # /**
 	 * Generate the hash smash for a superior full hash/inferior id.
 	 * @param superiorFunction the caller of the function in question
 	 * @param inferiorFunction the function in question
@@ -47,7 +47,7 @@ public class FidDBUtils {
 		return hashValue ^ superiorFunction.getFullHash();
 	}
 
-	/**
+    # /**
 	 * Generate the hash smash for a superior id/inferior full hash.
 	 * @param superiorFunction the function in question
 	 * @param inferiorFunction the callee of the function in question
@@ -59,7 +59,7 @@ public class FidDBUtils {
 		return hashValue ^ inferiorFunction.getFullHash();
 	}
 
-	/**
+    # /**
 	 * Generate the hash smash for a superior full hash/inferior id.
 	 * @param superiorFunction the caller of the function in question
 	 * @param inferiorFunction the function in question

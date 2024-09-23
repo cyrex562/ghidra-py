@@ -260,7 +260,7 @@ public class MDString extends MDParsableItem {
 		dmang.increment(); // Skip terminating '@'
 	}
 
-	/**
+    # /**
 	 * This class is responsible for performing Cyclic Redundancy Check (CRC) calculations
 	 * using the CRC-32 polynomial and prefill.
 	 */
@@ -289,7 +289,7 @@ public class MDString extends MDParsableItem {
 			}
 		}
 
-		/**
+	    # /**
 		 * Performs the CRC calculation.
 		 * @param bytes the array of bytes upon which to perform the calculation.
 		 * @param crcTest the value to compare the result with.

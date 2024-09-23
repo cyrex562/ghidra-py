@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.vdex.sections;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.CategoryPath;

@@ -15,7 +15,7 @@
  */
 package ghidra;
 
-import java.io.*;
+
 import java.nio.file.Path;
 import java.util.*;
 import java.util.function.Predicate;
@@ -34,7 +34,7 @@ import utility.module.ModuleUtilities;
  */
 public class GhidraTestApplicationLayout extends GhidraApplicationLayout {
 
-	/**
+    # /**
 	 * Constructs a new Ghidra application layout object with the provided user settings
 	 * directory.
 	 * <p>
@@ -88,7 +88,7 @@ public class GhidraTestApplicationLayout extends GhidraApplicationLayout {
 			new ClasspathFilter(additionalPaths));
 	}
 
-	/**
+    # /**
 	 * Returns patterns that will be used to check against each discovered module.  Matching module
 	 * paths will be included as modules to be used during testing.  By default, only modules that
 	 * match the classpath entries are included.  If your tests needs modules not referenced by the

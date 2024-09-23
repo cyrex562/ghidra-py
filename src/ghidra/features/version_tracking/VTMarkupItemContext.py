@@ -31,7 +31,7 @@ public class VTMarkupItemContext extends DefaultActionContext
 	private final List<VTMarkupItem> selectedItems;
 	private CodeComparisonPanel codeComparisonPanel = null;
 
-	/**
+    # /**
 	 * Creates an action context for the VT markup item provider.
 	 * @param provider the version tracking markup item provider.
 	 * @param selectedItems the selected markup items.
@@ -41,7 +41,7 @@ public class VTMarkupItemContext extends DefaultActionContext
 		this.selectedItems = selectedItems;
 	}
 
-	/**
+    # /**
 	 * Gets the currently selected markup items in the version tracking markup item provider.
 	 * @return the selected markup items
 	 */
@@ -49,7 +49,7 @@ public class VTMarkupItemContext extends DefaultActionContext
 		return selectedItems;
 	}
 
-	/**
+    # /**
 	 * Sets the CodeComparisonPanel associated with this context.
 	 * @param codeComparisonPanel the code comparison panel.
 	 */

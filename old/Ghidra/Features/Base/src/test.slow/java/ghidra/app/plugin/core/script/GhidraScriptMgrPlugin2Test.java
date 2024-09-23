@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.script;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.nio.file.Path;
 
 import org.apache.logging.log4j.Level;

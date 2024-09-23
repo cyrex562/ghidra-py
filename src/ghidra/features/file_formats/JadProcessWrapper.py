@@ -16,7 +16,7 @@
 package ghidra.file.jad;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -121,7 +121,7 @@ public class JadProcessWrapper {
 		return jadPath;
 	}
 
-	/**
+    # /**
 	 * A cached check for the presence of the external JAD executable.
 	 * 
 	 * @return boolean if the executable, for the current platform, is present

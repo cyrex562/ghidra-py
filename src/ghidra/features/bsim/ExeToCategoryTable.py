@@ -41,7 +41,7 @@ public class ExeToCategoryTable extends SQLComplexTable {
 		public long id_category;
 	}
 
-	/**
+    # /**
 	 * Constructor 
 	 * 
 	 * @param catstringtable table containing all category values
@@ -127,7 +127,7 @@ public class ExeToCategoryTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param exeid the executable table id
 	 * @param max the max number of records to return
@@ -151,7 +151,7 @@ public class ExeToCategoryTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param erec the executable record
 	 * @throws SQLException if there is a problem inserting the category 

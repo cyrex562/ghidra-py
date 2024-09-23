@@ -22,7 +22,7 @@ import ghidra.app.util.demangler.DemangledDataType;
  */
 public class SwiftPrimitive extends DemangledDataType {
 
-	/**
+    # /**
 	 * Creates a new Swift primitive
 	 * 
 	 * @param mangled The mangled string
@@ -33,7 +33,7 @@ public class SwiftPrimitive extends DemangledDataType {
 		super(mangled, originalDemangled, name);
 	}
 
-	/**
+    # /**
 	 * Creates a new Swift primitive
 	 * 
 	 * @param mangled The mangled string

@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.debug.service.model;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.CompletableFuture;

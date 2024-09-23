@@ -45,7 +45,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 	//  than one AbstractIndexMsType) in any AbstractFieldListMsType.
 	private List<AbstractIndexMsType> indexList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -95,7 +95,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link AbstractMsType}&gt; of base class types.
 	 * @return List of base class types.
 	 */
@@ -103,7 +103,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		return baseClassList;
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link MsTypeField}&gt; of type members types of
 	 *  this field list.  This is a hodge-podge of other types form the field list.  This list
 	 *  should generally not be used outside of this class
@@ -113,7 +113,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		return memberList;
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link MsTypeField}&gt; of other types. (We have
 	 *  separated these out, but are unsure about what they are at this time.)
 	 * @return List of other types.
@@ -122,7 +122,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		return methodList;
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link AbstractMemberMsType}&gt; of non-static members
 	 *  from this field list
 	 * @return non-static members
@@ -131,7 +131,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		return nonstaticMemberList;
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link AbstractStaticMemberMsType}&gt; of static
 	 *  members from this field list
 	 * @return non-static members
@@ -140,7 +140,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		return staticMemberList;
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link AbstractVirtualFunctionTablePointerMsType}&gt;
 	 *  of VFT pointer records from this field list
 	 * @return VFT pointer records
@@ -149,7 +149,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		return vftPtrList;
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link AbstractNestedTypeMsType}&gt; of nested
 	 *  types from this field list
 	 * @return nested types
@@ -158,7 +158,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		return nestedTypeList;
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link AbstractEnumerateMsType}&gt; of enumerates
 	 *  from this field list
 	 * @return enumerates
@@ -167,7 +167,7 @@ public abstract class AbstractFieldListMsType extends AbstractMsType {
 		return enumerateList;
 	}
 
-	/**
+    # /**
 	 * Returns the (ordered?) {@link List}&lt;{@link AbstractIndexMsType}&gt; that we believe
 	 *  will contain the reference only to other {@link AbstractFieldListMsType}s.
 	 * @return List of {@link AbstractIndexMsType}s.

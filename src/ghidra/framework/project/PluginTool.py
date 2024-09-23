@@ -78,19 +78,19 @@ import help.HelpService;
  */
 public abstract class PluginTool extends AbstractDockingTool {
 
-	/**
+    # /**
 	 * Name of the property for the tool name.
 	 */
 	public final static String TOOL_NAME_PROPERTY = "ToolName";
-	/**
+    # /**
 	 * Name of the property for the tool icon.
 	 */
 	public final static String ICON_PROPERTY_NAME = "Icon";
-	/**
+    # /**
 	 * Name of the property for the description of the tool.
 	 */
 	public final static String DESCRIPTION_PROPERTY_NAME = "Description";
-	/**
+    # /**
 	 * Name of the property for the number of plugins the tool has.
 	 */
 	public final static String PLUGIN_COUNT_PROPERTY_NAME = "PluginCount";
@@ -126,7 +126,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 	protected boolean isDisposed = false;
 	private boolean restoringDataState;
 
-	/**
+    # /**
 	 * Construct a new PluginTool.
 	 *
 	 * @param project project that contains this tool
@@ -145,7 +145,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		optionsMgr.validateOptions();
 	}
 
-	/**
+    # /**
 	 * Construct a new PluginTool.
 	 *
 	 * @param project project that contains the tool
@@ -203,7 +203,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return pluginMgr.getPluginsConfiguration();
 	}
 
-	/**
+    # /**
 	 * This method exists here, as opposed to inline in the constructor, so that subclasses can
 	 * alter the behavior of the DockingWindowManager construction.
 	 *
@@ -236,7 +236,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.setHomeButton(homeIcon, callback);
 	}
 
-	/**
+    # /**
 	 * Loads all application-level utility classes into this tool.   This should only be called
 	 * by tools that represent the global application tool and not for sub-tools.
 	 */
@@ -258,7 +258,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		}
 	}
 
-	/**
+    # /**
 	 * Placeholder for subclasses to get a chance to install actions before plugins.
 	 *
 	 */
@@ -293,7 +293,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the Tool option (GhidraOptions.OPTION_DOCKING_WINDOWS_ON_TOP)
 	 * for whether a docked window will always be shown on top of its parent window.
 	 * @param b true means that the docked window will always appear on top of its
@@ -304,7 +304,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.setWindowsOnTop(b);
 	}
 
-	/**
+    # /**
 	 * Return the value of the Tool option (GhidraOptions.OPTION_DOCKING_WINDOWS_ON_TOP)
 	 * for whether docked windows will always be shown on top of their parent windows.
 	 * @return value of the Tool option, GhidraOptions.OPTION_DOCKING_WINDOWS_ON_TOP
@@ -313,7 +313,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return winMgr.isWindowsOnTop();
 	}
 
-	/**
+    # /**
 	 * Returns the manage plugins dialog that is currently
 	 * being used.
 	 * @return the current manage plugins dialog
@@ -322,7 +322,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return manageDialog;
 	}
 
-	/**
+    # /**
 	 * Displays the manage plugins dialog.
 	 * @param addSaveActions if true show save actions
 	 * @param isNewTool true if creating a new tool
@@ -335,14 +335,14 @@ public abstract class PluginTool extends AbstractDockingTool {
 		showDialog(manageDialog);
 	}
 
-	/**
+    # /**
 	 * Displays the extensions installation dialog.
 	 */
 	public void showExtensions() {
 		showDialog(new ExtensionTableProvider(this));
 	}
 
-	/**
+    # /**
 	 * Set whether a component's header should be shown; the header is the component that
 	 * is dragged in order to move the component within the tool, or out of the tool
 	 * into a separate window
@@ -354,13 +354,13 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.showComponentHeader(provider, b);
 	}
 
-	/** Install any services that are not provided by plugins */
+    # /** Install any services that are not provided by plugins */
 	private void installServices() {
 		serviceMgr.addService(ProjectDataService.class,
 			(ProjectDataService) () -> project.getProjectData());
 	}
 
-	/**
+    # /**
 	 * Returns true if the specified <code>serviceInterface</code>
 	 * is a valid service that exists in this tool.
 	 * @param serviceInterface the service interface
@@ -375,7 +375,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return serviceMgr.getService(c);
 	}
 
-	/**
+    # /**
 	 * Get the objects that implement the given service.
 	 * @param c service class
 	 * @return array of Objects that implement the service, c.
@@ -402,14 +402,14 @@ public abstract class PluginTool extends AbstractDockingTool {
 		serviceMgr.removeServiceListener(listener);
 	}
 
-	/**
+    # /**
 	 * A convenience method to make an attention-grabbing noise to the user
 	 */
 	public void beep() {
 		DockingWindowManager.beep();
 	}
 
-	/**
+    # /**
 	 * Sets the provider that should get the default focus when no component has focus.
 	 * @param provider the provider that should get the default focus when no component has focus.
 	 */
@@ -417,7 +417,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.setDefaultComponent(provider);
 	}
 
-	/**
+    # /**
 	 * Registers an action context provider as the default provider for a specific action
 	 * context type. Note that this registers a default provider for exactly
 	 * that type and not a subclass of that type. If the provider want to support a hierarchy of
@@ -432,7 +432,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.registerDefaultContextProvider(type, provider);
 	}
 
-	/**
+    # /**
 	 * Removes the default provider for the given ActionContext type.
 	 * @param type the subclass of ActionContext to remove a provider for
 	 * @param provider the ActionContextProvider to remove for the given ActionContext type
@@ -467,7 +467,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return pluginMgr.acceptData(data);
 	}
 
-	/**
+    # /**
 	 * Request tool to accept specified URL.  Acceptance of URL depends greatly on the plugins
 	 * configured into tool.  If no plugin accepts URL it will be rejected and false returned.
 	 * If a plugin can accept the specified URL it will attempt to process and return true if
@@ -488,7 +488,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		eventMgr.addToolListener(listener);
 	}
 
-	/**
+    # /**
 	 * Returns true if there is at least one tool listening to this tool's plugin events
 	 * @return true if there is at least one tool listening to this tool's plugin events
 	 */
@@ -692,7 +692,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		eventMgr.processToolEvent(toolEvent);
 	}
 
-	/**
+    # /**
 	 * Execute the given command in the foreground.  Required domain object transaction will be
 	 * started with delayed end to ensure that any follow-on analysis starts prior to transaction 
 	 * end.
@@ -708,7 +708,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return taskMgr.execute(commandName, domainObject, f);
 	}
 
-	/**
+    # /**
 	 * Execute the given command in the foreground.  Required domain object transaction will be
 	 * started with delayed end to ensure that any follow-on analysis starts prior to transaction 
 	 * end.
@@ -725,7 +725,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		});
 	}
 
-	/**
+    # /**
 	 * Call the applyTo() method on the given command to make some change to
 	 * the domain object; the command is done in the AWT thread, therefore,
 	 * the command that is to be executed should be a relatively quick operation
@@ -740,7 +740,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return taskMgr.execute(command, obj);
 	}
 
-	/**
+    # /**
 	 * Return whether there is a command being executed
 	 * @return true if there is a command being executed
 	 */
@@ -748,7 +748,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return taskMgr.isBusy() || !executingTaskListeners.isEmpty();
 	}
 
-	/**
+    # /**
 	 * @return true if the current thread group or its ancestors is
 	 * a member of this tools background task thread group, else false
 	 */
@@ -761,7 +761,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return group == taskGroup;
 	}
 
-	/**
+    # /**
 	 * Start a new thread that will call the given command's applyTo()
 	 * method to make some change in the domain object. This method should
 	 * be called for an operation that could potentially take a long time to
@@ -774,7 +774,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		taskMgr.executeCommand(cmd, obj);
 	}
 
-	/**
+    # /**
 	 * Add the given background command to a queue that is processed after the
 	 * main background command completes.
 	 * @param cmd background command to submit
@@ -784,7 +784,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		taskMgr.scheduleFollowOnCommand(cmd, obj);
 	}
 
-	/**
+    # /**
 	 * Launch the task in a new thread
 	 * @param task task to run in a new thread
 	 * @param delay number of milliseconds to delay the display of task monitor dialog
@@ -794,7 +794,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		new TaskLauncher(task, getToolFrame(), delay);
 	}
 
-	/**
+    # /**
 	 * Launch the task in a new thread
 	 * @param task task to run in a new thread
 	 */
@@ -808,7 +808,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return optionsMgr.getOptions(categoryName);
 	}
 
-	/**
+    # /**
 	 * Updates saved options from an old name to a new name.  NOTE: this must be called before
 	 * any calls to register or get options.
 	 * @param oldName the old name of the options.
@@ -818,7 +818,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		optionsMgr.registerOptionNameChanged(oldName, newName);
 	}
 
-	/**
+    # /**
 	  * Return true if there is an options category with the given name
 	  * @param category name of the options set
 	  * @return true if there is an options category with the given name
@@ -827,7 +827,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return optionsMgr.hasOptions(category);
 	}
 
-	/**
+    # /**
 	 * Returns options manager
 	 * @return the manager
 	 */
@@ -835,7 +835,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return optionsMgr;
 	}
 
-	/**
+    # /**
 	 * Get all options.
 	 * @return zero-length array if no options exist.
 	 */
@@ -843,7 +843,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return optionsMgr.getOptions();
 	}
 
-	/**
+    # /**
 	 * Get the project associated with this tool.  Null will be returned if there is no
 	 * project open or if this tool does not use projects.
 	 *
@@ -853,7 +853,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return project;
 	}
 
-	/**
+    # /**
 	 * Returns the project manager associated with this tool.
 	 *
 	 * <P>Null will be returned if this tool does not use projects.
@@ -864,7 +864,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return projectManager;
 	}
 
-	/**
+    # /**
 	 * Returns an object that provides fundamental services that plugins can use
 	 * @return the services instance
 	 */
@@ -872,7 +872,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return toolServices;
 	}
 
-	/**
+    # /**
 	 * Sets the subtitle on the tool; the subtitle is extra text in the title.
 	 * @param subTitle the subtitle to display on the tool
 	 */
@@ -881,7 +881,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		updateTitle();
 	}
 
-	/**
+    # /**
 	 * Add a plugin to the tool.
 	 * @param className name of the plugin class, e.g., "MyPlugin.class.getName()"
 	 * @throws PluginException if the plugin could not be constructed, or
@@ -892,7 +892,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		addPlugins(List.of(className));
 	}
 
-	/**
+    # /**
 	 * Add plugins to the tool.
 	 * @param classNames array of plugin class names
 	 * @throws PluginException if a plugin could not be constructed, or
@@ -905,7 +905,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		addPlugins(Arrays.asList(classNames));
 	}
 
-	/**
+    # /**
 	 * Add plugins to the tool.
 	 * @param classNames collection of plugin class names
 	 * @throws PluginException if a plugin could not be constructed, or
@@ -930,7 +930,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		}, PluginException.class);
 	}
 
-	/**
+    # /**
 	 * Remove the array of plugins from the tool.
 	 * @param plugins array of plugins to remove
 	 * @deprecated use {@link #removePlugins(List)}
@@ -940,7 +940,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		removePlugins(Arrays.asList(plugins));
 	}
 
-	/**
+    # /**
 	 * Remove the array of plugins from the tool.
 	 * @param plugins array of plugins to remove
 	 */
@@ -959,7 +959,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return pluginMgr.hasUnsavedData();
 	}
 
-	/**
+    # /**
 	 * Return a list of plugins in the tool
 	 * @return list of plugins in the tool
 	 */
@@ -967,14 +967,14 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return pluginMgr.getPlugins();
 	}
 
-	/**
+    # /**
 	 * Save this tool's configuration.
 	 */
 	public void saveTool() {
 		toolServices.saveTool(this);
 	}
 
-	/**
+    # /**
 	 * Triggers a 'Save As' dialog that allows the user to save off the tool under a different
 	 * name.  This returns true if the user performed a save.
 	 * @return true if a save happened
@@ -983,7 +983,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return dialogMgr.saveToolAs();
 	}
 
-	/**
+    # /**
 	 * Add a status component to the tool.
 	 *
 	 * @param c component to add
@@ -994,7 +994,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.addStatusItem(c, addBorder, rightSide);
 	}
 
-	/**
+    # /**
 	 * Remove the status component.
 	 * @param c status component to remove
 	 */
@@ -1084,7 +1084,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		addAction(saveAsAction);
 	}
 
-	/**
+    # /**
 	 * Adds actions to the tool for transferring focus to the first component in the next
 	 * or previous dockable component provider.
 	 */
@@ -1185,7 +1185,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 				.buildAndInstall(this);
 	}
 
-	/**
+    # /**
 	 * Clear the list of events that were last generated.
 	 *
 	 */
@@ -1193,7 +1193,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		eventMgr.clearLastEvents();
 	}
 
-	/**
+    # /**
 	 * Closes this tool, possibly with input from the user. The following conditions are checked
 	 * and can prompt the user for more info and allow them to cancel the close.
 	 * <OL>
@@ -1226,7 +1226,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return doSaveTool();
 	}
 
-	/**
+    # /**
 	 * Normally, tools are not allowed to close while tasks are running in that tool as it
 	 * could leave the application in an unstable state. Tools that exit the application
 	 * (such as the FrontEndTool) can override this so that the user can terminate running tasks
@@ -1237,7 +1237,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Checks if this tool's plugins are in a state to be closed.
 	 * @return true if all the plugins in the tool can be closed without further user input.
 	 */
@@ -1245,7 +1245,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return pluginMgr.canClose();
 	}
 
-	/**
+    # /**
 	 * Checks if this tool has running tasks, with optionally giving the user an
 	 * opportunity to cancel them.
 	 *
@@ -1273,7 +1273,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return !task.isCancelled();
 	}
 
-	/**
+    # /**
 	 * Returns true if this tool needs saving
 	 * @return true if this tool needs saving
 	 */
@@ -1281,7 +1281,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return hasConfigChanged(); // ignore the window layout changes
 	}
 
-	/**
+    # /**
 	 * Called when it is time to save the tool.  Handles auto-saving logic.
 	 * @return true if a save happened
 	 */
@@ -1313,7 +1313,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Can the domain object be closed?
 	 * <br>Note: This forces plugins to terminate any tasks they have running for the
 	 * indicated domain object and apply any unsaved data to the domain object. If they can't do
@@ -1349,7 +1349,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		}
 	}
 
-	/**
+    # /**
 	 * Called when the domain object is about to be saved; this allows any plugin that has
 	 * a cache to flush out to the domain object.
 	 * @param dobj domain object that is about to be saved
@@ -1358,7 +1358,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		pluginMgr.prepareToSave(dobj);
 	}
 
-	/**
+    # /**
 	 * Sets the size of the tool's main window
 	 * @param width width in pixels
 	 * @param height height in pixels
@@ -1367,7 +1367,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.getMainWindow().setSize(new Dimension(width, height));
 	}
 
-	/**
+    # /**
 	 * Return the dimension of this tool's frame.
 	 * @return dimension of this tool's frame
 	 */
@@ -1375,7 +1375,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return winMgr.getMainWindow().getSize();
 	}
 
-	/**
+    # /**
 	 * Set the location of this tool's frame on the screen.
 	 * @param x screen x coordinate
 	 * @param y screen y coordinate
@@ -1384,7 +1384,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.getMainWindow().setLocation(x, y);
 	}
 
-	/**
+    # /**
 	 * Return the location of this tool's frame on the screen.
 	 * @return location of this tool's frame
 	 */
@@ -1455,7 +1455,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		eventMgr.removeEventListener(eventClass, listener);
 	}
 
-	/**
+    # /**
 	 * Remove the event listener by className; the plugin registered
 	 * for events, but the construction failed.
 	 * @param className class name of the plugin that is the event listener
@@ -1464,7 +1464,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		eventMgr.removeEventListener(className);
 	}
 
-	/**
+    # /**
 	 * Cancel the current task in the tool.
 	 */
 	public void cancelCurrentTask() {
@@ -1489,7 +1489,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return pluginMgr.getUndoRedoToolState(domainObject);
 	}
 
-	/**
+    # /**
 	 * Shows the dialog using the tool's currently active window as a parent.  Also,
 	 * remembers any size and location adjustments made by the user for the next
 	 * time the dialog is shown.
@@ -1503,7 +1503,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		DockingWindowManager.showDialog(dialogComponent);
 	}
 
-	/**
+    # /**
 	 * Shows the dialog using the window containing the given componentProvider as its parent window.
 	 * Remembers the last location and size of this dialog for the next time it is shown.
 	 *
@@ -1516,7 +1516,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		winMgr.showDialog(dialogComponent, centeredOnProvider);
 	}
 
-	/**
+    # /**
 	 * Shows the dialog using the tool's parent frame, but centers the dialog on the given
 	 * component
 	 *
@@ -1560,7 +1560,7 @@ public abstract class PluginTool extends AbstractDockingTool {
 		return restoringDataState;
 	}
 
-	/**
+    # /**
 	 * Transfers focus to the first component in the next/previous dockable component provider.
 	 * @param forward true to go to next provider, false to go to previous provider
 	 */

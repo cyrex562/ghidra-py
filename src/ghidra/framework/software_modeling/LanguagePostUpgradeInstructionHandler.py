@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import ghidra.program.disassemble.Disassembler;
@@ -23,20 +23,20 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <code>LanguagePostUpgradeInstructionHandler</code> provides an abstract implementation 
- * of a post language-upgrade instruction modification handler.  The Simple Language Translator
- * facilitates the specification of such a handler implementation within a language 
- * translator specification file using the <i>post_upgrade_handler</i> element.
- * Following a major-version language upgrade, the last translator invoked is given an
- * opportunity to perform additional instruction modifications on the entire program.
- */
+# * <code>LanguagePostUpgradeInstructionHandler</code> provides an abstract implementation 
+# * of a post language-upgrade instruction modification handler.  The Simple Language Translator
+# * facilitates the specification of such a handler implementation within a language 
+# * translator specification file using the <i>post_upgrade_handler</i> element.
+# * Following a major-version language upgrade, the last translator invoked is given an
+# * opportunity to perform additional instruction modifications on the entire program.
+# */
 public abstract class LanguagePostUpgradeInstructionHandler {
 
 	protected final Program program;
 
 	private Disassembler disassembler;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param program
 	 */
@@ -44,7 +44,7 @@ public abstract class LanguagePostUpgradeInstructionHandler {
 		this.program = program;
 	}
 
-	/**
+    # /**
 	 * Get disassembler for the current program
 	 * @return disassembler instance
 	 */
@@ -55,7 +55,7 @@ public abstract class LanguagePostUpgradeInstructionHandler {
 		return disassembler;
 	}
 
-	/**
+    # /**
 	 * Invoked after Program language upgrade has completed.  
 	 * Implementation of this method permits the final re-disassembled program to be
 	 * examined/modified to address more complex language upgrades.  This method will only be 
@@ -74,7 +74,7 @@ public abstract class LanguagePostUpgradeInstructionHandler {
 	public abstract void fixupInstructions(Language oldLanguage, TaskMonitor monitor)
 			throws CancelledException;
 
-	/**
+    # /**
 	 * Repair the context and re-disassemble the instruction at the specified address.
 	 * @param addr instruction address
 	 * @param contextValue new context value

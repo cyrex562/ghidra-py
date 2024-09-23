@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.listing;
 
 import java.util.ArrayList;
@@ -37,7 +37,7 @@ public class InstructionPcodeOverride implements PcodeOverride {
 	private Address primaryCallAddress = null;
 	private List<Reference> primaryOverridingReferences;
 
-	/**
+    # /**
 	 * This constructor caches the primary and overriding "from" references of {@code instr}.  
 	 * This cache is never updated; the assumption is that this object is short-lived 
 	 * (duration of {@link PcodeEmit})  
@@ -47,7 +47,7 @@ public class InstructionPcodeOverride implements PcodeOverride {
 		this.instr = instr;
 	}
 
-	/**
+    # /**
 	 * Initialize the cache or any references on an instruction that would cause an override.
 	 * 
 	 * @return list of any program overrides

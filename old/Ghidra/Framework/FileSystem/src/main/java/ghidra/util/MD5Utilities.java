@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-import java.io.*;
+
 import java.util.List;
 
 public class MD5Utilities {

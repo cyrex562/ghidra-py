@@ -26,8 +26,8 @@ import DisplayParser, SemanticParser;
 }
 
 /**
- * This is the root parser for a .slaspec file. Its root rule is spec.
- */
+# * This is the root parser for a .slaspec file. Its root rule is spec.
+# */
 
 spec
 	@after {

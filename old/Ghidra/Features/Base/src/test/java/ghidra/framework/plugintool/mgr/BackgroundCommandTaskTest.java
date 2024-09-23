@@ -17,7 +17,7 @@ package ghidra.framework.plugintool.mgr;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 
 import org.junit.Before;
 import org.junit.Test;

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 # /**
@@ -31,7 +31,7 @@ public class TypeProgramInterface500 extends TypeProgramInterface {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb {@link AbstractPdb} that owns this {@link TypeProgramInterface}
 	 * @param recordCategory the RecordCategory of these records
@@ -75,7 +75,7 @@ public class TypeProgramInterface500 extends TypeProgramInterface {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * IMPORTANT: This method is for testing only.  It allows us to set a basic object.
 	 * <p>
 	 * Note: not all values are initialized.  This is a dummy constructor used to create a dummy

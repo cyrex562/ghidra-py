@@ -21,7 +21,7 @@ import ghidra.file.formats.ios.xattr.XattrConstants;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class BTreeNodeRecord implements StructConverter {
 

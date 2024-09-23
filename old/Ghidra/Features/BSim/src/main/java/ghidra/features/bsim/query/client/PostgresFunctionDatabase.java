@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.client;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.sql.*;
 import java.util.*;

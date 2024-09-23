@@ -36,7 +36,7 @@ public abstract class AbstractAssemblyResolution implements AssemblyResolution {
 	private boolean hashed = false;
 	private int hash;
 
-	/**
+    # /**
 	 * Construct a resolution
 	 * 
 	 * @param factory the factory
@@ -83,7 +83,7 @@ public abstract class AbstractAssemblyResolution implements AssemblyResolution {
 		right.collectAllRight(into);
 	}
 
-	/**
+    # /**
 	 * Get the child portion of {@link #toString()}
 	 * 
 	 * <p>
@@ -139,7 +139,7 @@ public abstract class AbstractAssemblyResolution implements AssemblyResolution {
 	@Override
 	public abstract AssemblyResolution shift(int amt);
 
-	/**
+    # /**
 	 * Get this same resolution, but without any right siblings
 	 * 
 	 * @return the resolution
@@ -148,7 +148,7 @@ public abstract class AbstractAssemblyResolution implements AssemblyResolution {
 		return withRight(null);
 	}
 
-	/**
+    # /**
 	 * Get this same resolution, but with the given right sibling
 	 * 
 	 * @param right the right sibling

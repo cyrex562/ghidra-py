@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.db;
 
-import java.io.*;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -50,7 +50,7 @@ public class FidDB implements Closeable {
 	private boolean openForUpdate;
 	private AtomicInteger openCount = new AtomicInteger(); // how many have this open?
 
-	/**
+    # /**
 	 * @param service the FID database service
 	 * @param installationFile the installation file, if this database is in the installation
 	 * @param dbFile the database file, if this database is not in the installation
@@ -72,7 +72,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new empty Fid database and saves it to the give file.
 	 * @param file the file to create
 	 * @throws IOException
@@ -101,7 +101,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Saves this FidDB to a raw database file
 	 * @param file the file to save to.
 	 * @param monitor the monitor for progress.
@@ -113,7 +113,7 @@ public class FidDB implements Closeable {
 		handle.saveAs(file, false, monitor);
 	}
 
-	/**
+    # /**
 	 * Opens a FidDb using a raw read-only database file (included with Ghidra in the installation).
 	 * @return the database handle for the open database.
 	 * @throws IOException
@@ -123,7 +123,7 @@ public class FidDB implements Closeable {
 		return new DBHandle(fidFile.getFile());
 	}
 
-	/**
+    # /**
 	 * Opens a FidDB from a packed database files.  These are FidDb that are not in the installation
 	 * and can be modified.
 	 * @return the database handle for the open database.
@@ -151,21 +151,21 @@ public class FidDB implements Closeable {
 		relationsTable = new RelationsTable(handle);
 	}
 
-	/**
+    # /**
 	 * @return name of underlying FidFile.
 	 */
 	public String getName() {
 		return fidFile.getName();
 	}
 
-	/**
+    # /**
 	 * @return full file path of underlying FidFile.
 	 */
 	public String getPath() {
 		return fidFile.getPath();
 	}
 
-	/**
+    # /**
 	 * Overridden toString to pretty print object for debug.
 	 */
 	@Override
@@ -173,7 +173,7 @@ public class FidDB implements Closeable {
 		return "FidDB: " + fidFile.getFile().getAbsolutePath();
 	}
 
-	/**
+    # /**
 	 * Used to indicated an addition user wants to keep the database open.  The database will
 	 * be closed only when all the users have called the close.  After the original open, the
 	 * openCount will be one.
@@ -182,7 +182,7 @@ public class FidDB implements Closeable {
 		openCount.incrementAndGet();
 	}
 
-	/**
+    # /**
 	 * Indicates the the user of this FidDB no longer needs it open.  This will decrement the
 	 * "open count" and if the "open count is 0, the database will be closed.
 	 */
@@ -207,7 +207,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the string specific table of the databaes
 	 * @return the StringsTable object
 	 */
@@ -215,7 +215,7 @@ public class FidDB implements Closeable {
 		return stringsTable;
 	}
 
-	/**
+    # /**
 	 * Returns all libraries that exist in this FID database.
 	 * @return all libraries that exist in this FID database
 	 */
@@ -236,7 +236,7 @@ public class FidDB implements Closeable {
 		return libraries;
 	}
 
-	/**
+    # /**
 	 * Searches this database for functions given a specific library and exact name.
 	 * @param library the library to search
 	 * @param name the exact name of the function
@@ -254,7 +254,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Searches this database for functions that match a name substring.
 	 * @param name the name substring
 	 * @return the functions matching the search (or empty)
@@ -270,7 +270,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Searches this database for functions whose name matches the given regular expression
 	 * @param regex the regular expression to match
 	 * @return the functions matching the search (or empty)
@@ -286,7 +286,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Searches this database for functions that match a domain path substring.
 	 * @param domainPath the domain path substring
 	 * @return the functions matching the search (or empty)
@@ -303,7 +303,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the first full hash value in the database that is greater than or
 	 * equal to the provided argument.  Useful for iterating over all the function
 	 * records in (arbitrarily, but deterministically) sorted full hash order.
@@ -321,7 +321,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns all the function records that have the provided specific hash.
 	 * @param hash the hash value
 	 * @return a list of function records that match the hash value
@@ -338,7 +338,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns all the function records that have the provided full hash.
 	 * @param hash the hash value
 	 * @return a list of function records that match the hash value
@@ -354,7 +354,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Return libraries by name
 	 *   Restrict by version if -version- is non-null
 	 *   Restrict by variant if -variant- is non-null
@@ -374,7 +374,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns true if the relation exists, between a superior (caller) function and a
 	 * full hash representing the inferior (callee) function.
 	 * @param superiorFunction the caller function
@@ -395,7 +395,7 @@ public class FidDB implements Closeable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the relation exists, between an inferior (callee) function and a
 	 * full hash representing the superior (caller) function.
 	 * @param superiorFunction a hash representing the caller function
@@ -416,7 +416,7 @@ public class FidDB implements Closeable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns a single function record given its id, or null if no such record exists.
 	 * @param functionID the function record primary key id
 	 * @return the function record or null if non-existent
@@ -432,7 +432,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the library record in which the provided function record resides.
 	 * @param functionRecord the function record
 	 * @return the library record for that function
@@ -455,7 +455,7 @@ public class FidDB implements Closeable {
 		return handle;
 	}
 
-	/**
+    # /**
 	 * Creates a new library using the parameters supplied.
 	 * @param libraryFamilyName the library family name
 	 * @param libraryVersion the library version
@@ -494,7 +494,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new function record in a specific library in this FID database.
 	 * @param library the library in which to create the function
 	 * @param hashQuad the hash quad
@@ -522,7 +522,7 @@ public class FidDB implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Creates a new relation record between a superior (caller) and inferior (callee)
 	 * function.
 	 * @param superiorFunction the caller function
@@ -544,7 +544,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates only an inferior relation, used for special distinguishing parent relationships with
 	 * common functions
 	 * @param superiorFunction is the parent function
@@ -564,7 +564,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Modify a single flag to a specific value across a list of functions
 	 * @param funcList is the list of functions
 	 * @param flagMask is the flag to be modified
@@ -579,7 +579,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Modify a flag of a FunctionRecord in the database, and return a modified record
 	 * @param funcRec the original record to be modified
 	 * @param flagMask mask indicating which flag to modify
@@ -602,7 +602,7 @@ public class FidDB implements Closeable {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Change the auto-pass property for all functions with given full hash
 	 * @param hash is the full hash to match
 	 * @param value is true to set auto-pass, false to clear
@@ -616,7 +616,7 @@ public class FidDB implements Closeable {
 		modifyFlags(funcList, FunctionRecord.AUTO_PASS_FLAG, value);
 	}
 
-	/**
+    # /**
 	 * Change the auto-fail property for all functions with given full hash
 	 * @param hash is the full hash to match
 	 * @param value is true to set auto-fail, false to clear
@@ -630,7 +630,7 @@ public class FidDB implements Closeable {
 		modifyFlags(funcList, FunctionRecord.AUTO_FAIL_FLAG, value);
 	}
 
-	/**
+    # /**
 	 * Change the force-specific property for all functions with given full hash
 	 * @param hash is the full hash to match
 	 * @param value is true to set force-specific, false to clear
@@ -644,7 +644,7 @@ public class FidDB implements Closeable {
 		modifyFlags(funcList, FunctionRecord.FORCE_SPECIFIC_FLAG, value);
 	}
 
-	/**
+    # /**
 	 * Change the force-relation property for all function with given full hash
 	 * @param hash is the full hash to match
 	 * @param value is true to set force-relation, false to clear
@@ -657,7 +657,7 @@ public class FidDB implements Closeable {
 		modifyFlags(funcList, FunctionRecord.FORCE_RELATION_FLAG, value);
 	}
 
-	/**Change the value of the auto-pass property on the given FunctionRecord
+    # /**Change the value of the auto-pass property on the given FunctionRecord
 	 * @param funcRec is the record to change
 	 * @param value is the new value to set
 	 * @return a new FunctionRecord reflecting the change
@@ -671,7 +671,7 @@ public class FidDB implements Closeable {
 		return modifyFunctionFlag(funcRec, FunctionRecord.AUTO_PASS_FLAG, value);
 	}
 
-	/**Change the value of the auto-fail property on the given FunctionRecord
+    # /**Change the value of the auto-fail property on the given FunctionRecord
 	 * @param funcRec is the record to change
 	 * @param value is the new value to set
 	 * @return a new FunctionRecord reflecting the change
@@ -685,7 +685,7 @@ public class FidDB implements Closeable {
 		return modifyFunctionFlag(funcRec, FunctionRecord.AUTO_FAIL_FLAG, value);
 	}
 
-	/**Change the value of the force-specific property on the given FunctionRecord
+    # /**Change the value of the force-specific property on the given FunctionRecord
 	 * @param funcRec is the record to change
 	 * @param value is the new value to set
 	 * @return a new FunctionRecord reflecting the change
@@ -699,7 +699,7 @@ public class FidDB implements Closeable {
 		return modifyFunctionFlag(funcRec, FunctionRecord.FORCE_SPECIFIC_FLAG, value);
 	}
 
-	/**Change the value of the force-relation property on the given FunctionRecord
+    # /**Change the value of the force-relation property on the given FunctionRecord
 	 * @param funcRec is the record to change
 	 * @param value is the new value to set
 	 * @return a new FunctionRecord reflecting the change
@@ -713,7 +713,7 @@ public class FidDB implements Closeable {
 		return modifyFunctionFlag(funcRec, FunctionRecord.FORCE_RELATION_FLAG, value);
 	}
 
-	/**
+    # /**
 	 * Change the auto-pass property for all functions with given name
 	 * @param library is the name of the library containing the function
 	 * @param version is the (optional may be null) library version
@@ -734,7 +734,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Change the auto-fail property for all functions with given name
 	 * @param library is the name of the library containing the function
 	 * @param version is the (optional may be null) library version
@@ -755,7 +755,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Change the force-specific property for all functions with given name
 	 * @param library is the name of the library containing the function
 	 * @param version is the (optional may be null) library version
@@ -776,7 +776,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Change the force-relation property for all functions with given name
 	 * @param library is the name of the library containing the function
 	 * @param version is the (optional may be null) library version
@@ -797,7 +797,7 @@ public class FidDB implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Saves the database.  This MUST be called after one or more transactions, and before
 	 * Ghidra exits...otherwise all changes in the database will be lost!
 	 * @param comment the save comment

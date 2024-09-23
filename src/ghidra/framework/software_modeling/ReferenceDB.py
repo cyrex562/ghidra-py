@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.references;
 
 import ghidra.program.model.address.Address;
@@ -39,13 +39,13 @@ abstract class ReferenceDB implements Reference {
 		this.symbolID = symbolID;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#equals(Object)
 	 */
 	@Override
 	public abstract boolean equals(Object obj);
 
-	/**
+    # /**
 	 * Get the address of the codeunit that is making the reference.
 	 */
 	@Override
@@ -53,7 +53,7 @@ abstract class ReferenceDB implements Reference {
 		return fromAddr;
 	}
 
-	/**
+    # /**
 	 * Get the type of reference being made.
 	 */
 	@Override
@@ -61,7 +61,7 @@ abstract class ReferenceDB implements Reference {
 		return refType;
 	}
 
-	/**
+    # /**
 	 * Get the operand index of where this reference was placed.
 	 * 
 	 * @return op index or ReferenceManager.MNEMONIC
@@ -71,7 +71,7 @@ abstract class ReferenceDB implements Reference {
 		return opIndex;
 	}
 
-	/**
+    # /**
 	 * Return true if this reference is on the mnemonic (versus an operand)
 	 */
 	@Override
@@ -79,7 +79,7 @@ abstract class ReferenceDB implements Reference {
 		return !isOperandReference();
 	}
 
-	/**
+    # /**
 	 * Return true if this reference is on an operand.
 	 */
 	@Override
@@ -87,7 +87,7 @@ abstract class ReferenceDB implements Reference {
 		return opIndex >= 0;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#hashCode
 	 */
 	@Override
@@ -95,7 +95,7 @@ abstract class ReferenceDB implements Reference {
 		return fromAddr.hashCode();
 	}
 
-	/**
+    # /**
 	 * Return a string that represents this references, for debugging purposes.
 	 */
 	@Override
@@ -104,7 +104,7 @@ abstract class ReferenceDB implements Reference {
 			" " + sourceType.toString();
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Comparable#compareTo(Object)
 	 */
 	@Override
@@ -119,7 +119,7 @@ abstract class ReferenceDB implements Reference {
 		return result;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#getSymbolID()
 	 */
 	@Override
@@ -127,7 +127,7 @@ abstract class ReferenceDB implements Reference {
 		return symbolID;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#getToAddress()
 	 */
 	@Override
@@ -140,7 +140,7 @@ abstract class ReferenceDB implements Reference {
 		return isPrimary;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isExternalReference()
 	 */
 	@Override
@@ -148,7 +148,7 @@ abstract class ReferenceDB implements Reference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isMemoryReference()
 	 */
 	@Override
@@ -156,7 +156,7 @@ abstract class ReferenceDB implements Reference {
 		return toAddr.isMemoryAddress();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isRegisterReference()
 	 */
 	@Override
@@ -164,7 +164,7 @@ abstract class ReferenceDB implements Reference {
 		return toAddr.isRegisterAddress();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isOffsetReference()
 	 */
 	@Override
@@ -172,7 +172,7 @@ abstract class ReferenceDB implements Reference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isShiftedReference()
 	 */
 	@Override
@@ -180,7 +180,7 @@ abstract class ReferenceDB implements Reference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isEntryPointReference()
 	 */
 	@Override
@@ -188,7 +188,7 @@ abstract class ReferenceDB implements Reference {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Reference#isStackReference()
 	 */
 	@Override

@@ -189,7 +189,7 @@ public abstract class AbstractDoubleRangeFilter<T> extends Filter<T>
 		return true;
 	}
 
-	/**
+    # /**
 	 * Subclasses should return the Double value that is being filtered.
 	 *
 	 * @param t The t from which to extract the Double value

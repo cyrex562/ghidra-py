@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.Field.UnsupportedFieldException;

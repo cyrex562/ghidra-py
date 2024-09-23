@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.symboltree;
 
 import java.awt.datatransfer.*;
 import java.awt.dnd.DnDConstants;
-import java.io.IOException;
+
 import java.util.*;
 
 import docking.widgets.tree.GTree;

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.headers;
 
-import java.io.IOException;
+
 import java.util.Collections;
 import java.util.List;
 

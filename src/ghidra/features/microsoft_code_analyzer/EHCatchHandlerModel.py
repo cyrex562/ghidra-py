@@ -47,7 +47,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 
 	private DataType dataType;
 
-	/**
+    # /**
 	 * Creates the model for the exception handling HandlerType data type.
 	 * @param program the program
 	 * @param catchHandlerCount the number of HandlerType data types expected at the map address.
@@ -64,7 +64,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		return DATA_TYPE_NAME;
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the indicated address appears to be a valid location for the
 	 * indicated number of HandlerType data types.
 	 * @throws InvalidDataTypeException if this model's location does not appear to be a valid 
@@ -94,7 +94,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the HandlerType structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the HandlerType structure.
@@ -157,7 +157,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.getMatchingDataType(program, typeDefDt);
 	}
 
-	/**
+    # /**
 	 * This gets the HandlerType structure for this model.
 	 * @return the HandlerType structure.
 	 */
@@ -174,7 +174,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		return getDataType().getLength();
 	}
 
-	/**
+    # /**
 	 * Gets the type descriptor model for the type descriptor address in the 
 	 * HandlerType entry indicated by the ordinal.
 	 * @param catchHandlerOrdinal 0-based ordinal indicating which HandlerType entry in the map.
@@ -192,7 +192,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Gets the address, if there is one, of the type descriptor address in the 
 	 * HandlerType entry indicated by the ordinal. Otherwise, this returns null.
 	 * @param catchHandlerOrdinal 0-based ordinal indicating which HandlerType entry in the map.
@@ -211,7 +211,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		return getAdjustedAddress(refAddress, 0);
 	}
 
-	/**
+    # /**
 	 * Gets the address, if there is one, of the component with the type descriptor address in the 
 	 * HandlerType entry indicated by the ordinal. Otherwise, this returns null.
 	 * @param catchHandlerOrdinal 0-based ordinal indicating which HandlerType entry in the map.
@@ -229,7 +229,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 			specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets the address of the catch handler in the map as indicated by the ordinal, if there is one. 
 	 * Otherwise, this returns null.
 	 * @param catchHandlerOrdinal 0-based ordinal indicating which HandlerType entry in the map.
@@ -248,7 +248,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		return getAdjustedAddress(refAddress, 0);
 	}
 
-	/**
+    # /**
 	 * Gets the address, if there is one, of the component with the catch handler address in the 
 	 * HandlerType entry indicated by the ordinal. Otherwise, this returns null.
 	 * @return the address of the component with the catch handler address or null.
@@ -264,7 +264,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getComponentAddress(dt, HANDLER_ORDINAL, specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets a modifier that provides information about specific modifications for the catch
 	 * handler type in the indicated HandlerType map entry.
 	 * @param catchHandlerOrdinal 0-based ordinal indicating which HandlerType entry in the map.
@@ -294,7 +294,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets a name for the catch handler function based on its type descriptor or whether it is a 
 	 * catch all. The name will be for the HandlerType in the map that is indicated by the ordinal.
 	 * @param catchHandlerOrdinal 0-based ordinal indicating which HandlerType entry in the map.
@@ -356,7 +356,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 //		return typeName;
 //	}
 
-	/**
+    # /**
 	 * Gets the scalar for the catch object displacement in the indicated HandlerType map entry.
 	 * @param catchHandlerOrdinal 0-based ordinal indicating which HandlerType entry in the map.
 	 * @return the scalar for the catch object displacement.
@@ -374,7 +374,7 @@ public class EHCatchHandlerModel extends AbstractCreateDataTypeModel {
 			specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets the scalar for the displacement of the address of the function frame in the 
 	 * indicated HandlerType map entry.
 	 * @param catchHandlerOrdinal 0-based ordinal indicating which HandlerType entry in the map.

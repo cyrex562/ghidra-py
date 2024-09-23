@@ -15,7 +15,7 @@
  */
 package ghidra.util.database.spatial.hyper;
 
-import java.io.IOException;
+
 import java.util.Comparator;
 import java.util.List;
 

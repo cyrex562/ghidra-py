@@ -21,7 +21,7 @@ import java.util.*;
  * Utilities for the Assembler
  */
 public class AsmUtil {
-	/**
+    # /**
 	 * Compare two collections by their corresponding elements in order
 	 * 
 	 * <p>
@@ -51,7 +51,7 @@ public class AsmUtil {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Compare two byte arrays by their corresponding entries
 	 * 
 	 * <p>
@@ -77,7 +77,7 @@ public class AsmUtil {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Extend a list with the given item
 	 * 
 	 * <p>

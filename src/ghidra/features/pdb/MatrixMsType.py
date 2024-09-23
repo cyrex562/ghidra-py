@@ -38,7 +38,7 @@ public class MatrixMsType extends AbstractMsType {
 	private BigInteger size;
 	private String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -66,7 +66,7 @@ public class MatrixMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the matrix type.
 	 * @return Size of the matrix type.
 	 */
@@ -75,7 +75,7 @@ public class MatrixMsType extends AbstractMsType {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Returns the number of rows of the matrix type.
 	 * @return Number of rows of the matrix.
 	 */
@@ -83,7 +83,7 @@ public class MatrixMsType extends AbstractMsType {
 		return numRows;
 	}
 
-	/**
+    # /**
 	 * Returns the number of columns of the matrix type.
 	 * @return Number of columns of the matrix.
 	 */
@@ -91,7 +91,7 @@ public class MatrixMsType extends AbstractMsType {
 		return numColumns;
 	}
 
-	/**
+    # /**
 	 * Returns whether matrix organized as row major (vs. column major)
 	 * @return True if row major; false if column major.
 	 */
@@ -99,7 +99,7 @@ public class MatrixMsType extends AbstractMsType {
 		return rowMajor;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the major stride of the matrix type.
 	 * @return Size of the major stride.
 	 */

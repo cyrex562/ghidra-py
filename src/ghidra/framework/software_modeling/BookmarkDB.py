@@ -42,7 +42,7 @@ public class BookmarkDB extends DatabaseObject implements Bookmark {
 			getAddress();
 	}
 
-	/**
+    # /**
 	 * Update associated record
 	 * @param rec
 	 */
@@ -64,7 +64,7 @@ public class BookmarkDB extends DatabaseObject implements Bookmark {
 		return mgr.getAddress(record.getLongValue(BookmarkDBAdapter.ADDRESS_COL));
 	}
 
-	/**
+    # /**
 	 * Returns bookmark type or null if type has been removed.
 	 */
 	@Override
@@ -132,7 +132,7 @@ public class BookmarkDB extends DatabaseObject implements Bookmark {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns record associated with this bookmark or
 	 * null if bookmark has been deleted.
 	 */

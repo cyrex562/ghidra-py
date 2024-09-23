@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.*;
+
 
 import ghidra.app.util.bin.ByteProvider;
 

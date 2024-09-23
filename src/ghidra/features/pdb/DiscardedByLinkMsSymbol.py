@@ -70,7 +70,7 @@ public class DiscardedByLinkMsSymbol extends AbstractMsSymbol {
 	private List<AbstractMsSymbol> symbolList;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for this symbol
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized
@@ -97,7 +97,7 @@ public class DiscardedByLinkMsSymbol extends AbstractMsSymbol {
 			SymbolRecords.deserializeSymbolRecords(pdb, dataReader));
 	}
 
-	/**
+    # /**
 	 * Returns the list of symbols in the order they were seen
 	 * @return the list of symbols
 	 */

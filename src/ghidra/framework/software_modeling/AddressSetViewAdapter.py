@@ -25,7 +25,7 @@ import java.util.Iterator;
 public class AddressSetViewAdapter implements AddressSetView {
 	private AddressSetView set;
 
-	/**
+    # /**
 	 * Construct an AddressSetViewAdapter for an address set.
 	 * @param set the address set to wrap as a read-only object.
 	 */
@@ -33,7 +33,7 @@ public class AddressSetViewAdapter implements AddressSetView {
 		this.set = set;
 	}
 
-	/**
+    # /**
 	 * Construct an empty AddressSetViewAdapter.
 	 */
 	public AddressSetViewAdapter() {

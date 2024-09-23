@@ -16,7 +16,7 @@
 package ghidra.feature.fid.db;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.feature.fid.hash.FidHashQuad;
@@ -42,7 +42,7 @@ public class FidQueryService implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Adds a listener to be notified when this FidQueryService is closed.
 	 * @param listener to be notified when this FidQueryService is closed.
 	 */
@@ -50,7 +50,7 @@ public class FidQueryService implements Closeable {
 		listeners.add(listener);
 	}
 
-	/**
+    # /**
 	 * Removes the listener to be notified when this FidQueryService is closed.
 	 * @param listener to no longer be notified when this FidQueryService is closed.
 	 */
@@ -58,7 +58,7 @@ public class FidQueryService implements Closeable {
 		listeners.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Returns a single function record given its id, or null if no such record exists,
 	 * searching across all attached databases.
 	 * NOTE: function record ids are generated so they are unique across libraries and
@@ -76,7 +76,7 @@ public class FidQueryService implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns true if the relation exists, between a superior (caller) function and a
 	 * full hash representing the inferior (callee) function, searching across all
 	 * attached databases.
@@ -94,7 +94,7 @@ public class FidQueryService implements Closeable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the relation exists, between an inferior (callee) function and a
 	 * full hash representing the superior (caller) function, searching across all
 	 * attached databases.
@@ -112,7 +112,7 @@ public class FidQueryService implements Closeable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the library record in which the provided function record resides.
 	 * @param functionRecord the function record
 	 * @return the library record for that function
@@ -127,7 +127,7 @@ public class FidQueryService implements Closeable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the first full hash value across all the databases that is greater than or
 	 * equal to the provided argument.  Mostly for debug or statistical analysis
 	 * @param value the minimum hash value to seek
@@ -146,7 +146,7 @@ public class FidQueryService implements Closeable {
 		return minimumValue;
 	}
 
-	/**
+    # /**
 	 * Returns all the function records that have the provided specific hash, searching across all
 	 * attached databases.
 	 * @param hash the hash value
@@ -163,7 +163,7 @@ public class FidQueryService implements Closeable {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Returns all the function records that have the provided full hash, searching across all
 	 * attached databases.
 	 * @param hash the hash value
@@ -180,7 +180,7 @@ public class FidQueryService implements Closeable {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Searches all databases for functions that match a name substring.
 	 * @param name the name substring
 	 * @return the functions matching the search (or empty)
@@ -196,7 +196,7 @@ public class FidQueryService implements Closeable {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Searches all databases for functions that match a domain path substring.
 	 * @param domainPath the domain path substring
 	 * @return the functions matching the search (or empty)
@@ -212,7 +212,7 @@ public class FidQueryService implements Closeable {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Closes this FidQueryService which in turn closes all of its open Fid databases.  It also
 	 * notifies any registered listeners that it has been closed.
 	 */

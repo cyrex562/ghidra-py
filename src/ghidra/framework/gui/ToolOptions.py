@@ -84,7 +84,7 @@ public class ToolOptions extends AbstractOptions {
 		return new ToolOptions(getXmlRoot(true));
 	}
 
-	/**
+    # /**
 	 * Construct a new Options object from the given XML element.
 	 * @param root XML that contains the set of options to restore
 	 */
@@ -152,7 +152,7 @@ public class ToolOptions extends AbstractOptions {
 		}
 	}
 
-	/**
+    # /**
 	 * Return an XML element for the option names and values.
 	 * Note: only those options which have been explicitly set
 	 * will be included.
@@ -277,7 +277,7 @@ public class ToolOptions extends AbstractOptions {
 			"Attempted to wrap object of unexpected class type: " + value.getClass());
 	}
 
-	/**
+    # /**
 	 * Add the options change listener. NOTE: The Options uses
 	 * WeakReferences to manage the listeners; this means that you must supply a
 	 * listener and maintain a handle to it, or else the listener will be
@@ -294,7 +294,7 @@ public class ToolOptions extends AbstractOptions {
 		oldOptions.listeners = null;
 	}
 
-	/**
+    # /**
 	 * Remove the options change listener.
 	 * @param l listener to remove
 	 */
@@ -302,7 +302,7 @@ public class ToolOptions extends AbstractOptions {
 		listeners.remove(l);
 	}
 
-	/**
+    # /**
 	 * Check each option to ensure that an owner is still registered for it;
 	 * if there is no owner, then remove the option.
 	 */
@@ -316,7 +316,7 @@ public class ToolOptions extends AbstractOptions {
 		}
 	}
 
-	/**
+    # /**
 	 * Adds all the options name/value pairs to this Options.
 	 * @param newOptions the new options into which the current options values will be placed
 	 */

@@ -17,7 +17,7 @@ package ghidra.program.database.bookmark;
 
 import ghidra.util.exception.VersionException;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import db.*;

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.FilenameUtils;

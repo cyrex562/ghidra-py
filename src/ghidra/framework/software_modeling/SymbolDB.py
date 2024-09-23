@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.DBRecord;
@@ -38,8 +38,8 @@ import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.UnknownProgressWrappingTaskMonitor;
 
 # /**
- * Base class for symbols
- */
+# * Base class for symbols
+# */
 public abstract class SymbolDB extends DatabaseObject implements Symbol {
 
 	private DBRecord record;
@@ -132,7 +132,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 			addr);
 	}
 
-	/**
+    # /**
 	 * 	low level record adjustment to move a symbol. Used only when moving a memory block or
 	 *  changing the image base.
 	 *  
@@ -200,7 +200,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		return symbolMgr.getProgram().getModificationNumber() == cachedNameModCount;
 	}
 
-	/**
+    # /**
 	 * The code for creating the name content for this symbol.  This code will be called 
 	 * with the symbol's lock.
 	 * 
@@ -417,7 +417,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 	@Override
 	public abstract boolean isPrimary();
 
-	/**
+    # /**
 	 * Sets this symbol's source as specified.
 	 * @param newSource the new source type (IMPORTED, ANALYSIS, USER_DEFINED)
 	 * @throws IllegalArgumentException if you try to change the source from default or to default
@@ -547,7 +547,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		setNameAndNamespace(getName(), newNamespace, getSource());
 	}
 
-	/**
+    # /**
 	 * Allow symbol implementations to validate the source when setting the name of
 	 * this symbol
 	 * 
@@ -691,7 +691,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		symbolRecord.setByteValue(SymbolDatabaseAdapter.SYMBOL_FLAGS_COL, flags);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#setPrimary()
 	 */
 	@Override
@@ -814,7 +814,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the symbol's string data which has different meanings depending on the symbol type
 	 * and whether or not it is external
 	 * @return the symbol's string data
@@ -833,7 +833,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the symbol's string data field. This field's data has different uses depending on the 
 	 * symbol type and whether or not it is external. 
 	 * @param stringData the string to store in the string data field
@@ -876,7 +876,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the generic symbol data 1.
 	 * @param value the value to set as symbol data 1.
 	 */
@@ -895,7 +895,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		}
 	}
 
-	/**
+    # /**
 	 * gets the generic symbol data 2 data.
 	 * @return the symbol data
 	 */
@@ -913,7 +913,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the symbol's variable offset. For parameters, this is the ordinal, for locals, it is 
 	 * the first use offset
 	 * @param offset the value to set as the symbols variable offset. 
@@ -1011,7 +1011,7 @@ public abstract class SymbolDB extends DatabaseObject implements Symbol {
 		return symbolMgr.isMyNamespace(parent);
 	}
 
-	/**
+    # /**
 	 * Change the record and key associated with this symbol
 	 * @param record the record
 	 */

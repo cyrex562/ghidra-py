@@ -17,7 +17,7 @@ package ghidra.file.formats.bplist;
 
 import ghidra.app.util.bin.BinaryReader;
 
-import java.io.IOException;
+
 
 public final class NSObjectParser {
 

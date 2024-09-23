@@ -27,7 +27,7 @@ public class With16MsSymbol extends AbstractWithMsSymbol {
 
 	public static final int PDB_ID = 0x0108;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

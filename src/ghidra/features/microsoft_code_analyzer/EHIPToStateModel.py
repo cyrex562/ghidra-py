@@ -43,7 +43,7 @@ public class EHIPToStateModel extends AbstractCreateDataTypeModel {
 
 	private DataType dataType;
 
-	/**
+    # /**
 	 * Creates the model for the exception handling IpToStateMapEntry data type.
 	 * @param program the program
 	 * @param ipToStateCount the number of IpToStateMapEntry data types expected at the map address.
@@ -60,7 +60,7 @@ public class EHIPToStateModel extends AbstractCreateDataTypeModel {
 		return DATA_TYPE_NAME;
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the indicated address appears to be a valid location for the
 	 * indicated number of ipToState map entry data types.
 	 * @throws InvalidDataTypeException if this model's location does not appear to be a valid 
@@ -84,7 +84,7 @@ public class EHIPToStateModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the IPToStateMap structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the IPToStateMap structure.
@@ -122,7 +122,7 @@ public class EHIPToStateModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.getMatchingDataType(program, typedefDt);
 	}
 
-	/**
+    # /**
 	 * This gets the IPToStateMap structure for this model.
 	 * @return the IPToStateMap structure.
 	 */
@@ -139,7 +139,7 @@ public class EHIPToStateModel extends AbstractCreateDataTypeModel {
 		return getDataType().getLength();
 	}
 
-	/**
+    # /**
 	 * Gets the IP value for the IP To State map as either an address of IP or as an IP value, 
 	 * if there is one, in the IpToStateMapEntry indicated by the ordinal.
 	 * @param ipToStateOrdinal 0-based ordinal indicating which IpToStateMapEntry in the map.
@@ -165,7 +165,7 @@ public class EHIPToStateModel extends AbstractCreateDataTypeModel {
 		return scalarValue;
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component containing the IP To State address, if there is one 
 	 * in the IpToStateMapEntry indicated by the ordinal. 
 	 * Otherwise, this returns null.
@@ -183,7 +183,7 @@ public class EHIPToStateModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getComponentAddress(dt, IP_ORDINAL, specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets the state value, if there is one, in the IpToStateMapEntry indicated by the ordinal.
 	 * @param ipToStateOrdinal 0-based ordinal indicating which IpToStateMapEntry in the map.
 	 * @return the state value.

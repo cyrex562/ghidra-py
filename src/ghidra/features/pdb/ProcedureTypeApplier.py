@@ -28,7 +28,7 @@ import ghidra.util.exception.CancelledException;
 public class ProcedureTypeApplier extends AbstractFunctionTypeApplier {
 
 	// Intended for: AbstractProcedureMsType
-	/**
+    # /**
 	 * Constructor for the applicator that applies {@link AbstractProcedureMsType},
 	 * transforming it into a Ghidra {@link DataType}
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working

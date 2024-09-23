@@ -24,18 +24,18 @@ import ghidra.util.Swing;
 
 public class CheckForFileProcessedRunnable extends CheckPeriodicallyRunnable {
 
-	/**
+    # /**
 	 * How long to wait before asking to continue waiting after the url has been sent to a listening
 	 * Ghidra
 	 */
 	public static int WAIT_FOR_PROCESSING_DELAY_MS = 500;
 
-	/**
+    # /**
 	 * How frequently to ask to continue waiting after Wait is selected
 	 */
 	public static int WAIT_FOR_PROCESSING_PERIOD_MS = 60_000;
 
-	/**
+    # /**
 	 * Maximum amount of time to wait for the file to be processed
 	 */
 	public static int MAX_WAIT_FOR_PROCESSING_MIN = 1;
@@ -48,7 +48,7 @@ public class CheckForFileProcessedRunnable extends CheckPeriodicallyRunnable {
 		this.filePath = filePath;
 	}
 
-	/**
+    # /**
 	 * This constructor is used to create the thread that will show the wait dialog
 	 * @param executor the internal executor that should have 2 threads
 	 * @param filePath the path to the file to check

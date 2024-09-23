@@ -15,7 +15,7 @@
  */
 package ghidra.util.exception;
 
-import java.io.IOException;
+
 
 # /**
  * <code>BadLinkException</code> occurs when a link-file expected linked content type does not 

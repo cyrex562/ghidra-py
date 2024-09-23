@@ -31,7 +31,7 @@ public abstract class AbstractBaseClassMsType extends AbstractMsType implements 
 	protected ClassFieldMsAttributes attribute;
 	protected BigInteger offset;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -40,7 +40,7 @@ public abstract class AbstractBaseClassMsType extends AbstractMsType implements 
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param baseClassRecordNumber the {@link RecordNumber} of the base class 
@@ -66,7 +66,7 @@ public abstract class AbstractBaseClassMsType extends AbstractMsType implements 
 		builder.append(">");
 	}
 
-	/**
+    # /**
 	 * Returns the offset of the base class within the inheriting class.
 	 * @return the offset;
 	 */
@@ -74,7 +74,7 @@ public abstract class AbstractBaseClassMsType extends AbstractMsType implements 
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the attributes of the base class within the inheriting class.
 	 * @return the attributes;
 	 */
@@ -82,7 +82,7 @@ public abstract class AbstractBaseClassMsType extends AbstractMsType implements 
 		return attribute;
 	}
 
-	/**
+    # /**
 	 * Returns the type index of the base class.
 	 * @return the type index;
 	 */

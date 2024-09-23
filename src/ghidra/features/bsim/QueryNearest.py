@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import generic.lsh.vector.LSHVectorFactory;
@@ -31,20 +31,20 @@ import ghidra.xml.XmlPullParser;
  */
 public class QueryNearest extends BSimQuery<ResponseNearest> {
 
-	/**
+    # /**
 	 * The default value for the similarity threshold. This
 	 * threshold is for how similar the potential function is. This is a value from 0.0 to 1.0.
 	 */
 	public static final double DEFAULT_SIMILARITY_THRESHOLD = 0.7;
 
-	/**
+    # /**
 	 * The default value for the significance threshold.  This
 	 * threshold is for how significant the match is (for example, smaller function matches
 	 * are less significant).  Higher is more significant.  There is no upper bound.
 	 */
 	public static final double DEFAULT_SIGNIFICANCE_THRESHOLD = 0.0;
 
-	/**
+    # /**
 	 * The default value for the maximum number of similar functions to return 
 	 * <b>for a given input function</b>
 	 */

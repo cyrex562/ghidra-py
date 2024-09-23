@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.CancelledException;

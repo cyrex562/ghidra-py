@@ -26,7 +26,7 @@ import java.util.function.BiConsumer;
  */
 @FunctionalInterface
 public interface TriConsumer<T, U, V> {
-	/**
+    # /**
 	 * Performs this operation on the given arguments.
 	 *
 	 * @param t the first input argument

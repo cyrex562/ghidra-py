@@ -16,7 +16,7 @@
 package ghidra.file.formats.squashfs;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.exception.CancelledException;
@@ -33,7 +33,7 @@ public class SquashInodeTable {
 	// The root inode of the archive
 	private SquashInode rootInode;
 
-	/**
+    # /**
 	 * Represents the inode table within the SquashFS archive
 	 * @param reader A binary reader for the entire SquashFS archive
 	 * @param superBlock The SuperBlock for the current archive
@@ -121,7 +121,7 @@ public class SquashInodeTable {
 		return rootInode;
 	}
 
-	/**
+    # /**
 	 * Build the parent/child relationships between inodes
 	 * @param monitor Monitor to allow the user to cancel the load
 	 * @throws CancelledException Archive load was cancelled
@@ -148,7 +148,7 @@ public class SquashInodeTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Decompress the inode table and record the root inode
 	 * @param reader The BinaryReader pointed to the start of the section
 	 * @param endAddress The address the section ends at

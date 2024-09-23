@@ -17,7 +17,7 @@ package ghidra.pcodeCPort.slghpattern;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 
 import generic.stl.IteratorSTL;
 import generic.stl.VectorSTL;

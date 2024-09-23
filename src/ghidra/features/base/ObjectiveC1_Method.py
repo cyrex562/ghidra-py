@@ -21,7 +21,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.Conv;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC1_Method extends ObjectiveC_Method {
 	private String name;

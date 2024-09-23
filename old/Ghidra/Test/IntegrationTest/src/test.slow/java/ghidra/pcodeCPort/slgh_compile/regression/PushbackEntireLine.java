@@ -17,7 +17,7 @@
 package ghidra.pcodeCPort.slgh_compile.regression;
 
 import java.io.BufferedReader;
-import java.io.IOException;
+
 
 public class PushbackEntireLine {
 	private final BufferedReader reader;

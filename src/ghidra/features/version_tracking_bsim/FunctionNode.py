@@ -37,7 +37,7 @@ public class FunctionNode implements Comparable<FunctionNode> {
 	private final int len;								// Number of addresses in the body of this function
 	private boolean acceptedMatch;						// Has this node been formally matched with something
 
-	/**
+    # /**
 	 * Allocate a container for FunctionNodes as needed by the NeighborGenerators.  These are generally small sets
 	 * where we need to check containment constantly.
 	 * @return the container
@@ -97,21 +97,21 @@ public class FunctionNode implements Comparable<FunctionNode> {
 		return name;
 	}
 
-	/**
+    # /**
 	 * @return the Address of the entry point of the Function represented by this node
 	 */
 	public Address getAddress() {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * @return the feature vector associated with this node (function)
 	 */
 	public LSHVector getVector() {
 		return vec;
 	}
 
-	/**
+    # /**
 	 * Grab the raw call addresses, releasing the memory in the process
 	 * @return the list of addresses
 	 */
@@ -121,21 +121,21 @@ public class FunctionNode implements Comparable<FunctionNode> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * @return the set of functions (FunctionNodes) called by this function
 	 */
 	public Set<FunctionNode> getChildren() {
 		return children;
 	}
 
-	/**
+    # /**
 	 * @return the set of functions (FunctionNodes) that call this function
 	 */
 	public Set<FunctionNode> getParents() {
 		return parents;
 	}
 
-	/**
+    # /**
 	 * Add a (potential) match for this node.  The match
 	 * is stored with a FunctionPair object holding similarity information
 	 * @param other is the potentially matching FunctionNode
@@ -145,7 +145,7 @@ public class FunctionNode implements Comparable<FunctionNode> {
 		associates.put(other, pair);
 	}
 
-	/**
+    # /**
 	 * Remove what was previously considered a potential match.
 	 * @param other is the matching FunctionNode
 	 */
@@ -153,21 +153,21 @@ public class FunctionNode implements Comparable<FunctionNode> {
 		associates.remove(other);
 	}
 
-	/**
+    # /**
 	 * Clear all potential matches.
 	 */
 	public void clearAssociates() {
 		associates.clear();
 	}
 
-	/**
+    # /**
 	 * @return an iterator over all potential matches for this node
 	 */
 	public Iterator<Entry<FunctionNode, FunctionPair>> getAssociateIterator() {
 		return associates.entrySet().iterator();
 	}
 
-	/**
+    # /**
 	 * If -other- is a potential match, return the FunctionPair describing the similarity
 	 * @param other is the possible potential match
 	 * @return the FunctionPair describing the match or null, if -other- is not a potential match
@@ -176,21 +176,21 @@ public class FunctionNode implements Comparable<FunctionNode> {
 		return associates.get(other);
 	}
 
-	/**
+    # /**
 	 * @return the number of addresses in the function body represented by this node
 	 */
 	public int getLen() {
 		return len;
 	}
 
-	/**
+    # /**
 	 * @return true if this node has been formally matched by the correlator
 	 */
 	public boolean isAcceptedMatch() {
 		return acceptedMatch;
 	}
 
-	/**
+    # /**
 	 * Mark that this node has been matched (not matched) by the correlator
 	 * @param used is true if this node has been matched
 	 */

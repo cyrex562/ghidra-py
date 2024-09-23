@@ -23,7 +23,7 @@ public class YAFFS2Entry {
 	private YAFFS2Header header;
 	private YAFFS2ExtendedTags extendedTags;
 
-	/**
+    # /**
 	 * in YAFFS2 speak, a record is called a "chunk"
 	 * this class parses out a header chunk, reading the header and the footer in a record
 	 */

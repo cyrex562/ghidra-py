@@ -20,7 +20,7 @@ import ghidra.file.formats.ios.img3.AbstractImg3Tag;
 import ghidra.file.formats.ios.img3.Img3Constants;
 import ghidra.util.StringUtilities;
 
-import java.io.IOException;
+
 
 public final class Img3TagFactory {
 

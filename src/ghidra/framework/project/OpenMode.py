@@ -23,21 +23,21 @@ import ghidra.framework.model.DomainObject;
  * may impose restrictions on which modes are supported.
  */
 public enum OpenMode {
-	/**
+    # /**
 	 * Creating new domain object.
 	 * This mode is generally not supported by {@link DomainObject} object constructors since
 	 * object creation would generally have a dedicated constructor.
 	 */
 	CREATE,
-	/**
+    # /**
 	 * Domain object opened as an immutable instance
 	 */
 	IMMUTABLE,
-	/**
+    # /**
 	 * Domain object opened for modification
 	 */
 	UPDATE,
-	/**
+    # /**
 	 * Domain object opened for modification with data upgrade permitted.
 	 */
 	UPGRADE,

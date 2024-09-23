@@ -15,7 +15,7 @@
  */
 package ghidra.app.decompiler;
 
-import java.io.*;
+
 
 import generic.concurrent.*;
 import ghidra.util.task.TaskMonitor;

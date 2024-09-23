@@ -17,7 +17,7 @@ package ghidra.file.formats.ios.fileset;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.*;
@@ -46,7 +46,7 @@ public class MachoFileSetFileSystem extends AbstractFileSystem<MachoFileSetEntry
 	private MachHeader header;
 	private Map<MachoFileSetEntry, List<SegmentCommand>> entrySegmentMap;
 
-	/**
+    # /**
 	 * Creates a new {@link MachoFileSetFileSystem}
 	 * 
 	 * @param fsFSRL {@link FSRLRoot} of this file system
@@ -58,7 +58,7 @@ public class MachoFileSetFileSystem extends AbstractFileSystem<MachoFileSetEntry
 		this.entrySegmentMap = new HashMap<>();
 	}
 
-	/**
+    # /**
 	 * Mounts this file system
 	 * 
 	 * @param monitor {@link TaskMonitor}
@@ -155,7 +155,7 @@ public class MachoFileSetFileSystem extends AbstractFileSystem<MachoFileSetEntry
 		return result;
 	}
 
-	/**
+    # /**
 	 * Gets the open Mach-O file set {@link ByteProvider}.  This is the original
 	 * {@link ByteProvider} that this file system opened.
 	 * 
@@ -165,7 +165,7 @@ public class MachoFileSetFileSystem extends AbstractFileSystem<MachoFileSetEntry
 		return provider;
 	}
 
-	/**
+    # /**
 	 * {@return the map of file set entry segments}
 	 */
 	public Map<MachoFileSetEntry, List<SegmentCommand>> getEntrySegmentMap() {

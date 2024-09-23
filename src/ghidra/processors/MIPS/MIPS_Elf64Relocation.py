@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf.relocation;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.elf.ElfHeader;
@@ -34,7 +34,7 @@ public class MIPS_Elf64Relocation extends ElfRelocation {
 	private int specialSymbolIndex;
 	private int type; // contains upto 3 relocation types (1-byte each)
 
-	/**
+    # /**
 	 * Construction an uninitialized relocation instance
 	 */
 	public MIPS_Elf64Relocation() {
@@ -62,7 +62,7 @@ public class MIPS_Elf64Relocation extends ElfRelocation {
 		return symbolIndex;
 	}
 
-	/**
+    # /**
 	 * Return the special symbol index associated with this relocation.  This symbol
 	 * may be used by the 2nd relocation of a compound relocations.
 	 * @return special symbol index (r_ssym)
@@ -71,7 +71,7 @@ public class MIPS_Elf64Relocation extends ElfRelocation {
 		return specialSymbolIndex;
 	}
 
-	/**
+    # /**
 	 * MIPS-64 supports upto 3-relocations to be packed into a single relocation entry (r_type3, r_type2, r_type1).
 	 * @return MIPS-64 packed relocation type (contains upto three 1-byte types)
 	 */

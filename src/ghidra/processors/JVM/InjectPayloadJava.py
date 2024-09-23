@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pcodeInject;
 
-import java.io.IOException;
+
 
 import ghidra.app.plugin.processors.sleigh.SleighLanguage;
 import ghidra.javaclass.format.ClassFileAnalysisState;

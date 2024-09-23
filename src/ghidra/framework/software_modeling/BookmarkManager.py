@@ -41,18 +41,18 @@ public interface BookmarkManager {
 	// supported by this bookmark manager.
 	//
 
-	/**
+    # /**
 	 * 1st version of bookmark property object class (schema change and class moved)
 	 */
 	public static final String OLD_BOOKMARK_PROPERTY_OBJECT_CLASS1 =
 		"ghidra.app.plugin.bookmark.BookmarkInfo";
 
-	/**
+    # /**
 	 * 2nd version of bookmark property object class (class moved, property map no longer used)
 	 */
 	public static final String OLD_BOOKMARK_PROPERTY_OBJECT_CLASS2 = "ghidra.program.util.Bookmark";
 
-	/**
+    # /**
 	 * Define a bookmark type with its marker icon and color.  The icon and color
 	 * values are not permanently stored.  Therefor, this method must be re-invoked
 	 * by a plugin each time a program is opened if a custom icon and color 
@@ -66,27 +66,27 @@ public interface BookmarkManager {
 	 */
 	BookmarkType defineType(String type, Icon icon, Color color, int priority);
 
-	/**
+    # /**
 	 * Returns list of known bookmark types
 	 * @return list of known bookmark types
 	 */
 	BookmarkType[] getBookmarkTypes();
 
-	/**
+    # /**
 	 * Get a bookmark type
 	 * @param type bookmark type name
 	 * @return bookmark type or null if type is unknown
 	 */
 	BookmarkType getBookmarkType(String type);
 
-	/**
+    # /**
 	 * Get list of categories used for a specified type
 	 * @param type bookmark type
 	 * @return array of category strings
 	 */
 	String[] getCategories(String type);
 
-	/**
+    # /**
 	 * Set a bookmark.
 	 * @param addr the address at which to set a bookmark
 	 * @param type the name of the bookmark type.
@@ -96,7 +96,7 @@ public interface BookmarkManager {
 	 */
 	Bookmark setBookmark(Address addr, String type, String category, String comment);
 
-	/**
+    # /**
 	 * Get a specific bookmark
 	 * @param addr the address of the bookmark to retrieve
 	 * @param type the name of the bookmark type.
@@ -105,19 +105,19 @@ public interface BookmarkManager {
 	 */
 	Bookmark getBookmark(Address addr, String type, String category);
 
-	/**
+    # /**
 	 * Remove bookmark 
 	 * @param bookmark the bookmark to remove.
 	 */
 	void removeBookmark(Bookmark bookmark);
 
-	/**
+    # /**
 	 * Removes all bookmarks of the given type.
 	 * @param type bookmark type
 	 */
 	void removeBookmarks(String type);
 
-	/**
+    # /**
 	 * Removes all bookmarks with the given type and category.
 	 * @param type the type of the bookmarks to be removed.
 	 * @param category bookmark category of the types to be removed.
@@ -127,7 +127,7 @@ public interface BookmarkManager {
 	void removeBookmarks(String type, String category, TaskMonitor monitor)
 			throws CancelledException;
 
-	/**
+    # /**
 	 * Removes all bookmarks over the given address set.
 	 * @param set the set of addresses from which to remove all bookmarks.
 	 * @param monitor a task monitor to report the progress.
@@ -135,7 +135,7 @@ public interface BookmarkManager {
 	 */
 	void removeBookmarks(AddressSetView set, TaskMonitor monitor) throws CancelledException;
 
-	/**
+    # /**
 	 * Removes all bookmarks of the given type over the given address set
 	 * @param set the set of addresses from which to remove all bookmarks of the given type.
 	 * @param type the type of bookmarks to remove.
@@ -145,7 +145,7 @@ public interface BookmarkManager {
 	void removeBookmarks(AddressSetView set, String type, TaskMonitor monitor)
 			throws CancelledException;
 
-	/**
+    # /**
 	 * Removes all bookmarks of the given type and category over the given address set
 	 * @param set the set of addresses from which to remove all bookmarks of the given type and category.
 	 * @param type the type of bookmarks to remove.
@@ -156,7 +156,7 @@ public interface BookmarkManager {
 	void removeBookmarks(AddressSetView set, String type, String category, TaskMonitor monitor)
 			throws CancelledException;
 
-	/**
+    # /**
 	 * Get bookmarks of the indicated type on a specific address
 	 * @param address the address at which to search for bookmarks.
 	 * @param type bookmark type to search for
@@ -164,34 +164,34 @@ public interface BookmarkManager {
 	 */
 	Bookmark[] getBookmarks(Address address, String type);
 
-	/**
+    # /**
 	 * Get all bookmarks on a specific address
 	 * @param addr the address at which to retrieve all bookmarks.
 	 * @return array of bookmarks
 	 */
 	public Bookmark[] getBookmarks(Address addr);
 
-	/**
+    # /**
 	 * Get addresses for bookmarks of a specified type.
 	 * @param type bookmark type
 	 * @return address set containing bookmarks of the specified type.
 	 */
 	AddressSetView getBookmarkAddresses(String type);
 
-	/**
+    # /**
 	 * Get iterator over all bookmarks of the specified type.
 	 * @param type the bookmark type to search for
 	 * @return an iterator over all bookmarks of the specified type.
 	 */
 	Iterator<Bookmark> getBookmarksIterator(String type);
 
-	/**
+    # /**
 	 * Returns an iterator over all bookmarks
 	 * @return an iterator over all bookmarks
 	 */
 	Iterator<Bookmark> getBookmarksIterator();
 
-	/**
+    # /**
 	 * Returns an iterator over all bookmark types, starting at the given address, with traversal
 	 * in the given direction.
 	 * 
@@ -203,34 +203,34 @@ public interface BookmarkManager {
 	 */
 	Iterator<Bookmark> getBookmarksIterator(Address startAddress, boolean forward);
 
-	/**
+    # /**
 	 * Returns the bookmark that has the given id or null if no such bookmark exists.
 	 * @param id the id of the bookmark to be retrieved.
 	 * @return the bookmark
 	 */
 	Bookmark getBookmark(long id);
 
-	/**
+    # /**
 	 * Returns true if program contains one or more bookmarks of the given type
 	 * @param type the type of bookmark to check for.
 	 * @return true if program contains one or more bookmarks of the given type
 	 */
 	boolean hasBookmarks(String type);
 
-	/**
+    # /**
 	 * Return the number of bookmarks of the given type
 	 * @param type the type of bookmarks to count
 	 * @return the number of bookmarks of the given type
 	 */
 	int getBookmarkCount(String type);
 
-	/**
+    # /**
 	 * Returns the total number of bookmarks in the program
 	 * @return the total number of bookmarks in the program
 	 */
 	int getBookmarkCount();
 
-	/**
+    # /**
 	 * Returns the program associated with this BookmarkManager.
 	 * @return the program associated with this BookmarkManager.
 	 */

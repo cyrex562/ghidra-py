@@ -22,7 +22,7 @@ public class FormatArgument {
 	private String lengthModifier;
 	private String conversionSpecifier;
 
-	/**
+    # /**
 	 * Constructor for a FormatArg
 	 * 
 	 * @param lengthModifier length modifier of a format argument
@@ -33,7 +33,7 @@ public class FormatArgument {
 		this.conversionSpecifier = conversionSpec;
 	}
 
-	/**
+    # /**
 	 * lenghtModifier getter
 	 * 
 	 * @return lengthModifier
@@ -42,7 +42,7 @@ public class FormatArgument {
 		return this.lengthModifier;
 	}
 
-	/**
+    # /**
 	 * convertionSpec getter
 	 * 
 	 * @return conversionSpecifier
@@ -51,7 +51,7 @@ public class FormatArgument {
 		return this.conversionSpecifier;
 	}
 
-	/**
+    # /**
 	 * Converts FormatArg to String
 	 * 
 	 * @return FormatArgument as String

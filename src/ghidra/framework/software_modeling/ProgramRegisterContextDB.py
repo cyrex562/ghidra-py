@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.register;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 
@@ -160,7 +160,7 @@ public class ProgramRegisterContextDB extends AbstractStoredProgramContext imple
 		}
 	}
 
-	/**
+    # /**
 	 * Intialize context with default values defined by pspec and cspec.
 	 * NOTE: cspec values take precedence
 	 * @param lang processor language
@@ -292,7 +292,7 @@ public class ProgramRegisterContextDB extends AbstractStoredProgramContext imple
 		}
 	}
 
-	/**
+    # /**
 	 * Perform context upgrade due to a language change
 	 * @param translator language translator required by major upgrades (may be null)
 	 * @param newCompilerSpec new compiler specification

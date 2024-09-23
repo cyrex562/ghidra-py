@@ -15,7 +15,7 @@
  */
 package agent.dbgeng.model;
 
-import java.io.IOException;
+
 import java.util.concurrent.CompletableFuture;
 
 import agent.dbgeng.manager.DbgManager;

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.macho.commands;
 
-import java.io.IOException;
+
 
 import ghidra.app.cmd.formats.MachoBinaryAnalysisCommand;
 import ghidra.app.util.bin.BinaryReader;

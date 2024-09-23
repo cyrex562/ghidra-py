@@ -31,7 +31,7 @@ public class C13CrossScopeExport {
 		globalId = reader.parseUnsignedIntVal();
 	}
 
-	/**
+    # /**
 	 * Returns the local ID
 	 * @return the local ID
 	 */
@@ -39,7 +39,7 @@ public class C13CrossScopeExport {
 		return localId;
 	}
 
-	/**
+    # /**
 	 * Returns the global ID
 	 * @return the global ID
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.utils;
 
-import java.io.*;
+
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 

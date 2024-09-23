@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -56,7 +56,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdbIn {@link AbstractPdb} that owns the Public Symbol Information to process
 	 * @param streamNumber the stream number containing the symbol information
@@ -65,7 +65,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		super(pdbIn, streamNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the number of thunks in the thunk table
 	 * @return the number of thunks
 	 */
@@ -73,7 +73,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return numThunks;
 	}
 
-	/**
+    # /**
 	 * Returns the section within which the thunk table is located
 	 * @return the section of the thunk table
 	 */
@@ -81,7 +81,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return iSectionThunkTable;
 	}
 
-	/**
+    # /**
 	 * Returns the offset of the thunk table within the section it is located
 	 * @return the offset of the thunk table
 	 */
@@ -89,7 +89,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return offsetThunkTable;
 	}
 
-	/**
+    # /**
 	 * Returns the size of each thunk in the thunk table
 	 * @return the size of a thunk
 	 */
@@ -97,7 +97,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return thunkSize;
 	}
 
-	/**
+    # /**
 	 * Returns the overall length of the thunk table
 	 * @return the thunk table length
 	 */
@@ -105,7 +105,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return thunkTableLength;
 	}
 
-	/**
+    # /**
 	 * Returns the number of sections recorded for the program
 	 * @return the number of sections
 	 */
@@ -113,7 +113,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return numSections;
 	}
 
-	/**
+    # /**
 	 * Returns the Offsets of symbols within the symbol table gotten from the address map.  These
 	 *  offsets to point to the size field of the symbols in the symbol table
 	 * @return offsets
@@ -134,7 +134,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the Thunk Target Offsets by Table Offset
 	 * @return the map
 	 * @throws PdbException upon not enough data left to parse
@@ -155,7 +155,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the Absolute Offsets by Section Number map
 	 * @return the map
 	 * @throws PdbException upon not enough data left to parse
@@ -179,7 +179,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes and intializes {@link PublicSymbolInformation} basic information from the
 	 * appropriate stream in the Pdb so that later queries can be made
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -194,7 +194,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		deserializeHashHeader();
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping information from this {@link PublicSymbolInformation}
 	 * @param writer {@link Writer} to which to dump the information
 	 * @throws IOException issue reading PDBor upon issue writing to the {@link Writer}
@@ -220,7 +220,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 	//==============================================================================================
 	// Private Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes the Address Map for these public symbols
 	 * @param reader {@link PdbByteReader} containing the data buffer to process
 	 * @throws PdbException upon not enough data left to parse
@@ -236,7 +236,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return myAddressMapSymbolOffsets;
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping Address Map information from this {@link AbstractSymbolInformation}
 	 * @param writer the writer
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -257,7 +257,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		writer.write("\nEnd AddressMapSymbolOffsets---------------------------------\n");
 	}
 
-	/**
+    # /**
 	 * Deserializes the Thunk Map for these public symbols
 	 * @param reader {@link PdbByteReader} containing the data buffer to process
 	 * @throws PdbException upon not enough data left to parse
@@ -276,7 +276,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return myThunkTargetOffsetsByTableOffset;
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping Thunk Map information from this {@link AbstractSymbolInformation}
 	 * @param writer the writer
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -298,7 +298,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		writer.write("\nEnd ThunkMap------------------------------------------------\n");
 	}
 
-	/**
+    # /**
 	 * Deserializes the Section Map for these public symbols
 	 * @param reader {@link PdbByteReader} containing the data buffer to process
 	 * @throws PdbException upon not enough data left to parse
@@ -317,7 +317,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		return myAbsoluteOffsetsBySectionNumber;
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping Section Map information from this {@link AbstractSymbolInformation}
 	 * @param writer the writer
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -339,7 +339,7 @@ public class PublicSymbolInformation extends AbstractSymbolInformation {
 		writer.write("\nEnd SectionMap----------------------------------------------\n");
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping the {@link PublicSymbolInformation} header
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer

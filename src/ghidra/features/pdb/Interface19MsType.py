@@ -47,7 +47,7 @@ public class Interface19MsType extends AbstractCompositeMsType {
 
 	private static final String TYPE_STRING = "interface";
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

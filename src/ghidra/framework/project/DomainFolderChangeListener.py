@@ -21,7 +21,7 @@ package ghidra.framework.model;
  */
 public interface DomainFolderChangeListener {
 
-	/**
+    # /**
 	 * Notification that a folder is added to parent.
 	 * @param folder domain folder which was just added.
 	 */
@@ -29,7 +29,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that a file is added to parent folder. You can
 	 * get the parent from the file.
 	 * @param file domain file which was just added.
@@ -38,7 +38,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that a domain folder is removed.
 	 * @param parent domain folder which contained the folder that was just removed.
 	 * @param name the name of the folder that was removed.
@@ -47,7 +47,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that a file was removed
 	 * @param parent domain folder which contained the file that was just removed.
 	 * @param name the name of the file that was removed.
@@ -57,7 +57,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notify listeners when a domain folder is renamed.
 	 * @param folder folder that was renamed
 	 * @param oldName old name of folder
@@ -66,7 +66,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that the domain file was renamed.
 	 * @param file file that was renamed
 	 * @param oldName old name of the file
@@ -75,7 +75,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that the domain folder was moved.
 	 * @param folder the folder (after move)
 	 * @param oldParent original parent folder
@@ -84,7 +84,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that the domain file was moved.
 	 * @param file the file (after move)
 	 * @param oldParent original parent folder
@@ -94,7 +94,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that the setActive() method on the folder was called.
 	 * @param folder folder which was activated/visited
 	 */
@@ -102,7 +102,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that the status for a domain file has changed.
 	 * @param file file whose status has changed.
 	 * @param fileIDset if true indicates that the previously missing fileID has been
@@ -112,7 +112,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that a domain file has been opened for update.
 	 * @param file domain file
 	 * @param object domain object open for update
@@ -121,7 +121,7 @@ public interface DomainFolderChangeListener {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Notification that a domain file previously open for update is in the process of closing.
 	 * @param file domain file
 	 * @param object domain object which was open for update

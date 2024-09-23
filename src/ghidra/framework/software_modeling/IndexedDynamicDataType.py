@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.Hashtable;
@@ -25,24 +25,24 @@ import ghidra.util.Conv;
 import ghidra.util.Msg;
 
 # /**
- * Indexed Dynamic Data Type template.  Used to create instances of the data type at
- * a given location in memory based on the data found there.
- * 
- * This data struture is used when there is a structure with key field in a header.
- * The key field, which is a number, sets which of a number of structures follows the header.
- * 
- *     Header
- *        field a
- *        field b
- *        keyfield (value 1 means struct1 follows
- *                  value 2 means struct2 follows
- *                  .....
- *                  value n means structN follows
- *     Struct1 | Struct2 | ..... | StructN
- */
+# * Indexed Dynamic Data Type template.  Used to create instances of the data type at
+# * a given location in memory based on the data found there.
+# * 
+# * This data struture is used when there is a structure with key field in a header.
+# * The key field, which is a number, sets which of a number of structures follows the header.
+# * 
+# *     Header
+# *        field a
+# *        field b
+# *        keyfield (value 1 means struct1 follows
+# *                  value 2 means struct2 follows
+# *                  .....
+# *                  value n means structN follows
+# *     Struct1 | Struct2 | ..... | StructN
+# */
 public abstract class IndexedDynamicDataType extends DynamicDataType {
 
-	/**
+    # /**
 	 * Structures which do not have a body  
 	 */
 	public static final String NULL_BODY_DESCRIPTION = "NullBody";
@@ -57,7 +57,7 @@ public abstract class IndexedDynamicDataType extends DynamicDataType {
 
 	private Hashtable<Long, Integer> table = new Hashtable<Long, Integer>();
 
-	/**
+    # /**
 	 * Construct and the Index dynamic data type template.
 	 * 
 	 * @param name        name of the data type
@@ -93,7 +93,7 @@ public abstract class IndexedDynamicDataType extends DynamicDataType {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct the Indexed dynamic data type template.
 	 * Used when there is one of two structures following and a single value tells which one.
 	 * If the key value in the header structure matches the singleKey, then the first structure is used.
@@ -133,7 +133,7 @@ public abstract class IndexedDynamicDataType extends DynamicDataType {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DynamicDataType#getAllComponents(ghidra.program.model.mem.MemBuffer)
 	 */
 	@Override
@@ -202,7 +202,7 @@ public abstract class IndexedDynamicDataType extends DynamicDataType {
 		return comps;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#getDescription()
 	 */
 	@Override
@@ -210,7 +210,7 @@ public abstract class IndexedDynamicDataType extends DynamicDataType {
 		return description;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#getValue(ghidra.program.model.mem.MemBuffer, ghidra.docking.settings.Settings, int)
 	 */
 	@Override
@@ -218,7 +218,7 @@ public abstract class IndexedDynamicDataType extends DynamicDataType {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#getRepresentation(ghidra.program.model.mem.MemBuffer, ghidra.docking.settings.Settings, int)
 	 */
 	@Override

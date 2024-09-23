@@ -34,7 +34,7 @@ import ghidra.program.model.symbol.*;
 public final class AssemblyNumericSymbols {
 	public static final AssemblyNumericSymbols EMPTY = new AssemblyNumericSymbols();
 
-	/**
+    # /**
 	 * Collect labels derived from memory-mapped registers in a language
 	 * 
 	 * <p>
@@ -73,7 +73,7 @@ public final class AssemblyNumericSymbols {
 		return streamAddresses(sym).filter(a -> !a.isExternalAddress());
 	}
 
-	/**
+    # /**
 	 * Collect equates from the program's database
 	 * 
 	 * @param equates the destination map
@@ -90,7 +90,7 @@ public final class AssemblyNumericSymbols {
 		return equates;
 	}
 
-	/**
+    # /**
 	 * Get symbols from a language, when no program is available
 	 * 
 	 * @param language the language
@@ -100,7 +100,7 @@ public final class AssemblyNumericSymbols {
 		return new AssemblyNumericSymbols(language);
 	}
 
-	/**
+    # /**
 	 * Get symbols from a program (and its language)
 	 * 
 	 * @param program the program
@@ -132,7 +132,7 @@ public final class AssemblyNumericSymbols {
 		this.languageLabels = collectLanguageLabels(program.getLanguage());
 	}
 
-	/**
+    # /**
 	 * Choose any symbol with the given name
 	 * 
 	 * <p>
@@ -156,7 +156,7 @@ public final class AssemblyNumericSymbols {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Choose a label with the given name in the given space
 	 * 
 	 * @param name the name
@@ -180,7 +180,7 @@ public final class AssemblyNumericSymbols {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Choose a symbol with the given name, using the space as a hint
 	 * 
 	 * <p>
@@ -255,7 +255,7 @@ public final class AssemblyNumericSymbols {
 		}
 	}
 
-	/**
+    # /**
 	 * Suggest up to max symbols having the given prefix
 	 * 
 	 * @param got the prefix
@@ -277,7 +277,7 @@ public final class AssemblyNumericSymbols {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Suggest up to max symbols from the given space having the given prefix
 	 * 
 	 * @param got the prefix
@@ -299,7 +299,7 @@ public final class AssemblyNumericSymbols {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Suggest up to max symbols having the given prefix, using space as a hint
 	 * 
 	 * <p>

@@ -53,7 +53,7 @@ public class RttiUtil {
 		// utility class; can't create
 	}
 
-	/**
+    # /**
 	 * Function that will create a symbol based on the <code>rttiSuffix</code>, which is in the 
 	 * class or namespace that is indicated by the <code>demangledType</code> string.
 	 * 
@@ -103,7 +103,7 @@ public class RttiUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to promote the given namespace to a class namespace
 	 * @param program the given program
 	 * @param namespace the given namespace
@@ -123,7 +123,7 @@ public class RttiUtil {
 		return namespace;
 	}
 
-	/**
+    # /**
 	 * Determines the number of vf addresses in the vf table that begins at the specified base 
 	 * address.
 	 * @param program the program whose memory is providing their addresses
@@ -190,7 +190,7 @@ public class RttiUtil {
 		return tableSize;
 	}
 
-	/**
+    # /**
 	 * Method to determine if there certain types of references to the given address that would
 	 * indicate the end of a vftable
 	 * @param address the address of a possible pointer in a vftable
@@ -227,7 +227,7 @@ public class RttiUtil {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the namespace referred to by the type descriptor model if it can determine the 
 	 * namespace. Otherwise it returns the empty string.
 	 * @param rtti0Model the model for the type descriptor whose namespace is to be returned.
@@ -241,7 +241,7 @@ public class RttiUtil {
 		return descriptorTypeNamespace;
 	}
 
-	/**
+    # /**
 	 * Identify common TypeInfo address through examination of discovered VtTables
 	 */
 	private static class CommonRTTIMatchCounter implements TerminatingConsumer<Address> {
@@ -300,7 +300,7 @@ public class RttiUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to figure out the type_info vftable address using pointed to value by all RTTI classes
 	 * @param program the current program
 	 * @param monitor the TaskMonitor
@@ -338,7 +338,7 @@ public class RttiUtil {
 		return infoVftableAddress;
 	}
 
-	/**
+    # /**
 	 * find type info vftable by existing type_info::vftable symbol
 	 * @param program program to check
 	 * @return return vftable addr if symbol exists
@@ -366,7 +366,7 @@ public class RttiUtil {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to create type_info vftable label (and namespace if needed) at the given address
 	 * @param program the current program
 	 * @param address the given address

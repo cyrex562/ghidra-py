@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.mdmp;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.StructConverter;
 import ghidra.file.formats.dump.DumpFileReader;
@@ -50,7 +50,7 @@ public class Token implements StructConverter {
 
 	}
 
-	/**
+    # /**
 	 * @see ghidra.app.util.bin.StructConverter#toDataType()
 	 */
 	public DataType toDataType() throws DuplicateNameException {

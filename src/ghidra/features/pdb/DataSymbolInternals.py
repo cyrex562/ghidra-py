@@ -76,7 +76,7 @@ public class DataSymbolInternals extends AbstractSymbolInternals {
 
 	private boolean emitToken;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param emitToken Indicates whether typeIndex field is a token or default
@@ -87,7 +87,7 @@ public class DataSymbolInternals extends AbstractSymbolInternals {
 		this.emitToken = emitToken;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -95,7 +95,7 @@ public class DataSymbolInternals extends AbstractSymbolInternals {
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -103,7 +103,7 @@ public class DataSymbolInternals extends AbstractSymbolInternals {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -111,7 +111,7 @@ public class DataSymbolInternals extends AbstractSymbolInternals {
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

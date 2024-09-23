@@ -58,7 +58,7 @@ public class NameVersions {
 		return name;
 	}
 
-	/**
+    # /**
 	 * If there exists an initial set of template parameters bracketed by '<' and '>'
 	 * in the given demangled name, strip them.
 	 * @param demangledObj is the object holding the demangled name

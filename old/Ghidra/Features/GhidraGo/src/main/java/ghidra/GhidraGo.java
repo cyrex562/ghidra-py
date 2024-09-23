@@ -15,7 +15,7 @@
  */
 package ghidra;
 
-import java.io.IOException;
+
 import java.nio.file.Path;
 
 import docking.framework.DockingApplicationConfiguration;

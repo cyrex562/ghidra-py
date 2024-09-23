@@ -49,7 +49,7 @@ public class RepositoryChangeEvent implements Serializable {
 	public final String newParentPath;
 	public final String newName;
 
-	/**
+    # /**
 	 * Constructor.
 	 * Parameters not applicable to the specified type may be null.
 	 * @param type event type

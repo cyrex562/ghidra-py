@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.pagedump;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.StructConverter;

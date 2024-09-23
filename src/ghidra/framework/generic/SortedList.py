@@ -29,7 +29,7 @@ import ghidra.generic.util.datastruct.ValueSortedMap.LesserList;
  * @param <E> the type of elements in this list
  */
 public interface SortedList<E> extends LesserList<E> {
-	/**
+    # /**
 	 * Returns the greatest index in this list whose element is strictly less than the specified
 	 * element
 	 * 
@@ -38,7 +38,7 @@ public interface SortedList<E> extends LesserList<E> {
 	 */
 	int lowerIndex(E element);
 
-	/**
+    # /**
 	 * Returns the greatest index in this list whose element is less than or equal to the specified
 	 * element
 	 * 
@@ -50,7 +50,7 @@ public interface SortedList<E> extends LesserList<E> {
 	 */
 	int floorIndex(E element);
 
-	/**
+    # /**
 	 * Returns the least index in this list whose element is greater than or equal to the specified
 	 * element
 	 * 
@@ -62,7 +62,7 @@ public interface SortedList<E> extends LesserList<E> {
 	 */
 	int ceilingIndex(E element);
 
-	/**
+    # /**
 	 * Returns the least index in this list whose element is strictly greater the specified element
 	 * 
 	 * @param element the element to search for

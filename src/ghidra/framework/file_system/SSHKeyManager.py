@@ -15,7 +15,7 @@
  */
 package ghidra.framework.remote.security;
 
-import java.io.*;
+
 import java.security.InvalidKeyException;
 import java.security.Security;
 import java.util.Arrays;
@@ -46,7 +46,7 @@ public class SSHKeyManager {
 		// static class--can't create
 	}
 
-	/**
+    # /**
 	 * Set PKI protected keystore password provider
 	 * @param provider key store password provider
 	 */
@@ -55,7 +55,7 @@ public class SSHKeyManager {
 		passwordProvider = provider;
 	}
 
-	/**
+    # /**
 	 * Return the SSH private key corresponding to the specified key file.
 	 * If the specified key file is encrypted the currently installed password
 	 * provider will be used to obtain the decrypt password.
@@ -77,7 +77,7 @@ public class SSHKeyManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Return the SSH private key corresponding to the specified key input stream.
 	 * If the specified key is encrypted the currently installed password
 	 * provider will be used to obtain the decrypt password.
@@ -153,7 +153,7 @@ public class SSHKeyManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Attempt to instantiate an SSH public key from the specified file
 	 * which contains a single public key.
 	 * @param sshPublicKeyFile public ssh key file

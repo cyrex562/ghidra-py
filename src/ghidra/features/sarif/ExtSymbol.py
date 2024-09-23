@@ -55,7 +55,7 @@ public class ExtSymbol implements IsfObject {
 		//}
 	}
 
-	/**
+    # /**
 	 * Returns the name of symbol qualified with any namespace information. For
 	 * example, "User32.dll::SomeClass::printf".
 	 */

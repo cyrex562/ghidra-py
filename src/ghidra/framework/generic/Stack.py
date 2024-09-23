@@ -38,14 +38,14 @@ import java.util.stream.StreamSupport;
 public class Stack<E> implements Iterable<E> {
 	protected List<E> list;
 
-	/**
+    # /**
 	 * Creates an empty Stack.
 	 */
 	public Stack() {
 		list = new ArrayList<E>();
 	}
 
-	/**
+    # /**
 	 * Creates an empty Stack with specified capacity.
 	 * @param initialCapacity the initial capacity.
 	 */
@@ -53,7 +53,7 @@ public class Stack<E> implements Iterable<E> {
 		list = new ArrayList<E>(initialCapacity);
 	}
 
-	/**
+    # /**
 	 * Copy Constructor.
 	 * Creates a new stack using the items of the given stack.
 	 * Only a shallow copy is performed.
@@ -63,28 +63,28 @@ public class Stack<E> implements Iterable<E> {
 		list = new ArrayList<E>(stack.list);
 	}
 
-	/**
+    # /**
 	 * Tests if this stack is empty.
 	 */
 	public boolean isEmpty() {
 		return (list.size() == 0);
 	}
 
-	/**
+    # /**
 	 * Looks at the object at the top of this stack without removing it from the stack.
 	 */
 	public E peek() {
 		return (list.size() > 0 ? list.get(list.size() - 1) : null);
 	}
 
-	/**
+    # /**
 	 * Removes the object at the top of this stack and returns that object as the value of this function.
 	 */
 	public E pop() {
 		return (list.size() > 0 ? list.remove(list.size() - 1) : null);
 	}
 
-	/**
+    # /**
 	 * Pushes an item onto the top of this stack.
 	 * @param item the object to push onto the stack.
 	 */
@@ -95,7 +95,7 @@ public class Stack<E> implements Iterable<E> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the position where an object is on this stack.
 	 * @param o the object to search for.
 	 */
@@ -103,7 +103,7 @@ public class Stack<E> implements Iterable<E> {
 		return list.indexOf(o);
 	}
 
-	/**
+    # /**
 	 * Returns the number of elements in this stack.
 	 * @return the number of elements in this stack
 	 */
@@ -111,7 +111,7 @@ public class Stack<E> implements Iterable<E> {
 		return list.size();
 	}
 
-	/**
+    # /**
 	 * Returns the element at the specified depth in this stack.
 	 * 0 indicates the bottom of the stack.
 	 * size()-1 indicates the top of the stack. 
@@ -122,7 +122,7 @@ public class Stack<E> implements Iterable<E> {
 		return list.get(depth);
 	}
 
-	/**
+    # /**
 	 * Appends the given item to the top of the stack.
 	 * @param item the new top of the stack
 	 */
@@ -130,14 +130,14 @@ public class Stack<E> implements Iterable<E> {
 		list.add(item);
 	}
 
-	/**
+    # /**
 	 * Clears the stack. All items will be removed.
 	 */
 	public void clear() {
 		list.clear();
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over the items of the stack.
 	 * The iterator starts from the bottom of the stack.
 	 * @return an iterator over the items of the stack
@@ -147,7 +147,7 @@ public class Stack<E> implements Iterable<E> {
 		return list.iterator();
 	}
 
-	/**
+    # /**
 	 * Returns a stream over this collection.
 	 * 
 	 * @return a stream over this collection.

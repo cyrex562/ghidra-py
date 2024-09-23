@@ -57,7 +57,7 @@ public class MsSymbolIterator implements Iterator<AbstractMsSymbol> {
 		return (symLen != null);
 	}
 
-	/**
+    # /**
 	 * Peeks at and returns the next symbol without incrementing to the next.  If none are
 	 * left, then throws NoSuchElementException and reinitializes the state for a new
 	 * iteration.
@@ -103,7 +103,7 @@ public class MsSymbolIterator implements Iterator<AbstractMsSymbol> {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the next symbol.  If none are left, then throws NoSuchElementException and
 	 * reinitializes the state for a new iteration.
 	 * @see #initGet()
@@ -114,7 +114,7 @@ public class MsSymbolIterator implements Iterator<AbstractMsSymbol> {
 		return currentOffset;
 	}
 
-	/**
+    # /**
 	 * Initialized the mechanism for requesting the symbols in sequence.
 	 * @see #hasNext()
 	 */
@@ -127,7 +127,7 @@ public class MsSymbolIterator implements Iterator<AbstractMsSymbol> {
 		symLen = retrieveRecord();
 	}
 
-	/**
+    # /**
 	 * Initialized the mechanism for requesting the symbols in sequence.
 	 * @param offset the offset to which to initialize the mechanism.
 	 * @see #hasNext()
@@ -139,7 +139,7 @@ public class MsSymbolIterator implements Iterator<AbstractMsSymbol> {
 		symLen = retrieveRecord();
 	}
 
-	/**
+    # /**
 	 * Returns the stream number
 	 * @return the stream number
 	 */

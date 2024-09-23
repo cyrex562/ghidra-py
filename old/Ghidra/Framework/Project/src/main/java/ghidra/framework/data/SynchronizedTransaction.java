@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.framework.model.AbortedTransactionListener;

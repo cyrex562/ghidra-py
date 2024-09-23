@@ -15,7 +15,7 @@
  */
 package ghidra.app.script;
 
-import java.io.*;
+
 import java.util.regex.Pattern;
 
 import generic.jar.ResourceFile;

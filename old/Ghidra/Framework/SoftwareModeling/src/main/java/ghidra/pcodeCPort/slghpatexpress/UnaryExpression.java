@@ -15,7 +15,7 @@
  */
 package ghidra.pcodeCPort.slghpatexpress;
 
-import java.io.IOException;
+
 
 import generic.stl.VectorSTL;
 import ghidra.program.model.pcode.Encoder;

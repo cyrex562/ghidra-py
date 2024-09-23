@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.util;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.DBRecord;
@@ -57,7 +57,7 @@ class AddressRangeMapIterator implements AddressRangeIterator {
 	private Address iteratorStart;
 	private Address iteratorEnd;
 
-	/**
+    # /**
 	 * Constructs an AddressRangeIterator over all ranges that have a defined value
 	 * @param rangeMap the AddressRangeMapDB to iterate over
 	 * @throws IOException if a database I/O exception occurs
@@ -71,7 +71,7 @@ class AddressRangeMapIterator implements AddressRangeIterator {
 		startRange = checkForStartRangeFromWrappingAddressRecord();
 	}
 
-	/**
+    # /**
 	 * Constructs an AddressRangeIterator over all ranges greater than the given start address
 	 * that have a defined value. If start is in the middle of a defined range, the first
 	 * range will be truncated to start with the given start address.
@@ -83,7 +83,7 @@ class AddressRangeMapIterator implements AddressRangeIterator {
 		this(rangeMap, start, null);
 	}
 
-	/**
+    # /**
 	 * Constructs an AddressRangeIterator over all ranges between the given start address and the
 	 * given end address that have a defined value. If start is in the middle of a defined range,
 	 * the first range returned will truncated to start with the given start address. 
@@ -178,7 +178,7 @@ class AddressRangeMapIterator implements AddressRangeIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Computes an address range for the given record. If a wrapping record (a record whose start
 	 * address is greater than its end address, so it really represents two ranges) is encountered,
 	 * it only returns the high range. The low range is specially found in the constructor and 
@@ -217,7 +217,7 @@ class AddressRangeMapIterator implements AddressRangeIterator {
 		return space1.equals(space2);
 	}
 
-	/**
+    # /**
 	 * Look for a start range that needs to be issued before any other ranges in the default
 	 * space.
 	 * <P> 
@@ -250,7 +250,7 @@ class AddressRangeMapIterator implements AddressRangeIterator {
 		return allAddresses.getMaxAddress();
 	}
 
-	/**
+    # /**
 	 * Make sure the range is within the iterator's given start and end range. This really only
 	 * matters for the first and last range returned by the iterator, but it hard to know when
 	 * the given range is the first or last, just just trim all returned ranges.

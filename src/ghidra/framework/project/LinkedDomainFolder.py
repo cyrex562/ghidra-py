@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-import java.io.IOException;
+
 
 import javax.swing.Icon;
 
@@ -27,14 +27,14 @@ import ghidra.framework.data.FolderLinkContentHandler;
  */
 public interface LinkedDomainFolder extends DomainFolder {
 
-	/**
+    # /**
 	 * Get the real domain folder which corresponds to this linked-folder.
 	 * @return domain folder
 	 * @throws IOException if an IO error occurs
 	 */
 	public DomainFolder getLinkedFolder() throws IOException;
 
-	/**
+    # /**
 	 * Get the appropriate icon for this folder
 	 * @param isOpen true if open icon, false for closed
 	 * @return folder icon

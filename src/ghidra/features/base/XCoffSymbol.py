@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.xcoff;
 
 import ghidra.app.util.bin.BinaryReader;
 
-import java.io.IOException;
+
 
 public class XCoffSymbol {
 	private final static char NL = '\n';

@@ -1,16 +1,16 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.ghidra;
 
-import java.io.IOException;
+
 
 /**
- * A class for reading data from a 
- * generic byte provider in either big-endian or little-endian.
- * 
- * 
- */
+# * A class for reading data from a 
+# * generic byte provider in either big-endian or little-endian.
+# * 
+# * 
+# */
 public class GBinaryReader {
     /**
      * The size of a BYTE in Java.
@@ -74,7 +74,7 @@ public class GBinaryReader {
 		return converter instanceof GDataConverterLE;
 	}
 
-	/**
+    # /**
 	 * Sets the endian of this binary reader.
 	 * @param isLittleEndian true for little-endian and false for big-endian
 	 */

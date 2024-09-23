@@ -20,7 +20,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader;
  */
 public class Hasher32V2 extends Hasher32 {
 
-	/**
+    # /**
 	 * Hashes (V2) {@link String}, using unsigned32BitMod, which the user should ensure
 	 *  is <= 0xffffffff.  Returns an unsigned integer value (32-bit) returned as a long.
 	 * @param string The input {@link String} to be hashed.

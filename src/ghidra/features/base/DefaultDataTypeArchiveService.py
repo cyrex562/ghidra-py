@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.datamgr.archive;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.debug.gui.memory;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.junit.*;

@@ -69,7 +69,7 @@ public class ConvertCharAction extends ConvertConstantAction {
 		return StringDataInstance.getCharRepresentation(ByteDataType.dataType, bytes, null);
 	}
 
-	/**
+    # /**
 	 * Return true for any unicode codepoint that needs to be represented with an escape sequence
 	 * @param codepoint is the code point value
 	 * @return true if the codepoint needs to be escaped

@@ -17,7 +17,7 @@ package ghidra.framework.project.extensions;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;

@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.jdi.model;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 

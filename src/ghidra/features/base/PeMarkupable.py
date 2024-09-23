@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.importer.MessageLog;
 import ghidra.program.model.listing.Program;

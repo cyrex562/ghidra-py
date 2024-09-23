@@ -33,7 +33,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 	private final Address minAddress; // minimum address in this range.
 	private final Address maxAddress; // maximum address in this range.
 
-	/**
+    # /**
 	 * Construct a new AddressRangeImpl from the given range.
 	 * @param range the address range to copy.
 	 */
@@ -42,7 +42,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		maxAddress = range.getMaxAddress();
 	}
 
-	/**
+    # /**
 	 * Construct an AddressRange with the given start and end address.
 	 * If the start address is before the end address,
 	 *   they are swapped to be in order.
@@ -67,7 +67,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct an AddressRange with the given start address and length.
 	 * @param start start address in the range
 	 * @param length the length of the range.
@@ -78,7 +78,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		maxAddress = start.addNoWrap(length - 1);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressRange#contains(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -92,7 +92,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return minAddress.getAddressSpace();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressRange#getMinAddress()
 	 */
 	@Override
@@ -100,7 +100,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return minAddress;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressRange#getMaxAddress()
 	 */
@@ -109,7 +109,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return maxAddress;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressRange#getLength()
 	 */
@@ -124,7 +124,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 			BigInteger.ONE);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
@@ -151,7 +151,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return minAddress.hashCode();
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressRange#compareTo(ghidra.program.model.address.Address)
 	 */
@@ -166,7 +166,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
@@ -175,7 +175,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return "[" + minAddress + ", " + maxAddress + "]";
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressRange#intersects(ghidra.program.model.address.AddressRange)
 	 */
@@ -184,7 +184,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return intersects(range.getMinAddress(), range.getMaxAddress());
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressRange#intersects(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
@@ -194,7 +194,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return (end.compareTo(minAddress) >= 0) && (start.compareTo(maxAddress) <= 0);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressRange#intersect(ghidra.program.model.address.AddressRange)
 	 */
@@ -203,7 +203,7 @@ public class AddressRangeImpl implements AddressRange, Serializable {
 		return intersectRange(range.getMinAddress(), range.getMaxAddress());
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressRange#intersectRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override

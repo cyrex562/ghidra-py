@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query;
 
-import java.io.*;
+
 import java.util.*;
 
 import javax.xml.parsers.*;
@@ -108,7 +108,7 @@ public interface FunctionDatabase extends AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Determine if the connected database supports a user password change.
 	 * @return true if a password change is permitted, else false.
 	 */
@@ -117,7 +117,7 @@ public interface FunctionDatabase extends AutoCloseable {
 			getConnectionType() == ConnectionType.SSL_Password_Authentication;
 	}
 
-	/**
+    # /**
 	 * Issue password change request to the server.
 	 * The method {@link #isPasswordChangeAllowed()} must be invoked first to ensure that
 	 * the user password may be changed.
@@ -147,22 +147,22 @@ public interface FunctionDatabase extends AutoCloseable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return the status of the current connection with this database
 	 */
 	public Status getStatus();
 
-	/**
+    # /**
 	 * @return the type of connection
 	 */
 	public ConnectionType getConnectionType();
 
-	/**
+    # /**
 	 * @return username (being used to establish connection)
 	 */
 	public String getUserName();
 
-	/**
+    # /**
 	 * Set a specific user name for connection.  Must be called before connection is initialized.
 	 * If this method is not called, connection will use user name of process
 	 * 
@@ -170,17 +170,17 @@ public interface FunctionDatabase extends AutoCloseable {
 	 */
 	public void setUserName(String userName);
 
-	/**
+    # /**
 	 * @return factory the database is using to create LSHVector objects
 	 */
 	public LSHVectorFactory getLSHVectorFactory();
 
-	/**
+    # /**
 	 * @return an information object giving general characteristics and descriptions of this database
 	 */
 	public DatabaseInformation getInfo();
 
-	/**
+    # /**
 	 * Return -1 if info layout version is earlier than current client expectation
 	 * Return 1 if info layout version is later than current client expectation
 	 * Return 0 if info version and client version are the same
@@ -188,39 +188,39 @@ public interface FunctionDatabase extends AutoCloseable {
 	 */
 	public int compareLayout();
 
-	/**
+    # /**
 	 * Return the {@link BSimServerInfo server info object} for this database
 	 * @return the server info object
 	 */
 	public BSimServerInfo getServerInfo();
 
-	/**
+    # /**
 	 * Get the 
 	 * @return
 	 */
 	@Deprecated
 	public String getURLString();
 
-	/**
+    # /**
 	 * Initialize (a connection with) the database. If initialization is not successful, this routine will
 	 * return false and an error description can be obtained using getLastError
 	 * @return true if the database ready for querying
 	 */
 	public boolean initialize();
 
-	/**
+    # /**
 	 * Close down (the connection with) the database
 	 */
 	@Override
 	public void close();
 
-	/**
+    # /**
 	 * If the last query failed to produce a response, use this method to recover the error message
 	 * @return a String describing the error
 	 */
 	public Error getLastError();
 
-	/**
+    # /**
 	 * Send a query to the database.  The response is returned as a QueryResponseRecord.
 	 * If this is null, an error has occurred and an error message can be obtained from getLastError
 	 * @param query an object describing the query
@@ -340,7 +340,7 @@ public interface FunctionDatabase extends AutoCloseable {
 		return config;
 	}
 
-	/**
+    # /**
 	 * Central location for building vector factory used by FunctionDatabase
 	 * @return the LSHVectorFactory object
 	 */
@@ -348,7 +348,7 @@ public interface FunctionDatabase extends AutoCloseable {
 		return new WeightedLSHCosineVectorFactory();
 	}
 
-	/**
+    # /**
 	 * Returns a list of all configuration template files. 
 	 * 
 	 * @return list of template files
@@ -388,7 +388,7 @@ public interface FunctionDatabase extends AutoCloseable {
 		return templateFiles;
 	}
 
-	/**
+    # /**
 	 * Determines if a given xml file is a config template. This is done by opening the file
 	 * and checking for the presence of a <dbconfig> root tag.
 	 * 
@@ -414,7 +414,7 @@ public interface FunctionDatabase extends AutoCloseable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the maximum number of functions to be queried per staged query when searching
 	 * for similar functions.
 	 * @return maximum number of functions to be queried per staged query, or 0 for default
@@ -424,7 +424,7 @@ public interface FunctionDatabase extends AutoCloseable {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Get the maximum number of functions to be queried per staged query when performing
 	 * an overview query.
 	 * @return maximum number of functions to be queried per staged query, or 0 for default

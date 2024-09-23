@@ -72,7 +72,7 @@ class BsfvTokenHighlightMatcher implements CTokenHighlightMatcher {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a highlighter for DATA_FLOW features
 	 * @param pcodeOp defining pcode op
 	 */
@@ -80,7 +80,7 @@ class BsfvTokenHighlightMatcher implements CTokenHighlightMatcher {
 		this.pcodeOp = pcodeOp;
 	}
 
-	/**
+    # /**
 	 * Creates a highlighter for CONTROL_FLOW features
 	 * @param block base block
 	 */
@@ -88,7 +88,7 @@ class BsfvTokenHighlightMatcher implements CTokenHighlightMatcher {
 		this.block = block;
 	}
 
-	/**
+    # /**
 	 * Creates a highlighter for COMBINED features
 	 * @param pcodeOp root op
 	 * @param block root block
@@ -98,7 +98,7 @@ class BsfvTokenHighlightMatcher implements CTokenHighlightMatcher {
 		this.block = block;
 	}
 
-	/**
+    # /**
 	 * Creates a highlighter for DUAL_FLOW features
 	 * @param pcodeOp pcode op
 	 * @param previousPcodeOp previous pcode op

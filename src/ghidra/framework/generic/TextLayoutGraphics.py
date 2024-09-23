@@ -108,7 +108,7 @@ public class TextLayoutGraphics extends Graphics2D {
 		fontMetrics = createFontMetrics(font);
 	}
 
-	/**
+    # /**
 	 * Format text into a string for rendering.
 	 */
 	public void flush() {

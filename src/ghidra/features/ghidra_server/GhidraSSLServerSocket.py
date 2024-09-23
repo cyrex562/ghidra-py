@@ -15,7 +15,7 @@
  */
 package ghidra.server.remote;
 
-import java.io.IOException;
+
 import java.net.*;
 import java.security.NoSuchAlgorithmException;
 
@@ -32,7 +32,7 @@ public class GhidraSSLServerSocket extends ServerSocket {
 	private final String[] enabledProtocols;
 	private final boolean needClientAuth;
 
-	/**
+    # /**
 	 * Create SSL Server Socket using the default SSLContext
 	 * @param port
 	 * @param enabledCipherSuites

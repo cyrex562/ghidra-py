@@ -16,7 +16,7 @@
 //This script dumps information about byte and instructions in neighborhoods around function starts
 //and returns to an XML file
 //@category FunctionStartPatterns
-import java.io.*;
+
 import java.util.List;
 
 import ghidra.app.script.GhidraScript;

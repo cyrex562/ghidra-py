@@ -60,7 +60,7 @@ public class PyGhidraPlugin extends ProgramPlugin {
 		script.set(new GhidraState(state), null, null);
 	}
 
-	/**
+    # /**
 	 * Sets the plugin's Python side initializer.<p>
 	 * 
      * This method is for <b>internal use only</b> and is only public so it can be

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.datatree;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -57,7 +57,7 @@ public class DomainFileNode extends GTreeNode implements Cuttable {
 		refresh();
 	}
 
-	/**
+    # /**
 	 * Get the domain file if this node represents a file object versus a folder; interface method
 	 * for DomainDataTransfer.
 	 * 
@@ -96,7 +96,7 @@ public class DomainFileNode extends GTreeNode implements Cuttable {
 		return System.identityHashCode(domainFile);
 	}
 
-	/**
+    # /**
 	 * Set this node to be deleted so that it can be rendered as such.
 	 */
 	@Override
@@ -105,7 +105,7 @@ public class DomainFileNode extends GTreeNode implements Cuttable {
 		fireNodeChanged();
 	}
 
-	/**
+    # /**
 	 * Returns whether this node is marked as deleted.
 	 */
 	@Override
@@ -140,7 +140,7 @@ public class DomainFileNode extends GTreeNode implements Cuttable {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the name to display in tree.
 	 */
 	@Override
@@ -157,7 +157,7 @@ public class DomainFileNode extends GTreeNode implements Cuttable {
 		}
 	}
 
-	/**
+    # /**
 	 * Update the display name.
 	 */
 	void refresh() {

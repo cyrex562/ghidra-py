@@ -37,7 +37,7 @@ import java.util.Map.Entry;
  * @param <V> the type of the values
  */
 public interface ValueSortedMap<K, V> {
-	/**
+    # /**
 	 * An interface with a subset of methods from {@link List}.
 	 * 
 	 * <p>
@@ -51,7 +51,7 @@ public interface ValueSortedMap<K, V> {
 
 		int size();
 
-		/**
+	    # /**
 		 * Get the element at the given index
 		 * 
 		 * @param i the index
@@ -59,7 +59,7 @@ public interface ValueSortedMap<K, V> {
 		 */
 		E get(int i);
 
-		/**
+	    # /**
 		 * Copy this to a new list
 		 * 
 		 * @return the list
@@ -68,7 +68,7 @@ public interface ValueSortedMap<K, V> {
 
 		ListIterator<E> listIterator(int index);
 
-		/**
+	    # /**
 		 * Get the index of a given element
 		 * 
 		 * <p>
@@ -81,7 +81,7 @@ public interface ValueSortedMap<K, V> {
 
 		boolean contains(Object o);
 
-		/**
+	    # /**
 		 * Get and remove the first element
 		 * 
 		 * @return the first element, or null if empty
@@ -113,7 +113,7 @@ public interface ValueSortedMap<K, V> {
 
 	ValueSortedMapEntryList<K, V> entrySet();
 
-	/**
+    # /**
 	 * Returns a key-value mapping associated with the greatest value strictly less than the given
 	 * value, or {@code null} if there is no such value.
 	 * 
@@ -122,7 +122,7 @@ public interface ValueSortedMap<K, V> {
 	 */
 	Entry<K, V> lowerEntryByValue(V value);
 
-	/**
+    # /**
 	 * Returns a key-value mapping associated with the greatest value less than or equal to the
 	 * given value, or {@code null} if there is no such value.
 	 * 
@@ -131,7 +131,7 @@ public interface ValueSortedMap<K, V> {
 	 */
 	Entry<K, V> floorEntryByValue(V value);
 
-	/**
+    # /**
 	 * Returns a key-value mapping associated with the least value greater than or equal to the
 	 * given value, or {@code null} if there is no such value.
 	 * 
@@ -140,7 +140,7 @@ public interface ValueSortedMap<K, V> {
 	 */
 	Entry<K, V> ceilingEntryByValue(V value);
 
-	/**
+    # /**
 	 * Returns a key-value mapping associated with the least value strictly greater than the given
 	 * value, or {@code null} if there is no such value.
 	 * 
@@ -149,7 +149,7 @@ public interface ValueSortedMap<K, V> {
 	 */
 	Entry<K, V> higherEntryByValue(V value);
 
-	/**
+    # /**
 	 * Returns a view of the portion of this map whose values range from {@code fromValue} to
 	 * {@code toValue}. The returned map is an unmodifiable view.
 	 * 
@@ -162,7 +162,7 @@ public interface ValueSortedMap<K, V> {
 	ValueSortedMap<K, V> subMapByValue(V fromValue, boolean fromInclusive, V toValue,
 			boolean toInclusive);
 
-	/**
+    # /**
 	 * Returns a view of the portion of this map whose values are less than (or equal to, if
 	 * {@code inclusive} is true) {@code toValue}. The returned map is an unmodifiable view.
 	 * 
@@ -172,7 +172,7 @@ public interface ValueSortedMap<K, V> {
 	 */
 	ValueSortedMap<K, V> headMapByValue(V toValue, boolean inclusive);
 
-	/**
+    # /**
 	 * Returns a view of the portion of this map whose values are greater than (or equal to, if
 	 * {@code inclusive} is true) {@code toValue}. The returned map is an unmodifiable view.
 	 * 
@@ -184,7 +184,7 @@ public interface ValueSortedMap<K, V> {
 
 	ValueSortedMapKeyList<K> keySet();
 
-	/**
+    # /**
 	 * Notify the map of an external change to the cost of a key's associated value
 	 * 
 	 * <p>

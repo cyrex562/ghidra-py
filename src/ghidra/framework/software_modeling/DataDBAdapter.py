@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -112,56 +112,56 @@ abstract class DataDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the record at or after the given start address.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract DBRecord getRecordAtOrAfter(Address start) throws IOException;
 
-	/**
+    # /**
 	 * Get the Record afer the given start address.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract DBRecord getRecordAfter(Address start) throws IOException;
 
-	/**
+    # /**
 	 * Get the record at the given start address.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract DBRecord getRecord(Address start) throws IOException;
 
-	/**
+    # /**
 	 * Get the record at the give key;
 	 * @param key the key of the record to retrieve.
 	 */
 	abstract DBRecord getRecord(long key) throws IOException;
 
-	/**
+    # /**
 	 * Get the record before the given address address.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract DBRecord getRecordBefore(Address addr) throws IOException;
 
-	/**
+    # /**
 	 * Get a record iterator starting at the given address address.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract RecordIterator getRecords(Address addr, boolean forward) throws IOException;
 
-	/**
+    # /**
 	 * Get a record iterator over the given range.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract RecordIterator getRecords(Address start, Address end, boolean atStart)
 			throws IOException;
 
-	/**
+    # /**
 	 * Delete the record for addr.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void deleteRecord(long key) throws IOException;
 
-	/**
+    # /**
 	 * Create a data record.
 	 * @param addr address of data
 	 * @param dataTypeID ID of data type
@@ -169,13 +169,13 @@ abstract class DataDBAdapter {
 	 */
 	abstract DBRecord createData(Address addr, long dataTypeID) throws IOException;
 
-	/**
+    # /**
 	 * Get the number of records in the data table.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract int getRecordCount() throws IOException;
 
-	/**
+    # /**
 	 * Get the record at or before the given address address.
 	 * @param addr
 	 * @throws IOException if there was a problem accessing the database
@@ -183,7 +183,7 @@ abstract class DataDBAdapter {
 	 */
 	abstract DBRecord getRecordAtOrBefore(Address addr) throws IOException;
 
-	/**
+    # /**
 	 * Get a iterator over the keys in the data table.
 	 * @param start start of range
 	 * @param end end of range, inclusive
@@ -194,13 +194,13 @@ abstract class DataDBAdapter {
 	abstract AddressKeyIterator getKeys(Address start, Address end, boolean atStart)
 			throws IOException;
 
-	/**
+    # /**
 	 * Get a record iterator over all records in the data table.
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Deletes all records in the given range.
 	 * @param start the first address in the range.
 	 * @param end the last address in the range.
@@ -209,14 +209,14 @@ abstract class DataDBAdapter {
 	 */
 	abstract boolean deleteRecords(Address start, Address end) throws IOException;
 
-	/**
+    # /**
 	 * Puts the given record into the database.
 	 * @param record the record to add or update.
 	 * @throws IOException if a database io error occurs.
 	 */
 	abstract void putRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Returns an iterator over the keys that fall within the address set provided.
 	 * @param addrSetView the address set to restrict to.
 	 * @param forward the direction of the iteration.
@@ -225,7 +225,7 @@ abstract class DataDBAdapter {
 	abstract AddressKeyIterator getKeys(AddressSetView addrSetView, boolean forward)
 			throws IOException;
 
-	/**
+    # /**
 	 * Returns a record iterator over all records that fall within the given address set.
 	 * @param addrSet the set to restrict to.
 	 * @param forward the direction of the iterator.
@@ -233,7 +233,7 @@ abstract class DataDBAdapter {
 	 */
 	abstract RecordIterator getRecords(AddressSetView set, boolean forward) throws IOException;
 
-	/**
+    # /**
 	 * Update the addresses in all records to reflect the movement of a memory block.
 	 * @param fromAddr minimum address of the original block to be moved
 	 * @param toAddr the new minimum address after the block move

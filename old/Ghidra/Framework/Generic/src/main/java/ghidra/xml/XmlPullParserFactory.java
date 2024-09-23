@@ -17,7 +17,7 @@ package ghidra.xml;
 
 import generic.jar.ResourceFile;
 
-import java.io.*;
+
 
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;

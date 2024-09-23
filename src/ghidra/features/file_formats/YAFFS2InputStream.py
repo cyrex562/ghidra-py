@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.yaffs2;
 
-import java.io.*;
+
 
 public class YAFFS2InputStream implements Closeable {
 

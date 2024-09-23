@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.analysis;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 
 import ghidra.app.plugin.core.analysis.TransientProgramProperties.SCOPE;
 import ghidra.app.util.cparser.C.CParser;

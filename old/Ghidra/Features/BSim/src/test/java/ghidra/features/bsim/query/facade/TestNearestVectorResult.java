@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.facade;
 
-import java.io.*;
+
 import java.util.Date;
 import java.util.List;
 

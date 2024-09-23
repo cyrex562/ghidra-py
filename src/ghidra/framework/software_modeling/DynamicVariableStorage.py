@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.program.model.address.Address;
@@ -23,7 +23,7 @@ import ghidra.util.exception.InvalidInputException;
 
 public class DynamicVariableStorage extends VariableStorage {
 
-	/**
+    # /**
 	 * <code>INDIRECT_VOID_STORAGE</code> used to identify return storage which is "mapped"
 	 * with a data-type of void but was forced indirect with the corresponding use of a
 	 * hidden return-storage-parameter.
@@ -35,7 +35,7 @@ public class DynamicVariableStorage extends VariableStorage {
 	private boolean isUnassigned = false;
 	private boolean isVoid = false;
 
-	/**
+    # /**
 	 * Construct void return storage with forced-indirect flag.
 	 */
 	private DynamicVariableStorage() {
@@ -44,7 +44,7 @@ public class DynamicVariableStorage extends VariableStorage {
 		isVoid = true;
 	}
 
-	/**
+    # /**
 	 * Construct Unassigned dynamic variable storage with an optional auto-parameter type
 	 * @param autoParamType auto-parameter type or null if not applicable
 	 */
@@ -54,7 +54,7 @@ public class DynamicVariableStorage extends VariableStorage {
 		isUnassigned = true;
 	}
 
-	/**
+    # /**
 	 * Construct dynamic variable storage
 	 * @param program
 	 * @param forcedIndirect if true indicates that the parameter has been forced to pass 
@@ -66,7 +66,7 @@ public class DynamicVariableStorage extends VariableStorage {
 		isUnassigned = true;
 	}
 
-	/**
+    # /**
 	 * Construct dynamic variable storage with an optional auto-parameter type
 	 * @param program
 	 * @param autoParamType auto-parameter type or null if not applicable
@@ -80,7 +80,7 @@ public class DynamicVariableStorage extends VariableStorage {
 		this.autoParamType = autoParamType;
 	}
 
-	/**
+    # /**
 	 * Construct dynamic variable storage with an optional auto-parameter type
 	 * @param program
 	 * @param autoParamType auto-parameter type or null if not applicable
@@ -93,7 +93,7 @@ public class DynamicVariableStorage extends VariableStorage {
 		this.autoParamType = autoParamType;
 	}
 
-	/**
+    # /**
 	 * Construct dynamic variable storage
 	 * @param program
 	 * @param forcedIndirect if true indicates that the parameter has been forced to pass 
@@ -108,7 +108,7 @@ public class DynamicVariableStorage extends VariableStorage {
 		this.forcedIndirect = forcedIndirect;
 	}
 
-	/**
+    # /**
 	 * Construct dynamic variable storage
 	 * @param program
 	 * @param forcedIndirect if true indicates that the parameter has been forced to pass 
@@ -159,7 +159,7 @@ public class DynamicVariableStorage extends VariableStorage {
 		return str;
 	}
 
-	/**
+    # /**
 	 * Construct Unassigned dynamic variable storage with an optional auto-parameter type.
 	 * NOTE: The {@link #isUnassignedStorage()} method should be used to
 	 * detect this type of storage.
@@ -171,7 +171,7 @@ public class DynamicVariableStorage extends VariableStorage {
 		return new DynamicVariableStorage(autoParamType);
 	}
 
-	/**
+    # /**
 	 * Construct Unassigned dynamic variable storage.
 	 * NOTE: The {@link #isUnassignedStorage()} method should be used to
 	 * detect this type of storage.

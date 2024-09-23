@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api.main;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Set;
 

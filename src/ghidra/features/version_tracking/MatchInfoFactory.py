@@ -25,7 +25,7 @@ import ghidra.util.datastruct.WeakValueHashMap;
 
 public class MatchInfoFactory {
 
-	/**
+    # /**
 	 * Hash map with weak values. When MatchInfo is no longer held by an object,
 	 * the entry is removed from the map.
 	 */
@@ -52,7 +52,7 @@ public class MatchInfoFactory {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear the cached match info for the given association.   This will clear the cache for
 	 * multiple matches, if multiple matches exit for the given association.
 	 * @param association the association

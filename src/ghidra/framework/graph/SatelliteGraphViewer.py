@@ -47,7 +47,7 @@ public class SatelliteGraphViewer<V extends VisualVertex, E extends VisualEdge<V
 		setGraphMouse(new VisualGraphSatelliteGraphMouse<>());
 	}
 
-	/**
+    # /**
 	 * Sets the docked state of this viewer.  An undocked satellite viewer will be in its 
 	 * own window.
 	 * 
@@ -57,7 +57,7 @@ public class SatelliteGraphViewer<V extends VisualVertex, E extends VisualEdge<V
 		this.docked = docked;
 	}
 
-	/**
+    # /**
 	 * Returns true if this satellite viewer is docked
 	 * 
 	 * @return true if this satellite viewer is docked
@@ -66,7 +66,7 @@ public class SatelliteGraphViewer<V extends VisualVertex, E extends VisualEdge<V
 		return docked;
 	}
 
-	/**
+    # /**
 	 * Gets the renderer to use with this satellite viewer.
 	 * 
 	 * @return the renderer
@@ -75,7 +75,7 @@ public class SatelliteGraphViewer<V extends VisualVertex, E extends VisualEdge<V
 		return new VisualVertexSatelliteRenderer<>();
 	}
 
-	/**
+    # /**
 	 * The options for this viewer
 	 * @param options the options
 	 */
@@ -84,7 +84,7 @@ public class SatelliteGraphViewer<V extends VisualVertex, E extends VisualEdge<V
 		optionsChanged();
 	}
 
-	/**
+    # /**
 	 * Called to signal that the options used by this viewer have changed
 	 */
 	public void optionsChanged() {

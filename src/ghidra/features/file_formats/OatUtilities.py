@@ -38,7 +38,7 @@ import ghidra.program.model.symbol.SymbolTable;
 
 public final class OatUtilities {
 
-	/**
+    # /**
 	 * Returns a BinaryReader based at the "oatdata" symbol.
 	 * The ".rodata" section contains the OAT information.
 	 * Returns null when the "oatdata" symbol does not exist.
@@ -55,7 +55,7 @@ public final class OatUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given program contain OAT information.
 	 * Checks for the program being an ELF, and containing the three magic OAT symbols.
 	 * @param program the program to inspect

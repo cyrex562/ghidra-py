@@ -20,7 +20,7 @@ package ghidra.util.datastruct;
  */
 public interface ListenerErrorHandlerFactory {
 
-	/**
+    # /**
 	 * Creates the error handler
 	 * @return the error handler
 	 */

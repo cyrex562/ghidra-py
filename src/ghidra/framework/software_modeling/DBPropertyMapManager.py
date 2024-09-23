@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 # /*
- * Created on May 1, 2003
- */
+# * Created on May 1, 2003
+# */
 package ghidra.program.database.properties;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 import java.util.TreeMap;
 
@@ -40,8 +40,8 @@ import ghidra.util.map.TypeMismatchException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Manages generic address keyed properties.
- */
+# * Manages generic address keyed properties.
+# */
 public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 
 	private DBHandle dbHandle;
@@ -77,7 +77,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Constructs a new DBPropertyMapManager
 	 * @param handle the database handle
 	 * @param changeMgr the change manager
@@ -133,7 +133,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Load {@code propertyMapCache} with all property map instances.
 	 * @param openMode open mode or null if in response to a cache invalidate
 	 * @param monitor task monitor
@@ -221,7 +221,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 		propertiesDBAdapter = new PropertiesDBAdapterV0(dbHandle);
 	}
 
-	/**
+    # /**
 	 * Creates a new IntPropertyMap with the given name.
 	 * @param propertyName the name of the property to create.
 	 * @exception DuplicateNameException thrown if a PropertyMap already
@@ -258,7 +258,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new LongPropertyMap with the given name.
 	 * @param propertyName the name of the property to create.
 	 * @exception DuplicateNameException thrown if a PropertyMap already
@@ -297,7 +297,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new StringPropertyMap with the given name.
 	 * @param propertyName the name of the property to create.
 	 * @exception DuplicateNameException thrown if a PropertyMap already
@@ -370,7 +370,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Creates a new VoidPropertyMap with the given name.
 	 * @param propertyName the name of the property to create.
 	 * @exception DuplicateNameException thrown if a PropertyMap already
@@ -409,7 +409,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Returns the PropertyMap with the given name or null if no PropertyMap
 	 * exists with that name.
 	 * @param propertyName the name of the property to retrieve.
@@ -426,7 +426,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Returns the IntPropertyMap associated with the given name.
 	 * @param propertyName the name of the property to retrieve.
 	 * @throws TypeMismatchException if a propertyMap named propertyName
@@ -449,7 +449,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Returns the LongPropertyMap associated with the given name.
 	 * @param propertyName the name of the property to retrieve.
 	 * @throws TypeMismatchException if a propertyMap named propertyName
@@ -471,7 +471,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Returns the StringPropertyMap associated with the given name.
 	 * @param propertyName the name of the property to retrieve.
 	 * @throws TypeMismatchException if a propertyMap named propertyName
@@ -493,7 +493,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the ObjectPropertyMap associated with the given name.
 	 * @param propertyName the name of the property to retrieve.
 	 * @throws TypeMismatchException if a propertyMap named propertyName
@@ -515,7 +515,7 @@ public class DBPropertyMapManager implements PropertyMapManager, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the VoidPropertyMap associated with the given name.
 	 * @param propertyName the name of the property to retrieve.
 	 * @throws TypeMismatchException if a propertyMap named propertyName

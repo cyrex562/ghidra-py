@@ -25,7 +25,7 @@ import static org.junit.Assert.*;
 import java.awt.*;
 import java.awt.event.FocusListener;
 import java.awt.event.MouseEvent;
-import java.io.*;
+
 import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Arrays;

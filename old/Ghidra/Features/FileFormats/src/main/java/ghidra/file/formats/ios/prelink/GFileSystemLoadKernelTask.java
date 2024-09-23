@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.prelink;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.services.ProgramManager;

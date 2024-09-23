@@ -23,7 +23,7 @@ public class FilteredIterator<T> implements Iterator<T>, Iterable<T> {
 	private Predicate<T> filter;
 	private T nextThing;
 
-	/**
+    # /**
 	 * Construct a new FilteredIterator.
 	 * @param it the iterator to filter
 	 * @param filter the filter on T

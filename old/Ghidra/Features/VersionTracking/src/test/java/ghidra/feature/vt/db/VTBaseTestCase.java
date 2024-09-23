@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.db;
 
-import java.io.IOException;
+
 
 import org.junit.After;
 import org.junit.Before;

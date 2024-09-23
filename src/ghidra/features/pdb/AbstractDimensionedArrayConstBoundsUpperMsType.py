@@ -33,7 +33,7 @@ public abstract class AbstractDimensionedArrayConstBoundsUpperMsType extends Abs
 	// TODO: dimData is unknown.  Needs analysis and implementation break-out.
 	protected long[] upperBound;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -44,7 +44,7 @@ public abstract class AbstractDimensionedArrayConstBoundsUpperMsType extends Abs
 		super(pdb, reader);
 		parseBeginningFields(reader);
 		// TODO: fix all of this once we know the true size of each (assuming it is fixed).
-		/**
+	    # /**
 		 * For now, we are assuming that the amount of data left will be a multiple of 1 times
 		 * (the {@link upperBound}--see {@link AbstractDimensionedArrayConstBoundsLowerUpperMsType}
 		 * for 2 times) the size of the integral element containing the value.  We do not know the
@@ -98,7 +98,7 @@ public abstract class AbstractDimensionedArrayConstBoundsUpperMsType extends Abs
 		}
 	}
 
-	/**
+    # /**
 	 * Parses the initial fields for this type.
 	 * <P>
 	 * Implementing class must, in the appropriate order pertinent to itself, parse

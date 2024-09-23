@@ -16,7 +16,7 @@
  */
 package ghidra.framework.client;
 
-import java.io.IOException;
+
 
 # /**
  * <code>NotConnectedException</code> indicates that the server connection

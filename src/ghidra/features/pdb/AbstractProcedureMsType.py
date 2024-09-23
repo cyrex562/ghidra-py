@@ -31,7 +31,7 @@ public abstract class AbstractProcedureMsType extends AbstractMsType {
 	protected int numParameters;
 	protected RecordNumber argListRecordNumber;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -51,7 +51,7 @@ public abstract class AbstractProcedureMsType extends AbstractMsType {
 		reader.skipPadding();
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the return type.
 	 * @return Record number of the return type.
 	 */
@@ -59,7 +59,7 @@ public abstract class AbstractProcedureMsType extends AbstractMsType {
 		return returnValueRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CallingConvention}.
 	 * @return the {@link CallingConvention}.
 	 */
@@ -67,7 +67,7 @@ public abstract class AbstractProcedureMsType extends AbstractMsType {
 		return callingConvention;
 	}
 
-	/**
+    # /**
 	 * Returns the function attributes.
 	 * @return Function attributes
 	 */
@@ -75,7 +75,7 @@ public abstract class AbstractProcedureMsType extends AbstractMsType {
 		return functionAttributes;
 	}
 
-	/**
+    # /**
 	 * Returns the number of parameters.
 	 * @return Number of parameters.
 	 */
@@ -83,7 +83,7 @@ public abstract class AbstractProcedureMsType extends AbstractMsType {
 		return numParameters;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the arguments list.
 	 * @return Record number of the arguments list type.
 	 */
@@ -91,7 +91,7 @@ public abstract class AbstractProcedureMsType extends AbstractMsType {
 		return argListRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the type for the return value type.
 	 * @return {@link AbstractMsType} of the return value type.
 	 */
@@ -99,7 +99,7 @@ public abstract class AbstractProcedureMsType extends AbstractMsType {
 		return pdb.getTypeRecord(returnValueRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the type for the arguments list.
 	 * @return {@link AbstractMsType} of the arguments list.
 	 */

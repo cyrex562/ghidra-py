@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.reloc;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -49,7 +49,7 @@ abstract class RelocationDBAdapter {
 	final static int BYTES_COL = 4; // null defers to FileBytes (see length)
 	final static int SYMBOL_NAME_COL = 5;
 
-	/**
+    # /**
 	 * FLAGS bit encoding:
 	 *   | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 	 *   |   |     length    |   status  |
@@ -159,7 +159,7 @@ abstract class RelocationDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate flags value for specified status and original bytes length for relocation.
 	 * @param status relocation status
 	 * @param byteLength byte length (specify 0 if bytes length is known, otherwise 1..31)
@@ -174,7 +174,7 @@ abstract class RelocationDBAdapter {
 		return (byte) flags;
 	}
 
-	/**
+    # /**
 	 * Get the status specified by the relocation flags.
 	 * @param flags relocation flags
 	 * @return relocation status
@@ -188,7 +188,7 @@ abstract class RelocationDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the byte length specified by the relocation flags.  This length should only be used
 	 * if stored bytes is null and relocation has an appropriate status.
 	 * @param flags relocation flags
@@ -202,7 +202,7 @@ abstract class RelocationDBAdapter {
 	// Adapter Required Methods
 	//==================================================================================================	
 
-	/**
+    # /**
 	 * Add new relocation record
 	 * @param addr relocation address
 	 * @param flags encoded flags (status, length), see {@link #getFlags(Status, int)}.
@@ -215,14 +215,14 @@ abstract class RelocationDBAdapter {
 	abstract void add(Address addr, byte flags, int type, long[] values, byte[] bytes,
 			String symbolName) throws IOException;
 
-	/**
+    # /**
 	 * Iterator over all records in address order.
 	 * @return record iterator
 	 * @throws IOException if a database error occurs
 	 */
 	abstract RecordIterator iterator() throws IOException;
 
-	/**
+    # /**
 	 * Iterator over all relocation records in address order constrained by the specified address set.
 	 * @param set address set constraint
 	 * @return record iterator
@@ -230,7 +230,7 @@ abstract class RelocationDBAdapter {
 	 */
 	abstract RecordIterator iterator(AddressSetView set) throws IOException;
 
-	/**
+    # /**
 	 * Iterate over relocation records starting at specified start address.
 	 * @param start start address
 	 * @return relocation record iterator
@@ -238,13 +238,13 @@ abstract class RelocationDBAdapter {
 	 */
 	abstract RecordIterator iterator(Address start) throws IOException;
 
-	/**
+    # /**
 	 * Get the total number of relocation records
 	 * @return total number of relocation records
 	 */
 	abstract int getRecordCount();
 
-	/**
+    # /**
 	 * Translate relocation record to latest schema format
 	 * @param rec old record requiring translation
 	 * @return translated relocation record
@@ -255,7 +255,7 @@ abstract class RelocationDBAdapter {
 	// Complex Upgrade Methods
 	//==================================================================================================	
 
-	/**
+    # /**
 	 * Perform relocation data migration following an adapter upgrade from a version prior to
 	 * V6 (see {@link ProgramDB#RELOCATION_STATUS_ADDED_VERSION})  It is assumed that records have 
 	 * already been migrated during the table upgrade with a {@link Status#UNKNOWN} status.
@@ -325,7 +325,7 @@ abstract class RelocationDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Computes a relocation byte length which will be no greater than the default length
 	 * (see {@link RelocationManager#getDefaultOriginalByteLength(Program)} which should not
 	 * overlap a subsequent relocation record.

@@ -236,7 +236,7 @@ public class ListSTL<T> {
 		}
 		return c;
 	}
-	/**
+    # /**
 	 * moves a single element, decreasing the length of list by 1 and increasing this list by 1.
 	 * @param position the position into this list where the element is to be inserted
 	 * @param list the list from which the element is removed.

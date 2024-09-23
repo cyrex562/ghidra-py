@@ -24,14 +24,14 @@ public class ObjectRangeMap <T> {
 	private List<ObjectValueRange<T>> ranges;
 	ObjectValueRange<T> lastRange;
 	
-	/**
+    # /**
 	 * Constructs a new ObjectRangeMap
 	 */
 	public ObjectRangeMap() {
 		ranges = new ArrayList<ObjectValueRange<T>>();
 	}
 
-	/**
+    # /**
 	 * Returns an {@link IndexRangeIterator} over all ranges that have associated objects.
 	 * @return an {@link IndexRangeIterator} over all ranges that have associated objects.
 	 */
@@ -39,7 +39,7 @@ public class ObjectRangeMap <T> {
 		return new SimpleIndexRangeIterator();
 	}
 
-	/**
+    # /**
 	 * Returns an {@link IndexRangeIterator} over all ranges that have associated objects within
 	 * the given range.  Object Ranges that overlap the beginning or end of the given range are
 	 * included, but have thier start or end index adjusted to be in the given range.
@@ -53,7 +53,7 @@ public class ObjectRangeMap <T> {
 		return new RestrictedIndexRangeIterator(start, end);
 	}
 	
-	/**
+    # /**
 	 * Associates the given object with all indices in the given range. The object may be null,
 	 * but an assocition is still established.  Use the clearRange() method to remove associations.
 	 * @param start the start of the range.
@@ -148,7 +148,7 @@ public class ObjectRangeMap <T> {
 		return newRange;
 	}
 
-	/**
+    # /**
 	 * Clears any object associations within the given range.
 	 * @param start the first index in the range to be cleared.
 	 * @param end the last index in the range to be cleared.
@@ -185,7 +185,7 @@ public class ObjectRangeMap <T> {
 		}
 	}
 	
-	/**
+    # /**
 	 * Returns true if the associated index has an associated object even if the assocated object
 	 * is null. 
 	 * @param index the index to check for an association.
@@ -206,7 +206,7 @@ public class ObjectRangeMap <T> {
 		return lastRange.contains(index);
 	}
 	
-	/**
+    # /**
 	 * Returns the object associated with the given index or null if no object is associated with
 	 * the given index.  Note that null is a valid association so a null result could be either
 	 * no association or an actual association of the index to null.  Use the contains() method

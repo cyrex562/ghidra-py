@@ -16,7 +16,7 @@
 package ghidra.framework.protocol.ghidra;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,7 +82,7 @@ public class GhidraURLWrappedContent {
 		throw new RuntimeException("consumer not found");
 	}
 
-	/**
+    # /**
 	 * Close associated {@link ProjectData} when all consumers have released wrapped object.
 	 * Underlying project data instance may remain active until all open project files have been
 	 * released/closed.
@@ -164,7 +164,7 @@ public class GhidraURLWrappedContent {
 		throw new FileNotFoundException("URL specifies unknown path: " + path);
 	}
 
-	/**
+    # /**
 	 * Get the domain folder or file associated with the Ghidra URL.
 	 * The consumer is responsible for releasing the content object via the release method 
 	 * when it is no longer in use (see {@link #release(Object, Object)}}).
@@ -191,7 +191,7 @@ public class GhidraURLWrappedContent {
 		return refObject;
 	}
 
-	/**
+    # /**
 	 * Indicates the content object previously obtained from this wrapper is
 	 * no longer in-use and the underlying connection may be closed.  A read-only 
 	 * or immutable domain object may remain open and in-use after its associated

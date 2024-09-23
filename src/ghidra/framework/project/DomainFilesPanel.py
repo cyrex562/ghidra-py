@@ -37,7 +37,7 @@ class DomainFilesPanel extends JPanel {
 	private GCheckBox[] checkboxes;
 	private ListPanel<JCheckBox> listPanel;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param fileList list of DomainFile objects
 	 * @param listTitle the title
@@ -77,7 +77,7 @@ class DomainFilesPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the selected domain files.
 	 */
 	DomainFile[] getSelectedDomainFiles() {
@@ -91,7 +91,7 @@ class DomainFilesPanel extends JPanel {
 		return list.toArray(files);
 	}
 
-	/**
+    # /**
 	 * Cell renderer to show the checkboxes for the changed data files.
 	 */
 	private class DataCellRenderer implements ListCellRenderer<JCheckBox> {
@@ -115,7 +115,7 @@ class DomainFilesPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Mouse listener to get the selected cell in the list.
 	 */
 	private class ListMouseListener extends MouseAdapter {

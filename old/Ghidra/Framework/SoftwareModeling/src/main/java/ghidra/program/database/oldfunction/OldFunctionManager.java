@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.oldfunction;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import db.*;

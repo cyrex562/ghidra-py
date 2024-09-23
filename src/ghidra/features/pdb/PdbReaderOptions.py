@@ -61,7 +61,7 @@ public class PdbReaderOptions extends Exception {
 	private Charset oneByteCharset;
 	private Charset wideCharset;
 
-	/**
+    # /**
 	 * Constructor.
 	 */
 	public PdbReaderOptions() {
@@ -91,7 +91,7 @@ public class PdbReaderOptions extends Exception {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the options to their default values
 	 */
 	public void setDefaults() {
@@ -101,7 +101,7 @@ public class PdbReaderOptions extends Exception {
 		setWideCharCharsetForName(wideCharCharsetName);
 	}
 
-	/**
+    # /**
 	 * Returns list of Charsets names that encode one byte characters.
 	 * @return Charsets that encode one byte characters.
 	 */
@@ -109,7 +109,7 @@ public class PdbReaderOptions extends Exception {
 		return oneByteCharsetNames;
 	}
 
-	/**
+    # /**
 	 * Returns list of Charsets names that encode two byte characters.
 	 * @return Charsets that encode two byte characters.
 	 */
@@ -117,7 +117,7 @@ public class PdbReaderOptions extends Exception {
 		return twoByteCharsetNames;
 	}
 
-	/**
+    # /**
 	 * Sets the one-byte Charset to use for PDB processing.
 	 * @param name Name of the Charset to use.
 	 * @return this, so options can be daisy-chained.
@@ -131,7 +131,7 @@ public class PdbReaderOptions extends Exception {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Sets the Wchar Charset to use for PDB processing.
 	 * @param name Name of the Charset to use.
 	 * @return this, so options can be daisy-chained.
@@ -145,7 +145,7 @@ public class PdbReaderOptions extends Exception {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the one-byte Charset in use for PDB processing.
 	 * @return the name of the Charset.
 	 */
@@ -153,7 +153,7 @@ public class PdbReaderOptions extends Exception {
 		return oneByteCharsetName;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the two-byte Charset in use for PDB processing.
 	 * @return the name of the Charset.
 	 */
@@ -161,7 +161,7 @@ public class PdbReaderOptions extends Exception {
 		return wideCharCharsetName;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the Wchar Charset in use for PDB processing.
 	 * @return the name of the Wchar Charset.
 	 */
@@ -169,7 +169,7 @@ public class PdbReaderOptions extends Exception {
 		return wideCharCharsetName;
 	}
 
-	/**
+    # /**
 	 * Returns the one-byte Charset in use for PDB processing.
 	 * @return the Charset.
 	 */
@@ -177,7 +177,7 @@ public class PdbReaderOptions extends Exception {
 		return oneByteCharset;
 	}
 
-	/**
+    # /**
 	 * Returns the two-byte Charset in use for PDB processing.
 	 * @return the Charset.
 	 */
@@ -185,7 +185,7 @@ public class PdbReaderOptions extends Exception {
 		return wideCharset;
 	}
 
-	/**
+    # /**
 	 * Returns the Wchar Charset in use for PDB processing.
 	 * @return the Wchar Charset.
 	 */

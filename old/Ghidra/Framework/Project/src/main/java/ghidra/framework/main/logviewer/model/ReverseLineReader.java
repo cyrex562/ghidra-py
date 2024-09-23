@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.logviewer.model;
 
-import java.io.*;
+
 
 /**
  * 

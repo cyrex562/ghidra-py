@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +37,7 @@ public class SquashDirectoryTableHeader {
 	// A list of sub-entries
 	private final List<SquashDirectoryTableEntry> entries;
 
-	/**
+    # /**
 	 * Represents an header in the directory table
 	 * @param reader A binary reader with pointer index at the start of the header data
 	 * @param superBlock The SuperBlock for the current archive

@@ -28,7 +28,7 @@ public class Conv {
 	private Conv() {
 	}
 	
-	/**
+    # /**
 	 * A byte mask.
 	 * 
 	 * @deprecated {@link Byte#toUnsignedInt(byte)} will handle most use cases of this constant
@@ -58,7 +58,7 @@ public class Conv {
         return (short)(b & BYTE_MASK);
     }
     
-	/**
+    # /**
 	 * Converts a byte to an integer.
 	 * 
 	 * @param b the byte
@@ -70,7 +70,7 @@ public class Conv {
         return (b & BYTE_MASK);
     }
     
-	/**
+    # /**
 	 * Converts a byte to a long.
 	 * @param b the byte
 	 * @return the long equivalent of the byte
@@ -81,7 +81,7 @@ public class Conv {
         return intToLong(b & BYTE_MASK);
     }
     
-	/**
+    # /**
 	 * Converts a short to an integer.
 	 * @param s the short
 	 * @return the integer equivalent of the short
@@ -92,7 +92,7 @@ public class Conv {
         return (s & SHORT_MASK);
     }
     
-	/**
+    # /**
 	 * Converts a short to a long.
 	 * @param s the short
 	 * @return the long eqivalent of the short
@@ -103,7 +103,7 @@ public class Conv {
         return intToLong(s & SHORT_MASK);
     }
     
-	/**
+    # /**
 	 * Converts an integer to a long.
 	 * @param i the integer
 	 * @return the long equivalent of the long
@@ -114,7 +114,7 @@ public class Conv {
         return (i & INT_MASK);
     }
 
-	/**
+    # /**
 	 * <p>
 	 * Old and <b>incorrect</b> way to convert bytes to a String by casting their
 	 * values to chars.  Do not use.  Does not seem to be used in current codebase.
@@ -157,7 +157,7 @@ public class Conv {
         return zeropad(Integer.toHexString(shortToInt(s)), 4);
     }
     
-	/**
+    # /**
 	 * Consider using {@link String#format(String, Object...) String.format("%08x", i)} instead.
 	 * <p>
 	 * Converts an integer into a padded hex string.

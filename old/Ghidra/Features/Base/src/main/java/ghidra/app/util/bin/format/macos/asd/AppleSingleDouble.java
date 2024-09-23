@@ -21,7 +21,7 @@ import ghidra.app.util.bin.format.macos.MacException;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

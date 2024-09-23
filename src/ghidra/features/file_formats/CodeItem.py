@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex.format;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -96,7 +96,7 @@ public class CodeItem implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * The number of registers used by this code
 	 * @return number of registers used by this code
 	 */
@@ -104,7 +104,7 @@ public class CodeItem implements StructConverter {
 		return registersSize;
 	}
 
-	/**
+    # /**
 	 * The number of words of incoming arguments to the method.
 	 * @return number of words of incoming arguments to the method
 	 */
@@ -112,7 +112,7 @@ public class CodeItem implements StructConverter {
 		return incomingSize;
 	}
 
-	/**
+    # /**
 	 * The number of words of outgoing argument space required by this code for method invocation
 	 * @return number of words of outgoing argument space required by this code for method invocation
 	 */
@@ -120,7 +120,7 @@ public class CodeItem implements StructConverter {
 		return outgoingSize;
 	}
 
-	/**
+    # /**
 	 * The number of try_items for this instance. 
 	 * If non-zero, then these appear as the tries array just 
 	 * after the insns in this instance.
@@ -130,7 +130,7 @@ public class CodeItem implements StructConverter {
 		return triesSize;
 	}
 
-	/**
+    # /**
 	 * Offset from the start of the file to the debug info 
 	 * (line numbers + local variable info) sequence for this code, or 0 if there 
 	 * simply is no information. The offset, if non-zero, should be to a location 
@@ -141,7 +141,7 @@ public class CodeItem implements StructConverter {
 		return debugInfoOffset;
 	}
 
-	/**
+    # /**
 	 * Size of the instructions list, in 16-bit code units
 	 * @return size of the instructions list
 	 */
@@ -149,7 +149,7 @@ public class CodeItem implements StructConverter {
 		return instructionSize;
 	}
 
-	/**
+    # /**
 	 * Actual array of bytecode. 
 	 * The format of code in an insns array is specified by the companion document Dalvik bytecode. 
 	 * Note that though this is defined as an array of ushort, 
@@ -166,7 +166,7 @@ public class CodeItem implements StructConverter {
 		return instructionBytes;
 	}
 
-	/**
+    # /**
 	 * Two bytes of padding to make tries four-byte aligned. 
 	 * This element is only present if tries_size is non-zero and insns_size is odd.
 	 * @return 2-bytes of padding
@@ -175,7 +175,7 @@ public class CodeItem implements StructConverter {
 		return padding;
 	}
 
-	/**
+    # /**
 	 * Array indicating where in the code exceptions are caught and how to handle them. 
 	 * Elements of the array must be non-overlapping in range and in order from low to high address. 
 	 * This element is only present if tries_size is non-zero.
@@ -185,7 +185,7 @@ public class CodeItem implements StructConverter {
 		return Collections.unmodifiableList(tries);
 	}
 
-	/**
+    # /**
 	 * Bytes representing lists of catch types and associated handler addresses. 
 	 * Each try_item has a byte-wise offset into this structure. 
 	 * This element is only present if tries_size is non-zero.

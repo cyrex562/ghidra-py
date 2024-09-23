@@ -27,7 +27,7 @@ public interface AuthenticationModule {
 	public static final String USERNAME_CALLBACK_PROMPT = "User ID";
 	public static final String PASSWORD_CALLBACK_PROMPT = "Password";
 
-	/**
+    # /**
 	 * Complete the authentication process.
 	 * <p>
 	 * Note to AuthenticationModule implementors:
@@ -50,12 +50,12 @@ public interface AuthenticationModule {
 	String authenticate(UserManager userMgr, Subject subject, Callback[] callbacks)
 			throws LoginException;
 
-	/**
+    # /**
 	 * Returns authentication callbacks needed to authenticate a user.
 	 */
 	Callback[] getAuthenticationCallbacks();
 
-	/**
+    # /**
 	 * Allows this AuthenticationModule to deny default anonymous login steps.
 	 * <p>
 	 * @return true if a separate AnonymousCallback is allowed and may be
@@ -64,12 +64,12 @@ public interface AuthenticationModule {
 	 */
 	boolean anonymousCallbacksAllowed();
 
-	/**
+    # /**
 	 * @return true if NameCallback is allowed
 	 */
 	boolean isNameCallbackAllowed();
 
-	/**
+    # /**
 	 * Creates a standard pair of name and password callback instances.
 	 *
 	 * @param allowUserToSpecifyName boolean flag, if false, a name callback is not added to the results
@@ -84,7 +84,7 @@ public interface AuthenticationModule {
 		return new Callback[] { passCb };
 	}
 
-	/**
+    # /**
 	 * Find the first callback of a specific type in the list and returns it.
 	 *
 	 * @param <T> the type of callback

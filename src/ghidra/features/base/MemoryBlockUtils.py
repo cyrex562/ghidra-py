@@ -15,7 +15,7 @@
  */
 package ghidra.app.util;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.app.util.bin.ByteProvider;

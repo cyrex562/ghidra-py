@@ -15,7 +15,7 @@
  */
 package ghidra.bitpatterns.gui;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.util.List;
 import java.util.Map.Entry;

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.symbol;
 
 import ghidra.program.model.address.Address;
@@ -21,8 +21,8 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
 
 # /**
- * Class to represent the various types of Symbols.
- */
+# * Class to represent the various types of Symbols.
+# */
 public abstract class SymbolType {
 
 	public static final SymbolType LABEL = new SymbolType("Label", false, 0) {
@@ -61,7 +61,7 @@ public abstract class SymbolType {
 
 	};
 
-	/**
+    # /**
 	 * @deprecated use {@link #LABEL} instead.
 	 */
 	@Deprecated(since = "9.1", forRemoval = true)
@@ -281,7 +281,7 @@ public abstract class SymbolType {
 		this.value = (byte) value;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given namespace is a valid parent for a symbol of this type
 	 * if it has the given address and whether or not it is external.
 	 * @param program the program to contain the symbol
@@ -294,7 +294,7 @@ public abstract class SymbolType {
 	public abstract boolean isValidParent(Program program, Namespace parent, Address symbolAddr,
 			boolean isExternalSymbol);
 
-	/**
+    # /**
 	 * Returns true if the given address is valid for this symbol type.
 	 * @param program the program to test for a valid address.
 	 * @param symbolAddress the address of the symbol to be tested.
@@ -302,7 +302,7 @@ public abstract class SymbolType {
 	 */
 	public abstract boolean isValidAddress(Program program, Address symbolAddress);
 
-	/**
+    # /**
 	 * Returns true if the given SourceType is valid for this symbol type. (For example, Some symbols
 	 * don't support the SymbolType.DEFAULT)
 	 * @param sourceType the sourceType to test.
@@ -311,7 +311,7 @@ public abstract class SymbolType {
 	 */
 	public abstract boolean isValidSourceType(SourceType sourceType, Address symbolAddress);
 
-	/**
+    # /**
 	 * Returns true of this symbol type allows duplicate names.
 	 * @return true of this symbol type allows duplicate names.
 	 */
@@ -319,7 +319,7 @@ public abstract class SymbolType {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if this symbol represents a namespace.
 	 */
 	public boolean isNamespace() {
@@ -331,14 +331,14 @@ public abstract class SymbolType {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the id of this symbol type.
 	 */
 	public byte getID() {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Returns the SymbolType for the given id.
 	 * @param id the id for the SymbolType to find.
 	 */

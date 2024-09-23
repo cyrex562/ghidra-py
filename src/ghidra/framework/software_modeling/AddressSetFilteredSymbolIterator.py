@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import db.DBRecord;
@@ -36,7 +36,7 @@ class AddressSetFilteredSymbolIterator implements SymbolIterator {
 	private QueryRecordIterator recIter;
 	private SymbolDatabaseAdapter adapter;
 
-	/**
+    # /**
 	 * Construct a new AddressSetFilteredSymbolIterator.
 	 * @param symbolMgr the symbol manager
 	 * @param set the address set to iterator over (required).

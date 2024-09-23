@@ -22,7 +22,7 @@ import ghidra.app.plugin.core.datamgr.archive.*;
 import ghidra.app.plugin.core.datamgr.tree.*;
 import ghidra.util.Msg;
 
-import java.io.IOException;
+
 
 import javax.swing.tree.TreePath;
 

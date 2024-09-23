@@ -17,7 +17,7 @@
 //@category Project
 //@menupath
 
-import java.io.IOException;
+
 import java.util.Map;
 
 import ghidra.app.script.GhidraScript;

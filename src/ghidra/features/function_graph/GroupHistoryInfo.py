@@ -114,7 +114,7 @@ public class GroupHistoryInfo {
 		locationInfo = new PointInfo(pointInfoElement);
 	}
 
-	/**
+    # /**
 	 * Signals that the user has changed the text of a group node and that and this pre-existing
 	 * info needs to update.
 	 * 

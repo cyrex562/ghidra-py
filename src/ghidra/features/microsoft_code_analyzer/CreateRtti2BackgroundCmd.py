@@ -37,7 +37,7 @@ public class CreateRtti2BackgroundCmd extends AbstractCreateDataBackgroundCmd<Rt
 	// Get the actual number of RTTI 1 entries from the model directly using model.getCount().
 	private int rtti1Count;
 
-	/**
+    # /**
 	 * Constructs a command for applying an RTTI2 dataType at an address.
 	 * @param address the address where the data should be created using the data type.
 	 * @param rtti1Count the number of RTTI1 data types expected at the RTTI2 address.
@@ -53,7 +53,7 @@ public class CreateRtti2BackgroundCmd extends AbstractCreateDataBackgroundCmd<Rt
 		this.rtti1Count = rtti1Count;
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying an RTTI2 dataType at the address indicated by the 
 	 * model.
 	 * @param rtti2Model the model for the data type

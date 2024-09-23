@@ -15,7 +15,7 @@
  */
 package ghidra.util.map;
 
-import java.io.*;
+
 
 import ghidra.util.exception.AssertException;
 import ghidra.util.exception.NoValueException;
@@ -26,7 +26,7 @@ import ghidra.util.exception.NoValueException;
 public class IntValueMap extends ValueMap<Integer> {
     private final static long serialVersionUID = 1;
     
-	/**
+    # /**
 	 * Constructor for IntValueMap.
 	 * @param name the name associated with this property set
 	 */
@@ -34,7 +34,7 @@ public class IntValueMap extends ValueMap<Integer> {
 		super(name, null);
 	}
 
-	/**
+    # /**
 	 * @see ValueMap#getDataSize()
 	 */
 	@Override
@@ -42,7 +42,7 @@ public class IntValueMap extends ValueMap<Integer> {
 		return 4;
 	}
 
-	/**
+    # /**
 	 * Stores an int value at the given index.  Any value currently at that
 	 * index will be replaced by the new value.
 	 * @param index the index at which to store the int value.
@@ -55,7 +55,7 @@ public class IntValueMap extends ValueMap<Integer> {
 		numProperties += page.getSize() - n;
 	}
 
-	/**
+    # /**
 	 * Retrieves the int value stored at the given index.
 	 * @param index the index at which to retrieve the int value.
 	 * @return int the value stored at the given index.

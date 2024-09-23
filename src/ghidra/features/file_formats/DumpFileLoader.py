@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -52,7 +52,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class DumpFileLoader extends AbstractProgramWrapperLoader {
 
-	/** The name of the dump file loader */
+    # /** The name of the dump file loader */
 	public static final String DF_NAME = "Dump File Loader";
 	public static final String MEMORY = "Memory";
 

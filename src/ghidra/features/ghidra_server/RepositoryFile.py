@@ -16,7 +16,7 @@
 package ghidra.server.store;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 
 import db.buffers.LocalManagedBufferFile;
 import ghidra.framework.remote.RepositoryItem;
@@ -43,7 +43,7 @@ public class RepositoryFile {
 	private RepositoryItem repositoryItem;
 	private boolean deleted = false;
 
-	/**
+    # /**
 	 * Constructor for an existing folder item within a repository.
 	 * @param repository repository which contains item.
 	 * @param fileSystem local file-system which corresponds to repository.
@@ -58,7 +58,7 @@ public class RepositoryFile {
 		this.name = name;
 	}
 
-	/**
+    # /**
 	 * Validate this repository file.
 	 * @throws IOException if the underlying item is not found or 
 	 * associated repository is not valid
@@ -88,7 +88,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns item/file name
 	 * @return file name
 	 */
@@ -96,7 +96,7 @@ public class RepositoryFile {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns parent folder
 	 * @return parent folder
 	 */
@@ -104,7 +104,7 @@ public class RepositoryFile {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Returns file/item path within repository.
 	 * @return path within repository
 	 */
@@ -118,7 +118,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns data pertaining to this file.
 	 * @return Serializable {@link RepositoryItem} which corresponds to this file
 	 */
@@ -141,7 +141,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Open a specific database version for read-only use.
 	 * This method is only valid for an underlying FolderItem of type database.
 	 * @param version requested version or -1 for current version
@@ -164,7 +164,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Open the current version for checkin use.
 	 * @param checkoutId checkout ID
 	 * @param user user who initiated the request
@@ -190,7 +190,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns all available versions.
 	 * @param user user who initiated the request
 	 * @return all available versions
@@ -205,7 +205,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the length of this domain file.  This size is the minimum disk space
 	 * used for storing this file, but does not account for additional storage space
 	 * used to tracks changes, etc. 
@@ -219,7 +219,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete oldest or current version of this file/item.
 	 * @param deleteVersion oldest or current version, or -1 to remove
 	 * all versions.
@@ -277,7 +277,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Move this file/item to a new folder and optionally change its name.
 	 * @param newParent new parent folder
 	 * @param newItemName new file/item name
@@ -304,7 +304,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Request a checkout of the underlying item.
 	 * @param checkoutType checkout type requested
 	 * @param user user who initiated the request
@@ -328,7 +328,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Update checkout version for an existing checkout.
 	 * @param checkoutId existing checkout ID
 	 * @param checkoutVersion newer version now associated with checkout
@@ -343,7 +343,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Terminate an existing checkout
 	 * @param checkoutId existing checkout ID
 	 * @param user user who initiated the request
@@ -365,7 +365,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns checkout data for a specified checkout ID.
 	 * @param checkoutId existing checkout ID
 	 * @param user user who initiated the request
@@ -381,7 +381,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns all checkouts for this file/item.
 	 * @param user user who initiated the request
 	 * @throws UserAccessException if user is denied access
@@ -396,7 +396,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if one or more checkouts exist for this file/item.
 	 * @throws IOException if an IO error occurs
 	 * @return true if one or more checkouts exist for this file/item.
@@ -408,7 +408,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if checkin is currently in process.
 	 * @throws IOException if an IO error occurs
 	 * @return true if checkin is currently in process.
@@ -420,7 +420,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear cached data as a result of an item changed callback from the filesystem
 	 */
 	public void itemChanged() {
@@ -429,7 +429,7 @@ public class RepositoryFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear cached data as a result of a path change
 	 */
 	void pathChanged() {

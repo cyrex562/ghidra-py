@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dtb;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
@@ -35,7 +35,7 @@ public class FdtReserveEntry implements StructConverter {
 		size = reader.readNextLong();
 	}
 
-	/**
+    # /**
 	 * Returns FDT Reserve Entry address.
 	 * @return FDT Reserve Entry address
 	 */
@@ -43,7 +43,7 @@ public class FdtReserveEntry implements StructConverter {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Returns FDT Reserve Entry size.
 	 * @return FDT Reserve Entry size
 	 */

@@ -1,30 +1,30 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.docking.settings.Settings;
 import ghidra.program.model.mem.MemBuffer;
 
 # /**
- *  Special dataType used only for function return types.  Used to indicate that
- * a function has no return value.
- */
+# *  Special dataType used only for function return types.  Used to indicate that
+# * a function has no return value.
+# */
 public class VoidDataType extends BuiltIn {
 
-	/** A statically defined DefaultDataType used when an Undefined byte is needed.*/
+    # /** A statically defined DefaultDataType used when an Undefined byte is needed.*/
 	public static VoidDataType dataType = new VoidDataType();
 
 	public VoidDataType() {
@@ -35,7 +35,7 @@ public class VoidDataType extends BuiltIn {
 		super(null, "void", dtm);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getMnemonic(Settings)
 	 */
@@ -44,7 +44,7 @@ public class VoidDataType extends BuiltIn {
 		return "void";
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getLength()
 	 */
@@ -53,7 +53,7 @@ public class VoidDataType extends BuiltIn {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getDescription()
 	 */
@@ -62,7 +62,7 @@ public class VoidDataType extends BuiltIn {
 		return "void datatype";
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getRepresentation(MemBuffer, Settings, int)
 	 */
@@ -71,7 +71,7 @@ public class VoidDataType extends BuiltIn {
 		return "";
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.data.DataType#getValue(ghidra.program.model.mem.MemBuffer, ghidra.docking.settings.Settings, int)
 	 */
@@ -93,7 +93,7 @@ public class VoidDataType extends BuiltIn {
 		return null; // standard C name and type
 	}
 
-	/**
+    # /**
 	 * Determine if the specified {@link DataType} is a {@link VoidDataType} after 
 	 * stripping away any {@link TypeDef}.
 	 * @param dt datatype to be tested

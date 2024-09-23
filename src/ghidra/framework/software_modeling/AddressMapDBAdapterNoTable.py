@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.map;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.DBHandle;
@@ -40,7 +40,7 @@ class AddressMapDBAdapterNoTable extends AddressMapDBAdapter {
 		oldAddrMap = new FactoryBasedAddressMap();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMapDBAdapter#getBaseAddresses(boolean)
 	 */
 	@Override
@@ -48,7 +48,7 @@ class AddressMapDBAdapterNoTable extends AddressMapDBAdapter {
 		return addresses;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMapDBAdapter#addBaseAddress(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -56,7 +56,7 @@ class AddressMapDBAdapterNoTable extends AddressMapDBAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMapDBAdapter#getEntries()
 	 */
 	@Override
@@ -68,7 +68,7 @@ class AddressMapDBAdapterNoTable extends AddressMapDBAdapter {
 		return list;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMapDBAdapter#setEntries(java.util.List)
 	 */
 	@Override
@@ -76,7 +76,7 @@ class AddressMapDBAdapterNoTable extends AddressMapDBAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.map.AddressMapDBAdapter#clearAll()
 	 */
 	@Override
@@ -86,7 +86,7 @@ class AddressMapDBAdapterNoTable extends AddressMapDBAdapter {
 
 	private class FactoryBasedAddressMap implements AddressMap {
 
-		/**
+	    # /**
 		 * Comparator used to identify if an addr occurs before or after the 
 		 * start of a key range.
 		 */

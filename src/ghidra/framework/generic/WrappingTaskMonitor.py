@@ -40,7 +40,7 @@ public class WrappingTaskMonitor implements TaskMonitor {
 		WeakDataStructureFactory.createCopyOnReadWeakSet();
 	protected TaskMonitor delegate;
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param delegate the delegate task monitor
@@ -49,7 +49,7 @@ public class WrappingTaskMonitor implements TaskMonitor {
 		this.delegate = delegate;
 	}
 
-	/**
+    # /**
 	 * Sets the delegate of this wrapper to be the new value.  The new delegate will be 
 	 * initialized with the current values of the existing delegate.
 	 * 

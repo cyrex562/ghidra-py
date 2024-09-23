@@ -51,53 +51,53 @@ import generic.theme.GThemeDefaults.Colors.Palette;
 public class JungPickingGraphMousePlugin<V, E> extends AbstractGraphMousePlugin
 		implements MouseListener, MouseMotionListener {
 
-	/**
+    # /**
 	 * the picked Vertex, if any
 	 */
 	protected V vertex;
 
-	/**
+    # /**
 	 * the picked Edge, if any
 	 */
 	protected E edge;
 
-	/**
+    # /**
 	 * the x distance from the picked vertex center to the mouse point
 	 */
 	protected double offsetx;
 
-	/**
+    # /**
 	 * the y distance from the picked vertex center to the mouse point
 	 */
 	protected double offsety;
 
-	/**
+    # /**
 	 * controls whether the Vertices may be moved with the mouse
 	 */
 	protected boolean locked;
 
-	/**
+    # /**
 	 * additional modifiers for the action of adding to an existing
 	 * selection
 	 */
 	protected int addToSelectionModifiers;
 
-	/**
+    # /**
 	 * used to draw a rectangle to contain picked vertices
 	 */
 	protected Rectangle2D rect = new Rectangle2D.Float();
 
-	/**
+    # /**
 	 * the Paintable for the lens picking rectangle
 	 */
 	protected Paintable lensPaintable;
 
-	/**
+    # /**
 	 * color for the picking rectangle
 	 */
 	protected Color lensColor = Palette.CYAN;
 
-	/**
+    # /**
 	 * create an instance with default settings
 	 */
 	public JungPickingGraphMousePlugin() {
@@ -105,7 +105,7 @@ public class JungPickingGraphMousePlugin<V, E> extends AbstractGraphMousePlugin
 			InputEvent.BUTTON1_DOWN_MASK | InputEvent.SHIFT_DOWN_MASK);
 	}
 
-	/**
+    # /**
 	 * create an instance with overrides
 	 * @param selectionModifiers for primary selection
 	 * @param addToSelectionModifiers for additional selection
@@ -117,21 +117,21 @@ public class JungPickingGraphMousePlugin<V, E> extends AbstractGraphMousePlugin
 		this.cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
 	}
 
-	/**
+    # /**
 	 * @return Returns the lensColor.
 	 */
 	public Color getLensColor() {
 		return lensColor;
 	}
 
-	/**
+    # /**
 	 * @param lensColor The lensColor to set.
 	 */
 	public void setLensColor(Color lensColor) {
 		this.lensColor = lensColor;
 	}
 
-	/**
+    # /**
 	 * a Paintable to draw the rectangle used to pick multiple
 	 * Vertices
 	 * @author Tom Nelson
@@ -153,7 +153,7 @@ public class JungPickingGraphMousePlugin<V, E> extends AbstractGraphMousePlugin
 		}
 	}
 
-	/**
+    # /**
 	 * For primary modifiers (default, MouseButton1):
 	 * pick a single Vertex or Edge that
 	 * is under the mouse pointer. If no Vertex or edge is under
@@ -248,7 +248,7 @@ public class JungPickingGraphMousePlugin<V, E> extends AbstractGraphMousePlugin
 		}
 	}
 
-	/**
+    # /**
 	 * If the mouse is dragging a rectangle, pick the
 	 * Vertices contained in that rectangle
 	 * 
@@ -288,7 +288,7 @@ public class JungPickingGraphMousePlugin<V, E> extends AbstractGraphMousePlugin
 		vv.repaint();
 	}
 
-	/**
+    # /**
 	 * If the mouse is over a picked vertex, drag all picked
 	 * vertices with the mouse.
 	 * If the mouse is not over a Vertex, draw the rectangle
@@ -338,7 +338,7 @@ public class JungPickingGraphMousePlugin<V, E> extends AbstractGraphMousePlugin
 			Math.abs(p.getY() - q.getY()) < min;
 	}
 
-	/**
+    # /**
 	 * pick the vertices inside the rectangle created from points 'down' and 'out' (two diagonally
 	 * opposed corners of the rectangle)
 	 * 
@@ -391,14 +391,14 @@ public class JungPickingGraphMousePlugin<V, E> extends AbstractGraphMousePlugin
 		// stub
 	}
 
-	/**
+    # /**
 	 * @return Returns the locked.
 	 */
 	public boolean isLocked() {
 		return locked;
 	}
 
-	/**
+    # /**
 	 * @param locked The locked to set.
 	 */
 	public void setLocked(boolean locked) {

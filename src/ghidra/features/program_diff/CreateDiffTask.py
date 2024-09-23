@@ -44,7 +44,7 @@ class CreateDiffTask extends Task {
 	private DiffApplySettingsProvider diffApplySettingsProvider;
 	private boolean isLimitedToSelection;
 
-	/**
+    # /**
 	 * Construct new LoadDiffTask that loads the dialog with the two 
 	 * programs and indicates their differences. The differences should be 
 	 * restricted to the limitedAddressSet. 
@@ -63,7 +63,7 @@ class CreateDiffTask extends Task {
 		this.applyFilter = applyFilter;
 	}
 
-	/** 
+    # /** 
 	 * This is the method TaskMonitor called to do the work.
 	 * 
 	 * @param monitor The TaskMonitor that will monitor the executing Task.  Will be null if

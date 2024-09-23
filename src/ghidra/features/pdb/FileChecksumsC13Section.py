@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ public class FileChecksumsC13Section extends C13Section {
 
 	private List<C13FileChecksum> fileChecksums = new ArrayList<>();
 
-	/**
+    # /**
 	 * Parse and return a {@link FileChecksumsC13Section}.
 	 * @param reader {@link PdbByteReader} containing the symbol records to deserialize
 	 * @param ignore flag indicating whether the record should be ignored
@@ -59,7 +59,7 @@ public class FileChecksumsC13Section extends C13Section {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the C13 file checksum
 	 * @return the checksum
 	 */

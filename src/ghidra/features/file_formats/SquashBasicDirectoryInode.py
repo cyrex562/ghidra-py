@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 
@@ -41,7 +41,7 @@ public class SquashBasicDirectoryInode extends SquashInode {
 	// Whether or not the parent directory is root
 	protected boolean parentIsRoot = false;
 
-	/**
+    # /**
 	 * Represents a SquashFS basic directory inode
 	 * @param reader A binary reader with pointer index at the start of the inode data
 	 * @param superBlock The SuperBlock for the current archive

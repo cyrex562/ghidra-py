@@ -15,7 +15,7 @@
  */
 package db.buffers;
 
-import java.io.IOException;
+
 import java.rmi.*;
 import java.util.NoSuchElementException;
 

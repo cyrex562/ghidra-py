@@ -57,7 +57,7 @@ public class ConstantTemplate implements Serializable {
 	}
 	
 
-	/**
+    # /**
 	 * Constructor ConstantTemplate.
 	 * @param o the operand
 	 * @param sel1 the first selection
@@ -81,7 +81,7 @@ public class ConstantTemplate implements Serializable {
 	public int select1() {return select1;}
 	public int select2() {return select2;}
 	
-	/**
+    # /**
 	 * Method resolve.
 	 * @param position the position of the constant to resolve
 	 * @param off the offset of the constant
@@ -108,7 +108,7 @@ public class ConstantTemplate implements Serializable {
 		}
 	}
 
-	/**
+    # /**
 	 * @param handles optional map of handles to be used for resolving
 	 * @see #resolve(Position, int)
 	 * @return long

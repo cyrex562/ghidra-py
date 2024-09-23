@@ -896,7 +896,7 @@ public class VTMatchTableProvider extends ComponentProviderAdapter
 		matchesTableModel.addFilter(filter);
 	}
 
-	/**
+    # /**
 	 * Forces a refilter, even though filtering operations may be disabled. The
 	 * reload is necessary since the model contents may have changed
 	 */
@@ -959,7 +959,7 @@ public class VTMatchTableProvider extends ComponentProviderAdapter
 		}
 	}
 
-	/**
+    # /**
 	 * A class meant to override the default table selection behavior <b>in special
 	 * situations</b>.
 	 * <p>
@@ -1060,7 +1060,7 @@ public class VTMatchTableProvider extends ComponentProviderAdapter
 		}
 	}
 
-	/**
+    # /**
 	 * Override the built-in SelectionManager so that we can respond to the current
 	 * table selection mode.
 	 */

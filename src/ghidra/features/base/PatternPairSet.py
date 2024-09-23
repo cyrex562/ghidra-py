@@ -15,7 +15,7 @@
  */
 package ghidra.util.bytesearch;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.util.xml.SpecXmlUtils;

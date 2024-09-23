@@ -30,7 +30,7 @@ import ghidra.util.Swing;
  */
 public class WindowUtilities {
 
-	/**
+    # /**
 	 * Returns the title for the given window
 	 * @param w the window
 	 * @return the title
@@ -49,7 +49,7 @@ public class WindowUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the window parent of c.  If c is a window, then c is returned.
 	 *
 	 * <P>Warning: this differs from {@link SwingUtilities#windowForComponent(Component)} in
@@ -70,7 +70,7 @@ public class WindowUtilities {
 		return SwingUtilities.getWindowAncestor(c);
 	}
 
-	/**
+    # /**
 	 * Returns the a rectangle representing the screen bounds for the entire screen space for
 	 * all screens in use.  The result will include virtual space that may not be rendered on
 	 * any physical hardware.   Said differently, the rectangle returned from this method will
@@ -94,7 +94,7 @@ public class WindowUtilities {
 		return virtualBounds;
 	}
 
-	/**
+    # /**
 	 * Returns a shape that represents the visible portion of the virtual screen bounds
 	 * returned from {@link #getVirtualScreenBounds()}
 	 *
@@ -114,7 +114,7 @@ public class WindowUtilities {
 		return area;
 	}
 
-	/**
+    # /**
 	 * Gets the <b>usable</b> screen bounds for the screen in which the given component is
 	 * showing.  Returns null if the given component is not showing.   Usable bounds are the
 	 * screen bounds after subtracting insets (for things like menu bars and task bars).
@@ -151,7 +151,7 @@ public class WindowUtilities {
 		return p;
 	}
 
-	/**
+    # /**
 	 * Computes the point such that a rectangle with the given size would be centered on the
 	 * screen.   The chosen screen in this case is the screen defined by
 	 * <pre>
@@ -177,7 +177,7 @@ public class WindowUtilities {
 		return center(bounds, d);
 	}
 
-	/**
+    # /**
 	 * Computes the point such that a rectangle with the given size would be centered on the
 	 * screen.   The chosen screen in this case is the screen defined by using the given
 	 * component.  If the given size is too big to fit on the screen in either dimension,
@@ -216,7 +216,7 @@ public class WindowUtilities {
 		return new Point(x, y);
 	}
 
-	/**
+    # /**
 	 * Creates a point that is centered over the given <code>parent</code> component, based upon
 	 * the size of the given <code>child</code>.
 	 * @param parent The component over which to center the child.
@@ -242,7 +242,7 @@ public class WindowUtilities {
 		return point;
 	}
 
-	/**
+    # /**
 	 * Update the component to intersect the visible bounds of the screen.
 	 *
 	 * <P>This method differs from {@link #ensureOnScreen(Component, Rectangle)} in that
@@ -258,7 +258,7 @@ public class WindowUtilities {
 		c.setBounds(bounds);
 	}
 
-	/**
+    # /**
 	 * Update the component to be within visible bounds of the screen.
 	 *
 	 * <P>This method differs from {@link #ensureEntirelyOnScreen(Component, Rectangle)} in that
@@ -274,7 +274,7 @@ public class WindowUtilities {
 		c.setBounds(bounds);
 	}
 
-	/**
+    # /**
 	 * Update the bounds to intersect visible bounds of the screen.  The given component is
 	 * used to determine which screen to use for updating the bounds.
 	 *
@@ -302,7 +302,7 @@ public class WindowUtilities {
 		bounds.setLocation(newPoint);
 	}
 
-	/**
+    # /**
 	 * Update the bounds to be within contained within the visible bounds of the screen.  The given
 	 * component is used to determine which screen to use for updating the bounds.
 	 *
@@ -354,7 +354,7 @@ public class WindowUtilities {
 		return defaultDevice.getDefaultConfiguration();
 	}
 
-	/**
+    # /**
 	 * Returns true if there are one or more modal dialogs displayed in the current JVM.
 	 * @return true if there are one or more modal dialogs displayed in the current JVM.
 	 */
@@ -425,7 +425,7 @@ public class WindowUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a list of all <code>parent</code>'s descendant modal dialogs.
 	 *
 	 * @param parent the parent for which to find modal dialogs
@@ -487,7 +487,7 @@ public class WindowUtilities {
 		return findYoungestChildDialogOfParentDialog(dialog, openModalDialogs);
 	}
 
-	/**
+    # /**
 	 * Attempts to locate the topmost modal dialog and then bring that dialog to the front of
 	 * the window hierarchy
 	 *
@@ -510,7 +510,7 @@ public class WindowUtilities {
 		Swing.runLater(modalestDialog::toFront);
 	}
 
-	/** Class that knows the screen bounds, insets and bounds without the insets */
+    # /** Class that knows the screen bounds, insets and bounds without the insets */
 	private static class ScreenBounds {
 
 		private Rectangle fullBounds;
@@ -526,7 +526,7 @@ public class WindowUtilities {
 			this.usableBounds = new Rectangle(x, y, width, height);
 		}
 
-		/**
+	    # /**
 		 * Returns the size not including the insets
 		 * @return the size not including the insets
 		 */

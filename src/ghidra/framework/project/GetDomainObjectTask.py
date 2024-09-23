@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main;
 
-import java.io.IOException;
+
 
 import docking.widgets.OptionDialog;
 import ghidra.framework.client.ClientUtil;
@@ -47,7 +47,7 @@ public class GetDomainObjectTask extends Task {
 
 	private DomainObject versionedObj;
 	
-	/**
+    # /**
 	 * Construct task open specified domainFile read only.  
 	 * An upgrade is performed if needed and is possible.
 	 * @param consumer consumer of the domain object
@@ -58,7 +58,7 @@ public class GetDomainObjectTask extends Task {
 		this(consumer, domainFile, versionNumber, false);
 	}
 
-	/**
+    # /**
 	 * Construct task open specified domainFile read only or immutable.  Immutable mode should not
 	 * be used for content that will be modified.
 	 * If read-only an upgrade is performed if needed, if immutable the user will be prompted
@@ -119,7 +119,7 @@ public class GetDomainObjectTask extends Task {
 		}
 	}
 	
-	/**
+    # /**
 	 * Return the domain object instance.
 	 * @return domain object which was opened or null if task cancelled or failed
 	 */

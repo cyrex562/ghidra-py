@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.context;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;

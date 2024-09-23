@@ -19,7 +19,7 @@ import java.awt.*;
 import java.awt.datatransfer.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 
@@ -108,7 +108,7 @@ public class ProjectDataTablePanel extends JPanel {
 		new ProjectDataTableDragProvider();
 	}
 
-	/**
+    # /**
 	 * Determine if table capacity has been exceeded and files are not shown
 	 * @return true if files are not shown in project data table, else false
 	 */
@@ -440,7 +440,7 @@ public class ProjectDataTablePanel extends JPanel {
 
 	}
 
-	/**
+    # /**
 	 * A listener that checks for files that need to be selected after each model change.  This is
 	 * required due to the asynchronous nature of the table loading and clients that wish to make
 	 * selections, potentially before the table has loaded the items whose selection is desired.s

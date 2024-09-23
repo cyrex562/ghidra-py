@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.util;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -26,7 +26,7 @@ import ghidra.util.task.TaskMonitor;
 
 public class DecompressionManager {
 
-	/**
+    # /**
 	 * Decompress the bytes and pipe into a new binary reader.
 	 * Required to allow reading of the remainder of the ART header. 
 	 * @param reader binary reader containing compressed bytes
@@ -50,7 +50,7 @@ public class DecompressionManager {
 		return decompressedReader;
 	}
 
-	/**
+    # /**
 	 * Decompress the block bytes and pipe into a new binary reader.
 	 * Required to allow reading of the remainder of the ART header. 
 	 * @param reader binary reader containing compressed bytes
@@ -76,7 +76,7 @@ public class DecompressionManager {
 		return decompressedReader;
 	}
 
-	/**
+    # /**
 	 * Decompress the block bytes and lay over program memory. 
 	 * @param program the program to overwrite
 	 * @param blocks list of ART blocks that need decompressing
@@ -112,7 +112,7 @@ public class DecompressionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Decompress the block bytes and lay over program memory. 
 	 * @param program the program to overwrite
 	 * @param compression type of compression

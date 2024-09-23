@@ -46,7 +46,7 @@ public class ReferenceMethods {
 		throw new AssertionError();
 	}
 
-	/**
+    # /**
 	 * Generate a String of pcode for a getstatic op.
 	 * @param pCode is the pcode accumulator
 	 * @param index - the index of the field reference in the constant pool
@@ -113,7 +113,7 @@ public class ReferenceMethods {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate a String of pcode for a putstatic op.
 	 * @param pCode is the pcode accumulator
 	 * @param index - the index of the field reference in the constant pool
@@ -185,7 +185,7 @@ public class ReferenceMethods {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate pcode for a getfield op
 	 * @param pCode is the pcode accumulator
 	 * @param index - the index of the field reference in the constant pool
@@ -258,7 +258,7 @@ public class ReferenceMethods {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate pcode for a putfield op
 	 * @param pCode is the pcode accumulator
 	 * @param index - the index of the field reference in the constant pool
@@ -358,7 +358,7 @@ public class ReferenceMethods {
 		return pCode.toString();*/
 	}
 
-	/**
+    # /**
 	 * Returns the descriptor of a field reference in the constant pool
 	 * @param constantPool
 	 * @param index

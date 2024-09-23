@@ -33,7 +33,7 @@ public class PdbIdentifiers {
 	private final GUID guid;
 	private final Processor processor;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param version The version number.
 	 * @param signature The signature.
@@ -48,7 +48,7 @@ public class PdbIdentifiers {
 		this.processor = processor == null ? Processor.UNKNOWN : processor;
 	}
 
-	/**
+    # /**
 	 * Returns the Version Number of the PDB.
 	 * @return Version Number of the PDB.
 	 */
@@ -56,7 +56,7 @@ public class PdbIdentifiers {
 		return version;
 	}
 
-	/**
+    # /**
 	 * Returns the Signature of the PDB.
 	 * @return Signature of the PDB.
 	 */
@@ -64,7 +64,7 @@ public class PdbIdentifiers {
 		return signature;
 	}
 
-	/**
+    # /**
 	 * Returns the Age of the PDB.
 	 * @return Age of the PDB.
 	 */
@@ -72,7 +72,7 @@ public class PdbIdentifiers {
 		return age;
 	}
 
-	/**
+    # /**
 	 * Returns the GUID for the PDB.
 	 * @return {@link GUID} for the PDB.
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 # /**
@@ -23,29 +23,29 @@ import java.io.InputStream;
  * implement per-chunk processing.
  */
 public abstract class CartV1StreamProcessor extends InputStream {
-	/**
+    # /**
 	 * Default buffer size to be used for input or output internal buffering
 	 */
 	@SuppressWarnings("unused")
 	protected static final int DEFAULT_BUFFER_SIZE = 1024 * 64;
 
-	/**
+    # /**
 	 * Delegate for InputStrem from which to read
 	 */
 	protected InputStream delegate;
 
-	/**
+    # /**
 	 * Internal current chunk that has been read and processed and is awaiting
 	 * upstream access.
 	 */
 	protected byte[] currentChunk;
 
-	/**
+    # /**
 	 * Current position in the current chunk buffer.
 	 */
 	protected int chunkPos;
 
-	/**
+    # /**
 	 * Construct a stream processor with the provided delegate.
 	 *
 	 * @param delegate InputStream to read and apply processing
@@ -54,7 +54,7 @@ public abstract class CartV1StreamProcessor extends InputStream {
 		this.delegate = delegate;
 	}
 
-	/**
+    # /**
 	 * Implements an InputStream compatible read()
 	 *
 	 * @return The value of the next byte in the stream
@@ -71,7 +71,7 @@ public abstract class CartV1StreamProcessor extends InputStream {
 		return Byte.toUnsignedInt(b);
 	}
 
-	/**
+    # /**
 	 * Implements an InputStream compatible read(buffer, offset, length)
 	 *
 	 * @param b The buffer in which to read the bytes
@@ -93,7 +93,7 @@ public abstract class CartV1StreamProcessor extends InputStream {
 		return bytesToCopy;
 	}
 
-	/**
+    # /**
 	 * Close the InputStream delegate.
 	 */
 	@Override
@@ -101,7 +101,7 @@ public abstract class CartV1StreamProcessor extends InputStream {
 		delegate.close();
 	}
 
-	/**
+    # /**
 	 * Function implemented by subclasses to do the stream processing of next
 	 * chunk in stream.
 	 *

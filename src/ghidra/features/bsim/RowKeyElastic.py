@@ -42,7 +42,7 @@ public class RowKeyElastic extends RowKey {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Initialize a key from a 64-bit long value
 	 * @param val is (least significant) 64-bits of the key
 	 */
@@ -52,7 +52,7 @@ public class RowKeyElastic extends RowKey {
 		valueC = (int)val;
 	}
 
-	/**
+    # /**
 	 * Create 96-bit, given 3 32-bit integers
 	 * @param a is most significant 32-bits
 	 * @param b is middle 32-bits
@@ -64,7 +64,7 @@ public class RowKeyElastic extends RowKey {
 		valueC = c;
 	}
 
-	/**
+    # /**
 	 * Construct key from String representation of an md5 hash.
 	 * The key is initialized from the last 96-bits of the hash
 	 * @param md5 is the hash
@@ -75,7 +75,7 @@ public class RowKeyElastic extends RowKey {
 		valueC = hexString2Int(md5,24);
 	}
 
-	/**
+    # /**
 	 * Key initialized to zero
 	 */
 	public RowKeyElastic() {
@@ -129,7 +129,7 @@ public class RowKeyElastic extends RowKey {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Emit the key as a base64 string of 16-characters.
 	 * Used to encode executable document ids
 	 * @return the String encoding
@@ -177,7 +177,7 @@ public class RowKeyElastic extends RowKey {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Generate an encoded document id from 64 bits of this key + additional bits
 	 * derived from a name string.  This encodes the document id of a library function given
 	 * just the function Name and the RowKey (this) of the containing library executable. 
@@ -204,7 +204,7 @@ public class RowKeyElastic extends RowKey {
 		Base64Lite.encodeLongBase64Padded(buffer, res);		
 	}
 
-	/**
+    # /**
 	 * Generate an id string for a FunctionDescription.  If the function is not from a library,
 	 * just use the counter id already set for the function and emit it as a decimal string.
 	 * If it is from a library, emit an id, 4 bytes of which is from the md5 placeholder hash of the library,
@@ -223,7 +223,7 @@ public class RowKeyElastic extends RowKey {
 		generateLibraryFunctionId(buffer, func.getFunctionName());
 	}
 
-	/**
+    # /**
 	 * Parse an encoded document id of an executable back into a key
 	 * @param id is the encoded String
 	 * @return the decoded RowKey
@@ -264,7 +264,7 @@ public class RowKeyElastic extends RowKey {
 		return new RowKeyElastic(valueA,valueB,valueC);
 	}
 
-	/**
+    # /**
 	 * Parse an encoded document id of a function back into a key
 	 * This handles both the normal function form: 64-bits encoded as decimal and
 	 * the library function form: 80-bits encoded in base64

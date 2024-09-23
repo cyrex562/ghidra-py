@@ -46,7 +46,7 @@ public class IndexRange {
     	return end;
     }
     
-	/**
+    # /**
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -57,7 +57,7 @@ public class IndexRange {
 		return otherRange.start == start && otherRange.end == end;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override

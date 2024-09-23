@@ -25,7 +25,7 @@ public class SymbolFileLocation {
 	private final String path;
 	private final SymbolServer symbolServer;
 
-	/**
+    # /**
 	 * Creates a new instance.
 	 * 
 	 * @param path raw path to file (relative to the {@link SymbolServer})
@@ -38,7 +38,7 @@ public class SymbolFileLocation {
 		this.fileInfo = fileInfo;
 	}
 
-	/**
+    # /**
 	 * The raw path inside the SymbolServer to the file.
 	 * 
 	 * @return raw path inside the SymbolServer to the file
@@ -47,7 +47,7 @@ public class SymbolFileLocation {
 		return path;
 	}
 
-	/**
+    # /**
 	 * The {@link SymbolServer} that holds the file.
 	 * 
 	 * @return the {@link SymbolServer} that holds the file
@@ -56,7 +56,7 @@ public class SymbolFileLocation {
 		return symbolServer;
 	}
 
-	/**
+    # /**
 	 * The {@link SymbolFileInfo pdb file} that this file is associated with.
 	 *  
 	 * @return the {@link SymbolFileInfo pdb file} that this file is associated with
@@ -65,7 +65,7 @@ public class SymbolFileLocation {
 		return fileInfo;
 	}
 
-	/**
+    # /**
 	 * Returns true if this file is an 'exact match' for the
 	 * specified {@link SymbolFileInfo other pdb file}.
 	 * 
@@ -76,7 +76,7 @@ public class SymbolFileLocation {
 		return fileInfo.isExactMatch(otherSymbolFileInfo);
 	}
 
-	/**
+    # /**
 	 * The 'absolute' location of this file, including the symbol server's location.
 	 * 
 	 * @return a string representing the 'absolute' location of this file

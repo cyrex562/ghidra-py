@@ -17,7 +17,7 @@ package ghidra.file.formats.squashfs;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.Date;

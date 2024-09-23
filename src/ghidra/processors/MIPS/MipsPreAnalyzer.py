@@ -198,7 +198,7 @@ public class MipsPreAnalyzer extends AbstractAnalyzer {
 
 	Register alternateReg = null;
 
-	/**
+    # /**
 	 * Given one instruction, finds a corresponding paired instruction.
 	 */
 	private void findPair(Program program, AddressSet pairSet, Instruction start_inst,
@@ -377,7 +377,7 @@ public class MipsPreAnalyzer extends AbstractAnalyzer {
 
 	}
 
-	/**
+    # /**
 	 * @param inst		instruction to getOpObjects
 	 * @return retObjs	Object array containing destReg, base, and offset
 	 */
@@ -403,7 +403,7 @@ public class MipsPreAnalyzer extends AbstractAnalyzer {
 		return retObjs;
 	}
 
-	/**
+    # /**
 	 * Checks if two instructions are a pair.
 	 * A pair is found if
 	 *  1) mnemonics are correct

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.prof;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;

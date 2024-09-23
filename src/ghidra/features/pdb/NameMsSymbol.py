@@ -21,7 +21,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
 // TODO: Consider whether symbol 'Internals' classes should implement this.
 public interface NameMsSymbol {
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

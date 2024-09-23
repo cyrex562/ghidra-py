@@ -29,7 +29,7 @@ public class RepositoryInfo {
 		this.readOnly = readOnly;
 	}
 
-	/**
+    # /**
 	 * Get the Ghidra URL which corresponds to the repository
 	 * @return repository URL
 	 */

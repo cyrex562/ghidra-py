@@ -38,7 +38,7 @@ public class FunctionCallGraph extends FilteringVisualGraph<FcgVertex, FcgEdge> 
 	private Map<FcgLevel, Set<FcgVertex>> verticesByLevel =
 		LazyMap.lazyMap(new HashMap<>(), () -> new TreeSet<>(vertexComparator));
 
-	/**
+    # /**
 	 * Sets the source vertex from which the graph is created
 	 * @param source the source vertex from which the graph is created
 	 */
@@ -51,7 +51,7 @@ public class FunctionCallGraph extends FilteringVisualGraph<FcgVertex, FcgEdge> 
 		addVertex(source);
 	}
 
-	/**
+    # /**
 	 * Returns the vertex from which the graph is created
 	 * @return the vertex from which the graph is created
 	 */
@@ -59,7 +59,7 @@ public class FunctionCallGraph extends FilteringVisualGraph<FcgVertex, FcgEdge> 
 		return source;
 	}
 
-	/**
+    # /**
 	 * Returns the vertex mapped to the given function; null if there is no matching vertex
 	 * 
 	 * @param f the function
@@ -69,7 +69,7 @@ public class FunctionCallGraph extends FilteringVisualGraph<FcgVertex, FcgEdge> 
 		return verticesByFunction.get(f);
 	}
 
-	/**
+    # /**
 	 * Returns true if this graph contains a vertex for the given function
 	 * 
 	 * @param f the function 
@@ -79,7 +79,7 @@ public class FunctionCallGraph extends FilteringVisualGraph<FcgVertex, FcgEdge> 
 		return verticesByFunction.containsKey(f);
 	}
 
-	/**
+    # /**
 	 * Returns all vertices in the given level.  The result will be non-null.
 	 * 
 	 * @param level the level of the vertices to retrieve
@@ -89,7 +89,7 @@ public class FunctionCallGraph extends FilteringVisualGraph<FcgVertex, FcgEdge> 
 		return IterableUtils.unmodifiableIterable(verticesByLevel.get(level));
 	}
 
-	/**
+    # /**
 	 * Returns the largest level (the furthest level from the source node) in the given 
 	 * direction 
 	 * 

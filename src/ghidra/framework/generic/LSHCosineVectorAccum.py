@@ -54,7 +54,7 @@ public class LSHCosineVectorAccum extends LSHCosineVector {
 			return true;
 		}
 
-		/**
+	    # /**
 		 * Comparison must be UNSIGNED!!
 		 */
 		@Override

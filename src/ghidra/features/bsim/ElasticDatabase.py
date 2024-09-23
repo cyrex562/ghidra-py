@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.elastic;
 
-import java.io.IOException;
+
 import java.io.StringReader;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -71,7 +71,7 @@ public class ElasticDatabase implements FunctionDatabase {
 	private Status status;						// status of the connection
 	private boolean initialized;				// true if the connection has been successfully initialized
 
-	/**
+    # /**
 	 * Append a list of CategoryRecords as (part of) a JSON document to a StringBuilder
 	 * Used as part of constructing JSON serialization of ExecutableRecords
 	 * @param catRecords list of category records
@@ -100,7 +100,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		buffer.append(']');
 	}
 
-	/**
+    # /**
 	 * Write an ExecutableRecord (meta-data about an executable) to the "executable" index.
 	 * @param exeRecord is the record to write
 	 * @param exeId is the unique id for the elasticsearch document
@@ -157,7 +157,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Set the "document id" for an ExecutableRecord. This is currently the
 	 * last 96-bits of the md5 hash of the executable encoded in base64
 	 * @param manager is the container for the ExecutableRecord
@@ -173,7 +173,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return (RowKeyElastic) exeRecord.getRowId();
 	}
 
-	/**
+    # /**
 	 * Generate a sorted list of the document ids of the children of a function
 	 * @param manager is the container of the function
 	 * @param funcRecord is the description of the function
@@ -198,7 +198,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Insert a range of FunctionDescription documents into the index.
 	 * Documents are stored in the "executable" index
 	 * @param manager is the container of the FunctionDescription objects
@@ -261,7 +261,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		connection.executeBulk("/_bulk", builder.toString());
 	}
 
-	/**
+    # /**
 	 * Query for a single executable document based on the md5.  There should be 0 or 1 matching docs.
 	 * @param md5 is the md5 string
 	 * @return null or the "hit" portion of the response corresponding to the matching document
@@ -284,7 +284,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return (JSONObject) hitsArray.get(0);
 	}
 
-	/**
+    # /**
 	 * Query for function documents matching a given executable and a given function name
 	 * @param exeId is the document id of the executable to match
 	 * @param functionName is the name of the function
@@ -319,7 +319,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return (JSONArray) hitsArray;
 	}
 
-	/**
+    # /**
 	 * Query for function documents matching a given executable,
 	 * a given function name, and a given function address. These 3 things
 	 * should always identify a function uniquely within the database, so at
@@ -361,7 +361,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return (JSONObject) hitsArray.get(0);
 	}
 
-	/**
+    # /**
 	 * Query for a single executable given uniquely specifying information (ExeSpecifier).
 	 * The exe document is retrieved from the database and parsed into an ExecutableRecord object.
 	 * @param specifier is the uniquely specifying info about the executable
@@ -386,7 +386,7 @@ public class ElasticDatabase implements FunctionDatabase {
 			specifier.execompname);
 	}
 
-	/**
+    # /**
 	 * Query for a single executable given uniquely specifying information (ExeSpecifier).
 	 * A cache map is checked first for a previously recovered ExecutableRecord object.
 	 * If not in the cache, the database is searched. If the executable is found, the ExecutableRecord
@@ -410,7 +410,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return erec;
 	}
 
-	/**
+    # /**
 	 * Within the list of all executables sorted by md5 or name, query for executables
 	 * from a specific window in this list.
 	 * @param manager is the container to receive the ExecutableRecords
@@ -459,7 +459,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Place the same query for executables as {@link #queryExecutables(DescriptionManager, List, int, String, boolean, String)}.
 	 * Except we only return the count of matching records.
 	 * @param filter is the option filter options for the count
@@ -483,7 +483,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return res.intValue();
 	}
 
-	/**
+    # /**
 	 * Query for a unique executable based on its name and possibly other metadata
 	 * 
 	 * @param manager is the container to store the result
@@ -550,7 +550,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return exerec;
 	}
 
-	/**
+    # /**
 	 * Fill in hitcounts for a list of VectorResults by querying for the meta document that
 	 * matches the vector id. The meta documents are queried in bulk up to a maximum number.
 	 * Two iterators pointing to the same list of VectorResults must be supplied. One is
@@ -611,7 +611,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return totalCount;
 	}
 
-	/**
+    # /**
 	 * Fetch vectors in bulk from the database, given a list of VectorResults with the vector ids
 	 * The vector documents are queried, then the resulting LSHVector objects are filled
 	 * in for the VectorResults by parsing the documents. Two iterators pointing to the same list
@@ -673,7 +673,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Given a list of FunctionDescriptions, fill in the matching SignatureRecords
 	 * @param listFunctions is the list of functions
 	 * @param manager is the FunctionDescription container
@@ -720,7 +720,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Query for function documents that match a given vector id and
 	 * passes additional filters. The filter must already be encoded as a JSON fragment.
 	 * @param vectorId is the vector id to match
@@ -756,7 +756,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return hitsArray;
 	}
 
-	/**
+    # /**
 	 * Query the database for all vectors that are "near" a given vector in terms
 	 * of similarity and significance. The routine returns a list of VectorResult
 	 * objects with the id, LSHVector, and hitcount filled in.
@@ -842,7 +842,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return totalCount;
 	}
 
-	/**
+    # /**
 	 * Returns the total number of hits in the given list of VectorResults
 	 * 
 	 * @param listResult is the list of VectorResults
@@ -856,7 +856,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Query the database for functions that are similar to the given feature vector
 	 * @param similarityResult receives the list of results and their similarity to the base vector
 	 * @param manager is the DescriptionManager container for the results
@@ -919,7 +919,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform a full QueryNearest request, with additional filters, placing SimilarityResults
 	 * in the ResponseNearest object. An iterator to FunctionDescriptions determines what
 	 * subset of functions are actually being queried.
@@ -982,7 +982,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return vecToResultMap.size();
 	}
 
-	/**
+    # /**
 	 * Query for function names within a previously queried executable
 	 * @param listFunctions - list of functions to be filled in by the query (may be null)
 	 * @param manager - container for record
@@ -1017,7 +1017,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Given an ExecutableRecord, function name, and address, query for
 	 * the matching FunctionDescription.
 	 * @param manager is the container for the FunctionDescription
@@ -1046,7 +1046,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return funcDesc;
 	}
 
-	/**
+    # /**
 	 * Retrieve a sequence of ExecutableRecords by id. The ids are queried in bulk,
 	 * up to a given maximum number of documents to fetch. Two iterators pointing to
 	 * the same list of RowKeys must be provided.  One is used while building the query
@@ -1103,7 +1103,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Query for function documents based on their parent executable id.
 	 * A "page" of results is selected by selecting a -start- document and a maximum number to return
 	 * @param exeId is the executable id
@@ -1128,7 +1128,7 @@ public class ElasticDatabase implements FunctionDatabase {
 			buffer.toString());
 	}
 
-	/**
+    # /**
 	 * Query for all functions (up to a maximum) of the given executable.
 	 * Populate a list with the resulting FunctionDescription objects
 	 * Does NOT populate SignatureRecord or CallGraph parts of the FunctionDescription
@@ -1173,7 +1173,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return (int) total;
 	}
 
-	/**
+    # /**
 	 * Issue a bulk update request to the database, given a list of update records
 	 * for functions from a single executable.
 	 * The routine needs an iterator to the FunctionDescription.Updates and only processes up to
@@ -1215,7 +1215,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		connection.executeBulk("/_bulk", buffer.toString());
 	}
 
-	/**
+    # /**
 	 * Issue an update request for single executable, given its document id and an update record
 	 * @param updateRecord is the executable specific update record
 	 * @param exeId is the document id of the executable
@@ -1300,7 +1300,7 @@ public class ElasticDatabase implements FunctionDatabase {
 			buffer.toString());
 	}
 
-	/**
+    # /**
 	 * Update metadata for the executable -erec- and all its functions (in manager)
 	 * @param manager is the collection of functions to update
 	 * @param exeRecord is the root executable
@@ -1354,7 +1354,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return val;
 	}
 
-	/**
+    # /**
 	 * Create a list of CategoryRecord objects from an "exe" JSON document,
 	 * by extracting all the "execategory" properties from the document
 	 * @param source is the exe document
@@ -1378,7 +1378,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Create an ExecutableRecord from a JSON "hit" document returned when querying the executable/exe index
 	 * The record will not be attached to any container (DescriptionManager), although it
 	 * can be transferred into a container later.
@@ -1410,7 +1410,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return exeres;
 	}
 
-	/**
+    # /**
 	 * Create an ExecutableRecord from a JSON "hit" document returned when querying the executable/exe index
 	 * @param manager is the container that will own the new record
 	 * @param hit is the "hit" document, which should have an "_id" and "_source" property.
@@ -1447,7 +1447,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return exerec;
 	}
 
-	/**
+    # /**
 	 * Build a FunctionDescription object in -manager- container from a -hit- document
 	 * returned from a query into the executable/function index.
 	 * @param hit the hit document
@@ -1475,7 +1475,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return fres;
 	}
 
-	/**
+    # /**
 	 * Convert function documents, presented as an array of JSON objects, that all
 	 * share a single feature vector returned by a nearest neighbor query, into
 	 * FunctionDescriptions and a full SimilarityResult.
@@ -1535,7 +1535,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Insert a library executable and all the functions it contains into the database.
 	 * The executable must be a library. The routine will complete successfully even if
 	 * the executable or some of its functions have been inserted before.
@@ -1555,7 +1555,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Insert an executable and all of the functions it contains into the database.
 	 * The executable must not be a library.  If the executable has been inserted before,
 	 * a non-fatal exception is thrown if the previous executable and this new one have
@@ -1624,7 +1624,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Create configuration index, containing the keyvalue pairs
 	 * and the sequence counter for ExecutableRecord/FunctionDescription document ids
 	 * @throws ElasticException for communication problems with the server
@@ -1654,7 +1654,7 @@ public class ElasticDatabase implements FunctionDatabase {
 			"{ \"type\": \"sequence\", \"iid\": 1 }");
 	}
 
-	/**
+    # /**
 	 * Allocate a specific number of ids for function documents.  The document id for a function
 	 * is an integer unique across the entire database. Allocation of this id is implemented as an integer
 	 * counter stored in a single document. Updating this document for an allocation must take into account
@@ -1675,7 +1675,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return res - amount;
 	}
 
-	/**
+    # /**
 	 * Insert a set of vector documents.  Update/create the corresponding meta documents that
 	 * count the number of times unique vectors are multiply inserted. Take into account simultaneous
 	 * updates from distributed nodes. The vectors are presented as an iterator to IdHistogram, with
@@ -1742,7 +1742,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Decrement the "meta" document counter by the histogram count for a set of vectors.  If any counter reaches zero,
 	 * delete the meta document and add the vector record to the list of vectors scheduled for full deletion.
 	 * @param deleteList accumulates records of counters that have reached zero
@@ -1787,7 +1787,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete vector documents in bulk. This assumes multiplicity counts in the "meta" documents
 	 * have already been checked, and these vectors are scheduled for full document deletion.
 	 * Vectors are presented as an iterator to IdHistograms. One bulk deletion request is
@@ -1817,7 +1817,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete function documents and exe document associated with an executable id
 	 * @param exeId is the executable's document id
 	 * @return the number of function documents deleted
@@ -1836,7 +1836,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return (int) numDocs;
 	}
 
-	/**
+    # /**
 	 * Append configuration WeightFactory weights to a JSON document in progress
 	 * @param builder accumulates the encoded weights
 	 * @param config is the Configuration
@@ -1850,7 +1850,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		builder.append("\" ");
 	}
 
-	/**
+    # /**
 	 * Append configuration IDFLookup hashes to a JSON document in progress
 	 * @param builder accumulates the encoded hashes
 	 * @param config is the Configuration
@@ -1864,7 +1864,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		builder.append("\" ");
 	}
 
-	/**
+    # /**
 	 * Adjust the number of replicas and the refresh rate for the database.
 	 * Different settings may make sense depending on whether the database is
 	 * doing a large ingest or is currently only responding to queries
@@ -1898,7 +1898,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * This routine establishes the schema for the "vector" and "meta" document types
 	 * for a new database. It also sets up weights and hashes for the vector tokenizer (lsh_tokenizer).
 	 * @param config contains database configuration info
@@ -1949,7 +1949,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		connection.executeStatementNoResponse(ElasticConnection.PUT, "meta", builder.toString());
 	}
 
-	/**
+    # /**
 	 * This routine establishes the schema for "exe" and "function" document types in a new database.
 	 * @throws ElasticException for communication problems with the server
 	 */
@@ -2004,7 +2004,7 @@ public class ElasticDatabase implements FunctionDatabase {
 			builder.toString());
 	}
 
-	/**
+    # /**
 	 * Construct the database connection given a URL.  The URL protocol must be http, and the URL
 	 * path must contain exactly one element naming the particular repository on the server.
 	 * @param baseURL is the http URL
@@ -2032,14 +2032,14 @@ public class ElasticDatabase implements FunctionDatabase {
 		initialized = false;
 	}
 
-	/**
+    # /**
 	 * @return true if a connection has been successfully initialized
 	 */
 	public boolean isInitialized() {
 		return initialized;
 	}
 
-	/**
+    # /**
 	 * Read database configuration ("keyvalue" documents) into a key/value pair map.
 	 * @return the populated map
 	 * @throws ElasticException for communication problems with the server
@@ -2083,7 +2083,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Given a critical key in the database configuration, return its corresponding value
 	 * @param key is the configuration key
 	 * @param keyValue is the key/value map
@@ -2099,7 +2099,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Write DatabaseInformation to database in one bulk request. If -k- and -L- are greater than zero, they are written as well
 	 * @param k (optional) is the database k parameter
 	 * @param L (optional) is the database L parameter
@@ -2161,7 +2161,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		writeFunctionTags();
 	}
 
-	/**
+    # /**
 	 * Extract category information for this database into the DatabaseInformation object
 	 * from the key/value map. Category information is stored as keys: execatcount, execat1, execat2, ...
 	 * @param infoResult is the information object to populate
@@ -2190,7 +2190,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Extract function tag information for this database into the DatabaseInformation object
 	 * from the key/value map. Tag information is stored as keys: functiontagcount, functiontag1, functiontag2, ...
 	 * @param infoResult is the information object that will hold results
@@ -2219,7 +2219,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Write out executable category information for this database as "keyvalue" documents
 	 * @throws ElasticException for communication problems with the server
 	 */
@@ -2244,7 +2244,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		connection.executeBulk('/' + repository + '_' + "configuration/_bulk", buffer.toString());
 	}
 
-	/**
+    # /**
 	 * Write out function tag information for this database as "keyvalue" documents
 	 * @throws ElasticException for communication problems with the server
 	 */
@@ -2271,7 +2271,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		connection.executeBulk('/' + repository + '_' + "configuration/_bulk", buffer.toString());
 	}
 
-	/**
+    # /**
 	 * Read all of the basic database configuration information from the "keyvalue" documents
 	 * @param config is the Configuration object to fill in with the info
 	 * @throws ElasticException for communication problems with the server
@@ -2301,7 +2301,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		readFunctionTags(config.info, keyValue);
 	}
 
-	/**
+    # /**
 	 * Change the password for specific user.  This assumes the ElasticSearch user
 	 * in the native realm.
 	 * @param uName is the user name
@@ -2320,7 +2320,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		connection.executeRawStatement(ElasticConnection.POST, path.toString(), buffer.toString());
 	}
 
-	/**
+    # /**
 	 * Initialize a new BSim repository.  This does most of the work of reading
 	 * configuration info and setting up the various factories.
 	 * @param config is the Configuration object that is populated during initialization
@@ -2576,7 +2576,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return query.getResponse();
 	}
 
-	/**
+    # /**
 	 * Create a new database
 	 * @param config is the configuration information for the database
 	 * @throws ElasticException for communication problems with the server
@@ -2598,7 +2598,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		initialized = true;
 	}
 
-	/**
+    # /**
 	 * Given the name of an executable library, its architecture, and a function name,
 	 * return the id of the document describing this specific function.
 	 * These 3 Strings are designed to uniquely identify a library function.
@@ -2628,7 +2628,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * For every function currently in the manager, fill in its call-graph information.
 	 * This involves querying the database for child information, adding the cross-link
 	 * information (CallgraphEntry) between FunctionDescriptions, and possibly querying
@@ -2658,7 +2658,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of QueryName command:
 	 *   Query for a specific executable and functions it contains
 	 * @param query is command parameters
@@ -2767,7 +2767,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.recordCount = countExecutables(filter);
 	}
 
-	/**
+    # /**
 	 * Queries the database for all executables matching the search criteria in the given
 	 * {@link QueryExeInfo} object. Results are stored in the query info object
 	 * 
@@ -2784,7 +2784,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.recordCount = response.records.size();
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of CreateDatabase command:
 	 *   Create a new database repository, with a specified configuration.
 	 * @param query is command parameters
@@ -2837,7 +2837,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the InstallCategoryRequest command:
 	 *   Install a new executable category to be managed by the database
 	 * @param query is command parameters
@@ -2877,7 +2877,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.info = info;
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of InstallTagRequest command:
 	 *   Install a new function tag to be managed by this data
 	 * @param query is command parameters
@@ -2908,7 +2908,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.info = info;
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of InstallMetadataRequest command:
 	 *   Change some of the global meta-data labels for the database.
 	 * @param query is command parameters
@@ -2931,7 +2931,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.info = info;
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of AdjustVectorIndex command:
 	 *   Adjust database settings pertinent to the main vector index
 	 * @param query is command parameters
@@ -2949,7 +2949,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.success = true;
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of PrewarmRequest command:
 	 *   This interface currently does not support prewarm
 	 * @param request is command parameters
@@ -2959,7 +2959,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.operationSupported = false;
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of InsertRequest command:
 	 *   Insert new functions and executables into the database.
 	 * @param query is command parameters
@@ -2999,7 +2999,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.numfunc = query.manage.numFunctions();
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of QueryPair command:
 	 *   Query for pairs functions in the database, and compute the similarity
 	 *   and significance of their feature vectors
@@ -3094,7 +3094,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.missedVector = missedVector;
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of QueryNearest command:
 	 *   Query for functions that are similar to those in the request.
 	 * @param query is command parameters
@@ -3128,7 +3128,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		response.manage.transferSettings(query.manage); // Echo back the settings
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of QueryNearestVector command:
 	 *   Query for vectors that are similar to those in the request
 	 * @param query is command parameters
@@ -3253,7 +3253,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of QueryDelete command:
 	 *   Delete specific executables from the database
 	 * @param query is command parameters
@@ -3302,7 +3302,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of QueryUpdate command:
 	 *   Update meta-data about specific executables and functions within the database
 	 * @param query is command parameters
@@ -3325,7 +3325,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of PasswordChange command.
 	 * @param query is command parameters
 	 * @throws LSHException if details of the request are malformed
@@ -3350,7 +3350,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		query.clearPassword();
 	}
 
-	/**
+    # /**
 	 * Given the document id for a specific function. Query for the document and
 	 * produce the corresponding FunctionDescription
 	 * @param manager is the container for the new FunctionDescription
@@ -3389,7 +3389,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return convertDescriptionRow(row, exeRec, manager, null);
 	}
 
-	/**
+    # /**
 	 * Given a specific function, query the database for the document ids of its children
 	 * @param funcRecord is the specific function
 	 * @return the child document ids as an array of JSON strings
@@ -3409,7 +3409,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		return childid;
 	}
 
-	/**
+    # /**
 	 * Given a specific function, query for all of its child functions.
 	 * Uses a RowKey->FunctionDescription map to cache functions and avoid
 	 * querying for the same function multiple times
@@ -3441,7 +3441,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for Elasticsearch version of the QueryChildren command:
 	 *   Query for the child functins of submitted functions
 	 * @param query is command parameters
@@ -3481,7 +3481,7 @@ public class ElasticDatabase implements FunctionDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the Elasticsearch version of QueryInfo command:
 	 *   Query for basic information about a database
 	 * @param query is command parameters

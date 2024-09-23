@@ -67,14 +67,14 @@ public class ClangSyntaxToken extends ClangToken {
 		super.decode(decoder, pfactory);
 	}
 
-	/**
+    # /**
 	 * @return the pair id if this is an opening token, -1 otherwise
 	 */
 	public int getOpen() {
 		return open;
 	}
 
-	/**
+    # /**
 	 * @return the pair id if this is a closing token, -1 otherwise
 	 */
 	public int getClose() {

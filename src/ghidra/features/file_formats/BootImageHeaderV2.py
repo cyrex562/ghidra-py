@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.bootimg;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -37,7 +37,7 @@ public class BootImageHeaderV2 extends BootImageHeaderV1 {
 		dtb_addr = reader.readNextLong();
 	}
 
-	/**
+    # /**
 	 * Size in bytes for DTB image
 	 * @return size in bytes for DTB image
 	 */
@@ -45,7 +45,7 @@ public class BootImageHeaderV2 extends BootImageHeaderV1 {
 		return dtb_size;
 	}
 
-	/**
+    # /**
 	 * q = (dtb_size + page_size - 1) / page_size
 	 * @return the DTB adjusted size, as page counts
 	 */
@@ -53,7 +53,7 @@ public class BootImageHeaderV2 extends BootImageHeaderV1 {
 		return (int) (pageAlign(Integer.toUnsignedLong(dtb_size)) / getPageSize());
 	}
 
-	/**
+    # /**
 	 * Physical load address for DTB image
 	 * @return physical load address for DTB image
 	 */

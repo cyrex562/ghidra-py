@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.javaclass.format.constantpool.ConstantPoolClassInfo;
@@ -43,7 +43,7 @@ public class NestMembersAttribute extends AbstractAttributeInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * The value of the {@code number_of_classes} item indicates the number of entries in
 	 * the {@code classes} array.
 	 * @return {@code number_of_classes}
@@ -52,7 +52,7 @@ public class NestMembersAttribute extends AbstractAttributeInfo {
 		return number_of_classes & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value in the {@code classes} array must be a valid index into the constant pool.
 	 * The constant pool entry at that index must be a {@link ConstantPoolClassInfo} structure
 	 * representing a class or interface which is a member of the nest hosted by the current

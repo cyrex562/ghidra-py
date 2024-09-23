@@ -15,7 +15,7 @@
  */
 package ghidra.features.base.values;
 
-import java.io.IOException;
+
 
 import javax.swing.JTextField;
 

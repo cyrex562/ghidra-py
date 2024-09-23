@@ -16,7 +16,7 @@
  */
 package ghidra.util.exception;
 
-import java.io.IOException;
+
 
 /**
  * Exception thrown when a user requests some operation to be performed

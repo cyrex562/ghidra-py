@@ -17,7 +17,7 @@
 //have failed relocations, collects their numeric types, and prints them out
 //(also the project path to the last example of that type)
 //@category FunctionID
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 

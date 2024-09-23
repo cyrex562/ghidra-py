@@ -27,7 +27,7 @@ public class PluginToolAccessUtils {
 		// Can't be constructed
 	}
 
-	/**
+    # /**
 	 * Disposes the tool.
 	 * @param tool the tool to dispose
 	 */
@@ -35,7 +35,7 @@ public class PluginToolAccessUtils {
 		tool.dispose();
 	}
 
-	/**
+    # /**
 	 * Returns true if the tool can be closed. Note this does not handle any data saving. It only
 	 * checks that there are no tasks running and the plugins can be closed.
 	 * @param tool the tool to close

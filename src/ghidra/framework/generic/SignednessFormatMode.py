@@ -19,15 +19,15 @@ package ghidra.util;
  * Defines how the sign of integer-type numbers is to be interpreted for rendering.
  */
 public enum SignednessFormatMode {
-	/**
+    # /**
 	 * Values to be rendered in binary, octal, or hexadecimal bases are rendered
 	 * as unsigned; numbers rendered in decimal are rendered as signed.
 	 *
 	 */
 	DEFAULT,
-	/** All values are rendered in their <i>unsigned</i> form  */
+    # /** All values are rendered in their <i>unsigned</i> form  */
 	UNSIGNED,
-	/** All values are rendered in their <i>signed</i> form */
+    # /** All values are rendered in their <i>signed</i> form */
 	SIGNED;
 
 	public static SignednessFormatMode parse(int value) {

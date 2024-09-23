@@ -17,14 +17,14 @@ package ghidra.program.model.data;
 
 public interface BitFieldPacking {
 
-	/**
+    # /**
 	 * Control if the alignment and packing of bit-fields follows MSVC conventions.  
 	 * When this is enabled it takes precedence over all other bitfield packing controls.
 	 * @return true if MSVC packing conventions are used, else false (e.g., GNU conventions apply).
 	 */
 	boolean useMSConvention();
 
-	/**
+    # /**
 	 * Control whether the alignment of bit-field types is respected when laying out structures.
 	 * Corresponds to PCC_BITFIELD_TYPE_MATTERS in GCC.
 	 * @return true when the alignment of the bit-field type should be used to impact the 
@@ -33,7 +33,7 @@ public interface BitFieldPacking {
 	 */
 	boolean isTypeAlignmentEnabled();
 
-	/**
+    # /**
 	 * A non-zero value indicates the fixed alignment size for bit-fields which follow
 	 * a zero-length bitfield if greater than a bitfields base type normal alignment. 
 	 * Corresponds to EMPTY_FIELD_BOUNDARY in GCC.
@@ -43,7 +43,7 @@ public interface BitFieldPacking {
 	 */
 	int getZeroLengthBoundary();
 
-	/**
+    # /**
 	 * Determine if this BitFieldPacking is equivalent to another specified instance
 	 * @param obj is the other instance
 	 * @return true if they are equivalent

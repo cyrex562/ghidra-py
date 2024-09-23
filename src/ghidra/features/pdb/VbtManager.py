@@ -33,7 +33,7 @@ public class VbtManager {
 	private PointerDataType fallbackVbptr;
 	protected Map<Address, VirtualBaseTable> vbtByAddress;
 
-	/**
+    # /**
 	 * Virtual Base Table Lookup Manager
 	 * @param dtm TODO
 	 */
@@ -47,7 +47,7 @@ public class VbtManager {
 		return fallbackVbptr;
 	}
 
-	/**
+    # /**
 	 * Returns the offset from the virtual base table entry
 	 * @param address Address of virtual base table
 	 * @param ordinal index into table
@@ -98,7 +98,7 @@ public class VbtManager {
 		int maxSeen = -1;
 		Map<Integer, VirtualBaseTableEntry> entryByOrdinal = new HashMap<>();
 
-		/**
+	    # /**
 		 * Returns the entry from the table for the ordinal
 		 * @param ordinal the ordinal into the table for the entry to retrieve
 		 * @return the table entry

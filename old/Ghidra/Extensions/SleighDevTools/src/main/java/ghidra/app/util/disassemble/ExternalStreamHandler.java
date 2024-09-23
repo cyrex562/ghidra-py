@@ -17,7 +17,7 @@ package ghidra.app.util.disassemble;
 
 import ghidra.util.Msg;
 
-import java.io.*;
+
 
 public class ExternalStreamHandler extends Thread {
 	private InputStream inStream;

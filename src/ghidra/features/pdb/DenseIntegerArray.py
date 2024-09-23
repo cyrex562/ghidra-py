@@ -38,7 +38,7 @@ public class DenseIntegerArray {
 
 	List<Integer> array = new ArrayList<>();
 
-	/**
+    # /**
 	 * Deserializes this {@link DenseIntegerArray}.
 	 * @param reader {@link PdbByteReader} from which to deserialize the data.
 	 * @param monitor {@link TaskMonitor} used for checking cancellation. 
@@ -56,7 +56,7 @@ public class DenseIntegerArray {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns whether the dense integer array contains the argument val.
 	 * @param val Value to check.
 	 * @return True if value is contained.
@@ -70,7 +70,7 @@ public class DenseIntegerArray {
 		return (index < array.size()) && ((array.get(index) & bitMask[bit]) != 0);
 	}
 
-	/**
+    # /**
 	 * Returns the maximum value allowed in the array. Minimum value is zero.
 	 * @return Value of maximum unsigned integer allowed.
 	 */

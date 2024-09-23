@@ -34,7 +34,7 @@ public abstract class AbstractPointerTypedefBuiltIn extends BuiltIn implements T
 	private TypedefDataType modelTypedef;
 	private UniversalID universalId = UniversalIdGenerator.nextID();
 
-	/**
+    # /**
 	 * Constructs a pointer-typedef.  The category path will match that of the 
 	 * referencedDataType. Subclass may set various default settings which correspond to 
 	 * {@link PointerTypeSettingsDefinition}.
@@ -52,7 +52,7 @@ public abstract class AbstractPointerTypedefBuiltIn extends BuiltIn implements T
 		setDefaultSettings(modelTypedef.getDefaultSettings());
 	}
 
-	/**
+    # /**
 	 * Constructs a pointer-typedef.  The category path will match that of the 
 	 * pointerDataType. Subclass may set various default settings which correspond to 
 	 * {@link PointerTypeSettingsDefinition}.
@@ -87,7 +87,7 @@ public abstract class AbstractPointerTypedefBuiltIn extends BuiltIn implements T
 		return StringUtils.isBlank(baseName) ? "TEMP" : baseName;
 	}
 
-	/**
+    # /**
 	 * Get the referenced datatype used to construct this datatype
 	 * (datatype which pointer references).
 	 * @return referenced datatype

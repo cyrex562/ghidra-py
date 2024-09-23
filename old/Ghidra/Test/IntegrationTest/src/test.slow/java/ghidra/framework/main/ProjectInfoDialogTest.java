@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.concurrent.atomic.AtomicReference;
 
 import javax.swing.*;

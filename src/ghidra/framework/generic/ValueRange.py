@@ -23,7 +23,7 @@ public class ValueRange implements Comparable<ValueRange> {
 	private long end;
 	private int value;
 	
-	/**
+    # /**
 	 * Constructor for numeric range with an associated value.
 	 * @param start beginning of the range
 	 * @param end end of the range
@@ -34,25 +34,25 @@ public class ValueRange implements Comparable<ValueRange> {
 		this.end = end;
 		this.value = value;
 	}
-	/**
+    # /**
 	 * Returns the beginning of the range.
 	 */
 	public long getStart() {
 		return start;
 	}
-	/**
+    # /**
 	 * Returns the end of the range.
 	 */
 	public long getEnd() {
 		return end;
 	}
-	/**
+    # /**
 	 * Returns the value associated with the range.
 	 */
 	public int getValue() {
 		return value;
 	}
-	/**
+    # /**
 	 * Determines whether or not the indicated index is in the range.
 	 * @param index the index to check
 	 * @return true if the index is in this range.

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -67,7 +67,7 @@ public abstract class TypeProgramInterface implements TPI {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb {@link AbstractPdb} that owns this {@link TypeProgramInterface}
 	 * @param recordCategory the RecordCategory of these records
@@ -81,7 +81,7 @@ public abstract class TypeProgramInterface implements TPI {
 		hash = new TypeProgramInterfaceHash();
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes needed to store a {@link TypeProgramInterface}
 	 *  version number
 	 * @return the number of bytes read from the bytes array
@@ -90,7 +90,7 @@ public abstract class TypeProgramInterface implements TPI {
 		return VERSION_NUMBER_SIZE;
 	}
 
-	/**
+    # /**
 	 * Deserializes Version Number of the {@link TypeProgramInterface} from the
 	 *  {@link PdbByteReader}
 	 * @param reader {@link PdbByteReader} from which to deserialize
@@ -101,7 +101,7 @@ public abstract class TypeProgramInterface implements TPI {
 		return reader.parseInt();
 	}
 
-	/**
+    # /**
 	 * Returns the TypeIndexMin
 	 * @return the TypeIndexMin value from the header
 	 */
@@ -110,7 +110,7 @@ public abstract class TypeProgramInterface implements TPI {
 		return typeIndexMin;
 	}
 
-	/**
+    # /**
 	 * Returns the TypeIndexMaxExclusive
 	 * @return TypeIndexMaxExclusive value from the header
 	 */
@@ -119,7 +119,7 @@ public abstract class TypeProgramInterface implements TPI {
 		return typeIndexMaxExclusive;
 	}
 
-	/**
+    # /**
 	 * Retrieves the {@link AbstractMsType} record indicated by the recordNumber
 	 * @param recordNumber record number to look up
 	 * @return {@link AbstractMsType} pertaining to the record number
@@ -170,7 +170,7 @@ public abstract class TypeProgramInterface implements TPI {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes and initializes {@link TypeProgramInterface} basic information so that later
 	 * queries can be made
 	 * @return version number of the {@link TypeProgramInterface}
@@ -200,7 +200,7 @@ public abstract class TypeProgramInterface implements TPI {
 		return versionNumber;
 	}
 
-	/**
+    # /**
 	 * Dumps this class.  This package-protected method is for debugging only
 	 * @param writer {@link Writer} to which to write the debug dump
 	 * @throws IOException on issue writing to the {@link Writer}
@@ -215,7 +215,7 @@ public abstract class TypeProgramInterface implements TPI {
 		writer.write("\nEnd TypeProgramInterfaceRecords-----------------------------\n");
 	}
 
-	/**
+    # /**
 	 * IMPORTANT: This method is for testing only.  It allows us to set a basic object.
 	 * <p>
 	 * Note: not all values are initialized.  This is a dummy constructor used to create a dummy
@@ -236,14 +236,14 @@ public abstract class TypeProgramInterface implements TPI {
 	//==============================================================================================
 	// Abstract Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes the Header of this class
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @throws PdbException upon not enough data left to parse
 	 */
 	protected abstract void deserializeHeader(PdbByteReader reader) throws PdbException;
 
-	/**
+    # /**
 	 * Dumps the Header.  This method is for debugging only
 	 * @param writer {@link Writer} to which to dump the header
 	 * @throws IOException on issue writing to the {@link Writer}
@@ -269,7 +269,7 @@ public abstract class TypeProgramInterface implements TPI {
 
 	//TODO: more to do for outputting individual records (might want a toString or dump method
 	// on each).
-	/**
+    # /**
 	 * Dumps the Type Records.  This method is for debugging only
 	 * @param writer {@link Writer} to which to dump the records
 	 * @throws IOException on issue writing to the {@link Writer}
@@ -316,7 +316,7 @@ public abstract class TypeProgramInterface implements TPI {
 
 		private List<TiOff> tiOffs = new ArrayList<>();
 
-		/**
+	    # /**
 		 * Deserializes the {@link TypeProgramInterfaceHash}
 		 * @param reader {@link PdbByteReader} from which to deserialize the data
 		 * @throws PdbException upon not enough data left to parse
@@ -334,7 +334,7 @@ public abstract class TypeProgramInterface implements TPI {
 			lengthHashAdjustment = reader.parseInt();
 		}
 
-		/**
+	    # /**
 		 * Deserializes the {@link TypeProgramInterfaceHash}
 		 * @param hashStreamNumberParam stream number of the hash
 		 * @param typeIndexMinParam the IndexMin to set/use
@@ -357,7 +357,7 @@ public abstract class TypeProgramInterface implements TPI {
 
 		// TODO: parsing not complete
 		// Suppress "unused" for hashBuffer, typeInfoOffsetPairsBuffer, hashAdjustmentBuffer
-		/**
+	    # /**
 		 * *UNDER CONSTRUCTION* Deserializes the Hash Streams...
 		 * @param monitor {@link TaskMonitor} used for checking cancellation
 		 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -478,7 +478,7 @@ public abstract class TypeProgramInterface implements TPI {
 			// TODO: incomplete implementation.
 		}
 
-		/**
+	    # /**
 		 * Dumps the this {@link TypeProgramInterfaceHash}.  This method is for debugging only
 		 * @param writer the writer
 		 * @throws IOException upon issue with writing to the writer
@@ -510,7 +510,7 @@ public abstract class TypeProgramInterface implements TPI {
 			parse(reader);
 		}
 
-		/**
+	    # /**
 		 * This method is only intended to be used to create a dummy key for performing
 		 * a binary search.  That is the reason that an {@code offset} parameter is not
 		 * specified.  The offset is set to zero
@@ -540,7 +540,7 @@ public abstract class TypeProgramInterface implements TPI {
 	}
 
 	private class KeyTiOff extends TiOff {
-		/**
+	    # /**
 		 * This method is only intended to be used to create a dummy key for performing
 		 * a binary search.  That is the reason that an {@code offset} parameter is not
 		 * specified.  The offset is set to zero

@@ -110,7 +110,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 	private VTDualListingHighlightProvider sourceHighlightProvider;
 	private VTDualListingHighlightProvider destinationHighlightProvider;
 
-	/**
+    # /**
 	 * Creates a new markup items table provider for displaying markup items, and code comparison
 	 * views such as a dual listing for the currently selected version tracking match.
 	 * @param controller the version tracking controller for this provider
@@ -346,7 +346,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		return markupItemsTableModel;
 	}
 
-	/**
+    # /**
 	 * Displays or hides the function comparison panel within the markup items provider.
 	 * @param show true indicates to show the function comparison within the provider.
 	 * Otherwise, hide it.
@@ -574,7 +574,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		sessionChanged(controller.getSession());
 	}
 
-	/**
+    # /**
 	 * Causes the information for the currently selected match to be reloaded.
 	 */
 	public void reload() {
@@ -586,7 +586,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 //        forceTableToRepaintEmptyWhileLoading();
 	}
 
-	/**
+    # /**
 	 * Loads the markup items table and its function comparison panel with the indicated match.
 	 * @param matchInfo indicates which match (if any) to load.
 	 */
@@ -760,7 +760,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		table.scrollRectToVisible(cellRect);
 	}
 
-	/**
+    # /**
 	 * Determines whether or not the dual listing is currently being shown to the user.
 	 * @return true if the dual listing is showing
 	 */
@@ -823,7 +823,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Restores the markup items table provider's components to the indicated saved configuration state.
 	 * @param saveState the configuration state to restore
 	 */
@@ -868,7 +868,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		}
 	}
 
-	/**
+    # /**
 	 * Saves the current configuration state of the components that compose the markup items table provider.
 	 * @param saveState the new configuration state
 	 */
@@ -923,7 +923,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		markupItemsTableModel.addFilter(filter);
 	}
 
-	/**
+    # /**
 	 * Forces a refilter, even though filtering operations may be disabled. The reload
 	 * is necessary since the model contents may have changed
 	 */
@@ -977,7 +977,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		}
 	}
 
-	/**
+    # /**
 	 * This notifies the Markup Items table of a location change in the source program of the Dual Listing provider.
 	 */
 	private class SourceProgramLocationListener implements ProgramLocationListener {
@@ -990,7 +990,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		}
 	}
 
-	/**
+    # /**
 	 * This notifies the Markup Items table of a location change in the destination program of the Dual Listing provider.
 	 */
 	private class DestinationProgramLocationListener implements ProgramLocationListener {
@@ -1003,7 +1003,7 @@ public class VTMarkupItemsTableProvider extends ComponentProviderAdapter
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the function comparison panel component that possibly contains multiple different views
 	 * for comparing code such as a dual listing.
 	 * @return the function comparison panel

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
@@ -231,7 +231,7 @@ class ProjectActionManager {
 		tool.addAction(switchWSAction);
 	}
 
-	/**
+    # /**
 	 * creates the recent projects menu
 	 */
 	private void buildCloseViewsActions() {
@@ -288,7 +288,7 @@ class ProjectActionManager {
 
 	}
 
-	/**
+    # /**
 	 * creates the recent projects menu
 	 */
 	void buildRecentViewsActions() {
@@ -393,7 +393,7 @@ class ProjectActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Notification that the connection state has changed;
 	 * @param repository shared project repository adapter
 	 */
@@ -431,7 +431,7 @@ class ProjectActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * en/disable operations on views depending on whether
 	 * any are opened
 	 */
@@ -469,7 +469,7 @@ class ProjectActionManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * closes all the open views
 	 */
 	private void closeAllViews() {
@@ -482,7 +482,7 @@ class ProjectActionManager {
 		buildCloseViewsActions();
 	}
 
-	/**
+    # /**
 	 * closes a view for Project | Close View
 	 * @throws IllegalArgumentException if urlPath is invalid
 	 */
@@ -504,7 +504,7 @@ class ProjectActionManager {
 		buildCloseViewsActions();
 	}
 
-	/**
+    # /**
 	 * Notification that a view was closed; called when the user
 	 * right mouse clicks on the project tab and hits the "close" option.
 	 */
@@ -512,7 +512,7 @@ class ProjectActionManager {
 		buildCloseViewsActions();
 	}
 
-	/**
+    # /**
 	 * menu listener for Project | Add View...
 	 */
 	private void openProjectView() {
@@ -647,7 +647,7 @@ class ProjectActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Class for recent view actions; subclass to set the help ID. 
 	 */
 	private class RecentViewPluginAction extends DockingAction {

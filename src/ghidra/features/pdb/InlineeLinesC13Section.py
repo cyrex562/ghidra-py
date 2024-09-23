@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +36,7 @@ public class InlineeLinesC13Section extends C13Section {
 	private int signature; //actually a DWORD (unsigned int)
 	private List<C13InlineeSourceLine> inlineeLines = new ArrayList<>();
 
-	/**
+    # /**
 	 * Parse and return a {@link InlineeLinesC13Section}.
 	 * @param reader {@link PdbByteReader} containing the symbol records to deserialize
 	 * @param ignore flag indicating whether the record should be ignored
@@ -93,7 +93,7 @@ public class InlineeLinesC13Section extends C13Section {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the signature.  Not sure how to interpret the signature at this time
 	 * @return the signature
 	 */
@@ -101,7 +101,7 @@ public class InlineeLinesC13Section extends C13Section {
 		return signature;
 	}
 
-	/**
+    # /**
 	 * Returns the inlinee source lines
 	 * @return the inlinee source lines
 	 */

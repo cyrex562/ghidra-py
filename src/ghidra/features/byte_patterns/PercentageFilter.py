@@ -28,7 +28,7 @@ public class PercentageFilter implements GTreeFilter {
 
 	private double percentage;
 
-	/**
+    # /**
 	 *
 	 * @param percentage - must be between 0.0 and 100.0, inclusive
 	 */
@@ -39,7 +39,7 @@ public class PercentageFilter implements GTreeFilter {
 		this.percentage = percentage;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param percentageToTest
 	 * @return true precisely when percentageToTest >= percentage

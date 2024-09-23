@@ -193,7 +193,7 @@ class X86_64_ElfRelocationContext extends ElfRelocationContext<X86_64_ElfRelocat
 		return null;
 	}
 
-	/**
+    # /**
 	 * Allocate the next section GOT entry location.  If GOT has not been allocated an attempt
 	 * will be made to create one.  If allocated gotMap will also be established.
 	 * @return Address of GOT entry or {@link Address#NO_ADDRESS} if unable to allocate.
@@ -234,7 +234,7 @@ class X86_64_ElfRelocationContext extends ElfRelocationContext<X86_64_ElfRelocat
 		return Address.NO_ADDRESS;
 	}
 
-	/**
+    # /**
 	 * Get or allocate a GOT entry for the specified symbolValue.
 	 * NOTE: This is restricted to object modules only which do not of a GOT.
 	 * @param elfSymbol ELF symbol
@@ -255,7 +255,7 @@ class X86_64_ElfRelocationContext extends ElfRelocationContext<X86_64_ElfRelocat
 		return addr == Address.NO_ADDRESS ? null : addr;
 	}
 
-	/**
+    # /**
 	 * Flush the section GOT table to a new %got memory block
 	 */
 	private void createGot() {

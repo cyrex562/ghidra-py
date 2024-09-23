@@ -16,7 +16,7 @@
 package ghidra.file.formats.android.dex.format;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.file.formats.android.dex.util.DexUtil;
@@ -56,7 +56,7 @@ public class StringDataItem implements StructConverter {
 		string = ModifiedUTF8.decode(in, out);
 	}
 
-	/**
+    # /**
 	 * Only used for invalid string conditions. 
 	 * @param string the invalid string.
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.lang;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 

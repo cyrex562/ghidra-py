@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.macho.commands;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;

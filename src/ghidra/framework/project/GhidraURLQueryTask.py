@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.io.InterruptedIOException;
 import java.net.URL;
 
@@ -45,7 +45,7 @@ public abstract class GhidraURLQueryTask extends Task implements GhidraURLResult
 
 	private boolean done = false;
 
-	/**
+    # /**
 	 * Construct a Ghidra URL read-only query task.
 	 * @param title task dialog title
 	 * @param ghidraUrl Ghidra URL (local or remote)
@@ -61,7 +61,7 @@ public abstract class GhidraURLQueryTask extends Task implements GhidraURLResult
 		this.ghidraUrl = ghidraUrl;
 	}
 
-	/**
+    # /**
 	 * Determine if the task has completed its execution
 	 * @return true if done executing else false
 	 */

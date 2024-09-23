@@ -24,19 +24,19 @@ import ghidra.framework.model.DomainFile;
  */
 public interface DomainFileContext {
 
-	/**
+    # /**
 	 * The selected files or empty if no files are selected
 	 * @return the files
 	 */
 	public List<DomainFile> getSelectedFiles();
 
-	/**
+    # /**
 	 * Returns the count of selected files
 	 * @return the count of selected files
 	 */
 	public int getFileCount();
 
-	/**
+    # /**
 	 * True if the current set of files is in the active project (false implies a non-active, 
 	 * read-only project)
 	 * 

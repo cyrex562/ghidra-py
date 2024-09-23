@@ -27,7 +27,7 @@ public class CreateAndAcceptApplyManualMatchTask extends CreateManualMatchTask {
 	private VTController controller;
 	private boolean applyMarkup;
 
-	/**
+    # /**
 	 * A task that creates the indicated function match and then either accepts it or applies it.
 	 * @param controller the controller for a version tracking session
 	 * @param sourceFunction the source function in the function match

@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database;
 
-import java.io.IOException;
+
 
 import db.DBHandle;
 import ghidra.framework.data.DomainObjectDBChangeSet;

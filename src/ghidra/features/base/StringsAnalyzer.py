@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.string;
 
-import java.io.IOException;
+
 
 import ghidra.app.services.*;
 import ghidra.app.util.importer.MessageLog;

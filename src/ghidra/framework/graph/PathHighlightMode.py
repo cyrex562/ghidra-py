@@ -26,31 +26,31 @@ public enum PathHighlightMode {
 
 	//@formatter:off
 	 
-	/** Shows all cycles in the graph */
+    # /** Shows all cycles in the graph */
 	ALLCYCLE,
 	
-	/** Shows all cycles for a given vertex */
+    # /** Shows all cycles for a given vertex */
 	CYCLE, 	 
 	
-	/** Shows all paths that can reach the given vertex */
+    # /** Shows all paths that can reach the given vertex */
 	IN,
 	
-	/** Shows all paths coming into and out of a vertex */
+    # /** Shows all paths coming into and out of a vertex */
 	INOUT,
 	
-	/** Shows no paths */
+    # /** Shows no paths */
 	OFF,
 	
-	/** Shows all paths reachable from the current vertex */
+    # /** Shows all paths reachable from the current vertex */
 	OUT, 	
 	
-	/** Shows all paths between two vertices */
+    # /** Shows all paths between two vertices */
 	PATH,
 	
-	/** Shows all paths that must have been traveled to reach the current vertex */
+    # /** Shows all paths that must have been traveled to reach the current vertex */
 	SCOPED_FORWARD,
 	
-	/** Shows all paths that will be traveled after leaving the current vertex */
+    # /** Shows all paths that will be traveled after leaving the current vertex */
 	SCOPED_REVERSE;
 	//@formatter:on
 }

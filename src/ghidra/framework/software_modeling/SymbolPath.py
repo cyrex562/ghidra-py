@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.util;
 
 import java.util.*;
@@ -22,24 +22,24 @@ import ghidra.program.model.listing.Library;
 import ghidra.program.model.symbol.*;
 
 # /**
- * A convenience object for parsing a namespace path to a symbol.
- * <P>
- * For example, if a SymbolPath is constructed with "foo::bar::baz", then "baz" is the
- * name of a symbol in the "bar" namespace, which is in the "foo" namespace.
- * <P>
- * <UL>
- * <LI>{@link #getName()} will return "baz".</LI>
- * <LI>{@link #getParentPath()} will return "foo:bar".</LI>
- * <LI>{@link #getPath()} will return "foo::bar::baz".</LI>
- * </UL>
- *
- */
+# * A convenience object for parsing a namespace path to a symbol.
+# * <P>
+# * For example, if a SymbolPath is constructed with "foo::bar::baz", then "baz" is the
+# * name of a symbol in the "bar" namespace, which is in the "foo" namespace.
+# * <P>
+# * <UL>
+# * <LI>{@link #getName()} will return "baz".</LI>
+# * <LI>{@link #getParentPath()} will return "foo:bar".</LI>
+# * <LI>{@link #getPath()} will return "foo::bar::baz".</LI>
+# * </UL>
+# *
+# */
 public class SymbolPath implements Comparable<SymbolPath> {
 
 	private final SymbolPath parentPath;
 	private final String symbolName;
 
-	/**
+    # /**
 	 * Construct a SymbolPath from a string containing NAMESPACE_DELIMITER ("::") sequences to
 	 * separate the namespace names.  This is the only constructor that employs special
 	 * string-based namespace parsing.
@@ -50,7 +50,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		this(SymbolPathParser.parse(symbolPathString));
 	}
 
-	/**
+    # /**
 	 * Construct a SymbolPath from an array of strings where each string is the name of a namespace
 	 * in the symbol path.
 	 *
@@ -60,7 +60,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		this(Arrays.asList(symbolPath));
 	}
 
-	/**
+    # /**
 	 * Construct a SymbolPath from a list of strings where each string is the name of a namespace
 	 * in the symbol path.
 	 *
@@ -81,7 +81,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructs a new SymbolPath for the given symbol.
 	 *
 	 * @param symbol the symbol to get a SymbolPath for.
@@ -90,7 +90,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		this(symbol, false);
 	}
 
-	/**
+    # /**
 	 * Constructs a new SymbolPath for the given symbol with the option to exclude a beginning
 	 * library name.
 	 *
@@ -111,7 +111,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a Symbol from a parent SymbolPath and a symbol name.
 	 * @param parent the parent SymbolPath. Can be null if the name is in the global space.
 	 * @param name the name of the symbol. This can't be null;
@@ -121,7 +121,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		this.parentPath = checkGlobal(parent);
 	}
 
-	/**
+    # /**
 	 * Returns a new SymbolPath in which invalid characters are replaced
 	 * with underscores.
 	 * @return the new SymbolPath with replaced characters.
@@ -134,7 +134,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return new SymbolPath(modList);
 	}
 
-	/**
+    # /**
 	 * Returns the name of the symbol;
 	 * 
 	 * @return the symbol name as string without any path information.
@@ -143,7 +143,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return symbolName;
 	}
 
-	/**
+    # /**
 	 * Returns the SymbolPath for the parent namespace or null if the parent is the global space.
 	 *
 	 * @return  the SymbolPath for the parent namespace or null if the parent is the global space.
@@ -152,7 +152,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return parentPath;
 	}
 
-	/**
+    # /**
 	 * Returns null if the parent is null or global; otherwise returns the path as a string of the
 	 * parent namespace path.
 	 *
@@ -165,7 +165,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return parentPath.getPath();
 	}
 
-	/**
+    # /**
 	 * Returns the full symbol path as a string.
 	 * 
 	 * @return the SymbolPath for the complete name as string, including namespace.
@@ -177,7 +177,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return symbolName;
 	}
 
-	/**
+    # /**
 	 * Creates a new SymbolPath composed of the list of names in this path followed by the
 	 * list of names in the given path.
 	 * @param path the path of names to append to this path.
@@ -189,7 +189,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return new SymbolPath(list);
 	}
 
-	/**
+    # /**
 	 * Returns true if this path contains any path entry matching the given text
 	 * 
 	 * @param text the text for which to search
@@ -229,7 +229,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * A convenience method to check if the given symbol's symbol path matches this path
 	 * 
 	 * @param s the symbol to check
@@ -239,7 +239,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return equals(new SymbolPath(s));
 	}
 
-	/**
+    # /**
 	 * Returns a list of names of the symbols in the symbol path, starting with the name just
 	 * below the global namespace.
 	 *
@@ -251,7 +251,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns an array of names of the symbols in the symbol path, starting with the name just
 	 * below the global namespace.
 	 *
@@ -275,7 +275,7 @@ public class SymbolPath implements Comparable<SymbolPath> {
 		list.add(symbolName);
 	}
 
-	/**
+    # /**
 	 * Some existing code might include "Global" at the beginning of their path.  This
 	 * method will eliminate any "Global" at the beginning of the path.
 	 *

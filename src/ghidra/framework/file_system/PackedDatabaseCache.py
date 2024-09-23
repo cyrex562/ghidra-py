@@ -15,7 +15,7 @@
  */
 package ghidra.framework.store.db;
 
-import java.io.*;
+
 import java.util.*;
 
 import db.buffers.LocalBufferFile;

@@ -24,7 +24,7 @@ class FidHashQuadImpl implements FidHashQuad {
 	final byte specificHashAdditionalSize;
 	final long specificHash;
 
-	/**
+    # /**
 	 * Constructs a FidHashQuadImpl with the given values. 
 	 * @param codeUnitSize the full hash size
 	 * @param fullHash the full hash
@@ -58,7 +58,7 @@ class FidHashQuadImpl implements FidHashQuad {
 		return specificHash;
 	}
 
-	/**
+    # /**
 	 * Overridden toString for useful debug printing.
 	 */
 	@Override

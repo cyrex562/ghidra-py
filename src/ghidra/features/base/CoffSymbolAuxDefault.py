@@ -21,7 +21,7 @@ import ghidra.app.util.bin.StructConverterUtil;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 class CoffSymbolAuxDefault implements CoffSymbolAux {
 

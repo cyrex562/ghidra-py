@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.datamgr;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 
 import javax.swing.JButton;
 import javax.swing.SwingUtilities;

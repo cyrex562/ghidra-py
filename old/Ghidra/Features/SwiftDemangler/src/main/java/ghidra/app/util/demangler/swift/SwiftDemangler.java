@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.swift;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.format.swift.SwiftTypeMetadata;

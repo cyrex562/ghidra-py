@@ -24,12 +24,12 @@ import db.DBRecord;
  * Represents a library record in the FID database.
  */
 public class LibraryRecord {
-	/**
+    # /**
 	 * The record is stored, no memoization is performed.
 	 */
 	final DBRecord record;
 
-	/**
+    # /**
 	 * Creates a new library record.
 	 * @param record the database record on which to base this library
 	 */
@@ -40,7 +40,7 @@ public class LibraryRecord {
 		this.record = record;
 	}
 
-	/**
+    # /**
 	 * Returns the library primary key.
 	 * @return the library primary key
 	 */
@@ -48,7 +48,7 @@ public class LibraryRecord {
 		return record.getKey();
 	}
 
-	/**
+    # /**
 	 * Returns the library family name.
 	 * @return the library family name
 	 */
@@ -56,7 +56,7 @@ public class LibraryRecord {
 		return record.getString(LIBRARY_FAMILY_NAME_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the library version string.
 	 * @return the library version string
 	 */
@@ -64,7 +64,7 @@ public class LibraryRecord {
 		return record.getString(LIBRARY_VERSION_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the library variant string.
 	 * @return the library variant string
 	 */
@@ -72,7 +72,7 @@ public class LibraryRecord {
 		return record.getString(LIBRARY_VARIANT_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra version string (used to create the library).
 	 * @return the Ghidra version string
 	 */
@@ -80,7 +80,7 @@ public class LibraryRecord {
 		return record.getString(GHIDRA_VERSION_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra LanguageID (used to create the library).
 	 * @return the Ghidra LanguageID
 	 */
@@ -88,7 +88,7 @@ public class LibraryRecord {
 		return new LanguageID(record.getString(GHIDRA_LANGUAGE_ID_COL));
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra language version (used to create the library).
 	 * @return the Ghidra language version
 	 */
@@ -96,7 +96,7 @@ public class LibraryRecord {
 		return record.getIntValue(GHIDRA_LANGUAGE_VERSION_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra language minor version (used to create the library).
 	 * @return the Ghidra language minor version
 	 */
@@ -104,7 +104,7 @@ public class LibraryRecord {
 		return record.getIntValue(GHIDRA_LANGUAGE_MINOR_VERSION_COL);
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra CompilerSpecID (used to create the library).
 	 * @return the Ghidra CompilerSpecID
 	 */
@@ -112,7 +112,7 @@ public class LibraryRecord {
 		return new CompilerSpecID(record.getString(GHIDRA_COMPILER_SPEC_ID_COL));
 	}
 
-	/**
+    # /**
 	 * Overridden toString for pretty printing the library whilst debugging.
 	 */
 	@Override

@@ -41,7 +41,7 @@ public class MultiIconBuilder {
 		this.multiIcon = new MultiIcon(Objects.requireNonNull(baseIcon));
 	}
 
-	/**
+    # /**
 	 * Adds the specified icon as an overlay to the base icon, possibly scaled according
 	 * to the specified width and height, in the specified quadrant corner.
 	 * 
@@ -63,7 +63,7 @@ public class MultiIconBuilder {
 
 	}
 
-	/**
+    # /**
 	 * Adds the specified icon as an overlay to the base icon at the given offsets and scaled
 	 * to the specified width and height.
 	 * 
@@ -81,7 +81,7 @@ public class MultiIconBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Adds the given icon as an overlay to the base icon, to the lower-right
 	 * 
 	 * @param icon the icon
@@ -91,7 +91,7 @@ public class MultiIconBuilder {
 		return addIcon(icon, icon.getIconWidth(), icon.getIconHeight(), QUADRANT.LR);
 	}
 
-	/**
+    # /**
 	 * Adds the given icon as an overlay to the base icon, to the lower-right,
 	 * scaled to the given width and height
 	 * 
@@ -104,7 +104,7 @@ public class MultiIconBuilder {
 		return addIcon(icon, w, h, QUADRANT.LR);
 	}
 
-	/**
+    # /**
 	 * Adds the given icon as an overlay to the base icon, to the lower-left
 	 * 
 	 * @param icon the icon
@@ -114,7 +114,7 @@ public class MultiIconBuilder {
 		return addIcon(icon, icon.getIconWidth(), icon.getIconHeight(), QUADRANT.LL);
 	}
 
-	/**
+    # /**
 	 * Adds the given icon as an overlay to the base icon, to the lower-left,
 	 * scaled to the given width and height
 	 * 
@@ -137,7 +137,7 @@ public class MultiIconBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Add text overlaid on the base icon, aligned to the specified quadrant.
 	 * 
 	 * @param text Text string to write onto the icon.  Probably can only fit a letter or two
@@ -164,7 +164,7 @@ public class MultiIconBuilder {
 		return addIcon(new ImageIcon(bi), bi.getWidth(), bi.getHeight(), quandrant);
 	}
 
-	/**
+    # /**
 	 * Sets a description for the icon being built.  This is useful for debugging.
 	 * 
 	 * @param description the description

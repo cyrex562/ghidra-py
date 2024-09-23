@@ -23,12 +23,12 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.PdbByteReader;
  */
 public class DummyMsType extends AbstractMsType {
 
-	/** This should not be a the PDB_ID value of a real AbstractMsType. */
+    # /** This should not be a the PDB_ID value of a real AbstractMsType. */
 	public static final int PDB_ID = 0xff00;
 
 	String typeNamePrefix;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -39,7 +39,7 @@ public class DummyMsType extends AbstractMsType {
 		this.typeNamePrefix = typeNamePrefix;
 	}
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

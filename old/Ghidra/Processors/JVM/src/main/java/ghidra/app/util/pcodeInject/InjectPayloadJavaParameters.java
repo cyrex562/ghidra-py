@@ -18,7 +18,7 @@ package ghidra.app.util.pcodeInject;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

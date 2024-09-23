@@ -21,7 +21,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 /**
  * See Apple's -- PEFBinaryFormat.h

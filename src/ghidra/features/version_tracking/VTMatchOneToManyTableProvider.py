@@ -527,7 +527,7 @@ public abstract class VTMatchOneToManyTableProvider extends ComponentProviderAda
 		oneToManyTableModel.addFilter(filter);
 	}
 
-	/** Forces a refilter, even though filtering operations may be disabled */
+    # /** Forces a refilter, even though filtering operations may be disabled */
 	@Override
 	public void forceRefilter() {
 		oneToManyTableModel.reFilter();

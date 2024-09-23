@@ -34,7 +34,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class SparcEarlyAddressAnalyzer extends SparcAnalyzer {
 
-	/**
+    # /**
 	 * The early Sparc analyzer catches instructions with sets of the o7 link
 	 * address register to a value other than right after the function
 	 */

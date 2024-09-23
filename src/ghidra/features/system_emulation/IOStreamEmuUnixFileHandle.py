@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.emu.unix;
 
-import java.io.*;
+
 
 import ghidra.pcode.emu.PcodeMachine;
 import ghidra.pcode.emu.sys.EmuIOException;
@@ -26,7 +26,7 @@ import ghidra.program.model.lang.CompilerSpec;
  */
 public class IOStreamEmuUnixFileHandle extends AbstractStreamEmuUnixFileHandle<byte[]> {
 
-	/**
+    # /**
 	 * Construct a proxy for the host's standard input
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -38,7 +38,7 @@ public class IOStreamEmuUnixFileHandle extends AbstractStreamEmuUnixFileHandle<b
 		return new IOStreamEmuUnixFileHandle(machine, cSpec, System.in, null);
 	}
 
-	/**
+    # /**
 	 * Construct a proxy for the host's standard output
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -50,7 +50,7 @@ public class IOStreamEmuUnixFileHandle extends AbstractStreamEmuUnixFileHandle<b
 		return new IOStreamEmuUnixFileHandle(machine, cSpec, null, System.out);
 	}
 
-	/**
+    # /**
 	 * Construct a proxy for the host's standard error output
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -65,7 +65,7 @@ public class IOStreamEmuUnixFileHandle extends AbstractStreamEmuUnixFileHandle<b
 	protected final InputStream input;
 	protected final OutputStream output;
 
-	/**
+    # /**
 	 * Construct a proxy for a host resource
 	 * 
 	 * <p>

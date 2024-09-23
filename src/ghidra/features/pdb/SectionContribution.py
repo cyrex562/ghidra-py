@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 
 # /**
  * This class represents Section Contribution component of a PDB file.  This class is only
@@ -77,14 +77,14 @@ public abstract class SectionContribution {
 	//==============================================================================================
 	// Abstract Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Deserializes the Section Contribution
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @throws PdbException upon not enough data left to parse
 	 */
 	abstract void deserialize(PdbByteReader reader) throws PdbException;
 
-	/**
+    # /**
 	 * Dumps the SectionContribution.  This method is for debugging only
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer
@@ -94,7 +94,7 @@ public abstract class SectionContribution {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Dumps the Section Contribution.  This method is for debugging only
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer

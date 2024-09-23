@@ -15,7 +15,7 @@
  */
 package ghidra.file.jad;
 
-import java.io.*;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.zip.ZipException;

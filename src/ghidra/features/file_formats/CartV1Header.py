@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.IOException;
+
 
 import com.google.gson.*;
 
@@ -40,7 +40,7 @@ public final class CartV1Header {
 	private long readerLength = -1;
 	private BinaryReader internalReader;
 
-	/**
+    # /**
 	 * Constructs a new CartV1Header read from the byte provider.
 	 *
 	 * @param byteProvider The byte provider from which to read
@@ -53,7 +53,7 @@ public final class CartV1Header {
 		this(new BinaryReader(byteProvider, true));
 	}
 
-	/**
+    # /**
 	 * Constructs a new CartV1Header, read from the little-endian binary reader.
 	 *
 	 * @param reader The little-endian binary reader from with to read
@@ -109,7 +109,7 @@ public final class CartV1Header {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the magic value read from the header.
 	 *
 	 * @return The magic value read from the header.
@@ -118,7 +118,7 @@ public final class CartV1Header {
 		return magic;
 	}
 
-	/**
+    # /**
 	 * Get the version of the CaRT file.
 	 *
 	 * @return The version of the CaRT file.
@@ -127,7 +127,7 @@ public final class CartV1Header {
 		return version;
 	}
 
-	/**
+    # /**
 	 * Get a copy of the ARC4 key read from the header.
 	 *
 	 * @return A copy of the ARC4 key read from the header.
@@ -146,7 +146,7 @@ public final class CartV1Header {
 		return arc4KeyCopy;
 	}
 
-	/**
+    # /**
 	 * Get the location where data starts within the CaRT file, accounting for the
 	 * header and any optional header data.
 	 *
@@ -156,7 +156,7 @@ public final class CartV1Header {
 		return CartV1Constants.HEADER_LENGTH + optionalHeaderLength;
 	}
 
-	/**
+    # /**
 	 * Get the length of the optional header. Should be 0 if no optional header is
 	 * available.
 	 *
@@ -166,7 +166,7 @@ public final class CartV1Header {
 		return optionalHeaderLength;
 	}
 
-	/**
+    # /**
 	 * Get a copy of the optional header data.
 	 *
 	 * @return A copy of the JsonObject optional header data or null if unavailable.
@@ -184,7 +184,7 @@ public final class CartV1Header {
 		return optionalHeaderDataCopy;
 	}
 
-	/**
+    # /**
 	 * Read and decrypt optional header data and return a copy.
 	 *
 	 * @param decryptor An initialize decryptor with the correct ARC4 key
@@ -210,7 +210,7 @@ public final class CartV1Header {
 		}
 
 		if (encryptedOptionalHeader == null) {
-			/**
+		    # /**
 			 * Initialize the optionalHeaderData as an empty JSON object when the optional
 			 * header length or position is invalid, when the length is 0 which indicates
 			 * that there is no optional header, or when reading the data failed.

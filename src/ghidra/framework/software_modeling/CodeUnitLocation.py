@@ -26,7 +26,7 @@ import ghidra.program.model.listing.Program;
  */
 public class CodeUnitLocation extends ProgramLocation {
 
-	/**
+    # /**
 	 * Create a new <CODE>CodeUnitLocation</CODE> for the given address.
 	 * The address will be adjusted to the beginning of the code unit containing
 	 * that address(if it exists).  The original address can be retrieved using
@@ -45,7 +45,7 @@ public class CodeUnitLocation extends ProgramLocation {
 		super(program, addr, componentPath, null, row, col, charOffset);
 	}
 
-	/**
+    # /**
 	 * Create a new <CODE>CodeUnitLocation</CODE> using the given information
 	 * @param program the program for obtaining the code unit
 	 * @param addr address of the location; should be on a code unit boundary.
@@ -62,7 +62,7 @@ public class CodeUnitLocation extends ProgramLocation {
 		super(program, addr, byteAddr, componentPath, null, row, col, charOffset);
 	}
 
-	/**
+    # /**
 	 * Create a new <CODE>CodeUnitLocation</CODE> for the given address.
 	 * The address will be adjusted to the beginning of the code unit containing
 	 * that address(if it exists).  The original address can be retrieved using
@@ -83,7 +83,7 @@ public class CodeUnitLocation extends ProgramLocation {
 		super(program, addr, componentPath, refAddr, row, col, charOffset);
 	}
 
-	/**
+    # /**
 	 * Default constructor for a code unit location needed for restoring from XML.
 	 */
 	public CodeUnitLocation() {

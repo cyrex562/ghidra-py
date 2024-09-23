@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.util;
 
-import java.io.IOException;
+
 
 public class OverlayRange {
 
@@ -31,7 +31,7 @@ public class OverlayRange {
 		this.overlayBytes = overlayBytes;
 	}
 
-	/**
+    # /**
 	 * Get the start index of this range.
 	 * @return the start index of this range
 	 */
@@ -39,7 +39,7 @@ public class OverlayRange {
 		return overlayIndex;
 	}
 
-	/**
+    # /**
 	 * Get the end index of this range.
 	 * @return the end index of this range
 	 */
@@ -47,7 +47,7 @@ public class OverlayRange {
 		return overlayIndex + overlayBytes.length;
 	}
 
-	/**
+    # /**
 	 * Returns true if this range contains the specific index.
 	 * @param index the specific index
 	 * @return true if this range contains the specific index
@@ -56,7 +56,7 @@ public class OverlayRange {
 		return index >= getStartIndex() && index <= getEndIndex();
 	}
 
-	/**
+    # /**
 	 * Returns true if this range contains the specific index.
 	 * @param index the specific index
 	 * @return true if this range contains the specific index
@@ -65,7 +65,7 @@ public class OverlayRange {
 		return containsIndex((int) index);
 	}
 
-	/**
+    # /**
 	 * Returns the byte at the specified index.
 	 * @param index the specific index
 	 * @return the byte at the specified index
@@ -74,7 +74,7 @@ public class OverlayRange {
 		return overlayBytes[index - overlayIndex];
 	}
 
-	/**
+    # /**
 	 * Returns the byte at the specified index.
 	 * @param index the specific index
 	 * @return the byte at the specified index
@@ -83,7 +83,7 @@ public class OverlayRange {
 		return getByte((int) index);
 	}
 
-	/**
+    # /**
 	 * Returns the byte array starting at index with specified length.
 	 * @param index the index into the range
 	 * @param length the length of the bytes from the range
@@ -101,7 +101,7 @@ public class OverlayRange {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the byte array starting at index with specified length.
 	 * @param index the index into the range
 	 * @param length the length of the bytes from the range
@@ -112,7 +112,7 @@ public class OverlayRange {
 		return getBytes((int) index, (int) length);
 	}
 
-	/**
+    # /**
 	 * Returns all bytes contained in this range.
 	 * @return all bytes contained in this range
 	 */

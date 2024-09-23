@@ -31,7 +31,7 @@ public final class DexUtil {
 
 	public final static long LOOKUP_ADDRESS = 0xE0000000L;
 
-	/**
+    # /**
 	 * Max size possible 0x10000 (2^16) methods * pointer size
 	 */
 	public final static long MAX_METHOD_LENGTH = 0x80000;
@@ -42,7 +42,7 @@ public final class DexUtil {
 
 	public final static String HANDLE_PATH = "/handles/";
 
-	/**
+    # /**
 	 * Converts the method index into the address where the method is stored in memory
 	 * @param program the program
 	 * @param methodIndex the method index
@@ -55,7 +55,7 @@ public final class DexUtil {
 		return defaultAddressSpace.getAddress(DexUtil.LOOKUP_ADDRESS + (methodIndex * pointerSize));
 	}
 
-	/**
+    # /**
 	 * Returns the namespace with the given name.
 	 * If namespace does not exist, then it gets created first.
 	 * @param program the program containing the namespace
@@ -78,7 +78,7 @@ public final class DexUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts the mangled namespace into a namespace hierarchy,
 	 * @param program the program containing the namespaces
 	 * @param className the mangled classname
@@ -91,7 +91,7 @@ public final class DexUtil {
 		return createNameSpaceFromMangledClassName(program, namespace, className);
 	}
 
-	/**
+    # /**
 	 * Converts the mangled namespace into a namespace hierarchy,
 	 * @param program the program containing the namespaces
 	 * @param parentNamespace the parent namespace
@@ -133,7 +133,7 @@ public final class DexUtil {
 		return parentNamespace;
 	}
 
-	/**
+    # /**
 	 * Converts the typeIndex into the Type String.
 	 * @param header the DEX/CDEX header
 	 * @param typeIndex the type index
@@ -143,7 +143,7 @@ public final class DexUtil {
 		return convertTypeIndexToString(header, typeIndex & 0xffff);
 	}
 
-	/**
+    # /**
 	 * Converts the typeIndex into the Type String.
 	 * @param header the DEX/CDEX header
 	 * @param typeIndex the type index
@@ -157,7 +157,7 @@ public final class DexUtil {
 		return convertToString(header, typeItem.getDescriptorIndex());
 	}
 
-	/**
+    # /**
 	 * Converts the stringIndex into the actual String.
 	 * @param header the DEX/CDEX header
 	 * @param stringIndex the string index
@@ -171,7 +171,7 @@ public final class DexUtil {
 		return stringItem.getStringDataItem().getString();
 	}
 
-	/**
+    # /**
 	 * Converts the prototypeIndex into the Prototype object.
 	 * @param header the DEX/CDEX header
 	 * @param prototypeIndex the prototype index
@@ -193,7 +193,7 @@ public final class DexUtil {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Converts the string package/class into an array
 	 * @param prefix the prefix
 	 * @param classString the class string
@@ -213,7 +213,7 @@ public final class DexUtil {
 		return (prefix + classString.substring(1, len - 1)).split("/");
 	}
 
-	/**
+    # /**
 	 * Converts the data type string into a Ghidra data type
 	 * @param dtm the data type manager for getting data types.
 	 * @param dataTypeString the data type string (java encodings)
@@ -262,7 +262,7 @@ public final class DexUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Adjusts the specified offset relative to the data offset.
 	 * Some DEX/CDEX files do not start at 0x0.
 	 * @param offset the offset
@@ -276,7 +276,7 @@ public final class DexUtil {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Adjusts the specified offset relative to the data offset.
 	 * Some DEX/CDEX files do not start at 0x0.
 	 * @param offset the offset

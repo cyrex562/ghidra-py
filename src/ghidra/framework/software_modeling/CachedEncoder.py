@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 
 # /**
@@ -24,19 +24,19 @@ import java.io.OutputStream;
  */
 public interface CachedEncoder extends Encoder {
 
-	/**
+    # /**
 	 * Clear any state associated with the encoder
 	 * The encoder should be ready to write a new document after this call.
 	 */
 	void clear();
 
-	/**
+    # /**
 	 * The encoder is considered empty if the writeTo() method would output zero bytes
 	 * @return true if there are no bytes in the encoder
 	 */
 	public boolean isEmpty();
 
-	/**
+    # /**
 	 * Dump all the accumulated bytes in this encoder to the stream.
 	 * @param stream is the output stream
 	 * @throws IOException for errors during the write operation

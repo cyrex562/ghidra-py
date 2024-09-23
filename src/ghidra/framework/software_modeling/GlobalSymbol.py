@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.address;
 
 import ghidra.program.model.listing.CircularDependencyException;
@@ -24,8 +24,8 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * The global symbol implementation class
- */
+# * The global symbol implementation class
+# */
 public class GlobalSymbol implements Symbol {
 	private GlobalNamespace globalNamespace;
 
@@ -157,7 +157,7 @@ public class GlobalSymbol implements Symbol {
 		return false;
 	}
 
-	/**
+    # /**
 	 * This returns false, since the global symbol isn't associated with a specific
 	 * program memory address.
 	 */
@@ -166,7 +166,7 @@ public class GlobalSymbol implements Symbol {
 		return false;
 	}
 
-	/**
+    # /**
 	 * This method doesn't apply to the global symbol, since it isn't associated with a specific
 	 * program memory address. Therefore calling it will have no effect.
 	 */
@@ -175,7 +175,7 @@ public class GlobalSymbol implements Symbol {
 		throw new UnsupportedOperationException("Can't pin the global symbol");
 	}
 
-	/**
+    # /**
 	 * This method doesn't apply to the global symbol, since a program always has a global symbol 
 	 * and it can't be renamed. Therefore calling it will throw an UnsupportedOperationException.
 	 * @param source the source of this symbol: Symbol.DEFAULT, Symbol.IMPORTED, Symbol.ANALYSIS, or Symbol.USER_DEFINED.
@@ -187,7 +187,7 @@ public class GlobalSymbol implements Symbol {
 			"Setting the source of the Global symbol is not allowed.");
 	}
 
-	/**
+    # /**
 	 * This method doesn't apply to the global symbol, since a program always has a global symbol 
 	 * and it can't be renamed. Therefore calling it will throw an UnsupportedOperationException.
 	 * return source the source of this symbol: default, imported, analysis, or user defined.

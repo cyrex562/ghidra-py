@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.vdex;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,7 +59,7 @@ public abstract class VdexHeader implements StructConverter {
 
 	public abstract int[] getDexChecksums();
 
-	/**
+    # /**
 	 * Returns the list of DEX headers contained in this VDEX.
 	 * Could return empty list depending on version of VDEX.
 	 */
@@ -67,7 +67,7 @@ public abstract class VdexHeader implements StructConverter {
 		return dexHeaderList;
 	}
 
-	/**
+    # /**
 	 * Returns the VDEX String Table.
 	 * Note: Could be NULL.
 	 */

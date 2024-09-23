@@ -26,7 +26,7 @@ public class CommentChangeRecord extends ProgramChangeRecord {
 	// types defined in CodeUnit
 	private int commentType;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param commentType the type of comment (as defined in {@link CodeUnit})
 	 * @param address the address of the comment change
@@ -38,7 +38,7 @@ public class CommentChangeRecord extends ProgramChangeRecord {
 		this.commentType = commentType;
 	}
 
-	/**
+    # /**
 	 * Returns the comment type as defined in {@link CodeUnit}.
 	 * @return the comment type
 	 */
@@ -46,7 +46,7 @@ public class CommentChangeRecord extends ProgramChangeRecord {
 		return commentType;
 	}
 
-	/**
+    # /**
 	 * Returns the previous comment or null if there was no previous comment.
 	 * @return the previous comment or null if there was no previous comment.
 	 */
@@ -54,7 +54,7 @@ public class CommentChangeRecord extends ProgramChangeRecord {
 		return (String) getOldValue();
 	}
 
-	/**
+    # /**
 	 * Returns the new comment or null if this is a result of deleting the comment.
 	 * @return the new comment or null if this is a result of deleting the comment
 	 */

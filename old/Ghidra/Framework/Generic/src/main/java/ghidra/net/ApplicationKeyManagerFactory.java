@@ -16,7 +16,7 @@
 package ghidra.net;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.net.Socket;
 import java.security.*;
 import java.security.cert.CertificateException;

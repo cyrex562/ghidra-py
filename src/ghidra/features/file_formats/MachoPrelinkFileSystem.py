@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.prelink;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 
@@ -223,7 +223,7 @@ public class MachoPrelinkFileSystem extends GFileSystemBase implements GFileSyst
 			file.getFSRL());
 	}
 
-	/**
+    # /**
 	 * Checks to see if this file system is contained in another PRELINK file system.
 	 * 
 	 * @return True if this file system is contained in another PRELINK file system; otherwise, false.
@@ -233,7 +233,7 @@ public class MachoPrelinkFileSystem extends GFileSystemBase implements GFileSyst
 		return container != null && container.getFS().getProtocol().equals(IOS_PRELINK_FSTYPE);
 	}
 
-	/**
+    # /**
 	 * Processes PRELINK and Macho-O offsets in order to map files to their Mach-O offsets in the 
 	 * providers.
 	 * 

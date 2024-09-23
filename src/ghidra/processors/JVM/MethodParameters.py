@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -35,7 +35,7 @@ public class MethodParameters implements StructConverter {
 	private int name_index;
 	private int access_flags;
 
-	/**
+    # /**
 	 * Creates a new {@code MethodParameters} object from the current index of {@code reader}
 	 * and advances the index.
 	 * @param reader source of bytes
@@ -46,7 +46,7 @@ public class MethodParameters implements StructConverter {
 		access_flags = Short.toUnsignedInt(reader.readNextShort());
 	}
 
-	/**
+    # /**
 	 * Returns the name index.  If the index is 0, then this formal parameter
 	 * does not have a name.  Otherwise, the constant pool entry at the index
 	 * is a {@code CONSTANT_Utf8_Info} structure encoding the name of the
@@ -57,7 +57,7 @@ public class MethodParameters implements StructConverter {
 		return name_index;
 	}
 
-	/**
+    # /**
 	 * Returns a integer whose bits are treated as flags to encode various properties
 	 * of the parameter
 	 * @return access flags
@@ -66,7 +66,7 @@ public class MethodParameters implements StructConverter {
 		return access_flags;
 	}
 
-	/**
+    # /**
 	 * Returns a {@code boolean} representing whether or not the parameter was declared
 	 * {@code final}
 	 * @return true if final
@@ -75,7 +75,7 @@ public class MethodParameters implements StructConverter {
 		return (access_flags & ACC_FINAL_INDEX) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns a {@code boolean} representing whether or not the parameter is synthetic, i.e.,
 	 * a compiler artifact rather than being explicitly or implicitly declared in the source.
 	 * @return true if synthetic
@@ -84,7 +84,7 @@ public class MethodParameters implements StructConverter {
 		return (access_flags & ACC_SYNTHETIC_INDEX) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns a {@code boolean} representing whether or not the parameter is mandated, i.e.,
 	 * implicitly declared in source code and forced to be emitted by all compilers.
 	 * @return true if synthetic

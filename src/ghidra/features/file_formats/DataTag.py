@@ -23,7 +23,7 @@ import ghidra.file.formats.ios.generic.iOS_AesCrypto;
 import ghidra.file.formats.ios.img3.AbstractImg3Tag;
 import ghidra.util.exception.CryptoException;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 public class DataTag extends AbstractImg3Tag {
@@ -34,7 +34,7 @@ public class DataTag extends AbstractImg3Tag {
 		_dataStartIndex = reader.getPointerIndex();
 	}
 
-	/**
+    # /**
 	 * Returns an array contains the DATA. It
 	 * will be padded as needed.
 	 * @return an array of data

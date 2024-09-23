@@ -33,14 +33,14 @@ public class BinaryFormatModel implements UniversalDataFormatModel {
 		symbolSize = 8;
 	}
 
-	/**
+    # /**
 	 * Get the name of this formatter.
 	 */
 	public String getName() {
 		return "Binary";
 	}
 
-	/**
+    # /**
 	 * Get the number of bytes to make a unit; in this case, 
 	 * returns 1.
 	 */
@@ -48,7 +48,7 @@ public class BinaryFormatModel implements UniversalDataFormatModel {
 		return 1;
 	}
 
-	/**
+    # /**
 	 * Given a character position from 0 to data unit symbol size - 1
 	 * it returns a number from 0 to unit byte size - 1 indicating which
 	 * byte the character position was obtained from.
@@ -57,14 +57,14 @@ public class BinaryFormatModel implements UniversalDataFormatModel {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Given the byte offset into a unit, get the column position.
 	 */
 	public int getColumnPosition(ByteBlock block, int byteOffset) {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Gets the number of characters required to display a
 	 * unit. 
 	 * @return 8 for number of characters in the binary representation.
@@ -73,7 +73,7 @@ public class BinaryFormatModel implements UniversalDataFormatModel {
 		return symbolSize;
 	}
 
-	/**
+    # /**
 	 * Gets the string representation at the given index in the block.
 	 * @param block block to change
 	 * @param index byte index into the block
@@ -98,14 +98,14 @@ public class BinaryFormatModel implements UniversalDataFormatModel {
 
 	}
 
-	/**
+    # /**
 	 * Returns true to allow values to be changed.
 	 */
 	public boolean isEditable() {
 		return (true);
 	}
 
-	/**
+    # /**
 	 * Overwrite a value in a ByteBlock.
 	 * @param block block to change
 	 * @param index byte index into the block
@@ -147,7 +147,7 @@ public class BinaryFormatModel implements UniversalDataFormatModel {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Get number of units in a group. A group may represent
 	 * multiple units shown as one entity. This format does not
 	 * support groups.
@@ -156,7 +156,7 @@ public class BinaryFormatModel implements UniversalDataFormatModel {
 		return 1;
 	}
 
-	/**
+    # /**
 	 * Set the number of units in a group. This format does not
 	 * support groups.
 	 * @throws UnsupportedOperationException 
@@ -165,14 +165,14 @@ public class BinaryFormatModel implements UniversalDataFormatModel {
 		throw new UnsupportedOperationException("groups are not supported");
 	}
 
-	/**
+    # /**
 	 * Get the number of characters separating units.
 	 */
 	public int getUnitDelimiterSize() {
 		return 1;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.app.plugin.core.format.DataFormatModel#validateBytesPerLine(int)
 	 */
 	public boolean validateBytesPerLine(int bytesPerLine) {

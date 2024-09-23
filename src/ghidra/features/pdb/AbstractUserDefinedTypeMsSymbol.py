@@ -28,7 +28,7 @@ public abstract class AbstractUserDefinedTypeMsSymbol extends AbstractMsSymbol
 
 	protected UserDefinedTypeSymbolInternals internals;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -41,7 +41,7 @@ public abstract class AbstractUserDefinedTypeMsSymbol extends AbstractMsSymbol
 		this.internals = internals;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */
@@ -50,7 +50,7 @@ public abstract class AbstractUserDefinedTypeMsSymbol extends AbstractMsSymbol
 		return internals.getName();
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */

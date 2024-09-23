@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.tlt;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +54,7 @@ public class TypeLookupTable_Nougat extends TypeLookupTable {
 		return entries_;
 	}
 
-	/**
+    # /**
 	 * owns_entries_ specifies if the lookup table owns the entries_ array.
 	 */
 	public boolean isOwnsEntries() {

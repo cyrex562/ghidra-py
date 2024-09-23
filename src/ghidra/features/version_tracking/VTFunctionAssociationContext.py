@@ -28,7 +28,7 @@ public class VTFunctionAssociationContext extends DefaultActionContext
 	private final Function selectedDestinationFunction;
 	private final VTMatch existingMatch;
 
-	/**
+    # /**
 	 * Constructs a context for the function association provider.
 	 * @param tool the tool containing the provider.
 	 * @param selectedSourceFunction the source function currently selected in the table or null.
@@ -68,7 +68,7 @@ public class VTFunctionAssociationContext extends DefaultActionContext
 		return existingMatch == null; // can only create a match if one does not exist
 	}
 
-	/**
+    # /**
 	 * @return the tool containing the function associations provider.
 	 */
 	public PluginTool getTool() {

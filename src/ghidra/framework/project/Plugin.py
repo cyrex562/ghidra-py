@@ -201,17 +201,17 @@ import ghidra.util.classfinder.ExtensionPoint;
  */
 public abstract class Plugin implements ExtensionPoint, PluginEventListener, ServiceListener {
 
-	/**
+    # /**
 	 * The {@link PluginTool} that hosts/contains this Plugin.
 	 */
 	protected PluginTool tool;
 
-	/**
+    # /**
 	 * Name of this plugin, derived from the simple class name.
 	 */
 	protected final String name = PluginUtils.getPluginNameFromClass(getClass());
 
-	/**
+    # /**
 	 * Static information about this Plugin, derived from its {@link PluginInfo} annotation.
 	 */
 	protected final PluginDescription pluginDescription =
@@ -221,7 +221,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 	private List<Class<? extends PluginEvent>> eventsConsumed = new ArrayList<>();
 	private List<ServiceInterfaceImplementationPair> services = new ArrayList<>();
 
-	/**
+    # /**
 	 * Flag that indicates that this Plugin's constructor phase has finished.  Used to
 	 * decide if events or services should be directly registered with the Tool or if they
 	 * should be queued to be registered later.
@@ -230,7 +230,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 
 	private boolean disposed = false;
 
-	/**
+    # /**
 	 * Construct a new Plugin.
 	 * <p>
 	 * @param tool PluginTool that will host/contain this plugin.
@@ -243,7 +243,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		registerStaticEvents();
 	}
 
-	/**
+    # /**
 	 * Auto-registers any services directly implemented by this Plugin instance (i.e.,
 	 * the MyService in "class MyPlugin extends Plugin implements MyService { }" )
 	 */
@@ -255,7 +255,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		}
 	}
 
-	/**
+    # /**
 	 * Auto-registers any PluginEvents listed in the Plugin's description.
 	 */
 	private void registerStaticEvents() {
@@ -290,7 +290,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		}
 	}
 
-	/**
+    # /**
 	 * Returns this plugin's name.
 	 * <p>
 	 * @return String name, derived from simple class name.
@@ -306,7 +306,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		}
 	}
 
-	/**
+    # /**
 	 * Method called to process a plugin event.  Plugins should override this method
 	 * if the plugin processes PluginEvents;
 	 * @param event plugin to process
@@ -315,7 +315,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Get the {@link PluginTool} that hosts/contains this plugin.
 	 *
 	 * @return PluginTool
@@ -324,7 +324,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return tool;
 	}
 
-	/**
+    # /**
 	 * Return classes of data types that this plugin can support.
 	 * <p>
 	 * @return classes of data types that this plugin can support
@@ -333,7 +333,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return new Class[0];
 	}
 
-	/**
+    # /**
 	 * Method called if the plugin supports this domain file.
 	 * <p>
 	 * @param data array of {@link DomainFile}s
@@ -343,7 +343,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return false;
 	}
 
-	/**
+    # /**
 	 * Request plugin to process URL if supported.  Actual processing may be delayed and 
 	 * interaction with user may occur (e.g., authentication, approval, etc.).
 	 * <p>
@@ -354,7 +354,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the domain files that this plugin has open.
 	 * <p>
 	 * @return array of {@link DomainFile}s that are open by this Plugin.
@@ -363,7 +363,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return new DomainFile[] {};
 	}
 
-	/**
+    # /**
 	 * Called after the constructor and before {@link #init()} to publish services to
 	 * the Tool's service registry.
 	 * <p>
@@ -403,7 +403,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		}
 	}
 
-	/**
+    # /**
 	 * Initialization method; override to add initialization for this plugin.
 	 * This is where a plugin should acquire its services. When this method
 	 * is called, all plugins have been instantiated in the tool.
@@ -412,7 +412,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Tells a plugin that it is no longer needed.  The plugin should release
 	 * any resources that it has.  All actions, components, services will automatically
 	 * be cleaned up.
@@ -421,7 +421,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Tells the Plugin to read its data-independent (preferences)
 	 * properties from the input stream.
 	 * @param saveState object that holds primitives for state information
@@ -430,7 +430,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Tells a Plugin to write any data-independent (preferences)
 	 * properties to the output stream.
 	 * @param saveState object that holds primitives for state information
@@ -439,7 +439,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Tells the Plugin to write any data-dependent state to the
 	 * output stream.
 	 * @param saveState object that holds primitives for state information
@@ -448,7 +448,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Tells the Plugin to read its data-dependent state from the
 	 * given SaveState object.
 	 * @param saveState object that holds primitives for state information
@@ -457,7 +457,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Fire the given plugin event; the tool notifies all other plugins
 	 * who are interested in receiving the given event type.
 	 * @param event event to fire
@@ -477,7 +477,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return classes;
 	}
 
-	/**
+    # /**
 	 * Notifies this plugin that a service has been added to
 	 *   the plugin tool.
 	 * Plugins should override this method if they update their state
@@ -491,7 +491,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Notifies this plugin that service has been removed from the
 	 *   plugin tool.
 	 * Plugins should override this method if they update their state
@@ -505,7 +505,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Check if this plugin depends on the given plugin
 	 *
 	 * @param plugin the plugin
@@ -532,7 +532,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return missingServices;
 	}
 
-	/**
+    # /**
 	 * Checks if this plugin is missing a required service.
 	 *
 	 * @return boolean true if a required service isn't available via the PluginTool.
@@ -555,7 +555,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		}
 	}
 
-	/**
+    # /**
 	 * Register event that this plugin consumes.
 	 * <p>
 	 * This method is for internal use.  If plugins wish to manage events consumed, then they should
@@ -567,7 +567,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		tool.addEventListener(eventClass, this);
 	}
 
-	/**
+    # /**
 	 * Registers a service.
 	 * <p>
 	 * If the constructor isn't finished yet (constructorFinished == false), the service is
@@ -612,7 +612,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		}
 	}
 
-	/**
+    # /**
 	 * Used to register a service (that has already been announced in this Plugin's
 	 * PluginInfo annotation via
 	 * {@link PluginInfo#servicesProvided() servicesProvided = SomeService.class}) during the
@@ -635,7 +635,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		doRegisterServiceProvided(interfaceClass, service, false);
 	}
 
-	/**
+    # /**
 	 * Used to register a service dynamically, during runtime, instead of during the Plugin's
 	 * constructor.
 	 * <p>
@@ -647,7 +647,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		doRegisterServiceProvided(interfaceClass, service, true);
 	}
 
-	/**
+    # /**
 	 * Returns the combination of required and non-required used services.
 	 *
 	 * @return union of the lists of required and non-required used services.
@@ -714,7 +714,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return activeServiceInstances.length != 0 && activeServiceInstances.length == count;
 	}
 
-	/**
+    # /**
 	 * Called to force this plugin to terminate any tasks it has running and
 	 * apply any unsaved data to domain objects or files. If it can't do
 	 * this or the user cancels then this returns false.
@@ -724,7 +724,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return true;
 	}
 
-	/**
+    # /**
 	 * Override this method if the plugin needs to cancel the closing of the domain object
 	 * @param dObj the domain object
 	 * @return false if the domain object should NOT be closed
@@ -733,7 +733,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return true;
 	}
 
-	/**
+    # /**
 	 * Called to allow this plugin to flush any caches to the domain object before it is
 	 * saved.
 	 * @param dObj domain object about to be saved
@@ -742,7 +742,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Called to force this plugin to save any domain object data it is controlling.
 	 * @return false if this plugin controls a domain object, but couldn't
 	 * save its data or the user canceled the save.
@@ -751,7 +751,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns true if this plugin has data that needs saving;
 	 * @return true if this plugin has data that needs saving;
 	 */
@@ -759,7 +759,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return false;
 	}
 
-	/**
+    # /**
 	 * Close the plugin.   This is when the plugin should release resources, such as those from
 	 * other services.  This method should not close resources being used by others (that should
 	 * happen in dispose()).
@@ -791,7 +791,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return name.hashCode();
 	}
 
-	/**
+    # /**
 	 * Provides the transient state object that was returned in the corresponding getTransientState()
 	 * call.  Plugins should override this method if they have state that needs to be saved as domain objects
 	 * get switched between active and inactive.
@@ -801,7 +801,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Returns an object containing the plugins state.  Plugins should override this method if
 	 * they have state that they want to maintain between domain object state transitions (i.e. when the
 	 * user tabs to a different domain object and back) Whatever object is returned will be fed back to
@@ -813,14 +813,14 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return null;
 	}
 
-	/**
+    # /**
 	 * Notification that all plugins have had their data states restored.
 	 */
 	public void dataStateRestoreCompleted() {
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Returns an object containing the plugin's state as needed to restore itself after an undo
 	 * or redo operation.  Plugins should override this method if they have special undo/redo handling.
 	 * @param domainObject the object that is about to or has had undoable changes made to it.
@@ -831,7 +831,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		return null;
 	}
 
-	/**
+    # /**
 	 * Updates the plugin's state based on the data stored in the state object.  The state object
 	 * is the object that was returned by this plugin in the {@link #getUndoRedoState(DomainObject)}
 	 * @param domainObject the domain object that has had an undo or redo operation applied to it.
@@ -841,7 +841,7 @@ public abstract class Plugin implements ExtensionPoint, PluginEventListener, Ser
 		// do nothing by default; subclasses should override as needed
 	}
 
-	/**
+    # /**
 	 * Returns the static {@link PluginDescription} object that was derived from the
 	 * {@link PluginInfo @PluginInfo} annotation at the top of your Plugin.
 	 * <p>

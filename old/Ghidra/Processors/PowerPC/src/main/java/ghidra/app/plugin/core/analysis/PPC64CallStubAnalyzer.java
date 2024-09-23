@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.analysis;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import org.xml.sax.SAXException;

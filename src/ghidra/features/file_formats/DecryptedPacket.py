@@ -15,7 +15,7 @@
  */
 package ghidra.file.crypto;
 
-import java.io.*;
+
 
 public class DecryptedPacket {
 	public final File decryptedFile;

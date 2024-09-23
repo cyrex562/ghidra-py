@@ -25,7 +25,7 @@ import java.sql.Statement;
  */
 public interface StatementSupplier<S extends Statement> {
 
-	/**
+    # /**
 	 * Return a {@link Statement} for use within the current thread.
 	 * @return statement
 	 * @throws SQLException if callback fails when producing the statement

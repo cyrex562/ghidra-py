@@ -15,7 +15,7 @@
  */
 package ghidra.framework.project;
 
-import java.io.*;
+
 import java.util.jar.JarOutputStream;
 import java.util.zip.ZipEntry;
 

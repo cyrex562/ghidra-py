@@ -34,7 +34,7 @@ import ghidra.app.plugin.processors.sleigh.expression.PatternExpression;
 public record WildOperandInfo(String wildcard, List<AssemblyConstructorSemantic> path,
 		AssemblyPatternBlock location, PatternExpression expression, Object choice) {
 
-	/**
+    # /**
 	 * Copy this wildcard info, but with an increased shift amount
 	 * 
 	 * @param amt the number of bits to shift (right)

@@ -40,7 +40,7 @@ public class DecompilerActionContext extends NavigatableActionContext
 	private ClangToken tokenAtCursor = null;
 	private boolean tokenIsInitialized = false;
 
-	/**
+    # /**
 	 * Construct a context specifying the line number
 	 * 
 	 * <p>
@@ -64,7 +64,7 @@ public class DecompilerActionContext extends NavigatableActionContext
 		this.lineNumber = lineNumber;
 	}
 
-	/**
+    # /**
 	 * Construct a context using the current token's line number
 	 * 
 	 * @param provider the decompiler provider producing the context
@@ -101,7 +101,7 @@ public class DecompilerActionContext extends NavigatableActionContext
 		return tokenAtCursor;
 	}
 
-	/**
+    # /**
 	 * Get the line number
 	 * 
 	 * <p>
@@ -152,7 +152,7 @@ public class DecompilerActionContext extends NavigatableActionContext
 		getComponentProvider().getController().setStatusMessage(msg);
 	}
 
-	/**
+    # /**
 	 * The companion method of {@link #checkActionEnablement(Supplier)}.
 	 * 
 	 * <p>
@@ -174,7 +174,7 @@ public class DecompilerActionContext extends NavigatableActionContext
 		actionCallback.call();
 	}
 
-	/**
+    # /**
 	 * The companion method of {@link #performAction(Callback)}.
 	 * 
 	 * <p>

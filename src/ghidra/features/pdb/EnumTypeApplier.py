@@ -30,7 +30,7 @@ import ghidra.util.exception.CancelledException;
 public class EnumTypeApplier extends AbstractComplexTypeApplier {
 
 	// Intended for: AbstractEnumMsType
-	/**
+    # /**
 	 * Constructor for enum type applier, for transforming a enum into a Ghidra DataType
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */

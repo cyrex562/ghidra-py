@@ -15,7 +15,7 @@
  */
 package ghidra.pty.ssh;
 
-import java.io.IOException;
+
 import java.util.Objects;
 import java.util.concurrent.CancellationException;
 

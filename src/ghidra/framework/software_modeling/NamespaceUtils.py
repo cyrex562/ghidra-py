@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.util;
 
 import java.util.*;
@@ -24,41 +24,41 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.exception.*;
 
 # /**
- * A class to hold utility methods for working with namespaces.
- * <p>
- * <a id="examples"></a>
- * Example string format:
- * <ul>
- *     <li>global{@link Namespace#DELIMITER ::}child1{@link Namespace#DELIMITER ::}child2</li>
- *     <li>child1</li>
- * </ul>
- * <a id="assumptions"></a>
- * <b>Assumptions for creating namespaces from a path string: </b>
- * <ul>
- *     <li>All elements of a namespace path should be namespace symbols and not other
- *         symbol types.</li>
- *     <li>Absolute paths can optionally start with the global namespace.</li>
- *     <li>You can provide a relative path that will start at the given
- *         parent namespace (or global if there is no parent provided).</li>
- *     <li>You can provide a path that has as its first entry the name of the
- *         given parent.  In this case, the first entry will not be created,
- *         but rather the provided parent will be used.</li>
- *     <li>If you provide a path and a parent, but the first element of the
- *         path is the global namespace, then the global namespace will be
- *         used as the parent namespace and not the one that was provided.</li>
- *     <li>You cannot embed the global namespace in a path, but it can be at
- *         the root.</li>
- * </ul>
- *
- *
- */
+# * A class to hold utility methods for working with namespaces.
+# * <p>
+# * <a id="examples"></a>
+# * Example string format:
+# * <ul>
+# *     <li>global{@link Namespace#DELIMITER ::}child1{@link Namespace#DELIMITER ::}child2</li>
+# *     <li>child1</li>
+# * </ul>
+# * <a id="assumptions"></a>
+# * <b>Assumptions for creating namespaces from a path string: </b>
+# * <ul>
+# *     <li>All elements of a namespace path should be namespace symbols and not other
+# *         symbol types.</li>
+# *     <li>Absolute paths can optionally start with the global namespace.</li>
+# *     <li>You can provide a relative path that will start at the given
+# *         parent namespace (or global if there is no parent provided).</li>
+# *     <li>You can provide a path that has as its first entry the name of the
+# *         given parent.  In this case, the first entry will not be created,
+# *         but rather the provided parent will be used.</li>
+# *     <li>If you provide a path and a parent, but the first element of the
+# *         path is the global namespace, then the global namespace will be
+# *         used as the parent namespace and not the one that was provided.</li>
+# *     <li>You cannot embed the global namespace in a path, but it can be at
+# *         the root.</li>
+# * </ul>
+# *
+# *
+# */
 public class NamespaceUtils {
 
 	private NamespaceUtils() {
 		// singleton utils class--no public construction
 	}
 
-	/**
+    # /**
 	 * Get the normal namespace path excluding any library name.  Global namespace will be
 	 * returned as empty string, while other namespace paths will be returned with trailing ::
 	 * suffix.
@@ -75,7 +75,7 @@ public class NamespaceUtils {
 		return str;
 	}
 
-	/**
+    # /**
 	 * Get namespace qualified symbol name
 	 * @param namespace namespace object
 	 * @param symbolName name of symbol
@@ -96,7 +96,7 @@ public class NamespaceUtils {
 		return str;
 	}
 
-	/**
+    # /**
 	 * Get the library associated with the specified namespace
 	 * @param namespace namespace
 	 * @return associated library or null if not associated with a library
@@ -112,7 +112,7 @@ public class NamespaceUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all namespaces with the given name in the parent namespace
 	 * 
 	 * @param program the program to search
@@ -137,7 +137,7 @@ public class NamespaceUtils {
 		return namespaceList;
 	}
 
-	/**
+    # /**
 	 * Returns a list of namespaces that match the given path.  The path can be
 	 * relative to the given root namespace or absolute if the path begins with
 	 * the global namespace name.
@@ -198,7 +198,7 @@ public class NamespaceUtils {
 		return parents;
 	}
 
-	/**
+    # /**
 	 * Returns a list all namespaces that have the given name in any of the given namespaces
 	 *
 	 * @param childName the name of the namespaces to retrieve
@@ -219,7 +219,7 @@ public class NamespaceUtils {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns a list all symbols that have the given name in any of the given
 	 * parent namespaces.
 	 *
@@ -240,7 +240,7 @@ public class NamespaceUtils {
 
 	}
 
-	/**
+    # /**
 	 * Returns a list of all symbols that match the given path within the global namespace. 
 	 * The path consists of a series of namespaces names separated by "::" followed by a label 
 	 * or function name.
@@ -254,7 +254,7 @@ public class NamespaceUtils {
 		return getSymbols(symbolPath, program, false);
 	}
 
-	/**
+    # /**
 	 * Returns a list of all symbols that match the given path. The path consists of a series
 	 * of namespaces names separated by "::" followed by a label or function name.
 	 *
@@ -280,7 +280,7 @@ public class NamespaceUtils {
 		return searchForAllSymbolsInAnyOfTheseNamespaces(parents, symbolName, program);
 	}
 
-	/**
+    # /**
 	 * Returns a list of Symbol that match the given symbolPath within the global namespace.
 	 *
 	 * @param symbolPath the symbol path that specifies a series of namespace and symbol names.
@@ -292,7 +292,7 @@ public class NamespaceUtils {
 		return getSymbols(symbolPath, program, false);
 	}
 
-	/**
+    # /**
 	 * Returns a list of Symbol that match the given symbolPath.
 	 *
 	 * @param symbolPath the symbol path that specifies a series of namespace and symbol names.
@@ -313,7 +313,7 @@ public class NamespaceUtils {
 		return searchForAllSymbolsInAnyOfTheseNamespaces(parents, symbolPath.getName(), program);
 	}
 
-	/**
+    # /**
 	 * Returns the first namespace with the given name and that is NOT a function that
 	 * is within the parent namespace. (ie. the first namespace that is not tied to a program
 	 * address)
@@ -338,7 +338,7 @@ public class NamespaceUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Takes a namespace path string and creates a namespace hierarchy to
 	 * match that string.  This method ignores function namespaces so the path
 	 * should not contain any function names.  If you want traverse down through
@@ -369,7 +369,7 @@ public class NamespaceUtils {
 		return createNamespaceHierarchy(namespacePath, rootNamespace, program, null, source);
 	}
 
-	/**
+    # /**
 	 * Takes a namespace path string and creates a namespace hierarchy to
 	 * match that string.  This method allows function namespaces in the path
 	 * and uses the given address to resolve functions with duplicate names.  When
@@ -433,7 +433,7 @@ public class NamespaceUtils {
 		return namespace;
 	}
 
-	/**
+    # /**
 	 * Returns the existing Function at the given address if its {@link SymbolPath} matches the
 	 * given path
 	 *
@@ -459,7 +459,7 @@ public class NamespaceUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the existing Function containing the given address if its
 	 * {@link SymbolPath} matches the given path
 	 *
@@ -485,7 +485,7 @@ public class NamespaceUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Finds the namespace for the given symbol path <b>that is not a function</b>
 	 *
 	 * @param program the program from which to get the namespace
@@ -571,7 +571,7 @@ public class NamespaceUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Convert a namespace to a class by copying all namespace children into a newly created class
 	 * and then removing the old namespace
 	 * 
@@ -588,7 +588,7 @@ public class NamespaceUtils {
 		return symbolTable.convertNamespaceToClass(namespace);
 	}
 
-	/**
+    # /**
 	 * Returns a list of namespaces, where each element is a component of the original specified
 	 * namespace, excluding the global root namespace.
 	 * <p>

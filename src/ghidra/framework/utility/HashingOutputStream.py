@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -31,7 +31,7 @@ public class HashingOutputStream extends OutputStream {
 	private OutputStream out;
 	private MessageDigest messageDigest;
 
-	/**
+    # /**
 	 * @param out - OutputStream to wrap
 	 * @param hashAlgo - see {@link MessageDigest#getInstance(String)}, ie. "MD5".
 	 * @throws NoSuchAlgorithmException

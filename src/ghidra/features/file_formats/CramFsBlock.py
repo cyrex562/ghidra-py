@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 
@@ -33,7 +33,7 @@ public class CramFsBlock {
 	static final int IS_DIRECT_POINTER = (1 << 30);
 	static final int IS_UNCOMPRESSED = (1 << 31);
 
-	/**
+    # /**
 	 * This constructor is for regular contiguous blocks in a cramfs file
 	 * that do not have the extension flag set.
 	 * @param start the address for the start of this block.
@@ -48,7 +48,7 @@ public class CramFsBlock {
 		isCompressed = false;
 	}
 
-	/**
+    # /**
 	 * Returns the block pointer for the cramfs block.
 	 * @return the block pointer for the cramfs block.
 	 */
@@ -56,7 +56,7 @@ public class CramFsBlock {
 		return blockPointer;
 	}
 
-	/**
+    # /**
 	 * Returns true if the block is a direct pointer.
 	 * @return true if the block is a direct pointer.
 	 */
@@ -64,7 +64,7 @@ public class CramFsBlock {
 		return isDirectPointer;
 	}
 
-	/**
+    # /**
 	 * Returns true if the block is compressed.
 	 * @return true if the block is compressed.
 	 */
@@ -72,7 +72,7 @@ public class CramFsBlock {
 		return isCompressed;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the cramfs block. 
 	 * @return the size of the cramfs block. 
 	 */
@@ -80,7 +80,7 @@ public class CramFsBlock {
 		return blockSize;
 	}
 
-	/**
+    # /**
 	 * Reads the data block in its entirety.
 	 * @return the read bytes in a byte array.
 	 * @throws IOException if there is an error while reading the data block.

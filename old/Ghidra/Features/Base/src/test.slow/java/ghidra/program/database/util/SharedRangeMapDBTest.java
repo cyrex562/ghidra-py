@@ -17,7 +17,7 @@ package ghidra.program.database.util;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import org.junit.*;

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.apport;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.*;
@@ -175,7 +175,7 @@ public class Apport extends DumpFile {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get default <code>Apport</code> dump loader options.
 	 * Limited to {@link DumpFile#CREATE_MEMORY_BLOCKS_OPTION_NAME}.
 	 * @param reader dump file reader

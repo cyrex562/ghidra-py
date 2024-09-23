@@ -31,7 +31,7 @@ public interface LayoutListener<V, E> {
 		RESTORE			// changes that happen when re-serializing saved locations
 	}
 
-	/**
+    # /**
 	 * Called when a vertex location has changed.
 	 * 
 	 * @param v the vertex

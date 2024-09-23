@@ -32,7 +32,7 @@ import ghidra.util.Msg;
  */
 public class PluginDescription implements Comparable<PluginDescription> {
 
-	/**
+    # /**
 	 * Fetches the {@link PluginDescription} for the specified Plugin class.
 	 * <p>
 	 * If the PluginDescription is found in the static cache, it is returned directly,
@@ -93,7 +93,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		this.eventsProduced = eventsProduced;
 	}
 
-	/**
+    # /**
 	 * Returns true if this plugin requires a noticeable amount of time to load when installed.
 	 * @return true if this plugin requires a noticeable amount of time to load when installed.
 	 */
@@ -101,7 +101,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return isSlowInstallation;
 	}
 
-	/**
+    # /**
 	 * Set the short description for what the plugin does.
 	 * @return short description
 	 */
@@ -109,7 +109,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return shortDescription;
 	}
 
-	/**
+    # /**
 	 * Get the location for the source file for the plugin.
 	 * @return path to the source file
 	 */
@@ -131,7 +131,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Return whether the plugin is in the given category.
 	 * @param parentCategory category to check
 	 * @return true if the plugin is in the category
@@ -140,7 +140,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return parentCategory.equals(category);
 	}
 
-	/**
+    # /**
 	 * Return the name of the plugin.
 	 * @return the name of the plugin.
 	 */
@@ -148,7 +148,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Return the name of the module that contains the plugin.
 	 * @return the module name
 	 */
@@ -161,7 +161,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return moduleName;
 	}
 
-	/**
+    # /**
 	 * Return the class of the plugin.
 	 * @return plugin class object
 	 */
@@ -169,7 +169,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return pluginClass;
 	}
 
-	/**
+    # /**
 	 * Return the description of the plugin.
 	 * @return {@code "<None>"} if no description was specified
 	 */
@@ -177,7 +177,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return description;
 	}
 
-	/**
+    # /**
 	 * Return the category for the plugin.
 	 * @return the category
 	 */
@@ -185,7 +185,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return category;
 	}
 
-	/**
+    # /**
 	 * Returns the development status of the plugin.
 	 * @return the status.
 	 */
@@ -259,7 +259,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 // static methods that will eventually be removed as old client plugins have been updated
 //==================================================================================================
 
-	/**
+    # /**
 	 * Constructs a new PluginDescription for the given plugin class.
 	 * <p>
 	 * Deprecated, use {@link PluginInfo @PluginInfo} instead.
@@ -283,7 +283,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return pd;
 	}
 
-	/**
+    # /**
 	 * Constructs a new PluginDescription for the given plugin class.
 	 * <p>
 	 * @deprecated, use {@link PluginInfo &#64;PluginInfo} instead.
@@ -314,7 +314,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 			Collections.emptyList(), Collections.emptyList(), Collections.emptyList());
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link PluginDescription} for the specified Plugin class.
 	 *
 	 * @param c Plugin's class
@@ -328,7 +328,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return (pd != null) ? pd : createDefaultPluginDescription(c);
 	}
 
-	/**
+    # /**
 	 * Creates a {@link PluginDescription} using information gathered from annotations
 	 * present on the specified {@link Plugin}'s class.
 	 *
@@ -363,7 +363,7 @@ public class PluginDescription implements Comparable<PluginDescription> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Creates an empty place-holder {@link PluginDescription} for the specified class.
 	 *
 	 * @param c Plugin's class

@@ -39,7 +39,7 @@ public abstract class WeakSet<T> implements Set<T> {
 		weakHashStorage = new WeakHashMap<>();
 	}
 
-	/**
+    # /**
 	 * Looks for situations where clients <b>may</b> lose the values added to this class.  This
 	 * most often happens when a client adds an anonymous, local listener to an object that is
 	 * using a WeakSet to store its listeners.  Our policy is to implement listeners at the
@@ -77,14 +77,14 @@ public abstract class WeakSet<T> implements Set<T> {
 // Interface Methods
 //==================================================================================================
 
-	/**
+    # /**
 	 * Add the given object to the set
 	 * @param t the object to add
 	 */
 	@Override
 	public abstract boolean add(T t);
 
-	/**
+    # /**
 	 * Remove the given object from the data structure
 	 * @param t the object to remove
 	 *
@@ -92,7 +92,7 @@ public abstract class WeakSet<T> implements Set<T> {
 	@Override
 	public abstract boolean remove(Object t);
 
-	/**
+    # /**
 	 * Returns true if the given object is in this data structure
 	 * @param t the object
 	 * @return true if the given object is in this data structure
@@ -100,27 +100,27 @@ public abstract class WeakSet<T> implements Set<T> {
 	@Override
 	public abstract boolean contains(Object t);
 
-	/**
+    # /**
 	 * Remove all elements from this data structure
 	 */
 	@Override
 	public abstract void clear();
 
-	/**
+    # /**
 	 * Return the number of objects contained within this data structure
 	 * @return the size
 	 */
 	@Override
 	public abstract int size();
 
-	/**
+    # /**
 	 * Return whether this data structure is empty
 	 * @return whether this data structure is empty
 	 */
 	@Override
 	public abstract boolean isEmpty();
 
-	/**
+    # /**
 	 * Returns a Collection view of this set.  The returned Collection is backed by this set.
 	 *
 	 * @return a Collection view of this set.  The returned Collection is backed by this set.
@@ -153,7 +153,7 @@ public abstract class WeakSet<T> implements Set<T> {
 	@Override
 	public abstract boolean removeAll(Collection<?> c);
 
-	/**
+    # /**
 	 * Returns a stream of the values of this collection.
 	 * @return a stream of the values of this collection.
 	 */

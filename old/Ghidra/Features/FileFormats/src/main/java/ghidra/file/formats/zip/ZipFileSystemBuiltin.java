@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.zip;
 
-import java.io.*;
+
 import java.sql.Date;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;

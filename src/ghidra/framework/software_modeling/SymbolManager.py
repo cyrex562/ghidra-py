@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.regex.Matcher;
@@ -78,7 +78,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 	private Lock lock;
 	final static Symbol[] NO_SYMBOLS = new SymbolDB[0];
 
-	/**
+    # /**
 	 * Creates a new Symbol manager.
 	 * 
 	 * @param handle the database handler
@@ -131,7 +131,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Find previously defined variable storage address
 	 * 
 	 * @param storage variable storage
@@ -184,7 +184,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the variable storage manager used by this symbol table
 	 * @return varable storage manager
 	 */
@@ -192,7 +192,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return variableStorageMgr;
 	}
 
-	/**
+    # /**
 	 * Check for and upgrade old namespace symbol addresses which included a namespace ID.
 	 * <p>
 	 * Start at end since Namespace-0 will not result in an OldGenericNamespaceAddress. Namespace-0
@@ -252,7 +252,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		monitor.setProgress(1);
 	}
 
-	/**
+    # /**
 	 * Upgrade old stack and register variable symbol address to variable addresses.
 	 * <p>
 	 * Also force associated references to be updated to new variable addresses.
@@ -310,7 +310,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * No more sharing the same variable address for multiple variable symbols.
 	 * <p>
 	 * Must split these up. Only reference to variable addresses should be the symbol address -
@@ -386,7 +386,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return variableStorageMgr.getVariableStorageAddress(var.getVariableStorage(), true);
 	}
 
-	/**
+    # /**
 	 * Create memory references for the external entry points; then delete the table.
 	 */
 	private void processOldExternalEntryPoints(TaskMonitor monitor)
@@ -414,7 +414,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		program.getDBHandle().deleteTable(OLD_EXTERNAL_ENTRY_TABLE_NAME);
 	}
 
-	/**
+    # /**
 	 * Add old local symbols
 	 * 
 	 * @throws IOException if there is database exception
@@ -462,7 +462,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Save off old local symbols whose upgrade needs to be deferred until after function manager
 	 * upgrade has been completed.
 	 * 
@@ -678,7 +678,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Removes the symbol directly
 	 * 
 	 * @param sym the symbol to remove.
@@ -1234,7 +1234,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return getPrimarySymbol(ref.getToAddress());
 	}
 
-	/**
+    # /**
 	 * Returns the maximum symbol address within the specified address space.
 	 * 
 	 * @param space address space
@@ -1250,7 +1250,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next available external symbol address
 	 * 
 	 * @return the address
@@ -1438,7 +1438,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Move symbol.
 	 * <p>
 	 * Only symbol address is changed. References must be moved separately.
@@ -1507,7 +1507,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return program.getExternalManager();
 	}
 
-	/**
+    # /**
 	 * Called by the NamespaceManager when a namespace is removed; remove all symbols that have the
 	 * given namespace ID.
 	 * 
@@ -2360,7 +2360,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return isPinned;
 	}
 
-	/**
+    # /**
 	 * Checks to make sure there is a single valid primary symbol at each address
 	 * 
 	 * @param set the set of addresses that may have to be fixed up
@@ -2402,7 +2402,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return symbols[0];
 	}
 
-	/**
+    # /**
 	 * Checks if the givens symbols from the same address have exactly one primary symbol amongst
 	 * them
 	 * 
@@ -2559,7 +2559,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates variable symbols.
 	 * <p>
 	 * Note this is not a method defined in the Symbol Table interface. It is intended to be used by
@@ -2714,7 +2714,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a Library symbol with the specified name and optional pathname
 	 * 
 	 * @param name library name
@@ -2734,7 +2734,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 			pathname, source, true);
 	}
 
-	/**
+    # /**
 	 * Create a Class symbol with the specified name and parent
 	 * 
 	 * @param name class name
@@ -2755,7 +2755,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 			null, source, true);
 	}
 
-	/**
+    # /**
 	 * Create a simple Namespace symbol with the specified name and parent
 	 * 
 	 * @param name class name
@@ -2814,7 +2814,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return createCodeSymbol(addr, name, namespace, source, null);
 	}
 
-	/**
+    # /**
 	 * Internal method for creating label symbols.
 	 * <p>
 	 * If identical memory symbol already exists it will be returned.
@@ -2881,7 +2881,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Internal method for creating function symbols
 	 * 
 	 * @param addr the address for the new symbol
@@ -2957,7 +2957,7 @@ public class SymbolManager implements SymbolTable, ManagerDB {
 		return symbol;
 	}
 
-	/**
+    # /**
 	 * Finds the appropriate symbol to promote when function is created.
 	 * <p>
 	 * And by promote, we really mean find the symbol that needs to be deleted before creating the

@@ -30,7 +30,7 @@ public class GTaskManagerFactory {
 	private static Map<DomainObject, GTaskManager> map =
 		new WeakHashMap<DomainObject, GTaskManager>();
 
-	/**
+    # /**
 	 * Returns the one GTaskManager for the domainObject. A new GTaskManager will be created if
 	 * one does not already exist for the domainObject.  
 	 * 

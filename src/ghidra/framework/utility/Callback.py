@@ -22,7 +22,7 @@ package utility.function;
 @FunctionalInterface
 public interface Callback {
 
-	/**
+    # /**
 	 * Creates a dummy callback function.  This is useful to avoid using <code>null</code>.
 	 * @return a dummy callback function
 	 */
@@ -32,7 +32,7 @@ public interface Callback {
 		};
 	}
 
-	/**
+    # /**
 	 * Returns the given callback object if it is not <code>null</code>.  Otherwise, a {@link #dummy()} 
 	 * callback is returned.  This is useful to avoid using <code>null</code>.
 	 * 
@@ -46,7 +46,7 @@ public interface Callback {
 		return c;
 	}
 
-	/**
+    # /**
 	 * The method that will be called.
 	 */
 	public void call();

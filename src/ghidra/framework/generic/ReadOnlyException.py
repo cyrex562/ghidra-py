@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 package ghidra.util;
-import java.io.IOException;
+
 
 # /**
  * Exception thrown if a method attemps to change an object that is marked as read-only.

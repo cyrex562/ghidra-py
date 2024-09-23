@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.util;
 
 import java.math.BigInteger;
@@ -29,8 +29,8 @@ import ghidra.util.exception.NoValueException;
 import ghidra.util.map.TypeMismatchException;
 
 # /**
- * 
- */
+# * 
+# */
 abstract class PseudoCodeUnit implements CodeUnit {
 
 	protected Address address;
@@ -52,7 +52,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 
 	private boolean isValid = true;
 
-	/**
+    # /**
 	 * Creates a pseudo code unit within a program
 	 * @param program the program this code unit is in.
 	 * @param addr the minimum address of this code unit.
@@ -65,7 +65,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		this(program, addr, length, length, memBuffer);
 	}
 
-	/**
+    # /**
 	 * Creates a pseudo code unit within a program
 	 * @param program the program this code unit is in.
 	 * @param addr the minimum address of this code unit.
@@ -84,7 +84,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a pseudo code unit without a program.
 	 * @param addr the minimum address of this code unit.
 	 * @param length the length  of this code unit.
@@ -96,7 +96,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		this(addr, length, length, memBuffer);
 	}
 
-	/**
+    # /**
 	 * Creates a pseudo code unit without a program.
 	 * @param addr the minimum address of this code unit.
 	 * @param length the length  of this code unit.
@@ -132,7 +132,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		}
 	}
 
-	/**
+    # /**
 	 * Invalidate memory buffer
 	 */
 	public void invalidate() {
@@ -160,7 +160,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return addressString;
 	}
 
-	/**
+    # /**
 	 * Get the length of the code unit.
 	 */
 	@Override
@@ -176,7 +176,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the bytes for this code unit.
 	 */
 	@Override
@@ -267,7 +267,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return GhidraLittleEndianDataConverter.INSTANCE.getBigInteger(this, offset, size, signed);
 	}
 
-	/**
+    # /**
 	 * Set the property name with the given value for this code unit.
 	 * @param name the name of the property to save.
 	 * @param value the value of the property to save.
@@ -283,7 +283,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Set the property name with the given value for this code unit.
 	 * @param name the name of the property to save.
 	 * @param value the value of the property to save.
@@ -299,7 +299,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Set the property name with the given value for this code unit.
 	 * @param name the name of the property to save.
 	 * @param value the value of the property to save.
@@ -314,7 +314,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Mark the property name as having a value for this code unit.
 	 * @param name the name of the property to save.
 	 * 
@@ -328,7 +328,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Get the object property for name; returns null if there is no name
 	 * property for this code unit.
 	 * @param name the name of the property.
@@ -344,7 +344,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Get the string property for name; returns null if there is no name
 	 * property for this code unit.
 	 * @param name the name of the property.
@@ -360,7 +360,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Get the int property for name.
 	 * @param name the name of the property.
 	 * 
@@ -382,7 +382,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		//throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns whether this code unit is marked as having the name property.
 	 * @param name the name of the property.
 	 * 
@@ -401,7 +401,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Remove the property value with the given name for this code unit.
 	 * @param name the name of the property.
 	 */
@@ -410,7 +410,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Get the label for this code unit.
 	 * 
 	 * @throws ConcurrentModificationException
@@ -430,7 +430,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return symbol.getName();
 	}
 
-	/**
+    # /**
 	 * Get the symbols for this code unit.
 	 * 
 	 * @throws ConcurrentModificationException
@@ -444,7 +444,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return st.getSymbols(address);
 	}
 
-	/**
+    # /**
 	 * Get the primary Symbol for this code unit.
 	 * 
 	 * @throws ConcurrentModificationException
@@ -459,7 +459,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return st.getPrimarySymbol(address);
 	}
 
-	/**
+    # /**
 	 * Get the starting address for this code unit.
 	 * 
 	 * @throws ConcurrentModificationException
@@ -470,7 +470,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Get the ending address for this code unit.
 	 * 
 	 * @throws ConcurrentModificationException
@@ -481,7 +481,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return maxAddress;
 	}
 
-	/**
+    # /**
 	 * Get the code unit after this code unit.
 	 * 
 	 * @throws ConcurrentModificationException
@@ -493,7 +493,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return program.getListing().getCodeUnitAfter(address);
 	}
 
-	/**
+    # /**
 	 * Get the code unit before this code unit.
 	 * 
 	 * @throws ConcurrentModificationException
@@ -511,7 +511,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		//throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Get the comment as an array where each element is a single line for the
 	 * given type.
 	 * 
@@ -534,7 +534,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		//throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Set the comment for the given type.
 	 * 
 	 * @param commentType
@@ -552,7 +552,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		//throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Set the comment for the given type.
 	 * 
 	 * @param commentType
@@ -595,7 +595,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		//throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Determines if this code unit contains the indicated address.
 	 * @param testAddr the address to test
 	 * @return true if address is contained in the range.
@@ -608,7 +608,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return address.compareTo(testAddr) <= 0 && testAddr.compareTo(endAddr) <= 0;
 	}
 
-	/**
+    # /**
 	 * Compares the given address to the address range of this node.
 	 * 
 	 * @param a the address
@@ -627,7 +627,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return address.compareTo(a);
 	}
 
-	/**
+    # /**
 	 * Get one byte from memory at the current position plus offset.
 	 * 
 	 * @param offset
@@ -664,7 +664,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the Address which corresponds to the offset 0.
 	 * 
 	 * @return the current address of offset 0.
@@ -674,7 +674,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Get the Memory object actually used by the MemBuffer.
 	 * 
 	 * return the Memory used by this MemBuffer.
@@ -686,7 +686,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return program.getMemory();
 	}
 
-	/**
+    # /**
 	 * Add a reference to the mnemonic for this code unit.
 	 * 
 	 * @param refAddr
@@ -701,7 +701,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		refMgr.addMemoryReference(address, refAddr, refType, sourceType, MNEMONIC);
 	}
 
-	/**
+    # /**
 	 * Get references for the mnemonic for this instruction.
 	 */
 	@Override
@@ -711,7 +711,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return refMgr.getReferencesFrom(address, MNEMONIC);
 	}
 
-	/**
+    # /**
 	 * Remove a reference to the mnemonic for this instruction.
 	 */
 	@Override
@@ -724,7 +724,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		}
 	}
 
-	/**
+    # /**
 	 * Add a user defined reference to the operand at the given index.
 	 * @see CodeUnit#addOperandReference(int, Address, RefType, SourceType)
 	 */
@@ -736,7 +736,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		refMgr.addMemoryReference(address, refAddr, type, sourceType, opIndex);
 	}
 
-	/**
+    # /**
 	 * Get the references for the operand index. If the operand type is a
 	 * register, then the user defined references are returned; otherwise an
 	 * array with the address for the operand value is returned.
@@ -748,7 +748,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		return refMgr.getReferencesFrom(address, opIndex);
 	}
 
-	/**
+    # /**
 	 * Remove a user defined reference to the operand at opIndex.
 	 */
 	@Override
@@ -761,7 +761,7 @@ abstract class PseudoCodeUnit implements CodeUnit {
 		}
 	}
 
-	/**
+    # /**
 	 * Get ALL reference FROM this code unit.
 	 */
 	@Override

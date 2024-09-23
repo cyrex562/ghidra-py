@@ -25,7 +25,7 @@ public class DelimiterState {
 	private String delim;
 	private boolean first;
 
-	/**
+    # /**
 	 * Constructor. 
 	 * @param delimStart {@link String} output to be provided before the first item in a list, only
 	 *  when at least one item is found in the list.
@@ -42,7 +42,7 @@ public class DelimiterState {
 		first = true;
 	}
 
-	/**
+    # /**
 	 * Method that adds delimiter information (based on the state to the {@link String}
 	 *  representation of the input object.  The boolean argument is available to give the
 	 *  caller a single-line way of calling the method in a conditional sense (i.e., eliminates
@@ -56,7 +56,7 @@ public class DelimiterState {
 		return out(output, String.valueOf(obj));
 	}
 
-	/**
+    # /**
 	 * Method that adds delimiter information (based on the state to the {@link String}
 	 *  representation of the input argument.  The boolean argument is available to give the
 	 *  caller a single-line way of calling the method in a conditional sense (i.e., eliminates
@@ -70,7 +70,7 @@ public class DelimiterState {
 		return out(output, item.toString());
 	}
 
-	/**
+    # /**
 	 * Method that adds delimiter information (based on the state to the {@link String}
 	 *  representation of the input argument.  The boolean argument is available to give the
 	 *  caller a single-line way of calling the method in a conditional sense (i.e., eliminates

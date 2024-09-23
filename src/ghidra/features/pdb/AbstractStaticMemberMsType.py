@@ -29,7 +29,7 @@ public abstract class AbstractStaticMemberMsType extends AbstractMsType implemen
 	protected RecordNumber fieldTypeRecordNumber;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -43,7 +43,7 @@ public abstract class AbstractStaticMemberMsType extends AbstractMsType implemen
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the data type for this member
 	 * @return the record number
 	 */
@@ -51,7 +51,7 @@ public abstract class AbstractStaticMemberMsType extends AbstractMsType implemen
 		return fieldTypeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the attributes of this procedure
 	 * @return the attributes
 	 */

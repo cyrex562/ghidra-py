@@ -26,7 +26,7 @@ import java.math.BigInteger;
  */
 public interface DataConverter extends Serializable {
 
-	/**
+    # /**
 	 * Returns the correct DataConverter static instance for the requested endian-ness.
 	 * 
 	 * @param isBigEndian boolean flag, true means big endian
@@ -36,7 +36,7 @@ public interface DataConverter extends Serializable {
 		return isBigEndian ? BigEndianDataConverter.INSTANCE : LittleEndianDataConverter.INSTANCE;
 	}
 
-	/**
+    # /**
 	 * Returns the endianness of this DataConverter instance.
 	 * 
 	 * @return boolean flag, true means big-endian
@@ -45,7 +45,7 @@ public interface DataConverter extends Serializable {
 		return this instanceof BigEndianDataConverter;
 	}
 
-	/**
+    # /**
 	 * Get the short value from the given byte array.
 	 * @param b array containing bytes
 	 * @return signed short value from the beginning of the specified array
@@ -55,7 +55,7 @@ public interface DataConverter extends Serializable {
 		return getShort(b, 0);
 	}
 
-	/**
+    # /**
 	 * Get the short value from the given byte array.
 	 * 
 	 * @param b array containing bytes
@@ -65,7 +65,7 @@ public interface DataConverter extends Serializable {
 	 */
 	short getShort(byte[] b, int offset);
 
-	/**
+    # /**
 	 * Get the int value from the given byte array.
 	 * 
 	 * @param b array containing bytes
@@ -76,7 +76,7 @@ public interface DataConverter extends Serializable {
 		return getInt(b, 0);
 	}
 
-	/**
+    # /**
 	 * Get the int value from the given byte array.
 	 * 
 	 * @param b array containing bytes
@@ -86,7 +86,7 @@ public interface DataConverter extends Serializable {
 	 */
 	int getInt(byte[] b, int offset);
 
-	/**
+    # /**
 	 * Get the long value from the given byte array.
 	 * 
 	 * @param b array containing bytes
@@ -97,7 +97,7 @@ public interface DataConverter extends Serializable {
 		return getLong(b, 0);
 	}
 
-	/**
+    # /**
 	 * Get the long value from the given byte array.
 	 * 
 	 * @param b array containing bytes
@@ -107,7 +107,7 @@ public interface DataConverter extends Serializable {
 	 */
 	long getLong(byte[] b, int offset);
 
-	/**
+    # /**
 	 * Get the <b>unsigned</b> value from the given byte array using the specified 
 	 * integer size, returned as a long.
 	 * <p>
@@ -128,7 +128,7 @@ public interface DataConverter extends Serializable {
 		return getValue(b, 0, size);
 	}
 
-	/**
+    # /**
 	 * Get the <b>unsigned</b> value from the given byte array using the specified 
 	 * integer size, returned as a long.
 	 * <p>
@@ -149,7 +149,7 @@ public interface DataConverter extends Serializable {
 	 */
 	long getValue(byte[] b, int offset, int size);
 
-	/**
+    # /**
 	 * Get the <b>signed</b> value from the given byte array using the specified 
 	 * integer size, returned as a long.
 	 * <p>
@@ -165,7 +165,7 @@ public interface DataConverter extends Serializable {
 		return getSignedValue(b, 0, size);
 	}
 
-	/**
+    # /**
 	 * Get the <b>signed</b> value from the given byte array using the specified 
 	 * integer size, returned as a long.
 	 * <p>
@@ -190,7 +190,7 @@ public interface DataConverter extends Serializable {
 		return val;
 	}
 
-	/**
+    # /**
 	 * Get the value from the given byte array using the specified size.
 	 * 
 	 * @param b array containing bytes
@@ -204,7 +204,7 @@ public interface DataConverter extends Serializable {
 		return getBigInteger(b, 0, size, signed);
 	}
 
-	/**
+    # /**
 	 * Get the value from the given byte array using the specified size.
 	 * 
 	 * @param b array containing bytes
@@ -219,7 +219,7 @@ public interface DataConverter extends Serializable {
 
 	//-------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * Converts the short value to an array of bytes.
 	 * 
 	 * @param value short value to be converted
@@ -231,7 +231,7 @@ public interface DataConverter extends Serializable {
 		return bytes;
 	}
 
-	/**
+    # /**
 	 * Converts the int value to an array of bytes.
 	 * 
 	 * @param value int value to be converted
@@ -243,7 +243,7 @@ public interface DataConverter extends Serializable {
 		return bytes;
 	}
 
-	/**
+    # /**
 	 * Converts the long value to an array of bytes.
 	 * 
 	 * @param value long value to be converted
@@ -255,7 +255,7 @@ public interface DataConverter extends Serializable {
 		return bytes;
 	}
 
-	/**
+    # /**
 	 * Converts the value to an array of bytes.
 	 * 
 	 * @param value value to be converted
@@ -270,7 +270,7 @@ public interface DataConverter extends Serializable {
 
 	//-------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * Writes a short value into a byte array.
 	 * 
 	 * @param b array to contain the bytes
@@ -281,7 +281,7 @@ public interface DataConverter extends Serializable {
 		putShort(b, 0, value);
 	}
 
-	/**
+    # /**
 	 * Writes a short value into the byte array at the given offset
 	 * 
 	 * @param b array to contain the bytes
@@ -292,7 +292,7 @@ public interface DataConverter extends Serializable {
 	 */
 	void putShort(byte[] b, int offset, short value);
 
-	/**
+    # /**
 	 * Writes a int value into a byte array.
 	 * <p>
 	 * See {@link #getBytes(int, byte[])}
@@ -305,7 +305,7 @@ public interface DataConverter extends Serializable {
 		putInt(b, 0, value);
 	}
 
-	/**
+    # /**
 	 * Writes a int value into the byte array at the given offset.
 	 * <p>
 	 * See {@link #getBytes(int, byte[], int)}
@@ -318,7 +318,7 @@ public interface DataConverter extends Serializable {
 	 */
 	void putInt(byte[] b, int offset, int value);
 
-	/**
+    # /**
 	 * Writes a long value into a byte array.
 	 * <p>
 	 * See {@link #getBytes(long, byte[])}
@@ -331,7 +331,7 @@ public interface DataConverter extends Serializable {
 		putLong(b, 0, value);
 	}
 
-	/**
+    # /**
 	 * Writes a long value into the byte array at the given offset
 	 * <p>
 	 * See {@link #getBytes(long, byte[], int)}
@@ -346,7 +346,7 @@ public interface DataConverter extends Serializable {
 		putValue(value, Long.BYTES, b, offset);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to bytes using the number of least significant bytes
 	 * specified by size.
 	 * <p>
@@ -359,7 +359,7 @@ public interface DataConverter extends Serializable {
 	 */
 	void putValue(long value, int size, byte[] b, int offset);
 
-	/**
+    # /**
 	 * Writes a value of specified size into the byte array at the given offset.
 	 * <p>
 	 * See {@link #getBytes(BigInteger, int, byte[], int)}
@@ -373,7 +373,7 @@ public interface DataConverter extends Serializable {
 		putBigInteger(b, 0, size, value);
 	}
 
-	/**
+    # /**
 	 * Writes a value of specified size into the byte array at the given offset
 	 * <p>
 	 * See {@link #getBytes(BigInteger, int, byte[], int)}
@@ -388,7 +388,7 @@ public interface DataConverter extends Serializable {
 
 	//--------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * Converts the given value to bytes.
 	 * See {@link #putShort(byte[], short)}
 	 * @param value value to convert to bytes
@@ -400,7 +400,7 @@ public interface DataConverter extends Serializable {
 		getBytes(value, b, 0);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to bytes.
 	 * <p>
 	 * See {@link #putShort(byte[], int, short)}
@@ -414,7 +414,7 @@ public interface DataConverter extends Serializable {
 		putShort(b, offset, value);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to bytes.
 	 * <p>
 	 * See {@link #putInt(byte[], int)}
@@ -428,7 +428,7 @@ public interface DataConverter extends Serializable {
 		getBytes(value, b, 0);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to bytes.
 	 * <p>
 	 * See {@link #putInt(byte[], int)}
@@ -442,7 +442,7 @@ public interface DataConverter extends Serializable {
 		putInt(b, offset, value);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to bytes.
 	 * <p>
 	 * See {@link #putLong(byte[], long)}
@@ -456,7 +456,7 @@ public interface DataConverter extends Serializable {
 		getBytes(value, b, 0);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to bytes.
 	 * <p>
 	 * See {@link #putLong(byte[], long)}
@@ -470,7 +470,7 @@ public interface DataConverter extends Serializable {
 		putLong(b, offset, value);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to bytes using the number of least significant bytes
 	 * specified by size.
 	 * <p>
@@ -486,7 +486,7 @@ public interface DataConverter extends Serializable {
 		putValue(value, size, b, offset);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to bytes using the number of least significant bytes
 	 * specified by size.
 	 * <p>
@@ -502,7 +502,7 @@ public interface DataConverter extends Serializable {
 		putBigInteger(b, offset, size, value);
 	}
 
-	/**
+    # /**
 	 * Swap the least-significant bytes (based upon size)
 	 * @param val value whose bytes are to be swapped
 	 * @param size number of least significant bytes to be swapped

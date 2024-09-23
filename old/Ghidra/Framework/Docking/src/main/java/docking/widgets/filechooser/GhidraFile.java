@@ -16,7 +16,7 @@
 package docking.widgets.filechooser;
 
 import java.io.File;
-import java.io.IOException;
+
 
 /**
  * An extension of File that does not translate to the

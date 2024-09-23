@@ -17,21 +17,21 @@ package ghidra.app.merge;
 
 public interface MergeProgressModifier {
 
-	/**
+    # /**
 	 * Updates the current phase progress area in the default merge panel.
 	 * @param progressMessage a message indicating what is currently occurring in this phase.
 	 * Null indicates to use the default message.
 	 */
 	public void updateProgress(final String progressMessage);
 	
-	/**
+    # /**
 	 * Updates the current phase progress area in the default merge panel.
 	 * @param currentProgressPercentage the progress percentage completed for the current phase.
 	 * This should be a value from 0 to 100.
 	 */
 	public void updateProgress(final int currentProgressPercentage);
 	
-	/**
+    # /**
 	 * Updates the current phase progress area in the default merge panel.
 	 * @param currentProgressPercentage the progress percentage completed for the current phase.
 	 * This should be a value from 0 to 100.
@@ -39,7 +39,7 @@ public interface MergeProgressModifier {
 	 */
 	public void updateProgress(final int currentProgressPercentage, final String progressMessage);
 	
-	/**
+    # /**
 	 * The manager (MergeResolver) for a particular merge phase should call this when its phase or sub-phase begins.
 	 * The string array should match one that the returned by MergeResolver.getPhases().
 	 * @param mergePhase identifier for the merge phase to change to in progress status.
@@ -47,7 +47,7 @@ public interface MergeProgressModifier {
 	 */
 	public void setInProgress(String[] mergePhase);
 	
-	/**
+    # /**
 	 * The manager (MergeResolver) for a particular merge phase should call this when its phase or sub-phase completes.
 	 * The string array should match one that the returned by MergeResolver.getPhases().
 	 * @param mergePhase identifier for the merge phase to change to completed status.

@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.javaclass.format.constantpool.ConstantPoolPackageInfo;
@@ -44,7 +44,7 @@ public class ModulePackagesAttribute extends AbstractAttributeInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * The value of the {@code package_count} item indicates the number of entries
 	 * in the {@code package_index} table
 	 * @return {@code package_index}
@@ -53,7 +53,7 @@ public class ModulePackagesAttribute extends AbstractAttributeInfo {
 		return package_count & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of each entry in the {@code package_index} table must be a valid index
 	 * into the constant pool. The entry at that index must be a {@link ConstantPoolPackageInfo} 
 	 * structure representing a package in the current module.

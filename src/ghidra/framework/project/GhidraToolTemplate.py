@@ -42,10 +42,10 @@ public class GhidraToolTemplate implements ToolTemplate {
 	private Element toolElement;
 	private ToolIconURL iconURL;
 
-	/** The place from whence this tool came*/
+    # /** The place from whence this tool came*/
 	private String path;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param root XML element that contains the tool template data
 	 * @param path the path of the template
@@ -87,7 +87,7 @@ public class GhidraToolTemplate implements ToolTemplate {
 		return supportedDataTypes;
 	}
 
-	/**
+    # /**
 	 * Get the icon URL.
 	 */
 	@Override

@@ -39,16 +39,16 @@ public class AssemblyNumericTerminal extends AssemblyTerminal {
 	public static final String PREFIX_HEX = "0x";
 	public static final String PREFIX_OCT = "0";
 
-	/** Some suggestions, other than labels, to provide */
+    # /** Some suggestions, other than labels, to provide */
 	protected static final Collection<String> SUGGESTIONS =
 		List.of("0", "1", "0x0", "+0x0", "-0x0", "01");
-	/** The maximum number of labels to suggest */
+    # /** The maximum number of labels to suggest */
 	protected static final int MAX_LABEL_SUGGESTIONS = 10;
 
 	protected final int bitsize;
 	protected final AddressSpace space;
 
-	/**
+    # /**
 	 * Construct a terminal with the given name, accepting any numeric value or program label
 	 * 
 	 * @param name the name
@@ -69,7 +69,7 @@ public class AssemblyNumericTerminal extends AssemblyTerminal {
 		return "[num" + bitsize + ":" + name + "]";
 	}
 
-	/**
+    # /**
 	 * This is only a convenience for testing
 	 * 
 	 * <p>
@@ -109,7 +109,7 @@ public class AssemblyNumericTerminal extends AssemblyTerminal {
 		}
 	}
 
-	/**
+    # /**
 	 * Try to match a sign-less numeric literal, or a program label
 	 * 
 	 * @param s the buffer cursor where the literal or label is expected
@@ -144,7 +144,7 @@ public class AssemblyNumericTerminal extends AssemblyTerminal {
 				.collect(Collectors.toList());
 	}
 
-	/**
+    # /**
 	 * Try to match a numeric literal, after the optional sign, encoded in hex, decimal, or octal
 	 * 
 	 * @param s buffer cursor where the literal is expected
@@ -167,7 +167,7 @@ public class AssemblyNumericTerminal extends AssemblyTerminal {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct a numeric token
 	 * 
 	 * @param str the string value of the token taken verbatim from the buffer
@@ -203,7 +203,7 @@ public class AssemblyNumericTerminal extends AssemblyTerminal {
 		}
 	}
 
-	/**
+    # /**
 	 * Try to match a hexadecimal literal, following the optional sign and prefix
 	 * 
 	 * @param s the buffer cursor where the hex portion starts
@@ -227,7 +227,7 @@ public class AssemblyNumericTerminal extends AssemblyTerminal {
 		return makeToken(buffer.substring(pos, b), buffer.substring(s, b), 16, neg, grammar);
 	}
 
-	/**
+    # /**
 	 * Try to match a decimal literal, following the optional sign and optional prefix
 	 * 
 	 * @param s the buffer cursor where the hex portion starts
@@ -251,7 +251,7 @@ public class AssemblyNumericTerminal extends AssemblyTerminal {
 		return makeToken(buffer.substring(pos, b), buffer.substring(s, b), 10, neg, grammar);
 	}
 
-	/**
+    # /**
 	 * Try to match an octal literal, following the optional sign and prefix
 	 * 
 	 * @param s the buffer cursor where the hex portion starts

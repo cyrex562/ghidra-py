@@ -16,7 +16,7 @@
 package ghidra.framework.main;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 
 import docking.dnd.GenericDataFlavor;
 import ghidra.util.Msg;

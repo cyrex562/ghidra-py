@@ -68,7 +68,7 @@ public class VisualGraphPluggableGraphMouse<V extends VisualVertex, E extends Vi
 		add(new VisualGraphCursorRestoringGraphMousePlugin<V, E>());
 	}
 
-	/** 
+    # /** 
 	 * Places the given plugin at the front of the list
 	 * 
 	 * @param p the mouse plugin to prepend

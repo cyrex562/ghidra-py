@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 /**
  * <code>Buffer</code> provides a general purpose storage buffer interface

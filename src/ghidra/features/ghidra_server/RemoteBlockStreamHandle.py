@@ -15,7 +15,7 @@
  */
 package ghidra.server.stream;
 
-import java.io.*;
+
 import java.net.Socket;
 import java.security.SecureRandom;
 
@@ -74,7 +74,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 
 	private boolean connectionPending = true;
 
-	/**
+    # /**
 	 * Abstract RemoteBlockStreamHandle constructor
 	 * @param server block stream server instance
 	 * @param blockSize BufferFile block size
@@ -93,7 +93,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		this.blockSize = blockSize;
 	}
 
-	/**
+    # /**
 	 * Determine if a connection has not yet been requested for this handle.
 	 * @return true if connection has not yet been requested by a client
 	 */
@@ -101,7 +101,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return connectionPending;
 	}
 
-	/**
+    # /**
 	 * Get the unique ID for this stream
 	 * @return stream ID
 	 */
@@ -109,7 +109,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return streamID;
 	}
 
-	/**
+    # /**
 	 * Get the authentication token value
 	 * @return authentication token value
 	 */
@@ -117,7 +117,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return authenticationToken;
 	}
 
-	/**
+    # /**
 	 * Get the number of blocks to be transferred
 	 * @return block count
 	 */
@@ -125,7 +125,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return blockCount;
 	}
 
-	/**
+    # /**
 	 * Get the raw block size
 	 * @return block size
 	 */
@@ -133,7 +133,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return blockSize;
 	}
 
-	/**
+    # /**
 	 * Get the preferred socket send/receive buffer size to be used
 	 * @return preferred socket send/receive buffer size
 	 */
@@ -141,7 +141,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return (getBlockSize() + 4) * 12;
 	}
 
-	/**
+    # /**
 	 * Generate a random number for use as a block stream authentication token.
 	 * @return random value
 	 */
@@ -150,7 +150,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return random.nextLong();
 	}
 
-	/**
+    # /**
 	 * Get the stream request header to be sent when establishing the server
 	 * connection.
 	 * <pre>
@@ -172,7 +172,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Get the stream termination footer to be sent when ending the server
 	 * connection.
 	 * <pre>
@@ -192,7 +192,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Perform verification of termination footer bytes
 	 * @param terminatorBytes bytes read as stream terminator
 	 * @throws IOException
@@ -216,7 +216,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		}
 	}
 
-	/**
+    # /**
 	 * <code>StreamRequest</code> is used to wrap the stream request
 	 * registration data
 	 */
@@ -224,7 +224,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		final long streamID;
 		final long authenticationToken;
 
-		/**
+	    # /**
 		 * Construct a stream request object
 		 * @param streamID assigned stream ID
 		 * @param authenticationToken token to be used during client connection authentication
@@ -235,7 +235,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		}
 	}
 
-	/**
+    # /**
 	 * Parse a block stream connection header to obtain the stream ID
 	 * @param headerBytes stream request header sent by client
 	 * @return StreamRequest containing stream ID and authentication token
@@ -262,7 +262,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		}
 	}
 
-	/**
+    # /**
 	 * Invoked by client during the openBlockStream operation and completes the
 	 * connection into the server.
 	 * @return connected socket
@@ -290,7 +290,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		return socket;
 	}
 
-	/**
+    # /**
 	 * Send the stream termination footer bytes over the socket.
 	 * @param socket connected socket
 	 * @throws IOException
@@ -301,7 +301,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		out.flush();
 	}
 
-	/**
+    # /**
 	 * Read the stream terminator from the socket. Timeout should be disabled
 	 * for the side which has written the stream to the socket output.
 	 * @param socket connected socket
@@ -328,7 +328,7 @@ public abstract class RemoteBlockStreamHandle<T extends BlockStream> implements 
 		checkTerminator(term);
 	}
 
-	/**
+    # /**
 	 * Invoked by {@link BlockStreamServer} to complete the socket to
 	 * BlockStream connection. This method should be called from its own
 	 * runnable and will block until the block stream is closed.

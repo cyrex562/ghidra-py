@@ -23,7 +23,7 @@ import ghidra.app.util.demangler.swift.SwiftDemangler;
  */
 public class SwiftTuple extends SwiftStructure {
 
-	/**
+    # /**
 	 * Creates a new Swift tuple
 	 * 
 	 * @param mangled The mangled string

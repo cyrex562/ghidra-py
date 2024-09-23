@@ -15,7 +15,7 @@
  */
 package ghidra.launch;
 
-import java.io.*;
+
 import java.text.ParseException;
 import java.util.Properties;
 

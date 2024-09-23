@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.constantpool;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -45,7 +45,7 @@ public class ConstantPoolNameAndTypeInfo extends AbstractConstantPoolInfoJava {
 		descriptorIndex = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the name_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Utf8_info structure representing either the special method
@@ -57,7 +57,7 @@ public class ConstantPoolNameAndTypeInfo extends AbstractConstantPoolInfoJava {
 		return nameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the descriptor_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Utf8_info structure representing a valid field descriptor

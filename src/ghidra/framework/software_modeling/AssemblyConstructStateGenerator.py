@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.sem;
 
 import java.util.*;
@@ -26,16 +26,16 @@ import ghidra.app.plugin.processors.sleigh.Constructor;
 import ghidra.app.plugin.processors.sleigh.symbol.OperandSymbol;
 
 # /**
- * The generator of {@link AssemblyConstructState} from {@link AssemblyParseBranch}
- * 
- * <p>
- * In short, this handles the selection of each possible constructor for the production recorded by
- * a given parse branch.
- */
+# * The generator of {@link AssemblyConstructState} from {@link AssemblyParseBranch}
+# * 
+# * <p>
+# * In short, this handles the selection of each possible constructor for the production recorded by
+# * a given parse branch.
+# */
 public class AssemblyConstructStateGenerator
 		extends AbstractAssemblyStateGenerator<AssemblyParseBranch> {
 
-	/**
+    # /**
 	 * Construct the instruction state generator or a sub-table operand state generator
 	 * 
 	 * @param resolver the resolver
@@ -55,7 +55,7 @@ public class AssemblyConstructStateGenerator
 				.flatMap(sem -> applyConstructor(gc, sem));
 	}
 
-	/**
+    # /**
 	 * Arrange the branch's (mnemonic) children according to the machine-code production
 	 * 
 	 * <p>
@@ -84,7 +84,7 @@ public class AssemblyConstructStateGenerator
 		return result;
 	}
 
-	/**
+    # /**
 	 * Generate prototypes, considering the given SLEIGH constructor
 	 * 
 	 * <p>
@@ -112,7 +112,7 @@ public class AssemblyConstructStateGenerator
 			patterned -> applyOperands(gc, patterned, sem, opOrdered));
 	}
 
-	/**
+    # /**
 	 * Generate prototypes by considering all the operands of the given SLEIGH constructor
 	 * 
 	 * <p>
@@ -133,7 +133,7 @@ public class AssemblyConstructStateGenerator
 		return applyRemainingOperands(gc, siblingGcs, fromMutations, sem, opOrdered, List.of());
 	}
 
-	/**
+    # /**
 	 * A recursive function for generating child operand prototypes and constructing the parent(s)
 	 * 
 	 * <p>

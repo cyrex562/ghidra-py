@@ -17,7 +17,7 @@ package ghidra.file.formats.ios.img3;
 
 import java.util.Arrays;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.formats.gfilesystem.*;

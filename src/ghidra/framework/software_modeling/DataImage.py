@@ -22,13 +22,13 @@ public abstract class DataImage {
 
 	private String description;
 
-	/**
+    # /**
 	 * Return image icon
 	 * @return image object
 	 */
 	public abstract ImageIcon getImageIcon();
 
-	/**
+    # /**
 	 * Returns the type of the underlying image data, suitable for
 	 * {@link ImageIO#write(java.awt.image.RenderedImage, String, java.io.File)}'s formatName
 	 * parameter.
@@ -37,7 +37,7 @@ public abstract class DataImage {
 	 */
 	public abstract String getImageFileType();
 
-	/**
+    # /**
 	 * Set string description (returned by toString)
 	 * @param description
 	 */

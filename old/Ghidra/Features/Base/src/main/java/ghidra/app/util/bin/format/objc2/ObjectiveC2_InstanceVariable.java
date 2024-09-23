@@ -25,7 +25,7 @@ import ghidra.program.model.symbol.Namespace;
 import ghidra.util.Conv;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC2_InstanceVariable implements StructConverter {
 	private ObjectiveC2_State _state;

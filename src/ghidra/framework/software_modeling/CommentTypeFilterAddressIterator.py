@@ -31,7 +31,7 @@ public class CommentTypeFilterAddressIterator implements AddressIterator {
 	private int commentType;
 	private Address nextAddr;
 
-	/**
+    # /**
 	 * Constructs a new CommentTypeFilterAddressIterator
 	 * @param it an address iterator whose items are tested for the comment type.
 	 * @param commentType the type of comment to search for.

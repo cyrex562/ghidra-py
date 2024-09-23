@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.*;
+
 
 # /**
  * A {@link ByteProvider} implementation that wraps an {@link InputStream}, allowing

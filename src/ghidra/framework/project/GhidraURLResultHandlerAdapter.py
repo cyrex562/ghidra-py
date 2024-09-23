@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.net.URL;
 
 import ghidra.framework.model.DomainFile;
@@ -35,7 +35,7 @@ public class GhidraURLResultHandlerAdapter implements GhidraURLResultHandler {
 
 	private final boolean throwErrorByDefault;
 
-	/**
+    # /**
 	 * Construct adapter.  If {@link #handleError(String, String, URL, IOException)}
 	 * is not overriden all errors are reported via 
 	 * {@link Msg#showError(Object, java.awt.Component, String, Object)}.
@@ -44,7 +44,7 @@ public class GhidraURLResultHandlerAdapter implements GhidraURLResultHandler {
 		throwErrorByDefault = false;
 	}
 
-	/**
+    # /**
 	 * Construct adapter with preferred error handling.  There is no need to use this constructor
 	 * if {@link #handleError(String, String, URL, IOException)} is override.
 	 * @param throwErrorByDefault if true all errors will be thrown as an {@link IOException},

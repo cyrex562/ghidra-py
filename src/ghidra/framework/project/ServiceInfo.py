@@ -30,7 +30,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface ServiceInfo {
-	/**
+    # /**
 	 * Sets the class name of the class that provides the default implementation of this service.
 	 * <p>
 	 * Use this form instead of {@link #defaultProvider() defaultProvider = Someclass.class}
@@ -47,14 +47,14 @@ public @interface ServiceInfo {
 	 */
 	String defaultProviderName() default "";
 
-	/**
+    # /**
 	 * Sets the class that provides the default implementation of this service.
 	 * <p>
 	 * @return Class instance of the plugin that provides this service.
 	 */
 	Class<? extends Plugin>[] defaultProvider() default {};
 
-	/**
+    # /**
 	 * Sets the description for this service.
 	 * <p>
 	 * Currently not used.

@@ -31,7 +31,7 @@ public class AddressEvaluator {
 
 	private static final String TOKEN_CHARS = "+-*/()<>|^&~ =";
 
-	/**
+    # /**
 	 * Gets a legitimate address for the specified program as indicated by the string.
 	 * @param p the program to use for determining the address.
 	 * @param baseAddr the base address to use for relative addressing.
@@ -168,7 +168,7 @@ public class AddressEvaluator {
 		return tok;
 	}
 
-	/**
+    # /**
 	 * Gets a legitimate address for the specified program as indicated by the string.
 	 * @param p the program to use for determining the address.
 	 * @param s string representation of the address desired.
@@ -179,7 +179,7 @@ public class AddressEvaluator {
 		return evaluate(p, null, s);
 	}
 
-	/**
+    # /**
 	 * Utility method for creating an Address object from a byte array. The Address object may or may not
 	 * be a legitimate Address in the program's address space. This method is meant to provide a way of
 	 * creating an Address object from a sequence of bytes that can be used for additional tests and
@@ -600,7 +600,7 @@ class Operator {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Gets the static object implementation of an operator.
 	 * @param tok token string for the operator
 	 * @return the static operator object.

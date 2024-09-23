@@ -38,39 +38,39 @@ public interface PluginPackagingProvider {
 		//
 	};
 
-	/**
+    # /**
 	 * Returns all known plugin packages
 	 * @return the plugin packages
 	 */
 	public List<PluginPackage> getPluginPackages();
 
-	/**
+    # /**
 	 * Returns all loaded plugin descriptions
 	 * @return the descriptions
 	 */
 	public List<PluginDescription> getPluginDescriptions();
 
-	/**
+    # /**
 	 * Returns the plugin description for the given plugin class name
 	 * @param pluginClassName the plugin class name
 	 * @return the description
 	 */
 	public PluginDescription getPluginDescription(String pluginClassName);
 
-	/**
+    # /**
 	 * Get all plugin descriptions for the given plugin package
 	 * @param pluginPackage the package
 	 * @return the descriptions
 	 */
 	public List<PluginDescription> getPluginDescriptions(PluginPackage pluginPackage);
 
-	/**
+    # /**
 	 * Returns the plugin package used to house all unstable plugin packages
 	 * @return the package
 	 */
 	public PluginPackage getUnstablePluginPackage();
 
-	/**
+    # /**
 	 * Returns all {@link PluginStatus#UNSTABLE} plugin package descriptions
 	 * @return the descriptions
 	 */

@@ -42,7 +42,7 @@ import ghidra.program.model.pcode.Varnode;
  */
 public class UseropEmuSyscallDefinition<T> implements EmuSyscallDefinition<T> {
 
-	/**
+    # /**
 	 * Obtain the program's "pointer" data type, throwing an exception if absent
 	 * 
 	 * @param program the program
@@ -60,7 +60,7 @@ public class UseropEmuSyscallDefinition<T> implements EmuSyscallDefinition<T> {
 	protected final List<Varnode> inVars;
 	protected final Varnode outVar;
 
-	/**
+    # /**
 	 * Construct a syscall definition
 	 * 
 	 * @see AnnotatedEmuSyscallUseropLibrary
@@ -92,7 +92,7 @@ public class UseropEmuSyscallDefinition<T> implements EmuSyscallDefinition<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Assert variable storage is a single varnode, and get that varnode
 	 * 
 	 * @param vs the storage

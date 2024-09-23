@@ -1,9 +1,9 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.reader;
 
-import java.io.IOException;
+
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,10 +20,10 @@ import mobiledevices.dmg.decmpfs.DecmpfsHeader;
 import mobiledevices.dmg.hfsplus.AttributesFileParser;
 
 /**
- * 
- * @see org.catacombae.hfsexplorer.gui.FSEntrySummaryPanel
- *
- */
+# * 
+# * @see org.catacombae.hfsexplorer.gui.FSEntrySummaryPanel
+# *
+# */
 class DmgInfoGenerator {
 	private DmgFileReader fileSystem;
 	private String filePath;

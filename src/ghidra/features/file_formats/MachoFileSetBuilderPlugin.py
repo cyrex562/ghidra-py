@@ -15,7 +15,7 @@
  */
 package ghidra.macosx.plugins;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Map;
 
@@ -54,7 +54,7 @@ import ghidra.util.task.TaskMonitor;
 //@formatter:on
 public class MachoFileSetBuilderPlugin extends Plugin {
 
-	/**
+    # /**
 	 * Creates a new {@link MachoFileSetBuilderPlugin}
 	 * 
 	 * @param tool The {@link PluginTool} that will host/contain this {@link Plugin}
@@ -80,7 +80,7 @@ public class MachoFileSetBuilderPlugin extends Plugin {
 				.buildAndInstall(tool);
 	}
 
-	/**
+    # /**
 	 * Attempts to add the Mach-O file set entry that resides at the given {@link ProgramLocation}'s
 	 * "referred to" address
 	 * 
@@ -133,7 +133,7 @@ public class MachoFileSetBuilderPlugin extends Plugin {
 		}
 	}
 
-	/**
+    # /**
 	 * Attempts to open the given {@link Program}'s originating {@link MachoFileSetFileSystem}
 	 * 
 	 * @param program The {@link Program}

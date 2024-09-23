@@ -27,7 +27,7 @@ import ghidra.util.exception.NotFoundException;
 public class X86_32_ElfRelocationHandler
 		extends AbstractElfRelocationHandler<X86_32_ElfRelocationType, ElfRelocationContext<?>> {
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public X86_32_ElfRelocationHandler() {

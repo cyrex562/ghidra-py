@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.stack;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.decompiler.DecompInterface;

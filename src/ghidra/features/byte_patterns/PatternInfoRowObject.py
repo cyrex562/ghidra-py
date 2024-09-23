@@ -15,7 +15,7 @@
  */
 package ghidra.bitpatterns.gui;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.util.List;
 import java.util.Map.Entry;
@@ -38,7 +38,7 @@ public class PatternInfoRowObject {
 	private String note;
 	private Integer alignment;
 
-	/**
+    # /**
 	 * Represents one pattern
 	 * @param type type of the pattern
 	 * @param bitSequence bit sequence of the pattern
@@ -52,7 +52,7 @@ public class PatternInfoRowObject {
 		alignment = null;
 	}
 
-	/**
+    # /**
 	 * Gets the type of this pattern
 	 * @return pattern type
 	 */
@@ -60,7 +60,7 @@ public class PatternInfoRowObject {
 		return type;
 	}
 
-	/**
+    # /**
 	 * Gets the {@link DittedBitSequence} representing this pattern
 	 * @return sequence
 	 */
@@ -68,7 +68,7 @@ public class PatternInfoRowObject {
 		return bitSequence;
 	}
 
-	/**
+    # /**
 	 * Gets the {@link ContextRegisterFilter} associated with this pattern
 	 * @return context register filter
 	 */
@@ -76,7 +76,7 @@ public class PatternInfoRowObject {
 		return cRegFilter;
 	}
 
-	/**
+    # /**
 	 * Gets the alignment associated with this pattern
 	 * @return alignment
 	 */
@@ -84,7 +84,7 @@ public class PatternInfoRowObject {
 		return alignment;
 	}
 
-	/**
+    # /**
 	 * Sets the alignment associated with this pattern
 	 * @param alignment
 	 */
@@ -92,7 +92,7 @@ public class PatternInfoRowObject {
 		this.alignment = alignment;
 	}
 
-	/**
+    # /**
 	 * Gets the note associated with this pattern
 	 * @return
 	 */
@@ -100,7 +100,7 @@ public class PatternInfoRowObject {
 		return note;
 	}
 
-	/**
+    # /**
 	 * Sets the note associated with this pattern
 	 * @param note note to set
 	 */
@@ -144,7 +144,7 @@ public class PatternInfoRowObject {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Export the patterns to an XML file
 	 * @param rows patterns
 	 * @param xmlFile destination file

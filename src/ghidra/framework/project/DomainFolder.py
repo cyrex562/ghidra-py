@@ -16,7 +16,7 @@
 package ghidra.framework.model;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URL;
 
 import javax.swing.Icon;
@@ -40,23 +40,23 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	public static final Icon CLOSED_FOLDER_ICON =
 		new GIcon("icon.datatree.node.domain.folder.closed");
 
-	/**
+    # /**
 	 * Character used to separate folder and item names within a path string.
 	 */
 	public static final String SEPARATOR = "/";
 
-	/**
+    # /**
 	 * Name extension to add when attempting to avoid a duplicate name.
 	 */
 	public static final String COPY_SUFFIX = ".copy";
 
-	/**
+    # /**
 	 * Return this folder's name.
 	 * @return the name
 	 */
 	public String getName();
 
-	/**
+    # /**
 	 * Set the name on this domain folder.
 	 * @param newName domain folder name
 	 * @return renamed domain file (the original DomainFolder object becomes invalid since it is 
@@ -70,25 +70,25 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	 */
 	public DomainFolder setName(String newName) throws InvalidNameException, IOException;
 
-	/**
+    # /**
 	 * Returns the local storage location for the project that this DomainFolder belongs to.
 	 * @return the locator
 	 */
 	public ProjectLocator getProjectLocator();
 
-	/**
+    # /**
 	 * Returns the project data
 	 * @return the project data
 	 */
 	public ProjectData getProjectData();
 
-	/**
+    # /**
 	 * Returns the full path name to this folder
 	 * @return the path name
 	 */
 	public String getPathname();
 
-	/**
+    # /**
 	 * Get a remote Ghidra URL for this domain folder if available within an associated shared
 	 * project repository.  URL path will end with "/".  A null value will be returned if shared 
 	 * folder does not exist and may also be returned if shared repository is not connected or a 
@@ -97,60 +97,60 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	 */
 	public URL getSharedProjectURL();
 
-	/**
+    # /**
 	 * Get a local Ghidra URL for this domain file if available within the associated non-transient
 	 * local project.  A null value will be returned if project is transient.
 	 * @return local Ghidra URL for this folder or null if transient or not applicable
 	 */
 	public URL getLocalProjectURL();
 
-	/**
+    # /**
 	 * Returns true if this file is in a writable project.
 	 * @return true if writable
 	 */
 	public boolean isInWritableProject();
 
-	/**
+    # /**
 	 * Return parent folder or null if this DomainFolder is the root folder.
 	 * @return the parent
 	 */
 	public DomainFolder getParent();
 
-	/**
+    # /**
 	 * Get DomainFolders in this folder.
 	 * This may return cached information and does not force a full refresh.
 	 * @return list of sub-folders
 	 */
 	public DomainFolder[] getFolders();
 
-	/**
+    # /**
 	 * Return the folder for the given name.
 	 * @param name of folder to retrieve
 	 * @return folder or null if there is no folder by the given name.
 	 */
 	public DomainFolder getFolder(String name);
 
-	/**
+    # /**
 	 * Get the domain file in this folder with the given name.
 	 * @param name name of file in this folder to retrieve
 	 * @return domain file or null if there is no domain file in this folder with the given name.
 	 */
 	public DomainFile getFile(String name);
 
-	/**
+    # /**
 	 * Determine if this folder contains any sub-folders or domain files.
 	 * @return true if this folder is empty.
 	 */
 	public boolean isEmpty();
 
-	/**
+    # /**
 	 * Get all domain files in this folder.
 	 * This may return cached information and does not force a full refresh.
 	 * @return list of domain files
 	 */
 	public DomainFile[] getFiles();
 
-	/**
+    # /**
 	 * Add a domain object to this folder.
 	 * @param name domain file name
 	 * @param obj domain object to be stored
@@ -166,7 +166,7 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	public DomainFile createFile(String name, DomainObject obj, TaskMonitor monitor)
 			throws InvalidNameException, IOException, CancelledException;
 
-	/**
+    # /**
 	 * Add a new domain file to this folder.
 	 * @param name domain file name
 	 * @param packFile packed file containing domain file data
@@ -182,7 +182,7 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	public DomainFile createFile(String name, File packFile, TaskMonitor monitor)
 			throws InvalidNameException, IOException, CancelledException;
 
-	/**
+    # /**
 	 * Create a subfolder within this folder.
 	 * @param folderName sub-folder name
 	 * @return the new folder
@@ -193,14 +193,14 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	 */
 	public DomainFolder createFolder(String folderName) throws InvalidNameException, IOException;
 
-	/**
+    # /**
 	 * Deletes this folder, if empty, from the local filesystem
 	 * @throws IOException if IO or access error occurs
 	 * @throws FolderNotEmptyException Thrown if this folder is not empty.
 	 */
 	public void delete() throws IOException;
 
-	/**
+    # /**
 	 * Move this folder into the newParent folder.  If connected to a repository
 	 * this moves both private and repository folders/files.  If not
 	 * connected, only private folders/files are moved.
@@ -215,7 +215,7 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	 */
 	public DomainFolder moveTo(DomainFolder newParent) throws IOException;
 
-	/**
+    # /**
 	 * Copy this folder into the newParent folder.
 	 * @param newParent new parent folder
 	 * @param monitor the task monitor
@@ -228,7 +228,7 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	public DomainFolder copyTo(DomainFolder newParent, TaskMonitor monitor)
 			throws IOException, CancelledException;
 
-	/**
+    # /**
 	 * Create a new link-file in the specified newParent which will reference this folder 
 	 * (i.e., linked-folder). Restrictions:
 	 * <ul>
@@ -244,12 +244,12 @@ public interface DomainFolder extends Comparable<DomainFolder> {
 	 */
 	public DomainFile copyToAsLink(DomainFolder newParent) throws IOException;
 
-	/**
+    # /**
 	 * Allows the framework to react to a request to make this folder the "active" one.
 	 */
 	public void setActive();
 
-	/**
+    # /**
 	 * Determine if this folder corresponds to a linked-folder.
 	 * @return true if folder corresponds to a linked-folder, else false.
 	 */

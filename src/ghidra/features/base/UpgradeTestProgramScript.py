@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import java.io.File;
-import java.io.IOException;
+
 
 import db.DBHandle;
 import ghidra.app.script.GhidraScript;

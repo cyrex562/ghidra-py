@@ -23,7 +23,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.Conv;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC2_MessageReference implements StructConverter {
 	public static final String NAME = "message_ref";

@@ -28,7 +28,7 @@ public class TaskUtilities {
 	private static Map<Task, TaskMonitor> runningTasks = new ConcurrentHashMap<>();
 	private static List<TrackedTaskListener> listeners = new CopyOnWriteArrayList<>();
 
-	/**
+    # /**
 	 * Adds a listener that will be notified when tasks are tracked (when they are added and
 	 * removed from tracking).
 	 * @param listener The listener to add.
@@ -38,7 +38,7 @@ public class TaskUtilities {
 		listeners.add(listener);
 	}
 
-	/**
+    # /**
 	 * Removes the given listener added via {@link #addTrackedTask(Task,TaskMonitor)}.
 	 * @param listener The listener that needs to be removed.
 	 */
@@ -46,7 +46,7 @@ public class TaskUtilities {
 		listeners.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Adds a Task to the list of tasks that have not yet finished running.  
 	 * <P>
 	 * Note: it is safe to add the same task more than once, as it will not be repeatedly 
@@ -70,7 +70,7 @@ public class TaskUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Removes the Task to the list of tasks that have not yet finished running.
 	 * @param task The task to stop watching.
 	 */
@@ -85,7 +85,7 @@ public class TaskUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if there are tasks that are running or need to be run.
 	 * @return true if there are tasks that are running or need to be run.
 	 */
@@ -97,7 +97,7 @@ public class TaskUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the task with the indicated title is running.
 	 * @param title the title of the desired task
 	 * @return true if the task with the indicated title is running.

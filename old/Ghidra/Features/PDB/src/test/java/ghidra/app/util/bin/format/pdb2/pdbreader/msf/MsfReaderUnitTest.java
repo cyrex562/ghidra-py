@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.nio.file.AccessMode;
 import java.util.*;
 

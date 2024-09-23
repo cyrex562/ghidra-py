@@ -16,7 +16,7 @@
 package ghidra.framework.client;
 
 import java.awt.Component;
-import java.io.*;
+
 import java.net.*;
 import java.security.InvalidKeyException;
 

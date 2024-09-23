@@ -85,7 +85,7 @@ public class PPCEmulateInstructionStateModifier extends EmulateInstructionStateM
 		}
 	}
 
-	/**
+    # /**
 	 * Generate an unsigned value array from variable length srcBytes extending or truncating
 	 * bytes as needed to ensure a returned length of byteLength.  The MSB is located
 	 * at byte index 0, therefore adjustments may be needed to ensure that the LSB retains

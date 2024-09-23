@@ -34,7 +34,7 @@ public abstract class SwiftNode {
 	private List<SwiftNode> children = new ArrayList<>();
 	private boolean childSkipped = false;
 
-	/**
+    # /**
 	 * Represents {@link SwiftNode} properties
 	 * 
 	 * @param kind The {@link SwiftDemangledNodeKind kind} of {@link SwiftNode}
@@ -48,7 +48,7 @@ public abstract class SwiftNode {
 	public record NodeProperties(SwiftDemangledNodeKind kind, String text, String index,
 			int depth, String mangled, String originalDemangled) {}
 
-	/**
+    # /**
 	 * Gets a new {@link SwiftNode} with the given with the given {@link NodeProperties}
 	 * 
 	 * @param props The {@link NodeProperties}
@@ -124,7 +124,7 @@ public abstract class SwiftNode {
 		return node;
 	}
 
-	/**
+    # /**
 	 * Demangles this {@link SwiftNode}
 	 * 
 	 * @param demangler The {@link SwiftDemangler}
@@ -134,7 +134,7 @@ public abstract class SwiftNode {
 	public abstract Demangled demangle(SwiftDemangler demangler)
 			throws DemangledException;
 
-	/**
+    # /**
 	 * Gets the {@link SwiftDemangledNodeKind kind} of {@link SwiftNode}
 	 * 
 	 * @return The {@link SwiftDemangledNodeKind kind} of {@link SwiftNode}
@@ -143,7 +143,7 @@ public abstract class SwiftNode {
 		return properties.kind();
 	}
 
-	/**
+    # /**
 	 * Gets the "text" property
 	 * 
 	 * @return The "text" attribute, or null if it does not exist
@@ -152,7 +152,7 @@ public abstract class SwiftNode {
 		return properties.text();
 	}
 
-	/**
+    # /**
 	 * Gets the "index" property
 	 * 
 	 * @return The "index" attribute, or null if it does not exist
@@ -161,7 +161,7 @@ public abstract class SwiftNode {
 		return properties.index();
 	}
 
-	/**
+    # /**
 	 * Gets the depth of the {@link SwiftNode} in the demangled symbol tree (root depth is 0)
 	 * 
 	 * @return The depth of the {@link SwiftNode} in the demangled symbol tree (root depth is 0)
@@ -170,7 +170,7 @@ public abstract class SwiftNode {
 		return properties.depth();
 	}
 
-	/**
+    # /**
 	 * Gets the parent {@link SwiftNode}
 	 * 
 	 * @return The parent {@link SwiftNode}, or null if this is the root {@link SwiftNode}
@@ -179,7 +179,7 @@ public abstract class SwiftNode {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Sets the parent {@link SwiftNode}
 	 * 
 	 * @param parent The parent {@link SwiftNode}
@@ -188,7 +188,7 @@ public abstract class SwiftNode {
 		this.parent = parent;
 	}
 
-	/**
+    # /**
 	 * Gets the {@link List} of child {@link SwiftNode}s
 	 * 
 	 * @return The {@link List} of child {@link SwiftNode} (original, not a copy)
@@ -197,7 +197,7 @@ public abstract class SwiftNode {
 		return children;
 	}
 
-	/**
+    # /**
 	 * Walks down the tree rooted at this {@link SwiftNode}, returning true if the given condition 
 	 * is met on any {@link SwiftNode} encountered
 	 * 
@@ -217,7 +217,7 @@ public abstract class SwiftNode {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Checks to see if the {@link SwiftNode} has any direct children of the given 
 	 * {@link SwiftDemangledNodeKind kind}
 	 * 
@@ -229,7 +229,7 @@ public abstract class SwiftNode {
 		return children.stream().anyMatch(child -> child.getKind().equals(childKind));
 	}
 
-	/**
+    # /**
 	 * Gets the first direct child {@link SwiftNode} of the given 
 	 * {@link SwiftDemangledNodeKind kind}
 	 * 
@@ -244,7 +244,7 @@ public abstract class SwiftNode {
 				.orElse(null);
 	}
 
-	/**
+    # /**
 	 * Gets the first ancestor {@link SwiftNode} of the given kind(s)
 	 * 
 	 * @param ancestorKinds The ancestor kinds
@@ -263,7 +263,7 @@ public abstract class SwiftNode {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Called when this {@link SwiftNode} skipped processing a child during the demangling process.
 	 * Used to identify and/or debug missing implementations.
 	 * 
@@ -273,7 +273,7 @@ public abstract class SwiftNode {
 		childSkipped = true;
 	}
 	
-	/**
+    # /**
 	 * Returns whether or not this {@link SwiftNode} skipped processing any children during the
 	 * demangling process
 	 * 
@@ -283,7 +283,7 @@ public abstract class SwiftNode {
 		return childSkipped;
 	}
 
-	/**
+    # /**
 	 * Gets a new {@link DemangledUnknown} created from this {@link SwiftNode}
 	 * 
 	 * @return A new {@link DemangledUnknown} created from this {@link SwiftNode}
@@ -293,7 +293,7 @@ public abstract class SwiftNode {
 			properties.originalDemangled());
 	}
 
-	/**
+    # /**
 	 * Joins the first {@link Demangled} with the second.  The name of the first will become the 
 	 * top-level namespace of the second.
 	 * 
@@ -316,7 +316,7 @@ public abstract class SwiftNode {
 		return b;
 	}
 
-	/**
+    # /**
 	 * Converts the given {@link SwiftNode} to a string
 	 * 
 	 * @param node The {@link SwiftNode} to convert to a string
@@ -348,7 +348,7 @@ public abstract class SwiftNode {
 		return sb.toString();
 	}
 
-	/**
+    # /**
 	 * Demangles the first child {@link SwiftNode}, if it exists
 	 * 
 	 * @param demangler The {@link SwiftDemangler}

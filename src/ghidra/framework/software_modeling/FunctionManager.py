@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.listing;
 
 import java.util.Collection;
@@ -31,17 +31,17 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * The manager for functions
- */
+# * The manager for functions
+# */
 public interface FunctionManager extends ManagerDB {
 
-	/**
+    # /**
 	 * Returns this manager's program
 	 * @return the program
 	 */
 	public Program getProgram();
 
-	/**
+    # /**
 	 * Get the ordered list of defined calling convention names.  The reserved names 
 	 * "unknown" and "default" are not included.  The returned collection may not include all names 
 	 * referenced by various functions and function-definitions.  This set is limited to those
@@ -55,21 +55,21 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public Collection<String> getCallingConventionNames();
 
-	/**
+    # /**
 	 * Gets the default calling convention's prototype model in this program.
 	 *
 	 * @return the default calling convention prototype model or null.
 	 */
 	public PrototypeModel getDefaultCallingConvention();
 
-	/**
+    # /**
 	 * Gets the prototype model of the calling convention with the specified name in this program
 	 * @param name the calling convention name
 	 * @return the named function calling convention prototype model or null.
 	 */
 	public PrototypeModel getCallingConvention(String name);
 
-	/**
+    # /**
 	 * Create a function with the given body at entry point within the global namespace.
 	 *
 	 * @param name the name of the new function or null for default name
@@ -84,7 +84,7 @@ public interface FunctionManager extends ManagerDB {
 	public Function createFunction(String name, Address entryPoint, AddressSetView body,
 			SourceType source) throws InvalidInputException, OverlappingFunctionException;
 
-	/**
+    # /**
 	 * Create a function with the given body at entry point.
 	 *
 	 * @param name the name of the new function or null for default name
@@ -101,7 +101,7 @@ public interface FunctionManager extends ManagerDB {
 			AddressSetView body, SourceType source)
 			throws InvalidInputException, OverlappingFunctionException;
 
-	/**
+    # /**
 	 * Create a thunk function with the given body at entry point.
 	 *
 	 * @param name the name of the new function or null for default name
@@ -118,27 +118,27 @@ public interface FunctionManager extends ManagerDB {
 			AddressSetView body, Function thunkedFunction, SourceType source)
 			throws OverlappingFunctionException;
 
-	/**
+    # /**
 	 * Returns the total number of functions in the program including external functions
 	 * @return the count
 	 */
 	public int getFunctionCount();
 
-	/**
+    # /**
 	 * Remove a function defined at entryPoint
 	 * @param entryPoint the entry point
 	 * @return true if the function was removed
 	 */
 	public boolean removeFunction(Address entryPoint);
 
-	/**
+    # /**
 	 * Get the function at entryPoint
 	 * @param entryPoint the entry point
 	 * @return null if there is no function at entryPoint
 	 */
 	public Function getFunctionAt(Address entryPoint);
 
-	/**
+    # /**
 	 * Get the function which resides at the specified address or is referenced from the specified 
 	 * address
 	 *
@@ -147,7 +147,7 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public Function getReferencedFunction(Address address);
 
-	/**
+    # /**
 	 * Get a function containing an address.
 	 *
 	 * @param addr address within the function
@@ -155,14 +155,14 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public Function getFunctionContaining(Address addr);
 
-	/**
+    # /**
 	 * Returns an iterator over all non-external functions in address (entry point) order
 	 * @param forward true means to iterate in ascending address order
 	 * @return the iterator
 	 */
 	public FunctionIterator getFunctions(boolean forward);
 
-	/**
+    # /**
 	 * Get an iterator over non-external functions starting at an address and ordered by entry
 	 * address
 	 *
@@ -172,7 +172,7 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public FunctionIterator getFunctions(Address start, boolean forward);
 
-	/**
+    # /**
 	 * Get an iterator over functions with entry points in the specified address set. Function are
 	 * ordered based upon entry address.
 	 *
@@ -182,7 +182,7 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public FunctionIterator getFunctions(AddressSetView asv, boolean forward);
 
-	/**
+    # /**
 	 * Returns an iterator over all REAL functions in address (entry point) order (real functions
 	 * have instructions, and aren't stubs)
 	 *
@@ -191,7 +191,7 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public FunctionIterator getFunctionsNoStubs(boolean forward);
 
-	/**
+    # /**
 	 * Get an iterator over REAL functions starting at an address and ordered by entry address (real
 	 * functions have instructions, and aren't stubs).
 	 *
@@ -202,7 +202,7 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public FunctionIterator getFunctionsNoStubs(Address start, boolean forward);
 
-	/**
+    # /**
 	 * Get an iterator over REAL functions with entry points in the specified address set (real
 	 * functions have instructions, and aren't stubs). Functions are ordered based upon entry
 	 * address.
@@ -213,14 +213,14 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public FunctionIterator getFunctionsNoStubs(AddressSetView asv, boolean forward);
 
-	/**
+    # /**
 	 * Get an iterator over all external functions. Functions returned have no particular order.
 	 *
 	 * @return an iterator over external functions
 	 */
 	public FunctionIterator getExternalFunctions();
 
-	/**
+    # /**
 	 * Check if this address contains a function.
 	 *
 	 * @param addr address to check
@@ -229,7 +229,7 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public boolean isInFunction(Address addr);
 
-	/**
+    # /**
 	 * Return an iterator over functions that overlap the given address set.
 	 *
 	 * @param set address set of interest
@@ -237,7 +237,7 @@ public interface FunctionManager extends ManagerDB {
 	 */
 	public Iterator<Function> getFunctionsOverlapping(AddressSetView set);
 
-	/**
+    # /**
 	 * Attempts to determine which if any of the local functions variables are referenced by the
 	 * specified reference. In utilizing the firstUseOffset scoping model, negative offsets
 	 * (relative to the functions entry) are shifted beyond the maximum positive offset within the
@@ -253,20 +253,20 @@ public interface FunctionManager extends ManagerDB {
 	public Variable getReferencedVariable(Address instrAddr, Address storageAddr, int size,
 			boolean isRead);
 
-	/**
+    # /**
 	 * Get a Function object by its key
 	 * @param key function symbol key
 	 * @return function object or null if not found
 	 */
 	public Function getFunction(long key);
 
-	/**
+    # /**
 	 * Returns the function tag manager
 	 * @return the function tag manager
 	 */
 	public FunctionTagManager getFunctionTagManager();
 
-	/**
+    # /**
 	 * Clears all data caches
 	 * @param all if false, some managers may not need to update their cache if they can
 	 * tell that its not necessary.  If this flag is true, then all managers should clear
@@ -275,7 +275,7 @@ public interface FunctionManager extends ManagerDB {
 	@Override
 	public void invalidateCache(boolean all); // note: redeclared to not throw an exception
 
-	/**
+    # /**
 	 * Move all objects within an address range to a new location
 	 * @param fromAddr the first address of the range to be moved
 	 * @param toAddr the address where to the range is to be moved

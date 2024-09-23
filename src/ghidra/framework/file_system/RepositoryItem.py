@@ -17,7 +17,7 @@ package ghidra.framework.remote;
 
 import ghidra.framework.store.FileSystem;
 
-import java.io.IOException;
+
 
 # /**
  * <code>RepositoryItemStatus</code> provides status information for a 
@@ -38,13 +38,13 @@ public class RepositoryItem implements java.io.Serializable {
 	protected int version;
 	protected long versionTime;
 
-	/**
+    # /**
 	 * Default constructor needed for de-serialization
 	 */
 	protected RepositoryItem() {
 	}
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param folderPath path of folder containing item.
 	 * @param itemName name of item
@@ -65,7 +65,7 @@ public class RepositoryItem implements java.io.Serializable {
 		this.versionTime = versionTime;
 	}
 
-	/**
+    # /**
 	 * Serialization method
 	 * @param out serialization output stream
 	 * @throws IOException if an IO error occurs
@@ -81,7 +81,7 @@ public class RepositoryItem implements java.io.Serializable {
 		out.writeLong(versionTime);
 	}
 
-	/**
+    # /**
 	 * Deserialization method
 	 * @param in deserialization input stream
 	 * @throws IOException if IO error occurs
@@ -108,35 +108,35 @@ public class RepositoryItem implements java.io.Serializable {
 		versionTime = in.readLong();
 	}
 
-	/**
+    # /**
 	 * Returns the item name.
 	 */
 	public String getName() {
 		return itemName;
 	}
 
-	/**
+    # /**
 	 * Returns the folder item path within the repository.
 	 */
 	public String getPathName() {
 		return folderPath + FileSystem.SEPARATOR + itemName;
 	}
 
-	/**
+    # /**
 	 * Returns path of the parent folder containing this item.
 	 */
 	public String getParentPath() {
 		return folderPath;
 	}
 
-	/**
+    # /**
 	 * Returns type of item.
 	 */
 	public int getItemType() {
 		return itemType;
 	}
 
-	/**
+    # /**
 	 * Returns content class
 	 */
 	public String getContentType() {
@@ -147,7 +147,7 @@ public class RepositoryItem implements java.io.Serializable {
 		return fileID;
 	}
 
-	/**
+    # /**
 	 * Returns the current version of the item or 
 	 * -1 if versioning not supported.
 	 */
@@ -155,7 +155,7 @@ public class RepositoryItem implements java.io.Serializable {
 		return version;
 	}
 
-	/**
+    # /**
 	 * Returns the time (UTC milliseconds) when the current version was created.
 	 */
 	public long getVersionTime() {

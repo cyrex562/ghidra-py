@@ -15,7 +15,7 @@
  */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 
 import ghidra.framework.data.OpenMode;
 import ghidra.program.model.address.*;

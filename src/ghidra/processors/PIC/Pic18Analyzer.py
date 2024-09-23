@@ -499,7 +499,7 @@ public class Pic18Analyzer extends AbstractAnalyzer {
 
 	}
 
-	/**
+    # /**
 	 * Attempt to markup FReg access instruction with register reference.
 	 * 
 	 * @param instr

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.oatmethod;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.CategoryPath;

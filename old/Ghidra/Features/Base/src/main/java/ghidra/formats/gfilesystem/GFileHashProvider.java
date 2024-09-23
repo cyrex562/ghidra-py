@@ -15,7 +15,7 @@
  */
 package ghidra.formats.gfilesystem;
 
-import java.io.IOException;
+
 
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;

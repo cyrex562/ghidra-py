@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.datamgr;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;

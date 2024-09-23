@@ -32,7 +32,7 @@ public class UnknownX1167MsSymbol extends AbstractUnknownMsSymbol {
 	private int unknownUnsignedShort3;
 	private String string;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -52,7 +52,7 @@ public class UnknownX1167MsSymbol extends AbstractUnknownMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the value what appears to be the first Unsigned Short.
 	 * @return Value in what appears to be first unsigned short.
 	 */
@@ -60,7 +60,7 @@ public class UnknownX1167MsSymbol extends AbstractUnknownMsSymbol {
 		return unknownUnsignedShort1;
 	}
 
-	/**
+    # /**
 	 * Returns the value what appears to be the second Unsigned Short.
 	 * @return Value in what appears to be second unsigned short.
 	 */
@@ -68,7 +68,7 @@ public class UnknownX1167MsSymbol extends AbstractUnknownMsSymbol {
 		return unknownUnsignedShort2;
 	}
 
-	/**
+    # /**
 	 * Returns the value what appears to be the third Unsigned Short.
 	 * @return Value in what appears to be third unsigned short.
 	 */
@@ -76,7 +76,7 @@ public class UnknownX1167MsSymbol extends AbstractUnknownMsSymbol {
 		return unknownUnsignedShort3;
 	}
 
-	/**
+    # /**
 	 * Returns what appears to be String data after the Unsigned Short fields.
 	 * @return What appears to be a string after the unsigned short fields.
 	 */

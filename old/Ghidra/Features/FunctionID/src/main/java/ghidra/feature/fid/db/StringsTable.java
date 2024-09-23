@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.db;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.DBObjectCache;

@@ -28,7 +28,7 @@ public abstract class ProjectDataCopyCutBaseAction extends ProjectTreeAction {
 		super(name, owner);
 	}
 
-	/**
+    # /**
 	 * Removes any path that is a descendant of a path in the selection.
 	 * @param paths selected paths
 	 * @return paths that do not have any descendants

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.IOException;
+
 
 import db.DBHandle;
 import db.buffers.BufferFile;

@@ -58,7 +58,7 @@ public final class NumericUtilities {
 	private NumericUtilities() {
 	}
 
-	/**
+    # /**
 	 * Parses the given string as a numeric value, detecting whether or not it begins with a hex
 	 * prefix, and if not, parses as a long int value.
 	 * 
@@ -69,7 +69,7 @@ public final class NumericUtilities {
 		return parseNumber(numStr, Long.valueOf(0));
 	}
 
-	/**
+    # /**
 	 * Parses the given string as a numeric value, detecting whether or not it begins with a hex
 	 * prefix, and if not, parses as a long int value.
 	 * @param s the string to parse
@@ -99,7 +99,7 @@ public final class NumericUtilities {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Parses the given decimal/hex string as an {@code int} value. This method allows values with
 	 * the top bit set to be implicitly parsed as negative values.
 	 * 
@@ -148,7 +148,7 @@ public final class NumericUtilities {
 		}
 	}
 	
-	/**
+    # /**
 	 * Parses the given decimal/hex string as a {@code long} value. This method allows values with
 	 * the top bit set to be implicitly parsed as negative values.
 	 * 
@@ -196,7 +196,7 @@ public final class NumericUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses the given string as a hex long value, detecting whether or not it begins with a hex
 	 * prefix, and if not, parses as a long int value.
 	 * @param s the string to parse
@@ -207,7 +207,7 @@ public final class NumericUtilities {
 		return parseHexBigInteger(s).longValue();
 	}
 
-	/**
+    # /**
 	 * Parses the given hex string as a BigIntge value, detecting whether or not it begins with a 
 	 * hex prefix, and if not, parses as a long int value.
 	 * @param s the string to parse
@@ -255,7 +255,7 @@ public final class NumericUtilities {
 		return new BigInteger(s.substring(p), 10);
 	}
 
-	/**
+    # /**
 	 * Decode a big integer in hex, binary, octal, or decimal, based on the prefix 0x, 0b, or 0.
 	 * 
 	 * <p>
@@ -280,7 +280,7 @@ public final class NumericUtilities {
 		return negative ? mag.negate() : mag;
 	}
 
-	/**
+    # /**
 	 * returns the value of the specified long as hexadecimal, prefixing with the 
 	 * {@link #HEX_PREFIX_x} string.
 	 *
@@ -291,7 +291,7 @@ public final class NumericUtilities {
 		return HEX_PREFIX_x + Long.toHexString(value);
 	}
 
-	/**
+    # /**
 	 * returns the value of the specified long as hexadecimal, prefixing with the 
 	 * {@link #HEX_PREFIX_x} string.
 	 *
@@ -306,7 +306,7 @@ public final class NumericUtilities {
 		return HEX_PREFIX_x + Long.toHexString(value);
 	}
 
-	/**
+    # /**
 	 * returns the value of the specified long as signed hexadecimal, prefixing with the
 	 * {@link #HEX_PREFIX_x}  string.
 	 *
@@ -323,7 +323,7 @@ public final class NumericUtilities {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Converts a <strong>unsigned</strong> long value, which is currently stored in a java
 	 * <strong>signed</strong> long, into a {@link BigInteger}.
 	 * <p>
@@ -349,7 +349,7 @@ public final class NumericUtilities {
 		return value.subtract(MAX_UNSIGNED_LONG).longValue() - 1;
 	}
 
-	/**
+    # /**
 	 * Convert a long, treated as unsigned, to a double
 	 * 
 	 * @param val the long to treat as unsigned and convert
@@ -363,7 +363,7 @@ public final class NumericUtilities {
 		return dVal;
 	}
 
-	/**
+    # /**
 	 * Get an unsigned aligned value corresponding to the specified unsigned value which will be
 	 * greater than or equal the specified value.
 	 *
@@ -386,7 +386,7 @@ public final class NumericUtilities {
 		return alignedValue;
 	}
 
-	/**
+    # /**
 	 * Convert a masked value into a hexadecimal-ish string.
 	 *
 	 * Converts the data to hexadecimal, placing an X where a nibble is unknown. Where a nibble is
@@ -484,7 +484,7 @@ public final class NumericUtilities {
 		return sb.toString();
 	}
 
-	/**
+    # /**
 	 * Convert a mask to a hexadecimal-ish string.
 	 *
 	 * Converts the mask in a similar way to
@@ -547,7 +547,7 @@ public final class NumericUtilities {
 		return sb.toString();
 	}
 
-	/**
+    # /**
 	 * The reverse of {@link #convertMaskedValueToHexString(long, long, int, boolean, int, String)}
 	 *
 	 * @param msk an object to receive the resulting mask
@@ -637,7 +637,7 @@ public final class NumericUtilities {
 		val.set(lval);
 	}
 
-	/**
+    # /**
 	 * Render <code>number</code> in different bases using the default signedness mode.
 	 * <p>
 	 * This invokes {@linkplain #formatNumber(long, int, SignednessFormatMode)} with a
@@ -652,7 +652,7 @@ public final class NumericUtilities {
 		return formatNumber(number, radix, SignednessFormatMode.DEFAULT);
 	}
 
-	/**
+    # /**
 	 * Provide renderings of <code>number</code> in different bases:
 	 * <ul>
 	 * <li><code>0</code> - renders <code>number</code> as an escaped character sequence</li>
@@ -813,7 +813,7 @@ public final class NumericUtilities {
 
 	}
 
-	/**
+    # /**
 	 * Parse hexadecimal digits into a byte array.
 	 *
 	 * @param hexString hexadecimal digits
@@ -866,7 +866,7 @@ public final class NumericUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Convert the given byte into a two character String, padding with a leading 0 if needed.
 	 *
 	 * @param b the byte
@@ -880,7 +880,7 @@ public final class NumericUtilities {
 		return bs;
 	}
 
-	/**
+    # /**
 	 * Convert a byte array into a hexadecimal string.
 	 *
 	 * @param bytes byte array
@@ -890,7 +890,7 @@ public final class NumericUtilities {
 		return convertBytesToString(bytes, null);
 	}
 
-	/**
+    # /**
 	 * Convert a byte array into a hexadecimal string.
 	 *
 	 * @param bytes byte array
@@ -904,7 +904,7 @@ public final class NumericUtilities {
 		return convertBytesToString(bytes, 0, bytes.length, delimeter);
 	}
 
-	/**
+    # /**
 	 * Convert a byte array into a hexadecimal string.
 	 *
 	 * @param bytes byte array
@@ -919,7 +919,7 @@ public final class NumericUtilities {
 		return convertBytesToString(iterator, delimeter);
 	}
 
-	/**
+    # /**
 	 * Convert a bytes into a hexadecimal string.
 	 *
 	 * @param bytes an iterator of bytes
@@ -931,7 +931,7 @@ public final class NumericUtilities {
 		return convertBytesToString(() -> bytes, delimiter);
 	}
 
-	/**
+    # /**
 	 * Convert a bytes into a hexadecimal string.
 	 *
 	 * @param bytes an iterable of bytes
@@ -942,7 +942,7 @@ public final class NumericUtilities {
 		return convertBytesToString(CollectionUtils.asStream(bytes), delimiter);
 	}
 
-	/**
+    # /**
 	 * Convert a bytes into a hexadecimal string.
 	 *
 	 * @param bytes an stream of bytes
@@ -955,7 +955,7 @@ public final class NumericUtilities {
 		return bytes.map(NumericUtilities::toString).collect(Collectors.joining(delimiter));
 	}
 
-	/**
+    # /**
 	 * Determine if the provided Number is an integer type -- Byte, Short, Integer, or Long.
 	 *
 	 * @param number the object to check for for integer-type
@@ -966,7 +966,7 @@ public final class NumericUtilities {
 		return isIntegerType(numClass);
 	}
 
-	/**
+    # /**
 	 * Determine if the provided Number class is an integer type.
 	 *
 	 * @param numClass Class of an object
@@ -976,7 +976,7 @@ public final class NumericUtilities {
 		return INTEGER_TYPES.contains(numClass);
 	}
 
-	/**
+    # /**
 	 * Determine if the provided Number is a floating-point type -- Float or Double.
 	 *
 	 * @param number the object to check for for floating-point-type
@@ -987,7 +987,7 @@ public final class NumericUtilities {
 		return isFloatingPointType(numClass);
 	}
 
-	/**
+    # /**
 	 * Determine if the provided Number class is a floating-point type.
 	 *
 	 * @param numClass Class of an object
@@ -997,11 +997,11 @@ public final class NumericUtilities {
 		return FLOATINGPOINT_TYPES.contains(numClass);
 	}
 
-	/**
+    # /**
 	 * Provides the protocol for rendering integer-type numbers in different signed-ness modes.
 	 */
 	private static interface IntegerRadixRenderer {
-		/**
+	    # /**
 		 * Format the given number in the provided radix base.
 		 *
 		 * @param number the number to render
@@ -1012,11 +1012,11 @@ public final class NumericUtilities {
 
 	}
 
-	/**
+    # /**
 	 * Renders provided numbers as signed values
 	 */
 	private final static class SignedIntegerRadixRenderer implements IntegerRadixRenderer {
-		/**
+	    # /**
 		 * {@inheritDoc}
 		 * <p>
 		 * All values are rendered in their <i>signed</i> form
@@ -1037,11 +1037,11 @@ public final class NumericUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Renders provided numbers as unsigned values
 	 */
 	private final static class UnsignedIntegerRadixRenderer implements IntegerRadixRenderer {
-		/**
+	    # /**
 		 * {@inheritDoc}
 		 * <p>
 		 * All values are rendered in their <i>unsigned</i> form
@@ -1062,11 +1062,11 @@ public final class NumericUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Renders provided numbers in a more human-friendly manner
 	 */
 	private final static class DefaultIntegerRadixRenderer implements IntegerRadixRenderer {
-		/**
+	    # /**
 		 * {@inheritDoc}
 		 * <p>
 		 * Values to be rendered in binary, octal, or hexadecimal bases are rendered as unsigned,

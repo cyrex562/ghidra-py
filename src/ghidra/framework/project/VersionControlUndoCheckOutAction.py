@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.projectdata.actions;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +42,7 @@ public class VersionControlUndoCheckOutAction extends VersionControlAction {
 
 	private static final Icon ICON = new GIcon("icon.version.control.check.out.undo");
 
-	/**
+    # /**
 	 * Creates an action to undo checkouts for domain files in the repository.
 	 * @param plugin the plug-in that owns this action.
 	 */
@@ -75,7 +75,7 @@ public class VersionControlUndoCheckOutAction extends VersionControlAction {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the domain files from the provider and then undoes the checkout on any that are 
 	 * checked out.
 	 */
@@ -98,7 +98,7 @@ public class VersionControlUndoCheckOutAction extends VersionControlAction {
 		undoCheckOuts(unmodifiedCheckOutsList, modifiedCheckOutsList);
 	}
 
-	/**
+    # /**
 	 * Displays the undo checkout confirmation dialog for each checked out file and then 
 	 * undoes the checkout while keeping a copy of the working version of the file if the 
 	 * user chooses to do so.<br>
@@ -133,7 +133,7 @@ public class VersionControlUndoCheckOutAction extends VersionControlAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Task for undoing check out of files that are in version control.
 	 */
 	private class UndoCheckOutTask extends Task {
@@ -141,7 +141,7 @@ public class VersionControlUndoCheckOutAction extends VersionControlAction {
 		private DomainFile[] modifiedCheckedOutFiles;
 		private boolean saveCopy;
 
-		/**
+	    # /**
 		 * Creates a task for undoing checkouts of domain files.
 		 * @param unmodifiedCheckOutsList the list of unmodified checked out files
 		 * @param modifiedCheckedOutFiles the list of checked out files that have been modified

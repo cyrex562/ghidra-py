@@ -33,7 +33,7 @@ public abstract class AbstractArrayMsType extends AbstractMsType {
 	protected String name;
 	protected long stride;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -59,7 +59,7 @@ public abstract class AbstractArrayMsType extends AbstractMsType {
 		reader.skipPadding();
 	}
 
-	/**
+    # /**
 	 * Returns the size of the array (number of elements * element size).
 	 * @return The size the array.
 	 */
@@ -68,7 +68,7 @@ public abstract class AbstractArrayMsType extends AbstractMsType {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Returns the record index of the element type of this array.
 	 * @return The index of the base element type of the array.
 	 */
@@ -76,7 +76,7 @@ public abstract class AbstractArrayMsType extends AbstractMsType {
 		return elementTypeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the element type of this array.
 	 * @return {@link AbstractMsType} that is the base element type of the array.
 	 */
@@ -84,7 +84,7 @@ public abstract class AbstractArrayMsType extends AbstractMsType {
 		return pdb.getTypeRecord(elementTypeRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the index type of this array.
 	 * @return {@link AbstractMsType} that is the index type of the array.
 	 */
@@ -92,7 +92,7 @@ public abstract class AbstractArrayMsType extends AbstractMsType {
 		return pdb.getTypeRecord(indexTypeRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the name of this array.
 	 * @return Name of the array.
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.btree;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
@@ -34,7 +34,7 @@ public class BTreeMapRecord implements StructConverter {
 		this.bitmap  =  reader.readNextByteArray( headerRecord.getNodeSize() - 256 );
 	}
 
-	/**
+    # /**
 	 * Returns the map record node allocation bitmap.
 	 * @return the map record node allocation bitmap
 	 */
@@ -42,7 +42,7 @@ public class BTreeMapRecord implements StructConverter {
 		return bitmap;
 	}
 
-	/**
+    # /**
 	 * Returns  true if the specified node index is used.
 	 * Returns false if the specified node index is free.
 	 * @param nodeIndex the node index

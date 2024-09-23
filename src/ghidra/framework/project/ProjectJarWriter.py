@@ -15,7 +15,7 @@
  */
 package ghidra.framework.project;
 
-import java.io.*;
+
 import java.util.jar.JarOutputStream;
 import java.util.zip.ZipEntry;
 
@@ -31,7 +31,7 @@ class ProjectJarWriter extends JarWriter {
 	private static final String PROPERTIES_FILE_NAME = ".properties";
 	private static final String ORIGINAL_PROPERTIES_FILE_NAME = "original"+PROPERTIES_FILE_NAME;
 
-	/**
+    # /**
 	 * @param jarOut the the jar file output stream the zip entries are
 	 * to be written to.
 	 */

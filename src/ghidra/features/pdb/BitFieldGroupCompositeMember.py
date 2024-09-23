@@ -146,7 +146,7 @@ public class BitFieldGroupCompositeMember extends CompositeMember {
 		return m;
 	}
 
-	/**
+    # /**
 	 * Add a new member to the end of this bit-field group.  The caller should ensure that the
 	 * specified member is a suitable addition to this group (must be single bit field whose 
 	 * member offset and length match this group's). 

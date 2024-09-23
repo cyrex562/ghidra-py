@@ -32,7 +32,7 @@ public abstract class AbstractCompositeMsType extends AbstractComplexMsType {
 	//TODO: has more... guessing below
 	protected BigInteger size;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -42,7 +42,7 @@ public abstract class AbstractCompositeMsType extends AbstractComplexMsType {
 		//reader.skipPadding();
 	}
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param count count number of field elements
@@ -68,7 +68,7 @@ public abstract class AbstractCompositeMsType extends AbstractComplexMsType {
 		this.vShapeTableRecordNumber = vShapeTableRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the derived-from list of types.
 	 * @return Record number of the derived-from list of types.
 	 */
@@ -76,7 +76,7 @@ public abstract class AbstractCompositeMsType extends AbstractComplexMsType {
 		return derivedFromListRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the VShape table.
 	 * @return Record number of the VShape table.
 	 */
@@ -84,7 +84,7 @@ public abstract class AbstractCompositeMsType extends AbstractComplexMsType {
 		return vShapeTableRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the size of this composite
 	 * @return Size of this composite.
 	 */

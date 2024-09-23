@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query;
 
-import java.io.*;
+
 import java.net.Authenticator;
 import java.net.InetAddress;
 import java.nio.file.Files;

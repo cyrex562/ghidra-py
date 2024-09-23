@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.symbol;
 
-import java.io.IOException;
+
 import java.lang.reflect.Field;
 import java.util.*;
 import java.util.concurrent.locks.ReadWriteLock;

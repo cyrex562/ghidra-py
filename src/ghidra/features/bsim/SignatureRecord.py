@@ -19,7 +19,7 @@ import generic.lsh.vector.LSHVector;
 import generic.lsh.vector.LSHVectorFactory;
 import ghidra.xml.XmlPullParser;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 public class SignatureRecord {

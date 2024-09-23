@@ -16,7 +16,7 @@
 package ghidra.server;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.UnknownHostException;
 import java.rmi.server.RemoteServer;
 import java.rmi.server.ServerNotActiveException;

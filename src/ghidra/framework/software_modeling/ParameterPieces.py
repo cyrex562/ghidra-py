@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.program.model.address.Address;
@@ -23,8 +23,8 @@ import ghidra.program.model.pcode.Varnode;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * Basic elements of a parameter: address, data-type, properties
- */
+# * Basic elements of a parameter: address, data-type, properties
+# */
 public class ParameterPieces {
 	public Address address;						// Storage address of the parameter
 	public DataType type;						// The data-type of the parameter
@@ -36,7 +36,7 @@ public class ParameterPieces {
 //	public boolean typeLock;
 //	public boolean sizeLock;
 
-	/**
+    # /**
 	 * Swap data-type markup between this and another parameter
 	 * 
 	 * Swap any data-type and flags, but leave the storage address intact.

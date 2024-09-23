@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.script;
 
-import java.io.IOException;
+
 import java.io.PrintStream;
 import java.net.Socket;
 

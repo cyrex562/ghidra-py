@@ -29,7 +29,7 @@ import ghidra.util.classfinder.ExtensionPoint;
  */
 public abstract class GhidraProtocolHandler implements ExtensionPoint {
 
-	/**
+    # /**
 	 * Determine if this protocol handler is responsible for handling the
 	 * specified named protocol extension.  One handler may support multiple
 	 * protocol extension names (e.g., http and https).
@@ -38,7 +38,7 @@ public abstract class GhidraProtocolHandler implements ExtensionPoint {
 	 */
 	public abstract boolean isExtensionSupported(String extProtocolName);
 
-	/**
+    # /**
 	 * Get the Ghidra protocol connector for a Ghidra URL which requires this
 	 * extension.
 	 * @param ghidraUrl Ghidra protocol URL

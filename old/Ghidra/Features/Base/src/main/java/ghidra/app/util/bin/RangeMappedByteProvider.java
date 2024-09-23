@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.*;
+
 import java.util.Arrays;
 import java.util.Map.Entry;
 import java.util.TreeMap;

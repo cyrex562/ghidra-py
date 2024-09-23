@@ -15,7 +15,7 @@
  */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.help.UnsupportedOperationException;

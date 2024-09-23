@@ -15,7 +15,7 @@
  */
 package generic.theme;
 
-import java.io.*;
+
 import java.nio.file.Files;
 import java.util.*;
 import java.util.zip.ZipEntry;
@@ -31,7 +31,7 @@ public class ThemeWriter {
 	static final String THEME_USE_DARK_DEFAULTS = "useDarkDefaults";
 	protected GTheme theme;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param theme the theme to be written to a file
 	 */
@@ -39,7 +39,7 @@ public class ThemeWriter {
 		this.theme = theme;
 	}
 
-	/**
+    # /**
 	 * Writes the theme to the given file with the option to output as a zip file.
 	 * @param file the file to write to
 	 * @param asZip if true, outputs in zip format
@@ -55,7 +55,7 @@ public class ThemeWriter {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes the theme to the given file.
 	 * @param file the file to write to
 	 * @throws FileNotFoundException i
@@ -67,7 +67,7 @@ public class ThemeWriter {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes the theme to the given file in a zip format.
 	 * @param file the file to write to
 	 * @throws IOException if an I/O error occurs trying to write the file

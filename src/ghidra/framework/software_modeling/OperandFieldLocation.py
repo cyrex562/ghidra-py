@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.util.Objects;
@@ -23,16 +23,16 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.listing.VariableOffset;
 
 # /**
- * The <CODE>OperandFieldLocation</CODE> class contains specific location information within the
- * OPERAND field of a CodeUnitLocation object.
- */
+# * The <CODE>OperandFieldLocation</CODE> class contains specific location information within the
+# * OPERAND field of a CodeUnitLocation object.
+# */
 public class OperandFieldLocation extends CodeUnitLocation {
 
 	private String rep;
 	private int subOpIndex = -1;
 	private VariableOffset variableOffset;
 
-	/**
+    # /**
 	 * Construct a new OperandFieldLocation object.
 	 *
 	 * @param program the program of the location.
@@ -53,7 +53,7 @@ public class OperandFieldLocation extends CodeUnitLocation {
 		this.subOpIndex = -1;
 	}
 
-	/**
+    # /**
 	 * Construct a new OperandFieldLocation object.
 	 *
 	 * @param program the program of the location.
@@ -74,7 +74,7 @@ public class OperandFieldLocation extends CodeUnitLocation {
 		this.subOpIndex = subOpIndex;
 	}
 
-	/**
+    # /**
 	 * Construct a new OperandFieldLocation object for an instruction operand.
 	 *
 	 * @param program the program of the location.
@@ -95,13 +95,13 @@ public class OperandFieldLocation extends CodeUnitLocation {
 		this.variableOffset = variableOffset;
 	}
 
-	/**
+    # /**
 	 * Default constructor needed for restoring an operand field location from XML.
 	 */
 	public OperandFieldLocation() {
 	}
 
-	/**
+    # /**
 	 * Returns VariableOffset object if applicable or null.
 	 * @return the variable offset.
 	 */
@@ -109,7 +109,7 @@ public class OperandFieldLocation extends CodeUnitLocation {
 		return variableOffset;
 	}
 
-	/**
+    # /**
 	 * Returns a string representation of the operand at this location.
 	 * @return the representation.
 	 */
@@ -117,7 +117,7 @@ public class OperandFieldLocation extends CodeUnitLocation {
 		return rep;
 	}
 
-	/**
+    # /**
 	 * Returns the index of the operand at this location.
 	 * @return the index
 	 */
@@ -125,7 +125,7 @@ public class OperandFieldLocation extends CodeUnitLocation {
 		return getColumn();
 	}
 
-	/**
+    # /**
 	 * Returns the sub operand index at this location.
 	 * <p>
 	 * This index can be used on the instruction.getOpObjects() to find the actual object (Address,

@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.interpreter;
 import static org.junit.Assert.*;
 
 import java.awt.event.KeyEvent;
-import java.io.*;
+
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

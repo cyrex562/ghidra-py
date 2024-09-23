@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 
 /**
  * This class represents Section Contribution component of a PDB file.  This class is only

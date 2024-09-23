@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.properties;
 
-import java.io.IOException;
+
 import java.util.NoSuchElementException;
 
 import db.*;
@@ -33,10 +33,10 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Abstract class which defines a map containing properties over a set of addresses.
- * The map is stored within a database table.
- * @param <T> property value type
- */
+# * Abstract class which defines a map containing properties over a set of addresses.
+# * The map is stored within a database table.
+# * @param <T> property value type
+# */
 public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 
 	private static final String PROPERTY_TABLE_PREFIX = "Property Map - ";
@@ -66,7 +66,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 	protected ObjectCache cache = new ObjectCache(DEFAULT_CACHE_SIZE);
 	protected Lock lock;
 
-	/**
+    # /**
 	 * Construct a property map.
 	 * @param dbHandle database handle.
 	 * @param errHandler database error handler.
@@ -92,7 +92,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Check if a table upgrade should be performed or a version error thrown.
 	 * @param openMode the mode that the program was openned in or null if instantiated during
 	 * cache invalidate.  Used to detect versioning error only.
@@ -170,7 +170,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the default property table name for this property map.
 	 * @return default property map table name.
 	 */
@@ -178,7 +178,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 		return PROPERTY_TABLE_PREFIX + name;
 	}
 
-	/**
+    # /**
 	 * Create the default propertyTable.
 	 * This method may be called by add property methods if propertyTable
 	 * is null.
@@ -203,7 +203,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Adjust the size of the underlying read cache.
 	 * @param size the size of the cache.
 	 */
@@ -218,7 +218,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 
 	}
 
-	/**
+    # /**
 	 * Delete this property map and all underlying tables.
 	 * This method should be overidden if any table other than the 
 	 * default propertyTable is used.
@@ -413,7 +413,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 		return propertyTable != null ? propertyTable.getRecordCount() : 0;
 	}
 
-	/**
+    # /**
 	 * Get an iterator over the long address keys which contain a property value.
 	 * @param set addresses over which to iterate (null indicates all defined memory regions)
 	 * @param atStart true if the iterator should be positioned at the start
@@ -432,7 +432,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 		return new AddressKeyIterator(propertyTable, addrMap, set, set.getMaxAddress(), false);
 	}
 
-	/**
+    # /**
 	 * Get an iterator over the long address keys which contain a property value.
 	 * @param start iterator starting position
 	 * @param before true if the iterator should be positioned before the start address
@@ -448,7 +448,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 		return new AddressKeyIterator(propertyTable, addrMap, start, before);
 	}
 
-	/**
+    # /**
 	 * Get an iterator over the long address keys which contain a property value.
 	 * @param start start of iterator address range
 	 * @param end end of iterator address range
@@ -561,7 +561,7 @@ public abstract class PropertyMapDB<T> implements PropertyMap<T> {
 		return new AddressKeyAddressIterator(keyIter, forward, addrMap, errHandler);
 	}
 
-	/**
+    # /**
 	 * Invalidates the cache.
 	 */
 	public void invalidateCache() {

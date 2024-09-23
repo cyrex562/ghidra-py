@@ -55,7 +55,7 @@ public class FormatStringParser {
 	private TypeDef size_t;
 	private TypeDef ptrdiff_t;
 
-	/**
+    # /**
 	 * Constructor for FormatStringParser.
 	 * <br>
 	 * NOTE: Warning messages will be logged once per instantiation when 
@@ -68,7 +68,7 @@ public class FormatStringParser {
 		this.dataTypeManager = program.getDataTypeManager();
 	}
 
-	/**
+    # /**
 	 * This function takes in a format string and returns List of Strings each holding 
 	 * format data. Each String is a substring of the given format string that corresponds to one
 	 * or more DataTypes. These DataTypes determine which arguments need to be given to the variadic
@@ -107,7 +107,7 @@ public class FormatStringParser {
 		return formatArgumentList;
 	}
 
-	/**
+    # /**
 	 * Takes in a single String from parseFormatString's output List and converts it to
 	 * the corresponding FormatArgument(s) and populates the formatArgumentList List.
 	 * isOutputType is true when using a format string for a function that "outputs"
@@ -271,7 +271,7 @@ public class FormatStringParser {
 		return i;
 	}
 
-	/**
+    # /**
 	 * Takes in a String and converts it to a List of FormatArgument with each FormatArgument
 	 * corresponding to an additional argument. isOutputType is true when using a
 	 * format string for output data types (e.g. printf, fprintf, etc.). When it's
@@ -310,7 +310,7 @@ public class FormatStringParser {
 		return formatArgumentList.contains(null) ? null : formatArgumentList;
 	}
 
-	/**
+    # /**
 	 * 
 	 * Handles format Strings with parameters. In this parser, we define a format
 	 * String parameter to be an integer n provided in the form: "%n$" or "*n$", where n is
@@ -481,7 +481,7 @@ public class FormatStringParser {
 		return formatArgumentList;
 	}
 
-	/**
+    # /**
 	 * In a format string with format argument parameters, retrieve that parameter.
 	 * In other words, in the following cases: "%n$" and "*n$", return n where n is
 	 * the index of the referred argument. n cannot be less than 1; return 0 if
@@ -512,7 +512,7 @@ public class FormatStringParser {
 				: Integer.parseInt(paramIndexString);
 	}
 
-	/**
+    # /**
 	 * Skips a series of flags within a format String. returns the index of the
 	 * format string at the last digit before another non-digit character
 	 * 
@@ -527,7 +527,7 @@ public class FormatStringParser {
 		return i - 1;
 	}
 
-	/**
+    # /**
 	 * Skips a series of numbers (field width or precision) within a format String.
 	 * returns the index of the format String at the last digit before another
 	 * non-digit character

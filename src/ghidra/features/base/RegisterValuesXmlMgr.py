@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.xml;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 

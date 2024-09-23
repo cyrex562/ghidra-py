@@ -16,7 +16,7 @@
 package ghidra.framework.client;
 
 import java.io.EOFException;
-import java.io.IOException;
+
 import java.net.SocketTimeoutException;
 import java.rmi.RemoteException;
 import java.security.GeneralSecurityException;
@@ -58,7 +58,7 @@ public class RepositoryServerAdapter {
 	private WeakSet<RemoteAdapterListener> listenerList =
 		WeakDataStructureFactory.createCopyOnWriteWeakSet();
 
-	/**
+    # /**
 	 * Construct a repository server interface adapter.
 	 * @param server provides server connection data
 	 */
@@ -67,7 +67,7 @@ public class RepositoryServerAdapter {
 		this.serverInfoStr = server.toString();
 	}
 
-	/**
+    # /**
 	 * Construct a repository server interface adapter.
 	 * @param serverHandle associated server handle (reconnect not supported)
 	 */
@@ -83,7 +83,7 @@ public class RepositoryServerAdapter {
 		return serverInfoStr;
 	}
 
-	/**
+    # /**
 	 * Add a listener to this remote adapter
 	 * @param listener
 	 */
@@ -91,7 +91,7 @@ public class RepositoryServerAdapter {
 		listenerList.add(listener);
 	}
 
-	/**
+    # /**
 	 * Remove a listener from this remote adapter
 	 * @param listener
 	 */
@@ -99,7 +99,7 @@ public class RepositoryServerAdapter {
 		listenerList.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Returns true if the connection was cancelled by the user.
 	 * 
 	 * @return try if cancelled by user
@@ -108,7 +108,7 @@ public class RepositoryServerAdapter {
 		return connectCancelled;
 	}
 
-	/**
+    # /**
 	 * Returns the last error associated with a failed connection attempt.
 	 * @return last connect error or null
 	 */
@@ -116,7 +116,7 @@ public class RepositoryServerAdapter {
 		return lastConnectError;
 	}
 
-	/**
+    # /**
 	 * Notify listeners of a connection state change.
 	 */
 	private void fireStateChanged() {
@@ -125,14 +125,14 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if connected.
 	 */
 	public boolean isConnected() {
 		return serverHandle != null;
 	}
 
-	/**
+    # /**
 	 * Attempt to connect or re-connect to the server.
 	 * @return true if connect successful, false if cancelled by user
 	 * @throws NotConnectedException if connect failed (error will be displayed to user)
@@ -251,7 +251,7 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the server handle is already connected
 	 * and functioning properly.  A simple remote call is made 
 	 * to the handle's connected() method to verify the connection.
@@ -283,7 +283,7 @@ public class RepositoryServerAdapter {
 		return false;
 	}
 
-//	/**
+//    # /**
 //	 * Following an error, this method may be invoked to reestablish 
 //	 * the remote connection if needed.  If the connection is not
 //	 * down, the RemoteException passed in is simply re-thrown.
@@ -308,7 +308,7 @@ public class RepositoryServerAdapter {
 //		error = re;
 //	}
 
-	/**
+    # /**
 	 * Create a new repository on the server.
 	 * @param name repository name.
 	 * @return handle to new repository.
@@ -339,7 +339,7 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a handle to an existing repository.  The repository adapter is
 	 * initially disconnected - the connect() method or another repository 
 	 * action method must be invoked to establish a repository connection. 
@@ -350,7 +350,7 @@ public class RepositoryServerAdapter {
 		return new RepositoryAdapter(this, name);
 	}
 
-	/**
+    # /**
 	 * Get a handle to an existing repository.
 	 * @param name repository name.
 	 * @return repository handle or null if repository not found.
@@ -372,7 +372,7 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete a repository.
 	 * @param name repository name.
 	 * @throws UserAccessException
@@ -395,7 +395,7 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a list of all repository names defined to the server.
 	 * @throws IOException
 	 * @throws NotConnectedException if server connection is down (user already informed)
@@ -414,7 +414,7 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if server allows anonymous access.
 	 * Individual repositories must grant anonymous access separately.
 	 * @throws IOException
@@ -434,7 +434,7 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if user has restricted read-only access to server (e.g., anonymous user)
 	 * @throws IOException
 	 * @throws NotConnectedException if server connection is down (user already informed)
@@ -453,14 +453,14 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns user's server login identity
 	 */
 	public String getUser() {
 		return currentUser;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all known users.
 	 * @throws IOException
 	 * @throws NotConnectedException if server connection is down (user already informed)
@@ -479,7 +479,7 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the simple password for the user.
 	 * @param saltedSHA256PasswordHash hex character representation of salted SHA256 hash of the password
 	 * @return true if password changed
@@ -502,7 +502,7 @@ public class RepositoryServerAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this server allows the user to change their password.
 	 * @see ghidra.framework.remote.RemoteRepositoryServerHandle#canSetPassword()
 	 */
@@ -524,7 +524,7 @@ public class RepositoryServerAdapter {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the amount of time in milliseconds until the 
 	 * user's password will expire.
 	 * @return time until expiration or -1 if it will not expire
@@ -544,7 +544,7 @@ public class RepositoryServerAdapter {
 //        return -1;
 //	}
 
-	/**
+    # /**
 	 * Returns server information.  May be null if using fixed RepositoryServerHandle.
 	 */
 	public ServerInfo getServerInfo() {
@@ -561,7 +561,7 @@ public class RepositoryServerAdapter {
 		return unexpectedDisconnect;
 	}
 
-	/**
+    # /**
 	 * Force disconnect with server
 	 */
 	public void disconnect() {

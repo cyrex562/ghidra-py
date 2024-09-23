@@ -18,7 +18,7 @@ package ghidra.plugins.fsbrowser;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.KeyEvent;
-import java.io.*;
+
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;

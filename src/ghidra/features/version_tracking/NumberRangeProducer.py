@@ -20,13 +20,13 @@ package ghidra.feature.vt.gui.provider.matchtable;
  */
 public interface NumberRangeProducer {
 
-	/**
+    # /**
 	 * Returns the lower range number; can be null
 	 * @return the number
 	 */
 	public Number getLowerNumber();
 
-	/**
+    # /**
 	 * Returns the upper range number; can be null
 	 * @return the number
 	 */

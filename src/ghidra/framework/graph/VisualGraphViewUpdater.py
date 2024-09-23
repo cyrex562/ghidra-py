@@ -75,7 +75,7 @@ public class VisualGraphViewUpdater<V extends VisualVertex, E extends VisualEdge
 		this.satelliteViewer = satelliteViewer;
 	}
 
-	/**
+    # /**
 	 * Add a listener to be notified when a job is started.  Jobs often, but not always, mutate
 	 * the underlying graph.  For this reason, other tasks that use the graph may want to not 
 	 * do their work while a job is running. 
@@ -95,7 +95,7 @@ public class VisualGraphViewUpdater<V extends VisualVertex, E extends VisualEdge
 		jobRunner.dispose();
 	}
 
-	/**
+    # /**
 	 * Fits the graph into both the primary and satellite views
 	 */
 	public void fitAllGraphsToViewsNow() {
@@ -110,7 +110,7 @@ public class VisualGraphViewUpdater<V extends VisualVertex, E extends VisualEdge
 		scheduleViewChangeJob(new FitGraphToViewJob<>(theViewer));
 	}
 
-	/**
+    # /**
 	 * Will schedule the fitting work to happen now if now work is being done, or later otherwis
 	 */
 	public void fitGraphToViewerLater() {
@@ -376,7 +376,7 @@ public class VisualGraphViewUpdater<V extends VisualVertex, E extends VisualEdge
 		edgeHoverAnimator.start();
 	}
 
-	/**
+    # /**
 	 * Returns true if this updater is performing any animations or running any jobs that can
 	 * mutate the graph or view
 	 * 
@@ -399,7 +399,7 @@ public class VisualGraphViewUpdater<V extends VisualVertex, E extends VisualEdge
 		return busy;
 	}
 
-	/**
+    # /**
 	 * Returns true if this updater is running any jobs that can mutate the graph or view
 	 * 
 	 * @return true if busy

@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.datamgr.actions;
 
-import java.io.IOException;
+
 
 import javax.swing.tree.TreePath;
 

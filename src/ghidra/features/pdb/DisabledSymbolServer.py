@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Set;
 
@@ -32,7 +32,7 @@ public class DisabledSymbolServer implements SymbolServer {
 
 	private static String DISABLED_PREFIX = "disabled://";
 
-	/**
+    # /**
 	 * Predicate that tests if the location string is an instance of a disabled location.
 	 * 
 	 * @param loc location string
@@ -42,7 +42,7 @@ public class DisabledSymbolServer implements SymbolServer {
 		return loc.startsWith(DISABLED_PREFIX);
 	}
 
-	/**
+    # /**
 	 *  Factory method to create new instances from a location string.
 	 *  
 	 * @param locationString location string 
@@ -59,7 +59,7 @@ public class DisabledSymbolServer implements SymbolServer {
 
 	private SymbolServer delegate;
 
-	/**
+    # /**
 	 * Creates a new instance, wrapping an existing SymbolServer.
 	 * 
 	 * @param delegate the SymbolServer that is being disabled
@@ -68,7 +68,7 @@ public class DisabledSymbolServer implements SymbolServer {
 		this.delegate = delegate;
 	}
 
-	/**
+    # /**
 	 * Returns the wrapped (disabled) SymbolServer.
 	 * 
 	 * @return wrapped / disabled SymbolServer

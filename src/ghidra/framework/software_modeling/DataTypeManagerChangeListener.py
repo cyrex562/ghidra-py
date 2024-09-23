@@ -22,7 +22,7 @@ import ghidra.framework.model.DomainObjectEvent;
  */
 public interface DataTypeManagerChangeListener {
 
-	/**
+    # /**
 	 * Notification when category is added.
 	 * 
 	 * @param dtm the dataType manager
@@ -30,7 +30,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void categoryAdded(DataTypeManager dtm, CategoryPath path);
 
-	/**
+    # /**
 	 * Notification when a category is removed.
 	 * 
 	 * @param dtm data type manager associated with the category
@@ -38,7 +38,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void categoryRemoved(DataTypeManager dtm, CategoryPath path);
 
-	/**
+    # /**
 	 * Notification when category is renamed.
 	 * 
 	 * @param dtm data type manager associated with the category
@@ -48,7 +48,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void categoryRenamed(DataTypeManager dtm, CategoryPath oldPath, CategoryPath newPath);
 
-	/**
+    # /**
 	 * Notification when a category is reparented to new category. 
 	 *  
 	 * @param dtm data type manager associated with the category
@@ -57,7 +57,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void categoryMoved(DataTypeManager dtm, CategoryPath oldPath, CategoryPath newPath);
 
-	/**
+    # /**
 	 * Notification when a data type is added to a category
 	 * 
 	 * @param dtm data type manager for the given category paths.
@@ -65,7 +65,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void dataTypeAdded(DataTypeManager dtm, DataTypePath path);
 
-	/**
+    # /**
 	 * Notification when data type is removed.
 	 * 
 	 * @param dtm data type manager for the given category paths.
@@ -73,7 +73,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void dataTypeRemoved(DataTypeManager dtm, DataTypePath path);
 
-	/**
+    # /**
 	 * Notification when data type is renamed.
 	 * 
 	 * @param dtm data type manager for the given category paths.
@@ -82,7 +82,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void dataTypeRenamed(DataTypeManager dtm, DataTypePath oldPath, DataTypePath newPath);
 
-	/**
+    # /**
 	 * Notification when a data type is moved.
 	 * 
 	 * @param dtm data type manager for the given category paths.
@@ -91,7 +91,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void dataTypeMoved(DataTypeManager dtm, DataTypePath oldPath, DataTypePath newPath);
 
-	/**
+    # /**
 	 * Notification when data type is changed.
 	 * 
 	 * @param dtm data type manager for the given category paths.
@@ -99,7 +99,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void dataTypeChanged(DataTypeManager dtm, DataTypePath path);
 
-	/**
+    # /**
 	 * Notification when a data type has been replaced.
 	 * 
 	 * @param dtm data type manager for the given category paths.
@@ -110,7 +110,7 @@ public interface DataTypeManagerChangeListener {
 	public void dataTypeReplaced(DataTypeManager dtm, DataTypePath oldPath, DataTypePath newPath,
 			DataType newDataType);
 
-	/**
+    # /**
 	 * Notification the favorite status of a datatype has changed
 	 * 
 	 * @param dtm data type manager for the given category paths.
@@ -119,7 +119,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void favoritesChanged(DataTypeManager dtm, DataTypePath path, boolean isFavorite);
 
-	/**
+    # /**
 	 * Notification that the information for a particular source archive has changed. Typically,
 	 * this would be because it was renamed or moved.
 	 * 
@@ -129,7 +129,7 @@ public interface DataTypeManagerChangeListener {
 	public void sourceArchiveChanged(final DataTypeManager dataTypeManager,
 			final SourceArchive sourceArchive);
 
-	/**
+    # /**
 	 * Notification that the information for a source archive has been added. This happens when
 	 * a data type from the indicated source archive is added to this data type manager.
 	 * 
@@ -139,7 +139,7 @@ public interface DataTypeManagerChangeListener {
 	public void sourceArchiveAdded(final DataTypeManager dataTypeManager,
 			final SourceArchive sourceArchive);
 
-	/**
+    # /**
 	 * Notification that the program architecture associated with the specified
 	 * dataTypeManager has changed.
 	 * 
@@ -147,7 +147,7 @@ public interface DataTypeManagerChangeListener {
 	 */
 	public void programArchitectureChanged(DataTypeManager dataTypeManager);
 
-	/**
+    # /**
 	 * Notification that the specified datatype manager has been restored to a 
 	 * previous state.  NOTE: this notification may duplicate the {@link DomainObjectEvent#RESTORED}
 	 * employed by {@link DataTypeManagerDomainObject} cases.

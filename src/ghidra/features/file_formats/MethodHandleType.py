@@ -19,27 +19,27 @@ import java.lang.reflect.Field;
 
 public final class MethodHandleType {
 
-	/** a setter for a given static field. */
+    # /** a setter for a given static field. */
 	public final static short kStaticPut = 0x0000;
-	/**  a getter for a given static field. */
+    # /**  a getter for a given static field. */
 	public final static short kStaticGet = 0x0001;
-	/** a setter for a given instance field. */
+    # /** a setter for a given instance field. */
 	public final static short kInstancePut = 0x0002;
-	/** a getter for a given instance field. */
+    # /** a getter for a given instance field. */
 	public final static short kInstanceGet = 0x0003;
-	/** an invoker for a given static method. */
+    # /** an invoker for a given static method. */
 	public final static short kInvokeStatic = 0x0004;
-	/**
+    # /**
 	 * invoke_instance : an invoker for a given instance method.
 	 * This can be any non-static method on any class (or interface) 
 	 * except for ?<init>?.
 	 */
 	public final static short kInvokeInstance = 0x0005;
-	/** an invoker for a given constructor. */
+    # /** an invoker for a given constructor. */
 	public final static short kInvokeConstructor = 0x0006;
-	/** an invoker for a direct (special) method. */
+    # /** an invoker for a direct (special) method. */
 	public final static short kInvokeDirect = 0x0007;
-	/** an invoker for an interface method. */
+    # /** an invoker for an interface method. */
 	public final static short kInvokeInterface = 0x0008;
 	public final static short kLast = kInvokeInterface;
 

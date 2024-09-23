@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.*;
+
 import java.nio.charset.StandardCharsets;
 
 import ghidra.formats.gfilesystem.FSUtilities;

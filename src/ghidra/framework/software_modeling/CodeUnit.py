@@ -33,56 +33,56 @@ import ghidra.program.model.util.PropertySet;
  */
 public interface CodeUnit extends MemBuffer, PropertySet {
 
-	/**
+    # /**
 	 * Indicator for a mnemonic (versus an operand).
 	 */
 	public final static int MNEMONIC = -1;
 
 	public static final int NO_COMMENT = -1;
-	/**
+    # /**
 	 * comment type for end of line
 	 */
 	public static final int EOL_COMMENT = 0;
-	/**
+    # /**
 	 * comment type that goes before a code unit
 	 */
 	public static final int PRE_COMMENT = 1;
-	/**
+    # /**
 	 * comment type that follows after a code unit
 	 */
 	public static final int POST_COMMENT = 2;
-	/**
+    # /**
 	 * Property name for plate comment type
 	 */
 	public static final int PLATE_COMMENT = 3;
-	/**
+    # /**
 	 * Property name for repeatable comment type
 	 */
 	public static final int REPEATABLE_COMMENT = 4;
 
-//	/**
+//    # /**
 //	 * Property type for fall through property
 //	 */
 //	public static final int FALL_THROUGH = 4;
 
-	/**
+    # /**
 	 * Any comment property.
 	 */
 	public static final String COMMENT_PROPERTY = "COMMENT__GHIDRA_";
-	/** 
+    # /** 
 	 * Property name for vertical space formatting
 	 */
 	public static final String SPACE_PROPERTY = "Space";
-	/**
+    # /**
 	 * Property name for code units that are instructions
 	 */
 	public static final String INSTRUCTION_PROPERTY = "INSTRUCTION__GHIDRA_";
-	/**
+    # /**
 	 * Property name for code units that are defined data
 	 */
 	public static final String DEFINED_DATA_PROPERTY = "DEFINED_DATA__GHIDRA_";
 
-	/**
+    # /**
 	 * Get the string representation of the starting address for
 	 * this code unit.
 	 * @param showBlockName true if the string should include the memory block name
@@ -92,41 +92,41 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public String getAddressString(boolean showBlockName, boolean pad);
 
-	/**
+    # /**
 	 * Get the label for this code unit.
 	 */
 	public String getLabel();
 
-	/**
+    # /**
 	 * Get the Symbols for this code unit.
 	 * @throws ConcurrentModificationException if this object is no
 	 * longer valid.
 	 */
 	public Symbol[] getSymbols();
 
-	/**
+    # /**
 	 * Get the Primary Symbol for this code unit.
 	 * @throws ConcurrentModificationException if this object is no
 	 * longer valid.
 	 */
 	public Symbol getPrimarySymbol();
 
-	/**
+    # /**
 	 * Get the starting address for this code unit.
 	 */
 	public Address getMinAddress();
 
-	/**
+    # /**
 	 * Get the ending address for this code unit.
 	 */
 	public Address getMaxAddress();
 
-	/**
+    # /**
 	 * Get the mnemonic for this code unit, e.g., MOV, JMP
 	 */
 	public String getMnemonicString();
 
-	/**
+    # /**
 	 * Get the comment for the given type
 	 *
 	 * @param commentType either EOL_COMMENT, PRE_COMMENT, 
@@ -138,7 +138,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public String getComment(int commentType);
 
-	/**
+    # /**
 	 * Get the comment for the given type and parse it into an array of strings
 	 * such that each line is its own string.
 	 *
@@ -152,7 +152,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public String[] getCommentAsArray(int commentType);
 
-	/**
+    # /**
 	 * Set the comment for the given comment type.  Passing <code>null</code> clears the comment
 	 *
 	 * @param commentType either EOL_COMMENT, PRE_COMMENT, 
@@ -164,7 +164,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public void setComment(int commentType, String comment);
 
-	/**
+    # /**
 	 * Set the comment (with each line in its own string) for the given comment type
 	 *
 	 * @param commentType either EOL_COMMENT, PRE_COMMENT, 
@@ -175,7 +175,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public void setCommentAsArray(int commentType, String[] comment);
 
-	/**
+    # /**
 	 * Get length of this code unit.  
 	 * NOTE: If an {@link Instruction#isLengthOverridden() instruction length-override} is
 	 * set this method will return the reduced length.
@@ -183,7 +183,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public int getLength();
 
-	/**
+    # /**
 	 * Get the bytes that make up this code unit.
 	 * NOTE: If an {@link Instruction#isLengthOverridden() instruction length-override} is
 	 * set this method will not return all bytes associated with the 
@@ -194,7 +194,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public byte[] getBytes() throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Copies max(buffer.length, code unit length) bytes into buffer starting at location offset in buffer.
 	 * @param buffer byte array to copy into
 	 * @param bufferOffset offset in byte array the copy will start
@@ -202,13 +202,13 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public void getBytesInCodeUnit(byte[] buffer, int bufferOffset) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Returns true if address is contained in the range of this codeUnit
 	 * @param testAddr the address to test.
 	 */
 	public boolean contains(Address testAddr);
 
-	/**
+    # /**
 	   * Compares the given address to the address range of this node.
 	   *
 	   * @param addr address to compare.
@@ -218,7 +218,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	   */
 	public int compareTo(Address addr);
 
-	/**
+    # /**
 	 * Add a reference to the mnemonic for this code unit.
 	 * @param refAddr address to add as a reference.
 	 * @param refType the type of reference to add.
@@ -226,32 +226,32 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	*/
 	public void addMnemonicReference(Address refAddr, RefType refType, SourceType sourceType);
 
-	/**
+    # /**
 	 * Remove a reference to the mnemonic for this code unit.
 	 * @param refAddr the address to remove as a reference.
 	 */
 	public void removeMnemonicReference(Address refAddr);
 
-	/**
+    # /**
 	* Get references for the mnemonic for this code unit.
 	* @return an array of memory references. A zero length array will be 
 	* returned if there are no references for the mnemonic.
 	*/
 	public Reference[] getMnemonicReferences();
 
-	/**
+    # /**
 	 * Get the references for the operand index.
 	 * @param index operand index (0 is the first operand)
 	 */
 	public Reference[] getOperandReferences(int index);
 
-	/**
+    # /**
 	 * Get the primary reference for the operand index.
 	 * @param index operand index (0 is the first operand)
 	 */
 	public Reference getPrimaryReference(int index);
 
-	/**
+    # /**
 	 * Add a memory reference to the operand at the given index.
 	 * @param index operand index
 	 * @param refAddr reference address
@@ -261,45 +261,45 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	public void addOperandReference(int index, Address refAddr, RefType type,
 			SourceType sourceType);
 
-	/**
+    # /**
 	 * Remove a reference to the operand.
 	 * @param index operand index
 	 * @param refAddr address referencing the operand
 	 */
 	public void removeOperandReference(int index, Address refAddr);
 
-	/**
+    # /**
 	 * Get ALL memory references FROM this code unit.
 	 * @return an array of memory references from this codeUnit or an empty array
 	 * if there are no references.
 	 */
 	public Reference[] getReferencesFrom();
 
-	/**
+    # /**
 	 * Get an iterator over all references TO this code unit.
 	 */
 	public ReferenceIterator getReferenceIteratorTo();
 
-	/**
+    # /**
 	 * Returns the program that generated this CodeUnit.
 	 */
 	public Program getProgram();
 
 	//////////////////////////////////////////////////////////////////////////
-	/**
+    # /**
 	 * Gets the external reference (if any) at the opIndex
 	 * @param opIndex the operand index to look for external references
 	 * @return the external reference at the operand or null if none exists.
 	 */
 	public ExternalReference getExternalReference(int opIndex);
 
-	/**
+    # /**
 	 * Remove external reference (if any) at the given opIndex
 	 * opIndex the index of the operand from which to remove any external reference.
 	 */
 	public void removeExternalReference(int opIndex);
 
-	/**
+    # /**
 	 * Sets a memory reference to be the primary reference at its
 	 * address/opIndex location. The primary reference is the one that
 	 * is used in the getOperandRepresentation() method.
@@ -307,7 +307,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public void setPrimaryMemoryReference(Reference ref);
 
-	/**
+    # /**
 	 * Sets a stack reference at the <code>offset</code> on the
 	 * specified operand index, which effectively substitutes the previous
 	 * operation interpretation
@@ -323,7 +323,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public void setStackReference(int opIndex, int offset, SourceType sourceType, RefType refType);
 
-	/**
+    # /**
 	 * Sets a register reference at the <code>offset</code> on the
 	 * specified operand index, which effectively substitutes the previous
 	 * operation interpretation
@@ -340,12 +340,12 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	public void setRegisterReference(int opIndex, Register reg, SourceType sourceType,
 			RefType refType);
 
-	/**
+    # /**
 	 * Get the number of operands for this code unit.
 	 */
 	public int getNumOperands();
 
-	/**
+    # /**
 	 * Get the Address for the given operand index if one exists.  Data
 	 * objects have one operand (the value).
 	 * @param opIndex index of the operand.
@@ -356,7 +356,7 @@ public interface CodeUnit extends MemBuffer, PropertySet {
 	 */
 	public Address getAddress(int opIndex);
 
-	/**
+    # /**
 	 * Returns the scalar at the given operand index.  Data objects have
 	 * one operand (the value).
 	 * @param opIndex index of the operand.

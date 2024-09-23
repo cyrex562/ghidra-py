@@ -29,15 +29,15 @@ package ghidra.pcode.emu.unix;
  */
 public class EmuUnixFileStat {
 
-	/**
+    # /**
 	 * The mode bit indicating read permission
 	 */
 	public static final int MODE_R = 04;
-	/**
+    # /**
 	 * The mode bit indicating write permission
 	 */
 	public static final int MODE_W = 02;
-	/**
+    # /**
 	 * The mode bit indicating execute permission
 	 */
 	public static final int MODE_X = 01;
@@ -60,7 +60,7 @@ public class EmuUnixFileStat {
 	public long st_ctim_sec;
 	public long st_ctim_nsec;
 
-	/**
+    # /**
 	 * Check if the given user has the requested permissions on the file described by this stat
 	 * 
 	 * @param req the requested permissions

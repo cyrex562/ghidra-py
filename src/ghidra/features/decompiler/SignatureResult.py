@@ -39,7 +39,7 @@ public class SignatureResult {
 	public boolean hasunimplemented;	// Function has unimplemented instructions
 	public boolean hasbaddata;			// Instruction flow went into baddata
 
-	/**
+    # /**
 	 * Decode a sequence of raw feature hashes associated with a specific function from a stream.
 	 * The stream may optionally include addresses of called functions.
 	 * @param decoder is the stream decoder

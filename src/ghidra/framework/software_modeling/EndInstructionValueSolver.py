@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.expr;
 
 import java.util.Map;
@@ -22,16 +22,16 @@ import ghidra.app.plugin.assembler.sleigh.sem.*;
 import ghidra.app.plugin.processors.sleigh.expression.EndInstructionValue;
 
 # /**
- * "Solves" expressions of {@code inst_next}
- * 
- * <p>
- * Works like the constant solver, but takes the value of {@code inst_next}, which is given by the
- * assembly address and the resulting instruction length.
- * 
- * <p>
- * <b>NOTE:</b> This solver requires backfill, since the value of {@code inst_next} is not known
- * until possible prefixes have been considered.
- */
+# * "Solves" expressions of {@code inst_next}
+# * 
+# * <p>
+# * Works like the constant solver, but takes the value of {@code inst_next}, which is given by the
+# * assembly address and the resulting instruction length.
+# * 
+# * <p>
+# * <b>NOTE:</b> This solver requires backfill, since the value of {@code inst_next} is not known
+# * until possible prefixes have been considered.
+# */
 public class EndInstructionValueSolver extends AbstractExpressionSolver<EndInstructionValue> {
 
 	public EndInstructionValueSolver() {
@@ -45,7 +45,7 @@ public class EndInstructionValueSolver extends AbstractExpressionSolver<EndInstr
 			throws NeedsBackfillException {
 		throw new AssertionError("INTERNAL: Should never be asked to solve for " +
 			AbstractAssemblyTreeResolver.INST_NEXT);
-		/**
+	    # /**
 		 * I suppose we could instead throw NeedsBackfillException(INST_NEXT) here, too, but this
 		 * serves as a sanity check on the SLEIGH spec. I can't think of a good reason to try to
 		 * solve INST_NEXT == const.
@@ -72,7 +72,7 @@ public class EndInstructionValueSolver extends AbstractExpressionSolver<EndInstr
 			AssemblyResolvedPatterns rc) {
 		Long instNext = vals.get(AbstractAssemblyTreeResolver.INST_NEXT);
 		if (instNext == null) {
-			/**
+		    # /**
 			 * This method is used in forward state construction, so just leave unknown. This may
 			 * cause unresolvable trees to get generated, but we can't know that until we try to
 			 * resolve them.

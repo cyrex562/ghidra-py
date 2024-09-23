@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import db.*;

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.docking.settings.Settings;
@@ -38,7 +38,7 @@ class ArrayDB extends DataTypeDB implements Array {
 	private ArrayDBAdapter adapter;
 	private int elementLength; // lazy initialization
 
-	/**
+    # /**
 	 * Constructor
 	 * @param dataMgr
 	 * @param cache
@@ -369,7 +369,7 @@ class ArrayDB extends DataTypeDB implements Array {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#setCategoryPath(ghidra.program.model.data.CategoryPath)
 	 *
 	 * Note: this does get called, but in a tricky way.  If externally, someone calls

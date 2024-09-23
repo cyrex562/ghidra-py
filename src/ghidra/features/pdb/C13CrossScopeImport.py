@@ -39,7 +39,7 @@ public class C13CrossScopeImport {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the offset to the module file pathname in the filename records
 	 * @return the offset of the module file pathname
 	 */
@@ -47,7 +47,7 @@ public class C13CrossScopeImport {
 		return offsetObjectFilePath;
 	}
 
-	/**
+    # /**
 	 * Returns the number of cross references
 	 * @return the number of cross references
 	 */
@@ -55,7 +55,7 @@ public class C13CrossScopeImport {
 		return numCrossReferences;
 	}
 
-	/**
+    # /**
 	 * Returns the list of cross-references.  Not sure exactly what these are at this time
 	 * @return the cross-references
 	 */

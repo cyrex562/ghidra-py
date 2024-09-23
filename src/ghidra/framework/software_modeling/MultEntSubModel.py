@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import java.util.*;
@@ -26,17 +26,17 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <CODE>MultEntSubModel</CODE> (M-model) defines subroutines which do not share code with
- * any other subroutine and may have one or more entry points. Each entry-
- * points represent either a source or called entry-point.
- * <P>
- * MODEL-M subroutines should be used to determine which subroutine(s) contains
- * a particular instruction.
- * Since model-M subroutines yield the largest subroutines, they should be particular useful
- * in the process of program slicing -- the process of splitting the program into modules
- * or subroutine cliques -- in order to begin to understand the structure and functionality
- * of the program.
- */
+# * <CODE>MultEntSubModel</CODE> (M-model) defines subroutines which do not share code with
+# * any other subroutine and may have one or more entry points. Each entry-
+# * points represent either a source or called entry-point.
+# * <P>
+# * MODEL-M subroutines should be used to determine which subroutine(s) contains
+# * a particular instruction.
+# * Since model-M subroutines yield the largest subroutines, they should be particular useful
+# * in the process of program slicing -- the process of splitting the program into modules
+# * or subroutine cliques -- in order to begin to understand the structure and functionality
+# * of the program.
+# */
 public class MultEntSubModel implements SubroutineBlockModel {
 
 	public static final String NAME = "Multiple Entry";
@@ -48,7 +48,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 	private CodeBlockModel bbModel;           // basic block model
 	protected final boolean includeExternals;
 
-	/**
+    # /**
 	 * Construct a <CODE>MultEntSubModel</CODE> for a program.
 	 *
 	 * @param program program to create blocks from.
@@ -57,7 +57,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		this(program, false);
 	}
 
-	/**
+    # /**
 	 * Construct a <CODE>MultEntSubModel</CODE> for a program.
 	 * @param program program to create blocks from.
 	 * @param includeExternals external blocks will be included if true
@@ -69,7 +69,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		foundMSubs = new AddressObjectMap();
 	}
 
-	/**
+    # /**
 	 * Get the code block that has an entry point at addr.
 	 *
 	 * @param addr one of the entry points for a Model-M subroutine
@@ -99,7 +99,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the M-Model subroutine address set which contains the specified address.
 	 * This method also identifies the entry points and caches the resulting CodeBlock.
 	 *
@@ -243,7 +243,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the MultEntSubModel Code Block that contains the address.
 	 *
 	 * @param addr   Address to find a containing block.
@@ -263,7 +263,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return block;
 	}
 
-	/**
+    # /**
 	 * Returns the one code block contained by addr (only for
 	 *  a model that has shared subroutines would this method
 	 *  return more than one code block)
@@ -286,7 +286,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return blocks;
 	}
 
-	/**
+    # /**
 	 * Get an iterator over the code blocks in the entire program.
 	 * @param monitor task monitor which allows user to cancel operation.
 	 * @throws CancelledException if the monitor cancels the operation.
@@ -296,7 +296,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return new MultEntSubIterator(this, monitor);
 	}
 
-	/**
+    # /**
 	 * Get an iterator over CodeBlocks which overlap the specified address set.
 	 *
 	 * @param addrSet   an address set within program
@@ -309,7 +309,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return new MultEntSubIterator(this, addrSet, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getProgram()
 	 */
 	@Override
@@ -317,7 +317,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return program;
 	}
 
-	/**
+    # /**
 	 * Returns the listing associated with this block model.
 	 * @return the listing associated with this block model.
 	 */
@@ -325,7 +325,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return listing;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getName(ghidra.program.model.block.CodeBlock)
 	 */
 	@Override
@@ -350,7 +350,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return "SOURCE_SUB" + start.toString();
 	}
 
-	/**
+    # /**
 	 * Return in general how things flow out of this node.
 	 * This method exists for the SIMPLEBLOCK model.
 	 *
@@ -383,7 +383,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return RefType.FLOW;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getSources(ghidra.program.model.block.CodeBlock, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -396,7 +396,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return new SubroutineSourceReferenceIterator(block, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getNumSources(ghidra.program.model.block.CodeBlock, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -409,7 +409,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return SubroutineSourceReferenceIterator.getNumSources(block, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getDestinations(ghidra.program.model.block.CodeBlock, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -423,7 +423,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return new SubroutineDestReferenceIterator(block, monitor);
 	}
 
-	/**
+    # /**
 	 * Get number of destination references flowing out of this subroutine (block).
 	 * All Calls from this block, and all external FlowType block references
 	 * from this block are counted.
@@ -442,7 +442,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return SubroutineDestReferenceIterator.getNumDestinations(block, monitor);
 	}
 
-	/**
+    # /**
 	 *  Compute an address set that represents all the addresses contained
 	 *  in all instructions that are part of this block
 	 *
@@ -457,7 +457,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return new AddressSet(block);
 	}
 
-	/**
+    # /**
 	 *  Gets a subroutine from the cache containing addr.  If none there, returns null.
 	 *  It is assumed that an address will only occur within a single MSub
 	 */
@@ -466,7 +466,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return mapObjs.length == 0 ? null : (CodeBlock) mapObjs[0];
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getBasicBlockModel()
 	 */
 	@Override
@@ -477,7 +477,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return bbModel;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getName()
 	 */
 	@Override
@@ -485,7 +485,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return NAME;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.SubroutineBlockModel#getBaseSubroutineModel()
 	 */
 	@Override
@@ -493,7 +493,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return this;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#allowsBlockOverlap()
 	 */
 	@Override
@@ -501,7 +501,7 @@ public class MultEntSubModel implements SubroutineBlockModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#externalsIncluded()
 	 */
 	@Override

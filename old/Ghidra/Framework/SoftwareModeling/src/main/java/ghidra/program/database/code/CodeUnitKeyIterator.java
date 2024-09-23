@@ -20,7 +20,7 @@ import ghidra.program.database.map.AddressKeyIterator;
 import ghidra.program.model.listing.CodeUnit;
 import ghidra.program.model.listing.CodeUnitIterator;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 /**

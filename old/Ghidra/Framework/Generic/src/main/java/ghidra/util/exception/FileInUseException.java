@@ -16,7 +16,7 @@
  */
 package ghidra.util.exception;
 
-import java.io.IOException;
+
 
 /**
  * <code>FileInUseException</code> indicates that there was contention

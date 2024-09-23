@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.golang.rtti;
 import static java.util.stream.Collectors.*;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 

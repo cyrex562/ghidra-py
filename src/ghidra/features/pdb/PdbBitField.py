@@ -28,7 +28,7 @@ public class PdbBitField extends BitFieldDataType {
 
 	// TODO: add support for big-endian
 
-	/**
+    # /**
 	 * Construct a PDB bitfield (not intended for direct use by DataTypeManager)
 	 * @param baseDataType fielfield base datatype cloned for target datatype manager
 	 * @param bitSize bitfield size in bits
@@ -58,7 +58,7 @@ public class PdbBitField extends BitFieldDataType {
 		return bitOffsetWithinBaseType % 8;
 	}
 
-	/**
+    # /**
 	 * Get the bit offset within the full base type
 	 * @return base type bit offset or -1 if unknown
 	 */

@@ -38,7 +38,7 @@ public class AssemblySelector {
 	protected Set<AssemblyParseResult> syntaxErrors = new TreeSet<>();
 	protected Set<AssemblyResolvedError> semanticErrors = new TreeSet<>();
 
-	/**
+    # /**
 	 * A comparator on instruction length (shortest first), then bits lexicographically
 	 */
 	protected Comparator<AssemblyResolvedPatterns> compareBySizeThenBits = (a, b) -> {
@@ -56,7 +56,7 @@ public class AssemblySelector {
 		return 0;
 	};
 
-	/**
+    # /**
 	 * Filter a collection of parse trees.
 	 * 
 	 * <p>
@@ -118,7 +118,7 @@ public class AssemblySelector {
 		return sorted;
 	}
 
-	/**
+    # /**
 	 * A resolved selection from the results given to
 	 * {@link AssemblySelector#select(AssemblyResolutionResults, AssemblyPatternBlock)}
 	 * 
@@ -128,7 +128,7 @@ public class AssemblySelector {
 	public record Selection(AssemblyPatternBlock ins, AssemblyPatternBlock ctx) {
 	}
 
-	/**
+    # /**
 	 * Select an instruction from the possible results.
 	 * 
 	 * <p>

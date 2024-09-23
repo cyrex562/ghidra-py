@@ -17,7 +17,7 @@ package ghidra.app.cmd.formats;
 
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.plugin.core.analysis.AnalysisWorker;
 import ghidra.app.plugin.core.analysis.AutoAnalysisManager;

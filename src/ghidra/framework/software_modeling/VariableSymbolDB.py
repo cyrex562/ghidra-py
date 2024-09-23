@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.program.database.DBObjectCache;
@@ -33,18 +33,18 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Symbol class for function variables.
- *
- * Symbol Data Usage:
- *   	String stringData - variable comment
- */
+# * Symbol class for function variables.
+# *
+# * Symbol Data Usage:
+# *   	String stringData - variable comment
+# */
 public class VariableSymbolDB extends SymbolDB {
 
 	private VariableStorage variableStorage;
 	private VariableStorageManagerDB variableMgr;
 	private SymbolType type;
 
-	/**
+    # /**
 	 * Constructs a new VariableSymbol
 	 * @param symbolMgr the symbol manager
 	 * @param cache symbol object cache
@@ -100,7 +100,7 @@ public class VariableSymbolDB extends SymbolDB {
 		return variableStorage;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#getSymbolType()
 	 */
 	@Override
@@ -115,7 +115,7 @@ public class VariableSymbolDB extends SymbolDB {
 		return isValid;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.SymbolDB#equals(java.lang.Object)
 	 */
 	@Override
@@ -124,7 +124,7 @@ public class VariableSymbolDB extends SymbolDB {
 		return obj == this;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#delete()
 	 */
 	@Override
@@ -146,7 +146,7 @@ public class VariableSymbolDB extends SymbolDB {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#getObject()
 	 */
 	@Override
@@ -158,7 +158,7 @@ public class VariableSymbolDB extends SymbolDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#isPrimary()
 	 */
 	@Override
@@ -178,7 +178,7 @@ public class VariableSymbolDB extends SymbolDB {
 					getParentNamespace().getID());
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#getProgramLocation()
 	 */
 	@Override
@@ -190,7 +190,7 @@ public class VariableSymbolDB extends SymbolDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#isValidParent(ghidra.program.model.symbol.Namespace)
 	 */
 	@Override
@@ -269,7 +269,7 @@ public class VariableSymbolDB extends SymbolDB {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * Change the storage address and data-type associated with this
 	 * variable symbol.
 	 * @param newStorage

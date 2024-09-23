@@ -79,7 +79,7 @@ public class RTTIClassRecoverer extends RecoveredClassHelper {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Get the version of Ghidra that was used to analyze this program
 	 * @return a string containing the version number of Ghidra used to analyze the current program
 	 */
@@ -98,7 +98,7 @@ public class RTTIClassRecoverer extends RecoveredClassHelper {
 		return new ArrayList<RecoveredClass>();
 	}
 
-	/**
+    # /**
 	 * Method to promote the namespace is a class namespace. 
 	 * @param namespace the namespace for the vftable
 	 * @return true if namespace is (now) a class namespace or false if it could not be promoted.
@@ -116,7 +116,7 @@ public class RTTIClassRecoverer extends RecoveredClassHelper {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to iterate over all the RecoveredClass objects and see if there is an existing class structure data type already
 	 * if so, add it to the RecoveredClass object
 	 * @param recoveredClasses List of RecoveredClass objects
@@ -197,7 +197,7 @@ public class RTTIClassRecoverer extends RecoveredClassHelper {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to get class data information from destructors if a class has no constructors
 	 * @param recoveredClasses list of classes
 	 * @throws CancelledException if cancelled

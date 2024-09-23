@@ -18,7 +18,7 @@ package generic.util;
 
 import ghidra.util.exception.AssertException;
 
-import java.io.*;
+
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;

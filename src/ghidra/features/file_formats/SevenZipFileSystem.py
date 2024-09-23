@@ -19,7 +19,7 @@ package ghidra.file.formats.sevenzip;
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.io.FilenameUtils;
@@ -55,7 +55,7 @@ public class SevenZipFileSystem extends AbstractFileSystem<ISimpleInArchiveItem>
 		super(fsrl, fsService);
 	}
 
-	/**
+    # /**
 	 * Opens the specified sevenzip container file and initializes this file system with the
 	 * contents.
 	 * 
@@ -324,7 +324,7 @@ public class SevenZipFileSystem extends AbstractFileSystem<ISimpleInArchiveItem>
 	}
 
 	//----------------------------------------------------------------------------------------------
-	/**
+    # /**
 	 * Implements SevenZip bulk extract callback.
 	 * <p>
 	 * For each file in the archive, SZ will call this class's 1) getStream(), 2) prepare(), 
@@ -507,7 +507,7 @@ public class SevenZipFileSystem extends AbstractFileSystem<ISimpleInArchiveItem>
 
 	}
 
-	/**
+    # /**
 	 * This class is has the same layout and hacks re: setting currentIndex as {@link SZExtractCallback},
 	 * but is specialized to test passwords against the encrypted entries in the file. 
 	 */

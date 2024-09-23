@@ -18,7 +18,7 @@ package ghidra.app.util.bin;
 import static org.junit.Assert.assertEquals;
 
 import java.io.EOFException;
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import org.junit.*;

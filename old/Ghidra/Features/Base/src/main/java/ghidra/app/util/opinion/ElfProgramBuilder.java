@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.opinion;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.nio.file.AccessMode;
 import java.text.NumberFormat;

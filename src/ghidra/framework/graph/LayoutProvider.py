@@ -42,7 +42,7 @@ public interface LayoutProvider<V extends VisualVertex,
 								G extends VisualGraph<V, E>> {
 //@formatter:on
 
-	/**
+    # /**
 	 * Returns a new instance of the layout that this class provides
 	 * 
 	 * @param graph the graph
@@ -53,14 +53,14 @@ public interface LayoutProvider<V extends VisualVertex,
 	public VisualGraphLayout<V, E> getLayout(G graph, TaskMonitor monitor)
 			throws CancelledException;
 
-	/**
+    # /**
 	 * Returns the name of this layout
 	 * 
 	 * @return the name of this layout
 	 */
 	public String getLayoutName();
 
-	/**
+    # /**
 	 * Returns an icon that can be used to show the provider a menu or toolbar.  This may 
 	 * return null, as an icon is not a requirement.
 	 * 
@@ -68,7 +68,7 @@ public interface LayoutProvider<V extends VisualVertex,
 	 */
 	public Icon getActionIcon();
 
-	/**
+    # /**
 	 * Returns an arbitrary value that is relative to other LayoutProviders.  The higher the 
 	 * value the more preferred the provider will be over other providers.
 	 * 

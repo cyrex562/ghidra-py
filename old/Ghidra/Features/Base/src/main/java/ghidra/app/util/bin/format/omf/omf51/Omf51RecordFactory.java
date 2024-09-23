@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.omf.omf51;
 
 import static ghidra.app.util.bin.format.omf.omf51.Omf51RecordTypes.*;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.util.bin.BinaryReader;

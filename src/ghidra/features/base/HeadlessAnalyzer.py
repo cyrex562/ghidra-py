@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.headless;
 
-import java.io.*;
+
 import java.net.*;
 import java.util.*;
 import java.util.regex.Pattern;

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 
 # /**
  * Image Function Entry data seems to be the main data PData record of the {@link DebugData}.
@@ -26,7 +26,7 @@ public class ImageFunctionEntry {
 	private long endingAddress;
 	private long endOfPrologueAddress;
 
-	/**
+    # /**
 	 * Returns the starting address.
 	 * @return the starting address.
 	 */
@@ -34,7 +34,7 @@ public class ImageFunctionEntry {
 		return startingAddress;
 	}
 
-	/**
+    # /**
 	 * Returns the ending address.
 	 * @return the ending address.
 	 */
@@ -42,7 +42,7 @@ public class ImageFunctionEntry {
 		return endingAddress;
 	}
 
-	/**
+    # /**
 	 * Returns the end-of-prologue address.
 	 * @return the end-of-prologue address.
 	 */
@@ -50,7 +50,7 @@ public class ImageFunctionEntry {
 		return endOfPrologueAddress;
 	}
 
-	/**
+    # /**
 	 * Deserializes the {@link ImageFunctionEntry} information from a {@link PdbByteReader}
 	 * @param reader the {@link PdbByteReader} from which to parse the data.
 	 * @throws PdbException upon problem parsing the data.
@@ -73,7 +73,7 @@ public class ImageFunctionEntry {
 		}
 	}
 
-	/**
+    # /**
 	 * Dumps this class to Writer.  This package-protected method is for debugging only
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer

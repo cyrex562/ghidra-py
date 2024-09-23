@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -61,7 +61,7 @@ public class AbstractLinesC13Section extends C13Section {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the offCon value.  Note that we are not certain, but think it is the offset
 	 * within the particular memory segment for a chuck of records
 	 * @return the offCon value
@@ -70,7 +70,7 @@ public class AbstractLinesC13Section extends C13Section {
 		return offCon;
 	}
 
-	/**
+    # /**
 	 * Returns the segment value.  We believe this is the segment that goes with the offCon
 	 * value pertaining to a chunk of records
 	 * @return the segment
@@ -79,7 +79,7 @@ public class AbstractLinesC13Section extends C13Section {
 		return segCon;
 	}
 
-	/**
+    # /**
 	 * Flags for the chunk of records.  We have not determined what any of the flag values
 	 * represent
 	 * @return the flags
@@ -88,7 +88,7 @@ public class AbstractLinesC13Section extends C13Section {
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Returns the lenCon value.  We are not certain, but believe this to be the length (bytes
 	 * in memory) of the chunk of records
 	 * @return the lenCon
@@ -97,7 +97,7 @@ public class AbstractLinesC13Section extends C13Section {
 		return lenCon;
 	}
 
-	/**
+    # /**
 	 * Returns a list of file records for this chunk
 	 * @return the file records
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.jython;
 
-import java.io.IOException;
+
 
 import org.python.util.jython;
 

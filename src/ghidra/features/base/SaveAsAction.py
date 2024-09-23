@@ -23,7 +23,7 @@ import ghidra.app.plugin.core.datamgr.tree.*;
 import ghidra.util.Msg;
 import ghidra.util.exception.DuplicateFileException;
 
-import java.io.IOException;
+
 
 import javax.swing.tree.TreePath;
 

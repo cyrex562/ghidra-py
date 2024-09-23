@@ -32,7 +32,7 @@ public class ClangFuncNameToken extends ClangToken {
 		op = null;
 	}
 
-	/**
+    # /**
 	 * @return the HighFunction object associated with this name
 	 */
 	public HighFunction getHighFunction() {

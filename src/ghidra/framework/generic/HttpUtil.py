@@ -15,7 +15,7 @@
  */
 package ghidra.net.http;
 
-import java.io.*;
+
 import java.net.*;
 import java.util.Properties;
 
@@ -25,7 +25,7 @@ import ghidra.util.Msg;
 public class HttpUtil {
 
 
-	/**
+    # /**
 	 * Execute an HTTP/HTTPS GET request and return the resulting HttpURLConnection.
 	 * @param httpUrlString HTTP/HTTPS URL
 	 * @param httpRequestProperties optional HTTP request header values to be included (may be null)
@@ -91,7 +91,7 @@ public class HttpUtil {
 		return c;
 	}
 
-	/**
+    # /**
 	 * Download a file by executing an HTTP/HTTPS GET request.
 	 * @param httpUrlString HTTP/HTTPS URL
 	 * @param httpRequestProperties optional HTTP request header values to be included (may be null)

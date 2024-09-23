@@ -101,7 +101,7 @@ public abstract class Stringable implements ExtensionPoint, DisplayStringProvide
 		getNameMap().put(shortName, getClass());
 	}
 
-	/**
+    # /**
 	 * getDisplayString() returns a display string for this stringable.<br>
 	 * Note: It must not return a null. Instead it should return an empty string if it has no value.
 	 */
@@ -153,7 +153,7 @@ public abstract class Stringable implements ExtensionPoint, DisplayStringProvide
 		return getDisplayString();
 	}
 
-	/**
+    # /**
 	 * Encodes a comment string that may contain tabs, carriage returns, and linefeeds so that it 
 	 * can be saved as part of a Stringable. Tabs, carriage returns, and linefeeds are typically 
 	 * used as delimiters for separating tokens within the Stringable.
@@ -203,7 +203,7 @@ public abstract class Stringable implements ExtensionPoint, DisplayStringProvide
 		return startIndex;
 	}
 
-	/**
+    # /**
 	 * Decodes a encoded comment string that may contain encoded tabs, carriage returns, and 
 	 * linefeeds back to its original form where tabs, carriage returns, and linefeeds were 
 	 * not intended as delimiters for separating tokens within a Stringable.

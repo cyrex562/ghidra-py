@@ -23,28 +23,28 @@ public class RMIServerPortFactory {
 
 	private int basePort;
 
-	/**
+    # /**
 	 * Construct port factory using specified basePort
 	 */
 	public RMIServerPortFactory(int basePort) {
 		this.basePort = basePort;
 	}
 
-	/**
+    # /**
 	 * Returns RMI Registry port
 	 */
 	public int getRMIRegistryPort() {
 		return basePort + REGISTERY_PORT;
 	}
 
-	/**
+    # /**
 	 * Returns the SSL-protected RMI port.
 	 */
 	public int getRMISSLPort() {
 		return basePort + RMI_SSL_PORT;
 	}
 
-	/**
+    # /**
 	 * Returns the SSL Stream port
 	 */
 	public int getStreamPort() {

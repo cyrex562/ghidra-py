@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -76,7 +76,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 	protected Lock lock = new Lock("Domain Object");
 	private long modificationNumber = 1;
 
-	/**
+    # /**
 	 * Construct a new DomainObjectAdapter. If construction of this object fails, be sure to release
 	 * with consumer.
 	 *
@@ -98,7 +98,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		}
 	}
 
-	/**
+    # /**
 	 * Invalidates any caching in a program and generate a {@link DomainObjectEvent#RESTORED}
 	 * event. 
 	 * NOTE: Over-using this method can adversely affect system performance.
@@ -130,7 +130,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		return domainFile;
 	}
 
-	/**
+    # /**
 	 * Returns the hidden user-filesystem associated with this objects domain file, or null if
 	 * unknown.
 	 *
@@ -193,7 +193,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		return temporary;
 	}
 
-	/**
+    # /**
 	 * Set the {@link DomainFile} associated with this instance.
 	 * @param df domain file
 	 * @throws DomainObjectException if a severe failure occurs during the operation.
@@ -237,7 +237,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		}
 	}
 
-	/**
+    # /**
 	 * Return "changed" status
 	 *
 	 * @return true if this object has changed
@@ -306,7 +306,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 	@Override
 	public abstract String getDescription();
 
-	/**
+    # /**
 	 * Fires the specified event.
 	 *
 	 * @param ev event to fire
@@ -377,7 +377,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the given consumer is using this object.
 	 */
 	@Override
@@ -394,7 +394,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the {@link ContentHandler} associated with the specified content-type.
 	 *
 	 * @param contentType domain object content type
@@ -411,7 +411,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		return ch;
 	}
 
-	/**
+    # /**
 	 * Get the {@link ContentHandler} associated with the specified domain object class
 	 *
 	 * @param dobjClass domain object class
@@ -428,7 +428,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		return ch;
 	}
 
-	/**
+    # /**
 	 * Get the {@link ContentHandler} associated with the specified domain object
 	 *
 	 * @param dobj domain object
@@ -439,7 +439,7 @@ public abstract class DomainObjectAdapter implements DomainObject {
 		return getContentHandler(dobj.getClass());
 	}
 
-	/**
+    # /**
 	 * Get all {@link ContentHandler}s
 	 * @return collection of content handlers
 	 */

@@ -16,7 +16,7 @@
 package ghidra.feature.vt.gui.plugin;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.SwingUtilities;

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
@@ -26,10 +26,10 @@ import ghidra.program.model.listing.VariableStorage;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * 
- *
- * Varnodes and PcodeOps in a coherent graph structure
- */
+# * 
+# *
+# * Varnodes and PcodeOps in a coherent graph structure
+# */
 public class PcodeSyntaxTree implements PcodeFactory {
 
 	private AddressFactory addrFactory;
@@ -148,14 +148,14 @@ public class PcodeSyntaxTree implements PcodeFactory {
 		return new VariableStorage(datatypeManager.getProgram(), vn);
 	}
 
-	/**
+    # /**
 	 * @return an iterator for all Varnodes in the tree ordered by Address
 	 */
 	public Iterator<VarnodeAST> locRange() {
 		return vbank.locRange();
 	}
 
-	/**
+    # /**
 	 * return Iterator to all Varnodes in the indicated AddressSpace
 	 * @param spc -- AddressSpace to restrict Iterator to
 	 * @return -- Iterator to Varnodes
@@ -164,7 +164,7 @@ public class PcodeSyntaxTree implements PcodeFactory {
 		return vbank.locRange(spc);
 	}
 
-	/**
+    # /**
 	 * return all Varnodes that start at a given Address
 	 * @param addr -- Address of Varnodes
 	 * @return -- Iterator to Varnodes
@@ -173,7 +173,7 @@ public class PcodeSyntaxTree implements PcodeFactory {
 		return vbank.locRange(addr);
 	}
 
-	/**
+    # /**
 	 * return all Varnodes of a given size that start at a given Address
 	 * @param sz -- Size of Varnodes
 	 * @param addr -- Starting Address of Varnodes
@@ -183,7 +183,7 @@ public class PcodeSyntaxTree implements PcodeFactory {
 		return vbank.locRange(sz, addr);
 	}
 
-	/**
+    # /**
 	 * return first instance of a Varnode with given size, starting Address,
 	 * and bound to an instruction at the given Address
 	 * @param sz  -- size of Varnode
@@ -195,7 +195,7 @@ public class PcodeSyntaxTree implements PcodeFactory {
 		return vbank.find(sz, addr, pc, -1);
 	}
 
-	/**
+    # /**
 	 * return Varnode of given size and starting Address defined by a PcodeOp
 	 * with a given SequenceNumber
 	 * @param sz -- size of Varnode
@@ -207,7 +207,7 @@ public class PcodeSyntaxTree implements PcodeFactory {
 		return vbank.find(sz, addr, sq.getTarget(), sq.getTime());
 	}
 
-	/**
+    # /**
 	 * return Varnode of given size and starting Address, which is also an input
 	 * @param sz -- size of Varnode
 	 * @param addr -- starting Address of Varnode
@@ -221,7 +221,7 @@ public class PcodeSyntaxTree implements PcodeFactory {
 		return vbank.size();
 	}
 
-	/**
+    # /**
 	 * return all PcodeOps (alive or dead) ordered by SequenceNumber
 	 * @return -- Iterator to PcodeOps
 	 */
@@ -229,7 +229,7 @@ public class PcodeSyntaxTree implements PcodeFactory {
 		return opbank.allOrdered();
 	}
 
-	/**
+    # /**
 	 * return all PcodeOps associated with a particular instruction Address
 	 * @param addr -- Address of instruction generating PcodeOps
 	 * @return -- Iterator to PcodeOps

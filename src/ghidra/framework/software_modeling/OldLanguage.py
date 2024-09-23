@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.*;
@@ -45,7 +45,7 @@ class OldLanguage implements Language {
 
 	private final ResourceFile oldLangFile;
 
-	/**
+    # /**
 	 * Construct an old language. The resulting instance does not initialize the
 	 * address factory or register definitions until after the validate method
 	 * is invoked.
@@ -59,7 +59,7 @@ class OldLanguage implements Language {
 		readOldLanguage(true);
 	}
 
-	/**
+    # /**
 	 * Construct an old language from XML. Intended for test use only.
 	 * 
 	 * @param oldLanguageElement
@@ -76,7 +76,7 @@ class OldLanguage implements Language {
 		return getDescription() + "(Version " + getVersion() + ")";
 	}
 
-	/**
+    # /**
 	 * If instantiated from a file, this method must be invoked prior to the
 	 * factory handing out this instance. This will complete the parsing of the
 	 * old language file and the initialization of this instance.
@@ -179,7 +179,7 @@ class OldLanguage implements Language {
 		return false; // should not be needed for upgrade
 	}
 
-	/**
+    # /**
 	 * Returns language description associated with this old language.
 	 */
 	LanguageDescription getDescription() {
@@ -581,7 +581,7 @@ class OldLanguage implements Language {
 			version, 0, true, complierSpecList, null);
 	}
 
-	/**
+    # /**
 	 * If this old language corresponds to a legacy language which was tied to a
 	 * specific compiler specification, a suitable ID will be returned.
 	 * 

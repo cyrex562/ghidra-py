@@ -23,7 +23,7 @@
 //
 //@category FunctionID
 
-import java.io.*;
+
 import java.lang.management.ManagementFactory;
 import java.util.*;
 import java.util.Map.Entry;
@@ -139,7 +139,7 @@ public class MSLibBatchImportGenerator extends GhidraScript {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Recursively scans a directory for ".lib" files and adds them to either the
 	 * non_debug_files list or the debug_files list.
 	 * <p>
@@ -200,7 +200,7 @@ public class MSLibBatchImportGenerator extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts a file's path into forward-slash form.
 	 * <p>
 	 * @param f
@@ -214,7 +214,7 @@ public class MSLibBatchImportGenerator extends GhidraScript {
 		return s.replace('\\', '/');
 	}
 
-	/**
+    # /**
 	 * Returns the 'extension' of a 'filename.extension', or an empty string "" if not
 	 * present.
 	 * <p> 
@@ -235,7 +235,7 @@ public class MSLibBatchImportGenerator extends GhidraScript {
 		return cp < 0 ? s : s.substring(0, cp);
 	}
 
-	/**
+    # /**
 	 * Returns a string that represents the relative path (normalized to forward slashes)
 	 * from the {@code base} path to the {@code sub} path.  
 	 * 

@@ -15,7 +15,7 @@
  */
 package ghidra.server.remote;
 
-import java.io.IOException;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
@@ -53,7 +53,7 @@ public class RepositoryServerHandleImpl extends UnicastRemoteObject
 		return readOnly;
 	}
 
-	/**
+    # /**
 	 * Construct a repository server handle for a specific user.
 	 * @param user remote user
 	 * @param mgr repository manager
@@ -70,7 +70,7 @@ public class RepositoryServerHandleImpl extends UnicastRemoteObject
 		mgr.addHandle(this);
 	}
 
-	/**
+    # /**
 	 * RMI callback when instance becomes unreferenced by any remote client
 	 */
 	public void unreferenced() {

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.bootimg;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -62,7 +62,7 @@ public class BootImageHeaderV3 extends BootImageHeader {
 		return kernel_size;
 	}
 
-	/**
+    # /**
 	 * n = (kernel_size + page_size - 1) / page_size
 	 */
 	@Override
@@ -80,7 +80,7 @@ public class BootImageHeaderV3 extends BootImageHeader {
 		return ramdisk_size;
 	}
 
-	/**
+    # /**
 	 * m = (ramdisk_size + page_size - 1) / page_size
 	 */
 	@Override

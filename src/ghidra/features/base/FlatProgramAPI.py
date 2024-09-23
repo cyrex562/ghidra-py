@@ -15,7 +15,7 @@
  */
 package ghidra.program.flatapi;
 
-import java.io.*;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;

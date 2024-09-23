@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.headers;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.art.ArtHeader;
@@ -72,14 +72,14 @@ public class ArtHeader_009 extends ArtHeader {
 		return image_size_;
 	}
 
-	/**
+    # /**
 	 * The total delta that this image has been patched.
 	 */
 	public int getPatchDelta() {
 		return patch_delta_;
 	}
 
-	/**
+    # /**
 	 * Checksum of the oat file we link to for load time sanity check.
 	 */
 	@Override

@@ -16,7 +16,7 @@
 package ghidra.feature.fid.db;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArraySet;
 
@@ -47,7 +47,7 @@ public class FidFileManager {
 	private Set<FidFile> fidFiles;
 	private WeakSet<ChangeListener> listeners;
 
-	/**
+    # /**
 	 * Returns the singleton instance of the FidFileManager.
 	 */
 	public static FidFileManager getInstance() {
@@ -72,7 +72,7 @@ public class FidFileManager {
 		return fidFiles;
 	}
 
-	/**
+    # /**
 	 * Add user FidDb file
 	 * @param file
 	 * @return FidFile or null if invalid
@@ -104,7 +104,7 @@ public class FidFileManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all the FidFiles know to the application.
 	 */
 	public List<FidFile> getFidFiles() {
@@ -114,7 +114,7 @@ public class FidFileManager {
 		return files;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all the user added (non installation) Fid files.  This will
 	 * be files containing packed databases.
 	 */
@@ -130,7 +130,7 @@ public class FidFileManager {
 		return files;
 	}
 
-	/**
+    # /**
 	 * Opens all the Fid Databases applicable for the given language and returns a FidQueryService
 	 * which is a convenience for querying multiple databases at the same time.
 	 * @param language the language of the programs to be queried.
@@ -146,7 +146,7 @@ public class FidFileManager {
 		return new FidQueryService(fidFiles, language, openForUpdate);
 	}
 
-	/**
+    # /**
 	 * Creates a new FidDatabse and FidFile.
 	 * @param dbFile the file to where the fidDatabase should be created.  It must not exist.
 	 * @throws IOException If the new FidFile database could not be created.
@@ -160,7 +160,7 @@ public class FidFileManager {
 		notifyListeners();
 	}
 
-	/**
+    # /**
 	 * Removes the given FidFile from the application.  Note: this does not delete the file,
 	 * it only removes it from the applications list of knows FidFiles.
 	 * @param fidFile the fidFile to remove.
@@ -172,7 +172,7 @@ public class FidFileManager {
 		notifyListeners();
 	}
 
-	/**
+    # /**
 	 * Returns true if any FidFile database known to the application can support the given language.
 	 * @param language the language to test.
 	 * @return  true if any FidFile database known to the application can support the given language.
@@ -187,7 +187,7 @@ public class FidFileManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Adds a listener to be notified when the list of FidFiles change. NOTE: this object
 	 * uses a weak set, so you can't pass anonymous listeners or they will be immediately
 	 * garbage collected.
@@ -197,7 +197,7 @@ public class FidFileManager {
 		listeners.add(listener);
 	}
 
-	/**
+    # /**
 	 * Removes a listener to be notified when the list of FidFiles change.
 	 * @param listener the listener to no longer be notified.
 	 */

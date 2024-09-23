@@ -25,7 +25,7 @@ import static functioncalls.graph.FcgDirection.OUT;
  */
 public class FcgLevel implements Comparable<FcgLevel> {
 
-	/** A 1-based  */
+    # /** A 1-based  */
 	private int row;
 	private FcgDirection direction;
 
@@ -63,7 +63,7 @@ public class FcgLevel implements Comparable<FcgLevel> {
 		return direction;
 	}
 
-	/**
+    # /**
 	 * Returns true if this level represents the source level from which all other levels 
 	 * emanate, which is row 1.
 	 * 
@@ -73,7 +73,7 @@ public class FcgLevel implements Comparable<FcgLevel> {
 		return direction.isSource();
 	}
 
-	/**
+    # /**
 	 * Returns the parent level of this level.  The parent of a level has the same direction 
 	 * as this level, with a distance of one less than this level.
 	 * 
@@ -95,7 +95,7 @@ public class FcgLevel implements Comparable<FcgLevel> {
 		return new FcgLevel(newDistance, newDirection);
 	}
 
-	/**
+    # /**
 	 * Returns the child level of this level.  The child of a level has the same direction 
 	 * as this level, with a distance of one more than this level.
 	 * 
@@ -112,7 +112,7 @@ public class FcgLevel implements Comparable<FcgLevel> {
 		return child(direction);
 	}
 
-	/**
+    # /**
 	 * Returns true if this level is the immediate predecessor of the given other level.
 	 * 
 	 * <P>The <tt>source</tt> level is the parent of the first level in either direction.
@@ -133,7 +133,7 @@ public class FcgLevel implements Comparable<FcgLevel> {
 		return other.getDistance() - getDistance() == 1;
 	}
 
-	/**
+    # /**
 	 * Returns true if this level is the immediate successor of the given other level
 	 * 
 	 * @param other the other level that is a potential child level
@@ -143,7 +143,7 @@ public class FcgLevel implements Comparable<FcgLevel> {
 		return other.isParentOf(this);
 	}
 
-	/**
+    # /**
 	 * Returns the child level of this level.  The child of a level has the same direction 
 	 * as this level, with a distance of one more than this level.
 	 * 
@@ -197,7 +197,7 @@ public class FcgLevel implements Comparable<FcgLevel> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the row of this vertex 
 	 * @return the row of this vertex 
 	 */

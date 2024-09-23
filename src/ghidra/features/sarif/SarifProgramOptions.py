@@ -27,45 +27,45 @@ import ghidra.app.util.opinion.AbstractProgramLoader;
  *
  */
 public class SarifProgramOptions {
-	/**Flag to indicate reading/writing memory blocks*/
+    # /**Flag to indicate reading/writing memory blocks*/
 	public final static long OPT_MEMORY_BLOCKS = 0x00000001L;
-	/**Flag to indicate reading/writing memory contents*/
+    # /**Flag to indicate reading/writing memory contents*/
 	public final static long OPT_MEMORY_CONTENTS = 0x00000002L;
-	/**Flag to indicate reading/writing instructions*/
+    # /**Flag to indicate reading/writing instructions*/
 	public final static long OPT_CODE = 0x00000004L;
-	/**Flag to indicate reading/writing root*/
+    # /**Flag to indicate reading/writing root*/
 	public final static long OPT_DATA = 0x00000008L;
-	/**Flag to indicate reading/writing symbols*/
+    # /**Flag to indicate reading/writing symbols*/
 	public final static long OPT_SYMBOLS = 0x00000010L;
-	/**Flag to indicate reading/writing equates*/
+    # /**Flag to indicate reading/writing equates*/
 	public final static long OPT_EQUATES = 0x00000020L;
-	/**Flag to indicate reading/writing comments*/
+    # /**Flag to indicate reading/writing comments*/
 	public final static long OPT_COMMENTS = 0x00000040L;
-	/**Flag to indicate reading/writing properties*/
+    # /**Flag to indicate reading/writing properties*/
 	public final static long OPT_PROPERTIES = 0x00000080L;
-	/**Flag to indicate reading/writing trees*/
+    # /**Flag to indicate reading/writing trees*/
 	public final static long OPT_TREES = 0x00000100L;
-	/**Flag to indicate reading/writing empty program tree nodes*/
+    # /**Flag to indicate reading/writing empty program tree nodes*/
 	public final static long OPT_EMPTY_TREE_NODES = 0x00000200L;
-	/**Flag to indicate reading/writing references*/
+    # /**Flag to indicate reading/writing references*/
 	public final static long OPT_REFERENCES = 0x00000400L;
-	/**Flag to indicate reading/writing functions*/
+    # /**Flag to indicate reading/writing functions*/
 	public final static long OPT_FUNCTIONS = 0x00000800L;
-	/**
+    # /**
 	 * Used to signify that symbols should be overwritten when
 	 * necessary. This value is not being included in
 	 * the <code>ALL</code> constant.
 	 */
 	public final static long OVERWRITE_SYMBOLS = 0x20000000L;
 
-	/**
+    # /**
 	 * Used to signify that references should be overwritten when
 	 * necessary. This value is not being included in
 	 * the <code>ALL</code> constant.
 	 */
 	public final static long OVERWRITE_REFS = 0x40000000L;
 
-	/**
+    # /**
 	 * Used to signify that an existing program is being
 	 * updated. This value is not being included in
 	 * the <code>ALL</code> constant.
@@ -98,7 +98,7 @@ public class SarifProgramOptions {
 	private boolean applyProcDefinedLabels = false;
 	private boolean anchorProcDefinedLabels = true;
 
-	/**
+    # /**
 	 * Returns an array of importer options representing
 	 * the flags in this class.
 	 * @param isAddToProgram if true then adding to existing program
@@ -155,7 +155,7 @@ public class SarifProgramOptions {
 		return optionList;
 	}
 
-	/**
+    # /**
 	 * Sets the options. This method is not for defining the options, but
 	 * rather for setting the values of options. If invalid options
 	 * are passed in, then OptionException should be thrown.
@@ -251,7 +251,7 @@ public class SarifProgramOptions {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if importing to an existing program.
 	 * Importing to an existing program creates a new
 	 * set of potential conflicts. For example, memory block
@@ -263,7 +263,7 @@ public class SarifProgramOptions {
 		return addToProgram;
 	}
 
-	/**
+    # /**
 	 * If true, then instructions should be read/written.
 	 * @return true if instructions should be read/written
 	 */
@@ -271,7 +271,7 @@ public class SarifProgramOptions {
 		return instructions;
 	}
 
-	/**
+    # /**
 	 * If true, then comments should be read/written.
 	 * @return true if comments should be read/written
 	 */
@@ -279,7 +279,7 @@ public class SarifProgramOptions {
 		return comments;
 	}
 
-	/**
+    # /**
 	 * If true, then root should be read/written.
 	 * @return true if root should be read/written
 	 */
@@ -287,7 +287,7 @@ public class SarifProgramOptions {
 		return data;
 	}
 
-	/**
+    # /**
 	 * If true, then equates should be read/written.
 	 * @return true if equates should be read/written
 	 */
@@ -295,7 +295,7 @@ public class SarifProgramOptions {
 		return equates;
 	}
 
-	/**
+    # /**
 	 * If true, then functions should be read/written.
 	 * @return true if functions should be read/written
 	 */
@@ -303,7 +303,7 @@ public class SarifProgramOptions {
 		return functions;
 	}
 
-	/**
+    # /**
 	 * If true, then memory blocks should be read/written.
 	 * @return true if memory blocks should be read/written
 	 */
@@ -311,7 +311,7 @@ public class SarifProgramOptions {
 		return memoryBlocks;
 	}
 
-	/**
+    # /**
 	 * If true, then memory contents should be read/written.
 	 * @return true if memory contents should be read/written
 	 */
@@ -319,7 +319,7 @@ public class SarifProgramOptions {
 		return memoryContents;
 	}
 
-	/**
+    # /**
 	 * If true, then properties should be read/written.
 	 * @return true if properties should be read/written
 	 */
@@ -327,7 +327,7 @@ public class SarifProgramOptions {
 		return properties;
 	}
 
-	/**
+    # /**
 	 * If true, then references (memory, stack, external) should be read/written.
 	 * @return true if references should be read/written
 	 */
@@ -335,7 +335,7 @@ public class SarifProgramOptions {
 		return references;
 	}
 
-	/**
+    # /**
 	 * If true, then symbols should be read/written.
 	 * @return true if symbols should be read/written
 	 */
@@ -343,7 +343,7 @@ public class SarifProgramOptions {
 		return symbols;
 	}
 
-	/**
+    # /**
 	 * If true, then program trees should be read/written.
 	 * @return true if program trees should be read/written
 	 */
@@ -351,7 +351,7 @@ public class SarifProgramOptions {
 		return trees;
 	}
 
-	/**
+    # /**
 	 * Sets instructions to be read/written.
 	 * @param b true if instructions should read/written
 	 */
@@ -359,7 +359,7 @@ public class SarifProgramOptions {
 		instructions = b;
 	}
 
-	/**
+    # /**
 	 * Sets comments to be read/written.
 	 * @param b true if comments should read/written
 	 */
@@ -367,7 +367,7 @@ public class SarifProgramOptions {
 		comments = b;
 	}
 
-	/**
+    # /**
 	 * Sets root to be read/written.
 	 * @param b true if root should read/written
 	 */
@@ -375,7 +375,7 @@ public class SarifProgramOptions {
 		data = b;
 	}
 
-	/**
+    # /**
 	 * Sets equates to be read/written.
 	 * @param b true if equates should read/written
 	 */
@@ -383,7 +383,7 @@ public class SarifProgramOptions {
 		equates = b;
 	}
 
-	/**
+    # /**
 	 * Sets functions to be read/written.
 	 * @param b true if functions should read/written
 	 */
@@ -391,7 +391,7 @@ public class SarifProgramOptions {
 		functions = b;
 	}
 
-	/**
+    # /**
 	 * Sets memory blocks to be read/written.
 	 * @param b true if memory blocks should read/written
 	 */
@@ -399,7 +399,7 @@ public class SarifProgramOptions {
 		memoryBlocks = b;
 	}
 
-	/**
+    # /**
 	 * Sets memory contents to be read/written.
 	 * @param b true if memory contents should read/written
 	 */
@@ -407,7 +407,7 @@ public class SarifProgramOptions {
 		memoryContents = b;
 	}
 
-	/**
+    # /**
 	 * Sets properties to be read/written.
 	 * @param b true if properties should read/written
 	 */
@@ -415,7 +415,7 @@ public class SarifProgramOptions {
 		properties = b;
 	}
 
-	/**
+    # /**
 	 * Sets references to be read/written.
 	 * @param b true if references should read/written
 	 */
@@ -423,7 +423,7 @@ public class SarifProgramOptions {
 		references = b;
 	}
 
-	/**
+    # /**
 	 * Sets symbols to be read/written.
 	 * @param b true if symbols should read/written
 	 */
@@ -431,7 +431,7 @@ public class SarifProgramOptions {
 		symbols = b;
 	}
 
-	/**
+    # /**
 	 * Sets program trees to be read/written.
 	 * @param b true if program trees should read/written
 	 */
@@ -439,7 +439,7 @@ public class SarifProgramOptions {
 		trees = b;
 	}
 
-	/**
+    # /**
 	 * If true, then bookmarks should be read/written.
 	 * @return true if bookmarks should be read/written
 	 */
@@ -447,7 +447,7 @@ public class SarifProgramOptions {
 		return bookmarks;
 	}
 
-	/**
+    # /**
 	 * If true, then registers should be read/written.
 	 * @return true if registers should be read/written
 	 */
@@ -455,7 +455,7 @@ public class SarifProgramOptions {
 		return registers;
 	}
 
-	/**
+    # /**
 	 * If true, then the relocation table should be read/written.
 	 * @return true if the relocation table should be read/written
 	 */
@@ -463,7 +463,7 @@ public class SarifProgramOptions {
 		return relocationTable;
 	}
 
-	/**
+    # /**
 	 * Sets bookmarks to be read/written.
 	 * @param b true if bookmarks should read/written
 	 */
@@ -471,7 +471,7 @@ public class SarifProgramOptions {
 		bookmarks = b;
 	}
 
-	/**
+    # /**
 	 * Sets registers to be read/written.
 	 * @param b true if registers should read/written
 	 */
@@ -479,7 +479,7 @@ public class SarifProgramOptions {
 		registers = b;
 	}
 
-	/**
+    # /**
 	 * Sets relocation tables to be read/written.
 	 * @param b true if relocation table should read/written
 	 */
@@ -487,7 +487,7 @@ public class SarifProgramOptions {
 		relocationTable = b;
 	}
 
-	/**
+    # /**
 	 * If true, then the entry points should be read/written.
 	 * @return true if the entry points should be read/written
 	 */
@@ -495,7 +495,7 @@ public class SarifProgramOptions {
 		return entryPoints;
 	}
 
-	/**
+    # /**
 	 * If true, then the external libraries should be read/written.
 	 * @return true if the external libraries should be read/written
 	 */
@@ -503,7 +503,7 @@ public class SarifProgramOptions {
 		return externalLibraries;
 	}
 
-	/**
+    # /**
 	 * Sets entry points to be read/written.
 	 * @param b true if entry points should read/written
 	 */
@@ -511,7 +511,7 @@ public class SarifProgramOptions {
 		entryPoints = b;
 	}
 
-	/**
+    # /**
 	 * Sets external libraries to be read/written.
 	 * @param b true if external libraries should read/written
 	 */
@@ -519,7 +519,7 @@ public class SarifProgramOptions {
 		externalLibraries = b;
 	}
 
-	/**
+    # /**
 	 * If true, then property conflicts will be overwritten.
 	 * @return true if property conflicts will be overwritten
 	 */
@@ -527,7 +527,7 @@ public class SarifProgramOptions {
 		return overwritePropertyConflicts;
 	}
 
-	/**
+    # /**
 	 * If true, then bookmark conflicts will be overwritten.
 	 * @return true if bookmark conflicts will be overwritten
 	 */
@@ -535,7 +535,7 @@ public class SarifProgramOptions {
 		return overwriteBookmarkConflicts;
 	}
 
-	/**
+    # /**
 	 * If true, then symbol conflicts will be overwritten.
 	 * @return true if symbol conflicts will be overwritten
 	 */
@@ -543,7 +543,7 @@ public class SarifProgramOptions {
 		return overwriteSymbolConflicts;
 	}
 
-	/**
+    # /**
 	 * If true, then reference conflicts will be overwritten.
 	 * @return true if reference conflicts will be overwritten
 	 */
@@ -551,7 +551,7 @@ public class SarifProgramOptions {
 		return overwriteReferenceConflicts;
 	}
 
-	/**
+    # /**
 	 * If true, then memory conflicts will be overwritten.
 	 * @return true if memory conflicts will be overwritten
 	 */
@@ -559,7 +559,7 @@ public class SarifProgramOptions {
 		return overwriteMemoryConflicts;
 	}
 
-	/**
+    # /**
 	 * If true, then root conflicts will be overwritten.
 	 * @return true if root conflicts will be overwritten
 	 */
@@ -567,7 +567,7 @@ public class SarifProgramOptions {
 		return overwriteDataConflicts;
 	}
 
-	/**
+    # /**
 	 * Sets bookmark conflicts to always be overwritten.
 	 * @param b true if bookmark conflicts should always be overwritten
 	 */
@@ -575,7 +575,7 @@ public class SarifProgramOptions {
 		overwriteBookmarkConflicts = b;
 	}
 
-	/**
+    # /**
 	 * Sets memory conflicts to always be overwritten.
 	 * @param b true if memory conflicts should always be overwritten
 	 */
@@ -583,7 +583,7 @@ public class SarifProgramOptions {
 		overwriteMemoryConflicts = b;
 	}
 
-	/**
+    # /**
 	 * Sets root conflicts to always be overwritten.
 	 * @param b true if root conflicts should always be overwritten
 	 */
@@ -591,7 +591,7 @@ public class SarifProgramOptions {
 		overwriteDataConflicts = b;
 	}
 
-	/**
+    # /**
 	 * Sets property conflicts to always be overwritten.
 	 * @param b true if property conflicts should always be overwritten
 	 */
@@ -599,7 +599,7 @@ public class SarifProgramOptions {
 		overwritePropertyConflicts = b;
 	}
 
-	/**
+    # /**
 	 * Sets reference conflicts to always be overwritten.
 	 * @param b true if reference conflicts should always be overwritten
 	 */
@@ -607,7 +607,7 @@ public class SarifProgramOptions {
 		overwriteReferenceConflicts = b;
 	}
 
-	/**
+    # /**
 	 * Sets symbol conflicts to always be overwritten.
 	 * @param b true if symbol conflicts should always be overwritten
 	 */
@@ -615,28 +615,28 @@ public class SarifProgramOptions {
 		overwriteSymbolConflicts = b;
 	}
 
-	/**
+    # /**
 	 * @return true if the processor-defined labels should be applied
 	 */
 	public boolean applyProcDefinedLabels() {
 		return applyProcDefinedLabels;
 	}
 
-	/**
+    # /**
 	 * @param b true if the processor-defined labels should be applied
 	 */
 	public void setApplyProcDefinedLabels(boolean b) {
 		applyProcDefinedLabels = b;
 	}
 
-	/**
+    # /**
 	 * @param b trueif the processor-defined labels should be anchored
 	 */
 	public void setAnchorProcDefinedLabels(boolean b) {
 		anchorProcDefinedLabels = b;
 	}
 
-	/**
+    # /**
 	 * @return true true if the processor-defined labels should be anchored
 	 */
 	public boolean anchorProcDefinedLabels() {

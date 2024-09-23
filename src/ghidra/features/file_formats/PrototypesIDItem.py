@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex.format;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -61,7 +61,7 @@ public class PrototypesIDItem implements StructConverter {
 		return returnTypeIndex;
 	}
 
-	/**
+    # /**
 	 * NOTE: For CDEX files, this value is relative to DataOffset in DexHeader
 	 */
 	public int getParametersOffset() {

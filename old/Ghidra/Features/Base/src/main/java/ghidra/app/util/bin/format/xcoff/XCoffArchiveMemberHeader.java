@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.xcoff;
 
 import ghidra.app.util.bin.BinaryReader;
 
-import java.io.IOException;
+
 
 /**
  * The <code>ARHeader</code> class is used to store the per-object file 

@@ -29,7 +29,7 @@ public class CommentTypeFilterIterator implements CodeUnitIterator {
 	private int commentType;
 	private CodeUnit nextCu;
 
-	/**
+    # /**
 	 * Constructs a new CommentTypeFilterIterator
 	 * @param it a codeunit iterator whose items are tested for the comment type.
 	 * @param commentType the type of comment to search for.
@@ -39,7 +39,7 @@ public class CommentTypeFilterIterator implements CodeUnitIterator {
 		this.commentType = commentType;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Iterator#remove()
 	 */
 	@Override
@@ -47,7 +47,7 @@ public class CommentTypeFilterIterator implements CodeUnitIterator {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#hasNext()
 	 */
 	@Override
@@ -58,7 +58,7 @@ public class CommentTypeFilterIterator implements CodeUnitIterator {
 		return nextCu != null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#next()
 	 */
 	@Override

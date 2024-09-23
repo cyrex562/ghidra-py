@@ -29,13 +29,13 @@ public class SymbolParser {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor.
 	 */
 	private SymbolParser() {
 	}
 
-	/**
+    # /**
 	 * Deserializes the record length and {@link AbstractMsSymbol} from the {@link PdbByteReader}
 	 * and returns the symbol.
 	 * @param pdb {@link AbstractPdb} that owns the Symbols to be parsed.
@@ -52,7 +52,7 @@ public class SymbolParser {
 		return parse(pdb, recordReader);
 	}
 
-	/**
+    # /**
 	 * Deserializes an {@link AbstractMsSymbol} from the {@link PdbByteReader} and returns it.
 	 * @param pdb {@link AbstractPdb} that owns the Symbols to be parsed.
 	 * @param reader {@link PdbByteReader} from which to deserialize the symbol record.
@@ -74,7 +74,7 @@ public class SymbolParser {
 		return symbol;
 	}
 
-	/**
+    # /**
 	 * Deserializes an {@link AbstractMsSymbol} from the {@link PdbByteReader} and returns it.
 	 * @param pdb {@link AbstractPdb} that owns the Symbols to be parsed.
 	 * @param symbolTypeId the PDB ID for the symbol type to be parsed.

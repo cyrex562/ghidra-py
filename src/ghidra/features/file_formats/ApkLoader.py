@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.opinion;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.jdom.*;
@@ -118,7 +118,7 @@ public class ApkLoader extends DexLoader {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Quickly check if the provider is a ZIP file.
 	 * @param provider the byte provider
 	 * @return TRUE if a valid ZIP file.
@@ -135,7 +135,7 @@ public class ApkLoader extends DexLoader {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Inspects the APK to locate the manifest and classes.dex files.
 	 * If found use the manifest to determine the Android version. 
 	 * @param zipFS the ZIP file system of the APK file
@@ -166,7 +166,7 @@ public class ApkLoader extends DexLoader {
 		return Collections.emptyList();
 	}
 
-	/**
+    # /**
 	 * Reads the Android manifest file and returns the
 	 * Android OS version string. For example, "N" or "S".
 	 * Use this string to select the appropriate Sleigh module
@@ -224,7 +224,7 @@ public class ApkLoader extends DexLoader {
 			platformBuildVersionName);
 	}
 
-	/**
+    # /**
 	 * Loads the "classes.dex" file to determine the LoadSpec
 	 * @param zipFS the Android APK file system
 	 * @param file the classes.dex file from the file system
@@ -259,7 +259,7 @@ public class ApkLoader extends DexLoader {
 		return loadSpecs;
 	}
 
-	/**
+    # /**
 	 * Opens the Android APK as a ZIP file system.
 	 * @param provider the byte provider
 	 * @param monitor the task monitor
@@ -272,7 +272,7 @@ public class ApkLoader extends DexLoader {
 		return fsService.mountSpecificFileSystem(provider.getFSRL(), ZipFileSystem.class, monitor);
 	}
 
-	/**
+    # /**
 	 * Opens the Android manifest XML file system.
 	 * @param name the name of the file
 	 * @param provider the byte provider
@@ -294,7 +294,7 @@ public class ApkLoader extends DexLoader {
 		return xmlFS;
 	}
 
-	/**
+    # /**
 	 * Links the DEX programs together.
 	 * @param programList the list of DEX files loaded as programs
 	 * @param log the message log

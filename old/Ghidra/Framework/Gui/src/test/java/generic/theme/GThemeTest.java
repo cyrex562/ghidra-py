@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 import java.awt.Color;
 import java.awt.Font;
 import java.io.File;
-import java.io.IOException;
+
 
 import javax.swing.Icon;
 

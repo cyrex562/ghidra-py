@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.golang;
 
 import static ghidra.app.util.bin.StructConverter.*;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.*;

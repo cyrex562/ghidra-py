@@ -15,7 +15,7 @@
  */
 package ghidra.pcodeCPort.slghsymbol;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.pcode.Encoder;
 

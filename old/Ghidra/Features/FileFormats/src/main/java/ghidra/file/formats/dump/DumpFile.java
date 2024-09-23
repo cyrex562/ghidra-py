@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 import java.util.Map.Entry;

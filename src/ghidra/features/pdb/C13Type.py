@@ -68,7 +68,7 @@ enum C13Type {
 	private final int value;
 	private final Class<? extends C13Section> classValue;
 
-	/**
+    # /**
 	 * Returns the C13Type corresponding to the parse value for the C13 Section type.
 	 * @param val the parse value
 	 * @return the C13Type
@@ -81,7 +81,7 @@ enum C13Type {
 		return t;
 	}
 
-	/**
+    # /**
 	 * Returns the C13Type which has the (parse) value that is used to identify a section of the
 	 * type specified by the {@code classVal} parameter
 	 * @param classVal the implementation class we are need
@@ -109,7 +109,7 @@ enum C13Type {
 		this.classValue = classValue;
 	}
 
-	/**
+    # /**
 	 * Returns the value of the enum
 	 * @return the value
 	 */
@@ -117,7 +117,7 @@ enum C13Type {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Returns the Class that is associated with the enum
 	 * @return the Class
 	 */

@@ -26,7 +26,7 @@ import ghidra.pcode.struct.StructuredSleigh.Label;
 class BlockStmt extends AbstractStmt {
 	List<AbstractStmt> children = new ArrayList<>();
 
-	/**
+    # /**
 	 * Build a block statement
 	 * 
 	 * @param ctx the context
@@ -39,7 +39,7 @@ class BlockStmt extends AbstractStmt {
 		ctx.stack.pop();
 	}
 
-	/**
+    # /**
 	 * Add a child to this statement
 	 * 
 	 * @param child the child statement

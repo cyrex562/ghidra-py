@@ -28,7 +28,7 @@ import ghidra.program.model.reloc.RelocationResult;
 public class AARCH64_ElfRelocationHandler
 		extends AbstractElfRelocationHandler<AARCH64_ElfRelocationType, ElfRelocationContext<?>> {
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public AARCH64_ElfRelocationHandler() {
@@ -379,7 +379,7 @@ public class AARCH64_ElfRelocationHandler
 		return new RelocationResult(Status.APPLIED, byteLength);
 	}
 
-	/**
+    # /**
 	 * Set the new value in memory
 	 * @param memory memory
 	 * @param addr address to set new value
@@ -399,7 +399,7 @@ public class AARCH64_ElfRelocationHandler
 		return 4;
 	}
 
-	/**
+    # /**
 	 * Get a 64 or 32 bit value from memory
 	 * @param memory memory
 	 * @param addr address in memory

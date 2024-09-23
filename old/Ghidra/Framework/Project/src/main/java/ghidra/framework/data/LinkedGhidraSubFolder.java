@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 

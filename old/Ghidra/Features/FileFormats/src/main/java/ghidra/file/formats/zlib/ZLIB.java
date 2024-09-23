@@ -17,7 +17,7 @@ package ghidra.file.formats.zlib;
 
 import ghidra.app.util.bin.ByteProvider;
 
-import java.io.*;
+
 import java.util.Arrays;
 import java.util.zip.*;
 

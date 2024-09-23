@@ -31,7 +31,7 @@ public class LocalDataHLSL32ExtMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 
 	public static final int PDB_ID = 0x1165;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -42,7 +42,7 @@ public class LocalDataHLSL32ExtMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 			DataHighLevelShaderLanguageSymbolInternals.parse32Ext(pdb, reader));
 	}
 
-	/**
+    # /**
 	 * Return the register index.
 	 * @return the register index.
 	 */
@@ -50,7 +50,7 @@ public class LocalDataHLSL32ExtMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 		return ((DataHighLevelShaderLanguageSymbolInternals32Extended) internals).getRegisterIndex();
 	}
 
-	/**
+    # /**
 	 * Return the bind space.
 	 * @return the bind space.
 	 */
@@ -58,7 +58,7 @@ public class LocalDataHLSL32ExtMsSymbol extends AbstractLocalDataHLSLMsSymbol {
 		return ((DataHighLevelShaderLanguageSymbolInternals32Extended) internals).getBindSpace();
 	}
 
-	/**
+    # /**
 	 * Return the bind slot.
 	 * @return the bind slot.
 	 */

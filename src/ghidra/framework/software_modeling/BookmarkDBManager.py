@@ -16,7 +16,7 @@
 package ghidra.program.database.bookmark;
 
 import java.awt.Color;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.Icon;
@@ -55,7 +55,7 @@ public class BookmarkDBManager implements BookmarkManager, ErrorHandler, Manager
 	private ObjectArray typesArray = new ObjectArray();
 	private Lock lock;
 
-	/**
+    # /**
 	 * Constructs a new CodeManager for a program.
 	 * @param handle handle to database
 	 * @param addrMap addressMap to convert between addresses and long values.
@@ -126,7 +126,7 @@ public class BookmarkDBManager implements BookmarkManager, ErrorHandler, Manager
 		program.dbError(e);
 	}
 
-	/**
+    # /**
 	 * Invalidate cached objects held by this manager.
 	 */
 	@Override
@@ -150,7 +150,7 @@ public class BookmarkDBManager implements BookmarkManager, ErrorHandler, Manager
 		}
 	}
 
-	/**
+    # /**
 	 * Update stored bookmark and fire program change event for a bookmark which has
 	 * had its category or comment changed.  All other fields are immutable.
 	 * @param bm bookmark
@@ -434,7 +434,7 @@ public class BookmarkDBManager implements BookmarkManager, ErrorHandler, Manager
 		}
 	}
 
-	/**
+    # /**
 	 * Get address from index.
 	 * @param index address index
 	 * @return address
@@ -443,7 +443,7 @@ public class BookmarkDBManager implements BookmarkManager, ErrorHandler, Manager
 		return addrMap.decodeAddress(index);
 	}
 
-	/**
+    # /**
 	 * Get bookmark record (used by Bookmark.refresh() method)
 	 * @param id bookmark ID
 	 * @return bookmark record

@@ -33,7 +33,7 @@ public class PropertyText extends JTextField {
 	private PropertyEditor editor;
 	private boolean isEditing = false;
 
-	/**
+    # /**
 	 * Constructor new PropertyText.
 	 * @param pe bean property editor that is used to get the value
 	 * to show in the text field

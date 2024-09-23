@@ -36,7 +36,7 @@ public class ExportMsSymbol extends AbstractMsSymbol {
 	private boolean isForwarder;
 	private String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -73,7 +73,7 @@ public class ExportMsSymbol extends AbstractMsSymbol {
 		return "EXPORT";
 	}
 
-	/**
+    # /**
 	 * Internal method that breaks out the flag values from the aggregate integral type.
 	 * @param flagsIn {@code int} containing unsigned short value.
 	 */

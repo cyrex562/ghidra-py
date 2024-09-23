@@ -16,7 +16,7 @@
  */
 package generic.lsh.vector;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.util.xml.SpecXmlUtils;

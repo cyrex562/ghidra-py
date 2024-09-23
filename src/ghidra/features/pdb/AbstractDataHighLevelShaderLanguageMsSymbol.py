@@ -30,7 +30,7 @@ public abstract class AbstractDataHighLevelShaderLanguageMsSymbol extends Abstra
 
 	protected DataHighLevelShaderLanguageSymbolInternals internals;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -43,7 +43,7 @@ public abstract class AbstractDataHighLevelShaderLanguageMsSymbol extends Abstra
 		this.internals = internals;
 	}
 
-	/**
+    # /**
 	 * Returns the data offset.
 	 * @return Data offset.
 	 */
@@ -51,7 +51,7 @@ public abstract class AbstractDataHighLevelShaderLanguageMsSymbol extends Abstra
 		return internals.getDataOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link HLSLRegisterType}.
 	 * @return The {@link HLSLRegisterType}.
 	 */
@@ -59,7 +59,7 @@ public abstract class AbstractDataHighLevelShaderLanguageMsSymbol extends Abstra
 		return internals.getRegisterType();
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -67,7 +67,7 @@ public abstract class AbstractDataHighLevelShaderLanguageMsSymbol extends Abstra
 		return internals.getTypeRecordNumber();
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

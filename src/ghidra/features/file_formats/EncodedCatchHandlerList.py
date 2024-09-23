@@ -18,7 +18,7 @@ package ghidra.file.formats.android.dex.format;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
@@ -40,7 +40,7 @@ public class EncodedCatchHandlerList implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * size of this list, in entries
 	 */
 	public int getSize() {

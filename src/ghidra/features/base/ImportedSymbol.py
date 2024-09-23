@@ -20,7 +20,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.TypedefDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ImportedSymbol extends AbstractSymbol {
 	public final static int SIZEOF = 4;

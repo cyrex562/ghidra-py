@@ -50,42 +50,42 @@ abstract public class AbstractStringDataType extends BuiltIn
 	public static final String DEFAULT_LABEL_PREFIX = "STR";
 	public static final String DEFAULT_ABBREV_PREFIX = "s";
 
-	/**
+    # /**
 	 * A symbolic name to signal that the null value being passed for the charset name param
 	 * indicates that the default charset (ie. ASCII) should be used.
 	 */
 	public static final String USE_CHARSET_DEF_DEFAULT = null;
 
-	/**
+    # /**
 	 * The name of the character set used to convert bytes into java native Strings.
 	 * <p>
 	 * If null, the {@link CharsetSettingsDefinition settings} attached to the data instance will be
 	 * queried for a charset, which will default to ASCII if not present.
 	 */
 	private final String charsetName;
-	/**
+    # /**
 	 * List of {@link SettingsDefinition} that this datatype supports.
 	 */
 	private final SettingsDefinition[] settingsDefinition;
-	/**
+    # /**
 	 * Mnemonic for this datatype
 	 */
 	private final String mnemonic;
-	/**
+    # /**
 	 * Description for this datatype
 	 */
 	private final String description;
-	/**
+    # /**
 	 * Replacement datatype for this datatype
 	 */
 	private final DataType replacementDataType;
 
-	/**
+    # /**
 	 * Enum that controls how the string is laid out in memory.
 	 */
 	private final StringLayoutEnum stringLayout;
 
-	/**
+    # /**
 	 * String used as a prefix to the data instance location when creating a label when there is a
 	 * problem accessing the string data.
 	 * <p>
@@ -94,7 +94,7 @@ abstract public class AbstractStringDataType extends BuiltIn
 	 * This string should be the longest when compared to label prefix and abbrev label prefix.
 	 */
 	private final String defaultLabel;
-	/**
+    # /**
 	 * String used as a prefix to the data instance location when creating a label.
 	 * <p>
 	 * Example: "STR" produces something like: "STR_00410ea0"
@@ -102,7 +102,7 @@ abstract public class AbstractStringDataType extends BuiltIn
 	 * This string should be a medium length when compared to label and abbrev label prefix.
 	 */
 	private final String defaultLabelPrefix;
-	/**
+    # /**
 	 * String used as a prefix to a portion of the actual string data when creating a label.
 	 * <p>
 	 * Example: "s" produces something like: "s_Hello_World_00410ea0"
@@ -111,7 +111,7 @@ abstract public class AbstractStringDataType extends BuiltIn
 	 */
 	private final String defaultAbbrevLabelPrefix;
 
-	/**
+    # /**
 	 * Protected constructor used by derived types to provide all their datatype details.
 	 * <p>
 	 * 
@@ -172,7 +172,7 @@ abstract public class AbstractStringDataType extends BuiltIn
 		return settingsDefinition;
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link StringDataInstance} using the bytes in the supplied MemBuffer and
 	 * options provided by this DataType.
 	 * <p>
@@ -186,7 +186,7 @@ abstract public class AbstractStringDataType extends BuiltIn
 		return new StringDataInstance(this, settings, buf, length);
 	}
 
-	/**
+    # /**
 	 * @return {@link StringLayoutEnum} settinEnum stringLayoutype.
 	 */
 	public StringLayoutEnum getStringLayout() {

@@ -15,7 +15,7 @@
  */
 package ghidra.bsfv;
 
-import java.io.IOException;
+
 
 import org.xml.sax.SAXException;
 

@@ -35,7 +35,7 @@ class GlobalReferenceIterator implements ParsingIterator<MsSymbolIterator> {
 
 	private MsSymbolIterator currentGlobalSymbolIterator = null;
 
-	/**
+    # /**
 	 * An Iterator of Global Reference Symbol Iterators (iterator of iterators)
 	 * @param pdb {@link AbstractPdb} that owns the Symbols to be parsed
 	 * @param reader PdbByteReader containing only Global Reference Offsets information and in

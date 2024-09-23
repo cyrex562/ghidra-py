@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.Date;
 import java.util.Set;
 
@@ -31,14 +31,14 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Version 0 of the Label History adapter.
- */
+# * Version 0 of the Label History adapter.
+# */
 class LabelHistoryAdapterV0 extends LabelHistoryAdapter {
 
 	private Table table;
 	private String userName;
 
-	/**
+    # /**
 	 * Constructs a new LabelHistoryAdapterV0
 	 * @param handle the database handle.
 	 * @param create if true, create the tables.
@@ -109,7 +109,7 @@ class LabelHistoryAdapterV0 extends LabelHistoryAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.LabelHistoryAdapter#createRecord(long, java.lang.String)
 	 */
 	@Override
@@ -126,7 +126,7 @@ class LabelHistoryAdapterV0 extends LabelHistoryAdapter {
 		table.putRecord(rec);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.LabelHistoryAdapter#getAllRecords()
 	 */
 	@Override
@@ -134,7 +134,7 @@ class LabelHistoryAdapterV0 extends LabelHistoryAdapter {
 		return table.iterator();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.LabelHistoryAdapter#getRecordsByAddress(long)
 	 */
 	@Override
@@ -143,7 +143,7 @@ class LabelHistoryAdapterV0 extends LabelHistoryAdapter {
 		return table.indexIterator(HISTORY_ADDR_COL, field, field, true);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.LabelHistoryAdapter#getRecordCount()
 	 */
 	@Override
@@ -151,7 +151,7 @@ class LabelHistoryAdapterV0 extends LabelHistoryAdapter {
 		return table.getRecordCount();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.LabelHistoryAdapter#moveAddress(long, long)
 	 */
 	@Override
@@ -164,7 +164,7 @@ class LabelHistoryAdapterV0 extends LabelHistoryAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.LabelHistoryAdapter#moveAddressRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address, long, ghidra.program.model.address.AddressMap, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -175,7 +175,7 @@ class LabelHistoryAdapterV0 extends LabelHistoryAdapter {
 			toAddr, length, null, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.LabelHistoryAdapter#deleteAddressRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address, ghidra.program.model.address.AddressMap, ghidra.util.task.TaskMonitor)
 	 */
 	@Override

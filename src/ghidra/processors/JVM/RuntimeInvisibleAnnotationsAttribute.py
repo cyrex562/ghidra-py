@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -66,7 +66,7 @@ public class RuntimeInvisibleAnnotationsAttribute extends AbstractAttributeInfo 
 		}
 	}
 
-	/**
+    # /**
 	 * The value of the num_annotations item gives the number of runtime-visible
 	 * annotations represented by the structure.
 	 * <p>
@@ -78,7 +78,7 @@ public class RuntimeInvisibleAnnotationsAttribute extends AbstractAttributeInfo 
 		return numberOfAnnotations & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Returns the annotations table of a single runtime-visible
 	 * annotation on a program element.
 	 * @return the annotations table

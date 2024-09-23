@@ -38,7 +38,7 @@ public class VisualGraphShapePickSupport<V extends VisualVertex, E extends Visua
 			super.getFilteredVertices(layout));
 	}
 
-	/**
+    # /**
 	 * Overridden to handle edge picking with our custom edge placement.  The painting and picking
 	 * algorithms in Jung are all hard-coded to transform loop edges to above the vertex--there
 	 * is no way to plug our own transformation into Jung :(

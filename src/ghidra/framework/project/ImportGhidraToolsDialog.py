@@ -44,7 +44,7 @@ class ImportGhidraToolsDialog extends DialogComponentProvider {
 	private FrontEndTool tool;
 	private boolean cancelled = false;
 
-	/**
+    # /**
 	 * Construct new SaveDataDiaog
 	 * @param tool front end tool
 	 */
@@ -69,7 +69,7 @@ class ImportGhidraToolsDialog extends DialogComponentProvider {
 		tool.showDialog(this);
 	}
 
-	/**
+    # /**
 	 * Gets called when the user clicks on the OK Action for the dialog.
 	 */
 	@Override
@@ -77,7 +77,7 @@ class ImportGhidraToolsDialog extends DialogComponentProvider {
 		close();
 	}
 
-	/**
+    # /**
 	 * Gets called when the user clicks on the Cancel Action for the dialog.
 	 */
 	@Override
@@ -86,7 +86,7 @@ class ImportGhidraToolsDialog extends DialogComponentProvider {
 		close();
 	}
 
-	/**
+    # /**
 	 * Create the panel for this dialog.
 	 */
 	private JPanel createPanel() {
@@ -109,7 +109,7 @@ class ImportGhidraToolsDialog extends DialogComponentProvider {
 		return panel;
 	}
 
-	/**
+    # /**
 	 * Select all files to be saved.
 	 */
 	private void selectAll() {
@@ -119,7 +119,7 @@ class ImportGhidraToolsDialog extends DialogComponentProvider {
 		listPanel.repaint();
 	}
 
-	/**
+    # /**
 	 * Clear selected checkboxes.
 	 */
 	private void deselectAll() {
@@ -180,7 +180,7 @@ class ImportGhidraToolsDialog extends DialogComponentProvider {
 //==================================================================================================
 // Inner Classes
 //==================================================================================================
-	/**
+    # /**
 	 * Cell renderer to show the checkboxes for the changed data files.
 	 */
 	private class DataCellRenderer implements ListCellRenderer<JCheckBox> {
@@ -207,7 +207,7 @@ class ImportGhidraToolsDialog extends DialogComponentProvider {
 		}
 	}
 
-	/**
+    # /**
 	 * Mouse listener to get the selected cell in the list.
 	 */
 	private class ListMouseListener extends MouseAdapter {

@@ -25,7 +25,7 @@ public interface BSimJDBCDataSource {
 
 	Status getStatus();
 
-	/**
+    # /**
 	 * Get DB {@link Connection} object performing any required authentication.  
 	 * @return {@link Connection} object
 	 * @throws SQLException if connection fails
@@ -34,7 +34,7 @@ public interface BSimJDBCDataSource {
 
 	ConnectionType getConnectionType();
 
-	/**
+    # /**
 	 * Get the server info that corresponds to this data source.  It is important to note
 	 * that the returned instance is normalized for the purpose of caching and may not
 	 * match the original server info object used to obtain this data source instance.
@@ -42,19 +42,19 @@ public interface BSimJDBCDataSource {
 	 */
 	BSimServerInfo getServerInfo();
 
-	/**
+    # /**
 	 * Get the number of active connections in the associated connection pool
 	 * @return number of active connections
 	 */
 	int getActiveConnections();
 
-	/**
+    # /**
 	 * Get the number of idle connections in the associated connection pool
 	 * @return number of idle connections
 	 */
 	int getIdleConnections();
 
-	/**
+    # /**
 	 * Dispose pooled datasource.
 	 */
 	void dispose();

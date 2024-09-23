@@ -40,7 +40,7 @@ public class MDObjectReserved extends MDObject {
 		dmang.increment(dmang.getMangledSymbol().length() - dmang.getIndex());
 	}
 
-	/**
+    # /**
 	 * This method returns the <b><code>String</code></b> containing the sequence of ASCII-represented digits
 	 *  '0'-'9'.  The processing and capture of these digits is stopped when a non-digit
 	 *  is encountered.

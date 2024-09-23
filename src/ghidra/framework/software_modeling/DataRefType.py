@@ -29,7 +29,7 @@ public final class DataRefType extends RefType {
 
 	private int      access = 0;
 	
-	/**
+    # /**
 	 * Constructs a DataRefType with the given type.
 	 */
     protected DataRefType(byte type, String name, int access) {

@@ -15,7 +15,7 @@
  */
 package ghidra.app.decompiler;
 
-import java.io.*;
+
 
 import generic.concurrent.*;
 import ghidra.util.task.TaskMonitor;
@@ -34,7 +34,7 @@ public class DecompilerDisposer {
 		// utility class
 	}
 
-	/**
+    # /**
 	 * Disposes the given Process and related streams from a background thread.  This is necessary
 	 * due to a low-probability deadlock that occurs in the JVM.
 	 *
@@ -48,7 +48,7 @@ public class DecompilerDisposer {
 		queue.add(disposable);
 	}
 
-	/**
+    # /**
 	 * Calls dispose in the given decompiler from a background thread.
 	 * <p>
 	 * Note:<br>

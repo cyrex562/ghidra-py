@@ -19,7 +19,7 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 import java.util.function.Supplier;
@@ -81,7 +81,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 		public boolean useMsDiaParser;
 	}
 
-	/**
+    # /**
 	 * Shows a modal dialog to the user, allowing them to pick or search for a Pdb
 	 * file.<p>
 	 * The selected file and parser options are returned in a LoadPdbResults instance.
@@ -145,7 +145,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 	private JRadioButton msdiaParserButton;
 	private GComboBox<PdbApplicatorControl> applicatorControlCombo;
 
-	/**
+    # /**
 	 * Creates a new instance of the LoadPdbDialog class.
 	 *
 	 * @param program the ghidra {@link Program} that is loading the Pdb
@@ -182,7 +182,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 		close();
 	}
 
-	/**
+    # /**
 	 * For screenshot use only
 	 *
 	 * @param options set of {@link FindOption} enum
@@ -196,7 +196,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 		setPdbLocationValue(symbolFileLocation, getLocalSymbolFile(symbolFileLocation));
 	}
 
-	/**
+    # /**
 	 * Sets the contents of the search results table.
 	 * <p>
 	 * Public only for screenshot usage, treat as private otherwise.
@@ -209,7 +209,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 		symbolFilePanel.getTableModel().setSearchResults(programSymbolFileInfo, results);
 	}
 
-	/**
+    # /**
 	 * Selects a row in the results table.
 	 * <p>
 	 * Public only for screenshot usage.  Treat as private.
@@ -738,7 +738,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 		return chooser;
 	}
 
-	/**
+    # /**
 	 * Adds a supplier of status text messages.  The supplier will be polled
 	 * whenever the updateStatusText() method is called.
 	 * <p>
@@ -753,7 +753,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 		statusTextSuppliers.add(supplier);
 	}
 
-	/**
+    # /**
 	 * Polls all {@link #addStatusTextSupplier(Supplier) registered} StatusText suppliers and
 	 * sets the status message at the bottom of the dialog to the resulting message.
 	 * <p>
@@ -798,7 +798,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 		return SymbolStore.isCompressedFilename(file.getName()) ? null : file;
 	}
 
-	/**
+    # /**
 	 * Execute a non-modal task that has progress and can be cancelled.
 	 * <p>
 	 * See {@link #executeProgressTask(Task, int)}.
@@ -853,7 +853,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 		return panel;
 	}
 
-	/**
+    # /**
 	 * A customized JTextField that changes the background of non-editable
 	 * text fields to be the same color as the parent container's background.
 	 */
@@ -883,7 +883,7 @@ public class LoadPdbDialog extends DialogComponentProvider {
 			return super.getBackground();
 		}
 
-		/**
+	    # /**
 		 * Overridden to paint the hint text over the field when it's empty
 		 */
 		@Override

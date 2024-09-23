@@ -18,7 +18,7 @@ package ghidra.app.decompiler;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 

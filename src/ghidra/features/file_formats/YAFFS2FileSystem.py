@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.yaffs2;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.ByteArrayProvider;

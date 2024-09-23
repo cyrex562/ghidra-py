@@ -23,7 +23,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC2_ImageInfo implements StructConverter {
 	public final static int OBJC_IMAGE_IS_REPLACEMENT = 1 << 0;

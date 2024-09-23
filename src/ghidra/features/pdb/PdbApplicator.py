@@ -35,31 +35,31 @@ import ghidra.util.task.TaskMonitor;
  */
 public interface PdbApplicator {
 
-	/**
+    # /**
 	 * Returns the {@link AbstractPdb} being analyzed
 	 * @return {@link AbstractPdb} being analyzed
 	 */
 	public AbstractPdb getPdb();
 
-	/**
+    # /**
 	 * Returns the {@link Program} for which this analyzer is working
 	 * @return {@link Program} for which this analyzer is working
 	 */
 	Program getProgram();
 
-	/**
+    # /**
 	 * Returns the original image base value from the PE Header
 	 * @return the original image base for the binary
 	 */
 	public long getOriginalImageBase();
 
-	/**
+    # /**
 	 * Returns the TaskMonitor
 	 * @return the monitor
 	 */
 	public TaskMonitor getMonitor();
 
-	/**
+    # /**
 	 * Returns the {@link PeCoffSectionMsSymbol}s from the "Linker" module
 	 * @return list of symbols
 	 * @throws CancelledException upon user cancellation
@@ -68,7 +68,7 @@ public interface PdbApplicator {
 	public List<PeCoffSectionMsSymbol> getLinkerPeCoffSectionSymbols()
 			throws CancelledException, PdbException;
 
-	/**
+    # /**
 	 * Returns the compile symbol seen in the "Linker" module.  Should be one of
 	 * {@link Compile3MsSymbol} or {@link AbstractCompile2MsSymbol}
 	 * @return the compile symbol

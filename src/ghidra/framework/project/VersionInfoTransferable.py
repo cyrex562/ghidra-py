@@ -19,7 +19,7 @@ package ghidra.framework.main.datatree;
 import ghidra.util.Msg;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,7 +30,7 @@ import docking.dnd.GenericDataFlavor;
  */
 public class VersionInfoTransferable implements Transferable, ClipboardOwner {
     
-	/**
+    # /**
 	 * DataFlavor for VersionInfoTransferable.
 	 */
     public static DataFlavor localVersionInfoFlavor = createLocalVersionInfoFlavor();
@@ -91,7 +91,7 @@ public class VersionInfoTransferable implements Transferable, ClipboardOwner {
 	 */
 	public void lostOwnership(Clipboard clipboard, Transferable contents) {
 	}
-	/**
+    # /**
 	 * Get the string representation for this transferable.
 	 */
     @Override

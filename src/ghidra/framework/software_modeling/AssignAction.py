@@ -1,23 +1,23 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang.protorules;
 
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.DataTypeManager;
@@ -27,12 +27,12 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.xml.*;
 
 # /**
- * An action that assigns an Address to a function prototype parameter
- * 
- * A request for the address of either return storage or an input parameter is made
- * through the assignAddress() method, which is given full information about the function prototype.
- * Details about how the action performs is configured through the restoreXml() method.
- */
+# * An action that assigns an Address to a function prototype parameter
+# * 
+# * A request for the address of either return storage or an input parameter is made
+# * through the assignAddress() method, which is given full information about the function prototype.
+# * Details about how the action performs is configured through the restoreXml() method.
+# */
 public abstract class AssignAction {
 	public static final int SUCCESS = 0;			// Data-type is fully assigned
 	public static final int FAIL = 1;				// Action could not be applied
@@ -47,7 +47,7 @@ public abstract class AssignAction {
 		resource = res;
 	}
 
-	/**
+    # /**
 	 *  Make a copy of this action
 	* @param newResource is the new resource object that will own the clone
 	* @return the newly allocated copy
@@ -55,14 +55,14 @@ public abstract class AssignAction {
 	*/
 	public abstract AssignAction clone(ParamListStandard newResource) throws InvalidInputException;
 
-	/**
+    # /**
 	 * Test if the given action is configured and performs identically to this
 	 * @param op is the given action
 	 * @return true if the two actions are equivalent
 	 */
 	public abstract boolean isEquivalent(AssignAction op);
 
-	/**
+    # /**
 	 * Assign an address and other meta-data for a specific parameter or for return storage in context
 	 * The Address is assigned based on the data-type of the parameter, available register
 	 * resources, and other details of the function prototype.  Consumed resources are marked.
@@ -81,21 +81,21 @@ public abstract class AssignAction {
 	public abstract int assignAddress(DataType dt, PrototypePieces proto, int pos,
 			DataTypeManager dtManager, int[] status, ParameterPieces res);
 
-	/**
+    # /**
 	 * Save this action and its configuration to a stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for problems writing to the stream
 	 */
 	public abstract void encode(Encoder encoder) throws IOException;
 
-	/**
+    # /**
 	 * Configure any details of how this action should behave from the stream
 	 * @param parser is the given stream decoder
 	 * @throws XmlParseException is there are problems decoding the stream
 	 */
 	public abstract void restoreXml(XmlPullParser parser) throws XmlParseException;
 
-	/**
+    # /**
 	 * Read the next action element from the stream and return the new configured
 	 * AssignAction object.  If the next element is not an action, throw an exception.
 	 * @param parser is the stream parser
@@ -137,7 +137,7 @@ public abstract class AssignAction {
 		return action;
 	}
 
-	/**
+    # /**
 	 * Read the next sideeffect element from the stream and return the new configured
 	 * AssignAction object.  If the next element is not a sideeffect, throw an exception.
 	 * @param parser is the stream parser

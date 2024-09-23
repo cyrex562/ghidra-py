@@ -27,7 +27,7 @@
 //@category Data Types
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.app.script.GhidraScript;
 import ghidra.app.util.cparser.C.CParserUtils;

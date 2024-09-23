@@ -77,7 +77,7 @@ public class NotCompilerBSimFilterType extends BSimFilterType {
 			listener);
 	}
 
-	/**
+    # /**
 	 * Returns a list of all known compilers.
 	 * 
 	 * @return the list of compiler specs

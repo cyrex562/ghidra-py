@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.sleigh;
 
 import java.util.*;
@@ -24,11 +24,11 @@ import ghidra.program.model.lang.*;
 import ghidra.program.model.mem.*;
 
 # /**
- * 
- *
- * All the recovered context for a single instruction
- * The main data structure is the tree of constructors and operands
- */
+# * 
+# *
+# * All the recovered context for a single instruction
+# * The main data structure is the tree of constructors and operands
+# */
 
 public class SleighParserContext implements ParserContext {
 	private MemBuffer memBuffer;
@@ -70,7 +70,7 @@ public class SleighParserContext implements ParserContext {
 		return prototype;
 	}
 
-	/**
+    # /**
 	 * Constructor for building precompiled templates.
 	 * NOTE: This form does not support use of {@code inst_next2}.
 	 * @param aAddr  = address to which 'inst_start' resolves 
@@ -90,7 +90,7 @@ public class SleighParserContext implements ParserContext {
 		handleMap = new HashMap<>();
 	}
 
-	/**
+    # /**
 	 * Generate context specifically for an instruction that has a delayslot.
 	 * When generating p-code SLEIGH has an alternate interpretation of the "inst_next"
 	 * symbol that takes into account the instruction in the delay slot.  This context is
@@ -117,7 +117,7 @@ public class SleighParserContext implements ParserContext {
 		}
 	}
 
-	/**
+    # /**
 	 * @return context commits for normal instruction parse.
 	 */
 	Iterator<ContextSet> getContextCommits() {
@@ -173,7 +173,7 @@ public class SleighParserContext implements ParserContext {
 		return handle;
 	}
 
-	/**
+    # /**
 	 * get address of current instruction
 	 * @return address of current instruction
 	 */
@@ -181,7 +181,7 @@ public class SleighParserContext implements ParserContext {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * Get address of instruction after current instruction.  This may return null if this context 
 	 * instance does not support use of {@code inst_next} or next address falls beyond end of
 	 * address space.
@@ -191,7 +191,7 @@ public class SleighParserContext implements ParserContext {
 		return nextInstrAddr;
 	}
 
-	/**
+    # /**
 	 * Get address of instruction after the next instruction.  This may return {@link #getNaddr()}
 	 * if this context instance does not support use of {@code inst_next2} or parse of next 
 	 * instruction fails.
@@ -210,7 +210,7 @@ public class SleighParserContext implements ParserContext {
 		return next2InstAddr;
 	}
 
-	/**
+    # /**
 	 * Return the address after the next instruction (inst_next2).  The length of next instruction 
 	 * based on attempted parse of next instruction and does not consider any delayslot use.
 	 * The current instructions context is used during the parse.
@@ -245,7 +245,7 @@ public class SleighParserContext implements ParserContext {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get address space containing current instruction
 	 * @return address space containing current instruction
 	 */
@@ -253,7 +253,7 @@ public class SleighParserContext implements ParserContext {
 		return addr.getAddressSpace();
 	}
 
-	/**
+    # /**
 	 * Get constant address space
 	 * @return constant address space
 	 */
@@ -261,7 +261,7 @@ public class SleighParserContext implements ParserContext {
 		return constantSpace;
 	}
 
-	/**
+    # /**
 	 * Get memory buffer for current instruction which may also be used to parse next instruction
 	 * or delay slot instructions.
 	 * @return memory buffer for current instruction
@@ -270,7 +270,7 @@ public class SleighParserContext implements ParserContext {
 		return memBuffer;
 	}
 
-	/**
+    # /**
 	 * Get bytes from the instruction stream into an int
 	 * (packed in big endian format).  Uninitialized or 
 	 * undefined memory will return zero byte values.
@@ -296,7 +296,7 @@ public class SleighParserContext implements ParserContext {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Get bits from the instruction stream into an int
 	 * (packed in big endian format).  Uninitialized or 
 	 * undefined memory will return zero bit values.
@@ -329,7 +329,7 @@ public class SleighParserContext implements ParserContext {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Get the processor context value as a RegisterValue
 	 * @return processor context value
 	 */
@@ -367,7 +367,7 @@ public class SleighParserContext implements ParserContext {
 		}
 	}
 
-	/**
+    # /**
 	 * Get bytes from context into an int
 	 * @param bytestart is the index of the first byte to fetch
 	 * @param bytesize number of bytes (range: 1 - 4)
@@ -390,7 +390,7 @@ public class SleighParserContext implements ParserContext {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Get full set of context bytes.  Sleigh only supports context
 	 * which is a multiple of 4-bytes (i.e., size of int)
 	 * @return the array of context data
@@ -399,7 +399,7 @@ public class SleighParserContext implements ParserContext {
 		return context;
 	}
 
-	/**
+    # /**
 	 * Get bits from context into an int
 	 * @param startbit is the index of the first bit to fetch
 	 * @param bitsize number of bits (range: 1 - 32)

@@ -16,7 +16,7 @@
 package ghidra.file.formats.ios.apple8900;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
+
 import java.util.Arrays;
 
 import ghidra.app.util.bin.BinaryReader;

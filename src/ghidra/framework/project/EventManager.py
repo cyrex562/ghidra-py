@@ -49,7 +49,7 @@ public class EventManager {
 	private final Runnable sendEventsRunnable = () -> sendEvents();
 	private volatile boolean sendingToolEvent;
 
-	/**
+    # /**
 	 * Construct a new EventManager.
 	 * 
 	 * @param tool plugin tool associated with this EventManager
@@ -58,7 +58,7 @@ public class EventManager {
 		this.tool = tool;
 	}
 
-	/**
+    # /**
 	 * Add a plugin event listener that will be notified when an event of the given event class is
 	 * generated.
 	 * 
@@ -85,7 +85,7 @@ public class EventManager {
 		allEventListeners.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Remove the plugin event listener from the list of listeners notified when an event of the
 	 * given event class is generated.
 	 * 
@@ -113,7 +113,7 @@ public class EventManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Add the given tool listener to be notified notified when tool events are generated
 	 * 
 	 * @param listener listener to add
@@ -122,7 +122,7 @@ public class EventManager {
 		toolListeners.add(listener);
 	}
 
-	/**
+    # /**
 	 * Remove the given tool listener from the list of tool listeners
 	 * 
 	 * @param listener listener to remove
@@ -131,7 +131,7 @@ public class EventManager {
 		toolListeners.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Return whether there are any registered tool listeners for the tool associated with class
 	 * 
 	 * @return true if there are any listeners
@@ -140,7 +140,7 @@ public class EventManager {
 		return !toolListeners.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Add the class for the PluginEvent that a plugin will produce
 	 * 
 	 * @param eventClass class for the PluginEvent
@@ -153,7 +153,7 @@ public class EventManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove the class of a PluginEvent that a plugin produces.
 	 * 
 	 * @param eventClass class for the PluginEvent
@@ -170,7 +170,7 @@ public class EventManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the names of all events produced by plugins in the tool.
 	 * 
 	 * @return array of PluginEvent names
@@ -179,7 +179,7 @@ public class EventManager {
 		return producerMap.keySet().toArray(new String[producerMap.size()]);
 	}
 
-	/**
+    # /**
 	 * Get the names of all events consumed by plugins in the tool.
 	 * 
 	 * @return array of PluginEvent names
@@ -188,7 +188,7 @@ public class EventManager {
 		return consumerMap.keySet().toArray(new String[consumerMap.size()]);
 	}
 
-	/**
+    # /**
 	 * Notify all plugin listeners that are registered to consume the given event. Events are fired
 	 * in the SwingThread.
 	 * 
@@ -227,7 +227,7 @@ public class EventManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Convert the given tool event to a plugin event; notify the appropriate plugin listeners. This
 	 * method allows one tool's event manager to send events to another connected tool.
 	 * 
@@ -240,14 +240,14 @@ public class EventManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear the list of last plugin events fired
 	 */
 	public void clearLastEvents() {
 		lastEventsByType.clear();
 	}
 
-	/**
+    # /**
 	 * Clear last plugin events fired, current event, listeners, etc.
 	 */
 	public void clear() {
@@ -259,7 +259,7 @@ public class EventManager {
 		eventQ.clear();
 	}
 
-	/**
+    # /**
 	 * Return an array of the last plugin events fired. EventManager maps the event class to the
 	 * last event fired.
 	 * 
@@ -336,7 +336,7 @@ public class EventManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove the event listener by className; the plugin registered for events, but the
 	 * construction failed.
 	 * 

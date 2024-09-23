@@ -18,7 +18,7 @@ package agent.lldb.rmi;
 import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.net.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;

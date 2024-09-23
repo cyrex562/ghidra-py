@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.bootimg;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -141,7 +141,7 @@ public class VendorBootImageHeaderV4 extends VendorBootImageHeaderV3 {
 		return NumericUtilities.getUnsignedAlignedValue(value, getPageSize());
 	}
 
-	/**
+    # /**
 	 * Size in bytes for the vendor ramdisk table
 	 * @return size in bytes for the vendor ramdisk table
 	 */
@@ -149,7 +149,7 @@ public class VendorBootImageHeaderV4 extends VendorBootImageHeaderV3 {
 		return vendor_ramdisk_table_size;
 	}
 
-	/**
+    # /**
 	 * Number of entries in the vendor ramdisk table
 	 * @return number of entries in the vendor ramdisk table
 	 */
@@ -157,7 +157,7 @@ public class VendorBootImageHeaderV4 extends VendorBootImageHeaderV3 {
 		return vendor_ramdisk_table_entry_num;
 	}
 
-	/**
+    # /**
 	 * Size in bytes for a vendor ramdisk table entry
 	 * @return size in bytes for a vendor ramdisk table entry
 	 */
@@ -170,7 +170,7 @@ public class VendorBootImageHeaderV4 extends VendorBootImageHeaderV3 {
 		return NumericUtilities.getUnsignedAlignedValue(value, getPageSize());
 	}
 
-	/**
+    # /**
 	 * Size in bytes for the bootconfig section
 	 * @return size in bytes for the bootconfig section
 	 */

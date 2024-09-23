@@ -113,7 +113,7 @@ import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 
 import java.util.*;
-import java.io.*;
+
 import java.math.BigInteger;
 import ghidra.program.util.AddressEvaluator; 
 

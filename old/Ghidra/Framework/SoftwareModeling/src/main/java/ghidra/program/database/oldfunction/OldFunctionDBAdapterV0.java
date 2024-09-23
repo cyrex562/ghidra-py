@@ -18,7 +18,7 @@ package ghidra.program.database.oldfunction;
 import ghidra.program.database.map.AddressMap;
 import ghidra.util.exception.VersionException;
 
-import java.io.IOException;
+
 
 import db.*;
 

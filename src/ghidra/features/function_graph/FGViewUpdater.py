@@ -56,7 +56,7 @@ public class FGViewUpdater extends VisualGraphViewUpdater<FGVertex, FGEdge> {
 		super(viewer, graph);
 	}
 
-	/**
+    # /**
 	 * Performs a relayout of the graph currently used by the given controller.
 	 * @param controller The controller whose graph should have relayout called
 	 */
@@ -158,7 +158,7 @@ public class FGViewUpdater extends VisualGraphViewUpdater<FGVertex, FGEdge> {
 		throw new AssertException("Cannot find any vertex for address: " + address);
 	}
 
-	/**
+    # /**
 	 * Ungroups all {@link GroupedFunctionGraphVertex group vertices} found in the graph.  This
 	 * method is recursive in that it will keep running until no group vertices remain.
 	 *
@@ -298,7 +298,7 @@ public class FGViewUpdater extends VisualGraphViewUpdater<FGVertex, FGEdge> {
 		groupVertices(controller, text, vertices, location, true);
 	}
 
-	/**
+    # /**
 	 * Checks each vertex in the given set to see if it is a group vertex.  If so, this method
 	 * will check to see if the group is still in the graph.  If not, assume that it has been
 	 * uncollapsed and find it's children (recursively) and add them to the set to be regrouped,
@@ -424,7 +424,7 @@ public class FGViewUpdater extends VisualGraphViewUpdater<FGVertex, FGEdge> {
 			isAnimationEnabled(), isRegroup);
 	}
 
-	/**
+    # /**
 	 * Install the given grouped vertex into the graph, optionally animating the process.
 	 *
 	 * @param controller the controller of the graph to be ungrouped

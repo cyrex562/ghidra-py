@@ -15,7 +15,7 @@
  */
 package generic.util;
 
-import java.io.*;
+
 import java.nio.channels.*;
 
 public class FileChannelLock {
@@ -25,7 +25,7 @@ public class FileChannelLock {
 	private FileChannel fc;
 	private FileLock lock;
 
-	/**
+    # /**
 	 * A flag to signal that we are locked.  This is needed because we do not want to 'cleanup'
 	 * lock files when we can't lock, as they may already be in use by another application 
 	 * instance.

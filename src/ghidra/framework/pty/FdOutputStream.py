@@ -15,7 +15,7 @@
  */
 package ghidra.pty.unix;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 
 import com.sun.jna.LastErrorException;

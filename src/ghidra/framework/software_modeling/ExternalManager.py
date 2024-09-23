@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.symbol;
 
 import java.util.List;
@@ -24,33 +24,33 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * External manager interface. Defines methods for dealing with external programs and locations
- * within those programs.
- */
+# * External manager interface. Defines methods for dealing with external programs and locations
+# * within those programs.
+# */
 
 public interface ExternalManager {
 
-	/**
+    # /**
 	 * Returns an array of all external names for which locations have been defined.
 	 * @return array of external names
 	 */
 	public String[] getExternalLibraryNames();
 	
-	/**
+    # /**
 	 * Get the Library which corresponds to the specified name
 	 * @param libraryName name of library
 	 * @return library or null if not found
 	 */
 	public Library getExternalLibrary(String libraryName);
 
-	/**
+    # /**
 	 * Removes external name if no associated ExternalLocation's exist
 	 * @param libraryName external library name
 	 * @return true if removed, false if unable to due to associated locations/references
 	 */
 	public boolean removeExternalLibrary(String libraryName);
 
-	/**
+    # /**
 	 * Returns the file pathname associated with an external name.
 	 * Null is returned if either the external name does not exist or
 	 * a pathname has not been set.
@@ -59,7 +59,7 @@ public interface ExternalManager {
 	 */
 	public String getExternalLibraryPath(String libraryName);
 
-	/**
+    # /**
 	 * Sets the file pathname associated with an existing external name.
 	 * @param libraryName the name of the library to associate with a file.
 	 * @param pathname the path to the program to be associated with the library name.
@@ -69,7 +69,7 @@ public interface ExternalManager {
 	public void setExternalPath(String libraryName, String pathname, boolean userDefined)
 			throws InvalidInputException;
 
-	/**
+    # /**
 	 * Change the name of an existing external name.
 	 * @param oldName the old name of the external library name.
 	 * @param newName the new name of the external library name.
@@ -80,7 +80,7 @@ public interface ExternalManager {
 	public void updateExternalLibraryName(String oldName, String newName, SourceType source)
 			throws DuplicateNameException, InvalidInputException;
 
-	/**
+    # /**
 	 * Get an iterator over all external locations associated with the specified
 	 * externalName.
 	 * @param libraryName the name of the library to get locations for
@@ -88,7 +88,7 @@ public interface ExternalManager {
 	 */
 	public ExternalLocationIterator getExternalLocations(String libraryName);
 
-	/**
+    # /**
 	 * Get an iterator over all external locations which have been associated to
 	 * the specified memory address
 	 * @param memoryAddress memory address
@@ -96,7 +96,7 @@ public interface ExternalManager {
 	 */
 	public ExternalLocationIterator getExternalLocations(Address memoryAddress);
 
-	/**
+    # /**
 	 * Get an external location.
 	 * @param libraryName the name of the library for which to get an external location
 	 * @param label the name of the external location.
@@ -107,7 +107,7 @@ public interface ExternalManager {
 	@Deprecated
 	public ExternalLocation getExternalLocation(String libraryName, String label);
 
-	/**
+    # /**
 	 * Get an external location.
 	 * @param namespace the namespace containing the external label.
 	 * @param label the name of the external location.
@@ -118,7 +118,7 @@ public interface ExternalManager {
 	@Deprecated
 	public ExternalLocation getExternalLocation(Namespace namespace, String label);
 
-	/**
+    # /**
 	 * Returns a list of External Locations matching the given label name in the given Library.
 	 * @param libraryName the name of the library
 	 * @param label the name of the label
@@ -126,7 +126,7 @@ public interface ExternalManager {
 	 */
 	public List<ExternalLocation> getExternalLocations(String libraryName, String label);
 
-	/**
+    # /**
 	 * Returns a list of External Locations matching the given label name in the given Namespace.
 	 * @param namespace the Namespace to search
 	 * @param label the name of the labels to search for.
@@ -134,7 +134,7 @@ public interface ExternalManager {
 	 */
 	public List<ExternalLocation> getExternalLocations(Namespace namespace, String label);
 
-	/**
+    # /**
 	 * Returns the unique external location associated with the given library name and label
 	 * @param libraryName the library name
 	 * @param label the label of the external location
@@ -142,7 +142,7 @@ public interface ExternalManager {
 	 */
 	public ExternalLocation getUniqueExternalLocation(String libraryName, String label);
 
-	/**
+    # /**
 	 * Returns the unique external location associated with the given namespace and label
 	 * @param namespace the namespace
 	 * @param label the label of the external location
@@ -150,21 +150,21 @@ public interface ExternalManager {
 	 */
 	public ExternalLocation getUniqueExternalLocation(Namespace namespace, String label);
 
-	/**
+    # /**
 	 * Returns the external location associated with the given external symbol
 	 * @param symbol the external symbol.
 	 * @return the external location or null
 	 */
 	public ExternalLocation getExternalLocation(Symbol symbol);
 
-	/**
+    # /**
 	 * Determines if the indicated external library name is being managed (exists).
 	 * @param libraryName the external library name
 	 * @return true if the name is defined (whether it has a path or not).
 	 */
 	public boolean contains(String libraryName);
 
-	/**
+    # /**
 	 * Adds a new external library name
 	 * @param libraryName the new external library name to add.
 	 * @param source the source of this external library
@@ -177,7 +177,7 @@ public interface ExternalManager {
 	public Library addExternalLibraryName(String libraryName, SourceType source)
 			throws InvalidInputException, DuplicateNameException;
 
-	/**
+    # /**
 	 * Get or create an external location associated with a library/file named {@code libraryName}
 	 * and the location within that file identified by {@code extLabel} and/or its memory address
 	 * {@code extAddr}.  Either or both {@code extLabel} or {@code extAddr} must be specified.
@@ -195,7 +195,7 @@ public interface ExternalManager {
 	public ExternalLocation addExtLocation(String libraryName, String extLabel, Address extAddr,
 			SourceType sourceType) throws InvalidInputException, DuplicateNameException;
 
-	/**
+    # /**
 	 * Create an external location in the indicated external parent namespace 
 	 * and identified by {@code extLabel} and/or its memory address
 	 * {@code extAddr}.  Either or both {@code extLabel} or {@code extAddr} must be specified.
@@ -212,7 +212,7 @@ public interface ExternalManager {
 	public ExternalLocation addExtLocation(Namespace extNamespace, String extLabel, Address extAddr,
 			SourceType sourceType) throws InvalidInputException;
 
-	/**
+    # /**
 	 * Get or create an external location in the indicated external parent namespace 
 	 * and identified by {@code extLabel} and/or its memory address
 	 * {@code extAddr}.  Either or both {@code extLabel} or {@code extAddr} must be specified.
@@ -232,7 +232,7 @@ public interface ExternalManager {
 			SourceType sourceType, boolean reuseExisting)
 			throws InvalidInputException;
 
-	/**
+    # /**
 	 * Create an external {@link Function} in the external {@link Library} namespace 
 	 * {@code libararyName} and identified by {@code extLabel} and/or its memory address
 	 * {@code extAddr}.  Either or both {@code extLabel} or {@code extAddr} must be specified.
@@ -250,7 +250,7 @@ public interface ExternalManager {
 	public ExternalLocation addExtFunction(String libraryName, String extLabel, Address extAddr,
 			SourceType sourceType) throws InvalidInputException, DuplicateNameException;
 
-	/**
+    # /**
 	 * Create an external {@link Function} in the indicated external parent namespace 
 	 * and identified by {@code extLabel} and/or its memory address
 	 * {@code extAddr}.  Either or both {@code extLabel} or {@code extAddr} must be specified.
@@ -267,7 +267,7 @@ public interface ExternalManager {
 	public ExternalLocation addExtFunction(Namespace extNamespace, String extLabel, Address extAddr,
 			SourceType sourceType) throws InvalidInputException;
 
-	/**
+    # /**
 	 * Get or create an external {@link Function} in the indicated external parent namespace 
 	 * and identified by {@code extLabel} and/or its memory address
 	 * {@code extAddr}.  Either or both {@code extLabel} or {@code extAddr} must be specified.

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.line;
 
-import java.io.IOException;
+
 
 public class DWARFLineException extends IOException {
 

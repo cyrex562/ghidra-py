@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -46,10 +46,10 @@ import ghidra.sleigh.grammar.SleighParser_SemanticParser.semantic_return;
 import ghidra.util.exception.AssertException;
 
 # /**
- * This class is intended to parse p-code snippets, typically from compiler specification files or
- * extensions. This is outside the normal SLEIGH compilation process, and the parser is built on top
- * of an existing SleighLanguage.
- */
+# * This class is intended to parse p-code snippets, typically from compiler specification files or
+# * extensions. This is outside the normal SLEIGH compilation process, and the parser is built on top
+# * of an existing SleighLanguage.
+# */
 public class PcodeParser extends PcodeCompile {
 
 	private SleighBase sleigh;
@@ -66,7 +66,7 @@ public class PcodeParser extends PcodeCompile {
 		initializeSymbols();
 	}
 
-	/**
+    # /**
 	 * Build parser from an existing SleighLanguage.
 	 * 
 	 * @param language is the existing language
@@ -91,7 +91,7 @@ public class PcodeParser extends PcodeCompile {
 			new FlowDestSymbol(internalLoc, "inst_dest", getConstantSpace()));
 	}
 
-	/**
+    # /**
 	 * Inject a symbol representing an "operand" to the pcode snippet.
 	 * 
 	 * <p>
@@ -224,7 +224,7 @@ public class PcodeParser extends PcodeCompile {
 		return translateConstructTpl(rtl);
 	}
 
-	/**
+    # /**
 	 * This class wraps on existing SleighLanguage with the SleighBase interface expected by
 	 * PcodeCompile. It populates the symbol table with user-defined operations and the global
 	 * VarnodeSymbol objects, which typically includes all the general purpose registers.
@@ -278,7 +278,7 @@ public class PcodeParser extends PcodeCompile {
 			setDefaultSpace(language.getDefaultSpace().getUnique());
 		}
 
-		/**
+	    # /**
 		 * Populate the predefined symbol table for the parser from the given SLEIGH language. We
 		 * only use user-defined op symbols and varnode symbols.
 		 * 
@@ -386,7 +386,7 @@ public class PcodeParser extends PcodeCompile {
 			constTpl.getHandleIndex(), select);
 	}
 
-	/**
+    # /**
 	 * Compile pcode semantic statements.
 	 * 
 	 * @param pcodeStatements is the raw source to parse

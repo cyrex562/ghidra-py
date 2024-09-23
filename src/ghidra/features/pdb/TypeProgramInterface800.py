@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 # /**
@@ -26,7 +26,7 @@ public class TypeProgramInterface800 extends TypeProgramInterface {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb {@link AbstractPdb} that owns this {@link TypeProgramInterface}
 	 * @param recordCategory the RecordCategory of these records

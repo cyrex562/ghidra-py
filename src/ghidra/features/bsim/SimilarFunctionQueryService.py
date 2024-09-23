@@ -55,7 +55,7 @@ public class SimilarFunctionQueryService implements AutoCloseable {
 		numStages = 0;
 	}
 
-	/**
+    # /**
 	 * Given a list of functions to query, prepare the final QueryNearest object which will be marshalled to the
 	 * server.  This involves generating the signatures for each of the function and accumulating their
 	 * FunctionDescriptions
@@ -96,7 +96,7 @@ public class SimilarFunctionQueryService implements AutoCloseable {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Issue password change request to the server
 	 * @param username to change
 	 * @param newPassword is password data
@@ -117,7 +117,7 @@ public class SimilarFunctionQueryService implements AutoCloseable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Query the given server with the parameters provider by <tt>queryInfo</tt>.
 	 * 
 	 * @param queryInfo a query info object containing the settings for the query
@@ -182,7 +182,7 @@ public class SimilarFunctionQueryService implements AutoCloseable {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Query the given server for similar function overview information
 	 * @param overviewInfo is details of the overview query
 	 * @param listener is the listener to be informed of the query status and incremental results 
@@ -230,7 +230,7 @@ public class SimilarFunctionQueryService implements AutoCloseable {
 		return response;
 	}
 
-	/**
+    # /**
 	 * A lower-level (more flexible) query of the database.  The query is not staged.
 	 * @param query is the raw query information
 	 * @param stagingManager is how to split up the query, can be null
@@ -337,7 +337,7 @@ public class SimilarFunctionQueryService implements AutoCloseable {
 		return globalResponse;
 	}
 
-	/**
+    # /**
 	 * Return the {@link BSimServerInfo server info object} for this database
 	 * @return the server info object or null if not currently associated with 
 	 * a {@link FunctionDatabase}.
@@ -391,7 +391,7 @@ public class SimilarFunctionQueryService implements AutoCloseable {
 		return database.getLastError();
 	}
 
-	/**
+    # /**
 	 * Returns a string explaining the database compatibility between this client and the server.
 	 * 
 	 * @return a string explaining the compatibility, or null if it could not be determined
@@ -518,7 +518,7 @@ public class SimilarFunctionQueryService implements AutoCloseable {
 // Inner Classes
 //==================================================================================================
 
-	/**
+    # /**
 	 * A dumby listener that will be called as incremental results arrive from database queries.  
 	 * No action is tacken for all results
 	 * @param <R> the final result implementation class.

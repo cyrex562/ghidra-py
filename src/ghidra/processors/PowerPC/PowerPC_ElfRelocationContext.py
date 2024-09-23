@@ -41,7 +41,7 @@ public class PowerPC_ElfRelocationContext
 		super(handler, loadHelper, symbolMap);
 	}
 
-	/**
+    # /**
 	 * Get or establish _SDA_BASE_ value and apply as r13 context value to all memory blocks
 	 * with execute permission.
 	 * @return _SDA_BASE_ offset or null if unable to determine or establish
@@ -62,7 +62,7 @@ public class PowerPC_ElfRelocationContext
 		return sdaBase;
 	}
 
-	/**
+    # /**
 	 * Get or establish _SDA2_BASE_ value and apply as r2 context value to all memory blocks
 	 * with execute permission.
 	 * @return _SDA2_BASE_ offset or null if unable to determine or establish
@@ -83,7 +83,7 @@ public class PowerPC_ElfRelocationContext
 		return sda2Base;
 	}
 
-	/**
+    # /**
 	 * Apply register context to all memory blocks which satisfy blockPredicate check.
 	 * @param regName register name
 	 * @param value context value
@@ -103,7 +103,7 @@ public class PowerPC_ElfRelocationContext
 		}
 	}
 
-	/**
+    # /**
 	 * Establish base offset from symbol or range of specified memory blocks.
 	 * @param symbolName base symbol name
 	 * @param blockNames block names which may be used to establish base range

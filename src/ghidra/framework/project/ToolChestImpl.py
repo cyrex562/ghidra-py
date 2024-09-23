@@ -30,7 +30,7 @@ class ToolChestImpl implements ToolChest {
 	private List<ToolChestChangeListener> listeners;
 	private Map<String, ToolTemplate> map;
 
-	/**
+    # /**
 	 * Construct user's tool chest.
 	 */
 	ToolChestImpl() {
@@ -53,7 +53,7 @@ class ToolChestImpl implements ToolChest {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the tool template for the given tool name.
 	 * @return null if there is no tool template for the given
 	 * toolName.
@@ -63,7 +63,7 @@ class ToolChestImpl implements ToolChest {
 		return map.get(toolName);
 	}
 
-	/**
+    # /**
 	 * Get the ToolConfigs from the tool chest.
 	 * @return zero-length array if there are no ToolConfigs in the
 	 * tool chest.
@@ -76,7 +76,7 @@ class ToolChestImpl implements ToolChest {
 		return templates;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.framework.model.ToolChest#getToolCount()
 	 */
 	@Override
@@ -84,7 +84,7 @@ class ToolChestImpl implements ToolChest {
 		return map.size();
 	}
 
-	/**
+    # /**
 	 * Remove tool template from the tool chest.
 	 * @return true if the template was removed from the tool chest.
 	 */
@@ -140,7 +140,7 @@ class ToolChestImpl implements ToolChest {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns a string representation of the object. In general, the
 	 * <code>toString</code> method returns a string that
 	 * "textually represents" this object. The result should

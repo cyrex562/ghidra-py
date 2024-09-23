@@ -256,7 +256,7 @@ public class ListingGraphComponentPanel extends AbstractGraphComponentPanel {
 		toolTipComponent = panel;
 	}
 
-	/**
+    # /**
 	 * Signals to rebuild this component's data model.  This call should not do any real work
 	 * if the model is not 'dirty'.
 	 */

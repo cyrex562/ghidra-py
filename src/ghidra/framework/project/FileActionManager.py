@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.Icon;
@@ -76,7 +76,7 @@ class FileActionManager {
 		createActions();
 	}
 
-	/**
+    # /**
 	 * creates all the menu items for the File menu
 	 */
 	private void createActions() {
@@ -146,7 +146,7 @@ class FileActionManager {
 		tool.addAction(deleteAction);
 	}
 
-	/**
+    # /**
 	 * creates the recent projects menu
 	 */
 	void buildRecentProjectsMenu() {
@@ -169,7 +169,7 @@ class FileActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new project using a wizard to get the project information.
 	 */
 	void newProject() {
@@ -269,7 +269,7 @@ class FileActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Opens the given project in a task that will show a dialog to block input while opening
 	 * the project in the swing thread.
 	 * @param projectLocator the project locator
@@ -281,7 +281,7 @@ class FileActionManager {
 		return openRunnable.getResult();
 	}
 
-	/**
+    # /**
 	 * Open an existing project, using a file chooser to specify where the
 	 * existing project folder is stored.
 	 * @param projectLocator the project locator
@@ -344,7 +344,7 @@ class FileActionManager {
 		return openStatus;
 	}
 
-	/**
+    # /**
 	 * Obtain domain objects from files and lock.  If unable to lock 
 	 * one or more of the files, none are locked and null is returned.
 	 * @param files the files
@@ -409,7 +409,7 @@ class FileActionManager {
 		return domainObjects;
 	}
 
-	/**
+    # /**
 	 * menu listener for File | Close Project...
 	 * <p>
 	 * This method will always save the FrontEndTool and project, but not the data unless 
@@ -544,7 +544,7 @@ class FileActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * menu listener for File | Save Project
 	 */
 	void saveProject() {
@@ -572,7 +572,7 @@ class FileActionManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * menu listener for File | Delete Project...
 	 */
 	private void deleteProject() {
@@ -658,7 +658,7 @@ class FileActionManager {
 		saveAction.setEnabled(enabled);
 	}
 
-	/**
+    # /**
 	 * Checks the list for read-only files; if any are found, pops up
 	 * a dialog for whether to save now or lose changes.
 	 * @param objs list of files which correspond to modified 
@@ -703,7 +703,7 @@ class FileActionManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Fire the project opened event
 	 * @param project project being opened
 	 */
@@ -713,7 +713,7 @@ class FileActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Fire the project closed event.
 	 * @param project project being closed
 	 */
@@ -723,7 +723,7 @@ class FileActionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Action for a recently opened project.
 	 *
 	 */

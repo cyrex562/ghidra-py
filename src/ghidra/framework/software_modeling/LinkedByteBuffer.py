@@ -1,32 +1,32 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 # /**
- * A byte buffer that is stored as a linked list of pages.  Each page holds BUFFER_SIZE bytes.
- * A Position object acts as an iterator over the whole buffer.  The buffer can be populated
- * from a stream, either all at once or "as needed" when a Position object iterates past
- * the current cached set of bytes.
- */
+# * A byte buffer that is stored as a linked list of pages.  Each page holds BUFFER_SIZE bytes.
+# * A Position object acts as an iterator over the whole buffer.  The buffer can be populated
+# * from a stream, either all at once or "as needed" when a Position object iterates past
+# * the current cached set of bytes.
+# */
 public class LinkedByteBuffer {
 
-	/**
+    # /**
 	 * An iterator into the byte buffer
 	 */
 	public static class Position {
@@ -35,7 +35,7 @@ public class LinkedByteBuffer {
 		public byte[] array;				// The byte data of the current page
 		public int current;					// Position within page of current byte
 
-		/**
+	    # /**
 		 * Set this to be a copy of another Position
 		 * @param pos is the Position being copied
 		 */
@@ -45,7 +45,7 @@ public class LinkedByteBuffer {
 			current = pos.current;
 		}
 
-		/**
+	    # /**
 		 * Return the byte at the current Position. Do not advance the Position.
 		 * @return the byte at this Position
 		 */
@@ -53,7 +53,7 @@ public class LinkedByteBuffer {
 			return array[current];
 		}
 
-		/**
+	    # /**
 		 * Lookahead exactly one byte, without advancing this Position
 		 * @return the byte after the one at this Position
 		 * @throws DecoderException if the end of stream is reached
@@ -70,7 +70,7 @@ public class LinkedByteBuffer {
 			return array[plus1];
 		}
 
-		/**
+	    # /**
 		 * Advance this Position by exactly one byte and return the next byte.
 		 * @return the next byte
 		 * @throws DecoderException if the end of stream is reached
@@ -92,7 +92,7 @@ public class LinkedByteBuffer {
 			return res;
 		}
 
-		/**
+	    # /**
 		 * Advance this Position by the specified number of bytes
 		 * @param skip is the specified number of bytes to advance
 		 * @throws DecoderException if the end of stream is reached
@@ -113,7 +113,7 @@ public class LinkedByteBuffer {
 		}
 	}
 
-	/**
+    # /**
 	 * A linked-list page node
 	 */
 	public static class ArrayIter {
@@ -144,7 +144,7 @@ public class LinkedByteBuffer {
 		description = desc;
 	}
 
-	/**
+    # /**
 	 * Close the "as needed" stream, if configure.
 	 * @throws IOException for problems closing the stream
 	 */
@@ -154,7 +154,7 @@ public class LinkedByteBuffer {
 		}
 	}
 
-	/**
+    # /**
 	 * Set up this buffer so that it reads in pages as needed.  The initial page is read
 	 * immediately.  Additional pages are read via readNextPage() through the Position methods.
 	 * @param stream is the stream to read from
@@ -171,7 +171,7 @@ public class LinkedByteBuffer {
 		initialBuffer = null;		// Let garbage collection pick up pages that are already parsed
 	}
 
-	/**
+    # /**
 	 * Ingest stream up to the first 0 byte or until maxCount bytes is reached.
 	 * Store the bytes on the heap in BUFFER_SIZE chunks.
 	 * @param stream is the input
@@ -206,7 +206,7 @@ public class LinkedByteBuffer {
 		}
 	}
 
-	/**
+    # /**
 	 * Read a page of data into the given buffer.  The buffer must already be allocated and
 	 * will be entirely filled, unless end-of-stream is reached.  The number of bytes
 	 * actually read into the buffer is returned.
@@ -233,7 +233,7 @@ public class LinkedByteBuffer {
 		return pos;
 	}
 
-	/**
+    # /**
 	 * Read the stream until the end of stream is encountered or until maxCount bytes is reached.
 	 * Store the bytes on the heap in BUFFER_SIZE chunks.
 	 * @param stream is the input
@@ -254,7 +254,7 @@ public class LinkedByteBuffer {
 		}
 	}
 
-	/**
+    # /**
 	 * Ingest bytes directly from a byte array.
 	 * If these bytes would cause the total number of bytes ingested to exceed
 	 * the maximum (maxCount) bytes set for this buffer, an exception is thrown.
@@ -282,7 +282,7 @@ public class LinkedByteBuffer {
 		}
 	}
 
-	/**
+    # /**
 	 * Add the padValue to the end of the buffer
 	 */
 	public void pad() {
@@ -303,7 +303,7 @@ public class LinkedByteBuffer {
 		position.seqIter = initialBuffer;
 	}
 
-	/**
+    # /**
 	 * Read the next page of data.  The new ArrayIter is added to the linked list, its
 	 * byte buffer is allocated, and data is read into the buffer.
 	 * If the end of stream is reached, padding is added.

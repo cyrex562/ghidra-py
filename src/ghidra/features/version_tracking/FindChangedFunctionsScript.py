@@ -89,7 +89,7 @@ public class FindChangedFunctionsScript extends AbstractGhidraVersionTrackingScr
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if one of the programs is locked.
 	 * <p>
 	 * Note: calling {@link Program#isLocked()} does not work here; we must

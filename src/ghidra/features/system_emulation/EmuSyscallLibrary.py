@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.emu.sys;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
@@ -51,7 +51,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 	String SYSCALL_SPACE_NAME = "syscall";
 	String SYSCALL_CONVENTION_NAME = "syscall";
 
-	/**
+    # /**
 	 * Derive a syscall number to name map from the specification in a given file.
 	 * 
 	 * @param dataFileName the file name to be found in a modules data directory
@@ -88,7 +88,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Scrape functions from the given program's "syscall" space.
 	 * 
 	 * @param program the program
@@ -116,7 +116,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Derive a syscall number to name map by scraping functions in the program's "syscall" space.
 	 * 
 	 * @param program the program, likely analyzed for system calls already
@@ -128,7 +128,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 				.collect(Collectors.toMap(Entry::getKey, e -> e.getValue().getName()));
 	}
 
-	/**
+    # /**
 	 * Derive a syscall number to calling convention map by scraping functions in the program's
 	 * "syscall" space.
 	 * 
@@ -141,7 +141,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 				.collect(Collectors.toMap(Entry::getKey, e -> e.getValue().getCallingConvention()));
 	}
 
-	/**
+    # /**
 	 * The {@link EmuSyscallLibrary#syscall(PcodeExecutor, PcodeUseropLibrary)} method wrapped as a
 	 * userop definition
 	 * 
@@ -171,13 +171,13 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * The definition of a system call
 	 * 
 	 * @param <T> the type of data processed by the system call, typically {@code byte[]}.
 	 */
 	interface EmuSyscallDefinition<T> {
-		/**
+	    # /**
 		 * Invoke the system call
 		 * 
 		 * @param executor the executor for the system/thread invoking the call
@@ -186,7 +186,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 		void invoke(PcodeExecutor<T> executor, PcodeUseropLibrary<T> library);
 	}
 
-	/**
+    # /**
 	 * In case this is not an {@link AnnotatedEmuSyscallUseropLibrary} or
 	 * {@link AnnotatedPcodeUseropLibrary}, get the definition of the "syscall" userop for inclusion
 	 * in the {@link PcodeUseropLibrary}.
@@ -201,7 +201,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 		return new SyscallPcodeUseropDefinition<>(this);
 	};
 
-	/**
+    # /**
 	 * Retrieve the desired system call number according to the emulated system's conventions
 	 * 
 	 * <p>
@@ -215,7 +215,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 	 */
 	long readSyscallNumber(PcodeExecutorState<T> state, Reason reason);
 
-	/**
+    # /**
 	 * Try to handle an error, usually by returning it to the user program
 	 * 
 	 * <p>
@@ -229,7 +229,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 	 */
 	boolean handleError(PcodeExecutor<T> executor, PcodeExecutionException err);
 
-	/**
+    # /**
 	 * The entry point for executing a system call on the given executor
 	 * 
 	 * <p>
@@ -259,7 +259,7 @@ public interface EmuSyscallLibrary<T> extends PcodeUseropLibrary<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the map of syscalls by number
 	 * 
 	 * <p>

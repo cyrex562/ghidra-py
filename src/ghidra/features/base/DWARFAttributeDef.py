@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf.attribs;
 
 import static ghidra.app.util.bin.format.dwarf.attribs.DWARFForm.*;
 
-import java.io.IOException;
+
 import java.util.Objects;
 import java.util.function.Function;
 

@@ -142,7 +142,7 @@ public class PcodeOpEmitter {
 		}
 	}
 
-	/**
+    # /**
 	 * Emits pcode to push a value of computational category 1 onto the stack.
 	 * @param valueName - name of varnode to push.
 	 */
@@ -160,7 +160,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Emits pcode to push a value of computational category 2 onto the stack.
 	 * @param valueName - name of varnode to push.
 	 */
@@ -178,7 +178,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Emits pcode to pop a value of computational category 2 from the stack.
 	 * @param destName - name of destination varnode.
 	 */
@@ -196,7 +196,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Emits pcode to pop a value of computational category 1 from the stack.
 	 * @param destName - name of destination varnode.
 	 */
@@ -214,7 +214,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Emits pcode to assign four bytes resulting from a call to a black-box pcodeop
 	 * @param varnodeName - varnode name for holding result
 	 * @param size - the size of the result
@@ -246,7 +246,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Emits pcode to call a void black-box pcodeop
 	 * @param pcodeop - name of pcodeop
 	 * @param args - zero or more arguments for the pcodeop
@@ -262,7 +262,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Appends the pcode to assign an integer constant to a register
 	 * @param register
 	 * @param constant
@@ -275,7 +275,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Appends the pcode to assign a register to the result of a pcode op call with arguments args
 	 * @param register
 	 * @param pcodeop
@@ -306,7 +306,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Appends the pcode to write to a value at an offset of a memory space
 	 * @param space name of space
 	 * @param size size of write
@@ -331,7 +331,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Appends the pcode to emit an indirect call
 	 * @param target varnode to call indirectly
 	 */
@@ -342,7 +342,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Appends the pcode to sign-extend the value src into dest
 	 * @param dest target varnode
 	 * @param size size of target varnode
@@ -356,7 +356,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Appends the pcode to zero-extend the value src into dest
 	 * @param dest target varnode
 	 * @param size size of target varnode
@@ -370,7 +370,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Appends the pcode truncate src into dest
 	 * @param dest target varnode
 	 * @param size size of target varnode
@@ -385,7 +385,7 @@ public class PcodeOpEmitter {
 		opList.add(op);
 	}
 
-	/**
+    # /**
 	 * Appends the pcode to assign a varnode from a dereference of another varnode
 	 * @param lhs target varnode
 	 * @param size size of pointed-to value

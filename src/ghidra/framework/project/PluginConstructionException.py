@@ -26,7 +26,7 @@ import ghidra.util.exception.UsrException;
  */
 public class PluginConstructionException extends UsrException {
 
-	/**
+    # /**
 	 * Construct a new exception.
 	 * @param className name of the plugin class that failed to load
 	 * @param details details of the construction failure

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.lzss;
 
-import java.io.*;
+
 import java.nio.ByteBuffer;
 
 # /**
@@ -46,20 +46,20 @@ public class LzssCodec {
 		return b < 0 ? b + 256 : b;
 	}
 
-	/** size of ring buffer - must be power of 2 */
+    # /** size of ring buffer - must be power of 2 */
 	public static final int N = 4096;
-	/** upper limit for match_length */
+    # /** upper limit for match_length */
 	public static final int F = 18;
-	/**
+    # /**
 	 * encode string into position and length if match_length is greater than
 	 * this
 	 */
 	public static final int THRESHOLD = 2;
-	/** index for root of binary search trees */
+    # /** index for root of binary search trees */
 	public static final int NIL = N;
 
 	private static class EncodeState {
-		/**
+	    # /**
 		 * initialize state, mostly the trees
 		 * 
 		 * For i = 0 to N - 1, rchild[i] and lchild[i] will be the right and
@@ -317,7 +317,7 @@ public class LzssCodec {
 				sp.deleteNode(s); /* Delete old strings and */
 				sp.textBuf.put(s, (byte) c); /* read new bytes */
 
-				/**
+			    # /**
 				 * If the position is near the end of the buffer, extend the
 				 * buffer to make string comparison easier.
 				 */

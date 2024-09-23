@@ -37,14 +37,14 @@ public class GroupedFunctionGraphVertex extends AbstractFunctionGraphVertex {
 
 	private final Set<FGVertex> vertices;
 
-	/**
+    # /**
 	 * The edges that existed before this group node was created
 	 * 
 	 * @see #convertGroupedEdge(FGEdge, Set)
 	 */
 	private Set<FGEdge> ungroupedEdges;
 
-	/**
+    # /**
 	 * We need this in the use case that we do NOT relayout the graph each time we group. These
 	 * values allow us to restore the vertices to the place from whence they came (even though 
 	 * the locations may be irrelevant).
@@ -104,7 +104,7 @@ public class GroupedFunctionGraphVertex extends AbstractFunctionGraphVertex {
 		return updatedEdges;
 	}
 
-	/**
+    # /**
 	 * Seriously complicated algorithm (conceptually) to ensure that we never store in our 
 	 * collection of ungrouped edges (which we may sometime have to re-install) any group vertex, 
 	 * as when we go to restore the edges, we do not know how to do so if the group is no 
@@ -210,7 +210,7 @@ public class GroupedFunctionGraphVertex extends AbstractFunctionGraphVertex {
 		return newVertex;
 	}
 
-	/**
+    # /**
 	 * Creates a new group based upon this one, but with the given vertices (and incident edges)
 	 * removed. 
 	 * 

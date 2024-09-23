@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 import java.util.function.Supplier;
 
 import generic.io.NullWriter;

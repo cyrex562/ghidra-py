@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import generic.lsh.vector.LSHVectorFactory;
@@ -38,7 +38,7 @@ public class QueryExeInfo extends BSimQuery<ResponseExe> {
 	public boolean includeFakes;
 	public boolean fillinCategories;
 
-	/**
+    # /**
 	 * Default query for the first 20 executables in the database
 	 */
 	public QueryExeInfo() {
@@ -53,7 +53,7 @@ public class QueryExeInfo extends BSimQuery<ResponseExe> {
 		this.fillinCategories = true;
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param limit the max number of results to return

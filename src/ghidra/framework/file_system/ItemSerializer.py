@@ -21,7 +21,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.IOCancelledException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.*;
+
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 

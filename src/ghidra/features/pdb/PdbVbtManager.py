@@ -93,7 +93,7 @@ public class PdbVbtManager extends VbtManager {
 		return myAddressByMangledName;
 	}
 
-	/**
+    # /**
 	 * Virtual Base Table Lookup Manager
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working.
 	 * @throws PdbException If Program is null;
@@ -111,7 +111,7 @@ public class PdbVbtManager extends VbtManager {
 		this.addressByMangledName = addressByMangledName;
 	}
 
-//	/**
+//    # /**
 //	 * Builds the tables
 //	 * @throws PdbException If Program is null;
 //	 * @throws CancelledException upon user cancellation.
@@ -148,7 +148,7 @@ public class PdbVbtManager extends VbtManager {
 		return (PdbVirtualBaseTable) vbt;
 	}
 
-	/**
+    # /**
 	 * Returns offset for vbtable (mangled name) and ordinal
 	 * @param vbtMangledName mangled name of vbtable
 	 * @param ordinal index into table
@@ -165,7 +165,7 @@ public class PdbVbtManager extends VbtManager {
 		return getOffset(address, ordinal, size);
 	}
 
-	/**
+    # /**
 	 * Returns the offset from the virtual base table entry
 	 * @param address Address of virtual base table
 	 * @param ordinal index into table

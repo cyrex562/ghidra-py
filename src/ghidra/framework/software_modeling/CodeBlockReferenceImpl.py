@@ -51,7 +51,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 	// that causes flows to the destination block.
 	private Address referent;
 
-	/**
+    # /**
 	 * Constructor for a CodeBlockReferenceImpl
 	 * @param source source block for this flow
 	 * @param destination destination block for this flow
@@ -68,7 +68,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 		this.flowType = flowType;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockReference#getSourceBlock()
 	 */
 	@Override
@@ -76,7 +76,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 		return getBlock(source, destination, referent);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockReference#getDestinationBlock()
 	 */
 	@Override
@@ -84,7 +84,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 		return getBlock(destination, source, reference);
 	}
 
-	/**
+    # /**
 	 * Gets the block (source or destination).  If the block is needed,
 	 * assume we have the blockHave and compute blockNeeded using that block.
 	 * 
@@ -122,7 +122,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 		return blockNeeded;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockReference#getFlowType()
 	 */
 	@Override
@@ -130,7 +130,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 		return flowType;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockReference#getReference()
 	 */
 	@Override
@@ -138,7 +138,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 		return reference;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockReference#getReferent()
 	 */
 	@Override
@@ -146,7 +146,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 		return referent;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockReference#getSourceAddress()
 	 */
 	@Override
@@ -158,7 +158,7 @@ public class CodeBlockReferenceImpl implements CodeBlockReference {
 		return referent;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockReference#getDestinationAddress()
 	 */
 	@Override

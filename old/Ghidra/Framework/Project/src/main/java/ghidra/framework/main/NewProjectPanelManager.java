@@ -16,7 +16,7 @@
 package ghidra.framework.main;
 
 import java.awt.Dimension;
-import java.io.IOException;
+
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 

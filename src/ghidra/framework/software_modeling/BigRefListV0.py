@@ -21,7 +21,7 @@
  */
 package ghidra.program.database.references;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import db.*;
@@ -57,7 +57,7 @@ class BigRefListV0 extends RefList {
 	private Table table;
 	private DBRecord record;
 
-	/**
+    # /**
 	 * Construct new empty reference list
 	 * @param address address associated with this list
 	 * @param adapter entry record storage adapter
@@ -75,7 +75,7 @@ class BigRefListV0 extends RefList {
 				.createTable(getTableName(), BIG_REFS_SCHEMA, new int[] { ADDRESS_COL });
 	}
 
-	/**
+    # /**
 	 * Construct reference list for existing record
 	 * @param rec existing refList record
 	 * @param adapter entry record storage adapter

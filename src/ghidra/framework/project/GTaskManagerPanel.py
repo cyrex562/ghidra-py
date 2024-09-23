@@ -86,7 +86,7 @@ public class GTaskManagerPanel extends JPanel {
 
 	}
 
-	/**
+    # /**
 	 * Turns on or off animations.
 	 * @param b if true, the component will use animation.
 	 */
@@ -94,7 +94,7 @@ public class GTaskManagerPanel extends JPanel {
 		taskViewer.setUseAnimations(b);
 	}
 
-	/**
+    # /**
 	 * Turns on or off the display of the task results panel.
 	 * @param b if true, displays the task results panel.
 	 */

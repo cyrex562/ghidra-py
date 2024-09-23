@@ -55,7 +55,7 @@ public class PluginInstallerDialog extends DialogComponentProvider {
 	private PluginDetailsPanel detailsPanel;
 	private GTable table;
 
-	/**
+    # /**
 	 * Constructs a new provider.
 	 *
 	 * @param title the title of the provider
@@ -92,7 +92,7 @@ public class PluginInstallerDialog extends DialogComponentProvider {
 		tableFilterPanel.dispose();
 	}
 
-	/**
+    # /**
 	 * Returns the details panel.
 	 * <p>
 	 * Note: This is primarily for test access
@@ -103,7 +103,7 @@ public class PluginInstallerDialog extends DialogComponentProvider {
 		return detailsPanel;
 	}
 
-	/**
+    # /**
 	 * Returns the filter panel.
 	 * <p>
 	 * Note: This is primarily for test access
@@ -118,7 +118,7 @@ public class PluginInstallerDialog extends DialogComponentProvider {
 		return model;
 	}
 
-	/**
+    # /**
 	 * Returns the main panel for this dialog.
 	 */
 	private JComponent getWorkPanel() {
@@ -137,7 +137,7 @@ public class PluginInstallerDialog extends DialogComponentProvider {
 		return mainPanel;
 	}
 
-	/**
+    # /**
 	 * Creates the panel containing the table of plugins.
 	 */
 	private JPanel createPluginTablePanel(PluginDetailsPanel pluginDetailsPanel) {
@@ -192,7 +192,7 @@ public class PluginInstallerDialog extends DialogComponentProvider {
 		return pluginTablePanel;
 	}
 
-	/**
+    # /**
 	 * Renderer for the status column in the table.
 	 */
 	private class StatusCellRenderer extends GTableCellRenderer {
@@ -224,7 +224,7 @@ public class PluginInstallerDialog extends DialogComponentProvider {
 		}
 	}
 
-	/**
+    # /**
 	 * Renderer for the plugin name column.
 	 */
 	private class NameCellRenderer extends GTableCellRenderer {

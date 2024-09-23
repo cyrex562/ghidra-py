@@ -47,7 +47,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public abstract class ConvertConstantAction extends AbstractDecompilerAction {
 
-	/**
+    # /**
 	 * Max instructions to search through, when looking for a scalar match in the listing
 	 * that corresponds with the selected constant in the decompiler window.
 	 */
@@ -58,7 +58,7 @@ public abstract class ConvertConstantAction extends AbstractDecompilerAction {
 	private FontMetrics metrics = null;
 	private int convertType;				// The EquateSymbol conversion type performed by the action
 
-	/**
+    # /**
 	 * A helper class describing a (matching) scalar operand
 	 */
 	private static class ScalarMatch {
@@ -107,7 +107,7 @@ public abstract class ConvertConstantAction extends AbstractDecompilerAction {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Find a scalar in the instruction matching one of the given values.
 	 * Return an object describing the match or null if there is no match.
 	 * @param instr is the instruction
@@ -137,7 +137,7 @@ public abstract class ConvertConstantAction extends AbstractDecompilerAction {
 		return scalarMatch;
 	}
 
-	/**
+    # /**
 	 * Find a scalar (instruction operand) that matches the given constant Varnode.
 	 * We walk backward from the starting address inspecting operands until a match is found.
 	 * The search is terminated if either a match is found, the beginning of the basic block
@@ -196,7 +196,7 @@ public abstract class ConvertConstantAction extends AbstractDecompilerAction {
 		return scalarMatch;
 	}
 
-	/**
+    # /**
 	 * Given the context, set up the task object that will execute the conversion.
 	 * If setupFinal toggle is false, only enough of the task is set up to complete
 	 * the isEnabled test for the action.  Otherwise the whole task is set up, ready for runTask().
@@ -346,7 +346,7 @@ public abstract class ConvertConstantAction extends AbstractDecompilerAction {
 		task.runTask();
 	}
 
-	/**
+    # /**
 	 * The menu option for this kind of action is intended to look like:
 	 *    {@literal Hexadecimal: 0x2408}
 	 *  This method establishes the first part of this string, up to the colon.
@@ -354,7 +354,7 @@ public abstract class ConvertConstantAction extends AbstractDecompilerAction {
 	 */
 	public abstract String getMenuPrefix();
 
-	/**
+    # /**
 	 * The menu option for this kind of action is intended to look like:
 	 *    {@literal Hexadecimal: 0x2408}
 	 * This method constructs the final part of this string, after the colon by
@@ -367,7 +367,7 @@ public abstract class ConvertConstantAction extends AbstractDecompilerAction {
 	 */
 	public abstract String getMenuDisplay(long value, int size, boolean isSigned, Program program);
 
-	/**
+    # /**
 	 * Construct the name of the Equate, either absolutely for a conversion or
 	 * by preventing the user with a dialog to select a name.
 	 * @param value is the value being converted

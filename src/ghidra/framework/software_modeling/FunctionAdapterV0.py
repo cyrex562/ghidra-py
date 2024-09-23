@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.function;
 
 import ghidra.program.database.map.AddressMap;
 import ghidra.util.exception.VersionException;
 
-import java.io.IOException;
+
 
 import db.*;
 
@@ -54,7 +54,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 
 	private Table table;
 
-	/**
+    # /**
 	 * 
 	 * @param dbHandle
 	 * @param addrMap
@@ -73,7 +73,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionAdapter#deleteTable(db.DBHandle)
 	 */
 	@Override
@@ -81,7 +81,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 		handle.deleteTable(FUNCTIONS_TABLE_NAME);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionAdapter#getRecordCount()
 	 */
 	@Override
@@ -89,7 +89,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 		return table.getRecordCount();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionAdapter#removeFunctionRecord(long)
 	 */
 	@Override
@@ -98,7 +98,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionAdapter#getFunctionRecord(long)
 	 */
 	@Override
@@ -107,7 +107,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 		return translateRecord(oldRecord);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionAdapter#updateFunctionRecord(db.DBRecord)
 	 */
 	@Override
@@ -116,7 +116,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionAdapter#createFunctionRecord(ghidra.program.model.symbol.Scope, long)
 	 */
 	@Override
@@ -129,7 +129,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionAdapter#iterateFunctionRecords()
 	 */
 	@Override
@@ -137,7 +137,7 @@ class FunctionAdapterV0 extends FunctionAdapter {
 		return new TranslatedRecordIterator(table.iterator());
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionAdapter#translateRecord(db.DBRecord)
 	 */
 	@Override

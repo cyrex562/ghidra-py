@@ -21,14 +21,14 @@ public class WrappedActionTrigger implements WrappedOption {
 
 	private ActionTrigger actionTrigger;
 
-	/**
+    # /**
 	 * Default constructor
 	 */
 	WrappedActionTrigger() {
 		// for reflection
 	}
 
-	/**
+    # /**
 	 * Construct a wrapper object using the given ActionTrigger.
 	 * @param actionTrigger the action trigger
 	 */

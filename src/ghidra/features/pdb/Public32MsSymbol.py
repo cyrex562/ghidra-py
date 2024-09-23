@@ -27,7 +27,7 @@ public class Public32MsSymbol extends AbstractPublic32MsSymbol {
 
 	public static final int PDB_ID = 0x110e;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

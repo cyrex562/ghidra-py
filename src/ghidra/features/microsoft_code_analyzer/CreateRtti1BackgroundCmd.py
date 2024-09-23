@@ -34,7 +34,7 @@ public class CreateRtti1BackgroundCmd extends AbstractCreateDataBackgroundCmd<Rt
 
 	private static final String RTTI_1_NAME = "RTTI Base Class Descriptor";
 
-	/**
+    # /**
 	 * Constructs a command for applying an RTTI1 dataType at an address.
 	 * @param address the address where the data should be created using the data type.
 	 * @param validationOptions the options for controlling how validation is performed when 
@@ -48,7 +48,7 @@ public class CreateRtti1BackgroundCmd extends AbstractCreateDataBackgroundCmd<Rt
 		super(Rtti1Model.DATA_TYPE_NAME, address, 1, validationOptions, applyOptions);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying an RTTI1 dataType at the address indicated by the 
 	 * model.
 	 * @param rtti1Model the model for the data type

@@ -78,7 +78,7 @@ class ToolConnectionPanel extends JPanel implements ListSelectionListener {
 		updateDisplay();
 	}
 
-	/**
+    # /**
 	 * Update the list of tools. If any selections were made,
 	 * restore them. This method is called because tools were either
 	 * added or removed.
@@ -110,7 +110,7 @@ class ToolConnectionPanel extends JPanel implements ListSelectionListener {
 		validate();
 	}
 
-	/**
+    # /**
 	 * Populate the lists according to the type of panel.
 	 */
 	void showData() {
@@ -127,7 +127,7 @@ class ToolConnectionPanel extends JPanel implements ListSelectionListener {
 		this.producerModel.clear();
 	}
 
-	/**
+    # /**
 	 * Tool was added to the workspace; update the display.
 	 * @param tool tool added
 	 */
@@ -143,7 +143,7 @@ class ToolConnectionPanel extends JPanel implements ListSelectionListener {
 		validate();
 	}
 
-	/**
+    # /**
 	 * Tool was removed from a workspace; update the display.
 	 * @param tool tool removed
 	 */
@@ -367,7 +367,7 @@ class ToolConnectionPanel extends JPanel implements ListSelectionListener {
 		toolDialog.setDisconnectAllEnabled(connectedCount > 0);
 	}
 
-	/**
+    # /**
 	 * Clear selection on all lists.
 	 */
 	private void clearSelection() {
@@ -376,7 +376,7 @@ class ToolConnectionPanel extends JPanel implements ListSelectionListener {
 		eventList.clearSelection();
 	}
 
-	/**
+    # /**
 	 * replaces the list contents with the new list.
 	 */
 	private void refreshList(JCheckBox[] dataList) {

@@ -27,7 +27,7 @@ import java.util.concurrent.PriorityBlockingQueue;
  */
 public class PriorityWorker extends AbstractWorker<PriorityJob> {
 
-	/**
+    # /**
 	 * Creates a PriorityWorker that will use a <b>shared</b> thread pool to process jobs.  
 	 * Also, threads created using this constructor are not persistent.
 	 * 
@@ -39,7 +39,7 @@ public class PriorityWorker extends AbstractWorker<PriorityJob> {
 			true /* shared */, monitor);
 	}
 
-	/**
+    # /**
 	 * This constructor allows you to change persistence and shared thread pool usage.
 	 * 
 	 * @param name the name of the shared thread pool.

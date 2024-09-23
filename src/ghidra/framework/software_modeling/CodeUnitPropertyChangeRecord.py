@@ -23,7 +23,7 @@ import ghidra.program.model.address.Address;
 public class CodeUnitPropertyChangeRecord extends ProgramChangeRecord {
 	private String propertyName;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param type the program event type
 	 * @param propertyName the name of the code unit property
@@ -38,7 +38,7 @@ public class CodeUnitPropertyChangeRecord extends ProgramChangeRecord {
 		this.propertyName = propertyName;
 	}
 
-	/**
+    # /**
 	 * Constructor for a property change at an address
 	 * @param type the program event type
 	 * @param propertyName the name of the code unit property
@@ -51,7 +51,7 @@ public class CodeUnitPropertyChangeRecord extends ProgramChangeRecord {
 		this(type, propertyName, address, address, oldValue, newValue);
 	}
 
-	/**
+    # /**
 	 * Constructor for events that affect a range of values
 	 * @param type the program event type
 	 * @param propertyName the name of the code unit property
@@ -63,7 +63,7 @@ public class CodeUnitPropertyChangeRecord extends ProgramChangeRecord {
 		this(type, propertyName, start, end, null, null);
 	}
 
-	/**
+    # /**
 	 * Get the name of the property being changed.
 	 * @return the name of the property being changed
 	 */

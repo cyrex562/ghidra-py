@@ -53,7 +53,7 @@ public class TaskViewer {
 	private GTaskManager taskManager;
 	private TaskViewerTaskListener taskListener;
 
-	/**
+    # /**
 	 * Uses a layered pane to create a "watermark effect" to show when the GTaskManger is suspended.
 	 */
 	private JLayeredPane layeredPane;

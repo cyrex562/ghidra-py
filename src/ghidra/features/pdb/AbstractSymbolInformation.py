@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -67,7 +67,7 @@ public abstract class AbstractSymbolInformation {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdbIn {@link AbstractPdb} that owns the Abstract Symbol Information to process
 	 * @param streamNumber the stream number containing the symbol information
@@ -77,7 +77,7 @@ public abstract class AbstractSymbolInformation {
 		this.streamNumber = streamNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the Offsets of symbols within the symbol table; these are gotten from the
 	 *  HashRecords and modified to point to the size field of the symbols in the symbol table
 	 * @return offsets
@@ -91,7 +91,7 @@ public abstract class AbstractSymbolInformation {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Parses and returns the hash bucket offsets
 	 * @return the offsets
 	 * @throws PdbException upon not enough data left to parse
@@ -114,7 +114,7 @@ public abstract class AbstractSymbolInformation {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses and returns the hash records
 	 * @return the hash records
 	 * @throws PdbException upon not enough data left to parse
@@ -134,7 +134,7 @@ public abstract class AbstractSymbolInformation {
 		}
 	}
 
-	/**
+    # /**
 	 * Deserialize basic {@link AbstractSymbolInformation} from the appropriate stream in the Pdb
 	 * so that later queries can be made
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -144,7 +144,7 @@ public abstract class AbstractSymbolInformation {
 	 */
 	abstract void initialize() throws IOException, PdbException, CancelledException;
 
-	/**
+    # /**
 	 * Initializes values such as offset, lengths, and numbers
 	 */
 	void initializeValues() {
@@ -160,7 +160,7 @@ public abstract class AbstractSymbolInformation {
 		}
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping information from this {@link AbstractSymbolInformation}
 	 * @param writer {@link Writer} to which to dump the information
 	 * @throws IOException issue reading PDB or upon issue writing to the {@link Writer}
@@ -177,7 +177,7 @@ public abstract class AbstractSymbolInformation {
 		writer.write(builder.toString());
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping basic information from this {@link AbstractSymbolInformation}
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer
@@ -190,7 +190,7 @@ public abstract class AbstractSymbolInformation {
 		writer.write("\nEnd HashBasics----------------------------------------------\n");
 	}
 
-	/**builder.append
+    # /**builder.append
 	 * Debug method for dumping information from this {@link AbstractSymbolInformation} header
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer
@@ -204,7 +204,7 @@ public abstract class AbstractSymbolInformation {
 		writer.write("\nEnd HashHeader----------------------------------------------\n");
 	}
 
-	/**
+    # /**
 	 * Generates a list of symbols from the information that we have
 	 * @return the offsets
 	 * @throws PdbException upon not enough data left to parse
@@ -225,7 +225,7 @@ public abstract class AbstractSymbolInformation {
 		return modifiedHashRecordSymbolOffsets;
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping hash records from this {@link AbstractSymbolInformation}
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer
@@ -253,7 +253,7 @@ public abstract class AbstractSymbolInformation {
 		deserializeHashHeader(reader, stream.getLength());
 	}
 
-	/**
+    # /**
 	 * Deserialize the header of the Hash from the {@link PdbByteReader} provided
 	 * @param reader {@link PdbByteReader} containing the data buffer to process
 	 * @throws PdbException upon not enough data left to parse
@@ -282,7 +282,7 @@ public abstract class AbstractSymbolInformation {
 		}
 	}
 
-	/**
+    # /**
 	 * Deserializes a compressed set of hash buckets from the {@link PdbByteReader} provided.  The
 	 * data comes as a bit-mapped representation of which indices should contain the data followed
 	 * by a flat set of hash buckets that will be set at those indices in the order provided
@@ -329,7 +329,7 @@ public abstract class AbstractSymbolInformation {
 
 	}
 
-	/**
+    # /**
 	 * Deserializes a normal/non-compressed set of hash buckets from the {@link PdbByteReader}
 	 * provided.
 	 * @param reader {@link PdbByteReader} containing the data buffer to process
@@ -353,7 +353,7 @@ public abstract class AbstractSymbolInformation {
 	// whose on-disk size is 8 bytes.  These are the structures in the hashRecordsReader.  So
 	// take the offset and multiple by 2/3 to get the byte offset into the reader for the
 	// actual record.  Still need to deal with the collision logic after that.
-	/**
+    # /**
 	 * Deserializes and returns the hash records
 	 * @param reader {@link PdbByteReader} containing the data buffer to process
 	 * @throws PdbException upon not enough data left to parse
@@ -381,7 +381,7 @@ public abstract class AbstractSymbolInformation {
 //	}
 //
 //	//==============================================================================================
-//	/**
+//    # /**
 //	 * Iterator for {@link SymbolGroup} that iterates through {@link AbstractMsSymbol
 //	 * AbstractMsSymbols}
 //	 */
@@ -402,7 +402,7 @@ public abstract class AbstractSymbolInformation {
 //			return (value != null);
 //		}
 //
-//		/**
+//	    # /**
 //		 * Peeks at and returns the next symbol without incrementing to the next.  If none are
 //		 * left, then throws NoSuchElementException and reinitializes the state for a new
 //		 * iteration.
@@ -449,7 +449,7 @@ public abstract class AbstractSymbolInformation {
 //			}
 //		}
 //
-//		/**
+//	    # /**
 //		 * Initialized the mechanism for requesting the symbols in sequence.
 //		 * @see #hasNext()
 //		 */
@@ -466,7 +466,7 @@ public abstract class AbstractSymbolInformation {
 //			float factor = num <= 0 ? 0.0F : 1.0F / (num);
 //		}
 //
-//		/**
+//	    # /**
 //		 * Returns value from 0 to 100 as a rough percentage of having iterated through all records
 //		 * @return the percentage
 //		 */

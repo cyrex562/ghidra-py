@@ -22,7 +22,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.DuplicateFileException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.*;
+
 
 /**
  * <code>LocalDataFile</code> provides a FolderItem implementation

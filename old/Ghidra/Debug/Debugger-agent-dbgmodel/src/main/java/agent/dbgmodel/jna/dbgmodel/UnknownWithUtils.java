@@ -15,7 +15,7 @@
  */
 package agent.dbgmodel.jna.dbgmodel;
 
-import java.io.*;
+
 import java.util.*;
 
 import com.sun.jna.Pointer;

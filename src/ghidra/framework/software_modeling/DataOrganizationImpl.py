@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -85,7 +85,7 @@ public class DataOrganizationImpl implements DataOrganization {
 	 */
 	private final TreeMap<Integer, Integer> sizeAlignmentMap = new TreeMap<>();
 
-	/**
+    # /**
 	 * Creates a new default DataOrganization. This has a mapping which defines the alignment
 	 * of a data type based on its size. The map defines pairs for data types that are
 	 * 1, 2, 4, and 8 bytes in length.
@@ -95,7 +95,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return getDefaultOrganization(null);
 	}
 
-	/**
+    # /**
 	 * Creates a new default DataOrganization. This has a mapping which defines the alignment
 	 * of a data type based on its size. The map defines pairs for data types that are
 	 * 1, 2, 4, and 8 bytes in length.
@@ -118,7 +118,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return dataOrganization;
 	}
 
-	/**
+    # /**
 	 * Creates a new default DataOrganization with an empty size to alignment mapping.
 	 */
 	private DataOrganizationImpl() {
@@ -194,7 +194,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return bitFieldPacking;
 	}
 
-	/**
+    # /**
 	 * Set data endianness
 	 * @param bigEndian true if big-endian, false if little-endian
 	 */
@@ -202,7 +202,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.bigEndian = bigEndian;
 	}
 
-	/**
+    # /**
 	 * Defines the size of a pointer data type.
 	 * @param pointerSize the size of a pointer.
 	 */
@@ -210,7 +210,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.pointerSize = pointerSize;
 	}
 
-	/**
+    # /**
 	 * Defines the left shift amount for a shifted pointer data type.
 	 * Shift amount affects interpretation of in-memory pointer values only
 	 * and will also be reflected within instruction pcode.
@@ -220,7 +220,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.pointerShift = pointerShift;
 	}
 
-	/**
+    # /**
 	 * Defines the signed-ness of the "char" data type
 	 * @param signed true if "char" type is signed
 	 */
@@ -228,7 +228,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.isSignedChar = signed;
 	}
 
-	/**
+    # /**
 	 * Defines the size of a char (char) data type.
 	 * @param charSize the size of a char (char).
 	 */
@@ -236,7 +236,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.charSize = charSize;
 	}
 
-	/**
+    # /**
 	 * Defines the size of a wide-char (wchar_t) data type.
 	 * @param wideCharSize the size of a wide-char (wchar_t).
 	 */
@@ -244,7 +244,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.wideCharSize = wideCharSize;
 	}
 
-	/**
+    # /**
 	 * Defines the size of a short primitive data type.
 	 * @param shortSize the size of a short.
 	 */
@@ -255,7 +255,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the size of an int primitive data type.
 	 * @param integerSize the size of an int.
 	 */
@@ -269,7 +269,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the size of a long primitive data type.
 	 * @param longSize the size of a long.
 	 */
@@ -283,7 +283,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the size of a long long primitive data type.
 	 * @param longLongSize the size of a long long.
 	 */
@@ -294,7 +294,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the encoding size of a float primitive data type.
 	 * @param floatSize the size of a float.
 	 */
@@ -305,7 +305,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the encoding size of a double primitive data type.
 	 * @param doubleSize the size of a double.
 	 */
@@ -319,7 +319,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		}
 	}
 
-	/**
+    # /**
 	 * Defines the encoding size of a long double primitive data type.
 	 * @param longDoubleSize the size of a long double.
 	 */
@@ -332,7 +332,7 @@ public class DataOrganizationImpl implements DataOrganization {
 
 	// DEFAULT ALIGNMENTS
 
-	/**
+    # /**
 	 * Gets the maximum alignment value that is allowed by this data organization. When getting
 	 * an alignment for any data type it will not exceed this value. If NO_MAXIMUM_ALIGNMENT
 	 * is returned, the data organization isn't specifically limited.
@@ -343,7 +343,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return absoluteMaxAlignment;
 	}
 
-	/**
+    # /**
 	 * Gets the maximum useful alignment for the target machine
 	 * @return the machine alignment
 	 */
@@ -352,7 +352,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return machineAlignment;
 	}
 
-	/**
+    # /**
 	 * Gets the default alignment to be used for any data type that isn't a
 	 * structure, union, array, pointer, type definition, and whose size isn't in the
 	 * size/alignment map.
@@ -364,7 +364,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return defaultAlignment;
 	}
 
-	/**
+    # /**
 	 * Gets the default alignment to be used for a pointer that doesn't have size.
 	 * @return the default alignment for a pointer
 	 */
@@ -373,7 +373,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return defaultPointerAlignment;
 	}
 
-	/**
+    # /**
 	 * Sets the maximum alignment value that is allowed by this data organization. When getting
 	 * an alignment for any data type it will not exceed this value. If NO_MAXIMUM_ALIGNMENT
 	 * is returned, the data organization isn't specifically limited.
@@ -383,7 +383,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.absoluteMaxAlignment = absoluteMaxAlignment;
 	}
 
-	/**
+    # /**
 	 * Sets the maximum useful alignment for the target machine
 	 * @param machineAlignment the machine alignment
 	 */
@@ -391,7 +391,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.machineAlignment = machineAlignment;
 	}
 
-	/**
+    # /**
 	 * Sets the default alignment to be used for any data type that isn't a
 	 * structure, union, array, pointer, type definition, and whose size isn't in the
 	 * size/alignment map.
@@ -402,7 +402,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.defaultAlignment = defaultAlignment;
 	}
 
-	/**
+    # /**
 	 * Sets the default alignment to be used for a pointer that doesn't have size.
 	 * @param defaultPointerAlignment the default alignment for a pointer
 	 */
@@ -420,7 +420,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return alignment;
 	}
 
-	/**
+    # /**
 	 * Sets the alignment that is defined for a data type of the indicated size if one is defined.
 	 * @param size the size of the data type
 	 * @param alignment the alignment of the data type.
@@ -429,7 +429,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		sizeAlignmentMap.put(size, alignment);
 	}
 
-	/**
+    # /**
 	 * Set the bitfield packing information associated with this data organization.
 	 * @param bitFieldPacking bitfield packing information
 	 */
@@ -437,14 +437,14 @@ public class DataOrganizationImpl implements DataOrganization {
 		this.bitFieldPacking = bitFieldPacking;
 	}
 
-	/**
+    # /**
 	 * Remove all entries from the size alignment map
 	 */
 	public void clearSizeAlignmentMap() {
 		sizeAlignmentMap.clear();
 	}
 
-	/**
+    # /**
 	 * Gets the number of sizes that have an alignment specified.
 	 * @return the number of sizes with an alignment mapped to them.
 	 */
@@ -453,7 +453,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return sizeAlignmentMap.size();
 	}
 
-	/**
+    # /**
 	 * Gets the sizes that have an alignment specified.
 	 * @return the sizes with alignments mapped to them.
 	 */
@@ -469,7 +469,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return keys;
 	}
 
-	/**
+    # /**
 	 * Returns the best fitting integer C-type whose size is less-than-or-equal
 	 * to the specified size.  "long long" will be returned for any size larger
 	 * than "long long";
@@ -536,7 +536,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return getSizeAlignment(dtSize);
 	}
 
-	/**
+    # /**
 	 * Determines the first offset that is equal to or greater than the minimum offset which
 	 * has the specified alignment.  If a non-positive alignment is specified the origina
 	 * minimumOffset will be return.
@@ -561,7 +561,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return (n & (n - 1)) == 0;
 	}
 
-	/**
+    # /**
 	 * Determines the least (lowest) common multiple of two numbers.
 	 * @param value1 the first number
 	 * @param value2 the second number
@@ -572,7 +572,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return (gcd != 0) ? ((value1 / gcd) * value2) : 0;
 	}
 
-	/**
+    # /**
 	 * Determines the greatest common denominator of two numbers.
 	 * @param value1 the first number
 	 * @param value2 the second number
@@ -582,7 +582,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return (value2 != 0) ? getGreatestCommonDenominator(value2, value1 % value2) : value1;
 	}
 
-	/**
+    # /**
 	 * Save the specified data organization to the specified DB data map.
 	 * All existing map entries starting with keyPrefix will be removed prior
 	 * to ading the new map entries.
@@ -698,7 +698,7 @@ public class DataOrganizationImpl implements DataOrganization {
 			keyPrefix + ELEM_BITFIELD_PACKING.name() + ".");
 	}
 
-	/**
+    # /**
 	 * Restore a data organization from the specified DB data map.
 	 * @param dataMap DB data map
 	 * @param keyPrefix key prefix for all map entries
@@ -795,7 +795,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		return dataOrg;
 	}
 
-	/**
+    # /**
 	 * Output the details of this data organization to a encoded document formatter.
 	 * @param encoder the output document encoder.
 	 * @throws IOException if an IO error occurs while encoding/writing output
@@ -901,7 +901,7 @@ public class DataOrganizationImpl implements DataOrganization {
 		encoder.closeElement(ELEM_DATA_ORGANIZATION);
 	}
 
-	/**
+    # /**
 	 * Restore settings from an XML stream. This expects to see parser positioned on the
 	 * &lt;data_organization&gt; start tag.  The XML is designed to override existing language-specific
 	 * default settings which are pre-populated with {@link #getDefaultOrganization(Language)}.  This

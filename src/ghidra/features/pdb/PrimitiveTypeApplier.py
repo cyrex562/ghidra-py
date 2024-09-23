@@ -28,7 +28,7 @@ import ghidra.util.exception.CancelledException;
 public class PrimitiveTypeApplier extends MsDataTypeApplier {
 
 	// Intended for: PrimitiveMsType
-	/**
+    # /**
 	 * Constructor for primitive type applier, for transforming a primitive into a Ghidra DataType
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */

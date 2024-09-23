@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.quickmethod;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -37,7 +37,7 @@ public class OatQuickMethodHeader_Lollipop extends OatQuickMethodHeader {
 		code_size_ = reader.readNextInt();
 	}
 
-	/**
+    # /**
 	 * The offset in bytes from the start of the mapping table to the end of the header.
 	 * @return offset in bytes
 	 */
@@ -45,7 +45,7 @@ public class OatQuickMethodHeader_Lollipop extends OatQuickMethodHeader {
 		return mapping_table_offset_;
 	}
 
-	/**
+    # /**
 	 * The offset in bytes from the start of the vmap table to the end of the header.
 	 * @return the VMAP table offset
 	 */
@@ -53,7 +53,7 @@ public class OatQuickMethodHeader_Lollipop extends OatQuickMethodHeader {
 		return vmap_table_offset_;
 	}
 
-	/**
+    # /**
 	 * The stack frame information.
 	 * @return the stack frame
 	 */
@@ -61,7 +61,7 @@ public class OatQuickMethodHeader_Lollipop extends OatQuickMethodHeader {
 		return frame_info_;
 	}
 
-	/**
+    # /**
 	 * The code size in bytes.
 	 * @return the code size in bytes
 	 */

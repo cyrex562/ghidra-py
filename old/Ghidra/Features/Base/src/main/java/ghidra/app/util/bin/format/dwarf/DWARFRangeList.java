@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.dwarf;
 import static ghidra.app.util.bin.format.dwarf.DWARFRangeListEntry.*;
 import static ghidra.app.util.bin.format.dwarf.attribs.DWARFForm.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;

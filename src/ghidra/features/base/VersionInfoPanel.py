@@ -18,7 +18,7 @@ package ghidra.app.plugin.runtimeinfo;
 import java.awt.BorderLayout;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
-import java.io.*;
+
 import java.util.*;
 
 import javax.swing.*;

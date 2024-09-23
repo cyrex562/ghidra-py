@@ -42,7 +42,7 @@ public class IconModifier {
 	boolean flip;   // flips the image upside down
 	List<IconValue> overlayIconValues = null;
 
-	/**
+    # /**
 	 * Creates an IconModifier that can scale, translate, or disable an icon.
 	 * @param size if non-null, scales an icon to this size.
 	 * @param translation if non-null, translates an icon by this amount
@@ -65,7 +65,7 @@ public class IconModifier {
 
 	}
 
-	/**
+    # /**
 	 * Sets size modifier. Icons that are modified by this IconModifier will be scaled to this size.
 	 * @param size the size to scale modified icons.
 	 */
@@ -73,7 +73,7 @@ public class IconModifier {
 		this.size = size;
 	}
 
-	/**
+    # /**
 	 * Sets the translation for this modifier. Icons that are modified by this IconModifier will
 	 * be translated by the amount of the given point.
 	 * @param point the x,y amount to translate an image
@@ -82,7 +82,7 @@ public class IconModifier {
 		this.translation = point;
 	}
 
-	/**
+    # /**
 	 * Sets the rotation for this modifier. Icons that are modified by this IconModifier will
 	 * be rotated by the given amount (in degrees)
 	 * @param degrees the rotation amount;
@@ -91,28 +91,28 @@ public class IconModifier {
 		this.rotation = degrees;
 	}
 
-	/**
+    # /**
 	 * Sets this modifier to disable an icon
 	 */
 	public void setDisabled() {
 		disabled = true;
 	}
 
-	/**
+    # /**
 	 * Sets the modifier to flip the icon side to side
 	 */
 	public void setMirror() {
 		mirror = true;
 	}
 
-	/**
+    # /**
 	 * Sets the modifier to flip the icon side to side
 	 */
 	public void setFlip() {
 		flip = true;
 	}
 
-	/**
+    # /**
 	 * Modifies the given icon by the any of the modifiers set.
 	 * @param icon the icon to be modified
 	 * @param values the ThemeValueMap needed if the modify action is to overlay other icons. The 
@@ -149,7 +149,7 @@ public class IconModifier {
 		return modified;
 	}
 
-	/**
+    # /**
 	 * Returns a string that can be parsed by the {@link #parse(String)} method of this class
 	 * @return a string that can be parsed by the {@link #parse(String)} method of this class
 	 */
@@ -176,7 +176,7 @@ public class IconModifier {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Parses the given string as one or more icon modifiers
 	 * @param iconModifierString the string to parse as modifiers
 	 * @return an IconModifier as specified by the given string

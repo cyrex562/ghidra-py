@@ -15,7 +15,7 @@
  */
 package ghidra.plugins.importer.batch;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;

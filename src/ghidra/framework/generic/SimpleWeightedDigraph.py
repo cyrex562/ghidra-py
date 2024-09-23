@@ -34,7 +34,7 @@ package ghidra.util.graph;
 public class SimpleWeightedDigraph extends WeightedDigraph {
 	private final boolean allowLoops;
 
-	/**
+    # /**
 	 * Constructor for SimpleWeightedDigraph.
 	 * 
 	 * @param vertexCapacity initially allocate space for this many vertices.
@@ -58,7 +58,7 @@ public class SimpleWeightedDigraph extends WeightedDigraph {
 		allowLoops = loopsAllowed;
 	}
 
-	/**
+    # /**
 	 * Constructor for SimpleWeightedDigraph. 
 	 * 
 	 * AllowLoops is false by default.
@@ -71,7 +71,7 @@ public class SimpleWeightedDigraph extends WeightedDigraph {
 		allowLoops = false;
 	}
 
-	/**
+    # /**
 	 * Constructor for SimpleWeightedDigraph. 
 	 * 
 	 * AllowLoops is false by default.
@@ -84,7 +84,7 @@ public class SimpleWeightedDigraph extends WeightedDigraph {
 		allowLoops = false;
 	}
 
-	/** 
+    # /** 
 	 * Add an edge with the the default edge weight. 
 	 * 
 	 * If an edge from and to the vertices
@@ -105,7 +105,7 @@ public class SimpleWeightedDigraph extends WeightedDigraph {
 		return this.setWeight(ft[0], this.getWeight(ft[0]) + this.getDefaultEdgeWeight());
 	}
 
-	/** 
+    # /** 
 	 * Add an edge with the the specified edge weight. 
 	 * 
 	 * If an edge from and to the vertices

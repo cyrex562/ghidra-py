@@ -16,7 +16,7 @@
 package sarif.io;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import com.contrastsecurity.sarif.SarifSchema210;
 import com.google.gson.JsonSyntaxException;

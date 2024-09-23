@@ -63,7 +63,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 	private DataType dataType;
 	private Rtti2Model rtti2Model;
 
-	/**
+    # /**
 	 * Creates the model for the RTTI3 data type.
 	 * @param program the program
 	 * @param rtti3Address the address in the program for the RTTI3 data
@@ -117,7 +117,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the ClassHierarchyDescriptor (RTTI 3) structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the ClassHierarchyDescriptor (RTTI 3) structure.
@@ -132,7 +132,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 		return MSDataTypeUtils.getMatchingDataType(program, rtti3Dt);
 	}
 
-	/**
+    # /**
 	 * Make the indicated RTTI 3 refer to the indicated RTTI 1 through the RTTI 2 reference.
 	 * @param rtti3Dt the RTTI 3 data type
 	 * @param program the program that contains the data types
@@ -150,7 +150,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 			"pBaseClassArray", "ref to BaseClassArray (RTTI 2)");
 	}
 
-	/**
+    # /**
 	 * This gets the ClassHierarchyDescriptor (RTTI 3) structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the ClassHierarchyDescriptor (RTTI 3) structure.
@@ -193,7 +193,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 		return getDataType().getLength();
 	}
 
-	/**
+    # /**
 	 * Gets the signature value from this RTTI 3.
 	 * @return the signature value
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -204,7 +204,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the attributes value from this RTTI3.
 	 * @return the attributes
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -215,7 +215,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the number of RTTI1 structures that are referred to by an RTTI3 structure being placed
 	 * at the rtti3Address of the indicated memory.
 	 * @return the RTTI1 count or 0.
@@ -246,7 +246,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the address of the RTTI2 that is referred to from an RTTI3 structure that is placed at 
 	 * the indicated address.
 	 * @return the address of the RTTI2 structure or null.
@@ -282,7 +282,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the Base Class Types (type descriptor names) for the RTTI for this model.
 	 * @return the class names or an empty list if the name(s) can't be determined.
 	 * @throws InvalidDataTypeException if an invalid model is encountered when trying to get
@@ -295,7 +295,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 		return rtti2Model.getBaseClassTypes();
 	}
 
-	/**
+    # /**
 	 * Gets the type descriptor (RTTI 0) model associated with this RTTI 3.
 	 * @return the type descriptor (RTTI 0) model or null.
 	 * @throws InvalidDataTypeException if this model's validation fails.
@@ -305,7 +305,7 @@ public class Rtti3Model extends AbstractCreateRttiDataModel {
 		return rtti2Model.getRtti0Model();
 	}
 
-	/**
+    # /**
 	 * Gets the BaseClassArray (RTTI 2) model associated with this RTTI 3.
 	 * @return the BaseClassArray (RTTI 2) model or null.
 	 * @throws InvalidDataTypeException if this model's validation fails.

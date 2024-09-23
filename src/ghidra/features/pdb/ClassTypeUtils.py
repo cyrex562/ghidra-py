@@ -30,7 +30,7 @@ public class ClassTypeUtils {
 	}
 
 	// TODO: Eventually consider changing Composite argument below as model is refined.
-	/**
+    # /**
 	 * Returns an "internals" CategoryPath for the owning composite datatype
 	 * @param composite owning datatype of the internals path
 	 * @return the CategoryPath
@@ -40,7 +40,7 @@ public class ClassTypeUtils {
 		return dtp.getCategoryPath().extend(dtp.getDataTypeName(), INTERNALS);
 	}
 
-	/**
+    # /**
 	 * Returns an "internals" CategoryPath for the owning composite datatype
 	 * @param categoryPath path of the composite
 	 * @return the CategoryPath
@@ -50,7 +50,7 @@ public class ClassTypeUtils {
 	}
 
 	// TODO: Eventually consider changing Composite argument below as model is refined.
-	/**
+    # /**
 	 * Returns a DataTypePath for the named type within the "internals" category of the composite
 	 * type
 	 * @param composite the composite

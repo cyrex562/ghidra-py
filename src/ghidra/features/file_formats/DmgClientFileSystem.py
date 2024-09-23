@@ -16,7 +16,7 @@
 package ghidra.file.formats.ios.dmg;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,7 +52,7 @@ public class DmgClientFileSystem extends AbstractFileSystem<Object> {
 	private DmgServerProcessManager processManager;
 	private CancelledListener listener = () -> processManager.interruptCmd();
 
-	/**
+    # /**
 	 * Creates a {@link DmgClientFileSystem} instance, using a decrypted dmg file and
 	 * the filesystem's {@link FSRLRoot}.
 	 *

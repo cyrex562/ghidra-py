@@ -1,31 +1,31 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.symbol;
 
 public enum SourceType {
 	// WARNING WARNING: do not change the order of these enums as they are stored in the
 	// database by their ordinal.
 
-	/** The object's source indicator for an auto analysis. */
+    # /** The object's source indicator for an auto analysis. */
 	ANALYSIS("Analysis", 2),
-	/** The object's source indicator for a user defined. */
+    # /** The object's source indicator for a user defined. */
 	USER_DEFINED("User Defined", 4),
-	/** The object's source indicator for a default. */
+    # /** The object's source indicator for a default. */
 	DEFAULT("Default", 1),
-	/** The object's source indicator for an imported. */
+    # /** The object's source indicator for an imported. */
 	IMPORTED("Imported", 3);
 
 	private final String displayString;
@@ -36,12 +36,12 @@ public enum SourceType {
 		this.priority = priority;
 	}
 
-	/** Returns a user-friendly string */
+    # /** Returns a user-friendly string */
 	public String getDisplayString() {
 		return displayString;
 	}
 
-	/**
+    # /**
 	 * Determines if this source type is a higher priority than the one being
 	 * passed to this method as a parameter.
 	 * USER_DEFINED objects are higher priority than IMPORTED objects which are higher
@@ -54,7 +54,7 @@ public enum SourceType {
 		return this.priority > source.priority;
 	}
 
-	/**
+    # /**
 	 * Determines if this source type is a lower priority than the one being
 	 * passed to this method as a parameter.
 	 * DEFAULT objects are lower priority than ANALYSIS objects which are lower

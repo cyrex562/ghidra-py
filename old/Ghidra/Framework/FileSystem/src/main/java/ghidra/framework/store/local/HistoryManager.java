@@ -18,7 +18,7 @@ package ghidra.framework.store.local;
 
 import ghidra.framework.store.Version;
 
-import java.io.*;
+
 import java.util.*;
 
 /**

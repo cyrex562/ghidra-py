@@ -115,7 +115,7 @@ public class VisualGraphPathHighlighter<V extends VisualVertex, E extends Visual
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the callback that signals when this path highlighter should not be performing any
 	 * work
 	 * 
@@ -240,7 +240,7 @@ public class VisualGraphPathHighlighter<V extends VisualVertex, E extends Visual
 		}
 	}
 
-	/**
+    # /**
 	 * Signals to this path highlighter that it should stop all background jobs
 	 */
 	public void stop() {
@@ -887,7 +887,7 @@ public class VisualGraphPathHighlighter<V extends VisualVertex, E extends Visual
 // Inner Classes
 //==================================================================================================	
 
-	/**
+    # /**
 	 * A simple class to hold loops and success status
 	 */
 	private class Circuits {
@@ -912,7 +912,7 @@ public class VisualGraphPathHighlighter<V extends VisualVertex, E extends Visual
 		}
 	}
 
-	/**
+    # /**
 	 * A class to handle off-loading the calculation of edges to be hovered.   The results will
 	 * then be used to update the UI.
 	 */
@@ -945,7 +945,7 @@ public class VisualGraphPathHighlighter<V extends VisualVertex, E extends Visual
 		}
 	}
 
-	/**
+    # /**
 	 * A class to handle off-loading the calculation of edges to be focused.  
 	 * The results will then be used to update the UI.
 	 */
@@ -978,7 +978,7 @@ public class VisualGraphPathHighlighter<V extends VisualVertex, E extends Visual
 		}
 	}
 
-	/**
+    # /**
 	 * A class meant to run in the hover RunManager that is slow or open-ended.  Work will
 	 * be performed as long as possible, updating results along the way.  
 	 */

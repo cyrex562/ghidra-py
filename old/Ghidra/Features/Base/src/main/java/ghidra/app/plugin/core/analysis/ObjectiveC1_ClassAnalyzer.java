@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.analysis;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.services.*;
 import ghidra.app.util.bin.BinaryReader;

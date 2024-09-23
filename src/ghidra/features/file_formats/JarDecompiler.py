@@ -15,7 +15,7 @@
  */
 package ghidra.file.jad;
 
-import java.io.*;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.zip.ZipException;
@@ -37,7 +37,7 @@ import utilities.util.FileUtilities;
  */
 public class JarDecompiler {
 
-	/**
+    # /**
 	 * Returns true if the filename appears to be a jar file
 	 * @param filename string filename
 	 * @return boolean true if it is probably a jar file

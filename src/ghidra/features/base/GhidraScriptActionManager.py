@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.script;
 
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.io.*;
+
 import java.net.*;
 import java.nio.file.Files;
 import java.nio.file.Path;

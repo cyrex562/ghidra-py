@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -61,7 +61,7 @@ public class PdbNewDebugInfo extends PdbDebugInfo {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb {@link AbstractPdb} that owns this {@link PdbNewDebugInfo}
 	 * @param streamNumber the stream number that contains the {@link PdbNewDebugInfo} data
@@ -71,7 +71,7 @@ public class PdbNewDebugInfo extends PdbDebugInfo {
 		debugData = new DebugData(pdb);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageFileMachine} machine type
 	 * @return the machine type
 	 */
@@ -79,7 +79,7 @@ public class PdbNewDebugInfo extends PdbDebugInfo {
 		return machineType;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link DebugData} for this {@link PdbNewDebugInfo}
 	 * @return the {@link DebugData}
 	 */
@@ -249,7 +249,7 @@ public class PdbNewDebugInfo extends PdbDebugInfo {
 	// Internal Data Methods
 	//==============================================================================================
 	//TODO: Find examples that exercise this.
-	/**
+    # /**
 	 * Deserializes/processes the TypeServerMap
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @param skip skip over the data in the {@link PdbByteReader}
@@ -268,7 +268,7 @@ public class PdbNewDebugInfo extends PdbDebugInfo {
 		//System.out.println(sumbstreamReader.dump(0x1000));
 	}
 
-	/**
+    # /**
 	 * Deserializes/processes the EditAndContinueInformation
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @param skip skip over the data in the {@link PdbByteReader}
@@ -332,7 +332,7 @@ public class PdbNewDebugInfo extends PdbDebugInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Dumps the EditAndContinueNameList.  This package-protected method is for debugging only.
 	 * @param writer {@link Writer} to which to write the debug dump
 	 * @throws IOException on issue writing to the {@link Writer}
@@ -346,7 +346,7 @@ public class PdbNewDebugInfo extends PdbDebugInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Get age from deserialized DBI header
 	 * @return age from deserialized DBI header
 	 */

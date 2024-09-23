@@ -30,7 +30,7 @@ import ghidra.util.exception.CancelledException;
 public class PointerTypeApplier extends MsDataTypeApplier {
 
 	// Intended for: AbstractPointerMsType
-	/**
+    # /**
 	 * Constructor for pointer type applier, for transforming a enum into a Ghidra DataType
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 * @throws IllegalArgumentException Upon invalid arguments
@@ -39,7 +39,7 @@ public class PointerTypeApplier extends MsDataTypeApplier {
 		super(applicator);
 	}
 
-	/**
+    # /**
 	 * Comment field if this type is used as a structure member.  This method could go away later
 	 *  if we develop member pointers into the Ghidra framework; this method exists to pass some
 	 *  pertinent information along to the user

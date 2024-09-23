@@ -16,7 +16,7 @@
 package ghidra.file.formats.lzfse;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.util.bin.ByteProvider;
@@ -39,7 +39,7 @@ public class LzfseFileSystem implements GFileSystem {
 	private FileSystemRefManager fsRefManager = new FileSystemRefManager(this);
 	private ByteProvider decompressedProvider;
 
-	/**
+    # /**
 	 * Creates a new {@link LzfseFileSystem}.
 	 * <p>
 	 * NOTE: Successful completion of this constructor will result in {@code decompressedFile}

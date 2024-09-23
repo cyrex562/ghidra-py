@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.dyldcache;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
@@ -40,14 +40,14 @@ import ghidra.util.task.TaskMonitor;
  */
 public class DyldCacheExtractor {
 
-	/**
+    # /**
 	 * A footer that gets appended to the end of every extracted component so Ghidra can identify
 	 * them and treat them special when imported
 	 */
 	public static final byte[] FOOTER_V1 =
 		"Ghidra DYLD extraction v1".getBytes(StandardCharsets.US_ASCII);
 
-	/**
+    # /**
 	 * A {@link DyldCacheMappingAndSlideInfo} with a possibly reduced set of available addresses
 	 * within the mapping
 	 * 
@@ -56,7 +56,7 @@ public class DyldCacheExtractor {
 	 */
 	public record MappingRange(DyldCacheMappingAndSlideInfo mappingInfo, RangeSet<Long> rangeSet) {}
 
-	/**
+    # /**
 	 * Gets a {@link ByteProvider} that contains a DYLIB from a {@link DyldCacheFileSystem}.  The
 	 * DYLIB's header will be altered to account for its segment bytes being packed down.   
 	 * 
@@ -81,7 +81,7 @@ public class DyldCacheExtractor {
 		return extractedMacho.getByteProvider(fsrl);
 	}
 
-	/**
+    # /**
 	 * Gets a {@link ByteProvider} that contains a byte mapping from a {@link DyldCacheFileSystem}
 	 * 
 	 * @param mappingRange The {@link MappingRange}
@@ -175,7 +175,7 @@ public class DyldCacheExtractor {
 		return new ByteArrayProvider(result, fsrl);
 	}
 
-	/**
+    # /**
 	 * Gets a {@link Map} of {DyldCacheSlideInfoCommon}s to their corresponding {@link DyldFixup}s
 	 * 
 	 * @param splitDyldCache The {@link SplitDyldCache}
@@ -210,7 +210,7 @@ public class DyldCacheExtractor {
 		return slideFixupMap;
 	}
 
-	/**
+    # /**
 	 * A packed DYLIB that was once living inside of a DYLD shared cache.  The DYLIB is said to be 
 	 * packed because its segment file bytes, which were not adjacent in its containing DYLD, are 
 	 * now adjacent in its new array. 
@@ -220,7 +220,7 @@ public class DyldCacheExtractor {
 		private SplitDyldCache splitDyldCache;
 		private Map<DyldCacheSlideInfoCommon, List<DyldFixup>> slideFixupMap;
 
-		/**
+	    # /**
 		 * Creates a new {@link DyldPackedSegments} object
 		 * 
 		 * @param dylibOffset The offset of the DYLIB in the given provider
@@ -272,7 +272,7 @@ public class DyldCacheExtractor {
 			return info != null ? info.getNList(textSegment.getVMaddress() - base) : List.of();
 		}
 
-		/**
+	    # /**
 		 * Fixes-up the slide pointers
 		 * 
 		 * @throws IOException If there was an IO-related issue performing the fix-up
@@ -304,7 +304,7 @@ public class DyldCacheExtractor {
 			}
 		}
 
-		/**
+	    # /**
 		 * Gets the {@link SegmentCommand segment} that contains the given virtual address
 		 * 
 		 * @param addr The address

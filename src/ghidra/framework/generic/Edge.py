@@ -28,7 +28,7 @@ public final class Edge implements KeyedObject, Comparable<Edge> {
 	private final Vertex from;
 	private final Vertex to;
 
-	/** @param from The from or parent vertex.
+    # /** @param from The from or parent vertex.
 	 * @param to The to or child vertex.
 	 */
 	public Edge(Vertex from, Vertex to) {
@@ -40,28 +40,28 @@ public final class Edge implements KeyedObject, Comparable<Edge> {
 		this.to = to;
 	}
 
-	/** Returns next key **/
+    # /** Returns next key **/
 	private static synchronized long getNextKey() {
 		return kof.getNextAvailableKey();
 	}
 
-	/** Returns from vertex. */
+    # /** Returns from vertex. */
 	public Vertex from() {
 		return this.from;
 	}
 
-	/** Returns to vertex. */
+    # /** Returns to vertex. */
 	public Vertex to() {
 		return this.to;
 	}
 
-	/** Returns the key of this edge. */
+    # /** Returns the key of this edge. */
 	@Override
 	public long key() {
 		return this.key;
 	}
 
-	/** Compare one edge to another. Based on time of creation. */
+    # /** Compare one edge to another. Based on time of creation. */
 	@Override
 	public int compareTo(Edge edge) {
 		if (this.key() < edge.key()) {
@@ -73,7 +73,7 @@ public final class Edge implements KeyedObject, Comparable<Edge> {
 		return 0;
 	}
 
-	/** Overides equals method by comparing keys.
+    # /** Overides equals method by comparing keys.
 	 */
 	@Override
 	public boolean equals(Object obj) {

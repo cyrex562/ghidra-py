@@ -45,7 +45,7 @@ public abstract class AbstractBlockContextApplier extends MsSymbolApplier
 	protected BlockNestingContext context;
 	protected long specifiedFrameSize = 0;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 */
@@ -67,7 +67,7 @@ public abstract class AbstractBlockContextApplier extends MsSymbolApplier
 		context.endBlock();
 	}
 
-	/**
+    # /**
 	 * Set the specified frame size.
 	 * @param specifiedFrameSize the frame size.
 	 */

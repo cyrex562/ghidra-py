@@ -46,7 +46,7 @@ public abstract class BuiltIn extends DataTypeImpl implements BuiltInDataType {
 			NO_SOURCE_SYNC_TIME, NO_LAST_CHANGE_TIME, dataMgr);
 	}
 
-	/**
+    # /**
 	 * Returns a clone of this built-in DataType
 	 * @see ghidra.program.model.data.DataType#copy(ghidra.program.model.data.DataTypeManager)
 	 */
@@ -55,7 +55,7 @@ public abstract class BuiltIn extends DataTypeImpl implements BuiltInDataType {
 		return clone(dtm);
 	}
 
-	/**
+    # /**
 	 * Gets a list of all the settingsDefinitions used by this datatype.
 	 * @return a list of the settingsDefinitions used by this datatype.
 	 */
@@ -68,7 +68,7 @@ public abstract class BuiltIn extends DataTypeImpl implements BuiltInDataType {
 		return settingDefs;
 	}
 
-	/**
+    # /**
 	 * Gets a list of all the settingsDefinitions used by this datatype.
 	 * @return a list of the settingsDefinitions used by this datatype.
 	 */
@@ -162,7 +162,7 @@ public abstract class BuiltIn extends DataTypeImpl implements BuiltInDataType {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Return token used to represent this type in decompiler/source-code output
 	 * @param language is the language being displayed
 	 * @return the name string
@@ -188,7 +188,7 @@ public abstract class BuiltIn extends DataTypeImpl implements BuiltInDataType {
 			dataOrganization.getIntegerCTypeApproximation(dt.getLength(), signed), useDefine);
 	}
 
-	/**
+    # /**
 	 * Returns null for FactoryDataType (which should never be used) and Dynamic types which should
 	 * generally be replaced by a primitive array (e.g., char[5]) or, a primitive pointer (e.g., char *).
 	 * For other types an appropriately sized unsigned integer typedef is returned.

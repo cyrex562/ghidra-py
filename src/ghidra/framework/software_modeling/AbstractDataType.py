@@ -64,7 +64,7 @@ public abstract class AbstractDataType implements DataType {
 		return categoryPath;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#getDataTypeManager()
 	 */
 	@Override
@@ -78,7 +78,7 @@ public abstract class AbstractDataType implements DataType {
 				: DataOrganizationImpl.getDefaultOrganization();
 	}
 
-	/**
+    # /**
 	 * Get the {@link DataOrganization} which should be used by a {@link AbstractDataType} when 
 	 * associated with a specified {@link DataTypeManager dataMgr}.  If a null 
 	 * {@code dataMgr} is specified the default {@link DataOrganization} will be returned.

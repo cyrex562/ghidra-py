@@ -40,7 +40,7 @@ public class SpecifyCPrototypeAction extends AbstractDecompilerAction {
 		setPopupMenuData(new MenuData(new String[] { "Edit Function Signature" }, "Decompile"));
 	}
 
-	/**
+    # /**
 	 * Verify and adjust function editor model using dynamic storage to reflect current state of 
 	 * decompiled results.  It may be necessary to switch model to use custom storage.
 	 * @param hf decompiled high function

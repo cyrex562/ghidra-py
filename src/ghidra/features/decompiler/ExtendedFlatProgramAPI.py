@@ -101,7 +101,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to get the pointer formed by the bytes at the current address
 	 * @param address the given address
 	 * @return the pointer formed by the bytes at the current address
@@ -133,7 +133,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to check to see if there is a valid function pointer at the given address. If it is 
 	 * valid but not created, create it
 	 * @param address the given address
@@ -179,7 +179,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given address is a null pointer. If it isn't but is valid length
 	 * of zeros, try creating one. 
 	 * @param address the given address
@@ -214,7 +214,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 
 	}
 
-	/**
+    # /**
 	 * Method to check for num zeros at the given address
 	 * @param address the given address
 	 * @param numZeros the number of zeros to check for
@@ -242,7 +242,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to get the function referenced at the given address if there is one. If the function
 	 * is a thunk, get the thunked function
 	 * @param address the given address
@@ -283,7 +283,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return function;
 	}
 
-	/**
+    # /**
 	 * Method to get a list of addresses that are the "reference froms" of the given address
 	 * @param address the given address
 	 * @return a list of addresses that are references from the given address
@@ -303,7 +303,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return refFromAddresses;
 	}
 
-	/**
+    # /**
 	 * Method to get address at address + offset
 	 * @param address the given address
 	 * @param offset the given offset
@@ -319,7 +319,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create the first function after the last terminating function before the given 
 	 * address which is in the middle of undefined bytes
 	 * @param address the given address
@@ -480,7 +480,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return numSameByte;
 	}
 
-	/**
+    # /**
 	 * Method to create functions given the list of addresses known to be contained in a function but
 	 * that are not yet created
 	 * @param containedAddresses list of address contained in an undefined function
@@ -523,7 +523,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create a function in the given program at the given address
 	 * @param prog the given program
 	 * @param addr the given address
@@ -552,7 +552,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 
 	}
 
-	/**
+    # /**
 	 * Method to figure out a subroutine address set given an address contained in it
 	 * @param program the given program
 	 * @param address address in the potential subroutine
@@ -582,7 +582,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 	}
 
 
-	/**
+    # /**
 	 * Method to get a list of symbols either matching exactly (if exact flag is true) or containing (if exact flag is false) the given symbol name
 	 * @param addressSet the address set to find matching symbols in
 	 * @param symbolName the symbol name to match
@@ -612,7 +612,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return symbolsInSet;
 	}
 
-	/**
+    # /**
 	 * Method to return the referenced address at the given address
 	 * Note: this will work whether there is a created reference or not
 	 * @param address the address to look for a referenced address at
@@ -679,7 +679,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return value.getSignedValue();
 	}
 
-	/**
+    # /**
 	 * Method to return a list of symbols with the given name and namespace. 
 	 * @param symbolName the symbol name to retrieve
 	 * @param namespace the namespace to look for symbols with the given name
@@ -727,7 +727,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the nth called function from calling function
 	 * @param callingFunction The calling function
 	 * @param callIndex the called function index (ie 1 = first called function)
@@ -758,7 +758,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve an ordered list (ordered by reference address low to high) of 
 	 * ReferenceAddressPairs of called functions given the calling function
 	 * @param callingFunction the calling function
@@ -792,7 +792,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return referenceAddressPairs;
 	}
 
-	/**
+    # /**
 	 * Method to get reference addresses to function b from function a
 	 * @param aFunction function a
 	 * @param bFunction function b
@@ -820,7 +820,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return referenceAddresses;
 	}
 
-	/**
+    # /**
 	 * Method to determine if function a calls function b (or its thunk)
 	 * @param aFunction function a
 	 * @param bFunction function b
@@ -857,7 +857,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 	}
 
 
-	/**
+    # /**
 	 * Method to retrieve a single referenced address from the given address
 	 * @param address the given address to look for a single referenced address
 	 * @return the address referred to or null if none or more than one referenced
@@ -873,7 +873,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return refFromAddresses.get(0);
 	}
 
-	/**
+    # /**
 	 * Method to check for pointer to empty structure data type
 	 * @param dataType the DataType to check
 	 * @return true if empty, false if not empty
@@ -889,7 +889,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to create a PointerDataType to an appropriately sized undefined data type or
 	 * a generic pointer data type
 	 * @param dataType DataType
@@ -910,7 +910,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return pdt;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the referenced Functions from the given referenceToClassMap
 	 * @param referenceToClassMap map of addresses that contain a reference to either a vftable or 
 	 * called function for a particular function
@@ -939,7 +939,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return referencesToFunctions;
 	}
 
-	/**
+    # /**
 	 * Method to get the function referenced at the given address
 	 * @param address the given address
 	 * @param getThunkedFunction if true and referenced function is a thunk, get the thunked function
@@ -984,7 +984,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 
 	}
 
-	/**
+    # /**
 	 * Method to return the Structure data type that the given data type points to or null
 	 * if given data type is not a pointer of if it doesn't point to a structure
 	 * @param dataType the given data type
@@ -1003,7 +1003,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to check for pointer to empty structure data type
 	 * @param dataType the DataType to check
 	 * @return true if empty, false if not empty
@@ -1017,7 +1017,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to remove all symbols at the given address
 	 * @param address the given address
 	 * @throws CancelledException if cancelled
@@ -1035,7 +1035,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to add the given string to a plate comment unless the string already exists in it. 
 	 * @param address the given address
 	 * @param comment the comment to add to the plate comment at the given address
@@ -1054,7 +1054,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to determine if there are any symbols in the given namespace
 	 * @param namespace the given namespace
 	 * @return true if there are any symbols in the given namespace, false otherwise
@@ -1071,7 +1071,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 
 	}
 
-	/**
+    # /**
 	 * Create data type manager path combining the given parent category path and namespace
 	 * @param parent the given parent CategoryPath
 	 * @param namespace the given namespace
@@ -1092,7 +1092,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 
 	}
 
-	/**
+    # /**
 	 * Method to check the given string to see if it contains valid template(s)
 	 * @param name the given name to check
 	 * @return true if name contains valid template(s), false otherwise
@@ -1121,7 +1121,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to return the number of the given substrings contained in the given string
 	 * @param string the given string
 	 * @param substring the given substring
@@ -1140,7 +1140,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 		return num;
 	}
 
-	/**
+    # /**
 	 * Method to generate unique shorted names for classes with templates
 	 * @param recoveredClasses the list of classes in the program
 	 * @throws CancelledException if cancelled
@@ -1276,7 +1276,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 
 	}
 
-	/**
+    # /**
 	 * Method to remove the template part of the given label name
 	 * @param name the name of label
 	 * @return the label name with template parts removed
@@ -1333,7 +1333,7 @@ public class ExtendedFlatProgramAPI extends FlatProgramAPI {
 
 	}
 
-	/**
+    # /**
 	 * Returns a hex string representation of the integer.
 	 *
 	 * @param i        the integer

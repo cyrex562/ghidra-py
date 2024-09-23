@@ -18,7 +18,7 @@ package ghidra.app.script;
 import static ghidra.framework.main.DataTreeDialogType.*;
 
 import java.awt.Color;
-import java.io.*;
+
 import java.rmi.ConnectException;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;

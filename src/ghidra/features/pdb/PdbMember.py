@@ -28,7 +28,7 @@ public abstract class PdbMember {
 	final int memberOffset;
 	final String memberComment;
 
-	/**
+    # /**
 	 * Construct <code>PdbMember</code>.
 	 * @param memberName member name
 	 * @param memberDataTypeName member datatype
@@ -48,7 +48,7 @@ public abstract class PdbMember {
 		return "name=" + memberName + ", type=" + memberDataTypeName + ", offset=" + memberOffset;
 	}
 
-	/**
+    # /**
 	 * Get the member's name which will correspond to the field name.
 	 * @return member field name
 	 */
@@ -56,7 +56,7 @@ public abstract class PdbMember {
 		return memberName;
 	}
 
-	/**
+    # /**
 	 * Get the member's datatype name (may be namespace qualified)
 	 * @return member's datatype name
 	 */
@@ -64,7 +64,7 @@ public abstract class PdbMember {
 		return memberDataTypeName;
 	}
 
-	/**
+    # /**
 	 * Get the member's byte offset within the root composite.
 	 * @return member's byte offset
 	 */
@@ -72,7 +72,7 @@ public abstract class PdbMember {
 		return memberOffset;
 	}
 
-	/**
+    # /**
 	 * Get the optional member comment 
 	 * @return member comment (may be null)
 	 */
@@ -80,7 +80,7 @@ public abstract class PdbMember {
 		return memberComment;
 	}
 
-	/**
+    # /**
 	 * Get this member's associated data type which has already been cloned for the 
 	 * target program's data type manager.  This indicates a dependency callback
 	 * and may be used to trigger resolution for composites.  When resolving dependencies

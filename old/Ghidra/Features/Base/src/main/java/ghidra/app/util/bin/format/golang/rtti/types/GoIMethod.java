@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang.rtti.types;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.format.golang.rtti.*;
 import ghidra.app.util.bin.format.golang.structmapping.*;

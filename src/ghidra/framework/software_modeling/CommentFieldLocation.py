@@ -33,7 +33,7 @@ public class CommentFieldLocation extends CodeUnitLocation {
 	protected String[] comment;
 	protected int type;
 
-	/**
+    # /**
 	 * Construct a new CommentFieldLocation.
 	 * @param program the program of the location
 	 * @param addr address of the location; should not be null
@@ -61,14 +61,14 @@ public class CommentFieldLocation extends CodeUnitLocation {
 
 	}
 
-	/**
+    # /**
 	 * Default constructor needed for restoring
 	 * a comment field location from XML.
 	 */
 	public CommentFieldLocation() {
 	}
 
-	/**
+    # /**
 	 * Checks that the type is a valid comment type.
 	 * @throws IllegalArgumentException if this doesn't have a valid comment type.
 	 */
@@ -81,7 +81,7 @@ public class CommentFieldLocation extends CodeUnitLocation {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the array of strings that make up the comment.
 	 * @return the comment
 	 */
@@ -89,7 +89,7 @@ public class CommentFieldLocation extends CodeUnitLocation {
 		return comment;
 	}
 
-	/**
+    # /**
 	 * Returns the comment type.  The type is either CodeUnit.EOL_COMMENT, CodeUnit.POST_COMMENT, 
 	 * CodeUnit.PLATE_COMMENT, CodeUnit.PRE_COMMENT, or CodeUnit.REPEATABLE_COMMENT.
 	 * @return the comment type
@@ -98,7 +98,7 @@ public class CommentFieldLocation extends CodeUnitLocation {
 		return type;
 	}
 
-	/**
+    # /**
 	 * Returns a String representation of this location.
 	 */
 	@Override

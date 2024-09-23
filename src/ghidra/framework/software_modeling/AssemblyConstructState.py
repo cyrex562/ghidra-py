@@ -33,7 +33,7 @@ import ghidra.app.plugin.processors.sleigh.ConstructState;
  */
 public class AssemblyConstructState extends AbstractAssemblyState {
 
-	/**
+    # /**
 	 * Compute the farthest end byte (exclusive) among the given operands
 	 * 
 	 * @param operands the operands
@@ -48,7 +48,7 @@ public class AssemblyConstructState extends AbstractAssemblyState {
 	protected final AssemblyConstructorSemantic sem;
 	protected final List<AbstractAssemblyState> children;
 
-	/**
+    # /**
 	 * Construct the state for a selected SLEIGH constructor of a sub-table operand
 	 * 
 	 * <p>
@@ -105,7 +105,7 @@ public class AssemblyConstructState extends AbstractAssemblyState {
 			children.stream().map(s -> s.toString()).collect(Collectors.joining(",")) + "]";
 	}
 
-	/**
+    # /**
 	 * {@inheritDoc}
 	 * 
 	 * <p>
@@ -130,7 +130,7 @@ public class AssemblyConstructState extends AbstractAssemblyState {
 				.map(pat -> pat.parent(desc, children.size()).withConstructor(sem.cons));
 	}
 
-	/**
+    # /**
 	 * Apply each possible pattern for the selected constructor
 	 * 
 	 * @param fromMutations the assembly pattern after mutations were solved
@@ -160,7 +160,7 @@ public class AssemblyConstructState extends AbstractAssemblyState {
 				});
 	}
 
-	/**
+    # /**
 	 * Solve the mutations for the selected constructor
 	 * 
 	 * @param fromChildren the assembly pattern as accumulated from the left-most child
@@ -181,7 +181,7 @@ public class AssemblyConstructState extends AbstractAssemblyState {
 		return Stream.of(pat.solveContextChangesForForbids(sem, resolver.vals));
 	}
 
-	/**
+    # /**
 	 * A recursive function from resolving all children right-to-left and accumulating the patterns
 	 * 
 	 * <p>

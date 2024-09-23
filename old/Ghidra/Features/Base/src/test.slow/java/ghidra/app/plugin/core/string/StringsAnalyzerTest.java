@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.string;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.junit.*;

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.userdump;
 
-import java.io.IOException;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -171,7 +171,7 @@ public class Userdump extends DumpFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Get default <code>Userdump</code> loader options. See
 	 * {@link DumpFile#getDefaultOptions(DumpFileReader)}.
 	 * 

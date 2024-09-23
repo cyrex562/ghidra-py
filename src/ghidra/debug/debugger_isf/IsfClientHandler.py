@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.isf;
 
-import java.io.IOException;
+
 import java.io.StringWriter;
 import java.util.concurrent.atomic.AtomicInteger;
 

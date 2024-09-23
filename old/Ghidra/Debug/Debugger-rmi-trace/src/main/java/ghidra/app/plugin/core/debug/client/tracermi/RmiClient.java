@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.client.tracermi;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Parameter;

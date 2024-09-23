@@ -36,7 +36,7 @@ public class TestThread extends Thread {
 // Static Methods
 //==================================================================================================	
 
-	/**
+    # /**
 	 * Returns true if the current thread is the test thread
 	 * 
 	 * @return true if the current thread is the test thread
@@ -45,7 +45,7 @@ public class TestThread extends Thread {
 		return isTestThread(Thread.currentThread());
 	}
 
-	/**
+    # /**
 	 * Returns true if the given thread is the test thread
 	 * 
 	 * @param t the thread to check
@@ -55,7 +55,7 @@ public class TestThread extends Thread {
 		return t.getName().startsWith(NAME_PREFIX);
 	}
 
-	/**
+    # /**
 	 * Returns true if the given thread name is the test thread name
 	 * 
 	 * @param name the thread name to check
@@ -65,7 +65,7 @@ public class TestThread extends Thread {
 		return name.startsWith(NAME_PREFIX);
 	}
 
-	/**
+    # /**
 	 * Filters the given stack trace to remove entries known to be present in the test 
 	 * thread that offer little forensic value
 	 * 

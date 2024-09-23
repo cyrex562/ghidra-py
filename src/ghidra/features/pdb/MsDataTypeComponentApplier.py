@@ -21,7 +21,7 @@ package ghidra.app.util.pdb.pdbapplicator;
  */
 public abstract class MsDataTypeComponentApplier extends MsTypeApplier {
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working.
 	 */

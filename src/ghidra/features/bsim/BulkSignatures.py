@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.ingest;
 
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
@@ -56,7 +56,7 @@ public class BulkSignatures implements AutoCloseable {
 
 	private FunctionDatabase querydb;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param bsimServerInfo the BSim database server info.  May be {@code null} if use limited to
 	 * signature and update generation only (based upon configuration template).
@@ -77,7 +77,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 *
 	 * 
 	 * @param async true if database commits should be synchronous
@@ -114,7 +114,7 @@ public class BulkSignatures implements AutoCloseable {
 		return info;
 	}
 
-	/**
+    # /**
 	 * This will be automatically invoked when BulkSignatures is out of scope, if using
 	 * try-with-resources to create it. When this happens we need to clean up the 
 	 * connection.
@@ -124,7 +124,7 @@ public class BulkSignatures implements AutoCloseable {
 		closeConnection();
 	}
 
-	/**
+    # /**
 	 * Closes the current database connection.
 	 */
 	private void closeConnection() {
@@ -382,7 +382,7 @@ public class BulkSignatures implements AutoCloseable {
 		return dir;
 	}
 
-	/**
+    # /**
 	 * Creates a new BSim database with a given set of properties.
 	 * 
 	 * @param configTemplate the type of database to create
@@ -438,7 +438,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Adds function signatures from the specified project to the BSim database
 	 * @param ghidraURL ghidra repository from which to pull files for signature generation
 	 * @param sigsLocation the location where signature files will be stored
@@ -467,7 +467,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Updates function signatures from the specified project to the BSim database
 	 * @param ghidraURL ghidra repository from which to pull files for signature generation
 	 * @param sigsLocation the location where update XML files are
@@ -496,7 +496,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Deletes a specified executable from the database.
 	 * 
 	 * @param md5 the MD5 of the executable to delete
@@ -519,7 +519,7 @@ public class BulkSignatures implements AutoCloseable {
 		deleteExecutables(spec);
 	}
 
-	/**
+    # /**
 	 * Deletes a specified executable from the database.
 	 * 
 	 * @param spec the spec that indicates what executable to delete
@@ -547,7 +547,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Drops the current BSim database index which can allow for faster signature ingest after
 	 * which a {@link #rebuildIndex()} may be performed.  Dropping the index may also be done to
 	 * obtain more accurate results albeit at the cost of performance.
@@ -577,7 +577,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Rebuilds the current BSim database index.
 	 * 
 	 * @throws IOException if there's an error establishing the database connection
@@ -606,7 +606,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Performs a prewarm command on the BSim database.
 	 * 
 	 * @throws IOException if there's an error establishing the database connection
@@ -630,7 +630,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a list of all executable records meeting a set of search criteria.
 	 * 
 	 * @param limit the maximum number of results to return
@@ -669,7 +669,7 @@ public class BulkSignatures implements AutoCloseable {
 		return response.records;
 	}
 
-	/**
+    # /**
 	 * Retrieves the number of records in the database that match the filter criteria.
 	 * 
 	 * @param md5Filter the MD5 value must contain this
@@ -695,7 +695,7 @@ public class BulkSignatures implements AutoCloseable {
 		return response.recordCount;
 	}
 
-	/**
+    # /**
 	 * Remove one layer of quoting
 	 * @param val is the string which might be quoted
 	 * @return the string with any outer quote characters stripped
@@ -714,7 +714,7 @@ public class BulkSignatures implements AutoCloseable {
 		return val;
 	}
 
-	/**
+    # /**
 	 * Performs the work of updating the metadata. This will build the query
 	 * object, establish the database connection, and perform the query.
 	 * 
@@ -745,7 +745,7 @@ public class BulkSignatures implements AutoCloseable {
 		Msg.info(this, "   Description:  " + info.description);
 	}
 
-	/**
+    # /**
 	 * Performs the work of installing a new category name. This will build the query
 	 * object, establish the database connection, and perform the query.
 	 * 
@@ -784,7 +784,7 @@ public class BulkSignatures implements AutoCloseable {
 		Msg.info(this, buf.toString());
 	}
 
-	/**
+    # /**
 	 * Performs the work of inserting a new function tag name into the database. This 
 	 * will build the query object, establish the database connection, and perform the query.
 	 * 
@@ -825,7 +825,7 @@ public class BulkSignatures implements AutoCloseable {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Compares pairs of functions specified in an input (XML) file, and writes
 	 * the results to an output file.
 	 * 
@@ -878,7 +878,7 @@ public class BulkSignatures implements AutoCloseable {
 		}
 	}
 
-	/**
+    # /**
 	 * Execute the specified {@link QueryName} query and print the formatted results to the 
 	 * specified {@code outStream}.
 	 * 
@@ -899,7 +899,7 @@ public class BulkSignatures implements AutoCloseable {
 		resp.printRaw(outStream, querydb.getLSHVectorFactory(), 0);
 	}
 
-	/**
+    # /**
 	 * Exports information about a binary to a local folder in XML format.
 	 * 
 	 * @param resultFolder the folder where the results will be stored
@@ -924,7 +924,7 @@ public class BulkSignatures implements AutoCloseable {
 		doDumpSigs(resultFolder, query);
 	}
 
-	/**
+    # /**
 	 * Exports information about a binary to a local folder in XML format.
 	 * 
 	 * @param resultFolder the folder where the results will be stored

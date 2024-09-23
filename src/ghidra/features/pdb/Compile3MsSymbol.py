@@ -53,7 +53,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 	protected int backEndQuickFixEngineeringVersionNumber;
 	protected String compilerVersionString;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -84,7 +84,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the packed flags.
 	 * @return the packed flags.
 	 */
@@ -92,7 +92,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Returns the language.
 	 * @return Language.
 	 */
@@ -100,7 +100,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return language.toString();
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled for "Edit and Continue."
 	 * @return True if it was compiled for "Edit and Continue."
 	 */
@@ -108,7 +108,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return compiledForEditAndContinue;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was not compiled with debug information.
 	 * @return True if it was not compiled with debug information.
 	 */
@@ -116,7 +116,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return notCompiledWithDebugInfo;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled with link-time code generation.
 	 * @return True if it was compiled with link-time code generation.
 	 */
@@ -124,7 +124,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return compiledWithLinkTimeCodeGeneration;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled with Bzalign.
 	 * @return True if compiled with Bzalign.
 	 */
@@ -132,7 +132,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return compiledWithBzalignNoDataAlign;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target has managed code and/or data present.
 	 * @return True if has managed code/data present.
 	 */
@@ -140,7 +140,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return managedCodeDataPresent;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled with /GS buffer security checks.
 	 * @return True if it was compiled with /GS buffer security checks.
 	 */
@@ -148,7 +148,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return compiledWithGsBufferSecurityChecks;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was compiled with /hotpatch.
 	 * @return True if it was compiled with /hotpatch.
 	 */
@@ -156,7 +156,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return compiledWithHotPatch;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target was converted with CVTCIL.
 	 * @return True if was converted with CVTCIL.
 	 */
@@ -164,7 +164,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return convertedWithCvtcil;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target is a Microsoft Intermediate Language netmodule.
 	 * @return True if it is a Microsoft Intermediate Language netmodule.
 	 */
@@ -172,7 +172,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return microsoftIntermediateLanguageNetModule;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target is compiled with /sdl.
 	 * @return True if it was compiled with /sdl.
 	 */
@@ -180,7 +180,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return compiledWithSdl;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target is compiled with /ltcg:pgo or pgu.
 	 * @return True if compiled with /ltcg:pgo or pgu.
 	 */
@@ -188,7 +188,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return compiledWithLtcgPgoOrPgu;
 	}
 
-	/**
+    # /**
 	 * Tells whether the target is a .exp module.
 	 * @return True if a .exp module.
 	 */
@@ -196,7 +196,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return dotExpModule;
 	}
 
-	/**
+    # /**
 	 * Returns the processor.
 	 * @return the processor.
 	 */
@@ -204,7 +204,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return processor;
 	}
 
-	/**
+    # /**
 	 * Returns the front end major version number.
 	 * @return Front end major version number.
 	 */
@@ -212,7 +212,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return frontEndMajorVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the front end minor version number.
 	 * @return Front end minor version number.
 	 */
@@ -220,7 +220,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return frontEndMinorVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the front end build version number.
 	 * @return Front end build version number.
 	 */
@@ -228,7 +228,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return frontEndBuildVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the front end quick fix engineering version number.
 	 * @return Front end quick fix engineering version number.
 	 */
@@ -236,7 +236,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return frontEndQuickFixEngineeringVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the back end major version number.
 	 * @return Back end major version number.
 	 */
@@ -244,7 +244,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return backEndMajorVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the back end minor version number.
 	 * @return Back end minor version number.
 	 */
@@ -252,7 +252,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return backEndMinorVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the back end build version number.
 	 * @return Back end build version number.
 	 */
@@ -260,7 +260,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return backEndBuildVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the back end quick fix engineering version number.
 	 * @return Back end quick fix engineering version number.
 	 */
@@ -268,7 +268,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return backEndQuickFixEngineeringVersionNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the compiler version string.
 	 * @return Compiler version string.
 	 */
@@ -321,7 +321,7 @@ public class Compile3MsSymbol extends AbstractMsSymbol {
 		return "COMPILE3";
 	}
 
-	/**
+    # /**
 	 * Internal method that breaks out the flag values from the aggregate integral type.
 	 * @param flagsIn {@code long} containing unsigned int value.
 	 */

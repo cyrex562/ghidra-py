@@ -53,7 +53,7 @@ class ClangDecompilerHighlighter implements DecompilerHighlighter {
 		this.matcher = matcher;
 	}
 
-	/**
+    # /**
 	 * Create a clone of this highlighter and tracks the clone
 	 * @param panel the panel
 	 * @return the highlighter
@@ -65,7 +65,7 @@ class ClangDecompilerHighlighter implements DecompilerHighlighter {
 		return clone;
 	}
 
-	/**
+    # /**
 	 * Creates a copy of this highlighter that is not tracked by this highlighter
 	 * @param panel the panel
 	 * @return the highlighter

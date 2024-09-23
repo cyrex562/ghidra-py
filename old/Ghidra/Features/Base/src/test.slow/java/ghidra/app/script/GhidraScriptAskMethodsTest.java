@@ -17,7 +17,7 @@ package ghidra.app.script;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 import java.util.concurrent.Callable;

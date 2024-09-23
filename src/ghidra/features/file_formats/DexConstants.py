@@ -31,31 +31,31 @@ public final class DexConstants {
 
 	public final static String DEX_VERSION_009 = "009";
 
-	/** Expected version string */
+    # /** Expected version string */
 	public final static String DEX_VERSION_035 = "035";
-	/**
+    # /**
 	 * Dex version 036 skipped because of an old dalvik bug on some versions
 	 * of android where dex files with that version number would erroneously
 	 * be accepted and run. 
 	 */
 	public final static String DEX_VERSION_036 = "036";
-	/**
+    # /**
 	 * V037 was introduced in API LEVEL 24
 	 */
 	public final static String DEX_VERSION_037 = "037";
-	/**
+    # /**
 	 * Dex version 038: Android "O" and beyond.
 	 * 
 	 * V038 was introduced in API LEVEL 26
 	 */
 	public final static String DEX_VERSION_038 = "038";
-	/**
+    # /**
 	 * Dex version 039: Android "P" and beyond.
 	 * 
 	 * V039 was introduced in API LEVEL 28
 	 */
 	public final static String DEX_VERSION_039 = "039";
-	/**
+    # /**
 	 * Dex version 040: beyond Android "10" (previously known as Android "Q").
 	 */
 	public final static String DEX_VERSION_040 = "040";
@@ -67,7 +67,7 @@ public final class DexConstants {
 
 	public final static int kDexEndianConstant = 0x12345678;
 
-	/**
+    # /**
 	 * First Dex format version enforcing class definition ordering rules.
 	 */
 	public final static int kClassDefinitionOrderEnforcedVersion = 37;

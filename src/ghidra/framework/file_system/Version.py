@@ -15,7 +15,7 @@
  */
 package ghidra.framework.store;
 
-import java.io.IOException;
+
 
 # /**
  * <code>Version</code> provides immutable information about a specific version of an item.
@@ -31,7 +31,7 @@ public class Version implements java.io.Serializable {
 	private String user;
 	private String comment;
 	
-	/**
+    # /**
 	 * Constructor.
 	 * @param version file version number
 	 * @param createTime time version was created
@@ -45,7 +45,7 @@ public class Version implements java.io.Serializable {
 		this.comment = comment;	
 	}
 	
-	/**
+    # /**
 	 * Serialization method
 	 * @param out
 	 * @throws IOException
@@ -58,7 +58,7 @@ public class Version implements java.io.Serializable {
 		out.writeUTF(comment  != null ? comment : "");
 	}
 	
-	/**
+    # /**
 	 * Deserialization method
 	 * @param in
 	 * @throws IOException
@@ -75,28 +75,28 @@ public class Version implements java.io.Serializable {
 		comment = in.readUTF();
  	}
  	
- 	/**
+     # /**
  	 * Returns version number.
  	 */
 	public int getVersion() {
 		return version;
 	}
 	
-	/**
+    # /**
 	 * Returns time at which version was created.
 	 */
 	public long getCreateTime() {
 		return createTime;
 	}
 	
-	/**
+    # /**
 	 * Returns version comment.
 	 */
 	public String getComment() {
 		return comment;
 	}
 	
-	/**
+    # /**
 	 * Returns name of user who created version.
 	 */
 	public String getUser() {

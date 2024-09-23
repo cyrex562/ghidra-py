@@ -19,20 +19,20 @@ import ghidra.app.util.bin.StructConverter;
 import ghidra.util.NumericUtilities;
 
 public abstract class BootImageHeader implements StructConverter {
-	/**
+    # /**
 	 * Returns the Boot Image MAGIC value.
 	 * @see BootImageConstants
 	 * @return the Boot Image MAGIC value
 	 */
 	public abstract String getMagic();
 
-	/**
+    # /**
 	 * Returns the page size, as defined in the header.
 	 * @return the page size, as defined in the header
 	 */
 	public abstract int getPageSize();
 
-	/**
+    # /**
 	 * Aligns a value upwards to nearest page boundary.
 	 *  
 	 * @param value unsigned value to align
@@ -42,61 +42,61 @@ public abstract class BootImageHeader implements StructConverter {
 		return NumericUtilities.getUnsignedAlignedValue(value, getPageSize());
 	}
 
-	/**
+    # /**
 	 * Returns the kernel size, as defined in the header.
 	 * @return the kernel size, as defined in the header
 	 */
 	public abstract int getKernelSize();
 
-	/**
+    # /**
 	 * Returns the number of pages used to store the kernel.
 	 * @return the number of pages used to store the kernel
 	 */
 	public abstract int getKernelPageCount();
 
-	/**
+    # /**
 	 * Returns the kernel file offset
 	 * @return the kernel file offset
 	 */
 	public abstract long getKernelOffset();
 
-	/**
+    # /**
 	 * Returns the ramdisk size, as defined in the header.
 	 * @return the ramdisk size, as defined in the header
 	 */
 	public abstract int getRamdiskSize();
 
-	/**
+    # /**
 	 * Returns the number of pages used to store the ramdisk.
 	 * @return the number of pages used to store the ramdisk
 	 */
 	public abstract int getRamdiskPageCount();
 
-	/**
+    # /**
 	 * Returns the ramdisk file offset.
 	 * @return the ramdisk file offset
 	 */
 	public abstract int getRamdiskOffset();
 
-	/**
+    # /**
 	 * Returns the second stage size, as defined in the header.
 	 * @return the second stage size, as defined in the header
 	 */
 	public abstract int getSecondSize();
 
-	/**
+    # /**
 	 * Returns the number of pages used to store the second stage.
 	 * @return the number of pages used to store the second stage
 	 */
 	public abstract int getSecondPageCount();
 
-	/**
+    # /**
 	 * Returns the second stage file offset.
 	 * @return the second stage file offset
 	 */
 	public abstract long getSecondOffset();
 
-	/**
+    # /**
 	 * Returns the kernel commandline.
 	 * @return the kernel commandline
 	 */

@@ -23,7 +23,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 public class ClassDefItem implements StructConverter {
 

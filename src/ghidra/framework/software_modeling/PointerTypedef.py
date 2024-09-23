@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.Objects;
@@ -28,28 +28,28 @@ import ghidra.util.UniversalID;
 import ghidra.util.UniversalIdGenerator;
 
 # /**
- * <code>PointerTypedef</code> provides a Pointer-Typedef template datatype
- * which may be used as an alternative to {@link PointerTypedefBuilder} for
- * select use cases.  Once resolved this datatype is transformed into a 
- * standard {@link TypeDef} with appropropriate settings (see 
- * {@link TypeDefSettingsDefinition}).
- * <br>
- * NOTE: The name of this class intentionally does not end with <code>DataType</code>
- * since it does not implement a default constructor so it may not be treated
- * like other {@link BuiltIn} datatypes which are managed by the 
- * {@link BuiltInDataTypeManager}.
- * <br>
- * NOTE: As a {@link BuiltIn} datatype the use of {@link #setName(String)} and
- * {@link #setNameAndCategory(CategoryPath, String)} is disabled.  The datatype
- * instance must be instantiated with the correct typedef name.  
- */
+# * <code>PointerTypedef</code> provides a Pointer-Typedef template datatype
+# * which may be used as an alternative to {@link PointerTypedefBuilder} for
+# * select use cases.  Once resolved this datatype is transformed into a 
+# * standard {@link TypeDef} with appropropriate settings (see 
+# * {@link TypeDefSettingsDefinition}).
+# * <br>
+# * NOTE: The name of this class intentionally does not end with <code>DataType</code>
+# * since it does not implement a default constructor so it may not be treated
+# * like other {@link BuiltIn} datatypes which are managed by the 
+# * {@link BuiltInDataTypeManager}.
+# * <br>
+# * NOTE: As a {@link BuiltIn} datatype the use of {@link #setName(String)} and
+# * {@link #setNameAndCategory(CategoryPath, String)} is disabled.  The datatype
+# * instance must be instantiated with the correct typedef name.  
+# */
 public class PointerTypedef extends GenericDataType implements TypeDef {
 
 	private boolean isAutoNamed;
 	private TypedefDataType modelTypedef;
 	private UniversalID universalId = UniversalIdGenerator.nextID();
 
-	/**
+    # /**
 	 * Constructs a pointer-typedef which dereferences into a specific address space.
 	 * @param typeDefName name of this pointer-typedef or null to use auto-named typedef.
 	 * @param referencedDataType data type this pointer-typedef points to or null
@@ -65,7 +65,7 @@ public class PointerTypedef extends GenericDataType implements TypeDef {
 		AddressSpaceSettingsDefinition.DEF.setValue(getDefaultSettings(), space.getName());
 	}
 
-	/**
+    # /**
 	 * Constructs a pointer-typedef of a specific type
 	 * @param typeDefName name of this pointer-typedef or null to use auto-named typedef.
 	 * @param referencedDataType data type this pointer-typedef points to or null
@@ -80,7 +80,7 @@ public class PointerTypedef extends GenericDataType implements TypeDef {
 		PointerTypeSettingsDefinition.DEF.setType(getDefaultSettings(), type);
 	}
 
-	/**
+    # /**
 	 * Constructs a offset-pointer-typedef
 	 * @param typeDefName name of this pointer-typedef or null to use auto-named typedef.
 	 * @param referencedDataType data type this pointer-typedef points to or null
@@ -94,7 +94,7 @@ public class PointerTypedef extends GenericDataType implements TypeDef {
 		ComponentOffsetSettingsDefinition.DEF.setValue(getDefaultSettings(), componentOffset);
 	}
 
-	/**
+    # /**
 	 * Constructs a pointer-typedef without any settings
 	 * @param typeDefName name of this pointer-typedef or null to use auto-named typedef.
 	 * @param referencedDataType data type this pointer-typedef points to or null
@@ -109,7 +109,7 @@ public class PointerTypedef extends GenericDataType implements TypeDef {
 			new TypedefDataType("TEMP", new PointerDataType(referencedDataType, pointerSize, dtm));
 	}
 
-	/**
+    # /**
 	 * Constructs a pointer-typedef without any settings
 	 * @param typeDefName name of this pointer-typedef or null to use auto-named typedef.
 	 * @param pointerDataType associated pointer datatype
@@ -153,7 +153,7 @@ public class PointerTypedef extends GenericDataType implements TypeDef {
 		return isAutoNamed;
 	}
 
-	/**
+    # /**
 	 * Get the referenced datatype used to construct this datatype
 	 * (datatype which pointer references).
 	 * @return referenced datatype

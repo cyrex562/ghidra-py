@@ -22,7 +22,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.TypedefDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC2_Cache implements StructConverter {
 	private ObjectiveC2_State _state;

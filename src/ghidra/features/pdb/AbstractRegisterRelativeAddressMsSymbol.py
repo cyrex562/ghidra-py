@@ -32,7 +32,7 @@ public abstract class AbstractRegisterRelativeAddressMsSymbol extends AbstractMs
 	protected RegisterName registerName;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -43,7 +43,7 @@ public abstract class AbstractRegisterRelativeAddressMsSymbol extends AbstractMs
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -51,7 +51,7 @@ public abstract class AbstractRegisterRelativeAddressMsSymbol extends AbstractMs
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -59,7 +59,7 @@ public abstract class AbstractRegisterRelativeAddressMsSymbol extends AbstractMs
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the register index.
 	 * @return Register index.
 	 */
@@ -67,7 +67,7 @@ public abstract class AbstractRegisterRelativeAddressMsSymbol extends AbstractMs
 		return registerIndex;
 	}
 
-	/**
+    # /**
 	 * Returns the register name.
 	 * @return Register name.
 	 */
@@ -75,7 +75,7 @@ public abstract class AbstractRegisterRelativeAddressMsSymbol extends AbstractMs
 		return registerName.toString();
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

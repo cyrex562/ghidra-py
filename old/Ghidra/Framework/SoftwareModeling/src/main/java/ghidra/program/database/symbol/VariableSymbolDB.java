@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.program.database.DBObjectCache;

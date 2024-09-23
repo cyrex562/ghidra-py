@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.apport;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.*;

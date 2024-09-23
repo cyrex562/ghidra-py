@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -24,9 +24,9 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Adapter to access the Pointer database table for Pointer data types.
- *
- */
+# * Adapter to access the Pointer database table for Pointer data types.
+# *
+# */
 abstract class PointerDBAdapter implements RecordTranslator {
 	static final String POINTER_TABLE_NAME = "Pointers";
 
@@ -38,7 +38,7 @@ abstract class PointerDBAdapter implements RecordTranslator {
 	static final int PTR_CATEGORY_COL = 1;
 	static final int PTR_LENGTH_COL = 2;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the enumeration data type values database table. The adapter is based
 	 * on the version of the database associated with the specified database handle and the openMode.
 	 * @param handle handle to the database to be accessed.
@@ -113,7 +113,7 @@ abstract class PointerDBAdapter implements RecordTranslator {
 
 	abstract void deleteTable(DBHandle handle) throws IOException;
 
-	/**
+    # /**
 	 * Create a pointer record.
 	 * @param dataTypeID data type ID of the date type being pointed to
 	 * @param categoryID the category ID of the datatype
@@ -123,7 +123,7 @@ abstract class PointerDBAdapter implements RecordTranslator {
 	 */
 	abstract DBRecord createRecord(long dataTypeID, long categoryID, int length) throws IOException;
 
-	/**
+    # /**
 	 * Get the record with the given pointerID.
 	 * @param pointerID database key
 	 * @return requested pointer record or null if not found
@@ -131,14 +131,14 @@ abstract class PointerDBAdapter implements RecordTranslator {
 	 */
 	abstract DBRecord getRecord(long pointerID) throws IOException;
 
-	/**
+    # /**
 	 * An iterator over the records of this adapter
 	 * @return the iterator
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Delete the record.
 	 * @param pointerID database key
 	 * @return true if the record was deleted
@@ -146,14 +146,14 @@ abstract class PointerDBAdapter implements RecordTranslator {
 	 */
 	abstract boolean removeRecord(long pointerID) throws IOException;
 
-	/**
+    # /**
 	 * Update the record in the table.
 	 * @param record pointer record to be updated
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void updateRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Gets all the pointer data types that are contained in the category that
 	 * have the indicated ID.
 	 * @param categoryID the category whose pointer data types are wanted.
@@ -162,7 +162,7 @@ abstract class PointerDBAdapter implements RecordTranslator {
 	 */
 	abstract Field[] getRecordIdsInCategory(long categoryID) throws IOException;
 
-	/**
+    # /**
 	 * Get the number of pointer datatype records
 	 * @return total number of composite records
 	 */

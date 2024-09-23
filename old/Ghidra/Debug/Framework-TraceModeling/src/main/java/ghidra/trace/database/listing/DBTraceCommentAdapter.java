@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.listing;
 
-import java.io.IOException;
+
 import java.util.concurrent.locks.ReadWriteLock;
 
 import org.apache.commons.lang3.StringUtils;

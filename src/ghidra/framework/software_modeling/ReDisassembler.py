@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.disassemble;
 
 import java.util.*;
@@ -29,16 +29,16 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * A class that re-disassembles where necessary
- * 
- * <p>
- * Given a seed address, this will (re-)disassemble the instruction at that address. If it indicates
- * any context changes, whether via {@code globalset} or fall-through, the affected addresses are
- * considered for re-disassembly as well. If no instruction exists at the address, or an off-cut
- * instruction exists at the address, the address is dropped, but the outgoing context is recorded.
- * If one does exist, but its context is already the same, the address is dropped. Otherwise, it is
- * queued up and the process repeats.
- */
+# * A class that re-disassembles where necessary
+# * 
+# * <p>
+# * Given a seed address, this will (re-)disassemble the instruction at that address. If it indicates
+# * any context changes, whether via {@code globalset} or fall-through, the affected addresses are
+# * considered for re-disassembly as well. If no instruction exists at the address, or an off-cut
+# * instruction exists at the address, the address is dropped, but the outgoing context is recorded.
+# * If one does exist, but its context is already the same, the address is dropped. Otherwise, it is
+# * queued up and the process repeats.
+# */
 public class ReDisassembler {
 
 	protected final Language language;
@@ -125,7 +125,7 @@ public class ReDisassembler {
 				(int) at.subtract(progMemBuffer.getAddress()));
 		}
 
-		/**
+	    # /**
 		 * Not necessarily a full block, but certainly no more than a block.
 		 *
 		 * <p>
@@ -215,7 +215,7 @@ public class ReDisassembler {
 		protected boolean shouldDisassemble(Flow flow) {
 			Instruction exists = listing.getInstructionContaining(flow.to);
 			if (exists == null) {
-				/**
+			    # /**
 				 * NOTE: New instructions are not placed until we're all done, so there is no need
 				 * to worry about differences in instruction length as we progress through a block.
 				 */
@@ -270,7 +270,7 @@ public class ReDisassembler {
 			}
 		}
 
-		/**
+	    # /**
 		 * Parse the next instructions, including delay-slotted ones
 		 * 
 		 * @param flow the {@link Flow}

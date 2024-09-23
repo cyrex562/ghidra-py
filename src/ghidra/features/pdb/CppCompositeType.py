@@ -1617,7 +1617,7 @@ public class CppCompositeType {
 		private DataType dataType;
 		private boolean isFlexibleArray;
 
-		/**
+	    # /**
 		 * Class PDB member construction
 		 * @param name member field name.
 		 * @param dataType for the field.

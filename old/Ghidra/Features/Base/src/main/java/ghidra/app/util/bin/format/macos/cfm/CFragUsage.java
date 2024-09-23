@@ -16,7 +16,7 @@
  */
 package ghidra.app.util.bin.format.macos.cfm;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 

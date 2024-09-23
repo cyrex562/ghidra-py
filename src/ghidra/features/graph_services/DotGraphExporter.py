@@ -16,7 +16,7 @@
 package ghidra.graph.exporter;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.Map;
 
 import org.jgrapht.nio.Attribute;
@@ -47,7 +47,7 @@ public class DotGraphExporter extends AbstractAttributedGraphExporter {
 		}
 	}
 
-	/**
+    # /**
 	 * DOT graphs use a special attribute call "label" which we call "Name", so when
 	 * exporting to DOT format, change the "Name" attribute to "label".
 	 */

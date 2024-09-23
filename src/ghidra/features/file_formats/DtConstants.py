@@ -21,20 +21,20 @@ package ghidra.file.formats.dtb;
  */
 public final class DtConstants {
 
-	/** Device Tree (DT) Magic Value */
+    # /** Device Tree (DT) Magic Value */
 	public static final int DT_TABLE_MAGIC = 0xd7b7ab1e;
 
-	/** Device Tree (DT) Magic Value Bytes */
+    # /** Device Tree (DT) Magic Value Bytes */
 	public static final byte[] DT_TABLE_MAGIC_BYTES =
 		new byte[] { (byte) 0xd7, (byte) 0xb7, (byte) 0xab, (byte) 0x1e };
 
-	/** Device Tree (DT) Magic Value Size */
+    # /** Device Tree (DT) Magic Value Size */
 	public static final int DT_TABLE_MAGIC_SIZE = 4;
 
-	/** Device Tree (DT) Page Size */
+    # /** Device Tree (DT) Page Size */
 	public static final int DT_TABLE_DEFAULT_PAGE_SIZE = 2048;
 
-	/** Device Tree (DT) Default Version */
+    # /** Device Tree (DT) Default Version */
 	public static final int DT_TABLE_DEFAULT_VERSION = 0;
 
 }

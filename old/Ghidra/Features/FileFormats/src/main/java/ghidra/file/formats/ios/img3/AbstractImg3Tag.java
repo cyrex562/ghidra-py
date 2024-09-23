@@ -20,7 +20,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.util.StringUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public abstract class AbstractImg3Tag implements StructConverter {
 	protected BinaryReader _reader;

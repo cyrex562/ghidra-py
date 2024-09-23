@@ -23,18 +23,18 @@ import ghidra.util.Msg;
 import ghidra.util.Swing;
 
 public class CheckForListenerRunnable extends CheckPeriodicallyRunnable {
-	/**
+    # /**
 	 * If a listening Ghidra needs to be started, how long to wait before asking to continue 
 	 * waiting 
 	 */
 	public static int WAIT_FOR_LISTENER_DELAY_MS = 30_000;
 
-	/**
+    # /**
 	 * How frequently to ask to continue waiting after Wait is selected
 	 */
 	public static int WAIT_FOR_LISTENER_PERIOD_MS = 60_000;
 
-	/**
+    # /**
 	 * Maximum amount of time to wait for a listening Ghidra
 	 */
 	public static int MAX_WAIT_FOR_LISTENER_MIN = 5;
@@ -92,7 +92,7 @@ public class CheckForListenerRunnable extends CheckPeriodicallyRunnable {
 		}
 	}
 
-	/**
+    # /**
 	 * checks to see if Ghidra process exited early, In the event Ghidra exits early, 
 	 * a runtime exception is thrown
 	 * @param p Ghidra process

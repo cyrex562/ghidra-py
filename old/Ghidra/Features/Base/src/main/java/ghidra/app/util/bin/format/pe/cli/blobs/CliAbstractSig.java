@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe.cli.blobs;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

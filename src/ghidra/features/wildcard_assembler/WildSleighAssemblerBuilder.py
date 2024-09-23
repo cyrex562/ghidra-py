@@ -50,7 +50,7 @@ public class WildSleighAssemblerBuilder
 
 	protected final Map<AssemblySymbol, AssemblyNonTerminal> wildNTs = new HashMap<>();
 
-	/**
+    # /**
 	 * Construct a builder for the given language
 	 * 
 	 * <p>
@@ -94,7 +94,7 @@ public class WildSleighAssemblerBuilder
 		if (t instanceof AssemblyStringTerminal term && term.getDefiningSymbol() != null) {
 			return new WildAssemblyStringTerminal(term.getString());
 		}
-		/**
+	    # /**
 		 * Exclude string terminals. These should be purely syntactic elements. Use of them as fixed
 		 * literals, e.g., 1 or RAX, is an error on the spec's part.
 		 */

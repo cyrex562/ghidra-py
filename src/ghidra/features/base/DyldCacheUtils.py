@@ -16,7 +16,7 @@
 package ghidra.app.util.opinion;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;

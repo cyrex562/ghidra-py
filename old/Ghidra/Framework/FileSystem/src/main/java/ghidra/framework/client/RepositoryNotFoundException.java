@@ -15,7 +15,7 @@
  */
 package ghidra.framework.client;
 
-import java.io.IOException;
+
 
 /**
  * {@code RepositoryNotFoundException} thrown when a failed connection occurs to a

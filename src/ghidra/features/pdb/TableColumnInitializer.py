@@ -31,7 +31,7 @@ import docking.widgets.table.*;
  * matching TableColumn. 
  */
 public interface TableColumnInitializer {
-	/**
+    # /**
 	 * Best called during {@link DialogComponentProvider#dialogShown} or 
 	 * {@link ComponentProvider#componentShown} 
 	 * 
@@ -53,7 +53,7 @@ public interface TableColumnInitializer {
 		}
 	}
 
-	/**
+    # /**
 	 * Called to allow the initializer to modify the specified TableColumn
 	 * 
 	 * @param col {@link TableColumn}

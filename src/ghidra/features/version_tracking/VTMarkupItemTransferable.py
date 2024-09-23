@@ -21,7 +21,7 @@ import ghidra.program.model.data.DataTypeTransferable;
 import ghidra.util.Msg;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -47,7 +47,7 @@ class VTMarkupItemTransferable implements Transferable {
 	private static List<DataFlavor> flavorList = Arrays.asList(flavors);
 	private VTMarkupItem markupItem;
 
-	/**
+    # /**
 	 * VTMarkupItemTransferable is used when performing drag-n-drop between the source 
 	 * and destination within the version tracking dual listing panel.
 	 * @param markupItem the mark-up item being dragged and dropped.
@@ -56,7 +56,7 @@ class VTMarkupItemTransferable implements Transferable {
 		this.markupItem = markupItem;
 	}
 
-	/**
+    # /**
 	 * Return the transfer data with the given data flavor.
 	 */
 	@Override
@@ -70,7 +70,7 @@ class VTMarkupItemTransferable implements Transferable {
 
 	}
 
-	/**
+    # /**
 	 * Return all data flavors that this class supports.
 	 */
 	@Override
@@ -78,7 +78,7 @@ class VTMarkupItemTransferable implements Transferable {
 		return flavors;
 	}
 
-	/**
+    # /**
 	 * Return whether the specified data flavor is supported.
 	 */
 	@Override

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf.extend;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

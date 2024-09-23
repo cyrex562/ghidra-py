@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler;
 
 import java.util.HashMap;
@@ -26,23 +26,23 @@ import ghidra.program.model.lang.LanguageID;
 import ghidra.program.model.listing.Program;
 
 # /**
- * The primary class for obtaining an {@link Assembler} for a Ghidra-supported language.
- * 
- * <p>
- * The general flow is: First, obtain an assembler for a language or program. Second, call its
- * {@link Assembler#assemble(Address, String...)} and related methods to perform assembly. More
- * advanced uses pass a {@link AssemblySelector} to control certain aspects of assembly instruction
- * selection, and to obtain advanced diagnostics, like detailed errors and code completion.
- * 
- * <pre>
- * Assembler asm = Assemblers.getAssembler(currentProgram);
- * asm.assemble(currentAddress, "ADD ...");
- * </pre>
- */
+# * The primary class for obtaining an {@link Assembler} for a Ghidra-supported language.
+# * 
+# * <p>
+# * The general flow is: First, obtain an assembler for a language or program. Second, call its
+# * {@link Assembler#assemble(Address, String...)} and related methods to perform assembly. More
+# * advanced uses pass a {@link AssemblySelector} to control certain aspects of assembly instruction
+# * selection, and to obtain advanced diagnostics, like detailed errors and code completion.
+# * 
+# * <pre>
+# * Assembler asm = Assemblers.getAssembler(currentProgram);
+# * asm.assemble(currentAddress, "ADD ...");
+# * </pre>
+# */
 public final class Assemblers {
 	private static Map<LanguageID, AssemblerBuilder> builders = new HashMap<>();
 
-	/**
+    # /**
 	 * Get a builder for the given language, possibly using a cached one.
 	 * 
 	 * @param lang the language
@@ -61,7 +61,7 @@ public final class Assemblers {
 		throw new UnsupportedOperationException("Unsupported language type: " + lang.getClass());
 	}
 
-	/**
+    # /**
 	 * Get an assembler for the given program.
 	 * 
 	 * <p>
@@ -79,7 +79,7 @@ public final class Assemblers {
 		return b.getAssembler(selector, program);
 	}
 
-	/**
+    # /**
 	 * Get an assembler for the given language.
 	 * 
 	 * <p>
@@ -97,7 +97,7 @@ public final class Assemblers {
 		return b.getAssembler(selector);
 	}
 
-	/**
+    # /**
 	 * Get an assembler for the given program.
 	 * 
 	 * @see #getAssembler(Program, AssemblySelector)
@@ -109,7 +109,7 @@ public final class Assemblers {
 		return getAssembler(program, new AssemblySelector());
 	}
 
-	/**
+    # /**
 	 * Get an assembler for the given language.
 	 * 
 	 * @see #getAssembler(Language, AssemblySelector)

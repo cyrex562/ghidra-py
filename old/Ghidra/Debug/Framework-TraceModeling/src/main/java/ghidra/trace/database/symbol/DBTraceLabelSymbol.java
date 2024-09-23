@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.symbol;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.program.model.address.*;

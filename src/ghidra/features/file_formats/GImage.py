@@ -17,7 +17,7 @@ package ghidra.file.image;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.*;
+
 import java.util.Iterator;
 
 import javax.imageio.ImageIO;

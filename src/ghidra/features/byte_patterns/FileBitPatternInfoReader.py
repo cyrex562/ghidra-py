@@ -16,7 +16,7 @@
 package ghidra.bitpatterns.info;
 
 import java.awt.Component;
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.commons.io.FileUtils;

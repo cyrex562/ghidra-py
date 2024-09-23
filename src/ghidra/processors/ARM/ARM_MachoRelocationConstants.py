@@ -22,47 +22,47 @@ package ghidra.app.util.bin.format.macho.relocation;
  */
 public class ARM_MachoRelocationConstants {
 	
-	/**
+    # /**
 	 * Generic relocation as described above
 	 */
 	public final static int ARM_RELOC_VANILLA = 0;
 
-	/**
+    # /**
 	 * The second relocation entry of a pair
 	 */
 	public final static int ARM_RELOC_PAIR = 1;
 
-	/**
+    # /**
 	 * A PAIR follows with subtract symbol value
 	 */
 	public final static int ARM_RELOC_SECTDIFF = 2;
 
-	/**
+    # /**
 	 * Like ARM_RELOC_SECTDIFF, but the symbol referenced was local
 	 */
 	public final static int ARM_RELOC_LOCAL_SECTDIFF = 3;
 
-	/**
+    # /**
 	 * Pre-bound lazy pointer
 	 */
 	public final static int ARM_RELOC_PB_LA_PTR = 4;
 
-	/**
+    # /**
 	 * 24 bit branch displacement (to a word address)
 	 */
 	public final static int ARM_RELOC_BR24 = 5;
 
-	/**
+    # /**
 	 * 22 bit branch displacement (to a half-word address)
 	 */
 	public final static int ARM_THUMB_RELOC_BR22 = 6;
 
-	/**
+    # /**
 	 * Obsolete - a thumb 32-bit branch instruction possibly needing page-spanning branch workaround
 	 */
 	public final static int ARM_THUMB_32BIT_BRANCH = 7;
 
-	/**
+    # /**
 	 * For these two r_type relocations they always have a pair following them and the r_length bits
 	 * are used differently.  The encoding of the r_length is as follows:
 	 * 

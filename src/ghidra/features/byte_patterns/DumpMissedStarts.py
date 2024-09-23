@@ -15,7 +15,7 @@
  */
 //@category CodeAnalysis
 
-import java.io.*;
+
 import java.util.ArrayList;
 
 import generic.jar.ResourceFile;

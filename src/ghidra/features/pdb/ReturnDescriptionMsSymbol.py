@@ -73,7 +73,7 @@ public class ReturnDescriptionMsSymbol extends AbstractMsSymbol {
 	private int bytesRemaining;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -93,7 +93,7 @@ public class ReturnDescriptionMsSymbol extends AbstractMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Style} of return.
 	 * @return The {@link Style} of return
 	 */
@@ -101,7 +101,7 @@ public class ReturnDescriptionMsSymbol extends AbstractMsSymbol {
 		return style;
 	}
 
-	/**
+    # /**
 	 * Tells whether the varargs are pushed right-to-left.
 	 * @return True if varargs were pushed right-to-left.
 	 */
@@ -109,7 +109,7 @@ public class ReturnDescriptionMsSymbol extends AbstractMsSymbol {
 		return varargsPushedRightToLeft;
 	}
 
-	/**
+    # /**
 	 * Tells whether the returnee is responsible for cleaning up the stack.
 	 * @return TruE if the returnee is responsible for cleaning up the stack.
 	 */

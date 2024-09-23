@@ -40,7 +40,7 @@ public class FunctionNodeContainer {
 		return program;
 	}
 
-	/**
+    # /**
 	 * Get the FunctionNode associated with a specific address
 	 * @param addr the Address to search for
 	 * @return the corresponding FunctionNode (or null if addr maps to nothing)
@@ -49,21 +49,21 @@ public class FunctionNodeContainer {
 		return addrToNode.get(addr);
 	}
 
-	/**
+    # /**
 	 * @return the number of FunctionNodes held in this container
 	 */
 	public int size() {
 		return addrToNode.size();
 	}
 
-	/**
+    # /**
 	 * @return an iterator over all FunctionNodes in this container, in address order
 	 */
 	public Iterator<FunctionNode> iterator() {
 		return addrToNode.values().iterator();
 	}
 
-	/**
+    # /**
 	 * Generate program call-graph in terms of FunctionNodes
 	 * Uses the call address attached to each raw FunctionNode
 	 * Once the xrefs are built, the original call address arrays are released

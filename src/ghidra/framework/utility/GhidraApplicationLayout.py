@@ -16,7 +16,7 @@
 package ghidra;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import generic.jar.ResourceFile;
@@ -34,7 +34,7 @@ import utility.module.ModuleUtilities;
  */
 public class GhidraApplicationLayout extends ApplicationLayout {
 
-	/**
+    # /**
 	 * Constructs a new Ghidra application layout object.
 	 *
 	 * @throws IOException if there was a problem getting a user directory or the application 
@@ -69,7 +69,7 @@ public class GhidraApplicationLayout extends ApplicationLayout {
 		modules = findGhidraModules();
 	}
 
-	/**
+    # /**
 	 * Constructs a new Ghidra application layout object using a provided
 	 * application installation directory instead of this layout's default.
 	 * <p>
@@ -110,7 +110,7 @@ public class GhidraApplicationLayout extends ApplicationLayout {
 		modules = findGhidraModules();
 	}
 
-	/**
+    # /**
 	 * Finds the application root directories for this application layout.
 	 *
 	 * @return A collection of the application root directories for this layout.
@@ -119,7 +119,7 @@ public class GhidraApplicationLayout extends ApplicationLayout {
 		return ApplicationUtilities.findDefaultApplicationRootDirs();
 	}
 
-	/**
+    # /**
 	 * Finds the application installation directory for this Ghidra application
 	 * layout.
 	 *
@@ -139,7 +139,7 @@ public class GhidraApplicationLayout extends ApplicationLayout {
 		return dir;
 	}
 
-	/**
+    # /**
 	 * Finds the modules for this Ghidra application layout.
 	 *
 	 * @return The modules for this Ghidra application layout.
@@ -184,7 +184,7 @@ public class GhidraApplicationLayout extends ApplicationLayout {
 		return ModuleUtilities.findModules(applicationRootDirs, moduleRootDirectories);
 	}
 
-	/**
+    # /**
 	 * Returns the directory that allows users to add jar and class files to override existing
 	 * distribution files
 	 * @return the patch dir; null if not in a distribution
@@ -202,7 +202,7 @@ public class GhidraApplicationLayout extends ApplicationLayout {
 		return new ResourceFile(applicationInstallationDir, "Ghidra/patch");
 	}
 
-	/**
+    # /**
 	 * Returns the directory where all Ghidra extension archives are stored.
 	 * This should be at the following location:<br>
 	 * <ul>
@@ -223,7 +223,7 @@ public class GhidraApplicationLayout extends ApplicationLayout {
 		return new ResourceFile(applicationInstallationDir, "Extensions/Ghidra");
 	}
 
-	/**
+    # /**
 	 * Returns a prioritized list of directories where Ghidra extensions are installed. These
 	 * should be at the following locations:<br>
 	 * <ul>

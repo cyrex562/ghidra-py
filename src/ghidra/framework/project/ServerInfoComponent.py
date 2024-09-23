@@ -48,7 +48,7 @@ public class ServerInfoComponent extends JPanel {
 		buildMainPanel();
 	}
 
-	/**
+    # /**
 	 * Set the status listener
 	 * @param statusListener
 	 */
@@ -56,7 +56,7 @@ public class ServerInfoComponent extends JPanel {
 		this.statusListener = statusListener;
 	}
 
-	/**
+    # /**
 	 * Set the change listener for this component
 	 * @param listener
 	 */
@@ -64,21 +64,21 @@ public class ServerInfoComponent extends JPanel {
 		this.listener = listener;
 	}
 
-	/**
+    # /**
 	 * Get the server name. 
 	 */
 	public String getServerName() {
 		return nameField.getText();
 	}
 
-	/**
+    # /**
 	 * Get the port number.
 	 */
 	public int getPortNumber() {
 		return portNumber;
 	}
 
-	/**
+    # /**
 	 * Set the field values using the given server info.
 	 */
 	public void setServerInfo(ServerInfo info) {
@@ -206,7 +206,7 @@ public class ServerInfoComponent extends JPanel {
 		return msg == null;
 	}
 
-	/**
+    # /**
 	 * Return whether the fields on this panel have valid information.
 	 */
 	public boolean isValidInformation() {

@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.dwarf4.next;
 import static org.junit.Assert.*;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.HashSet;
 import java.util.Set;
 

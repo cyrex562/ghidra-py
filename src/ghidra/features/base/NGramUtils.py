@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.string;
 import generic.jar.ResourceFile;
 import ghidra.framework.Application;
 
-import java.io.*;
+
 import java.util.*;
 
 public class NGramUtils {

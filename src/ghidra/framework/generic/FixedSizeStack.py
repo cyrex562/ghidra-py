@@ -25,7 +25,7 @@ public class FixedSizeStack<E> extends Stack<E> {
 
 	private int maxSize;
 
-	/**
+    # /**
 	 * Creates a fixed size stack with the specified
 	 * max size.
 	 * @param maxSize the max size of the stack

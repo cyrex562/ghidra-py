@@ -20,7 +20,7 @@
 // weights file is chosen based on the architecture of the current function.
 //@category BSim
 
-import java.io.*;
+
 
 import org.xml.sax.SAXException;
 

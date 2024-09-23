@@ -18,7 +18,7 @@ package ghidra.program.database.util;
 
 import ghidra.program.model.address.Address;
 
-import java.io.IOException;
+
 
 import db.DBLongIterator;
 

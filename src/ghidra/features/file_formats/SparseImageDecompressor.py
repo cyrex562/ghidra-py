@@ -20,7 +20,7 @@
 
 package ghidra.file.formats.sparseimage;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 import java.util.zip.CRC32;
 
@@ -43,7 +43,7 @@ public class SparseImageDecompressor {
 	private OutputStream tempFos;
 	private int blockSize;
 
-	/**
+    # /**
 	 * Creates a new sparse image decompressor, which will read from the specified {@link ByteProvider}
 	 * and write to the specified {@link OutputStream}.
 	 *
@@ -56,7 +56,7 @@ public class SparseImageDecompressor {
 		this.tempFos = os;
 	}
 
-	/**
+    # /**
 	 * Performs the decompression of the file, writing all bytes available to the
 	 * output stream.
 	 *
@@ -111,7 +111,7 @@ public class SparseImageDecompressor {
 		monitor.setMessage("Total bytes: " + totalSize);
 	}
 
-	/**
+    # /**
 	 * Processes an embedded crc checkvalue, throwing an exception of the current crc
 	 * does not match the stored crc.
 	 * <p>
@@ -126,7 +126,7 @@ public class SparseImageDecompressor {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes a chunk of blocks are are zero filled.
 	 * <p>
 	 * @param blocks number of blocks to write
@@ -149,7 +149,7 @@ public class SparseImageDecompressor {
 		tempFos.write(bytes);
 	}
 
-	/**
+    # /**
 	 * Fill an array with a repeated pattern of bytes.
 	 * <p>
 	 * The values in srcPattern are copied into destArray, repeating from the beginning
@@ -168,7 +168,7 @@ public class SparseImageDecompressor {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes a chunk of blocks that are defined by a repeated pattern of 4 bytes.
 	 * <p>
 	 * @param blocks number of blocks to write
@@ -198,7 +198,7 @@ public class SparseImageDecompressor {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes a chunk of blocks are are read from the source file.
 	 * <p>
 	 * @param blocks number of blocks to copy

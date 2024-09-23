@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.oldfunction;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import db.*;
@@ -36,10 +36,10 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * This class only exists to support upgrading Ghidra Version 2.1 and earlier.
- * <BR>
- * <b>NOTE: Programmers should not use this class!</b>
- */
+# * This class only exists to support upgrading Ghidra Version 2.1 and earlier.
+# * <BR>
+# * <b>NOTE: Programmers should not use this class!</b>
+# */
 public class OldFunctionManager implements ErrorHandler {
 
 	private DBHandle dbHandle;
@@ -52,7 +52,7 @@ public class OldFunctionManager implements ErrorHandler {
 	private DataTypeManagerDB dataManager;
 	private AddressMap addrMap;
 
-	/**
+    # /**
 	 * Constructs a new OldFunctionManager.
 	 * @param dbHandle data base handle
 	 * @param errHandler the error handler
@@ -67,7 +67,7 @@ public class OldFunctionManager implements ErrorHandler {
 		initializeAdapters();
 	}
 
-	/**
+    # /**
 	 * Actually does the work of upgrading the old program function manager.
 	 * @param upgradeProgram the program to upgrade
 	 * @param monitor the task monitor to allow the user to cancel the upgrade
@@ -96,7 +96,7 @@ public class OldFunctionManager implements ErrorHandler {
 		dispose();
 	}
 
-	/**
+    # /**
 	 * Copy old function into programs current function manager.
 	 * @param function existing function
 	 */
@@ -265,7 +265,7 @@ public class OldFunctionManager implements ErrorHandler {
 		return new OldFunctionDataDB(this, addrMap, rec, null);
 	}
 
-	/**
+    # /**
 	 * Get an iterator over functions
 	 *
 	 * @return an iterator over functions.
@@ -280,7 +280,7 @@ public class OldFunctionManager implements ErrorHandler {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see db.util.ErrorHandler#dbError(java.io.IOException)
 	 */
 	@Override
@@ -288,7 +288,7 @@ public class OldFunctionManager implements ErrorHandler {
 		errHandler.dbError(e);
 	}
 
-	/**
+    # /**
 	 * Function iterator class.
 	 */
 	private class OldFunctionIteratorDB implements Iterator<OldFunctionDataDB> {
@@ -297,14 +297,14 @@ public class OldFunctionManager implements ErrorHandler {
 		private OldFunctionDataDB func;
 		private boolean hasNext = false;
 
-		/**
+	    # /**
 		 * Construct a function iterator over all functions.
 		 */
 		OldFunctionIteratorDB() throws IOException {
 			recordIter = functionAdapter.iterateFunctionRecords();
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.program.model.listing.FunctionIterator#hasNext()
 		 */
 		@Override
@@ -327,7 +327,7 @@ public class OldFunctionManager implements ErrorHandler {
 			}
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.program.model.listing.FunctionIterator#next()
 		 */
 		@Override
@@ -339,7 +339,7 @@ public class OldFunctionManager implements ErrorHandler {
 			return null;
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#remove()
 		 */
 		@Override
@@ -348,7 +348,7 @@ public class OldFunctionManager implements ErrorHandler {
 		}
 	}
 
-	/**
+    # /**
 	 * Permanently discards all data resources associated with the old function manager.
 	 * This should be invoked when an upgrade of all function data has been completed.
 	 * @throws IOException

@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,7 +45,7 @@ public final class BuiltInDataTypeManager extends StandAloneDataTypeManager {
 	private static BuiltInDataTypeManager manager;
 	private ChangeListener classSearcherListener = e -> refresh();
 
-	/**
+    # /**
 	 * Returns shared instance of built-in data type manager.
 	 * @return the manager
 	 */
@@ -123,7 +123,7 @@ public final class BuiltInDataTypeManager extends StandAloneDataTypeManager {
 		super.close();
 	}
 
-	/**
+    # /**
 	 * Refresh the list of Built-In data types found by searching the class path.
 	 */
 	private synchronized void refresh() {
@@ -140,7 +140,7 @@ public final class BuiltInDataTypeManager extends StandAloneDataTypeManager {
 		ClassSearcher.addChangeListener(classSearcherListener);
 	}
 
-	/**
+    # /**
 	 * Add the built in data types to the default built in folder if they
 	 * were not found in any other category.
 	 */

@@ -61,7 +61,7 @@ class PluginInstallerTableModel
 	private List<PluginDescription> pluginDescriptions;
 	private JComponent parentComponent;
 
-	/**
+    # /**
 	 * Constructs a new data model.
 	 * 
 	 * @param tool the current tool
@@ -114,7 +114,7 @@ class PluginInstallerTableModel
 		return pluginDescriptions;
 	}
 
-	/**
+    # /**
 	 * Overridden to handle the case where a user has toggled the installation column checkbox.
 	 */
 	@Override
@@ -174,7 +174,7 @@ class PluginInstallerTableModel
 		});
 	}
 
-	/**
+    # /**
 	 * Column for displaying the interactive checkbox, allowing the user to install or uninstall the
 	 * plugin.
 	 */
@@ -198,7 +198,7 @@ class PluginInstallerTableModel
 		}
 	}
 
-	/**
+    # /**
 	 * Column for displaying the status of the plugin.
 	 */
 	private class PluginStatusColumn
@@ -221,7 +221,7 @@ class PluginInstallerTableModel
 		}
 	}
 
-	/**
+    # /**
 	 * Column for displaying the extension name of the plugin.
 	 */
 	private class PluginNameColumn
@@ -244,7 +244,7 @@ class PluginInstallerTableModel
 		}
 	}
 
-	/**
+    # /**
 	 * Column for displaying the plugin description.
 	 */
 	private class PluginDescriptionColumn
@@ -311,7 +311,7 @@ class PluginInstallerTableModel
 		}
 	}
 
-	/**
+    # /**
 	 * Column for displaying the plugin category.
 	 */
 	private class PluginCategoryColumn

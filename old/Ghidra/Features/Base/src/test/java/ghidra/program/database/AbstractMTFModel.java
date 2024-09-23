@@ -15,7 +15,7 @@
  */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 
 import db.DBHandle;
 import db.DBTestUtils;

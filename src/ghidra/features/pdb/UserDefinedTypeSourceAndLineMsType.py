@@ -31,7 +31,7 @@ public class UserDefinedTypeSourceAndLineMsType extends AbstractMsType {
 	private RecordNumber sourceFileNameStringIdRecordNumber;
 	private int lineNumber;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -52,7 +52,7 @@ public class UserDefinedTypeSourceAndLineMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the line number within the file.
 	 * @return the line number within the file.
 	 */
@@ -60,7 +60,7 @@ public class UserDefinedTypeSourceAndLineMsType extends AbstractMsType {
 		return lineNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the source file name String ID Record Number.
 	 * @return the source file name String ID Record Number.
 	 */
@@ -68,7 +68,7 @@ public class UserDefinedTypeSourceAndLineMsType extends AbstractMsType {
 		return sourceFileNameStringIdRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the source file name.
 	 * @return the source file name.  null if problem recovering name.
 	 */
@@ -81,7 +81,7 @@ public class UserDefinedTypeSourceAndLineMsType extends AbstractMsType {
 		return stringIdType.getString();
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the UDT.
 	 * @return the record number of the UDT.
 	 */

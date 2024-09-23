@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.oatclass;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.dex.format.ClassDataItem;
@@ -75,7 +75,7 @@ public class OatClass_S_T extends OatClass {
 		return num_methods_;
 	}
 
-	/**
+    # /**
 	 * Compiled methods bitmap (present only when type = 1)
 	 * @return methods bitmap
 	 */
@@ -83,7 +83,7 @@ public class OatClass_S_T extends OatClass {
 		return bitmap_;
 	}
 
-	/**
+    # /**
 	 * Returns true if this method index is declared native in the bitmap
 	 * @param methodIndex the method index
 	 * @return true if this method index is declared native in the bitmap
@@ -94,7 +94,7 @@ public class OatClass_S_T extends OatClass {
 		return (((bitmap_[bytePos] >> bitPos) & 0x1) == 0x1);
 	}
 
-	/**
+    # /**
 	 * Computes the number of bytes required to store the bitmap.
 	 * @return the number of bytes required to store the bitmap
 	 */

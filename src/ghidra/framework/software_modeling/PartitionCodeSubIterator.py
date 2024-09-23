@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import ghidra.program.model.address.*;
@@ -23,10 +23,10 @@ import ghidra.util.task.TaskMonitor;
 import java.util.LinkedList;
 
 # /**
- * <CODE>PartitionCodeSubIterator</CODE> is an implementation of
- * <CODE>CodeBlockIterator</CODE> capable of iterating in
- * the forward direction over "PartitionCodeSubModel code blocks".
- */
+# * <CODE>PartitionCodeSubIterator</CODE> is an implementation of
+# * <CODE>CodeBlockIterator</CODE> capable of iterating in
+# * the forward direction over "PartitionCodeSubModel code blocks".
+# */
 class PartitionCodeSubIterator implements CodeBlockIterator {
 
 	private Listing listing = null;
@@ -45,7 +45,7 @@ class PartitionCodeSubIterator implements CodeBlockIterator {
 	private PartitionCodeSubModel model = null;
 	private TaskMonitor monitor;
 
-	/**
+    # /**
 	 * Creates a new iterator that will iterate over the entire
 	 * program starting from its current minimum address.
 	 *
@@ -56,7 +56,7 @@ class PartitionCodeSubIterator implements CodeBlockIterator {
 		this(model, model.getProgram().getMinAddress(), monitor);
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that will iterate over the
 	 * program starting from a given address.
 	 *
@@ -73,7 +73,7 @@ class PartitionCodeSubIterator implements CodeBlockIterator {
 		this.monitor.setIndeterminate(true);
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that will iterate over the
 	 * program within a given address range set. A block will
 	 * be returned by this iterator if and only if the block's
@@ -93,7 +93,7 @@ class PartitionCodeSubIterator implements CodeBlockIterator {
 		this.nextSub = null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockIterator#hasNext()
 	 */
 	@Override
@@ -130,7 +130,7 @@ class PartitionCodeSubIterator implements CodeBlockIterator {
 		return (nextSub != null);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockIterator#next()
 	 */
 	@Override

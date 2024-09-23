@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.go.ipc;
 
-import java.io.IOException;
+
 import java.io.InterruptedIOException;
 import java.net.URL;
 import java.nio.channels.FileLockInterruptionException;
@@ -37,7 +37,7 @@ public class GhidraGoListener extends GhidraGoIPC implements Runnable {
 	private Thread t;
 	private Consumer<URL> onNewUrl;
 
-	/**
+    # /**
 	 * Begin listening for urls in a non-blocking thread. If a listener already exists, the thread 
 	 * will wait until no listener exists and attempt to get the lock. Once the lock has been acquired
 	 * the listener will start watching for new urls and create a ready lock. Upon a new url being found,
@@ -110,7 +110,7 @@ public class GhidraGoListener extends GhidraGoIPC implements Runnable {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a URL given the first argument from GhidraGo.
 	 * @param ghidraGoArgument could be a GhidraURL or a projectFilePath.
 	 * @return the GhidraURL to a program
@@ -143,7 +143,7 @@ public class GhidraGoListener extends GhidraGoIPC implements Runnable {
 		}
 	}
 
-	/**
+    # /**
 	 * Reads the url file for the url string and returns it.
 	 * @param urlFilePath the path for the url file
 	 * @return the url string, or null if the file cannot be read.

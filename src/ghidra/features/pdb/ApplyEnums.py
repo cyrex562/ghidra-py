@@ -31,7 +31,7 @@ class ApplyEnums {
 		// static use only
 	}
 
-	/**
+    # /**
 	 * Perform parsing and applying of enum datatypes
 	 * @param pdbParser PDB parser object
 	 * @param xmlParser XML parser position immediately after the enums start element

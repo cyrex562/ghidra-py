@@ -35,7 +35,7 @@ public abstract class AbstractEmuUnixFile<T> implements EmuUnixFile<T> {
 	protected final EmuUnixFileStat stat;
 	protected EmuFileContents<T> contents;
 
-	/**
+    # /**
 	 * Construct a new file
 	 * 
 	 * <p>
@@ -53,7 +53,7 @@ public abstract class AbstractEmuUnixFile<T> implements EmuUnixFile<T> {
 		this.contents = createDefaultContents();
 	}
 
-	/**
+    # /**
 	 * A factory method for the file's {@code stat} structure.
 	 * 
 	 * @return the stat structure.
@@ -62,7 +62,7 @@ public abstract class AbstractEmuUnixFile<T> implements EmuUnixFile<T> {
 		return new EmuUnixFileStat();
 	}
 
-	/**
+    # /**
 	 * A factory method for the file's default contents
 	 * 
 	 * @return the contents

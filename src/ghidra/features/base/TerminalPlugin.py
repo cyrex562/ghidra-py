@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.terminal;
 
-import java.io.*;
+
 import java.nio.channels.Channels;
 import java.nio.channels.WritableByteChannel;
 import java.nio.charset.Charset;

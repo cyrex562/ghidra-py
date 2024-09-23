@@ -47,7 +47,7 @@ public class ProjectDataSelectAction extends ProjectTreeAction {
 		return context.getFolderCount() == 1 && context.getFileCount() == 0;
 	}
 
-	/**
+    # /**
 	 * Select all descendants for the first selected node; called from an action
 	 * listener on a menu.
 	 */
@@ -57,7 +57,7 @@ public class ProjectDataSelectAction extends ProjectTreeAction {
 		tree.setSelectionPaths(paths.toArray(new TreePath[paths.size()]));
 	}
 
-	/**
+    # /**
 	 * Select all descendants starting at node.
 	 */
 	private void getAllTreePaths(GTreeNode node, List<TreePath> paths) {

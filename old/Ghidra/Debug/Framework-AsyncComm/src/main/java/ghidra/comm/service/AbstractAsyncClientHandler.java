@@ -15,7 +15,7 @@
  */
 package ghidra.comm.service;
 
-import java.io.IOException;
+
 import java.nio.channels.AsynchronousSocketChannel;
 import java.util.concurrent.CompletableFuture;
 

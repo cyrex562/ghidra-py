@@ -31,7 +31,7 @@ public abstract class AbstractLabelMsSymbol extends AbstractMsSymbol
 	protected ProcedureFlags flags;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -49,7 +49,7 @@ public abstract class AbstractLabelMsSymbol extends AbstractMsSymbol
 		reader.align4();
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -58,7 +58,7 @@ public abstract class AbstractLabelMsSymbol extends AbstractMsSymbol
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -67,14 +67,14 @@ public abstract class AbstractLabelMsSymbol extends AbstractMsSymbol
 		return segment;
 	}
 
-	/** Returns the {@link ProcedureFlags}.
+    # /** Returns the {@link ProcedureFlags}.
 	 * @return Procedure flags.
 	 */
 	public ProcedureFlags getFlags() {
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

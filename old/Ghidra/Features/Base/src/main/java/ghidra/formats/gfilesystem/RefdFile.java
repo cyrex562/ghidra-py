@@ -16,7 +16,7 @@
 package ghidra.formats.gfilesystem;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 
 /**
  * A {@link GFile} along with a {@link FileSystemRef} to keep the filesystem pinned

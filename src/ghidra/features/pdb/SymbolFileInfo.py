@@ -37,7 +37,7 @@ public class SymbolFileInfo {
 	private static final int MIN_SIG_HEX_STR_LEN = 8;
 	private static final int GUID_HEX_STR_LEN = 32;
 
-	/**
+    # /**
 	 * Create a SymbolFileInfo instance from the metadata found in a program
 	 * @param program where the Pdb metadata is stored 
 	 * @return new SymbolFileInfo instance, or null if no Pdb info found
@@ -73,7 +73,7 @@ public class SymbolFileInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new {@link SymbolFileInfo} instance using information scraped from a pdb symbol
 	 * server subdir path.
 	 * 
@@ -108,7 +108,7 @@ public class SymbolFileInfo {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Creates a new instance using the specified path and guid/id string and age.
 	 * 
 	 * @param path String pdb path filename
@@ -138,7 +138,7 @@ public class SymbolFileInfo {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Create a new instance using the specified path and {@link PdbIdentifiers}.
 	 * 
 	 * @param path String pdb path filename, can not be null
@@ -151,7 +151,7 @@ public class SymbolFileInfo {
 		return new SymbolFileInfo(path, pdbIdent);
 	}
 
-	/**
+    # /**
 	 * Create a new instance using the information found inside the specified file.
 	 * <p>
 	 * The file will be opened and parsed to determine its GUID/ID and age.
@@ -175,7 +175,7 @@ public class SymbolFileInfo {
 		this.pdbIdentifiers = pdbIdentifiers;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link PdbIdentifiers} of this instance.
 	 * 
 	 * @return {@link PdbIdentifiers} of this instance
@@ -184,7 +184,7 @@ public class SymbolFileInfo {
 		return pdbIdentifiers;
 	}
 
-	/**
+    # /**
 	 * The name of the pdb file, derived from the {@link #getPath() path} value.
 	 * 
 	 * @return String name of the pdb file, never null, maybe blank
@@ -193,7 +193,7 @@ public class SymbolFileInfo {
 		return FilenameUtils.getName(pdbPath);
 	}
 
-	/**
+    # /**
 	 * The 'path' of the pdb file, which contains the full path and filename recovered from the 
 	 * original binary's debug data.  Typically, this is just a plain name string without any
 	 * path info.
@@ -204,7 +204,7 @@ public class SymbolFileInfo {
 		return pdbPath;
 	}
 
-	/**
+    # /**
 	 * A string that represents the unique fingerprint of a Pdb file.  Does not
 	 * include the age.
 	 * 
@@ -217,7 +217,7 @@ public class SymbolFileInfo {
 
 	}
 
-	/**
+    # /**
 	 * A string that represents the unique fingerprint of a Pdb file, or empty "" if
 	 * invalid.  Does not include the age.
 	 * 
@@ -233,7 +233,7 @@ public class SymbolFileInfo {
 		return "";
 	}
 
-	/**
+    # /**
 	 * Returns a string that is a combination of the GUID/ID and the age, in a format
 	 * used by symbol servers to create subdirectories in their directory structure.
 	 * 
@@ -243,7 +243,7 @@ public class SymbolFileInfo {
 		return getUniqueName() + Integer.toUnsignedString(pdbIdentifiers.getAge(), 16);
 	}
 
-	/**
+    # /**
 	 * Returns true if this SymbolFileInfo instance exactly matches the {@link PdbIdentifiers}
 	 * info of the other instance.
 	 *  
@@ -255,7 +255,7 @@ public class SymbolFileInfo {
 			pdbIdentifiers.getAge() == other.getIdentifiers().getAge();
 	}
 
-	/**
+    # /**
 	 * Returns a description of this instance.
 	 * 
 	 * @return String description

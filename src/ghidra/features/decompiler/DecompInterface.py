@@ -19,7 +19,7 @@ package ghidra.app.decompiler;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.*;
+
 import java.util.ArrayList;
 
 import generic.jar.ResourceFile;
@@ -89,7 +89,7 @@ public class DecompInterface {
 		public PackedDecode callbackQuery;	// Decoder for queries from the decompiler process
 		public PatchPackedEncode callbackResponse;	// Encode for response to decompiler queries
 
-		/**
+	    # /**
 		 * Set up encoders and decoders for functions that are not in overlay address spaces
 		 * @param program is the active Program
 		 */
@@ -101,7 +101,7 @@ public class DecompInterface {
 			callbackResponse = new PatchPackedEncode();
 		}
 
-		/**
+	    # /**
 		 * Set up encoders and decoders for functions in an overlay space
 		 * @param program is the active Program
 		 * @param spc is the initial overlay space to set up for
@@ -179,7 +179,7 @@ public class DecompInterface {
 		sigSettings = 0;
 	}
 
-	/**
+    # /**
 	 * Turn on debugging dump for the next decompiled
 	 * function
 	 * @param debugfile the file to enable debug dubp
@@ -188,14 +188,14 @@ public class DecompInterface {
 		debug = new DecompileDebug(debugfile);
 	}
 
-	/**
+    # /**
 	 * @return true if debug has been enabled for the current/next decompilation.
 	 */
 	public boolean debugEnabled() {
 		return debug != null;
 	}
 
-	/**
+    # /**
 	 * Return the identifier for the current simplification style
 	 * @return the identifier as a String
 	 */
@@ -215,7 +215,7 @@ public class DecompInterface {
 		return dtmanage;
 	}
 
-	/**
+    # /**
 	 * Get the last message produced by the decompiler process.
 	 * If the message is non-null, it is probably an error
 	 * message, but not always.  It is better to use the
@@ -254,7 +254,7 @@ public class DecompInterface {
 		}
 	}
 
-	/**
+    # /**
 	 * This is the main routine for making sure that a decompiler
 	 * process is active and that it is initialized properly
 	 * @throws IOException for any problems with the pipe to the decompiler process
@@ -362,7 +362,7 @@ public class DecompInterface {
 		}
 	}
 
-	/**
+    # /**
 	 * This call initializes a new decompiler process to do
 	 * decompilations for a new program. This method only
 	 * needs to be called once per program.  Even if the
@@ -422,7 +422,7 @@ public class DecompInterface {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Shutdown any existing decompiler process and free
 	 * resources.  The interface cannot be used again
 	 * to perform decompilations until an openProgram call
@@ -451,7 +451,7 @@ public class DecompInterface {
 		}
 	}
 
-	/**
+    # /**
 	 * This allows the application to the type of analysis
 	 * performed by the decompiler, by giving the name of
 	 * an analysis class. Right now, there are a few
@@ -509,7 +509,7 @@ public class DecompInterface {
 		return false;
 	}
 
-	/**
+    # /**
 	 * This method toggles whether or not the decompiler
 	 * produces a syntax tree (via calls to decompileFunction).
 	 * The default is to always produce a syntax tree, but
@@ -546,7 +546,7 @@ public class DecompInterface {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Toggle whether or not calls to the decompiler process
 	 * (via the decompileFunction method) produce C code.
 	 * The default is to always compute C code, but some
@@ -584,7 +584,7 @@ public class DecompInterface {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Toggle whether or not calls to the decompiler process
 	 * (via the decompileFunction method) produce Parameter
 	 * Measures. The default is to not compute Parameter
@@ -621,7 +621,7 @@ public class DecompInterface {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Toggle whether or not the decompiler process should return information about tables
 	 * used to recover switch statements.  Most compilers implement switch statements using a
 	 * so called "jumptable" of addresses or offsets.  The decompiler can frequently recover this
@@ -651,7 +651,7 @@ public class DecompInterface {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Set the object controlling the list of global options
 	 * used by the decompiler. Ideally this is called once,
 	 * before the openProgram call is made. But it can be
@@ -694,7 +694,7 @@ public class DecompInterface {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the options currently in effect for the decompiler
 	 * 
 	 * @return options that will be passed to the decompiler
@@ -703,7 +703,7 @@ public class DecompInterface {
 		return this.options;
 	}
 
-	/**
+    # /**
 	 * Tell the decompiler to clear any function and symbol
 	 * information it gathered from the database.  Its a good
 	 * idea to call this after any decompileFunction call,
@@ -765,7 +765,7 @@ public class DecompInterface {
 		return resgraph;
 	}
 
-	/**
+    # /**
 	 * Decompile function
 	 * @param func function to be decompiled
 	 * @param timeoutSecs if decompile does not complete in this time a null value
@@ -840,7 +840,7 @@ public class DecompInterface {
 			decoder, processState);
 	}
 
-	/**
+    # /**
 	 * Stop the decompile process. 
 	 * 
 	 * NOTE: Subsequent calls made from another  
@@ -853,7 +853,7 @@ public class DecompInterface {
 		}
 	}
 
-	/**
+    # /**
 	 * Resets the native decompiler process.  Call this method when the decompiler's view
 	 * of a program has been invalidated, such as when a new overlay space has been added.
 	 */
@@ -878,7 +878,7 @@ public class DecompInterface {
 		DecompilerDisposer.dispose(this);
 	}
 
-	/** Our threaded callback */
+    # /** Our threaded callback */
 	void disposeCallback() {
 		closeProgram();
 	}
@@ -887,7 +887,7 @@ public class DecompInterface {
 		return compilerSpec;
 	}
 
-	/**
+    # /**
 	 * Setup the correct Encoder and Decoder to use for the decompilation.
 	 * Generally we use the base versions unless there is an overlay. In which case we switch
 	 * to special translating encoders and decoders.
@@ -910,7 +910,7 @@ public class DecompInterface {
 		return overlayEncodingSet;
 	}
 
-	/**
+    # /**
 	 * Read the major/minor version numbers from the stream.
 	 * @param decoder is the stream decoder
 	 * @throws DecoderException for problems parsing the stream or if the returned settings do not match
@@ -932,7 +932,7 @@ public class DecompInterface {
 		}
 	}
 
-	/**
+    # /**
 	 * Query the decompiler process for its major/minor version numbers.
 	 * Additionally the decompiler returns its signature settings (which should match the
 	 * signatureSettings configured on this interface)
@@ -957,7 +957,7 @@ public class DecompInterface {
 		}
 	}
 
-	/**
+    # /**
 	 * @return the major version number of the decompiler
 	 */
 	public synchronized short getMajorVersion() {
@@ -967,7 +967,7 @@ public class DecompInterface {
 		return major;
 	}
 
-	/**
+    # /**
 	 * @return the minor version number of the decompiler
 	 */
 	public synchronized short getMinorVersion() {
@@ -977,7 +977,7 @@ public class DecompInterface {
 		return minor;
 	}
 
-	/**
+    # /**
 	 * @return the signature settings of the decompiler
 	 */
 	public synchronized int getSignatureSettings() {
@@ -987,7 +987,7 @@ public class DecompInterface {
 		return sigSettings;
 	}
 
-	/**
+    # /**
 	 * Set the desired signature generation settings. 
 	 * @param value is the new desired setting
 	 * @return true if the settings took effect
@@ -1014,7 +1014,7 @@ public class DecompInterface {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Generate a signature, using the current signature settings, for the given function.
 	 * The signature is returned as a raw feature vector, {@link SignatureResult}.
 	 * @param func is the given function
@@ -1066,7 +1066,7 @@ public class DecompInterface {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Generate a signature, using the current signature settings, for the given function.
 	 * The signature is returned as a sequence of features (feature vector). Each feature
 	 * is returned as a separate record with additional metadata describing the information

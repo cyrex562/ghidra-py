@@ -17,7 +17,7 @@ package ghidra.xml;
 
 import generic.jar.ResourceFile;
 
-import java.io.*;
+
 
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
@@ -28,7 +28,7 @@ public class XmlPullParserFactory {
 			"XmlTracer not supported right now...instrument ThreadedXmlPullParserImpl to continue...");
 	}
 
-	/**
+    # /**
 	 * Constructs a new parser using the specified stream and name.
 	 * 
 	 * @param input
@@ -48,7 +48,7 @@ public class XmlPullParserFactory {
 		return new ThreadedXmlPullParserImpl(input, inputName, errHandler, validate, 1000);
 	}
 
-	/**
+    # /**
 	 * Constructs a new parser using the specified XML file.
 	 * 
 	 * @param file
@@ -67,7 +67,7 @@ public class XmlPullParserFactory {
 		return new ThreadedXmlPullParserImpl(file, errHandler, validate, 1000);
 	}
 
-	/**
+    # /**
 	 * Constructs a new parser using the specified XML file.
 	 * 
 	 * @param file
@@ -86,7 +86,7 @@ public class XmlPullParserFactory {
 		return new ThreadedXmlPullParserImpl(file, errHandler, validate, 1000);
 	}
 
-	/**
+    # /**
 	 * Constructs a new parser using the specified XML file.
 	 * 
 	 * @param input

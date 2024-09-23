@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.yaffs2;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.*;

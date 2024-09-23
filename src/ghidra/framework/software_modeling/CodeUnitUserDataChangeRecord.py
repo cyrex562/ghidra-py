@@ -23,7 +23,7 @@ public class CodeUnitUserDataChangeRecord extends DomainObjectChangeRecord {
 	private String propertyName;
 	private Address address;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param propertyName name of the property
 	 * @param codeUnitAddr address of the code unit
@@ -37,7 +37,7 @@ public class CodeUnitUserDataChangeRecord extends DomainObjectChangeRecord {
 		address = codeUnitAddr;
 	}
 
-	/**
+    # /**
 	 * Get the name of the property being changed.
 	 * @return the name of the property being changed
 	 */
@@ -45,7 +45,7 @@ public class CodeUnitUserDataChangeRecord extends DomainObjectChangeRecord {
 		return propertyName;
 	}
 
-	/**
+    # /**
 	 * Get the address of the code unit for this property change.
 	 * @return the address of the code unit for this property change
 	 */

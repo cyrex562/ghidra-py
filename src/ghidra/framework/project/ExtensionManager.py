@@ -149,7 +149,7 @@ class ExtensionManager {
 		return knownExtensionNames;
 	}
 
-	/**
+    # /**
 	 * Finds all {@link PluginDescription} objects that match a given set of plugin classes. This
 	 * effectively tells the caller which of the given plugins have been loaded by the class loader.
 	 * <p>
@@ -206,7 +206,7 @@ class ExtensionManager {
 		return paths;
 	}
 
-	/**
+    # /**
 	 * Finds all plugin classes loaded from a particular extension folder.
 	 * <p>
 	 * This uses the {@link ClassSearcher} to find all <code>Plugin.class</code> objects on the

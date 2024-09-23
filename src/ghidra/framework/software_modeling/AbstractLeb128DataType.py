@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.docking.settings.*;
@@ -35,7 +35,7 @@ public abstract class AbstractLeb128DataType extends BuiltIn implements Dynamic 
 
 	private final boolean signed;
 
-	/**
+    # /**
 	 * Base constructor for a little endian based 128 data type.
 	 * @param name name of the leb128 data type that extends this class.
 	 * @param signed true if it is signed. false if unsigned.

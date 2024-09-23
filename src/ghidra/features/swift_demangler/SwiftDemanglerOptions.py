@@ -31,7 +31,7 @@ public class SwiftDemanglerOptions extends DemanglerOptions {
 	private boolean useIncompletePrefix;
 	private boolean useUnsupportedPrefix;
 
-	/**
+    # /**
 	 * Gets the Swift directory
 	 * <p>
 	 * If the Swift directory is on the PATH environment variable, this may return null
@@ -42,7 +42,7 @@ public class SwiftDemanglerOptions extends DemanglerOptions {
 		return swiftDir;
 	}
 
-	/**
+    # /**
 	 * Sets the Swift directory
 	 * <p>
 	 * If the Swift directory is on the PATH environment variable, it is fine to set this to 
@@ -54,14 +54,14 @@ public class SwiftDemanglerOptions extends DemanglerOptions {
 		this.swiftDir = swiftDir;
 	}
 
-	/**
+    # /**
 	 * {@return the "incomplete prefix" character to use in label names}
 	 */
 	public String getIncompletePrefix() {
 		return useIncompletePrefix ? INCOMPLETE_PREFIX : "";
 	}
 
-	/**
+    # /**
 	 * Sets whether or not to use an "incomplete prefix" character in label names
 	 * 
 	 * @param incompletePrefix True if labels should include an "incomplete prefix" character
@@ -71,14 +71,14 @@ public class SwiftDemanglerOptions extends DemanglerOptions {
 		this.useIncompletePrefix = incompletePrefix;
 	}
 
-	/**
+    # /**
 	 * {@return the "unsupported prefix" character to use in label names}
 	 */
 	public String getUnsupportedPrefix() {
 		return useUnsupportedPrefix ? UNSUPPORTED_PREFIX : "";
 	}
 
-	/**
+    # /**
 	 * Sets whether or not to use an "unsupported prefix" character in label names
 	 * 
 	 * @param unsupportedPrefix True if labels should include an "unsupported prefix" character

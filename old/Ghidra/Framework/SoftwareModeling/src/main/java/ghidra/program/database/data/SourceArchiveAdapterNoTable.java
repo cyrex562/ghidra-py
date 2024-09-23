@@ -20,7 +20,7 @@ import ghidra.program.model.data.SourceArchive;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.VersionException;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

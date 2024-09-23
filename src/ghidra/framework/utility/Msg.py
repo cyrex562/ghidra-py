@@ -32,7 +32,7 @@ public class Msg {
 		// static utility class
 	}
 
-	/**
+    # /**
 	 * Sets the error logger (by default it's a DefaultErrorLogger).
 	 * 
 	 * @param errLogger
@@ -42,7 +42,7 @@ public class Msg {
 		errorLogger = errLogger;
 	}
 
-	/**
+    # /**
 	 * Sets the error display (by default it's console)
 	 * 
 	 * @param errDisplay
@@ -52,7 +52,7 @@ public class Msg {
 		errorDisplay = errDisplay;
 	}
 
-	/**
+    # /**
 	 * Useful for printing temporary messages without any logging markup.  This is meant to be
 	 * a replacement for System.out. 
 	 * 
@@ -63,7 +63,7 @@ public class Msg {
 		System.err.println(message);
 	}
 
-	/**
+    # /**
 	 * Used to record a trace message to the log file. All calls to this method
 	 * outside of main methods and JUnit tests will be removed before a
 	 * production release.
@@ -77,7 +77,7 @@ public class Msg {
 		errorLogger.trace(originator, message);
 	}
 
-	/**
+    # /**
 	 * Used to record a trace message to the log file. All calls to this method
 	 * outside of main methods and JUnit tests will be removed before a
 	 * production release. This may be used to document an exception
@@ -94,7 +94,7 @@ public class Msg {
 		errorLogger.trace(originator, message, throwable);
 	}
 
-	/**
+    # /**
 	 * Used to record a debug message to the log file.
 	 * 
 	 * @param originator
@@ -106,7 +106,7 @@ public class Msg {
 		errorLogger.debug(originator, message);
 	}
 
-	/**
+    # /**
 	 * Used to record a debug message to the log file.  This may be used to document an exception
 	 * without elevating that exception to error or warning status
 	 * 
@@ -121,7 +121,7 @@ public class Msg {
 		errorLogger.debug(originator, message, throwable);
 	}
 
-	/**
+    # /**
 	 * Used to display an informational message to the user via the console (no
 	 * GUI). Also records the message to the logging system.
 	 * 
@@ -134,7 +134,7 @@ public class Msg {
 		errorLogger.info(originator, message);
 	}
 
-	/**
+    # /**
 	 * Used to display an informational message to the user via the console (no
 	 * GUI). Also records the message to the logging system.  This may be used to 
 	 * document an exception without elevating that exception to error or warning status.
@@ -150,7 +150,7 @@ public class Msg {
 		errorLogger.info(originator, message, throwable);
 	}
 
-	/**
+    # /**
 	 * Used to display an informational message to the user
 	 * with a pop-up GUI dialog. Also records the message to the logging system.
 	 * 
@@ -173,7 +173,7 @@ public class Msg {
 		}
 	}
 
-	/**
+    # /**
 	 * Used to display a warning message to the user via the console (no GUI).
 	 * Also records the message to the logging system.
 	 * 
@@ -186,7 +186,7 @@ public class Msg {
 		errorLogger.warn(originator, message);
 	}
 
-	/**
+    # /**
 	 * Used to display a warning message to the user via the console (no GUI).
 	 * Also records the message to the logging system.
 	 * 
@@ -201,7 +201,7 @@ public class Msg {
 		errorLogger.warn(originator, message, throwable);
 	}
 
-	/**
+    # /**
 	 * Used to display a warning message to the user with a pop-up GUI dialog.
 	 * Also records the message to the logging system.
 	 * 
@@ -225,7 +225,7 @@ public class Msg {
 		}
 	}
 
-	/**
+    # /**
 	 * Used to display an error message with no available Throwable to the user
 	 * via the console (no GUI). Also records the message to the logging system.
 	 * If you have a Throwable, please use the other error(...) method.
@@ -239,7 +239,7 @@ public class Msg {
 		errorLogger.error(originator, message);
 	}
 
-	/**
+    # /**
 	 * Used to display an error message with a Throwable (for stack trace) to
 	 * the user via the console (no GUI). Also records the message to the
 	 * logging system.
@@ -255,7 +255,7 @@ public class Msg {
 		errorLogger.error(originator, message, throwable);
 	}
 
-	/**
+    # /**
 	 * Used to display an error message with no available Throwable to the user
 	 * with a pop-up GUI dialog. Also records the message to the logging system.
 	 * If you have a Throwable, please use the other error(...) method.
@@ -280,7 +280,7 @@ public class Msg {
 		}
 	}
 
-	/**
+    # /**
 	 * Used to display an error message with a Throwable (for stack trace) to
 	 * the user with a pop-up GUI dialog. Also records the message to the
 	 * logging system.

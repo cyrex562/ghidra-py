@@ -15,7 +15,7 @@
  */
 package sarif.export.registers;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.math.BigInteger;
 import java.util.List;

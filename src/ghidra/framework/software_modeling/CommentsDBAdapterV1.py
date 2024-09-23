@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.map.*;
@@ -31,19 +31,19 @@ import ghidra.util.task.TaskMonitor;
  */
 class CommentsDBAdapterV1 extends CommentsDBAdapter {
 
-//	/** comment type for end of line */
+//    # /** comment type for end of line */
 //	private static final int EOL_COMMENT_COLUMN = 0;
-//	/** comment type that goes before a code unit */
+//    # /** comment type that goes before a code unit */
 //	private static final int PRE_COMMENT_COLUMN = 1;
-//	/** comment type that follows after a code unit */
+//    # /** comment type that follows after a code unit */
 //	private static final int POST_COMMENT_COLUMN = 2; 
-//	/** Property name for plate comment type */
+//    # /** Property name for plate comment type */
 //	private static final int PLATE_COMMENT_COLUMN = 3;
-//	/** Property name for plate comment type */
+//    # /** Property name for plate comment type */
 //	private static final int REPEATABLE_COMMENT_COLUMN = 4;
-//	/** The number of comment fields in this version. */
+//    # /** The number of comment fields in this version. */
 //	private static final int COMMENT_COL_COUNT = 5;
-//	/** Version 0 comment column names. */
+//    # /** Version 0 comment column names. */
 //	private static final String[] V1_NAMES = new String[5];
 //	static {
 //		V1_NAMES[EOL_COMMENT_COLUMN] = "EOL";
@@ -52,13 +52,13 @@ class CommentsDBAdapterV1 extends CommentsDBAdapter {
 //		V1_NAMES[PLATE_COMMENT_COLUMN] = "Plate";
 //		V1_NAMES[REPEATABLE_COMMENT_COLUMN] = "Repeatable";
 //	}
-//	/** Version 0 comment table schema. */
+//    # /** Version 0 comment table schema. */
 //	private static final Schema V1_SCHEMA = new Schema(1, "Address",
 //							new Class[] {StringField.class, StringField.class,
 //										StringField.class, StringField.class,
 //										StringField.class},
 //							V1_NAMES);
-	/** the comment table. */
+    # /** the comment table. */
 	private Table commentTable;
 	private AddressMap addrMap;
 

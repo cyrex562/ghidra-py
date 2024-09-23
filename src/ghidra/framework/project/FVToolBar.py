@@ -35,7 +35,7 @@ public class FVToolBar extends JToolBar {
 	private EmptyBorderButton fileOpenButton;
 	private FVEventListener eventListener;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param eventListener the event listener that will be notified of action events
 	 */

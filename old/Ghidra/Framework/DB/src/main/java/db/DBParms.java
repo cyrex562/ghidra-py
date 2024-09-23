@@ -16,7 +16,7 @@
 package db;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import db.buffers.*;
 import ghidra.util.datastruct.IntIntHashtable;

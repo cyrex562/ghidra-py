@@ -42,7 +42,7 @@ public class CreateRtti4BackgroundCmd extends AbstractCreateDataBackgroundCmd<Rt
 	private List<MemoryBlock> vfTableBlocks;
 	private List<Address> rtti4Locations;
 
-	/**
+    # /**
 	 * Constructs a command for applying an RTTI4 dataType at an address.
 	 * @param address the address where the data should be created using the data type.
 	 * @param vfTableBlocks a list of the only memory blocks to be searched for vf tables.
@@ -187,7 +187,7 @@ public class CreateRtti4BackgroundCmd extends AbstractCreateDataBackgroundCmd<Rt
 		return didSome;
 	}
 
-	/**
+    # /**
 	 * Add a search pattern, to the searcher, for the set of bytes representing an rtti4 location.
 	 * Only one VFTable for is allowed for an RTT4 location, last one in wins and gets created.
 	 * 

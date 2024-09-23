@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang.protorules;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.DataTypeManager;
@@ -29,19 +29,19 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
 # /**
- * Allocate the return value as an input parameter
- * 
- * A pointer to where the return value is to be stored is passed in as an input parameter.
- * This action signals this by returning one of
- *   - HIDDENRET_PTRPARAM         - indicating the pointer is allocated as a normal input parameter
- *   - HIDDENRET_SPECIALREG       - indicating the pointer is passed in a dedicated register
- *   - HIDDENRET_SPECIALREG_VOID
- * 
- * Usually, if a hidden return input is present, the normal register used for return
- * will also hold the pointer at the point(s) where the function returns.  A signal of
- * HIDDENRET_SPECIALREG_VOID indicates the normal return register is not used to pass back
- * the pointer.
- */
+# * Allocate the return value as an input parameter
+# * 
+# * A pointer to where the return value is to be stored is passed in as an input parameter.
+# * This action signals this by returning one of
+# *   - HIDDENRET_PTRPARAM         - indicating the pointer is allocated as a normal input parameter
+# *   - HIDDENRET_SPECIALREG       - indicating the pointer is passed in a dedicated register
+# *   - HIDDENRET_SPECIALREG_VOID
+# * 
+# * Usually, if a hidden return input is present, the normal register used for return
+# * will also hold the pointer at the point(s) where the function returns.  A signal of
+# * HIDDENRET_SPECIALREG_VOID indicates the normal return register is not used to pass back
+# * the pointer.
+# */
 public class HiddenReturnAssign extends AssignAction {
 
 	static public final String STRATEGY_SPECIAL = "special";	// Return pointer in special reg

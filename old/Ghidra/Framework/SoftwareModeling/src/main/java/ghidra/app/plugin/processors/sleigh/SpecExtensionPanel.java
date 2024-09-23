@@ -18,7 +18,7 @@ package ghidra.app.plugin.processors.sleigh;
 import java.awt.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 

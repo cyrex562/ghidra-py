@@ -16,7 +16,7 @@
 package ghidra.app.util.pcodeInject;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import generic.jar.ResourceFile;

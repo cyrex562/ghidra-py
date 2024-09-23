@@ -47,7 +47,7 @@ public class m68kEmulateInstructionStateModifier extends EmulateInstructionState
 		//registerPcodeOpBehavior("findFirstOne", new FindFirstOneOpBehavior());
 	}
 
-	/**
+    # /**
 	 * Initialize ISM register based upon context-register state before first
 	 * instruction is executed.
 	 */
@@ -65,7 +65,7 @@ public class m68kEmulateInstructionStateModifier extends EmulateInstructionState
     }
 */
 
-	/**
+    # /**
 	 * Use ISM register value to establish ISA_MODE when branching/calling. If
 	 * ISM = 0, check for odd destination address which may occur when
 	 * jumping/returning indirectly to Thumb mode. It is assumed that language

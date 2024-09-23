@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
-import java.io.IOException;
+
 import java.util.List;
 
 import javax.swing.*;

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
@@ -97,7 +97,7 @@ public class FramePointerOmissionRecord {
 	private int reserved;
 	private FrameType frameType;
 
-	/**
+    # /**
 	 * Returns the offset of the first byte of the function.
 	 * @return the offset.
 	 */
@@ -105,7 +105,7 @@ public class FramePointerOmissionRecord {
 		return firstFunctionByteOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes in the function.
 	 * @return the number of bytes in the function.
 	 */
@@ -113,7 +113,7 @@ public class FramePointerOmissionRecord {
 		return numFunctionBytes;
 	}
 
-	/**
+    # /**
 	 * Returns the number of local variables.
 	 * @return the number of local variables.
 	 */
@@ -121,7 +121,7 @@ public class FramePointerOmissionRecord {
 		return numLocalVariables;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the parameter as the number of DWORDs.
 	 * @return the size of the parameters in DWORDs.
 	 */
@@ -129,7 +129,7 @@ public class FramePointerOmissionRecord {
 		return sizeOfParametersInDwords;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes in the function prolog.
 	 * @return the number of bytes in the prolog.
 	 */
@@ -137,7 +137,7 @@ public class FramePointerOmissionRecord {
 		return numFunctionPrologBytes;
 	}
 
-	/**
+    # /**
 	 * Returns whether there the function has structured exception handling.
 	 * @return whether structure handling is used.
 	 */
@@ -145,7 +145,7 @@ public class FramePointerOmissionRecord {
 		return hasStructuredExceptionHandling;
 	}
 
-	/**
+    # /**
 	 * Returns whether the EBP is allocated/used.
 	 * @return whether EBP is allocated/used.
 	 */
@@ -153,7 +153,7 @@ public class FramePointerOmissionRecord {
 		return ebpAllocatedAndUsed;
 	}
 
-	/**
+    # /**
 	 * Returns the value of the reserved 1-bit field..
 	 * @return the value of the reserved field.
 	 */
@@ -161,7 +161,7 @@ public class FramePointerOmissionRecord {
 		return reserved;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link FrameType} being specified.
 	 * @return the {@link FrameType} being specified.
 	 */
@@ -189,7 +189,7 @@ public class FramePointerOmissionRecord {
 		frameType = FrameType.fromValue(data & 0x03);
 	}
 
-	/**
+    # /**
 	 * Dumps the {@link FramePointerOmissionRecord}.  This package-protected method is for
 	 *  debugging only.
 	 * @param writer {@link Writer} to which to write the debug dump.

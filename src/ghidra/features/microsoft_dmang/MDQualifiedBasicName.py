@@ -44,7 +44,7 @@ public class MDQualifiedBasicName extends MDParsableItem {
 		return basicName.isDestructor();
 	}
 
-	/**
+    # /**
 	 * Returns the RTTI number:{0-4, or -1 if not an RTTI}
 	 * @return int RTTI number:{0-4, or -1 if not an RTTI}
 	 */
@@ -52,7 +52,7 @@ public class MDQualifiedBasicName extends MDParsableItem {
 		return basicName.getRTTINumber();
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if the symbol's Basic Name is of a {@link MDString} type.
 	 *  @return {@code true} if Basic Name is of {@link MDString} type.
 	 */
@@ -60,7 +60,7 @@ public class MDQualifiedBasicName extends MDParsableItem {
 		return basicName.isString();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link MDString} from the Basic Name if it is a symbol of that type; else
 	 *  returns null.
 	 *  @return the {@link MDString} or null if does not exist.

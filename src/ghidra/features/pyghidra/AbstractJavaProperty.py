@@ -40,7 +40,7 @@ abstract sealed class AbstractJavaProperty<T> implements JavaProperty<T> permits
 		DoubleJavaProperty, FloatJavaProperty, IntegerJavaProperty,
 		LongJavaProperty, ObjectJavaProperty, ShortJavaProperty {
 
-	/**
+    # /**
 	 * The name of the property
 	 */
 	public final String field;
@@ -55,7 +55,7 @@ abstract sealed class AbstractJavaProperty<T> implements JavaProperty<T> permits
 		this.setter = setter;
 	}
 
-	/**
+    # /**
 	 * Checks if this property has a getter
 	 *
 	 * @return true if this property has a getter
@@ -64,7 +64,7 @@ abstract sealed class AbstractJavaProperty<T> implements JavaProperty<T> permits
 		return getter != null;
 	}
 
-	/**
+    # /**
 	 * Checks if this property has a setter
 	 *
 	 * @return true if this property has a setter

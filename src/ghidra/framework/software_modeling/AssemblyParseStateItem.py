@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.parse;
 
 import java.util.*;
@@ -22,16 +22,16 @@ import ghidra.app.plugin.assembler.sleigh.symbol.AssemblyNonTerminal;
 import ghidra.app.plugin.assembler.sleigh.symbol.AssemblySymbol;
 
 # /**
- * An item in the state of an LR(0) parser
- * 
- * <p>
- * An item is a production with a dot indicating a position while parsing
- */
+# * An item in the state of an LR(0) parser
+# * 
+# * <p>
+# * An item is a production with a dot indicating a position while parsing
+# */
 public class AssemblyParseStateItem implements Comparable<AssemblyParseStateItem> {
 	private final AssemblyProduction prod;
 	private final int pos;
 
-	/**
+    # /**
 	 * Construct a new item starting at the far left of the given production
 	 * 
 	 * @param prod the production
@@ -40,7 +40,7 @@ public class AssemblyParseStateItem implements Comparable<AssemblyParseStateItem
 		this(prod, 0);
 	}
 
-	/**
+    # /**
 	 * Construct a new item starting immediately before the symbol at the given position in the
 	 * given production
 	 * 
@@ -55,7 +55,7 @@ public class AssemblyParseStateItem implements Comparable<AssemblyParseStateItem
 		}
 	}
 
-	/**
+    # /**
 	 * Advance the dot by one position, producing a new item
 	 * 
 	 * @return the new item
@@ -64,7 +64,7 @@ public class AssemblyParseStateItem implements Comparable<AssemblyParseStateItem
 		return new AssemblyParseStateItem(prod, pos + 1);
 	}
 
-	/**
+    # /**
 	 * Get the symbol immediately to the right of the dot
 	 * 
 	 * <p>
@@ -79,7 +79,7 @@ public class AssemblyParseStateItem implements Comparable<AssemblyParseStateItem
 		return prod.getRHS().getSymbol(pos);
 	}
 
-	/**
+    # /**
 	 * "Fill" one step out to close a state containing this item
 	 * 
 	 * <p>
@@ -159,7 +159,7 @@ public class AssemblyParseStateItem implements Comparable<AssemblyParseStateItem
 		return sb.toString();
 	}
 
-	/**
+    # /**
 	 * Check if this item is completed
 	 * 
 	 * <p>
@@ -172,7 +172,7 @@ public class AssemblyParseStateItem implements Comparable<AssemblyParseStateItem
 		return (pos == prod.getRHS().size());
 	}
 
-	/**
+    # /**
 	 * Get the position of the dot
 	 * 
 	 * <p>
@@ -184,7 +184,7 @@ public class AssemblyParseStateItem implements Comparable<AssemblyParseStateItem
 		return pos;
 	}
 
-	/**
+    # /**
 	 * Get the production associated with this item
 	 * 
 	 * @return the production

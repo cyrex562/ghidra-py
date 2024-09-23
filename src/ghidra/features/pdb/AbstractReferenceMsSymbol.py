@@ -27,7 +27,7 @@ public abstract class AbstractReferenceMsSymbol extends AbstractMsSymbol {
 
 	protected ReferenceSymbolInternals internals;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -40,7 +40,7 @@ public abstract class AbstractReferenceMsSymbol extends AbstractMsSymbol {
 		this.internals = internals;
 	}
 
-	/**
+    # /**
 	 * Returns "sum" (or "suc" or ?) name.
 	 * @return Name.
 	 */
@@ -48,7 +48,7 @@ public abstract class AbstractReferenceMsSymbol extends AbstractMsSymbol {
 		return internals.getSumName();
 	}
 
-	/**
+    # /**
 	 * Returns the actual offset in $$symbol.
 	 * @return Actual offset in $$symbol.
 	 */
@@ -56,7 +56,7 @@ public abstract class AbstractReferenceMsSymbol extends AbstractMsSymbol {
 		return internals.getOffsetActualSymbolInDollarDollarSymbols();
 	}
 
-	/**
+    # /**
 	 * Returns the module index.
 	 * @return Module index.
 	 */

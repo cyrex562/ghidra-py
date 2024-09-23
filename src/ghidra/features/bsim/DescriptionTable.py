@@ -95,7 +95,7 @@ public class DescriptionTable extends SQLComplexTable {
 		throw new UnsupportedOperationException("DescriptionTable may not be dropped");
 	}
 
-	/**
+    # /**
 	 * Given the row id of the function within desctable, extract the FunctionDescription object
 	 * @param descManager is the container which will hold the object
 	 * @param rowId is the row id of the function within desctable
@@ -118,7 +118,7 @@ public class DescriptionTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Process a result set (expected to contain a single row) from desctable,
 	 * building the FunctionDescription object described by the row
 	 * @param resultSet is the result set
@@ -154,7 +154,7 @@ public class DescriptionTable extends SQLComplexTable {
 		return convertDescriptionRow(currow, curexe, descManager, null);
 	}
 
-	/**
+    # /**
 	 * Given rows from desctable describing functions of a single executable,
 	 * build the list of corresponding FunctionDescription objects
 	 * @param descList is resulting list of FunctionDescriptions
@@ -185,7 +185,7 @@ public class DescriptionTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Given a function's raw meta-data from a desctable row (DescriptionRow), build the
 	 * corresponding high-level FunctionDescription
 	 * @param descRow is the function's row meta-data
@@ -207,7 +207,7 @@ public class DescriptionTable extends SQLComplexTable {
 		return fres;
 	}
 
-	/**
+    # /**
 	 * Extract column meta-data of a desctable row from the SQL result set
 	 * @param resultSet is the low-level result set (returned by an SQL query)
 	 * @param descRow is the DescriptionRow 
@@ -223,7 +223,7 @@ public class DescriptionTable extends SQLComplexTable {
 		descRow.addr = resultSet.getLong(6);
 	}
 
-	/**
+    # /**
 	 * Extract a list of desctable rows from the SQL result set
 	 * Only build up to -max- DescriptionRow objects, but still run through all rows in the set.
 	 * @param resultSet is the ResultSet to run through
@@ -251,7 +251,7 @@ public class DescriptionTable extends SQLComplexTable {
 		return descvec;
 	}
 
-	/**
+    # /**
 	 * Assuming all the necessary ids have been filled in, store the function as a row in desctable
 	 * 
 	 * @param arguments must be a single {@link FunctionDescription}
@@ -290,7 +290,7 @@ public class DescriptionTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Return function DescriptionRow objects that have a matching vector id
 	 * 
 	 * @param vectorId is the row id of the feature vector we want to match
@@ -316,7 +316,7 @@ public class DescriptionTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Return function DescriptionRow objects that have a matching vector id
 	 * and that also pass additional filters.  The filters must be encoded
 	 * as a "WHERE" clause of an SQL "SELECT" statement on desctable. Additional
@@ -360,7 +360,7 @@ public class DescriptionTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Return DescriptionRow objects that match a given -functionName-
 	 * and the row id within exetable of a specific executable
 	 * @param executableId is the row id of the executable to match
@@ -381,7 +381,7 @@ public class DescriptionTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Query the description table for the row describing a single function.
 	 * A function is uniquely identified by: its name, address, and the executable it is in 
 	 * @param executableId is the row id (of exetable) of the executable containing the function

@@ -16,7 +16,7 @@
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.nio.file.AccessMode;
 import java.util.Objects;
 
@@ -45,7 +45,7 @@ public class PdbParser {
 	public static final int VC110_ID = 20091201; // 0x01329141
 	public static final int VC140_ID = 20140508; // 0x013351dc
 
-	/**
+    # /**
 	 * Static method to open a PDB file, determine its version, and return an {@link AbstractPdb}
 	 *  appropriate for that version; it will not have been deserialized.  The main method
 	 *  to deserialize it is {@link AbstractPdb#deserialize()}; the method
@@ -69,7 +69,7 @@ public class PdbParser {
 		return parse(file, pdbOptions, monitor);
 	}
 
-	/**
+    # /**
 	 * Static method to open a PDB file, determine its version, and return an {@link AbstractPdb}
 	 *  appropriate for that version; it will not have been deserialized.  The main method
 	 *  to deserialize it is {@link AbstractPdb#deserialize()}; the method
@@ -93,7 +93,7 @@ public class PdbParser {
 		return parse(byteProvider, pdbOptions, monitor);
 	}
 
-	/**
+    # /**
 	 * Static method to open a PDB file, determine its version, and return an {@link AbstractPdb}
 	 *  appropriate for that version; it will not have been deserialized.  The main method
 	 *  to deserialize it is {@link AbstractPdb#deserialize()}; the method

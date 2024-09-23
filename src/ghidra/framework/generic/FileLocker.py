@@ -15,7 +15,7 @@
  */
 package generic.util;
 
-import java.io.*;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.text.DateFormat;

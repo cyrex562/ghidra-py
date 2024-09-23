@@ -27,7 +27,7 @@ import generic.concurrent.ConcurrentListenerSet;
  */
 public class WeakDataStructureFactory {
 
-	/**
+    # /**
 	 * Use when all access are on a single thread, such as the Swing thread.
 	 *
 	 * @return a new WeakSet
@@ -36,7 +36,7 @@ public class WeakDataStructureFactory {
 		return new ThreadUnsafeWeakSet<>();
 	}
 
-	/**
+    # /**
 	 * Use when mutations outweigh iterations.
 	 *
 	 * @return a new WeakSet
@@ -46,7 +46,7 @@ public class WeakDataStructureFactory {
 		return new CopyOnReadWeakSet<>();
 	}
 
-	/**
+    # /**
 	 * Use when iterations outweigh mutations.
 	 *
 	 * @return a new WeakSet

@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -102,7 +102,7 @@ public class AnnotationElementValue implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * The tag item indicates the type of this annotation element-value pair.
 	 * <p>
 	 * The letters 'B', 'C', 'D', 'F', 'I', 'J', 'S', and 'Z' indicate a primitive type.
@@ -117,7 +117,7 @@ public class AnnotationElementValue implements StructConverter {
 		return tag;
 	}
 
-	/**
+    # /**
 	 * The const_value_index item is used if the tag item is one of 
 	 * 		'B', 
 	 * 		'C', 
@@ -139,7 +139,7 @@ public class AnnotationElementValue implements StructConverter {
 		return constantValueIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the type_name_index item must be a valid index into
 	 * the constant_pool table. The constant_pool entry at that index
 	 * must be a CONSTANT_Utf8_info (?4.4.7) structure representing a valid
@@ -155,7 +155,7 @@ public class AnnotationElementValue implements StructConverter {
 		return typeNameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the const_name_index item must be a valid index into
 	 * the constant_pool table. The constant_pool entry at that index
 	 * must be a CONSTANT_Utf8_info (?4.4.7) structure representing the
@@ -170,7 +170,7 @@ public class AnnotationElementValue implements StructConverter {
 		return constantNameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The class_info_index item is used if the tag item is 'c'.
 	 * The class_info_index item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
@@ -184,7 +184,7 @@ public class AnnotationElementValue implements StructConverter {
 		return classInfoIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The annotation_value item is used if the tag item is '@'. 
 	 * The element_value structure represents a "nested" annotation.
 	 * @return a "nested" annotation
@@ -193,7 +193,7 @@ public class AnnotationElementValue implements StructConverter {
 		return annotation;
 	}
 
-	/**
+    # /**
 	 * The value of the num_values item gives the number of elements in the
 	 * array-typed value represented by this element_value structure.
 	 * <p>

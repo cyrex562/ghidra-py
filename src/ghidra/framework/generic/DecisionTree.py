@@ -15,7 +15,7 @@
  */
 package generic.constraint;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.xml.sax.*;
@@ -50,7 +50,7 @@ public class DecisionTree<T> {
 		propertyNameSet = new HashSet<String>();
 	}
 
-	/**
+    # /**
 	 * Searches the decision tree for values of given property name that match the constraints
 	 * within this tree.
 	 * @param testObject the object that the constraints are test against.
@@ -64,7 +64,7 @@ public class DecisionTree<T> {
 		return decisionSet;
 	}
 
-	/**
+    # /**
 	 * Registers a constraint class to be recognized from an xml constraint specification file.
 	 * @param name the name of the constraint which is also the xml tag value.
 	 * @param constraintClass the constraint type which will be initialized from the xml constraint
@@ -74,7 +74,7 @@ public class DecisionTree<T> {
 		constraintClassMap.put(name, constraintClass);
 	}
 
-	/**
+    # /**
 	 * Registers a property name.  Every tag in an xml constraint file (except the root tag which
 	 * is unused) must be either a constraint name or a property name. 
 	 * @param propertyName the name of a valid property to be expected in an xml constraints file.
@@ -83,7 +83,7 @@ public class DecisionTree<T> {
 		propertyNameSet.add(propertyName);
 	}
 
-	/**
+    # /**
 	 * Loads the tree from an xml data contained within an input stream. Note: this method can be
 	 * called multiple times, with each call appending to the existing tree.
 	 * @param name the name of the input source so that decisions can be traced back to 
@@ -108,7 +108,7 @@ public class DecisionTree<T> {
 
 	}
 
-	/**
+    # /**
 	 * Loads the tree from an xml constraint file. Note: this method can be called multiple times,
 	 * with each call appending to the existing tree. 
 	 * @param file the file that contains the xml for the constraint.

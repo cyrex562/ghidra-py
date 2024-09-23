@@ -29,7 +29,7 @@ public class PairedEmuFileContents<L, R> implements EmuFileContents<Pair<L, R>> 
 	protected final EmuFileContents<L> left;
 	protected final EmuFileContents<R> right;
 
-	/**
+    # /**
 	 * Create a paired file contents
 	 * 
 	 * @param left the left contents

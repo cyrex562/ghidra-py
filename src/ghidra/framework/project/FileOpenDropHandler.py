@@ -51,7 +51,7 @@ public class FileOpenDropHandler implements DropTargetHandler, Droppable, Contai
 	private PluginTool tool;
 	private Component component;
 
-	/**
+    # /**
 	 * Construct a new FileOpenDropHandler.
 	 * @param tool plugin tool
 	 * @param component component that is the drop target
@@ -69,7 +69,7 @@ public class FileOpenDropHandler implements DropTargetHandler, Droppable, Contai
 		initializeComponents(component);
 	}
 
-	/**
+    # /**
 	 * Dispose this drop handler.
 	 */
 	@Override

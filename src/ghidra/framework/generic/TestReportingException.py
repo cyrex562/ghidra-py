@@ -15,7 +15,7 @@
  */
 package generic.test;
 
-import java.io.*;
+
 import java.util.Objects;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -48,7 +48,7 @@ public class TestReportingException extends RuntimeException {
 	private Throwable t;
 	private StackTraceElement[] testThreadTrace;
 
-	/**
+    # /**
 	 * Creates a new {@link TestReportingException} using an exception that was generated on 
 	 * the Swing thread.
 	 * 

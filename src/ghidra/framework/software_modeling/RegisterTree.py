@@ -1,33 +1,33 @@
 # /* ###
- * IP: GHIDRA
- * REVIEWED: YES
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# * REVIEWED: YES
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import java.util.ArrayList;
 import java.util.List;
 
 # /**
- * The RegisterTree class builds and represents relationships between registers. Any
- * register that "breaks down" into smaller registers can be represent by a 
- * RegisterTree.  The largest register will be at the root and the registers that
- * make it up will be its children trees.  The children are RegisterTrees as well
- * and can have children trees of thier own.  The root of a RegisterTree may not
- * have an associated Register which means that its children are unrelated.  This
- * way all the registers of a processor can be represented as a single RegisterTree.
- */
+# * The RegisterTree class builds and represents relationships between registers. Any
+# * register that "breaks down" into smaller registers can be represent by a 
+# * RegisterTree.  The largest register will be at the root and the registers that
+# * make it up will be its children trees.  The children are RegisterTrees as well
+# * and can have children trees of thier own.  The root of a RegisterTree may not
+# * have an associated Register which means that its children are unrelated.  This
+# * way all the registers of a processor can be represented as a single RegisterTree.
+# */
 public class RegisterTree implements Comparable<RegisterTree> {
 	private static final String SEPARATOR = ".";
 	private Register register;
@@ -47,7 +47,7 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructs a RegisterTree with the given name and set of registers
 	 * @param name the name of the tree
 	 * @param regs the array of registers to form into a tree
@@ -64,7 +64,7 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructs a RegisterTree with one RegisterTree child
 	 * @param name the name of this tree
 	 * @param tree the child tree.
@@ -75,14 +75,14 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		children.add(tree);
 	}
 
-	/**
+    # /**
 	 * Returns the name of this register tree.
 	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Adds a Register Tree to this tree.
 	 * @param tree the register tree to add
 	 */
@@ -91,7 +91,7 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		tree.parent = this;
 	}
 
-	/**
+    # /**
 	 * Get the RegisterTrees that are the children of this RegisterTree
 	 * @return a array of RegisterTrees
 	 */
@@ -99,7 +99,7 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		return children.toArray(new RegisterTree[children.size()]);
 	}
 
-	/**
+    # /**
 	 * Returns the Register associated with this tree. This may be null which
 	 * indicates the children RegisterTrees are unrelated to each other.
 	 */
@@ -107,14 +107,14 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		return register;
 	}
 
-	/**
+    # /**
 	 * Returns the parent RegisterTree.
 	 */
 	public RegisterTree getParent() {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * The parent path of this RegisterTree if it exists or null if this tree has no parent or
 	 * no parent with a register.
 	 * @return The parent path of this RegisterTree.
@@ -128,7 +128,7 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		return parentTree.getRegisterPath();
 	}
 
-	/**
+    # /**
 	 * The path of this register, which includes the parent path of this RegisterTree if this
 	 * RegisterTree has a parent.
 	 * @return the path of this register.
@@ -143,7 +143,7 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		return getRegister().getName();
 	}
 
-	/**
+    # /**
 	 * Returns the RegisterTree for the given register if one exists in this RegisterTree object.
 	 * @param  register1 The register for which to get a RegisterTree.
 	 * @return The RegisterTree for the given register if one exists in this RegisterTree object.
@@ -161,14 +161,14 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
 	public int compareTo(RegisterTree other) {
 		return name.compareTo(other.name);
 	}
 
-	/**
+    # /**
 	 * Removes the register from the children
 	 * @param reg the register to remove.
 	 */
@@ -183,7 +183,7 @@ public class RegisterTree implements Comparable<RegisterTree> {
 		tree.getParent().children.remove(tree);
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

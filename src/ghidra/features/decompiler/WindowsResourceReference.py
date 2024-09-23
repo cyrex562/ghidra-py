@@ -228,7 +228,7 @@ public class WindowsResourceReference extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Associates a resource name with the name and ID of that resource
 	 * @param resourceRoutine - Name of the resource routine
 	 * @param paramIndex - Argument index of windows function call for resource lookup
@@ -327,7 +327,7 @@ public class WindowsResourceReference extends GhidraScript {
 		return constUse;
 	}
 
-	/**
+    # /**
 	 * Checks to see if the current resource routine is found in the
 	 * programs symbol table.
 	 * @param resourceRoutine - Name of the resource routine
@@ -356,7 +356,7 @@ public class WindowsResourceReference extends GhidraScript {
 		return foundSym;
 	}
 
-	/**
+    # /**
 	 * Analyze a functions references.
 	 * Populates the address/value pairs of resource address and ID
 	 * @param constUse - resource address/value pairs
@@ -422,7 +422,7 @@ public class WindowsResourceReference extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Decompile the function
 	 * @param f
 	 * @param decompiler
@@ -448,7 +448,7 @@ public class WindowsResourceReference extends GhidraScript {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Prints out the address of a found resource along with the name of
 	 * the resource.
 	 * @param constLocs - Address value pairs of the resource function
@@ -496,7 +496,7 @@ public class WindowsResourceReference extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Prints out the address of a found resource along with the name of
 	 * the resource.
 	 * @param constLocs - Address value pairs of the resource function
@@ -537,7 +537,7 @@ public class WindowsResourceReference extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the address of the resource located in the program
 	 * @param tableName - Name of the resource table
 	 * @param rsrcID - ID of the resource to find
@@ -638,7 +638,7 @@ public class WindowsResourceReference extends GhidraScript {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Finds the parameter passed into the resource function call
 	 * @param constUse - Key value pairs of the resource function calls
 	 * @param defUseList

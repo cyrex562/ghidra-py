@@ -15,7 +15,7 @@
  */
 package ghidra.test.processors.support;
 
-import java.io.*;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.math.BigDecimal;

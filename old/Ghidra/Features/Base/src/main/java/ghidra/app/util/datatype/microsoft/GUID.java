@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.datatype.microsoft;
 
-import java.io.IOException;
+
 import java.util.Arrays;
 
 import ghidra.app.util.bin.BinaryReader;

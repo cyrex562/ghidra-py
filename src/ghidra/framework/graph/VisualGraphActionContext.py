@@ -22,7 +22,7 @@ import ghidra.graph.VisualGraph;
  */
 public interface VisualGraphActionContext {
 
-	/**
+    # /**
 	 * Returns true actions that manipulate the satellite viewer should be enabled for this context
 	 * @return true actions that manipulate the satellite viewer should be enabled for this context
 	 */

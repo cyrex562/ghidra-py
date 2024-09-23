@@ -27,7 +27,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 
 	protected ProcedureStartMipsSymbolInternals internals;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -40,7 +40,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		this.internals = internals;
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -49,7 +49,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getParentPointer();
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -58,7 +58,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getEndPointer();
 	}
 
-	/**
+    # /**
 	 * Returns the next pointer.
 	 * @return next pointer.
 	 */
@@ -67,7 +67,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getNextPointer();
 	}
 
-	/**
+    # /**
 	 * Returns the procedure length.
 	 * @return Length.
 	 */
@@ -76,7 +76,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getProcedureLength();
 	}
 
-	/**
+    # /**
 	 * Returns the debug start offset.
 	 * @return Debug start offset.
 	 */
@@ -85,7 +85,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getDebugStartOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the debug end offset.
 	 * @return Debug end offset.
 	 */
@@ -94,7 +94,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getDebugEndOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -103,7 +103,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getTypeRecordNumber();
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -112,7 +112,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -121,7 +121,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getSegment();
 	}
 
-	/**
+    # /**
 	 * Returns the register containing the return value
 	 * @return the register.
 	 */
@@ -129,7 +129,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getReturnRegister();
 	}
 
-	/**
+    # /**
 	 * Returns the register containing the frame pointer
 	 * @return the register.
 	 */
@@ -137,7 +137,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		return internals.getFramePointerRegister();
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */
@@ -153,7 +153,7 @@ public abstract class AbstractProcedureStartMipsMsSymbol extends AbstractProcedu
 		builder.insert(0, getSymbolTypeName());
 	}
 
-	/**
+    # /**
 	 * Returns the special type string used during Emit.
 	 * @return Special type string.
 	 */

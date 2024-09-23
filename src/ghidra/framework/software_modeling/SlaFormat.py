@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.pcode.utils;
 
-import java.io.*;
+
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
@@ -23,11 +23,11 @@ import generic.jar.ResourceFile;
 import ghidra.program.model.pcode.*;
 
 # /**
- * Encoding values for the .sla file format
- */
+# * Encoding values for the .sla file format
+# */
 public class SlaFormat {
 
-	/**
+    # /**
 	 * FORMAT_VERSION will be incremented whenever the format of the .sla
 	 * files change.
 	 * <p>
@@ -38,7 +38,7 @@ public class SlaFormat {
 	 */
 	public static final int FORMAT_VERSION = 4;
 
-	/**
+    # /**
 	 * Absolute limit on the number of bytes in a .sla file
 	 */
 	public static final int MAX_FILE_SIZE = 1 << 24;		// 16 Megabytes
@@ -192,7 +192,7 @@ public class SlaFormat {
 	public static final ElementId ELEM_CONST_FLOWDEST_SIZE =
 		new ElementId("const_flowdest_size", 88);
 
-	/**
+    # /**
 	 * Try to read the header bytes of the .sla format from the given stream. If the header bytes
 	 * and the version byte match, \b true is returned, and the stream can be passed to the decoder.
 	 * @param stream is the given stream
@@ -214,7 +214,7 @@ public class SlaFormat {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Write a .sla file header,including the format version number to the given stream.
 	 * @param stream is the given stream
 	 * @throws IOException for problems writing to the stream
@@ -224,7 +224,7 @@ public class SlaFormat {
 		stream.write(FORMAT_VERSION);
 	}
 
-	/**
+    # /**
 	 * Build the encoder for compressing and encoding a .sla file (as a stream).
 	 * The given file is opened and a header is immediately written.  The returned
 	 * encoder is ready immediately to receive the .sla elements and attributes.
@@ -239,7 +239,7 @@ public class SlaFormat {
 		return new PackedEncode(compStream);
 	}
 
-	/**
+    # /**
 	 * Build the decoder for decompressing and decoding the .sla file (as a stream).
 	 * The given file is opened and the header bytes are checked.  The returned
 	 * decoder is immediately ready to read.

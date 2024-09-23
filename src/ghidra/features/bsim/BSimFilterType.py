@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.gui.filters;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.sql.SQLException;
 import java.util.*;
@@ -41,7 +41,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 	protected String xmlval; // Tag name for serialization of filters
 	protected String hint; // The text that will show in the gui input field as a 'hint'
 
-	/**
+    # /**
 	 * 
 	 * @param label is the name used for display
 	 * @param xmlval is the name used for XML serialization
@@ -84,56 +84,56 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		return label.compareTo(op2.label);
 	}
 
-	/**
+    # /**
 	 * @return the tag name for serialization
 	 */
 	public String getXmlValue() {
 		return xmlval;
 	}
 
-	/**
+    # /**
 	 * @return the hint text
 	 */
 	public String getHint() {
 		return hint;
 	}
 
-	/**
+    # /**
 	 * @return true if this is a filter element based on callgraph information of functions
 	 */
 	public boolean isChildFilter() {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return true if this is a "blank" filter (i.e. an unused element within a gui)
 	 */
 	public boolean isBlank() {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return true if any id's relevant to this filter must be resolved relative to the local ColumnDatabase
 	 */
 	public boolean isLocal() {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @return true if multiple filters of this type are allowed.
 	 */
 	public boolean isMultipleEntryAllowed() {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @return true if multiple filters of this type should be OR'd. AND them otherwise.
 	 */
 	public boolean orMultipleEntries() {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Save XML attributes corresponding to this template
 	 * @param fwrite is the output stream
 	 * @throws IOException for problems writing to the stream
@@ -142,7 +142,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		fwrite.append(" type=\"").append(xmlval).append('\"');
 	}
 
-	/**
+    # /**
 	 * Construct a record describing the column id's that might need to be recovered before this filter
 	 * element can be converted to an SQL clause
 	 * @param atom is the specific FilterAtom to generate the record for
@@ -150,7 +150,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 	 */
 	public abstract IDSQLResolution generateIDSQLResolution(FilterAtom atom);
 
-	/**
+    # /**
 	 * Construct a record describing the document id's that might be needed before this filter
 	 * element can be converted to an Elasticsearch filter script clause
 	 * @param atom is the specific FilterAtom to generate the record for
@@ -160,7 +160,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Gather all pieces to successfully convert this filter element into an SQL clause
 	 * @param effect is SQLEffects container for this filter elements pieces and others
 	 * @param atom holds the values for a particular instantiation of this filter element
@@ -170,7 +170,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 	public abstract void gatherSQLEffect(SQLEffects effect, FilterAtom atom,
 		IDSQLResolution resolution) throws SQLException;
 
-	/**
+    # /**
 	 * Gather pieces necessary to emit this filter as part of an elasticsearch query document
 	 * @param effect is the ElasticEffects container holding the pieces
 	 * @param atom holds the values for a particular instantiation of this filter element
@@ -180,7 +180,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 	public abstract void gatherElasticEffect(ElasticEffects effect, FilterAtom atom,
 		IDElasticResolution resolution) throws ElasticException;
 
-	/**
+    # /**
 	 * Given (multiple) clauses for a single filter type, combine into a single SQL where clause
 	 * @param subClauses is the list of SQL clauses
 	 * @return the combined clause
@@ -201,7 +201,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		return orClause.toString();
 	}
 
-	/**
+    # /**
 	 * Given (multiple) clauses for a single filter type, combine into a single elasticsearch script conditional
 	 * @param subClauses is the list of script clauses
 	 * @return the combined clause
@@ -226,7 +226,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		return new StringBSimValueEditor(this, initialValues, listener);
 	}
 
-	/**
+    # /**
 	 * Evaluate this filter for a specific ExecutableRecord and a specific filter -value-
 	 * @param rec is the ExecutableRecord to filter against
 	 * @param value is the String value for an instantiated filter
@@ -234,7 +234,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 	 */
 	public abstract boolean evaluate(ExecutableRecord rec, String value);
 
-	/**
+    # /**
 	 * Tests if the given string is a valid value for this filter type.
 	 * @param value the value to test
 	 * @return true if the given string is valid for this filter
@@ -243,7 +243,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		return value != null && !value.isBlank();
 	}
 
-	/**
+    # /**
 	 * Returns a normalized version of the given value for this filter.
 	 * @param value the value to be normalized
 	 * @return a normalized version of the given value for this filter
@@ -252,7 +252,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		return value.trim();
 	}
 
-	/**
+    # /**
 	 * @return the Blank FilterTemplate
 	 */
 	public static BSimFilterType getBlank() {
@@ -265,7 +265,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		return basis;
 	}
 
-	/**
+    # /**
 	 * Convenience function for deserializing FilterTemplates
 	 * @param el is the tag to deserialize
 	 * @return the deserialized FilterTemplate
@@ -294,7 +294,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		return basis.get(0);		// Default template
 	}
 
-	/**
+    # /**
 	 * Build the static set of basic FilterTemplates
 	 */
 	private static void buildFilterBasis() {
@@ -315,7 +315,7 @@ public abstract class BSimFilterType implements Comparable<BSimFilterType> {
 		basis.add(new HasNamedChildBSimFilterType());
 	}
 
-	/**
+    # /**
 	 * Generate a possibly restricted/extended set of FilterTemplates
 	 * @param info is database information which informs about which filters to create
 	 * @param includeChildFilter toggles whether or not ChildFilters should be included in this particular set

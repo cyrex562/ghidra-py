@@ -15,7 +15,7 @@
  */
 package docking.widgets.textpane;
 
-import java.io.IOException;
+
 import java.io.StringWriter;
 
 import javax.swing.JTextPane;

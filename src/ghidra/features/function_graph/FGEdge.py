@@ -37,7 +37,7 @@ public interface FGEdge extends VisualEdge<FGVertex> {
 
 	public void setLabel(String label);
 
-	/**
+    # /**
 	 * Set this edge's base alpha, which determines how much of the edge is visible/see through.
 	 * 0 is completely transparent.
 	 *   
@@ -49,7 +49,7 @@ public interface FGEdge extends VisualEdge<FGVertex> {
 	 */
 	public void setDefaultAlpha(double alpha);
 
-	/**
+    # /**
 	 * Set this edge's base alpha, which determines how much of the edge is visible/see through.
 	 * 0 is completely transparent.
 	 *   

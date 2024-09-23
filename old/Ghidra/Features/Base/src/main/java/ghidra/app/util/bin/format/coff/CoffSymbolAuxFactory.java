@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.coff;
 
 import ghidra.app.util.bin.BinaryReader;
 
-import java.io.IOException;
+
 
 final class CoffSymbolAuxFactory {
 

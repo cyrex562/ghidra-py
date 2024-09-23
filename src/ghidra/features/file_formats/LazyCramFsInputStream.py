@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.*;
+
 
 import ghidra.app.util.bin.ByteProvider;
 
@@ -24,7 +24,7 @@ public class LazyCramFsInputStream extends InputStream {
 	private InputStream currentDecompressedBlockInputStream = new ByteArrayInputStream(new byte[0]);
 	private int currentCompressedBlockIndex;
 
-	/**
+    # /**
 	 * Constructor for lazy cramfs input stream.
 	 * @param provider byte provider for the input stream.
 	 * @param cramfsInode the parent node for the input stream.

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.text.SimpleDateFormat;
@@ -26,10 +26,10 @@ import ghidra.util.Msg;
 import ghidra.util.classfinder.ClassTranslator;
 
 # /**
- * A datatype to interpret the FILETIME timestamp
- * convention, which is based on the number of 100-nanosecond ticks
- * since January 1, 1601.
- */
+# * A datatype to interpret the FILETIME timestamp
+# * convention, which is based on the number of 100-nanosecond ticks
+# * since January 1, 1601.
+# */
 public class FileTimeDataType extends BuiltIn {
 	static {
 		ClassTranslator.put("ghidra.program.model.data.FileTime", FileTimeDataType.class.getName());

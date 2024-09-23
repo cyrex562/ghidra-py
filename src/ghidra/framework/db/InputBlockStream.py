@@ -15,7 +15,7 @@
  */
 package db.buffers;
 
-import java.io.IOException;
+
 
 # /**
  * <code>InputBlockStream</code> provides a BufferFile input block stream.

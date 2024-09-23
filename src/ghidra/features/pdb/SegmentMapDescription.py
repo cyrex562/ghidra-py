@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 
 # /**
  * This class represents Segment Map Description component of a PDB file.  This class is only
@@ -35,7 +35,7 @@ public class SegmentMapDescription {
 	private long segOffset;
 	private long segLength;
 
-	/**
+    # /**
 	 * Returns the {@link SegmentMapDescription} flags.
 	 * @return the flags.
 	 */
@@ -43,7 +43,7 @@ public class SegmentMapDescription {
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link SegmentMapDescription} ovl (overlay?).
 	 * @return the ovl.
 	 */
@@ -51,7 +51,7 @@ public class SegmentMapDescription {
 		return ovl;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link SegmentMapDescription} group.
 	 * @return the group.
 	 */
@@ -59,7 +59,7 @@ public class SegmentMapDescription {
 		return group;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link SegmentMapDescription} frame.
 	 * @return the frame.
 	 */
@@ -67,7 +67,7 @@ public class SegmentMapDescription {
 		return frame;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link SegmentMapDescription} segNameIndex.
 	 * @return the segNameIndex.
 	 */
@@ -75,7 +75,7 @@ public class SegmentMapDescription {
 		return segNameIndex;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link SegmentMapDescription} classNameIndex.
 	 * @return the classNameIndex.
 	 */
@@ -83,7 +83,7 @@ public class SegmentMapDescription {
 		return classNameIndex;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link SegmentMapDescription} segment offset.
 	 * @return the segment offset.
 	 */
@@ -91,7 +91,7 @@ public class SegmentMapDescription {
 		return segOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment offset.
 	 * @return The offset of the segment.
 	 */
@@ -99,7 +99,7 @@ public class SegmentMapDescription {
 		return segOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link SegmentMapDescription} segment length.
 	 * @return The length of the segment.
 	 */
@@ -107,7 +107,7 @@ public class SegmentMapDescription {
 		return segLength;
 	}
 
-	/**
+    # /**
 	 * Deserializes the {@link SegmentMapDescription}.
 	 * @param substreamReader {@link PdbByteReader} from which to deserialize the data.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -135,7 +135,7 @@ public class SegmentMapDescription {
 		}
 	}
 
-	/**
+    # /**
 	 * Dumps the {@link SegmentMapDescription} to writer.  This method is for debugging only
 	 * @param writer the writer
 	 * @throws IOException upon issue with writing to the writer

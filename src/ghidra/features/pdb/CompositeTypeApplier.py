@@ -44,7 +44,7 @@ import ghidra.util.exception.CancelledException;
 public class CompositeTypeApplier extends AbstractComplexTypeApplier {
 
 	// Intended for: AbstractCompositeMsType
-	/**
+    # /**
 	 * Constructor for composite type applier, for transforming a composite into a Ghidra DataType
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */
@@ -370,7 +370,7 @@ public class CompositeTypeApplier extends AbstractComplexTypeApplier {
 		}
 	}
 
-	/**
+    # /**
 	 * Uses {@link DefaultPdbApplicator#getDataTypeOrSchedule(RecordNumber)}) on all underlying
 	 *  types to ensure that the types get scheduled... and detects whether any types were not yet
 	 *  available so that this composite type is denoted as not done.

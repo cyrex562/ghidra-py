@@ -17,21 +17,21 @@ package ghidra.javaclass.flags;
 
 public enum ClassFileFlags {
 
-	/** Declared public; may be accessed from outside its package. */
+    # /** Declared public; may be accessed from outside its package. */
 	ACC_PUBLIC(0x0001),
-	/** Declared final; no subclasses allowed. */
+    # /** Declared final; no subclasses allowed. */
 	ACC_FINAL(0x0010),
-	/** Treat superclass methods specially when invoked by the invokespecial instruction. */
+    # /** Treat superclass methods specially when invoked by the invokespecial instruction. */
 	ACC_SUPER(0x0020),
-	/** Is an interface, not a class. */
+    # /** Is an interface, not a class. */
 	ACC_INTERFACE(0x0200),
-	/** Declared abstract; must not be instantiated. */
+    # /** Declared abstract; must not be instantiated. */
 	ACC_ABSTRACT(0x0400),
-	/** Declared synthetic; not present in the source code. */
+    # /** Declared synthetic; not present in the source code. */
 	ACC_SYNTHETIC(0x1000),
-	/** Declared as an annotation type. */
+    # /** Declared as an annotation type. */
 	ACC_ANNOTATION(0x2000),
-	/** Declared as an enum type. */
+    # /** Declared as an enum type. */
 	ACC_ENUM(0x4000);
 
 	private int value;

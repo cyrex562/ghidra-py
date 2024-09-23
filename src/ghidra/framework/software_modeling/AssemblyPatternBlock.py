@@ -51,7 +51,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 	private final byte[] mask;
 	private final byte[] vals;
 
-	/**
+    # /**
 	 * Construct a new pattern block with the given mask, values, and offset
 	 * 
 	 * @param offset an offset (0-up, left-to-right) where the pattern actually starts
@@ -65,7 +65,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		this.vals = vals;
 	}
 
-	/**
+    # /**
 	 * Construct a new empty pattern block at the given offset, prepared with the given capacity
 	 * 
 	 * @param offset an offset (0-up, left-to-right) where the pattern will start
@@ -77,7 +77,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		vals = new byte[capacity];
 	}
 
-	/**
+    # /**
 	 * Get an empty pattern block
 	 * 
 	 * @return the pattern block
@@ -86,7 +86,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(0, 0);
 	}
 
-	/**
+    # /**
 	 * Get a pattern block with the given (fully-included) values at the given offset
 	 * 
 	 * @param offset the offset (0-up, left-to-right)
@@ -102,7 +102,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Convert a string representation to a pattern block
 	 * 
 	 * @see NumericUtilities#convertHexStringToMaskedValue(AtomicLong, AtomicLong, String, int, int,
@@ -153,7 +153,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(offset, mask, vals);
 	}
 
-	/**
+    # /**
 	 * Convert a block from a disjoint pattern into an assembly pattern block
 	 * 
 	 * @param pat the pattern to convert
@@ -196,7 +196,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(offset, mask, vals);
 	}
 
-	/**
+    # /**
 	 * Encode the given masked long into a pattern block as specified by a given token field
 	 * 
 	 * @param tf the token field specifying the location of the value to encode
@@ -230,7 +230,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(tf.getByteStart(), mask, vals);
 	}
 
-	/**
+    # /**
 	 * Encode the given masked long into a pattern block as specified by a given context field
 	 * 
 	 * @param cf the context field specifying the location of the value to encode
@@ -262,7 +262,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(cf.getByteStart(), mask, vals);
 	}
 
-	/**
+    # /**
 	 * Convert a register value into a pattern block
 	 * 
 	 * <p>
@@ -281,7 +281,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(0, mask, vals);
 	}
 
-	/**
+    # /**
 	 * Allocate a fully-undefined pattern block of the given length
 	 * 
 	 * @param length the length in bytes
@@ -293,7 +293,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(0, mask, vals);
 	}
 
-	/**
+    # /**
 	 * Duplicate this pattern block
 	 * 
 	 * @return the duplicate
@@ -303,7 +303,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 			Arrays.copyOf(vals, vals.length));
 	}
 
-	/**
+    # /**
 	 * Get the length (plus the offset) of this pattern block
 	 * 
 	 * @return the total length
@@ -312,7 +312,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return offset + mask.length;
 	}
 
-	/**
+    # /**
 	 * Shift, i.e., increase the offset of, this pattern block
 	 * 
 	 * @param amt the amount to shift right
@@ -325,7 +325,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(this.offset + amt, mask, vals);
 	}
 
-	/**
+    # /**
 	 * Truncate (unshift) this pattern block by removing bytes from the left
 	 * 
 	 * @param amt the amount to truncate or shift left
@@ -348,7 +348,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(0, newMask, newVals);
 	}
 
-	/**
+    # /**
 	 * Combine this pattern block with another given block
 	 * 
 	 * <p>
@@ -478,7 +478,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Read an array, returning a default if the index is out of bounds
 	 * 
 	 * @param arr the array to read
@@ -494,7 +494,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return 0xff & arr[idx];
 	}
 
-	/**
+    # /**
 	 * Encode the given value into a copy of this pattern block as specified by a context operation
 	 * 
 	 * <p>
@@ -544,7 +544,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(newOffset, newMask, newVals);
 	}
 
-	/**
+    # /**
 	 * Read the input of a context operation from this pattern block
 	 * 
 	 * @param cop the context operation
@@ -575,7 +575,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return MaskedLong.fromMaskAndValue(rmsk >>> cop.getShift(), rval >>> cop.getShift());
 	}
 
-	/**
+    # /**
 	 * Set all bits read by a given context operation to unknown
 	 * 
 	 * <p>
@@ -605,7 +605,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(offset, newMask, newVals);
 	}
 
-	/**
+    # /**
 	 * Set all bits that are known (1 in mask) in {@code other} to unknown.
 	 * 
 	 * <p>
@@ -645,7 +645,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return newMask;
 	}
 
-	/**
+    # /**
 	 * Remove all unknown bits from both left and right
 	 * 
 	 * @return new value without any left or right unknown bits (but may have unknown bits in the
@@ -679,7 +679,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(0, newMask, newVals);
 	}
 
-	/**
+    # /**
 	 * Get an array representing the full value of the pattern
 	 * 
 	 * <p>
@@ -701,7 +701,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return out;
 	}
 
-	/**
+    # /**
 	 * Get an array representing the full mask of the pattern
 	 * 
 	 * <p>
@@ -723,7 +723,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return out;
 	}
 
-	/**
+    # /**
 	 * Get the values array
 	 * 
 	 * <p>
@@ -737,7 +737,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return vals;
 	}
 
-	/**
+    # /**
 	 * Get the mask array
 	 * 
 	 * <p>
@@ -752,7 +752,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return mask;
 	}
 
-	/**
+    # /**
 	 * Mask the given {@code unmasked} value with the mask contained in this pattern block.
 	 * 
 	 * <p>
@@ -773,7 +773,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(offset, mask, newVals);
 	}
 
-	/**
+    # /**
 	 * Get the number of undefined bytes preceding the mask and values arrays
 	 * 
 	 * @return the offset
@@ -782,7 +782,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Decode {@code len} value bytes in big-endian format, beginning at {@code start}
 	 * 
 	 * @param start the first byte to decode
@@ -801,7 +801,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Decode {@code len} mask bytes in big-endian format, beginning at {@code start}
 	 * 
 	 * @param start the first byte to decode
@@ -820,7 +820,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Decode {@code len} bytes (values and mask) in big-endian format, beginning at {@code start}
 	 * 
 	 * @param start the first byte to decode
@@ -831,7 +831,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return MaskedLong.fromMaskAndValue(readMaskBytes(start, len), readValBytes(start, len));
 	}
 
-	/**
+    # /**
 	 * Fill all unknown bits with 0 bits
 	 * 
 	 * @return the result
@@ -844,7 +844,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return new AssemblyPatternBlock(offset, newMask, vals);
 	}
 
-	/**
+    # /**
 	 * Check if there are any unknown bits
 	 * 
 	 * @return true if no unknown bits are present, false otherwise
@@ -861,7 +861,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Check if all bits are 0 bits
 	 * 
 	 * @return true if all are 0, false otherwise
@@ -878,7 +878,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Decode the values array into a {@link BigInteger} of length {@code n} bytes
 	 * 
 	 * <p>
@@ -899,7 +899,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Counts the total number of known bits in the pattern
 	 * 
 	 * <p>
@@ -929,7 +929,7 @@ public class AssemblyPatternBlock implements Comparable<AssemblyPatternBlock> {
 		return 1 << count0;
 	}
 
-	/**
+    # /**
 	 * Get an iterable over all the possible fillings of the value, given a partial mask
 	 * 
 	 * <p>

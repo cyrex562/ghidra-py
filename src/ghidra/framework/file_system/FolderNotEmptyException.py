@@ -16,7 +16,7 @@
  */
 package ghidra.framework.store;
 
-import java.io.IOException;
+
 
 # /**
  * <code>FolderNotEmptyException</code> is thrown when an attempt is

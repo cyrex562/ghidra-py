@@ -53,7 +53,7 @@ import ghidra.program.model.reloc.RelocationResult;
 public class RISCV_ElfRelocationHandler
 		extends AbstractElfRelocationHandler<RISCV_ElfRelocationType, RISCV_ElfRelocationContext> {
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public RISCV_ElfRelocationHandler() {
@@ -76,7 +76,7 @@ public class RISCV_ElfRelocationHandler
 		return RISCV_ElfRelocationType.R_RISCV_RELATIVE.typeId;
 	}
 
-	/**
+    # /**
 	 * Get the adjusted 20 high bits of a 32 bit target.  The lower 12 bits will
 	 * be found in a later instruction, using a sign-extended signed addition.  If those
 	 * 12 bits will be seen as negative, we need to increment the higher bits by one
@@ -92,7 +92,7 @@ public class RISCV_ElfRelocationHandler
 		return target_h;
 	}
 
-	/**
+    # /**
 	 * get the lower 12 bits of a 32 bit target.  These will typically be added - not or'ed - to
 	 * a register holding the higher 20 bits.
 	 * @param target a 32 bit offset
@@ -102,7 +102,7 @@ public class RISCV_ElfRelocationHandler
 		return (target & 0x00000fff);
 	}
 
-	/**
+    # /**
 	 * PC relative relocations like R_RISCV_PCREL_LO12_I find their target indirectly,
 	 * using their symbolValue to locate the address of the matching R_RISCV_PCREL_HI20
 	 * or R_RISCV_GOT_HI20.  The HI20 relocation's symbol identifies the actual target.

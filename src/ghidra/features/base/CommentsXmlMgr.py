@@ -28,7 +28,7 @@ import ghidra.util.xml.XmlWriter;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-import java.io.IOException;
+
 
 /**
  * XML manager for all types of comments.

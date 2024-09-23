@@ -16,7 +16,7 @@
 package ghidra.program.database;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -40,7 +40,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataTypeArchive {
 
-	/**
+    # /**
 	 * DB_VERSION should be incremented any time a change is made to the overall
 	 * database schema associated with any of the managers.
 	 * 18-Sep-2008 - version 1 - Added fields for synchronizing program data types with project archives.
@@ -57,7 +57,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 	 */
 	static final int DB_VERSION = 4;
 
-	/**
+    # /**
 	 * UPGRADE_REQUIRED_BEFORE_VERSION should be changed to DB_VERSION any time the
 	 * latest version requires a forced upgrade (i.e., Read-only mode not supported
 	 * until upgrade is performed).  It is assumed that read-only mode is supported 
@@ -65,19 +65,19 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 	 */
 	private static final int UPGRADE_REQUIRED_BEFORE_VERSION = 1;
 
-	/** Name of data type archive information property list */
+    # /** Name of data type archive information property list */
 	public static final String ARCHIVE_INFO = "Data Type Archive Information";
 
-	/** Name of data type archive settings property list */
+    # /** Name of data type archive settings property list */
 	public static final String ARCHIVE_SETTINGS = "Data Type Archive Settings";
 
-	/** Name of date created property */
+    # /** Name of date created property */
 	public static final String DATE_CREATED = "Date Created";
 
-	/** Name of Ghidra version property */
+    # /** Name of Ghidra version property */
 	public static final String CREATED_WITH_GHIDRA_VERSION = "Created With Ghidra Version";
 
-	/** A date from January 1, 1970 */
+    # /** A date from January 1, 1970 */
 	public static final Date JANUARY_1_1970 = new Date(0);
 
 	private static final String ARCHIVE_DB_VERSION = "DB Version";
@@ -96,7 +96,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 	private boolean changeable = true;
 	private Table table;
 
-	/**
+    # /**
 	 * Constructs a new DataTypeArchiveDB within a project folder.
 	 * @param folder folder within which the project archive will be created
 	 * @param name the name of the data type archive
@@ -144,7 +144,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 
 	}
 
-	/**
+    # /**
 	 * Constructs a new DataTypeArchiveDB
 	 * @param dbh a handle to an open data type archive database.
 	 * @param openMode one of:
@@ -255,7 +255,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		return pointerSize > 0 && pointerSize <= PointerDataType.MAX_POINTER_SIZE_BYTES;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Program#getDataTypeManager()
 	 */
 	@Override
@@ -263,7 +263,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		return dataTypeManager;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Program#getCreationDate()
 	 */
 	@Override
@@ -272,7 +272,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		return pl.getDate(DATE_CREATED, new Date(0));
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Program#getDefaultPointerSize()
 	 */
 	@Override
@@ -283,7 +283,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		return pl.getInt(DEFAULT_POINTER_SIZE, 4);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Program#getChanges()
 	 */
 	@Override
@@ -291,7 +291,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		return (DataTypeArchiveDBChangeSet) changeSet;
 	}
 
-	/**
+    # /**
 	 * notification the a data type has changed
 	 * @param dataTypeID the id of the data type that changed.
 	 * @param eventType the type of the change (moved, renamed, etc.)
@@ -310,7 +310,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		fireEvent(new ProgramChangeRecord(eventType, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a data type was added.
 	 * @param dataTypeID the id if the data type that was added.
 	 * @param eventType should always be DATATYPE_ADDED
@@ -326,7 +326,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		fireEvent(new ProgramChangeRecord(eventType, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a category was changed.
 	 * @param categoryID the id of the data type that was added.
 	 * @param eventType the type of change
@@ -342,7 +342,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		fireEvent(new ProgramChangeRecord(eventType, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a category was added.
 	 * @param categoryID the id of the data type that was added.
 	 * @param eventType the type of change (should always be CATEGORY_ADDED)
@@ -358,7 +358,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		fireEvent(new ProgramChangeRecord(eventType, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Mark the state this Data Type Archive as having changed and generate
 	 * the event.  Any or all parameters may be null.
 	 * @param eventType event type
@@ -389,7 +389,7 @@ public class DataTypeArchiveDB extends DomainObjectAdapterDB implements DataType
 		table.putRecord(record);
 	}
 
-	/**
+    # /**
 	 * Initialize the following fields from the database and check the database version for an existing database:
 	 * <ul>
 	 * <li>name</li>

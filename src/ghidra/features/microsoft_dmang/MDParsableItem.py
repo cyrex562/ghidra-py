@@ -22,7 +22,7 @@ public abstract class MDParsableItem {
 
 	protected MDMang dmang;
 
-	/**
+    # /**
 	 * Constructor for this item (this class) that can be parsed by <b><code>MDMang</code></b>.
 	 *  The <b><code>MDMang</code></b> argument is the worker for the demangler, which is used
 	 *  throughout the parsing and outputting of the object.
@@ -32,7 +32,7 @@ public abstract class MDParsableItem {
 		this.dmang = dmang;
 	}
 
-	/**
+    # /**
 	 * This is method can set the required <b><code>dmang</code></b> reference in this
 	 *  class.  The normal way of setting this is through the constructor, which takes
 	 *  the appropriate argument.  But if this class is constructed with
@@ -50,7 +50,7 @@ public abstract class MDParsableItem {
 		return startIndexOffset;
 	}
 
-	/**
+    # /**
 	 * Constructor for this item (this class) that can be parsed by <b><code>MDMang</code></b>.
 	 *  The <b><code>MDMang</code></b> argument is the worker for the demangler, which is used
 	 *  throughout the parsing and outputting of the object.  The
@@ -69,9 +69,9 @@ public abstract class MDParsableItem {
 		this.startIndexOffset = startIndexOffset;
 	}
 
-	/******************************************************************************/
-	/******************************************************************************/
-	/**
+    # /******************************************************************************/
+    # /******************************************************************************/
+    # /**
 	 * This method is here so that it can be overridden with extra processing code before and
 	 *  after the call-back to any particular parser.
 	 * @throws MDException On parsing error.

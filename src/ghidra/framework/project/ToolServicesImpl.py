@@ -15,7 +15,7 @@
  */
 package ghidra.framework.project.tool;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 import java.util.function.Function;

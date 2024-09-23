@@ -39,7 +39,7 @@ public class MultiIterator<T> implements Iterator<T> {
 	protected List<PeekableIterator<T>> iterators;
 	private Comparator<T> comparator;
 
-	/**
+    # /**
 	 * Use this constructor when the items of the iterators are naturally comparable (i.e., 
 	 * they implement {@link Comparable}).
 	 * 
@@ -50,7 +50,7 @@ public class MultiIterator<T> implements Iterator<T> {
 		this(iterators, new TComparator<T>(), forward);
 	}
 
-	/**
+    # /**
 	 * Use this constructor when the items of the iterators are not naturally comparable (i.e., 
 	 * they do not implement {@link Comparable}).
 	 * 

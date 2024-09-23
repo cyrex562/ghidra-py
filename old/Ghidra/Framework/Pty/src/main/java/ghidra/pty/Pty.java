@@ -15,7 +15,7 @@
  */
 package ghidra.pty;
 
-import java.io.IOException;
+
 
 /**
  * A pseudo-terminal

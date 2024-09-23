@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.util.*;
@@ -23,15 +23,15 @@ import ghidra.program.model.data.*;
 import ghidra.program.model.listing.*;
 
 # /**
- * Iterator that visits each defined data instance in the initialized memory of a Program or in the footprint of
- * a specified data element.
- * <p>
- * Data elements that are nested inside of composites or arrays are visited, not just the
- * parent/containing data element.
- */
+# * Iterator that visits each defined data instance in the initialized memory of a Program or in the footprint of
+# * a specified data element.
+# * <p>
+# * Data elements that are nested inside of composites or arrays are visited, not just the
+# * parent/containing data element.
+# */
 public class DefinedDataIterator implements DataIterator {
 
-	/**
+    # /**
 	 * Creates a new iterator that traverses the entire Program's address space, returning
 	 * data instances that successfully match the predicate.
 	 *
@@ -44,7 +44,7 @@ public class DefinedDataIterator implements DataIterator {
 		return new DefinedDataIterator(program, null, dataTypePredicate, null);
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that traverses a portion of the Program's address space, returning
 	 * data instances that successfully match the predicate.
 	 *
@@ -58,7 +58,7 @@ public class DefinedDataIterator implements DataIterator {
 		return new DefinedDataIterator(program, addresses, dataTypePredicate, null);
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that traverses the entire Program's address space, returning
 	 * data instances that successfully match the predicate.
 	 *
@@ -71,7 +71,7 @@ public class DefinedDataIterator implements DataIterator {
 		return new DefinedDataIterator(program, null, null, dataInstancePredicate);
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that traverses the entire Program's address space returning
 	 * data instances that are strings.
 	 *
@@ -84,7 +84,7 @@ public class DefinedDataIterator implements DataIterator {
 			data -> StringDataInstance.isString(data));
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that traverses a portion of the Program's address space returning
 	 * data instances that are strings.
 	 *
@@ -98,7 +98,7 @@ public class DefinedDataIterator implements DataIterator {
 			data -> StringDataInstance.isString(data));
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that traverses the address space of a single data item (ie. a
 	 * composite or array data instance that needs to be recursed into).
 	 *
@@ -114,7 +114,7 @@ public class DefinedDataIterator implements DataIterator {
 	private Predicate<DataType> dataTypePredicate;
 	private Predicate<Data> dataInstancePredicate;
 
-	/**
+    # /**
 	 * LIFO stack of iterators.  Newly found iterators of sub-components are
 	 * pushed onto the end and become the current iterator.  When an iterator is exhausted, 
 	 * it is popped of the end and the uncovered iterator is now the current.    

@@ -39,7 +39,7 @@ public class GTaskGroup {
 
 	private boolean scheduled = false; // true when scheduled in GTaskManager; prevents new tasks being added
 
-	/**
+    # /**
 	 * Creates a new named GTaskGroup.
 	 * @param description the display name for the group.
 	 * @param startNewTransaction if true, any existing transaction (if there is one) will be closed
@@ -53,7 +53,7 @@ public class GTaskGroup {
 		this.monitor = new GTaskMonitor();
 	}
 
-	/**
+    # /**
 	 * Add a task to this group with the given priority.  Tasks can only be added to this group
 	 * before the group is added to the GTaskManager.  After that, an IllegalStateException will
 	 * be thrown.
@@ -78,7 +78,7 @@ public class GTaskGroup {
 		return scheduledTask;
 	}
 
-	/**
+    # /**
 	 * Returns a list scheduled tasks in the group.
 	 * @return a list scheduled tasks in the group.
 	 */
@@ -88,7 +88,7 @@ public class GTaskGroup {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns the TaskMonitor that will be used to track the overall progress of tasks within this 
 	 * group.
 	 * @return the TaskMonitor that will be used to track the overall progress of tasks within this 
@@ -98,7 +98,7 @@ public class GTaskGroup {
 		return monitor;
 	}
 
-	/**
+    # /**
 	 * Returns true if this group wants to start a new transaction when it runs.  Otherwise, the
 	 * group will add-on to any existing transaction from the previous group.
 	 * @return true if a new transaction should be started for this group.
@@ -107,7 +107,7 @@ public class GTaskGroup {
 		return startNewTransaction;
 	}
 
-	/**
+    # /**
 	 * Returns a description for the group.
 	 * @return a description for this group.
 	 */
@@ -125,14 +125,14 @@ public class GTaskGroup {
 		return "Task Group: " + description;
 	}
 
-	/**
+    # /**
 	 * Cancels the group.  Any tasks that haven't yet started will never run.
 	 */
 	public void setCancelled() {
 		cancelled = true;
 	}
 
-	/**
+    # /**
 	 * Returns true if this group was cancelled.
 	 * @return true if this group was cancelled.
 	 */
@@ -140,7 +140,7 @@ public class GTaskGroup {
 		return cancelled;
 	}
 
-	/**
+    # /**
 	 * Notification that a task in the group has been completed.  The group keeps track of the overall
 	 * progress of the tasks completed in this group.  This call is used to notify the group that
 	 * another one of its tasks was completed.

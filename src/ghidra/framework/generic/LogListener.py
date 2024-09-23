@@ -20,7 +20,7 @@ package log;
  */
 public interface LogListener {
 
-	/**
+    # /**
 	 * Called when a log message is received.
 	 * 
 	 * @param message the message of the log event

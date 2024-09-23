@@ -77,7 +77,7 @@ public class AssemblyParseMachine implements Comparable<AssemblyParseMachine> {
 
 	static final DbgTimer DBG = DbgTimer.INACTIVE;
 
-	/**
+    # /**
 	 * Construct a new parse state
 	 * 
 	 * @param parser the parser driving this machine
@@ -182,7 +182,7 @@ public class AssemblyParseMachine implements Comparable<AssemblyParseMachine> {
 
 	/* *******************************************************************************************/
 
-	/**
+    # /**
 	 * Duplicate this machine state
 	 * 
 	 * <p>
@@ -210,7 +210,7 @@ public class AssemblyParseMachine implements Comparable<AssemblyParseMachine> {
 		return c;
 	}
 
-	/**
+    # /**
 	 * Perform a given action and continue parsing, exhausting all results after the action
 	 * 
 	 * <p>
@@ -261,7 +261,7 @@ public class AssemblyParseMachine implements Comparable<AssemblyParseMachine> {
 		}
 	}
 
-	/**
+    # /**
 	 * Consume a given terminal (and corresponding token) and continue parsing
 	 * 
 	 * @param t the terminal
@@ -281,7 +281,7 @@ public class AssemblyParseMachine implements Comparable<AssemblyParseMachine> {
 		}
 	}
 
-	/**
+    # /**
 	 * Look for previous machine states having the same stack and position
 	 * 
 	 * <p>
@@ -313,7 +313,7 @@ public class AssemblyParseMachine implements Comparable<AssemblyParseMachine> {
 		return stack + ":" + treeStack + ":" + buffer + " (" + pos + ")";
 	}
 
-	/**
+    # /**
 	 * Parse (or continue parsing) all possible trees from this machine state
 	 * 
 	 * @param results a place to store all the parsing results
@@ -372,7 +372,7 @@ public class AssemblyParseMachine implements Comparable<AssemblyParseMachine> {
 		}
 	}
 
-	/**
+    # /**
 	 * Parse (or continue parsing) all possible trees from this machine state
 	 * 
 	 * @return the set of all possible trees and errors
@@ -384,7 +384,7 @@ public class AssemblyParseMachine implements Comparable<AssemblyParseMachine> {
 		return results;
 	}
 
-	/**
+    # /**
 	 * If in the accepted state, get the resulting parse tree for this machine
 	 * 
 	 * @return the parse tree

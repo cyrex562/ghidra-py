@@ -118,7 +118,7 @@ public class MsProperty extends AbstractParsableItem {
 	private Mocom mocom; // ????
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for MsProperty.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -134,7 +134,7 @@ public class MsProperty extends AbstractParsableItem {
 		this.mocom = Mocom.NONE;
 	}
 
-	/**
+    # /**
 	 * Tells whether the structure is packed.
 	 * @return True if structure is packed.
 	 */
@@ -142,7 +142,7 @@ public class MsProperty extends AbstractParsableItem {
 		return packedStructure;
 	}
 
-	/**
+    # /**
 	 * Tells whether a constructor or destructor is present.
 	 * @return True if a constructor or destructor is present.
 	 */
@@ -150,7 +150,7 @@ public class MsProperty extends AbstractParsableItem {
 		return constructorOrDestructorPresent;
 	}
 
-	/**
+    # /**
 	 * Tells whether there are overloaded operators.
 	 * @return True if there are overloaded operators.
 	 */
@@ -158,7 +158,7 @@ public class MsProperty extends AbstractParsableItem {
 		return overloadedOperatorsPresent;
 	}
 
-	/**
+    # /**
 	 * Tells whether the class is a nested class.
 	 * @return True if the class is a nested class.
 	 */
@@ -166,7 +166,7 @@ public class MsProperty extends AbstractParsableItem {
 		return isNestedClass;
 	}
 
-	/**
+    # /**
 	 * Tells whether there are contained nested types.
 	 * @return True if there are nested types.
 	 */
@@ -174,7 +174,7 @@ public class MsProperty extends AbstractParsableItem {
 		return containsNestedTypes;
 	}
 
-	/**
+    # /**
 	 * Tells whether there is an overloaded assignment.
 	 * @return True if there is an overloaded assignment.
 	 */
@@ -182,7 +182,7 @@ public class MsProperty extends AbstractParsableItem {
 		return hasOverloadedAssignment;
 	}
 
-	/**
+    # /**
 	 * Tells whether there are casting methods.
 	 * @return True if there are casting methods.
 	 */
@@ -190,7 +190,7 @@ public class MsProperty extends AbstractParsableItem {
 		return hasCastingMethods;
 	}
 
-	/**
+    # /**
 	 * Tells whether it is a forward reference.
 	 * @return True if it is a forward reference.
 	 */
@@ -198,7 +198,7 @@ public class MsProperty extends AbstractParsableItem {
 		return isForwardReference;
 	}
 
-	/**
+    # /**
 	 * Tells whether the the definition is scoped.
 	 * @return True if there definition is scoped.
 	 */
@@ -206,7 +206,7 @@ public class MsProperty extends AbstractParsableItem {
 		return scopedDefinition;
 	}
 
-	/**
+    # /**
 	 * Tells if it has a unique name.
 	 * @return True if it has a unique name.
 	 */
@@ -214,7 +214,7 @@ public class MsProperty extends AbstractParsableItem {
 		return hasUniqueName;
 	}
 
-	/**
+    # /**
 	 * Tells whether it can be a base class
 	 * @return True if it can be a base class.
 	 */
@@ -222,7 +222,7 @@ public class MsProperty extends AbstractParsableItem {
 		return sealed;
 	}
 
-	/**
+    # /**
 	 * Tells whether it is intrinsic.
 	 * @return True if it is intrinsic.
 	 */
@@ -230,7 +230,7 @@ public class MsProperty extends AbstractParsableItem {
 		return isIntrinsic;
 	}
 
-	/**
+    # /**
 	 * Gets the {@link Hfa} kind.
 	 * @return The {@link Hfa} kind.
 	 */
@@ -238,7 +238,7 @@ public class MsProperty extends AbstractParsableItem {
 		return hfa;
 	}
 
-	/**
+    # /**
 	 * Gets the {@link Mocom} kind.
 	 * @return The {@link Mocom} kind.
 	 */

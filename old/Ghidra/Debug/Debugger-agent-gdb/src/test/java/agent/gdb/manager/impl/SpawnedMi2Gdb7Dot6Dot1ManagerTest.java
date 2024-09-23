@@ -16,7 +16,7 @@
 package agent.gdb.manager.impl;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.concurrent.CompletableFuture;
 
 import org.junit.Ignore;

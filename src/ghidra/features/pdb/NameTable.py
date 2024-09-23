@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -54,7 +54,7 @@ public class NameTable {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb {@link AbstractPdb} that owns this Name Table
 	 */
@@ -63,7 +63,7 @@ public class NameTable {
 		this.pdb = pdb;
 	}
 
-	/**
+    # /**
 	 * Returns a name from the Name Table pertaining to the index argument
 	 * @param index index of the name to retrieve
 	 * @return name retrieved for the index
@@ -72,7 +72,7 @@ public class NameTable {
 		return namesByStreamNumber.get(index);
 	}
 
-	/**
+    # /**
 	 * Returns an index of the name argument in the {@link NameTable}
 	 * @param name name to look up
 	 * @return index of the name
@@ -82,7 +82,7 @@ public class NameTable {
 		return x;
 	}
 
-	/**
+    # /**
 	 * Returns a name from the Name Table pertaining to the byte-offset in the block of names for
 	 *  the table
 	 * @param offset byte-offset of the name in the {@link NameTable} block
@@ -95,7 +95,7 @@ public class NameTable {
 		return namesByOffset.get(offset);
 	}
 
-	/**
+    # /**
 	 * IMPORTANT: This method is for testing only.  It allows us to set a basic object.
 	 *  Note: not all values are initialized.  Add a paired offset and {@link String} name
 	 * @param offset offset part of pair
@@ -119,7 +119,7 @@ public class NameTable {
 	//  "unknown" and defer true interpretation/conversion to String until we know or until
 	//  Ghidra user can ad-hoc apply interpretations to those fields?  Needs investigation, but
 	//  not critical at this time.
-	/**
+    # /**
 	 * Deserializes the Directory
 	 * @param reader {@link PdbByteReader} from which to deserialize the data
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -180,7 +180,7 @@ public class NameTable {
 	// TODO: Reduce code complexity once we know the details for the various cases.  Probably
 	//  should create an abstract map class with derived types for each format we eventually
 	//  find here.
-	/**
+    # /**
 	 * Deserializes Name Table Streams.  An offset-to-string map is created for each stream; each
 	 *  map is placed into a stream-number-to-map map
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -231,7 +231,7 @@ public class NameTable {
 
 	}
 
-	/**
+    # /**
 	 * Dumps the Name Table.  This method is for debugging only.
 	 * @param writer the writer to which to write the dump
 	 * @param monitor the task monitor

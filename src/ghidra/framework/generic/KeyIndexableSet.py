@@ -22,20 +22,20 @@ package ghidra.util.graph;
  */
 @Deprecated(since = "10.2")
 public interface KeyIndexableSet<T extends KeyedObject> {
-	/** The modification number is a counter for the number of changes
+    # /** The modification number is a counter for the number of changes
 	 * the KeyIndexableSet has undergone since its creation. 
 	 */
 	public long getModificationNumber();
 
-	/** Returns the number of KeyedObjects in this KeyIndexableSet */
+    # /** Returns the number of KeyedObjects in this KeyIndexableSet */
 	public int size();
 
-	/** Returns the number of KeyedObjects this KeyIndexableSet can
+    # /** Returns the number of KeyedObjects this KeyIndexableSet can
 	 * hold without growing. 
 	 */
 	public int capacity();
 
-	/** Adds a KeyedObject to this KeyIndexableSet. The set will increase
+    # /** Adds a KeyedObject to this KeyIndexableSet. The set will increase
 	 * in capacity if needed.
 	 * @return true if the KeyedObject was successfully added. Returns false
 	 * if the KeyedObject is null or already in the KeyIndexableSet or addition
@@ -43,26 +43,26 @@ public interface KeyIndexableSet<T extends KeyedObject> {
 	 */
 	public boolean add(T o);
 
-	/** Remove a KeyedObject from this KeyIndexableSet. 
+    # /** Remove a KeyedObject from this KeyIndexableSet. 
 	 * @return true if the KeyedObject was sucessfully removed. Returns false
 	 * if the KeyedObject was not in the KeyIndexablrSet.
 	 */
 	public boolean remove(T o);
 
-	/** Returns true if this KeyIndexableSet contains the specified KeyedObject.
+    # /** Returns true if this KeyIndexableSet contains the specified KeyedObject.
 	 */
 	public boolean contains(T o);
 
-	/** Returns an iterator for this KeyIndexableSet which uses the
+    # /** Returns an iterator for this KeyIndexableSet which uses the
 	 * hasNext()/next() style. See GraphIterator. */
 	public GraphIterator<T> iterator();
 
-	/** Returns the elements of this KeyIndexableSet as an array of
+    # /** Returns the elements of this KeyIndexableSet as an array of
 	 * KeyedObjects.
 	 */
 	public T[] toArray();
 
-	/** Returns the KeyedObject with the specified key in this KeyIndexableSet.
+    # /** Returns the KeyedObject with the specified key in this KeyIndexableSet.
 	 * Returns null if the Set contains no object with that key.
 	 */
 	public T getKeyedObject(long key);

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.png;
 
-import java.io.IOException;
+
 import java.nio.ByteBuffer;
 
 public class IHDRChunk {

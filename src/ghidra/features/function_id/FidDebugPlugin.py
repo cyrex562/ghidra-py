@@ -16,7 +16,7 @@
 package ghidra.feature.fid.plugin;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,7 +111,7 @@ public class FidDebugPlugin extends ProgramPlugin implements ChangeListener {
 		super.dispose();
 	}
 
-	/**
+    # /**
 	 * Method to create the "standard" actions, which users controlling or creating
 	 * FID databases would want to use.
 	 */
@@ -166,7 +166,7 @@ public class FidDebugPlugin extends ProgramPlugin implements ChangeListener {
 		tool.addAction(createRawFileAction);
 	}
 
-	/**
+    # /**
 	 * Creates a raw read-only database file from a packed database.  This file is useful
 	 * for including in a distribution.
 	 */
@@ -198,7 +198,7 @@ public class FidDebugPlugin extends ProgramPlugin implements ChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create the "debug" actions for the FID administrator.  Right now that just means
 	 * search and inspection type commands to display database contents.
 	 */
@@ -278,7 +278,7 @@ public class FidDebugPlugin extends ProgramPlugin implements ChangeListener {
 
 	}
 
-	/**
+    # /**
 	 * Method to properly set action enablement based upon appropriate business logic.
 	 */
 	private void enableActions() {
@@ -286,7 +286,7 @@ public class FidDebugPlugin extends ProgramPlugin implements ChangeListener {
 		createRawFileAction.setEnabled(atLeastOneUserFidDb);
 	}
 
-	/**
+    # /**
 	 * Method to ask a user to select from an array of choices (copied from GhidraScript).
 	 * @param title popup window title
 	 * @param message message to display during choice
@@ -305,7 +305,7 @@ public class FidDebugPlugin extends ProgramPlugin implements ChangeListener {
 		return s;
 	}
 
-	/**
+    # /**
 	 * Class that implements hashing the current function in the listing.
 	 */
 	class HashAction extends ListingContextAction {

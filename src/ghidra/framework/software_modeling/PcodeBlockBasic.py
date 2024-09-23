@@ -1,33 +1,33 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import ghidra.program.model.address.*;
 
 # /**
- * 
- *
- * A basic block constructed from PcodeOps
- */
+# * 
+# *
+# * A basic block constructed from PcodeOps
+# */
 public class PcodeBlockBasic extends PcodeBlock {
 	private ListLinked<PcodeOp> oplist;						// List of PcodeOps making up the basic block
 	private AddressSet cover;								// Addresses of instructions making up the block
@@ -49,7 +49,7 @@ public class PcodeBlockBasic extends PcodeBlock {
 		return cover.getMaxAddress();
 	}
 
-	/**
+    # /**
 	 * Is the given address in the range of instructions represented by this basic block 
 	 * @param addr is the Address
 	 * @return true if the Address is contained
@@ -58,7 +58,7 @@ public class PcodeBlockBasic extends PcodeBlock {
 		return cover.contains(addr);
 	}
 
-	/**
+    # /**
 	 * Insert a new PcodeOp before a specific point in the list of PcodeOps
 	 * @param iter points to the PcodeOp to insert before
 	 * @param op is the new PcodeOp to insert
@@ -70,7 +70,7 @@ public class PcodeBlockBasic extends PcodeBlock {
 		opast.setBasicIter(newiter);
 	}
 
-	/**
+    # /**
 	 * Insert a new PcodeOp after a specific point in the list of PcodeOps
 	 * @param iter points to the PcodeOp to insert after
 	 * @param op is the new PcodeOp to insert
@@ -82,7 +82,7 @@ public class PcodeBlockBasic extends PcodeBlock {
 		opast.setBasicIter(newiter);
 	}
 
-	/**
+    # /**
 	 * Insert a PcodeOp at the end of the block
 	 * @param op is the PcodeOp to insert
 	 */
@@ -93,7 +93,7 @@ public class PcodeBlockBasic extends PcodeBlock {
 		opast.setBasicIter(newiter);
 	}
 
-	/**
+    # /**
 	 * Remove a PcodeOp from the block
 	 * @param op is the PcodeOp to remove
 	 */
@@ -103,7 +103,7 @@ public class PcodeBlockBasic extends PcodeBlock {
 		oplist.remove(op.getBasicIter());
 	}
 
-	/**
+    # /**
 	 * @return an iterator over the PcodeOps in this basic block
 	 */
 	public Iterator<PcodeOp> getIterator() {
@@ -145,14 +145,14 @@ public class PcodeBlockBasic extends PcodeBlock {
 		decoder.closeElement(rangelistel);
 	}
 
-	/**
+    # /**
 	 * @return the first PcodeOp in this block (or null if the block is empty)
 	 */
 	public PcodeOp getFirstOp() {
 		return oplist.first();
 	}
 
-	/**
+    # /**
 	 * @return the last PcodeOp in this block (or null if the block is empty)
 	 */
 	public PcodeOp getLastOp() {

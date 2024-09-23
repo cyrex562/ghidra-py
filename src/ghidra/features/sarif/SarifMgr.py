@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -103,7 +103,7 @@ public abstract class SarifMgr {
 		}
 	}
 
-	/**
+    # /**
 	 * Read results from an SARIF file.
 	 * 
 	 * @param result       parsed SARIF results

@@ -17,7 +17,7 @@ package ghidra.file.formats.ext4;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.BitSet;
@@ -234,7 +234,7 @@ public class Ext4FileSystem extends AbstractFileSystem<Ext4File> {
 		return inode;
 	}
 
-	/**
+    # /**
 	 * Returns a {@link ByteProvider} that supplies the bytes of the requested file.
 	 * 
 	 * @param file {@link GFile} to get

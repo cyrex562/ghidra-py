@@ -105,7 +105,7 @@ public class ObjectIntHashtable<T> {
         indexer.clear();
     }
 
-	/**
+    # /**
 	 * Return true if the given key is in the hashtable.
 	 * @param key the key whose presence in this map is to be tested.
 	 */

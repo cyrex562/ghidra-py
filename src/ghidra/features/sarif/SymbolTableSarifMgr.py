@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -62,7 +62,7 @@ public class SymbolTableSarifMgr extends SarifMgr {
 	// SARIF READ CURRENT DTD //
 	////////////////////////////
 
-	/**
+    # /**
 	 * Process the symbol table section of the SARIF file.
 	 */
 	@Override
@@ -148,7 +148,7 @@ public class SymbolTableSarifMgr extends SarifMgr {
 	// SARIF WRITE CURRENT DTD //
 	/////////////////////////////
 
-	/**
+    # /**
 	 * Write out the SARIF for the symbol table.
 	 * 
 	 * @param results writer for SARIF

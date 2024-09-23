@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.archive;
 
-import java.io.*;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.jar.JarEntry;

@@ -22,7 +22,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 import db.*;
 
@@ -36,7 +36,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 	private Table dataTable;
 	private AddressMap addrMap;
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 */
@@ -57,7 +57,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecordAtOrAfter(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -66,7 +66,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return it.next();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecordAtOrBefore(long)
 	 */
 	@Override
@@ -75,7 +75,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return it.previous();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecordAfter(long)
 	 */
 	@Override
@@ -84,7 +84,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return it.next();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecord(long)
 	 */
 	@Override
@@ -92,7 +92,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return dataTable.getRecord(addrMap.getKey(addr, false));
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecord(long)
 	 */
 	@Override
@@ -100,7 +100,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return dataTable.getRecord(key);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecordBefore(long)
 	 */
 	@Override
@@ -109,7 +109,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return it.previous();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecords(long)
 	 */
 	@Override
@@ -117,7 +117,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return new AddressKeyRecordIterator(dataTable, addrMap, addr, forward);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.MoveRangeAdapter#getRecords(long, long, boolean)
 	 */
 	@Override
@@ -129,7 +129,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return new AddressKeyRecordIterator(dataTable, addrMap, start, end, end, false);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecords(ghidra.program.model.address.AddressSetView, boolean)
 	 */
 	@Override
@@ -138,7 +138,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 				: set.getMaxAddress(), forward);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#removeData(long)
 	 */
 	@Override
@@ -146,7 +146,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		dataTable.deleteRecord(key);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#createData(long, long)
 	 */
 	@Override
@@ -158,7 +158,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return record;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#removeData(long, long)
 	 */
 	@Override
@@ -166,7 +166,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return AddressRecordDeleter.deleteRecords(dataTable, addrMap, start, end);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecordCount()
 	 */
 	@Override
@@ -174,7 +174,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return dataTable.getRecordCount();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getKeys(long, long)
 	 */
 	@Override
@@ -185,7 +185,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return new AddressKeyIterator(dataTable, addrMap, start, end, end, false);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getKeys(ghidra.program.model.address.AddressSetView, boolean)
 	 */
 	@Override
@@ -196,7 +196,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return new AddressKeyIterator(dataTable, addrMap, set, set.getMaxAddress(), false);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.MoveRangeAdapter#putRecord(ghidra.framework.store.db.DBRecord)
 	 */
 	@Override
@@ -204,7 +204,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		dataTable.putRecord(record);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#getRecords()
 	 */
 	@Override
@@ -212,7 +212,7 @@ class DataDBAdapterV0 extends DataDBAdapter {
 		return new AddressKeyRecordIterator(dataTable, addrMap);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.DataDBAdapter#moveAddressRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address, long, ghidra.util.task.TaskMonitor)
 	 */
 	@Override

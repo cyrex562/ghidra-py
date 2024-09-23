@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
@@ -30,7 +30,7 @@ public class Ext4ExtentHeader implements StructConverter {
 	private short eh_depth;
 	private int eh_generation;
 	
-	/**
+    # /**
 	 * Read a Ext4ExtentHeader from the stream.
 	 * 
 	 * @param reader BinaryReader to read from

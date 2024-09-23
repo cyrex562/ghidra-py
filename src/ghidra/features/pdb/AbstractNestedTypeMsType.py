@@ -28,7 +28,7 @@ public abstract class AbstractNestedTypeMsType extends AbstractMsType implements
 	protected RecordNumber nestedTypeDefinitionRecordNumber;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -37,7 +37,7 @@ public abstract class AbstractNestedTypeMsType extends AbstractMsType implements
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Returns the name of this nested type.
 	 * @return Name of the nested type.
 	 */
@@ -46,7 +46,7 @@ public abstract class AbstractNestedTypeMsType extends AbstractMsType implements
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the Nested Type Definition.
 	 * @return RecordNumber of the Nested Type Definition.
 	 */

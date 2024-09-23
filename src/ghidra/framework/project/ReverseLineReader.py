@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.logviewer.model;
 
-import java.io.*;
+
 
 # /**
  * 
@@ -34,7 +34,7 @@ public class ReverseLineReader {
 	private ByteArrayOutputStream baos = new ByteArrayOutputStream();
 	public RandomAccessFile raf;
 
-	/**
+    # /**
 	 * 
 	 * @param encoding
 	 * @param raf
@@ -45,7 +45,7 @@ public class ReverseLineReader {
 		this.encoding = encoding;
 	}
 
-	/**
+    # /**
 	 * Moves the file pointer to the given byte location.
 	 * 
 	 * @param position
@@ -61,7 +61,7 @@ public class ReverseLineReader {
 	}
 
 	
-	/**
+    # /**
 	 * Reads a single line from the current file pointer position, in reverse.  To do this we do
 	 * the following:
 	 * 
@@ -127,11 +127,11 @@ public class ReverseLineReader {
 		return null;
 	}
 
-	/*********************************************************************************
+    # /*********************************************************************************
 	 * PRIVATE METHODS
 	 *********************************************************************************/
 
-	/**
+    # /**
 	 * Converts the contents of the output stream to a string.
 	 * 
 	 * @return

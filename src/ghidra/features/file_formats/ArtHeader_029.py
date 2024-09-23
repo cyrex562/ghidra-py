@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.headers;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.art.*;
@@ -110,7 +110,7 @@ public class ArtHeader_029 extends ArtHeader implements ArtCompression {
 		return image_size_;
 	}
 
-	/**
+    # /**
 	 * Boot oat begin and end (app image headers only).
 	 * @return the boot oat begin address
 	 */
@@ -118,7 +118,7 @@ public class ArtHeader_029 extends ArtHeader implements ArtCompression {
 		return boot_oat_begin_;
 	}
 
-	/**
+    # /**
 	 * Boot oat begin and end (app image headers only).
 	 * @return the boot oat size
 	 */
@@ -146,7 +146,7 @@ public class ArtHeader_029 extends ArtHeader implements ArtCompression {
 		return oat_data_end_;
 	}
 
-	/**
+    # /**
 	 * Boolean (0 or 1) to denote if the image can be mapped at a random address, 
 	 * this only refers to the .art file. 
 	 * Currently, app oat files do not depend on their app image. 
@@ -182,7 +182,7 @@ public class ArtHeader_029 extends ArtHeader implements ArtCompression {
 		return image_size_;
 	}
 
-	/**
+    # /**
 	 * Checksum of the oat file we link to for load time sanity check.
 	 */
 	@Override

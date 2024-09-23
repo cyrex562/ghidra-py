@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.VariableStorage;

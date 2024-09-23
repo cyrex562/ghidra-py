@@ -20,7 +20,7 @@
 import ghidra.app.script.GhidraScript;
 import ghidra.util.Conv;
 
-import java.io.*;
+
 
 
 public class BinaryToAsciiScript extends GhidraScript {

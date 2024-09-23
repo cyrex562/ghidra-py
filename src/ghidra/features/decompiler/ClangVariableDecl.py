@@ -34,14 +34,14 @@ public class ClangVariableDecl extends ClangTokenGroup {
 		symbol = null;
 	}
 
-	/**
+    # /**
 	 * @return the data-type of the variable being declared
 	 */
 	public DataType getDataType() {
 		return datatype;
 	}
 
-	/**
+    # /**
 	 * @return the HighVariable (collection of Varnodes) associated with the variable
 	 */
 	public HighVariable getHighVariable() {
@@ -51,7 +51,7 @@ public class ClangVariableDecl extends ClangTokenGroup {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return the symbol defined by this variable declaration
 	 */
 	public HighSymbol getHighSymbol() {

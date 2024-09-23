@@ -25,20 +25,20 @@ import ghidra.program.model.listing.Function;
  */
 interface FcgData {
 
-	/**
+    # /**
 	 * The function of this data
 	 * @return the function
 	 */
 	Function getFunction();
 
-	/**
+    # /**
 	 * The graph of this data
 	 * 
 	 * @return the graph
 	 */
 	FunctionCallGraph getGraph();
 
-	/**
+    # /**
 	 * Returns the cache of {@link Function} edges.  These edges are not in the graph, but 
 	 * rather are simple edges that represent a link between two functions.  This is used to 
 	 * track existing edges that are not yet in the graph, which may be added later as the
@@ -48,30 +48,30 @@ interface FcgData {
 	 */
 	FunctionEdgeCache getFunctionEdgeCache();
 
-	/**
+    # /**
 	 * True if this data has a valid function
 	 * @return true if this data has a valid function
 	 */
 	boolean hasResults();
 
-	/**
+    # /**
 	 * False if the graph in this data has not yet been loaded
 	 * @return false if the graph in this data has not yet been loaded
 	 */
 	boolean isInitialized();
 
-	/**
+    # /**
 	 * Dispose the contents of this data
 	 */
 	void dispose();
 
-	/**
+    # /**
 	 * Returns the view's graph perspective.  This is used by the view to restore itself.
 	 * @return the view's graph perspective
 	 */
 	GraphPerspectiveInfo<FcgVertex, FcgEdge> getGraphPerspective();
 
-	/**
+    # /**
 	 * Sets the view information for this graph data.  This will be later used by the view
 	 * to restore itself.
 	 * 
@@ -79,7 +79,7 @@ interface FcgData {
 	 */
 	void setGraphPerspective(GraphPerspectiveInfo<FcgVertex, FcgEdge> info);
 
-	/**
+    # /**
 	 * Returns true if this data's function is equal to the given function
 	 *  
 	 * @param f the function to test

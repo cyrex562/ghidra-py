@@ -38,7 +38,7 @@ public class ApplicationIdentifier {
 	private ApplicationVersion applicationVersion;
 	private String applicationReleaseName;
 
-	/**
+    # /**
 	 * Creates a new {@link ApplicationIdentifier} object from an {@link ApplicationProperties}.
 	 * 
 	 * @param applicationProperties An {@link ApplicationProperties}.
@@ -63,7 +63,7 @@ public class ApplicationIdentifier {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new {@link ApplicationIdentifier} object from the given string.
 	 * 
 	 * @param identifier An identifier string.
@@ -74,7 +74,7 @@ public class ApplicationIdentifier {
 		parse(identifier);
 	}
 
-	/**
+    # /**
 	 * Gets the application name.
 	 * 
 	 * @return The application name.
@@ -83,7 +83,7 @@ public class ApplicationIdentifier {
 		return applicationName;
 	}
 
-	/**
+    # /**
 	 * Gets the {@link ApplicationVersion application version}.
 	 * 
 	 * @return The {@link ApplicationVersion application version}.
@@ -92,7 +92,7 @@ public class ApplicationIdentifier {
 		return applicationVersion;
 	}
 
-	/**
+    # /**
 	 * Gets the application release name.
 	 * 
 	 * @return The application release name.
@@ -136,7 +136,7 @@ public class ApplicationIdentifier {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Parses application identifier components out of the given version string.
 	 * 
 	 * @param identifier An identifier string.

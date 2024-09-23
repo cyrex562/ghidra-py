@@ -15,7 +15,7 @@
  */
 package ghidra.pty.linux;
 
-import java.io.IOException;
+
 
 import ghidra.pty.Pty;
 import ghidra.pty.PtyFactory;

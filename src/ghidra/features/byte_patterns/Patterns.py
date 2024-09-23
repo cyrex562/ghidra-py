@@ -16,7 +16,7 @@
 package ghidra.app.analyzers;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,7 +61,7 @@ public class Patterns {
 		return !decisionsSet.isEmpty();
 	}
 	
-	/**
+    # /**
 	 * Find any pattern files associated with this program
 	 * @param program find pattern files associated with this program
 	 * @param decisionTree decision tree parsed from getPatternDecisionTree

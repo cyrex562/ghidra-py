@@ -17,7 +17,7 @@
 package org.apache.lucene.analysis;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 
 import org.apache.lucene.util.AttributeFactory;
 import org.apache.lucene.util.AttributeSource;

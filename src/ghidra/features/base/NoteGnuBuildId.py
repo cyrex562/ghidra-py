@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.elf.info;
 
 import static ghidra.app.util.bin.StructConverter.BYTE;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.*;
 import ghidra.program.model.listing.Program;

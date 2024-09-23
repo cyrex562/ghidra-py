@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api.main;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Set;
 
@@ -30,13 +30,13 @@ import ghidra.program.model.listing.Program;
  */
 public interface VTSession extends ErrorHandler, DomainObject {
 
-	/**
+    # /**
 	 * Returns the AssociationManager.
 	 * @return the AssociationManager.
 	 */
 	public VTAssociationManager getAssociationManager();
 
-	/**
+    # /**
 	 * Creates a new VTMatchSet that will contain all the matches discovered by some
 	 * ProgramCorrletor algorithm run.
 	 * @param correlator the VTProgramCorrelator used to generate this set of matches that will
@@ -45,96 +45,96 @@ public interface VTSession extends ErrorHandler, DomainObject {
 	 */
 	public VTMatchSet createMatchSet(VTProgramCorrelator correlator);
 
-	/**
+    # /**
 	 * Returns a list of all VTMatchSets contained in this VTSession
 	 * @return a list of all VTMatchSets contained in this VTSession
 	 */
 	public List<VTMatchSet> getMatchSets();
 
-	/**
+    # /**
 	 * Returns the source program associated with this VTSession.
 	 * @return the source program associated with this VTSession.
 	 */
 	public Program getSourceProgram();
 
-	/**
+    # /**
 	 * Returns the destination program associated with this VTSession.
 	 * @return the destination program associated with this VTSession.
 	 */
 	public Program getDestinationProgram();
 
-	/**
+    # /**
 	 * Returns the name of this VTSession
 	 * @return the name of this VTSession
 	 */
 	@Override
 	public String getName();
 
-	/**
+    # /**
 	 * Saves this VTSession.
 	 * @throws IOException if there is an exception saving
 	 */
 	public void save() throws IOException;
 
-	/**
+    # /**
 	 * Adds a DomainObjectListener to this VTSession.
 	 * @param domainObjectListener the listener to add.
 	 */
 	@Override
 	public void addListener(DomainObjectListener domainObjectListener);
 
-	/**
+    # /**
 	 * Removes a DomainObjectListener from this VTSession.
 	 * @param domainObjectListener the listener to remove.
 	 */
 	@Override
 	public void removeListener(DomainObjectListener domainObjectListener);
 
-	/**
+    # /**
 	 * Creates a new match tag with the given name.
 	 * @param name the name of the new tag to create.
 	 * @return the new VTMatchTag object.
 	 */
 	public VTMatchTag createMatchTag(String name);
 
-	/**
+    # /**
 	 * Deletes the given VTMatchTag from this session.
 	 * @param tag the VTMatchTag to delete.
 	 */
 	public void deleteMatchTag(VTMatchTag tag);
 
-	/**
+    # /**
 	 * Returns a set of all VTMatchTags in this session.
 	 * @return a set of all VTMatchTags in this session.
 	 */
 	public Set<VTMatchTag> getMatchTags();
 
-	/**
+    # /**
 	 * Returns the built-in VTMatchSet used to store manually created VTMatches.
 	 * @return the built-in VTMatchSet used to store manually created VTMatches.
 	 */
 	public VTMatchSet getManualMatchSet();
 
-	/**
+    # /**
 	 * Returns the built-in VTMatchSet used to store implied VTMatches.
 	 * @return the built-in VTMatchSet used to store implied VTMatches.
 	 */
 	public VTMatchSet getImpliedMatchSet();
 
-	/**
+    # /**
 	 * Returns a list of all VTMatches for the given association.
 	 * @param association the VTAssociation for which to retrieve all VTMatches.
 	 * @return a list of all VTMatches for the given association.
 	 */
 	public List<VTMatch> getMatches(VTAssociation association);
 
-	/**
+    # /**
 	 * Adds an Association hook that will be called whenever an association is accepted or cleared.
 	 * @param hook the callback hook.
 	 */
 	public void addAssociationHook(AssociationHook hook);
 
-	/**
+    # /**
 	 * Removes the given Association hook.
 	 * @param hook the callback hook to remove.
 	 */

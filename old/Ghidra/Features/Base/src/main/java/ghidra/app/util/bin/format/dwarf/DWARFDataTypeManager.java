@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf;
 
 import static ghidra.app.util.bin.format.dwarf.attribs.DWARFAttribute.*;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

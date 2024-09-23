@@ -16,7 +16,7 @@
 package ghidra.trace.database.bookmark;
 
 import java.awt.Color;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;

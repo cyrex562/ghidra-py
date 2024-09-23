@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.bookmark;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -62,7 +62,7 @@ abstract class BookmarkTypeDBAdapter {
 		return new BookmarkTypeDBAdapterV0(dbHandle, true);
 	}
 
-	/**
+    # /**
 	 * Allocate a new bookmark type
 	 * @param typeId type id
 	 * @param type type string
@@ -72,7 +72,7 @@ abstract class BookmarkTypeDBAdapter {
 		throw new UnsupportedOperationException("Bookmarks are read-only and may not be added");
 	}
 
-	/**
+    # /**
 	 * Delete a bookmark type
 	 * @param typeId type ID
 	 * @throws IOException
@@ -81,7 +81,7 @@ abstract class BookmarkTypeDBAdapter {
 		throw new UnsupportedOperationException("Bookmarks are read-only and may not be deleted");
 	}
 
-	/**
+    # /**
 	 * Get all bookmark type records.
 	 * @return array of records
 	 * @throws IOException

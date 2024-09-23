@@ -23,7 +23,7 @@ import ghidra.util.BigEndianDataConverter;
  * <p>  
  * Block indexes are absolute where 0 corresponds
  * to the head block in the BufferFile.  It is important to note that 
- * this number is off by 1 from DataBuffer numbering and the index values
+ * this number is off by 1 from ghidra.framework.db.data_buffer numbering and the index values
  * utilized by {@link BufferFile#getIndexCount()}, {@link BufferFile#get(DataBuffer, int)},
  * {@link BufferFile#put(DataBuffer, int)}, etc..  It is important for
  * each implementation to normalize to absolute block indexes.

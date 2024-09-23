@@ -15,7 +15,7 @@
  */
 package ghidra.net;
 
-import java.io.*;
+
 import java.security.*;
 import java.security.cert.*;
 import java.security.cert.Certificate;

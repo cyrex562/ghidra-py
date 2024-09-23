@@ -122,7 +122,7 @@ public class SH4AddressAnalyzer extends ConstantPropagationAnalyzer {
 		return resultSet;
 	}
 
-	/**
+    # /**
 	 * Check if this is a computed relative branch that needs the reference placed on the correct operand.
 	 * 
 	 * @param program program

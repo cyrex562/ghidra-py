@@ -47,7 +47,7 @@ public class DecompilerScriptUtils {
 		decompInterface = setupDecompilerInterface();
 	}
 
-	/**
+    # /**
 	 * Method to setup the decompiler interface for the given program
 	 * @return the interface to the decompiler or null if failed to open program
 	 */
@@ -75,7 +75,7 @@ public class DecompilerScriptUtils {
 		return decompInterface;
 	}
 
-	/**
+    # /**
 	 * Method to decompile the given function and return the function's HighFunction
 	 * @param function the given function
 	 * @return the HighFunction for the given function or null if there are issues decompiling the function
@@ -89,7 +89,7 @@ public class DecompilerScriptUtils {
 		return res.getHighFunction();
 	}
 
-	/**
+    # /**
 	 * Method to get the decompiler version of the given function's return type (which is not always 
 	 * the same as the listing version)
 	 * @param function the given function
@@ -134,7 +134,7 @@ public class DecompilerScriptUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the function signature string from the decompiler function prototype. NOTE:
 	 * if there is a this param, it will not be included.
 	 * @param function the given function
@@ -198,7 +198,7 @@ public class DecompilerScriptUtils {
 		return stringBuffer.toString();
 	}
 
-	/**
+    # /**
 	 * Get the parameters from the decompiler for the given function
 	 * @param function the given function
 	 * @return the decompiler parameters for the given function
@@ -215,7 +215,7 @@ public class DecompilerScriptUtils {
 		return decompRes.getHighFunction().getFunctionPrototype().getParameterDefinitions();
 	}
 
-	/**
+    # /**
 	 * Method to dispose the decompiler interface
 	 */
 	public void disposeDecompilerInterface() {
@@ -261,7 +261,7 @@ public class DecompilerScriptUtils {
 		return possibleAddress;
 	}
 
-	/**
+    # /**
 	 * Method to get the called address from the given CALL pcodeOp's input Varnode 
 	 * @param pcodeOpInput the Varnode from a CALL pcodeOp input
 	 * @return the calledAddress
@@ -290,7 +290,7 @@ public class DecompilerScriptUtils {
 		return calledAddress;
 	}
 
-	/**
+    # /**
 	 * Returns a new address with the specified offset in the default address space.
 	 * @param offset the offset for the new address
 	 * @return a new address with the specified offset in the default address space

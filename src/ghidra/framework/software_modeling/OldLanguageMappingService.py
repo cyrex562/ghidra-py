@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.framework.PluggableServiceRegistry;
@@ -25,7 +25,7 @@ public class OldLanguageMappingService {
 			new OldLanguageMappingService());
 	}
 
-	/**
+    # /**
 	 * Check for a mapping of an old language-name magicString to a LanguageID/CompilerSpec pair.
 	 * If returnLanguageReplacement is false, the returned LanguageID/CompilerSpec pair may no 
 	 * longer exist and may require use of an OldLanguage and translation process.
@@ -69,7 +69,7 @@ public class OldLanguageMappingService {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Parse the language string from an XML language name into the most appropriate LanguageID/CompilerSpec pair.
 	 * The language name may either be an old name (i.e., magicString) or a new {@code <language-id>:<compiler-spec-id>} string.
 	 * If an old language name magic-string is provided, its replacement language will be returned if known.

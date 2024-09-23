@@ -42,7 +42,7 @@ public class SQLEffects {
 	// Collection of SQL string pieces holding a join expression or the final function tag expression
 	private List<String> linkClauses = new ArrayList<String>();
 
-//	/**
+//    # /**
 //	 * Container for final SQL string sections;
 //	 *
 //	 */
@@ -66,7 +66,7 @@ public class SQLEffects {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate the string pieces of the WHERE clause, based on the FilterAtoms within the general filter,
 	 * sort them into the wherelist container
 	 * @param exefilter is the general filter
@@ -97,7 +97,7 @@ public class SQLEffects {
 		}
 	}
 
-	/**
+    # /**
 	 * Given our sorted container of string pieces, combine them into a single SQL where clause,
 	 * connecting them appropriately with 'AND' and 'OR' keywords and parentheses.
 	 * @return the final where String
@@ -155,7 +155,7 @@ public class SQLEffects {
 		list.add(val);
 	}
 
-	/**
+    # /**
 	 * Given a general ExecutableFilter object, return a set of matching SQL string pieces,
 	 * ready to be pasted into the full SQL statement.  The routine is handed an array of IDResolution references
 	 * matching individual FilterAtoms as returned by ExecutableFilter.getAtom(i).  The IDResolution, if non-null,

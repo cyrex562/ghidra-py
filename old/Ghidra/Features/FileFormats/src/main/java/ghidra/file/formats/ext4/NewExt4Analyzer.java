@@ -17,7 +17,7 @@ package ghidra.file.formats.ext4;
 
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.cmd.comments.SetCommentCmd;
 import ghidra.app.plugin.core.analysis.AutoAnalysisManager;

@@ -15,7 +15,7 @@
  */
 package org.elasticsearch.plugin.analysis.lsh;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.elasticsearch.common.settings.Settings;

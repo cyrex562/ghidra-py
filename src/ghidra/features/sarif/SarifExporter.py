@@ -16,7 +16,7 @@
 package sarif.export;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.util.DomainObjectService;
@@ -40,7 +40,7 @@ import sarif.managers.ProgramSarifMgr;
 public class SarifExporter extends Exporter {
 	private SarifProgramOptions options = new SarifProgramOptions();
 
-	/**
+    # /**
 	 * Constructs a new SARIF exporter.
 	 */
 	public SarifExporter() {

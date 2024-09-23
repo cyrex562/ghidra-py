@@ -36,12 +36,12 @@ public class BSimH2FileDBConnectionManager {
 	private static final int CONN_POOL_SIZE = 1;
 	private static final int CONN_POOL_MAX_IDLE = 2;
 
-	/**
+    # /**
 	 * Data source map keyed by absolute DB file path
 	 */
 	private static HashMap<BSimServerInfo, BSimH2FileDataSource> dataSourceMap = new HashMap<>();
 
-	/**
+    # /**
 	 * Get all H2 File DB data sorces which exist in the JVM.
 	 * @return all H2 File DB data sorces
 	 */
@@ -50,7 +50,7 @@ public class BSimH2FileDBConnectionManager {
 		return Collections.unmodifiableCollection(new ArrayList<>(dataSourceMap.values()));
 	}
 
-	/**
+    # /**
 	 * Get an existing or new H2 File DB data source for the specified H2 File
 	 * specified by {@code fileServerInfo}.
 	 * @param fileServerInfo H2 File DB info
@@ -71,7 +71,7 @@ public class BSimH2FileDBConnectionManager {
 		return getDataSource(new BSimServerInfo(h2FileUrl));
 	}
 
-	/**
+    # /**
 	 * Get the existing H2 File DB data source for the specified BSim DB server info.
 	 * This may return null if the H2 File DB exists but a 
 	 * {@link #getDataSource(BSimServerInfo) data source}
@@ -102,7 +102,7 @@ public class BSimH2FileDBConnectionManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * {@link BSimH2FileDataSource} provides a pooled DB data source for a specific H2 File DB. 
 	 */
 	public static class BSimH2FileDataSource implements BSimJDBCDataSource {
@@ -129,7 +129,7 @@ public class BSimH2FileDBConnectionManager {
 			BSimH2FileDBConnectionManager.remove(serverInfo, true);
 		}
 
-		/**
+	    # /**
 		 * Delete the database files associated with this H2 File DB.  This will fail immediately 
 		 * if active connections exist.  Otherwise removal will be attempted and this data source 
 		 * will no longer be valid.
@@ -166,7 +166,7 @@ public class BSimH2FileDBConnectionManager {
 			return false;
 		}
 
-		/**
+	    # /**
 		 * Determine if the stored DB file exists.
 		 * @return true if the stored DB file exists
 		 */
@@ -248,7 +248,7 @@ public class BSimH2FileDBConnectionManager {
 			// bds.setAbandonedUsageTracking(true);
 		}
 
-		/**
+	    # /**
 		 * Get a connection to the H2 file database.
 		 * It is important to note that if the database does not exist and empty one will
 		 * be created.  The {@link #exists()} method should be used to check for the database
@@ -286,7 +286,7 @@ public class BSimH2FileDBConnectionManager {
 			return bds.getUrl().hashCode();
 		}
 
-		/**
+	    # /**
 		 * Establish H2 File DB {@link Connection} performing any required authentication. 
 		 * @throws SQLException if connection or authentication error occurs 
 		 */

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
 import ghidra.docking.settings.Settings;
@@ -20,21 +20,21 @@ import ghidra.program.model.address.*;
 import ghidra.program.model.data.*;
 
 # /**
- * <code>PointerTypeDefInspector</code> provides utilities for inspecting {@link Pointer} - {@link TypeDef}s.  
- * These special typedefs allow a modified-pointer datatype to be used for special situations where
- * a simple pointer will not suffice and special stored pointer interpretation/handling is required.  
- * <br>
- * The various {@link Pointer} modifiers on the associated {@link TypeDef} are achieved through the use of various
- * {@link TypeDefSettingsDefinition}.  The {@link PointerTypedefBuilder} may be used to simplify the creation
- * of these pointer-typedefs.
- */
+# * <code>PointerTypeDefInspector</code> provides utilities for inspecting {@link Pointer} - {@link TypeDef}s.  
+# * These special typedefs allow a modified-pointer datatype to be used for special situations where
+# * a simple pointer will not suffice and special stored pointer interpretation/handling is required.  
+# * <br>
+# * The various {@link Pointer} modifiers on the associated {@link TypeDef} are achieved through the use of various
+# * {@link TypeDefSettingsDefinition}.  The {@link PointerTypedefBuilder} may be used to simplify the creation
+# * of these pointer-typedefs.
+# */
 public class PointerTypedefInspector {
 
 	private PointerTypedefInspector() {
 		// no construct static utility class
 	}
 
-	/**
+    # /**
 	 * Determine the component-offset for the specified pointerTypeDef based upon
 	 * its default settings.
 	 * @param pointerTypeDef Pointer TypeDef
@@ -47,7 +47,7 @@ public class PointerTypedefInspector {
 				: 0;
 	}
 
-	/**
+    # /**
 	 * Determine the referenced address space for specified pointerTypeDef based upon
 	 * its default settings.
 	 * @param pointerTypeDef Pointer TypeDef
@@ -77,7 +77,7 @@ public class PointerTypedefInspector {
 		return choice == PointerType.DEFAULT ? addressSpace : null;
 	}
 
-	/**
+    # /**
 	 * Determine if the specified pointerTypeDef has a pointer bit-shift specified.
 	 * @param pointerTypeDef Pointer TypeDef
 	 * @return true if non-zero bit-shift setting exists, else false
@@ -88,7 +88,7 @@ public class PointerTypedefInspector {
 				: false;
 	}
 
-	/**
+    # /**
 	 * Determine the pointer bit-shift for the specified pointerTypeDef based upon
 	 * its default settings. A right-shift is specified by a positive value while
 	 * a left-shift is specified by a negative value.
@@ -102,7 +102,7 @@ public class PointerTypedefInspector {
 				: 0;
 	}
 
-	/**
+    # /**
 	 * Determine if the specified pointerTypeDef has a pointer bit-mask specified.
 	 * @param pointerTypeDef Pointer TypeDef
 	 * @return true if a bit-mask setting exists, else false
@@ -113,7 +113,7 @@ public class PointerTypedefInspector {
 				: false;
 	}
 
-	/**
+    # /**
 	 * Determine the pointer bit-mask for the specified pointerTypeDef based upon
 	 * its default settings. If specified, bit-mask will be AND-ed with stored 
 	 * offset prior to any specified bit-shift.
@@ -126,7 +126,7 @@ public class PointerTypedefInspector {
 				: 0;
 	}
 
-	/**
+    # /**
 	 * Get the pointer type (see {@link PointerType}).
 	 * @param pointerTypeDef Pointer TypeDef
 	 * @return pointer type or null if not a pointer

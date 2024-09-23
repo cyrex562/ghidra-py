@@ -29,7 +29,7 @@ public abstract class AbstractCobol0MsType extends AbstractMsType {
 	// TODO: This is made up data.  API and examples are unknown.
 	protected byte[] data;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -43,7 +43,7 @@ public abstract class AbstractCobol0MsType extends AbstractMsType {
 		data = reader.parseBytesRemaining();
 	}
 
-	/**
+    # /**
 	 * Returns the record number type that is pointed to.
 	 * @return record number of type that is pointed to by this pointer.
 	 */
@@ -51,7 +51,7 @@ public abstract class AbstractCobol0MsType extends AbstractMsType {
 		return parentRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the type that is pointed to.
 	 * @return {@link AbstractMsType} type that is pointed to by this pointer.
 	 */

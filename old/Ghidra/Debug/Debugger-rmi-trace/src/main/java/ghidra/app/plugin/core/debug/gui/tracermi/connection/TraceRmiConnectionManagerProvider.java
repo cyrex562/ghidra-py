@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.debug.gui.tracermi.connection;
 import java.awt.AWTEvent;
 import java.awt.BorderLayout;
 import java.awt.event.*;
-import java.io.IOException;
+
 import java.net.InetSocketAddress;
 import java.util.List;
 import java.util.Map;

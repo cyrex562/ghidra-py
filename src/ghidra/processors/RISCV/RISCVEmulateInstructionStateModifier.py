@@ -28,7 +28,7 @@ public class RISCVEmulateInstructionStateModifier extends EmulateInstructionStat
 		super(emu);
 	}
 
-	/**
+    # /**
 	 * Emulation callback immediately before the first instruction is executed.
 	 * This callback permits any language specific initializations to be performed.
 	 * @param emulate
@@ -41,7 +41,7 @@ public class RISCVEmulateInstructionStateModifier extends EmulateInstructionStat
 		// no default implementation
 	}
 
-	/**
+    # /**
 	 * Emulation callback immediately following execution of the lastExecuteAddress.
 	 * One use of this callback is to modify the flowing/future context state.
 	 * @param emulate

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.external;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.lang3.StringUtils;

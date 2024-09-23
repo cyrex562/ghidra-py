@@ -21,7 +21,7 @@ package ghidra.framework.main;
  */
 public interface ConsoleListener {
 	
-	/**
+    # /**
 	 * Output the message to the console.
 	 * @param message to output
 	 * @param isError true if this is an error message

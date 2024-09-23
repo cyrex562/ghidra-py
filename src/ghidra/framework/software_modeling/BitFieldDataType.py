@@ -52,7 +52,7 @@ public class BitFieldDataType extends AbstractDataType {
 
 	protected Settings defaultSettings;
 
-	/**
+    # /**
 	 * Construct a bit-field type based upon a specified base type.  The baseDataType will
 	 * take precedence if specified.  Either baseType or baseDatatype must be specified.
 	 * @param baseDataType base data type (integer/enum type or typedef to same).  This
@@ -82,7 +82,7 @@ public class BitFieldDataType extends AbstractDataType {
 		this.defaultSettings = this.baseDataType.getDefaultSettings();
 	}
 
-	/**
+    # /**
 	 * Construct a bit-field type based upon a supported baseDataType.
 	 * @param baseDataType a supported primitive integer data type or TypeDef to such a type.
 	 * The baseType must already be cloned to the target datatype manager.
@@ -98,7 +98,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return bitSize == 0;
 	}
 
-	/**
+    # /**
 	 * Get the effective bit-size based upon the specified base type size.  A bit size
 	 * larger than the base type size will truncated to the base type size.
 	 * @param declaredBitSize
@@ -109,7 +109,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return Math.min(8 * baseTypeByteSize, declaredBitSize);
 	}
 
-	/**
+    # /**
 	 * Get the minimum storage size in bytes for a given size in bits.
 	 * This does not consider the bit offset which may increase the required 
 	 * storage.
@@ -120,7 +120,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return getMinimumStorageSize(bitSize, 0);
 	}
 
-	/**
+    # /**
 	 * Get the minimum storage size in bytes for a given size in bits with 
 	 * the specified bitOffset (lsb position within big endian storage)
 	 * @param bitSize number of bits within bitfield
@@ -134,7 +134,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return (bitSize + (bitOffset % 8) + 7) / 8;
 	}
 
-	/**
+    # /**
 	 * Check a bitfield base datatype
 	 * @param baseDataType bitfield base data type (Enum, AbstractIntegerDataType and derived TypeDefs permitted)
 	 * @throws InvalidDataTypeException if baseDataType is invalid as a bitfield base type.
@@ -146,7 +146,7 @@ public class BitFieldDataType extends AbstractDataType {
 		}
 	}
 
-	/**
+    # /**
 	 * Check if a specified baseDataType is valid for use with a bitfield
 	 * @param baseDataType bitfield base data type (Enum, AbstractIntegerDataType and derived TypeDefs permitted)
 	 * @return true if baseDataType is valid else false
@@ -171,7 +171,7 @@ public class BitFieldDataType extends AbstractDataType {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the size of the base data type based upon the associated data organization.
 	 * @return base type size
 	 */
@@ -179,7 +179,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return baseDataType.getLength();
 	}
 
-	/**
+    # /**
 	 * Get the packing storage size in bytes associated with this bit-field which may be
 	 * larger than the base type associated with the fields original definition.
 	 * Returned value is the same as {@link #getLength()}.
@@ -189,7 +189,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return storageSize;
 	}
 
-	/**
+    # /**
 	 * Get the effective bit size of this bit-field which may not exceed the size of the
 	 * base datatype.
 	 * @return bit size
@@ -198,7 +198,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return effectiveBitSize;
 	}
 
-	/**
+    # /**
 	 * Get the declared bit size of this bit-field which may be larger than the effective
 	 * size which could be truncated.
 	 * @return bit size as defined by the field construction/declaration.
@@ -207,7 +207,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return bitSize;
 	}
 
-	/**
+    # /**
 	 * Get the bit offset of the least-significant bit relative to bit-0 of the
 	 * base datatype (i.e., least significant bit).  This corresponds to the
 	 * right-shift amount within the base data type when viewed as a big-endian value.
@@ -217,7 +217,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return bitOffset;
 	}
 
-	/**
+    # /**
 	 * Get the base datatype associated with this bit-field 
 	 * (e.g., int, long, etc., or TypeDef to supported base type)
 	 * @return base data type
@@ -226,7 +226,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return baseDataType;
 	}
 
-	/**
+    # /**
 	 * Get the base datatype associated with this bit-field 
 	 * (e.g., int, long, etc., or TypeDef to supported base type)
 	 * @return base data type
@@ -245,7 +245,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return (AbstractIntegerDataType) dt;
 	}
 
-	/**
+    # /**
 	 * Gets a list of all the settingsDefinitions used by this datatype.
 	 * @return a list of the settingsDefinitions used by this datatype.
 	 */
@@ -301,7 +301,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return defaultSettings;
 	}
 
-	/**
+    # /**
 	 * Returns a clone of this built-in DataType
 	 * @see ghidra.program.model.data.DataType#copy(ghidra.program.model.data.DataTypeManager)
 	 */
@@ -310,7 +310,7 @@ public class BitFieldDataType extends AbstractDataType {
 		return clone(dtm);
 	}
 
-	/**
+    # /**
 	 * Clone this bitfield to a new datatype manager.  This may change the effective bit
 	 * size and storage size of the resulting datatype based upon the data organization
 	 * of the specified dtm.

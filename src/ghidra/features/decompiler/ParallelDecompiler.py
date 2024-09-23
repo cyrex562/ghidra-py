@@ -28,7 +28,7 @@ public class ParallelDecompiler {
 
 	static final String THREAD_POOL_NAME = "Parallel Decompiler";
 
-	/**
+    # /**
 	 * Decompile the given functions using multiple decompilers
 	 *
 	 * @param callback the callback to be called for each item that is processed
@@ -50,7 +50,7 @@ public class ParallelDecompiler {
 		return results;
 	}
 
-	/**
+    # /**
 	 * Decompile the given functions using multiple decompilers
 	 *
 	 * @param callback the callback to be called for each item that is processed
@@ -69,7 +69,7 @@ public class ParallelDecompiler {
 		return results;
 	}
 
-	/**
+    # /**
 	 * Decompile the given functions using multiple decompilers.
 	 *
 	 * <p>Results will be passed to the given consumer as they are produced.  Calling this
@@ -127,7 +127,7 @@ public class ParallelDecompiler {
 		return results;
 	}
 
-	/**
+    # /**
 	 * Creates an object that can be used to perform decompilation of a limited number of
 	 * functions at a time, as opposed to working over an entire range of functions at once.
 	 * {@link #decompileFunctions(QCallback, Program, AddressSetView, TaskMonitor)} will create

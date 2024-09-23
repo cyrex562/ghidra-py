@@ -18,7 +18,7 @@ package ghidra.framework.main.logviewer.ui;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.*;
-import java.io.IOException;
+
 import java.util.List;
 import java.util.stream.IntStream;
 

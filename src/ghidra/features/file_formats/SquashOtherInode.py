@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 import java.util.HexFormat;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -36,7 +36,7 @@ public class SquashOtherInode extends SquashInode {
 	// minor = (deviceNumber & 0x000FF)
 	private long deviceNumber;
 
-	/**
+    # /**
 	 * Represents a SquashFS basic file inode
 	 * @param reader A binary reader with pointer index at the start of the inode data
 	 * @param superBlock The SuperBlock for the current archive

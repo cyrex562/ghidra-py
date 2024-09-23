@@ -51,7 +51,7 @@ public class RttiAnalyzer extends AbstractAnalyzer {
 	private DataValidationOptions validationOptions;
 	private DataApplyOptions applyOptions;
 
-	/**
+    # /**
 	 * Constructs an RttiAnalyzer.
 	 */
 	public RttiAnalyzer() {
@@ -101,7 +101,7 @@ public class RttiAnalyzer extends AbstractAnalyzer {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Has this analyzer been run on the given program. NOTE: option new as of 10.3 so this will
 	 * not be accurate for older programs.
 	 * @param program the given program
@@ -117,7 +117,7 @@ public class RttiAnalyzer extends AbstractAnalyzer {
 
 	}
 
-	/**
+    # /**
 	 * Method to set the RTTI Found option for the given program
 	 * @param program the given program
 	 * @param rttiFound true if RTTI found and processed, false otherwise
@@ -127,7 +127,7 @@ public class RttiAnalyzer extends AbstractAnalyzer {
 		programOptions.setBoolean(RTTI_FOUND_OPTION, rttiFound);
 	}
 
-	/**
+    # /**
 	 * locate any potential RTTI0 based on pointers to the type_info vftable
 	 * @param program proram to locate within
 	 * @param set restricted set to locate within
@@ -199,7 +199,7 @@ public class RttiAnalyzer extends AbstractAnalyzer {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the base addresses of all the RTTI 4 structures that appear to be associated with
 	 * the RTTI 0 at the indicated base address.
 	 * @param program the program containing the RTTI 0 data structure.
@@ -222,7 +222,7 @@ public class RttiAnalyzer extends AbstractAnalyzer {
 		return addresses;
 	}
 
-	/** For each of the RTTI0 locations found locate the associated RTTI4 structure referring to it.
+    # /** For each of the RTTI0 locations found locate the associated RTTI4 structure referring to it.
 	 *
 	 * @param program program to be searched
 	 * @param dataBlocks dataBlocks to search
@@ -270,7 +270,7 @@ public class RttiAnalyzer extends AbstractAnalyzer {
 		return addresses;
 	}
 
-	/**
+    # /**
 	 * Add a search pattern, to the searcher, for the set of bytes representing an address
 	 *
 	 * @param searcher pattern searcher

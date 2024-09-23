@@ -29,7 +29,7 @@ public class PatternEvalRowObject {
 	private int postBits;
 	private int totalBits;
 
-	/**
+    # /**
 	 * Creates a row object for the Pattern Evaluation table
 	 * @param matchType type of the match
 	 * @param matchedSet bytes of the program containing the match
@@ -48,7 +48,7 @@ public class PatternEvalRowObject {
 		this.totalBits = totalBits;
 	}
 
-	/**
+    # /**
 	 * Returns the type of the match.
 	 * @return match type
 	 */
@@ -56,7 +56,7 @@ public class PatternEvalRowObject {
 		return matchType;
 	}
 
-	/**
+    # /**
 	 * Returns an {@link AddressSet} where the match occurs
 	 * @return matching AddressSet
 	 */
@@ -64,7 +64,7 @@ public class PatternEvalRowObject {
 		return matchedSet;
 	}
 
-	/**
+    # /**
 	 * Returns a {@code} String representation of the pattern
 	 * @return pattern as string
 	 */
@@ -72,7 +72,7 @@ public class PatternEvalRowObject {
 		return patternString;
 	}
 
-	/**
+    # /**
 	 * Returns the addresses where the match occurs
 	 * @return address of match
 	 */
@@ -80,7 +80,7 @@ public class PatternEvalRowObject {
 		return matchedAddress;
 	}
 
-	/**
+    # /**
 	 * Returns the number fixed bits of the pattern after the function start 
 	 * @return number of postbits
 	 */
@@ -88,7 +88,7 @@ public class PatternEvalRowObject {
 		return postBits;
 	}
 
-	/**
+    # /**
 	 * Returns the total number of fixed bits of the pattern
 	 * @return
 	 */

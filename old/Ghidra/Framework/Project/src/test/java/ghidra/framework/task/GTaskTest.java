@@ -17,7 +17,7 @@ package ghidra.framework.task;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;

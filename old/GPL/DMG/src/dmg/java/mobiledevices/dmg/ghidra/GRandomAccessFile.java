@@ -3,7 +3,7 @@
  */
 package mobiledevices.dmg.ghidra;
 
-import java.io.*;
+
 
 /**
  * Instances of this class support both reading and writing to a 

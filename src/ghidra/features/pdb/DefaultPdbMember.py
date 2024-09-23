@@ -46,7 +46,7 @@ public class DefaultPdbMember extends PdbMember {
 
 	private final PdbDataTypeParser dataTypeParser;
 
-	/**
+    # /**
 	 * Default PDB member construction
 	 * @param name member field name.  For bitfields this also conveys the bit-size
 	 * and optionally the bit-offset.
@@ -63,7 +63,7 @@ public class DefaultPdbMember extends PdbMember {
 		parseBitField(name);
 	}
 
-	/**
+    # /**
 	 * Kind of member record.  Only those records with a Member kind
 	 * are currently considered for inclusion within a composite.
 	 * @return PDB kind
@@ -149,7 +149,7 @@ public class DefaultPdbMember extends PdbMember {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the index of the bit-field component of the mixed name field that is composed of
 	 * a standard namespace name and an optional (non-namespace name compliant) bit-field
 	 * component passed on from the native pdb.exe parser.

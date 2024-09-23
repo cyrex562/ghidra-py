@@ -15,7 +15,7 @@
  */
 package db.buffers;
 
-import java.io.IOException;
+
 import java.rmi.NoSuchObjectException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -51,7 +51,7 @@ public class RemoteBufferFileImpl extends UnicastRemoteObject
 
 	private boolean disposed = false;
 
-	/**
+    # /**
 	 * Construct a remote wrapper for a buffer file.
 	 * @param bufferFile buffer file
 	 * @param owner owner object to which this instance should be associated.
@@ -117,7 +117,7 @@ public class RemoteBufferFileImpl extends UnicastRemoteObject
 		}
 	}
 
-	/**
+    # /**
 	 * Dispose and unexport all RemoteBufferFileImpl instances associated with the 
 	 * specified owner.
 	 * @param owner
@@ -140,7 +140,7 @@ public class RemoteBufferFileImpl extends UnicastRemoteObject
 		return found;
 	}
 
-	/**
+    # /**
 	 * Get the number of open RemoteBufferFileHandle's associated with the 
 	 * specified owner repository handle. 
 	 * @param owner owner's repository handle
@@ -154,7 +154,7 @@ public class RemoteBufferFileImpl extends UnicastRemoteObject
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Return user name@host associated with open file handle.
 	 */
 	public String getUserClient() {
@@ -164,7 +164,7 @@ public class RemoteBufferFileImpl extends UnicastRemoteObject
 		return owner.getUserName();
 	}
 
-	/**
+    # /**
 	 * Returns list of users with open handles associated with the specified filePath.
 	 * @param filePath file path
 	 */
@@ -186,7 +186,7 @@ public class RemoteBufferFileImpl extends UnicastRemoteObject
 		return null;
 	}
 
-	/**
+    # /**
 	 * RMI callback when instance becomes unreferenced by any remote client
 	 */
 	@Override
@@ -194,7 +194,7 @@ public class RemoteBufferFileImpl extends UnicastRemoteObject
 		dispose();
 	}
 
-	/**
+    # /**
 	 * Dispose associated buffer file and unexport this instance.
 	 */
 	@Override

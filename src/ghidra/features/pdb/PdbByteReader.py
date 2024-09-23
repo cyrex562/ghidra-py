@@ -48,19 +48,19 @@ public class PdbByteReader {
 	//==============================================================================================
 	// Internals
 	//==============================================================================================
-	/** byte array containing data to be parsed */
+    # /** byte array containing data to be parsed */
 	private byte[] bytes;
-	/** fixed length of the byte array */
+    # /** fixed length of the byte array */
 	private int limit;
-	/** current index into the byte array from which the next parse method will act */
+    # /** current index into the byte array from which the next parse method will act */
 	private int index;
-	/** offset to begin alignment for methods that need to calculate alignment */
+    # /** offset to begin alignment for methods that need to calculate alignment */
 	private int alignMarker;
 
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for a PdbByteReader. Takes byte array of data to be read in particular
 	 *  increments and formats.
 	 * @param bytes byte[] of data to be read/processed.
@@ -72,7 +72,7 @@ public class PdbByteReader {
 		alignMarker = 0;
 	}
 
-	/**
+    # /**
 	 * Resets the index of the PdbByteReader back to zero.
 	 */
 	public void reset() {
@@ -80,7 +80,7 @@ public class PdbByteReader {
 		alignMarker = 0;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes remaining in the PdbByteReader.
 	 * @return The number of bytes remaining.
 	 */
@@ -88,7 +88,7 @@ public class PdbByteReader {
 		return limit - index;
 	}
 
-	/**
+    # /**
 	 * Returns the current index of the PdbByteReader.
 	 * @return The current index.
 	 */
@@ -96,7 +96,7 @@ public class PdbByteReader {
 		return index;
 	}
 
-	/**
+    # /**
 	 * Returns the limit of the PdbByteReader.
 	 * @return The index limit.
 	 */
@@ -104,7 +104,7 @@ public class PdbByteReader {
 		return limit;
 	}
 
-	/**
+    # /**
 	 * Sets the index to the value specified.  Silently fails when outside of array.
 	 * @param index The to set to the index.
 	 */
@@ -114,7 +114,7 @@ public class PdbByteReader {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if there are more bytes remaining in the PdbByteReader.
 	 * @return True if more bytes remain.
 	 */
@@ -122,7 +122,7 @@ public class PdbByteReader {
 		return (index < limit);
 	}
 
-	/**
+    # /**
 	 * Returns true if there are more bytes remaining in the PdbByteReader which are non-pad bytes.
 	 * @return True if more non-pad bytes remain.
 	 */
@@ -133,7 +133,7 @@ public class PdbByteReader {
 		return (bytes[index] & 0xff) <= 0xf0;
 	}
 
-	/**
+    # /**
 	 * Parses a single byte (unsigned char) of data from the PdbByteReader and returns its
 	 *  positive integer value.
 	 * @return The positive integer value of the parsed byte.
@@ -144,7 +144,7 @@ public class PdbByteReader {
 		return bytes[index++] & 0xff;
 	}
 
-	/**
+    # /**
 	 * Parses and returns in an int, the specified-size integer type value (16 or 32).
 	 * @param size the size in bits of the integer.
 	 * @return the value parsed.
@@ -160,7 +160,7 @@ public class PdbByteReader {
 		throw new PdbException("Bad int size");
 	}
 
-	/**
+    # /**
 	 * Parses and returns in an unsigned int, the specified-size unsigned integer type value
 	 * (8 or 16).
 	 * @param size the size in bits of the unsigned integer.
@@ -177,7 +177,7 @@ public class PdbByteReader {
 		throw new PdbException("Bad int size");
 	}
 
-	/**
+    # /**
 	 * Parses and returns in an unsigned int, the specified-size unsigned integer type value
 	 * (8, 16, or 32).
 	 * @param size the size in bits of the unsigned integer.
@@ -196,7 +196,7 @@ public class PdbByteReader {
 		throw new PdbException("Bad int size");
 	}
 
-	/**
+    # /**
 	 * Parses and returns in an int, which that is intended to be used as an <B>offset</B>, using
 	 * the specified-size integer type value  (16 or 32).  When 16, and <B>unsigned</B> short is
 	 * parsed; when 32, a <B>signed</B> int is parsed.
@@ -214,7 +214,7 @@ public class PdbByteReader {
 		throw new PdbException("Bad offset size");
 	}
 
-	/**
+    # /**
 	 * Parses and returns in an int, which that is intended to be used as a <B>count</B>, using the
 	 * specified-size integer type value  (16 or 32).  When 16, and <B>unsigned</B> short is
 	 * parsed; when 32, a <B>signed</B> int is parsed.
@@ -232,7 +232,7 @@ public class PdbByteReader {
 		throw new PdbException("Bad count size");
 	}
 
-	/**
+    # /**
 	 * Parses and returns a short from the PdbByteReader.
 	 * @return The short parsed.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -244,7 +244,7 @@ public class PdbByteReader {
 		return LittleEndianDataConverter.INSTANCE.getShort(selectedBytes);
 	}
 
-	/**
+    # /**
 	 * Parses an unsigned short from the PdbByteReader and returns its positive integer value.
 	 * @return The positive integer value of the parsed unsigned short.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -258,7 +258,7 @@ public class PdbByteReader {
 		return LittleEndianDataConverter.INSTANCE.getInt(selectedBytes);
 	}
 
-	/**
+    # /**
 	 * Parses and returns an integer from the PdbByteReader.
 	 * @return The integer parsed.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -270,7 +270,7 @@ public class PdbByteReader {
 		return LittleEndianDataConverter.INSTANCE.getInt(selectedBytes);
 	}
 
-	/**
+    # /**
 	 * Parses an unsigned int from the PdbByteReader and returns its positive long value.
 	 * @return The positive long value of the parsed unsigned int.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -283,7 +283,7 @@ public class PdbByteReader {
 		return LittleEndianDataConverter.INSTANCE.getLong(selectedBytes);
 	}
 
-	/**
+    # /**
 	 * Parses and returns a (64-bit) long from the PdbByteReader.
 	 * @return The integer parsed.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -295,7 +295,7 @@ public class PdbByteReader {
 		return LittleEndianDataConverter.INSTANCE.getLong(selectedBytes);
 	}
 
-	/**
+    # /**
 	 * Parses an (64-bit) unsigned long from the PdbByteReader and returns its positive
 	 *  BigInteger value.
 	 * @return The positive long value of the parsed unsigned int.
@@ -309,7 +309,7 @@ public class PdbByteReader {
 		return LittleEndianDataConverter.INSTANCE.getBigInteger(selectedBytes, 8, false);
 	}
 
-	/**
+    # /**
 	 * Parses and returns a short-valued-length-prefixed byte array from the PdbByteReader (not
 	 *  including the 2 bytes of the short-valued-length).  An unsigned short is first parsed.
 	 *  This value tells the number of bytes to be read and returned as a byte[].
@@ -325,7 +325,7 @@ public class PdbByteReader {
 		return selectedBytes;
 	}
 
-	/**
+    # /**
 	 * Returns the remaining bytes in the PdbByteReader as a byte array.
 	 * @return The byte[] containing the remaining bytes.
 	 */
@@ -336,7 +336,7 @@ public class PdbByteReader {
 		return selectedBytes;
 	}
 
-	/**
+    # /**
 	 * Extracts and returns a byte array of bytes from the PdbByteReader, the number of which
 	 *  is specified byte the parameter.
 	 * @param num The number of bytes to extract and return.
@@ -350,7 +350,7 @@ public class PdbByteReader {
 		return selectedBytes;
 	}
 
-	/**
+    # /**
 	 * Returns a sub-PdbByteReader starting at the current index location and limited to the
 	 *  length. The parent PdbByteReader index gets moved forward by length.
 	 * @param length The length of the sub-PdbByteReader.
@@ -361,7 +361,7 @@ public class PdbByteReader {
 		return new PdbByteReader(parseBytes(length));
 	}
 
-	/**
+    # /**
 	 * Parses an GUID from the PdbByteReader.
 	 * @return The GUID parsed.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -375,7 +375,7 @@ public class PdbByteReader {
 		return new GUID(data1, data2, data3, data4);
 	}
 
-	/**
+    # /**
 	 * Parses a string, as indicated by the {@link StringParseType}, from the PdbByteReader and
 	 * returns it.  Where needed, uses one of the String encoding options as retained in the
 	 * associated {@link PdbReaderOptions}.
@@ -402,7 +402,7 @@ public class PdbByteReader {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses and returns a byte-valued-length-prefixed String from the PdbByteReader.  The
 	 *  string length is determined by the first byte of data (not returned)--there is not a null
 	 *  terminator in the source bytes.  This number of bytes is extracted and converted to a
@@ -426,7 +426,7 @@ public class PdbByteReader {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses and returns a byte-valued-length-prefixed UTF8 String from the PdbByteReader.  The
 	 *  string length is determined by the first byte of data (not returned)--there is not null
 	 *  terminator in the source bytes.  This number of bytes is extracted and converted to a
@@ -449,7 +449,7 @@ public class PdbByteReader {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses a null-terminated string from the PdbByteReader and returns the {@link String} (minus
 	 *  the terminating null character).  If no null, returns up to end of PdbByteReader.
 	 * @param charset the {@link Charset} to be used for parsing the {@link String}.
@@ -466,7 +466,7 @@ public class PdbByteReader {
 		return new String(bytes, offset, end - offset, charset);
 	}
 
-	/**
+    # /**
 	 * Parses a null-terminated UTF-8 string from the PdbByteReader and returns the String (minus
 	 *  the terminating null character).  If no null, returns up to end of PdbByteReader.
 	 * @return The String parsed.
@@ -482,7 +482,7 @@ public class PdbByteReader {
 		return new String(bytes, offset, end - offset, StandardCharsets.UTF_8);
 	}
 
-	/**
+    # /**
 	 * Parses a null-terminated wchar_t string from the PdbByteReader and returns the String (minus
 	 *  the terminating null character).  If no null, returns up to end of PdbByteReader.
 	 * @param charset the {@link Charset} to be used for parsing the {@link String}.
@@ -499,7 +499,7 @@ public class PdbByteReader {
 		return new String(bytes, offset, end - offset, charset);
 	}
 
-	/**
+    # /**
 	 * Stores the current index value as a marker for performing alignment.  The {@link #align4()}
 	 * method calculates alignment based on this marker.
 	 * @param alignMarkerIn Offset to begin alignment calculations.
@@ -508,7 +508,7 @@ public class PdbByteReader {
 		this.alignMarker = alignMarkerIn;
 	}
 
-	/**
+    # /**
 	 * Moves the index of the PdbByteReader to align on a 4-byte boundary of the initializing
 	 *  byte array, modified by an alignment modifier passed in by {@link #markAlign(int)}.
 	 * @return The number added to the index.
@@ -520,7 +520,7 @@ public class PdbByteReader {
 		return pad;
 	}
 
-	/**
+    # /**
 	 * This is a specialized method for PDB that should only be used when the Subject Matter
 	 *  Expert know it is appropriate to use.  It looks for and removes padding bytes that are
 	 *  indications of and take the place of alignment padding.
@@ -534,7 +534,7 @@ public class PdbByteReader {
 		return index - initialIndex;
 	}
 
-	/**
+    # /**
 	 * This method skips the number of bytes specified.  Does not skip beyond the end.
 	 * @param num The number of bytes to skip.
 	 */
@@ -547,7 +547,7 @@ public class PdbByteReader {
 		}
 	}
 
-	/**
+    # /**
 	 * Debug method used the dump bytes of the PdbByteReader to String in a pretty format to a
 	 * String.  Includes header of internal values.
 	 * @return String of data dumped.
@@ -556,7 +556,7 @@ public class PdbByteReader {
 		return dump(0, limit);
 	}
 
-	/**
+    # /**
 	 * Debug method used the dump a specified number of bytes of the PdbByteReader in a pretty
 	 * format to a String, starting at the current index.  Includes header of internal values.
 	 * @param max The max number of bytes to output.
@@ -566,7 +566,7 @@ public class PdbByteReader {
 		return dump(index, index + max);
 	}
 
-	/**
+    # /**
 	 * Debug method used the dump a specified number of bytes of the PdbByteReader in a pretty
 	 * format, starting at the first parameter and continuing to the one less than the last
 	 * parameter.  First dumped are the number of bytes in the PdbByteReader, followed by the
@@ -591,7 +591,7 @@ public class PdbByteReader {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Debug method used the dump bytes of the PdbByteReader to String in a pretty format to a
 	 * String.
 	 * @return String of data dumped.
@@ -600,7 +600,7 @@ public class PdbByteReader {
 		return dumpBytes(0, limit);
 	}
 
-	/**
+    # /**
 	 * Debug method used the dump a specified number of bytes of the PdbByteReader in a pretty
 	 * format to a String, starting at the current index.
 	 * @param max The max number of bytes to output.
@@ -610,7 +610,7 @@ public class PdbByteReader {
 		return dumpBytes(index, index + max);
 	}
 
-	/**
+    # /**
 	 * Debug method used the dump a specified number of bytes of the PdbByteReader in a pretty
 	 * format, starting at the first parameter and continuing to the one less than the last
 	 * parameter.  Only the bytes are dumped.
@@ -636,7 +636,7 @@ public class PdbByteReader {
 	//==============================================================================================
 	// Private Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Checks if {@code numNeeded} bytes is available between {@code index} and {@code limit}.
 	 *  Throws PdbException if space is not available.  The {@code numNeeded} value is the amount
 	 *  that the caller intends to increment {@code index} by, and the resultant value is allowed
@@ -658,7 +658,7 @@ public class PdbByteReader {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the index of the first character of the null terminator of any width.
 	 * @param width The width of the terminator.
 	 * @return The index of the first character of the terminator.

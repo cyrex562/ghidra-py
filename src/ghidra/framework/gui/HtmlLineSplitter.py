@@ -32,10 +32,10 @@ import ghidra.util.HTMLUtilities;
  */
 public class HtmlLineSplitter {
 
-	/** Used when trying to split on word boundaries; the value past which to give up */
+    # /** Used when trying to split on word boundaries; the value past which to give up */
 	public static final int MAX_WORD_LENGTH = 10;
 
-	/**
+    # /**
 	 * Splits the given line into multiple lines based upon the given max length.  This method
 	 * will first split on each newline and then wrap each of the lines returned from that split.
 	 * 
@@ -54,7 +54,7 @@ public class HtmlLineSplitter {
 		return split(text, maxLineLength, false);
 	}
 
-	/**
+    # /**
 	 * Splits the given line into multiple lines based upon the given max length.  This method
 	 * will first split on each newline and then wrap each of the lines returned from that split.
 	 * 
@@ -96,7 +96,7 @@ public class HtmlLineSplitter {
 		return lines;
 	}
 
-	/**
+    # /**
 	 * Splits the given line into multiple lines based upon the given max length.
 	 * 
 	 * <P>Once the maximum provided length is passed, the algorithm attempts to split on a word

@@ -106,7 +106,7 @@ public interface VTController extends VTSessionSupplier {
 
 	public void gotoDestinationLocation(ProgramLocation location);
 
-	/**
+    # /**
 	 * Runs VT tasks, listening for destination program changes and updates undo/redo state
 	 * accordingly.
 	 * @param task the task
@@ -117,25 +117,25 @@ public interface VTController extends VTSessionSupplier {
 
 	public Symbol getDestinationSymbol(VTAssociation association);
 
-	/**
+    # /**
 	 * Gets the address set for the current selection in the Source Tool.
 	 * @return the current selection or null.
 	 */
 	public AddressSetView getSelectionInSourceTool();
 
-	/**
+    # /**
 	 * Gets the address set for the current selection in the Destination Tool.
 	 * @return the current selection or null.
 	 */
 	public AddressSetView getSelectionInDestinationTool();
 
-	/**
+    # /**
 	 * Sets the selection in the source tool to the given address set.
 	 * @param sourceSet the addressSet to set the source tool's selection.
 	 */
 	public void setSelectionInSourceTool(AddressSetView sourceSet);
 
-	/**
+    # /**
 	 * Sets the selection in the destination tool to the given address set.
 	 * @param destinationSet the addressSet to set the destination tool's selection.
 	 */

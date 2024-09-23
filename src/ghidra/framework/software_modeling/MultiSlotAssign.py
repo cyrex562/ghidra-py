@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang.protorules;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Map.Entry;
 
@@ -33,12 +33,12 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
 # /**
- * Consume multiple registers to pass a data-type
- * 
- * Available registers are consumed until the data-type is covered, and an appropriate
- * join space address is assigned.  Registers can be consumed from a specific resource list.
- * Consumption can spill over onto the stack if desired.
- */
+# * Consume multiple registers to pass a data-type
+# * 
+# * Available registers are consumed until the data-type is covered, and an appropriate
+# * join space address is assigned.  Registers can be consumed from a specific resource list.
+# * Consumption can spill over onto the stack if desired.
+# */
 public class MultiSlotAssign extends AssignAction {
 	private StorageClass resourceType;	// Resource list from which to consume
 	private boolean consumeFromStack;	// True if resources should be consumed from the stack
@@ -48,7 +48,7 @@ public class MultiSlotAssign extends AssignAction {
 	private ParamEntry stackEntry;		// The stack resource
 	private int firstIter;				// Iterator to first element in the resource list
 
-	/**
+    # /**
 	 * Cache specific ParamEntry needed by the action
 	 * 
 	 * Find the first ParamEntry matching the resourceType, and the ParamEntry
@@ -76,7 +76,7 @@ public class MultiSlotAssign extends AssignAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructor for use with restoreXml
 	 * @param res is the new resource set to associate with this action
 	 */

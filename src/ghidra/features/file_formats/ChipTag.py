@@ -18,7 +18,7 @@ package ghidra.file.formats.ios.img3.tag;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.ios.img3.AbstractImg3Tag;
 
-import java.io.IOException;
+
 
 public class ChipTag extends AbstractImg3Tag {
 	private int chip;

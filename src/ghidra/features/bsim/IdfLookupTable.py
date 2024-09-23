@@ -64,7 +64,7 @@ public class IdfLookupTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param lookup the IDF lookup
 	 * @throws SQLException if there is an error creating/executing the query

@@ -35,7 +35,7 @@ class LongIteratorImpl implements LongIterator {
 	LongIteratorImpl(ValueMap<?> pm) {
 		this(pm, 0, true);
 	}
-	/**
+    # /**
 	 * Constructor for creating a LongIterator that iterates
      * over the entire range of properties.
      * @param pm the property map to be iterated
@@ -50,7 +50,7 @@ class LongIteratorImpl implements LongIterator {
 		current = start;
         init(true);
     }
-	/**
+    # /**
 	 * Constructor for creating a LongIterator that iterates
      * over a range of property indexes. This iterator will only
      * return property indexes within the given range (inclusive).
@@ -61,7 +61,7 @@ class LongIteratorImpl implements LongIterator {
 	LongIteratorImpl(ValueMap<?> pm, long start, long end) {
 		this(pm, start, end, true);
 	}
-	/**
+    # /**
 	 * Constructor for creating a LongIterator that iterates
      * over a range of property indexes. This iterator will only
      * return property indexes within the given range (inclusive).
@@ -79,7 +79,7 @@ class LongIteratorImpl implements LongIterator {
 		current = atStart ? start : end;
 	    init(atStart);
 	}
-	/**
+    # /**
 	 * Returns true if the iterator has more indexes.
 	 */
     public boolean hasNext(){
@@ -90,7 +90,7 @@ class LongIteratorImpl implements LongIterator {
 		findNext();
 		return doesHaveNext;
 	}
-	/**
+    # /**
 	 * Returns the next index in the iterator.
 	 */
     public long next() {
@@ -102,7 +102,7 @@ class LongIteratorImpl implements LongIterator {
 
 		throw new NoSuchElementException("No more indexes.");
 	}
-	/**
+    # /**
 	 * Return true if the iterator has a previous index.
 	 */
     public boolean hasPrevious() {
@@ -113,7 +113,7 @@ class LongIteratorImpl implements LongIterator {
 		return doesHavePrevious;
     }
 
-	/**
+    # /**
 	 * Returns the previous index in the iterator.
 	 */
     public long previous() {
@@ -128,7 +128,7 @@ class LongIteratorImpl implements LongIterator {
 
 
 	///////////////////////////////////////////////////////////
-	/**
+    # /**
 	 * Return whether there is a next index; if there is,
 	 * "currentNext" has the value.
 	 */
@@ -149,7 +149,7 @@ class LongIteratorImpl implements LongIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Return whether there is a previous index; if there is,
 	 * "currentPrevious" has the value.
 	 */

@@ -17,7 +17,7 @@ package ghidra.file.formats.sevenzip;
 
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.app.util.recognizer.*;

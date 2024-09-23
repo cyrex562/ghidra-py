@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.sleigh;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.app.plugin.processors.sleigh.symbol.*;
@@ -30,11 +30,11 @@ import ghidra.program.model.symbol.RefType;
 import ghidra.util.exception.NotYetImplementedException;
 
 # /**
- * 
- *
- * Class for converting ConstructTpl into a pcode ops given
- * a particular InstructionContext
- */
+# * 
+# *
+# * Class for converting ConstructTpl into a pcode ops given
+# * a particular InstructionContext
+# */
 public abstract class PcodeEmit {
 
 	private PcodeOverride override;
@@ -60,13 +60,13 @@ public abstract class PcodeEmit {
 	private long uniquemask;
 	private long uniqueoffset;
 
-	/**
+    # /**
 	 * Pcode emitter constructor for empty or unimiplemented instructions
 	 */
 	protected PcodeEmit() {
 	}
 
-	/**
+    # /**
 	 * Pcode emitter constructor
 	 * @param walk is the ParserWalker state for the tree that needs to be walked to generate pcode
 	 * @param ictx is the InstructionContext interface to resolve requests for context
@@ -135,7 +135,7 @@ public abstract class PcodeEmit {
 		return walker;
 	}
 
-	/**
+    # /**
 	 * Make a note of the current op index, and associate
 	 * it with the label index from the label template,
 	 * so that the label can later be resolved to a relative
@@ -153,7 +153,7 @@ public abstract class PcodeEmit {
 		labeldef.set(labelindex, numOps);
 	}
 
-	/**
+    # /**
 	 * Make a note of a reference to a label within a
 	 * BRANCH or CBRANCH op, so that it can later be resolved
 	 * to a relative address.  We assume that the varnode
@@ -162,14 +162,14 @@ public abstract class PcodeEmit {
 	 */
 	abstract void addLabelRef();
 
-	/**
+    # /**
 	 * Now that we have seen all label templates and references
 	 * convert the collected references into full relative
 	 * addresses
 	 */
 	public abstract void resolveRelatives();
 
-	/**
+    # /**
 	 * Now that all pcode has been generated, including special
 	 * overrides and injections, ensure that a fallthrough override
 	 * adds a final branch to prevent dropping out the bottom.  This
@@ -428,7 +428,7 @@ public abstract class PcodeEmit {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Convert a varnode template into a concrete varnode
 	 * @param vntpl is the varnode template
 	 * @param vn is the resulting concrete varnode
@@ -448,7 +448,7 @@ public abstract class PcodeEmit {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate a concrete pointer varnode for a dynamic varnode template
 	 * @param vntpl is the VarnodeTpl
 	 * @param vn is the resulting concrete varnode
@@ -470,7 +470,7 @@ public abstract class PcodeEmit {
 		return hand.space;
 	}
 
-	/**
+    # /**
 	 * Adjust the dynamic pointer to account for a V_OFFSET_PLUS in the given VarnodeTpl.
 	 * We are passed in an existing array (dyncache) of VarnodeData for input/output.
 	 * We assume the location of the base pointer is in dyncache[1]
@@ -605,7 +605,7 @@ public abstract class PcodeEmit {
 		walker.popOperand();
 	}
 
-	/**
+    # /**
 	 * Insert the p-code of instruction(s) in the delay slot at this point in the p-code generation for the current instruction
 	 * @param op is the DELAYSLOT directive
 	 * @throws UnknownInstructionException for problems finding the delay slot Instruction
@@ -650,7 +650,7 @@ public abstract class PcodeEmit {
 		inDelaySlot = false;
 	}
 
-	/**
+    # /**
 	 * Inject the p-code for a different instruction at this point in the p-code generation for current instruction
 	 * @param bld is the CROSSBUILD directive containing the section number and address parameters
 	 * @param secnum is the section number of the section containing the CROSSBUILD directive
@@ -735,7 +735,7 @@ public abstract class PcodeEmit {
 		labelbase = oldbase;	// Restore old labelbase
 	}
 
-	/**
+    # /**
 	 * Build a named p-code section of a constructor that contains only implied BUILD directives
 	 * @param ct Constructor to build section for
 	 * @param secnum index of the section to be built
@@ -765,7 +765,7 @@ public abstract class PcodeEmit {
 		}
 	}
 
-	/**
+    # /**
 	 * Applies opcode-specific overrides
 	 * @param opcode opcode of instruction
 	 * @param in input varnodes

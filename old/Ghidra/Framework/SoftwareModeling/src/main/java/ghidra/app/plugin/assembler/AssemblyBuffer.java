@@ -16,7 +16,7 @@
 package ghidra.app.plugin.assembler;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;

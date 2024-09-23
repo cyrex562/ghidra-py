@@ -17,7 +17,7 @@ package ghidra.comm.packet;
 
 import static ghidra.async.AsyncUtils.*;
 
-import java.io.IOException;
+
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousByteChannel;
 import java.nio.channels.CompletionHandler;

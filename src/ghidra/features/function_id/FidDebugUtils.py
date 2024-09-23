@@ -29,7 +29,7 @@ import ghidra.util.NumericUtilities;
  */
 public class FidDebugUtils {
 
-	/**
+    # /**
 	 * Search the FID system for function records by name substring.
 	 * @param name the name substring to search
 	 */
@@ -39,7 +39,7 @@ public class FidDebugUtils {
 		return new FidSearchResultFrame("Name: " + name, functionRecords, service, fidQueryService);
 	}
 
-	/**
+    # /**
 	 * Search the FID system for function records by domain path substring.
 	 * @param domainPath the domain path substring to search
 	 */
@@ -51,7 +51,7 @@ public class FidDebugUtils {
 			fidQueryService);
 	}
 
-	/**
+    # /**
 	 * Search the FID system for function records by exact full hash.
 	 * @param fullHash the full hash to search
 	 */
@@ -62,7 +62,7 @@ public class FidDebugUtils {
 			service, fidQueryService);
 	}
 
-	/**
+    # /**
 	 * Search the FID system for function records by exact specific hash.
 	 * @param specificHash the specific hash to search
 	 */
@@ -74,7 +74,7 @@ public class FidDebugUtils {
 			service, fidQueryService);
 	}
 
-	/**
+    # /**
 	 * Opens a function record debug panel in a new window.
 	 * @param functionRecord the function record to debug
 	 */
@@ -93,7 +93,7 @@ public class FidDebugUtils {
 		fidQueryService.addCloseListener(listener -> frame.dispose());
 	}
 
-	/**
+    # /**
 	 * Searches for a function by primary key, then pops up a table with the result (or empty).
 	 * @param text the string representing the function record primary key
 	 */
@@ -106,7 +106,7 @@ public class FidDebugUtils {
 			service, fidQueryService);
 	}
 
-	/**
+    # /**
 	 * Pops up an error dialog.
 	 * @param name the name of the parameter
 	 * @param text the text that does not parse as a number
@@ -115,7 +115,7 @@ public class FidDebugUtils {
 		JOptionPane.showMessageDialog(null, "Could not parse " + name + ": " + text);
 	}
 
-	/**
+    # /**
 	 * Tries to parse the text as a long numeric value.
 	 * @param text the text to parse
 	 * @return the value, or null in case of parse error

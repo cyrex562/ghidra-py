@@ -64,12 +64,12 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 	// and disables check (e.g., transient in-memory database).
 	public final int supportedLayoutVersion;
 
-	/**
+    # /**
 	 * Main connection to database established by call to {@link #initConnection()}
 	 */
 	private Connection db = null;
 
-	/**
+    # /**
 	 * Database Information established by {@link #createDatabase(Configuration)} or
 	 * {@link #initializeDatabase(Configuration)}
 	 */
@@ -171,7 +171,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		info = null;
 	}
 
-	/**
+    # /**
 	 * Perform any required cleanup prior to connection close.
 	 * Partial cleanup has already been performed.
 	 * @param c database connection
@@ -180,7 +180,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		// do nothing by default
 	}
 
-	/**
+    # /**
 	 * Establish PostgreSQL DB pooled {@link Connection} for this instance.
 	 * @return database connection
 	 * @throws SQLException if error occurs obtaining connection
@@ -192,7 +192,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return db;
 	}
 
-	/**
+    # /**
 	 * Start a transaction which will not be auto-committed.  The {@link #endTransaction(boolean)}
 	 * method must be invoked when the transaction has completed or failed and should be performed
 	 * within a finally block.
@@ -209,7 +209,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return db;
 	}
 
-	/**
+    # /**
 	 * Lock appropriate tables during complex write/update operation
 	 * @throws SQLException if an error occurs 
 	 */
@@ -217,7 +217,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * End a transaction which was started with {@link #beginTransaction(boolean)} and return
 	 * DB connection to an auto-commit state.
 	 * @param commit true if transaction should be commited, false to force a rollback.
@@ -233,7 +233,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		db.setAutoCommit(true);
 	}
 
-	/**
+    # /**
 	 * @param erec the exectuable record representing the exec to delete
 	 * @param funclist list of functions to remove from the callgraph table
 	 * @param hasCategories if true, deletes entries from the category table
@@ -254,7 +254,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return deleteExeRows(erec);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param erec the executable record to delete
 	 * @return the number of rows deleted
@@ -268,7 +268,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return delcount;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param dbIndo the database information object
 	 * @throws SQLException if there is an error parsing the key/value table
@@ -287,7 +287,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * @param dbInfo the database information object
 	 * @throws SQLException if there is an error parsing the key/value table
 	 */
@@ -312,7 +312,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Parse <code>keyValueTable</code> data into a {@link DatabaseInformation} object.
 	 * @return a database information object
 	 * @throws SQLException if there is an error parsing the key/value table
@@ -352,7 +352,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return dbInfo;
 	}
 
-	/**
+    # /**
 	 * Initialize table state and {@code config} from existing database.
 	 * NOTE: it is left to specific implementation to override this method to properly
 	 * initialize default {@code config.weightfactory } and {@code config.idflookup }.
@@ -379,7 +379,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		idfLookupTable.recoverIDFLookup(config.idflookup);
 	}
 
-	/**
+    # /**
 	 * Generate new empty database which corresponds to {@link #ds}.  
 	 * A new connection may be used to the default database
 	 * so that a new database may be created.
@@ -387,7 +387,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 	 */
 	protected abstract void generateRawDatabase() throws SQLException;
 
-	/**
+    # /**
 	 * Generate tables and initialize state for a new database.
 	 * @param config the database configuration
 	 * @throws SQLException if there is aproblem opening a connectino to the database
@@ -453,7 +453,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		descTable.setConnection(db);
 	}
 
-	/**
+    # /**
 	 * Installs/Replaces Weight Table
 	 * @param factory the weight factory
 	 * @throws SQLException if there is an error creating the database query
@@ -478,7 +478,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Installs/Replaces the IDF Lookup table
 	 * @param lookup the IDF lookup
 	 * @throws SQLException if there is an error creating the database query
@@ -503,7 +503,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param rec the function description update object
 	 * @throws SQLException if there is a problem creating the query statement
@@ -533,7 +533,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Make a temporary ExecutableRecord given database row information. The
 	 * record is NOT attached to a DescriptionManager
 	 * 
@@ -562,7 +562,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return exeres;
 	}
 
-	/**
+    # /**
 	 * Run through a list of functions: mark any that have been previously
 	 * stored to the database by populating the function's rowid in the
 	 * corresponding FunctionDescription
@@ -602,7 +602,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return newfuncs;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param value the architecture value
 	 * @return the architecture ID
@@ -612,7 +612,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return archtable.readStringId(value);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param value the compiler value
 	 * @return the compiler ID
@@ -622,7 +622,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return compilertable.readStringId(value);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param value the repository value
 	 * @return the repository ID
@@ -632,7 +632,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return repositorytable.readStringId(value);
 	}
 
-	/**
+    # /**
 	 * @param value the category value
 	 * @return the category ID
 	 * @throws SQLException if there is a problem parsing the category value
@@ -641,7 +641,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return catstringtable.readStringId(value);
 	}
 
-	/**
+    # /**
 	 * Query for all functions (up to the limit -max-) of the given -exe-.
 	 * Populate DescriptionManager and List and with corresponding FunctionDescription objects
 	 * Does NOT populate SignatureRecord or CallGraph parts of the FunctionDescription
@@ -670,7 +670,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Update metadata for the executable -erec- and all its functions (in
 	 * manage)
 	 * 
@@ -744,7 +744,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return val;
 	}
 
-	/**
+    # /**
 	 * Establish an optional key/value table with this connection.
 	 * The OptionalTable object is created and added to the list for this connection.
 	 * If the caller desires, the table is tested for existence. If it doesn't
@@ -791,7 +791,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return table;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param buf the string builder object
 	 * @param str the string to parse
@@ -810,7 +810,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Convert a low-level list of function rows into full FunctionDescription objects
 	 * @param simres (optional -- may be null) generate a SimilarityNote for every function
 	 * @param descvec is the list of low-level function rows
@@ -857,7 +857,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * For the given -func-, query the database for its children and put their FunctionDescriptions -res-
 	 * @param func is the parent FunctionDescription
 	 * @param manager is the container DescriptionManager
@@ -880,7 +880,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param manage the description manager
 	 * @throws SQLException if there is a problem querying for executable categories
@@ -899,7 +899,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param iter the histogram id iterator
 	 * @throws SQLException if there is a problem deleting vectors
@@ -911,7 +911,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Low level count decrement of a vector record from vectable, if count
 	 * reaches zero, the record is deleted
 	 * @param id vector row ID
@@ -940,7 +940,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 
 	// Pulled-in from old FunctionDatabaseClient
 
-	/**
+    # /**
 	 * Make sure the FunctionDescription has its attached SignatureRecord, if not, query for it
 	 * @param functionDescription is the FunctionDescription
 	 * @param descriptionManager is the container
@@ -976,7 +976,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		descriptionManager.attachSignature(functionDescription, srec);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param id the vector id
 	 * @return the vector result 
@@ -984,7 +984,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 	 */
 	protected abstract VectorResult queryVectorId(long id) throws SQLException;
 
-	/**
+    # /**
 	 * Make sure every FunctionDescription object has its associated SignatureRecord
 	 * Read the SignatureRecords from the database if necessary
 	 * 
@@ -1000,7 +1000,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the total number of hits in the given result set.
 	 * 
 	 * @param resultSet the list of vector results
@@ -1014,7 +1014,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return count;
 	}
 
-	/**
+    # /**
 	 * This is an internal function for the -insert- capability
 	 * It runs through executables in -input- and tests if similar records are already present
 	 * If an executable existed in the database previously:
@@ -1075,7 +1075,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Do the final work of inserting new ExecutableRecords into the database. This function
 	 * assumes testExecutableDuplication has already run and marked previously ingested records
 	 * 
@@ -1159,7 +1159,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return lasterror;
 	}
 
-	/**
+    # /**
 	 * Create a new database
 	 * 
 	 * @param config is the configuration information for the database
@@ -1233,7 +1233,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return true;
 	}
 
-	/**
+    # /**
 	 * Insert a set of (possible callgraph interrelated) functions into database,
 	 * @param input is the DescriptionManager container of the functions and executables
 	 * 
@@ -1284,7 +1284,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Make sure the vector corresponding to the SignatureRecord is inserted into the vectable
 	 * @param sigrec is the SignatureRecord
 	 * @return the computed id of the vector
@@ -1292,7 +1292,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 	 */
 	protected abstract long storeSignatureRecord(SignatureRecord sigrec) throws SQLException;
 
-	/**
+    # /**
 	 * Query the database for functions with a similar feature vector to -vec-
 	 * @param simres receives the list of results and their similarity to the base vector
 	 * @param res is the DescriptionManager container for the results
@@ -1339,7 +1339,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Generates {@link FunctionDescription} objects for each function with signature vector
 	 * {@code dresult}.  If a non-null {@code filter} is provided, {@link FunctionDescription}s
 	 * are only created for functions with pass the filter.
@@ -1383,7 +1383,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return descres.size();
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param resultset the list of result set objects to populate
 	 * @param vec the vector containing the saveSQL query statement
@@ -1396,7 +1396,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 	protected abstract int queryNearestVector(List<VectorResult> resultset, LSHVector vec,
 			double simthresh, double sigthresh, int max) throws SQLException;
 
-	/**
+    # /**
 	 * Perform nearest vector query based upon specified query which contains response
 	 * record which should be filled-in with search results.
 	 * 
@@ -1405,7 +1405,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 	 */
 	protected abstract void queryNearestVector(QueryNearestVector query) throws SQLException;
 
-	/**
+    # /**
 	 * Query for function names within a previously queried executable -erec-
 	 * 
 	 * @param functionDescriptions list of functions to be filled in by the query (may be null)
@@ -1436,7 +1436,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Query for single function by name and address, within an executable
 	 * @param manager - container for record
 	 * @param erec - previously queried ExecutableRecord
@@ -1458,7 +1458,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return func;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all executables in the repository. 
 	 * 
 	 * @param manager the description manager
@@ -1516,7 +1516,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return erec;
 	}
 
-	/**
+    # /**
 	 * Query for an executable via its md5 hash
 	 * @param md5 is the 32-character md5 hash
 	 * @param res is DescriptionManager container to hold the result
@@ -1533,7 +1533,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return null;
 	}
 
-	/**
+    # /**
 	 * For every function currently in the manager, fill in its call graph information
 	 * @param manage the executable descriptor
 	 * @throws LSHException if the database does not track call graph information
@@ -1657,7 +1657,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return query.getResponse();
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryNearestVector command
 	 * 
 	 * @param query the query to execute
@@ -1669,7 +1669,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		queryNearestVector(query);
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryPair command
 	 * 
 	 * @param query the query to execute
@@ -1746,7 +1746,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		response.fillOutStatistics(accumulator);
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryNearest command
 	 * 
 	 * @param query the query to execute
@@ -1784,7 +1784,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryVectorId command
 	 * 
 	 * @param query contains list of ids to query
@@ -1797,7 +1797,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryVectorMatch command
 	 * 
 	 * @param query contains list of ids to match
@@ -1858,7 +1858,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * @param query the query to execute
 	 * @param filter the function filter 
 	 * @param response the response object
@@ -1919,7 +1919,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return vecToResultMap.size();
 	}
 
-	/**
+    # /**
 	 * Entry point for the InsertRequest command
 	 * @param query the query to execute
 	 * @throws LSHException if trying to insert into a read-only database
@@ -1946,7 +1946,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		response.numfunc = query.manage.numFunctions();
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryInfo command
 	 * @param query the query to execute
 	 */
@@ -1955,7 +1955,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		response.info = info;
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryName command
 	 * @param query the query to execute
 	 * @throws SQLException if there is an error issuing the query
@@ -1984,7 +1984,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Queries the database for all executables matching the search criteria in the given
 	 * {@link QueryExeInfo} object. Results are stored in the query info object
 	 * 
@@ -2033,7 +2033,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Queries the database for the number of executables matching the filter criteria
 	 * 
 	 * @param query the query information
@@ -2053,7 +2053,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 			compId, query.includeFakes);
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryChildren command
 	 * @param query the query to execute
 	 * @throws LSHException if the database does not track callgraph or the function is not found
@@ -2092,7 +2092,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the CreateDatabase command
 	 * @param query the query to execute
 	 * @throws LSHException if the configuration template cannot be loaded
@@ -2144,7 +2144,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the InstallCategoryRequest command
 	 * @param query the query to execute
 	 * @throws LSHException if the category is invalid or already exists
@@ -2178,7 +2178,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		response.info = info;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all function tags in the database.
 	 * 
 	 * @return list of function tags
@@ -2187,7 +2187,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		return info.functionTags;
 	}
 
-	/**
+    # /**
 	 * Entry point for the InstallTagRequest command
 	 * @param query the install query to execute
 	 * @throws LSHException if the function tag already exists or is not valid
@@ -2217,7 +2217,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		response.info = info;
 	}
 
-	/**
+    # /**
 	 * Entry point for the InstallMetadataRequest command
 	 * @param query the query to execute
 	 * @throws SQLException if basic info can't be written to the table
@@ -2239,7 +2239,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		response.info = info;
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryDelete command
 	 * @param query the query to execute
 	 * @throws SQLException if there is an error issuing the query
@@ -2284,7 +2284,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryUpdate command
 	 * @param query the query to execute
 	 * @throws LSHException if there is an error issuing the query
@@ -2306,7 +2306,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for QueryOptionalExist command
 	 * @param query is the parameters for the query
 	 * @throws SQLException for problems with the connection
@@ -2327,7 +2327,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the QueryOptionalValues command
 	 * @param query is the parameters for the query
 	 * @throws SQLException for problems with the connection
@@ -2348,7 +2348,7 @@ public abstract class AbstractSQLFunctionDatabase<VF extends LSHVectorFactory>
 		}
 	}
 
-	/**
+    # /**
 	 * Entry point for the InsertOptionalValues command
 	 * @param query is the parameters for the command
 	 * @throws SQLException for problems with the connection

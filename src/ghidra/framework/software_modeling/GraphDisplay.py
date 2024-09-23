@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.service.graph;
 
 import java.util.Collection;
@@ -24,15 +24,15 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Interface for objects that display (or consume) graphs.  Normally, a graph display represents
- * a visual component for displaying and interacting with a graph.  Some implementation may not
- * be a visual component, but instead consumes/processes the graph (i.e. graph exporter). In this
- * case, there is no interactive element and once the graph has been set on the display, it is
- * closed.
- */
+# * Interface for objects that display (or consume) graphs.  Normally, a graph display represents
+# * a visual component for displaying and interacting with a graph.  Some implementation may not
+# * be a visual component, but instead consumes/processes the graph (i.e. graph exporter). In this
+# * case, there is no interactive element and once the graph has been set on the display, it is
+# * closed.
+# */
 public interface GraphDisplay {
 
-	/**
+    # /**
 	 * Sets a {@link GraphDisplayListener} to be notified when the user changes the vertex focus
 	 * or selects one or more nodes in a graph window
 	 *
@@ -40,7 +40,7 @@ public interface GraphDisplay {
 	 */
 	public void setGraphDisplayListener(GraphDisplayListener listener);
 
-	/**
+    # /**
 	 * Tells the graph display window to focus the vertex with the given id
 	 *
 	 * @param vertex the vertex to focus
@@ -53,20 +53,20 @@ public interface GraphDisplay {
 	 */
 	public void setFocusedVertex(AttributedVertex vertex, EventTrigger eventTrigger);
 
-	/**
+    # /**
 	 * Returns the graph for this display
 	 * @return the graph for this display
 	 */
 	public AttributedGraph getGraph();
 
-	/**
+    # /**
 	 * Returns the currently focused vertex or null if no vertex is focused
 	 *
 	 * @return  the currently focused vertex or null if no vertex is focused
 	 */
 	public AttributedVertex getFocusedVertex();
 
-	/**
+    # /**
 	 * Tells the graph display window to select the vertices with the given ids
 	 *
 	 * @param vertexSet the set of vertices to select
@@ -79,19 +79,19 @@ public interface GraphDisplay {
 	 */
 	public void selectVertices(Set<AttributedVertex> vertexSet, EventTrigger eventTrigger);
 
-	/**
+    # /**
 	 * Returns a set of vertex ids for all the currently selected vertices
 	 *
 	 * @return  a set of vertex ids for all the currently selected vertices
 	 */
 	public Set<AttributedVertex> getSelectedVertices();
 
-	/**
+    # /**
 	 * Closes this graph display window.
 	 */
 	public void close();
 
-	/**
+    # /**
 	 * Sets the graph to be displayed or consumed by this graph display
 	 *
 	 * @param graph the graph to display or consume
@@ -107,7 +107,7 @@ public interface GraphDisplay {
 		setGraph(graph, new GraphDisplayOptions(graph.getGraphType()), title, append, monitor);
 	}
 
-	/**
+    # /**
 	 * Sets the graph to be displayed or consumed by this graph display
 	 *
 	 * @param graph the graph to display or consume
@@ -121,12 +121,12 @@ public interface GraphDisplay {
 	public void setGraph(AttributedGraph graph, GraphDisplayOptions options, String title,
 			boolean append, TaskMonitor monitor) throws CancelledException;
 
-	/**
+    # /**
 	 * Clears all graph vertices and edges from this graph display
 	 */
 	public void clear();
 
-	/**
+    # /**
 	 * Updates a vertex to a new name
 	 *
 	 * @param vertex the vertex to rename
@@ -134,14 +134,14 @@ public interface GraphDisplay {
 	 */
 	public void updateVertexName(AttributedVertex vertex, String newName);
 
-	/**
+    # /**
 	 * Returns the title of the current graph
 	 *
 	 * @return the title of the current graph
 	 */
 	public String getGraphTitle();
 
-	/**
+    # /**
 	 * Adds the action to the graph display. Not all GraphDisplays support adding custom
 	 * actions, so this may have no effect.
 	 *
@@ -149,7 +149,7 @@ public interface GraphDisplay {
 	 */
 	public void addAction(DockingActionIf action);
 
-	/**
+    # /**
 	 * Gets all actions that have been added to this graph display.  If this display does not
 	 * support actions, then an empty collection will be returned.
 	 * @return the actions

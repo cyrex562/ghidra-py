@@ -17,7 +17,7 @@ package ghidra.plugin.importer;
 
 import java.awt.Window;
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 
 import docking.widgets.OptionDialog;

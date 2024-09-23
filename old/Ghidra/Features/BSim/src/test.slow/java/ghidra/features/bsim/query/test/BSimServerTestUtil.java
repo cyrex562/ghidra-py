@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.test;
 
-import java.io.*;
+
 
 import ghidra.features.bsim.query.BSimControlLaunchable;
 import ghidra.util.MD5Utilities;

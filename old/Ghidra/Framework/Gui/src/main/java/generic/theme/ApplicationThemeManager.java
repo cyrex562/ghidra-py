@@ -16,7 +16,7 @@
 package generic.theme;
 
 import java.awt.Component;
-import java.io.*;
+
 import java.util.*;
 
 import javax.swing.*;

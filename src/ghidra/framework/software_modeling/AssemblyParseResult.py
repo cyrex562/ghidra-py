@@ -28,7 +28,7 @@ import ghidra.app.plugin.assembler.sleigh.tree.AssemblyParseBranch;
  */
 public abstract class AssemblyParseResult implements Comparable<AssemblyParseResult> {
 
-	/**
+    # /**
 	 * Construct a successful parse result
 	 * 
 	 * @param tree the tree output by the parser
@@ -37,7 +37,7 @@ public abstract class AssemblyParseResult implements Comparable<AssemblyParseRes
 		return new AssemblyParseAcceptResult(tree);
 	}
 
-	/**
+    # /**
 	 * Construct an error parse result
 	 * 
 	 * @param got the input buffer when the error occurred
@@ -47,7 +47,7 @@ public abstract class AssemblyParseResult implements Comparable<AssemblyParseRes
 		return new AssemblyParseErrorResult(got, suggestions);
 	}
 
-	/**
+    # /**
 	 * Check if the parse result is successful or an error
 	 * 
 	 * @return true if the result describes an error

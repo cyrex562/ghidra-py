@@ -25,7 +25,7 @@ import java.util.Map;
 public class WeakValueHashMap<K, V> extends AbstractWeakValueMap<K, V> {
 	private Map<K, WeakValueRef<K, V>> refMap;
 
-	/**
+    # /**
 	 * Constructs a new weak map
 	 */
 	public WeakValueHashMap() {
@@ -33,7 +33,7 @@ public class WeakValueHashMap<K, V> extends AbstractWeakValueMap<K, V> {
 		refMap = new HashMap<>();
 	}
 
-	/**
+    # /**
 	 * Constructs a new weak map with the given initial size
 	 * 
 	 * @param initialSize the initial size of the backing map

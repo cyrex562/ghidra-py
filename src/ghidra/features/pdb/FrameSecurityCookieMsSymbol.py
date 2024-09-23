@@ -69,7 +69,7 @@ public class FrameSecurityCookieMsSymbol extends AbstractMsSymbol {
 	protected CookieType cookieType;
 	protected int flags;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -90,7 +90,7 @@ public class FrameSecurityCookieMsSymbol extends AbstractMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -98,7 +98,7 @@ public class FrameSecurityCookieMsSymbol extends AbstractMsSymbol {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the register index.
 	 * @return Register index.
 	 */
@@ -106,7 +106,7 @@ public class FrameSecurityCookieMsSymbol extends AbstractMsSymbol {
 		return registerIndex;
 	}
 
-	/**
+    # /**
 	 * Returns the register name.
 	 * @return Register name.
 	 */
@@ -114,7 +114,7 @@ public class FrameSecurityCookieMsSymbol extends AbstractMsSymbol {
 		return registerName.toString();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CookieType}.
 	 * @return Cookie type index.
 	 */
@@ -122,7 +122,7 @@ public class FrameSecurityCookieMsSymbol extends AbstractMsSymbol {
 		return cookieType;
 	}
 
-	/**
+    # /**
 	 * Returns the flags.
 	 * @return Flags.
 	 */

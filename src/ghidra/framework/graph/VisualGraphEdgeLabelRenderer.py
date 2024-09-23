@@ -47,7 +47,7 @@ public class VisualGraphEdgeLabelRenderer extends DefaultEdgeLabelRenderer {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Sets the foreground color for this renderer when the edge is not picked/selected
 	 * 
 	 * @param color the color

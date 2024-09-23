@@ -112,7 +112,7 @@ public class LocalBSimQueryScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Iterate through the list of sorted matches, adding the top MATCHES_PER_FUNCTION elements
 	 * to the table for each source function.
 	 * @param localMatches matches in decreasing order of confidence
@@ -129,7 +129,7 @@ public class LocalBSimQueryScript extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Iterate through the list of sorted matches, adding the top MATCHES_PER_FUNCTION elements
 	 * to the table for each function ins {@code sourceFuncSet}.
 	 * 
@@ -334,7 +334,7 @@ public class LocalBSimQueryScript extends GhidraScript {
 		}
 	}
 
-	/****************************************************************************************
+    # /****************************************************************************************
 	 *              table stuff
 	 ****************************************************************************************/
 

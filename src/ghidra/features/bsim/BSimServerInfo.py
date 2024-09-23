@@ -24,23 +24,23 @@ import org.apache.commons.lang3.StringUtils;
 
 public class BSimServerInfo implements Comparable<BSimServerInfo> {
 
-	/**
+    # /**
 	 * Default port used for {@link DBType#postgres} server
 	 */
 	public static final int DEFAULT_POSTGRES_PORT = 5432;
 
-	/**
+    # /**
 	 * Default port used for {@link DBType#elastic} server
 	 */
 	public static final int DEFAULT_ELASTIC_PORT = 9200;
 
-	/**
+    # /**
 	 * File extension imposed for {@link DBType#file} server.
 	 * This is a rigid H2 database convention.
 	 */
 	public static final String H2_FILE_EXTENSION = ".mv.db";
 
-	/**
+    # /**
 	 * Enumerated Database Types
 	 */
 	public enum DBType {
@@ -54,7 +54,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 
 	private String shortDbName; // lazy: short DB Name 
 
-	/**
+    # /**
 	 * Construct a new {@link BSimServerInfo} object
 	 * @param dbType BSim DB type
 	 * @param host host name (ignored for {@link DBType#file})
@@ -104,7 +104,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		this.dbName = dbName;
 	}
 
-	/**
+    # /**
 	 * Construct a new {@link BSimServerInfo} object from a suitable database URL
 	 * (i.e., {@code postgresql:}, {@code https:}, {@code elastic:}, {@code file:}).
 	 * @param url supported BSim database URL
@@ -169,7 +169,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		return val.trim();
 	}
 
-	/**
+    # /**
 	 * Determine if this server info corresponds to Windows OS file path.
 	 * @return true if this server info corresponds to Windows OS file path.
 	 */
@@ -177,7 +177,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		return dbType == DBType.file && isWindowsFilePath(dbName);
 	}
 
-	/**
+    # /**
 	 * Check for Windows path after all '/' chars have been converted to '\' chars.
 	 * Example:  {@code C:/a/b/c}
 	 * @param path absolute file path
@@ -198,7 +198,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		return c != '/';
 	}
 
-	/**
+    # /**
 	 * Return BSim server info in URL format
 	 * @return BSim server info in URL format
 	 */
@@ -220,7 +220,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		return port > 0 ? (":" + Integer.toString(port)) : "";
 	}
 
-	/**
+    # /**
 	 * Return BSim server info in URL
 	 * @return BSim server info in URL
 	 * @throws MalformedURLException if unable to form supported URL
@@ -229,14 +229,14 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		return new URL(toURLString());
 	}
 
-	/**
+    # /**
 	 * @return BSim database type
 	 */
 	public DBType getDBType() {
 		return dbType;
 	}
 
-	/**
+    # /**
 	 * Get the server hostname or IP address as originally specified.
 	 * @return hostname or IP address as originally specified
 	 */
@@ -244,7 +244,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		return host;
 	}
 
-	/**
+    # /**
 	 * Get the port number.
 	 * @return port number
 	 */
@@ -252,7 +252,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		return port;
 	}
 
-	/**
+    # /**
 	 * Get the DB Name
 	 * @return DB name
 	 */
@@ -260,7 +260,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		return dbName;
 	}
 
-	/**
+    # /**
 	 * Get the DB Name.  In the case of {@link DBType#file} the directory path will
 	 * be excluded from returned name.
 	 * @return shortened DB Name
@@ -308,7 +308,7 @@ public class BSimServerInfo implements Comparable<BSimServerInfo> {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a BSim {@link FunctionDatabase} instance which corresponds to this DB server info.
 	 * The {@link Closeable} instance should be closed when no longer in-use to ensure that 
 	 * any associated database connection and resources are properly closed.

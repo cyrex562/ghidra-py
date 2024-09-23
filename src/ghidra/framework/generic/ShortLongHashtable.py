@@ -106,7 +106,7 @@ public class ShortLongHashtable implements Serializable {
         indexer.clear();
     }
 
-	/**
+    # /**
 	 * Return true if the given key is in the hashtable.
 	 * @param key the key whose presence is this map is to be tested.
 	 */

@@ -108,7 +108,7 @@ class ApplyStackVariables {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the stack offset after it settles down.
 	 * 
 	 * @param monitor

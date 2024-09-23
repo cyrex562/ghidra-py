@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  */
 public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 
-	/**
+    # /**
 	 * Factory for "16" version of {@link ProcedureStartSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -50,7 +50,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "32" version of {@link ProcedureStartSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -75,7 +75,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "3216" version of {@link ProcedureStartSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -100,7 +100,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "32St" version of {@link ProcedureStartSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -137,7 +137,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 	protected ProcedureFlags flags;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 */
@@ -145,7 +145,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		super(pdb);
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -153,7 +153,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return parentPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -161,7 +161,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return endPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the next pointer.
 	 * @return next pointer.
 	 */
@@ -169,7 +169,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return nextPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the procedure length.
 	 * @return Length.
 	 */
@@ -177,7 +177,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return procedureLength;
 	}
 
-	/**
+    # /**
 	 * Returns the debug start offset.
 	 * @return Debug start offset.
 	 */
@@ -185,7 +185,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return debugStartOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the debug end offset.
 	 * @return Debug end offset.
 	 */
@@ -193,7 +193,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return debugEndOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -201,7 +201,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -209,7 +209,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -217,7 +217,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ProcedureFlags}.
 	 * @return Procedure flags.
 	 */
@@ -225,7 +225,7 @@ public class ProcedureStartSymbolInternals extends AbstractSymbolInternals {
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

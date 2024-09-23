@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.map.AddressIndexKeyIterator;

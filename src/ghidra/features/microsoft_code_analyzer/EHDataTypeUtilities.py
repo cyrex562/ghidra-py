@@ -40,7 +40,7 @@ public class EHDataTypeUtilities {
 		// utility class; can't create
 	}
 
-	/**
+    # /**
 	 * If the indicated component in the data type exists and is an ehstate value, this returns
 	 * the integer value contained in that component of the data type.
 	 * @param dataType the data type whose base type is a structure and whose component's
@@ -56,7 +56,7 @@ public class EHDataTypeUtilities {
 		return getIntegerValue(dataType, componentOrdinal, memBuffer);
 	}
 
-	/**
+    # /**
 	 * If the indicated component in the data type exists and is a count value, this returns
 	 * the integer value contained in that component of the data type.
 	 * @param dataType the data type whose base type is a structure and whose component's
@@ -73,7 +73,7 @@ public class EHDataTypeUtilities {
 		return getIntegerValue(dataType, componentOrdinal, memBuffer);
 	}
 
-	/**
+    # /**
 	 * If the indicated component in the data type exists and is an integer value, this returns
 	 * the integer value contained in that component of the data type.
 	 * @param dataType the data type whose base type is a structure and whose component's
@@ -92,7 +92,7 @@ public class EHDataTypeUtilities {
 		return (int) scalar.getValue();
 	}
 
-	/**
+    # /**
 	 * If the indicated component in the data type exists and is a Scalar value, this returns
 	 * the scalar value contained in that component of the data type.
 	 * @param dataType the data type whose base type is a structure and whose component's
@@ -157,7 +157,7 @@ public class EHDataTypeUtilities {
 		return struct.getComponent(componentOrdinal);
 	}
 
-	/**
+    # /**
 	 * If the indicated component in the data type exists and is an absolute or relative value that
 	 * equates to an address, this returns the address indicated by that component of the data type.
 	 * @param dataType the data type whose base type is a structure and whose component's
@@ -192,7 +192,7 @@ public class EHDataTypeUtilities {
 				compDt.getName() + " data type, which doesn't produce an Address value.");
 	}
 
-	/**
+    # /**
 	 * Gets the address of the indicated component in the data type that is placed in a program
 	 * at the indicated memory buffer. If the specified address can't be determined then
 	 * null is returned.
@@ -213,7 +213,7 @@ public class EHDataTypeUtilities {
 		return getComponentAddress(comp, memBuffer);
 	}
 
-	/**
+    # /**
 	 * Creates a comment if it doesn't already exist at the specified address in the program
 	 * and if it doesn't contain the <code>dataTypeName</code> string. 
 	 * The comment will contain the prefix, the <code>dataTypeName</code>, and the suffix. 
@@ -251,7 +251,7 @@ public class EHDataTypeUtilities {
 		return existingComment;
 	}
 
-	/**
+    # /**
 	 * Creates a symbol if one containing the <code>dataTypeName</code> doesn't already exist at 
 	 * the specified address in the program.
 	 * 
@@ -293,7 +293,7 @@ public class EHDataTypeUtilities {
 		return symbol;
 	}
 
-	/**
+    # /**
 	 * Creates a symbol if it doesn't already exist at the specified address in the program
 	 * by adding an underscore and the address to the symbolPrefix string that is passed to it.
 	 * @param program the program.
@@ -314,7 +314,7 @@ public class EHDataTypeUtilities {
 		return symbolTable.createLabel(symbolAddress, addressAppendedName, SourceType.ANALYSIS);
 	}
 
-	/**
+    # /**
 	 * Creates a function at the specified address in the program if there isn't already one there
 	 * and if it can be created.
 	 * @param program the program
@@ -351,7 +351,7 @@ public class EHDataTypeUtilities {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Determines if the specified address is a valid address in the program's memory.
 	 * @param program the program to check.
 	 * @param address the address to check.
@@ -364,7 +364,7 @@ public class EHDataTypeUtilities {
 		return program.getMemory().getLoadedAndInitializedAddressSet().contains(address);
 	}
 
-	/**
+    # /**
 	 * Checks to determine if the address in the indicated program exists in memory and
 	 * could possibly be used for creating a function. It is expected to have undefined data
 	 * or an instruction at the address.

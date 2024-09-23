@@ -15,7 +15,7 @@
  */
 package generic.lsh.vector;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.xml.XmlElement;
@@ -43,28 +43,28 @@ public class WeightFactory {
 		probdiff1_norm = probdiff1 * scale;
 	}
 	
-	/**
+    # /**
 	 * @return number of weights in the IDF portion of the table
 	 */
 	public final int getIDFSize() {
 		return idfweight.length;
 	}
 
-	/**
+    # /**
 	 * @return number of weights in the TF portion of the table
 	 */
 	public final int getTFSize() {
 		return tfweight.length;
 	}
 
-	/**
+    # /**
 	 * @return number of floating-point entries needed to serialize the factory
 	 */
 	public final int getSize() {
 		return idfweight.length + tfweight.length + 7;
 	}
 
-	/**
+    # /**
 	 * @param val
 	 * @return the IDF weight at the given position
 	 */
@@ -72,7 +72,7 @@ public class WeightFactory {
 		return idfweight[val];
 	}
 
-	/**
+    # /**
 	 * @param val is the term count (-1)
 	 * @return the TF weight for the given count
 	 */
@@ -80,7 +80,7 @@ public class WeightFactory {
 		return tfweight[val];
 	}
 
-	/**
+    # /**
 	 * Given an IDF position and a TF count, build the feature coefficient
 	 * @param i is the IDF position
 	 * @param t is the TF count
@@ -90,49 +90,49 @@ public class WeightFactory {
 		return idfweight[i] * tfweight[t];
 	}
 
-	/**
+    # /**
 	 * @return the weight normalization factor
 	 */
 	public final double getWeightNorm() {
 		return weightnorm;
 	}
 
-	/**
+    # /**
 	 * @return the first feature flip penalty parameter
 	 */
 	public final double getFlipNorm0() {
 		return probflip0_norm;
 	}
 
-	/**
+    # /**
 	 * @return the first feature drop penalty parameter
 	 */
 	public final double getDiffNorm0() {
 		return probdiff0_norm;
 	}
 
-	/**
+    # /**
 	 * @return the second feature flip penalty parameter
 	 */
 	public final double getFlipNorm1() {
 		return probflip1_norm;
 	}
 
-	/**
+    # /**
 	 * @return the second feature drop penalty parameter
 	 */
 	public final double getDiffNorm1() {
 		return probdiff1_norm;
 	}
 
-	/**
+    # /**
 	 * @return the final score scaling factor
 	 */
 	public final double getScale() {
 		return scale;
 	}
 
-	/**
+    # /**
 	 * @return the final score addend
 	 */
 	public final double getAddend() {
@@ -146,7 +146,7 @@ public class WeightFactory {
 		}
 	}
 	
-	/**
+    # /**
 	 * Serialize this object as XML to a Writer
 	 * @param fwrite is the Writer
 	 * @throws IOException
@@ -176,7 +176,7 @@ public class WeightFactory {
 		fwrite.append("<weightfactory>\n");
 	}
 
-	/**
+    # /**
 	 * Condense weight table down to array of doubles
 	 * @return array of doubles
 	 */
@@ -204,7 +204,7 @@ public class WeightFactory {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Initialize the WeightTable from an array of doubles
 	 * @param weightArray
 	 */
@@ -230,7 +230,7 @@ public class WeightFactory {
 		updateNorms();
 	}
 
-	/**
+    # /**
 	 * Build (deserialize) this object from an XML stream
 	 * @param parser is the XML parser
 	 */

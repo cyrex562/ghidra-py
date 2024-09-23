@@ -29,7 +29,7 @@ class EditStructureUtils {
 	}
 
 
-	/**
+    # /**
 	 * Method to determine if the given containing struct has components at the given offset 
 	 * that are either the same, all undefined1's or equivalently sized undefineds as the components
 	 * in the given possible newInternalStruct
@@ -91,7 +91,7 @@ class EditStructureUtils {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to determine if there are at least the given length of undefined size 1 components at the given offset in the given structure
 	 * @param structure the given structure
 	 * @param offset the given offset
@@ -122,7 +122,7 @@ class EditStructureUtils {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to check that all components starting with the one at the given offset and encompassing
 	 * all up to the given length from the given offset are an undefined data type. If so, clear them all and return true.
 	 * If not, do nothing and return false.
@@ -171,7 +171,7 @@ class EditStructureUtils {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Method to determine if data type is an undefined size 1 data type
 	 * @param dataType the given data type
 	 * @return true if given data type is undefined size 1, false otherwise
@@ -186,7 +186,7 @@ class EditStructureUtils {
 	}
 
 
-	/**
+    # /**
 	 * Method to determine if there are at least the given length of undefined (any size) components 
 	 * at the given offset in the given structure. This is only valid for non-packed structures.
 	 * @param structure the given structure
@@ -231,7 +231,7 @@ class EditStructureUtils {
 	}
 
 
-	/**
+    # /**
 	 * Method to add a field to the given structure. If the structure already has data 
 	 * at the given offset, don't replace. If there is undefined data there then replace 
 	 * it with the data type. If the structure empty, insert the data type at the given offset. 
@@ -274,7 +274,7 @@ class EditStructureUtils {
 	}
 
 
-	/**
+    # /**
 	 * Method to determine if the given structure has room at the given offset to have a component 
 	 * of the given length added to it. This is only valid for non-packed structures.
 	 * @param structureDataType the given structure
@@ -342,7 +342,7 @@ class EditStructureUtils {
 	}
 
 
-	/**
+    # /**
 	 * Method to retrieve the number of undefined size 1 components in the given structure before the given offset
 	 * @param structure the given structure
 	 * @param offset the given offset
@@ -374,7 +374,7 @@ class EditStructureUtils {
 		return numUndefineds;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the number of undefined size 1 components starting at the given offset in the given structure
 	 * @param structure the given structure
 	 * @param offset the given offset

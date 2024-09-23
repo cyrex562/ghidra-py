@@ -29,7 +29,7 @@ public class ObjectAttribute<T extends KeyedObject> extends Attribute<T> {
 	private Map<Long, Object> values;
 	private static String attributeType = AttributeManager.OBJECT_TYPE;
 
-	/** Constructor.
+    # /** Constructor.
 	 * @param name The name used to identify this attribute.
 	 * @param set The KeyIndexableSet whose elements can be assigned
 	 * a value within this attribute.
@@ -40,7 +40,7 @@ public class ObjectAttribute<T extends KeyedObject> extends Attribute<T> {
 		values = new HashMap<>();
 	}
 
-	/** Set the value of this attribute for the specified KeyedObject.
+    # /** Set the value of this attribute for the specified KeyedObject.
 	 * @param o The KeyedObject that is assigned the value. Should
 	 * be a member of the owningSet.
 	 * @param value The value to associate with the specified KeyedObject.
@@ -60,7 +60,7 @@ public class ObjectAttribute<T extends KeyedObject> extends Attribute<T> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Return the value associated to the specified KeyedObject.
 	 */
 	public Object getValue(KeyedObject o) //throws NoValueException
@@ -69,7 +69,7 @@ public class ObjectAttribute<T extends KeyedObject> extends Attribute<T> {
 		return values.get(o.key());
 	}
 
-//	/** Debug printing. */
+//    # /** Debug printing. */
 //  private void reportValues()
 //  {
 //       Err.debug(this,  "Attribute: " + name() + "\n" );
@@ -83,7 +83,7 @@ public class ObjectAttribute<T extends KeyedObject> extends Attribute<T> {
 //       Err.debug(this, "\n");
 //  }
 
-	/** Return the type of Attribute, i.e. what kind of values does
+    # /** Return the type of Attribute, i.e. what kind of values does
 	 * this attribute hold. "Long", "Object", "Double" are examples.
 	 */
 	@Override
@@ -91,13 +91,13 @@ public class ObjectAttribute<T extends KeyedObject> extends Attribute<T> {
 		return attributeType;
 	}
 
-	/** Removes all assigned values of this attribute. */
+    # /** Removes all assigned values of this attribute. */
 	@Override
 	public void clear() {
 		values.clear();
 	}
 
-	/** Return the attribute of the specified KeyedObject as a String.
+    # /** Return the attribute of the specified KeyedObject as a String.
 	 */
 	@Override
 	public String getValueAsString(KeyedObject o) {

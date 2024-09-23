@@ -20,7 +20,7 @@ import static generic.test.AbstractGenericTest.invokeInstanceMethod;
 import static generic.test.TestUtils.*;
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.StringUtils;

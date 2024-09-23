@@ -33,14 +33,14 @@ import ghidra.util.exception.CancelledException;
  */
 interface ParsingIterator<E> {
 
-	/**
+    # /**
 	 * Returns {@code true} if more elements exist
 	 * @return {@code true} if more elements exist
 	 * @throws CancelledException upon user cancellation
 	 */
 	boolean hasNext() throws CancelledException;
 
-	/**
+    # /**
 	 * Returns the next element in the iteration.
 	 * @return the next element in the iteration
 	 * @throws CancelledException upon user cancellation
@@ -48,7 +48,7 @@ interface ParsingIterator<E> {
 	 */
 	E next() throws CancelledException, NoSuchElementException;
 
-	/**
+    # /**
 	 * Returns the next element in the iteration without advancing the iterator.
 	 * @return the next element in the iteration
 	 * @throws CancelledException upon user cancellation

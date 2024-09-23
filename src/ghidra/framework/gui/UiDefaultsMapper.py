@@ -76,7 +76,7 @@ public class UiDefaultsMapper {
 	public static final String LAF_FONT_ID_PREFIX = FontValue.LAF_ID_PREFIX;
 	public static final String LAF_ICON_ID_PREFIX = IconValue.LAF_ID_PREFIX;
 
-	/** A prefix for UIManager properties that are not colors, fonts or icons (e.g., boolean) */
+    # /** A prefix for UIManager properties that are not colors, fonts or icons (e.g., boolean) */
 	public static final String LAF_PROPERTY_PREFIX = "laf.property.";
 	private static final String LAF_COLOR_PALETTE_PREFIX = "laf.palette.color.";
 	private static final String LAF_FONT_PALETTE_PREFIX = "laf.palette.font.";
@@ -91,10 +91,10 @@ public class UiDefaultsMapper {
 	protected UIDefaults defaults;
 	private GThemeValueMap extractedValues;
 
-	/** 'normalized' values have keys that start with 'laf.' */
+    # /** 'normalized' values have keys that start with 'laf.' */
 	private GThemeValueMap normalizedValues = new GThemeValueMap();
 
-	/** Maps Look and Feel keys to standardized keys that start with 'laf.' */
+    # /** Maps Look and Feel keys to standardized keys that start with 'laf.' */
 	private Map<String, String> javaIdToNormalizedId = new HashMap<>();
 	protected Set<String> ignoredJavaIds = new HashSet<>();
 
@@ -148,7 +148,7 @@ public class UiDefaultsMapper {
 		assignNormalizedIconValues();
 	}
 
-	/**
+    # /**
 	 * Returns the normalized id to value map that will be installed into the theme manager to be
 	 * the user changeable values for affecting the Java LookAndFeel colors, fonts, and icons.
 	 * <p>
@@ -161,7 +161,7 @@ public class UiDefaultsMapper {
 		return normalizedValues;
 	}
 
-	/**
+    # /**
 	 * Updates the UIDefaults file with indirect colors (GColors) and any overridden font or icon
 	 * values as defined in theme.properites files and saved themes.
 	 * @param currentValues a Map that contains all the values including those the may have
@@ -180,7 +180,7 @@ public class UiDefaultsMapper {
 		installOverriddenPropertiesIntoUIDefaults(currentValues);
 	}
 
-	/**
+    # /**
 	 * Returns a mapping of normalized LaF Ids so that when fonts and icons get changed using the
 	 * normalized ids that are presented to the user, we know which LaF ids need to be updated in
 	 * the UiDefaults so that the LookAndFeel will pick up and use the changes.
@@ -197,7 +197,7 @@ public class UiDefaultsMapper {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Registers any {@link LookAndFeel} ids that are not used directly (e.g. "control", "text",
 	 * etc.) so that these values won't get mapped to any normalized id. There is no need for these
 	 * values to show up in the theme values, since changing them will have no effect. They are
@@ -234,7 +234,7 @@ public class UiDefaultsMapper {
 		ignoredJavaIds.add("scrollbar");
 	}
 
-	/**
+    # /**
 	 * Defines the values to assign to all the system color ids based on the best representative
 	 * value defined in the {@link BasicLookAndFeel}
 	 */
@@ -264,7 +264,7 @@ public class UiDefaultsMapper {
 
 	}
 
-	/**
+    # /**
 	 * Assigns the system color id to a color value from the UiDefaults map.
 	 * @param group the system color id to get a value for
 	 * @param javaId the LaF key to use to retrieve a color from the UiDefaults
@@ -279,7 +279,7 @@ public class UiDefaultsMapper {
 		normalizedValues.addColor(new ColorValue(group, javaColor));
 	}
 
-	/**
+    # /**
 	 * This allows clients to hard-code a chosen color for a group
 	 *
 	 * @param group the system color id to assign the given color
@@ -289,7 +289,7 @@ public class UiDefaultsMapper {
 		normalizedValues.addColor(new ColorValue(group, color));
 	}
 
-	/**
+    # /**
 	 * This allows clients to hard-code a chosen font for a group
 	 *
 	 * @param group the system font id to assign the given font
@@ -303,7 +303,7 @@ public class UiDefaultsMapper {
 		normalizedValues.addFont(new FontValue(componentName, font));
 	}
 
-	/**
+    # /**
 	 * Defines the font values to use for each group based upon a chosen Java representative.
 	 */
 	protected void pickRepresentativeValueForFontGroups() {
@@ -323,7 +323,7 @@ public class UiDefaultsMapper {
 		normalizedValues.addFont(new FontValue(fontGroup, fromUiResource(representativeFont)));
 	}
 
-	/**
+    # /**
 	 * Sets the font grouper for each component group
 	 */
 	protected void buildComponentToFontGrouperMap() {
@@ -331,7 +331,7 @@ public class UiDefaultsMapper {
 		mapComponentsToFontGrouper(viewFontGrouper, VIEW_COMPONENTS);
 	}
 
-	/**
+    # /**
 	 * Sets the color grouper for each component group
 	 */
 	protected void buildComponentToColorGrouperMap() {
@@ -339,7 +339,7 @@ public class UiDefaultsMapper {
 		mapComponentsToColorGrouper(tooltipColorGrouper, TOOLTIP_COMPONENTS);
 	}
 
-	/**
+    # /**
 	 * Assigns every component name in the component group to the given ColorValueMatcher
 	 * @param grouper the ColorMatcher that will provide the precedence of system ids to
 	 * search when replacing LaF component specific values
@@ -351,7 +351,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * Assigns every component name in a component group to the given FontValueMapper
 	 * @param grouper the FontValueMatcher that will provide the precedence of system font ids to
 	 * search when replacing LaF component specific fonts with a system Font
@@ -363,7 +363,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * Populates the GThemeValueMap with normalized font ids. For example
 	 * it will assign "laf.font.Button.font" to "system.font.control".
 	 */
@@ -386,7 +386,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * Populates the GThemeValueMap with normalized icon ids. For example
 	 * it will assign "laf.font.CheckBox.icon" to a direct icon that was mined from the UiDefaults
 	 * using the id "CheckBox.icon"
@@ -402,7 +402,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * Populates the GThemeValueMap with normalized color ids. For example
 	 * it will assign "laf.color.Button.background" to "system.color.bg.control".
 	 */
@@ -422,7 +422,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a {@link ColorValue} for the given id. It either finds a system color id that matches
 	 * the given color, or a shared palette color if no system color found.
 	 * @param id the id to get a color value for
@@ -441,7 +441,7 @@ public class UiDefaultsMapper {
 		return new ColorValue(id, systemId);
 	}
 
-	/**
+    # /**
 	 * Creates a {@link FontValue} for the given id. It either finds a system font id that matches
 	 * the given Font, or a shared palette Font if no system font found.
 	 * @param id the id to get a Font value for
@@ -458,7 +458,7 @@ public class UiDefaultsMapper {
 		return new FontValue(id, systemFontId);
 	}
 
-	/**
+    # /**
 	 * Finds a matching color palette id or creates a new one
 	 * @param lafColor the color to find a matching palette color for
 	 * @return  a matching color palette id or creates a new one
@@ -475,7 +475,7 @@ public class UiDefaultsMapper {
 		return paletteId;
 	}
 
-	/**
+    # /**
 	 * Finds a matching font palette id or creates a new one
 	 * @param lafFont the font to find a matching palette font for
 	 * @return  a matching font palette id or creates a new one
@@ -493,7 +493,7 @@ public class UiDefaultsMapper {
 		return paletteId;
 	}
 
-	/**
+    # /**
 	 * Attempts to find a system color id that matches the given color. The order system ids are
 	 * searched depends on the component (Button, Menu, etc.) which is derived from the given
 	 * lafId.
@@ -515,7 +515,7 @@ public class UiDefaultsMapper {
 		return defaultColorMatcher.getGroupId(lafColor);
 	}
 
-	/**
+    # /**
 	 * Attempts to find a system font id that matches the given font. The order system fonts are
 	 * searched depends on the component (Button, Menu, etc.) which is derived from the given
 	 * lafId.
@@ -537,7 +537,7 @@ public class UiDefaultsMapper {
 		return defaultFontMatcher.getGroupId(lafFont);
 	}
 
-	/**
+    # /**
 	 * Gets the component name from the given lafId.
 	 * @param lafId the lafId that starts with a component name
 	 * @return  the component name from the given lafId.
@@ -550,7 +550,7 @@ public class UiDefaultsMapper {
 		return lafId.substring(0, dotIndex);
 	}
 
-	/**
+    # /**
 	 * Replaces UiDefaults values with {@link GColorUIResource} values the provide the theme
 	 * indirection.
 	 */
@@ -566,7 +566,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * Replace UiDefault values with theme overridden values.
 	 * @param currentValues the theme values that potentially override a laf icon value
 	 */
@@ -582,7 +582,7 @@ public class UiDefaultsMapper {
 
 	}
 
-	/**
+    # /**
 	 * Replaces any theme overridden fonts into the UiDefaults.
 	 * @param currentValues the theme values that potentially override a laf font value
 	 */
@@ -597,7 +597,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * Updates all non- (color/font/icon) UIManager properties.  These properties are UIManager
 	 * properties that the user has overridden in the {@code theme.properties} files.  These
 	 * properties may use any type of value that is not a color/font/icon.
@@ -609,7 +609,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * When putting {@link GColorUIResource} values into the UiDefaults, we need to make sure
 	 * we use the same instance for the same color. Some LookAndFeels do "==" checks on colors
 	 * when updating UI values.
@@ -635,7 +635,7 @@ public class UiDefaultsMapper {
 		normalizedValues.addColor(new ColorValue(normalizedId, sytemId));
 	}
 
-	/**
+    # /**
 	 * Mines the UiDefaults for all color values.
 	 * @return a map of id to values for UIDefaults Colors.
 	 */
@@ -667,7 +667,7 @@ public class UiDefaultsMapper {
 		return font;
 	}
 
-	/**
+    # /**
 	 * Finds all ids in the UIDefaults for a specific type (Color, Font, Icon)
 	 * @param clazz the class of the type to mine for
 	 * @return a list of all ids that have the given value type
@@ -686,7 +686,7 @@ public class UiDefaultsMapper {
 		return ids;
 	}
 
-	/**
+    # /**
 	 * Used to match values (Colors or Fonts) into appropriate system groups. System group are
 	 * searched in the order the groups are given in the constructor.
 	 * <p>
@@ -729,7 +729,7 @@ public class UiDefaultsMapper {
 		}
 	}
 
-	/**
+    # /**
 	 * Searches through all the system color ids registered for this matcher to find a system color
 	 * id that matches a given color. The order that color system ids are added is important and is
 	 * the precedence order if more than one system color id has the same color.
@@ -747,7 +747,7 @@ public class UiDefaultsMapper {
 
 	}
 
-	/**
+    # /**
 	 * Searches through all the system font ids registered for this matcher to find a system font id
 	 * that matches a given font. The order that system font ids are added is important and is
 	 * the precedence order if more than one system id has the same font.

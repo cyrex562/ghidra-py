@@ -35,7 +35,7 @@ public class PatternEvalTableProvider extends ComponentProviderAdapter {
 
 	private JPanel mainPanel;
 
-	/**
+    # /**
 	 * Creates a provider for a Pattern Evaluation table
 	 * @param currentStats {@link PatternEvaluationStats} object to display in the table
 	 * @param parent parent {@link Component} of this provider

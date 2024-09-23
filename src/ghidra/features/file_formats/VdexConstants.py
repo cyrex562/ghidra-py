@@ -31,47 +31,47 @@ import ghidra.program.model.mem.MemoryBlock;
  */
 public final class VdexConstants {
 
-	/**
+    # /**
 	 * <pre>
 	 * static constexpr uint8_t kVdexMagic[] = { 'v', 'd', 'e', 'x' };
 	 * </pre>
 	 */
 	public final static String MAGIC = "vdex";
 
-	/** 
+    # /** 
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/o-preview/runtime/vdex_file.h#64">o-preview/runtime/vdex_file.h</a>
 	 */
 	public final static String vdex_version_003 = "003";
-	/** 
+    # /** 
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/oreo-release/runtime/vdex_file.h#69">oreo-release/runtime/vdex_file.h</a>
 	 */
 	public final static String VDEX_VERSION_006 = "006";
-	/**
+    # /**
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/oreo-m2-release/runtime/vdex_file.h#76">oreo-m2-release/runtime/vdex_file.h</a>
 	 * <br>
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/o-iot-preview-5/runtime/vdex_file.h#76">o-iot-preview-5/runtime/vdex_file.h</a>
 	 */
 	public final static String VDEX_VERSION_010 = "010";
-	/** 
+    # /** 
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/o-mr1-iot-preview-6/runtime/vdex_file.h#76">o-mr1-iot-preview-6/runtime/vdex_file.h</a>
 	 */
 	public final static String vdex_version_011 = "011";
-	/**
+    # /**
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/pie-release/runtime/vdex_file.h#96">pie-release/runtime/vdex_file.h</a>
 	 */
 	public final static String VDEX_VERSION_019 = "019";
-	/**
+    # /**
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android10-release/runtime/vdex_file.h#118">android10-release/runtime/vdex_file.h</a>
 	 * <br>
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android11-release/runtime/vdex_file.h#118">android11-release/runtime/vdex_file</a>
 	 */
 	public final static String VDEX_VERSION_021 = "021";
-	/**
+    # /**
 	 * <a href="https://android.googlesource.com/platform/art/+/refs/heads/android12-release/runtime/vdex_file.h#127">android12-release/runtime/vdex_file.h</a>
 	 */
 	public final static String VDEX_VERSION_027 = "027";
 
-	/**
+    # /**
 	 * The format version of the dex section header and the dex section, 
 	 * containing both the dex code and the quickening data.
 	 * Last update: Add owned section for CompactDex.
@@ -79,19 +79,19 @@ public final class VdexConstants {
 	 */
 	public final static String kDexSectionVersion = "002";
 
-	/**
+    # /**
 	 * If the .vdex file has no dex section (hence no dex code nor quickening data),
 	 * we encode this magic version.
 	 * Cite: https://android.googlesource.com/platform/art/+/refs/heads/pie-release/runtime/vdex_file.h
 	 */
 	public final static String kDexSectionVersionEmpty = "000";
 
-	/**
+    # /**
 	 * Note: The file is called "primary" to match the naming with profiles.
 	 */
 	public final static String kVdexNameInDmFile = "primary.vdex";
 
-	/**
+    # /**
 	 * NOTE: only going to support RELEASE versions
 	 */
 	//@formatter:off
@@ -113,7 +113,7 @@ public final class VdexConstants {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given program contain VDEX information.
 	 * @param program the program to inspect for being VDEX
 	 * @return true if the program is VDEX

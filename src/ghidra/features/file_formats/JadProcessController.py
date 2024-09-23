@@ -15,7 +15,7 @@
  */
 package ghidra.file.jad;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.app.util.importer.MessageLog;
@@ -119,7 +119,7 @@ public class JadProcessController {
 		}
 	}
 
-	/**
+    # /**
 	 * Reads the data from stdin and sterr.
 	 * It is important to clear the I/O streams of a native process.
 	 * If the stream fills, then the process will block.
@@ -154,7 +154,7 @@ public class JadProcessController {
 		thread.start();
 	}
 
-	/**
+    # /**
 	 * Kicks off a thread to kill the JAD process.
 	 */
 	public void dispose() {
@@ -168,7 +168,7 @@ public class JadProcessController {
 		new Thread(new Disposer()).start();
 	}
 
-	/**
+    # /**
 	 * Returns messages sent from JAD process to stdin and stderr.
 	 * @return messages sent from JAD process to stdin and stderr
 	 */

@@ -3,7 +3,7 @@
  */
 package mobiledevices.dmg.hfsplus;
 
-import java.io.*;
+
 import java.util.HashMap;
 import java.util.Map;
 

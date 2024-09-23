@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.*;
+
 import java.util.Arrays;
 import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
@@ -29,7 +29,7 @@ import java.util.zip.Inflater;
 public class CartV1StreamDecompressor extends CartV1StreamProcessor {
 	private Inflater inflater;
 
-	/**
+    # /**
 	 * Construct a stream decompressor.
 	 *
 	 * @param delegate InputStream to read and apply decompression
@@ -39,7 +39,7 @@ public class CartV1StreamDecompressor extends CartV1StreamProcessor {
 		this(new PushbackInputStream(delegate, 2));
 	}
 
-	/**
+    # /**
 	 * Construct a stream decompressor.
 	 *
 	 * @param delegate PushbackInputStream to read and apply decompression
@@ -75,7 +75,7 @@ public class CartV1StreamDecompressor extends CartV1StreamProcessor {
 		}
 	}
 
-	/**
+    # /**
 	 * Read the next chunk in the stream and decompress
 	 *
 	 * @return True if more data is now available, False otherwise.

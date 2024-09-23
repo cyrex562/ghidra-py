@@ -20,13 +20,13 @@ package ghidra.framework.plugintool.util;
  * Notifications for when services are added to or removed from a PluginTool. 
  */
 public interface ServiceListener {
-	/**
+    # /**
 	 * Notifies the listener that a service has been added to the tool.
 	 * @param interfaceClass the interface class that the given service implements.
 	 * @param service the implementation of the service.
 	 */
 	void serviceAdded(Class<?>  interfaceClass, Object service);
-	/**
+    # /**
 	 * Notifies the listener that a service has been removed from the tool.
 	 * @param interfaceClass the interface class that the given service implements.
 	 * @param service the implementation of the service.

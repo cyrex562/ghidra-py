@@ -56,7 +56,7 @@ class ProjectToolBar extends JToolBar implements ToolChestChangeListener {
 		populateToolBar();
 	}
 
-	/**
+    # /**
 	 * ToolSet was added to the project toolchest
 	 */
 	@Override
@@ -104,7 +104,7 @@ class ProjectToolBar extends JToolBar implements ToolChestChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Redo the tool bar.
 	 */
 	private void populateToolBar() {
@@ -120,7 +120,7 @@ class ProjectToolBar extends JToolBar implements ToolChestChangeListener {
 		repaint();
 	}
 
-	/**
+    # /**
 	 * Add a button for the tool template to the tool bar.
 	 */
 	private void addConfig(ToolTemplate toolConfig) {

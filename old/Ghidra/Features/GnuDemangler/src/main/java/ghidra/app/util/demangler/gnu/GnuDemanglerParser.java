@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.gnu;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

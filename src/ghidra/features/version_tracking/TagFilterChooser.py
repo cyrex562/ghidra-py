@@ -22,7 +22,7 @@ import java.util.Map;
 
 interface TagFilterChooser {
 
-	/**
+    # /**
 	 * Returns a map of tag string values to tags that are <b>excluded</b>.  That is, the given
 	 * map of tags are those which the client filter should exclude from view.
 	 * 

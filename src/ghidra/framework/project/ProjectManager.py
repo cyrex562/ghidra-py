@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-import java.io.IOException;
+
 import java.net.URL;
 
 import ghidra.framework.client.RepositoryAdapter;
@@ -36,7 +36,7 @@ public interface ProjectManager {
 	public static final String APPLICATION_TOOL_EXTENSION = ".tcd";// default extension for tools
 	public static final String APPLICATION_TOOLS_DIR_NAME = "tools";//tools directory name 
 
-	/**
+    # /**
 	 * Create a project on the local filesystem.
 	 * 
 	 * @param projectLocator location for where the project should be created
@@ -49,58 +49,58 @@ public interface ProjectManager {
 	public Project createProject(ProjectLocator projectLocator, RepositoryAdapter repAdapter,
 			boolean remember) throws IOException;
 
-	/**
+    # /**
 	 * Get list of projects that user most recently opened.
 	 * @return list of project URLs 
 	 */
 	public ProjectLocator[] getRecentProjects();
 
-	/**
+    # /**
 	 * Get list of projects that user most recently viewed.
 	 * @return list of project URLs 
 	 */
 	public URL[] getRecentViewedProjects();
 
-	/**
+    # /**
 	 * Get the project that is currently open.
 	 * @return currently open project, return null if there is no
 	 * project opened
 	 */
 	public Project getActiveProject();
 
-	/**
+    # /**
 	 * Get the last opened (active) project.
 	 * @return project last opened by the user; returns NULL if a project
 	 * was never opened OR the last opened project is no longer valid
 	 */
 	public ProjectLocator getLastOpenedProject();
 
-	/**
+    # /**
 	 * Set the projectLocator of last opened (active) project; this projectLocator is returned
 	 * in the getLastOpenedProject() method.
 	 * @param projectLocator project location of last project that was opened
 	 */
 	public void setLastOpenedProject(ProjectLocator projectLocator);
 
-	/**
+    # /**
 	 * Keep the projectLocator on the list of known projects.
 	 * @param projectLocator project location
 	 */
 	public void rememberProject(ProjectLocator projectLocator);
 
-	/**
+    # /**
 	 * Keep the url on the list of known projects.
 	 * @param url project identifier
 	 */
 	public void rememberViewedProject(URL url);
 
-	/**
+    # /**
 	 * Remove the project url from the list of known viewed projects.
 	 * @param url project identifier
 	 */
 	public void forgetViewedProject(URL url);
 
-	/**
+    # /**
 	 * Open a project from the file system. Add the project url
 	 * to the list of known projects.
 	 * @param projectLocator project location
@@ -115,7 +115,7 @@ public interface ProjectManager {
 	public Project openProject(ProjectLocator projectLocator, boolean doRestore, boolean resetOwner)
 			throws NotFoundException, NotOwnerException, LockException;
 
-	/**
+    # /**
 	 * Delete the project in the given location.
 	 * 
 	 * @param projectLocator project location
@@ -123,13 +123,13 @@ public interface ProjectManager {
 	 */
 	public boolean deleteProject(ProjectLocator projectLocator);
 
-	/**
+    # /**
 	 * Returns true if a project with the given projectLocator exists.
 	 * @param projectLocator project location
 	 */
 	public boolean projectExists(ProjectLocator projectLocator);
 
-	/**
+    # /**
 	 * Establish a connection to the given host and port number. 
 	 * @param host server name or IP address
 	 * @param portNumber server port or 0 for default
@@ -139,13 +139,13 @@ public interface ProjectManager {
 	public RepositoryServerAdapter getRepositoryServerAdapter(String host, int portNumber,
 			boolean forceConnect);
 
-	/**
+    # /**
 	 * Get the information that was last used to access a repository
 	 * managed by a Ghidra server.
 	 */
 	public ServerInfo getMostRecentServerInfo();
 
-	/**
+    # /**
 	 * Return the user's ToolChest
 	 */
 	public ToolChest getUserToolChest();

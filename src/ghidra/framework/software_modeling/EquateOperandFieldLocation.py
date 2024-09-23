@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import ghidra.framework.options.SaveState;
@@ -23,13 +23,13 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.SystemUtilities;
 
 # /**
- * A simple version of {@link OperandFieldLocation} that allows us to store equate information.
- */
+# * A simple version of {@link OperandFieldLocation} that allows us to store equate information.
+# */
 public class EquateOperandFieldLocation extends OperandFieldLocation {
 
 	private Equate equate;
 
-	/**
+    # /**
 	 * 
 	 * @param program The program
 	 * @param addr the address of the location
@@ -51,14 +51,14 @@ public class EquateOperandFieldLocation extends OperandFieldLocation {
 		this.equate = equate;
 	}
 
-	/**
+    # /**
 	 * Default constructor needed for restoring
 	 * an operand field location from XML.
 	 */
 	public EquateOperandFieldLocation() {
 	}
 
-	/**
+    # /**
 	 * Returns the equate at this operand field location.
 	 * @return equate
 	 */
@@ -82,7 +82,7 @@ public class EquateOperandFieldLocation extends OperandFieldLocation {
 		return equate.getReferences();
 	}
 
-	/**
+    # /**
 	 * Returns a String representation of this location.
 	 */
 	@Override
@@ -90,7 +90,7 @@ public class EquateOperandFieldLocation extends OperandFieldLocation {
 		return super.toString() + ", Equate value = " + getEquateValue();
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override

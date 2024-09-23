@@ -19,7 +19,7 @@ import static ghidra.feature.vt.api.db.VTAddressCorrelatorAdapter.AddressCorrela
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

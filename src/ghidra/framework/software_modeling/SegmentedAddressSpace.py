@@ -1,43 +1,43 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.address;
 
 import ghidra.util.NumericUtilities;
 import ghidra.util.StringUtilities;
 
 # /**
- * Address Space for dealing with (intel) segmented address spaces.
- * It understands the mapping between the segmented encoding (seg:offset) and
- * the flat address encoding necessary to produce an Address object that can be
- * used by other analyses.  This mapping is inherent in protected methods:
- *   - getDefaultOffsetFromFlat
- *   - getDefaultSegmentFromFlat
- *   - getFlatOffset
- *   - getOffsetFromFlat
- *   - getAddressInSegment
- * 
- * These 5 methods can be overridden to get a different mapping. This base class is
- * set up to map as for x86 16-bit real-mode.
- */
+# * Address Space for dealing with (intel) segmented address spaces.
+# * It understands the mapping between the segmented encoding (seg:offset) and
+# * the flat address encoding necessary to produce an Address object that can be
+# * used by other analyses.  This mapping is inherent in protected methods:
+# *   - getDefaultOffsetFromFlat
+# *   - getDefaultSegmentFromFlat
+# *   - getFlatOffset
+# *   - getOffsetFromFlat
+# *   - getAddressInSegment
+# * 
+# * These 5 methods can be overridden to get a different mapping. This base class is
+# * set up to map as for x86 16-bit real-mode.
+# */
 public class SegmentedAddressSpace extends GenericAddressSpace {
 
 	private final static int REALMODE_SIZE = 21;
 	private final static long REALMODE_MAXOFFSET = 0x10FFEF;
 
-	/**
+    # /**
 	 * Constructor for larger size address spaces (than the real-mode space)
 	 * @param name is the name of the space
 	 * @param size is the number of bits in a (flat) address
@@ -50,7 +50,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		// need to reconstruct maxAddress themselves.
 	}
 
-	/**
+    # /**
 	 * Constructs a new Segmented AddressSpace for x86 real-mode, with 21-bit addresses.
 	 * @param name is the name of the space
 	 * @param unique is the unique id for the space.
@@ -62,7 +62,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		maxAddress = getUncheckedAddress(maxOffset);
 	}
 
-	/**
+    # /**
 	 * Given a 16-bit segment and an offset, produce the flat address offset
 	 * @param segment is the segment value
 	 * @param offset is the 16-bit offset into the segment
@@ -75,7 +75,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Given a flat address offset, extract the default 16-bit segment portion
 	 * @param flat is the flat offset
 	 * @return the segment value
@@ -87,7 +87,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return (int) ((flat >> 4) & 0xF000);
 	}
 
-	/**
+    # /**
 	 * Given a flat address offset, extract the offset portion assuming the
 	 * default segment.
 	 * @param flat is the flat offset
@@ -100,7 +100,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return flat & 0xFFFFL;
 	}
 
-	/**
+    # /**
 	 * Given a flat address offset, extract a segment offset assuming a
 	 * specific segment value.
 	 * @param flat is the flat offset
@@ -111,7 +111,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return flat - (segment << 4);
 	}
 
-	/**
+    # /**
 	 * Given a flat address offset and a preferred segment, try
 	 * to create an address that maps to the offset and is in the segment. For
 	 * architectures like x86 real-mode, multiple address encodings can map to
@@ -158,7 +158,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return parseNonSegmented(addrString);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressSpace#subtract(ghidra.program.model.address.Address,
 	 *      long)
@@ -188,7 +188,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 			"Address Overflow in subtract: " + addr + " + " + displacement);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressSpace#add(ghidra.program.model.address.Address,
 	 *      long)
@@ -267,7 +267,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSpace#getAddress(long)
 	 */
 	@Override
@@ -275,7 +275,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return new SegmentedAddress(this, byteOffset);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSpace#getAddressInThisSpaceOnly(long)
 	 */
 	@Override
@@ -283,7 +283,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return new SegmentedAddress(this, byteOffset);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AbstractAddressSpace#getUncheckedAddress(long)
 	 */
 	@Override
@@ -291,7 +291,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return new SegmentedAddress(byteOffset, this);
 	}
 
-	/**
+    # /**
 	 * Generates a segmented address with the given segment, offset, and overlay id.
 	 * @param segment        the segment
 	 * @param segmentOffset  the offset in the segment
@@ -307,7 +307,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return new SegmentedAddress(this, segment, segmentOffset);
 	}
 
-	/**
+    # /**
 	 * Get the segment index for the first segment whose start address
 	 * comes after the given address
 	 * @param addr is the given address
@@ -319,7 +319,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return res;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.address.AddressSpace#getPhysicalSpace()
 	 */
@@ -328,7 +328,7 @@ public class SegmentedAddressSpace extends GenericAddressSpace {
 		return this;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSpace#getPointerSize()
 	 */
 	@Override

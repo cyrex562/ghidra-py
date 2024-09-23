@@ -20,7 +20,7 @@ package ghidra;
  */
 public interface GhidraLaunchable {
 
-	/**
+    # /**
 	 * Launches the launchable.
 	 * 
 	 * @param layout The application layout to use for the launch.

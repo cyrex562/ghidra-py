@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.Set;
 import java.util.function.Consumer;
 

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.map.*;
@@ -32,7 +32,7 @@ class CommentHistoryAdapterV0 extends CommentHistoryAdapter {
 	private String userName;
 	private AddressMap addrMap;
 
-	/**
+    # /**
 	 * Construct a new Version 0 comment history adapter.
 	 * @param handle database handle
 	 * @param addrMap the address map used to generate keys for addresses

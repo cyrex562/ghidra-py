@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.script;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

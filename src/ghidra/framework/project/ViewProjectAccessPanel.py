@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
-import java.io.IOException;
+
 import java.util.List;
 
 import javax.swing.*;
@@ -34,7 +34,7 @@ import ghidra.framework.remote.User;
  */
 public class ViewProjectAccessPanel extends ProjectAccessPanel {
 
-	/**
+    # /**
 	 * Construct a new panel.
 	 *
 	 * @param repository handle to the repository adapter
@@ -46,7 +46,7 @@ public class ViewProjectAccessPanel extends ProjectAccessPanel {
 		super(null, repository, tool);
 	}
 
-	/**
+    # /**
 	 * Constructs a new panel.
 	 *
 	* @param knownUsers names of the users that are known to the remote server
@@ -66,7 +66,7 @@ public class ViewProjectAccessPanel extends ProjectAccessPanel {
 			anonymousAccessEnabled, tool);
 	}
 
-	/**
+    # /**
 	 * Creates the main gui panel, containing the known users, button, and user access
 	 * panels.
 	 */

@@ -59,7 +59,7 @@ public class RetypeUnionFieldTask extends RetypeFieldTask {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @return true if the new field data-type will cause the size of the union to change
 	 */
 	private boolean hasSizeChange() {

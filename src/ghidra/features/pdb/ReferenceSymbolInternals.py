@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  */
 public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 
-	/**
+    # /**
 	 * Factory for "regular" version of {@link DataHighLevelShaderLanguageSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -42,7 +42,7 @@ public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "32" version of {@link DataHighLevelShaderLanguageSymbolInternals}.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -64,7 +64,7 @@ public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 	protected long offsetActualSymbolInDollarDollarSymbols;
 	protected int moduleIndex;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 */
@@ -72,7 +72,7 @@ public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 		super(pdb);
 	}
 
-	/**
+    # /**
 	 * Returns "sum" (or "suc" or ?) name.
 	 * @return Name.
 	 */
@@ -80,7 +80,7 @@ public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 		return sumName;
 	}
 
-	/**
+    # /**
 	 * Returns the actual offset in $$symbol.
 	 * @return Actual offset in $$symbol.
 	 */
@@ -88,7 +88,7 @@ public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 		return offsetActualSymbolInDollarDollarSymbols;
 	}
 
-	/**
+    # /**
 	 * Returns the module index.
 	 * @return Module index.
 	 */
@@ -104,12 +104,12 @@ public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 
 //--------------------------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * This class represents <B>St</B> Internals of the Reference symbol.
 	 */
 	public static class ReferenceSymbolInternalsSt extends ReferenceSymbolInternals {
 
-		/**
+	    # /**
 		 * Constructor for this symbol internals.
 		 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 		 */
@@ -119,14 +119,14 @@ public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 
 	}
 
-	/**
+    # /**
 	* This class represents <B>2</B> Internals of the Reference symbol.
 	*/
 	public static class ReferenceSymbolInternals2 extends ReferenceSymbolInternals {
 
 		protected String name; // Hidden name made into a first class member?
 
-		/**
+	    # /**
 		 * Constructor for this symbol internals.
 		 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 		 */
@@ -134,7 +134,7 @@ public abstract class ReferenceSymbolInternals extends AbstractSymbolInternals {
 			super(pdb);
 		}
 
-		/**
+	    # /**
 		 * Returns the name field of this symbol internals.
 		 * @return the name.
 		 */

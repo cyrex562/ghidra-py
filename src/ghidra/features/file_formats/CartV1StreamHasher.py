@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -30,7 +30,7 @@ public class CartV1StreamHasher extends CartV1StreamProcessor {
 	private Map<String, byte[]> hashes = new LinkedHashMap<>();
 	private Map<String, byte[]> finalHashes = new LinkedHashMap<>();
 
-	/**
+    # /**
 	 * Constructor for StreamHasher
 	 *
 	 * @param delegate InputStream to read and apply hashing
@@ -72,7 +72,7 @@ public class CartV1StreamHasher extends CartV1StreamProcessor {
 		}
 	}
 
-	/**
+    # /**
 	 * Read the next chunk in the stream and update all of the hashes
 	 *
 	 * @return True if more data is now available, False otherwise.
@@ -116,7 +116,7 @@ public class CartV1StreamHasher extends CartV1StreamProcessor {
 		return currentChunk != null && currentChunk.length > 0;
 	}
 
-	/**
+    # /**
 	 * Check that hashes of the data read so far and match the values in the footer. Warn
 	 * user if any hashes are missing. Throw an exception if any provided hash is
 	 * bad.

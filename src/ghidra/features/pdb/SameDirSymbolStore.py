@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver;
 
-import java.io.*;
+
 import java.util.*;
 
 import ghidra.formats.gfilesystem.FSRL;
@@ -30,12 +30,12 @@ import pdb.symbolserver.SymbolServer.StatusRequiresContext;
  */
 public class SameDirSymbolStore implements SymbolStore, StatusRequiresContext {
 
-	/**
+    # /**
 	 * Descriptive string
 	 */
 	public static String PROGRAMS_IMPORT_LOCATION_DESCRIPTION_STR = "Program's Import Location";
 
-	/**
+    # /**
 	 * Factory helper, indicates if the specified location is the special
 	 * magic string that indicates the location is the "same dir" symbol store.
 	 *  
@@ -46,7 +46,7 @@ public class SameDirSymbolStore implements SymbolStore, StatusRequiresContext {
 		return ".".equals(locationString);
 	}
 
-	/**
+    # /**
 	 * Reuse / abuse the {@link SameDirSymbolStore} to be the container/wrapper for an already known
 	 * symbol file.  Useful to wrap a file that was picked by the user in an
 	 * {@link SymbolFileLocation}.
@@ -63,7 +63,7 @@ public class SameDirSymbolStore implements SymbolStore, StatusRequiresContext {
 		return symbolFileLocation;
 	}
 
-	/**
+    # /**
 	 * Creates a {@link SymbolServer} for the "Program's Import Location" item.  May return either
 	 * a {@link SameDirSymbolStore} instance, or a {@link ContainerFileSymbolServer}.
 	 *  
@@ -82,7 +82,7 @@ public class SameDirSymbolStore implements SymbolStore, StatusRequiresContext {
 
 	private final File rootDir;
 
-	/**
+    # /**
 	 * Create a new instance, based on the directory where the program was originally imported from.
 	 * 
 	 * @param rootDir directory path where the program was originally imported from, or null if not

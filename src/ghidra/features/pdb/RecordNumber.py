@@ -66,7 +66,7 @@ abstract public class RecordNumber {
 	}
 
 	// TODO: figure out the issues stated here... and revert to parse() method.
-	/**
+    # /**
 	 * Returns the record number without metrics detection.
 	 * <P>
 	 * This may be a temporary method...(should just use

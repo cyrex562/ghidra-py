@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.mdmp;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.Option;
@@ -442,7 +442,7 @@ public class Minidump extends DumpFile {
 		}
 	}
 
-	/**
+    # /**
 	 * Get default <code>Minidump</code> loader options.
 	 * See {@link DumpFile#getDefaultOptions(DumpFileReader)}.
 	 * @param reader dump file reader

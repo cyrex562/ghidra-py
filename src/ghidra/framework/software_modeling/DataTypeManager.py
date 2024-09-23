@@ -35,22 +35,22 @@ import utility.function.ExceptionalSupplier;
  */
 public interface DataTypeManager {
 
-	/**
+    # /**
 	 * ID for the default (undefined) data type.
 	 */
 	public static long DEFAULT_DATATYPE_ID = 0;
 
-	/**
+    # /**
 	 * ID if data type type is not known in this data type manager.
 	 */
 	public static long NULL_DATATYPE_ID = -1;
 
-	/**
+    # /**
 	 * ID if data type type is BAD.
 	 */
 	public static long BAD_DATATYPE_ID = -2;
 
-	/**
+    # /**
 	 * Name of the category for the build in data types.
 	 */
 	public final static String BUILT_IN_DATA_TYPES_NAME = "BuiltInTypes";
@@ -60,19 +60,19 @@ public interface DataTypeManager {
 	public final UniversalID LOCAL_ARCHIVE_UNIVERSAL_ID = new UniversalID(LOCAL_ARCHIVE_KEY);
 	public final UniversalID BUILT_IN_ARCHIVE_UNIVERSAL_ID = new UniversalID(BUILT_IN_ARCHIVE_KEY);
 
-	/**
+    # /**
 	 * Returns the universal ID for this dataType manager
 	 * @return the universal ID for this dataType manager
 	 */
 	public UniversalID getUniversalID();
 
-	/**
+    # /**
 	 * Get the optional program architecture details associated with this archive
 	 * @return program architecture details or null if none
 	 */
 	public ProgramArchitecture getProgramArchitecture();
 
-	/**
+    # /**
 	 * Get the program architecture information which has been associated with this 
 	 * datatype manager.  If {@link #getProgramArchitecture()} returns null this method
 	 * may still return information if the program architecture was set on an archive but unable
@@ -81,14 +81,14 @@ public interface DataTypeManager {
 	 */
 	public String getProgramArchitectureSummary();
 
-	/**
+    # /**
 	 * Returns true if the given category path exists in this datatype manager
 	 * @param path the path
 	 * @return true if the given category path exists in this datatype manager
 	 */
 	public boolean containsCategory(CategoryPath path);
 
-	/**
+    # /**
 	 * Returns a unique name not currently used by any other dataType or category
 	 * with the same baseName.  This does not produce a conflict name and is intended 
 	 * to be used when generating an artifical datatype name only (e.g., {@code temp_1},
@@ -100,7 +100,7 @@ public interface DataTypeManager {
 	 */
 	public String getUniqueName(CategoryPath path, String baseName);
 
-	/**
+    # /**
 	 * Returns a dataType that is "in" (ie suitable implementation) this
 	 * Manager, creating a new one if necessary.  Also the returned dataType
 	 * will be in a category in this dataTypeManager that is equivalent to the
@@ -111,7 +111,7 @@ public interface DataTypeManager {
 	 */
 	public DataType resolve(DataType dataType, DataTypeConflictHandler handler);
 
-	/**
+    # /**
 	 * Returns a data type after adding it to this data manager.
 	 * The returned dataType will be in a category in this dataTypeManager
 	 * that is equivalent to the category of the passed in dataType.
@@ -122,7 +122,7 @@ public interface DataTypeManager {
 	 */
 	public DataType addDataType(DataType dataType, DataTypeConflictHandler handler);
 
-	/**
+    # /**
 	 * Sequentially adds a collection of datatypes to this data manager.
 	 * This method provides the added benefit of equivalence caching
 	 * for improved performance.
@@ -137,38 +137,38 @@ public interface DataTypeManager {
 	public void addDataTypes(Collection<DataType> dataTypes, DataTypeConflictHandler handler,
 			TaskMonitor monitor) throws CancelledException;
 
-	/**
+    # /**
 	 * Returns an iterator over all the dataTypes in this manager
 	 * @return an iterator over all the dataTypes in this manager
 	 */
 	public Iterator<DataType> getAllDataTypes();
 
-	/**
+    # /**
 	 * Adds all data types to the specified list.]
 	 *
 	 * @param list the result list into which the types will be placed
 	 */
 	public void getAllDataTypes(List<DataType> list);
 
-	/**
+    # /**
 	 * Returns an iterator over all structures in this manager
 	 * @return the iterator
 	 */
 	public Iterator<Structure> getAllStructures();
 
-	/**
+    # /**
 	 * Returns an iterator over all composite data types (structures and unions) in this manager
 	 * @return the iterator
 	 */
 	public Iterator<Composite> getAllComposites();
 
-	/**
+    # /**
 	 * Returns an iterator over all function definition data types in this manager
 	 * @return the iterator
 	 */
 	public Iterator<FunctionDefinition> getAllFunctionDefinitions();
 
-	/**
+    # /**
 	 * Begin searching at the root category for all data types with the
 	 * given name. Places all the data types in this data type manager
 	 * with the given name into the list.  Presence of {@code .conflict}
@@ -180,7 +180,7 @@ public interface DataTypeManager {
 	 */
 	public void findDataTypes(String name, List<DataType> list);
 
-	/**
+    # /**
 	 * Begin searching at the root category for all data types with names
 	 * that match the given name that may contain wildcards using familiar globbing 
 	 * characters '*' and '?'.
@@ -192,7 +192,7 @@ public interface DataTypeManager {
 	public void findDataTypes(String name, List<DataType> list, boolean caseSensitive,
 			TaskMonitor monitor);
 
-	/**
+    # /**
 	 * Replace an existing dataType with another.  All instances and references will be updated to
 	 * use the replacement dataType.
 	 * @param existingDt the dataType to be replaced.
@@ -206,7 +206,7 @@ public interface DataTypeManager {
 	public DataType replaceDataType(DataType existingDt, DataType replacementDt,
 			boolean updateCategoryPath) throws DataTypeDependencyException;
 
-	/**
+    # /**
 	 * Retrieve the data type with the fully qualified path. So you can get the data named
 	 * "bar" in the category "foo" by calling getDataType("/foo/bar").  This method can
 	 * be problematic now that datatype names can contain slashes.  It will work provided
@@ -222,7 +222,7 @@ public interface DataTypeManager {
 	 */
 	public DataType getDataType(String dataTypePath);
 
-	/**
+    # /**
 	 * Gets the dataType for the given path. See {@link #getDataType(String)} for details.
 	 * @param dataTypePath dataType path
 	 * @return dataType at the given path
@@ -231,14 +231,14 @@ public interface DataTypeManager {
 	@Deprecated
 	public DataType findDataType(String dataTypePath);
 
-	/**
+    # /**
 	 * Find the dataType for the given dataTypePath.
 	 * @param dataTypePath the DataTypePath for the datatype
 	 * @return the datatype for the given path.
 	 */
 	public DataType getDataType(DataTypePath dataTypePath);
 
-	/**
+    # /**
 	* Returns the dataTypeId for the given dataType.  If the dataType is not
 	* currently in the dataTypeManger, it will be added
 	*
@@ -247,7 +247,7 @@ public interface DataTypeManager {
 	*/
 	public long getResolvedID(DataType dt);
 
-	/**
+    # /**
 	 * Returns the dataTypeId for the given dataType.  If the dataType does not exist,
 	 * a -1 will be returned
 	 *
@@ -256,7 +256,7 @@ public interface DataTypeManager {
 	 */
 	public long getID(DataType dt);
 
-	/**
+    # /**
 	 * Returns the dataType associated with the given dataTypeId or null if the dataTypeId is
 	 * not valid
 	 *
@@ -265,7 +265,7 @@ public interface DataTypeManager {
 	 */
 	public DataType getDataType(long dataTypeID);
 
-	/**
+    # /**
 	 * Returns the Category with the given id
 	 *
 	 * @param categoryID id of the desired category
@@ -273,7 +273,7 @@ public interface DataTypeManager {
 	 */
 	public Category getCategory(long categoryID);
 
-	/**
+    # /**
 	 * Get the category that has the given path
 	 *
 	 * @param path the path
@@ -281,19 +281,19 @@ public interface DataTypeManager {
 	 */
 	public Category getCategory(CategoryPath path);
 
-	/**
+    # /**
 	 * Add a listener that is notified when the dataTypeManger changes.
 	 * @param l the listener
 	 */
 	public void addDataTypeManagerListener(DataTypeManagerChangeListener l);
 
-	/**
+    # /**
 	 * Remove the DataTypeManger change listener.
 	 * @param l the listener
 	 */
 	public void removeDataTypeManagerListener(DataTypeManagerChangeListener l);
 
-	/**
+    # /**
 	 * Adds a listener that will be notified when this manager's cache is invalidated.  This will
 	 * happen when the system has changed and the manager cannot determine the exact change, like
 	 * during an undo or a redo.
@@ -301,13 +301,13 @@ public interface DataTypeManager {
 	 */
 	public void addInvalidatedListener(InvalidatedListener listener);
 
-	/**
+    # /**
 	 * Removes a previously added InvalidatedListener
 	 * @param listener the listener to remove.
 	 */
 	public void removeInvalidatedListener(InvalidatedListener listener);
 
-	/**
+    # /**
 	 * Remove the given datatype from this manager
 	 * @param dataType the dataType to be removed
 	 * @param monitor the task monitor
@@ -315,7 +315,7 @@ public interface DataTypeManager {
 	 */
 	public boolean remove(DataType dataType, TaskMonitor monitor);
 
-	/**
+    # /**
 	 * Return true if the given dataType exists in this data type manager
 	 *
 	 * @param dataType the type
@@ -323,7 +323,7 @@ public interface DataTypeManager {
 	 */
 	public boolean contains(DataType dataType);
 
-	/**
+    # /**
 	 * Create a category for the given path; returns the current category if it already exits
 	 *
 	 * @param path the path
@@ -331,7 +331,7 @@ public interface DataTypeManager {
 	 */
 	public Category createCategory(CategoryPath path);
 
-	/**
+    # /**
 	 * Gets the data type with the indicated name in the indicated category.
 	 * @param path the path for the category
 	 * @param name the data type's name
@@ -339,26 +339,26 @@ public interface DataTypeManager {
 	 */
 	public DataType getDataType(CategoryPath path, String name);
 
-	/**
+    # /**
 	 * Returns this data type manager's name
 	 * @return the name
 	 */
 	public String getName();
 
-	/**
+    # /**
 	 * Sets this data type manager's name
 	 * @param name the new name
 	 * @throws InvalidNameException if the given name is invalid (such as when null or empty)
 	 */
 	public void setName(String name) throws InvalidNameException;
 
-	/**
+    # /**
 	 * Returns true if this DataTypeManager can be modified.
 	 * @return true if this DataTypeMangaer can be modified.
 	 */
 	public boolean isUpdatable();
 
-	/**
+    # /**
 	 * Open new transaction.  This should generally be done with a try-with-resources block:
 	 * <pre>
 	 * try (Transaction tx = dtm.openTransaction(description)) {
@@ -372,21 +372,21 @@ public interface DataTypeManager {
 	 */
 	public Transaction openTransaction(String description) throws IllegalStateException;
 
-	/**
+    # /**
 	 * Starts a transaction for making changes in this data type manager.
 	 * @param description a short description of the changes to be made.
 	 * @return the transaction ID
 	 */
 	public int startTransaction(String description);
 
-	/**
+    # /**
 	 * Ends the current transaction
 	 * @param transactionID id of the transaction to end
 	 * @param commit true if changes are committed, false if changes in transaction are revoked
 	 */
 	public void endTransaction(int transactionID, boolean commit);
 
-	/**
+    # /**
 	 * Performs the given callback inside of a transaction.  Use this method in place of the more
 	 * verbose try/catch/finally semantics.
 	 * <p>
@@ -416,7 +416,7 @@ public interface DataTypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Calls the given supplier inside of a transaction.  Use this method in place of the more
 	 * verbose try/catch/finally semantics.
 	 * <p>
@@ -452,18 +452,18 @@ public interface DataTypeManager {
 		return t;
 	}
 
-	/**
+    # /**
 	 * Force all pending notification events to be flushed
 	 * @throws IllegalStateException if the client is holding this object's lock
 	 */
 	public void flushEvents();
 
-	/**
+    # /**
 	 * Closes this dataType manager
 	 */
 	public void close();
 
-	/**
+    # /**
 	 * Returns a default sized pointer to the given datatype.  The pointer size is established
 	 * dynamically based upon the data organization established by the compiler specification.
 	 *
@@ -472,7 +472,7 @@ public interface DataTypeManager {
 	 */
 	public Pointer getPointer(DataType datatype);
 
-	/**
+    # /**
 	 * Returns a pointer of the given size to the given datatype.
 	 * Note: It is preferred to use default sized pointers when possible (i.e., size=-1,
 	 * see {@link #getPointer(DataType)}) instead of explicitly specifying the size value.
@@ -483,13 +483,13 @@ public interface DataTypeManager {
 	 */
 	public Pointer getPointer(DataType datatype, int size);
 
-	/**
+    # /**
 	 * Returns the root category Manager
 	 * @return the category
 	 */
 	public Category getRootCategory();
 
-	/**
+    # /**
 	 * Returns true if the given datatype has been designated as a favorite. If the datatype
 	 * does not belong to this datatype manager, then false will be returned.
 	 * @param datatype the datatype to check.
@@ -497,7 +497,7 @@ public interface DataTypeManager {
 	 */
 	public boolean isFavorite(DataType datatype);
 
-	/**
+    # /**
 	 * Sets the given dataType to be either a favorite or not a favorite.
 	 * @param datatype the datatype for which to change its status as a favorite.
 	 * @param isFavorite true if the datatype is to be a favorite or false otherwise.
@@ -505,33 +505,33 @@ public interface DataTypeManager {
 	 */
 	public void setFavorite(DataType datatype, boolean isFavorite);
 
-	/**
+    # /**
 	 * Returns a list of datatypes that have been designated as favorites.
 	 * @return the list of favorite datatypes in this manager.
 	 */
 	public List<DataType> getFavorites();
 
-	/**
+    # /**
 	 * Returns the total number of data type categories
 	 * @return the count
 	 */
 	public int getCategoryCount();
 
-	/**
+    # /**
 	 * Returns the total number of defined data types.
 	 * @param includePointersAndArrays if true all pointers and array data types will be included
 	 * @return the count
 	 */
 	public int getDataTypeCount(boolean includePointersAndArrays);
 
-	/**
+    # /**
 	 * Adds all enum value names that match the given value, to the given set.
 	 * @param value the value to look for enum name matches
 	 * @param enumValueNames the set to add matches to.
 	 */
 	public void findEnumValueNames(long value, Set<String> enumValueNames);
 
-	/**
+    # /**
 	 * Finds the data type using the given source archive and id.
 	 *
 	 * @param sourceArchive the optional source archive; required when the type is associated with
@@ -541,20 +541,20 @@ public interface DataTypeManager {
 	 */
 	public DataType getDataType(SourceArchive sourceArchive, UniversalID datatypeID);
 
-	/**
+    # /**
 	 * Get's the data type with the matching universal data type id.
 	 * @param datatypeID The universal id of the data type to search for
 	 * @return The data type with the matching UUID, or null if no such data type can be found.
 	 */
 	public DataType findDataTypeForID(UniversalID datatypeID);
 
-	/**
+    # /**
 	 * Returns the timestamp of the last time this manager was changed
 	 * @return the timestamp
 	 */
 	public long getLastChangeTimeForMyManager();
 
-	/**
+    # /**
 	 * Returns the source archive for the given ID
 	 *
 	 * @param sourceID the ID
@@ -562,13 +562,13 @@ public interface DataTypeManager {
 	 */
 	public SourceArchive getSourceArchive(UniversalID sourceID);
 
-	/**
+    # /**
 	 * Returns this manager's archive type
 	 * @return the type
 	 */
 	public ArchiveType getType();
 
-	/**
+    # /**
 	 * Returns all data types within this manager that have as their source the given archive
 	 *
 	 * @param sourceArchive the archive
@@ -576,13 +576,13 @@ public interface DataTypeManager {
 	 */
 	public List<DataType> getDataTypes(SourceArchive sourceArchive);
 
-	/**
+    # /**
 	 * Returns the source archive for this manager
 	 * @return the archive; null if the ID is null; null if the archive does not exist
 	 */
 	public SourceArchive getLocalSourceArchive();
 
-	/**
+    # /**
 	 * Change the given data type and its dependencies so thier source archive is set to
 	 * given archive.  Only those data types not already associated with a source archive
 	 * will be changed.
@@ -592,14 +592,14 @@ public interface DataTypeManager {
 	 */
 	public void associateDataTypeWithArchive(DataType datatype, SourceArchive archive);
 
-	/**
+    # /**
 	 * If the indicated data type is associated with a source archive, this will remove the
 	 * association and the data type will become local to this data type manager.
 	 * @param datatype the data type to be disassociated from a source archive.
 	 */
 	public void disassociate(DataType datatype);
 
-	/**
+    # /**
 	 * Updates the name associated with a source archive in this data type manager.
 	 * @param archiveFileID Universal domain file ID of the source data type archive that has a new name.
 	 * @param name the new name of the program or archive.
@@ -608,7 +608,7 @@ public interface DataTypeManager {
 	 */
 	public boolean updateSourceArchiveName(String archiveFileID, String name);
 
-	/**
+    # /**
 	 * Updates the name associated with a source archive in this data type manager.
 	 * @param sourceID Universal archive ID of the source data type archive that has a new name.
 	 * @param name the new name of the program or archive.
@@ -617,27 +617,27 @@ public interface DataTypeManager {
 	 */
 	public boolean updateSourceArchiveName(UniversalID sourceID, String name);
 
-	/**
+    # /**
 	 * Get the data organization associated with this data type manager.  Note that the
 	 * DataOrganization settings may not be changed dynamically.
 	 * @return data organization (will never be null)
 	 */
 	public DataOrganization getDataOrganization();
 
-	/**
+    # /**
 	 * Returns the associated AddressMap used by this datatype manager.
 	 * @return the AddressMap used by this datatype manager or null if 
 	 * one has not be established.
 	 */
 	public AddressMap getAddressMap();
 
-	/**
+    # /**
 	 * Returns a list of source archives not including the builtin or the program's archive.
 	 * @return a list of source archives not including the builtin or the program's archive.
 	 */
 	public List<SourceArchive> getSourceArchives();
 
-	/**
+    # /**
 	 * Removes the source archive from this manager.  This will disassociate all data types in
 	 * this manager from the given archive.
 	 *
@@ -645,14 +645,14 @@ public interface DataTypeManager {
 	 */
 	public void removeSourceArchive(SourceArchive sourceArchive);
 
-	/**
+    # /**
 	 * Returns or creates a persisted version of the given source archive
 	 * @param sourceArchive the archive
 	 * @return the archive
 	 */
 	public SourceArchive resolveSourceArchive(SourceArchive sourceArchive);
 
-	/**
+    # /**
 	 * Returns the data types within this data type manager that contain the specified data type.
 	 * The specified dataType must belong to this datatype manager.  An empty set will be
 	 * returned for unsupported datatype instances.
@@ -664,21 +664,21 @@ public interface DataTypeManager {
 	@Deprecated
 	public Set<DataType> getDataTypesContaining(DataType dataType);
 
-	/**
+    # /**
 	 * Determine if settings are supported for BuiltIn datatypes within this
 	 * datatype manager.
 	 * @return true if BuiltIn Settings are permitted
 	 */
 	public boolean allowsDefaultBuiltInSettings();
 
-	/**
+    # /**
 	 * Determine if settings are supported for datatype components within this
 	 * datatype manager (i.e., for structure and union components).
 	 * @return true if BuiltIn Settings are permitted
 	 */
 	public boolean allowsDefaultComponentSettings();
 
-	/**
+    # /**
 	 * Get the ordered list of known calling convention names.  The reserved names 
 	 * "unknown" and "default" are not included.  The returned collection will include all names 
 	 * ever used or resolved by associated {@link Function} and {@link FunctionDefinition} objects, 
@@ -690,7 +690,7 @@ public interface DataTypeManager {
 	 */
 	public Collection<String> getKnownCallingConventionNames();
 
-	/**
+    # /**
 	 * Get the ordered list of defined calling convention names.  The reserved names 
 	 * "unknown" and "default" are not included.  The returned collection may not include all names 
 	 * referenced by various functions and function-definitions.  This set is generally limited to 
@@ -704,14 +704,14 @@ public interface DataTypeManager {
 	 */
 	public Collection<String> getDefinedCallingConventionNames();
 
-	/**
+    # /**
 	 * Get the default calling convention's prototype model in this datatype manager if known.
 	 *
 	 * @return the default calling convention prototype model or null.
 	 */
 	public PrototypeModel getDefaultCallingConvention();
 
-	/**
+    # /**
 	 * Get the prototype model of the calling convention with the specified name from the 
 	 * associated compiler specification.  If an architecture has not been established this method 
 	 * will return null.  If {@link Function#DEFAULT_CALLING_CONVENTION_STRING}

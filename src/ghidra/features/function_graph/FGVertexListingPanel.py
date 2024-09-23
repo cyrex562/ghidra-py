@@ -89,7 +89,7 @@ public class FGVertexListingPanel extends ListingPanel {
 		return new FGVertexListingModel(program, getFormatManager());
 	}
 
-	/**
+    # /**
 	 * Overridden to set the view before the parent class notifies the listeners.  This prevents
 	 * our methods that calculate preferred size from going 'out to lunch' when attempting to
 	 * examine the entire program instead of just the given view.

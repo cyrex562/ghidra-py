@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.bookmark;
 
 import ghidra.program.database.ProgramDB;
@@ -29,8 +29,8 @@ import java.util.*;
 import db.DBRecord;
 
 # /**
- * Interface to manage bookmarks on a program.
- */
+# * Interface to manage bookmarks on a program.
+# */
 class OldBookmarkManager {
 
 	public static final String OLD_BOOKMARK_PROPERTY = "Bookmarks";
@@ -46,7 +46,7 @@ class OldBookmarkManager {
 //	private ArrayList bookmarks = new ArrayList();
 //	private LongIntHashedList bookmarkAddrIndex = new LongIntHashedList();
 
-	/**
+    # /**
 	 * Constructs a new bookmark manager.
 	 */
 	OldBookmarkManager(ProgramDB program) {
@@ -62,7 +62,7 @@ class OldBookmarkManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the bookmark type associated with the specified property name.
 	 * @param propertyName
 	 * @return bookmark type or null if property name is not recognized.
@@ -81,7 +81,7 @@ class OldBookmarkManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the bookmark property name for a specified bookmark type.
 	 * @param bookmarkType
 	 * @return property used to store bookmarks or null if a
@@ -114,7 +114,7 @@ class OldBookmarkManager {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Return all the Bookmark types currenly in use.
 	 */
 	private String[] getTypes() {
@@ -137,7 +137,7 @@ class OldBookmarkManager {
 		return types;
 	}
 
-	/**
+    # /**
 	 * Get number of bookmarks for the specified type
 	 * @param type
 	 * @return bookmark count
@@ -146,7 +146,7 @@ class OldBookmarkManager {
 		return propertyMgr.getObjectPropertyMap(getPropertyName(type)).getSize();
 	}
 
-	/**
+    # /**
 	 * Remove all bookmarks of the specific type from the program.
 	 * Caller is responsible for the transaction which incorporates this program change.
 	 * @param type bookmark type
@@ -155,7 +155,7 @@ class OldBookmarkManager {
 		propertyMgr.removePropertyMap(getPropertyName(type));
 	}
 
-	/**
+    # /**
 	 * Get a specific bookmark type at the specified address.
 	 * @param addr program address
 	 * @param type bookmark type
@@ -173,7 +173,7 @@ class OldBookmarkManager {
 		return bookmark;
 	}
 
-	/**
+    # /**
 	 * Get addresses at which bookmarks of the specified type exist.
 	 * @param type bookmark type
 	 * @return address iterator
@@ -186,7 +186,7 @@ class OldBookmarkManager {
 		return emptyAddressIterator;
 	}
 
-	/**
+    # /**
 	 * Returns array of bookmark type records
 	 */
 	public DBRecord[] getTypeRecords() {
@@ -230,7 +230,7 @@ class EmptyAddressIterator implements AddressIterator {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Iterator#remove()
 	 */
 	@Override

@@ -18,7 +18,7 @@ package docking.theme.gui;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.io.File;
-import java.io.IOException;
+
 
 import javax.swing.*;
 

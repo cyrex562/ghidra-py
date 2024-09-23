@@ -206,7 +206,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		return highlightController.getSecondaryHighlighters(function);
 	}
 
-	/**
+    # /**
 	 * Removes all secondary highlights for the current function
 	 *
 	 * @param function the function containing the secondary highlights
@@ -335,7 +335,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		repaint();
 	}
 
-	/**
+    # /**
 	 * This function is used to alert the panel that a token was renamed. If the token being renamed
 	 * had a secondary highlight, we must re-apply the highlight to the new token.
 	 *
@@ -390,7 +390,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		}
 	}
 
-	/**
+    # /**
 	 * Called by the provider to clone all highlights in the source panel and apply them to this
 	 * panel
 	 *
@@ -440,7 +440,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		super.setBackground(bg);
 	}
 
-	/**
+    # /**
 	 * This function sets the current window display based on our display state
 	 *
 	 * @param decompileData the new data
@@ -611,7 +611,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		return null;
 	}
 
-	/**
+    # /**
 	 * Put cursor on first token in the list
 	 *
 	 * @param tokens the tokens to search for
@@ -722,7 +722,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		return getFontMetrics(font);
 	}
 
-	/**
+    # /**
 	 * Passing false signals to disallow navigating to new functions from within the panel by using
 	 * the mouse.
 	 *
@@ -1005,7 +1005,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		return middleMouseHighlightColor;
 	}
 
-	/**
+    # /**
 	 * The color used in a primary highlight to mark the token that was clicked. This is used in
 	 * 'slice' actions to mark the source of the slice.
 	 *
@@ -1068,7 +1068,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		fieldPanel.scrollToCursor();
 	}
 
-	/**
+    # /**
 	 * Returns a single selected token; null if there is no selection or multiple tokens selected.
 	 *
 	 * @return a single selected token; null if there is no selection or multiple tokens selected.
@@ -1098,7 +1098,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		return ((ClangTextField) field).getToken(cursorPosition);
 	}
 
-	/**
+    # /**
 	 * Get the line number for the given y position, relative to the scroll panel
 	 *
 	 * <p>
@@ -1273,7 +1273,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		}
 	}
 
-	/**
+    # /**
 	 * A simple class that handles the animators callback to scroll the display
 	 */
 	private class ScrollingCallback implements SwingAnimationCallback {
@@ -1337,7 +1337,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 			});
 		}
 
-		/**
+	    # /**
 		 * Moves this field panel to the given line and column. Further, this navigation will fire
 		 * an event to the rest of the tool. (This is in contrast to a field panel
 		 * <code>goTo</code>, which we use to simply move the cursor, but not trigger an tool-level
@@ -1352,7 +1352,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		}
 	}
 
-	/**
+    # /**
 	 * A class to track pending location updates. This allows us to buffer updates, only sending the
 	 * last one received.
 	 */
@@ -1395,7 +1395,7 @@ public class DecompilerPanel extends JPanel implements FieldMouseListener, Field
 		}
 	}
 
-	/**
+    # /**
 	 * A class to track the current middle moused token.
 	 */
 	private class ActiveMiddleMouse {

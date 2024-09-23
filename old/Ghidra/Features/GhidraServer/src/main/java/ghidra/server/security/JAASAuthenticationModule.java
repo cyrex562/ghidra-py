@@ -16,7 +16,7 @@
 package ghidra.server.security;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URI;
 import java.security.NoSuchAlgorithmException;
 import java.security.URIParameter;

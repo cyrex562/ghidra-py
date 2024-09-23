@@ -98,35 +98,35 @@ public class XmlParserElement {
         buffer.append(isStart ? " ->START":" ->END");
         return buffer.toString();
 	}
-	/**
+    # /**
 	 * Returns true if this element represents a start tag.
 	 * @return true if this element represents a start tag
 	 */
 	public boolean isStart() {
 		return isStart;
 	}
-	/**
+    # /**
 	 * Returns true if this element represents an end tag.
 	 * @return true if this element represents an end tag
 	 */
 	public boolean isEnd() {
 		return !isStart;
 	}
-	/**
+    # /**
 	 * Returns the name of this element/tag.
 	 * @return the name of this element/tag
 	 */
 	public String getName() {
 		return name;
 	}
-	/**
+    # /**
 	 * Returns the line number where this element was defined.
 	 * @return the line number where this element was defined
 	 */
 	public int getLineNum() {
 		return lineNum;
 	}
-	/**
+    # /**
 	 * Returns the text of this element. Or, null if no text existed
 	 * in the XML.
 	 * @return the text of this element
@@ -137,7 +137,7 @@ public class XmlParserElement {
 	StringBuffer getTextBuffer() {
 	    return text;
 	}
-	/**
+    # /**
 	 * Returns the value of the specified attribute.
 	 * Or, null if no attribute exists with the specified name.
 	 * @param attrName the name of the attribute
@@ -146,7 +146,7 @@ public class XmlParserElement {
 	public String getAttrValue(String attrName) {
 		return (String)attrsMap.get(attrName);
 	}
-	/**
+    # /**
 	 * Returns the boolean value of the specified attribute.
 	 * @param attrName the name of the attribute
 	 * @return the boolean value of the specified attribute
@@ -164,7 +164,7 @@ public class XmlParserElement {
 			throw new XmlAttributeException("Element: "+name+": attribute "+attrName+" is not a valid boolean (y|n): "+getAttrValue(attrName));
 		}
 	}
-	/**
+    # /**
 	 * Returns the integer value of the specified attribute.
 	 * @param attrName the name of the attribute
 	 * @return the integer value of the specified attribute
@@ -182,7 +182,7 @@ public class XmlParserElement {
 			throw new XmlAttributeException("Element: "+name+": attribute "+attrName+" is not a valid integer: "+getAttrValue(attrName));
 		}
 	}
-	/**
+    # /**
 	 * Returns the long value of the specified attribute.
 	 * @param attrName the name of the attribute
 	 * @return the long value of the specified attribute
@@ -213,7 +213,7 @@ public class XmlParserElement {
 			throw new XmlAttributeException("Element: "+name+": attribute "+attrName+" is not a valid long: "+getAttrValue(attrName));
 		}
 	}
-	/**
+    # /**
 	 * Returns the double value of the specified attribute.
 	 * @param attrName the name of the attribute
 	 * @return the double value of the specified attribute
@@ -230,7 +230,7 @@ public class XmlParserElement {
 			throw new XmlAttributeException("Element: "+name+": attribute "+attrName+" is not a valid double: "+getAttrValue(attrName));
 		}
 	}
-	/**
+    # /**
 	 * Returns an array containing the names of all attributes defined in this element.
 	 * @return an array containing the names of all attributes defined in this element
 	 */
@@ -242,7 +242,7 @@ public class XmlParserElement {
 		attrsMap.keySet().toArray(names);
 		return names;
 	}
-	/**
+    # /**
 	 * Returns true if this element contains an attribute with the specified name.
 	 * @param attrName the name of the attribute
 	 * @return true if this element contains an attribute with the specified name
@@ -250,7 +250,7 @@ public class XmlParserElement {
 	public boolean hasAttr(String attrName) {
 		return attrsMap.containsKey(attrName);
 	}
-	/**
+    # /**
 	 * Sets the value of the specified attribute.
 	 * @param name   the name of the attribute
 	 * @param value  the value of the attribute

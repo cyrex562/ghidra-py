@@ -28,18 +28,18 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		html files for the old version strings).
 	 */
 
-	/**
+    # /**
 	 * Version 2.24 of the GNU demangler.  This version supports older formats and older bugs.
 	 */
 	public static final String GNU_DEMANGLER_V2_24 = "demangler_gnu_v2_24";
 
-	/**
+    # /**
 	 * Version 2.41 of the GNU demangler.  This version supports less formats than 
 	 * {@link #GNU_DEMANGLER_V2_24}.
 	 */
 	public static final String GNU_DEMANGLER_V2_41 = "demangler_gnu_v2_41";
 
-	/**
+    # /**
 	 * The default version to use of the GNU demangler
 	 */
 	public static final String GNU_DEMANGLER_DEFAULT = GNU_DEMANGLER_V2_41;
@@ -48,7 +48,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 	private final boolean isDeprecated;
 	private boolean useStandardReplacements;
 
-	/**
+    # /**
 	 * Default constructor to use the modern demangler with auto-detect for the format.  This
 	 * constructor will limit demangling to only known symbols.
 	 */
@@ -56,7 +56,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		this(GnuDemanglerFormat.AUTO);
 	}
 
-	/**
+    # /**
 	 * Constructor to specify a particular format
 	 *
 	 * @param format signals to use the given format
@@ -65,7 +65,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		this(format, !format.isModernFormat());
 	}
 
-	/**
+    # /**
 	 * Constructor to specify the format to use and whether to prefer the deprecated format when
 	 * both deprecated and modern are available
 	 *
@@ -84,7 +84,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy constructor to create a version of this class from a more generic set of options
 	 * @param copy the options to copy
 	 */
@@ -117,7 +117,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		this.useStandardReplacements = useStandardReplacements;
 	}
 
-	/**
+    # /**
 	 * Changes this options value of {@link #shouldUseStandardReplacements()}
 	 * @param replace true to replace
 	 */
@@ -125,7 +125,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		this.useStandardReplacements = replace;
 	}
 
-	/**
+    # /**
 	 * Returns the external demangler executable name to be used for demangling.  The
 	 * default value is {@link #GNU_DEMANGLER_DEFAULT}.
 	 * @return the name
@@ -134,7 +134,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		return isDeprecated ? GNU_DEMANGLER_V2_24 : GNU_DEMANGLER_V2_41;
 	}
 
-	/**
+    # /**
 	 * A convenience method to copy the state of this options object, changing the
 	 * demangler executable name and demangler format to the specified values
 	 *
@@ -156,7 +156,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 			demanglerFormat.name() + " is not available in the " + getDemanglerName());
 	}
 
-	/**
+    # /**
 	 * Returns the current arguments to be passed to the external demangler executable
 	 * @return the arguments
 	 */
@@ -168,7 +168,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		return "-s " + format.getFormat();
 	}
 
-	/**
+    # /**
 	 * Gets the current demangler format
 	 * @return the demangler format
 	 */
@@ -176,7 +176,7 @@ public class GnuDemanglerOptions extends DemanglerOptions {
 		return format;
 	}
 
-	/**
+    # /**
 	 * Returns whether the gnu demangler parser should replace demangler output with standard text
 	 * replacements defined in {@code GnuDemangler/data/default.gnu.demangler.replacements.txt}.
 	 * 

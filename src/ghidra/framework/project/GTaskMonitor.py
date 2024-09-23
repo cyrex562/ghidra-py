@@ -178,7 +178,7 @@ public class GTaskMonitor implements TaskMonitor, CancelledListener {
 		cancel();
 	}
 
-	/**
+    # /**
 	 * Set the GProgressBar to use to display the progress.
 	 * @param gProgressBar the GProgressBar to use.
 	 */

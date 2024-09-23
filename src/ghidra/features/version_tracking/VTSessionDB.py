@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api.db;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -65,7 +65,7 @@ public class VTSessionDB extends DomainObjectAdapterDB implements VTSession {
 	private static final String PROPERTY_TABLE_NAME = "PropertyTable";
 	private static final String DB_VERSION_PROPERTY_NAME = "DB_VERSION";
 
-	/**
+    # /**
 	 * DB_VERSION should be incremented any time a change is made to the overall
 	 * database schema associated with any of the adapters.
 	 * 14-Nov-2019 - version 2 - Corrected fixed length indexing implementation causing
@@ -77,7 +77,7 @@ public class VTSessionDB extends DomainObjectAdapterDB implements VTSession {
 	 */
 	private static final int DB_VERSION = 3;
 
-	/**
+    # /**
 	 * UPGRADE_REQUIRED_BFORE_VERSION should be changed to DB_VERSION any time the
 	 * latest version requires a forced upgrade (i.e., Read-only mode not supported
 	 * until upgrade is performed).  It is assumed that read-only mode is supported
@@ -100,7 +100,7 @@ public class VTSessionDB extends DomainObjectAdapterDB implements VTSession {
 	private boolean changeSetsModified = false;
 	private Table propertyTable; // used to retain DB version only
 
-	/**
+    # /**
 	 * Factory method which constructs a new VTSessionDB using specified source and desitination
 	 * programs.
 	 * @param name name to be assigned to the resulting domain object file
@@ -117,7 +117,7 @@ public class VTSessionDB extends DomainObjectAdapterDB implements VTSession {
 		return new VTSessionDB(name, sourceProgram, destinationProgram, consumer);
 	}
 
-	/**
+    # /**
 	 * Construct a new VTSessionDB using specified source and desitination programs.
 	 * @param name name to be assigned to the resulting domain object file
 	 * @param sourceProgram session source program within active project
@@ -160,7 +160,7 @@ public class VTSessionDB extends DomainObjectAdapterDB implements VTSession {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct an existing VT session object and open with UPGRADE enabled.
 	 * The caller (i.e., content handler) must ensure that project has exclusive access to
 	 * the domain file before it was open and {@link DBHandle} supplied.
@@ -253,7 +253,7 @@ public class VTSessionDB extends DomainObjectAdapterDB implements VTSession {
 		super.setDomainFile(df);
 	}
 
-	/**
+    # /**
 	 * Open associated source and destination program files and complete session initialization.
 	 * @param projectData active project data
 	 * @throws IOException if source or destination program not found within specified project
@@ -611,7 +611,7 @@ public class VTSessionDB extends DomainObjectAdapterDB implements VTSession {
 		return getName();
 	}
 
-	/**
+    # /**
 	 * Mark the state of a Version Tracking item as having changed and generate
 	 * the event of the specified type.  Any or all parameters may be null.
 	 * @param eventType event type
@@ -632,7 +632,7 @@ public class VTSessionDB extends DomainObjectAdapterDB implements VTSession {
 		return matches;
 	}
 
-	/**
+    # /**
 	 * Mark the state of a Version Tracking item as having changed and generate
 	 * the event of the specified type.  Any or all parameters may be null.
 	 * @param eventType event type

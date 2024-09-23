@@ -17,7 +17,7 @@ package ghidra.pcodeCPort.space;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 
 import ghidra.pcodeCPort.translate.Translate;
 import ghidra.program.model.lang.SpaceNames;

@@ -32,7 +32,7 @@ public abstract class AbstractMemberMsType extends AbstractMsType implements MsT
 	protected BigInteger offset;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -50,7 +50,7 @@ public abstract class AbstractMemberMsType extends AbstractMsType implements MsT
 		this.attribute = attribute;
 	}
 
-	/**
+    # /**
 	 * Returns the name of this member type.
 	 * @return Name type of the member type.
 	 */
@@ -59,7 +59,7 @@ public abstract class AbstractMemberMsType extends AbstractMsType implements MsT
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the offset of the member.
 	 * @return The offset of the member.
 	 */
@@ -67,7 +67,7 @@ public abstract class AbstractMemberMsType extends AbstractMsType implements MsT
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the attributes of the member.
 	 * @return The attributes of the member.
 	 */
@@ -75,7 +75,7 @@ public abstract class AbstractMemberMsType extends AbstractMsType implements MsT
 		return attribute;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the field data type.
 	 * @return Record number of the field data type.
 	 */

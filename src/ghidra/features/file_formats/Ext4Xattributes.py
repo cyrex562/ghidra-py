@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +26,7 @@ import ghidra.util.Msg;
  * Container of parsed Ext4 extended attribute entries
  */
 public class Ext4Xattributes {
-	/**
+    # /**
 	 * Parses extended attributes found at the end of an Inode.
 	 * 
 	 * @param reader {@link BinaryReader} positioned at the end of the used inode fields

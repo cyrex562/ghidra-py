@@ -37,7 +37,7 @@ public abstract class AbstractDimensionedArrayVarBoundsLowerUpperMsType extends 
 	protected List<RecordNumber> lowerBound = new ArrayList<>();
 	protected List<RecordNumber> upperBound = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

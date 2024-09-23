@@ -16,7 +16,7 @@
 package generic.application;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.regex.Matcher;
@@ -40,7 +40,7 @@ import utility.module.ModuleUtilities;
  */
 public class GenericApplicationLayout extends ApplicationLayout {
 
-	/**
+    # /**
 	 * System property that allows specification of additional application root dirs.  This is used
 	 * for clients that build plugins external to an installation.  The property will be parsed
 	 * using {@link File#pathSeparator}, allowing for multiple values.
@@ -50,11 +50,11 @@ public class GenericApplicationLayout extends ApplicationLayout {
 
 	private static final String NO_RELEASE_NAME = "NO_RELEASE";
 
-	/** Dev mode main source bin dir pattern */
+    # /** Dev mode main source bin dir pattern */
 	private static final Pattern CLASS_PATH_MODULE_NAME_PATTERN =
 		Pattern.compile(".*/(\\w+)/bin/main");
 
-	/**
+    # /**
 	 * Constructs a new application layout object with the given name and version.
 	 *
 	 * @param name The name of the application.
@@ -65,7 +65,7 @@ public class GenericApplicationLayout extends ApplicationLayout {
 		this(new ApplicationProperties(name, version, NO_RELEASE_NAME));
 	}
 
-	/**
+    # /**
 	 * Constructs a new application layout object with the given set of application
 	 * properties.  The default Ghidra application root directory(s) will be used.
 	 *
@@ -77,7 +77,7 @@ public class GenericApplicationLayout extends ApplicationLayout {
 		this(getDefaultApplicationRootDirs(), applicationProperties);
 	}
 
-	/**
+    # /**
 	 * Constructs a new application layout object with the given set of application
 	 * properties.
 	 *
@@ -172,7 +172,7 @@ public class GenericApplicationLayout extends ApplicationLayout {
 		return cpNames;
 	}
 
-	/**
+    # /**
 	 * Get the default list of Application directories.  In repo-based development mode this
 	 * includes the root Ghidra directory within each repo.  When not in development mode, the
 	 * requirement is that the current working directory correspond to the installation root.  The

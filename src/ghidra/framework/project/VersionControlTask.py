@@ -38,7 +38,7 @@ public abstract class VersionControlTask extends Task {
 	protected boolean wasCanceled;
 	protected Component parent;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param title title of the task
 	 * @param tool tool associated with the task
@@ -53,7 +53,7 @@ public abstract class VersionControlTask extends Task {
 		this.parent = parent;
 	}
 
-	/**
+    # /**
 	 * Show the dialog.
 	 * @param addToVersionControl true if the dialog is for
 	 * adding files to version control, false for checking in files.
@@ -87,7 +87,7 @@ public abstract class VersionControlTask extends Task {
 		SystemUtilities.runSwingNow(r);
 	}
 
-	/**
+    # /**
 	 * Sets the filesInUse field if any file is in use.
 	 * Call this method from the run() method so that the
 	 * "Keep checked out" checkbox on the dialog is disabled if files

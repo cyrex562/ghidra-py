@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.target;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 

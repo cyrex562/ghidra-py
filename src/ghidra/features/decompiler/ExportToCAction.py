@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.decompile.actions;
 
-import java.io.*;
+
 
 import javax.swing.Icon;
 

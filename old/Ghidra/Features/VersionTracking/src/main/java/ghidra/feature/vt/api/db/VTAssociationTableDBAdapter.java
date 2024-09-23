@@ -17,7 +17,7 @@ package ghidra.feature.vt.api.db;
 
 import static ghidra.feature.vt.api.db.VTAssociationTableDBAdapter.AssociationTableDescriptor.*;
 
-import java.io.IOException;
+
 import java.util.Set;
 
 import db.*;

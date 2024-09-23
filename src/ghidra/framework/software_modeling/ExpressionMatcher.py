@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.expr.match;
 
 import java.util.HashMap;
@@ -21,19 +21,19 @@ import java.util.Map;
 import ghidra.app.plugin.processors.sleigh.expression.*;
 
 # /**
- * A matcher for a form of patten expression
- *
- * <p>
- * Some solvers may need to apply sophisticated heuristics to recognize certain forms that commonly
- * occur in pattern expressions. These can certainly be programmed manually, but for many cases, the
- * form recognition can be accomplished by describing the form as an expression matcher. For a
- * shorter syntax to construct such matchers. See {@link Context}.
- *
- * @param <T> the type of expression matched
- */
+# * A matcher for a form of patten expression
+# *
+# * <p>
+# * Some solvers may need to apply sophisticated heuristics to recognize certain forms that commonly
+# * occur in pattern expressions. These can certainly be programmed manually, but for many cases, the
+# * form recognition can be accomplished by describing the form as an expression matcher. For a
+# * shorter syntax to construct such matchers. See {@link Context}.
+# *
+# * @param <T> the type of expression matched
+# */
 public interface ExpressionMatcher<T extends PatternExpression> {
 
-	/**
+    # /**
 	 * Attempt to match the given expression, recording the substitutions if successful
 	 * 
 	 * @param expression the expression to match
@@ -47,7 +47,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Retrieve the expression substituted for this matcher from a previous successful match
 	 * 
 	 * <p>
@@ -63,7 +63,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 		return (T) results.get(this);
 	}
 
-	/**
+    # /**
 	 * Attempt to match the given expression, recording substitutions in the given map
 	 * 
 	 * <p>
@@ -77,7 +77,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 	boolean match(PatternExpression expression,
 			Map<ExpressionMatcher<?>, PatternExpression> result);
 
-	/**
+    # /**
 	 * A context for defining expression matcher succinctly
 	 * 
 	 * <p>
@@ -111,7 +111,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 	 */
 	interface Context {
 
-		/**
+	    # /**
 		 * Match the form {@code L & R} or {@code R & L}
 		 * 
 		 * @param left the matcher for the left operand
@@ -123,7 +123,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher.Commutative<>(AndExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code L / R}
 		 * 
 		 * @param left the matcher for the dividend
@@ -135,7 +135,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher<>(DivExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code L << R}
 		 * 
 		 * @param left the matcher for the left operand
@@ -147,7 +147,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher<>(LeftShiftExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code L * R} or {@code R * L}
 		 * 
 		 * @param left the matcher for the left factor
@@ -159,7 +159,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher.Commutative<>(MultExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code L | R} or {@code R | L}
 		 * 
 		 * @param left the matcher for the left operand
@@ -171,7 +171,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher.Commutative<>(OrExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code L + R} or {@code R + L}
 		 * 
 		 * @param left the matcher for the left term
@@ -183,7 +183,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher<>(PlusExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code L >> R}
 		 * 
 		 * @param left the matcher for the left operand
@@ -195,7 +195,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher<>(RightShiftExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code L - R}
 		 * 
 		 * @param left the matcher for the left term
@@ -207,7 +207,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher<>(SubExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code L $xor R} or {@code R $xor L}
 		 * 
 		 * @param left the matcher for the left operand
@@ -219,7 +219,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new BinaryExpressionMatcher<>(XorExpression.class, left, right);
 		}
 
-		/**
+	    # /**
 		 * Match a given constant value
 		 * 
 		 * <p>
@@ -233,7 +233,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new ConstantValueMatcher(value);
 		}
 
-		/**
+	    # /**
 		 * Match any expression
 		 * 
 		 * <p>
@@ -247,7 +247,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return AnyMatcher.any();
 		}
 
-		/**
+	    # /**
 		 * Match any expression of the given type
 		 * 
 		 * @param <T> the type of expression to match
@@ -258,7 +258,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new AnyMatcher<>(cls);
 		}
 
-		/**
+	    # /**
 		 * Match an operand value
 		 * 
 		 * <p>
@@ -272,7 +272,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new OperandValueMatcher(def);
 		}
 
-		/**
+	    # /**
 		 * Match a field by its size
 		 * 
 		 * <p>
@@ -286,7 +286,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new FieldSizeMatcher(size);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code -U}
 		 * 
 		 * @param unary the child matcher
@@ -296,7 +296,7 @@ public interface ExpressionMatcher<T extends PatternExpression> {
 			return new UnaryExpressionMatcher<>(MinusExpression.class, unary);
 		}
 
-		/**
+	    # /**
 		 * Match the form {@code ~U}
 		 * 
 		 * @param unary the child matcher

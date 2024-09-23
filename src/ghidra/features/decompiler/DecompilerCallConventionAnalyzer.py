@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.analysis;
 
-import java.io.IOException;
+
 
 import generic.cache.CachingPool;
 import generic.cache.CountingBasicFactory;

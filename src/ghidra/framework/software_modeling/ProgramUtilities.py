@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.util.*;
@@ -26,15 +26,15 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * General utility class that provides convenience methods
- * to deal with Program objects. 
- */
+# * General utility class that provides convenience methods
+# * to deal with Program objects. 
+# */
 public class ProgramUtilities {
 
 	private ProgramUtilities() {
 	}
 
-	/** The read-only program icon. */
+    # /** The read-only program icon. */
 	private static Map<Program, Object> openProgramsWeakMap = new WeakHashMap<Program, Object>();
 
 	public static DataConverter getDataConverter(Program program) {
@@ -44,7 +44,7 @@ public class ProgramUtilities {
 		return LittleEndianDataConverter.INSTANCE;
 	}
 
-	/**
+    # /**
 	 * Programs will only be stored during testing and are maintained as weak references.
 	 * @param program The program that is being tracked (all programs during testing.
 	 */
@@ -54,7 +54,7 @@ public class ProgramUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns an iterator for all of the {@link Program} objects in the system, which is all
 	 * created programs in any state that have not been garbage collected.  
 	 * <p>
@@ -87,7 +87,7 @@ public class ProgramUtilities {
 
 	}
 
-	/**
+    # /**
 	 * Get the bytes associated with the specified code unit cu 
 	 * formatted as a string.  Bytes will be returned as 2-digit hex
 	 * separated with a space.  Any undefined bytes will be represented by "??".
@@ -116,7 +116,7 @@ public class ProgramUtilities {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Convert old function wrapped external pointers.  Migrate function to
 	 * external function.
 	 */
@@ -174,7 +174,7 @@ public class ProgramUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Determine if a program has a single unsaved change which corresponds to an
 	 * upgrade which occured during instantiation.
 	 * @param program the program to be checked for an unsaved upgrade condition.

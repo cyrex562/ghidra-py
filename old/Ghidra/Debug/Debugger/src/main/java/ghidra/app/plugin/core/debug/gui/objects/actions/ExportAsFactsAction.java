@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.debug.gui.objects.actions;
 
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.io.*;
+
 import java.util.HashMap;
 import java.util.Map;
 

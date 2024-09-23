@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 
 import ghidra.program.model.mem.MemBuffer;
 
-import java.io.IOException;
+
 import java.nio.ByteOrder;
 import java.util.Arrays;
 

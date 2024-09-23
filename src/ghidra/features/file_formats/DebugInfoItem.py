@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex.format;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
@@ -54,7 +54,7 @@ public class DebugInfoItem implements StructConverter {
 		stateMachineOpcodes = reader.readNextByteArray(count);
 	}
 
-	/**
+    # /**
 	 * <pre>
 	 * The initial value for the state machine's line register. 
 	 * Does not represent an actual positions entry.
@@ -64,7 +64,7 @@ public class DebugInfoItem implements StructConverter {
 		return lineStart;
 	}
 
-	/**
+    # /**
 	 * <pre>
 	 * The number of parameter names that are encoded. 
 	 * There should be one per method parameter, excluding an instance method's this, if any.
@@ -74,7 +74,7 @@ public class DebugInfoItem implements StructConverter {
 		return parametersSize;
 	}
 
-	/**
+    # /**
 	 * <pre>
 	 * String index of the method parameter name. 
 	 * An encoded value of NO_INDEX indicates that no name is available for the associated parameter. 

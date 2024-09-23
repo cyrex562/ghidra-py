@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import java.util.*;
@@ -80,7 +80,7 @@ public class RegisterBuilder {
 		registerMap.remove(name.toUpperCase());
 	}
 
-	/**
+    # /**
 	 * Returns the processor context address of the first
 	 * context register added to this builder.
 	 * @return context address
@@ -89,7 +89,7 @@ public class RegisterBuilder {
 		return contextAddress;
 	}
 
-	/**
+    # /**
 	 * Compute current register collection and instantiate a {@link RegisterManager}
 	 * @return new register manager instance
 	 */
@@ -157,7 +157,7 @@ public class RegisterBuilder {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the register with the given name;
 	 * @param name the name of the register to retrieve
 	 * @return register or null if not found
@@ -166,7 +166,7 @@ public class RegisterBuilder {
 		return registerMap.get(name);
 	}
 
-	/**
+    # /**
 	 * Rename a register.  This allows generic register names declared within the language 
 	 * specification (*.slaspec) to be renamed for a processor variant specification (*.pspec).
 	 * @param oldName original register name
@@ -187,7 +187,7 @@ public class RegisterBuilder {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Add an alias to a previously defined register.
 	 * @param registerName defined register
 	 * @param alias alias to be added to defined register
@@ -206,7 +206,7 @@ public class RegisterBuilder {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Set the group name for the specified register
 	 * @param registerName register name
 	 * @param groupName group name
@@ -221,7 +221,7 @@ public class RegisterBuilder {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Set a register flag for the specified register
 	 * @param registerName register name
 	 * @param registerFlag Register defined flag bit(s)
@@ -236,7 +236,7 @@ public class RegisterBuilder {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Add a vector lane size to the specified register.
 	 * @param registerName register name
 	 * @param laneSizeInBytes the size of the lane to add in bytes

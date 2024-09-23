@@ -39,7 +39,7 @@ public class MultiIcon implements Icon {
 	private int width;
 	private String description;
 
-	/**
+    # /**
 	 * Constructs a new MultiIcon with an initial base icon that will always be drawn first.
 	 * @param baseIcon the base icon that will always be drawn first.
 	 */
@@ -47,7 +47,7 @@ public class MultiIcon implements Icon {
 		this(baseIcon, false);
 	}
 
-	/**
+    # /**
 	 * Constructs a new MultiIcon with an initial base icon that will always be drawn first.
 	 * @param baseIcon the base icon that will always be drawn first.
 	 */
@@ -58,7 +58,7 @@ public class MultiIcon implements Icon {
 		addIcon(baseIcon);
 	}
 
-	/**
+    # /**
 	 * Construct a new MultiIcon with the provided base image and subsequent images
 	 * @param baseIcon base image always drawn first
 	 * @param icons images drawn atop the base
@@ -70,7 +70,7 @@ public class MultiIcon implements Icon {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct a new MultiIcon with a predetermined size
 	 * @param baseIcon Primary icon that is always drawn first
 	 * @param disabled flag to draw this icon in a disabled state
@@ -86,7 +86,7 @@ public class MultiIcon implements Icon {
 		this.disabled = disabled;
 	}
 
-	/**
+    # /**
 	 * Adds an icon that is to be drawn on top of the base icon and any other icons that
 	 * have been added.
 	 * @param icon the icon to be added.
@@ -117,7 +117,7 @@ public class MultiIcon implements Icon {
 		return description;
 	}
 
-	/**
+    # /**
 	 * @see javax.swing.Icon#getIconHeight()
 	 */
 	@Override
@@ -126,7 +126,7 @@ public class MultiIcon implements Icon {
 		return height;
 	}
 
-	/**
+    # /**
 	 * @see javax.swing.Icon#getIconWidth()
 	 */
 	@Override
@@ -135,7 +135,7 @@ public class MultiIcon implements Icon {
 		return width;
 	}
 
-	/**
+    # /**
 	 * @see javax.swing.Icon#paintIcon(java.awt.Component, java.awt.Graphics, int, int)
 	 */
 	@Override
@@ -154,7 +154,7 @@ public class MultiIcon implements Icon {
 		}
 	}
 
-	/**
+    # /**
 	 * Return array of Icons that were added to this MultIcon.
 	 */
 	public Icon[] getIcons() {

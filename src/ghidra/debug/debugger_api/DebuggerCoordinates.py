@@ -15,7 +15,7 @@
  */
 package ghidra.debug.api.tracemgr;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.jdom.Element;

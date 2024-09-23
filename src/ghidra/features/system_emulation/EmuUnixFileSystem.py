@@ -25,7 +25,7 @@ import ghidra.pcode.emu.sys.EmuIOException;
  * @param <T> the type of values stored in the files
  */
 public interface EmuUnixFileSystem<T> {
-	/**
+    # /**
 	 * Open flags as defined by the simulator
 	 * 
 	 * <p>
@@ -39,7 +39,7 @@ public interface EmuUnixFileSystem<T> {
 		O_TRUNC,
 		O_APPEND;
 
-		/**
+	    # /**
 		 * Construct a set of flags
 		 * 
 		 * @param flags the flags
@@ -49,7 +49,7 @@ public interface EmuUnixFileSystem<T> {
 			return set(Arrays.asList(flags));
 		}
 
-		/**
+	    # /**
 		 * Construct a set of flags
 		 * 
 		 * @param flags the flags
@@ -65,7 +65,7 @@ public interface EmuUnixFileSystem<T> {
 			return Collections.unmodifiableSet(EnumSet.copyOf(flags));
 		}
 
-		/**
+	    # /**
 		 * Check if the given flags indicate open for reading
 		 * 
 		 * @param flags the flags
@@ -75,7 +75,7 @@ public interface EmuUnixFileSystem<T> {
 			return flags.contains(OpenFlag.O_RDONLY) || flags.contains(OpenFlag.O_RDWR);
 		}
 
-		/**
+	    # /**
 		 * Check if the given flags indicate open for writing
 		 * 
 		 * @param flags the flags
@@ -86,7 +86,7 @@ public interface EmuUnixFileSystem<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * A factory for constructing a new file (without adding it to the file system)
 	 * 
 	 * @param pathname the path of the file
@@ -96,7 +96,7 @@ public interface EmuUnixFileSystem<T> {
 	 */
 	EmuUnixFile<T> newFile(String pathname, int mode) throws EmuIOException;
 
-	/**
+    # /**
 	 * Get the named file, creating it if it doesn't already exist
 	 * 
 	 * <p>
@@ -109,7 +109,7 @@ public interface EmuUnixFileSystem<T> {
 	 */
 	EmuUnixFile<T> createOrGetFile(String pathname, int mode) throws EmuIOException;
 
-	/**
+    # /**
 	 * Get the named file
 	 * 
 	 * <p>
@@ -121,7 +121,7 @@ public interface EmuUnixFileSystem<T> {
 	 */
 	EmuUnixFile<T> getFile(String pathname) throws EmuIOException;
 
-	/**
+    # /**
 	 * Place the given file at the given location
 	 * 
 	 * <p>
@@ -134,7 +134,7 @@ public interface EmuUnixFileSystem<T> {
 	 */
 	void putFile(String pathname, EmuUnixFile<T> file) throws EmuIOException;
 
-	/**
+    # /**
 	 * Remove the file at the given location
 	 * 
 	 * <p>
@@ -149,7 +149,7 @@ public interface EmuUnixFileSystem<T> {
 	 */
 	void unlink(String pathname, EmuUnixUser user) throws EmuIOException;
 
-	/**
+    # /**
 	 * Open the requested file according to the given flags and user
 	 * 
 	 * <p>

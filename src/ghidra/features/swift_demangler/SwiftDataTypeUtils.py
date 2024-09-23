@@ -25,12 +25,12 @@ import ghidra.program.model.data.CategoryPath;
  */
 public class SwiftDataTypeUtils {
 
-	/**
+    # /**
 	 * Default path to store Swift data structures in the data type manager
 	 */
 	public static final CategoryPath SWIFT_CATEGORY = new CategoryPath("/Demangler");
 
-	/**
+    # /**
 	 * Checks to see if the given namespace is the standard Swift namespace
 	 * 
 	 * @param namespace The namespace to check
@@ -40,7 +40,7 @@ public class SwiftDataTypeUtils {
 		return namespace != null && namespace.getName().equals("Swift");
 	}
 
-	/**
+    # /**
 	 * Gets a {@link Demangled} to represent the standard Swift namespace
 	 * 
 	 * @return A {@link Demangled} to represent the standard Swift namespace
@@ -49,7 +49,7 @@ public class SwiftDataTypeUtils {
 		return new DemangledUnknown("", "Swift", "Swift");
 	}
 
-	/**
+    # /**
 	 * Gets a {@link CategoryPath} based on the given namespace
 	 * 
 	 * @param namespace The namespace
@@ -67,7 +67,7 @@ public class SwiftDataTypeUtils {
 		return new CategoryPath(SWIFT_CATEGORY, path);
 	}
 
-	/**
+    # /**
 	 * Creates a {@link List} of {@link DemangledParameter parameters} found within the given
 	 * {@link Demangled} object
 	 *   

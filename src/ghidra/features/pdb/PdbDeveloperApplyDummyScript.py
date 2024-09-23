@@ -18,7 +18,7 @@
 //@category PDB
 
 import java.io.File;
-import java.io.IOException;
+
 
 import db.Transaction;
 import ghidra.app.script.GhidraScript;

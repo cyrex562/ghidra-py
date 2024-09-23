@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.net.URL;
 
 import ghidra.framework.model.DomainFile;
@@ -32,7 +32,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public abstract class GhidraURLQuery {
 
-	/**
+    # /**
 	 * Perform read-only query using specified GhidraURL and process result.
 	 * Both local project and remote repository URLs are supported.
 	 * This method is intended to be invoked from within a {@link Task} or for headless operations. 
@@ -47,7 +47,7 @@ public abstract class GhidraURLQuery {
 		doQueryUrl(ghidraUrl, true, resultHandler, monitor);
 	}
 
-	/**
+    # /**
 	 * Perform query using specified GhidraURL and process result.
 	 * Both local project and remote repository URLs are supported.
 	 * This method is intended to be invoked from within a {@link Task} or for headless operations. 

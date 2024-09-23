@@ -30,7 +30,7 @@ import ghidra.service.graph.*;
  */
 public class BsfvGraphDisplayListener extends AddressBasedGraphDisplayListener {
 
-	/**
+    # /**
 	 * Creates a BSimFeatureGraphDisplayListener used to translate between vertices of a BSim 
 	 * feature graph and Ghidra addresses
 	 * @param tool tool containing the bsim feature visualizer plugin

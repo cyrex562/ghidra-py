@@ -27,7 +27,7 @@ import ghidra.graph.viewer.layout.LayoutPositions;
 
 public class UngroupVertexFunctionGraphJob extends AbstractGroupingFunctionGraphJob {
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param controller the controller of the graph to be ungrouped

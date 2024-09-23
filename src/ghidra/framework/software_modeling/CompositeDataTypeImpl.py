@@ -33,7 +33,7 @@ public abstract class CompositeDataTypeImpl extends GenericDataType implements C
 	protected int minimumAlignment = DEFAULT_ALIGNMENT;
 	protected int packing = NO_PACKING;
 
-	/**
+    # /**
 	 * Construct a new composite with the given name
 	 * 
 	 * @param path                          the category path indicating where this
@@ -82,7 +82,7 @@ public abstract class CompositeDataTypeImpl extends GenericDataType implements C
 		// ignored
 	}
 
-	/**
+    # /**
 	 * Get the preferred length for a new component. If type is dynamic length must be specified
 	 * (assuming {@link Dynamic#canSpecifyLength()} is true).  Otherwise, when packing is enabled
 	 * the {@link DataType#getAlignedLength()} is returned; when packing disabled for Union
@@ -133,7 +133,7 @@ public abstract class CompositeDataTypeImpl extends GenericDataType implements C
 		return DataTypeComponentImpl.getPreferredComponentLength(dataType, length);
 	}
 
-	/**
+    # /**
 	 * Get the preferred length for a new component. If type is dynamic length must be specified
 	 * (assuming {@link Dynamic#canSpecifyLength()} is true).  Otherwise, when packing is enabled
 	 * the {@link DataType#getAlignedLength()} is returned; when packing disabled for Union
@@ -154,7 +154,7 @@ public abstract class CompositeDataTypeImpl extends GenericDataType implements C
 	@Override
 	public abstract boolean hasLanguageDependantLength();
 
-	/**
+    # /**
 	 * Determine if this composite should be treated as undefined.
 	 * <p>
 	 * A composite is considered undefined with a zero-length when it has 
@@ -175,7 +175,7 @@ public abstract class CompositeDataTypeImpl extends GenericDataType implements C
 		return DataTypeUtilities.isSecondPartOfFirst(this, dataTypeOfInterest);
 	}
 
-	/**
+    # /**
 	 * This method throws an exception if the indicated data type is an ancestor of
 	 * this data type (i.e., the specified data type has a component or
 	 * sub-component containing this data type).
@@ -195,7 +195,7 @@ public abstract class CompositeDataTypeImpl extends GenericDataType implements C
 		}
 	}
 
-	/**
+    # /**
 	 * This method throws an exception if the indicated data type is not a valid
 	 * data type for a component of this composite data type.  If the DEFAULT 
 	 * datatype is specified when unsupported an Undefined1 will be returned 
@@ -226,7 +226,7 @@ public abstract class CompositeDataTypeImpl extends GenericDataType implements C
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * Handle replacement of datatype which may impact bitfield datatype.
 	 * 
 	 * @param bitfieldComponent bitfield component
@@ -328,7 +328,7 @@ public abstract class CompositeDataTypeImpl extends GenericDataType implements C
 		repack(true);
 	}
 
-	/**
+    # /**
 	 * Repack components within this composite based on the current packing, alignment 
 	 * and {@link DataOrganization} settings.  Non-packed Structures: change detection
 	 * is limited to component count and length is assumed to already be correct.

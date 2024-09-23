@@ -27,7 +27,7 @@ import ghidra.util.xml.XmlWriter;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-import java.io.IOException;
+
 
 /**
  * XML for external library table for resolved external references.

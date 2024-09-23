@@ -19,7 +19,7 @@ package ghidra.app.util.bin.format.macos.asd;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.format.macos.rm.ResourceHeader;
 
-import java.io.IOException;
+
 
 public final class EntryFactory {
 

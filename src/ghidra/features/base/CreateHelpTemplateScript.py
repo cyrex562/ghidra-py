@@ -15,7 +15,7 @@
  */
 //Creates a template help file by reading all of the actions from a selected plugin.
 
-import java.io.*;
+
 import java.util.*;
 
 import docking.action.DockingActionIf;

@@ -29,14 +29,14 @@ class WrappedKeyStroke implements WrappedOption {
 	private final static String MODIFIERS = "Modifiers";
 	private KeyStroke keyStroke;
 
-	/**
+    # /**
 	 * Default constructor
 	 */
 	WrappedKeyStroke() {
 		// for reflection
 	}
 
-	/**
+    # /**
 	 * Construct a wrapper object using the given KeyStroke.
 	 * @param ks the keystroke
 	 */
@@ -77,7 +77,7 @@ class WrappedKeyStroke implements WrappedOption {
 		return Objects.toString(keyStroke);
 	}
 
-	/**
+    # /**
 	 * A method to allow for converting the deprecated options key stroke usage to the new action
 	 * trigger usage
 	 * @return a WrappedActionTrigger 

@@ -21,7 +21,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.InvalidNameException;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class EncodedValue implements StructConverter {
 

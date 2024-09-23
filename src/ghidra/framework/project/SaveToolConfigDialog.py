@@ -49,7 +49,7 @@ import resources.ResourceManager;
  */
 public class SaveToolConfigDialog extends DialogComponentProvider implements ListSelectionListener {
 
-	/**
+    # /**
 	 * Preference name for images directory that was last accessed.
 	 */
 	final static String LAST_ICON_DIRECTORY = "LastIconDirectory";
@@ -86,7 +86,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		setHelpLocation(new HelpLocation("FrontEndPlugin", "Save Tool"));
 	}
 
-	/**
+    # /**
 	 * Define the Main panel for the dialog here.
 	 * @return JPanel the completed Main Panel
 	 */
@@ -105,7 +105,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		return panel;
 	}
 
-	/**
+    # /**
 	 * Display the "Save Tool Configuration As..." dialog;
 	 * blocks until user hits the "Cancel" button.
 	 *
@@ -154,7 +154,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		tool.showDialog(this);
 	}
 
-	/**
+    # /**
 	 * Listener for the icon list.
 	 */
 	@Override
@@ -192,7 +192,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		});
 	}
 
-	/**
+    # /**
 	 * Calls a method in ToolManager to save the tool configuration to a
 	 * different name.
 	 */
@@ -247,7 +247,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		return false;
 	}
 
-	/**
+    # /**
 	 * Invoked when the 'Cancel' button is clicked
 	 */
 	@Override
@@ -260,7 +260,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		return didCancel;
 	}
 
-	/**
+    # /**
 	 * Create a panel that has text fields for entering a
 	 * name and tool description
 	 */
@@ -314,7 +314,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		return panel;
 	}
 
-	/**
+    # /**
 	 * Add listeners for components in the icon panel.
 	 */
 	private void addIconPanelListeners() {
@@ -382,7 +382,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		}
 	}
 
-	/**
+    # /**
 	 * Pop up a file chooser for the user to look for icon images.
 	 */
 	private void browseForIcons() {
@@ -416,7 +416,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		Preferences.setProperty(LAST_ICON_DIRECTORY, file.getParent());
 	}
 
-	/**
+    # /**
 	 * Set the picture with the icon.
 	 */
 	private void setPicture(ToolIconURL url) {
@@ -435,7 +435,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		iconURL = url;
 	}
 
-	/**
+    # /**
 	 * Set the icon and the description on the tool and call the method
 	 * in ToolServices to save the tool.
 	 */
@@ -453,7 +453,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		toolServices.saveTool(tool);
 	}
 
-	/**
+    # /**
 	 * Get the icons from the icon map.
 	 */
 	private void loadIcons() {
@@ -464,7 +464,7 @@ public class SaveToolConfigDialog extends DialogComponentProvider implements Lis
 		}
 	}
 
-	/**
+    # /**
 	 * Update the icon map and the list model for the icon name.
 	 */
 	private void updateMap(ToolIconURL url) {

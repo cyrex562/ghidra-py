@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.xml;
 
-import java.io.*;
+
 import java.util.*;
 
 import ghidra.app.util.bin.ByteArrayProvider;

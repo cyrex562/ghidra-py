@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format;
 
 import ghidra.util.DataConverter;
 
-import java.io.IOException;
+
 import java.io.RandomAccessFile;
 
 /**

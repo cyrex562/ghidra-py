@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.processors.sleigh;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.app.plugin.processors.sleigh.symbol.*;

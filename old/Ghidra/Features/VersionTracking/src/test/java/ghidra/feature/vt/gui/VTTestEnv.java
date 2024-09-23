@@ -19,7 +19,7 @@ import static docking.test.AbstractDockingTest.*;
 import static generic.test.AbstractGenericTest.*;
 import static generic.test.AbstractGuiTest.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

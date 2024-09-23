@@ -40,7 +40,7 @@ public class VTTaskMonitor {
 		monitor = TaskMonitor.dummyIfNull(m);
 	}
 
-	/**
+    # /**
 	 * Returns the current in-use task monitor or a dummy monitor if there is no task running
 	 * @return the monitor
 	 */

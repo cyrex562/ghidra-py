@@ -39,7 +39,7 @@ public class ExpiringSwingTimer extends GhidraSwingTimer {
 	private TimerCallback clientCallback;
 	private AtomicBoolean didRun = new AtomicBoolean();
 
-	/**
+    # /**
 	 * Runs the given client runnable when the given condition returns true.  The returned timer
 	 * will be running.
 	 * 
@@ -62,7 +62,7 @@ public class ExpiringSwingTimer extends GhidraSwingTimer {
 		return timer;
 	}
 
-	/**
+    # /**
 	 * Calls the given consumer with the non-null value returned from the given supplier.  The
 	 * returned timer will be running.
 	 * 
@@ -96,7 +96,7 @@ public class ExpiringSwingTimer extends GhidraSwingTimer {
 		return timer;
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * <p>Note: this class sets the parent's initial delay to 0.  This is to allow the client
@@ -116,7 +116,7 @@ public class ExpiringSwingTimer extends GhidraSwingTimer {
 		setRepeats(true);
 	}
 
-	/**
+    # /**
 	 * Returns true if the client runnable was run
 	 * @return true if the client runnable was run
 	 */
@@ -133,7 +133,7 @@ public class ExpiringSwingTimer extends GhidraSwingTimer {
 		super.start();
 	}
 
-	/**
+    # /**
 	 * Returns true the initial expiration period has passed
 	 * @return true if expired
 	 */

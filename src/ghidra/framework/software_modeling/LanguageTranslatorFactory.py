@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.lang.reflect.Modifier;
@@ -30,21 +30,21 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <code>LanguageTranslatorFactory</code> manages all language translators within Ghidra.  
- * Language translators support either a version translation for a single language, or a 
- * language transition from one language to another.  The following types of translators 
- * are supported:
- * <ul>
- * <li>Simple translators are established based upon a translator XML specification file (*.trans).</li>
- * <li>Explicit translators are class implementations of the LanguageTranslator interface.
- * The abstract LanguageTranslatorAdapter has been supplied for this purpose so that 
- * default mappings can be used if needed.  Such custom translator classes should not be 
- * created within the 'ghidra.program.util' package since they will be ignored by the factory.</li>
- * <li>Default translators can be instantiated for languages whose address spaces map to one-another.
- * Such default translations may be lossy with register mappings and could result in lost register 
- * variables and references.</li> 
- * </ul>
- */
+# * <code>LanguageTranslatorFactory</code> manages all language translators within Ghidra.  
+# * Language translators support either a version translation for a single language, or a 
+# * language transition from one language to another.  The following types of translators 
+# * are supported:
+# * <ul>
+# * <li>Simple translators are established based upon a translator XML specification file (*.trans).</li>
+# * <li>Explicit translators are class implementations of the LanguageTranslator interface.
+# * The abstract LanguageTranslatorAdapter has been supplied for this purpose so that 
+# * default mappings can be used if needed.  Such custom translator classes should not be 
+# * created within the 'ghidra.program.util' package since they will be ignored by the factory.</li>
+# * <li>Default translators can be instantiated for languages whose address spaces map to one-another.
+# * Such default translations may be lossy with register mappings and could result in lost register 
+# * variables and references.</li> 
+# * </ul>
+# */
 public class LanguageTranslatorFactory {
 
 	public static final String LANGUAGE_TRANSLATOR_FILE_EXT = ".trans";
@@ -54,12 +54,12 @@ public class LanguageTranslatorFactory {
 	private Comparator<Object> TRANSLATOR_VERSION_COMPARATOR =
 		(o1, o2) -> ((LanguageTranslator) o1).getOldVersion() - ((Integer) o2).intValue();
 
-	/**
+    # /**
 	 * <code>translatorMap</code> provides pre-defined translators between different languages.
 	 */
 	private HashMap<LanguageID, List<LanguageTranslator>> translatorMap = new HashMap<>();
 
-	/**
+    # /**
 	 * <code>translatorVersionMap</code> provides pre-defined translators between consecutive versions 
 	 * of the same language.  Lists are in sorted order based upon translator fromVersion.
 	 */
@@ -80,7 +80,7 @@ public class LanguageTranslatorFactory {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the single instance of the OldLanguageFactory.
 	 */
 	public static LanguageTranslatorFactory getLanguageTranslatorFactory() {
@@ -90,7 +90,7 @@ public class LanguageTranslatorFactory {
 		return languageTranslatorFactory;
 	}
 
-	/**
+    # /**
 	 * Constructor.
 	 */
 	private LanguageTranslatorFactory() {
@@ -187,7 +187,7 @@ public class LanguageTranslatorFactory {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns number of files which failed to parse properly.
 	 * This only reflects minimal parsing of old language files
 	 * which will prevent them from being added to old language map.
@@ -197,7 +197,7 @@ public class LanguageTranslatorFactory {
 		return badFileCount;
 	}
 
-	/**
+    # /**
 	 * Validate all translators contained within the translator maps.  
 	 * This is intended to be used by a unit test.
 	 * @return number of validation errors
@@ -221,7 +221,7 @@ public class LanguageTranslatorFactory {
 		return errorCnt;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all translators.
 	 */
 	List<LanguageTranslator> getAllTranslators() {
@@ -235,7 +235,7 @@ public class LanguageTranslatorFactory {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns a language translator for the transition from an oldLanguage to a newLanguage.
 	 * The toLanguage may be a different language or a newer version of fromLanguage.
 	 * @param fromLanguage old language
@@ -276,7 +276,7 @@ public class LanguageTranslatorFactory {
 		return LanguageTranslatorAdapter.getDefaultLanguageTranslator(fromLanguage, toLanguage);
 	}
 
-	/**
+    # /**
 	 * Returns a language translation for a language version which is no longer supported.
 	 * @param languageName old unsupported language name
 	 * @param majorVersion language major version within program
@@ -299,7 +299,7 @@ public class LanguageTranslatorFactory {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Expand the to/from sides of a language translator to originate "from" the specified 
 	 * fromMajorVersion and terminate at the current version of the "to" language. 
 	 * @param translator
@@ -345,7 +345,7 @@ public class LanguageTranslatorFactory {
 		return translator;
 	}
 
-	/**
+    # /**
 	 * Build language version translator.  A default translator will be built if 
 	 * explicit translators have not been defined.
 	 * @param languageID
@@ -404,7 +404,7 @@ public class LanguageTranslatorFactory {
 		return translator;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param versionTranslatorList sorted list of version translators
 	 * @param version

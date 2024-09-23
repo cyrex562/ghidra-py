@@ -17,7 +17,7 @@ package ghidra.framework.options;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.io.*;
+
 import java.util.Date;
 
 import javax.swing.KeyStroke;
@@ -65,7 +65,7 @@ public enum OptionType {
 		return stringAdapter.objectToString(object);
 	}
 
-	/**
+    # /**
 	 * Return true if the give value is of the correct type for this option type. Note that a
 	 * value of null is compatible with any class type
 	 * since it is an acceptable value for any class type.

@@ -116,14 +116,14 @@ public class IntArray implements Array, Serializable {
         System.arraycopy(ints,0,newints,0,len);
         ints = newints;
     }
-	/**
+    # /**
 	 * @see ghidra.util.datastruct.Array#getLastNonEmptyIndex()
 	 */
     public int getLastNonEmptyIndex() {
         return lastNonZeroIndex;
     }
 
-	/**
+    # /**
 	 * @see ghidra.util.datastruct.Array#copyDataTo(int, DataTable, int, int)
 	 */
     public void copyDataTo(int index, DataTable table, int toIndex, int toCol) {

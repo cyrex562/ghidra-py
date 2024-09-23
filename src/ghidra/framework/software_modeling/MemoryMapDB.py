@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.mem;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 
@@ -38,8 +38,8 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * The database memory map manager.
- */
+# * The database memory map manager.
+# */
 public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 
 	private ProgramDB program;
@@ -56,7 +56,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 
 	private MemoryAddressSetViews addrSetViews;
 
-	/**
+    # /**
 	 * Address set views into program memory which are iterator safe
 	 * for public API methods.
 	 */
@@ -82,7 +82,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		return block.getStart().compareTo(addr);
 	};
 
-	/**
+    # /**
 	 * Constructs a new MemoryMapDB
 	 * 
 	 * @param handle the open database handle.
@@ -135,7 +135,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the address set views {@code addrSetView} and rebuild if needed and optionally
 	 * rebuild {@code allAddrSet}.  This method also updates mapped-block details when
 	 * rebuilding the views.
@@ -197,7 +197,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Update address sets with relevant addresses from the specified memory block. 
 	 * In addition, allAddrSet will be updated if addToAll parameter is true.
 	 * 
@@ -297,7 +297,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		defaultEndian = newLanguage.isBigEndian() ? BIG_ENDIAN : LITTLE_ENDIAN;
 	}
 
-	/**
+    # /**
 	 * Set the program.
 	 */
 	@Override
@@ -328,7 +328,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		program.dbError(e);
 	}
 
-	/**
+    # /**
 	 * Returns the address factory for the program.
 	 * 
 	 * @return program address factory
@@ -337,7 +337,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		return addrMap.getAddressFactory();
 	}
 
-	/**
+    # /**
 	 * Returns the AddressMap from the program.
 	 * 
 	 * @return program address map
@@ -543,7 +543,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		program.fireEvent(new DomainObjectChangeRecord(DomainObjectEvent.RESTORED));
 	}
 
-	/**
+    # /**
 	 * Two blocks have been joined producing newBlock. The block which was eliminated can be
 	 * identified using the oldBlockStartAddr.
 	 * 
@@ -639,7 +639,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		return ovAddr;
 	}
 
-	/**
+    # /**
 	 * Create a new overlay space based upon the given base AddressSpace.
 	 * The specified overlaySpaceName may be modified to ensure name validity and uniqueness.
 	 * @param overlaySpaceName the name of the new overlay space.
@@ -666,7 +666,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate an allowed address space name from a block name. Use of unsupported characters will
 	 * be converted to underscore (includes colon and all whitespace chars). double-underscore to
 	 * ensure uniqueness.
@@ -904,7 +904,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Check new block name for validity
 	 * 
 	 * @param name new block name
@@ -1339,7 +1339,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Tests if the memory contains a sequence of contiguous bytes that match the given byte array
 	 * at all bit positions where the mask contains an "on" bit. The test will be something like
 	 *
@@ -1967,7 +1967,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Attempts to remove the the given overlay address space.  Removal will only succeed if no
 	 * memory blocks currently reside within the space.
 	 * 
@@ -2016,7 +2016,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the intersected set of addresses between a mapped memory block, and some other address
 	 * set.
 	 *
@@ -2040,7 +2040,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		return mappedIntersection;
 	}
 
-	/**
+    # /**
 	 * Converts the given address range back from the source range back to the mapped range. NOTE:
 	 * It is important that the specified mappedSourceRange is restricted to the mapped source area
 	 * of the specified mappedBlock.
@@ -2288,7 +2288,7 @@ public class MemoryMapDB implements Memory, ManagerDB, LiveMemoryListener {
 		throw new IOException("No File Bytes found for ID: " + fileBytesID);
 	}
 
-	/**
+    # /**
 	 * Returns a list of all memory blocks that contain any addresses in the given range
 	 * 
 	 * @param start the start address

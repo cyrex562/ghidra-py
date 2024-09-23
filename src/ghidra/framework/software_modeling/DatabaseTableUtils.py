@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.util;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.map.*;
@@ -28,7 +28,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class DatabaseTableUtils {
 
-	/**
+    # /**
 	 * Updates an indexed address field for when a block is moved.
 	 * @param table the database table
 	 * @param addrCol the address column in the table
@@ -71,7 +71,7 @@ public class DatabaseTableUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Handles redoing a table whose key is address based when a ranges of addresses is moved.
 	 * @param table the database table.
 	 * @param addrMap the address map.
@@ -101,7 +101,7 @@ public class DatabaseTableUtils {
 		updateAddressKey(table, addrMap, fromAddr, endAddr, toAddr, monitor);
 	}
 
-	/**
+    # /**
 	 * Handles redoing a table whose key is address based when a ranges of addresses is moved.
 	 * @param table the database table.
 	 * @param addrMap the address map.

@@ -16,7 +16,7 @@
 package ghidra.framework.main.logviewer.ui;
 
 import java.awt.Point;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.JViewport;
@@ -49,7 +49,7 @@ public class ViewportUtility implements Observer {
 
 	private FVEventListener eventListener;
 
-	/**
+    # /**
 	 * 
 	 */
 	public ViewportUtility(FVEventListener eventListener) {
@@ -57,7 +57,7 @@ public class ViewportUtility implements Observer {
 		eventListener.addObserver(this);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param viewport
 	 */
@@ -65,7 +65,7 @@ public class ViewportUtility implements Observer {
 		this.viewport = viewport;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param table
 	 */
@@ -73,7 +73,7 @@ public class ViewportUtility implements Observer {
 		this.table = table;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param reader
 	 */
@@ -81,7 +81,7 @@ public class ViewportUtility implements Observer {
 		this.reader = reader;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param model
 	 */
@@ -89,7 +89,7 @@ public class ViewportUtility implements Observer {
 		this.model = model;
 	}
 	
-	/**
+    # /**
 	 * Returns the height (in pixels) of the viewport.
 	 * 
 	 * @return
@@ -98,7 +98,7 @@ public class ViewportUtility implements Observer {
 		return viewport.getHeight();
 	}
 
-	/**
+    # /**
 	 * Returns the table row associated with the top of the viewport.
 	 * 
 	 * @return
@@ -107,7 +107,7 @@ public class ViewportUtility implements Observer {
 		return viewport.getViewPosition().y / table.getRowHeight();
 	}
 
-	/**
+    # /**
 	 * Returns true if the given row is in the viewport.
 	 * 
 	 * @param row
@@ -121,7 +121,7 @@ public class ViewportUtility implements Observer {
 		return (row >= viewportRowStart && row <= viewportRowEnd);
 	}
 
-	/**
+    # /**
 	 * Snaps the viewport to the bottom of the table.
 	 */
 	public void moveViewportToBottom() {
@@ -133,7 +133,7 @@ public class ViewportUtility implements Observer {
 		eventListener.send(updateViewportEvt);
 	}
 
-	/**
+    # /**
 	 * Snaps the viewport to the top of the table.
 	 */
 	public void moveViewportToTop() {
@@ -144,7 +144,7 @@ public class ViewportUtility implements Observer {
 		eventListener.send(updateViewportEvt);
 	}
 
-	/**
+    # /**
 	 * Returns the number of rows that are visible in the viewport. 
 	 * 
 	 * @return
@@ -153,7 +153,7 @@ public class ViewportUtility implements Observer {
 		return viewport.getHeight() / table.getRowHeight();
 	}
 
-	/**
+    # /**
 	 * Moves the viewport (top) to the given row in the current view.
 	 *
 	 * @param row
@@ -169,7 +169,7 @@ public class ViewportUtility implements Observer {
 		}
 	}
 
-	/**
+    # /**
 	 * Moves the viewport up the number of rows specified. If moving up puts he view above 
 	 * the bounds of the first-visible chunk, load a previous chunk.
 	 * 
@@ -247,7 +247,7 @@ public class ViewportUtility implements Observer {
 		}
 	}
 
-	/**
+    # /**
 	 * Moves the viewport down the number of rows specified. If moving down puts he view below 
 	 * the bounds of the first-visible chunk, load the next chunk.
 	 * 
@@ -321,11 +321,11 @@ public class ViewportUtility implements Observer {
 		}
 	}
 
-	/*********************************************************************************
+    # /*********************************************************************************
 	 * PRIVATE METHODS
 	 *********************************************************************************/
 
-	/**
+    # /**
 	 * Sets the first row in the viewport to be the start of the current selection range.  The 
 	 * end of the selection range remains untouched.
 	 */
@@ -342,7 +342,7 @@ public class ViewportUtility implements Observer {
 	}
 
 	
-	/**
+    # /**
 	 * Sets the last row in the viewport to be the end of the current selection range.  The 
 	 * start of the selection range remains untouched.
 	 */
@@ -358,7 +358,7 @@ public class ViewportUtility implements Observer {
 		table.restoreSelection();
 	}
 	
-	/**
+    # /**
 	 * Sets the viewport to the given position, and fires off an event to notify any
 	 * subscribers.
 	 * 
@@ -380,7 +380,7 @@ public class ViewportUtility implements Observer {
 		eventListener.send(updateViewportEvt);
 	}
 
-	/**
+    # /**
 	 * Returns how many rows the given row is above or below the current viewport. 
 	 * 
 	 * @param row
@@ -410,7 +410,7 @@ public class ViewportUtility implements Observer {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * @param o
 	 * @param arg
 	 */
@@ -429,7 +429,7 @@ public class ViewportUtility implements Observer {
 		}
 	}
 
-	/**
+    # /**
 	 * Processes events received via the {@link FVEvent} mechanism. 
 	 * 
 	 * @param event the event type received
@@ -454,7 +454,7 @@ public class ViewportUtility implements Observer {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if all necessary state objects have been set.
 	 * 
 	 * @return

@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.macos.rm;
 
 import ghidra.app.util.bin.BinaryReader;
 
-import java.io.IOException;
+
 
 # /**
  * Format of resource data for a single resource.

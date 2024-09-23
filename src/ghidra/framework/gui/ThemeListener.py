@@ -20,7 +20,7 @@ package generic.theme;
  */
 public interface ThemeListener {
 
-	/**
+    # /**
 	 * Called when the theme or any of its values change
 	 * @param event the {@link ThemeEvent} that describes what changed
 	 */

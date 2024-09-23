@@ -137,7 +137,7 @@ public class LoggingInitialization {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the default file used for logging messages.
 	 * @return the file
 	 */
@@ -151,7 +151,7 @@ public class LoggingInitialization {
 		return APPLICATION_LOG_FILE;
 	}
 
-	/**
+    # /**
 	 * Use this to override the default application log file, before you initialize the logging
 	 * system.
 	 *
@@ -175,7 +175,7 @@ public class LoggingInitialization {
 		reinitialize();
 	}
 
-	/**
+    # /**
 	 * Returns the default file used for logging messages.
 	 * @return the file
 	 */
@@ -187,7 +187,7 @@ public class LoggingInitialization {
 		return SCRIPT_LOG_FILE;
 	}
 
-	/**
+    # /**
 	 * Use this to override the default application log file, before you
 	 * initialize the logging system.
 	 *
@@ -211,7 +211,7 @@ public class LoggingInitialization {
 		reinitialize();
 	}
 
-	/**
+    # /**
 	 * Signals to reload the log settings from the log configuration files in use.  This is useful
 	 * for tests that wish to temporarily change log settings, restoring them when done.
 	 * <p>

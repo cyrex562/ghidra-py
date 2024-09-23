@@ -15,7 +15,7 @@
  */
 package ghidra.server;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.logging.log4j.LogManager;
@@ -68,7 +68,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 	private ArrayList<RepositoryChangeEvent> eventQueue = new ArrayList<>();
 	private boolean dispatchSuspended = false;
 
-	/**
+    # /**
 	 * Create a new Repository at the given path; the directory has already
 	 * been created.
 	 * @param mgr repository manager
@@ -177,7 +177,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 			});
 	}
 
-	/**
+    # /**
 	 * Dispose server repository and all remote handles.
 	 * Method will block until all clients are notified
 	 */
@@ -201,7 +201,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Suspend the immediate dispatching of change events.
 	 * Dispatching is resumed by invoking the flushChangeEvents method.
 	 */
@@ -220,7 +220,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Send all queued change events immediately.
 	 * If event dispatching had been suspended, it will 
 	 * resume with this call.
@@ -253,7 +253,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return handles;
 	}
 
-	/**
+    # /**
 	 * Add a user handle to this repository.
 	 * @param handle user repository handle
 	 */
@@ -263,7 +263,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Drop the specified handle to this repository
 	 * @param handle user repository handle
 	 */
@@ -273,7 +273,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the name of this repository.
 	 * @return name of the repository.
 	 */
@@ -281,7 +281,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Get the total number of items contained within this repository.
 	 * See {@link FileSystem#getItemCount()}.
 	 * @return total number of repository items
@@ -292,7 +292,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return fileSystem.getItemCount();
 	}
 
-	/**
+    # /**
 	 * Returns the folder specified by folderPath.
 	 * @param currentUser user that is getting/creating the folder, only required if create is true 
 	 * @param folderPath absolute folder path
@@ -322,7 +322,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Convenience method for getting list of all "Known" users
 	 * defined to the repository user manager.
 	 * @param currentUser user performing request
@@ -336,7 +336,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return mgr.getUserManager().getUsers();
 	}
 
-	/**
+    # /**
 	 * Set the user access list.
 	 * @param currentUser user that is setting the access list on this
 	 * repository; the current user must 
@@ -385,7 +385,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Privileged method for setting user access for this repository
 	 * @param username user username
 	 * @param permission access permission ({@link User#READ_ONLY}, 
@@ -414,7 +414,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Privileged method for removing user access from this repository
 	 * @param username user username
 	 * @return true if user had access and has been successfully removed, else false
@@ -431,7 +431,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the list of known users for this repository.
 	 * @param currentUser user that is requesting the user list. 
 	 * @throws UserAccessException if currentUser is not a current repository admin
@@ -454,14 +454,14 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if anonymous access is allowed for this repository
 	 */
 	public boolean anonymousAccessAllowed() {
 		return anonymousAccessAllowed;
 	}
 
-	/**
+    # /**
 	 * Get the specified user data.
 	 * If the repository's user list if missing or currupt, this user
 	 * will become its administrator.
@@ -482,7 +482,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Write user access list to local file.
 	 * @param currentUser current user
 	 * @param newUserMap user map
@@ -501,7 +501,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		log.info("User access list for repository '" + name + "' updated by: " + currentUser);
 	}
 
-	/**
+    # /**
 	 * Privileged method for updating user access list.
 	 * @param newUserMap user map
 	 * @param allowAnonymous true if anonymous access is allowed
@@ -540,7 +540,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		temp.renameTo(userAccessFile);
 	}
 
-	/**
+    # /**
 	 * Delete this repository and its contents.
 	 * <P>
 	 * NOTE: This method is not yet implemented.  Server admin should stop server
@@ -559,7 +559,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate formatted list of user access permissions to the specified repository.
 	 * This is intended to be used with the svrAdmin console command
 	 * @param repositoryDir repository directory
@@ -586,7 +586,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Generate formatted list of user access permissions to the specified repository
 	 * restricted to user names contained within listUserAccess.
 	 * This is intended to be used with the svrAdmin console command
@@ -619,7 +619,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return buf != null ? buf.toString() : null;
 	}
 
-	/**
+    # /**
 	 * Read user access list from local file.
 	 * @throws IOException
 	 */
@@ -646,7 +646,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		userMap = newUserMap;
 	}
 
-	/**
+    # /**
 	 * Read list of user permissions from userAccessFile and determine if anonymous read-only
 	 * access is permitted
 	 * @param userAccessFile repository user access file
@@ -681,7 +681,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return allowAnonymous;
 	}
 
-	/**
+    # /**
 	 * Parse input line from user access list
 	 * @param line text line from user access file
 	 * @return
@@ -701,7 +701,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Validate this repository.
 	 * @throws IOException if repository no longer exists
 	 */
@@ -711,7 +711,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Verify that the specified currentUser has Admin privilege within this repository.
 	 * @param currentUser current user
 	 * @return user object for currentUser
@@ -732,7 +732,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Verify that the specified currentUser has Write privilege within this repository.
 	 * @param currentUser current user
 	 * @return user object for currentUser
@@ -753,7 +753,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Verify that the specified currentUser has Read privilege within this repository.
 	 * @param currentUser current user
 	 * @return user object for currentUser
@@ -770,7 +770,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the creation of a new folder.
 	 * @see ghidra.framework.store.FileSystemListener#folderCreated(java.lang.String, java.lang.String)
 	 */
@@ -799,7 +799,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		sendChangeEvent(event);
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the creation of a new item.
 	 * @see ghidra.framework.store.FileSystemListener#itemCreated(java.lang.String, java.lang.String)
 	 */
@@ -828,7 +828,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		sendChangeEvent(event);
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the removal of a folder.
 	 * @see ghidra.framework.store.FileSystemListener#folderDeleted(java.lang.String, java.lang.String)
 	 */
@@ -855,7 +855,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		sendChangeEvent(event);
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the movement of a folder.
 	 * @see ghidra.framework.store.FileSystemListener#folderMoved(java.lang.String, java.lang.String, java.lang.String)
 	 */
@@ -866,7 +866,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		sendChangeEvent(event);
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the renaming of a folder.
 	 * @see ghidra.framework.store.FileSystemListener#folderRenamed(java.lang.String, java.lang.String, java.lang.String)
 	 */
@@ -878,7 +878,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		sendChangeEvent(event);
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the removal of an item.
 	 * @see ghidra.framework.store.FileSystemListener#itemDeleted(java.lang.String, java.lang.String)
 	 */
@@ -889,7 +889,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		sendChangeEvent(event);
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the renaming of an item.
 	 * @see ghidra.framework.store.FileSystemListener#itemRenamed(java.lang.String, java.lang.String, java.lang.String)
 	 */
@@ -900,7 +900,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		sendChangeEvent(event);
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the movement of an item.
 	 * @see ghidra.framework.store.FileSystemListener#itemMoved(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
 	 */
@@ -912,7 +912,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		sendChangeEvent(event);
 	}
 
-	/**
+    # /**
 	 * Generate RepositoryChangeEvent following the status change of an item.
 	 * @see ghidra.framework.store.FileSystemListener#itemChanged(java.lang.String, java.lang.String)
 	 */
@@ -1002,7 +1002,7 @@ public class Repository implements FileSystemListener, RepositoryLogger {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @return object to be used for synchronization of a specific repository.
 	 */
 	public Object getSyncObject() {

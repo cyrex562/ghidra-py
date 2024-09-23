@@ -16,7 +16,7 @@
 package ghidra.feature.vt.gui.plugin;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.SwingUtilities;
@@ -793,7 +793,7 @@ public class VTControllerImpl
 		}
 	}
 
-	/**
+    # /**
 	 * A task wrapper that allows us to set the currently in-use task monitor for VT APIs to use
 	 * when they are not explicitly passed a task monitor.
 	 */

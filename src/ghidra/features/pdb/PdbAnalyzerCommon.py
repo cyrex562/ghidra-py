@@ -43,7 +43,7 @@ public class PdbAnalyzerCommon {
 	// TODO: I changed this method from what was lifted in the old code.  I check for null string
 	//  and I also check for MSCOFF_NAME (TODO: check on the validity of this!!!).  Also, changed
 	//  the comparison to a substring search from a .equals).
-	/**
+    # /**
 	 * Returns true if the specified program is supported by either of the
 	 * Pdb analyzers.
 	 * 
@@ -78,7 +78,7 @@ public class PdbAnalyzerCommon {
 
 	}
 
-	/**
+    # /**
 	 * Common logic to set a manual Pdb file that the specified analyzer will find and use
 	 * when it is invoked later<p>
 	 * Each specific analyzer has a public method that calls this to supply the
@@ -93,7 +93,7 @@ public class PdbAnalyzerCommon {
 		options.setFile(analyzerName + "." + OPTION_NAME_PDB_FILE, pdbFile);
 	}
 
-	/**
+    # /**
 	 * Common logic to set the "allow remote" option that the specified analyzer will find and use
 	 * when it is invoked later<p>
 	 * Each specific analyzer has a public method that calls this to supply the
@@ -110,7 +110,7 @@ public class PdbAnalyzerCommon {
 			allowUntrusted);
 	}
 
-	/**
+    # /**
 	 * Common pdb searching logic between both analyzers.
 	 * 
 	 * @param pdbAnalyzer the analyzer doing the searching

@@ -27,7 +27,7 @@ public class TypeServerMsType extends AbstractTypeServerMsType {
 
 	public static final int PDB_ID = 0x1501;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

@@ -23,7 +23,7 @@ import java.util.*;
 public class WeakValueTreeMap<K, V> extends AbstractWeakValueNavigableMap<K, V> {
 	protected final NavigableMap<K, WeakValueRef<K, V>> refMap;
 
-	/**
+    # /**
 	 * Constructs a new weak map
 	 */
 	public WeakValueTreeMap() {
@@ -31,7 +31,7 @@ public class WeakValueTreeMap<K, V> extends AbstractWeakValueNavigableMap<K, V> 
 		refMap = new TreeMap<>();
 	}
 
-	/**
+    # /**
 	 * Constructs a new weak map with keys ordered according to the given comparator
 	 * 
 	 * @param comparator the comparator, or {@code null} for the natural ordering

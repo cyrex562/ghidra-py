@@ -75,14 +75,14 @@ public class CountLatch {
 		this.sync = new Sync();
 	}
 
-	/**
+    # /**
 	 * Increments the latch count.
 	 */
 	public void increment() {
 		sync.increment();
 	}
 
-	/**
+    # /**
 	 * Decrements the latch count and releases any waiting threads when the count reaches 0.
 	 */
 	public void decrement() {
@@ -93,7 +93,7 @@ public class CountLatch {
 		return sync.getCount();
 	}
 
-	/**
+    # /**
 	 * Causes the current thread to wait until the latch count is
 	 * zero, unless the thread is {@linkplain Thread#interrupt interrupted}.
 	 *
@@ -124,7 +124,7 @@ public class CountLatch {
 		sync.acquireSharedInterruptibly(1);
 	}
 
-	/**
+    # /**
 	 * Causes the current thread to wait until the latch count is
 	 * zero, unless the thread is {@linkplain Thread#interrupt interrupted},
 	 * or the specified waiting time elapses.

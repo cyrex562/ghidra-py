@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.progmgr;
 import static ghidra.framework.main.DataTreeDialogType.*;
 
 import java.awt.event.ActionListener;
-import java.io.IOException;
+
 import java.rmi.ConnectException;
 import java.util.*;
 

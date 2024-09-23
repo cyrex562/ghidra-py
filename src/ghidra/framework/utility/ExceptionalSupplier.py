@@ -25,7 +25,7 @@ package utility.function;
 @FunctionalInterface
 public interface ExceptionalSupplier<T, E extends Throwable> {
 
-	/**
+    # /**
 	 * The supplier method
 	 * @return the item to return
 	 * @throws E the declared exception

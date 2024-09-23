@@ -15,7 +15,7 @@
  */
 package ghidra.net;
 
-import java.io.IOException;
+
 import java.security.GeneralSecurityException;
 import java.security.KeyStore;
 import java.security.cert.CertificateException;

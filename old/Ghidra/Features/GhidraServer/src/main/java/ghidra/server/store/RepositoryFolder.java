@@ -16,7 +16,7 @@
 package ghidra.server.store;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.logging.log4j.LogManager;

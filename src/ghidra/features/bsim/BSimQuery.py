@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import generic.lsh.vector.LSHVectorFactory;
@@ -47,7 +47,7 @@ public abstract class BSimQuery<R extends QueryResponseRecord> {
 		response = null;
 	}
 	
-	/**
+    # /**
 	 * Executes this query via the {@link FunctionDatabase#query(BSimQuery)} method.
 	 * The use of this method is preferred due to its type enforcement on the returned
 	 * response object. 
@@ -81,14 +81,14 @@ public abstract class BSimQuery<R extends QueryResponseRecord> {
 
 	public DescriptionManager getDescriptionManager() { return null; }
 
-	/**
+    # /**
 	 * @return a partial clone of this query suitable for holding local stages of the query via StagingManager
 	 */
 	public BSimQuery<?> getLocalStagingCopy() {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Restore a query from a stream
 	 * @param parser is the XmlPullParser already queued up with the stream to process
 	 * @param vectorFactory is used to generate any vector objects from the XML

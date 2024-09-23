@@ -27,7 +27,7 @@ public class ConstantStMsSymbol extends AbstractConstantMsSymbol {
 
 	public static final int PDB_ID = 0x1002;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

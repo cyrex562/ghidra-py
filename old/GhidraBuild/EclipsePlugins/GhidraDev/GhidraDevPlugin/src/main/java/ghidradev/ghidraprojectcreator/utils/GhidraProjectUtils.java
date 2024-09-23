@@ -15,7 +15,7 @@
  */
 package ghidradev.ghidraprojectcreator.utils;
 
-import java.io.*;
+
 import java.nio.charset.StandardCharsets;
 import java.text.ParseException;
 import java.util.*;

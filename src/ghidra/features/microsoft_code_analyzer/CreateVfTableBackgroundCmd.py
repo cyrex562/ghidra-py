@@ -40,7 +40,7 @@ public class CreateVfTableBackgroundCmd extends AbstractCreateDataBackgroundCmd<
 	private static final String META_LABEL = "meta";
 	private static final String NAME_SEPARATOR = "_";
 
-	/**
+    # /**
 	 * Constructs a command for applying a vf table at an address.
 	 * @param address the address where the vf table should be created.
 	 * @param validationOptions the options for controlling how validation is performed when 
@@ -55,7 +55,7 @@ public class CreateVfTableBackgroundCmd extends AbstractCreateDataBackgroundCmd<
 		super(NAME, address, 1, validationOptions, applyOptions);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a vf table dataType at the address indicated by the 
 	 * model.
 	 * @param vfTableModel the model for the data type
@@ -237,7 +237,7 @@ public class CreateVfTableBackgroundCmd extends AbstractCreateDataBackgroundCmd<
 		return true;
 	}
 
-	/**
+    # /**
 	 * Gets the address for the location of the meta data, which is a pointer to the RTTI4
 	 * structure for this virtual function table (vftable).
 	 * @param program the program containing the vftable being created by this command

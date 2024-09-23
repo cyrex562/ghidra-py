@@ -28,7 +28,7 @@ public abstract class AbstractClassMsType extends AbstractCompositeMsType {
 
 	private static final String TYPE_STRING = "class";
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

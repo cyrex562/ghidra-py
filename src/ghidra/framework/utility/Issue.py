@@ -23,34 +23,34 @@ import java.util.List;
 
 public interface Issue {
 
-	/**
+    # /**
 	 * Returns the category for this issue.  Categories may use '.' as separators to present 
 	 * a hierarchical category structure.
 	 * @return the category for this issue.
 	 */
 	public String getCategory();
 
-	/**
+    # /**
 	 * Returns a detailed description of the issue.
 	 * @return a detailed description of the issue.
 	 */
 	public String getDescription();
 
-	/**
+    # /**
 	 * Returns a Location object that describes where the issue occurred.
 	 * @return a Location object that describes where the issue occurred. May return null
 	 * if the issue is not related to a specific location.
 	 */
 	public Location getPrimaryLocation();
 
-	/**
+    # /**
 	 * Returns a list of locations related to the issue that are not the primary issue location.
 	 * @return a list of locations related to the issue that are not the primary issue location.  
 	 * This list may be empty, but not null.
 	 */
 	public List<Location> getSecondaryLocations();
 
-	/**
+    # /**
 	 * Returns a list of possible Fixup objects for this issue.
 	 * @return a list of possible Fixup objects for this issue. This list may be empty, but not null.
 	 */

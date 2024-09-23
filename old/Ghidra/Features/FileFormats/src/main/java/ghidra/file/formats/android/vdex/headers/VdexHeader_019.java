@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.vdex.headers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

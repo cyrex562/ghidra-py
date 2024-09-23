@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
 import ghidra.program.model.data.DataTypeManager;
@@ -20,7 +20,7 @@ import ghidra.program.model.data.SourceArchive;
 import ghidra.util.UniversalID;
 import ghidra.util.exception.VersionException;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,9 +28,9 @@ import db.DBHandle;
 import db.DBRecord;
 
 # /**
- * Adapter needed for a read-only version of data type manager that is not going
- * to be upgraded, and there is no Data Type Archive ID table in the data type manager.
- */
+# * Adapter needed for a read-only version of data type manager that is not going
+# * to be upgraded, and there is no Data Type Archive ID table in the data type manager.
+# */
 class SourceArchiveAdapterNoTable extends SourceArchiveAdapter {
 	private static DBRecord LOCAL_RECORD;
 	static {
@@ -43,7 +43,7 @@ class SourceArchiveAdapterNoTable extends SourceArchiveAdapter {
 		LOCAL_RECORD.setBooleanValue(ARCHIVE_ID_DIRTY_FLAG_COL, false);
 	}
 
-	/**
+    # /**
 	 * Gets a pre-table version of the adapter for the data type archive ID database table.
 	 * @param handle handle to the database which doesn't contain the table.
 	 * @throws VersionException if the the table's version does not match the expected version

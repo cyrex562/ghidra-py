@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.docking.settings.Settings;
@@ -23,8 +23,8 @@ import ghidra.util.DataConverter;
 import ghidra.util.classfinder.ClassTranslator;
 
 # /**
- * Provides a definition of a Double Word within a program.
- */
+# * Provides a definition of a Double Word within a program.
+# */
 public class ShiftedAddressDataType extends BuiltIn {
 	static {
 		ClassTranslator.put("ghidra.program.model.data.Addr32shft",
@@ -37,7 +37,7 @@ public class ShiftedAddressDataType extends BuiltIn {
 
 	private static SettingsDefinition[] SETTINGS_DEFS = {};
 
-	/**
+    # /**
 	 * Creates a Double Word data type.
 	 */
 	public ShiftedAddressDataType() {
@@ -80,7 +80,7 @@ public class ShiftedAddressDataType extends BuiltIn {
 		return Address.class;
 	}
 
-	/**
+    # /**
 	 * Generate an address value based upon bytes stored at the specified buf location
 	 * @param buf memory buffer and stored pointer location
 	 * @param size pointer size in bytes

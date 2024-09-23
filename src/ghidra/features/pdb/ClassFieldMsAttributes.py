@@ -43,7 +43,7 @@ public class ClassFieldMsAttributes extends AbstractParsableItem {
 		public final String label;
 		public final int value;
 
-		/**
+	    # /**
 		 * Emits {@link String} output of this class into the provided {@link StringBuilder}.
 		 * @param builder The {@link StringBuilder} into which the output is created.
 		 */
@@ -89,7 +89,7 @@ public class ClassFieldMsAttributes extends AbstractParsableItem {
 		public final String label;
 		public final int value;
 
-		/**
+	    # /**
 		 * Emits {@link String} output of this class into the provided {@link StringBuilder}.
 		 * @param builder The {@link StringBuilder} into which the output is created.
 		 */
@@ -123,7 +123,7 @@ public class ClassFieldMsAttributes extends AbstractParsableItem {
 	private Property property;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for ClassFieldAttributes/
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -133,7 +133,7 @@ public class ClassFieldMsAttributes extends AbstractParsableItem {
 		processAttributes(attributes);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Access}.
 	 * @return the {@link Access}.
 	 */
@@ -141,7 +141,7 @@ public class ClassFieldMsAttributes extends AbstractParsableItem {
 		return access;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Property}.
 	 * @return the {@link Property}.
 	 */
@@ -149,7 +149,7 @@ public class ClassFieldMsAttributes extends AbstractParsableItem {
 		return property;
 	}
 
-	/**
+    # /**
 	 * Tells whether a compiler generated function exists.
 	 * @return True if a compiler generated function exists.
 	 */
@@ -157,7 +157,7 @@ public class ClassFieldMsAttributes extends AbstractParsableItem {
 		return compilerGenerateFunctionDoesExist;
 	}
 
-	/**
+    # /**
 	 * Tells if it cannot be overridden.
 	 * @return True if it cannot be overridden.
 	 */

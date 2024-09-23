@@ -27,7 +27,7 @@ import java.awt.event.MouseMotionListener;
  */
 public interface PopupSource<V, E> {
 
-	/**
+    # /**
 	 * Returns the tool tip info object for the given mouse event.  Implementations will use the
 	 * event to determine whether a popup should be created for a vertex, edge, the graph or 
 	 * not at all.
@@ -37,21 +37,21 @@ public interface PopupSource<V, E> {
 	 */
 	public ToolTipInfo<?> getToolTipInfo(MouseEvent event);
 
-	/**
+    # /**
 	 * Returns a vertex for the given event
 	 * @param event the event
 	 * @return the vertex or null
 	 */
 	public V getVertex(MouseEvent event);
 
-	/**
+    # /**
 	 * Returns an edge for the given event
 	 * @param event the event
 	 * @return the edge or null
 	 */
 	public E getEdge(MouseEvent event);
 
-	/**
+    # /**
 	 * Adds the given mouse motion listener to the graph component.  This allows the popup 
 	 * regulator to decided when to show and hide popups.
 	 * 
@@ -59,12 +59,12 @@ public interface PopupSource<V, E> {
 	 */
 	public void addMouseMotionListener(MouseMotionListener l);
 
-	/**
+    # /**
 	 * Signals that the graph needs to repaint
 	 */
 	public void repaint();
 
-	/**
+    # /**
 	 * Returns a suitable window parent for the popup window
 	 * @return the window parent
 	 */

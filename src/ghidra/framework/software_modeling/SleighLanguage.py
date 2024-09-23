@@ -1,23 +1,23 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.sleigh;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.util.*;
 import java.util.Map.Entry;
@@ -73,11 +73,11 @@ public class SleighLanguage implements Language {
 	private ParallelInstructionLanguageHelper parallelHelper;
 	private SourceFileIndexer indexer;  //used to provide source file info for constructors
 
-	/**
+    # /**
 	 * Symbols used by sleigh
 	 */
 	private SymbolTable symtab = null;
-	/**
+    # /**
 	 * Non-null if a space should yes segmented addressing
 	 */
 	private String segmentedspace = "";
@@ -86,12 +86,12 @@ public class SleighLanguage implements Language {
 	private AddressSet volatileSymbolAddresses;
 	private AddressSet nonVolatileSymbolAddresses;
 	private ContextCache contextcache = null;
-	/**
+    # /**
 	 * Cached instruction prototypes
 	 */
 	private ConcurrentHashMap<Integer, SleighInstructionPrototype> instructProtoMap;
 	private DecisionNode root = null;
-	/**
+    # /**
 	 * table of AddressSpaces
 	 */
 	LinkedHashMap<String, AddressSpace> spacetable;
@@ -194,7 +194,7 @@ public class SleighLanguage implements Language {
 		return (sourceTimestamp > compiledTimestamp);
 	}
 
-	/**
+    # /**
 	 * Returns the unique base offset from which additional temporary variables
 	 * may be created.
 	 * @return unique base offset
@@ -207,7 +207,7 @@ public class SleighLanguage implements Language {
 		return uniqueAllocateMask;
 	}
 
-	/**
+    # /**
 	 * @return (maximum) number of named p-code sections
 	 */
 	public int numSections() {
@@ -405,7 +405,7 @@ public class SleighLanguage implements Language {
 		return symtab;
 	}
 
-	/**
+    # /**
 	 * Returns the source file indexer
 	 * @return indexer
 	 */
@@ -1130,7 +1130,7 @@ public class SleighLanguage implements Language {
 		return defaultDataSpace;
 	}
 
-	/**
+    # /**
 	 * @deprecated Will be removed once we have better way to attach address spaces to pointer data-types
 	 * @return the default wordsize to use when analyzing pointer offsets
 	 */
@@ -1416,7 +1416,7 @@ public class SleighLanguage implements Language {
 		return description.getManualIndexFile() != null && manualException == null;
 	}
 
-	/**
+    # /**
 	 * Encode limited information to the stream about the SLEIGH translator for the specified
 	 * address factory and optional register set.
 	 * @param encoder is the stream encoder

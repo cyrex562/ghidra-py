@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import java.util.*;
@@ -24,13 +24,13 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * FollowFlow follows the program's code flow either forward or backward from an initial
- * address set. It adds the flow addresses to the initial address set by flowing "from" the 
- * initial addresses in the forward direction or by flowing "to" the initial addresses when
- * used in the backward direction.
- * The flow can be limited by indicating the flow types (i.e. unconditional call, 
- * computed jump, etc.) that we do NOT want to follow.
- */
+# * FollowFlow follows the program's code flow either forward or backward from an initial
+# * address set. It adds the flow addresses to the initial address set by flowing "from" the 
+# * initial addresses in the forward direction or by flowing "to" the initial addresses when
+# * used in the backward direction.
+# * The flow can be limited by indicating the flow types (i.e. unconditional call, 
+# * computed jump, etc.) that we do NOT want to follow.
+# */
 public class FollowFlow {
 	private Program program;
 	private AddressSetView initialAddresses;
@@ -49,7 +49,7 @@ public class FollowFlow {
 	private AddressSpace restrictedAddressSpace = null; // if set restrict flow to this space only
 	private Address nextSymbolAddr;
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * Note: flow into existing functions will be included
@@ -75,7 +75,7 @@ public class FollowFlow {
 		updateFollowFlags(doNotFollow);
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * Note: flow into un-disassembled locations will be included
@@ -101,7 +101,7 @@ public class FollowFlow {
 		this.followIntoFunction = followIntoFunctions;
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param program the program whose flow we are following.
@@ -126,7 +126,7 @@ public class FollowFlow {
 		this.includeData = includeData;
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param program the program whose flow we are following.
@@ -156,7 +156,7 @@ public class FollowFlow {
 		this.includeData = includeData;
 	}
 
-	/**
+    # /**
 	 * updateFollowFlags
 	 *
 	 * @param doNotFollowFlows array of flow types that are not to be followed.
@@ -191,7 +191,7 @@ public class FollowFlow {
 		}
 	}
 
-	/**
+    # /**
 	 * getAddressFlow follows the program's code flow and creates an address
 	 * set for the flow from the addresses that are provided when flowing in the forward direction
 	 * or creates an address set for the flows to the addresses in the address set if flowing
@@ -252,7 +252,7 @@ public class FollowFlow {
 
 	} // flowAddresses
 
-	/**
+    # /**
 	 * Add into the flowAddressSet those addresses we flow to from the specified codeUnit when 
 	 * flowing forward or the addresses that flow to the code unit when determining flows in the 
 	 * backward direction.
@@ -314,7 +314,7 @@ public class FollowFlow {
 		}
 	}
 
-	/**
+    # /**
 	 * followCode follows the program's code unit (instruction or data) flow and
 	 * adds addresses to the address set for the flow from the current location.
 	 * The plugin's properties indicate which flow types should be followed for
@@ -392,7 +392,7 @@ public class FollowFlow {
 		flowAddressSet.add(delaySlotSet);
 	} // followCode
 
-	/**
+    # /**
 	 * followCodeBack follows the program's code unit (instruction or data) flow backwards and
 	 * adds addresses to the address set for the flow to the indicated code unit.
 	 * The plugin's properties indicate which flow types should be followed for
@@ -440,7 +440,7 @@ public class FollowFlow {
 		}
 	} // followCodeBack
 
-	/**
+    # /**
 	 * Gets the instruction to be processed, which has been adjusted to the first instruction when 
 	 * the one passed in is part of a delay slot. If this isn't part of a delay slot then the 
 	 * original instruction is returned.<BR>
@@ -513,7 +513,7 @@ public class FollowFlow {
 		return curNext;
 	}
 
-	/**
+    # /**
 	 * followInstruction follows the program's instruction flow and adds addresses
 	 * to the address set for the flow from the current location.
 	 * The plugin's properties indicate which flow types should be followed for
@@ -528,7 +528,7 @@ public class FollowFlow {
 
 		Address nextAddress = null;
 
-		/*****************
+	    # /*****************
 		 * Follow Flows  *
 		 *****************/
 		Address[] flowAddresses = getFlowsFromInstruction(currentInstr);
@@ -549,7 +549,7 @@ public class FollowFlow {
 			}
 		}
 
-		/***********************
+	    # /***********************
 		 * Follow Fallthrough  *
 		 ***********************/
 		// If we can fall through then get that instruction, add it to the
@@ -577,7 +577,7 @@ public class FollowFlow {
 
 	}
 
-	/**
+    # /**
 	 * followInstructionBack follows the program's instruction flow and adds addresses
 	 * to the address set for the flow to the current instruction.
 	 * The plugin's properties indicate which flow types should be followed for
@@ -601,7 +601,7 @@ public class FollowFlow {
 
 		Address fromAddress = null; // The from address
 
-		/*************************
+	    # /*************************
 		 * Follow Flows Backward *
 		 *************************/
 		Address[] flowFromAddresses = getFlowsAndPointersToInstruction(currentInstr);
@@ -634,7 +634,7 @@ public class FollowFlow {
 		// but need to catch any flows directly into delay slot instructions.
 		getFlowsToPreceedingDelaySlots(currentInstr, instructionStack, flowAddressSet);
 
-		/*********************
+	    # /*********************
 		 * Follow Fall From  *
 		 *********************/
 		// If we can fall through to here then get that instruction that fell through, add it to the
@@ -705,7 +705,7 @@ public class FollowFlow {
 		}
 	}
 
-	/**
+    # /**
 	 * Determines whether the indicated flow type is one that is currently 
 	 * supposed to be followed.
 	 * 
@@ -731,7 +731,7 @@ public class FollowFlow {
 		return shouldFollowFlow;
 	}
 
-	/**
+    # /**
 	 * Gets the addresses of where this instruction flows. Only flow types
 	 * matching the ones that should be followed will have the address it flows
 	 * to returned.
@@ -763,7 +763,7 @@ public class FollowFlow {
 		return list.toArray(new Address[list.size()]);
 	}
 
-	/**
+    # /**
 	 * Gets the addresses that flow to this instruction. Only flow types
 	 * matching the ones that should be followed will have the address it flows
 	 * from returned.
@@ -811,7 +811,7 @@ public class FollowFlow {
 		return list.toArray(new Address[list.size()]);
 	}
 
-	/**
+    # /**
 	 * followData follows the program's code flow and adds addresses to the address set for the 
 	 * flow from the current data item if it has a pointer at the specified address with a 
 	 * reference to an instruction. If the flow at the address isn't from a pointer to 
@@ -860,7 +860,7 @@ public class FollowFlow {
 		flowAddressSet.addRange(min, max); // Add the addresses for the pointer or Data minimum address.
 	}
 
-	/**
+    # /**
 	 * followDataBack follows the program's code flow backwards and adds addresses to the
 	 * address set for the flow to the current data item.
 	 *
@@ -897,7 +897,7 @@ public class FollowFlow {
 		}
 	}
 
-	/**
+    # /**
 	 * If there is a pointer at the indicated address, this adds the addresses for the pointer
 	 * into the address set of flows.
 	 * @param flowAddressSet the address set containing the addresses that make up the flow so far.
@@ -912,7 +912,7 @@ public class FollowFlow {
 		}
 	}
 
-	/**
+    # /**
 	 * Push the instruction at the indicated address onto the flow stack. If the
 	 * indicated address is not the min address of a code unit then do nothing.
 	 * @param cuStack the code unit stack of flows to be followed
@@ -930,7 +930,7 @@ public class FollowFlow {
 		return false;
 	}
 
-	/** 
+    # /** 
 	 * Determines the address set that flows from the addresses in this FollowFlow object's
 	 * initialAddresses set. The address set is determined by what addresses were provided 
 	 * when the FollowFlow was constructed and the type of flow requested.
@@ -943,7 +943,7 @@ public class FollowFlow {
 		return getAddressFlow(monitor, initialAddresses, true);
 	}
 
-	/** 
+    # /** 
 	 * Determines the address set that flows to the addresses in this FollowFlow object's
 	 * initialAddresses set. The address set is determined by what addresses were provided 
 	 * when the FollowFlow was constructed and the type of flow requested. The constructor

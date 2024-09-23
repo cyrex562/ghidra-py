@@ -28,7 +28,7 @@ import ghidra.util.exception.ClosedException;
  */
 public class SwingExceptionHandler implements UncaughtExceptionHandler {
 
-	/**
+    # /**
 	 * Handle exception caught within the Swing event dispatch thread.
 	 * @param t exception
 	 * @throws Throwable error occurred while attempting to handle exception
@@ -37,7 +37,7 @@ public class SwingExceptionHandler implements UncaughtExceptionHandler {
 		handleUncaughtException(t);
 	}
 
-	/**
+    # /**
 	 * Register SwingExceptionHandler
 	 */
 	public static void registerHandler() {

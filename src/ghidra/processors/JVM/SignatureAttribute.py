@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -50,7 +50,7 @@ public class SignatureAttribute extends AbstractAttributeInfo {
 		signatureIndex = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the signature_index item must be a valid index into the
 	 * constant_pool table. The constant pool entry at that index must be a
 	 * CONSTANT_Utf8_info structure representing either a class signature,

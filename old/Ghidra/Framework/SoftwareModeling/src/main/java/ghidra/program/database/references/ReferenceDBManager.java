@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.references;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.collections4.map.LazyMap;

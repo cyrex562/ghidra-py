@@ -25,7 +25,7 @@ import ghidra.util.exception.CancelledException;
  */
 interface DeferrableFunctionSymbolApplier extends DirectSymbolApplier {
 
-	/**
+    # /**
 	 * Deferred work for the MsSymbolApplier that can only be applied after all functions
 	 *  have been created and disassembled.  Examples would be setting local variables and
 	 *  parameters
@@ -35,7 +35,7 @@ interface DeferrableFunctionSymbolApplier extends DirectSymbolApplier {
 	 */
 	public void deferredApply(MsSymbolIterator iter) throws PdbException, CancelledException;
 
-	/**
+    # /**
 	 * Method to call to begin a block
 	 * @param startAddress start address of block
 	 * @param name name of the block
@@ -43,7 +43,7 @@ interface DeferrableFunctionSymbolApplier extends DirectSymbolApplier {
 	 */
 	public void beginBlock(Address startAddress, String name, long length);
 
-	/**
+    # /**
 	 * Method to call to end a block
 	 */
 	public void endBlock();

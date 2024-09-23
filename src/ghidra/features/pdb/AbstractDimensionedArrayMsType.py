@@ -29,7 +29,7 @@ public abstract class AbstractDimensionedArrayMsType extends AbstractMsType {
 	protected RecordNumber dimensionInformationRecordNumber;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -48,7 +48,7 @@ public abstract class AbstractDimensionedArrayMsType extends AbstractMsType {
 		reader.skipPadding();
 	}
 
-	/**
+    # /**
 	 * Returns the element type of this array.
 	 * @return The AbstractMsType that is the base element type of the array.
 	 */
@@ -56,7 +56,7 @@ public abstract class AbstractDimensionedArrayMsType extends AbstractMsType {
 		return pdb.getTypeRecord(elementRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the dimension information of this array.
 	 * @return The record number dimension information of the array.
 	 */
@@ -64,7 +64,7 @@ public abstract class AbstractDimensionedArrayMsType extends AbstractMsType {
 		return dimensionInformationRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link AbstractMsType} dimension information.
 	 * @return The dimension information.
 	 */
@@ -72,7 +72,7 @@ public abstract class AbstractDimensionedArrayMsType extends AbstractMsType {
 		return pdb.getTypeRecord(dimensionInformationRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the name of this dimensioned array.
 	 * @return Name of the dimensioned array.
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.elastic;
 
-import java.io.IOException;
+
 import java.net.*;
 
 /**

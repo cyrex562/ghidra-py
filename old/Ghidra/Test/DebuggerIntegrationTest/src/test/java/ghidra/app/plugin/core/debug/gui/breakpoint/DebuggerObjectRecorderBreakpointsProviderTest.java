@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.gui.breakpoint;
 
-import java.io.IOException;
+
 
 import org.junit.experimental.categories.Category;
 

@@ -39,7 +39,7 @@ public final class PyGhidraScriptProvider extends AbstractPythonScriptProvider {
 
 	private static Consumer<GhidraScript> scriptRunner = null;
 
-	/**
+    # /**
 	 * Sets the Python side script runner.
 	 * 
 	 * This method is for <b>internal use only</b> and is only public so it can be
@@ -101,7 +101,7 @@ public final class PyGhidraScriptProvider extends AbstractPythonScriptProvider {
 			scriptRunner.accept(this);
 		}
 
-		/**
+	    # /**
 		 * Helper inner class that can create a {@link MethodHandles.Lookup}
 		 * that can access the protected fields of the {@link GhidraScript}
 		 */
@@ -135,7 +135,7 @@ public final class PyGhidraScriptProvider extends AbstractPythonScriptProvider {
 			scriptRunner.accept(this);
 		}
 
-		/**
+	    # /**
 		 * Helper inner class that can create a {@link MethodHandles.Lookup}
 		 * that can access the protected fields of the {@link GhidraScript}
 		 */

@@ -17,7 +17,7 @@ package ghidra.program.model.mem;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.math.BigInteger;
 import java.util.Arrays;

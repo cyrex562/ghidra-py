@@ -25,7 +25,7 @@ import ghidra.util.exception.CancelledException;
  */
 interface DirectSymbolApplier {
 
-	/**
+    # /**
 	 * Apply the next and any desired subsequent {@link AbstractMsSymbol AbstractMsSymbols} from
 	 * the {@link SymbolGroup} to a program.
 	 * @param iter the Iterator containing the symbol sequence being processed

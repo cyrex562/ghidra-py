@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.program.model.address.*;
@@ -30,13 +30,13 @@ import ghidra.util.Msg;
 import ghidra.util.SystemUtilities;
 
 # /**
- * A container for local symbols within the decompiler's model of a function. It contains HighSymbol
- * objects for any symbol within the scope of the function, including parameters. The container is populated
- * either from the underlying Function object (when sending information to the decompiler) or read in from
- * an XML description (when receiving a function model from the decompiler). HighSymbols can be obtained
- * via Address using findLocal() or by id using getSymbol().  Parameters can be accessed specifically
- * using getParamSymbol().
- */
+# * A container for local symbols within the decompiler's model of a function. It contains HighSymbol
+# * objects for any symbol within the scope of the function, including parameters. The container is populated
+# * either from the underlying Function object (when sending information to the decompiler) or read in from
+# * an XML description (when receiving a function model from the decompiler). HighSymbols can be obtained
+# * via Address using findLocal() or by id using getSymbol().  Parameters can be accessed specifically
+# * using getParamSymbol().
+# */
 public class LocalSymbolMap {
 	private HighFunction func;				// Function to which these variables are local
 	private AddressSpace localSpace;		// The address space (usually stack) associated with map 
@@ -45,7 +45,7 @@ public class LocalSymbolMap {
 	private HighSymbol[] paramSymbols;
 	private long uniqueSymbolId;		// Next available symbol id
 
-	/**
+    # /**
 	 * @param highFunc HighFunction the local variables are defined within.
 	 * @param spc the address space the local variables are defined within.
 	 */
@@ -58,7 +58,7 @@ public class LocalSymbolMap {
 		uniqueSymbolId = 0;
 	}
 
-	/**
+    # /**
 	 * Get the decompiler's function model owning this container
 	 * @return the owning HighFunction
 	 */
@@ -66,7 +66,7 @@ public class LocalSymbolMap {
 		return func;
 	}
 
-	/**
+    # /**
 	 * Assign a unique id to a new symbol being put in this container.
 	 * @return the unique id
 	 */
@@ -76,7 +76,7 @@ public class LocalSymbolMap {
 		return key;
 	}
 
-	/**
+    # /**
 	 * Construct and return a map from a HighSymbol's name to the HighSymbol object
 	 * @return the new name to symbol map
 	 */
@@ -88,7 +88,7 @@ public class LocalSymbolMap {
 		return newMap;
 	}
 
-	/**
+    # /**
 	 * Remove the given HighSymbol from this container.
 	 * The key is removed from the main symbolMap.  It is also removed from the MappedEntry map
 	 * and from the list of parameter symbols if applicable.
@@ -115,7 +115,7 @@ public class LocalSymbolMap {
 		}
 	}
 
-	/**
+    # /**
 	 * Given names of the form:  "baseName", "baseName$1", "baseName@2", ...
 	 * find the corresponding HighSymbols in this container and merge them into a single HighSymbol.
 	 * The name passed into this method must be of the form "baseName$1", the base name is extracted from it.
@@ -149,7 +149,7 @@ public class LocalSymbolMap {
 		}
 	}
 
-	/**
+    # /**
 	 * Populate the local variable map from information attached to the Program DB's function.
 	 * @param includeDefaultNames is true if default symbol names should be considered locked
 	 */
@@ -262,7 +262,7 @@ public class LocalSymbolMap {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Decode a &lt;mapsym&gt; element from the stream.
 	 * @param decoder is the stream decoder
 	 * @return the reconstructed HighSymbol
@@ -274,7 +274,7 @@ public class LocalSymbolMap {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Decode a local symbol scope from the stream
 	 * 
 	 * @param decoder is the stream decoder
@@ -306,7 +306,7 @@ public class LocalSymbolMap {
 		}
 	};
 
-	/**
+    # /**
 	 * Add mapped symbols to this LocalVariableMap, by decoding the &lt;symbollist&gt; and &lt;mapsym&gt; elements
 	 * @param decoder is the stream decoder
 	 * @throws DecoderException for invalid encodings
@@ -326,7 +326,7 @@ public class LocalSymbolMap {
 		decoder.closeElement(el);
 	}
 
-	/**
+    # /**
 	 * Encode all the variables in this local variable map to the stream
 	 * @param encoder is the stream encoder
 	 * @param namespace if the namespace of the function
@@ -365,7 +365,7 @@ public class LocalSymbolMap {
 		encoder.closeElement(ELEM_LOCALDB);
 	}
 
-	/**
+    # /**
 	 * Get all the symbols mapped for this program, Param, Locals.
 	 * The HighSymbol can either be a HighParam, or HighLocal
 	 * 
@@ -375,7 +375,7 @@ public class LocalSymbolMap {
 		return symbolMap.values().iterator();
 	}
 
-	/**
+    # /**
 	 * Find any local variable (including input params) by address
 	 * @param store - variable storage
 	 * @param pc = Address of first use, or null if address
@@ -387,7 +387,7 @@ public class LocalSymbolMap {
 		return addrMappedSymbols.get(key);
 	}
 
-	/**
+    # /**
 	 * Find any local variable (including input params) by address
 	 * @param addr - variable storage address
 	 * @param pc = Address of first use, or null if address
@@ -399,7 +399,7 @@ public class LocalSymbolMap {
 		return addrMappedSymbols.get(key);
 	}
 
-	/**
+    # /**
 	 * Lookup high variable based upon its symbol-id
 	 * @param id symbol-id
 	 * @return variable or null if not found
@@ -408,7 +408,7 @@ public class LocalSymbolMap {
 		return symbolMap.get(id);
 	}
 
-	/**
+    # /**
 	 * Get the number of parameter symbols in this scope
 	 * @return the number of parameters
 	 */
@@ -416,7 +416,7 @@ public class LocalSymbolMap {
 		return paramSymbols.length;
 	}
 
-	/**
+    # /**
 	 * @param i is the desired parameter position
 	 * @return the i-th parameter HighSymbol
 	 */
@@ -424,7 +424,7 @@ public class LocalSymbolMap {
 		return paramSymbols[i];
 	}
 
-	/**
+    # /**
 	 * @param i is the desired parameter position
 	 * @return the i-th parameter variable
 	 */
@@ -499,7 +499,7 @@ public class LocalSymbolMap {
 		return eqSymbol;
 	}
 
-	/**
+    # /**
 	 * Build dynamic symbols based on equates
 	 * @param dbFunction is the function to pull equates for
 	 */
@@ -558,7 +558,7 @@ public class LocalSymbolMap {
 		}
 	}
 
-	/**
+    # /**
 	 * Hashing keys for Local variables
 	 */
 	class MappedVarKey {

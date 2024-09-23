@@ -16,7 +16,7 @@
 package ghidra.feature.fid.plugin;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import javax.swing.SwingUtilities;
@@ -102,7 +102,7 @@ public class FidPlugin extends ProgramPlugin implements ChangeListener {
 		super.cleanup();
 	}
 
-	/**
+    # /**
 	 * Method to create the "standard" actions, which users controlling or creating
 	 * FID databases would want to use.
 	 */
@@ -183,7 +183,7 @@ public class FidPlugin extends ProgramPlugin implements ChangeListener {
 
 	}
 
-	/**
+    # /**
 	 * Method to select which known FID databases are currently active
 	 * during search.
 	 */
@@ -193,7 +193,7 @@ public class FidPlugin extends ProgramPlugin implements ChangeListener {
 		tool.showDialog(dialog);
 	}
 
-	/**
+    # /**
 	 * Method to create a new FID database. The user will be prompted to enter a file
 	 * name for the new database.  They can enter the name with or without the required
 	 * extension (.fidb).  If they don't, we will add it for them.
@@ -222,7 +222,7 @@ public class FidPlugin extends ProgramPlugin implements ChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to attach an already-created (but heretofore unknown) database.
 	 */
 	private void attachFidDb() {
@@ -232,7 +232,7 @@ public class FidPlugin extends ProgramPlugin implements ChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to "forget" about (close and stop trying to re-open next session) a FID database.
 	 */
 	private void removeFidFile() {
@@ -243,7 +243,7 @@ public class FidPlugin extends ProgramPlugin implements ChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to properly set action enablement based upon appropriate business logic.
 	 */
 	private void enableActions() {
@@ -256,7 +256,7 @@ public class FidPlugin extends ProgramPlugin implements ChangeListener {
 		populateAction.setEnabled(atLeastOneUserFidDb);
 	}
 
-	/**
+    # /**
 	 * Method to ask for a file (copied from GhidraScript).
 	 * @param title popup window title
 	 * @param approveButtonText text for the "yes" button
@@ -272,7 +272,7 @@ public class FidPlugin extends ProgramPlugin implements ChangeListener {
 		return file;
 	}
 
-	/**
+    # /**
 	 * Method to ask a user to select from an array of choices (copied from GhidraScript).
 	 * @param title popup window title
 	 * @param message message to display during choice

@@ -39,7 +39,7 @@ import ghidra.util.exception.AssertException;
 public sealed interface PythonFieldExposer permits PyGhidraScriptProvider.PyGhidraGhidraScript,
 		PyGhidraScriptProvider.PyGhidraHeadlessScript {
 
-	/**
+    # /**
 	 * Gets a mapping of all the explicitly exposed fields of a class.
 	 * 
 	 * This method is for <b>internal use only</b> and is only public so it can be
@@ -80,29 +80,29 @@ public sealed interface PythonFieldExposer permits PyGhidraScriptProvider.PyGhid
 		return Map.ofEntries(properties);
 	}
 
-	/**
+    # /**
 	 * An annotation for exposing protected fields of a class to Python
 	 */
 	@Target(ElementType.TYPE)
 	@Retention(RetentionPolicy.RUNTIME)
 	static @interface ExposedFields {
-		/**
+	    # /**
 		 * @return the {@link ExposedField} subclass with access to the protected fields
 		 */
 		public Class<? extends ExposedField> exposer();
 
-		/**
+	    # /**
 		 * @return the names of the protected fields to be exposed
 		 */
 		public String[] names();
 
-		/**
+	    # /**
 		 * @return the types of the protected fields to be exposed
 		 */
 		public Class<?>[] types();
 	}
 
-	/**
+    # /**
 	 * Base class for making a protected field accessible from Python.
 	 * 
 	 * Child classes are to be defined inside the class containing the fields to be exposed.
@@ -124,7 +124,7 @@ public sealed interface PythonFieldExposer permits PyGhidraScriptProvider.PyGhid
 	static abstract class ExposedField {
 		private final VarHandle handle;
 
-		/**
+	    # /**
 		 * Constructs a new {@link ExposedField}
 		 * 
 		 * @param lookup the {@link Lookup} with access to the protected field
@@ -136,7 +136,7 @@ public sealed interface PythonFieldExposer permits PyGhidraScriptProvider.PyGhid
 				lookup.lookupClass(), type);
 		}
 
-		/**
+	    # /**
 		 * Gets the field value
 		 * 
 		 * @param self the instance containing the field
@@ -146,7 +146,7 @@ public sealed interface PythonFieldExposer permits PyGhidraScriptProvider.PyGhid
 			return handle.get(self);
 		}
 
-		/**
+	    # /**
 		 * Sets the field value
 		 * 
 		 * @param self the instance containing the field

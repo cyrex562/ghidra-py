@@ -16,7 +16,7 @@
 package ghidra.plugins.fsbrowser.filehandlers;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.action.DockingAction;

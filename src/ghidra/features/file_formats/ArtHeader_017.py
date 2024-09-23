@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.headers;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.art.*;
@@ -92,14 +92,14 @@ public class ArtHeader_017 extends ArtHeader {
 		return pointer_size_;
 	}
 
-	/**
+    # /**
 	 * Image methods.
 	 */
 	public long[] getImageMethods() {
 		return image_methods_;
 	}
 
-	/**
+    # /**
 	 * Checksum of the oat file we link to for load time sanity check.
 	 */
 	@Override

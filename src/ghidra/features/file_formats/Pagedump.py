@@ -16,7 +16,7 @@
 package ghidra.file.formats.dump.pagedump;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.Option;
@@ -600,7 +600,7 @@ public class Pagedump extends DumpFile {
 	}
 	*/
 
-	/**
+    # /**
 	 * Get default <code>Pagedump</code> loader options. Includes
 	 * {@link #DEBUG_DATA_PATH_OPTION_NAME} plus default {@link DumpFile} options (see
 	 * {@link DumpFile#getDefaultOptions(DumpFileReader)}).

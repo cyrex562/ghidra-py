@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.platform.dbgeng;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.Collection;
 import java.util.Set;

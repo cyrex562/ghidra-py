@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 public class TranslatedRecordIterator implements RecordIterator {
 	private RecordIterator it;

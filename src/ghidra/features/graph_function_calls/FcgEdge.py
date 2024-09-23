@@ -33,7 +33,7 @@ public class FcgEdge extends AbstractVisualEdge<FcgVertex> {
 		return new FcgEdge(start, end);
 	}
 
-	/**
+    # /**
 	 * Returns true if this edge is a direct edge from a lower level.  Any other edges are 
 	 * considered indirect and are less important in the graph.
 	 * 

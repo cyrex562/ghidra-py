@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.nio.*;
@@ -25,14 +25,14 @@ import ghidra.util.StringUtilities;
 import ghidra.util.exception.UsrException;
 
 # /**
- * A parser to invert {@link StringDataInstance#getStringRepresentation()},
- * {@link StringDataInstance#getCharRepresentation()}, and related.
- */
+# * A parser to invert {@link StringDataInstance#getStringRepresentation()},
+# * {@link StringDataInstance#getCharRepresentation()}, and related.
+# */
 public class StringRenderParser {
 
 	private static String hexDigits = "0123456789ABCDEFabcdef";
 
-	/**
+    # /**
 	 * An exception for when a string representation cannot be parsed.
 	 */
 	public static class StringParseException extends UsrException {
@@ -107,7 +107,7 @@ public class StringRenderParser {
 	private int val;
 	private int codeDigits;
 
-	/**
+    # /**
 	 * Construct a parser
 	 * 
 	 * @param quoteChar the character expected to enclose the representation. Use double quote (")
@@ -126,7 +126,7 @@ public class StringRenderParser {
 		reset();
 	}
 
-	/**
+    # /**
 	 * Reset the parser
 	 */
 	public void reset() {
@@ -356,7 +356,7 @@ public class StringRenderParser {
 		}
 	}
 
-	/**
+    # /**
 	 * Parse and encode a complete string or character representation
 	 * 
 	 * @param in the buffer containing the representation
@@ -386,7 +386,7 @@ public class StringRenderParser {
 		}
 	}
 
-	/**
+    # /**
 	 * Parse and encode a portion of a string or character representation
 	 * 
 	 * @param out the destination buffer for the encoded string or character, having matching byte
@@ -412,7 +412,7 @@ public class StringRenderParser {
 		}
 	}
 
-	/**
+    # /**
 	 * Finish parsing and encoded a string or character representation
 	 * 
 	 * @param out the destination buffer for the encoded string or character

@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.macho.commands;
 
 import static ghidra.app.util.bin.format.macho.dyld.DyldChainedPtr.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;

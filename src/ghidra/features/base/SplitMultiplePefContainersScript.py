@@ -31,7 +31,7 @@ import ghidra.framework.OperatingSystem;
 import ghidra.framework.Platform;
 import ghidra.util.Msg;
 
-import java.io.*;
+
 import java.util.List;
 
 public class SplitMultiplePefContainersScript extends GhidraScript {

@@ -29,14 +29,14 @@ import ghidra.program.model.lang.Register;
  * @param <T> the type of the final formatted output
  */
 interface Appender<T> {
-	/**
+    # /**
 	 * Get the language of the p-code being formatted
 	 * 
 	 * @return
 	 */
 	Language getLanguage();
 
-	/**
+    # /**
 	 * Append a line label, usually meant to be on its own line
 	 * 
 	 * @param label the label number
@@ -45,7 +45,7 @@ interface Appender<T> {
 		appendLineLabelRef(label);
 	}
 
-	/**
+    # /**
 	 * Append indentation, usually meant for the beginning of a line
 	 */
 	default void appendIndent() {
@@ -53,28 +53,28 @@ interface Appender<T> {
 		appendCharacter(' ');
 	}
 
-	/**
+    # /**
 	 * Append a reference to the given line label
 	 * 
 	 * @param label the label number
 	 */
 	void appendLineLabelRef(long label);
 
-	/**
+    # /**
 	 * Append the given opcode
 	 * 
 	 * @param opcode the op's opcode
 	 */
 	void appendMnemonic(int opcode);
 
-	/**
+    # /**
 	 * Append the the given userop
 	 * 
 	 * @param id the userop id
 	 */
 	void appendUserop(int id);
 
-	/**
+    # /**
 	 * Append the given varnode in raw form
 	 * 
 	 * @param space the address space
@@ -83,7 +83,7 @@ interface Appender<T> {
 	 */
 	void appendRawVarnode(AddressSpace space, long offset, long size);
 
-	/**
+    # /**
 	 * Append a character
 	 * 
 	 * <p>
@@ -94,7 +94,7 @@ interface Appender<T> {
 	 */
 	void appendCharacter(char c);
 
-	/**
+    # /**
 	 * Append an address in word-offcut form
 	 * 
 	 * @param wordOffset the word offset
@@ -102,42 +102,42 @@ interface Appender<T> {
 	 */
 	void appendAddressWordOffcut(long wordOffset, long offcut);
 
-	/**
+    # /**
 	 * Append a local label
 	 * 
 	 * @param label the label name, e.g., {@code instr_next}
 	 */
 	void appendLabel(String label);
 
-	/**
+    # /**
 	 * Append a register
 	 * 
 	 * @param register the register
 	 */
 	void appendRegister(Register register);
 
-	/**
+    # /**
 	 * Append a scalar value
 	 * 
 	 * @param value the value
 	 */
 	void appendScalar(long value);
 
-	/**
+    # /**
 	 * Append an address space
 	 * 
 	 * @param space the space
 	 */
 	void appendSpace(AddressSpace space);
 
-	/**
+    # /**
 	 * Append a unique variable
 	 * 
 	 * @param offset the offset in unique space
 	 */
 	void appendUnique(long offset);
 
-	/**
+    # /**
 	 * Finish formatting and return the final result
 	 * 
 	 * @return the final result

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dtb;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

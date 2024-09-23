@@ -15,7 +15,7 @@
  */
 package ghidra.doclets.typestubs;
 
-import java.io.*;
+
 import java.util.*;
 
 import javax.lang.model.SourceVersion;

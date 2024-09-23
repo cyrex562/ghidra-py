@@ -66,7 +66,7 @@ class DtrfDbg {
 		close();
 	}
 
-	/**
+    # /**
 	 * Sets filters that will be checked against the {@code toString()} of each client.  The
 	 * filtering is a case-sensitive 'contains' check.
 	 * @param filters the text

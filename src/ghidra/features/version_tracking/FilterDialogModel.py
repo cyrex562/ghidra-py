@@ -21,7 +21,7 @@ public interface FilterDialogModel<T> {
 
 	public void forceRefilter();
 
-	/**
+    # /**
 	 * Will be called when the visibility of the dialog using this model has changed
 	 * @param isVisible true if visible
 	 */

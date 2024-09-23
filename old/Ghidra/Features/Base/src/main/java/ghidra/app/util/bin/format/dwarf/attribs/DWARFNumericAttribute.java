@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.attribs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.InvalidDataException;
 import ghidra.app.util.bin.format.dwarf.DWARFCompilationUnit;

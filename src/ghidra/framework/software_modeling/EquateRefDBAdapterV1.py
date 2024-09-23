@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.map.AddressIndexKeyIterator;
@@ -28,16 +28,16 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Implementation for Version 0 of the equate references table.
- * 
- * 
- */
+# * Implementation for Version 0 of the equate references table.
+# * 
+# * 
+# */
 class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 
 	private Table refTable;
 	private AddressMap addrMap;
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 */
@@ -63,7 +63,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getRecord(long)
 	 */
 	@Override
@@ -71,7 +71,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return refTable.getRecord(key);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#createReference(long, short, long, long)
 	 */
 	@Override
@@ -86,7 +86,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return rec;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getRecordKeysFrom(long)
 	 */
 	@Override
@@ -94,7 +94,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return refTable.findRecords(new LongField(addr), ADDR_COL);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#updateRecord(ghidra.framework.store.db.DBRecord)
 	 */
 	@Override
@@ -102,7 +102,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		refTable.putRecord(record);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getRecordsForEquateID(long)
 	 */
 	@Override
@@ -110,7 +110,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return refTable.findRecords(new LongField(equateID), EQUATE_ID_COL);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getIteratorForAddresses()
 	 */
 	@Override
@@ -118,7 +118,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return new AddressIndexKeyIterator(refTable, ADDR_COL, addrMap, true);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getIteratorForAddresses(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -126,7 +126,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return new AddressIndexKeyIterator(refTable, ADDR_COL, addrMap, start, end, true);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getIteratorForAddresses(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -134,7 +134,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return new AddressIndexKeyIterator(refTable, ADDR_COL, addrMap, start, true);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getIteratorForAddresses(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -142,7 +142,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return new AddressIndexKeyIterator(refTable, ADDR_COL, addrMap, set, true);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#removeRecord(long)
 	 */
 	@Override
@@ -150,7 +150,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		refTable.deleteRecord(key);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getRecords()
 	 */
 	@Override
@@ -158,7 +158,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 		return refTable.iterator();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#moveAddressRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address, long, ghidra.program.database.map.AddressMapDB, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -168,7 +168,7 @@ class EquateRefDBAdapterV1 extends EquateRefDBAdapter {
 			length, null, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateRefDBAdapter#getRecordCount()
 	 */
 	@Override

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang.rtti;
 
-import java.io.IOException;
+
 import java.util.EnumSet;
 import java.util.Set;
 

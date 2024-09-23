@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.code;
 
 import java.util.*;
@@ -34,8 +34,8 @@ import ghidra.util.Msg;
 import ghidra.util.exception.NoValueException;
 
 # /**
- * Database implementation for an Instruction.
- */
+# * Database implementation for an Instruction.
+# */
 public class InstructionDB extends CodeUnitDB implements Instruction, InstructionContext {
 
 	private static final byte FALLTHROUGH_SET_MASK = 0x01;
@@ -58,7 +58,7 @@ public class InstructionDB extends CodeUnitDB implements Instruction, Instructio
 
 	private ParserContext parserContext;
 
-	/**
+    # /**
 	 * Construct a new InstructionDB.
 	 * @param codeMgr code manager
 	 * @param cache code unit cache
@@ -100,7 +100,7 @@ public class InstructionDB extends CodeUnitDB implements Instruction, Instructio
 		}
 	}
 
-	/**
+    # /**
 	 * Get the instruction code unit length based upon its prototype and flags 
 	 * which will be used to check for a length-override condition.
 	 * @param proto instruction prototype
@@ -164,7 +164,7 @@ public class InstructionDB extends CodeUnitDB implements Instruction, Instructio
 		}
 	}
 
-	/**
+    # /**
 	 * Get the original context used to establish the shared prototype
 	 * @param baseContextReg is a context register
 	 * @return prototype context value
@@ -581,7 +581,7 @@ public class InstructionDB extends CodeUnitDB implements Instruction, Instructio
 
 	}
 
-	/**
+    # /**
 	 *
 	 * Return true if obj is equal to this.
 	 */
@@ -696,7 +696,7 @@ public class InstructionDB extends CodeUnitDB implements Instruction, Instructio
 		return (flags & FALLTHROUGH_SET_MASK) != 0;
 	}
 
-	/**
+    # /**
 	 * Clear all existing fall-through references from address.
 	 * @param keepFallThroughAddr if not null, corresponding fall-through reference will be 
 	 * preserved. 
@@ -813,7 +813,7 @@ public class InstructionDB extends CodeUnitDB implements Instruction, Instructio
 		}
 	}
 
-	/**
+    # /**
 	 * Check and revise a specified {@code length} to arrive at a suitable length-override value.
 	 * @param length instruction byte-length (must be in the range 0..{@code prototype-length}).
 	 * If smaller than the prototype length it must have a value no greater than 7, otherwise

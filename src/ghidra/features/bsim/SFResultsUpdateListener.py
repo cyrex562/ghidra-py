@@ -24,14 +24,14 @@ import ghidra.features.bsim.query.protocol.QueryResponseRecord;
  */
 public interface SFResultsUpdateListener<R> {
 
-//	/**
+//    # /**
 //	 * Status callback
 //	 * @param message status message
 //	 * @param type message type
 //	 */
 //	void updateStatus(String message, MessageType type);
 //
-	/**
+    # /**
 	 * Called as incremental results arrive from database queries.  The results given to
 	 * this listener are always a subset of the complete results--they are not comprehensive.
 	 * Consumer should be able to safely cast response based upon the type of query being performed.
@@ -40,7 +40,7 @@ public interface SFResultsUpdateListener<R> {
 	 */
 	public void resultAdded(QueryResponseRecord partialResponse);
 
-	/**
+    # /**
 	 * Callback to supply the final accumulated result.
 	 * @param result accumulated query result or null if a failure occured which prevented
 	 * results from being returned.

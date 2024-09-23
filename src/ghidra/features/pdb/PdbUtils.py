@@ -15,7 +15,7 @@
  */
 package pdb;
 
-import java.io.*;
+
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
@@ -31,7 +31,7 @@ import utilities.util.FileUtilities;
 
 public class PdbUtils {
 
-	/**
+    # /**
 	 * Attempts to extract {@link PdbIdentifiers} from the specified file, which
 	 * can be either a pdb or pdb.xml file.
 	 * <p>
@@ -83,7 +83,7 @@ public class PdbUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Extracts a singleton file from a cab file that only has 1 file
 	 *
 	 * @param cabFile Compressed cab file that only has 1 file embedded in it

@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang.protorules;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Map.Entry;
 
@@ -34,11 +34,11 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
 # /**
- * Consume multiple registers from different storage classes to pass a data-type
- * 
- * This action is for calling conventions that can use both floating-point and general purpose registers
- * when assigning storage for a single composite data-type, such as the X86-64 System V ABI
- */
+# * Consume multiple registers from different storage classes to pass a data-type
+# * 
+# * This action is for calling conventions that can use both floating-point and general purpose registers
+# * when assigning storage for a single composite data-type, such as the X86-64 System V ABI
+# */
 public class MultiSlotDualAssign extends AssignAction {
 	private StorageClass baseType;		// Resource list from which to consume general tiles
 	private StorageClass altType;		// Resource list from which to consume alternate tiles
@@ -48,7 +48,7 @@ public class MultiSlotDualAssign extends AssignAction {
 	private int baseIter;				// Iterator to first element in the base resource list
 	private int altIter;				// Iterator to first element in alternate resource list
 
-	/**
+    # /**
 	 * Find the first ParamEntry matching the baseType, and the first matching altType.
 	 * @throws InvalidInputException if the required elements are not available in the resource list
 	 */
@@ -77,7 +77,7 @@ public class MultiSlotDualAssign extends AssignAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the first unused ParamEntry that matches the given storage class
 	 * @param iter points to the starting entry to search
 	 * @param storage is the given storage class to match
@@ -102,7 +102,7 @@ public class MultiSlotDualAssign extends AssignAction {
 		return endIter;
 	}
 
-	/**
+    # /**
 	 * Get the storage class to use for the specific section of the data-type
 	 * 
 	 * For the section starting at -off- extending through -tileSize- bytes, if any primitive
@@ -143,7 +143,7 @@ public class MultiSlotDualAssign extends AssignAction {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Constructor for use with decode. Set default configuration.
 	 * @param res is the new resource set to associate with this action
 	 */

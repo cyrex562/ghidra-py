@@ -45,7 +45,7 @@ public class eBPFSyscallAnalyzer extends AbstractAnalyzer {
 		return PROCESSOR_NAME.equals(program.getLanguage().getProcessor().toString());
 	}
 
-	/**
+    # /**
 	 * Following the creation of a function this analyzer applies a function signature to default
 	 * function if contains within the syscall space.
 	 * @throws CancelledException if analysis is cancelled

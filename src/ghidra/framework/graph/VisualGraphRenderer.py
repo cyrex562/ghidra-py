@@ -42,7 +42,7 @@ import ghidra.graph.viewer.layout.*;
 public class VisualGraphRenderer<V extends VisualVertex, E extends VisualEdge<V>>
 		extends edu.uci.ics.jung.visualization.renderers.BasicRenderer<V, E> {
 
-	/**
+    # /**
 	 * Used for displaying grid information for graph layouts
 	 */
 	public static Map<VisualGraphLayout<?, ?>, LayoutLocationMap<?, ?>> DEBUG_ROW_COL_MAP =

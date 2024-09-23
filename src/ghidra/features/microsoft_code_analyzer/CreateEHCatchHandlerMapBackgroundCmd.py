@@ -32,7 +32,7 @@ import ghidra.util.exception.*;
 public class CreateEHCatchHandlerMapBackgroundCmd
 		extends AbstractCreateDataBackgroundCmd<EHCatchHandlerModel> {
 
-	/**
+    # /**
 	 * Constructs a command for applying a HandlerType exception handling data type at an 
 	 * address.
 	 * @param address the address where the data should be created using the data type.
@@ -42,7 +42,7 @@ public class CreateEHCatchHandlerMapBackgroundCmd
 		super(EHCatchHandlerModel.DATA_TYPE_NAME, address, count);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a HandlerType exception handling data type at an 
 	 * address.
 	 * @param address the address where the data should be created using the data type.
@@ -58,7 +58,7 @@ public class CreateEHCatchHandlerMapBackgroundCmd
 		super(EHCatchHandlerModel.DATA_TYPE_NAME, address, count, validationOptions, applyOptions);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a HandlerType exception handling data type at the 
 	 * address indicated by the model.
 	 * @param catchHandlerModel the model for the data type
@@ -84,7 +84,7 @@ public class CreateEHCatchHandlerMapBackgroundCmd
 		return createTypeDescriptors();
 	}
 
-	/**
+    # /**
 	 * Creates the associated TypeDescriptor data.
 	 * @param program the program where this command is applying the data.
 	 * @param monitor the task monitor for cancelling creation of the TypeDescriptor.
@@ -146,7 +146,7 @@ public class CreateEHCatchHandlerMapBackgroundCmd
 		return createHandlerRefsAndSymbols();
 	}
 
-	/**
+    # /**
 	 * Creates data references to the catch handler function and based on options it creates a 
 	 * label for the catch handler function, disassembles it, and creates the function.
 	 * @param program the program where this command is creating references and symbols.

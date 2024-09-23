@@ -33,7 +33,7 @@ public class CramFsBlockFactory {
 	//This will determine if the data blocks have special conditions on them.
 	private boolean blockPointerExtensionsEnabled;
 
-	/**
+    # /**
 	 * This class takes an iNode and produces a List of CramFsBlocks that are 
 	 * set appropriately depending on their flags, 
 	 * and the flag CRAMFS_FLAG_EXT_BLOCK_POINTERS from the CramFsSuper block.
@@ -50,7 +50,7 @@ public class CramFsBlockFactory {
 		this.blockPointerList = blockPointerList;
 	}
 
-	/**
+    # /**
 	 * This function will use the inode to calculate certain things for the block,
 	 * such as calculating compressed block sizes etc.
 	 * If the block pointer extension flag is set not in the super block,
@@ -73,7 +73,7 @@ public class CramFsBlockFactory {
 		return blockList;
 	}
 
-	/**
+    # /**
 	 * Returns the cramfsInode.
 	 * @return the cramfsInode.
 	 */

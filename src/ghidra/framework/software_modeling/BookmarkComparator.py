@@ -23,7 +23,7 @@ import java.util.Comparator;
  */
 public class BookmarkComparator implements Comparator<Bookmark> {
 
-	/**
+    # /**
 	 * Comparator for bookmarks.
 	 * @param bm1 first bookmark
 	 * @param bm2 second bookmark

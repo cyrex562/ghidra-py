@@ -23,60 +23,60 @@ import ghidra.program.model.address.*;
  */
 public interface AddressSetPropertyMap {
 
-	/**
+    # /**
 	 * Add the address range to the property map.
 	 * @param start start of the range
 	 * @param end end of the range
 	 */
 	void add(Address start, Address end);
 
-	/**
+    # /**
 	 * Add the address set to the property map.
 	 * @param addressSet address set to add
 	 */
 	void add(AddressSetView addressSet);
 
-	/**
+    # /**
 	 * Clear the property map and set it with the given address set. 
 	 * @param addressSet address set to use
 	 */
 	void set(AddressSetView addressSet);
 
-	/**
+    # /**
 	 * Remove the address range from the property map.
 	 * @param start start of the range
 	 * @param end end of the range
 	 */
 	void remove(Address start, Address end);
 
-	/**
+    # /**
 	 * Remove the address set from the property map.
 	 * @param addressSet address set to remove
 	 */
 	void remove(AddressSetView addressSet);
 
-	/**
+    # /**
 	 * Return the address set for the property map.
 	 */
 	AddressSet getAddressSet();
 
-	/**
+    # /**
 	 * Return an address iterator over the property map. 
 	 */
 	AddressIterator getAddresses();
 
-	/**
+    # /**
 	 * Return an address range iterator over the property map.
 	 */
 	AddressRangeIterator getAddressRanges();
 
-	/**
+    # /**
 	 * Clear the property map.
 	 *
 	 */
 	void clear();
 
-	/**
+    # /**
 	 * Return whether the property map contains the given address.
 	 * @param addr address to check
 	 */

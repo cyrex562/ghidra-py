@@ -39,7 +39,7 @@ abstract class AbstractAddressSpace implements AddressSpace {
 	private boolean showSpaceName; // show space name when displaying an address	
 	private boolean hasMemoryMappedRegisters = false;
 
-	/**
+    # /**
 	 * Constructs a new address space with the given name, bit size, type and unique value.
 	 * @param size the number of bits required to represent the largest address 
 	 * the space.
@@ -186,7 +186,7 @@ abstract class AbstractAddressSpace implements AddressSpace {
 		return type;
 	}
 
-	/**
+    # /**
 	 * Returns the unique id value for this space.
 	 */
 	@Override
@@ -529,7 +529,7 @@ abstract class AbstractAddressSpace implements AddressSpace {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Compute the fixed hashcode for this address space.
 	 * @return computed hash code
 	 */
@@ -565,7 +565,7 @@ abstract class AbstractAddressSpace implements AddressSpace {
 		return showSpaceName;
 	}
 
-	/**
+    # /**
 	 * Instantiates an address within this space.
 	 * No offset validation should be performed.
 	 * @param offset address offset
@@ -573,7 +573,7 @@ abstract class AbstractAddressSpace implements AddressSpace {
 	 */
 	protected abstract Address getUncheckedAddress(long offset);
 
-	/**
+    # /**
 	 * No overlay translation necessary, this is a base addressSpace.
 	 * 
 	 *  (non-Javadoc)
@@ -699,7 +699,7 @@ abstract class AbstractAddressSpace implements AddressSpace {
 		return hasMemoryMappedRegisters;
 	}
 
-	/**
+    # /**
 	 * Tag this memory space as having memory mapped registers
 	 * 
 	 * @param hasRegisters true if it has registers, false otherwise

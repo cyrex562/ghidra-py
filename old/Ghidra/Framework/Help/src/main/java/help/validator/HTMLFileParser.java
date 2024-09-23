@@ -17,7 +17,7 @@ package help.validator;
 
 import static help.validator.TagProcessor.TagProcessingState.*;
 
-import java.io.*;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedHashMap;

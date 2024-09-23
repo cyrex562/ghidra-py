@@ -20,17 +20,17 @@ import java.util.List;
 import ghidra.app.util.bin.StructConverter;
 
 public interface FBPK extends StructConverter {
-	/**
+    # /**
 	 * Returns the MAGIC value.
 	 * @return the MAGIC value
 	 */
 	public int getMagic();
-	/**
+    # /**
 	 * Returns the version.
 	 * @return the version
 	 */
 	public int getVersion();
-	/**
+    # /**
 	 * Returns the list of partitions.
 	 * @return the list of partitions
 	 */

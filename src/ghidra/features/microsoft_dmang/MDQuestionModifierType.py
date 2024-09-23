@@ -44,7 +44,7 @@ public class MDQuestionModifierType extends MDModifierType {
 		parseSuffix();
 	}
 
-	/**
+    # /**
 	 * Returns a possible suffix
 	 * @return the suffix or {@code null}
 	 */

@@ -37,7 +37,7 @@ public abstract class AbstractEmuLinuxSyscallUseropLibrary<T>
 	public static final int O_TRUNC = 0x200;
 	public static final int O_APPEND = 0x400;
 
-	/**
+    # /**
 	 * TODO: A map from simulator-defined errno to Linux-defined errno
 	 * 
 	 * <p>
@@ -46,7 +46,7 @@ public abstract class AbstractEmuLinuxSyscallUseropLibrary<T>
 	protected static final Map<Errno, Integer> ERRNOS = Map.ofEntries(
 		Map.entry(Errno.EBADF, 9));
 
-	/**
+    # /**
 	 * Construct a new library
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -59,7 +59,7 @@ public abstract class AbstractEmuLinuxSyscallUseropLibrary<T>
 		super(machine, fs, program);
 	}
 
-	/**
+    # /**
 	 * Construct a new library
 	 * 
 	 * @param machine the machine emulating the hardware

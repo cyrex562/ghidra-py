@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang.structmapping;
 
-import java.io.IOException;
+
 
 # /**
  * Functional interface to read a structure field's value.

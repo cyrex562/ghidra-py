@@ -39,7 +39,7 @@ public class SequenceItem implements Comparable<SequenceItem> {
 		this.symbol = item;
 	}
 
-	/**
+    # /**
 	 * Get the symbol associated with this item
 	 * @return the symbol
 	 */
@@ -47,7 +47,7 @@ public class SequenceItem implements Comparable<SequenceItem> {
 		return symbol;
 	}
 
-	/**
+    # /**
 	 * Get the index associated with this item
 	 * @return the index
 	 */
@@ -81,7 +81,7 @@ public class SequenceItem implements Comparable<SequenceItem> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Generates a String from a list of {@link SequenceItem}s with each missing {@link SequenceItem} replaces by a "."
 	 * @param itemList list of items
 	 * @param totalLength length of String to write, including each "."

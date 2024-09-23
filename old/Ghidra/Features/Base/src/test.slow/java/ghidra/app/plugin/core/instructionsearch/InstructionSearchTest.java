@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 import java.awt.Container;
 import java.awt.Window;
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.List;
 
 import javax.swing.table.TableModel;

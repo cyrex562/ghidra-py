@@ -28,7 +28,7 @@ import util.CollectionUtils;
 public interface DataIterator extends Iterator<Data>, Iterable<Data>  {
 	public static final DataIterator EMPTY = of(/*nothing*/);
 
-	/**
+    # /**
 	 * Create a DataIterator that returns a sequence of the specified items.
 	 * 
 	 * @param dataInstances variable length list of items that will be iterated

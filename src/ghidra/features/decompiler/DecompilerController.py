@@ -66,7 +66,7 @@ public class DecompilerController {
 //  Methods call by the provider
 //==================================================================================================
 
-	/**
+    # /**
 	 * Called by the provider when the provider is disposed. Once dispose is called, it should never
 	 * be used again.
 	 */
@@ -76,7 +76,7 @@ public class DecompilerController {
 		decompilerPanel.dispose();
 	}
 
-	/**
+    # /**
 	 * clears all internal state and releases all resources. Called when the provider is no longer
 	 * visible or the currently displayed program is closed.
 	 */
@@ -86,7 +86,7 @@ public class DecompilerController {
 		setDecompileData(new EmptyDecompileData("No Function"));
 	}
 
-	/**
+    # /**
 	 * Shows the function containing the given location in the decompilerPanel. Also, positions the
 	 * decompilerPanel's cursor to the closest equivalent position. If the decompilerPanel is
 	 * already displaying the function, then only the cursor is repositioned. To force a
@@ -136,7 +136,7 @@ public class DecompilerController {
 		decompilerPanel.setSelection(selection);
 	}
 
-	/**
+    # /**
 	 * Sets new decompiler options and triggers a new decompile.
 	 * 
 	 * @param decompilerOptions the options
@@ -159,7 +159,7 @@ public class DecompilerController {
 		decompilerPanel.setMouseNavigationEnabled(enabled);
 	}
 
-	/**
+    # /**
 	 * Resets the native decompiler process. Call this method when the decompiler's view of a
 	 * program has been invalidated, such as when a new overlay space has been added.
 	 */
@@ -171,7 +171,7 @@ public class DecompilerController {
 //  Methods call by the DecompilerManager
 //==================================================================================================
 
-	/**
+    # /**
 	 * Called by the DecompilerManager to update the currently displayed DecompileData
 	 * 
 	 * @param decompileData the new data
@@ -204,7 +204,7 @@ public class DecompilerController {
 		callbackHandler.doWhenNotBusy(c);
 	}
 
-	/**
+    # /**
 	 * Always decompiles the function containing the given location before positioning the
 	 * decompilerPanel's cursor to the closest equivalent position.
 	 * 

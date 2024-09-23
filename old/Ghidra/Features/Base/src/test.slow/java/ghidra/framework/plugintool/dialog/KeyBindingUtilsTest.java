@@ -21,7 +21,7 @@ import java.awt.Rectangle;
 import java.awt.Window;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.io.*;
+
 import java.util.*;
 
 import javax.swing.*;

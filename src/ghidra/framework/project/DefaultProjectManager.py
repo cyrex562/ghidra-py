@@ -15,7 +15,7 @@
  */
 package ghidra.framework.project;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 import java.util.function.Function;
@@ -43,7 +43,7 @@ import utilities.util.FileUtilities;
  */
 public class DefaultProjectManager implements ProjectManager {
 
-	/**
+    # /**
 	 * Preference name for the last opened project.
 	 */
 	private final static String LAST_OPENED_PROJECT = "LastOpenedProject";
@@ -64,7 +64,7 @@ public class DefaultProjectManager implements ProjectManager {
 	private ProjectLocator lastOpenedProject;
 	private Project currentProject;
 
-	/**
+    # /**
 	 * Construct the single project manager.
 	 */
 	protected DefaultProjectManager() {
@@ -174,7 +174,7 @@ public class DefaultProjectManager implements ProjectManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get list of project locations that user most recently opened.
 	 * @return list of project locations
 	 */
@@ -190,7 +190,7 @@ public class DefaultProjectManager implements ProjectManager {
 		return recentlyViewedProjectsList.toArray(urls);
 	}
 
-	/**
+    # /**
 	 * Get the last opened (active) project.
 	 * @return project last opened by the user; returns NULL if a project
 	 * was never opened OR the last opened project is no longer valid
@@ -204,7 +204,7 @@ public class DefaultProjectManager implements ProjectManager {
 		return getLocatorFromProjectPath(projectPath);
 	}
 
-	/**
+    # /**
 	 * Update the last opened project preference.
 	 */
 	@Override
@@ -215,7 +215,7 @@ public class DefaultProjectManager implements ProjectManager {
 		Preferences.store();
 	}
 
-	/**
+    # /**
 	 * Delete the project in the given location and remove it from the list of known projects.
 	 * 
 	 * @return false if no project was deleted.
@@ -237,7 +237,7 @@ public class DefaultProjectManager implements ProjectManager {
 		return didDelete;
 	}
 
-	/**
+    # /**
 	 * Remove the specified project from the list of known projects.
 	 */
 	private void forgetProject(ProjectLocator projectLocator) {
@@ -251,7 +251,7 @@ public class DefaultProjectManager implements ProjectManager {
 		updatePreferences();
 	}
 
-	/**
+    # /**
 	 * Keep the specified project on the list of known projects.
 	 */
 	@Override
@@ -282,7 +282,7 @@ public class DefaultProjectManager implements ProjectManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the specified project exists.
 	 */
 	@Override
@@ -305,7 +305,7 @@ public class DefaultProjectManager implements ProjectManager {
 		return serverInfo;
 	}
 
-	/**
+    # /**
 	 * Add the default tools to the given tool chest.  This method does not attempt to merge the
 	 * user's previous tools, as does {@link #installTools(ToolChest)}.
 	 * 
@@ -497,7 +497,7 @@ public class DefaultProjectManager implements ProjectManager {
 		return toolChest;
 	}
 
-	/**
+    # /**
 	 * Add the project to the given list;
 	 * most recently accessed projects are first in the list.
 	 */
@@ -577,7 +577,7 @@ public class DefaultProjectManager implements ProjectManager {
 
 	}
 
-	/**
+    # /**
 	 * Update preferences file with list of known projects.
 	 */
 	void updatePreferences() {

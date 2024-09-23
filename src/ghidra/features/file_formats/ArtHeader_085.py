@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.headers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -167,7 +167,7 @@ public class ArtHeader_085 extends ArtHeader {
 		return boot_image_checksum_;
 	}
 
-	/**
+    # /**
 	 * App images currently require a boot image, 
 	 * if the size is non zero then it is an app image header.
 	 * @return true if app image

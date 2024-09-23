@@ -177,7 +177,7 @@ public class AddressInputDialog extends AbstractCellEditor implements TableCellE
 			}
 		}
 
-		/**
+	    # /**
 		 * Gets the newly edited address.
 		 * @return the address.
 		 */
@@ -185,7 +185,7 @@ public class AddressInputDialog extends AbstractCellEditor implements TableCellE
 			return editedAddress;
 		}
 
-		/**
+	    # /**
 		 * An address edit action occurred in the panel so handle it as if ok button were pressed.
 		 */
 		@Override

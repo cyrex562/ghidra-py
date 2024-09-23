@@ -82,7 +82,7 @@ public class DecompilerConcurrentQ<I, R> {
 		queue.add(i);
 	}
 
-	/**
+    # /**
 	 * Adds all items to the queue for processing.  The results will be passed to the given consumer
 	 * as they are produced.
 	 *
@@ -94,7 +94,7 @@ public class DecompilerConcurrentQ<I, R> {
 		addAll(functions);
 	}
 
-	/**
+    # /**
 	 * Waits for all results to be delivered.  The client is responsible for processing the
 	 * results and handling any exceptions that may have occurred.
 	 *
@@ -110,7 +110,7 @@ public class DecompilerConcurrentQ<I, R> {
 		}
 	}
 
-	/**
+    # /**
 	 * Waits for all work to finish. Any exception encountered will trigger all processing to
 	 * stop.  If you wish for the work to continue despite exceptions, then use
 	 * {@link #waitForResults()}.
@@ -131,7 +131,7 @@ public class DecompilerConcurrentQ<I, R> {
 		queue.dispose();
 	}
 
-	/**
+    # /**
 	 * Calls dispose on the queue being processed.  Further, the call will block for up to
 	 * <tt>timeoutSeconds</tt> while waiting for the queue to finish processing.
 	 *

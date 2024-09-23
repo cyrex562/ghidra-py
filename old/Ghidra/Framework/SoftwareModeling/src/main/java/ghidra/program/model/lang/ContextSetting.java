@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.Iterator;
 import java.util.List;

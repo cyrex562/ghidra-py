@@ -19,7 +19,7 @@ import ghidra.app.util.bin.format.macho.CpuSubTypes;
 import ghidra.app.util.bin.format.macho.CpuTypes;
 import ghidra.program.model.lang.*;
 
-import java.io.IOException;
+
 import java.util.List;
 
 public final class MacosxLanguageHelper {

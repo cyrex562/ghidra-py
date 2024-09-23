@@ -178,7 +178,7 @@ public class IterativeFindPathsAlgorithm<V, E extends GEdge<V>>
 // Inner Classes
 //==================================================================================================	
 
-	/**
+    # /**
 	 * Simple class to maintain a relationship between a given node and its children that need
 	 * processing.  It also knows if it has been found in a path from start to end.
 	 */

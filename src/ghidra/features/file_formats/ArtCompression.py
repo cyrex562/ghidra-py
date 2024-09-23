@@ -17,34 +17,34 @@ package ghidra.file.formats.android.art;
 
 public interface ArtCompression {
 
-	/**
+    # /**
 	 * Storage method for the image, the image may be compressed.
 	 * @return the storage method
 	 * @throws UnknownArtStorageModeException when an unknown storage mode is encountered
 	 */
 	public ArtStorageMode getStorageMode() throws UnknownArtStorageModeException;
 
-	/**
+    # /**
 	 * Data size for the image data excluding the bitmap and the header. 
 	 * For compressed images, this is the compressed size in the file.
 	 * @return the compressed size
 	 */
 	public int getCompressedSize();
 
-	/**
+    # /**
 	 * Offset to the start of the compressed bytes.
 	 * Also, offset of where to place the decompressed bytes.
 	 * @return the offset to the compressed bytes
 	 */
 	public long getCompressedOffset();
 
-	/**
+    # /**
 	 * Expected size of the decompressed bytes.
 	 * @return the expected decompressed size
 	 */
 	public int getDecompressedSize();
 
-	/**
+    # /**
 	 * Offset to the start of the decompressed bytes.
 	 * @return the offset to the dcompressed bytes
 	 */

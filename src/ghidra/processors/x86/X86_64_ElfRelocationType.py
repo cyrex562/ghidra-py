@@ -34,13 +34,13 @@ public enum X86_64_ElfRelocationType implements ElfRelocationType {
 	R_X86_64_8(14), 	// Direct 8 bit sign extended (S + A)
 	R_X86_64_PC8(15), 	// 8 bit sign extended pc relative (S + A - P)
 
-	/**
+    # /**
 	 * Calculates the object identifier of the 
 	 * object containing the TLS symbol. 
 	 */
 	R_X86_64_DTPMOD64(16), // ID of module containing symbol
 
-	/**
+    # /**
 	 * Calculates the offset of the variable relative
 	 * to the start of the TLS block that contains the 
 	 * variable.  The computed value is used as an

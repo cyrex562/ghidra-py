@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.db;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -31,7 +31,7 @@ import ghidra.util.exception.VersionException;
  */
 public class LibrariesTable {
 	static final String LIBRARIES_TABLE = "Libraries Table";
-	/**
+    # /**
 	 * NOTE!  There is no way to upgrade databases right now!  If you increment this number
 	 * due to a schema change, you must recreate all the databases we distribute with Ghidra,
 	 * and ALL customers EVERYWHERE will have to recreate their databases upon upgrading
@@ -64,7 +64,7 @@ public class LibrariesTable {
 
 	Table table;
 
-	/**
+    # /**
 	 * Creates or attaches a libraries table.
 	 * @param handle database handle
 	 * @param create whether to create or just attach
@@ -80,7 +80,7 @@ public class LibrariesTable {
 		handle.createTable(LIBRARIES_TABLE, SCHEMA, INDEXED_COLUMNS);
 	}
 
-	/**
+    # /**
 	 * Checks the saved database version versus our current software version.
 	 * @throws VersionException if the version is different
 	 * @throws IOException if the version can't be read from the database
@@ -97,7 +97,7 @@ public class LibrariesTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new library record using the parameters.
 	 * @param libraryFamilyName the family name of the library
 	 * @param libraryVersion the version string for the library
@@ -126,7 +126,7 @@ public class LibrariesTable {
 		return record;
 	}
 
-	/**
+    # /**
 	 * Returns all libraries in this database.
 	 * @return all libraries in this database
 	 * @throws IOException if database iteration encounters an error
@@ -143,7 +143,7 @@ public class LibrariesTable {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Return libraries by name
 	 *   Restrict by version if -version- is non-null
 	 *   Restrict by variant if -variant- is non-null
@@ -181,7 +181,7 @@ public class LibrariesTable {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns a specific library by primary key id, or null if it doesn't exist.
 	 * @param id the library primary key
 	 * @return the library or null if not found

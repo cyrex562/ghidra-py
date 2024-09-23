@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query;
 
-import java.io.*;
+
 import java.util.Map.Entry;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -33,7 +33,7 @@ public class ServerConfig {
 	private TreeMap<String, String> keyValue = new TreeMap<>();			// Values we want set in the configuration file
 	private TreeSet<ConnectLine> connectSet = new TreeSet<>();			// Entries we want in the connection file
 
-	/**
+    # /**
 	 * Class that holds a single configuration option from the PostgreSQL configuration file
 	 */
 	private static class ConfigLine {
@@ -146,7 +146,7 @@ public class ServerConfig {
 		}
 	}
 
-	/**
+    # /**
 	 * Class that holds an entry from the PostgreSQL connection configuration file
 	 */
 	private static class ConnectLine implements Comparable<ConnectLine> {
@@ -185,7 +185,7 @@ public class ServerConfig {
 			return 0;
 		}
 
-		/**
+	    # /**
 		 * Determine if the connection is coming either from UNIX socket or "localhost"
 		 * @return true if the connection is local in this sense
 		 */
@@ -204,7 +204,7 @@ public class ServerConfig {
 			return false;
 		}
 
-		/**
+	    # /**
 		 * Parse the fields out of a line of the connection file
 		 * @param line the text to parse
 		 * @throws IOException if the text is not formatted properly to parse
@@ -245,7 +245,7 @@ public class ServerConfig {
 			options = buffer.toString();
 		}
 
-		/**
+	    # /**
 		 * Restore a connection entry from an XML tag
 		 * @param el the XML element to restore 
 		 */
@@ -258,7 +258,7 @@ public class ServerConfig {
 			options = el.getAttribute("options");
 		}
 
-		/**
+	    # /**
 		 * Emit the line, formatted as it should appear in the connection file
 		 * @param writer the stream writer
 		 * @throws IOException if appending to the stream fails
@@ -361,7 +361,7 @@ public class ServerConfig {
 			return mapName.equals(mName) && roleName.equals(rName);
 		}
 
-		/**
+	    # /**
 		 * Parse a single line from the pg_ident.conf file and recover the
 		 * map name, system name, and role
 		 * @param line is the incoming of text
@@ -448,7 +448,7 @@ public class ServerConfig {
 		}
 	}
 
-	/**
+    # /**
 	 * Read a set of key/value pairs and connection entries to use for patching, from an XML file
 	 * @param parser the XML parser
 	 */
@@ -489,7 +489,7 @@ public class ServerConfig {
 		return null;		// Indicate this line only contains spaces and/or comment
 	}
 
-	/**
+    # /**
 	 * Given a set of key/value pairs, established via restoreXml or manually entered via addKey,
 	 * read in an existing configuration file, and write out an altered form, where:
 	 *   1) Keys matching something in the keyValue map have their value altered to match the map
@@ -554,7 +554,7 @@ public class ServerConfig {
 		}
 	}
 
-	/**
+    # /**
 	 * Read in a connection file and write out an altered version of the file where:
 	 *   1) Any entry that matches something in connectSet, has its authentication method altered
 	 *   2) Any entry that does not match into connectSet is commented out in the output
@@ -607,7 +607,7 @@ public class ServerConfig {
 		}
 	}
 
-	/**
+    # /**
 	 * Add/remove an identify entry to pg_ident.conf
 	 * @param inFile is a copy of pg_ident.conf to modify
 	 * @param outFile becomes the modified copy of pg_ident.conf
@@ -658,7 +658,7 @@ public class ServerConfig {
 		}
 	}
 
-	/**
+    # /**
 	 * Add a key/value pair directly into the configuration file
 	 * @param key the key to add/update
 	 * @param value the value to insert
@@ -667,7 +667,7 @@ public class ServerConfig {
 		keyValue.put(key, value);
 	}
 
-	/**
+    # /**
 	 * Retrieve the value associated with a particular key from a (parsed) configuration file
 	 * @param key identifies the value to return
 	 * @return the value
@@ -676,7 +676,7 @@ public class ServerConfig {
 		return keyValue.get(key);
 	}
 
-	/**
+    # /**
 	 * Parse a configuration file
 	 * @param inFile is the path to the file
 	 * @throws IOException if the file cannot be read
@@ -716,7 +716,7 @@ public class ServerConfig {
 		}
 	}
 
-	/**
+    # /**
 	 * Read in all the entries of the connection file
 	 * @param inFile the file to read in
 	 * @throws IOException if the file cannot be read/parsed

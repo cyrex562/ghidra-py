@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe.debug;
 
-import java.io.IOException;
+
 import java.io.RandomAccessFile;
 
 import ghidra.app.util.bin.*;

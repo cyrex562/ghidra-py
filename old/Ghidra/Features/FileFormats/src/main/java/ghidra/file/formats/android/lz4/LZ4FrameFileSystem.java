@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.lz4;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 

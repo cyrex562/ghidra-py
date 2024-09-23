@@ -18,7 +18,7 @@ package ghidra.util.task;
 
 public interface CancelledListener {
 
-	/**
+    # /**
 	 * Provides notification when a task is cancelled.
 	 */
 	void cancelled();

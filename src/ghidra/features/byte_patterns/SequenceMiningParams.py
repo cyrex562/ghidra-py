@@ -28,7 +28,7 @@ public class SequenceMiningParams {
 	private int requiredBitsOfCheck;
 	private boolean useBinary;
 
-	/**
+    # /**
 	 * Create a new {@link SequenceMiningParams} object 
 	 * @param minPercentage percentage of sequences in a database that must contain a pattern for the pattern
 	 * to be deemed "frequent"
@@ -43,7 +43,7 @@ public class SequenceMiningParams {
 		this.useBinary = useBinary;
 	}
 
-	/**
+    # /**
 	 * Returns the percentage of sequences in a database that must contain a pattern for the pattern to count as "frequent"
 	 * @return percentage
 	 */
@@ -51,7 +51,7 @@ public class SequenceMiningParams {
 		return minPercentage;
 	}
 
-	/**
+    # /**
 	 * Returns the minimum number of fixed bits a pattern must contain before it is displayed to the user
 	 * @return minimum number of fixed bits
 	 */
@@ -59,7 +59,7 @@ public class SequenceMiningParams {
 		return requiredBitsOfCheck;
 	}
 
-	/**
+    # /**
 	 * Returns a boolean value determining whether to treat sequences as binary strings (true) or character strings (false)
 	 * @return whether to treat sequences as binary
 	 */

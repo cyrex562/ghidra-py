@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.go.ipc;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 
 import org.junit.*;
 

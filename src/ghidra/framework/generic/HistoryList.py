@@ -57,7 +57,7 @@ public class HistoryList<T> {
 	private boolean allowDuplicates;
 	private boolean allowsNulls;
 
-	/**
+    # /**
 	 * The sized passed here limits the size of the list, with the oldest items being dropped
 	 * as the list grows.  The given callback will be called when {@link #goBack()} or 
 	 * {@link #goForward()} are called.
@@ -70,7 +70,7 @@ public class HistoryList<T> {
 		this(size, asBiConsumer(itemSelectedCallback));
 	}
 
-	/**
+    # /**
 	 * The sized passed here limits the size of the list, with the oldest items being dropped
 	 * as the list grows.  The given callback will be called when {@link #goBack()} or 
 	 * {@link #goForward()} are called.
@@ -99,7 +99,7 @@ public class HistoryList<T> {
 // Interface Methods
 //==================================================================================================	
 
-	/**
+    # /**
 	 * True signals that this list will allow duplicate entries.  False signals to not only not
 	 * allow duplicates, but to also move the position of an item if it is re-added to the 
 	 * list.
@@ -116,7 +116,7 @@ public class HistoryList<T> {
 		this.allowDuplicates = allowDuplicates;
 	}
 
-	/**
+    # /**
 	 * True signals that the client allows null items to be used.  When this is true, a null
 	 * value will be stored in this list <b>only as the last item</b>.  See the javadoc for 
 	 * more info.
@@ -127,7 +127,7 @@ public class HistoryList<T> {
 		this.allowsNulls = allowNulls;
 	}
 
-	/**
+    # /**
 	 * Adds an item to this history list.  <code>null</code> values are ignored.
 	 * 
 	 * <p>Calls to this method during selection notification will have no effect.  If you need
@@ -160,7 +160,7 @@ public class HistoryList<T> {
 		historyIndex = historyStack.size() - 1;
 	}
 
-	/**
+    # /**
 	 * Returns true if this history list's current item pointer is not at the end of the list.
 	 * 
 	 * @return true if this history list's current item pointer is not at the end of the list.
@@ -170,7 +170,7 @@ public class HistoryList<T> {
 		return hasNext;
 	}
 
-	/**
+    # /**
 	 * Returns true if this history list's current item pointer is not at the beginning of the list.
 	 * 
 	 * @return true if this history list's current item pointer is not at the beginning of the list.
@@ -180,7 +180,7 @@ public class HistoryList<T> {
 		return hasPrevious;
 	}
 
-	/**
+    # /**
 	 * Moves this history list's current item pointer back one and then calls the user-provided
 	 * callback to signal the newly selected item.
 	 * 
@@ -197,7 +197,7 @@ public class HistoryList<T> {
 		broadcast(t, leaving);
 	}
 
-	/**
+    # /**
 	 * Performs a {@link #goBack()} until the given item becomes the current item.  This is 
 	 * useful if you wish to go backward to a specific item in the list.
 	 * 
@@ -209,7 +209,7 @@ public class HistoryList<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Moves this history list's current item pointer forward one and then calls the user-provided
 	 * callback to signal the newly selected item.
 	 * 
@@ -225,7 +225,7 @@ public class HistoryList<T> {
 		broadcast(t, leaving);
 	}
 
-	/**
+    # /**
 	 * Performs a {@link #goForward()} until the given item becomes the current item.  This is 
 	 * useful if you wish to go forward to a specific item in the list.
 	 * 
@@ -237,7 +237,7 @@ public class HistoryList<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the item currently pointed to within the list of items.  When an item is 
 	 * added, this will be that item.  Otherwise, it will be the last item navigated.
 	 * 
@@ -250,7 +250,7 @@ public class HistoryList<T> {
 		return historyStack.get(historyIndex);
 	}
 
-	/**
+    # /**
 	 * Get all items in the history that come before the current history item.  They are 
 	 * returned in navigation order, as traversed if {@link #goBack()} is called.
 	 * 
@@ -265,7 +265,7 @@ public class HistoryList<T> {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Get all items in the history that come after the current history item.  They are 
 	 * returned in navigation order, as traversed if {@link #goForward()} is called.
 	 * 
@@ -281,7 +281,7 @@ public class HistoryList<T> {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Clears all history entries and resets the current item pointer.
 	 */
 	public void clear() {
@@ -289,7 +289,7 @@ public class HistoryList<T> {
 		historyIndex = 0;
 	}
 
-	/**
+    # /**
 	 * Returns the number of items in this history list
 	 * 
 	 * @return the number of items in this history list

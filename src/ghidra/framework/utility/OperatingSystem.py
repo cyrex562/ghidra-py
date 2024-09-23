@@ -22,7 +22,7 @@ public enum OperatingSystem {
 	FREE_BSD("FreeBSD"),
 	UNSUPPORTED("Unsupported Operating System");
 
-	/**
+    # /**
 	 * Do not access this property directly. Access using Platform class.
 	 */
 	public static final OperatingSystem CURRENT_OPERATING_SYSTEM = findCurrentOperatingSystem();

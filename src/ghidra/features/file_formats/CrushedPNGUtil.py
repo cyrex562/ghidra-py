@@ -13,7 +13,7 @@ import ghidra.file.formats.zlib.ZLIB;
 
 public class CrushedPNGUtil {
 
-	/**
+    # /**
 	 * Returns the converted bytes of the CrushedPNG to now represent
 	 * the structure and formatting of a normal non-crushed PNG.
 	 * @param png the CrushedPNG object
@@ -186,7 +186,7 @@ public class CrushedPNGUtil {
 		return outputStream.toByteArray();
 	}
 
-	/**
+    # /**
 	 * Does the processing to uncrushify the PNG IDAT chunks
 	 * @param ihdrChunk the IHDR chunk to pull meta deta from
 	 * @param decompressedResult result of the zlib decompression
@@ -308,7 +308,7 @@ public class CrushedPNGUtil {
 
 	}
 
-	/**
+    # /**
 	 * Removes the row filters from the image data
 	 * @param width the image width
 	 * @param height the image height
@@ -415,7 +415,7 @@ public class CrushedPNGUtil {
 
 	}
 
-	/**
+    # /**
 	 * Applies the row filters onto the png data based on source code from
 	 * http://www.jongware.com/pngdefry.html
 	 * @param width the image width
@@ -515,7 +515,7 @@ public class CrushedPNGUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Demultiplies the Alpha based on source code from http://www.jongware.com/pngdefry.html
 	 * @param width image width
 	 * @param height image height
@@ -549,7 +549,7 @@ public class CrushedPNGUtil {
 
 	}
 
-	/**
+    # /**
 	 * Prepends the needed Zlib header to the set of idatChunks 
 	 * in order to inflate the bytes
 	 * @param idatChunks the set of idat chunks
@@ -568,7 +568,7 @@ public class CrushedPNGUtil {
 		return fixedIdatData;
 	}
 
-	/**
+    # /**
 	 * Calculates the crc32 based on a byte[]
 	 * @param data the byte array to calculate crc32 from
 	 * @return The crc32 result
@@ -580,7 +580,7 @@ public class CrushedPNGUtil {
 		return ByteBuffer.allocate(4).putInt((int) result).array();
 	}
 
-	/**
+    # /**
 	 * Calculates the crc32 based on info gathered from a given PNGChunk
 	 * @param chunk the chunk to calculate crc32 from
 	 * @return The crc32 result

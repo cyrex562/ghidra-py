@@ -1,9 +1,9 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.hfsplus;
 
-import java.io.*;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,9 +22,9 @@ import mobiledevices.dmg.ghidra.GBinaryReader;
 import mobiledevices.dmg.ghidra.GByteProvider;
 
 /**
- * This code will extract the attributes file from the HFS+ file system,
- * which contains the B-tree for traversing the DECOMPFS files.
- */
+# * This code will extract the attributes file from the HFS+ file system,
+# * which contains the B-tree for traversing the DECOMPFS files.
+# */
 public class AttributesFileParser {
 
 	private Map<FSFile, DecmpfsHeader> map = new HashMap<FSFile, DecmpfsHeader>();

@@ -58,7 +58,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 	private boolean hasProcessedName = false;
 	private Namespace namespace;
 
-	/**
+    # /**
 	 * Creates the model for the exception handling TypeDescriptor data type.
 	 * @param program the program
 	 * @param address the address in the program for the TypeDescriptor data type.
@@ -85,7 +85,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the indicated address appears to be a valid location for the
 	 * indicated number of TypeDescriptor data types.
 	 * @throws InvalidDataTypeException if this model's location does not appear to be a valid
@@ -202,7 +202,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the TypeDescriptor structure for the indicated program
 	 * @param program the program which will contain this model's data type
 	 * @return the TypeDescriptor structure
@@ -246,7 +246,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.getMatchingDataType(program, struct);
 	}
 
-	/**
+    # /**
 	 * Determines if this model's data type program-wide TypeInfo Vftable pointer.  This is used
 	 * as an indication as to whether the particular data type has a Vftable pointer
 	 * @param program the program which will contain this model's data type
@@ -268,7 +268,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the TypeDescriptor structure for this model's program.
 	 * @return the TypeDescriptor structure.
 	 */
@@ -316,7 +316,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return isRelative() ? 8 : 4;
 	}
 
-	/**
+    # /**
 	 * Gets the offset of the vf table address in the Type Descriptor structure.
 	 * @return the offset of the vf table address
 	 */
@@ -324,7 +324,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return VF_TABLE_OR_HASH_ORDINAL;
 	}
 
-	/**
+    # /**
 	 * Gets the offset of the spare data pointer in the Type Descriptor structure.
 	 * @return the offset of the spare data pointer
 	 */
@@ -332,7 +332,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.is64Bit(getProgram()) ? 8 : 4;
 	}
 
-	/**
+    # /**
 	 * Gets the offset of the name in the Type Descriptor structure.
 	 * @return the offset of the name
 	 */
@@ -344,7 +344,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.is64Bit(program) ? 16 : 8;
 	}
 
-	/**
+    # /**
 	 * Gets the address of the vf table or null if one isn't indicated.
 	 * @return the address of the vf table or null.
 	 * @throws InvalidDataTypeException if valid TypeDescriptor data can't be created at the
@@ -366,7 +366,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return (vfTableAddress != null && vfTableAddress.getOffset() != 0) ? vfTableAddress : null;
 	}
 
-	/**
+    # /**
 	 * Gets the hash value if this data type has one.
 	 * @return the hash value.
 	 * @throws InvalidDataTypeException if valid TypeDescriptor data can't be created at the
@@ -384,7 +384,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the spare data or null if none is indicated.
 	 * @return the address of the spare data or null.
 	 * @throws InvalidDataTypeException if valid TypeDescriptor data can't be created at the
@@ -398,7 +398,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return (spareAddress != null && spareAddress.getOffset() != 0) ? spareAddress : null;
 	}
 
-	/**
+    # /**
 	 * Gets the actual name string for this type descriptor.
 	 * @return the type name or null.
 	 * @throws InvalidDataTypeException if valid TypeDescriptor data can't be created at the
@@ -423,7 +423,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return typeName;
 	}
 
-	/**
+    # /**
 	 * Gets the actual name string for this type descriptor.
 	 * @return the type name or null.
 	 * @throws InvalidDataTypeException if valid TypeDescriptor data can't be created at the
@@ -464,7 +464,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return (demangledDataType != null);
 	}
 
-	/**
+    # /**
 	 * Gets the demangled name string for this type descriptor.
 	 * This is the refType and full name including namespaces.
 	 * @return the full demangled type name or null.
@@ -473,7 +473,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return hasComplexType() ? demangledDataType.getOriginalDemangled() : null;
 	}
 
-	/**
+    # /**
 	 * Gets just the name of the type descriptor.
 	 * @return the name of the thing referred to by this descriptor, or null if it couldn't
 	 * be determined.
@@ -482,7 +482,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return hasComplexType() ? demangledDataType.getName() : null;
 	}
 
-	/**
+    # /**
 	 * Gets the parent namespace of the type descriptor.
 	 * @return the parent namespace as a DemangledType or null.
 	 */
@@ -490,7 +490,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return hasComplexType() ? demangledDataType.getNamespace() : null;
 	}
 
-	/**
+    # /**
 	 * Gets the full pathname (includes namespaces) of the type descriptor.
 	 * This may include modifiers. It doesn't contain the refType.
 	 * @return the full pathname or null.
@@ -499,7 +499,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return hasComplexType() ? demangledDataType.getNamespaceString() : null;
 	}
 
-	/**
+    # /**
 	 * Gets the address of where to find the type name, if there is one.
 	 * Otherwise, this returns null.
 	 * @return the address of the component with the type descriptor address or null.
@@ -526,7 +526,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Determines the address where the TypeDescriptor structure would need to begin in order
 	 * for the type name to begin at the address specified by <code>typeNameAddress</code>.
 	 * @param program the program that would contain the TypeDescriptor.
@@ -543,7 +543,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the the model's address appears to be a valid location for a
 	 * Type Descriptor data type and that its virtual function table address matches the specified
 	 * address.
@@ -568,7 +568,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the namespace for this descriptor. It will create the namespace if it doesn't already
 	 * exist
 	 * @return the descriptor's namespace or null if it couldn't be determined
@@ -594,7 +594,7 @@ public class TypeDescriptorModel extends AbstractCreateDataTypeModel {
 		return nsSymbol.isDeleted();
 	}
 
-	/**
+    # /**
 	 * Gets a DemangledDataType for the indicated mangled string
 	 * @param mangledString the mangled string to be demangled
 	 * @return the DemangledDataType or null if couldn't demangle or is not a class type

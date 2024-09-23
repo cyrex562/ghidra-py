@@ -30,7 +30,7 @@ public abstract class AbstractLocalSymbolInOptimizedCodeMsSymbol extends Abstrac
 	protected LocalVariableFlags localVariableFlags;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -46,7 +46,7 @@ public abstract class AbstractLocalSymbolInOptimizedCodeMsSymbol extends Abstrac
 		reader.align4();
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -54,7 +54,7 @@ public abstract class AbstractLocalSymbolInOptimizedCodeMsSymbol extends Abstrac
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link LocalVariableFlags}.
 	 * @return Local variable flags.
 	 */
@@ -62,7 +62,7 @@ public abstract class AbstractLocalSymbolInOptimizedCodeMsSymbol extends Abstrac
 		return localVariableFlags;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

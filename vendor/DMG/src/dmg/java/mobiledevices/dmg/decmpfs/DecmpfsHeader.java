@@ -1,9 +1,9 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.decmpfs;
 
-import java.io.IOException;
+
 
 import mobiledevices.dmg.ghidra.GBinaryReader;
 import mobiledevices.dmg.ghidra.GStringUtilities;

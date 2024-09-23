@@ -78,7 +78,7 @@ public abstract class ClangHighlightController {
 	private TokenHighlights contextHighlightTokens = new TokenHighlights();
 	private UserHighlights userHighlights = new UserHighlights();
 
-	/**
+    # /**
 	 * A counter to track updates so that clients know when a buffered highlight request is invalid
 	 */
 	private long updateId;
@@ -92,7 +92,7 @@ public abstract class ClangHighlightController {
 		defaultHighlightColor = c;
 	}
 
-	/**
+    # /**
 	 * Returns the color provider used by this class to generate colors.  The initial color
 	 * selection is random.  Repeated calls to get a color for the same token will return the same
 	 * color.
@@ -102,7 +102,7 @@ public abstract class ClangHighlightController {
 		return new GeneratedColorProvider();
 	}
 
-	/**
+    # /**
 	 * An value that is updated every time a new highlight is added.  This allows clients to
 	 * determine if a buffered update request is still valid.
 	 * @return the value
@@ -135,7 +135,7 @@ public abstract class ClangHighlightController {
 		return contextHighlightTokens;
 	}
 
-	/**
+    # /**
 	 * Returns all secondary highlighters for the given function.   This allows clients to update
 	 * the secondary highlight state of a given function without affecting highlights applied to
 	 * other functions.
@@ -146,7 +146,7 @@ public abstract class ClangHighlightController {
 		return userHighlights.getSecondaryHighlighters(function);
 	}
 
-	/**
+    # /**
 	 * Returns all global highlighters installed in this controller.  The global highlighters apply
 	 * to all functions.  This is in contrast to secondary highlighters, which are
 	 * function-specific.
@@ -156,7 +156,7 @@ public abstract class ClangHighlightController {
 		return userHighlights.getGlobalHighlighters();
 	}
 
-	/**
+    # /**
 	 * Gets all highlights for the given highlighter.
 	 * @param highlighter the highlighter
 	 * @return the highlights
@@ -166,7 +166,7 @@ public abstract class ClangHighlightController {
 		return userHighlights.getHighlights(highlighter);
 	}
 
-	/**
+    # /**
 	 * Return the current highlighted token (if exists and unique)
 	 * @return token or null
 	 */
@@ -215,7 +215,7 @@ public abstract class ClangHighlightController {
 		}
 	}
 
-	/**
+    # /**
 	 * Toggles the primary highlight state of the given set of tokens.  If the given tokens do not
 	 * all have the same highlight state (highlights on or off), then the highlights will be
 	 * cleared.  If all tokens are not highlighted, then they will all become highlighted.
@@ -243,7 +243,7 @@ public abstract class ClangHighlightController {
 		addPrimaryHighlights(tokens, hlColor);
 	}
 
-	/**
+    # /**
 	 * Removes all secondary highlights for the given function
 	 * @param f the function
 	 */
@@ -261,7 +261,7 @@ public abstract class ClangHighlightController {
 		notifyListeners();
 	}
 
-	/**
+    # /**
 	 * Removes all secondary highlights for the given token
 	 * @param token the token
 	 * @see #removeSecondaryHighlights(Function)
@@ -279,7 +279,7 @@ public abstract class ClangHighlightController {
 		userHighlights.remove(highlighter);
 	}
 
-	/**
+    # /**
 	 * Removes all highlights for this highlighter across all functions
 	 * @param highlighter the highlighter
 	 */
@@ -295,7 +295,7 @@ public abstract class ClangHighlightController {
 		notifyListeners();
 	}
 
-	/**
+    # /**
 	 * Adds the given secondary highlighter, but does not create any highlights.  All secondary
 	 * highlighters pertain to a given function.
 	 * @param function the function
@@ -395,7 +395,7 @@ public abstract class ClangHighlightController {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the current highlight color for the given token, based upon all known highlights,
 	 * primary, secondary and highlighters
 	 * @param t the token
@@ -497,7 +497,7 @@ public abstract class ClangHighlightController {
 		}
 	}
 
-	/**
+    # /**
 	 * If input token is a parenthesis, highlight all tokens between it and its match
 	 * @param tok potential parenthesis token
 	 * @param highlightColor the highlight color

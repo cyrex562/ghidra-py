@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.jdi.rmi.jpda;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import com.sun.jdi.*;

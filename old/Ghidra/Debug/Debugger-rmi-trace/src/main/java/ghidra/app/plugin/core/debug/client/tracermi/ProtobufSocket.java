@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.client.tracermi;
 
-import java.io.IOException;
+
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 

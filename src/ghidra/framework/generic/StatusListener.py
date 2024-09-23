@@ -21,20 +21,20 @@ package ghidra.util;
  */
 public interface StatusListener {
 
-	/**
+    # /**
 	 * Set the current status as type INFO
 	 * @param text status text
 	 */
 	void setStatusText(String text);
 
-	/**
+    # /**
 	 * Set the current status as the specified type
 	 * @param text status text
 	 * @param type status type
 	 */
 	void setStatusText(String text, MessageType type);
 
-	/**
+    # /**
 	 * Set the current status as the specified type
 	 * @param text status text
 	 * @param type status type
@@ -42,7 +42,7 @@ public interface StatusListener {
 	 */
 	void setStatusText(String text, MessageType type, boolean alert);
 
-	/**
+    # /**
 	 * Clear the current status - same as setStatusText("")
 	 * without being recorded
 	 */

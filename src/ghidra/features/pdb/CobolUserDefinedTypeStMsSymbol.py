@@ -27,7 +27,7 @@ public class CobolUserDefinedTypeStMsSymbol extends AbstractCobolUserDefinedType
 
 	public static final int PDB_ID = 0x1004;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

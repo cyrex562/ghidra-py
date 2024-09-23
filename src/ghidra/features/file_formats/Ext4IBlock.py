@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.*;
@@ -31,7 +31,7 @@ public class Ext4IBlock implements StructConverter {
 	
 	private boolean isExtentTree;
 	
-	/**
+    # /**
 	 * Reads an IBlock that is expected to contain extents
 	 * 
 	 * @param provider {@link ByteProvider} to read from

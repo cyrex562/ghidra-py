@@ -36,7 +36,7 @@ public abstract class DateBSimFilterType extends BSimFilterType {
 		DateTimeFormatter.ofPattern("MM-dd-yyyy"), DateTimeFormatter.ofPattern("MM/dd/yyyy"),
 		DateTimeFormatter.ofPattern("yyyy"));
 
-	/**
+    # /**
 	 * 
 	 * @param label is the display name of this date filter
 	 * @param xmlval is the XML serialization name
@@ -61,7 +61,7 @@ public abstract class DateBSimFilterType extends BSimFilterType {
 		return date == null ? null : date.toString();
 	}
 
-	/**
+    # /**
 	 * Uses the list of {@link DateTimeFormatter} instances created above to test
 	 * the given date value. If a formatter can parse the text, a {@link LocalDate}
 	 * object is returned.
@@ -92,7 +92,7 @@ public abstract class DateBSimFilterType extends BSimFilterType {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return false, since having more than one date filter is logically inconsistent.
 	 */
 	@Override

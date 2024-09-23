@@ -42,7 +42,7 @@ public class AssemblyFirstFollow {
 	private final MultiValuedMap<AssemblyNonTerminal, AssemblyTerminal> follow =
 		new TreeSetValuedTreeMap<>();
 
-	/**
+    # /**
 	 * Compute the first and follow sets for every non-terminal in the given grammar
 	 * 
 	 * @param grammar the grammar
@@ -55,7 +55,7 @@ public class AssemblyFirstFollow {
 		computeFollows();
 	}
 
-	/**
+    # /**
 	 * Compute the nullable set
 	 */
 	protected void computeNullable() {
@@ -70,7 +70,7 @@ public class AssemblyFirstFollow {
 		}
 	}
 
-	/**
+    # /**
 	 * Compute the first set for each non-terminal
 	 */
 	protected void computeFirsts() {
@@ -101,7 +101,7 @@ public class AssemblyFirstFollow {
 		}
 	}
 
-	/**
+    # /**
 	 * Compute the follow set for each non-terminal
 	 */
 	protected void computeFollows() {
@@ -148,7 +148,7 @@ public class AssemblyFirstFollow {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the nullable set
 	 * 
 	 * <p>
@@ -160,7 +160,7 @@ public class AssemblyFirstFollow {
 		return Collections.unmodifiableSet(nullable);
 	}
 
-	/**
+    # /**
 	 * Get the first set for a given non-terminal
 	 * 
 	 * <p>
@@ -174,7 +174,7 @@ public class AssemblyFirstFollow {
 		return Collections.unmodifiableCollection(first.get(nt));
 	}
 
-	/**
+    # /**
 	 * Get the follow set for a given non-terminal
 	 * 
 	 * <p>
@@ -188,7 +188,7 @@ public class AssemblyFirstFollow {
 		return Collections.unmodifiableCollection(follow.get(nt));
 	}
 
-	/**
+    # /**
 	 * For debugging, print out the computed sets to the given stream
 	 * 
 	 * @param out the stream

@@ -17,7 +17,7 @@ package ghidra.framework.remote;
 
 import ghidra.framework.store.FileSystem;
 
-import java.io.IOException;
+
 
 /**
  * <code>RepositoryItemStatus</code> provides status information for a 

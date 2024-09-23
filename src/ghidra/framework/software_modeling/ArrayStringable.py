@@ -26,7 +26,7 @@ import ghidra.program.model.mem.MemBuffer;
  */
 public interface ArrayStringable extends DataType {
 
-	/**
+    # /**
 	 * For cases where an array of this type exists, determines if a String value
 	 * will be returned.
 	 * <p>
@@ -36,7 +36,7 @@ public interface ArrayStringable extends DataType {
 	 */
 	public boolean hasStringValue(Settings settings);
 
-	/**
+    # /**
 	 * For cases where an array of this type exists, get the array value as a String.
 	 * When data corresponds to character data it should generally be expressed as a string.
 	 * A null value is returned if not supported or memory is uninitialized.
@@ -52,7 +52,7 @@ public interface ArrayStringable extends DataType {
 		return null;
 	}
 
-	/**
+    # /**
 	 * For cases where an array of this type exists, get the appropriate string to use as the
 	 * default label prefix for the array.
 	 * @param buf memory buffer containing the bytes.
@@ -64,7 +64,7 @@ public interface ArrayStringable extends DataType {
 	public String getArrayDefaultLabelPrefix(MemBuffer buf, Settings settings, int len,
 			DataTypeDisplayOptions options);
 
-	/**
+    # /**
 	 * For cases where an array of this type exists, get the appropriate string to use as the
 	 * default label prefix, taking into account the fact that there exists a reference to the
 	 * data that references <code>offcutLength</code> bytes into this type
@@ -85,7 +85,7 @@ public interface ArrayStringable extends DataType {
 	//
 	// ----------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * Get the ArrayStringable for a specified data type. Not used on an Array DataType, but
 	 * on Array's element's type.
 	 * <p>

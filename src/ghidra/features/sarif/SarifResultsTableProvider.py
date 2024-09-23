@@ -92,7 +92,7 @@ public class SarifResultsTableProvider extends ComponentProvider  {
 		return component;
 	}
 
-	/**
+    # /**
 	 * Columns are added to the table based on if they are required by the SARIF
 	 * format or are a taxonomy that the SARIF file defines We "support" certain
 	 * taxonomies here by if the names match adding additional context actions that

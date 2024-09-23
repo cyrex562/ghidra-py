@@ -58,7 +58,7 @@ public class FindInstructionWithWildcard extends GhidraScript {
 		searchMemoryForEncodings(encodings, allValidResults);
 	}
 
-	/**
+    # /**
 	 * Use a {@link WildSleighAssembler} to assemble the given {@code wildcardedInstruction}
 	 * 
 	 * @param wildcardedInstruction
@@ -98,7 +98,7 @@ public class FindInstructionWithWildcard extends GhidraScript {
 		return allValidResults;
 	}
 
-	/**
+    # /**
 	 * Reduce the given {@code WildAssemblyResolvedPatterns} to a map keyed by unique instruction
 	 * encodings WITHOUT specific wildcard values. Each key in this map corresponds to a set of
 	 * {@code WildOperandInfo} options for the corresponding encoding.
@@ -134,7 +134,7 @@ public class FindInstructionWithWildcard extends GhidraScript {
 		return encodings;
 	}
 
-	/**
+    # /**
 	 * This is a helper class which creates and holds an {@code AssemblyPatternBlock} for a given
 	 * {@code WildAssemblyResolvedPatterns}. This created {@code AssemblyPatternBlock} does NOT have
 	 * any bits specified that are part of a wildcarded operand. This is in contrast to the original
@@ -143,11 +143,11 @@ public class FindInstructionWithWildcard extends GhidraScript {
 	 * {@code WildAssemblyResolvedPatterns}.
 	 */
 	static class ReducedWildcardAssemblyResolvedPattern {
-		/**
+	    # /**
 		 * The original WildAssemblyResolvedPatterns that this is based on
 		 */
 		WildAssemblyResolvedPatterns parent;
-		/**
+	    # /**
 		 * The portion of the instruction that is NOT any wildcarded operand
 		 */
 		AssemblyPatternBlock maskedInstruction;
@@ -164,7 +164,7 @@ public class FindInstructionWithWildcard extends GhidraScript {
 			maskedInstruction = reducedInstruction;
 		}
 
-		/**
+	    # /**
 		 * Returns true of the given value shares the same {@code maskedInstruction} and wildcard(s)
 		 * as this instance.
 		 * 
@@ -205,7 +205,7 @@ public class FindInstructionWithWildcard extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Searches for at most 10 matches for each given encoding, starting at {@code currentAddress}
 	 * and prints results to the console.
 	 * <p>
@@ -258,7 +258,7 @@ public class FindInstructionWithWildcard extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Print information about a specific search hit to the console
 	 * <p>
 	 * NOTE: This is certainly not the highest performance way to do this, but it is reasonably
@@ -306,7 +306,7 @@ public class FindInstructionWithWildcard extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Return all items from {@code results} which are instances of
 	 * {@link WildAssemblyResolvedPatterns}
 	 * 

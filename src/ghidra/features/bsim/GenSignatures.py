@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query;
 
-import java.io.IOException;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
@@ -65,7 +65,7 @@ public class GenSignatures {
 	private ConcurrentLinkedDeque<ParallelDecompileTask> runningTasks =
 		new ConcurrentLinkedDeque<>();
 
-	/**
+    # /**
 	 * Prepare for generation of signature information and (possibly) callgraph information
 	 * @param callgraph is true if the user wants callgraph information to be generated at the same time as signatures
 	 */
@@ -139,7 +139,7 @@ public class GenSignatures {
 		return manager;
 	}
 
-	/**
+    # /**
 	 * Clear out any accumulated signatures
 	 */
 	public void clear() {
@@ -150,7 +150,7 @@ public class GenSignatures {
 		program = null;		// Cannot reuse unless we call openProgram again
 	}
 
-	/**
+    # /**
 	 * Generate an MD5 hash based just on executable metadata
 	 * @param nmover is name of executable
 	 * @param compover is architecture metadata
@@ -190,7 +190,7 @@ public class GenSignatures {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Prepare to collect signatures for a new program, essentially by starting up a new decompiler process
 	 * and creating an ExecutableRecord
 	 * @param prog is the program to prepare for
@@ -390,7 +390,7 @@ public class GenSignatures {
 		return calls;
 	}
 
-	/**
+    # /**
 	 * Return true if the address corresponds to a normal function body
 	 * @param addr is the entry point of the function
 	 * @return true if it has a body
@@ -453,7 +453,7 @@ public class GenSignatures {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Generate signatures for a (potentially large) set of functions by spawning multiple
 	 * threads to parallelize the work
 	 *
@@ -480,7 +480,7 @@ public class GenSignatures {
 		runningTasks.remove(taskrun);
 	}
 
-	/**
+    # /**
 	 * Calculate signatures for a single function
 	 * @param func is the function to scan
 	 * @throws DecompileException if the decompiler task fails
@@ -499,7 +499,7 @@ public class GenSignatures {
 		singletask.decompile(func, null);
 	}
 
-	/**
+    # /**
 	 * Generate just the update metadata for functions in the currently open program
 	 * if -iter- is null, generate metadata for all functions
 	 * @param iter iterates over the set of Functions to generate metadata for
@@ -546,7 +546,7 @@ public class GenSignatures {
 		clear();
 	}
 
-	/**
+    # /**
 	 * Build an ExecutableRecord path from the domain file.
 	 * WARNING: Make sure the program has been saved previously before calling this, otherwise you get
 	 * an (inaccurate) result of "/"
@@ -571,7 +571,7 @@ public class GenSignatures {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Return the weights file that should be used to compare functions between two programs
 	 * @param id1 is the language of the first program
 	 * @param id2 is the language of the second program  (can be same as first program)
@@ -627,7 +627,7 @@ public class GenSignatures {
 		return new ResourceFile(moduleDataSubDirectory, basefile);
 	}
 
-	/**
+    # /**
 	 * Info for resolving a call to a unique function in the database.
 	 * For normal functions you need the triple (executable, function name, address)
 	 * For calls to library (external) functions, only the library executable

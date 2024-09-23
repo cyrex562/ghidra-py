@@ -33,7 +33,7 @@ import ghidra.util.exception.InvalidInputException;
 public abstract class AbstractFunctionTypeApplier extends MsDataTypeApplier {
 
 	// Intended for: see children
-	/**
+    # /**
 	 * Constructor for the applicator that applies a "function" type, transforming it into a
 	 * Ghidra DataType
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
@@ -42,14 +42,14 @@ public abstract class AbstractFunctionTypeApplier extends MsDataTypeApplier {
 		super(applicator);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CallingConvention}
 	 * @param type the PDB type being inspected
 	 * @return the calling convention
 	 */
 	protected abstract CallingConvention getCallingConvention(AbstractMsType type);
 
-	/**
+    # /**
 	 * Returns the function "this" pointer
 	 * @param type the PDB type being inspected
 	 * Composites within composites)
@@ -60,7 +60,7 @@ public abstract class AbstractFunctionTypeApplier extends MsDataTypeApplier {
 	protected abstract Pointer getThisPointer(AbstractMsType type)
 			throws CancelledException, PdbException;
 
-	/**
+    # /**
 	 * Returns the RecordNumber of the function "this" pointer; {@code null} if not this pointer
 	 * @param type the PDB type being inspected
 	 * @return the record number of the "this" pointer or null if does not have or is not a
@@ -68,7 +68,7 @@ public abstract class AbstractFunctionTypeApplier extends MsDataTypeApplier {
 	 */
 	protected abstract RecordNumber getThisPointerRecordNumber(AbstractMsType type);
 
-	/**
+    # /**
 	 * Returns the RecordNumber of the containing class if function member of class; {@code null}
 	 *  if no containing class
 	 * @param type the PDB type being inspected
@@ -76,13 +76,13 @@ public abstract class AbstractFunctionTypeApplier extends MsDataTypeApplier {
 	 */
 	protected abstract RecordNumber getContainingComplexRecordNumber(AbstractMsType type);
 
-	/**
+    # /**
 	 * Processes containing class if one exists
 	 * @param type the PDB type being inspected
 	 */
 	protected abstract void processContainingType(AbstractMsType type);
 
-	/**
+    # /**
 	 * Returns if known to be a constructor.
 	 * @param type the PDB type being inspected
 	 * @return true if constructor.
@@ -91,14 +91,14 @@ public abstract class AbstractFunctionTypeApplier extends MsDataTypeApplier {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link RecordNumber} of the function return type
 	 * @param type the PDB type being inspected
 	 * @return the record number
 	 */
 	protected abstract RecordNumber getReturnRecordNumber(AbstractMsType type);
 
-	/**
+    # /**
 	 * Returns the {@link RecordNumber} of the function arguments list
 	 * @param type the PDB type being inspected
 	 * @return the record number
@@ -236,7 +236,7 @@ public abstract class AbstractFunctionTypeApplier extends MsDataTypeApplier {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Uses {@link DefaultPdbApplicator#getDataTypeOrSchedule(RecordNumber)}) on all underlying
 	 *  types to ensure that the types get scheduled... and detects whether any types were not yet
 	 *  available so that this composite type is denoted as not done.

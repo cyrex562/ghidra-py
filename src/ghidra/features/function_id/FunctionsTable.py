@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.db;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -64,7 +64,7 @@ public class FunctionsTable {
 	StringsTable stringsTable;
 	DBObjectCache<FunctionRecord> functionCache;
 
-	/**
+    # /**
 	 * Creates or attaches a functions table.
 	 * @param handle database handle
 	 * @param stringsTable strings table (must be created first!)
@@ -82,7 +82,7 @@ public class FunctionsTable {
 		handle.createTable(FUNCTIONS_TABLE, SCHEMA, INDEXED_COLUMNS);
 	}
 
-	/**
+    # /**
 	 * Returns the first full hash value in the table that is greater than or
 	 * equal to the provided argument.  Useful for iterating over all the function
 	 * records in (arbitrarily, but deterministically) sorted full hash order.
@@ -101,7 +101,7 @@ public class FunctionsTable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns all the function records that have the provided specific hash.
 	 * This is implemented without an index, so it is inefficient.
 	 * @param hash the hash value
@@ -125,7 +125,7 @@ public class FunctionsTable {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns all the function records that have the provided full hash.
 	 * @param hash the hash value
 	 * @return a list of function records that match the hash value
@@ -151,7 +151,7 @@ public class FunctionsTable {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Creates a function record with the given parameters.
 	 * @param libraryID the library record primary key
 	 * @param hashQuad the quad containing the hash values
@@ -183,7 +183,7 @@ public class FunctionsTable {
 		return functionRecord;
 	}
 
-	/**
+    # /**
 	 * Modify a flag on a function record.  Should be accompanied by clearCache().
 	 * @param functionID is the id of the function record to modify
 	 * @param flagMask is the bit to modify
@@ -207,7 +207,7 @@ public class FunctionsTable {
 		functionCache.delete(functionID); // Remove any cached record
 	}
 
-	/**
+    # /**
 	 * Performs a SLOW search of all function records, looking for functions whose name contain
 	 * the substring provided as an argument.  Note that empty string will return ALL function
 	 * records in the database!
@@ -247,7 +247,7 @@ public class FunctionsTable {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Performs a SLOW search of all function records, looking for functions whose name matches
 	 * the regular expression provided as an argument.
 	 * @param regex the regular expression to match
@@ -288,7 +288,7 @@ public class FunctionsTable {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns a single function record given its id, or null if no such record exists.
 	 * @param functionID the function record primary key id
 	 * @return the function record or null if non-existent
@@ -305,7 +305,7 @@ public class FunctionsTable {
 		return functionRecord;
 	}
 
-	/**
+    # /**
 	 * Performs a SLOW search of all function records, looking for functions whose domain path contain
 	 * the substring provided as an argument.  Note that empty string will return ALL function
 	 * records in the database!
@@ -333,7 +333,7 @@ public class FunctionsTable {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Performs a library-restricted search for functions by name.
 	 * @param library the library to restrict the search to
 	 * @param name the name of the function to seek

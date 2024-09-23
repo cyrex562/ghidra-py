@@ -16,7 +16,7 @@
 package utility.application;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.framework.PluggableServiceRegistry;
 import ghidra.util.Msg;
@@ -27,7 +27,7 @@ public class ApplicationSettings {
 			new ApplicationSettings());
 	}
 
-	/**
+    # /**
 	 * Returns the directory into which application settings are stored per user, per 
 	 * application version.
 	 * @return the directory into which application settings are stored per user, per 
@@ -39,7 +39,7 @@ public class ApplicationSettings {
 		return impl.doGetUserApplicationSettingsDirectory();
 	}
 
-	/**
+    # /**
 	 * Aha!  This is where any potential subclasses can update the returned value.
 	 * 
 	 * @return the directory into which application settings are stored per user, per 

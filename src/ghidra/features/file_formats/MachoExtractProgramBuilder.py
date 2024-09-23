@@ -31,7 +31,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class MachoExtractProgramBuilder extends MachoProgramBuilder {
 
-	/**
+    # /**
 	 * Creates a new {@link MachoExtractProgramBuilder} based on the given information.
 	 * 
 	 * @param program The {@link Program} to build up.
@@ -46,7 +46,7 @@ public class MachoExtractProgramBuilder extends MachoProgramBuilder {
 		super(program, provider, fileBytes, log, monitor);
 	}
 
-	/**
+    # /**
 	 * Builds up a {@link Program} of Mach-O components extracted from a Mach-O container
 	 * 
 	 * @param program The {@link Program} to build up.

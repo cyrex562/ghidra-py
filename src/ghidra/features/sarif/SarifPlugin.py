@@ -16,7 +16,7 @@
 package sarif;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.Icon;
@@ -128,7 +128,7 @@ public class SarifPlugin extends ProgramPlugin implements OptionsChangeListener 
 		}
 	}
 
-	/**
+    # /**
 	 * Ultimately both selections end up calling this to actually show something on
 	 * the Ghidra gui
 	 *

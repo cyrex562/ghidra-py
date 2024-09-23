@@ -17,7 +17,7 @@ package ghidra.feature.vt.api.db;
 
 import static ghidra.feature.vt.api.db.VTMatchTagDBAdapter.ColumnDescription.TAG_NAME_COL;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.feature.vt.api.main.VTMatchTag;
@@ -43,7 +43,7 @@ public class VTMatchTagDB extends DatabaseObject implements VTMatchTag {
 		return getName();
 	}
 
-	/**
+    # /**
 	 * Update associated record
 	 * @param rec the new record information
 	 */
@@ -70,7 +70,7 @@ public class VTMatchTagDB extends DatabaseObject implements VTMatchTag {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns record associated with this match tag or
 	 * null if the match tag has been deleted.
 	 */

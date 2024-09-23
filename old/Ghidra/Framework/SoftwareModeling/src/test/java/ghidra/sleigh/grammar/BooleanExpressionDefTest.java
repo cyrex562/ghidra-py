@@ -15,7 +15,7 @@
  */
 package ghidra.sleigh.grammar;
 
-import java.io.*;
+
 
 import org.antlr.runtime.*;
 import org.junit.Assert;

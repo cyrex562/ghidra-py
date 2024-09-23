@@ -16,7 +16,7 @@
 package ghidra.framework.protocol.ghidra;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.Map;
 import java.util.Map.Entry;

@@ -23,7 +23,7 @@ import ghidra.util.task.TaskMonitor;
 
 public interface VTProgramCorrelator {
 
-	/**
+    # /**
 	 * Performs the correlation between two programs looking for how well functions in one program
 	 * correlate to functions in another program.
 	 * @param session An existing manager that may contain previous results that may
@@ -35,37 +35,37 @@ public interface VTProgramCorrelator {
 	 */
 	public VTMatchSet correlate(VTSession session, TaskMonitor monitor) throws CancelledException;
 
-	/**
+    # /**
 	 * Return the name of the correlator.
 	 * @return the name of the correlator
 	 */
 	public String getName();
 
-	/**
+    # /**
 	 * Returns a options object populated with the options for this correlator instance.
 	 * @return the options
 	 */
 	public ToolOptions getOptions();
 
-	/**
+    # /**
 	 * Returns the address set associated with this correlator instance.
 	 * @return  the address set associated with this correlator instance.
 	 */
 	public AddressSetView getSourceAddressSet();
 
-	/**
+    # /**
 	 * Returns the source program for this correlator instance.
 	 * @return  the source program for this correlator instance.
 	 */
 	public Program getSourceProgram();
 
-	/**
+    # /**
 	 * Returns the destination program for this correlator instance.
 	 * @return  the destination program for this correlator instance.
 	 */
 	public Program getDestinationProgram();
 
-	/**
+    # /**
 	 * Returns the address set associated with this correlator instance.
 	 * @return  the address set associated with this correlator instance.
 	 */

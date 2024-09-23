@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.elastic;
 
-import java.io.*;
+
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -50,7 +50,7 @@ public class ElasticConnection {
 		return (lastResponseCode >= 200) && (lastResponseCode < 300);
 	}
 
-	/**
+    # /**
 	 * Start a new request to the elastic server.  This establishes the OutputStream for writing the body of the request
 	 * @param command is the type of command
 	 * @param path is the overarching index/type/<command> path
@@ -83,7 +83,7 @@ public class ElasticConnection {
 		writer = new OutputStreamWriter(connection.getOutputStream());
 	}
 
-	/**
+    # /**
 	 * Start a request with no input body, URI only
 	 * @param command is the command to issue
 	 * @param path is the overarching request path: index/...
@@ -96,7 +96,7 @@ public class ElasticConnection {
 		connection.setDoOutput(true);
 	}
 
-	/**
+    # /**
 	 * Assuming the writer has been closed and connection.getResponseCode() is called
 	 * placing the value in lastResponseCode, read the response and parse into a JSONObject
 	 * @return the JSONObject
@@ -116,7 +116,7 @@ public class ElasticConnection {
 		return jsonObject;
 	}
 
-	/**
+    # /**
 	 * Elastic search sends a JSON document in the Http error stream for any error
 	 * Pull out relevant info from the document and construct an exception message
 	 * @param resp is the parsed error document
@@ -145,7 +145,7 @@ public class ElasticConnection {
 		return typeString + " : " + reasonString;
 	}
 
-	/**
+    # /**
 	 * Send a raw request to the server that is not specific to the repository.
 	 * Intended for general configuration or security commands
 	 * @param command is the type of command
@@ -176,7 +176,7 @@ public class ElasticConnection {
 
 	}
 
-	/**
+    # /**
 	 * Execute an elasticsearch command where we are not expecting a response
 	 * @param command is the type of the command
 	 * @param path is the overarching index/type/<command>
@@ -203,7 +203,7 @@ public class ElasticConnection {
 		}
 	}
 
-	/**
+    # /**
 	 * Execute an elastic search statement and return the JSON response to user
 	 * @param command is the type of command
 	 * @param path is the overarching index/type/<command>
@@ -232,7 +232,7 @@ public class ElasticConnection {
 		}
 	}
 
-	/**
+    # /**
 	 * Execute an elastic search statement and return the JSON response to user
 	 * Do not throw an exception on failure, just return the error response
 	 * @param command is the type of command
@@ -259,7 +259,7 @@ public class ElasticConnection {
 		}
 	}
 
-	/**
+    # /**
 	 * Send a bulk request to the elasticsearch server.  This is a special format for combining multiple commands
 	 * and is structured slightly differently from other commands.
 	 * @param path is the specific URL path receiving the bulk command

@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.program.database.symbol.CodeSymbol;
@@ -30,11 +30,11 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * JumpTable found as part of the decompilation of a function
- * 
- * 
- *
- */
+# * JumpTable found as part of the decompilation of a function
+# * 
+# * 
+# *
+# */
 
 public class JumpTable {
 
@@ -46,21 +46,21 @@ public class JumpTable {
 		LoadTable() {
 		}
 
-		/**
+	    # /**
 		 * @return Starting address of table
 		 */
 		public Address getAddress() {
 			return addr;
 		}
 
-		/**
+	    # /**
 		 * @return Size of a table entry in bytes
 		 */
 		public int getSize() {
 			return size;
 		}
 
-		/**
+	    # /**
 		 * @return Number of entries in table
 		 */
 		public int getNum() {
@@ -145,7 +145,7 @@ public class JumpTable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Decode a JumpTable object from the stream.
 	 * @param decoder is the stream decoder
 	 * @throws DecoderException for invalid encodings

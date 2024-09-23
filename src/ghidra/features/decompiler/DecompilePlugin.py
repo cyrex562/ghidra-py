@@ -68,7 +68,7 @@ public class DecompilePlugin extends Plugin {
 	private ProgramLocation currentLocation;
 	private ProgramSelection currentSelection;
 
-	/**
+    # /**
 	 * Delay location changes to allow location events to settle down. This happens when a
 	 * readDataState occurs when a tool is restored or when switching program tabs.
 	 */

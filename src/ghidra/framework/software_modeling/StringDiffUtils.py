@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.code;
 
 import java.util.*;
@@ -23,7 +23,7 @@ import generic.algorithms.ReducingListBasedLcs;
 
 class StringDiffUtils {
 
-	/**
+    # /**
 	 * Minimum size used to determine whether a new StringDiff object will be
 	 * created just using a string (no positions)
 	 * in the <code>getDiffs(String, String)</code> method.
@@ -31,7 +31,7 @@ class StringDiffUtils {
 	 */
 	private static int MINIMUM_DIFF_SIZE = 100;
 
-	/**
+    # /**
 	 * Returns the list of StringDiff objects that if applied to s1 would result in s2;  The
 	 * given text will look only for whole lines using '\n'.
 	 *
@@ -218,7 +218,7 @@ class StringDiffUtils {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Applies the array of StringObjects to the string s to produce a new string. Warning - the
 	 * diff objects cannot be applied to an arbitrary string, the Strings must be the original
 	 * String used to compute the diffs.

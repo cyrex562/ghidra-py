@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.projectdata.actions;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.Icon;
@@ -41,7 +41,7 @@ import ghidra.util.task.*;
  */
 public class VersionControlCheckOutAction extends VersionControlAction {
 
-	/**
+    # /**
 	 * Creates an action to checkout domain files from the repository
 	 * @param plugin the plug-in that owns this action
 	 */
@@ -102,7 +102,7 @@ public class VersionControlCheckOutAction extends VersionControlAction {
 		tool.execute(new CheckOutTask(files));
 	}
 
-	/**
+    # /**
 	 * Task for checking out files that are in version control
 	 */
 	private class CheckOutTask extends Task {

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.Date;
 
 import javax.help.UnsupportedOperationException;
@@ -66,7 +66,7 @@ class CompositeDBAdapterV5V6 extends CompositeDBAdapter {
 
 	private Table compositeTable;
 
-	/**
+    # /**
 	 * Gets an adapter for the Composite database table.
 	 * @param handle handle to the database containing the table.
 	 * @param openMode the mode this adapter is to be opened for (CREATE, UPDATE, READ_ONLY, UPGRADE).

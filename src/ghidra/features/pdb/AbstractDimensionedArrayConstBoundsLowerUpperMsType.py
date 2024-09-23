@@ -34,7 +34,7 @@ public abstract class AbstractDimensionedArrayConstBoundsLowerUpperMsType extend
 	protected long[] lowerBound;
 	protected long[] upperBound;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -45,7 +45,7 @@ public abstract class AbstractDimensionedArrayConstBoundsLowerUpperMsType extend
 		super(pdb, reader);
 		parseBeginningFields(reader);
 		// TODO: fix all of this once we know the true size of each (assuming it is fixed).
-		/**
+	    # /**
 		 * For now, we are assuming that the amount of data left will be a multiple of 2 times
 		 * (one of {@link lowerBound} and one for {@link upperBound}--see
 		 * {@link AbstractDimensionedArrayConstBoundsUpperMsType} for 1 times) the size of the
@@ -107,7 +107,7 @@ public abstract class AbstractDimensionedArrayConstBoundsLowerUpperMsType extend
 		}
 	}
 
-	/**
+    # /**
 	 * Parsed the beginning fields of this type.
 	 * <P>
 	 * Implementing class must, in the appropriate order pertinent to itself, parse

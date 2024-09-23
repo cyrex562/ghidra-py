@@ -33,7 +33,7 @@ public class WithSymbolApplier extends MsSymbolApplier
 
 	private AbstractWithMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier

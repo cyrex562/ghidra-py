@@ -41,7 +41,7 @@ import ghidra.program.util.ProgramSelection;
  */
 public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 
-	/** Keep a copy around for later retrieval */
+    # /** Keep a copy around for later retrieval */
 	private Set<FGEdge> ungroupedEdges = new HashSet<>();
 	private Set<GroupHistoryInfo> groupHistorySet = new HashSet<>();
 
@@ -68,7 +68,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		}
 	};
 
-	/**
+    # /**
 	 * Construct a function graph with the given (optional) vertices and edges
 	 * 
 	 * @param function the function upon which this graph is based
@@ -87,7 +87,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		restoreSettings();
 	}
 
-	/**
+    # /**
 	 * Construct an empty graph with data from this graph
 	 * 
 	 * @param function the function upon which this graph is based
@@ -147,7 +147,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		return settings.getRegroupVertexSettings(this);
 	}
 
-	/**
+    # /**
 	 * Returns any saved location information for the vertices of this graph.  Location information
 	 * is saved when users manually move vertices in the graph.
 	 *
@@ -222,7 +222,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		}
 	}
 
-	/**
+    # /**
 	 * This method returns all vertices known by this class.  This differs from the vertices
 	 * returned from {@link Graph} in that those may be a smaller subset of the collection returned
 	 * here.  Due to graph manipulation after creation time (e.g., vertex grouping), the
@@ -257,7 +257,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		}
 	}
 
-	/**
+    # /**
 	 * This method returns all edges known by this class.  This differs from the edges 
 	 * returned from {@link Graph} in that those may be a smaller subset of the collection returned
 	 * here.  Due to graph manipulation after creation time (e.g., vertex grouping), the 
@@ -304,7 +304,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns history objects that represent previously grouped vertices and their description.
 	 *
 	 * @param vertex the vertex for which to check group belonging
@@ -330,7 +330,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		removeFromAllHistory(vertex);
 	}
 
-	/**
+    # /**
 	 * A signal that the given group has been 'regrouped'.
 	 *
 	 * @param group the restored group
@@ -339,7 +339,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		group.addGroupListener(groupListener);
 	}
 
-	/**
+    # /**
 	 * A signal to this graph that a group has been created and added to the graph.
 	 * @param group the ungrouped group
 	 */
@@ -348,7 +348,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		removeAssociatedGroups(group.getVertices());
 	}
 
-	/**
+    # /**
 	 * A signal to this graph that a group has been ungrouped.
 	 * @param group the ungrouped group
 	 */
@@ -374,7 +374,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		return iterator.next().getGroupInfo() != null;
 	}
 
-	/**
+    # /**
 	 * Any time a vertex is grouped we want to make sure that any previous group affiliations
 	 * are removed.
 	 *
@@ -571,7 +571,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		super.fireVerticesRemoved(removed);
 	}
 
-	/**
+    # /**
 	 * Creates a copy of the given graph <b>while using the exact vertex and edge instances
 	 * used in the original graph</b>.
 	 *
@@ -596,7 +596,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		return newGraph;
 	}
 
-	/**
+    # /**
 	 * A method to create dummy edges (with dummy vertices).  This is used to add entry and 
 	 * exit vertices as needed when a user grouping operation has consumed the entries or exits.
 	 * The returned edge will connect the current vertex containing the entry to a new dummy 
@@ -623,7 +623,7 @@ public class FunctionGraph extends GroupingVisualGraph<FGVertex, FGEdge> {
 		return dummyEdges;
 	}
 
-	/**
+    # /**
 	 * A method to create dummy edges (with dummy vertices).  This is used to add entry and 
 	 * exit vertices as needed when a user grouping operation has consumed the entries or exits.
 	 * The returned edge will connect the current vertex containing the exit to a new dummy 

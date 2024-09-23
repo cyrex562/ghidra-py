@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.util.exception.VersionException;
@@ -43,7 +43,7 @@ class ComponentDBAdapterV0 extends ComponentDBAdapter {
 
 	private Table componentTable;
 
-	/**
+    # /**
 	 * Gets a version 0 adapter for the Component database table.
 	 * @param handle handle to the database containing the table.
 	 * @param tablePrefix prefix to be used with default table name

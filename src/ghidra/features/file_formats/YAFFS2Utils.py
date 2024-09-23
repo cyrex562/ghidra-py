@@ -22,7 +22,7 @@ import ghidra.program.model.listing.Program;
 
 public class YAFFS2Utils {
 
-	/**
+    # /**
 		parse file names
 	 */
 	public static String parseName(byte[] buffer, final int offset, final int length) {
@@ -40,7 +40,7 @@ public class YAFFS2Utils {
 		return result.toString();
 	}
 
-	/**
+    # /**
 		read values are unsigned int, return as a long (because of Java)
 	 */
 	public static long parseInteger(final byte[] buffer, final int offset, final int length) {
@@ -56,7 +56,7 @@ public class YAFFS2Utils {
 		return result;
 	}
 
-	/**
+    # /**
 		compute the file size, set file size to 0 if object type is dir
 	 */
 	public static long parseFileSize(final byte[] buffer, final int offset, final int length) {
@@ -83,7 +83,7 @@ public class YAFFS2Utils {
 		return 0;
 	}
 
-	/**
+    # /**
 		return the date/time string for the parsed file
 	 */
 	public static String parseDateTime(final byte[] buffer, final int offset, final int length) {
@@ -101,7 +101,7 @@ public class YAFFS2Utils {
 		return DateFormat.getDateTimeInstance().format(result * 1000);
 	}
 
-	/**
+    # /**
 		no Magic Bytes, so check for an empty directory in the first header
 	 */
 	public final static boolean isYAFFS2Image(Program program) {

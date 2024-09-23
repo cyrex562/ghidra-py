@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -31,7 +31,7 @@ public class MethodParametersAttribute extends AbstractAttributeInfo {
 	private byte parameters_count;
 	private MethodParameters[] parameters;
 
-	/**
+    # /**
 	 * Creates a {@code MethodParametersAttribute} object from the current index of
 	 * {@code reader} and advances index.
 	 * @param reader source of bytes
@@ -47,7 +47,7 @@ public class MethodParametersAttribute extends AbstractAttributeInfo {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns information about the parameters of the method
 	 * @return parameter info
 	 */

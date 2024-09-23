@@ -56,7 +56,7 @@ public class GroupVertexFunctionGraphJob extends AbstractGroupingFunctionGraphJo
 // Factory Methods
 //==================================================================================================	
 
-	/**
+    # /**
 	 * Constructor - used when creating a new group
 	 * 
 	 * @param controller the controller of the graph to be ungrouped
@@ -79,7 +79,7 @@ public class GroupVertexFunctionGraphJob extends AbstractGroupingFunctionGraphJo
 		this.isRegroupOperation = isRegroupOperation;
 	}
 
-	/**
+    # /**
 	 * Constructor - used when updating an existing group
 	 * 
 	 * @param controller the controller of the graph to be ungrouped

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -70,7 +70,7 @@ public class C13FileRecord {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the file ID
 	 * @return the file ID
 	 */
@@ -82,7 +82,7 @@ public class C13FileRecord {
 		//return fileId;
 	}
 
-	/**
+    # /**
 	 * Returns the number of lines for the file record
 	 * @return the number of lines
 	 */
@@ -90,7 +90,7 @@ public class C13FileRecord {
 		return nLines;
 	}
 
-	/**
+    # /**
 	 * Returns the length of the block of records
 	 * @return the length
 	 */
@@ -98,7 +98,7 @@ public class C13FileRecord {
 		return lenFileBlock;
 	}
 
-	/**
+    # /**
 	 * Returns the list of line records for the file record
 	 * @return the line records
 	 */

@@ -23,7 +23,7 @@ public class DecompiledFunction {
 	private String signature;
 	private String c;
 
-	/**
+    # /**
 	 * Constructs a new decompiled function.
 	 * @param signature the function signature or prototype (eg, "int foo(double d)")
 	 * @param c the complete C code of the function.
@@ -33,7 +33,7 @@ public class DecompiledFunction {
 		this.c = c;
 	}
 
-	/**
+    # /**
 	 * Returns the function signature or prototype (eg, "int foo(double d)").
 	 * @return the function signature or prototype (eg, "int foo(double d)")
 	 */
@@ -41,7 +41,7 @@ public class DecompiledFunction {
 		return signature;
 	}
 
-	/**
+    # /**
 	 * Returns the complete C code of the function.
 	 * @return the complete C code of the function
 	 */

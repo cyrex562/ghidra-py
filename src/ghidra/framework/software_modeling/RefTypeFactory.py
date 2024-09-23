@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.symbol;
 
 import java.util.HashSet;
@@ -29,8 +29,8 @@ import ghidra.program.model.scalar.Scalar;
 import ghidra.util.datastruct.IntObjectHashtable;
 
 # /**
- * Factory class to create RefType objects.
- */
+# * Factory class to create RefType objects.
+# */
 @SuppressWarnings("deprecation")
 public class RefTypeFactory {
 
@@ -133,7 +133,7 @@ public class RefTypeFactory {
 		return extRefTypes;
 	}
 
-	/**
+    # /**
 	 * Get static instance of the specified RefType/FlowType
 	 * @param type ref-type value
 	 * @return ref-type instance
@@ -147,7 +147,7 @@ public class RefTypeFactory {
 		return rt;
 	}
 
-	/**
+    # /**
 	 * Get the default stack data RefType for the specified code-unit/opIndex and register
 	 * @param cu the code unit
 	 * @param reg the register
@@ -179,7 +179,7 @@ public class RefTypeFactory {
 	private static final long[] MASKS = { 0L, 0x0ffL, 0x0ffffL, 0x0ffffffL, 0x0ffffffffL,
 		0x0ffffffffffL, 0x0ffffffffffffL, 0x0ffffffffffffffL, 0xffffffffffffffffL };
 
-	/**
+    # /**
 	 * Get the default register data RefType for the specified code-unit/opIndex and register
 	 * @param cu the code unit to get the default stack ref type.
 	 * @param opIndex the operand index.
@@ -288,7 +288,7 @@ public class RefTypeFactory {
 		return refType;
 	}
 
-	/**
+    # /**
 	 * Determine default FlowType for a specified instruction and flow destination toAddr.
 	 * @param instr instruction
 	 * @param toAddr flow destination address
@@ -347,7 +347,7 @@ public class RefTypeFactory {
 		return flowType;
 	}
 
-	/**
+    # /**
 	 * Determine default computed FlowType for a specified instruction.  It is assumed
 	 * that all computed flows utilize a register in its destination specification/computation.
 	 * @param instr instruction
@@ -386,7 +386,7 @@ public class RefTypeFactory {
 		return flowType;
 	}
 
-	/**
+    # /**
 	 * Get the default memory flow/data RefType for the specified code unit and opIndex.
 	 * @param cu the code unit
 	 * @param opIndex the op index
@@ -486,7 +486,7 @@ public class RefTypeFactory {
 		return RefType.DATA;
 	}
 
-	/**
+    # /**
 	 * Return default flow-type without terminator
 	 * @param inst the instruction
 	 * @return call/jump flow type or null

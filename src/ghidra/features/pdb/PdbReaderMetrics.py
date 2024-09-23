@@ -27,7 +27,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.type.AbstractMsType;
  */
 public class PdbReaderMetrics {
 
-	/**
+    # /**
 	 * This data is used as we develop this capability, and we could actively use it during
 	 *  normal operations to give feedback towards this continued development.
 	 * <P>
@@ -644,7 +644,7 @@ public class PdbReaderMetrics {
 		knownPrimitives.add(0x06f0);
 		knownPrimitives.add(0x07f0); //From LLVM description
 	}
-	/**
+    # /**
 	 * This list indicates which Symbol Types ({@link AbstractMsSymbol}) have been seen in real
 	 *  data, giving us some confidence as to whether we have parsed them OK or not.  We can set
 	 *  a break point in the method containing the switch statement to trigger whenever we find a
@@ -939,7 +939,7 @@ public class PdbReaderMetrics {
 		pdbAnomalies.add(PdbAnomaly.ITEM_RECORD_NUMBER_HIGH_BIT);
 	}
 
-	/**
+    # /**
 	 * Method to capture data/item type IDs that have not been seen before in development.
 	 * @param dataTypeId The data/item type ID witnessed.
 	 */
@@ -949,7 +949,7 @@ public class PdbReaderMetrics {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to capture symbol type IDs that have not been seen before in development.
 	 * @param symbolTypeId The symbol type ID witnessed.
 	 */
@@ -959,7 +959,7 @@ public class PdbReaderMetrics {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to capture unknown primitive type record numbers.  All primitive record numbers
 	 * should be passed into this, and this method will only determine and log which are unknown.
 	 * @param recNum The record number.
@@ -970,7 +970,7 @@ public class PdbReaderMetrics {
 		}
 	}
 
-	/**
+    # /**
 	 * Return some post-processing metrics on the PDB
 	 * @return {@link String} of pretty output.
 	 */
@@ -1001,7 +1001,7 @@ public class PdbReaderMetrics {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Returns a log of unknown primitive type record numbers.
 	 * @return {@link String} of pretty output message.
 	 */
@@ -1018,7 +1018,7 @@ public class PdbReaderMetrics {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Returns a list of Type/Item IDs that we have not seen in real data while testing.
 	 * @return {@link String} of pretty output message.
 	 */
@@ -1035,7 +1035,7 @@ public class PdbReaderMetrics {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Returns a list of Symbol IDs that we have not seen in real data while testing.
 	 * @return {@link String} of pretty output message.
 	 */
@@ -1052,7 +1052,7 @@ public class PdbReaderMetrics {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Reports the metrics captured by this class.
 	 * @return a {@link String} report of the metrics captured.
 	 */
@@ -1066,7 +1066,7 @@ public class PdbReaderMetrics {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Anomaly from the PDB specification.  These might indicate a toolchain other than MSFT VS.
 	 */
 	private enum PdbAnomaly {

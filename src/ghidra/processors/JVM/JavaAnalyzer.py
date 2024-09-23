@@ -161,7 +161,7 @@ public class JavaAnalyzer extends AbstractJavaAnalyzer implements AnalysisWorker
 		}
 	}
 
-	/**
+    # /**
 	 * Create datatypes for all classes mentioned in the constant pool
 	 * @param program program file
 	 * @param classFile ClassFileJava associated with {@code program} 
@@ -665,7 +665,7 @@ public class JavaAnalyzer extends AbstractJavaAnalyzer implements AnalysisWorker
 		return cmd.applyTo(program);
 	}
 
-	/**
+    # /**
 	 * Sets the name, return type, and parameter types of a method using the information in the constant pool.
 	 * Also overrides the signatures on all method invocations made within the method body.
 	 * @param function - the function (method) 

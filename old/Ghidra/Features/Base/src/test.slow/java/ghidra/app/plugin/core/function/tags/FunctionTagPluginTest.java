@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.function.tags;
 import static org.junit.Assert.*;
 
 import java.awt.Dimension;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.AbstractButton;

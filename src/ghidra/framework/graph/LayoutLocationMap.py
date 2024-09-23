@@ -120,7 +120,7 @@ public class LayoutLocationMap<V, E> {
 		return column;
 	}
 
-	/**
+    # /**
 	 * Returns the columns in this location map, sorted from lowest index to highest 
 	 * 
 	 * @return the columns in this location map, sorted from lowest index to highest
@@ -134,7 +134,7 @@ public class LayoutLocationMap<V, E> {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Returns the rows in this location map, sorted from lowest index to highest 
 	 * 
 	 * @return the rows in this location map, sorted from lowest index to highest

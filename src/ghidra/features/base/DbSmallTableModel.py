@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.debug.dbtable;
 
-import java.io.IOException;
+
 
 import db.*;
 import docking.widgets.table.TableColumnDescriptor;

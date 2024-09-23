@@ -1,6 +1,6 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.btree;
 
 public final class BTreeTypes {

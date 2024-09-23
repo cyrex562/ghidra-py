@@ -73,7 +73,7 @@ class PdbDataTypeParser {
 			AbstractIntegerDataType.getUnsignedDataType(8, programDataTypeMgr)));
 	}
 
-	/**
+    # /**
 	 * Get the target program's datatype manager
 	 * @return program's datatype manager
 	 */
@@ -86,7 +86,7 @@ class PdbDataTypeParser {
 			DataTypeConflictHandler.REPLACE_EMPTY_STRUCTS_OR_RENAME_AND_ADD_HANDLER, monitor);
 	}
 
-	/**
+    # /**
 	 * Ensures that the data type managers are used in a particular order.
 	 * The order is as follows:
 	 *    1) the program's data type manager
@@ -163,7 +163,7 @@ class PdbDataTypeParser {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * Find a data-type by name in a case-sensitive manner.
 	 * @param monitor task monitor
 	 * @param dataTypeName data-type name (may be qualified by its namespace)
@@ -310,7 +310,7 @@ class PdbDataTypeParser {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * Set flag which indicates bitfield parsed from data is missing bit-offset which is
 	 * indicative to old XML data.
 	 */
@@ -318,7 +318,7 @@ class PdbDataTypeParser {
 		bitfieldHasMissingBitOffset = true;
 	}
 
-	/**
+    # /**
 	 * Determine if one or more bitfield specifications were missing bit-offset data.
 	 * @return true if bit-offset data was missing, else false
 	 */

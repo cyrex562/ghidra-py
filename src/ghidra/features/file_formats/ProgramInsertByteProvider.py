@@ -16,7 +16,7 @@
 package ghidra.file.formats.dump.cmd;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.program.model.listing.ProgramFragment;
@@ -52,7 +52,7 @@ public class ProgramInsertByteProvider implements ByteProvider {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Return maximum length since actual length is unknown
 	 * 
 	 * @return maximum possible length

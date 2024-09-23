@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -26,7 +26,7 @@ import ghidra.util.exception.DuplicateNameException;
 public class Ext4DirEntry2 extends Ext4DirEntry implements StructConverter {
 	protected byte file_type;
 
-	/**
+    # /**
 	 * Reads a Ext4DirEntry2 from the stream.
 	 * 
 	 * @param reader BinaryReader to read from

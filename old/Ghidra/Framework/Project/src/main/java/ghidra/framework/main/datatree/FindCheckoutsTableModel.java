@@ -18,7 +18,7 @@
  */
 package ghidra.framework.main.datatree;
 
-import java.io.IOException;
+
 import java.util.Date;
 
 import docking.widgets.table.AbstractDynamicTableColumnStub;

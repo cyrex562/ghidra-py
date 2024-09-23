@@ -1,30 +1,30 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.oldfunction;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.map.AddressMap;
 import ghidra.util.exception.VersionException;
 
 # /**
- * 
- * 
- */
+# * 
+# * 
+# */
 class OldFunctionDBAdapterV1 extends OldFunctionDBAdapter {
 
 	static final String FUNCTIONS_TABLE_NAME = "Functions";
@@ -60,7 +60,7 @@ class OldFunctionDBAdapterV1 extends OldFunctionDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionDBAdapter#getFunctionRecord(long)
 	 */
 	@Override
@@ -68,7 +68,7 @@ class OldFunctionDBAdapterV1 extends OldFunctionDBAdapter {
 		return table.getRecord(functionKey);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionDBAdapter#iterateFunctionRecords()
 	 */
 	@Override
@@ -76,14 +76,14 @@ class OldFunctionDBAdapterV1 extends OldFunctionDBAdapter {
 		return table.iterator();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionDBAdapter#translateRecord(ghidra.framework.store.db.DBRecord)
 	 */
 	public DBRecord translateRecord(DBRecord oldRecord) {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionDBAdapter#getFunctionRecordCount()
 	 */
 	@Override
@@ -91,7 +91,7 @@ class OldFunctionDBAdapterV1 extends OldFunctionDBAdapter {
 		return table.getRecordCount();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.function.FunctionDBAdapter#deleteTable(ghidra.framework.store.db.DBHandle)
 	 */
 	@Override

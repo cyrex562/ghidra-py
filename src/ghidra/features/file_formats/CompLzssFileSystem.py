@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.complzss;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.List;
 

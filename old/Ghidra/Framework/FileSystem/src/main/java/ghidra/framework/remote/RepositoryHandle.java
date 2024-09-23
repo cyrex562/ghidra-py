@@ -16,7 +16,7 @@
 package ghidra.framework.remote;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 
 import db.buffers.ManagedBufferFileHandle;
 import ghidra.framework.store.*;

@@ -17,7 +17,7 @@ package ghidra.feature.vt.api.db;
 
 import static ghidra.feature.vt.api.main.VTAssociationStatus.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -71,7 +71,7 @@ public class AssociationDatabaseManager implements VTAssociationManager {
 		markupItemCache = new DBObjectCache<>(10);
 	}
 
-	/**
+    # /**
 	 * Called when an existing session has been initialized with its programs.  This is not called
 	 * when a new session is created.
 	 */
@@ -635,7 +635,7 @@ public class AssociationDatabaseManager implements VTAssociationManager {
 		acceptedStatusCache.dispose();
 	}
 
-	/**
+    # /**
 	 * A cache of accepted associations that allow this class to check isBlocked() quickly.  This
 	 * was added to fix a major performance bottleneck.
 	 * <p>
@@ -763,7 +763,7 @@ public class AssociationDatabaseManager implements VTAssociationManager {
 			return false;
 		}
 
-		/**
+	    # /**
 		 * This is called by the Swing thread.  We use a task monitor to show progress.  This method
 		 * will load associations without acquiring a lock, with the assumption that while the
 		 * session is being loaded, no other threads will be running that may require the use of
@@ -774,7 +774,7 @@ public class AssociationDatabaseManager implements VTAssociationManager {
 				monitor -> doLoadAcceptedAssociations(monitor));
 		}
 
-		/**
+	    # /**
 		 * Loads the cache of accepted associations.  This method assumes locking is handled by the
 		 * client.
 		 */

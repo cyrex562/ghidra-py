@@ -35,7 +35,7 @@ public class OemDefinableString2MsType extends AbstractMsType {
 	private List<RecordNumber> recordNumbers = new ArrayList<>();
 	private byte[] remainingBytes;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

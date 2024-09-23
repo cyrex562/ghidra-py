@@ -31,7 +31,7 @@ public class WrappedDataType {
 	private final boolean isNoType;
 	private final DataType dataType;
 
-	/**
+    # /**
 	 * Constructed wrapped datatype
 	 * @param dataType datatype
 	 * @param isZeroLengthArray true if datatype corresponds to a zero-length 
@@ -46,14 +46,14 @@ public class WrappedDataType {
 		this.isNoType = isNoType;
 	}
 
-	/**
+    # /**
 	 * @return datatype
 	 */
 	public DataType getDataType() {
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * @return true if datatype corresponds to a zero-length array 
 	 * which can not directly be represented as an Array datatype, 
 	 * else false for all other cases.
@@ -67,7 +67,7 @@ public class WrappedDataType {
 		return isZeroLengthArray;
 	}
 
-	/**
+    # /**
 	 * @return true if wrapped type corresponds to NoType as
 	 * used by PDB forced to have a size of 1-byte.
 	 */

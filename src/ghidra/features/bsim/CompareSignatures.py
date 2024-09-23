@@ -17,7 +17,7 @@ package ghidra.features.bsim.query;
 
 // Read in a set of precomputed signature files, generate a similarity score for each pair of functions
 // listed in the files, if the similarity exceeds a threshold, print out a line to a file named "output"
-import java.io.*;
+
 import java.text.NumberFormat;
 import java.util.Iterator;
 

@@ -19,7 +19,7 @@ import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.TaskMonitorAdapter;
 
-import java.io.*;
+
 import java.util.jar.JarOutputStream;
 import java.util.zip.ZipEntry;
 
@@ -31,7 +31,7 @@ public class JarWriter {
 	protected JarOutputStream jarOut;
 	private String[] excludedExtensions;
 
-	/**
+    # /**
 	 * @param jarOut the the jar file output stream the zip entries are
 	 * to be written to.
 	 */
@@ -44,7 +44,7 @@ public class JarWriter {
 		this.excludedExtensions = excludedExtensions;
 	}
 
-	/**
+    # /**
 	 * Outputs an individual file to the jar.
 	 * 
 	 * @param baseFile the file to be output
@@ -80,7 +80,7 @@ public class JarWriter {
 		}
 	}
 
-	/**
+    # /**
 	 * Outputs an individual entry to the jar.  The data input stream will be read until and EOF is read.
 	 * @param path entry path within the jar file
 	 * @param time entry time
@@ -121,7 +121,7 @@ public class JarWriter {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Recursively outputs a directory to the jar output stream
 	 * If baseFile is a file then it is simply output to the jar.
 	 * 
@@ -158,14 +158,14 @@ public class JarWriter {
 		return succeeded;
 	}
 
-	/**
+    # /**
 	 * Return the jar output stream being used by this JarWriter.
 	 */
 	public JarOutputStream getJarOutputStream() {
 		return jarOut;
 	}
 
-	/**
+    # /**
 	 * Simple test for the JarWriter
 	 * @param args args[0] is the source directory, args[1] is the output filename
 	 */

@@ -35,7 +35,7 @@ public class DiffGoToService implements GoToService {
 	private ProgramDiffPlugin diffPlugin;
 	private GoToHelper helper;
 
-	/**
+    # /**
 	 * Creates a service that provides the ability to go to a particular address or location 
 	 * in the right-hand listing of the Diff.
 	 * @param goToService basic GoToService for the left-side listing that this will override
@@ -175,7 +175,7 @@ public class DiffGoToService implements GoToService {
 			"Can't navigate from the Diff program to another program.");
 	}
 
-	/**
+    # /**
 	 * Go to the specified program location in the right hand Diff listing.
 	 * @param loc go to this location
 	 * @return true if the listing went to the location.
@@ -194,7 +194,7 @@ public class DiffGoToService implements GoToService {
 		return went;
 	}
 
-	/**
+    # /**
 	 * Go to the specified address in the right hand Diff listing.
 	 * @param addr go to this address
 	 * @return true if the listing went to the address.
@@ -209,7 +209,7 @@ public class DiffGoToService implements GoToService {
 		return went;
 	}
 
-	/**
+    # /**
 	 * Saving the first program's location (the left listing) in the navigation history.
 	 * The second program's location (the right listing) isn't saved since the navigation is
 	 * relative to a program in the tool's main listing. Also, if the second program's

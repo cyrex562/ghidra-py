@@ -36,7 +36,7 @@ public class EHCatchHandlerTypeModifier {
 
 	private int modifiers;
 
-	/**
+    # /**
 	 * Creates the object for dealing with the adjectives (modifier flags) from an exception handling
 	 * HandlerType data type. It provides methods to check if modifiers are set for a handler type.
 	 * @param modifiers the value of the adjectives (modifier flags) from the HandlerType data type.
@@ -49,7 +49,7 @@ public class EHCatchHandlerTypeModifier {
 		return (modifiers & bitToCheck) == bitToCheck;
 	}
 
-	/**
+    # /**
 	 * Determine if the handler type referenced is a const.
 	 * @return true if the handler type referenced is a const.
 	 */
@@ -57,7 +57,7 @@ public class EHCatchHandlerTypeModifier {
 		return isBitSet(CONST_BIT);
 	}
 
-	/**
+    # /**
 	 * Determine if the handler type referenced is volatile.
 	 * @return true if the handler type referenced is volatile.
 	 */
@@ -65,7 +65,7 @@ public class EHCatchHandlerTypeModifier {
 		return isBitSet(VOLATILE_BIT);
 	}
 
-	/**
+    # /**
 	 * Determine if the handler type referenced is unaligned.
 	 * @return true if the handler type referenced is unaligned.
 	 */
@@ -73,7 +73,7 @@ public class EHCatchHandlerTypeModifier {
 		return isBitSet(UNALIGNED_BIT);
 	}
 
-	/**
+    # /**
 	 * Determine if the catch type is by reference.
 	 * @return true if the catch type is by reference.
 	 */
@@ -81,7 +81,7 @@ public class EHCatchHandlerTypeModifier {
 		return isBitSet(REFERENCE_BIT);
 	}
 
-	/**
+    # /**
 	 * Determine if the catch function can possibly resume.
 	 * @return true if the function is resumable.
 	 */
@@ -89,7 +89,7 @@ public class EHCatchHandlerTypeModifier {
 		return isBitSet(RESUMABLE_BIT);
 	}
 
-	/**
+    # /**
 	 * Determine if the exception handler is a standard C++ all catch(...).
 	 * @return true if the function is a catch(...).
 	 */
@@ -97,7 +97,7 @@ public class EHCatchHandlerTypeModifier {
 		return isBitSet(ALL_CATCH_BIT);
 	}
 
-	/**
+    # /**
 	 * Determine if this exception handler is complus.
 	 * @return true if the handler is complus.
 	 */

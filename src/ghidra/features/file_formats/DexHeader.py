@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex.format;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -169,7 +169,7 @@ public class DexHeader implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * According to dex_file.h, the map offset is relative to data offset
 	 * <br>
 	 * https://android.googlesource.com/platform/art/+/refs/heads/master/libdexfile/dex/dex_file.h
@@ -223,7 +223,7 @@ public class DexHeader implements StructConverter {
 		return version;
 	}
 
-	/**
+    # /**
 	 * Adler32 checksum of the rest of the file (everything but magic and this field);
 	 * used to detect file corruption 
 	 * @return the checksum
@@ -232,7 +232,7 @@ public class DexHeader implements StructConverter {
 		return checksum;
 	}
 
-	/**
+    # /**
 	 * SHA-1 signature (hash) of the rest of the file (everything but magic, checksum, and this field); 
 	 * used to uniquely identify files 
 	 * @return the signature
@@ -241,7 +241,7 @@ public class DexHeader implements StructConverter {
 		return signature;
 	}
 
-	/**
+    # /**
 	 * Size of the entire file (including the header), in bytes 
 	 * @return the file size in bytes
 	 */
@@ -249,7 +249,7 @@ public class DexHeader implements StructConverter {
 		return fileSize;
 	}
 
-	/**
+    # /**
 	 * Size of the header (this entire section), in bytes. 
 	 * This allows for at least a limited amount of 
 	 * backwards/forwards compatibility without invalidating the format. 
@@ -259,7 +259,7 @@ public class DexHeader implements StructConverter {
 		return headerSize;
 	}
 
-	/**
+    # /**
 	 * Endianness tag. Either "ENDIAN_CONSTANT or REVERSE_ENDIAN_CONSTANT". 
 	 * @return the endianness
 	 */
@@ -355,7 +355,7 @@ public class DexHeader implements StructConverter {
 		return linkSize;
 	}
 
-	/**
+    # /**
 	 * NOTE: For CDEX files, this value is relative to DataOffset in DexHeader
 	 * Return the MAP offset.
 	 * @return the MAP offset

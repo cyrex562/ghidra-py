@@ -64,7 +64,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 	protected final AssemblyPatternBlock context;
 	protected final AssemblyContextGraph ctxGraph;
 
-	/**
+    # /**
 	 * Construct a resolver for the given parse tree
 	 * 
 	 * @param lang
@@ -90,7 +90,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		return factory;
 	}
 
-	/**
+    # /**
 	 * Resolve the tree for the given parameters
 	 * 
 	 * @return a set of resolutions (encodings and errors)
@@ -130,7 +130,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		return results;
 	}
 
-	/**
+    # /**
 	 * If applicable, get the {@code I => I} production of the grammar
 	 * 
 	 * @return the production
@@ -143,7 +143,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		return rec;
 	}
 
-	/**
+    # /**
 	 * If necessary, resolve recursive constructors at the root, usually for prefixes
 	 * 
 	 * <p>
@@ -188,7 +188,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		}
 	}
 
-	/**
+    # /**
 	 * Attempt a second time to solve operands and context changes
 	 * 
 	 * <p>
@@ -222,7 +222,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		});
 	}
 
-	/**
+    # /**
 	 * Filter out results whose context do not match that requested
 	 * 
 	 * @param temp the results whose contexts have not yet been checked
@@ -243,7 +243,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		});
 	}
 
-	/**
+    # /**
 	 * Filter out results that would certainly be disassembled differently than assembled
 	 * 
 	 * <p>
@@ -259,7 +259,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		return temp.apply(factory, rp -> rp.checkNotForbidden());
 	}
 
-	/**
+    # /**
 	 * Filter out results that get disassembled differently than assembled
 	 * 
 	 * <p>
@@ -289,7 +289,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		});
 	}
 
-	/**
+    # /**
 	 * Get the state generator for a given operand and parse tree node
 	 * 
 	 * @param opSym the operand symbol
@@ -314,7 +314,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		throw new AssertionError();
 	}
 
-	/**
+    # /**
 	 * Get the state generator for a hidden operand
 	 * 
 	 * @param opSym the operand symbol
@@ -330,7 +330,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		return new AssemblyNopStateGenerator(this, opSym, fromLeft);
 	}
 
-	/**
+    # /**
 	 * Apply a constructor pattern
 	 * 
 	 * <p>
@@ -358,7 +358,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 				.collect(Collectors.toCollection(factory::newAssemblyResolutionResults));
 	}
 
-	/**
+    # /**
 	 * TODO: This is currently used only for resolving recursion. Could this be factored with
 	 * {@link AssemblyConstructState#resolveMutations(AssemblyResolvedPatterns, Collection)}?
 	 */
@@ -375,7 +375,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		});
 	}
 
-	/**
+    # /**
 	 * TODO: This is currently used only for resolving recursion. Could this be factored with
 	 * {@link AssemblyConstructState#resolvePatterns(AssemblyResolvedPatterns, Collection)}?
 	 */
@@ -419,7 +419,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		});
 	}
 
-	/**
+    # /**
 	 * Apply constructors as indicated by a path returned by the context resolution graph
 	 * 
 	 * <p>
@@ -461,7 +461,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		return results;
 	}
 
-	/**
+    # /**
 	 * TODO: This is currently used only for resolving recursion. It seems it's missing from the
 	 * refactor?
 	 */
@@ -496,7 +496,7 @@ public abstract class AbstractAssemblyTreeResolver<RP extends AssemblyResolvedPa
 		return res;
 	}
 
-	/**
+    # /**
 	 * Compute the offset of an operand encoded in the instruction block
 	 * 
 	 * <p>

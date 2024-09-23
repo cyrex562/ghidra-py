@@ -27,7 +27,7 @@ import ghidra.program.model.symbol.Reference;
  */
 public class DataReferenceProgramCorrelator extends VTAbstractReferenceProgramCorrelator {
 
-	/**
+    # /**
 	 * Data Reference Correlator class constructor.
 	 * @param sourceProgram The source {@code Program}.
 	 * @param sourceAddressSet The {@code AddressSetView} for the source program.

@@ -46,7 +46,7 @@ public class H2FileFunctionDatabase extends AbstractSQLFunctionDatabase<Base64Ve
 	private H2VectorTable vectorTable;
 	private VectorStore vectorStore;
 
-	/**
+    # /**
 	 * Constructor used to connect to an existing H2 file database
 	 * @param bsimURL local file URL for H2 database
 	 */
@@ -54,7 +54,7 @@ public class H2FileFunctionDatabase extends AbstractSQLFunctionDatabase<Base64Ve
 		this(BSimH2FileDBConnectionManager.getDataSource(bsimURL));
 	}
 
-	/**
+    # /**
 	 * Constructor used to connect to an existing H2 file database
 	 * @param serverInfo local file info for H2 database
 	 */
@@ -62,7 +62,7 @@ public class H2FileFunctionDatabase extends AbstractSQLFunctionDatabase<Base64Ve
 		this(BSimH2FileDBConnectionManager.getDataSource(serverInfo));
 	}
 
-	/**
+    # /**
 	 * Constructor used to connect to an existing H2 file database
 	 * @param ds local file H2 data source
 	 */
@@ -120,7 +120,7 @@ public class H2FileFunctionDatabase extends AbstractSQLFunctionDatabase<Base64Ve
 		}
 	}
 
-	/**
+    # /**
 	 * Create vector map which maps vector ID to {@link VectorStoreEntry}
 	 * @return vector map
 	 * @throws SQLException if error occurs while reading map data

@@ -54,7 +54,7 @@ public class StringIntHashtable implements Serializable {
         values = new int[capacity];
     }
 
-	/**
+    # /**
 	 * Returns an iterator over the strings in 
 	 * this hash table.
 	 */
@@ -117,7 +117,7 @@ public class StringIntHashtable implements Serializable {
         indexer.clear();
     }
 
-	/**
+    # /**
 	 * Return true if the given key is in the hashtable.
 	 * @param key the key whose presence in this map is to be tested.
 	 */

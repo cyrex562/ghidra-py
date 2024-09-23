@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -103,13 +103,13 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 
 	private static final int MIN_HEIGHT = 600;
 
-	/**
+    # /**
 	 * Preference name for whether to show the "What's New" help page when the
 	 * Ghidra Project Window is displayed.
 	 */
 	private final static String GHIDRA_SHOW_WHATS_NEW = "GhidraShowWhatsNew";
 
-	/**
+    # /**
 	 * Window state preference for the location of the divider for the split
 	 * pane in the Ghidra Project Window. The divider is visible when another
 	 * project view is opened.
@@ -134,7 +134,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 	private WindowListener windowListener;
 	private DockingAction configureToolAction;
 
-	/**
+    # /**
 	 * Construct a new Ghidra Project Window.
 	 *
 	 * @param pm project manager
@@ -288,7 +288,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		return StringUtils.isBlank(version);
 	}
 
-	/**
+    # /**
 	 * Add those plugins that implement the ApplicationLevelPlugin interface and have a
 	 * RELEASED status and not example category.
 	 */
@@ -329,7 +329,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		showComponentHeader(compProvider, false);
 	}
 
-	/**
+    # /**
 	 * Get the preferred default tool launch mode
 	 * @return default tool launch mode
 	 */
@@ -415,7 +415,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		return super.canClose() && plugin.closeActiveProject();
 	}
 
-	/**
+    # /**
 	 * Set the active project.
 	 *
 	 * @param project may be null if there is no active project
@@ -432,7 +432,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		firePluginEvent(new ProjectPluginEvent(getClass().getSimpleName(), project));
 	}
 
-	/**
+    # /**
 	 * Checks to see if the previous project should be restored
 	 *
 	 * @return true if the previous project should be restored; otherwise, false
@@ -441,7 +441,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		return shouldRestorePreviousProject;
 	}
 
-	/**
+    # /**
 	 * Add the given project listener.
 	 *
 	 * @param l listener to add
@@ -450,7 +450,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		listeners.add(l);
 	}
 
-	/**
+    # /**
 	 * Remove the given project listener.
 	 *
 	 * @param l listener to remove
@@ -459,7 +459,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		listeners.remove(l);
 	}
 
-	/**
+    # /**
 	 * NOTE: do not call this from a non-Swing thread
 	 *
 	 * @param tool the tool
@@ -496,7 +496,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Check in the given domain file.
 	 *
 	 * @param tool tool that has the domain file opened
@@ -506,7 +506,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		checkIn(tool, List.of(domainFile), tool.getToolFrame());
 	}
 
-	/**
+    # /**
 	 * Check in the list of domain files.
 	 *
 	 * @param tool tool that has the domain files opened
@@ -555,7 +555,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Merge the latest version in the repository with the given checked out
 	 * domain file. Upon completion of the merge, the domain file appears as
 	 * though the latest version was checked out.
@@ -571,7 +571,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		merge(tool, list, taskListener);
 	}
 
-	/**
+    # /**
 	 * Merge the latest version (in the repository) of each checked out file in
 	 * fileList. Upon completion of the merge, the domain file appears as though
 	 * the latest version was checked out.
@@ -708,7 +708,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		return toolTemplate;
 	}
 
-	/**
+    # /**
 	 * Get project listeners.
 	 *
 	 * @return ProjectListener[]
@@ -732,7 +732,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		plugin.readDataState(saveState);
 	}
 
-	/**
+    # /**
 	 * Refresh the plugins in the Ghidra Project Window based on what is contained in the given XML
 	 * Element.
 	 *
@@ -788,7 +788,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the int value for the given string.
 	 *
 	 * @param value the string value to parse
@@ -807,7 +807,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		return defaultValue;
 	}
 
-	/**
+    # /**
 	 * Check the "What's New" preference; if it has not been set, then show the
 	 * "What's New" help page. This should only happen if the preference was
 	 * never set.
@@ -895,7 +895,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 			addWorkPanel(buildWorkPanel());
 		}
 
-		/**
+	    # /**
 		 * Need to override this method so we can stop the file watcher when the
 		 * dialog is closed.
 		 */
@@ -906,7 +906,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 			}
 		}
 
-		/**
+	    # /**
 		 * Need to override this method so we can stop the file watcher when the
 		 * dialog is closed.
 		 */
@@ -953,7 +953,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Task to merge latest version of a domain file into the checked out
 	 * version.
 	 */
@@ -963,7 +963,7 @@ public class FrontEndTool extends PluginTool implements OptionsChangeListener {
 		private TaskListener taskListener;
 		private boolean wasCanceled;
 
-		/**
+	    # /**
 		 * Construct a new MergeTask.
 		 *
 		 * @param tool tool that has the domain files open

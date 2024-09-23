@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.headless;
 
-import java.io.*;
+
 
 import ghidra.util.ErrorLogger;
 

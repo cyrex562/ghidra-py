@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.analysis;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.Date;
 
 import ghidra.app.services.*;
@@ -174,7 +174,7 @@ public class PdbUniversalAnalyzer extends AbstractAnalyzer {
 		return doAnalysis(program, pdbFile, pdbReaderOptions, pdbApplicatorOptions, log, monitor);
 	}
 
-	/**
+    # /**
 	 * Initializes and calls the methods of the PdbApplicator pertaining to the various phases
 	 *  of PDB analysis.  These methods can be called via scheduled background commands set with
 	 *  the appropriate analysis priorities to allow the work to be done at the appropriate time
@@ -296,7 +296,7 @@ public class PdbUniversalAnalyzer extends AbstractAnalyzer {
 		log.setStatus(msg);
 	}
 
-	/**
+    # /**
 	 * Sets the PDB file that will be used by the analyzer when it is next invoked
 	 * on the specified program.
 	 * <p>
@@ -311,7 +311,7 @@ public class PdbUniversalAnalyzer extends AbstractAnalyzer {
 		PdbAnalyzerCommon.setPdbFileOption(NAME, program, pdbFile);
 	}
 
-	/**
+    # /**
 	 * Sets the "allow untrusted" option that will be used by the analyzer when it is next invoked
 	 * on the specified program.
 	 * <p>
@@ -328,7 +328,7 @@ public class PdbUniversalAnalyzer extends AbstractAnalyzer {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * A background command that performs additional PDB analysis after after other analysis
 	 *  works on function internals.  The first phase must have been run, as it reads the PDB
 	 *  and processes data types, retaining the information needed for this step.  Not what all
@@ -376,7 +376,7 @@ public class PdbUniversalAnalyzer extends AbstractAnalyzer {
 		}
 	}
 
-	/**
+    # /**
 	 * A background command that performs final PDB analysis reporting.
 	 */
 	private static class PdbReportingBackgroundCommand extends BackgroundCommand<Program> {

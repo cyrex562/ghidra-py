@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.gnu;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -92,7 +92,7 @@ public class GnuDemanglerParser {
 	private static final Pattern UNNECESSARY_PARENS_PATTERN =
 		Pattern.compile("\\s*(?:const){0,1}\\((.*)\\)\\s*");
 
-	/**
+    # /**
 	 * Captures the contents of a varargs parameter that is inside of parentheses.
 	 *
 	 * Sample:  (NS1::type&&)...
@@ -252,7 +252,7 @@ public class GnuDemanglerParser {
 	 */
 	private static final Pattern UNNAMED_TYPE_PATTERN = Pattern.compile("(\\{unnamed type#\\d+})");
 
-	/**
+    # /**
 	 * Sample:	template parameter object for namespace::StringLiteral<38ul>{char [38]{(char)69, (char)101, ... }}
 	 * 
 	 * Pattern: (text) { (array type) [size] { array contents } }
@@ -302,7 +302,7 @@ public class GnuDemanglerParser {
 	private static final Pattern GLOBAL_CTOR_DTOR_FOR_PATTERN =
 		Pattern.compile("(global (constructors|destructors) keyed to )(.+)");
 
-	/**
+    # /**
 	 * The c 'decltype' keyword pattern
 	 */
 	private static final Pattern DECLTYPE_RETURN_TYPE_PATTERN =
@@ -352,7 +352,7 @@ public class GnuDemanglerParser {
 		return Pattern.compile(operatorPrefix + parameters + trailing);
 	}
 
-	/**
+    # /**
 	 * Pattern to catch literal strings of the form:
 	 *
 	 * 		-1l
@@ -362,7 +362,7 @@ public class GnuDemanglerParser {
 	 */
 	private static final Pattern LITERAL_NUMBER_PATTERN = Pattern.compile("-*\\d+[ul]{0,1}");
 
-	/**
+    # /**
 	 * Pattern to identify a legacy rust string that contains its hash id suffix and capture the
 	 * non-hash portion.
 	 * 
@@ -383,7 +383,7 @@ public class GnuDemanglerParser {
 	private String mangledSource;
 	private String demangledSource;
 
-	/**
+    # /**
 	 * Parses the given demangled string and creates a {@link DemangledObject}
 	 *
 	 * @param mangled the original mangled text
@@ -396,7 +396,7 @@ public class GnuDemanglerParser {
 		return parse(mangled, demangled, true);
 	}
 
-	/**
+    # /**
 	 * Parses the given demangled string and creates a {@link DemangledObject}
 	 *
 	 * @param mangled the original mangled text
@@ -667,7 +667,7 @@ public class GnuDemanglerParser {
 		return item;
 	}
 
-	/**
+    # /**
 	 * Removes spaces from unwanted places.  For example, all spaces internal to templates and
 	 * parameter lists will be removed.   Also, other special cases may be handled, such as when
 	 * the 'unnamed type' construct is found.
@@ -693,7 +693,7 @@ public class GnuDemanglerParser {
 		return text.substring(0, i + 1);
 	}
 
-	/**
+    # /**
 	 * This method separates the parameters as strings.
 	 * This is more complicated then one might initially think.
 	 * Reason being, you need to take into account nested templates
@@ -800,7 +800,7 @@ public class GnuDemanglerParser {
 		return parameters;
 	}
 
-	/**
+    # /**
 	 * This method converts each parameter string into
 	 * actual DemangledDataType objects.
 	 */
@@ -1185,7 +1185,7 @@ public class GnuDemanglerParser {
 		//@formatter:on
 	}
 
-	/**
+    # /**
 	 * Scans the given string from the given offset looking for a balanced {@code close}
 	 * character.   This algorithm will not report a match for the end character until the
 	 * {@code open} character has first been found.   This allows clients to scan from anywhere
@@ -1221,7 +1221,7 @@ public class GnuDemanglerParser {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Scans the given string from the given offset looking for a balanced {@code open}
 	 * character.   This algorithm will not report a match for the open character until the
 	 * {@code end} character has first been found.   This allows clients to scan from anywhere
@@ -1265,7 +1265,7 @@ public class GnuDemanglerParser {
 		return findBalancedStart(string, templateEnd, '<', '>');
 	}
 
-	/**
+    # /**
 	 * Walks backward from the given start position to find the next namespace separator.  This
 	 * allows clients to determine if a given position is inside of a namespace.
 	 *
@@ -1498,7 +1498,7 @@ public class GnuDemanglerParser {
 		return variable;
 	}
 
-	/**
+    # /**
 	 * Converts the list of names into a namespace demangled type.
 	 * Given names = { "A", "B", "C" }, which represents "A::B::C".
 	 * The following will be created {@literal "Namespace{A}->Namespace{B}->Namespace{C}"}
@@ -2176,7 +2176,7 @@ public class GnuDemanglerParser {
 		}
 	}
 
-	/**
+    # /**
 	 * An object that will parse a function signature string into parts: return type, name,
 	 * and parameters.  {@link #isValidFunction()} can be called to check if the given sting is
 	 * indeed a function signature.
@@ -2247,7 +2247,7 @@ public class GnuDemanglerParser {
 		}
 	}
 
-	/**
+    # /**
 	 * A class to handle whitespace manipulation within demangled strings.  This class will
 	 * remove bad spaces, which is all whitespace that is not needed to separate distinct objects
 	 * inside of a demangled string.
@@ -2322,7 +2322,7 @@ public class GnuDemanglerParser {
 			return fixed;
 		}
 
-		/**
+	    # /**
 		 * Returns the original string value that has been 'condensed', which means to remove
 		 * internal spaces
 		 * @return the condensed string
@@ -2347,7 +2347,7 @@ public class GnuDemanglerParser {
 		}
 	}
 
-	/**
+    # /**
 	 * A class that allows us to pass around string content that has had some of its text
 	 * replaced with temporary values.   Clients can also use this class to get back the original
 	 * text.
@@ -2373,7 +2373,7 @@ public class GnuDemanglerParser {
 		}
 	}
 
-	/**
+    # /**
 	 * A string that clients can use to replace specific text patterns
 	 */
 	private class CustomReplacedString extends ReplacedString {
@@ -2399,7 +2399,7 @@ public class GnuDemanglerParser {
 		}
 	}
 
-	/**
+    # /**
 	 * A simple class to replace templates with a temporary placeholder value
 	 */
 	private class TemplatedString extends ReplacedString {
@@ -2458,7 +2458,7 @@ public class GnuDemanglerParser {
 		}
 	}
 
-	/**
+    # /**
 	 * A simple class to replace the text 'lambda' with a temporary placeholder value
 	 */
 	private class LambdaReplacedString extends ReplacedString {

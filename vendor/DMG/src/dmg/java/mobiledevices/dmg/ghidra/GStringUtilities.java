@@ -1,15 +1,15 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.ghidra;
 
 
 /**
- * Class with static methods that deal with string manipulation. 
- */
+# * Class with static methods that deal with string manipulation. 
+# */
 public class GStringUtilities {
 
-	/**
+    # /**
 	 * Converts an integer into a string.
 	 * For example, given an integer 0x41424344,
 	 * the returned string would be "ABCD".

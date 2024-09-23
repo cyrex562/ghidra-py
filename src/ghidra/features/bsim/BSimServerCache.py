@@ -43,7 +43,7 @@ public class BSimServerCache {
 		return databaseInfo;
 	}
 
-	/**
+    # /**
 	 * Get cached {@link LSHVectorFactory} for the active BSim Function Database 
 	 * @return vector factory or null if DB server not set or never connected
 	 */

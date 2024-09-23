@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import java.util.*;
@@ -23,8 +23,8 @@ import ghidra.program.model.listing.Instruction;
 import ghidra.util.exception.AssertException;
 
 # /** 
- * A set of instructions organized as a graph of basic blocks. 
- */
+# * A set of instructions organized as a graph of basic blocks. 
+# */
 public class InstructionSet implements Iterable<InstructionBlock> {
 	private Map<Address, InstructionBlock> blockMap = new HashMap<Address, InstructionBlock>();
 	private AddressRangeObjectMap<InstructionBlock> blockRangeMap =
@@ -38,7 +38,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		addressSet = new AddressSet();
 	}
 
-	/**
+    # /**
 	 * Add an Instruction block to this Instruction Set. 
 	 * If the block is empty it will only be added to the empty-list and will not
 	 * be added to the maps or block iterator
@@ -62,7 +62,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		blockRangeMap.setObject(block.getStartAddress(), block.getMaxAddress(), block);
 	}
 
-	/**
+    # /**
 	 * Returns the non-empty InstructionBlock containing the specified address
 	 * @param address
 	 * @return the InstructionBlock containing the specified address or null if not found
@@ -76,7 +76,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return blockMap.get(address);
 	}
 
-	/**
+    # /**
 	 * Find the first block within this InstructionSet which intersects the specified range.
 	 * This method should be used sparingly since it uses a brute-force search.
 	 * @param min the minimum intersection address
@@ -103,7 +103,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return intersectBlock;
 	}
 
-	/**
+    # /**
 	 * Returns the instruction at the specified address within this instruction set
 	 * @param address
 	 * @return instruction at the specified address within this instruction set or null if not found
@@ -113,7 +113,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return block != null ? block.getInstructionAt(address) : null;
 	}
 
-	/**
+    # /**
 	 * Returns the minimum address for this Instruction set;
 	 * @return the minimum address for this Instruction set;
 	 */
@@ -121,7 +121,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return addressSet.getMinAddress();
 	}
 
-	/**
+    # /**
 	 * Returns the address set that makes up all the instructions contained in this set.
 	 * @return  the address set that makes up all the instructions contained in this set.
 	 */
@@ -134,7 +134,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return addressSet.toString();
 	}
 
-	/**
+    # /**
 	 * Returns the number of instructions in this instruction set.
 	 * @return the number of instructions in this instruction set.
 	 */
@@ -146,7 +146,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return blockMap.containsKey(blockAddr);
 	}
 
-	/**
+    # /**
 	 * Returns true if this instruction set intersects the specified range
 	 * @param minAddress
 	 * @param maxAddress
@@ -156,7 +156,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return addressSet.intersects(minAddress, maxAddress);
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over the blocks in this Instruction set, giving preference to fall
 	 * through flows.  This iterator will not follow any flows from a block that has a conflict.
 	 * If the last block returned from the iterator is marked as a conflict before the next() or
@@ -170,7 +170,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return new BlockIterator();
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all empty blocks which likely contain a conflict error.
 	 * @return empty block iterator
 	 */
@@ -178,7 +178,7 @@ public class InstructionSet implements Iterable<InstructionBlock> {
 		return emptyBlocks.iterator();
 	}
 
-	/**
+    # /**
 	 * Returns a list of conflicts for this set.  If a block is not reachable from a non-conflicted
 	 * block, it's conflicts(if any) will not be included.
 	 * @return the list of conflicts for this set.

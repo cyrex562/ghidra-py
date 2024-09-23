@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.Objects;
 
@@ -46,7 +46,7 @@ public class ImageSectionHeader {
 	private int numLineNumbers; // WORD (unsigned 16-bit)
 	private long characteristics; // DWORD (unsigned 32-bit)
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 */
@@ -55,7 +55,7 @@ public class ImageSectionHeader {
 		this.pdb = pdb;
 	}
 
-	/**
+    # /**
 	 * Parse the values of this class.
 	 * @param reader the {@link PdbByteReader} from which to parse the values.
 	 * @throws PdbException upon no enough data to parse.
@@ -77,7 +77,7 @@ public class ImageSectionHeader {
 		characteristics = reader.parseUnsignedIntVal();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} name.
 	 * @return the name.
 	 */
@@ -85,7 +85,7 @@ public class ImageSectionHeader {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} unionPAVS, which is either Physical Address or
 	 * Virtual Size.
 	 * @return the unionPAVS.
@@ -94,7 +94,7 @@ public class ImageSectionHeader {
 		return unionPAVS;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} virtualAddress.
 	 * @return the virtualAddress.
 	 */
@@ -102,7 +102,7 @@ public class ImageSectionHeader {
 		return virtualAddress;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} rawDataSize.
 	 * @return the rawDataSize.
 	 */
@@ -110,7 +110,7 @@ public class ImageSectionHeader {
 		return rawDataSize;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} rawDataPointer.
 	 * @return the rawDataPointer.
 	 */
@@ -118,7 +118,7 @@ public class ImageSectionHeader {
 		return rawDataPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} relocationsPointer.
 	 * @return the relocationsPointer.
 	 */
@@ -126,7 +126,7 @@ public class ImageSectionHeader {
 		return relocationsPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} lineNumbersPointer.
 	 * @return the lineNumbersPointer.
 	 */
@@ -134,7 +134,7 @@ public class ImageSectionHeader {
 		return lineNumbersPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} numRelocations.
 	 * @return the numRelocations.
 	 */
@@ -142,7 +142,7 @@ public class ImageSectionHeader {
 		return numRelocations;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} numLineNumbers.
 	 * @return the numLineNumbers.
 	 */
@@ -150,7 +150,7 @@ public class ImageSectionHeader {
 		return numLineNumbers;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ImageSectionHeader} characteristics.
 	 * @return the characteristics.
 	 */
@@ -158,7 +158,7 @@ public class ImageSectionHeader {
 		return characteristics;
 	}
 
-	/**
+    # /**
 	 * Dumps the {@link ImageSectionHeader}.  This package-protected method is for
 	 *  debugging only.
 	 * @param writer {@link Writer} to which to write the debug dump.

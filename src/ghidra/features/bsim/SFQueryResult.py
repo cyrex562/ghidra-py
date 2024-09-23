@@ -37,7 +37,7 @@ public class SFQueryResult {
 		this.facadeDatabaseInfo = new DatabaseInfo(serverURL, databaseInformation);
 	}
 
-	/**
+    # /**
 	 * The original query used to get the results represented by this object.
 	 * @return the original query used to get the results represented by this object.
 	 */
@@ -45,7 +45,7 @@ public class SFQueryResult {
 		return info;
 	}
 
-	/**
+    # /**
 	 * Returns the function database information representing the database server.
 	 * @return the function database information representing the database server.
 	 */

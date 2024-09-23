@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.register;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 
@@ -37,9 +37,9 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <code>ProgramContextDB</code> defines a processor context over an address 
- * space using database range maps for storage.
- */
+# * <code>ProgramContextDB</code> defines a processor context over an address 
+# * space using database range maps for storage.
+# */
 public class OldProgramContextDB implements ProgramContext, DefaultProgramContext, ManagerDB {
 
 	private final static UndefinedValueException UNDEFINED_VALUE_EXCEPTION =
@@ -54,7 +54,7 @@ public class OldProgramContextDB implements ProgramContext, DefaultProgramContex
 	private AddressMap addrMap;
 	private Lock lock;
 
-	/**
+    # /**
 	 * maintain values stored in registers for specified addresses and
 	 * address ranges using the PropertyMap utilities.
 	 */
@@ -66,7 +66,7 @@ public class OldProgramContextDB implements ProgramContext, DefaultProgramContex
 
 	private RegisterValue defaultDisassemblyContext;
 
-	/**
+    # /**
 	 * Constructs a new ProgramContextDB object
 	 * @param dbHandle the handle to the database.
 	 * @param errHandler the error handler
@@ -491,14 +491,14 @@ class SimpleAddressRangeIterator implements AddressRangeIterator {
 }
 
 # /**
- * Represents a register value over a range of addresses.
- */
+# * Represents a register value over a range of addresses.
+# */
 class RegisterValueRange {
 	private Address startAddr;
 	private Address endAddr;
 	private RegisterValue value;
 
-	/**
+    # /**
 	 * Constructor for RegisterValueRange.
 	 * @param startAddr the first address in the range
 	 * @param endAddr the last address in the range
@@ -510,14 +510,14 @@ class RegisterValueRange {
 		this.value = value;
 	}
 
-	/**
+    # /**
 	 * Get the start address of the range.
 	 */
 	public Address getStartAddress() {
 		return startAddr;
 	}
 
-	/**
+    # /**
 	 * Set the end address of the range.
 	 * @param addr the new start address.
 	 */
@@ -525,14 +525,14 @@ class RegisterValueRange {
 		startAddr = addr;
 	}
 
-	/**
+    # /**
 	 * Get the end address of the range.
 	 */
 	public Address getEndAddress() {
 		return endAddr;
 	}
 
-	/**
+    # /**
 	 * Set the end address of the range.
 	 * @param addr the new end address.
 	 */
@@ -540,7 +540,7 @@ class RegisterValueRange {
 		endAddr = addr;
 	}
 
-	/**
+    # /**
 	 * Get the register value.
 	 */
 	public RegisterValue getValue() {

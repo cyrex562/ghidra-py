@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.*;
@@ -20,23 +20,23 @@ import java.util.*;
 import ghidra.docking.settings.*;
 
 # /**
- *  {@link SettingsDefinition} for setting the charset of a string instance.
- *  <p>
- *  Charsets control how raw bytes are converted to native java String instances.
- *  <p>
- *  {@link CharsetInfo} controls the list of character sets that the user is shown.
- */
+# *  {@link SettingsDefinition} for setting the charset of a string instance.
+# *  <p>
+# *  Charsets control how raw bytes are converted to native java String instances.
+# *  <p>
+# *  {@link CharsetInfo} controls the list of character sets that the user is shown.
+# */
 public class CharsetSettingsDefinition implements EnumSettingsDefinition {
 
 	private static final String CHARSET_SETTING_NAME = "charset";
 
-	/**
+    # /**
 	 * Backward compatible to the setting from MBCS data type.  This
 	 * setting value will be cleared whenever the charset is changed.
 	 */
 	private static final String DEPRECATED_ENCODING_SETTING_NAME = "encoding";
 
-	/**
+    # /**
 	 * Backward compatible to the setting from MBCS data type.  This
 	 * setting value will be cleared whenever the charset is changed.
 	 */
@@ -46,7 +46,7 @@ public class CharsetSettingsDefinition implements EnumSettingsDefinition {
 
 	public static final CharsetSettingsDefinition CHARSET = new CharsetSettingsDefinition();
 
-	/**
+    # /**
 	 * Backward compatibility to map old MBCS (language_index, charset_index) tuples to a
 	 * simple charset_name value.
 	 * <p>
@@ -167,7 +167,7 @@ public class CharsetSettingsDefinition implements EnumSettingsDefinition {
 
 	//-----------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * Sets a static lookup table that maps from old deprecated (language,encoding) index
 	 * values to a charset name.
 	 * <p>

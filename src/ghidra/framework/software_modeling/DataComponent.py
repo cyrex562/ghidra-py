@@ -39,7 +39,7 @@ class DataComponent extends DataDB {
 	private int offset;
 	private int[] path;
 
-	/**
+    # /**
 	 * Constructs a new {@link DataComponent} for a {@link DataTypeComponent}.
 	 * NOTE: a zero-length component will be forced to have a length of 1-byte.
 	 * This can result in what would appear to be overlapping components with the same overset.
@@ -65,7 +65,7 @@ class DataComponent extends DataDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructs a new {@link DataComponent} for an {@link Array} element.
 	 * @param codeMgr the code manager.
 	 * @param componentCache data component cache

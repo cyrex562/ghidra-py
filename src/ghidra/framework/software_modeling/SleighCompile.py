@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.pcodeCPort.slgh_compile;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
@@ -46,9 +46,9 @@ import utilities.util.FileResolutionResult;
 import utilities.util.FileUtilities;
 
 # /**
- * <code>SleighCompile</code> provides the ability to compile Sleigh language module (e.g., *.slaspec)
- * files.
- */
+# * <code>SleighCompile</code> provides the ability to compile Sleigh language module (e.g., *.slaspec)
+# * files.
+# */
 public class SleighCompile extends SleighBase {
 
 	static boolean yydebug = false;
@@ -773,7 +773,7 @@ public class SleighCompile extends SleighBase {
 		pcode.setEnforceLocalKey(val);
 	}
 
-	/**
+    # /**
 	 * Sets whether or not to print out warning info about
 	 * {@link Constructor}s which reference varnodes in the
 	 * unique space larger than {@link SleighBase#MAX_UNIQUE_SIZE}.
@@ -1879,7 +1879,7 @@ public class SleighCompile extends SleighBase {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Run the sleigh compiler.  This provides a direct means of invoking the
 	 * compiler without using the launcher.  The full SoftwareModeling classpath 
 	 * must be established including any dependencies.

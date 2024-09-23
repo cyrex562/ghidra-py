@@ -20,7 +20,7 @@ import java.awt.datatransfer.*;
 import java.awt.dnd.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
+
 import java.util.List;
 
 import javax.swing.*;
@@ -68,7 +68,7 @@ class ToolButton extends EmptyBorderButton implements Draggable, Droppable {
 
 	private ToolServices toolServices;
 
-	/**
+    # /**
 	 * Construct a tool button that does not represent a running tool, using
 	 * the default tool icon.
 	 * @param plugin the plugin
@@ -79,7 +79,7 @@ class ToolButton extends EmptyBorderButton implements Draggable, Droppable {
 		setHelpLocation("Run_Tool");
 	}
 
-	/**
+    # /**
 	 * Construct a tool label that represents a running tool, using the
 	 * default RUNNING_TOOL icon.
 	 * @param plugin the plugin
@@ -91,7 +91,7 @@ class ToolButton extends EmptyBorderButton implements Draggable, Droppable {
 		setHelpLocation("Run_Tool");
 	}
 
-	/**
+    # /**
 	 * Construct a tool label that represents a running tool.
 	 */
 	private ToolButton(FrontEndPlugin plugin, PluginTool tool, ToolTemplate template,
@@ -197,7 +197,7 @@ class ToolButton extends EmptyBorderButton implements Draggable, Droppable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * The given list must contain only valid domain files (i.e., no folders or null items)
 	 * @param fileList The list of file objects to validate
 	 * @return true if <b>all</b> items in the list are supported
@@ -281,7 +281,7 @@ class ToolButton extends EmptyBorderButton implements Draggable, Droppable {
 		}
 	}
 
-	/**
+    # /**
 	 * Connect the tools in both directions.
 	 */
 	private void connectTools(PluginTool t1, PluginTool t2) {
@@ -330,7 +330,7 @@ class ToolButton extends EmptyBorderButton implements Draggable, Droppable {
 // Draggable interface
 //==================================================================================================
 
-	/** Fix the button state after dragging/dropping, since this is broken in Java */
+    # /** Fix the button state after dragging/dropping, since this is broken in Java */
 	private void resetButtonAfterDrag(JButton button) {
 		// HACK: fix for error where the drag and drop system does not properly reset the state of
 		// JButton.  If you drag away from and onto the same button and release, the button thinks

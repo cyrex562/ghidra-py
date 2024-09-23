@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;

@@ -16,7 +16,7 @@
 package utility.application;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.framework.PluggableServiceRegistry;
 import ghidra.util.Msg;

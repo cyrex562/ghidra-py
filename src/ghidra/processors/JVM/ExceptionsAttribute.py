@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -51,7 +51,7 @@ public class ExceptionsAttribute extends AbstractAttributeInfo {
 		exceptionIndexTable = reader.readNextShortArray(getNumberOfExceptions());
 	}
 
-	/**
+    # /**
 	 * The value of the number_of_exceptions item indicates the number of entries
 	 * in the exception_index_table.
 	 * @return the number of entries in the exception_index_table
@@ -60,7 +60,7 @@ public class ExceptionsAttribute extends AbstractAttributeInfo {
 		return numberOfExceptions & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value in the exception_index_table array must be a valid index into
 	 * the constant_pool table. The constant_pool entry referenced by each table
 	 * item must be a CONSTANT_Class_info structure representing a class

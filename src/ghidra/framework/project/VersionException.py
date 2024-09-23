@@ -20,17 +20,17 @@ package ghidra.util.exception;
  */
 public class VersionException extends UsrException {
 
-	/**
+    # /**
 	 * Object created with unknown software version.
 	 */
 	public static final int UNKNOWN_VERSION = 0;
 
-	/**
+    # /**
 	 * Object created with older software version.
 	 */
 	public static final int OLDER_VERSION = 1;
 
-	/**
+    # /**
 	 * Object created with newer software version.
 	 */
 	public static final int NEWER_VERSION = 2;
@@ -40,14 +40,14 @@ public class VersionException extends UsrException {
 
 	private String detailMessage = null;
 
-	/**
+    # /**
 	 * Constructor - not upgradeable
 	 */
 	public VersionException() {
 		this(false);
 	}
 
-	/**
+    # /**
 	 * Constructor - not upgradeable
 	 * @param msg detailed message
 	 */
@@ -55,7 +55,7 @@ public class VersionException extends UsrException {
 		super(msg);
 	}
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param upgradable true indicates that an upgrade is possible.
 	 * If true the version indicator value is set to OLDER_VERSION, if false
@@ -67,7 +67,7 @@ public class VersionException extends UsrException {
 		this.versionIndicator = upgradable ? OLDER_VERSION : UNKNOWN_VERSION;
 	}
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param versionIndicator OLDER_VERSION, NEWER_VERSION or UNKNOWN_VERSION
 	 * @param upgradable true indicates that an upgrade is possible.
@@ -77,7 +77,7 @@ public class VersionException extends UsrException {
 		this.versionIndicator = versionIndicator;
 	}
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param msg detailed message
 	 * @param versionIndicator OLDER_VERSION, NEWER_VERSION or UNKNOWN_VERSION
@@ -96,14 +96,14 @@ public class VersionException extends UsrException {
 		return "data created with newer version and can not be read";
 	}
 
-	/**
+    # /**
 	 * Return true if the file can be upgraded to the current version.
 	 */
 	public boolean isUpgradable() {
 		return upgradeable;
 	}
 
-	/**
+    # /**
 	 * Return a version indicator (OLDER_VERSION, NEWER_VERSION or UNKNOWN_VERSION).
 	 * Only an OLDER_VERSION has the possibility of being upgradeable.
 	 */
@@ -111,7 +111,7 @@ public class VersionException extends UsrException {
 		return versionIndicator;
 	}
 
-	/**
+    # /**
 	 * Combine another VersionException with this one.
 	 * @param ve another version exception
 	 * @return this combined version exception

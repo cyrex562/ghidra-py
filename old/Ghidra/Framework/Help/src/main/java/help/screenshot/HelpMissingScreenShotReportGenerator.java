@@ -16,7 +16,7 @@
 package help.screenshot;
 
 import java.awt.image.BufferedImage;
-import java.io.*;
+
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.net.MalformedURLException;

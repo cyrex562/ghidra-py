@@ -16,7 +16,7 @@
 package ghidra.file.formats.squashfs;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -32,7 +32,7 @@ public class SquashDirectoryTable {
 	// Map of block offsets into the original archive to the offset into the uncompressed directory table
 	private final Map<Long, Long> archiveToReaderOffsets;
 
-	/**
+    # /**
 	 * Represents the directory table within the SquashFS archive
 	 * @param reader A binary reader for the entire SquashFS archive
 	 * @param superBlock The SuperBlock for the current archive
@@ -76,7 +76,7 @@ public class SquashDirectoryTable {
 		}
 	}
 
-	/**
+    # /**
 	 * This method will assign each directory entry to an inode
 	 * @param inodeTable The object representing all inodes in the archive
 	 * @param monitor Monitor to allow the user to cancel the load
@@ -102,7 +102,7 @@ public class SquashDirectoryTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the headers associated with the given directory inode
 	 * @param inode The inode to search by
 	 * @return A list of headers that are associated with the given inode
@@ -127,7 +127,7 @@ public class SquashDirectoryTable {
 		return headers;
 	}
 
-	/**
+    # /**
 	 * Decompress the directory table and log block positions
 	 * @param reader The BinaryReader pointed to the start of the section
 	 * @param endAddress The address the section ends at

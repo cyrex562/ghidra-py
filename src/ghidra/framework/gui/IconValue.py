@@ -45,7 +45,7 @@ public class IconValue extends ThemeValue<Icon> {
 	private static final int STANDARD_EMPTY_ICON_SIZE = 16;
 	private IconModifier modifier;
 
-	/**
+    # /**
 	 * Constructor used when the ColorValue will have a direct {@link Icon} value. The refId will
 	 * be null. Note: if a {@link GIcon} is passed in as the value, then this will be an indirect
 	 * IconValue that inherits its icon from the id stored in the GIcon.
@@ -56,7 +56,7 @@ public class IconValue extends ThemeValue<Icon> {
 		super(id, getRefId(icon), getRawIcon(icon));
 	}
 
-	/**
+    # /**
 	 * Constructor used when the IconValue will inherit its {@link Icon} from another IconValue. The
 	 * icon value field will be null.
 	 * @param id the id for this IconValue
@@ -96,7 +96,7 @@ public class IconValue extends ThemeValue<Icon> {
 		return icon;
 	}
 
-	/**
+    # /**
 	* Returns true if the given key string is a valid external key for an icon value
 	* @param key the key string to test
 	* @return true if the given key string is a valid external key for an icon value
@@ -106,7 +106,7 @@ public class IconValue extends ThemeValue<Icon> {
 			EXTERNAL_LAF_ID_PREFIX);
 	}
 
-	/**
+    # /**
 	 * Converts an icon to a string.
 	 * @param icon the icon to convert to a String
 	 * @return a String that represents the icon
@@ -127,7 +127,7 @@ public class IconValue extends ThemeValue<Icon> {
 		return GTheme.JAVA_ICON;
 	}
 
-	/**
+    # /**
 	 * Parses the value string into an icon or reference and creates a new IconValue using
 	 * the given key and the parse results.
 	 * @param key the key to associate the parsed value with

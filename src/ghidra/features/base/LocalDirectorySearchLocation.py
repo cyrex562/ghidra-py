@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.external;
 
-import java.io.*;
+
 import java.util.zip.CRC32;
 
 import ghidra.formats.gfilesystem.FSRL;

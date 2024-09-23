@@ -17,7 +17,7 @@ package ghidra.features.bsim.query.description;
 
 public abstract class RowKey implements Comparable<RowKey> {
 
-	/**
+    # /**
 	 * @return the (least significant) 64-bits of the row key
 	 */
 	public abstract long getLong();

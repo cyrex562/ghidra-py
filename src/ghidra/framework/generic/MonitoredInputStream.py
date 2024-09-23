@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.util.exception.IOCancelledException;
@@ -41,7 +41,7 @@ public class MonitoredInputStream extends InputStream {
 		this.monitor = monitor;
 	}
 
-	/**
+    # /**
 	 * Get task monitor associated within this input stream.
 	 * @return task monitor
 	 */
@@ -49,7 +49,7 @@ public class MonitoredInputStream extends InputStream {
 		return monitor;
 	}
 
-	/**
+    # /**
 	 * Reset the current progress count to the specified value.
 	 * @param progress current progress 
 	 */
@@ -57,7 +57,7 @@ public class MonitoredInputStream extends InputStream {
 		this.count = progress;
 	}
 
-	/**
+    # /**
 	 * Reads the next byte of data from this input stream. The value 
 	 * byte is returned as an <code>int</code> in the range 
 	 * <code>0</code> to <code>255</code>. If no byte is available 
@@ -90,7 +90,7 @@ public class MonitoredInputStream extends InputStream {
 		return n;
 	}
 
-	/**
+    # /**
 	 * Reads up to <code>byte.length</code> bytes of data from this 
 	 * input stream into an array of bytes. This method blocks until some 
 	 * input is available. 
@@ -115,7 +115,7 @@ public class MonitoredInputStream extends InputStream {
 		return read(b, 0, b.length);
 	}
 
-	/**
+    # /**
 	 * Reads up to <code>len</code> bytes of data from this input stream 
 	 * into an array of bytes. This method blocks until some input is 
 	 * available. 
@@ -146,7 +146,7 @@ public class MonitoredInputStream extends InputStream {
 		return n;
 	}
 
-	/**
+    # /**
 	 * Skips over and discards <code>n</code> bytes of data from the 
 	 * input stream. The <code>skip</code> method may, for a variety of 
 	 * reasons, end up skipping over some smaller number of bytes, 
@@ -165,7 +165,7 @@ public class MonitoredInputStream extends InputStream {
 		return in.skip(n);
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes that can be read from this input 
 	 * stream without blocking. 
 	 * <p>
@@ -182,7 +182,7 @@ public class MonitoredInputStream extends InputStream {
 		return in.available();
 	}
 
-	/**
+    # /**
 	 * Closes this input stream and releases any system resources 
 	 * associated with the stream. 
 	 * This
@@ -195,7 +195,7 @@ public class MonitoredInputStream extends InputStream {
 		in.close();
 	}
 
-	/**
+    # /**
 	 * Marks the current position in this input stream. A subsequent 
 	 * call to the <code>reset</code> method repositions this stream at 
 	 * the last marked position so that subsequent reads re-read the same bytes.
@@ -215,7 +215,7 @@ public class MonitoredInputStream extends InputStream {
 		in.mark(readlimit);
 	}
 
-	/**
+    # /**
 	 * Repositions this stream to the position at the time the 
 	 * <code>mark</code> method was last called on this input stream. 
 	 * <p>
@@ -240,7 +240,7 @@ public class MonitoredInputStream extends InputStream {
 		in.reset();
 	}
 
-	/**
+    # /**
 	 * Tests if this input stream supports the <code>mark</code> 
 	 * and <code>reset</code> methods. 
 	 * This method
@@ -257,7 +257,7 @@ public class MonitoredInputStream extends InputStream {
 		return in.markSupported();
 	}
 
-	/**
+    # /**
 	 * Convey to byte stream consumer if cleanup of any artifacts produced is recommended, when 
 	 * applicable, if {@link IOCancelledException} is thrown by this input stream.
 	 * @param enable true if cleanup recommended, false if no cleanup neccessary (default).
@@ -268,7 +268,7 @@ public class MonitoredInputStream extends InputStream {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Determine if artifact cleanup is recommended when possible following cancellation
 	 * of this input stream (i.e., {@link IOCancelledException} has been caught).
 	 * @return true if cleanup recommended, false if no cleanup required.

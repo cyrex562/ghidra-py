@@ -18,7 +18,7 @@ package sarif.managers;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
+
 import java.io.OutputStream;
 
 import ghidra.program.model.address.Address;

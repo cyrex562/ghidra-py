@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 
 import ghidra.util.exception.IOCancelledException;

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.logviewer.ui;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import javax.swing.*;
@@ -44,7 +44,7 @@ public class FVSliderUI extends BasicSliderUI {
 	private int MINIMUM_THUMB_HEIGHT = 20;
 	private int THUMB_WIDTH = 10;
 
-	/**
+    # /**
 	 * Constructor.
 	 * 
 	 * @param slider
@@ -61,7 +61,7 @@ public class FVSliderUI extends BasicSliderUI {
 		this.model = model;
 	}
 
-	/**
+    # /**
 	 * This is the method that the base class uses to determine thumb size. We override so it
 	 * can be determined by the size of the table and the viewport.
 	 */

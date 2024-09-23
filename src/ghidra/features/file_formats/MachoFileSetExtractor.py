@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.fileset;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import ghidra.app.util.bin.ByteArrayProvider;
@@ -32,14 +32,14 @@ import ghidra.util.task.TaskMonitor;
  */
 public class MachoFileSetExtractor {
 
-	/**
+    # /**
 	 * A footer that gets appended to the end of every extracted component so Ghidra can identify
 	 * them and treat them special when imported
 	 */
 	public static final byte[] FOOTER_V1 =
 		"Ghidra Mach-O file set extraction v1".getBytes(StandardCharsets.US_ASCII);
 
-	/**
+    # /**
 	 * Gets a {@link ByteProvider} that contains a Mach-O file set entry. The Mach-O's header will
 	 * be altered to account for its segment bytes being packed down.   
 	 * 
@@ -62,7 +62,7 @@ public class MachoFileSetExtractor {
 		return extractedMacho.getByteProvider(fsrl);
 	}
 
-	/**
+    # /**
 	 * Gets a {@link ByteProvider} that contains a single segment from a Mach-O file set
 	 * 
 	 * @param provider The Mach-O file set {@link ByteProvider}

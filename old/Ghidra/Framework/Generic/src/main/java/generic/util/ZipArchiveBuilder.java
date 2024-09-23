@@ -16,7 +16,7 @@
  */
 package generic.util;
 
-import java.io.*;
+
 import java.util.zip.ZipOutputStream;
 
 public class ZipArchiveBuilder extends ArchiveBuilder {

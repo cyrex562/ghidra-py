@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -32,7 +32,7 @@ public class Ext4DirEntry implements StructConverter {
 	protected String name;
 	protected byte[] extra;
 
-	/**
+    # /**
 	 * Reads a Ext4DirEntry from the stream.
 	 * 
 	 * @param reader BinaryReader to read from

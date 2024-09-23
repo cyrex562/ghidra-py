@@ -32,7 +32,7 @@ public class PrimitiveMsType extends AbstractMsType {
 	protected String typeString;
 	protected int typeSize;
 
-	/**
+    # /**
 	 * Constructor for PrimitiveMsType
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param recNum Specific record number (ID) of the primitive type.
@@ -61,7 +61,7 @@ public class PrimitiveMsType extends AbstractMsType {
 		return BigInteger.valueOf(getTypeSize());
 	}
 
-	/**
+    # /**
 	 * Returns the name of this primitive type.
 	 * @return Name type of the primitive type.
 	 */
@@ -70,7 +70,7 @@ public class PrimitiveMsType extends AbstractMsType {
 		return typeString;
 	}
 
-	/**
+    # /**
 	 * Returns the type name of this primitive type.
 	 * @return Type name the primitive type.
 	 */
@@ -78,7 +78,7 @@ public class PrimitiveMsType extends AbstractMsType {
 		return typeString;
 	}
 
-	/**
+    # /**
 	 * Returns the record number (ID) that indicates the type of primitive type.
 	 * @return Specific record number (ID) representing the type of primitive.
 	 */
@@ -86,7 +86,7 @@ public class PrimitiveMsType extends AbstractMsType {
 		return recNum;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes that this primitive takes in instantiation.
 	 * @return Number of bytes this primitive takes.
 	 */
@@ -94,7 +94,7 @@ public class PrimitiveMsType extends AbstractMsType {
 		return typeSize;
 	}
 
-	/**
+    # /**
 	 * Indicates whether the type is a T_NOTYPE.
 	 * @return Indicates whether T_NOTYPE.
 	 */

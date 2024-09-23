@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import java.util.*;
@@ -34,7 +34,7 @@ public class RegisterManager {
 	private AddressSet registerAddresses = new AddressSet();
 	private AddressSetView registerAddressesView = new AddressSetViewAdapter(registerAddresses);
 
-	/** List of vector registers, sorted first by size and then by offset **/
+    # /** List of vector registers, sorted first by size and then by offset **/
 	private List<Register> sortedVectorRegisters;
 
 	class RegisterSizeKey {
@@ -80,7 +80,7 @@ public class RegisterManager {
 		}
 	};
 
-	/**
+    # /**
 	 * Construct RegisterManager
 	 * 
 	 * @param registers all defined registers with appropriate parent-child relationships properly
@@ -162,7 +162,7 @@ public class RegisterManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get context base-register
 	 * 
 	 * @return context base register or null if one has not been defined by the language.
@@ -171,7 +171,7 @@ public class RegisterManager {
 		return contextBaseRegister;
 	}
 
-	/**
+    # /**
 	 * Get unsorted unmodifiable list of all processor context registers (include base context
 	 * register and children)
 	 * 
@@ -181,7 +181,7 @@ public class RegisterManager {
 		return contextRegisters;
 	}
 
-	/**
+    # /**
 	 * Get an alphabetical sorted unmodifiable list of original register names (including context
 	 * registers). Names correspond to orignal register name and not aliases which may be defined.
 	 * 
@@ -191,7 +191,7 @@ public class RegisterManager {
 		return registerNames;
 	}
 
-	/**
+    # /**
 	 * Returns the largest register located at the specified address
 	 * 
 	 * @param addr register address
@@ -205,7 +205,7 @@ public class RegisterManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns all registers located at the specified address
 	 * 
 	 * @param addr register address
@@ -231,7 +231,7 @@ public class RegisterManager {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * Get register by address and size
 	 * 
 	 * @param addr register address
@@ -246,7 +246,7 @@ public class RegisterManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get register by name. A semi-case-insensitive lookup is performed. The specified name must
 	 * match either the case-sensitive name or be entirely lowercase or uppercase.
 	 * 
@@ -257,7 +257,7 @@ public class RegisterManager {
 		return registerNameMap.get(name);
 	}
 
-	/**
+    # /**
 	 * Get all registers as an unsorted unmodifiable list.
 	 * 
 	 * @return unmodifiable list of all registers defined
@@ -266,7 +266,7 @@ public class RegisterManager {
 		return registers;
 	}
 
-	/**
+    # /**
 	 * Get an unmodifiable list of all vector registers indentified by the processor specification
 	 * in sorted order based upon address and size.
 	 * 
@@ -286,7 +286,7 @@ public class RegisterManager {
 		return sortedVectorRegisters;
 	}
 
-	/**
+    # /**
 	 * Get the set of addresses contained in registers
 	 * 
 	 * @return the address set
@@ -295,7 +295,7 @@ public class RegisterManager {
 		return registerAddressesView;
 	}
 
-	/**
+    # /**
 	 * Compares two vector registers, first by size (descending) and then by offset (ascending).
 	 * 
 	 * @param reg1 vector register

@@ -19,7 +19,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import java.awt.Window;
-import java.io.IOException;
+
 import java.util.Collection;
 
 import javax.swing.JComponent;

@@ -52,7 +52,7 @@ public class DescriptorDecoder {
 		throw new AssertionError();
 	}
 
-	/**
+    # /**
 	 * Calculates the stack purge associated with a given method descriptor. Each parameter of computational category
 	 * one contributes 4 to the stack purge, and each parameter of computational category 2 contributes 8.
 	 * @param methodDescriptor
@@ -76,7 +76,7 @@ public class DescriptorDecoder {
 		return stackPurge;
 	}
 
-	/**
+    # /**
 	 * Returns the computational category of the return type of a method descriptor.
 	 * @param methodDescriptor
 	 * @return
@@ -92,7 +92,7 @@ public class DescriptorDecoder {
 		return DescriptorDecoder.getComputationalCategoryOfDescriptor(returnDescriptor);
 	}
 
-	/**
+    # /**
 	 * Given a method descriptor, returns the data type of the return value of the corresponding
 	 * method
 	 * @param methodDescriptor descriptor of method
@@ -113,7 +113,7 @@ public class DescriptorDecoder {
 		return DescriptorDecoder.getDataTypeOfDescriptor(returnDescriptor, dtManager);
 	}
 
-	/**
+    # /**
 	 * Returns the computational category of a given parameter or field descriptor
 	 * @param descriptor
 	 * @return
@@ -143,7 +143,7 @@ public class DescriptorDecoder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns an ordered list of the type names corresponding to the parameters and return of a method.
 	 * @param methodDescriptor
 	 * @return
@@ -205,7 +205,7 @@ public class DescriptorDecoder {
 		return typeNames;
 	}
 
-	/**
+    # /**
 	 * Returns the type name for a parameter descriptor
 	 * @param descriptor
 	 * @return
@@ -275,7 +275,7 @@ public class DescriptorDecoder {
 		return new PointerDataType(referencedType);
 	}
 
-	/**
+    # /**
 	 * Returns the datatype that the JVM uses to store a given parameter or field descriptor.
 	 * @param descriptor
 	 * @return
@@ -313,7 +313,7 @@ public class DescriptorDecoder {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the data type of a pointer to the type represented by descriptor
 	 * @param descriptor description of base type
 	 * @param dtManager data type manager of program
@@ -358,7 +358,7 @@ public class DescriptorDecoder {
 		return dtManager.getPointer(baseType);
 	}
 
-	/**
+    # /**
 	 * Returns a list of JavaComputationalCategory objects corresponding to the 
 	 * parameters of a method (read in left-to-right order).
 	 * @param methodDescriptor
@@ -417,7 +417,7 @@ public class DescriptorDecoder {
 		return categories;
 	}
 
-	/**
+    # /**
 	 * Returns an ordered list of the JVM data types corresponding to the parameters of a method.
 	 * @param methodDescriptor
 	 * @return
@@ -468,7 +468,7 @@ public class DescriptorDecoder {
 		return paramDataTypes;
 	}
 
-	/**
+    # /**
 	 * Given an invocation type and an element in the constant pool, follows references in the the constant
 	 * pool and returns the appropriate method descriptor.
 	 * @param offset
@@ -523,7 +523,7 @@ public class DescriptorDecoder {
 		return descriptor;
 	}
 
-	/**
+    # /**
 	 * Resolves the datatype represented by {@code fullyQualifiedName} with a base type of
 	 * {@code baseType} into dtm
 	 * @param fullyQualifiedName String representation of type
@@ -541,7 +541,7 @@ public class DescriptorDecoder {
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * Returns a String representing the types of the parameters of a method, e.g.
 	 * (java.lang.String, java.lang.Integer) for a method with signature
 	 * public static void test(String x, Integer y);

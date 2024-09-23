@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 
 /**
  * This is an encoder that produces encodings that can be retroactively patched.

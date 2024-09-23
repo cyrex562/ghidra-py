@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.datamgr;
 
-import java.io.IOException;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 

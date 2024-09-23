@@ -16,7 +16,7 @@
 package generic.theme;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.framework.preferences.Preferences;
 import ghidra.util.Msg;
@@ -27,7 +27,7 @@ import ghidra.util.Msg;
 public class ThemePreferences {
 	private static final String THEME_PREFFERENCE_KEY = "Theme";
 
-	/**
+    # /**
 	 * Returns the theme that was stored in preferences or the default theme if none stored.
 	 * @return the last theme used (stored in preferences) or the default theme if not stored
 	 * in preferences
@@ -58,7 +58,7 @@ public class ThemePreferences {
 		return ThemeManager.getDefaultTheme();
 	}
 
-	/**
+    # /**
 	 * Saves the current theme choice to {@link Preferences}.
 	 * @param theme the theme to remember in {@link Preferences}
 	 */

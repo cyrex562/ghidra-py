@@ -29,7 +29,7 @@ public class DiffMergeAllAction extends DockingAction {
 	private static String[] menuPath = new String[] { ACTION_NAME };
 	private DiffApplySettingsProvider provider;
 
-	/**
+    # /**
 	 * @param provider the provider using this action
 	 */
 	public DiffMergeAllAction(DiffApplySettingsProvider provider) {

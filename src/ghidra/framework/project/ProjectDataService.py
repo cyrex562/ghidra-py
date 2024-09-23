@@ -22,7 +22,7 @@ import ghidra.framework.model.ProjectData;
  * Interface for providing the ProjectData
  */
 public interface ProjectDataService {
-	/**
+    # /**
 	 * Returns the ProjectData for the currently open project.
 	 */
 	ProjectData getProjectData();

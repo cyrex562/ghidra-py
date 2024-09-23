@@ -21,7 +21,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 # /**
  * NOTE: THE FOLLOWING TEXT EXTRACTED FROM JVMS7.PDF
@@ -53,7 +53,7 @@ public class ConstantPoolLongInfo extends AbstractConstantPoolInfoJava {
 		lowBytes = reader.readNextInt();
 	}
 
-	/**
+    # /**
 	 * The unsigned high_bytes and low_bytes items of the CONSTANT_Long_info
 	 * structure together represent the value of the long constant
 	 * <pre>

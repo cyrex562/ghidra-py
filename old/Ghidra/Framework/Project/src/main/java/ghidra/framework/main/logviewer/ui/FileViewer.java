@@ -18,7 +18,7 @@ package ghidra.framework.main.logviewer.ui;
 import java.awt.BorderLayout;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.*;

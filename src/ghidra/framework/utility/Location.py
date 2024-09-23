@@ -22,13 +22,13 @@ import ghidra.framework.plugintool.ServiceProvider;
 
 public interface Location {
 
-	/**
+    # /**
 	 * Returns a displayable representation of this location.
 	 * @return a displayable representation of this location.
 	 */
 	String getStringRepresentation();
 
-	/**
+    # /**
 	 * Returns a description for the location.  This should probably describe the significance of the
 	 * location.  For example, if this location is from an Issue, then what is its relationship to the
 	 * issue.
@@ -36,7 +36,7 @@ public interface Location {
 	 */
 	String getDescription();
 
-	/**
+    # /**
 	 * Will attempt to navigate to the location as appropriate.  For example, it may use the goto service
 	 * to navigate the code browser to a progam and and address.  Or it could launch a browser and
 	 * display a web page.

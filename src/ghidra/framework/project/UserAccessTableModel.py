@@ -39,7 +39,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 	public static final int READ_WRITE_COL = 2;
 	public static final int ADMIN_COL = 3;
 
-	/**
+    # /**
 	 * Constructs a new table model.
 	 *
 	 * @param currentUser the name of the current user
@@ -59,7 +59,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		return "User Access";
 	}
 
-	/**
+    # /**
 	 * Invoked when the user has changed one of the access rights checkboxes. When this
 	 * happens we have to update the associated User data.
 	 */
@@ -96,7 +96,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		refresh();
 	}
 
-	/**
+    # /**
 	 * The permissions columns in the table should be editable as long as the user
 	 * is an admin and is not trying to adjust his/her own permissions.
 	 */
@@ -142,7 +142,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		return users;
 	}
 
-	/**
+    # /**
 	 * Replaces the contents of this model with a given list of users.
 	 *
 	 * @param users the user list
@@ -152,7 +152,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		refresh();
 	}
 
-	/**
+    # /**
 	 * Remove a list of users from the table.
 	 *
 	 * @param list list of User objects
@@ -162,7 +162,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		refresh();
 	}
 
-	/**
+    # /**
 	 * Add a list of users to the table.
 	 *
 	 * @param users list of User objects
@@ -172,7 +172,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		refresh();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link User} currently using the dialog.
 	 *
 	 * @return the current user or null if not found
@@ -186,7 +186,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the user name.
 	 */
 	class UserColumn extends AbstractDynamicTableColumn<User, String, List<User>> {
@@ -203,7 +203,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		}
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the users read only status.
 	 */
 	class ReadOnlyColumn extends AbstractDynamicTableColumn<User, Boolean, List<User>> {
@@ -220,7 +220,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		}
 	}
 
-	/**
+    # /**
 	 * Table column for displaying the users read/write status.
 	 */
 	class ReadWriteColumn extends AbstractDynamicTableColumn<User, Boolean, List<User>> {
@@ -237,7 +237,7 @@ class UserAccessTableModel extends GDynamicColumnTableModel<User, List<User>> {
 		}
 	}
 
-	/**
+    # /**
 	 * Table column for displaying if the user has admin status.
 	 */
 	class AdminColumn extends AbstractDynamicTableColumn<User, Boolean, List<User>> {

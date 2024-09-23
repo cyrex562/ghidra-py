@@ -37,7 +37,7 @@ public class ApplicationVersion implements Comparable<ApplicationVersion> {
 	private int patch;
 	private String tag;
 
-	/**
+    # /**
 	 * Creates a new {@link ApplicationVersion} object from the given version string.
 	 * 
 	 * @param version A version string.
@@ -48,7 +48,7 @@ public class ApplicationVersion implements Comparable<ApplicationVersion> {
 		parse(version);
 	}
 
-	/**
+    # /**
 	 * Gets the major version.
 	 * 
 	 * @return The major version.
@@ -57,7 +57,7 @@ public class ApplicationVersion implements Comparable<ApplicationVersion> {
 		return major;
 	}
 
-	/**
+    # /**
 	 * Gets the minor version.
 	 * 
 	 * @return The minor version.
@@ -66,7 +66,7 @@ public class ApplicationVersion implements Comparable<ApplicationVersion> {
 		return minor;
 	}
 
-	/**
+    # /**
 	 * Gets the patch version.
 	 * 
 	 * @return The patch version.
@@ -75,7 +75,7 @@ public class ApplicationVersion implements Comparable<ApplicationVersion> {
 		return patch;
 	}
 
-	/**
+    # /**
 	 * Gets the tag.
 	 * 
 	 * @return The tag.  Could be the empty string.
@@ -162,7 +162,7 @@ public class ApplicationVersion implements Comparable<ApplicationVersion> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Parses the major, minor, patch, and tag components out of the given version string.
 	 * 
 	 * @param version A version string.
@@ -202,7 +202,7 @@ public class ApplicationVersion implements Comparable<ApplicationVersion> {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses a version part string to an integer.
 	 * 
 	 * @param versionPart A version part string.

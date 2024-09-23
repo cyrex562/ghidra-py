@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.macho.dyld;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.format.macho.MachHeader;
 import ghidra.app.util.bin.format.macho.Section;

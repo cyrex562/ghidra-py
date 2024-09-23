@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,7 +41,7 @@ public abstract class ArtHeader implements StructConverter {
 		version_ = reader.readNextAsciiString(ArtConstants.VERSION_LENGTH);
 	}
 
-	/**
+    # /**
 	 * Returns the magic string: "art\n".
 	 * @return the magic string
 	 */
@@ -49,7 +49,7 @@ public abstract class ArtHeader implements StructConverter {
 		return magic_;
 	}
 
-	/**
+    # /**
 	 * Returns the version string: eg, "001", "017"
 	 * @return the version
 	 */
@@ -57,7 +57,7 @@ public abstract class ArtHeader implements StructConverter {
 		return version_;
 	}
 
-	/**
+    # /**
 	 * Required base address for mapping the image.
 	 * 
 	 * Base address of the ART file.
@@ -66,14 +66,14 @@ public abstract class ArtHeader implements StructConverter {
 	 */
 	abstract public int getImageBegin();
 
-	/**
+    # /**
 	 * Required base size for mapping the image.
 	 * -1 indicates unsupported
 	 * @return image size
 	 */
 	abstract public int getImageSize();
 
-	/**
+    # /**
 	 * Returns the checksum of the matching OAT file.
 	 * The checksum is stored in the OAT header and is generated using Adler32.
 	 * -1 indicates unsupported
@@ -81,19 +81,19 @@ public abstract class ArtHeader implements StructConverter {
 	 */
 	abstract public int getOatChecksum();
 
-	/**
+    # /**
 	 *  -1 indicates unsupported
 	 * @return the oat file begin address
 	 */
 	abstract public int getOatFileBegin();
 
-	/**
+    # /**
 	 * -1 indicates unsupported
 	 * @return the oat file end address
 	 */
 	abstract public int getOatFileEnd();
 
-	/**
+    # /**
 	 * Returns the offset to the start of the .oatdata section,
 	 * usually defined within the ".rodata" section.
 	 * -1 indicates unsupported
@@ -101,13 +101,13 @@ public abstract class ArtHeader implements StructConverter {
 	 */
 	abstract public int getOatDataBegin();
 
-	/**
+    # /**
 	 * -1 indicates unsupported
 	 * @return the oat data end address
 	 */
 	abstract public int getOatDataEnd();
 
-	/**
+    # /**
 	 * Pointer size (in bytes).
 	 * @return the pointer size
 	 */
@@ -115,7 +115,7 @@ public abstract class ArtHeader implements StructConverter {
 
 	abstract public int getArtMethodCountForVersion();
 
-	/**
+    # /**
 	 * Parses the ART header data.
 	 * @param reader the binary reader
 	 * @throws IOException if an error occurs parsing the header
@@ -128,7 +128,7 @@ public abstract class ArtHeader implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * Allows each specific version to mark-up the specified program.
 	 * @param program the program to markup
 	 * @param monitor the task monitor

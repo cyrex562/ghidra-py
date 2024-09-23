@@ -101,7 +101,7 @@ class DomainObjectDBTransaction implements TransactionInfo {
 		return nextBaseId++;
 	}
 
-	/**
+    # /**
 	 * Mark this fully committed transaction as having a corresponding 
 	 * database transaction/checkpoint.
 	 */
@@ -112,7 +112,7 @@ class DomainObjectDBTransaction implements TransactionInfo {
 		hasDBTransaction = true;
 	}
 
-	/**
+    # /**
 	 * Returns true if this fully committed transaction has a corresponding 
 	 * database transaction/checkpoint.
 	 */

@@ -55,7 +55,7 @@ public class FcgExpandingVertexCollection {
 	private boolean isIncoming;
 	private Iterable<FcgVertex> sources;
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param sources all vertices that are the source of the expansion.  This will be either a
@@ -134,7 +134,7 @@ public class FcgExpandingVertexCollection {
 		return (int) (p1.getX() - p2.getX());
 	}
 
-	/**
+    # /**
 	 * Returns all vertices at the given level
 	 * 
 	 * @param level the level to filter on
@@ -156,7 +156,7 @@ public class FcgExpandingVertexCollection {
 		return verticesAtLevel;
 	}
 
-	/**
+    # /**
 	 * Returns all vertices that have just been added to the graph; those now being arranged
 	 * 
 	 * @return all vertices that have just been added to the graph; those now being arranged 
@@ -179,7 +179,7 @@ public class FcgExpandingVertexCollection {
 		return new ArrayList<>(sortedVertices);
 	}
 
-	/**
+    # /**
 	 * Returns all vertices being added to the graph
 	 * @return the vertices
 	 */
@@ -187,7 +187,7 @@ public class FcgExpandingVertexCollection {
 		return newVertices;
 	}
 
-	/**
+    # /**
 	 * Returns all new edges being added to the graph
 	 * @return the edges
 	 */
@@ -195,7 +195,7 @@ public class FcgExpandingVertexCollection {
 		return IterableUtils.chainedIterable(newEdges, indirectEdges);
 	}
 
-	/**
+    # /**
 	 * Returns all edges that are being added to existing nodes
 	 * @return the edges
 	 */
@@ -203,7 +203,7 @@ public class FcgExpandingVertexCollection {
 		return indirectEdges;
 	}
 
-	/**
+    # /**
 	 * Returns the number of newly added edges
 	 * @return the number of newly added edges
 	 */
@@ -211,7 +211,7 @@ public class FcgExpandingVertexCollection {
 		return newEdges.size() + indirectEdges.size();
 	}
 
-	/**
+    # /**
 	 * Sets indirect edges--those edges that are not a direct link between the source 
 	 * vertices and the newly added vertices
 	 * @param indirectEdges the edges
@@ -220,7 +220,7 @@ public class FcgExpandingVertexCollection {
 		this.indirectEdges = CollectionUtils.asSet(indirectEdges);
 	}
 
-	/**
+    # /**
 	 * Returns the level of the newly added vertices, which is the level that is being expanded
 	 * @return the level
 	 */
@@ -228,7 +228,7 @@ public class FcgExpandingVertexCollection {
 		return expandingLevel;
 	}
 
-	/**
+    # /**
 	 * Returns the direction of the expansion
 	 * @return the direction of the expansion
 	 */
@@ -236,7 +236,7 @@ public class FcgExpandingVertexCollection {
 		return expandingLevel.getDirection();
 	}
 
-	/**
+    # /**
 	 * All vertices that are the source of the expansion
 	 * @return the source vertices
 	 */
@@ -244,7 +244,7 @@ public class FcgExpandingVertexCollection {
 		return sources;
 	}
 
-	/**
+    # /**
 	 * Returns true if the newly added vertices are callers of the source vertex; false if
 	 * the newly added vertices are called by the source vertex
 	 * 

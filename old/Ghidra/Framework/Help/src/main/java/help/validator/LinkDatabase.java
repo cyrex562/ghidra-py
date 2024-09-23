@@ -22,7 +22,7 @@ import help.validator.links.InvalidLink;
 import help.validator.location.HelpModuleCollection;
 import help.validator.model.*;
 
-import java.io.IOException;
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;

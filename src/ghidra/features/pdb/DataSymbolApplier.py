@@ -34,7 +34,7 @@ public class DataSymbolApplier extends MsSymbolApplier
 
 	private AbstractDataMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier
@@ -233,7 +233,7 @@ public class DataSymbolApplier extends MsSymbolApplier
 		return false;
 	}
 
-	/**
+    # /**
 	 * "char[12] *"   "char * *"
 	 *
 	 * "ioinfo * *"   "ioinfo[64] *"

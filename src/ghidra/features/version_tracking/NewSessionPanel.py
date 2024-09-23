@@ -232,7 +232,7 @@ public class NewSessionPanel extends AbstractMageJPanel<VTWizardStateKey> {
 		}
 	}
 
-	/**
+    # /**
 	 * Presents the user with a tree of the existing project folders and allows
 	 * them to pick one
 	 */

@@ -1,26 +1,26 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.expr;
 
 import ghidra.app.plugin.processors.sleigh.expression.TokenField;
 import ghidra.util.NumericUtilities;
 
 # /**
- * A {@code 64}-bit value where each bit is {@code 0}, {@code 1}, or {@code x} (undefined)
- */
+# * A {@code 64}-bit value where each bit is {@code 0}, {@code 1}, or {@code x} (undefined)
+# */
 public class MaskedLong implements Comparable<MaskedLong> {
 	public static final MaskedLong ZERO = new MaskedLong(-1, 0);
 	public static final MaskedLong UNKS = new MaskedLong(0, 0);
@@ -29,7 +29,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 	protected long msk;
 	protected long val;
 
-	/**
+    # /**
 	 * Create a masked long given a mask and value
 	 */
 	protected MaskedLong(long msk, long val) {
@@ -42,7 +42,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 	 * Static factory methods
 	 */
 
-	/**
+    # /**
 	 * Create a masked value from a mask and a long
 	 * 
 	 * <p>
@@ -66,7 +66,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return new MaskedLong(msk, val);
 	}
 
-	/**
+    # /**
 	 * Create a fully-defined value from the bits of a long
 	 * 
 	 * @param val the value to take
@@ -81,7 +81,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 	 * Accessor methods
 	 */
 
-	/**
+    # /**
 	 * Obtain the value as a long, where all undefined bits are treated as {@code 0}
 	 * 
 	 * @return the value as a long
@@ -90,7 +90,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return val;
 	}
 
-	/**
+    # /**
 	 * Get the mask as a long
 	 * 
 	 * <p>
@@ -102,7 +102,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return msk;
 	}
 
-	/**
+    # /**
 	 * True iff there are no undefined bits
 	 * 
 	 * @return true if fully-defined, false otherwise
@@ -111,7 +111,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return msk == -1L;
 	}
 
-	/**
+    # /**
 	 * True iff there are no defined bits
 	 * 
 	 * @return true if full-undefined, false otherwise
@@ -125,7 +125,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 	 * Operators
 	 */
 
-	/**
+    # /**
 	 * Apply an additional mask to this masked long
 	 * 
 	 * <p>
@@ -139,7 +139,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(this.msk & mask, this.val);
 	}
 
-	/**
+    # /**
 	 * Sign extend the masked value, according to its mask, to a full long
 	 * 
 	 * <p>
@@ -152,7 +152,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return signExtend(bits);
 	}
 
-	/**
+    # /**
 	 * Zero extend the masked value, according to its mask, to a full long
 	 * 
 	 * <p>
@@ -165,7 +165,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return zeroExtend(bits);
 	}
 
-	/**
+    # /**
 	 * Mask out all but the lowest {@code n} bits of the value
 	 * 
 	 * @param n the number of bits to take (right-to-left)
@@ -177,7 +177,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Sign extend the masked value as if of the given size in bits, to a full long
 	 * 
 	 * @param n the number of bits to take (right-to-left)
@@ -189,7 +189,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Zero extend the masked value as if of the given size in bits, to a full long
 	 * 
 	 * @param n the number of bits to take (right-to-left)
@@ -201,7 +201,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Combine this and another masked long into one, by taking defined bits from either
 	 * 
 	 * <p>
@@ -220,7 +220,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(this.msk | that.msk, this.val | that.val);
 	}
 
-	/**
+    # /**
 	 * Shift {@code size} bits @{code n) positions circularly in a given direction
 	 *
 	 * <p>
@@ -251,7 +251,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Shift {@code size} bits @{code n) positions circularly in a given direction
 	 *
 	 * <p>
@@ -270,7 +270,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return shiftCircular(n.longValue(), size, dir);
 	}
 
-	/**
+    # /**
 	 * Shift the bits @{code n} positions left
 	 * 
 	 * <p>
@@ -288,7 +288,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue((this.msk << n) | atright, this.val << n);
 	}
 
-	/**
+    # /**
 	 * Shift the bits {@code n} positions left
 	 * 
 	 * <p>
@@ -304,7 +304,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return shiftLeft(n.longValue());
 	}
 
-	/**
+    # /**
 	 * Invert a left shift of {@code n} positions, that is shift right
 	 * 
 	 * <p>
@@ -327,7 +327,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return shiftRightPositional(n);
 	}
 
-	/**
+    # /**
 	 * Invert a left shift of {@code n} positions, that is shift right
 	 * 
 	 * <p>
@@ -346,7 +346,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return invShiftLeft(n.longValue());
 	}
 
-	/**
+    # /**
 	 * Shift the bits arithmetically {@code n} positions right
 	 * 
 	 * <p>
@@ -362,7 +362,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(this.msk >> n, this.val >> n);
 	}
 
-	/**
+    # /**
 	 * Shift the bits arithmetically {@code n} positions right
 	 * 
 	 * <p>
@@ -378,7 +378,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return shiftRight(n.longValue());
 	}
 
-	/**
+    # /**
 	 * Invert an arithmetic right shift of {@code n} positions, that is shift left
 	 * 
 	 * <p>
@@ -412,7 +412,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 			"Cannot invert arithmetic right shift where bits to the left disagree");
 	}
 
-	/**
+    # /**
 	 * Invert an arithmetic right shift of {@code n} positions, that is shift left
 	 * 
 	 * <p>
@@ -431,7 +431,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return invShiftRight(n.longValue());
 	}
 
-	/**
+    # /**
 	 * Shift the bits logically {@code n} positions right
 	 * 
 	 * <p>
@@ -449,7 +449,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue((this.msk >>> n) | atleft, this.val >>> n);
 	}
 
-	/**
+    # /**
 	 * Shift the bits logically {@code n} positions right
 	 * 
 	 * <p>
@@ -466,7 +466,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return shiftRightLogical(n.longValue());
 	}
 
-	/**
+    # /**
 	 * Shift the bits positionally {@code n} positions right
 	 * 
 	 * <p>
@@ -479,7 +479,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(this.msk >>> n, this.val >>> n);
 	}
 
-	/**
+    # /**
 	 * Invert a logical right shift of {@code n} positions, that is shift left
 	 * 
 	 * <p>
@@ -503,7 +503,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return new MaskedLong(msk << n, val << n);
 	}
 
-	/**
+    # /**
 	 * Invert a logical right shift of {@code n} positions, that is shift left
 	 * 
 	 * <p>
@@ -522,7 +522,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return invShiftRightLogical(n.longValue());
 	}
 
-	/**
+    # /**
 	 * Reverse the least significant {@code n} bytes
 	 * 
 	 * <p>
@@ -536,7 +536,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(TokenField.byteSwap(msk, n), TokenField.byteSwap(val, n));
 	}
 
-	/**
+    # /**
 	 * Compute the bitwise AND of this and another masked long
 	 * 
 	 * <p>
@@ -568,7 +568,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Solves the expression {@code A & B = C, for B, given C and A}
 	 * 
 	 * <p>
@@ -608,7 +608,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Compute the bitwise OR of this and another masked long
 	 * 
 	 * <p>
@@ -642,7 +642,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Solves the expression A | B = C, for B, given C and A
 	 * 
 	 * <p>
@@ -681,7 +681,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Compute the bitwise XOR of this and another masked long
 	 * 
 	 * <p>
@@ -707,7 +707,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(newMsk, newVal);
 	}
 
-	/**
+    # /**
 	 * Negate the value
 	 * 
 	 * @return the result.
@@ -720,7 +720,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(-1, -val);
 	}
 
-	/**
+    # /**
 	 * Compute the bitwise NOT
 	 * 
 	 * <p>
@@ -737,7 +737,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(msk, ~val);
 	}
 
-	/**
+    # /**
 	 * Compute the arithmetic sum of this and another masked long
 	 * 
 	 * @param that the other masked long.
@@ -750,7 +750,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return fromMaskAndValue(-1, this.val + that.val);
 	}
 
-	/**
+    # /**
 	 * Compute the arithmetic difference: this masked long minus another
 	 * 
 	 * @param that the other masked long.
@@ -830,7 +830,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return xor(xor(t1, t2), t3);
 	}
 
-	/**
+    # /**
 	 * Compute the arithmetic product of this and another masked long
 	 * 
 	 * @param that the other masked long.
@@ -887,7 +887,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		throw new UnsupportedOperationException("Cannot divide unknown values, yet.");
 	}
 
-	/**
+    # /**
 	 * Compute the unsigned arithmetic quotient: this masked long divided by another
 	 * 
 	 * @param that the other masked long.
@@ -918,7 +918,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		// AFAICT, a bitwise algorithm doesn't buy much at all
 	}
 
-	/**
+    # /**
 	 * Compute the arithmetic quotient as a solution to unsigned multiplication
 	 * 
 	 * <p>
@@ -950,7 +950,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 	 * Equality and comparison stuff
 	 */
 
-	/**
+    # /**
 	 * Checks if this and another masked long agree
 	 * 
 	 * <p>
@@ -969,7 +969,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Checks if this and a long agree
 	 * 
 	 * <p>
@@ -986,7 +986,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return val == that;
 	}
 
-	/**
+    # /**
 	 * Check if this and another object agree
 	 * 
 	 * @param that a {@link MaskedLong} or {@link Long} to check.
@@ -1006,7 +1006,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		}
 	}
 
-	/**
+    # /**
 	 * Check if the masked value falls within a given range
 	 * 
 	 * <p>
@@ -1043,7 +1043,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return ckVal >= 0 && ckVal <= max; //       ---.[--v--]---
 	}
 
-	/**
+    # /**
 	 * "Compare" two masked longs
 	 * 
 	 * <p>
@@ -1069,7 +1069,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Check for equality
 	 * 
 	 * <p>
@@ -1105,7 +1105,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return NumericUtilities.convertMaskedValueToHexString(msk, val, 16, true, 2, ":");
 	}
 
-	/**
+    # /**
 	 * Sign extend a number of the given size in bits, to a full long
 	 * 
 	 * @param val the value to extend
@@ -1117,7 +1117,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return (val << slam) >> slam;
 	}
 
-	/**
+    # /**
 	 * Zero extend a number of the given size in bits, to a full long
 	 * 
 	 * @param val the value to extend
@@ -1129,7 +1129,7 @@ public class MaskedLong implements Comparable<MaskedLong> {
 		return (val << slam) >>> slam;
 	}
 
-	/**
+    # /**
 	 * Set all undefined bits to 0
 	 * 
 	 * @return the result

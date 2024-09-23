@@ -16,7 +16,7 @@
 package ghidra.app.util.demangler.gnu;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.app.util.demangler.*;
@@ -168,7 +168,7 @@ public class GnuDemangler implements Demangler {
 			applicationOptions);
 	}
 
-	/**
+    # /**
 	 * Determines if the given mangled string should not be demangled.  There are a couple
 	 * patterns that will always be skipped.
 	 * If {@link GnuDemanglerOptions#demangleOnlyKnownPatterns()} is true, then only mangled

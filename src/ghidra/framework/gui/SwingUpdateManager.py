@@ -46,7 +46,7 @@ public class SwingUpdateManager extends AbstractSwingUpdateManager {
 
 	private final Runnable clientRunnable;
 
-	/**
+    # /**
 	 * Constructs a new SwingUpdateManager with default values for min and max delay.  See
 	 * {@link #DEFAULT_MIN_DELAY} and {@value #DEFAULT_MAX_DELAY}.
 	 *
@@ -56,7 +56,7 @@ public class SwingUpdateManager extends AbstractSwingUpdateManager {
 		this(DEFAULT_MIN_DELAY, DEFAULT_MAX_DELAY, r);
 	}
 
-	/**
+    # /**
 	 * Constructs a new SwingUpdateManager
 	 * <p>
 	 * <b>Note: </b>The <code>minDelay</code> will always be at least {@link #MIN_DELAY_FLOOR}, 
@@ -70,7 +70,7 @@ public class SwingUpdateManager extends AbstractSwingUpdateManager {
 		this(minDelay, DEFAULT_MAX_DELAY, r);
 	}
 
-	/**
+    # /**
 	 * Constructs a new SwingUpdateManager
 	 * <p>
 	 * <b>Note: </b>The <code>minDelay</code> will always be at least {@link #MIN_DELAY_FLOOR}, 
@@ -86,7 +86,7 @@ public class SwingUpdateManager extends AbstractSwingUpdateManager {
 		this.clientRunnable = r;
 	}
 
-	/**
+    # /**
 	 * Constructs a new SwingUpdateManager
 	 * <p>
 	 * <b>Note: </b>The <code>minDelay</code> will always be at least {@link #MIN_DELAY_FLOOR}, regardless of
@@ -108,7 +108,7 @@ public class SwingUpdateManager extends AbstractSwingUpdateManager {
 		clientRunnable.run();
 	}
 
-	/**
+    # /**
 	 * Signals to perform an update.  See the class header for the usage of the various
 	 * update methods.
 	 */
@@ -117,7 +117,7 @@ public class SwingUpdateManager extends AbstractSwingUpdateManager {
 		super.update();
 	}
 
-	/**
+    # /**
 	 * Signals to perform an update.  See the class header for the usage of the various
 	 * update methods.
 	 */
@@ -126,7 +126,7 @@ public class SwingUpdateManager extends AbstractSwingUpdateManager {
 		super.updateLater();
 	}
 
-	/**
+    # /**
 	 * Signals to perform an update.  See the class header for the usage of the various
 	 * update methods.
 	 */

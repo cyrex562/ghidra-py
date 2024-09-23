@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.sectionprovider;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.util.List;
 

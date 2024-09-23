@@ -25,21 +25,21 @@ import ghidra.program.database.symbol.FunctionSymbol;
  */
 public interface BSimSearchService {
 
-	/**
+    # /**
 	 * Returns the BSimServerInfo that was used in the previous search or null if no searches
 	 * have been performed.
 	 * @return the BSimServerInfo that was used in the previous search 
 	 */
 	public BSimServerInfo getLastUsedServer();
 
-	/**
+    # /**
 	 * Returns the BSimSearchSettings that was used in the previous search or the default
 	 * settings if no searches have been performed.
 	 * @return the BSimSearchSettings that was used in the previous search 
 	 */
 	public BSimSearchSettings getLastUsedSearchSettings();
 
-	/**
+    # /**
 	 * Initiates a BSim similar functions search.
 	 * @param severCache the server to query
 	 * @param settings the settings to use for the search
@@ -48,7 +48,7 @@ public interface BSimSearchService {
 	public void search(BSimServerCache severCache, BSimSearchSettings settings,
 		Set<FunctionSymbol> functions);
 
-	/**
+    # /**
 	 * Initiates a BSim overview search using all the functions in the program.
 	 * @param severCache the server to query
 	 * @param settings the settings to use for the search

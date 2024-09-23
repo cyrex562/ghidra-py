@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pdb.pdbapplicator;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 

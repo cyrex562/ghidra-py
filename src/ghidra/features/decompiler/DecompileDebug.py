@@ -18,7 +18,7 @@ package ghidra.app.decompiler;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -282,7 +282,7 @@ public class DecompileDebug {
 		debugStream.write(buf.toString().getBytes());
 	}
 
-	/**
+    # /**
 	 * Dump information on strings that were queried by the decompiler.
 	 * @param debugStream is the stream to write to
 	 * @throws IOException if any i/o error occurs
@@ -378,7 +378,7 @@ public class DecompileDebug {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Add the starting address of the range of addresses over which all of context remains
 	 * constant and has the same value as the value at -addr-
 	 * @param addr is an Address contained in the constant range
@@ -397,7 +397,7 @@ public class DecompileDebug {
 		}
 	}
 
-	/**
+    # /**
 	 * This routine collects all the context register changes across the
 	 * body of the function. Right now we only get the context at the
 	 * beginning of the function because its difficult to tell where the

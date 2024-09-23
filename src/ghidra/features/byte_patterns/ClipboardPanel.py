@@ -18,7 +18,7 @@ package ghidra.bitpatterns.gui;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
+
 import java.math.BigInteger;
 import java.util.*;
 

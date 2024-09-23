@@ -24,20 +24,20 @@ import ghidra.framework.plugintool.util.PluginException;
  */
 public interface PluginInstaller {
 
-	/**
+    # /**
 	 * Returns all currently installed plugins
 	 * @return the plugins
 	 */
 	public List<Plugin> getManagedPlugins();
 
-	/**
+    # /**
 	 * Adds the given plugins to the system
 	 * @param pluginClassNames the plugin class names to add
 	 * @throws PluginException if there is an issue loading any of the plugins
 	 */
 	public void addPlugins(List<String> pluginClassNames) throws PluginException;
 
-	/**
+    # /**
 	 * Removes the given plugins from the system
 	 * @param plugins the plugins
 	 */

@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 /**
  * <code>DatabaseUtils</code> provides a collection of database related utilities.

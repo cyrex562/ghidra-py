@@ -17,7 +17,7 @@ package ghidra.trace.database.listing;
 
 import static ghidra.lifecycle.Unfinished.*;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 import java.util.concurrent.locks.Lock;

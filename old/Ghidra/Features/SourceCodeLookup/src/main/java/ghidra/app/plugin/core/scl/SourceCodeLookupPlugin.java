@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.scl;
 
-import java.io.*;
+
 import java.net.Socket;
 
 import docking.ActionContext;

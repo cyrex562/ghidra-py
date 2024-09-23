@@ -42,7 +42,7 @@ public class CharDataType extends AbstractIntegerDataType implements DataTypeWit
 
 	public static final CharDataType dataType = new CharDataType();
 
-	/**
+    # /**
 	 * Constructs a new char datatype.
 	 */
 	public CharDataType() {
@@ -76,7 +76,7 @@ public class CharDataType extends AbstractIntegerDataType implements DataTypeWit
 		return getLength() != 1;
 	}
 
-	/**
+    # /**
 	 * Returns the C style data-type declaration for this data-type. Null is returned if no
 	 * appropriate declaration exists.
 	 */

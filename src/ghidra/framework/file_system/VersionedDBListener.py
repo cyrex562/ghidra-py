@@ -16,7 +16,7 @@
  */
 package ghidra.framework.store.db;
 
-import java.io.IOException;
+
 
 # /**
  * <code>VersionedDBListener</code> provides listeners the ability to be notified
@@ -24,7 +24,7 @@ import java.io.IOException;
  */
 public interface VersionedDBListener {
 
-	/**
+    # /**
 	 * Available database versions have been modified.
 	 * This method is not invoked when a new version is created.
 	 * @param minVersion minimum available version
@@ -32,7 +32,7 @@ public interface VersionedDBListener {
 	 */
 	public void versionsChanged(int minVersion, int currentVersion);
 
-	/**
+    # /**
 	 * A new database version has been created.
 	 * @param db
 	 * @param version
@@ -45,13 +45,13 @@ public interface VersionedDBListener {
 	public boolean versionCreated(VersionedDatabase db, int version, long time, String comment,
 			long checkinId);
 
-	/**
+    # /**
 	 * A version has been deleted.
 	 * @param version
 	 */
 	public void versionDeleted(int version);
 
-	/**
+    # /**
 	 * Returns the checkout version associated with the specified
 	 * checkoutId.  A returned version of -1 indicates that the 
 	 * checkoutId is not valid.
@@ -60,7 +60,7 @@ public interface VersionedDBListener {
 	 */
 	public int getCheckoutVersion(long checkoutId) throws IOException;
 
-	/**
+    # /**
 	 * Terminate the specified checkout.
 	 * A new version may or may not have been created.
 	 * @param checkoutId

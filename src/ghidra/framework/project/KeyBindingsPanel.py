@@ -342,7 +342,7 @@ public class KeyBindingsPanel extends JPanel {
 		return localActionMap;
 	}
 
-	/**
+    # /**
 	 * Size the columns.
 	 */
 	private void adjustTableColumns() {
@@ -441,7 +441,7 @@ public class KeyBindingsPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Processes KeyStroke entry from the text field.
 	 */
 	private void updateKeyStroke(KeyStroke ks) {
@@ -529,7 +529,7 @@ public class KeyBindingsPanel extends JPanel {
 //==================================================================================================
 // Inner Classes
 //==================================================================================================
-	/**
+    # /**
 	 * Selection listener class for the table model.
 	 */
 	private class TableSelectionListener implements ListSelectionListener {

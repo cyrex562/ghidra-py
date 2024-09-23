@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.apport;
 
-import java.io.*;
+
 import java.nio.file.AccessMode;
 import java.nio.file.Files;
 import java.nio.file.attribute.*;

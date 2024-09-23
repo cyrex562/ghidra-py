@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.msf.MsfStream;
@@ -32,7 +32,7 @@ import ghidra.util.exception.CancelledException;
  */
 public class GlobalSymbolInformation extends AbstractSymbolInformation {
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param pdbIn {@link AbstractPdb} that owns the Global Symbol Information to process.
 	 * @param streamNumber the stream number containing the symbol information
@@ -41,7 +41,7 @@ public class GlobalSymbolInformation extends AbstractSymbolInformation {
 		super(pdbIn, streamNumber);
 	}
 
-	/**
+    # /**
 	 * Deserializes and intializes {@link GlobalSymbolInformation} basic information from the
 	 * appropriate stream in the Pdb so that later queries can be made
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -62,7 +62,7 @@ public class GlobalSymbolInformation extends AbstractSymbolInformation {
 		symbolHashLength = (stream == null) ? 0 : stream.getLength();
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping information from this {@link GlobalSymbolInformation}
 	 * @param writer {@link Writer} to which to dump the information
 	 * @throws IOException issue reading PDBor upon issue writing to the {@link Writer}

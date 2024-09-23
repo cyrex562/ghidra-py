@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -119,7 +119,7 @@ abstract class OverlaySpaceDBAdapter {
 		return table != null ? table.getRecordCount() : 0;
 	}
 
-	/**
+    # /**
 	 * Adds existing overlay spaces to the factory.
 	 * @param factory the program address factory to add overlay spaces to
 	 * @throws IOException if database error occurs
@@ -151,7 +151,7 @@ abstract class OverlaySpaceDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Provide overlay space record iterator.  Older adapters will must translate records into
 	 * the latest schema format.
 	 * @return overlay space record iterator
@@ -159,14 +159,14 @@ abstract class OverlaySpaceDBAdapter {
 	 */
 	abstract RecordIterator getOverlayRecords() throws IOException;
 
-	/**
+    # /**
 	 * Update the overlay database table with the specified record
 	 * @param rec overlay record in latest schema format
 	 * @throws IOException if database error occurs
 	 */
 	abstract void updateOverlayRecord(DBRecord rec) throws IOException;
 
-	/**
+    # /**
 	 * Create a new overlay address space and associated record
 	 * @param factory program address factory which retains address spaces
 	 * @param overlayName overlay space name (may not contain `:`, space or other non-printable
@@ -182,7 +182,7 @@ abstract class OverlaySpaceDBAdapter {
 			String overlayName, AddressSpace baseSpace)
 			throws IOException, DuplicateNameException, InvalidNameException;
 
-	/**
+    # /**
 	 * Removes the named space from the database.  Caller is responsible for updating address
 	 * factory.
 	 * @param name the name of the overlay space to remove
@@ -191,7 +191,7 @@ abstract class OverlaySpaceDBAdapter {
 	 */
 	abstract boolean removeOverlaySpace(String name) throws IOException;
 
-	/**
+    # /**
 	 * Rename the overlay space from oldName to newName.  Caller is responsible for updating
 	 * address factory and ensuring that newName does not duplicate that of another address space.
 	 * @param oldName old overlay name
@@ -201,14 +201,14 @@ abstract class OverlaySpaceDBAdapter {
 	 */
 	abstract boolean renameOverlaySpace(String oldName, String newName) throws IOException;
 
-	/**
+    # /**
 	 * Reconcile overlay spaces following cache invalidation (e.g., undo/redo)
 	 * @param factory program address factory which retains address spaces
 	 * @throws IOException if database error occurs
 	 */
 	abstract void updateOverlaySpaces(ProgramAddressFactory factory) throws IOException;
 
-	/**
+    # /**
 	 * Translate overlay address spaces for a new language provider
 	 * and initialize the new addrFactory with the translated overlay spaces.
 	 * All non-overlay address spaces within the address factory should already

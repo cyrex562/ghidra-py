@@ -20,7 +20,7 @@ public final class SquashConstants {
 	// SquashFS magic bytes ("hsqs")
 	public static final byte[] MAGIC = { 0x68, 0x73, 0x71, 0x73 };
 
-	/**
+    # /**
 	 * Compression types
 	 */
 	public static final int COMPRESSION_TYPE_GZIP = 1;
@@ -46,7 +46,7 @@ public final class SquashConstants {
 	public static final int COMPRESSION_OPTIONS_EXIST = 0x0400;
 	public static final int UNCOMPRESSED_IDS = 0x0800;
 
-	/**
+    # /**
 	 * Inode Types
 	 */
 	public static final int INODE_TYPE_BASIC_DIRECTORY = 0x01;
@@ -64,14 +64,14 @@ public final class SquashConstants {
 	public static final int INODE_TYPE_EXTENDED_FIFO = 0x0D;
 	public static final int INODE_TYPE_EXTENDED_SOCKET = 0x0E;
 
-	/**
+    # /**
 	 * Data sizes
 	 */
 	public static final int MAX_UNIT_BLOCK_SIZE = 0x2000; // 8192 bytes = 8KiB
 	public static final int FRAGMENT_ENTRY_LENGTH = 16;
 	public static final int MAX_SYMLINK_DEPTH = 100;
 
-	/**
+    # /**
 	 * General bit masks
 	 */
 	// In the superblock, all bits are set for a reference to an omitted section

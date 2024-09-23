@@ -1,26 +1,26 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.symbol;
 
 # /**
- * Replace illegal characters in the given name with '_'.  The transformer treats the name as a
- * C++ symbol. Letters and digits are generally legal. '~' is allowed at the start of the symbol.
- * Template parameters, surrounded by '&lt;' and '&gt;', allow additional special characters. 
- * Certain special characters are allowed after the keyword "operator".
- */
+# * Replace illegal characters in the given name with '_'.  The transformer treats the name as a
+# * C++ symbol. Letters and digits are generally legal. '~' is allowed at the start of the symbol.
+# * Template parameters, surrounded by '&lt;' and '&gt;', allow additional special characters. 
+# * Certain special characters are allowed after the keyword "operator".
+# */
 public class IllegalCharCppTransformer implements NameTransformer {
 
 	private static int[] legalChars = null;

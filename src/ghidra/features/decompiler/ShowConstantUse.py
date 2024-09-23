@@ -155,7 +155,7 @@ public class ShowConstantUse extends GhidraScript {
 		return f;
 	}
 
-	/**
+    # /**
 	 * Builds the configurable columns for the TableDialog. More columns could be added.
 	 * 
 	 * @param tableChooserDialog the dialog 
@@ -287,7 +287,7 @@ public class ShowConstantUse extends GhidraScript {
 		tableChooserDialog.addCustomColumn(noteColumn);
 	}
 
-	/**
+    # /**
 	 * Sample execution task Execution class called whenever the execute button
 	 * in the table is called. NOTE: the execute button is not setup, so this is
 	 * just and example
@@ -378,7 +378,7 @@ public class ShowConstantUse extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Try to locate the Varnode that represents the variable in the listing or
 	 * decompiler. In the decompiler this could be a local/parameter at any
 	 * point in the decompiler. In the listing, it must be a parameter variable.
@@ -539,7 +539,7 @@ public class ShowConstantUse extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Backtrack to a constant given a varnode within a decompiled function This
 	 * isn't useful for functions that can't be decompiled
 	 * 
@@ -573,7 +573,7 @@ public class ShowConstantUse extends GhidraScript {
 		return followFunctionParamToConstant(funcList, constUse, tableChooserDialog);
 	}
 
-	/**
+    # /**
 	 * Backtrack to a constant given a start position of a parameter of a given
 	 * function Useful if you want to start from a function paramter.
 	 * 

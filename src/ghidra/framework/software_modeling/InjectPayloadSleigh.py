@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,9 +34,9 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
 # /**
- * <code>InjectPayloadSleigh</code> defines an InjectPayload of p-code which is defined via
- * a String passed to the sleigh compiler
- */
+# * <code>InjectPayloadSleigh</code> defines an InjectPayload of p-code which is defined via
+# * a String passed to the sleigh compiler
+# */
 public class InjectPayloadSleigh implements InjectPayload {
 
 	private ConstructTpl pcodeTemplate;
@@ -51,7 +51,7 @@ public class InjectPayloadSleigh implements InjectPayload {
 	protected String source;			// Source of this payload
 	private String parseString;		// String to be parsed for pcode
 
-	/**
+    # /**
 	 * Constructor for partial clone of another payload whose p-code failed to parse
 	 * @param pcode is substitute p-code to replace the failed parse
 	 * @param failedPayload is the failed payload
@@ -70,7 +70,7 @@ public class InjectPayloadSleigh implements InjectPayload {
 		isfallthru = computeFallThru();
 	}
 
-	/**
+    # /**
 	 * Constructor for a dummy payload, given just a name
 	 * @param pcode is the dummy p-code sequence
 	 * @param tp is the type of injection
@@ -90,7 +90,7 @@ public class InjectPayloadSleigh implements InjectPayload {
 		isfallthru = computeFallThru();
 	}
 
-	/**
+    # /**
 	 * Constructor for use where restoreXml is overridden and provides name and type
 	 * @param sourceName is string describing the source of this payload
 	 */
@@ -104,7 +104,7 @@ public class InjectPayloadSleigh implements InjectPayload {
 		source = sourceName;
 	}
 
-	/**
+    # /**
 	 * Provide basic form,  restoreXml fills in the rest
 	 * @param nm  must provide formal name
 	 * @param tp  must provide type
@@ -210,7 +210,7 @@ public class InjectPayloadSleigh implements InjectPayload {
 		return true;
 	}
 
-	/**
+    # /**
 	 *  All input and output parameters must have a unique index.
 	 * Order them so that inputs come first, then outputs
 	 */
@@ -329,7 +329,7 @@ public class InjectPayloadSleigh implements InjectPayload {
 		isfallthru = computeFallThru();
 	}
 
-	/**
+    # /**
 	 * Verify that the storage locations passed -con- match the restrictions for this payload
 	 * @param con is InjectContext containing parameter storage locations
 	 * @throws NotFoundException for expected aspects of the context that are not present
@@ -366,7 +366,7 @@ public class InjectPayloadSleigh implements InjectPayload {
 		}
 	}
 
-	/**
+    # /**
 	 * Set-up operands in the parser state so that they pick up storage locations from InjectContext
 	 * @param con is the InjectContext containing storage locations
 	 * @param walker is the sleigh parser state object
@@ -440,7 +440,7 @@ public class InjectPayloadSleigh implements InjectPayload {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Build a dummy p-code sequence to use in place of a normal parsed payload.
 	 * A ConstructTpl is built out of Varnode and PcodeOp templates that can
 	 * be assigned directly to the pcodeTemplate field of the payload.

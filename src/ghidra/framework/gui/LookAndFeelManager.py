@@ -49,7 +49,7 @@ public abstract class LookAndFeelManager {
 		this.themeManager = themeManager;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link LafType} managed by this manager.
 	 * @return the {@link LafType}
 	 */
@@ -57,7 +57,7 @@ public abstract class LookAndFeelManager {
 		return laf;
 	}
 
-	/**
+    # /**
 	 * Installs the {@link LookAndFeel}
 	 * @throws ClassNotFoundException if the <code>LookAndFeel</code>
 	 *           class could not be found
@@ -77,7 +77,7 @@ public abstract class LookAndFeelManager {
 		updateComponentUis();
 	}
 
-	/**
+    # /**
 	 * Called when all colors, fonts, and icons may have changed
 	 * @param javaDefaults the current set of java defaults so that those ids can be updated
 	 * special as needed by the current {@link LookAndFeel}
@@ -127,7 +127,7 @@ public abstract class LookAndFeelManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Called when one or more colors have changed.
 	 */
 	public void colorsChanged() {
@@ -135,7 +135,7 @@ public abstract class LookAndFeelManager {
 		repaintAll();
 	}
 
-	/**
+    # /**
 	 * Called when one or more icons have changed.
 	 * @param changedIconIds set of icon ids affected by this icon change
 	 * @param newIcon the new icon to use for the given set of icon ids
@@ -157,7 +157,7 @@ public abstract class LookAndFeelManager {
 		repaintAll();
 	}
 
-	/**
+    # /**
 	 * Called when one or more fonts have changed.
 	 * <p>
 	 * This will update the Java {@link UIManager} and trigger a reload of the UIs.
@@ -198,7 +198,7 @@ public abstract class LookAndFeelManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Binds the component to the font identified by the given font id. Whenever the font for
 	 * the font id changes, the component will be updated with the new font.
 	 * @param component the component to set/update the font
@@ -215,7 +215,7 @@ public abstract class LookAndFeelManager {
 		register.addComponent(component);
 	}
 
-	/**
+    # /**
 	 * Binds the component to the font identified by the given font id. Whenever the font for
 	 * the font id changes, the component will be updated with the new font.
 	 * <p>
@@ -237,7 +237,7 @@ public abstract class LookAndFeelManager {
 		register.addComponent(component, fontStyle);
 	}
 
-	/**
+    # /**
 	 * Removes the given component and id binding from this class.
 	 * @param component the component to remove
 	 * @param fontId the id used when originally registered
@@ -270,7 +270,7 @@ public abstract class LookAndFeelManager {
 		return font;
 	}
 
-	/**
+    # /**
 	 * Subclasses may override this method to install a specific look and feel.
 	 *
 	 * @throws ClassNotFoundException if the <code>LookAndFeel</code>
@@ -288,7 +288,7 @@ public abstract class LookAndFeelManager {
 
 	}
 
-	/**
+    # /**
 	 * Subclass may override this method to do specific LookAndFeel fixes.
 	 * <p>
 	 * This will get called after default values are loaded.  This means that any values installed
@@ -309,7 +309,7 @@ public abstract class LookAndFeelManager {
 		installCursorBlinkingProperties();
 	}
 
-	/**
+    # /**
 	 * Extracts java default colors, fonts, and icons and stores them in the
 	 * {@link ThemeManager} and updates the {@link UIDefaults} by installing GColors for all
 	 * color values and installing any overridden fonts or icons.
@@ -407,7 +407,7 @@ public abstract class LookAndFeelManager {
 		registerAction(selectEndOfLineAction, SelectEndOfLineAction.KEY_STROKE, UIPrefixValues);
 	}
 
-	/** Allows you to globally set the font size (don't use this method!) */
+    # /** Allows you to globally set the font size (don't use this method!) */
 	private void setGlobalFontSizeOverride(int fontSize) {
 		UIDefaults defaults = UIManager.getDefaults();
 
@@ -434,7 +434,7 @@ public abstract class LookAndFeelManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Searches the given UIDefaults for ids whose value matches the given class
 	 * @param defaults the UIDefaults to search
 	 * @param clazz the value class to look for (i.e., Color, Font, or Icon)

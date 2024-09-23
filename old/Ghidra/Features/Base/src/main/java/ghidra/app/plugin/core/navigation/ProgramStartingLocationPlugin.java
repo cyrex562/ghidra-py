@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.navigation;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.jdom.Element;

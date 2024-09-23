@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dtb;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,7 +67,7 @@ public class DtTableHeader implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) magic value.
 	 * @return the Device Tree (DT) magic value
 	 */
@@ -75,7 +75,7 @@ public class DtTableHeader implements StructConverter {
 		return magic;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) total size.
 	 * @return the Device Tree (DT) total size
 	 */
@@ -83,7 +83,7 @@ public class DtTableHeader implements StructConverter {
 		return total_size;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) header size.
 	 * @return the Device Tree (DT) header size
 	 */
@@ -91,7 +91,7 @@ public class DtTableHeader implements StructConverter {
 		return header_size;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) entry size.
 	 * @return the Device Tree (DT) entry size
 	 */
@@ -99,7 +99,7 @@ public class DtTableHeader implements StructConverter {
 		return dt_entry_size;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) entry count.
 	 * @return the Device Tree (DT) entry count
 	 */
@@ -107,7 +107,7 @@ public class DtTableHeader implements StructConverter {
 		return dt_entry_count;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) entries offset.
 	 * @return the Device Tree (DT) entries offset
 	 */
@@ -115,7 +115,7 @@ public class DtTableHeader implements StructConverter {
 		return dt_entries_offset;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) page size.
 	 * @return the Device Tree (DT) page size
 	 */
@@ -123,7 +123,7 @@ public class DtTableHeader implements StructConverter {
 		return page_size;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) version.
 	 * @return the Device Tree (DT) version
 	 */
@@ -131,7 +131,7 @@ public class DtTableHeader implements StructConverter {
 		return version;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) entries.
 	 * @return the Device Tree (DT) entries
 	 */

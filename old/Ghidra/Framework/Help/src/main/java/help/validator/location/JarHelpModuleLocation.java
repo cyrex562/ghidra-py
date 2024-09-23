@@ -16,7 +16,7 @@
 package help.validator.location;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.*;
 import java.nio.file.*;
 import java.util.HashMap;

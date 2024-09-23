@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.cdex;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.dex.format.DexHeader;
@@ -55,7 +55,7 @@ public class CDexHeader extends DexHeader {
 		return feature_flags_;
 	}
 
-	/**
+    # /**
 	 * Position in the compact dex file for the debug info table data starts.
 	 * @return position in the compact dex file for the debug info table data starts
 	 */
@@ -63,7 +63,7 @@ public class CDexHeader extends DexHeader {
 		return debug_info_offsets_pos_;
 	}
 
-	/**
+    # /**
 	 * Offset into the debug info table data where the lookup table exists.
 	 * @return offset into the debug info table data where the lookup table is.
 	 */
@@ -71,7 +71,7 @@ public class CDexHeader extends DexHeader {
 		return debug_info_offsets_table_offset_;
 	}
 
-	/**
+    # /**
 	 * Base offset of where debug info starts in the dex file.
 	 * @return base offset of where debug info starts in the dex file
 	 */
@@ -79,7 +79,7 @@ public class CDexHeader extends DexHeader {
 		return debug_info_base_;
 	}
 
-	/**
+    # /**
 	 * Range of the shared data section owned by the dex file.
 	 * @return range of the shared data section owned by the dex file
 	 */
@@ -87,7 +87,7 @@ public class CDexHeader extends DexHeader {
 		return owned_data_begin_;
 	}
 
-	/**
+    # /**
 	 * Range of the shared data section owned by the dex file.
 	 * @return range of the shared data section owned by the dex file.
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.app.script;
 
-import java.io.IOException;
+
 import java.io.PrintWriter;
 import java.util.regex.Pattern;
 

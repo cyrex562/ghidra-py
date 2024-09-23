@@ -190,7 +190,7 @@ public class ClangLayoutController implements LayoutModel, LayoutModelListener {
 		return elements;
 	}
 
-	/**
+    # /**
 	 * Update to the current Decompiler display options
 	 */
 	@SuppressWarnings("deprecation")

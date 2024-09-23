@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.List;
 import java.util.Set;

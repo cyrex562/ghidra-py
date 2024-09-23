@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.hfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.formats.gfilesystem.FSRLRoot;

@@ -25,7 +25,7 @@ public class Lock {
 	private int waiterCount = 0;
 	private String name;
 
-	/**
+    # /**
 	 * Creates an instance of a lock for synchronization within Ghidra.
 	 * 
 	 * @param name the name of this lock
@@ -34,7 +34,7 @@ public class Lock {
 		this.name = name;
 	}
 
-	/**
+    # /**
 	 * Acquire this synchronization lock. (i.e. begin synchronizing on this named
 	 * lock.)
 	 */
@@ -65,7 +65,7 @@ public class Lock {
 		}
 	}
 
-	/**
+    # /**
 	 * Releases this lock, since you are through with the code that needed
 	 * synchronization.
 	 */
@@ -88,7 +88,7 @@ public class Lock {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the thread that currently owns the lock.
 	 * 
 	 * @return the thread that owns the lock or null.

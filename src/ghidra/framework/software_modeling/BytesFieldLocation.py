@@ -23,7 +23,7 @@ import ghidra.program.model.listing.*;
 */
 public class BytesFieldLocation extends CodeUnitLocation {
 
-	/**
+    # /**
 	 * Create a new BytesFieldLocation which represents a specific byte address.
 	 * @param program the program for this location.
 	 * @param addr the address of the code unit containing this location.
@@ -39,7 +39,7 @@ public class BytesFieldLocation extends CodeUnitLocation {
 		super(program, addr, byteAddress, componentPath, 0, 0, columnInByte);
 	}
 
-	/**
+    # /**
 	 * Creates a new BytesFieldLocation for the given address. The address will be adjusted to the 
 	 * beginning of the code unit containing that address(if it exists).  The original address can 
 	 * be retrieved using the "getByteAddress()" method.
@@ -62,14 +62,14 @@ public class BytesFieldLocation extends CodeUnitLocation {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Default constructor needed for restoring
 	 * a byte field location from XML.
 	 */
 	public BytesFieldLocation() {
 	}
 
-	/**
+    # /**
 	 * Returns the index of byte that represents the current program location. Sources that do not 
 	 * get this specific should simply return 0.
 	 * @return the index
@@ -78,7 +78,7 @@ public class BytesFieldLocation extends CodeUnitLocation {
 		return (int) getByteAddress().subtract(getAddress());
 	}
 
-	/**
+    # /**
 	 * This is overridden here because previous versions used to store the byte index in the
 	 * column field.  So if anyone was incorrectly using getColumn() to get the byte index,
 	 * then this override will allow that to keep working.
@@ -88,7 +88,7 @@ public class BytesFieldLocation extends CodeUnitLocation {
 		return getByteIndex();
 	}
 
-	/**
+    # /**
 	 * Returns the character position within the byte specified by getByteIndex().  Normally,
 	 * this is 1, 2, or 3 corresponding to before the byte, between the nibbles of the byte or
 	 * past the byte.  Sometimes, extra delimiters may exist allowing the position to be

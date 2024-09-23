@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.yaffs2;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.*;
@@ -47,7 +47,7 @@ public class YAFFS2Header implements StructConverter {
     private long shadowsObject;
     private long isShrink;
 
-	/**
+    # /**
      * Construct an entry from an archive's header bytes.
      */
     public YAFFS2Header(byte[] buffer) {

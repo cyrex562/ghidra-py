@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.address;
 
 import ghidra.program.model.mem.Memory;
@@ -22,11 +22,11 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 
 # /** 
- * The global namespace implementation class
- */
+# * The global namespace implementation class
+# */
 public class GlobalNamespace implements Namespace {
 
-	/**
+    # /**
 	 * Global namespace name which may (incorrectly) appear as the first 
 	 * element within a namespace path (e.g., <code>Global::Foo::Bar</code>).  It is 
 	 * preferred that the Global namespace be omitted in favor of <code>Foo::Bar</code>.
@@ -36,7 +36,7 @@ public class GlobalNamespace implements Namespace {
 	final Memory memory;
 	final Symbol globalSymbol;
 
-	/**
+    # /**
 	 * Constructs a new GlobalNamespace
 	 * @param memory the memory associated with this global namespace
 	 */
@@ -45,7 +45,7 @@ public class GlobalNamespace implements Namespace {
 		globalSymbol = new GlobalSymbol(this);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getSymbol()
 	 */
 	@Override
@@ -53,7 +53,7 @@ public class GlobalNamespace implements Namespace {
 		return globalSymbol;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getName()
 	 */
 	@Override
@@ -61,7 +61,7 @@ public class GlobalNamespace implements Namespace {
 		return GLOBAL_NAMESPACE_NAME;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getID()
 	 */
 	@Override
@@ -69,7 +69,7 @@ public class GlobalNamespace implements Namespace {
 		return Namespace.GLOBAL_NAMESPACE_ID;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getParentNamespace()
 	 */
 	@Override
@@ -77,7 +77,7 @@ public class GlobalNamespace implements Namespace {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getBody()
 	 */
 	@Override
@@ -85,7 +85,7 @@ public class GlobalNamespace implements Namespace {
 		return new AddressSet(memory);
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -93,7 +93,7 @@ public class GlobalNamespace implements Namespace {
 		return getName();
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -107,7 +107,7 @@ public class GlobalNamespace implements Namespace {
 		return getClass() == obj.getClass();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getName(boolean)
 	 */
 	@Override
@@ -115,7 +115,7 @@ public class GlobalNamespace implements Namespace {
 		return getName();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#setParentNamespace(ghidra.program.model.symbol.Namespace)
 	 */
 	@Override

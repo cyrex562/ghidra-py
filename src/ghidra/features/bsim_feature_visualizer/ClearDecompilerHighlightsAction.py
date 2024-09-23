@@ -45,7 +45,7 @@ public class ClearDecompilerHighlightsAction extends DockingAction {
 		clearHighlights();
 	}
 
-	/**
+    # /**
 	 * Clears any decompiler highlights associated with {@link BSimFeatureVisualizerPlugin}.
 	 */
 	void clearHighlights() {

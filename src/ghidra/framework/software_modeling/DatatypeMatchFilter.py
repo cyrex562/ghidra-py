@@ -18,7 +18,7 @@ package ghidra.program.model.lang.protorules;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.lang.PrototypePieces;

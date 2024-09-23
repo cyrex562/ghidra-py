@@ -20,7 +20,7 @@ import ghidra.framework.plugintool.ServiceProvider;
 
 public interface Fixup {
 
-	/**
+    # /**
 	 * Returns a description of what this Fixup.  Typically, it will either be a simple suggestion
 	 * for something the user could do, or it might be a description of whate the fixup() method will
 	 * attempt to do to address some issue.
@@ -28,14 +28,14 @@ public interface Fixup {
 	 */
 	public String getDescription();
 
-	/**
+    # /**
 	 * Return true if this Fixup object can automatically perform some action to address the issue. false 
 	 * if the fixup() method does nothing.
 	 * @return
 	 */
 	public boolean canFixup();
 
-	/**
+    # /**
 	 * Attempts to perform some action or task to "fix" the related issue.
 	 * @param provider a service provider that can provide various services.
 	 * @return true if the fixup performed its intended action.

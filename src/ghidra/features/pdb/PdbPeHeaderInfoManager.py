@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.pdb.pdbapplicator;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -44,7 +44,7 @@ public class PdbPeHeaderInfoManager {
 	private boolean isAslr = false;
 	private long originalImageBase = 0;
 
-	/**
+    # /**
 	 * Manager of CLI-related tables that we might need access to for PDB processing.
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working (used for
 	 *  logging purposes only).
@@ -77,7 +77,7 @@ public class PdbPeHeaderInfoManager {
 		return originalImageBase;
 	}
 
-	/**
+    # /**
 	 * Get CLI metadata for specified tableNum and rowNum within the CLI
 	 * metadata stream.
 	 * @param tableNum CLI metadata stream table index
@@ -99,7 +99,7 @@ public class PdbPeHeaderInfoManager {
 		return table.getRow(rowNum);
 	}
 
-	/**
+    # /**
 	 * Get CLI stream metadata.  Results directly filled into data members
 	 */
 	private void retrievePEHeaderInformation() {

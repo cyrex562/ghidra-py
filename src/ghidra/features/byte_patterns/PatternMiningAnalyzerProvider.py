@@ -42,7 +42,7 @@ public class PatternMiningAnalyzerProvider extends ByteSequenceAnalyzerProvider 
 
 	private DockingAction mineClosedPatternsAction;
 
-	/**
+    # /**
 	 * Create a provider for analyzing byte sequences with the option to mine selected sequences
 	 * for closed patterns
 	 * @param plugin plugin

@@ -33,7 +33,7 @@ public class VtShapeMsType extends AbstractMsType {
 	private int count; // Number of entries in the VFT.
 	private List<VtShapeDescriptorMsProperty> descriptorList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -71,7 +71,7 @@ public class VtShapeMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the count of elements.
 	 * @return the count.
 	 */
@@ -79,7 +79,7 @@ public class VtShapeMsType extends AbstractMsType {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Returns the descriptor list for the shape.
 	 * @return the descriptor list.
 	 */
@@ -87,7 +87,7 @@ public class VtShapeMsType extends AbstractMsType {
 		return descriptorList;
 	}
 
-	/**
+    # /**
 	 * Tells whether the the {@link VtShapeDescriptorMsProperty} is present.
 	 * @param descriptor the {@link VtShapeDescriptorMsProperty} to check.
 	 * @return True if the {@link VtShapeDescriptorMsProperty} is present.

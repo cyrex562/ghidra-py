@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -47,7 +47,7 @@ public class AnnotationElementValuePair implements StructConverter {
 		value = new AnnotationElementValue(reader);
 	}
 
-	/**
+    # /**
 	 * The value of the element_name_index item must be a valid index
 	 * into the constant_pool table. The constant_pool entry at that index
 	 * must be a CONSTANT_Utf8_info (?4.4.7) structure representing a valid
@@ -59,7 +59,7 @@ public class AnnotationElementValuePair implements StructConverter {
 		return elementNameIndex & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the value item represents the value of the element-value
 	 * pair represented by this element_value_pairs entry.
 	 * @return the value of the element-value pair

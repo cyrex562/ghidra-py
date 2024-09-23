@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -24,10 +24,10 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- *
- * Adapter to access the Array database table for array data types. 
- * 
- */
+# *
+# * Adapter to access the Array database table for array data types. 
+# * 
+# */
 abstract class ArrayDBAdapter {
 	static final Schema SCHEMA = ArrayDBAdapterV1.V1_SCHEMA;
 	static final int ARRAY_DT_ID_COL = ArrayDBAdapterV1.V1_ARRAY_DT_ID_COL;
@@ -35,7 +35,7 @@ abstract class ArrayDBAdapter {
 	static final int ARRAY_ELEMENT_LENGTH_COL = ArrayDBAdapterV1.V1_ARRAY_ELEMENT_LENGTH_COL;
 	static final int ARRAY_CAT_COL = ArrayDBAdapterV1.V1_ARRAY_CAT_COL;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the {@link ArrayDB} database table.
 	 * @param handle handle to the database to be accessed.
 	 * @param openMode the mode this adapter is to be opened for (CREATE, UPDATE, READ_ONLY, UPGRADE).
@@ -116,7 +116,7 @@ abstract class ArrayDBAdapter {
 
 	abstract Field[] getRecordIdsInCategory(long categoryID) throws IOException;
 
-	/**
+    # /**
 	 * Get the number of array datatype records
 	 * @return total number of composite records
 	 */

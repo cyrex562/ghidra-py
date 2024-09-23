@@ -56,7 +56,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 	private static SettingsDefinition[] SETTINGS_DEFS =
 		{ FormatSettingsDefinition.DEF_HEX, PADDING, ENDIAN, MNEMONIC };
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param name a unique signed/unsigned data-type name (also used as the mnemonic)
@@ -66,7 +66,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		super(null, name, dtm);
 	}
 
-	/**
+    # /**
 	 * Return the Format settings definition included in the settings definition array
 	 * 
 	 * @see #getSettingsDefinitions()
@@ -81,7 +81,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return SETTINGS_DEFS;
 	}
 
-	/**
+    # /**
 	 * Determine if this type is signed.
 	 * @return true if this is a signed integer data-type
 	 */
@@ -104,14 +104,14 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return name;
 	}
 
-	/**
+    # /**
 	 * @return the Assembly style data-type declaration for this data-type.
 	 */
 	public String getAssemblyMnemonic() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * @return the C style data-type mnemonic for this data-type. NOTE: currently the same as
 	 *         getCDeclaration().
 	 */
@@ -120,7 +120,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return str != null ? str : name;
 	}
 
-	/**
+    # /**
 	 * @return the C style data-type declaration for this data-type. Null is returned if no
 	 *         appropriate declaration exists.
 	 */
@@ -173,7 +173,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return new Scalar(size * 8, val, isSigned());
 	}
 
-	/**
+    # /**
 	 * Get the number of bits in the integral type
 	 * 
 	 * @param type the type
@@ -289,7 +289,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return getRepresentation(value, settings, 8 * length);
 	}
 
-	/**
+    # /**
 	 * Get integer representation of the big-endian value.
 	 * <p>
 	 * Does not handle CHAR format, use
@@ -388,7 +388,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 			throw new DataTypeEncodeException(repr, this, e);
 		}
 
-		/**
+	    # /**
 		 * Ghidra doesn't actually heed signedness unless the format is DECIMAL. Thus, for user
 		 * input, and to make this an inverse of getRepresentation, we'll adjust values between SMAX
 		 * and UMAX to ensure they get encoded as expected, rather than rejected. We'll still accept
@@ -435,7 +435,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return the data-type with the opposite signedness from this data-type. For example, this
 	 *         method on IntegerDataType will return an instance of UnsignedIntegerDataType.
 	 */
@@ -449,7 +449,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 	private static AbstractIntegerDataType[] signedTypes;
 	private static AbstractIntegerDataType[] unsignedTypes;
 
-	/**
+    # /**
 	 * An "map" of the first 8 (by size) signed integer data types, where the element at index
 	 * <code>i</code> points to the datatype of size <code>i+1</code>, with additional types with no
 	 * size restriction appended after the first 8.
@@ -467,7 +467,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return signedTypes;
 	}
 
-	/**
+    # /**
 	 * An "map" of the first 8 (by size) unsigned integer data types, where the element at index
 	 * <code>i</code> points to the datatype of size <code>i+1</code>, with additional types with no
 	 * size restriction appended after the first 8.
@@ -485,7 +485,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return unsignedTypes;
 	}
 
-	/**
+    # /**
 	 * Get a Signed Integer data-type instance of the requested size
 	 * 
 	 * @param size data type size, sizes greater than 8 (and other than 16) will cause an
@@ -524,7 +524,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return getSignedTypes()[size - 1];
 	}
 
-	/**
+    # /**
 	 * Returns all built-in signed integer data-types.
 	 * 
 	 * @param dtm optional program data-type manager, if specified generic data-types will be
@@ -557,7 +557,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return dataTypes;
 	}
 
-	/**
+    # /**
 	 * Get a Unsigned Integer data-type instance of the requested size
 	 * 
 	 * @param size data type size, sizes greater than 8 (and other than 16) will cause an undefined
@@ -596,7 +596,7 @@ public abstract class AbstractIntegerDataType extends BuiltIn implements ArraySt
 		return getUnsignedTypes()[size - 1];
 	}
 
-	/**
+    # /**
 	 * Returns all built-in unsigned integer data-types
 	 * 
 	 * @param dtm optional program data-type manager, if specified generic data-types will be

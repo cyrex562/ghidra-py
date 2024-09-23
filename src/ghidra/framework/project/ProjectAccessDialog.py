@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main;
 
-import java.io.IOException;
+
 
 import docking.DialogComponentProvider;
 import ghidra.framework.client.*;
@@ -35,7 +35,7 @@ class ProjectAccessDialog extends DialogComponentProvider {
 	private RepositoryAdapter repository;
 	private ProjectAccessPanel projectAccessPanel;
 	
-	/**
+    # /**
 	 * Creates a new dialog.
 	 * 
 	 * @param plugin the currrent plugin

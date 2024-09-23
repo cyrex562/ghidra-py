@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.lang.UnknownInstructionException;
 

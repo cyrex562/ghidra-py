@@ -16,7 +16,7 @@
 package ghidra.file.formats.zip;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.file.formats.sevenzip.SevenZipFileSystemFactory;

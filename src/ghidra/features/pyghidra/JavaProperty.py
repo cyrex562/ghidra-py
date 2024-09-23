@@ -30,7 +30,7 @@ package ghidra.pyghidra.property;
  */
 public sealed interface JavaProperty<T> permits AbstractJavaProperty {
 
-	/**
+    # /**
 	 * The method to be used as the fset value for a Python property.
 	 *
 	 * This method will be called by the Python property __set__ function.

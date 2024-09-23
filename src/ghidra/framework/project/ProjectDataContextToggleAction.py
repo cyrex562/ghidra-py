@@ -34,7 +34,7 @@ public abstract class ProjectDataContextToggleAction extends ToggleDockingAction
 		return isEnabledForContext(context);
 	}
 
-	/**
+    # /**
 	 * Signals that this action can work on normal project data, as well as transient data. 
 	 * Transient data is that which will appear in a temporary project dialog.
 	 * 

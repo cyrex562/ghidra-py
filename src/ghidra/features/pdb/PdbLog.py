@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 import java.util.function.Supplier;
 
 import generic.io.NullWriter;
@@ -35,7 +35,7 @@ public class PdbLog {
 	private static final boolean SYSTEM_LOGGING_ENABLED = Boolean.getBoolean("ghidra.pdb.logging");
 	private static boolean enabled = SYSTEM_LOGGING_ENABLED;
 
-	/**
+    # /**
 	 * Enable or disable future messages to be output to the appropriate log resource.  This
 	 * method gives control to the client to be able to turn on/off the messaging output without
 	 * having to do conditional checks at each point that one of the messaging methods is called.
@@ -49,7 +49,7 @@ public class PdbLog {
 		enabled = enable;
 	}
 
-	/**
+    # /**
 	 * Outputs a message to the PDB log if messaging has been enable, else ignored.  This method
 	 * uses a format string and a variable arguments list of lambdas to allow for deferred
 	 * processing of the message to output.  Thus, when message output is disabled, the client
@@ -85,7 +85,7 @@ public class PdbLog {
 		}
 	}
 
-	/**
+    # /**
 	 * Outputs a message to the PDB log if messaging has been enable, else ignored.  This method
 	 * uses a {@link Supplier}&lt;{@link String}&gt; to allow for deferred processing of the message
 	 * to output.  Thus, when message output is disabled, the client does not endure as much cost
@@ -110,7 +110,7 @@ public class PdbLog {
 		}
 	}
 
-	/**
+    # /**
 	 * Outputs a {@link String} message to the PDB log if messaging has been enable, else ignored
 	 * @param message a {@link String} message to be output
 	 * @see #setEnabled(boolean)
@@ -144,7 +144,7 @@ public class PdbLog {
 	//  "when-parsed" detection.  Not sure if when-parsed detection can work as the min/max
 	//  might not have been read, depending on the order of how record sets are read.
 	// TODO: is using PdbLog here.  Is that what we intend?
-	/**
+    # /**
 	 * Logs fact of record index out of range (detection is performed by caller)
 	 * @param tpi the TypeProgramInterface involved
 	 * @param recordNumber the record number to report
@@ -154,7 +154,7 @@ public class PdbLog {
 			", max: " + tpi.getTypeIndexMaxExclusive());
 	}
 
-	/**
+    # /**
 	 * Logs fact of record index out of range (detection is performed by caller)
 	 * @param type {@link AbstractMsType} found
 	 * @param itemRequiredClass class expected
@@ -164,7 +164,7 @@ public class PdbLog {
 			", expected: " + itemRequiredClass.getSimpleName());
 	}
 
-	/**
+    # /**
 	 * Cleans up the class by closing resources
 	 */
 	public static void dispose() {
@@ -179,7 +179,7 @@ public class PdbLog {
 		fileWriter = null;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Writer} for logging
 	 * @return a {@link Writer} for for logging
 	 */
@@ -187,7 +187,7 @@ public class PdbLog {
 		return enabled ? getFileWriter() : getNullWriter();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link FileWriter} for the log file.  If the file is already open, it is
 	 * returned.  If not already open, it is opened and previous contents are deleted
 	 * @return a {@link FileWriter} for the log file
@@ -208,7 +208,7 @@ public class PdbLog {
 		return fileWriter;
 	}
 
-	/**
+    # /**
 	 * Returns a {@link NullWriter} for the log file when chosen instead of a FileWriter.  If
 	 * one already exists, it is returned.  Otherwise a new one is created
 	 * @return a {@link NullWriter} for the log file

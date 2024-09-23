@@ -22,7 +22,7 @@ import java.util.Set;
  * A simulated UNIX user
  */
 public class EmuUnixUser {
-	/**
+    # /**
 	 * The default (root?) user
 	 */
 	public static final EmuUnixUser DEFAULT_USER = new EmuUnixUser(0, Set.of());
@@ -30,7 +30,7 @@ public class EmuUnixUser {
 	public final int uid;
 	public final Collection<Integer> gids;
 
-	/**
+    # /**
 	 * Construct a new user
 	 * 
 	 * @param uid the user's uid

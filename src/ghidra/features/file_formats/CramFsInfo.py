@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -29,7 +29,7 @@ public class CramFsInfo implements StructConverter {
 	private int blocks;
 	private int files;
 
-	/**
+    # /**
 	 * This constructor reads the cramfs info/attributes
 	 * @param reader the binary reader for the cramfs info/attributes.
 	 * @throws IOException if there is an error while reading the cramfs info/attributes.
@@ -41,7 +41,7 @@ public class CramFsInfo implements StructConverter {
 		files = reader.readNextInt();
 	}
 
-	/**
+    # /**
 	 * Returns the crc value of the cramfs info.
 	 * @return the crc value of the cramfs info.
 	 */
@@ -49,7 +49,7 @@ public class CramFsInfo implements StructConverter {
 		return crc;
 	}
 
-	/**
+    # /**
 	 * Returns the edition of the cramfs info.
 	 * @return the edition of the cramfs info.
 	 */
@@ -57,7 +57,7 @@ public class CramFsInfo implements StructConverter {
 		return edition;
 	}
 
-	/**
+    # /**
 	 * Returns the blocks of the cramfs info.
 	 * @return the blocks of the cramfs info.
 	 */
@@ -65,7 +65,7 @@ public class CramFsInfo implements StructConverter {
 		return blocks;
 	}
 
-	/**
+    # /**
 	 * Returns the files of the cramfs info.
 	 * @return the files of the cramfs info.
 	 */

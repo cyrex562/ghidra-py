@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.commons.io.FilenameUtils;
@@ -35,7 +35,7 @@ public class LocalSymbolStore extends AbstractSymbolServer implements SymbolStor
 	private static final Set<File> ALREADY_WARNED_ABOUT =
 		Collections.synchronizedSet(new HashSet<>());
 
-	/**
+    # /**
 	 * Predicate that returns true if the location string is a LocalSymbolStore path
 	 * 
 	 * @param locationString symbol server location string
@@ -50,7 +50,7 @@ public class LocalSymbolStore extends AbstractSymbolServer implements SymbolStor
 		return dir.isAbsolute() && dir.isDirectory();
 	}
 
-	/**
+    # /**
 	 * Creates a (hopefully) MS-compatible symbol server directory location.
 	 * <p>
 	 * 
@@ -95,7 +95,7 @@ public class LocalSymbolStore extends AbstractSymbolServer implements SymbolStor
 
 	private final File rootDir;
 
-	/**
+    # /**
 	 * Creates an instance of LocalSymbolStore.
 	 * 
 	 * @param rootDir the root directory of the symbol storage
@@ -104,7 +104,7 @@ public class LocalSymbolStore extends AbstractSymbolServer implements SymbolStor
 		this.rootDir = rootDir;
 	}
 
-	/**
+    # /**
 	 * Returns the root directory of this symbol store.
 	 * 
 	 * @return root directory of this symbol store
@@ -128,7 +128,7 @@ public class LocalSymbolStore extends AbstractSymbolServer implements SymbolStor
 		return isValid();
 	}
 
-	/**
+    # /**
 	 * Non-task monitor variant of {@link #isValid(TaskMonitor)}.
 	 * 
 	 * @return boolean true if this is a valid symbol store

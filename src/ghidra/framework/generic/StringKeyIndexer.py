@@ -165,7 +165,7 @@ public class StringKeyIndexer implements Serializable {
         return keyArray;
     }
 
-	/**
+    # /**
 	 * Returns an iterator over all the keys.
 	 * @return an iterator over all the keys.
 	 */

@@ -23,7 +23,7 @@ import java.util.Iterator;
  * Defines a read-only interface for an address set.
  */
 public interface AddressSetView extends Iterable<AddressRange> {
-	/**
+    # /**
 	 * Test if the address is contained within this set.
 	 * <P>
 	 * @param addr address to test.
@@ -31,7 +31,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public boolean contains(Address addr);
 
-	/**
+    # /**
 	 * Test if the given address range is contained in this set.
 	 * The specified start and end addresses must form a valid range within
 	 * a single {@link AddressSpace}.
@@ -43,7 +43,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public boolean contains(Address start, Address end);
 
-	/**
+    # /**
 	 * Test if the given address set is a subset of this set.
 	 * <P>
 	 * @param rangeSet the set to test.
@@ -52,12 +52,12 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public boolean contains(AddressSetView rangeSet);
 
-	/**
+    # /**
 	 * @return true if this set is empty.
 	 */
 	public boolean isEmpty();
 
-	/**
+    # /**
 	 * Get the minimum address for this address set.
 	 * NOTE: An {@link AddressRange} should generally not be formed using this address
 	 * and {@link #getMaxAddress()} since it may span multiple {@link AddressSpace}s.
@@ -66,7 +66,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public Address getMinAddress();
 
-	/**
+    # /**
 	 * Get the maximum address for this address set.
 	 * NOTE: An {@link AddressRange} should generally not be formed using this address
 	 * and {@link #getMaxAddress()} since it may span multiple {@link AddressSpace}s.
@@ -75,17 +75,17 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public Address getMaxAddress();
 
-	/**
+    # /**
 	 * @return the number of address ranges in this set.
 	 */
 	public int getNumAddressRanges();
 
-	/**
+    # /**
 	 * @return an iterator over the address ranges in this address set.
 	 */
 	public AddressRangeIterator getAddressRanges();
 
-	/**
+    # /**
 	 * Returns an iterator over the ranges in the specified order
 	 * @param forward the ranges are returned from lowest to highest, otherwise from
 	 * highest to lowest
@@ -93,7 +93,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressRangeIterator getAddressRanges(boolean forward);
 
-	/**
+    # /**
 	 * Returns an iterator of address ranges starting with the range that contains the given address.
 	 * If there is no range containing the start address, then the the first range will be
 	 * the next range greater than the start address if going forward, otherwise the range less than
@@ -104,13 +104,13 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressRangeIterator getAddressRanges(Address start, boolean forward);
 
-	/**
+    # /**
 	 * Returns an iterator over the address ranges in this address set.
 	 */
 	@Override
 	public Iterator<AddressRange> iterator();
 
-	/**
+    # /**
 	 * Returns an iterator over the ranges in the specified order
 	 * @param forward the ranges are returned from lowest to highest, otherwise from
 	 * highest to lowest
@@ -118,7 +118,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public Iterator<AddressRange> iterator(boolean forward);
 
-	/**
+    # /**
 	 * Returns an iterator of address ranges starting with the range that contains the given address.
 	 * If there is no range containing the start address, then the the first range will be
 	 * the next range greater than the start address if going forward, otherwise the range less than
@@ -129,12 +129,12 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public Iterator<AddressRange> iterator(Address start, boolean forward);
 
-	/**
+    # /**
 	 * @return the number of addresses in this set.
 	 */
 	public long getNumAddresses();
 
-	/**
+    # /**
 	 * Returns an iterator over all addresses in this set.
 	 * @param forward if true the address are return in increasing order, otherwise in
 	 * decreasing order.
@@ -142,7 +142,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressIterator getAddresses(boolean forward);
 
-	/**
+    # /**
 	 * Returns an iterator over the addresses in this address set
 	 * starting at the start address
 	 * @param start address to start iterating at in the address set
@@ -152,7 +152,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressIterator getAddresses(Address start, boolean forward);
 
-	/**
+    # /**
 	 * Determine if this address set intersects with the specified address set.
 	 *
 	 * @param addrSet address set to check intersection with.
@@ -160,7 +160,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public boolean intersects(AddressSetView addrSet);
 
-	/**
+    # /**
 	 * Determine if the start and end range intersects with the specified address set.
 	 * The specified start and end addresses must form a valid range within
 	 * a single {@link AddressSpace}.
@@ -170,7 +170,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public boolean intersects(Address start, Address end);
 
-	/**
+    # /**
 	 * Computes the intersection of this address set with the given address set.
 	 * This method does not modify this address set.
 	 * @param view the address set to intersect with.
@@ -179,7 +179,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressSet intersect(AddressSetView view);
 
-	/**
+    # /**
 	 * Computes the intersection of this address set with the given address range.
 	 * This method does not modify this address set.
 	 * The specified start and end addresses must form a valid range within
@@ -191,7 +191,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressSet intersectRange(Address start, Address end);
 
-	/**
+    # /**
 	 * Computes the union of this address set with the given address set.  This
 	 * method does not change this address set.
 	 * @param addrSet The address set to be unioned with this address set.
@@ -200,7 +200,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressSet union(AddressSetView addrSet);
 
-	/**
+    # /**
 	 * Computes the difference of this address set with the given address set
 	 * (this - set).  Note that this is not the same as (set - this).  This
 	 * method does not change this address set.
@@ -210,7 +210,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressSet subtract(AddressSetView addrSet);
 
-	/**
+    # /**
 	 * Computes the exclusive-or of this address set with the given set. This
 	 * method does not modify this address set.
 	 * @param addrSet address set to exclusive-or with.
@@ -219,7 +219,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public AddressSet xor(AddressSetView addrSet);
 
-	/**
+    # /**
 	 * Returns true if the given address set contains the same set of addresses
 	 * as this set.
 	 * @param view the address set to compare.
@@ -227,33 +227,33 @@ public interface AddressSetView extends Iterable<AddressRange> {
 	 */
 	public boolean hasSameAddresses(AddressSetView view);
 
-	/**
+    # /**
 	 * Returns the first range in this set or null if the set is empty;
 	 * @return the first range in this set or null if the set is empty;
 	 */
 	public AddressRange getFirstRange();
 
-	/**
+    # /**
 	 * Returns the last range in this set or null if the set is empty;
 	 * @return the last range in this set or null if the set is empty;
 	 */
 	public AddressRange getLastRange();
 
-	/**
+    # /**
 	 * Returns the range that contains the given address
 	 * @param address the address for which to find a range.
 	 * @return the range that contains the given address.
 	 */
 	public AddressRange getRangeContaining(Address address);
 
-	/**
+    # /**
 	 * Finds the first address in this collection that is also in the given addressSet.
 	 * @param set the addressSet to search for the first (lowest) common address.
 	 * @return the first address that is contained in this set and the given set.
 	 */
 	public Address findFirstAddressInCommon(AddressSetView set);
 
-	/**
+    # /**
 	 * Returns the number of address in this address set before the given address.
 	 * @param address the address after the last address to be counted
 	 * @return the number of address in this address set before the given address
@@ -273,7 +273,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Trim address set removing all addresses less-than-or-equal to specified 
 	 * address based upon {@link Address} comparison.
 	 * The address set may contain address ranges from multiple 
@@ -300,7 +300,7 @@ public interface AddressSetView extends Iterable<AddressRange> {
 		return trimmedSet;
 	}
 
-	/**
+    # /**
 	 * Trim address set removing all addresses greater-than-or-equal to specified 
 	 * address based upon {@link Address} comparison.  
 	 * The address set may contain address ranges from multiple 

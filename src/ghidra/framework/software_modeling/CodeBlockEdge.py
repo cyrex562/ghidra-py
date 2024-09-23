@@ -23,7 +23,7 @@ import ghidra.graph.DefaultGEdge;
  */
 public class CodeBlockEdge extends DefaultGEdge<CodeBlockVertex> {
 
-	/**
+    # /**
 	 * Constructor.
 	 * 
 	 * @param start the start vertex

@@ -102,7 +102,7 @@ public class FGVertexRenderer extends VisualVertexRenderer<FGVertex, FGEdge> {
 		vertex.setShowing(false); // turn off painting (this fix keeps tooltips from painting)
 	}
 
-	/**
+    # /**
 	 * 	                     <center>Odd Code Alert!</center><br><p> 
 	 *	 We use a lazy model for rebuilding the Listings inside of each vertex as the model's
 	 *	 data changes.  We need a good place to tell the vertex to rebuild itself.  We 

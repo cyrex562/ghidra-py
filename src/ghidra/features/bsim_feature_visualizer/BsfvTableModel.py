@@ -161,7 +161,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return getRowObject(row).getAddress();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link PcodeOpAST} object at the specified row.
 	 * @param row row index
 	 * @return pcodeop
@@ -170,7 +170,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return getRowObject(row).getPcodeOpAST();
 	}
 
-	/**
+    # /**
 	 * Returns the previous {@link PcodeOpAST} object at the specified row.
 	 * @param row row index
 	 * @return previous pcodeop
@@ -179,7 +179,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return getRowObject(row).getPreviousPcodeOpAST();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link BSimFeatureType} at the specified row
 	 * @param row row index
 	 * @return bsim feature type
@@ -188,7 +188,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return getRowObject(row).getBSimFeatureType();
 	}
 
-	/**
+    # /**
 	 * Returns the basic block index at the specified row
 	 * @param row row index
 	 * @return basic block index
@@ -197,7 +197,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return getRowObject(row).getBlockIndex();
 	}
 
-	/**
+    # /**
 	 * Returns the start address of the basic block at the specified row
 	 * @param row row index
 	 * @return start of block
@@ -206,7 +206,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return getRowObject(row).getBasicBlockStart();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link HighFunction} of the function whose features currently populate the table.
 	 * @return high function
 	 */
@@ -214,7 +214,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return hfunction;
 	}
 
-	/**
+    # /**
 	 * Returns an unmodifiable view of the set of pcode ops whose outputs are the base varnodes 
 	 * of DATA_FLOW features.
 	 * @return pcode ops corresponding to DATA_FLOW features
@@ -223,7 +223,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return Collections.unmodifiableSet(featuredOps);
 	}
 
-	/**
+    # /**
 	 * Returns the "call string" of a basic block, which represents the number and ordering
 	 * of CALL and CALLIND pcode ops with the block.
 	 * @param index block index
@@ -233,7 +233,7 @@ class BsfvTableModel extends AddressBasedTableModel<BsfvRowObject> {
 		return blockIndexToCallString.get(index);
 	}
 
-	/**
+    # /**
 	 * Sets the current program and reloads the table data.
 	 * @param p program
 	 */

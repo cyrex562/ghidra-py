@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.macos.cfm;
 
 import ghidra.app.util.bin.BinaryReader;
 
-import java.io.IOException;
+
 
 /**
  * Values for type CFragLocatorKind.

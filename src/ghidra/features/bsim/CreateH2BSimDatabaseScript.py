@@ -16,7 +16,7 @@
 //Creates an empty file-based H2 BSim database
 //@category BSim
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.lang3.StringUtils;

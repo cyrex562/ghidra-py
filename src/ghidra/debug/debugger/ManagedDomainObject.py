@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.utils;
 
-import java.io.IOException;
+
 import java.lang.ref.Cleaner;
 
 import ghidra.framework.model.DomainFile;

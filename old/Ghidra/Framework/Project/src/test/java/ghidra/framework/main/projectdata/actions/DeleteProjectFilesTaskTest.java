@@ -17,7 +17,7 @@ package ghidra.framework.main.projectdata.actions;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.Collections;
 import java.util.Set;
 import java.util.concurrent.CountDownLatch;

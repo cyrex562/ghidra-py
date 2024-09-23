@@ -31,19 +31,19 @@ import ghidra.program.model.data.*;
  */
 public enum OatClassType {
 
-	/**
+    # /**
 	 * OatClass is followed by an OatMethodOffsets for each method.
 	 */
 	kOatClassAllCompiled,//0 
-	/**
+    # /**
 	 * A bitmap of which OatMethodOffsets are present follows the OatClass.
 	 */
 	kOatClassSomeCompiled,//1
-	/**
+    # /**
 	 * All methods are interpreted so no OatMethodOffsets are necessary.
 	 */
 	kOatClassNoneCompiled,//2
-	/**
+    # /**
 	 * Possibly an invalid case?
 	 * From "oat_file.cc":
 	 * 		. . . 
@@ -55,7 +55,7 @@ public enum OatClassType {
 	 */
 	kOatClassMax;//3
 
-	/**
+    # /**
 	 * Converts this ENUM into a data type.
 	 * @return this ENUM converted into a data type
 	 */

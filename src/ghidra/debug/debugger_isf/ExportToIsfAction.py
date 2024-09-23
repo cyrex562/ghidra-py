@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.datamgr.actions;
 
-import java.io.*;
+
 import java.lang.reflect.Constructor;
 import java.util.*;
 import java.util.Map.Entry;

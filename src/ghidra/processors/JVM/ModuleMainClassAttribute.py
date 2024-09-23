@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.javaclass.format.constantpool.ConstantPoolClassInfo;
@@ -37,7 +37,7 @@ public class ModuleMainClassAttribute extends AbstractAttributeInfo {
 		main_class_index = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * {@code main_class index} must be a valid index into the constant pool. The entry at
 	 * that index must be a {@link ConstantPoolClassInfo} structure representing the main
 	 * class of the current module.

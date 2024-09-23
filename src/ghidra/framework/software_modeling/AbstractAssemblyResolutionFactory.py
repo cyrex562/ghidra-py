@@ -137,7 +137,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return new AssemblyResolvedErrorBuilder();
 	}
 
-	/**
+    # /**
 	 * Construct an immutable single-entry result set consisting of the one given resolution
 	 * 
 	 * @param one the single resolution entry
@@ -155,7 +155,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return new AssemblyResolutionResults(col);
 	}
 
-	/**
+    # /**
 	 * Attempt to solve an expression
 	 * 
 	 * @param exp the expression to solve
@@ -175,7 +175,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		}
 	}
 
-	/**
+    # /**
 	 * Attempt to solve an expression
 	 * 
 	 * <p>
@@ -197,7 +197,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return solveOrBackfill(exp, MaskedLong.fromMaskAndValue(msk, goal), vals, cur, description);
 	}
 
-	/**
+    # /**
 	 * Attempt to solve an expression
 	 * 
 	 * <p>
@@ -219,7 +219,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Build an error resolution record, based on an intermediate SLEIGH constructor record
 	 * 
 	 * @param error a description of the error
@@ -238,7 +238,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Obtain a new "blank" resolved SLEIGH constructor record
 	 * 
 	 * @param description a description of the resolution
@@ -259,7 +259,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Obtain a new "blank" resolved SLEIGH constructor record
 	 * 
 	 * @param description a description of the resolution
@@ -280,7 +280,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Build a backfill record to attach to a successful resolution result
 	 * 
 	 * @param exp the expression depending on a missing symbol
@@ -307,7 +307,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Build the result of successfully resolving a SLEIGH constructor
 	 * 
 	 * <p>
@@ -335,7 +335,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Build an instruction-only successful resolution result
 	 * 
 	 * @param ins the instruction pattern block
@@ -357,7 +357,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Build a context-only successful resolution result
 	 * 
 	 * @param ctx the context pattern block
@@ -380,7 +380,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Build a successful resolution result from a SLEIGH constructor's patterns
 	 * 
 	 * @param pat the constructor's pattern
@@ -419,7 +419,7 @@ public abstract class AbstractAssemblyResolutionFactory< //
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Build a new successful SLEIGH constructor resolution from a string representation
 	 * 
 	 * <p>

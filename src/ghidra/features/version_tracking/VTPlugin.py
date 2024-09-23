@@ -401,7 +401,7 @@ public class VTPlugin extends Plugin {
 		return toolManager.getDestinationColorizingService();
 	}
 
-	/**
+    # /**
 	 * Displays a dialog stating that a tool is busy.
 	 * @param tool the tool to display that's busy.
 	 */

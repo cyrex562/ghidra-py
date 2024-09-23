@@ -30,7 +30,7 @@ import ghidra.app.plugin.assembler.sleigh.tree.AssemblyParseToken;
  * @see AssemblyGrammar
  */
 public abstract class AssemblyTerminal extends AssemblySymbol {
-	/**
+    # /**
 	 * Construct a terminal having the give name
 	 * 
 	 * @param name
@@ -39,7 +39,7 @@ public abstract class AssemblyTerminal extends AssemblySymbol {
 		super(name);
 	}
 
-	/**
+    # /**
 	 * Attempt to match a token from the input buffer starting at a given position
 	 * 
 	 * @param buffer the input buffer
@@ -51,7 +51,7 @@ public abstract class AssemblyTerminal extends AssemblySymbol {
 	public abstract Collection<? extends AssemblyParseToken> match(String buffer, int pos,
 			AssemblyGrammar grammar, AssemblyNumericSymbols symbols);
 
-	/**
+    # /**
 	 * Provide a collection of strings that this terminal would have accepted
 	 * 
 	 * @param got the remaining contents of the input buffer

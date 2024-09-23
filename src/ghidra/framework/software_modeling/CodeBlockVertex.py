@@ -24,7 +24,7 @@ public class CodeBlockVertex implements Comparable<CodeBlockVertex> {
 	private final CodeBlock codeBlock;
 	private final String name;
 
-	/**
+    # /**
 	 * Constructor.
 	 * 
 	 * @param codeBlock the code block for this vertex
@@ -34,7 +34,7 @@ public class CodeBlockVertex implements Comparable<CodeBlockVertex> {
 		this.name = codeBlock.getName();
 	}
 
-	/**
+    # /**
 	 * A constructor that allows for the creation of dummy nodes.  This is useful in graphs 
 	 * where multiple entry or exit points need to be parented by a single vertex.
 	 * 
@@ -53,7 +53,7 @@ public class CodeBlockVertex implements Comparable<CodeBlockVertex> {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns true if this vertex is not backed by a code block.
 	 * @return true if this vertex is not backed by a code block.
 	 */

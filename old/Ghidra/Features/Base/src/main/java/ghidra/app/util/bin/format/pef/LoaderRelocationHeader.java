@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pef;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

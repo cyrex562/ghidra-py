@@ -40,7 +40,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 	protected RegisterName registerContainingReturnValue;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -80,7 +80,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		builder.append(String.format("   Return Reg: %s\n", registerContainingReturnValue));
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -88,7 +88,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return parentPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -96,7 +96,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return endPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the next pointer.
 	 * @return next pointer.
 	 */
@@ -104,7 +104,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return nextPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the procedure length.
 	 * @return Length.
 	 */
@@ -112,7 +112,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return procedureLength;
 	}
 
-	/**
+    # /**
 	 * Returns the debug start offset.
 	 * @return Debug start offset.
 	 */
@@ -120,7 +120,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return debugStartOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the debug end offset.
 	 * @return Debug end offset.
 	 */
@@ -128,7 +128,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return debugEndOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -137,7 +137,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return symbolOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -146,7 +146,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return symbolSegment;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ProcedureFlags}.
 	 * @return Procedure flags.
 	 */
@@ -154,7 +154,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return procedureFlags;
 	}
 
-	/**
+    # /**
 	 * Returns the procedure name.
 	 * @return Name.
 	 */
@@ -163,7 +163,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the token.
 	 * @return token.
 	 */
@@ -171,7 +171,7 @@ public abstract class AbstractManagedProcedureMsSymbol extends AbstractMsSymbol
 		return token;
 	}
 
-	/**
+    # /**
 	 * Returns the register containing the return value
 	 * @return the register.
 	 */

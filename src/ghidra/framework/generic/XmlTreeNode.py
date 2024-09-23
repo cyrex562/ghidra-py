@@ -31,7 +31,7 @@ public class XmlTreeNode {
 	private final XmlElement endElement;
 	private final LinkedList<XmlTreeNode> children;
 
-	/**
+    # /**
 	 * Constructs a new XML tree node given the specified parser.
 	 * 
 	 * @param parser
@@ -51,7 +51,7 @@ public class XmlTreeNode {
 		endElement = parser.end(startElement);
 	}
 
-	/**
+    # /**
 	 * Returns the start element of this node.
 	 * 
 	 * @return the start element of this node
@@ -60,7 +60,7 @@ public class XmlTreeNode {
 		return startElement;
 	}
 
-	/**
+    # /**
 	 * Returns the end element of this node.
 	 * 
 	 * @return the end element of this node
@@ -69,7 +69,7 @@ public class XmlTreeNode {
 		return endElement;
 	}
 
-	/**
+    # /**
 	 * Returns the number of children below this node.
 	 * 
 	 * @return the number of children below this node
@@ -78,7 +78,7 @@ public class XmlTreeNode {
 		return children.size();
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all of the children of this node.
 	 * 
 	 * @return an iterator over all of the children of this node
@@ -87,7 +87,7 @@ public class XmlTreeNode {
 		return children.iterator();
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all of the children of this node with the
 	 * specfied name.
 	 * 
@@ -100,7 +100,7 @@ public class XmlTreeNode {
 		return new TagIterator(name);
 	}
 
-	/**
+    # /**
 	 * Returns the first child element with the specified name.
 	 * 
 	 * @param name
@@ -160,7 +160,7 @@ public class XmlTreeNode {
 		}
 	}
 
-	/**
+    # /**
 	 * Deletes the specified child node.
 	 * 
 	 * @param node

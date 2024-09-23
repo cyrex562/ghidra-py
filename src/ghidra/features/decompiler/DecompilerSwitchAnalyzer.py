@@ -223,7 +223,7 @@ public class DecompilerSwitchAnalyzer extends AbstractAnalyzer {
 		}
 	}
 
-	/**
+    # /**
 	 * Find locations that could be an unrecovered switches
 	 * 
 	 * @param program program
@@ -269,7 +269,7 @@ public class DecompilerSwitchAnalyzer extends AbstractAnalyzer {
 		return locations;
 	}
 
-	/**
+    # /**
 	 * Check an instruction for an unrecoverable computed destination due
 	 * to calling a callOther pcode op that has no associated injection.
 	 * If there is an associated injection, then it might yet be recoverable.
@@ -322,7 +322,7 @@ public class DecompilerSwitchAnalyzer extends AbstractAnalyzer {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Check if the callOther Pcode op has an associated injection
 	 * 
 	 * @param program program
@@ -336,7 +336,7 @@ public class DecompilerSwitchAnalyzer extends AbstractAnalyzer {
 		return payload != null;
 	}
 	
-	/**
+    # /**
 	 * Find out if a callother pcode op has a pcodeInjection attached to it
 	 * 
 	 * @param program program
@@ -446,7 +446,7 @@ public class DecompilerSwitchAnalyzer extends AbstractAnalyzer {
 			return func;
 		}
 
-		/**
+	    # /**
 		 * Handle any blocks that have a simple single computable flow with no switch type flow
 		 * in it by trying to resolving the reference
 		 * 
@@ -459,7 +459,7 @@ public class DecompilerSwitchAnalyzer extends AbstractAnalyzer {
 			return resolveComputableFlow(location, monitor, blockModel);
 		}
 
-		/**
+	    # /**
 		 * resolve the flow destination by computing to a single value
 		 *   For large number of potential functions, this should improve switch analysis speed
 		 *   

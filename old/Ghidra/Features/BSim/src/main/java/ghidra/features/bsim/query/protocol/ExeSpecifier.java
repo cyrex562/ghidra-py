@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.*;
+
 
 import org.apache.commons.lang3.StringUtils;
 

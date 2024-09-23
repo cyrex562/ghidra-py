@@ -15,7 +15,7 @@
  */
 package ghidra.formats.gfilesystem;
 
-import java.io.*;
+
 import java.util.List;
 
 import ghidra.app.util.bin.ByteProvider;

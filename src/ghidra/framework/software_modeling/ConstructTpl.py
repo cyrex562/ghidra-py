@@ -45,13 +45,13 @@ public class ConstructTpl {
 	private OpTpl[] vec;				// The semantic action of constructor
 	private HandleTpl result;			// The final semantic value
 
-	/**
+    # /**
 	 * Constructor for use with decode
 	 */
 	public ConstructTpl() {
 	}
 
-	/**
+    # /**
 	 * Manually build a constructor template. This is useful for building constructor templates
 	 * outside of the normal SLEIGH pipeline, as for an internally created InjectPayload.
 	 * @param opvec is the list of p-code op templates making up the constructor
@@ -61,7 +61,7 @@ public class ConstructTpl {
 		result = null;
 	}
 
-	/**
+    # /**
 	 * Manually build a constructor template from pieces.  This is used to translate from the
 	 * internal SLEIGH compiler pcodeCPort.semantics.ConstructTpl
 	 * @param opvec is the list of p-code op templates making up the constructor
@@ -74,28 +74,28 @@ public class ConstructTpl {
 		numlabels = nmLabels;
 	}
 
-	/**
+    # /**
 	 * @return the number of labels needing resolution in this template
 	 */
 	public int getNumLabels() {
 		return numlabels;
 	}
 
-	/**
+    # /**
 	 * @return the list of p-code op templates making up this constructor template
 	 */
 	public OpTpl[] getOpVec() {
 		return vec;
 	}
 
-	/**
+    # /**
 	 * @return the (possibly dynamic) location of the final semantic value produced by this constructor
 	 */
 	public HandleTpl getResult() {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Decode this template from a {@code <construct_tpl>} tag in the stream.
 	 * @param decoder is the stream
 	 * @return the constructor section id described by the tag

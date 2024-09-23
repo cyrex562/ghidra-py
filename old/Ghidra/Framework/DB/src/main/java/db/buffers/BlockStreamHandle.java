@@ -15,7 +15,7 @@
  */
 package db.buffers;
 
-import java.io.IOException;
+
 
 public interface BlockStreamHandle<T extends BlockStream> {
 

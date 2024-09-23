@@ -16,7 +16,7 @@
 package ghidra.framework.main.datatree;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.tree.TreePath;

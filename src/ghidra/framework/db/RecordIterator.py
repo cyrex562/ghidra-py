@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 # /**
  * <code>RecordIterator</code> provides the ability to iterate over

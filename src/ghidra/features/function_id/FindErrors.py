@@ -16,7 +16,7 @@
 //Opens all programs under a chosen domain folder, grabs their error count,
 //then sorts in increasing error order and prints them
 //@category FunctionID
-import java.io.IOException;
+
 import java.util.*;
 
 import generic.stl.Pair;

@@ -52,7 +52,7 @@ public class PdbPrimitiveTypeApplicator {
 	private Map<String, DataType> otherPrimitives = new HashMap<>();
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param dataTypeManager The {@link DataTypeManager} associated with these types.
 	 */
@@ -61,7 +61,7 @@ public class PdbPrimitiveTypeApplicator {
 		this.dataTypeManager = dataTypeManager;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link DataTypeManager} associated with this analyzer.
 	 * @return DataTypeManager which this analyzer is using.
 	 */
@@ -531,7 +531,7 @@ public class PdbPrimitiveTypeApplicator {
 		return getRealType(16, "float128");
 	}
 
-	/**
+    # /**
 	 * First get type from "other" list, which are typedefs to underlying primitives. If it does
 	 * not exist, then find the proper underlying primitive, create the typedef, and cache this
 	 * newly minted (typedef) unique primitive type.

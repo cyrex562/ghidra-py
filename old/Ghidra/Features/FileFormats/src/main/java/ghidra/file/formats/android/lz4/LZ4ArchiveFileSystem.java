@@ -17,7 +17,7 @@ package ghidra.file.formats.android.lz4;
 
 import java.util.*;
 
-import java.io.*;
+
 
 import org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream;
 

@@ -35,7 +35,7 @@ public class FidFunctionDebugPanel extends JPanel {
 	private final FidQueryService fidQueryService;
 	private final FunctionRecord functionRecord;
 
-	/**
+    # /**
 	 * Creates the panel.
 	 * @param service the FID database service
 	 * @param fidQueryService the query service
@@ -49,7 +49,7 @@ public class FidFunctionDebugPanel extends JPanel {
 		initialize();
 	}
 
-	/**
+    # /**
 	 * Convenience method to add a button.
 	 * @param text the text of the button
 	 * @param listener the action listener for when the button is pressed
@@ -62,7 +62,7 @@ public class FidFunctionDebugPanel extends JPanel {
 		add(button);
 	}
 
-	/**
+    # /**
 	 * Convenience method to add a label.
 	 * @param text the text of the label
 	 */
@@ -73,7 +73,7 @@ public class FidFunctionDebugPanel extends JPanel {
 		add(label);
 	}
 
-	/**
+    # /**
 	 * Layout the panel, add the components and listeners.
 	 */
 	private void initialize() {
@@ -121,7 +121,7 @@ public class FidFunctionDebugPanel extends JPanel {
 
 	private static final int MAGIC_MAXIMUM_LENGTH = 30;
 
-	/**
+    # /**
 	 * Shortens a domain path to make it as readable as possible without flying off the screen.
 	 * @param domainPath the string to shorten
 	 * @return a shortened string

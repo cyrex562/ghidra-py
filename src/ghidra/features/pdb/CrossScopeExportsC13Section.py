@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ public class CrossScopeExportsC13Section extends C13Section {
 
 	private List<C13CrossScopeExport> crossScopeExports = new ArrayList<>();
 
-	/**
+    # /**
 	 * Parse and return a {@link CrossScopeExportsC13Section}.
 	 * @param reader {@link PdbByteReader} containing the symbol records to deserialize
 	 * @param ignore flag indicating whether the record should be ignored
@@ -60,7 +60,7 @@ public class CrossScopeExportsC13Section extends C13Section {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the cross-scope exports
 	 * @return the corss-scope exports
 	 */

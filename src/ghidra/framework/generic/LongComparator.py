@@ -21,7 +21,7 @@ package ghidra.util.datastruct;
  */
 public interface LongComparator {
 	
-	/**
+    # /**
 	 * Compares the long values a and b.
 	 * @param a the first value
 	 * @param b the second value

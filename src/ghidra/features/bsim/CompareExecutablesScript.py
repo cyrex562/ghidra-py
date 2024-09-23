@@ -17,7 +17,7 @@
 // combining their function scores.
 //@category BSim
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.security.InvalidParameterException;
 

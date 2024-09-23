@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.app.plugin.core.data.ProgramProviderContext;
@@ -22,14 +22,14 @@ import ghidra.program.model.lang.DataTypeProviderContext;
 import ghidra.program.model.listing.*;
 
 # /**
- * Creates and initializes {@link Structure} objects.
- *
- *
- */
+# * Creates and initializes {@link Structure} objects.
+# *
+# *
+# */
 public class StructureFactory {
 	public static final String DEFAULT_STRUCTURE_NAME = "struct";
 
-	/**
+    # /**
 	 * Creates a {@link StructureDataType} instance based upon the information
 	 * provided.  The instance will not be placed in memory.
 	 * <p>
@@ -60,7 +60,7 @@ public class StructureFactory {
 		return createStructureDataType(program, address, dataLength, DEFAULT_STRUCTURE_NAME, true);
 	}
 
-	/**
+    # /**
 	 * Creates a {@link StructureDataType} instance based upon the information
 	 * provided.  The instance will not be placed in memory.
 	 *
@@ -124,7 +124,7 @@ public class StructureFactory {
 		return newStructure;
 	}
 
-	/**
+    # /**
 	 * Creates a {@link StructureDataType} instance, which is inside of
 	 * another structure, based upon the information provided.  The instance
 	 * will not be placed in memory.
@@ -159,7 +159,7 @@ public class StructureFactory {
 			DEFAULT_STRUCTURE_NAME, true);
 	}
 
-	/**
+    # /**
 	 * Creates a {@link StructureDataType} instance, which is inside of
 	 * another structure, based upon the information provided.  The instance
 	 * will not be placed in memory.

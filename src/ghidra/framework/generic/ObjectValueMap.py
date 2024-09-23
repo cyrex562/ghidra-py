@@ -15,7 +15,7 @@
  */
 package ghidra.util.map;
 
-import java.io.*;
+
 
 # /**
  * Handles general storage and retrieval of object values indexed by long keys.
@@ -23,7 +23,7 @@ import java.io.*;
  */
 public class ObjectValueMap<T extends Object> extends ValueMap<T> {
 
-	/**
+    # /**
 	 * Constructor for ObjectPropertySet.
 	 * @param name the name associated with this property set.
 	 */
@@ -31,7 +31,7 @@ public class ObjectValueMap<T extends Object> extends ValueMap<T> {
 		super(name, null);
 	}
 
-	/**
+    # /**
 	 * @see ValueMap#getDataSize()
 	 */
 	@Override
@@ -39,7 +39,7 @@ public class ObjectValueMap<T extends Object> extends ValueMap<T> {
 		return 20;
 	}
 
-	/**
+    # /**
 	 * Stores an object at the given index.  Any object currently at that index
 	 * will be replaced by the new object.
 	 * @param index the index at which to store the object.
@@ -52,7 +52,7 @@ public class ObjectValueMap<T extends Object> extends ValueMap<T> {
 		numProperties += page.getSize() - n;
 	}
 
-	/**
+    # /**
 	 * Retrieves the object stored at the given index.
 	 * @param index the index at which to retrieve the object.
 	 * @return the object stored at the given index or null if no object is

@@ -285,7 +285,7 @@ public class Pic12Analyzer extends AbstractAnalyzer {
 
 	}
 
-	/**
+    # /**
 	 * Attempt to markup FReg access instruction with register reference.
 	 * 
 	 * @param instr

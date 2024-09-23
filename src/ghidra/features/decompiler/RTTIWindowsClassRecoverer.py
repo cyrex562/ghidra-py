@@ -211,7 +211,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return false;
 	}
 
-//	/**
+//    # /**
 //	 * Method to determine if the current program has RTTI data applied to it
 //	 * @return true if the current program has RTTI data applied to it
 //	 * @throws CancelledException if cancelled
@@ -239,7 +239,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 ////			new MessageLog());
 //	}
 //
-//	/**
+//    # /**
 //	 * Method to find all the vftables in the program 
 //	 * @return list of all vftable symbols
 //	 * @throws CancelledException when cancelled
@@ -270,7 +270,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		applyMissingRTTIStructures();
 	}
 
-	/**
+    # /**
 	 * Method to find and apply missing RTTI structures
 	 * @throws CancelledException if cancelled
 	 * @throws Exception if error applying label or data
@@ -290,7 +290,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return vftableSymbols;
 	}
 
-	/**
+    # /**
 	 * Method to iterate over all symbols with Base Class Descriptor symbol and if
 	 * the correct data type has not already been created, do so. 
 	 * @return List of all symbols with valid (even previously) BaseClassDescriptor structure applied
@@ -333,7 +333,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return completeObjectLocatorSymbols;
 	}
 
-	/**
+    # /**
 	 * Method to create a CompleteObjectLocator structure at the given address
 	 * @param address the address where the structure will be created
 	 * @return the created CompleteObjectLocator data or null if it couldn't be created
@@ -359,7 +359,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return completeObjectLocator;
 	}
 
-	/**
+    # /**
 	 * Method to iterate over all symbols with Base Class Descriptor symbol and if
 	 * the correct data type has not already been created, do so. 
 	 * @return List of all symbols with valid (even previously) BaseClassDescriptor structure applied
@@ -400,7 +400,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return baseClassDescriptorSymbols;
 	}
 
-	/**
+    # /**
 	 * Method to create a BaseClassDescriptor structure at the given address
 	 * @param baseClassDescriptorAddress the address where the structure will be created
 	 * @return the created BaseClassDescriptor data or null if it couldn't be created
@@ -424,7 +424,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return baseClassDescArray;
 	}
 
-	/**
+    # /**
 	 * Method to apply missing RTTI Base Class Descriptor structures and symbols  
 	 * @param address address to apply the missing structure and symbol
 	 * @param numBaseClasses number of base classes in the array pointing to BaseClassDescriptors
@@ -465,7 +465,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param baseClassDescriptors the given list of BaseClassDescriptor symbols
 	 * @param completeObjectLocators the given list of CompleteObjectLocator symbols
@@ -508,7 +508,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param address the address where the ClassHierarchyDescriptor is to be created
 	 * @param classNamespace the namespace of the class
@@ -547,7 +547,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return classHierarchyDescriptorAddress;
 	}
 
-	/**
+    # /**
 	 * Method to create a ClassHierarchyDescriptor structure at the given address 
 	 * @param classHierarchyDescriptorAddress the address where the structure will be created
 	 * @return the created ClassHierarchyDescriptor data or null if it couldn't be created
@@ -572,7 +572,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return classHierarchyStructure;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param classHierarchyDescriptors the given list of applied ClassHierarchyDescriptor structures
 	 * @return a list of base class array addresses
@@ -628,7 +628,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return baseClassArrayAddresses;
 	}
 
-	/**
+    # /**
 	 * Method to create a base class array at the given address with the given number of base class's in the array
 	 * @param baseClassArrayAddress the address where the array will be created
 	 * @param numBaseClasses the number of BaseClass's in the array 
@@ -673,7 +673,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return baseClassDescArray;
 	}
 
-	/**
+    # /**
 	 * Method to create missing vftables and return a list of them
 	 * @param completeObjectLocatorSymbols the list of completeObjectLocatorSymbols
 	 * @return list of vftable symbols
@@ -747,7 +747,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return vftables;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the symbol with the given address, containing name (containing to account
 	 * for pdb case where sometimes has extra chars) and namespace
 	 * @param address the given address
@@ -769,7 +769,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to return referenced address at the given address
 	 * @param address the address to look for a referenced address at
 	 * @return the first referenced address from the given address
@@ -799,7 +799,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the AddressSet of the current program's initialized memory
 	 * @return the AddressSet of the current program's initialized memory
 	 * @throws CancelledException if cancelled
@@ -819,7 +819,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return dataAddresses;
 	}
 
-	/**
+    # /**
 	 * Method to fix up the current program so that script will be more successful by finding
 	 * missing vftable referencing functions and missing RTTI data structures. 
 	 * manually create some of them
@@ -839,7 +839,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		findFunctionsUsingAtexit();
 	}
 
-	/**
+    # /**
 	 * Method to recover the class information for each vftable symbol on the list
 	 * * For each virtual function table:
 	 * 1. get vftable's existing class
@@ -939,7 +939,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return recoveredClasses;
 	}
 
-	/**
+    # /**
 	 * Method to get a list of RTTI_Base_Class_Descriptor symbols
 	 * @return List of Symbols named "RTTI_Class_Hierarchy_Descriptor"
 	 * @throws CancelledException if cancelled
@@ -952,7 +952,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return classHierarchyDescriptorList;
 	}
 
-	/**
+    # /**
 	 * Method to create map for each class containing offset in class structure for each class vftable using information
 	 * found in the class's complete object locator structure(s)
 	 * @param recoveredClasses List of classes
@@ -995,7 +995,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to figure out the class hierarchies either with RTTI if it is present or with vftable 
 	 * references
 	 * @param recoveredClasses List of classes to process
@@ -1026,7 +1026,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		getClassHierarchyFromRTTI(recoveredClasses);
 	}
 
-	/**
+    # /**
 	 * Use information from RTTI Base class Arrays to create class hierarchy lists and maps
 	 * @param recoveredClasses list of classes to process
 	 * @throws CancelledException if cancelled
@@ -1111,7 +1111,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to assign parent classes given an ordered list of hierarchy
 	 * child, parent, grandparent, ... for single inheritance case
 	 * @param hierarchyList ordered list of class hierarchy starting with child
@@ -1136,7 +1136,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Determine class hierarchies using RTTI Base Class Array info
 	 * @param recoveredClass current class
 	 * @return List of classes representing current class's hierarchy
@@ -1210,7 +1210,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return classHierarchy;
 	}
 
-	/**
+    # /**
 	 * Method to get class inheritance flag from the RTTIClassHierarchyDescriptor structure
 	 * @param classNamespace the given class namespace
 	 * @return the class inheritance flag or NONE if there isn't one
@@ -1231,7 +1231,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return NONE;
 	}
 
-	/**
+    # /**
 	 * Method to set the class inheritance type based on Class Hierarchy Descriptor inheritance
 	 * attribute flag: 
 	 * bit 0: 0 = single inheritance/ 1 = multiple inheritance
@@ -1280,7 +1280,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to call the various methods to determine whether the functions that make references to
 	 * the vftables are constructors, destructors, deleting destructors, clones, or vbase functions
 	 * @param recoveredClasses List of classes
@@ -1345,7 +1345,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to recover parent information, including class offsets, vbase structure and its offset and address if applicable, and whether
 	 * the parent is regularly or virtually inherited
 	 * @param recoveredClasses List of classes to process
@@ -1467,7 +1467,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the address of the vbtable given the vbtableOffset from the baseClassDescriptor
 	 * and the address referenced by the target address in the storedPcodeOp at the vbtableOffset 
 	 * @param recoveredClass the given class
@@ -1534,7 +1534,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to find the address of the vbtable referenced at the given offset in the given function
 	 * @param fillStructHelper a reusable {@link FillOutStructureHelper} instance to be used
 	 * with decompiler for a particular variable
@@ -1598,7 +1598,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to create vftable address and parent class map for each class object
 	 * @param recoveredClasses list of class objects
 	 * @throws Exception when cancelled
@@ -1743,7 +1743,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given class inherits any ancestors virtually
 	 * @param recoveredClass the given class
 	 * @return true if any of the given class's ancestors are inherited virtually, false otherwise
@@ -1768,7 +1768,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the virtually inherited parent that has vfunctions for the given class if there is one
 	 * @param recoveredClass the given class
 	 * @return the virtually inherited parent that has vfunctions for the given class if there is one, or null if there isn't
@@ -1803,7 +1803,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Using their address order in constructor/destructor functions, map the given class's vftables to their 
 	 * respective parent (or in some cases, ancestor) classes
 	 * @param recoveredClass the given class
@@ -1837,7 +1837,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to create a map containing order/parent mappings for the given class, using order they are used in constructor/destructors
 	 * @param recoveredClass the given class
 	 * @return a map containing order/parent mappings for the given class
@@ -1867,7 +1867,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return parentOrderMap;
 	}
 
-	/**
+    # /**
 	 * Method to create an order/ancestor map for the given class (usually will be parents but in some cases will be ancestors)
 	 * @param recoveredClass the given class
 	 * @param allowedAncestors List of ancestors (usually parents) that can be added to the map
@@ -1971,7 +1971,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return parentOrderMap;
 	}
 
-	/**
+    # /**
 	 * Method to find common inherited ancestors in the given class's parent list
 	 * and replace the parents with that common ancestor with the ancestor
 	 * @param recoveredClass the given class
@@ -2066,7 +2066,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to call create and apply class structures method starting with top parent classes
 	 * and non-virtual classes then the children and their children until all classes are processed.
 	 * @param recoveredClasses List of classes
@@ -2140,7 +2140,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create all the class data types for the current class, name all the class functions, and put them all into the class namespace
 	 * @param recoveredClass current class
 	 * @throws CancelledException when cancelled
@@ -2206,7 +2206,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 
 	}
 
-	/**
+    # /**
 	 * Method to create a class structure using information in program RTTI structures
 	 * @param recoveredClass the given class
 	 * @param vfPointerDataTypes map of address/vftable pointer structs
@@ -2434,7 +2434,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return classStructureDataType;
 	}
 
-	/**
+    # /**
 	 * Method to return the offset of the given class's single virtual parent
 	 * @param recoveredClass the given class
 	 * @return the offset in the given class structure of the classes single virtual parent or NONE 
@@ -2516,7 +2516,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return baseClassOffsetMap;
 	}
 
-	/**
+    # /**
 	 * Method to retrieve the given class's base class array data type from the RTTI data
 	 * @param recoveredClass the given class
 	 * @return the base class array data type or null 
@@ -2540,7 +2540,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return baseClassArrayData;
 	}
 
-	/**
+    # /**
 	 * Retrieve the RecoveredClass object that corresponds to the one in the same namespace as the given RTTIBaseClassDescriptor address
 	 * @param baseClassDescriptorAddress the address of the pointer to the RTTIBaseClassDescriptor structure
 	 * @return the corresponding RecoveredClass object or null if it cannot be retrieved
@@ -2562,7 +2562,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return baseClass;
 	}
 
-	/**
+    # /**
 	 * Method to apply the given class's vbtable structure
 	 * @param recoveredClass the given RecoveredClass object which, if applicable, contains the address and structure to apply
 	 * @throws AddressOutOfBoundsException if try clear listing at address out of bounds
@@ -2586,7 +2586,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 			recoveredClass.getClassNamespace().getName(true) + "::vbtable");
 	}
 
-	/**
+    # /**
 	 * Method to update the labels of vftables that belong to classes with multiple vftables in 
 	 * order to distinguish which base class the vftable is for.
 	 * @param recoveredClasses the list of RecoveredClass objects
@@ -2630,7 +2630,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to fixup previously found deleting destructors's symbols to determine if they are
 	 * scalar or vector ones and name appropriately. In the non-contiguous case, split into two
 	 * functions and name accordingly.
@@ -2683,7 +2683,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to fixup the given functoin as a contiguous deleting destructor which means it is 
 	 * both a scalar and vector deleting destructor and needs both names. Some functions are deleting
 	 * destructors for multiple classes so all of the symbols need to be updated.
@@ -2724,7 +2724,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to create a second function in the case where a deleting destructor is of the type
 	 * vector dd function jumps to scalar dd function and fixup the jump to be a call return flow
 	 * override
@@ -2753,7 +2753,7 @@ public class RTTIWindowsClassRecoverer extends RTTIClassRecoverer {
 		return newFunction;
 	}
 
-	/**
+    # /**
 	 * Method to fixup the deleting destructor symbols in a split deleting destructor case given 
 	 * the two functions split earlier from the original function. Some functions are deleting
 	 * destructors for multiple classes so all of the symbols need to be updated.

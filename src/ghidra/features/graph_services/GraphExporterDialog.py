@@ -59,7 +59,7 @@ public class GraphExporterDialog extends DialogComponentProvider {
 
 	private List<AttributedGraphExporter> exporters;
 
-	/**
+    # /**
 	 * Construct a new ExporterDialog for exporting a program, optionally only exported a
 	 * selected region.
 	 *

@@ -33,7 +33,7 @@ public class DialogManager {
 		this.tool = tool;
 	}
 
-	/**
+    # /**
 	 * Show the "Save Tool" dialog.  Returns true if the user performed a 'save as'; returns false
 	 * if the user cancelled.
 	 * @return false if the user cancelled
@@ -45,7 +45,7 @@ public class DialogManager {
 		return !saveToolDialog.didCancel();
 	}
 
-	/**
+    # /**
 	 * Write our tool to a filename; the user is prompted for a filename
 	 */
 	public void exportTool() {
@@ -53,7 +53,7 @@ public class DialogManager {
 		exportTool(template);
 	}
 
-	/**
+    # /**
 	 * Exports a version of our tool without any config settings.  This is useful for making a
 	 * new 'default' tool to be shared with others, which will not contain any user settings.
 	 */

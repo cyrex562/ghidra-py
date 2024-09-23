@@ -118,7 +118,7 @@ public class ByteArray implements Array, Serializable {
         bytes = newBytes;
     }
 	
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.Array#getLastNonEmptyIndex()
 	 */
@@ -126,7 +126,7 @@ public class ByteArray implements Array, Serializable {
         return lastNonZeroIndex;
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.Array#copyDataTo(int, DataTable, int, int)
 	 */

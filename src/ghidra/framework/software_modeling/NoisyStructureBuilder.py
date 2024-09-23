@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.Iterator;
@@ -22,19 +22,19 @@ import java.util.TreeMap;
 import ghidra.program.model.pcode.PartialUnion;
 
 # /**
- * Build a structure from a "noisy" source of field information.
- * Feed it field records, either via addDataType(), when we
- * have more definitive info about the size of the field, or via addReference()
- * when we have a pointer reference to the field with possibly less info about the field size.
- * 
- * As records come in, overlaps and conflicts in specific field data-types are resolved.
- * In a conflict, less specific data-types are replaced.
- * After all information is collected a final Structure can be built by iterating over
- * the final field entries.
- * 
- * NOTE: No attempt has been made to utilize {@link DataType#getAlignedLength()} when considering
- * component type lengths.
- */
+# * Build a structure from a "noisy" source of field information.
+# * Feed it field records, either via addDataType(), when we
+# * have more definitive info about the size of the field, or via addReference()
+# * when we have a pointer reference to the field with possibly less info about the field size.
+# * 
+# * As records come in, overlaps and conflicts in specific field data-types are resolved.
+# * In a conflict, less specific data-types are replaced.
+# * After all information is collected a final Structure can be built by iterating over
+# * the final field entries.
+# * 
+# * NOTE: No attempt has been made to utilize {@link DataType#getAlignedLength()} when considering
+# * component type lengths.
+# */
 public class NoisyStructureBuilder {
 	private TreeMap<Long, DataType> offsetToDataTypeMap = new TreeMap<>();
 	private Structure structDT = null;
@@ -46,7 +46,7 @@ public class NoisyStructureBuilder {
 		}
 	}
 
-	/**
+    # /**
 	 * Check if the given range overlaps any existing field entries.  If it does
 	 * return the first entry, otherwise return null.
 	 * @param offset is the starting of the range (in bytes)
@@ -71,14 +71,14 @@ public class NoisyStructureBuilder {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return the size of the structure in bytes (given current information)
 	 */
 	public long getSize() {
 		return sizeOfStruct;
 	}
 
-	/**
+    # /**
 	 * Add data-type information about a specific field
 	 * @param offset of the field within the structure
 	 * @param dt is the data-type of field if known (null otherwise)
@@ -131,7 +131,7 @@ public class NoisyStructureBuilder {
 		offsetToDataTypeMap.put(Long.valueOf(offset), dt);
 	}
 
-	/**
+    # /**
 	 * Adds information for a field given a pointer reference.
 	 * The data-type information is not used unless it is a pointer.
 	 * @param offset is the offset of the field within the structure
@@ -156,7 +156,7 @@ public class NoisyStructureBuilder {
 		}
 	}
 
-	/**
+    # /**
 	 * We may have partial information about the size of the structure.  This method feeds it to the
 	 * builder as a minimum size for the structure.
 	 * @param size is the minimum size in bytes
@@ -167,14 +167,14 @@ public class NoisyStructureBuilder {
 		}
 	}
 
-	/**
+    # /**
 	 * @return an iterator to the current field entries
 	 */
 	public Iterator<Entry<Long, DataType>> iterator() {
 		return offsetToDataTypeMap.entrySet().iterator();
 	}
 
-	/**
+    # /**
 	 * Populate this builder with fields from a preexisting Structure.
 	 * The builder presumes it is rebuilding this Structure so it can check for
 	 * pathological containment issues.

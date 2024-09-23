@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.util.*;
@@ -24,18 +24,18 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * This is a generalized class for storing register values over ranges.  The values include mask bits
- * to indicate which bits within the register are being set.  The mask is stored along with the
- * value so the getValue method can indicate back which bits in the value are valid.  If existing
- * values already exist at an address, the values are combined according to the masks.  Any new value
- * bits that have their associated mask bits on will overwrite any existing bits and the new mask will
- * be anded to the existing mask.  Other bits will not be affected.
- * 
- * This class takes a RangeMapAdapter that will adapt to some lower level storage.  There are current
- * two implementations - one that uses an ObjectRangeMap for storing register values in memory and
- * the other that uses RangeMapDB for storing register values in the database.
- * 
- */
+# * This is a generalized class for storing register values over ranges.  The values include mask bits
+# * to indicate which bits within the register are being set.  The mask is stored along with the
+# * value so the getValue method can indicate back which bits in the value are valid.  If existing
+# * values already exist at an address, the values are combined according to the masks.  Any new value
+# * bits that have their associated mask bits on will overwrite any existing bits and the new mask will
+# * be anded to the existing mask.  Other bits will not be affected.
+# * 
+# * This class takes a RangeMapAdapter that will adapt to some lower level storage.  There are current
+# * two implementations - one that uses an ObjectRangeMap for storing register values in memory and
+# * the other that uses RangeMapDB for storing register values in the database.
+# * 
+# */
 
 public class RegisterValueStore {
 
@@ -58,7 +58,7 @@ public class RegisterValueStore {
 	private Address rangeWriteCacheMin;
 	private Address rangeWriteCacheMax;
 
-	/**
+    # /**
 	 * Constructs a new RegisterValueStore. 
 	 * @param rangeMap the rangeMapAdapter that handles the low level storage of byte arrays
 	 */
@@ -81,7 +81,7 @@ public class RegisterValueStore {
 		rangeWriteCacheValue = null;
 	}
 
-	/**
+    # /**
 	 * Move all register values within an address range to a new range.
 	 * @param fromAddr the first address of the range to be moved.
 	 * @param toAddr the address where to the range is to be moved.
@@ -95,7 +95,7 @@ public class RegisterValueStore {
 		rangeMap.moveAddressRange(fromAddr, toAddr, length, monitor);
 	}
 
-	/**
+    # /**
 	 * Sets the given register value (contains value and mask) across the given address range.  Any
 	 * existing values in the range that have values that are not part of the input mask are 
 	 * not changed. 
@@ -174,7 +174,7 @@ public class RegisterValueStore {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete all stored values and free/delete underlying storage.
 	 */
 	public void clearAll() {
@@ -182,7 +182,7 @@ public class RegisterValueStore {
 		rangeMap.clearAll();
 	}
 
-	/**
+    # /**
 	 * Clears the address range of any set bits using the mask from the given register value.
 	 * existing values in the range that have values that are not part of the input mask are 
 	 * not changed. If register is null, just clear all the values in range
@@ -228,7 +228,7 @@ public class RegisterValueStore {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the RegisterValue (value and mask) associated with the given address. 
 	 * @param register register (base or child) for which context value should be returned
 	 * @param address the address at which to get the RegisterValue.
@@ -253,7 +253,7 @@ public class RegisterValueStore {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Returns an AddressRangeIterator that will return address ranges everywhere that register values
 	 * have been set within the given range.
 	 * @param startAddress the start address to get stored register values.
@@ -269,7 +269,7 @@ public class RegisterValueStore {
 		return rangeMap.getAddressRangeIterator(startAddress, endAddress);
 	}
 
-	/**
+    # /**
 	 * Returns an AddressRangeIterator that will return address ranges everywhere that register
 	 * values have been set.
 	 * @return an AddressRangeIterator that will return address ranges everywhere that register
@@ -283,7 +283,7 @@ public class RegisterValueStore {
 		return rangeMap.getAddressRangeIterator();
 	}
 
-	/**
+    # /**
 	 * Returns true if this store has no associated values for any address.
 	 * @return  true if this store has no associated values for any address.
 	 */
@@ -291,7 +291,7 @@ public class RegisterValueStore {
 		return rangeWriteCacheValue == null && rangeMap.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Preserve register values and handle register name/size change.
 	 * @param translator
 	 * @param monitor
@@ -316,7 +316,7 @@ public class RegisterValueStore {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the bounding address-range containing addr and the the same value throughout.
 	 * This range will be limited by any value change associated with the base register.
 	 * @param addr the contained address
@@ -330,7 +330,7 @@ public class RegisterValueStore {
 		return rangeMap.getValueRangeContaining(addr);
 	}
 
-	/**
+    # /**
 	 * Notifies that something changed, may need to invalidate any caches
 	 */
 	public void invalidate() {

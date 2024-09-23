@@ -63,7 +63,7 @@ public class AssemblyGrammar
 		}
 	}
 
-	/**
+    # /**
 	 * Add a production associated with a SLEIGH constructor semantic
 	 * 
 	 * @param lhs the left-hand side
@@ -89,7 +89,7 @@ public class AssemblyGrammar
 		sem.addPattern(pattern);
 	}
 
-	/**
+    # /**
 	 * Get the semantics associated with a given production
 	 * 
 	 * @param prod the production
@@ -115,7 +115,7 @@ public class AssemblyGrammar
 		}
 	}
 
-	/**
+    # /**
 	 * Get all productions in the grammar that are purely recursive
 	 * 
 	 * @return
@@ -124,7 +124,7 @@ public class AssemblyGrammar
 		return pureRecursive.values();
 	}
 
-	/**
+    # /**
 	 * Obtain, if present, the purely recursive production having the given LHS
 	 * 
 	 * @param lhs the left-hand side

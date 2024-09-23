@@ -46,7 +46,7 @@ public class SSLContextInitializer implements ModuleInitializer {
 
 	private static SSLContext sslContext;
 
-	/**
+    # /**
 	 * Initialize default SSLContext with optional reset.
 	 * This method is primarily intended for testing.
 	 * @param reset if true a complete reset will be done to force use of
@@ -62,7 +62,7 @@ public class SSLContextInitializer implements ModuleInitializer {
 		return initialize();
 	}
 
-	/**
+    # /**
 	 * Initialize default SSLContext
 	 * @return true if successful, else false (see logged error)
 	 */
@@ -117,7 +117,7 @@ public class SSLContextInitializer implements ModuleInitializer {
 		return "SSL Context";
 	}
 
-	/**
+    # /**
 	 * <code>HttpsHostnameVerifier</code> is required by HttpsURLConnection even
 	 * if it does nothing.  The verify method will only be invoked if the default 
 	 * behavior fails the connection attempt due to a hostname mismatch.

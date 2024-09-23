@@ -16,7 +16,7 @@
 package ghidra.formats.gfilesystem.crypto;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.util.*;
 

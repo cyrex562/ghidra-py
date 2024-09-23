@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.mem;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 

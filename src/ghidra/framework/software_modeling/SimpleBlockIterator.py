@@ -1,19 +1,19 @@
 # /* ###
- * IP: GHIDRA
- * REVIEWED: YES
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# * REVIEWED: YES
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import ghidra.program.model.address.*;
@@ -22,11 +22,11 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <CODE>SimpleBlockIterator</CODE> is an implementation of
- * <CODE>CodeBlockIterator</CODE> capable of iterating in
- * the forward direction over "simple blocks".
- * @see SimpleBlockModel
- */
+# * <CODE>SimpleBlockIterator</CODE> is an implementation of
+# * <CODE>CodeBlockIterator</CODE> capable of iterating in
+# * the forward direction over "simple blocks".
+# * @see SimpleBlockModel
+# */
 public class SimpleBlockIterator implements CodeBlockIterator {
 	private Listing listing = null;
 	// at any given time nextBlock will either be null or hold the
@@ -42,7 +42,7 @@ public class SimpleBlockIterator implements CodeBlockIterator {
 	private SimpleBlockModel model = null;
 	private TaskMonitor monitor;
 
-	/**
+    # /**
 	 * Creates a new iterator that will iterate over the entire
 	 * program starting from its current minimum address.
 	 * <P>
@@ -56,7 +56,7 @@ public class SimpleBlockIterator implements CodeBlockIterator {
 		this(model, model.getProgram().getMemory(), monitor);
 	}
 
-	/**
+    # /**
 	 * Creates a new iterator that will iterate over the
 	 * program within a given address range set. All blocks which 
 	 * overlap the address set will be returned.
@@ -97,7 +97,7 @@ public class SimpleBlockIterator implements CodeBlockIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockIterator#hasNext()
 	 */
 	@Override
@@ -111,7 +111,7 @@ public class SimpleBlockIterator implements CodeBlockIterator {
 		return (nextBlock != null);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockIterator#next()
 	 */
 	@Override
@@ -124,7 +124,7 @@ public class SimpleBlockIterator implements CodeBlockIterator {
 		return retBlock;
 	}
 
-	/**
+    # /**
 	 * Called for iterators restricted by an address range set,
 	 * it will find the next block and set up nextBlock and
 	 * nextAddr accordingly.
@@ -168,7 +168,7 @@ public class SimpleBlockIterator implements CodeBlockIterator {
 		nextBlock = null;
 	}
 
-	/**
+    # /**
 	 * Find the next Address that starts a valid block
 	 */
 	private Address getNextAddress(Address addr) {
@@ -242,7 +242,7 @@ public class SimpleBlockIterator implements CodeBlockIterator {
 //    	return false;
 //    }
 
-	/**
+    # /**
 	 * Finds the first block occurring in the given range.
 	 * @param range  the range to look for the block in.
 	 * @return will return null if no code block can be found.

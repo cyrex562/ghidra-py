@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.fileset;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import ghidra.app.util.bin.ByteArrayProvider;

@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 
 import java.awt.datatransfer.*;
 import java.io.File;
-import java.io.IOException;
+
 
 import org.junit.*;
 

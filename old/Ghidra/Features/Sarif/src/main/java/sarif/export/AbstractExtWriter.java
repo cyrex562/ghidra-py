@@ -15,7 +15,7 @@
  */
 package sarif.export;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.program.model.data.ISF.AbstractIsfWriter;

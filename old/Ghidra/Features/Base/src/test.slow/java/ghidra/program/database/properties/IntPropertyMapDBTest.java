@@ -17,7 +17,7 @@ package ghidra.program.database.properties;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.Random;
 
 import org.junit.*;

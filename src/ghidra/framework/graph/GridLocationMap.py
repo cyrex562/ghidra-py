@@ -86,7 +86,7 @@ public class GridLocationMap<V, E> {
 		return vertexPoints.get(vertex).x;
 	}
 
-	/**
+    # /**
 	 * Returns the rows in this grid, sorted by index (index can be negative)
 	 * 
 	 * @return the rows in this grid
@@ -119,7 +119,7 @@ public class GridLocationMap<V, E> {
 		return row;
 	}
 
-	/**
+    # /**
 	 * Updates each row within the grid such that it's x values are set to center the row in
 	 * the grid.  Each row will be updated so that all its columns start at zero.  After that, 
 	 * each column will be centered in the grid.
@@ -242,7 +242,7 @@ public class GridLocationMap<V, E> {
 			"\n\tedge points=" + edgePoints + "]";
 	}
 
-	/**
+    # /**
 	 * Creates a string representation of this grid
 	 * @return a string representation of this grid
 	 */

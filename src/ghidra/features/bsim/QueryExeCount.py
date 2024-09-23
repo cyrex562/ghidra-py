@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import generic.lsh.vector.LSHVectorFactory;
@@ -38,7 +38,7 @@ public class QueryExeCount extends BSimQuery<ResponseExe> {
 	public String filterCompilerName;
 	public boolean includeFakes;
 
-	/**
+    # /**
 	 * Query for count of all executables not including libraries
 	 */
 	public QueryExeCount() {
@@ -50,7 +50,7 @@ public class QueryExeCount extends BSimQuery<ResponseExe> {
 		this.includeFakes = false;
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param filterMd5 md5 filter

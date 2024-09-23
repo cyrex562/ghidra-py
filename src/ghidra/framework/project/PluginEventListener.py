@@ -24,7 +24,7 @@ import ghidra.framework.plugintool.PluginEvent;
  *
  */
 public interface PluginEventListener {
-	/**
+    # /**
 	 * Notification that the given plugin event was sent.
 	 * @param event plugin event that was sent
 	 */

@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -25,10 +25,10 @@ import ghidra.util.UniversalID;
 import ghidra.util.exception.VersionException;
 
 # /**
- * Version 0 implementation for accessing the Data Type Archive ID database table. 
- * 
- * NOTE: Use of tablePrefix introduced with this adapter version.
- */
+# * Version 0 implementation for accessing the Data Type Archive ID database table. 
+# * 
+# * NOTE: Use of tablePrefix introduced with this adapter version.
+# */
 class SourceArchiveAdapterV0 extends SourceArchiveAdapter {
 	static final int VERSION = 0;
 	static final int V0_ARCHIVE_ID_DOMAIN_FILE_ID_COL = 0;
@@ -44,7 +44,7 @@ class SourceArchiveAdapterV0 extends SourceArchiveAdapter {
 
 	private Table table;
 
-	/**
+    # /**
 	 * Gets a version 1 adapter for the Data Type Archive ID table.
 	 * @param handle handle to the database containing the table.
 	 * @param tablePrefix prefix to be used with default table name
@@ -71,7 +71,7 @@ class SourceArchiveAdapterV0 extends SourceArchiveAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Create standard entry which corresponds to local datatype manager
 	 * @throws IOException if an IO error occurs
 	 */

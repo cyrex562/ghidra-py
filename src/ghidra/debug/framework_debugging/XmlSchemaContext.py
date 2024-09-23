@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.target.schema;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.*;

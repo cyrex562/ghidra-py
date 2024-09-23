@@ -24,33 +24,33 @@ import ghidra.util.exception.DuplicateNameException;
  */
 public interface Workspace {
 
-	/**
+    # /**
 	 * Get the workspace name
 	 * @return the name
 	 */
 	public String getName();
 
-	/**
+    # /**
 	 * Get the running tools in the workspace.
 	 * 
 	 * @return list of running tools or zero-length array if there are no tools in the workspace
 	 */
 	public PluginTool[] getTools();
 
-	/**
+    # /**
 	 * Launch an empty tool.
 	 * @return name of empty tool that is launched.
 	 */
 	public PluginTool createTool();
 
-	/**
+    # /**
 	 * Run the tool specified by the tool template object.
 	 * @param template the template
 	 * @return launched tool that is now running.
 	 */
 	public PluginTool runTool(ToolTemplate template);
 
-	/**
+    # /**
 	 * Rename this workspace.
 	 * 
 	 * @param newName new workspace name
@@ -61,7 +61,7 @@ public interface Workspace {
 	public void setName(String newName)
 			throws DuplicateNameException;
 
-	/**
+    # /**
 	 * Set this workspace to be the active workspace, i.e.,
 	 * all tools become visible.
 	 * The currently active workspace becomes inactive, and

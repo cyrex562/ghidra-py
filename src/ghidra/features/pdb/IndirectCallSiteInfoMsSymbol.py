@@ -32,7 +32,7 @@ public class IndirectCallSiteInfoMsSymbol extends AbstractMsSymbol implements Ad
 	protected int padding;
 	protected RecordNumber typeRecordNumber;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -59,7 +59,7 @@ public class IndirectCallSiteInfoMsSymbol extends AbstractMsSymbol implements Ad
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -68,7 +68,7 @@ public class IndirectCallSiteInfoMsSymbol extends AbstractMsSymbol implements Ad
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment. (MSFT says section, but we are interpreting as segment for now).
 	 * @return Segment.
 	 */
@@ -77,7 +77,7 @@ public class IndirectCallSiteInfoMsSymbol extends AbstractMsSymbol implements Ad
 		return section;
 	}
 
-	/**
+    # /**
 	 * Returns the section.
 	 * @return Section.
 	 */
@@ -85,7 +85,7 @@ public class IndirectCallSiteInfoMsSymbol extends AbstractMsSymbol implements Ad
 		return section;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */

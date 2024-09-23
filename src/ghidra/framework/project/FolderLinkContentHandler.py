@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.IOException;
+
 import java.net.URL;
 
 import javax.swing.Icon;
@@ -74,7 +74,7 @@ public class FolderLinkContentHandler extends LinkHandler<NullFolderDomainObject
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get linked domain folder
 	 * @param folderLinkFile folder-link file.
 	 * @return {@link LinkedGhidraFolder} referenced by specified folder-link file or null if 

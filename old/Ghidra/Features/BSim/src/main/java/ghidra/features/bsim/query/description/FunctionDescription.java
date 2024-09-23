@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.description;
 
-import java.io.*;
+
 import java.util.*;
 
 import generic.lsh.vector.LSHVectorFactory;

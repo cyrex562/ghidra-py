@@ -16,7 +16,7 @@
 package ghidra.framework.main.datatree;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.framework.client.ClientUtil;

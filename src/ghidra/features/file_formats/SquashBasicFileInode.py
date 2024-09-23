@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 
@@ -45,7 +45,7 @@ public class SquashBasicFileInode extends SquashInode {
 	// The total number of blocks comprising the file
 	protected int numberOfBlocks = 0;
 
-	/**
+    # /**
 	 * Represents a SquashFS basic file inode
 	 * @param reader A binary reader with pointer index at the start of the inode data
 	 * @param superBlock The SuperBlock for the current archive
@@ -85,7 +85,7 @@ public class SquashBasicFileInode extends SquashInode {
 
 	}
 
-	/**
+    # /**
 	 * Calculate the derived variables for this file
 	 * @param reader A binary reader with pointer index at the start of the inode data
 	 * @param superBlock The superblock for the current archive

@@ -18,7 +18,7 @@ package ghidra.app.decompiler;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.*;
+
 import java.util.concurrent.TimeUnit;
 
 import ghidra.program.model.address.Address;
@@ -450,7 +450,7 @@ public class DecompileProcess {
 
 	// Calls to the decompiler
 
-	/**
+    # /**
 	 * Initialize decompiler for a particular platform
 	 * @param cback = callback object for decompiler
 	 * @param pspecxml = string containing .pspec xml
@@ -492,7 +492,7 @@ public class DecompileProcess {
 		archId = Integer.parseInt(response.toString());
 	}
 
-	/**
+    # /**
 	 * Free decompiler resources
 	 * @return 1 if a program was actively deregistered, 0 otherwise
 	 * @throws IOException for problems with the pipe to the decompiler
@@ -521,7 +521,7 @@ public class DecompileProcess {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Send a single command to the decompiler with no parameters and return response
 	 * @param command is the name of the command to execute
 	 * @param response the response accumulator
@@ -552,7 +552,7 @@ public class DecompileProcess {
 		return statusGood;
 	}
 
-	/**
+    # /**
 	 * Execute a command with a timeout.  Parameters are in the encodingSet.mainQuery.
 	 * The response gets written to encodingSet.mainResponse.  
 	 * @param command the decompiler should execute
@@ -601,7 +601,7 @@ public class DecompileProcess {
 		return timeoutSecs * 1000;
 	}
 
-	/**
+    # /**
 	 * Send a command with 2 parameters to the decompiler and read the result
 	 * @param command string to send
 	 * @param param1  is the first parameter string
@@ -632,7 +632,7 @@ public class DecompileProcess {
 		}
 	}
 
-	/**
+    # /**
 	 * Set an upper limit on the amount of data that can be sent back by the decompiler in response
 	 * to a single command.
 	 * @param maxResultSizeMBytes is the maximum size in megabytes
@@ -641,7 +641,7 @@ public class DecompileProcess {
 		this.maxResultSizeMBYtes = maxResultSizeMBytes;
 	}
 
-	/**
+    # /**
 	 * Send a command to the decompiler with one parameter and return the result
 	 * @param command is the command string
 	 * @param param1 is the encoded parameter
@@ -670,7 +670,7 @@ public class DecompileProcess {
 		}
 	}
 
-	/**
+    # /**
 	 * Send a command to the decompiler with one parameter and return the result
 	 * @param command is the command string
 	 * @param param1 is the parameter encoded as a string

@@ -82,7 +82,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 
 	private static final String PDB_ANALYSIS_LOOKUP_STATE = "PDB_UNIVERSAL_ANALYSIS_STATE";
 
-	/**
+    # /**
 	 * Analysis state for items that need to be passed from the first PDB analysis phase to
 	 *  subsequent PDB analysis phase(s).
 	 */
@@ -135,7 +135,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns integer value of BigInteger or Long.MAX_VALUE if does not fit
 	 * @param big BigInteger value to convert
 	 * @return the integer value
@@ -152,7 +152,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns integer value of BigInteger or Integer.MAX_VALUE if does not fit
 	 * @param big BigInteger value to convert
 	 * @return the integer value
@@ -215,7 +215,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	private Map<RecordNumber, DataType> dataTypeByMsTypeNum;
 	private Map<RecordNumber, CppCompositeType> classTypeByMsTypeNum;
 	private ComplexTypeMapper complexTypeMapper;
-	/**
+    # /**
 	 * This namespace map documents as follows:
 	 * <PRE>
 	 *   false = simple namespace
@@ -237,7 +237,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	private int currentModuleNumber = 0;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for DefaultPdbApplicator.
 	 * Applies the PDB to the {@link Program} or {@link DataTypeManager}. Either, but not both,
 	 * can be null
@@ -272,7 +272,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 
 	//==============================================================================================
 	//==============================================================================================
-	/**
+    # /**
 	 * First of the PDB analysis phases.  This phase creates data types and also lays down public
 	 *  symbols and some global symbols pertaining to functions, but not necessarily the global
 	 *  symbols pertaining to block scopes, local variables, and parameters.  See other methods
@@ -295,7 +295,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		}
 	}
 
-	/**
+    # /**
 	 * Follow-on PDB analysis phase method that intends to figure out block scopes, local
 	 *  variables, and parameters for functions.  This should be called only after code processing
 	 *  has been completed for the program.
@@ -308,7 +308,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		doPdbFunctionInternalsWork();
 	}
 
-	/**
+    # /**
 	 * Does final applicator reporting, including metrics
 	 * @param program the program
 	 * @throws CancelledException upon user cancellation
@@ -318,7 +318,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		doReports(state);
 	}
 
-	/**
+    # /**
 	 * This method can be used instead of the multi-phased analysis methods.  Generally, this
 	 *  method should only be used when not processing in an analysis state.  It does work of
 	 *  some other analyzers (the disassembly phase).
@@ -392,7 +392,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Set the context for each function, disassemble them, and then do fix-ups
 	 * @throws PdbException upon issue gathering the data
 	 */
@@ -436,7 +436,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Do work, such as create parameters or local variables and scopes
 	 * @throws CancelledException upon user cancellation
 	 * @throws PdbException upon not enough data left to parse
@@ -554,7 +554,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 
 	//==============================================================================================
 	//==============================================================================================
-	/**
+    # /**
 	 * Initializes helper classes and data items used for applying the PDB
 	 * @throws PdbException upon error in processing components
 	 */
@@ -584,7 +584,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		recordNumbersByModuleNumber = new HashMap<>();
 	}
 
-	/**
+    # /**
 	 * Does some basic work based on the PDB and other parameters.  This work can be redone
 	 *  for each analysis phase (results should not differ)
 	 * @throws CancelledException upon user cancellation
@@ -665,7 +665,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	//==============================================================================================
 	// Basic utility methods.
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns the {@link PdbApplicatorOptions} for this PdbApplicator
 	 * @return the {@link PdbApplicatorOptions} for this PdbApplicator
 	 */
@@ -673,7 +673,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return applicatorOptions;
 	}
 
-	/**
+    # /**
 	 * Check to see if this monitor has been canceled
 	 * @throws CancelledException if monitor has been cancelled
 	 */
@@ -681,7 +681,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		monitor.checkCancelled();
 	}
 
-	/**
+    # /**
 	 * Sets the message displayed on the task monitor
 	 * @param message the message to display
 	 */
@@ -689,7 +689,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		log.appendMsg(message);
 	}
 
-	/**
+    # /**
 	 * Returns the MessageLog
 	 * @return the MessageLog
 	 */
@@ -697,7 +697,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return log;
 	}
 
-	/**
+    # /**
 	 * Puts message to {@link PdbLog} and to Msg.info()
 	 * @param originator a Logger instance, "this", or YourClass.class
 	 * @param message the message to display
@@ -707,7 +707,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		Msg.info(originator, message);
 	}
 
-	/**
+    # /**
 	 * Puts error message to {@link PdbLog} and to Msg.error() which will
 	 * also log a stack trace if exception is specified.
 	 * @param originator a Logger instance, "this", or YourClass.class
@@ -724,7 +724,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the TaskMonitor
 	 * @return the monitor
 	 */
@@ -733,7 +733,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return monitor;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CancelOnlyWrappingTaskMonitor} to available for this analyzer.  This is
 	 * useful for the user to be able to control the monitor progress bar without called commands
 	 * changing its progress on smaller tasks
@@ -743,7 +743,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return cancelOnlyWrappingMonitor;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link PdbApplicatorMetrics} being used for this applicator
 	 * @return the {@link PdbApplicatorMetrics}
 	 */
@@ -751,7 +751,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdbApplicatorMetrics;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link AbstractPdb} being analyzed
 	 * @return {@link AbstractPdb} being analyzed
 	 */
@@ -760,7 +760,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdb;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Program} for which this analyzer is working
 	 * @return {@link Program} for which this analyzer is working
 	 */
@@ -772,7 +772,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	//==============================================================================================
 	// Information for a putative PdbTypeApplicator:
 
-	/**
+    # /**
 	 * Returns the {@link DataTypeManager} associated with this analyzer
 	 * @return DataTypeManager which this analyzer is using
 	 */
@@ -792,7 +792,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	//==============================================================================================
 	// CategoryPath-related methods.
 	//==============================================================================================
-	/**
+    # /**
 	 * Get the {@link CategoryPath} associated with the {@link SymbolPath} specified, rooting
 	 * it either at the PDB Category
 	 * @param symbolPath symbol path to be used to create the CategoryPath. Null represents global
@@ -803,7 +803,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return categoryUtils.getCategory(symbolPath);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CategoryPath} for a typedef with with the give {@link SymbolPath} and
 	 * module number; 1 <= moduleNumber <= {@link PdbDebugInfo#getNumModules()}
 	 * except that modeleNumber of 0 represents publics/globals
@@ -815,7 +815,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return categoryUtils.getTypedefsCategory(moduleNumber, symbolPath);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CategoryPath} for Anonymous Functions Category for the PDB
 	 * @return the {@link CategoryPath}
 	 */
@@ -823,7 +823,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return categoryUtils.getAnonymousFunctionsCategory();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CategoryPath} for Anonymous Types Category for the PDB
 	 * @return the {@link CategoryPath}
 	 */
@@ -831,7 +831,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return categoryUtils.getAnonymousTypesCategory();
 	}
 
-//	/**
+//    # /**
 //	 * Returns the name of what should be the next Anonymous Function (based on the count of
 //	 * the number of anonymous functions) so that there is a unique name for the function.
 //	 * @return the name for the next anonymous function.
@@ -840,7 +840,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 //		return categoryUtils.getNextAnonymousFunctionName();
 //	}
 
-//	/**
+//    # /**
 //	 * Updates the count of the anonymous functions.  This is a separate call from
 //	 * {@link #getNextAnonymousFunctionName()} because the count should only be updated after
 //	 * the previous anonymous function has been successfully created/stored.
@@ -893,7 +893,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	//==============================================================================================
 	//==============================================================================================
 
-	/**
+    # /**
 	 * Returns the processed Ghidra class type associated with the PDB type record number.  Causes
 	 *  the type to be processed if it already has not been.
 	 * <p>
@@ -941,7 +941,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * Stores the Ghidra data type associated with the PDB data type.
 	 * This method is intended to be used by appliers that work on this specific type, not by
 	 *  appliers that need the data type
@@ -953,7 +953,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		putDataType(recordNumber, dataType);
 	}
 
-	/**
+    # /**
 	 * Stores the Ghidra data type associated with the PDB record number.
 	 * This method is intended to be used by appliers that work on this specific type, not by
 	 *  appliers that need the data type
@@ -965,7 +965,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		dataTypeByMsTypeNum.put(mappedNumber, dataType);
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra data type associated with the PDB data type.
 	 * This method is intended to be used by appliers that work on this specific type, not by
 	 *  appliers that need the data type
@@ -977,7 +977,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return getDataType(recordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra data type associated with the PDB record number.
 	 * <p>
 	 * This method is intended to be used by appliers that work on this specific type, not by
@@ -991,7 +991,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return dataTypeByMsTypeNum.get(mappedNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra data type associated with the PDB record number.
 	 * This method is intended to be used by appliers that work on this specific type, not by
 	 *  appliers that need the data type
@@ -1009,7 +1009,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Stores the Ghidra class type associated with the PDB data type.
 	 * This method is intended to be used by appliers that work on this specific type, not by
 	 *  appliers that need the data type
@@ -1030,7 +1030,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		putClassType(recordNumber, classType);
 	}
 
-	/**
+    # /**
 	 * Returns the Ghidra class type associated with the PDB class type.
 	 * <p>
 	 * This method is intended to be used by appliers that work on this specific type, not by
@@ -1053,7 +1053,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns the record for the associated record number, which is expected to match the
 	 *  desired class
 	 * @param recordNumber the record number
@@ -1063,7 +1063,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdb.getTypeRecord(recordNumber, AbstractMsType.class);
 	}
 
-	/**
+    # /**
 	 * Returns the record for the mapped associated record number, which is expected to match the
 	 *  desired class
 	 * @param recordNumber the record number
@@ -1074,7 +1074,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdb.getTypeRecord(mappedNumber, AbstractMsType.class);
 	}
 
-	/**
+    # /**
 	 * Returns the record for the associated record number, which is expected to match the
 	 *  desired class
 	 * @param <T> class return type
@@ -1087,7 +1087,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdb.getTypeRecord(recordNumber, typeClass);
 	}
 
-	/**
+    # /**
 	 * Returns the record for the mapped associated record number, which is expected to match the
 	 *  desired class
 	 * @param <T> class return type
@@ -1103,7 +1103,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 
 	//==============================================================================================
 	// Might change this to private if removed use from CompositeTypeApplier
-	/**
+    # /**
 	 * Returns map to alternate record number or argument record number if no map.  Result is
 	 *  RecordNumber of alternative record for the complex type.  Map is of fwdref to definition
 	 *  RecordNumbers.  The fwdref number is generally, but not always, the lower number
@@ -1320,7 +1320,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	//==============================================================================================
 	// Address-related methods.
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns true if the {@link Address} is an invalid address for continuing application of
 	 * information to the program.  Will report Error or message for an invalid address and will
 	 * report a "External address" message for the name when the address is external
@@ -1344,7 +1344,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the image base Address being used by the applicator.
 	 * @return The Address
 	 */
@@ -1352,7 +1352,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return imageBase;
 	}
 
-	/**
+    # /**
 	 * Returns the Address for the given section and offset
 	 * @param symbol the {@link AddressMsSymbol}
 	 * @return the Address, which can be {@code Address.NO_ADDRESS} if invalid or
@@ -1362,7 +1362,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdbAddressManager.getAddress(symbol);
 	}
 
-	/**
+    # /**
 	 * Returns the Address for the given section and offset
 	 * @param segment the segment
 	 * @param offset the offset
@@ -1372,7 +1372,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdbAddressManager.getRawAddress(segment, offset);
 	}
 
-	/**
+    # /**
 	 * Returns the Address for the given section and offset
 	 * @param symbol The {@link AddressMsSymbol}
 	 * @return the Address, which can be {@code Address.NO_ADDRESS} if invalid or
@@ -1382,7 +1382,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdbAddressManager.getRawAddress(symbol);
 	}
 
-	/**
+    # /**
 	 * Indicate to the {@link PdbAddressManager} that a new symbol with the given name has the
 	 * associated address.  This allows the PdbAddressManager to create and organize the
 	 * re-mapped address and supply them.  Also returns the address of the pre-existing symbol
@@ -1396,7 +1396,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdbAddressManager.witnessSymbolNameAtAddress(name, address);
 	}
 
-	/**
+    # /**
 	 * Returns the Address of an existing symbol for the query address, where the mapping is
 	 * derived by using a the address of a PDB symbol as the key and finding the address of
 	 * a symbol in the program of the same "unique" name. This is accomplished using public
@@ -1408,7 +1408,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdbAddressManager.getRemapAddressByAddress(address);
 	}
 
-	/**
+    # /**
 	 * Method for callee to add a Memory Group symbol to the Memory Group list.
 	 * @param symbol the symbol.
 	 */
@@ -1416,7 +1416,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		pdbAddressManager.addMemoryGroupRefinement(symbol);
 	}
 
-	/**
+    # /**
 	 * Method for callee to add a Memory Section symbol to the Memory Section list.
 	 * @param symbol the symbol.
 	 */
@@ -1442,7 +1442,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		return pdbPeHeaderInfoManager.getOriginalImageBase();
 	}
 
-	/**
+    # /**
 	 * Get CLI metadata for specified tableNum and rowNum within the CLI metadata stream
 	 * @param tableNum CLI metadata stream table index
 	 * @param rowNum table row number
@@ -1471,7 +1471,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	//==============================================================================================
 	//==============================================================================================
 	@SuppressWarnings("unused") // for method not being called.
-	/**
+    # /**
 	 * Process all symbols.  User should not then call other methods:
 	 * {@link #processGlobalSymbolsNoTypedefs()}, (@link #processPublicSymbols()}, and
 	 * {@link #processNonPublicOrGlobalSymbols()}
@@ -1621,7 +1621,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Process public symbols.  User should not then call {@link #processAllSymbols()}; but
 	 * has these other methods available to supplement this one:
 	 * {@link #processGlobalSymbolsNoTypedefs()} and {@link #processNonPublicOrGlobalSymbols()}
@@ -1678,7 +1678,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 //
 	}
 
-	/**
+    # /**
 	 * Process global symbols--no typedef.  User should not then call {@link #processAllSymbols()};
 	 * but has these other methods available to supplement this one: (@link #processPublicSymbols()}
 	 * and {@link #processNonPublicOrGlobalSymbols()}
@@ -1770,7 +1770,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 		}
 	}
 
-	/**
+    # /**
 	 * Process global typdef symbols
 	 * @throws CancelledException upon user cancellation
 	 * @throws PdbException upon issue processing the request
@@ -1831,7 +1831,7 @@ public class DefaultPdbApplicator implements PdbApplicator {
 //		}
 	}
 
-	/**
+    # /**
 	 * Processing non-public, non-global symbols.  User should not then call
 	 * {@link #processAllSymbols()}; but has these other methods available to supplement this one:
 	 * {@link #processGlobalSymbolsNoTypedefs()} and (@link #processPublicSymbols()}

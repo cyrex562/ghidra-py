@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import generic.stl.Pair;
@@ -37,7 +37,7 @@ public class VariableStorageConflicts {
 
 	private boolean parametersConflicted = false;
 
-	/**
+    # /**
 	 * Construct a VariableStorageConflicts object for the variables contained within two
 	 * functions.
 	 * @param variablesList1
@@ -117,7 +117,7 @@ public class VariableStorageConflicts {
 		}
 	}
 
-	/**
+    # /**
 	 * Recursively expand the variable storage (set1,set2) to encompass all
 	 * variables associated with the corresponding sets (variables1,variables2) which
 	 * intersects the other set.  Any variables added to the overlap set will also be added
@@ -244,7 +244,7 @@ public class VariableStorageConflicts {
 		return parametersConflicted;
 	}
 
-	/**
+    # /**
 	 * Check to see if either var1 or var2 is contained within the conflicted/overlapping
 	 * set of variables.  In general, one of the specified variables should be null.
 	 * @param var1 a variable which corresponds to function1 at time of construction or null

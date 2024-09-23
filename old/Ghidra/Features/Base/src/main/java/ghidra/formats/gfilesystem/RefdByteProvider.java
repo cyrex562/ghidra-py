@@ -16,7 +16,7 @@
 package ghidra.formats.gfilesystem;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 

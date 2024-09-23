@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.interpreter;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
+
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;

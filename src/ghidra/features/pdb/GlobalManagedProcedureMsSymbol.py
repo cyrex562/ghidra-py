@@ -27,7 +27,7 @@ public class GlobalManagedProcedureMsSymbol extends AbstractGlobalManagedProcedu
 
 	public static final int PDB_ID = 0x112a;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

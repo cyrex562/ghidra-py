@@ -16,7 +16,7 @@
  */
 package ghidra.sleigh.grammar;
 
-import java.io.IOException;
+
 
 class FakeLineArrayListWriter extends LineArrayListWriter {
 	@Override

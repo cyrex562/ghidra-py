@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  */
 public abstract class AbstractProcedureMsSymbol extends AbstractMsSymbol
 		implements AddressMsSymbol, NameMsSymbol {
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -32,43 +32,43 @@ public abstract class AbstractProcedureMsSymbol extends AbstractMsSymbol
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
 	public abstract long getParentPointer();
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
 	public abstract long getEndPointer();
 
-	/**
+    # /**
 	 * Returns the next pointer.
 	 * @return next pointer.
 	 */
 	public abstract long getNextPointer();
 
-	/**
+    # /**
 	 * Returns the procedure length.
 	 * @return Length.
 	 */
 	public abstract long getProcedureLength();
 
-	/**
+    # /**
 	 * Returns the debug start offset.
 	 * @return Debug start offset.
 	 */
 	public abstract long getDebugStartOffset();
 
-	/**
+    # /**
 	 * Returns the debug end offset.
 	 * @return Debug end offset.
 	 */
 	public abstract long getDebugEndOffset();
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */

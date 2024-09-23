@@ -1,42 +1,42 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
-import java.io.*;
+
 
 # /**
- * Logic for reading LEB128 values.
- * <p>
- * LEB128 is a variable length integer encoding that uses 7 bits per byte, with the high bit
- * being reserved as a continuation flag, with the least significant bytes coming first 
- * (<b>L</b>ittle <b>E</b>ndian <B>B</b>ase <b>128</b>).
- * <p>
- * This implementation only supports reading values that decode to at most 64 bits (to fit into
- * a java long).
- * <p>
- * When reading a value, you must already know if it was written as a signed or unsigned value to
- * be able to decode it correctly.
- */
+# * Logic for reading LEB128 values.
+# * <p>
+# * LEB128 is a variable length integer encoding that uses 7 bits per byte, with the high bit
+# * being reserved as a continuation flag, with the least significant bytes coming first 
+# * (<b>L</b>ittle <b>E</b>ndian <B>B</b>ase <b>128</b>).
+# * <p>
+# * This implementation only supports reading values that decode to at most 64 bits (to fit into
+# * a java long).
+# * <p>
+# * When reading a value, you must already know if it was written as a signed or unsigned value to
+# * be able to decode it correctly.
+# */
 public class LEB128 {
-	/**
+    # /**
 	 * Max number of bytes that is supported by the deserialization code.
 	 */
 	public static final int MAX_SUPPORTED_LENGTH = 10;
 
-	/**
+    # /**
 	 * Reads an unsigned LEB128 variable length integer from the stream.
 	 * 
 	 * @param is {@link InputStream} to get bytes from
@@ -50,7 +50,7 @@ public class LEB128 {
 		return read(is, false);
 	}
 
-	/**
+    # /**
 	 * Reads a signed LEB128 variable length integer from the stream.
 	 * 
 	 * @param is {@link InputStream} to get bytes from
@@ -64,7 +64,7 @@ public class LEB128 {
 		return read(is, true);
 	}
 
-	/**
+    # /**
 	 * Reads a LEB128 number from the stream and returns it as a java 64 bit long int.
 	 * <p>
 	 * Large unsigned integers that use all 64 bits are returned in a java native
@@ -112,7 +112,7 @@ public class LEB128 {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Returns the length of the variable length LEB128 value.
 	 *  
 	 * @param is InputStream to get bytes from
@@ -131,7 +131,7 @@ public class LEB128 {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Decodes a LEB128 number from a byte array and returns it as a long.
 	 * <p>
 	 * See {@link #read(InputStream, boolean)}

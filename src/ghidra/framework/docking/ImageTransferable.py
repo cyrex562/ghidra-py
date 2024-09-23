@@ -17,7 +17,7 @@ package docking.dnd;
 
 import java.awt.Image;
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 
 # /**
  * Provides drag-n-drop support for Images

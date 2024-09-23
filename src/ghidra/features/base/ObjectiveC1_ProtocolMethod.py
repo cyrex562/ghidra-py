@@ -23,7 +23,7 @@ import ghidra.program.model.data.PointerDataType;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC1_ProtocolMethod implements StructConverter {
 	private static final String NAME = "objc_protocol_method";

@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.debug.service.model;
 
 import static ghidra.app.plugin.core.debug.gui.DebuggerResources.showError;
 
-import java.io.IOException;
+
 import java.lang.invoke.MethodHandles;
 import java.nio.CharBuffer;
 import java.text.DateFormat;

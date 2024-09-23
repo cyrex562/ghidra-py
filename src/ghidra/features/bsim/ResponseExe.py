@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +37,7 @@ public class ResponseExe extends QueryResponseRecord {
 	public DescriptionManager manage;
 	public int recordCount = 0;
 
-	/**
+    # /**
 	 * Constructor.
 	 */
 	public ResponseExe() {

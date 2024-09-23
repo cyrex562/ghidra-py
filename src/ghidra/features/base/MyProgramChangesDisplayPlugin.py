@@ -22,7 +22,7 @@
 package ghidra.app.plugin.core.misc;
 
 import java.awt.Color;
-import java.io.IOException;
+
 
 import javax.swing.Icon;
 

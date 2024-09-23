@@ -25,7 +25,7 @@ public class VirtualFunctionTablePointerTypeApplier extends MsDataTypeComponentA
 
 	// Intended for: AbstractVirtualFunctionTablePointerMsType or
 	//  AbstractVirtualFunctionTablePointerWithOffsetMsType
-	/**
+    # /**
 	 * Constructor for enum type applier, for transforming a enum into a Ghidra DataType
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 * @throws IllegalArgumentException Upon invalid arguments.
@@ -42,7 +42,7 @@ public class VirtualFunctionTablePointerTypeApplier extends MsDataTypeComponentA
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Returns the name to use.
 	 * @param type the PDB type being inspected
 	 * @return Name of the pointer type.

@@ -26,7 +26,7 @@ public class LocalVariableAttributes extends AbstractParsableItem {
 	private int segment;
 	private LocalVariableFlags flags;
 
-	/**
+    # /**
 	 * Constructor for this symbol component.
 	 * @param pdb {@link AbstractPdb} to which these symbol attributes belongs.
 	 * @param reader {@link PdbByteReader} from which this data is deserialized.

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.bplist;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.program.model.data.*;

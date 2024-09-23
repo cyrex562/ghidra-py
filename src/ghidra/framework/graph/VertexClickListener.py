@@ -31,7 +31,7 @@ import ghidra.graph.viewer.event.mouse.VisualGraphMousePlugin;
  */
 public interface VertexClickListener<V extends VisualVertex, E extends VisualEdge<V>> {
 
-	/**
+    # /**
 	 * Called when a vertex is double-clicked
 	 * @param v the clicked vertex
 	 * @param mouseInfo the info object that contains mouse information for the graph and 

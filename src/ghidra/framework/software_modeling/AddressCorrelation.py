@@ -26,7 +26,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public interface AddressCorrelation {
 
-	/**
+    # /**
 	 * Returns the AddressRange of a set of addresses in the destination
 	 * program that correlates to corresponding range in the source program.
 	 *
@@ -38,7 +38,7 @@ public interface AddressCorrelation {
 	public AddressCorrelationRange getCorrelatedDestinationRange(Address sourceAddress,
 			TaskMonitor monitor) throws CancelledException;
 
-	/**
+    # /**
 	 * This method is no longer part of the API.  Leaving a default implementation to reduce 
 	 * breaking clients.
 	 * @return the simple class name of the implementing class

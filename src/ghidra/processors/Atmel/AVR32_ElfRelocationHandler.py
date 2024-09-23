@@ -31,7 +31,7 @@ import ghidra.program.model.util.CodeUnitInsertionException;
 public class AVR32_ElfRelocationHandler
 		extends AbstractElfRelocationHandler<AVR32_ElfRelocationType, ElfRelocationContext<?>> {
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public AVR32_ElfRelocationHandler() {

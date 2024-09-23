@@ -18,7 +18,7 @@ package ghidra.file.formats.lzss;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
-import java.io.*;
+
 
 import org.junit.Test;
 

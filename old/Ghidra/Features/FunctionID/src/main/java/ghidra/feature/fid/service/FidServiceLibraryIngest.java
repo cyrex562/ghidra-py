@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.service;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.function.Predicate;

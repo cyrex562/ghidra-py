@@ -17,7 +17,7 @@ package ghidra.pcodeCPort.slghsymbol;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.pcode.Encoder;
 import ghidra.sleigh.grammar.Location;

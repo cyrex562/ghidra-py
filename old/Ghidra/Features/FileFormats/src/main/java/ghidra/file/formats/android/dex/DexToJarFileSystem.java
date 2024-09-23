@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;

@@ -22,12 +22,12 @@ import ghidra.program.database.DatabaseObject;
  * A string record in the FID database.
  */
 public class StringRecord extends DatabaseObject {
-	/**
+    # /**
 	 * The value of the string.
 	 */
 	private final String value;
 
-	/**
+    # /**
 	 * Constructor with the primary key and the string value.
 	 * @param cache StringRecord object cache
 	 * @param key primary key
@@ -38,7 +38,7 @@ public class StringRecord extends DatabaseObject {
 		this.value = value;
 	}
 
-	/**
+    # /**
 	 * Returns the value of the string.
 	 * @return the value of the string
 	 */
@@ -46,7 +46,7 @@ public class StringRecord extends DatabaseObject {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Never need to refresh...this database object is immutable.
 	 */
 	@Override

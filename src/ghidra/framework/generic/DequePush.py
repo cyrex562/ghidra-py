@@ -34,7 +34,7 @@ public class DequePush<E> implements AutoCloseable {
 		stack.pop();
 	}
 
-	/**
+    # /**
 	 * Push an element to the given stack
 	 * @param stack the stack
 	 * @param elem the element

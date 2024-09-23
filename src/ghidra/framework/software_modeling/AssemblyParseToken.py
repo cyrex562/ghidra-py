@@ -30,7 +30,7 @@ public class AssemblyParseToken extends AssemblyParseTreeNode {
 	protected final AssemblyTerminal term;
 	protected final String str;
 
-	/**
+    # /**
 	 * Construct a new token having the given string value
 	 * 
 	 * @param grammar the grammar containing the terminal
@@ -66,7 +66,7 @@ public class AssemblyParseToken extends AssemblyParseTreeNode {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Get the portion of the input comprising the token
 	 * 
 	 * @return the string value

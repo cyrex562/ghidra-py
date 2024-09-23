@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.*;
+
 import java.util.Iterator;
 import java.util.TreeSet;
 

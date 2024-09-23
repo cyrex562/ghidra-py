@@ -15,7 +15,7 @@
  */
 package generic.lsh.vector;
 
-import java.io.IOException;
+
 
 import ghidra.xml.XmlPullParser;
 

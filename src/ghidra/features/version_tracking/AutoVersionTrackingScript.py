@@ -249,7 +249,7 @@ public class AutoVersionTrackingScript extends GhidraScript {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if there is an existing VTSession in the given folder with the given name
 	 * @param name the given name
 	 * @param folder the given Ghidra project folder
@@ -273,7 +273,7 @@ public class AutoVersionTrackingScript extends GhidraScript {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to create the default GhidraValuesMap AutoVT options
 	 * @return the default GhidraValuesMap AutoVT options
 	 */
@@ -300,7 +300,7 @@ public class AutoVersionTrackingScript extends GhidraScript {
 		return optionsValues;
 	}
 
-	/**
+    # /**
 	 * Method to ask the user for AutoVT options
 	 * @return a GhidraValuesMap containing AutoVT options values
 	 * @throws CancelledException if cancelled
@@ -315,7 +315,7 @@ public class AutoVersionTrackingScript extends GhidraScript {
 		return optionsValues;
 	}
 
-	/**
+    # /**
 	 * Set the Auto Version Tracking options given a GhidraValuesMap containing the options values
 	 * @param optionsValues the option values in a GhidraValuesMap
 	 * @return ToolOptions containing the Auto Version Tracking options values

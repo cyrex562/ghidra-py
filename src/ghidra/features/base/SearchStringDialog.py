@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.string;
 
 import java.awt.*;
 import java.io.File;
-import java.io.IOException;
+
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;

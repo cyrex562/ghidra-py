@@ -139,14 +139,14 @@ public class PdbApplicatorOptions {
 
 	//==============================================================================================
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public PdbApplicatorOptions() {
 		setDefaults();
 	}
 
-	/**
+    # /**
 	 * Register the PdbApplicatorOptions for "Analysis."
 	 * @param options the Options that will have PdbApplicator options registered in.
 	 */
@@ -154,7 +154,7 @@ public class PdbApplicatorOptions {
 		registerOptions(options, false);
 	}
 
-	/**
+    # /**
 	 * Load the PdbApplicatorOptions for used for "Analysis."
 	 * @param options the Options that have PdbApplicator options registered in.
 	 */
@@ -162,7 +162,7 @@ public class PdbApplicatorOptions {
 		loadOptions(options, false);
 	}
 
-	/**
+    # /**
 	 * Register the PdbApplicatorOptions for "Load PDB."
 	 * @param options the Options that will have PdbApplicator options registered in.
 	 */
@@ -170,7 +170,7 @@ public class PdbApplicatorOptions {
 		registerOptions(options, true);
 	}
 
-	/**
+    # /**
 	 * Load the PdbApplicatorOptions for used for "Load PDB."
 	 * @param options the Options that have PdbApplicator options registered in.
 	 */
@@ -284,7 +284,7 @@ public class PdbApplicatorOptions {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the options to their default values
 	 */
 	public void setDefaults() {
@@ -300,7 +300,7 @@ public class PdbApplicatorOptions {
 		compositeLayout = DEFAULT_CLASS_LAYOUT;
 	}
 
-	/**
+    # /**
 	 * Enable/disable developmental debug.
 	 * @param applyCodeScopeBlockComments {@code true} to turn applyCodeScopeBlockComments on
 	 */
@@ -308,7 +308,7 @@ public class PdbApplicatorOptions {
 		this.applyCodeScopeBlockComments = applyCodeScopeBlockComments;
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if applyCodeScopeBlockComments is "on."
 	 * @return {@code true} if applyCodeScopeBlockComments is "on."
 	 */
@@ -316,7 +316,7 @@ public class PdbApplicatorOptions {
 		return applyCodeScopeBlockComments;
 	}
 
-	/**
+    # /**
 	 * Enable/disable developmental debug.
 	 * @param applyInstructionLabels {@code true} to turn applyInstructionLabels on
 	 */
@@ -324,7 +324,7 @@ public class PdbApplicatorOptions {
 		this.applyInstructionLabels = applyInstructionLabels;
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if applyInstructionLabels is "on."
 	 * @return {@code true} if applyInstructionLabels is "on."
 	 */
@@ -335,7 +335,7 @@ public class PdbApplicatorOptions {
 	// If the above option is enabled, allowing instruction labels to be applied, this
 	// edit box provides a filter to prevent any labels matching this pattern from being
 	// applied to the program
-	/**
+    # /**
 	 * Set regular expression string describing labels to exclude from application.
 	 * @param excludeInstructionLabels regular expression describing instruction labels to exclude
 	 */
@@ -343,7 +343,7 @@ public class PdbApplicatorOptions {
 		this.excludeInstructionLabels = excludeInstructionLabels;
 	}
 
-	/**
+    # /**
 	 * Returns the string containing the regular expression describing instruction labels being
 	 * excluded from application.  Applicable when {@code applyInstructionLabels} is enabled
 	 * @return the regular expression String
@@ -352,7 +352,7 @@ public class PdbApplicatorOptions {
 		return excludeInstructionLabels;
 	}
 
-	/**
+    # /**
 	 * Returns the Regex Pattern for the Exclude Instruction Labels field.
 	 * @return the Pattern.
 	 */
@@ -360,7 +360,7 @@ public class PdbApplicatorOptions {
 		return excludeInstructionLabelsPattern;
 	}
 
-	/**
+    # /**
 	 * Set processing control for PdbApplicator
 	 * @param control the processing control
 	 */
@@ -368,7 +368,7 @@ public class PdbApplicatorOptions {
 		this.control = control;
 	}
 
-	/**
+    # /**
 	 * Returns the current processing control for the PdbApplicator
 	 * @return the processing control
 	 */
@@ -376,7 +376,7 @@ public class PdbApplicatorOptions {
 		return control;
 	}
 
-	/**
+    # /**
 	 * Enable/disable the option to attempt to map addresses using existing mangled symbols
 	 * (typically public symbols).
 	 * @param enable {@code true} to turn remapAddressesUsingExistingPublicSymbols on
@@ -385,7 +385,7 @@ public class PdbApplicatorOptions {
 		this.remapAddressUsingExistingPublicMangledSymbols = enable;
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if remapAddressesUsingExistingPublicSymbols is "on."
 	 * @return {@code true} if remapAddressesUsingExistingPublicSymbols is "on."
 	 */
@@ -393,7 +393,7 @@ public class PdbApplicatorOptions {
 		return remapAddressUsingExistingPublicMangledSymbols;
 	}
 
-	/**
+    # /**
 	 * Enable/disable the option to allow another symbol be set to primary when the existing
 	 * primary symbol is a mangled symbol, regardless of the Symbol SourceType.  This is
 	 * typically used when we can get better data type information from the PDB record than
@@ -404,7 +404,7 @@ public class PdbApplicatorOptions {
 		this.allowDemotePrimaryMangledSymbols = enable;
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if allowDemotePrimaryMangledSymbols is "on."
 	 * @return {@code true} if allowDemotePrimaryMangledSymbols is "on."
 	 */
@@ -412,7 +412,7 @@ public class PdbApplicatorOptions {
 		return allowDemotePrimaryMangledSymbols;
 	}
 
-	/**
+    # /**
 	 * Enable/disable the option to apply function params and locals, which might produce improper
 	 * results.
 	 * @param applyFunctionVariables {@code true} to turn applyPublicSymbolsOnly on
@@ -421,7 +421,7 @@ public class PdbApplicatorOptions {
 		this.applyFunctionVariables = applyFunctionVariables;
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if applyFunctionVariables is "on."
 	 * @return {@code true} if applyFunctionVariables is "on."
 	 */
@@ -429,7 +429,7 @@ public class PdbApplicatorOptions {
 		return applyFunctionVariables;
 	}
 
-	/**
+    # /**
 	 * Set the class layout.
 	 * @param classLayout composite layout
 	 */
@@ -437,7 +437,7 @@ public class PdbApplicatorOptions {
 		this.compositeLayout = classLayout;
 	}
 
-	/**
+    # /**
 	 * Returns the physical layout out classes.
 	 * @return the class layout.
 	 */

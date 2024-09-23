@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.mem;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 import java.util.function.Function;
@@ -28,9 +28,9 @@ import ghidra.program.model.mem.MemoryBlockType;
 import ghidra.util.exception.*;
 
 # /**
- * MemoryMap adapter for version 3.
- * This version introduces the concept of sub memory blocks and FileBytes
- */
+# * MemoryMap adapter for version 3.
+# * This version introduces the concept of sub memory blocks and FileBytes
+# */
 public class MemoryMapDBAdapterV3 extends MemoryMapDBAdapter {
 	private static final int V3_VERSION = 3;
 	private static final String TABLE_NAME = "Memory Blocks";

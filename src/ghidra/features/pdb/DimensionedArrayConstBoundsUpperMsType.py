@@ -29,7 +29,7 @@ public class DimensionedArrayConstBoundsUpperMsType
 
 	public static final int PDB_ID = 0x1207;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

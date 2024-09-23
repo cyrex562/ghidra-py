@@ -84,7 +84,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 
 	}
 
-	/**
+    # /**
 	 * Tool was removed from the given workspace.
 	 */
 	@Override
@@ -93,7 +93,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		plugin.getToolActionManager().enableConnectTools();
 	}
 
-	/**
+    # /**
 	 * Tool was added to the given workspace.
 	 */
 	@Override
@@ -102,7 +102,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		plugin.getToolActionManager().enableConnectTools();
 	}
 
-	/**
+    # /**
 	 * called when a workspace is added by the ToolManager
 	 */
 	@Override
@@ -122,7 +122,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		validate();
 	}
 
-	/**
+    # /**
 	 * called when a workspace is removed by the ToolManager
 	 */
 	@Override
@@ -139,7 +139,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		runningToolsCardPanel.remove(rtp);
 	}
 
-	/**
+    # /**
 	 * called when a workspace is setActive() by the ToolManager
 	 */
 	@Override
@@ -208,7 +208,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * called whenever the active project changes or is being set for
 	 * the first time
 	 * @param project the project
@@ -259,7 +259,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		repaint();
 	}
 
-	/**
+    # /**
 	 * adds a new empty workspace to the project with the name of the
 	 * workspace set by the user; called from the Workspace menu.
 	 */
@@ -284,7 +284,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		}
 	}
 
-	/**
+    # /**
 	 * used by the action listener on the combo-box workspace chooser
 	 */
 	private void chooseWorkspace(String workspaceName) {
@@ -311,7 +311,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 
 	}
 
-	/**
+    # /**
 	 * removes the active workspace
 	 */
 	void removeWorkspace() {
@@ -329,7 +329,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		tm.removeWorkspace(activeWorkspace);
 	}
 
-	/**
+    # /**
 	 * renames the active workspace
 	 */
 	void renameWorkspace() {
@@ -386,7 +386,7 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		workspaceSetActive(ws, newName);
 	}
 
-	/**
+    # /**
 	 * because of timing of state being restored on projects
 	 * being opened and created by the ProjectManager, we initialize
 	 * our workspace state manually whenever a project is opened
@@ -409,14 +409,14 @@ class WorkspacePanel extends JPanel implements WorkspaceChangeListener {
 		workspaceSetActive(tm.getActiveWorkspace());
 	}
 
-	/**
+    # /**
 	 * @return the active workspace for the project
 	 */
 	Workspace getActiveWorkspace() {
 		return activeWorkspace;
 	}
 
-	/**
+    # /**
 	 * Cause the specified workspace to be the active one
 	 * NOTE: this workspace must already be known to the ToolManager
 	 * @param ws the workspace

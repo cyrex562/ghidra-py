@@ -160,7 +160,7 @@ public class BlockGraphTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the maximum number of code lines which will be used per block when
 	 * showCode is enabled.
 	 * @param maxLines maximum number of code lines
@@ -456,7 +456,7 @@ public class BlockGraphTask extends Task {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Determine if the specified block is an entry node.
 	 * @param block the basic block to test
 	 * @return true  if the specified block is an entry node.

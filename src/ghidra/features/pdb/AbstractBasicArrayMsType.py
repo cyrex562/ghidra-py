@@ -27,7 +27,7 @@ public abstract class AbstractBasicArrayMsType extends AbstractMsType {
 
 	protected RecordNumber underlyingRecordNumber;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -41,7 +41,7 @@ public abstract class AbstractBasicArrayMsType extends AbstractMsType {
 			RecordNumber.parse(pdb, reader, RecordCategory.TYPE, recordNumberSize);
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the underlying type.
 	 * @return The record number of the underlying type.
 	 */
@@ -49,7 +49,7 @@ public abstract class AbstractBasicArrayMsType extends AbstractMsType {
 		return underlyingRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the type that is pointed to.
 	 * @return {@link AbstractMsType} type that is pointed to by this pointer.
 	 */

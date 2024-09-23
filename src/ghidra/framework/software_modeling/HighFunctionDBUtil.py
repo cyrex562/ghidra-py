@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import java.util.*;
@@ -29,18 +29,18 @@ import ghidra.util.Msg;
 import ghidra.util.exception.*;
 
 # /**
- * <code>HighFunctionDBUtil</code> provides various methods for updating the state of a
- * function contained within a program database.  It is important to note that the decompiler
- * result state (e.g., HighFunction, HighParam, HighLocal, etc.) is not altered by any of
- * these methods.  A new decompiler result will need to be generated to reflect any
- * changes made to the database.  Care must be taken when making incremental changes
- * to multiple elements (e.g., Variables)
- */
+# * <code>HighFunctionDBUtil</code> provides various methods for updating the state of a
+# * function contained within a program database.  It is important to note that the decompiler
+# * result state (e.g., HighFunction, HighParam, HighLocal, etc.) is not altered by any of
+# * these methods.  A new decompiler result will need to be generated to reflect any
+# * changes made to the database.  Care must be taken when making incremental changes
+# * to multiple elements (e.g., Variables)
+# */
 public class HighFunctionDBUtil {
 
 	public static final String AUTO_CAT = "/auto_proto"; // Category for auto generated prototypes
 
-	/**
+    # /**
 	 * Return the appropriate model name for committing to the database with the given HighFunction.
 	 * Generally this just returns the model name attached to the HighFunction, but if the "unknown"
 	 * model is associated with the function, or if the model doesn't exist, the decompiler
@@ -73,24 +73,24 @@ public class HighFunctionDBUtil {
 	}
 
 	public enum ReturnCommitOption {
-		/**
+	    # /**
 		 * {@link #NO_COMMIT} - keep functions existing return parameter
 		 */
 		NO_COMMIT,
 
-		/**
+	    # /**
 		 * {@link #COMMIT} - commit return parameter as defined by {@link HighFunction}
 		 */
 		COMMIT,
 
-		/**
+	    # /**
 		 * {@link #COMMIT_NO_VOID} - commit return parameter as defined by {@link HighFunction}
 		 * unless it is {@link VoidDataType} in which case keep existing function return parameter.
 		 */
 		COMMIT_NO_VOID;
 	}
 
-	/**
+    # /**
 	 * Commit all parameters, including optional return, associated with HighFunction to the 
 	 * underlying database.
 	 * @param highFunction is the associated HighFunction
@@ -233,7 +233,7 @@ public class HighFunctionDBUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Commit local variables from the decompiler's model of the function to the database.
 	 * This does NOT include formal function parameters.
 	 * @param highFunction is the decompiler's model of the function
@@ -262,7 +262,7 @@ public class HighFunctionDBUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a local DB variable with a default name. Storage and data-type for the variable
 	 * are provided explicitly.
 	 * @param function is the function owning the new variable
@@ -330,7 +330,7 @@ public class HighFunctionDBUtil {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Given a particular seed Variable, find the set of local Variables that are intended to be
 	 * merged containing that seed. The result will be an array with at least the seed variable in it.
 	 * @param function is the function containing the local variables
@@ -385,7 +385,7 @@ public class HighFunctionDBUtil {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Low-level routine for clearing any variables in the
 	 * database which conflict with this variable and return
 	 * one of them for re-use.  The returned variable still
@@ -436,7 +436,7 @@ public class HighFunctionDBUtil {
 		return matchingVariable;
 	}
 
-	/**
+    # /**
 	 * Get database parameter which corresponds to the given symbol, where we anticipate that
 	 * the parameter will be modified to match the symbol. The entire prototype is
 	 * committed to the database if necessary. An exception is thrown if a modifiable parameter
@@ -477,7 +477,7 @@ public class HighFunctionDBUtil {
 		return parameters[slot];
 	}
 
-	/**
+    # /**
 	 * Rename and/or retype the specified variable in the database.  All parameters may be flushed
 	 * to the database if typed parameter inconsistency detected.
 	 * @param highSymbol is the symbol being updated
@@ -689,7 +689,7 @@ public class HighFunctionDBUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Commit an overriding prototype for a particular call site to the database. The override
 	 * only applies to the function(s) containing the actual call site. Calls to the same function from
 	 * other sites are unaffected.  This is used typically either for indirect calls are for calls to
@@ -721,7 +721,7 @@ public class HighFunctionDBUtil {
 		datsym.writeSymbol(symtab, callsite, space, dtmanage, true);
 	}
 
-	/**
+    # /**
 	 * Read a call prototype override which corresponds to the specified override code symbol
 	 * @param sym special call override code symbol whose address corresponds to a call site
 	 * @return call prototype override DataTypeSymbol or null if associated function signature
@@ -739,7 +739,7 @@ public class HighFunctionDBUtil {
 		return datsym;
 	}
 
-	/**
+    # /**
 	 * Get the Address referred to by a spacebase reference. Address-of references are encoded in
 	 * the p-code syntax tree as: {@code vn = PTRSUB(<spacebase>, #const)}.  This decodes the reference and
 	 * returns the Address
@@ -778,7 +778,7 @@ public class HighFunctionDBUtil {
 		return storageAddress;
 	}
 
-	/**
+    # /**
 	 * Write a union facet to the database (UnionFacetSymbol).  Parameters provide the
 	 * pieces for building the dynamic LocalVariable.  This method clears out any preexisting
 	 * union facet with the same dynamic hash and firstUseOffset.

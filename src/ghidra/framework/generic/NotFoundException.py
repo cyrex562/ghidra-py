@@ -22,14 +22,14 @@ package ghidra.util.exception;
  */
 public class NotFoundException extends UsrException {
 
-	/**
+    # /**
 	 * Constructor
 	 */
     public NotFoundException() {
     	super("Object was not found.");
     }
 
-	/**
+    # /**
 	 * Constructor
 	 * @param msg detailed message
 	 */

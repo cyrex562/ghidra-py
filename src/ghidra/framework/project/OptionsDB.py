@@ -16,7 +16,7 @@
 package ghidra.framework.data;
 
 import java.beans.PropertyEditor;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -50,7 +50,7 @@ class OptionsDB extends AbstractOptions {
 		propertyTable = domainObj.getDBHandle().getTable(PROPERTY_TABLE_NAME);
 	}
 
-	/**
+    # /**
 	 * Perform property alterations as specified by the map provided.  This must be called
 	 * immediately following construction before any other instance method is invoked 
 	 * (with the exception of checkAlterations)

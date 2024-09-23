@@ -18,7 +18,7 @@ package ghidra.program.model.pcode;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.program.model.address.Address;
@@ -53,7 +53,7 @@ public class AddressXML {
 	private long size;				// Number of bytes in the size
 	private Varnode[] joinRecord;	// If non-null, separate address ranges being bonded in the "join" space
 
-	/**
+    # /**
 	 * Internal constructor for incremental initialization
 	 */
 	private AddressXML() {
@@ -61,7 +61,7 @@ public class AddressXML {
 		joinRecord = null;
 	}
 
-	/**
+    # /**
 	 * Construct an Address range as a space/offset/size
 	 * @param spc is the address space containing the range
 	 * @param off is the starting byte offset of the range
@@ -74,7 +74,7 @@ public class AddressXML {
 		joinRecord = null;
 	}
 
-	/**
+    # /**
 	 * Construct a logical memory range, representing multiple ranges pieced together.
 	 * The logical range is assigned an address in the JOIN address space.
 	 * The physical pieces making up the logical range are passed in as a sequence of
@@ -136,7 +136,7 @@ public class AddressXML {
 		pieces.toArray(joinRecord);
 	}
 
-	/**
+    # /**
 	 * Encode this sized address as an {@code <addr>} element to the stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors in the underlying stream
@@ -165,7 +165,7 @@ public class AddressXML {
 		encoder.closeElement(ELEM_ADDR);
 	}
 
-	/**
+    # /**
 	 * Restore an Address (as an AddressSpace and an offset) and an optional size from XML tag.
 	 * The tag can have any name, but it must either have:
 	 *    - A "name" attribute, indicating a register name  OR
@@ -218,7 +218,7 @@ public class AddressXML {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Restore an Address (as an AddressSpace and an offset) and an optional size from XML tag.
 	 * The tag can have any name, but it must either have:
 	 *    - A "name" attribute, indicating a register name  OR
@@ -263,7 +263,7 @@ public class AddressXML {
 		return result;
 	}
 
-	/**
+    # /**
 	 * A memory range is read from attributes of an XML tag. The tag must either have:
 	 *    - "name" attribute - indicating a register 
 	 *    - "space" attribute - with optional "first" and "last" attributes
@@ -314,28 +314,28 @@ public class AddressXML {
 		return result;
 	}
 
-	/**
+    # /**
 	 * @return the space associated of this address
 	 */
 	public final AddressSpace getAddressSpace() {
 		return space;
 	}
 
-	/**
+    # /**
 	 * @return the byte offset of this address
 	 */
 	public final long getOffset() {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * @return the size in bytes associated with this address
 	 */
 	public final long getSize() {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Get the array of physical pieces making up this logical address range, if
 	 * the range is in the JOIN address space. Otherwise return null.
 	 * @return the physical pieces or null
@@ -344,7 +344,7 @@ public class AddressXML {
 		return joinRecord;
 	}
 
-	/**
+    # /**
 	 * Build a raw Varnode from the Address and size
 	 * @return the new Varnode
 	 */
@@ -353,21 +353,21 @@ public class AddressXML {
 		return new Varnode(addr, (int) size);
 	}
 
-	/**
+    # /**
 	 * @return the first address in the range
 	 */
 	public Address getFirstAddress() {
 		return space.getAddress(offset);
 	}
 
-	/**
+    # /**
 	 * @return the last address in the range
 	 */
 	public Address getLastAddress() {
 		return space.getAddress(offset + size - 1);
 	}
 
-	/**
+    # /**
 	 * Create an address from "space" and "offset" attributes of the current element
 	 * @param decoder is the stream decoder
 	 * @return the decoded Address
@@ -394,7 +394,7 @@ public class AddressXML {
 		return spc.getAddress(offset);
 	}
 
-	/**
+    # /**
 	 * Decode a VariableStorage object from the attributes in the current address element.
 	 * The start of storage corresponds to the decoded address. The size is either passed
 	 * in or is decoded from a size attribute.
@@ -432,7 +432,7 @@ public class AddressXML {
 		return storage;
 	}
 
-	/**
+    # /**
 	 * Create an address from a stream encoding. This recognizes elements
 	 * <ul>
 	 *   <li>{@code <addr>}</li>
@@ -483,7 +483,7 @@ public class AddressXML {
 		return spc.getAddress(offset);
 	}
 
-	/**
+    # /**
 	 * Encode "space" and "offset" attributes for the current element, describing the
 	 * given Address to the stream.
 	 * @param encoder is the stream encoder
@@ -496,7 +496,7 @@ public class AddressXML {
 		encoder.writeUnsignedInteger(ATTRIB_OFFSET, addr.getUnsignedOffset());
 	}
 
-	/**
+    # /**
 	 * Encode "space" "offset" and "size" attributes for the current element, describing
 	 * the given memory range to the stream.
 	 * @param encoder is the stream encoder
@@ -513,7 +513,7 @@ public class AddressXML {
 		encoder.writeSignedInteger(ATTRIB_SIZE, size);
 	}
 
-	/**
+    # /**
 	 * Encode a memory range, as "space", "first", and "last" attributes, for the current element,
 	 * to the stream.
 	 * @param encoder is the stream encoder
@@ -547,7 +547,7 @@ public class AddressXML {
 		}
 	}
 
-	/**
+    # /**
 	 * Encode the given Address as an {@code <addr>} element to the stream
 	 * 
 	 * @param encoder is the stream encoder
@@ -565,7 +565,7 @@ public class AddressXML {
 		encoder.closeElement(ELEM_ADDR);
 	}
 
-	/**
+    # /**
 	 * Encode the given Address and a size as an {@code <addr>} element to the stream
 	 * 
 	 * @param encoder is the stream encoder
@@ -579,7 +579,7 @@ public class AddressXML {
 		encoder.closeElement(ELEM_ADDR);
 	}
 
-	/**
+    # /**
 	 * Encode a sequence of Varnodes as a single {@code <addr>} element to the stream.
 	 * If there is more than one Varnode, or if the logical size is non-zero,
 	 * the {@code <addr>} element will specify the address space as "join" and will have

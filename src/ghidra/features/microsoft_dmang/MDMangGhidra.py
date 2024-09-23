@@ -913,7 +913,7 @@ public class MDMangGhidra extends MDMang {
 		return resultDataType;
 	}
 
-	/**
+    # /**
 	 * Returns either a formal type name or a representative type name to fill into a
 	 * MangledDataType if the formal name is blank
 	 * @return the name

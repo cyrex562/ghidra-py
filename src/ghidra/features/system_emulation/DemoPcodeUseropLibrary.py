@@ -61,7 +61,7 @@ public class DemoPcodeUseropLibrary extends AnnotatedPcodeUseropLibrary<byte[]> 
 		new DemoStructuredPart(language.getDefaultCompilerSpec()).generate(ops);
 	}
 
-	/**
+    # /**
 	 * Treats the input as an offset to a C-style string and prints it to the console
 	 * 
 	 * <p>
@@ -94,7 +94,7 @@ public class DemoPcodeUseropLibrary extends AnnotatedPcodeUseropLibrary<byte[]> 
 		return Utils.longToBytes(end - offset, Long.BYTES, language.isBigEndian());
 	}
 
-	/**
+    # /**
 	 * Methods in this class are implemented using p-code compiled from Structured Sleigh
 	 */
 	public class DemoStructuredPart extends StructuredSleigh {
@@ -106,7 +106,7 @@ public class DemoPcodeUseropLibrary extends AnnotatedPcodeUseropLibrary<byte[]> 
 			super(cs);
 		}
 
-		/**
+	    # /**
 		 * Not really a syscall dispatcher
 		 * 
 		 * <p>

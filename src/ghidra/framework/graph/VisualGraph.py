@@ -52,7 +52,7 @@ import ghidra.graph.viewer.layout.VisualGraphLayout;
 public interface VisualGraph<V extends VisualVertex, E extends VisualEdge<V>>
 		extends GDirectedGraph<V, E> {
 
-	/**
+    # /**
 	 * A callback notifying this graph that the given vertex's location has changed
 	 * 
 	 * @param v the vertex
@@ -61,7 +61,7 @@ public interface VisualGraph<V extends VisualVertex, E extends VisualEdge<V>>
 	 */
 	public void vertexLocationChanged(V v, Point point, ChangeType changeType);
 
-	/**
+    # /**
 	 * Returns the focused vertex; null if no vertex has focus.  Focus is equivalent to 
 	 * being selected, but further distinguishes the vertex as being the only selected 
 	 * vertex.  This is useful for key event processing.
@@ -70,7 +70,7 @@ public interface VisualGraph<V extends VisualVertex, E extends VisualEdge<V>>
 	 */
 	public V getFocusedVertex();
 
-	/**
+    # /**
 	 * Sets the given vertex to be focused or not
 	 * 
 	 * <P>Note: this method is called by other APIs to ensure that the graph's notion of the 
@@ -84,12 +84,12 @@ public interface VisualGraph<V extends VisualVertex, E extends VisualEdge<V>>
 	 */
 	public void setVertexFocused(V v, boolean b);
 
-	/**
+    # /**
 	 * Clears any selected vertices as well as the focused vertex
 	 */
 	public void clearSelectedVertices();
 
-	/**
+    # /**
 	 * Selects the given vertices
 	 * 
 	 * <P>Note: this method is called by other APIs to ensure that the graph's notion of the 
@@ -102,28 +102,28 @@ public interface VisualGraph<V extends VisualVertex, E extends VisualEdge<V>>
 	 */
 	public void setSelectedVertices(Set<V> vertices);
 
-	/**
+    # /**
 	 * Returns the selected vertices.
 	 * 
 	 * @return the selected vertices
 	 */
 	public Set<V> getSelectedVertices();
 
-	/**
+    # /**
 	 * Adds the given listener to this graph
 	 * 
 	 * @param l the listener
 	 */
 	public void addGraphChangeListener(VisualGraphChangeListener<V, E> l);
 
-	/**
+    # /**
 	 * Removes the given listener from this graph
 	 * 
 	 * @param l the listener
 	 */
 	public void removeGraphChangeListener(VisualGraphChangeListener<V, E> l);
 
-	/**
+    # /**
 	 * Returns the layout that has been applied to the graph.  The graph does not need its 
 	 * layout to function, but rather it is convenient for the visual graph system to be able
 	 * to get the layout from the graph, rather than passing the layout everywhere it is 

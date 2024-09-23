@@ -34,7 +34,7 @@ public abstract class AbstractManyRegisterVariableMsSymbol extends AbstractMsSym
 	protected List<RegisterName> registerNameList = new ArrayList<>();
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

@@ -17,7 +17,7 @@ package ghidra.file.formats.coff;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.util.Date;
 
 import ghidra.app.util.bin.ByteProvider;

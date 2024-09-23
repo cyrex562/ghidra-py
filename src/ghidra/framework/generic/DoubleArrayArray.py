@@ -217,7 +217,7 @@ public class DoubleArrayArray implements Array, Serializable {
         return lastStart;
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.Array#copyDataTo(int, DataTable, int, int)
 	 */

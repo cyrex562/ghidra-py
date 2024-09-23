@@ -35,21 +35,21 @@ public interface VTChangeManager {
 	//
 	////////////////////////////////////////////////////////////////////////////
 
-	/**
+    # /**
 	 * A version tracking match set was added
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_MATCH_SET_ADDED = MATCH_SET_ADDED;
 
-	/**
+    # /**
 	 * The association status of a match item in the version tracking results has changed
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_ASSOCIATION_STATUS_CHANGED = ASSOCIATION_STATUS_CHANGED;
 
-	/**
+    # /**
 	 * The markup status of a match item in the version tracking results has changed
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
@@ -57,49 +57,49 @@ public interface VTChangeManager {
 	public static final VTEvent DOCR_VT_ASSOCIATION_MARKUP_STATUS_CHANGED =
 		ASSOCIATION_MARKUP_STATUS_CHANGED;
 
-	/**
+    # /**
 	 * A match result was added
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_MATCH_ADDED = MATCH_ADDED;
 
-	/**
+    # /**
 	 * A match result was deleted
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_MATCH_DELETED = MATCH_DELETED;
 
-	/**
+    # /**
 	 * The tag for a match was changed
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_MATCH_TAG_CHANGED = MATCH_TAG_CHANGED;
 
-	/**
+    # /**
 	 * A version tracking association was added
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_ASSOCIATION_ADDED = ASSOCIATION_ADDED;
 
-	/**
+    # /**
 	 * A version tracking association was removed
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_ASSOCIATION_REMOVED = ASSOCIATION_REMOVED;
 
-	/**
+    # /**
 	 * A markup item status was changed
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_MARKUP_ITEM_STATUS_CHANGED = MARKUP_ITEM_STATUS_CHANGED;
 
-	/**
+    # /**
 	 * A markup item's destination changed
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
@@ -107,21 +107,21 @@ public interface VTChangeManager {
 	public static final VTEvent DOCR_VT_MARKUP_ITEM_DESTINATION_CHANGED =
 		MARKUP_ITEM_DESTINATION_CHANGED;
 
-	/**
+    # /**
 	 * A version tracking tag was added
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_TAG_ADDED = TAG_ADDED;
 
-	/**
+    # /**
 	 * A version tracking tag was removed
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */
 	@Deprecated
 	public static final VTEvent DOCR_VT_TAG_REMOVED = TAG_REMOVED;
 
-	/**
+    # /**
 	 * The vote count of a match was changed
 	 * @deprecated Event type numeric constants have been changed to enums. Use the enum directly.
 	 */

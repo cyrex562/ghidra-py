@@ -16,7 +16,7 @@
 package ghidra.app.util.exporter;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.util.DomainObjectService;

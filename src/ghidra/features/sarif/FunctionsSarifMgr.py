@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -130,7 +130,7 @@ public class FunctionsSarifMgr extends SarifMgr {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses a list of {@link Function function} definitions from SARIF and creates
 	 * then, adding them to the current {@link Program program}.
 	 * <p>

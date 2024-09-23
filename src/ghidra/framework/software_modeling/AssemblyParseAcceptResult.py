@@ -26,7 +26,7 @@ import ghidra.app.plugin.assembler.sleigh.tree.AssemblyParseBranch;
 public class AssemblyParseAcceptResult extends AssemblyParseResult {
 	private final AssemblyParseBranch tree;
 
-	/**
+    # /**
 	 * @see AssemblyParseResult#accept(AssemblyParseBranch)
 	 */
 	protected AssemblyParseAcceptResult(AssemblyParseBranch tree) {
@@ -38,7 +38,7 @@ public class AssemblyParseAcceptResult extends AssemblyParseResult {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the tree
 	 * 
 	 * @return the tree

@@ -20,7 +20,7 @@ import ghidra.app.util.bin.StructConverterUtil;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class DmgHeaderV2 extends DmgHeader {
 	private byte [] signature;

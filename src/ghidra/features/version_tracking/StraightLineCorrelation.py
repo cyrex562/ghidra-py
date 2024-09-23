@@ -103,7 +103,7 @@ public class StraightLineCorrelation implements AddressCorrelation {
 		computeParamCorrelation();
 	}
 
-	/**
+    # /**
 	 * Add address correlations for the parameters.
 	 */
 	private void computeParamCorrelation() {
@@ -131,7 +131,7 @@ public class StraightLineCorrelation implements AddressCorrelation {
 		cachedForwardAddressMap.putAll(map);
 	}
 
-	/**
+    # /**
 	 * Save address correlation between two code units to the map
 	 * @param map is the address map
 	 * @param sourceCodeUnit is the source code unit

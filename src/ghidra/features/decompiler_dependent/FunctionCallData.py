@@ -26,7 +26,7 @@ public class FunctionCallData {
 	private String callFunctionName;
 	private String formatString;
 
-	/**
+    # /**
 	 * Constructore for FuncCallData
 	 * 
 	 * @param addressOfCall   Address of function call
@@ -39,7 +39,7 @@ public class FunctionCallData {
 		this.formatString = formatString;
 	}
 
-	/**
+    # /**
 	 * addressOfCall getter
 	 * 
 	 * @return addressOfCall
@@ -48,7 +48,7 @@ public class FunctionCallData {
 		return this.addressOfCall;
 	}
 
-	/**
+    # /**
 	 * callFunctionName getter
 	 * 
 	 * @return callFunctionName
@@ -57,7 +57,7 @@ public class FunctionCallData {
 		return this.callFunctionName;
 	}
 
-	/**
+    # /**
 	 * formatString getter
 	 * 
 	 * @return formatString

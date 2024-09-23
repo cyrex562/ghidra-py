@@ -25,7 +25,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public class IlLinesC13Section extends AbstractLinesC13Section {
 
-	/**
+    # /**
 	 * Parse and return a {@link IlLinesC13Section}.
 	 * @param reader {@link PdbByteReader} containing the symbol records to deserialize
 	 * @param ignore flag indicating whether the record should be ignored

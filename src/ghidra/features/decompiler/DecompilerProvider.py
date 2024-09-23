@@ -401,7 +401,7 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 		currentSelection = null;
 	}
 
-	/**
+    # /**
 	 * Sets the current program and adds/removes itself as a domainObjectListener
 	 *
 	 * @param newProgram the new program or null to clear out the current program.
@@ -446,7 +446,7 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 		return false;
 	}
 
-	/**
+    # /**
 	 * sets the current location for this provider. If the provider is not visible, it does not pass
 	 * it on to the controller. When the component is later shown, the current location will then be
 	 * passed to the controller.
@@ -470,14 +470,14 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 
 	}
 
-	/**
+    # /**
 	 * Re-decompile the currently displayed location
 	 */
 	void refresh() {
 		controller.refreshDisplay(program, currentLocation, null);
 	}
 
-	/**
+    # /**
 	 * Update the options from decompilerOptions
 	 */
 	void updateOptionsAndRefresh() {
@@ -506,7 +506,7 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 		return redecompileUpdater.isBusy() || controller.isDecompiling();
 	}
 
-	/**
+    # /**
 	 * Returns a string that shows the current line with the field under the cursor in between '[]'
 	 * chars.
 	 *
@@ -524,7 +524,7 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 		return string;
 	}
 
-	/**
+    # /**
 	 * Set the cursor location of the decompiler.
 	 *
 	 * @param lineNumber the 1-based line number
@@ -730,7 +730,7 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 //==================================================================================================
 // private methods
 //==================================================================================================
-	/**
+    # /**
 	 * Updates the windows title and subtitle to reflect the currently decompiled function
 	 */
 	private void updateTitle() {
@@ -1168,7 +1168,7 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 		graphServiceAdded();
 	}
 
-	/**
+    # /**
 	 * Sets the group and subgroup information for the given action.
 	 */
 	private void setGroupInfo(DockingAction action, String group, int subGroupPosition) {

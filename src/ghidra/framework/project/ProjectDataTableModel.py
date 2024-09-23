@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.datatable;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import docking.widgets.table.*;

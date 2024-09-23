@@ -21,7 +21,7 @@ import ghidra.program.model.mem.Memory;
 import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.program.model.util.MemoryByteIterator;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 class MemoryInputStream extends InputStream {

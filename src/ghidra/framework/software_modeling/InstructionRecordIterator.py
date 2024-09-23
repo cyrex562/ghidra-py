@@ -1,32 +1,32 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.code;
 
 import ghidra.program.model.listing.Instruction;
 import ghidra.program.model.listing.InstructionIterator;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import db.DBRecord;
 import db.RecordIterator;
 
 # /**
- * Converts a record iterator into an instruction iterator.
- */
+# * Converts a record iterator into an instruction iterator.
+# */
 
 public class InstructionRecordIterator implements InstructionIterator {
 	private CodeManager codeMgr;
@@ -34,7 +34,7 @@ public class InstructionRecordIterator implements InstructionIterator {
 	private Instruction nextInstruction;
 	private boolean forward;
 
-	/**
+    # /**
 	 * Constructs a new InstructionRecordIterator
 	 * @param codeMgr the code manager
 	 * @param it the record iterator.
@@ -46,7 +46,7 @@ public class InstructionRecordIterator implements InstructionIterator {
 		this.forward = forward;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#hasNext()
 	 */
 	@Override
@@ -57,7 +57,7 @@ public class InstructionRecordIterator implements InstructionIterator {
 		return nextInstruction != null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#next()
 	 */
 	@Override
@@ -81,7 +81,7 @@ public class InstructionRecordIterator implements InstructionIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * @see java.util.Iterator#remove()
 	 */
 	@Override

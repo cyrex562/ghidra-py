@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.go;
 
-import java.io.IOException;
+
 import java.net.URL;
 
 import ghidra.app.CorePluginPackage;
@@ -83,7 +83,7 @@ public class GhidraGoPlugin extends Plugin implements ApplicationLevelOnlyPlugin
 		}
 	}
 
-	/**
+    # /**
 	 * Accept the given url, which is then passed to the FrontEndTool to process.
 	 * @param url a {@link GhidraURL}
 	 * @return true if handled successfully, false otherwise.

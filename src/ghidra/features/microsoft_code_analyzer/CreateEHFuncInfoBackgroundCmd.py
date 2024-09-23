@@ -33,7 +33,7 @@ import ghidra.util.exception.CancelledException;
 public class CreateEHFuncInfoBackgroundCmd
 		extends AbstractCreateDataBackgroundCmd<EHFunctionInfoModel> {
 
-	/**
+    # /**
 	 * Constructs a command for applying a FuncInfo exception handling dataType at an address.
 	 * @param address the address where the data should be created using the data type.
 	 */
@@ -41,7 +41,7 @@ public class CreateEHFuncInfoBackgroundCmd
 		super(EHFunctionInfoModel.DATA_TYPE_NAME, address, 1);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a FuncInfo exception handling dataType at an address.
 	 * @param address the address where the data should be created using the data type.
 	 * @param validationvalidationOptions, applyOptions the options for controlling how validation is performed when 
@@ -55,7 +55,7 @@ public class CreateEHFuncInfoBackgroundCmd
 		super(EHFunctionInfoModel.DATA_TYPE_NAME, address, 1, validationOptions, applyOptions);
 	}
 
-	/**
+    # /**
 	 * Constructs a command for applying a FuncInfo exception handling data type at the 
 	 * address indicated by the model.
 	 * @param funcInfoModel the model for the data type

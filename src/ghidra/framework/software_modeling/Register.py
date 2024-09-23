@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import java.util.*;
@@ -21,11 +21,11 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.address.AddressSpace;
 
 # /**
- * Class to represent a processor register. To sort of handle bit registers, a special addressing
- * convention is used. First the upper bit is set. Second, the next 3 bits are used to specify what
- * bit position within a byte that this register bit exists at. Finally, the rest of the address is
- * the address of the byte where the register bit lives.
- */
+# * Class to represent a processor register. To sort of handle bit registers, a special addressing
+# * convention is used. First the upper bit is set. Second, the next 3 bits are used to specify what
+# * bit position within a byte that this register bit exists at. Finally, the rest of the address is
+# * the address of the byte where the register bit lives.
+# */
 public class Register implements java.io.Serializable, Comparable<Register> {
 
 	private static final List<String> EMPTY_COLLECTION = new ArrayList<>();
@@ -40,10 +40,10 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 	public final static int TYPE_HIDDEN = 32; // Register should not be exposed to users.
 	public final static int TYPE_DOES_NOT_FOLLOW_FLOW = 64; // Register value should NOT follow disassembly flow
 
-	/** Register can be used in SIMD operations **/
+    # /** Register can be used in SIMD operations **/
 	public final static int TYPE_VECTOR = 128;
 
-	/** Register used to denote NO defined context for a language **/
+    # /** Register used to denote NO defined context for a language **/
 	public final static Register NO_CONTEXT =
 		new Register("NO_CONTEXT", "NO_CONTEXT", Address.NO_ADDRESS, 4, true, 0);
 
@@ -64,10 +64,10 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 	private Register baseRegister;
 	private String group;
 
-	/** Bit vector of valid lane sizes **/
+    # /** Bit vector of valid lane sizes **/
 	private long laneSizes;
 
-	/**
+    # /**
 	 * Constructs a new Register object.
 	 *
 	 * @param name the name of this Register.
@@ -130,7 +130,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		}
 	}
 
-	/**
+    # /**
 	 * Add register alias
 	 * 
 	 * @param aliasReg
@@ -145,7 +145,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		aliases.add(alias);
 	}
 
-	/**
+    # /**
 	 * Remove register alias
 	 * 
 	 * @param alias
@@ -156,7 +156,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		}
 	}
 
-	/**
+    # /**
 	 * Return register aliases. NOTE: This is generally only supported for context register fields.
 	 * 
 	 * @return register aliases or null
@@ -168,7 +168,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return aliases;
 	}
 
-	/**
+    # /**
 	 * Gets the name of this Register.
 	 *
 	 * @return the name of this Register.
@@ -177,7 +177,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Get the description of the Register.
 	 *
 	 * @return the description of the register
@@ -190,7 +190,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return bigEndian;
 	}
 
-	/**
+    # /**
 	 * Gets the total number of bits for this Register.
 	 *
 	 * @return the total number of bits for this Register.
@@ -199,14 +199,14 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return bitLength;
 	}
 
-	/**
+    # /**
 	 * Returns the minimum number of bytes required to store a value for this Register.
 	 */
 	public int getMinimumByteSize() {
 		return (bitLength + 7) / 8;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes spanned by this Register.
 	 * 
 	 * <p>
@@ -219,14 +219,14 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return numBytes;
 	}
 
-	/**
+    # /**
 	 * Returns the offset into the register space for this register
 	 */
 	public int getOffset() {
 		return (int) address.getOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the bit offset from the register address for this register.
 	 * 
 	 * @return the bit offset from the register address for this register.
@@ -235,49 +235,49 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return leastSigBit;
 	}
 
-	/**
+    # /**
 	 * Returns true if this is the default frame pointer register
 	 */
 	public boolean isDefaultFramePointer() {
 		return (typeFlags & TYPE_FP) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true for a register whose context value should follow the disassembly flow.
 	 */
 	public boolean followsFlow() {
 		return (typeFlags & TYPE_DOES_NOT_FOLLOW_FLOW) == 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if this is a hidden register.
 	 */
 	public boolean isHidden() {
 		return (typeFlags & TYPE_HIDDEN) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if this is the program counter register
 	 */
 	public boolean isProgramCounter() {
 		return (typeFlags & TYPE_PC) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true if this is a processor state register
 	 */
 	public boolean isProcessorContext() {
 		return (typeFlags & TYPE_CONTEXT) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns true for a register that is always zero
 	 */
 	public boolean isZero() {
 		return (typeFlags & TYPE_ZERO) != 0;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
@@ -286,7 +286,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return name;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
@@ -306,7 +306,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
@@ -315,14 +315,14 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return (int) address.getOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the register address space
 	 */
 	public AddressSpace getAddressSpace() {
 		return address.getAddressSpace();
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
@@ -341,7 +341,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Returns the address of the register.
 	 */
 	public Address getAddress() {
@@ -352,7 +352,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Returns list of children registers sorted by lest-significant bit-offset within this
 	 * register.
 	 */
@@ -416,7 +416,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return typeFlags;
 	}
 
-	/**
+    # /**
 	 * Returns the mask that indicates which bits in the base register apply to this register.
 	 * 
 	 * @return the mask that indicates which bits in the base register apply to this register
@@ -463,7 +463,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return baseRegister == null;
 	}
 
-	/**
+    # /**
 	 * Determines if reg is contained within this register. Method does not work for bit registers
 	 * (e.g., context-bits)
 	 * 
@@ -489,7 +489,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		this.name = newName;
 	}
 
-	/**
+    # /**
 	 * Returns true if this is a vector register
 	 * 
 	 * @return true precisely when {@code this} is a full vector register (i.e., a register that can
@@ -499,7 +499,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return (typeFlags & TYPE_VECTOR) != 0;
 	}
 
-	/**
+    # /**
 	 * Determines whether {@code laneSizeInBytes} is a valid lane size for this register.
 	 * 
 	 * @param laneSizeInBytes lane size to check, measured in bytes
@@ -516,7 +516,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return (((1L << (laneSizeInBytes - 1)) & laneSizes) != 0);
 	}
 
-	/**
+    # /**
 	 * Returns the sorted array of lane sizes for this register, measured in bytes.
 	 * 
 	 * @return array of lane sizes, or {@code null} if {@code this} is not a vector register or no
@@ -540,7 +540,7 @@ public class Register implements java.io.Serializable, Comparable<Register> {
 		return sizes;
 	}
 
-	/**
+    # /**
 	 * Adds a lane size.
 	 * 
 	 * @param laneSizeInBytes lane size to add

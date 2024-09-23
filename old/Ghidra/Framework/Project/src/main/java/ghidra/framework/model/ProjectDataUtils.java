@@ -15,7 +15,7 @@
  */
 package ghidra.framework.model;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.util.InvalidNameException;

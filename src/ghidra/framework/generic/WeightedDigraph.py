@@ -29,7 +29,7 @@ public class WeightedDigraph extends DirectedGraph {
 	//private DoubleAttribute weights;
 	private double defaultValue = 1.0;
 
-	/** Create weighted directed graph with default edge weight of 0.0
+    # /** Create weighted directed graph with default edge weight of 0.0
 	 * and room for vertexCapicity vertices and edgeCapacity edges.
 	 */
 	public WeightedDigraph(int vertexCapacity, int edgeCapacity) {
@@ -41,7 +41,7 @@ public class WeightedDigraph extends DirectedGraph {
 		return (DoubleAttribute<Edge>) this.edgeAttributes().getAttribute("weight");
 	}
 
-	/** Create a weighted directed graph. Use the defaultEdgeWeight for any edges whose
+    # /** Create a weighted directed graph. Use the defaultEdgeWeight for any edges whose
 	*  weights have not been set. 
 	*/
 	public WeightedDigraph(int vertexCapacity, int edgeCapacity, double defaultEdgeWeight) {
@@ -50,12 +50,12 @@ public class WeightedDigraph extends DirectedGraph {
 		this.edgeAttributes().createAttribute("weight", AttributeManager.DOUBLE_TYPE);
 	}
 
-	/** Default constructor */
+    # /** Default constructor */
 	public WeightedDigraph() {
 		this(101, 101);
 	}
 
-	/** Returns the weighted in-degree of this vertex. The in-degree is the
+    # /** Returns the weighted in-degree of this vertex. The in-degree is the
 	 * sum of weights of all enges entering this vertex.
 	 */
 	@Override
@@ -74,7 +74,7 @@ public class WeightedDigraph extends DirectedGraph {
 		return degree;
 	}
 
-	/** Returns the weighted out-degree of this vertex. The out-degree is the
+    # /** Returns the weighted out-degree of this vertex. The out-degree is the
 	 * sum of weights of all enges entering this vertex.
 	 */
 	@Override
@@ -93,7 +93,7 @@ public class WeightedDigraph extends DirectedGraph {
 		return degree;
 	}
 
-	/** Returns the weighted self-degree of this vertex. The self-degree is the
+    # /** Returns the weighted self-degree of this vertex. The self-degree is the
 	 * sum of weights of all loops at this vertex.
 	 */
 	public double selfDegree(Vertex v) {
@@ -111,7 +111,7 @@ public class WeightedDigraph extends DirectedGraph {
 		return degree;
 	}
 
-	/** Returns the weighted degree of this vertex. The degree is the
+    # /** Returns the weighted degree of this vertex. The degree is the
 	 * sum of weights of all edges entering and leaving this vertex.
 	 */
 	@Override
@@ -119,7 +119,7 @@ public class WeightedDigraph extends DirectedGraph {
 		return inDegree(v) + outDegree(v) - selfDegree(v);
 	}
 
-	/** Returns the weight of the specified edge.
+    # /** Returns the weight of the specified edge.
 	 */
 	public double getWeight(Edge e) {
 		try {
@@ -130,20 +130,20 @@ public class WeightedDigraph extends DirectedGraph {
 		}
 	}
 
-	/** Sets the weight of the specified edge.
+    # /** Sets the weight of the specified edge.
 	 */
 	public boolean setWeight(Edge e, double value) {
 		return weights().setValue(e, value);
 	}
 
-	/** Gets the defaultEdgeWeight of this graph specified at creation
+    # /** Gets the defaultEdgeWeight of this graph specified at creation
 	 * time.
 	 */
 	public double getDefaultEdgeWeight() {
 		return defaultValue;
 	}
 
-	/** Add an edge. If successful (i.e. that edge does not already appear
+    # /** Add an edge. If successful (i.e. that edge does not already appear
 	 * in the graph), set the weight to the default value
 	 * @return true if edge added succesfuly.
 	 */
@@ -160,7 +160,7 @@ public class WeightedDigraph extends DirectedGraph {
 		return true;
 	}
 
-	/** Add an edge. If successful (i.e. that edge does not appear in the graph),
+    # /** Add an edge. If successful (i.e. that edge does not appear in the graph),
 	 * then set the weight to the specified value.
 	 * 
 	 * @return true if edge added succesfuly.
@@ -172,7 +172,7 @@ public class WeightedDigraph extends DirectedGraph {
 		return true;
 	}
 
-	/** Get the edge weights for this graph. */
+    # /** Get the edge weights for this graph. */
 	public DoubleAttribute<Edge> getEdgeWeights() {
 		return this.weights();
 	}
@@ -185,7 +185,7 @@ public class WeightedDigraph extends DirectedGraph {
 		return copy;
 	}
 
-	/** Creates intersection of graphs in place by adding all vertices and edges of
+    # /** Creates intersection of graphs in place by adding all vertices and edges of
 	 * other graph to this graph. This method used to return a different graph
 	 * as the intersection but now does not.
 	 * 
@@ -210,7 +210,7 @@ public class WeightedDigraph extends DirectedGraph {
 		}
 	}
 
-	/** Creates union of graphs in place by adding all vertices and edges of
+    # /** Creates union of graphs in place by adding all vertices and edges of
 	 * other graph to this graph. This method used to return a different graph
 	 * as the union but now does not.
 	 */

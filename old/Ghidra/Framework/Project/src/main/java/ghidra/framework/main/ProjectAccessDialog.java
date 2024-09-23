@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main;
 
-import java.io.IOException;
+
 
 import docking.DialogComponentProvider;
 import ghidra.framework.client.*;

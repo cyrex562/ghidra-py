@@ -15,7 +15,7 @@
  */
 package ghidra.util.database.spatial;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.util.database.DBCachedObjectStoreFactory;

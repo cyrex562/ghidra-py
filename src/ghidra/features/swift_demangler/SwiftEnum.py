@@ -23,7 +23,7 @@ import ghidra.app.util.demangler.swift.SwiftDemangler;
  */
 public class SwiftEnum extends DemangledStructure {
 
-	/**
+    # /**
 	 * Creates a new Swift enum
 	 * 
 	 * @param mangled The mangled string

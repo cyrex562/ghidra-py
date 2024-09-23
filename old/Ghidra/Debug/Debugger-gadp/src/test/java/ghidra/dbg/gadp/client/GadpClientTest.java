@@ -17,7 +17,7 @@ package ghidra.dbg.gadp.client;
 
 import static org.junit.Assert.assertEquals;
 
-import java.io.IOException;
+
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.nio.BufferUnderflowException;

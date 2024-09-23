@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.type.*;
 public class NestedTypeApplier extends MsDataTypeComponentApplier {
 
 	// Intended for: AbstractNestedTypeMsType or AbstractNestedTypeExtMsType
-	/**
+    # /**
 	 * Constructor for nested type applier
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 * @throws IllegalArgumentException upon invalid arguments
@@ -33,7 +33,7 @@ public class NestedTypeApplier extends MsDataTypeComponentApplier {
 		super(applicator);
 	}
 
-	/**
+    # /**
 	 * Returns the nested (member?) name for this nested type
 	 * @param type the PDB type being inspected
 	 * @return (member?) name for the nested type

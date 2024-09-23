@@ -88,44 +88,44 @@ public class DefaultGraphDisplay implements GraphDisplay {
 
 	private AttributedGraph graph;
 
-	/**
+    # /**
 	 * a unique id for this {@link GraphDisplay}
 	 */
 	private final int displayId;
 
-	/**
+    # /**
 	 * The delegate viewer to display the ProgramGraph
 	 */
 	private final VisualizationViewer<AttributedVertex, AttributedEdge> viewer;
 
-	/**
+    # /**
 	 * The {@link PluginTool}
 	 */
 	private final PluginTool tool;
 
 	private final DefaultGraphDisplayComponentProvider componentProvider;
 
-	/**
+    # /**
 	 * Whether to ensure the focused vertex is visible, scrolling if necessary the visualization in
 	 * order to center the selected vertex or the center of the set of selected vertices
 	 */
 	private boolean ensureVertexIsVisible = false;
 
-	/**
+    # /**
 	 * Allows selection of various {@link LayoutAlgorithm} ('arrangements')
 	 */
 	private final LayoutTransitionManager layoutTransitionManager;
 
-	/**
+    # /**
 	 * Provides graph displays for supplied graphs
 	 */
 	private final DefaultGraphDisplayProvider graphDisplayProvider;
-	/**
+    # /**
 	 * the vertex that has been nominated to be 'focused' in the graph display and listing
 	 */
 	private AttributedVertex focusedVertex;
 
-	/**
+    # /**
 	 * Runs animation jobs for updating the display
 	 */
 	private final GraphJobRunner jobRunner = new GraphJobRunner();
@@ -137,12 +137,12 @@ public class DefaultGraphDisplay implements GraphDisplay {
 
 	private GraphRenderer graphRenderer = new DefaultGraphRenderer();
 
-	/**
+    # /**
 	 * Multi-selection is done in a free-form traced shape instead of a rectangle
 	 */
 	private boolean freeFormSelection;
 
-	/**
+    # /**
 	 * Handles all mouse interaction
 	 */
 	private JgtGraphMouse graphMouse;
@@ -168,7 +168,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 
 	private MultiStateDockingAction<String> layoutAction;
 
-	/**
+    # /**
 	 * Create the initial display, the graph-less visualization viewer, and its controls
 	 * @param displayProvider provides a {@link PluginTool} for Docking features
 	 * @param id the unique display id
@@ -239,7 +239,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		return displayId;
 	}
 
-	/**
+    # /**
 	 * create a magnification lens for the graph display
 	 * @return a {@link LensSupport} for the new magnifier
 	 */
@@ -305,7 +305,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 
 	}
 
-	/**
+    # /**
 	 * create the action icon buttons on the upper-right of the graph display window
 	 */
 	private void createToolbarActions() {
@@ -541,7 +541,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		updateVertexName(vertex, userName != null ? userName : name);
 	}
 
-	/**
+    # /**
 	 * Ungroup the selected vertices. If the focusedVertex is no longer in the graph, null it. This
 	 * will happen if the focusedVertex was the GroupVertex
 	 */
@@ -673,7 +673,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		return upstream;
 	}
 
-	/**
+    # /**
 	 * Gather all source and target vertices until there are no more available.
 	 * @return all the vertices in the component(s) of the selected vertices
 	 */
@@ -862,7 +862,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		viewer.repaint();
 	}
 
-	/**
+    # /**
 	 * determines whether the passed layout coordinates are visible in the display
 	 * @param x of interest (layout coordinates)
 	 * @param y of interest (layout coordinates)
@@ -880,7 +880,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		return true;
 	}
 
-	/**
+    # /**
 	 * fire an event to notify the selected vertices changed
 	 * @param selected the list of selected vertices
 	 */
@@ -903,7 +903,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		return set;
 	}
 
-	/**
+    # /**
 	 * fire and event to say the focused vertex changed
 	 * @param vertex the new focused vertex
 	 */
@@ -941,7 +941,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		}
 	}
 
-	/**
+    # /**
 	 * set the {@link AttributedGraph} for visualization
 	 * @param attributedGraph the {@link AttributedGraph} to visualize
 	 */
@@ -964,7 +964,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		layoutAction.setCurrentActionStateByUserData(layoutAlgorithmName);
 	}
 
-	/**
+    # /**
 	 * Determines if a vertex is a root.  For our purpose, a root either has no incoming edges
 	 * or if all edges of a vertex are 'loop' edges
 	 * @param vertex the vertex to test if it is a root
@@ -981,7 +981,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 			graph.incomingEdgesOf(vertex).equals(graph.outgoingEdgesOf(vertex));
 	}
 
-	/**
+    # /**
 	 * configure filters for the graph, based on the vertex and edge attributes
 	 */
 	private void configureFilters() {
@@ -1023,7 +1023,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		});
 	}
 
-	/**
+    # /**
 	 * configure a preferred size based on the size of the graph to display
 	 */
 	private void configureViewerPreferredSize() {
@@ -1098,7 +1098,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		return newGraph;
 	}
 
-	/**
+    # /**
 	 * Cause the graph to be centered and scaled nicely for the view window
 	 */
 	public void centerAndScale() {
@@ -1106,7 +1106,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		satelliteViewer.scaleToLayout();
 	}
 
-	/**
+    # /**
 	 * remove all vertices and edges from the {@link Graph}
 	 */
 	@Override
@@ -1115,7 +1115,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		this.graph.removeAllVertices(new HashSet<>(graph.vertexSet()));
 	}
 
-	/**
+    # /**
 	 * scroll the visualization to center the passed vertices
 	 * @param vertices the vertices to center
 	 */
@@ -1133,7 +1133,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		}
 	}
 
-	/**
+    # /**
 	 * scroll the visualization to center the passed vertex
 	 * @param vertex the vertex to center
 	 */
@@ -1143,7 +1143,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		scrollToSelected(vertices);
 	}
 
-	/**
+    # /**
 	 * compute the centroid of a group of vertices, or the center of the graph display
 	 * @param vertices a collection of vertices from which to compute the centroid from their locations
 	 * @return the {@code Point2D} that is the center
@@ -1165,7 +1165,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		return new Point2D.Double(p.x, p.y);
 	}
 
-	/**
+    # /**
 	 * process a request to update the name attribute value of the vertex with the
 	 * supplied id
 	 * @param vertex the vertex to update
@@ -1183,7 +1183,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		return title;
 	}
 
-	/**
+    # /**
 	 * Create and return a {@link VisualizationViewer} to display graphs
 	 * @return the new VisualizationViewer
 	 */
@@ -1322,7 +1322,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 
 	}
 
-	/**
+    # /**
 	 * Use the hide selected action states to determine what vertices are shown:
 	 * <ul>
 	 *     <li>unselected vertices only</li>
@@ -1357,7 +1357,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		return graph;
 	}
 
-	/**
+    # /**
 	 * Removes all externally added actions. This is called before re-using the graph window for a
 	 * new graph which may add its own set of actions for that particular graph.
 	 */
@@ -1443,7 +1443,7 @@ public class DefaultGraphDisplay implements GraphDisplay {
 		}
 	}
 
-	/**
+    # /**
 	 * Item listener for selection changes in the graph with the additional
 	 * capability of being able to disable the listener without removing it.
 	 */

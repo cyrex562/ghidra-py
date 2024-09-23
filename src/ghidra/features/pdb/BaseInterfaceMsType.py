@@ -33,7 +33,7 @@ public class BaseInterfaceMsType extends AbstractMsType {
 	private ClassFieldMsAttributes attribute;
 	private BigInteger offset;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

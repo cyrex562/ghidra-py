@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.analysis;
 
 import java.util.*;
 
-import java.io.IOException;
+
 
 import ghidra.app.services.*;
 import ghidra.app.util.bin.*;

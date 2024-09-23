@@ -35,7 +35,7 @@ public class AcyclicCallGraphBuilder {
 	private Set<Address> functionSet;
 	private boolean killThunks;
 
-	/**
+    # /**
 	 * Creates a DependencyGraph of all functions in a program based on the call graph.
 	 * @param program the program to create an acyclic call graph
 	 * @param killThunks true if thunked functions should be eliminated from the graph
@@ -44,7 +44,7 @@ public class AcyclicCallGraphBuilder {
 		this(program, program.getMemory(), killThunks);
 	}
 
-	/**
+    # /**
 	 * Creates a DependencyGraph of all functions in the given addressSet based on the call graph.
 	 * Calls to or from functions outside the given address set are ignored.
 	 * @param program the program to create an acyclic call graph
@@ -57,7 +57,7 @@ public class AcyclicCallGraphBuilder {
 		this.killThunks = killThunks;
 	}
 
-	/**
+    # /**
 	 * Creates a DependencyGraph of all functions in the given set of functions based on the call graph.
 	 * Calls to or from functions not in the given set are ignored.
 	 * @param program the program to create an acyclic call graph
@@ -79,7 +79,7 @@ public class AcyclicCallGraphBuilder {
 		this.killThunks = killThunks;
 	}
 
-	/**
+    # /**
 	 * Builds the DependencyGraph for the acyclic call graph represented by this object.
 	 * @param monitor the taskMonitor to use for reporting progress or cancelling.
 	 * @return the DependencyGraph for the acyclic call graph represented by this object.

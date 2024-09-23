@@ -22,7 +22,7 @@ public class IconChangedThemeEvent extends ThemeEvent {
 	private final GThemeValueMap values;
 	private final IconValue icon;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param icon the new {@link IconValue} for the icon id that changed
 	 */

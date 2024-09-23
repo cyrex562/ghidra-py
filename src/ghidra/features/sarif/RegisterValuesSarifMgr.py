@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -69,7 +69,7 @@ public class RegisterValuesSarifMgr extends SarifMgr {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns list of unique registers which do not overlap any smaller registers.
 	 */
 	private List<Register> getUniqueRegisters() {
@@ -121,7 +121,7 @@ public class RegisterValuesSarifMgr extends SarifMgr {
 	// SARIF WRITE CURRENT DTD //
 	/////////////////////////////
 
-	/**
+    # /**
 	 * Write out the SARIF for the Equates.
 	 * 
 	 * @param results writer for SARIF

@@ -27,7 +27,7 @@ public class GlobalProcedureStart3216MsSymbol extends AbstractGlobalProcedureSta
 
 	public static final int PDB_ID = 0x0205;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.target;
 
-import java.io.IOException;
+
 import java.util.Collection;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.function.Predicate;

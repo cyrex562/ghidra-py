@@ -25,7 +25,7 @@ import ghidra.app.util.demangler.swift.SwiftDemangler;
  */
 public class SwiftStructure extends DemangledStructure {
 
-	/**
+    # /**
 	 * Creates a new Swift structure
 	 * 
 	 * @param mangled The mangled string

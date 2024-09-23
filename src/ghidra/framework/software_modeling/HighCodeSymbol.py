@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import ghidra.program.database.symbol.CodeSymbol;
@@ -23,17 +23,17 @@ import ghidra.program.model.symbol.SymbolUtilities;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * A global symbol as part of the decompiler's model of a function. This symbol can
- * be backed by a formal CodeSymbol, obtained using getCodeSymbol(). This symbol can be backed
- * by a formal Data object, obtained using getData(). If there is a backing CodeSymbol, this takes its name,
- * otherwise the name is dynamically generated using SymbolUtilities. The data-type attached to this does
- * not necessarily match the backing CodeSymbol or Data object.
- */
+# * A global symbol as part of the decompiler's model of a function. This symbol can
+# * be backed by a formal CodeSymbol, obtained using getCodeSymbol(). This symbol can be backed
+# * by a formal Data object, obtained using getData(). If there is a backing CodeSymbol, this takes its name,
+# * otherwise the name is dynamically generated using SymbolUtilities. The data-type attached to this does
+# * not necessarily match the backing CodeSymbol or Data object.
+# */
 public class HighCodeSymbol extends HighSymbol {
 
 	private CodeSymbol symbol;
 
-	/**
+    # /**
 	 * Construct with a backing CodeSymbol.  An attempt is made to also find a backing Data object.
 	 * @param sym is the backing CodeSymbol
 	 * @param dataType is the (possibly distinct) data-type associated with the new HighSymbol
@@ -67,7 +67,7 @@ public class HighCodeSymbol extends HighSymbol {
 		addMapEntry(entry);
 	}
 
-	/**
+    # /**
 	 * Construct with just a (global) storage address and size. There will be no backing CodeSymbol.
 	 * An attempt is made to find a backing Data object.
 	 * @param id is the id to associate with the new HighSymbol
@@ -101,7 +101,7 @@ public class HighCodeSymbol extends HighSymbol {
 		addMapEntry(entry);
 	}
 
-	/**
+    # /**
 	 * Constructor for HighSymbol which is unattached to a HighFunction
 	 * @param id is the unique id to assign
 	 * @param nm is the name of the symbol
@@ -127,7 +127,7 @@ public class HighCodeSymbol extends HighSymbol {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Get the CodeSymbol backing this, if it exists
 	 * @return the CodeSymbol or null
 	 */
@@ -135,7 +135,7 @@ public class HighCodeSymbol extends HighSymbol {
 		return symbol;
 	}
 
-	/**
+    # /**
 	 * Get the Data object backing this, if it exists
 	 * @return the Data object or null
 	 */

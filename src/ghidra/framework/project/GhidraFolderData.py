@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 
@@ -45,7 +45,7 @@ class GhidraFolderData {
 
 	private DefaultProjectData projectData;
 
-	/**
+    # /**
 	 * Folder change listener - change events only sent if folder is visited
 	 * which is set when list of files or folders is requested.
 	 * @see #getFileNames()
@@ -70,7 +70,7 @@ class GhidraFolderData {
 	private boolean folderExists;
 	private boolean versionedFolderExists;
 
-	/**
+    # /**
 	 * General constructor reserved for root folder instantiation
 	 * @param projectData associated project data instance
 	 * @param listener folder change listener
@@ -82,7 +82,7 @@ class GhidraFolderData {
 		this.listener = listener;
 	}
 
-	/**
+    # /**
 	 * Construct a folder instance with a specified name and a correpsonding parent folder
 	 * @param parent parent folder
 	 * @param name folder name
@@ -113,49 +113,49 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if folder has complete list of children
 	 */
 	boolean visited() {
 		return visited;
 	}
 
-	/**
+    # /**
 	 * @return local file system
 	 */
 	LocalFileSystem getLocalFileSystem() {
 		return fileSystem;
 	}
 
-	/**
+    # /**
 	 * @return versioned file system
 	 */
 	FileSystem getVersionedFileSystem() {
 		return versionedFileSystem;
 	}
 
-	/**
+    # /**
 	 * @return local user data file system
 	 */
 	LocalFileSystem getUserFileSystem() {
 		return projectData.getUserFileSystem();
 	}
 
-	/**
+    # /**
 	 * @return folder change listener
 	 */
 	DomainFolderChangeListener getChangeListener() {
 		return listener;
 	}
 
-	/**
+    # /**
 	 * @return project data instance
 	 */
 	DefaultProjectData getProjectData() {
 		return projectData;
 	}
 
-	/**
+    # /**
 	 * Get the project locator which identifies the system storage
 	 * are for the local file system and other project related resources.
 	 * @return local project locator
@@ -164,14 +164,14 @@ class GhidraFolderData {
 		return projectData.getProjectLocator();
 	}
 
-	/**
+    # /**
 	 * @return this folder's parent folder or null if this is the root folder.
 	 */
 	GhidraFolderData getParentData() {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Get folder data for specified absolute or relative folderPath
 	 * @param folderPath absolute or relative folder path
 	 * @param lazy if true folder will not be searched for if not already discovered - in
@@ -210,7 +210,7 @@ class GhidraFolderData {
 		return folderData.getFolderPathData(nextPath, lazy);
 	}
 
-	/**
+    # /**
 	 * Return this folder's name.
 	 * @return the name
 	 */
@@ -218,7 +218,7 @@ class GhidraFolderData {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Set the name on this domain folder.
 	 * @param newName domain folder name
 	 * @return renamed domain file (the original DomainFolder object becomes invalid since it is 
@@ -297,7 +297,7 @@ class GhidraFolderData {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Returns the full path name to this folder
 	 * @return the path name
 	 */
@@ -313,7 +313,7 @@ class GhidraFolderData {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Determine if this folder contains any sub-folders or domain files.
 	 * @return true if this folder is empty.
 	 */
@@ -329,7 +329,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the list of names for all files contained within this folder.
 	 * @return list of file names
 	 */
@@ -344,7 +344,7 @@ class GhidraFolderData {
 		return new ArrayList<>(fileDataCache.keySet());
 	}
 
-	/**
+    # /**
 	 * Get the list of names for all subfolders contained within this folder.
 	 * @return list of file names
 	 */
@@ -359,7 +359,7 @@ class GhidraFolderData {
 		return new ArrayList<>(folderList);
 	}
 
-	/**
+    # /**
 	 * Update file list/cache based upon rename of a file.
 	 * If this folder has been visited the listener will be notified with rename
 	 * @param oldFileName file name prior to rename
@@ -380,7 +380,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Update file list/cache based upon change of parent for a file.
 	 * If this folder or the newParent has been visited the listener will be notified with add/move
 	 * details.
@@ -403,7 +403,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Notification that the specified file has changed due to an add or remove of the
 	 * underlying local or versioned file.  If this folder has been visited an appropriate
 	 * add/remove/change notification will be provided to the listener.
@@ -441,7 +441,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Notification that the specified subfolder has changed due to and add or remove of the
 	 * underlying local or version folder.  If the subfolder previously existed, still exists,
 	 * and had been visited a refresh on the subfolder will be forced, otherwise, if this folder has been 
@@ -486,7 +486,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove and dispose specified subfolder data and notify listener of removal
 	 * if this folder has been visited
 	 * @param folderName name of folder which was removed
@@ -503,7 +503,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Disposes the cached data for this folder and all of its children recursively.
 	 */
 	void dispose() {
@@ -524,7 +524,7 @@ class GhidraFolderData {
 //		listener = null;
 	}
 
-	/**
+    # /**
 	 * Update the values for whether this pathname exists in the private and
 	 * shared file systems.
 	 */
@@ -534,7 +534,7 @@ class GhidraFolderData {
 			versionedFileSystem.isOnline() && versionedFileSystem.folderExists(getPathname());
 	}
 
-	/**
+    # /**
 	 * Refresh set of sub-folder names and identify added/removed folders.
 	 * @param recursive recurse into visited subfolders if true
 	 * @param monitor recursion task monitor - break from recursion if cancelled
@@ -723,7 +723,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Full refresh of names of children is performed.  This method
 	 * should only be invoked when a full list of folders or
 	 * children is requested - which may be in response to 
@@ -779,7 +779,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Check for existence of subfolder.  If this folder has previously been visited, 
 	 * rely on the cached folderList.
 	 * @param folderName name of folder to look for
@@ -798,7 +798,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Create and add new subfolder data object to cache.  Data will not be created
 	 * if folder does not exist or an IOException occurs.
 	 * @param folderName name of folder to be added
@@ -818,7 +818,7 @@ class GhidraFolderData {
 		return folderData;
 	}
 
-	/**
+    # /**
 	 * Get folder data for child folder specified by folderName
 	 * @param folderName name of folder
 	 * @param lazy if true folder will not be searched for if not already discovered - in
@@ -843,7 +843,7 @@ class GhidraFolderData {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Check for existence of file.  If folder previously visited, rely on fileDataCache
 	 * @param fileName the name of the file to look for
 	 * @return true if this folder contains the fileName, else false
@@ -861,7 +861,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Create and add new file data object to cache.  Data will not be created
 	 * if file does not exist or an IOException occurs.
 	 * @param fileName name of file
@@ -892,7 +892,7 @@ class GhidraFolderData {
 		return fileData;
 	}
 
-	/**
+    # /**
 	 * Get file data for child specified by fileName
 	 * @param fileName name of file
 	 * @param lazy if true file will not be searched for if not already discovered - in
@@ -913,7 +913,7 @@ class GhidraFolderData {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the domain file in this folder with the given fileName.
 	 * @param fileName name of file in this folder to retrieve
 	 * @return domain file or null if there is no file in this folder with the given name.
@@ -932,7 +932,7 @@ class GhidraFolderData {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the domain folder in this folder with the given subfolderName.
 	 * @param subfolderName name of subfolder in this folder to retrieve
 	 * @return domain folder or null if there is no file in this folder with the given name.
@@ -951,14 +951,14 @@ class GhidraFolderData {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return a {@link DomainFolder} instance which corresponds to this folder
 	 */
 	GhidraFolder getDomainFolder() {
 		return new GhidraFolder(parent.getDomainFolder(), name);
 	}
 
-	/**
+    # /**
 	 * Add a domain object to this folder.
 	 * @param fileName domain file name
 	 * @param obj domain object to be stored
@@ -1018,7 +1018,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Add a new domain file to this folder.
 	 * @param fileName domain file name
 	 * @param packFile packed file containing domain file data
@@ -1050,7 +1050,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a subfolder within this folder.
 	 * @param folderName sub-folder name
 	 * @return the new folder
@@ -1074,7 +1074,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Deletes this folder, if empty, from the local filesystem
 	 * @throws IOException if IO or access error occurs
 	 * @throws FolderNotEmptyException Thrown if the subfolder is not empty.
@@ -1095,7 +1095,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete this folder from the local filesystem if empty
 	 */
 	void deleteLocalFolderIfEmpty() {
@@ -1116,7 +1116,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Move this folder into the newParent folder.  If connected to a repository
 	 * this moves both private and repository folders/files.  If not
 	 * connected, only private folders/files are moved.
@@ -1191,7 +1191,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Determine if the specified folder if an ancestor of this folder
 	 * (i.e., parent, grand-parent, etc.).
 	 * @param folderData folder to be checked
@@ -1218,7 +1218,7 @@ class GhidraFolderData {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Copy this folder into the newParent folder.
 	 * @param newParent new parent folder
 	 * @param monitor the task monitor
@@ -1267,7 +1267,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new link-file in the specified newParent which will reference this folder 
 	 * (i.e., linked-folder). Restrictions:
 	 * <ul>
@@ -1297,7 +1297,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a link-file within this folder.  The link-file may correspond to various types of
 	 * content (e.g., Program, Trace, Folder, etc.) based upon specified link handler.
 	 * @param sourceProjectData referenced content project data within which specified path exists.
@@ -1362,7 +1362,7 @@ class GhidraFolderData {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate a non-conflicting file name for this folder based upon the specified preferred name.
 	 * NOTE: This method is subject to race conditions where returned name could conflict by the
 	 * time it is actually used.
@@ -1380,14 +1380,14 @@ class GhidraFolderData {
 		return newName;
 	}
 
-	/**
+    # /**
 	 * used for testing
 	 */
 	boolean privateExists() {
 		return folderExists;
 	}
 
-	/**
+    # /**
 	 * used for testing
 	 */
 	boolean sharedExists() {

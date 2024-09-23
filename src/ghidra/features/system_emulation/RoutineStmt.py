@@ -22,7 +22,7 @@ class RoutineStmt extends BlockStmt {
 	protected final String name;
 	protected final DataType retType;
 
-	/** To be set during generation */
+    # /** To be set during generation */
 	protected Label lReturn;
 
 	protected RoutineStmt(StructuredSleigh ctx, String name, DataType retType, Runnable body) {

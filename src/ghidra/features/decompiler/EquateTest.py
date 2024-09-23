@@ -60,7 +60,7 @@ public class EquateTest extends AbstractDecompilerTest {
 			false);
 	}
 
-	/**
+    # /**
 	 * Simulate the action of "converting" the current token to the given format
 	 *
 	 * @param convertType is the given format
@@ -99,7 +99,7 @@ public class EquateTest extends AbstractDecompilerTest {
 		waitForDecompiler();
 	}
 
-	/**
+    # /**
 	 * Simulate setting an equate on the current token with the given name
 	 *
 	 * @param nm is the given name

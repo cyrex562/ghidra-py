@@ -24,7 +24,7 @@ import ghidra.program.model.listing.Program;
  */
 public final class WdexConstants {
 
-	/**
+    # /**
 	  * <pre>
 	  * static constexpr uint8_t kVdexInvalidMagic[] = { 'w', 'd', 'e', 'x' };
 	  * </pre>
@@ -33,7 +33,7 @@ public final class WdexConstants {
 
 	public final static String kVdexInvalidMagic = MAGIC;
 
-	/**
+    # /**
 	 * Returns true if the given program contain WDEX information.
 	 */
 	public final static boolean isWDEX(Program program) {

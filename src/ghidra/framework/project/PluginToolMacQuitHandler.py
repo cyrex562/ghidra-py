@@ -35,7 +35,7 @@ public class PluginToolMacQuitHandler {
 
 	private static boolean installed = false; // only install it once
 
-	/**
+    # /**
 	 * Applies a quit handler which will close the given tool.
 	 * 
 	 * @param tool The tool to close, which should result in the desired quit behavior.

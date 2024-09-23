@@ -89,7 +89,7 @@ class Decompiler {
 		cancelCurrentAction();
 	}
 
-	/**
+    # /**
 	 * Resets the native decompiler process.  Call this method when the decompiler's view
 	 * of a program has been invalidated, such as when a new overlay space has been added.
 	 */

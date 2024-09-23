@@ -29,13 +29,13 @@ public class TypeParser {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor.
 	 */
 	private TypeParser() {
 	}
 
-	/**
+    # /**
 	 * Deserializes an {@link AbstractMsType} from the {@link PdbByteReader} and returns it.
 	 * @param pdb {@link AbstractPdb} that owns the Types to be parsed.
 	 * @param reader {@link PdbByteReader} from which to deserialize the data.
@@ -52,7 +52,7 @@ public class TypeParser {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Deserializes an {@link AbstractMsType} from the {@link PdbByteReader} and returns it
 	 * as a {@link MsTypeField}.
 	 * @param pdb {@link AbstractPdb} that owns the Types to be parsed.
@@ -67,7 +67,7 @@ public class TypeParser {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Deserializes an {@link AbstractMsType} from the {@link PdbByteReader} and returns it.
 	 * @param pdb {@link AbstractPdb} that owns the Types to be parsed.
 	 * @param reader {@link PdbByteReader} from which to deserialize the data.
@@ -81,7 +81,7 @@ public class TypeParser {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Deserialized data type ID and parsable indicated by the ID and returns the type
 	 *  required type expected.  Upon failure, message is logged and BadMsType is returned.
 	 * @param <T> the required type to be returned.  IMPORTANT:  T must only be one of:
@@ -111,7 +111,7 @@ public class TypeParser {
 		return requiredClass.cast(new BadMsType(pdb, dataTypeId));
 	}
 
-	/**
+    # /**
 	 * Deserializes an {@link AbstractMsType} from the {@link PdbByteReader} and returns it.
 	 * @param pdb {@link AbstractPdb} that owns the Types to be parsed.
 	 * @param reader {@link PdbByteReader} from which to deserialize the data.

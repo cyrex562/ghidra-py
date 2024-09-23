@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.debug.gui.tracermi.connection;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.net.InetSocketAddress;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;

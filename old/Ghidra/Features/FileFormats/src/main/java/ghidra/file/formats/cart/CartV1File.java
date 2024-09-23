@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.regex.Matcher;

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.exporter;
 
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 

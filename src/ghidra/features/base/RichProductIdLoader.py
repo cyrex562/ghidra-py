@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe.rich;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.commons.io.FilenameUtils;

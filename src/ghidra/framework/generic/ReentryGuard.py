@@ -101,7 +101,7 @@ public abstract class ReentryGuard<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Notify the guard of entry into the guarded block
 	 * 
 	 * <p>
@@ -124,7 +124,7 @@ public abstract class ReentryGuard<T> {
 		return guarded;
 	}
 
-	/**
+    # /**
 	 * Notify the guard of access to some resource used by the guarded block
 	 * 
 	 * <p>
@@ -138,7 +138,7 @@ public abstract class ReentryGuard<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Record a violation
 	 * 
 	 * <p>
@@ -159,7 +159,7 @@ public abstract class ReentryGuard<T> {
 	 */
 	protected abstract T violated(boolean nested, T previous);
 
-	/**
+    # /**
 	 * Retrieve a violation, if applicable
 	 * 
 	 * <p>
@@ -171,7 +171,7 @@ public abstract class ReentryGuard<T> {
 		return violation;
 	}
 
-	/**
+    # /**
 	 * Check if there is a violation
 	 * 
 	 * <p>

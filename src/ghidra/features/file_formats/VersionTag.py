@@ -21,7 +21,7 @@ import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.Structure;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class VersionTag extends AbstractImg3Tag {
 	private int _length;

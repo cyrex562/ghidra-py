@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.script.GhidraScript;

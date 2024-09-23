@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.script.GhidraScript;
@@ -102,7 +102,7 @@ public class EvaluateVTMatch extends GhidraScript {
 			return name;
 		}
 
-		/**
+	    # /**
 		 * For every function in a manager, make sure a record exists in -mymap-
 		 * @param funcMgr is the manager to iterate over
 		 * @param mymap is the map to add records to

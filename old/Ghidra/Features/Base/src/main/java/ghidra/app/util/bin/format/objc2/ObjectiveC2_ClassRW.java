@@ -25,7 +25,7 @@ import ghidra.program.model.symbol.Namespace;
 import ghidra.util.Conv;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC2_ClassRW implements StructConverter {
 	public final static String NAME = "class_rw_t";

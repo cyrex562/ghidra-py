@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.features.bsim.gui.filters.BSimFilterType;
@@ -79,7 +79,7 @@ public class FilterAtom {
 		return res;
 	}
 
-	/**
+    # /**
 	 * @param rec is a specific ExecutableRecord
 	 * @return true if this FilterAtom would let the specific executable pass the filter
 	 */
@@ -90,7 +90,7 @@ public class FilterAtom {
 		return type.evaluate(rec, value);
 	}
 
-	/**
+    # /**
 	 * Returns true if this Atom has a non-null value
 	 */
 	public boolean isValid() {

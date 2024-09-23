@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.listing;
 
 import java.util.ArrayList;
@@ -26,12 +26,12 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.SystemUtilities;
 
 # /**
- * <code>VariableOffset</code> can be used as an operand or sub-operand representation
- * object.  The toString() method should be used to obtain the displayable representation
- * string.  This object is intended to correspond to a explicit or implicit register/stack 
- * variable reference.  If an offset other than 0 is specified, the original Scalar should
- * be specified.
- */
+# * <code>VariableOffset</code> can be used as an operand or sub-operand representation
+# * object.  The toString() method should be used to obtain the displayable representation
+# * string.  This object is intended to correspond to a explicit or implicit register/stack 
+# * variable reference.  If an offset other than 0 is specified, the original Scalar should
+# * be specified.
+# */
 public class VariableOffset {
 
 	private Variable variable;
@@ -41,7 +41,7 @@ public class VariableOffset {
 	private Object replacedElement;
 	private boolean includeScalarAdjustment;
 
-	/**
+    # /**
 	 * Constructor for an implied variable reference.
 	 * @param variable function variable
 	 * @param offset offset into variable
@@ -58,7 +58,7 @@ public class VariableOffset {
 		this.dataAccess = dataAccess;
 	}
 
-	/**
+    # /**
 	 * Constructor for an explicit variable reference.
 	 * @param ref the reference
 	 * @param var the variable being referenced
@@ -81,7 +81,7 @@ public class VariableOffset {
 
 	}
 
-	/**
+    # /**
 	 * Sets the original replaced sub-operand Scalar.
 	 * @param s scalar
 	 * @param includeScalarAdjustment if true scalar adjustment will be included 
@@ -92,14 +92,14 @@ public class VariableOffset {
 		this.includeScalarAdjustment = includeScalarAdjustment;
 	}
 
-	/**
+    # /**
 	 * Sets the original replaced sub-operand Register.
 	 */
 	public void setReplacedElement(Register reg) {
 		replacedElement = reg;
 	}
 
-	/**
+    # /**
 	 * Returns the Scalar or Register sub-operand replaced by this VariableOffset object.
 	 * @return object or null
 	 */
@@ -107,7 +107,7 @@ public class VariableOffset {
 		return replacedElement;
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -119,7 +119,7 @@ public class VariableOffset {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Returns the data type access portion of this variable offset as a string
 	 * @return the text
 	 */
@@ -220,7 +220,7 @@ public class VariableOffset {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Get list of markup objects
 	 * @return list of markup objects
 	 */

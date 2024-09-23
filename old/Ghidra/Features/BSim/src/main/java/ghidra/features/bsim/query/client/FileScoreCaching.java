@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.client;
 
-import java.io.*;
+
 import java.util.*;
 
 import ghidra.features.bsim.query.LSHException;

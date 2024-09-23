@@ -54,47 +54,47 @@ import ghidra.util.HashUtilities;
  * reserved (0) and the second is the position of the optional footer.
  */
 public final class CartV1Constants {
-	/**
+    # /**
 	 * Header magic value for CaRT
 	 */
 	public static final String HEADER_MAGIC = "CART";
 
-	/**
+    # /**
 	 * Version number required for CaRT version 1
 	 */
 	public static final short HEADER_VERSION = 1;
 
-	/**
+    # /**
 	 * Header reserved, required value
 	 */
 	public static final long HEADER_RESERVED = 0;
 
-	/**
+    # /**
 	 * Length of the mandatory CaRT header
 	 */
 	public static final int HEADER_LENGTH = 4 + 2 + 8 + 16 + 8;
 
-	/**
+    # /**
 	 * Footer magic value for CaRT
 	 */
 	public static final String FOOTER_MAGIC = "TRAC";
 
-	/**
+    # /**
 	 * Footer reserved, required value
 	 */
 	public static final long FOOTER_RESERVED = 0;
 
-	/**
+    # /**
 	 * Length of the mandatory CaRT footer
 	 */
 	public static final int FOOTER_LENGTH = 4 + 8 + 8 + 8;
 
-	/**
+    # /**
 	 * Length of the CaRT ARC4 key in bytes
 	 */
 	public static final int ARC4_KEY_LENGTH = 16;
 
-	/**
+    # /**
 	 * The default ARC4 key used by CaRT if not overridden with a private value.
 	 * Consists of the first 8 digits of PI, twice
 	 */
@@ -107,7 +107,7 @@ public final class CartV1Constants {
 		(byte) 0x05, (byte) 0x09, (byte) 0x02, (byte) 0x06
 	};
 
-	/**
+    # /**
 	 * The placeholder value that will be stored in the ARC4 key header position when a
 	 * private value is in use. Consists of all 16, 0x00 bytes.
 	 */
@@ -118,19 +118,19 @@ public final class CartV1Constants {
 		(byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00,
 	};
 
-	/**
+    # /**
 	 * Block size, in bytes, used for reading/writing payload data in CaRT
 	 */
 	public static final int BLOCK_SIZE = 64 * 1024;
 
-	/**
+    # /**
 	 * Minimum length, in bytes, of a CaRT file.
 	 * Really it should be longer for the payload bytes themselves. This value only accounts for
 	 * the mandatory header and footer.
 	 */
 	public static final int MINIMUM_LENGTH = HEADER_LENGTH + FOOTER_LENGTH;
 
-	/**
+    # /**
 	 * Map of CaRT optional footer hash name keys to MessageDigest hash names.
 	 * These are the hashes that are expected to be in a normal CaRT based on the default library
 	 * implementation.
@@ -145,7 +145,7 @@ public final class CartV1Constants {
 		}
 	};
 
-	/**
+    # /**
 	 * Set of keys (in lower case) that should only ever exist in the footer. Finding them
 	 * in the header could indicate an attempt to obfuscate the true value from the footer.
 	 */
@@ -160,7 +160,7 @@ public final class CartV1Constants {
 	};
 	
 
-	/**
+    # /**
 	 * First two header bytes for ZLIB in 3 modes: fast, default, and best compression.
 	 */
 	public static final List<byte[]> ZLIB_HEADER_BYTES = List.of(

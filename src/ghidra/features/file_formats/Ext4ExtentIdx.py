@@ -23,7 +23,7 @@ import ghidra.program.model.data.Structure;
 import ghidra.program.model.data.StructureDataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class Ext4ExtentIdx implements StructConverter {
 
@@ -55,7 +55,7 @@ public class Ext4ExtentIdx implements StructConverter {
 		return ei_leaf_hi;
 	}
 
-	/**
+    # /**
 	 * Return the calculated ei_leaf value by combining ei_leaf_lo and ei_leaf_hi
 	 * 
 	 * @return the calculated ei_leaf value by combining ei_leaf_lo and ei_leaf_hi

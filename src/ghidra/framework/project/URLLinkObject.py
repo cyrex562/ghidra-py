@@ -16,7 +16,7 @@
 package ghidra.framework.data;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URL;
 
 import javax.help.UnsupportedOperationException;
@@ -45,7 +45,7 @@ public class URLLinkObject extends DomainObjectAdapterDB {
 
 	private URL url;
 
-	/**
+    # /**
 	 * Constructs a new link file object
 	 * @param name link name
 	 * @param ghidraUrl link URL
@@ -58,7 +58,7 @@ public class URLLinkObject extends DomainObjectAdapterDB {
 		updateMetadata();
 	}
 
-	/**
+    # /**
 	 * Constructs a link file object from a DBHandle (read-only)
 	 * @param dbh a handle to an open program database.
 	 * @param consumer the object that keeping the program open.
@@ -79,7 +79,7 @@ public class URLLinkObject extends DomainObjectAdapterDB {
 		return "Link-File";
 	}
 
-	/**
+    # /**
 	 * Get link URL
 	 * @return link URL
 	 */

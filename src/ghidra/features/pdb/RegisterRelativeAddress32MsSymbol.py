@@ -27,7 +27,7 @@ public class RegisterRelativeAddress32MsSymbol extends AbstractRegisterRelativeA
 
 	public static final int PDB_ID = 0x1111;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

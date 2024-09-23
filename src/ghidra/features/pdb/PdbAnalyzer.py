@@ -149,7 +149,7 @@ public class PdbAnalyzer extends AbstractAnalyzer {
 			PdbAnalyzerCommon.OPTION_NAME_SEARCH_UNTRUSTED_LOCATIONS, searchUntrustedLocations);
 	}
 
-	/**
+    # /**
 	 * Sets the PDB file that will be used by the analyzer when it is next invoked
 	 * on the specified program.
 	 * <p>
@@ -164,7 +164,7 @@ public class PdbAnalyzer extends AbstractAnalyzer {
 		PdbAnalyzerCommon.setPdbFileOption(NAME, program, pdbFile);
 	}
 
-	/**
+    # /**
 	 * Sets the "allow untrusted" option that will be used by the analyzer when it is next invoked
 	 * on the specified program.
 	 * <p>

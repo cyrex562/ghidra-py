@@ -80,7 +80,7 @@ public class KeyValueTable extends SQLComplexTable {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Inserts some properties from the {@link DatabaseInformation} object to the table.
 	 * 
 	 * @param info the database information
@@ -107,7 +107,7 @@ public class KeyValueTable extends SQLComplexTable {
 		writeFunctionTags(info);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param info the database information
 	 * @throws SQLException if the table insert fails
@@ -124,7 +124,7 @@ public class KeyValueTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * @param info the database information
 	 * @throws SQLException if the table insert fails
 	 */
@@ -140,7 +140,7 @@ public class KeyValueTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param key the key to get the value for
 	 * @return the value associated with key or throw exception if key not present

@@ -15,7 +15,7 @@
  */
 package ghidra.pty.unix;
 
-import java.io.IOException;
+
 
 import com.sun.jna.Memory;
 import com.sun.jna.ptr.IntByReference;

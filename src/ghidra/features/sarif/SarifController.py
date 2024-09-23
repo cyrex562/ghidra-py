@@ -152,7 +152,7 @@ public class SarifController implements ObjectSelectedListener<Map<String, Objec
 		}
 	}
 
-	/**
+    # /**
 	 * If a results has "listing/<something>" in a SARIF result, this handles
 	 * defining our custom API for those
 	 *
@@ -198,7 +198,7 @@ public class SarifController implements ObjectSelectedListener<Map<String, Objec
 		coloringService.setBackgroundColor(addr, addr, color);
 	}
 
-	/**
+    # /**
 	 * Get listing addresses associated with a result
 	 *
 	 * @param result

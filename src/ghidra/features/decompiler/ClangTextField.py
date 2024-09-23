@@ -38,7 +38,7 @@ public class ClangTextField extends WrappingVerticalLayoutTextField {
 		this.lineNumber = lineNumber;
 	}
 
-	/**
+    # /**
 	 * Gets the C language token at the indicated location.
 	 * 
 	 * @param loc the field location
@@ -59,7 +59,7 @@ public class ClangTextField extends WrappingVerticalLayoutTextField {
 		return tokenList.get(index);
 	}
 
-	/**
+    # /**
 	 * Returns the token that is completely after the token that contains the given column location.
 	 * In this case, 'contains' means any position <b>inside</b> of a token, but not at the
 	 * beginning. So, if the column location is in the middle of a token, it will return the index

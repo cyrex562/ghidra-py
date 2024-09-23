@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 
@@ -61,15 +61,15 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Database implementation for Program. 
- */
+# * Database implementation for Program. 
+# */
 public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeManager {
 
 	public static final String CONTENT_TYPE = "Program";
 
 	private static final String UNKNOWN = "unknown";
 
-	/**
+    # /**
 	 * DB_VERSION should be incremented any time a change is made to the overall
 	 * database schema associated with any of the managers.
 	 *             - version  7 - for changes to addressMapDB for deleted overlay spaces.
@@ -115,7 +115,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 	 */
 	static final int DB_VERSION = 28;
 
-	/**
+    # /**
 	 * UPGRADE_REQUIRED_BFORE_VERSION should be changed to DB_VERSION anytime the
 	 * latest version requires a forced upgrade (i.e., Read-only mode not supported
 	 * until upgrade is performed).  It is assumed that read-only mode is supported 
@@ -123,7 +123,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 	 */
 	private static final int UPGRADE_REQUIRED_BEFORE_VERSION = 19;
 
-	/**
+    # /**
 	 * Key version numbers which require special upgrade handling
 	 */
 	//private static final int REGISTER_CONTEXT_UPGRADE_VERSION = 6;
@@ -222,7 +222,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		PROGRAM_INFO + "." + PREFERRED_ROOT_NAMESPACE_CATEGORY_PROPERTY;
 	private CategoryPath preferredRootNamespaceCategory; // value of PREFERRED_ROOT_NAMESPACE_CATEGORY_PROPERTY
 
-	/**
+    # /**
 	 * Constructs a new ProgramDB
 	 * @param name the name of the program
 	 * @param language the Language used by this program
@@ -285,7 +285,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		ProgramUtilities.addTrackedProgram(this);
 	}
 
-	/**
+    # /**
 	 * Constructs a new ProgramDB
 	 * @param dbh a handle to an open program database.
 	 * @param openMode one of:
@@ -424,7 +424,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		return null;
 	}
 
-	/**
+    # /**
 	 * Determine if program initialization requires a language upgrade
 	 * @return true if language upgrade is pending
 	 */
@@ -432,7 +432,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		return languageUpgradeRequired;
 	}
 
-	/**
+    # /**
 	 * Initialize program compiler specification.
 	 * During a language upgrade this will provide a temporary spec until setLanguage is complete.
 	 * @throws CompilerSpecNotFoundException if the compiler spec cannot be found
@@ -765,7 +765,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		return addressFactory;
 	}
 
-	/**
+    # /**
 	 * Returns this programs address map.
 	 * NOTE: This method should be dropped from the {@link Program} interface to help
 	 * discourage the its use external to this implementation since bad assumptions 
@@ -814,7 +814,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		return addressFactory.getAllAddresses(addrStr, caseSensitive);
 	}
 
-	/**
+    # /**
 	 * notification the a datatype has changed
 	 * @param dataTypeID the id of the datatype that changed.
 	 * @param eventType the type of the change (moved, renamed, etc.)
@@ -843,7 +843,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, null, null, null, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a datatype was added.
 	 * @param dataTypeID the id if the datatype that was added.
 	 * @param eventType should always be DATATYPE_ADDED
@@ -859,7 +859,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, null, null, null, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a category was changed.
 	 * @param categoryID the id of the datatype that was added.
 	 * @param eventType the type of change.
@@ -875,7 +875,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, null, null, null, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a category was added.
 	 * @param categoryID the id of the datatype that was added.
 	 * @param eventType the type of change (should always be CATEGORY_ADDED)
@@ -907,7 +907,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, null, null, sourceArchiveID, null, null));
 	}
 
-	/**
+    # /**
 	 * Notification that a program tree was added.
 	 * @param id the id of the program tree that was added.
 	 * @param eventType the type of change
@@ -923,7 +923,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, null, null, null, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a program tree was changed.
 	 * @param id the id of the program tree that was changed.
 	 * @param eventType the {@link EventType} for this event
@@ -940,7 +940,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, null, null, affectedObj, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a {@link FunctionTag} was changed. This can be either an
 	 * edit or a delete.
 	 * 
@@ -959,7 +959,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, null, null, tag, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a new {@link FunctionTag} was created.
 	 * 
 	 * @param tag the tag that was created.
@@ -974,7 +974,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, null, null, tag, null, null));
 	}
 
-	/**
+    # /**
 	 * Notification that a symbol was changed.
 	 * @param symbol the symbol that was changed.
 	 * @param eventType the type of change
@@ -1008,7 +1008,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		fireEvent(new ProgramChangeRecord(eventType, addr, addr, affectedObj, oldValue, newValue));
 	}
 
-	/**
+    # /**
 	 * Notification that a symbol was added.
 	 * @param symbol the symbol that was added.
 	 * @param eventType the type of change
@@ -1407,7 +1407,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		dataMap.put(PROGRAM_DB_VERSION, Integer.toString(DB_VERSION));
 	}
 
-	/**
+    # /**
 	 * Initialize the following fields from the database and check the database version for an existing database:
 	 * <ul>
 	 * <li>name</li>
@@ -1875,7 +1875,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		return language.getRegister(getGlobalAddress(varnode.getAddress()), varnode.getSize());
 	}
 
-	/**
+    # /**
 	 * This method is required to handle old register addresses which
 	 * have a namespace.
 	 * @param addr register address
@@ -1902,7 +1902,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		this.changeSet = changeSet;
 	}
 
-	/**
+    # /**
 	 * Deletes given range from the program.
 	 * @param startAddr the first address in the range.
 	 * @param endAddr the last address in the range.
@@ -1941,7 +1941,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		}
 	}
 
-	/**
+    # /**
 	 * Moves all information stored in the given range to the new location
 	 * 
 	 * @param fromAddr the first address in the range to be moved
@@ -2013,7 +2013,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		}
 	}
 
-	/**
+    # /**
 	 * Translate language
 	 * @param translator language translator, if null only re-disassembly will occur.
 	 * @param newCompilerSpecID new compiler specification which corresponds to new language, may be null.
@@ -2469,7 +2469,7 @@ public class ProgramDB extends DomainObjectAdapterDB implements Program, ChangeM
 		super.flushWriteCache();
 	}
 
-	/**
+    # /**
 	 * Install updated compiler spec extension options.
 	 * See {@link SpecExtension}.
 	 */

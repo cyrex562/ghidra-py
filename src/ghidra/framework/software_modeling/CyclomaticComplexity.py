@@ -27,7 +27,7 @@ import ghidra.util.task.TaskMonitor;
  * Class with a utility function to calculate the cyclomatic complexity of a function.
  */
 public class CyclomaticComplexity {
-	/**
+    # /**
 	 * Calculates the cyclomatic complexity of a function by decomposing it into a flow
 	 * graph using a BasicBlockModel.
 	 * @param function the function

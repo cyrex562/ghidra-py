@@ -37,7 +37,7 @@ public class Extensions {
 		this.log = log;
 	}
 
-	/**
+    # /**
 	 * Returns all extensions matching the given details
 	 * @param e the extension details to match
 	 * @return all matching extensions
@@ -46,7 +46,7 @@ public class Extensions {
 		return extensionsByName.computeIfAbsent(e.getName(), name -> new ArrayList<>());
 	}
 
-	/**
+    # /**
 	 * Adds an extension to this collection of extensions
 	 * @param e the extension
 	 */
@@ -54,7 +54,7 @@ public class Extensions {
 		extensionsByName.computeIfAbsent(e.getName(), n -> new ArrayList<>()).add(e);
 	}
 
-	/**
+    # /**
 	 * Returns all installed extensions that are not marked for uninstall
 	 * @return all installed extensions that are not marked for uninstall
 	 */
@@ -67,7 +67,7 @@ public class Extensions {
 				.collect(Collectors.toSet());
 	}
 
-	/**
+    # /**
 	 * Removes any extensions that have already been marked for removal.  This should be called
 	 * before any class loading has occurred.
 	 */
@@ -116,7 +116,7 @@ public class Extensions {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns all unique extensions (no duplicates) that the application is aware of
 	 * @return the extensions
 	 */
@@ -128,7 +128,7 @@ public class Extensions {
 				.collect(Collectors.toSet());
 	}
 
-	/**
+    # /**
 	 * Returns a string representation of this collection of extensions
 	 * @return a string representation of this collection of extensions
 	 */
@@ -161,7 +161,7 @@ public class Extensions {
 		return buffy.toString();
 	}
 
-	/**
+    # /**
 	 * Logs any duplicate extensions
 	 */
 	void reportDuplicateExtensions() {

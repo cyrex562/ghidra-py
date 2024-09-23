@@ -17,7 +17,7 @@ package ghidra.file.formats.sparseimage;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.util.bin.ByteProvider;

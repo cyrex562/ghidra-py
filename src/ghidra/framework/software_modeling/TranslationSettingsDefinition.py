@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.docking.settings.JavaEnumSettingsDefinition;
@@ -25,9 +25,9 @@ import ghidra.program.model.util.StringPropertyMap;
 import ghidra.util.exception.DuplicateNameException;
 
 # /**
- *  SettingsDefinition for translation display, handles both the toggle of
- *  "show" vs "don't show", as well as accessing the translated value.
- */
+# *  SettingsDefinition for translation display, handles both the toggle of
+# *  "show" vs "don't show", as well as accessing the translated value.
+# */
 public class TranslationSettingsDefinition extends JavaEnumSettingsDefinition<TRANSLATION_ENUM> {
 	public static final TranslationSettingsDefinition TRANSLATION =
 		new TranslationSettingsDefinition();
@@ -51,7 +51,7 @@ public class TranslationSettingsDefinition extends JavaEnumSettingsDefinition<TR
 		}
 	}
 
-	/**
+    # /**
 	 * setting that stores the boolean toggle state for "show original" / "show translated"
 	 */
 	private static final String SHOW_TRANSLATED_TOGGLE_SETTING_NAME = "translated";
@@ -79,7 +79,7 @@ public class TranslationSettingsDefinition extends JavaEnumSettingsDefinition<TR
 
 	private static final String DEPRECATED_TRANSLATED_VALUE_SETTING_NAME = "translation";
 
-	/**
+    # /**
 	 * Determine if a translated string value has been set at the specified address.
 	 * @param data defined string data which may have a translation
 	 * @return true if translated string has been stored else false
@@ -101,7 +101,7 @@ public class TranslationSettingsDefinition extends JavaEnumSettingsDefinition<TR
 		return hasValue;
 	}
 
-	/**
+    # /**
 	 * Get the translated string value which been set at the specified address.
 	 * @param data defined string data which may have a translation
 	 * @return translated string value or null
@@ -123,7 +123,7 @@ public class TranslationSettingsDefinition extends JavaEnumSettingsDefinition<TR
 		return value;
 	}
 
-	/**
+    # /**
 	 * Set the translated string value at the specified address.
 	 * @param data defined string data which may have a translation
 	 * @param translatedValue translated string value or null to clear

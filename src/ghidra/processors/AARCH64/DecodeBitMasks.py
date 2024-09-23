@@ -146,7 +146,7 @@ public class DecodeBitMasks {
 			bitStr(wmask, M) + "   " + bitStr(tmask, M));
 	}
 
-	/**
+    # /**
 	 * @param args
 	 */
 	public static void main(String[] args) {

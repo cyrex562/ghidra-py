@@ -50,7 +50,7 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		return viewer;
 	}
 
-	/**
+    # /**
 	 * Returns the <b>primary/master</b> graph viewer.
 	 * 
 	 * @param e the mouse event from which to get the viewer
@@ -68,7 +68,7 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		return viewer;
 	}
 
-	/**
+    # /**
 	 * Returns the satellite graph viewer.  This assumes that the mouse event originated from 
 	 * the satellite viewer.
 	 * 
@@ -88,14 +88,14 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		throw new IllegalStateException("Do not have a satellite GraphViewer");
 	}
 
-	/**
+    # /**
 	 * Signals to perform any cleanup when this plugin is going away
 	 */
 	public void dispose() {
 		// stub
 	}
 
-	/**
+    # /**
 	 * Checks the given mouse event to see if it is a valid event for selecting a vertex at the
 	 * mouse location.  If so, then the vertex is selected in this mouse handler and the event
 	 * is consumed.
@@ -118,7 +118,7 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		return true;
 	}
 
-	/**
+    # /**
 	 * Checks the given mouse event to see if it is a valid event for selecting an edge at the
 	 * mouse location.  If so, then the edge is selected in this mouse handler and the event
 	 * is consumed.
@@ -142,7 +142,7 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		return true;
 	}
 
-	/**
+    # /**
 	 * Selects the given vertex
 	 * @param vertex the vertex
 	 * @param viewer the graph viewer
@@ -164,7 +164,7 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		return true;
 	}
 
-	/**
+    # /**
 	 * Selects the given edge
 	 * @param edge the edge
 	 * @param viewer the graph viewer
@@ -186,7 +186,7 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns true if the location of the mouse event is over a vertex
 	 * @param e the event
 	 * @return true if the location of the mouse event is over a vertex
@@ -195,7 +195,7 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		return getVertex(e) != null;
 	}
 
-	/**
+    # /**
 	 * Returns the vertex if the mouse event is over a vertex
 	 * @param e the event
 	 * @return a vertex or null
@@ -205,7 +205,7 @@ public abstract class AbstractJgtGraphMousePlugin<V, E>
 		return JgtUtils.getVertex(e, viewer);
 	}
 
-	/**
+    # /**
 	 * Returns true if the location of the mouse event is over a edge
 	 * @param e the event
 	 * @return true if the location of the mouse event is over a edge

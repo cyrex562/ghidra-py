@@ -101,7 +101,7 @@ public class VertexMouseInfo<V extends VisualVertex, E extends VisualEdge<V>> {
 		return pickedVertexState.isPicked(vertex);
 	}
 
-	/**
+    # /**
 	 * Selects, or 'pick's the given vertex.  
 	 * 
 	 * @param addToSelection true signals to add the given vertex to the set of selected vertices;
@@ -140,7 +140,7 @@ public class VertexMouseInfo<V extends VisualVertex, E extends VisualEdge<V>> {
 		return translatedMouseEvent.getPoint();
 	}
 
-	/**
+    # /**
 	 * You can use this method to override which Java component will get the forwarded event.  By
 	 * default, the mouse info will forward the event to the component that is under the point in
 	 * the event.

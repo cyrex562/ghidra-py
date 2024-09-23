@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -44,7 +44,7 @@ public class LineNumber implements StructConverter {
 		lineNumber = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the start_pc item must indicate the index into the code array
 	 * at which the code for a new line in the original source file begins.
 	 * <p>
@@ -56,7 +56,7 @@ public class LineNumber implements StructConverter {
 		return startPC & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the line_number item must give the corresponding line number in the original source file.
 	 * @return the corresponding line number in the original source file
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.headers;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.art.ArtHeader;
@@ -74,7 +74,7 @@ public class ArtHeader_012 extends ArtHeader {
 		return image_size_;
 	}
 
-	/**
+    # /**
 	 * Boolean (0 or 1) to denote if the image was compiled with --compile-pic option.
 	 */
 	public int getCompilePic() {

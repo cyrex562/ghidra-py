@@ -28,7 +28,7 @@ import ghidra.framework.plugintool.Plugin;
  */
 public class VersionControlShowHistoryAction extends VersionControlAction {
 
-	/**
+    # /**
 	 * Creates an action to show the version history for a single version controlled 
 	 * domain file in the repository.
 	 * @param plugin the plug-in that owns this action.
@@ -62,7 +62,7 @@ public class VersionControlShowHistoryAction extends VersionControlAction {
 		return domainFile.isVersioned();
 	}
 
-	/**
+    # /**
 	 * Displays a dialog with the version history for the provided domain file.
 	 */
 	private void showHistory(List<DomainFile> domainFiles) {

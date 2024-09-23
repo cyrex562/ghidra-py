@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.apple8900;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;

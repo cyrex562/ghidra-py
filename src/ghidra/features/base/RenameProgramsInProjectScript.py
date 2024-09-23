@@ -22,7 +22,7 @@ import ghidra.framework.model.*;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.util.InvalidNameException;
 
-import java.io.IOException;
+
 
 public class RenameProgramsInProjectScript extends GhidraScript {
 

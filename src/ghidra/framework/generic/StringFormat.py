@@ -23,7 +23,7 @@ public class StringFormat {
 
 	private StringFormat() {
 	}
-	/**
+    # /**
 	 * Gets a hexadecimal representation of a byte value.
 	 * @param b the byte value
 	 * @return the byte as a hexadecimal string.
@@ -36,7 +36,7 @@ public class StringFormat {
 		return rep;
 	}
 	
-	/**
+    # /**
 	 * Gets a hexadecimal representation of a short value.
 	 * @param s the short value
 	 * @return the short as a hexadecimal string.
@@ -47,7 +47,7 @@ public class StringFormat {
 	}
 
 
-	/**
+    # /**
 	 * Creates a string prepended with zeros, if padding is indicated, and adds 
 	 * the indicated endchar as the suffix.
 	 * @param str the original string

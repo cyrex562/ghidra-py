@@ -36,7 +36,7 @@ public class EmuUnixException extends EmuSystemException {
 		this(message, errno, null);
 	}
 
-	/**
+    # /**
 	 * Construct a new exception with an optional errno
 	 * 
 	 * <p>
@@ -54,7 +54,7 @@ public class EmuUnixException extends EmuSystemException {
 		this.errno = errno;
 	}
 
-	/**
+    # /**
 	 * Get the errno associated with this exception
 	 * 
 	 * @return the errno, or {@code null}

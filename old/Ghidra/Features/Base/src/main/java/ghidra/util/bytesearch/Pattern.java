@@ -15,7 +15,7 @@
  */
 package ghidra.util.bytesearch;
 
-import java.io.*;
+
 import java.util.ArrayList;
 
 import org.xml.sax.*;

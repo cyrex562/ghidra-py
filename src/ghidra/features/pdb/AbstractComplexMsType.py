@@ -35,7 +35,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 	// Used by MsType and 19MsType; maybe by StMsType; not by 16MsType
 	protected String mangledName;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -44,7 +44,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param count number of field elements
@@ -61,7 +61,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		this.name = name;
 	}
 
-	/**
+    # /**
 	 * Returns the number of elements.
 	 * @return Number of elements.
 	 */
@@ -69,7 +69,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the field descriptor list used for this composite.
 	 * @return Record number of the field descriptor list.
 	 */
@@ -77,7 +77,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		return fieldDescriptorListRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the field type for the fields of this class.  Returns null if none.
 	 * @return {@link AbstractMsType} type of the field type or null if none.
 	 */
@@ -85,7 +85,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		return pdb.getTypeRecord(fieldDescriptorListRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the MsProperty of this composite.
 	 * @return {@link MsProperty} of this composite.
 	 */
@@ -93,7 +93,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		return property;
 	}
 
-	/**
+    # /**
 	 * Returns the name of this type.
 	 * @return Name type of the type.
 	 */
@@ -102,7 +102,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the mangled name within this complex type
 	 * @return Mangled name
 	 */
@@ -110,7 +110,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		return mangledName;
 	}
 
-	/**
+    # /**
 	 * Returns the type name of this complex type.
 	 * @return Type of the complex type.
 	 */
@@ -118,7 +118,7 @@ public abstract class AbstractComplexMsType extends AbstractMsType {
 		return getTypeString();
 	}
 
-	/**
+    # /**
 	 * Returns the type of complex type.
 	 * @return Standard (C/C++) name for the type of complex type.
 	 */

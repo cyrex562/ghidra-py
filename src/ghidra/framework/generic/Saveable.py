@@ -55,14 +55,14 @@ public interface Saveable {
      */
     Class<?>[] getObjectStorageFields();
     
-	/**
+    # /**
 	 * Save to the given ObjectStorage.
 	 * @param objStorage Object that can handle Java primitives, Strings, and
 	 * arrays of primitives and Strings
 	 */
 	void save(ObjectStorage objStorage);
 	
-	/**
+    # /**
 	 * Restore from the given ObjectStorage.
 	 * @param objStorage Object that can handle Java primitives, Strings, and
 	 * arrays of primitives and Strings
@@ -70,7 +70,7 @@ public interface Saveable {
 	 */
 	void restore(ObjectStorage objStorage);
 	
-	/**
+    # /**
 	 * Get the storage schema version.  Any time there is a software release
 	 * in which the implementing class has changed the data structure used 
 	 * for the save and restore methods, the schema version must be incremented.
@@ -80,7 +80,7 @@ public interface Saveable {
 	 */
 	int getSchemaVersion();
 	
-	/**
+    # /**
 	 * Determine if the implementation supports an storage upgrade of the specified
 	 * oldSchemaVersion to the current schema version.
 	 * @param oldSchemaVersion 
@@ -88,7 +88,7 @@ public interface Saveable {
 	 */
 	boolean isUpgradeable(int oldSchemaVersion);
 	
-	/**
+    # /**
 	 * Upgrade an older stored object to the current storage schema. 
 	 * @param oldObjStorage the old stored object
 	 * @param oldSchemaVersion storage schema version number for the old object
@@ -97,7 +97,7 @@ public interface Saveable {
 	 */
 	boolean upgrade(ObjectStorage oldObjStorage, int oldSchemaVersion, ObjectStorage currentObjStorage);
 
-	/**
+    # /**
 	 * Returns true if this saveable should not have it's changes broadcast.
 	 * @return true if this saveable should not have it's changes broadcast.
 	 */

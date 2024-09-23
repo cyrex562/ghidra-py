@@ -17,7 +17,7 @@ package ghidra.test;
 
 import java.awt.Dialog;
 import java.awt.Window;
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;

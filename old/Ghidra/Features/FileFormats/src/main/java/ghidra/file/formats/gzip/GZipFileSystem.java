@@ -17,7 +17,7 @@ package ghidra.file.formats.gzip;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream;

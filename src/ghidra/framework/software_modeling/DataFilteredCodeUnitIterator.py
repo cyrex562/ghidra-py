@@ -25,7 +25,7 @@ public class DataFilteredCodeUnitIterator implements DataIterator {
 	private CodeUnitIterator it;
 	private Data nextData;
 
-	/**
+    # /**
 	 * Constructs a new DataFilteredCodeUnitIterator.
 	 * @param it the codeunit iterator to filter on. 
 	 */
@@ -33,14 +33,14 @@ public class DataFilteredCodeUnitIterator implements DataIterator {
 		this.it = it;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Iterator#remove()
 	 */
 	public void remove() {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.DataIterator#hasNext()
 	 */
 	public boolean hasNext() {
@@ -50,7 +50,7 @@ public class DataFilteredCodeUnitIterator implements DataIterator {
 		return nextData != null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.DataIterator#next()
 	 */
 	public Data next() {

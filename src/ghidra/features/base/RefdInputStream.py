@@ -15,7 +15,7 @@
  */
 package ghidra.formats.gfilesystem;
 
-import java.io.*;
+
 
 # /**
  * An {@link InputStream} wrapper that keeps a {@link FileSystemRef} pinned.

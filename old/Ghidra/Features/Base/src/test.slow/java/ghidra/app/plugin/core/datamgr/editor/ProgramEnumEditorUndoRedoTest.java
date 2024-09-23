@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.datamgr.editor;
 
-import java.io.IOException;
+
 
 import org.junit.Before;
 

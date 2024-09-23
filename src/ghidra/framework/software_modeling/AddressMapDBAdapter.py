@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.map;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import db.DBHandle;
@@ -81,12 +81,12 @@ abstract class AddressMapDBAdapter {
 		return newAdapter;
 	}
 
-	/**
+    # /**
 	 * Deletes the table - used when upgrading;
 	 */
 	abstract void deleteTable() throws IOException;
 
-	/**
+    # /**
 	 * Adds a new base address
 	 * @param addr the new base address to add.
 	 * @param normalizedOffset the normalized offset (image base subtracted) for the address.
@@ -94,33 +94,33 @@ abstract class AddressMapDBAdapter {
 	 */
 	abstract Address[] addBaseAddress(Address addr, long normalizedOffset);
 
-	/**
+    # /**
 	 * Returns an array of image bases.
 	 * @param forceRead forces the adapter to reread the data from the database.
 	 * @throws IOException if a database io error occurs.
 	 */
 	abstract Address[] getBaseAddresses(boolean forceRead) throws IOException;
 
-	/**
+    # /**
 	 * Returns raw address map entries.
 	 * @throws IOException
 	 */
 	abstract List<AddressMapEntry> getEntries() throws IOException;
 
-	/**
+    # /**
 	 * Initialize map with specified list of map entries (upgrade use only).
 	 * @param entries map entries sorted by index (a missing index will cause an exception).
 	 * @throws IOException
 	 */
 	abstract void setEntries(List<AddressMapEntry> entries) throws IOException;
 
-	/**
+    # /**
 	 * Clears all entries in the database table.
 	 * @throws IOException if a database io error occurs.
 	 */
 	abstract void clearAll() throws IOException;
 
-	/**
+    # /**
 	 * Sets the addressFactory
 	 * @param addrFactory the new factory to use.
 	 */

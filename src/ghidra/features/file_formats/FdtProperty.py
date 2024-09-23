@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dtb;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -46,7 +46,7 @@ public class FdtProperty implements StructConverter {
 		data = (length == 0) ? new byte[0] : reader.readNextByteArray(length);
 	}
 
-	/**
+    # /**
 	 * Returns the FDT Property Tag.
 	 * @see FdtConstants
 	 * @return the FDT Property Tag
@@ -55,7 +55,7 @@ public class FdtProperty implements StructConverter {
 		return tag;
 	}
 
-	/**
+    # /**
 	 * Returns the FDT Property length.
 	 * @return the FDT Property length
 	 */
@@ -63,7 +63,7 @@ public class FdtProperty implements StructConverter {
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the offset to the FDT Property name.
 	 * @return the offset to the FDT Property name
 	 */
@@ -71,7 +71,7 @@ public class FdtProperty implements StructConverter {
 		return nameOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the FDT Property data bytes.
 	 * @return the FDT Property data bytes
 	 */
@@ -79,7 +79,7 @@ public class FdtProperty implements StructConverter {
 		return data;
 	}
 
-	/**
+    # /**
 	 * Returns the FDT Property data bytes as a readable string.
 	 * @return the FDT Property data bytes as a readable string
 	 */
@@ -114,7 +114,7 @@ public class FdtProperty implements StructConverter {
 		return structure;
 	}
 
-	/**
+    # /**
 	 * Generates the name for this FDT property.
 	 * @return the name for this FDT property
 	 */

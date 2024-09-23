@@ -15,7 +15,7 @@
  */
 package ghidra.net;
 
-import java.io.IOException;
+
 import java.net.http.HttpClient;
 import java.net.http.HttpClient.Redirect;
 import java.security.NoSuchAlgorithmException;

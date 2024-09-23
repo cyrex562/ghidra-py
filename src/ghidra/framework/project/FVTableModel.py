@@ -122,7 +122,7 @@ public class FVTableModel extends AbstractTableModel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Adds a row to the model.
 	 * 
 	 * @param row the data to add
@@ -132,7 +132,7 @@ public class FVTableModel extends AbstractTableModel {
 		addRow(row, messages.size(), notify);
 	}
 
-	/**
+    # /**
 	 * Adds a row to the model
 	 * 
 	 * @param row the data to add
@@ -160,7 +160,7 @@ public class FVTableModel extends AbstractTableModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Adds a list of rows to the model and fires off a notification.
 	 * 
 	 * @param rows
@@ -173,7 +173,7 @@ public class FVTableModel extends AbstractTableModel {
 		fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Adds a list of rows to the model and fires off a notification.
 	 * 
 	 * @param rows
@@ -185,7 +185,7 @@ public class FVTableModel extends AbstractTableModel {
 		fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Removes a set of rows from the bottom of the view.
 	 * 
 	 * @param count the number of rows to remove
@@ -200,7 +200,7 @@ public class FVTableModel extends AbstractTableModel {
 		fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Removes a set of rows from the top of the view.
 	 * 
 	 * @param count the number of rows to remove
@@ -217,7 +217,7 @@ public class FVTableModel extends AbstractTableModel {
 		fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Clears all lines from the model and fires off a notification.
 	 */
 	public void clear() {
@@ -228,7 +228,7 @@ public class FVTableModel extends AbstractTableModel {
 		fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Returns the date portion of the given string.
 	 * 
 	 * @param row the row data
@@ -239,7 +239,7 @@ public class FVTableModel extends AbstractTableModel {
 		return m.find() ? m.group() : "";
 	}
 
-	/**
+    # /**
 	 * Returns the log level portion of the given string.
 	 * 
 	 * @param row the row data
@@ -250,7 +250,7 @@ public class FVTableModel extends AbstractTableModel {
 		return m.find() ? m.group().trim() : "";
 	}
 
-	/**
+    # /**
 	 * Returns the time portion of the given string.
 	 * 
 	 * @param row the row data

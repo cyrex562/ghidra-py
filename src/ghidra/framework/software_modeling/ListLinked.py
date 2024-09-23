@@ -1,30 +1,30 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import java.util.Iterator;
 
 # /**
- * 
- *
- * A better linked list implementation than provided by java.util.
- * 
- * TODO: Looks like the main benefit is a non-failing iterator.  In JDK 1.5
- * this may not be needed.  1.5 has better Iterators in the collections classes.
- */
+# * 
+# *
+# * A better linked list implementation than provided by java.util.
+# * 
+# * TODO: Looks like the main benefit is a non-failing iterator.  In JDK 1.5
+# * this may not be needed.  1.5 has better Iterators in the collections classes.
+# */
 public class ListLinked<T> {
 
 	private class LinkedNode {
@@ -85,7 +85,7 @@ public class ListLinked<T> {
 		terminal.previousNode = terminal;				// Create empty list
 	}
 
-	/**
+    # /**
 	 * Add object to end of the list, any existing iterators remain valid
 	 * 
 	 * @param o -- Object to be added
@@ -99,7 +99,7 @@ public class ListLinked<T> {
 		return iter;
 	}
 
-	/**
+    # /**
 	 * Insert new object AFTER object pointed to by iterator, other Iterators remain valid
 	 * 
 	 * @param itr   Iterator to existing object
@@ -114,7 +114,7 @@ public class ListLinked<T> {
 		return new LinkedIterator(newNode);
 	}
 
-	/**
+    # /**
 	 * Insert new object BEFORE object pointed to by iterator, other Iterators remain valid
 	 * 
 	 * @param itr  Iterator to existing object
@@ -129,7 +129,7 @@ public class ListLinked<T> {
 		return new LinkedIterator(newNode);
 	}
 
-	/**
+    # /**
 	 * Remove object from list indicated by Iterator, all iterators that point to objects other
 	 * than this one remain valid
 	 * 
@@ -144,7 +144,7 @@ public class ListLinked<T> {
 		cur.nextNode.previousNode = cur.previousNode;
 	}
 
-	/**
+    # /**
 	 * @return an iterator over this linked list
 	 */
 	public Iterator<T> iterator() {
@@ -152,7 +152,7 @@ public class ListLinked<T> {
 		return iter;
 	}
 
-	/**
+    # /**
 	 * Get rid of all entries on the linked list.
 	 */
 	public void clear() {
@@ -160,14 +160,14 @@ public class ListLinked<T> {
 		terminal.previousNode = terminal;			// Recreate empty list
 	}
 
-	/**
+    # /**
 	 * @return the first element in the list (or null)
 	 */
 	public T first() {
 		return terminal.nextNode.data;
 	}
 
-	/**
+    # /**
 	 * @return the last element in the list (or null)
 	 */
 	public T last() {

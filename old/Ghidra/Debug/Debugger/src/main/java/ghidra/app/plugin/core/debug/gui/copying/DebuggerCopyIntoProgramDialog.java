@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.debug.gui.copying;
 
 import java.awt.*;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

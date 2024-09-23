@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.processors.sleigh;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.plugin.assembler.sleigh.sem.AssemblyResolvedPatterns;

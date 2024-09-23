@@ -50,7 +50,7 @@ public interface AddressIterator extends Iterator<Address>, Iterable<Address> {
 
 	};
 
-	/**
+    # /**
 	 * Get the next address.
 	 * <P>NOTE: This deviates from the standard {@link Iterator} interface
 	 * by returning null instead of throwing an exception.
@@ -59,7 +59,7 @@ public interface AddressIterator extends Iterator<Address>, Iterable<Address> {
 	@Override
 	public Address next();
 
-	/**
+    # /**
 	 * Checks if there is a next address in the iteration.
 	 * 
 	 * @return true if there is a next address.

@@ -22,14 +22,14 @@ package ghidra.program.model.address;
  */
 public interface AddressSetCollection {
 
-	/**
+    # /**
 	 * Determine if any AddressSet in this collection intersects with the specified address set.
 	 *
 	 * @param addrSet address set to check intersection with.
 	 */
 	public boolean intersects(AddressSetView addrSet);
 
-	/**
+    # /**
 	 * Determine if range specified by start and end intersects with any of the AddressSets
 	 * in this collection.
 	 * @param start start of range
@@ -38,7 +38,7 @@ public interface AddressSetCollection {
 	 */
 	public boolean intersects(Address start, Address end);
 
-	/**
+    # /**
 	 * Test if the address is contained within any of the addressSets in this collection.
 	 * <P>
 	 * @param address address to test.
@@ -46,7 +46,7 @@ public interface AddressSetCollection {
 	 */
 	public boolean contains(Address address);
 
-	/**
+    # /**
 	 * Tests whether this collection of addressSets has approximately fewer ranges than
 	 * the given threshold. This is probably estimated by adding up the number of ranges
 	 * in each AddressSet in this collections. Returns true if the total is less than the 
@@ -56,31 +56,31 @@ public interface AddressSetCollection {
 	 */
 	public boolean hasFewerRangesThan(int rangeThreshold);
 
-	/**
+    # /**
 	 * Returns a single AddressSet containing the union of all the addressSetViews in the collection.  
 	 */
 	public AddressSet getCombinedAddressSet();
 
-	/**
+    # /**
 	 * Finds the first address in this collection that is also in the given addressSet.
 	 * @param set the addressSet to search for the first (lowest) common address.
 	 * @return the first address that is contained in this set and the given set.
 	 */
 	public Address findFirstAddressInCommon(AddressSetView set);
 
-	/**
+    # /**
 	 * Returns true if all the AddressSets in this collection are empty.
 	 * @return true if all the AddressSets in this collection are empty.
 	 */
 	public boolean isEmpty();
 
-	/**
+    # /**
 	 * Returns the smallest address in this collection or null if the collection is empty.
 	 * @return  the smallest address in this collection or null if the collection is empty.
 	 */
 	public Address getMinAddress();
 
-	/**
+    # /**
 	 * Returns the largest address in this collection or null if the collection is empty.
 	 * @return  the largest address in this collection or null if the collection is empty.
 	 */

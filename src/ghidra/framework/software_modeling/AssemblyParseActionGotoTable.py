@@ -43,7 +43,7 @@ public class AssemblyParseActionGotoTable {
 	protected final MultiValuedMap<Integer, AssemblyTerminal> possibleTerms =
 		new TreeSetValuedTreeMap<>();
 
-	/**
+    # /**
 	 * Add an action entry to the given cell
 	 * 
 	 * @param fromState the state (row) in the table
@@ -58,7 +58,7 @@ public class AssemblyParseActionGotoTable {
 		return map.put(new TableEntryKey(fromState, next), action);
 	}
 
-	/**
+    # /**
 	 * Add a SHIFT (S<i>n</i>) entry to the given cell
 	 * 
 	 * @param fromState the state (row) in the table
@@ -70,7 +70,7 @@ public class AssemblyParseActionGotoTable {
 		return put(fromState, next, new ShiftAction(newState));
 	}
 
-	/**
+    # /**
 	 * Add a REDUCE (R<i>n</i>) entry to the given cell
 	 * 
 	 * @param fromState the state (row) in the table
@@ -82,7 +82,7 @@ public class AssemblyParseActionGotoTable {
 		return put(fromState, next, new ReduceAction(prod));
 	}
 
-	/**
+    # /**
 	 * Add a GOTO entry to the given cell
 	 * 
 	 * @param fromState the state (row) in the table
@@ -94,7 +94,7 @@ public class AssemblyParseActionGotoTable {
 		return put(fromState, next, new GotoAction(newState));
 	}
 
-	/**
+    # /**
 	 * Add an ACCEPT entry for the given state at the end of input
 	 * 
 	 * @param fromState the state (row) in the table
@@ -104,7 +104,7 @@ public class AssemblyParseActionGotoTable {
 		return put(fromState, AssemblyEOI.EOI, AcceptAction.ACCEPT);
 	}
 
-	/**
+    # /**
 	 * Get the terminals that are expected, i.e., have entries for the given state
 	 * 
 	 * @param fromState the state (row) in the table
@@ -114,7 +114,7 @@ public class AssemblyParseActionGotoTable {
 		return possibleTerms.get(fromState);
 	}
 
-	/**
+    # /**
 	 * Get all entries in a given cell
 	 * 
 	 * @param fromState the state (row) in the table
@@ -125,7 +125,7 @@ public class AssemblyParseActionGotoTable {
 		return map.get(new TableEntryKey(fromState, next));
 	}
 
-	/**
+    # /**
 	 * An action in the Action/Goto table
 	 */
 	public static abstract class Action implements Comparable<Action> {
@@ -148,7 +148,7 @@ public class AssemblyParseActionGotoTable {
 		}
 	}
 
-	/**
+    # /**
 	 * A SHIFT (S<i>n</i>) entry
 	 */
 	public static class ShiftAction extends Action {
@@ -164,7 +164,7 @@ public class AssemblyParseActionGotoTable {
 		}
 	}
 
-	/**
+    # /**
 	 * A REDUCE (R<i>n</i>) entry
 	 */
 	public static class ReduceAction extends Action {
@@ -180,7 +180,7 @@ public class AssemblyParseActionGotoTable {
 		}
 	}
 
-	/**
+    # /**
 	 * A GOTO (G<i>n</i>) entry
 	 */
 	public static class GotoAction extends Action {
@@ -196,7 +196,7 @@ public class AssemblyParseActionGotoTable {
 		}
 	}
 
-	/**
+    # /**
 	 * An ACCEPT (acc) entry
 	 */
 	public static class AcceptAction extends Action {

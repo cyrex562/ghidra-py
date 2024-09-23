@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -39,7 +39,7 @@ public class BootstrapMethods implements StructConverter {
 		bootstrapArguments = reader.readNextShortArray(getNumberOfBootstrapArguments());
 	}
 
-	/**
+    # /**
 	 * The value of the bootstrap_method_ref item must be a valid index into
 	 * the constant_pool table. The constant_pool entry at that index must be
 	 * a CONSTANT_MethodHandle_info structure.
@@ -56,7 +56,7 @@ public class BootstrapMethods implements StructConverter {
 		return bootstrapMethodsReference & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the num_bootstrap_arguments item gives the number of
 	 * items in the bootstrap_arguments array.
 	 * @return the number of items in the bootstrap_arguments array
@@ -65,7 +65,7 @@ public class BootstrapMethods implements StructConverter {
 		return numberOfBootstrapArguments & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each entry in the bootstrap_arguments array must be a valid index into
 	 * the constant_pool table. 
 	 * The constant_pool entry at that index must be: 

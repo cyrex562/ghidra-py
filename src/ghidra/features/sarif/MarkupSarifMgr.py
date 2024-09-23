@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -106,7 +106,7 @@ public class MarkupSarifMgr extends SarifMgr {
 		return RefTypeFactory.get((byte) type);
 	}
 
-	/**
+    # /**
 	 * @param result
 	 * @param language
 	 * @param overwrite
@@ -172,7 +172,7 @@ public class MarkupSarifMgr extends SarifMgr {
 		}
 	}
 
-	/**
+    # /**
 	 * @param result
 	 * @param language
 	 * @param overwrite
@@ -409,7 +409,7 @@ public class MarkupSarifMgr extends SarifMgr {
 		return parent == null ? null : getLibrary(parent);
 	}
 
-	/**
+    # /**
 	 * @param result
 	 * @param language
 	 * @param overwrite

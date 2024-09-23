@@ -16,7 +16,7 @@
  */
 package ghidra.sleigh.grammar;
 
-import java.io.IOException;
+
 import org.antlr.runtime.EarlyExitException;
 import org.antlr.runtime.FailedPredicateException;
 import org.antlr.runtime.MismatchedNotSetException;

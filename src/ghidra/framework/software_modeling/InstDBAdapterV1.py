@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.map.*;
@@ -27,14 +27,14 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Version 0 adapter for the instruction table.
- */
+# * Version 0 adapter for the instruction table.
+# */
 class InstDBAdapterV1 extends InstDBAdapter {
 	private static final int VERSION = 1;
 	private Table instTable;
 	private AddressMap addrMap;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param handle database handle
 	 */
@@ -59,7 +59,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#createInstruction(long, int)
 	 */
 	@Override
@@ -70,7 +70,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		instTable.putRecord(record);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#removeInstruction(long)
 	 */
 	@Override
@@ -78,7 +78,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		instTable.deleteRecord(addr);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecordAtOrAfter(long)
 	 */
 	@Override
@@ -87,7 +87,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return it.next();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecord(long)
 	 */
 	@Override
@@ -95,7 +95,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return instTable.getRecord(addr);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecord(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -103,7 +103,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return instTable.getRecord(addrMap.getKey(addr, false));
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecordAfter(long)
 	 */
 	@Override
@@ -112,7 +112,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return it.next();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecordBefore(long)
 	 */
 	@Override
@@ -121,7 +121,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return it.previous();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecords(ghidra.program.model.address.Address, boolean)
 	 */
 	@Override
@@ -129,7 +129,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return new AddressKeyRecordIterator(instTable, addrMap, addr, forward);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecords(ghidra.program.model.address.AddressSetView, boolean)
 	 */
 	@Override
@@ -138,7 +138,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 				: set.getMaxAddress(), forward);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.MoveRangeAdapter#getRecords(long, long, boolean)
 	 */
 	@Override
@@ -149,7 +149,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return new AddressKeyRecordIterator(instTable, addrMap, start, end, end, false);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecordAtOrBefore(long)
 	 */
 	@Override
@@ -158,7 +158,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return it.previous();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecordCount()
 	 */
 	@Override
@@ -166,7 +166,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return instTable.getRecordCount();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getKeys(long, long)
 	 */
 	@Override
@@ -177,7 +177,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return new AddressKeyIterator(instTable, addrMap, start, end, end, false);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getKeys(ghidra.program.model.address.AddressSetView, boolean)
 	 */
 	@Override
@@ -188,7 +188,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return new AddressKeyIterator(instTable, addrMap, set, set.getMaxAddress(), false);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.MoveRangeAdapter#deleteRecords(long, long)
 	 */
 	@Override
@@ -196,7 +196,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return AddressRecordDeleter.deleteRecords(instTable, addrMap, start, end);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.MoveRangeAdapter#putRecord(ghidra.framework.store.db.DBRecord)
 	 */
 	@Override
@@ -204,7 +204,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		instTable.putRecord(record);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#getRecords()
 	 */
 	@Override
@@ -212,7 +212,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		return new AddressKeyRecordIterator(instTable, addrMap);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#updateFlags(long, byte)
 	 */
 	@Override
@@ -222,7 +222,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		instTable.putRecord(rec);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#moveAddressRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address, long, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -231,7 +231,7 @@ class InstDBAdapterV1 extends InstDBAdapter {
 		DatabaseTableUtils.updateAddressKey(instTable, addrMap, fromAddr, toAddr, length, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.code.InstDBAdapter#deleteAll()
 	 */
 	@Override

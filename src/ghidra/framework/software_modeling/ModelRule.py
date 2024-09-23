@@ -1,23 +1,23 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang.protorules;
 
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.program.model.data.DataType;
@@ -28,13 +28,13 @@ import ghidra.util.exception.InvalidInputException;
 import ghidra.xml.*;
 
 # /**
- *  A rule controlling how parameters are assigned addresses
- *  
- *  Rules are applied to a parameter in the context of a full function prototype.
- *  A rule applies only for a specific class of data-type associated with the parameter, as
- *  determined by its DatatypeFilter, and may have other criteria limiting when it applies
- *  (via QualifierFilter).
- */
+# *  A rule controlling how parameters are assigned addresses
+# *  
+# *  Rules are applied to a parameter in the context of a full function prototype.
+# *  A rule applies only for a specific class of data-type associated with the parameter, as
+# *  determined by its DatatypeFilter, and may have other criteria limiting when it applies
+# *  (via QualifierFilter).
+# */
 public class ModelRule {
 	private DatatypeFilter filter;			// Which data-types this rule applies to
 	private QualifierFilter qualifier;		// Additional qualifiers for when the rule should apply (if non-null)
@@ -47,7 +47,7 @@ public class ModelRule {
 		assign = null;
 	}
 
-	/**
+    # /**
 	 * Copy constructor
 	 * @param op2 is the ModelRule to copy from
 	 * @param res is the new resource set to associate with the copy
@@ -78,7 +78,7 @@ public class ModelRule {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct from components
 	 * 
 	 * The provided components are cloned into the new object.
@@ -142,7 +142,7 @@ public class ModelRule {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Assign an address and other details for a specific parameter or for return storage in context
 	 * 
 	 * The Address is only assigned if the data-type filter and the optional qualifier filter
@@ -174,7 +174,7 @@ public class ModelRule {
 		return response;
 	}
 
-	/**
+    # /**
 	 * Encode this rule to a stream
 	 * @param encoder is the stream encode
 	 * @throws IOException for problems with the stream
@@ -192,7 +192,7 @@ public class ModelRule {
 		encoder.closeElement(ELEM_RULE);
 	}
 
-	/**
+    # /**
 	 * Decode this rule from stream
 	 * 
 	 * @param parser is the stream decoder

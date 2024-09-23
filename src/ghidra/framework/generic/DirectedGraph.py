@@ -50,7 +50,7 @@ public class DirectedGraph {
 	//    Constructors                                                  //
 	//                                                                  //
 	//////////////////////////////////////////////////////////////////////
-	/** Creates an empty DirectedGraph with room for 
+    # /** Creates an empty DirectedGraph with room for 
 	 * vertexCapacity vertices and edgeCapacity edges.
 	 */
 	public DirectedGraph(int vertexCapacity, int edgeCapacity) {
@@ -60,7 +60,7 @@ public class DirectedGraph {
 		edgeAttributes = new AttributeManager<>(edges);
 	}
 
-	/** Default constructor */
+    # /** Default constructor */
 	public DirectedGraph() {
 		this(101, 101);
 	}
@@ -71,7 +71,7 @@ public class DirectedGraph {
 	//                                                                  //
 	//////////////////////////////////////////////////////////////////////
 
-	/** The number of edges having v as their terminal or
+    # /** The number of edges having v as their terminal or
 	 *  "to" vertex.
 	 */
 	public int inValence(Vertex v) {
@@ -84,7 +84,7 @@ public class DirectedGraph {
 		return inv;
 	}
 
-	/** The number of edges having v as their initial or
+    # /** The number of edges having v as their initial or
 	 *  "from" vertex.
 	 */
 	public int outValence(Vertex v) {
@@ -97,7 +97,7 @@ public class DirectedGraph {
 		return outv;
 	}
 
-	/** The number of edges having v as both their terminal and
+    # /** The number of edges having v as both their terminal and
 	 *  terminal vertex.
 	 */
 	public int numLoops(Vertex v) {
@@ -112,7 +112,7 @@ public class DirectedGraph {
 		return loops;
 	}
 
-	/** The number of edges incident with v. For unweighted
+    # /** The number of edges incident with v. For unweighted
 	 *   graphs valence and degree are the same, except valence is an int
 	 *  while degree is a double.
 	 */
@@ -127,12 +127,12 @@ public class DirectedGraph {
 	//                                                                  //
 	//////////////////////////////////////////////////////////////////////
 
-	/** Returns the EdgeSet of this graph. */
+    # /** Returns the EdgeSet of this graph. */
 	public EdgeSet edges() {
 		return edges;
 	}
 
-	/** 
+    # /** 
 	 * @param key
 	 * @return the edge in the graph with the specified key or null
 	 * if the graph does not contain an edge with the key.
@@ -141,12 +141,12 @@ public class DirectedGraph {
 		return edges.getKeyedObject(key);
 	}
 
-	/** Returns the VertexSet of this graph. */
+    # /** Returns the VertexSet of this graph. */
 	public VertexSet vertices() {
 		return vertices;
 	}
 
-	/** 
+    # /** 
 	 * @param key
 	 * @return the vertex in the graph with the specified key or null
 	 * if the graph does not contain an vertex with the key.
@@ -155,7 +155,7 @@ public class DirectedGraph {
 		return vertices.getKeyedObject(key);
 	}
 
-	/** Returns a Set (HashSet) containing all vertices that are the tos
+    # /** Returns a Set (HashSet) containing all vertices that are the tos
 	 *   of outgoing edges of the given vertex. Note in the case of multiple
 	 *  edges, the number of children and outvalence need not be the same.
 	 */
@@ -169,7 +169,7 @@ public class DirectedGraph {
 		return children;
 	}
 
-	/** Returns the outgoing edges from the given vertex. */
+    # /** Returns the outgoing edges from the given vertex. */
 	public Set<Edge> getOutgoingEdges(Vertex v) {
 		Set<Edge> outgoingEdges = new HashSet<>();
 		Edge e = vertices.getFirstOutgoingEdge(v);
@@ -180,7 +180,7 @@ public class DirectedGraph {
 		return outgoingEdges;
 	}
 
-	/** Returns a Set containg all of the vertices from which an edge comes
+    # /** Returns a Set containg all of the vertices from which an edge comes
 	 *  into the given vertex.
 	 */
 	public Set<Vertex> getParents(Vertex v) {
@@ -193,7 +193,7 @@ public class DirectedGraph {
 		return parents;
 	}
 
-	/** Returns a Set containing all of the edges to the given vertex. */
+    # /** Returns a Set containing all of the edges to the given vertex. */
 	public Set<Edge> getIncomingEdges(Vertex v) {
 		Set<Edge> incomingEdges = new HashSet<>();
 		Edge e = vertices.getFirstIncomingEdge(v);
@@ -204,7 +204,7 @@ public class DirectedGraph {
 		return incomingEdges;
 	}
 
-	/** Returns all children of the vertices in the given set. */
+    # /** Returns all children of the vertices in the given set. */
 	public Set<Vertex> getChildren(Set<Vertex> vs) {
 		Set<Vertex> children = new HashSet<>();
 		Vertex v;
@@ -221,7 +221,7 @@ public class DirectedGraph {
 		return children;
 	}
 
-	/** Returns all parents of the vertices in the given set. */
+    # /** Returns all parents of the vertices in the given set. */
 	public Set<Vertex> getParents(Set<Vertex> vs) {
 		Set<Vertex> parents = new HashSet<>();
 		Edge e;
@@ -238,7 +238,7 @@ public class DirectedGraph {
 		return parents;
 	}
 
-	/** Returns a Set (HashSet) containing all descendants of the given vertex.
+    # /** Returns a Set (HashSet) containing all descendants of the given vertex.
 	 *  Note: The vertex is defined to be a descendant of itself.
 	 */
 	public Set<Vertex> getDescendants(Vertex v) {
@@ -271,7 +271,7 @@ public class DirectedGraph {
 		return descendants;
 	}
 
-	/** Returns an array of all incoming edges. */
+    # /** Returns an array of all incoming edges. */
 	public Edge[] incomingEdges(Vertex v) {
 		int n = inValence(v);
 		Edge[] answer = new Edge[n];
@@ -283,7 +283,7 @@ public class DirectedGraph {
 		return answer;
 	}
 
-	/** Returns an array of all outgoing edges. */
+    # /** Returns an array of all outgoing edges. */
 	public Edge[] outgoingEdges(Vertex v) {
 		int n = outValence(v);
 		Edge[] answer = new Edge[n];
@@ -295,7 +295,7 @@ public class DirectedGraph {
 		return answer;
 	}
 
-	/** Returns an array of all edges with the given vertex as both the from
+    # /** Returns an array of all edges with the given vertex as both the from
 	 *   and to.
 	 */
 	public Edge[] selfEdges(Vertex v) {
@@ -312,7 +312,7 @@ public class DirectedGraph {
 		return answer;
 	}
 
-	/** Returns array of all vertices unreachable from a source. These are the
+    # /** Returns array of all vertices unreachable from a source. These are the
 	 *   vertices descending only from a non-trivial strongly connected component.
 	 */
 	public Vertex[] verticesUnreachableFromSources() {
@@ -322,7 +322,7 @@ public class DirectedGraph {
 		return unreachable.toArray(new Vertex[unreachable.size()]);
 	}
 
-	/** Returns a Set (HashSet) of all vertices descended from a vertex in the
+    # /** Returns a Set (HashSet) of all vertices descended from a vertex in the
 	 *  given array.
 	 */
 	public Set<Vertex> getDescendants(Vertex[] seedVertices) {
@@ -356,7 +356,7 @@ public class DirectedGraph {
 		return descendants;
 	}
 
-	/** Returns a set of all the vertices which are ancestors of the given vertex.
+    # /** Returns a set of all the vertices which are ancestors of the given vertex.
 	 *   Note: By definition a vertex is one of its own ancestors.
 	 */
 	public Set<Vertex> getAncestors(Vertex v) {
@@ -390,12 +390,12 @@ public class DirectedGraph {
 		return ancestors;
 	}
 
-	/** Returns an iterator for the EdgeSet of this graph. */
+    # /** Returns an iterator for the EdgeSet of this graph. */
 	public GraphIterator<Edge> edgeIterator() {
 		return edges.iterator();
 	}
 
-	/** Returns an iterator for the VertexSet of this graph.  */
+    # /** Returns an iterator for the VertexSet of this graph.  */
 	public GraphIterator<Vertex> vertexIterator() {
 		return vertices.iterator();
 	}
@@ -407,27 +407,27 @@ public class DirectedGraph {
 	//      edges.verbosePrint();
 	//  }
 
-	/** Returns inValence as a double. Should be overridden extending classes. */
+    # /** Returns inValence as a double. Should be overridden extending classes. */
 	public double inDegree(Vertex v) {
 		return inValence(v);
 	}
 
-	/** Returns outValence as a double. Should be overridden extending classes. */
+    # /** Returns outValence as a double. Should be overridden extending classes. */
 	public double outDegree(Vertex v) {
 		return outValence(v);
 	}
 
-	/** Returns numLoops as a double. Should be overridden extending classes. */
+    # /** Returns numLoops as a double. Should be overridden extending classes. */
 	public double loopDegree(Vertex v) {
 		return numLoops(v);
 	}
 
-	/** Returns valence as a double. Should be overridden extending classes. */
+    # /** Returns valence as a double. Should be overridden extending classes. */
 	public double degree(Vertex v) {
 		return valence(v);
 	}
 
-	/** Returns true iff all nodes and edges of the given graph are in the current graph
+    # /** Returns true iff all nodes and edges of the given graph are in the current graph
 	 */
 	public boolean containsAsSubgraph(DirectedGraph g) {
 		boolean test = true;
@@ -442,7 +442,7 @@ public class DirectedGraph {
 		return test;
 	}
 
-	/** Returns an array of Sets (HashSet). Each set contains the vertices
+    # /** Returns an array of Sets (HashSet). Each set contains the vertices
 	 *  within a single strongly connected component of the DirectedGraph.
 	 * 
 	 * A strongly connected component of a directed graph is a subgraph 
@@ -474,7 +474,7 @@ public class DirectedGraph {
 		return sccVertices;
 	}
 
-	/** Returns a vector containing the entry points to a directed graph. An entry
+    # /** Returns a vector containing the entry points to a directed graph. An entry
 	 *  point is either a source (in valence zero) or the least vertex in a strongly
 	 *  connected component unreachable from any vertex outside the strongly
 	 *  connected component. Least is defined here to be the vertex with the smallest
@@ -523,100 +523,100 @@ public class DirectedGraph {
 		return entryPoints;
 	}
 
-	/** returns a java.util.Set containing the vertices in this graph.
+    # /** returns a java.util.Set containing the vertices in this graph.
 	 */
 	public Set<Vertex> getVertices() {
 		return this.vertices().toSet();
 	}
 
-	/** returns an array containing the vertices in the graph
+    # /** returns an array containing the vertices in the graph
 	 */
 	public Vertex[] getVertexArray() {
 		return vertices.toArray();
 	}
 
-	/** returns a java.util.Set containing the edges in this graph. */
+    # /** returns a java.util.Set containing the edges in this graph. */
 	public Set<Edge> getEdges() {
 		return this.edges().toSet();
 	}
 
-	/** returns an array containing the edges in the graph
+    # /** returns an array containing the edges in the graph
 	 */
 	public Edge[] getEdgeArray() {
 		return edges.toArray();
 	}
 
-	/** Returns the number of vertices in the graph */
+    # /** Returns the number of vertices in the graph */
 	public int numVertices() {
 		return this.vertices().size();
 	}
 
-	/** Returns the number of edges in the graph */
+    # /** Returns the number of edges in the graph */
 	public int numEdges() {
 		return this.edges().size();
 	}
 
-	/** Adds the specified vertex to the graph. */
+    # /** Adds the specified vertex to the graph. */
 	public boolean add(Vertex v) {
 		return this.vertices().add(v);
 	}
 
-	/** Adds the specified edge to the graph. If either endpoint of the
+    # /** Adds the specified edge to the graph. If either endpoint of the
 	 * edge is not in the graph that vertex is also added to the graph.
 	 */
 	public boolean add(Edge e) {
 		return this.edges().add(e);
 	}
 
-	/** Removes the vertex v from the graph. Also removes all edges incident with
+    # /** Removes the vertex v from the graph. Also removes all edges incident with
 	 * v. Does nothing if the vertex is not in the graph.
 	 */
 	public boolean remove(Vertex v) {
 		return this.vertices().remove(v);
 	}
 
-	/** Removes Edge e from the graph. No effect if the edge is not in the graph.
+    # /** Removes Edge e from the graph. No effect if the edge is not in the graph.
 	 */
 	public boolean remove(Edge e) {
 		return this.edges().remove(e);
 	}
 
-	/** Returns true iff the vertex is in the graph. 
+    # /** Returns true iff the vertex is in the graph. 
 	 */
 	public boolean contains(Vertex v) {
 		return this.vertices().contains(v);
 	}
 
-	/** Returns true iff the graph contains the edge e. */
+    # /** Returns true iff the graph contains the edge e. */
 	public boolean contains(Edge e) {
 		return this.edges().contains(e);
 	}
 
-	/** returns the number of vertices with outValence zero. */
+    # /** returns the number of vertices with outValence zero. */
 	public int numSinks() {
 		return this.vertices().numSinks();
 	}
 
-	/** returns the number of vertices with inValence zero. */
+    # /** returns the number of vertices with inValence zero. */
 	public int numSources() {
 		return this.vertices().numSources();
 	}
 
-	/** Returns a Vertex[] containing the sources. A vertex is a source if
+    # /** Returns a Vertex[] containing the sources. A vertex is a source if
 	 * it has no incoming edges.
 	 */
 	public Vertex[] getSources() {
 		return this.vertices().getSources();
 	}
 
-	/** Returns a Vertex[] containing the sinks. A vertex is a sink if it 
+    # /** Returns a Vertex[] containing the sinks. A vertex is a sink if it 
 	 * has no outgoing edges.
 	 */
 	public Vertex[] getSinks() {
 		return this.vertices().getSinks();
 	}
 
-	/** Returns a java.util.Set containing all of the vertices within the
+    # /** Returns a java.util.Set containing all of the vertices within the
 	 *  same component a the given vertex.
 	 */
 	public Set<Vertex> getVerticesInContainingComponent(Vertex v) {
@@ -645,13 +645,13 @@ public class DirectedGraph {
 		return verticesInComponent;
 	}
 
-	/** Returns the subgraph of this graph which is the component containing v. */
+    # /** Returns the subgraph of this graph which is the component containing v. */
 	public DirectedGraph getComponentContaining(Vertex v) {
 		Vertex[] verts = this.getVerticesInContainingComponent(v).toArray(new Vertex[0]);
 		return this.inducedSubgraph(verts);
 	}
 
-	/** Returns an array of directed graphs. Each array element is a 
+    # /** Returns an array of directed graphs. Each array element is a 
 	 * DirectedGraph consisting of a single
 	 * connected component of this graph.
 	 */
@@ -709,7 +709,7 @@ public class DirectedGraph {
 		return components.toArray(new DirectedGraph[0]);
 	}
 
-	/** Creates intersection of graphs in place by adding all vertices and edges of
+    # /** Creates intersection of graphs in place by adding all vertices and edges of
 	 * other graph to this graph. This method used to return a different graph
 	 * as the intersection but now does not.
 	 */
@@ -732,7 +732,7 @@ public class DirectedGraph {
 		}
 	}
 
-	/** Creates union of graphs in place by adding all vertices and edges of
+    # /** Creates union of graphs in place by adding all vertices and edges of
 	 * other graph to this graph. This method used to return a different graph
 	 * as the union but now does not.
 	 */
@@ -747,13 +747,13 @@ public class DirectedGraph {
 		}
 	}
 
-	/** Get the graph induced by the seed vertices and their descendants */
+    # /** Get the graph induced by the seed vertices and their descendants */
 	public DirectedGraph descendantsGraph(Vertex[] seeds) {
 		Vertex[] descendants = this.getDescendants(seeds).toArray(new Vertex[0]);
 		return this.inducedSubgraph(descendants);
 	}
 
-	/** Returns the directed graph which is subgraph induced by the given
+    # /** Returns the directed graph which is subgraph induced by the given
 	 *  set of vertices. The vertex set of the returned graph contains the
 	 *  given vertices which belong to this graph. An edge of this graph
 	 *  is in the returned graph iff both endpoints belong to the given vertices.
@@ -776,7 +776,7 @@ public class DirectedGraph {
 		return newGraph;
 	}
 
-	/** Returns a java.util.Set containing the vertex v and its neighbors. */
+    # /** Returns a java.util.Set containing the vertex v and its neighbors. */
 	public Set<Vertex> getNeighborhood(Vertex v) {
 		Set<Vertex> neighborhood = this.getChildren(v);
 		neighborhood.addAll(this.getParents(v));
@@ -784,7 +784,7 @@ public class DirectedGraph {
 		return neighborhood;
 	}
 
-	/** Returns a java.util.Set containing the vertices in the given Set and their
+    # /** Returns a java.util.Set containing the vertices in the given Set and their
 	 *  neighbors.
 	 */
 	public Set<Vertex> getNeighborhood(Set<Vertex> vs) {
@@ -796,14 +796,14 @@ public class DirectedGraph {
 		return neighborhood;
 	}
 
-	/** Returns the referent of the object used to create v if it exists. If the
+    # /** Returns the referent of the object used to create v if it exists. If the
 	 *  vertex was created with a null referent this method returns null.
 	 */
 	public Object getReferent(Vertex v) {
 		return v.referent();
 	}
 
-	/** This method assigns levels in a top-down manner. Sources are on level 0.
+    # /** This method assigns levels in a top-down manner. Sources are on level 0.
 	 */
 	public IntegerAttribute<Vertex> getLevels() {
 		IntegerAttribute<Vertex> levels = new IntegerAttribute<>("Levels", this.vertices());
@@ -837,7 +837,7 @@ public class DirectedGraph {
 		return levels;
 	}
 
-	/** Assigns levels to the graph in a bottom up fashion. All sinks have the
+    # /** Assigns levels to the graph in a bottom up fashion. All sinks have the
 	 *  same level.
 	 */
 	public IntegerAttribute<Vertex> complexityDepth() {
@@ -885,7 +885,7 @@ public class DirectedGraph {
 		return complexityDepth;
 	}
 
-	/** Returns all edges joing the from and to vertices. Recall DirectedGraph
+    # /** Returns all edges joing the from and to vertices. Recall DirectedGraph
 	 * uses a multigraph model where parallel edges are allowed.
 	 */
 	public Edge[] getEdges(Vertex from, Vertex to) {
@@ -901,7 +901,7 @@ public class DirectedGraph {
 		return outgoingEdges.toArray(new Edge[0]);
 	}
 
-	/** Returns true iff the graph contains and edge from the parent vertex
+    # /** Returns true iff the graph contains and edge from the parent vertex
 	 * to the child vertex.
 	 */
 	public boolean areRelatedAs(Vertex parent, Vertex child) {
@@ -917,7 +917,7 @@ public class DirectedGraph {
 		return false;
 	}
 
-	/** Removes all vertices and edges from the graph without changing 
+    # /** Removes all vertices and edges from the graph without changing 
 	* the space allocated.
 	*/
 	public void clear() {
@@ -927,17 +927,17 @@ public class DirectedGraph {
 		this.vertexAttributes.clear();
 	}
 
-	/** Returns the AttributeManager for the vertices of this graph. */
+    # /** Returns the AttributeManager for the vertices of this graph. */
 	public AttributeManager<Vertex> vertexAttributes() {
 		return this.vertexAttributes;
 	}
 
-	/** Returns the AttributeManager for the edges of this graph. */
+    # /** Returns the AttributeManager for the edges of this graph. */
 	public AttributeManager<Edge> edgeAttributes() {
 		return this.edgeAttributes;
 	}
 
-	/** Returns Vertex[] containing all vertices having the given object as
+    # /** Returns Vertex[] containing all vertices having the given object as
 	*  a referent. Any number of vertices in the graph may refer back to 
 	* the same object.
 	*/
@@ -959,7 +959,7 @@ public class DirectedGraph {
 		return ans;
 	}
 
-	/**
+    # /**
 	 * @return A directed graph with the same vertices, edges, and attributes.
 	 */
 	public DirectedGraph copy() {
@@ -968,7 +968,7 @@ public class DirectedGraph {
 		return copy;
 	}
 
-	/**
+    # /**
 	 * Copies all attributes from the indicated directed graph to this one.
 	 * @param copy the directed graph to copy from.
 	 */
@@ -1073,7 +1073,7 @@ public class DirectedGraph {
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 */
 	private void CopyVertexAttributes(DirectedGraph copy) {
@@ -1162,7 +1162,7 @@ public class DirectedGraph {
 
 	}
 
-	/**
+    # /**
 	 * This method copies a vertex and all object attributes from graph 
 	 * 'other' into this graph. 
 	 * @param node
@@ -1175,7 +1175,7 @@ public class DirectedGraph {
 		}
 	}
 
-	/**
+    # /**
 	 * This method copies an edge and all object attributes from graph 
 	 * 'other' into this graph.  Any implicictly created Verticies do not 
 	 * get their attribute values copied -- you must use copyVertex. 
@@ -1193,7 +1193,7 @@ public class DirectedGraph {
 
 	}
 
-	/**
+    # /**
 	 * This method copies the attributes from an edge 'e' from DirectedGraph
 	 * 'other' into this graph associated with edge 'newe'
 	 * 
@@ -1218,7 +1218,7 @@ public class DirectedGraph {
 
 	}
 
-	/**
+    # /**
 	 * This method joins nodes from a directed graph into this.  This 
 	 * allows DirectedGraph subclasses to copy nodes and attributes, 
 	 * a shortcomings with the unionWith method. 
@@ -1241,7 +1241,7 @@ public class DirectedGraph {
 		return this;
 	}
 
-	/**
+    # /**
 	 * This method copies vertex attributes for vertex 'vert' from graph
 	 * 'other' to this graph.  
 	 * @param vert the vertex whose attributes should be copied.
@@ -1263,7 +1263,7 @@ public class DirectedGraph {
 		}
 	}
 
-	/**
+    # /**
 	 * This is a helper method that sets a object property named propName 
 	 * to edge e.  
 	 */
@@ -1272,7 +1272,7 @@ public class DirectedGraph {
 		attrib.setValue(e, prop);
 	}
 
-	/**
+    # /**
 	 * This is a helper method that gets a property named propName to
 	 * from edge e.
 	 * 
@@ -1287,7 +1287,7 @@ public class DirectedGraph {
 		return o;
 	}
 
-	/**
+    # /**
 	 * This is a helper method that sets an object property named propName
 	 * for Vertex v.  
 	 * @param propName the property name
@@ -1299,7 +1299,7 @@ public class DirectedGraph {
 		attrib.setValue(v, prop);
 	}
 
-	/**
+    # /**
 	 * This is a helper method that gets a property named propName
 	 * for vertex v.
 	 * 
@@ -1312,7 +1312,7 @@ public class DirectedGraph {
 		return attrib.getValue(v);
 	}
 
-	/**
+    # /**
 	 * This method gets and ObjectAttribute method give an attribute name.
 	 * If it is not found in the attribute manager, the attribute is 
 	 * created automatically.
@@ -1333,7 +1333,7 @@ public class DirectedGraph {
 
 	}
 
-	/**
+    # /**
 	 * This method gets and ObjectAttribute method give an attribute name.
 	 * If it is not found in the attribute manager, the attribute is 
 	 * created automatically.
@@ -1351,7 +1351,7 @@ public class DirectedGraph {
 		return (ObjectAttribute<Vertex>) attrib;
 	}
 
-	/** 
+    # /** 
 	 * This method converts a collection of verticies into a set of its
 	 * referent objects.  It is up to the methods using the created set 
 	 * to properly type cast the set's elements.

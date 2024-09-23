@@ -86,7 +86,7 @@ public class AutoVersionTrackingTask extends Task {
 	private String statusMsg = null;
 	private static int NUM_CORRELATORS = 8;
 
-	/**
+    # /**
 	 * Constructor for a modal/blocking AutoVersionTrackingTask
 	 *
 	
@@ -377,7 +377,7 @@ public class AutoVersionTrackingTask extends Task {
 
 	}
 
-	/**
+    # /**
 	 * Method to create implied matches for the existing applied matches in the current session
 	 * @param applyGoodMatches if true, create applied matches for "good" implied matches based on
 	 * votes/conflict information. For all the applied implied matches, rerun the creation of 
@@ -483,7 +483,7 @@ public class AutoVersionTrackingTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to find good implied matches based on number of votes and conflicts
 	 * @param matchesToProcess the set of matches to process for good implied matches
 	 * @param minVoteCountNeeded the minimum vote count needed for a "good" implied match
@@ -565,7 +565,7 @@ public class AutoVersionTrackingTask extends Task {
 		return numFunctionMatches;
 	}
 
-	/**
+    # /**
 	 * Runs the given version tracking (VT) correlator and applies the returned matches meeting the
 	 * given score and confidence thresholds and are not otherwise blocked.
 	 * @param factory The correlator factory used to create and run the desired VT correlator.
@@ -594,7 +594,7 @@ public class AutoVersionTrackingTask extends Task {
 
 	}
 
-	/**
+    # /**
 	 * Runs the Duplicate Exact Function match version tracking (VT) correlator then determines
 	 * correct matches based on matching operand values. Those matches are accepted and other
 	 * possible matches for those functions are blocked. Markup from accepted source functions
@@ -623,7 +623,7 @@ public class AutoVersionTrackingTask extends Task {
 		return hasMarkupErrors;
 	}
 
-	/**
+    # /**
 	 * Called for all correlators that are run by this command except the duplicate function
 	 * instruction match correlator.
 	 * @param matches The set of matches to try to accept
@@ -680,7 +680,7 @@ public class AutoVersionTrackingTask extends Task {
 
 	}
 
-	/**
+    # /**
 	 * This method tries to set a match association as accepted.
 	 * @param association The match association between two match items.
 	 * @return true if match is accepted and false if an exception occurred and the match couldn't be
@@ -699,7 +699,7 @@ public class AutoVersionTrackingTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Method to test whether any related associations (ie associations with either the same source 
 	 * or the same destination address) have already been accepted
 	 * @param association the given association (src/dest match pair)
@@ -737,7 +737,7 @@ public class AutoVersionTrackingTask extends Task {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to accept matches and apply markup for duplicate function instruction matches with 
 	 * matching operands if they are a unique match within their associated subset. To explain in 
 	 * more depth, the duplicate function instruction correlator returns a set of function matches 
@@ -823,7 +823,7 @@ public class AutoVersionTrackingTask extends Task {
 
 	}
 
-	/**
+    # /**
 	 * Get the entire set of related duplicate functions with the same instructions
 	 * @param source the given source address
 	 * @param destination the given destination address
@@ -855,7 +855,7 @@ public class AutoVersionTrackingTask extends Task {
 		return allRelatedAssociations;
 	}
 
-	/**
+    # /**
 	 * Given an association, get the VTMatch from the given matchSet (ie set of matches from a 
 	 * particular correlator). There may be multiple correlators that have found the same match. 
 	 * This is making sure the match is from the desired correlator.
@@ -894,7 +894,7 @@ public class AutoVersionTrackingTask extends Task {
 	}
 
 
-	/**
+    # /**
 	 * From the given related association, ie a group of src/dest pairs of functions with identical
 	 *  instructions, use operand information to find any unique matches in the set. 
 	 * @param relatedAssociations group of src/dest pairs of functions with identical instructions
@@ -929,7 +929,7 @@ public class AutoVersionTrackingTask extends Task {
 		return uniqueAssociations;
 	}
 
-	/**
+    # /**
 	 * Method to use the given function to operand maps, for sets of source and destination functions 
 	 * with identical instructions, to identify any unique src/dst matches within the set. 
 	 * instructions
@@ -980,7 +980,7 @@ public class AutoVersionTrackingTask extends Task {
 		return uniqueAssociations;
 	}
 
-	/**
+    # /**
 	 * Create an operand map for each source or destination function in the given associations
 	 * @param associations The collection of associations (src/dest function pairs)
 	 * @param source if true use the source function, if false use the destination function
@@ -1033,7 +1033,7 @@ public class AutoVersionTrackingTask extends Task {
 	}
 
 
-	/**
+    # /**
 	 * Using the given source function's map and a list of destination function maps, and a list 
 	 * of destination functions to omit because they already have found matches, try to find a 
 	 * single match using matching operand info. 
@@ -1134,7 +1134,7 @@ public class AutoVersionTrackingTask extends Task {
 
 	}
 
-	/**
+    # /**
 	 * Method to determine if the two given operands are equivalent Address operands
 	 * @param op1 the first operand
 	 * @param op2 the second operand
@@ -1170,7 +1170,7 @@ public class AutoVersionTrackingTask extends Task {
 
 	}
 
-	/**
+    # /**
 	 * Method to check to see if both addresses have functions at them or the same data type at them
 	 * @param addr1 the first Address
 	 * @param addr2 the second Address
@@ -1206,7 +1206,7 @@ public class AutoVersionTrackingTask extends Task {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Method to determine if the given src or dest addresses have existing association 
 	 * @param source the source address
 	 * @param dest the destination address
@@ -1244,7 +1244,7 @@ public class AutoVersionTrackingTask extends Task {
 		return destinationProgram.getFunctionManager().getFunctionAt(address);
 	}
 
-	/**
+    # /**
 	 * Method to create a map of the given functions scalar operands and address reference operands. 
 	 * The map keys will be offsets from the top of the function to the instruction containing the
 	 *  operand(s).
@@ -1296,7 +1296,7 @@ public class AutoVersionTrackingTask extends Task {
 		return offsetToOperandsMap;
 	}
 
-	/**
+    # /**
 	 * Method to create offset/operand mapping for each function in match set
 	 * if more than one identical offset/operand mapping in src or dest piles then remove
 	 * if no operands remove
@@ -1335,7 +1335,7 @@ public class AutoVersionTrackingTask extends Task {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Try to accept the given match and if can accept the match try to apply its markup
 	 * @param match The match to try and accept and apply markup to
 	 * @param monitor Allow user to cancel
@@ -1384,7 +1384,7 @@ public class AutoVersionTrackingTask extends Task {
 		return statusMsg;
 	}
 
-	/** A task monitor that allows us to control the message content and the progress */
+    # /** A task monitor that allows us to control the message content and the progress */
 	private class SubTaskMonitor extends WrappingTaskMonitor {
 
 		private String prefix;

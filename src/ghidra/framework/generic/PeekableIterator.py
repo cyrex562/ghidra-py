@@ -25,7 +25,7 @@ import java.util.NoSuchElementException;
  */
 public interface PeekableIterator<T> extends Iterator<T> {
 
-	/**
+    # /**
 	 * Returns the item that would be returned by calling {@link #next()}, but does not 
 	 * increment the iterator as <code>next</code> would.
 	 * 

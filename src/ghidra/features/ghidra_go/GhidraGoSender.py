@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.go;
 
 import java.io.FileOutputStream;
-import java.io.IOException;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.UUID;
@@ -42,7 +42,7 @@ public class GhidraGoSender extends GhidraGoIPC {
 		// empty
 	}
 
-	/**
+    # /**
 	 * performs the given action once the sender lock has been acquired. Using this method ensures
 	 * only one sender will perform the given action.
 	 * @param waitForLock whether to block until the lock is available
@@ -55,7 +55,7 @@ public class GhidraGoSender extends GhidraGoIPC {
 		return GhidraGoIPC.doLockedAction(senderLockPath, waitForLock, action);
 	}
 
-	/**
+    # /**
 	 * Send the url to an existing, listening Ghidra
 	 * @param url a valid {@link GhidraURL} in string form for a remote Ghidra program. An error is 
 	 * displayed if the url is null.
@@ -91,7 +91,7 @@ public class GhidraGoSender extends GhidraGoIPC {
 
 	}
 
-	/**
+    # /**
 	 * waits for the file located at the given file path to be deleted.
 	 * @param filePath the path to the file to wait for deletion of
 	 * @throws StopWaitingException in the event the stop waiting dialog is shown and answered No.
@@ -112,7 +112,7 @@ public class GhidraGoSender extends GhidraGoIPC {
 		}
 	}
 
-	/**
+    # /**
 	 * wait for a Ghidra to be listening and ready.
 	 * @throws StopWaitingException in the event waiting for a listener was stopped
 	 */
@@ -125,7 +125,7 @@ public class GhidraGoSender extends GhidraGoIPC {
 		}
 	}
 
-	/**
+    # /**
 	 * wait for a Ghidra to be listening and ready.
 	 * @param p ghidraRun process that is being waited for in the event that GhidraGo
 	 * started Ghidra

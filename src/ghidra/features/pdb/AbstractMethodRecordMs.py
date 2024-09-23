@@ -32,7 +32,7 @@ public abstract class AbstractMethodRecordMs extends AbstractParsableItem {
 	protected RecordNumber procedureRecordNumber;
 	protected long optionalOffset;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -43,7 +43,7 @@ public abstract class AbstractMethodRecordMs extends AbstractParsableItem {
 		this.pdb = pdb;
 	}
 
-	/**
+    # /**
 	 * Returns the attributes of this procedure
 	 * @return the attributes
 	 */
@@ -51,7 +51,7 @@ public abstract class AbstractMethodRecordMs extends AbstractParsableItem {
 		return attributes;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the data type (?) for this procedure
 	 * @return the record number
 	 */
@@ -59,7 +59,7 @@ public abstract class AbstractMethodRecordMs extends AbstractParsableItem {
 		return procedureRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the offset of the procedure in the VFTable if intro/virtual. Value of -1 means
 	 *  there was not a value
 	 * @return the offset

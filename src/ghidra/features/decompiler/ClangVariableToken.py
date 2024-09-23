@@ -163,7 +163,7 @@ public class ClangVariableToken extends ClangToken {
 		super.decode(decoder, pfactory);
 	}
 
-	/**
+    # /**
 	 * Get the storage address of the variable, if any.
 	 * The variable may be directly referenced by this token, or indirectly referenced as a point.
 	 * @param addrFactory is the factory used to construct the Address
@@ -181,7 +181,7 @@ public class ClangVariableToken extends ClangToken {
 		return storageAddress;
 	}
 
-	/**
+    # /**
 	 * Find the HighSymbol the decompiler associates with a specific address.
 	 * @param addr is the specific address
 	 * @param highFunction is the decompiler results in which to search for the symbol

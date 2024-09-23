@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import java.util.*;
@@ -30,24 +30,24 @@ import ghidra.util.task.TaskMonitor;
 import ghidra.util.task.TaskMonitorAdapter;
 
 # /**
- * <CODE>PartitionCodeSubModel</CODE> (Model-P) defines subroutines which do not share code with
- * other subroutines and may have one or more entry points.
- * Entry points represent anyone of a variety of flow entries, including a source, called, jump or
- * fall-through entry point.
- * <P>
- * MODEL-P is the answer to those who always want to be able to know what subroutine
- * a given instruction is in, but also do not want the subroutine to have multiple
- * entry points.  When a model-M subroutine has multiple entry points,
- * that set of code will necessarily consist of several model-P subroutines.  When
- * a model-M subroutine has a single entry point, it will consist of a single model-P subroutine
- * which has the same address set and entry point.
- *
- * @see ghidra.program.model.block.CodeBlockModel
- *
- * 
- *
- * Created February 7, 2002.
- */
+# * <CODE>PartitionCodeSubModel</CODE> (Model-P) defines subroutines which do not share code with
+# * other subroutines and may have one or more entry points.
+# * Entry points represent anyone of a variety of flow entries, including a source, called, jump or
+# * fall-through entry point.
+# * <P>
+# * MODEL-P is the answer to those who always want to be able to know what subroutine
+# * a given instruction is in, but also do not want the subroutine to have multiple
+# * entry points.  When a model-M subroutine has multiple entry points,
+# * that set of code will necessarily consist of several model-P subroutines.  When
+# * a model-M subroutine has a single entry point, it will consist of a single model-P subroutine
+# * which has the same address set and entry point.
+# *
+# * @see ghidra.program.model.block.CodeBlockModel
+# *
+# * 
+# *
+# * Created February 7, 2002.
+# */
 public class PartitionCodeSubModel implements SubroutineBlockModel {
 
 	public static final String NAME = "Partitioned Code";
@@ -68,7 +68,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 	private AttributeManager<?> vertexAttributes;
 	private IntegerAttribute<Vertex> entAttribute;
 
-	/**
+    # /**
 	 *  Construct a Model-P subroutine on a program.
 	 *
 	 * @param program program to create blocks from.
@@ -77,7 +77,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		this(program, false);
 	}
 
-	/**
+    # /**
 	 *  Construct a Model-P subroutine on a program.
 	 *
 	 * @param program program to create blocks from.
@@ -90,7 +90,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		modelM = new MultEntSubModel(program, includeExternals);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getCodeBlockAt(ghidra.program.model.address.Address, ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -112,7 +112,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get all the Code Blocks containing the address.
 	 * For model-P, there is only one.
 	 *
@@ -161,7 +161,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return emptyArray;
 	}
 
-	/**
+    # /**
 	 * Get the (first) Model-P subroutine that contains the address.
 	 * This is equivalent to getCodeBlocksContaining(addr) except that
 	 * it doesn't return an array since model-P subroutines don't share code.
@@ -182,7 +182,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getCodeBlocks(ghidra.util.task.TaskMonitor)
 	 */
 	@Override
@@ -190,7 +190,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return new PartitionCodeSubIterator(this, monitor);
 	}
 
-	/**
+    # /**
 	 * Get an iterator over CodeBlocks which overlap the specified address set.
 	 *
 	 * @param addrSet   an address set within program
@@ -201,7 +201,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return new PartitionCodeSubIterator(this, addrSet, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getProgram()
 	 */
 	@Override
@@ -209,7 +209,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return program;
 	}
 
-	/**
+    # /**
 	 * Returns the listing associated with this block model.
 	 * @return the listing associated with this block model
 	 */
@@ -217,7 +217,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return listing;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getName(ghidra.program.model.block.CodeBlock)
 	 */
 	@Override
@@ -253,7 +253,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return "SOURCE_SUB" + start.toString();
 	}
 
-	/**
+    # /**
 	 * Return in general how things flow out of this node.
 	 * This method exists for the SIMPLEBLOCK model.
 	 *
@@ -299,7 +299,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return RefType.TERMINATOR;
 	}
 
-	/**
+    # /**
 	 *  Get an iterator over source blocks flowing into this block.
 	 *
 	 * @param block code block to get the source iterator for.
@@ -317,7 +317,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return new SubroutineSourceReferenceIterator(block, monitor);
 	}
 
-	/**
+    # /**
 	 * Get number of block source references flowing into this block.
 	 *
 	 * @param block code block to get the source iterator for.
@@ -334,7 +334,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return SubroutineSourceReferenceIterator.getNumSources(block, monitor);
 	}
 
-	/**
+    # /**
 	 *  Get an iterator over destination blocks flowing from this block.
 	 *
 	 * @param block code block to get the destination block iterator for.
@@ -352,7 +352,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return new SubroutineDestReferenceIterator(block, monitor);
 	}
 
-	/**
+    # /**
 	 * Get number of destination references flowing out of this subroutine (block).
 	 * All Calls from this block, and all external FlowType block references
 	 * from this block are counted.
@@ -371,7 +371,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return SubroutineDestReferenceIterator.getNumDestinations(block, monitor);
 	}
 
-	/**
+    # /**
 	 *  Compute an address set that represents all the addresses contained
 	 *  in all instructions that are part of this block
 	 *
@@ -385,7 +385,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 //        return new AddressSet((AddressSetView) block);
 //    }
 
-	/**
+    # /**
 	 * Create a new Subroutine which has an address set and entry point.
 	 * @param  set the address set contained within the subroutine/block.
 	 * @param  entryPt the entry point address.
@@ -406,7 +406,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return sub;
 	}
 
-	/**
+    # /**
 	 * Generate a graph of a Model-M subroutine.  This graph will facilitate the
 	 * Model-P algorythm as performed in the partitionGraph() method.
 	 *
@@ -492,7 +492,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Partition the Model-M subroutine graph using the Model-P algorythm.
 	 * The method createBlockGraph() must first be called to generate the
 	 * initial Model-M graph.
@@ -583,7 +583,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Extract Model-P subroutines from Model-M subroutine graph following
 	 * call to partitionGraph().
 	 * @param monitor task monitor which allows user to cancel operation.
@@ -640,7 +640,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return subs;
 	}
 
-	/**
+    # /**
 	 * Generate a list of Model-P subroutines contained within a single Model-M subroutine.
 	 * @param modelMSub a valid Model-M subroutine block.
 	 * @return array of Model-P subroutines.
@@ -653,7 +653,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return fromGraphToSubs(monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getBasicBlockModel()
 	 */
 	@Override
@@ -661,7 +661,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return modelM.getBasicBlockModel();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getName()
 	 */
 	@Override
@@ -669,7 +669,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return NAME;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.SubroutineBlockModel#getBaseSubroutineModel()
 	 */
 	@Override
@@ -677,7 +677,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return modelM;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#allowsBlockOverlap()
 	 */
 	@Override
@@ -685,7 +685,7 @@ public class PartitionCodeSubModel implements SubroutineBlockModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#externalsIncluded()
 	 */
 	@Override

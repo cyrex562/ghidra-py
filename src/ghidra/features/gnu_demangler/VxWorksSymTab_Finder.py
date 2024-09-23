@@ -602,7 +602,7 @@ public class VxWorksSymTab_Finder extends GhidraScript {
 		*/
 	}
 
-	/**
+    # /**
 	 * Look before/after the table to see if there is a size value there and mark it if it agrees with TableLen
 	 * 
 	 * @param symTbl

@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api.db;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 

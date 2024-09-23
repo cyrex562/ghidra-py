@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.jdi.rmi.jpda;
 
-import java.io.IOException;
+
 import java.lang.ProcessHandle.Info;
 import java.math.BigInteger;
 import java.net.InetSocketAddress;

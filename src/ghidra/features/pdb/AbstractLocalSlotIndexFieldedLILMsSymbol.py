@@ -27,7 +27,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
 public abstract class AbstractLocalSlotIndexFieldedLILMsSymbol
 		extends AbstractLocalIntermediateLanguageSymbol {
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

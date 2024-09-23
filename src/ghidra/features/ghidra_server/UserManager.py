@@ -15,7 +15,7 @@
  */
 package ghidra.server;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -68,7 +68,7 @@ public class UserManager {
 	private HashMap<X500Principal, UserEntry> dnLookupMap = new HashMap<>();
 	private long lastUserListChange;
 
-	/**
+    # /**
 	 * Construct server user manager
 	 * @param repositoryMgr repository manager
 	 * @param enableLocalPasswords if true user passwords will be maintained 
@@ -141,7 +141,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the SSH public key file for the specified user
 	 * if it exists.
 	 * @param username user name/SID
@@ -158,7 +158,7 @@ public class UserManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Add a user.
 	 * @param username user name/SID
 	 * @param passwordHash MD5 hash of initial password or null if explicit password reset required
@@ -189,7 +189,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Add a user.
 	 * @param username user name/SID
 	 * @throws DuplicateNameException if username already exists
@@ -199,7 +199,7 @@ public class UserManager {
 		addUser(username, (char[]) null);
 	}
 
-	/**
+    # /**
 	 * Add a user with optional salted password hash.
 	 * @param username user name/SID
 	 * @param saltedPasswordHash optional user password hash (may be null)
@@ -214,7 +214,7 @@ public class UserManager {
 		addUser(username, saltedPasswordHash, null);
 	}
 
-	/**
+    # /**
 	 * Add a user.
 	 * @param username user name/SID
 	 * @param x500User X500 distinguished name for user (may be null)
@@ -227,7 +227,7 @@ public class UserManager {
 		addUser(username, passwordHash, x500User);
 	}
 
-	/**
+    # /**
 	 * Returns the X500 distinguished name for the specified user.
 	 * @param username user name/SID
 	 * @return X500 distinguished name
@@ -242,7 +242,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the username associated with the specified distinguished name
 	 * @param x500User a user's X500 distinguished name
 	 * @return username or null if not found
@@ -254,7 +254,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the X500 distinguished name for a user
 	 * @param username user name/SID
 	 * @param x500User X500 distinguished name
@@ -328,7 +328,7 @@ public class UserManager {
 		return c <= 'f';
 	}
 
-	/**
+    # /**
 	 * Sets the local password hash for a user
 	 * @param username user name/SID
 	 * @param saltedSHA256PasswordHash 4-character salt followed by 64-hex digit SHA256 password hash for new password
@@ -363,7 +363,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if local passwords are in use and can be changed by the user.
 	 * See {@link #setPassword(String, char[], boolean)}.
 	 * @param username user name/SID
@@ -376,7 +376,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the amount of time in milliseconds until the 
 	 * user's password will expire.
 	 * @param username user name
@@ -395,7 +395,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the amount of time in milliseconds until the 
 	 * user's password will expire.
 	 * @param user user entry
@@ -419,7 +419,7 @@ public class UserManager {
 		return timeRemaining;
 	}
 
-	/**
+    # /**
 	 * Reset the local password to the 'changeme' for the specified user.
 	 * @param username user name/SID
 	 * @param saltedPasswordHash optional user password hash (may be null)
@@ -438,7 +438,7 @@ public class UserManager {
 		return HashUtilities.getSaltedHash(HashUtilities.SHA256_ALGORITHM, DEFAULT_PASSWORD);
 	}
 
-	/**
+    # /**
 	 * Remove the specified user from the server access list
 	 * @param username user name/SID
 	 * @return true if existing user removed, else false if not found
@@ -460,7 +460,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get list of all users known to server.
 	 * @return list of known users
 	 */
@@ -476,7 +476,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear all local user passwords which have expired.
 	 * @throws IOException if error occurs while updating user file
 	 */
@@ -501,7 +501,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Read user data from file if the timestamp on the file has changed.
 	 * 
 	 * @throws IOException if error occurs while updating user file
@@ -527,7 +527,7 @@ public class UserManager {
 		lastUserListChange = lastMod;
 	}
 
-	/**
+    # /**
 	 * Print to stdout the set of user names with access to the specified repositories root.
 	 * This is intended to be used with the svrAdmin console command
 	 * @param repositoriesRootDir repositories root directory
@@ -616,7 +616,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Write user data to file.
 	 * @throws IOException if error occurs while updating user file
 	 */
@@ -648,7 +648,7 @@ public class UserManager {
 		lastUserListChange = userFile.lastModified();
 	}
 
-	/**
+    # /**
 	 * Returns true if the specified user is known to server.
 	 * @param username user name/SID
 	 * @return true if user is known to server
@@ -659,7 +659,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Verify that the specified password corresponds to the local
 	 * password set for the specified user.
 	 * @param username user name/SID
@@ -715,7 +715,7 @@ public class UserManager {
 		}
 	}
 
-	/**
+    # /**
 	 * <code>UserEntry</code> class used to hold user data
 	 */
 	private static class UserEntry {
@@ -733,7 +733,7 @@ public class UserManager {
 		return dnLogOut;
 	}
 
-	/**
+    # /**
 	 * Log a new or unknown X500 principal to facilitate future addition to
 	 * user file.
 	 * @param username user name/SID which corresponds to unknown principal
@@ -754,7 +754,7 @@ public class UserManager {
 	private static final Pattern VALID_USERNAME_REGEX =
 		Pattern.compile("[a-zA-Z0-9][a-zA-Z0-9.\\-_/\\\\]*");
 
-	/**
+    # /**
 	 * Ensures a name only contains valid characters and meets length limitations.
 	 * 
 	 * @param s name string

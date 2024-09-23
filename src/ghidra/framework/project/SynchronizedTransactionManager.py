@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.framework.model.*;
@@ -212,7 +212,7 @@ class SynchronizedTransactionManager extends AbstractTransactionManager {
 		return returnedTransaction;
 	}
 
-	/**
+    # /**
 	 * Returns the undo stack depth.
 	 * (The number of items on the undo stack)
 	 * This method is for JUnits.

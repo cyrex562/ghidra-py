@@ -18,7 +18,7 @@ package ghidra.app.decompiler;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 
@@ -50,7 +50,7 @@ public class DecompileCallback {
 
 	public final static int MAX_SYMBOL_COUNT = 16;
 
-	/**
+    # /**
 	 * Data returned for a query about strings
 	 */
 	public static class StringData {
@@ -98,7 +98,7 @@ public class DecompileCallback {
 		debug = null;
 	}
 
-	/**
+    # /**
 	 * Establish function and debug context for next decompilation
 	 * 
 	 * @param func is the function to be decompiled
@@ -123,14 +123,14 @@ public class DecompileCallback {
 		}
 	}
 
-	/**
+    # /**
 	 * @return the last message from the decompiler
 	 */
 	public String getNativeMessage() {
 		return nativeMessage;
 	}
 
-	/**
+    # /**
 	 * Cache a message returned by the decompiler process
 	 * 
 	 * @param msg is the message
@@ -139,7 +139,7 @@ public class DecompileCallback {
 		nativeMessage = msg;
 	}
 
-	/**
+    # /**
 	 * Get bytes from the program's memory image.
 	 * Any exceptions are caught, resulting in null being returned. The decompiler treats a null
 	 * as a DataUnavailError but will continue to process the function.
@@ -180,7 +180,7 @@ public class DecompileCallback {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Collect any/all comments for the function starting at the indicated
 	 * address.  Filter based on selected comment types.
 	 * 
@@ -202,7 +202,7 @@ public class DecompileCallback {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate p-code ops for the instruction at the given address.
 	 * Any exceptions are caught, resulting in an empty result. The decompiler interprets these
 	 * as a BadDataError, but will continue to process the function.
@@ -244,7 +244,7 @@ public class DecompileCallback {
 		resultEncoder.clear();	// Make sure the result is empty
 	}
 
-	/**
+    # /**
 	 * Encode a list of pcode, representing an entire Instruction, to the stream
 	 * 
 	 * @param encoder is the stream encoder
@@ -276,7 +276,7 @@ public class DecompileCallback {
 		encoder.closeElement(ELEM_INST);
 	}
 
-	/**
+    # /**
 	 * Generate p-code ops for a named injection payload
 	 * @param nm is the name of the payload
 	 * @param paramDecoder contains the context
@@ -341,7 +341,7 @@ public class DecompileCallback {
 		}
 	}
 
-	/**
+    # /**
 	 * Look up details of a specific constant pool reference
 	 * @param refs is the constant id (which may consist of multiple integers)
 	 * @param resultEncoder will contain the reference details
@@ -421,7 +421,7 @@ public class DecompileCallback {
 		throw new UnknownInstructionException("Invalid instruction address (improperly aligned)");
 	}
 
-	/**
+    # /**
 	 * Return the first symbol name at the given address
 	 * @param addr is the given address
 	 * @return the symbol or null if no symbol is found
@@ -478,7 +478,7 @@ public class DecompileCallback {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Decide if a given name is used by any namespace between a starting namespace
 	 * and a stopping namespace.  I.e. check for a name collision along a specific namespace path.
 	 * Currently, Ghidra is inefficient at calculating this perfectly, so this routine calculates
@@ -532,7 +532,7 @@ public class DecompileCallback {
 		return (count > MAX_SYMBOL_COUNT);
 	}
 
-	/**
+    # /**
 	 * Write a description of the formal namespace path to the given namespace
 	 * @param id is the ID of the given namespace
 	 * @param resultEncoder is where to write the encoded result
@@ -561,7 +561,7 @@ public class DecompileCallback {
 		}
 	}
 
-	/**
+    # /**
 	 * Encode comments of a specific type to stream for a given address set.  Comments are
 	 * collected from the listing.  The encoding associates the comment both with the address where
 	 * it was placed, but also with the (entry point) address of the function containing it.
@@ -640,7 +640,7 @@ public class DecompileCallback {
 		encoder.closeElement(ELEM_COMMENTDB);
 	}
 
-	/**
+    # /**
 	 * Describe data or functions at the given address; either function, reference, data, or hole.
 	 * Called by the native decompiler to query the GHIDRA database about any
 	 * symbols at the given address.
@@ -675,7 +675,7 @@ public class DecompileCallback {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a description of an external reference at the given address
 	 * @param addr is the given address
 	 * @param resultEncoder will contain the resulting description
@@ -729,7 +729,7 @@ public class DecompileCallback {
 		encodeResult(resultEncoder, funcSymbol, namespc);
 	}
 
-	/**
+    # /**
 	 * Get a description of a data-type given its name and type id
 	 * @param name is the name of the data-type
 	 * @param id is the type id
@@ -747,7 +747,7 @@ public class DecompileCallback {
 		}
 	}
 
-	/**
+    # /**
 	 * Return a description of the register with the given name
 	 * @param name is the given name
 	 * @param resultEncoder is where to write the description
@@ -761,7 +761,7 @@ public class DecompileCallback {
 		encodeRegister(resultEncoder, reg);
 	}
 
-	/**
+    # /**
 	 * Given a storage location, return the register name for that location, or null if there
 	 * is no register there.
 	 * @param addr is the starting address of the storage location
@@ -776,7 +776,7 @@ public class DecompileCallback {
 		return reg.getName();
 	}
 
-	/**
+    # /**
 	 * Get "tracked" register values, constant values associated with a specific register at
 	 * a specific point in the code.
 	 * @param addr is the "point" in the code to look for tracked values
@@ -794,7 +794,7 @@ public class DecompileCallback {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the name of a user op given its index
 	 * @param index is the given index
 	 * @return the userop name or null
@@ -825,7 +825,7 @@ public class DecompileCallback {
 		encoder.closeElement(ELEM_DOC);
 	}
 
-	/**
+    # /**
 	 * Encode a global variable to the stream
 	 * @param encoder is the stream encoder
 	 * @param data describes the global variable
@@ -862,7 +862,7 @@ public class DecompileCallback {
 		encoder.closeElement(ELEM_ADDR);
 	}
 
-	/**
+    # /**
 	 * Encode a description of a non-data symbol, probably a code label, to the stream
 	 * 
 	 * @param encoder is the stream encoder
@@ -875,7 +875,7 @@ public class DecompileCallback {
 		encodeResult(encoder, labelSymbol, namespc);
 	}
 
-	/**
+    # /**
 	 * This function deals with the vagaries of the getMappedSymbols
 	 * interface when the queried address is in the body of a function.
 	 * Basically, if the address is the entry point of the function, all the
@@ -979,7 +979,7 @@ public class DecompileCallback {
 		encoder.closeElement(ELEM_HOLE);
 	}
 
-	/**
+    # /**
 	 * Calculate the beginning and ending address of the biggest region around
 	 * addr that does not contain any symbol.
 	 * 
@@ -1057,7 +1057,7 @@ public class DecompileCallback {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Return the global object being referred to by addr
 	 * 
 	 * @param addr = Address being queried
@@ -1108,7 +1108,7 @@ public class DecompileCallback {
 		return listing.getFunctionAt(addr);
 	}
 
-	/**
+    # /**
 	 * Return true if there are no "replacement" characters in the string
 	 * @param string is the string to test
 	 * @return true if no replacements
@@ -1124,7 +1124,7 @@ public class DecompileCallback {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Check for a string at the given address and return a UTF8 encoded byte array.
 	 * If there is already data present at the address, use this to determine the
 	 * string encoding. Otherwise use the data-type info passed in to determine the encoding.

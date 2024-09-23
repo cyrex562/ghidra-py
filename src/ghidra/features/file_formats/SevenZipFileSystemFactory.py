@@ -17,7 +17,7 @@ package ghidra.file.formats.sevenzip;
 
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.app.util.recognizer.*;
@@ -81,7 +81,7 @@ public class SevenZipFileSystemFactory
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the native libraries for 7zip were initialized.
 	 * <p>
 	 * 

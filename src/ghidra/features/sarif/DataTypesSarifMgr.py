@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -94,7 +94,7 @@ public class DataTypesSarifMgr extends SarifMgr {
 	private Map<String, Boolean> isPacked = new HashMap<>();
 	private Map<String, Integer> packingValue = new HashMap<>();
 
-	/**
+    # /**
 	 * Constructs a new root types SARIF manager.
 	 * 
 	 * @param dataManager the root type manager to read from or write to
@@ -137,7 +137,7 @@ public class DataTypesSarifMgr extends SarifMgr {
 		}
 	}
 
-	/**
+    # /**
 	 * Reads the datatypes encoded in SARIF from the specified SARIF parser and
 	 * recreates them in a datatype manager.
 	 * 
@@ -683,7 +683,7 @@ public class DataTypesSarifMgr extends SarifMgr {
 	// SARIF WRITE CURRENT DTD //
 	/////////////////////////////
 
-	/**
+    # /**
 	 * Writes datatypes into SARIF using the specified SARIF writer.
 	 * 
 	 * @param results the SARIF writer

@@ -17,7 +17,7 @@ package ghidra.bitpatterns.info;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 

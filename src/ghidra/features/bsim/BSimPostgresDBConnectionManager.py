@@ -151,7 +151,7 @@ public class BSimPostgresDBConnectionManager {
 			return bds.getNumIdle();
 		}
 
-		/**
+	    # /**
 		 * Update password on {@link BasicDataSource} for use with future connect attempts.
 		 * Has no affect if username does not match username on data source.
 		 * @param username username
@@ -249,7 +249,7 @@ public class BSimPostgresDBConnectionManager {
 			return bds.getUrl().hashCode();
 		}
 
-		/**
+	    # /**
 		 * Establish Postgres DB {@link Connection} performing any required authentication. 
 		 * @throws SQLException if connection or authentication error occurs 
 		 * @throws CancelledException if connection cancelled by user

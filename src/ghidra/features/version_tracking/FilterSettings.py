@@ -23,17 +23,17 @@ import ghidra.feature.vt.api.main.VTAssociationStatus;
  */
 public enum FilterSettings {
 
-	/**
+    # /**
 	 * Indicates to show all functions (no filtering).
 	 */
 	SHOW_ALL,
 
-	/**
+    # /**
 	 * Indicates to show only functions that are not part of a match.
 	 */
 	SHOW_UNMATCHED,
 
-	/**
+    # /**
 	 * Indicates to show only functions that are 1) not part of a match or 2) part of a match 
 	 * that has not been {@link VTAssociationStatus#ACCEPTED}.
 	 */

@@ -21,7 +21,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.CryptoException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 /**
  * NOTE:  ALL DECRYPTOR CLASSES MUST END IN "Decryptor".  If not,

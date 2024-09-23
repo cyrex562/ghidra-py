@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.program.model.address.Address;
@@ -27,14 +27,14 @@ import ghidra.program.model.symbol.FlowType;
 import ghidra.program.model.symbol.RefType;
 
 # /**
- * InstructionPrototype is designed to describe one machine level instruction.
- * A language parser can return the same InstructionProtoype object for the 
- * same type node. Prototypes for instructions will normally be fixed for a node.
- */
+# * InstructionPrototype is designed to describe one machine level instruction.
+# * A language parser can return the same InstructionProtoype object for the 
+# * same type node. Prototypes for instructions will normally be fixed for a node.
+# */
 public interface InstructionPrototype {
 	public static final int INVALID_DEPTH_CHANGE = 16777216; // 2^24
 
-	/**
+    # /**
 	 * Get a new instance of a ParserContext.
 	 * @param buf
 	 * @param processorContext
@@ -44,7 +44,7 @@ public interface InstructionPrototype {
 	public ParserContext getParserContext(MemBuffer buf, ProcessorContextView processorContext)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get a ParserContext by parsing bytes outside of the normal disassembly process
 	 * @param addr where the ParserContext is needed
 	 * @param buffer of actual bytes
@@ -59,20 +59,20 @@ public interface InstructionPrototype {
 			ProcessorContextView processorContext) throws InsufficientBytesException,
 			UnknownInstructionException, UnknownContextException, MemoryAccessException;
 
-	/**
+    # /**
 	 * @return true if instruction prototype expects one or more delay slotted
 	 * instructions to exist.
 	 */
 	public boolean hasDelaySlots();
 
-	/**
+    # /**
 	 * @return true if instruction semantics have a CrossBuild instruction
 	 * dependency which may require a robust InstructionContext with access
 	 * to preceding instructions  
 	 */
 	public boolean hasCrossBuildDependency();
 
-	/**
+    # /**
 	 * Get the mnemonic for this CodeProtype.  Examples: "MOV" and
 	 * "CALL" for instructions and "DB" and "DA" for data.
 	 * @param context the instruction context
@@ -80,14 +80,14 @@ public interface InstructionPrototype {
 	 */
 	public String getMnemonic(InstructionContext context);
 
-	/**
+    # /**
 	 * Get the length of this CodeProtoype. 
 	 *
 	 * @return the length of this CodeProtoype.
 	 */
 	public int getLength();
 
-	/**
+    # /**
 	 * Get a Mask that describe which bits of this instruction determine
 	 * the opcode.
 	 *
@@ -95,7 +95,7 @@ public interface InstructionPrototype {
 	 */
 	public Mask getInstructionMask();
 
-	/**
+    # /**
 	 * Get a Mask that describe which bits of this instruction determine
 	 * the operand value.
 	 *
@@ -103,7 +103,7 @@ public interface InstructionPrototype {
 	 */
 	public Mask getOperandValueMask(int operandIndex);
 
-	/**
+    # /**
 	 * Get the flow type of this instruction. Used
 	 * for analysis purposes. i.e., how this
 	 * instruction flows to the next instruction.
@@ -113,7 +113,7 @@ public interface InstructionPrototype {
 	 */
 	public FlowType getFlowType(InstructionContext context);
 
-	/**
+    # /**
 	 * Get the number of delay slot instructions for this
 	 * argument. This should be 0 for instructions which don't have a
 	 * delay slot.  This is used to support the delay slots found on
@@ -127,24 +127,24 @@ public interface InstructionPrototype {
 	 */
 	public int getDelaySlotDepth(InstructionContext context);
 
-	/**
+    # /**
 	 * @return the number of delay-slot instruction bytes which correspond
 	 * to this prototype.
 	 */
 	public int getDelaySlotByteCount();
 
-	/**
+    # /**
 	 * Return true if this prototype was disassembled in a delay slot.
 	 */
 	boolean isInDelaySlot();
 
-	/**
+    # /**
 	 *  Return the number of operands in this instruction.
 	 *
 	 */
 	public int getNumOperands();
 
-	/**
+    # /**
 	 * Get the type of a specific operand.
 	 *
 	 * @param opIndex the index of the operand. (zero based)
@@ -153,7 +153,7 @@ public interface InstructionPrototype {
 	 */
 	public int getOpType(int opIndex, InstructionContext context);
 
-	/**
+    # /**
 	 * Get the Address for default flow after instruction.
 	 *
 	 * @param context the instruction context
@@ -163,7 +163,7 @@ public interface InstructionPrototype {
 	 */
 	public Address getFallThrough(InstructionContext context);
 
-	/**
+    # /**
 	 * Get the byte offset to the default flow after instruction.
 	 * If this instruction does not have a fall-through due to flow
 	 * behavior, this method will still return an offset which accounts for 
@@ -177,7 +177,7 @@ public interface InstructionPrototype {
 	 */
 	public int getFallThroughOffset(InstructionContext context);
 
-	/**
+    # /**
 	 * Get an array of Address objects for all flows other than
 	 * a fall-through, null if no flows.
 	 *
@@ -187,7 +187,7 @@ public interface InstructionPrototype {
 	 */
 	public Address[] getFlows(InstructionContext context);
 
-	/**
+    # /**
 	 * Get the separator strings between an operand.
 	 * 
 	 * The separator string for 0 are the characters before the first operand.
@@ -199,7 +199,7 @@ public interface InstructionPrototype {
 	 */
 	public String getSeparator(int opIndex, InstructionContext context);
 
-	/**
+    # /**
 	 * Get a List of Objects that can be used to render an operands representation.
 	 * 
 	 * @param opIndex operand to get the Representation List
@@ -210,7 +210,7 @@ public interface InstructionPrototype {
 	 */
 	public ArrayList<Object> getOpRepresentationList(int opIndex, InstructionContext context);
 
-	/**
+    # /**
 	 * If the indicated operand is an address, this gets the address value for 
 	 * that operand
 	 * @param opIndex index of the operand.
@@ -219,7 +219,7 @@ public interface InstructionPrototype {
 	 */
 	public Address getAddress(int opIndex, InstructionContext context);
 
-	/**
+    # /**
 	 * If the indicated operand is a scalar, this gets the scalar value for 
 	 * that operand
 	 * @param opIndex index of the operand.
@@ -228,7 +228,7 @@ public interface InstructionPrototype {
 	 */
 	public Scalar getScalar(int opIndex, InstructionContext context);
 
-	/**
+    # /**
 	 * If the indicated operand is a register, this gets the register value 
 	 * for that operand
 	 * @param opIndex index of the operand.
@@ -237,7 +237,7 @@ public interface InstructionPrototype {
 	 */
 	public Register getRegister(int opIndex, InstructionContext context);
 
-	/**
+    # /**
 	 * Get objects used by this operand (Address, Scalar, Register ...)
 	 * @param opIndex the index of the operand. (zero based)
 	 * @param context the instruction context
@@ -245,7 +245,7 @@ public interface InstructionPrototype {
 	 */
 	public Object[] getOpObjects(int opIndex, InstructionContext context);
 
-	/**
+    # /**
 	 * Get the suggested operand reference type.
 	 * @param opIndex the index of the operand. (zero based)
 	 * @param context the instruction context
@@ -255,13 +255,13 @@ public interface InstructionPrototype {
 	public RefType getOperandRefType(int opIndex, InstructionContext context,
 			PcodeOverride override);
 
-	/**
+    # /**
 	 * Return true if the operand at opIndex should have a delimiter following it.
 	 * @param opIndex the index of the operand to test for having a delimiter.
 	 */
 	public boolean hasDelimeter(int opIndex);
 
-	/**
+    # /**
 	 * Get the Result objects produced/affected by this instruction
 	 * These would probably only be Register or Address
 	 * 
@@ -271,7 +271,7 @@ public interface InstructionPrototype {
 	 */
 	public Object[] getInputObjects(InstructionContext context);
 
-	/**
+    # /**
 	 * Get the Result objects produced/affected by this instruction
 	 * These would probably only be Register or Address
 	 * 
@@ -281,7 +281,7 @@ public interface InstructionPrototype {
 	 */
 	public Object[] getResultObjects(InstructionContext context);
 
-	/**
+    # /**
 	 * Get an array of PCode operations (micro code) that this instruction
 	 * performs.
 	 * 
@@ -292,7 +292,7 @@ public interface InstructionPrototype {
 	 */
 	public PcodeOp[] getPcode(InstructionContext context, PcodeOverride override);
 
-	/**
+    # /**
 	 * Same as getPcode but emits the operations directly to an encoder to optimize transfer to other processes
 	 * @param encoder is the encoder receiving the operations
 	 * @param context the instruction context
@@ -302,7 +302,7 @@ public interface InstructionPrototype {
 	public void getPcodePacked(PatchEncoder encoder, InstructionContext context,
 			PcodeOverride override) throws IOException;
 
-	/**
+    # /**
 	 * Get an array of PCode operations (micro code) that a particular operand
 	 * performs to compute its value.
 	 *
@@ -314,7 +314,7 @@ public interface InstructionPrototype {
 	 */
 	public PcodeOp[] getPcode(InstructionContext context, int opIndex);
 
-	/**
+    # /**
 	 * Get processor language module associated with this prototype.
 	 * @return language module
 	 */

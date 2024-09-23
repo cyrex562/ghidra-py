@@ -16,7 +16,7 @@
 //Opens all programs under a chosen domain folder, scans them for functions
 //that match a user supplied name, and prints info about the match.
 //@category FunctionID
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.app.script.GhidraScript;

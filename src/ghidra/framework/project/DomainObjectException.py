@@ -28,7 +28,7 @@ public class DomainObjectException extends RuntimeException {
 
 	Throwable t;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param t throwable error/exception which provides failure detail.
 	 */

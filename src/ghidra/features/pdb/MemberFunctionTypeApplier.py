@@ -29,7 +29,7 @@ import ghidra.util.exception.CancelledException;
 public class MemberFunctionTypeApplier extends AbstractFunctionTypeApplier {
 
 	// Intended for: AbstractMemberFunctionMsType
-	/**
+    # /**
 	 * Constructor for the applicator that applies {@link AbstractMemberFunctionMsType},
 	 * transforming it into a Ghidra {@link DataType}
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working

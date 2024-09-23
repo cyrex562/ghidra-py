@@ -27,7 +27,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 
 	protected ProcedureStartSymbolInternals internals;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -40,7 +40,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		this.internals = internals;
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -49,7 +49,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getParentPointer();
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -58,7 +58,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getEndPointer();
 	}
 
-	/**
+    # /**
 	 * Returns the next pointer.
 	 * @return Next pointer.
 	 */
@@ -67,7 +67,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getNextPointer();
 	}
 
-	/**
+    # /**
 	 * Returns the procedure length.
 	 * @return Procedure length.
 	 */
@@ -76,7 +76,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getProcedureLength();
 	}
 
-	/**
+    # /**
 	 * Returns the debug start offset.
 	 * @return Debug start offset.
 	 */
@@ -85,7 +85,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getDebugStartOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the debug end offset.
 	 * @return Debug end offset.
 	 */
@@ -94,7 +94,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getDebugEndOffset();
 	}
 
-	/**
+    # /**
 	 * Returns type record number.
 	 * @return Type record number.
 	 */
@@ -103,7 +103,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getTypeRecordNumber();
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -112,7 +112,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -121,7 +121,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getSegment();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ProcedureFlags}.
 	 * @return Procedure flags.
 	 */
@@ -129,7 +129,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		return internals.getFlags();
 	}
 
-	/**
+    # /**
 	 * Returns the procedure name.
 	 * @return Name.
 	 */
@@ -145,7 +145,7 @@ public abstract class AbstractProcedureStartMsSymbol extends AbstractProcedureMs
 		builder.insert(0, getSymbolTypeName());
 	}
 
-	/**
+    # /**
 	 * Returns the special type string used during Emit.
 	 * @return Special type string.
 	 */

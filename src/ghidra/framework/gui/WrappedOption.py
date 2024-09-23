@@ -22,19 +22,19 @@ package ghidra.framework.options;
  */
 public interface WrappedOption {
 
-	/**
+    # /**
 	 * Get the object that is the property value.
 	 */
 	public abstract Object getObject();
 
-	/**
+    # /**
 	 * Concrete subclass of WrappedOption should read all of its
 	 * state from the given saveState object.
 	 * @param saveState container of state information
 	 */
 	public abstract void readState(SaveState saveState);
 
-	/**
+    # /**
 	 * Concrete subclass of WrappedOption should write all of its
 	 * state to the given saveState object.
 	 * @param saveState container of state information

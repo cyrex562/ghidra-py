@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.util.*;
@@ -25,9 +25,9 @@ import ghidra.program.model.lang.*;
 import ghidra.util.task.TaskBuilder;
 
 # /**
- * Default Language service used gather up all the languages that were found
- * during the class search (search was for language providers)
- */
+# * Default Language service used gather up all the languages that were found
+# * during the class search (search was for language providers)
+# */
 public class DefaultLanguageService implements LanguageService {
 	private static final Logger log = LogManager.getLogger(DefaultLanguageService.class);
 
@@ -36,7 +36,7 @@ public class DefaultLanguageService implements LanguageService {
 
 	private static DefaultLanguageService languageService;
 
-	/**
+    # /**
 	 * Returns the single instance of the DefaultLanguageService.
 	 * @return the language service
 	 */
@@ -188,7 +188,7 @@ public class DefaultLanguageService implements LanguageService {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Check all compiler specs associated with the specified
 	 * languageDescription for one that matches the specified
 	 * preferredCompilerSpecId. If no match is found or preferredCompilerSpecId
@@ -239,7 +239,7 @@ public class DefaultLanguageService implements LanguageService {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns external names for specified language associated with other
 	 * tools. For example, x86 languages are usually referred to as "metapc" by
 	 * IDA-PRO.

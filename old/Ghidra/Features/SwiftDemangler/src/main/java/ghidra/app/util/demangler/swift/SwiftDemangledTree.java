@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.swift;
 
-import java.io.IOException;
+
 import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -32,7 +32,7 @@ public class DoubleAttribute<T extends KeyedObject> extends Attribute<T> {
 	private LongDoubleHashtable values;
 	private static String attributeType = AttributeManager.DOUBLE_TYPE;
 
-	/** Constructor.
+    # /** Constructor.
 	 * @param name The name used to identify this attribute.
 	 * @param set The KeyIndexableSet whose elements can be assigned
 	 * a value within this attribute.
@@ -43,7 +43,7 @@ public class DoubleAttribute<T extends KeyedObject> extends Attribute<T> {
 		values = new LongDoubleHashtable();
 	}
 
-	/** Set the value of this attribute for the specified KeyedObject.
+    # /** Set the value of this attribute for the specified KeyedObject.
 	 * @param o The KeyedObject that is assigned the value. Should
 	 * be a member of the owningSet.
 	 * @param value The value to associate with the specified KeyedObject.
@@ -60,7 +60,7 @@ public class DoubleAttribute<T extends KeyedObject> extends Attribute<T> {
 		return false;
 	}
 
-	/** Return the value associated to the specified KeyedObject.
+    # /** Return the value associated to the specified KeyedObject.
 	 * @throws NoValueException if the value has not been set or 
 	 * the KeyedObject does not belong to the owningSet.
 	 */
@@ -90,7 +90,7 @@ public class DoubleAttribute<T extends KeyedObject> extends Attribute<T> {
 //       }
 //  }
 
-	/** Returns the elements of the owningSet sorted by their
+    # /** Returns the elements of the owningSet sorted by their
 	 * values of this Attribute. 
 	 */
 	public KeyedObject[] toSortedArray() {
@@ -99,7 +99,7 @@ public class DoubleAttribute<T extends KeyedObject> extends Attribute<T> {
 		return keyedObjects;
 	}
 
-	/** Sorts the array of keyedObjects by their values of this 
+    # /** Sorts the array of keyedObjects by their values of this 
 	 * Attribute.
 	 */
 	public KeyedObject[] toSortedArray(KeyedObject[] keyedObjects) {
@@ -108,13 +108,13 @@ public class DoubleAttribute<T extends KeyedObject> extends Attribute<T> {
 		return clone;
 	}
 
-	/** This class is a comparator (see java.util.Comparator) for
+    # /** This class is a comparator (see java.util.Comparator) for
 	 * KeyedObjects having a DoubleAttribute. Keyed Objects are first
 	 * compared by the value of the attribute. Ties are broken by
 	 * considering the keys of the KeyedObjects.
 	 */
 	class DoubleComparator implements Comparator<KeyedObject> {
-		/** Compares two Objects. See java.util.Comparator */
+	    # /** Compares two Objects. See java.util.Comparator */
 		@Override
 		public int compare(KeyedObject object1, KeyedObject object2) {
 			KeyedObject ko1 = object1;
@@ -166,7 +166,7 @@ public class DoubleAttribute<T extends KeyedObject> extends Attribute<T> {
 		}
 	}
 
-	/** Return the type of Attribute, i.e. what kind of values does
+    # /** Return the type of Attribute, i.e. what kind of values does
 	 * this attribute hold. "Long", "Object", "Double" are examples.
 	 */
 	@Override
@@ -174,13 +174,13 @@ public class DoubleAttribute<T extends KeyedObject> extends Attribute<T> {
 		return attributeType;
 	}
 
-	/** Removes all assigned values of this attribute. */
+    # /** Removes all assigned values of this attribute. */
 	@Override
 	public void clear() {
 		values.removeAll();
 	}
 
-	/** Return the attribute of the specified KeyedObject as a String.
+    # /** Return the attribute of the specified KeyedObject as a String.
 	 */
 	@Override
 	public String getValueAsString(KeyedObject o) {

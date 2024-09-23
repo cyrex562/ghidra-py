@@ -53,7 +53,7 @@ public class GThreadPool {
 
 	private final GThreadPoolExecutor executor;
 
-	/**
+    # /**
 	 * Creates a new, private thread pool with the given name.
 	 * @param name the name of the thread pool
 	 * @return a private GThreadPool with the given name.
@@ -62,7 +62,7 @@ public class GThreadPool {
 		return new GThreadPool(name);
 	}
 
-	/**
+    # /**
 	 * Returns a shared GThreadPool.  If a shared GThreadPool already exists with the given name,
 	 * it is returned.  Otherwise, a new shared GThreadPool is created and returned.
 	 * @param name the name of the GThreadPool.
@@ -76,7 +76,7 @@ public class GThreadPool {
 		return threadPool;
 	}
 
-	/**
+    # /**
 	 * Runs the given runnable in a background thread using a shared thread pool of the given name.
 	 * @param poolName the thread pool name
 	 * @param r the runnable
@@ -94,7 +94,7 @@ public class GThreadPool {
 		sharedPoolMap.put(name, this);
 	}
 
-	/**
+    # /**
 	 * Sets the max number of threads to use in this thread pool.  The default is the number
 	 * of processors + 1.
 	 * @param maxThreadCount the maximum number of threads to use in this thread pool.
@@ -103,7 +103,7 @@ public class GThreadPool {
 		executor.setMaxThreadCount(maxThreadCount);
 	}
 
-	/**
+    # /**
 	 * Returns the minimum number of threads to keep alive in this thread pool.
 	 * @return the minimum number of threads to keep alive in this thread pool.
 	 */
@@ -111,7 +111,7 @@ public class GThreadPool {
 		return executor.getMinThreadCount();
 	}
 
-	/**
+    # /**
 	 * Sets the minimum number of threads to keep alive in this thread pool.
 	 * @param minThreadCount the minimum number of threads to keep alive in this thread pool.
 	 */
@@ -119,7 +119,7 @@ public class GThreadPool {
 		executor.setMinThreadCount(minThreadCount);
 	}
 
-	/**
+    # /**
 	 * Returns the maximum number of threads to use in this thread pool.
 	 * @return the maximum number of threads to use in this thread pool.
 	 */
@@ -127,7 +127,7 @@ public class GThreadPool {
 		return executor.getMaxThreadCount();
 	}
 
-	/**
+    # /**
 	 * Submits a FutreTask to be executed by a thread in this thread pool.
 	 * @param futureTask the future task to be executed.
 	 */
@@ -135,7 +135,7 @@ public class GThreadPool {
 		executor.execute(futureTask);
 	}
 
-	/**
+    # /**
 	 * Submits a runnable to be executed by this thread pool.
 	 * @param task the runnable to be executed.
 	 * @return a Future for that runnable.
@@ -144,7 +144,7 @@ public class GThreadPool {
 		return executor.submit(task);
 	}
 
-	/**
+    # /**
 	 * Submits a runnable to be executed by this thread pool.
 	 * @param task the runnable to be executed.
 	 * @param result the result to be returned after the runnable has executed.
@@ -154,7 +154,7 @@ public class GThreadPool {
 		return executor.submit(task, result);
 	}
 
-	/**
+    # /**
 	 * Submits a callable to be executed by this thread pool.
 	 * @param task the callable to be executed.
 	 * @return a Future for that callable.
@@ -167,7 +167,7 @@ public class GThreadPool {
 		executor.shutdownNow();
 	}
 
-	/**
+    # /**
 	 * Returns true if this is not a shared thread pool.
 	 *
 	 * @return true if this is not a shared thread pool.
@@ -176,7 +176,7 @@ public class GThreadPool {
 		return !sharedPoolMap.containsKey(name);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Executor} used by this thread pool.
 	 *
 	 * <P>Note: normal usage of this thread pool contraindicates accessing the executor of

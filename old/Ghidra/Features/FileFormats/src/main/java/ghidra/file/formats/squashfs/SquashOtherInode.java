@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 import java.util.HexFormat;
 
 import ghidra.app.util.bin.BinaryReader;

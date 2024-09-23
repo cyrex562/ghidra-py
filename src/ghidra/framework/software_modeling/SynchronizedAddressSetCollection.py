@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.util;
 
 import ghidra.program.model.address.*;
@@ -22,19 +22,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 # /**
- * Implementation of AddressSetCollection used by {@link ProgramChangeSet}.  It contains the
- * actual instances of the addressSets used by the {@link ProgramChangeSet} and protects access
- * to them by synchronizing on the ProgramChangeSet.
- * 
- * Because these objects use the actual addressSets within the programChangeSet for
- * efficiency reasons, any changes to those
- * underlying sets will be reflected in the set of addresses represented by this collection.  
- * But since it is synchronized, you will always get a stable set during any given call and
- * the AddressSetCollection interface is careful not to include iterator or other methods
- * that can't tolerate a underlying change.  This object is really only intended for use by
- * the GUI change bars and if it changes, it only results in possibly seeing the changes bars
- * a bit earlier than otherwise.  
- */
+# * Implementation of AddressSetCollection used by {@link ProgramChangeSet}.  It contains the
+# * actual instances of the addressSets used by the {@link ProgramChangeSet} and protects access
+# * to them by synchronizing on the ProgramChangeSet.
+# * 
+# * Because these objects use the actual addressSets within the programChangeSet for
+# * efficiency reasons, any changes to those
+# * underlying sets will be reflected in the set of addresses represented by this collection.  
+# * But since it is synchronized, you will always get a stable set during any given call and
+# * the AddressSetCollection interface is careful not to include iterator or other methods
+# * that can't tolerate a underlying change.  This object is really only intended for use by
+# * the GUI change bars and if it changes, it only results in possibly seeing the changes bars
+# * a bit earlier than otherwise.  
+# */
 public class SynchronizedAddressSetCollection implements AddressSetCollection {
 	private List<AddressSetView> addressSetList = new ArrayList<>();
 	private Object sync;

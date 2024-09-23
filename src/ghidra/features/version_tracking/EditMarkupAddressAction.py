@@ -173,7 +173,7 @@ public class EditMarkupAddressAction extends DockingAction {
 			}
 		}
 
-		/**
+	    # /**
 		 * Gets the newly edited address.
 		 * @return the address.
 		 */
@@ -181,7 +181,7 @@ public class EditMarkupAddressAction extends DockingAction {
 			return editedAddress;
 		}
 
-		/**
+	    # /**
 		 * An address edit action occurred in the panel so handle it as if ok button were pressed.
 		 */
 		@Override

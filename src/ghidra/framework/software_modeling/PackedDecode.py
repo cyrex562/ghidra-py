@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 
@@ -23,33 +23,33 @@ import ghidra.program.model.address.AddressFactory;
 import ghidra.program.model.address.AddressSpace;
 
 # /*
- * A byte-based decoder designed to marshal info to the decompiler efficiently
- * All bytes in the encoding are expected to be non-zero.  Element encoding looks like
- *    - 01xiiiii is an element start
- *    - 10xiiiii is an element end
- *    - 11xiiiii is an attribute start
- *
- * Where iiiii is the (first) 5 bits of the element/attribute id.
- * If x=0, the id is complete.  If x=1, the next byte contains 7 more bits of the id:  1iiiiiii
- * 
- *  After an attribute start, there follows a type byte:  ttttllll, where the first 4 bits indicate
- *  the type of attribute and final 4 bits are a "length code".  The types are:
- *    - 1 = boolean (lengthcode=0 for false, lengthcode=1 for true)
- *    - 2 = positive signed integer
- *    - 3 = negative signed integer (stored in negated form)
- *    - 4 = unsigned integer
- *    - 5 = basic address space (encoded as the integer index of the space)
- *    - 6 = special address space (lengthcode 0=>stack 1=>join 2=>fspec 3=>iop)
- *    - 7 = string
- *    
- * All attribute types except "boolean" and "special", have an encoded integer after the \e type byte.
- * The "length code", indicates the number bytes used to encode the integer,
- * 7-bits of info per byte, 1iiiiiii. A "length code" of 0 is used to encode and integer value
- * of 0, with no following bytes.
- * 
- * For strings, the integer encoded after the \e type byte, is the actual length of the string.  The
- * string data itself is stored immediately after the length integer using UTF8 format.
- * */
+# * A byte-based decoder designed to marshal info to the decompiler efficiently
+# * All bytes in the encoding are expected to be non-zero.  Element encoding looks like
+# *    - 01xiiiii is an element start
+# *    - 10xiiiii is an element end
+# *    - 11xiiiii is an attribute start
+# *
+# * Where iiiii is the (first) 5 bits of the element/attribute id.
+# * If x=0, the id is complete.  If x=1, the next byte contains 7 more bits of the id:  1iiiiiii
+# * 
+# *  After an attribute start, there follows a type byte:  ttttllll, where the first 4 bits indicate
+# *  the type of attribute and final 4 bits are a "length code".  The types are:
+# *    - 1 = boolean (lengthcode=0 for false, lengthcode=1 for true)
+# *    - 2 = positive signed integer
+# *    - 3 = negative signed integer (stored in negated form)
+# *    - 4 = unsigned integer
+# *    - 5 = basic address space (encoded as the integer index of the space)
+# *    - 6 = special address space (lengthcode 0=>stack 1=>join 2=>fspec 3=>iop)
+# *    - 7 = string
+# *    
+# * All attribute types except "boolean" and "special", have an encoded integer after the \e type byte.
+# * The "length code", indicates the number bytes used to encode the integer,
+# * 7-bits of info per byte, 1iiiiiii. A "length code" of 0 is used to encode and integer value
+# * of 0, with no following bytes.
+# * 
+# * For strings, the integer encoded after the \e type byte, is the actual length of the string.  The
+# * string data itself is stored immediately after the length integer using UTF8 format.
+# * */
 public class PackedDecode implements Decoder {
 
 	public static final int HEADER_MASK = 0xc0;
@@ -84,7 +84,7 @@ public class PackedDecode implements Decoder {
 	private LinkedByteBuffer.Position endPos;
 	private boolean attributeRead;
 
-	/**
+    # /**
 	 * Constructor for formats that do not use the readSpace() methods or use
 	 * setAddressFactory() in the middle of decoding
 	 */
@@ -105,7 +105,7 @@ public class PackedDecode implements Decoder {
 		buildAddrSpaceArray();
 	}
 
-	/**
+    # /**
 	 * Build a decoder for an input stream, where the decoder is set to read pages from the stream
 	 * "as needed".  An initial page is read from the stream by this constructor. But then
 	 * the stream must remain open and additional pages are read during the decoding process.
@@ -227,7 +227,7 @@ public class PackedDecode implements Decoder {
 		inStream = new LinkedByteBuffer(max, ELEMENT_END, desc);
 	}
 
-	/**
+    # /**
 	 * Close stream cached by the ingestStreamAsNeeded method.
 	 * @throws IOException for low-level problems with the stream
 	 */

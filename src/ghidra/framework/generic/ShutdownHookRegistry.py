@@ -23,7 +23,7 @@ public class ShutdownHookRegistry {
 
 	private static TreeSet<ShutdownHook> hooks = new TreeSet<ShutdownHook>();
 
-	/**
+    # /**
 	 * Install a shutdown hook at the specified priority.  If the hook has no specific 
 	 * priority or sensitivity to when it runs, the standard Java Runtime shutdown hook
 	 * mechanism should be used.
@@ -41,7 +41,7 @@ public class ShutdownHookRegistry {
 		return hook;
 	}
 
-	/**
+    # /**
 	 * Remove a shutdown hook previously registered.
 	 * Hooks with a higher priority value will run first
 	 * @param hook shutdown hook
@@ -74,7 +74,7 @@ public class ShutdownHookRegistry {
 		}
 	}
 
-	/**
+    # /**
 	 * <code>ShutdownHook</code> wrapper class for shutdown callback
 	 */
 	public static class ShutdownHook implements Comparable<ShutdownHook> {

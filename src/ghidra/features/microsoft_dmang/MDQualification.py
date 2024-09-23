@@ -149,7 +149,7 @@ public class MDQualification extends MDParsableItem implements Iterable<MDQualif
 //		}
 	}
 
-	/**
+    # /**
 	 * Provides iterator of MDQualifiers, where the last iteration is the namespace root
 	 * @return the iterator
 	 */

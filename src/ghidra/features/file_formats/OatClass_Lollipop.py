@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.oatclass;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.dex.format.ClassDataItem;
@@ -63,7 +63,7 @@ public class OatClass_Lollipop extends OatClass {
 		}
 	}
 
-	/**
+    # /**
 	 * Size of compiled methods bitmap (present only when type = 1)
 	 * @return size of methods bitmap
 	 */
@@ -71,7 +71,7 @@ public class OatClass_Lollipop extends OatClass {
 		return bitmap_size_;
 	}
 
-	/**
+    # /**
 	 * Compiled methods bitmap (present only when type = 1)
 	 * @return methods bitmap
 	 */
@@ -79,7 +79,7 @@ public class OatClass_Lollipop extends OatClass {
 		return bitmap_;
 	}
 
-	/**
+    # /**
 	 * Returns true if this method index is declared native in the bitmap
 	 * @param methodIndex the method index
 	 * @return true if this method index is declared native in the bitmap

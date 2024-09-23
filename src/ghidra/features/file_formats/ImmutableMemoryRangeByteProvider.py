@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.bplist;
 
-import java.io.*;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.program.model.address.Address;

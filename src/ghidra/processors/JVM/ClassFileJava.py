@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -117,7 +117,7 @@ public class ClassFileJava implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * The magic item supplies the magic number identifying the class file format;
 	 * it has the value 0xCAFEBABE.
 	 * @return the magic number identifying the class file format
@@ -126,7 +126,7 @@ public class ClassFileJava implements StructConverter {
 		return magic;
 	}
 
-	/**
+    # /**
 	 * Returns the minor version number of this class.
 	 * <p>
 	 * If a class file has major version number M and minor 
@@ -143,7 +143,7 @@ public class ClassFileJava implements StructConverter {
 		return minorVersion;
 	}
 
-	/**
+    # /**
 	 * Returns the major version number of this class.
 	 * <p>
 	 * If a class file has major version number M and minor 
@@ -160,7 +160,7 @@ public class ClassFileJava implements StructConverter {
 		return majorVersion;
 	}
 
-	/**
+    # /**
 	 * The value of the constant_pool_count item is equal to the number of entries
 	 * in the constant_pool table plus one. A constant_pool index is considered
 	 * valid if it is greater than zero and less than constant_pool_count, with the
@@ -171,7 +171,7 @@ public class ClassFileJava implements StructConverter {
 		return constantPoolCount & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The constant_pool is a table of structures (?4.4) representing various string
 	 * constants, class and interface names, field names, and other constants that are
 	 * referred to within the ClassFile structure and its substructures. The format of
@@ -184,7 +184,7 @@ public class ClassFileJava implements StructConverter {
 		return constantPool;
 	}
 
-	/**
+    # /**
 	 * The value of the access_flags item is a mask of flags used to denote access
 	 * permissions to and properties of this class or interface. The interpretation of
 	 * each flag, when set, is as shown in Table 4.1.
@@ -194,7 +194,7 @@ public class ClassFileJava implements StructConverter {
 		return accessFlags;
 	}
 
-	/**
+    # /**
 	 * The value of the this_class item must be a valid index into the
 	 * constant_pool table. The constant_pool entry at that index must be a
 	 * CONSTANT_Class_info (?4.4.1) structure representing the class or interface
@@ -205,7 +205,7 @@ public class ClassFileJava implements StructConverter {
 		return thisClass & 0xffff;
 	}
 
-	/**
+    # /**
 	 * For a class, the value of the super_class item either must be zero or
 	 * must be a valid index into the constant_pool table. If the value of the
 	 * super_class item is nonzero, the constant_pool entry at that index must be
@@ -226,7 +226,7 @@ public class ClassFileJava implements StructConverter {
 		return superClass & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the interfaces_count item gives the number of direct
 	 * superinterfaces of this class or interface type.
 	 * @return the number of direct superinterfaces of this class
@@ -235,7 +235,7 @@ public class ClassFileJava implements StructConverter {
 		return interfacesCount & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value in the interfaces array must be a valid index into
 	 * the constant_pool table. The constant_pool entry at each value
 	 * of interfaces[i], where 0 ? i < interfaces_count, must be a
@@ -249,7 +249,7 @@ public class ClassFileJava implements StructConverter {
 		return interfaces[i] & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the fields_count item gives the number of field_info
 	 * structures in the fields table. The field_info (?4.5) structures represent all
 	 * fields, both class variables and instance variables, declared by this class or
@@ -260,7 +260,7 @@ public class ClassFileJava implements StructConverter {
 		return fieldsCount & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value in the fields table must be a field_info (?4.5) structure giving
 	 * a complete description of a field in this class or interface. The fields table
 	 * includes only those fields that are declared by this class or interface. It does
@@ -272,7 +272,7 @@ public class ClassFileJava implements StructConverter {
 		return fields;
 	}
 
-	/**
+    # /**
 	 * The value of the methods_count item gives the number of method_info
 	 * structures in the methods table.
 	 * @return the number of method_info structures in the methods table
@@ -281,7 +281,7 @@ public class ClassFileJava implements StructConverter {
 		return methodsCount & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value in the methods table must be a method_info (?4.6) structure giving
 	 * a complete description of a method in this class or interface. If neither of the
 	 * ACC_NATIVE and ACC_ABSTRACT flags are set in the access_flags item of a
@@ -299,7 +299,7 @@ public class ClassFileJava implements StructConverter {
 		return methods;
 	}
 
-	/**
+    # /**
 	 * The value of the attributes_count item gives the number of attributes
 	 * in the attributes table of this class.
 	 * @return the number of attributes in the attributes table
@@ -308,7 +308,7 @@ public class ClassFileJava implements StructConverter {
 		return attributesCount & 0xffff;
 	}
 
-	/**
+    # /**
 	 * Each value of the attributes table must be an attribute_info structure.
 	 * <p>
 	 * The attributes defined by this specification as appearing in

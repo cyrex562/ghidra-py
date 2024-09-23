@@ -1,33 +1,33 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.scalar;
 
 import java.math.BigInteger;
 
 # /**
- * The Scalar defines a immutable integer stored in an arbitrary number of bits (0..64), along
- * with a preferred signed-ness attribute.
- */
+# * The Scalar defines a immutable integer stored in an arbitrary number of bits (0..64), along
+# * with a preferred signed-ness attribute.
+# */
 public class Scalar {
 	private final long value;
 	private final byte bitLength;
 	private final byte unusedBits; // complement of bitLength
 	private final boolean signed;
 
-	/**
+    # /**
 	 * Construct a new signed scalar object.
 	 * 
 	 * @param bitLength number of bits, valid values are 1..64, or 0 if value is also 0
@@ -37,7 +37,7 @@ public class Scalar {
 		this(bitLength, value, true);
 	}
 
-	/**
+    # /**
 	 * Construct a new scalar.
 	 * 
 	 * @param bitLength number of bits, valid values are 1..64, or 0 if value is also 0
@@ -54,7 +54,7 @@ public class Scalar {
 		this.value = (value << unusedBits) >>> unusedBits; // eliminate upper bits that are outside bitLength
 	}
 
-	/**
+    # /**
 	 * Returns true if scalar was created as a signed value
 	 * 
 	 * @return boolean true if this scalar was created as a signed value, false if was created as
@@ -64,7 +64,7 @@ public class Scalar {
 		return signed;
 	}
 
-	/**
+    # /**
 	 * Get the value as a signed long, where the highest bit of the value, if set, will be 
 	 * extended to fill the remaining bits of a java long.
 	 * 
@@ -74,7 +74,7 @@ public class Scalar {
 		return (value << unusedBits) >> unusedBits; // if value has highbit set, sign extend it
 	}
 
-	/**
+    # /**
 	 * Get the value as an unsigned long.
 	 * 
 	 * @return unsigned value
@@ -83,7 +83,7 @@ public class Scalar {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Returns the value in its preferred signed-ness.  See {@link #getSignedValue()} and
 	 * {@link #getUnsignedValue()}.
 	 * 
@@ -93,7 +93,7 @@ public class Scalar {
 		return signed ? getSignedValue() : value;
 	}
 
-	/**
+    # /**
 	 * {@return the value, using the specified signedness.  Equivalent to calling getSignedValue()
 	 * or getUnsignedValue()}
 	 * 
@@ -103,7 +103,7 @@ public class Scalar {
 		return signednessOverride ? getSignedValue() : value;
 	}
 
-	/**
+    # /**
 	 * Returns the BigInteger representation of the value.
 	 * 
 	 * @return new BigInteger representation of the value
@@ -126,7 +126,7 @@ public class Scalar {
 		return new BigInteger(signum, data);
 	}
 
-	/**
+    # /**
 	 * <p>Returns a byte array representing this Scalar.  The size of
 	 * the byte array is the number of bytes required to hold the
 	 * number of bits returned by <CODE>bitLength()</CODE>.</p>
@@ -175,7 +175,7 @@ public class Scalar {
 		return Long.hashCode(value);
 	}
 
-	/**
+    # /**
 	 * <p>The size of this Scalar in bits.  This is constant for a
 	 * Scalar.  It is not dependent on the particular value of the scalar.
 	 * For example, a 16-bit Scalar should always return 16 regardless of the
@@ -187,7 +187,7 @@ public class Scalar {
 		return bitLength;
 	}
 
-	/**
+    # /**
 	 * <p>Returns true if and only if the designated bit is set to one.
 	 * Computes ((this &amp; (1&lt;&lt;n)) != 0).  Bits are numbered
 	 * 0..bitlength()-1 with 0 being the least significant bit.</p>
@@ -204,7 +204,7 @@ public class Scalar {
 		return (value & (1L << n)) != 0;
 	}
 
-	/**
+    # /**
 	 * <p>Get a String representing this Scalar using the
 	 * format defined by radix.</p>
 	 * @param radix an integer base to use in representing the number

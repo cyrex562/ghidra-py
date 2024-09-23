@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -92,7 +92,7 @@ public class GhidraFolder implements DomainFolder {
 		return folderData;
 	}
 
-	/**
+    # /**
 	 * Create folder hierarchy in local filesystem if it does not already exist
 	 * @param folderName
 	 * @return folder data
@@ -123,7 +123,7 @@ public class GhidraFolder implements DomainFolder {
 		return parent.createFolderData(name);
 	}
 
-	/**
+    # /**
 	 * Refresh folder data - used for testing only
 	 * @throws IOException if an IO error occurs
 	 */
@@ -375,7 +375,7 @@ public class GhidraFolder implements DomainFolder {
 		return folderData.copyToAsLink(newGhidraParent.getFolderData());
 	}
 
-	/**
+    # /**
 	 * used for testing
 	 */
 	boolean privateExists() {
@@ -387,7 +387,7 @@ public class GhidraFolder implements DomainFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * used for testing
 	 */
 	boolean sharedExists() {

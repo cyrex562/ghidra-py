@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang;
 
-import java.io.IOException;
+
 
 public class BootstrapInfoException extends IOException {
 

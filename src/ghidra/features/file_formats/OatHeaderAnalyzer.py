@@ -131,7 +131,7 @@ public class OatHeaderAnalyzer extends FileFormatAnalyzer {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Ghidra sometimes applies undefined1[x] at "oatdata" and "oatexec".
 	 * This method checks for these arrays and clears if they exist.
 	 */
@@ -171,7 +171,7 @@ public class OatHeaderAnalyzer extends FileFormatAnalyzer {
 		}
 	}
 
-	/**
+    # /**
 	 * Annotates the listing for the ".oat_patches" section(s).  
 	 * The format of the section changes based on the OAT version.
 	 */
@@ -314,7 +314,7 @@ public class OatHeaderAnalyzer extends FileFormatAnalyzer {
 		}
 	}
 
-	/**
+    # /**
 	 * Check to see if points to instructions and not undefined, if so then disassemble.
 	 */
 	private void disassembleAsNeeded(Program program, Address toAddr) {

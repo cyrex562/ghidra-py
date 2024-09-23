@@ -39,13 +39,13 @@ public class ProjectLocator {
 
 	private URL url;
 
-	/**
+    # /**
 	 * Set of characters specifically disallowed in project name or path.
 	 * These characters may interfere with path and URL parsing.
 	 */
 	public static Set<Character> DISALLOWED_CHARS = Set.of(':', ';', '&', '?', '#');
 
-	/**
+    # /**
 	 * Construct a project locator object.
 	 * @param path absolute path to parent directory (may or may not exist).  The user's temp directory
 	 * will be used if this value is null or blank.  The use of "\" characters will always be replaced 
@@ -74,7 +74,7 @@ public class ProjectLocator {
 		url = GhidraURL.makeURL(location, name);
 	}
 
-	/**
+    # /**
 	 * Check for characters explicitly disallowed in path or project name.
 	 * @param type type of string to include in exception
 	 * @param str string to check
@@ -91,7 +91,7 @@ public class ProjectLocator {
 		}
 	}
 
-	/**
+    # /**
 	 * Ensure that absolute path is specified and normalize its format.
 	 * An absolute path may start with a windows drive letter (e.g., c:/a/b, /c:/a/b)
 	 * or without (e.g., /a/b).  Although for Windows the lack of a drive letter is
@@ -142,7 +142,7 @@ public class ProjectLocator {
 			path.charAt(pathIndex) == '/';
 	}
 
-	/**
+    # /**
 	 * {@return true if this project URL corresponds to a transient project
 	 * (e.g., corresponds to remote Ghidra URL)}
 	 */
@@ -150,7 +150,7 @@ public class ProjectLocator {
 		return false;
 	}
 
-	/**
+    # /**
 	 * {@return the URL associated with this local project.  If using a temporary transient
 	 * project location this URL should not be used.}
 	 */
@@ -158,14 +158,14 @@ public class ProjectLocator {
 		return url;
 	}
 
-	/**
+    # /**
 	 * {@return the name of the project identified by this project info.}
 	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Get the location of the project which will contain marker file
 	 * ({@link #getMarkerFile()}) and project directory ({@link #getProjectDir()}). 
 	 * <p>
@@ -176,28 +176,28 @@ public class ProjectLocator {
 		return location;
 	}
 
-	/**
+    # /**
 	 * {@return the project directory}
 	 */
 	public File getProjectDir() {
 		return new File(location, name + PROJECT_DIR_SUFFIX);
 	}
 
-	/**
+    # /**
 	 * {@return the file that indicates a Ghidra project.}
 	 */
 	public File getMarkerFile() {
 		return new File(location, name + PROJECT_FILE_SUFFIX);
 	}
 
-	/**
+    # /**
 	 * {@return project lock file to prevent multiple accesses to the same project at once.}
 	 */
 	public File getProjectLockFile() {
 		return new File(location, name + LOCK_FILE_SUFFIX);
 	}
 
-	/**
+    # /**
 	 * {@return the project directory file extension.}
 	 */
 	public static String getProjectDirExtension() {
@@ -229,14 +229,14 @@ public class ProjectLocator {
 		return GhidraURL.getDisplayString(url);
 	}
 
-	/**
+    # /**
 	 * {@return the file extension suitable for creating file filters for the file chooser}
 	 */
 	public static String getProjectExtension() {
 		return PROJECT_FILE_SUFFIX;
 	}
 
-	/**
+    # /**
 	 * {@return whether the given file is a project directory.}
 	 * @param file file to check
 	 */
@@ -244,7 +244,7 @@ public class ProjectLocator {
 		return file.isDirectory() && file.getName().endsWith(PROJECT_DIR_SUFFIX);
 	}
 
-	/**
+    # /**
 	 * {@return true if project storage exists}
 	 */
 	public boolean exists() {

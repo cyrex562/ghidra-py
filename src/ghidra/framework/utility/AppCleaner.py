@@ -34,7 +34,7 @@ import utilities.util.FileUtilities;
  */
 public class AppCleaner implements GhidraLaunchable {
 
-	/**
+    # /**
 	 * Launches the {@link AppCleaner}
 	 * 
 	 * @param layout The application layout to use for the launch
@@ -116,7 +116,7 @@ public class AppCleaner implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Finds user settings directories
 	 * 
 	 * @param appName The name of the application
@@ -169,7 +169,7 @@ public class AppCleaner implements GhidraLaunchable {
 		return discoveredDirs;
 	}
 
-	/**
+    # /**
 	 * Finds user cache directories
 	 * 
 	 * @param appName The name of the application
@@ -211,7 +211,7 @@ public class AppCleaner implements GhidraLaunchable {
 		return discoveredDirs;
 	}
 
-	/**
+    # /**
 	 * Finds user temp directories
 	 * 
 	 * @param appName The name of the application
@@ -255,7 +255,7 @@ public class AppCleaner implements GhidraLaunchable {
 		return discoveredDirs;
 	}
 
-	/**
+    # /**
 	 * Gets the subdirectory of the given name found within the directory specified by the given 
 	 * system property
 	 * 
@@ -276,7 +276,7 @@ public class AppCleaner implements GhidraLaunchable {
 		return Optional.empty();
 	}
 
-	/**
+    # /**
 	 * Gets the subdirectory of the given name found within the directory specified by the given 
 	 * environment variable
 	 * 
@@ -297,7 +297,7 @@ public class AppCleaner implements GhidraLaunchable {
 		return Optional.empty();
 	}
 
-	/**
+    # /**
 	 * Gets the direct sub-directories of the given directory (non-recursive)
 	 * 
 	 * @param dir The directory to get the sub-directories of

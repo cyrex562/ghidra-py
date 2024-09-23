@@ -28,7 +28,7 @@ public class GroupVertex extends AttributedVertex {
 	private Set<AttributedVertex> children;
 	private AttributedVertex first;
 
-	/**
+    # /**
 	 * Creates a new GroupVertex that represents the grouping of the given vertices.
 	 * @param vertices the nodes to be grouped.
 	 * @return a new GroupVertex.
@@ -49,7 +49,7 @@ public class GroupVertex extends AttributedVertex {
 		setVertexType("Collapsed Group");
 	}
 
-	/**
+    # /**
 	 * Returns a set of vertices such that all non-group nodes in the given vertices are included
 	 * and any group nodes in the given vertices are replaced with their contained vertices.
 	 * 
@@ -83,7 +83,7 @@ public class GroupVertex extends AttributedVertex {
 		return vertices.stream().map(AttributedVertex::getName).collect(Collectors.joining("\n"));
 	}
 
-	/** 
+    # /** 
 	 * Returns the set of flattened nodes contained in this node.  In other words, any group nodes
 	 * that were given to this group node would have been swapped for the nodes that the groupd node
 	 * contained.
@@ -94,7 +94,7 @@ public class GroupVertex extends AttributedVertex {
 		return Collections.unmodifiableSet(children);
 	}
 
-	/**
+    # /**
 	 * Returns the node that is first, with first being currently defined to be the one that is 
 	 * first when sorted by id alphabetically.
 	 * 

@@ -39,7 +39,7 @@ import utility.function.Dummy;
  */
 public class TimeoutTaskMonitor implements TaskMonitor {
 
-	/**
+    # /**
 	 * Creates a timeout task monitor that will be cancelled after the specified timeout.
 	 * 
 	 * @param timeout the timeout value
@@ -53,7 +53,7 @@ public class TimeoutTaskMonitor implements TaskMonitor {
 		return timeoutMonitor;
 	}
 
-	/**
+    # /**
 	 * Creates a timeout task monitor that will be cancelled after the specified timeout.  The
 	 * created monitor wraps the given monitor, calling cancel on the given monitor when the
 	 * timeout is reached.  This method allows you to use an existing monitor while adding
@@ -100,7 +100,7 @@ public class TimeoutTaskMonitor implements TaskMonitor {
 		timerMonitor = GTimer.scheduleRunnable(millis, () -> timeout());
 	}
 
-	/**
+    # /**
 	 * Sets a callback function that will be called if the timeout is reached.
 	 * 
 	 * @param timeoutCallback the callback to call
@@ -110,7 +110,7 @@ public class TimeoutTaskMonitor implements TaskMonitor {
 		this.timeoutCallback = Dummy.ifNull(timeoutCallback);
 	}
 
-	/**
+    # /**
 	 * Returns true if this monitor has timed-out
 	 * @return true if this monitor has timed-out
 	 */

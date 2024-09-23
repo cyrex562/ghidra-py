@@ -19,7 +19,7 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.*;
 

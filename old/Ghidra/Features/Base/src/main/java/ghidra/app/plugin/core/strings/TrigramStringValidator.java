@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.strings;
 
-import java.io.*;
+
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.Map.Entry;

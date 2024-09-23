@@ -43,7 +43,7 @@ public class IntArrayList implements Serializable, Saveable {
 		ints = useZeroSize ? EMPTY_INT_ARRAY : new int[MIN_SIZE];
 	}
 
-	/**
+    # /**
 	 * Creates a new intArrayList using the values in the given array
 	 * @param arr array of ints to initialize to.
 	 */
@@ -52,7 +52,7 @@ public class IntArrayList implements Serializable, Saveable {
     	size = arr.length;
     }
     
-	/**
+    # /**
 	 * Adds a new int value at the end of the list.
 	 * @param value the int value to add.
 	 */
@@ -126,7 +126,7 @@ public class IntArrayList implements Serializable, Saveable {
         return ints[index];
     }
 
-	/**
+    # /**
 	 * Sets the array value at index to value.
 	 * @param index the index to set.
 	 * @param value the value to store.
@@ -138,7 +138,7 @@ public class IntArrayList implements Serializable, Saveable {
         ints[index] = value;
 	}
 
-	/**
+    # /**
 	 * Clears the entire array of data.
 	 */
 	public void clear() {
@@ -146,7 +146,7 @@ public class IntArrayList implements Serializable, Saveable {
 		ints = new int[MIN_SIZE];
 	}
 
-	/**
+    # /**
 	 * Returns the size of this virtual array.
 	 * @return int the size of this virtual array.
 	 */
@@ -158,7 +158,7 @@ public class IntArrayList implements Serializable, Saveable {
 		return size == 0;
 	}
 
-	/**
+    # /**
 	 * Converts to a primitive array.
 	 * @return int[] int array for results.
 	 */
@@ -189,7 +189,7 @@ public class IntArrayList implements Serializable, Saveable {
     }
 
 
-	/**
+    # /**
 	 * @see Saveable#restore(ObjectStorage)
 	 */
 	@Override
@@ -198,7 +198,7 @@ public class IntArrayList implements Serializable, Saveable {
 		size = ints.length;
 	}
 
-	/**
+    # /**
 	 * @see Saveable#save(ObjectStorage)
 	 */
 	@Override
@@ -211,7 +211,7 @@ public class IntArrayList implements Serializable, Saveable {
         return classes;
 	}
 	
-	/**
+    # /**
 	 * @see ghidra.util.Saveable#getSchemaVersion()
 	 */
 	@Override
@@ -219,7 +219,7 @@ public class IntArrayList implements Serializable, Saveable {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.util.Saveable#isUpgradeable(int)
 	 */
 	@Override
@@ -227,7 +227,7 @@ public class IntArrayList implements Serializable, Saveable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.util.Saveable#upgrade(ghidra.util.ObjectStorage, int, ghidra.util.ObjectStorage)
 	 */
 	@Override

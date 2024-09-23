@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.address;
 
 import java.util.Objects;
@@ -24,7 +24,7 @@ public abstract class OverlayAddressSpace extends AbstractAddressSpace {
 
 	private final String orderedKey;
 
-	/**
+    # /**
 	 * Construction an overlay address space instance.
 	 * @param baseSpace base overlayed address space
 	 * @param unique unique index/sequence number
@@ -39,7 +39,7 @@ public abstract class OverlayAddressSpace extends AbstractAddressSpace {
 		this.setShowSpaceName(true);
 	}
 
-	/**
+    # /**
 	 * Get the ordered key assigned to this overlay address space instance  This value is used
 	 * when performing {@link #equals(Object)} and {@link #compareTo(AddressSpace)}
 	 * operations.
@@ -87,7 +87,7 @@ public abstract class OverlayAddressSpace extends AbstractAddressSpace {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Get the overlayed (i.e., underlying) base space associated with this overlay space.
 	 * @return overlayed base space.
 	 */
@@ -105,14 +105,14 @@ public abstract class OverlayAddressSpace extends AbstractAddressSpace {
 		return baseSpace.hasMappedRegisters();
 	}
 
-	/**
+    # /**
 	 * Determine if the specified offset is contained within a defined region of this overlay space.
 	 * @param offset unsigned address offset
 	 * @return true if contained within defined region otherwise false
 	 */
 	public abstract boolean contains(long offset);
 
-	/**
+    # /**
 	 * Get the {@link AddressSet} which corresponds to overlayed physical region which 
 	 * corresponds to the defined overlay regions within the overlay (i.e., overlay blocks).
 	 * @return defined regions within the overlay.  All addresses are overlay addresses.
@@ -147,7 +147,7 @@ public abstract class OverlayAddressSpace extends AbstractAddressSpace {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * If the given address is outside the overlay block, then the address is tranlated to an
 	 * address in the base space with the same offset, otherwise (if the address exists in the
 	 * overlay block), it is returned
@@ -160,7 +160,7 @@ public abstract class OverlayAddressSpace extends AbstractAddressSpace {
 		return translateAddress(addr, false);
 	}
 
-	/**
+    # /**
 	 * Tranlated an overlay-space address (addr, which may exceed the bounds of the overlay space)
 	 * to an address in the base space with the same offset. If forceTranslation is false and addr
 	 * is contained within the overlay-space the original addr is returned.
@@ -181,7 +181,7 @@ public abstract class OverlayAddressSpace extends AbstractAddressSpace {
 		return new GenericAddress(baseSpace, addr.getOffset());
 	}
 
-	/**
+    # /**
 	 * @return the ID of the address space underlying this space
 	 */
 	public int getBaseSpaceID() {
@@ -220,7 +220,7 @@ public abstract class OverlayAddressSpace extends AbstractAddressSpace {
 		return s.getOverlayedSpace().equals(baseSpace);
 	}
 
-	/**
+    # /**
 	 * Compare this overlay to the spacified overlay.
 	 * @param overlay other overlay to be checked for eqauality
 	 * @return see {@link Comparable#compareTo(Object)}

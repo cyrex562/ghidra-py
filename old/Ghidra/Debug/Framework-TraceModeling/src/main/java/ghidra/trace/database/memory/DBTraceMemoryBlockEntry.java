@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.memory;
 
-import java.io.IOException;
+
 import java.nio.ByteBuffer;
 
 import db.DBRecord;

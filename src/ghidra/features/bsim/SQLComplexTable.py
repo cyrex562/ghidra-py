@@ -45,7 +45,7 @@ public abstract class SQLComplexTable {
 		db = null;
 	}
 
-	/**
+    # /**
 	 * Creates the db table.
 	 * 
 	 * @param st the query statement
@@ -53,7 +53,7 @@ public abstract class SQLComplexTable {
 	 */
 	public abstract void create(Statement st) throws SQLException;
 
-	/**
+    # /**
 	 * Deletes the row with the given id from the db. Users must set the {@link #DELETE_STMT} string
 	 * to delete the exact table they need.
 	 * 
@@ -71,7 +71,7 @@ public abstract class SQLComplexTable {
 		return s.executeUpdate();
 	}
 
-	/**
+    # /**
 	 * Drops the current table.
 	 * NOTE: If explicitly created index tables exist they should be removed first
 	 * or this method override.
@@ -84,7 +84,7 @@ public abstract class SQLComplexTable {
 		st.executeUpdate(sql);
 	}
 
-	/**
+    # /**
 	 * Inserts a row(s) into the db. The arguments passed to this function are by definition 
 	 * not known, so they are left as a variable-length list of {@link Object} instances, to be
 	 * interpreted by the implementer.

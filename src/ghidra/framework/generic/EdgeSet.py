@@ -36,7 +36,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 	private Edge[] nextEdgeWithSameFrom;
 	private Edge[] nextEdgeWithSameTo;
 
-	/** Constructor
+    # /** Constructor
 	 * @param parent The DirectedGraph that this EdgeSet belongs to.
 	 * @param capacity The initial number of edges this edge set can have
 	 * without growing.
@@ -57,12 +57,12 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		nextEdgeWithSameTo = new Edge[capacity];
 	}
 
-	/** Returns the edge at the specified index in the internal arrays. */
+    # /** Returns the edge at the specified index in the internal arrays. */
 	Edge getByIndex(int index) {
 		return edges[index];
 	}
 
-	/** Removes an edge from this EdgeSet. Returns true if and only if the
+    # /** Removes an edge from this EdgeSet. Returns true if and only if the
 	 *   edge was in the EdgeSet and was sucessfully removed.
 	 */
 	@Override
@@ -132,7 +132,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		return false;
 	}
 
-	/** Adds an edge to the graph. If either endpoint is not in the graph add it.
+    # /** Adds an edge to the graph. If either endpoint is not in the graph add it.
 	 *   If the edge is already in the graph return false and do nothing. 
 	 *  @return true if and only if the edge was sucessfully added.
 	 */
@@ -183,13 +183,13 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 
 	}
 
-	/** Return true if and only if the edge is contained in this EdgeSet. */
+    # /** Return true if and only if the edge is contained in this EdgeSet. */
 	@Override
 	public boolean contains(Edge edge) {
 		return edgeIndices.contains(edge.key());
 	}
 
-	/** Returns the internal index of the given edge within this edge set.
+    # /** Returns the internal index of the given edge within this edge set.
 	 *  Throws a class cast exception if the object is not an edge. */
 	int index(Edge e) {
 		try {
@@ -200,7 +200,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		}
 	}
 
-	/** Returns the next edge having the same 'from' if it exists. Otherwise
+    # /** Returns the next edge having the same 'from' if it exists. Otherwise
 	  returns null.
 	*/
 	Edge getNextEdgeWithSameFrom(Edge e) {
@@ -211,7 +211,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		return null;
 	}
 
-	/** Returns next edge having the same 'to' if it exists. Otherwise returns
+    # /** Returns next edge having the same 'to' if it exists. Otherwise returns
 	  null.
 	*/
 	Edge getNextEdgeWithSameTo(Edge e) {
@@ -222,7 +222,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		return null;
 	}
 
-	/** Returns the previous edge having the same 'from' if it exists. Otherwise
+    # /** Returns the previous edge having the same 'from' if it exists. Otherwise
 	  returns null.
 	*/
 	Edge getPreviousEdgeWithSameFrom(Edge e) {
@@ -233,7 +233,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		return null;
 	}
 
-	/** Returns previous edge having the same 'to' if it exists. Otherwise returns
+    # /** Returns previous edge having the same 'to' if it exists. Otherwise returns
 	  null.
 	*/
 	Edge getPreviousEdgeWithSameTo(Edge e) {
@@ -244,33 +244,33 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		return null;
 	}
 
-	/** Helper method for maintaining internal data structures. */
+    # /** Helper method for maintaining internal data structures. */
 	private void setNextEdgeWithSameFrom(Edge e, Edge nextEdge) {
 		nextEdgeWithSameFrom[index(e)] = nextEdge;
 	}
 
-	/** Helper method for maintaining internal data structures. */
+    # /** Helper method for maintaining internal data structures. */
 	private void setNextEdgeWithSameTo(Edge e, Edge nextEdge) {
 		nextEdgeWithSameTo[index(e)] = nextEdge;
 	}
 
-	/** Helper method for maintaining internal data structures. */
+    # /** Helper method for maintaining internal data structures. */
 	private void setPreviousEdgeWithSameFrom(Edge e, Edge previousEdge) {
 		previousEdgeWithSameFrom[index(e)] = previousEdge;
 	}
 
-	/** Helper method for maintaining internal data structures. */
+    # /** Helper method for maintaining internal data structures. */
 	private void setPreviousEdgeWithSameTo(Edge e, Edge previousEdge) {
 		previousEdgeWithSameTo[index(e)] = previousEdge;
 	}
 
-	/** Returns the current number of edges within this edge set. */
+    # /** Returns the current number of edges within this edge set. */
 	@Override
 	public int size() {
 		return this.edgeIndices.size();
 	}
 
-	/** Empties out the edge set while leaving the capacity alone. Much faster
+    # /** Empties out the edge set while leaving the capacity alone. Much faster
 	  than removing the edges one by one.
 	*/
 	public void clear() {
@@ -288,13 +288,13 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		modificationNumber++;
 	}
 
-	/** Returns the number of edges this edge set can hold without growing. */
+    # /** Returns the number of edges this edge set can hold without growing. */
 	@Override
 	public int capacity() {
 		return this.capacity;
 	}
 
-	/** Either compacts the edge set by removing vacant positions if there are
+    # /** Either compacts the edge set by removing vacant positions if there are
 	  many or grows the edge set so that there is additional space.
 	*/
 	void grow() {
@@ -356,13 +356,13 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		}
 	}
 
-	/** Returns an iterator for this EdgeSet. */
+    # /** Returns an iterator for this EdgeSet. */
 	@Override
 	public GraphIterator<Edge> iterator() {
 		return new EdgeSetIterator();
 	}
 
-	/** Used to test if edges have been added or removed from this edge set. */
+    # /** Used to test if edges have been added or removed from this edge set. */
 	@Override
 	public long getModificationNumber() {
 		return this.modificationNumber;
@@ -397,7 +397,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 //      }
 //  }
 
-	/** Get the edges in this EdgeSet as a java.util.Set. */
+    # /** Get the edges in this EdgeSet as a java.util.Set. */
 	public Set<Edge> toSet() {
 		GraphIterator<Edge> i = this.iterator();
 		Set<Edge> s = new HashSet<>(this.size());
@@ -407,7 +407,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		return s;
 	}
 
-	/** @return array of Edges contained in this EdgeSet */
+    # /** @return array of Edges contained in this EdgeSet */
 	@Override
 	public Edge[] toArray() {
 		Edge[] theEdges = new Edge[this.size()];
@@ -422,7 +422,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		return theEdges;
 	}
 
-	/** EdgeSetIterator uses the hasNext()/next() paradigm. Throws
+    # /** EdgeSetIterator uses the hasNext()/next() paradigm. Throws
 	a ConcurrentModificationException if any addition or deletions to
 	the backing EdgeSet are made except through the iterator's own methods.
 	*/
@@ -431,7 +431,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 		private int nextPosition;
 		private long edgeSetModificationNumber;
 
-		/** Constructor */
+	    # /** Constructor */
 		public EdgeSetIterator() {
 			currentPosition = -1;
 			nextPosition = -1;
@@ -447,7 +447,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 			}
 		}
 
-		/** @return true if and only if a call to next() will return a valid edge. 
+	    # /** @return true if and only if a call to next() will return a valid edge. 
 		 * @throws ConcurrentModificationException 
 		 */
 		@Override
@@ -461,7 +461,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 			return false;
 		}
 
-		/** @return the next edge.
+	    # /** @return the next edge.
 		 * @throws ConcurrentModificationException
 		 * @throws NoSuchElementException if there is no next edge.
 		 */
@@ -478,7 +478,7 @@ class EdgeSet implements KeyIndexableSet<Edge> {
 			throw new NoSuchElementException();
 		}
 
-		/** Removes the edge returned by the most recent call to next(). */
+	    # /** Removes the edge returned by the most recent call to next(). */
 		@Override
 		public boolean remove() throws ConcurrentModificationException {
 			boolean removed;

@@ -28,7 +28,7 @@ public class CustomFormat {
 	private DataType dataType;
 	private byte[] format;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param dataType data type associated with this format
 	 * @param format bytes that define the format
@@ -38,14 +38,14 @@ public class CustomFormat {
 		this.format = format;
 	}
 
-	/**
+    # /**
 	 * Get the data type associated with this format.
 	 */
 	public DataType getDataType() {
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * Get the bytes that define this format.
 	 */
 	public byte[] getBytes() {

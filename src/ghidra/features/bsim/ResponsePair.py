@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +54,7 @@ public class ResponsePair extends QueryResponseRecord {
 		public int missedVector = 0;
 		public int pairCount = 0;
 
-		/**
+	    # /**
 		 * Accumulate from already summarized statistics in a ResponsePair
 		 * This method can be called multiple times to aggregate responses from multiple ResponsePairs
 		 * @param responsePair to be merged

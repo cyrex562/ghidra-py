@@ -25,7 +25,7 @@ package utility.function;
 @FunctionalInterface
 public interface ExceptionalConsumer<T, E extends Throwable> {
 
-	/**
+    # /**
 	 * The method that will be called
 	 * 
 	 * @param t the input

@@ -40,7 +40,7 @@ class ExportAttributedGraphDisplay implements GraphDisplay {
 	private String title;
 	private AttributedGraph graph;
 
-	/**
+    # /**
 	 * Create the initial display, the graph-less visualization viewer, and its controls
 	 * @param programGraphDisplayProvider provides a {@link PluginTool} for Docking features
 	 */
@@ -59,7 +59,7 @@ class ExportAttributedGraphDisplay implements GraphDisplay {
 		listener.dispose();
 	}
 
-	/**
+    # /**
 	 * set the {@link AttributedGraph} for visualization
 	 * @param attributedGraph the {@link AttributedGraph} to visualize
 	 */

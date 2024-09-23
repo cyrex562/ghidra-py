@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.script;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 
 import javax.swing.KeyStroke;
 

@@ -17,7 +17,7 @@ package ghidra.pcode.emu.taint.plain;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.*;

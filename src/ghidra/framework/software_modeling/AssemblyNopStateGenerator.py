@@ -32,7 +32,7 @@ public class AssemblyNopStateGenerator
 		extends AbstractAssemblyStateGenerator<AssemblyParseNumericToken> {
 	protected final OperandSymbol opSym;
 
-	/**
+    # /**
 	 * Construct the hidden value operand state generator
 	 * 
 	 * @param resolver the resolver

@@ -18,7 +18,7 @@ package ghidra.file.formats.ios.generic;
 import generic.jar.ResourceFile;
 import ghidra.file.crypto.CryptoKeyFactory;
 
-import java.io.*;
+
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;

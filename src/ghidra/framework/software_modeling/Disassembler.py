@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.disassemble;
 
 import java.lang.reflect.Constructor;
@@ -41,25 +41,25 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Class to perform disassembly.  Contains the logic to follow instruction
- * flows to continue the disassembly.
- * 17-Nov-2008: moved to ghidra.program.disassemble package since this is now used during 
- * 					      language upgrades which may occur during construction of ProgramDB.
- * 12-Dec-2012: major refactor of disassembly to perform bulk add of instructions to 
- * program to avoid context related conflicts
- */
+# * Class to perform disassembly.  Contains the logic to follow instruction
+# * flows to continue the disassembly.
+# * 17-Nov-2008: moved to ghidra.program.disassemble package since this is now used during 
+# * 					      language upgrades which may occur during construction of ProgramDB.
+# * 12-Dec-2012: major refactor of disassembly to perform bulk add of instructions to 
+# * program to avoid context related conflicts
+# */
 public class Disassembler implements DisassemblerConflictHandler {
 
 	private static final int DISASSEMBLE_MEMORY_CACHE_SIZE = 8;
 
-	/**
+    # /**
 	 * <code>MARK_BAD_INSTRUCTION_PROPERTY</code> Program Disassembler property 
 	 * enables marking of instruction disassembly errors.  Boolean property is defined
 	 * within the Disassembler property list, see {@link Program#DISASSEMBLER_PROPERTIES}.
 	 */
 	public static final String MARK_BAD_INSTRUCTION_PROPERTY = "Mark Bad Disassembly";
 
-	/**
+    # /**
 	 * <code>MARK_UNIMPL_PCODE_PROPERTY</code> Program Disassembler property 
 	 * enables marking of instructions which are missing their pcode implementation.  
 	 * Boolean property is defined within the Disassembler property list, see 
@@ -67,7 +67,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 	 */
 	public static final String MARK_UNIMPL_PCODE_PROPERTY = "Mark Unimplemented Pcode";
 
-	/**
+    # /**
 	 * <code>RESTRICT_DISASSEMBLY_TO_EXECUTE_MEMORY_PROPERTY</code> Program Disassembler property 
 	 * restricts disassembly to executable memory only.  
 	 * Boolean property is defined within the Disassembler property list, see 
@@ -121,7 +121,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 
 	private boolean followFlow = false;
 
-	/**
+    # /**
 	 * Get a suitable disassembler instance. 
 	 * The following Program options are used during disassbly:
 	 * <ul>
@@ -154,7 +154,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return new Disassembler(program, monitor, listener);
 	}
 
-	/**
+    # /**
 	 * Get a suitable disassembler instance.
 	 * Intended for block pseudo-disassembly use only when the method 
 	 * {@link Disassembler#pseudoDisassembleBlock(MemBuffer, RegisterValue, int)}
@@ -187,7 +187,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return new Disassembler(language, addrFactory, monitor, listener);
 	}
 
-	/**
+    # /**
 	 * Get a suitable disassembler instance.
 	 * @param program the program to be disassembled.
 	 * @param markBadInstructions if true bad instructions will be marked
@@ -223,7 +223,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 
 	// TODO: Force use of factory methods above by making constructors protected
 
-	/**
+    # /**
 	 * Disassembler constructor.
 	 * The following Program options are used during disassbly:
 	 * <ul>
@@ -242,7 +242,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 			monitor, listener);
 	}
 
-	/**
+    # /**
 	 * Disassembler constructor.  Intended for block pseudo-disassembly use only.
 	 * NOTE: Executable memory restriction is not provided but should possibly be considered
 	 * by any use of the resulting instance.
@@ -256,7 +256,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		this(null, language, addrFactory, false, false, false, monitor, listener);
 	}
 
-	/**
+    # /**
 	 * Disassembler constructor
 	 * @param program the program to be disassembled.
 	 * @param markBadInstructions if true bad instructions will be marked
@@ -310,7 +310,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		resetDisassemblerContext();
 	}
 
-	/**
+    # /**
 	 * Set seed context which will be used to establish initial context at starting points
 	 * which are not arrived at via a natural disassembly flow.  A null value will disable
 	 * use of any previously set seed context
@@ -334,7 +334,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		instructionSetSizeLimit = limit;
 	}
 
-	/**
+    # /**
 	 * Set the maximum number of instructions in a single run which contain the same byte values.
 	 * Disassembly flow will stop and be flagged when this threshold is encountered.
 	 * This check is set to MAX_REPEAT_PATTERN_LENGTH by default, and can be disabled by setting a value of -1
@@ -347,7 +347,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		repeatInstructionByteTracker.setRepeatPatternLimit(maxInstructions);
 	}
 
-	/**
+    # /**
 	 * Set the region over which the repeat pattern limit will be ignored.
 	 * This allows areas which have been explicitly disassembled to be 
 	 * free of bad bookmarks caused by the repeat pattern limit being exceeded.
@@ -357,7 +357,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		repeatInstructionByteTracker.setRepeatPatternLimitIgnored(set);
 	}
 
-	/**
+    # /**
 	 * @param program the program to check
 	 * @return true if program MARK_BAD_INSTRUCTION_PROPERTY has been enabled
 	 */
@@ -366,7 +366,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return options.getBoolean(MARK_BAD_INSTRUCTION_PROPERTY, true);
 	}
 
-	/**
+    # /**
 	 * @param program the program to check
 	 * @return true if program MARK_UNIMPL_PCODE_PROPERTY has been enabled
 	 */
@@ -375,7 +375,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return options.getBoolean(MARK_UNIMPL_PCODE_PROPERTY, true);
 	}
 
-	/**
+    # /**
 	 * @param program the program to check
 	 * @return true if program RESTRICT_DISASSEMBLY_TO_EXECUTE_MEMORY_PROPERTY has been enabled
 	 */
@@ -418,7 +418,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return set;
 	}
 
-	/**
+    # /**
 	 * Attempt disassembly of all undefined code units within the specified set of addresses.
 	 * NOTE: A single instance of this Disassembler does not support concurrent
 	 * invocations of the various disassemble methods.
@@ -433,7 +433,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return disassemble(startSet, restrictedSet, null, doFollowFlow);
 	}
 
-	/**
+    # /**
 	 * Attempt disassembly of all undefined code units within the specified set of addresses.
 	 * NOTE: A single instance of this Disassembler does not support concurrent
 	 * invocations of the various disassemble methods.
@@ -514,7 +514,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return disassembledAddrs;
 	}
 
-	/**
+    # /**
 	 * Disassembles code starting at startAddr and restricted to addrSet.
 	 * NOTE: A single instance of this Disassembler does not support concurrent
 	 * invocations of the various disassemble methods.
@@ -527,7 +527,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return disassemble(startAddr, restrictedSet, true);
 	}
 
-	/**
+    # /**
 	 * Disassembles code starting at startAddr and restricted to addrSet.
 	 * NOTE: A single instance of this Disassembler does not support concurrent
 	 * invocations of the various disassemble methods. 
@@ -542,7 +542,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return disassemble(startAddr, restrictedSet, null, doFollowFlow);
 	}
 
-	/**
+    # /**
 	 * Disassembles code starting at startAddr and restricted to addrSet.
 	 * NOTE: A single instance of this Disassembler does not support concurrent
 	 * invocations of the various disassemble methods.  
@@ -720,7 +720,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return instructionSet;
 	}
 
-	/**
+    # /**
 	 * Clear any retained context state which may have been accumulated.
 	 * Use of this method is only needed when using the pseudoDisassembleBlock 
 	 * method over an extended code range to avoid excessive in-memory state accumulation.
@@ -730,7 +730,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		disassemblerContext = new DisassemblerContextImpl(disassemblerProgramContext);
 	}
 
-	/**
+    # /**
 	 * Perform a pseudo-disassembly of an single instruction block only following fall-throughs.
 	 * WARNING! This method should not be used in conjunction with other disassembly methods
 	 * on the this Disassembler instance.  Disassembler must be instantiated with a Program object.
@@ -750,7 +750,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 			defaultContextValue, limit);
 	}
 
-	/**
+    # /**
 	 * Perform a pseudo-disassembly of an single instruction block only following fall-throughs.
 	 * WARNING! This method should not be used in conjunction with other disassembly methods
 	 * on the this Disassembler instance.
@@ -844,7 +844,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return block;
 	}
 
-	/**
+    # /**
 	 * Examine delay-slotted instruction to determine if it has a fall-through
 	 * @param dsInstr pseudo-instruction within existingBlock
 	 * @param existingBlock InstructionBlock containing dsInstr
@@ -1131,7 +1131,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Adjust disassembler context prior to disassembly of a new instruction.
 	 * @param instrMemBuffer buffer for bytes from memory
 	 * @throws UnknownInstructionException if instruction is invalid
@@ -1163,7 +1163,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return parallelHelper == null || parallelHelper.isEndOfParallelInstructionGroup(instr);
 	}
 
-	/**
+    # /**
 	 * Process a new instruction which has just been parsed.  This method is responsible for
 	 * adding the instruction to the current block as well as any delay-slotted instructions.
 	 * This method may be overridden and the instruction re-parsed if necessary. 
@@ -1349,7 +1349,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		return null; // error occurred
 	}
 
-	/**
+    # /**
 	 * Check if the called function doesn't return
 	 * 
 	 * @return true if the call also falls through to this instruction
@@ -1457,7 +1457,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 			"Instruction pcode is unimplemented: " + instr.getMnemonicString());
 	}
 
-	/**
+    # /**
 	 * Mark all instructions with unimplemented pcode over the specified address set
 	 * @param program to mark unimplemented in
 	 * @param addressSet restricted address set or null for entire program
@@ -1479,7 +1479,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear all bookmarks which indicate unimplemented pcode within the specified address set.
 	 * @param program program to clear bookmarks
 	 * @param addressSet restricted address set or null for entire program
@@ -1498,7 +1498,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear all bookmarks which indicate Bad Instruction within the specified address set.
 	 * @param program program to clear bookmarks
 	 * @param addressSet restricted address set or null for entire program
@@ -1522,7 +1522,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		}
 	}
 
-	/**
+    # /**
 	 * <code>DisassemblerProgramContext</code> is used as a proxy program context due to the 
 	 * delayed nature of laying down instructions and their associated context state.
 	 * This is used to track context not yet committed for use by the DisassemblerContext 
@@ -1544,7 +1544,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 			}
 		}
 
-		/**
+	    # /**
 		 * Following the parse of a new instruction prototype, get a immutable processor context
 		 * for minting a new instruction.  If value is not null, the temporary context is expanded 
 		 * to include the context-register value.  The temporary context should be cleared after in-memory
@@ -1730,7 +1730,7 @@ public class Disassembler implements DisassemblerConflictHandler {
 		}
 	}
 
-	/**
+    # /**
 	 * InstructionContext is an immutable context for use when minting pseudo instructions.
 	 */
 	private static class InstructionContext implements ProcessorContext {

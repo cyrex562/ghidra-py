@@ -28,7 +28,7 @@ package ghidra.app.decompiler;
  */
 public interface DecompilerHighlightService {
 
-	/**
+    # /**
 	 * Creates a highlighter that will use the given matcher to create highlights as functions
 	 * get decompiled.
 	 * @param tm the matcher
@@ -36,7 +36,7 @@ public interface DecompilerHighlightService {
 	 */
 	public DecompilerHighlighter createHighlighter(CTokenHighlightMatcher tm);
 
-	/**
+    # /**
 	 * A version of {@link #createHighlighter(String, CTokenHighlightMatcher)} that allows clients
 	 * to specify an ID.  This ID will be used to ensure that any existing highlighters with that
 	 * ID will be removed before creating a new highlighter.

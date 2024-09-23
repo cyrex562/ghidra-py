@@ -26,14 +26,14 @@ import resources.ResourceManager;
  */
 public class HelpLocation {
 
-	/**
+    # /**
 	 * A special prefix used in the 'src' attribute if links and images to signal to the framework
 	 * to locate the given resource.  Using this allows cross-module help references to be relative,
 	 * starting with this prefix.
 	 */
 	public static final String HELP_TOPICS = "help/topics/";
 
-	/**
+    # /**
 	 * A special prefix used in the 'src' attribute if links and images to signal to the framework
 	 * to locate the given resource.  This is meant to be used with shared help resources, such
 	 * as images.
@@ -48,12 +48,12 @@ public class HelpLocation {
 
 	private String inceptionInformation;
 
-	/**
+    # /**
 	 * Flag for lazy-loading the URL value of this class
 	 */
 	private boolean urlInitialized;
 
-	/**
+    # /**
 	 * Construct a Help location using the specified topic and anchor names.
 	 * An html file contained within the specified help topic directory must have an Anchor
 	 * defined using the specified anchor name.
@@ -71,7 +71,7 @@ public class HelpLocation {
 		this(topic, anchor, createInception());
 	}
 
-	/**
+    # /**
 	 * Construct a Help location using the specified topic and anchor names.
 	 * An html file contained within the specified help topic directory must have an Anchor
 	 * defined using the specified anchor name.
@@ -179,7 +179,7 @@ public class HelpLocation {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the help ID for this help location.
 	 * @return null if there is a Help URL instead of a help ID
 	 */
@@ -187,7 +187,7 @@ public class HelpLocation {
 		return id;
 	}
 
-	/**
+    # /**
 	 * Returns the topic name/path if known, otherwise null.
 	 * @return the topic name/path if known, otherwise null.
 	 */
@@ -195,7 +195,7 @@ public class HelpLocation {
 		return topic;
 	}
 
-	/**
+    # /**
 	 * Returns the topic anchor name if known, otherwise null.
 	 * @return the topic anchor name if known, otherwise null.
 	 */
@@ -203,7 +203,7 @@ public class HelpLocation {
 		return anchor;
 	}
 
-	/**
+    # /**
 	 * Get the help URL for this help location. A URL is created when the
 	 * constructor <code>HelpLocation(Class, String, String)</code> is
 	 * used by a plugin that has help relative to its class.
@@ -287,7 +287,7 @@ public class HelpLocation {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns information describing how/where this help location was created.  This value may
 	 * be null.
 	 * @return information describing how/where this help location was created.

@@ -15,7 +15,7 @@
  */
 package docking.widgets.table.model;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.widgets.table.GDynamicColumnTableModel;

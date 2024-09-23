@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.debug.gui.modules;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.*;
 

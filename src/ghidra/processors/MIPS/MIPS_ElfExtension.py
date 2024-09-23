@@ -438,7 +438,7 @@ public class MIPS_ElfExtension extends ElfExtension {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Attempt to update external dynamic .got entries for non-relocatable binaries.
 	 * @param elfLoadHelper ELF load helper
 	 * @param elfSymbol ELF symbol being processed

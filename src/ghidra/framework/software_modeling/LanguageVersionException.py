@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.program.util.*;
@@ -24,7 +24,7 @@ public class LanguageVersionException extends VersionException {
 	private Language oldLanguage;
 	private LanguageTranslator languageTranslator;
 
-	/**
+    # /**
 	 * Construct a language version exception
 	 * @param msg condition detail
 	 * @param upgradable true indicates that an upgrade is possible.
@@ -33,7 +33,7 @@ public class LanguageVersionException extends VersionException {
 		super(msg, upgradable ? OLDER_VERSION : UNKNOWN_VERSION, upgradable);
 	}
 
-	/**
+    # /**
 	 * Construct a major upgradeable language version exception
 	 * @param oldLanguage old language stub
 	 * @param languageTranslator language transalator
@@ -45,7 +45,7 @@ public class LanguageVersionException extends VersionException {
 		this.languageTranslator = languageTranslator;
 	}
 
-	/**
+    # /**
 	 * Old language stub if language translation required
 	 * @return Old language stub or null
 	 */
@@ -53,7 +53,7 @@ public class LanguageVersionException extends VersionException {
 		return oldLanguage;
 	}
 
-	/**
+    # /**
 	 * Old language upgrade translator if language translation required
 	 * @return language upgrade translator or null
 	 */
@@ -61,7 +61,7 @@ public class LanguageVersionException extends VersionException {
 		return languageTranslator;
 	}
 
-	/**
+    # /**
 	 * Check language against required version information.  If not a match or upgradeable
 	 * a {@link LanguageNotFoundException} will be thrown.  If an upgradeable {@link LanguageVersionException}
 	 * is returned, a major version change will also include the appropriate Old-Language stub and
@@ -129,7 +129,7 @@ public class LanguageVersionException extends VersionException {
 		return null; // language matches
 	}
 
-	/**
+    # /**
 	 * Determine if a missing language resulting in a {@link LanguageNotFoundException} can be 
 	 * upgraded to a replacement language via a language translation.
 	 * @param e original {@link LanguageNotFoundException}

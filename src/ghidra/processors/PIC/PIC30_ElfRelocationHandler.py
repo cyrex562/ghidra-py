@@ -29,7 +29,7 @@ import ghidra.program.model.reloc.RelocationResult;
 public class PIC30_ElfRelocationHandler
 		extends AbstractElfRelocationHandler<PIC30_ElfRelocationType, PIC30_ElfRelocationContext> {
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public PIC30_ElfRelocationHandler() {

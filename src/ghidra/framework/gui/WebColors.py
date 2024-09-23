@@ -181,7 +181,7 @@ public abstract class WebColors {
 	private WebColors() {
 	}
 
-	/**
+    # /**
 	 * Tries to find a color for the given String value. The String value can either be
 	 * a hex string (see {@link Color#decode(String)}) or a web color name as defined
 	 * above
@@ -195,7 +195,7 @@ public abstract class WebColors {
 		return color != null ? color : defaultColor;
 	}
 
-	/**
+    # /**
 	 * Converts a color to a string value. If there is a defined color for the given color value,
 	 * the color name will be returned. Otherwise, it will return a hex string for the color as
 	 * follows. If the color has an non-opaque alpha value, it will be of the form #rrggbb. If
@@ -208,7 +208,7 @@ public abstract class WebColors {
 		return toString(color, true);
 	}
 
-	/**
+    # /**
 	 * Converts a color to a string value.  If the color is a WebColor and the useNameIfPossible
 	 * is true, the name of the color will be returned. OOtherwise, it will return a hex string for the color as
 	 * follows. If the color has an non-opaque alpha value, it will be of the form #rrggbb. If
@@ -233,7 +233,7 @@ public abstract class WebColors {
 		return colorToNameMap.get(color.getRGB());
 	}
 
-	/**
+    # /**
 	 * Returns the hex value string for the given color
 	 * @param color the color
 	 * @return the string
@@ -247,7 +247,7 @@ public abstract class WebColors {
 		return String.format("#%06x", rgb);
 	}
 
-	/**
+    # /**
 	 * Returns the rgb value string for the given color
 	 * @param color the color
 	 * @return the string
@@ -266,7 +266,7 @@ public abstract class WebColors {
 		return "rgb(" + rgb + ")";
 	}
 
-	/**
+    # /**
 	 * Returns the WebColor name for the given color. Returns null if the color is not a WebColor
 	 * @param color the color to lookup a WebColor name.
 	 * @return the WebColor name for the given color. Returns null if the color is not a WebColor
@@ -281,7 +281,7 @@ public abstract class WebColors {
 		return color;
 	}
 
-	/**
+    # /**
 	 * Attempts to convert the given string into a color in a most flexible manner. It first checks
 	 * if the given string matches the name of a known web color as defined above. If so it
 	 * returns that color. Otherwise it tries to parse the string in any one of the following
@@ -323,7 +323,7 @@ public abstract class WebColors {
 		return parseRgbColor(colorString);
 	}
 
-	/**
+    # /**
 	 * Parses the given string into a color. The string must be in one of the following formats:
 	 * <pre>
 	 * #rrggbb
@@ -370,7 +370,7 @@ public abstract class WebColors {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses the given string into a color. The string must be in one of the following formats:
 	 * <pre>
 	 * rgb(red, green, blue)

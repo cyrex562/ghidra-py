@@ -16,7 +16,7 @@
 package ghidra.app.util.opinion;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 import java.util.*;

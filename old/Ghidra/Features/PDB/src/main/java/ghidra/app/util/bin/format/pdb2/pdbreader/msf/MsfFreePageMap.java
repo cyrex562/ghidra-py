@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.util.LittleEndianDataConverter;

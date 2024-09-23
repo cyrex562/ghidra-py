@@ -120,7 +120,7 @@ public class ShortArray implements Array, Serializable {
         shorts = newshorts;
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.Array#getLastNonEmptyIndex()
 	 */    

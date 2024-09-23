@@ -25,7 +25,7 @@ public class Vertex implements KeyedObject, Comparable<Vertex> {
 	private final Object referent;
 	private static final KeyedObjectFactory vf = KeyedObjectFactory.getInstance();
 
-	/**
+    # /**
 	 * Creates a vertex tied to a referent object. The object the key refers
 	 * to can be obtained from the vertex factory using the key of the vertex.
 	 * If there is already a vertex having the same key as returned by
@@ -38,7 +38,7 @@ public class Vertex implements KeyedObject, Comparable<Vertex> {
 		this.referent = referent;
 	}
 
-	/** 
+    # /** 
 	 * @return The key of this vertex. 
 	 */
 	@Override
@@ -54,7 +54,7 @@ public class Vertex implements KeyedObject, Comparable<Vertex> {
 		return "Nexus";
 	}
 
-	/** 
+    # /** 
 	 * @return true iff and only if the given object is a Vertex with the same
 	 * key.
 	 */
@@ -66,14 +66,14 @@ public class Vertex implements KeyedObject, Comparable<Vertex> {
 		return false;
 	}
 
-	/** 
+    # /** 
 	 * @return The Object this vertex refers to specified at creation time.
 	 */
 	public Object referent() {
 		return this.referent;
 	}
 
-	/** 
+    # /** 
 	 * @see java.lang.Object#hashCode()
 	 * Overides hashCode() to use the key of this Vertex.
 	 */
@@ -82,7 +82,7 @@ public class Vertex implements KeyedObject, Comparable<Vertex> {
 		return (int) this.key;
 	}
 
-	/** 
+    # /** 
 	 * Compares two vertices by keys. If the specified object o is not a Vertex a
 	 * ClassCastException will be thrown.
 	 */
@@ -100,7 +100,7 @@ public class Vertex implements KeyedObject, Comparable<Vertex> {
 		}
 	}
 
-	/** 
+    # /** 
 	 * Return the name of this vertex. If the Vertex has a referent, the 
 	 * referent's toString() method will be used to create the name. If
 	 * the Vertex has a null referent, then the key will be used to determine

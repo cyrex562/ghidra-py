@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.description;
 
-import java.io.IOException;
+
 
 import generic.lsh.vector.LSHVectorFactory;
 import ghidra.features.bsim.query.LSHException;

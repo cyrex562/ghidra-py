@@ -42,7 +42,7 @@ public class EHUnwindModel extends AbstractCreateDataTypeModel {
 
 	private DataType dataType;
 
-	/**
+    # /**
 	 * Creates the model for the exception handling TryBlockMapEntry data type.
 	 * @param program the program
 	 * @param unwindCount the number of UnwindMapEntry data types expected at the map address.
@@ -59,7 +59,7 @@ public class EHUnwindModel extends AbstractCreateDataTypeModel {
 		return DATA_TYPE_NAME;
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the indicated address appears to be a valid location for the
 	 * indicated number of unwind map entry data types.
 	 * @throws InvalidDataTypeException if this model's location does not appear to be a valid 
@@ -81,7 +81,7 @@ public class EHUnwindModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the UnwindMapEntry structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the UnwindMapEntry structure.
@@ -123,7 +123,7 @@ public class EHUnwindModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.getMatchingDataType(program, typedefDt);
 	}
 
-	/**
+    # /**
 	 * This gets the UnwindMapEntry structure for this model.
 	 * @return the UnwindMapEntry structure.
 	 */
@@ -140,7 +140,7 @@ public class EHUnwindModel extends AbstractCreateDataTypeModel {
 		return getDataType().getLength();
 	}
 
-	/**
+    # /**
 	 * Gets the To State value of the unwind, if there is one, in the UnwindMapEntry indicated 
 	 * by the ordinal.
 	 * @param unwindOrdinal 0-based ordinal indicating which UnwindMapEntry in the map.
@@ -156,7 +156,7 @@ public class EHUnwindModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getEHStateValue(dt, TO_STATE_ORDINAL, specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets the unwind action address, if there is one, in the UnwindMapEntry 
 	 * indicated by the ordinal.
 	 * @param unwindOrdinal 0-based ordinal indicating which UnwindMapEntry in the map.
@@ -174,7 +174,7 @@ public class EHUnwindModel extends AbstractCreateDataTypeModel {
 		return getAdjustedAddress(refAddress, 0);
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component containing the unwind action address, if there is one. 
 	 * Otherwise, this returns null.
 	 * @param unwindOrdinal 0-based ordinal indicating which UnwindMapEntry in the map.

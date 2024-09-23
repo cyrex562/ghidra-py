@@ -52,7 +52,7 @@ public class FGComponent extends GraphComponent<FGVertex, FGEdge, FunctionGraph>
 	private static final Color UNDEFINED_FUNCTION_COLOR = new GColor("color.bg.undefined");
 	//@formatter:on
 
-	/**
+    # /**
 	 * A somewhat arbitrary value that is used to signal a 'big' graph, which is one that will
 	 * slow down the system during the rendering process.
 	 */

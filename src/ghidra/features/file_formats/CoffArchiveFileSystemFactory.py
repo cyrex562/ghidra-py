@@ -17,7 +17,7 @@ package ghidra.file.formats.coff;
 
 import java.util.Arrays;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.app.util.bin.format.coff.archive.CoffArchiveConstants;

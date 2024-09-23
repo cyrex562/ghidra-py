@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;
@@ -44,7 +44,7 @@ public abstract class OatHeader implements StructConverter {
 
 	protected List<OatDexFile> oatDexFileList = new ArrayList<OatDexFile>();
 
-	/**
+    # /**
 	 * Base constructor for the OAT headers.
 	 * @param reader the binary reader with the file bytes.
 	 * @throws IOException if an IO exception occurs.
@@ -54,7 +54,7 @@ public abstract class OatHeader implements StructConverter {
 		version = reader.readNextAsciiString(4);
 	}
 
-	/**
+    # /**
 	 * Parses the OAT header beyond the MAGIC and VERSION fields.
 	 * The "additionalData" is used to future proof the parsers.
 	 * For example, its needed for handling vdex files.
@@ -83,7 +83,7 @@ public abstract class OatHeader implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the MAGIC string, i.e. "oat\n".
 	 * @return the MAGIC string, i.e. "oat\n".
 	 */
@@ -91,7 +91,7 @@ public abstract class OatHeader implements StructConverter {
 		return magic;
 	}
 
-	/**
+    # /**
 	 * Returns the VERSION string, e.g. "001", "009", etc.
 	 * @return the VERSION string, e.g. "001", "009", etc.
 	 */
@@ -99,38 +99,38 @@ public abstract class OatHeader implements StructConverter {
 		return version;
 	}
 
-	/**
+    # /**
 	 * Returns the binary offset to the DEX files.
 	 * @param reader the binary reader with the file bytes.
 	 * @return the binary offset to the DEX files.
 	 */
 	abstract public int getOatDexFilesOffset(BinaryReader reader);
 
-	/**
+    # /**
 	 * Returns the number of DEX files embedded inside this OAT file.
 	 * @return the number of DEX files embedded inside this OAT file.
 	 */
 	abstract public int getDexFileCount();
 
-	/**
+    # /**
 	 * Returns the size (in bytes) of the Key/Value store contained inside this OAT file.
 	 * @return the size (in bytes) of the Key/Value store contained inside this OAT file.
 	 */
 	abstract public int getKeyValueStoreSize();
 
-	/**
+    # /**
 	 * Returns a list of the OatDexFileHeader, a structure defining the embedded DEX files.
 	 * @return a list of the OatDexFileHeader, a structure defining the embedded DEX files.
 	 */
 	abstract public List<OatDexFile> getOatDexFileList();
 
-	/**
+    # /**
 	 * Returns the OAT instruction set (ARM, X86, etc).
 	 * @return the OAT instruction set (ARM, X86, etc).
 	 */
 	abstract public OatInstructionSet getInstructionSet();
 
-	/**
+    # /**
 	 * Returns the offset to the executable code.
 	 * Relative to the "oatdata" symbol.
 	 * The executable code can also be located using the "oatexec" symbol.
@@ -138,7 +138,7 @@ public abstract class OatHeader implements StructConverter {
 	 */
 	abstract public int getExecutableOffset();
 
-	/**
+    # /**
 	 * Returns the OAT checksum value.
 	 * @return the OAT checksum value.
 	 */

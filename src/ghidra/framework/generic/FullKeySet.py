@@ -25,7 +25,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
     
     private int numKeys; // keys range from 0 to numKeys-1
 
-	/**
+    # /**
 	 * Construct a new FullKeySet
 	 * @param numKeys the number of keys in the set.
 	 */
@@ -41,7 +41,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
         return numKeys;
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#containsKey(short)
 	 */
@@ -52,7 +52,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
         return false;
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#getFirst()
 	 */
@@ -60,7 +60,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
         return (short)0;
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#getLast()
 	 */
@@ -68,7 +68,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
         return (short)(numKeys-1);
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#put(short)
 	 */
@@ -78,7 +78,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
         }
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#remove(short)
 	 */
@@ -90,7 +90,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
 
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#removeAll()
 	 */
@@ -98,7 +98,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
         throw new UnsupportedOperationException();
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#getNext(short)
 	 */
@@ -112,7 +112,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
         return (short)(key+1);
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#getPrevious(short)
 	 */
@@ -126,7 +126,7 @@ public class FullKeySet implements ShortKeySet, Serializable {
         return (short)(key-1);
     }
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.util.datastruct.ShortKeySet#isEmpty()
 	 */

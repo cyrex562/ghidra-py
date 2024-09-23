@@ -34,7 +34,7 @@ public class Decision {
 
 	}
 
-	/**
+    # /**
 	 * Returns the value of the property for which this decision matched the constraints
 	 * @return  the value of the property for which this decision matched the constraints
 	 */
@@ -42,7 +42,7 @@ public class Decision {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Returns the constraint source file that added the value for this decision.
 	 * @return  the constraint source file that added the value for this decision.
 	 */
@@ -50,7 +50,7 @@ public class Decision {
 		return source;
 	}
 
-	/**
+    # /**
 	 * Returns a list of strings where each string is a description of the constraint that passed
 	 * to reach this decision.
 	 * @return  a list of strings where each string is a description of the constraint that passed
@@ -60,7 +60,7 @@ public class Decision {
 		return decisionPath;
 	}
 
-	/**
+    # /**
 	 * Returns a string that is a description of the constraints that passed
 	 * to reach this decision.
 	 * @return a string that is a description of the constraints that passed

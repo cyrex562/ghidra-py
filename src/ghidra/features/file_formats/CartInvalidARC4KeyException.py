@@ -21,7 +21,7 @@ package ghidra.file.formats.cart;
  */
 public class CartInvalidARC4KeyException extends CartInvalidCartException {
 
-	/**
+    # /**
 	 * Construct CartInvalidARC4KeyException with specified message
 	 * @param message The reason for the exception
 	 */

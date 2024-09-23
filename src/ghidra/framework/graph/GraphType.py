@@ -27,7 +27,7 @@ public class GraphType {
 	private final Set<String> vertexTypes;
 	private final Set<String> edgeTypes;
 
-	/**
+    # /**
 	 * Constructs a new GraphType
 	 * 
 	 * @param name the name of this GraphType instance
@@ -44,7 +44,7 @@ public class GraphType {
 		this.edgeTypes = Collections.unmodifiableSet(new LinkedHashSet<String>(edgeTypes));
 	}
 
-	/**
+    # /**
 	 * Returns a name for this type of graph
 	 * @return a name of this type of graph
 	 */
@@ -52,7 +52,7 @@ public class GraphType {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns a description for this type of graph
 	 * @return a description for this type of graph
 	 */
@@ -60,7 +60,7 @@ public class GraphType {
 		return description;
 	}
 
-	/**
+    # /**
 	 * Returns a list of valid vertex types for graphs of this type
 	 * @return a list of valid vertex types for graphs of this type
 	 */
@@ -68,7 +68,7 @@ public class GraphType {
 		return new ArrayList<>(vertexTypes);
 	}
 
-	/**
+    # /**
 	 * Returns a list of valid edge types for graphs of this type
 	 * @return a list of valid edge types for graphs of this type
 	 */
@@ -76,7 +76,7 @@ public class GraphType {
 		return new ArrayList<>(edgeTypes);
 	}
 
-	/**
+    # /**
 	 * Test if the given string is a valid vertex type
 	 * @param vertexType the string to test for being a valid vertex type
 	 * @return true if the given string is a valid vertex type
@@ -85,7 +85,7 @@ public class GraphType {
 		return vertexTypes.contains(vertexType);
 	}
 
-	/**
+    # /**
 	 * Test if the given string is a valid edge type
 	 * @param edgeType the string to test for being a valid edge type
 	 * @return true if the given string is a valid edge type

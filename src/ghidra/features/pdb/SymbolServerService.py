@@ -16,7 +16,7 @@
 package pdb.symbolserver;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -45,7 +45,7 @@ public class SymbolServerService {
 	private SymbolStore symbolStore;	// also the first element of the symbolServers list
 	private List<SymbolServer> symbolServers;
 
-	/**
+    # /**
 	 * Creates a new SymbolServerService instance.
 	 * <p>
 	 * @param symbolStore a {@link SymbolStore} - where all remote files are placed when 
@@ -59,7 +59,7 @@ public class SymbolServerService {
 		this.symbolServers.addAll(symbolServers);
 	}
 
-	/**
+    # /**
 	 * Returns true if this SymbolServerService is fully valid.
 	 * Will be false if the symbol storage location isn't a {@link LocalSymbolStore}.
 	 * 
@@ -69,7 +69,7 @@ public class SymbolServerService {
 		return symbolStore instanceof LocalSymbolStore;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link SymbolStore}, which is the primary / first location queried and
 	 * used to store any symbol files retrieved from a remote symbol server. 
 	 * 
@@ -79,7 +79,7 @@ public class SymbolServerService {
 		return symbolStore;
 	}
 
-	/**
+    # /**
 	 * Returns the list of {@link SymbolServer}s.
 	 * 
 	 * @return the list of {@link SymbolServer}s
@@ -88,7 +88,7 @@ public class SymbolServerService {
 		return new ArrayList<>(symbolServers.subList(1, symbolServers.size()));
 	}
 
-	/**
+    # /**
 	 * Searches all {@link SymbolServer symbol servers} for a matching pdb symbol file.
 	 * 
 	 * @param symbolFileInfo {@link SymbolFileInfo} bag of information
@@ -103,7 +103,7 @@ public class SymbolServerService {
 		return find(symbolFileInfo, FindOption.NO_OPTIONS, monitor);
 	}
 
-	/**
+    # /**
 	 * Searches all {@link SymbolServer symbol servers} for a matching pdb symbol file.
 	 * <p>
 	 * Returns a list of matches.
@@ -168,7 +168,7 @@ public class SymbolServerService {
 
 	}
 
-	/**
+    # /**
 	 * Returns the local file path of the symbol file specified by symbolFileLocation.
 	 *  
 	 * @param symbolFileLocation {@link SymbolFileLocation}, returned 
@@ -194,7 +194,7 @@ public class SymbolServerService {
 		return symbolStore.getFile(localSymbolFileLocation.getPath());
 	}
 
-	/**
+    # /**
 	 * Converts a possibly remote {@link SymbolFileLocation} to a location that is local and
 	 * uncompressed.
 	 * 

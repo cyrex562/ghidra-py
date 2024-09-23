@@ -23,7 +23,7 @@ public class MDException extends Exception {
 	private boolean invalidMangledName;
 	private static final long serialVersionUID = 0;
 
-	/**
+    # /**
 	 * Use this constructor to indicate a demangler exception
 	 * due to an exception thrown during the demangling process.
 	 * @param cause the exception thrown during the demangling process
@@ -32,7 +32,7 @@ public class MDException extends Exception {
 		super(cause);
 	}
 
-	/**
+    # /**
 	 * Use this constructor to indicate a demangler exception
 	 * due to some general invalid or unsupported mangled string
 	 * characteristic. For example, unrecognized datatype.
@@ -42,7 +42,7 @@ public class MDException extends Exception {
 		super(message);
 	}
 
-	/**
+    # /**
 	 * Use this constructor to indicate the demangler failed
 	 * because the string to demangle does not appear to represent
 	 * a valid mangled name.
@@ -53,7 +53,7 @@ public class MDException extends Exception {
 		this.invalidMangledName = invalidMangledName;
 	}
 
-	/**
+    # /**
 	 * Returns true if the string to demangle does not appear to represent
 	 * a valid mangled name
 	 * @return true if the string to demangle does not appear to represent

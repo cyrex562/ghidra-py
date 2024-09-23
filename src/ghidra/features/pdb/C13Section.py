@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.util.exception.CancelledException;
@@ -44,7 +44,7 @@ public abstract class C13Section {
 	abstract protected void dumpInternal(Writer writer, TaskMonitor monitor)
 			throws IOException, CancelledException;
 
-	/**
+    # /**
 	 * Parse and return a {@link C13Section} of a specific type pointed to by a section record.
 	 * @param reader reader to parse from
 	 * @param monitor {@link TaskMonitor} used for checking cancellation

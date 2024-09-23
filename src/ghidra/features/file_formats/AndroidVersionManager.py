@@ -19,13 +19,13 @@ import java.util.*;
 
 public class AndroidVersionManager {
 
-	/** Name of XML attribute in the AndroidManifest.xml file. */
+    # /** Name of XML attribute in the AndroidManifest.xml file. */
 	public static final String PLATFORM_BUILD_VERSION_NAME = "platformBuildVersionName";
 
-	/** Name of XML attribute in the AndroidManifest.xml file. */
+    # /** Name of XML attribute in the AndroidManifest.xml file. */
 	public static final String PLATFORM_BUILD_VERSION_CODE = "platformBuildVersionCode";
 
-	/**
+    # /**
 	 * Returns an array of AndroidVersion's for the given API level.
 	 * For example, Android API level "23" applied to versions "6.0" and "6.0.1".
 	 * @param api the Android API level
@@ -41,7 +41,7 @@ public class AndroidVersionManager {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns the AndroidVersion for the given version number.
 	 * For example, "4.0", "5.0.1", etc.
 	 * @param number the Android version number
@@ -56,7 +56,7 @@ public class AndroidVersionManager {
 		return AndroidVersion.UNKNOWN;
 	}
 
-	/**
+    # /**
 	 * Returns an array of AndroidVersion's for the given version letter.
 	 * For example, Android 'M' applied to versions "6.0" and "6.0.1".
 	 * @param letter the Android version letter
@@ -72,7 +72,7 @@ public class AndroidVersionManager {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns an array of AndroidVersion's for the given version letter.
 	 * For example, Android 'M' applied to versions "6.0" and "6.0.1".
 	 * @param letter the Android version letter
@@ -85,7 +85,7 @@ public class AndroidVersionManager {
 		return getByLetter(letter.charAt(0));
 	}
 
-	/**
+    # /**
 	 * Returns an array of AndroidVersion's for the given version name.
 	 * For example, Android "Marshmallow" applied to versions "6.0" and "6.0.1".
 	 * @param name the Android version name
@@ -101,7 +101,7 @@ public class AndroidVersionManager {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns the Android Version for the given code or name.
 	 * The code will represent the API version.
 	 * The name can specify either the version number (eg 5.0.1), version name (eg Oreo), or version letter (eg M).

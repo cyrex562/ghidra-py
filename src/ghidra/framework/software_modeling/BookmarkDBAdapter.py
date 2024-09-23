@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.bookmark;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -171,7 +171,7 @@ abstract class BookmarkDBAdapter {
 		return typeCategory.substring(ix + 1);
 	}
 
-	/**
+    # /**
 	 * Create a new bookmark record
 	 * @param typeId
 	 * @param category
@@ -185,7 +185,7 @@ abstract class BookmarkDBAdapter {
 		throw new UnsupportedOperationException("Bookmarks are read-only and may not be created");
 	}
 
-	/**
+    # /**
 	 * Update the database with the specified bookmark record
 	 * @param rec modified bookmark record
 	 * @throws IOException
@@ -194,7 +194,7 @@ abstract class BookmarkDBAdapter {
 		throw new UnsupportedOperationException("Bookmarks are read-only and may not be modified");
 	}
 
-	/**
+    # /**
 	 * Delete a specific bookmark
 	 * @param id bookmark ID / key
 	 * @throws IOException
@@ -203,14 +203,14 @@ abstract class BookmarkDBAdapter {
 		throw new UnsupportedOperationException("Bookmarks are read-only and may not be deleted");
 	}
 
-	/**
+    # /**
 	 * Get the bookmark record corresponding to the specified bookmark ID.
 	 * @param id bookmark ID
 	 * @return bookmark record or null if not found.
 	 */
 	abstract DBRecord getRecord(long id) throws IOException;
 
-	/**
+    # /**
 	 * Get all bookmark records associated with a specific type and address.
 	 * @param index address index
 	 * @return record iterator
@@ -223,7 +223,7 @@ abstract class BookmarkDBAdapter {
 	abstract RecordIterator getRecordsByTypeForAddressRange(int typeId, long startAddr,
 			long endAddr) throws IOException;
 
-	/**
+    # /**
 	 * Get all bookmark records with a specific type ID and category.
 	 * @param typeId bookmark type ID (required)
 	 * @param category type category or null for all categories
@@ -232,12 +232,12 @@ abstract class BookmarkDBAdapter {
 	abstract RecordIterator getRecordsByTypeAndCategory(int typeId, String category)
 			throws IOException;
 
-	/**
+    # /**
 	 * Returns iterator over all bookmark records.
 	 */
 	abstract RecordIterator getRecordsByType(int typeId) throws IOException;
 
-	/**
+    # /**
 	 * Get list of all known categories for the specified bookmark type.
 	 * Categories are sorted in ascending order.
 	 * 
@@ -246,7 +246,7 @@ abstract class BookmarkDBAdapter {
 	 */
 	abstract String[] getCategories(int typeId) throws IOException;
 
-	/**
+    # /**
 	 * Get set of addresses where bookmarks of the specified type and category
 	 * exist.
 	 * 
@@ -269,7 +269,7 @@ abstract class BookmarkDBAdapter {
 //	in each of the older versions, which is the normal way of building the base, abstract adapter.
 //==================================================================================================	
 
-	/**
+    # /**
 	 * Creates a new bookmark type.
 	 * 
 	 * @param typeID The new ID of the bookmark type
@@ -279,7 +279,7 @@ abstract class BookmarkDBAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Deletes the table associated with the given bookmark type.
 	 * 
 	 * @param typeID The ID of the existing bookmark type
@@ -289,7 +289,7 @@ abstract class BookmarkDBAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns true if a table exists for the given bookmark type ID.
 	 * 
 	 * @param typeID The bookmark type ID of the table in question.
@@ -299,7 +299,7 @@ abstract class BookmarkDBAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns the table for the given bookmark type ID
 	 * 
 	 * @param typeID the bookmark type ID for which to get a table
@@ -309,7 +309,7 @@ abstract class BookmarkDBAdapter {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Reloads the tables from the database.
 	 */
 	void reloadTables() {

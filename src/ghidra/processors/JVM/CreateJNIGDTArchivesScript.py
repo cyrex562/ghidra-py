@@ -27,7 +27,7 @@
 //@category Data Types
 
 import java.io.File;
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.app.plugin.core.datamgr.util.DataTypeArchiveUtility;
@@ -73,7 +73,7 @@ public class CreateJNIGDTArchivesScript extends GhidraScript {
 		dtMgr.close();
 	}
 	
-	/**
+    # /**
 	 * Turn string into a file, delete old archive/lock file if it exists
 	 * 
 	 * @param dataTypeFile

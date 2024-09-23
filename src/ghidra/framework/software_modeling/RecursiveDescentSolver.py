@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.expr;
 
 import java.util.*;
@@ -22,22 +22,22 @@ import ghidra.app.plugin.assembler.sleigh.util.DbgTimer;
 import ghidra.app.plugin.processors.sleigh.expression.PatternExpression;
 
 # /**
- * This singleton class seeks solutions to {@link PatternExpression}s
- * 
- * <p>
- * It is rather naive. It does not perform algebraic transformations. Instead, it attempts to fold
- * constants, assuming there is a single variable in the expression, modifying the goal as it
- * descends toward that variable. If it finds a variable, i.e., token or context field, it encodes
- * the solution, positioned in the field. If the expression is constant, it checks that the goal
- * agrees. If not, an error is returned. There are some common cases where it is forced to solve
- * expressions involving multiple variables. Those cases are addressed in the derivatives of
- * {@link AbstractBinaryExpressionSolver} where the situation can be detected. One common example is
- * field concatenation using the {@code (A << 4) | B} pattern.
- * 
- * <p>
- * TODO: Perhaps this whole mechanism ought to just be factored directly into
- * {@link PatternExpression}.
- */
+# * This singleton class seeks solutions to {@link PatternExpression}s
+# * 
+# * <p>
+# * It is rather naive. It does not perform algebraic transformations. Instead, it attempts to fold
+# * constants, assuming there is a single variable in the expression, modifying the goal as it
+# * descends toward that variable. If it finds a variable, i.e., token or context field, it encodes
+# * the solution, positioned in the field. If the expression is constant, it checks that the goal
+# * agrees. If not, an error is returned. There are some common cases where it is forced to solve
+# * expressions involving multiple variables. Those cases are addressed in the derivatives of
+# * {@link AbstractBinaryExpressionSolver} where the situation can be detected. One common example is
+# * field concatenation using the {@code (A << 4) | B} pattern.
+# * 
+# * <p>
+# * TODO: Perhaps this whole mechanism ought to just be factored directly into
+# * {@link PatternExpression}.
+# */
 public class RecursiveDescentSolver {
 	protected static final DbgTimer DBG = DbgTimer.INACTIVE;
 	private static final RecursiveDescentSolver INSTANCE = new RecursiveDescentSolver();
@@ -67,7 +67,7 @@ public class RecursiveDescentSolver {
 		new XorExpressionSolver().register(this);
 	}
 
-	/**
+    # /**
 	 * Obtain an instance of the naive solver
 	 * 
 	 * @return the singleton instance
@@ -76,7 +76,7 @@ public class RecursiveDescentSolver {
 		return INSTANCE;
 	}
 
-	/**
+    # /**
 	 * Register a solver for a particular subclass of {@link PatternExpression}
 	 * 
 	 * @param tcls the subclass the solver can handle
@@ -87,7 +87,7 @@ public class RecursiveDescentSolver {
 		registry.put(tcls, s);
 	}
 
-	/**
+    # /**
 	 * Retrieve the registered solver for a given subclass of {@link PatternExpression}
 	 * 
 	 * @param tcls the subclass to solve
@@ -103,7 +103,7 @@ public class RecursiveDescentSolver {
 		return s;
 	}
 
-	/**
+    # /**
 	 * Solve a given expression, passing hints
 	 * 
 	 * @param exp the expression to solve
@@ -128,7 +128,7 @@ public class RecursiveDescentSolver {
 		}
 	}
 
-	/**
+    # /**
 	 * Solve a given expression, given a masked-value goal
 	 * 
 	 * <p>
@@ -159,7 +159,7 @@ public class RecursiveDescentSolver {
 		return solve(factory, exp, goal, vals, cur, Set.of(), description);
 	}
 
-	/**
+    # /**
 	 * Attempt to fold a given expression (or sub-expression) into a single constant.
 	 * 
 	 * @param exp the (sub-)expression to fold
@@ -174,7 +174,7 @@ public class RecursiveDescentSolver {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Determine the length of the instruction part of the encoded solution to the given expression
 	 * 
 	 * <p>
@@ -192,7 +192,7 @@ public class RecursiveDescentSolver {
 		return getRegistered(exp.getClass()).getInstructionLength(exp);
 	}
 
-	/**
+    # /**
 	 * Compute the value of an expression given a (possibly-intermediate) resolution
 	 * 
 	 * @param exp the expression to evaluate

@@ -24,7 +24,7 @@ import ghidra.framework.model.DomainObject;
  * and happen immediately when the DomainFile is changed.
  */
 public interface DomainObjectFileListener {
-	/**
+    # /**
 	 * Notification that the DomainFile for the given DomainObject has changed
 	 * @param domainObject the DomainObject whose DomainFile changed
 	 */

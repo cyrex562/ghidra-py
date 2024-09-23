@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.pcode.floatformat;
 
 import java.math.*;
@@ -23,10 +23,10 @@ import ghidra.pcode.utils.Utils;
 import ghidra.util.SystemUtilities;
 
 # /**
- * {@link FloatFormat} provides IEEE 754 floating-point encoding formats in support of
- * floating-point data types and floating-point emulation.  A combination of Java 
- * float/double and {@link BigFloat} are used to facilitate floating-point operations. 
- */
+# * {@link FloatFormat} provides IEEE 754 floating-point encoding formats in support of
+# * floating-point data types and floating-point emulation.  A combination of Java 
+# * float/double and {@link BigFloat} are used to facilitate floating-point operations. 
+# */
 public class FloatFormat {
 
 	static final FloatFormat JAVA_FLOAT_FORMAT = new FloatFormat(4);
@@ -43,12 +43,12 @@ public class FloatFormat {
 	private final int maxexponent; // maximum stored biased/unsigned exponent
 	private final boolean jbitimplied; // true if integer bit of 1 is assumed
 
-	/**
+    # /**
 	 * A constant holding the largest positive finite value
 	 */
 	public final BigFloat maxValue;
 
-	/**
+    # /**
 	 * A constant holding the smallest positive normal value
 	 */
 	public final BigFloat minValue;
@@ -115,7 +115,7 @@ public class FloatFormat {
 			displayContext = new MathContext(71, RoundingMode.HALF_EVEN);
 		}
 		else if (size == 10) {
-			/**
+		    # /**
 			 * 80-bit double extended precision format
 			 * See https://en.wikipedia.org/wiki/Extended_precision
 			 */
@@ -153,7 +153,7 @@ public class FloatFormat {
 		return displayContext;
 	}
 
-	/**
+    # /**
 	 * Get the maximum finite {@link BigFloat} value for this format
 	 * @return maximum finite {@link BigFloat} value
 	 */
@@ -161,7 +161,7 @@ public class FloatFormat {
 		return maxValue;
 	}
 
-	/**
+    # /**
 	 * Get the minimum finite subnormal {@link BigFloat} value for this format
 	 * @return minimum finite subnormal {@link BigFloat} value
 	 */
@@ -315,7 +315,7 @@ public class FloatFormat {
 			bf.unscaled.shiftLeft(effective_frac_size - bf.fracbits), bf.scale);
 	}
 
-	/**
+    # /**
 	 * Decode {@code encoding} to a BigFloat using this format.
 	 * 
 	 * The method {@link #decodeBigFloat(BigInteger)} should be used for encodings 
@@ -353,7 +353,7 @@ public class FloatFormat {
 		return new BigFloat(effective_frac_size, exp_size, kind, sgn ? -1 : 1, unscaled, scale);
 	}
 
-	/**
+    # /**
 	 * Decode {@code encoding} to a SmallFloatData using this format.
 	 * 
 	 * NB: this method should not be used if {@link #size}>8
@@ -606,7 +606,7 @@ public class FloatFormat {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Round {@code bigFloat} using this format's displayContext.
 	 * 
 	 * @param bigFloat any BigFloat
@@ -620,7 +620,7 @@ public class FloatFormat {
 		return bigDecimal.round(displayContext);
 	}
 
-	/**
+    # /**
 	 * Perform appropriate rounding and conversion to BigDecimal prior to generating
 	 * a formatted decimal string of the specified BigFloat value.
 	 * @param bigFloat value
@@ -630,7 +630,7 @@ public class FloatFormat {
 		return bigFloat.toString(this, false);
 	}
 
-	/**
+    # /**
 	 * Perform appropriate rounding and conversion to BigDecimal prior to generating
 	 * a formatted decimal string of the specified BigFloat value.
 	 * @param bigFloat value
@@ -642,7 +642,7 @@ public class FloatFormat {
 		return bigFloat.toString(this, compact);
 	}
 
-	/**
+    # /**
 	 * Convert an encoded value to a binary floating point representation.
 	 * This is intended for diagnostic purposes only.
 	 * 
@@ -691,7 +691,7 @@ public class FloatFormat {
 		return String.format("%s0b1.%s * 2^%d", s, binary, exp - bias);
 	}
 
-	/**
+    # /**
 	 * Convert an encoded value to a binary floating point representation.
 	 * This is intended for diagnostic purposes only.
 	 * 
@@ -739,7 +739,7 @@ public class FloatFormat {
 		return String.format("%s0b1.%s * 2^%d", s, binary, exp - bias);
 	}
 
-	/**
+    # /**
 	 * Convert a native float to {@link BigFloat} using 4-byte IEEE 754 encoding
 	 * @param f a float
 	 * @return {@link BigFloat} equal to {@code f}
@@ -748,7 +748,7 @@ public class FloatFormat {
 		return JAVA_FLOAT_FORMAT.decodeBigFloat(0xffffffffl & Float.floatToRawIntBits(f));
 	}
 
-	/**
+    # /**
 	 * Convert a native double to {@link BigFloat} using 8-byte IEEE 754 encoding
 	 * @param d a double
 	 * @return {@link BigFloat} equal to {@code f}
@@ -761,7 +761,7 @@ public class FloatFormat {
 		return JAVA_DOUBLE_FORMAT.getSmallFloatData(Double.doubleToRawLongBits(d));
 	}
 
-	/**
+    # /**
 	 * Get 4-byte binary encoding for the specified native float value.  
 	 * This is intended for diagnostic purposes only.
 	 * @param f a float
@@ -771,7 +771,7 @@ public class FloatFormat {
 		return JAVA_FLOAT_FORMAT.toBinaryString(0xffffffffl & Float.floatToRawIntBits(f));
 	}
 
-	/**
+    # /**
 	 * Get 8-byte binary encoding for the specified native double value.  
 	 * This is intended for diagnostic purposes only.
 	 * @param d a double
@@ -781,7 +781,7 @@ public class FloatFormat {
 		return JAVA_DOUBLE_FORMAT.toBinaryString(Double.doubleToRawLongBits(d));
 	}
 
-	/**
+    # /**
 	 * Get binary encoding for the specified rounded {@link BigFloat} value.  
 	 * This is intended for diagnostic purposes only.
 	 * @param value floating point value
@@ -799,7 +799,7 @@ public class FloatFormat {
 		return 63 - Long.numberOfLeadingZeros(l);
 	}
 
-	/**
+    # /**
 	 * right shift and round to nearest even or left shift to an integer with lead bit at newLeadBit.
 	 * 
 	 * The final round up might cause a carry that propagates up, so this must be followed by a test.
@@ -850,7 +850,7 @@ public class FloatFormat {
 		return i;
 	}
 
-	/**
+    # /**
 	 * A small float ({@code float} and {@code double}) stand-in for {@code BigFloat}
 	 */
 	static class SmallFloatData {
@@ -863,7 +863,7 @@ public class FloatFormat {
 		final long unscaled;
 		final int scale;
 
-		/**
+	    # /**
 		 * Construct SmallFloat Data. (similar to BigFloat)
 		 * 
 		 * @param fracbits number of fractional bits (positive non-zero value; includes additional 
@@ -1177,7 +1177,7 @@ public class FloatFormat {
 		return new BigFloat(effective_frac_size, exp_size, FloatKind.FINITE, sign, unscaled, scale);
 	}
 
-	/**
+    # /**
 	 * Constructs a {@code BigFloat} initialized to the value
 	 * represented by the specified decimal {@code String}, as performed
 	 * by {@link BigDecimal#BigDecimal(String)}.  Other values permitted
@@ -1205,7 +1205,7 @@ public class FloatFormat {
 		return getBigFloat(new BigDecimal(string));
 	}
 
-	/**
+    # /**
 	 * Constructs a {@code BigFloat} initialized to the value
 	 * represented by the specified {@code BigDecimal}.
 	 *

@@ -68,12 +68,12 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 
 	private Program currentProgram;
 	private ProgramLocation currentLocation;
-	/** A location that will be set by an update manager */
+    # /** A location that will be set by an update manager */
 	private ProgramLocation pendingLocation;
 	private ProgramSelection currentProgramSelection;
 	private ProgramSelection currentProgramHighlight;
 
-	/**
+    # /**
 	 * A construct that allows tests to control the notion of whether this provider has focus
 	 */
 	private Supplier<Boolean> focusStatusDelegate = () -> super.isFocusedProvider();
@@ -242,7 +242,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		actionManager.popupVisibilityChanged(visible);
 	}
 
-	/**
+    # /**
 	 * Gives to the clipboard of this provider the given string.  This will prime the clipboard
 	 * such that a copy action will copy the given string.
 	 *
@@ -353,7 +353,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		return decorationPanel;
 	}
 
-	/**
+    # /**
 	 * Called to signal to this provider that it should update its state due to a new function
 	 * being graphed.  The UI is updated by the controller without this provider's knowledge.
 	 * This call here is to signal that the provider needs to update its metadata.
@@ -414,7 +414,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		}
 	}
 
-	/**
+    # /**
 	 * Called from within the FunctionGraph when locations are changed (e.g., if a user clicks
 	 * inside of a vertex)
 	 *
@@ -435,7 +435,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		notifyContextChanged();
 	}
 
-	/**
+    # /**
 	 * Called from within the FunctionGraph when selections are changed (e.g., if a user clicks
 	 * inside of a vertex)
 	 *
@@ -479,7 +479,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		controller.programClosed(program);
 	}
 
-	/**
+    # /**
 	 * Called when for location changes that are <b>external</b> to the function graph (e.g.,
 	 * when the user clicks in Ghidra's Listing window)
 	 *
@@ -532,7 +532,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		}
 	}
 
-	/**
+    # /**
 	 * Tells this provider to refresh, which means to rebuild the graph and relayout the
 	 * vertices.
 	 */
@@ -562,7 +562,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		controller.rebuildDisplay(currentProgram, currentLocation, keepPerspective);
 	}
 
-	/**
+    # /**
 	 * Rebuilds the graph and restores the zoom and location of the graph to the values prior
 	 * to rebuilding.
 	 */
@@ -570,7 +570,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		refresh(true);
 	}
 
-	/**
+    # /**
 	 * Rebuilds the graph <b>and</b> will zoom the graph such that it fits on the screen and
 	 * is centered.
 	 */
@@ -578,7 +578,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		refresh(false);
 	}
 
-	/**
+    # /**
 	 * Tells the graph that some display data may have changed, but the changes are not worth
 	 * performing a full rebuild
 	 */
@@ -642,7 +642,7 @@ public class FGProvider extends VisualGraphComponentProvider<FGVertex, FGEdge, F
 		controller.repaint();
 	}
 
-	/**
+    # /**
 	 * Returns true when something destructive has happened to the data upon which the graph
 	 * has created, like a memory block move.
 	 */

@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.docking.settings.Settings;

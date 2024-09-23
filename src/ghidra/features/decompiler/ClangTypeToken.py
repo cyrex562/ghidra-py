@@ -38,7 +38,7 @@ public class ClangTypeToken extends ClangToken {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return the data-type associated with this token
 	 */
 	public DataType getDataType() {

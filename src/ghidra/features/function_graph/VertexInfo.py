@@ -66,7 +66,7 @@ class VertexInfo {
 			locationInfo + "]";
 	}
 
-	/**
+    # /**
 	 * Finds an existing vertex represented by this info.  Returns null if no vertex exists to 
 	 * match this info (this can happen if the code block structure has changed).
 	 * 

@@ -34,7 +34,7 @@ public class IdHistogram implements Comparable<IdHistogram> {
 		return Long.compare(id, o.id);
 	}
 
-	/**
+    # /**
 	 * @param iter is iterator over functions whose vectors are to be histogrammed
 	 * @return the sorted list of pairs (hash,count)
 	 */
@@ -60,7 +60,7 @@ public class IdHistogram implements Comparable<IdHistogram> {
 		return table;
 	}
 
-	/**
+    # /**
 	 * Organize/histogram LSHVectors by hash.  Take into account functions that don't have a vector.
 	 * Record hashes in the FunctionDescription's SignatureRecord
 	 * @param manage is the container of the FunctionDescriptions

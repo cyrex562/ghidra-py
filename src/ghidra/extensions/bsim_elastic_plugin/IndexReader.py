@@ -16,7 +16,7 @@
 package org.apache.lucene.index;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 
 import org.apache.lucene.document.Document;
 

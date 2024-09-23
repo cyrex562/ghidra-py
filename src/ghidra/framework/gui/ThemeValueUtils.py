@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ThemeValueUtils {
-	/**
+    # /**
 	 * Parses the given source string into a list of strings, one for each group. The startChar
 	 * and endChar defined the group characters. So, for example, "(ab (cd))(ef)((gh))" would 
 	 * result in a list with the following values: "ab (cd)", "ef", and "(gh)"

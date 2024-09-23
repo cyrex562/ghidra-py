@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.osgi;
 
-import java.io.*;
+
 
 import ghidra.formats.gfilesystem.FSUtilities;
 import ghidra.util.Msg;

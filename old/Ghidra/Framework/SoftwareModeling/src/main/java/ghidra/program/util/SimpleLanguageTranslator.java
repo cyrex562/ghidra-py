@@ -15,7 +15,7 @@
  */
 package ghidra.program.util;
 
-import java.io.*;
+
 import java.lang.reflect.Constructor;
 import java.math.BigInteger;
 import java.util.*;

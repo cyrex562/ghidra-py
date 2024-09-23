@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -98,7 +98,7 @@ public class Module {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Return the C11 Lines for this Module
 	 * @return the C11 Lines
 	 * @throws CancelledException upon user cancellation
@@ -121,7 +121,7 @@ public class Module {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns an MsSymbolIterator for the symbols of this module
 	 * @return the iterator
 	 * @throws CancelledException upon user cancellation
@@ -182,7 +182,7 @@ public class Module {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns a C13SectionIterator that iterators over all C13Sections of this module
 	 * @return the iterator
 	 * @throws CancelledException upon user cancellation
@@ -194,7 +194,7 @@ public class Module {
 		return iterator;
 	}
 
-	/**
+    # /**
 	 * Returns a C13SectionIterator that iterators over all filtered C13Sections of this module
 	 * @param clazz The class of the filter type
 	 * @return the iterator
@@ -210,7 +210,7 @@ public class Module {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns a GlobalReferenceOffsetIterator, but note that there is no determined end for
 	 * iteration other than running out of data... it is very unlikely that it should be iterated
 	 * until it is out of data.  Context should probably be used.  For instance, if the global
@@ -229,7 +229,7 @@ public class Module {
 	}
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns a GlobalReferenceIterator.  Iterations of the GlobalReferenceIterator returns
 	 * new MsSymbolIterators, but note that there is no determined end for each MsSymbolIterator
 	 * other than running out of data... it is very unlikely that it should be iterated until
@@ -302,7 +302,7 @@ public class Module {
 	// Note that we are slowly changing the model to an iterator model so that not everything
 	// is loaded into the class (note that as of this writing, the PdbByteReader still contains
 	// full byte array of data, consuming memory at the time of use).
-	/**
+    # /**
 	 * Dumps this class to a Writer
 	 * @param writer {@link Writer} to which to dump the information
 	 * @throws PdbException upon not enough data left to parse

@@ -28,7 +28,7 @@ public final class AddressLabelPair implements Serializable {
 	private Address addr;
 	private String label;
 
-	/**
+    # /**
 	 * Creates a new <CODE>AddressLabelPair</CODE>.
 	 * @param addr the address 
 	 * @param label the label
@@ -38,14 +38,14 @@ public final class AddressLabelPair implements Serializable {
 		this.label = label;
     }
 
-	/**
+    # /**
 	 * Returns the address.
 	 */
     public Address getAddress() {
 		return addr;
     }
 
-	/**
+    # /**
 	 * Returns the label.
 	 */
     public String getLabel() {
@@ -53,7 +53,7 @@ public final class AddressLabelPair implements Serializable {
     }
 
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */

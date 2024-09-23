@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.protocol;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 import java.util.Map.Entry;
@@ -162,7 +162,7 @@ public class BSimFilter {
 		parser.end();
 	}
 
-	/**
+    # /**
 	 * Returns true if all filters resolve correctly for the given function description. There are 
 	 * 4 main types of filters, each of which must be evaluated differently:
 	 * 
@@ -201,7 +201,7 @@ public class BSimFilter {
 		return processFilters(exe);
 	}
 
-	/**
+    # /**
 	 * Sets up the filterNameToFilter... maps with the appropriate category/filter values. This is done to
 	 * keep all the filters of the same type in the same place.
 	 * 
@@ -249,7 +249,7 @@ public class BSimFilter {
 		}
 	}
 
-	/**
+    # /**
 	 * Takes all the entries in the 4 filter maps and uses them to determine which rows
 	 * should be kept and which should be filtered out.
 	 * 
@@ -278,7 +278,7 @@ public class BSimFilter {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Return true only if ALL filters evaluate to true.
 	 * 
 	 * @param filters the list of all filters
@@ -296,7 +296,7 @@ public class BSimFilter {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Return true if any ONE of the atoms evaluates to true.
 	 * 
 	 * @param filters the list of all filters

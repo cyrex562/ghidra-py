@@ -17,7 +17,7 @@ package ghidra.file.formats.squashfs;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.Date;
@@ -95,7 +95,7 @@ public class SquashFileSystem extends AbstractFileSystem<SquashedFile> {
 			}, monitor);
 	}
 
-	/**
+    # /**
 	 * Convert the given SquashFS file into a stream of bytes
 	 * @param os The stream to write file data to
 	 * @param file The file to convert
@@ -142,7 +142,7 @@ public class SquashFileSystem extends AbstractFileSystem<SquashedFile> {
 		monitor.setProgress(totalUncompressedBytes);
 	}
 
-	/**
+    # /**
 	 * Decompress (if needed) all data block associated with the given file and write to OutputStream
 	 * @param squashedFile The file to process
 	 * @param fileInode The inode associated with the file
@@ -212,7 +212,7 @@ public class SquashFileSystem extends AbstractFileSystem<SquashedFile> {
 		return blockUncompressedBytes;
 	}
 
-	/**
+    # /**
 	 * Decompress (if needed) the tail end of the given file and write to OutputStream
 	 * @param squashedFile The file to process
 	 * @param fileInode The inode associated with the file

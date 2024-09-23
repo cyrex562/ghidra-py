@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Consumer;
 

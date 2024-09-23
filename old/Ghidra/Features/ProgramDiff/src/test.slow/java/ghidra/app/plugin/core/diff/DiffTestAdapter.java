@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.io.IOException;
+
 import java.util.Date;
 import java.util.Set;
 

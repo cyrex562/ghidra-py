@@ -20,7 +20,7 @@ import ghidra.framework.store.FolderItem;
 import ghidra.util.Msg;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 
 /**

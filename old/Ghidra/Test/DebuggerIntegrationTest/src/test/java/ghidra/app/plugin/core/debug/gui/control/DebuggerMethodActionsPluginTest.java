@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.debug.gui.control;
 
 import static org.junit.Assert.assertEquals;
 
-import java.io.IOException;
+
 import java.lang.invoke.MethodHandles;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;

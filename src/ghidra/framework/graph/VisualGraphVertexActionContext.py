@@ -27,7 +27,7 @@ public interface VisualGraphVertexActionContext<V extends VisualVertex>
 		extends VisualGraphActionContext {
 	public V getVertex();
 
-	/**
+    # /**
 	 * Returns true actions that manipulate the satellite viewer should be enabled for this context
 	 * @return true actions that manipulate the satellite viewer should be enabled for this context
 	 */

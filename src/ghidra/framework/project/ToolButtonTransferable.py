@@ -16,7 +16,7 @@
 package ghidra.framework.main;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 
 import docking.dnd.GenericDataFlavor;
 import ghidra.util.Msg;
@@ -45,7 +45,7 @@ public class ToolButtonTransferable implements Transferable, ClipboardOwner {
 	private static DataFlavor[] flavors = { localToolButtonFlavor };
 	private ToolButton button;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param button the button
 	 */
@@ -84,7 +84,7 @@ public class ToolButtonTransferable implements Transferable, ClipboardOwner {
 		// stub
 	}
 
-	/**
+    # /**
 	 * Clear the tool button that is being transferred.
 	 */
 	void clearTransferData() {

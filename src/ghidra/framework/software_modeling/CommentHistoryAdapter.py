@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -128,13 +128,13 @@ abstract class CommentHistoryAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the record count
 	 * @return the record count
 	 */
 	abstract int getRecordCount();
 
-	/**
+    # /**
 	 * Create a comment history record.
 	 * @param addr address of the changed record
 	 * @param commentType see CodeManager constants for comment type
@@ -147,14 +147,14 @@ abstract class CommentHistoryAdapter {
 	abstract void createRecord(long addr, byte commentType, int pos1, int pos2, String data,
 			long date) throws IOException;
 
-	/**
+    # /**
 	 * Update record
 	 * @param rec the record to update
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void updateRecord(DBRecord rec) throws IOException;
 
-	/**
+    # /**
 	 * Delete the records in the given range.
 	 * @param start start address (key)
 	 * @param end address (key)
@@ -163,7 +163,7 @@ abstract class CommentHistoryAdapter {
 	 */
 	abstract boolean deleteRecords(Address start, Address end) throws IOException;
 
-	/**
+    # /**
 	 * Get an iterator over records with the given address.
 	 * @param addr the address for which to get records
 	 * @return the iterator
@@ -171,7 +171,7 @@ abstract class CommentHistoryAdapter {
 	 */
 	abstract RecordIterator getRecordsByAddress(Address addr) throws IOException;
 
-	/**
+    # /**
 	 * Get an iterator over all records
 	 * @return the iterator
 	 * @throws IOException if there was a problem accessing the database

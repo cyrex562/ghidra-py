@@ -20,7 +20,7 @@ import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
@@ -32,7 +32,7 @@ public class PNGChunk implements StructConverter {
 	private int crc32;
 	private int totalLength;
 
-	/**
+    # /**
 	 * Reads in the bytes of a PNG chunk from a given
 	 * BinaryReader
 	 * @param reader

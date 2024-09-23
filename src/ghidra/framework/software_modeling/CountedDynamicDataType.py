@@ -40,7 +40,7 @@ public abstract class CountedDynamicDataType extends DynamicDataType {
 	private int counterSize;
 	private long mask;
 
-	/**
+    # /**
 	 * Constructor for this dynamic data type builder.
 	 * 
 	 * @param name name of this dynamic data type
@@ -145,7 +145,7 @@ public abstract class CountedDynamicDataType extends DynamicDataType {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Extract the size of the data type from the given location in memory
 	 * 
 	 * @param memory the memory to get the size from

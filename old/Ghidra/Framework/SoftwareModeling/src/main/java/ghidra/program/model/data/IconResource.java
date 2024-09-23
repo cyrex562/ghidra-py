@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.mem.MemBuffer;
 

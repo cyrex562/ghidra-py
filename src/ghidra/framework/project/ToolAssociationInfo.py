@@ -40,7 +40,7 @@ public class ToolAssociationInfo {
 		return contentHandler;
 	}
 
-	/**
+    # /**
 	 * Returns the currently assigned tool used to open the content type of this association.
 	 */
 	public ToolTemplate getCurrentTemplate() {
@@ -62,7 +62,7 @@ public class ToolAssociationInfo {
 		return associatedToolName.equals(contentHandler.getDefaultToolName());
 	}
 
-	/**
+    # /**
 	 * Sets the tool name that should be used to open files for the content type represented 
 	 * by this tool association.
 	 */

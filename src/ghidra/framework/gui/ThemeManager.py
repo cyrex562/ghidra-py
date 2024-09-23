@@ -104,7 +104,7 @@ public abstract class ThemeManager {
 		Gui.setThemeManager(this);
 	}
 
-	/**
+    # /**
 	 * This method is called to create the internal set of theme value used by the application. To
 	 * do this, we use a layered approach to install values, with the last values added overwriting
 	 * any pre-existing values with the same key.  The values are added in the following order:
@@ -143,7 +143,7 @@ public abstract class ThemeManager {
 		currentValues = map;
 	}
 
-	/**
+    # /**
 	 * Restores all the current application back to the values as specified by the active theme.
 	 * In other words, reverts any changes to the active theme that haven't been saved.
 	 */
@@ -151,7 +151,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Restores the current color value for the given color id to the value established by the
 	 * current theme.
 	 * @param id the color id to restore back to the original theme value
@@ -160,7 +160,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Restores the current font value for the given font id to the value established by the
 	 * current theme.
 	 * @param id the font id to restore back to the original theme value
@@ -169,7 +169,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Restores the current icon value for the given icon id to the value established by the
 	 * current theme.
 	 * @param id the icon id to restore back to the original theme value
@@ -178,7 +178,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns true if the color associated with the given id has been changed from the current
 	 * theme value for that id.
 	 * @param id the color id to check if it has been changed
@@ -189,7 +189,7 @@ public abstract class ThemeManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the font associated with the given id has been changed from the current
 	 * theme value for that id.
 	 * @param id the font id to check if it has been changed
@@ -200,7 +200,7 @@ public abstract class ThemeManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the Icon associated with the given id has been changed from the current
 	 * theme value for that id.
 	 * @param id the Icon id to check if it has been changed
@@ -211,7 +211,7 @@ public abstract class ThemeManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Sets the application's active theme to the given theme.
 	 * @param theme the theme to make active
 	 */
@@ -219,7 +219,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Sets the current {@link LookAndFeel}. This is used by theme editors to allow users to
 	 * see the effects of changing LookAndFeels when configuring a theme. Setting this different
 	 * from the activeTheme's LookAndFeel setting means the the current theme is in an unsaved
@@ -232,7 +232,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Adds the given theme to set of all themes.
 	 * @param newTheme the theme to add
 	 */
@@ -240,7 +240,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Removes the theme from the set of all themes. Also, if the theme has an associated
 	 * file, the file will be deleted.
 	 * @param theme the theme to delete
@@ -249,7 +249,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns a set of all known themes.
 	 * @return a set of all known themes.
 	 */
@@ -257,7 +257,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns a set of all known themes that are supported on the current platform.
 	 * @return a set of all known themes that are supported on the current platform.
 	 */
@@ -265,7 +265,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns the active theme.
 	 * @return the active theme.
 	 */
@@ -273,7 +273,7 @@ public abstract class ThemeManager {
 		return activeTheme;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link LafType} for the currently active {@link LookAndFeel}
 	 * @return the {@link LafType} for the currently active {@link LookAndFeel}
 	 */
@@ -281,7 +281,7 @@ public abstract class ThemeManager {
 		return activeLafType;
 	}
 
-	/**
+    # /**
 	 * Returns the known theme that has the given name.
 	 * @param themeName the name of the theme to retrieve
 	 * @return the known theme that has the given name
@@ -290,7 +290,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns a {@link GThemeValueMap} of all current theme values including unsaved changes to the
 	 * theme.
 	 * @return a {@link GThemeValueMap} of all current theme values
@@ -299,7 +299,7 @@ public abstract class ThemeManager {
 		return new GThemeValueMap(currentValues);
 	}
 
-	/**
+    # /**
 	 * Returns the theme values as defined by the current theme, ignoring any unsaved changes that
 	 * are currently applied to the application.
 	 * @return the theme values as defined by the current theme, ignoring any unsaved changes that
@@ -317,7 +317,7 @@ public abstract class ThemeManager {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Returns a {@link GThemeValueMap} contains all values that differ from the default
 	 * values (values defined by the {@link LookAndFeel} or in the theme.properties files.
 	 * @return a {@link GThemeValueMap} contains all values that differ from the defaults.
@@ -326,7 +326,7 @@ public abstract class ThemeManager {
 		return currentValues.getChangedValues(getDefaults());
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Color} registered for the given id. Will output an error message if
 	 * the id can't be resolved.
 	 * @param id the id to get the direct color for
@@ -342,7 +342,7 @@ public abstract class ThemeManager {
 		return color.get(currentValues);
 	}
 
-	/**
+    # /**
 	 * Returns the current {@link Font} associated with the given id. A default font will be
 	 * returned if the font can't be resolved and an error message will be printed to the console.
 	 * @param id the id for the desired font
@@ -358,7 +358,7 @@ public abstract class ThemeManager {
 		return font.get(currentValues);
 	}
 
-	/**
+    # /**
 	 * Returns the Icon registered for the given id. If no icon is registered for the id,
 	 * the default icon will be returned and an error message will be dumped to the console
 	 * @param id the id to get the registered icon for
@@ -373,7 +373,7 @@ public abstract class ThemeManager {
 		return icon.get(currentValues);
 	}
 
-	/**
+    # /**
 	 * Updates the current font for the given id.
 	 * @param id the font id to update to the new color
 	 * @param font the new font for the id
@@ -382,7 +382,7 @@ public abstract class ThemeManager {
 		setFont(new FontValue(id, font));
 	}
 
-	/**
+    # /**
 	 * Updates the current value for the font id in the newValue
 	 * @param newValue the new {@link FontValue} to install in the current values.
 	 */
@@ -390,7 +390,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Updates the current color for the given id.
 	 * @param id the color id to update to the new color
 	 * @param color the new color for the id
@@ -410,7 +410,7 @@ public abstract class ThemeManager {
 		setColor(new ColorValue(id, color));
 	}
 
-	/**
+    # /**
 	 * Updates the current value for the color id in the newValue
 	 * @param newValue the new {@link ColorValue} to install in the current values.
 	 */
@@ -418,7 +418,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Updates the current {@link Icon} for the given id.
 	 * @param id the icon id to update to the new icon
 	 * @param icon the new {@link Icon} for the id
@@ -427,7 +427,7 @@ public abstract class ThemeManager {
 		setIcon(new IconValue(id, icon));
 	}
 
-	/**
+    # /**
 	 * Updates the current value for the {@link Icon} id in the newValue
 	 * @param newValue the new {@link IconValue} to install in the current values.
 	 */
@@ -435,7 +435,7 @@ public abstract class ThemeManager {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link GThemeValueMap} containing all the default theme values defined by the
 	 * current {@link LookAndFeel}.
 	 * @return  the {@link GThemeValueMap} containing all the default theme values defined by the
@@ -447,7 +447,7 @@ public abstract class ThemeManager {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link GThemeValueMap} containing all the dark default values defined
 	 * in theme.properties files. Note that dark defaults includes light defaults that haven't
 	 * been overridden by a dark default with the same id.
@@ -461,7 +461,7 @@ public abstract class ThemeManager {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link GThemeValueMap} containing all the standard default values defined
 	 * in theme.properties files.
 	 * @return the {@link GThemeValueMap} containing all the standard values defined in
@@ -473,7 +473,7 @@ public abstract class ThemeManager {
 		return map;
 	}
 
-	/**
+    # /**
 	 * Returns a {@link GThemeValueMap} containing all default values for the current theme. It
 	 * is a combination of application defined defaults and java {@link LookAndFeel} defaults.
 	 * @return the current set of defaults.
@@ -488,7 +488,7 @@ public abstract class ThemeManager {
 		return currentDefaults;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given UI object is using the Aqua Look and Feel.
 	 * @param UI the UI to examine.
 	 * @return true if the UI is using Aqua
@@ -497,7 +497,7 @@ public abstract class ThemeManager {
 		return getLookAndFeelType() == LafType.MAC;
 	}
 
-	/**
+    # /**
 	 * Returns true if 'Nimbus' is the current Look and Feel
 	 * @return true if 'Nimbus' is the current Look and Feel
 	 */
@@ -505,7 +505,7 @@ public abstract class ThemeManager {
 		return getLookAndFeelType() == LafType.NIMBUS;
 	}
 
-	/**
+    # /**
 	 * Adds a {@link ThemeListener} to be notified of theme changes.
 	 * @param listener the listener to be notified
 	 */
@@ -513,7 +513,7 @@ public abstract class ThemeManager {
 		themeListeners.add(listener);
 	}
 
-	/**
+    # /**
 	 * Removes the given {@link ThemeListener} from the list of listeners to be notified of
 	 * theme changes.
 	 * @param listener the listener to be removed
@@ -522,7 +522,7 @@ public abstract class ThemeManager {
 		themeListeners.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Returns true if there are any unsaved changes to the current theme.
 	 * @return true if there are any unsaved changes to the current theme.
 	 */
@@ -530,7 +530,7 @@ public abstract class ThemeManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if any theme values have changed.  This does not take into account the current
 	 * Look and Feel.   Use {@link #hasThemeChanges()} to also account for changes to the Look and
 	 * Feel.
@@ -540,7 +540,7 @@ public abstract class ThemeManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if an color for the given Id has been defined
 	 * @param id the id to check for an existing color.
 	 * @return true if an color for the given Id has been defined
@@ -549,7 +549,7 @@ public abstract class ThemeManager {
 		return currentValues.containsColor(id);
 	}
 
-	/**
+    # /**
 	 * Returns true if an font for the given Id has been defined
 	 * @param id the id to check for an existing font.
 	 * @return true if an font for the given Id has been defined
@@ -558,7 +558,7 @@ public abstract class ThemeManager {
 		return currentValues.containsFont(id);
 	}
 
-	/**
+    # /**
 	 * Returns true if an icon for the given Id has been defined
 	 * @param id the id to check for an existing icon.
 	 * @return true if an icon for the given Id has been defined
@@ -567,7 +567,7 @@ public abstract class ThemeManager {
 		return currentValues.containsIcon(id);
 	}
 
-	/**
+    # /**
 	 * Binds the component to the font identified by the given font id. Whenever the font for
 	 * the font id changes, the component will updated with the new font.
 	 * @param component the component to set/update the font
@@ -577,7 +577,7 @@ public abstract class ThemeManager {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Binds the component to the font identified by the given font id. Whenever the font for
 	 * the font id changes, the component will updated with the new font.
 	 * <p>
@@ -592,7 +592,7 @@ public abstract class ThemeManager {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Removes the component and font id binding made in a previous call to 
 	 * {@link #registerFont(Component, String)}.
 	 * @param component the component to remove
@@ -602,7 +602,7 @@ public abstract class ThemeManager {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Returns true if the current theme use dark default values.
 	 * @return true if the current theme use dark default values.
 	 */
@@ -610,7 +610,7 @@ public abstract class ThemeManager {
 		return useDarkDefaults;
 	}
 
-	/**
+    # /**
 	 * Returns the default theme for the current platform.
 	 * @return the default theme for the current platform.
 	 */
@@ -628,7 +628,7 @@ public abstract class ThemeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the theme system is in the process of updating
 	 * @return true if the theme system is in the process of updating
 	 */
@@ -661,7 +661,7 @@ public abstract class ThemeManager {
 		Msg.error(this, message, t);
 	}
 
-	/**
+    # /**
 	 * Adjust the size of all fonts by the given amount.
 	 * @param amount the number to add to the current font size;
 	 */
@@ -678,7 +678,7 @@ public abstract class ThemeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets application's blinking cursor state. This will affect all JTextFields, JTextAreas, 
 	 * JTextPanes via {@link UIDefaults}. Custom components can also respect this setting by
 	 * either adding a {@link ThemeListener} or overriding {@link JComponent#updateUI()}
@@ -693,7 +693,7 @@ public abstract class ThemeManager {
 		// do nothing
 	}
 
-	/**
+    # /**
 	 * Returns true if the application should allow blinking cursors, false otherwise. Custom
 	 * components can use this method to determine if they should have a blinking cursor or not.
 	 * @return true if the application should allow blinking cursors, false otherwise.

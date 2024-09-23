@@ -37,7 +37,7 @@ public abstract class Filter<T> {
 
 	private Set<FilterStatusListener> listeners = new HashSet<FilterStatusListener>();
 
-	/**
+    # /**
 	 * Returns true if the given object passes this filter's criteria.  A value of false signals
 	 * to exclude the object from the set of valid data.
 	 * @param t the item to filter
@@ -105,23 +105,23 @@ public abstract class Filter<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * A state that describes ways for the filtering process to shortcut, or skip, full filtering.
 	 */
 	public enum FilterShortcutState {
 		//@formatter:off
-		/** Any item passed to a filter in this state will pass the filter */
+	    # /** Any item passed to a filter in this state will pass the filter */
 		ALWAYS_PASSES, 
 		
-		/** Any item passed to a filter in this state must be checked to see if it passes the filter */
+	    # /** Any item passed to a filter in this state must be checked to see if it passes the filter */
 		REQUIRES_CHECK,
 		
-		/** Any item passed to a filter in this state will fail the filter */
+	    # /** Any item passed to a filter in this state will fail the filter */
 		NEVER_PASSES
 		//@formatter:on
 	}
 
-	/**
+    # /**
 	 * Creates a copy of this filter.  This is useful for creating a disconnected snapshot of
 	 * this filter.
 	 * 
@@ -135,7 +135,7 @@ public abstract class Filter<T> {
 		return copy;
 	}
 
-	/**
+    # /**
 	 * Creates an empty copy of this filter object. 
 	 * 
 	 * <P>Note: for this code to work, each subclass must have a no-arg, public constructor.  

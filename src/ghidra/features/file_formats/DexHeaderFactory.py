@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.ByteProvider;
@@ -29,7 +29,7 @@ import ghidra.program.model.listing.Program;
 
 public final class DexHeaderFactory {
 
-	/**
+    # /**
 	 * Attempts to create DEX header starting at minimum address of the program.
 	 * @param program the program to use to create DEX header
 	 * @return the DEX header
@@ -39,7 +39,7 @@ public final class DexHeaderFactory {
 		return getDexHeader(program, program.getMinAddress());
 	}
 
-	/**
+    # /**
 	 * Attempts to create DEX header starting at the specified address of the program.
 	 * @param program the program to use to create DEX header
 	 * @param address the address in the program to look for DEX header
@@ -52,7 +52,7 @@ public final class DexHeaderFactory {
 		return getDexHeader(provider, !program.getLanguage().isBigEndian());
 	}
 
-	/**
+    # /**
 	 * Attempts to create DEX header using the specified Byte Provider.
 	 * @param provider the byte provider to use to create DEX header
 	 * @param isLittleEndian true if LE, false if BE
@@ -65,7 +65,7 @@ public final class DexHeaderFactory {
 		return getDexHeader(reader);
 	}
 
-	/**
+    # /**
 	 * Attempts to create DEX header using the specified Byte Provider.
 	 * NOTE: Use a new binary reader instance, where the underlying ByteProvider is
 	 * based to start of DEX/CDEX.  Reading CDEX format requires lots of re-indexing.
@@ -77,7 +77,7 @@ public final class DexHeaderFactory {
 		return getDexHeader(reader, true);
 	}
 
-	/**
+    # /**
 	 * Attempts to create DEX header using the specified Byte Provider.
 	 * NOTE: Use a new binary reader instance, where the underlying ByteProvider is
 	 * based to start of DEX/CDEX.  Reading CDEX format requires lots of re-indexing.

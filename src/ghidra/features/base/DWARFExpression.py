@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.expression;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

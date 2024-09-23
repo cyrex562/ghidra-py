@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.byteviewer;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;

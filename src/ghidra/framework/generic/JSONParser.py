@@ -37,7 +37,7 @@ THE SOFTWARE.
 
 public class JSONParser {
 
-	/**
+    # /**
 	 * JSON parser. Contains an array of token blocks available. Also stores
 	 * the string being parsed now and current position in that string
 	 */
@@ -49,19 +49,19 @@ public class JSONParser {
 	int toksuper; /* suporior token node, e.g parent object or array */
     int ndx = 0;
 
-	/**
+    # /**
 	 * Create JSON parser over an array of tokens
 	 */
 	//static void jsmn_init(jsmn_parser *parser);
 
-	/**
+    # /**
 	 * Run JSON parser. It parses a JSON data string into and array of tokens, each describing
 	 * a single JSON object.
 	 */
 	//static jsmnerr_t jsmn_parse(jsmn_parser *parser, const char *js, 
 	//		jsmntok_t *tokens, unsigned int num_tokens);
 
-	/**
+    # /**
 	 * Creates a new parser based over a given  buffer with an array of tokens 
 	 * available.
 	 */
@@ -71,7 +71,7 @@ public class JSONParser {
 		toksuper = -1;
 	}
 
-	/**
+    # /**
 	 * Allocates a fresh unused token from the token pull.
 	 */
 	JSONToken allocateToken(List<JSONToken> tokens, JSONType type, int start, int end) {
@@ -81,7 +81,7 @@ public class JSONParser {
 		return token;
 	}
 
-	/**
+    # /**
 	 * Fills next available token with JSON primitive.
 	 */
 	JSONError parsePrimitive(char [] js, List<JSONToken> tokens) {
@@ -138,7 +138,7 @@ public class JSONParser {
 		return JSONError.JSMN_SUCCESS;
 	}
 
-	/**
+    # /**
 	 * Filsl next token with JSON string.
 	 */
 	JSONError parseString(char [] js, List<JSONToken> tokens) {
@@ -187,7 +187,7 @@ public class JSONParser {
 		return JSONError.JSMN_ERROR_PART;
 	}
 
-	/**
+    # /**
 	 * Parse JSON string and fill tokens.
 	 */
 	public JSONError parse(char [] js, List<JSONToken> tokens) {

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.swift;
 
-import java.io.IOException;
+
 import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -74,7 +74,7 @@ public class SwiftDemangledTree {
 	private SwiftNode root;
 	private String demangledString;
 
-	/**
+    # /**
 	 * Creates a new {@link SwiftDemangledTree}
 	 * 
 	 * @param nativeDemangler The Swift native demangler
@@ -124,7 +124,7 @@ public class SwiftDemangledTree {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the root {@link SwiftNode} of the tree
 	 * 
 	 * @return The root {@link SwiftNode} of the tree.  Could be null if demangling finished 
@@ -134,7 +134,7 @@ public class SwiftDemangledTree {
 		return root;
 	}
 
-	/**
+    # /**
 	 * Gets the demangled string
 	 * 
 	 * @return The demangled string.  Could be null if demangling finished gracefully
@@ -149,7 +149,7 @@ public class SwiftDemangledTree {
 		return SwiftNode.toString(root, true);
 	}
 
-	/**
+    # /**
 	 * Gets the tree-depth of this {@link SwiftNode}
 	 * 
 	 * @param line A line of output from <code>swift demangle --tree-only</code>
@@ -163,7 +163,7 @@ public class SwiftDemangledTree {
 		return i / 2;
 	}
 
-	/**
+    # /**
 	 * Gets a matched pattern on the given line
 	 * 
 	 * @param line The line to match against

@@ -17,7 +17,7 @@ package ghidra.app.plugin.processors.sleigh;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.util.*;
 import java.util.Map.Entry;

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -216,7 +216,7 @@ public class Ext4Inode implements StructConverter {
 		return i_projid;
 	}
 
-	/**
+    # /**
 	 * Returns the size of this file.
 	 * 
 	 * @return size of this file
@@ -225,7 +225,7 @@ public class Ext4Inode implements StructConverter {
 		return Integer.toUnsignedLong(i_size_high) << 32 | Integer.toUnsignedLong(i_size_lo);
 	}
 
-	/**
+    # /**
 	 * Returns true if the inode appears to be unused.
 	 *  
 	 * @return boolean true if the inode appears to be unused
@@ -258,7 +258,7 @@ public class Ext4Inode implements StructConverter {
 		return (i_flags & Ext4Constants.EXT4_INLINE_DATA_FL) != 0;
 	}
 
-	/**
+    # /**
 	 * Returns the bytes in this inode's i_block and the "system.data"
 	 * extended attribute.
 	 * 

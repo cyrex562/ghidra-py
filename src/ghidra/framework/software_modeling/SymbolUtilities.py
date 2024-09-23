@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.symbol;
 
 import java.util.*;
@@ -29,8 +29,8 @@ import ghidra.util.classfinder.ClassSearcher;
 import ghidra.util.exception.*;
 
 # /**
- * Class with static methods to deal with symbol strings.
- */
+# * Class with static methods to deal with symbol strings.
+# */
 public class SymbolUtilities {
 
 	public static final int MAX_SYMBOL_NAME_LENGTH = 2000;
@@ -39,32 +39,32 @@ public class SymbolUtilities {
 	// The standard prefixes for default labels.
 	//
 
-	/**
+    # /**
 	 * Default prefix for a subroutine
 	 */
 	private final static String DEFAULT_SUBROUTINE_PREFIX = "SUB_";
-	/**
+    # /**
 	 * Default prefix for a reference that has flow
 	 * but is not a call.
 	 */
 	private final static String DEFAULT_SYMBOL_PREFIX = "LAB_";
-	/**
+    # /**
 	 * Default prefix for a data reference.
 	 */
 	private final static String DEFAULT_DATA_PREFIX = "DAT_";
-	/**
+    # /**
 	 * Default prefix for reference that is unknown.
 	 */
 	private final static String DEFAULT_UNKNOWN_PREFIX = "UNK_";
-	/**
+    # /**
 	 * Default prefix for an entry point.
 	 */
 	private final static String DEFAULT_EXTERNAL_ENTRY_PREFIX = "EXT_";
-	/**
+    # /**
 	 * Default prefix for a function.
 	 */
 	private final static String DEFAULT_FUNCTION_PREFIX = "FUN_";
-	/**
+    # /**
 	 * Default prefix for a reference that is offcut.
 	 */
 	private final static String DEFAULT_INTERNAL_REF_PREFIX = "OFF_";
@@ -79,7 +79,7 @@ public class SymbolUtilities {
 	public final static int EXT_LEVEL = 5;
 	public final static int FUN_LEVEL = 6;
 
-	/**
+    # /**
 	 * Array of default prefixes.
 	 */
 	private final static String[] DYNAMIC_PREFIX_ARRAY = { DEFAULT_UNKNOWN_PREFIX,
@@ -88,18 +88,18 @@ public class SymbolUtilities {
 
 	private final static List<String> DYNAMIC_DATA_TYPE_PREFIXES = getDynamicDataTypePrefixes();
 
-	/**
+    # /**
 	 * Any dynamic label will have an address with this minimum length or longer
 	 */
 	private static final int MIN_LABEL_ADDRESS_DIGITS = 4;
 
-	/**
+    # /**
 	 * The standard prefix for denoting the ordinal
 	 * values of a symbol.
 	 */
 	public final static String ORDINAL_PREFIX = "Ordinal_";
 
-	/**
+    # /**
 	 * Invalid characters for a symbol name.
 	 */
 	public final static char[] INVALIDCHARS = { ' ' };
@@ -135,7 +135,7 @@ public class SymbolUtilities {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Check for invalid characters
 	 * (space, colon, asterisk, plus, bracket)
 	 * in labels.
@@ -154,7 +154,7 @@ public class SymbolUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Generates a default function name for a given address.
 	 * @param addr the entry point of the function.
 	 * @return the default generated name for the function.
@@ -163,7 +163,7 @@ public class SymbolUtilities {
 		return DEFAULT_FUNCTION_PREFIX + getAddressString(addr);
 	}
 
-	/**
+    # /**
 	 * Returns true if the specified name is reserved as a default external name.
 	 * @param name
 	 * @param addrFactory
@@ -174,7 +174,7 @@ public class SymbolUtilities {
 			parseDynamicName(addrFactory, name) != null;
 	}
 
-	/**
+    # /**
 	 * Generates a default external name for an external function
 	 * @param addr the memory address referred to by the external.
 	 * @return the default generated name for the external.
@@ -183,7 +183,7 @@ public class SymbolUtilities {
 		return DEFAULT_EXTERNAL_ENTRY_PREFIX + DEFAULT_FUNCTION_PREFIX + getAddressString(addr);
 	}
 
-	/**
+    # /**
 	 * Generates a default external name for a given external data/code location.
 	 * @param addr the memory address referred to by the external.
 	 * @param dt data type associated with the specified external memory address
@@ -199,7 +199,7 @@ public class SymbolUtilities {
 		return DEFAULT_EXTERNAL_ENTRY_PREFIX + getAddressString(addr);
 	}
 
-	/**
+    # /**
 	 * Returns true if the given name could match a default dynamic label (EXT, LAB, SUB, FUN, DAT)
 	 * at some address.
 	 * WARNING! Does not handle dynamic labels which use data-type prefixes -
@@ -217,7 +217,7 @@ public class SymbolUtilities {
 		return parseDynamicName(addrFactory, name) != null;
 	}
 
-	/**
+    # /**
 	 * Validate the given symbol name: cannot be null, cannot be an empty string, cannot contain blank
 	 * characters, cannot be a reserved name.
 	 * @param name symbol name to be validated
@@ -240,7 +240,7 @@ public class SymbolUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the given name starts with a possible default symbol prefix.
 	 * @param name the name string to test.
 	 * @return true if name starts with a know dynamic prefix
@@ -277,7 +277,7 @@ public class SymbolUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Tests if the given name is a possible dynamic symbol name.
 	 * WARNING! This method should be used carefully since it will return true for
 	 * any name which starts with a known dynamic label prefix or ends with an '_' 
@@ -329,7 +329,7 @@ public class SymbolUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the specified char
 	 * is not valid for use in a symbol name
 	 * @param c the character to be tested as a valid symbol character.
@@ -348,7 +348,7 @@ public class SymbolUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Removes from the given string any invalid characters or replaces
 	 * them with underscores.
 	 *
@@ -380,7 +380,7 @@ public class SymbolUtilities {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Create a dynamic label name for an offcut reference.
 	 * @param addr the address at which to create an offcut reference name.
 	 * @return dynamic offcut label name
@@ -392,7 +392,7 @@ public class SymbolUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Create a name for a dynamic symbol with a 3-letter prefix based upon reference level
 	 * and an address.  Acceptable referenceLevel's are: 
 	 * {@link #UNK_LEVEL}, {@link #DAT_LEVEL}, {@link #LAB_LEVEL}, {@link #SUB_LEVEL}, 
@@ -408,7 +408,7 @@ public class SymbolUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Create a name for a dynamic symbol.
 	 * @param program the current program
 	 * @param addr the address of the symbol for which to generate a name
@@ -555,7 +555,7 @@ public class SymbolUtilities {
 		return DEFAULT_SYMBOL_PREFIX + getAddressString(codeUnitAddress) + offcutText;
 	}
 
-	/** normalize to code unit address (in case we have segmented addresses) */
+    # /** normalize to code unit address (in case we have segmented addresses) */
 	private static Address normalizeSegmentedAddress(CodeUnit codeUnit, Address address) {
 		if (!(address instanceof SegmentedAddress)) {
 			return address;
@@ -566,7 +566,7 @@ public class SymbolUtilities {
 		return segmentedAddress.normalize(codeUnitAddress.getSegment());
 	}
 
-	/**
+    # /**
 	 * Parse a dynamic name and return its address or null if unable to parse.
 	 * @param factory address factory
 	 * @param name the dynamic label name to parse into an address.
@@ -597,7 +597,7 @@ public class SymbolUtilities {
 			return null;
 		}
 
-		/**
+	    # /**
 		 * If we are dealing with segmented addresses, then the address is really composed of the
 		 * last two pieces.
 		 */
@@ -614,7 +614,7 @@ public class SymbolUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the addressSpace that matches the largest range of parsed pieces, ignoring the first and
 	 * last piece (which can't be part of an addressSpace name).  In other words if the array of strings
 	 * passed in is {"a","b","c","d","e"}, it will test for addresSpaces named "b_c_d", then "c_d", and
@@ -761,7 +761,7 @@ public class SymbolUtilities {
 		return addr.getAddressSpace().getName() + Long.toHexString(addr.getOffset());
 	}
 
-	/**
+    # /**
 	 * Returns true if the given name is a possible default parameter name or local variable name
 	 * 
 	 * @param name the name to check to see if it is a possible default local or parameter name
@@ -774,7 +774,7 @@ public class SymbolUtilities {
 		return name.startsWith(Function.DEFAULT_LOCAL_PREFIX);
 	}
 
-	/**
+    # /**
 	 * Checks if the given name could be a default external location name
 	 * 
 	 * @param name the name to check
@@ -828,7 +828,7 @@ public class SymbolUtilities {
 		return str;
 	}
 
-	/**
+    # /**
 	 * Creates the standard symbol name for symbols that have the addresses appended to the 
 	 * name following an "@" character in order to make it unique.
 	 * @param name the "true" name of the symbol
@@ -839,7 +839,7 @@ public class SymbolUtilities {
 		return getAddressAppendedName(name, address, "@");
 	}
 
-	/**
+    # /**
 	 * Creates the a symbol name for symbols that have the addresses appended to the 
 	 * name in order to make it unique.
 	 * @param name the "true" name of the symbol
@@ -852,7 +852,7 @@ public class SymbolUtilities {
 		return name + suffixSeparator + getAddressString(address);
 	}
 
-	/**
+    # /**
 	 * Gets the base symbol name regardless of whether or not the address has been appended.
 	 * @param symbol the symbol to get the clean name for.
 	 * @return the base symbol name where the {@literal "@<address>"} has been stripped away if it exists.
@@ -861,7 +861,7 @@ public class SymbolUtilities {
 		return getCleanSymbolName(symbol.getName(), symbol.getAddress());
 	}
 
-	/**
+    # /**
 	 * Gets the base symbol name regardless of whether or not the address has been appended 
 	 * using either the standard "@" separator, or the less preferred "_" separator.  The
 	 * address string extension must match that which is produced by the 
@@ -896,7 +896,7 @@ public class SymbolUtilities {
 		return symbolName;
 	}
 
-	/**
+    # /**
 	 * Returns display text suitable for describing in the GUI the {@link SymbolType} of the
 	 * given symbol
 	 *
@@ -948,7 +948,7 @@ public class SymbolUtilities {
 		return symType.toString();
 	}
 
-	/**
+    # /**
 	 * Returns the global symbol with the given name if and only if it is the only global symbol
 	 * with that name.
 	 *
@@ -960,7 +960,7 @@ public class SymbolUtilities {
 		return getUniqueSymbol(program, name, null);
 	}
 
-	/**
+    # /**
 	 * Returns the symbol in the given namespace with the given name if and only if it is the only
 	 * symbol in that namespace with that name.
 	 *
@@ -977,7 +977,7 @@ public class SymbolUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the unique global label or function symbol with the given name. Also, logs if there
 	 * is not exactly one symbol with that name.
 	 *
@@ -1003,7 +1003,7 @@ public class SymbolUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the unique global label or function symbol with the given name. Also, logs if there
 	 * is more than one symbol with that name.
 	 *
@@ -1026,7 +1026,7 @@ public class SymbolUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Create label symbol giving preference to non-global symbols.  An existing function symbol
 	 * may be returned.  If attempting to create a global symbol and the name already exists 
 	 * at the address no symbol will be created and null will be returned.  
@@ -1085,7 +1085,7 @@ public class SymbolUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a comparator for symbols.  The comparison is based upon the name.  This call
 	 * replaces the former <code>compareTo</code> method on Symbol.  This comparator returned here
 	 * is case-insensitive.

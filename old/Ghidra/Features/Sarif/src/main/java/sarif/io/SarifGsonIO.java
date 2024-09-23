@@ -16,7 +16,7 @@
 package sarif.io;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.nio.file.Files;
 
 import com.contrastsecurity.sarif.SarifSchema210;

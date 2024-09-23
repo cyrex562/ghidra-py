@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.app.util.bin.format.pdb2.pdbreader.msf.Msf;
@@ -30,7 +30,7 @@ public class Pdb400 extends AbstractPdb {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param msf {@link Msf} foundation for the PDB
 	 * @param pdbOptions {@link PdbReaderOptions} used for processing the PDB

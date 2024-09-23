@@ -20,7 +20,7 @@
 // which weights file to use.
 //@category BSim
 
-import java.io.IOException;
+
 
 import org.xml.sax.SAXException;
 

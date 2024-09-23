@@ -30,7 +30,7 @@ import ghidra.util.exception.CancelledException;
 public class BitfieldTypeApplier extends MsDataTypeApplier {
 
 	// Intended for: AbstractBitfieldMsType
-	/**
+    # /**
 	 * Constructor for bitfield applier
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */
@@ -65,7 +65,7 @@ public class BitfieldTypeApplier extends MsDataTypeApplier {
 		return true;
 	}
 
-	/**
+    # /**
 	 * <code>Pdb2BitField</code> provides ability to hang onto bitfield as a datatype.
 	 * This will be transformed to a normal BitFieldDataType when cloned.
 	 */

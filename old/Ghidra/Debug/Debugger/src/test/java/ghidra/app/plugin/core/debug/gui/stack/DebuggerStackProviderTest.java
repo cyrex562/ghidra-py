@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.debug.gui.stack;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Objects;
 

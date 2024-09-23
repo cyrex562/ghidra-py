@@ -81,7 +81,7 @@ class PluginManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Identify plugin which will accept specified URL.  If no plugin accepts URL it will be
 	 * rejected and false returned. If a plugin can accept the specified URL it will attempt to
 	 * process and return true if successful.
@@ -277,7 +277,7 @@ class PluginManager {
 		return new ArrayList<>(pluginList);
 	}
 
-	/**
+    # /**
 	 * Removes the given plugins from the tool and removes any other plugins that were
 	 * depending on them.
 	 * @param plugins the list of plugins to remove.
@@ -364,7 +364,7 @@ class PluginManager {
 		return root.getChild("PLUGIN") != null;
 	}
 
-	/**
+    # /**
 	 * Restore the data state from the given XML element.
 	 * @param root XML element containing plugins' data state
 	 */
@@ -466,7 +466,7 @@ class PluginManager {
 		}
 	}
 
-	/**
+    # /**
 	 * @param dependencies set of service interface classes that are required by some plugin
 	 * and are not provided by a loaded plugin.
 	 * @return boolean true if there was any progress on resolving dependencies, false
@@ -535,7 +535,7 @@ class PluginManager {
 		return choice;
 	}
 
-	/**
+    # /**
 	 * Tries to find and pull in the plugin that provides a service.
 	 *
 	 * @param dependency service class that someone depends on
@@ -626,7 +626,7 @@ class PluginManager {
 		return orderedList;
 	}
 
-	/**
+    # /**
 	 * Checks to make sure no plugins in the list provide any services used by plugin p.
 	 * @param usingPlugin the plugin whose used services should not be provided by any plugins in the list
 	 * @param serviceProvidingPlugins the list of plugins that is being tested to see if they provide any
@@ -658,7 +658,7 @@ class PluginManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Called to force plugins to terminate any tasks they has running and
 	 * apply any unsaved data to domain objects or files. If they can't do
 	 * this or the user cancels then this returns false.
@@ -673,7 +673,7 @@ class PluginManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Allow plugins to cancel the closing of the domain object.
 	 * Note: This forces plugins to terminate any tasks they have running for the
 	 * indicated domain object and apply any unsaved data to the domain object. If they can't do
@@ -690,7 +690,7 @@ class PluginManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Called to force plugins to save any domain object data it is controlling.
 	 * @return false if a domain object related plugin couldn't save its data.
 	 */
@@ -726,7 +726,7 @@ class PluginManager {
 		return new UndoRedoToolState(new ArrayList<>(pluginList), domainObject);
 	}
 
-	/**
+    # /**
 	 * Notify plugins that the domain object is about to be saved.
 	 * @param domainObject the domain object
 	 */

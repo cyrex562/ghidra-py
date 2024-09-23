@@ -29,7 +29,7 @@ public class PriorityQueue<T> {
 	private int size = 0;
 	private TreeMap<Integer, LinkedList<T>> tree = new TreeMap<Integer, LinkedList<T>>();
 	
-	/**
+    # /**
 	 * Adds the given object to the queue at the appropriate insertion point based
 	 * on the given priority.
 	 * @param obj the object to be added.
@@ -46,21 +46,21 @@ public class PriorityQueue<T> {
 		size++;	
 	}
 	
-	/**
+    # /**
 	 * Returns the number of objects in the queue.
 	 */
 	public int size() {
 		return size;
 	}
 	
-	/**
+    # /**
 	 * Returns true if the queue is empty.
 	 */
 	public boolean isEmpty() {
 		return size == 0;
 	}
 
-	/**
+    # /**
 	 * Returns the object with the lowest priority number in the queue.
 	 * If more than one object has the same priority, then the object that
 	 * was added to the queue first is considered to have the lower priority value.
@@ -75,7 +75,7 @@ public class PriorityQueue<T> {
 		return list.getFirst();
 	}
 	
-	/**
+    # /**
 	 * Returns the priority of the object with the lowest priority in the queue.
 	 * Null returned if the queue is empty.
 	 */
@@ -87,7 +87,7 @@ public class PriorityQueue<T> {
 		return key;
 	}
 		
-	/**
+    # /**
 	 * Returns the object with the highest priority number in the queue.
 	 * If more than one object has the same priority, then the object that
 	 * was added to the queue last is considered to have the higher priority value.
@@ -102,7 +102,7 @@ public class PriorityQueue<T> {
 		return list.getLast();
 	}
 	
-	/**
+    # /**
 	 * Returns the priority of the object with the highest priority in the queue.
 	 * Null returned if the queue is empty.
 	 */
@@ -114,7 +114,7 @@ public class PriorityQueue<T> {
 		return key;
 	}
 
-	/**
+    # /**
 	 * Removes and returns the object with the lowest priority number in the queue.
 	 * If more than one object has the same priority, then the object that
 	 * was added to the queue first is considered to have the lower priority value.
@@ -134,7 +134,7 @@ public class PriorityQueue<T> {
 		return list.removeFirst();
 	}
 	
-	/**
+    # /**
 	 * Removes and returns the object with the highest priority number in the queue.
 	 * If more than one object has the same priority, then the object that
 	 * was added to the queue last is considered to have the higher priority value.
@@ -154,7 +154,7 @@ public class PriorityQueue<T> {
 		return list.removeLast();
 	}
 
-	/**
+    # /**
 	 * Removes all objects from the queue.
 	 */
 	public void clear() {

@@ -1,34 +1,34 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.program.util.DefaultLanguageService;
 
 # /**
- * Represents an opinion's processor language and compiler.
- * 
- * @see LanguageID
- * @see CompilerSpecID
- */
+# * Represents an opinion's processor language and compiler.
+# * 
+# * @see LanguageID
+# * @see CompilerSpecID
+# */
 public final class LanguageCompilerSpecPair implements Comparable<LanguageCompilerSpecPair> {
 
 	public final LanguageID languageID;
 	public final CompilerSpecID compilerSpecID;
 
-	/**
+    # /**
 	 * Creates a new language and compiler pair.
 	 * 
 	 * @param languageID The language ID string (x86:LE:32:default, 8051:BE:16:default, etc).
@@ -52,7 +52,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		this.compilerSpecID = new CompilerSpecID(compilerSpecID);
 	}
 
-	/**
+    # /**
 	 * Creates a new language and compiler pair.
 	 * 
 	 * @param languageID The language ID.
@@ -70,7 +70,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		this.compilerSpecID = compilerSpecID;
 	}
 
-	/**
+    # /**
 	 * Get the language ID
 	 * @return language ID
 	 */
@@ -78,7 +78,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return languageID;
 	}
 
-	/**
+    # /**
 	 * Get the compiler spec ID
 	 * @return compiler spec ID
 	 */
@@ -86,7 +86,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return compilerSpecID;
 	}
 
-	/**
+    # /**
 	 * Gets the {@link Language} for this object's {@link LanguageID}.
 	 * 
 	 * @return The {@link Language} for this object's {@link LanguageID}.
@@ -97,7 +97,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return DefaultLanguageService.getLanguageService().getLanguage(languageID);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link CompilerSpec} for this object's {@link CompilerSpecID}.
 	 * 
 	 * @return The {@link CompilerSpec} for this object's {@link CompilerSpecID}.
@@ -111,7 +111,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return getLanguage().getCompilerSpecByID(compilerSpecID);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link Language} for this object's {@link LanguageID}, using the given language
 	 * service to do the lookup.
 	 * 
@@ -125,7 +125,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return languageService.getLanguage(languageID);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link CompilerSpec} for this object's {@link CompilerSpecID}, using the given
 	 * language service to do the lookup.
 	 * 
@@ -142,7 +142,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return getLanguage(languageService).getCompilerSpecByID(compilerSpecID);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link LanguageDescription} for this object's {@link LanguageID}.
 	 * 
 	 * @return The {@link LanguageDescription} for this object's {@link LanguageID}.
@@ -153,7 +153,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return DefaultLanguageService.getLanguageService().getLanguageDescription(languageID);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link CompilerSpecDescription} for this object's {@link CompilerSpecID}.
 	 * 
 	 * @return The {@link CompilerSpecDescription} for this object's {@link CompilerSpecID}.
@@ -167,7 +167,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return getLanguageDescription().getCompilerSpecDescriptionByID(compilerSpecID);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link LanguageDescription} for this object's {@link LanguageID}.
 	 * 
 	 * @param languageService The language service to use for description lookup.
@@ -180,7 +180,7 @@ public final class LanguageCompilerSpecPair implements Comparable<LanguageCompil
 		return languageService.getLanguageDescription(languageID);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link CompilerSpecDescription} for this object's {@link CompilerSpecID}.
 	 * 
 	 * @param languageService The language service to use for description lookup.

@@ -132,7 +132,7 @@ public class ExtProperty implements IsfObject {
 	private static final String QUOTE = "&quot;";
 	private static final String AMPERSAND = "&amp;";
 
-	/**
+    # /**
 	 * Converts any special or reserved characters in the specified SARIF string
 	 * into the equivalent Unicode encoding.
 	 *

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf.external;
 
-import java.io.IOException;
+
 
 import ghidra.formats.gfilesystem.FSRL;
 import ghidra.util.exception.CancelledException;

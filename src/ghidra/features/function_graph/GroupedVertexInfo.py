@@ -131,7 +131,7 @@ class GroupedVertexInfo extends VertexInfo {
 		return element;
 	}
 
-	/**
+    # /**
 	 * Locates a vertex for the given info <b>without creating that vertex</b>.  This is in 
 	 * contrast to {@link #getVertex(FGController, Map)}, which will create a vertex
 	 * (and supporting vertices if it is a group).

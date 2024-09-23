@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.*;
+
 import java.lang.reflect.*;
 import java.nio.file.*;
 import java.util.*;

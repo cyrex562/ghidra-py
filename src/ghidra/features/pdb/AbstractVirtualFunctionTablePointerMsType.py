@@ -28,7 +28,7 @@ public abstract class AbstractVirtualFunctionTablePointerMsType extends Abstract
 
 	protected RecordNumber pointerTypeRecordNumber;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -37,7 +37,7 @@ public abstract class AbstractVirtualFunctionTablePointerMsType extends Abstract
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the pointer type.
 	 * @return the record number of the pointer type.
 	 */
@@ -45,7 +45,7 @@ public abstract class AbstractVirtualFunctionTablePointerMsType extends Abstract
 		return pointerTypeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the pointer offset.
 	 * @return the offset.
 	 */

@@ -27,7 +27,7 @@ class NextDiffCommand extends BackgroundCommand<Program> {
 
 	private ProgramDiffPlugin plugin;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param plugin
 	 */

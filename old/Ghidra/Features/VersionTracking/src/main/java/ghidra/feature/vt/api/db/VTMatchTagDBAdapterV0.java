@@ -21,7 +21,7 @@ import ghidra.framework.data.OpenMode;
 import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 import db.*;
 

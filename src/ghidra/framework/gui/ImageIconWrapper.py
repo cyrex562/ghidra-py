@@ -18,7 +18,7 @@ package resources.icons;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
-import java.io.*;
+
 import java.net.URL;
 import java.util.Objects;
 
@@ -56,7 +56,7 @@ public class ImageIconWrapper extends ImageIcon implements FileBasedIcon {
 	private URL imageURL;
 	private String imageName; // lazy load
 
-	/**
+    # /**
 	 * Construct wrapped ImageIcon based upon specified image byte array
 	 * (see {@link Toolkit#createImage(byte[])})
 	 * @param imageBytes image bytes
@@ -72,7 +72,7 @@ public class ImageIconWrapper extends ImageIcon implements FileBasedIcon {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct wrapped ImageIcon based upon specified image
 	 * @param image icon image
 	 * @param imageName image reference name
@@ -83,7 +83,7 @@ public class ImageIconWrapper extends ImageIcon implements FileBasedIcon {
 		this.imageName = imageName;
 	}
 
-	/**
+    # /**
 	 * Construct wrapped ImageIcon based upon specified icon
 	 * which may require transformation into ImageIcon
 	 * @param icon the icon
@@ -93,7 +93,7 @@ public class ImageIconWrapper extends ImageIcon implements FileBasedIcon {
 			Objects.requireNonNull(icon, "Cannot create an ImageIconWrapper from a null icon");
 	}
 
-	/**
+    # /**
 	 * Construct wrapped ImageIcon based upon specified resource URL
 	 * @param url icon image resource URL
 	 */
@@ -117,7 +117,7 @@ public class ImageIconWrapper extends ImageIcon implements FileBasedIcon {
 		return getImageName();
 	}
 
-	/**
+    # /**
 	 * Get icon reference name
 	 * @return icon name
 	 */
@@ -211,7 +211,7 @@ public class ImageIconWrapper extends ImageIcon implements FileBasedIcon {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the base icon image to be transformed in ImageIcon
 	 * @return the base icon image to be transformed in ImageIcon
 	 */

@@ -43,7 +43,7 @@ class ExtensionDetailsPanel extends AbstractDetailsPanel {
 	private static final GColor FG_COLOR_VERSION =
 		new GColor("color.fg.extensionpanel.details.version");
 
-	/** Attribute sets define the visual characteristics for each field */
+    # /** Attribute sets define the visual characteristics for each field */
 	private GAttributes nameAttrSet;
 	private GAttributes descrAttrSet;
 	private GAttributes authorAttrSet;
@@ -86,7 +86,7 @@ class ExtensionDetailsPanel extends AbstractDetailsPanel {
 		setDescription(currentDetails);
 	}
 
-	/**
+    # /**
 	 * Updates this panel with the given extension.
 	 *
 	 * @param details the extension to display

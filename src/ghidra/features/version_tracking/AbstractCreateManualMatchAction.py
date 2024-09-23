@@ -31,7 +31,7 @@ abstract class AbstractCreateManualMatchAction extends DockingAction {
 
 	protected final VTController controller;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param name the action's name
 	 * @param owner the action's owner

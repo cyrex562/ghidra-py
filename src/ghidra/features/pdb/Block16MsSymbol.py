@@ -27,7 +27,7 @@ public class Block16MsSymbol extends AbstractBlockMsSymbol {
 
 	public static final int PDB_ID = 0x0107;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

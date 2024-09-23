@@ -18,7 +18,7 @@ package ghidra.javaclass.analyzers;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.cmd.disassemble.DisassembleCommand;
 import ghidra.app.cmd.function.CreateFunctionCmd;

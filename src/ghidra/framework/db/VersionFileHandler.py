@@ -18,7 +18,7 @@ package db.buffers;
 import ghidra.util.datastruct.IntIntHashtable;
 import ghidra.util.exception.NoValueException;
 
-import java.io.IOException;
+
 import java.util.*;
 
 # /**

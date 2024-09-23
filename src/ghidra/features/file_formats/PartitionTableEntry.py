@@ -18,7 +18,7 @@ package ghidra.file.formats.android.bootimg;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.ByteProvider;
 
-import java.io.IOException;
+
 
 public class PartitionTableEntry {
 

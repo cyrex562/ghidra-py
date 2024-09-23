@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.complzss;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.file.formats.lzss.LzssCompressionHeader;

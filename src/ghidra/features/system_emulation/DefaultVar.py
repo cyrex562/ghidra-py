@@ -24,18 +24,18 @@ import ghidra.program.model.data.DataTypeConflictHandler;
 import ghidra.program.model.lang.PcodeParser;
 
 class DefaultVar implements LValInternal, Var {
-	/**
+    # /**
 	 * The rule for name collision
 	 */
 	enum Check {
-		/** The name may or may not already be defined by the language */
+	    # /** The name may or may not already be defined by the language */
 		NONE {
 			@Override
 			void check(PcodeParser parser, String name) {
 				// Do nothing
 			}
 		},
-		/** The name must already be defined by the language so it can be imported */
+	    # /** The name must already be defined by the language so it can be imported */
 		IMPORT {
 			@Override
 			void check(PcodeParser parser, String name) {
@@ -46,7 +46,7 @@ class DefaultVar implements LValInternal, Var {
 				}
 			}
 		},
-		/** The name cannot already be defined by the language so it is free */
+	    # /** The name cannot already be defined by the language so it is free */
 		FREE {
 			@Override
 			void check(PcodeParser parser, String name) {
@@ -58,7 +58,7 @@ class DefaultVar implements LValInternal, Var {
 			}
 		};
 
-		/**
+	    # /**
 		 * Check that the given name obeys the rule
 		 * 
 		 * @param parser a parser bound to the target language
@@ -71,7 +71,7 @@ class DefaultVar implements LValInternal, Var {
 	protected final String name;
 	protected final DataType type;
 
-	/**
+    # /**
 	 * Create a new variable
 	 * 
 	 * @param ctx the context

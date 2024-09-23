@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.target;
 
-import java.io.IOException;
+
 import java.util.Objects;
 
 import db.DBRecord;

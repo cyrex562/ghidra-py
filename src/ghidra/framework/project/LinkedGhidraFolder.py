@@ -16,7 +16,7 @@
 package ghidra.framework.data;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.net.URL;
 
 import javax.swing.Icon;
@@ -44,7 +44,7 @@ public class LinkedGhidraFolder extends LinkedGhidraSubFolder {
 
 	private URL projectUrl;
 
-	/**
+    # /**
 	 * Construct a linked-folder.
 	 * @param activeProject active project responsible for linked project life-cycle management.
 	 * @param localParent local domain folder which contains folder-link or corresponds directly to
@@ -71,7 +71,7 @@ public class LinkedGhidraFolder extends LinkedGhidraSubFolder {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the Ghidra URL of the project/repository folder referenced by this object
 	 * @return Ghidra URL of the project/repository folder referenced by this object
 	 */

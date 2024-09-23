@@ -50,7 +50,7 @@ public class ClangTokenGroup implements ClangNode, Iterable<ClangNode> {
 		return maxaddress;
 	}
 
-	/**
+    # /**
 	 * Add additional text to this group
 	 * @param obj is the additional text
 	 */
@@ -111,7 +111,7 @@ public class ClangTokenGroup implements ClangNode, Iterable<ClangNode> {
 		}
 	}
 
-	/**
+    # /**
 	 * Decode this text from an encoded stream.
 	 * @param decoder is the decoder for the stream
 	 * @param pfactory is used to look up p-code attributes to associate with tokens
@@ -156,7 +156,7 @@ public class ClangTokenGroup implements ClangNode, Iterable<ClangNode> {
 		}
 	}
 
-	/**
+    # /**
 	 * @param c is a character
 	 * @return true if the given character is a letter, digit, or underscore
 	 */
@@ -191,7 +191,7 @@ public class ClangTokenGroup implements ClangNode, Iterable<ClangNode> {
 		return tokgroup.iterator();
 	}
 
-	/**
+    # /**
 	 * Create iterator across all ClangToken objects in this group.
 	 * The iterator will run over tokens in display order (forward=true) or in reverse of
 	 * display order (forward=false)
@@ -202,7 +202,7 @@ public class ClangTokenGroup implements ClangNode, Iterable<ClangNode> {
 		return new TokenIterator(this, forward);
 	}
 
-	/**
+    # /**
 	 * Gets a stream over this group's children
 	 * @return a stream of this group's children
 	 */

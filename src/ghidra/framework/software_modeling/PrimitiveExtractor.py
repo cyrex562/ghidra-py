@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang.protorules;
 
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class PrimitiveExtractor {
 	private boolean extraSpace;					// True if extra space not attributable to padding
 	private boolean unionInvalid;				// True if unions are treated as invalid primitive
 
-	/**
+    # /**
 	 * Check that a big Primitive properly overlaps smaller Primitives
 	 * 
 	 * If the big Primitive does not properly overlap the smaller Primitives starting at the given
@@ -79,7 +79,7 @@ public class PrimitiveExtractor {
 		return point;
 	}
 
-	/**
+    # /**
 	 * Overwrite first list with common refinement of first and second
 	 * 
 	 * Given two sets of overlapping Primitives, find a \e common \e refinement of the lists.
@@ -140,7 +140,7 @@ public class PrimitiveExtractor {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Form a primitive list for each field of the union. Then, if possible, form a common
 	 * refinement of all the primitive lists and add to the end of this extractor's list.
 	 * @param dt is the union data-type
@@ -184,7 +184,7 @@ public class PrimitiveExtractor {
 		return true;
 	}
 
-	/**
+    # /**
 	 * An array of the primitive data-types, with their associated offsets, is constructed.
 	 * If the given data-type is already primitive it is put in the array by itself. Otherwise
 	 * if it is composite, its components are recursively added to the array.
@@ -266,7 +266,7 @@ public class PrimitiveExtractor {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @param dt is data-type extract from
 	 * @param unionIllegal is true if unions encountered during extraction are considered illegal
 	 * @param offset is the starting offset to associate with the data-type
@@ -284,42 +284,42 @@ public class PrimitiveExtractor {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if all primitive elements were extracted
 	 */
 	public boolean isValid() {
 		return valid;
 	}
 
-	/**
+    # /**
 	 * @return true if any extracted element was unknown/undefined
 	 */
 	public boolean containsUnknown() {
 		return unknownElements;
 	}
 
-	/**
+    # /**
 	 * @return true if all extracted elements are aligned
 	 */
 	public boolean isAligned() {
 		return aligned;
 	}
 
-	/**
+    # /**
 	 * @return true if there is extra space in the data-type that is not alignment padding
 	 */
 	public boolean containsHoles() {
 		return extraSpace;
 	}
 
-	/**
+    # /**
 	 * @return the number of primitives extracted
 	 */
 	public int size() {
 		return primitives.size();
 	}
 
-	/**
+    # /**
 	 * Get the i-th extracted primitive and its offset
 	 * @param i is the index
 	 * @return the primitive and offset

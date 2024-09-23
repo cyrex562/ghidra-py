@@ -1,27 +1,27 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 # /*
- * Created on May 4, 2004
- *
- * To change the template for this generated file go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+# * Created on May 4, 2004
+# *
+# * To change the template for this generated file go to
+# * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -30,8 +30,8 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Adapter to access the Enumeration data type values tables.
- */
+# * Adapter to access the Enumeration data type values tables.
+# */
 abstract class EnumValueDBAdapter implements RecordTranslator {
 
 	static final String ENUM_VALUE_TABLE_NAME = "Enumeration Values";
@@ -43,7 +43,7 @@ abstract class EnumValueDBAdapter implements RecordTranslator {
 	static final int ENUMVAL_ID_COL = 2;
 	static final int ENUMVAL_COMMENT_COL = 3;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the enumeration data type values database table. The adapter is based
 	 * on the version of the database associated with the specified database handle and the openMode.
 	 * @param handle handle to the database to be accessed.
@@ -84,7 +84,7 @@ abstract class EnumValueDBAdapter implements RecordTranslator {
 		}
 	}
 
-	/**
+    # /**
 	 * Upgrades the Enumeration Data Type Values table from the oldAdapter's version to the current
 	 * version.
 	 * @param handle handle to the database whose table is to be upgraded to a newer version.
@@ -128,7 +128,7 @@ abstract class EnumValueDBAdapter implements RecordTranslator {
 		}
 	}
 
-	/**
+    # /**
 	 * Create new enum value record corresponding to specified enum datatype ID
 	 * @param enumID enum datatype ID
 	 * @param name value name
@@ -139,7 +139,7 @@ abstract class EnumValueDBAdapter implements RecordTranslator {
 	abstract void createRecord(long enumID, String name, long value, String comment)
 			throws IOException;
 
-	/**
+    # /**
 	 * Get enum value record which corresponds to specified value record ID
 	 * @param valueID value record ID
 	 * @return value record or null
@@ -147,35 +147,35 @@ abstract class EnumValueDBAdapter implements RecordTranslator {
 	 */
 	abstract DBRecord getRecord(long valueID) throws IOException;
 
-	/**
+    # /**
 	 * Returns an iterator over the value records inside of this Enum
 	 * @return the iterator
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Deletes the table; used when upgrading
 	 * @param handle the handle used to delete the table
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void deleteTable(DBHandle handle) throws IOException;
 
-	/**
+    # /**
 	 * Remove the record for the given enum Value ID.
 	 * @param valueID ID of the value record to delete
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void removeRecord(long valueID) throws IOException;
 
-	/**
+    # /**
 	 * Updates the enum data type values table with the provided record.
 	 * @param record the new record
 	 * @throws IOException if there was a problem accessing the database
 	 */
 	abstract void updateRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Get enum value record IDs which correspond to specified enum datatype ID
 	 * @param enumID enum datatype ID
 	 * @return enum value record IDs as LongField values within Field array

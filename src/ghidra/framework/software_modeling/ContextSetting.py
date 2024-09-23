@@ -18,7 +18,7 @@ package ghidra.program.model.lang;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.Iterator;
 import java.util.List;
@@ -46,7 +46,7 @@ public final class ContextSetting {
 		this.endAddr = endAddr;
 	}
 
-	/**
+    # /**
 	 * Construct from an XML {@code <set>} tag.  The tag is a child of either {@code <context_set>}
 	 * or {@code <tracked_set>} which provides details of the memory range affected.
 	 * @param el is the XML tag
@@ -112,7 +112,7 @@ public final class ContextSetting {
 		encoder.closeElement(ELEM_SET);
 	}
 
-	/**
+    # /**
 	 * Determine if this ContextSetting is equivalent to another specified instance
 	 * @param obj is the other instance
 	 * @return true if they are equivalent

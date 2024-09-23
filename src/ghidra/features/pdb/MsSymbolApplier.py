@@ -31,7 +31,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.symbol.AbstractMsSymbol;
 public abstract class MsSymbolApplier {
 	protected DefaultPdbApplicator applicator;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 */
@@ -40,7 +40,7 @@ public abstract class MsSymbolApplier {
 		this.applicator = applicator;
 	}
 
-	/**
+    # /**
 	 * Puts message to {@link PdbLog} and to Msg.info()
 	 * @param originator a Logger instance, "this", or YourClass.class
 	 * @param message the message to display

@@ -18,7 +18,7 @@ package ghidra.file.formats.sevenzip;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import java.io.*;
+
 
 import ghidra.framework.Application;
 import net.sf.sevenzipjbinding.SevenZip;
@@ -43,7 +43,7 @@ import net.sf.sevenzipjbinding.SevenZipNativeInitializationException;
  */
 public class SevenZipCustomInitializer {
 
-	/**
+    # /**
 	 * Call this before using any SevenzipJBinding classes.  Calling multiple times
 	 * is okay.
 	 * <p>

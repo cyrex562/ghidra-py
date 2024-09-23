@@ -35,7 +35,7 @@ public class InlinedFunctionCallsiteMsSymbol extends AbstractMsSymbol {
 	private RecordNumber inlineeRecordNumber;
 	private List<InstructionAnnotation> binaryAnnotationOpcodeList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -62,7 +62,7 @@ public class InlinedFunctionCallsiteMsSymbol extends AbstractMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the pointer to inliner.
 	 * @return Pointer to inliner.
 	 */
@@ -70,7 +70,7 @@ public class InlinedFunctionCallsiteMsSymbol extends AbstractMsSymbol {
 		return pointerToInliner;
 	}
 
-	/**
+    # /**
 	 * Returns the pointer to this block end.
 	 * @return Pointer to this block end.
 	 */
@@ -78,7 +78,7 @@ public class InlinedFunctionCallsiteMsSymbol extends AbstractMsSymbol {
 		return pointerToThisBlockEnd;
 	}
 
-	/**
+    # /**
 	 * Returns inlinee record number.
 	 * @return Inlinee record number.
 	 */
@@ -86,7 +86,7 @@ public class InlinedFunctionCallsiteMsSymbol extends AbstractMsSymbol {
 		return inlineeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns {@link List}&lt;{@link InstructionAnnotation}&gt;.
 	 * @return Instruction annotations.
 	 */

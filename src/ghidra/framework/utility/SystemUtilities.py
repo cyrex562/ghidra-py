@@ -16,7 +16,7 @@
 package ghidra.util;
 
 import java.awt.Font;
-import java.io.*;
+
 import java.net.URL;
 import java.net.URLDecoder;
 import java.util.Objects;
@@ -37,7 +37,7 @@ public class SystemUtilities {
 
 	private static String userName;
 
-	/**
+    # /**
 	 * System property that signals to override the font settings for Java and
 	 * Ghidra components.
 	 */
@@ -45,25 +45,25 @@ public class SystemUtilities {
 	private static final Integer FONT_SIZE_OVERRIDE_VALUE =
 		Integer.getInteger(SystemUtilities.FONT_SIZE_OVERRIDE_PROPERTY_NAME);
 
-	/**
+    # /**
 	 * The system property that can be checked during testing to determine if
 	 * the system is running in test mode.
 	 */
 	public static final String TESTING_PROPERTY = "SystemUtilities.isTesting";
 
-	/**
+    # /**
 	 * The system property that can be checked during testing to determine if
 	 * the system is running in batch, automated test mode.
 	 */
 	public static final String TESTING_BATCH_PROPERTY = "ghidra.test.property.batch.mode";
 
-	/**
+    # /**
 	 * The system property that can be checked during runtime to determine if we
 	 * are running with a GUI or headless.
 	 */
 	public static final String HEADLESS_PROPERTY = "SystemUtilities.isHeadless";
 
-	/**
+    # /**
 	 * The system property that can be checked during runtime to determine if we
 	 * are running in single-jar mode.
 	 */
@@ -73,7 +73,7 @@ public class SystemUtilities {
 	private static final boolean IS_IN_TESTING_BATCH_MODE =
 		Boolean.TRUE.toString().equalsIgnoreCase(System.getProperty(TESTING_BATCH_PROPERTY));
 
-	/**
+    # /**
 	 * isInTestingMode - lazy load value - must allow time for runtime property to be set
 	 * by GenericTestCase
 	 */
@@ -99,7 +99,7 @@ public class SystemUtilities {
 		};
 	}
 
-	/**
+    # /**
 	 * Clean the specified user name to eliminate any spaces or leading domain name
 	 * which may be present (e.g., "MyDomain\John Doe" becomes "JohnDoe").
 	 * @param name user name string to be cleaned-up
@@ -126,7 +126,7 @@ public class SystemUtilities {
 		return uname;
 	}
 
-	/**
+    # /**
 	 * Get the user that is running the application.  This name may be modified to
 	 * eliminate any spaces or leading domain name which may be present in Java's
 	 * {@code user.name} system property (see {@link #getCleanUserName(String)}).
@@ -139,7 +139,7 @@ public class SystemUtilities {
 		return userName;
 	}
 
-	/**
+    # /**
 	 * Gets the boolean value of the system property by the given name.  If the property is
 	 * not set, the defaultValue is returned.   If the value is set, then it will be passed
 	 * into {@link Boolean#parseBoolean(String)}.
@@ -158,7 +158,7 @@ public class SystemUtilities {
 		return Boolean.parseBoolean(value);
 	}
 
-	/**
+    # /**
 	 * Returns a non-null value if the system property is set that triggers the
 	 * font override setting, which makes all Java and Ghidra component fonts
 	 * the same size.
@@ -172,7 +172,7 @@ public class SystemUtilities {
 		return FONT_SIZE_OVERRIDE_VALUE;
 	}
 
-	/**
+    # /**
 	 * No longer supported.  Use the theming system for fonts
 	 *
 	 * @param font the font
@@ -184,7 +184,7 @@ public class SystemUtilities {
 		return font;
 	}
 
-	/**
+    # /**
 	 * Returns true if the system is running during a test.
 	 *
 	 * @return true if the system is running during a test.
@@ -197,7 +197,7 @@ public class SystemUtilities {
 		return isInTestingMode;
 	}
 
-	/**
+    # /**
 	 * Returns true if the system is running during a batch, automated test.
 	 *
 	 * @return true if the system is running during a batch, automated test.
@@ -206,7 +206,7 @@ public class SystemUtilities {
 		return IS_IN_TESTING_BATCH_MODE;
 	}
 
-	/**
+    # /**
 	 * Returns true if the system is running without a GUI.
 	 *
 	 * @return true if the system is running without a GUI.
@@ -216,7 +216,7 @@ public class SystemUtilities {
 		return Boolean.parseBoolean(headlessProperty);
 	}
 
-	/**
+    # /**
 	 * Calls the given suppler on the Swing thread, blocking with a
 	 * {@link SwingUtilities#invokeAndWait(Runnable)}.  Use this method when you need to get
 	 * a value while being on the Swing thread.
@@ -233,7 +233,7 @@ public class SystemUtilities {
 		return Swing.runNow(s);
 	}
 
-	/**
+    # /**
 	 * Calls the given runnable on the Swing thread.
 	 *
 	 * @param r the runnable
@@ -243,7 +243,7 @@ public class SystemUtilities {
 		Swing.runNow(r);
 	}
 
-	/**
+    # /**
 	 * Calls the given runnable on the Swing thread in the future by putting the request on
 	 * the back of the event queue.
 	 *
@@ -257,7 +257,7 @@ public class SystemUtilities {
 		Swing.runIfSwingOrRunLater(r);
 	}
 
-	/**
+    # /**
 	 * Returns true if we are running in development mode. The assumption is
 	 * that if this class is in a jar file, then we are in production mode.
 	 *
@@ -267,7 +267,7 @@ public class SystemUtilities {
 		return IS_IN_DEVELOPMENT_MODE;
 	}
 
-	/**
+    # /**
 	 * Returns true if the application is a release and not in development or testing
 	 * @return true if the application is a release and not in development or testing
 	 */
@@ -275,7 +275,7 @@ public class SystemUtilities {
 		return !isInDevelopmentMode() && !isInTestingMode() && !isInTestingBatchMode();
 	}
 
-	/**
+    # /**
 	 * Returns whether or not the two indicated objects are equal. It allows
 	 * either or both of the specified objects to be null.
 	 *
@@ -327,7 +327,7 @@ public class SystemUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * A development/testing time method to make sure the current thread is the swing thread.
 	 * @param errorMessage The message to display when the assert fails
 	 */
@@ -344,7 +344,7 @@ public class SystemUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a file that contains the given class. If the class is in a jar file, then
 	 * the jar file will be returned. If the file is in a .class file, then the directory
 	 * containing the package root will be returned (i.e. the "bin" directory).
@@ -404,7 +404,7 @@ public class SystemUtilities {
 		return dotCount + 1;
 	}
 
-	/**
+    # /**
 	 * Returns true if this is the event dispatch thread. Note that this method returns true in
 	 * headless mode because any thread in headless mode can dispatch its own events. In swing
 	 * environments, the swing thread is usually used to dispatch events.
@@ -415,7 +415,7 @@ public class SystemUtilities {
 		return Swing.isSwingThread();
 	}
 
-	/**
+    # /**
 	 * A debugging utility that allows you to create a conditional breakpoint in Eclipse that
 	 * will print items for you while it is performing its tests.  This method always returns
 	 * false.  This means to use it you will have to OR (||) your conditional breakpoint
@@ -440,7 +440,7 @@ public class SystemUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns the default size (in number of threads) for a <b>CPU processing bound</b>
 	 * thread pool.
 	 *

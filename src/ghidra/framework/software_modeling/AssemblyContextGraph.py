@@ -58,7 +58,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 	protected final Map<Vertex, Set<Edge>> cachedOutEdges =
 		LazyMap.lazyMap(new HashMap<>(), (Vertex v) -> computeOutEdges(v));
 
-	/**
+    # /**
 	 * Build the context change graph for a given language and grammar
 	 * 
 	 * <p>
@@ -96,7 +96,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 		dijkstra.getDistancesFromSource(v);
 	}
 
-	/**
+    # /**
 	 * Compute the optimal, i.e., shortest, sequences of applications to resolve a given context to
 	 * another, often the language's default context.
 	 * 
@@ -144,7 +144,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 		return result;
 	}
 
-	/**
+    # /**
 	 * Gather all the semantics that can be used as state transitions
 	 * 
 	 * <p>
@@ -161,7 +161,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 		}
 	}
 
-	/**
+    # /**
 	 * A vertex in a context transition graph
 	 * 
 	 * <p>
@@ -171,7 +171,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 		protected final AssemblyPatternBlock context;
 		protected final String subtable;
 
-		/**
+	    # /**
 		 * Construct a new vertex with the given block and sub-table name
 		 * 
 		 * @param context the context
@@ -182,7 +182,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 			this.subtable = subtable;
 		}
 
-		/**
+	    # /**
 		 * Check if this and another vertex "agree"
 		 * 
 		 * <p>
@@ -242,7 +242,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 		}
 	}
 
-	/**
+    # /**
 	 * A transition in a context transition graph
 	 * 
 	 * <p>
@@ -257,7 +257,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 		protected final Vertex start;
 		protected final Vertex end;
 
-		/**
+	    # /**
 		 * Construct a new transition associated with the given constructor and operand index
 		 * 
 		 * @param sem the constructor semantic
@@ -386,7 +386,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 		return result;
 	}
 
-	/**
+    # /**
 	 * This operation is not supported.
 	 * 
 	 * <p>
@@ -404,7 +404,7 @@ public class AssemblyContextGraph implements GImplicitDirectedGraph<Vertex, Edge
 		return cachedOutEdges.get(v);
 	}
 
-	/**
+    # /**
 	 * Returns a copy of the graph explored so far
 	 */
 	@Override

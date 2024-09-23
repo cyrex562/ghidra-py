@@ -17,7 +17,7 @@ package ghidra.app.util.opinion;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.util.Collection;
 
 import org.junit.*;

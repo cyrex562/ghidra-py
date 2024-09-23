@@ -41,13 +41,13 @@ public interface FGVertex extends VisualVertex {
 
 	public FGVertex cloneVertex(FGController newController);
 
-	/**
+    # /**
 	 * A chance for this vertex to save off changed settings
 	 * @param settings the settings
 	 */
 	public void writeSettings(FunctionGraphVertexAttributes settings);
 
-	/**
+    # /**
 	 * A chance for this vertex to read in stored settings
 	 * @param settings the settings
 	 */
@@ -59,7 +59,7 @@ public interface FGVertex extends VisualVertex {
 
 	public FGVertexType getVertexType();
 
-	/**
+    # /**
 	 * Sets the vertex type.  This can only be called once.  Repeated calls will except.
 	 *
 	 * @param vertexType the type
@@ -68,7 +68,7 @@ public interface FGVertex extends VisualVertex {
 
 	public Address getVertexAddress();
 
-	/**
+    # /**
 	 * Returns true if this vertex is considered an entry.  Normally, a vertex is considered
 	 * an entry if it is a source, with no incoming edges.  This vertex can be considered an
 	 * entry even if it has incoming edges, such as when another function directly calls the
@@ -96,7 +96,7 @@ public interface FGVertex extends VisualVertex {
 
 	public void clearColor();
 
-	/**
+    # /**
 	 * Signals to this vertex that it is associated with a group
 	 *
 	 * @param groupInfo the new group info for this vertex; null if the vertex is no longer part
@@ -104,13 +104,13 @@ public interface FGVertex extends VisualVertex {
 	 */
 	public void updateGroupAssociationStatus(GroupHistoryInfo groupInfo);
 
-	/**
+    # /**
 	 * The group info for this vertex if it is in a group; null if not in a group
 	 * @return the group info or null
 	 */
 	public GroupHistoryInfo getGroupInfo();
 
-	/**
+    # /**
 	 * Returns true if this vertex is a member of an uncollapsed group
 	 * @return true if this vertex is a member of an uncollapsed group
 	 */
@@ -138,7 +138,7 @@ public interface FGVertex extends VisualVertex {
 
 	public ProgramSelection getProgramSelection();
 
-	/**
+    # /**
 	 * Returns any selected text within the vertex that does not span multiple fields
 	 * @return the text
 	 */
@@ -150,7 +150,7 @@ public interface FGVertex extends VisualVertex {
 
 	public Rectangle getCursorBounds();
 
-	/**
+    # /**
 	 * Edits the label for the vertex.  This could be the label for the minimum address of the
 	 * vertex's code block or this could be the text of the vertex's display (as it is for a
 	 * grouped vertex).
@@ -159,7 +159,7 @@ public interface FGVertex extends VisualVertex {
 	 */
 	public void editLabel(JComponent component);
 
-	/**
+    # /**
 	 * Returns true if the clicked component is or is inside of the header of the vertex
 	 *
 	 * @param clickedComponent the clicked component
@@ -167,7 +167,7 @@ public interface FGVertex extends VisualVertex {
 	 */
 	public boolean isHeaderClick(Component clickedComponent);
 
-	/**
+    # /**
 	 * Signals that this vertex is being rendered such that it takes up the entire graph
 	 * window.
 	 *
@@ -175,7 +175,7 @@ public interface FGVertex extends VisualVertex {
 	 */
 	public boolean isFullScreenMode();
 
-	/**
+    # /**
 	 * Sets whether this vertex is in full-screen mode.  When in full-screen, a larger
 	 * view of the code block will be provided.  When not in full-screen, a condensed view
 	 * of this vertex is provided.
@@ -184,30 +184,30 @@ public interface FGVertex extends VisualVertex {
 	 */
 	public void setFullScreenMode(boolean fullScreen);
 
-	/**
+    # /**
 	 * Returns the full-screen view of this vertex.
 	 * @return the full-screen view
 	 */
 	public Component getMaximizedViewComponent();
 
-	/**
+    # /**
 	 * Signals to rebuild this vertex's data model.  This call will not do any real work
 	 * if the model is not 'dirty'.
 	 */
 	public void refreshModel();
 
-	/**
+    # /**
 	 * Triggers a refresh of the visual components of this vertex, such as the title.
 	 */
 	public void refreshDisplay();
 
-	/**
+    # /**
 	 * Refresh the vertex's display information if the given address is the vertex entry point
 	 * @param address the addresses
 	 */
 	public void refreshDisplayForAddress(Address address);
 
-	/**
+    # /**
 	 * Tells this vertex whether it is showing.  This actually overrides the underlying
 	 * Java component's {@link JComponent#isShowing()} method in order to prevent it from
 	 * showing tooltips (we manage tooltips ourselves).

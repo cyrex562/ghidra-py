@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.script.GhidraScript;
@@ -153,7 +153,7 @@ public abstract class AbstractGhidraVersionTrackingScript extends GhidraScript {
 		super.cleanup(success);
 	}
 
-	/**
+    # /**
 	 * This will release the current session and both source and destination programs.
 	 * If either program needs to be held it is the script's responsibility to first retain
 	 * the instance and add itself as a consumer.  Any program consumer must release it

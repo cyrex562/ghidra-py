@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import java.util.ArrayList;
@@ -26,19 +26,19 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <CODE>OverlapCodeSubModel</CODE> (O-model) defines subroutines with a
- * unique entry point, which may share code with other subroutines. Each entry-
- * point may either be a source or called entry-point and is identified using
- * the MultEntSubModel.  This model defines the set of addresses contained
- * within each subroutine based upon the possible flows from its entry- point.
- * Flows which encounter another entry-point are terminated.
- * <P>
- * NOTE: This differs from the original definition of an entry point, however,
- * the intent of the O-Model is preserved.
- *
- * @see ghidra.program.model.block.CodeBlockModel
- * @see ghidra.program.model.block.MultEntSubModel
- */
+# * <CODE>OverlapCodeSubModel</CODE> (O-model) defines subroutines with a
+# * unique entry point, which may share code with other subroutines. Each entry-
+# * point may either be a source or called entry-point and is identified using
+# * the MultEntSubModel.  This model defines the set of addresses contained
+# * within each subroutine based upon the possible flows from its entry- point.
+# * Flows which encounter another entry-point are terminated.
+# * <P>
+# * NOTE: This differs from the original definition of an entry point, however,
+# * the intent of the O-Model is preserved.
+# *
+# * @see ghidra.program.model.block.CodeBlockModel
+# * @see ghidra.program.model.block.MultEntSubModel
+# */
 public class OverlapCodeSubModel implements SubroutineBlockModel {
 
 	public static final String OVERLAP_MODEL_NAME = "Overlapped Code";
@@ -269,7 +269,7 @@ public class OverlapCodeSubModel implements SubroutineBlockModel {
     }
 
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getProgram()
 	 */
     @Override
@@ -432,7 +432,7 @@ public class OverlapCodeSubModel implements SubroutineBlockModel {
         return block;
     }  
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getBasicBlockModel()
 	 */
 	@Override
@@ -440,7 +440,7 @@ public class OverlapCodeSubModel implements SubroutineBlockModel {
 		return modelM.getBasicBlockModel();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getName()
 	 */
 	@Override
@@ -448,7 +448,7 @@ public class OverlapCodeSubModel implements SubroutineBlockModel {
 		return OVERLAP_MODEL_NAME;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.SubroutineBlockModel#getBaseSubroutineModel()
 	 */
 	@Override
@@ -456,7 +456,7 @@ public class OverlapCodeSubModel implements SubroutineBlockModel {
 		return modelM;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#allowsBlockOverlap()
 	 */
 	@Override

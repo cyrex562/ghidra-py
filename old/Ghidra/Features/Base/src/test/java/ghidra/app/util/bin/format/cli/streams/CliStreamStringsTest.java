@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.cli.streams;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.nio.charset.StandardCharsets;
 
 import org.junit.Test;

@@ -43,7 +43,7 @@ public class FieldListTypeApplier extends MsDataTypeComponentApplier {
 		throw new PdbException("Problem creating field list");
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 * @throws IllegalArgumentException Upon invalid arguments

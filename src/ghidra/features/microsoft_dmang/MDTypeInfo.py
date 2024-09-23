@@ -43,7 +43,7 @@ public class MDTypeInfo extends MDParsableItem {
 		_NOT_SPECIFIED, _STATIC, _VIRTUAL
 	}
 
-	/**
+    # /**
 	 * Enum representing pointer format.
 	 */
 	enum PointerFormat {

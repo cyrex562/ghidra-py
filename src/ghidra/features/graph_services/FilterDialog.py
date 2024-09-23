@@ -28,27 +28,27 @@ import ghidra.util.layout.VerticalLayout;
  */
 public class FilterDialog extends DialogComponentProvider {
 
-	/**
+    # /**
 	 * A title for the vertex filter section of the dialog
 	 */
 	private static final String VERTEX_TITLE = "Vertex Filters";
 
-	/**
+    # /**
 	 * A title for the edge filter section of the dialog
 	 */
 	private static final String EDGE_TITLE = "Edge Filters";
 
-	/**
+    # /**
 	 * A {@code List} (possibly empty) of filter buttons for vertices
 	 */
 	private final List<? extends AbstractButton> vertexButtons;
 
-	/**
+    # /**
 	 * A {@code List} (possibly empty) of filter buttons for edges
 	 */
 	List<? extends AbstractButton> edgeButtons;
 
-	/**
+    # /**
 	 * @param vertexButtons a {@code List} of {@code AbstractButton}s to filter vertices
 	 * @param edgeButtons a {@code List} of {@code AbstractButton}s to filter edges
 	 */
@@ -63,7 +63,7 @@ public class FilterDialog extends DialogComponentProvider {
 		setDefaultButton(dismissButton);
 	}
 
-	/**
+    # /**
 	 * Create a layout-formatted JComponent holding 2 vertical lists
 	 * of buttons, one list for vertex filter buttons and one list for
 	 * edge filter buttons. Each list has a border and title.

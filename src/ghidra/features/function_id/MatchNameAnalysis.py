@@ -39,21 +39,21 @@ public class MatchNameAnalysis {
 	
 	private float overallScore = 0.0f;
 
-	/**
+    # /**
 	 * @return the number of deduped symbol names
 	 */
 	public int numNames() {
 		return finalNameList.size();
 	}
 
-	/**
+    # /**
 	 * @return an iterator to the deduped list of raw names (similar names are not collapsed)
 	 */
 	public Iterator<String> getRawNameIterator() {
 		return rawNames.iterator();
 	}
 
-	/**
+    # /**
 	 * Check if the given name is contained in the list of matches
 	 * @param name is the given name
 	 * @return true if the name is in the list
@@ -62,28 +62,28 @@ public class MatchNameAnalysis {
 		return rawNames.contains(name);
 	}
 
-	/**
+    # /**
 	 * @return an iterator to the final list of deduped symbol names
 	 */
 	public Iterator<String> getNameIterator() {
 		return finalNameList.iterator();
 	}
 
-	/**
+    # /**
 	 * @return the number of symbols in the deduped list of matching libraries
 	 */
 	public int numLibraries() {
 		return libraries.size();
 	}
 
-	/**
+    # /**
 	 * @return an iterator to the deduped list of matching libraries
 	 */
 	public Iterator<String> getLibraryIterator() {
 		return libraries.iterator();
 	}
 
-	/**
+    # /**
 	 * Get an object with all the given versions of the given raw name
 	 * @param raw is the raw name
 	 * @return the corresponding NameVersions object
@@ -92,7 +92,7 @@ public class MatchNameAnalysis {
 		return versionMap.get(raw);
 	}
 
-	/**
+    # /**
 	 * Run through all deduping strategies and return the number of unique symbols given
 	 * by the best strategy.
 	 * @return number of unique symbols given by the optimal deduping strategy
@@ -111,7 +111,7 @@ public class MatchNameAnalysis {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Run through ALL deduping strategies and if one results in a single label, return that label.
 	 * Otherwise return null.
 	 * @return a unique name describing all matches or null
@@ -136,7 +136,7 @@ public class MatchNameAnalysis {
 		return overallScore;
 	}
 
-	/**
+    # /**
 	 * Analyze a list of FID matches from a single address, deciding on the final list of symbols
 	 * that will be associated with the address by deduping and omitting similar names.
 	 * The final list is in finalNameList.
@@ -198,7 +198,7 @@ public class MatchNameAnalysis {
 		}
 	}
 	
-	/**
+    # /**
 	 * Collect strings describing the library descriptor of a set of FID matches.
 	 * Dedup the list trying to get the size down below a specified limit, stripping
 	 * version and family information from the library string if necessary.
@@ -249,7 +249,7 @@ public class MatchNameAnalysis {
 		}
 	}
 
-	/**
+    # /**
 	 * Make a final decision based on the deduping strategies if there is a single
 	 * matching name that describes all matches.
 	 * @return the single matching name or null

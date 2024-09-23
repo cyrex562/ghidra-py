@@ -62,7 +62,7 @@ public class LoongsonAnalyzer extends ConstantPropagationAnalyzer {
 		ConstantPropagationContextEvaluator eval =
 			new ConstantPropagationContextEvaluator(monitor, trustWriteMemOption) {
 
-				/**
+			    # /**
 				 * Check if there are any data references to this location.
 				 * @param program
 				 * @param addr

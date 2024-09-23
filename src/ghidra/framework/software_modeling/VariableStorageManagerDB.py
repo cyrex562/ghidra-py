@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import db.*;
@@ -48,7 +48,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 	private WeakValueHashMap<Long, MyVariableStorage> cacheMap =
 		new WeakValueHashMap<Long, MyVariableStorage>(256);
 
-	/**
+    # /**
 	 * Construct a new variable manager.
 	 * @param handle the database handle.
 	 * @param addrMap the address map (required for legacy adpter use only)
@@ -69,7 +69,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 		adapter = VariableStorageDBAdapter.getAdapter(handle, openMode, addrMap, monitor);
 	}
 
-	/**
+    # /**
 	 * Set program architecture.
 	 * @param arch program architecture
 	 */
@@ -77,7 +77,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 		this.arch = arch;
 	}
 
-	/**
+    # /**
 	 * Delete the DB table which correspnds to this variable storage implementation
 	 * @param dbHandle database handle
 	 * @throws IOException if an IO error occurs
@@ -86,7 +86,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 		dbHandle.deleteTable(VariableStorageDBAdapter.VARIABLE_STORAGE_TABLE_NAME);
 	}
 
-	/**
+    # /**
 	 * Determine if the variable storage manager table already exists
 	 * @param dbHandle database handle
 	 * @return true if storage table exists
@@ -117,7 +117,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 		return varStore;
 	}
 
-	/**
+    # /**
 	 * Get the list of varnodes associated with the specified variable storage address.
 	 * NOTE: The program architecture and error handler must be set appropriately prior to 
 	 * invocation of this method (see {@link #setProgramArchitecture(ProgramArchitecture)}.
@@ -143,7 +143,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the variable storage object associated with the specified variable storage address.
 	 * NOTE: The program architecture and error handler must be set appropriately prior to 
 	 * invocation of this method (see {@link #setProgramArchitecture(ProgramArchitecture)}.
@@ -159,7 +159,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get a variable address for the given storage specification.
 	 * NOTE: The program architecture and error handler must be set appropriately prior to 
 	 * invocation of this method (see {@link #setProgramArchitecture(ProgramArchitecture)}.
@@ -225,7 +225,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 //		adapter.updateRecord(rec);
 //	}
 //
-//	/**
+//    # /**
 //	 * Set variable storage based upon unrestricted varnodes (useful for upgrades)
 //	 * @param variableAddr
 //	 * @param varnodes
@@ -311,7 +311,7 @@ public class VariableStorageManagerDB implements VariableStorageManager {
 
 	}
 
-	/**
+    # /**
 	 * Perform language translation.
 	 * Following the invocation of this method it is important to ensure that the program 
 	 * architecure is adjusted if neccessary.

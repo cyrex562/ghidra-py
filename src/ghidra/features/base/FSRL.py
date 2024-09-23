@@ -15,7 +15,7 @@
  */
 package ghidra.formats.gfilesystem;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.util.*;
 

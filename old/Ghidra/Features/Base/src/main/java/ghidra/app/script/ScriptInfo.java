@@ -17,7 +17,7 @@ package ghidra.app.script;
 
 import static ghidra.util.HTMLUtilities.*;
 
-import java.io.*;
+
 import java.util.List;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;

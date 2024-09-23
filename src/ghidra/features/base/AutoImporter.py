@@ -16,7 +16,7 @@
 package ghidra.app.util.importer;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Predicate;
 

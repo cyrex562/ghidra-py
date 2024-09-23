@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.Collection;
 
@@ -61,26 +61,26 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		name = doGetName();
 	}
 
-	/**
+    # /**
 	 * Subclasses implement this to either read the name from the database record or compute if it
 	 * is a derived name such as a pointer or array. Implementers can assume that the database lock
 	 * will be acquired when this method is called.
 	 */
 	protected abstract String doGetName();
 
-	/**
+    # /**
 	 * Subclasses implement this to read the category path from the database record.Implementers can
 	 * assume that the database lock will be acquired when this method is called.
 	 */
 	protected abstract long doGetCategoryID();
 
-	/**
+    # /**
 	 * Subclasses implement this to update the category path ID to the database. Implementers can
 	 * assume that the database lock will be acquired when this method is called.
 	 */
 	protected abstract void doSetCategoryPathRecord(long categoryID) throws IOException;
 
-	/**
+    # /**
 	 * Subclasses implement this to update the to the database. Implementers can assume that the
 	 * database lock will be acquired when this method is called.
 	 * 
@@ -89,13 +89,13 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 	protected abstract void doSetNameRecord(String newName)
 			throws IOException, InvalidNameException;
 
-	/**
+    # /**
 	 * Subclasses implement this to read the source archive id from the record. Implementers can
 	 * assume that the database lock will be acquired when this method is called.
 	 */
 	protected abstract UniversalID getSourceArchiveID();
 
-	/**
+    # /**
 	 * Subclasses implement this to update the source archive id from the record. Implementers can
 	 * assume that the database lock will be acquired when this method is called.
 	 */
@@ -151,7 +151,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the current name without refresh. This is intended to be used for event generation when
 	 * an old-name is needed.
 	 * 
@@ -191,7 +191,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Set the data in the form of the appropriate Object for this DataType.
 	 *
 	 * @param buf the data buffer.
@@ -410,7 +410,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		}
 	}
 
-	/**
+    # /**
 	 * Updates the path for this datatype
 	 * 
 	 * @param dt the dataType whose path has changed.
@@ -433,7 +433,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		}
 	}
 
-	/**
+    # /**
 	 * Notify all parents that the size of this datatype has changed or other significant change
 	 * that may affect a parent containing this datatype.
 	 * 
@@ -446,7 +446,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		dataMgr.dataTypeChanged(this, isAutoChange);
 	}
 
-	/**
+    # /**
 	 * Notification that this composite data type's alignment has changed.
 	 * 
 	 * @param isAutoChange true if changes are in response to another datatype's change.
@@ -526,7 +526,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * Sets a String briefly describing this DataType. <br>
 	 * If a data type that extends this class wants to allow the description to be changed, then it
 	 * must override this method.
@@ -538,7 +538,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		// no-op
 	}
 
-	/**
+    # /**
 	 * setUniversalID is a package level method that allows you to change a data type's universal
 	 * ID. This is only intended to be used when transforming a newly parsed data type archive so
 	 * that it can be used as a replacement of the archive from a previous software release.
@@ -585,7 +585,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 		throw new DataTypeEncodeException("Encoding not supported", repr, this);
 	}
 
-	/**
+    # /**
 	 * Perform equivalence check while resolving the specified dataType.  If the specified conflict 
 	 * handler under a conflict situation indicates that the existing data type (i.e., this type)
 	 * be used in place of the specified dataType this method will return true.
@@ -595,7 +595,7 @@ abstract class DataTypeDB extends DatabaseObject implements DataType {
 	 */
 	protected abstract boolean isEquivalent(DataType dataType, DataTypeConflictHandler handler);
 
-	/**
+    # /**
 	 * If possible, perform equivalence check while resolving the specified dataType if the 
 	 * existingDataType is an instance of DataTypeDB.  Otherwise, perform a normal 
 	 * isEquivalent operation.  If the specified conflict 

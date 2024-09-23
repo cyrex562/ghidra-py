@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.mem;
 
 import java.math.BigInteger;
@@ -21,15 +21,15 @@ import ghidra.program.model.address.*;
 import ghidra.util.GhidraDataConverter;
 
 # /**
- * MemBufferImpl implements the MemBuffer interface.  It buffers up N bytes
- * at time, reducing the overall number of calls to Memory, greatly reducing
- * the overhead of various error checks.  This implementation will not wrap
- * if the end of the memory space is encountered.
- * 
- * The {@link #getByte(int)} method can cause the buffer cache to adjust if
- * outside the current cache range.  This is not the case for other methods which 
- * will simply defer to the underlying memory if outside the cache range.
- */
+# * MemBufferImpl implements the MemBuffer interface.  It buffers up N bytes
+# * at time, reducing the overall number of calls to Memory, greatly reducing
+# * the overhead of various error checks.  This implementation will not wrap
+# * if the end of the memory space is encountered.
+# * 
+# * The {@link #getByte(int)} method can cause the buffer cache to adjust if
+# * outside the current cache range.  This is not the case for other methods which 
+# * will simply defer to the underlying memory if outside the cache range.
+# */
 
 public class MemoryBufferImpl implements MutableMemBuffer {
 
@@ -45,7 +45,7 @@ public class MemoryBufferImpl implements MutableMemBuffer {
 	private int maxOffset = -1;
 	private int threshold = 0;
 
-	/**
+    # /**
 	 * Construct a new MemoryBufferImpl
 	 * @param mem memory associated with the given address
 	 * @param addr start address
@@ -54,7 +54,7 @@ public class MemoryBufferImpl implements MutableMemBuffer {
 		this(mem, addr, DEFAULT_BUFSIZE);
 	}
 
-	/**
+    # /**
 	 * Construct a new MemoryBufferImpl
 	 * @param mem memory associated with the given address
 	 * @param addr start address

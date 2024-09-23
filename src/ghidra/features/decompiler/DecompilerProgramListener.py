@@ -34,7 +34,7 @@ public class DecompilerProgramListener implements DomainObjectListener {
 	private DecompilerController controller;
 	private SwingUpdateManager updater;
 
-	/**
+    # /**
 	 * Construct a listener with a callback to be called when a decompile should occur. Program
 	 * events are buffered using SwingUpdateManager before the callback is called.
 	 * @param controller the DecompilerController
@@ -44,7 +44,7 @@ public class DecompilerProgramListener implements DomainObjectListener {
 		this(controller, new SwingUpdateManager(500, 5000, callback));
 	}
 
-	/**
+    # /**
 	 * Construct a listener with a SwingUpdateManger that should be kicked for every
 	 * program change.
 	 * @param controller the DecompilerController

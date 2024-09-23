@@ -38,14 +38,14 @@ import ghidra.util.Msg;
 public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		implements PcodeFormatter<T> {
 
-	/**
+    # /**
 	 * A result instructing the formatter whether or not to continue
 	 */
 	protected enum FormatResult {
 		CONTINUE, TERMINATE;
 	}
 
-	/**
+    # /**
 	 * Create the appender for a formatting invocation
 	 * 
 	 * @param language the language of the p-code to format
@@ -54,7 +54,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 	 */
 	protected abstract A createAppender(Language language, boolean indent);
 
-	/**
+    # /**
 	 * Check if this formatter is configured to display raw p-code
 	 * 
 	 * @return true if displaying raw, false otherwise
@@ -76,7 +76,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		return appender.finish();
 	}
 
-	/**
+    # /**
 	 * Format a single op template
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -132,7 +132,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		return FormatResult.CONTINUE;
 	}
 
-	/**
+    # /**
 	 * Format an output varnode
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -143,7 +143,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		formatVarnode(appender, opcode, -1, output);
 	}
 
-	/**
+    # /**
 	 * Format an input varnode
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -155,7 +155,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		formatVarnode(appender, opcode, opIndex, input);
 	}
 
-	/**
+    # /**
 	 * Format a varnode
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -196,7 +196,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		}
 	}
 
-	/**
+    # /**
 	 * Format a varnode in nice (non-raw) form
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -217,7 +217,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		}
 	}
 
-	/**
+    # /**
 	 * Format a varnode in raw form
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -230,7 +230,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		appender.appendRawVarnode(space, offset.getReal(), size.getReal());
 	}
 
-	/**
+    # /**
 	 * Format a unique variable
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -248,7 +248,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		formatSize(appender, size);
 	}
 
-	/**
+    # /**
 	 * Format a memory variable
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -295,7 +295,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		return;
 	}
 
-	/**
+    # /**
 	 * Format a constant
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -311,7 +311,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		formatSize(appender, size);
 	}
 
-	/**
+    # /**
 	 * Format a size indicator
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -327,7 +327,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		}
 	}
 
-	/**
+    # /**
 	 * Format a p-code userop name (CALLOTHER)
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -344,7 +344,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		appender.appendCharacter('"');
 	}
 
-	/**
+    # /**
 	 * Try to format a local label (e.g., {@code instr_next})
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -360,7 +360,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		return false;
 	}
 
-	/**
+    # /**
 	 * Format the memory location for a LOAD or STORE op
 	 * 
 	 * @param appender the appender to receive the formatted text
@@ -391,7 +391,7 @@ public abstract class AbstractPcodeFormatter<T, A extends Appender<T>>
 		return false;
 	}
 
-	/**
+    # /**
 	 * Check if the given template represents a line label
 	 * 
 	 * <p>

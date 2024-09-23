@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.function;
 
 import java.util.*;
@@ -33,7 +33,7 @@ class FunctionStackFrame implements StackFrame {
 	private boolean stackGrowsNegative;
 	private boolean invalid;
 
-	/**
+    # /**
 	 * Construct a function stack frame.
 	 * @param function
 	 * @param variables
@@ -320,7 +320,7 @@ class FunctionStackFrame implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * @return the number of parameters which occupy stack storage
 	 */
 	int getParameterCount() {
@@ -376,7 +376,7 @@ class FunctionStackFrame implements StackFrame {
 		return baseOffset != null ? (int) baseOffset.longValue() : UNKNOWN_PARAM_OFFSET;
 	}
 
-//	/**
+//    # /**
 //	 * @see ghidra.program.model.listing.StackFrame#setParameterOffset(int)
 //	 */
 //	@Override
@@ -438,7 +438,7 @@ class FunctionStackFrame implements StackFrame {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the size of the negative portion of the stack
 	 *
 	 * @return the negative portion size
@@ -455,7 +455,7 @@ class FunctionStackFrame implements StackFrame {
 //		return 0 - variables[0].getStackOffset();
 //	}
 
-	/**
+    # /**
 	 * Get the size of the positive portion of the stack (including 0)
 	 *
 	 * @return the positive portion size
@@ -472,7 +472,7 @@ class FunctionStackFrame implements StackFrame {
 //		return var.getStackOffset() + var.getLength();
 //	}
 
-	/**
+    # /**
 	 * Get a count of all the stack variables in the negative portion of the
 	 * frame. This EXCLUDES any variables defined before the parameter offset if
 	 * the parameter offset is negative.
@@ -498,7 +498,7 @@ class FunctionStackFrame implements StackFrame {
 //		return index;
 //	}
 
-	/**
+    # /**
 	 * Get all the stack variables in the postive portion of the stack.
 	 * This EXCLUDES any variables defined before the parameter offset if the
 	 * parameter offset is positive.
@@ -526,7 +526,7 @@ class FunctionStackFrame implements StackFrame {
 //		return length - index;
 //	}
 
-	/**
+    # /**
 	 * Returns true if specified offset could correspond to a parameter
 	 * @param offset
 	 */
@@ -545,7 +545,7 @@ class FunctionStackFrame implements StackFrame {
 			(!stackGrowsNegative && offset < baseOffset);
 	}
 
-	/**
+    # /**
 	 * Returns whether some other stack frame is "equivalent to" this one.
 	 * The stack frame is considered equal to another even if they are each
 	 * part of a different function.

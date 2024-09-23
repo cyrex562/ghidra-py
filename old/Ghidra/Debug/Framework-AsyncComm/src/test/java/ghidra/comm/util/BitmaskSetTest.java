@@ -17,7 +17,7 @@ package ghidra.comm.util;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.net.URI;
 import java.util.*;
 

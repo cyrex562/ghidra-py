@@ -46,7 +46,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 	// connection is made for any event
 	private boolean changed; // flag for whether the connection was changed
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	ToolConnectionImpl(PluginTool producerTool, PluginTool consumerTool) {
@@ -57,7 +57,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 		updateEventList();
 	}
 
-	/**
+    # /**
 	 * Default constructor used when there is a problem restoring state
 	 * on the workspace; want the restore() method to still work.
 	 */
@@ -146,7 +146,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Saves the Tool Connection into an XML element.
 	 */
 	public Element saveToXml() {
@@ -171,7 +171,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 		return root;
 	}
 
-	/**
+    # /**
 	 * restores the ToolConnection from an XML element
 	 * 
 	 * @param root XML element to restore ToolConnection from.
@@ -193,7 +193,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a hash code value for the object. This method is
 	 * supported for the benefit of hashtables such as those provided by
 	 * <code>java.util.Hashtable</code>.
@@ -204,7 +204,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 			consumerTool.getName().hashCode();
 	}
 
-	/**
+    # /**
 	 * Indicates whether some other object is "equal to" this one.
 	 */
 	@Override
@@ -226,7 +226,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 			consumerTool.getName().equals(tc.consumerTool.getName());
 	}
 
-	/**
+    # /**
 	 * Returns a string representation of the object. In general, the
 	 * <code>toString</code> method returns a string that
 	 * "textually represents" this object. The result should
@@ -242,14 +242,14 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 	////////////////////////////////////////////////////////////////
 	// ** package methods
 	///////////////////////////////////////////////////////////////
-	/**
+    # /**
 	 * Return true if the connection changed.
 	 */
 	boolean hasChanged() {
 		return changed;
 	}
 
-	/**
+    # /**
 	 * Update the events that are consumed and produced, as the tool
 	 * may have added or removed plugins.
 	 */
@@ -284,7 +284,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 	// ** private methods
 	////////////////////////////////////////////////////////////////
 
-	/**
+    # /**
 	 *  Verify that the given event name is produced by the
 	 * producer tool and is consumed by the consumer tool.
 	 * 
@@ -300,7 +300,7 @@ class ToolConnectionImpl implements ToolConnection, ToolListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Check the connections; if there are none, then remove the
 	 * consumer tool as a listener on the producer tool; called
 	 * when a disconnect is made.

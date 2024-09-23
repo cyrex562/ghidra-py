@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.sem;
 
 import java.util.*;
@@ -23,21 +23,21 @@ import ghidra.app.plugin.processors.sleigh.*;
 
 public interface AssemblyResolvedPatterns extends AssemblyResolution {
 
-	/**
+    # /**
 	 * Get the instruction block
 	 * 
 	 * @return the instruction block
 	 */
 	AssemblyPatternBlock getInstruction();
 
-	/**
+    # /**
 	 * Get the context block
 	 * 
 	 * @return the context block
 	 */
 	AssemblyPatternBlock getContext();
 
-	/**
+    # /**
 	 * Get the length of the instruction encoding
 	 * 
 	 * <p>
@@ -51,7 +51,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	int getInstructionLength();
 
-	/**
+    # /**
 	 * Get the length of the instruction encoding, excluding trailing undefined bytes
 	 * 
 	 * <p>
@@ -62,21 +62,21 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	int getDefinedInstructionLength();
 
-	/**
+    # /**
 	 * Get the backfill records for this resolution, if any
 	 * 
 	 * @return the backfills
 	 */
 	Collection<AssemblyResolvedBackfill> getBackfills();
 
-	/**
+    # /**
 	 * Check if this resolution has pending backfills to apply
 	 * 
 	 * @return true if there are backfills
 	 */
 	boolean hasBackfills();
 
-	/**
+    # /**
 	 * Get the forbidden patterns for this resolution
 	 * 
 	 * <p>
@@ -87,7 +87,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	Collection<AssemblyResolvedPatterns> getForbids();
 
-	/**
+    # /**
 	 * Decode a portion of the instruction block
 	 * 
 	 * @param byteStart the first byte to decode
@@ -97,7 +97,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	MaskedLong readInstruction(int byteStart, int size);
 
-	/**
+    # /**
 	 * Decode a portion of the context block
 	 * 
 	 * @param start the first byte to decode
@@ -107,7 +107,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	MaskedLong readContext(int start, int len);
 
-	/**
+    # /**
 	 * Decode the value from the context located where the given context operation would write
 	 * 
 	 * <p>
@@ -122,7 +122,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	MaskedLong readContextOp(ContextOp cop);
 
-	/**
+    # /**
 	 * Check if this and another resolution have equal encodings
 	 * 
 	 * <p>
@@ -134,7 +134,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	boolean bitsEqual(AssemblyResolvedPatterns that);
 
-	/**
+    # /**
 	 * Check if this assembled construct state is the same as the given dis-assembled construct
 	 * state.
 	 */
@@ -143,7 +143,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	@Override
 	AssemblyResolvedPatterns shift(int shamt);
 
-	/**
+    # /**
 	 * Create a copy of this resolution with a new description
 	 * 
 	 * @param description the new description
@@ -151,7 +151,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns withDescription(String description);
 
-	/**
+    # /**
 	 * Create a copy of this resolution with a sibling to the right
 	 * 
 	 * <p>
@@ -163,7 +163,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns withRight(AssemblyResolution right);
 
-	/**
+    # /**
 	 * Create a copy of this resolution with a replaced constructor
 	 * 
 	 * @param cons the new constructor
@@ -171,7 +171,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns withConstructor(Constructor cons);
 
-	/**
+    # /**
 	 * Combine the encodings and backfills of the given resolution into this one
 	 * 
 	 * <p>
@@ -183,7 +183,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns combine(AssemblyResolvedPatterns pat);
 
-	/**
+    # /**
 	 * Combine the given backfill record into this resolution
 	 * 
 	 * @param bf the backfill record
@@ -191,7 +191,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns combine(AssemblyResolvedBackfill bf);
 
-	/**
+    # /**
 	 * Combine a backfill result
 	 * 
 	 * <p>
@@ -209,7 +209,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	@Override
 	AssemblyResolvedPatterns parent(String description, int opCount);
 
-	/**
+    # /**
 	 * Apply as many backfill records as possible
 	 * 
 	 * <p>
@@ -225,7 +225,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolution backfill(RecursiveDescentSolver solver, Map<String, Long> vals);
 
-	/**
+    # /**
 	 * Check if the current encoding is forbidden by one of the attached patterns
 	 * 
 	 * <p>
@@ -236,7 +236,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolution checkNotForbidden();
 
-	/**
+    # /**
 	 * Generate a new nop right this resolution to its right.
 	 * 
 	 * <p>
@@ -247,7 +247,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns nopLeftSibling();
 
-	/**
+    # /**
 	 * Solve and apply context changes in reverse to forbidden patterns
 	 * 
 	 * <p>
@@ -265,7 +265,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	AssemblyResolvedPatterns solveContextChangesForForbids(AssemblyConstructorSemantic sem,
 			Map<String, Long> vals);
 
-	/**
+    # /**
 	 * Get an iterable over all the possible fillings of the instruction pattern given a context
 	 * 
 	 * <p>
@@ -295,7 +295,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	Iterable<byte[]> possibleInsVals(AssemblyPatternBlock forCtx);
 
-	/**
+    # /**
 	 * Used for testing and diagnostics: list the constructor line numbers used to resolve this
 	 * encoding
 	 * 
@@ -307,7 +307,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	String dumpConstructorTree();
 
-	/**
+    # /**
 	 * Truncate (unshift) the resolved instruction pattern from the left
 	 * 
 	 * <b>NOTE:</b> This drops all backfill and forbidden pattern records, since this method is
@@ -318,7 +318,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns truncate(int shamt);
 
-	/**
+    # /**
 	 * Create a new resolution from this one with the given forbidden patterns recorded
 	 * 
 	 * @param more the additional forbidden patterns to record
@@ -326,7 +326,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns withForbids(Set<AssemblyResolvedPatterns> more);
 
-	/**
+    # /**
 	 * Set all bits read by a given context operation to unknown
 	 * 
 	 * @param cop the context operation
@@ -335,7 +335,7 @@ public interface AssemblyResolvedPatterns extends AssemblyResolution {
 	 */
 	AssemblyResolvedPatterns maskOut(ContextOp cop);
 
-	/**
+    # /**
 	 * Encode the given value into the context block as specified by an operation
 	 * 
 	 * <p>

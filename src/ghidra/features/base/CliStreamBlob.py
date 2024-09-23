@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe.cli.streams;
 
-import java.io.IOException;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.omf;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.util.bin.BinaryReader;

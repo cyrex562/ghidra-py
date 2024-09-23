@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -40,7 +40,7 @@ public class DefaultLocalGhidraProtocolConnector extends GhidraProtocolConnector
 
 	private boolean readOnly;
 
-	/**
+    # /**
 	 * Construct a protocol connector for use with a local file-based 
 	 * Ghidra project
 	 * @param ghidraURL Ghidra local file-based project URL (ghidra:/path/projectName)
@@ -84,7 +84,7 @@ public class DefaultLocalGhidraProtocolConnector extends GhidraProtocolConnector
 		throw new UnsupportedOperationException("local project access only");
 	}
 
-	/**
+    # /**
 	 * Get the ProjectLocator associated with a local project URL.
 	 * @return project locator object or null if URL supplies a a RepositoryAdapter and/or 
 	 * RepositoryServerAdapter.
@@ -118,7 +118,7 @@ public class DefaultLocalGhidraProtocolConnector extends GhidraProtocolConnector
 		return statusCode;
 	}
 
-	/**
+    # /**
 	 * Connect and establish loca project project data instance.  Opening a project for
 	 * write access is subject to in-use lock restriction.
 	 * See {@link #getStatusCode()} if null is returned.

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.docking.settings.Settings;
@@ -23,11 +23,11 @@ import ghidra.util.InvalidNameException;
 import ghidra.util.exception.DuplicateNameException;
 
 # /**
- * Basic implementation of the Array interface.
- * 
- * NOTE: The use of {@link FactoryDataType} and {@link Dynamic}, where 
- * {@link Dynamic#canSpecifyLength()} is false, are not supported for array use.
- */
+# * Basic implementation of the Array interface.
+# * 
+# * NOTE: The use of {@link FactoryDataType} and {@link Dynamic}, where 
+# * {@link Dynamic#canSpecifyLength()} is false, are not supported for array use.
+# */
 public class ArrayDataType extends DataTypeImpl implements Array {
 
 	private int numElements;
@@ -35,7 +35,7 @@ public class ArrayDataType extends DataTypeImpl implements Array {
 	private int elementLength;
 	private boolean deleted = false;
 
-	/**
+    # /**
 	 * Constructs a new Array dataType for fixed-length datatypes.  The specified datatype's
 	 * {@link DataTypeManager} will be used for its data organization.
 	 * @param dataType the dataType of the elements in the array ({@link FactoryDataType} and
@@ -48,7 +48,7 @@ public class ArrayDataType extends DataTypeImpl implements Array {
 		this(dataType, numElements, -1, null);
 	}
 
-	/**
+    # /**
 	 * Constructs a new Array dataType.  The specified datatype's {@link DataTypeManager} will 
 	 * be used for its data organization.
 	 * @param dataType the dataType of the elements in the array. {@link FactoryDataType} and
@@ -64,7 +64,7 @@ public class ArrayDataType extends DataTypeImpl implements Array {
 		this(dataType, numElements, elementLength, null);
 	}
 
-	/**
+    # /**
 	 * Constructs a new Array dataType.
 	 * @param dataType the dataType of the elements in the array. {@link FactoryDataType} and
 	 * {@link Dynamic}, where {@link Dynamic#canSpecifyLength()} is false, are not not permitted.
@@ -118,7 +118,7 @@ public class ArrayDataType extends DataTypeImpl implements Array {
 		return dt.getDataTypeManager();
 	}
 
-	/**
+    # /**
 	 * Validate a array base datatype to ensure that it is allowed
 	 * @param baseDt intended base datatype for array (always pass in typedef's base type if applicable)
 	 * @throws IllegalArgumentException if dt is not a valid base datatype for an array

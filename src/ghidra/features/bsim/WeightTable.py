@@ -57,7 +57,7 @@ public class WeightTable extends SQLComplexTable {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param factory the weight factory
 	 * @throws SQLException if there is an error creating/executing the query

@@ -25,7 +25,7 @@ class DomainFolderChangeListenerList implements DomainFolderChangeListener {
 
 	private DomainFileIndex fileIndex;
 
-	/** CopyOnWriteArrayList prevents the need for synchronization */
+    # /** CopyOnWriteArrayList prevents the need for synchronization */
 	private List<DomainFolderChangeListener> list = new CopyOnWriteArrayList<>();
 
 	DomainFolderChangeListenerList(DomainFileIndex fileIndex) {

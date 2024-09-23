@@ -22,7 +22,7 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

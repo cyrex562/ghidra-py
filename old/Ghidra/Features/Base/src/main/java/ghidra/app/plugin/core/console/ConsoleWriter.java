@@ -18,7 +18,7 @@ package ghidra.app.plugin.core.console;
 
 import ghidra.app.services.ConsoleService;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 class ConsoleWriter extends Writer {

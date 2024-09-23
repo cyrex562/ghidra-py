@@ -24,7 +24,7 @@ package ghidra.feature.vt.gui.editors;
  */
 public interface AddressEditorPanelListener {
 
-	/**
+    # /**
 	 * Notification that the address in the panel was edited.
 	 * This gets called when double click or <Enter> key actions occur.
 	 */

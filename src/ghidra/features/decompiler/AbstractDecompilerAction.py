@@ -75,7 +75,7 @@ public abstract class AbstractDecompilerAction extends DockingAction {
 		});
 	}
 
-	/**
+    # /**
 	 * Get the structure/union associated with a field token
 	 * @param tok is the token representing a field
 	 * @return the structure/union which contains this field
@@ -96,7 +96,7 @@ public abstract class AbstractDecompilerAction extends DockingAction {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Compare the given HighFunction's idea of the prototype with the Function's idea.
 	 * Return true if there is a difference. If a specific symbol is being changed,
 	 * it can be passed in to check whether or not the prototype is being affected.
@@ -158,7 +158,7 @@ public abstract class AbstractDecompilerAction extends DockingAction {
 		return symbolTable.getPrimarySymbol(address);
 	}
 
-	/**
+    # /**
 	 * Get the function corresponding to the specified decompiler context token.
 	 * 
 	 * @param context decompiler action context
@@ -183,7 +183,7 @@ public abstract class AbstractDecompilerAction extends DockingAction {
 		return f;
 	}
 
-	/**
+    # /**
 	 * Subclasses return true if they are enabled for the given context
 	 * 
 	 * @param context the context
@@ -191,7 +191,7 @@ public abstract class AbstractDecompilerAction extends DockingAction {
 	 */
 	protected abstract boolean isEnabledForDecompilerContext(DecompilerActionContext context);
 
-	/**
+    # /**
 	 * Subclasses will perform their work in this method
 	 * @param context the context
 	 */

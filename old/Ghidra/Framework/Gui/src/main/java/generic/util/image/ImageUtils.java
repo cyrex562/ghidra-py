@@ -18,7 +18,7 @@ package generic.util.image;
 import java.awt.*;
 import java.awt.image.*;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.Objects;
 
 import javax.imageio.ImageIO;

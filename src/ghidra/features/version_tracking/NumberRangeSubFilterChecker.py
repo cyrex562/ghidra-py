@@ -22,7 +22,7 @@ import java.util.Objects;
  */
 public interface NumberRangeSubFilterChecker {
 
-	/**
+    # /**
 	 * Returns true if filter 'a' is a more specific version of filter 'b'
 	 * 
 	 * @param a the potential sub-filter

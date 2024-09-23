@@ -30,7 +30,7 @@ public class ValidFcgData implements FcgData {
 	private FunctionCallGraph graph;
 	private GraphPerspectiveInfo<FcgVertex, FcgEdge> perspectiveInfo;
 
-	/** Contains all known edges, even those not showing in the graph */
+    # /** Contains all known edges, even those not showing in the graph */
 	private FunctionEdgeCache allEdgesByFunction = new FunctionEdgeCache();
 
 	ValidFcgData(Function function, FunctionCallGraph graph) {

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.fbpk.v2;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.fbpk.FBPK_Constants;

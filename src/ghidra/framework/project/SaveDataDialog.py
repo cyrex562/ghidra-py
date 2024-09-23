@@ -54,10 +54,10 @@ public class SaveDataDialog extends DialogComponentProvider {
 	private JButton noButton;
 	private PluginTool tool;
 
-	/** This class gets run as a task and this flag signals a user cancel */
+    # /** This class gets run as a task and this flag signals a user cancel */
 	private boolean operationCompleted;
 
-	/**
+    # /**
 	 * Construct new SaveDataDiaog
 	 * @param tool front end tool
 	 */
@@ -84,7 +84,7 @@ public class SaveDataDialog extends DialogComponentProvider {
 		addCancelButton();
 	}
 
-	/**
+    # /**
 	 * Shows the save dialog with the given domain files, but no options to save
 	 * the project.  The dialog will not appear if there is no data that needs
 	 * saving.
@@ -111,7 +111,7 @@ public class SaveDataDialog extends DialogComponentProvider {
 		return operationCompleted;
 	}
 
-	/**
+    # /**
 	 * Gets called when the user clicks on the OK Action for the dialog.
 	 */
 	@Override
@@ -135,7 +135,7 @@ public class SaveDataDialog extends DialogComponentProvider {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets called when the user clicks on the Cancel Action for the dialog.
 	 */
 	@Override
@@ -144,7 +144,7 @@ public class SaveDataDialog extends DialogComponentProvider {
 
 	}
 
-	/**
+    # /**
 	 * Create the panel for this dialog.
 	 */
 	private JPanel createPanel() {
@@ -168,7 +168,7 @@ public class SaveDataDialog extends DialogComponentProvider {
 		return panel;
 	}
 
-	/**
+    # /**
 	 * Select all files to be saved.
 	 */
 	private void selectAll() {
@@ -183,7 +183,7 @@ public class SaveDataDialog extends DialogComponentProvider {
 		listPanel.repaint();
 	}
 
-	/**
+    # /**
 	 * Clear selected checkboxes.
 	 */
 	private void deselectAll() {
@@ -239,7 +239,7 @@ public class SaveDataDialog extends DialogComponentProvider {
 		setFocusComponent(yesButton);
 	}
 
-	/**
+    # /**
 	 * Cell renderer to show the checkboxes for the changed data files.
 	 */
 	private class DataCellRenderer implements ListCellRenderer<JCheckBox> {
@@ -268,7 +268,7 @@ public class SaveDataDialog extends DialogComponentProvider {
 		}
 	}
 
-	/**
+    # /**
 	 * Mouse listener to get the selected cell in the list.
 	 */
 	private class ListMouseListener extends MouseAdapter {

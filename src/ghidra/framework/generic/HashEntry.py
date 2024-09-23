@@ -16,7 +16,7 @@
  */
 package generic.lsh.vector;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.util.xml.SpecXmlUtils;
@@ -33,7 +33,7 @@ public class HashEntry {
 	public HashEntry() {// For use with restoreXml
 	}
 
-	/**
+    # /**
 	 * Create a hash entry with an explicit weight
 	 * @param h      is the 32-bit hash
 	 * @param tcnt   is the (optional) term-frequency count  (set to 1 if not using)
@@ -46,7 +46,7 @@ public class HashEntry {
 		coeff = weight;
 	}
 
-	/**
+    # /**
 	 * Create a hash entry with a weight calculated from its term frequency and idf frequency
 	 * @param h        is the 32-bit hash
 	 * @param tcnt     is the term frequency count
@@ -60,7 +60,7 @@ public class HashEntry {
 		coeff = w.getCoeff(idf, tf);
 	}
 
-	/**
+    # /**
 	 * Eclipse-generated hash function.
 	 * 
 	 * @return
@@ -74,7 +74,7 @@ public class HashEntry {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Eclipse-generated equals function. 
 	 * 
 	 * @param obj
@@ -155,7 +155,7 @@ public class HashEntry {
 		coeff = w.getCoeff(idf, tf);
 	}
 
-	/**
+    # /**
 	 * Restore entry but recalculate the idf
 	 * @param parser		// xml state
 	 * @param w				// weight factory to calculate coefficient with

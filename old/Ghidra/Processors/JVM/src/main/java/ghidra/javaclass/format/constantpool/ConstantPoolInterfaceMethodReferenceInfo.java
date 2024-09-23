@@ -22,7 +22,7 @@ import ghidra.program.model.data.StructureDataType;
 import ghidra.util.InvalidNameException;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ConstantPoolInterfaceMethodReferenceInfo extends AbstractConstantPoolReferenceInfo {
 

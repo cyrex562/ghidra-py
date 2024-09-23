@@ -16,7 +16,7 @@
 package pdb;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.lang.reflect.InvocationTargetException;
 
 import ghidra.app.plugin.core.analysis.*;

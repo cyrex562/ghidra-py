@@ -1,16 +1,16 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.zlib;
 
-import java.io.*;
+
 import java.util.zip.*;
 
 /**
- * 
- * TODO make this more memory efficient!!
- *
- */
+# * 
+# * TODO make this more memory efficient!!
+# *
+# */
 public class ZLIB {
 	
     public ZLIB() {
@@ -99,7 +99,7 @@ public class ZLIB {
         return compressedBOS;
 	}
 
-	/**
+    # /**
 	 * Converts the contents of an input stream to a byte array
 	 * @param compressedIn
 	 * @return

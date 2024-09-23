@@ -41,7 +41,7 @@ public class EHESTypeListModel extends AbstractCreateDataTypeModel {
 
 	private DataType dataType;
 
-	/**
+    # /**
 	 * Creates the model for the exception handling ESTypeList data type.
 	 * @param program the program
 	 * @param esTypeListAddress the address in the program for the ESTypeList data type.
@@ -56,7 +56,7 @@ public class EHESTypeListModel extends AbstractCreateDataTypeModel {
 		return DATA_TYPE_NAME;
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the indicated address appears to be a valid location for the
 	 * indicated number of ESTypeList data types.
 	 * @throws InvalidDataTypeException if this model's location does not appear to be a valid 
@@ -79,7 +79,7 @@ public class EHESTypeListModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the ESTypeList structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the ESTypeList structure.
@@ -115,7 +115,7 @@ public class EHESTypeListModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.getMatchingDataType(program, typeDefDt);
 	}
 
-	/**
+    # /**
 	 * This gets the ESTypeList structure for this model.
 	 * @return the ESTypeList structure.
 	 */
@@ -132,7 +132,7 @@ public class EHESTypeListModel extends AbstractCreateDataTypeModel {
 		return getDataType().getLength();
 	}
 
-	/**
+    # /**
 	 * Gets the catch handler model for the catch handler address in the ESTypeList.
 	 * @return the catch handler model, which may be invalid.
 	 * @throws InvalidDataTypeException if valid ESTypeList data can't be created at the model's address.
@@ -144,7 +144,7 @@ public class EHESTypeListModel extends AbstractCreateDataTypeModel {
 		return catchHandlerModel;
 	}
 
-	/**
+    # /**
 	 * Gets the handler type entry count, if there is one, for this ESTypeList.
 	 * @return the catch handler type count
 	 * @throws InvalidDataTypeException if valid ESTypeList data can't be created at the model's address.
@@ -155,7 +155,7 @@ public class EHESTypeListModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getCount(getDataType(), COUNT_ORDINAL, getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the handler type map, if there is one. Otherwise, this returns null.
 	 * @return the address of the handler type map or null.
 	 * @throws InvalidDataTypeException if valid ESTypeList data can't be created at the model's address.
@@ -168,7 +168,7 @@ public class EHESTypeListModel extends AbstractCreateDataTypeModel {
 		return getAdjustedAddress(mapAddress, getHandlerTypeCount());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component containing the address of the handler type map, 
 	 * if there is one. Otherwise, this returns null.
 	 * @return the address of the component with the address of the handler type map or null.

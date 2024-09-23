@@ -15,7 +15,7 @@
  */
 package ghidra.file.jad;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.app.util.importer.MessageLog;

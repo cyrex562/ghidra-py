@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -44,7 +44,7 @@ class DataTypeComponentDB implements InternalDataTypeComponent {
 	private int length;
 	private Settings defaultSettings;
 
-	/**
+    # /**
 	 * Construct an immutable component not backed by a record with a specified datatype and length.
 	 * No comment or field name is provided.
 	 * @param dataMgr
@@ -61,7 +61,7 @@ class DataTypeComponentDB implements InternalDataTypeComponent {
 		this.length = length;
 	}
 
-	/**
+    # /**
 	 * Construct an immutable undefined 1-byte component not backed by a record.
 	 * No comment or field name is provided.
 	 * @param dataMgr
@@ -79,7 +79,7 @@ class DataTypeComponentDB implements InternalDataTypeComponent {
 		this.adapter = null;
 	}
 
-	/**
+    # /**
 	 * Construct a component backed by a record.
 	 * @param dataMgr
 	 * @param adapter
@@ -118,7 +118,7 @@ class DataTypeComponentDB implements InternalDataTypeComponent {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get record key
 	 * @return record key or -1 for undefined component without a record
 	 */
@@ -396,7 +396,7 @@ class DataTypeComponentDB implements InternalDataTypeComponent {
 		}
 	}
 
-	/**
+    # /**
 	 * Update component record and option update composite last modified time.
 	 * @param setLastChangeTime if true update composite last modified time and
 	 * invoke dataTypeChanged for composite, else update component record only.
@@ -420,7 +420,7 @@ class DataTypeComponentDB implements InternalDataTypeComponent {
 		return record;
 	}
 
-	/**
+    # /**
 	 * Perform special-case component update that does not result in size or alignment changes. 
 	 * @param name new component name
 	 * @param dt new resolved datatype
@@ -455,7 +455,7 @@ class DataTypeComponentDB implements InternalDataTypeComponent {
 		return InternalDataTypeComponent.toString(this);
 	}
 
-	/**
+    # /**
 	 * Determine if component is an undefined filler component
 	 * @return true if undefined filler component, else false
 	 */

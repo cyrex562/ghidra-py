@@ -15,7 +15,7 @@
  */
 package ghidra.debug.flatapi;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.nio.ByteBuffer;
 import java.util.*;

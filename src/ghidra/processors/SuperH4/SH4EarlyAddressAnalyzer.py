@@ -27,7 +27,7 @@ import ghidra.util.task.TaskMonitor;
 
 public class SH4EarlyAddressAnalyzer extends SH4AddressAnalyzer {
 
-	/**
+    # /**
 	 * The early SH4 address analyzer runs right after disassembly to lay down
 	 * any dynamic call or jump references and to install the R12 value which
 	 * is use for PIC calculations.

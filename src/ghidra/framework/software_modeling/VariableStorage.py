@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.listing;
 
 import java.util.ArrayList;
@@ -26,31 +26,31 @@ import ghidra.program.util.LanguageTranslator;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * <code></code> encapsulates the ordered list of storage varnodes which correspond to a 
- * function parameter or local variable.  For big-endian the first element corresponds 
- * to the most-significant varnode, while for little-endian the first element 
- * corresponds to the least-significant varnode.
- */
+# * <code></code> encapsulates the ordered list of storage varnodes which correspond to a 
+# * function parameter or local variable.  For big-endian the first element corresponds 
+# * to the most-significant varnode, while for little-endian the first element 
+# * corresponds to the least-significant varnode.
+# */
 public class VariableStorage implements Comparable<VariableStorage> {
 
 	private static final String BAD = "<BAD>";
 	private static final String UNASSIGNED = "<UNASSIGNED>";
 	private static final String VOID = "<VOID>";
 
-	/**
+    # /**
 	 * <code>BAD_STORAGE</code> used to identify variable storage which is no longer
 	 * valid.  This can be caused by various events such as significant language/processor
 	 * changes or software bugs which prevent variable storage to be properly decoded.
 	 */
 	public static final VariableStorage BAD_STORAGE = new VariableStorage();
 
-	/**
+    # /**
 	 * <code>UNASSIGNED_STORAGE</code> used to identify parameter storage which is "unmapped"
 	 * or could not be determined.
 	 */
 	public static final VariableStorage UNASSIGNED_STORAGE = new VariableStorage();
 
-	/**
+    # /**
 	 * <code>VOID_STORAGE</code> used to identify parameter/return storage which is "mapped"
 	 * with a data-type of void.
 	 */
@@ -64,7 +64,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 	private long hashcode;
 	private String serialization;
 
-	/**
+    # /**
 	 * Construct an empty variable storage for reserved usage (i.e., BAD_STORAGE, UNMAPPED_STORAGE)
 	 */
 	protected VariableStorage() {
@@ -72,7 +72,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		this.varnodes = null;
 	}
 
-	/**
+    # /**
 	 * Construct variable storage
 	 * @param programArch program architecture details
 	 * @param varnodes one or more ordered storage varnodes
@@ -85,7 +85,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		checkVarnodes();
 	}
 
-	/**
+    # /**
 	 * Construct register variable storage
 	 * @param programArch program architecture details
 	 * @param registers one or more ordered registers
@@ -96,7 +96,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		this(programArch, getVarnodeList(registers));
 	}
 
-	/**
+    # /**
 	 * Construct stack variable storage
 	 * @param programArch program architecture details
 	 * @param stackOffset stack offset
@@ -117,7 +117,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return varnodes;
 	}
 
-	/**
+    # /**
 	 * Construct variable storage
 	 * @param programArch program architecture details
 	 * @param varnodes one or more ordered storage varnodes
@@ -130,7 +130,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		checkVarnodes();
 	}
 
-	/**
+    # /**
 	 * Construct variable storage
 	 * @param programArch program architecture details
 	 * @param address varnode address
@@ -142,7 +142,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		this(programArch, new Varnode(address, size));
 	}
 
-	/**
+    # /**
 	 * Construct variable storage
 	 * @param programArch program architecture details
 	 * @param serialization storage serialization string
@@ -167,14 +167,14 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return new VariableStorage(programArch, varnodes);
 	}
 
-	/**
+    # /**
 	 * @return program for which this storage is associated
 	 */
 	public ProgramArchitecture getProgramArchitecture() {
 		return programArch;
 	}
 
-	/**
+    # /**
 	 * @return the total size of corresponding storage varnodes
 	 */
 	public int size() {
@@ -258,7 +258,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		}
 	}
 
-	/**
+    # /**
 	 * Attempt to clone variable storage for use in a different program.
 	 * Dynamic storage characteristics will not be preserved.
 	 * @param newProgramArch target program architecture details
@@ -340,7 +340,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return address.toString();
 	}
 
-	/**
+    # /**
 	 * @return the number of varnodes associated with this variable storage
 	 */
 	public int getVarnodeCount() {
@@ -350,7 +350,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return varnodes.length;
 	}
 
-	/**
+    # /**
 	 * @return ordered varnodes associated with this variable storage
 	 */
 	public Varnode[] getVarnodes() {
@@ -360,7 +360,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return varnodes.clone();
 	}
 
-	/**
+    # /**
 	 * Associated with auto-parameters.  Parameters whose existence is dictated
 	 * by a calling-convention may automatically inject additional hidden
 	 * parameters.  If this storage is associated with a auto-parameter, this
@@ -371,7 +371,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * If this storage corresponds to a auto-parameter, return the type associated
 	 * with the auto-parameter.
 	 * @return auto-parameter type or null if not applicable
@@ -380,7 +380,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * If this storage corresponds to parameter which was forced by the associated calling 
 	 * convention to be passed as a pointer instead of its raw type.
 	 * @return true if this parameter was forced to be passed as a pointer instead of its raw type
@@ -389,28 +389,28 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return true if this storage is bad (could not be resolved)
 	 */
 	public boolean isBadStorage() {
 		return this == BAD_STORAGE;
 	}
 
-	/**
+    # /**
 	 * @return true if storage has not been assigned (no varnodes)
 	 */
 	public boolean isUnassignedStorage() {
 		return this == UNASSIGNED_STORAGE;
 	}
 
-	/**
+    # /**
 	 * @return true if storage is assigned and is not BAD
 	 */
 	public boolean isValid() {
 		return !isUnassignedStorage() && !isBadStorage();
 	}
 
-	/**
+    # /**
 	 * @return true if storage corresponds to the VOID_STORAGE instance
 	 * @see #VOID_STORAGE
 	 */
@@ -418,21 +418,21 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return this == VOID_STORAGE;
 	}
 
-	/**
+    # /**
 	 * @return first varnode within the ordered list of varnodes
 	 */
 	public Varnode getFirstVarnode() {
 		return (varnodes == null || varnodes.length == 0) ? null : varnodes[0];
 	}
 
-	/**
+    # /**
 	 * @return last varnode within the ordered list of varnodes
 	 */
 	public Varnode getLastVarnode() {
 		return (varnodes == null || varnodes.length == 0) ? null : varnodes[varnodes.length - 1];
 	}
 
-	/**
+    # /**
 	 * @return true if storage consists of a single stack varnode
 	 */
 	public boolean isStackStorage() {
@@ -444,7 +444,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return storageAddr.isStackAddress();
 	}
 
-	/**
+    # /**
 	 * @return true if the last varnode for simple or compound storage is a stack varnode
 	 */
 	public boolean hasStackStorage() {
@@ -456,7 +456,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return storageAddr.isStackAddress();
 	}
 
-	/**
+    # /**
 	 * @return true if this is a simple variable consisting of a single register varnode
 	 * which will be returned by either the {@link Variable#getFirstStorageVarnode()} or 
 	 * {@link Variable#getLastStorageVarnode()} methods.  The register can be obtained using the 
@@ -467,7 +467,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return varnodes != null && varnodes.length == 1 && registers != null;
 	}
 
-	/**
+    # /**
 	 * @return first storage register associated with this register or compound storage, else
 	 * null is returned.
 	 * @see Variable#isRegisterVariable()
@@ -476,7 +476,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return registers != null ? registers.get(0) : null;
 	}
 
-	/**
+    # /**
 	 * @return storage register(s) associated with this register or compound storage, else
 	 * null is returned.
 	 * @see Variable#isRegisterVariable()
@@ -486,7 +486,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return registers;
 	}
 
-	/**
+    # /**
 	 * @return the stack offset associated with simple stack storage or compound 
 	 * storage where the last varnode is stack, see {@link #hasStackStorage()}. 
 	 * @throws UnsupportedOperationException if storage does not have a stack varnode
@@ -501,7 +501,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		throw new UnsupportedOperationException("Storage does not have a stack varnode");
 	}
 
-	/**
+    # /**
 	 * @return the minimum address corresponding to the first varnode of this storage
 	 * or null if this is a special empty storage: {@link #isBadStorage()}, {@link #isUnassignedStorage()},
 	 * {@link #isVoidStorage()}
@@ -513,7 +513,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return varnodes[0].getAddress();
 	}
 
-	/**
+    # /**
 	 * @return true if storage consists of a single memory varnode which does not correspond
 	 * to a register.
 	 */
@@ -525,7 +525,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return storageAddr.isMemoryAddress() && (registers == null);
 	}
 
-	/**
+    # /**
 	 * @return true if storage consists of a single constant-space varnode which is used when storing
 	 * local function constants.
 	 */
@@ -537,7 +537,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return storageAddr.isConstantAddress();
 	}
 
-	/**
+    # /**
 	 * @return true if storage consists of a single hash-space varnode which is used when storing
 	 * local unique function variables.
 	 */
@@ -549,7 +549,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return storageAddr.isHashAddress();
 	}
 
-	/**
+    # /**
 	 * @return true if storage consists of a single unique-space varnode which is used during
 	 * function analysis.  This type of storage is not suitable for database-stored function
 	 * variables.  This type of storage must be properly converted to Hash storage when 
@@ -563,7 +563,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return storageAddr.isUniqueAddress();
 	}
 
-	/**
+    # /**
 	 * @return true if storage consists of two or more storage varnodes
 	 */
 	public boolean isCompoundStorage() {
@@ -589,7 +589,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		//return (varnodes == null || varnodes.length == 0) ? 0 : varnodes[0].hashCode();
 	}
 
-	/**
+    # /**
 	 * This storage is considered equal if it consists of the same storage varnodes.
 	 */
 	@Override
@@ -616,7 +616,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return compareTo(otherVS) == 0;
 	}
 
-	/**
+    # /**
 	 * Determine if this variable storage intersects the specified variable storage
 	 * @param variableStorage other variable storage
 	 * @return true if any intersection exists between this storage and the specified
@@ -637,7 +637,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Determine if this storage intersects the specified address set
 	 * @param set address set
 	 * @return true if this storage intersects the specified address set
@@ -654,7 +654,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Determine if this storage intersects the specified register
 	 * @param reg the register
 	 * @return true if this storage intersects the specified register
@@ -672,7 +672,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Determine if the specified address is contained within this storage
 	 * @param address address
 	 * @return true if this storage varnode(s) contain specified address
@@ -703,7 +703,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return PRECEDENCE_BAD;
 	}
 
-	/**
+    # /**
 	 * Compare this variable storage with another.  A value of 0 indicates 
 	 * that the two objects are equal
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
@@ -732,7 +732,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return varnodes.length - otherStorage.varnodes.length;
 	}
 
-	/**
+    # /**
 	 * Return a serialization form of this variable storage.
 	 * @return storage serialization string useful for subsequent reconstruction
 	 */
@@ -757,7 +757,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return serialization;
 	}
 
-	/**
+    # /**
 	 * Generate VariableStorage serialization string
 	 * @param varnodes one or more storage varnodes
 	 * @return storage serialization string useful for subsequent reconstruction
@@ -779,7 +779,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return strBuilder.toString();
 	}
 
-	/**
+    # /**
 	 * Parse a storage serialization string to produce an array or varnodes
 	 * @param addrFactory address factory
 	 * @param serialization serialized variable storage string (see {@link #getSerializationString()}).
@@ -824,7 +824,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Perform language translations on VariableStorage serialization string
 	 * @param translator language translator
 	 * @param serialization VariableStorage serialization string
@@ -905,7 +905,7 @@ public class VariableStorage implements Comparable<VariableStorage> {
 		return strBuilder.toString();
 	}
 
-	/**
+    # /**
 	 * Translate old register storage defined by oldRegAddr and varnodeSize using the 
 	 * specified translator.
 	 * @param oldRegAddr old register address

@@ -31,7 +31,7 @@ public class ProjectedDatabase {
 	private List<ProjectedSequenceInfo> projectedInfo;
 	private int support;
 
-	/**
+    # /**
 	 * Constructs a {@link ProjectedDatabase} given a database and a prefix sequence
 	 * 
 	 * <p> Note: {@code prefixSequence} is assumed to be in ascending order of Item index
@@ -59,7 +59,7 @@ public class ProjectedDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Given a {@link ProjectedDatabase}, construct a new {@link ProjectedDatabase} by
 	 * adding one item to the prefix sequence.
 	 * 
@@ -96,7 +96,7 @@ public class ProjectedDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the database
 	 * @return database
 	 */
@@ -104,7 +104,7 @@ public class ProjectedDatabase {
 		return database;
 	}
 
-	/**
+    # /**
 	 * Get the prefix sequence
 	 * @return prefix sequence
 	 */
@@ -112,7 +112,7 @@ public class ProjectedDatabase {
 		return prefixSequence;
 	}
 
-	/**
+    # /**
 	 * Get projection data
 	 * @return projected info
 	 */
@@ -136,7 +136,7 @@ public class ProjectedDatabase {
 		return projectedSeqs;
 	}
 
-	/**
+    # /**
 	 * Returns the number of sequences in the projected database
 	 * @return number of sequences
 	 */
@@ -144,7 +144,7 @@ public class ProjectedDatabase {
 		return support;
 	}
 
-	/**
+    # /**
 	 * Returns a set of {@link FrequentSequenceItem}s composed of all {@link FrequentSequenceItem}s in {@code globallyFrequentItems} 
 	 * which occur after the projection index and in at least {@code minSupport} sequences in the projected database.
 	 * @param globallyFrequentItems
@@ -189,7 +189,7 @@ public class ProjectedDatabase {
 		return frequentItemSet;
 	}
 
-	/**
+    # /**
 	 * Returns the subset of {@code locallyFrequentItems} which occur in all sequences in the
 	 * projected database
 	 * @param locallyFrequentItems {@code FrequentItem}s to check
@@ -205,7 +205,7 @@ public class ProjectedDatabase {
 		return localExtensionItems;
 	}
 
-	/**
+    # /**
 	 * Computes the set of backward extension items, i.e., any items that could fill empty
 	 * spaces in the projected sequence without changing the support.
 	 * 

@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.exec;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;

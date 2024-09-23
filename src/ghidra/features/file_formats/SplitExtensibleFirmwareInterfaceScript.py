@@ -18,7 +18,7 @@
 //The output files are placed in the selected directory with the processor name appended.
 //@category Binary
 
-import java.io.*;
+
 
 import ghidra.app.script.GhidraScript;
 import ghidra.app.util.bin.*;

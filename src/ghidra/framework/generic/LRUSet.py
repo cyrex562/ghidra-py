@@ -27,7 +27,7 @@ import java.util.Iterator;
  */
 public class LRUSet<T> extends LRUMap<T, T> implements Iterable<T> {
 
-	/**
+    # /**
 	 * Constructs this set with the given size.  As elements are added, the oldest elements 
 	 * (by access time) will fall off the bottom of the set.
 	 * <p>

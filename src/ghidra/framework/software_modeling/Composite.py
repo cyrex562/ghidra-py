@@ -22,14 +22,14 @@ import java.util.Set;
  */
 public interface Composite extends DataType {
 
-	/**
+    # /**
 	 * Sets the string describing this data type.
 	 * @param desc the new description.
 	 */
 	@Override
 	public void setDescription(String desc);
 
-	/**
+    # /**
 	 * Gets the number of component data types in this composite.
 	 * If this is Structure with packing disabled, the count will include all undefined filler
 	 * components which may be present.
@@ -37,7 +37,7 @@ public interface Composite extends DataType {
 	 */
 	public abstract int getNumComponents();
 
-	/**
+    # /**
 	 * Returns the number of explicitly defined components in this composite.
 	 * For Unions and packed Structures this is equivalent to {@link #getNumComponents()}
 	 * since they do not contain undefined components.
@@ -47,7 +47,7 @@ public interface Composite extends DataType {
 	 */
 	public abstract int getNumDefinedComponents();
 
-	/**
+    # /**
 	 * Returns the component of this data type with the indicated ordinal.
 	 * @param ordinal the component's ordinal (numbering starts at 0).
 	 * @return the data type component.
@@ -55,7 +55,7 @@ public interface Composite extends DataType {
 	 */
 	public abstract DataTypeComponent getComponent(int ordinal) throws IndexOutOfBoundsException;
 
-	/**
+    # /**
 	 * Returns an array of Data Type Components that make up this composite including
 	 * undefined filler components which may be present within a Structure which has packing disabled.
 	 * The number of components corresponds to {@link #getNumComponents()}.
@@ -63,7 +63,7 @@ public interface Composite extends DataType {
 	 */
 	public abstract DataTypeComponent[] getComponents();
 
-	/**
+    # /**
 	 * Returns an array of Data Type Components that make up this composite excluding
 	 * undefined filler components which may be present within Structures where packing is disabled.
 	 * The number of components corresponds to {@link #getNumDefinedComponents()}.  For Unions and
@@ -73,7 +73,7 @@ public interface Composite extends DataType {
 	 */
 	public abstract DataTypeComponent[] getDefinedComponents();
 
-	/**
+    # /**
 	 * Adds a new datatype to the end of this composite.  This is the preferred method
 	 * to use for adding components to an aligned structure for fixed-length dataTypes.
 	 * @param dataType the datatype to add.
@@ -85,7 +85,7 @@ public interface Composite extends DataType {
 	 */
 	public DataTypeComponent add(DataType dataType) throws IllegalArgumentException;
 
-	/**
+    # /**
 	 * Adds a new datatype to the end of this composite. This is the preferred method
 	 * to use for adding components to an aligned structure for dynamic dataTypes such as
 	 * strings whose length must be specified.
@@ -101,7 +101,7 @@ public interface Composite extends DataType {
 	 */
 	public DataTypeComponent add(DataType dataType, int length) throws IllegalArgumentException;
 
-	/**
+    # /**
 	 * Adds a new datatype to the end of this composite.  This is the preferred method
 	 * to use for adding components to an aligned structure for fixed-length dataTypes.
 	 * @param dataType the datatype to add.
@@ -116,7 +116,7 @@ public interface Composite extends DataType {
 	public DataTypeComponent add(DataType dataType, String name, String comment)
 			throws IllegalArgumentException;
 
-	/**
+    # /**
 	 * Adds a new bitfield to the end of this composite.  This method is intended
 	 * to be used with packed structures/unions only where the bitfield will be
 	 * appropriately packed.  The minimum storage storage byte size will be applied.
@@ -133,7 +133,7 @@ public interface Composite extends DataType {
 	public DataTypeComponent addBitField(DataType baseDataType, int bitSize, String componentName,
 			String comment) throws InvalidDataTypeException;
 
-	/**
+    # /**
 	 * Adds a new datatype to the end of this composite.  This is the preferred method
 	 * to use for adding components to an aligned structure for dynamic dataTypes such as
 	 * strings whose length must be specified.
@@ -151,7 +151,7 @@ public interface Composite extends DataType {
 	public DataTypeComponent add(DataType dataType, int length, String name, String comment)
 			throws IllegalArgumentException;
 
-	/**
+    # /**
 	 * Inserts a new datatype at the specified ordinal position in this composite.
 	 * <BR>Note: For an aligned structure the ordinal position will get adjusted
 	 * automatically to provide the proper alignment.
@@ -167,7 +167,7 @@ public interface Composite extends DataType {
 	public DataTypeComponent insert(int ordinal, DataType dataType)
 			throws IndexOutOfBoundsException, IllegalArgumentException;
 
-	/**
+    # /**
 	 * Inserts a new datatype at the specified ordinal position in this composite.
 	 * <BR>Note: For an aligned structure the ordinal position will get adjusted
 	 * automatically to provide the proper alignment.
@@ -186,7 +186,7 @@ public interface Composite extends DataType {
 	public DataTypeComponent insert(int ordinal, DataType dataType, int length)
 			throws IndexOutOfBoundsException, IllegalArgumentException;
 
-	/**
+    # /**
 	 * Inserts a new datatype at the specified ordinal position in this composite.
 	 * <BR>Note: For an aligned structure the ordinal position will get adjusted
 	 * automatically to provide the proper alignment.
@@ -207,7 +207,7 @@ public interface Composite extends DataType {
 	public DataTypeComponent insert(int ordinal, DataType dataType, int length, String name,
 			String comment) throws IndexOutOfBoundsException, IllegalArgumentException;
 
-	/**
+    # /**
 	 * Deletes the component at the given ordinal position.
 	 * <BR>Note: Removal of bitfields from a structure with packing disabled will
 	 * not shift other components causing vacated bytes to revert to undefined filler.
@@ -216,7 +216,7 @@ public interface Composite extends DataType {
 	 */
 	public void delete(int ordinal) throws IndexOutOfBoundsException;
 
-	/**
+    # /**
 	 * Deletes the specified set of components at the given ordinal positions.
 	 * <BR>Note: Removal of bitfields from a structure with packing disabled will
 	 * not shift other components causing vacated bytes to revert to undefined filler.
@@ -225,7 +225,7 @@ public interface Composite extends DataType {
 	 */
 	public void delete(Set<Integer> ordinals) throws IndexOutOfBoundsException;
 
-	/**
+    # /**
 	 * Check if a data type is part of this data type.  A data type could
 	 * be part of another by:
 	 * <br>Being the same data type.
@@ -237,7 +237,7 @@ public interface Composite extends DataType {
 	 */
 	public abstract boolean isPartOf(DataType dataType);
 
-	/**
+    # /**
 	 * The alignment changed for the specified data type.  If packing is enabled for this
 	 * composite, the placement of the component may be affected by a change in its alignment.
 	 * A non-packed composite can ignore this notification.
@@ -246,7 +246,7 @@ public interface Composite extends DataType {
 	@Override
 	public void dataTypeAlignmentChanged(DataType dt);
 
-	/**
+    # /**
 	 * Updates packed composite to any changes in the data organization. If the composite does
 	 * not have packing enabled this method does nothing.
 	 * <BR>
@@ -255,12 +255,12 @@ public interface Composite extends DataType {
 	 */
 	public void repack();
 
-	/**
+    # /**
 	 * @return the packing type set for this composite
 	 */
 	public PackingType getPackingType();
 
-	/**
+    # /**
 	 * Determine if this data type has its internal components currently packed
 	 * based upon alignment and packing settings.  If disabled, component placement
 	 * is based upon explicit placement by offset.
@@ -270,7 +270,7 @@ public interface Composite extends DataType {
 		return getPackingType() != PackingType.DISABLED;
 	}
 
-	/**
+    # /**
 	 * Sets whether this data type's internal components are currently packed.  The
 	 * affect of disabled packing differs between {@link Structure} and {@link Union}.  When
 	 * packing disabled:
@@ -289,7 +289,7 @@ public interface Composite extends DataType {
 	 */
 	public void setPackingEnabled(boolean enabled);
 
-	/**
+    # /**
 	 * Determine if packing is enabled with an explicit packing value (see {@link #getExplicitPackingValue()}).
 	 * @return true if packing is enabled with an explicit packing value, else false.
 	 */
@@ -297,7 +297,7 @@ public interface Composite extends DataType {
 		return getPackingType() == PackingType.EXPLICIT;
 	}
 
-	/**
+    # /**
 	 * Determine if default packing is enabled.
 	 * @return true if default packing is enabled.
 	 */
@@ -305,7 +305,7 @@ public interface Composite extends DataType {
 		return getPackingType() == PackingType.DEFAULT;
 	}
 
-	/**
+    # /**
 	 * Gets the current packing value (typically a power of 2).
 	 * If this isn't a packed composite with an explicit packing value (see {@link #hasExplicitPackingValue()})
 	 * then the return value is undefined.
@@ -313,7 +313,7 @@ public interface Composite extends DataType {
 	 */
 	public int getExplicitPackingValue();
 
-	/**
+    # /**
 	 * Sets the pack value for this composite (positive value, usually a power of 2).
 	 * If packing was previously disabled, packing will be enabled.  This value will
 	 * establish the maximum effective alignment for this composite and each of the
@@ -325,7 +325,7 @@ public interface Composite extends DataType {
 	 */
 	public void setExplicitPackingValue(int packingValue);
 
-	/**
+    # /**
 	 * Same as {@link #setExplicitPackingValue(int)}.
 	 * @param packingValue the new positive packing value.
 	 * @throws IllegalArgumentException if a non-positive value is specified.
@@ -334,7 +334,7 @@ public interface Composite extends DataType {
 		setExplicitPackingValue(packingValue);
 	}
 
-	/**
+    # /**
 	 * Enables default packing behavior.
 	 * If packing was previously disabled, packing will be enabled.
 	 * Composite will automatically pack based upon the alignment requirements
@@ -343,7 +343,7 @@ public interface Composite extends DataType {
 	 */
 	public void setToDefaultPacking();
 
-	/**
+    # /**
 	 * Get the computed alignment for this composite based upon packing and minimum
 	 * alignment settings as well as component alignment.  If packing is disabled,
 	 * the alignment will always be 1 unless a minimum alignment has been set.
@@ -352,12 +352,12 @@ public interface Composite extends DataType {
 	@Override
 	abstract int getAlignment();
 
-	/**
+    # /**
 	 * @return the alignment type set for this composite
 	 */
 	abstract AlignmentType getAlignmentType();
 
-	/**
+    # /**
 	 * Whether or not this data type is using the default alignment.  When Structure packing
 	 * is disabled the default alignment is always 1 (see {@link Structure#setPackingEnabled(boolean)}.
 	 * @return true if this data type is using its default alignment.
@@ -366,7 +366,7 @@ public interface Composite extends DataType {
 		return getAlignmentType() == AlignmentType.DEFAULT;
 	}
 
-	/**
+    # /**
 	 * Whether or not this data type is using the machine alignment value, specified by
 	 * {@link DataOrganization#getMachineAlignment()}, for its alignment.
 	 * @return true if this data type is using the machine alignment as its alignment.
@@ -375,7 +375,7 @@ public interface Composite extends DataType {
 		return getAlignmentType() == AlignmentType.MACHINE;
 	}
 
-	/**
+    # /**
 	 * Determine if an explicit minimum alignment has been set (see
 	 * {@link #getExplicitMinimumAlignment()}). An undefined value is returned if default alignment
 	 * or machine alignment is enabled.
@@ -385,7 +385,7 @@ public interface Composite extends DataType {
 		return getAlignmentType() == AlignmentType.EXPLICIT;
 	}
 
-	/**
+    # /**
 	 * Get the explicit minimum alignment setting for this Composite which contributes
 	 * to the actual computed alignment value (see {@link #getAlignment()}.
 	 * @return the minimum alignment setting for this Composite or an undefined
@@ -393,7 +393,7 @@ public interface Composite extends DataType {
 	 */
 	public int getExplicitMinimumAlignment();
 
-	/**
+    # /**
 	 * Sets this data type's explicit minimum alignment (positive value).
 	 * Together with the pack setting and component alignments will
 	 * affect the actual computed alignment of this composite.
@@ -405,7 +405,7 @@ public interface Composite extends DataType {
 	 */
 	public void setExplicitMinimumAlignment(int minAlignment);
 
-	/**
+    # /**
 	 * Same as {@link #setExplicitMinimumAlignment(int)}.
 	 * @param minAlignment the explicit minimum alignment for this Composite.
 	 * @throws IllegalArgumentException if a non-positive value is specified
@@ -414,7 +414,7 @@ public interface Composite extends DataType {
 		setExplicitMinimumAlignment(minAlignment);
 	}
 
-	/**
+    # /**
 	 * Sets this data type's alignment to its default alignment. For packed
 	 * composites, this data type's alignment will be based upon the components it contains and
 	 * its current pack settings.  This is the default state and only needs to be used
@@ -422,7 +422,7 @@ public interface Composite extends DataType {
 	 */
 	public void setToDefaultAligned();
 
-	/**
+    # /**
 	 * Sets this data type's minimum alignment to the machine alignment which is
 	 * specified by {@link DataOrganization#getMachineAlignment()}. The machine alignment is
 	 * defined as the maximum useful alignment for the target machine.

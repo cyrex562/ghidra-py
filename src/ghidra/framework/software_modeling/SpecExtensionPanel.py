@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.sleigh;
 
 import java.awt.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -65,7 +65,7 @@ public class SpecExtensionPanel extends JPanel {
 	private final static int NAME_COLUMN = 1;
 	private final static int STATUS_COLUMN = 2;
 
-	/**
+    # /**
 	 *  Status of a particular compiler specification element
 	 */
 	public enum Status {
@@ -101,7 +101,7 @@ public class SpecExtensionPanel extends JPanel {
 		}
 	};
 
-	/**
+    # /**
 	 * A row in the table of compiler spec elements
 	 */
 	private static class CompilerElement implements Comparable<CompilerElement> {
@@ -120,7 +120,7 @@ public class SpecExtensionPanel extends JPanel {
 			xmlString = null;
 		}
 
-		/**
+	    # /**
 		 * Return true if the element is already installed (not pending)
 		 * @return true for an existing extension
 		 */
@@ -141,7 +141,7 @@ public class SpecExtensionPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Selection listener class for the table model.
 	 */
 	private class TableSelectionListener implements ListSelectionListener {
@@ -241,7 +241,7 @@ public class SpecExtensionPanel extends JPanel {
 
 	}
 
-	/**
+    # /**
 	 *  Task for applying any accumulated changes in the list of CompilerElements for this Panel to the Program.
 	 */
 	public class ChangeExtensionTask extends Task {
@@ -359,7 +359,7 @@ public class SpecExtensionPanel extends JPanel {
 		tableModel.fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Cancel any pending changes and reload the current table
 	 */
 	public void cancel() {
@@ -367,7 +367,7 @@ public class SpecExtensionPanel extends JPanel {
 		tableModel.fireTableDataChanged();
 	}
 
-	/**
+    # /**
 	 * Size the columns.
 	 */
 	private void adjustTableColumns() {
@@ -475,7 +475,7 @@ public class SpecExtensionPanel extends JPanel {
 		unappliedChanges = changes;
 	}
 
-	/**
+    # /**
 	 * Present a file chooser, then
 	 *    - Load the file as a String
 	 *    - Test the validity of the file as an XML document describing an extension
@@ -621,7 +621,7 @@ public class SpecExtensionPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Present the user with a confirmation dialog.  If confirmed, mark
 	 * the selected element for removal.
 	 */

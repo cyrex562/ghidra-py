@@ -488,7 +488,7 @@ public class FunctionSignatureStringable extends Stringable {
 		return equals(new FunctionSignatureStringable(function));
 	}
 
-	/**
+    # /**
 	 *
 	 * @param toFunction the function whose signature we are setting.
 	 * @param markupOptions the options indicate what parts of the function signature to apply.
@@ -796,7 +796,7 @@ public class FunctionSignatureStringable extends Stringable {
 		return toDataType;
 	}
 
-	/**
+    # /**
 	 *
 	 * @param toFunction the function whose parameter names we are setting.
 	 * @param markupOptions
@@ -915,7 +915,7 @@ public class FunctionSignatureStringable extends Stringable {
 		return duplicateNameOccurred;
 	}
 
-	/**
+    # /**
 	 * Uses this stringable's parameter info to set the name and source types for the specified
 	 * function. Even default names from the parameter info will replace a defined parameter
 	 * name in the function.
@@ -1057,7 +1057,7 @@ public class FunctionSignatureStringable extends Stringable {
 		private final String comment;
 		private final String storage;
 
-		/**
+	    # /**
 		 * Create parameter info object
 		 * @param dataTypeID
 		 * @param makePointer if true the specified data-type identified by dataTypeID is wrapped in a pointer

@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -51,7 +51,7 @@ public class PcodeInjectLibrary {
 		programPayload = null;
 	}
 
-	/**
+    # /**
 	 * Clone a library so that a Program can extend the library without
 	 * modifying the base library from Language.  InjectPayloads can be considered
 	 * immutable and don't need to be cloned.
@@ -68,7 +68,7 @@ public class PcodeInjectLibrary {
 		programPayload = op2.programPayload;
 	}
 
-	/**
+    # /**
 	 * @return A clone of this library
 	 */
 	@Override
@@ -76,14 +76,14 @@ public class PcodeInjectLibrary {
 		return new PcodeInjectLibrary(this);
 	}
 
-	/**
+    # /**
 	 * @return an array of all the program specific payloads (or null)
 	 */
 	public InjectPayloadSleigh[] getProgramPayloads() {
 		return programPayload;
 	}
 
-	/**
+    # /**
 	 * Determine if the given payload name and type exists and is an extension
 	 * of the program.
 	 * @param nm is the payload name
@@ -105,7 +105,7 @@ public class PcodeInjectLibrary {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Check if a specific payload has been overridden by a user extension
 	 * @param nm is the name of the payload
 	 * @param type is the type of payload
@@ -142,7 +142,7 @@ public class PcodeInjectLibrary {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Convert the XML string representation of the given payload to a ConstructTpl
 	 * The payload should be unattached (not already installed in the library)
 	 * @param payload is the given payload whose XML should be converted
@@ -180,7 +180,7 @@ public class PcodeInjectLibrary {
 		payloadSleigh.setTemplate(constructTpl);
 	}
 
-	/**
+    # /**
 	 * @return a list of names for all installed call-fixups
 	 */
 	public String[] getCallFixupNames() {
@@ -190,7 +190,7 @@ public class PcodeInjectLibrary {
 		return names;
 	}
 
-	/**
+    # /**
 	 * @return a list of names for all installed callother-fixups
 	 */
 	public String[] getCallotherFixupNames() {
@@ -211,7 +211,7 @@ public class PcodeInjectLibrary {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Determine if the language has a given user-defined op.
 	 * In which case, a CALLOTHER_FIXUP can be installed for it.
 	 * @param name is the putative name of the user-defined op
@@ -268,7 +268,7 @@ public class PcodeInjectLibrary {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove a specific call mechanism payload.
 	 * @param nm is the name of the payload
 	 * @return true if a payload was successfully removed
@@ -299,7 +299,7 @@ public class PcodeInjectLibrary {
 		}
 	}
 
-	/**
+    # /**
 	 * Look for user callother payloads that override an existing core fixup.
 	 * Move these out of the map into the override list. Don't install user payload yet.
 	 * @param userPayloads is the list of user payloads
@@ -357,7 +357,7 @@ public class PcodeInjectLibrary {
 		}
 	}
 
-	/**
+    # /**
 	 * The main InjectPayload factory interface. This can be overloaded by derived libraries
 	 * to produce custom dynamic payloads.
 	 * @param sourceName is a description of the source of the payload
@@ -375,7 +375,7 @@ public class PcodeInjectLibrary {
 		return new InjectPayloadSleigh(name, tp, sourceName);
 	}
 
-	/**
+    # /**
 	 * Encode the parts of the inject library that come from the compiler spec
 	 * to the output stream
 	 * @param encoder is the stream encoder
@@ -409,7 +409,7 @@ public class PcodeInjectLibrary {
 		return payload;
 	}
 
-	/**
+    # /**
 	 * Get the constant pool associated with the given Program
 	 * @param program is the given Program
 	 * @return the ConstantPool associated with the Program
@@ -424,7 +424,7 @@ public class PcodeInjectLibrary {
 		return uniqueBase;
 	}
 
-	/**
+    # /**
 	 * Compare that this and the other library contain all equivalent payloads
 	 * @param obj is the other library
 	 * @return true if all payloads are equivalent

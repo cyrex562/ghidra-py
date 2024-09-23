@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf.info;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.address.Address;

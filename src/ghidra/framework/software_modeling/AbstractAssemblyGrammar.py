@@ -60,7 +60,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 	protected final Map<String, AssemblySymbol> symbols = new TreeMap<>();
 	protected String startName;
 
-	/**
+    # /**
 	 * Because a subclass may have a different type of production, it must provide a mechanism for
 	 * constructing an appropriate production given just the LHS and RHS.
 	 * 
@@ -70,7 +70,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 	 */
 	protected abstract P newProduction(NT lhs, AssemblySentential<NT> rhs);
 
-	/**
+    # /**
 	 * Add a production to the grammar
 	 * 
 	 * @param lhs the left-hand side
@@ -81,7 +81,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		addProduction(prod);
 	}
 
-	/**
+    # /**
 	 * Add a production to the grammar
 	 * 
 	 * @param prod the production
@@ -116,7 +116,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		}
 	}
 
-	/**
+    # /**
 	 * Check if the given production is purely recursive, i.e., of the form I =&gt; I
 	 * 
 	 * @param prod the production to check
@@ -132,7 +132,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return true;
 	}
 
-	/**
+    # /**
 	 * Change the start symbol for the grammar
 	 * 
 	 * @param nt the new start symbol
@@ -141,7 +141,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		setStartName(nt == null ? null : nt.getName());
 	}
 
-	/**
+    # /**
 	 * Change the start symbol for the grammar
 	 * 
 	 * @param startName the name of the new start symbol
@@ -150,7 +150,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		this.startName = startName;
 	}
 
-	/**
+    # /**
 	 * Get the start symbol for the grammar
 	 * 
 	 * @return the start symbol
@@ -159,7 +159,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return nonterminals.get(startName);
 	}
 
-	/**
+    # /**
 	 * Get the name of the start symbol for the grammar
 	 * 
 	 * @return the name of the start symbol
@@ -168,7 +168,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return startName;
 	}
 
-	/**
+    # /**
 	 * Get the named non-terminal
 	 * 
 	 * @param name the name of the desired non-terminal
@@ -178,7 +178,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return nonterminals.get(name);
 	}
 
-	/**
+    # /**
 	 * Get the named terminal
 	 * 
 	 * @param name the name of the desired terminal
@@ -188,7 +188,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return terminals.get(name);
 	}
 
-	/**
+    # /**
 	 * Add all the productions of a given grammar to this one
 	 * 
 	 * @param that the grammar whose productions to add
@@ -199,7 +199,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		}
 	}
 
-	/**
+    # /**
 	 * Print the productions of this grammar to the given stream
 	 * 
 	 * @param out the stream
@@ -210,7 +210,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		}
 	}
 
-	/**
+    # /**
 	 * Check that the grammar is consistent
 	 * 
 	 * <p>
@@ -237,7 +237,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		}
 	}
 
-	/**
+    # /**
 	 * Traverse the productions
 	 */
 	@Override
@@ -245,7 +245,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return Collections.unmodifiableList(prodList).iterator();
 	}
 
-	/**
+    # /**
 	 * Get the non-terminals
 	 * 
 	 * @return
@@ -254,7 +254,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return Collections.unmodifiableCollection(nonterminals.values());
 	}
 
-	/**
+    # /**
 	 * Get the terminals
 	 * 
 	 * @return
@@ -263,7 +263,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return Collections.unmodifiableCollection(terminals.values());
 	}
 
-	/**
+    # /**
 	 * Get all productions where the left-hand side non-terminal has the given name
 	 * 
 	 * @param name the name of the non-terminal
@@ -276,7 +276,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return productions.get(name);
 	}
 
-	/**
+    # /**
 	 * Get all productions where the left-hand side is the given non-terminal
 	 * 
 	 * @param nt the non-terminal whose defining productions to find
@@ -286,7 +286,7 @@ public abstract class AbstractAssemblyGrammar<NT extends AssemblyNonTerminal, P 
 		return productionsOf(nt.getName());
 	}
 
-	/**
+    # /**
 	 * Check if the grammar contains any symbol with the given name
 	 * 
 	 * @param name the name to find

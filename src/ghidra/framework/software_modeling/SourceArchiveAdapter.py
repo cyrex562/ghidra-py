@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 import java.util.List;
 
@@ -28,10 +28,10 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Adapter to access the data type archive identifier table.
- * This table holds an ID entry for each archive that has provided a data type to the 
- * data type manager for the program.
- */
+# * Adapter to access the data type archive identifier table.
+# * This table holds an ID entry for each archive that has provided a data type to the 
+# * data type manager for the program.
+# */
 abstract class SourceArchiveAdapter {
 
 	static final String SOURCE_ARCHIVE_TABLE_NAME = "Data Type Archive IDs";
@@ -48,7 +48,7 @@ abstract class SourceArchiveAdapter {
 	static final int ARCHIVE_ID_DIRTY_FLAG_COL =
 		SourceArchiveAdapterV0.V0_ARCHIVE_ID_DIRTY_FLAG_COL;
 
-	/**
+    # /**
 	 * Gets an adapter for working with the Data Type Archive ID database table. This table is 
 	 * intended to associate a unique ID with a particular project data type archive. When a data 
 	 * type is added to a program it can indicate save the ID of the archive where it originated. 
@@ -83,7 +83,7 @@ abstract class SourceArchiveAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Tries to get a read only adapter for the database whose handle is passed to this method.
 	 * @param handle handle to prior version of the database.
 	 * @return the read only Data Type Archive ID table adapter
@@ -94,7 +94,7 @@ abstract class SourceArchiveAdapter {
 		return new SourceArchiveAdapterNoTable(handle);
 	}
 
-	/**
+    # /**
 	 * Upgrades the DataType Archive ID table from the oldAdapter's version to the current version.
 	 * @param handle handle to the database whose table is to be upgraded to a newer version.
 	 * @param oldAdapter the adapter for the existing table to be upgraded.
@@ -136,14 +136,14 @@ abstract class SourceArchiveAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Delete table from database
 	 * @param handle database handle
 	 * @throws IOException if IO error occurs
 	 */
 	abstract void deleteTable(DBHandle handle) throws IOException;
 
-	/**
+    # /**
 	 * Creates a new source archive record using the information from the given source archive.
 	 * @param sourceArchive the source archive from which to get the archive information.
 	 * @return new archive record which corresponds to specified sourceArchive
@@ -151,14 +151,14 @@ abstract class SourceArchiveAdapter {
 	 */
 	abstract DBRecord createRecord(SourceArchive sourceArchive) throws IOException;
 
-	/**
+    # /**
 	 * Returns a list containing all records in the archive table
 	 * @return list of all archive records
 	 * @throws IOException if IO error occurs
 	 */
 	abstract List<DBRecord> getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Returns the record for the given key (sourceArchiveID)
 	 * @param key ID of data type archive record
 	 * @return archive record or null if not found
@@ -166,14 +166,14 @@ abstract class SourceArchiveAdapter {
 	 */
 	abstract DBRecord getRecord(long key) throws IOException;
 
-	/**
+    # /**
 	 * Updates the data type archive ID table with the provided record.
 	 * @param record the new record
 	 * @throws IOException if the database can't be accessed.
 	 */
 	abstract void updateRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Remove the record for the given data type archive ID.
 	 * @param key ID of data type archive record to delete
 	 * @return true if the record was deleted
@@ -181,7 +181,7 @@ abstract class SourceArchiveAdapter {
 	 */
 	abstract boolean removeRecord(long key) throws IOException;
 
-	/**
+    # /**
 	 * Removes the record for the given sourceArchive ID.
 	 * @param sourceArchiveID the id for which to remove its record.
 	 * @throws IOException if the database can't be accessed.

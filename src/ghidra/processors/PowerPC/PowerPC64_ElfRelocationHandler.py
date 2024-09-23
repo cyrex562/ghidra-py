@@ -37,7 +37,7 @@ public class PowerPC64_ElfRelocationHandler
 	private static final int PPC64_LOW14 = 0x0020FFFC;
 	private static final int PPC64_HALF16 = 0xFFFF;
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public PowerPC64_ElfRelocationHandler() {
@@ -266,7 +266,7 @@ public class PowerPC64_ElfRelocationHandler
 		return new RelocationResult(Status.APPLIED, byteLength);
 	}
 
-	/**
+    # /**
 	 * This method generates a symbol value with possible substitution for those
 	 * symbols residing within the .opd to refer to the real function instead.
 	 * Care must be taken not to invoke this method for relocations which may be

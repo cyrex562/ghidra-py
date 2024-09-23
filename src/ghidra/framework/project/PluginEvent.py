@@ -25,7 +25,7 @@ import ghidra.framework.model.ToolConnection;
  */
 public abstract class PluginEvent {
 	
-	/**
+    # /**
 	 * Name of event source when plugin event is passed to
 	 * another tool as cross-tool event.
 	 */
@@ -35,7 +35,7 @@ public abstract class PluginEvent {
 	private String sourceName;
 	private PluginEvent triggerEvent;
 
-	/**
+    # /**
 	 * Returns the tool event name corresponding to the given pluginEventClass.
 	 * If no corresponding tool event exists, null will be returned.
 	 */
@@ -47,7 +47,7 @@ public abstract class PluginEvent {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * @param sourceName source name of the event
 	 * @param eventName name of event
@@ -57,7 +57,7 @@ public abstract class PluginEvent {
 		this.sourceName = sourceName;
 	}
 	
-	/**
+    # /**
 	 * Determine if this event has been annotated with a {@link ToolEventName} which
 	 * makes it available for passing to another tool via a {@link ToolConnection}.
 	 * @return true if event can be utilized as a cross-tool event
@@ -66,7 +66,7 @@ public abstract class PluginEvent {
 		return getToolEventName() != null;
 	}
 	
-	/** 
+    # /** 
 	 * Get the optional cross-tool event name which has been established via
 	 * a {@link ToolEventName} annotation which makes it available for
 	 * passing as an external tool via a {@link ToolConnection}.
@@ -77,14 +77,14 @@ public abstract class PluginEvent {
     		return lookupToolEventName(getClass());
     }
 
-	/**
+    # /**
 	 * Get the plugin event name.
 	 */
 	public final String getEventName() {
 		return eventName;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the plugin immediately responsible for firing this
 	 * event.
 	 */

@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.util.HashMap;
 
 import generic.test.AbstractGenericTest;

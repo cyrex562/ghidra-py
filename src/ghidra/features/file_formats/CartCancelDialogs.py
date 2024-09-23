@@ -22,12 +22,12 @@ import ghidra.util.*;
  * Helper class to show Continue or Cancel dialogs at various severity levels
  */
 public class CartCancelDialogs {
-	/**
+    # /**
 	 * Character width to which messages will be wrapped
 	 */
 	public static final int WRAP_WIDTH_CHARACTERS = 80;
 
-	/**
+    # /**
 	 * Wrap a String message to a default (80 characters) width and add front and back HTML
 	 * tags. Caller is responsible for neutering any internal unsafe HTML tags in their
 	 * message.
@@ -40,7 +40,7 @@ public class CartCancelDialogs {
 		return "<html>" + wrapped.replace("\n", "<br>") + "</html>";
 	}
 
-	/**
+    # /**
 	 * Prompt the user with a given title and message with a specified message type for them
 	 * to "Continue" the operation or cancel. Message may contain HTML and should be
 	 * sanitized for safety by the caller. Returns true if the user wants to continue the
@@ -79,7 +79,7 @@ public class CartCancelDialogs {
 			wrapHtml(message), "Continue", messageType) == OptionDialog.OPTION_ONE;
 	}
 
-	/**
+    # /**
 	 * Helper to prompt for Continue or Cancel at the warning level. Returns true if the user
 	 * wants to continue the operation.
 	 *
@@ -91,7 +91,7 @@ public class CartCancelDialogs {
 		return promptContinue(title, message, OptionDialog.WARNING_MESSAGE);
 	}
 
-	/**
+    # /**
 	 * Helper to prompt for Continue or Cancel at the error level. Returns true if the user
 	 * wants to continue the operation.
 	 *

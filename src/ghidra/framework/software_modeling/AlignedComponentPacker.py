@@ -52,7 +52,7 @@ class AlignedComponentPacker {
 		this.packValue = packValue;
 	}
 
-	/**
+    # /**
 	 * Add next component within structure.  All components should be added in sequence excluding
 	 * DEFAULT components.
 	 * @param dtc structure component
@@ -71,7 +71,7 @@ class AlignedComponentPacker {
 		defaultAlignment = getComponentAlignmentLCM(defaultAlignment);
 	}
 
-	/**
+    # /**
 	 * Determine if any component was modified during pack operation.
 	 * @return true if one or more components were modified.
 	 */
@@ -79,7 +79,7 @@ class AlignedComponentPacker {
 		return componentsChanged;
 	}
 
-	/**
+    # /**
 	 * Get the external structure alignment after all components have been packed.
 	 * @return external alignment
 	 */
@@ -87,7 +87,7 @@ class AlignedComponentPacker {
 		return defaultAlignment;
 	}
 
-	/**
+    # /**
 	 * Get structure length after all components have been added.
 	 * @return structure length
 	 */
@@ -230,7 +230,7 @@ class AlignedComponentPacker {
 		}
 	}
 
-	/**
+    # /**
 	 * Adjust lastComponent which must be a zero-length bitfield and its associated
 	 * groupOffset based upon the adjusted alignment.
 	 * @param ordinal component ordinal assignment

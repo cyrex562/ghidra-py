@@ -19,7 +19,7 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.datatransfer.*;
 import java.awt.dnd.*;
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.widgets.table.RowObjectTableModel;

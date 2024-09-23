@@ -16,7 +16,7 @@
 // Lets user choose a specific FID database and output file, then, for every function,
 // dumps the executable domain path and function name.
 //@category FunctionID
-import java.io.*;
+
 import java.util.List;
 
 import ghidra.app.script.GhidraScript;

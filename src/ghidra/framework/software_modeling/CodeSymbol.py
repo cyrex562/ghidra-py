@@ -35,7 +35,7 @@ import ghidra.program.util.ProgramLocation;
 
 public class CodeSymbol extends SymbolDB {
 
-	/**
+    # /**
 	 * Constructs a new CodeSymbol
 	 * @param mgr the symbol manager
 	 * @param cache symbol object cache
@@ -47,7 +47,7 @@ public class CodeSymbol extends SymbolDB {
 		super(mgr, cache, addr, record);
 	}
 
-	/**
+    # /**
 	 * Constructs a new CodeSymbol for a default/dynamic label.
 	 * @param mgr the symbol manager
 	 * @param cache symbol object cache
@@ -58,7 +58,7 @@ public class CodeSymbol extends SymbolDB {
 		super(mgr, cache, addr, key);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#getSymbolType()
 	 */
 	@Override
@@ -89,7 +89,7 @@ public class CodeSymbol extends SymbolDB {
 		return delete(keepReferences);
 	}
 
-	/**
+    # /**
 	 * Delete code/label symbol
 	 * @param keepReferences if false all references to this symbols address will be removed,
 	 * otherwise associated references will simply be disassociated following symbol removal
@@ -124,7 +124,7 @@ public class CodeSymbol extends SymbolDB {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#getObject()
 	 */
 	@Override
@@ -155,7 +155,7 @@ public class CodeSymbol extends SymbolDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#isPrimary()
 	 */
 	@Override
@@ -166,7 +166,7 @@ public class CodeSymbol extends SymbolDB {
 		return doCheckIsPrimary();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#setPrimary()
 	 */
 	@Override
@@ -205,7 +205,7 @@ public class CodeSymbol extends SymbolDB {
 		doSetPrimary(primary);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#getProgramLocation()
 	 */
 	@Override
@@ -213,7 +213,7 @@ public class CodeSymbol extends SymbolDB {
 		return new LabelFieldLocation(this);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Symbol#isValidParent(ghidra.program.model.symbol.Namespace)
 	 */
 	@Override

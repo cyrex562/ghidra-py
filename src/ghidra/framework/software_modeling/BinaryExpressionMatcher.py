@@ -31,7 +31,7 @@ import ghidra.app.plugin.processors.sleigh.expression.PatternExpression;
 public class BinaryExpressionMatcher<T extends BinaryExpression>
 		extends AbstractExpressionMatcher<T> {
 
-	/**
+    # /**
 	 * A matcher for binary expression allowing commutativity
 	 * 
 	 * <p>

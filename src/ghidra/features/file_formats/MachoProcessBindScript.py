@@ -253,7 +253,7 @@ public class MachoProcessBindScript extends GhidraScript {
 		return name.getString();
 	}
 
-	/**
+    # /**
 	 * Unsigned Little-endian Base-128
 	 */
 	private long uleb128( ByteArrayInputStream byteServer ) throws Exception {
@@ -288,7 +288,7 @@ public class MachoProcessBindScript extends GhidraScript {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Signed Little-endian Base-128
 	 */
 	private long sleb128( ByteArrayInputStream byteServer ) throws Exception {

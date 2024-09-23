@@ -31,7 +31,7 @@ public class SFOverviewInfo {
 	private QueryNearestVector queryNearestVector;
 	private PreFilter preFilter;
 	
-	/**
+    # /**
 	 * Constructs an overview request with default parameters.
 	 * @param functions required--a set of functions (at least one) for which an overview will be 
 	 * 					computed.  All functions must be from the same program.
@@ -58,7 +58,7 @@ public class SFOverviewInfo {
 		preFilter = new PreFilter();
 	}
 	
-	/**
+    # /**
 	 * @return the program from which all queried functions are from
 	 */
 	public Program getProgram() {

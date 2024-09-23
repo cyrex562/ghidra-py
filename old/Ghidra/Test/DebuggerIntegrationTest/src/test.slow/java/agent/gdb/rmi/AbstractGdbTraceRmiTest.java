@@ -18,7 +18,7 @@ package agent.gdb.rmi;
 import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.net.*;
 import java.nio.file.*;
 import java.util.*;

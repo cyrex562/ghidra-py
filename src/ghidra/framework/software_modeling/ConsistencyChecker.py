@@ -639,7 +639,7 @@ class ConsistencyChecker {
 		return testresult;
 	}
 
-	/**
+    # /**
 	 * Returns true precisely when {@code opTpl} uses a {@link VarnodeTpl} in 
 	 * the unique space whose size is larger than {@link SleighBase#MAX_UNIQUE_SIZE}.  
 	 * Note that this method returns as soon as one large {@link VarnodeTpl} is found.
@@ -660,7 +660,7 @@ class ConsistencyChecker {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true precisely when {@code vn} is in the unique space
 	 * and has a size larger than {@link SleighBase#MAX_UNIQUE_SIZE}.
 	 * @param vn varnode template to check
@@ -1167,7 +1167,7 @@ class ConsistencyChecker {
 		}
 	}
 
-	/**
+    # /**
 	 * Checks {@code ct} to see whether p-code section contains an {@link OpTpl} which
 	 * uses a varnode in the unique space which is larger than {@link SleighBase#MAX_UNIQUE_SIZE}.
 	 * @param ct constructor to check
@@ -1318,7 +1318,7 @@ class ConsistencyChecker {
 		return writenoread;
 	}
 
-	/**
+    # /**
 	 * Returns the number of constructors which reference a varnode in the
 	 * unique space with size larger than {@link SleighBase#MAX_UNIQUE_SIZE}.
 	 * @return num constructors with large temp varnodes

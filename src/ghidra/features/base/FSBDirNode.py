@@ -15,7 +15,7 @@
  */
 package ghidra.plugins.fsbrowser;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.widgets.tree.GTreeNode;

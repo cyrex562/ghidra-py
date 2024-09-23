@@ -18,7 +18,7 @@ package ghidra.feature.vt.api.db;
 import static ghidra.feature.vt.api.db.VTAddressCorrelatorAdapter.AddressCorrelationTableDescriptor.*;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import db.*;

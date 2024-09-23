@@ -28,7 +28,7 @@ package ghidra.util.task;
 
 public interface SwingRunnable extends MonitoredRunnable {
 
-	/**
+    # /**
 	 * Callback on the swing thread.
 	 */
 	public void swingRun(boolean isCancelled);

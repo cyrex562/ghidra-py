@@ -15,7 +15,7 @@
  */
 package ghidra.dbg.gadp.server;
 
-import java.io.IOException;
+
 import java.net.SocketAddress;
 import java.nio.channels.AsynchronousSocketChannel;
 import java.util.concurrent.CompletableFuture;

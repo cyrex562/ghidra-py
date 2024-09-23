@@ -1,35 +1,35 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.util;
 
-import java.io.*;
+
 import java.util.Stack;
 
 # /**
- * A debugging, timing, and diagnostic tool
- * 
- * <p>
- * TODO: I should probably remove this and rely on the Msg.trace() method, or at the very least,
- * refactor this to use that.
- */
+# * A debugging, timing, and diagnostic tool
+# * 
+# * <p>
+# * TODO: I should probably remove this and rely on the Msg.trace() method, or at the very least,
+# * refactor this to use that.
+# */
 public class DbgTimer extends PrintStream {
 	// a stack of start times
 	Stack<Long> timeStack = new Stack<>();
 
-	/**
+    # /**
 	 * Create a new debugging timer, wrapping the given output stream
 	 * 
 	 * @param out the stream
@@ -40,14 +40,14 @@ public class DbgTimer extends PrintStream {
 		tos.setTimeStack(timeStack);
 	}
 
-	/**
+    # /**
 	 * Create a new debugging timer, wrapping standard out
 	 */
 	public DbgTimer() {
 		this(System.out);
 	}
 
-	/**
+    # /**
 	 * A (rather slow) output stream that indents every line of its output
 	 */
 	public static class TabbingOutputStream extends OutputStream {
@@ -58,7 +58,7 @@ public class DbgTimer extends PrintStream {
 		protected int state = STATE_NOLINE;
 		protected Stack<Long> timeStack;
 
-		/**
+	    # /**
 		 * Create a new stream wrapping another
 		 * 
 		 * @param out the stream to wrap
@@ -67,7 +67,7 @@ public class DbgTimer extends PrintStream {
 			this.out = out;
 		}
 
-		/**
+	    # /**
 		 * Start a new (indented) line of output
 		 * 
 		 * @throws IOException
@@ -80,7 +80,7 @@ public class DbgTimer extends PrintStream {
 			}
 		}
 
-		/**
+	    # /**
 		 * Workaround: Set the time stack reference
 		 * 
 		 * @param timeStack the stack
@@ -89,7 +89,7 @@ public class DbgTimer extends PrintStream {
 			this.timeStack = timeStack;
 		}
 
-		/**
+	    # /**
 		 * {@inheritDoc}
 		 * 
 		 * Parses each line and prepends the indentation as they are printed
@@ -127,9 +127,9 @@ public class DbgTimer extends PrintStream {
 		}
 	}
 
-	/** An instance that prints to standard out */
+    # /** An instance that prints to standard out */
 	public static final DbgTimer ACTIVE = new DbgTimer();
-	/** An instance that prints to /dev/null */
+    # /** An instance that prints to /dev/null */
 	public static final DbgTimer INACTIVE = new DbgTimer(new OutputStream() {
 		@Override
 		public void write(int b) throws IOException {
@@ -175,7 +175,7 @@ public class DbgTimer extends PrintStream {
 		}
 	};
 
-	/**
+    # /**
 	 * Start a new, possibly long-running, task
 	 * 
 	 * This is meant to be used idiomatically, as in a try-with-resources block:
@@ -200,7 +200,7 @@ public class DbgTimer extends PrintStream {
 		return new DbgCtx(this);
 	}
 
-	/**
+    # /**
 	 * Stop the current task
 	 * 
 	 * <p>
@@ -213,7 +213,7 @@ public class DbgTimer extends PrintStream {
 		println("Done after " + time + "ms");
 	}
 
-	/**
+    # /**
 	 * Replace the wrapped output stream (usually temporarily)
 	 * 
 	 * @see #resetOutputStream(TabbingOutputStream)
@@ -229,7 +229,7 @@ public class DbgTimer extends PrintStream {
 		return old;
 	}
 
-	/**
+    # /**
 	 * Put the original tabbing stream back
 	 * 
 	 * @see #setOutputStream(OutputStream)
@@ -243,7 +243,7 @@ public class DbgTimer extends PrintStream {
 		return old;
 	}
 
-	/**
+    # /**
 	 * A context for idiomatic use of the {@link DbgTimer} in a try-with-resources block
 	 */
 	public static class DbgCtx implements AutoCloseable {

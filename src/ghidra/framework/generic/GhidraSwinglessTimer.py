@@ -81,14 +81,14 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 	private int initialDelay;
 	private TimerTask timerTask;
 
-	/**
+    # /**
 	 * Creates a new repeating timer with a initial delay of 100ms and a continual delay of 100ms. 
 	 */
 	public GhidraSwinglessTimer() {
 		this(100, null);
 	}
 	
-	/**
+    # /**
 	 * Creates a new repeating timer with a initial and continual delay with the given delay. 
 	 * @param delay the delay to use for the first and subsequent timer callbacks.
 	 * @param callback the callback the be called with the timer fires.
@@ -97,7 +97,7 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		this(delay,delay,callback);
 	}
 
-	/**
+    # /**
 	 * Creates a new repeating timer with an initial and continual delay. 
 	 * @param initialDelay the delay to use for the first timer callbacks.
 	 * @param delay the delay to use for subsequent timer callbacks.
@@ -110,7 +110,7 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		this.repeats = true;
 	}
 
-	/**
+    # /**
 	 * Returns the delay for all callbacks after the first callback.
 	 * @return the delay for all callbacks after the first callback.
 	 */
@@ -118,7 +118,7 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		return delay;
 	}
 
-	/**
+    # /**
 	 * Returns the delay for the first callback.
 	 * @return the delay for the first callback.
 	 */
@@ -126,7 +126,7 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		return initialDelay;
 	}
 
-	/**
+    # /**
 	 * Returns true if this timer is set to repeating.
 	 * @return true if this timer is set to repeating.
 	 */
@@ -134,7 +134,7 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		return repeats;
 	}
 
-	/**
+    # /**
 	 * Sets the delay for all callbacks after the first callback
 	 */
 	public synchronized void setDelay(int delay) {
@@ -145,14 +145,14 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the delay for the first callbacks.
 	 */
 	public synchronized void setInitialDelay(int initialDelay) {
 		this.initialDelay = initialDelay;
 	}
 
-	/**
+    # /**
 	 * Sets whether this timer repeats.
 	 * @param repeats if true, the timer will repeat, if false the timer will only fire once.
 	 */
@@ -160,14 +160,14 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		this.repeats = repeats;
 	}
 
-	/**
+    # /**
 	 * Sets the callback to be called when the timer fires.
 	 */
 	public synchronized void setTimerCallback(TimerCallback callback) {
 		this.callback = callback;
 	}
 
-	/**
+    # /**
 	 * Starts the timer.
 	 */
 	public synchronized void start() {
@@ -179,7 +179,7 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		getTimer().schedule(timerTask, initialDelay, delay);	
 	}
 
-	/**
+    # /**
 	 * Stops the timer.
 	 */
 	public synchronized void stop() {
@@ -190,7 +190,7 @@ public class GhidraSwinglessTimer implements GhidraTimer {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if the timer is running.
 	 */
 	public synchronized boolean isRunning() {

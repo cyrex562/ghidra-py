@@ -20,7 +20,7 @@ package ghidra.framework.model;
  */
 public interface DomainObjectClosedListener {
 
-	/**
+    # /**
 	 * Callback indicating that the specified {@link DomainObject} has been closed.
 	 * @param dobj domain object
 	 */

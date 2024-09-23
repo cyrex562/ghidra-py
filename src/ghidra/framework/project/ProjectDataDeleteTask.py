@@ -16,7 +16,7 @@
 package ghidra.framework.main.projectdata.actions;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.rmi.RemoteException;
 import java.util.*;
 import java.util.Map.Entry;
@@ -49,56 +49,56 @@ public class ProjectDataDeleteTask extends Task {
 	private List<DomainFile> startFiles;
 	private List<DomainFolder> startFolders;
 
-	/**
+    # /**
 	 * Files that failed during the preprocess phase because they were checked out
 	 */
 	private Set<DomainFile> failPreprocessCheckedOut = new HashSet<>();
 
-	/**
+    # /**
 	 * Files that failed during the preprocess phase because they were marked read-only.
 	 */
 	private Set<DomainFile> failPreprocessReadOnly = new HashSet<>();
 
-	/**
+    # /**
 	 * A lookup {@link Set set} of the {@link #failPreprocessReadOnly read-only} files
 	 * found during the preprocess phase, if the user has chosen to override the read-only
 	 * status.
 	 */
 	private Set<DomainFile> readOnlyOverride = new HashSet<>();
 
-	/**
+    # /**
 	 * The files that are queued up to be deleted, pointing to the string error message
 	 * that was encountered during the actual delete operation, or null if no error.
 	 */
 	private Map<DomainFile, String> filesToDelete = new LinkedHashMap<>();
 
-	/**
+    # /**
 	 * The folders that are queued up to be deleted  , pointing to the string error message
 	 * that was encountered during the actual delete operation, or null if no error.
 	 */
 	private Map<DomainFolder, String> foldersToDelete = new LinkedHashMap<>();
 
-	/**
+    # /**
 	 * The number of files that encountered an error during the delete operation.
 	 */
 	private int erroredFileCount;
 
-	/**
+    # /**
 	 * The number of folders that encountered an error during the delete operation.
 	 */
 	private int erroredFolderCount;
 
-	/**
+    # /**
 	 * The number of milliseconds used during preprocessing and delete operations.
 	 */
 	private long elapsedTime;
 
-	/**
+    # /**
 	 * Count of the number of bytes occupied by files that were successfully deleted.
 	 */
 	private long fileBytesDeleted;
 
-	/**
+    # /**
 	 * Creates a new task to delete the specified files and folders.
 	 *
 	 * @param files - the {@link DomainFile files} the user requested to be deleted, or null.
@@ -268,7 +268,7 @@ public class ProjectDataDeleteTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Attempts to delete the folders listed in {@link #foldersToDelete} (in reverse
 	 * lexical order to delete child folders first before attempting to delete the
 	 * containing parent folders).
@@ -306,7 +306,7 @@ public class ProjectDataDeleteTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Attempts to delete the files listed in {@link #filesToDelete}.
 	 * <p>
 	 * Errors are saved into {@link #filesToDelete} as the value that the file maps to.
@@ -349,7 +349,7 @@ public class ProjectDataDeleteTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Iterates over the user-supplied files and folders, saving the discovered files and
 	 * subfolders and their files into {@link #filesToDelete} and {@link #foldersToDelete}.
 	 *

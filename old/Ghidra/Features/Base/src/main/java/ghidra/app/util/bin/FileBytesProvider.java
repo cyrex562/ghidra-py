@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.*;
+
 
 import ghidra.program.database.mem.FileBytes;
 

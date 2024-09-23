@@ -33,7 +33,7 @@ public abstract class FBPK_Partition implements StructConverter {
 	protected String name;
 	protected int partitionIndex;
 
-	/**
+    # /**
 	 * Returns the size of the partition's header, in bytes.
 	 * @return the size of the partition's header, in bytes
 	 */
@@ -41,7 +41,7 @@ public abstract class FBPK_Partition implements StructConverter {
 		return headerSize;
 	}
 
-	/**
+    # /**
 	 * Returns the partition's type.
 	 * @return the partition's type
 	 */
@@ -49,7 +49,7 @@ public abstract class FBPK_Partition implements StructConverter {
 		return type;
 	}
 
-	/**
+    # /**
 	 * Returns the partition's name.
 	 * @return the partition's name
 	 */
@@ -57,33 +57,33 @@ public abstract class FBPK_Partition implements StructConverter {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the offsets to the start of this
 	 * partition's data payload.
 	 * @return offsets to the partition's data
 	 */
 	public abstract long getDataStartOffset();
 
-	/**
+    # /**
 	 * Returns the partition's data payload size.
 	 * @return the partition's data payload size
 	 */
 	public abstract int getDataSize();
 
-	/**
+    # /**
 	 * Returns true if this partition represents a file.
 	 * @return true if this partition represents a file
 	 */
 	public abstract boolean isFile();
 
-	/**
+    # /**
 	 * Returns the offset to the next partition (for non-adjoining partitions).
 	 * Returns 0 is the next partition is adjoingin (immediately following the previous).
 	 * @return offset to the next partition, or 0
 	 */
 	public abstract int getOffsetToNextPartitionTable();
 
-	/**
+    # /**
 	 * Returns the partition's index.
 	 * @return the partition's index
 	 */
@@ -91,7 +91,7 @@ public abstract class FBPK_Partition implements StructConverter {
 		return partitionIndex;
 	}
 
-	/**
+    # /**
 	 * Annotates the program with this partition's data structures.
 	 * @param program the program to markup
 	 * @param address the address of the partition

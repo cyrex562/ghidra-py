@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex.format;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
@@ -38,7 +38,7 @@ public class TryItem implements StructConverter {
 		handlerOffset = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * <pre>
 	 * Start address of the block of code covered by this entry. 
 	 * The address is a count of 16-bit code units to the start of the first covered instruction.
@@ -48,7 +48,7 @@ public class TryItem implements StructConverter {
 		return startAddress;
 	}
 
-	/**
+    # /**
 	 * <pre>
 	 * Number of 16-bit code units covered by this entry. 
 	 * The last code unit covered (inclusive) is start_addr + insn_count - 1.
@@ -58,7 +58,7 @@ public class TryItem implements StructConverter {
 		return instructionCount;
 	}
 
-	/**
+    # /**
 	 * <pre>
 	 * Offset in bytes from the start of the associated encoded_catch_hander_list to 
 	 * the encoded_catch_handler for this entry. 

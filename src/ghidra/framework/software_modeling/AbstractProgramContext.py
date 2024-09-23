@@ -38,7 +38,7 @@ abstract public class AbstractProgramContext implements ProgramContext, DefaultP
 		init(language);
 	}
 
-	/**
+    # /**
 	 * Get underlying language associated with this context and its registers
 	 * @return language
 	 */
@@ -46,7 +46,7 @@ abstract public class AbstractProgramContext implements ProgramContext, DefaultP
 		return language;
 	}
 
-	/**
+    # /**
 	 * Set those bits in the nonFlowingContextRegisterMask which should not 
 	 * flow with context.
 	 * @param contextReg context register piece
@@ -72,7 +72,7 @@ abstract public class AbstractProgramContext implements ProgramContext, DefaultP
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if one or more non-flowing context registers fields
 	 * have been defined within the base processor context register.
 	 */
@@ -81,7 +81,7 @@ abstract public class AbstractProgramContext implements ProgramContext, DefaultP
 		return hasNonFlowingContext;
 	}
 
-	/**
+    # /**
 	 * Modify register value to eliminate non-flowing bits
 	 * @param value context register value to be modified
 	 * @return value suitable for flowing
@@ -94,7 +94,7 @@ abstract public class AbstractProgramContext implements ProgramContext, DefaultP
 		return value.clearBitValues(nonFlowingContextRegisterMask);
 	}
 
-	/**
+    # /**
 	 * Modify register value to only include non-flowing bits
 	 * @param value context register value to be modified
 	 * @return new value or null if value does not correspond to a context register or
@@ -108,7 +108,7 @@ abstract public class AbstractProgramContext implements ProgramContext, DefaultP
 		return value.clearBitValues(flowingContextRegisterMask);
 	}
 
-	/**
+    # /**
 	 * Initialize context for the specified language
 	 * @param lang processor language for which this context applies
 	 */

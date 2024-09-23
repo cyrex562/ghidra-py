@@ -62,7 +62,7 @@ public class ModifierExMsType extends AbstractMsType {
 		public final String label;
 		public final int value;
 
-		/**
+	    # /**
 		 * Emits {@link String} output of this class into the provided {@link StringBuilder}.
 		 * @param builder The {@link StringBuilder} into which the output is created.
 		 */
@@ -95,7 +95,7 @@ public class ModifierExMsType extends AbstractMsType {
 	private List<Modifier> modifiers = new ArrayList<>();
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -120,7 +120,7 @@ public class ModifierExMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Tells whether the the {@link Modifier} is present.
 	 * @param modifier the {@link Modifier} to check.
 	 * @return True if the {@link Modifier} is present.

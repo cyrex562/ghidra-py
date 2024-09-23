@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.program.database.SpecExtension;
@@ -31,10 +31,10 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.*;
 
 # /**
- * A function calling convention model.
- * Formal specification of how a compiler passes
- * arguments between functions.
- */
+# * A function calling convention model.
+# * Formal specification of how a compiler passes
+# * arguments between functions.
+# */
 public class PrototypeModel {
 	public static final int UNKNOWN_EXTRAPOP = 0x8000;
 
@@ -60,7 +60,7 @@ public class PrototypeModel {
 	private boolean hasUponEntry;	// Does this have an uponentry injection
 	private boolean hasUponReturn;	// Does this have an uponreturn injection
 
-	/**
+    # /**
 	 * Create a named alias of another PrototypeModel.
 	 * All elements of the original model are copied except:
 	 *   1) The name
@@ -113,7 +113,7 @@ public class PrototypeModel {
 		hasUponReturn = false;
 	}
 
-	/**
+    # /**
 	 * @return list of registers unaffected by called functions
 	 */
 	public Varnode[] getUnaffectedList() {
@@ -123,7 +123,7 @@ public class PrototypeModel {
 		return unaffected;
 	}
 
-	/**
+    # /**
 	 * @return list of registers definitely affected by called functions
 	 */
 	public Varnode[] getKilledByCallList() {
@@ -133,7 +133,7 @@ public class PrototypeModel {
 		return killedbycall;
 	}
 
-	/**
+    # /**
 	 * @return list of registers whose input value is likely meaningless
 	 */
 	public Varnode[] getLikelyTrash() {
@@ -143,7 +143,7 @@ public class PrototypeModel {
 		return likelytrash;
 	}
 
-	/**
+    # /**
 	 * @return list of registers used to store internal compiler constants
 	 */
 	public Varnode[] getInternalStorage() {
@@ -153,14 +153,14 @@ public class PrototypeModel {
 		return internalstorage;
 	}
 
-	/**
+    # /**
 	 * @return list of registers/memory used to store the return address
 	 */
 	public Varnode[] getReturnAddress() {
 		return returnaddress;
 	}
 
-	/**
+    # /**
 	 * If this returns true, it indicates this model is an artificial merge of other models.
 	 * A merged model can be used as part of the analysis process when attempting to distinguish
 	 * between different possible models for an unknown function.
@@ -170,21 +170,21 @@ public class PrototypeModel {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return true if this model is a Program specific extension to the CompilerSpec
 	 */
 	public boolean isProgramExtension() {
 		return isExtension;
 	}
 
-	/**
+    # /**
 	 * @return the formal name of the model
 	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the number of extra bytes popped from the stack when a function that uses
 	 * this model returns to its caller. This is usually just the number of bytes used to
 	 * store the return value, but some conventions may do additional clean up of stack parameters.
@@ -195,35 +195,35 @@ public class PrototypeModel {
 		return extrapop;
 	}
 
-	/**
+    # /**
 	 * @return the number of bytes on the stack used, by this model, to store the return value
 	 */
 	public int getStackshift() {
 		return stackshift;
 	}
 
-	/**
+    # /**
 	 * @return true if this model has an implied "this" parameter for referencing class data
 	 */
 	public boolean hasThisPointer() {
 		return hasThis;
 	}
 
-	/**
+    # /**
 	 * @return true if this model is used specifically for class constructors
 	 */
 	public boolean isConstructor() {
 		return isConstruct;
 	}
 
-	/**
+    # /**
 	 * @return the allocation strategy for this model
 	 */
 	public InputListType getInputListType() {
 		return inputListType;
 	}
 
-	/**
+    # /**
 	 * Return true if this model has specific p-code injections associated with it
 	 * (either an "uponentry" or "uponreturn" payload),
 	 * which are used to decompile functions with this model. 
@@ -233,7 +233,7 @@ public class PrototypeModel {
 		return hasUponEntry || hasUponReturn;
 	}
 
-	/**
+    # /**
 	 * Get the preferred return location given the specified dataType.
 	 * If the return value is passed back through a hidden input pointer,
 	 * i.e. {@link AutoParameterType#RETURN_STORAGE_PTR}, this routine will not pass back
@@ -255,7 +255,7 @@ public class PrototypeModel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the preferred parameter location for a new parameter which will appended
 	 * to the end of an existing set of params.  If existing parameters use custom
 	 * storage, this method should not be used.
@@ -272,7 +272,7 @@ public class PrototypeModel {
 		return getArgLocation(params != null ? params.length : 0, params, dataType, program);
 	}
 
-	/**
+    # /**
 	 * Get the preferred parameter location for a specified index,
 	 * which will be added/inserted within the set of existing function params.
 	 * If existing parameters use custom storage, this method should not be used.
@@ -311,7 +311,7 @@ public class PrototypeModel {
 		return res[res.length - 1];
 	}
 
-	/**
+    # /**
 	 * Calculate input and output storage locations given a function prototype
 	 * 
 	 * The data-types of the function prototype are passed in. Based on this model, a
@@ -346,7 +346,7 @@ public class PrototypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Compute the variable storage for a given array of return/parameter datatypes.  The first array element
 	 * is the return datatype, which is followed by any input parameter datatypes in order.
 	 * If addAutoParams is true, pointer datatypes will automatically be inserted for "this" or "hidden return"
@@ -382,7 +382,7 @@ public class PrototypeModel {
 		return finalres;
 	}
 
-	/**
+    # /**
 	 * If this is an alias of another model, return that model.  Otherwise null is returned.
 	 * @return the parent model or null
 	 */
@@ -390,7 +390,7 @@ public class PrototypeModel {
 		return compatModel;
 	}
 
-	/**
+    # /**
 	 * If a PrototypeModel fails to parse (from XML) a substitute model may be provided, in which
 	 * case this method returns true.  In all other cases this method returns false;
 	 * @return true if this object is a substitute for a model that didn't parse
@@ -415,7 +415,7 @@ public class PrototypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Encode this object to an output stream
 	 * @param encoder is the stream encoder
 	 * @param injectLibrary is a library containing any inject payloads associated with the model
@@ -582,7 +582,7 @@ public class PrototypeModel {
 		return name + "@@inject_uponreturn";
 	}
 
-	/**
+    # /**
 	 * Restore the model from an XML stream.
 	 * @param parser is the XML parser (initialized to the start of the stream)
 	 * @param cspec is the parent compiler specification owning the model
@@ -668,7 +668,7 @@ public class PrototypeModel {
 		parser.end(protoElement);
 	}
 
-	/**
+    # /**
 	 * Determine if the given address range is possible input parameter storage for this model.
 	 * If it is, "true" is returned, and additional information about the parameter's
 	 * position is passed back in the provided record.
@@ -681,7 +681,7 @@ public class PrototypeModel {
 		return inputParams.possibleParamWithSlot(loc, size, res);
 	}
 
-	/**
+    # /**
 	 * Determine if the given address range is possible return value storage for this model.
 	 * If it is, "true" is returned, and additional information about the storage
 	 * position is passed back in the provided record.
@@ -694,7 +694,7 @@ public class PrototypeModel {
 		return outputParams.possibleParamWithSlot(loc, size, res);
 	}
 
-	/**
+    # /**
 	 * Assuming the model allows open ended storage of parameters on the stack,
 	 * return the byte alignment required for individual stack parameters.
 	 * @return the stack alignment in bytes
@@ -703,7 +703,7 @@ public class PrototypeModel {
 		return inputParams.getStackParameterAlignment();
 	}
 
-	/**
+    # /**
 	 * Return the byte offset where the first input parameter on the stack is allocated.
 	 * The value is relative to the incoming stack pointer of the called function.
 	 * For normal stacks, this is the offset of the first byte in the first parameter.
@@ -714,7 +714,7 @@ public class PrototypeModel {
 		return inputParams.getStackParameterOffset();
 	}
 
-	/**
+    # /**
 	 * Get a list of all input storage locations consisting of a single register 
 	 * @param prog is the current Program
 	 * @return a VariableStorage ojbect for each register
@@ -723,7 +723,7 @@ public class PrototypeModel {
 		return inputParams.getPotentialRegisterStorage(prog);
 	}
 
-	/**
+    # /**
 	 * Determine if this PrototypeModel is equivalent to another instance
 	 * @param obj is the other instance
 	 * @return true if they are equivalent
@@ -787,7 +787,7 @@ public class PrototypeModel {
 		return getName();
 	}
 
-	/**
+    # /**
 	 * Set the return address
 	 * @param returnaddress return address
 	 */

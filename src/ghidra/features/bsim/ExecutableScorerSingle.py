@@ -35,7 +35,7 @@ public class ExecutableScorerSingle extends ExecutableScorer {
 	private float singleScore[];		// Score of single against all other executables
 	private ScoreCaching scoreCache;
 
-	/**
+    # /**
 	 * Construct the scorer.  If normalized scores are required, a self-score cacher
 	 * must be provided.
 	 * @param cache is the self-score cacher or null
@@ -238,7 +238,7 @@ public class ExecutableScorerSingle extends ExecutableScorer {
 
 	}
 
-	/**
+    # /**
 	 * Pre-load self-scores of the registered executables.
 	 * @param missing (optional - may be null) will contain the list of exes missing a score
 	 * @throws LSHException if there are problems loading scores

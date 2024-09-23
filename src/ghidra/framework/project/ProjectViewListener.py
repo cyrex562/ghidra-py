@@ -25,14 +25,14 @@ import java.net.URL;
  */
 public interface ProjectViewListener {
 
-	/**
+    # /**
 	 * Provides notification that a read-only viewed project has been added which is intended to
 	 * be visible.  Notification for hidden viewed projects will not be provided.
 	 * @param projectView project view URL
 	 */
 	void viewedProjectAdded(URL projectView);
 
-	/**
+    # /**
 	 * Provides notification that a viewed project is being removed from the project.
 	 * Notification for hidden viewed project removal will not be provided.
 	 * @param projectView project view URL

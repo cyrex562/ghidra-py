@@ -17,7 +17,7 @@ package ghidra.file.formats.ios.png;
 
 import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.io.FilenameUtils;

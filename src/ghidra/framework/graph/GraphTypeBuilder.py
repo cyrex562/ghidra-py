@@ -27,7 +27,7 @@ public class GraphTypeBuilder {
 	private final String name;
 	private String description;
 
-	/**
+    # /**
 	 * Create a new builder
 	 * @param name the name of the new {@link GraphType}
 	 */
@@ -36,7 +36,7 @@ public class GraphTypeBuilder {
 		this.description = name;
 	}
 
-	/**
+    # /**
 	 * Sets the description for the {@link GraphType}
 	 * @param text the description
 	 * @return this GraphTypeBuilder
@@ -46,7 +46,7 @@ public class GraphTypeBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Defines a new vertex type
 	 * @param type a string that names a new vertex type
 	 * @return this GraphTypeBuilder
@@ -56,7 +56,7 @@ public class GraphTypeBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Defines a new edge type
 	 * @param type a string that names a new edge type
 	 * @return this GraphTypeBuilder
@@ -66,7 +66,7 @@ public class GraphTypeBuilder {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Builds a new GraphType
 	 * @return a new GraphType
 	 */

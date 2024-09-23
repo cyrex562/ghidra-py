@@ -29,7 +29,7 @@ import ghidra.pcode.exec.PcodeArithmetic.Purpose;
  */
 public class EmuProcessExitedException extends EmuSystemException {
 
-	/**
+    # /**
 	 * Attempt to concretize a value and convert it to hex
 	 * 
 	 * @param <T> the type of the status
@@ -49,7 +49,7 @@ public class EmuProcessExitedException extends EmuSystemException {
 
 	private final Object status;
 
-	/**
+    # /**
 	 * Construct a process-exited exception with the given status code
 	 * 
 	 * <p>
@@ -65,7 +65,7 @@ public class EmuProcessExitedException extends EmuSystemException {
 		this.status = status;
 	}
 
-	/**
+    # /**
 	 * Get the status code as a {@code T} of the throwing machine
 	 * 
 	 * @return the status

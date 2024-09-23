@@ -29,7 +29,7 @@ public class RootGhidraFolderData extends GhidraFolderData {
 		return new RootGhidraFolder(getProjectData(), getChangeListener());
 	}
 
-	/**
+    # /**
 	 * Provided for testing use only
 	 * @param fs versioned file system
 	 */
@@ -42,7 +42,7 @@ public class RootGhidraFolderData extends GhidraFolderData {
 		return true;
 	}
 
-	/**
+    # /**
 	 * used for testing
 	 */
 	@Override

@@ -25,7 +25,7 @@ public abstract class MergeableBackgroundCommand<T extends DomainObject>
 		super(name, hasProgress, canCancel, isModal);
 	}
 
-	/**
+    # /**
 	 * Merges the properties of the two commands
 	 * @param command command to be merged with this one
 	 * @return resulting merged command

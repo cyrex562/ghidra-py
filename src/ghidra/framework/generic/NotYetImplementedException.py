@@ -26,14 +26,14 @@ package ghidra.util.exception;
 
 public class NotYetImplementedException extends RuntimeException {
 	
-	/**
+    # /**
 	 * <p>Constructs a NotYetImplementedException with no detail message.<p>
 	 */
 	public NotYetImplementedException() {
 		super();
     }
 	
-	/**
+    # /**
 	 * <p>Constructs a NotYetImplementedException with the specified
 	 * detail message.<p>
 	 *

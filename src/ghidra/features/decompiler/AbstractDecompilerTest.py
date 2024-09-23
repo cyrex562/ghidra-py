@@ -146,7 +146,7 @@ public abstract class AbstractDecompilerTest extends AbstractProgramBasedTest {
 		return provider.getDecompilerPanel();
 	}
 
-	/**
+    # /**
 	 * Returns the token under the cursor
 	 * @return the token under the cursor
 	 */

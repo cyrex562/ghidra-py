@@ -97,7 +97,7 @@ public class SarifResultsTableModelFactory {
 			private String name;
 			private Class<T> type;
 
-			/**
+		    # /**
 			 * @param name
 			 * @param type Need to specify the type so that the filter table behaves how you
 			 *             would expect

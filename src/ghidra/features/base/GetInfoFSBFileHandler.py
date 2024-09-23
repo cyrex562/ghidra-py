@@ -19,7 +19,7 @@ import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 import static java.util.Map.*;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Function;
 

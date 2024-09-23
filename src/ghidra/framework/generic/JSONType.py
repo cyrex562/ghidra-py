@@ -5,7 +5,7 @@ package generic.json;
 
 public enum JSONType {
 
-	/**
+    # /**
 	 * JSON type identifier. Basic types are:
 	 * 	o Object
 	 * 	o Array

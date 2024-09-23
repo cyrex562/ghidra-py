@@ -65,7 +65,7 @@ public class ProjectDataReadOnlyAction extends ProjectDataContextToggleAction {
 		return !domainFile.isVersioned();
 	}
 
-	/**
+    # /**
 	 * Toggle the read-only property on the domain file.
 	 */
 	private void toggleReadOnly(DomainFile file) {

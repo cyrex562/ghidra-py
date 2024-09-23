@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 public interface RecordTranslator {
 	

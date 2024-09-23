@@ -17,7 +17,7 @@ package ghidra.pcodeCPort.slghsymbol;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 
 import generic.stl.*;
 import ghidra.pcodeCPort.error.LowlevelError;

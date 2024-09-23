@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 
@@ -54,14 +54,14 @@ public class BlockCopy extends PcodeBlock {
 		return address;
 	}
 
-	/**
+    # /**
 	 * @return the underlying basic block Object
 	 */
 	public Object getRef() {
 		return ref;
 	}
 
-	/**
+    # /**
 	 * Used (by BlockGraph.transferObjectRef) to reset the internal Object and Address 
 	 * @param r is the internal Object
 	 * @param addr is the Address
@@ -71,7 +71,7 @@ public class BlockCopy extends PcodeBlock {
 		address = addr;
 	}
 
-	/**
+    # /**
 	 * @return the alternative index, used as an id for the original basic block Object
 	 */
 	public int getAltIndex() {

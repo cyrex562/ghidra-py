@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -38,10 +38,10 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Class maintain a list of prototypes and corresponding IDs.
- * NOTE: The prototype ID will be negative if the prototype is in a
- * delay slot.
- */
+# * Class maintain a list of prototypes and corresponding IDs.
+# * NOTE: The prototype ID will be negative if the prototype is in a
+# * delay slot.
+# */
 class PrototypeManager {
 
 	private ObjectIntHashtable<InstructionPrototype> protoHt; // key=ProtoType,
@@ -84,7 +84,7 @@ class PrototypeManager {
 	private static final int CURRENT_VERSION = 1;
 	private static final int CURRENT_CONTEXT_VERSION = 1;
 
-	/**
+    # /**
 	 * Constructs a new PrototypeManager
 	 * @param dbHandle the database handle
 	 * @param addrMap the address map.
@@ -243,7 +243,7 @@ class PrototypeManager {
 		init();
 	}
 
-	/**
+    # /**
 	 * Get the unique ID for this prototype.  If a prototype matching
 	 * this one doesn't exist yet, then this one is stored and given a
 	 * new ID.  If a prototype already exists that matches this prototype,
@@ -292,7 +292,7 @@ class PrototypeManager {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Get the prototype with the given ID.
 	 * @param protoID prototype ID
 	 * @return instruction prototype or null if not found
@@ -392,7 +392,7 @@ class PrototypeManager {
 		}
 	}
 
-	/**
+    # /**
 	 * @param handle
 	 */
 	private void createDBTables(DBHandle handle) throws IOException {

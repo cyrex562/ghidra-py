@@ -16,7 +16,7 @@
 // Repack FID database file to eliminate unused blocks and possibly make indices more efficient
 //@category FunctionID
 import java.io.File;
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.app.script.GhidraScript;
@@ -27,7 +27,7 @@ import ghidra.util.task.TaskMonitor;
 
 public class RepackFid extends GhidraScript {
 
-	/**
+    # /**
 	 * Copy a single table between databases
 	 * @param oldTable is the old table to copy
 	 * @param newHandle is the handle to the new database receiving the copy

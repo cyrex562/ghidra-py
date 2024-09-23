@@ -48,7 +48,7 @@ public class HighlightAndGraphAction extends DockingAction {
 	private GraphDisplayOptions featureGraphOptions;
 	private AttributedGraph featureGraph;
 
-	/**
+    # /**
 	 * Creates an action for drawing BSim feature graphs and highlighting relevant tokens in the 
 	 * decompiler.
 	 * @param provider provider
@@ -186,7 +186,7 @@ public class HighlightAndGraphAction extends DockingAction {
 
 	}
 
-	/**
+    # /**
 	 * Returns the {@link AttributedGraph} created by (the last firing of) this action.
 	 * @return graph
 	 */

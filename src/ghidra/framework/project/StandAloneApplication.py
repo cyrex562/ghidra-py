@@ -17,7 +17,7 @@ package ghidra.framework.plugintool;
 
 import java.awt.Image;
 import java.awt.Taskbar;
-import java.io.*;
+
 import java.util.List;
 
 import javax.swing.ImageIcon;
@@ -50,7 +50,7 @@ public abstract class StandAloneApplication implements GenericStandAloneApplicat
 	protected DockingApplicationConfiguration configuration;
 	protected PluginTool tool;
 
-	/**
+    # /**
 	 * Creates a new application using the given properties filename. The
 	 * filename is expected reside in the current working directory.
 	 * <p>
@@ -66,7 +66,7 @@ public abstract class StandAloneApplication implements GenericStandAloneApplicat
 		this(new GenericApplicationLayout(readApplicationProperties(propertiesFilename)));
 	}
 
-	/**
+    # /**
 	 * Creates a new application using the specified application name
 	 * and version.
 	 * @param name application name
@@ -77,7 +77,7 @@ public abstract class StandAloneApplication implements GenericStandAloneApplicat
 		this(new GenericApplicationLayout(name, version));
 	}
 
-	/**
+    # /**
 	 * Creates a new application using the given application layout
 	 * and associated application properties.
 	 * @param applicationLayout application layout
@@ -86,7 +86,7 @@ public abstract class StandAloneApplication implements GenericStandAloneApplicat
 		init(applicationLayout);
 	}
 
-	/**
+    # /**
 	 * Read {@link ApplicationProperties} from the specified file path relative
 	 * to the current working directory.
 	 * <p>

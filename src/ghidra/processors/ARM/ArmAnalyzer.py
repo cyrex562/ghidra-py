@@ -145,7 +145,7 @@ public class ArmAnalyzer extends ConstantPropagationAnalyzer {
 					return false;
 				}
 
-				/**
+			    # /**
 				 * Check if there are any data references to this location.
 				 * @param program
 				 * @param addr
@@ -742,7 +742,7 @@ public class ArmAnalyzer extends ConstantPropagationAnalyzer {
 		}
 	}
 
-	/**
+    # /**
 	 * Disassemble at the specified target address and optionally create a mnemonic flow reference.
 	 * @param monitor
 	 * @param instruction flow from instruction
@@ -828,7 +828,7 @@ public class ArmAnalyzer extends ConstantPropagationAnalyzer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Disassemble at the specified target address and optionally create a mnemonic flow reference.
 	 * @param monitor
 	 * @param instruction flow from instruction

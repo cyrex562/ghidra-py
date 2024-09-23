@@ -502,7 +502,7 @@ public class Pic17c7xxAnalyzer extends AbstractAnalyzer {
 
 	}
 
-	/**
+    # /**
 	 * Attempt to markup FReg access instruction with register reference.
 	 * 
 	 * @param instr

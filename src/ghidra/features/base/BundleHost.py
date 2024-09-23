@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.osgi;
 
-import java.io.*;
+
 import java.nio.file.Path;
 import java.util.*;
 import java.util.Map.Entry;

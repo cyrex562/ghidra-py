@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.projectdata.actions;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,7 +41,7 @@ public class VersionControlUndoHijackAction extends VersionControlAction {
 
 	private static final Icon ICON = new GIcon("icon.version.control.hijack.undo");
 
-	/**
+    # /**
 	 * Creates an action to undo hijacked domain files in the project.
 	 * @param plugin the plug-in that owns this action.
 	 */
@@ -71,7 +71,7 @@ public class VersionControlUndoHijackAction extends VersionControlAction {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the domain files from the provider and then undoes the hijack on any that are hijacked.
 	 */
 	private void undoHijackedFiles(List<DomainFile> domainFiles) {
@@ -88,7 +88,7 @@ public class VersionControlUndoHijackAction extends VersionControlAction {
 		undoHijack(hijackList);
 	}
 
-	/**
+    # /**
 	 * Displays the undo hijack confirmation dialog for each hijacked file and then 
 	 * undoes the hijack while keeping a copy of the hijacked file if the user chooses to do so.
 	 * @param hijackList the list of hijacked domain files.
@@ -112,7 +112,7 @@ public class VersionControlUndoHijackAction extends VersionControlAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Determines a unique keep file name for saving a copy of the hijack file 
 	 * when its hijack is undone.
 	 * @param parent the domain folder where the hijacked file exists.
@@ -132,7 +132,7 @@ public class VersionControlUndoHijackAction extends VersionControlAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Task for undoing hijacks of files that are in version control.
 	 */
 	private class UndoHijackTask extends Task {
@@ -140,7 +140,7 @@ public class VersionControlUndoHijackAction extends VersionControlAction {
 		private DomainFile[] hijackFiles;
 		private boolean saveCopy;
 
-		/**
+	    # /**
 		 * Creates a task for undoing hijacks of domain files.
 		 * @param hijackFiles the list of hijacked files
 		 * @param saveCopy true indicates that copies of the modified files should be made 

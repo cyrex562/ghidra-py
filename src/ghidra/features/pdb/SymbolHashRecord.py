@@ -27,7 +27,7 @@ public class SymbolHashRecord implements Comparable<SymbolHashRecord> {
 
 	public static int RECORD_SIZE = 8;
 
-	/**
+    # /**
 	 * Parses the contents of of this record.
 	 * @param reader {@link PdbByteReader} from which to deserialize the data.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -38,7 +38,7 @@ public class SymbolHashRecord implements Comparable<SymbolHashRecord> {
 		referenceCount = reader.parseInt();
 	}
 
-	/**
+    # /**
 	 * Returns the offset component of the MSFT symbol hash record.
 	 * @return offset component of the hash record.
 	 */
@@ -46,7 +46,7 @@ public class SymbolHashRecord implements Comparable<SymbolHashRecord> {
 		return offsetVal;
 	}
 
-	/**
+    # /**
 	 * Returns the reference count component of the MSFT symbol hash record.
 	 * @return reference count component of the hash record.
 	 */

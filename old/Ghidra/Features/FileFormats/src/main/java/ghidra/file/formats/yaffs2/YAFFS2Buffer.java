@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.yaffs2;
 
-import java.io.*;
+
 
 // a method to return a single YAFFS2 record
 public class YAFFS2Buffer {

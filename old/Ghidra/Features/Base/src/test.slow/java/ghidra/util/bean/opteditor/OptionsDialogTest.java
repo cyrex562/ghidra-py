@@ -21,7 +21,7 @@ import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.beans.PropertyEditor;
-import java.io.*;
+
 import java.util.*;
 import java.util.List;
 import java.util.regex.Matcher;

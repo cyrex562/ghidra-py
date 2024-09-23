@@ -32,7 +32,7 @@ public class UnknownX1168MsSymbol extends AbstractUnknownMsSymbol {
 	private int count;
 	private List<RecordNumber> typeRecordNumbers = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -55,7 +55,7 @@ public class UnknownX1168MsSymbol extends AbstractUnknownMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns {@link List}&lt;{@link RecordNumber}&gt; of what appears to be type indices.
 	 * @return Possible type record numbers.
 	 */

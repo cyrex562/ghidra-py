@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import java.util.ArrayList;
@@ -26,19 +26,19 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * <CODE>IsolatedEntryCodeSubModel</CODE> (S-model) defines subroutines with a
- * unique entry point, which may share code with other subroutines. Each entry-
- * point may either be a source or called entry-point and is identified using
- * the MultEntSubModel. This model extends the OverlapCodeSubModel, redefining
- * the set of addresses contained within each subroutine. Unlike the
- * OverlapCodeSubModel, the address set of a IsolatedEntryCodeSubModel
- * subroutine is permitted to span entry-points of other subroutines based upon
- * the possible flows from its entry- point.
- *
- * @see ghidra.program.model.block.CodeBlockModel
- * @see ghidra.program.model.block.OverlapCodeSubModel
- * @see ghidra.program.model.block.MultEntSubModel
- */
+# * <CODE>IsolatedEntryCodeSubModel</CODE> (S-model) defines subroutines with a
+# * unique entry point, which may share code with other subroutines. Each entry-
+# * point may either be a source or called entry-point and is identified using
+# * the MultEntSubModel. This model extends the OverlapCodeSubModel, redefining
+# * the set of addresses contained within each subroutine. Unlike the
+# * OverlapCodeSubModel, the address set of a IsolatedEntryCodeSubModel
+# * subroutine is permitted to span entry-points of other subroutines based upon
+# * the possible flows from its entry- point.
+# *
+# * @see ghidra.program.model.block.CodeBlockModel
+# * @see ghidra.program.model.block.OverlapCodeSubModel
+# * @see ghidra.program.model.block.MultEntSubModel
+# */
 public class IsolatedEntrySubModel extends OverlapCodeSubModel {
 
 	public static final String ISOLATED_MODEL_NAME = "Isolated Entry";
@@ -62,7 +62,7 @@ public class IsolatedEntrySubModel extends OverlapCodeSubModel {
         super(program, includeExternals);
     }
 
-	/**
+    # /**
      * Get the subroutine code block which starts at the specified address which
      * is an entry point of a Model-M subroutine.
      * 
@@ -139,7 +139,7 @@ public class IsolatedEntrySubModel extends OverlapCodeSubModel {
     	return createSub(addrSet, mStartAddr);
     }
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getName()
 	 */
 	@Override

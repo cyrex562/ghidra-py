@@ -49,7 +49,7 @@ public class TokenHighlights implements Iterable<HighlightToken> {
 		return new TokenKey(t);
 	}
 
-	/**
+    # /**
 	 * Returns true if there are not highlights
 	 * @return true if there are not highlights
 	 */
@@ -57,7 +57,7 @@ public class TokenHighlights implements Iterable<HighlightToken> {
 		return size() == 0;
 	}
 
-	/**
+    # /**
 	 * Returns the number of highlights
 	 * @return the number of highlights
 	 */
@@ -65,7 +65,7 @@ public class TokenHighlights implements Iterable<HighlightToken> {
 		return highlightsByToken.size();
 	}
 
-	/**
+    # /**
 	 * Adds the given highlight to this container
 	 * @param t the highlight
 	 */
@@ -73,7 +73,7 @@ public class TokenHighlights implements Iterable<HighlightToken> {
 		highlightsByToken.put(getKey(t), t);
 	}
 
-	/**
+    # /**
 	 * Gets the current highlight for the given token
 	 * @param t the token
 	 * @return the highlight
@@ -82,7 +82,7 @@ public class TokenHighlights implements Iterable<HighlightToken> {
 		return highlightsByToken.get(getKey(t));
 	}
 
-	/**
+    # /**
 	 * Returns true if this class has a highlight for the given token
 	 * @param t the token
 	 * @return true if this class has a highlight for the given token
@@ -91,14 +91,14 @@ public class TokenHighlights implements Iterable<HighlightToken> {
 		return highlightsByToken.containsKey(getKey(t));
 	}
 
-	/**
+    # /**
 	 * Removes all highlights from this container
 	 */
 	public void clear() {
 		highlightsByToken.clear();
 	}
 
-	/**
+    # /**
 	 * Removes the highlight for the given token
 	 * @param t the token
 	 */

@@ -21,26 +21,26 @@ import ghidra.framework.data.DomainObjectAdapterDB;
  * An interface for listening to transactions
  */
 public interface TransactionListener {
-	/**
+    # /**
 	 * Invoked when a transaction is started.
 	 * @param domainObj the domain object where the transaction was started
 	 * @param tx the transaction that was started
 	 */
 	void transactionStarted(DomainObjectAdapterDB domainObj, TransactionInfo tx);
 
-	/**
+    # /**
 	 * Invoked when a transaction is ended.
 	 * @param domainObj the domain object where the transaction was ended
 	 */
 	void transactionEnded(DomainObjectAdapterDB domainObj);
 
-	/**
+    # /**
 	 * Invoked when the stack of available undo/redo's has changed.
 	 * @param domainObj the affected domain object
 	 */
 	void undoStackChanged(DomainObjectAdapterDB domainObj);
 
-	/**
+    # /**
 	 * Notification that undo or redo has occurred.
 	 * @param domainObj the affected domain object
 	 */

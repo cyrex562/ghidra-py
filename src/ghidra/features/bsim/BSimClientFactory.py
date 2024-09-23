@@ -25,7 +25,7 @@ import ghidra.framework.protocol.ghidra.GhidraURL;
 
 public class BSimClientFactory {
 
-	/**
+    # /**
 	 * Build a root URL for connecting to a BSim database.
 	 *   1) A valid protocol must be provided.
 	 *   2) There must be a path of exactly 1 element, which names the specific repository
@@ -41,7 +41,7 @@ public class BSimClientFactory {
 		return url;
 	}
 
-	/**
+    # /**
 	 * Validate BSim DB URL.
 	 * Acceptable protocols are  postgresql://  https://,  (or possibly http://) file:/
 	 * @param url BSim DB URL
@@ -62,7 +62,7 @@ public class BSimClientFactory {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct the root URL to a specific BSim repository given a "related" URL.
 	 * The root URL will have an explicit protocol, a hostname + other mods (the authority), and 1 level of path
 	 *    this first level path indicates the particular repository being referenced on the host.
@@ -117,7 +117,7 @@ public class BSimClientFactory {
 		return buildURL(repositoryURL);
 	}
 
-	/**
+    # /**
 	 * Given the URL for a BSim server construct the appropriate BSim client object 
 	 * (implementing FunctionDatabase).  Returned instance must be 
 	 * {@link FunctionDatabase#close() closed} when done using it to prevent depletion
@@ -135,7 +135,7 @@ public class BSimClientFactory {
 		}
 	}
 
-	/**
+    # /**
 	 * Given the URL for a BSim server construct the appropriate BSim client object 
 	 * (implementing FunctionDatabase).  Returned instance must be 
 	 * {@link FunctionDatabase#close() closed} when done using it to prevent depletion

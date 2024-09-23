@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang.protorules;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.pcode.Encoder;
@@ -26,9 +26,9 @@ import ghidra.program.model.pcode.PcodeDataTypeManager;
 import ghidra.xml.*;
 
 # /**
- * Filter on a homogeneous aggregate data-type
- * All primitive data-types must be the same.
- */
+# * Filter on a homogeneous aggregate data-type
+# * All primitive data-types must be the same.
+# */
 public class HomogeneousAggregate extends SizeRestrictedFilter {
 
 	public static final String NAME_FLOAT4 = "homogeneous-float-aggregate";
@@ -37,7 +37,7 @@ public class HomogeneousAggregate extends SizeRestrictedFilter {
 	private int metaType;		// The expected meta-type
 	private int maxPrimitives;	// Maximum number of primitives in the aggregate
 
-	/**
+    # /**
 	 * Constructor for use with decode()
 	 * @param nm is the name attribute associated with the tag
 	 * @param meta is the expected element meta-type

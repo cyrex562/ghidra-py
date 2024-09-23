@@ -38,7 +38,7 @@ abstract public class AbstractStoredProgramContext extends AbstractProgramContex
 		defaultRegisterValueMap = new HashMap<>();
 	}
 
-	/**
+    # /**
 	 * Flush any cached context not yet written to database
 	 */
 	public void flushProcessorContextWriteCache() {
@@ -48,7 +48,7 @@ abstract public class AbstractStoredProgramContext extends AbstractProgramContex
 		}
 	}
 
-	/**
+    # /**
 	 * Flush any cached context not yet written to database
 	 */
 	public void invalidateProcessorContextWriteCache() {
@@ -133,7 +133,7 @@ abstract public class AbstractStoredProgramContext extends AbstractProgramContex
 	private RegisterValue getRegisterValue(Register register, Address address,
 			Map<Register, RegisterValueStore> map) {
 
-		/** if the address is in an overlay and we are getting the default value, then get the default
+	    # /** if the address is in an overlay and we are getting the default value, then get the default
 		 * value from the base space, not the overlay space.
 		 */
 		if (map == defaultRegisterValueMap && address.getAddressSpace().isOverlaySpace()) {

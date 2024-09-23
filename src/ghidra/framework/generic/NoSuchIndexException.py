@@ -23,7 +23,7 @@ import ghidra.util.exception.UsrException;
  */
 public class NoSuchIndexException extends UsrException {
 	
-	/** Static constructor for this exception with a generic message. 
+    # /** Static constructor for this exception with a generic message. 
 	 * Use this for efficiency when the actual stack information isn't needed. 
 	 */
     public static final NoSuchIndexException noSuchIndexException = new NoSuchIndexException();

@@ -31,7 +31,7 @@ import ghidra.util.exception.CancelledException;
 public class ArrayTypeApplier extends MsDataTypeApplier {
 
 	// Intended for: AbstractArrayMsType
-	/**
+    # /**
 	 * Constructor for the applicator that applies a "array" type, transforming it into a
 	 * Ghidra DataType
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working

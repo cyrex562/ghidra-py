@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import java.math.BigInteger;
@@ -23,13 +23,13 @@ import ghidra.program.model.listing.ContextChangeException;
 import ghidra.program.model.listing.ProgramContext;
 
 # /**
- * Implementation for the program processor context interface
- */
+# * Implementation for the program processor context interface
+# */
 public class ProgramProcessorContext implements ProcessorContext {
 	private Address addr;
 	private ProgramContext context;
 
-	/**
+    # /**
 	 * Constructs a new ProgramProcessorContext that will have the processor
 	 * state be the state of the given programContext at the given address
 	 * @param context the programContext which contains the register state at every address
@@ -80,7 +80,7 @@ public class ProgramProcessorContext implements ProcessorContext {
 		context.remove(addr, addr, register);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.lang.ProcessorContext#hasValue(ghidra.program.model.lang.Register)
 	 */
 	@Override

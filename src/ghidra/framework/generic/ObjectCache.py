@@ -35,7 +35,7 @@ public class ObjectCache {
 	private LinkedList<Object> hardCache;
 	private int hardCacheSize;
 
-	/**
+    # /**
 	 * Construct a keyed-object cache of size hardCacheSize.
 	 * @param hardCacheSize hard cache size.
 	 */
@@ -46,7 +46,7 @@ public class ObjectCache {
 		hardCache = new LinkedList<>();
 	}
 
-	/**
+    # /**
 	 * Determine if the keyed-object exists in the cache.
 	 * @param key object key
 	 * @return true if object is cached
@@ -56,7 +56,7 @@ public class ObjectCache {
 		return hashTable.containsKey(key);
 	}
 
-	/**
+    # /**
 	 * Get the object from cache which corresponds to the specified key.
 	 * @param key object key
 	 * @return cached object
@@ -74,7 +74,7 @@ public class ObjectCache {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Return the hard cache size
 	 * @return the hard cache size
 	 */
@@ -82,7 +82,7 @@ public class ObjectCache {
 		return hardCacheSize;
 	}
 
-	/**
+    # /**
 	 * Adjust the hard cache size
 	 * @param size new hard cache size
 	 */
@@ -93,7 +93,7 @@ public class ObjectCache {
 		this.hardCacheSize = size;
 	}
 
-	/**
+    # /**
 	 * Add an object to the cache
 	 * @param key object key
 	 * @param obj the object
@@ -105,7 +105,7 @@ public class ObjectCache {
 		addToHardCache(obj);
 	}
 
-	/**
+    # /**
 	 * Remove the specified keyed object from both hard and weak caches.
 	 * An object should be removed from the cache when it becomes invalid.
 	 * @param key object key
@@ -119,7 +119,7 @@ public class ObjectCache {
 		}
 	}
 
-	/**
+    # /**
 	 * Add the specified object to the hard cache.
 	 * @param obj object
 	 */
@@ -130,7 +130,7 @@ public class ObjectCache {
 		}
 	}
 
-	/**
+    # /**
 	 * Cleanup weak cache
 	 */
 	private void processQueue() {
@@ -140,13 +140,13 @@ public class ObjectCache {
 		}
 	}
 
-	/**
+    # /**
 	 * Provides a weak wrapper for a keyed-object
 	 */
 	private static class KeyedSoftReference<T> extends WeakReference<T> {
 		private long key;
 
-		/**
+	    # /**
 		 * Construct a keyed-object reference
 		 * @param key object key
 		 * @param obj object
@@ -157,7 +157,7 @@ public class ObjectCache {
 			this.key = key;
 		}
 
-		/**
+	    # /**
 		 * Return object key
 		 * @return object key
 		 */

@@ -15,7 +15,7 @@
  */
 package ghidra.plugins.importer.tasks;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;

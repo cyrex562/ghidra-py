@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 
 import java.awt.*;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 import java.util.regex.Matcher;

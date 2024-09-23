@@ -15,7 +15,7 @@
  */
 package ghidra.util.xml;
 
-import java.io.*;
+
 
 # /**
  * A class for creating XML files.
@@ -27,7 +27,7 @@ public class XmlWriter {
 	private boolean addedText;
 	private Counter counter;
 
-	/**
+    # /**
 	 * Constructs a new XML writer.
 	 * @param file the name of the output XML file
 	 * @param dtdName the name of the DTD
@@ -37,7 +37,7 @@ public class XmlWriter {
 		this(new FileOutputStream(file), dtdName);
 	}
 
-	/**
+    # /**
 	 * Constructs a new XML writer.
 	 * @param out the output stream 
 	 * @param dtdName the name of the DTD
@@ -51,7 +51,7 @@ public class XmlWriter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the XML summary string.
 	 * @return the XML summary string
 	 */
@@ -59,14 +59,14 @@ public class XmlWriter {
 		return counter;
 	}
 
-	/**
+    # /**
 	 * Closes this XML writer.
 	 */
 	public void close() {
 		writer.close();
 	}
 
-	/**
+    # /**
 	 * Writes the specified DTD into the file.
 	 * @param dtdName the name of the DTD
 	 * @throws IOException  if an i/o error occurs
@@ -81,7 +81,7 @@ public class XmlWriter {
 		reader.close();
 	}
 
-	/**
+    # /**
 	 * Writes the specified start element.
 	 * @param name the name of the start element
 	 */
@@ -89,7 +89,7 @@ public class XmlWriter {
 		startElement(name, null, null);
 	}
 
-	/**
+    # /**
 	 * Writes the specified start element with the attributes.
 	 * @param name the name of the start element
 	 * @param attrs the attributes of the start element
@@ -126,7 +126,7 @@ public class XmlWriter {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes the specified end element.
 	 * @param name the name of the end element
 	 */
@@ -145,7 +145,7 @@ public class XmlWriter {
 		addedText = false;
 	}
 
-	/**
+    # /**
 	 * Writes the specified element with the attributes.
 	 * @param name the name of the start element
 	 * @param attrs the attributes of the start element
@@ -154,7 +154,7 @@ public class XmlWriter {
 		writeElement(name, attrs, null);
 	}
 
-	/**
+    # /**
 	 * Writes the specified element with the attributes and text.
 	 * @param name the name of the element
 	 * @param attrs the attributes of the element

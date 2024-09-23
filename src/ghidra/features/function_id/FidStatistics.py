@@ -15,7 +15,7 @@
  */
 // Calculate false positive/negative statistics given "marked" programs
 //@category FunctionID
-import java.io.*;
+
 import java.util.*;
 
 import ghidra.app.script.GhidraScript;

@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.description;
 
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
@@ -77,7 +77,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		public List<CategoryRecord> catinsert; // Non-null, if there are only insertions
 	}
 
-	/**
+    # /**
 	 * Convert a 32-bit integer to hexadecimal ascii representation
 	 * @param val is the integer to encode
 	 * @param buf accumulates the resulting ascii
@@ -94,7 +94,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate a placeholder md5 string for a library executable based just
 	 * on its name and architecture
 	 * @param enm is the name of the library
@@ -122,7 +122,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Constructor for searching within a DescriptionManager
 	 * @param md5 is hash of executable being searched for
 	 */
@@ -140,7 +140,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		date = EMPTY_DATE;
 	}
 
-	/**
+    # /**
 	 * Construct a normal (non-library) record.  Fill-in all fields except categories.
 	 * Categories are marked as NOT set
 	 * @param md5 is the md5 checksum
@@ -166,7 +166,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		setDate(date);
 	}
 
-	/**
+    # /**
 	 * Construct a normal (non-library) record.  Fill-in all fields.
 	 * @param md5 is the md5 checksum
 	 * @param enm is the executable name
@@ -192,7 +192,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		setCategory(uc);
 	}
 
-	/**
+    # /**
 	 * Constructor for a "library" executable
 	 * @param enm is the name of the library
 	 * @param arc is the architecture for functions in the library
@@ -212,7 +212,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		xrefIndex = 0;
 	}
 
-	/**
+    # /**
 	 * Set the repository and path Strings for an executable, replacing
 	 * any previous setting. Truncate any trailing slash.
 	 * @param repo is (URL) string indicating which repository contains this executable
@@ -256,7 +256,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the ingest date of the executable
 	 * @param dt is the data, which may be null
 	 */
@@ -307,14 +307,14 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		}
 	}
 
-	/**
+    # /**
 	 * @return the list of {@link CategoryRecord}s associated with this executable
 	 */
 	public List<CategoryRecord> getAllCategories() {
 		return usercat;
 	}
 
-	/**
+    # /**
 	 * Return the executable's settings for a specific category type
 	 * @param type is the category type
 	 * @return the list of settings with this type (or null)
@@ -349,7 +349,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Determine if an executable has been set with a specific category value
 	 * @param type is the type of category to check
 	 * @param value is the value to check for
@@ -394,77 +394,77 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return the MD5 hash of the executable
 	 */
 	public String getMd5() {
 		return md5sum;
 	}
 
-	/**
+    # /**
 	 * @return the name of the executable
 	 */
 	public String getNameExec() {
 		return executableName;
 	}
 
-	/**
+    # /**
 	 * @return the architecture associated with the executable
 	 */
 	public String getArchitecture() {
 		return architecture;
 	}
 
-	/**
+    # /**
 	 * @return the name of the compiler that built this executable
 	 */
 	public String getNameCompiler() {
 		return compilerName;
 	}
 
-	/**
+    # /**
 	 * @return the date this executable was ingested into the database
 	 */
 	public Date getDate() {
 		return date;
 	}
 
-	/**
+    # /**
 	 * @return the URL of the repository containing this executable
 	 */
 	public String getRepository() {
 		return repository;
 	}
 
-	/**
+    # /**
 	 * @return the (repository relative) path to the executable
 	 */
 	public String getPath() {
 		return path;
 	}
 
-	/**
+    # /**
 	 * @return true if this executable is a "library" (functions identified only by name)
 	 */
 	public boolean isLibrary() {
 		return ((flags & LIBRARY) != 0);
 	}
 
-	/**
+    # /**
 	 * @return true if this database record has already been stored in the database
 	 */
 	public boolean isAlreadyStored() {
 		return ((flags & ALREADY_STORED) != 0);
 	}
 
-	/**
+    # /**
 	 * @return true if categories have been queried in (does not mean that it has any categories)
 	 */
 	public boolean categoriesAreSet() {
 		return ((flags & CATEGORIES_SET) != 0);
 	}
 
-	/**
+    # /**
 	 * @return the fully formed URL to this executable or null
 	 */
 	public String getURLString() {
@@ -486,7 +486,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Get all the category settings of a specific type in alphabetic order.
 	 * Multiple values are returned in a single String separated by ','
 	 * @param type is the type of category to retrieve
@@ -514,21 +514,21 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * @return the database (row) id of this executable object
 	 */
 	public RowKey getRowId() {
 		return rowid;
 	}
 
-	/**
+    # /**
 	 * @return the internal cross-referencing index for this executable
 	 */
 	public int getXrefIndex() {
 		return xrefIndex;
 	}
 
-	/**
+    # /**
 	 * Serialize this executable (meta-data) to an XML stream
 	 * @param fwrite is the XML stream
 	 * @throws IOException if there are I/O errors writing to the stream
@@ -576,7 +576,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		fwrite.append("</exe>\n");
 	}
 
-	/**
+    # /**
 	 * Identify whether an md5 string is a placeholder hash
 	 * (as generated by {@link ExecutableRecord#calcLibraryMd5Placeholder})
 	 * @param md5 is the md5 string
@@ -589,7 +589,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return md5.startsWith("bbbbbbbbaaaaaaaa");
 	}
 
-	/**
+    # /**
 	 * Build a new {@link ExecutableRecord} by deserializing from an XML stream
 	 * @param parser is the XML parser
 	 * @param man is the DescriptionManager that should hold the new executable
@@ -707,7 +707,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return comp;
 	}
 
-	/**
+    # /**
 	 * Compare just the metadata portion (names and versions) of two ExecutableRecords
 	 * We do NOT compare categories as these may not have been read into the object yet
 	 * @param o is ExecutableRecord to compare with this
@@ -763,7 +763,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Compare the set of categories that -this- and -op2- belong to
 	 * @param op2 is executable to compare with this
 	 * @return true if the categories are exactly the same
@@ -829,7 +829,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 		return insert;
 	}
 
-	/**
+    # /**
 	 * Assuming this is a (possibly) updated variant of another executable metadata record
 	 * Prepare an Update record describing the difference between the two records
 	 * @param res is the Update record to fill in
@@ -889,7 +889,7 @@ public class ExecutableRecord implements Comparable<ExecutableRecord> {
 				|| res.date || res.categories;
 	}
 
-	/**
+    # /**
 	 * Get the formatted raw executable metadata as a string
 	 * @return formatted metadata
 	 */

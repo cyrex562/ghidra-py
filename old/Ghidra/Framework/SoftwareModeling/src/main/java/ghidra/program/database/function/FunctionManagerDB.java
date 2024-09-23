@@ -17,7 +17,7 @@ package ghidra.program.database.function;
 
 import static ghidra.program.util.FunctionChangeRecord.FunctionChangeType.*;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Predicate;
 

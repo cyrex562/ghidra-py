@@ -34,14 +34,14 @@ public class GhidraGraphCollapser extends VisualGraphCollapser<AttributedVertex,
 		super(vv);
 	}
 
-	/**
+    # /**
 	 * Ungroups any GroupVertices that are selected
 	 */
 	public void ungroupSelectedVertices() {
 		expand(vv.getSelectedVertices());
 	}
 
-	/**
+    # /**
 	 * Group the selected vertices into one vertex that represents them all
 	 * 
 	 * @return the new GroupVertex
@@ -60,7 +60,7 @@ public class GhidraGraphCollapser extends VisualGraphCollapser<AttributedVertex,
 		return null;
 	}
 
-	/**
+    # /**
 	 * Converts the given set of vertices to a new set where any vertices that are part of a group
 	 * are replaced with the outermost group containing it.
 	 *  
@@ -76,7 +76,7 @@ public class GhidraGraphCollapser extends VisualGraphCollapser<AttributedVertex,
 		return set;
 	}
 
-	/**
+    # /**
 	 * Return the outermost GroupVertex containing the given vertex or else return the given vertex
 	 * if it is not in a group.	 
 	 *  

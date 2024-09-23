@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import java.util.ArrayList;
@@ -25,43 +25,43 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * This BlockModel implements the simple block model.
- *
- * Each Codeblock is made up of contiguous instructions in address order.
- *
- *  Blocks satisfy the following:<ol>
- *   <li>Any instruction with a label starts a block.</li>
- *   <li>Each instruction that could cause program control flow to change is the
- *       last instruction of a Codeblock.</li>
- *   <li>All other instructions are "NOP" fallthroughs, meaning
- *      after execution the program counter will be at
- *      the instruction immediately following.</li>
- *   <li>Any instruction that is unreachable and has no label is also considered the start
- *       of a block.</li>
- * </ol>
- * So a CodeBlock in this model consists of contiguous code that has zero or
- * more nonflow fallthrough instructions followed by a single flow instruction.
- * Each block may or may not have a label at the first instruction, but may not
- * have a label at any other instruction contained in the block.
- * <p>
- * This model does not implement the pure simple block model
- * because unreachable code is still considered a block.
- * <p>
- * This model handles delay slot instructions with the following 
- * assumptions:
- * <ol>
- * <li>A delayed instruction is always corresponds to a change in
- *     flow and terminates a block.  The delay slot instructions
- *     following this instruction are always included with the
- *     block.  Therefore, delay slot instructions will always fall
- *     at the bottom of a simple block.</li>
- * <li>The delay slot depth of the delayed instruction will always
- *     correspond to the number of delay slot instructions immediately
- *     following the instruction. The model may not behave properly if
- *     the disassembled code violates this assumption.</li>
- * </ol>
- * @see ghidra.program.model.block.CodeBlockModel
- */
+# * This BlockModel implements the simple block model.
+# *
+# * Each Codeblock is made up of contiguous instructions in address order.
+# *
+# *  Blocks satisfy the following:<ol>
+# *   <li>Any instruction with a label starts a block.</li>
+# *   <li>Each instruction that could cause program control flow to change is the
+# *       last instruction of a Codeblock.</li>
+# *   <li>All other instructions are "NOP" fallthroughs, meaning
+# *      after execution the program counter will be at
+# *      the instruction immediately following.</li>
+# *   <li>Any instruction that is unreachable and has no label is also considered the start
+# *       of a block.</li>
+# * </ol>
+# * So a CodeBlock in this model consists of contiguous code that has zero or
+# * more nonflow fallthrough instructions followed by a single flow instruction.
+# * Each block may or may not have a label at the first instruction, but may not
+# * have a label at any other instruction contained in the block.
+# * <p>
+# * This model does not implement the pure simple block model
+# * because unreachable code is still considered a block.
+# * <p>
+# * This model handles delay slot instructions with the following 
+# * assumptions:
+# * <ol>
+# * <li>A delayed instruction is always corresponds to a change in
+# *     flow and terminates a block.  The delay slot instructions
+# *     following this instruction are always included with the
+# *     block.  Therefore, delay slot instructions will always fall
+# *     at the bottom of a simple block.</li>
+# * <li>The delay slot depth of the delayed instruction will always
+# *     correspond to the number of delay slot instructions immediately
+# *     following the instruction. The model may not behave properly if
+# *     the disassembled code violates this assumption.</li>
+# * </ol>
+# * @see ghidra.program.model.block.CodeBlockModel
+# */
 public class SimpleBlockModel implements CodeBlockModel {
 
 	public static final String NAME = "Simple Block";
@@ -75,7 +75,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 
 	protected static final boolean followIndirectFlows = true;
 
-	/**
+    # /**
 	 * Construct a SimpleBlockModel on a program.
 	 * Externals will be excluded.
 	 * @param program program to create blocks from.
@@ -84,7 +84,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		this(program, false);
 	}
 
-	/**
+    # /**
 	 * Construct a SimpleBlockModel on a program.
 	 * @param program program to create blocks from.
 	 * @param includeExternals externals will be included if true
@@ -97,7 +97,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		foundBlockMap = new AddressObjectMap();
 	}
 
-	/**
+    # /**
 	 * Get the code/data block starting at this address.
 	 *
 	 * @param addr
@@ -148,7 +148,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the basic code block starting at the specified instruction.
 	 * @param instr first instruction of basic block
 	 * @param monitor task monitor which allows user to cancel operation.
@@ -233,7 +233,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return createSimpleBlock(entryPts, begin, end);
 	}
 
-	/**
+    # /**
 	 * Examine an instruction for out-bound flows which qualify it
 	 * as an end-of-block. 
 	 * @param instr
@@ -247,7 +247,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return referenceMgr.hasFlowReferencesFrom(instr.getMinAddress());
 	}
 
-	/**
+    # /**
 	 * Create a new block over an address range with a single entry-point. 
 	 * @param start the first address which is also the only entry-point.
 	 * @param end the last address.
@@ -257,7 +257,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return createSimpleBlock(new Address[] { start }, start, end);
 	}
 
-	/**
+    # /**
 	 * Create a new block over an address range with one or more entry-points.
 	 * @param entryPts an array of entry-point addresses for the block.
 	 * @param begin the first address in the range.
@@ -276,7 +276,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return block;
 	}
 
-	/**
+    # /**
 	 * Get all the Code Blocks containing the address.
 	 *
 	 * @param addr   Address to find a containing block.
@@ -297,7 +297,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return arr;
 	}
 
-	/**
+    # /**
 	 * Get the First Code Block that contains the address.
 	 *
 	 * @param addr   Address to find a containing block.
@@ -355,7 +355,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get an iterator over the code blocks in the entire program.
 	 * @param monitor task monitor which allows user to cancel operation.
 	 * @throws CancelledException if the monitor cancels the operation.
@@ -365,7 +365,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return new SimpleBlockIterator(this, monitor);
 	}
 
-	/**
+    # /**
 	 * Get an iterator over CodeBlocks which overlap the specified address set.
 	 *
 	 * @param addrSet   an address set within program
@@ -378,7 +378,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return new SimpleBlockIterator(this, addrSet, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getProgram()
 	 */
 	@Override
@@ -386,7 +386,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return program;
 	}
 
-	/**
+    # /**
 	 * Returns the program listing associated with this model.
 	 * @return the program listing associated with this model
 	 */
@@ -394,7 +394,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return listing;
 	}
 
-	/**
+    # /**
 	 *  Return the addresses contained
 	 *  in all instructions that are part of this block
 	 *
@@ -408,7 +408,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 //        return new AddressSet((AddressSetView) block);
 //    }
 
-	/**
+    # /**
 	 * Check if the instruction at the address is
 	 * the start of a basic block.
 	 *
@@ -437,7 +437,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return (data != null);
 	}
 
-	/**
+    # /**
 	 * Check if the instruction starts a Simple block.
 	 *
 	 * @param instruction instruction to test if it starts a block
@@ -500,7 +500,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return !previous.hasFallthrough() || hasEndOfBlockFlow(previous);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getName(ghidra.program.model.block.CodeBlock)
 	 */
 	@Override
@@ -525,7 +525,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return start.toString();
 	}
 
-	/**
+    # /**
 	 * Return in general how things flow out of this node.
 	 * If there are any abnormal ways to flow out of this node,
 	 * (ie: jump, call, etc...) then the flow type of the node
@@ -618,7 +618,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return RefType.INVALID;
 	}
 
-	/**
+    # /**
 	 * Get an iterator over source blocks flowing into this block.
 	 * @param block code block to get the source iterator for.
 	 * @param monitor task monitor which allows user to cancel operation.
@@ -645,7 +645,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return new SimpleSourceReferenceIterator(block, followIndirectFlows, monitor);
 	}
 
-	/**
+    # /**
 	 * Get number of source blocks flowing into this block
 	 *
 	 * @param block code block to get the source iterator for.
@@ -673,7 +673,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return SimpleSourceReferenceIterator.getNumSources(block, followIndirectFlows, monitor);
 	}
 
-	/**
+    # /**
 	 * Get an iterator over destination blocks flowing from this block.
 	 *
 	 * @param block code block to get the destination block iterator for.
@@ -711,7 +711,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return new SimpleDestReferenceIterator(block, followIndirectFlows, monitor);
 	}
 
-	/**
+    # /**
 	 * Get number of destination blocks flowing out of this block
 	 *
 	 * @param block code block to get the destination block iterator for.
@@ -734,7 +734,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return SimpleDestReferenceIterator.getNumDestinations(block, followIndirectFlows, monitor);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getBasicBlockModel()
 	 */
 	@Override
@@ -742,7 +742,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return this;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#getName()
 	 */
 	@Override
@@ -750,7 +750,7 @@ public class SimpleBlockModel implements CodeBlockModel {
 		return NAME;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.block.CodeBlockModel#allowsBlockOverlap()
 	 */
 	@Override

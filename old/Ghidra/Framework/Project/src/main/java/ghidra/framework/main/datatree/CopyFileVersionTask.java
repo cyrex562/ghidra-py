@@ -25,7 +25,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.Task;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 class CopyFileVersionTask extends Task {
 

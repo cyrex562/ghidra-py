@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -40,7 +40,7 @@ public class ExceptionHandlerJava implements StructConverter {
 		catchType = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The values of the two items start_pc and end_pc indicate the ranges in the
 	 * code array at which the exception handler is active. 
 	 * <p>
@@ -58,7 +58,7 @@ public class ExceptionHandlerJava implements StructConverter {
 		return startPC & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The values of the two items start_pc and end_pc indicate the ranges in the
 	 * code array at which the exception handler is active.
 	 * <p>
@@ -77,7 +77,7 @@ public class ExceptionHandlerJava implements StructConverter {
 		return endPC & 0xffff;
 	}
 
-	/**
+    # /**
 	 * The value of the handler_pc item indicates the start of the exception
 	 * handler. The value of the item must be a valid index into the code array
 	 * and must be the index of the opcode of an instruction.
@@ -87,7 +87,7 @@ public class ExceptionHandlerJava implements StructConverter {
 		return handlerPC & 0xffff;
 	}
 
-	/**
+    # /**
 	 * If the value of the catch_type item is nonzero, it must be a valid index
 	 * into the constant_pool table. The constant_pool entry at that index
 	 * must be a CONSTANT_Class_info (?4.4.1) structure representing a class of

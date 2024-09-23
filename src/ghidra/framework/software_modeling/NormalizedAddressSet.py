@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.map;
 
 import java.util.*;
@@ -22,10 +22,10 @@ import ghidra.util.datastruct.Range;
 import ghidra.util.datastruct.SortedRangeList;
 
 # /**
- * AddressSetView implementation that handles image base changes. NOTE: THIS IMPLEMENTATION
- * ASSUMES THAT ONLY ADDRESS RANGES THAT ARE PART OF THE MEMORY MAP WILL BE ADDED TO THIS
- * ADDRESS SET. IT IS INTENDED FOR USE BY THE CHANGE SET.
- */
+# * AddressSetView implementation that handles image base changes. NOTE: THIS IMPLEMENTATION
+# * ASSUMES THAT ONLY ADDRESS RANGES THAT ARE PART OF THE MEMORY MAP WILL BE ADDED TO THIS
+# * ADDRESS SET. IT IS INTENDED FOR USE BY THE CHANGE SET.
+# */
 
 public class NormalizedAddressSet implements AddressSetView {
 
@@ -47,7 +47,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		}
 	};
 
-	/**
+    # /**
 	 *  Constructs a NormalizedAddressSet
 	 * @param addrMap the address map
 	 */
@@ -55,7 +55,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		this.addrMap = addrMap;
 	}
 
-	/**
+    # /**
 	 * Adds the address to the set.
 	 * @param addr the address to add
 	 */
@@ -63,7 +63,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		addRange(addr, addr);
 	}
 
-	/**
+    # /**
 	 * Adds the addressSet to this set.
 	 * @param set the set of addresses to add/
 	 */
@@ -74,7 +74,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		}
 	}
 
-	/**
+    # /**
 	 * Adds the address range to this set.
 	 * @param range the range to add.
 	 */
@@ -82,7 +82,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		addRange(range.getMinAddress(), range.getMaxAddress());
 	}
 
-	/**
+    # /**
 	 * Adds the address range to this set.
 	 * @param startAddr the first address in the range to add.
 	 * @param endAddr the last address in the range to add.
@@ -104,7 +104,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		}
 	}
 
-	/**
+    # /**
 	 * Removes all addresses from this set.
 	 */
 	public void clear() {
@@ -128,7 +128,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return baseLists.get(key & AddressMapDB.BASE_MASK);
 	}
 
-	/**
+    # /**
 	 * REmoves all the addresses in the given address set from this set.
 	 * @param view the set of addresses to remove.
 	 */
@@ -154,7 +154,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#contains(ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -167,7 +167,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#contains(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -192,7 +192,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#contains(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -207,7 +207,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#isEmpty()
 	 */
 	@Override
@@ -215,7 +215,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return baseLists.size() == 0;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getMinAddress()
 	 */
 	@Override
@@ -230,7 +230,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return addrMap.decodeAddress(min);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getMaxAddress()
 	 */
 	@Override
@@ -245,7 +245,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return addrMap.decodeAddress(max);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getNumAddressRanges()
 	 */
 	@Override
@@ -259,7 +259,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return n;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getAddressRanges()
 	 */
 	@Override
@@ -272,7 +272,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return getAddressRanges();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getAddressRanges(boolean)
 	 */
 	@Override
@@ -280,7 +280,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return new MyAddressRangeIterator(forward);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getNumAddresses()
 	 */
 	@Override
@@ -294,7 +294,7 @@ public class NormalizedAddressSet implements AddressSetView {
 
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getAddresses(boolean)
 	 */
 	@Override
@@ -302,7 +302,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return new MyAddressIterator(forward, null);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#getAddresses(ghidra.program.model.address.Address, boolean)
 	 */
 	@Override
@@ -310,7 +310,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return new MyAddressIterator(forward, start);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#intersects(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -334,7 +334,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return srl.intersects((int) min + Integer.MIN_VALUE, (int) max + Integer.MIN_VALUE);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#intersects(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -350,7 +350,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#intersect(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -358,7 +358,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return new AddressSet(this).intersect(view);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#intersectRange(ghidra.program.model.address.Address, ghidra.program.model.address.Address)
 	 */
 	@Override
@@ -366,7 +366,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return new AddressSet(this).intersectRange(start, end);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#union(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -374,7 +374,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return new AddressSet(this).union(addrSet);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#subtract(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -382,7 +382,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return new AddressSet(this).subtract(addrSet);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#xor(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -390,7 +390,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		return new AddressSet(this).xor(addrSet);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.address.AddressSetView#hasSameAddresses(ghidra.program.model.address.AddressSetView)
 	 */
 	@Override
@@ -437,7 +437,7 @@ public class NormalizedAddressSet implements AddressSetView {
 			}
 		}
 
-		/**
+	    # /**
 		 * @see java.util.Iterator#remove()
 		 */
 		@Override
@@ -445,7 +445,7 @@ public class NormalizedAddressSet implements AddressSetView {
 			throw new UnsupportedOperationException();
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.program.model.address.AddressIterator#next()
 		 */
 		@Override
@@ -463,7 +463,7 @@ public class NormalizedAddressSet implements AddressSetView {
 			return null;
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.program.model.address.AddressIterator#hasNext()
 		 */
 		@Override
@@ -522,7 +522,7 @@ public class NormalizedAddressSet implements AddressSetView {
 			throw new UnsupportedOperationException();
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.program.model.address.AddressRangeIterator#next()
 		 */
 		@Override
@@ -538,7 +538,7 @@ public class NormalizedAddressSet implements AddressSetView {
 			return null;
 		}
 
-		/**
+	    # /**
 		 * @see ghidra.program.model.address.AddressRangeIterator#hasNext()
 		 */
 		@Override
@@ -562,7 +562,7 @@ public class NormalizedAddressSet implements AddressSetView {
 		}
 	}
 
-	/**
+    # /**
 	 *
 	 * @see java.lang.Object#toString()
 	 */

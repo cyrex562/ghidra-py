@@ -33,15 +33,15 @@ public class KeyedObjectFactory {
 		//now is just a counter
 	}
 
-	/** The singleton instance of KeyedObjectFactory. */
+    # /** The singleton instance of KeyedObjectFactory. */
 	static public KeyedObjectFactory instance_ = new KeyedObjectFactory();
 
-	/** Returns singleton instance of KeyedObjectFactory. */
+    # /** Returns singleton instance of KeyedObjectFactory. */
 	static public KeyedObjectFactory getInstance() {
 		return instance_;
 	}
 
-	/** Gets returns the next available key. The keys are given out based on a
+    # /** Gets returns the next available key. The keys are given out based on a
 	 *  one up counter. */
 	synchronized long getNextAvailableKey() {
 		return keyCounter++;

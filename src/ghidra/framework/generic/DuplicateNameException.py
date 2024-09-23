@@ -20,14 +20,14 @@ package ghidra.util.exception;
  */
 public class DuplicateNameException extends UsrException {
 
-	/**
+    # /**
 	 * constructs a new DuplicatenameException with a default message.
 	 */
 	public DuplicateNameException() {
 		super("That name is already in use.");
 	}
 
-	/**
+    # /**
 	 * construct a new DuplicateNameException with a given message.
 	 *
 	 * @param usrMessage overrides the default message.

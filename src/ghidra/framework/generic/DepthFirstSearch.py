@@ -36,7 +36,7 @@ public class DepthFirstSearch {
 	private List<Edge> treeEdges;
 	//private List  forwardAndCrossEdges;
 
-	/** 
+    # /** 
 	 * Upon creation a depth first search of the given graph is performed.
 	 * 
 	 * @param graph The graph to search
@@ -288,7 +288,7 @@ public class DepthFirstSearch {
 		}
 	}
 
-	/** 
+    # /** 
 	 * Return true if the vertex has not yet been discovered in the depth first
 	 * search.
 	 */
@@ -296,7 +296,7 @@ public class DepthFirstSearch {
 		return unseen.contains(v);
 	}
 
-	/** 
+    # /** 
 	 * Return true if the vertex has completed its role in the depth first
 	 * search.
 	 */
@@ -304,21 +304,21 @@ public class DepthFirstSearch {
 		return finished.contains(v);
 	}
 
-	/** 
+    # /** 
 	 * Return the back edges found in this depth first search. 
 	 */
 	public Edge[] backEdges() {
 		return backEdges.toArray(new Edge[backEdges.size()]);
 	}
 
-	/** 
+    # /** 
 	 * Return the tree edges in this depth first search. 
 	 */
 	public Edge[] treeEdges() {
 		return treeEdges.toArray(new Edge[treeEdges.size()]);
 	}
 
-	/** 
+    # /** 
 	 * Return true iff no back edges were found. 
 	 * 
 	 * Note that if the graph
@@ -329,7 +329,7 @@ public class DepthFirstSearch {
 		return backEdges.isEmpty();
 	}
 
-	/** 
+    # /** 
 	 * Return true iff the every edge is a tree edge. Will always be false
 	 * if the entire graph is not explored.
 	 */
@@ -337,7 +337,7 @@ public class DepthFirstSearch {
 		return (treeEdges.size() == graph.numEdges());
 	}
 
-	/** Returns a topological sort of the directed graph. 
+    # /** Returns a topological sort of the directed graph. 
 	 * Return the vertices in the explored 
 	 * portion of the graph with the following
 	 * property:
@@ -352,14 +352,14 @@ public class DepthFirstSearch {
 		return finishListInReverseOrder.toArray(new Vertex[finishListInReverseOrder.size()]);
 	}
 
-	/** 
+    # /** 
 	 * Return the seeds used in the depth first search. 
 	 **/
 	List<Vertex> seedsUsed() {
 		return seedsUsed;
 	}
 
-	/** 
+    # /** 
 	 * Returns a spanning tree (in the form of a DirectedGraph). 
 	 * No claims that the spanning tree returned has any special 
 	 * properties.

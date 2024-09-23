@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art.headers;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.android.art.ArtHeader;
@@ -70,28 +70,28 @@ public class ArtHeader_005 extends ArtHeader {
 		return image_size_;
 	}
 
-	/**
+    # /**
 	 * Image bitmap offset in the file.
 	 */
 	public int getImageBitmapOffset() {
 		return image_bitmap_offset_;
 	}
 
-	/**
+    # /**
 	 * Size of the image bitmap.
 	 */
 	public int getImageBitmapSize() {
 		return image_bitmap_size_;
 	}
 
-	/**
+    # /**
 	 * Checksum of the oat file we link to for load time sanity check.
 	 */
 	public int getOatChecksum() {
 		return oat_checksum_;
 	}
 
-	/**
+    # /**
 	 * Start address for oat file. Will be before oat_data_begin_ for .so files.
 	 */
 	@Override
@@ -99,7 +99,7 @@ public class ArtHeader_005 extends ArtHeader {
 		return oat_file_begin_;
 	}
 
-	/**
+    # /**
 	 * Required oat address expected by image Method::GetCode() pointers.
 	 */
 	@Override
@@ -107,7 +107,7 @@ public class ArtHeader_005 extends ArtHeader {
 		return oat_data_begin_;
 	}
 
-	/**
+    # /**
 	 * End of oat data address range for this image file.
 	 */
 	@Override
@@ -115,7 +115,7 @@ public class ArtHeader_005 extends ArtHeader {
 		return oat_data_end_;
 	}
 
-	/**
+    # /**
 	 * End of oat file address range. will be after oat_data_end_ for 
 	 * .so files. Used for positioning a following alloc spaces.
 	 */
@@ -124,7 +124,7 @@ public class ArtHeader_005 extends ArtHeader {
 		return oat_file_end_;
 	}
 
-	/**
+    # /**
 	 * Absolute address of an Object[] of objects needed to reinitialize from an image.
 	 */
 	public int getImageRoots() {

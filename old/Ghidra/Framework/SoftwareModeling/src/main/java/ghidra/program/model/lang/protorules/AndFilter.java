@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.lang.protorules;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.program.model.lang.PrototypePieces;

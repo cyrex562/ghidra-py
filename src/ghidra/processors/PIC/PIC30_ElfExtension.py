@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf.extend;
 
-import java.io.*;
+
 
 import ghidra.app.util.bin.format.MemoryLoadable;
 import ghidra.app.util.bin.format.elf.*;
@@ -56,7 +56,7 @@ public class PIC30_ElfExtension extends ElfExtension {
 	public static final int SHF_ABSOLUTE = (1 << 30); /* Absolute address */
 	public static final int SHF_REVERSE = (1 << 31); /* Reverse aligned */
 
-	/**
+    # /**
 		NOTES:
 		
 			EDS/PSV Sections - section data resides with ROM space but is accessable via the

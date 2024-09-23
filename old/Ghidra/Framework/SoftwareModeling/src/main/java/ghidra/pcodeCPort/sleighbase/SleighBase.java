@@ -17,7 +17,7 @@ package ghidra.pcodeCPort.sleighbase;
 
 import static ghidra.pcode.utils.SlaFormat.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import generic.stl.*;

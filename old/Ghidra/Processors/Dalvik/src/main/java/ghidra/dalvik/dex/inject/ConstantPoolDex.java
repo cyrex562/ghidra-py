@@ -15,7 +15,7 @@
  */
 package ghidra.dalvik.dex.inject;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import ghidra.file.formats.android.dex.analyzer.DexAnalysisState;

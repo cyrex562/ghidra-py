@@ -32,7 +32,7 @@ public class GScheduledTask implements Comparable<GScheduledTask> {
 	private GTaskGroup group;
 	private GTaskMonitor monitor;
 
-	/**
+    # /**
 	 * Create a new GScheduledTask when a task is scheduled with the GTaskManager.
 	 * @param group the group that this task belongs to.
 	 * @param task the task being scheduled.
@@ -47,7 +47,7 @@ public class GScheduledTask implements Comparable<GScheduledTask> {
 		this.monitor = new GTaskMonitor();
 	}
 
-	/**
+    # /**
 	 * Returns the GTask that is scheduled.
 	 * @return the GTask that is scheduled.
 	 */
@@ -55,7 +55,7 @@ public class GScheduledTask implements Comparable<GScheduledTask> {
 		return task;
 	}
 
-	/**
+    # /**
 	 * Returns the priority at which the task was scheduled. Lower numbers have higher priority.
 	 * @return the priority at which the task was scheduled.
 	 */
@@ -63,7 +63,7 @@ public class GScheduledTask implements Comparable<GScheduledTask> {
 		return priority;
 	}
 
-	/**
+    # /**
 	 * Returns the GTaskMonitor that will be used for this task.
 	 * @return the GTaskMonitor that will be used for this task.
 	 */
@@ -97,7 +97,7 @@ public class GScheduledTask implements Comparable<GScheduledTask> {
 		return task.getName() + " : " + priority;
 	}
 
-	/**
+    # /**
 	 * Return GTaskGroup for this task.
 	 * @return the GTaskGroup 
 	 */
@@ -105,7 +105,7 @@ public class GScheduledTask implements Comparable<GScheduledTask> {
 		return group;
 	}
 
-	/**
+    # /**
 	 * Returns the description for the scheduled GTask.
 	 * @return the description for the scheduled GTask.
 	 */

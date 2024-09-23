@@ -30,7 +30,7 @@ public class EndSymbolApplier extends MsSymbolApplier
 
 	private EndMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier

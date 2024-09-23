@@ -15,7 +15,7 @@
  */
 package ghidra.jython;
 
-import java.io.*;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import ghidra.util.Msg;

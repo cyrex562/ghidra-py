@@ -15,7 +15,7 @@
  */
 package ghidra.framework.store;
 
-import java.io.IOException;
+
 
 /**
  * <code>Version</code> provides immutable information about a specific version of an item.

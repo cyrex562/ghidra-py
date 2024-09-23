@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.program.model.address.Address;
@@ -20,9 +20,9 @@ import ghidra.program.model.mem.MemBuffer;
 import ghidra.util.datastruct.SoftCacheMap;
 
 # /**
- * Interface for dataTypes that don't get applied, but instead generate dataTypes
- * on the fly based on the data.
- */
+# * Interface for dataTypes that don't get applied, but instead generate dataTypes
+# * on the fly based on the data.
+# */
 public abstract class DynamicDataType extends BuiltIn implements Dynamic {
 	private SoftCacheMap<Address, DataTypeComponent[]> map;
 
@@ -48,7 +48,7 @@ public abstract class DynamicDataType extends BuiltIn implements Dynamic {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Gets the number of component data types in this data type.
 	 * @param buf a memory buffer to be used by dataTypes that change depending on
 	 * their data context. 
@@ -79,7 +79,7 @@ public abstract class DynamicDataType extends BuiltIn implements Dynamic {
 		return comps;
 	}
 
-	/**
+    # /**
 	 * Returns the immediate n'th component of this data type.
 	 * @param ordinal the components ordinal (zero based).
 	 * @param buf a memory buffer to be used by dataTypes that change depending on
@@ -96,7 +96,7 @@ public abstract class DynamicDataType extends BuiltIn implements Dynamic {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns an array of components that make up this data type.
 	 * Could return null if there are no subcomponents.
 	 * @param buf a memory buffer to be used by dataTypes that change depending on
@@ -107,7 +107,7 @@ public abstract class DynamicDataType extends BuiltIn implements Dynamic {
 		return getComps(buf);
 	}
 
-	/**
+    # /**
 	 * Returns the first component containing the byte at the given offset.
 	 * It is possible with zero-length components (see {@link DataType#isZeroLength()})
 	 * and bitfields (see @DataTypeComponent#isBitFieldComponent()} for multiple components
@@ -136,7 +136,7 @@ public abstract class DynamicDataType extends BuiltIn implements Dynamic {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get all dynamic components associated with the specified MemBuffer
 	 * @param buf memory buffer positioned at start of data type instance
 	 * @return all components or null if memory data is not valid for this

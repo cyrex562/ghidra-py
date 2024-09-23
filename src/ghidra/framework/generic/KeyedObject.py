@@ -20,6 +20,6 @@ package ghidra.util.graph;
 */
 @Deprecated(since = "10.2")
 public interface KeyedObject {
-	/** Returns the key for this KeyedObject. */
+    # /** Returns the key for this KeyedObject. */
 	public long key();
 }

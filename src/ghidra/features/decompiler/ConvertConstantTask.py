@@ -60,7 +60,7 @@ public class ConvertConstantTask implements Callback {
 		convertSigned = isSigned;
 	}
 
-	/**
+    # /**
 	 * Construct a primary Equate task
 	 * @param context is the action context for the task
 	 * @param name is the primary Equate name
@@ -83,7 +83,7 @@ public class ConvertConstantTask implements Callback {
 		convertIndex = index;
 	}
 
-	/**
+    # /**
 	 * Negative equates must be sign extended to 64-bits to be properly stored in the table.
 	 * Compute the proper 64-bit value of a constant given its signedness and the number
 	 * of bytes used to store the constant.
@@ -101,7 +101,7 @@ public class ConvertConstantTask implements Callback {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Establish an alternate Equate to try before falling back on the primary Equate
 	 * @param name is the alternate name of the Equate
 	 * @param addr is the alternate address
@@ -115,28 +115,28 @@ public class ConvertConstantTask implements Callback {
 		altIndex = index;
 	}
 
-	/**
+    # /**
 	 * @return the primary value being equated
 	 */
 	public long getValue() {
 		return equateValue;
 	}
 
-	/**
+    # /**
 	 * @return the size of constant (Varnode) being equated
 	 */
 	public int getSize() {
 		return equateSize;
 	}
 
-	/**
+    # /**
 	 * @return true if the constant value is treated as a signed integer
 	 */
 	public boolean isSigned() {
 		return convertSigned;
 	}
 
-	/**
+    # /**
 	 * Remove any pre-existing equate reference with the same address and hash as the
 	 * primate equate.
 	 */
@@ -159,7 +159,7 @@ public class ConvertConstantTask implements Callback {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove and pre-existing equate reference with the same address and hash as the
 	 * alternate equate.
 	 */
@@ -182,7 +182,7 @@ public class ConvertConstantTask implements Callback {
 		}
 	}
 
-	/**
+    # /**
 	 * Add equate based on the alternate constant information: altAddress, altName, altIndex
 	 * @throws DuplicateNameException if there is already an equate with same name but different value
 	 * @throws InvalidInputException if the equate name is illegal
@@ -210,7 +210,7 @@ public class ConvertConstantTask implements Callback {
 		}
 	}
 
-	/**
+    # /**
 	 * Add equate based on the direct constant information: convertAddress, convertName, convertHash
 	 * @throws DuplicateNameException if there is already an equate with same name but different value
 	 * @throws InvalidInputException if the equate name is illegal
@@ -232,7 +232,7 @@ public class ConvertConstantTask implements Callback {
 		equate.addReference(altAddress, altIndex);
 	}
 
-	/**
+    # /**
 	 * Create a reference to primary equate, removing any previous reference.
 	 * If an alternate equate is given, remove any existing reference to it as well.
 	 */
@@ -259,7 +259,7 @@ public class ConvertConstantTask implements Callback {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a reference to the alternate equate.
 	 */
 	private void applyAlternateEquate() {
@@ -280,7 +280,7 @@ public class ConvertConstantTask implements Callback {
 		}
 	}
 
-	/**
+    # /**
 	 * Look for the EquateSymbol pointing to the altAddress, attached to the constant
 	 * @return true if we find the EquateSymbol, false otherwise
 	 */
@@ -305,7 +305,7 @@ public class ConvertConstantTask implements Callback {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Callback executed after the alternative equate is placed and the DecompilerProvider has updated its window.
 	 * We check to see if the equate reached the desired constant in the decompiler.
 	 * If not, we remove the alternate equate and place a direct equate
@@ -318,7 +318,7 @@ public class ConvertConstantTask implements Callback {
 		applyPrimaryEquate();
 	}
 
-	/**
+    # /**
 	 * Run the convert task.  If the task is given an alternate equate, this is placed, otherwise
 	 * the primary equate is placed.  If an alternate is placed, a thread is scheduled to check if
 	 * the alternate equate reached the constant Varnode.  If not the alternate equate reference is

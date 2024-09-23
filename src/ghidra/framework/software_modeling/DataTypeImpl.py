@@ -75,7 +75,7 @@ public abstract class DataTypeImpl extends AbstractDataType {
 		return EMPTY_DEFINITIONS;
 	}
 
-	/**
+    # /**
 	 * Check if the name is a valid name for a data type
 	 *
 	 * @param checkedName name to check
@@ -93,7 +93,7 @@ public abstract class DataTypeImpl extends AbstractDataType {
 		return getDataTypePath().getPath();
 	}
 
-	/**
+    # /**
 	 * Return the aligned-length for a fixed length datatype.  This is intended to produce a
 	 * result consistent with the C/C++ {@code sizeof(type)} operation.  Use of this method
 	 * with {@link TypeDef} is not allowed.
@@ -177,7 +177,7 @@ public abstract class DataTypeImpl extends AbstractDataType {
 		return parents;
 	}
 
-	/**
+    # /**
 	 * Notify all parents that the size of this datatype has changed or
 	 * other significant change that may affect a parent containing this
 	 * datatype.
@@ -186,14 +186,14 @@ public abstract class DataTypeImpl extends AbstractDataType {
 		notifyParents(dt -> dt.dataTypeSizeChanged(this));
 	}
 
-	/**
+    # /**
 	 * Notify all parents that this datatype's alignment has changed
 	 */
 	protected void notifyAlignmentChanged() {
 		notifyParents(dt -> dt.dataTypeAlignmentChanged(this));
 	}
 
-	/**
+    # /**
 	 * Notify all parents that this datatype's name has changed
 	 *
 	 * @param oldName
@@ -202,14 +202,14 @@ public abstract class DataTypeImpl extends AbstractDataType {
 		notifyParents(dt -> dt.dataTypeNameChanged(this, oldName));
 	}
 
-	/**
+    # /**
 	 * Notify all parents that this datatype has been deleted
 	 */
 	protected void notifyDeleted() {
 		notifyParents(dt -> dt.dataTypeDeleted(this));
 	}
 
-	/**
+    # /**
 	 * Notify any parents that I have been replaced.
 	 * @param replacement replacement data type
 	 */
@@ -271,7 +271,7 @@ public abstract class DataTypeImpl extends AbstractDataType {
 		this.lastChangeTimeInSourceArchive = lastChangeTimeInSourceArchive;
 	}
 
-	/**
+    # /**
 	 * Sets a String briefly describing this DataType.
 	 * <br>If a data type that extends this class wants to allow the description to be changed,
 	 * then it must override this method.

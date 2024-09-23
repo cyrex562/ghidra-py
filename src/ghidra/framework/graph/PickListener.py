@@ -20,10 +20,10 @@ import java.util.Set;
 public interface PickListener<V> {
 
 	public enum EventSource {
-		/** Originated from outside of the graph API (e.g., an external location change) */
+	    # /** Originated from outside of the graph API (e.g., an external location change) */
 		EXTERNAL,
 
-		/** Originated from the graph API (e.g., a user click, a graph grouping) */
+	    # /** Originated from the graph API (e.g., a user click, a graph grouping) */
 		INTERNAL
 	}
 

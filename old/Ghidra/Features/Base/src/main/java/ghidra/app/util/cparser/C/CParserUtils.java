@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.cparser.C;
 
-import java.io.*;
+
 import java.util.Arrays;
 
 import javax.help.UnsupportedOperationException;

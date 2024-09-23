@@ -17,7 +17,7 @@ package ghidra.app.util.opinion;
 
 import java.util.*;
 
-import java.io.IOException;
+
 
 import org.apache.commons.lang3.StringUtils;
 import org.xml.sax.*;

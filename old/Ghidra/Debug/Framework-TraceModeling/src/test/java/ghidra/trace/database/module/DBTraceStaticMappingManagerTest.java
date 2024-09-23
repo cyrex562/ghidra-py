@@ -18,7 +18,7 @@ package ghidra.trace.database.module;
 import static org.junit.Assert.*;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.Collection;
 

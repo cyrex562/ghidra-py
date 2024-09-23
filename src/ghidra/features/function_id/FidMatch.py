@@ -24,13 +24,13 @@ import ghidra.program.model.address.Address;
  *
  */
 public interface FidMatch extends FidMatchScore {
-	/**
+    # /**
 	 * Returns the actual entry point of the matched function (in the searched program, not the FID library).
 	 * @return the entry point of the matched function
 	 */
 	Address getMatchedFunctionEntryPoint();
 
-	/**
+    # /**
 	 * Returns the library record for the potential match.
 	 * @return the library record
 	 */

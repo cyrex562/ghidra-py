@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.art;
 
-import java.io.IOException;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +44,7 @@ public abstract class ArtImageSections {
 		this.header = header;
 	}
 
-	/**
+    # /**
 	 * Returns the section name for the given ordinal.
 	 * For example, if sectionOrdinal is 0 then return "kSectionObjects".
 	 * @param sectionOrdinal the original of the ART section
@@ -291,7 +291,7 @@ public abstract class ArtImageSections {
 		}
 	}
 
-	/**
+    # /**
 	 * Interface Methods Tables
 	 */
 	private void markupImTables(Program program, TaskMonitor monitor) throws Exception {
@@ -325,7 +325,7 @@ public abstract class ArtImageSections {
 		}
 	}
 
-	/**
+    # /**
 	 * IMT Conflict Tables
 	 */
 	private void markupIMTConflictTables(Program program, TaskMonitor monitor) throws Exception {

@@ -15,7 +15,7 @@
  */
 package ghidra.util.extensions;
 
-import java.io.*;
+
 import java.nio.file.Files;
 import java.nio.file.attribute.PosixFilePermission;
 import java.util.*;

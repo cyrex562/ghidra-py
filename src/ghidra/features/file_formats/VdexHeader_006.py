@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.vdex.headers;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.file.formats.android.dex.DexHeaderFactory;

@@ -97,7 +97,7 @@ public class TagFilter extends AncillaryFilter<VTMatch> {
 		updateTags();
 	}
 
-	/**
+    # /**
 	 * This differs from {@link #initializeTags()} in that this method will keep any excluded
 	 * tags when updating.
 	 */

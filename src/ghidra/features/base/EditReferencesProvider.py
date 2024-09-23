@@ -20,7 +20,7 @@ import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.dnd.*;
 import java.awt.event.*;
-import java.io.IOException;
+
 import java.util.ArrayList;
 
 import javax.swing.*;

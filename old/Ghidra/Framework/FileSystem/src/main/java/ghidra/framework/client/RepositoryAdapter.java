@@ -15,7 +15,7 @@
  */
 package ghidra.framework.client;
 
-import java.io.IOException;
+
 import java.io.InterruptedIOException;
 import java.rmi.*;
 

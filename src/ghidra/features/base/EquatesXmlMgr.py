@@ -25,7 +25,7 @@ import ghidra.util.task.*;
 import ghidra.util.xml.*;
 import ghidra.xml.*;
 
-import java.io.*;
+
 import java.util.*;
 
 /**

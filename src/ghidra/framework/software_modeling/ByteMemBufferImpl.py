@@ -32,7 +32,7 @@ public class ByteMemBufferImpl implements MemBuffer {
 	private Address addr;
 	private Memory mem;
 
-	/**
+    # /**
 	 * Construct a ByteMemBufferImpl object
 	 * @param addr the address to associate with the bytes
 	 * @param bytes the data that normally would be coming from memory.
@@ -42,7 +42,7 @@ public class ByteMemBufferImpl implements MemBuffer {
 		this(null, addr, bytes, isBigEndian);
 	}
 
-	/**
+    # /**
 	 * Construct a ByteMemBufferImpl object
 	 * @param memory the memory in case getMemory() is called to get associated things like address spaces
 	 *        
@@ -57,7 +57,7 @@ public class ByteMemBufferImpl implements MemBuffer {
 		this.mem = memory;
 	}
 
-	/**
+    # /**
 	 * Get number of bytes contained within buffer
 	 * @return byte count
 	 */

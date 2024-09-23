@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.IOException;
+
 
 import com.google.gson.*;
 
@@ -40,7 +40,7 @@ public class CartV1Footer {
 	private long readerLength = -1;
 	private BinaryReader internalReader;
 
-	/**
+    # /**
 	 * Constructs a new CartV1Footer read from the byte provider.
 	 *
 	 * @param byteProvider The byte provider from which to read
@@ -53,7 +53,7 @@ public class CartV1Footer {
 		this(new BinaryReader(byteProvider, true));
 	}
 
-	/**
+    # /**
 	 * Constructs a new CartV1Footer, read from the little-endian binary reader.
 	 *
 	 * @param reader The little-endian binary reader from with to read
@@ -113,7 +113,7 @@ public class CartV1Footer {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the magic value read from the footer.
 	 *
 	 * @return The magic value read from the footer.
@@ -123,7 +123,7 @@ public class CartV1Footer {
 		return magic;
 	}
 
-	/**
+    # /**
 	 * Get the position of the optional footer. Should be 0 if no optional footer is
 	 * available.
 	 *
@@ -134,7 +134,7 @@ public class CartV1Footer {
 		return optionalFooterPosition;
 	}
 
-	/**
+    # /**
 	 * Get the length of the optional footer. Should be 0 if no optional footer is
 	 * available.
 	 *
@@ -145,7 +145,7 @@ public class CartV1Footer {
 		return optionalFooterLength;
 	}
 
-	/**
+    # /**
 	 * Get a copy of the optional footer data.
 	 *
 	 * @return A copy of the JsonObject optional footer data or null if unavailable.
@@ -164,7 +164,7 @@ public class CartV1Footer {
 		return optionalFooterDataCopy;
 	}
 
-	/**
+    # /**
 	 * Read and decrypt optional footer data and return a copy.
 	 *
 	 * @param decryptor An initialize decryptor with the correct ARC4 key

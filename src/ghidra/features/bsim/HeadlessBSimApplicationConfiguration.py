@@ -38,7 +38,7 @@ public class HeadlessBSimApplicationConfiguration extends ApplicationConfigurati
 		monitor.setMessage("Done initializing");
 	}
 
-	/**
+    # /**
 	 * Locate certs file within the Ghidra root directory.  If found this will be used
 	 * for initializing the ApplicationTrustManager used for SSL/PKI.
 	 */

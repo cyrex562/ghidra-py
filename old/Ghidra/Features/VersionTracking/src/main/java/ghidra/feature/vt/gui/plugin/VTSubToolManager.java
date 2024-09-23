@@ -16,7 +16,7 @@
 package ghidra.feature.vt.gui.plugin;
 
 import java.awt.Component;
-import java.io.*;
+
 import java.util.*;
 
 import org.jdom.Document;

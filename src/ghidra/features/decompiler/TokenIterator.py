@@ -33,7 +33,7 @@ public class TokenIterator implements Iterator<ClangToken> {
 	private int depth;				// Depth of current token
 	private int direction;		// -1 = iterating backward 1 = iterating forward
 
-	/**
+    # /**
 	 * Expand the arrays holding the node stack so that at least one more ClangNode can be added
 	 */
 	private void expand() {
@@ -46,7 +46,7 @@ public class TokenIterator implements Iterator<ClangToken> {
 		indexStack = newIndexStack;
 	}
 
-	/**
+    # /**
 	 * Add a new ClangTokenGroup to the node stack
 	 * @param group is the new group being pushed
 	 */
@@ -59,7 +59,7 @@ public class TokenIterator implements Iterator<ClangToken> {
 		indexStack[depth] = (direction < 0) ? group.numChildren() - 1 : 0;
 	}
 
-	/**
+    # /**
 	 * Backtrack until:
 	 *   - all indices indicate a proper child for their respective token group
 	 * Then push forward until:
@@ -97,7 +97,7 @@ public class TokenIterator implements Iterator<ClangToken> {
 		normalize();
 	}
 
-	/**
+    # /**
 	 * Update the node stack so that it points to the next ClangToken.  The next token is either
 	 * the predecessor or the successor depending on the direction setting (-1 or 1) respectively.
 	 * currentToken is set to the next token.  If there is no next token, currentToken is set to null.
@@ -119,7 +119,7 @@ public class TokenIterator implements Iterator<ClangToken> {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Initialize an iterator to a point to a specific ClangToken, which may be anywhere in the sequence.
 	 * @param token is the specific ClangToken
 	 * @param forward is true for a forward iterator, false for a backward iterator
@@ -145,7 +145,7 @@ public class TokenIterator implements Iterator<ClangToken> {
 		depth = nodeStack.length - 1;
 	}
 
-	/**
+    # /**
 	 * Create iterator across all tokens under the given ClangTokenGroup.  The iterator will walk the
 	 * entire tree of token groups under the given group.  The iterator will run over tokens in display
 	 * order (forward=true) or in reverse of display order (forward=false)

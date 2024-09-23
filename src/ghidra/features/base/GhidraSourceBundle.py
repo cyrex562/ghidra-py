@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.osgi;
 
 import static java.util.stream.Collectors.*;
 
-import java.io.*;
+
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.nio.charset.Charset;

@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.nio.file.AccessMode;
 
 import org.junit.Test;

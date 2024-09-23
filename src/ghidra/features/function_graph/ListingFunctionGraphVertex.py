@@ -29,7 +29,7 @@ public class ListingFunctionGraphVertex extends AbstractFunctionGraphVertex {
 		super(controller, controller.getProgram(), addressSet, flowType, isEntry);
 	}
 
-	/** Copy constructor */
+    # /** Copy constructor */
 	private ListingFunctionGraphVertex(FGController controller, ListingFunctionGraphVertex vertex) {
 		super(controller, vertex);
 	}

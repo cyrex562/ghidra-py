@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.pagedump;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.StructConverter;
 import ghidra.file.formats.dump.DumpFileReader;
@@ -57,7 +57,7 @@ public class MmPfn implements StructConverter {
 
 	}
 
-	/**
+    # /**
 	 * @see ghidra.app.util.bin.StructConverter#toDataType()
 	 */
 	public DataType toDataType() throws DuplicateNameException {

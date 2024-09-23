@@ -15,7 +15,7 @@
  */
 package ghidra.pty.windows;
 
-import java.io.*;
+
 
 import com.sun.jna.LastErrorException;
 import com.sun.jna.platform.win32.Kernel32;

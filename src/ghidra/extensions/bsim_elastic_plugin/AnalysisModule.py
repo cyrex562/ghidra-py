@@ -16,7 +16,7 @@
  */
 package org.elasticsearch.indices.analysis;
 
-import java.io.IOException;
+
 
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.env.Environment;

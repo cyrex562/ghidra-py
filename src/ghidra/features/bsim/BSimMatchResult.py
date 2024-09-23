@@ -83,7 +83,7 @@ public class BSimMatchResult {
 		this.status = status;
 	}
 
-	/**
+    # /**
 	 * The name of the input function to which this function is similar.
 	 *  
 	 * @return name of the input function to which this function is similar.
@@ -96,7 +96,7 @@ public class BSimMatchResult {
 		return qfunc.getAddress();
 	}
 
-	/**
+    # /**
 	 * The name of the executable containing this function.
 	 * 
 	 * @return the name of the executable containing this function.
@@ -121,7 +121,7 @@ public class BSimMatchResult {
 		return matchexe.getMd5();
 	}
 
-	/**
+    # /**
 	 * The name of this function.
 	 * 
 	 * @return the name of this function.
@@ -134,7 +134,7 @@ public class BSimMatchResult {
 		return matchfunc.getAddress();
 	}
 
-	/**
+    # /**
 	 * The similarity of this function to the input function.   This is a value from 0.0 to 1.0.
 	 * 
 	 * @return the similarity of this function to the input function.
@@ -143,7 +143,7 @@ public class BSimMatchResult {
 		return note.getSimilarity();
 	}
 
-	/**
+    # /**
 	 * The significance of the similarity of this function to the input function.  This is a value
 	 * that starts at 0.0, with no upper bound.  Functions small in size will have a low 
 	 * significance score, as there is a chance that many small functions will have a 

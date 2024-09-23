@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.postgresql;
 
-import java.io.IOException;
+
 import java.net.*;
 
 /**

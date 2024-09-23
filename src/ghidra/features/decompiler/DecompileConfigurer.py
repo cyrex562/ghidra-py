@@ -23,7 +23,7 @@ import ghidra.app.decompiler.DecompInterface;
  */
 public interface DecompileConfigurer {
 
-	/**
+    # /**
 	 * Configure the given decompiler
 	 * 
 	 * @param decompiler the decompiler to configure

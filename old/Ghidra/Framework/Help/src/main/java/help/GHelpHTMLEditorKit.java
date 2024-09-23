@@ -19,7 +19,7 @@ import java.awt.Desktop;
 import java.awt.Image;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.io.*;
+
 import java.net.*;
 import java.util.*;
 import java.util.Map;

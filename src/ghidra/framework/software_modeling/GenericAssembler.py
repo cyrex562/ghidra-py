@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler;
 
 import java.util.Collection;
@@ -26,21 +26,21 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.mem.MemoryAccessException;
 
 public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
-	/**
+    # /**
 	 * Get the language of this assembler
 	 * 
 	 * @return the processor language
 	 */
 	public Language getLanguage();
 
-	/**
+    # /**
 	 * If the assembler is bound to a program, get that program
 	 * 
 	 * @return the program, or null
 	 */
 	public Program getProgram();
 
-	/**
+    # /**
 	 * Assemble a sequence of instructions and place them at the given address.
 	 * 
 	 * <p>
@@ -64,7 +64,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 			throws AssemblySyntaxException,
 			AssemblySemanticException, MemoryAccessException, AddressOverflowException;
 
-	/**
+    # /**
 	 * Assemble a line instruction at the given address.
 	 * 
 	 * <p>
@@ -81,7 +81,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	public byte[] assembleLine(Address at, String line)
 			throws AssemblySyntaxException, AssemblySemanticException;
 
-	/**
+    # /**
 	 * Assemble a line instruction at the given address, assuming the given context.
 	 * 
 	 * <p>
@@ -98,7 +98,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	public byte[] assembleLine(Address at, String line, AssemblyPatternBlock ctx)
 			throws AssemblySemanticException, AssemblySyntaxException;
 
-	/**
+    # /**
 	 * Parse a line instruction.
 	 * 
 	 * <p>
@@ -118,7 +118,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	 */
 	public Collection<AssemblyParseResult> parseLine(String line);
 
-	/**
+    # /**
 	 * Resolve a given parse tree at the given address, assuming the given context
 	 * 
 	 * <p>
@@ -138,7 +138,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	public AssemblyResolutionResults resolveTree(AssemblyParseResult parse, Address at,
 			AssemblyPatternBlock ctx);
 
-	/**
+    # /**
 	 * Resolve a given parse tree at the given address.
 	 * 
 	 * <p>
@@ -156,7 +156,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	 */
 	public AssemblyResolutionResults resolveTree(AssemblyParseResult parse, Address at);
 
-	/**
+    # /**
 	 * Assemble a line instruction at the given address.
 	 * 
 	 * <p>
@@ -171,7 +171,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	public AssemblyResolutionResults resolveLine(Address at, String line)
 			throws AssemblySyntaxException;
 
-	/**
+    # /**
 	 * Assemble a line instruction at the given address, assuming the given context.
 	 * 
 	 * <p>
@@ -188,7 +188,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	public AssemblyResolutionResults resolveLine(Address at, String line, AssemblyPatternBlock ctx)
 			throws AssemblySyntaxException;
 
-	/**
+    # /**
 	 * Place a resolved (and fully-masked) instruction into the bound program.
 	 * 
 	 * <p>
@@ -203,7 +203,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	public Instruction patchProgram(AssemblyResolvedPatterns res, Address at)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Place instruction bytes into the bound program.
 	 * 
 	 * <p>
@@ -218,7 +218,7 @@ public interface GenericAssembler<RP extends AssemblyResolvedPatterns> {
 	public InstructionIterator patchProgram(byte[] insbytes, Address at)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get the context at a given address
 	 * 
 	 * <p>

@@ -18,7 +18,7 @@ package ghidra.trace.database.symbol;
 import static org.junit.Assert.*;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import org.junit.*;

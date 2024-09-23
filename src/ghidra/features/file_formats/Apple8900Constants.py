@@ -19,11 +19,11 @@ import ghidra.util.NumericUtilities;
 
 public final class Apple8900Constants {
 
-	/** Apple 8900 magic value */
+    # /** Apple 8900 magic value */
 	public final static String MAGIC         = "8900";
-	/** Apple 8900 magic value as bytes */
+    # /** Apple 8900 magic value as bytes */
 	public final static byte [] MAGIC_BYTES  =  { '8', '9', '0', '0' };
-	/** Length in bytes of MAGIC string */
+    # /** Length in bytes of MAGIC string */
 	public final static int MAGIC_LENGTH     =  MAGIC_BYTES.length;
 
 	public final static byte FORMAT_ENCRYPTED  =  3; // AES-128-CBC, 0x837 key and all zero IV

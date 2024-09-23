@@ -28,7 +28,7 @@ class WrappedFont implements WrappedOption {
 	private static final String STYLE = "style";
 	private Font font;
 
-	/**
+    # /**
 	 * Constructs a WrappedOption for a font.
 	 * @param font font to wrap
 	 */
@@ -36,7 +36,7 @@ class WrappedFont implements WrappedOption {
 		this.font = font;
 	}
 
-	/** 
+    # /** 
 	 * Default constructor.
 	 * @see java.lang.Object#Object()
 	 */
@@ -49,7 +49,7 @@ class WrappedFont implements WrappedOption {
 		return font;
 	}
 
-	/**
+    # /**
 	 * Reads the saved Font information and reconstructs the font.
 	 */
 	@Override
@@ -60,7 +60,7 @@ class WrappedFont implements WrappedOption {
 		font = new Font(family, style, size);
 	}
 
-	/**
+    # /**
 	 * Saves the Font information so that it can be reconstructed.
 	 */
 	@Override

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.main.projectdata.actions;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.widgets.OptionDialog;
@@ -47,7 +47,7 @@ public abstract class VersionControlAction extends DomainFileProviderContextActi
 		checkRepository();
 	}
 
-	/**
+    # /**
 	 * Returns true if there is at least one of the provided domain files can be 
 	 * or is version controlled.
 	 */
@@ -68,7 +68,7 @@ public abstract class VersionControlAction extends DomainFileProviderContextActi
 		return false;
 	}
 
-	/**
+    # /**
 	 * Determines the project repository for tool associated with this action.
 	 * The repository may be null.
 	 */
@@ -82,7 +82,7 @@ public abstract class VersionControlAction extends DomainFileProviderContextActi
 		}
 	}
 
-	/**
+    # /**
 	 * True if the file system is locked by another thread for a long running operation
 	 * @return true if locked
 	 */
@@ -90,7 +90,7 @@ public abstract class VersionControlAction extends DomainFileProviderContextActi
 		return FileSystemSynchronizer.isSynchronizing();
 	}
 
-	/**
+    # /**
 	 * NOTE: do not call this from a non-Swing thread.
 	 * @return true if the repository is null or is connected.
 	 */
@@ -125,7 +125,7 @@ public abstract class VersionControlAction extends DomainFileProviderContextActi
 		return false;
 	}
 
-	/**
+    # /**
 	 * Checks if anything is preventing a particular domain file from closing.
 	 * @param df the domain file to check
 	 * @return true if the specified domain file can be closed.

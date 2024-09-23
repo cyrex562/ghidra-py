@@ -33,24 +33,24 @@ import ghidra.util.Msg;
  */
 public class GhidraClassLoader extends URLClassLoader {
 
-	/**
+    # /**
 	 * When 'true', this property will trigger the system to put each Extension module's lib jar 
 	 * files into the {@link #CP_EXT} property.
 	 */
 	public static final String ENABLE_RESTRICTED_EXTENSIONS_PROPERTY =
 		"ghidra.extensions.classpath.restricted";
 
-	/**
+    # /**
 	 * The classpath system property: {@code java.class.path}
 	 */
 	public static final String CP = "java.class.path";
 
-	/**
+    # /**
 	 * The extensions classpath system property: {@code java.class.path.ext}
 	 */
 	public static final String CP_EXT = "java.class.path.ext";
 
-	/**
+    # /**
 	 * Gets a {@link List} containing the current classpath referenced by the given property name
 	 * 
 	 * @param propertyName The property name of the classpath to get
@@ -69,12 +69,12 @@ public class GhidraClassLoader extends URLClassLoader {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Used to prevent duplicate URL's from being added to the classpath
 	 */
 	private Set<URL> alreadyAdded = new HashSet<>();
 
-	/**
+    # /**
 	 * This one-argument constructor is required for the JVM to successfully use this class loader
 	 * via the java.system.class.loader system property.
 	 * 
@@ -99,7 +99,7 @@ public class GhidraClassLoader extends URLClassLoader {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts the specified path to a {@link URL} and adds it to the classpath.
 	 *
 	 * @param path The path to be added.
@@ -117,7 +117,7 @@ public class GhidraClassLoader extends URLClassLoader {
 		}
 	}
 
-	/**
+    # /**
 	 * VisualVM calls this to dynamically add things to the classpath.  
 	 * <p>
 	 * NOTE: It is not required to be public.

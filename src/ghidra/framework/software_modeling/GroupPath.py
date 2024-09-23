@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import ghidra.program.model.listing.*;
@@ -20,14 +20,14 @@ import ghidra.program.model.listing.*;
 import java.io.Serializable;
 
 # /**
- * The <CODE>GroupPath</CODE> is a class to represent a unique path in a tree for a Group.
- */
+# * The <CODE>GroupPath</CODE> is a class to represent a unique path in a tree for a Group.
+# */
 public class GroupPath implements Serializable {
     private final static long serialVersionUID = 1;
 
 	private String []groupNames;
 
-	/**
+    # /**
 	 * Construct a new GroupPath that is only a single level.
 	 * @param groupName name of group
 	 */
@@ -48,7 +48,7 @@ public class GroupPath implements Serializable {
 			groupNames.length);
     }
     
-	/**
+    # /**
 	 * Update this group path with the new group name wherever the old group name is found.
 	 * @param oldname old name
 	 * @param newname new name
@@ -92,7 +92,7 @@ public class GroupPath implements Serializable {
 		return true;
     }
     
-	/**
+    # /**
 	 * Get the last name in the path.
 	 * @return String
 	 */
@@ -100,7 +100,7 @@ public class GroupPath implements Serializable {
         return groupNames[groupNames.length-1];
     }
 
-	/**
+    # /**
 	 * Get the Group for this group path object.
 	 * @return null if there is no group with the name in this
 	 * group path.
@@ -117,7 +117,7 @@ public class GroupPath implements Serializable {
 		return listing.getFragment(treeName, groupNames[groupNames.length-1]);
 	}
 
-	/**
+    # /**
 	 * Get the parent path for this group.
 	 */
     public GroupPath getParentPath() {
@@ -129,21 +129,21 @@ public class GroupPath implements Serializable {
 		return new GroupPath(p);
     }
 
-	/**
+    # /**
 	 * Return the array of names that make up this group's path.
 	 */
     public String[] getPath() {
         return groupNames;
     }
 
-	/**
+    # /**
 	 * Get the number of names (levels) that make up this path.
 	 */
 	public int getPathCount() {
         return groupNames.length;
     }
 
-	/**
+    # /**
 	 * Get the name at the given index into this group's path.
 	 * @param index the index in the group path
 	 */
@@ -171,7 +171,7 @@ public class GroupPath implements Serializable {
 		return true;
     }
 
-	/**
+    # /**
 	 * Create a new GroupPath object by adding the given
 	 * child name to this group path.
      * 
@@ -184,7 +184,7 @@ public class GroupPath implements Serializable {
         return new GroupPath(p);
     }
 
-	/**
+    # /**
 	 * Returns a string representation of this group path.
 	 */
     @Override

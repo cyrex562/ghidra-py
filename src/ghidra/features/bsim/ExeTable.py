@@ -91,7 +91,7 @@ public class ExeTable extends SQLComplexTable {
 	private final CachedStatement<PreparedStatement> selectByNameStatement =
 		new CachedStatement<>();
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param archtable the architecture table
@@ -142,7 +142,7 @@ public class ExeTable extends SQLComplexTable {
 		return rowcount;
 	}
 
-	/**
+    # /**
 	 * Pulls information out of the given {@link ExecutableRow} object into the given
 	 * {@link ResultSet}
 	 * 
@@ -162,7 +162,7 @@ public class ExeTable extends SQLComplexTable {
 		res.path_id = pgres.getInt(8);
 	}
 
-	/**
+    # /**
 	 * Creates {@link ExecutableRecord} objects from {@link ResultSet} and stores
 	 * them in the given list.
 	 * 
@@ -202,7 +202,7 @@ public class ExeTable extends SQLComplexTable {
 		return exerows.size();
 	}
 
-	/**
+    # /**
 	 * Make an ExecutableRecord within the DescriptionManager container, given
 	 * database row information
 	 * 
@@ -232,7 +232,7 @@ public class ExeTable extends SQLComplexTable {
 		return exerec;
 	}
 
-	/**
+    # /**
 	 * Query for a unique executable based on -name- and possibly other metadata
 	 * 
 	 * @param manage the container to store the result
@@ -274,7 +274,7 @@ public class ExeTable extends SQLComplexTable {
 		return manage.transferExecutable(res);
 	}
 
-	/**
+    # /**
 	 * Executes a database query to return a list of records matching an executalble name 
 	 * filter.
 	 * 
@@ -300,7 +300,7 @@ public class ExeTable extends SQLComplexTable {
 		return count;
 	}
 
-	/**
+    # /**
 	 * Query for a single executable based on its exetable -id-
 	 * 
 	 * @param id the exetable id
@@ -322,7 +322,7 @@ public class ExeTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Return the executable with matching md5 (if any)
 	 * 
 	 * @param md5 the md5 hash to query
@@ -344,7 +344,7 @@ public class ExeTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a count of all records in the database matching the filter criteria.
 	 * 
 	 * @param filterMd5 md5 must contain this
@@ -441,7 +441,7 @@ public class ExeTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a list of all rows in the exe table matching a given filter.
 	 * 
 	 * @param limit the max number of results to return
@@ -590,7 +590,7 @@ public class ExeTable extends SQLComplexTable {
 		}
 	}
 
-	/**
+    # /**
 	 * Updates records in the database with information in the given {@link ExecutableRecord}.
 	 * 
 	 * @param rec the executable record to update

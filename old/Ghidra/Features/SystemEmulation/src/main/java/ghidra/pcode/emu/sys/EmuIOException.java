@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.emu.sys;
 
-import java.io.IOException;
+
 
 /**
  * The simulated system interrupted with an I/O error

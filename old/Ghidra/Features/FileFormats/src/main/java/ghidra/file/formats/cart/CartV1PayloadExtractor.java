@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.*;
+
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 

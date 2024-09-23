@@ -15,7 +15,7 @@
  */
 package db;
 
-import java.io.IOException;
+
 
 import db.buffers.DataBuffer;
 import ghidra.util.exception.AssertException;

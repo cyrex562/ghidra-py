@@ -16,7 +16,7 @@
 package docking.widgets.tree.support;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Objects;
 

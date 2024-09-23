@@ -33,7 +33,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public abstract class Lcs<T> {
 
-	/**
+    # /**
 	 * Somewhat arbitrary upper-bound restriction.  1M is 1000 * 1000
 	 */
 	private static int DEFAULT_SIZE_LIMIT = 1_000_000;
@@ -41,19 +41,19 @@ public abstract class Lcs<T> {
 
 	private int[][] c;
 
-	/**
+    # /**
 	 * Returns the length of the x sequence
 	 * @return the length of the x sequence
 	 */
 	protected abstract int lengthOfX();
 
-	/**
+    # /**
 	 * Returns the length of the y sequence
 	 * @return the length of the y sequence
 	 */
 	protected abstract int lengthOfY();
 
-	/**
+    # /**
 	 * Gets the value of the x sequence at the given index, where index is 1-based
 	 * 
 	 * @param index the 1-based position of interest in the x sequence
@@ -61,7 +61,7 @@ public abstract class Lcs<T> {
 	 */
 	protected abstract T valueOfX(int index);
 
-	/**
+    # /**
 	 * Gets the value of the y sequence at the given index, where index is 1-based
 	 * 
 	 * @param index the 1-based position of interest in the Y sequence
@@ -69,7 +69,7 @@ public abstract class Lcs<T> {
 	 */
 	protected abstract T valueOfY(int index);
 
-	/**
+    # /**
 	 * Returns true if the value of x and y match
 	 * 
 	 * @param x the x-sequence element of interest
@@ -78,7 +78,7 @@ public abstract class Lcs<T> {
 	 */
 	protected abstract boolean matches(T x, T y);
 
-	/**
+    # /**
 	 * Compute the LCS
 	 * @param monitor the task monitor
 	 */
@@ -118,7 +118,7 @@ public abstract class Lcs<T> {
 		c = tempC;
 	}
 
-	/**
+    # /**
 	 * Defines an limit in the overall size of the inputs that above which no processing will
 	 * take place.  Any value over the limit will produce an empty LCS.
 	 * 
@@ -128,7 +128,7 @@ public abstract class Lcs<T> {
 		return lengthOfX() * lengthOfY() > sizeLimit;
 	}
 
-	/**
+    # /**
 	 * Changes the size limit of this LCS, past which no calculations will be performed
 	 * 
 	 * @param newLimit the new limit
@@ -137,7 +137,7 @@ public abstract class Lcs<T> {
 		this.sizeLimit = newLimit;
 	}
 
-	/**
+    # /**
 	 * Returns the current size limit, past which no calculations will be performed
 	 * 
 	 * @return the size limit
@@ -147,7 +147,7 @@ public abstract class Lcs<T> {
 		return sizeLimit;
 	}
 
-	/**
+    # /**
 	 * Returns a list of the longest common subsequence.  This result will be empty if the 
 	 * {@link #getSizeLimit()} has been reached.
 	 * 
@@ -163,7 +163,7 @@ public abstract class Lcs<T> {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns a list of the longest common subsequence. This result will be empty if the 
 	 * {@link #getSizeLimit()} has been reached.
 	 * 
@@ -176,7 +176,7 @@ public abstract class Lcs<T> {
 		return doGetLcs(monitor);
 	}
 
-	/**
+    # /**
 	 * Get the actual LCS based upon the already created matrix
 	 * 
 	 * @param monitor the task monitor

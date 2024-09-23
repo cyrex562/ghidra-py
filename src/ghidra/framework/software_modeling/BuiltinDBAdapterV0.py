@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.util.exception.VersionException;
@@ -38,7 +38,7 @@ class BuiltinDBAdapterV0 extends BuiltinDBAdapter {
 
 	private Table table;
 
-	/**
+    # /**
 	 * Gets a version 0 adapter for the Built-Ins database table.
 	 * @param handle handle to the database containing the table.
 	 * @param tablePrefix prefix to be used with default table name

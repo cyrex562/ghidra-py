@@ -26,7 +26,7 @@ public class ItemProgramInterfaceParser extends TypeProgramInterfaceParser {
 
 	private static final int ITEM_PROGRAM_INTERFACE_STREAM_NUMBER = 4;
 
-	/**
+    # /**
 	 * Returns the standard stream number that contains the serialized Item Program Interface
 	 * @return the standard stream number that contains the Item Program Interface
 	 */
@@ -36,7 +36,7 @@ public class ItemProgramInterfaceParser extends TypeProgramInterfaceParser {
 
 	}
 
-	/**
+    # /**
 	 * Returns the appropriate {@link RecordCategory} needed while processing
 	 *  the Type Program Interface} (vs. Item Program Interface)
 	 * @return {@link RecordCategory#ITEM}
@@ -47,7 +47,7 @@ public class ItemProgramInterfaceParser extends TypeProgramInterfaceParser {
 
 	}
 
-	/**
+    # /**
 	 * Returns {@code true} if there is not a name in the name table assigned to the stream number
 	 * for the IPI
 	 * @param nameTable the name table that contains the stream/name map

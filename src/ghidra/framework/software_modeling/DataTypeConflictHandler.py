@@ -27,7 +27,7 @@ package ghidra.program.model.data;
  */
 public abstract class DataTypeConflictHandler {
 
-	/**
+    # /**
 	 * <code>ConflictResolutionPolicy</code> indicates the conflict resolution policy
 	 * which should be applied when any conflict is encountered
 	 */
@@ -60,7 +60,7 @@ public abstract class DataTypeConflictHandler {
 		public abstract DataTypeConflictHandler getHandler();
 	}
 
-	/**
+    # /**
 	 * <code>ConflictResult</code> indicates the resolution which should be
 	 * applied to a specific conflict
 	 */
@@ -167,7 +167,7 @@ public abstract class DataTypeConflictHandler {
 		}
 	};
 
-	/**
+    # /**
 	 * This {@link DataTypeConflictHandler conflict handler} behaves similar to 
 	 * the {@link #DEFAULT_HANDLER} with the difference being that a 
 	 * empty composite (see {@link Composite#isNotYetDefined()}) will be 
@@ -240,7 +240,7 @@ public abstract class DataTypeConflictHandler {
 		}
 	};
 
-	/**
+    # /**
 	 * Callback to handle conflicts in a datatype manager when new datatypes are added that
 	 * have the same name as an existing datatype. The implementer of this interface should do
 	 * one of the following:
@@ -256,7 +256,7 @@ public abstract class DataTypeConflictHandler {
 	public abstract ConflictResult resolveConflict(DataType addedDataType,
 			DataType existingDataType);
 
-	/**
+    # /**
 	 * Callback invoked when an associated dataType is being resolved and its local version of the
 	 * dataType is different from the source archive's dataType.  This method returns true if the
 	 * local version should be updated to the archive's version of the dataType.  Otherwise, the
@@ -267,7 +267,7 @@ public abstract class DataTypeConflictHandler {
 	 */
 	public abstract boolean shouldUpdate(DataType sourceDataType, DataType localDataType);
 
-	/**
+    # /**
 	 * Returns the appropriate handler for recursive resolve calls.
 	 */
 	public abstract DataTypeConflictHandler getSubsequentHandler();

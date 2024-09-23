@@ -26,7 +26,7 @@ import ghidra.util.exception.CancelledException;
  */
 public abstract class MsDataTypeApplier extends MsTypeApplier {
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working.
 	 */
@@ -34,7 +34,7 @@ public abstract class MsDataTypeApplier extends MsTypeApplier {
 		super(applicator);
 	}
 
-	/**
+    # /**
 	 * Apply the {@link AbstractMsType} in an attempt to create a Ghidra type
 	 * @param type the PDB type to work on
 	 * @return the {@code true} if type is done and can be removed from the {@code todoStack}
@@ -43,7 +43,7 @@ public abstract class MsDataTypeApplier extends MsTypeApplier {
 	 */
 	abstract boolean apply(AbstractMsType type) throws PdbException, CancelledException;
 
-	/**
+    # /**
 	 * Returns the (long) size of the type or 0 if unknown. Or Long.MAX_VALUE if too large.
 	 * @param type the PDB type being inspected
 	 * @return the size; zero if unknown.
@@ -52,7 +52,7 @@ public abstract class MsDataTypeApplier extends MsTypeApplier {
 		return applicator.bigIntegerToLong(type.getSize());
 	}
 
-	/**
+    # /**
 	 * Returns the (int) size of the type or 0 if unknown. Or Integer.MAX_VALUE if too large.
 	 * @param type the PDB type being inspected
 	 * @return the size; zero if unknown.
@@ -64,7 +64,7 @@ public abstract class MsDataTypeApplier extends MsTypeApplier {
 	//==============================================================================================
 	// TODO: Need to investigate if we adopt the following... if so, should use them consistently.
 
-//	/**
+//    # /**
 //	 * Convenience method for getting the {@link DataType} from the applicator pertaining
 //	 * to this PDB type
 //	 * @param type the PDB type

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.listing;
 
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ abstract class VariableImpl implements Variable {
 	private VariableStorage variableStorage;
 	private Program program;
 
-	/**
+    # /**
 	 * Construct a variable which has no specific storage specified.  This can be used for
 	 * function parameters which will assign storage based upon calling convention
 	 * @param name variable name
@@ -55,7 +55,7 @@ abstract class VariableImpl implements Variable {
 		this(name, dataType, null, null, null, null, false, program, sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a stack variable at the specified stack offset.
 	 * @param name variable name or null for default naming
 	 * @param dataType a fixed-length datatype.  (NOTE: Should be cloned to program datatype manager
@@ -72,7 +72,7 @@ abstract class VariableImpl implements Variable {
 		this(name, dataType, null, null, stackOffset, null, false, program, sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with a single storage element at the specified address.  If address 
 	 * is contained within a register it may get realigned to the register based upon the resolved 
 	 * datatype length.  Variable storage will be aligned to the least-significant portion of the 
@@ -91,7 +91,7 @@ abstract class VariableImpl implements Variable {
 		this(name, dataType, null, storageAddr, null, null, false, program, sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with a single storage register.  Variable storage will be 
 	 * aligned to the least-significant portion of the register.
 	 *@param name variable name
@@ -108,7 +108,7 @@ abstract class VariableImpl implements Variable {
 		this(name, dataType, null, null, null, register, false, program, sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a variable with one or more associated storage elements.  Storage elements
 	 * may get slightly modified to adjust for the resolved datatype size.
 	 * @param name variable name
@@ -126,7 +126,7 @@ abstract class VariableImpl implements Variable {
 		this(name, dataType, storage, null, null, null, force, program, sourceType);
 	}
 
-	/**
+    # /**
 	 * Construct a variable.  Only one storage/location may be specified (storage, storageAddr,
 	 * stackOffset, register) - all others should be null.  If no storage/location is specified
 	 * or is UNASSIGNED, a Void data type may be specified and will be assumed if this type returns
@@ -197,7 +197,7 @@ abstract class VariableImpl implements Variable {
 		this.sourceType = hasDefaultName() ? SourceType.DEFAULT : sourceType;
 	}
 
-	/**
+    # /**
 	 * Determine if current name is a default name.  This is more important for parameters
 	 * so always returning false for locals is OK.
 	 * @return true if name is reserved as a default name
@@ -255,7 +255,7 @@ abstract class VariableImpl implements Variable {
 		return new VariableStorage(program, new Varnode(storageAddr, dtLength));
 	}
 
-	/**
+    # /**
 	 * @return true if a zero-sized void type is permitted
 	 */
 	protected boolean isVoidAllowed() {
@@ -534,7 +534,7 @@ abstract class VariableImpl implements Variable {
 
 	///// STORAGE RESIZE /////
 
-	/**
+    # /**
 	 * Perform resize variable storage to desired newSize.  This method has limited ability to grow
 	 * storage if current storage does not have a stack component or if other space constraints
 	 * are exceeded.

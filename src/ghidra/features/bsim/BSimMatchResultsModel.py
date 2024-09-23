@@ -169,7 +169,7 @@ public class BSimMatchResultsModel extends AddressBasedTableModel<BSimMatchResul
 		super.reload();
 	}
 
-	/**
+    # /**
 	 * Parses the given result set to find the number of matches associated with
 	 * each base function.
 	 *
@@ -188,7 +188,7 @@ public class BSimMatchResultsModel extends AddressBasedTableModel<BSimMatchResul
 		clearData();
 	}
 
-	/**
+    # /**
 	 * Associate a given FunctionDescription with the entry point of the matching function in a program
 	 * @param desc is the FunctionDescription to recover
 	 * @param prog is the Program (possibly) containing the Function object
@@ -362,7 +362,7 @@ public class BSimMatchResultsModel extends AddressBasedTableModel<BSimMatchResul
 		}
 	}
 
-	/**
+    # /**
 	 * Column for showing the number of matches each base function has.
 	 *
 	 * Note the use of the {@link BSimMatchResultsModel#functionMatchMap}; this is
@@ -390,7 +390,7 @@ public class BSimMatchResultsModel extends AddressBasedTableModel<BSimMatchResul
 		}
 	}
 
-	/**
+    # /**
 	 * Column for showing the address of the matching function.
 	 */
 	private static class MatchingFunctionAddressTableColumn

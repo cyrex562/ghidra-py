@@ -16,7 +16,7 @@
 package ghidra.framework.main;
 
 import java.awt.*;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -73,7 +73,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 
 	protected PluginTool tool;
 
-	/**
+    # /**
 	 * Construct a new panel from a {@link RepositoryAdapter} instance.
 	 *
 	 * @param knownUsers names of the users that are known to the remote server
@@ -89,7 +89,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			repository.anonymousAccessAllowed(), tool);
 	}
 
-	/**
+    # /**
 	 * Constructs a new panel from the given arguments.
 	 *
 	 * @param knownUsers names of the users that are known to the remote server
@@ -142,7 +142,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		return new HelpLocation(GenericHelpTopics.FRONT_END, "UserAccessList");
 	}
 
-	/**
+    # /**
 	 * Sets the help location.
 	 *
 	 * @param helpLoc the help location
@@ -151,7 +151,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		this.helpLoc = helpLoc;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all users with permission to access the project.
 	 *
 	 * @return the list of users
@@ -160,7 +160,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		return userAccessPanel.getProjectUsers();
 	}
 
-	/**
+    # /**
 	 * Returns true if anonymous access is allowed by the repository.
 	 *
 	 * @return true if allowed
@@ -169,7 +169,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		return anonymousAccessCB != null && anonymousAccessCB.isSelected();
 	}
 
-	/**
+    # /**
 	 * Returns the repository name.
 	 *
 	 * @return the repository name
@@ -201,7 +201,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Panel containing the buttons for adding/removing users from the current project.
 	 */
 	class ButtonPanel extends JPanel {
@@ -285,7 +285,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			add(panel);
 		}
 
-		/**
+	    # /**
 		 * Ensures that all buttons are enabled/disabled appropriately based on the current
 		 * selections.
 		 * <p>
@@ -297,7 +297,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			updateRemoveButtonState();
 		}
 
-		/**
+	    # /**
 		 * Updates the 'remove' button state based on the selections in the user access panel.
 		 */
 		private void updateRemoveButtonState() {
@@ -323,7 +323,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			removeButton.setEnabled(enabled);
 		}
 
-		/**
+	    # /**
 		 * Updates the 'add' button state based on the selections in the known users panel.
 		 */
 		private void updateAddButtonState() {
@@ -340,7 +340,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Panel for displaying project users and their access permissions. Users with admin rights
 	 * can edit the permissions of other users.
 	 */
@@ -349,7 +349,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		private GTable table;
 		private UserAccessTableModel tableModel;
 
-		/**
+	    # /**
 		 * Creates a new user access panel.
 		 *
 		 * @param user the current user
@@ -373,7 +373,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			setPreferredSize(new Dimension(400, 200));
 		}
 
-		/**
+	    # /**
 		 * Returns the user table.
 		 *
 		 * @return the user table
@@ -382,14 +382,14 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			return table;
 		}
 
-		/**
+	    # /**
 		 * Reset user list with the original set of users and permissions
 		 */
 		void resetUserList() {
 			tableModel.setUserList(origProjectUserList);
 		}
 
-		/**
+	    # /**
 		 * Returns a list of all selected users in the table.
 		 *
 		 * @return list of user names
@@ -406,7 +406,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			return users;
 		}
 
-		/**
+	    # /**
 		 * Returns true if the given user is in the project access list.
 		 *
 		 * @param name the user name
@@ -424,7 +424,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			return false;
 		}
 
-		/**
+	    # /**
 		 * Returns a list of all users who have project access.
 		 *
 		 * @return list of users
@@ -434,7 +434,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			return tableModel.getModelData().toArray(users);
 		}
 
-		/**
+	    # /**
 		 * Removes all users from the table.
 		 */
 		private void removeAllUsers() {
@@ -453,7 +453,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			tableModel.removeUsers(list);
 		}
 
-		/**
+	    # /**
 		 * Removes only the selected users from the table.
 		 */
 		private void removeSelectedUsers() {
@@ -473,7 +473,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			tableModel.removeUsers(users);
 		}
 
-		/**
+	    # /**
 		 * Adds the give list of users to the table.
 		 *
 		 * @param users the users to add
@@ -493,7 +493,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Panel for displaying the list of users with repository access.
 	 */
 	class KnownUsersPanel extends JPanel {
@@ -502,7 +502,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 		private JList<String> userList;
 		private DefaultListModel<String> listModel;
 
-		/**
+	    # /**
 		 * Creates a new users panel.
 		 *
 		 * @param users list of users to display
@@ -538,7 +538,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			add(sp, BorderLayout.CENTER);
 		}
 
-		/**
+	    # /**
 		 * Returns a list of selected users
 		 *
 		 * @return list of user names
@@ -547,7 +547,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			return userList.getSelectedValuesList();
 		}
 
-		/**
+	    # /**
 		 * Returns the user list.
 		 *
 		 * @return the user list
@@ -556,7 +556,7 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			return userList;
 		}
 
-		/**
+	    # /**
 		 * Returns a list of all users in the panel
 		 *
 		 * @return list of user names
@@ -566,14 +566,14 @@ public class ProjectAccessPanel extends AbstractWizardJPanel {
 			return allUsers;
 		}
 
-		/**
+	    # /**
 		 * Clears any user selection in the panel.
 		 */
 		void clearSelection() {
 			userList.getSelectionModel().clearSelection();
 		}
 
-		/**
+	    # /**
 		 * Renderer for the {@link KnownUsersPanel}. This is to ensure that we render the
 		 * correct icon for each user in the list
 		 */

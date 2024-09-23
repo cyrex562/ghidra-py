@@ -32,7 +32,7 @@ import ghidra.app.plugin.processors.sleigh.symbol.ValueMapSymbol;
 public class AssemblyNumericMapTerminal extends AssemblyNumericTerminal {
 	protected final Map<Long, Integer> map;
 
-	/**
+    # /**
 	 * Construct a terminal with the given name, accepting only the keys of a given map
 	 * 
 	 * @param name the name

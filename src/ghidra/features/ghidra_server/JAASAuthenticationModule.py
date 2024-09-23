@@ -16,7 +16,7 @@
 package ghidra.server.security;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URI;
 import java.security.NoSuchAlgorithmException;
 import java.security.URIParameter;
@@ -48,7 +48,7 @@ public class JAASAuthenticationModule implements AuthenticationModule {
 	private String loginContextName;
 	private File jaasConfigFile;
 
-	/**
+    # /**
 	 * Creates a new {@link JAASAuthenticationModule} instance.
 	 *
 	 * @param loginContextName the name of the configuration entry from the JAAS config to use
@@ -151,7 +151,7 @@ public class JAASAuthenticationModule implements AuthenticationModule {
 		return allowUserToSpecifyName;
 	}
 
-	/**
+    # /**
 	 * Copies the callback values from the callback instances in the src list to the
 	 * corresponding instances (matched by callback class type) in the dest list, and
 	 * then returns the user name.

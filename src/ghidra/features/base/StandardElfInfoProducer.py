@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf.info;
 
-import java.io.IOException;
+
 import java.util.Map;
 import java.util.Map.Entry;
 

@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api.util;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.dialog.CheckoutDialog;
 import ghidra.app.util.task.ProgramOpener;
@@ -39,7 +39,7 @@ public class VTSessionFileUtil {
 	private VTSessionFileUtil() {
 	}
 
-	/**
+    # /**
 	 * Validate a VT source program to ensure it meets minimum criteria to open with a VTSession.
 	 * The following validation checks are performed:
 	 * <ul>
@@ -65,7 +65,7 @@ public class VTSessionFileUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Validate a VT destination program to ensure it meets minimum criteria to open with a VTSession.
 	 * GUI mode only: If file is versioned and not checked-out the user may be prompted to perform
 	 * an optional checkout of the file.  Prompting for checkout will not occur if this method
@@ -116,7 +116,7 @@ public class VTSessionFileUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Determine if the specified {@link DomainFile} will permit update.
 	 * @param file domain file
 	 * @return true if file permits update else false

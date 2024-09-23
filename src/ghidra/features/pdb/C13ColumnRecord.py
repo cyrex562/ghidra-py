@@ -22,7 +22,7 @@ public class C13ColumnRecord {
 	private int offsetColumnStart; // unsigned short
 	private int offsetColumnEnd; // unsigned short
 
-	/**
+    # /**
 	 * Returns the column start for the offset
 	 * @return the column start
 	 */
@@ -30,7 +30,7 @@ public class C13ColumnRecord {
 		return offsetColumnStart;
 	}
 
-	/**
+    # /**
 	 * Returns the column end for the offset
 	 * @return the column end
 	 */

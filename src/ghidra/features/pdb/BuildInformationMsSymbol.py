@@ -30,7 +30,7 @@ public class BuildInformationMsSymbol extends AbstractMsSymbol {
 
 	private RecordNumber itemRecordNumber;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -46,7 +46,7 @@ public class BuildInformationMsSymbol extends AbstractMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the item record number.
 	 * @return Item record number.
 	 */
@@ -54,7 +54,7 @@ public class BuildInformationMsSymbol extends AbstractMsSymbol {
 		return itemRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link String} representation of the {@link AbstractMsType} item type.
 	 * @return {@link String} representation of the item type.
 	 */

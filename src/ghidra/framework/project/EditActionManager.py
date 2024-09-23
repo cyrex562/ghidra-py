@@ -34,7 +34,7 @@ import ghidra.util.filechooser.GhidraFileFilter;
  * Helper class to manage the actions on the Edit menu.
  */
 class EditActionManager {
-	/**
+    # /**
 	 * PKCS Private Key/Certificate File Filter
 	 */
 	public static final GhidraFileFilter CERTIFICATE_FILE_FILTER =
@@ -52,7 +52,7 @@ class EditActionManager {
 		createActions();
 	}
 
-	/**
+    # /**
 	 * Create the menu items.
 	 */
 	private void createActions() {
@@ -102,7 +102,7 @@ class EditActionManager {
 		tool.addAction(editPluginPathAction);
 	}
 
-	/**
+    # /**
 	 * Pop up the edit plugin path dialog.
 	 */
 	private void editPluginPath() {

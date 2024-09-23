@@ -39,7 +39,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 	protected ProcedureFlags procedureFlags;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -64,7 +64,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		name = reader.parseString(pdb, strType);
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -73,7 +73,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return parentPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -82,7 +82,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return endPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the next pointer.
 	 * @return next pointer.
 	 */
@@ -91,7 +91,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return nextPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the procedure length.
 	 * @return Length.
 	 */
@@ -100,7 +100,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return procedureLength;
 	}
 
-	/**
+    # /**
 	 * Returns the debug start offset.
 	 * @return Debug start offset.
 	 */
@@ -109,7 +109,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return debugStartOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the debug end offset.
 	 * @return Debug end offset.
 	 */
@@ -118,7 +118,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return debugEndOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -127,7 +127,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return typeRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -136,7 +136,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return symbolOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -145,7 +145,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return symbolSegment;
 	}
 
-	/**
+    # /**
 	 * Returns the register containing the return value
 	 * @return the register.
 	 */
@@ -153,7 +153,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return registerContainingReturnValue;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link ProcedureFlags}.
 	 * @return Procedure flags.
 	 */
@@ -161,7 +161,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		return procedureFlags;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */
@@ -184,7 +184,7 @@ public abstract class AbstractProcedureStartIa64MsSymbol extends AbstractProcedu
 		builder.append(String.format("   Return Reg: %s\n", registerContainingReturnValue));
 	}
 
-	/**
+    # /**
 	 * Returns the special type string used during Emit.
 	 * @return Special type string.
 	 */

@@ -56,7 +56,7 @@ public class ConstructorPcodeTemplate implements Serializable {
 
 	public void trimToSize() { pcodeDirectives.trimToSize();}
 
-	/**
+    # /**
 	 * The default pcode generated for a constructor is typically
 	 * not very efficient.  For example, for an add instruction,
 	 * we might generate something like
@@ -118,7 +118,7 @@ public class ConstructorPcodeTemplate implements Serializable {
 		}
 	}
 
-	/**
+    # /**
 	 * @param op
 	 */
 	private void adjustFlowFlags(OpTemplate op) throws SledException {
@@ -162,7 +162,7 @@ public class ConstructorPcodeTemplate implements Serializable {
 
 	public int getFlowFlags() { return flowFlags; }
 
-	/**
+    # /**
 	 * Method getPcode.  Recursive pcode generation method.
 	 * @param pcode - current list of pcode instructions to which we will append new instructions
 	 * @param position

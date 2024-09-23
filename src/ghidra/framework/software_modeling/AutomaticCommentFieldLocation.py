@@ -27,7 +27,7 @@ import ghidra.program.model.listing.Program;
 public class AutomaticCommentFieldLocation extends CommentFieldLocation {
 	private int currentCommentRow;
 
-	/**
+    # /**
 	 * Construct a new AutomaticCommentFieldLocation.
 	 * 
 	 * @param program the program of the location
@@ -45,7 +45,7 @@ public class AutomaticCommentFieldLocation extends CommentFieldLocation {
 		this.currentCommentRow = currentCommentRow;
 	}
 
-	/**
+    # /**
 	 * Default constructor needed for restoring
 	 * an end-of-line field location from XML.
 	 */

@@ -64,7 +64,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 	private TypeDescriptorModel rtti0Model;
 	private Rtti3Model rtti3Model;
 
-	/**
+    # /**
 	 * Creates the model for the RTTI4 data type.
 	 * @param program the program
 	 * @param rtti4Address the address in the program for the RTTI4 data
@@ -131,7 +131,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the CompleteObjectLocator (RTTI 4) structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the CompleteObjectLocator (RTTI 4) structure.
@@ -164,7 +164,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return MSDataTypeUtils.getMatchingDataType(program, typedefDt);
 	}
 
-	/**
+    # /**
 	 * Gets the offset of the field in this RTTI 4 that has the signature.
 	 * @return the offset of the signature
 	 */
@@ -172,7 +172,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return SIGNATURE_OFFSET;
 	}
 
-	/**
+    # /**
 	 * Gets the offset of the field in this RTTI 4 that has the offset of the vb table in the class.
 	 * @return the offset of the vb table offset
 	 */
@@ -180,7 +180,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return VB_TABLE_OFFSET_OFFSET;
 	}
 
-	/**
+    # /**
 	 * Gets the offset of the field in this RTTI 4 that has the constructor displacement offset.
 	 * @return the offset of the constructor displacement offset
 	 */
@@ -188,7 +188,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return CONSTRUCTOR_DISP_OFFSET_OFFSET;
 	}
 
-	/**
+    # /**
 	 * Gets the offset of the field in this RTTI 4 that has the RTTI 0 pointer.
 	 * @return the offset of the RTTI 0 pointer
 	 */
@@ -196,7 +196,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return RTTI_0_PTR_OFFSET;
 	}
 
-	/**
+    # /**
 	 * Gets the offset of the field in this RTTI 4 that has the RTTI 3 pointer.
 	 * @return the offset of the RTTI 3 pointer
 	 */
@@ -204,7 +204,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return RTTI_3_PTR_OFFSET;
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component for the RTTI 0 pointer.
 	 * @return the component address of the RTTI 0 pointer
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -214,7 +214,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return getAddress().add(RTTI_0_PTR_OFFSET);
 	}
 
-	/**
+    # /**
 	 * Gets the address of the component for the RTTI 3 pointer.
 	 * @return the component address of the RTTI 3 pointer
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -224,7 +224,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return getAddress().add(RTTI_3_PTR_OFFSET);
 	}
 
-	/**
+    # /**
 	 * Gets the signature value in this RTTI 4.
 	 * @return the signature value
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -235,7 +235,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the virtual base table offset in this RTTI 4.
 	 * @return the vb table offset
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -246,7 +246,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the constructor displacement offset in this RTTI 4.
 	 * @return the constructor displacement offset
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -257,7 +257,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 			getMemBuffer());
 	}
 
-	/**
+    # /**
 	 * Gets the address of the RTTI 0 structure that is pointed to by this RTTI 4.
 	 * @return the address of the RTTI 0
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -268,7 +268,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return getReferencedAddress(getProgram(), rtti0CompAddress);
 	}
 
-	/**
+    # /**
 	 * Gets the address of the RTTI 3 structure that is pointed to by this RTTI 4.
 	 * @return the address of the RTTI 3
 	 * @throws InvalidDataTypeException if this isn't a valid model at the specified address.
@@ -313,7 +313,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the Base Class Types (type descriptor names) for the RTTI for this model.
 	 * @return the class names or an empty list if the name(s) can't be determined.
 	 * @throws InvalidDataTypeException if an invalid model is encountered when trying to get
@@ -326,7 +326,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return rtti3Model.getBaseClassTypes();
 	}
 
-	/**
+    # /**
 	 * Gets the type descriptor (RTTI 0) model associated with this RTTI 4.
 	 * @return the type descriptor (RTTI 0) model or null.
 	 * @throws InvalidDataTypeException if this model's validation fails.
@@ -336,7 +336,7 @@ public class Rtti4Model extends AbstractCreateRttiDataModel {
 		return rtti0Model;
 	}
 
-	/**
+    # /**
 	 * Gets the ClassHierarchyDescriptor (RTTI 3) model associated with this RTTI 4.
 	 * @return the ClassHierarchyDescriptor (RTTI 3) model or null.
 	 * @throws InvalidDataTypeException if this model's validation fails.

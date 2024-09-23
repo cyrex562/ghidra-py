@@ -5,9 +5,9 @@ options {
 }
 
 /**
- * This is the parser used in the semantics portion. It's root rule is semanticbody, which will
- * swap in the corresponding SemanticLexer.
- */
+# * This is the parser used in the semantics portion. It's root rule is semanticbody, which will
+# * swap in the corresponding SemanticLexer.
+# */
 
 // See the README.txt regarding some restrictions on this rule.
 semanticbody

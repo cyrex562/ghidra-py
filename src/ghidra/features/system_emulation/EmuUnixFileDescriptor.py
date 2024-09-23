@@ -23,27 +23,27 @@ import ghidra.pcode.emu.sys.EmuIOException;
  * @param <T> the type of values stored in the file
  */
 public interface EmuUnixFileDescriptor<T> {
-	/**
+    # /**
 	 * The default file descriptor for stdin (standard input)
 	 */
 	int FD_STDIN = 0;
-	/**
+    # /**
 	 * The default file descriptor for stdout (standard output)
 	 */
 	int FD_STDOUT = 1;
-	/**
+    # /**
 	 * The default file descriptor for stderr (standard error output)
 	 */
 	int FD_STDERR = 2;
 
-	/**
+    # /**
 	 * Get the current offset of the file, or 0 if not applicable
 	 * 
 	 * @return the offset
 	 */
 	T getOffset();
 
-	/**
+    # /**
 	 * See to the given offset
 	 * 
 	 * @param offset the desired offset
@@ -51,7 +51,7 @@ public interface EmuUnixFileDescriptor<T> {
 	 */
 	void seek(T offset) throws EmuIOException;
 
-	/**
+    # /**
 	 * Read from the file opened by this handle
 	 * 
 	 * @param buf the destination buffer
@@ -60,7 +60,7 @@ public interface EmuUnixFileDescriptor<T> {
 	 */
 	T read(T buf) throws EmuIOException;
 
-	/**
+    # /**
 	 * Read into the file opened by this handle
 	 * 
 	 * @param buf the source buffer
@@ -69,12 +69,12 @@ public interface EmuUnixFileDescriptor<T> {
 	 */
 	T write(T buf) throws EmuIOException;
 
-	/**
+    # /**
 	 * Obtain the {@code stat} structure of the file opened by this handle
 	 */
 	EmuUnixFileStat stat();
 
-	/**
+    # /**
 	 * Close this descriptor
 	 */
 	void close();

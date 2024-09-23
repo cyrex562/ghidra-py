@@ -37,7 +37,7 @@ public class LabelSymbolApplier extends MsSymbolApplier
 
 	private AbstractLabelMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier
@@ -130,7 +130,7 @@ public class LabelSymbolApplier extends MsSymbolApplier
 		applicator.createSymbol(symbolAddress, label, false);
 	}
 
-	/**
+    # /**
 	 * Returns true if seems like a function.  Not necessary, but (seems) sufficient, to indicate a
 	 *  function
 	 * @return true if function indicated
@@ -139,7 +139,7 @@ public class LabelSymbolApplier extends MsSymbolApplier
 		return symbol.getFlags().hasFunctionIndication();
 	}
 
-	/**
+    # /**
 	 * Returns true if there is a specific indication that the function is non-returning.
 	 * @return true if positive indication is given
 	 */
@@ -153,7 +153,7 @@ public class LabelSymbolApplier extends MsSymbolApplier
 	// a ProcedureStart symbol, which is where we might have the conflict).  For now, we are
 	// creating this method here because we are not anticipating a conflict with a specified
 	// calling convention.
-	/**
+    # /**
 	 * Returns true if there is a specific indication that the function has a custom calling
 	 * convention.
 	 * @return true if positive indication is given
@@ -184,7 +184,7 @@ public class LabelSymbolApplier extends MsSymbolApplier
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns label to apply or null if label excluded
 	 * @return label to process or null
 	 */

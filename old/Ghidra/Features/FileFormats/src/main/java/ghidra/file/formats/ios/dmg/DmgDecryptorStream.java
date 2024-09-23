@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.dmg;
 
-import java.io.*;
+
 import java.util.Arrays;
 
 import ghidra.app.util.bin.*;

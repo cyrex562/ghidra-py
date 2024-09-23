@@ -17,7 +17,7 @@ package ghidra.trace.database.memory;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.Set;
 
 import org.hamcrest.BaseMatcher;

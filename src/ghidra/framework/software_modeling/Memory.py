@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.mem;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 
@@ -29,61 +29,61 @@ import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * {@link Memory} provides the ability to inspect and manage the memory model for a {@link Program}.
- * In addition to conventional {@link MemoryBlock}s defined within physical memory 
- * {@link AddressSpace}s other special purpose memory block types may be defined (e.g.,
- * byte-mapped, bit-mapped, overlays, etc.).  
- * <p>
- * All memory block manipulations require excusive access (see {@link Program#hasExclusiveAccess()})
- * and all memory changes should generally be completed prior to analysis.  In particular, adding 
- * additional overlay blocks to an existing overlay space that has already been analyzed should be 
- * avoided.  Code references discovered during analysis from an overlay block will give preference 
- * to remaining within the corresponding overlay address space provided a block exists at the 
- * referenced offset.
- * <p>
- * <u>Block Types</u>
- * <ul>
- * <li><b>Initialized</b> - a memory block which defines a memory region with specific data.  
- * Data may be initialized from defined {@link FileBytes}, an {@link InputStream}, or set to all 
- * zeros.</li>
- * <li><b>Uninitialized</b> - a memory block which defines a memory region whose data is unknown.</li>
- * <li><b>Byte-Mapped</b> - a memory block whose bytes are mapped to another memory region using 
- * either a 1:1 byte-mapping or other specified mapping scheme  (see {@link ByteMappingScheme}).
- * Byte read/write operations are passed-through the mapped region.
- * </li>
- * <li><b>Bit-Mapped</b> - a memory block whose bytes are mapped to a corresponding bit in another
- * memory region where a mapped byte has a value of 0 or 1 only.  Byte read/write operations are 
- * passed-through to the corresponding bit within the mapped region.</li>
- * </ul>
- * </p>
- * <p>
- * <u>Overlay Blocks</u>
- * An overlay memory block provides the ability to define alternate content for a physical memory
- * region.  Any of the Block Types above may be created as an overlay block. The use of an overlay 
- * block and its corresponding overlay address space can be used to reflect a different execution 
- * context.  Use of overlays during analysis has limitations that must be considered.</p>
- * <p>
- * <u>Loaded vs. Non-Loaded</u>
- * A special purpose {@link AddressSpace#OTHER_SPACE} has been established for storing adhoc
- * non-loaded data as a memory block.  This is frequently used for storing portions of a file
- * that never actually get loaded into memory.  All blocks created using the
- * {@link AddressSpace#OTHER_SPACE} must be created as an overlay memory block.  All other
- * blocks based upon a memory address space, including overlays, are treated as Loaded and
- * use offsets into a physical memory space.</p>
- * <p>
- * <u>Sub-Blocks</u>
- * When a memory block is first created it corresponds to a single sub-block.  When
- * a block join operation is performed the resulting block will consist of multiple sub-blocks.
- * However, the join operation is restricted to default block types only and does not support
- * byte/bit-mapped types.
- * </p>
- */
+# * {@link Memory} provides the ability to inspect and manage the memory model for a {@link Program}.
+# * In addition to conventional {@link MemoryBlock}s defined within physical memory 
+# * {@link AddressSpace}s other special purpose memory block types may be defined (e.g.,
+# * byte-mapped, bit-mapped, overlays, etc.).  
+# * <p>
+# * All memory block manipulations require excusive access (see {@link Program#hasExclusiveAccess()})
+# * and all memory changes should generally be completed prior to analysis.  In particular, adding 
+# * additional overlay blocks to an existing overlay space that has already been analyzed should be 
+# * avoided.  Code references discovered during analysis from an overlay block will give preference 
+# * to remaining within the corresponding overlay address space provided a block exists at the 
+# * referenced offset.
+# * <p>
+# * <u>Block Types</u>
+# * <ul>
+# * <li><b>Initialized</b> - a memory block which defines a memory region with specific data.  
+# * Data may be initialized from defined {@link FileBytes}, an {@link InputStream}, or set to all 
+# * zeros.</li>
+# * <li><b>Uninitialized</b> - a memory block which defines a memory region whose data is unknown.</li>
+# * <li><b>Byte-Mapped</b> - a memory block whose bytes are mapped to another memory region using 
+# * either a 1:1 byte-mapping or other specified mapping scheme  (see {@link ByteMappingScheme}).
+# * Byte read/write operations are passed-through the mapped region.
+# * </li>
+# * <li><b>Bit-Mapped</b> - a memory block whose bytes are mapped to a corresponding bit in another
+# * memory region where a mapped byte has a value of 0 or 1 only.  Byte read/write operations are 
+# * passed-through to the corresponding bit within the mapped region.</li>
+# * </ul>
+# * </p>
+# * <p>
+# * <u>Overlay Blocks</u>
+# * An overlay memory block provides the ability to define alternate content for a physical memory
+# * region.  Any of the Block Types above may be created as an overlay block. The use of an overlay 
+# * block and its corresponding overlay address space can be used to reflect a different execution 
+# * context.  Use of overlays during analysis has limitations that must be considered.</p>
+# * <p>
+# * <u>Loaded vs. Non-Loaded</u>
+# * A special purpose {@link AddressSpace#OTHER_SPACE} has been established for storing adhoc
+# * non-loaded data as a memory block.  This is frequently used for storing portions of a file
+# * that never actually get loaded into memory.  All blocks created using the
+# * {@link AddressSpace#OTHER_SPACE} must be created as an overlay memory block.  All other
+# * blocks based upon a memory address space, including overlays, are treated as Loaded and
+# * use offsets into a physical memory space.</p>
+# * <p>
+# * <u>Sub-Blocks</u>
+# * When a memory block is first created it corresponds to a single sub-block.  When
+# * a block join operation is performed the resulting block will consist of multiple sub-blocks.
+# * However, the join operation is restricted to default block types only and does not support
+# * byte/bit-mapped types.
+# * </p>
+# */
 public interface Memory extends AddressSetView {
 
 	static final int GBYTE_SHIFT_FACTOR = 30;
 	static long GBYTE = 1L << GBYTE_SHIFT_FACTOR;
 
-	/**
+    # /**
 	 * Maximum size of all memory blocks, 16-GByte (see {@link #getAllInitializedAddressSet()}).
 	 * This restriction is somewhat arbitrary but is established to prevent an excessive
 	 * number of memory map segments which can have a negative impact on performance.
@@ -91,25 +91,25 @@ public interface Memory extends AddressSetView {
 	public static final int MAX_BINARY_SIZE_GB = 16;
 	public static final long MAX_BINARY_SIZE = (long) MAX_BINARY_SIZE_GB << GBYTE_SHIFT_FACTOR;
 
-	/**
+    # /**
 	 * The current max size of a memory block. 
 	 */
 	public static final int MAX_BLOCK_SIZE_GB = 16;  // set to 16 because anything larger, ghidra bogs down
 	public static final long MAX_BLOCK_SIZE = (long) MAX_BLOCK_SIZE_GB << GBYTE_SHIFT_FACTOR;
 
-	/**
+    # /**
 	 * Returns the program that this memory belongs to.
 	 */
 	public Program getProgram();
 
-	/**
+    # /**
 	 * Returns the set of addresses which correspond to all the "loaded" memory blocks that have
 	 * initialized data.  This does not include initialized memory blocks that contain data from
 	 * the program's file header such as debug sections.
 	 */
 	public AddressSetView getLoadedAndInitializedAddressSet();
 
-	/**
+    # /**
 	 * Returns the set of addresses which correspond to all memory blocks that have
 	 * initialized data.  This includes initialized memory blocks that contain data from
 	 * the program's file header that are not actually in the running in memory image,
@@ -118,24 +118,24 @@ public interface Memory extends AddressSetView {
 	 */
 	public AddressSetView getAllInitializedAddressSet();
 
-	/**
+    # /**
 	 * Use {@link #getLoadedAndInitializedAddressSet} instead.
 	 * @deprecated
 	 */
 	@Deprecated
 	public AddressSetView getInitializedAddressSet();
 
-	/**
+    # /**
 	 * Returns the set of addresses which correspond to the executable memory.
 	 */
 	public AddressSetView getExecuteSet();
 
-	/**
+    # /**
 	 * Returns true if the memory is bigEndian, false otherwise.
 	 */
 	public boolean isBigEndian();
 
-	/**
+    # /**
 	 * Determine if the specified address is contained within the reserved EXTERNAL block
 	 * (see {@link MemoryBlock#EXTERNAL_BLOCK_NAME}).  This artificial memory block has certain
 	 * limitations that may require associated addresses to be properly identified.  All
@@ -152,19 +152,19 @@ public interface Memory extends AddressSetView {
 		return block != null && block.isExternalBlock();
 	}
 
-	/**
+    # /**
 	 * Sets the live memory handler
 	 * @param handler the live memory handler
 	 */
 	public void setLiveMemoryHandler(LiveMemoryHandler handler);
 
-	/**
+    # /**
 	 * Returns the live memory handler instance used by this memory.
 	 * @return the live memory handler
 	 */
 	public LiveMemoryHandler getLiveMemoryHandler();
 
-	/**
+    # /**
 	 * Create an initialized memory block based upon a data {@link InputStream} and add it to 
 	 * this Memory.
 	 * <p>
@@ -200,7 +200,7 @@ public interface Memory extends AddressSetView {
 			throws LockException, MemoryConflictException, AddressOverflowException,
 			CancelledException, IllegalArgumentException;
 
-	/**
+    # /**
 	 * Create an initialized memory block initialized and add it to this Memory.  All bytes
 	 * will be initialized to the specified value (NOTE: use of zero as the initial value
 	 * is encouraged for reduced storage).
@@ -237,7 +237,7 @@ public interface Memory extends AddressSetView {
 			throws LockException, IllegalArgumentException, MemoryConflictException,
 			AddressOverflowException, CancelledException;
 
-	/**
+    # /**
 	 * Create an initialized memory block using bytes from a {@link FileBytes} object.
 	 * <p>
 	 * Overlay Blocks: An overlay memory block may be created in two ways:
@@ -272,7 +272,7 @@ public interface Memory extends AddressSetView {
 			long offset, long size, boolean overlay) throws LockException, IllegalArgumentException,
 			MemoryConflictException, AddressOverflowException;
 
-	/**
+    # /**
 	 * Create an uninitialized memory block and add it to this Memory.
 	 * <p>
 	 * Overlay Blocks: An overlay memory block may be created in two ways:
@@ -303,7 +303,7 @@ public interface Memory extends AddressSetView {
 			boolean overlay) throws LockException, IllegalArgumentException,
 			MemoryConflictException, AddressOverflowException;
 
-	/**
+    # /**
 	 * Create a bit-mapped overlay memory block and add it to this Memory.  Each byte address
 	 * within the resulting memory block will correspond to a single bit location within the mapped
 	 * region specified by {@code mappedAddress}.
@@ -340,7 +340,7 @@ public interface Memory extends AddressSetView {
 			long length, boolean overlay) throws LockException, MemoryConflictException,
 			AddressOverflowException, IllegalArgumentException;
 
-	/**
+    # /**
 	 * Create a byte-mapped memory block and add it to this memory.  Each byte address
 	 * within the resulting memory block will correspond to a byte within the mapped
 	 * region specified by {@code mappedAddress}.  While a 1:1 byte-mapping is the default,
@@ -376,7 +376,7 @@ public interface Memory extends AddressSetView {
 			long length, ByteMappingScheme byteMappingScheme, boolean overlay) throws LockException,
 			MemoryConflictException, AddressOverflowException, IllegalArgumentException;
 
-	/**
+    # /**
 	 * Create a byte-mapped memory block and add it to this memory.  Each byte address
 	 * within the resulting memory block will correspond to a byte within the mapped
 	 * region specified by {@code mappedAddress} using a 1:1 byte-mapping.
@@ -412,7 +412,7 @@ public interface Memory extends AddressSetView {
 		return createByteMappedBlock(name, start, mappedAddress, length, null, overlay);
 	}
 
-	/**
+    # /**
 	 * Creates a MemoryBlock at the given address with the same properties
 	 * as block, and adds it to this Memory.  Initialized Default blocks will
 	 * have block filled with 0's.  Method will only create physical space blocks
@@ -432,7 +432,7 @@ public interface Memory extends AddressSetView {
 			throws LockException, IllegalArgumentException, MemoryConflictException,
 			AddressOverflowException;
 
-	/**
+    # /**
 	 * Remove the memory block.  
 	 *
 	 * @param block the block to be removed.
@@ -441,12 +441,12 @@ public interface Memory extends AddressSetView {
 	 */
 	public void removeBlock(MemoryBlock block, TaskMonitor monitor) throws LockException;
 
-	/**
+    # /**
 	 * Get the memory size in bytes.
 	 */
 	public long getSize();
 
-	/**
+    # /**
 	 * Returns the Block which contains addr.
 	 *
 	 * @param addr a valid data Address.
@@ -454,19 +454,19 @@ public interface Memory extends AddressSetView {
 	 */
 	public MemoryBlock getBlock(Address addr);
 
-	/**
+    # /**
 	 * Returns the Block with the specified blockName
 	 * @param blockName the name of the requested block
 	 * @return the Block with the specified blockName
 	 */
 	public MemoryBlock getBlock(String blockName);
 
-	/**
+    # /**
 	 * Returns an array containing all the memory blocks.
 	 */
 	public MemoryBlock[] getBlocks();
 
-	/**
+    # /**
 	 * Move the memory block containing source address to the destination
 	 * address.
 	 * @param block block to be moved
@@ -484,7 +484,7 @@ public interface Memory extends AddressSetView {
 			throws LockException, MemoryBlockException, MemoryConflictException,
 			AddressOverflowException, NotFoundException;
 
-	/**
+    # /**
 	 * Split a block at the given addr and create a new block
 	 * starting at addr.
 	 * @param block block to be split into two
@@ -499,7 +499,7 @@ public interface Memory extends AddressSetView {
 	public void split(MemoryBlock block, Address addr)
 			throws MemoryBlockException, LockException, NotFoundException;
 
-	/**
+    # /**
 	 * Join the two blocks to create a single memory block.
 	 * IMPORTANT! When done, both blockOne and blockTwo should no longer be used.
 	 * @param blockOne block to be combined with blockTwo
@@ -512,7 +512,7 @@ public interface Memory extends AddressSetView {
 	public MemoryBlock join(MemoryBlock blockOne, MemoryBlock blockTwo)
 			throws LockException, MemoryBlockException, NotFoundException;
 
-	/**
+    # /**
 	 * Convert an existing uninitialized block with an
 	 * initialized block.
 	 * @param uninitializedBlock uninitialized block to convert
@@ -528,7 +528,7 @@ public interface Memory extends AddressSetView {
 	public MemoryBlock convertToUninitialized(MemoryBlock itializedBlock)
 			throws MemoryBlockException, NotFoundException, LockException;
 
-	/**
+    # /**
 	  * Finds a sequence of contiguous bytes that match the
 	  * given byte array at all bit positions where the mask contains an "on" bit.
 	  * Search is performed over loaded memory only.
@@ -546,7 +546,7 @@ public interface Memory extends AddressSetView {
 	public Address findBytes(Address addr, byte[] bytes, byte[] masks, boolean forward,
 			TaskMonitor monitor);
 
-	/**
+    # /**
 	  * Finds a sequence of contiguous bytes that match the
 	  * given byte array at all bit positions where the mask contains an "on" bit.
 	  * Starts at startAddr and ends at endAddr.
@@ -567,7 +567,7 @@ public interface Memory extends AddressSetView {
 	public Address findBytes(Address startAddr, Address endAddr, byte[] bytes, byte[] masks,
 			boolean forward, TaskMonitor monitor);
 
-	/**
+    # /**
 	 * Get byte at addr.
 	 *
 	 * @param addr the Address of the byte.
@@ -577,7 +577,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public byte getByte(Address addr) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of bytes starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -589,7 +589,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public int getBytes(Address addr, byte[] dest) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get size number of bytes starting at the given address and populates
 	 * dest starting at dIndex.
 	 *
@@ -606,7 +606,7 @@ public interface Memory extends AddressSetView {
 	public int getBytes(Address addr, byte[] dest, int destIndex, int size)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get the short at addr.
 	 *
 	 * @param addr the Address where the short starts.
@@ -615,7 +615,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public short getShort(Address addr) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get the short at addr using the specified endian order.
 	 *
 	 * @param addr the Address where the short starts.
@@ -627,7 +627,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public short getShort(Address addr, boolean bigEndian) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of shorts starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -639,7 +639,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public int getShorts(Address addr, short[] dest) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of shorts starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -654,7 +654,7 @@ public interface Memory extends AddressSetView {
 	public int getShorts(Address addr, short[] dest, int dIndex, int nElem)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of shorts starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -671,7 +671,7 @@ public interface Memory extends AddressSetView {
 	public int getShorts(Address addr, short[] dest, int dIndex, int nElem, boolean isBigEndian)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get the int at addr.
 	 *
 	 * @param addr the Address where the int starts.
@@ -681,7 +681,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public int getInt(Address addr) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get the int at addr using the specified endian order.
 	 *
 	 * @param addr the Address where the int starts.
@@ -693,7 +693,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public int getInt(Address addr, boolean bigEndian) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of ints starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -706,7 +706,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public int getInts(Address addr, int[] dest) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of ints starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -721,7 +721,7 @@ public interface Memory extends AddressSetView {
 	public int getInts(Address addr, int[] dest, int dIndex, int nElem)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of ints starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -738,7 +738,7 @@ public interface Memory extends AddressSetView {
 	public int getInts(Address addr, int[] dest, int dIndex, int nElem, boolean isBigEndian)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get the long at addr.
 	 *
 	 * @param addr the Address where the long starts.
@@ -748,7 +748,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public long getLong(Address addr) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get the long at addr in the specified endian order.
 	 *
 	 * @param addr the Address where the long starts.
@@ -760,7 +760,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public long getLong(Address addr, boolean bigEndian) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of longs starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -772,7 +772,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public int getLongs(Address addr, long[] dest) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of longs starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -787,7 +787,7 @@ public interface Memory extends AddressSetView {
 	public int getLongs(Address addr, long[] dest, int dIndex, int nElem)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Get dest.length number of longs starting at the given address.
 	 *
 	 * @param addr the starting Address.
@@ -804,7 +804,7 @@ public interface Memory extends AddressSetView {
 	public int getLongs(Address addr, long[] dest, int dIndex, int nElem, boolean isBigEndian)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write byte at addr.
 	 *
 	 * @param addr the Address of the byte.
@@ -814,7 +814,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public void setByte(Address addr, byte value) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write size bytes from values at addr.
 	 *
 	 * @param addr   the starting Address.
@@ -823,7 +823,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public void setBytes(Address addr, byte[] source) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write an array of bytes.  This should copy size bytes or fail!
 	 *
 	 * @param addr the starting Address of the bytes.
@@ -835,7 +835,7 @@ public interface Memory extends AddressSetView {
 	public void setBytes(Address addr, byte[] source, int sIndex, int size)
 			throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write short at addr in default endian order.
 	 *
 	 * @param addr the Address of the short.
@@ -845,7 +845,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public void setShort(Address addr, short value) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write short at addr in the specified endian order.
 	 *
 	 * @param addr the Address of the short.
@@ -856,7 +856,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public void setShort(Address addr, short value, boolean bigEndian) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write int at addr in the default endian order.
 	 *
 	 * @param addr the Address of the int.
@@ -866,7 +866,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public void setInt(Address addr, int value) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write int at addr in the specified endian order.
 	 *
 	 * @param addr the Address of the int.
@@ -878,7 +878,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public void setInt(Address addr, int value, boolean bigEndian) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write long at addr in the default endian order.
 	 *
 	 * @param addr the Address of the long.
@@ -888,7 +888,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public void setLong(Address addr, long value) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Write long at addr in the specified endian order.
 	 *
 	 * @param addr the Address of the long.
@@ -900,7 +900,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public void setLong(Address addr, long value, boolean bigEndian) throws MemoryAccessException;
 
-	/**
+    # /**
 	 * Stores a sequence of bytes into the program.  Typically, this method is used by importers
 	 * to store the original raw program bytes.
 	 *
@@ -918,13 +918,13 @@ public interface Memory extends AddressSetView {
 	public FileBytes createFileBytes(String filename, long offset, long size, InputStream is,
 			TaskMonitor monitor) throws IOException, CancelledException;
 
-	/**
+    # /**
 	 * Returns a list of all the stored original file bytes objects
 	 * @return a list of all the stored original file bytes objects
 	 */
 	public List<FileBytes> getAllFileBytes();
 
-	/**
+    # /**
 	 * Deletes a stored sequence of file bytes.  The file bytes can only be deleted if there
 	 * are no memory block references to the file bytes.
 	 * 
@@ -935,7 +935,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public boolean deleteFileBytes(FileBytes fileBytes) throws IOException;
 
-	/**
+    # /**
 	 * Returns information ({@link AddressSourceInfo}) about the byte source at the given address.
 	 * @param address the address to query. Returns null if the address is not in memory.
 	 * @return information ({@link AddressSourceInfo}) about the byte source at the given address or
@@ -943,7 +943,7 @@ public interface Memory extends AddressSetView {
 	 */
 	public AddressSourceInfo getAddressSourceInfo(Address address);
 
-	/**
+    # /**
 	 * Validate the given block name: cannot be null, cannot be an empty string, 
 	 * cannot contain control characters (ASCII 0..0x19).
 	 * <BR>
@@ -966,7 +966,7 @@ public interface Memory extends AddressSetView {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Gets a {@link List} of {@link Address addresses} that correspond to the given file offset.
 	 * @param fileOffset the file offset that will be used to locate the corresponding memory 
 	 *   addresses
@@ -985,7 +985,7 @@ public interface Memory extends AddressSetView {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Gets a list of addresses where the byte at the given offset
 	 * from the given FileBytes was loaded into memory.
 	 * @param offset the file offset in the given FileBytes of the byte that is to be 

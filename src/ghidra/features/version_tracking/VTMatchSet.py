@@ -26,13 +26,13 @@ import ghidra.program.model.address.Address;
  */
 public interface VTMatchSet {
 
-	/**
+    # /**
 	 * Returns the VTSession that contains this match set.
 	 * @return the VTSession that contains this match set.
 	 */
 	public VTSession getSession();
 
-	/**
+    # /**
 	 * Creates a match based on the given info and adds it to this match set.
 	 * 
 	 * @param info the info for the match to add to this match set.
@@ -40,13 +40,13 @@ public interface VTMatchSet {
 	 */
 	public VTMatch addMatch(VTMatchInfo info);
 
-	/**
+    # /**
 	 * Returns a collection of all VTMatches contained in this match set.
 	 * @return  a collection of all VTMatches contained in this match set.
 	 */
 	public Collection<VTMatch> getMatches();
 
-	/**
+    # /**
 	 * Returns information about the program correlator that was used to generate the matches
 	 * for this match set.
 	 * @return  information about the program correlator that was used to generate the matches
@@ -54,20 +54,20 @@ public interface VTMatchSet {
 	 */
 	public VTProgramCorrelatorInfo getProgramCorrelatorInfo();
 
-	/**
+    # /**
 	 * Returns the number of matches contained in this match set.
 	 * @return the number of matches contained in this match set.
 	 */
 	public int getMatchCount();
 
-	/**
+    # /**
 	 * Returns a unique id for this match set.  The ids are one-up numbers indicating the order this
 	 * match set was generated in relation to other match sets in the VTSession. 
 	 * @return the id
 	 */
 	public int getID();
 
-	/**
+    # /**
 	 * Returns a collection of all matches for the given association.
 	 * @param association the association for which to search for matches.
 	 * @return a collection of all matches for the given association.
@@ -75,7 +75,7 @@ public interface VTMatchSet {
 	 */
 	public Collection<VTMatch> getMatches(VTAssociation association);
 
-	/**
+    # /**
 	 * Returns a collection of matches for the given source and destination address.  This is
 	 * equivalent to calling {@link #getMatches(VTAssociation)}.
 	 * 
@@ -88,7 +88,7 @@ public interface VTMatchSet {
 	 */
 	public Collection<VTMatch> getMatches(Address sourceAddress, Address destinationAddress);
 
-	/**
+    # /**
 	 * Deletes the given match from this match set.  
 	 * <P>
 	 * Note: deleting an <B>ACCEPTED</B> match removes potentially useful corroborating evidence 
@@ -103,7 +103,7 @@ public interface VTMatchSet {
 	 */
 	public void deleteMatch(VTMatch match);
 
-	/**
+    # /**
 	 * Removes a match from this match set.
 	 * <P>
 	 * If this is the last match that shares the match's association, then the match will only be
@@ -127,7 +127,7 @@ public interface VTMatchSet {
 	@Deprecated(since = "11.2", forRemoval = true)
 	public boolean removeMatch(VTMatch match);
 
-	/**
+    # /**
 	 * Returns true 
 	 * @return true
 	 * @deprecated this method now always returns true

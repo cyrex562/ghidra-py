@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import ghidra.program.model.address.Address;
@@ -24,18 +24,18 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * NOTE:  ALL LanguageTranslator CLASSES MUST END IN "LanguageTranslator".  If not,
- * the ClassSearcher will not find them.
- * 
- * <code>LanguageTranslator</code> provides translation capabilities used by Program.setLanguage
- * when converting a program from one language to another or from one version to another.
- * <br>
- * Explicit translator implementations must implement the default constructor and should not
- * instantiate Language, AddressSpace, AddressFactory or Register objects until isValid() is invoked.
- */
+# * NOTE:  ALL LanguageTranslator CLASSES MUST END IN "LanguageTranslator".  If not,
+# * the ClassSearcher will not find them.
+# * 
+# * <code>LanguageTranslator</code> provides translation capabilities used by Program.setLanguage
+# * when converting a program from one language to another or from one version to another.
+# * <br>
+# * Explicit translator implementations must implement the default constructor and should not
+# * instantiate Language, AddressSpace, AddressFactory or Register objects until isValid() is invoked.
+# */
 public interface LanguageTranslator extends ExtensionPoint {
 	
-	/**
+    # /**
 	 * Validate translator to complete initialization and ensure language compatibility.
 	 * This method will be invoked by the LanguageTranslatorFactory before handing out this
 	 * translator.
@@ -43,46 +43,46 @@ public interface LanguageTranslator extends ExtensionPoint {
 	 */
 	public boolean isValid();
 	
-	/**
+    # /**
 	 * Returns old language
 	 * @throws IllegalStateException if instance has not been validated
 	 * @see #isValid()
 	 */
 	public Language getOldLanguage();
 
-	/**
+    # /**
 	 * Returns new language
 	 */
 	public Language getNewLanguage();
 	
-	/**
+    # /**
 	 * Returns old language name
 	 */
 	public LanguageID getOldLanguageID();
 	
-	/**
+    # /**
 	 * Returns new language name
 	 */
 	public LanguageID getNewLanguageID();
 	
-	/**
+    # /**
 	 * Returns old language version
 	 */
 	public int getOldVersion();
 	
-	/**
+    # /**
 	 * Returns new language version
 	 */
 	public int getNewVersion();
 	
-	/**
+    # /**
 	 * Translate BASE address spaces (Overlay spaces are not handled)
 	 * @param oldSpaceName old space name
 	 * @return corresponding address space in new language
 	 */
 	public AddressSpace getNewAddressSpace(String oldSpaceName);
 
-	/**
+    # /**
 	 * Get the old register at the specified oldAddr.  This will null if the specified
 	 * address is offcut within the register.
 	 * The smallest register will be returned which is greater than or equal to the specified size.
@@ -93,31 +93,31 @@ public interface LanguageTranslator extends ExtensionPoint {
 	 */
 	public Register getOldRegister(Address oldAddr, int size);
 	
-	/**
+    # /**
 	 * Get the largest old register which contains the specified oldAddr
 	 * @param oldAddr old register address which may be offcut
 	 * @return old register or null if suitable register can not be found.
 	 */
 	public Register getOldRegisterContaining(Address oldAddr);
 
-	/**
+    # /**
 	 * Returns the old processor context register or null if not defined
 	 */
 	public Register getOldContextRegister();
 	
-	/**
+    # /**
 	 * Find new register which corresponds to the specified old register.
 	 * @param oldReg old register
 	 * @return new register or null if corresponding register not found.
 	 */
 	public Register getNewRegister(Register oldReg);
 	
-	/**
+    # /**
 	 * Returns the new processor context register or null if not defined
 	 */
 	public Register getNewContextRegister();
 
-	/**
+    # /**
 	 * Get the translated register value
 	 * @param oldValue old register value (may not be null)
 	 * @return new register value or null if register not mapped
@@ -125,7 +125,7 @@ public interface LanguageTranslator extends ExtensionPoint {
 	 */
 	public RegisterValue getNewRegisterValue(RegisterValue oldValue);
 
-	/**
+    # /**
 	 * Returns true if register value translation required for 
 	 * program context.
 	 * @param oldReg
@@ -133,14 +133,14 @@ public interface LanguageTranslator extends ExtensionPoint {
 	 */
 	public boolean isValueTranslationRequired(Register oldReg);
 
-	/**
+    # /**
 	 * Obtain the new compiler specification ID given the old compiler spec ID.
 	 * @param oldCompilerSpecID old compiler spec ID.
 	 * @return new compiler spec ID.
 	 */
 	public CompilerSpecID getNewCompilerSpecID(CompilerSpecID oldCompilerSpecID);
 
-	/**
+    # /**
 	 * Get a compiler spec suitable for use with the old language.  The compiler 
 	 * spec returned is intended for upgrade use only prior to the setLanguage
 	 * and may be based upon compiler conventions specified in the new compiler 
@@ -152,7 +152,7 @@ public interface LanguageTranslator extends ExtensionPoint {
 	 */
 	public CompilerSpec getOldCompilerSpec(CompilerSpecID oldCompilerSpecID) throws CompilerSpecNotFoundException;
 
-	/**
+    # /**
 	 * Invoked after Program language upgrade has completed.  
 	 * Implementation of this method permits the final re-disassembled program to be
 	 * examined/modified to address more complex language upgrades.  This method will only be 

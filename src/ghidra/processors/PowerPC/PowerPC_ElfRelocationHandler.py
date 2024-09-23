@@ -35,7 +35,7 @@ public class PowerPC_ElfRelocationHandler extends
 	private static final int PPC_LOW14 = 0x0020FFFC;
 	private static final int PPC_HALF16 = 0xFFFF;
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public PowerPC_ElfRelocationHandler() {
@@ -140,7 +140,7 @@ public class PowerPC_ElfRelocationHandler extends
 			case R_PPC_ADDR16_LO:
 				if (Long.compareUnsigned(symbolValue, relocbase) > 0 &&
 					Long.compareUnsigned(symbolValue, relocbase + addend) <= 0) {
-					/**
+				    # /**
 					 * (freebsd) Addend values are sometimes relative to sections in rela,
 					 * where in reality they are relative to relocbase.  Detect this condition.
 					 */
@@ -158,7 +158,7 @@ public class PowerPC_ElfRelocationHandler extends
 			case R_PPC_ADDR16_HA:
 				if (Long.compareUnsigned(symbolValue, relocbase) > 0 &&
 					Long.compareUnsigned(symbolValue, relocbase + addend) <= 0) {
-					/**
+				    # /**
 					 * (freebsd) Addend values are sometimes relative to sections in rela,
 					 * where in reality they are relative to relocbase.  Detect this condition.
 					 */

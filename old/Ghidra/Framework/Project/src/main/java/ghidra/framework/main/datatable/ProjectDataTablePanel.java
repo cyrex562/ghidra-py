@@ -19,7 +19,7 @@ import java.awt.*;
 import java.awt.datatransfer.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 

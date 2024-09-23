@@ -118,7 +118,7 @@ public class MipsAddressAnalyzer extends ConstantPropagationAnalyzer {
 		return super.added(program, set, monitor, log);
 	}
 
-	/**
+    # /**
 	 * Check for a global GP register symbol or discovered symbol
 	 * @param set
 	 */
@@ -575,7 +575,7 @@ public class MipsAddressAnalyzer extends ConstantPropagationAnalyzer {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @param program
 	 * @param startInstr
 	 * @param monitor

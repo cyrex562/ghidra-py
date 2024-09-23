@@ -22,38 +22,38 @@ import db.DBChangeSet;
  * providing methods which facilitate transaction synchronization with the domain object's DBHandle.
  */
 public interface DomainObjectDBChangeSet extends DBChangeSet {
-	/**
+    # /**
 	 * Resets the change sets after a save.
 	 */
 	void clearUndo(boolean isCheckedOut);
 
-	/**
+    # /**
 	 * Undo the last change data transaction
 	 */
 	void undo();
 
-	/**
+    # /**
 	 * Redo the change data transaction associated the last Undo.
 	 */
 	void redo();
 
-	/**
+    # /**
 	 * Set the undo/redo stack depth
 	 * @param maxUndos the maximum numbder of undo
 	 */
 	void setMaxUndos(int maxUndos);
 
-	/**
+    # /**
 	 * Clears the undo/redo stack.
 	 */
 	void clearUndo();
 
-	/**
+    # /**
 	 * Start change data transaction.
 	 */
 	void startTransaction();
 
-	/**
+    # /**
 	 * End change data transaction.
 	 * @param commit if true transaction data is committed, 
 	 *               otherwise transaction data is discarded

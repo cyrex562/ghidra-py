@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.service;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Predicate;
 
@@ -81,7 +81,7 @@ public class FidService {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the length (in code units) of the short hash.
 	 * @return the length (in code units) of the short hash
 	 */
@@ -90,7 +90,7 @@ public class FidService {
 		return SHORT_HASH_CODE_UNIT_LENGTH;
 	}
 
-	/**
+    # /**
 	 * Returns the length limit (in code units) of the medium hash.
 	 * @return the length limit (in code units) of the medium hash
 	 */
@@ -99,7 +99,7 @@ public class FidService {
 		return MEDIUM_HASH_CODE_UNIT_LENGTH;
 	}
 
-	/**
+    # /**
 	 * @return the default threshold for a code unit score to be considered a match
 	 */
 
@@ -107,7 +107,7 @@ public class FidService {
 		return SCORE_THRESHOLD;
 	}
 
-	/**
+    # /**
 	 * @return the default codeunit threshold for labeling a function with conflicting matches
 	 */
 
@@ -115,7 +115,7 @@ public class FidService {
 		return MULTINAME_SCORE_THRESHOLD;
 	}
 
-	/**
+    # /**
 	 * Hashes a single function.
 	 * @param function the function to hash
 	 * @return the small, medium and full hash result
@@ -134,7 +134,7 @@ public class FidService {
 		return hashTriple;
 	}
 
-	/**
+    # /**
 	 * Get the FidHasher object suitable for producing FidHashQuad objects for functions coming from
 	 * a particular program.
 	 * @param program is the Program to configure the hasher for
@@ -151,7 +151,7 @@ public class FidService {
 		return fidHasher;
 	}
 
-	/**
+    # /**
 	 * Return the FidProgramSeeker context object for searching for Fid matches in a specific Program
 	 * @param program is the program to configure the seeker for
 	 * @param fidQueryService is the set of databases the seeker should query
@@ -169,7 +169,7 @@ public class FidService {
 		return seeker;
 	}
 
-	/**
+    # /**
 	 * Extracts function hashes from a list of programs (domain files) and
 	 * puts them into the scratch library.
 	 * @param fidDb the database to populate
@@ -201,7 +201,7 @@ public class FidService {
 		return ingest.create();
 	}
 
-	/**
+    # /**
 	 * Searches the database to find results for a program.
 	 * @param program the program to process
 	 * @param queryService holds the current set of databases to query
@@ -221,7 +221,7 @@ public class FidService {
 		return searchResult;
 	}
 
-	/**
+    # /**
 	 * Mark functions as automatically passing any search
 	 * @param funcList is the list of records to modify
 	 * @param value is the new value of the auto-pass property
@@ -238,7 +238,7 @@ public class FidService {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Mark functions as automatically failing any search
 	 * @param funcList is the list of records to modify
 	 * @param value is the new value of the auto-fail property
@@ -255,7 +255,7 @@ public class FidService {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Mark functions as requiring any search result to match the specific hash
 	 * @param funcList is the list of records to modify
 	 * @param value is the new value of the force-specific property
@@ -272,7 +272,7 @@ public class FidService {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Mark functions as requiring any search result to also match one of its child/parents
 	 * @param funcList is the list of records to modify
 	 * @param value is the new value of the force-relation property
@@ -289,7 +289,7 @@ public class FidService {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Returns true if at least one FidLibraryDatabases can process programs with the given language
 	 * @param language the language to test Fid Databases for
 	 * @return true if at least one FidLibraryDatabases can process programs with the given language
@@ -299,7 +299,7 @@ public class FidService {
 		return fidFileManager.canQuery(language);
 	}
 
-	/**
+    # /**
 	 * Creates a new FidQueryService that can facilitate performing a query over multiple
 	 * Fid databases. This causes the appropriate databases to be opened, and therefore, the
 	 * caller of this method is responsible for closing the FidQueryService when done with it.

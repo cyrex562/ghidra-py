@@ -63,7 +63,7 @@ public class VisualGraphOptions {
 	protected boolean useAnimation = true;
 	protected boolean scrollWheelPans = false;
 
-	/**
+    # /**
 	 * This should be true by default when 'scrollWheelPans' is true by default
 	 */
 	protected boolean useMouseRelativeZoom = true;

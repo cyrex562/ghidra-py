@@ -41,7 +41,7 @@ public class ConcurrentTestExceptionHandler implements UncaughtExceptionHandler 
 
 	private static volatile boolean enabled = true;
 
-	/**
+    # /**
 	 * Installs this exception handler as the default uncaught exception handler.  See
 	 * {@link Thread#setDefaultUncaughtExceptionHandler(UncaughtExceptionHandler)}
 	 */
@@ -53,7 +53,7 @@ public class ConcurrentTestExceptionHandler implements UncaughtExceptionHandler 
 		});
 	}
 
-	/**
+    # /**
 	 * Tells this class to process the given throwable
 	 * @param thread the thread that encountered the throwable
 	 * @param t the throwable
@@ -80,7 +80,7 @@ public class ConcurrentTestExceptionHandler implements UncaughtExceptionHandler 
 		ConcurrentTestExceptionHandler.class.notifyAll();
 	}
 
-	/**
+    # /**
 	 * Some exceptions that happen off the test thread are not serious enough to fail the test.
 	 * For example, some exceptions happen on the headless test server due more to
 	 * environmental issues rather than real problems.  This method is intended to ignore
@@ -99,21 +99,21 @@ public class ConcurrentTestExceptionHandler implements UncaughtExceptionHandler 
 		return StringUtils.containsAny(message, IGNORABLE_ERROR_MESSAGES);
 	}
 
-	/**
+    # /**
 	 * Clears all exceptions being tracked by this class
 	 */
 	public synchronized static void clear() {
 		throwables.clear();
 	}
 
-	/**
+    # /**
 	 * Enables this class after a call to {@link #disable()} has been made
 	 */
 	public synchronized static void enable() {
 		enabled = true;
 	}
 
-	/**
+    # /**
 	 * Disables this class's tracking of exceptions.  Clients use this method to have this class
 	 * ignore expected exceptions.   This is a bit course-grained, as it does not allow clients to
 	 * ignore specific expected exceptions.
@@ -122,7 +122,7 @@ public class ConcurrentTestExceptionHandler implements UncaughtExceptionHandler 
 		enabled = false;
 	}
 
-	/**
+    # /**
 	 * Returns true if this class is enabled.  When disabled this class does not track exceptions.
 	 * @return true if enabled
 	 */
@@ -130,7 +130,7 @@ public class ConcurrentTestExceptionHandler implements UncaughtExceptionHandler 
 		return enabled;
 	}
 
-	/**
+    # /**
 	 * Returns all exceptions tracked by this class
 	 * @return all exceptions tracked by this class
 	 */
@@ -138,7 +138,7 @@ public class ConcurrentTestExceptionHandler implements UncaughtExceptionHandler 
 		return new ArrayList<>(throwables);
 	}
 
-	/**
+    # /**
 	 * Returns true if this class has been given any exceptions to handle since last being cleared
 	 * @return true if this class has been given any exceptions to handle since last being cleared
 	 */

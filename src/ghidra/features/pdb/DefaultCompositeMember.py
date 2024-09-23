@@ -70,7 +70,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return "_tmp_" + type + nextTemporaryValue++;
 	}
 
-	/**
+    # /**
 	 * Construct the outermost root container member for a new composite data-type.
 	 * @param isClass true if container corresponds to a Class structure, else false
 	 * @param editComposite composite to be built-up (must have program's datatype manager)
@@ -87,7 +87,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		initializeContainer();
 	}
 
-	/**
+    # /**
 	 * Construct a new composite member from a PDB data-type member record.
 	 * @param member PDB member record
 	 * @param dataTypeManager program's datatype manager
@@ -117,7 +117,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		memberIsZeroLengthArray = wrappedDataType.isZeroLengthArray();
 	}
 
-	/**
+    # /**
 	 * Construct a new composite member by cloning an existing member.
 	 * This is intended for use when establishing nested anonymous unions and structures.
 	 * @param member composite member to be cloned
@@ -138,7 +138,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		unionMemberList = member.unionMemberList;
 	}
 
-	/**
+    # /**
 	 * Construct a filler/padding bitfield member
 	 * @param componentOffset member offset within parent
 	 * @param baseDataType bitfield base datatype
@@ -167,7 +167,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		parent = newParent;
 	}
 
-	/**
+    # /**
 	 * Get member name to be used within parent composite definition
 	 * @return member name or null if this is root container
 	 */
@@ -175,7 +175,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return memberName;
 	}
 
-	/**
+    # /**
 	 * Get the data type name associated with this member.  Anonymous inner composite
 	 * types will utilize a generated named based upon its parent type name and the
 	 * offset at which it occurs within its parent.
@@ -185,7 +185,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return memberDataType != null ? memberDataType.getName() : memberDataTypeName;
 	}
 
-	/**
+    # /**
 	 * Get the data type associated with this member.  Container members data-type
 	 * may continue to transform as additional members are added.
 	 * @return data type associated with this member.
@@ -268,7 +268,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		alignComposite(preferredSize);
 	}
 
-	/**
+    # /**
 	 * Adjust non-packed structure following member reconstruction.
 	 * @param preferredSize preferred size
 	 */
@@ -308,7 +308,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		}
 	}
 
-	/**
+    # /**
 	 * Align container composite data type if possible.
 	 * @param preferredSize preferred size of composite if known, else <= 0 if unknown
 	 */
@@ -438,7 +438,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		memberLength = 0; // compositeMemberLength is preserved
 	}
 
-	/**
+    # /**
 	 * Determine if this member is a container
 	 * @return true if container, else false
 	 */
@@ -447,7 +447,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return memberType != MemberType.MEMBER; // memberDataTypeName == null;
 	}
 
-	/**
+    # /**
 	 * Determine if this member is a union container
 	 * @return true if union container, else false
 	 */
@@ -456,7 +456,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return unionMemberList != null;
 	}
 
-	/**
+    # /**
 	 * Determine if this member is a structure container
 	 * @return true if structure container, else false
 	 */
@@ -503,7 +503,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return "[CompositeMember: " + memberOffset + " " + memberName + " " + type + "]";
 	}
 
-	/**
+    # /**
 	 * Attempt to add a child member to this composite hierarchy
 	 * @param child PDB data-type member record
 	 * @param monitor task monitor
@@ -688,7 +688,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Insert a structure bitfield without creating additional undefined padding
 	 * components (i.e., keep to minimal storage size).
 	 * @param struct structure
@@ -998,7 +998,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		}
 	}
 
-	/**
+    # /**
 	 * Replace existing member with newContainerMember
 	 * @param fieldName name of existing field (used to locate union member)
 	 * @param newContainerMember container replacement member
@@ -1093,7 +1093,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return addStructureMember(member);
 	}
 
-	/**
+    # /**
 	 * This method facilitates the removal and collection of all siblings of this
 	 * member from its parent container.  Only those siblings whose offset is greater
 	 * than this member's offset will be included.  The use of this method is necessary when
@@ -1153,7 +1153,7 @@ public class DefaultCompositeMember extends CompositeMember {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Buildup an empty composite by applying datatype composite members.
 	 * Only those children with a kind of "Member" will be processed.
 	 * @param composite empty composite to which members will be added

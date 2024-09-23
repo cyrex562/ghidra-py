@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.dwarf;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.format.dwarf.DWARFFunction.CommitMode;

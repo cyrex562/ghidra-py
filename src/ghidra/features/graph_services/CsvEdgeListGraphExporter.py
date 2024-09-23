@@ -16,7 +16,7 @@
 package ghidra.graph.exporter;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import org.jgrapht.nio.csv.CSVExporter;
 import org.jgrapht.nio.csv.CSVFormat;

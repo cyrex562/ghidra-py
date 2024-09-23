@@ -28,25 +28,25 @@ import static ghidra.feature.vt.api.main.VTMarkupItemStatus.*;
  */
 public enum VTMarkupItemConsideredStatus {
 
-	/**
+    # /**
 	 * Indicates that a markup item has not been considered.  This value exists in order to 
 	 * reset one of the other values in this enum.
 	 */
 	UNCONSIDERED(UNAPPLIED),
 
-	/**
+    # /**
 	 * Indicates that a markup item should be ignored because the user doesn't know if it should
 	 * be applied.
 	 */
 	IGNORE_DONT_KNOW(DONT_KNOW),
 
-	/**
+    # /**
 	 * Indicates that a markup item should be ignored because the user doesn't care if it should
 	 * be applied.
 	 */
 	IGNORE_DONT_CARE(DONT_CARE),
 
-	/**
+    # /**
 	 * Indicates that the markup item should not be applied.
 	 */
 	REJECT(REJECTED);
@@ -58,7 +58,7 @@ public enum VTMarkupItemConsideredStatus {
 
 	}
 
-	/**
+    # /**
 	 * The status applied to the markup item when 
 	 * {@link VTMarkupItem#setConsidered(VTMarkupItemConsideredStatus)} is called.
 	 */

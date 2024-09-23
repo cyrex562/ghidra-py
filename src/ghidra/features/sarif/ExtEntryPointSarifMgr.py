@@ -15,7 +15,7 @@
  */
 package sarif.managers;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -55,7 +55,7 @@ public class ExtEntryPointSarifMgr extends SarifMgr {
 	// SARIF READ CURRENT DTD //
 	////////////////////////////
 
-	/**
+    # /**
 	 * Process the entry point section of the SARIF file.
 	 * 
 	 * @param result  sarif
@@ -78,7 +78,7 @@ public class ExtEntryPointSarifMgr extends SarifMgr {
 	// SARIF WRITE CURRENT DTD //
 	/////////////////////////////
 
-	/**
+    # /**
 	 * Write out the SARIF for the external entry points.
 	 * 
 	 * @param results writer for SARIF

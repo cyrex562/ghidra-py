@@ -15,7 +15,7 @@
  */
 package ghidra;
 
-import java.io.IOException;
+
 import java.nio.file.Path;
 
 import docking.framework.DockingApplicationConfiguration;
@@ -40,7 +40,7 @@ public class GhidraGo implements GhidraLaunchable {
 	
 	private GhidraGoSender sender;
 
-	/**
+    # /**
 	 * Initializes a new GhidraGoSender and processes the {@link GhidraURL}
 	 * @param layout the layout passed from main.Ghidra
 	 * @param args the CLI args passed to GhidraGo. args should contain a single {@link GhidraURL}.
@@ -134,7 +134,7 @@ public class GhidraGo implements GhidraLaunchable {
 		}
 	}
 
-	/**
+    # /**
 	 * Determines the execution platform and executes the appropriate shell/bash script to start 
 	 * Ghidra. 
 	 * @throws IOException in the event that the execution failed

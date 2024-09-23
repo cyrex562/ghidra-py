@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.headless;
 
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.app.script.*;

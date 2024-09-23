@@ -28,7 +28,7 @@ public abstract class AbstractThreadStorageMsSymbol extends AbstractMsSymbol
 
 	protected ThreadStorageSymbolInternals threadStorageInternals;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -41,7 +41,7 @@ public abstract class AbstractThreadStorageMsSymbol extends AbstractMsSymbol
 		threadStorageInternals = internals;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -50,7 +50,7 @@ public abstract class AbstractThreadStorageMsSymbol extends AbstractMsSymbol
 		return threadStorageInternals.getOffset();
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -59,7 +59,7 @@ public abstract class AbstractThreadStorageMsSymbol extends AbstractMsSymbol
 		return threadStorageInternals.getSegment();
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.
 	 * @return Type record number.
 	 */
@@ -67,7 +67,7 @@ public abstract class AbstractThreadStorageMsSymbol extends AbstractMsSymbol
 		return threadStorageInternals.getTypeRecordNumber();
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

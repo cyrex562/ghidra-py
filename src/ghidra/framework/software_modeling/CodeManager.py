@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.code;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -76,7 +76,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 	final static int DATA_OP_INDEX = 0; // operand index for data, will always be zero
 	private static final int MAX_SEGMENT_LIMIT = 2;
 
-	/**
+    # /**
 	 * Constructs a new CodeManager for a program.
 	 * @param handle handle to database
 	 * @param addrMap addressMap to convert between addresses and long values.
@@ -105,7 +105,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		checkOldFallThroughMaps(handle, openMode, monitor);
 	}
 
-	/**
+    # /**
 	 * Check for old fall-through/fall-from property maps.  These maps were never fully supported 
 	 * so we do not support the read-only mode, however we will support an upgrade of this data 
 	 * which is now stored as FALL_THROUGH References.
@@ -216,7 +216,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the program after all the managers have been created.
 	 * @param program The program object that this manager belongs to.
 	 */
@@ -388,7 +388,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a complete set of instructions.  A preliminary pass will be made checking for code 
 	 * unit conflicts which will be marked within the instructionSet causing dependent blocks to 
 	 * get pruned.
@@ -591,7 +591,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return set;
 	}
 
-	/**
+    # /**
 	 * Creates an instruction at the specified address.
 	 *
 	 * @param address start address of instruction
@@ -712,7 +712,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return commentAdapter;
 	}
 
-	/**
+    # /**
 	 * Removes the block of defined bytes from the listing. All necessary checks will be made by 
 	 * listing before this method is called, so just do the work.
 	 * @param start the first address in the range.
@@ -738,7 +738,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		deleteAddressRange(start, end, false, monitor);
 	}
 
-	/**
+    # /**
 	 * Removes the block of defined code units from the listing. All necessary checks will be made 
 	 * by listing before this method is called, so just do the work.
 	 * @param start the first address in the range.
@@ -782,7 +782,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Move a block of code from one address to a new address.
 	 * <P>
 	 * Updates all property managers, symbols, and references.
@@ -821,7 +821,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the code unit whose min address equals the specified address.
 	 *
 	 * @param address the min address of the code unit to return 
@@ -884,7 +884,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the next code unit whose min address is greater than the specified address.
 	 *
 	 * @param addr the address to look after
@@ -915,7 +915,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all user-defined properties.
 	 *
 	 * @return Iterator an iterator over all user-defined properties
@@ -924,7 +924,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return propertyMapMgr.propertyManagers();
 	}
 
-	/**
+    # /**
 	 * Removes the user-defined property with the specified property name.
 	 *
 	 * @param propertyName the name of the user-defined property to remove
@@ -933,7 +933,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		propertyMapMgr.removePropertyMap(propertyName);
 	}
 
-	/**
+    # /**
 	 * Returns the property map object that is associated with the specified property name.
 	 *
 	 * @param propertyName the name of the property
@@ -965,7 +965,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return getInstructionDB(instRec);
 	}
 
-	/**
+    # /**
 	 * Returns the next code unit whose min address is closest to and less than the specified 
 	 * address.
 	 *
@@ -1003,7 +1003,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the code unit whose min address is less than or equal to the specified address and 
 	 * whose max address is greater than or equal to the specified address.
 	 * <pre>{@literal
@@ -1083,7 +1083,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get an iterator that contains the code units which have the specified property type defined. 
 	 * Only code units at an address greater than or equal to the specified start address will be 
 	 * returned by the iterator. If the start address is null then check the entire program.
@@ -1158,7 +1158,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return new EmptyCodeUnitIterator();
 	}
 
-	/**
+    # /**
 	 * Get an iterator that contains the code units which have the specified property type defined. 
 	 * Only code units starting within the address set specified will be returned by the iterator.
 	 * If the address set is null then check the entire program.
@@ -1228,7 +1228,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return new EmptyCodeUnitIterator();
 	}
 
-	/**
+    # /**
 	 * Get a forward iterator over code units that have comments of the given type.
 	 * @param commentType comment type defined in CodeUnit
 	 * @param set address set (null for all defined memory)
@@ -1239,7 +1239,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return new CommentTypeFilterIterator(it, commentType);
 	}
 
-	/**
+    # /**
 	 * Get a forward iterator over addresses that have comments of the given type.
 	 * @param commentType comment type defined in CodeUnit
 	 * @param set address set (null for all defined memory)
@@ -1263,7 +1263,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return new EmptyAddressIterator();
 	}
 
-	/**
+    # /**
 	 * Get an iterator over addresses that have comments of any type.
 	 * @param addrSet address set containing the comment addresses to iterate over.
 	 * @param forward true to iterate in the direction of increasing addresses.
@@ -1283,7 +1283,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return new EmptyAddressIterator();
 	}
 
-	/**
+    # /**
 	 * Returns the instruction whose min address equals the specified address or null if the 
 	 * address is not the beginning address of some code unit.
 	 *
@@ -1319,7 +1319,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the defined data whose min address equals the specified address.
 	 *
 	 * @param address the min address of the data defined to return 
@@ -1356,7 +1356,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next instruction whose min address is closest to and less than the specified 
 	 * address.
 	 *
@@ -1379,7 +1379,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next instruction whose min address is greater than the specified address.
 	 *
 	 * @param addr the address to look after
@@ -1401,7 +1401,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns an instruction whose min address is less than or equal to the specified address and 
 	 * whose max address is greater than or equal to the specified address.
 	 * If {@code usePrototypeLength==true}
@@ -1452,7 +1452,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the data whose min address equals the specified address.
 	 *
 	 * @param address the min address of the data to return 
@@ -1483,7 +1483,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next data whose min address is closest to and less than the specified address.
 	 *
 	 * @param addr the address to look before
@@ -1506,7 +1506,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next data whose min address is greater than the specified address.
 	 * 
 	 * @param addr the address to look after 
@@ -1526,7 +1526,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the data whose min address is less than or equal to the specified address and whose 
 	 * max address is greater than or equal to the specified address.
 	 * <pre>{@literal
@@ -1545,7 +1545,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next defined data whose min address is greater than the specified address. 
 	 *
 	 * @param addr the address to look after
@@ -1567,7 +1567,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Returns the next defined data whose min address is closest to and less than the specified 
 	 * address.
 	 *
@@ -1589,7 +1589,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the defined data whose min address is less than or equal to the specified address 
 	 * and whose max address is greater than or equal to the specified address.
 	 * <pre>{@literal
@@ -1773,7 +1773,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null; // will not happen
 	}
 
-	/**
+    # /**
 	 * Returns the undefined data whose min address equals the specified address.
 	 *
 	 * @param address the min address of the undefined data to return 
@@ -1826,7 +1826,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next undefined data whose min address is greater than the specified address.
 	 *
 	 * @param addr the address to look after
@@ -1855,7 +1855,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next undefined data whose min address falls within the address set searching in 
 	 * the forward direction {@code (e.g., 0 -> 0xfff).}
 	 *
@@ -1887,7 +1887,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the next undefined data whose min address is closest to and less than the specified 
 	 * address.
 	 *
@@ -1965,7 +1965,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a data at the specified address.
 	 *
 	 * @param addr Starting address of code unit
@@ -2072,7 +2072,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return data;
 	}
 
-	/**
+    # /**
 	 * Update the data references on this data item. Get rid of any references first, then add in 
 	 * any new ones.
 	 *
@@ -2089,7 +2089,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Add in any references from pointer data types found in a data item.  We don't create refs 
 	 * for 0 or all f's.
 	 * @param data the data to add references for.
@@ -2195,7 +2195,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Clears all comments in the given range (inclusive).
 	 * The specified start and end addresses must form a valid range within
 	 * a single {@link AddressSpace}.
@@ -2231,7 +2231,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Clears the properties in the given range (inclusive).
 	 * The specified start and end addresses must form a valid range within
 	 * a single {@link AddressSpace}.
@@ -2294,7 +2294,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return cu.getMaxAddress();
 	}
 
-	/**
+    # /**
 	 * Remove code units, symbols, equates, and references to code units in the given range 
 	 * (inclusive).  Comments and comment history will be retained.
 	 * The specified start and end addresses must form a valid range within
@@ -2342,7 +2342,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Clear all code units in the program.
 	 * @param clearContext true to clear the context
 	 * @param monitor the task monitor
@@ -2358,7 +2358,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the number of instructions in the program.
 	 * @return the number of instructions in the program.
 	 */
@@ -2372,7 +2372,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Returns the number of defined data in the program.
 	 * @return the number of defined data in the program.
 	 */
@@ -2386,7 +2386,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return 0;
 	}
 
-	/**
+    # /**
 	  * Returns a composite data iterator beginning at the specified start address.
 	  *
 	  * @param start the address to begin iterator
@@ -2404,7 +2404,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns a composite data iterator limited to the addresses in the specified address set.
 	 *
 	 * @param addrSet the address set to limit the iterator
@@ -2423,7 +2423,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all codeUnits in the program from the given start address to either 
 	 * the end address or the start address, depending if the iterator is forward or not.
 	 * @param start the starting address for the iterator.
@@ -2459,7 +2459,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 			getDefinedData(start, forward), mem.intersect(bounds), forward);
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all codeUnits in the given addressSet. The iterator will go from 
 	 * the lowest address to the largest or from the largest to the lowest depending on the forward 
 	 * parameter.
@@ -2476,7 +2476,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 			getDefinedData(set, forward), set, forward);
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all instructions in the program from the given start address to 
 	 * either the end address or the start address, depending if the iterator is forward or not.
 	 * @param address the starting address for the iterator.
@@ -2496,7 +2496,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all defined data in the program from the given start address to 
 	 * either the end address or the start address, depending if the iterator is forward or not.
 	 * @param address the starting address for the iterator.
@@ -2516,7 +2516,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all instructions in the given addressSet. The iterator will go from 
 	 * the lowest address to the largest or from the largest to the lowest depending on the forward 
 	 * parameter.
@@ -2537,7 +2537,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all data in the program from the given start address to either the 
 	 * end address or the start address, depending if the iterator is forward or not.
 	 * @param start the starting address for the iterator.
@@ -2550,7 +2550,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return new DataFilteredCodeUnitIterator(getCodeUnits(start, forward));
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all data in the given addressSet. The iterator will go from the 
 	 * lowest address to the largest or from the largest to the lowest depending on the forward 
 	 * parameter.
@@ -2563,7 +2563,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return new DataFilteredCodeUnitIterator(getCodeUnits(set, forward));
 	}
 
-	/**
+    # /**
 	 * Returns an iterator over all defined data in the given addressSet. The iterator will go from 
 	 * the lowest address to the largest or from the largest to the lowest depending on the forward 
 	 * parameter.
@@ -2582,7 +2582,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Check if any instruction intersects the specified address range.
 	 * The specified start and end addresses must form a valid range within
 	 * a single {@link AddressSpace}.
@@ -2623,7 +2623,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Checks if all the addresses from start to end have undefined data.
 	 * @param start the first address in the range to check.
 	 * @param end the last address in the range to check.
@@ -2684,7 +2684,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Removes any data objects that have dataTypes matching the given dataType ids.
 	 * @param dataTypeIDs the set of {@link DataType} IDs that have been deleted.
 	 * @param monitor the task monitor.
@@ -2735,7 +2735,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return propertyMapMgr;
 	}
 
-	/**
+    # /**
 	 * Get the InstructionDB object from the cache; if it is not in the cache, create a new DB 
 	 * object and add it.
 	 * @param rec record for the instruction
@@ -2764,7 +2764,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the DataDB object from the cache; if it is not in the cache, create a new DB object and 
 	 * add it.
 	 * @param rec data record
@@ -2835,7 +2835,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Move the prototypes in the range to the new start location.
 	 */
 	private void moveDefinedCodeUnits(Address startAddr, Address newStartAddr, long length,
@@ -2860,7 +2860,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * For each instruction in the range being moved, create the symbols and add the references.
 	 */
 	private void addMovedInstructionReferences(Address start, Address end, TaskMonitor monitor)
@@ -2874,7 +2874,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * For each instruction in the range being moved, create the symbols and add the references.
 	 */
 	private void addMovedDataReferences(Address start, Address end, TaskMonitor monitor)
@@ -2889,7 +2889,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Updates the default references for a new or updated instruction.
 	 */
 	private void addReferencesForInstruction(InstructionDB inst) {
@@ -2990,7 +2990,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove the specified reference is from oldRefList if present, otherwise add to instruction 
 	 * as a DEFAULT. Return as preferred primary reference if it previously existed as a primary 
 	 * reference in oldRefList or the specified operandPrimaryRef was null.
@@ -3021,7 +3021,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return operandPrimaryRef;
 	}
 
-	/**
+    # /**
 	 * Remove matching memory reference from oldRefList (considers toAddr and opIndex only)
 	 * @param oldRefList list of existing DEFAULT memory references (may be null)
 	 * @param toAddr new reference destination address
@@ -3048,7 +3048,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get operand reference type for a new default memory reference
 	 * @param inst instruction
 	 * @param opIndex operand index
@@ -3078,7 +3078,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return refType;
 	}
 
-	/**
+    # /**
 	 * Returns the reference manager being used by this code manager.
 	 *
 	 * @return ReferenceManager the reference manager being used by this code manager
@@ -3202,14 +3202,14 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Invalidates the cache for the code units.
 	 */
 	public void invalidateCodeUnitCache() {
 		cache.invalidate();
 	}
 
-	/**
+    # /**
 	 * Notification that memory has changed, so clear the cache for the affected code units.
 	 * @param addr start of change
 	 * @param end end address of change
@@ -3229,7 +3229,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Callback from ReferenceManager when a new fall-through reference is set.
 	 * @param fromAddr fall-through from location
 	 * @param newFallThroughRef new fallthrough reference or null if removed
@@ -3265,7 +3265,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the comment for the given type at the specified address.
 	 *
 	 * @param commentType either EOL_COMMENT, PRE_COMMENT, POST_COMMENT, PLATE_COMMENT, or 
@@ -3289,7 +3289,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Set the comment for the given comment type at the specified address.
 	 *
 	 * @param address the address of the comment.
@@ -3366,7 +3366,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the comment history for the comment type at the given address 
 	 * 
 	 * @param addr address for the comment history
@@ -3477,7 +3477,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Add comment history records for comments being deleted.
 	 * @param start start address
 	 * @param end end address
@@ -3505,7 +3505,7 @@ public class CodeManager implements ErrorHandler, ManagerDB {
 
 	private HashMap<Long, Byte> redisassmblyFlags;
 
-	/**
+    # /**
 	 * Complete language transformation of all instructions.  All existing prototypes will be 
 	 * discarded and all instructions re-disassembled following flow and adjusting context as 
 	 * needed. Instructions which fail to re-disassemble will be marked - since only one byte will 

@@ -68,22 +68,22 @@ import ghidra.util.task.TaskMonitor;
  */
 public class DecompilerNestedLayout extends AbstractFGLayout {
 
-	/** Amount of visual buffer between edges and other things used to show separation */
+    # /** Amount of visual buffer between edges and other things used to show separation */
 	private static final int EDGE_SPACING = 5;
 
-	/** The space between an articulation point and its vertex */
+    # /** The space between an articulation point and its vertex */
 	private static final int VERTEX_TO_EDGE_ARTICULATION_PADDING = 20;
 
 	private static final int VERTEX_TO_EDGE_AVOIDANCE_PADDING =
 		VERTEX_TO_EDGE_ARTICULATION_PADDING - EDGE_SPACING;
 
-	/** Multiplier used to grow spacing as distance between two edge endpoints grows */
+    # /** Multiplier used to grow spacing as distance between two edge endpoints grows */
 	private static final int EDGE_ENDPOINT_DISTANCE_MULTIPLIER = 20;
 
-	/** Amount to keep an edge away from the bounding box of a vertex */
+    # /** Amount to keep an edge away from the bounding box of a vertex */
 	private static final int VERTEX_BORDER_THICKNESS = EDGE_SPACING;
 
-	/** An amount by which edges entering a vertex from the left are offset to avoid overlapping */
+    # /** An amount by which edges entering a vertex from the left are offset to avoid overlapping */
 	private static final int EDGE_OFFSET_INCOMING_FROM_LEFT = EDGE_SPACING;
 
 	private DecompilerBlockGraph blockGraphRoot;
@@ -1056,7 +1056,7 @@ public class DecompilerNestedLayout extends AbstractFGLayout {
 // Inner Classes
 //==================================================================================================
 
-	/**
+    # /**
 	 * Encapsulates knowledge of edge direction (up/down, left/right) and uses that knowledge
 	 * to report vertex offsets from the appropriate side and top/bottom
 	 */
@@ -1106,7 +1106,7 @@ public class DecompilerNestedLayout extends AbstractFGLayout {
 		}
 	}
 
-	/**
+    # /**
 	 * Factory for creating and caching {@link Vertex2d} objects
 	 */
 	private class Vertex2dFactory {
@@ -1155,7 +1155,7 @@ public class DecompilerNestedLayout extends AbstractFGLayout {
 		}
 	}
 
-	/**
+    # /**
 	 * A class that represents 2D information about the contained vertex, such as location,
 	 * bounds, row and column of the layout grid.
 	 */

@@ -34,7 +34,7 @@ public abstract class FGLayoutProvider implements LayoutProvider<FGVertex, FGEdg
 		return getFGLayout(graph, monitor);
 	}
 
-	/**
+    # /**
 	 * Creates an options object for layouts created by this provider. Returns null if there 
 	 * are not options for layouts created by this provider.
 	 * 

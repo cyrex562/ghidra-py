@@ -15,7 +15,7 @@
  */
 package ghidra.app.decompiler.parallel;
 
-import java.io.IOException;
+
 
 import generic.cache.CachingPool;
 import generic.cache.CountingBasicFactory;

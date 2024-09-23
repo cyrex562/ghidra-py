@@ -38,7 +38,7 @@ public abstract class Task implements MonitoredRunnable {
 	private boolean canCancel;
 	private boolean isCancelled;
 
-	/**
+    # /**
 	 * Creates new Task.
 	 *
 	 * @param title the title associated with the task
@@ -47,7 +47,7 @@ public abstract class Task implements MonitoredRunnable {
 		this(title, true, false, true, false);
 	}
 
-	/**
+    # /**
 	 * Construct a new Task.
 	 * @param title title the title associated with the task
 	 * @param canCancel true means that the user can cancel the task
@@ -61,7 +61,7 @@ public abstract class Task implements MonitoredRunnable {
 		this(title, canCancel, hasProgress, isModal, false);
 	}
 
-	/**
+    # /**
 	 * Construct a new Task.
 	 * @param title title the title associated with the task
 	 * @param canCancel true means that the user can cancel the task
@@ -87,7 +87,7 @@ public abstract class Task implements MonitoredRunnable {
 		this.waitForTaskCompleted = waitForTaskCompleted;
 	}
 
-	/**
+    # /**
 	 * Get the title associated with the task
 	 * @return String title shown in the dialog
 	 */
@@ -95,7 +95,7 @@ public abstract class Task implements MonitoredRunnable {
 		return title;
 	}
 
-	/**
+    # /**
 	 * Returns the alignment of the text displayed in the modal dialog.  The default is
 	 * {@link SwingConstants#CENTER}.   For status updates where the initial portion of the
 	 * text does not change, {@link SwingConstants#LEADING} is recommended.  To change the
@@ -108,7 +108,7 @@ public abstract class Task implements MonitoredRunnable {
 		return SwingConstants.CENTER;
 	}
 
-	/**
+    # /**
 	 * Returns the value of the 'wait for completed task' boolean that was passed into this class
 	 * @return the value
 	 */
@@ -116,7 +116,7 @@ public abstract class Task implements MonitoredRunnable {
 		return waitForTaskCompleted;
 	}
 
-	/**
+    # /**
 	 * When an object implementing interface <code>Runnable</code> is used to create a thread,
 	 * starting the thread causes the object's <code>run</code> method to be called in that
 	 * separately executing thread.
@@ -182,7 +182,7 @@ public abstract class Task implements MonitoredRunnable {
 		}
 	}
 
-	/**
+    # /**
 	 * This is the method that will be called to do the work
 	 *
 	 * <P>Note: The run(TaskMonitor) method should not make any calls directly
@@ -198,7 +198,7 @@ public abstract class Task implements MonitoredRunnable {
 	 */
 	public abstract void run(TaskMonitor monitor) throws CancelledException;
 
-	/**
+    # /**
 	 * Return true if the task has a progress indicator.
 	 * @return boolean true if the task shows progress
 	 */
@@ -206,7 +206,7 @@ public abstract class Task implements MonitoredRunnable {
 		return hasProgress;
 	}
 
-	/**
+    # /**
 	 * Sets this task to have progress or not.  Note: changing this value after launching the
 	 * task will have no effect.
 	 * @param b true to show progress, false otherwise.
@@ -215,7 +215,7 @@ public abstract class Task implements MonitoredRunnable {
 		this.hasProgress = b;
 	}
 
-	/**
+    # /**
 	 * Returns true if the task can be canceled.
 	 * @return boolean true if the user can cancel the task
 	 */
@@ -223,7 +223,7 @@ public abstract class Task implements MonitoredRunnable {
 		return canCancel;
 	}
 
-	/**
+    # /**
 	 * Returns true if the dialog associated with the task is modal.
 	 * @return boolean true if the associated dialog is modal
 	 */
@@ -231,7 +231,7 @@ public abstract class Task implements MonitoredRunnable {
 		return isModal;
 	}
 
-	/**
+    # /**
 	 * Sets the task listener on this task.  It is a programming error to call this method more
 	 * than once or to call this method if a listener was passed into the constructor of this class.
 	 * @param listener the listener

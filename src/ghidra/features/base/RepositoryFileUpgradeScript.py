@@ -19,7 +19,7 @@
 // the batch upgrade.
 //
 //@category Upgrade
-import java.io.IOException;
+
 
 import ghidra.app.script.GhidraScript;
 import ghidra.framework.client.ClientUtil;

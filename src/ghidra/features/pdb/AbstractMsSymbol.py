@@ -76,7 +76,7 @@ public abstract class AbstractMsSymbol extends AbstractParsableItem {
 	//private static final Class[] parameterTypes = { StringBuilder.class };
 	protected AbstractPdb pdb;
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -100,7 +100,7 @@ public abstract class AbstractMsSymbol extends AbstractParsableItem {
 //		}
 	}
 
-	/**
+    # /**
 	 * Returns the unique ID (PdbId) for this symbol type.
 	 * @return Identifier for this symbol type.
 	 */
@@ -111,7 +111,7 @@ public abstract class AbstractMsSymbol extends AbstractParsableItem {
 		builder.append("NotImplemented(" + this.getClass().getSimpleName() + ")");
 	}
 
-	/**
+    # /**
 	 * Returns the String representation of the symbol type name, per API.
 	 * @return String name.
 	 */

@@ -39,7 +39,7 @@ public class GGlassPane extends JComponent {
 	private static WeakSet<GGlassPane> systemGlassPanes =
 		WeakDataStructureFactory.createSingleThreadAccessWeakSet();
 
-	/** A listener to block input and beep when a click is executed */
+    # /** A listener to block input and beep when a click is executed */
 	private MouseListener blockingMouseListener = new MouseAdapter() {
 		@Override
 		public void mouseClicked(MouseEvent e) {
@@ -52,7 +52,7 @@ public class GGlassPane extends JComponent {
 	private Cursor nonBusyCursor = DEFAULT_CURSOR;
 	private boolean isBusy;
 
-	/**
+    # /**
 	 * Default constructor.
 	 * <p>
 	 * <b>NOTE: </b>You must call {@link #setVisible(boolean) setVisible(true)} on this component <b>after adding it
@@ -63,7 +63,7 @@ public class GGlassPane extends JComponent {
 		systemGlassPanes.add(this);
 	}
 
-	/**
+    # /**
 	 * Adds a painter that will be called when this pane's {@link #paintComponent(Graphics)} 
 	 * method is called.
 	 * @param painter the painter to add
@@ -79,7 +79,7 @@ public class GGlassPane extends JComponent {
 		repaint();
 	}
 
-	/**
+    # /**
 	 * When set busy is called, a busy cursor will be displayed <b>and</b> all user mouse and 
 	 * keyboard events will be blocked.
 	 * 
@@ -98,7 +98,7 @@ public class GGlassPane extends JComponent {
 		paintImmediately(getBounds());
 	}
 
-	/**
+    # /**
 	 * Sets the busy state of all glass panes created in the VM.
 	 * @param isBusy the busy state of all glass panes created in the VM.
 	 */
@@ -108,7 +108,7 @@ public class GGlassPane extends JComponent {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this glass pane is blocking user input.
 	 * @return true if this glass pane is blocking user input.
 	 */

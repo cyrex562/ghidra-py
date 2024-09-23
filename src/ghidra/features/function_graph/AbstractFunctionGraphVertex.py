@@ -52,7 +52,7 @@ public abstract class AbstractFunctionGraphVertex implements FGVertex {
 	private boolean doHashCode = true;
 	private int hashCode;
 
-	/**
+    # /**
 	 * To be restored when the component for this vertex is created.
 	 */
 	protected Color pendingRestoreColor;

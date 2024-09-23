@@ -29,7 +29,7 @@ public class Numeric {
 	private int subTypeIndex;
 	private Object object;
 
-	/**
+    # /**
 	 * Constructor for a Numeric.
 	 * @param reader the {@link PdbByteReader} from which to parse the data.
 	 * @throws PdbException upon not enough data left to parse.
@@ -120,7 +120,7 @@ public class Numeric {
 		return object.toString();
 	}
 
-	/**
+    # /**
 	 * Parses an integral MSFT Numeric type from the PdbByteReader.
 	 * @param reader the {@link PdbByteReader} from which to parse the data.
 	 * @throws PdbException Upon not enough data left to parse or unknown subtype.
@@ -228,7 +228,7 @@ public class Numeric {
 	// Note: as of this writing, the following code is still in the PdbByteWriter as it is
 	//  used by TypesTest methods.  TODO: if we get a suitable replacement here, then delete
 	//  method in PdbByteWriter and convert the tests to use this class.
-//	/**
+//    # /**
 //	 * Put the data to occupy the next Numeric field in the byte array.  For Numeric definition,
 //	 *  see the PdbByteReader method for reading such a field.  If value is too large for the
 //	 *  encoding code, the value is masked.
@@ -306,7 +306,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a Real16 number
 	 */
 	private class Real16 extends AbstractNumericOther {
@@ -315,7 +315,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a Real48 number
 	 */
 	private class Real48 extends AbstractNumericOther {
@@ -324,7 +324,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a Real80 number
 	 */
 	private class Real80 extends AbstractNumericOther {
@@ -333,7 +333,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a Real128 number
 	 */
 	private class Real128 extends AbstractNumericOther {
@@ -342,7 +342,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a Complex32 (2 x 32-bits)
 	 */
 	private class Complex32 extends AbstractNumericOther {
@@ -351,7 +351,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a Complex64 (2 x 64-bits)
 	 */
 	private class Complex64 extends AbstractNumericOther {
@@ -360,7 +360,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a Complex80 (2 x 80-bits)
 	 */
 	private class Complex80 extends AbstractNumericOther {
@@ -369,7 +369,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a Complex128 (2 x 128-bits)
 	 */
 	private class Complex128 extends AbstractNumericOther {
@@ -378,7 +378,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a MSFT DATE.
 	 */
 	private class Date extends AbstractNumericOther {
@@ -388,7 +388,7 @@ public class Numeric {
 		}
 	}
 
-	/**
+    # /**
 	 * Represents a MSFT DECIMAL.
 	 */
 	private class Decimal extends AbstractNumericOther {

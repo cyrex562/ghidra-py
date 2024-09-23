@@ -18,7 +18,7 @@ package ghidra.framework.main.logviewer.ui;
 import java.awt.BorderLayout;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.*;
@@ -68,7 +68,7 @@ public class FileViewer extends JPanel implements Observer {
 
 	private FVEventListener eventListener;
 
-	/**
+    # /**
 	 * Constructor.
 	 *
 	 * @param reader the log file reader
@@ -128,7 +128,7 @@ public class FileViewer extends JPanel implements Observer {
 // Private Methods
 //=================================================================================================
 
-	/**
+    # /**
 	 * Processes events received via the {@link FVEvent} mechanism.
 	 *
 	 * @param event the event type received
@@ -253,7 +253,7 @@ public class FileViewer extends JPanel implements Observer {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the scroll lock state.
 	 *
 	 * @param lock if true, scrolling will be locked
@@ -262,7 +262,7 @@ public class FileViewer extends JPanel implements Observer {
 		toolbar.setScrollLockOn(lock);
 	}
 
-	/**
+    # /**
 	 * Loads the last chunk and moves the viewport accordingly.
 	 */
 	private void viewEndOfFile(boolean updateSlider) {
@@ -282,7 +282,7 @@ public class FileViewer extends JPanel implements Observer {
 		}
 	}
 
-	/**
+    # /**
 	 * Loads the first chunk and moves the viewport accordingly.
 	 */
 	private void viewTopOfFile() {
@@ -323,7 +323,7 @@ public class FileViewer extends JPanel implements Observer {
 		}
 	}
 
-	/**
+    # /**
 	 * Reloads the file. When this happens we maintain the position of the slider, unless the
 	 * scroll lock capability is turned OFF; in that case we will display new text that is
 	 * appended to the file (if the user is also at the bottom of the file).

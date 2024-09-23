@@ -16,7 +16,7 @@
 package ghidra.app.util.bin.format.dwarf.sectionprovider;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.program.model.listing.Program;

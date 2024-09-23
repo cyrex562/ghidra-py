@@ -24,37 +24,37 @@ import ghidra.program.model.address.Address;
  */
 public interface Bookmark extends Comparable<Bookmark> {
 
-	/**
+    # /**
 	 * Returns the id of the bookmark.
 	 */
 	long getId();
 
-	/**
+    # /**
 	 * Returns address at which this bookmark is applied.
 	 */
 	Address getAddress();
 	
-	/**
+    # /**
 	 * Returns bookmark type object.
 	 */
 	BookmarkType getType();
 	
-	/**
+    # /**
 	 * Returns bookmark type as a string
 	 */
 	String getTypeString();
 	
-	/**
+    # /**
 	 * Returns bookmark category
 	 */
 	String getCategory();
 
-	/**
+    # /**
 	 * Returns bookmark comment
 	 */
 	String getComment();
 	
-	/**
+    # /**
 	 * Set the category and comment associated with a bookmark.
 	 * @param category category
 	 * @param comment single line comment

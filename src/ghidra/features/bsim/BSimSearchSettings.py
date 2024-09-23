@@ -46,7 +46,7 @@ public class BSimSearchSettings {
 		this.filterSet = settings.getBSimFilterSet().copy();
 	}
 
-	/**
+    # /**
 	 * Returns the similarity criteria.
 	 * @return the similarity criteria.
 	 */
@@ -54,7 +54,7 @@ public class BSimSearchSettings {
 		return similarity;
 	}
 
-	/**
+    # /**
 	 * Returns the confidence criteria.
 	 * @return the confidence criteria.
 	 */
@@ -62,7 +62,7 @@ public class BSimSearchSettings {
 		return confidence;
 	}
 
-	/**
+    # /**
 	 * Returns the maximum number of matches for a single function.
 	 * @return the maximum number of matches for a single function
 	 */
@@ -70,7 +70,7 @@ public class BSimSearchSettings {
 		return maxResults;
 	}
 
-	/**
+    # /**
 	 * Returns the filters to be used for the query
 	 * @return the filters to be used for the query
 	 */
@@ -78,7 +78,7 @@ public class BSimSearchSettings {
 		return filterSet;
 	}
 
-	/**
+    # /**
 	 * Returns a copy of this settings.
 	 * @return a copy of this settings.
 	 */

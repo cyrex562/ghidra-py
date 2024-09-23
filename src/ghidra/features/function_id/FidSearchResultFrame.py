@@ -17,7 +17,7 @@ package ghidra.feature.fid.debug;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.io.IOException;
+
 import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.List;

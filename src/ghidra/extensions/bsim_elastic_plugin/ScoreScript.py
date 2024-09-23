@@ -16,7 +16,7 @@
  */
 package org.elasticsearch.script;
 
-import java.io.IOException;
+
 import java.util.Map;
 
 import org.elasticsearch.search.lookup.SearchLookup;

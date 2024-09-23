@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -59,7 +59,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 
 	private boolean flexArrayMigrationRequired = false; // signals flex-array migration required
 
-	/**
+    # /**
 	 * After construction for UPGRADE mode this method can be used to determine if
 	 * a migration of all Struture flex-array components is required.
 	 * @return true if flex-array migration required, else false
@@ -68,7 +68,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 		return flexArrayMigrationRequired;
 	}
 
-	/**
+    # /**
 	 * Gets an adapter for working with the composite data type database table.
 	 * The composite table is used to store structures and unions. The adapter is based
 	 * on the version of the database associated with the specified database handle and the openMode.
@@ -98,7 +98,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Tries to get a read only adapter for the database whose handle is passed to this method.
 	 * @param handle handle to prior version of the database.
 	 * @param tablePrefix prefix to be used with default table name
@@ -129,7 +129,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 		return new CompositeDBAdapterV0(handle);
 	}
 
-	/**
+    # /**
 	 * Upgrades the Composite data type table from the oldAdapter's version to the current version.
 	 * @param handle handle to the database whose table is to be upgraded to a newer version.
 	 * @param oldAdapter the adapter for the existing table to be upgraded.
@@ -176,13 +176,13 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the adapter schema version
 	 * @return adapter schema version
 	 */
 	abstract int getVersion();
 
-	/**
+    # /**
 	 * Creates a database record for a composite data type (structure or union).
 	 * @param name the unique name for this data type
 	 * @param comments comments about this data type
@@ -204,7 +204,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 			int length, int computedAlignment, long sourceArchiveID, long sourceDataTypeID,
 			long lastChangeTime, int packValue, int minAlignment) throws IOException;
 
-	/**
+    # /**
 	 * Gets a composite data type record from the database based on its ID.
 	 * @param dataTypeID the data type's ID.
 	 * @return the record for the composite (structure or union) data type.
@@ -212,7 +212,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 	 */
 	abstract DBRecord getRecord(long dataTypeID) throws IOException;
 
-	/**
+    # /**
 	 * Gets an iterator over all composite (structure and union) data type records.
 	 * @return the composite data type record iterator.
 	 * @throws IOException if the database can't be accessed.
@@ -220,7 +220,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 	@Override
 	public abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Updates the composite data type table with the provided record.
 	 * @param record the new record
 	 * @param setLastChangeTime true means change the last change time in the record to the
@@ -229,7 +229,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 	 */
 	abstract void updateRecord(DBRecord record, boolean setLastChangeTime) throws IOException;
 
-	/**
+    # /**
 	 * Removes the composite data type record with the specified ID.
 	 * @param dataID the ID of the data type.
 	 * @return true if the record is removed.
@@ -237,14 +237,14 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 	 */
 	abstract boolean removeRecord(long dataID) throws IOException;
 
-	/**
+    # /**
 	 * Deletes the composite data type table from the database with the specified database handle.
 	 * @param handle handle to the database where the table should get deleted.
 	 * @throws IOException if the database can't be accessed.
 	 */
 	abstract void deleteTable(DBHandle handle) throws IOException;
 
-	/**
+    # /**
 	 * Gets all the composite data types that are contained in the category that has the indicated ID.
 	 * @param categoryID the category whose composite data types are wanted.
 	 * @return an array of IDs as LongField values within Field array for the
@@ -253,7 +253,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 	 */
 	abstract Field[] getRecordIdsInCategory(long categoryID) throws IOException;
 
-	/**
+    # /**
 	 * Gets an array with the IDs of all data types in the composite table that were derived
 	 * from the source data type archive indicated by the source archive ID.
 	 * @param archiveID the ID of the source archive whose data types we want.
@@ -262,7 +262,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 	 */
 	abstract Field[] getRecordIdsForSourceArchive(long archiveID) throws IOException;
 
-	/**
+    # /**
 	 * Get composite record whose sourceID and datatypeID match the specified Universal IDs.
 	 * @param sourceID universal source archive ID
 	 * @param datatypeID universal datatype ID
@@ -272,7 +272,7 @@ abstract class CompositeDBAdapter implements DBRecordAdapter {
 	abstract DBRecord getRecordWithIDs(UniversalID sourceID, UniversalID datatypeID)
 			throws IOException;
 
-	/**
+    # /**
 	 * Get the number of composite datatype records
 	 * @return total number of composite records
 	 */

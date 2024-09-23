@@ -96,7 +96,7 @@ public class DecompileResults {
 //		}
 //	}
 
-	/**
+    # /**
 	 * Returns true if the decompilation producing these
 	 * results completed without aborting.  If it was
 	 * aborted, there will be no real results in this
@@ -112,7 +112,7 @@ public class DecompileResults {
 		return function;
 	}
 
-	/**
+    # /**
 	 * If the action producing this set of decompiler results
 	 * didn't complete, this method can be used to determine
 	 * if the action was halted because its timer expired
@@ -124,7 +124,7 @@ public class DecompileResults {
 		return processState == DecompileProcess.DisposeState.DISPOSED_ON_TIMEOUT;
 	}
 
-	/**
+    # /**
 	 * If the action producing this set of decompiler results
 	 * didn't complete, this method can be used to determine
 	 * if the action was explicitly cancelled (as opposed
@@ -135,7 +135,7 @@ public class DecompileResults {
 		return processState == DecompileProcess.DisposeState.DISPOSED_ON_CANCEL;
 	}
 
-	/**
+    # /**
 	 * If the action producing this set of decompiler results
 	 * didn't complete, this method can be used to determine
 	 * if the decompiler executable was not found or failed to start properly.
@@ -145,7 +145,7 @@ public class DecompileResults {
 		return processState == DecompileProcess.DisposeState.DISPOSED_ON_STARTUP_FAILURE;
 	}
 
-	/** 
+    # /** 
 	 * Returns true if the decompile completed normally
 	 * @return true if the decompile completed normally
 	 */
@@ -153,7 +153,7 @@ public class DecompileResults {
 		return errMsg == null || errMsg.isBlank();
 	}
 
-	/**
+    # /**
 	 * Return any error message associated with the
 	 * decompilation producing these results.  Generally,
 	 * there will only be an error if the decompilation was
@@ -166,7 +166,7 @@ public class DecompileResults {
 		return errMsg;
 	}
 
-	/**
+    # /**
 	 * Get the high-level function structure associated
 	 * with these decompilation results, or null if there
 	 * was an error during decompilation
@@ -176,7 +176,7 @@ public class DecompileResults {
 		return hfunc;
 	}
 
-	/**
+    # /**
 	 * Get the high-level function structure associated
 	 * with these decompilation results, or null if there
 	 * was an error during decompilation
@@ -186,7 +186,7 @@ public class DecompileResults {
 		return hparamid;
 	}
 
-	/**
+    # /**
 	 * Get the marked up C code associated with these
 	 * decompilation results. If there was an error, or
 	 * code generation was turned off, return null
@@ -196,7 +196,7 @@ public class DecompileResults {
 		return docroot;
 	}
 
-	/**
+    # /**
 	 * Converts the C code results into an unadorned string.
 	 * The returned object contains both the whole function
 	 * and just the prototype as separate strings containing

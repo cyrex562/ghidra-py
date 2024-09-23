@@ -29,7 +29,7 @@ public class FilteringAccumulatorWrapper<T> implements Accumulator<T> {
 	private Accumulator<T> accumulator;
 	private Predicate<T> predicate;
 
-	/**
+    # /**
 	 * Constructor.
 	 *  
 	 * @param accumulator the accumulator to pass items to

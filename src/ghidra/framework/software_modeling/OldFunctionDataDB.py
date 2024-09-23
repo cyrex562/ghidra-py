@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.oldfunction;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.Field;
@@ -33,8 +33,8 @@ import ghidra.util.StringUtilities;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- *
- */
+# *
+# */
 class OldFunctionDataDB {
 
 	private AddressMap addrMap;
@@ -74,14 +74,14 @@ class OldFunctionDataDB {
 		return functionManager;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getProgram()
 	 */
 	public Program getProgram() {
 		return program;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getComment()
 	 */
 	public synchronized String getComment() {
@@ -90,14 +90,14 @@ class OldFunctionDataDB {
 		return cu.getComment(CodeUnit.PLATE_COMMENT);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getCommentAsArray()
 	 */
 	public synchronized String[] getCommentAsArray() {
 		return StringUtilities.toLines(getComment());
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getRepeatableComment()
 	 */
 	public String getRepeatableComment() {
@@ -105,7 +105,7 @@ class OldFunctionDataDB {
 		return comment;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getRepeatableCommentAsArray()
 	 */
 	public String[] getRepeatableCommentAsArray() {
@@ -113,14 +113,14 @@ class OldFunctionDataDB {
 		return StringUtilities.toLines(comment);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getEntryPoint()
 	 */
 	public synchronized Address getEntryPoint() {
 		return entryPoint;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getBody()
 	 */
 	public AddressSetView getBody() {
@@ -130,7 +130,7 @@ class OldFunctionDataDB {
 		return body;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getReturnType()
 	 */
 	public synchronized DataType getReturnType() {
@@ -142,14 +142,14 @@ class OldFunctionDataDB {
 		return dt;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getStackFrame()
 	 */
 	public StackFrame getStackFrame() {
 		return frame;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.Function#getStackPurgeSize()
 	 */
 	public int getStackDepthChange() {
@@ -167,7 +167,7 @@ class OldFunctionDataDB {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Get the first parameter offset for the function stack frame.
 	 * @return int
 	 */
@@ -175,7 +175,7 @@ class OldFunctionDataDB {
 		return functionRecord.getIntValue(OldFunctionDBAdapter.STACK_PARAM_OFFSET_COL);
 	}
 
-	/**
+    # /**
 	 * Get the return value offset for the function stack frame.
 	 * @return int
 	 */
@@ -183,7 +183,7 @@ class OldFunctionDataDB {
 		return functionRecord.getIntValue(OldFunctionDBAdapter.STACK_RETURN_OFFSET_COL);
 	}
 
-	/**
+    # /**
 	 * Get the stack space used by this function.
 	 * @return int
 	 */
@@ -191,7 +191,7 @@ class OldFunctionDataDB {
 		return functionRecord.getIntValue(OldFunctionDBAdapter.STACK_LOCAL_SIZE_COL);
 	}
 
-	/**
+    # /**
 	 * Load the register variable/parameter list from the database.
 	 * @return register
 	 */

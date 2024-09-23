@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.debug;
 
-import java.io.IOException;
+
 
 import javax.swing.*;
 

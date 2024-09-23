@@ -18,7 +18,7 @@ package ghidra.trace.database.program;
 import static ghidra.lifecycle.Unfinished.TODO;
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.junit.*;

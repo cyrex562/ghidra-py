@@ -15,7 +15,7 @@
  */
 package ghidra.net;
 
-import java.io.IOException;
+
 import java.net.http.HttpClient;
 import java.net.http.HttpClient.Redirect;
 import java.security.NoSuchAlgorithmException;
@@ -23,7 +23,7 @@ import java.security.NoSuchAlgorithmException;
 import javax.net.ssl.SSLContext;
 
 public class HttpClients {
-	/**
+    # /**
 	 * Note: java.net.http.HttpClient instances can allocate system resources (file handles),
 	 * and frequently creating a new HttpClient could exhaust system resources.
 	 * <p>
@@ -40,7 +40,7 @@ public class HttpClients {
 	 */
 	private static HttpClient client;
 
-	/**
+    # /**
 	 * Creates a HttpClient Builder using Ghidra SSL/TLS context info.
 	 * 
 	 * @return a new HttpClient Builder
@@ -63,7 +63,7 @@ public class HttpClients {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a shared, plain (no special options) {@link HttpClient}.
 	 * 
 	 * @return a {@link HttpClient}
@@ -77,7 +77,7 @@ public class HttpClients {
 		return client;
 	}
 
-	/**
+    # /**
 	 * Clears the currently cached {@link HttpClient}, forcing it to be
 	 * rebuilt during the next call to {@link #getHttpClient()}.
 	 */

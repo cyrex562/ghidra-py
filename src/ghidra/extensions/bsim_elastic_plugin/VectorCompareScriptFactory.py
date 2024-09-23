@@ -15,7 +15,7 @@
  */
 package org.elasticsearch.plugin.analysis.lsh;
 
-import java.io.*;
+
 import java.util.Map;
 
 import org.apache.lucene.document.Document;

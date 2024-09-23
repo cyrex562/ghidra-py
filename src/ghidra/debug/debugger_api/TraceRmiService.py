@@ -15,7 +15,7 @@
  */
 package ghidra.app.services;
 
-import java.io.IOException;
+
 import java.net.SocketAddress;
 import java.util.Collection;
 

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dtb;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
@@ -53,7 +53,7 @@ public class DtTableEntry implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) Table Size.
 	 * @return the Device Tree (DT) Table Size
 	 */
@@ -61,7 +61,7 @@ public class DtTableEntry implements StructConverter {
 		return dt_size;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) Table Offset.
 	 * @return the Device Tree (DT) Table Offset
 	 */
@@ -69,7 +69,7 @@ public class DtTableEntry implements StructConverter {
 		return dt_offset;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) Table ID.
 	 * @return the Device Tree (DT) Table ID
 	 */
@@ -77,7 +77,7 @@ public class DtTableEntry implements StructConverter {
 		return id;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) Table Revision.
 	 * @return the Device Tree (DT) Table Revision
 	 */
@@ -85,7 +85,7 @@ public class DtTableEntry implements StructConverter {
 		return rev;
 	}
 
-	/**
+    # /**
 	 * Returns the Device Tree (DT) Table Custom Bytes.
 	 * @return the Device Tree (DT) Table Custom Bytes
 	 */
@@ -93,7 +93,7 @@ public class DtTableEntry implements StructConverter {
 		return custom;
 	}
 
-	/**
+    # /**
 	 * Returns the FDT Header.
 	 * @return the FDT Header
 	 */

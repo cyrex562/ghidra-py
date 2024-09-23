@@ -47,7 +47,7 @@
 //@category Program
 //@menupath Edit.Paste Listing Text
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 

@@ -18,7 +18,7 @@
 //  Subfolders at a specific depth from this root form the roots of individual libraries
 //    Library Name, Version, and Variant are created from the directory path elements
 //@category FunctionID
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -244,7 +244,7 @@ public class CreateMultipleLibraries extends GhidraScript {
 		}
 	}
 
-	/**
+    # /**
 	 * Recursively finds all domain objects that are program files under a domain folder.
 	 * @param programs the "return" value; found programs are placed in this collection
 	 * @param myFolder the domain folder to search

@@ -93,7 +93,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		public final String label;
 		public final int value;
 
-		/**
+	    # /**
 		 * Emits {@link String} output of this class into the provided {@link StringBuilder}.
 		 * @param builder The {@link StringBuilder} into which the output is created.
 		 */
@@ -179,7 +179,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 	protected String name;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -231,7 +231,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		reader.skipPadding();
 	}
 
-	/**
+    # /**
 	 * Returns the type that is pointed to.
 	 * @return Type that is pointed to by this pointer.
 	 */
@@ -239,7 +239,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return pdb.getTypeRecord(underlyingRecordNumber);
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the type that is pointed to.
 	 * @return The record number of the type that is pointed to by this pointer.
 	 */
@@ -247,7 +247,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return underlyingRecordNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the size in bytes of the pointer.
 	 * @return The size in bytes.
 	 */
@@ -256,7 +256,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return BigInteger.valueOf(getMySize());
 	}
 
-	/**
+    # /**
 	 * Returns {@link PointerType} attribute.
 	 * @return {@link PointerType} attribute.
 	 */
@@ -264,7 +264,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return pointerType;
 	}
 
-	/**
+    # /**
 	 * Returns {@link MsPointerMode} attribute.
 	 * @return {@link MsPointerMode} attribute.
 	 */
@@ -272,7 +272,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return pointerMode;
 	}
 
-	/**
+    # /**
 	 * Returns {@link MemberPointerType} attribute.
 	 * @return {@link MemberPointerType} attribute.
 	 */
@@ -280,7 +280,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return memberPointerType;
 	}
 
-	/**
+    # /**
 	 * Returns true of flat 0:32 address model
 	 * @return true if flat
 	 */
@@ -288,7 +288,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return isFlat;
 	}
 
-	/**
+    # /**
 	 * Returns true if volatile pointer
 	 * @return true if volatile
 	 */
@@ -296,7 +296,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return isVolatile;
 	}
 
-	/**
+    # /**
 	 * Returns true if const pointer
 	 * @return true if const
 	 */
@@ -304,7 +304,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return isConst;
 	}
 
-	/**
+    # /**
 	 * Returns true if pointer not aligned on normal boundary
 	 * @return true if not aligned
 	 */
@@ -312,7 +312,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		return isUnaligned;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the class containing the member pointer
 	 * @return The record number
 	 */
@@ -351,7 +351,7 @@ public abstract class AbstractPointerMsType extends AbstractMsType {
 		getUnderlyingType().emit(builder, Bind.PTR);
 	}
 
-	/**
+    # /**
 	 * Parses the attributes of the pointer.
 	 * <P>
 	 * Implementing class must, in the appropriate order pertinent to itself, parse

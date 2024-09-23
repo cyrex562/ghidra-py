@@ -27,7 +27,7 @@ class BookmarkDBAdapterV2 extends BookmarkDBAdapterV1 {
 
 	static final int V2_VERSION = 2;
 
-	/**
+    # /**
 	 * Constructor (Version 2 Schema)
 	 * 
 	 */

@@ -36,7 +36,7 @@ public class DomainObjectChangedEvent extends EventObject
 	private List<DomainObjectChangeRecord> subEvents;
 	private BitSet eventBits = new BitSet(255);
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param src the object which has changed
@@ -50,7 +50,7 @@ public class DomainObjectChangedEvent extends EventObject
 		}
 	}
 
-	/**
+    # /**
 	 * Return the number of change records contained within this event.
 	 * @return the number of change records contained within this event 
 	 */
@@ -58,7 +58,7 @@ public class DomainObjectChangedEvent extends EventObject
 		return subEvents.size();
 	}
 
-	/**
+    # /**
 	 * Returns true if this event contains a record with the given event type
 	 * @param eventType the event type to check
 	 * @return the number of change records contained within this event.
@@ -67,7 +67,7 @@ public class DomainObjectChangedEvent extends EventObject
 		return eventBits.get(eventType.getId());
 	}
 
-	/**
+    # /**
 	 * Returns true if this event contains a record with any of the given event types.
 	 * @param types the event types to check for
 	 * @return true if this event contains a record with any of the given event types
@@ -81,7 +81,7 @@ public class DomainObjectChangedEvent extends EventObject
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if this event contains a record with the given event type. 
 	 * @param eventType the event type to check
 	 * @return the number of change records contained within this event.
@@ -94,7 +94,7 @@ public class DomainObjectChangedEvent extends EventObject
 		return eventBits.get(eventType.getId());
 	}
 
-	/**
+    # /**
 	 * Get the specified change record within this event.
 	 * @param i change record number
 	 * @return change record
@@ -103,7 +103,7 @@ public class DomainObjectChangedEvent extends EventObject
 		return subEvents.get(i);
 	}
 
-	/**
+    # /**
 	 * Returns iterator over all sub-events
 	 */
 	@Override
@@ -111,7 +111,7 @@ public class DomainObjectChangedEvent extends EventObject
 		return subEvents.iterator();
 	}
 
-	/**
+    # /**
 	 * Loops over all records in this event and calls the consumer for each record that matches
 	 * the given type.
 	 * @param type the event type to apply the consumer
@@ -128,7 +128,7 @@ public class DomainObjectChangedEvent extends EventObject
 		}
 	}
 
-	/**
+    # /**
 	 * Finds the first record with the given event type.
 	 * @param eventType the event type to search for
 	 * @return the first record with the given event type

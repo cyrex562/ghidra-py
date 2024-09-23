@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex.format;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
@@ -47,7 +47,7 @@ public class EncodedTypeAddressPair implements StructConverter {
 		return address;
 	}
 
-	/**
+    # /**
 	 * This method is only used for data type creation.
 	 * Makes names unique to prevent ".conflicts".
 	 */

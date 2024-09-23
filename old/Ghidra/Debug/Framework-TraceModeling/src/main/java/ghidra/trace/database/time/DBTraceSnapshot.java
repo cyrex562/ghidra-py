@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.time;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.dbg.target.TargetEventScope;

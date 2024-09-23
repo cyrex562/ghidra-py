@@ -25,7 +25,7 @@ public class FlatDecompilerAPI implements Disposable {
 	protected FlatProgramAPI flatProgramAPI;
 	protected DecompInterface decompiler;
 
-	/**
+    # /**
 	 * Initializes without a provided FlatProgramAPI instance...this must be set before
 	 * using the FlatDecompilerAPI!
 	 */
@@ -33,7 +33,7 @@ public class FlatDecompilerAPI implements Disposable {
 		// nothing to do...
 	}
 
-	/**
+    # /**
 	 * Initializes with a provided FlatProgramAPI instance.
 	 * @param flatProgramAPI the FlatProgramAPI instance.
 	 */
@@ -41,7 +41,7 @@ public class FlatDecompilerAPI implements Disposable {
 		this.flatProgramAPI = flatProgramAPI;
 	}
 
-	/**
+    # /**
 	 * Gets the actual decompiler (may be null if not initialized).
 	 * @return the decompiler
 	 */
@@ -49,7 +49,7 @@ public class FlatDecompilerAPI implements Disposable {
 		return decompiler;
 	}
 
-	/**
+    # /**
 	 * Decompiles the specified function and returns a
 	 * string containing the decompilation.
 	 * This call does not impose a timeout.
@@ -60,7 +60,7 @@ public class FlatDecompilerAPI implements Disposable {
 		return decompile(function, 0);
 	}
 
-	/**
+    # /**
 	 * Decompiles the specified function and returns a
 	 * string containing the decompilation.
 	 * @param function the function to decompile
@@ -78,7 +78,7 @@ public class FlatDecompilerAPI implements Disposable {
 		return res.getC();
 	}
 
-	/**
+    # /**
 	 * Initializes the decompiler instance.
 	 */
 	public final void initialize() throws Exception {
@@ -88,7 +88,7 @@ public class FlatDecompilerAPI implements Disposable {
 		}
 	}
 
-	/**
+    # /**
 	 * Disposes of the decompiler resources by calling currentDecompiler.dispose().
 	 */
 	public void dispose() {

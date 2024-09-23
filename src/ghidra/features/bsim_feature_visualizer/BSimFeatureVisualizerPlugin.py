@@ -15,7 +15,7 @@
  */
 package ghidra.bsfv;
 
-import java.io.IOException;
+
 
 import org.xml.sax.SAXException;
 
@@ -77,7 +77,7 @@ public class BSimFeatureVisualizerPlugin extends ProgramPlugin
 	private int decompilerTimeout = 10;
 	private DecompilerHighlightService highlightService;
 
-	/**
+    # /**
 	 * Creates a BSimFeatureVisualizerPlugin for the given {@link PluginTool}
 	 * @param tool plugin tool
 	 */
@@ -174,7 +174,7 @@ public class BSimFeatureVisualizerPlugin extends ProgramPlugin
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the function whose features are in displayed in the table
 	 * @return current function
 	 */
@@ -202,7 +202,7 @@ public class BSimFeatureVisualizerPlugin extends ProgramPlugin
 		super.dispose();
 	}
 
-	/**
+    # /**
 	 * Parses the signature settings from the database configuration file specified in the options
 	 * for this plugin.
 	 * @return signature settings
@@ -227,7 +227,7 @@ public class BSimFeatureVisualizerPlugin extends ProgramPlugin
 		return dbConfig.info.settings;
 	}
 
-	/**
+    # /**
 	 * Returns a boolean determining whether the plugin should reuse the graph when
 	 * drawing feature graphs.
 	 * @return reuseGraph
@@ -236,7 +236,7 @@ public class BSimFeatureVisualizerPlugin extends ProgramPlugin
 		return reuseGraph;
 	}
 
-	/**
+    # /**
 	 * Returns the decompiler timeout setting.
 	 * @return decompiler timeout
 	 */
@@ -244,7 +244,7 @@ public class BSimFeatureVisualizerPlugin extends ProgramPlugin
 		return decompilerTimeout;
 	}
 
-	/**
+    # /**
 	 * Returns a boolean indicating whether the plugin should automatically apply decompiler
 	 * highlights when the selected row changes.
 	 * @return highlight by row
@@ -253,7 +253,7 @@ public class BSimFeatureVisualizerPlugin extends ProgramPlugin
 		return highlightByRow;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link DecompilerHighlightService} for this plugin.
 	 * @return decompiler highlight service
 	 */

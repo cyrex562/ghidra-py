@@ -27,7 +27,7 @@ public class AddressGap extends AbstractParsableItem {
 	private int gapStartOffset;
 	private int lengthRange;
 
-	/**
+    # /**
 	 * Constructor for this symbol component.
 	 * @param reader {@link PdbByteReader} from which this data is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -37,7 +37,7 @@ public class AddressGap extends AbstractParsableItem {
 		lengthRange = reader.parseUnsignedShortVal();
 	}
 
-	/**
+    # /**
 	 * Returns the gap start offset.
 	 * @return Gap start offset.
 	 */
@@ -45,7 +45,7 @@ public class AddressGap extends AbstractParsableItem {
 		return gapStartOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the length range.
 	 * @return Length range.
 	 */

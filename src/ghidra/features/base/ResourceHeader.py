@@ -21,7 +21,7 @@ import ghidra.app.util.bin.format.macos.asd.*;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ResourceHeader extends Entry implements StructConverter {
 	private int resourceDataOffset;

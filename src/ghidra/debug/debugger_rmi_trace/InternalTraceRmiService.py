@@ -15,7 +15,7 @@
  */
 package ghidra.app.services;
 
-import java.io.IOException;
+
 import java.net.SocketAddress;
 
 import ghidra.app.plugin.core.debug.service.tracermi.DefaultTraceRmiAcceptor;

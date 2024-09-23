@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 import java.awt.*;
 import java.awt.datatransfer.*;
 import java.awt.geom.Point2D;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;

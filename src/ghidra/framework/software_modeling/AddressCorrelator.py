@@ -31,27 +31,27 @@ import ghidra.program.model.listing.Function;
  */
 public interface AddressCorrelator {
 
-	/**
+    # /**
 	 * The default priority.  This applies to client-supplied {@link DiscoverableAddressCorrelator}s
 	 */
 	public static final int DEFAULT_PRIORITY = 500;
 
-	/**
+    # /**
 	 * A high priority (low number value) for correlators that should used before other correlators
 	 */
 	public static final int EARLY_PRIORITY = 100;
 
-	/**
+    # /**
 	 * A low priority (high number value) for correlators that should used after other correlators
 	 */
 	public static final int LATE_CHANCE_PRIORITY = 1000;
 
-	/**
+    # /**
 	 * A value used to raise or lower priorities.
 	 */
 	public static final int PRIORITY_OFFSET = 10;
 
-	/**
+    # /**
 	 * Returns an address mapping from one function to another.
 	 * @param sourceFunction the source function.
 	 * @param destinationFunction the destination function.
@@ -60,7 +60,7 @@ public interface AddressCorrelator {
 	 */
 	public AddressCorrelation correlate(Function sourceFunction, Function destinationFunction);
 
-	/**
+    # /**
 	 * Returns an address mapping from one piece of data to another.
 	 * @param sourceData the source data.
 	 * @param destinationData the destination data.
@@ -69,25 +69,25 @@ public interface AddressCorrelator {
 	 */
 	public AddressCorrelation correlate(Data sourceData, Data destinationData);
 
-	/**
+    # /**
 	 * Returns the current Option settings for this correlator.
 	 * @return the current Option settings for this correlator.
 	 */
 	public ToolOptions getOptions();
 
-	/**
+    # /**
 	 * Sets the options to use for this correlator.
 	 * @param options the options to use for this correlator.
 	 */
 	public void setOptions(ToolOptions options);
 
-	/**
+    # /**
 	 * Returns the options with the default settings for this correlator.
 	 * @return  the options with the default settings for this correlator.
 	 */
 	public Options getDefaultOptions();
 
-	/**
+    # /**
 	 * Returns a number based on an arbitrary number scheme that dictates the order that correlators 
 	 * should be used.   If a correlator returns a null value from one of the {@code correlate()}
 	 * methods, then the next highest priority correlator will be called, and so on until a non-null

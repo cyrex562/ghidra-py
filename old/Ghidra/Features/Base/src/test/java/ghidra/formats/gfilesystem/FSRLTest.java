@@ -17,7 +17,7 @@ package ghidra.formats.gfilesystem;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 
 import org.junit.Test;

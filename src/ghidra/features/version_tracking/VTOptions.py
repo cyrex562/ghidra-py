@@ -34,7 +34,7 @@ public class VTOptions extends ToolOptions {
 		return new VTOptions(getXmlRoot(true));
 	}
 
-	/**
+    # /**
 	 * A method that allows subclasses to tell the world where their options contain acceptable
 	 * values
 	 * @return true if valid

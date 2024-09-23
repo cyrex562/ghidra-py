@@ -15,7 +15,7 @@
  */
 // Adds DWARF source file line number info to the current binary
 //@category DWARF
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.app.script.GhidraScript;

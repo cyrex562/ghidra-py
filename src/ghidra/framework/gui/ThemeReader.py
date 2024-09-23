@@ -15,7 +15,7 @@
  */
 package generic.theme;
 
-import java.io.*;
+
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -33,7 +33,7 @@ class ThemeReader extends AbstractThemeReader {
 	private File file;
 	private GTheme theme;
 
-	/**
+    # /**
 	 * Constructor for reading a theme from a file.
 	 * @param file the file to read as a theme
 	 * @throws IOException if an I/O error occurs reading the theme file
@@ -55,7 +55,7 @@ class ThemeReader extends AbstractThemeReader {
 			GTheme.ZIP_FILE_EXTENSION);
 	}
 
-	/**
+    # /**
 	 * Assumes the file is a theme file and reads it.
 	 */
 	private GTheme readFileTheme() throws IOException {

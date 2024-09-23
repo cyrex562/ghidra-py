@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pe.cli.tables;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.BinaryReader;

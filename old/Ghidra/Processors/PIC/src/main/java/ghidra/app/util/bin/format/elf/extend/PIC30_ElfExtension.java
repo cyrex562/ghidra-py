@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.elf.extend;
 
-import java.io.*;
+
 
 import ghidra.app.util.bin.format.MemoryLoadable;
 import ghidra.app.util.bin.format.elf.*;

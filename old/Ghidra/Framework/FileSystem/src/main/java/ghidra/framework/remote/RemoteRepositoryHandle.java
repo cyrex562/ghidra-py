@@ -15,7 +15,7 @@
  */
 package ghidra.framework.remote;
 
-import java.io.IOException;
+
 import java.rmi.Remote;
 import java.rmi.server.RemoteObjectInvocationHandler;
 

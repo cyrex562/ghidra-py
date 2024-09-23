@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.opinion;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteArrayProvider;
 import ghidra.app.util.bin.format.mz.DOSHeader;

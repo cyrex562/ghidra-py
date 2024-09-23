@@ -56,7 +56,7 @@ public class SecureRandomFactory {
 		return random;
 	}
 
-	/**
+    # /**
 	 * Construction not allowed
 	 */
 	private SecureRandomFactory() {

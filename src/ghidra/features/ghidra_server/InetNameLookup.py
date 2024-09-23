@@ -43,7 +43,7 @@ public class InetNameLookup {
 		return lookupEnabled;
 	}
 
-	/**
+    # /**
 	 * Gets the fully qualified domain name for this IP address or hostname.
 	 * Best effort method, meaning we may not be able to return 
 	 * the FQDN depending on the underlying system configuration.

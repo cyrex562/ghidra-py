@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.io.*;
+
 import java.util.List;
 import java.util.Map;
 

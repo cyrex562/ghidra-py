@@ -15,7 +15,7 @@
  */
 package agent.gdb;
 
-import java.io.IOException;
+
 import java.lang.ProcessBuilder.Redirect;
 import java.util.*;
 

@@ -18,7 +18,7 @@
 //are placed in the same directory with the processor name appended.
 //@category Binary
 
-import java.io.*;
+
 import java.util.List;
 
 import ghidra.app.script.GhidraScript;

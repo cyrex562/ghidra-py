@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-import java.io.*;
+
 import java.lang.reflect.Modifier;
 import java.util.*;
 import java.util.jar.JarEntry;

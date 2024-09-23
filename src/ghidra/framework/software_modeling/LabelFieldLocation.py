@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import java.util.List;
@@ -25,13 +25,13 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.symbol.*;
 
 # /**
- * The <CODE>LableFieldLocation</CODE> class contains specific location information
- * within the LABEL field of a CodeUnitLocation object.
- */
+# * The <CODE>LableFieldLocation</CODE> class contains specific location information
+# * within the LABEL field of a CodeUnitLocation object.
+# */
 public class LabelFieldLocation extends CodeUnitLocation {
 	private SymbolPath symbolPath;
 
-	/**
+    # /**
 	 * Default constructor needed for restoring
 	 * a label field location from XML
 	 */
@@ -39,7 +39,7 @@ public class LabelFieldLocation extends CodeUnitLocation {
 
 	}
 
-	/**
+    # /**
 	 * Construct a new LabelFieldLocation.
 	 *
 	 * @param program the program of the location
@@ -63,7 +63,7 @@ public class LabelFieldLocation extends CodeUnitLocation {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct a new LabelFieldLocation where the namespace is global, primary is false, and
 	 * the cursor location is at row 0, column 0;
 	 * @param program the program of the location.
@@ -74,7 +74,7 @@ public class LabelFieldLocation extends CodeUnitLocation {
 		this(program, addr, null, label, null, 0, 0);
 	}
 
-	/**
+    # /**
 	 * Construct a new LabelFieldLocation.<P>
 	 * @param program the program of the location.
 	 * @param addr address of the location; should not be null
@@ -88,7 +88,7 @@ public class LabelFieldLocation extends CodeUnitLocation {
 		this(program, addr, null, label, namespace, row, 0);
 	}
 
-	/**
+    # /**
 	 * Creates a label field location using the specified symbol
 	 * and an index of 0.
 	 * @param s the symbol to use when creating the location
@@ -97,7 +97,7 @@ public class LabelFieldLocation extends CodeUnitLocation {
 		this(s, 0, 0);
 	}
 
-	/**
+    # /**
 	 * Creates a label field location using the specified symbol
 	 * and the specified field index.
 	 * @param s     the symbol to use when creating the location
@@ -112,14 +112,14 @@ public class LabelFieldLocation extends CodeUnitLocation {
 		}
 	}
 
-	/**
+    # /**
 	 * Return the label string at this location.
 	 */
 	public String getName() {
 		return symbolPath.getName();
 	}
 
-	/**
+    # /**
 	 * Returns the symbol at this LabelFieldLocation
 	 * NOTE: currently a null symbol will be returned for default thunk functions
 	 * @return the symbol at this LabelFieldLocation or null if symbol lookup fails
@@ -134,7 +134,7 @@ public class LabelFieldLocation extends CodeUnitLocation {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the symbol path which corresponds to the label location
 	 * @return symbol path
 	 */
@@ -142,7 +142,7 @@ public class LabelFieldLocation extends CodeUnitLocation {
 		return symbolPath;
 	}
 
-	/**
+    # /**
 	 * Returns a String representation of this location.
 	 */
 	@Override

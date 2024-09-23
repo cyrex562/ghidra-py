@@ -21,30 +21,30 @@ import java.util.*;
  * Options that control how Pdb files are searched for on a SymbolServer.
  */
 public enum FindOption {
-	/**
+    # /**
 	 * Allow connections to untrusted symbol servers
 	 */
 	ALLOW_UNTRUSTED,
-	/**
+    # /**
 	 * Only return the first result 
 	 */
 	ONLY_FIRST_RESULT,
-	/**
+    # /**
 	 * Match any Pdb with the same name, regardless of GUID / signature id / age.
 	 * (implies ANY_AGE)  
 	 */
 	ANY_ID,
-	/**
+    # /**
 	 * Match any Pdb with the same name and ID, regardless of age. 
 	 */
 	ANY_AGE;
 
-	/**
+    # /**
 	 * Static constant empty set of no FindOptions.
 	 */
 	public static final Set<FindOption> NO_OPTIONS = Set.of();
 
-	/**
+    # /**
 	 * Create a container of FindOptions.
 	 * 
 	 * @param findOptions varargs list of FindOption enum values

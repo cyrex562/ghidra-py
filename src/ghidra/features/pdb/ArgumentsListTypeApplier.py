@@ -23,7 +23,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.type.AbstractArgumentsListMsTyp
 public class ArgumentsListTypeApplier extends MsDataTypeComponentApplier {
 
 	// Intended for: AbstractArgumentsListMsType
-	/**
+    # /**
 	 * Constructor for the applicator that applies a arguments list
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 * @throws IllegalArgumentException Upon invalid arguments

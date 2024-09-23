@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

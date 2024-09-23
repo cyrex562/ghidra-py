@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.*;
@@ -25,15 +25,15 @@ import ghidra.util.UniversalID;
 import ghidra.util.exception.AssertException;
 
 # /**
- * Basic implementation of the structure data type.
- * NOTES: 
- * <ul>
- * <li>Implementation is not thread safe when being modified.</li>
- * <li>For a structure to treated as having a zero-length (see {@link #isZeroLength()}) it </li>
- * 
- * </ul>
- * 
- */
+# * Basic implementation of the structure data type.
+# * NOTES: 
+# * <ul>
+# * <li>Implementation is not thread safe when being modified.</li>
+# * <li>For a structure to treated as having a zero-length (see {@link #isZeroLength()}) it </li>
+# * 
+# * </ul>
+# * 
+# */
 public class StructureDataType extends CompositeDataTypeImpl implements StructureInternal {
 
 	protected int structLength;
@@ -42,7 +42,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 	protected int numComponents;
 	protected List<DataTypeComponentImpl> components;
 
-	/**
+    # /**
 	 * Construct a new structure with the given name and length. The root category will be used.
 	 * NOTE: A constructor form which accepts a {@link DataTypeManager} should be used when possible
 	 * since there may be performance benefits during datatype resolution.
@@ -54,7 +54,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		this(CategoryPath.ROOT, name, length);
 	}
 
-	/**
+    # /**
 	 * Construct a new structure with the given name, length and datatype manager which conveys data
 	 * organization. The root category will be used.
 	 * 
@@ -68,7 +68,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		this(CategoryPath.ROOT, name, length, dtm);
 	}
 
-	/**
+    # /**
 	 * Construct a new structure with the given name and length within the specified categry path.
 	 * NOTE: A constructor form which accepts a {@link DataTypeManager} should be used when possible
 	 * since there may be performance benefits during datatype resolution.
@@ -81,7 +81,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		this(path, name, length, null);
 	}
 
-	/**
+    # /**
 	 * Construct a new structure with the given name, length and datatype manager within the
 	 * specified categry path.
 	 * 
@@ -103,7 +103,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		numComponents = length;
 	}
 
-	/**
+    # /**
 	 * Construct a new structure with the given name and length
 	 * 
 	 * @param path the category path indicating where this data type is located.
@@ -231,7 +231,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return list;
 	}
 
-	/**
+    # /**
 	 * Generate an undefined component following a binary search across the defined components.
 	 * @param offset the offset within this structure which was searched for
 	 * @param missingComponentIndex the defined component binary search index result (must be negative)
@@ -310,7 +310,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		notifySizeChanged();
 	}
 
-	/**
+    # /**
 	 * Removes a defined component at the specified index without
 	 * any alteration to other components. 
 	 * @param index defined component index
@@ -322,7 +322,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return dtc;
 	}
 
-	/**
+    # /**
 	 * Removes a defined component at the specified index.
 	 * If this corresponds to a zero-length or bit-field component it will 
 	 * be cleared without an offset shift to the remaining components.  Removal of
@@ -567,7 +567,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return doAdd(dataType, length, componentName, comment, true);
 	}
 
-	/**
+    # /**
 	 * Add a new component to the end of this structure.
 	 * <p>
 	 * NOTE: This method differs from inserting to the end the structure for the non-packed case in
@@ -845,7 +845,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return dtc;
 	}
 
-	/**
+    # /**
 	 * Backup from specified defined-component index to the first component which contains the specified offset. 
 	 * @param index any defined component index which contains offset
 	 * @param offset offset within structure
@@ -865,7 +865,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return index;
 	}
 
-	/**
+    # /**
 	 * Identify defined-component index of the first non-zero-length component which contains the specified offset.
 	 * If only zero-length components exist, the last zero-length component which contains the offset will be returned. 
 	 * @param index any defined component index which contains offset
@@ -885,7 +885,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return index;
 	}
 
-	/**
+    # /**
 	 * Advance from specified defined-component index to the last component which contains the specified offset.
 	 * @param index any defined component index which contains offset
 	 * @param offset offset within structure
@@ -1003,7 +1003,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return true;
 	}
 
-	/**
+    # /**
 	 * Get the available space for an existing defined component in relation to the next defined 
 	 * component or the end of the structure.  Method should be used in conjunction with
 	 * {@link #consumeBytesAfter(int, int)} and/or {@link #shiftOffsets(int, int, int)} for
@@ -1076,7 +1076,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param definedComponentIndex the index of the defined component that is consuming the bytes.
 	 * @param numBytes the number of undefined bytes to consume
@@ -1109,7 +1109,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return available;
 	}
 
-	/**
+    # /**
 	 * Create copy of structure for target dtm (source archive information is discarded). 
 	 * <p>
 	 * WARNING! copying non-packed structures which contain bitfields can produce invalid results when
@@ -1127,7 +1127,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return struct;
 	}
 
-	/**
+    # /**
 	 * Create cloned structure for target dtm preserving source archive information. WARNING!
 	 * cloning non-packed structures which contain bitfields can produce invalid results when
 	 * switching endianness due to the differences in packing order.
@@ -1170,7 +1170,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		}
 	}
 
-	/**
+    # /**
 	 * Replaces the internal components of this structure with components of the given structure
 	 * including packing and alignment settings.
 	 * 
@@ -1382,7 +1382,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return comps;
 	}
 
-	/**
+    # /**
 	 * Perform component replacement(s)
 	 * @param replacedComponents ordered list of components to be replaced
 	 * @param offset offset of component replacement
@@ -1602,7 +1602,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return replaceComponent != null ? replaceComponent : getComponentContaining(offset);
 	}
 
-	/**
+    # /**
 	 * Check for available undefined bytes within a non-packed structure for a component
 	 * update with the specified ordinal.  
 	 * @param lastOrdinalReplacedOrUpdated the ordinal of a component to be updated
@@ -1629,7 +1629,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		}
 	}
 
-	/**
+    # /**
 	 * Replace the specified components with a new component containing the specified data type.
 	 * If {@link DataType#DEFAULT} is specified as the resolvedDataType only a clear operation 
 	 * is performed.
@@ -1742,7 +1742,7 @@ public class StructureDataType extends CompositeDataTypeImpl implements Structur
 		return dataTypeComponent.getOrdinal();
 	}
 
-	/**
+    # /**
 	 * Gets the number of Undefined bytes beginning at the indicated component index. Undefined
 	 * bytes that have a field name or comment specified are also included.
 	 * 

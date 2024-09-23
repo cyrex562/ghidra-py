@@ -17,7 +17,7 @@ package ghidra.file.formats.iso9660;
 
 import java.util.Arrays;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.formats.gfilesystem.FSRLRoot;

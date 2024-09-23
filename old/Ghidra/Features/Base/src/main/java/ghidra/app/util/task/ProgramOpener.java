@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.task;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.concurrent.atomic.AtomicReference;
 

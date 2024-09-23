@@ -31,7 +31,7 @@ public class DataTypeInstance {
 	private DataType dataType;
 	private int length;
 
-	/**
+    # /**
 	 * Create an instance of a data type with the given length.
 	 * <br>
 	 * NOTE: fixed-length primitive datatypes assume {@link DataType#getLength() raw datatype length}
@@ -48,21 +48,21 @@ public class DataTypeInstance {
 		}
 	}
 
-	/**
+    # /**
 	 * @return the data type
 	 */
 	public DataType getDataType() {
 		return dataType;
 	}
 
-	/**
+    # /**
 	 * @return the fixed length of the data type
 	 */
 	public int getLength() {
 		return length;
 	}
 
-	/**
+    # /**
 	 * Set the length of this data type instance
 	 */
 	public void setLength(int length) {
@@ -74,7 +74,7 @@ public class DataTypeInstance {
 		return dataType.toString();
 	}
 
-	/**
+    # /**
 	 * Generate a data-type instance
 	 * Factory and Dynamic data-types are NOT handled.
 	 * <br>
@@ -97,7 +97,7 @@ public class DataTypeInstance {
 		return getDataTypeInstance(dataType, buf, -1, useAlignedLength);
 	}
 
-	/**
+    # /**
 	 * Attempt to create a fixed-length data-type instance.
 	 * Factory and non-sizable Dynamic data-types are NOT handled.
 	 * <br>
@@ -152,7 +152,7 @@ public class DataTypeInstance {
 		return new DataTypeInstance(dataType, length);
 	}
 
-	/**
+    # /**
 	 * Attempt to create a data-type instance associated with a specific memory location.
 	 * Factory and Dynamic data-types are handled.
 	 * <br>

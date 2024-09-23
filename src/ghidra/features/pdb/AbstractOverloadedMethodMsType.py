@@ -29,7 +29,7 @@ public abstract class AbstractOverloadedMethodMsType extends AbstractMsType impl
 	protected RecordNumber methodListRecordNumber;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -52,7 +52,7 @@ public abstract class AbstractOverloadedMethodMsType extends AbstractMsType impl
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the number of methods overloaded with the name
 	 * @return the number of methods
 	 */
@@ -60,7 +60,7 @@ public abstract class AbstractOverloadedMethodMsType extends AbstractMsType impl
 		return count;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the method list for this overloaded method name
 	 * @return the record number
 	 */

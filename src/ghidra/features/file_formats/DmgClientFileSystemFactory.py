@@ -18,7 +18,7 @@ package ghidra.file.formats.ios.dmg;
 import java.util.Arrays;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.app.util.bin.ByteProvider;
@@ -131,7 +131,7 @@ public class DmgClientFileSystemFactory implements
 		}
 	}
 
-	/**
+    # /**
 	 * A cached check for the presence of the DMG module.
 	 * 
 	 * @return true if the DMG module, is present; otherwise, false.

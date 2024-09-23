@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.*;
@@ -22,8 +22,8 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
 # /**
- * A category path is the full path to a particular data type
- */
+# * A category path is the full path to a particular data type
+# */
 public class CategoryPath implements Comparable<CategoryPath> {
 
 	public static final char DELIMITER_CHAR = '/';
@@ -39,7 +39,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 	private final CategoryPath parent;
 	private final String name;
 
-	/**
+    # /**
 	 * Converts a non-escaped String into an escaped string suitable for being passed in as a
 	 * component of a single category path string to the constructor that takes a single
 	 * escaped category path string.  The user is responsible for constructing the single
@@ -52,7 +52,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return nonEscapedString.replace(DELIMITER_STRING, ESCAPED_DELIMITER_STRING);
 	}
 
-	/**
+    # /**
 	 * Converts an escaped String suitable for being passed in as a component of a single category
 	 * path string into an non-escaped string.
 	 * @param escapedString String that might need unescaping for characters used for delimiting
@@ -63,7 +63,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return escapedString.replace(ESCAPED_DELIMITER_STRING, DELIMITER_STRING);
 	}
 
-	/**
+    # /**
 	 * Constructor for internal creation of ROOT.
 	 */
 	private CategoryPath() {
@@ -72,7 +72,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		name = "";
 	}
 
-	/**
+    # /**
 	 * Construct a CategoryPath from a parent and a hierarchical array of strings where each
 	 * string is the name of a category in the category path.
 	 *
@@ -85,7 +85,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		this(parent, Arrays.asList(subPathElements));
 	}
 
-	/**
+    # /**
 	 * Construct a CategoryPath from a parent and a hierarchical list of strings where each
 	 * string is the name of a category in the category path.
 	 *
@@ -115,7 +115,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a CategoryPath that extends the current path using a hierarchical array of strings
 	 * where each string is the name of a category in the category path extension.
 	 *
@@ -130,7 +130,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return new CategoryPath(this, subPathElements);
 	}
 
-	/**
+    # /**
 	 * Returns a CategoryPath that extends the current path using a hierarchical list of strings
 	 * where each  string is the name of a category in the category path extension.
 	 *
@@ -145,7 +145,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return new CategoryPath(this, subPathElements);
 	}
 
-	/**
+    # /**
 	 * Creates a category path given a forward-slash-delimited string (e.g., {@code "/aa/bb"}).
 	 * If an individual path component has one or more '/' characters in it, then it can be
 	 * <I><B>escaped</B></I> using the {@link #escapeString(String)} utility method.  The
@@ -202,7 +202,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return delimiterIndex;
 	}
 
-	/**
+    # /**
 	 * Determine if this category path corresponds to the root category
 	 * @return true if this is a root category path
 	 */
@@ -211,7 +211,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return parent == null;
 	}
 
-	/**
+    # /**
 	 * Return the parent category path.
 	 * @return the parent
 	 */
@@ -219,7 +219,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return parent;
 	}
 
-	/**
+    # /**
 	 * Return the terminating name of this category path.
 	 * @return the name
 	 */
@@ -227,7 +227,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Return the {@link String} representation of this category path including the category name,
 	 * where components are delimited with a forward slash.  Any occurrence of a forward slash
 	 * within individual path components will be escaped (e.g., {@code "\/"}).
@@ -240,7 +240,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return parent.getPath(name);
 	}
 
-	/**
+    # /**
 	 * Return the {@link String} representation of the specified {@code childName} within this
 	 * category path where all path components are delimited with a forward slash.  Any occurrence
 	 * of a forward slash within individual path components, including the {@code childName}, will
@@ -300,7 +300,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Tests if the specified categoryPath is the same as, or an ancestor of, this category path.
 	 * @param candidateAncestorPath the category path to be checked.
 	 * @return true if the given path is the same as, or an ancestor of, this category path.
@@ -331,7 +331,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns array of names in category path.
 	 * @return array of names
 	 */
@@ -368,7 +368,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return getPath();
 	}
 
-	/**
+    # /**
 	 * Returns a hierarchical list of names of the categories in the category path, starting with
 	 * the name just below the {@code ROOT} category.
 	 *
@@ -383,7 +383,7 @@ public class CategoryPath implements Comparable<CategoryPath> {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Returns a hierarchical array of names of the categories in the category path, starting with
 	 * the name just below the {@code ROOT} category.
 	 *

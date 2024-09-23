@@ -16,7 +16,7 @@
 package ghidra.file.formats.dump.pagedump;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.Option;

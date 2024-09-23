@@ -17,7 +17,7 @@ package ghidra.framework.options;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.io.*;
+
 import java.util.Date;
 
 import javax.swing.KeyStroke;

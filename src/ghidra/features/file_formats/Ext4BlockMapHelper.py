@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ext4;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.*;
 import ghidra.formats.gfilesystem.FSRL;
@@ -29,7 +29,7 @@ public class Ext4BlockMapHelper {
 	private static final int TRIPLE_INDIRECT_BLOCK_INDEX = 14;
 	private static final int INODE_BLOCKMAP_COUNT = 15;
 
-	/**
+    # /**
 	 * Creates a {@link RangeMappedByteProvider} from the old-style block map data found in the
 	 * inode's i_block field.
 	 *   

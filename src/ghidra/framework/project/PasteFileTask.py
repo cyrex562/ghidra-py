@@ -43,7 +43,7 @@ public class PasteFileTask extends Task {
 
 	private boolean hasFailedCopy;
 
-	/**
+    # /**
 	 * Constructor for PasteFileTask.
 	 *  
 	 * @param destNode destination folder
@@ -88,7 +88,7 @@ public class PasteFileTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Paste the given file at the folder represented by destNode.
 	 * 
 	 * @param file file to be pasted.
@@ -103,7 +103,7 @@ public class PasteFileTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Paste the given folder at destNode.
 	 */
 	private void pasteFolder(DomainFolder folder, TaskMonitor monitor) {
@@ -115,7 +115,7 @@ public class PasteFileTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy a file into a new folder
 	 * 
 	 * @param file source file}
@@ -144,7 +144,7 @@ public class PasteFileTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Copy the given folder and all of its contents into a new parent folder
 	 */
 	private void copyFolder(DomainFolder folder, DomainFolder newParent, TaskMonitor monitor) {
@@ -169,7 +169,7 @@ public class PasteFileTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Move a file into a folder.
 	 * <p>
 	 * Displays a error dialog if there was an exception
@@ -193,7 +193,7 @@ public class PasteFileTask extends Task {
 		}
 	}
 
-	/**
+    # /**
 	 * Move the given folder and all of its contents into a new parent folder.
 	 * <p>
 	 * Displays a error dialog if there was an exception

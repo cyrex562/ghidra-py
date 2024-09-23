@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.docking.settings.*;

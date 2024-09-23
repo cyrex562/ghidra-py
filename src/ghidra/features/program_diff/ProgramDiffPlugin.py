@@ -154,7 +154,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 	// this is used for test injection only. In actual use, the dialog is not reused
 	private OpenVersionedFileDialog<Program> openVersionedFileDialog;
 
-	/**
+    # /**
 	 * Creates the plugin for indicating program differences to the user.
 	 *
 	 * @param tool the tool that owns this plugin.
@@ -499,7 +499,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		}
 	}
 
-	/**
+    # /**
 	 * Used for testing to force file selection dialog instance.
 	 * @param dialog project file selection dialog
 	 */
@@ -731,7 +731,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		tool.removeComponentProvider(diffDetailsProvider);
 	}
 
-	/**
+    # /**
 	 * Callback when user changes selection in the program2 diff panel.
 	 *
 	 * Note: A P2 selection is handed to this method when a selection is made in the diff listing
@@ -855,7 +855,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		updatePgm2Enablement();
 	}
 
-	/**
+    # /**
 	 * Set the highlight based on the current program differences, but do not set the highlight for
 	 * set of addresses to be ignored.
 	 */
@@ -956,7 +956,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		updatePgm2Enablement();
 	}
 
-	/**
+    # /**
 	 * Computes the differences between program1 and program2 that are displayed in the browser. It
 	 * allows the user to specify the Diff settings to use.
 	 */
@@ -1103,7 +1103,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		getDiffDetailsProvider();
 	}
 
-	/**
+    # /**
 	 * Generate a list of programs which are currently open in the tool which are compatible
 	 * with the primaryProgram to be diff'd.  The top/primary entries correspond to this 
 	 * programs which have the same name (see {@link Program#getName()}) as the primaryProgram, 
@@ -1167,7 +1167,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		return p.getAddressFactory().hasStaleOverlayCondition();
 	}
 
-	/**
+    # /**
 	 * Check program's address factory for stale overlay condition.
 	 * @param p program to check
 	 * @return true if user chose to cancel operation due to stale overlays
@@ -1203,7 +1203,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		return dialog;
 	}
 
-	/**
+    # /**
 	 * Displays the execute diff dialog.
 	 */
 	void displayExecuteDiff() {
@@ -1230,7 +1230,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 
 	}
 
-	/**
+    # /**
 	 * Get the first program for the current Diff. <br>
 	 * <b>Note</b>: This may not be the currently active program.
 	 *
@@ -1241,7 +1241,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		return primaryProgram;
 	}
 
-	/**
+    # /**
 	 * Get the second program for the current Diff.
 	 *
 	 * @return the Diff's second program or null if don't currently have a second program associated
@@ -1296,7 +1296,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		return p2DiffHighlight;
 	}
 
-	/**
+    # /**
 	 * Gets the address set where detailed differences will be determined for details at the
 	 * indicated address. An address set is returned since the indicated address may be in different
 	 * sized code units in each of the two programs.
@@ -1328,7 +1328,7 @@ public class ProgramDiffPlugin extends ProgramPlugin
 		return limitSet;
 	}
 
-	/**
+    # /**
 	 * Reload the marked differences in the diff panel.
 	 */
 	private void reloadDiff() {

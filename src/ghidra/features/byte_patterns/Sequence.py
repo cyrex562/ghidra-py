@@ -29,7 +29,7 @@ public class Sequence {
 	private String sequence;
 	private int count;
 
-	/**
+    # /**
 	 * Creates a new {@link Sequence} with a given count
 	 * @param sequence sequence
 	 * @param count number of times the sequence occurs in the database
@@ -39,7 +39,7 @@ public class Sequence {
 		this.count = count;
 	}
 
-	/**
+    # /**
 	 * Gets the sequence
 	 * @return sequence
 	 */
@@ -47,7 +47,7 @@ public class Sequence {
 		return sequence;
 	}
 
-	/**
+    # /**
 	 * Gets the number of times the sequence occurs in the database
 	 * @return count
 	 */
@@ -55,7 +55,7 @@ public class Sequence {
 		return count;
 	}
 
-	/**
+    # /**
 	 * If all items in {@code prefixSequence} occur in {@code sequence}, returns
 	 * the index of the item in {@code sequence} immediately after the last item
 	 * in {@code prefixSequence}.  If {@code prefixSequence} does not occur in 

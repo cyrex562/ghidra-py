@@ -21,7 +21,7 @@ import java.awt.dnd.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -65,7 +65,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 	private DragSrcAdapter dragSourceAdapter;
 	private int dragAction = DnDConstants.ACTION_COPY_OR_MOVE;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param tool tool
 	 * @param domainFile domain file; may be null
@@ -76,7 +76,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		this(tool, domainFile, false);
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * @param tool tool
 	 * @param domainFile domain file
@@ -93,7 +93,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		setDomainFile(domainFile);
 	}
 
-	/**
+    # /**
 	 * Set the domain file to show its history.
 	 * If file not found a null file will be set.
 	 * @param domainFile the file
@@ -110,7 +110,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		}
 	}
 
-	/**
+    # /**
 	 * Get current domain file
 	 * @return current domain file
 	 */
@@ -118,7 +118,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		return domainFile;
 	}
 
-	/**
+    # /**
 	 * Get current domain file path or null
 	 * @return domain file path
 	 */
@@ -126,7 +126,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		return domainFilePath;
 	}
 
-	/**
+    # /**
 	 * Add the list selection listener to the history table
 	 * @param selectionListener the listener
 	 */
@@ -134,7 +134,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		table.getSelectionModel().addListSelectionListener(selectionListener);
 	}
 
-	/**
+    # /**
 	 * Remove the list selection listener from history table.
 	 * @param selectionListener the listener
 	 */
@@ -142,7 +142,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		table.getSelectionModel().removeListSelectionListener(selectionListener);
 	}
 
-	/**
+    # /**
 	 * Get the selected {@link Version}.
 	 * @return selected {@link Version} or null if no selection
 	 */
@@ -154,7 +154,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Determine if a version selection has been made.
 	 * @return true if version selection has been made, esle false
 	 */
@@ -162,7 +162,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		return !table.getSelectionModel().isSelectionEmpty();
 	}
 
-	/**
+    # /**
 	 * Get the selected version number or {@link DomainFile#DEFAULT_VERSION} if no selection.
 	 * @return selected version number
 	 */
@@ -243,7 +243,7 @@ public class VersionHistoryPanel extends JPanel implements Draggable {
 		}
 	}
 
-	/**
+    # /**
 	 * Set up the drag and drop stuff.
 	 */
 	private void setUpDragSite() {

@@ -33,7 +33,7 @@ public abstract class AbstractBlockMsSymbol extends AbstractMsSymbol
 	protected int segment;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -53,7 +53,7 @@ public abstract class AbstractBlockMsSymbol extends AbstractMsSymbol
 		reader.align4();
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -61,7 +61,7 @@ public abstract class AbstractBlockMsSymbol extends AbstractMsSymbol
 		return parentPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -69,7 +69,7 @@ public abstract class AbstractBlockMsSymbol extends AbstractMsSymbol
 		return endPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the length.
 	 * @return Length.
 	 */
@@ -77,7 +77,7 @@ public abstract class AbstractBlockMsSymbol extends AbstractMsSymbol
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -86,7 +86,7 @@ public abstract class AbstractBlockMsSymbol extends AbstractMsSymbol
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -95,7 +95,7 @@ public abstract class AbstractBlockMsSymbol extends AbstractMsSymbol
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

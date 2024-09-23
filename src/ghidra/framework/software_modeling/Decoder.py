@@ -1,45 +1,45 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import ghidra.program.model.address.AddressFactory;
 import ghidra.program.model.address.AddressSpace;
 
 # /**
- * An interface for reading structured data from a stream
- *
- * All data is loosely structured as with an XML document.  A document contains a nested set
- * of elements, with labels corresponding to the ElementId class. A single element can hold
- * zero or more attributes and zero or more child elements.  An attribute holds a primitive
- * data element (boolean, long, String) and is labeled by an AttributeId. The document is traversed
- * using a sequence of openElement() and closeElement() calls, intermixed with read*() calls to extract
- * the data. The elements are traversed in a depth first order.  Attributes within an element can
- * be traversed in order using repeated calls to the getNextAttributeId() method, followed by a calls to
- * one of the read*(void) methods to extract the data.  Alternately a read*(AttributeId) call can be used
- * to extract data for an attribute known to be in the element.  There is a special content attribute
- * whose data can be extracted using a read*(AttributeId) call that is passed the special ATTRIB_CONTENT id.
- * This attribute will not be traversed by getNextAttributeId().
- */
+# * An interface for reading structured data from a stream
+# *
+# * All data is loosely structured as with an XML document.  A document contains a nested set
+# * of elements, with labels corresponding to the ElementId class. A single element can hold
+# * zero or more attributes and zero or more child elements.  An attribute holds a primitive
+# * data element (boolean, long, String) and is labeled by an AttributeId. The document is traversed
+# * using a sequence of openElement() and closeElement() calls, intermixed with read*() calls to extract
+# * the data. The elements are traversed in a depth first order.  Attributes within an element can
+# * be traversed in order using repeated calls to the getNextAttributeId() method, followed by a calls to
+# * one of the read*(void) methods to extract the data.  Alternately a read*(AttributeId) call can be used
+# * to extract data for an attribute known to be in the element.  There is a special content attribute
+# * whose data can be extracted using a read*(AttributeId) call that is passed the special ATTRIB_CONTENT id.
+# * This attribute will not be traversed by getNextAttributeId().
+# */
 public interface Decoder extends ByteIngest {
 
 	public AddressFactory getAddressFactory();
 
 	public void setAddressFactory(AddressFactory addrFactory);
 
-	/**
+    # /**
 	 * Peek at the next child element of the current parent, without traversing in (opening) it.
 	 * The element id is returned, which can be compared to ElementId labels.
 	 * If there are no remaining child elements to traverse, 0 is returned.
@@ -48,7 +48,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public int peekElement() throws DecoderException;
 
-	/**
+    # /**
 	 * Open (traverse into) the next child element of the current parent.
 	 * The child becomes the current parent.
 	 * The list of attributes is initialized for use with getNextAttributeId.
@@ -57,7 +57,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public int openElement() throws DecoderException;
 
-	/**
+    # /**
 	 * Open (traverse into) the next child element, which must be of a specific type
 	 * The child becomes the current parent, and its attributes are initialized for use with
 	 * getNextAttributeId. The child must match the given element id or an exception is thrown.
@@ -67,7 +67,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public int openElement(ElementId elemId) throws DecoderException;
 
-	/**
+    # /**
 	 * Close the current element
 	 * The data for the current element is considered fully processed. If the element has additional
 	 * children, an exception is thrown. The stream must indicate the end of the element in some way.
@@ -76,7 +76,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public void closeElement(int id) throws DecoderException;
 
-	/**
+    # /**
 	 * Close the current element, skipping any child elements that have not yet been parsed.
 	 * This closes the given element, which must be current.  If there are child elements that have
 	 * not been parsed, this is not considered an error, and they are skipped over in the parse.
@@ -85,7 +85,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public void closeElementSkipping(int id) throws DecoderException;
 
-	/**
+    # /**
 	 * Get the next attribute id for the current element
 	 * Attributes are automatically set up for traversal using this method, when the element is
 	 * opened. If all attributes have been traversed (or there are no attributes), 0 is returned.
@@ -94,7 +94,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public int getNextAttributeId() throws DecoderException;
 
-	/**
+    # /**
 	 * Get the id for the (current) attribute, assuming it is indexed.
 	 * Assuming the previous call to getNextAttributeId() returned the id of ATTRIB_UNKNOWN,
 	 * reinterpret the attribute as being an indexed form of the given attribute. If the attribute
@@ -105,14 +105,14 @@ public interface Decoder extends ByteIngest {
 	 */
 	public int getIndexedAttributeId(AttributeId attribId) throws DecoderException;
 
-	/**
+    # /**
 	 * Reset attribute traversal for the current element
 	 * Attributes for a single element can be traversed more than once using the getNextAttributeId
 	 * method.
 	 */
 	public void rewindAttributes();
 
-	/**
+    # /**
 	 * Parse the current attribute as a boolean value
 	 * The last attribute, as returned by getNextAttributeId, is treated as a boolean, and its
 	 * value is returned.
@@ -121,7 +121,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public boolean readBool() throws DecoderException;
 
-	/**
+    # /**
 	 * Find and parse a specific attribute in the current element as a boolean value
 	 * The set of attributes for the current element is searched for a match to the given attribute
 	 * id. This attribute is then parsed as a boolean and its value returned.
@@ -133,7 +133,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public boolean readBool(AttributeId attribId) throws DecoderException;
 
-	/**
+    # /**
 	 * Parse the current attribute as a signed integer value
 	 * The last attribute, as returned by getNextAttributeId, is treated as a signed integer,
 	 * and its value is returned.
@@ -142,7 +142,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public long readSignedInteger() throws DecoderException;
 
-	/**
+    # /**
 	 * Find and parse a specific attribute in the current element as a signed integer
 	 * The set of attributes for the current element is searched for a match to the given attribute
 	 * id. This attribute is then parsed as a signed integer and its value returned.
@@ -154,7 +154,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public long readSignedInteger(AttributeId attribId) throws DecoderException;
 
-	/**
+    # /**
 	 * Parse the current attribute as either a signed integer value or a string.
 	 * If the attribute is an integer, its value is returned.
 	 * If the attribute is a string, it must match an expected string passed to the method,
@@ -169,7 +169,7 @@ public interface Decoder extends ByteIngest {
 	public long readSignedIntegerExpectString(String expect, long expectval)
 			throws DecoderException;
 
-	/**
+    # /**
 	 * Find and parse a specific attribute in the current element as either a signed integer
 	 * or a string. If the attribute is an integer, its value is returned.
 	 * If the attribute is encoded as a string, it must match an expected string
@@ -186,7 +186,7 @@ public interface Decoder extends ByteIngest {
 	public long readSignedIntegerExpectString(AttributeId attribId, String expect, long expectval)
 			throws DecoderException;
 
-	/**
+    # /**
 	 * Parse the current attribute as an unsigned integer value
 	 * The last attribute, as returned by getNextAttributeId, is treated as an unsigned integer,
 	 * and its value is returned.
@@ -195,7 +195,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public long readUnsignedInteger() throws DecoderException;
 
-	/**
+    # /**
 	 * Find and parse a specific attribute in the current element as an unsigned integer
 	 * The set of attributes for the current element is searched for a match to the given attribute
 	 * id. This attribute is then parsed as an unsigned integer and its value returned.
@@ -207,7 +207,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public long readUnsignedInteger(AttributeId attribId) throws DecoderException;
 
-	/**
+    # /**
 	 * Parse the current attribute as a string
 	 * The last attribute, as returned by getNextAttributeId, is returned as a string.
 	 * @return the string associated with the current attribute.
@@ -215,7 +215,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public String readString() throws DecoderException;
 
-	/**
+    # /**
 	 * Find the specific attribute in the current element and return it as a string
 	 * The set of attributes for the current element is searched for a match to the given attribute
 	 * id. This attribute is then returned as a string.  If there is no attribute matching the id,
@@ -226,7 +226,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public String readString(AttributeId attribId) throws DecoderException;
 
-	/**
+    # /**
 	 * Parse the current attribute as an address space
 	 * The last attribute, as returned by getNextAttributeId, is returned as an address space.
 	 * @return the address space associated with the current attribute.
@@ -234,7 +234,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public AddressSpace readSpace() throws DecoderException;
 
-	/**
+    # /**
 	 * Find the specific attribute in the current element and return it as an address space
 	 * Search attributes from the current element for a match to the given attribute id.
 	 * Return this attribute as an address space. If there is no attribute matching the id, an
@@ -245,7 +245,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public AddressSpace readSpace(AttributeId attribId) throws DecoderException;
 
-	/**
+    # /**
 	 * Parse the current attribute is a p-code opcode
 	 * The last attribute, as returned by getNextAttributeId, is returned as an opcode.
 	 * The opcode is one of the constants specified in {@link PcodeOp}
@@ -254,7 +254,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public int readOpcode() throws DecoderException;
 
-	/**
+    # /**
 	 * Find the specific attribute in the current element and return it as an opcode
 	 * Search attributes from the current element for a match to the given attribute id.
 	 * Return this attribute as an opcode constant from {@link PcodeOp}. If there is no
@@ -265,7 +265,7 @@ public interface Decoder extends ByteIngest {
 	 */
 	public int readOpcode(AttributeId attribId) throws DecoderException;
 
-	/**
+    # /**
 	 * Skip parsing of the next element
 	 * The element skipped is the one that would be opened by the next call to openElement.
 	 * @throws DecoderException if there is no new element

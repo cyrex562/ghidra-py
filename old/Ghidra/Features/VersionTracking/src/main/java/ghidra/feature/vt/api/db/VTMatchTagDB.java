@@ -17,7 +17,7 @@ package ghidra.feature.vt.api.db;
 
 import static ghidra.feature.vt.api.db.VTMatchTagDBAdapter.ColumnDescription.TAG_NAME_COL;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.feature.vt.api.main.VTMatchTag;

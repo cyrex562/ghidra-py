@@ -15,7 +15,7 @@
  */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 
 import ghidra.framework.model.DomainFile;
 import ghidra.program.model.listing.Program;

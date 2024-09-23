@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.omf;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.DataType;

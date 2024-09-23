@@ -17,7 +17,7 @@ package ghidradev.ghidraprojectcreator.wizards;
 
 import static ghidradev.EclipseMessageUtils.*;
 
-import java.io.IOException;
+
 import java.lang.reflect.InvocationTargetException;
 
 import org.eclipse.core.resources.IFile;

@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.analysis;
 
-import java.io.*;
+
 import java.util.*;
 
 import generic.jar.ResourceFile;

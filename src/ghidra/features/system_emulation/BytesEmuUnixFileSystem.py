@@ -23,7 +23,7 @@ import ghidra.pcode.emu.sys.EmuFileContents;
  */
 public class BytesEmuUnixFileSystem extends AbstractEmuUnixFileSystem<byte[]> {
 
-	/**
+    # /**
 	 * A concrete in-memory file suitable for UNIX programs
 	 */
 	protected static class BytesEmuUnixFile extends AbstractEmuUnixFile<byte[]> {
@@ -37,7 +37,7 @@ public class BytesEmuUnixFileSystem extends AbstractEmuUnixFileSystem<byte[]> {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct a new concrete simulated file system
 	 */
 	public BytesEmuUnixFileSystem() {

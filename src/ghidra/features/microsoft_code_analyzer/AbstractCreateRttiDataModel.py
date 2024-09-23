@@ -22,7 +22,7 @@ import ghidra.program.model.listing.Program;
 
 public abstract class AbstractCreateRttiDataModel extends AbstractCreateDataTypeModel {
 
-	/**
+    # /**
 	 * Constructor for the abstract create RTTI data type model. This constructor assumes 
 	 * that only a single data type will be created at the indicated address in the program.
 	 * @param program the program where the data type would be created.
@@ -35,7 +35,7 @@ public abstract class AbstractCreateRttiDataModel extends AbstractCreateDataType
 		super(program, address, validationOptions);
 	}
 
-	/**
+    # /**
 	 * Constructor for the abstract create RTTI data type model. This constructor expects
 	 * to create <code>count</code> number of data types at the indicated address in the program.
 	 * If more than one data type is being created, they will be in an array data type.
@@ -50,7 +50,7 @@ public abstract class AbstractCreateRttiDataModel extends AbstractCreateDataType
 		super(program, count, address, validationOptions);
 	}
 
-	/**
+    # /**
 	 * Determines that when following data references from this data type to referenced data types, 
 	 * it will eventually traverse via direct (pointer) references or relative 
 	 * (image base offset) references to the RTTI 0 data type at the indicated address.

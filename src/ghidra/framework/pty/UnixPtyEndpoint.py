@@ -15,7 +15,7 @@
  */
 package ghidra.pty.unix;
 
-import java.io.*;
+
 
 import ghidra.pty.PtyEndpoint;
 import ghidra.pty.unix.PosixC.Ioctls;

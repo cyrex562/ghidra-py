@@ -17,7 +17,7 @@ package ghidra.program.model.data;
 
 import java.awt.event.MouseEvent;
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
+
 
 import javax.sound.midi.*;
 import javax.swing.Icon;

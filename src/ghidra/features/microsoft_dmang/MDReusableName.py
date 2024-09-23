@@ -153,7 +153,7 @@ public class MDReusableName extends MDParsableItem {
 		}
 	}
 
-	/**
+    # /**
 	 * Validates Number (it is output as Number << '@' where Number is an unsigned int, so we are
 	 *  capturing it as a string of digits.
 	 *  Built for what seems to be LLVM-specific mangling.  Does not follow MSFT model.

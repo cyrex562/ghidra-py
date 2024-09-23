@@ -22,7 +22,7 @@ import java.util.function.*;
  */
 public class Dummy {
 
-	/**
+    # /**
 	 * Creates a dummy callback
 	 * @return a dummy callback
 	 */
@@ -32,7 +32,7 @@ public class Dummy {
 		};
 	}
 
-	/**
+    # /**
 	 * Creates a dummy consumer
 	 * @return a dummy consumer
 	 */
@@ -42,7 +42,7 @@ public class Dummy {
 		};
 	}
 
-	/**
+    # /**
 	 * Creates a dummy consumer
 	 * @return a dummy consumer
 	 */
@@ -52,7 +52,7 @@ public class Dummy {
 		};
 	}
 
-	/**
+    # /**
 	 * Creates a dummy function
 	 * @param <T> the input type
 	 * @param <R> the result type
@@ -62,7 +62,7 @@ public class Dummy {
 		return t -> null;
 	}
 
-	/**
+    # /**
 	 * Creates a dummy supplier
 	 * @param <T> the result type
 	 * @return the supplier
@@ -71,7 +71,7 @@ public class Dummy {
 		return () -> null;
 	}
 
-	/**
+    # /**
 	 * Creates a dummy runnable
 	 * @return the runnable
 	 */
@@ -81,7 +81,7 @@ public class Dummy {
 		};
 	}
 
-	/**
+    # /**
 	 * Creates a dummy {@link Predicate} that always returns true.
 	 * @param <T> the type of the value being tested
 	 * @return the predicate that always returns true
@@ -90,7 +90,7 @@ public class Dummy {
 		return t -> true;
 	}
 
-	/**
+    # /**
 	 * Creates a dummy {@link BiPredicate} that always returns true.
 	 * @param <T> the type of the first argument to the predicate
 	 * @param <U> the type of the second argument the predicate
@@ -100,7 +100,7 @@ public class Dummy {
 		return (t, u) -> true;
 	}
 
-	/**
+    # /**
 	 * Returns the given consumer object if it is not {@code null}.  Otherwise, a {@link #consumer()}
 	 * is returned.  This is useful to avoid using {@code null}.
 	 *
@@ -111,7 +111,7 @@ public class Dummy {
 		return c == null ? consumer() : c;
 	}
 
-	/**
+    # /**
 	 * Returns the given consumer object if it is not {@code null}.  Otherwise, a 
 	 * {@link #biConsumer()} is returned.  This is useful to avoid using {@code null}.
 	 *
@@ -122,7 +122,7 @@ public class Dummy {
 		return c == null ? biConsumer() : c;
 	}
 
-	/**
+    # /**
 	 * Returns the given callback object if it is not {@code null}.  Otherwise, a {@link #callback()}
 	 * is returned.  This is useful to avoid using {@code null}.
 	 *
@@ -133,7 +133,7 @@ public class Dummy {
 		return c == null ? callback() : c;
 	}
 
-	/**
+    # /**
 	 * Returns the given function object if it is not {@code null}.  Otherwise, a
 	 * {@link #function()} is returned.  This is useful to avoid using {@code null}.
 	 *
@@ -146,7 +146,7 @@ public class Dummy {
 		return f == null ? function() : f;
 	}
 
-	/**
+    # /**
 	 * Returns the given callback object if it is not {@code null}.  Otherwise, a {@link #callback()}
 	 * is returned.  This is useful to avoid using {@code null}.
 	 *
@@ -157,7 +157,7 @@ public class Dummy {
 		return s == null ? supplier() : s;
 	}
 
-	/**
+    # /**
 	 * Returns the given runnable object if it is not {@code null}.  Otherwise, a {@link #runnable()}
 	 * is returned.  This is useful to avoid using {@code null}.
 	 *
@@ -168,7 +168,7 @@ public class Dummy {
 		return r == null ? runnable() : r;
 	}
 
-	/**
+    # /**
 	 * Returns the given Predicate object if it is not {@code null}.  Otherwise, a 
 	 * {@link #predicate()} (which always returns true) is returned.  This is useful to avoid
 	 * using {@code null}.
@@ -180,7 +180,7 @@ public class Dummy {
 		return p == null ? predicate() : p;
 	}
 
-	/**
+    # /**
 	 * Returns the given BiPredicate object if it is not {@code null}.  Otherwise, a 
 	 * {@link #biPredicate()} (which always returns true) is returned.  This is useful to avoid
 	 * using {@code null}.

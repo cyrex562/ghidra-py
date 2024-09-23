@@ -32,7 +32,7 @@ public class CommentHistory {
 	private String userName;
 	private String comments;
 
-	/**
+    # /**
 	 * Constructs a new CommentHistory object
 	 * @param addr the address of the comment
 	 * @param commentType the type of comment
@@ -49,7 +49,7 @@ public class CommentHistory {
 		this.modificationDate = modificationDate;
 	}
 
-	/**
+    # /**
 	 * Get address for this label history object
 	 * @return address for this label history object.
 	 */
@@ -57,7 +57,7 @@ public class CommentHistory {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * Get the user that made the change
 	 * @return the user that made the change
 	 */
@@ -65,7 +65,7 @@ public class CommentHistory {
 		return userName;
 	}
 
-	/**
+    # /**
 	 * Get the comments for this history object
 	 * @return the comments for this history object
 	 */
@@ -73,7 +73,7 @@ public class CommentHistory {
 		return comments;
 	}
 
-	/**
+    # /**
 	 * Get the comment type
 	 * @return the comment type
 	 */
@@ -81,7 +81,7 @@ public class CommentHistory {
 		return commentType;
 	}
 
-	/**
+    # /**
 	 * Get the modification date
 	 * @return the modification date
 	 */

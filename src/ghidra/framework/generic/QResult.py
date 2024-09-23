@@ -48,7 +48,7 @@ public class QResult<I, R> {
 		error = tempError;
 	}
 
-	/**
+    # /**
 	 * Returns the item that was processed.
 	 * @return the item that was processed.
 	 */
@@ -56,7 +56,7 @@ public class QResult<I, R> {
 		return item;
 	}
 
-	/**
+    # /**
 	 * The result from processing the item.  Will be null if the item was cancelled or had an error.
 	 * 
 	 * @return the result from processing the item or null if it did not complete successfully.
@@ -69,7 +69,7 @@ public class QResult<I, R> {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Returns any Exception that was encountered during processing of the item
 	 * @return any Exception that was encountered during processing of the item
 	 */
@@ -77,7 +77,7 @@ public class QResult<I, R> {
 		return hasError() ? error : null;
 	}
 
-	/**
+    # /**
 	 * Returns true if the item encountered an error while processing the item.
 	 * @return true if the item encountered an error while processing the item.
 	 */
@@ -85,7 +85,7 @@ public class QResult<I, R> {
 		return error != null && !(error instanceof CancellationException);
 	}
 
-	/**
+    # /**
 	 * Returns true if the item's processing was cancelled.
 	 * @return true if the item's processing was cancelled.
 	 */

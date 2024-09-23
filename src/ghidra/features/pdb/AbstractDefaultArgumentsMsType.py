@@ -28,7 +28,7 @@ public abstract class AbstractDefaultArgumentsMsType extends AbstractMsType {
 	protected RecordNumber typeRecordNumber;
 	protected String expression;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

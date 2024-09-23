@@ -31,42 +31,42 @@ class ValueStoragePageIndex implements Serializable {
 		rbtree = new RedBlackLongKeySet();
 	}
 
-	/**
+    # /**
 	 * Get the ID of the page after pageID.
 	 */
 	public long getNext(long pageID) {
         return rbtree.getNext(pageID);
 	}
 
-	/**
+    # /**
 	 * Get the number of pages in the table.
 	 */
 	public int getNumPages() {
 		return rbtree.size();
 	}
 
-	/**
+    # /**
 	 * Get the ID of the page before pageID.
 	 */
 	public long getPrevious(long pageID) {
         return rbtree.getPrevious(pageID);
 	}
 
-	/**
+    # /**
 	 * Return whether the pageID exists in the table.
 	 */
 	public boolean hasPage(long pageID) {
 		return rbtree.containsKey(pageID);
 	}
 
-	/**
+    # /**
 	 * Add the given pageID to the table.
 	 */
 	public void add(long pageID) {
 		rbtree.put(pageID);
 	}
 
-	/**
+    # /**
 	 * Remove pageID from the table.
 	 * @return true if the pageID was removed
 	 */

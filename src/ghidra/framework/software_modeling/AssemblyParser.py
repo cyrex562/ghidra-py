@@ -65,13 +65,13 @@ public class AssemblyParser {
 	// the LALR(1) Action/Goto table
 	protected AssemblyParseActionGotoTable actions;
 
-	/**
+    # /**
 	 * Change this to {@link DbgTimer#ACTIVE} for verbose diagnostics
 	 */
 	protected static final DbgTimer DBG = DbgTimer.INACTIVE;
 	protected static final boolean DBG_DETAIL = false;
 
-	/**
+    # /**
 	 * Construct a LALR(1) parser from the given grammar
 	 * 
 	 * @param grammar the grammar
@@ -160,7 +160,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * Add a newly-constructed LR0 state, and return it's assigned number
 	 * 
 	 * <p>
@@ -192,7 +192,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * Extend a production, using the given LR0 start state
 	 * 
 	 * @param prod the production to extend
@@ -281,7 +281,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * A map key used to identify merges for Step 4 in Stephen Jackson's rant
 	 */
 	protected static class MergeKey implements Comparable<MergeKey> {
@@ -332,7 +332,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * The map value keyed by {@link MergeKey}
 	 */
 	protected static class MergeValue {
@@ -345,7 +345,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * Parse the given sentence
 	 * 
 	 * @param input the sentence to parse
@@ -355,7 +355,7 @@ public class AssemblyParser {
 		return parse(input, AssemblyNumericSymbols.EMPTY);
 	}
 
-	/**
+    # /**
 	 * Parse the given sentence with the given defined symbols
 	 * 
 	 * <p>
@@ -390,7 +390,7 @@ public class AssemblyParser {
 		return ret;
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printGrammar(PrintStream out) {
@@ -398,7 +398,7 @@ public class AssemblyParser {
 		grammar.print(out);
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printLR0States(PrintStream out) {
@@ -417,7 +417,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printLR0TransitionTable(PrintStream out) {
@@ -450,7 +450,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printExtendedGrammar(PrintStream out) {
@@ -458,7 +458,7 @@ public class AssemblyParser {
 		extendedGrammar.print(out);
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printGeneralFF(PrintStream out) {
@@ -466,7 +466,7 @@ public class AssemblyParser {
 		ff.print(out);
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printExtendedFF(PrintStream out) {
@@ -474,7 +474,7 @@ public class AssemblyParser {
 		extff.print(out);
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printMergers(PrintStream out) {
@@ -487,7 +487,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printParseTable(PrintStream out) {
@@ -514,7 +514,7 @@ public class AssemblyParser {
 		}
 	}
 
-	/**
+    # /**
 	 * For debugging
 	 */
 	public void printStuff(PrintStream out) {
@@ -528,7 +528,7 @@ public class AssemblyParser {
 		printParseTable(out);
 	}
 
-	/**
+    # /**
 	 * Get the grammar used to construct this parser
 	 * 
 	 * @return the grammar

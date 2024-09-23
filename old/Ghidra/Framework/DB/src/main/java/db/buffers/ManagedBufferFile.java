@@ -15,7 +15,7 @@
  */
 package db.buffers;
 
-import java.io.IOException;
+
 
 /**
  * <code>BufferFile</code> facilitates read/write access to buffer oriented file.

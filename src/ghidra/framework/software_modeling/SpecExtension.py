@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database;
 
 import java.util.ArrayList;
@@ -33,40 +33,40 @@ import ghidra.util.task.TaskMonitor;
 import ghidra.xml.*;
 
 # /**
- * Utility class for installing/removing "specification extensions" to a Program.
- * A specification extension is a program specific version of either a:
- * <ul>
- *   <li>Prototype Model</li>
- *   <li>Call Fixup or</li>
- *   <li>Callother Fixup</li>
- * </ul>
- * Normally these objects are provided by the language specific configuration files (.cspec or .pspec),
- * but this class allows additional objects to be added that are specific to the program.
- * <p>
- * Internally, each spec extension is stored as an XML document as a formal Program Option. Each type of
- * extension is described by a specific XML tag and is parsed as it would be in a .cspec or .pspec file.
- * The XML tags are:
- * <ul>
- *   <li>{@code <callfixup>} - describing a Call Fixup</li>
- *   <li>{@code <callotherfixup>} - describing a Callother Fixup</li>
- *   <li>{@code <prototype>} - describing a typical Prototype Model</li>
- *   <li>{@code <resolveprototype>} - describing a Prototype Model merged from other models</li>
- * </ul>
- * Each type of object has a unique name or target, which must be specified as part of the XML tag,
- * which is referred to in this class as the extension's "formal name".  In the 
- * {@code <callotherfixup>} tag, the formal name is given by the "targetop" attribute; for all the 
- * other tags, the formal name is given by the "name" attribute".
- * <p>
- * The parent option for all extensions is given by the static field SPEC_EXTENSION. Under the parent
- * option, each extension is stored as a string with an option name, constructed by
- * concatenating the extension's formal name with a prefix corresponding to the extension's XML tag name.
- * <p>
- * testExtensionDocument() is used independently to extensively test whether a document
- * describes a valid extension.
- * <p>
- * Extensions are installed on a program via {@code addReplaceCompilerSpecExtension()}.
- * Extensions are removed from a program via {@code removeCompilerSpecExtension()}.
- */
+# * Utility class for installing/removing "specification extensions" to a Program.
+# * A specification extension is a program specific version of either a:
+# * <ul>
+# *   <li>Prototype Model</li>
+# *   <li>Call Fixup or</li>
+# *   <li>Callother Fixup</li>
+# * </ul>
+# * Normally these objects are provided by the language specific configuration files (.cspec or .pspec),
+# * but this class allows additional objects to be added that are specific to the program.
+# * <p>
+# * Internally, each spec extension is stored as an XML document as a formal Program Option. Each type of
+# * extension is described by a specific XML tag and is parsed as it would be in a .cspec or .pspec file.
+# * The XML tags are:
+# * <ul>
+# *   <li>{@code <callfixup>} - describing a Call Fixup</li>
+# *   <li>{@code <callotherfixup>} - describing a Callother Fixup</li>
+# *   <li>{@code <prototype>} - describing a typical Prototype Model</li>
+# *   <li>{@code <resolveprototype>} - describing a Prototype Model merged from other models</li>
+# * </ul>
+# * Each type of object has a unique name or target, which must be specified as part of the XML tag,
+# * which is referred to in this class as the extension's "formal name".  In the 
+# * {@code <callotherfixup>} tag, the formal name is given by the "targetop" attribute; for all the 
+# * other tags, the formal name is given by the "name" attribute".
+# * <p>
+# * The parent option for all extensions is given by the static field SPEC_EXTENSION. Under the parent
+# * option, each extension is stored as a string with an option name, constructed by
+# * concatenating the extension's formal name with a prefix corresponding to the extension's XML tag name.
+# * <p>
+# * testExtensionDocument() is used independently to extensively test whether a document
+# * describes a valid extension.
+# * <p>
+# * Extensions are installed on a program via {@code addReplaceCompilerSpecExtension()}.
+# * Extensions are removed from a program via {@code removeCompilerSpecExtension()}.
+# */
 public class SpecExtension {
 
 	public final static String SPEC_EXTENSION = "Specification Extensions";
@@ -76,7 +76,7 @@ public class SpecExtension {
 	private ProgramDB program;
 	private SleighLanguageValidator cspecValidator = null;
 
-	/**
+    # /**
 	 * The possible types of spec extensions.
 	 */
 	public enum Type {
@@ -92,7 +92,7 @@ public class SpecExtension {
 			tagName = nm;
 		}
 
-		/**
+	    # /**
 		 * Get the XML tag name associated with the specific extension type.
 		 * @return the tag name
 		 */
@@ -100,7 +100,7 @@ public class SpecExtension {
 			return tagName;
 		}
 
-		/**
+	    # /**
 		 * For a given extension's formal name, generate the option name used to store the extension.
 		 * The option name is the tag name concatenated with the formal name, separated by '_'
 		 * @param formalName is the formal name of the extension
@@ -111,7 +111,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Helper class for collecting information about an extension XML document
 	 * and constructing its option name for storage
 	 */
@@ -153,7 +153,7 @@ public class SpecExtension {
 			return type.getOptionName(formalName);
 		}
 
-		/**
+	    # /**
 		 * Construct by directly pulling information from the XML document
 		 * @param document is the entire XML document as a String
 		 */
@@ -164,28 +164,28 @@ public class SpecExtension {
 			override = false;
 		}
 
-		/**
+	    # /**
 		 * @return the Type of the extension
 		 */
 		public final Type getType() {
 			return type;
 		}
 
-		/**
+	    # /**
 		 * @return the formal name of the extension
 		 */
 		public final String getFormalName() {
 			return formalName;
 		}
 
-		/**
+	    # /**
 		 * @return the option name associated with the extension
 		 */
 		public final String getOptionName() {
 			return optionName;
 		}
 
-		/**
+	    # /**
 		 * @return true if the extension overrides a core object
 		 */
 		public final boolean isOverride() {
@@ -193,7 +193,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct an extension manager attached to a specific program.
 	 * Multiple add/remove/test actions can be performed.  Validator state is cached between calls.
 	 * @param program is the specific Program
@@ -205,7 +205,7 @@ public class SpecExtension {
 		this.program = (ProgramDB) program;
 	}
 
-	/**
+    # /**
 	 * Get the extension type either from the XML tag name or the option name
 	 * @param nm is the XML tag or option name
 	 * @param isXML is true for an XML tag, false for an option name
@@ -247,7 +247,7 @@ public class SpecExtension {
 		throw new SleighException("Unrecognized extension");
 	}
 
-	/**
+    # /**
 	 * Check if the given option name corresponds to an extension
 	 * @param nm is the given option name
 	 * @return true if the name labels a spec extension
@@ -262,7 +262,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Get version of CompilerSpec extensions stored with the Program
 	 * @param program is the given Program
 	 * @return the version number
@@ -272,7 +272,7 @@ public class SpecExtension {
 		return options.getInt(VERSION_COUNTER_OPTIONNAME, 0);
 	}
 
-	/**
+    # /**
 	 * Get all compiler spec extensions for the program. The extensions are XML documents
 	 * strings, with an associated "option name" string.
 	 * Return a list of (optionname,document) pairs, which may be empty
@@ -294,7 +294,7 @@ public class SpecExtension {
 		return pairList;
 	}
 
-	/**
+    # /**
 	 * Get the raw string making up an extension, given its type and name
 	 * @param program is the program to extract the extension from
 	 * @param type is the type of extension
@@ -307,7 +307,7 @@ public class SpecExtension {
 		return options.getString(optionName, null);
 	}
 
-	/**
+    # /**
 	 * Check the format version for spec extensions for a given program.
 	 * If the program reports a version that does not match the current
 	 * number attached to the running tool (FORMAT_VERSION), a VersionException is thrown
@@ -323,7 +323,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Register the options system allowing spec extensions with the given Program
 	 * @param program is the given Program
 	 */
@@ -339,7 +339,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the formal name of an extension from its option name.
 	 * @param optionName is the option name
 	 * @return the formal name
@@ -348,7 +348,7 @@ public class SpecExtension {
 		return optionName.substring(optionName.indexOf('_') + 1);
 	}
 
-	/**
+    # /**
 	 * Determine if the desired formal name is a valid identifier
 	 * @param formalName is the formal name to check
 	 * @return true if the name is valid
@@ -366,7 +366,7 @@ public class SpecExtension {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Generate an XML error handler suitable for parsing a specification document.
 	 *   - Warnings are logged.
 	 *   - Errors cause a SAXParseException
@@ -394,7 +394,7 @@ public class SpecExtension {
 		return errHandler;
 	}
 
-	/**
+    # /**
 	 * Parse an XML string and build the corresponding compiler spec extension object.
 	 * Currently this can either be a
 	 * <ul>
@@ -518,7 +518,7 @@ public class SpecExtension {
 		throw new XmlParseException("Unknown compiler spec extension: " + elName);
 	}
 
-	/**
+    # /**
 	 * Clear all spec extension options for the given program.
 	 * This is intended for internal use.  ProgramDB.installExtensions() must be called at
 	 * some later time to see the effect.
@@ -536,7 +536,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Check that the proposed callfixup extension does not collide with built-in fixups
 	 * @param doc is info about the proposed extension
 	 * @throws SleighException is there is a collision
@@ -555,7 +555,7 @@ public class SpecExtension {
 		throw new SleighException("Extension cannot replace callfixup: " + doc.formalName);
 	}
 
-	/**
+    # /**
 	 * Check that the proposed callotherfixup extension targets a user-defined op
 	 * that exists.  Check if the extension would override a built-in fixup.
 	 * @param doc is info on the proposed extension
@@ -580,7 +580,7 @@ public class SpecExtension {
 		doc.override = true;
 	}
 
-	/**
+    # /**
 	 * Check that the proposed prototype extension does not collide with a
 	 * built-in prototype.
 	 * @param doc is info on the proposed prototype
@@ -599,7 +599,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Check the given document information against existing objects already in the compiler spec.
 	 * Any problem (like name collisions) causes an exception to get thrown.
 	 * Checks may populate additional document information
@@ -623,7 +623,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Test if the given XML document describes a suitable spec extension.
 	 * The document must fully parse and validate and must not conflict with the existing spec;
 	 * otherwise an exception is thrown. If all tests pass, an object describing basic properties
@@ -652,7 +652,7 @@ public class SpecExtension {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Clean up references to a callfixup that is going to be removed
 	 * @param fixupName is the name of the fixup
 	 * @param monitor is a task monitor
@@ -680,7 +680,7 @@ public class SpecExtension {
 		}
 	}
 
-	/**
+    # /**
 	 * Clean up any references to a callotherfixup that is going to be removed
 	 * @param fixupName is the name of the callother fixup
 	 * @param monitor is a task monitor
@@ -689,7 +689,7 @@ public class SpecExtension {
 		// Nothing to clean up currently
 	}
 
-	/**
+    # /**
 	 * If the indicated evaluation model matches the given name,
 	 * clear the evaluation model to the default
 	 * @param modelType is the indicated evaluation model
@@ -706,7 +706,7 @@ public class SpecExtension {
 		options.setString(ProgramCompilerSpec.EVALUATION_MODEL_PROPERTY_NAME, newName);
 	}
 
-	/**
+    # /**
 	 * Clean up references to a prototype extension that is about to be removed.
 	 * Functions that use this prototype are changed to have an "unknown" prototype.
 	 * @param modelName is the name of the prototype being removed
@@ -742,7 +742,7 @@ public class SpecExtension {
 		clearPrototypeEvaluationModel(EvaluationModelType.EVAL_CURRENT, modelName);
 	}
 
-	/**
+    # /**
 	 * Install or replace a spec extension to the program.  The extension is presented as
 	 * an XML document, from which a name is extracted.  If an extension previously existed
 	 * with the same name, it is overwritten.  Otherwise the document is treated as a new
@@ -772,7 +772,7 @@ public class SpecExtension {
 		program.installExtensions();
 	}
 
-	/**
+    # /**
 	 * Remove the indicated spec extension from the program.
 	 * Depending on the type, references to the extension are removed or altered
 	 * first, to facilitate final removal of the extension.

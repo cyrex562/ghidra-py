@@ -15,13 +15,13 @@
  */
 package ghidra.framework.model;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.util.InvalidNameException;
 
 public class ProjectDataUtils {
-	/**
+    # /**
 	 * A not-thread-safe {@link DomainFile} iterator that recursively walks a
 	 * {@link ProjectData project's data} and returns each {@code DomainFile} that is
 	 * found.
@@ -31,7 +31,7 @@ public class ProjectDataUtils {
 		private Deque<DomainFile> fileQueue = new LinkedList<>();
 		private Deque<DomainFolder> folderQueue = new LinkedList<>();
 
-		/**
+	    # /**
 		 * Recursively traverse a {@link Project} starting in its root folder.
 		 *
 		 * @param project
@@ -40,7 +40,7 @@ public class ProjectDataUtils {
 			this(project.getProjectData().getRootFolder());
 		}
 
-		/**
+	    # /**
 		 * Recursively traverse the {@link DomainFile}s under a specific {@link DomainFolder}.
 		 *
 		 * @param startFolder
@@ -75,7 +75,7 @@ public class ProjectDataUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * A not-thread-safe {@link DomainFolder} iterator that recursively walks a
 	 * {@link ProjectData project's data} and returns each {@code DomainFolder} that is
 	 * found.
@@ -85,7 +85,7 @@ public class ProjectDataUtils {
 		private Deque<DomainFolder> folderQueue = new LinkedList<>();
 		private DomainFolder nextFolder;
 
-		/**
+	    # /**
 		 * Recursively traverse a {@link Project} starting in its root folder.
 		 *
 		 * @param project
@@ -94,7 +94,7 @@ public class ProjectDataUtils {
 			this(project.getProjectData().getRootFolder());
 		}
 
-		/**
+	    # /**
 		 * Recursively traverse the {@link DomainFolder}s under a specific {@link DomainFolder}.
 		 *
 		 * @param startFolder
@@ -128,7 +128,7 @@ public class ProjectDataUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a {@link Iterable} sequence of all the {@link DomainFile}s that exist under
 	 * the specified {@link DomainFolder folder}.
 	 *
@@ -139,7 +139,7 @@ public class ProjectDataUtils {
 		return () -> new DomainFileIterator(folder);
 	}
 
-	/**
+    # /**
 	 * Returns a {@link Iterable} sequence of all the {@link DomainFolder}s that exist under
 	 * the specified {@link DomainFolder folder}.
 	 * @param folder
@@ -149,7 +149,7 @@ public class ProjectDataUtils {
 		return () -> new DomainFolderIterator(folder);
 	}
 
-	/**
+    # /**
 	 * Returns a Ghidra {@link DomainFolder} with the matching path, creating
 	 * any missing parent folders as needed.
 	 * <p>
@@ -180,7 +180,7 @@ public class ProjectDataUtils {
 		return currentFolder;
 	}
 
-	/**
+    # /**
 	 * Returns a Ghidra {@link DomainFolder} with the matching path, or null if not found.
 	 * <p>
 	 * @param currentFolder starting {@link DomainFolder}.
@@ -205,7 +205,7 @@ public class ProjectDataUtils {
 		return currentFolder;
 	}
 
-	/**
+    # /**
 	 * Returns a unique name in a Ghidra {@link DomainFolder}.
 	 *
 	 * @param folder {@link DomainFolder} to check for child name collisions.

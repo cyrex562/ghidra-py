@@ -15,7 +15,7 @@
  */
 package ghidra.test;
 
-import java.io.*;
+
 import java.util.*;
 
 import db.DBHandle;

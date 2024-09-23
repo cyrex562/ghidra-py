@@ -16,7 +16,7 @@
 package ghidra.framework.store.local;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.framework.store.*;
 import ghidra.util.PropertyFile;
@@ -30,7 +30,7 @@ public class UnknownFolderItem extends LocalFolderItem {
 
 	public static final String UNKNOWN_CONTENT_TYPE = "Unknown";
 
-	/**
+    # /**
 	 * Constructor.
 	 * @param fileSystem local file system
 	 * @param propertyFile property file associated with this item

@@ -36,7 +36,7 @@ public class RowColumnLayout implements LayoutManager {
 	private int maxSize;
 	private int fillOrder;
 
-	/**
+    # /**
 	 * Constructs a new RowColumnLayout
 	 * @param hgap the gap (in pixels) between columns
 	 * @param vgap the gap (in pixels) between rows
@@ -53,21 +53,21 @@ public class RowColumnLayout implements LayoutManager {
 		this.fillOrder = LEFT_TO_RIGHT;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#addLayoutComponent(String, Component)
 	 */
 	@Override
 	public void addLayoutComponent(String name, Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#removeLayoutComponent(Component)
 	 */
 	@Override
 	public void removeLayoutComponent(Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#preferredLayoutSize(Container)
 	 */
 	@Override
@@ -100,7 +100,7 @@ public class RowColumnLayout implements LayoutManager {
 		return d;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#minimumLayoutSize(Container)
 	 */
 	@Override
@@ -110,7 +110,7 @@ public class RowColumnLayout implements LayoutManager {
 			compHeight + insets.top + insets.bottom);
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#layoutContainer(Container)
 	 */
 	@Override
@@ -173,7 +173,7 @@ public class RowColumnLayout implements LayoutManager {
 		}
 	}
 
-	/**
+    # /**
 	 * @param maxSize
 	 */
 	public void setMaxSize(int maxSize) {

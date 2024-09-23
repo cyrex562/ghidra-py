@@ -15,7 +15,7 @@
  */
 package ghidra.util;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 # /**
@@ -27,7 +27,7 @@ public class BoundedInputStream extends InputStream {
 	private final long limit;
 	private long position;
 
-	/**
+    # /**
 	 * Creates a new instance.
 	 *
 	 * @param wrappedInputStream {@link InputStream} to wrap, already positioned to the desired

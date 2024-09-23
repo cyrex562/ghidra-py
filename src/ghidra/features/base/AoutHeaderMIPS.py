@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.coff;
 
 import ghidra.app.util.bin.BinaryReader;
 
-import java.io.IOException;
+
 
 public class AoutHeaderMIPS extends AoutHeader {
 	public final static int SIZEOF = 56;

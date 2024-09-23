@@ -20,7 +20,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 public class IDFLookup {
@@ -135,7 +135,7 @@ public class IDFLookup {
 		parser.end(el);
 	}
 
-	/**
+    # /**
 	 * Collapse IDFLookup into an int array, suitable for storage
 	 * @return int[]
 	 */
@@ -156,7 +156,7 @@ public class IDFLookup {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Set from an array of hash/count pairs.  Every even index is a hash, every odd index is a count
 	 * @param hashCountPair is the pair array
 	 */

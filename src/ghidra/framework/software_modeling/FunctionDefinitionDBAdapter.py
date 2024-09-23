@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -28,8 +28,8 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Adapter to access the Function Signature Definition database table.
- */
+# * Adapter to access the Function Signature Definition database table.
+# */
 abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 
 	static final String FUNCTION_DEF_TABLE_NAME = "Function Definitions";
@@ -58,7 +58,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 	static final byte FUNCTION_DEF_VARARG_FLAG = (byte) 0x1; // Bit 0 is flag for "has vararg".
 	static final byte FUNCTION_DEF_NORETURN_FLAG = (byte) 0x2; // Bit 1 is flag for "has noreturn" (added with V2).
 
-	/**
+    # /**
 	 * Gets an adapter for working with the function definition data type database table. The adapter is based
 	 * on the version of the database associated with the specified database handle and the openMode.
 	 * @param handle handle to the database to be accessed.
@@ -99,7 +99,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Tries to get a read only adapter for the database whose handle is passed to this method.
 	 * @param handle handle to prior version of the database.
 	 * @param tablePrefix prefix to be used with default table name
@@ -128,7 +128,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 		return new FunctionDefinitionDBAdapterNoTable(handle);
 	}
 
-	/**
+    # /**
 	 * Upgrades the Function Definition data type table from the oldAdapter's version to the current version.
 	 * @param handle handle to the database whose table is to be upgraded to a newer version.
 	 * @param oldAdapter the adapter for the existing table to be upgraded.
@@ -172,7 +172,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a database record for an function signature definition data type.
 	 * @param name the unique name for this data type.
 	 * @param comments comments about this data type.
@@ -191,7 +191,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 			boolean hasNoReturn, boolean hasVarArgs, byte callingConventionID, long sourceArchiveID,
 			long sourceDataTypeID, long lastChangeTime) throws IOException;
 
-	/**
+    # /**
 	 * Gets a function signature definition data type record from the database based on its ID.
 	 * @param functionDefID the data type's ID.
 	 * @return the record for the function definition data type.
@@ -199,7 +199,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 	 */
 	abstract DBRecord getRecord(long functionDefID) throws IOException;
 
-	/**
+    # /**
 	 * Gets an iterator over all function signature definition data type records.
 	 * @return the function definition data type record iterator.
 	 * @throws IOException if the database can't be accessed.
@@ -207,7 +207,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 	@Override
 	public abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Removes the function definition data type record with the specified ID.
 	 * @param functionDefID the ID of the data type.
 	 * @return true if the record is removed.
@@ -215,7 +215,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 	 */
 	abstract boolean removeRecord(long functionDefID) throws IOException;
 
-	/**
+    # /**
 	 * Updates the function definition data type table with the provided record.
 	 * @param record the new record
 	 * @param setLastChangeTime true means change the last change time in the record to the
@@ -224,14 +224,14 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 	 */
 	abstract void updateRecord(DBRecord record, boolean setLastChangeTime) throws IOException;
 
-	/**
+    # /**
 	 * Deletes the function definition data type table from the database with the specified database handle.
 	 * @param handle handle to the database where the table should get deleted.
 	 * @throws IOException if the database can't be accessed.
 	 */
 	abstract void deleteTable(DBHandle handle) throws IOException;
 
-	/**
+    # /**
 	 * Gets all the function definition data types that are contained in the category that has the indicated ID.
 	 * @param categoryID the category whose function definition data types are wanted.
 	 * @return an array of IDs for the function definition data types in the category.
@@ -239,7 +239,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 	 */
 	abstract Field[] getRecordIdsInCategory(long categoryID) throws IOException;
 
-	/**
+    # /**
 	 * Gets an array with the IDs of all data types in the function definition table that were derived
 	 * from the source data type archive indicated by the source archive ID.
 	 * @param archiveID the ID of the source archive whose data types we want.
@@ -248,7 +248,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 	 */
 	abstract Field[] getRecordIdsForSourceArchive(long archiveID) throws IOException;
 
-	/**
+    # /**
 	 * Get function definition record whose sourceID and datatypeID match the specified Universal IDs.
 	 * @param sourceID universal source archive ID
 	 * @param datatypeID universal datatype ID
@@ -258,7 +258,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 	abstract DBRecord getRecordWithIDs(UniversalID sourceID, UniversalID datatypeID)
 			throws IOException;
 
-	/**
+    # /**
 	 * Determine if the calling convention ID within record reflects a Generic Calling Convention 
 	 * ordinal (i.e., true if V1 adapter in use for read-only mode).  
 	 * See {@link #getGenericCallingConventionName(int)} for Generic Calling Convention name lookup.
@@ -269,7 +269,7 @@ abstract class FunctionDefinitionDBAdapter implements DBRecordAdapter {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get old GenericCallingConvention name for specified ordinal value.
 	 * @param ordinal old GenericCallingConvention ordinal
 	 * @return old GenericCallingConvention name

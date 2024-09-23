@@ -25,7 +25,7 @@ public class RangeAttribute extends AbstractParsableItem {
 	private int attributes;
 	private boolean mayHaveNoUserNameOnAControlFlowPath;
 
-	/**
+    # /**
 	 * Constructor for this symbol component.
 	 * @param reader {@link PdbByteReader} from which this data is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.

@@ -24,7 +24,7 @@ public class IntSet {
 	
 	private IntKeyIndexer indexer;
 
-	/**
+    # /**
 	 * Constructs a new empty int set
 	 * @param capacity the initial storage size, the set will grow if needed.
 	 */
@@ -32,7 +32,7 @@ public class IntSet {
 		indexer = new IntKeyIndexer(capacity);
 	}
 	
-	/**
+    # /**
 	 * Constructs a new IntSet and populates it with the given array of ints.
 	 * @param values the array if ints to add to the set.
 	 */
@@ -43,7 +43,7 @@ public class IntSet {
 		}
 	}
 	
-	/**
+    # /**
 	 * Returns the number of ints in the set.
 	 * @return the number of ints in the set.
 	 */
@@ -51,14 +51,14 @@ public class IntSet {
 		return indexer.getSize();
 	}
 	
-	/**
+    # /**
 	 * Returns true if the set is empty
 	 */
 	public boolean isEmpty() {
 		return indexer.getSize() == 0;
 	}
 	
-	/**
+    # /**
 	 * Returns true if the set contains the given value.
 	 * @param value the value to test if it is in the set.
 	 * @return true if the value is in the set.
@@ -67,7 +67,7 @@ public class IntSet {
 		return indexer.get(value) >= 0;
 	}
 	
-	/**
+    # /**
 	 * Add the int value to the set.
 	 * @param value the value to add to the set.
 	 */
@@ -75,7 +75,7 @@ public class IntSet {
 		indexer.put(value);
 	}
 	
-	/**
+    # /**
 	 * Removes the int value from the set.
 	 * @param value the value to remove from the set.
 	 * @return true if the value was in the set, false otherwise.
@@ -84,14 +84,14 @@ public class IntSet {
 		return indexer.remove(value) >= 0;
 	}
 	
-	/**
+    # /**
 	 * Removes all values from the set.
 	 */
 	public void clear() {
 		indexer.clear();
 	}
 	
-	/**
+    # /**
 	 * Returns an array with all the values in the set.
 	 */
 	public int[] getValues() {

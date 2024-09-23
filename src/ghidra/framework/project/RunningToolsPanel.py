@@ -103,7 +103,7 @@ class RunningToolsPanel extends JPanel {
 	void toolNameChanged(PluginTool changedTool) {
 	}
 
-	/**
+    # /**
 	 * Update the tool template for the tool button.
 	 */
 	void updateToolButton(PluginTool tool, ToolTemplate template, Icon icon) {

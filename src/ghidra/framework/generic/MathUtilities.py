@@ -20,7 +20,7 @@ public class MathUtilities {
 	private MathUtilities() {
 	}
 
-	/**
+    # /**
 	 * Perform unsigned division. Provides proper handling of all 64-bit unsigned values.
 	 * 
 	 * @param numerator unsigned numerator
@@ -46,7 +46,7 @@ public class MathUtilities {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Perform unsigned modulo. Provides proper handling of all 64-bit unsigned values.
 	 * 
 	 * @param numerator unsigned numerator
@@ -68,7 +68,7 @@ public class MathUtilities {
 		return remainder % denominator;
 	}
 
-	/**
+    # /**
 	 * Ensures that the given value is within the given range.
 	 * 
 	 * @param value the value to check
@@ -97,7 +97,7 @@ public class MathUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Compute the minimum, treating the inputs as unsigned
 	 * 
 	 * @param a the first value to consider
@@ -108,7 +108,7 @@ public class MathUtilities {
 		return (Long.compareUnsigned(a, b) < 0) ? a : b;
 	}
 
-	/**
+    # /**
 	 * Compute the minimum, treating the inputs as unsigned
 	 * 
 	 * @param a the first value to consider
@@ -119,7 +119,7 @@ public class MathUtilities {
 		return (Integer.compareUnsigned(a, b) < 0) ? a : b;
 	}
 
-	/**
+    # /**
 	 * Compute the minimum, treating the inputs as unsigned
 	 * 
 	 * <p>
@@ -136,7 +136,7 @@ public class MathUtilities {
 		return (Long.compareUnsigned(a & 0x0ffffffffL, b) < 0) ? a : (int) b;
 	}
 
-	/**
+    # /**
 	 * Compute the minimum, treating the inputs as unsigned
 	 * 
 	 * <p>
@@ -153,7 +153,7 @@ public class MathUtilities {
 		return (Long.compareUnsigned(a, b & 0x0ffffffffL) < 0) ? (int) a : b;
 	}
 
-	/**
+    # /**
 	 * Compute the maximum, treating the inputs as unsigned
 	 * 
 	 * @param a the first value to consider
@@ -164,7 +164,7 @@ public class MathUtilities {
 		return (Long.compareUnsigned(a, b) > 0) ? a : b;
 	}
 
-	/**
+    # /**
 	 * Compute the maximum, treating the inputs as unsigned
 	 * 
 	 * @param a the first value to consider
@@ -175,7 +175,7 @@ public class MathUtilities {
 		return (Integer.compareUnsigned(a, b) > 0) ? a : b;
 	}
 
-	/**
+    # /**
 	 * Compute the maximum, treating the inputs as unsigned
 	 * 
 	 * <p>
@@ -190,7 +190,7 @@ public class MathUtilities {
 		return (Long.compareUnsigned(a & 0x0ffffffffL, b) > 0) ? a : b;
 	}
 
-	/**
+    # /**
 	 * Compute the maximum, treating the inputs as unsigned
 	 * 
 	 * <p>

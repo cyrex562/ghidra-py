@@ -82,7 +82,7 @@ class DisplayFunctionsPanel extends JPanel {
 		add(functionsHTMLComponent, BorderLayout.CENTER);
 	}
 
-	/**
+    # /**
 	 * Takes a new set of query results and parses the function counts.
 	 * 
 	 * @param queryResult the object to hold the load results
@@ -237,7 +237,7 @@ class DisplayFunctionsPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Calculates how many matches are associated with each base function in
 	 * the given result set and stores them in the {@link DisplayFunctionsPanel#functionMatchMap}.
 	 * 
@@ -253,7 +253,7 @@ class DisplayFunctionsPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Column for showing the number of matches each base function has. 
 	 * 
 	 * To make this as fast as possible, the counts for each function are NOT determined

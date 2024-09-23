@@ -15,7 +15,7 @@
  */
 package utilities.util.reflection;
 
-import java.io.*;
+
 import java.lang.reflect.*;
 import java.util.*;
 import java.util.Map.Entry;
@@ -42,7 +42,7 @@ public class ReflectionUtilities {
 		// utils class; can't create
 	}
 
-	/**
+    # /**
 	* Locates the field of the name <code>fieldName</code> on the given
 	* class.  If the given class does not contain the field, then this
 	* method will recursively call up <code>containingClass</code>'s
@@ -73,7 +73,7 @@ public class ReflectionUtilities {
 		return field;
 	}
 
-	/**
+    # /**
 	 * Locates the field of the name <code>fieldName</code> on the given
 	 * class.  If the given class does not contain the field, then this
 	 * method will recursively call up <code>containingClass</code>'s
@@ -104,7 +104,7 @@ public class ReflectionUtilities {
 		return field;
 	}
 
-	/**
+    # /**
 	 * Locates the method of the name <code>methodName</code> on the given
 	 * class.  If the given class does not contain the method, then this
 	 * method will recursively call up <code>containingClass</code>'s
@@ -157,7 +157,7 @@ public class ReflectionUtilities {
 		return constructor;
 	}
 
-	/**
+    # /**
 	 * Get the first field specification contained within containingClass which has the type classType.
 	 * This method is only really useful if it is known that only a single field of
 	 * classType exists within the containingClass hierarchy.
@@ -182,7 +182,7 @@ public class ReflectionUtilities {
 		return locateFieldByTypeOnClass(classType, parentClass);
 	}
 
-	/**
+    # /**
 	 * Returns the class name of the entry in the stack that comes before all references to the
 	 * given classes.  This is useful for figuring out at runtime who is calling a particular
 	 * method.
@@ -199,7 +199,7 @@ public class ReflectionUtilities {
 		return stackTrace[0].getClassName();
 	}
 
-	/**
+    # /**
 	 * Returns the class name of the entry in the stack that comes before all references to the
 	 * given patterns.  This is useful for figuring out at runtime who is calling a particular
 	 * method.
@@ -213,7 +213,7 @@ public class ReflectionUtilities {
 		return stackTrace[0].getClassName();
 	}
 
-	/**
+    # /**
 	 * Creates a throwable whose stack trace is based upon the current call stack, with any
 	 * information coming before, and including, the given patterns removed.
 	 *
@@ -273,7 +273,7 @@ public class ReflectionUtilities {
 		return t;
 	}
 
-	/**
+    # /**
 	 * Creates a throwable whose stack trace is based upon the current call stack, with any
 	 * information coming before, and including, the given classes removed.
 	 * <p>
@@ -290,7 +290,7 @@ public class ReflectionUtilities {
 		return createThrowableWithStackOlderThan(patterns, StackElementMatcher.EXACT_CLASS);
 	}
 
-	/**
+    # /**
 	 * Finds the first occurrence of the given pattern and then stops filtering when it finds
 	 * something that is not that pattern
 	 *
@@ -326,7 +326,7 @@ public class ReflectionUtilities {
 		return updatedTrace;
 	}
 
-	/**
+    # /**
 	 * Uses the given <code>patterns</code> to remove elements from the given stack trace.
 	 * The current implementation will simply perform a <code>toString()</code> on each element and
 	 * then check to see if that string contains any of the <code>patterns</code>.
@@ -352,7 +352,7 @@ public class ReflectionUtilities {
 
 	}
 
-	/**
+    # /**
 	 * A convenience method to create a throwable, filtering any lines that contain the given
 	 * non-regex patterns.  This can be useful for emitting diagnostic stack traces.
 	 *
@@ -370,7 +370,7 @@ public class ReflectionUtilities {
 		return t;
 	}
 
-	/**
+    # /**
 	 * A convenience method to create a throwable, filtering boiler-plate Java-related
 	 * lines (e.g., AWT, Swing, Security, etc).
 	 * This can be useful for emitting diagnostic stack traces with reduced noise.
@@ -382,7 +382,7 @@ public class ReflectionUtilities {
 		return filterJavaThrowable(t);
 	}
 
-	/**
+    # /**
 	 * A convenience method to create a throwable, filtering boiler-plate Java-related
 	 * lines (e.g., AWT, Swing, Security, etc).
 	 * This can be useful for emitting diagnostic stack traces with reduced noise.
@@ -399,7 +399,7 @@ public class ReflectionUtilities {
 		return stackTraceToString(filtered);
 	}
 
-	/**
+    # /**
 	 * A convenience method to take a throwable, filter boiler-plate Java-related
 	 * lines (e.g., AWT, Swing, Security, etc).
 	 * This can be useful for emitting diagnostic stack traces with reduced noise.
@@ -431,7 +431,7 @@ public class ReflectionUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns a string which is a printout of a stack trace for each thread running in the
 	 * current JVM
 	 * @return the stack trace string
@@ -451,7 +451,7 @@ public class ReflectionUtilities {
 		return builder.toString();
 	}
 
-	/**
+    # /**
 	 * Returns an ordered set of interfaces and classes that are shared amongst the items in
 	 * the list.
 	 * <p>
@@ -494,7 +494,7 @@ public class ReflectionUtilities {
 		return master;
 	}
 
-	/**
+    # /**
 	 * Returns an ordered set of parent interfaces and classes that are shared
 	 * amongst the items in the list.
 	 * <p>
@@ -527,7 +527,7 @@ public class ReflectionUtilities {
 		return master;
 	}
 
-	/**
+    # /**
 	 * Turns the given {@link Throwable} into a String version of its
 	 * {@link Throwable#printStackTrace()} method.
 	 *
@@ -538,7 +538,7 @@ public class ReflectionUtilities {
 		return stackTraceToString(t.getMessage(), t);
 	}
 
-	/**
+    # /**
 	 * Turns the given {@link Throwable} into a String version of its
 	 * {@link Throwable#printStackTrace()} method.
 	 *
@@ -575,7 +575,7 @@ public class ReflectionUtilities {
 		return sb.toString();
 	}
 
-	/**
+    # /**
 	 * Returns an order set of all interfaces implemented and classes extended for the entire
 	 * type structure of the given class.
 	 * <p>
@@ -613,7 +613,7 @@ public class ReflectionUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the type arguments for the given base class and extension.
 	 *
 	 * <p>Caveat: this lookup will only work if the given child class is a concrete class that

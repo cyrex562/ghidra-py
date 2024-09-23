@@ -15,7 +15,7 @@
  */
 package ghidra.pcodeCPort.slgh_compile;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;

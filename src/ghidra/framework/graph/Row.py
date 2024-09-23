@@ -35,11 +35,11 @@ import ghidra.graph.viewer.GraphViewerUtils;
  */
 public class Row<V> {
 
-	/** The <b>layout</b> y coordinate of the column */
+    # /** The <b>layout</b> y coordinate of the column */
 	public int y = -1;
 	public int height = -1;
 
-	/** The grid index of this row (0, 1...n) for the number of rows */
+    # /** The grid index of this row (0, 1...n) for the number of rows */
 	public int index = Integer.MAX_VALUE;
 
 	// Note: this must change together (they are effectively a BiDi map)
@@ -54,7 +54,7 @@ public class Row<V> {
 		this.index = index;
 	}
 
-	/**
+    # /**
 	 * Sets the column index in this row for the given vertex
 	 * 
 	 * @param v the vertex
@@ -65,7 +65,7 @@ public class Row<V> {
 		verticesByColumn.put(col, v);
 	}
 
-	/**
+    # /**
 	 * Returns the column index for the given vertex
 	 * 
 	 * @param v the vertex 
@@ -78,7 +78,7 @@ public class Row<V> {
 		return columnsByVertex.get(v);
 	}
 
-	/**
+    # /**
 	 * Returns the vertex at the given column index or null if there is no vertex at that column
 	 * 
 	 * @param column the column index
@@ -88,7 +88,7 @@ public class Row<V> {
 		return verticesByColumn.get(column);
 	}
 
-	/**
+    # /**
 	 * Represents the range of columns in this row.  For this given row in a grid:
 	 * <pre>
 	 * 	0 1 2 3 4 5 6
@@ -111,7 +111,7 @@ public class Row<V> {
 		return diff + 1; // +1 for zero-based values
 	}
 
-	/**
+    # /**
 	 * Returns the smallest column index in this row
 	 * 
 	 * @return the smallest column index in this row
@@ -120,7 +120,7 @@ public class Row<V> {
 		return verticesByColumn.firstKey();
 	}
 
-	/**
+    # /**
 	 * Returns the largest column index in this row
 	 * 
 	 * @return the largest column index in this row
@@ -129,7 +129,7 @@ public class Row<V> {
 		return verticesByColumn.lastKey();
 	}
 
-	/**
+    # /**
 	 * Returns all vertices in this row, sorted by column index (min to max).   
 	 * 
 	 * <p>Note: the index of a vertex in the list does not match the column index.  To get the

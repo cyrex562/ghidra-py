@@ -23,31 +23,31 @@ import ghidra.util.classfinder.ExtensionPoint;
 
 public interface VTProgramCorrelatorFactory extends ExtensionPoint {
 
-	/**
+    # /**
 	 * Returns the name of the correlator for display to the user in the GUI.
 	 * @return the name of the correlator
 	 */
 	public String getName();
 
-	/**
+    # /**
 	 * Returns the description of the correlator for display to the user in the GUI.
 	 * @return the description of the correlator
 	 */
 	public String getDescription();
 
-	/**
+    # /**
 	 * Returns the listing priority of the correlator; lower means higher in the list.
 	 * @return the listing priority of the correlator
 	 */
 	public int getPriority();
 
-	/**
+    # /**
 	 * Returns the restriction preference of the correlator.
 	 * @return the restriction preference of the correlator
 	 */
 	public VTProgramCorrelatorAddressRestrictionPreference getAddressRestrictionPreference();
 
-	/**
+    # /**
 	 * Returns an options action that contains a list of all supported options for the algorithm and
 	 * their default values.  Override if you need to provide other than the
 	 * @return an options action that contains a list of all supported options for the algorithm and
@@ -55,7 +55,7 @@ public interface VTProgramCorrelatorFactory extends ExtensionPoint {
 	 */
 	public VTOptions createDefaultOptions();
 
-	/**
+    # /**
 	 * Returns a VTProgramCorrelator instance created specifically for the given parameters.
 	 * @param sourceProgram the source program for this correlation.
 	 * @param sourceAddressSet the set of addresses in the source program to consider in this correlation.
@@ -69,7 +69,7 @@ public interface VTProgramCorrelatorFactory extends ExtensionPoint {
 			AddressSetView sourceAddressSet, Program destinationProgram,
 			AddressSetView destinationAddressSet, VTOptions options);
 
-	/**
+    # /**
 	 * Deprecated.  Use {@link #createCorrelator(Program, AddressSetView, Program, AddressSetView, VTOptions)}
 	 * instead.
 	 *

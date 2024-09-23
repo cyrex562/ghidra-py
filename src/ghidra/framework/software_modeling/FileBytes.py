@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.mem;
 
-import java.io.IOException;
+
 import java.util.ConcurrentModificationException;
 
 import org.apache.commons.lang3.StringUtils;
@@ -23,9 +23,9 @@ import org.apache.commons.lang3.StringUtils;
 import db.*;
 
 # /**
- * FileBytes provides access to the all the byte values (both original and modified) from an
- * imported file. 
- */
+# * FileBytes provides access to the all the byte values (both original and modified) from an
+# * imported file. 
+# */
 public class FileBytes {
 
 	final FileBytesAdapter adapter;
@@ -78,7 +78,7 @@ public class FileBytes {
 		return id;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the file that supplied the bytes.
 	 * @return the name of the file that supplied the bytes.
 	 */
@@ -86,7 +86,7 @@ public class FileBytes {
 		return filename;
 	}
 
-	/**
+    # /**
 	 * Returns the offset in the original file from where these bytes originated. Normally this will
 	 * be 0, but in the case where the program is actually a piece in some other file (e.g. tar,zip),
 	 * this will be the offset into the file corresponding to the first byte in this FileBytes object.
@@ -97,7 +97,7 @@ public class FileBytes {
 		return fileOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes from the original source file that are stored in the database.
 	 * @return  the number of bytes from the original source file that are stored in the database.
 	 */
@@ -105,7 +105,7 @@ public class FileBytes {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Returns the (possibly modified) byte at the given offset for this file bytes object.
 	 * @param offset the offset into the file bytes for the byte to retrieve.
 	 * @return the (possibly modified) byte at the given offset for this file bytes object.
@@ -116,7 +116,7 @@ public class FileBytes {
 		return getByte(layeredBuffers, offset);
 	}
 
-	/**
+    # /**
 	 * Returns the original byte value at the given offset for this file bytes object.
 	 * @param offset the offset into the file bytes for the byte to retrieve.
 	 * @return the original byte at the given offset for this file bytes object.
@@ -127,7 +127,7 @@ public class FileBytes {
 		return getByte(originalBuffers, offset);
 	}
 
-	/**
+    # /**
 	 * Tries to get b.length (possibly modified) bytes from this FileBytes entry at the given offset into the file
 	 *  bytes.  May return fewer bytes if the requested length is beyond the end of the file bytes.
 	 *  
@@ -140,7 +140,7 @@ public class FileBytes {
 		return getBytes(layeredBuffers, offset, b, 0, b.length);
 	}
 
-	/**
+    # /**
 	 * Tries to get b.length original bytes from this FileBytes entry at the given offset into the file
 	 *  bytes.  May return fewer bytes if the requested length is beyond the end of the file bytes.
 	 *  
@@ -153,7 +153,7 @@ public class FileBytes {
 		return getBytes(originalBuffers, offset, b, 0, b.length);
 	}
 
-	/**
+    # /**
 	 * Tries to get length (possibly modified) bytes from the files starting at the given offset and put them 
 	 * into the given byte array at the specified offset into the byte array.  May return
 	 * fewer bytes if the requested length is beyond the end of the file bytes.
@@ -172,7 +172,7 @@ public class FileBytes {
 		return getBytes(layeredBuffers, offset, b, off, length);
 	}
 
-	/**
+    # /**
 	 * Tries to get length (original) bytes from the files starting at the given offset and put them 
 	 * into the given byte array at the specified offset into the byte array.  May return
 	 * fewer bytes if the requested length is beyond the end of the file bytes.
@@ -201,7 +201,7 @@ public class FileBytes {
 		invalid = true;
 	}
 
-	/**
+    # /**
 	 * Changes the byte at the given offset to the given value. Note, the 
 	 * original byte can still be accessed via {@link #getOriginalByte(long)}
 	 * If the byte is changed more than once, only the original value is preserved.
@@ -229,7 +229,7 @@ public class FileBytes {
 		layeredBuffers[dbBufferIndex].putByte(localOffset, b);
 	}
 
-	/**
+    # /**
 	 * Changes the bytes at the given offset to the given values. Note, the 
 	 * original bytes can still be accessed via {@link #getOriginalBytes(long, byte[])}
 	 * If the bytes are changed more than once, only the original values are preserved.
@@ -243,7 +243,7 @@ public class FileBytes {
 		return putBytes(offset, b, 0, b.length);
 	}
 
-	/**
+    # /**
 	 * Changes the bytes at the given offset to the given values. Note, the 
 	 * original bytes can still be accessed via {@link #getOriginalBytes(long, byte[], int, int)}
 	 * If the bytes are changed more than once, only the original values are preserved.

@@ -20,7 +20,7 @@ import ghidra.util.xml.SpecXmlUtils;
 import ghidra.xml.XmlElement;
 import ghidra.xml.XmlPullParser;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 public class IDFLookup {

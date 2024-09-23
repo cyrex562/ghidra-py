@@ -23,7 +23,7 @@ import ghidra.program.model.listing.Program;
 
 public final class DtbUtil {
 
-	/**
+    # /**
 	 * Returns TRUE if the program is using the DATA Big-Endian language.
 	 * @param program the program to check language.
 	 * @param log the message log to report errors.
@@ -39,7 +39,7 @@ public final class DtbUtil {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns TRUE if the program is loaded using Binary Loader.
 	 * @param program the program to check loader.
 	 * @return TRUE if the program is loaded using Binary Loader

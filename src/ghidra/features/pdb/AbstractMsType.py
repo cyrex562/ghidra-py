@@ -65,7 +65,7 @@ public abstract class AbstractMsType extends AbstractParsableItem implements MsT
 		PTR, ARRAY, PROC, NONE
 	}
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -82,7 +82,7 @@ public abstract class AbstractMsType extends AbstractParsableItem implements MsT
 		this.recordNumber = recordNumber;
 	}
 
-	/**
+    # /**
 	 * If the type has a name element, returns this name; else returns an empty String.
 	 *  Meant to be overloaded by derived types that have a name element.
 	 * @return Name.
@@ -92,7 +92,7 @@ public abstract class AbstractMsType extends AbstractParsableItem implements MsT
 		return "";
 	}
 
-	/**
+    # /**
 	 * Returns the unique ID (PdbId) for this data type.
 	 * @return Identifier for this data type.
 	 */
@@ -104,7 +104,7 @@ public abstract class AbstractMsType extends AbstractParsableItem implements MsT
 		this.emit(builder, Bind.NONE);
 	}
 
-	/**
+    # /**
 	 * Emits {@link String} output of this class into the provided {@link StringBuilder}.
 	 * @param builder {@link StringBuilder} into which the output is created.
 	 * @param bind Bind ordinal used for determining when parentheses should surround components. 

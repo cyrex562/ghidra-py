@@ -29,7 +29,7 @@ public abstract class IconWrapper implements Icon {
 
 	private Icon icon;
 
-	/**
+    # /**
 	 * Creates the icon upon first use.
 	 * @return icon
 	 */

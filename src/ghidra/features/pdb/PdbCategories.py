@@ -44,7 +44,7 @@ public class PdbCategories {
 	// NOTE: a TODO could be to add optional GUID and AGE values.  This could be as sub-categories
 	// or combined with the file name.  This could be helpful when allowing multiple PDBs to be
 	// loaded (at least their data types).
-	/**
+    # /**
 	 * Constructor
 	 * @param pdbCategoryName pathname of the PDB file that this category represents.
 	 * @param moduleNames module names
@@ -64,7 +64,7 @@ public class PdbCategories {
 		anonymousTypesCategory = new CategoryPath(pdbRootCategory, "!_anon_types_");
 	}
 
-	/**
+    # /**
 	 * Get root CategoryPath for the PDB.
 	 * @return the root CategoryPath.
 	 */
@@ -72,7 +72,7 @@ public class PdbCategories {
 		return pdbRootCategory;
 	}
 
-	/**
+    # /**
 	 * Get uncategorized CategoryPath for the PDB.
 	 * @return the uncategorized CategoryPath.
 	 */
@@ -92,7 +92,7 @@ public class PdbCategories {
 		}
 	}
 
-//	/**
+//    # /**
 //	 * Get the name with any namespace stripped.
 //	 * @param name Name with optional namespace prefix.
 //	 * @return Name without namespace prefix.
@@ -105,7 +105,7 @@ public class PdbCategories {
 //		return name.substring(index + Namespace.DELIMITER.length());
 //	}
 //
-//	/**
+//    # /**
 //	 * Get the name with any namespace stripped.
 //	 * @param name Name with optional namespace prefix.
 //	 * @return Name without namespace prefix.
@@ -115,7 +115,7 @@ public class PdbCategories {
 //		return names.get(names.size() - 1);
 //	}
 //
-	/**
+    # /**
 	 * Get the {@link CategoryPath} associated with the {@link SymbolPath} specified, rooting
 	 *  it either at the PDB Category.
 	 * @param symbolPath Symbol path to be used to create the CategoryPath. Null represents global
@@ -132,7 +132,7 @@ public class PdbCategories {
 		return recurseGetCategoryPath(category, symbolPath);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CategoryPath} for a typedef with the give {@link SymbolPath} and
 	 * module number; 1 <= moduleNumber <= {@link PdbDebugInfo#getNumModules()},
 	 * except that modeleNumber of 0 represents publics/globals.
@@ -158,7 +158,7 @@ public class PdbCategories {
 		return recurseGetCategoryPath(category, symbolPath);
 	}
 
-	/**
+    # /**
 	 * Recursion method used by {@link #getCategory(SymbolPath)} and
 	 *  {@link #getTypedefsCategory(int, SymbolPath)}. Returns a
 	 * new {@link CategoryPath} for the
@@ -174,7 +174,7 @@ public class PdbCategories {
 		return new CategoryPath(category, symbolPath.getName());
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CategoryPath} for Anonymous Functions Category for the PDB.
 	 * @return the {@link CategoryPath}
 	 */
@@ -182,7 +182,7 @@ public class PdbCategories {
 		return anonymousFunctionsCategory;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link CategoryPath} for Anonymous Types Category for the PDB.
 	 * @return the {@link CategoryPath}
 	 */
@@ -190,7 +190,7 @@ public class PdbCategories {
 		return anonymousTypesCategory;
 	}
 
-//	/**
+//    # /**
 //	 * Returns the name of what should be the next Anonymous Function (based on the count of
 //	 * the number of anonymous functions) so that there is a unique name for the function.
 //	 * @return the name for the next anonymous function.
@@ -199,7 +199,7 @@ public class PdbCategories {
 //		return String.format("_func_%08X", anonymousFunctionCount);
 //	}
 //
-//	/**
+//    # /**
 //	 * Updates the count of the anonymous functions.  This is a separate call from
 //	 * {@link #getNextAnonymousFunctionName()} because the count should only be updated after
 //	 * the previous anonymous function has been successfully created/stored.

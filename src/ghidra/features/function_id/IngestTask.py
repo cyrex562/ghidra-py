@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.plugin;
 
-import java.io.*;
+
 import java.util.*;
 
 import ghidra.feature.fid.db.*;
@@ -137,7 +137,7 @@ public class IngestTask extends Task {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Recursively finds all domain objects that are program files under a domain folder.
 	 * @param programs the "return" value; found programs are placed in this collection
 	 * @param myFolder the domain folder to search

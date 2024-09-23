@@ -27,7 +27,7 @@ public class OverloadedMethod16MsType extends AbstractOverloadedMethodMsType {
 
 	public static final int PDB_ID = 0x0408;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

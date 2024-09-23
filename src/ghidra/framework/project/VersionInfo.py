@@ -27,7 +27,7 @@ public class VersionInfo implements Serializable {
 	private String domainFilePath;
 	private int versionNumber;
 		
-	/**
+    # /**
 	 * Construct a new version info object. 
 	 * @param domainFilePath pathname for the domain file.
 	 * @param versionNumber version number
@@ -36,13 +36,13 @@ public class VersionInfo implements Serializable {
 		this.domainFilePath = domainFilePath;
 		this.versionNumber = versionNumber;
 	}
-	/**
+    # /**
 	 * Get the path to the domain file.
 	 */
 	public String getDomainFilePath() {
 		return domainFilePath;
 	}
-	/**
+    # /**
 	 * Get the version number.
 	 */
 	public int getVersionNumber() {

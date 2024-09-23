@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.thread;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.trace.model.Lifespan;

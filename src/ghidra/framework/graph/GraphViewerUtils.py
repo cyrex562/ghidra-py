@@ -363,7 +363,7 @@ public class GraphViewerUtils {
 		return pickSupport.getVertex(layout, point.getX(), point.getY());
 	}
 
-	/** 
+    # /** 
 	 * Get the upper-left point of vertex in the view space (Java component space)
 	 *  
 	 * @param viewer the viewer containing the UI 
@@ -443,7 +443,7 @@ public class GraphViewerUtils {
 		shapePickSupport.setPickSize(adjustedPickSize);
 	}
 
-	/**
+    # /**
 	 * Moves the selected vertices to the end of the list of vertices so that when picked (or 
 	 * painted), we will prefer the selected vertices, since we have configured the algorithms for
 	 * the graph stuff to prefer the last accessed vertex (like when picking and painting).
@@ -547,7 +547,7 @@ public class GraphViewerUtils {
 		return new GraphLoopShape(path, r);
 	}
 
-	/**
+    # /**
 	 * Creates a self-loop edge to be used with a vertex that calls itself.  The returned shape
 	 * is hollow (not a filled loop) so that mouse hit detection does not occur in the middle of
 	 * the circle.
@@ -563,7 +563,7 @@ public class GraphViewerUtils {
 		return createEgdeLoopInGraphSpace(edgeShape, vertexShape, x, y);
 	}
 
-	/**
+    # /**
 	 * Creates a loop shape for a vertex that calls itself.  The loop is transformed to graph space,
 	 * which includes updating the size and location of the loop to be relative to
 	 * the vertex.
@@ -590,7 +590,7 @@ public class GraphViewerUtils {
 		return createEgdeLoopInGraphSpace(path, vertexShape, x, y);
 	}
 
-	/**
+    # /**
 	 * Transforms the given edge loop shape to graph space, which includes updating
 	 * the size and location of the loop to be relative to the vertex.
 	 *
@@ -914,7 +914,7 @@ public class GraphViewerUtils {
 		return new Rectangle((int) smallestX, (int) smallestY, width, height);
 	}
 
-	/**
+    # /**
 	 * Returns a rectangle that contains all give vertices
 	 * 
 	 * @param viewer the viewer containing the UI
@@ -939,7 +939,7 @@ public class GraphViewerUtils {
 		return getBoundsForVerticesInLayoutSpace(vertices, transformer);
 	}
 
-	/**
+    # /**
 	 * Returns a rectangle that contains all vertices, in the layout space
 	 * 
 	 * @param vertices the vertices for which to calculate the bounds
@@ -1029,7 +1029,7 @@ public class GraphViewerUtils {
 		return getVerticesOfSelectedOrHoveredEdges(graph, true);
 	}
 
-	/**
+    # /**
 	 * Returns a collection of vertices that are incident to selected edges.
 	 * 
 	 * @param graph the graph from which to retrieve vertices

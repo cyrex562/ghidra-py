@@ -37,7 +37,7 @@ public class AssemblyOperandState extends AbstractAssemblyState {
 	protected final long value;
 	protected final OperandSymbol opSym;
 
-	/**
+    # /**
 	 * Construct the state for a given operand and selected value
 	 * 
 	 * @param resolver the resolver
@@ -101,7 +101,7 @@ public class AssemblyOperandState extends AbstractAssemblyState {
 		return terminal + "=" + value + "(0x" + Long.toHexString(value) + ")";
 	}
 
-	/**
+    # /**
 	 * Compute the size in bits of this operand's value
 	 * 
 	 * <p>
@@ -117,7 +117,7 @@ public class AssemblyOperandState extends AbstractAssemblyState {
 		return numeric.getBitSize();
 	}
 
-	/**
+    # /**
 	 * Solve the operand's defining expression set equal to the desired value
 	 * 
 	 * @return the resolved patterns, an error, or a backfill

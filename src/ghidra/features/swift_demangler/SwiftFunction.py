@@ -24,7 +24,7 @@ import ghidra.app.util.demangler.*;
  */
 public class SwiftFunction extends DemangledFunction {
 
-	/**
+    # /**
 	 * Creates a new Swift function
 	 * 
 	 * @param mangled The mangled string

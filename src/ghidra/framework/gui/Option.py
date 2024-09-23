@@ -50,7 +50,7 @@ public abstract class Option {
 		}
 	}
 
-	/**
+    # /**
 	 * Update any null registration information using the specified updated information.
 	 * This assumption is that multiple registrations for the same option may be partial
 	 * but will be compatible.  No compatibility checks are performed between existing

@@ -20,7 +20,7 @@ import ghidra.app.util.bin.*;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ReferenceListEntry implements StructConverter {
 	private short id;

@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.type.*;
 public class UdtSourceLineTypeApplier extends MsTypeApplier {
 
 	// Intended for: UserDefinedTypeSourceAndLineMsType or UserDefinedTypeModuleSourceAndLineMsType
-	/**
+    # /**
 	 * Constructor for base class applier.
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working.
 	 * @throws IllegalArgumentException Upon invalid arguments.
@@ -35,7 +35,7 @@ public class UdtSourceLineTypeApplier extends MsTypeApplier {
 		super(applicator);
 	}
 
-	/**
+    # /**
 	 * Returns the offset of the Base Class within the inheriting class
 	 * @param type the PDB type being inspected
 	 * @return the offset or -1 if problem retrieving value
@@ -50,7 +50,7 @@ public class UdtSourceLineTypeApplier extends MsTypeApplier {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Returns the source file name
 	 * @param type the PDB type being inspected
 	 * @return the source file name or null if problem recovering name
@@ -65,7 +65,7 @@ public class UdtSourceLineTypeApplier extends MsTypeApplier {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the UDT
 	 * @param type the PDB type being inspected
 	 * @return the record number of the UDT or null if problem retrieving value

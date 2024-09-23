@@ -31,7 +31,7 @@ public abstract class AbstractDefinedSingleAddressRangeMsSymbol extends Abstract
 	protected AddressRange addressRange;
 	protected List<AddressGap> addressGapList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -42,7 +42,7 @@ public abstract class AbstractDefinedSingleAddressRangeMsSymbol extends Abstract
 		super(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link AddressRange} address range.
 	 * @return Address range.
 	 */
@@ -50,7 +50,7 @@ public abstract class AbstractDefinedSingleAddressRangeMsSymbol extends Abstract
 		return addressRange;
 	}
 
-	/**
+    # /**
 	 * Returns a {@link List} of {@link AddressGap} gaps.
 	 * @return Gaps.
 	 */
@@ -58,7 +58,7 @@ public abstract class AbstractDefinedSingleAddressRangeMsSymbol extends Abstract
 		return addressGapList;
 	}
 
-	/**
+    # /**
 	 * Internal method for parsing Range and Gaps.
 	 * @param reader {@link PdbByteReader} from which this data is deserialized.
 	 * @throws PdbException Upon not enough data left to parse.
@@ -71,7 +71,7 @@ public abstract class AbstractDefinedSingleAddressRangeMsSymbol extends Abstract
 		}
 	}
 
-	/**
+    # /**
 	 * Outputs the Range and Gaps data into a {@link StringBuilder}.
 	 * @param builder {@link StringBuilder} into which to output the data.
 	 */

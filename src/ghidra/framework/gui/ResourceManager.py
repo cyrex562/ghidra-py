@@ -17,7 +17,7 @@ package resources;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.*;
+
 import java.net.*;
 import java.nio.file.Path;
 import java.util.*;
@@ -59,7 +59,7 @@ public class ResourceManager {
 	private static ClassLoader classLoader = ResourceManager.class.getClassLoader();
 	private static final ImageIcon DEFAULT_ICON = loadDefaultIcon();
 
-	/**
+    # /**
 	 * Finds a resource with a given name. This method returns null if no
 	 * resource with this name is found. The rules for searching resources
 	 * associated with a given class are implemented by the defining class
@@ -82,7 +82,7 @@ public class ResourceManager {
 		return url;
 	}
 
-	/**
+    # /**
 	 * Finds a resource with a given name. This method returns null if no resource
 	 * with this name is found. The rules for searching resources associated with a
 	 * given class are implemented by the defining class loader of the class.
@@ -113,7 +113,7 @@ public class ResourceManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Locates a File resource by the given name
 	 * 
 	 * @param filename the filename
@@ -134,7 +134,7 @@ public class ResourceManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Searches the given set of directory paths for the given filename
 	 * 
 	 * @param searchPaths the paths 
@@ -160,7 +160,7 @@ public class ResourceManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Search the classpath for files in the &lt;classpath entry&gt;/<code>dirName</code> 
 	 * location that have the given extension.  In <code>null</code> is passed for the 
 	 * extension, then all files found in the given dir names will be returned.  In this 
@@ -183,7 +183,7 @@ public class ResourceManager {
 		return urls;
 	}
 
-	/**
+    # /**
 	 * Search the classpath for files in the &lt;classpath entry&gt;/<code>dirName</code> 
 	 * location that have the given extension.  In <code>null</code> is passed for the 
 	 * extension, then all files found in the given dir names will be returned.  In this 
@@ -240,7 +240,7 @@ public class ResourceManager {
 		return set;
 	}
 
-	/**
+    # /**
 	 * Search the directory for files ending in the given extension and add them to the list 
 	 * that is returned
 	 * 
@@ -268,7 +268,7 @@ public class ResourceManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Search the given jar filename for files in 
 	 * resources with the given file extension.
 	 * @param set the set to which resource names will be added
@@ -317,7 +317,7 @@ public class ResourceManager {
 // Icon Related Methods
 //==================================================================================================	
 
-	/**
+    # /**
 	 * Creates a scaled ImageIcon from the given icon.
 	 * 
 	 * @param icon the icon to scale
@@ -330,7 +330,7 @@ public class ResourceManager {
 		return new ScaledImageIcon(icon, width, height, hints);
 	}
 
-	/**
+    # /**
 	 * Creates a scaled ImageIcon from the given icon with scaling of 
 	 * {@link Image#SCALE_AREA_AVERAGING}
 	 *  
@@ -343,7 +343,7 @@ public class ResourceManager {
 		return new ScaledImageIcon(icon, width, height);
 	}
 
-	/**
+    # /**
 	 * Creates a scaled Icon from the given icon with scaling of 
 	 * {@link Image#SCALE_AREA_AVERAGING}. If an EmptyIcon is passed, a new EmptyIcon is returned
 	 * with the new dimensions.
@@ -361,7 +361,7 @@ public class ResourceManager {
 		return new ScaledImageIcon(icon, width, height);
 	}
 
-	/**
+    # /**
 	 * Get the disabled rendering of the given icon.
 	 * @param icon The icon to disable.
 	 * @return disabled icon
@@ -370,7 +370,7 @@ public class ResourceManager {
 		return new DisabledImageIcon(icon);
 	}
 
-	/**
+    # /**
 	 * Get the disabled rendering of the given imageIcon.
 	 * @param icon The icon to disable.
 	 * @return disabled icon
@@ -379,7 +379,7 @@ public class ResourceManager {
 		return new DisabledImageIcon(icon);
 	}
 
-	/**
+    # /**
 	 * Returns a disabled icon while allowing the caller to control the brightness of the icon
 	 * returned
 	 * 
@@ -391,7 +391,7 @@ public class ResourceManager {
 		return new DisabledImageIcon(icon, brightnessPercent);
 	}
 
-	/**
+    # /**
 	 * Creates an image icon from the given image.  This method will create an <code>ImageIcon</code>
 	 * the <a href="safe">"safe"</a> way by avoiding the constructor 
 	 * {@link ImageIcon#ImageIcon(Image)}, which can
@@ -405,7 +405,7 @@ public class ResourceManager {
 		return new DerivedImageIcon(imageName, image);
 	}
 
-	/**
+    # /**
 	 * Returns an {@link ImageIcon} for the given icon.  If the value is already an ImageIcon, then
 	 * that object is returned; otherwise, an ImageIcon will be created the <a href="#safe">safe</a>
 	 * way.
@@ -423,7 +423,7 @@ public class ResourceManager {
 		return new DerivedImageIcon(icon);
 	}
 
-	/**
+    # /**
 	 * Get the name of this icon.  The value is usually going to be the URL from which the icon 
 	 * was loaded
 	 * 
@@ -451,7 +451,7 @@ public class ResourceManager {
 		return icon.toString();
 	}
 
-	/**
+    # /**
 	 * Load the image using the specified bytes. The image icon will
 	 * be cached using the image name. The bytes must have been
 	 * read from an image file containing a supported image format,
@@ -470,7 +470,7 @@ public class ResourceManager {
 		return icon;
 	}
 
-	/**
+    # /**
 	 * Load and scale the image specified by filename; returns null if problems occur trying to load
 	 * the file.
 	 * @param filename name of file to load, e.g., "images/home.gif"
@@ -486,7 +486,7 @@ public class ResourceManager {
 		return getScaledIcon(loadImage, width, height);
 	}
 
-	/**
+    # /**
 	 * Attempts to load an icon from the given path. Returns the icon or null if no icon was
 	 * found from the given path. This differs from {@link #loadImage(String)} in that
 	 * loadImage will return the default Icon if one can't be found. Further, loadImage will cache
@@ -509,7 +509,7 @@ public class ResourceManager {
 		return icon;
 	}
 
-	/**
+    # /**
 	 * Load the icon specified by iconPath. The iconPath can be either a path to a resource on
 	 * the classpath or a relative or absolute path to an icon on the file system. If the iconPath
 	 * is a path to a classpath resource, then it will be searched directly or also with an "images/"
@@ -534,7 +534,7 @@ public class ResourceManager {
 		return icon;
 	}
 
-	/**
+    # /**
 	 * Load the image specified by filename; returns the default bomb icon
 	 * if problems occur trying to load the file.
 	 * 
@@ -552,7 +552,7 @@ public class ResourceManager {
 		return icon == null ? new UnresolvedIcon(iconPath, DEFAULT_ICON) : icon;
 	}
 
-	/**
+    # /**
 	 * Returns a list of all loaded icons.
 	 * @return a list of all loaded icons
 	 */
@@ -607,7 +607,7 @@ public class ResourceManager {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Load the images specified by filenames; substitutes the default bomb icon
 	 * if problems occur trying to load an individual file.
 	 * <p>
@@ -623,7 +623,7 @@ public class ResourceManager {
 		return results;
 	}
 
-	/**
+    # /**
 	 * A convenience method to force the image denoted by <code>filename</code> to be read 
 	 * from disk and to not use the cached version 
 	 * 
@@ -690,7 +690,7 @@ public class ResourceManager {
 		return results;
 	}
 
-	/**
+    # /**
 	 * Returns paths to search in test mode when finding resources. 
 	 * 
 	 * <P>This allows us to have our Eclipse development environment match the gradle test

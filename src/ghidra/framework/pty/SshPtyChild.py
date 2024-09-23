@@ -15,7 +15,7 @@
  */
 package ghidra.pty.ssh;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

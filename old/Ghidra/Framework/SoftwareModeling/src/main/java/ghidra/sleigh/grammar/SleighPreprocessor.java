@@ -15,7 +15,7 @@
  */
 package ghidra.sleigh.grammar;
 
-import java.io.*;
+
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

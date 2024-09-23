@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.go.ipc;
 
-import java.io.IOException;
+
 import java.io.InterruptedIOException;
 import java.net.URL;
 import java.nio.channels.FileLockInterruptionException;

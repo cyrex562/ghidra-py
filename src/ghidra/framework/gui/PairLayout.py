@@ -35,7 +35,7 @@ public class PairLayout implements LayoutManager {
 		this(0, 0, MINIMUM_RIGHT_COLUMN_WIDTH);
 	}
 
-	/**
+    # /**
 	 * Constructs a new PairLayout.
 	 * @param vgap the gap (in pixels) between rows.
 	 * @param hgap the gap (in pixels) between the two columns.
@@ -44,7 +44,7 @@ public class PairLayout implements LayoutManager {
 		this(vgap, hgap, MINIMUM_RIGHT_COLUMN_WIDTH);
 	}
 
-	/**
+    # /**
 	 * Constructs a new PairLayout.
 	 * @param vgap the gap (in pixels) between rows.
 	 * @param hgap the gap (in pixels) between the two columns.
@@ -56,21 +56,21 @@ public class PairLayout implements LayoutManager {
 		this.preferredRightColumnWidth = minimumRightColumnWidth;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#addLayoutComponent(String, Component)
 	 */
 	@Override
 	public void addLayoutComponent(String name, Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#removeLayoutComponent(Component)
 	 */
 	@Override
 	public void removeLayoutComponent(Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#preferredLayoutSize(Container)
 	 */
 	@Override

@@ -16,7 +16,7 @@
 package ghidra.app.plugin.assembler;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Program;
@@ -48,7 +48,7 @@ public class AssemblyBuffer {
 	private final Assembler asm;
 	private final Address entry;
 
-	/**
+    # /**
 	 * Create a buffer with the given assembler starting at the given entry
 	 * 
 	 * @param asm the assembler
@@ -59,7 +59,7 @@ public class AssemblyBuffer {
 		this.entry = entry;
 	}
 
-	/**
+    # /**
 	 * Get the address of the "cursor" where the next instruction will be assembled
 	 * 
 	 * @return the address
@@ -68,7 +68,7 @@ public class AssemblyBuffer {
 		return entry.add(baos.size());
 	}
 
-	/**
+    # /**
 	 * Assemble a line and append it to the buffer
 	 * 
 	 * @param line the line
@@ -82,7 +82,7 @@ public class AssemblyBuffer {
 		return emit(asm.assembleLine(getNext(), line));
 	}
 
-	/**
+    # /**
 	 * Assemble a line and patch into the buffer
 	 * 
 	 * <p>
@@ -124,7 +124,7 @@ public class AssemblyBuffer {
 		return bytes;
 	}
 
-	/**
+    # /**
 	 * Append arbitrary bytes to the buffer
 	 * 
 	 * @param bytes the bytes to append
@@ -136,7 +136,7 @@ public class AssemblyBuffer {
 		return bytes;
 	}
 
-	/**
+    # /**
 	 * Get the complete buffer of bytes
 	 * 
 	 * <p>

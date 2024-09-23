@@ -19,7 +19,7 @@ package ghidra.xml;
 import org.xml.sax.Locator;
 
 public interface XmlTracer {
-	/**
+    # /**
 	 * The trace callback.  Please be quick.
 	 * @param locator locator, or null if not available (note: locator information may be inaccurate!)
 	 * @param traceMessage the trace message

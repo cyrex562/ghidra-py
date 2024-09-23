@@ -15,7 +15,7 @@
  */
 package help.screenshot;
 
-import java.io.IOException;
+
 
 import org.junit.Test;
 

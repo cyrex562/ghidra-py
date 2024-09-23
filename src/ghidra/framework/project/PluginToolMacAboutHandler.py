@@ -29,7 +29,7 @@ public class PluginToolMacAboutHandler {
 
 	private static boolean installed = false; // only install it once
 
-	/**
+    # /**
 	 * Applies an about handler which will show our custom about dialog.
 	 * 
 	 * @param winMgr The docking window manager to use to install the about dialog.

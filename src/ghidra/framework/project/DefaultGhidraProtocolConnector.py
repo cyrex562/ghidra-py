@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -34,7 +34,7 @@ public class DefaultGhidraProtocolConnector extends GhidraProtocolConnector {
 
 	private boolean readOnly;
 
-	/**
+    # /**
 	 * Construct a protocol connector for use with a legacy Ghidra Server 
 	 * repository (RMI-based server)
 	 * @param ghidraURL Ghidra Server repository URL (ghidra://server/repo/...)

@@ -16,7 +16,7 @@
 package ghidra.framework.main.datatree;
 
 import java.awt.BorderLayout;
-import java.io.IOException;
+
 import java.util.List;
 
 import javax.swing.*;

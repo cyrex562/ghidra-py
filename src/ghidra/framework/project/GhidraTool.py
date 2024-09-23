@@ -47,7 +47,7 @@ public class GhidraTool extends PluginTool {
 	private ExtensionManager extensionManager;
 	private boolean hasBeenShown;
 
-	/**
+    # /**
 	 * Construct a new Ghidra Tool.
 	 *
 	 * @param project the project associated with the tool
@@ -57,7 +57,7 @@ public class GhidraTool extends PluginTool {
 		super(project, name, true, true, false);
 	}
 
-	/**
+    # /**
 	 * Construct a new GhidraTool using an existing template.
 	 *
 	 * @param project project that is the associated with the tool.
@@ -67,7 +67,7 @@ public class GhidraTool extends PluginTool {
 		super(project, template);
 	}
 
-	/**
+    # /**
 	 * We need to do this here, since our parent constructor calls methods on us that need the 
 	 * extension manager.
 	 * @return the extension manager

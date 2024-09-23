@@ -41,7 +41,7 @@ public class ContextSymbol extends ValueSymbol {
 		return vn;
 	}
 
-	/**
+    # /**
 	 * Get starting bit of context value within its context register.
 	 * @return the starting bit
 	 */
@@ -49,7 +49,7 @@ public class ContextSymbol extends ValueSymbol {
 		return low;
 	}
 
-	/**
+    # /**
 	 * Get ending bit of context value within its context register.
 	 * @return the ending bit
 	 */
@@ -57,7 +57,7 @@ public class ContextSymbol extends ValueSymbol {
 		return high;
 	}
 
-	/**
+    # /**
 	 * Get the starting bit of the context value within the "global" buffer, after
 	 * the values have been packed.
 	 * @return the starting bit
@@ -66,7 +66,7 @@ public class ContextSymbol extends ValueSymbol {
 		return ((ContextField) patval).getStartBit();
 	}
 
-	/**
+    # /**
 	 * Get the ending bit of the context value within the "global" buffer, after
 	 * the values have been packed.
 	 * @return the ending bit

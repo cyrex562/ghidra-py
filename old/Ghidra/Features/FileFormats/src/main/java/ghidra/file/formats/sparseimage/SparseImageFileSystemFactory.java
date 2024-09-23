@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.sparseimage;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.ByteProvider;

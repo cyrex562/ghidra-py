@@ -57,7 +57,7 @@ public class ProjectDataTreePanel extends JPanel {
 	private FrontEndTool tool;
 	private FrontEndPlugin plugin;
 
-	/**
+    # /**
 	 * Construct an empty panel that is going to be used as the active panel
 	 * @param plugin front end plugin
 	 */
@@ -65,7 +65,7 @@ public class ProjectDataTreePanel extends JPanel {
 		this(null, true, plugin, null);
 	}
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param projectName name of project
@@ -93,7 +93,7 @@ public class ProjectDataTreePanel extends JPanel {
 		return tree.getSelectionModel();
 	}
 
-	/**
+    # /**
 	 * Set the project data for this data tree and populate it with
 	 * nodes for the users in the project.
 	 * @param projectName name of project
@@ -116,7 +116,7 @@ public class ProjectDataTreePanel extends JPanel {
 		tree.setProjectActive(isActiveProject);
 	}
 
-	/**
+    # /**
 	 * Update the project name
 	 * @param newName the new name
 	 */
@@ -126,7 +126,7 @@ public class ProjectDataTreePanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Close the root folder for this data tree.
 	 */
 	public void closeRootFolder() {
@@ -138,7 +138,7 @@ public class ProjectDataTreePanel extends JPanel {
 		oldRoot.removeAll();
 	}
 
-	/**
+    # /**
 	 * Select the root data folder (not root node in the tree which
 	 * shows the project name).
 	 */
@@ -202,7 +202,7 @@ public class ProjectDataTreePanel extends JPanel {
 		help.registerHelp(tree, helpLocation);
 	}
 
-	/**
+    # /**
 	  * Set the filter on this data tree.
 	  * @param filter determines what should be included in the data tree
 	  */
@@ -210,7 +210,7 @@ public class ProjectDataTreePanel extends JPanel {
 		this.filter = filter;
 	}
 
-	/**
+    # /**
 	 * Get the number of selected items in the tree.  These could be either files or folders.
 	 * 
 	 * @return the number of selected items in the tree.
@@ -219,7 +219,7 @@ public class ProjectDataTreePanel extends JPanel {
 		return tree.getSelectionCount();
 	}
 
-	/**
+    # /**
 	 * Get the last selected domain folder.
 	 * @return null if no domain folder is selected.
 	 */
@@ -231,7 +231,7 @@ public class ProjectDataTreePanel extends JPanel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the last selected domain file.
 	 * @return null if no domain file is selected.
 	 */
@@ -243,7 +243,7 @@ public class ProjectDataTreePanel extends JPanel {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Add the tree selection listener to the data tree. When the
 	 * listener is notified of the selection change, it should
 	 * call <code>getSelectedDomainFolder()</code> and
@@ -255,7 +255,7 @@ public class ProjectDataTreePanel extends JPanel {
 		tree.addGTreeSelectionListener(l);
 	}
 
-	/**
+    # /**
 	 * Remove the tree selection listener from the data tree.
 	 * @param l listener to remove
 	 */
@@ -279,7 +279,7 @@ public class ProjectDataTreePanel extends JPanel {
 		return projectData;
 	}
 
-	/**
+    # /**
 	 * Notification that the project was renamed; update the root node name
 	 * and reload the node
 	 * @param newName the new project name
@@ -295,7 +295,7 @@ public class ProjectDataTreePanel extends JPanel {
 		tree.dispose();
 	}
 
-	/**
+    # /**
 	 * Get the data tree node that is selected
 	 * 
 	 * @param provider the provider with which to construct the new context 
@@ -344,7 +344,7 @@ public class ProjectDataTreePanel extends JPanel {
 		return tree;
 	}
 
-	/**
+    # /**
 	 * Adds or removes the filter from the tree.
 	 * 
 	 * @param enabled Tree adds the filter; false removes it
@@ -447,7 +447,7 @@ public class ProjectDataTreePanel extends JPanel {
 		plugin.getTool().contextChanged(null);
 	}
 
-	/**
+    # /**
 	 * Create the root node for this data tree.
 	 */
 	private GTreeNode createRootNode(String projectName) {
@@ -482,7 +482,7 @@ public class ProjectDataTreePanel extends JPanel {
 		plugin.openDomainFile(domainFile);
 	}
 
-	/**
+    # /**
 	 * Find a node that has the given name and select it.
 	 * @param s node name
 	 */

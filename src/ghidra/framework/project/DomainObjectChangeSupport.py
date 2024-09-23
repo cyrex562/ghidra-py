@@ -49,7 +49,7 @@ class DomainObjectChangeSupport {
 
 	private volatile boolean isDisposed;
 
-	/**
+    # /**
 	 * Constructs a new DomainObjectChangeSupport object.
 	 *
 	 * @param src The object to be put as the src for all events generated.
@@ -261,7 +261,7 @@ class DomainObjectChangeSupport {
 // Inner Classes
 //=================================================================================================
 
-	/**
+    # /**
 	 * This class allows us to bind the given event with the given listeners.  This is used to
 	 * send events to the correct listeners as listeners are added.  In other words, new listeners
 	 * will not receive pre-existing buffered events.   Also, using this class allows us to ensure

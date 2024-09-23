@@ -32,7 +32,7 @@ public class BsfvRowObject {
 	private Address basicBlockStart;
 	private Integer blockIndex;
 
-	/**
+    # /**
 	 * Creates a row object for a table of BSim features. Note that not all columns are appropriate
 	 * for all feature types.  For CONTROL_FLOW features, {@code seq} should be an artificial 
 	 * {@link SequenceNumber} corresponding to the start of the appropriate basic block.
@@ -58,7 +58,7 @@ public class BsfvRowObject {
 		this.blockIndex = blockIndex;
 	}
 
-	/**
+    # /**
 	 * Returns the {@SequenceNumber} corresponding to the feature.
 	 * @return sequence number
 	 */
@@ -66,7 +66,7 @@ public class BsfvRowObject {
 		return seq;
 	}
 
-	/**
+    # /**
 	 * Returns the PcodeOpAST corresponding to the feature.
 	 * @return pcodeop ast 
 	 */
@@ -74,7 +74,7 @@ public class BsfvRowObject {
 		return definingPcodeOp;
 	}
 
-	/**
+    # /**
 	 * Returns the previous PcodeOpAST correspond to the features.  Only non-null for DUAL_FLOW 
 	 * features.
 	 * @return previous pcodeop ast
@@ -83,7 +83,7 @@ public class BsfvRowObject {
 		return previousPcodeOp;
 	}
 
-	/**
+    # /**
 	 * Returns the mnemonic of the defining pcode op. Returns null if there is no defining pcode op.
 	 * @return mnemonic of defining op
 	 */
@@ -94,7 +94,7 @@ public class BsfvRowObject {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link BSimFeatureType} of the feature.
 	 * @return bsim feature type
 	 */
@@ -102,7 +102,7 @@ public class BsfvRowObject {
 		return type;
 	}
 
-	/**
+    # /**
 	 * Returns the base 
 	 * @return base varnode
 	 */
@@ -110,7 +110,7 @@ public class BsfvRowObject {
 		return baseVarnode;
 	}
 
-	/**
+    # /**
 	 * Returns the start of the basic block corresponding to the feature
 	 * @return basic block start
 	 */
@@ -118,7 +118,7 @@ public class BsfvRowObject {
 		return basicBlockStart;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Address} corresponding to the feature
 	 * @return address of feature
 	 */
@@ -126,7 +126,7 @@ public class BsfvRowObject {
 		return seq.getTarget();
 	}
 
-	/**
+    # /**
 	 * Returns the {@BSimFeatureColumnType} wrapping the 32-bit hash 
 	 * @return wrapped hash
 	 */
@@ -134,7 +134,7 @@ public class BsfvRowObject {
 		return feature;
 	}
 
-	/**
+    # /**
 	 * Returns the index of the basic block corresponding to the features
 	 * @return basic block index
 	 */

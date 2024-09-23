@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.service;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.function.Predicate;
@@ -67,7 +67,7 @@ class FidServiceLibraryIngest {
 		public boolean hasTerminator;
 		public ArrayList<ChildRow> children;
 
-		/**
+	    # /**
 		 * Creates the template for a function record in the database, but doesn't actually create the record
 		 * @param domainFile the domain file of the program
 		 * @param function the function
@@ -92,7 +92,7 @@ class FidServiceLibraryIngest {
 				fidDb.createNewFunction(library, hashQuad, name, offset, pathName, hasTerminator);
 		}
 
-		/**
+	    # /**
 		 * We want a FunctionRecord to be unique up to
 		 *   1) The full hash and specific hash of the function
 		 *   2) The symbol name
@@ -165,7 +165,7 @@ class FidServiceLibraryIngest {
 		}
 	}
 
-	/**
+    # /**
 	 * @param fidDb the database to modify
 	 * @param service the FID service
 	 * @param libraryFamilyName the library family name
@@ -196,7 +196,7 @@ class FidServiceLibraryIngest {
 		}
 	}
 
-	/**
+    # /**
 	 * Mark a set of function symbols as "very common" so a match relationship won't be generated with
 	 * functions that call it.
 	 * @param symbols
@@ -257,7 +257,7 @@ class FidServiceLibraryIngest {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Processes a single program, adding it to the library.
 	 * @param result the populate result
 	 * @param program the program
@@ -321,7 +321,7 @@ class FidServiceLibraryIngest {
 		}
 	}
 
-	/**
+    # /**
 	 * Hashes all the functions in the program for inserting into the database.
 	 * @param result the populate result
 	 * @param program the program
@@ -396,7 +396,7 @@ class FidServiceLibraryIngest {
 		}
 	}
 
-	/**
+    # /**
 	 * Collects the child relations of a function in a ChildRow array.
 	 * @param function the function
 	 * @param hasher the FID hasher
@@ -464,7 +464,7 @@ class FidServiceLibraryIngest {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Adds an unresolved symbol (for resolution later).
 	 * @param functionRecord the function record
 	 * @param symbol is the symbol name
@@ -482,7 +482,7 @@ class FidServiceLibraryIngest {
 		set.add(childSym);
 	}
 
-	/**
+    # /**
 	 * Resolves the remembered unresolved symbols, now that we have all the library's symbols created.
 	 * @throws CancelledException if the user cancels
 	 */
@@ -516,7 +516,7 @@ class FidServiceLibraryIngest {
 		}
 	}
 
-	/**
+    # /**
 	 * Looks for a terminating flow within a function body, returning whether it was found.
 	 * @param function the function
 	 * @param monitor a task monitor
@@ -543,7 +543,7 @@ class FidServiceLibraryIngest {
 		return retFound;
 	}
 
-	/**
+    # /**
 	 * Tries to resolve an ambiguous named relation.  If not too many hashes are found, it will
 	 * add them all, because presence of one is a high indicator of match.  If too many are found,
 	 * the significance drops and none of the hashes are added (so a potential result isn't diluted).
@@ -590,7 +590,7 @@ class FidServiceLibraryIngest {
 		return !list.isEmpty();
 	}
 
-	/**
+    # /**
 	 * Make sure all programs have the same language and compiler spec,
 	 * otherwise throw and exception or return false based on failOnNewLanguage
 	 * @param program the program
@@ -612,7 +612,7 @@ class FidServiceLibraryIngest {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns whether a function is external.
 	 * @param function the function
 	 * @return whether the function is external

@@ -15,7 +15,7 @@
  */
 package sarif.export.func;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;

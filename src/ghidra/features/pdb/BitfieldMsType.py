@@ -27,7 +27,7 @@ public class BitfieldMsType extends AbstractBitfieldMsType {
 
 	public static final int PDB_ID = 0x1205; // Note: not 0x1000 diff from Bitfield_16's ID.
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

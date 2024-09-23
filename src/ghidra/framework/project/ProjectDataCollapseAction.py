@@ -49,7 +49,7 @@ public class ProjectDataCollapseAction<T extends ProjectTreeContext>
 		return context.getFolderCount() == 1 && context.getFileCount() == 0;
 	}
 
-	/**
+    # /**
 	 * Expand the first selected node; called from an action listener
 	 * on a menu.
 	 */

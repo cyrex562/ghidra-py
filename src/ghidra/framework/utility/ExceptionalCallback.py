@@ -24,7 +24,7 @@ package utility.function;
 @FunctionalInterface
 public interface ExceptionalCallback<E extends Throwable> {
 
-	/**
+    # /**
 	 * The method that will be called
 	 * 
 	 * @throws E if the call throws an exception

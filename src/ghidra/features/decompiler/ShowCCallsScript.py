@@ -96,7 +96,7 @@ public class ShowCCallsScript extends GhidraScript {
 		lastAddr = null;
 	}
 
-	/**
+    # /**
 	 * Method to setup the decompiler interface for the given program
 	 * @param program the given program
 	 * @return the decompiler interface
@@ -116,7 +116,7 @@ public class ShowCCallsScript extends GhidraScript {
 		return decomplib;
 	}
 
-	/**
+    # /**
 	 * Analyze a functions references
 	 */
 	public void analyzeFunction(DecompInterface decomplib, Program prog, Function f,
@@ -161,7 +161,7 @@ public class ShowCCallsScript extends GhidraScript {
 		return true;
 	}
 
-	/**
+    # /**
 	 * get the pcode ops that refer to an address
 	 */
 	public Iterator<PcodeOpAST> getPcodeOps(Address refAddr) {

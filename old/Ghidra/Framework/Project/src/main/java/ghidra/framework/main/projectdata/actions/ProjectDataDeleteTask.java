@@ -16,7 +16,7 @@
 package ghidra.framework.main.projectdata.actions;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.rmi.RemoteException;
 import java.util.*;
 import java.util.Map.Entry;

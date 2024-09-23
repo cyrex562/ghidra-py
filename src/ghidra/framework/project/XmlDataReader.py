@@ -23,7 +23,7 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.NotFoundException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 import org.xml.sax.SAXException;
 
@@ -33,7 +33,7 @@ import org.xml.sax.SAXException;
  */
 public interface XmlDataReader {
 
-	/**
+    # /**
 	 * Reads the XML file indicated by the base path and relative path name.
 	 * It creates an object(s) from this, that is used by the project.
 	 * 

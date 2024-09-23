@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 import ghidra.program.model.data.AbstractFloatDataType;
@@ -27,12 +27,12 @@ import ghidra.program.model.symbol.Reference;
 import ghidra.program.model.symbol.ReferenceIterator;
 
 # /**
- * A normal mapping of a HighSymbol to a particular Address, consuming a set number of bytes
- */
+# * A normal mapping of a HighSymbol to a particular Address, consuming a set number of bytes
+# */
 public class MappedEntry extends SymbolEntry {
 	protected VariableStorage storage;
 
-	/**
+    # /**
 	 * For use with restoreXML
 	 * @param sym is the owning symbol
 	 */
@@ -40,7 +40,7 @@ public class MappedEntry extends SymbolEntry {
 		super(sym);
 	}
 
-	/**
+    # /**
 	 * Construct given a symbol, storage, and first-use Address
 	 * @param sym is the given symbol
 	 * @param store is the given storage
@@ -93,7 +93,7 @@ public class MappedEntry extends SymbolEntry {
 		return getMutabilityOfAddress(addr, symbol.getProgram());
 	}
 
-	/**
+    # /**
 	 * Get the underlying mutability setting of an Address based on the Program
 	 * configuration and the MemoryBlock.  Ignore any overrides of Data at the address. 
 	 * @param addr is the Address

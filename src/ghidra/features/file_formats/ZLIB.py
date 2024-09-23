@@ -17,7 +17,7 @@ package ghidra.file.formats.zlib;
 
 import ghidra.app.util.bin.ByteProvider;
 
-import java.io.*;
+
 import java.util.Arrays;
 import java.util.zip.*;
 
@@ -35,7 +35,7 @@ public class ZLIB {
 	public ZLIB() {
 	}
 
-	/**
+    # /**
 	 * Creates a new decompressor. 
 	 * If the parameter 'nowrap' is true then the ZLIB header and checksum fields will not be used. 
 	 * This provides compatibility with the compression format used by both GZIP and PKZIP.
@@ -50,7 +50,7 @@ public class ZLIB {
 		return decompress( compressedIn, expectedDecompressedLength, false );
 	}
 
-	/**
+    # /**
 	 * Creates a new decompressor. 
 	 * If the parameter 'noWrap' is true then the ZLIB header and checksum fields will not be used. 
 	 * This provides compatibility with the compression format used by both GZIP and PKZIP.
@@ -104,7 +104,7 @@ public class ZLIB {
         return decompressedBOS;
     }
 
-	/**
+    # /**
 	 * Converts the contents of an input stream to a byte array
 	 * @param compressedIn
 	 * @return
@@ -123,7 +123,7 @@ public class ZLIB {
     	return compressedBOS.toByteArray();
 	}
 
-	/**
+    # /**
 	 * Creates a new compressor. 
 	 * If 'noWrap' is true then the ZLIB header and checksum fields will not be used in order 
 	 * to support the compression format used in both GZIP and PKZIP.
@@ -135,7 +135,7 @@ public class ZLIB {
 		return compress( false, decompressedBytes );
 	}
 
-	/**
+    # /**
 	 * Creates a new compressor. 
 	 * If 'noWrap' is true then the ZLIB header and checksum fields will not be used in order 
 	 * to support the compression format used in both GZIP and PKZIP.

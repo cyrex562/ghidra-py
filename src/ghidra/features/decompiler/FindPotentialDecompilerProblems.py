@@ -169,7 +169,7 @@ public class FindPotentialDecompilerProblems extends GhidraScript {
 		return problems;
 	}
 
-	/**
+    # /**
 	 * Returns the target of the first (in address order) call in the body of {@code func}
 	 * which takes {@code vn} as a parameter.
 	 * @param func {@link Function} whose body to search for calls
@@ -221,7 +221,7 @@ public class FindPotentialDecompilerProblems extends GhidraScript {
 		return Address.NO_ADDRESS;
 	}
 
-	/**
+    # /**
 	 * Returns the address of first function called by {@code func}.  That is, the returned {@link Address}
 	 * is the target of the call instruction with the least address within the body of {@code func}. 
 	 * @param func the {@link Function} to search for calls

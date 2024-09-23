@@ -16,7 +16,7 @@
 package ghidra.framework.main.datatree;
 
 import java.awt.*;
-import java.io.IOException;
+
 import java.util.HashSet;
 import java.util.Set;
 

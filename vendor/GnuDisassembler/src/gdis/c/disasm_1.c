@@ -1,6 +1,6 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 #include "config.h"
 #include <stdio.h>
 #include <stdlib.h>

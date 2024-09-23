@@ -23,7 +23,7 @@ import ghidra.app.plugin.assembler.sleigh.grammars.AssemblyGrammar;
  * @see AssemblyGrammar
  */
 public class AssemblyNonTerminal extends AssemblySymbol {
-	/**
+    # /**
 	 * Construct a non-terminal having the given name
 	 * 
 	 * @param name the name

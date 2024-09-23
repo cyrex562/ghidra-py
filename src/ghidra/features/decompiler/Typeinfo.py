@@ -37,7 +37,7 @@ public class Typeinfo {
 		return classNamespace;
 	}
 	
-	/**
+    # /**
 	 * method to define if has defined structure or not
 	 * @param setting true - has defined structure, false - not yet defined, null - not enough memory to defined a structure
 	 */

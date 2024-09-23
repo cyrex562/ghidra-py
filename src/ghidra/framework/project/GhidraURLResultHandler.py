@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.net.URL;
 
 import ghidra.framework.model.DomainFile;
@@ -25,7 +25,7 @@ import ghidra.util.task.TaskMonitor;
 
 public interface GhidraURLResultHandler {
 
-	/**
+    # /**
 	 * Process the specified {@code domainFile} query result. 
 	 * Dissemination of the {@code domainFile} instance should be restricted and any use of it 
 	 * completed before the call to this method returns.  Upon return from this method call the 
@@ -40,7 +40,7 @@ public interface GhidraURLResultHandler {
 	void processResult(DomainFile domainFile, URL url, TaskMonitor monitor)
 			throws IOException, CancelledException;
 
-	/**
+    # /**
 	 * Process the specified {@code domainFolder} query result.
 	 * Dissemination of the {@code domainFolder} instance should be restricted and any use of it 
 	 * completed before the call to this method returns.  Upon return from this method call the 
@@ -55,7 +55,7 @@ public interface GhidraURLResultHandler {
 	void processResult(DomainFolder domainFolder, URL url, TaskMonitor monitor)
 			throws IOException, CancelledException;
 
-	/**
+    # /**
 	 * Handle error which occurs during query operation.
 	 * @param title error title
 	 * @param message error detail
@@ -65,7 +65,7 @@ public interface GhidraURLResultHandler {
 	 */
 	void handleError(String title, String message, URL url, IOException cause) throws IOException;
 
-	/**
+    # /**
 	 * Handle authorization error. 
 	 * This condition is generally logged and user notified via GUI during connection processing.
 	 * This method does not do anything by default but is provided to flag failure if needed since

@@ -15,7 +15,7 @@
  */
 package ghidra.pty.windows;
 
-import java.io.IOException;
+
 
 import com.sun.jna.platform.win32.Kernel32;
 import com.sun.jna.platform.win32.WinDef.DWORD;

@@ -47,7 +47,7 @@ public class VfTableModel extends AbstractCreateDataTypeModel {
 	private int lastElementCount = NO_LAST_COUNT;
 	private int elementCount = 0;
 
-	/**
+    # /**
 	 * Creates the model for the vf table data.
 	 * @param program the program
 	 * @param vfTableAddress the address in the program for the vf table data.
@@ -62,7 +62,7 @@ public class VfTableModel extends AbstractCreateDataTypeModel {
 		elementCount= RttiUtil.getVfTableCount(program, vfTableAddress);
 	}
 	
-	/**
+    # /**
 	 * Get the number of vftable elements in this vftable
 	 * @return number of elements
 	 */
@@ -120,7 +120,7 @@ public class VfTableModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the vf table structure for the indicated program.
 	 * @param program the program which will contain this data. 
 	 * @return the vf table structure as an array.
@@ -165,7 +165,7 @@ public class VfTableModel extends AbstractCreateDataTypeModel {
 		return (dt != null) ? dt.getLength() : 0;
 	}
 
-	/**
+    # /**
 	 * Gets the address of the virtual function pointed to by the vf table element at the index 
 	 * specified by <code>tableElementIndex</code>.
 	 * @param tableElementIndex index of the vf table element
@@ -178,7 +178,7 @@ public class VfTableModel extends AbstractCreateDataTypeModel {
 		return getAbsoluteAddress(getProgram(), address);
 	}
 
-	/**
+    # /**
 	 * Gets the type descriptor (RTTI 0) model associated with this vf table.
 	 * @return the type descriptor (RTTI 0) model or null.
 	 * @throws InvalidDataTypeException if this model's validation fails.
@@ -188,7 +188,7 @@ public class VfTableModel extends AbstractCreateDataTypeModel {
 		return rtti4Model.getRtti0Model();
 	}
 
-	/**
+    # /**
 	 * Gets the address of the location containing the meta pointer, which points to the RTTI 4 
 	 * associated with this vf table.
 	 * @return the address of the meta pointer

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 
 /**
  * Linker Unwind Information that seems to be used in some XData types within {@link DebugData}.

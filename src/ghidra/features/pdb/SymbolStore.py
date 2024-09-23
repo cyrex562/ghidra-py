@@ -16,7 +16,7 @@
 package pdb.symbolserver;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.util.task.TaskMonitor;
 
@@ -25,7 +25,7 @@ import ghidra.util.task.TaskMonitor;
  */
 public interface SymbolStore extends SymbolServer {
 
-	/**
+    # /**
 	 * Returns the 'admin' directory of this SymbolStore, which allows files created here
 	 * to be efficiently {@link #giveFile(SymbolFileInfo, File, String, TaskMonitor) given}
 	 * to the store.
@@ -35,7 +35,7 @@ public interface SymbolStore extends SymbolServer {
 	 */
 	File getAdminDir();
 
-	/**
+    # /**
 	 * Returns an absolute {@link File} instance based on the specified relative path
 	 * to a file inside the symbol store.
 	 * <p>
@@ -45,7 +45,7 @@ public interface SymbolStore extends SymbolServer {
 	 */
 	File getFile(String path);
 
-	/**
+    # /**
 	 * Offers the specified file to the SymbolStore.  The file should be
 	 * located in the admin directory of the SymbolStore to ensure no problems
 	 * with ingesting the file.
@@ -63,7 +63,7 @@ public interface SymbolStore extends SymbolServer {
 	String giveFile(SymbolFileInfo symbolFileInfo, File file, String filename, TaskMonitor monitor)
 			throws IOException;
 
-	/**
+    # /**
 	 * Places the contents of the stream into a file in this SymbolStore.
 	 * <p>
 	 * 
@@ -77,7 +77,7 @@ public interface SymbolStore extends SymbolServer {
 	String putStream(SymbolFileInfo symbolFileInfo, SymbolServerInputStream symbolServerInputStream,
 			String filename, TaskMonitor monitor) throws IOException;
 
-	/**
+    # /**
 	 * Returns true if the specified filename indicates that the file is a compressed
 	 * cab file.
 	 * 

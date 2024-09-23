@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.map;
 
-import java.io.*;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;

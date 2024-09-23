@@ -19,7 +19,7 @@ import static ghidra.framework.main.DataTreeDialogType.*;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+
 import java.util.Collections;
 import java.util.List;
 

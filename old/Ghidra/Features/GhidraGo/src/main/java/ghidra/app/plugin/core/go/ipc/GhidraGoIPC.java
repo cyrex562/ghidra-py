@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.go.ipc;
 
 import java.io.FileOutputStream;
-import java.io.IOException;
+
 import java.nio.channels.*;
 import java.nio.file.Path;
 import java.util.function.Supplier;

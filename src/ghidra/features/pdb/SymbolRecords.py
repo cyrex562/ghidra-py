@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.util.*;
 
@@ -44,7 +44,7 @@ public class SymbolRecords {
 	private double factor;
 	private Map<Integer, LRUMap<Integer, SymLen>> symbolCache;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb {@link AbstractPdb} to which the {@link SymbolRecords} belong
 	 */
@@ -53,7 +53,7 @@ public class SymbolRecords {
 		this.pdb = pdb;
 	}
 
-	/**
+    # /**
 	 * Returns the list of symbols
 	 * @return {@link Map}&lt;{@link Long},{@link AbstractMsSymbol}&gt; of buffer offsets to
 	 * symbols
@@ -77,7 +77,7 @@ public class SymbolRecords {
 		return deserializeSymbolRecords(pdb, reader);
 	}
 
-	/**
+    # /**
 	 * Returns the buffer-offset-to-symbol map for the module as specified by moduleNumber
 	 * @param moduleNumber the number ID of the module for which to return the list
 	 * @return {@link Map}&lt;{@link Long},{@link AbstractMsSymbol}&gt; of buffer offsets to
@@ -106,7 +106,7 @@ public class SymbolRecords {
 		return deserializeSymbolRecords(pdb, symbolsReader);
 	}
 
-	/**
+    # /**
 	 * Deserializes and initializes basic {@link SymbolRecords} information from the stream noted
 	 * in the DBI header so that later symbol queries can be done
 	 * @throws IOException on file seek or read, invalid parameters, bad file configuration, or
@@ -170,7 +170,7 @@ public class SymbolRecords {
 		cvSignatureCase1and2Stream = streamNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the space occupied by the cvSignature for the stream number
 	 * @param streamNumber the stream number
 	 * @return the space
@@ -210,7 +210,7 @@ public class SymbolRecords {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Deserializes the {@link AbstractMsSymbol} symbols from the {@link PdbByteReader} and
 	 * returns a {@link Map}&lt;{@link Long},{@link AbstractMsSymbol}&gt; of buffer offsets to
 	 * symbols
@@ -238,7 +238,7 @@ public class SymbolRecords {
 
 	public record SymLen(AbstractMsSymbol symbol, int length) {}
 
-	/**
+    # /**
 	 * Returns the symbol at the offset of the stream assigned to the module
 	 * @param moduleNumber the module
 	 * @param offset the stream offset
@@ -261,7 +261,7 @@ public class SymbolRecords {
 	//  cost of memory.
 	//Map<Long, Integer> recordLengths = new TreeMap<>();
 
-	/**
+    # /**
 	 * Returns the symbol at the offset of the stream
 	 * @param streamNumber the stream
 	 * @param offset the stream offset
@@ -282,7 +282,7 @@ public class SymbolRecords {
 		return getRandomAccessRecordFromStream(streamNumber, offset);
 	}
 
-	/**
+    # /**
 	 * Returns the symbol at the offset of the stream
 	 * @param streamNumber the stream
 	 * @param offset the stream offset
@@ -331,7 +331,7 @@ public class SymbolRecords {
 		return streamSymbolCache;
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping information from this Symbol Records instance
 	 * @param writer {@link Writer} to which to dump the information
 	 * @throws IOException upon issue writing to the {@link Writer}
@@ -357,7 +357,7 @@ public class SymbolRecords {
 		writer.write("\nEnd SymbolRecords-------------------------------------------\n");
 	}
 
-	/**
+    # /**
 	 * Debug method for dumping the symbols from a symbol map
 	 * @param mySymbolsByOffset the {@link Map}&lt;{@link Long},{@link AbstractMsSymbol}&gt; to dump
 	 * @param writer {@link Writer} to which to dump the information

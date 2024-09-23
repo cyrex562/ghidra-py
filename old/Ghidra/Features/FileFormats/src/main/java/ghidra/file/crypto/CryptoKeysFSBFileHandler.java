@@ -15,7 +15,7 @@
  */
 package ghidra.file.crypto;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.action.DockingAction;

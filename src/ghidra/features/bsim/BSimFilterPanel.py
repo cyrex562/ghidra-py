@@ -41,7 +41,7 @@ public class BSimFilterPanel extends JPanel {
 	private Consumer<FilterWidget> removeMeConsumer = this::removeFilterWidget;
 	private Callback changeListener;
 
-	/**
+    # /**
 	 * Constructs a filer panel with no filters
 	 * @param changeListener the callback when filters change
 	 */
@@ -49,7 +49,7 @@ public class BSimFilterPanel extends JPanel {
 		this(List.of(BSimFilterType.BLANK), new BSimFilterSet(), changeListener);
 	}
 
-	/**
+    # /**
 	 * Constructs a filer panel with existing filters
 	 * @param filters the list of filterTypes to display in the comboBox
 	 * @param filterSet the current filter settings
@@ -68,7 +68,7 @@ public class BSimFilterPanel extends JPanel {
 		setFilterSet(filterSet);
 	}
 
-	/**
+    # /**
 	 * Sets the panel to have the given filters
 	 * @param filterSet the set of filters to show in the panel
 	 */
@@ -87,7 +87,7 @@ public class BSimFilterPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the choices for filter types in the filter comboBoxes.
 	 * @param filters the filter types the user can choose
 	 */
@@ -101,7 +101,7 @@ public class BSimFilterPanel extends JPanel {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the set of valid filters that are displayed in this filter panel
 	 * @return the set of valid filters that are displayed in this filter panel
 	 */
@@ -115,7 +115,7 @@ public class BSimFilterPanel extends JPanel {
 		return set;
 	}
 
-	/**
+    # /**
 	 * Returns true the panel has only valid filters. (Blank filter is ok)
 	 * @return true the panel has only valid filters
 	 */

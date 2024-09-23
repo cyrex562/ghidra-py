@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import static ghidra.program.model.data.LEB128Test.te;
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 
 import org.junit.Test;
 

@@ -1,23 +1,23 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.*;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.nio.charset.Charset;
 
@@ -30,18 +30,18 @@ import ghidra.util.Msg;
 import ghidra.util.xml.XmlUtilities;
 
 # /**
- * Additional information about {@link Charset java.nio.charset.Charset's} that
- * Ghidra needs to be able to create Ghidra string datatype instances.
- * <p>
- * See charset_info.xml to specify a custom charset.
- */
+# * Additional information about {@link Charset java.nio.charset.Charset's} that
+# * Ghidra needs to be able to create Ghidra string datatype instances.
+# * <p>
+# * See charset_info.xml to specify a custom charset.
+# */
 public class CharsetInfo {
 
 	private static final class Singleton {
 		private static final CharsetInfo INSTANCE = new CharsetInfo();
 	}
 
-	/**
+    # /**
 	 * Get the global singleton instance of this {@link CharsetInfo}.
 	 *
 	 * @return global singleton instance
@@ -57,7 +57,7 @@ public class CharsetInfo {
 	public static final String UTF32 = "UTF-32";
 	public static final String USASCII = "US-ASCII";
 
-	/**
+    # /**
 	 * @param charsetName name of charset
 	 * @return true if the supported multi-byte charset does not specify LE or
 	 *         BE
@@ -85,7 +85,7 @@ public class CharsetInfo {
 		this.charsetNames = charsetNamesList.toArray(new String[charsetNamesList.size()]);
 	}
 
-	/**
+    # /**
 	 * Reinitialize registered Charsets and include user defined Charsets
 	 * specified in charset_info.xml.
 	 */
@@ -93,7 +93,7 @@ public class CharsetInfo {
 		getInstance().initialize(true);
 	}
 
-	/**
+    # /**
 	 * Register minimal set of Java Charsets to facilitate most test without
 	 * Application initialization overhead.
 	 */
@@ -117,7 +117,7 @@ public class CharsetInfo {
 		charsetNamesList.add(name);
 	}
 
-	/**
+    # /**
 	 * Returns an array list of the currently configured charsets.
 	 * 
 	 * @return String[] of current configured charsets.
@@ -126,7 +126,7 @@ public class CharsetInfo {
 		return charsetNames;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes that the specified charset needs to specify a
 	 * character.
 	 *
@@ -139,7 +139,7 @@ public class CharsetInfo {
 		return (rec != null) ? rec.charSize : 1;
 	}
 
-	/**
+    # /**
 	 * Returns list of {@link Charset}s that encode with the number of bytes specified.
 	 * @param size the number of bytes for the {@link Charset} encoding.
 	 * @return Charsets that encode one byte characters.

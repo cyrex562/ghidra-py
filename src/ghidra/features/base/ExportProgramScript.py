@@ -19,7 +19,7 @@
 //the original bytes are used. The script only handles simple use cases.
 //@category Examples
 
-import java.io.*;
+
 import java.util.Iterator;
 import java.util.List;
 

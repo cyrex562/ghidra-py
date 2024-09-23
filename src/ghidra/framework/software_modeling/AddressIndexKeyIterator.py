@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.map;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -34,14 +34,14 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 	private int keyRangeIndex = -1;
 	private int indexCol;
 
-	/**
+    # /**
 	 * Empty iterator.
 	 *
 	 */
 	public AddressIndexKeyIterator() {
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexKeyIterator.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table containing indexed addresses.
@@ -55,7 +55,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		this(table, indexCol, addrMap, false, (AddressSetView) null, atStart);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexKeyIterator for a range of addresses.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table containing indexed addresses.
@@ -71,7 +71,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		this(table, indexCol, addrMap, false, new AddressSet(minAddr, maxAddr), atStart);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexKeyIterator for a set of addresses.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table containing indexed addresses.
@@ -86,7 +86,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		this(table, indexCol, addrMap, false, set, atStart);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexKeyIterator for a set of addresses
 	 * @param table the database table containing indexed addresses.
 	 * @param indexCol the column that contains indexed addresses.
@@ -123,7 +123,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexKeyIterator starting at a given address.
 	 * Memory addresses encoded as Absolute are not included.
 	 * @param table the database table containing indexed addresses.
@@ -138,7 +138,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		this(table, indexCol, addrMap, false, start, before);
 	}
 
-	/**
+    # /**
 	 * Constructs a new AddressIndexKeyIterator starting at a given address
 	 * @param table the database table containing indexed addresses.
 	 * @param indexCol the column that contains indexed addresses.
@@ -187,7 +187,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		}
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#hasNext()
 	 */
 	@Override
@@ -213,7 +213,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#hasPrevious()
 	 */
 	@Override
@@ -239,7 +239,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#next()
 	 */
 	@Override
@@ -250,7 +250,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		throw new NoSuchElementException();
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#previous()
 	 */
 	@Override
@@ -261,7 +261,7 @@ public class AddressIndexKeyIterator implements DBLongIterator {
 		throw new NoSuchElementException();
 	}
 
-	/**
+    # /**
 	 * @see db.DBLongIterator#delete()
 	 */
 	@Override

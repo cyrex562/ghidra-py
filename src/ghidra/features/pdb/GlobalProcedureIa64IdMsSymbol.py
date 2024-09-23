@@ -27,7 +27,7 @@ public class GlobalProcedureIa64IdMsSymbol extends AbstractProcedureStartIa64MsS
 
 	public static final int PDB_ID = 0x114b;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

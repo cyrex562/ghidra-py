@@ -18,7 +18,7 @@ package ghidra.file.formats.ios.generic;
 import generic.jar.ResourceFile;
 import ghidra.file.crypto.CryptoKeyFactory;
 
-import java.io.*;
+
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -30,7 +30,7 @@ import java.util.zip.ZipFile;
 public final class IpswCryptoKeyFileTemplateWriter {
 	private ZipFile ipswZipFile;
 
-	/**
+    # /**
 	 * Constructs a new template using the given IPSW file.
 	 * @param ipswZipFile the IPSW file
 	 */
@@ -38,7 +38,7 @@ public final class IpswCryptoKeyFileTemplateWriter {
 		this.ipswZipFile = ipswZipFile;
 	}
 
-	/**
+    # /**
 	 * Returns TRUE if the XML file already exists.
 	 * @return TRUE if the XML file already exists
 	 */
@@ -51,7 +51,7 @@ public final class IpswCryptoKeyFileTemplateWriter {
 		return xmlFile.exists();
 	}
 
-	/**
+    # /**
 	 * Write the XML file.
 	 * WARNING: If a file already exists, it will be overwritten.
 	 * @throws IOException if an I/O error occurs

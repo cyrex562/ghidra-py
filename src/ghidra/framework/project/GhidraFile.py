@@ -15,7 +15,7 @@
  */
 package ghidra.framework.data;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 
@@ -86,7 +86,7 @@ public class GhidraFile implements DomainFile {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Reassign a new file-ID to resolve file-ID conflict.
 	 * Conflicts can occur as a result of a cancelled check-out.
 	 * @throws IOException if an IO error occurs
@@ -560,7 +560,7 @@ public class GhidraFile implements DomainFile {
 			monitor != null ? monitor : TaskMonitor.DUMMY);
 	}
 
-	/**
+    # /**
 	 * Copy this file to make a private file if it is versioned. This method should be called
 	 * only when a non shared project is being converted to a shared project.
 	 * @param monitor task monitor

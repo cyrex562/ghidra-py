@@ -18,7 +18,7 @@ package ghidra.file.formats.ios.dmg;
 import java.util.Arrays;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import generic.jar.ResourceFile;
 import ghidra.app.util.bin.ByteProvider;

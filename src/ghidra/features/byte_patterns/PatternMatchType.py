@@ -19,35 +19,35 @@ package ghidra.bitpatterns.info;
  * Elements of this enum represent different types of matches for a pattern.
  */
 public enum PatternMatchType {
-	/**
+    # /**
 	 * A match at the start of known function
 	 */
 	TRUE_POSITIVE,
-	/**
+    # /**
 	 * A match within defined code that could be a function start
 	 */
 	POSSIBLE_START_CODE,
-	/**
+    # /**
 	 * A match that can't be a function start due to the wrong incoming flow
 	 */
 	FP_WRONG_FLOW,
-	/**
+    # /**
 	 * A match that can't be a function start because it occurs within a defined instruction
 	 */
 	FP_MISALIGNED,
-	/**
+    # /**
 	 * A match within undefined bytes that could be a function start
 	 */
 	POSSIBLE_START_UNDEFINED,
-	/**
+    # /**
 	 * A match within defined data
 	 */
 	FP_DATA,
-	/**
+    # /**
 	 * A matc with a context register conflict
 	 */
 	CONTEXT_CONFLICT,
-	/**
+    # /**
 	 * A match of a pre-pattern without a post-pattern
 	 */
 	PRE_PATTERN_HIT

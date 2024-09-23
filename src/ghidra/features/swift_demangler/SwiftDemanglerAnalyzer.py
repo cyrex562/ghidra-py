@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.analysis;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.app.util.demangler.*;
 import ghidra.app.util.demangler.swift.*;
@@ -59,7 +59,7 @@ public class SwiftDemanglerAnalyzer extends AbstractDemanglerAnalyzer {
 	private boolean useUnsupportedPrefix = true;
 	private SwiftDemangler demangler = new SwiftDemangler();
 
-	/**
+    # /**
 	 * Creates a new {@link SwiftDemanglerAnalyzer}
 	 */
 	public SwiftDemanglerAnalyzer() {

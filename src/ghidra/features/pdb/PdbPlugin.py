@@ -16,7 +16,7 @@
 package pdb;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -179,7 +179,7 @@ public class PdbPlugin extends Plugin {
 
 	//-------------------------------------------------------------------------------------------------------
 
-	/**
+    # /**
 	 * Searches the currently configured symbol server paths for a Pdb symbol file.
 	 * 
 	 * @param program the program associated with the requested pdb file
@@ -220,7 +220,7 @@ public class PdbPlugin extends Plugin {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Searches the currently configured symbol server paths for a Pdb symbol file.
 	 * <p>
 	 * Any "SameDir" search location in the configuration will be ignored because there is
@@ -267,7 +267,7 @@ public class PdbPlugin extends Plugin {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns a new instance of a {@link SymbolServerService} configured with values from the
 	 * application's preferences, defaulting to a minimal instance if there is no config.
 	 * 
@@ -292,7 +292,7 @@ public class PdbPlugin extends Plugin {
 		return new SymbolServerService(symbolStore, symbolServers);
 	}
 
-	/**
+    # /**
 	 * Persists the {@link SymbolStore} and {@link SymbolServer}s contained in the
 	 * {@link SymbolServerService}.
 	 * 

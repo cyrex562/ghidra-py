@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.squashfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.util.Msg;
@@ -33,7 +33,7 @@ public class SquashFragment {
 	// This field is unused as of 4.0
 	private final int unusedField;
 
-	/**
+    # /**
 	 * Represents a SquashFS fragment
 	 * @param reader A binary reader with pointer index at the start of the fragment data
 	 * @throws IOException Any read operation failure

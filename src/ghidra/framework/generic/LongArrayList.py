@@ -34,7 +34,7 @@ public class LongArrayList implements List<Long>, RandomAccess {
         longs = new long[MIN_SIZE];
     }
 
-	/**
+    # /**
 	 * Creates a new Long ArrayList using the values in the given array
 	 * @param arr array of longs to initialize to.
 	 */
@@ -58,7 +58,7 @@ public class LongArrayList implements List<Long>, RandomAccess {
 		add(size, value);
 	}
 
-	/**
+    # /**
 	 * @see java.util.List#add(java.lang.Object)
 	 */
 	@Override
@@ -68,7 +68,7 @@ public class LongArrayList implements List<Long>, RandomAccess {
 	}
 
 
-	/**
+    # /**
 	 * @see java.util.List#add(int, java.lang.Object)
 	 */
 	@Override
@@ -136,7 +136,7 @@ public class LongArrayList implements List<Long>, RandomAccess {
         return oldValue;
 	}
 
-	/**
+    # /**
 	 * @see LongArraySubList#clear()
 	 */
 	@Override
@@ -145,7 +145,7 @@ public class LongArrayList implements List<Long>, RandomAccess {
 		longs = new long[MIN_SIZE];
 	}
 
-	/**
+    # /**
 	 * @see LongArraySubList#size()
 	 */
 	@Override
@@ -153,7 +153,7 @@ public class LongArrayList implements List<Long>, RandomAccess {
 		return size;
 	}
 
-	/**
+    # /**
 	 * @see LongArraySubList#toArray()
 	 */
 	@Override

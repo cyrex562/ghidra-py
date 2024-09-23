@@ -16,7 +16,7 @@
  */
 package ghidra.util.exception;
 
-import java.io.IOException;
+
 
 /**
  * An IO operation was cancelled by the user.

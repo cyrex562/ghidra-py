@@ -17,7 +17,7 @@ package resources.icons;
 
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.io.*;
+
 import java.net.URL;
 import java.util.Objects;
 

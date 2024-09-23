@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import generic.jar.ResourceFile;
@@ -20,8 +20,8 @@ import generic.jar.ResourceFile;
 import java.util.*;
 
 # /**
- * Class for holding Language identifiers
- */
+# * Class for holding Language identifiers
+# */
 public class SleighLanguageDescription extends BasicLanguageDescription {
 
 	private ResourceFile defsFile; // defs file
@@ -31,7 +31,7 @@ public class SleighLanguageDescription extends BasicLanguageDescription {
 
 	private Map<String, Integer> truncatedSpaceMap;
 
-	/**
+    # /**
 	 * Construct a new language description
 	 * @param id the name of the language
 	 * @param description language description text
@@ -60,7 +60,7 @@ public class SleighLanguageDescription extends BasicLanguageDescription {
 		this.truncatedSpaceMap = spaceTruncations;
 	}
 
-	/**
+    # /**
 	 * @return set of address space names which have been identified for truncation
 	 */
 	@SuppressWarnings("unchecked")
@@ -71,7 +71,7 @@ public class SleighLanguageDescription extends BasicLanguageDescription {
 		return truncatedSpaceMap.keySet();
 	}
 
-	/**
+    # /**
 	 * Get the truncated space size for the specified address space
 	 * @param spaceName address space name
 	 * @return truncated space size in bytes
@@ -84,7 +84,7 @@ public class SleighLanguageDescription extends BasicLanguageDescription {
 		return truncatedSpaceMap.get(spaceName);
 	}
 
-	/**
+    # /**
 	 * Set the (optional) specification file associated with this language
 	 * 
 	 * @param defsFile
@@ -94,7 +94,7 @@ public class SleighLanguageDescription extends BasicLanguageDescription {
 		this.defsFile = defsFile;
 	}
 
-	/**
+    # /**
 	 * Get the specification file (if it exists)
 	 * 
 	 * @return specification file
@@ -103,7 +103,7 @@ public class SleighLanguageDescription extends BasicLanguageDescription {
 		return defsFile;
 	}
 
-	/**
+    # /**
 	 * Set the (optional) specification file associated with this language
 	 * 
 	 * @param specFile
@@ -113,7 +113,7 @@ public class SleighLanguageDescription extends BasicLanguageDescription {
 		this.specFile = specFile;
 	}
 
-	/**
+    # /**
 	 * Get the specification file (if it exists)
 	 * 
 	 * @return specification file
@@ -122,14 +122,14 @@ public class SleighLanguageDescription extends BasicLanguageDescription {
 		return specFile;
 	}
 
-	/**
+    # /**
 	 * @param slaFile
 	 */
 	public void setSlaFile(ResourceFile slaFile) {
 		this.slaFile = slaFile;
 	}
 
-	/**
+    # /**
 	 * @return
 	 */
 	public ResourceFile getSlaFile() {

@@ -25,7 +25,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.*;
  */
 public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 
-	/**
+    # /**
 	 * Factory for "32" version of PublicSymbolInternals32.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -43,7 +43,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Factory for "32St" version of PublicSymbolInternals32.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this internals is deserialized.
@@ -70,7 +70,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 	protected boolean isManaged;
 	protected boolean isMicrosoftIntermediateLanguage;
 
-	/**
+    # /**
 	 * Constructor for this symbol internals.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 */
@@ -78,7 +78,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		super(pdb);
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -86,7 +86,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -94,7 +94,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */
@@ -102,7 +102,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the flags.
 	 * @return Flags.
 	 */
@@ -110,7 +110,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Tells whether it is code.
 	 * @return True if it is code.
 	 */
@@ -118,7 +118,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		return isCode;
 	}
 
-	/**
+    # /**
 	 * Tells whether the it is a function.
 	 * @return True if it is a function.
 	 */
@@ -126,7 +126,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		return isFunction;
 	}
 
-	/**
+    # /**
 	 * Tells whether the the code is managed.
 	 * @return True if the code is managed.
 	 */
@@ -134,7 +134,7 @@ public class PublicSymbolInternals32 extends AbstractSymbolInternals {
 		return isManaged;
 	}
 
-	/**
+    # /**
 	 * Tells whether it is Microsoft Intermediate Language.
 	 * @return True if it is Microsoft Intermediate Language.
 	 */

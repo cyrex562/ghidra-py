@@ -25,7 +25,7 @@ public abstract class Job {
 	private volatile Throwable error;
 	private volatile TaskMonitor taskMonitor;
 
-	/**
+    # /**
 	 * The method that gets called by the Worker when this job is selected to be run
 	 * by the Worker.
 	 * @param monitor the monitor

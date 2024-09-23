@@ -288,7 +288,7 @@ public class VTDualListingHighlightProvider implements ListingHighlightProvider 
 		return highlightColor;
 	}
 
-	/**
+    # /**
 	 * Creates a darker shade of the color passed-in, based on the given amount.
 	 * 
 	 * algorithm: 1) grab individual rgb elements

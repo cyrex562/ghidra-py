@@ -17,7 +17,7 @@ package ghidra.feature.vt.gui.filters;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.junit.*;

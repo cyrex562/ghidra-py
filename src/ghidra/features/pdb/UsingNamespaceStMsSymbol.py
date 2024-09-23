@@ -27,7 +27,7 @@ public class UsingNamespaceStMsSymbol extends AbstractUsingNamespaceMsSymbol {
 
 	public static final int PDB_ID = 0x1029;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

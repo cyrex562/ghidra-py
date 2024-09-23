@@ -30,7 +30,7 @@ import java.awt.Shape;
  */
 public interface VertexShapeProvider {
 
-	/**
+    # /**
 	 * Returns the compact shape that the user will see when full, detailed rendering is 
 	 * not being performed for a vertex, such as in the satellite viewer or when fully-zoomed-out
 	 * 
@@ -38,7 +38,7 @@ public interface VertexShapeProvider {
 	 */
 	public Shape getCompactShape();
 
-	/**
+    # /**
 	 * Returns the full (the actual) shape of a vertex.  This can be used to determine if a 
 	 * mouse point intersects a vertex or to get the real bounding-box of a vertex.
 	 * 

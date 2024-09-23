@@ -45,7 +45,7 @@ public class PCodeDfgDisplayOptions extends GraphDisplayOptions {
 	private static final String BG_EDGE_BETWEEN_BLOCKS ="color.bg.decompiler.pcode.dfg.edge.between.blocks";
 	// @formatter:on
 
-	/**
+    # /**
 	 * constructor
 	 * @param tool if non-null, will load values from tool options
 	 */

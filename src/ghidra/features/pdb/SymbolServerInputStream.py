@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver;
 
-import java.io.*;
+
 
 # /**
  * A {@link InputStream} wrapper returned from a {@link SymbolServer}
@@ -25,7 +25,7 @@ public class SymbolServerInputStream implements Closeable {
 	private final InputStream inputStream;
 	private final long expectedLength;
 
-	/**
+    # /**
 	 * Create a new instance.
 	 * 
 	 * @param inputStream {@link InputStream} to wrap
@@ -36,7 +36,7 @@ public class SymbolServerInputStream implements Closeable {
 		this.expectedLength = expectedLength;
 	}
 
-	/**
+    # /**
 	 * Returns the wrapped input stream
 	 * @return the wrapped input stream
 	 */
@@ -44,7 +44,7 @@ public class SymbolServerInputStream implements Closeable {
 		return inputStream;
 	}
 
-	/**
+    # /**
 	 * Returns the expected length of the input stream
 	 * 
 	 * @return expected length of the input stream

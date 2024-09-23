@@ -58,7 +58,7 @@ public class PicSwitchAnalyzer extends AbstractAnalyzer {
 	private AddressSet disassemblyPoints;
 	private AddressSet secondPassPoints;
 
-	/**
+    # /**
 	 * Constructor for auto-analysis manager.
 	 */
 	public PicSwitchAnalyzer() {
@@ -67,7 +67,7 @@ public class PicSwitchAnalyzer extends AbstractAnalyzer {
 		setPriority(AnalysisPriority.DISASSEMBLY.after().after().after().after());
 	}
 
-	/**
+    # /**
 	 * Constructor for private use.
 	 * @param program
 	 */
@@ -226,7 +226,7 @@ public class PicSwitchAnalyzer extends AbstractAnalyzer {
 		}
 	}
 
-	/**
+    # /**
 	 * Test disassembly of fall-through flow only upto limit if specified.
 	 * @param caseAddr
 	 * @param caseSize number of contiguous instructions per case or -1 if first case

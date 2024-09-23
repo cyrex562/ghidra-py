@@ -52,7 +52,7 @@ public class GhidraURL {
 	private GhidraURL() {
 	}
 
-	/**
+    # /**
 	 * Determine if the specified URL refers to a local project and
 	 * it exists.
 	 * @param url ghidra URL
@@ -64,7 +64,7 @@ public class GhidraURL {
 		return loc != null && loc.exists();
 	}
 
-	/**
+    # /**
 	 * Determine if the specified string appears to be a possible ghidra URL
 	 * (starts with "ghidra:/"). 
 	 * @param str string to be checked
@@ -74,7 +74,7 @@ public class GhidraURL {
 		return str != null && str.startsWith(PROTOCOL_URL_START);
 	}
 
-	/**
+    # /**
 	 * Tests if the given url is using the Ghidra protocol
 	 * @param url the url to test
 	 * @return true if the url is using the Ghidra protocol
@@ -83,7 +83,7 @@ public class GhidraURL {
 		return url != null && url.getProtocol().equals(PROTOCOL);
 	}
 
-	/**
+    # /**
 	 * Determine if URL string uses a local format (e.g., {@code ghidra:/path...}).
 	 * Extensive validation is not performed.  This method is intended to differentiate
 	 * from a server URL only.
@@ -94,7 +94,7 @@ public class GhidraURL {
 		return IS_LOCAL_URL_PATTERN.matcher(str).matches();
 	}
 
-	/**
+    # /**
 	 * Determine if URL string uses a remote server format (e.g., {@code ghidra://host...}).
 	 * Extensive validation is not performed.  This method is intended to differentiate
 	 * from a local URL only.
@@ -105,7 +105,7 @@ public class GhidraURL {
 		return IS_REMOTE_URL_PATTERN.matcher(str).matches();
 	}
 
-	/**
+    # /**
 	 * Determine if the specified URL is a local project URL.
 	 * No checking is performed as to the existence of the project.
 	 * @param url ghidra URL
@@ -116,7 +116,7 @@ public class GhidraURL {
 		return isLocalGhidraURL(url.toExternalForm());
 	}
 
-	/**
+    # /**
 	 * Get the project locator which corresponds to the specified local project URL.
 	 * Confirm local project URL with {@link #isLocalProjectURL(URL)} prior to method use.
 	 * @param localProjectURL local Ghidra project URL
@@ -152,7 +152,7 @@ public class GhidraURL {
 		return new ProjectLocator(dirPath, name);
 	}
 
-	/**
+    # /**
 	 * Get the shared repository name associated with a repository URL or null
 	 * if not applicable.  For ghidra URL extensions it is assumed that the first path element
 	 * corresponds to the repository name.
@@ -183,7 +183,7 @@ public class GhidraURL {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Determine if the specified URL is any type of server "repository" URL.
 	 * No checking is performed as to the existence of the server or repository.
 	 * NOTE: ghidra protocol extensions are not currently supported (e.g., ghidra:http://...).
@@ -214,7 +214,7 @@ public class GhidraURL {
 		return path.charAt(0) == '/' && path.length() > 1 && path.charAt(1) != '/';
 	}
 
-	/**
+    # /**
 	 * Determine if the specified URL is any type of supported server Ghidra URL.
 	 * No checking is performed as to the existence of the server or repository.
 	 * @param url ghidra URL
@@ -228,7 +228,7 @@ public class GhidraURL {
 		return Handler.isSupportedURL(url);
 	}
 
-	/**
+    # /**
 	 * Ensure that absolute path is specified and normalize its format.
 	 * An absolute path may start with a windows drive letter (e.g., c:/a/b, /c:/a/b)
 	 * or without (e.g., /a/b).  Although for Windows the lack of a drive letter is
@@ -275,7 +275,7 @@ public class GhidraURL {
 			path.charAt(pathIndex) == '/';
 	}
 
-	/**
+    # /**
 	 * Check for characters explicitly disallowed in path or project name.
 	 * @param type type of string to include in exception
 	 * @param str string to check
@@ -292,7 +292,7 @@ public class GhidraURL {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a Ghidra URL from a string form of Ghidra URL or local project path.
 	 * This method can consume strings produced by the getDisplayString method.
 	 * @param projectPathOrURL {@literal project path (<absolute-directory>/<project-name>)} or 
@@ -330,7 +330,7 @@ public class GhidraURL {
 		}
 	}
 
-	/**
+    # /**
 	 * Get Ghidra URL which corresponds to the local-project or repository with any 
 	 * file path or query details removed.
 	 * @param ghidraUrl ghidra file/folder URL (server-only URL not permitted)
@@ -406,7 +406,7 @@ public class GhidraURL {
 		throw new IllegalArgumentException("Invalid project/repository URL: " + ghidraUrl);
 	}
 
-	/**
+    # /**
 	 * Get the project pathname referenced by the specified Ghidra file/folder URL.
 	 * If path is missing root folder is returned.
 	 * @param ghidraUrl ghidra file/folder URL (server-only URL not permitted)
@@ -442,7 +442,7 @@ public class GhidraURL {
 		throw new IllegalArgumentException("not project/repository URL");
 	}
 
-	/**
+    # /**
 	 * Get hostname as an IP address if possible
 	 * @param host hostname
 	 * @return host IP address or original host name
@@ -460,7 +460,7 @@ public class GhidraURL {
 		return host;
 	}
 
-	/**
+    # /**
 	 * Force the specified URL to specify a folder.  This may be neccessary when only folders
 	 * are supported since Ghidra permits both a folder and file to have the same name within
 	 * its parent folder.  This method simply ensures that the URL path ends with a {@code /} 
@@ -502,7 +502,7 @@ public class GhidraURL {
 		return ghidraUrl;
 	}
 
-	/**
+    # /**
 	 * Get a normalized URL which eliminates use of host names and optional URL ref
 	 * which may prevent direct comparison.
 	 * @param url ghidra URL
@@ -527,7 +527,7 @@ public class GhidraURL {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate preferred display string for Ghidra URLs.
 	 * Form can be parsed by the toURL method.
 	 * @param url ghidra URL
@@ -548,7 +548,7 @@ public class GhidraURL {
 		return url.toString();
 	}
 
-	/**
+    # /**
 	 * Create a URL which refers to a local Ghidra project
 	 * @param dirPath absolute path of project location directory 
 	 * @param projectName name of project
@@ -558,7 +558,7 @@ public class GhidraURL {
 		return makeURL(dirPath, projectName, null, null);
 	}
 
-	/**
+    # /**
 	 * Create a URL which refers to a local Ghidra project
 	 * @param projectLocator absolute project location 
 	 * @return local Ghidra project URL
@@ -568,7 +568,7 @@ public class GhidraURL {
 		return makeURL(projectLocator, null, null);
 	}
 
-	/**
+    # /**
 	 * Create a URL which refers to a local Ghidra project with optional project file and ref
 	 * @param projectLocation absolute path of project location directory 
 	 * @param projectName name of project
@@ -610,7 +610,7 @@ public class GhidraURL {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a URL which refers to a local Ghidra project with optional project file and ref
 	 * @param projectLocator local project locator
 	 * @param projectFilePath file path (e.g., /a/b/c, may be null)
@@ -637,7 +637,7 @@ public class GhidraURL {
 		return new String[] { path, name };
 	}
 
-	/**
+    # /**
 	 * Create a URL which refers to Ghidra Server repository content.  Path may correspond 
 	 * to either a file or folder.  
 	 * @param host server host name/address
@@ -652,7 +652,7 @@ public class GhidraURL {
 		return makeURL(host, port, repositoryName, splitName[0], splitName[1], null);
 	}
 
-	/**
+    # /**
 	 * Create a URL which refers to Ghidra Server repository content.  Path may correspond 
 	 * to either a file or folder.  
 	 * @param host server host name/address
@@ -669,7 +669,7 @@ public class GhidraURL {
 		return makeURL(host, port, repositoryName, splitName[0], splitName[1], ref);
 	}
 
-	/**
+    # /**
 	 * Create a URL which refers to Ghidra Server repository content.  Path may correspond 
 	 * to either a file or folder.  
 	 * @param host server host name/address
@@ -723,7 +723,7 @@ public class GhidraURL {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a URL which refers to Ghidra Server repository and its root folder
 	 * @param host server host name/address
 	 * @param port optional server port (a value &lt;= 0 refers to the default port)

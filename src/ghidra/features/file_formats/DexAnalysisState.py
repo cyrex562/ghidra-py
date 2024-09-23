@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.dex.analyzer;
 
-import java.io.IOException;
+
 import java.util.List;
 import java.util.TreeMap;
 
@@ -46,7 +46,7 @@ final public class DexAnalysisState {
 		this.header = header;
 	}
 
-	/**
+    # /**
 	 * Calculate the Address for every method in the list and add an entry to -methodMap-
 	 * @param defaultAddressSpace is the AddressSpace all encoded offsets are relative to
 	 * @param methodList is the list of encoded methods
@@ -60,7 +60,7 @@ final public class DexAnalysisState {
 		}
 	}
 
-	/**
+    # /**
 	 * Calculate and cache a map from Address to the corresponding EncodedMethod object
 	 * for all methods in the Program
 	 */
@@ -78,14 +78,14 @@ final public class DexAnalysisState {
 		}
 	}
 
-	/**
+    # /**
 	 * @return the {@link DexHeader} containing raw constant pool and method records
 	 */
 	public DexHeader getHeader() {
 		return header;
 	}
 
-	/**
+    # /**
 	 * Retrieve the EncodedMethod object, given its address
 	 * @param addr is the Address of the method
 	 * @return the EncodedMethod
@@ -100,7 +100,7 @@ final public class DexAnalysisState {
 		return methodMap.get(addr);
 	}
 
-	/**
+    # /**
 	 * Return shared/persistent {@link DexAnalysisState} which corresponds to the 
 	 * specified program instance.
 	 * 
@@ -116,7 +116,7 @@ final public class DexAnalysisState {
 			});
 	}
 
-	/**
+    # /**
 	 * Return shared/persistent {@link DexAnalysisState} which corresponds to the 
 	 * specified program instance.
 	 * 

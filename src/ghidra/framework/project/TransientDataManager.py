@@ -34,7 +34,7 @@ public class TransientDataManager {
 	// Set implementation must be thread safe and not sensitive to the file's name changing
 	private static CopyOnWriteArraySet<DomainFileProxy> set = new CopyOnWriteArraySet<>();
 
-	/**
+    # /**
 	 * Adds the given transient domain file to the list.
 	 * @param domainFile the transient domain file to add to the list
 	 */
@@ -45,7 +45,7 @@ public class TransientDataManager {
 		set.add(domainFile);
 	}
 
-	/**
+    # /**
 	 * Removes the given transient domain file from the list.
 	 * @param domainFile the transient domain file to remove
 	 */
@@ -53,14 +53,14 @@ public class TransientDataManager {
 		set.remove(domainFile);
 	}
 
-	/**
+    # /**
 	 * Removes all transients from the list.
 	 */
 	public static void clearAll() {
 		set.clear();
 	}
 
-	/**
+    # /**
 	 * Populates the given array list with all the transients.
 	 * @param l the list populate with the transients
 	 */
@@ -68,7 +68,7 @@ public class TransientDataManager {
 		l.addAll(set);
 	}
 
-	/**
+    # /**
 	 * Releases all files for the given consumer.
 	 * @param consumer the domain file consumer
 	 */

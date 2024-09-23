@@ -119,7 +119,7 @@ public abstract class AbstractBinaryExpressionSolver<T extends BinaryExpression>
 		return null;
 	}
 
-	/**
+    # /**
 	 * Compute the left-hand-side value given that the result and the right are known
 	 * 
 	 * @param rval the right-hand-side value
@@ -129,7 +129,7 @@ public abstract class AbstractBinaryExpressionSolver<T extends BinaryExpression>
 	 */
 	public abstract MaskedLong computeLeft(MaskedLong rval, MaskedLong goal) throws SolverException;
 
-	/**
+    # /**
 	 * Compute the right-hand-side value given that the result and the left are known
 	 * 
 	 * <p>
@@ -144,7 +144,7 @@ public abstract class AbstractBinaryExpressionSolver<T extends BinaryExpression>
 		return computeLeft(lval, goal);
 	}
 
-	/**
+    # /**
 	 * Compute the result of applying the operator to the two given values
 	 * 
 	 * @param lval the left-hand-side value

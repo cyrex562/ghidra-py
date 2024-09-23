@@ -19,19 +19,19 @@ package ghidra.feature.vt.api.main;
  * Interface used for a callback when associations are accepted or cleared.
  */
 public interface AssociationHook {
-	/**
+    # /**
 	 * Called whenever an association has been accepted.
 	 * @param association the association that has been accepted.
 	 */
 	public void associationAccepted(VTAssociation association);
 
-	/**
+    # /**
 	 * Called whenever an association has been cleared from the accepted state.
 	 * @param association the association that has been cleared from the accepted state.
 	 */
 	public void associationCleared(VTAssociation association);
 
-	/**
+    # /**
 	 * Called whenever a markupItem's status changes.
 	 * @param markupItem the markupItem that changed.
 	 */

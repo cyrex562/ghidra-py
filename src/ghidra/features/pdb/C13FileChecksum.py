@@ -38,7 +38,7 @@ public class C13FileChecksum {
 		reader.align4();
 	}
 
-	/**
+    # /**
 	 * Returns of offset of the filename within the filename list
 	 * @return the offset of the filename
 	 */
@@ -46,7 +46,7 @@ public class C13FileChecksum {
 		return offsetFilename;
 	}
 
-	/**
+    # /**
 	 * Returns the number of bytes of the checksum field
 	 * @return the number of bytes of the checksum field
 	 */
@@ -54,7 +54,7 @@ public class C13FileChecksum {
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the ID value of the checksum type use
 	 * @return the ID of the checksum type
 	 */
@@ -62,7 +62,7 @@ public class C13FileChecksum {
 		return checksumTypeValue;
 	}
 
-	/**
+    # /**
 	 * Returns the checksum bytes
 	 * @return the checksum bytes
 	 */

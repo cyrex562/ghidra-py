@@ -40,13 +40,13 @@ public abstract class StagingManager {
 		return queriesmade;
 	}
 
-	/**
+    # /**
 	 * Get the current staged query
 	 * @return the QueryResponseRecord object
 	 */
 	public abstract BSimQuery<?> getQuery();
 
-	/**
+    # /**
 	 * Establish the first query stage
 	 * @param q the query
 	 * @return true if the initial query is constructed
@@ -54,7 +54,7 @@ public abstract class StagingManager {
 	 */
 	public abstract boolean initialize(BSimQuery<?> q) throws LSHException;
 
-	/**
+    # /**
 	 * Establish the next query stage
 	 * @return true if a next query is constructed
 	 * @throws LSHException if creating the new query fails 

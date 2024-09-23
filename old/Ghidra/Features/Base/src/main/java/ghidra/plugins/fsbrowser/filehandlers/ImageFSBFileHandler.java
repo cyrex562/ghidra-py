@@ -16,7 +16,7 @@
 package ghidra.plugins.fsbrowser.filehandlers;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.util.List;
 import java.util.Set;
 

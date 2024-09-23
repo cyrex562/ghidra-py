@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.lang3.StringUtils;
@@ -26,10 +26,10 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Version 1 implementation for the accessing the data type settings database table.
- * This version stores settings name as an index in each record which corresponds 
- * to an entry in the into a second table for
- */
+# * Version 1 implementation for the accessing the data type settings database table.
+# * This version stores settings name as an index in each record which corresponds 
+# * to an entry in the into a second table for
+# */
 class SettingsDBAdapterV1 extends SettingsDBAdapter {
 
 	private final short MIN_NAME_INDEX = 1; // first assigned name index value
@@ -223,7 +223,7 @@ class SettingsDBAdapterV1 extends SettingsDBAdapter {
 		nameStringMap = null;
 	}
 
-	/**
+    # /**
 	 * Get previously assigned name index.
 	 * @param name setting name
 	 * @return name index or a value less than {@code #MIN_NAME_INDEX} if not defined

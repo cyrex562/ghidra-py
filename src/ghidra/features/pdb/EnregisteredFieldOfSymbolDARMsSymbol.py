@@ -33,7 +33,7 @@ public class EnregisteredFieldOfSymbolDARMsSymbol
 	private RangeAttribute rangeAttribute;
 	private int offsetInParent;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -50,7 +50,7 @@ public class EnregisteredFieldOfSymbolDARMsSymbol
 		parseRangeAndGaps(reader);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link RegisterName}
 	 * @return the register
 	 */
@@ -58,7 +58,7 @@ public class EnregisteredFieldOfSymbolDARMsSymbol
 		return registerName;
 	}
 
-	/**
+    # /**
 	 * Returns the range attribute
 	 * @return the range attribute
 	 */
@@ -66,7 +66,7 @@ public class EnregisteredFieldOfSymbolDARMsSymbol
 		return rangeAttribute;
 	}
 
-	/**
+    # /**
 	 * Returns the offset within the parent
 	 * @return the offset
 	 */

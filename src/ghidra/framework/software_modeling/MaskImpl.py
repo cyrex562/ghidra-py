@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.program.model.mem.MemBuffer;
@@ -21,14 +21,14 @@ import ghidra.program.model.mem.MemoryAccessException;
 import java.io.Serializable;
 
 # /**
- * Implements the Mask interface as a byte array.
- */
+# * Implements the Mask interface as a byte array.
+# */
 public class MaskImpl implements Mask, Serializable {
 	private final static long serialVersionUID = 1;
 
 	private byte[] mask;
 
-	/**
+    # /**
 	* Construct a mask from a byte array.
 	*
 	* @param msk the bits that make up the mask.
@@ -41,7 +41,7 @@ public class MaskImpl implements Mask, Serializable {
 		System.arraycopy(msk, 0, mask, 0, msk.length);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
@@ -54,7 +54,7 @@ public class MaskImpl implements Mask, Serializable {
 
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.lang.Mask#equals(byte[])
 	 */
@@ -71,7 +71,7 @@ public class MaskImpl implements Mask, Serializable {
 		return true;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.lang.Mask#applyMask(byte[], byte[])
 	 */
@@ -99,7 +99,7 @@ public class MaskImpl implements Mask, Serializable {
 			results[resultsOffset++] = (byte) (mask[i] & cde[cdeOffset++]);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.lang.Mask#applyMask(ghidra.program.model.mem.MemBuffer)
 	 */
 	public byte[] applyMask(MemBuffer buffer) throws MemoryAccessException {
@@ -111,7 +111,7 @@ public class MaskImpl implements Mask, Serializable {
 		return bytes;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.lang.Mask#equalMaskedValue(byte[], byte[])
 	 */
@@ -126,7 +126,7 @@ public class MaskImpl implements Mask, Serializable {
 		return true;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.lang.Mask#subMask(byte[])
 	 */
@@ -145,7 +145,7 @@ public class MaskImpl implements Mask, Serializable {
 		return true;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.lang.Mask#complementMask(byte[], byte[])
 	 */
@@ -172,7 +172,7 @@ public class MaskImpl implements Mask, Serializable {
 		return results;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
@@ -190,7 +190,7 @@ public class MaskImpl implements Mask, Serializable {
 		return s.toUpperCase();
 	}
 
-	/**
+    # /**
 	 * 
 	 * @see ghidra.program.model.lang.Mask#getBytes()
 	 */

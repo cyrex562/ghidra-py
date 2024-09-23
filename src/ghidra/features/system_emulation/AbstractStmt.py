@@ -32,7 +32,7 @@ abstract class AbstractStmt implements Stmt {
 		}
 	}
 
-	/**
+    # /**
 	 * Internal: Provides the implementation of {@link RValInternal#getContext()} for
 	 * {@link AssignStmt}
 	 * 
@@ -51,7 +51,7 @@ abstract class AbstractStmt implements Stmt {
 		return this;
 	}
 
-	/**
+    # /**
 	 * Get the innermost statement of the given class containing this statement
 	 * 
 	 * <p>
@@ -72,7 +72,7 @@ abstract class AbstractStmt implements Stmt {
 		return parent.nearest(cls);
 	}
 
-	/**
+    # /**
 	 * Generate the Sleigh code that implements this statement
 	 * 
 	 * @param next the label receiving control immediately after this statement is executed
@@ -81,7 +81,7 @@ abstract class AbstractStmt implements Stmt {
 	 */
 	protected abstract StringTree generate(Label next, Label fall);
 
-	/**
+    # /**
 	 * Check if the statement is or contains a single branch statement
 	 * 
 	 * <p>
@@ -93,7 +93,7 @@ abstract class AbstractStmt implements Stmt {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the label for the statement immediately following this statement
 	 * 
 	 * <p>

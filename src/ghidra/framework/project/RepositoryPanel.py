@@ -76,7 +76,7 @@ public class RepositoryPanel extends AbstractWizardJPanel {
 		nameField.setText("");
 	}
 
-	/**
+    # /**
 	 * Return whether the user entry is valid
 	 */
 	@Override
@@ -118,7 +118,7 @@ public class RepositoryPanel extends AbstractWizardJPanel {
 		return createRepButton.isSelected();
 	}
 
-	/**
+    # /**
 	 * Get the name of the repository; it either one selected from the list,
 	 * or the name that the user entered to create a new repository.
 	 */

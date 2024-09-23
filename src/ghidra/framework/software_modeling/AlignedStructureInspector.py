@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.ArrayList;
@@ -24,10 +24,10 @@ import ghidra.docking.settings.Settings;
 import ghidra.util.exception.DuplicateNameException;
 
 # /**
- * <code>AlignedStructureInspector</code> provides a simple instance of a structure 
- * member container used to perform alignment operations without forcing modification
- * of the actual structure.
- */
+# * <code>AlignedStructureInspector</code> provides a simple instance of a structure 
+# * member container used to perform alignment operations without forcing modification
+# * of the actual structure.
+# */
 public class AlignedStructureInspector extends AlignedStructurePacker {
 
 	private AlignedStructureInspector(StructureInternal structure) {
@@ -148,7 +148,7 @@ public class AlignedStructureInspector extends AlignedStructurePacker {
 
 	}
 
-	/**
+    # /**
 	 * Perform structure component packing in a read-only fashion primarily
 	 * for the purpose of computing external alignment for existing structures.
 	 * @param structure

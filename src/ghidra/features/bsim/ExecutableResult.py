@@ -47,14 +47,14 @@ public class ExecutableResult implements Comparable<ExecutableResult> {
 		return exerecord;
 	}
 
-	/**
+    # /**
 	 * @return number of functions with matches into this executable
 	 */
 	public int getFunctionCount() {
 		return funccount;
 	}
 
-	/**
+    # /**
 	 * @return sum of significance scores for all matching functions
 	 */
 	public double getSignificanceSum() {

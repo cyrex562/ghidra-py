@@ -36,7 +36,7 @@ public abstract class AbstractDimensionedArrayVarBoundsUpperMsType extends Abstr
 	// TODO: dim is unknown.  Needs analysis and implementation break-out.
 	protected List<RecordNumber> upperBound = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

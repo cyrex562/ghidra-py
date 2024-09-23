@@ -15,7 +15,7 @@
  */
 package ghidra.util.extensions;
 
-import java.io.*;
+
 import java.nio.file.Files;
 import java.nio.file.attribute.PosixFilePermission;
 import java.util.*;
@@ -42,7 +42,7 @@ import utility.application.ApplicationLayout;
  */
 public class ExtensionUtils {
 
-	/**
+    # /**
 	 * Magic number that identifies the first bytes of a ZIP archive. This is used to verify that a
 	 * file is a zip rather than just checking the extension.
 	 */
@@ -55,7 +55,7 @@ public class ExtensionUtils {
 
 	private static Extensions extensions;
 
-	/**
+    # /**
 	 * Performs extension maintenance.  This should be called at startup, before any plugins or
 	 * extension points are loaded.
 	 */
@@ -84,7 +84,7 @@ public class ExtensionUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given file or directory is a valid ghidra extension.
 	 * <p>
 	 * Note: This means that the zip or directory contains an extension.properties file.
@@ -124,7 +124,7 @@ public class ExtensionUtils {
 		return getAllInstalledExtensions().getActiveExtensions();
 	}
 
-	/**
+    # /**
 	 * Returns all installed extensions. These are all the extensions found in
 	 * {@link ApplicationLayout#getExtensionInstallationDirs}.
 	 *
@@ -199,7 +199,7 @@ public class ExtensionUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Clears any cached extensions and searches for extensions.
 	 */
 	public static void reload() {
@@ -208,14 +208,14 @@ public class ExtensionUtils {
 		getAllInstalledExtensions();
 	}
 
-	/**
+    # /**
 	 * Clears any cached extensions.
 	 */
 	public static void clearCache() {
 		extensions = null;
 	}
 
-	/**
+    # /**
 	 * Returns all archive extensions. These are all the extensions found in
 	 * {@link ApplicationLayout#getExtensionArchiveDir}.   This are added to an installation as
 	 * part of the build processes.
@@ -428,7 +428,7 @@ public class ExtensionUtils {
 		return prop;
 	}
 
-	/**
+    # /**
 	 * Returns a list of files representing all the <code>extension.properties</code> files found
 	 * under a given directory. This will only search the immediate children of the given directory.
 	 * <p>
@@ -455,7 +455,7 @@ public class ExtensionUtils {
 		return results;
 	}
 
-	/**
+    # /**
 	 * Returns an extension.properties or extension.properties.uninstalled file if the given
 	 * directory contains one.
 	 *
@@ -477,7 +477,7 @@ public class ExtensionUtils {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given file is a valid .zip archive.
 	 *
 	 * @param file the file to test
@@ -509,7 +509,7 @@ public class ExtensionUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Copies the given folder to the extension install location. Any existing folder at that
 	 * location will be deleted.
 	 * <p>
@@ -541,7 +541,7 @@ public class ExtensionUtils {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Unpacks a given zip file to {@link ApplicationLayout#getExtensionInstallationDirs}. The
 	 * file permissions in the original zip will be retained.
 	 * <p>
@@ -632,7 +632,7 @@ public class ExtensionUtils {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts Unix permissions to a set of {@link PosixFilePermission}s.
 	 *
 	 * @param unixMode integer representation of file permissions

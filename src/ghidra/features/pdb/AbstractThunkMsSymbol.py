@@ -75,7 +75,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 	protected String variantString;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -109,7 +109,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		reader.align4();
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -118,7 +118,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return parentPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -127,7 +127,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return endPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the next pointer
 	 * @return Next pointer.
 	 */
@@ -136,7 +136,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return nextPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the procedure length.  For thunk, we think procedure length is the length field
 	 * @return Length.
 	 */
@@ -145,7 +145,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the debug start offset.  This is dummied-in as the zero offset
 	 * @return Debug start offset.
 	 */
@@ -154,7 +154,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return 0L;
 	}
 
-	/**
+    # /**
 	 * Returns the debug end offset.  This is dummied-in as the length of the method
 	 * @return Debug end offset.
 	 */
@@ -163,7 +163,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the type record number.  We dummied-in NO_TYPE, as there is not type record number
 	 * @return Type record number.
 	 */
@@ -172,7 +172,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return RecordNumber.NO_TYPE;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -181,7 +181,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -190,7 +190,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the length.
 	 * @return Length.
 	 */
@@ -198,7 +198,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Ordinal}.
 	 * @return {@link Ordinal}.
 	 */
@@ -206,7 +206,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return ordinal;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */
@@ -215,7 +215,7 @@ public abstract class AbstractThunkMsSymbol extends AbstractProcedureMsSymbol {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the variant.
 	 * @return Variant.
 	 */

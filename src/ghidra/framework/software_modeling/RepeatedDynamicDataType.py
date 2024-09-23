@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.util.ArrayList;
@@ -25,26 +25,26 @@ import ghidra.util.Conv;
 import ghidra.util.Msg;
 
 # /**
- * Template for a repeated Dynamic Data Type.
- * 
- * Base abstract data type for a Dynamic structure data type that contains
- * some number of repeated data types.  After each data type, including the header
- * there is a terminator value which specifies whether there are any more data structures
- * following.  TerminatorValue can be 1,2,4,or 8 bytes.
- * 
- * The dynamic structure looks like this:
- * 
- *    RepeatDynamicDataType
- *       Header
- *       TerminatorV1
- *       RepDT1
- *       TerminatorV2
- *       RepDT2
- *       ...
- *       RepDTN-1
- *       TerminatorVN  == TerminateValue
- *       
- */
+# * Template for a repeated Dynamic Data Type.
+# * 
+# * Base abstract data type for a Dynamic structure data type that contains
+# * some number of repeated data types.  After each data type, including the header
+# * there is a terminator value which specifies whether there are any more data structures
+# * following.  TerminatorValue can be 1,2,4,or 8 bytes.
+# * 
+# * The dynamic structure looks like this:
+# * 
+# *    RepeatDynamicDataType
+# *       Header
+# *       TerminatorV1
+# *       RepDT1
+# *       TerminatorV2
+# *       RepDT2
+# *       ...
+# *       RepDTN-1
+# *       TerminatorVN  == TerminateValue
+# *       
+# */
 public abstract class RepeatedDynamicDataType extends DynamicDataType {
 
 	protected String description;
@@ -53,7 +53,7 @@ public abstract class RepeatedDynamicDataType extends DynamicDataType {
 	protected long terminatorValue;
 	protected int terminatorSize;
 
-	/**
+    # /**
 	 * Construct Repeat Dynamic Data Type Template.
 	 * 
 	 * @param name            name of this data type
@@ -73,7 +73,7 @@ public abstract class RepeatedDynamicDataType extends DynamicDataType {
 		this.terminatorSize = terminatorSize;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DynamicDataType#getAllComponents(ghidra.program.model.mem.MemBuffer)
 	 */
 	@Override
@@ -124,21 +124,21 @@ public abstract class RepeatedDynamicDataType extends DynamicDataType {
 		return comps;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#getDescription()
 	 */
 	public String getDescription() {
 		return description;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#getValue(ghidra.program.model.mem.MemBuffer, ghidra.docking.settings.Settings, int)
 	 */
 	public Object getValue(MemBuffer buf, Settings settings, int length) {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#getRepresentation(ghidra.program.model.mem.MemBuffer, ghidra.docking.settings.Settings, int)
 	 */
 	public String getRepresentation(MemBuffer buf, Settings settings, int length) {

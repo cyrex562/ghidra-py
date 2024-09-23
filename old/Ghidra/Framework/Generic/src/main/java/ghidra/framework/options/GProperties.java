@@ -17,7 +17,7 @@ package ghidra.framework.options;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.io.*;
+
 import java.lang.reflect.*;
 import java.nio.charset.StandardCharsets;
 import java.text.*;

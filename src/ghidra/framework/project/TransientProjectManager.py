@@ -16,7 +16,7 @@
 package ghidra.framework.protocol.ghidra;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -43,7 +43,7 @@ public class TransientProjectManager {
 	// server forces a disconnect due to non-responsiveness.  We should allow
 	// for an auto-reconnect using the cached callback responses.
 
-	/**
+    # /**
 	 * Map of existing transient project data.  Weak value references
 	 * are used to allow project data to be finalized and disposed
 	 * automatically when all references are dropped.
@@ -52,7 +52,7 @@ public class TransientProjectManager {
 
 	private static TransientProjectManager transientProjectManager = null;
 
-	/**
+    # /**
 	 * Get the <code>TransientProjectManager</code> singleton instance for the JVM
 	 * @return <code>TransientProjectManager</code> singleton instance
 	 */
@@ -63,7 +63,7 @@ public class TransientProjectManager {
 		return transientProjectManager;
 	}
 
-	/**
+    # /**
 	 * Get the number of active transient project data instances
 	 * @return number of active transient project data instances
 	 */
@@ -77,7 +77,7 @@ public class TransientProjectManager {
 					"TransientProjectManager Shutdown Hook"));
 	}
 
-	/**
+    # /**
 	 * Force disposal of all transient projects associated with remote Ghidra URL
 	 * connections. WARNING: This method intended for testing only.
 	 */
@@ -90,7 +90,7 @@ public class TransientProjectManager {
 		repositoryMap.clear();
 	}
 
-	/**
+    # /**
 	 * Get the transient project associated with a specific Ghidra protocol 
 	 * connector.  This method will establish a connection if needed.
 	 * @param protocolConnector Ghidra protocol connector
@@ -149,7 +149,7 @@ public class TransientProjectManager {
 		return projectData;
 	}
 
-	/**
+    # /**
 	 * Remove a transient project data from this manager's instance map
 	 * @param repositoryInfo repository info for tracking transient project data
 	 * @param projectData transient project data

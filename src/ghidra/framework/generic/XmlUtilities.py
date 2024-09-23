@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import java.io.*;
+
 import java.nio.charset.StandardCharsets;
 
 import javax.xml.XMLConstants;
@@ -58,7 +58,7 @@ public class XmlUtilities {
 	public static final String FEATURE_EXTERNAL_PARAMETER_ENTITIES =
 		"http://xml.org/sax/features/external-parameter-entities";
 
-	/**
+    # /**
 	 * Simple {@link ErrorHandler SAX error handler} that re-throws any
 	 * {@link SAXParseException}s as a {@link SAXException}.
 	 *
@@ -80,7 +80,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts any special or reserved characters in the specified XML string
 	 * into the equivalent Unicode encoding.
 	 * 
@@ -126,7 +126,7 @@ public class XmlUtilities {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Converts any escaped character entities into their unescaped character
 	 * equivalents. This method is designed to be compatible with the output of
 	 * {@link #escapeElementEntities(String)}.
@@ -155,7 +155,7 @@ public class XmlUtilities {
 		return unescapedStr;
 	}
 
-	/**
+    # /**
 	 * Converts the specified XML element into a byte array.
 	 * 
 	 * @param root the root element
@@ -176,7 +176,7 @@ public class XmlUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Converts the specified XML element into a String.
 	 * 
 	 * @param root the root element
@@ -187,7 +187,7 @@ public class XmlUtilities {
 		return outputter.outputString(root);
 	}
 
-	/**
+    # /**
 	 * Convert a String into a JDOM {@link Element}.
 	 * <p>
 	 * 
@@ -205,7 +205,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes a JDOM XML {@link Document} to a {@link File}.
 	 * <p>
 	 * 
@@ -220,7 +220,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Writes a JDOM XML {@link Document} to a {@link File}, with a prettier
 	 * format than {@link #writeDocToFile(Document, File)}.
 	 * <p>
@@ -237,7 +237,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Read a File and convert to jdom xml doc.
 	 * <p>
 	 * 
@@ -255,7 +255,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Read a File and convert to jdom xml doc.
 	 * <p>
 	 * 
@@ -274,7 +274,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts the specified byte array into an XML element.
 	 * 
 	 * @param bytes the XML bytes
@@ -293,7 +293,7 @@ public class XmlUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Parses the overlay name from the specified address string. Returns null
 	 * if the address string does appear to represent an overlay.
 	 * 
@@ -308,7 +308,7 @@ public class XmlUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Parse the given string as either a hex number (if it starts with 0x) or a
 	 * decimal number.
 	 * 
@@ -321,7 +321,7 @@ public class XmlUtilities {
 		return (int) parseLong(intStr);
 	}
 
-	/**
+    # /**
 	 * Parses the optional specified string as a decimal number, returning its
 	 * integer value.
 	 * <p>
@@ -337,7 +337,7 @@ public class XmlUtilities {
 		return parseOptionalBoundedInt(intStr, defaultValue, Integer.MIN_VALUE, Integer.MAX_VALUE);
 	}
 
-	/**
+    # /**
 	 * Parses the optional specified string as a decimal number, returning its
 	 * integer value, or defaultValue if the string is null.
 	 * <p>
@@ -363,7 +363,7 @@ public class XmlUtilities {
 		return defaultValue;
 	}
 
-	/**
+    # /**
 	 * Parses the specified string as a decimal number, returning its integer
 	 * value.
 	 * <p>
@@ -388,7 +388,7 @@ public class XmlUtilities {
 		return (int) tmp;
 	}
 
-	/**
+    # /**
 	 * Parses the required attribute as a decimal number, returning its integer
 	 * value.
 	 * <p>
@@ -412,7 +412,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses an optional attribute as a decimal number, returning its integer
 	 * value, or the defaultValue if the attribute is null.
 	 * <p>
@@ -441,7 +441,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Parse the given string as either a hex number (if it starts with 0x) or a
 	 * decimal number.
 	 * 
@@ -468,7 +468,7 @@ public class XmlUtilities {
 		return val;
 	}
 
-	/**
+    # /**
 	 * Parses the specified string as a decimal number, returning its long
 	 * integer value.
 	 * <p>
@@ -497,7 +497,7 @@ public class XmlUtilities {
 		return tmp;
 	}
 
-	/**
+    # /**
 	 * Parses the required attribute as a decimal number, returning its long
 	 * integer value.
 	 * <p>
@@ -525,7 +525,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses the required attribute as a decimal number, returning its long
 	 * integer value.
 	 * <p>
@@ -559,7 +559,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Parses the given string into a boolean value. Acceptable inputs are
 	 * y,n,true,fase. A null input string will return false (useful if optional
 	 * boolean attribute is false by default)
@@ -580,7 +580,7 @@ public class XmlUtilities {
 		return "y".equalsIgnoreCase(boolStr) || "true".equalsIgnoreCase(boolStr);
 	}
 
-	/**
+    # /**
 	 * Parses the optional attribute as a boolean value, returning its value or
 	 * the specified defaultValue if missing.
 	 *
@@ -604,7 +604,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Throws an {@link IOException} with a verbose explanation if the requested
 	 * attribute is not present or is empty.
 	 * <p>
@@ -623,7 +623,7 @@ public class XmlUtilities {
 		return value;
 	}
 
-	/**
+    # /**
 	 * Sets a string attribute on the specified element.
 	 * 
 	 * @param ele JDom element
@@ -636,7 +636,7 @@ public class XmlUtilities {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets an integer attribute on the specified element.
 	 * 
 	 * @param ele JDom element
@@ -647,7 +647,7 @@ public class XmlUtilities {
 		ele.setAttribute(attrName, Integer.toString(attrValue));
 	}
 
-	/**
+    # /**
 	 * Type-safe way of getting a list of {@link Element}s from JDom.
 	 * 
 	 * @param ele the parent element
@@ -658,7 +658,7 @@ public class XmlUtilities {
 		return CollectionUtils.asList(ele.getChildren(childName), Element.class);
 	}
 
-	/**
+    # /**
 	 * Tests a string for characters that would cause a problem if added to an
 	 * xml attribute or element.
 	 * 
@@ -670,7 +670,7 @@ public class XmlUtilities {
 		return !s.codePoints().allMatch(Verifier::isXMLCharacter);
 	}
 
-	/**
+    # /**
 	 * Create a {@link SAXBuilder} that is not susceptible to XXE.
 	 * 
 	 * This configures the builder to ignore external entities.
@@ -692,7 +692,7 @@ public class XmlUtilities {
 		return sax;
 	}
 
-	/**
+    # /**
 	 * Create a {@link SAXParserFactory} that is not susceptible to XXE.
 	 * 
 	 * This configures the factory to ignore external entities.

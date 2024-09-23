@@ -27,7 +27,7 @@ import ghidra.util.Conv;
 
 final class PdbUtil {
 
-	/**
+    # /**
 	 * Returns an address using the relative offset + image base.
 	 * @param program the {@link Program} for which to act
 	 * @param relativeOffset the relative offset
@@ -37,7 +37,7 @@ final class PdbUtil {
 		return reladdr(program, relativeOffset & Conv.INT_MASK);
 	}
 
-	/**
+    # /**
 	 * Returns an address using the relative offset + image base.
 	 * @param program the {@link Program} for which to act
 	 * @param relativeOffset the relative offset
@@ -47,7 +47,7 @@ final class PdbUtil {
 		return program.getImageBase().add(relativeOffset);
 	}
 
-	/**
+    # /**
 	 * Append comment if not already present
 	 * @param program program
 	 * @param address listing address
@@ -69,7 +69,7 @@ final class PdbUtil {
 
 	}
 
-	/**
+    # /**
 	 * Returns true is this symbol represents a function.
 	 * For example, "FunctionName@4" or "MyFunction@22".
 	 * @param program the {@link Program} for which to check
@@ -116,7 +116,7 @@ final class PdbUtil {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns an appropriate string based on the pass iteration.
 	 * For example:
 	 * 1st pass

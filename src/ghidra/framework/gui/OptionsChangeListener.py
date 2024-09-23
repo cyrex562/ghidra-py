@@ -24,7 +24,7 @@ import ghidra.util.bean.opteditor.OptionsVetoException;
  */
 public interface OptionsChangeListener {
 
-	/**
+    # /**
 	 * Notification that an option changed.
 	 * <p>
 	 * Note: to reject an options change, you can throw a 

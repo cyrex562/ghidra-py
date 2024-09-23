@@ -16,7 +16,7 @@
 package pdbquery;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -39,7 +39,7 @@ public class PdbFactory {
 	private static Map<Class<? extends GhidraScript>, PdbInfo> pdbInfoByScriptClass =
 		new HashMap<>();
 
-	/**
+    # /**
 	 * Opens and retains reference to the PDB file specified.  Must call
 	 * {@link #closePdb(GhidraScript, String)} to close the PDB and remove it from the map; can
 	 * alternatively use {@link #closeAllPdbs(GhidraScript)} to close all PDBs in the map.
@@ -77,7 +77,7 @@ public class PdbFactory {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Closes and unloads the PDB file from the map.  Not removed from map if IOException.
 	 * @param script script for which we are working
 	 * @param filename filename of the PDB file
@@ -92,7 +92,7 @@ public class PdbFactory {
 		return success;
 	}
 
-	/**
+    # /**
 	 * Closes and unloads the PDB file from the map.  Not removed from map if IOException.
 	 * @param script script for which we are working
 	 * @return true if all PDBs were successfully closed and unloaded from the map
@@ -131,7 +131,7 @@ public class PdbFactory {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns list of PDB information in alphabetical order by filename.
 	 * @return the list
 	 */
@@ -143,7 +143,7 @@ public class PdbFactory {
 		return orderedPdbInfo;
 	}
 
-	/**
+    # /**
 	 * Sets the cache PdbInfo value for the class argument
 	 * @param clazz the class for which to cache the value
 	 * @param pdbInfo the PdbInfo value to cache.
@@ -153,7 +153,7 @@ public class PdbFactory {
 		pdbInfoByScriptClass.put(clazz, pdbInfo);
 	}
 
-	/**
+    # /**
 	 * Returns the PdbInfo cached for the class argument.
 	 * @param clazz the class of the script used to look up the cached value for return
 	 * @return the PdbInfo
@@ -162,7 +162,7 @@ public class PdbFactory {
 		return pdbInfoByScriptClass.get(clazz);
 	}
 
-	/**
+    # /**
 	 * Method for outputting a message to the console (if script is not null); otherwise outputs
 	 * the message to Msg.info().
 	 * @param script the script
@@ -177,7 +177,7 @@ public class PdbFactory {
 		}
 	}
 
-	/**
+    # /**
 	 * Information about a PDB used for specifying and uniquely identifying a PDB along with the
 	 * parsed PDB itself and the PDB parsing metrics generated during the parse.
 	 */
@@ -187,7 +187,7 @@ public class PdbFactory {
 		private AbstractPdb pdb;
 		private PdbReaderMetrics metrics;
 
-		/**
+	    # /**
 		 * Constructor.
 		 * @param filename PDB filename in absolute pathname format
 		 * @param identifiers identifiers used to help identify versions of the PDB
@@ -202,7 +202,7 @@ public class PdbFactory {
 			this.metrics = metrics;
 		}
 
-		/**
+	    # /**
 		 * Returns the PDB filename in absolute path format
 		 * @return the filename
 		 */
@@ -210,7 +210,7 @@ public class PdbFactory {
 			return filename;
 		}
 
-		/**
+	    # /**
 		 * Returns the parsed PDB
 		 * @return the parsed PDB
 		 */
@@ -218,7 +218,7 @@ public class PdbFactory {
 			return pdb;
 		}
 
-		/**
+	    # /**
 		 * Returns PDB identifiers that help specify its version
 		 * @return the identifiers
 		 */
@@ -226,7 +226,7 @@ public class PdbFactory {
 			return identifiers;
 		}
 
-		/**
+	    # /**
 		 * Returns the metrics generated during PDB parsing
 		 * @return the metrics
 		 */

@@ -19,7 +19,7 @@ package generic.util;
 import ghidra.util.task.CancelOnlyWrappingTaskMonitor;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.*;
+
 import java.util.Enumeration;
 import java.util.zip.*;
 

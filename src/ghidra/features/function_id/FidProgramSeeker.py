@@ -35,7 +35,7 @@ import ghidra.util.task.TaskMonitor;
  * It holds program specific context and caches
  */
 public class FidProgramSeeker {
-	/**
+    # /**
 	 * Comparator to sort hash matches by decreasing significance.
 	 */
 	private static final Comparator<HashMatch> MOST_SIGNIFICANT = new Comparator<HashMatch>() {
@@ -56,7 +56,7 @@ public class FidProgramSeeker {
 	private final Program program;
 	private final FIDFixedSizeMRUCachingFactory cacheFactory;
 
-	/**
+    # /**
 	 * Creates a seek object.
 	 * @param controller the FID database service
 	 * @param program the program for which to resolve names
@@ -106,7 +106,7 @@ public class FidProgramSeeker {
 		return funcList;
 	}
 
-	/**
+    # /**
 	 * Add the children of the function to the hash family.
 	 * @param family the family
 	 * @param function the function
@@ -181,7 +181,7 @@ public class FidProgramSeeker {
 		return funcList;
 	}
 
-	/**
+    # /**
 	 * Add the parents of the function to the hash family.
 	 * @param family the family
 	 * @param function the function
@@ -201,7 +201,7 @@ public class FidProgramSeeker {
 		}
 	}
 
-	/**
+    # /**
 	 * Given HashFamily for a function, lookup possible matches and mint FidSearchResult objects
 	 * @param function the function
 	 * @param family the hash family
@@ -242,7 +242,7 @@ public class FidProgramSeeker {
 		return searchResult;
 	}
 
-	/**
+    # /**
 	 * We couldn't disambiguate, but it's OK to return multiple results to the analyzer
 	 * (which may decide to throw them all out, or mark all of them, or something in between).
 	 * @param function the function
@@ -265,7 +265,7 @@ public class FidProgramSeeker {
 		return new FidSearchResult(function, family.getHash(), fidMatches);
 	}
 
-	/**
+    # /**
 	 * Simply makes a singleton match, since only one function record matched (either outright at
 	 * the beginning, or through elimination of less likely possibilities).
 	 * @param function the function
@@ -281,7 +281,7 @@ public class FidProgramSeeker {
 		return new FidSearchResult(function, family.getHash(), Collections.singletonList(match));
 	}
 
-	/**
+    # /**
 	 * Generate the hash family around a provided function (used for searching).
 	 * @param function the function
 	 * @param monitor task monitor to let users cancel
@@ -302,7 +302,7 @@ public class FidProgramSeeker {
 		return family;
 	}
 
-	/**
+    # /**
 	 * Generates a hash mash, and adds its score to the "global" statistics.
 	 * @param functionRecord the potential match
 	 * @param family the hash family of the function
@@ -371,7 +371,7 @@ public class FidProgramSeeker {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Given a hash family, find raw matches in the FID service.
 	 * @param family the hash family
 	 * @param monitor a task monitor
@@ -398,7 +398,7 @@ public class FidProgramSeeker {
 		return result;
 	}
 
-	/**
+    # /**
 	 * Search for matches to a single function. Only returns null, if the function can't be hashed.
 	 * @param function is the function to search for
 	 * @param monitor is a monitor to check for cancels
@@ -419,7 +419,7 @@ public class FidProgramSeeker {
 		return fidResult;
 	}
 
-	/**
+    # /**
 	 * Searches the database for function names.
 	 * @param monitor a task monitor
 	 * @return the results of all the searching

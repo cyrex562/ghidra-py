@@ -42,7 +42,7 @@ public class InvokeMethods {
 		throw new AssertionError();
 	}
 
-	/**
+    # /**
 	 * Emits the pcode for an invoke instruction.
 	 * @param pCode is the pcode accumulator
 	 * @param offset - the index of the constant pool element containing a symbolic reference 
@@ -83,7 +83,7 @@ public class InvokeMethods {
 		}
 	}
 
-	/**
+    # /**
 	 * Emits the pcode for an invoke instruction.
 	 * @param pCode is the pcode accumulator
 	 * @param offset - the index of the constant pool element containing a symbolic reference 
@@ -118,7 +118,7 @@ public class InvokeMethods {
 		}
 	}
 
-	/**
+    # /**
 	 * Emits pcode to move the parameters from the stack to the space parameterSpace
 	 * Note: if there is an implicit this parameter, then this method will assign it to a varnode
 	 * named InvokeMethods.THIS
@@ -163,7 +163,7 @@ public class InvokeMethods {
 		}
 	}
 
-	/**
+    # /**
 	 * Emits pcode to assign the result of a cpool op to the call_target register for an invocation. 
 	 * @param pCode - the pcode buffer
 	 * @param offset - index of the method reference in the constant pool

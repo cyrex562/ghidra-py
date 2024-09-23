@@ -15,7 +15,7 @@
  */
 package ghidra.framework.remote;
 
-import java.io.*;
+
 
 import javax.security.auth.callback.Callback;
 
@@ -45,7 +45,7 @@ public class SSHSignatureCallback implements Callback, Serializable {
 	private final byte[] serverSignature;
 	private byte[] signature;
 
-	/**
+    # /**
 	 * Construct callback with a random token to be signed by the client. 
 	 * @param token random bytes to be signed
 	 * @param serverSignature server signature of token (using server PKI)
@@ -55,21 +55,21 @@ public class SSHSignatureCallback implements Callback, Serializable {
 		this.serverSignature = serverSignature;
 	}
 
-	/**
+    # /**
 	 * @return token to be signed using user certificate.
 	 */
 	public byte[] getToken() {
 		return (token == null ? null : (byte[]) token.clone());
 	}
 
-	/**
+    # /**
 	 * @return signed token bytes set by callback handler.
 	 */
 	public byte[] getSignature() {
 		return (signature == null ? null : (byte[]) signature.clone());
 	}
 
-	/**
+    # /**
 	 * Get the server signature of token (using server PKI)
 	 * @return the server's signature of the token bytes.
 	 */
@@ -77,14 +77,14 @@ public class SSHSignatureCallback implements Callback, Serializable {
 		return serverSignature;
 	}
 
-	/**
+    # /**
 	 * @return true if callback has been signed
 	 */
 	public boolean isSigned() {
 		return signature != null;
 	}
 
-	/**
+    # /**
 	 * Write UInt32 to an SSH-encoded buffer.
 	 * (modeled after org.bouncycastle.crypto.util.SSHBuilder.u32(int))
 	 * @param value integer value
@@ -99,7 +99,7 @@ public class SSHSignatureCallback implements Callback, Serializable {
 		out.writeBytes(tmp);
 	}
 
-	/**
+    # /**
 	 * Write byte array to an SSH-encoded buffer.
 	 * (modeled after org.bouncycastle.crypto.util.SSHBuilder.writeBlock(byte[])
 	 * @param value byte array
@@ -110,7 +110,7 @@ public class SSHSignatureCallback implements Callback, Serializable {
 		out.writeBytes(value);
 	}
 
-	/**
+    # /**
 	 * Write string to an SSH-encoded buffer.
 	 * (modeled after org.bouncycastle.crypto.util.SSHBuilder.writeString(String)
 	 * @param str string data
@@ -120,7 +120,7 @@ public class SSHSignatureCallback implements Callback, Serializable {
 		sshBuilderWriteBlock(Strings.toByteArray(str), out);
 	}
 
-	/**
+    # /**
 	 * Sign this challenge with the specified SSH private key.
 	 * @param privateKeyParameters SSH private key parameters 
 	 *        ({@link RSAKeyParameters} or {@link RSAKeyParameters})

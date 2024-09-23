@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.compositeeditor;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.emu.linux;
 
-import java.io.IOException;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -44,7 +44,7 @@ public class EmuLinuxAmd64SyscallUseropLibrary<T> extends AbstractEmuLinuxSyscal
 
 	protected FileDataTypeManager clib64;
 
-	/**
+    # /**
 	 * Construct the system call library for Linux-amd64
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -58,7 +58,7 @@ public class EmuLinuxAmd64SyscallUseropLibrary<T> extends AbstractEmuLinuxSyscal
 		regRAX = machine.getLanguage().getRegister("RAX");
 	}
 
-	/**
+    # /**
 	 * Construct the system call library for Linux-amd64
 	 * 
 	 * @param machine the machine emulating the hardware

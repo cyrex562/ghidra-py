@@ -22,7 +22,7 @@ import ghidra.program.model.address.Address;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 import java.util.Set;
 
 import db.DBHandle;

@@ -18,7 +18,7 @@ package generic.test;
 import static org.junit.Assert.*;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

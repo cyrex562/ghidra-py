@@ -30,7 +30,7 @@ public interface VTControllerListener {
 
 	public void sessionChanged(VTSession session);
 
-	/**
+    # /**
 	 * Indicates that the version tracking match that is selected has changed.
 	 * @param matchInfo the matchInfo for the match that is now selected or null
 	 * if no item is selected or multiple matches are selected.
@@ -39,7 +39,7 @@ public interface VTControllerListener {
 
 	public void sessionUpdated(DomainObjectChangedEvent ev);
 
-	/**
+    # /**
 	 * Indicates that the version tracking mark-up item that is selected has changed.
 	 * @param markupItem the mark-up item that is now selected or null
 	 * if no item is selected or multiple mark-up items are selected.

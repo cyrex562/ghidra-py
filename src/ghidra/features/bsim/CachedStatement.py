@@ -32,7 +32,7 @@ public class CachedStatement<S extends Statement> {
 	private S statement;
 	private Thread ownerThread;
 
-	/**
+    # /**
 	 * Get the associated cached {@link Statement} or prepare one via the specified 
 	 * {@code statementSupplier} if not yet established.  Tf the supplier is used
 	 * the owner thread for the statement will be established based on the 
@@ -56,7 +56,7 @@ public class CachedStatement<S extends Statement> {
 		return s;
 	}
 
-	/**
+    # /**
 	 * Set the associated {@link Statement} instance.  This method may be used in place of
 	 * {@link #prepareIfNeeded(StatementSupplier)} although it is not preferred since it
 	 * can result in replacement of one previously established.  The {@link #getStatement()}
@@ -83,7 +83,7 @@ public class CachedStatement<S extends Statement> {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the current cached {@link Statement}.
 	 * 
 	 * @return the current cached {@link Statement} or null if not yet established.
@@ -101,7 +101,7 @@ public class CachedStatement<S extends Statement> {
 		return statement;
 	}
 
-	/**
+    # /**
 	 * Close the currently cached {@link Statement}.  This method may be invoked
 	 * from any thread but should be properly coordinated with its use in the statement
 	 * owner thread.

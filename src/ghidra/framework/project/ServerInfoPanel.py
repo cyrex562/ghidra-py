@@ -69,28 +69,28 @@ public class ServerInfoPanel extends AbstractWizardJPanel {
 		serverInfoComponent.setStatusListener(panelManager.getWizardManager());
 	}
 
-	/**
+    # /**
 	 * Return whether the fields on this panel have valid information.
 	 */
 	public boolean isValidInformation() {
 		return serverInfoComponent.isValidInformation();
 	}
 
-	/**
+    # /**
 	 * Get the server name. 
 	 */
 	String getServerName() {
 		return serverInfoComponent.getServerName();
 	}
 
-	/**
+    # /**
 	 * Get the port number.
 	 */
 	int getPortNumber() {
 		return serverInfoComponent.getPortNumber();
 	}
 
-	/**
+    # /**
 	 * Set the field values using the given server info.
 	 */
 	public void setServerInfo(ServerInfo info) {

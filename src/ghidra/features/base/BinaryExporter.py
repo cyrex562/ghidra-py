@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.exporter;
 
-import java.io.*;
+
 import java.util.List;
 
 import ghidra.app.util.DomainObjectService;

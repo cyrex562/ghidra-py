@@ -18,7 +18,7 @@ package ghidra.file.formats.bplist;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 import java.util.Date;
 
 public class NSDate extends NSObject {

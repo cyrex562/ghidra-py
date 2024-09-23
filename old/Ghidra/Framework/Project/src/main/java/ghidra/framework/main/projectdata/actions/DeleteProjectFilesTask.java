@@ -16,7 +16,7 @@
 package ghidra.framework.main.projectdata.actions;
 
 import java.awt.Component;
-import java.io.IOException;
+
 import java.util.Objects;
 import java.util.Set;
 

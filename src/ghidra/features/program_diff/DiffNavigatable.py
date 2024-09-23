@@ -39,7 +39,7 @@ class DiffNavigatable implements Navigatable {
 	private WeakSet<NavigatableRemovalListener> navigationListeners =
 		WeakDataStructureFactory.createCopyOnWriteWeakSet();
 
-	/**
+    # /**
 	 * The navigatable for the Diff. The CodeViewerService provides Diff with a listing,
 	 * so where appropriate this navigatable will defer to the CodeViewerService navigatable.
 	 * @param diffPlugin the plugin for the Diff which can be used to obtain needed info.

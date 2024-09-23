@@ -20,7 +20,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.timer.GTimer;
 import ghidra.util.timer.GTimerMonitor;
 
-import java.io.*;
+
 import java.util.Date;
 import java.util.Random;
 

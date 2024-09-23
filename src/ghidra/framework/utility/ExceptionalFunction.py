@@ -26,7 +26,7 @@ package utility.function;
 @FunctionalInterface
 public interface ExceptionalFunction<I, R, E extends Throwable> {
 
-	/**
+    # /**
 	 * The method that will be called
 	 * 
 	 * @param i the input

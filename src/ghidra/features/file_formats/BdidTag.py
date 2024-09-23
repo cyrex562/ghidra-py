@@ -18,7 +18,7 @@ package ghidra.file.formats.ios.img3.tag;
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.file.formats.ios.img3.AbstractImg3Tag;
 
-import java.io.IOException;
+
 
 public class BdidTag extends AbstractImg3Tag {
 

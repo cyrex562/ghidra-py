@@ -17,7 +17,7 @@ package ghidra.file.crypto;
 
 import generic.jar.ResourceFile;
 
-import java.io.*;
+
 
 /**
  * Reads a file and creates a template

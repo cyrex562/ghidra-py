@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +37,7 @@ public class CramFsSuper implements StructConverter {
 	private CramFsInode root;
 	private List<CramFsInode> childList = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constuctor for the cramfs super block.
 	 * @param reader binary reader for the super block.
 	 * @throws IOException if there is an error when reading the super block.
@@ -57,7 +57,7 @@ public class CramFsSuper implements StructConverter {
 		}
 	}
 
-	/**
+    # /**
 	 * Checks to see if the CRAMFS_FLAG_EXT_BLOCK_POINTERS is set or not
 	 * @return boolean value for if the flag is set or not
 	 */
@@ -66,7 +66,7 @@ public class CramFsSuper implements StructConverter {
 			CramFsConstants.CRAMFS_FLAG_EXT_BLOCK_POINTERS) == CramFsConstants.CRAMFS_FLAG_EXT_BLOCK_POINTERS;
 	}
 
-	/**
+    # /**
 	 * Returns the magic number.
 	 * @return the magic number
 	 */
@@ -74,7 +74,7 @@ public class CramFsSuper implements StructConverter {
 		return magic;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the super block.
 	 * @return the size of the super block
 	 */
@@ -82,7 +82,7 @@ public class CramFsSuper implements StructConverter {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Returns the super block flags.
 	 * @return the super block flags.
 	 */
@@ -90,7 +90,7 @@ public class CramFsSuper implements StructConverter {
 		return flags;
 	}
 
-	/**
+    # /**
 	 * Returns the future.
 	 * @return the future.
 	 */
@@ -98,7 +98,7 @@ public class CramFsSuper implements StructConverter {
 		return future;
 	}
 
-	/**
+    # /**
 	 * Returns if the super block is little endian or not.
 	 * @return true if the super block is little endian, or false if not.
 	 */
@@ -106,7 +106,7 @@ public class CramFsSuper implements StructConverter {
 		return isLE;
 	}
 
-	/**
+    # /**
 	 * Returns the super block signature.
 	 * @return the super block signature.
 	 */
@@ -114,7 +114,7 @@ public class CramFsSuper implements StructConverter {
 		return signature;
 	}
 
-	/**
+    # /**
 	 * Returns the file system identifier.
 	 * @return the file system identifier.
 	 */
@@ -122,7 +122,7 @@ public class CramFsSuper implements StructConverter {
 		return fsid;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the super block.
 	 * @return the name of the super block.
 	 */
@@ -130,7 +130,7 @@ public class CramFsSuper implements StructConverter {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the root node of the super block.
 	 * @return the root node of the super block.
 	 */
@@ -138,7 +138,7 @@ public class CramFsSuper implements StructConverter {
 		return root;
 	}
 
-	/**
+    # /**
 	 * Returns the childList of the super block.
 	 * @return the childList of the super block.
 	 */

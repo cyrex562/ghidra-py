@@ -19,7 +19,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.StringUtilities;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class NSData extends NSObject {
 

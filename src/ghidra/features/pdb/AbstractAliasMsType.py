@@ -28,7 +28,7 @@ public abstract class AbstractAliasMsType extends AbstractMsType {
 	protected RecordNumber underlyingRecordNumber;
 	protected String name;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

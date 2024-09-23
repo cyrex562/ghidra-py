@@ -35,7 +35,7 @@ public class BSimFilterSet {
 		filterEntries.addAll(set.filterEntries);
 	}
 
-	/**
+    # /**
 	 * Adds a filter entry to this set of filters
 	 * @param filterType the BSimFilterType for the added filter
 	 * @param values the list of values for the given filter type
@@ -44,7 +44,7 @@ public class BSimFilterSet {
 		filterEntries.add(new FilterEntry(filterType, values));
 	}
 
-	/**
+    # /**
 	 * Returns the number of filter entries in this filter set.
 	 * @return the number of filter entries in this filter set
 	 */
@@ -52,7 +52,7 @@ public class BSimFilterSet {
 		return filterEntries.size();
 	}
 
-	/**
+    # /**
 	 * Returns the corresponding BSimFilter for this FilterSet.
 	 * @return the corresponding BSimFilter for this FilterSet
 	 */
@@ -69,7 +69,7 @@ public class BSimFilterSet {
 		return bsimFilter;
 	}
 
-	/**
+    # /**
 	 * Returns a copy of this FilterSet.
 	 * @return a copy of this FilterSet
 	 */
@@ -77,7 +77,7 @@ public class BSimFilterSet {
 		return new BSimFilterSet(this);
 	}
 
-	/**
+    # /**
 	 * Returns the filter entries contains in this FilterSet.
 	 * @return the filter entries contains in this FilterSet
 	 */
@@ -85,7 +85,7 @@ public class BSimFilterSet {
 		return filterEntries;
 	}
 
-	/**
+    # /**
 	 * Removes all filter entries for the given FilterType.
 	 * @param filterType the type of filters to be removed from this set
 	 */

@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
-import java.io.*;
+
 import java.util.*;
 
 import org.apache.logging.log4j.LogManager;
@@ -43,7 +43,7 @@ public class OldLanguageFactory {
 	private static OldLanguageFactory oldLanguageFactory;
 	private int badFileCount = 0;
 
-	/**
+    # /**
 	 * Returns the single instance of the OldLanguageFactory.
 	 */
 	public static OldLanguageFactory getOldLanguageFactory() {
@@ -57,7 +57,7 @@ public class OldLanguageFactory {
 		initLanguageMap();
 	}
 
-	/**
+    # /**
 	 * Return old language if an old language specification file exists for the specified language and version.
 	 * @param languageID
 	 * @param majorVersion language major version, or -1 for latest version
@@ -77,7 +77,7 @@ public class OldLanguageFactory {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Return language description for the latest version of an old language
 	 * @param languageID
 	 * @return old language description or null if specification not found.
@@ -90,7 +90,7 @@ public class OldLanguageFactory {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Return the Language Descriptions for the latest version of all old languages.
 	 */
 	public LanguageDescription[] getLatestOldLanaguageDescriptions() {
@@ -102,7 +102,7 @@ public class OldLanguageFactory {
 		return descriptions;
 	}
 
-	/**
+    # /**
 	 * Returns number of files which failed to parse properly.
 	 * This only reflects minimal parsing of old language files
 	 * which will prevent them from being added to old language map.
@@ -112,7 +112,7 @@ public class OldLanguageFactory {
 		return badFileCount;
 	}
 
-	/**
+    # /**
 	 * Validate all old language definitions contained within the old language map.  
 	 * This is intended to be used by a unit test.
 	 * @return number of validation errors
@@ -201,7 +201,7 @@ public class OldLanguageFactory {
 	// Old Language File Generation Code
 	//
 
-	/**
+    # /**
 	 * Create old-language file for the specified language.
 	 * @param lang language
 	 * @param file output file

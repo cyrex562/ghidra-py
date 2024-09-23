@@ -17,7 +17,7 @@ package ghidra.file.image;
 
 import java.awt.image.BufferedImage;
 import java.awt.image.Raster;
-import java.io.*;
+
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

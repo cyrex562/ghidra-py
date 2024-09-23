@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.dmg;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.SynchronousQueue;
@@ -179,7 +179,7 @@ class DmgServerProcessManager implements Closeable {
 		}
 	}
 
-	/**
+    # /**
 	 * Sends a command to the DMG server process.
 	 * <p>
 	 * ExpectedResults can be positive (ie. N result lines will be read from the

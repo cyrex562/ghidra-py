@@ -27,13 +27,13 @@ public class VariableHeightPairLayout implements LayoutManager {
 	private int hgap;
 	private int preferredWidth2;
 	
-	/**
+    # /**
 	 * Constructor for PairLayout.
 	 */
 	public VariableHeightPairLayout() {
 		this(0,0,MIN_COMP_2);
 	}
-	/**
+    # /**
 	 * Constructs a new PairLayout.
 	 * @param vgap the gap (in pixels) between rows.
 	 * @param hgap the gap (in pixels) between the two columns.
@@ -42,7 +42,7 @@ public class VariableHeightPairLayout implements LayoutManager {
 		this(vgap, hgap, MIN_COMP_2);
 	}
 	
-	/**
+    # /**
 	 * Constructs a new PairLayout.
 	 * @param vgap the gap (in pixels) between rows.
 	 * @param hgap the gap (in pixels) between the two columns.
@@ -56,17 +56,17 @@ public class VariableHeightPairLayout implements LayoutManager {
 	
 
 
-	/**
+    # /**
 	 * @see LayoutManager#addLayoutComponent(String, Component)
 	 */
 	public void addLayoutComponent(String name, Component comp) {}
 
-	/**
+    # /**
 	 * @see LayoutManager#removeLayoutComponent(Component)
 	 */
 	public void removeLayoutComponent(Component comp) {}
 
-	/**
+    # /**
 	 * @see LayoutManager#preferredLayoutSize(Container)
 	 */
 	public Dimension preferredLayoutSize(Container parent) {
@@ -90,14 +90,14 @@ public class VariableHeightPairLayout implements LayoutManager {
 		return d;
 	} 
 
-	/**
+    # /**
 	 * @see LayoutManager#minimumLayoutSize(Container)
 	 */
 	public Dimension minimumLayoutSize(Container parent) {
 		return preferredLayoutSize(parent);
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#layoutContainer(Container)
 	 */
 	public void layoutContainer(Container parent) {

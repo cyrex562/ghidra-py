@@ -26,7 +26,7 @@ import ghidra.program.model.data.DataType;
 public class EnumerateTypeApplier extends MsDataTypeComponentApplier {
 
 	// Intended for: AbstractEnumerateMsType
-	/**
+    # /**
 	 * Constructor for enumerate type applier, for transforming a enumerate into a Ghidra DataType
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */

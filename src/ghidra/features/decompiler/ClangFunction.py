@@ -33,7 +33,7 @@ public class ClangFunction extends ClangTokenGroup {
 		return this;
 	}
 
-	/**
+    # /**
 	 * @return the HighFunction object represented by this source code
 	 */
 	public HighFunction getHighFunction() {

@@ -17,7 +17,7 @@
 package org.elasticsearch.plugins;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 
 import org.elasticsearch.index.IndexModule;
 

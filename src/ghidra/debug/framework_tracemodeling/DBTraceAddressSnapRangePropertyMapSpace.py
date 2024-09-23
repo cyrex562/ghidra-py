@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.map;
 
-import java.io.IOException;
+
 import java.util.Collection;
 import java.util.Map.Entry;
 import java.util.concurrent.locks.ReadWriteLock;

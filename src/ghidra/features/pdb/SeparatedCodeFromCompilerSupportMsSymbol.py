@@ -38,7 +38,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 	private int section;
 	private int sectionParent;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -79,7 +79,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 		return "SEPCODE";
 	}
 
-	/**
+    # /**
 	 * Returns the parent pointer.
 	 * @return Parent pointer.
 	 */
@@ -87,7 +87,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 		return parentPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the end pointer.
 	 * @return End pointer.
 	 */
@@ -95,7 +95,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 		return endPointer;
 	}
 
-	/**
+    # /**
 	 * Returns the block length.
 	 * @return Block length.
 	 */
@@ -103,7 +103,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 		return blockLength;
 	}
 
-	/**
+    # /**
 	 * Returns the indication of if is lexical scope.
 	 * @return {@code true} if is lexical scope.
 	 */
@@ -111,7 +111,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 		return isLexicalScope;
 	}
 
-	/**
+    # /**
 	 * Returns the indication of if returns to parent.
 	 * @return {@code true} if returns to parent.
 	 */
@@ -124,7 +124,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the parent offset.
 	 * @return Parent offset.
 	 */
@@ -137,7 +137,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 		return section;
 	}
 
-	/**
+    # /**
 	 * Returns the parent segment.
 	 * @return Parent segment.
 	 */
@@ -145,7 +145,7 @@ public class SeparatedCodeFromCompilerSupportMsSymbol extends AbstractMsSymbol
 		return sectionParent;
 	}
 
-	/**
+    # /**
 	 * Internal method that breaks out the flag values from the aggregate integral type.
 	 * @param flagsIn {@code long} containing unsigned int value.
 	 */

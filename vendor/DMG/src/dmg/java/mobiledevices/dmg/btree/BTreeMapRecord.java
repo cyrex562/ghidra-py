@@ -1,17 +1,17 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.btree;
 
-import java.io.IOException;
+
 
 import mobiledevices.dmg.ghidra.GBinaryReader;
 
 /**
- * Represents a Map Record.
- * 
- * @see <a href="https://developer.apple.com/library/archive/technotes/tn/tn1150.html">Map Record</a> 
- */
+# * Represents a Map Record.
+# * 
+# * @see <a href="https://developer.apple.com/library/archive/technotes/tn/tn1150.html">Map Record</a> 
+# */
 public class BTreeMapRecord /*implements StructConverter*/ {
 
 	private byte[] bitmap;
@@ -21,7 +21,7 @@ public class BTreeMapRecord /*implements StructConverter*/ {
 		this.bitmap = reader.readNextByteArray(headerRecord.getNodeSize() - 256);
 	}
 
-	/**
+    # /**
 	 * Returns the map record node allocation bitmap.
 	 * @return the map record node allocation bitmap
 	 */
@@ -29,7 +29,7 @@ public class BTreeMapRecord /*implements StructConverter*/ {
 		return bitmap;
 	}
 
-	/**
+    # /**
 	 * Returns  true if the specified node index is used.
 	 * Returns false if the specified node index is free.
 	 * @param nodeIndex the node index

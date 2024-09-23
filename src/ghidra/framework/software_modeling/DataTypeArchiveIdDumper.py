@@ -15,7 +15,7 @@
  */
 package ghidra.program.model.data;
 
-import java.io.*;
+
 import java.util.Iterator;
 
 import ghidra.GhidraApplicationLayout;

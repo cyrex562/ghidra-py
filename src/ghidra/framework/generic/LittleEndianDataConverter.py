@@ -29,7 +29,7 @@ public class LittleEndianDataConverter implements DataConverter {
 
 	private static final long serialVersionUID = 1L;
 
-	/**
+    # /**
 	 * Don't use this constructor to create new instances of this class.  Use the static {@link #INSTANCE} instead
 	 * or {@link DataConverter#getInstance(boolean)}
 	 */

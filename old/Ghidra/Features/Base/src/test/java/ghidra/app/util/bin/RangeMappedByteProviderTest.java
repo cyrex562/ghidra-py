@@ -17,7 +17,7 @@ package ghidra.app.util.bin;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.util.Arrays;
 
 import org.junit.Test;

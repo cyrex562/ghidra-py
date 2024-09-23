@@ -127,7 +127,7 @@ class DiffApplySettingsOptionManager {
 	private HelpLocation help;
 	private String HELP_TOPIC = "Diff";
 
-	/**
+    # /**
 	 * Creates a new option manager for Diff apply settings.
 	 * @param plugin the plugin that owns this options manager.
 	 */
@@ -136,7 +136,7 @@ class DiffApplySettingsOptionManager {
 		init();
 	}
 
-	/**
+    # /**
 	 * Initializes class variables for this option manager and gets the default options.
 	 */
 	private void init() {
@@ -184,7 +184,7 @@ class DiffApplySettingsOptionManager {
 		getDefaultApplyFilter();
 	}
 
-	/**
+    # /**
 	 * Gets the merge filter for the default apply settings.
 	 * @return merge filter indicating default apply settings.
 	 */
@@ -279,7 +279,7 @@ class DiffApplySettingsOptionManager {
 			" as it is in program 2, if possible.";
 	}
 
-	/**
+    # /**
 	 * Saves the indicated merge filter as the default apply settings.
 	 * @param defaultApplyFilter merge filter indicating default apply settings.
 	 */
@@ -352,7 +352,7 @@ class DiffApplySettingsOptionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * @param applySetting
 	 * @return
 	 */
@@ -391,7 +391,7 @@ class DiffApplySettingsOptionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param applySetting
 	 * @return
@@ -431,7 +431,7 @@ class DiffApplySettingsOptionManager {
 		}
 	}
 
-//	/**
+//    # /**
 //	 * Converts the current value of the indicated StringEnum to a ProgramMergeFilter type's individual filter setting.
 //	 * @param option The StringEnum with a value to be checked.
 //	 * @return the individual filter for the apply setting associated with the StringEnum.
@@ -440,7 +440,7 @@ class DiffApplySettingsOptionManager {
 //		return convertIndexToFilter(option.getSelectedValueIndex());
 //	}
 
-	/**
+    # /**
 	 * Converts the "combined" option for symbols into just the MERGE_CHOICE which is used
 	 * to decide if the symbol should be ignored, replaced, or merged.
 	 * @param the SYMBOL_MERGE_CHOICE
@@ -459,7 +459,7 @@ class DiffApplySettingsOptionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Converts the "combined" option for symbols into just the REPLACE_CHOICE which is used
 	 * to decide if the "primary" attribute should be used.
 	 * @param the SYMBOL_MERGE_CHOICE
@@ -478,7 +478,7 @@ class DiffApplySettingsOptionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the standard index number of a StringEnum for the "Symbols" option for the indicated 
 	 * filter values of the symbols apply filter and primary symbol filter.
 	 * @param symbolFilter the ProgramMergeFilter.SYMBOLS filter.
@@ -500,7 +500,7 @@ class DiffApplySettingsOptionManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a standard StringEnum for handling an option of the indicated type that allows Ignore and Replace.
 	 * The current selected item will be based on the filter's value.
 	 * @param defaultApplyFilter the ProgramMergeFilter value to use to select an item initially.
@@ -512,7 +512,7 @@ class DiffApplySettingsOptionManager {
 		return REPLACE_CHOICE.values()[filter];
 	}
 
-	/**
+    # /**
 	 * Creates a standard StringEnum for handling an option of the indicated type that allows Ignore, Replace and Merge.
 	 * The current selected item will be based on the filter's value.
 	 * @param defaultApplyFilter the ProgramMergeFilter value to use to select an item initially.
@@ -524,7 +524,7 @@ class DiffApplySettingsOptionManager {
 		return MERGE_CHOICE.values()[filter];
 	}
 
-	/**
+    # /**
 	 * Creates a standard StringEnum for the Symbols option.
 	 * The current selected item will be based on the filter's value.
 	 * @param defaultApplyFilter the ProgramMergeFilter value to use to select an item initially.

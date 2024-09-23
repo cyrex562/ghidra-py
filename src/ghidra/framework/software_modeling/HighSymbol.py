@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.Address;
 import ghidra.program.model.data.DataType;
@@ -30,10 +30,10 @@ import ghidra.program.model.symbol.Symbol;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * A symbol within the decompiler's model of a particular function.  The symbol has a name and a data-type
- * along with other properties. The symbol is mapped to one or more storage locations by attaching a
- * SymbolEntry for each mapping.
- */
+# * A symbol within the decompiler's model of a particular function.  The symbol has a name and a data-type
+# * along with other properties. The symbol is mapped to one or more storage locations by attaching a
+# * SymbolEntry for each mapping.
+# */
 public class HighSymbol {
 
 	public static final long ID_BASE = 0x4000000000000000L;	// Put keys in the dynamic symbol portion of the key space
@@ -52,7 +52,7 @@ public class HighSymbol {
 	private HighVariable highVariable;
 	protected PcodeDataTypeManager dtmanage;	// Datatype manager for XML generation
 
-	/**
+    # /**
 	 * Constructor for use with restoreXML
 	 * @param func is the HighFunction using the symbol
 	 */
@@ -63,7 +63,7 @@ public class HighSymbol {
 		isHidden = false;
 	}
 
-	/**
+    # /**
 	 * Construct a base symbol, given a name and data-type.  Mappings must be attached separately.
 	 * @param uniqueId is the id to associate with the new symbol
 	 * @param nm is the given name
@@ -84,7 +84,7 @@ public class HighSymbol {
 		categoryIndex = -1;
 	}
 
-	/**
+    # /**
 	 * Construct a symbol that is not attached to a function model. The symbol is given
 	 * a name, data-type, and other basic attributes.  Mappings must be attached separately.
 	 * @param uniqueId is the id to associate with the new symbol
@@ -133,7 +133,7 @@ public class HighSymbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Get id associated with this symbol.
 	 * @return the id
 	 */
@@ -141,7 +141,7 @@ public class HighSymbol {
 		return id;
 	}
 
-	/**
+    # /**
 	 * Fetch the corresponding database Symbol if it exists.
 	 * @return the matching Symbol object or null
 	 */
@@ -152,7 +152,7 @@ public class HighSymbol {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Fetch the namespace owning this symbol, if it exists.
 	 * @return the Namespace object or null
 	 */
@@ -164,7 +164,7 @@ public class HighSymbol {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Associate a particular HighVariable with this symbol. This is used to link the symbol
 	 * into the decompiler's description of how a function manipulates a particular symbol.
 	 * Multiple partial HighVariables may get associated with the same HighSymbol.  The HighSymbol
@@ -180,7 +180,7 @@ public class HighSymbol {
 		highVariable = high;
 	}
 
-	/**
+    # /**
 	 * Get the HighVariable associate with this symbol if any.  The symbol may have multiple
 	 * partial HighVariables associated with it. This method returns the biggest one, which
 	 * may not be the same size as the symbol itself.
@@ -190,7 +190,7 @@ public class HighSymbol {
 		return highVariable;
 	}
 
-	/**
+    # /**
 	 * Get the base name of this symbol
 	 * @return the name
 	 */
@@ -198,7 +198,7 @@ public class HighSymbol {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Get the Program object containing the function being modeled.
 	 * @return the Program
 	 */
@@ -206,21 +206,21 @@ public class HighSymbol {
 		return dtmanage.getProgram();
 	}
 
-	/**
+    # /**
 	 * @return the data-type associate with this symbol
 	 */
 	public DataType getDataType() {
 		return type;
 	}
 
-	/**
+    # /**
 	 * @return the number of bytes consumed by the storage for this symbol
 	 */
 	public int getSize() {
 		return entryList[0].getSize();
 	}
 
-	/**
+    # /**
 	 * Get the first code Address, within the function, where this symbol's storage actually
 	 * holds the value of the symbol.  If there is more than one mapping for the symbol, this
 	 * returns the code Address for the first mapping.  A null value indicates that the storage
@@ -232,7 +232,7 @@ public class HighSymbol {
 		return entryList[0].pcaddr;
 	}
 
-	/**
+    # /**
 	 * Get the first code Address (expressed as a different in bytes from the starting address of the
 	 * function) where this symbol's storage actually holds the value of the symbol. A value of 0 indicates
 	 * that the storage is valid across the entire function.  A negative value indicates the storage is
@@ -247,7 +247,7 @@ public class HighSymbol {
 		return (int) pcaddr.subtract(getHighFunction().getFunction().getEntryPoint());
 	}
 
-	/**
+    # /**
 	 * Get the function model of which this symbol is a part.
 	 * @return the HighFunction owning this symbol
 	 */
@@ -255,7 +255,7 @@ public class HighSymbol {
 		return function;
 	}
 
-	/**
+    # /**
 	 * Set the category and associated index for this symbol. The category indicates a specific sub-class
 	 * of symbols. Currently -1=none, 0=parameter, 1=equate
 	 * @param cat is the category
@@ -266,7 +266,7 @@ public class HighSymbol {
 		categoryIndex = index;
 	}
 
-	/**
+    # /**
 	 * Set whether this symbol's data-type is considered "locked". If it is "locked",
 	 * this symbol's data-type is considered unchangeable during decompilation. The data-type
 	 * will be forced into the decompiler's model of the function to the extent possible.
@@ -276,7 +276,7 @@ public class HighSymbol {
 		this.typelock = typelock;
 	}
 
-	/**
+    # /**
 	 * Set whether this symbol's name is considered "locked". If it is "locked", the decompiler
 	 * will use the name when labeling the storage described by this symbol.
 	 * @param namelock is true if the name should be considered "locked".
@@ -285,7 +285,7 @@ public class HighSymbol {
 		this.namelock = namelock;
 	}
 
-	/**
+    # /**
 	 * If this returns true, this symbol's data-type is "locked", meaning
 	 * it is considered unchangeable during decompilation. The data-type
 	 * will be forced into the decompiler's model of the function to the extent possible.
@@ -295,7 +295,7 @@ public class HighSymbol {
 		return typelock;
 	}
 
-	/**
+    # /**
 	 * If this returns true, this symbol's name is "locked". meaning the decompiler
 	 * is forced to use the name when labeling the storage described by this symbol.
 	 * @return true if the name is considered "locked".
@@ -304,7 +304,7 @@ public class HighSymbol {
 		return namelock;
 	}
 
-	/**
+    # /**
 	 * If this returns true, the decompiler will not speculatively merge this with
 	 * other variables.
 	 * Currently, being isolated is equivalent to being typelocked.
@@ -314,7 +314,7 @@ public class HighSymbol {
 		return typelock;
 	}
 
-	/**
+    # /**
 	 * Return one of
 	 *    - MutabilitySettingsDefinition.NORMAL
 	 *    - MutabilitySettingsDefinition.VOLATILE
@@ -325,7 +325,7 @@ public class HighSymbol {
 		return entryList[0].getMutability();
 	}
 
-	/**
+    # /**
 	 * Is this symbol a parameter for a function
 	 * @return true if this is a parameter
 	 */
@@ -333,7 +333,7 @@ public class HighSymbol {
 		return (category == 0);
 	}
 
-	/**
+    # /**
 	 * For parameters (category=0), this method returns the position of the parameter within the function prototype.
 	 * @return the category index for this symbol
 	 */
@@ -341,7 +341,7 @@ public class HighSymbol {
 		return categoryIndex;
 	}
 
-	/**
+    # /**
 	 * Is this symbol in the global scope or some other global namespace
 	 * @return true if this is global
 	 */
@@ -349,35 +349,35 @@ public class HighSymbol {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return true if symbol is a "this" pointer for a class method
 	 */
 	public boolean isThisPointer() {
 		return isThis;
 	}
 
-	/**
+    # /**
 	 * @return true is symbol holds a pointer to where a function's return value should be stored
 	 */
 	public boolean isHiddenReturn() {
 		return isHidden;
 	}
 
-	/**
+    # /**
 	 * @return the first mapping object attached to this symbol
 	 */
 	public SymbolEntry getFirstWholeMap() {
 		return entryList[0];
 	}
 
-	/**
+    # /**
 	 * @return the storage associated with this symbol (associated with the first mapping)
 	 */
 	public VariableStorage getStorage() {
 		return entryList[0].getStorage();
 	}
 
-	/**
+    # /**
 	 * Encode attributes for the base symbol element
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors in the underlying stream
@@ -411,7 +411,7 @@ public class HighSymbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Encode the symbol description as an element to the stream.  This does NOT save the mappings.
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors in the underlying stream
@@ -468,7 +468,7 @@ public class HighSymbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Decode this symbol object and its associated mappings from the stream.
 	 * @param decoder is the stream decoder
 	 * @throws DecoderException for invalid encodings
@@ -518,7 +518,7 @@ public class HighSymbol {
 		}
 	}
 
-	/**
+    # /**
 	 * Restore a full HighSymbol from the next &lt;mapsym&gt; element in the stream.
 	 * This method acts as a HighSymbol factory, instantiating the correct class
 	 * based on the particular elements.
@@ -563,7 +563,7 @@ public class HighSymbol {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Encode the given symbol with all its mapping as a &lt;mapsym&gt; element to the stream.
 	 * @param encoder is the stream encoder
 	 * @param sym is the given symbol

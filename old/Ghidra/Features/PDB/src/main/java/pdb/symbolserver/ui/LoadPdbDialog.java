@@ -19,7 +19,7 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 import java.util.function.Supplier;

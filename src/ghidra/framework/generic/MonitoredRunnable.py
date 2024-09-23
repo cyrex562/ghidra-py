@@ -21,7 +21,7 @@ package ghidra.util.task;
  */
 public interface MonitoredRunnable {
 
-	/**
+    # /**
 	 * Runs this runnable, given a monitor to report progress and check for cancellation.
 	 * @param monitor the monitor.
 	 */

@@ -47,7 +47,7 @@ public class MIPSEmulateInstructionStateModifier extends EmulateInstructionState
 			ISA_MODE0 = new RegisterValue(isaModeReg, BigInteger.ZERO);
 		}
 
-		/**
+	    # /**
 		 * We could registerPcodeOpBehavior for one or more of the following
 		 * pcodeop's:
 		 * 
@@ -66,7 +66,7 @@ public class MIPSEmulateInstructionStateModifier extends EmulateInstructionState
 		 */
 	}
 
-	/**
+    # /**
 	 * Initialize ISM register based upon context-register state before first
 	 * instruction is executed.
 	 */
@@ -87,7 +87,7 @@ public class MIPSEmulateInstructionStateModifier extends EmulateInstructionState
 		emu.getMemoryState().setValue(ismReg, isaModeValue);
 	}
 
-	/**
+    # /**
 	 * Use ISM register value to establish ISA_MODE when branching/calling. If
 	 * ISM = 0, check for odd destination address which may occur when
 	 * jumping/returning indirectly to Thumb mode. It is assumed that language

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.dump.mdmp;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.StructConverter;
 import ghidra.file.formats.dump.DumpFileReader;
@@ -110,7 +110,7 @@ public class Module implements StructConverter {
 		reader.setPointerIndex(pos);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.app.util.bin.StructConverter#toDataType()
 	 */
 	@Override

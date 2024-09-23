@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.demangler.gnu;
 
-import java.io.*;
+
 import java.nio.charset.Charset;
 import java.util.*;
 
@@ -57,7 +57,7 @@ public class GnuDemanglerNativeProcess {
 	private BufferedReader reader;
 	private PrintWriter writer;
 
-	/**
+    # /**
 	 * Gets the default GNU demangler native process
 	 * @return the process
 	 * @throws IOException if the process cannot be started
@@ -67,7 +67,7 @@ public class GnuDemanglerNativeProcess {
 		return getDemanglerNativeProcess(DEMANGLER_GNU);
 	}
 
-	/**
+    # /**
 	 * Gets the default GNU demangler native process
 	 * @param name the specific executable name to launch
 	 * @return the process
@@ -79,7 +79,7 @@ public class GnuDemanglerNativeProcess {
 		return getDemanglerNativeProcess(name, DEFAULT_NATIVE_OPTIONS);
 	}
 
-	/**
+    # /**
 	 * Gets the default GNU demangler native process
 	 * @param name the specific executable name to launch
 	 * @param nativeOptions the arguments string to pass to the native demangler

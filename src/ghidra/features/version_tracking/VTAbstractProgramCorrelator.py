@@ -36,7 +36,7 @@ public abstract class VTAbstractProgramCorrelator implements VTProgramCorrelator
 	private final AddressSetView destinationAddressSet;
 	private final ToolOptions options;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param sourceProgram The program that contains functions that are to be looked for in the
 	 * destination program.  Typically, this is the program that has markup that is to be applied
@@ -58,7 +58,7 @@ public abstract class VTAbstractProgramCorrelator implements VTProgramCorrelator
 		this.options = options;
 	}
 
-	/**
+    # /**
 	 * Performs the correlation between two programs looking for how well functions in one program
 	 * correlate to functions in another program.
 	 * @param session An existing manager that may contain previous results that may

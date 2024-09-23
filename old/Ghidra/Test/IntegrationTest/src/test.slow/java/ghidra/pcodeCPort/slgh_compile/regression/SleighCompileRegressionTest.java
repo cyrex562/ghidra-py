@@ -18,7 +18,7 @@ package ghidra.pcodeCPort.slgh_compile.regression;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Pattern;

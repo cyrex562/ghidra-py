@@ -15,7 +15,7 @@
  */
 package sarif.export.mm;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.address.AddressRange;
 import ghidra.program.model.data.ISF.IsfObject;

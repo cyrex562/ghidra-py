@@ -81,7 +81,7 @@ public class LogPanel extends JPanel implements LogListener {
 		add(panel, BorderLayout.NORTH);
 	}
 
-	/**
+    # /**
 	 * Set the help location for the components in the LogPanel.
 	 * @param helpLocation help location for this LogPanel
 	 * 
@@ -103,7 +103,7 @@ public class LogPanel extends JPanel implements LogListener {
 		});
 	}
 
-	/**
+    # /**
 	 * Extracts the {@link LogPanelAppender} from the root logger configuration
 	 * and hands an instance of this panel to it.
 	 */

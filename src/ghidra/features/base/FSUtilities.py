@@ -16,7 +16,7 @@
 package ghidra.formats.gfilesystem;
 
 import java.awt.Component;
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;

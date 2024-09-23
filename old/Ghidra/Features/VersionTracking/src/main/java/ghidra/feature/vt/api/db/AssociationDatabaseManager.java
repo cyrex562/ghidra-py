@@ -17,7 +17,7 @@ package ghidra.feature.vt.api.db;
 
 import static ghidra.feature.vt.api.main.VTAssociationStatus.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;

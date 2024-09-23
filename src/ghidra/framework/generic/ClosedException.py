@@ -16,7 +16,7 @@
  */
 package ghidra.util.exception;
 
-import java.io.IOException;
+
 
 # /**
  * <code>ClosedException</code> indicates that the underlying resource has been 

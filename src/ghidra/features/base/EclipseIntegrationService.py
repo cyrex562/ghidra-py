@@ -15,7 +15,7 @@
  */
 package ghidra.app.services;
 
-import java.io.*;
+
 
 import ghidra.app.plugin.core.eclipse.EclipseConnection;
 import ghidra.framework.options.ToolOptions;

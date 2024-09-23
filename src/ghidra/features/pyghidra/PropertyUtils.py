@@ -39,7 +39,7 @@ public class PropertyUtils {
 	private PropertyUtils() {
 	}
 
-	/**
+    # /**
 	 * Gets the boxed class for a primitive type
 	 * 
 	 * @param cls the primitive class type
@@ -82,7 +82,7 @@ public class PropertyUtils {
 		return cls;
 	}
 
-	/**
+    # /**
 	 * Gets an array of {@link JavaProperty} for the provided class.
 	 * 
 	 * This method is for <b>internal use only</b> and is only public
@@ -197,7 +197,7 @@ public class PropertyUtils {
 		return Modifier.isPublic(mod) && !Modifier.isStatic(mod);
 	}
 
-	/**
+    # /**
 	 * Helper class for merging methods and removing a layer of reflection
 	 */
 	private static class PropertyPairFactory {
@@ -257,7 +257,7 @@ public class PropertyUtils {
 		return new PartialProperty(m, name);
 	}
 
-	/**
+    # /**
 	 * Helper class for combining the methods into a property
 	 */
 	private static class PartialProperty {

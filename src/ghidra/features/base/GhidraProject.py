@@ -15,7 +15,7 @@
  */
 package ghidra.base.project;
 
-import java.io.*;
+
 import java.net.MalformedURLException;
 import java.nio.channels.OverlappingFileLockException;
 import java.util.HashMap;

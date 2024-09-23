@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.bookmark;
 
-import java.io.IOException;
+
 
 import db.DBHandle;
 import db.DBRecord;
@@ -27,13 +27,13 @@ public class BookmarkTypeDBAdapterNoTable extends BookmarkTypeDBAdapter {
 
 	private DBRecord[] records = new DBRecord[0];
 
-	/**
+    # /**
 	 * @param dbHandle the database handle
 	 */
 	public BookmarkTypeDBAdapterNoTable(DBHandle dbHandle) {
 	}
 
-	/**
+    # /**
 	 * Set the old bookmark manager which handles read-only access
 	 * to bookmarks stored within property maps.
 	 * The old bookmark manager must be set prior to invoking any other method;

@@ -28,7 +28,7 @@ import ghidra.util.exception.CancelledException;
 public class ModifierTypeApplier extends MsDataTypeApplier {
 
 	// Intended for: AbstractModifierMsType
-	/**
+    # /**
 	 * Constructor for modifier type applier
 	 * @param applicator {@link DefaultPdbApplicator} for which this class is working
 	 */

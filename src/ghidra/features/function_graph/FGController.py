@@ -72,13 +72,13 @@ public class FGController implements ProgramLocationListener, ProgramSelectionLi
 	private FunctionGraphViewSettings viewSettings = new NoFunctionGraphViewSettings();
 	private FGVertex lastUserNavigatedVertex;
 
-	/** Field format manager when looking at a vertex in full screen mode (same as code viewer */
+    # /** Field format manager when looking at a vertex in full screen mode (same as code viewer */
 	private FormatManager fullFormatManager;
 
-	/** Field format manager when looking at a vertex in graph mode */
+    # /** Field format manager when looking at a vertex in graph mode */
 	private FormatManager minimalFormatManager;
 
-	/** Field format manager for restoring to the default 'minimal' view */
+    # /** Field format manager for restoring to the default 'minimal' view */
 	private FormatManager defaultFormatManager; // lazy!
 
 	private FunctionGraphOptions functionGraphOptions;
@@ -296,7 +296,7 @@ public class FGController implements ProgramLocationListener, ProgramSelectionLi
 		return previousFactory.getFieldName().equals("Variable Type");
 	}
 
-	/**
+    # /**
 	 * Sets the message that will appear in the lower part of the graph.
 	 *
 	 * @param message the message to display
@@ -794,7 +794,7 @@ public class FGController implements ProgramLocationListener, ProgramSelectionLi
 		return view.isScaledPastInteractionThreshold();
 	}
 
-	/**
+    # /**
 	 * Signals that something major has changed for the program and we don't know where, so clear
 	 * all cached functions for the given program.
 	 *
@@ -928,12 +928,12 @@ public class FGController implements ProgramLocationListener, ProgramSelectionLi
 //  Methods called by the vertices (actions and such)
 //==================================================================================================
 
-	/** Zooms so that the graph will fit completely into the size of the primary viewer */
+    # /** Zooms so that the graph will fit completely into the size of the primary viewer */
 	public void zoomOutGraph() {
 		view.zoomOutGraph();
 	}
 
-	/** Zooms to the real size of the widgets */
+    # /** Zooms to the real size of the widgets */
 	public void zoomInGraph() {
 		view.zoomInGraph();
 	}
@@ -1020,7 +1020,7 @@ public class FGController implements ProgramLocationListener, ProgramSelectionLi
 		return plugin.getService(serviceClass);
 	}
 
-	/**
+    # /**
 	 * Update the graph's notion of the current location based upon that of the Tool. This method is
 	 * meant to be called from internal mutative operations.
 	 */
@@ -1029,7 +1029,7 @@ public class FGController implements ProgramLocationListener, ProgramSelectionLi
 		viewSettings.setLocation(provider.getLocation());
 	}
 
-	/**
+    # /**
 	 * Will broadcast the given vertex location to the external system
 	 *
 	 * @param location the location coming from the vertex

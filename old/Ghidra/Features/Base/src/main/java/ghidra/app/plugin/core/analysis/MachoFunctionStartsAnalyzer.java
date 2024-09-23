@@ -16,7 +16,7 @@
 package ghidra.app.plugin.core.analysis;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.cmd.function.CreateFunctionCmd;

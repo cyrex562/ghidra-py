@@ -34,7 +34,7 @@ public class ClangBreak extends ClangToken {
 		this.indent = indent;
 	}
 
-	/**
+    # /**
 	 * @return the number of indent levels following this line break
 	 */
 	public int getIndent() {

@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.lzss;
 
-import java.io.*;
+
 import java.nio.ByteBuffer;
 
 /**

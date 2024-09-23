@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.sem;
 
 import java.util.*;
@@ -28,12 +28,12 @@ import ghidra.app.plugin.processors.sleigh.pattern.DisjointPattern;
 import ghidra.app.plugin.processors.sleigh.symbol.SubtableSymbol;
 
 # /**
- * Describes a SLEIGH constructor semantic
- * 
- * <p>
- * These are collected and associated with productions in the grammar based on the given
- * constructor's print pieces.
- */
+# * Describes a SLEIGH constructor semantic
+# * 
+# * <p>
+# * These are collected and associated with productions in the grammar based on the given
+# * constructor's print pieces.
+# */
 public class AssemblyConstructorSemantic implements Comparable<AssemblyConstructorSemantic> {
 	protected static final RecursiveDescentSolver SOLVER = RecursiveDescentSolver.getSolver();
 	protected static final DbgTimer DBG = AbstractAssemblyTreeResolver.DBG;
@@ -48,7 +48,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 	// A set initialized on first access with forbidden patterns added
 	protected Set<AssemblyResolvedPatterns> upatterns;
 
-	/**
+    # /**
 	 * Build a new SLEIGH constructor semantic
 	 * 
 	 * @param cons the SLEIGH constructor
@@ -66,7 +66,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		this.reversedChanges = List.copyOf(changes);
 	}
 
-	/**
+    # /**
 	 * Record a pattern that would select the constructor
 	 * 
 	 * @param pat the pattern
@@ -76,7 +76,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 			"Generated constructor pattern " + getLocation(), cons));
 	}
 
-	/**
+    # /**
 	 * Record a pattern that would select the constructor
 	 * 
 	 * @param pat the pattern
@@ -93,7 +93,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return getLocation();
 	}
 
-	/**
+    # /**
 	 * Render the constructor's source location for diagnostics
 	 * 
 	 * @param cons the constructor
@@ -103,7 +103,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return cons.getSourceFile() + ":" + cons.getLineno();
 	}
 
-	/**
+    # /**
 	 * Render this constructor's source location for diagnostics
 	 * 
 	 * @return the location
@@ -112,7 +112,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return getLocation(cons);
 	}
 
-	/**
+    # /**
 	 * Get the SLEIGH constructor
 	 * 
 	 * @return the constructor
@@ -121,7 +121,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return cons;
 	}
 
-	/**
+    # /**
 	 * Get the associated encoding patterns for the constructor
 	 * 
 	 * @return the patterns
@@ -133,7 +133,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return upatterns;
 	}
 
-	/**
+    # /**
 	 * Convert the index of a print piece to its associated operand index
 	 * 
 	 * @param printpos position excluding whitespace and string tokens.
@@ -143,7 +143,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return indices.get(printpos);
 	}
 
-	/**
+    # /**
 	 * Get the list of operand indices in print piece order
 	 * 
 	 * @return the list
@@ -152,7 +152,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return indices;
 	}
 
-	/**
+    # /**
 	 * Get an iterator over the operand indices
 	 * 
 	 * <p>
@@ -166,7 +166,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return Collections.unmodifiableList(indices).iterator();
 	}
 
-	/**
+    # /**
 	 * Initialize upatterns with an unmodifiable copy of patterns, with forbidden patterns added
 	 */
 	protected void computeAllForbids() {
@@ -182,7 +182,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		upatterns = Collections.unmodifiableSet(result);
 	}
 
-	/**
+    # /**
 	 * Add the list of forbidden patterns to one of the constructor's patterns
 	 * 
 	 * <p>
@@ -217,7 +217,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 					return CONTINUE;
 				}
 
-				/**
+			    # /**
 				 * I had misunderstood the precedence rules originally.
 				 * 
 				 * 1. If one pattern defines a subset of the other pattern, then the more-specific
@@ -280,7 +280,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return pat.withForbids(forbids);
 	}
 
-	/**
+    # /**
 	 * Solve this constructor's context changes
 	 * 
 	 * <p>
@@ -350,7 +350,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return res;
 	}
 
-	/**
+    # /**
 	 * Apply just context transformations in the forward (disassembly) direction
 	 * 
 	 * <p>
@@ -376,7 +376,7 @@ public class AssemblyConstructorSemantic implements Comparable<AssemblyConstruct
 		return res;
 	}
 
-	/**
+    # /**
 	 * Apply just the instruction patterns in the forward (disassembly) direction
 	 * 
 	 * @param shift the (right) shift in bytes to apply to the patterns before combining

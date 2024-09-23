@@ -20,7 +20,7 @@ import static ghidra.framework.main.DataTreeDialogType.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.List;
 import java.util.stream.Collectors;

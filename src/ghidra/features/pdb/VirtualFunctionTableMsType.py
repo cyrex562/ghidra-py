@@ -37,7 +37,7 @@ public class VirtualFunctionTableMsType extends AbstractMsType {
 	private String vftableName;
 	private List<String> names = new ArrayList<>();
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.

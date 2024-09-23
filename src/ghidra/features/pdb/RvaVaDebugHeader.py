@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 import java.math.BigInteger;
 
@@ -30,7 +30,7 @@ public class RvaVaDebugHeader extends DebugHeader {
 	private long unsignedIntReserved1;
 	private long unsignedIntReserved2;
 
-	/**
+    # /**
 	 * Returns the relative virtual address data base.
 	 * @return the relative virtual address data base.
 	 */
@@ -38,7 +38,7 @@ public class RvaVaDebugHeader extends DebugHeader {
 		return relativeVirtualAddressDataBase;
 	}
 
-	/**
+    # /**
 	 * Returns the virtual address image base.
 	 * @return the virtual address image base.
 	 */
@@ -46,7 +46,7 @@ public class RvaVaDebugHeader extends DebugHeader {
 		return virtualAddressImageBase;
 	}
 
-	/**
+    # /**
 	 * Returns the reserved1 unsigned int stored in a long.
 	 * @return the reserved1 unsigned int stored in a long.
 	 */
@@ -54,7 +54,7 @@ public class RvaVaDebugHeader extends DebugHeader {
 		return unsignedIntReserved1;
 	}
 
-	/**
+    # /**
 	 * Returns the reserved2 unsigned int stored in a long.
 	 * @return the reserved2 unsigned int stored in a long.
 	 */
@@ -62,7 +62,7 @@ public class RvaVaDebugHeader extends DebugHeader {
 		return unsignedIntReserved2;
 	}
 
-	/**
+    # /**
 	 * Deserializes the {@link RvaVaDebugHeader} information from a {@link PdbByteReader}
 	 * @param reader the {@link PdbByteReader} from which to parse the data.
 	 * @throws PdbException upon problem parsing the data.

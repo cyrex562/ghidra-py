@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 
 import ghidra.app.plugin.core.analysis.TransientProgramProperties;

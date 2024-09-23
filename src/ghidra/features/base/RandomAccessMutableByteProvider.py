@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin;
 
-import java.io.*;
+
 
 # /**
  * An implementation of ByteProvider where the underlying

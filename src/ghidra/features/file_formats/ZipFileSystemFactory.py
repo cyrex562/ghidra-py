@@ -16,7 +16,7 @@
 package ghidra.file.formats.zip;
 
 import java.io.File;
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.file.formats.sevenzip.SevenZipFileSystemFactory;
@@ -28,7 +28,7 @@ import ghidra.util.task.TaskMonitor;
 
 public class ZipFileSystemFactory
 		implements GFileSystemFactoryByteProvider<ZipFileSystem>, GFileSystemProbeBytesOnly {
-	/**
+    # /**
 	 * Use "-Dghidra.file.formats.zip.ZipFileSystemFactory.USE_BUILTIN_ZIP_SUPPORT=true" jvm
 	 * startup option to disable use of 7zip libraries when opening zip filesystems.
 	 */
@@ -37,7 +37,7 @@ public class ZipFileSystemFactory
 
 	private static final int START_BYTES_REQUIRED = 2;
 
-	/**
+    # /**
 	 * Sets the static flag controlling which zip file implementation will used when opening
 	 * a zip file system.
 	 * 

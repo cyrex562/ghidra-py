@@ -16,7 +16,7 @@
 package ghidra.server;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.UnknownHostException;
 import java.rmi.server.RemoteServer;
 import java.rmi.server.ServerNotActiveException;
@@ -50,7 +50,7 @@ public class RepositoryManager {
 	private UserManager userMgr;
 	private boolean anonymousAccessAllowed;
 
-	/**
+    # /**
 	 * Construct a new RepositoryManager.
 	 * @param rootDir directory where repositories will be created; this
 	 * path contains a list of users that can access the repositories 
@@ -90,7 +90,7 @@ public class RepositoryManager {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Dispose this repository manager and all repository instances
 	 */
 	public synchronized void dispose() {
@@ -102,7 +102,7 @@ public class RepositoryManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Return repositories root directory
 	 * @return server root directory
 	 */
@@ -110,7 +110,7 @@ public class RepositoryManager {
 		return rootDirFile;
 	}
 
-	/**
+    # /**
 	 * Create a new Repository.
 	 * @param currentUser user creating the repository
 	 * @param name name of the repository
@@ -148,7 +148,7 @@ public class RepositoryManager {
 		return rep;
 	}
 
-	/**
+    # /**
 	 * Get the Repository with the given name.
 	 * @param currentUser user making the request.
 	 * @param name name of the repository
@@ -170,7 +170,7 @@ public class RepositoryManager {
 		return rep;
 	}
 
-	/**
+    # /**
 	 * Get the repository for privileged use.
 	 * @param name repository name
 	 * @return null if no repository exists with the given name
@@ -179,7 +179,7 @@ public class RepositoryManager {
 		return repositoryMap.get(name);
 	}
 
-	/**
+    # /**
 	 * Delete a specified repository.
 	 * @param currentUser current user
 	 * @param name repository name
@@ -208,7 +208,7 @@ public class RepositoryManager {
 		repositoryMap.remove(name);
 	}
 
-	/**
+    # /**
 	 * Get the names of the known repositories which are accessable by the specified user.
 	 * @param currentUser name of user requesting repository list
 	 * @return sorted array of names
@@ -240,7 +240,7 @@ public class RepositoryManager {
 		return names;
 	}
 
-	/**
+    # /**
 	 * Get all defined users. If currentUser is an
 	 * Anonymous user an empty array will be returned.
 	 * @param currentUser current user
@@ -258,7 +258,7 @@ public class RepositoryManager {
 		return userMgr;
 	}
 
-	/**
+    # /**
 	 * Verify that the specified currentUser is a known user
 	 * @param currentUser current user
 	 * @throws UserAccessException specified user is not valid
@@ -269,7 +269,7 @@ public class RepositoryManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Scan for existing repositories and build repositoryMap.
 	 * @throws IOException if error occurs accessing or writing to server storage directory
 	 */
@@ -314,7 +314,7 @@ public class RepositoryManager {
 		processCommandQueue(); // process any old commands
 	}
 
-	/**
+    # /**
 	 * Refresh the server's user list and process any pending UserAdmin commands.
 	 * @throws IOException if error occurs processing command files
 	 */
@@ -351,7 +351,7 @@ public class RepositoryManager {
 		return tbuf.toString() + " (" + units + ")";
 	}
 
-	/**
+    # /**
 	 * Add a user handle to this repository server.
 	 * @param handle user repository server handle
 	 */
@@ -361,7 +361,7 @@ public class RepositoryManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Drop the specified handle to this repository server
 	 * @param handle user repository server handle
 	 */
@@ -371,7 +371,7 @@ public class RepositoryManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Get a sorted array of repository names contained within the specified server root directory.
 	 * @param rootDirFile server root directory
 	 * @return array of repository names
@@ -461,7 +461,7 @@ public class RepositoryManager {
 		log.info(buf.toString());
 	}
 
-	/**
+    # /**
 	 * Print to stdout the set of repository names defined within the specified repositories root.
 	 * This is intended to be used with the svrAdmin console command
 	 * @param repositoriesRootDir repositories root directory
@@ -508,7 +508,7 @@ public class RepositoryManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Print to stdout the repository access permissions for the specified set of users.
 	 * This is intended to be used with the svrAdmin console command
 	 * @param repositoriesRootDir repositories root directory
@@ -564,7 +564,7 @@ public class RepositoryManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Callback when user removed from server.  Remove user from all repository access lists.
 	 * @param username user name
 	 * @throws IOException if error occured while updating repository access lists.

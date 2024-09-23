@@ -161,7 +161,7 @@ public class VisualGraphView<V extends VisualVertex,
 		undockedSatelliteContentPanel.validate();
 	}
 
-	/**
+    # /**
 	 * Called when the options used by this graph view have changed
 	 */
 	public void optionsChanged() {
@@ -170,7 +170,7 @@ public class VisualGraphView<V extends VisualVertex,
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the given layout provider, <b>but does not actually perform a layout</b>.
 	 * @param newLayoutProvider the new provider
 	 */
@@ -192,7 +192,7 @@ public class VisualGraphView<V extends VisualVertex,
 		clientFocusListener = Optional.ofNullable(l);
 	}
 
-	/**
+    # /**
 	 * Sets a listener that allows clients to be notified of vertex double-clicks.  Normal
 	 * mouse processing is handled by the {@link VisualGraphMousePlugin} class.  This is a
 	 * convenience method so that clients do not have to deal with the mouse plugin.
@@ -292,7 +292,7 @@ public class VisualGraphView<V extends VisualVertex,
 		return graph;
 	}
 
-	/**
+    # /**
 	 * Returns the primary viewer of the graph (as opposed to the satellite viewer).   The
 	 * viewer returned is responsible for maintaining view information for a given graph.
 	 *
@@ -309,7 +309,7 @@ public class VisualGraphView<V extends VisualVertex,
 		return graphComponent.getSatelliteViewer();
 	}
 
-	/**
+    # /**
 	 * Sets the perspective for this view
 	 *
 	 * @param newPerspective the new perspective
@@ -361,7 +361,7 @@ public class VisualGraphView<V extends VisualVertex,
 		disposeViewer();
 	}
 
-	/**
+    # /**
 	 * Sets a message to be painted on the viewer.  This is useful to show a text message to the
 	 * user.  Passing null will clear the message.
 	 *
@@ -377,7 +377,7 @@ public class VisualGraphView<V extends VisualVertex,
 		return graphComponent;
 	}
 
-	/**
+    # /**
 	 * Returns whether the satellite intended to be visible.  If this component is built, then
 	 * a result of true means that the satellite is showing.  If the component is not yet
 	 * built, then a result of true means that the satellite will be made visible when the
@@ -421,7 +421,7 @@ public class VisualGraphView<V extends VisualVertex,
 		}
 	}
 
-	/**
+    # /**
 	 * Returns whether the satellite intended to be docked.  If this component is built, then
 	 * a result of true means that the satellite is docked.  If the component is not yet
 	 * built, then a result of true means that the satellite will be made docked when the
@@ -578,7 +578,7 @@ public class VisualGraphView<V extends VisualVertex,
 		return layoutProvider;
 	}
 
-	/**
+    # /**
 	 * Effectively clears this display.  This method is not called dispose, as that implies
 	 * the end of an object's lifecycle.  This object can be re-used after this method is
 	 * called.

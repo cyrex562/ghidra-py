@@ -146,7 +146,7 @@ public class FidAnalyzer extends AbstractAnalyzer {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Check if set contains the full executable or loaded/initialized memory areas.
 	 * 
 	 * @param program program to check

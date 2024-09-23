@@ -16,7 +16,7 @@
 package ghidra.features.bsim.query.ingest;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.*;
 import java.util.*;
 

@@ -54,7 +54,7 @@ public class Swing {
 
 	public static final String GSWING_THREAD_POOL_NAME = "GSwing Worker";
 
-	/**
+    # /**
 	 * Returns true if this is the event dispatch thread. Note that this method returns true in
 	 * headless mode because any thread in headless mode can dispatch its own events. In swing
 	 * environments, the swing thread is usually used to dispatch events.
@@ -70,7 +70,7 @@ public class Swing {
 		return SwingUtilities.isEventDispatchThread();
 	}
 
-	/**
+    # /**
 	 * Wait until AWT event queue (Swing) has been flushed and no more (to a point) events
 	 * are pending.
 	 */
@@ -83,7 +83,7 @@ public class Swing {
 		runNow(r);
 	}
 
-	/**
+    # /**
 	 * Logs a stack trace if the current calling thread is not the Swing thread
 	 * @param errorMessage The message to display when not on the Swing thread
 	 * @return true if the calling thread is the Swing thread
@@ -98,7 +98,7 @@ public class Swing {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Calls the given runnable on the Swing thread in the future by putting the request on
 	 * the back of the event queue.
 	 *
@@ -108,7 +108,7 @@ public class Swing {
 		doRun(r, false, SWING_RUN_ERROR_MSG);
 	}
 
-	/**
+    # /**
 	 * Runs the given runnable now if the caller is on the Swing thread.  Otherwise, the 
 	 * runnable will be posted later.
 	 * 
@@ -128,7 +128,7 @@ public class Swing {
 		}
 	}
 
-	/**
+    # /**
 	 * Calls the given suppler on the Swing thread, blocking with a
 	 * {@link SwingUtilities#invokeAndWait(Runnable)} if not on the Swing thread.  
 	 * 
@@ -149,7 +149,7 @@ public class Swing {
 		return ref.get();
 	}
 
-	/**
+    # /**
 	 * Calls the given runnable on the Swing thread
 	 *
 	 * @param r the runnable
@@ -189,7 +189,7 @@ public class Swing {
 		}
 	}
 
-	/**
+    # /**
 	 * Calls the given runnable on the Swing thread
 	 * 
 	 * <p>This method will throw an exception if the Swing thread is not available within the

@@ -15,7 +15,7 @@
  */
 package help.screenshot;
 
-import java.io.*;
+
 import java.util.*;
 
 import generic.theme.GThemeDefaults.Colors.Palette;

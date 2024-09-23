@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.oat.quickmethod;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.*;
@@ -48,7 +48,7 @@ public class OatQuickMethodHeader_Oreo extends OatQuickMethodHeader {
 		code_ = reader.readNextByteArray(code_size_);
 	}
 
-	/**
+    # /**
 	 * The offset in bytes from the start of the vmap table to the end of the header.
 	 * @return the VMAP table offset
 	 */
@@ -56,7 +56,7 @@ public class OatQuickMethodHeader_Oreo extends OatQuickMethodHeader {
 		return vmap_table_offset_;
 	}
 
-	/**
+    # /**
 	 * The offset in bytes from the start of the method info to the end of the header.
 	 * The method info offset is not in the CodeInfo since CodeInfo has good dedupe properties that
 	 * would be lost from doing so. The method info memory region contains method indices since they
@@ -67,7 +67,7 @@ public class OatQuickMethodHeader_Oreo extends OatQuickMethodHeader {
 		return method_info_offset_;
 	}
 
-	/**
+    # /**
 	 * The stack frame information.
 	 * @return the stack frame
 	 */
@@ -75,7 +75,7 @@ public class OatQuickMethodHeader_Oreo extends OatQuickMethodHeader {
 		return frame_info_;
 	}
 
-	/**
+    # /**
 	 * The code size in bytes. The highest bit is used to signify if the compiled
 	 * code with the method header has should_deoptimize flag.
 	 */
@@ -83,7 +83,7 @@ public class OatQuickMethodHeader_Oreo extends OatQuickMethodHeader {
 		return code_size_;
 	}
 
-	/**
+    # /**
 	 * The actual code.
 	 * @return the actual code bytes
 	 */

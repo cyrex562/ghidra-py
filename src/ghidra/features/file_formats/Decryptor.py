@@ -21,7 +21,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.CryptoException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 # /**
  * NOTE:  ALL DECRYPTOR CLASSES MUST END IN "Decryptor".  If not,
@@ -29,7 +29,7 @@ import java.io.IOException;
  */
 public interface Decryptor extends ExtensionPoint {
 
-	/**
+    # /**
 	 * Returns TRUE if this decryptor implementation
 	 * can in fact decrypt the bytes contained in the byte provider.
 	 * @param provider the byte provider.
@@ -38,7 +38,7 @@ public interface Decryptor extends ExtensionPoint {
 	 */
 	boolean isValid(ByteProvider provider) throws IOException;
 
-	/**
+    # /**
 	 * Actually decrypt the bytes in the byte provider.
 	 * @param firmwareName
 	 * @param firmwarePath

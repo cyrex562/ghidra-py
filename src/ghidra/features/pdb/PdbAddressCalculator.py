@@ -156,7 +156,7 @@ abstract class PdbAddressCalculator {
 		return segmentInfo.get(segment - 1).getStart() + offset;
 	}
 
-	/**
+    # /**
 	 * Clean up possibly incomplete segment information, by synthesizing missing offset data.
 	 * @param segments segments to correct
 	 * @param firstSectionOffset "known" first section offset

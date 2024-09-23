@@ -32,7 +32,7 @@ public class DefinedMultipleAddressRanges2005MsSymbol extends AbstractMsSymbol {
 	// API does not define whatever data is here.  Just capturing the bytes.
 	private byte[] bytes;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

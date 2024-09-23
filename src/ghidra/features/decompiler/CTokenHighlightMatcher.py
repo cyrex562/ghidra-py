@@ -35,7 +35,7 @@ public interface CTokenHighlightMatcher {
 		// stub; provided for clients that may wish to perform cleanup when highlighting is finished
 	}
 
-	/**
+    # /**
 	 * The basic method clients must implement to determine if a token should be highlighted.
 	 * Returning a non-null Color will trigger the given token to be highlighted.
 	 * @param token the token

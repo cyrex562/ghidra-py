@@ -25,7 +25,7 @@ public abstract class Constraint<T> {
 
 	private String name;
 
-	/**
+    # /**
 	 * Constructor takes the name of the constraint.  This name will be tag used in the XML
 	 * specification file.
 	 * @param name the name of the constraint
@@ -34,7 +34,7 @@ public abstract class Constraint<T> {
 		this.name = name;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the constraint.  Note: this name is also the XML tag used in the 
 	 * constraints specification files.
 	 * @return the name of the constraint
@@ -43,14 +43,14 @@ public abstract class Constraint<T> {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns true if the given object satisfies this constraint.
 	 * @param t the object to test this constraint on.
 	 * @return true if the given object satisfies this constraint.
 	 */
 	public abstract boolean isSatisfied(T t);
 
-	/**
+    # /**
 	 * Initialized this constraint state.  Attributes in the xml element with this constaints
 	 * tag name will be extracted into the ConstraintData object for easy retrieval.
 	 * @param data the ConstraintData object used to initialize this constraint.
@@ -61,7 +61,7 @@ public abstract class Constraint<T> {
 	// overridden because it is critical that constraint object override equals.
 	public abstract boolean equals(Object obj);
 
-	/**
+    # /**
 	 * Returns a description of this constraint (with its configuration data) to be used
 	 * to journal the decision path that was taken.
 	 * @return a description of this constraint with its configuration data.

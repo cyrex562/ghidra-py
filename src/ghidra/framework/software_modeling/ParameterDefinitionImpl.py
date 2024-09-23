@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import ghidra.program.database.data.DataTypeUtilities;
@@ -27,7 +27,7 @@ public class ParameterDefinitionImpl implements ParameterDefinition {
 	private DataType dataType;
 	private String comment;
 
-	/**
+    # /**
 	 * Constructs a new ParameterImp with an unassigned ordinal.  The ordinal will be
 	 * established by the function definition.
 	 * @param name the name of the parameter.
@@ -39,7 +39,7 @@ public class ParameterDefinitionImpl implements ParameterDefinition {
 		this(name, dataType, comment, Parameter.UNASSIGNED_ORDINAL);
 	}
 
-	/**
+    # /**
 	 * Constructs a new ParameterImp
 	 * @param name the name of the parameter.
 	 * @param dataType the fixed-length datatype of the parameter
@@ -55,7 +55,7 @@ public class ParameterDefinitionImpl implements ParameterDefinition {
 		this.ordinal = ordinal;
 	}
 
-	/**
+    # /**
 	 * Check the specified datatype for use as a return, parameter or variable type.  It may
 	 * not be suitable for other uses.  The following datatypes will be mutated into a default pointer datatype:
 	 * <ul>

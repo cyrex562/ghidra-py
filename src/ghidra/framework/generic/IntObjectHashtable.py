@@ -109,7 +109,7 @@ public class IntObjectHashtable<T> implements Serializable {
         values = (T[]) new Object[values.length]; // suppressed
     }
 
-	/**
+    # /**
 	 * Return true if the given key is in the hashtable.
 	 * @param key the key whose presence in this map is to be tested.
 	 */

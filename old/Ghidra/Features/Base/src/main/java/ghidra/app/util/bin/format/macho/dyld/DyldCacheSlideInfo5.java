@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.macho.dyld;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

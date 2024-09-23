@@ -15,7 +15,7 @@
  */
 package ghidra.javaclass.format.attributes;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.program.model.data.DataType;
@@ -60,7 +60,7 @@ public class ConstantValueAttribute extends AbstractAttributeInfo {
 		constantValueIndex = reader.readNextShort();
 	}
 
-	/**
+    # /**
 	 * The value of the constantvalue_index item must be a valid index into
 	 * the constant_pool table. The constant_pool entry at that index gives the
 	 * constant value represented by this attribute. The constant_pool entry must be

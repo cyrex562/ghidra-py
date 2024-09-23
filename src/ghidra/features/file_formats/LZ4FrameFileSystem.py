@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.android.lz4;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 
@@ -37,7 +37,7 @@ import ghidra.util.task.UnknownProgressWrappingTaskMonitor;
 @FileSystemInfo(type = "lz4frame", description = "LZ4 Frame Format", factory = GFileSystemBaseFactory.class)
 public class LZ4FrameFileSystem extends GFileSystemBase {
 
-	/** LZ4 Magic Number */
+    # /** LZ4 Magic Number */
 	public final static int LZ4F_MAGIC = 0x184D2204;
 	public final static byte[] LZ4F_MAGIC_BYTES = { 0x04, 0x22, 0x4d, 0x18 };
 

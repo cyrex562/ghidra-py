@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios.dyldcache;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.io.FilenameUtils;
@@ -55,7 +55,7 @@ public class DyldCacheFileSystem extends GFileSystemBase {
 	private Map<Long, MappingRange> stubMap = new HashMap<>();
 	private Map<Long, MappingRange> dyldDataMap = new HashMap<>();
 
-	/**
+    # /**
 	 * Creates a new {@link DyldCacheFileSystem}
 	 * 
 	 * @param fileSystemName The name of the file system
@@ -233,7 +233,7 @@ public class DyldCacheFileSystem extends GFileSystemBase {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the open {@link SplitDyldCache}
 	 * 
 	 * @return The opened {@link SplitDyldCache}, or null if it has is not open
@@ -242,7 +242,7 @@ public class DyldCacheFileSystem extends GFileSystemBase {
 		return splitDyldCache;
 	}
 
-	/**
+    # /**
 	 * Gets the text stub path for the given DYLD Cache name
 	 * 
 	 * @param dyldCacheName The name of the DYLD Cache
@@ -252,7 +252,7 @@ public class DyldCacheFileSystem extends GFileSystemBase {
 		return "/STUBS/STUBS." + FilenameUtils.getExtension(dyldCacheName);
 	}
 
-	/**
+    # /**
 	 * Gets the DYLD data path for the given DYLD Cache name
 	 * 
 	 * @param dyldCacheName The name of the DYLD Cache
@@ -266,7 +266,7 @@ public class DyldCacheFileSystem extends GFileSystemBase {
 			mappingIndex);
 	}
 
-	/**
+    # /**
 	 * "Stores" the given {@link GFile file} and it's parent hierarchy in lookup maps for future
 	 * access
 	 * 
@@ -290,7 +290,7 @@ public class DyldCacheFileSystem extends GFileSystemBase {
 		storeFile(parentFile, null, null);
 	}
 
-	/**
+    # /**
 	 * Gets the default range of the given {@link DyldCacheMappingAndSlideInfo}
 	 * 
 	 * @param mappingInfo The {@link DyldCacheMappingAndSlideInfo} to the the range of
@@ -303,7 +303,7 @@ public class DyldCacheFileSystem extends GFileSystemBase {
 		return rangeSet;
 	}
 
-	/**
+    # /**
 	 * Reduces the given ranges so they do not overlap with the segments founded in the given image
 	 * 
 	 * @param splitDyldCacheIndex The {@link SplitDyldCache}

@@ -16,7 +16,7 @@
 package ghidra.framework.main;
 
 import java.awt.*;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

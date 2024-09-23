@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.debug.service.tracermi;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.net.*;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;

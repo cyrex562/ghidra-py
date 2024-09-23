@@ -32,7 +32,7 @@ public interface XmlPullParser {
      */
     public String getName();
 
-	/**
+    # /**
 	 * Returns the value of the attribute of the processing instruction.
 	 * For example, <code>&lt;?program_dtd version="1"?&gt;</code>
 	 * @param name the name of the processing instruction

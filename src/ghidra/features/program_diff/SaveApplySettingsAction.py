@@ -33,7 +33,7 @@ class SaveApplySettingsAction extends DockingAction {
 	private DiffApplySettingsProvider settingsProvider;
 	private DiffApplySettingsOptionManager settingsOptionMgr;
 
-	/**
+    # /**
 	 * Creates a new SaveApplySettingsAction.
 	 * @param settingsProvider the component provider where this action will be added.
 	 * @param settingsOptionMgr the options manager to save the default apply settings to.

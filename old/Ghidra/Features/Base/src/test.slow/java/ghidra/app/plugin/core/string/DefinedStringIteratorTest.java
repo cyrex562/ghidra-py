@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.string;
 
 import static org.junit.Assert.*;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 
 import org.junit.*;

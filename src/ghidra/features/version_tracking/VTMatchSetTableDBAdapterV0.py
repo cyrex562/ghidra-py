@@ -17,7 +17,7 @@ package ghidra.feature.vt.api.db;
 
 import static ghidra.feature.vt.api.db.VTMatchSetTableDBAdapter.ColumnDescription.*;
 
-import java.io.IOException;
+
 import java.io.StringWriter;
 
 import org.jdom.Element;

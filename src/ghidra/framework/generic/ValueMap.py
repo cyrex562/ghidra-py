@@ -15,7 +15,7 @@
  */
 package ghidra.util.map;
 
-import java.io.*;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -51,7 +51,7 @@ public abstract class ValueMap<T> implements Serializable {
 		this(name, DEFAULT_NUMBER_PAGE_BITS, objectClass);
 	}
 
-	/**
+    # /**
 	 * Construct a PropertyMap
 	 * @param name property name
 	 * @param numPageBits number of bits to use for the
@@ -79,7 +79,7 @@ public abstract class ValueMap<T> implements Serializable {
 		propertyPageIndex = new ValueStoragePageIndex();
 	}
 
-	/**
+    # /**
 	 * Returns the size (in bytes) of the data that is stored in this property
 	 * set.
 	 * @return the size (in bytes) of the data that is stored in this property
@@ -87,14 +87,14 @@ public abstract class ValueMap<T> implements Serializable {
 	 */
 	public abstract int getDataSize();
 
-	/**
+    # /**
 	 * Get the name for this property manager.
 	 */
 	public synchronized String getName() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns property object class associated with this set.
 	 */
 	public Class<T> getObjectClass() {
@@ -115,7 +115,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return page;
 	}
 
-	/**
+    # /**
 	 * Given two indices it indicates whether there is an index in
 	 * that range (inclusive) having the property.<p>
 	 * @param start	the start of the index range.
@@ -140,7 +140,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Removes all property values within a given range.
 	 * @param start begin range
 	 * @param end end range, inclusive
@@ -201,7 +201,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return status;
 	}
 
-	/**
+    # /**
 	 * Remove the property value at the given index.
 	 * @return true if the property value was removed, false
 	 *   otherwise.
@@ -216,7 +216,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return removeFromPage(page, pageID, offset);
 	}
 
-	/**
+    # /**
 	 * Remove the property on page at offset.  If Page is now empty, remove it.
 	 */
 	private boolean removeFromPage(ValueStoragePage<T> page, long pageID, short offset) {
@@ -236,7 +236,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * returns whether there is a property value at index.
 	 * @param index the long representation of an address.
 	 */
@@ -248,7 +248,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return page.hasProperty(getPageOffset(index));
 	}
 
-	/**
+    # /**
 	 * Get the next index where the property value exists.
 	 * @param index the address from which to begin the search (exclusive).
 	 * @throws NoSuchIndexException thrown if there is no address with
@@ -284,7 +284,7 @@ public abstract class ValueMap<T> implements Serializable {
 		throw NoSuchIndexException.noSuchIndexException;
 	}
 
-	/**
+    # /**
 	 * Get the previous index where a property value exists.
 	 * @param index the long representation of an address from which
 	 * 		to begin the search (exclusive).
@@ -323,7 +323,7 @@ public abstract class ValueMap<T> implements Serializable {
 		throw NoSuchIndexException.noSuchIndexException;
 	}
 
-	/**
+    # /**
 	 * Get the first index where a property value exists.
 	 * @throws NoSuchIndexException when there is no property value for any index.
 	 */
@@ -334,7 +334,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return getNextPropertyIndex(0);
 	}
 
-	/**
+    # /**
 	 * Get the last index where a property value exists.
 	 * @exception NoSuchIndexException
 	 *                   thrown if there is no address having the property value.
@@ -347,7 +347,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return getPreviousPropertyIndex(-1);
 	}
 
-	/**
+    # /**
 	 * Get the number of properties in the set.
 	 * @return the number of properties
 	 */
@@ -355,7 +355,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return numProperties;
 	}
 
-	/**
+    # /**
 	 * Extract the page ID from the given index.
 	 * @param index the long representation of an address.
 	 */
@@ -364,7 +364,7 @@ public abstract class ValueMap<T> implements Serializable {
 
 	}
 
-	/**
+    # /**
 	 * Extract the page offset from the given index.
 	 * @param index the long representation of an address.
 	 */
@@ -372,7 +372,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return (short) (index & pageMask);
 	}
 
-	/**
+    # /**
 	 * Create an index from the pageID and the offset in the page.
 	 * @return the long representation of an address.
 	 */
@@ -380,7 +380,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return (pageID << numPageBits) | offset;
 	}
 
-	/**
+    # /**
 	 * Move the range of properties to the newStart index.
 	 * @param start the beginning of the property range to move
 	 * @param end the end of the property range to move
@@ -432,7 +432,7 @@ public abstract class ValueMap<T> implements Serializable {
 	protected abstract void restoreProperty(ObjectInputStream ois, long addr)
 			throws IOException, ClassNotFoundException;
 
-	/**
+    # /**
 	 * Creates an iterator over all the indexes that have this property within
 	 * the given range.
 	 *
@@ -444,7 +444,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return new LongIteratorImpl(this, start, end);
 	}
 
-	/**
+    # /**
 	 * Creates an iterator over all the indexes that have this property within
 	 * the given range.
 	 * 
@@ -459,7 +459,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return new LongIteratorImpl(this, start, end, atStart);
 	}
 
-	/**  
+    # /**  
 	 * Returns an iterator over the indices having the given property
 	 * value.
 	 */
@@ -467,7 +467,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return new LongIteratorImpl(this);
 	}
 
-	/** 
+    # /** 
 	 * Returns an iterator over the indices having the given property
 	 * value.
 	 * @param start the starting index for the iterator.
@@ -476,7 +476,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return new LongIteratorImpl(this, start, true);
 	}
 
-	/** 
+    # /** 
 	 * Returns an iterator over the indices having the given property
 	 * value.
 	 * @param start the starting index for the iterator.
@@ -486,7 +486,7 @@ public abstract class ValueMap<T> implements Serializable {
 		return new LongIteratorImpl(this, start, before);
 	}
 
-	/**
+    # /**
 	 * Saves all property values between start and end to the output stream
 	 * @param oos the output stream
 	 * @param start the first index in the range to save.
@@ -516,7 +516,7 @@ public abstract class ValueMap<T> implements Serializable {
 		oos.writeByte(0);
 	}
 
-	/**
+    # /**
 	 * Restores all the properties from the input stream.  Any existing
 	 * properties will first be removed.
 	 * @param ois the input stream.

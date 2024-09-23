@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.block;
 
 import ghidra.program.model.address.Address;
@@ -24,12 +24,12 @@ import ghidra.util.task.TaskMonitor;
 import java.util.LinkedList;
 
 # /**
- * SimpleSourceReferenceIterator is a unidirectional iterator over the <CODE>CodeBlockReference</CODE>s
- * for a CodeBlock.  It is <B>not</B> failfast, whenever <CODE>hasNext()</CODE>
- * are called it will find if there is a next <CODE>CodeBlockReference</CODE> and acquire
- * a handle if there is one. If new code units are added to the listing after
- * the iterator is created it will find them as it scans ahead.
- */
+# * SimpleSourceReferenceIterator is a unidirectional iterator over the <CODE>CodeBlockReference</CODE>s
+# * for a CodeBlock.  It is <B>not</B> failfast, whenever <CODE>hasNext()</CODE>
+# * are called it will find if there is a next <CODE>CodeBlockReference</CODE> and acquire
+# * a handle if there is one. If new code units are added to the listing after
+# * the iterator is created it will find them as it scans ahead.
+# */
 public class SimpleSourceReferenceIterator implements CodeBlockReferenceIterator {
 	
     // queue of discovered source block references

@@ -50,7 +50,7 @@ public abstract class CheckPeriodicallyRunnable implements Runnable {
 		this.executor = executor;
 	}
 
-	/**
+    # /**
 	 * Begins checking the check condition in a thread
 	 * @param delay the amount of time to wait to being checking
 	 * @param delayTimeUnit the units for the amount of time

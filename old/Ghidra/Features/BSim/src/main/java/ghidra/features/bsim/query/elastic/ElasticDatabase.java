@@ -15,7 +15,7 @@
  */
 package ghidra.features.bsim.query.elastic;
 
-import java.io.IOException;
+
 import java.io.StringReader;
 import java.net.MalformedURLException;
 import java.net.URL;

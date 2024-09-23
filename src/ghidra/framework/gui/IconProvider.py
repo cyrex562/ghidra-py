@@ -17,7 +17,7 @@ package resources;
 
 import java.awt.Image;
 import java.io.File;
-import java.io.IOException;
+
 import java.net.URISyntaxException;
 import java.net.URL;
 
@@ -60,7 +60,7 @@ public class IconProvider {
 		return url;
 	}
 
-	/**
+    # /**
 	 * Returns the value of {@link #getUrl()} if it is non-null.  Otherwise, this class will
 	 * attempt to create a temporary file containing the image of this class in order to return
 	 * a URL for that temp file.  If a temporary file could not be created, then the URL 

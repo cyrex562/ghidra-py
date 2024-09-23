@@ -17,7 +17,7 @@ package ghidra.program.database.data;
 
 import static ghidra.program.database.data.EnumSignedState.*;
 
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 

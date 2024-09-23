@@ -37,7 +37,7 @@ public class CompileFlagsMsSymbol extends AbstractMsSymbol {
 	protected boolean compiled32BitMode;
 	protected String compilerVersionString;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -61,7 +61,7 @@ public class CompileFlagsMsSymbol extends AbstractMsSymbol {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the processor.
 	 * @return the processor.
 	 */
@@ -90,7 +90,7 @@ public class CompileFlagsMsSymbol extends AbstractMsSymbol {
 		return "COMPILE";
 	}
 
-	/**
+    # /**
 	 * Internal method that breaks out the flag values {@code byte[3]} array.  Method does not
 	 * check size.
 	 * @param flagsIn {@code byte[]} that needs to have 3 bytes.

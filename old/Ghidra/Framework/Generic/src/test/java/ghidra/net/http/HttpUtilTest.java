@@ -18,7 +18,7 @@ package ghidra.net.http;
 import java.util.Properties;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 
 public class HttpUtilTest {

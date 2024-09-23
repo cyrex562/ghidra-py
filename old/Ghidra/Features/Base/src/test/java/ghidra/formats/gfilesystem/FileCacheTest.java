@@ -17,7 +17,7 @@ package ghidra.formats.gfilesystem;
 
 import static org.junit.Assert.*;
 
-import java.io.*;
+
 import java.util.Arrays;
 
 import org.junit.*;

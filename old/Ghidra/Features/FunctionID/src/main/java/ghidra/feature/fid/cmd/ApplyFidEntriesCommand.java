@@ -15,7 +15,7 @@
  */
 package ghidra.feature.fid.cmd;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.cmd.label.SetLabelPrimaryCmd;

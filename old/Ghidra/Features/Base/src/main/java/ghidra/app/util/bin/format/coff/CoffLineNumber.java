@@ -20,7 +20,7 @@ import ghidra.app.util.bin.*;
 import ghidra.program.model.data.DataType;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class CoffLineNumber implements StructConverter {
 	public final static int SIZEOF = 4 + 2;

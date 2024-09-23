@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.zip.InflaterInputStream;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 
 import ghidra.app.util.bin.BinaryReader;

@@ -76,7 +76,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 	private AddressSetView pgm1CompatibleSet;
 	private boolean pgmContextEnabled = true;
 
-	/**
+    # /**
 	 * @param frame
 	 */
 	public ExecuteDiffDialog() {
@@ -139,7 +139,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 		return panel;
 	}
 
-	/**
+    # /**
 	 *  Create a panel for all checkboxes related to applying differences.
 	 */
 	private JPanel createDiffPanel() {
@@ -166,7 +166,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 		return addressPanel;
 	}
 
-	/**
+    # /**
 	 *  Create a panel for the checkboxes to indicate the filter settings.
 	 */
 	private JPanel createLimitPanel() {
@@ -186,7 +186,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 		return panel;
 	}
 
-	/**
+    # /**
 	 *  Create a panel for the checkboxes to indicate the filter settings.
 	 */
 	private JPanel createDiffFilterPanel() {
@@ -378,7 +378,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 		diffProgramContextCB.setSelected(diffProgramContext);
 	}
 
-	/**
+    # /**
 	 * Get a copy of the diff tool filter settings.
 	 * @return the current diff Filter settings.
 	 */
@@ -386,7 +386,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 		return new ProgramDiffFilter(diffFilter);
 	}
 
-	/**
+    # /**
 	 * Sets the diff tool filter settings.
 	 * @param filter the new diff Filter settings.
 	 */
@@ -405,7 +405,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 		adjustDiffFilter();
 	}
 
-	/**
+    # /**
 	 * Get the state of the limitToSelection flag.
 	 * @return true indicates limitToSelection box is checked.
 	 */
@@ -429,7 +429,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 		setOkEnabled(pgm1AddressSet != null && !pgm1AddressSet.isEmpty());
 	}
 
-	/**
+    # /**
 	 * Get the current address set for the diff depending on whether or not the 
 	 * Diff is limited to a selection.
 	 */
@@ -463,7 +463,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 		listenerList.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Return true if at least one of the checkboxes for the filter
 	 * has been selected.
 	 */
@@ -472,7 +472,7 @@ public class ExecuteDiffDialog extends ReusableDialogComponentProvider {
 			diffComments || diffBookmarks || diffProperties || diffFunctions);
 	}
 
-	/**
+    # /**
 	 * Return true if all types of differences are being determined.
 	 */
 	boolean isMarkingAllDiffs() {

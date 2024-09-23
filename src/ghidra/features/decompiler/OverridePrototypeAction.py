@@ -41,7 +41,7 @@ public class OverridePrototypeAction extends AbstractDecompilerAction {
 		setPopupMenuData(new MenuData(new String[] { "Override Signature" }, "Decompile"));
 	}
 
-	/**
+    # /**
 	 * Try to find the PcodeOp representing the call the user has selected
 	 * @param program is the Program
 	 * @param tokenAtCursor is the point in the window the user has selected
@@ -324,7 +324,7 @@ public class OverridePrototypeAction extends AbstractDecompilerAction {
 		return dialog.getFunctionDefinition();
 	}
 
-	/**
+    # /**
 	 * <code>ProtoOverrideDialog</code> provides the ability to edit the
 	 * function signature associated with a specific function definition override
 	 * at a sub-function callsite.  
@@ -335,7 +335,7 @@ public class OverridePrototypeAction extends AbstractDecompilerAction {
 		private final String initialSignature;
 		private final String initialConvention;
 
-		/**
+	    # /**
 		 * Construct signature override for called function
 		 * @param tool active tool
 		 * @param func function from which program access is achieved and supply of preferred 

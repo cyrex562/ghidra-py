@@ -33,14 +33,14 @@ public class ClangReturnType extends ClangTokenGroup {
 		datatype = null;
 	}
 
-	/**
+    # /**
 	 * @return the data-type represented by this text
 	 */
 	public DataType getDataType() {
 		return datatype;
 	}
 
-	/**
+    # /**
 	 * @return a Varnode representing the return value in the function's data-flow
 	 */
 	public Varnode getVarnode() {

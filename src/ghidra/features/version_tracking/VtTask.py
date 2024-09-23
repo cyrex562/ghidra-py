@@ -77,7 +77,7 @@ public abstract class VtTask extends Task {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Determine if session events should be suspended during task execution.
 	 * This can improve performance during task execution at the expense of bulk
 	 * table updates at task completion.  Method return false by default.
@@ -90,7 +90,7 @@ public abstract class VtTask extends Task {
 
 	protected abstract boolean doWork(TaskMonitor monitor) throws Exception;
 
-	/**
+    # /**
 	 * Returns true if this task was cancelled.
 	 *
 	 * @return true if this task was cancelled.
@@ -99,7 +99,7 @@ public abstract class VtTask extends Task {
 		return cancelled;
 	}
 
-	/**
+    # /**
 	 * Returns true if the Task executed successfully.
 	 *
 	 * <P>Note: this method only makes sense if called after the task has executed.  If called
@@ -111,7 +111,7 @@ public abstract class VtTask extends Task {
 		return success;
 	}
 
-	/**
+    # /**
 	 * returns true if the task did not successfully complete due to an error
 	 *
 	 * @return true if the task did not successfully complete due to an error
@@ -146,7 +146,7 @@ public abstract class VtTask extends Task {
 		return "Task Failed: " + getTaskTitle();
 	}
 
-	/**
+    # /**
 	 * Returns an HTML formated error message
 	 * @return an HTML formatted error message
 	 */

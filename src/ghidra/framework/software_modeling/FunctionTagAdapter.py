@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.function;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -24,14 +24,14 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * This represents a table that stores all possible function tags available for use.
- * The table consists of two columns: one for the tag name, and one indicating
- * whether this tag is modifiable.
- * 
- * Non-modifiable tags cannot be deleted or edited by any user. These are typically
- * tags that have been pre-loaded via some external mechanism and need to be 
- * preserved as originally defined.
- */
+# * This represents a table that stores all possible function tags available for use.
+# * The table consists of two columns: one for the tag name, and one indicating
+# * whether this tag is modifiable.
+# * 
+# * Non-modifiable tags cannot be deleted or edited by any user. These are typically
+# * tags that have been pre-loaded via some external mechanism and need to be 
+# * preserved as originally defined.
+# */
 abstract class FunctionTagAdapter {
 
 	static final String TABLE_NAME = "Function Tags";
@@ -41,7 +41,7 @@ abstract class FunctionTagAdapter {
 	static final int NAME_COL = 0;
 	static final int COMMENT_COL = 1;
 
-	/**
+    # /**
 	 * 
 	 * @param handle database handle
 	 * @param openMode CREATE, UPDATE, UPGRADE
@@ -81,7 +81,7 @@ abstract class FunctionTagAdapter {
 		return new FunctionTagAdapterV0(handle, true);
 	}
 
-	/**
+    # /**
 	 * Returns all tag records in the database.
 	 * 
 	 * @return list of tags
@@ -89,7 +89,7 @@ abstract class FunctionTagAdapter {
 	 */
 	abstract RecordIterator getRecords() throws IOException;
 
-	/**
+    # /**
 	 * Returns a record matching the given tag name, or null if not found.
 	 * 
 	 * @param tag the tag name
@@ -98,7 +98,7 @@ abstract class FunctionTagAdapter {
 	 */
 	abstract DBRecord getRecord(String tag) throws IOException;
 
-	/**
+    # /**
 	 * Returns the tag record with the given id.
 	 * 
 	 * @param id the tag index
@@ -107,7 +107,7 @@ abstract class FunctionTagAdapter {
 	 */
 	abstract DBRecord getRecord(long id) throws IOException;
 
-	/**
+    # /**
 	 * Creates a {@link DBRecord} with the given tag name.
 	 * 
 	 * @param tag the tag name to create
@@ -117,14 +117,14 @@ abstract class FunctionTagAdapter {
 	 */
 	abstract DBRecord createTagRecord(String tag, String comment) throws IOException;
 
-	/**
+    # /**
 	 * Updates the database record for a tag.
 	 * @param record tag record
 	 * @throws IOException
 	 */
 	abstract void updateRecord(DBRecord record) throws IOException;
 
-	/**
+    # /**
 	 * Removes the tag with the given name from the database.
 	 * 
 	 * @param id tag id
@@ -132,7 +132,7 @@ abstract class FunctionTagAdapter {
 	 */
 	abstract void removeTagRecord(long id) throws IOException;
 
-	/**
+    # /**
 	 * Returns the total number of tags in the database.
 	 * 
 	 * @return the number of tags

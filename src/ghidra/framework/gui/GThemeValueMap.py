@@ -35,13 +35,13 @@ public class GThemeValueMap {
 	protected Map<String, IconValue> iconMap = new HashMap<>();
 	protected Map<String, JavaPropertyValue> propertyMap = new HashMap<>();
 
-	/**
+    # /**
 	 * Constructs a new empty map.
 	 */
 	public GThemeValueMap() {
 	}
 
-	/**
+    # /**
 	 * Constructs a new value map, populated by all the values in the given map. Essentially clones
 	 * the given map.
 	 * @param initial the set of values to initialize to
@@ -50,7 +50,7 @@ public class GThemeValueMap {
 		load(initial);
 	}
 
-	/**
+    # /**
 	 * Adds the {@link ColorValue} to the map. If a ColorValue already exists in the map with
 	 * the same id, it will be replaced
 	 * @param value the {@link ColorValue} to store in the map.
@@ -63,7 +63,7 @@ public class GThemeValueMap {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Adds the {@link FontValue} to the map. If a FontValue already exists in the map with
 	 * the same id, it will be replaced
 	 * @param value the {@link FontValue} to store in the map.
@@ -76,7 +76,7 @@ public class GThemeValueMap {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Adds the {@link IconValue} to the map. If a IconValue already exists in the map with
 	 * the same id, it will be replaced
 	 * @param value the {@link IconValue} to store in the map.
@@ -89,7 +89,7 @@ public class GThemeValueMap {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Adds the given property value to this map. If a property value already exists in the map with
 	 * the same id, it will be replaced.
 	 * @param value the {@link JavaPropertyValue} to store in the map.
@@ -102,7 +102,7 @@ public class GThemeValueMap {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Returns the current {@link ColorValue} for the given id or null if none exists.
 	 * @param id the id to look up a color for
 	 * @return the current {@link ColorValue} for the given id or null if none exists.
@@ -111,7 +111,7 @@ public class GThemeValueMap {
 		return colorMap.get(id);
 	}
 
-	/**
+    # /**
 	 * Returns the current {@link FontValue} for the given id or null if none exists.
 	 * @param id the id to look up a font for
 	 * @return the current {@link FontValue} for the given id or null if none exists.

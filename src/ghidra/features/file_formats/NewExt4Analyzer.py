@@ -17,7 +17,7 @@ package ghidra.file.formats.ext4;
 
 import java.util.List;
 
-import java.io.IOException;
+
 
 import ghidra.app.cmd.comments.SetCommentCmd;
 import ghidra.app.plugin.core.analysis.AutoAnalysisManager;
@@ -172,7 +172,7 @@ public class NewExt4Analyzer extends FileFormatAnalyzer {
 		return true;
 	}
 
-	/**
+    # /**
 	 * This method allows for EXT4 files larger than 2GB to be imported as 2 (or 3) separate programs.
 	 * Then if both programs are opened (and have the same base name), then both will be analyzed. 
 	 */

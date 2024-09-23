@@ -287,7 +287,7 @@ public class DecompilerDataTypeReferenceFinder implements DataTypeReferenceFinde
 		}
 	}
 
-	/**
+    # /**
 	 * Class to do the work of searching through the Decompiler's results for the desired
 	 * data type access.
 	 */
@@ -338,7 +338,7 @@ public class DecompilerDataTypeReferenceFinder implements DataTypeReferenceFinde
 			variables.forEach(v -> matchUsage(v, results));
 		}
 
-		/** Finds any search input match in the given reference */
+	    # /** Finds any search input match in the given reference */
 		private void matchUsage(DecompilerReference reference, List<DataTypeReference> results) {
 			DtrfDbg.println("Checking " + reference);
 			reference.accumulateMatches(dataType, fieldMatcher, results);
@@ -355,7 +355,7 @@ public class DecompilerDataTypeReferenceFinder implements DataTypeReferenceFinde
 			return result;
 		}
 
-		/**
+	    # /**
 		 * Uses the given line to find variables (also parameters and return types) and any
 		 * accesses to them in that line.   A given variable may be used directly or, as in
 		 * the case with Composite types, may have one of its fields accessed.  Each result

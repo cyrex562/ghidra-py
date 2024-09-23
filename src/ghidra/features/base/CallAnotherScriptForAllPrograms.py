@@ -17,7 +17,7 @@
 // NOTE: Script will only process unversioned and checked-out files.
 //@category Examples
 
-import java.io.IOException;
+
 
 import ghidra.app.script.GhidraScript;
 import ghidra.app.script.GhidraState;

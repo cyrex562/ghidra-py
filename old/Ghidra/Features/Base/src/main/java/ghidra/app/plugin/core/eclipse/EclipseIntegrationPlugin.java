@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.eclipse;
 
-import java.io.*;
+
 import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;

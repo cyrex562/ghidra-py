@@ -19,7 +19,7 @@ package ghidra.framework.main;
 
 import java.awt.*;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -86,7 +86,7 @@ class EditPluginPathDialog extends DialogComponentProvider {
 	private JPanel mainPanel;
 	private String errorMsg;
 
-	/**
+    # /**
 	 * Creates a non-modal dialog with OK, Apply, Cancel buttons.
 	 * The OK and Apply buttons will be enabled when user makes unapplied
 	 * changes to the UserPluginPath or UserPluginJarDirectory property values.
@@ -102,7 +102,7 @@ class EditPluginPathDialog extends DialogComponentProvider {
 		pluginPathsList.setModel(listModel);
 	}
 
-	/**
+    # /**
 	 * Define the Main panel for the dialog here.
 	 * @return JPanel the completed <CODE>Main Panel</CODE>
 	 */
@@ -156,7 +156,7 @@ class EditPluginPathDialog extends DialogComponentProvider {
 		errorMsg = null;
 	}
 
-	/**
+    # /**
 	 * Gets called when the user selects Ok
 	 */
 	@Override
@@ -169,7 +169,7 @@ class EditPluginPathDialog extends DialogComponentProvider {
 		}
 	}
 
-	/**
+    # /**
 	 * Reset the list of paths each time the dialog is shown
 	 * @param tool the tool
 	 */
@@ -354,7 +354,7 @@ class EditPluginPathDialog extends DialogComponentProvider {
 		removeButton.setEnabled(enabled);
 	}
 
-	/**
+    # /**
 	 * done here so can be handled in a separate thread
 	 */
 	private void handleApply() {
@@ -452,7 +452,7 @@ class EditPluginPathDialog extends DialogComponentProvider {
 
 	}
 
-	/**
+    # /**
 	 * ListCellRenderer that renders the path values in the list,
 	 * coloring paths that are no longer readable in red.
 	 */

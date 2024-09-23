@@ -20,7 +20,7 @@ import ghidra.framework.store.FileSystem;
 import ghidra.util.PropertyFile;
 import ghidra.util.exception.DuplicateFileException;
 
-import java.io.*;
+
 
 public class IndexedPropertyFile extends PropertyFile {
 

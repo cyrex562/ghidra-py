@@ -53,14 +53,14 @@ public class ExecutableComparison {
 	private int exceedCount;					// Number of times hitCountThreshold was exceeded
 	private TaskMonitor monitor;				// Monitor for long running jobs
 
-	/**
+    # /**
 	 * Mutable integer class for histogram
 	 */
 	static public class Count {
 		public int value = 0;
 	}
 
-	/**
+    # /**
 	 * Initialize a comparison object with an active connection and thresholds, using the matrix scorer
 	 * @param database is the active connection to a BSim database
 	 * @param hitCountThreshold is the maximum number of functions to consider in one cluster
@@ -83,7 +83,7 @@ public class ExecutableComparison {
 		scorer.transferSettings(info);
 	}
 
-	/**
+    # /**
 	 * Initialize a comparison object with an active connection and thresholds, using the row scorer
 	 * @param database is the active connection to a BSim database
 	 * @param hitCountThreshold is the maximum number of functions to consider in one cluster
@@ -109,28 +109,28 @@ public class ExecutableComparison {
 		addExecutable(singleMd5);
 	}
 
-	/**
+    # /**
 	 * @return maximum hit count seen for a cluster
 	 */
 	public int getMaxHitCount() {
 		return maxHitCount;
 	}
 
-	/**
+    # /**
 	 * @return number of clusters that exceeded hitCountThreshold
 	 */
 	public int getExceedCount() {
 		return exceedCount;
 	}
 
-	/**
+    # /**
 	 * @return true if similarity and significance thresholds have been set
 	 */
 	public boolean isConfigured() {
 		return (scorer.simThreshold > 0.0);
 	}
 
-	/**
+    # /**
 	 * Make sure the database has an active connection. Query for basic
 	 * information and inform the scorer of settings
 	 * @return information from the database
@@ -149,7 +149,7 @@ public class ExecutableComparison {
 		return response.info;
 	}
 
-	/**
+    # /**
 	 * Look up a full ExecutableRecord in the database given an md5
 	 * @param md5 is the md5 String
 	 * @return the corresponding ExecutableRecord
@@ -174,7 +174,7 @@ public class ExecutableComparison {
 		return response.manage.getExecutableRecordSet().first();
 	}
 
-	/**
+    # /**
 	 * Query for all the vector ids associated with a specific executable.
 	 * Store them in the vectorMap
 	 * @param exeSpec indicates the specific executable
@@ -206,7 +206,7 @@ public class ExecutableComparison {
 		}
 	}
 
-	/**
+    # /**
 	 * Given a set of executables established for scoring, load all
 	 * of the associated vector ids into -vectorMap-
 	 * @throws CancelledException if something trips the monitor
@@ -232,7 +232,7 @@ public class ExecutableComparison {
 		}
 	}
 
-	/**
+    # /**
 	 * Build a QueryNearestVector object for querying a single vector.
 	 * This currently involves building a temporary "function" to hold the vector
 	 * @param vector is the LSHVector to prepare the query for
@@ -256,7 +256,7 @@ public class ExecutableComparison {
 		return query;
 	}
 
-	/**
+    # /**
 	 * Look up a single vector by id
 	 * @param id is the Long id of the vector
 	 * @return the matching vector result
@@ -272,7 +272,7 @@ public class ExecutableComparison {
 		return response.vectorResults.get(0);
 	}
 
-	/**
+    # /**
 	 * Pull one ID out of the workList, look-up its corresponding vector, and query for nearby vectors.
 	 * Add IDs of the close vectors (that have not been seen before) to the workList
 	 * Use vectorMap to keep track of what's been seen/queried before
@@ -308,7 +308,7 @@ public class ExecutableComparison {
 		return currentVector;
 	}
 
-	/**
+    # /**
 	 * Starting with the first vector in -vectorMap- build the cluster of vectors that are within
 	 * a given -threshold- of each other. The cluster is the "connected" component containing the
 	 * first vector, where two vectors are "connected" if they are similar to each other within
@@ -336,7 +336,7 @@ public class ExecutableComparison {
 		return hitCount;
 	}
 
-	/**
+    # /**
 	 * For each vector in a list -cluster-, query the database and populate a
 	 * container (DescriptionManager) with the functions associated with the vector.
 	 * Return the list of containers
@@ -368,14 +368,14 @@ public class ExecutableComparison {
 		return result;
 	}
 
-	/**
+    # /**
 	 * @return the ExecutableScorer to allow examination of scores
 	 */
 	public ExecutableScorer getScorer() {
 		return scorer;
 	}
 
-	/**
+    # /**
 	 * Register an executable to be scored
 	 * @param md5 is the MD5 string of the executable
 	 * @throws LSHException if the executable is not in the database
@@ -385,7 +385,7 @@ public class ExecutableComparison {
 		scorer.addExecutable(exeRecord);
 	}
 
-	/**
+    # /**
 	 * Add all executables currently in the database to this object for comparison.
 	 * @param limit is the max number of executables to compare against (if greater than zero)
 	 * @throws LSHException for problems retrieving ExecutableRecords from the database
@@ -402,7 +402,7 @@ public class ExecutableComparison {
 		}
 	}
 
-	/**
+    # /**
 	 * Perform scoring between all registered executables.
 	 * @throws LSHException for any connection issues during the process
 	 * @throws CancelledException if the monitor reports cancellation
@@ -449,7 +449,7 @@ public class ExecutableComparison {
 		queriedIds = null;		// Release storage
 	}
 
-	/**
+    # /**
 	 * Remove any old scores and set new thresholds for the scorer
 	 * @param simThreshold is the similarity threshold for new scores
 	 * @param sigThreshold is the significance threshold for new scores
@@ -459,7 +459,7 @@ public class ExecutableComparison {
 		scorer.resetStorage(simThreshold, sigThreshold);
 	}
 
-	/**
+    # /**
 	 * Generate any missing self-scores within the list of registered executables.
 	 * @throws LSHException for problems retrieving vectors
 	 * @throws CancelledException if the user clicks "cancel"

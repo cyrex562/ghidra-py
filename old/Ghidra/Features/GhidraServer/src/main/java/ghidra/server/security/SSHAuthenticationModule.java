@@ -15,7 +15,7 @@
  */
 package ghidra.server.security;
 
-import java.io.*;
+
 import java.util.*;
 
 import javax.security.auth.Subject;

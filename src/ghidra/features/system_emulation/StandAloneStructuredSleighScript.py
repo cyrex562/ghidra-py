@@ -34,7 +34,7 @@ import ghidra.program.model.lang.LanguageID;
 public class StandAloneStructuredSleighScript extends GhidraScript {
 	private SleighLanguage language;
 
-	/**
+    # /**
 	 * This exists mostly so we can access the methods of anonymous nested classes deriving from
 	 * this one. The "compiler" will need to be able to access the methods, and that's not
 	 * ordinarily allowed since anonymous classes are implicitly "private." Conveniently, it also
@@ -60,7 +60,7 @@ public class StandAloneStructuredSleighScript extends GhidraScript {
 		language = (SleighLanguage) getLanguage(new LanguageID("DATA:BE:64:default"));
 
 		Map<String, SleighPcodeUseropDefinition<Object>> ops = new LookupStructuredSleigh() {
-			/**
+		    # /**
 			 * Add two in-memory vectors of 16 longs and store the result in memory
 			 * 
 			 * @param d pointer to the destination vector

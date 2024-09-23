@@ -26,12 +26,12 @@ import ghidra.program.model.address.*;
  */
 public interface AddressMap {
 
-	/**
+    # /**
 	 * Reserved key for an invalid key.
 	 */
 	public static final long INVALID_ADDRESS_KEY = -1;
 
-	/**
+    # /**
 	 * Get the database key associated with the given relative address.
 	 * This key uniquely identifies a relative location within the program.
 	 * If the program's image base is moved to another address, this key will map to a new
@@ -46,7 +46,7 @@ public interface AddressMap {
 	 */
 	public long getKey(Address addr, boolean create);
 
-	/**
+    # /**
 	 * Get the database key associated with the given absolute address.
 	 * This key uniquely identifies an absolute location within the program.
 	 * If the requested key does not exist and create is false, INVALID_ADDRESS_KEY
@@ -59,7 +59,7 @@ public interface AddressMap {
 	 */
 	public long getAbsoluteEncoding(Address addr, boolean create);
 
-	/**
+    # /**
 	 * Search for addr within the "sorted" keyRangeList and return the index of the
 	 * keyRange which contains the specified addr.
 	 * @param keyRangeList key range list to search
@@ -76,7 +76,7 @@ public interface AddressMap {
 	 */
 	public int findKeyRange(List<KeyRange> keyRangeList, Address addr);
 
-	/**
+    # /**
 	 * Generates a properly ordered list of database key ranges for a
 	 * a specified address range.  If absolute encodings are requested, 
 	 * only memory addresses will be included.  Returned key ranges are 
@@ -100,7 +100,7 @@ public interface AddressMap {
 	 */
 	public List<KeyRange> getKeyRanges(Address start, Address end, boolean create);
 
-	/**
+    # /**
 	 * Generates a properly ordered list of database key ranges for a
 	 * a specified address set.  If absolute encodings are requested, 
 	 * only memory addresses will be included.
@@ -111,7 +111,7 @@ public interface AddressMap {
 	 */
 	public List<KeyRange> getKeyRanges(AddressSetView set, boolean create);
 
-	/**
+    # /**
 	 * Returns the address that was used to generate the given long key. (If the image base was
 	 * moved, then a different address is returned unless the value was encoded using the
 	 * "absoluteEncoding" method.  If the program's default address space is segmented (i.e., SegmentedAddressSpace).
@@ -121,14 +121,14 @@ public interface AddressMap {
 	 */
 	public Address decodeAddress(long value);
 
-	/**
+    # /**
 	 * Returns the address factory associated with this map.
 	 * Null may be returned if map not associated with a specific address factory.
 	 * @return associated {@link AddressFactory} or null
 	 */
 	public AddressFactory getAddressFactory();
 
-	/**
+    # /**
 	 * Generates a properly ordered list of database key ranges for a
 	 * a specified address range.  If absolute encodings are requested, 
 	 * only memory addresses will be included.
@@ -143,7 +143,7 @@ public interface AddressMap {
 	public List<KeyRange> getKeyRanges(Address start, Address end, boolean absolute,
 			boolean create);
 
-	/**
+    # /**
 	 * Generates a properly ordered list of database key ranges for a
 	 * a specified address set.  If absolute encodings are requested, 
 	 * only memory addresses will be included.
@@ -156,17 +156,17 @@ public interface AddressMap {
 	 */
 	public List<KeyRange> getKeyRanges(AddressSetView set, boolean absolute, boolean create);
 
-	/**
+    # /**
 	 * Returns an address map capable of decoding old address encodings.
 	 */
 	public AddressMap getOldAddressMap();
 
-	/**
+    # /**
 	 * Returns true if this address map has been upgraded.
 	 */
 	public boolean isUpgraded();
 
-	/**
+    # /**
 	 * Returns the current image base setting.
 	 */
 	public Address getImageBase();

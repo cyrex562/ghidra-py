@@ -163,7 +163,7 @@ public class ClassFieldAttributes {
 			this.value = value;
 		}
 
-		/**
+	    # /**
 		 * Merge two Access values, leaning toward more restrictive. UNKNOWN is only returned
 		 *  if both are UNKNOWN.
 		 * @param other value to merge
@@ -177,7 +177,7 @@ public class ClassFieldAttributes {
 			return other;
 		}
 
-		/**
+	    # /**
 		 * Merge two Access values, leaning toward more permissive. UNKNOWN is only returned
 		 *  if both are UNKNOWN.
 		 * @param other value to merge

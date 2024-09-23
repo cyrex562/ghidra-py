@@ -16,7 +16,7 @@
 package ghidra.framework;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
@@ -30,7 +30,7 @@ import utility.module.ModuleUtilities;
 
 public class TestApplicationUtils {
 
-	/**
+    # /**
 	 * Returns the directory that contains the source code repository
 	 * @return the directory that contains the source code repository
 	 */
@@ -45,7 +45,7 @@ public class TestApplicationUtils {
 		return repo;
 	}
 
-	/**
+    # /**
 	 * Returns a directory that contains all repos for a given git clone. This directory name 
 	 * is unique to the active clone collection, which makes it useful for creating unique 
 	 * temporary directories to allow multiple simultaneous test runs.
@@ -61,7 +61,7 @@ public class TestApplicationUtils {
 		return repoContainer;
 	}
 
-	/**
+    # /**
 	 * Returns the directory containing the installation of this application.   The value returned
 	 * here will either be an actual installation directory or the parent directory of a cloned
 	 * repository.  This method will work in the various modes of operation, including:
@@ -128,7 +128,7 @@ public class TestApplicationUtils {
 		return new File(path);
 	}
 
-	/**
+    # /**
 	 * Creates a directory that is unique for the current installation. This allows clients to 
 	 * have multiple clones (for development mode) or multiple installations (for release mode)
 	 * on their machine, running tests from each repo simultaneously.

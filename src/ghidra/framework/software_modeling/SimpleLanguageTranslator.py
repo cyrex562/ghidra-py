@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
-import java.io.*;
+
 import java.lang.reflect.Constructor;
 import java.math.BigInteger;
 import java.util.*;
@@ -38,9 +38,9 @@ import ghidra.util.task.TaskMonitor;
 import ghidra.util.xml.XmlUtilities;
 
 # /**
- * <code>SimpleLanguageTranslator</code> provides a simple translator which
- * derives its mappings from an XML translation specification file.
- */
+# * <code>SimpleLanguageTranslator</code> provides a simple translator which
+# * derives its mappings from an XML translation specification file.
+# */
 class SimpleLanguageTranslator extends LanguageTranslatorAdapter {
 
 	static final Logger log = LogManager.getLogger(SimpleLanguageTranslator.class);
@@ -231,7 +231,7 @@ class SimpleLanguageTranslator extends LanguageTranslatorAdapter {
 			"}";
 	}
 
-	/**
+    # /**
 	 * Perform minimal parsing of translatorSpecFile and return new instance of
 	 * a SimpleLanguageTranslator.
 	 * 
@@ -264,7 +264,7 @@ class SimpleLanguageTranslator extends LanguageTranslatorAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * Generate a simple language translator from XML source
 	 * 
 	 * @param translatorSpecSource

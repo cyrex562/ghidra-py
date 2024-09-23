@@ -37,7 +37,7 @@ public class C13SectionIterator<T extends C13Section> implements ParsingIterator
 	private C13Type detectedType; // section type detected
 	private T currentSection = null;
 
-	/**
+    # /**
 	 * An Iterator of C13 Section types
 	 * @param reader PdbByteReader containing only C13 Section information and in newly
 	 * constructed state
@@ -91,7 +91,7 @@ public class C13SectionIterator<T extends C13Section> implements ParsingIterator
 		}
 	}
 
-	/**
+    # /**
 	 * Finds and parses the next C13 Section type requested
 	 * @return the found and parsed element. Can be null if not found
 	 * @throws CancelledException upon user cancellation

@@ -34,14 +34,14 @@ import java.math.BigInteger;
 public class XmlAttributes {
 	private StringBuffer buffer;
 
-	/**
+    # /**
 	 * Constructs a new empty XML attributes.
 	 */
 	public XmlAttributes() {
 		buffer = new StringBuffer();
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -51,7 +51,7 @@ public class XmlAttributes {
 		return s;
 	}
 
-	/**
+    # /**
 	 * Add a new string attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the string value
@@ -63,7 +63,7 @@ public class XmlAttributes {
 		buffer.append(" " + name + "=\"" + XmlUtilities.escapeElementEntities(value) + "\"");
 	}
 
-	/**
+    # /**
 	 * Add a new boolean attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the boolean value
@@ -72,7 +72,7 @@ public class XmlAttributes {
 		addAttribute(name, value ? "y" : "n");
 	}
 
-	/**
+    # /**
 	 * Add a new float attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the float value
@@ -81,7 +81,7 @@ public class XmlAttributes {
 		addAttribute(name, Float.toString(value));
 	}
 
-	/**
+    # /**
 	 * Add a new double attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the double value
@@ -90,7 +90,7 @@ public class XmlAttributes {
 		addAttribute(name, Double.toString(value));
 	}
 
-	/**
+    # /**
 	 * Add a new byte attribute as decimal.
 	 * @param name  the name of the new attribute
 	 * @param value the byte value
@@ -99,7 +99,7 @@ public class XmlAttributes {
 		addAttribute(name, value, false);
 	}
 
-	/**
+    # /**
 	 * Add a new byte attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the byte value
@@ -109,7 +109,7 @@ public class XmlAttributes {
 		addAttribute(name, hex ? Conv.byteToInt(value) : (int) value, hex);
 	}
 
-	/**
+    # /**
 	 * Add a new short attribute as decimal.
 	 * @param name  the name of the new attribute
 	 * @param value the short value
@@ -118,7 +118,7 @@ public class XmlAttributes {
 		addAttribute(name, value, false);
 	}
 
-	/**
+    # /**
 	 * Add a new short attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the short value
@@ -128,7 +128,7 @@ public class XmlAttributes {
 		addAttribute(name, hex ? Conv.shortToInt(value) : (int) value, hex);
 	}
 
-	/**
+    # /**
 	 * Add a new int attribute as decimal.
 	 * @param name  the name of the new attribute
 	 * @param value the int value
@@ -137,7 +137,7 @@ public class XmlAttributes {
 		addAttribute(name, value, false);
 	}
 
-	/**
+    # /**
 	 * Add a new int attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the int value
@@ -161,7 +161,7 @@ public class XmlAttributes {
 		buffer.append("\"");
 	}
 
-	/**
+    # /**
 	 * Add a new long attribute as decimal.
 	 * @param name  the name of the new attribute
 	 * @param value the long value
@@ -170,7 +170,7 @@ public class XmlAttributes {
 		addAttribute(name, value, false);
 	}
 
-	/**
+    # /**
 	 * Add a new long attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the long value
@@ -194,7 +194,7 @@ public class XmlAttributes {
 		buffer.append("\"");
 	}
 
-	/**
+    # /**
 	 * Add a new big integer attribute.
 	 * @param name  the name of the new attribute
 	 * @param value the big integer value
@@ -208,7 +208,7 @@ public class XmlAttributes {
 		buffer.append("\"");
 	}
 
-	/**
+    # /**
 	 * @return the number of attributes in this
 	 */
 	public boolean isEmpty() {

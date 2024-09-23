@@ -15,7 +15,7 @@
  */
 package ghidra.framework.project;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 import java.util.Map.Entry;
@@ -72,7 +72,7 @@ public class DefaultProject implements Project {
 	private WeakSet<ProjectViewListener> viewListeners =
 		WeakDataStructureFactory.createCopyOnWriteWeakSet();
 
-	/**
+    # /**
 	 * Constructor for creating a New project
 	 * 
 	 * @param projectManager the manager of this project
@@ -95,7 +95,7 @@ public class DefaultProject implements Project {
 		initializeNewProject();
 	}
 
-	/**
+    # /**
 	 * Constructor for opening a project.
 	 * 
 	 * @param projectManager the manager of this project
@@ -119,7 +119,7 @@ public class DefaultProject implements Project {
 		}
 	}
 
-	/**
+    # /**
 	 * Construct a project with specific project manager and data
 	 * 
 	 * @param projectManager the manager of this project
@@ -143,7 +143,7 @@ public class DefaultProject implements Project {
 		return projectManager;
 	}
 
-//	/**
+//    # /**
 //	 * Determine if the specified project location currently has a write lock.
 //	 * @param locator project storage locator
 //	 * @return true if project data current has write-lock else false
@@ -153,7 +153,7 @@ public class DefaultProject implements Project {
 //		return lock.isLocked();
 //	}
 
-//	/**
+//    # /**
 //	 * Creates a ProjectLock and attempts to lock it. This handles the case
 //	 * where the project was previously locked.
 //	 * 
@@ -217,7 +217,7 @@ public class DefaultProject implements Project {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the project URL for this project.
 	 */
 	@Override
@@ -298,7 +298,7 @@ public class DefaultProject implements Project {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove the view from this project.
 	 */
 	@Override
@@ -316,7 +316,7 @@ public class DefaultProject implements Project {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the tool services for this project.
 	 */
 	@Override
@@ -324,7 +324,7 @@ public class DefaultProject implements Project {
 		return toolManager != null ? toolManager.getToolServices() : null;
 	}
 
-	/**
+    # /**
 	 * Get the local tool chest for the user logged in.
 	 * 
 	 * @return the tool chest

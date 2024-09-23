@@ -58,7 +58,7 @@ import java.util.Objects;
  */
 public class ListenerSet<T> {
 
-	/**
+    # /**
 	 * A proxy which passes invocations to each member of this set
 	 */
 	private final T proxy;
@@ -67,7 +67,7 @@ public class ListenerSet<T> {
 	private ListenerErrorHandler errorHandler =
 		DataStructureErrorHandlerFactory.createListenerErrorHandler();
 
-	/**
+    # /**
 	 * Constructs a listener set that is backed by weak references.
 	 * @param iface the listener class type.
 	 * @param isWeak true signals to use weak storage for the listeners.  If using weak storage,
@@ -102,7 +102,7 @@ public class ListenerSet<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the proxy object.  Using this is the same as calling {@link #getProxy()}. Use this
 	 * method to make the client call more readable.
 	 *
@@ -112,7 +112,7 @@ public class ListenerSet<T> {
 		return proxy;
 	}
 
-	/**
+    # /**
 	 * Returns the proxy used by this class.  Using {@link #invoke()} is preferred for better
 	 * readability.
 	 * @return the proxy

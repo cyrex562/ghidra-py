@@ -22,7 +22,7 @@ import ghidra.program.model.address.Address;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 
 public class ObjectiveC1_InstanceVariable implements StructConverter {
 	private ObjectiveC1_State _state;

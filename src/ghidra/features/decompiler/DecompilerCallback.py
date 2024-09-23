@@ -15,7 +15,7 @@
  */
 package ghidra.app.decompiler.parallel;
 
-import java.io.IOException;
+
 
 import generic.cache.CachingPool;
 import generic.cache.CountingBasicFactory;
@@ -47,7 +47,7 @@ public abstract class DecompilerCallback<R> implements QCallback<Function, R> {
 		this.pool = new CachingPool<>(new DecompilerFactory(program, configurer));
 	}
 
-	/**
+    # /**
 	 * This is called when a function is decompiled.
 	 * 
 	 * @param results the decompiled results
@@ -82,7 +82,7 @@ public abstract class DecompilerCallback<R> implements QCallback<Function, R> {
 
 	}
 
-	/**
+    # /**
 	 * Sets the timeout for each decompile
 	 * 
 	 * @param timeoutSecs the timeout in seconds
@@ -91,7 +91,7 @@ public abstract class DecompilerCallback<R> implements QCallback<Function, R> {
 		this.timeout = timeoutSecs;
 	}
 
-	/**
+    # /**
 	 * Call this when all work is done so that the pooled decompilers can be disposed
 	 */
 	public void dispose() {

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.*;
+
 import java.net.*;
 
 import ghidra.framework.client.*;

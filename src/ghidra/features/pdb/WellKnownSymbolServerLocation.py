@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver.ui;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -39,7 +39,7 @@ import utilities.util.FileUtilities;
 public record WellKnownSymbolServerLocation(String location, String locationCategory,
 		String warning, String fileOrigin) {
 
-	/**
+    # /**
 	 * Loads all symbol server location files (*.pdburl) and returns a list of entries.
 	 * 
 	 * @return list of {@link WellKnownSymbolServerLocation} elements
@@ -69,7 +69,7 @@ public record WellKnownSymbolServerLocation(String location, String locationCate
 		return results;
 	}
 
-	/**
+    # /**
 	 * Returns a formatted StatusText containing all the warnings published by any untrusted
 	 * {@link WellKnownSymbolServerLocation} found in the list of symbolservers.
 	 * 

@@ -24,7 +24,7 @@ import java.awt.*;
 public class HorizontalLayout implements LayoutManager {
 	int hgap;
 
-	/**
+    # /**
 	 * Constructor for HorizontalLayout.
 	 * @param hgap gap (in pixels) between components.
 	 */
@@ -32,21 +32,21 @@ public class HorizontalLayout implements LayoutManager {
 		this.hgap = hgap;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#addLayoutComponent(String, Component)
 	 */
 	@Override
 	public void addLayoutComponent(String name, Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#removeLayoutComponent(Component)
 	 */
 	@Override
 	public void removeLayoutComponent(Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#preferredLayoutSize(Container)
 	 */
 	@Override
@@ -66,7 +66,7 @@ public class HorizontalLayout implements LayoutManager {
 			height + insets.top + insets.bottom);
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#minimumLayoutSize(Container)
 	 */
 	@Override
@@ -74,7 +74,7 @@ public class HorizontalLayout implements LayoutManager {
 		return preferredLayoutSize(parent);
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#layoutContainer(Container)
 	 */
 	@Override

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.datatype.microsoft;
 
-import java.io.*;
+
 import java.util.Hashtable;
 
 import generic.jar.ResourceFile;

@@ -20,13 +20,13 @@ package ghidra.app.util.bin.format.pdb2.pdbreader.symbol;
  */
 public interface AddressMsSymbol {
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
 	long getOffset();
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */

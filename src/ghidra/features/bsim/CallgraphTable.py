@@ -58,7 +58,7 @@ public class CallgraphTable extends SQLComplexTable {
 		throw new UnsupportedOperationException("CallgraphTable may not be dropped");
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param pgres the result set to extract from
 	 * @return the new {@link CallgraphRow}
@@ -71,7 +71,7 @@ public class CallgraphTable extends SQLComplexTable {
 		return res;
 	}
 
-	/**
+    # /**
 	 * 
 	 * @param func the function description
 	 * @param trackcallgraph true if the database tracks call graph information

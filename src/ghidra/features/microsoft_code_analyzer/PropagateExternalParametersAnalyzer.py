@@ -150,7 +150,7 @@ public class PropagateExternalParametersAnalyzer extends AbstractAnalyzer {
 		return listing.getCodeUnits(addrSet, false);
 	}
 
-	/**
+    # /**
 	 * This will return true if enough pushes before top of function.
 	 * This will return false if not enough pushes or if not a function.
 	 */

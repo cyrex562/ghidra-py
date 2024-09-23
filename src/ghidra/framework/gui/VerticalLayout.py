@@ -24,7 +24,7 @@ import java.awt.*;
 public class VerticalLayout implements LayoutManager {
 	int vgap;
 
-	/**
+    # /**
 	 * Constructor for VerticalLayout.
 	 * @param vgap gap (in pixels) between components.
 	 */
@@ -32,7 +32,7 @@ public class VerticalLayout implements LayoutManager {
 		this.vgap = vgap;
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#addLayoutComponent(String, Component)
 	 */
 	@Override
@@ -40,7 +40,7 @@ public class VerticalLayout implements LayoutManager {
 		// nothing to do
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#removeLayoutComponent(Component)
 	 */
 	@Override
@@ -48,7 +48,7 @@ public class VerticalLayout implements LayoutManager {
 		// nothing to do
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#preferredLayoutSize(Container)
 	 */
 	@Override
@@ -68,7 +68,7 @@ public class VerticalLayout implements LayoutManager {
 			height + insets.top + insets.bottom);
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#minimumLayoutSize(Container)
 	 */
 	@Override
@@ -76,7 +76,7 @@ public class VerticalLayout implements LayoutManager {
 		return preferredLayoutSize(parent);
 	}
 
-	/**
+    # /**
 	 * @see LayoutManager#layoutContainer(Container)
 	 */
 	@Override

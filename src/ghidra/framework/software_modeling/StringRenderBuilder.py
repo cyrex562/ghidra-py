@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.data;
 
 import java.nio.ByteBuffer;
@@ -23,14 +23,14 @@ import ghidra.program.model.data.RenderUnicodeSettingsDefinition.RENDER_ENUM;
 import ghidra.util.StringUtilities;
 
 # /**
- * Helper class used to build up a formatted (for human consumption) string representation returned
- * by Unicode and String data types.
- * <p>
- * Call {@link #build()} to retrieve the formatted string.
- * <p>
- * Example (quotes are part of result): {@code "Test\tstring",01h,02h,"Second\npart"}
- *
- */
+# * Helper class used to build up a formatted (for human consumption) string representation returned
+# * by Unicode and String data types.
+# * <p>
+# * Call {@link #build()} to retrieve the formatted string.
+# * <p>
+# * Example (quotes are part of result): {@code "Test\tstring",01h,02h,"Second\npart"}
+# *
+# */
 public class StringRenderBuilder {
 	public static final char DOUBLE_QUOTE = '"';
 	public static final char SINGLE_QUOTE = '\'';
@@ -54,7 +54,7 @@ public class StringRenderBuilder {
 		this.utfCharset = cs.name().startsWith("UTF");
 	}
 
-	/**
+    # /**
 	 * Add a unicode codepoint as its escaped hex value, with a escape character
 	 * prefix of 'x', 'u' or 'U' depending on the magnitude of the codePoint value.
 	 * <p>
@@ -74,7 +74,7 @@ public class StringRenderBuilder {
 		sb.append(StringUtilities.pad(s, '0', cpDigits));
 	}
 
-	/**
+    # /**
 	 * Adds the characters found in the supplied {@link ByteBuffer} to the result.
 	 * <p>
 	 * Any portions of the byte buffer that cause problems for the charset codec will be added
@@ -248,7 +248,7 @@ public class StringRenderBuilder {
 		return prefix + s;
 	}
 
-	/**
+    # /**
 	 * Example (quotes are part of result): {@code "Test\tstring",01,02,"Second\npart",00}
 	 * <p>
 	 * @return Formatted string

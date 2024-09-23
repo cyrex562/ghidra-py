@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.datamgr.tree;
 
 import java.awt.datatransfer.*;
 import java.awt.dnd.DnDConstants;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

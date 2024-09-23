@@ -16,7 +16,7 @@
 package ghidra.program.model.data;
 
 import java.awt.datatransfer.*;
-import java.io.IOException;
+
 import java.util.Arrays;
 import java.util.List;
 

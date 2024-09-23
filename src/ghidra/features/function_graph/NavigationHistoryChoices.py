@@ -20,10 +20,10 @@ package ghidra.app.plugin.core.functiongraph.mvc;
  */
 public enum NavigationHistoryChoices {
 
-	/** A navigation event is a double-click or Go To operation */
+    # /** A navigation event is a double-click or Go To operation */
 	NAVIGATION_EVENTS("Navigation Events"),
 
-	/** When a new vertex is focused */
+    # /** When a new vertex is focused */
 	VERTEX_CHANGES("Vertex Changes");
 
 	private String displayName;

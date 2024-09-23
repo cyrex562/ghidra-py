@@ -16,7 +16,7 @@
 package ghidra.app.util.opinion;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
+
 import java.math.BigInteger;
 import java.util.*;
 

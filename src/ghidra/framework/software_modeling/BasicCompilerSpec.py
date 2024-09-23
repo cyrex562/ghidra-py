@@ -19,7 +19,7 @@ package ghidra.program.model.lang;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.lang.reflect.Constructor;
 import java.math.BigInteger;
@@ -82,7 +82,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 	private List<Pair<AddressSpace, Integer>> deadCodeDelay;
 	private List<AddressRange> inferPtrBounds;	// Restrictions on where decompiler can infer pointers
 
-	/**
+    # /**
 	 * Construct the specification from an XML stream.  This is currently only used for testing.
 	 * @param description is the .ldefs description matching this specification
 	 * @param language is the language that owns the specification
@@ -105,7 +105,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		initialize("testpath", parser);
 	}
 
-	/**
+    # /**
 	 * Read in the specification from an XML file.
 	 * @param description is the .ldefs description associated with the specification
 	 * @param language is the language owning the specification
@@ -159,7 +159,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		}
 	}
 
-	/**
+    # /**
 	 * Clone the spec so that program can safely extend it without affecting the base
 	 * spec from Language.
 	 * @param op2 is the spec to clone
@@ -199,7 +199,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		inferPtrBounds = op2.inferPtrBounds;
 	}
 
-	/**
+    # /**
 	 * Generate an XML error handler suitable for parsing a specification document.
 	 *   - Warnings are logged.
 	 *   - Errors cause a SAXParseException
@@ -423,7 +423,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		return space;
 	}
 
-	/**
+    # /**
 	 * Build the model arrays given a complete list of models.
 	 * The array -models- contains all normal PrototypeModel objects
 	 * The array -allmodels- contains all models, including merge models.
@@ -475,7 +475,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		}
 	}
 
-	/**
+    # /**
 	 * Establish cross referencing to prototype models.
 	 * All xrefs are regenerated from a single complete list of PrototypeModels.
 	 * If there are PrototypeModels with duplicate names, return an example name.
@@ -581,7 +581,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		encoder.closeElement(ELEM_COMPILER_SPEC);
 	}
 
-	/**
+    # /**
 	 * Initialize this object from an XML stream.  A single {@code <compiler_spec>} tag is expected.
 	 * @param parser is the XML stream
 	 * @throws XmlParseException for badly formed XML
@@ -1036,7 +1036,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 //        }
 //	}
 
-	/**
+    # /**
 	 * Clone the named PrototypeModel, attaching it to another name.
 	 * @param aliasName is the new name
 	 * @param parentName is the name of the PrototypeModel to clone
@@ -1153,7 +1153,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		return pcodeInject;
 	}
 
-	/**
+    # /**
 	 * Remove any call mechanism injections associated with the given list of PrototypeModels
 	 * @param modelList is the given list
 	 */
@@ -1165,7 +1165,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		}
 	}
 
-	/**
+    # /**
 	 * Register Program based InjectPayloads with the p-code library.
 	 * This allows derived classes to extend the library
 	 * @param injectExtensions is the list of payloads to register
@@ -1174,7 +1174,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		pcodeInject.registerProgramInject(injectExtensions);
 	}
 
-	/**
+    # /**
 	 * Mark a given PrototypeModel as a Program specific extension
 	 * @param model is the given PrototypeModel
 	 */
@@ -1182,7 +1182,7 @@ public class BasicCompilerSpec implements CompilerSpec {
 		model.isExtension = true;
 	}
 
-	/**
+    # /**
 	 * Sets the {@code returnaddress} of {@code model} to the {@code returnAddress}
 	 * of {@code this} if the model does not have a return address set.
 	 * @param model prototype

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.assembler.sleigh.sem;
 
 import java.util.Map;
@@ -23,16 +23,16 @@ import ghidra.app.plugin.assembler.sleigh.sem.AbstractAssemblyResolutionFactory.
 import ghidra.app.plugin.processors.sleigh.expression.PatternExpression;
 
 # /**
- * A {@link AssemblyResolution} indicating the need to solve an expression in the future
- * 
- * <p>
- * Such records are collected within a {@link AssemblyResolvedPatterns} and then solved just before
- * the final result(s) are assembled. This is typically required by instructions that refer to the
- * {@code inst_next} symbol.
- * 
- * <p>
- * <b>NOTE:</b> These are used internally. The user ought never to see these from the assembly API.
- */
+# * A {@link AssemblyResolution} indicating the need to solve an expression in the future
+# * 
+# * <p>
+# * Such records are collected within a {@link AssemblyResolvedPatterns} and then solved just before
+# * the final result(s) are assembled. This is typically required by instructions that refer to the
+# * {@code inst_next} symbol.
+# * 
+# * <p>
+# * <b>NOTE:</b> These are used internally. The user ought never to see these from the assembly API.
+# */
 public class DefaultAssemblyResolvedBackfill extends AbstractAssemblyResolution
 		implements AssemblyResolvedBackfill {
 	protected final PatternExpression exp;
@@ -40,7 +40,7 @@ public class DefaultAssemblyResolvedBackfill extends AbstractAssemblyResolution
 	protected final int inslen;
 	protected final int offset;
 
-	/**
+    # /**
 	 * @see {@link AssemblyResolution#backfill(PatternExpression, MaskedLong, Map, int, String)}
 	 */
 	protected DefaultAssemblyResolvedBackfill(AbstractAssemblyResolutionFactory<?, ?> factory,
@@ -75,7 +75,7 @@ public class DefaultAssemblyResolvedBackfill extends AbstractAssemblyResolution
 		return builder;
 	}
 
-	/**
+    # /**
 	 * Duplicate this record
 	 * 
 	 * @return the duplicate

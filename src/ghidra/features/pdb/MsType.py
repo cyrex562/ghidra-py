@@ -22,7 +22,7 @@ import ghidra.app.util.bin.format.pdb2.pdbreader.RecordNumber;
 
 public interface MsType extends IdMsParsable {
 
-	/**
+    # /**
 	 * If the type has a name element, returns this name; else returns an empty String.
 	 * @return Name of this type
 	 */
@@ -30,7 +30,7 @@ public interface MsType extends IdMsParsable {
 		return "";
 	}
 
-	/**
+    # /**
 	 * Returns the record number of this type.
 	 * @return the record number.
 	 */
@@ -38,7 +38,7 @@ public interface MsType extends IdMsParsable {
 		return RecordNumber.NO_TYPE;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the datatype.
 	 * @return size of the datatype.
 	 */
@@ -46,7 +46,7 @@ public interface MsType extends IdMsParsable {
 		return BigInteger.ZERO;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the datatype.
 	 * @return size of the datatype.
 	 */

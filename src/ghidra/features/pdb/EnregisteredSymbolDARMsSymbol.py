@@ -31,7 +31,7 @@ public class EnregisteredSymbolDARMsSymbol extends AbstractDefinedSingleAddressR
 	private RegisterName registerHoldingValueRegisterName;
 	private RangeAttribute rangeAttribute;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -46,7 +46,7 @@ public class EnregisteredSymbolDARMsSymbol extends AbstractDefinedSingleAddressR
 		parseRangeAndGaps(reader);
 	}
 
-	/**
+    # /**
 	 * Returns the {@link RegisterName}
 	 * @return the register
 	 */
@@ -54,7 +54,7 @@ public class EnregisteredSymbolDARMsSymbol extends AbstractDefinedSingleAddressR
 		return registerHoldingValueRegisterName;
 	}
 
-	/**
+    # /**
 	 * Returns the range attribute
 	 * @return the range attribute
 	 */

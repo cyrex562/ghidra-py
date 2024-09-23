@@ -21,7 +21,7 @@ import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +32,7 @@ public class ProcessedPNG implements StructConverter {
 	private int totalLength;
 	private IHDRChunk ihdrChunk;
 
-	/**
+    # /**
 	 * Processes PNG data finding each of the PNG chunks
 	 * @param reader BinaryReader for the PNG data
 	 * @throws IOException

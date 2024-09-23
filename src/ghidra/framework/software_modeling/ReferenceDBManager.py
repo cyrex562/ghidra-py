@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.references;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import org.apache.commons.collections4.map.LazyMap;
@@ -41,8 +41,8 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Reference manager implementation for the database.
- */
+# * Reference manager implementation for the database.
+# */
 public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHandler {
 	private static final Reference[] NO_REFS = new Reference[0];
 
@@ -60,7 +60,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 	private DBObjectCache<RefList> fromCache;
 	private DBObjectCache<RefList> toCache;
 
-	/**
+    # /**
 	 *
 	 * Construct a new reference manager.
 	 * @param dbHandle handle to the database
@@ -145,7 +145,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		}
 	}
 
-	/**
+    # /**
 	 * Convert old namespace and Variable addresses to normal stack/register addresses.
 	 * Relies on ProgramDB version change (Version 12) to trigger upgrade requirement.
 	 */
@@ -210,7 +210,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 
 	}
 
-	/**
+    # /**
 	 * Remove all references that have the "To" address as
 	 * the given address.  NOTE: This method relies on the use of the ToRefs list!
 	 * Beyond version-12 of ProgramDB, Stack and Register addresses are no longer stored in the
@@ -237,7 +237,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		return cnt;
 	}
 
-	/**
+    # /**
 	 * Convert stack references from old adapter.
 	 */
 	private void processOldAdapterStackRefs(TaskMonitor monitor)
@@ -271,7 +271,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		oldStackRefAdapter = null;
 	}
 
-	/**
+    # /**
 	 * Check an existing reference to determine if there is the possibility of merging
 	 * reference-types
 	 * @param ref existing reference
@@ -296,7 +296,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		return false;
 	}
 
-	/**
+    # /**
 	 * When adding a reference on top of an existing reference, attempt to combine
 	 * the reference types giving preference to the most specific type.
 	 * @param newType the new type
@@ -649,7 +649,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		return null;
 	}
 
-	/**
+    # /**
 	 * Attempts to determine which if any of the local functions variables are referenced by the specified
 	 * reference.  In utilizing the firstUseOffset scoping model, negative offsets (relative to the functions
 	 * entry) are shifted beyond the maximum positive offset within the function.  While this does not account for the
@@ -664,7 +664,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 					!refType.isWrite() && (refType.isRead() || refType.isIndirect()));
 	}
 
-	/**
+    # /**
 	 * Attempts to determine the set of references which refer to the specified variable.
 	 * In utilizing the firstUseOffset scoping model, negative offsets (relative to the functions
 	 * entry) are shifted beyond the maximum positive offset within the function.  While this does not account for the
@@ -919,7 +919,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		return fromAdapter.getRecordCount();
 	}
 
-	/**
+    # /**
 	 * Get all memory references with the given from address at opIndex.
 	 * @param fromAddr the from address
 	 * @param opIndex the operand index
@@ -1200,7 +1200,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		}
 	}
 
-	/**
+    # /**
 	 * Symbol is about to be removed
 	 * @param symbol the symbol that will be removed
 	 */
@@ -1228,7 +1228,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		}
 	}
 
-	/**
+    # /**
 	 * Symbol has been added
 	 * @param sym new symbol
 	 */
@@ -1356,7 +1356,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		}
 	}
 
-	/**
+    # /**
 	 * Move all references to the specified oldAddr.  Any symbol binding will be discarded since
 	 * these are intended for memory label references only.
 	 * This method is intended specifically to support upgrading of certain references
@@ -1507,7 +1507,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the reference level for the references to the given address
 	 * @param toAddr the address at which to find the highest reference level
 	 */
@@ -1546,7 +1546,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		return new EmptyAddressIterator();
 	}
 
-	/**
+    # /**
 	 * Return whether the address is an external entry point
 	 * @param toAddr the address to test for external entry point
 	 * @return true if the address is an external entry point
@@ -1568,7 +1568,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		return false;
 	}
 
-	/**
+    # /**
 	 * Create a memory reference to the given address to mark it as
 	 * an external entry point.
 	 * @param toAddr the address at which to make an external entry point
@@ -1590,7 +1590,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		}
 	}
 
-	/**
+    # /**
 	 * Removes the external entry point at the given address
 	 * @param addr that address at which to remove the external entry point attribute.
 	 */
@@ -1756,7 +1756,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 		AddressIterator fromIter;
 		ReferenceIterator refIter;
 
-		/**
+	    # /**
 		 * Construct a reference iterator sorted on the from address.
 		 * @param startFromAddr the first from address
 		 */
@@ -1764,7 +1764,7 @@ public class ReferenceDBManager implements ReferenceManager, ManagerDB, ErrorHan
 			fromIter = getReferenceSourceIterator(startFromAddr, true);
 		}
 
-		/**
+	    # /**
 		 * Construct a reference iterator sorted on the from address.
 		 * @param set set of from addresses
 		 */

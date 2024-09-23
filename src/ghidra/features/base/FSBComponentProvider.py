@@ -19,7 +19,7 @@ import static ghidra.formats.gfilesystem.fileinfo.FileAttributeType.*;
 
 import java.awt.Component;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

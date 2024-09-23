@@ -77,7 +77,7 @@ public class ProjectDataPasteAction extends ProjectDataCopyCutBaseAction {
 		return (DomainFolderNode) node.getParent();
 	}
 
-	/**
+    # /**
 	 * Check the destination node for whether clipboard data can be pasted there.
 	 * 
 	 * @param destNode destination for paste operation
@@ -96,7 +96,7 @@ public class ProjectDataPasteAction extends ProjectDataCopyCutBaseAction {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Process a "paste" request from a menu action.
 	 */
 	private void paste(DataTree tree, DomainFolderNode folderNode) {
@@ -117,7 +117,7 @@ public class ProjectDataPasteAction extends ProjectDataCopyCutBaseAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Update the given list of nodes to paste if the corresponding file or
 	 * folder cannot be pasted; remove it from the list and update the
 	 * clipboard with the new list.
@@ -184,7 +184,7 @@ public class ProjectDataPasteAction extends ProjectDataCopyCutBaseAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove descendant nodes from the list; having the parent node
 	 * is enough when folders are getting pasted.
 	 */

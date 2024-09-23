@@ -16,7 +16,7 @@
 package ghidradev.ghidraprojectcreator.wizards.pages;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.text.ParseException;
 
 import org.eclipse.jface.preference.PreferenceDialog;

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database;
 
 import ghidra.program.model.address.*;
@@ -31,7 +31,7 @@ public class ProgramAddressFactory extends DefaultAddressFactory {
 	private boolean hasStaleOverlays = false;
 	private long nextTmpId = 1; // used for overlay naming
 
-	/**
+    # /**
 	 * Construct a Program address factory which augments the {@link DefaultAddressFactory} 
 	 * supplied by a {@link Language}.  The following additional address spaces are added:
 	 * <ul>
@@ -129,7 +129,7 @@ public class ProgramAddressFactory extends DefaultAddressFactory {
 		return originalFactory;
 	}
 
-	/**
+    # /**
 	 * Determine whether the given space can have an overlay
 	 * 
 	 * @param baseSpace the overlay base address space
@@ -142,7 +142,7 @@ public class ProgramAddressFactory extends DefaultAddressFactory {
 		return baseSpace.isMemorySpace() && !baseSpace.isOverlaySpace();
 	}
 
-	/**
+    # /**
 	 * Add an overlay address space to this factory
 	 * @param ovSpace overlay space
 	 * @throws DuplicateNameException if name of overlay space already exists in this factory
@@ -155,7 +155,7 @@ public class ProgramAddressFactory extends DefaultAddressFactory {
 		addAddressSpace(ovSpace);
 	}
 
-	/**
+    # /**
 	 * Create a new ProgramOverlayAddressSpace based upon the given overlay blockName and base AddressSpace
 	 * @param key overlay record key
 	 * @param overlayName overlay name
@@ -221,7 +221,7 @@ public class ProgramAddressFactory extends DefaultAddressFactory {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * Remove an overlay space.
 	 * It may be neccessary to invoke {@link #refreshStaleOverlayStatus()} when an overlay is
 	 * removed.
@@ -255,7 +255,7 @@ public class ProgramAddressFactory extends DefaultAddressFactory {
 		return maxID + 1;
 	}
 
-	/**
+    # /**
 	 * Examine all overlay spaces and update the stale status indicator
 	 * (see {@link #hasStaleOverlays}).
 	 */
@@ -276,7 +276,7 @@ public class ProgramAddressFactory extends DefaultAddressFactory {
 		return hasStaleOverlays;
 	}
 
-	/**
+    # /**
 	 * Generate an ordered unique name-based key for use with overlay spaces.  
 	 * This will generally be the overlay name unless that value has already been utilized by 
 	 * another overlay.

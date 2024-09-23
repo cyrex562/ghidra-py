@@ -70,7 +70,7 @@ public class TrampolineMsSymbol extends AbstractMsSymbol implements AddressMsSym
 	private int sectionTarget;
 
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -93,7 +93,7 @@ public class TrampolineMsSymbol extends AbstractMsSymbol implements AddressMsSym
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the {@link Type} of trampoline.
 	 * @return The {@link Type} of trampoline.
 	 */
@@ -101,7 +101,7 @@ public class TrampolineMsSymbol extends AbstractMsSymbol implements AddressMsSym
 		return trampolineType;
 	}
 
-	/**
+    # /**
 	 * Returns size of thunk.
 	 * @return Size of thunk.
 	 */
@@ -119,7 +119,7 @@ public class TrampolineMsSymbol extends AbstractMsSymbol implements AddressMsSym
 		return getSegmentThunk();
 	}
 
-	/**
+    # /**
 	 * Returns offset of thunk.
 	 * @return Offset of thunk.
 	 */
@@ -127,7 +127,7 @@ public class TrampolineMsSymbol extends AbstractMsSymbol implements AddressMsSym
 		return offsetThunk;
 	}
 
-	/**
+    # /**
 	 * Returns offset of target.
 	 * @return Offset of target.
 	 */
@@ -135,7 +135,7 @@ public class TrampolineMsSymbol extends AbstractMsSymbol implements AddressMsSym
 		return offsetTarget;
 	}
 
-	/**
+    # /**
 	 * Returns segment (MSFT says section) of thunk.
 	 * @return Segment (MSFT says section) of thunk.
 	 */
@@ -143,7 +143,7 @@ public class TrampolineMsSymbol extends AbstractMsSymbol implements AddressMsSym
 		return sectionThunk;
 	}
 
-	/**
+    # /**
 	 * Returns segment (MSFT says section) of target.
 	 * @return Segment (MSFT says section) of target.
 	 */

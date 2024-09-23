@@ -16,7 +16,7 @@
 package ghidra.file.formats.android.dex;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.nio.file.AccessMode;
 import java.util.*;
 

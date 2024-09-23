@@ -30,7 +30,7 @@ public class BitGroup {
 	private Set<Long> values = new HashSet<>();
 	private long mask;
 
-	/**
+    # /**
 	 * Creates a new BitGroup seeded with a value.
 	 * @param value the value to start the bit group.
 	 */
@@ -39,7 +39,7 @@ public class BitGroup {
 		mask = value;
 	}
 
-	/**
+    # /**
 	 * Tests if this bit group has any overlapping bits with the given bit group.
 	 * @param bitGroup the BitGroup to test for overlap.
 	 * @return true if the groups have any bits in common.
@@ -48,7 +48,7 @@ public class BitGroup {
 		return (mask & bitGroup.mask) != 0;
 	}
 
-	/**
+    # /**
 	 * Merges the given BitGroup into the group.  All of its values will be added to this
 	 * group's values and the masks will be or'ed together.
 	 * @param bitGroup the BitGroup to merge into this one.
@@ -70,7 +70,7 @@ public class BitGroup {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Returns the mask that represents all the bits that are used by the values in this
 	 * BitGroup.
 	 * @return the mask that represents all the bits that are used by the values in this
@@ -80,7 +80,7 @@ public class BitGroup {
 		return mask;
 	}
 
-	/**
+    # /**
 	 * Gets the set of values that make up this BitGroup.
 	 * @return the set of values that make up this BitGroup.
 	 */

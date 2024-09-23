@@ -17,7 +17,7 @@ package ghidra.dbg.jdi.manager.impl;
 
 import static ghidra.lifecycle.Unfinished.TODO;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.*;
 

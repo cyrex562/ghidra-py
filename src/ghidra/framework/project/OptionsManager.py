@@ -43,7 +43,7 @@ public class OptionsManager implements OptionsService, OptionsChangeListener {
 	private PluginTool tool;
 	private Map<String, ToolOptions> optionsMap;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param tool associated with this OptionsManager
 	 */
@@ -77,7 +77,7 @@ public class OptionsManager implements OptionsService, OptionsChangeListener {
 		return opt;
 	}
 
-	/**
+    # /**
 	 * Updates saved options from an old name to a new name.  NOTE: this must be called before
 	 * any calls to register or get options.
 	 * @param oldName the old name of the options.
@@ -121,7 +121,7 @@ public class OptionsManager implements OptionsService, OptionsChangeListener {
 		return opt;
 	}
 
-	/**
+    # /**
 	 * Deregister the owner from the options; if options are empty, then
 	 * remove the options from the map.
 	 * @param ownerPlugin the owner plugin
@@ -139,7 +139,7 @@ public class OptionsManager implements OptionsService, OptionsChangeListener {
 		removeUnusedOptions(deleteList);
 	}
 
-	/**
+    # /**
 	 * Write this object out; first remove any unused options so they
 	 * do not hang around.
 	 * @return XML element containing the state of all the options
@@ -182,7 +182,7 @@ public class OptionsManager implements OptionsService, OptionsChangeListener {
 		removeUnusedOptions(deleteList);
 	}
 
-	/**
+    # /**
 	 * Restore Options objects using the given XML Element.
 	 * @param root element to use to restore the Options objects
 	 */

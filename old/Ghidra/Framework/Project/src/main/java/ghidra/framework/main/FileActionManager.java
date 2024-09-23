@@ -17,7 +17,7 @@ package ghidra.framework.main;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.Icon;

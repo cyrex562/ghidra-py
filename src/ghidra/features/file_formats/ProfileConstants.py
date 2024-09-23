@@ -38,7 +38,7 @@ public final class ProfileConstants {
 
 	public final static byte[] kProfileVersion_008 = { '0', '0', '8', '\0' };
 	public final static byte[] kProfileVersion_009 = { '0', '0', '9', '\0' };
-	/**
+    # /**
 	 * Android 10
 	 * Android 11
 	 */
@@ -50,7 +50,7 @@ public final class ProfileConstants {
 
 	public final static byte[] kProfileVersionWithCounters = { '5', '0', '0', '\0' };
 
-	/**
+    # /**
 	 * Converts the byte array into String and trims it.
 	 */
 	public final static String toString(byte[] bytes) {

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
 import ghidra.program.model.address.AddressSetView;
@@ -23,14 +23,14 @@ import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * Object to represent a "Class"
- */
+# * Object to represent a "Class"
+# */
 
 class GhidraClassDB implements GhidraClass {
 	private SymbolDB symbol;
 	private NamespaceManager namespaceMgr;
 
-	/**
+    # /**
 	 * Construct a new GhidraClass
 	 * @param symbol the symbol for this GhidraClass
 	 * @param namespaceMgr the namespace manager
@@ -40,7 +40,7 @@ class GhidraClassDB implements GhidraClass {
 		this.namespaceMgr = namespaceMgr;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getSymbol()
 	 */
 	@Override
@@ -53,7 +53,7 @@ class GhidraClassDB implements GhidraClass {
 		return symbol.isExternal();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getName()
 	 */
 	@Override
@@ -74,7 +74,7 @@ class GhidraClassDB implements GhidraClass {
 
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getID()
 	 */
 	@Override
@@ -82,7 +82,7 @@ class GhidraClassDB implements GhidraClass {
 		return symbol.getID();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getParentNamespace()
 	 */
 	@Override
@@ -90,7 +90,7 @@ class GhidraClassDB implements GhidraClass {
 		return symbol.getParentNamespace();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getBody()
 	 */
 	@Override
@@ -98,7 +98,7 @@ class GhidraClassDB implements GhidraClass {
 		return namespaceMgr.getAddressSet(this);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#getName(boolean)
 	 */
 	@Override
@@ -106,7 +106,7 @@ class GhidraClassDB implements GhidraClass {
 		return symbol.getName(includeNamespacePath);
 	}
 
-	/**
+    # /**
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -122,7 +122,7 @@ class GhidraClassDB implements GhidraClass {
 		return symbol == gc.symbol;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.symbol.Namespace#setParentNamespace(ghidra.program.model.symbol.Namespace)
 	 */
 	@Override

@@ -27,7 +27,7 @@ public class LocalThreadStorage32MsSymbol extends AbstractLocalThreadStorageMsSy
 
 	public static final int PDB_ID = 0x1112;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

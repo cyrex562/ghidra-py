@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
 import java.util.*;
@@ -151,7 +151,7 @@ public class DataTypeUtilities {
 		return list;
 	}
 
-	/**
+    # /**
 	 * Check to see if the second data type is the same as the first data type or is part of it.
 	 * <br>
 	 * Note: pointers to the second data type are references and therefore are not considered to be
@@ -190,7 +190,7 @@ public class DataTypeUtilities {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Returns true if the two dataTypes have the same sourceArchive and the same UniversalID
 	 * 
 	 * @param dataType1 first data type
@@ -215,7 +215,7 @@ public class DataTypeUtilities {
 		return sourceArchive1.getSourceArchiveID().equals(sourceArchive2.getSourceArchiveID());
 	}
 
-	/**
+    # /**
 	 * Returns true if two dataTypes have the same sourceArchive and the same UniversalID OR are
 	 * equivalent
 	 * 
@@ -234,7 +234,7 @@ public class DataTypeUtilities {
 		return dataType1.isEquivalent(dataType2);
 	}
 
-	/**
+    # /**
 	 * Determine if two dataTypes are the same kind of datatype without considering naming or
 	 * component makeup.  The use of Typedefs is ignored and stripped away for comparison.
 	 * This method also ignores details about most built-in types, pointers and arrays 
@@ -307,7 +307,7 @@ public class DataTypeUtilities {
 		return dataType1.getClass().equals(dataType2.getClass());
 	}
 
-	/**
+    # /**
 	 * Get the base data type for the specified data type stripping away pointers and arrays only. A
 	 * null will be returned for a default pointer.
 	 *
@@ -390,7 +390,7 @@ public class DataTypeUtilities {
 		return buf.toString();
 	}
 
-	/**
+    # /**
 	 * Create a data type category path derived from the specified namespace and rooted from the
 	 * specified baseCategory
 	 * 
@@ -411,7 +411,7 @@ public class DataTypeUtilities {
 				: new CategoryPath(baseCategory, categoryPathParts);
 	}
 
-	/**
+    # /**
 	 * Find the structure data type which corresponds to the specified class namespace
 	 * within the specified data type manager.
 	 * The structure must utilize a namespace-based category path, however,
@@ -438,7 +438,7 @@ public class DataTypeUtilities {
 			categoryPath -> getCategoryMatchType(categoryPath, namespacePaths, true));
 	}
 
-	/**
+    # /**
 	 * Attempt to find the data type whose dtName and specified namespace match a stored data type
 	 * within the specified dataTypeManager. The first match which satisfies the category path 
 	 * requirement will be returned.  If a non-root namespace is specified the datatype's trailing 
@@ -464,7 +464,7 @@ public class DataTypeUtilities {
 			categoryPath -> getCategoryMatchType(categoryPath, namespacePaths, false));
 	}
 
-	/**
+    # /**
 	 * Attempt to find the data type whose dtNameWithNamespace match a stored data type within the
 	 * specified dataTypeManager. The namespace will be used in checking data type parent categories.  
 	 * NOTE: name parsing assumes :: namespace delimiter which can be thrown off if name includes 
@@ -505,7 +505,7 @@ public class DataTypeUtilities {
 			categoryPath -> getCategoryMatchType(categoryPath, namespacePath));
 	}
 
-	/**
+    # /**
 	 * Return the appropriate datatype for a given C primitive datatype name.
 	 * 
 	 * @param dataTypeName the datatype name (e.g. "unsigned int", "long long")
@@ -523,7 +523,7 @@ public class DataTypeUtilities {
 	private static final int NAMESPACE_PATH_INDEX = 0;
 	private static final int PARENT_NAMESPACE_PATH_INDEX = 1;
 
-	/**
+    # /**
 	 * Get relative/partial category paths which corresponds to a specified namespace.
 	 * Any {@link Library} namespace will be ignored and treated like the global namespace 
 	 * when generating a related category path. An empty string will be returned for the
@@ -554,7 +554,7 @@ public class DataTypeUtilities {
 		NONE, SECONDARY, PREFERRED;
 	}
 
-	/**
+    # /**
 	 * Namespace category matcher.  Only those datatypes contained within a catgeory
 	 * whose trailing category path matches the specified namespacePath will be considered
 	 * a possible match.  If the namespacePath is empty array all category paths will 
@@ -576,7 +576,7 @@ public class DataTypeUtilities {
 		return path.endsWith(namespacePath) ? CategoryMatchType.PREFERRED : CategoryMatchType.NONE;
 	}
 
-	/**
+    # /**
 	 * Namespace category matcher.  
 	 * @param categoryPath datatype category path
 	 * @param namespacePaths namespace paths constraint or null for no namespace.  This value should
@@ -610,12 +610,12 @@ public class DataTypeUtilities {
 		return CategoryMatchType.NONE;
 	}
 
-	/**
+    # /**
 	 * <code>NamespaceMatcher</code> is used to check data type categoryPath for match against
 	 * preferred namespace.
 	 */
 	private static interface NamespaceMatcher {
-		/**
+	    # /**
 		 * Score category path match.
 		 * @param path category path
 		 * @return path match type
@@ -633,7 +633,7 @@ public class DataTypeUtilities {
 		return p.getPreferredRootNamespaceCategoryPath();
 	}
 
-	/**
+    # /**
 	 * Get the specified datatype by full path and return only if its type corresponds to class
 	 * constraint if specified.
 	 * @param <T> A standard interface which extends {@link DataType} (e.g., {@link Structure}).
@@ -666,7 +666,7 @@ public class DataTypeUtilities {
 		return getAssignableDataType(category, dtName, classConstraint);
 	}
 
-	/**
+    # /**
 	 * Get the specified datatype by name and category and return only if its type 
 	 * corresponds to an class constraint if specified.
 	 * @param <T> A standard interface which extends {@link DataType} (e.g., {@link Structure}).
@@ -686,7 +686,7 @@ public class DataTypeUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Perform a preferred category namespace qualified datatype search using
 	 * category path supplied by {@link Program#getPreferredRootNamespaceCategoryPath()}.
 	 * Any {@link Library} namespace will be ignored and treated like the global namespace 
@@ -726,7 +726,7 @@ public class DataTypeUtilities {
 			classConstraint);
 	}
 
-	/**
+    # /**
 	 * Compare datatype category path lengths for sorting shortest path first.
 	 * Tie-breaker based on path name sort.
 	 * Rationale is to provide some deterministic datatype selection behavior and
@@ -744,7 +744,7 @@ public class DataTypeUtilities {
 			return cmp;
 		};
 
-	/**
+    # /**
 	 * Perform a namespace qualified datatype search.  
 	 * @param dataTypeManager datatype manager
 	 * @param dtName datatype name
@@ -810,7 +810,7 @@ public class DataTypeUtilities {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the name of a data type with all conflict naming patterns removed.
 	 * 
 	 * @param dataType data type
@@ -827,7 +827,7 @@ public class DataTypeUtilities {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Get the name of a data type with all conflict naming patterns removed.
 	 * 
 	 * @param dataTypeName data type name with optional category path included
@@ -847,7 +847,7 @@ public class DataTypeUtilities {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Get a datatype's name without conflict suffix.
 	 * 
 	 * @param dt datatype (pointer and array permitted)
@@ -902,7 +902,7 @@ public class DataTypeUtilities {
 		return -1;
 	}
 
-	/**
+    # /**
 	 * Get the conflict value string associated with a conflict datatype name.
 	 * 
 	 * @param dataType datatype to be checked
@@ -928,7 +928,7 @@ public class DataTypeUtilities {
 		return getBaseConflictValue(baseDataType.getName());
 	}
 
-	/**
+    # /**
 	 * Get the conflict value associated with a conflict datatype name.
 	 * 
 	 * @param dataTypeName datatype name to be checked
@@ -950,7 +950,7 @@ public class DataTypeUtilities {
 		return getBaseConflictValue(baseDataTypeName);
 	}
 
-	/**
+    # /**
 	 * Determine if the specified data type name is a conflict name.
 	 * 
 	 * @param dataTypeName datatype name
@@ -967,7 +967,7 @@ public class DataTypeUtilities {
 		return matcher.find();
 	}
 
-	/**
+    # /**
 	 * Determine if the specified data type has a conflict name.
 	 * @param dt datatype (pointer and array permitted)
 	 * @return true if data type has a conflict name.
@@ -988,7 +988,7 @@ public class DataTypeUtilities {
 		return matcher.find();
 	}
 
-	/**
+    # /**
 	 * Compares two data type name strings to determine if they are equivalent names, ignoring
 	 * conflict patterns present.
 	 * 

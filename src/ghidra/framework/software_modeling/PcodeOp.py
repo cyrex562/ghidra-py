@@ -1,43 +1,43 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.program.model.address.*;
 import ghidra.program.model.lang.UnknownInstructionException;
 
 # /**
- * 
- *
- * Pcode Op describes a generic machine operation.  You can think of
- * it as the microcode for a specific processor's instruction set.  There
- * are a finite number of PcodeOp's that theoretically can define the
- * operations for any given processor.
- * 
- * Pcode have
- *    An operation code
- *    Some number of input parameter varnodes
- *    possible output varnode
- * 
- */
+# * 
+# *
+# * Pcode Op describes a generic machine operation.  You can think of
+# * it as the microcode for a specific processor's instruction set.  There
+# * are a finite number of PcodeOp's that theoretically can define the
+# * operations for any given processor.
+# * 
+# * Pcode have
+# *    An operation code
+# *    Some number of input parameter varnodes
+# *    possible output varnode
+# * 
+# */
 public class PcodeOp {
 
 	// The opcodes of the Pcode language
@@ -143,7 +143,7 @@ public class PcodeOp {
 	private Varnode[] input;
 	private Varnode output;
 
-	/**
+    # /**
 	 * Constructor - pcode part of sequence of pcodes, some number of inputs, output
 	 * 
 	 * @param sq place in sequence of pcode
@@ -158,7 +158,7 @@ public class PcodeOp {
 		output = out;
 	}
 
-	/**
+    # /**
 	 * Constructor - pcode part of sequence of pcodes, inputs, outputs
 	 * 
 	 * @param sq place in sequence of pcode
@@ -173,7 +173,7 @@ public class PcodeOp {
 		output = out;
 	}
 
-	/**
+    # /**
 	 * Constructor - inputs and outputs
 	 * 
 	 * @param a address pcode is attached to
@@ -189,7 +189,7 @@ public class PcodeOp {
 		output = out;
 	}
 
-	/**
+    # /**
 	 * Constructor - no output
 	 * 
 	 * @param a address pcode is attached to
@@ -201,7 +201,7 @@ public class PcodeOp {
 		this(a, sequencenumber, op, in, null);
 	}
 
-	/**
+    # /**
 	 * Constructor - no inputs, output
 	 * 
 	 * @param a address pcode is attached to
@@ -212,14 +212,14 @@ public class PcodeOp {
 		this(a, sequencenumber, op, new Varnode[0], null);
 	}
 
-	/**
+    # /**
 	 * @return pcode operation code
 	 */
 	public final int getOpcode() {
 		return opcode;
 	}
 
-	/**
+    # /**
 	 * @return number of input varnodes
 	 */
 	public final int getNumInputs() {
@@ -229,14 +229,14 @@ public class PcodeOp {
 		return input.length;
 	}
 
-	/**
+    # /**
 	 * @return get input varnodes
 	 */
 	public final Varnode[] getInputs() {
 		return input;
 	}
 
-	/**
+    # /**
 	 * @param i the i'th input varnode
 	 * @return the i'th input varnode
 	 */
@@ -247,14 +247,14 @@ public class PcodeOp {
 		return input[i];
 	}
 
-	/**
+    # /**
 	 * @return get output varnodes
 	 */
 	public final Varnode getOutput() {
 		return output;
 	}
 
-	/**
+    # /**
 	 * Assuming vn is an input to this op, return its input slot number
 	 * @param vn is the input varnode
 	 * @return the slot number
@@ -270,14 +270,14 @@ public class PcodeOp {
 		return i;
 	}
 
-	/**
+    # /**
 	 * @return get the string representation for the pcode operation
 	 */
 	public final String getMnemonic() {
 		return getMnemonic(opcode);
 	}
 
-	/**
+    # /**
 	 * Check if the pcode has been determined to be a dead operation.
 	 * 
 	 * @return true if the pcode has been determined to have no effect in the context it is used
@@ -286,14 +286,14 @@ public class PcodeOp {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return true if the pcode assigns a value to an output varnode
 	 */
 	public final boolean isAssignment() {
 		return (output != null);
 	}
 
-	/**
+    # /**
 	 * Return true if the PcodeOp is commutative.
 	 * If true, the operation has exactly two inputs that can be switched without affecting the output.
 	 * @return true if the operation is commutative
@@ -302,7 +302,7 @@ public class PcodeOp {
 		return isCommutative(opcode);
 	}
 
-	/**
+    # /**
 	 * @return the sequence number this pcode is within some number of pcode
 	 */
 	public final SequenceNumber getSeqnum() {
@@ -317,14 +317,14 @@ public class PcodeOp {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return the pcode basic block this pcode belongs to
 	 */
 	public PcodeBlockBasic getParent() {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Set the pcode operation code
 	 * 
 	 * @param o pcode operation code
@@ -333,7 +333,7 @@ public class PcodeOp {
 		opcode = o;
 	}
 
-	/**
+    # /**
 	 * Set/Replace an input varnode at the given slot.
 	 * 
 	 * @param vn varnode to replace
@@ -359,7 +359,7 @@ public class PcodeOp {
 		input[slot] = vn;
 	}
 
-	/**
+    # /**
 	 * Remove a varnode at the given slot from the list of input varnodes
 	 * 
 	 * @param slot index of input varnode to remove
@@ -379,7 +379,7 @@ public class PcodeOp {
 		input = newinput;
 	}
 
-	/**
+    # /**
 	 * Insert an input varnode at the given index of input varnodes
 	 * 
 	 * @param vn varnode to insert
@@ -401,7 +401,7 @@ public class PcodeOp {
 		input = newinput;
 	}
 
-	/**
+    # /**
 	 * Set a unique number for pcode ops that are attached to the same address
 	 * 
 	 * @param t unique id
@@ -410,7 +410,7 @@ public class PcodeOp {
 		seqnum.setTime(t);
 	}
 
-	/**
+    # /**
 	 * Set relative position information of PcodeOps within
 	 * a basic block, may change as basic block is edited.
 	 * 
@@ -420,7 +420,7 @@ public class PcodeOp {
 		seqnum.setOrder(ord);
 	}
 
-	/**
+    # /**
 	 * Set the output varnode for the pcode operation.
 	 * 
 	 * @param vn new output varnode
@@ -429,7 +429,7 @@ public class PcodeOp {
 		output = vn;
 	}
 
-	/**
+    # /**
 	 * Encode just the opcode and input/output Varnode data for this PcodeOp to a stream
 	 * as an {@code <op>} element
 	 * @param encoder is the stream encoder
@@ -463,7 +463,7 @@ public class PcodeOp {
 		encoder.closeElement(ELEM_OP);
 	}
 
-	/**
+    # /**
 	 * Decode p-code from a stream
 	 * 
 	 * @param decoder is the stream decoder
@@ -527,7 +527,7 @@ public class PcodeOp {
 		return opcode + seqnum.hashCode();
 	}
 
-	/**
+    # /**
 	 * Generate a lookup table that maps pcode mnemonic strings to pcode operation codes.
 	 */
 	private static void generateOpcodeTable() {
@@ -542,7 +542,7 @@ public class PcodeOp {
 		opcodeTable.put("CROSSBUILD", PTRSUB);
 	}
 
-	/**
+    # /**
 	 * Get string representation for p-code operation
 	 * 
 	 * @param op operation code
@@ -707,7 +707,7 @@ public class PcodeOp {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the p-code op code for the given mnemonic string.
 	 * @param s is the mnemonic string
 	 * @return the op code
@@ -725,7 +725,7 @@ public class PcodeOp {
 		return i.intValue();
 	}
 
-	/**
+    # /**
 	 * Return true if the given opcode represents a commutative operation.
 	 * If true, the operation has exactly two inputs that can be switched without affecting the output.
 	 * @param opcode is the opcode

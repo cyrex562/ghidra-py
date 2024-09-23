@@ -35,7 +35,7 @@ public class UserDefinedTypeModuleSourceAndLineMsType extends AbstractMsType {
 	// TODO: For continued work with hash.
 	//public static Set<Integer> sourceIdIndexList = new HashSet<>();
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -56,7 +56,7 @@ public class UserDefinedTypeModuleSourceAndLineMsType extends AbstractMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the line number within the file.
 	 * @return the line number within the file.
 	 */
@@ -64,7 +64,7 @@ public class UserDefinedTypeModuleSourceAndLineMsType extends AbstractMsType {
 		return lineNumber;
 	}
 
-	/**
+    # /**
 	 * Returns the module number of the file.
 	 * @return the module number of the file.
 	 */
@@ -72,7 +72,7 @@ public class UserDefinedTypeModuleSourceAndLineMsType extends AbstractMsType {
 		return module;
 	}
 
-	/**
+    # /**
 	 * Returns the offset of the source file name in the strings table.
 	 * @return the offset of the source file name in the strings table.
 	 */
@@ -80,7 +80,7 @@ public class UserDefinedTypeModuleSourceAndLineMsType extends AbstractMsType {
 		return sourceFileNameStringOffset;
 	}
 
-	/**
+    # /**
 	 * Returns the source file name.
 	 * @return the source file name.
 	 */
@@ -88,7 +88,7 @@ public class UserDefinedTypeModuleSourceAndLineMsType extends AbstractMsType {
 		return pdb.getNameStringFromOffset(sourceFileNameStringOffset);
 	}
 
-	/**
+    # /**
 	 * Returns the record number of the UDT.
 	 * @return the record number of the UDT.
 	 */

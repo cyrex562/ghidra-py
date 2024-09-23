@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.*;
 
@@ -28,7 +28,7 @@ import ghidra.util.task.TaskMonitor;
  * 
  */
 public interface SymbolServer {
-	/**
+    # /**
 	 * Optional add-on interface for {@link SymbolServer}s that flag server types as requiring a
 	 * valid context object to be queried for {@link SymbolServer#isValid(TaskMonitor)}
 	 */
@@ -36,13 +36,13 @@ public interface SymbolServer {
 		// empty
 	}
 
-	/**
+    # /**
 	 * Optional add-on interface for {@link SymbolServer}s that allow their trusted-ness value to
 	 * be modified.
 	 */
 	public interface MutableTrust {
 
-		/**
+	    # /**
 		 * Sets the trusted attribute of this symbol server.
 		 * 
 		 * @param isTrusted boolean flag, if true this symbolserver will be marked as trusted
@@ -50,7 +50,7 @@ public interface SymbolServer {
 		void setTrusted(boolean isTrusted);
 	}
 
-	/**
+    # /**
 	 * Name of the symbol server, suitable to use as the identity of this instance,
 	 * and which will allow the SymbolServerInstanceCreatorRegistry to recreate an instance.
 	 * 
@@ -58,7 +58,7 @@ public interface SymbolServer {
 	 */
 	String getName();
 
-	/**
+    # /**
 	 * Descriptive name of the symbol server, used in UI lists, etc.
 	 * 
 	 * @return string descriptive name
@@ -67,7 +67,7 @@ public interface SymbolServer {
 		return getName();
 	}
 
-	/**
+    # /**
 	 * Returns true if the symbol server is valid and can be queried.
 	 * @param monitor {@link TaskMonitor}
 	 * 
@@ -75,7 +75,7 @@ public interface SymbolServer {
 	 */
 	boolean isValid(TaskMonitor monitor);
 
-	/**
+    # /**
 	 * Returns true if this {@link SymbolServer} is 'trusted', meaning
 	 * it can be searched without security issues / warning the user.
 	 * 
@@ -85,7 +85,7 @@ public interface SymbolServer {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns true if the raw filename exists in the symbol server.
 	 * 
 	 * @param filename raw path filename string
@@ -94,7 +94,7 @@ public interface SymbolServer {
 	 */
 	boolean exists(String filename, TaskMonitor monitor);
 
-	/**
+    # /**
 	 * Searches for a symbol file on the server.
 	 * <p>
 	 * HttpSymbolServers only support exact matches, LocalSymbolStores can
@@ -110,7 +110,7 @@ public interface SymbolServer {
 	List<SymbolFileLocation> find(SymbolFileInfo fileInfo, Set<FindOption> findOptions,
 			TaskMonitor monitor);
 
-	/**
+    # /**
 	 * Returns a wrapped InputStream for the specified raw path filename.
 	 * 
 	 * @param filename raw path filename
@@ -122,7 +122,7 @@ public interface SymbolServer {
 	SymbolServerInputStream getFileStream(String filename, TaskMonitor monitor)
 			throws IOException, CancelledException;
 
-	/**
+    # /**
 	 * Returns a location description string of a specific file contained in this symbol server.
 	 * <p>
 	 * 
@@ -132,7 +132,7 @@ public interface SymbolServer {
 	 */
 	String getFileLocation(String filename);
 
-	/**
+    # /**
 	 * Returns the number of configured symbol servers that are considered 'untrusted'.
 	 * 
 	 * @param symbolServers list of {@link SymbolServer}s

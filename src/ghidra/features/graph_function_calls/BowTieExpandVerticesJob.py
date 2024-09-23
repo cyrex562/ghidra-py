@@ -47,7 +47,7 @@ public class BowTieExpandVerticesJob extends AbstractGraphTransitionJob<FcgVerte
 	private FcgLevel expandingLevel;
 	private FcgExpandingVertexCollection newVertexCollection;
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param viewer the graph viewer

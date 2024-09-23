@@ -29,7 +29,7 @@ public class SequenceDatabase {
 	private List<Sequence> sequences;
 	private int totalNumSeqs;
 
-	/**
+    # /**
 	 * Creates a new {@link SequenceDatabase}
 	 * @param sequencesToMine the sequences to mine for closed patterns
 	 * @param sequenceLength all sequences in the database must be of length 
@@ -53,7 +53,7 @@ public class SequenceDatabase {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the length of a sequence in the database (all sequences in a database must have the same length)
 	 * @return the length
 	 */
@@ -61,7 +61,7 @@ public class SequenceDatabase {
 		return sequenceLength;
 	}
 
-	/**
+    # /**
 	 * Returns the sequences in the database
 	 * @return the sequences
 	 */
@@ -69,7 +69,7 @@ public class SequenceDatabase {
 		return sequences;
 	}
 
-	/**
+    # /**
 	 * Get the total number of sequences in the database
 	 * @return total number of sequences
 	 */
@@ -77,7 +77,7 @@ public class SequenceDatabase {
 		return totalNumSeqs;
 	}
 
-	/**
+    # /**
 	 * returns the set of all items occuring in at least {@code minSupport} sequences
 	 * in the database.
 	 * @param minSupport minimum number of sequences that must contain an item

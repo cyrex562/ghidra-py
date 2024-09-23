@@ -24,7 +24,7 @@ public class ProjectedSequenceInfo {
 	private int sequenceIndex;
 	private int projectedIndex;
 
-	/**
+    # /**
 	 * Create a new {@link ProjectedSequenceInfo} object 
 	 * @param sequenceIndex index of a sequence in the database
 	 * @param projectedIndex index in the sequence of the first character after the the projection prefix
@@ -34,7 +34,7 @@ public class ProjectedSequenceInfo {
 		this.projectedIndex = projectedIndex;
 	}
 
-	/**
+    # /**
 	 * Get the sequence index
 	 * @return sequence index
 	 */
@@ -42,7 +42,7 @@ public class ProjectedSequenceInfo {
 		return sequenceIndex;
 	}
 
-	/**
+    # /**
 	 * Get the projected index
 	 * @return projected index
 	 */

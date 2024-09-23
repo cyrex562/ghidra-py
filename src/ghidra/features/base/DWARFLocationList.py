@@ -18,7 +18,7 @@ package ghidra.app.util.bin.format.dwarf;
 import static ghidra.app.util.bin.format.dwarf.DWARFLocationListEntry.*;
 import static ghidra.app.util.bin.format.dwarf.attribs.DWARFForm.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

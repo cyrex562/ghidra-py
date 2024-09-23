@@ -15,7 +15,7 @@
  */
 package ghidra.framework.client;
 
-import java.io.IOException;
+
 import java.io.InterruptedIOException;
 import java.rmi.*;
 
@@ -52,7 +52,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 
 	private RepositoryChangeDispatcher changeDispatcher;
 
-	/** 
+    # /** 
 	 * Construct.
 	 * @param serverAdapter persistent server adapter
 	 * @param name repository name
@@ -64,7 +64,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		serverAdapter.addListener(this);
 	}
 
-	/**
+    # /**
 	 * Constructor using a connected repository handle.
 	 * @param serverAdapter persistent server adapter
 	 * @param name repository name
@@ -79,7 +79,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if connection recently was lost unexpectedly
 	 */
 	public boolean hadUnexpectedDisconnect() {
@@ -95,7 +95,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		return repository;
 	}
 
-	/**
+    # /**
 	 * Set the file system listener associated with the remote repository.
 	 * @param fsListener file system listener
 	 */
@@ -103,7 +103,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		changeDispatcher.setFileChangeListener(fsListener);
 	}
 
-	/**
+    # /**
 	 * Add a listener to this remote adapter
 	 * @param listener
 	 */
@@ -111,7 +111,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		listenerList.add(listener);
 	}
 
-	/**
+    # /**
 	 * Remove a listener from this remote adapter
 	 * @param listener
 	 */
@@ -119,7 +119,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		listenerList.remove(listener);
 	}
 
-	/**
+    # /**
 	 * Notify listeners of repository connection state change.
 	 */
 	private void fireStateChanged() {
@@ -128,7 +128,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Notification callback when server connection state changes.
 	 * @see ghidra.framework.client.RemoteAdapterListener#connectionStateChanged(java.lang.Object)
 	 */
@@ -149,14 +149,14 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if connected.
 	 */
 	public boolean isConnected() {
 		return repository != null;
 	}
 
-	/**
+    # /**
 	 * Attempt to connect to the server.
 	 * @throws RepositoryNotFoundException if named repository does not exist
 	 * @throws IOException if IO error occurs
@@ -191,7 +191,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Event reader for change dispatcher.
 	 * @return
 	 * @throws IOException 
@@ -226,21 +226,21 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns repository name
 	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns server adapter 
 	 */
 	public RepositoryServerAdapter getServer() {
 		return serverAdapter;
 	}
 
-	/**
+    # /**
 	 * Returns server information
 	 */
 	public ServerInfo getServerInfo() {
@@ -279,7 +279,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns repository user object.
 	 * @throws UserAccessException user no longer has any permission to use repository.
 	 * @throws NotConnectedException if server/repository connection is down (user already informed)
@@ -303,7 +303,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * @return true if anonymous access allowed by this repository
 	 * @throws IOException
 	 */
@@ -322,7 +322,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns list of repository users.
 	 * @throws IOException
 	 * @throws UserAccessException user no longer has any permission to use repository.
@@ -344,7 +344,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns list of all users known to server.
 	 * @throws IOException
 	 * @throws UserAccessException user no longer has any permission to use repository.
@@ -366,7 +366,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Set the list of authorized users for this repository.
 	 * @param users list of user and access permissions.
 	 * @param anonymousAccessAllowed true to permit anonymous access (also requires anonymous
@@ -392,7 +392,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * @see RepositoryHandle#createDatabase(String, String, String, int, String, String)
 	 */
 	public ManagedBufferFileAdapter createDatabase(String parentPath, String itemName,
@@ -532,7 +532,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Convert UnmarshalException into UnsupportedOperationException
 	 * @param e
 	 * @throws UnsupportedOperationException
@@ -871,7 +871,7 @@ public class RepositoryAdapter implements RemoteAdapterListener {
 		}
 	}
 
-	/**
+    # /**
 	 * Verify that the connection is still valid.
 	 * @return true if the connection is valid; false if the connection needs to be reestablished
 	 */

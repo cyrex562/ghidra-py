@@ -17,7 +17,7 @@ package ghidra.app.plugin.core.programtree;
 
 import java.awt.datatransfer.*;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Supplier;

@@ -17,7 +17,7 @@ package help.screenshot;
 
 import java.awt.Component;
 import java.awt.Window;
-import java.io.*;
+
 import java.util.*;
 
 import javax.swing.*;

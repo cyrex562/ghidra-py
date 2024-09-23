@@ -15,7 +15,7 @@
  */
 package ghidra.macosx.plugins;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import docking.action.builder.ActionBuilder;
@@ -57,7 +57,7 @@ import ghidra.util.task.TaskMonitor;
 //@formatter:on
 public class DyldCacheBuilderPlugin extends Plugin {
 
-	/**
+    # /**
 	 * Creates a new {@link DyldCacheBuilderPlugin}
 	 * 
 	 * @param tool The {@link PluginTool} that will host/contain this {@link Plugin}
@@ -84,7 +84,7 @@ public class DyldCacheBuilderPlugin extends Plugin {
 				.buildAndInstall(tool);
 	}
 
-	/**
+    # /**
 	 * Attempts to add the DYLD Cache component that resides at the given {@link ProgramLocation}'s
 	 * "referred to" address
 	 * 
@@ -135,7 +135,7 @@ public class DyldCacheBuilderPlugin extends Plugin {
 		}
 	}
 
-	/**
+    # /**
 	 * Attempts to open the given {@link Program}'s originating {@link DyldCacheFileSystem}
 	 * 
 	 * @param program The {@link Program}
@@ -159,7 +159,7 @@ public class DyldCacheBuilderPlugin extends Plugin {
 		return FileSystemService.getInstance().getFilesystem(fsrlRoot, monitor);
 	}
 
-	/**
+    # /**
 	 * Attempts to find the given address in the DYLD Cache's DYLIB segments
 	 * 
 	 * @param addr The address to find
@@ -187,7 +187,7 @@ public class DyldCacheBuilderPlugin extends Plugin {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Attempts to find the given address in the DYLD Cache's text stubs
 	 * 
 	 * @param addr The address to find
@@ -209,7 +209,7 @@ public class DyldCacheBuilderPlugin extends Plugin {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Attempts to find the given address in the DYLD data
 	 * 
 	 * @param addr The address to find

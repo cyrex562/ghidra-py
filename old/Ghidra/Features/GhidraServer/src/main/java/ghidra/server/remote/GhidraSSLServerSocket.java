@@ -15,7 +15,7 @@
  */
 package ghidra.server.remote;
 
-import java.io.IOException;
+
 import java.net.*;
 import java.security.NoSuchAlgorithmException;
 

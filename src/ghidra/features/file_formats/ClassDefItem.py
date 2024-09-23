@@ -23,7 +23,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.DuplicateNameException;
 import ghidra.util.task.TaskMonitor;
 
-import java.io.IOException;
+
 
 public class ClassDefItem implements StructConverter {
 
@@ -128,7 +128,7 @@ public class ClassDefItem implements StructConverter {
 		return sourceFileIndex;
 	}
 
-	/**
+    # /**
 	 * NOTE: For CDEX files, this value is relative to DataOffset in DexHeader
 	 * @return the relative offset to annotations
 	 */

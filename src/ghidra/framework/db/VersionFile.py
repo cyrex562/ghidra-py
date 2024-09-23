@@ -22,7 +22,7 @@ import ghidra.util.exception.AssertException;
 import ghidra.util.exception.NoValueException;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 # /**

@@ -15,7 +15,7 @@
  */
 package ghidra.framework.store.local;
 
-import java.io.*;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;

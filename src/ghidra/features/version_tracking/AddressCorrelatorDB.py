@@ -19,7 +19,7 @@ import static ghidra.feature.vt.api.db.VTAddressCorrelatorAdapter.AddressCorrela
 import static ghidra.feature.vt.api.db.VTAddressCorrelatorAdapter.AddressCorrelationTableDescriptor.SOURCE_ADDRESS_COL;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 

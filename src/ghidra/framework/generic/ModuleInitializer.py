@@ -35,7 +35,7 @@ public interface ModuleInitializer
 			Runnable { // use the run() method from Runnable as the initialization method	
 //@formatter:on
 
-	/**
+    # /**
 	 * @return initializer name
 	 */
 	public String getName();

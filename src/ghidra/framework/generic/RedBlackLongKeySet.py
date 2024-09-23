@@ -21,7 +21,7 @@ import java.io.Serializable;
  */
 
 public class RedBlackLongKeySet implements Serializable {
-	/** the number of bytes in a RedBlackLongKeySet node */
+    # /** the number of bytes in a RedBlackLongKeySet node */
     public static final int NODESIZE = 15;
 
     private transient RBNode root;

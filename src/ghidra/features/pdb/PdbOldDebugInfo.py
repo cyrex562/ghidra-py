@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import ghidra.util.exception.CancelledException;
@@ -32,7 +32,7 @@ public class PdbOldDebugInfo extends PdbDebugInfo {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param pdb {@link AbstractPdb} that owns this {@link PdbOldDebugInfo}
 	 * @param streamNumber the number of the stream that contains the {@link PdbOldDebugInfo}

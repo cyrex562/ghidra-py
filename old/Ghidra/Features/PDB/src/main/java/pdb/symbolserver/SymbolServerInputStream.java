@@ -15,7 +15,7 @@
  */
 package pdb.symbolserver;
 
-import java.io.*;
+
 
 /**
  * A {@link InputStream} wrapper returned from a {@link SymbolServer}

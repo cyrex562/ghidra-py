@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.help.UnsupportedOperationException;
@@ -37,15 +37,15 @@ import ghidra.util.exception.VersionException;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Class for managing data types in a project archive
- * NOTE: default data organization is used.
- */
+# * Class for managing data types in a project archive
+# * NOTE: default data organization is used.
+# */
 public class ProjectDataTypeManager extends StandAloneDataTypeManager
 		implements ProjectArchiveBasedDataTypeManager {
 
 	private final DataTypeArchiveDB dataTypeArchive;
 
-	/**
+    # /**
 	 * Constructor for a data-type manager using a specified DBHandle.
 	 * <p>
 	 * <B>NOTE:</B> If archive has an assigned architecture, issues may arise due to a revised or

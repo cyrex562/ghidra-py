@@ -26,7 +26,7 @@ import ghidra.program.model.data.DataTypeManager;
 import ghidra.util.Msg;
 
 import java.awt.Component;
-import java.io.IOException;
+
 
 import javax.swing.tree.TreePath;
 

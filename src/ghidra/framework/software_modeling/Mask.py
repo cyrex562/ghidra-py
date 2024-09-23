@@ -1,32 +1,32 @@
 # /* ###
- * IP: GHIDRA
- * REVIEWED: YES
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# * REVIEWED: YES
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.lang;
 
 import ghidra.program.model.mem.MemBuffer;
 import ghidra.program.model.mem.MemoryAccessException;
 
 # /**
- * The Mask class is used to perform some basic bit tests on an
- * array of bits.
- */
+# * The Mask class is used to perform some basic bit tests on an
+# * array of bits.
+# */
 
 public interface Mask {
 
-	/**
+    # /**
 	*   Test if the given object is equal to this object. Two masks are
 	*   equal if they have exactly the same values in thier byte arrays.
 	*   @param obj the object to be tested for equals
@@ -35,14 +35,14 @@ public interface Mask {
 
 	boolean equals(Object obj);
 
-	/**
+    # /**
 	 * Check if the mask represented by the byte array is equal to this one.
 	 * @param mask mask represented as byte array
 	 * @return true if the masks are the same, false otherwise
 	 */
 	boolean equals(byte[] mask);
 
-	/**
+    # /**
 	 * Apply the mask to a byte array.
 	 *   @param cde the array that contains the values to be masked
 	 *   @param results the array to contain the results.
@@ -52,7 +52,7 @@ public interface Mask {
 	 */
 	byte[] applyMask(byte[] cde, byte[] results) throws IncompatibleMaskException;
 
-	/**
+    # /**
 	 * Apply the mask to a byte array.
 	 *   @param cde the array that contains the values to be masked
 	 *   @param cdeOffset the offset into the array that contains the values to be masked
@@ -64,7 +64,7 @@ public interface Mask {
 	void applyMask(byte[] cde, int cdeOffset, byte[] results, int resultsOffset)
 			throws IncompatibleMaskException;
 
-	/**
+    # /**
 	* Apply the mask to a memory buffer.
 	*   @param buffer the memory buffer that contains the values to be masked
 	*   @return the resulting masked byte array.
@@ -73,7 +73,7 @@ public interface Mask {
 	 */
 	byte[] applyMask(MemBuffer buffer) throws MemoryAccessException;
 
-	/**
+    # /**
 	*   Tests if the results of apply the mask to the given array matches a
 	*   target array.
 	*   @param cde the source bytes.
@@ -85,7 +85,7 @@ public interface Mask {
 	*/
 	boolean equalMaskedValue(byte[] cde, byte[] target) throws IncompatibleMaskException;
 
-	/**
+    # /**
 	*   applies the complement of the mask to the given byte array.
 	*   @param msk the bytes to apply the inverted mask.
 	*   @param results the array for storing the results.
@@ -95,7 +95,7 @@ public interface Mask {
 	*/
 	byte[] complementMask(byte[] msk, byte[] results) throws IncompatibleMaskException;
 
-	/**
+    # /**
 	*   Tests if the given mask matches the this mask for the first n
 	*   bytes, where n is the size of the given mask.
 	*   @param msk the bytes to be tested to see if they match the first
@@ -107,7 +107,7 @@ public interface Mask {
 	*/
 	boolean subMask(byte[] msk) throws IncompatibleMaskException;
 
-	/** 
+    # /** 
 	 * Returns the bytes that make up this mask.
 	 */
 	byte[] getBytes();

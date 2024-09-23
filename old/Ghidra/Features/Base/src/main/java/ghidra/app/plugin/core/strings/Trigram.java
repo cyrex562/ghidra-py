@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.strings;
 
-import java.io.IOException;
+
 import java.util.*;
 
 /**

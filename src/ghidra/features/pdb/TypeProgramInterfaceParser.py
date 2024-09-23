@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.IOException;
+
 
 import ghidra.util.exception.CancelledException;
 
@@ -42,7 +42,7 @@ public class TypeProgramInterfaceParser {
 	//==============================================================================================
 	// API
 	//==============================================================================================
-	/**
+    # /**
 	 * Parses information to determine the version of {@link TypeProgramInterface} to
 	 *  create
 	 * @param pdb {@link AbstractPdb} that owns this {@link TypeProgramInterface}
@@ -99,7 +99,7 @@ public class TypeProgramInterfaceParser {
 	//==============================================================================================
 	// Internal Data Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Returns the standard stream number that contains the serialized Type Program Interface
 	 * @return the standard stream number that contains the Type Program Interface
 	 */
@@ -107,7 +107,7 @@ public class TypeProgramInterfaceParser {
 		return TYPE_PROGRAM_INTERFACE_STREAM_NUMBER;
 	}
 
-	/**
+    # /**
 	 * Returns the appropriate {@link RecordCategory} needed while processing
 	 *  the Type Program Interface} (vs. Item Program Interface)
 	 * @return {@link RecordCategory#TYPE}

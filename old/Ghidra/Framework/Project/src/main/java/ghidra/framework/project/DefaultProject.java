@@ -15,7 +15,7 @@
  */
 package ghidra.framework.project;
 
-import java.io.*;
+
 import java.net.URL;
 import java.util.*;
 import java.util.Map.Entry;

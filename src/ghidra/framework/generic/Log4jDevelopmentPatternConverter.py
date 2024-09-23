@@ -70,7 +70,7 @@ public class Log4jDevelopmentPatternConverter extends LogEventPatternConverter {
 	private PrintWriter printWriter = new PrintWriter(stringWriter);
 	private StringBuilder buffer = new StringBuilder(100);
 
-	/**
+    # /**
 	 * Required constructor.
 	 * 
 	 * @param name the name of the converter
@@ -80,7 +80,7 @@ public class Log4jDevelopmentPatternConverter extends LogEventPatternConverter {
 		super(name, style);
 	}
 
-	/**
+    # /**
 	 * Required instance method for all log4j 2.x converters.
 	 * 
 	 * @param options unused
@@ -90,7 +90,7 @@ public class Log4jDevelopmentPatternConverter extends LogEventPatternConverter {
 		return new Log4jDevelopmentPatternConverter("hyperlinker", "hyperlinker");
 	}
 
-	/**
+    # /**
 	 * Appends the desired hyperlink to the existing event message.
 	 * 
 	 * @param event the current log event

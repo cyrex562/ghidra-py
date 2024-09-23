@@ -24,7 +24,7 @@ public final class CompilerSpecID implements Comparable<CompilerSpecID> {
 
 	private final String id;
 
-	/**
+    # /**
 	 * Creates a new compiler spec ID.
 	 * 
 	 * @param id The compiler ID (gcc, borlandcpp, etc) as defined in the appropriate 
@@ -34,7 +34,7 @@ public final class CompilerSpecID implements Comparable<CompilerSpecID> {
 		this.id = id != null ? id : DEFAULT_ID;
 	}
 
-	/**
+    # /**
 	 * Gets the compiler spec ID as a string.
 	 * 
 	 * @return The compilers spec ID as a string.

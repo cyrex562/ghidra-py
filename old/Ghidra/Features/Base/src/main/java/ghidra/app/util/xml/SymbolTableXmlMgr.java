@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.xml;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.NamespaceUtils;
 import ghidra.app.util.importer.MessageLog;

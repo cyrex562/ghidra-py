@@ -19,7 +19,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.awt.Rectangle;
 import java.awt.event.MouseEvent;
-import java.io.*;
+
 import java.nio.charset.Charset;
 import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;

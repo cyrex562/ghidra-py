@@ -24,7 +24,7 @@ public class SwiftArray extends DemangledDataType {
 
 	private DemangledDataType boundType;
 
-	/**
+    # /**
 	 * Creates a new Swift array bound to the "undefined" type
 	 * 
 	 * @param mangled The mangled string
@@ -38,14 +38,14 @@ public class SwiftArray extends DemangledDataType {
 		setArray(1);
 	}
 
-	/**
+    # /**
 	 * {@return the bound type}
 	 */
 	public DemangledDataType getBoundType() {
 		return boundType;
 	}
 
-	/**
+    # /**
 	 * Sets the bound type
 	 * 
 	 * @param type The bound type

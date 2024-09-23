@@ -17,7 +17,7 @@
 // a user specified file.
 //@category BSim
 
-import java.io.*;
+
 import java.util.Iterator;
 
 import generic.lsh.vector.LSHVectorFactory;

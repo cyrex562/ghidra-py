@@ -15,7 +15,7 @@
  */
 package ghidra.app.plugin.core.debug.gui.tracermi.launcher;
 
-import java.io.*;
+
 import java.math.BigInteger;
 import java.net.*;
 import java.nio.file.Path;

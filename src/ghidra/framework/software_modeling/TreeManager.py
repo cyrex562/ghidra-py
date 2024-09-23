@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.module;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -35,12 +35,12 @@ import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 # /**
- * Manage the set of trees in the program.
- *
- *
- */
+# * Manage the set of trees in the program.
+# *
+# *
+# */
 public class TreeManager implements ManagerDB {
-	/**
+    # /**
 	 * The name of the default tree that is created when a program is created.
 	 */
 	public final static String DEFAULT_TREE_NAME = "Program Tree";
@@ -53,7 +53,7 @@ public class TreeManager implements ManagerDB {
 	private ErrorHandler errHandler;
 	private Lock lock;
 
-	/**
+    # /**
 	 *
 	 * Construct a new TreeManager.
 	 *
@@ -108,7 +108,7 @@ public class TreeManager implements ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Create a new tree with given name.
 	 * @param treeName name of the tree (not the root module)
 	 * @return root module for the new tree
@@ -146,7 +146,7 @@ public class TreeManager implements ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the root module of the tree with the given name.
 	 * @param treeName tree name
 	 * @return root module, or null if there is no tree with the
@@ -170,7 +170,7 @@ public class TreeManager implements ManagerDB {
 
 	}
 
-	/**
+    # /**
 	 * Returns the root module for the default program tree. The default tree is the oldest tree.
 	 * @return  the root module for the default program tree. The default tree is the oldest tree.
 	 */
@@ -189,7 +189,7 @@ public class TreeManager implements ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the names of all the trees in the program.
 	 * @return sorted array of tree names
 	 */
@@ -212,7 +212,7 @@ public class TreeManager implements ManagerDB {
 		return new String[0];
 	}
 
-	/**
+    # /**
 	 * Rename the tree to the new name. This method has no effect on the
 	 * name of the root module.
 	 * @param oldName old name of root module
@@ -243,7 +243,7 @@ public class TreeManager implements ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove the tree with the given name.
 	 * @param treeName tree name
 	 * @return true if the tree was removed
@@ -271,7 +271,7 @@ public class TreeManager implements ManagerDB {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get the module with the given name that is in the tree identified
 	 * by the treeName.
 	 * @param treeName name of the tree
@@ -297,7 +297,7 @@ public class TreeManager implements ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the fragment with the given name that is in the tree identified
 	 * by the treeName.
 	 * @param treeName name of the tree
@@ -322,7 +322,7 @@ public class TreeManager implements ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Get the fragment that contains the given address within the tree
 	 * identified by the treeName.
 	 * @param treeName name of the tree
@@ -349,7 +349,7 @@ public class TreeManager implements ManagerDB {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Add a memory block with the given range.
 	 * @param name memory block name (name of new fragment)
 	 * @param range memory block address range
@@ -448,7 +448,7 @@ public class TreeManager implements ManagerDB {
 	}
 
 	/////////////////////////////////////////////////////////////////////
-	/**
+    # /**
 	 * Method addMemoryBlocks; called when a new module manager is
 	 * being created.
 	 */
@@ -467,7 +467,7 @@ public class TreeManager implements ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Populate the map with existing tree views.
 	 * @throws VersionException if a DB schema version differs from expected version
 	 * @throws CancelledException if operation cancelled
@@ -484,7 +484,7 @@ public class TreeManager implements ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Re-Populate the map with existing tree views following an invalidation (e.g., undo, redo, memory movement).
 	 * @param ignoreModificationNumber if true all existing module managers will be invalidated, otherwise 
 	 * only those module managers whose modification number does not match the corresponding tree modification
@@ -553,7 +553,7 @@ public class TreeManager implements ManagerDB {
 		updateTreeRecord(record, true);
 	}
 
-	/**
+    # /**
 	 * Update the record in the database.
 	 * @param record record to update in the database
 	 * @param updateModificationNumber true means to update the
@@ -591,7 +591,7 @@ public class TreeManager implements ManagerDB {
 		}
 	}
 
-	/**
+    # /**
 	 * Get the root module for the tree that has the given ID.
 	 * @param treeID ID of the tree
 	 * @return root module

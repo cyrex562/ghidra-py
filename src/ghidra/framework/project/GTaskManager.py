@@ -82,7 +82,7 @@ public class GTaskManager {
 	private Deque<GScheduledTask> delayedTaskStack = new ArrayDeque<GScheduledTask>();
 	private Queue<GTaskResult> results = new ArrayDeque<GTaskResult>();
 
-	/**
+    # /**
 	 * Creates a new GTaskManager for an DomainObject
 	 * @param domainObject the domainObject that tasks scheduled in this GTaskManager will
 	 * operate upon.
@@ -103,7 +103,7 @@ public class GTaskManager {
 		});
 	}
 
-	/**
+    # /**
 	 * Schedules a task to be run by this TaskManager. Tasks are run one at a time.
 	 * 
 	 * @param task the task to be run.
@@ -148,7 +148,7 @@ public class GTaskManager {
 		return newTask;
 	}
 
-	/**
+    # /**
 	 * Schedules a task to be run by this TaskManager within the group with the given group name.
 	 * If a group already exists with the given name(either currently running or waiting), the task
 	 * will be added to that group. Otherwise, a new group will be created with the given group name
@@ -186,7 +186,7 @@ public class GTaskManager {
 
 	}
 
-	/**
+    # /**
 	 * Schedules a task group to run.  Task groups are run in the order they are scheduled. They 
 	 * have the option of being executed in the current transaction (if it exists) or starting
 	 * a new transaction.
@@ -207,7 +207,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the suspended state of this task queue.  While suspended, this task manager will not
 	 * start any new tasks in its queue.  Any currently running task will continue to run.
 	 * 
@@ -228,7 +228,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * This method will cause the next scheduled task to run even though the task manager is
 	 * suspended.  Calling this method while the queue is not suspended has no effect because
 	 * if not suspended, it will be busy (or have nothing to do)
@@ -244,7 +244,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Adds a GTaskListener to be notified as tasks are completed.
 	 * @param listener the listener to add
 	 */
@@ -264,7 +264,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Removes the given GTaskListener from this queue. 
 	 * @param listener the listener to remove.
 	 */
@@ -283,7 +283,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this manager is running a task, or if suspended has additional tasks queued.
 	 * @return  true if this manager is running a task, or if suspended has additional tasks queued.
 	 */
@@ -342,7 +342,7 @@ public class GTaskManager {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns true if this manager is currently running a task. If not suspended, a GTaskManager
 	 * will always be executing a task as long as there are tasks to execute.  If suspended, a
 	 * GTaskManager may have tasks scheduled, but may not be currently executing one.
@@ -358,7 +358,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * This methods is for currently running tasks to suspend and allow higher priority tasks 
 	 * (within the same task group) to complete before continuing.  If called by any thread other
 	 * than the thread that is currently executing a task for this queue, an exception will be 
@@ -403,7 +403,7 @@ public class GTaskManager {
 
 	}
 
-	/**
+    # /**
 	 * Returns a list of the most recent GTaskResults.  The TaskManager only keeps the most recent
 	 * N GTaskResults.
 	 * @return the list of the most recent GTaskResults.
@@ -418,7 +418,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a list of scheduled tasks for the currently running group.
 	 * @return a list of scheduled tasks for the currently running group.
 	 */
@@ -432,7 +432,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a list of Tasks that are currently waiting for higher priority tasks.
 	 * @return a list of Tasks that are currently waiting for higher priority tasks.
 	 */
@@ -446,7 +446,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the currently running task, or null if no task is running.
 	 * @return the currently running task;
 	 */
@@ -460,7 +460,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns the currently running group, or null if no group is running.
 	 * @return the currently running group, or null if no group is running.
 	 */
@@ -474,7 +474,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns a list of Groups that are waiting to run.
 	 * @return a list of Groups that are waiting to run.
 	 */
@@ -488,7 +488,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if this GTaskManager is currently suspended. 
 	 * @return true if this GTaskManager is currently suspended. 
 	 */
@@ -502,7 +502,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Cancels all tasks in the currently running group.  Tasks in the group that have not yet started
 	 * will never run and will immediately be put into the TaskResults list.  The TaskMonitor for
 	 * the currently running task will be cancelled, but the task will continue to run until it
@@ -528,7 +528,7 @@ public class GTaskManager {
 		}
 	}
 
-	/**
+    # /**
 	 * Cancels all scheduled groups and tasks. The TaskMonitor for
 	 * the currently running task will be cancelled, but the task will continue to run until it
 	 * checks the monitor.

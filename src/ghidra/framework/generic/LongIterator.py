@@ -21,7 +21,7 @@ package ghidra.util;
  * 
  */
 public interface LongIterator { 
-	/**
+    # /**
 	 * A default implementation of LongIterator that has no values.
 	 */
 	public final static LongIterator EMPTY = new LongIterator() {
@@ -39,11 +39,11 @@ public interface LongIterator {
 		}
 	};
 
-	/**
+    # /**
 	 * Return true if there is a next long in this iterator.
 	 */
     public boolean hasNext();
-	/**
+    # /**
 	 * Get the next long value in this iterator.
 	 */
     public long next();
@@ -52,7 +52,7 @@ public interface LongIterator {
      * Return true if there a previous long in this iterator.
      */
     public boolean hasPrevious();
-	/**
+    # /**
 	 * Get the previous long value in this iterator.
 	 */
     public long previous();

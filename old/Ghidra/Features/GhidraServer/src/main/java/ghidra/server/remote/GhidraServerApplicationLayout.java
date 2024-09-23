@@ -15,7 +15,7 @@
  */
 package ghidra.server.remote;
 
-import java.io.IOException;
+
 import java.util.Collections;
 
 import ghidra.framework.ApplicationProperties;

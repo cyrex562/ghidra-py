@@ -29,19 +29,19 @@ import ghidra.util.task.TaskMonitor;
  */
 public interface VTAssociation {
 
-	/**
+    # /**
 	 * Returns the type of the association.  Either Function or Data.
 	 * @return the type of the association.  Either Function or Data.
 	 */
 	public VTAssociationType getType();
 
-	/**
+    # /**
 	 * Returns the VTSession that this association belongs to.
 	 * @return the VTSession that this association belongs to.
 	 */
 	public VTSession getSession();
 
-	/**
+    # /**
 	 * Returns a list of markup items for this association.
 	 * @param monitor a task monitor used to monitor and control this operation.
 	 * @return a list of markup items for this association.
@@ -49,7 +49,7 @@ public interface VTAssociation {
 	 */
 	public Collection<VTMarkupItem> getMarkupItems(TaskMonitor monitor) throws CancelledException;
 
-	/**
+    # /**
 	 * Returns true if this association is accepted and has one or more markup items that have
 	 * been applied.
 	 * @return true if this association is accepted and has one or more markup items that have
@@ -57,19 +57,19 @@ public interface VTAssociation {
 	 */
 	public boolean hasAppliedMarkupItems();
 
-	/**
+    # /**
 	 * Returns the address of the function or data item in the source program for this association.
 	 * @return the address of the function or data item in the source program for this association.
 	 */
 	public Address getSourceAddress();
 
-	/**
+    # /**
 	 * Returns the address of the function or data item in the source program for this association.
 	 * @return the address of the function or data item in the source program for this association.
 	 */
 	public Address getDestinationAddress();
 
-	/**
+    # /**
 	 * Returns a collection of VTAssociations that have either the same source address or the same
 	 * destination address.
 	 * @return  a collection of VTAssociations that have either the same source address or the same
@@ -77,7 +77,7 @@ public interface VTAssociation {
 	 */
 	public Collection<VTAssociation> getRelatedAssociations();
 
-	/**
+    # /**
 	 * Sets the markup status of this association.  This method is used by the
 	 * {@link VTAssociationManager} to update the association with information about the state
 	 * of its markup items.
@@ -85,7 +85,7 @@ public interface VTAssociation {
 	 */
 	public void setMarkupStatus(VTAssociationMarkupStatus markupItemsStatus);
 
-	/**
+    # /**
 	 * Returns the status of the markup items for this association.
 	 * See {@link VTAssociationMarkupStatus} for details.
 	 *
@@ -93,14 +93,14 @@ public interface VTAssociation {
 	 */
 	public VTAssociationMarkupStatus getMarkupStatus();
 
-	/**
+    # /**
 	 * Returns the current status of this association. One of AVAILABLE, ACCEPTED, BLOCKED,
 	 *  or REJECTED.  See {@link VTAssociationStatus} for details.
 	 * @return  the current status of this association. One of AVAILABLE, ACCEPTED, BLOCKED, or REJECTED.
 	 */
 	public VTAssociationStatus getStatus();
 
-	/**
+    # /**
 	 * A convenience method to accept the given association without actually performing an apply.
 	 *
 	 * @throws VTAssociationStatusException if the given association is
@@ -108,7 +108,7 @@ public interface VTAssociation {
 	 */
 	public void setAccepted() throws VTAssociationStatusException;
 
-	/**
+    # /**
 	 * Clears the state of the given association from {@link VTAssociationStatus#ACCEPTED}
 	 * or {@link VTAssociationStatus#REJECTED} to {@link VTAssociationStatus#AVAILABLE}.
 	 * This method will throw an exception if called while the given assocation's markup items
@@ -122,13 +122,13 @@ public interface VTAssociation {
 	 */
 	public void clearStatus() throws VTAssociationStatusException;
 
-	/**
+    # /**
 	 * Sets the status of this association to {@link VTAssociationStatus#REJECTED}.
 	 * @throws VTAssociationStatusException if the association is accepted.
 	 */
 	public void setRejected() throws VTAssociationStatusException;
 
-	/**
+    # /**
 	 * Returns the current vote count which is an application settable field which should generally
 	 * be used to indicate a number of supporting facts.  For example, other accepted associations
 	 * may have matching call references to this association, each of those matching calls should
@@ -137,7 +137,7 @@ public interface VTAssociation {
 	 */
 	public int getVoteCount();
 
-	/**
+    # /**
 	 * Sets the vote count for this association which should be used to indicate the number of
 	 * supporting facts for this association
 	 * @param voteCount the new vote count for this association.

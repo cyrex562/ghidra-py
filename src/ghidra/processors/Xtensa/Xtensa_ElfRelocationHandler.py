@@ -30,7 +30,7 @@ public class Xtensa_ElfRelocationHandler
 	// EM_XTENSA is already definded
 	public static final int EM_XTENSA_OLD = 0xABC7;
 
-	/**
+    # /**
 	 * Constructor
 	 */
 	public Xtensa_ElfRelocationHandler() {

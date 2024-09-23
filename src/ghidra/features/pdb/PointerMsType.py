@@ -38,7 +38,7 @@ public class PointerMsType extends AbstractPointerMsType {
 	// The attributes long is 00 00 4c 00. The bit on the 4 is what is unknown.
 	private boolean unk;
 
-	/**
+    # /**
 	 * Constructor for this type.
 	 * @param pdb {@link AbstractPdb} to which this type belongs.
 	 * @param reader {@link PdbByteReader} from which this type is deserialized.
@@ -56,7 +56,7 @@ public class PointerMsType extends AbstractPointerMsType {
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Tells whether it has the restrict attribute.
 	 * @return True if it has the restrict attribute.
 	 */
@@ -64,7 +64,7 @@ public class PointerMsType extends AbstractPointerMsType {
 		return isRestrict;
 	}
 
-	/**
+    # /**
 	 * Tells whether it is Mocom.
 	 * @return True if it is Mocoem.
 	 */
@@ -72,7 +72,7 @@ public class PointerMsType extends AbstractPointerMsType {
 		return isMocom;
 	}
 
-	/**
+    # /**
 	 * Tells whether it is a left reference.
 	 * @return True if it is a left reference.
 	 */
@@ -80,7 +80,7 @@ public class PointerMsType extends AbstractPointerMsType {
 		return isLRef;
 	}
 
-	/**
+    # /**
 	 * Tells whether if is a right reference.
 	 * @return True if it is a right reference.
 	 */
@@ -88,7 +88,7 @@ public class PointerMsType extends AbstractPointerMsType {
 		return isRRef;
 	}
 
-	/**
+    # /**
 	 * Tells whether the attribute is unknown.
 	 * @return True if the attribute is unknown.
 	 */

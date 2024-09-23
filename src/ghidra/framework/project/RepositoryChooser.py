@@ -18,7 +18,7 @@ package ghidra.framework.main;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 

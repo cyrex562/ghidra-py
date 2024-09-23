@@ -18,7 +18,7 @@ package ghidra.app.plugin.processors.sleigh;
 import static utilities.util.FileUtilities.*;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.*;
 import java.util.regex.Pattern;
 

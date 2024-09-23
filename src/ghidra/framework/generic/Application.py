@@ -15,7 +15,7 @@
  */
 package ghidra.framework;
 
-import java.io.*;
+
 import java.util.*;
 
 import generic.jar.ClassModuleTree;

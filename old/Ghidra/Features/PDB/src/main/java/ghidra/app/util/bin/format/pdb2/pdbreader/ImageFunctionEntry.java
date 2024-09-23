@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader;
 
-import java.io.*;
+
 
 /**
  * Image Function Entry data seems to be the main data PData record of the {@link DebugData}.

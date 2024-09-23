@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.plugin.processors.sleigh;
 
 import ghidra.app.plugin.processors.sleigh.symbol.*;
@@ -23,15 +23,15 @@ import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.util.exception.AssertException;
 
 # /**
- * Class for walking the Sleigh Parser tree.  The nodes of the tree are the Sleigh Constructors arranged for a particular
- * instruction.  This tree is walked for various purposes:
- * <ul>
- *     <li>SleighInstructionPrototype.resolve        - initial parsing of instruction and building the tree</li>
- *     <li>SleighInstructionPrototype.resolveHandles - filling in Varnode values for all the Constructor exports</li>
- *     <li>PcodeEmit                                 - for weaving together p-code for an instruction</li>
- * </ul>
- *
- */
+# * Class for walking the Sleigh Parser tree.  The nodes of the tree are the Sleigh Constructors arranged for a particular
+# * instruction.  This tree is walked for various purposes:
+# * <ul>
+# *     <li>SleighInstructionPrototype.resolve        - initial parsing of instruction and building the tree</li>
+# *     <li>SleighInstructionPrototype.resolveHandles - filling in Varnode values for all the Constructor exports</li>
+# *     <li>PcodeEmit                                 - for weaving together p-code for an instruction</li>
+# * </ul>
+# *
+# */
 public class ParserWalker {
 
 	private static final int MAX_PARSE_DEPTH = 64;
@@ -48,7 +48,7 @@ public class ParserWalker {
 		breadcrumb = new int[MAX_PARSE_DEPTH + 1];
 	}
 
-	/**
+    # /**
 	 * For use with pcode cross-build 
 	 * @param c context
 	 * @param cross cross context
@@ -62,7 +62,7 @@ public class ParserWalker {
 		return context;
 	}
 
-	/**
+    # /**
 	 * Initialize a walk of the tree
 	 */
 	public void baseState() {
@@ -77,7 +77,7 @@ public class ParserWalker {
 		breadcrumb[0] = 0;
 	}
 
-	/**
+    # /**
 	 * Create state suitable for parsing a just a p-code semantics snippet
 	 */
 	public void snippetState() {
@@ -86,7 +86,7 @@ public class ParserWalker {
 		breadcrumb[0] = 0;
 	}
 
-	/**
+    # /**
 	 * Are we at the end of the tree walk
 	 * @return true if there is more walk to go
 	 */
@@ -98,7 +98,7 @@ public class ParserWalker {
 		return point;
 	}
 
-	/**
+    # /**
 	 * Move down to a particular child of the current node.  Store what would be the next sibling to walk
 	 * @param i is the index of the desired child
 	 */
@@ -121,7 +121,7 @@ public class ParserWalker {
 		breadcrumb[depth] = 0;
 	}
 
-	/**
+    # /**
 	 * Move to the parent of the current node
 	 */
 	public void popOperand() {
@@ -129,7 +129,7 @@ public class ParserWalker {
 		depth -= 1;
 	}
 
-	/**
+    # /**
 	 * Find the next child that needs to be traversed
 	 * @return the index of the child
 	 */
@@ -145,7 +145,7 @@ public class ParserWalker {
 		return context.getFixedHandle(point);
 	}
 
-	/**
+    # /**
 	 * Get the offset into the instruction for the current node (i=-1) or one of the current node's children
 	 * @param i selects the desired child of the current node
 	 * @return the offset (in bytes) for the selected node
@@ -169,7 +169,7 @@ public class ParserWalker {
 		point.setLength(len);
 	}
 
-	/**
+    # /**
 	 * Calculate the length of the current constructor state
 	 * assuming all its operands are constructed
 	 */
@@ -187,7 +187,7 @@ public class ParserWalker {
 		point.setLength(minLength - point.getOffset()); // Convert back to relative length
 	}
 
-	/**
+    # /**
 	 * @return the Constructor for the current node in the walk
 	 */
 	public Constructor getConstructor() {

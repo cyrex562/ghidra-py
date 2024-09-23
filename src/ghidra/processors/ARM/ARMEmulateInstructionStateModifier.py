@@ -45,7 +45,7 @@ public class ARMEmulateInstructionStateModifier extends EmulateInstructionStateM
 			aMode = new RegisterValue(TModeReg, BigInteger.ZERO);
 		}
 
-		/**
+	    # /**
 		 * We could registerPcodeOpBehavior for one or more of the following pcodeop's:
 		 *  
 		  Absolute
@@ -108,7 +108,7 @@ public class ARMEmulateInstructionStateModifier extends EmulateInstructionStateM
 		 */
 	}
 
-	/**
+    # /**
 	 * Initialize TB register based upon context-register state before first instruction is executed.
 	 */
 	@Override
@@ -127,7 +127,7 @@ public class ARMEmulateInstructionStateModifier extends EmulateInstructionStateM
 		emu.getMemoryState().setValue(TBreg, tModeValue);
 	}
 
-	/**
+    # /**
 	 * Handle odd addresses which may occur when jumping/returning indirectly
 	 * to Thumb mode.  It is assumed that language will properly handle
 	 * context changes during the flow of execution, we need only fix

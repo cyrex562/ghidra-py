@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.net.*;
 import java.util.*;
 
@@ -34,7 +34,7 @@ public class Handler extends URLStreamHandler {
 
 	private static final String PROTOCOL_HANDLER_PKGS_PROPERTY = "java.protocol.handler.pkgs";
 
-	/**
+    # /**
 	 * Register the "ghidra" URL protocol Handler.
 	 * Alternatively, the protocol handler can be explicitly used when instantiating 
 	 * a ghidra URL:
@@ -60,7 +60,7 @@ public class Handler extends URLStreamHandler {
 		System.setProperty(PROTOCOL_HANDLER_PKGS_PROPERTY, pkgs);
 	}
 	
-	/**
+    # /**
 	 * Determine if the specified url is supported and that any required 
 	 * protocol extensions are recognized.
 	 * @param url

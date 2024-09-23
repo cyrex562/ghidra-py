@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.gzip;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.ByteProvider;
 import ghidra.formats.gfilesystem.*;

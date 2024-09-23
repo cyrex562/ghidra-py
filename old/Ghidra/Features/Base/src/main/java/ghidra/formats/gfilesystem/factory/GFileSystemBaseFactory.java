@@ -15,7 +15,7 @@
  */
 package ghidra.formats.gfilesystem.factory;
 
-import java.io.IOException;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 

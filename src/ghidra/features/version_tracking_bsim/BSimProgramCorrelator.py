@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api;
 
-import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -224,7 +224,7 @@ public class BSimProgramCorrelator extends VTAbstractProgramCorrelator {
 		return;
 	}
 
-	/**
+    # /**
 	 * Establish decompiler options for the feature vector calculation
 	 * @param program is the specific program to decompile
 	 * @return the formal options object

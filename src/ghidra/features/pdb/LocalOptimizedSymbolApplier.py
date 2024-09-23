@@ -29,7 +29,7 @@ public class LocalOptimizedSymbolApplier extends MsSymbolApplier
 
 	private AbstractLocalSymbolInOptimizedCodeMsSymbol symbol;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier

@@ -18,7 +18,7 @@ package resources.icons;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
-import java.io.*;
+
 import java.net.URL;
 import java.util.Objects;
 

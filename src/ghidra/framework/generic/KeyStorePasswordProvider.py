@@ -18,7 +18,7 @@ package ghidra.security;
 
 public interface KeyStorePasswordProvider {
 
-	/**
+    # /**
 	 * Requests password for keystore file
 	 * @param keystorePath keystore file path
 	 * @param passwordError if true this is a repeated prompt due to a password use failure

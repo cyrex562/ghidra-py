@@ -56,7 +56,7 @@ public class SequenceMiningParamsInputDialog extends InputDialogComponentProvide
 		"SequenceMiningParamsCreator_binarySequences";
 	private static final String BINARY_SEQUENCES_DEFAULT = Boolean.toString(false);
 
-	/**
+    # /**
 	 * Creates a dialog for entering sequence mining parameters
 	 * @param title dialog title
 	 * @param parent parent component
@@ -112,7 +112,7 @@ public class SequenceMiningParamsInputDialog extends InputDialogComponentProvide
 		return mainPanel;
 	}
 
-	/**
+    # /**
 	 * Get a {@link SequenceMiningParams} object populated with values from the dialog.
 	 * @return mining params
 	 */

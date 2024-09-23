@@ -20,7 +20,7 @@ import ghidra.program.database.map.AddressMap;
 import ghidra.program.model.listing.Data;
 import ghidra.program.model.listing.DataIterator;
 
-import java.io.IOException;
+
 
 import db.DBLongIterator;
 
@@ -33,7 +33,7 @@ public class DataKeyIterator implements DataIterator {
 	private Data nextCu;
 	private AddressMap addrMap;
 
-	/**
+    # /**
 	 * Constructs a new DataKeyIterator
 	 * @param codeMgr the code manager
 	 * @param addrMap the address map to convert keys to addresses.
@@ -45,14 +45,14 @@ public class DataKeyIterator implements DataIterator {
 		this.it = it;
 	}
 
-	/**
+    # /**
 	 * @see java.util.Iterator#remove()
 	 */
 	public void remove() {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#hasNext()
 	 */
 	public boolean hasNext() {
@@ -62,7 +62,7 @@ public class DataKeyIterator implements DataIterator {
 		return nextCu != null;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.listing.CodeUnitIterator#next()
 	 */
 	public Data next() {

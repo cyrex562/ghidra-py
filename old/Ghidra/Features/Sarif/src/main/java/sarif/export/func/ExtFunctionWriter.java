@@ -15,7 +15,7 @@
  */
 package sarif.export.func;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import com.google.gson.JsonObject;

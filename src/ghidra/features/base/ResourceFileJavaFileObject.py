@@ -15,7 +15,7 @@
  */
 package ghidra.app.script;
 
-import java.io.*;
+
 import java.net.URI;
 
 import javax.lang.model.element.Modifier;

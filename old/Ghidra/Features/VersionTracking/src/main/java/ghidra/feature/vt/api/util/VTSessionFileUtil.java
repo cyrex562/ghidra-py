@@ -15,7 +15,7 @@
  */
 package ghidra.feature.vt.api.util;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.dialog.CheckoutDialog;
 import ghidra.app.util.task.ProgramOpener;

@@ -38,7 +38,7 @@ public class VersionControlCheckInAction extends VersionControlAction {
 
 	private Component parent;
 
-	/**
+    # /**
 	 * Creates an action to check-in domain files to the repository.
 	 * @param plugin the plug-in that owns this action.
 	 * @param parent the component to be used as the parent of the check-in dialog.
@@ -76,7 +76,7 @@ public class VersionControlCheckInAction extends VersionControlAction {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Determines the list of modified, checked out files and then checks them in.
 	 */
 	private void doCheckIn(List<DomainFile> domainFiles) {
@@ -101,7 +101,7 @@ public class VersionControlCheckInAction extends VersionControlAction {
 		}
 	}
 
-	/**
+    # /**
 	 * Check in the list of domain files. 
 	 * Domain files that cannot be closed are skipped in the list.
 	 * @param fileList list of DomainFile objects

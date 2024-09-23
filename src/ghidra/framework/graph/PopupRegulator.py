@@ -33,7 +33,7 @@ public class PopupRegulator<V, E> {
 
 	private int popupDelay = 1000;
 
-	/**
+    # /**
 	 * We need this timer because the default mechanism for triggering popups doesn't 
 	 * always work.  We use this timer in conjunction with a mouse motion listener to 
 	 * get the results we want.
@@ -41,17 +41,17 @@ public class PopupRegulator<V, E> {
 	private Timer popupTimer;
 	private MouseEvent popupMouseEvent;
 
-	/** the current target (vertex or edge) of a popup window */
+    # /** the current target (vertex or edge) of a popup window */
 	private Object nextPopupTarget;
 
-	/** 
+    # /** 
 	 * This value is not null when the user moves the cursor over a target for which a 
 	 * popup is already showing.  We use this value to prevent showing a popup multiple times
 	 * while over a single node.
 	 */
 	private Object lastShownPopupTarget;
 
-	/** The tooltip info used when showing the popup */
+    # /** The tooltip info used when showing the popup */
 	private ToolTipInfo<?> currentToolTipInfo;
 
 	private PopupSource<V, E> popupSource;
@@ -91,7 +91,7 @@ public class PopupRegulator<V, E> {
 		});
 	}
 
-	/**
+    # /**
 	 * Returns true if this class's popup is showing
 	 * @return true if this class's popup is showing
 	 */
@@ -99,7 +99,7 @@ public class PopupRegulator<V, E> {
 		return popupWindow != null && popupWindow.isShowing();
 	}
 
-	/**
+    # /**
 	 * Sets the time between mouse movements to wait before showing this class's popup
 	 * @param delayMs the delay
 	 */
@@ -110,7 +110,7 @@ public class PopupRegulator<V, E> {
 		popupDelay = delayMs;
 	}
 
-	/**
+    # /**
 	 * Sets the enablement of this class's popup
 	 * @param visible true to have popups enabled
 	 */

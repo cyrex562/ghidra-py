@@ -27,7 +27,7 @@ class RISCV_ElfRelocationContext extends ElfRelocationContext<RISCV_ElfRelocatio
 		super(handler, loadHelper, symbolMap);
 	}
 
-	/**
+    # /**
 	 * <code>OffsetComparator</code> provides ability to compare a Long ElfSymbol offset value with an
 	 * ElfRelocation object's relocation offset.
 	 */
@@ -51,7 +51,7 @@ class RISCV_ElfRelocationContext extends ElfRelocationContext<RISCV_ElfRelocatio
 
 	}
 
-	/**
+    # /**
 	 * Find the HI20 relocation whose offset matches the value of of the specified symbol.
 	 * @param hi20Symbol ELF symbol which corresponds to HI20 relocation
 	 * @return matching relocation or null if not found

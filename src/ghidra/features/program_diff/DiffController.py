@@ -44,7 +44,7 @@ public class DiffController {
 	private ArrayList<DiffControllerListener> listenerList =
 		new ArrayList<DiffControllerListener>();
 
-	/**
+    # /**
 	 * Constructor
 	 * <P>Note: This method is potentially time consuming and should normally
 	 * be called from within a background task.
@@ -73,21 +73,21 @@ public class DiffController {
 		p1LastDiffs = new AddressSet();
 	}
 
-	/** Gets the first program being compared by the ProgramDiff.
+    # /** Gets the first program being compared by the ProgramDiff.
 	 * @return program1. the program to apply differences to.
 	 */
 	Program getProgramOne() {
 		return mergeEngine.getProgramOne();
 	}
 
-	/** Gets the second program being compared by the ProgramDiff.
+    # /** Gets the second program being compared by the ProgramDiff.
 	 * @return program2. the program to get differences from for applying.
 	 */
 	Program getProgramTwo() {
 		return mergeEngine.getProgramTwo();
 	}
 
-	/**
+    # /**
 	 * Gets the address set the current Program Diff is limited to.
 	 * @return the address set the current diff is limited to.
 	 * The addresses in this set are derived from the p1 program.
@@ -96,7 +96,7 @@ public class DiffController {
 		return p1LimitSet;
 	}
 
-	/**
+    # /**
 	 * Gets the address set indicating the addresses currently being ignored.
 	 * @return the address set indicating the addresses currently being ignored.
 	 * The addresses in this set are derived from the p1 program.
@@ -105,7 +105,7 @@ public class DiffController {
 		return mergeEngine.getIgnoreAddressSet();
 	}
 
-	/**
+    # /**
 	 * Gets the address set being used to restrict the resulting difference set
 	 * that is reported by getting the differences. This address set is 
 	 * effectively a view port into the differences address set.
@@ -116,14 +116,14 @@ public class DiffController {
 		return mergeEngine.getRestrictedAddressSet();
 	}
 
-	/** 
+    # /** 
 	 * Get a copy of the diff filter that the merge is using.
 	 */
 	public ProgramDiffFilter getDiffFilter() {
 		return mergeEngine.getDiffFilter();
 	}
 
-	/** 
+    # /** 
 	 * Set the filter that indicates which parts of the Program should be 
 	 * diffed.
 	 */
@@ -131,7 +131,7 @@ public class DiffController {
 		mergeEngine.setDiffFilter(filter);
 	}
 
-	/** 
+    # /** 
 	 * Get a copy of the filter that indicates which parts of the Program 
 	 * should be merged.
 	 */
@@ -139,7 +139,7 @@ public class DiffController {
 		return mergeEngine.getMergeFilter();
 	}
 
-	/** 
+    # /** 
 	 * Set the filter that indicates which parts of the Program should be 
 	 * merged.
 	 */
@@ -147,7 +147,7 @@ public class DiffController {
 		mergeEngine.setMergeFilter(filter);
 	}
 
-	/** Gets the filtered program differences for this merge. Only differences are
+    # /** Gets the filtered program differences for this merge. Only differences are
 	 * indicated for merge filter categories that are enabled and for addresses
 	 * that have not been marked as ignored.
 	 * <P>Note: This method is potentially time consuming and should normally
@@ -173,7 +173,7 @@ public class DiffController {
 		return diffs1;
 	}
 
-	/** Restrict the resulting differences to the indicated address set.
+    # /** Restrict the resulting differences to the indicated address set.
 	 * @param p1AddressSet the address set to restrict the getFilteredDifferences() to.
 	 * The addresses in this set should be derived from the p1 program.
 	 * @param monitor the task monitor for canceling the fix up of the 
@@ -184,7 +184,7 @@ public class DiffController {
 		differencesChanged(monitor);
 	}
 
-	/** Remove the restriction for the resulting differences to the indicated address set.
+    # /** Remove the restriction for the resulting differences to the indicated address set.
 	 * @param monitor the task monitor for canceling the fix up of the 
 	 * differences due to the removal of the restriction.
 	 */
@@ -193,7 +193,7 @@ public class DiffController {
 		differencesChanged(monitor);
 	}
 
-	/**
+    # /**
 	 * Apply differences in the address set from program p2
 	 * into the current program p1.
 	 * @param p1AddressSet address set of differences
@@ -210,14 +210,14 @@ public class DiffController {
 		return applied;
 	}
 
-	/**
+    # /**
 	 * Gets any error and information messages associated with the last apply.
 	 */
 	String getApplyMessage() {
 		return mergeEngine.getErrorMessage() + mergeEngine.getInfoMessage();
 	}
 
-	/**
+    # /**
 	 * Ignore any differences in the specified address set.
 	 * @param p1AddressSet address set set of differences
 	 * The addresses in this set should be derived from the p1 program.
@@ -227,14 +227,14 @@ public class DiffController {
 		differencesChanged(monitor);
 	}
 
-	/**
+    # /**
 	 * Gets any warning messages associated with the initial Diff of the two programs.
 	 */
 	public String getWarnings() {
 		return mergeEngine.getWarnings();
 	}
 
-	/**
+    # /**
 	 * Get the address for the diff controller's current location.
 	 * @return the current address.
 	 * This address is derived from the p1 program.
@@ -243,7 +243,7 @@ public class DiffController {
 		return p1CurrentAddress;
 	}
 
-	/**
+    # /**
 	 * Go to the given address; update the last address so that
 	 * iterator will be adjusted for next and previous.
 	 * @param p1Address address to go to
@@ -254,7 +254,7 @@ public class DiffController {
 		locationChanged(p1CurrentAddress);
 	}
 
-	/**
+    # /**
 	 * set the Diff controller's current address to the specified address.
 	 * @param p1NewAddress the address
 	 * This address should be derived from the p1 program.
@@ -266,7 +266,7 @@ public class DiffController {
 		locationChanged(p1CurrentAddress);
 	}
 
-	/**
+    # /**
 	 * Called from the dialog when the cursor should move to the first difference.
 	 * Update the buttons in the dialog according to whether there is
 	 * a next or previous.
@@ -314,7 +314,7 @@ public class DiffController {
 
 	}
 
-	/**
+    # /**
 	 * Called from the dialog when the "next diff" button is hit.
 	 * Update the buttons in the dialog according to whether there is
 	 * a next or previous.
@@ -330,7 +330,7 @@ public class DiffController {
 		return getPreviousAddress() != null;
 	}
 
-	/**
+    # /**
 	 * Called from the dialog when the "previous diff" button is hit.
 	 * Update the buttons in the dialog according to whether there is
 	 * a next or previous.
@@ -342,7 +342,7 @@ public class DiffController {
 		}
 	}
 
-	/**
+    # /**
 	 * Refreshes the differences to show what is still different between the two
 	 * programs. After calling this method, any differences that were being 
 	 * ignored are still being ignored. The differences are restricted to the 

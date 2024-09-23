@@ -17,7 +17,7 @@ package ghidra.app.util.bin.format.dwarf.attribs;
 
 import static ghidra.app.util.bin.format.dwarf.attribs.DWARFAttributeClass.*;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import ghidra.app.util.bin.LEB128Info;

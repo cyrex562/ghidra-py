@@ -36,7 +36,7 @@ public abstract class AbstractAssemblyState {
 	protected volatile boolean hasHash = false;
 	protected volatile int hash;
 
-	/**
+    # /**
 	 * Construct a node
 	 * 
 	 * @param resolver the resolver
@@ -62,7 +62,7 @@ public abstract class AbstractAssemblyState {
 		return hash;
 	}
 
-	/**
+    # /**
 	 * Pre compute this nodes hash
 	 * 
 	 * @return the hash
@@ -72,7 +72,7 @@ public abstract class AbstractAssemblyState {
 	@Override
 	public abstract boolean equals(Object obj);
 
-	/**
+    # /**
 	 * Generate machine (partial) code for this node
 	 * 
 	 * @param fromRight the accumulated patterns thus far, from the right sibling or left-most child
@@ -94,7 +94,7 @@ public abstract class AbstractAssemblyState {
 		return shift;
 	}
 
-	/**
+    # /**
 	 * Get the length in bytes of the operand represented by this node
 	 * 
 	 * @return the length

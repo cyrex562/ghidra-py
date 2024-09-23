@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.util;
 
 import ghidra.program.model.listing.Function;
 
 public class FunctionChangeRecord extends ProgramChangeRecord {
-	/**
+    # /**
 	 * Specific function changes types for when the ProgramEvent is FUNCTION_CHANGED
 	 */
 	public enum FunctionChangeType {
@@ -34,7 +34,7 @@ public class FunctionChangeRecord extends ProgramChangeRecord {
 
 	private FunctionChangeType changeType;
 
-	/**
+    # /**
 	 * Constructs a new Function change record.
 	 * @param function the function that was changed
 	 * @param changeType the specific type of change that was applied to the function
@@ -45,7 +45,7 @@ public class FunctionChangeRecord extends ProgramChangeRecord {
 		this.changeType = changeType == null ? FunctionChangeType.UNSPECIFIED : changeType;
 	}
 
-	/**
+    # /**
 	 * Returns the specific type of function change.
 	 * @return the specific type of function change
 	 */
@@ -53,7 +53,7 @@ public class FunctionChangeRecord extends ProgramChangeRecord {
 		return changeType;
 	}
 
-	/**
+    # /**
 	 * Returns the function that was changed.
 	 * @return the function that was changed
 	 */
@@ -61,7 +61,7 @@ public class FunctionChangeRecord extends ProgramChangeRecord {
 		return (Function) getObject();
 	}
 
-	/**
+    # /**
 	 * Returns true if the specific change was related to the function signature.
 	 * @return true if the specific change was related to the function signature
 	 */
@@ -70,7 +70,7 @@ public class FunctionChangeRecord extends ProgramChangeRecord {
 			changeType == FunctionChangeType.RETURN_TYPE_CHANGED;
 	}
 
-	/**
+    # /**
 	 * Returns true if the specific change was to one of the function's modifier properties.
 	 * @return true if the specific change was to one of the function's modifier properties
 	 */

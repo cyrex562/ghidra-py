@@ -22,21 +22,21 @@ import java.io.Serializable;
   * A layout manager that gives the affect of CENTER in BorderLayout.
   */
 public class StretchLayout implements LayoutManager, Serializable {
-	/** 
+    # /** 
 	 * @see java.awt.LayoutManager#addLayoutComponent(java.lang.String, java.awt.Component)
 	 */
 	@Override
 	public void addLayoutComponent(String name, Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see java.awt.LayoutManager#removeLayoutComponent(java.awt.Component)
 	 */
 	@Override
 	public void removeLayoutComponent(Component comp) {
 	}
 
-	/**
+    # /**
 	 * @see java.awt.LayoutManager#preferredLayoutSize(java.awt.Container)
 	 */
 	@Override
@@ -55,7 +55,7 @@ public class StretchLayout implements LayoutManager, Serializable {
 
 	}
 
-	/**
+    # /**
 	 * @see java.awt.LayoutManager#minimumLayoutSize(java.awt.Container)
 	 */
 	@Override
@@ -63,7 +63,7 @@ public class StretchLayout implements LayoutManager, Serializable {
 		return preferredLayoutSize(cont);
 	}
 
-	/**
+    # /**
 	 * @see java.awt.LayoutManager#layoutContainer(java.awt.Container)
 	 */
 	@Override

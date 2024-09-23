@@ -107,7 +107,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 	private VisualEdgeArrowRenderingSupport<V, E> arrowRenderingSupport =
 		new VisualEdgeArrowRenderingSupport<>();
 
-	/**
+    # /**
 	 * Sets the offset value for painting dashed lines.  This allows clients to animate the 
 	 * lines being drawn for edges in the edge direction.
 	 * 
@@ -119,7 +119,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		this.dashingPatternOffset = dashingPatterOffset;
 	}
 
-	/**
+    # /**
 	 * Sets the color provider to use when drawing this edge.  This is also the color used to paint 
 	 * an 'emphasized' edge. 
 	 * @param transformer the color provider
@@ -128,7 +128,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		this.drawColorTransformer = Objects.requireNonNull(transformer);
 	}
 
-	/**
+    # /**
 	 * Returns the current draw color.  This is also the color used to paint an 'emphasized' edge.
 	 * @param g the graph
 	 * @param e the edge 
@@ -138,7 +138,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		return this.drawColorTransformer.apply(e);
 	}
 
-	/**
+    # /**
 	 * Sets the color provider to use when drawing this edge when the edge is focused. 
 	 * @param transformer the color provider
 	 */
@@ -146,7 +146,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		this.focusedColorTransformer = Objects.requireNonNull(transformer);
 	}
 
-	/**
+    # /**
 	 * Returns the current color to use when the edge is focused.
 	 * @param g the graph
 	 * @param e the edge 
@@ -156,7 +156,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		return focusedColorTransformer.apply(e);
 	}
 
-	/**
+    # /**
 	 * Sets the color provider to use when drawing this edge when the edge is selected. 
 	 * @param transformer the color provider
 	 */
@@ -164,7 +164,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		this.selectedColorTransformer = Objects.requireNonNull(transformer);
 	}
 
-	/**
+    # /**
 	 * Returns the current color to use when the edge is selected.
 	 * @param g the graph
 	 * @param e the edge 
@@ -174,7 +174,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		return selectedColorTransformer.apply(e);
 	}
 
-	/**
+    # /**
 	 * Sets the color provider to use when drawing this edge when the edge is in the hovered path.
 	 * @param transformer the color provider
 	 */
@@ -182,7 +182,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		this.hoveredColorTransformer = Objects.requireNonNull(transformer);
 	}
 
-	/**
+    # /**
 	 * Returns the current color to use when the edge is in the hovered path.
 	 * @param g the graph
 	 * @param e the edge 
@@ -427,7 +427,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		return getFullShape(rc, layout, v);
 	}
 
-	/**
+    # /**
 	 * Returns the edge shape for the given points
 	 * 
 	 * @param rc the render context for the graph
@@ -488,7 +488,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		return fine.createTransformedShape(arrow);
 	}
 
-	/**
+    # /**
 	 * Uses the render context to create a compact shape for the given vertex
 	 * 
 	 * @param rc the render context
@@ -515,7 +515,7 @@ public abstract class VisualEdgeRenderer<V extends VisualVertex, E extends Visua
 		return transformFromLayoutToView(rc, layout, vertex, shape);
 	}
 
-	/**
+    # /**
 	 * Uses the render context to create a compact shape for the given vertex
 	 * 
 	 * @param rc the render context

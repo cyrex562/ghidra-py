@@ -28,7 +28,7 @@ public class AttributedLocalOrParameterSIRMsSymbol
 
 	public static final int PDB_ID = 0x112f;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.

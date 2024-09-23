@@ -62,7 +62,7 @@ public class ManagedProcedureSymbolApplier extends AbstractBlockContextApplier
 	//  its nested symbols.
 	private boolean developerStillHavingProblemProcessingThese = true;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param applicator the {@link DefaultPdbApplicator} for which we are working.
 	 * @param symbol the symbol for this applier
@@ -249,7 +249,7 @@ public class ManagedProcedureSymbolApplier extends AbstractBlockContextApplier
 //		return true;
 //	}
 
-	/**
+    # /**
 	 * Sets a local variable (address, name, type)
 	 * @param address Address of the variable.
 	 * @param name name of the variable.
@@ -291,7 +291,7 @@ public class ManagedProcedureSymbolApplier extends AbstractBlockContextApplier
 //		return true;
 //	}
 //
-	/**
+    # /**
 	 * returns true only if we set a function signature
 	 * @return true if function signature was set
 	 * @throws PdbException upon processing error
@@ -386,7 +386,7 @@ public class ManagedProcedureSymbolApplier extends AbstractBlockContextApplier
 
 	// Method copied from ApplyStackVariables (ghidra.app.util.bin.format.pdb package)
 	//  on 20191119. TODO: Do we need something like this?
-	/**
+    # /**
 	 * Get the stack offset after it settles down.
 	 * @param monitor TaskMonitor
 	 * @return stack offset that stack variables will be relative to.

@@ -39,14 +39,14 @@ public class Duo<T> {
 	private final T left;
 	private final T right;
 
-	/**
+    # /**
 	 * Constructor with no values.
 	 */
 	public Duo() {
 		this(null, null);
 	}
 
-	/**
+    # /**
 	 * Constructor with a left and right value.
 	 * @param left the left value
 	 * @param right the right value
@@ -56,7 +56,7 @@ public class Duo<T> {
 		this.right = right;
 	}
 
-	/**
+    # /**
 	 * Gets the value for the given side.
 	 * @param side LEFT or RIGHT
 	 * @return the value for the given side
@@ -65,7 +65,7 @@ public class Duo<T> {
 		return side == LEFT ? left : right;
 	}
 
-	/**
+    # /**
 	 * Creates a new Duo, replacing the value for just one side. The other side uses the value 
 	 * from this Duo.
 	 * @param side the side that gets a new value
@@ -80,7 +80,7 @@ public class Duo<T> {
 		return new Duo<>(left, newValue);
 	}
 
-	/**
+    # /**
 	 * Invokes the given consumer on both the left and right values.
 	 * @param c the consumer to invoke on both values
 	 */
@@ -93,7 +93,7 @@ public class Duo<T> {
 		}
 	}
 
-	/**
+    # /**
 	 * Returns true if both values are equals to this objects values.
 	 * @param otherLeft the value to compare to our left side value
 	 * @param otherRight the value to compare to our right side value

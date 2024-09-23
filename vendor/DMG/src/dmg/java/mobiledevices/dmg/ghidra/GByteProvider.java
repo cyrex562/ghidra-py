@@ -1,15 +1,15 @@
 /* ###
- * IP: Public Domain
- */
+# * IP: Public Domain
+# */
 package mobiledevices.dmg.ghidra;
 
 
-import java.io.*;
+
 
 /**
- * An implementation of ByteProvider where the underlying
- * bytes are supplied by a random access file.
- */
+# * An implementation of ByteProvider where the underlying
+# * bytes are supplied by a random access file.
+# */
 public class GByteProvider implements Closeable {
     private File file;
     private GRandomAccessFile randomAccessFile;

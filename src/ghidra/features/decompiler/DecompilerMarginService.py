@@ -22,21 +22,21 @@ import ghidra.app.decompiler.component.margin.DecompilerMarginProvider;
  * A service that allows clients to add custom margins in the Decompiler UI.
  */
 public interface DecompilerMarginService {
-	/**
+    # /**
 	 * Add a margin to the Decompiler's primary window
 	 * 
 	 * @param provider the margin provider
 	 */
 	void addMarginProvider(DecompilerMarginProvider provider);
 
-	/**
+    # /**
 	 * Remove a margin from the Decompiler's primary window
 	 * 
 	 * @param provider the margin provider
 	 */
 	void removeMarginProvider(DecompilerMarginProvider provider);
 
-	/**
+    # /**
 	 * Get the panel associated with this margin
 	 * 
 	 * @return the panel

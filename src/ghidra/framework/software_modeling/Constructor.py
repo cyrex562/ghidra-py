@@ -281,7 +281,7 @@ public class Constructor implements Comparable<Constructor> {
 		return res;
 	}
 
-	/**
+    # /**
 	 * Apply any operations on context for this Constructor to a
 	 * particular InstructionContext
 	 * @param walker the parser walker
@@ -295,7 +295,7 @@ public class Constructor implements Comparable<Constructor> {
 		}
 	}
 
-	/**
+    # /**
 	 * Retrieve a named p-code template section
 	 * @param secnum is the id of the section to return
 	 * @return the named section (or null)
@@ -398,7 +398,7 @@ public class Constructor implements Comparable<Constructor> {
 		decoder.closeElement(el);
 	}
 
-	/**
+    # /**
 	 * Return the indices of the operands in an array
 	 * in the order they are printed (after the first white space)
 	 * @return array of operand indices
@@ -457,7 +457,7 @@ public class Constructor implements Comparable<Constructor> {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns the source file
 	 * @return source file
 	 */

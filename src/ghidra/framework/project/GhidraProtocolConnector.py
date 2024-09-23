@@ -15,7 +15,7 @@
  */
 package ghidra.framework.protocol.ghidra;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -46,7 +46,7 @@ public abstract class GhidraProtocolConnector {
 	protected RepositoryAdapter repositoryAdapter;
 	protected RepositoryServerAdapter repositoryServerAdapter;
 
-	/**
+    # /**
 	 * Abstract <code>GhidraProtocolConnector</code> constructor.
 	 * @param url a repository resource URL appropriate for the specific protocol implementation
 	 * @throws MalformedURLException if URL is invalid
@@ -60,14 +60,14 @@ public abstract class GhidraProtocolConnector {
 		this.itemPath = parseItemPath();
 	}
 
-	/**
+    # /**
 	 * Get the URL associated with the repository/project root folder.
 	 * This will be used as a key to its corresponding transient project data.
 	 * @return root folder URL
 	 */
 	protected abstract URL getRepositoryRootGhidraURL();
 
-	/**
+    # /**
 	 * Perform URL verification checks to ensure that it satisfies this 
 	 * connector implementation requirements
 	 * @throws MalformedURLException if URL is invalid
@@ -78,7 +78,7 @@ public abstract class GhidraProtocolConnector {
 		}
 	}
 
-	/**
+    # /**
 	 * If connector supports user information within URL it will be verified 
 	 * @throws MalformedURLException if URL contains user information 
 	 * and it is either invalid or unsupported
@@ -89,7 +89,7 @@ public abstract class GhidraProtocolConnector {
 		}
 	}
 
-	/**
+    # /**
 	 * Presence of a host specification within URL will be verified 
 	 * @throws MalformedURLException if URL is missing proper host specification
 	 */
@@ -100,7 +100,7 @@ public abstract class GhidraProtocolConnector {
 		}
 	}
 
-	/**
+    # /**
 	 * Parse repository name from URL
 	 * @return repository name or null if not specified
 	 * @throws MalformedURLException if URL is invalid
@@ -129,7 +129,7 @@ public abstract class GhidraProtocolConnector {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Initialize {@code folderPath} and {@code folderItemName} from specified {@code contentPath}. 
 	 * @param contentPath absolute content path (null not permitted)
 	 * @throws MalformedURLException if non-null invalid {@code contentPath} specified
@@ -174,7 +174,7 @@ public abstract class GhidraProtocolConnector {
 		return contentPath;
 	}
 
-	/**
+    # /**
 	 * Parse item path name from URL and establish initial values for folderPath and
 	 * folderItemName.
 	 * @return original item path from URL or null if not specified
@@ -199,7 +199,7 @@ public abstract class GhidraProtocolConnector {
 		return path;
 	}
 
-	/**
+    # /**
 	 * Gets the status code from a Ghidra URL connect attempt.
 	 * @return the Ghidra status code or null if not yet connected
 	 * @see #connect(boolean)
@@ -208,7 +208,7 @@ public abstract class GhidraProtocolConnector {
 		return statusCode;
 	}
 
-	/**
+    # /**
 	 * Gets the repository name associated with the URL.  If a local URL is used this will
 	 * correspond to the project name.
 	 * @return the repository name or null if URL does not identify a specific repository
@@ -217,7 +217,7 @@ public abstract class GhidraProtocolConnector {
 		return repositoryName;
 	}
 
-	/**
+    # /**
 	 * Get the RepositoryAdapter associated with a URL which specifies a repository.
 	 * @return repository adapter or null if a project locator is supplied instead
 	 */
@@ -225,7 +225,7 @@ public abstract class GhidraProtocolConnector {
 		return repositoryAdapter;
 	}
 
-	/**
+    # /**
 	 * Get the RepositoryServerAdapter associated with a URL which specifies a repository or
 	 * repository server.
 	 * @return repository server adapter or null if a project locator is supplied instead
@@ -234,7 +234,7 @@ public abstract class GhidraProtocolConnector {
 		return repositoryServerAdapter;
 	}
 
-	/**
+    # /**
 	 * Gets the repository folder path associated with the URL.
 	 * If an ambiguous path has been specified, the folder path may change
 	 * after a connection is established (e.g., folder item name will be appended 
@@ -246,7 +246,7 @@ public abstract class GhidraProtocolConnector {
 		return folderPath;
 	}
 
-	/**
+    # /**
 	 * Gets the repository folder item name associated with the URL.
 	 * If an ambiguous path has been specified, the folder item name may become null
 	 * after a connection is established (e.g., folder item name will be appended 
@@ -265,7 +265,7 @@ public abstract class GhidraProtocolConnector {
 		return folder + folderItemName;
 	}
 
-	/**
+    # /**
 	 * Fully resolve folder/item reference once connected to the associated
 	 * repository due to possible ambiguity  
 	 * @throws IOException if an IO error occurs
@@ -306,7 +306,7 @@ public abstract class GhidraProtocolConnector {
 		}
 	}
 
-	/**
+    # /**
 	 * Utilized a cached connection via the specified repository adapter.
 	 * This method may only be invoked if not yet connected and the associated
 	 * URL corresponds to a repository (getRepositoryName() != null).  The connection 
@@ -331,7 +331,7 @@ public abstract class GhidraProtocolConnector {
 		resolveItemPath();
 	}
 
-	/**
+    # /**
 	 * Connect to the resource specified by the associated URL.  This method should only be invoked
 	 * once, a second attempt may result in an IOException.
 	 * @param readOnly if resource should be requested for write access.
@@ -340,7 +340,7 @@ public abstract class GhidraProtocolConnector {
 	 */
 	public abstract StatusCode connect(boolean readOnly) throws IOException;
 
-	/**
+    # /**
 	 * Determines the read-only nature of a connected resource
 	 * @return true if read-only, false if write access allowed
 	 * @throws NotConnectedException if connect has not yet been performed

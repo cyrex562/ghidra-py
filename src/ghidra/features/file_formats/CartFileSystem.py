@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cart;
 
-import java.io.IOException;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -62,7 +62,7 @@ public class CartFileSystem implements GFileSystem {
 	private SingleFileSystemIndexHelper fsIndexHelper;
 	private CartV1File cartFile;
 
-	/**
+    # /**
 	 * CaRT file system constructor.
 	 *
 	 * @param fsFSRL   The root {@link FSRL} of the file system.
@@ -73,7 +73,7 @@ public class CartFileSystem implements GFileSystem {
 		this.fsService = fsService;
 	}
 
-	/**
+    # /**
 	 * Opens the specified CaRT container file and initializes this file system with the
 	 * contents.
 	 *
@@ -146,7 +146,7 @@ public class CartFileSystem implements GFileSystem {
 		// handle them here.
 		payloadProvider = getPayload(null, monitor);
 
-		/**
+	    # /**
 		 * If an MD5 value is provided here it will be carried through the rest of the
 		 * system. If null is used instead then the MD5 will be calculated from the
 		 * bytes of the file.
@@ -197,7 +197,7 @@ public class CartFileSystem implements GFileSystem {
 		return fsIndexHelper.lookup(path);
 	}
 
-	/**
+    # /**
 	 * Helper function to create byte provider for CaRT payload content that is
 	 * decompressed and decrypted.
 	 *

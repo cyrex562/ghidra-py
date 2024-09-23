@@ -15,7 +15,7 @@
  */
 package ghidra.framework;
 
-import java.io.*;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -28,24 +28,24 @@ import ghidra.GhidraApplicationLayout;
  */
 public class ApplicationProperties extends Properties {
 
-	/**
+    # /**
 	 * The name of the application properties file.
 	 */
 	public static final String PROPERTY_FILE = "application.properties";
 
-	/**
+    # /**
 	 * The application name.  For example, "Ghidra".
 	 */
 	public static final String APPLICATION_NAME_PROPERTY = "application.name";
 
-	/**
+    # /**
 	 * The application version.  For example, "7.4.2".
 	 * 
 	 * @see ApplicationVersion
 	 */
 	public static final String APPLICATION_VERSION_PROPERTY = "application.version";
 
-	/**
+    # /**
 	 * The application's layout version.  The layout version should get incremented any time
 	 * something changes about the application that could affect external tools that need to 
 	 * navigate the application in some way (such as the Eclipse GhidraDev plugin).
@@ -62,12 +62,12 @@ public class ApplicationProperties extends Properties {
 	 */
 	public static final String APPLICATION_LAYOUT_VERSION_PROPERTY = "application.layout.version";
 
-	/**
+    # /**
 	 * The minimum version of gradle required to build the application.
 	 */
 	public static final String APPLICATION_GRADLE_MIN_PROPERTY = "application.gradle.min";
 
-	/**
+    # /**
 	 * The earliest version of gradle after {@link #APPLICATION_GRADLE_MIN_PROPERTY} that is
 	 * unsupported.
 	 * <p>
@@ -76,12 +76,12 @@ public class ApplicationProperties extends Properties {
 	 */
 	public static final String APPLICATION_GRADLE_MAX_PROPERTY = "application.gradle.max";
 
-	/**
+    # /**
 	 * The minimum major version of Java required to run the application.
 	 */
 	public static final String APPLICATION_JAVA_MIN_PROPERTY = "application.java.min";
 
-	/**
+    # /**
 	 * The maximum major version of Java the application will run under.
 	 * <p>
 	 * If all versions of Java greater than or equal to {@link #APPLICATION_JAVA_MIN_PROPERTY} are
@@ -89,34 +89,34 @@ public class ApplicationProperties extends Properties {
 	 */
 	public static final String APPLICATION_JAVA_MAX_PROPERTY = "application.java.max";
 
-	/**
+    # /**
 	 * The Java compiler compliance level that was used to build the application.
 	 * For example, "1.8".
 	 */
 	public static final String APPLICATION_JAVA_COMPILER_PROPERTY = "application.java.compiler";
 
-	/**
+    # /**
 	 * The date the application was built on, in a long format.
 	 * For example, "2018-Jan-11 1346 EST".
 	 */
 	public static final String BUILD_DATE_PROPERTY = "application.build.date";
 
-	/**
+    # /**
 	 * The date the application was built on, it a short format. For example, "20180111".
 	 */
 	public static final String BUILD_DATE_SHORT_PROPERTY = "application.build.date.short";
 
-	/**
+    # /**
 	 * The application's release name.  For example, "U".
 	 */
 	public static final String RELEASE_NAME_PROPERTY = "application.release.name";
 
-	/**
+    # /**
 	 * The application's release marking.
 	 */
 	public static final String RELEASE_MARKING_PROPERTY = "application.release.marking";
 
-	/**
+    # /**
 	 * Property prefix for dynamically generated version control revision number properties. 
 	 */
 	public static final String REVISION_PROPERTY_PREFIX = "application.revision.";
@@ -124,7 +124,7 @@ public class ApplicationProperties extends Properties {
 	public static final String TEST_RELEASE_PROPERTY = "application.test.release";
 	public static final String RELEASE_SOURCE_PROPERTY = "application.release.source";
 
-	/**
+    # /**
 	 * Attempts to create an instance of this class by looking for the a properties file 
 	 * with the give name in the current working directory.  
 	 * 
@@ -154,7 +154,7 @@ public class ApplicationProperties extends Properties {
 		return properties;
 	}
 
-	/**
+    # /**
 	 * Creates a new application properties with the given name. Additional properties
 	 * may be set with {@link #setProperty}.
 	 * 
@@ -164,7 +164,7 @@ public class ApplicationProperties extends Properties {
 		setProperty(APPLICATION_NAME_PROPERTY, name);
 	}
 
-	/**
+    # /**
 	 * Creates a new application properties with the given name and version. Additional properties
 	 * may be set with {@link #setProperty}.
 	 * 
@@ -184,7 +184,7 @@ public class ApplicationProperties extends Properties {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new application properties from the given application properties file.
 	 * 
 	 * @param appPropertiesFile The application properties file.
@@ -202,7 +202,7 @@ public class ApplicationProperties extends Properties {
 		}
 	}
 
-	/**
+    # /**
 	 * Creates a new application properties from the application properties files found
 	 * in the given application root directories.  If multiple application properties files
 	 * are found, the properties from the files will be combined.  If duplicate keys exist,
@@ -227,7 +227,7 @@ public class ApplicationProperties extends Properties {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets the given application property.  Note that if the specified property is defined
 	 * as a system property, the system property will be given precedence and returned.
 	 * 
@@ -243,7 +243,7 @@ public class ApplicationProperties extends Properties {
 		return super.getProperty(propertyName);
 	}
 
-	/**
+    # /**
 	 * Gets the application's name.
 	 * 
 	 * @return The application's name (empty string if undefined).
@@ -256,7 +256,7 @@ public class ApplicationProperties extends Properties {
 		return appName;
 	}
 
-	/**
+    # /**
 	 * Gets the application's version.
 	 * 
 	 * @return The application's version (empty string if undefined).
@@ -269,7 +269,7 @@ public class ApplicationProperties extends Properties {
 		return appVersion;
 	}
 
-	/**
+    # /**
 	 * Gets the application's release name.
 	 * 
 	 * @return The application's release name (empty string if undefined).
@@ -282,7 +282,7 @@ public class ApplicationProperties extends Properties {
 		return appReleaseName;
 	}
 
-	/**
+    # /**
 	 * Gets the application's build date.
 	 * 
 	 * @return The application's build date.

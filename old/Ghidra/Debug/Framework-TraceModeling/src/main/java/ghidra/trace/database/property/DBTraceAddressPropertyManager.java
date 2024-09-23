@@ -15,7 +15,7 @@
  */
 package ghidra.trace.database.property;
 
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.locks.ReadWriteLock;

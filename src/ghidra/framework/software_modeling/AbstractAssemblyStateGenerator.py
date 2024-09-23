@@ -31,12 +31,12 @@ import ghidra.app.plugin.assembler.sleigh.util.DbgTimer;
 public abstract class AbstractAssemblyStateGenerator<N extends AssemblyParseTreeNode> {
 	protected static final DbgTimer DBG = AbstractAssemblyTreeResolver.DBG;
 
-	/**
+    # /**
 	 * Context to pass along as states are generated
 	 */
 	protected static class GeneratorContext {
 
-		/**
+	    # /**
 		 * Render the path as a printable string
 		 * 
 		 * @param path the path
@@ -50,7 +50,7 @@ public abstract class AbstractAssemblyStateGenerator<N extends AssemblyParseTree
 		public final List<AssemblyConstructorSemantic> path;
 		public final int shift;
 
-		/**
+	    # /**
 		 * Construct a context
 		 * 
 		 * @param path the path of constructors, for diagnostics
@@ -61,7 +61,7 @@ public abstract class AbstractAssemblyStateGenerator<N extends AssemblyParseTree
 			this.shift = shift;
 		}
 
-		/**
+	    # /**
 		 * Construct a context suitable for descent into an operand
 		 * 
 		 * @param cons the parent constructor
@@ -74,7 +74,7 @@ public abstract class AbstractAssemblyStateGenerator<N extends AssemblyParseTree
 			return new GeneratorContext(path, this.shift + shift);
 		}
 
-		/**
+	    # /**
 		 * Print a debug line
 		 * 
 		 * @param string the message
@@ -88,7 +88,7 @@ public abstract class AbstractAssemblyStateGenerator<N extends AssemblyParseTree
 	protected final N node;
 	protected final AssemblyResolvedPatterns fromLeft;
 
-	/**
+    # /**
 	 * Construct a generator
 	 * 
 	 * @param resolver the resolver
@@ -102,7 +102,7 @@ public abstract class AbstractAssemblyStateGenerator<N extends AssemblyParseTree
 		this.fromLeft = fromLeft;
 	}
 
-	/**
+    # /**
 	 * Generate states
 	 * 
 	 * @param gc the generator context for this node

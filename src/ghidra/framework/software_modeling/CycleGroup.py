@@ -41,7 +41,7 @@ public class CycleGroup {
 	private ArrayList<DataType> dataList;
 	protected KeyStroke defaultKeyStroke;
 
-	/**
+    # /**
 	 * Constructs a new cycle group with the given dataTypes.
 	 * @param name cycle group name which will be the suggested action name
 	 * for those plugins which implement a cycle group action.
@@ -56,7 +56,7 @@ public class CycleGroup {
 		dataList = new ArrayList<>(list);
 	}
 
-	/**
+    # /**
 	 * Constructor cycle group with one data type.
 	 * @param name cycle group name which will be the suggested action name
 	 * for those plugins which implement a cycle group action.
@@ -68,14 +68,14 @@ public class CycleGroup {
 		this(name, new DataType[] { dt }, keyStroke);
 	}
 
-	/**
+    # /**
 	 * Construct empty group no name, data types or keystroke.
 	 */
 	public CycleGroup(String name) {
 		this(name, new DataType[0], null);
 	}
 
-	/**
+    # /**
 	 * Get the data types in this group.
 	 */
 	public DataType[] getDataTypes() {
@@ -83,14 +83,14 @@ public class CycleGroup {
 		return dataList.toArray(dt);
 	}
 
-	/**
+    # /**
 	 * @return cycle group name.
 	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns number of types in group
 	 */
 	public int size() {
@@ -101,7 +101,7 @@ public class CycleGroup {
 		return defaultKeyStroke;
 	}
 
-	/**
+    # /**
 	 * Add a data type to this group.
 	 * @param dt the datatype to be added.
 	 */
@@ -114,7 +114,7 @@ public class CycleGroup {
 		}
 	}
 
-	/**
+    # /**
 	 * Add the data type as the first in the list.
 	 * @param dt the dataType to be added.
 	 */
@@ -127,7 +127,7 @@ public class CycleGroup {
 		}
 	}
 
-	/**
+    # /**
 	 * Remove the data type from this group.
 	 * @param dt the dataType to remove.
 	 * 
@@ -136,28 +136,28 @@ public class CycleGroup {
 		dataList.remove(dt);
 	}
 
-	/**
+    # /**
 	 * Remove first data type in the list.
 	 */
 	public void removeFirst() {
 		dataList.remove(0);
 	}
 
-	/**
+    # /**
 	 * Remove the last data type in the list.
 	 */
 	public void removeLast() {
 		dataList.remove(dataList.size() - 1);
 	}
 
-	/**
+    # /**
 	 * Return true if the given data type is in this cycle group.
 	 */
 	public boolean contains(DataType dt) {
 		return exists(dt);
 	}
 
-	/**
+    # /**
 	 * Return true if the given data type is the same type of any
 	 * data types in the list.
 	 */
@@ -171,7 +171,7 @@ public class CycleGroup {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Get next data-type which should be used
 	 * @param currentDataType current data type to which this cycle group is to be applied
 	 * @param stackPointers if true and currentDataType is a pointer, the pointer's 

@@ -19,7 +19,7 @@ import static ghidra.framework.main.DataTreeDialogType.*;
 
 import java.awt.Component;
 import java.awt.event.ActionListener;
-import java.io.*;
+
 import java.rmi.ConnectException;
 import java.util.*;
 

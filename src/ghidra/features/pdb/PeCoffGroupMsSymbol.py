@@ -33,7 +33,7 @@ public class PeCoffGroupMsSymbol extends AbstractMsSymbol implements AddressMsSy
 	private int segment;
 	private String name;
 
-	/**
+    # /**
 	 * Constructor for this symbol.
 	 * @param pdb {@link AbstractPdb} to which this symbol belongs.
 	 * @param reader {@link PdbByteReader} from which this symbol is deserialized.
@@ -54,7 +54,7 @@ public class PeCoffGroupMsSymbol extends AbstractMsSymbol implements AddressMsSy
 		return PDB_ID;
 	}
 
-	/**
+    # /**
 	 * Returns the length.
 	 * @return Length.
 	 */
@@ -62,7 +62,7 @@ public class PeCoffGroupMsSymbol extends AbstractMsSymbol implements AddressMsSy
 		return length;
 	}
 
-	/**
+    # /**
 	 * Returns the characteristics.
 	 * @return Characteristics.
 	 */
@@ -70,7 +70,7 @@ public class PeCoffGroupMsSymbol extends AbstractMsSymbol implements AddressMsSy
 		return characteristics;
 	}
 
-	/**
+    # /**
 	 * Returns the offset.
 	 * @return Offset.
 	 */
@@ -79,7 +79,7 @@ public class PeCoffGroupMsSymbol extends AbstractMsSymbol implements AddressMsSy
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the segment.
 	 * @return Segment.
 	 */
@@ -88,7 +88,7 @@ public class PeCoffGroupMsSymbol extends AbstractMsSymbol implements AddressMsSy
 		return segment;
 	}
 
-	/**
+    # /**
 	 * Returns the name.
 	 * @return Name.
 	 */

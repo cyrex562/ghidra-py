@@ -18,7 +18,7 @@ package ghidra.program.model.data;
 import java.awt.Transparency;
 import java.awt.color.ColorSpace;
 import java.awt.image.*;
-import java.io.IOException;
+
 
 import javax.swing.ImageIcon;
 

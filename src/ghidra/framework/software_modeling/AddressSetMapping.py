@@ -51,7 +51,7 @@ public class AddressSetMapping {
 		maxIndex = (int) set.getNumAddresses();
 	}
 
-	/**
+    # /**
 	 * Returns the Address at the specified position in the AddressSet.
 	 * @param index the index into the ordered list of addresses within an AddressSet.
 	 * @return the Address at the specified position.
@@ -68,7 +68,7 @@ public class AddressSetMapping {
 		return getAddress(currentRange, index - currentRangeStart);
 	}
 
-	/**
+    # /**
 	 * Sets the current range cache.  This class maintains the concept of a "current range",
 	 * which is a index into the range list and the start and end indexes for that range.
 	 * This way if the getAddress call uses an index into the "current range", it doesn't
@@ -97,7 +97,7 @@ public class AddressSetMapping {
 		currentRangeEnd = currentRangeStart + (int) currentRange.getLength() - 1;
 	}
 
-	/**
+    # /**
 	 * Check if the given index in in the "current range".
 	 * @param index the index to check
 	 */
@@ -105,7 +105,7 @@ public class AddressSetMapping {
 		return index >= currentRangeStart && index <= currentRangeEnd;
 	}
 
-	/**
+    # /**
 	 * Returns an n'th address in an address range.
 	 * @param range the range to extract an address
 	 * @param offset the index in the range to get an address.
@@ -114,7 +114,7 @@ public class AddressSetMapping {
 		return range.getMinAddress().add(offset);
 	}
 
-	/**
+    # /**
 	 * Compute the index for each range in the address set.
 	 */
 	private int[] getStartIndexesForAllAddressRanges() {
@@ -129,7 +129,7 @@ public class AddressSetMapping {
 		return starts;
 	}
 
-	/**
+    # /**
 	 * Convert the address range into a list of AddressRanges
 	 */
 	private List<AddressRange> getAddressRangesFromAddressSet() {

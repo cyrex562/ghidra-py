@@ -1,36 +1,36 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.symbol;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.util.exception.*;
 
 # /**
- * Implementation for Version 0 of the adapter that accesses the 
- * equate record that has the equate name and value.
- * 
- * 
- */
+# * Implementation for Version 0 of the adapter that accesses the 
+# * equate record that has the equate name and value.
+# * 
+# * 
+# */
 class EquateDBAdapterV0 extends EquateDBAdapter {
 
 	private Table equateTable;
 
-	/**
+    # /**
 	 * Constructor
 	 * @param handle the database handle.
 	 * @param create if true, create the tables.
@@ -51,7 +51,7 @@ class EquateDBAdapterV0 extends EquateDBAdapter {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateDBAdapter#updateRecord(ghidra.framework.store.db.DBRecord)
 	 */
 	@Override
@@ -59,7 +59,7 @@ class EquateDBAdapterV0 extends EquateDBAdapter {
 		equateTable.putRecord(record);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateDBAdapter#removeRecord(long)
 	 */
 	@Override
@@ -67,7 +67,7 @@ class EquateDBAdapterV0 extends EquateDBAdapter {
 		equateTable.deleteRecord(key);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateDBAdapter#getRecord(java.lang.String)
 	 */
 	@Override
@@ -89,7 +89,7 @@ class EquateDBAdapterV0 extends EquateDBAdapter {
 		return keys.length > 0;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateDBAdapter#createEquate(java.lang.String, long)
 	 */
 	@Override
@@ -101,7 +101,7 @@ class EquateDBAdapterV0 extends EquateDBAdapter {
 		return rec;
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateDBAdapter#getRecord(long)
 	 */
 	@Override
@@ -109,7 +109,7 @@ class EquateDBAdapterV0 extends EquateDBAdapter {
 		return equateTable.getRecord(key);
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.database.symbol.EquateDBAdapter#getRecords()
 	 */
 	@Override

@@ -22,17 +22,17 @@ public final class CramFsConstants {
 	public static final int HEADER_STRING_LENGTH = 16;
 	public static final int MAGIC = 0x28cd3d45;
 
-	/**
+    # /**
 	 * Constant size of an inode in bytes in memory.
 	 */
 	public static final int INODE_SIZE = 12;
 
-	/**
+    # /**
 	 * Flag as described in cramfs_fs.h.
 	 */
 	public static final int CRAMFS_FLAG_EXT_BLOCK_POINTERS = 0x00000800;
 
-	/** 
+    # /** 
 	 * Documentation points to this being the default size 
 	 * provide option for user if they know the block size.
 	 */
@@ -40,7 +40,7 @@ public final class CramFsConstants {
 	public static final int BLOCK_POINTER_SIZE = 4;
 	public static final int ZLIB_MAGIC_SIZE = 2;
 
-	/**
+    # /**
 	 * Width of various bitfields in struct {@link CramFsInode}
 	 */
 	public static final int CRAMFS_MODE_WIDTH = 16;

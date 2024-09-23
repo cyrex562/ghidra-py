@@ -15,7 +15,7 @@
  */
 package ghidra.pcode.emu.linux;
 
-import java.io.IOException;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -45,7 +45,7 @@ public class EmuLinuxX86SyscallUseropLibrary<T> extends AbstractEmuLinuxSyscallU
 
 	protected FileDataTypeManager clib32;
 
-	/**
+    # /**
 	 * Construct the system call library for Linux-x86
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -58,7 +58,7 @@ public class EmuLinuxX86SyscallUseropLibrary<T> extends AbstractEmuLinuxSyscallU
 		this(machine, fs, program, EmuUnixUser.DEFAULT_USER);
 	}
 
-	/**
+    # /**
 	 * Construct the system call library for Linux-x86
 	 * 
 	 * @param machine the machine emulating the hardware
@@ -105,7 +105,7 @@ public class EmuLinuxX86SyscallUseropLibrary<T> extends AbstractEmuLinuxSyscallU
 		return true;
 	}
 
-	/**
+    # /**
 	 * Implement this to detect and interpret the {@code INT 0x80} instruction as the syscall
 	 * convention
 	 * 

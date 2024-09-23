@@ -15,7 +15,7 @@
  */
 package ghidra.program.database;
 
-import java.io.IOException;
+
 import java.util.*;
 
 import db.*;
@@ -59,7 +59,7 @@ class DataTypeArchiveDBChangeSet implements DataTypeArchiveChangeSet, DomainObje
 	private boolean inTransaction;
 	private int numUndos = 4;
 
-	/**
+    # /**
 	 * Construct a new DataTypeArchiveChangeSet.
 	 * @param addrMap the address map.
 	 * @param numUndos the number of undo change sets to track.

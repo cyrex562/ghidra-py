@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.cramfs;
 
-import java.io.IOException;
+
 
 import ghidra.app.util.bin.BinaryReader;
 import ghidra.app.util.bin.StructConverter;
@@ -107,7 +107,7 @@ public class CramFsInode implements StructConverter {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Returns the mode of the CramFSInode.
 	 * @return the mode.
 	 */
@@ -115,7 +115,7 @@ public class CramFsInode implements StructConverter {
 		return mode;
 	}
 
-	/**
+    # /**
 	 * Returns the unique identifier of the inode.
 	 * @return the unique identifier.
 	 */
@@ -123,7 +123,7 @@ public class CramFsInode implements StructConverter {
 		return uid;
 	}
 
-	/**
+    # /**
 	 * Returns the size of the inode.
 	 * @return the size.
 	 */
@@ -131,7 +131,7 @@ public class CramFsInode implements StructConverter {
 		return size;
 	}
 
-	/**
+    # /**
 	 * Returns the group identifier of the inode.
 	 * @return the group identifier.
 	 */
@@ -139,7 +139,7 @@ public class CramFsInode implements StructConverter {
 		return gid;
 	}
 
-	/**
+    # /**
 	 * Returns the name length of the inode.
 	 * @return the name length.
 	 */
@@ -147,7 +147,7 @@ public class CramFsInode implements StructConverter {
 		return namelen;
 	}
 
-	/**
+    # /**
 	 * Returns the offset of the inode.
 	 * @return the offset.
 	 */
@@ -155,7 +155,7 @@ public class CramFsInode implements StructConverter {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the name of the inode.
 	 * @return the name.
 	 */
@@ -163,7 +163,7 @@ public class CramFsInode implements StructConverter {
 		return name;
 	}
 
-	/**
+    # /**
 	 * Returns the adjusted offset of the inode.
 	 * @return the adjusted offset of the inode.
 	 */
@@ -171,7 +171,7 @@ public class CramFsInode implements StructConverter {
 		return offset * 4;
 	}
 
-	/**
+    # /**
 	 * Returns true if the inode is a file.
 	 * @return true if the inode is a file.
 	 */
@@ -179,7 +179,7 @@ public class CramFsInode implements StructConverter {
 		return ((mode & 0x8000) != 0);
 	}
 
-	/**
+    # /**
 	 * Returns true if the inode is a directory.
 	 * @return true if the inode is a directory.
 	 */
@@ -187,7 +187,7 @@ public class CramFsInode implements StructConverter {
 		return ((mode & 0x4000) != 0);
 	}
 
-	/**
+    # /**
 	 * Returns the address of the inode.
 	 * @return the address of the inode.
 	 */

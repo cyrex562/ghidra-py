@@ -27,35 +27,35 @@ import ghidra.program.model.lang.LanguageID;
  * 
  */
 public class ProgramInfo {
-	/**The family name of the program's processor (eg, "Intel").*/
+    # /**The family name of the program's processor (eg, "Intel").*/
 	public String family;
-	/**The program's processor (eg, Processor.PROCESSOR_X86).*/
+    # /**The program's processor (eg, Processor.PROCESSOR_X86).*/
 	public String processorName;
-	/**The program's language id, e.g. "x86:LE:32:default".*/
+    # /**The program's language id, e.g. "x86:LE:32:default".*/
 	public LanguageID languageID;
-	/**The program's compilerSpec id, e.g. "gcc".*/
+    # /**The program's compilerSpec id, e.g. "gcc".*/
 	public CompilerSpecID compilerSpecID;
-	/**The preferred name of the Program when loaded back into Ghidra.*/
+    # /**The preferred name of the Program when loaded back into Ghidra.*/
 	public String programName;
-	/**The timestamp of when the SARIF file was created.*/
+    # /**The timestamp of when the SARIF file was created.*/
 	public String timestamp;
-	/**The ID of the user that created the SARIF file.*/
+    # /**The ID of the user that created the SARIF file.*/
 	public String user;
-	/**The tool that generated the SARIF file (eg, "Ghidra", etc.).*/
+    # /**The tool that generated the SARIF file (eg, "Ghidra", etc.).*/
 	private String tool;
-	/**This is the name of the tool normalized into known categories ("IDA-PRO" or "GHIDRA") if appropriate.*/
+    # /**This is the name of the tool normalized into known categories ("IDA-PRO" or "GHIDRA") if appropriate.*/
 	private String normalizedExternalToolName;
-	/** The SARIF version. @deprecated since version 2.1.*/
+    # /** The SARIF version. @deprecated since version 2.1.*/
 	public String version;
-	/**The size of the addressing (eg, "32 bit"). @deprecated since version 2.1.*/
+    # /**The size of the addressing (eg, "32 bit"). @deprecated since version 2.1.*/
 	public String addressModel;
-	/**The endianness (eg, big or little).*/
+    # /**The endianness (eg, big or little).*/
 	public String endian;
-	/**The absolute path of where the original executable was imported.*/
+    # /**The absolute path of where the original executable was imported.*/
 	public String exePath;
-	/**The format of the original executable (eg, PE or ELF).*/
+    # /**The format of the original executable (eg, PE or ELF).*/
 	public String exeFormat;
-	/**The image base of the program.*/
+    # /**The image base of the program.*/
 	public String imageBase;
 
 	@Override
@@ -65,12 +65,12 @@ public class ProgramInfo {
 			"\nprogram=" + programName;
 	}
 
-	/**whether the SarifMgr should process stack frames and references.*/
+    # /**whether the SarifMgr should process stack frames and references.*/
 	public boolean shouldProcessStack() {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Returns true if the tool was IDA-PRO.
 	 * @return true if the tool was IDA-PRO
 	 */
@@ -105,7 +105,7 @@ public class ProgramInfo {
 		return compiler;
 	}
 
-	/**
+    # /**
 	 * Returns tool field.  This is the name of the tool exactly as written in the SARIF being imported.
 	 * @return tool field
 	 */
@@ -113,7 +113,7 @@ public class ProgramInfo {
 		return tool;
 	}
 
-	/**
+    # /**
 	 * Sets tool field.
 	 * Also sets normalizedExternalToolName to normalized tool names "IDA-PRO" or "GHIDRA" if appropriate, or just sets it to the value of tool.
 	 */
@@ -131,7 +131,7 @@ public class ProgramInfo {
 
 	}
 
-	/**
+    # /**
 	 * Returns normalizedExternalToolName field.  This is the name of the tool normalized into known categories ("IDA-PRO" or "GHIDRA") if appropriate.
 	 * @return normalizedExternalToolName
 	 */

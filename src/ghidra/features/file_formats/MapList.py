@@ -20,7 +20,7 @@ import ghidra.app.util.bin.StructConverter;
 import ghidra.program.model.data.*;
 import ghidra.util.exception.DuplicateNameException;
 
-import java.io.IOException;
+
 import java.util.*;
 
 public class MapList implements StructConverter {

@@ -15,7 +15,7 @@
  */
 package sarif.export.func;
 
-import java.io.IOException;
+
 import java.io.Writer;
 
 import com.google.gson.JsonObject;
@@ -31,7 +31,7 @@ public class ExtFunctionWriter  {
 	public ExtFunctionWriter(DataTypeManager dtm, Writer baseWriter) throws IOException {
 	}
 
-	/**
+    # /**
 	 * Exports all root types in the list as ISF JSON.
 	 * 
 	 * @param monitor the task monitor

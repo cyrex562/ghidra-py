@@ -16,7 +16,7 @@
 package ghidra.framework.main.logviewer.ui;
 
 import java.awt.event.*;
-import java.io.IOException;
+
 import java.util.Iterator;
 
 import javax.swing.*;
@@ -65,7 +65,7 @@ public class FVSlider extends JSlider
 
 	private long previousSliderValue;
 
-	/**
+    # /**
 	 * Constructor. Builds the UI elements and establishes event listeners.
 	 *
 	 * @param scrollPane
@@ -101,7 +101,7 @@ public class FVSlider extends JSlider
 	}
 
 	
-	/**
+    # /**
 	 * Sets the value of the slider based on the given file position.
 	 * 
 	 * @param filePos
@@ -111,7 +111,7 @@ public class FVSlider extends JSlider
 		super.setValue(sliderPos);
 	}
 
-	/**
+    # /**
 	 * Sets the maximum slider position given the size of the file. If the file position is
 	 * greater than the maximum size of an integer, we just set it to that maximum size.
 	 * 
@@ -122,7 +122,7 @@ public class FVSlider extends JSlider
 		setMaximum(sliderMax);
 	}
 
-	/**
+    # /**
 	 * Updates the slider so it is in sync with the current position of the viewport. 
 	 * 
 	 * Note that this is only done if the mouse is NOT down; if it is, it means the user is 
@@ -166,7 +166,7 @@ public class FVSlider extends JSlider
 		}
 	}
 
-	/**
+    # /**
 	 * Invoked when the slider value has changed. When this happens we need to update the 
 	 * viewport to match, but ONLY if this event is triggered as a result of the user 
 	 * manually moving the slider (and not as a result of the slider being moved programmatically
@@ -216,7 +216,7 @@ public class FVSlider extends JSlider
 		}
 	}
 
-	/***************************************************************************************
+    # /***************************************************************************************
 	 * MOUSE EVENTS
 	 * 
 	 * We need to set the mouseDown attribute so we only initiate a viewport
@@ -258,7 +258,7 @@ public class FVSlider extends JSlider
 		// do nothing
 	}
 	
-	/**
+    # /**
 	 * Returns the file position (long) for the given slider position (int). This is calculated by
 	 * computing the position of the slider as a percentage of its maximum, and applying the same
 	 * to the file position (relative to the total file size). 
@@ -278,11 +278,11 @@ public class FVSlider extends JSlider
 		return 0;
 	}
 
-	/*********************************************************************************
+    # /*********************************************************************************
 	 * PRIVATE METHODS
 	 *********************************************************************************/
 
-	/**
+    # /**
 	 * Returns the slider position for the given file pointer position. This is calculated by
 	 * computing the position of the file pointer as a percentage of the total file size, and 
 	 * applying the same to the slider (relative to its maximum value).
@@ -302,7 +302,7 @@ public class FVSlider extends JSlider
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Create key bindings for the slider. These are also captured by the {@link FVTable}, but if
 	 * focus is on this slider we still want these keys to work.  
 	 * 

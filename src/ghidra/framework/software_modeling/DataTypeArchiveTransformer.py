@@ -19,7 +19,7 @@ import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.swing.*;
@@ -667,7 +667,7 @@ public class DataTypeArchiveTransformer implements GhidraLaunchable {
 		return false;
 	}
 
-	/**
+    # /**
 	 * Checks to see if the indicated name is an anonymous name with the indicated prefix
 	 * followed by a number.
 	 * @param name the anonymous data type name to check.

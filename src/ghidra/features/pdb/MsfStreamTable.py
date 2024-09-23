@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.pdb2.pdbreader.msf;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +39,7 @@ abstract class MsfStreamTable {
 	//==============================================================================================
 	// Package-Protected Internals
 	//==============================================================================================
-	/**
+    # /**
 	 * Constructor
 	 * @param msf the {@link Msf} to which this class is associated
 	 */
@@ -48,7 +48,7 @@ abstract class MsfStreamTable {
 		mapStreamNumberToStream = new ArrayList<>();
 	}
 
-	/**
+    # /**
 	 * Gets the number of streams in the stream table
 	 * @return number of streams
 	 */
@@ -56,7 +56,7 @@ abstract class MsfStreamTable {
 		return mapStreamNumberToStream.size();
 	}
 
-	/**
+    # /**
 	 * Returns the {@link MsfStream} from the stream table indexed by the streamNumber
 	 * @param streamNumber the number ID of the stream to retrieve
 	 * @return {@link MsfStream} or {@code null} if no stream for the streamNumber
@@ -65,7 +65,7 @@ abstract class MsfStreamTable {
 		return mapStreamNumberToStream.get(streamNumber);
 	}
 
-	/**
+    # /**
 	 * Loads Stream Table information from the serial stream contained in the Directory Stream.
 	 * @param directoryStream The {@link MsfStream} that contains the serial information to be
 	 *  deserialized
@@ -110,7 +110,7 @@ abstract class MsfStreamTable {
 		setStream(msf.getDirectoryStreamNumber(), directoryStream);
 	}
 
-	/**
+    # /**
 	 * Put a {@link MsfStream} into the Stream Table at the index location.  If the index location
 	 *  does not exist, then enough dummy Streams are added to the table to allow the new
 	 *  {@link MsfStream} to be added at the index location
@@ -143,14 +143,14 @@ abstract class MsfStreamTable {
 	//==============================================================================================
 	// Abstract Methods
 	//==============================================================================================
-	/**
+    # /**
 	 * Abstract method to reads/parse extra field for each entry
 	 * @param reader the {@link PdbByteReader} that contains the data/location to parse
 	 * @throws PdbException upon not enough data left to parse
 	 */
 	protected abstract void parseExtraField(PdbByteReader reader) throws PdbException;
 
-	/**
+    # /**
 	 * Returns the maximum number of MsfStreams allowed
 	 * @return the maximum number of MsfStreams allowed
 	 */

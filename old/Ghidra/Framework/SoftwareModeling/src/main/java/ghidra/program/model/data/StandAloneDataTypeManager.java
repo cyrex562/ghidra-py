@@ -16,7 +16,7 @@
 package ghidra.program.model.data;
 
 import java.io.Closeable;
-import java.io.IOException;
+
 import java.util.*;
 
 import javax.help.UnsupportedOperationException;

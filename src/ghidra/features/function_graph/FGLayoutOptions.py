@@ -25,7 +25,7 @@ public interface FGLayoutOptions {
 
 	public static final String OWNER = FunctionGraphPlugin.class.getSimpleName();
 
-	/**
+    # /**
 	 * Called during setup for this class to register its options with the given {@link Options}
 	 * object
 	 * 
@@ -33,7 +33,7 @@ public interface FGLayoutOptions {
 	 */
 	public void registerOptions(Options options);
 
-	/**
+    # /**
 	 * Called when the given {@link Options} object has changed.  This class will update its 
 	 * options with the values from the given options object.
 	 * 
@@ -41,7 +41,7 @@ public interface FGLayoutOptions {
 	 */
 	public void loadOptions(Options options);
 
-	/**
+    # /**
 	 * Returns true if the given option name, when changed, requires that the current graph be
 	 * reloaded for the change to take effect
 	 * 

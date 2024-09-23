@@ -15,7 +15,7 @@
  */
 package ghidra.file.formats.ios;
 
-import java.io.IOException;
+
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
@@ -48,7 +48,7 @@ public class ExtractedMacho {
 	protected byte[] packed;
 	protected TaskMonitor monitor;
 
-	/**
+    # /**
 	 * Creates a new {@link ExtractedMacho} object
 	 * 
 	 * @param provider The provider with the Mach-O header
@@ -72,7 +72,7 @@ public class ExtractedMacho {
 		this.monitor = monitor;
 	}
 
-	/**
+    # /**
 	 * Performs the packing
 	 * 
 	 * @throws IOException If there was an IO-related error
@@ -158,7 +158,7 @@ public class ExtractedMacho {
 		System.arraycopy(footer, 0, packed, packed.length - footer.length, footer.length);
 	}
 
-	/**
+    # /**
 	 * Gets a {@link ByteProvider} for this {@link ExtractedMacho} object
 	 * 
 	 * @param fsrl FSRL identity of the file
@@ -168,7 +168,7 @@ public class ExtractedMacho {
 		return new ByteArrayProvider(packed, fsrl);
 	}
 
-	/**
+    # /**
 	 * Gets the {@link ByteProvider} that contains the given {@link SegmentCommand segment}
 	 * 
 	 * @param segment The {@link SegmentCommand segment}
@@ -179,7 +179,7 @@ public class ExtractedMacho {
 		return provider;
 	}
 
-	/**
+    # /**
 	 * Gets a {@link List} of extra {@link NList symbol}s for the component being extracted
 	 * 
 	 * @return A {@link List} of extra {@link NList symbol}s (could be empty)
@@ -188,7 +188,7 @@ public class ExtractedMacho {
 		return List.of();
 	}
 
-	/**
+    # /**
 	 * Converts the given Mach-O file offset to an offset into the packed Mach-O
 	 * 
 	 * @param fileOffset The Mach-O file offset to convert
@@ -206,7 +206,7 @@ public class ExtractedMacho {
 			"Failed to convert Mach-O file offset to packed offset: 0x%x".formatted(fileOffset));
 	}
 
-	/**
+    # /**
 	 * Creates a packed __LINKEDIT segment array
 	 * 
 	 * @param linkEditSegmentProvider The {@link ByteProvider} that contains the __LINKEDIT
@@ -251,7 +251,7 @@ public class ExtractedMacho {
 		return packedLinkEdit;
 	}
 
-	/**
+    # /**
 	 * Converts the given {@link NList} to a byte array.  The given {@link NList}'s string
 	 * index field will be replaced with the given string index parameter.
 	 * 
@@ -275,7 +275,7 @@ public class ExtractedMacho {
 		return ret;
 	}
 
-	/**
+    # /**
 	 * Fixes-up various fields in the new packed Mach-O's load commands
 	 * 
 	 * @throws IOException If there was an IO-related issue performing the fix-up
@@ -316,7 +316,7 @@ public class ExtractedMacho {
 		}
 	}
 
-	/**
+    # /**
 	 * Fixes-up the old Mach-O's file offsets and size in the given segment so they are correct
 	 * for the newly packed Mach-O
 	 * 
@@ -355,7 +355,7 @@ public class ExtractedMacho {
 		}
 	}
 
-	/**
+    # /**
 	 * Fixes-up the old Mach-O's file offsets in the given symbol table so they are correct for 
 	 * the newly packed Mach-O
 	 * 
@@ -381,7 +381,7 @@ public class ExtractedMacho {
 		}
 	}
 
-	/**
+    # /**
 	 * Fixes-up the old Mach-O's file offsets in the given dynamic symbol table so they are 
 	 * correct for the newly packed Mach-O.
 	 * <p>
@@ -413,7 +413,7 @@ public class ExtractedMacho {
 		}
 	}
 
-	/**
+    # /**
 	 * Fixes-up the old Mach-O's file offsets in the given DYLD Info command so they are correct
 	 * for the newly packed Mach-O.
 	 * <p>
@@ -440,7 +440,7 @@ public class ExtractedMacho {
 		}
 	}
 
-	/**
+    # /**
 	 * Fixes-up the old Mach-O file offsets in the given link edit data command so they are 
 	 * correct for the newly packed Mach-O
 	 * 
@@ -453,7 +453,7 @@ public class ExtractedMacho {
 		}
 	}
 
-	/**
+    # /**
 	 * Gets a value that will need to be added to a container file offset into the __LINKEDIT 
 	 * segment to account for our new __LINKEDIT segment being packed
 	 *  
@@ -465,7 +465,7 @@ public class ExtractedMacho {
 			(cmd.getLinkerDataOffset() - linkEditSegment.getFileOffset());
 	}
 
-	/**
+    # /**
 	 * Sets the bytes at the given container file offset to the given value.  The provided file 
 	 * offset is assumed to map to a field in a load command.
 	 *  
@@ -491,7 +491,7 @@ public class ExtractedMacho {
 		}
 	}
 
-	/**
+    # /**
 	 * Fixes up the bytes at the given container file offset to map to the correct offset in the
 	 * packed Mach-O.  The provided file offset is assumed to map to a field in a load command.
 	 *  
@@ -526,7 +526,7 @@ public class ExtractedMacho {
 		return ret;
 	}
 
-	/**
+    # /**
 	 * We don't want our packed __LINKEDIT segment to overlap with other Mach-O's __LINKEDIT
 	 * segments that might get extracted and added to the same program.  Rather than computing
 	 * the optimal address it should go at (which will require looking at every other Mach-O
@@ -540,7 +540,7 @@ public class ExtractedMacho {
 		linkEditSegment.setVMaddress(textSegment.getVMaddress() << 4);
 	}
 
-	/**
+    # /**
 	 * Converts the given value to a byte array
 	 * 
 	 * @param value The value to convert to a byte array

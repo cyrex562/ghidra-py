@@ -34,7 +34,7 @@ public class ScaledImageIconWrapper extends ImageIconWrapper {
 	private int height;
 	private int hints;
 
-	/**
+    # /**
 	 * Construct wrapped scaled ImageIcon based upon specified
 	 * baseIcon and desired size.  The rendering hints of 
 	 * {@link Image#SCALE_AREA_AVERAGING} will be applied.
@@ -46,7 +46,7 @@ public class ScaledImageIconWrapper extends ImageIconWrapper {
 		this(baseIcon, width, height, Image.SCALE_AREA_AVERAGING);
 	}
 
-	/**
+    # /**
 	 * Construct wrapped scaled ImageIcon based upon specified
 	 * baseIcon and desired size
 	 * @param baseIcon base icon

@@ -15,7 +15,7 @@
  */
 package ghidra.app.util.bin.format.golang.structmapping;
 
-import java.io.IOException;
+
 import java.util.List;
 
 import ghidra.util.exception.CancelledException;

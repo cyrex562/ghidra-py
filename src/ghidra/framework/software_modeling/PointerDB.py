@@ -1,21 +1,21 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.database.data;
 
-import java.io.IOException;
+
 
 import db.DBRecord;
 import ghidra.docking.settings.Settings;
@@ -29,8 +29,8 @@ import ghidra.util.UniversalID;
 import ghidra.util.exception.DuplicateNameException;
 
 # /**
- * Database implementation for a Pointer data type.
- */
+# * Database implementation for a Pointer data type.
+# */
 class PointerDB extends DataTypeDB implements Pointer {
 
 	private static final SettingsDefinition[] POINTER_SETTINGS_DEFINITIONS =
@@ -39,14 +39,14 @@ class PointerDB extends DataTypeDB implements Pointer {
 	private PointerDBAdapter adapter;
 	private String displayName;
 
-	/**
+    # /**
 	 * <code>isEquivalentActive</code> is used to break cyclical recursion when
 	 * performing an {@link #isEquivalent(DataType)} checks on pointers which must
 	 * also check the base datatype equivelency.
 	 */
 	private ThreadLocal<Boolean> isEquivalentActive = ThreadLocal.withInitial(() -> Boolean.FALSE);
 
-	/**
+    # /**
 	 * Constructor
 	 * 
 	 * @param dataMgr
@@ -413,7 +413,7 @@ class PointerDB extends DataTypeDB implements Pointer {
 		}
 	}
 
-	/**
+    # /**
 	 * @see ghidra.program.model.data.DataType#setCategoryPath(ghidra.program.model.data.CategoryPath)
 	 *
 	 *      Note: this does get called, but in a tricky way. If externally, someone

@@ -1,18 +1,18 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# *
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# *
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.app.util;
 
 import java.math.BigInteger;
@@ -30,24 +30,24 @@ import ghidra.program.model.symbol.*;
 import ghidra.util.Msg;
 
 # /**
- * PseudoDisassembler.java
- * 
- * Useful for disassembling and getting an Instruction or creating Data
- * at a location in memory when you don't want the program to be changed.
- * 
- * The Instructions or Data that area created are PseudoInstruction's and
- * PseudoData's.  They act like regular instructions in most respects, but
- * they don't exist in the program.  No references, symbols, are created or
- * will be saved when the program is saved.
- * 
- * You do not need to have an open transaction on the program to use the
- * PseudoDisassembler.
- * 
- * The PseudoDisassembler can also be used to check if something is a valid
- * subroutine.  The algorithm it uses could definitely use some tuning, but
- * it generally works well.
- * 
- */
+# * PseudoDisassembler.java
+# * 
+# * Useful for disassembling and getting an Instruction or creating Data
+# * at a location in memory when you don't want the program to be changed.
+# * 
+# * The Instructions or Data that area created are PseudoInstruction's and
+# * PseudoData's.  They act like regular instructions in most respects, but
+# * they don't exist in the program.  No references, symbols, are created or
+# * will be saved when the program is saved.
+# * 
+# * You do not need to have an open transaction on the program to use the
+# * PseudoDisassembler.
+# * 
+# * The PseudoDisassembler can also be used to check if something is a valid
+# * subroutine.  The algorithm it uses could definitely use some tuning, but
+# * it generally works well.
+# * 
+# */
 public class PseudoDisassembler {
 	// name of register that is used in processors that use the lower bit of addresses
 	//   to transfer into an alternate code mode such as from ARM to Thumb code
@@ -73,7 +73,7 @@ public class PseudoDisassembler {
 
 	private int lastCheckValidDisassemblyCount; // number of last instructions disassembled
 
-	/**
+    # /**
 	 * Create a pseudo disassembler for the given program.
 	 */
 	public PseudoDisassembler(Program program) {
@@ -88,7 +88,7 @@ public class PseudoDisassembler {
 		this.programContext = program.getProgramContext();
 	}
 
-	/**
+    # /**
 	 * Set the maximum number of instructions to check
 	 * 
 	 * @param maxNumInstructions - maximum number of instructions to check before returning
@@ -97,7 +97,7 @@ public class PseudoDisassembler {
 		maxInstructions = maxNumInstructions;
 	}
 	
-	/**
+    # /**
 	 * Get the last number of disassembled instructions
 	 * or the number of initial contiguous instruction if requireContiguous is true
 	 */
@@ -105,7 +105,7 @@ public class PseudoDisassembler {
 		return lastCheckValidDisassemblyCount;
 	}
 
-	/**
+    # /**
 	 * Set flag to respect Execute bit on memory if present on any memory
 	 * 
 	 * @param respect - true, respect execute bit on memory blocks
@@ -114,7 +114,7 @@ public class PseudoDisassembler {
 		respectExecuteFlag = respect;
 	}
 
-	/**
+    # /**
 	 * Disassemble a single instruction.  The program is not affected.
 	 * 
 	 * @param addr location to disassemble
@@ -133,7 +133,7 @@ public class PseudoDisassembler {
 		return disassemble(addr, procContext, false);
 	}
 
-	/**
+    # /**
 	 * Disassemble a single instruction.  The program is not affected.
 	 * @param addr
 	 * @param disassemblerContext
@@ -185,7 +185,7 @@ public class PseudoDisassembler {
 		return instr;
 	}
 
-	/**
+    # /**
 	 * Disassemble a location in memory with the given set of bytes.
 	 * Useful when the address has no actual bytes defined, or you want to use
 	 * your own bytes instead of what is in the program at the address.
@@ -206,7 +206,7 @@ public class PseudoDisassembler {
 		return disassemble(addr, bytes, procContext);
 	}
 
-	/**
+    # /**
 	 * Disassemble a location in memory with the given set of bytes.
 	 * Useful when the address has no actual bytes defined, or you want to use
 	 * your own bytes instead of what is in the program at the address.
@@ -254,7 +254,7 @@ public class PseudoDisassembler {
 		return instr;
 	}
 
-	/**
+    # /**
 	 * Apply a dataType to the program at the given address.  The program is
 	 * not affected.  A PseudoData item that acts like a Data item retrieved from
 	 * a program is returned.  This is useful if you have a datatype and you
@@ -281,7 +281,7 @@ public class PseudoDisassembler {
 		return null;
 	}
 
-	/**
+    # /**
 	 * Interpret the bytes at a location in memory as an address
 	 * and return the address.  This routine assumes that the bytes
 	 * needed to create the address are the same size as the bytes
@@ -307,7 +307,7 @@ public class PseudoDisassembler {
 		return ptrAddr;
 	}
 
-	/**
+    # /**
 	 * Check that this entry point leads to a well behaved subroutine:
 	 * <ul>
 	 * <li>It should return.</li>
@@ -322,7 +322,7 @@ public class PseudoDisassembler {
 		return isValidSubroutine(entryPoint, false);
 	}
 
-	/**
+    # /**
 	 * Check that this entry point leads to a well behaved subroutine, allow it
 	 * to fall into existing code.
 	 * <ul>
@@ -339,7 +339,7 @@ public class PseudoDisassembler {
 		return checkValidSubroutine(entryPoint, allowExistingCode);
 	}
 
-	/**
+    # /**
 	 * Check that this entry point leads to a well behaved subroutine, allow it
 	 * to fall into existing code.
 	 * <ul>
@@ -358,7 +358,7 @@ public class PseudoDisassembler {
 		return checkValidSubroutine(entryPoint, allowExistingCode, mustTerminate);
 	}
 
-	/**
+    # /**
 	 * Check that this entry point leads to valid code:
 	 * <ul>
 	 * <li> May have multiple entries into the body of the code.</li>
@@ -374,7 +374,7 @@ public class PseudoDisassembler {
 		return valid;
 	}
 
-	/**
+    # /**
 	 * Check that this entry point leads to valid code:
 	 * <ul>
 	 * <li> May have multiple entries into the body of the code.</li>
@@ -393,7 +393,7 @@ public class PseudoDisassembler {
 		return valid;
 	}
 
-	/**
+    # /**
 	 * Process a subroutine using the processor function.
 	 * The process function can control what flows are followed and when to stop.
 	 * 
@@ -409,7 +409,7 @@ public class PseudoDisassembler {
 		return followSubFlows(entryPoint, procContext, maxInstr, processor);
 	}
 
-	/**
+    # /**
 	 * Process a subroutine using the processor function.
 	 * The process function can control what flows are followed and when to stop.
 	 * 
@@ -543,7 +543,7 @@ public class PseudoDisassembler {
 		return body;
 	}
 
-	/**
+    # /**
 	 * Gets a new target address from the untried target list if it can find one not already in the
 	 * disassembled address set that is passed in.
 	 * @param body address set of disassembled instructions
@@ -568,7 +568,7 @@ public class PseudoDisassembler {
 		return newTarget;
 	}
 
-	/**
+    # /**
 	 * Check if there is a valid subroutine starting at the target address.
 	 * It does this by following the flow until a terminator is reached.
 	 * If a bad instruction is hit or it does not flow well, then return
@@ -582,7 +582,7 @@ public class PseudoDisassembler {
 		return checkValidSubroutine(entryPoint, allowExistingInstructions, true);
 	}
 
-	/**
+    # /**
 	 * Check if there is a valid subroutine at the target address
 	 * 
 	 * @param entryPoint address to check
@@ -598,7 +598,7 @@ public class PseudoDisassembler {
 			mustTerminate, false);
 	}
 
-	/**
+    # /**
 	 * Check if there is a valid subroutine at the target address
 	 * 
 	 * @param entryPoint address to check
@@ -619,7 +619,7 @@ public class PseudoDisassembler {
 			mustTerminate, requireContiguous);
 	}
 
-	/**
+    # /**
 	 * Check if there is a valid subroutine at the target address
 	 * 
 	 * @param entryPoint address to check
@@ -634,7 +634,7 @@ public class PseudoDisassembler {
 		return checkValidSubroutine(entryPoint, procContext, allowExistingInstructions, mustTerminate, false);
 	}
 
-	/**
+    # /**
 	 * Check if there is a valid subroutine at the target address
 	 * 
 	 * @param entryPoint address to check
@@ -935,7 +935,7 @@ public class PseudoDisassembler {
 		return (func != null && func.hasNoReturn());
 	}
 
-	/**
+    # /**
 	 * Make sure the instruction really has a return in it.
 	 * 
 	 * @param instr instruction to check
@@ -1012,14 +1012,14 @@ public class PseudoDisassembler {
 		return true;
 	}
 
-	/************************************************************************
+    # /************************************************************************
 	 * TODO: These routines below are gathered here so that the common concern can
 	 * be found and dealt with in one place.  Eventually the DisassemblerCmd()
 	 * will handle some of these concerns.  They are here until a larger refactoring
 	 * 
 	 */
 
-	/**
+    # /**
 	 * Get an address that can be used for disassembly.  Useful for some processors where
 	 * pointers to code have 1 added to them for different modes such as Thumb mode for ARM.
 	 * 
@@ -1042,7 +1042,7 @@ public class PseudoDisassembler {
 		return addr.getNewAddress(addr.getOffset() & ~0x1);
 	}
 
-	/**
+    # /**
 	 * 
 	 * @return RegisterValue setting for the context register to disassemble correctly at the given address
 	 *         or null, if no setting is needed.
@@ -1060,7 +1060,7 @@ public class PseudoDisassembler {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return true if program has uses the low bit of an address to change Instruction Set mode
 	 */
 	public static boolean hasLowBitCodeModeInAddrValues(Program program) {
@@ -1068,7 +1068,7 @@ public class PseudoDisassembler {
 		return (lowBitCodeMode != null);
 	}
 
-	/**
+    # /**
 	 * If this processor uses the low bit of an address to change to a new Instruction Set mode
 	 *   Check the low bit and change the instruction state at the address.
 	 *   
@@ -1103,7 +1103,7 @@ public class PseudoDisassembler {
 		return addr;
 	}
 
-	/**
+    # /**
 	 * In order to check a location to see if it disassembles from an address reference, the
 	 * address is checked for low-bit code switch behavior.  If it does switch, the context
 	 * is changed.

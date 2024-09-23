@@ -45,7 +45,7 @@ public class ArrayMethods {
 		throw new AssertionError();
 	}
 	
-	/**
+    # /**
 	 * Emits pcode for the multianewarray op, which is used to create new multi-dimensional arrays
 	 * It is modeled with two black-box pcode ops: multianewarrayOp and multianewarrayProcessAdditionalDimensionsOp.
 	 * The second op is need because pcode operations are limited to 8 input parameters, whereas multianewarray 
@@ -106,7 +106,7 @@ public class ArrayMethods {
 
 		pCode.emitPushCat1Value(ARRAY_REF);
 	}
-	/**
+    # /**
 	 * The array type codes can be found in the JVM documentation for the 
 	 * "newarray" instruction.
 	 * @param code

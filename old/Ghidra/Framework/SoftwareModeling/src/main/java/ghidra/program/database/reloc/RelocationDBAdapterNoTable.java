@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.reloc;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.program.database.util.EmptyRecordIterator;

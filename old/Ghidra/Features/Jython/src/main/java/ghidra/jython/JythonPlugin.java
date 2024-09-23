@@ -16,7 +16,7 @@
 package ghidra.jython;
 
 import java.awt.event.KeyEvent;
-import java.io.*;
+
 import java.util.List;
 
 import javax.swing.Icon;

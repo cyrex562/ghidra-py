@@ -54,7 +54,7 @@ public class ScheduledTaskPanel extends JPanel {
 		return progressBar;
 	}
 
-	/**
+    # /**
 	 * Sets the amount of the view that is hidden, i.e., "scrolled off".  The animation framework
 	 * will cause this method to be called with a sequence of values from 0 to 1 which will be
 	 * used to scroll the component off the view.

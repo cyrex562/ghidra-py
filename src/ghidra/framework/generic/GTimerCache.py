@@ -53,7 +53,7 @@ public class GTimerCache<K, V> {
 	private Map<K, CachedValue> map;
 	private GTimerMonitor timerMonitor;
 
-	/**
+    # /**
 	 * Constructs new GTimerCache with a duration for cached entries and a maximum
 	 * number of entries to cache.
 	 * @param lifetime the duration that a key,value will remain in the cache without being
@@ -83,7 +83,7 @@ public class GTimerCache<K, V> {
 		};
 	}
 
-	/**
+    # /**
 	 * Sets the capacity for this cache. If this cache currently has more values than the new
 	 * capacity, oldest values will be removed.
 	 * @param capacity the new capacity for this cache
@@ -107,7 +107,7 @@ public class GTimerCache<K, V> {
 		}
 	}
 
-	/**
+    # /**
 	 * Sets the duration for keeping cached values.
 	 * @param duration the length of time to keep a cached value
 	 */
@@ -124,7 +124,7 @@ public class GTimerCache<K, V> {
 		timerExpired();// this will purge any older values and reset the timer to the correct delay
 	}
 
-	/**
+    # /**
 	 * Adds an key,value entry to the cache
 	 * @param key the key with which the value is associated
 	 * @param value the value being cached
@@ -149,7 +149,7 @@ public class GTimerCache<K, V> {
 		return previous;
 	}
 
-	/**
+    # /**
 	 * Removes the cache entry with the given key.
 	 * @param key the key of the entry to remove
 	 * @return the value removed or null if the key wasn't in the cache
@@ -163,7 +163,7 @@ public class GTimerCache<K, V> {
 		return removed.value;
 	}
 
-	/**
+    # /**
 	 * Returns true if the cache contains a value for the given key.
 	 * @param key the key to check if it is in the cache
 	 * @return true if the cache contains a value for the given key
@@ -172,7 +172,7 @@ public class GTimerCache<K, V> {
 		return map.containsKey(key);
 	}
 
-	/**
+    # /**
 	 * Returns the number of entries in the cache.
 	 * @return the number of entries in the cache
 	 */
@@ -180,7 +180,7 @@ public class GTimerCache<K, V> {
 		return map.size();
 	}
 
-	/**
+    # /**
 	 * Returns the value for the given key. Also, resets time the associated with this entry.
 	 * @param key the key to retrieve a value
 	 * @return the value for the given key
@@ -195,7 +195,7 @@ public class GTimerCache<K, V> {
 		return cachedValue.getValue();
 	}
 
-	/**
+    # /**
 	 * Clears all the values in the cache. The expired callback will be called for each entry
 	 * that was in the cache.
 	 */
@@ -207,7 +207,7 @@ public class GTimerCache<K, V> {
 		map.clear();
 	}
 
-	/**
+    # /**
 	 * Called when an item is being removed from the cache. This method is for use by subclasses 
 	 * that need to do more processing on items as they are removed, such as releasing resources.
 	 * <P>
@@ -221,7 +221,7 @@ public class GTimerCache<K, V> {
 		// stub for subclasses
 	}
 
-	/**
+    # /**
 	 * Called when an value is being added to the cache. This method is for use by
 	 * subclasses that need to do more processing on items when they are added to the cache.
 	 * <P>
@@ -235,7 +235,7 @@ public class GTimerCache<K, V> {
 		// stub for subclasses
 	}
 
-	/**
+    # /**
 	 * Called when an item's cache time has expired to determine if the item should be removed from
 	 * the cache. The default to to remove an item when its time has expired. Subclasses can 
 	 * override this method to have more control over expiring value removal.

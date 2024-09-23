@@ -18,7 +18,7 @@ package ghidra.program.model.lang.protorules;
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 
 import ghidra.program.model.data.DataType;
 import ghidra.program.model.data.DataTypeManager;
@@ -42,7 +42,7 @@ public class ConsumeExtra extends AssignAction {
 	private int firstIter;				// Iterator to first element in the resource list
 	private boolean matchSize;			// false, if side-effect only consumes a single register
 
-	/**
+    # /**
 	 * Cache specific ParamEntry needed by the action.
 	 * Find the first ParamEntry matching the resourceType.
 	 * @throws InvalidInputException if it cannot find the configured ParamEntry objects

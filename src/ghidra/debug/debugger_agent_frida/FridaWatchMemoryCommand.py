@@ -17,7 +17,7 @@ package agent.frida.manager.cmd;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
+
 import java.util.Map;
 
 import com.google.gson.JsonElement;

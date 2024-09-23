@@ -116,7 +116,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 	   }
 	 }
 	*/
-	/**
+    # /**
 	 * this aids in going back to the parent from which a vertex was accessed in
 	 * the depth first search
 	 */
@@ -125,7 +125,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 		return this.getCallingParent(v);
 	}
 
-	/**
+    # /**
 	 * this returns the vertex that is the dominator
 	 */
 	public Vertex getDominator(Vertex v) {
@@ -137,7 +137,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 		return this.allPathsContain(pathSet, v, path);
 	}
 
-	/**
+    # /**
 	 * this returns all paths that contain v which we need to consider when
 	 * looking for the dominator of v.  It places the longest path as the
 	 * first element in the vector pathSet.
@@ -160,7 +160,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 		return pathSet;
 	}
 
-	/**
+    # /**
 	 * This takes the longest path that contains vertex v and looks to see
 	 * if any of v's ancestors from that path are contained in all other
 	 * paths that contain v.
@@ -188,7 +188,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 
 	}
 
-	/**
+    # /**
 	 * Goes to the next child of v that has not been visited and sets the
 	 * calling parent to be v so that we can backtrack.
 	 */
@@ -206,7 +206,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 		return null;
 	}
 
-	/**
+    # /**
 	 * This makes a list of all the paths that are in a graph that terminate
 	 * either because of a repeated vertex or hitting a sink. It then calls
 	 * getDominanceGraph which gets the dominator for every vertex and builds a
@@ -259,7 +259,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 		return this.getDominanceGraph();
 	}
 
-	/**
+    # /**
 	 * This iterates through the vertices of our graph and gets the dominator
 	 * for each.  In a new graph - dom - it adds each vertex and an edge between the
 	 * vertex and its dominator.  It returns dom, the dominance graph.
@@ -286,7 +286,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 		return dom;
 	}
 
-	/**
+    # /**
 	 * This function originally did not return anything.  It returns a vertex
 	 * for the purpose of keeping track of which vertex we left off on.  So if we
 	 * backtrack, we can copy the portion of the previous path that is contained
@@ -325,7 +325,7 @@ public class Dominator extends DirectedGraph //implements Weighted
 		return flag;
 	}
 
-	/**
+    # /**
 	 *  Whitens the children of v.  It is only called after v has no more
 	 *  children left and we have backtracked to the calling parent of
 	 *  v.  This is to ensure that we don't miss out on any paths that

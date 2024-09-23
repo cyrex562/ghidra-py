@@ -15,7 +15,7 @@
  */
 package ghidra.program.database.bookmark;
 
-import java.io.IOException;
+
 
 import db.*;
 import ghidra.framework.data.OpenMode;
@@ -34,7 +34,7 @@ class BookmarkDBAdapterV0 extends BookmarkDBAdapter {
 		// ?
 	}
 
-	/**
+    # /**
 	 * Set the old bookmark manager which handles read-only access
 	 * to bookmarks stored within property maps.
 	 * The old bookmark manager must be set prior to invoking any other method;

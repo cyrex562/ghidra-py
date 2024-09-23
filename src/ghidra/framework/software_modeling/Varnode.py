@@ -1,24 +1,24 @@
 # /* ###
- * IP: GHIDRA
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# * IP: GHIDRA
+# *
+# * Licensed under the Apache License, Version 2.0 (the "License");
+# * you may not use this file except in compliance with the License.
+# * You may obtain a copy of the License at
+# * 
+# *      http://www.apache.org/licenses/LICENSE-2.0
+# * 
+# * Unless required by applicable law or agreed to in writing, software
+# * distributed under the License is distributed on an "AS IS" BASIS,
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# * See the License for the specific language governing permissions and
+# * limitations under the License.
+# */
 package ghidra.program.model.pcode;
 
 import static ghidra.program.model.pcode.AttributeId.*;
 import static ghidra.program.model.pcode.ElementId.*;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -29,17 +29,17 @@ import ghidra.program.model.listing.VariableStorage;
 import ghidra.util.exception.InvalidInputException;
 
 # /**
- * 
- *
- * Rawest possible Varnode.
- * Just a variable location and size, not part of a syntax tree.
- * A raw varnode is said to be free, it is not attached to any variable.
- */
+# * 
+# *
+# * Rawest possible Varnode.
+# * Just a variable location and size, not part of a syntax tree.
+# * A raw varnode is said to be free, it is not attached to any variable.
+# */
 public class Varnode {
 	private static final long masks[] = { 0L, 0xffL, 0xffffL, 0xffffffL, 0xffffffffL, 0xffffffffffL,
 		0xffffffffffffL, 0xffffffffffffffL, 0xffffffffffffffffL };
 
-	/**
+    # /**
 	 * Set of Varnode pieces referred to by a single Varnode in join space
 	 * as returned by Varnode.decodePieces
 	 */
@@ -53,7 +53,7 @@ public class Varnode {
 	private int spaceID;
 	private long offset;
 
-	/**
+    # /**
 	 * @param a location varnode attached to
 	 * @param sz size of varnode
 	 */
@@ -65,7 +65,7 @@ public class Varnode {
 		offset = address.getOffset();
 	}
 
-	/**
+    # /**
 	 * @param a location varnode attached to
 	 * @param sz size of varnode
 	 * @param symbolKey associated symbol key
@@ -74,28 +74,28 @@ public class Varnode {
 		this(a, sz);
 	}
 
-	/**
+    # /**
 	 * @return size of the varnode in bytes
 	 */
 	public int getSize() {
 		return size;
 	}
 
-	/**
+    # /**
 	 * @return the space this varnode belongs to (ram, register, ...)
 	 */
 	public int getSpace() {
 		return spaceID;
 	}
 
-	/**
+    # /**
 	 * @return the address this varnode is attached to
 	 */
 	public Address getAddress() {
 		return address;
 	}
 
-	/**
+    # /**
 	 * Get the address where this varnode is defined or
 	 * NO_ADDRESS if this varnode is an input
 	 * @return the address
@@ -107,14 +107,14 @@ public class Varnode {
 		return getDef().getSeqnum().getTarget();
 	}
 
-	/**
+    # /**
 	 * @return the offset into the address space varnode is defined within
 	 */
 	public long getOffset() {
 		return offset;
 	}
 
-	/**
+    # /**
 	 * Returns the word offset into the address space this is defined within
 	 * 
 	 * The word size is defined in the Language's .slaspec file with the
@@ -131,7 +131,7 @@ public class Varnode {
 		return true;
 	}
 
-	/**
+    # /**
 	 * Determine if this varnode contains the specified address
 	 * @param addr the address for which to check
 	 * @return true if this varnode contains the specified address
@@ -155,7 +155,7 @@ public class Varnode {
 		return offset <= addrOffset && endOffset >= addrOffset;
 	}
 
-	/**
+    # /**
 	 * Determine if this varnode intersects another varnode.  
 	 * @param varnode other varnode
 	 * @return true if this varnode intersects the specified varnode
@@ -192,7 +192,7 @@ public class Varnode {
 		return offset <= otherEndOffset && endOffset >= otherOffset;
 	}
 
-	/**
+    # /**
 	 * Determine if this varnode intersects the specified address set
 	 * @param set address set
 	 * @return true if this varnode intersects the specified address set
@@ -214,7 +214,7 @@ public class Varnode {
 		return false;
 	}
 
-	/**
+    # /**
 	 * @return true if this varnode exists in a Memory space (vs. register etc...).
 	 * Keep in mind this varnode may also correspond to a defined register 
 	 * if true is returned and {@link #isRegister()} return false.  
@@ -226,7 +226,7 @@ public class Varnode {
 		return type == AddressSpace.TYPE_RAM;
 	}
 
-	/**
+    # /**
 	 * @return true if this varnode exists in a Register type space.
 	 * If false is returned, keep in mind this varnode may still correspond to a 
 	 * defined register within a memory space.  Memory-based registers may be indirectly 
@@ -237,7 +237,7 @@ public class Varnode {
 		return (type == AddressSpace.TYPE_REGISTER);
 	}
 
-	/**
+    # /**
 	 * @return true if this varnode is just a constant number
 	 */
 	public boolean isConstant() {
@@ -245,7 +245,7 @@ public class Varnode {
 		return (type == AddressSpace.TYPE_CONSTANT);
 	}
 
-	/**
+    # /**
 	 * @return true if this varnode doesn't exist anywhere.  A temporary variable.
 	 */
 	public boolean isUnique() {
@@ -257,21 +257,21 @@ public class Varnode {
 		return spaceID == AddressSpace.HASH_SPACE.getSpaceID();
 	}
 
-	/**
+    # /**
 	 * @return is input to a pcode op
 	 */
 	public boolean isInput() {
 		return false;				// Not a valid query with a free varnode
 	}
 
-	/**
+    # /**
 	 * @return is persistent
 	 */
 	public boolean isPersistent() {
 		return false;				// Not a valid query with a free varnode
 	}
 
-	/**
+    # /**
 	 * @return is mapped to an address
 	 */
 	public boolean isAddrTied() {
@@ -282,21 +282,21 @@ public class Varnode {
 		return false;				// Not a valid query with a free varnode
 	}
 
-	/**
+    # /**
 	 * @return get the pcode op this varnode belongs to
 	 */
 	public PcodeOp getDef() {
 		return null;					// Not a valid query with a free varnode
 	}
 
-	/**
+    # /**
 	 * @return iterator to all PcodeOp s that take this as input
 	 */
 	public Iterator<PcodeOp> getDescendants() {
 		return null;					// Not a valid query with a free varnode
 	}
 
-	/**
+    # /**
 	 * If there is only one PcodeOp taking this varnode as input, return it. Otherwise return null
 	 * @return the lone descendant PcodeOp
 	 */
@@ -304,28 +304,28 @@ public class Varnode {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return false if the Varnode has a PcodeOp reading it that is part of function data-flow
 	 */
 	public boolean hasNoDescend() {
 		return true;
 	}
 
-	/**
+    # /**
 	 * @return the high level variable this varnode represents
 	 */
 	public HighVariable getHigh() {
 		return null;
 	}
 
-	/**
+    # /**
 	 * @return the index of the group, within the high containing this, that are forced merged with this  
 	 */
 	public short getMergeGroup() {
 		return 0;
 	}
 
-	/**
+    # /**
 	 * Encode just the raw storage info for this Varnode to stream
 	 * @param encoder is the stream encoder
 	 * @throws IOException for errors in the underlying stream
@@ -334,7 +334,7 @@ public class Varnode {
 		AddressXML.encode(encoder, address, size);
 	}
 
-	/**
+    # /**
 	 * Encode details of the Varnode as a formatted string with three colon separated fields.
 	 *   space:offset:size
 	 * The name of the address space, the offset of the address as a hex number, and
@@ -354,7 +354,7 @@ public class Varnode {
 		return buffer.toString();
 	}
 
-	/**
+    # /**
 	 * Decode a Varnode from a stream
 	 * 
 	 * @param decoder is the stream decoder
@@ -458,7 +458,7 @@ public class Varnode {
 		return vn;
 	}
 
-	/**
+    # /**
 	 * Decode a Varnode from a description in a string.
 	 * The format should be three colon separated fields:  space:offset:size
 	 * The space field should be the name of an address space, the offset field should
@@ -499,7 +499,7 @@ public class Varnode {
 		return new Varnode(space.getAddress(offset), size);
 	}
 
-	/**
+    # /**
 	 * Decode a sequence of Varnodes from "piece" attributes for the current open element.
 	 * The Varnodes are normally associated with an Address in the "join" space. In this virtual
 	 * space, a contiguous sequence of bytes, at a specific Address, represent a logical value
@@ -544,7 +544,7 @@ public class Varnode {
 		return join;
 	}
 
-	/**
+    # /**
 	 * Trim a varnode in a constant space to the correct starting offset.
 	 * 
 	 * Constant handles may contain constants of indeterminate size.
@@ -570,7 +570,7 @@ public class Varnode {
 			", " + size + ")");
 	}
 
-	/**
+    # /**
 	 * Convert this varnode to an alternate String representation based on a specified language.
 	 * @param language is the specified Language
 	 * @return string representation

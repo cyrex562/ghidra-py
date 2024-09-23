@@ -15,7 +15,7 @@
  */
 package ghidra.app.cmd.function;
 
-import java.io.IOException;
+
 import java.util.Iterator;
 import java.util.Set;
 
@@ -252,7 +252,7 @@ public class DecompilerParameterIdCmd extends BackgroundCommand<Program> {
 		}
 	}
 
-	/**
+    # /**
 	 * Check for consistency of returned results.  Trying to propagate, don't want to propagate garbage.
 	 * 
 	 * @param decompRes the decompile result

@@ -15,7 +15,7 @@
  */
 package ghidra.server.security;
 
-import java.io.IOException;
+
 import java.net.InetSocketAddress;
 import java.util.HashMap;
 import java.util.Map;

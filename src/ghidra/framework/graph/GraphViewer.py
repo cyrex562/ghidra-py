@@ -214,7 +214,7 @@ public class GraphViewer<V extends VisualVertex, E extends VisualEdge<V>>
 		this.vertexTooltipProvider = vertexTooltipProvider;
 	}
 
-	/**
+    # /**
 	 * When true (the default), the zoom will center wherever the mouse is positioned.  False 
 	 * will zoom at the center of the view.
 	 * 
@@ -224,7 +224,7 @@ public class GraphViewer<V extends VisualVertex, E extends VisualEdge<V>>
 		return vgOptions.useMouseRelativeZoom();
 	}
 
-	/**
+    # /**
 	 *                       !!Super Hacky Override!!
 	 * The code we are overriding blindly calls add(), without first checking to see if it has
 	 * already been added.  Java 6 added a method, removeNotify(), that is called when components
@@ -241,7 +241,7 @@ public class GraphViewer<V extends VisualVertex, E extends VisualEdge<V>>
 		return super.add(comp);
 	}
 
-	/**
+    # /**
 	 *                       !!Super Hacky Override!!
 	 * This is done to make sure that we center the view when we are fully laid-out.  If
 	 * you know of a better way to do this, then, get rid of this overridden method and do

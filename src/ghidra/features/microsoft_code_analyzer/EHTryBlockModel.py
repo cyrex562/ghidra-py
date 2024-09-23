@@ -45,7 +45,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 
 	private DataType dataType;
 
-	/**
+    # /**
 	 * Creates the model for the exception handling TryBlockMapEntry data type.
 	 * @param program the program
 	 * @param tryBlockCount the number of TryBlockMapEntry data types expected at the map address.
@@ -62,7 +62,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return DATA_TYPE_NAME;
 	}
 
-	/**
+    # /**
 	 * Whether or not the memory at the indicated address appears to be a valid location for the
 	 * indicated number of try block map entry data types.
 	 * @throws InvalidDataTypeException if this model's location does not appear to be a valid 
@@ -82,7 +82,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		}
 	}
 
-	/**
+    # /**
 	 * This gets the TryBlockMapEntry structure for the indicated program.
 	 * @param program the program which will contain this data type. 
 	 * @return the TryBlockMapEntry structure.
@@ -128,7 +128,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return MSDataTypeUtils.getMatchingDataType(program, typedefDt);
 	}
 
-	/**
+    # /**
 	 * This gets the TryBlockMapEntry structure for this model.
 	 * @return the TryBlockMapEntry structure.
 	 */
@@ -145,7 +145,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return getDataType().getLength();
 	}
 
-	/**
+    # /**
 	 * Gets the low state value of the try, if there is one, in the TryBlockMapEntry indicated 
 	 * by the ordinal.
 	 * @param tryBlockOrdinal 0-based ordinal indicating which TryBlockMapEntry in the map.
@@ -160,7 +160,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getEHStateValue(dt, TRY_LOW_ORDINAL, specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets the high state value of the try, if there is one, in the TryBlockMapEntry indicated 
 	 * by the ordinal.
 	 * @param tryBlockOrdinal 0-based ordinal indicating which TryBlockMapEntry in the map.
@@ -176,7 +176,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getEHStateValue(dt, TRY_HIGH_ORDINAL, specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets the high state value of the catches, if there is one, in the TryBlockMapEntry indicated 
 	 * by the ordinal.
 	 * @param tryBlockOrdinal 0-based ordinal indicating which TryBlockMapEntry in the map.
@@ -192,7 +192,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getEHStateValue(dt, CATCH_HIGH_ORDINAL, specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets the catch handler model for the catch handler address in the 
 	 * TryBlockMapEntry indicated by the ordinal.
 	 * @param tryBlockOrdinal 0-based ordinal indicating which TryBlockMapEntry in the map.
@@ -209,7 +209,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return catchHandlerModel;
 	}
 
-	/**
+    # /**
 	 * Gets the catch handler map's entry count, if there is one, in the TryBlockMapEntry 
 	 * indicated by the ordinal.
 	 * @param tryBlockOrdinal 0-based ordinal indicating which TryBlockMapEntry in the map.
@@ -225,7 +225,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return EHDataTypeUtilities.getCount(dt, CATCH_COUNT_ORDINAL, specificMemBuffer);
 	}
 
-	/**
+    # /**
 	 * Gets the catch handler map's address, if there is one, in the TryBlockMapEntry 
 	 * indicated by the ordinal.
 	 * @param tryBlockOrdinal 0-based ordinal indicating which TryBlockMapEntry in the map.
@@ -243,7 +243,7 @@ public class EHTryBlockModel extends AbstractCreateDataTypeModel {
 		return getAdjustedAddress(mapAddress, getCatchHandlerCount(tryBlockOrdinal));
 	}
 
-	/**
+    # /**
 	 * Gets the component address of the catch handler map's address, if there is one, in the 
 	 * TryBlockMapEntry indicated by the ordinal.
 	 * @param tryBlockOrdinal 0-based ordinal indicating which TryBlockMapEntry in the map.
